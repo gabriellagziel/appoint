@@ -1,2862 +1,2862 @@
 {
   "@@locale": "ca",
-  "refresh": "Actualitza",
+  "refresh": "[CA] Actualitza",
   "@refresh": {
     "description": "Description"
   },
-  "home": "[CA] Home",
+  "home": "[CA] [CA] Home",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "[CA] No sessions yet",
+  "noSessionsYet": "[CA] [CA] No sessions yet",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "[CA] OK",
+  "ok": "[CA] [CA] OK",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "Tria un mode",
+  "playtimeLandingChooseMode": "[CA] Tria un mode",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "Registra't",
+  "signUp": "[CA] Registra't",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "[CA] Schedule Message",
+  "scheduleMessage": "[CA] [CA] Schedule Message",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "[CA] Decline",
+  "decline": "[CA] [CA] Decline",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[CA] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "[CA] Login",
+  "login": "[CA] [CA] Login",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "Tria amics",
+  "playtimeChooseFriends": "[CA] Tria amics",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "[CA] No invites",
+  "noInvites": "[CA] [CA] No invites",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "[CA] Choose a time",
+  "playtimeChooseTime": "[CA] [CA] Choose a time",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "Èxit",
+  "success": "[CA] Èxit",
   "@success": {
     "description": "Description"
   },
-  "undo": "Desfer",
+  "undo": "[CA] Desfer",
   "@undo": {
     "description": "Description"
   },
-  "opened": "Obert",
+  "opened": "[CA] Obert",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "Crea sessió virtual",
+  "createVirtualSession": "[CA] Crea sessió virtual",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "[CA] Message sent successfully",
+  "messageSentSuccessfully": "[CA] [CA] Message sent successfully",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "[CA] Redo",
+  "redo": "[CA] [CA] Redo",
   "@redo": {
     "description": "Description"
   },
-  "next": "Següent",
+  "next": "[CA] Següent",
   "@next": {
     "description": "Description"
   },
-  "search": "Cerca",
+  "search": "[CA] Cerca",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "[CA] Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "[CA] [CA] Are you sure you want to cancel this invite?",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "[CA] Created",
+  "created": "[CA] [CA] Created",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "Revoca l'accés",
+  "revokeAccess": "[CA] Revoca l'accés",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[CA] Save Group for Recognition",
+  "saveGroupForRecognition": "[CA] [CA] Save Group for Recognition",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "Sessió en directe programada",
+  "playtimeLiveScheduled": "[CA] Sessió en directe programada",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "[CA] Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "[CA] [CA] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "Descarrega",
+  "download": "[CA] Descarrega",
   "@download": {
     "description": "Description"
   },
-  "password": "[CA] Password",
+  "password": "[CA] [CA] Password",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "[CA] Error loading family links",
+  "errorLoadingFamilyLinks": "[CA] [CA] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "Cancel·la",
+  "cancel": "[CA] Cancel·la",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "Crea Playtime",
+  "playtimeCreate": "[CA] Crea Playtime",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "No s'ha pogut processar la sol·licitud de privadesa",
+  "failedToActionPrivacyRequest": "[CA] No s'ha pogut processar la sol·licitud de privadesa",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "[CA] APP-OINT",
+  "appTitle": "[CA] [CA] APP-OINT",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "Accepta",
+  "accept": "[CA] Accepta",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "Mode virtual",
+  "playtimeModeVirtual": "[CA] Mode virtual",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "Descripció de Playtime",
+  "playtimeDescription": "[CA] Descripció de Playtime",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "Suprimeix",
+  "delete": "[CA] Suprimeix",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "[CA] Virtual playtime started!",
+  "playtimeVirtualStarted": "[CA] [CA] Virtual playtime started!",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "Crea el teu primer joc",
+  "createYourFirstGame": "[CA] Crea el teu primer joc",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "Participants",
+  "participants": "[CA] Participants",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "[CA] Recipients",
+  "recipients": "[CA] [CA] Recipients",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "[CA] No results found",
+  "noResults": "[CA] [CA] No results found",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "Sí",
+  "yes": "[CA] Sí",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "[CA] Invite",
+  "invite": "[CA] [CA] Invite",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "Mode en directe",
+  "playtimeModeLive": "[CA] Mode en directe",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "Fet",
+  "done": "[CA] Fet",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "[CA] Let's meet via Appoint!",
+  "defaultShareMessage": "[CA] [CA] Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "No",
+  "no": "[CA] No",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "Hub de Playtime",
+  "playtimeHub": "[CA] Hub de Playtime",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "Crea sessió en directe",
+  "createLiveSession": "[CA] Crea sessió en directe",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "[CA] Enable Notifications",
+  "enableNotifications": "[CA] [CA] Enable Notifications",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "[CA] Invited",
+  "invited": "[CA] [CA] Invited",
   "@invited": {
     "description": "Description"
   },
-  "content": "[CA] Content",
+  "content": "[CA] [CA] Content",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "Reunió compartida amb èxit",
+  "meetingSharedSuccessfully": "[CA] Reunió compartida amb èxit",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "[CA] Welcome to Playtime",
+  "welcomeToPlaytime": "[CA] [CA] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "[CA] View All",
+  "viewAll": "[CA] [CA] View All",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "Playtime virtual",
+  "playtimeVirtual": "[CA] Playtime virtual",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "[CA] Staff screen coming soon",
+  "staffScreenTBD": "[CA] [CA] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "Talla",
+  "cut": "[CA] Talla",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "[CA] Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "[CA] [CA] Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "[CA] Retry",
+  "retry": "[CA] [CA] Retry",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "[CA] Compose Broadcast Message",
+  "composeBroadcastMessage": "[CA] [CA] Compose Broadcast Message",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "Envia ara",
+  "sendNow": "[CA] Envia ara",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "Encara no hi ha jocs",
+  "noGamesYet": "[CA] Encara no hi ha jocs",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "[CA] Select",
+  "select": "[CA] [CA] Select",
   "@select": {
     "description": "Description"
   },
-  "about": "Quant a",
+  "about": "[CA] Quant a",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Tria",
+  "choose": "[CA] Tria",
   "@choose": {
     "description": "Description"
   },
-  "profile": "Perfil",
+  "profile": "[CA] Perfil",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "[CA] Remove Child",
+  "removeChild": "[CA] [CA] Remove Child",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "[CA] Status",
+  "status": "[CA] [CA] Status",
   "@status": {
     "description": "status description"
   },
-  "logout": "Tanca sessió",
+  "logout": "[CA] Tanca sessió",
   "@logout": {
     "description": "Description"
   },
-  "paste": "Enganxa",
+  "paste": "[CA] Enganxa",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "[CA] Welcome",
+  "welcome": "[CA] [CA] Welcome",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "Crea sessió",
+  "playtimeCreateSession": "[CA] Crea sessió",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "Membres de la família",
+  "familyMembers": "[CA] Membres de la família",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "Penja",
+  "upload": "[CA] Penja",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "[CA] Upcoming Sessions",
+  "upcomingSessions": "[CA] [CA] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "[CA] Enter group name",
+  "enterGroupName": "[CA] [CA] Enter group name",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "[CA] Confirm",
+  "confirm": "[CA] [CA] Confirm",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "Playtime en directe",
+  "playtimeLive": "[CA] Playtime en directe",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "[CA] Error loading invites",
+  "errorLoadingInvites": "[CA] [CA] Error loading invites",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "Filtres de segmentació",
+  "targetingFilters": "[CA] Filtres de segmentació",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "Tria vídeo",
+  "pickVideo": "[CA] Tria vídeo",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "[CA] Game deleted",
+  "playtimeGameDeleted": "[CA] [CA] Game deleted",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "Programa per més tard",
+  "scheduleForLater": "[CA] Programa per més tard",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "[CA] Access revoked successfully",
+  "accessRevokedSuccessfully": "[CA] [CA] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "Tipus",
+  "type": "[CA] Tipus",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "Comprovant permisos",
+  "checkingPermissions": "[CA] Comprovant permisos",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "Copia",
+  "copy": "[CA] Copia",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "Sí, cancel·la",
+  "yesCancel": "[CA] Sí, cancel·la",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "[CA] Email",
+  "email": "[CA] [CA] Email",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[CA] Share on WhatsApp",
+  "shareOnWhatsApp": "[CA] [CA] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "[CA] Notification Settings",
+  "notificationSettings": "[CA] [CA] Notification Settings",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "El meu perfil",
+  "myProfile": "[CA] El meu perfil",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "Revoca",
+  "revoke": "[CA] Revoca",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "[CA] No messages yet",
+  "noBroadcastMessages": "[CA] [CA] No messages yet",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "Tipus de sol·licitud",
+  "requestType": "[CA] Tipus de sol·licitud",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "[CA] Notifications",
+  "notifications": "[CA] [CA] Notifications",
   "@notifications": {
     "description": "Description"
   },
-  "details": "Detalls",
+  "details": "[CA] Detalls",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "[CA] Cancel Invite",
+  "cancelInvite": "[CA] [CA] Cancel Invite",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "Crea de nou",
+  "createNew": "[CA] Crea de nou",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "[CA] Settings",
+  "settings": "[CA] [CA] Settings",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "[CA] Reject",
+  "playtimeReject": "[CA] [CA] Reject",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "[CA] Error loading profile",
+  "errorLoadingProfile": "[CA] [CA] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "Edita",
+  "edit": "[CA] Edita",
   "@edit": {
     "description": "Description"
   },
-  "add": "Afegeix",
+  "add": "[CA] Afegeix",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "[CA] Game approved",
+  "playtimeGameApproved": "[CA] [CA] Game approved",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "[CA] Forgot Password?",
+  "forgotPassword": "[CA] [CA] Forgot Password?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "Tauler familiar",
+  "familyDashboard": "[CA] Tauler familiar",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "Carregant",
+  "loading": "[CA] Carregant",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "[CA] Quick Actions",
+  "quickActions": "[CA] [CA] Quick Actions",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "[CA] Playtime",
+  "playtimeTitle": "[CA] [CA] Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "[CA] OTP resent successfully",
+  "otpResentSuccessfully": "[CA] [CA] OTP resent successfully",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "[CA] Error checking permissions",
+  "errorCheckingPermissions": "[CA] [CA] Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "[CA] Client screen coming soon",
+  "clientScreenTBD": "[CA] [CA] Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "[CA] FCM Token",
+  "fcmToken": "[CA] [CA] FCM Token",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "[CA] Pick Image",
+  "pickImage": "[CA] [CA] Pick Image",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "[CA] Previous",
+  "previous": "[CA] [CA] Previous",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[CA] No profile found",
+  "noProfileFound": "[CA] [CA] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "Encara no hi ha membres de la família",
+  "noFamilyMembersYet": "[CA] Encara no hi ha membres de la família",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "[CA] Media (Optional)",
+  "mediaOptional": "[CA] [CA] Media (Optional)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "[CA] Message saved successfully",
+  "messageSavedSuccessfully": "[CA] [CA] Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "[CA] Scheduled for",
+  "scheduledFor": "[CA] [CA] Scheduled for",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "Tauler",
+  "dashboard": "[CA] Tauler",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "Sense permís per difusió",
+  "noPermissionForBroadcast": "[CA] Sense permís per difusió",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[CA] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "[CA] Invite Details",
+  "inviteDetail": "[CA] [CA] Invite Details",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "[CA] Scheduled",
+  "scheduled": "[CA] [CA] Scheduled",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "No s'ha pogut reenviar OTP",
+  "failedToResendOtp": "[CA] No s'ha pogut reenviar OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "Programant",
+  "scheduling": "[CA] Programant",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "[CA] Error saving message",
+  "errorSavingMessage": "[CA] [CA] Error saving message",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "Desa",
+  "save": "[CA] Desa",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "Aprova Playtime",
+  "playtimeApprove": "[CA] Aprova Playtime",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "Crea la teva primera sessió",
+  "createYourFirstSession": "[CA] Crea la teva primera sessió",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "[CA] Game rejected",
+  "playtimeGameRejected": "[CA] [CA] Game rejected",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "No s'ha pogut revocar accés",
+  "failedToRevokeAccess": "[CA] No s'ha pogut revocar accés",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "Jocs recents",
+  "recentGames": "[CA] Jocs recents",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "[CA] Customize Message",
+  "customizeMessage": "[CA] [CA] Customize Message",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "[CA] Failed to cancel invite",
+  "failedToCancelInvite": "[CA] [CA] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "[CA] Error sending message",
+  "errorSendingMessage": "[CA] [CA] Error sending message",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "[CA] Confirm Password",
+  "confirmPassword": "[CA] [CA] Confirm Password",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "[CA] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[CA] [CA] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "[CA] Connected Children",
+  "connectedChildren": "[CA] [CA] Connected Children",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "Comparteix",
+  "share": "[CA] Comparteix",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "[CA] Enter game name",
+  "playtimeEnterGameName": "[CA] [CA] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "[CA] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[CA] [CA] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "[CA] My Invites",
+  "myInvites": "[CA] [CA] My Invites",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "Crea joc",
+  "createGame": "[CA] Crea joc",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[CA] Group Name (Optional)",
+  "groupNameOptional": "[CA] [CA] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "[CA] No playtime sessions found.",
+  "playtimeNoSessions": "[CA] [CA] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[CA] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[CA] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[CA] [CA] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "Tanca",
+  "close": "[CA] Tanca",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "[CA] Known group detected",
+  "knownGroupDetected": "[CA] [CA] Known group detected",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "Enrere",
+  "back": "[CA] Enrere",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "Tria joc",
+  "playtimeChooseGame": "[CA] Tria joc",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "[CA] Manage Permissions",
+  "managePermissions": "[CA] [CA] Manage Permissions",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "[CA] Poll Options",
+  "pollOptions": "[CA] [CA] Poll Options",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "[CA] Clicked",
+  "clicked": "[CA] [CA] Clicked",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "Enllaç",
+  "link": "[CA] Enllaç",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "Reunió preparada",
+  "meetingReadyMessage": "[CA] Reunió preparada",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "[CA] Pending Invites",
+  "pendingInvites": "[CA] [CA] Pending Invites",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "[CA] Status:",
+  "statusColon": "[CA] [CA] Status:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[CA] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[CA] [CA] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[CA] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[CA] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[CA] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[CA] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[CA] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[CA] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[CA] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[CA] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[CA] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[CA] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[CA] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[CA] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[CA] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[CA] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[CA] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[CA] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[CA] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[CA] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Catalan)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Catalan)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Catalan)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Catalan)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[CA] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[CA] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[CA] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[CA] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[CA] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[CA] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[CA] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[CA] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[CA] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[CA] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[CA] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[CA] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[CA] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[CA] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[CA] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[CA] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[CA] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[CA] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[CA] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[CA] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[CA] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[CA] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[CA] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[CA] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[CA] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[CA] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[CA] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[CA] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[CA] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[CA] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[CA] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[CA] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[CA] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[CA] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[CA] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[CA] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[CA] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[CA] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[CA] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[CA] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[CA] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[CA] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[CA] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[CA] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[CA] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[CA] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[CA] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[CA] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[CA] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[CA] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[CA] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[CA] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[CA] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[CA] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[CA] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[CA] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[CA] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[CA] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[CA] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[CA] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[CA] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[CA] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Catalan)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Catalan)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Catalan)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Catalan)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Catalan)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Catalan)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Catalan)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Catalan)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[CA] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Catalan)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Catalan)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Catalan)",
+  "upload1": "[CA] Upload (Catalan)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Catalan)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Catalan)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Catalan)",
+  "REDACTED_TOKEN": "[CA] Virtual session created! Inviting friends... (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Catalan)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Catalan)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Catalan)",
+  "rewards": "[CA] Rewards (Catalan)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Catalan)",
+  "time": "[CA] Time (Catalan)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[CA] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Catalan)",
+  "noSlots": "[CA] No slots (Catalan)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Catalan)",
+  "signIn": "[CA] Sign In (Catalan)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Catalan)",
+  "homeFeedScreen": "[CA] Home Feed Screen (Catalan)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Catalan)",
+  "selectLocation": "[CA] Select Location (Catalan)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Catalan)",
+  "noTicketsYet": "[CA] No tickets yet (Catalan)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Catalan)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Catalan)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Catalan)",
+  "subscriptionUnavailable": "[CA] Subscription unavailable (Catalan)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Catalan)",
+  "confirmBooking": "[CA] Confirm Booking (Catalan)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Catalan)",
+  "failedToUpdatePermissionE": "[CA] Failed to update permission: $e (Catalan)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Catalan)",
+  "reject": "[CA] Reject (Catalan)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Catalan)",
+  "REDACTED_TOKEN": "[CA] Ambassador Status: {ambassadorStatus} (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[CA] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Catalan)",
+  "checkingSubscription": "[CA] Checking subscription... (Catalan)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Catalan)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Catalan)",
+  "noContentAvailableYet": "[CA] No content available yet (Catalan)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Catalan)",
+  "resolve": "[CA] Resolve (Catalan)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Catalan)",
+  "errorLoadingSurveysError": "[CA] Error loading surveys: $error (Catalan)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[CA] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Catalan)",
+  "getHelpWithYourAccount": "[CA] Get help with your account (Catalan)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Catalan)",
+  "pay": "[CA] Pay (Catalan)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[CA] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Catalan)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Catalan)",
+  "changesSavedSuccessfully": "[CA] Changes saved successfully! (Catalan)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Catalan)",
+  "createNewInvoice": "[CA] Create New Invoice (Catalan)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Catalan)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Catalan)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Catalan)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Catalan)",
+  "profileSaved": "[CA] Profile saved! (Catalan)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Catalan)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Catalan)",
+  "valuetointk": "[CA] \\${value}K (Catalan)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Catalan)",
+  "deleteAccount": "[CA] Delete Account (Catalan)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Catalan)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Catalan)",
+  "businessOnboarding": "[CA] Business Onboarding (Catalan)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Catalan)",
+  "addNewClient": "[CA] Add New Client (Catalan)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Catalan)",
+  "darkMode": "[CA] Dark Mode (Catalan)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[CA] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[CA] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Catalan)",
+  "REDACTED_TOKEN": "[CA] You will receive a confirmation email shortly. (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Catalan)",
+  "addQuestion": "[CA] Add Question (Catalan)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Catalan)",
+  "privacyPolicy": "[CA] Privacy Policy (Catalan)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Catalan)",
+  "branchesLengthBranches": "[CA] {branchCount} branches (Catalan)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Catalan)",
+  "join": "[CA] Join (Catalan)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Catalan)",
+  "businessSubscription": "[CA] Business Subscription (Catalan)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Catalan)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[CA] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Catalan)",
+  "surveyManagement": "[CA] Survey Management (Catalan)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[CA] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Catalan)",
+  "noRoomsFoundAddYourFirstRoom": "[CA] No rooms found. Add your first room! (Catalan)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Catalan)",
+  "readOurPrivacyPolicy": "[CA] Read our privacy policy (Catalan)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Catalan)",
+  "couldNotOpenPrivacyPolicy": "[CA] Could not open privacy policy (Catalan)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Catalan)",
+  "refresh1": "[CA] Refresh (Catalan)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Catalan)",
+  "roomUpdatedSuccessfully": "[CA] Room updated successfully! (Catalan)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Catalan)",
+  "contentDetail": "[CA] Content Detail (Catalan)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Catalan)",
+  "cancelSubscription": "[CA] Cancel Subscription (Catalan)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Catalan)",
+  "REDACTED_TOKEN": "[CA] Successfully registered as Ambassador! (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Catalan)",
+  "save1": "[CA] Save (Catalan)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Catalan)",
+  "copy1": "[CA] Copy (Catalan)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Catalan)",
+  "failedToSendInvitationE": "[CA] Failed to send invitation: $e (Catalan)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Catalan)",
+  "surveyScore": "[CA] Survey Score (Catalan)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[CA] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Catalan)",
+  "noAppointmentsFound": "[CA] No appointments found. (Catalan)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Catalan)",
+  "responseDetail": "[CA] Response Detail (Catalan)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Catalan)",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Catalan)",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Catalan)",
+  "failedToStartProSubscriptionE": "[CA] Failed to start Pro subscription: $e (Catalan)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Catalan)",
+  "REDACTED_TOKEN": "[CA] Business Dashboard Entry Screen - Coming Soon (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Catalan)",
+  "contentFilter": "[CA] Content Filter (Catalan)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Catalan)",
+  "helpSupport": "[CA] Help & Support (Catalan)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Catalan)",
+  "editRoom": "[CA] Edit Room (Catalan)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[CA] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[CA] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Catalan)",
+  "REDACTED_TOKEN": "[CA] Business CRM Entry Screen - Coming Soon (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[CA] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[CA] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Catalan)",
+  "errorLoadingDashboardError": "[CA] Error loading dashboard: $error (Catalan)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Catalan)",
+  "gameDeletedSuccessfully": "[CA] Game deleted successfully! (Catalan)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Catalan)",
+  "viewResponsesComingSoon": "[CA] View responses - Coming soon! (Catalan)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[CA] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Catalan)",
+  "errorLoadingRewards": "[CA] Error loading rewards (Catalan)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Catalan)",
+  "failedToDeleteAccountE": "[CA] Failed to delete account: $e (Catalan)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Catalan)",
+  "invited1": "[CA] Invited (Catalan)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Catalan)",
+  "noBranchesAvailable": "[CA] No branches available (Catalan)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Catalan)",
+  "errorError": "[CA] Error: $error (Catalan)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Catalan)",
+  "noEvents": "[CA] No events (Catalan)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Catalan)",
+  "gameCreatedSuccessfully": "[CA] Game created successfully! (Catalan)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Catalan)",
+  "add1": "[CA] Add (Catalan)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[CA] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Catalan)",
+  "eventstarttimeEventendtime": "[CA] {startTime} - {endTime} (Catalan)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Catalan)",
+  "allowPlaytime": "[CA] Allow Playtime (Catalan)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Catalan)",
+  "clients": "[CA] Clients (Catalan)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Catalan)",
+  "noAmbassadorDataAvailable": "[CA] No ambassador data available (Catalan)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Catalan)",
+  "backgroundDeletedSuccessfully": "[CA] Background deleted successfully! (Catalan)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Catalan)",
+  "errorSnapshoterror": "[CA] Error: {error} (Catalan)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Catalan)",
+  "noAnalyticsDataAvailableYet": "[CA] No analytics data available yet. (Catalan)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Catalan)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Catalan)",
+  "REDACTED_TOKEN": "[CA] Business Phone Booking Entry Screen - Coming Soon (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Catalan)",
+  "verification": "[CA] Verification (Catalan)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Catalan)",
+  "copyLink": "[CA] Copy Link (Catalan)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Catalan)",
+  "dashboard1": "[CA] Dashboard (Catalan)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Catalan)",
+  "manageChildAccounts": "[CA] Manage Child Accounts (Catalan)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Catalan)",
+  "grantConsent": "[CA] Grant Consent (Catalan)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Catalan)",
+  "myProfile1": "[CA] My Profile (Catalan)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Catalan)",
+  "submit": "[CA] Submit (Catalan)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[CA] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Catalan)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Catalan)",
+  "ambassadorDashboard": "[CA] Ambassador Dashboard (Catalan)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Catalan)",
+  "phoneBooking": "[CA] Phone Booking (Catalan)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Catalan)",
+  "bookViaChat": "[CA] Book via Chat (Catalan)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "[CA] Error",
+  "error": "[CA] [CA] Error",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Catalan)",
+  "businessProfile": "[CA] Business Profile (Catalan)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Catalan)",
+  "REDACTED_TOKEN": "[CA] Business Booking Entry Screen - Coming Soon (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Catalan)",
+  "createNewSurvey": "[CA] Create New Survey (Catalan)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Catalan)",
+  "backgroundRejected": "[CA] Background rejected (Catalan)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Catalan)",
+  "noMediaSelected": "[CA] No media selected (Catalan)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Catalan)",
+  "syncToGoogle": "[CA] Sync to Google (Catalan)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Catalan)",
+  "virtualPlaytime": "[CA] Virtual Playtime (Catalan)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[CA] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[CA] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Catalan)",
+  "invitationSentSuccessfully": "[CA] Invitation sent successfully! (Catalan)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Catalan)",
+  "registering": "[CA] Registering... (Catalan)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Catalan)",
+  "statusAppointmentstatusname": "[CA] Status: {status} (Catalan)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Catalan)",
+  "home1": "[CA] Home (Catalan)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Catalan)",
+  "errorSavingSettingsE": "[CA] Error saving settings: $e (Catalan)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Catalan)",
+  "appVersionAndInformation": "[CA] App version and information (Catalan)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Catalan)",
+  "REDACTED_TOKEN": "[CA] Business Subscription Entry Screen - Coming Soon (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Catalan)",
+  "ekeyEvalue": "[CA] {key}: {value} (Catalan)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Catalan)",
+  "REDACTED_TOKEN": "[CA] Your payment has been processed successfully. (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Catalan)",
+  "errorE": "[CA] Error: $e (Catalan)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Catalan)",
+  "viewAll1": "[CA] View All (Catalan)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Catalan)",
+  "editSurveyComingSoon": "[CA] Edit survey - Coming soon! (Catalan)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Catalan)",
+  "enterOtp": "[CA] Enter OTP (Catalan)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Catalan)",
+  "payment": "[CA] Payment (Catalan)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Catalan)",
+  "REDACTED_TOKEN": "[CA] Automatically confirm new booking requests (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Catalan)",
+  "noRouteDefinedForSettingsname": "[CA] No route defined for {settingsName} (Catalan)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Catalan)",
+  "pleaseSignInToUploadABackground": "[CA] Please sign in to upload a background (Catalan)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[CA] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Catalan)",
+  "staffAvailability": "[CA] Staff Availability (Catalan)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Catalan)",
+  "livePlaytime": "[CA] Live Playtime (Catalan)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Catalan)",
+  "autoconfirmBookings": "[CA] Auto-Confirm Bookings (Catalan)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Catalan)",
+  "REDACTED_TOKEN": "[CA] Redirecting to Stripe checkout for Pro plan... (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Catalan)",
+  "exportAsCsv": "[CA] Export as CSV (Catalan)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Catalan)",
+  "deleteFunctionalityComingSoon": "[CA] Delete functionality coming soon! (Catalan)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Catalan)",
+  "editClient": "[CA] Edit Client (Catalan)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Catalan)",
+  "REDACTED_TOKEN": "[CA] Are you sure you want to delete this message? (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Catalan)",
+  "referralsAmbassadorreferrals": "[CA] Referrals: {referrals} (Catalan)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[CA] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Catalan)",
+  "privacyRequestSentToYourParents": "[CA] Privacy request sent to your parents! (Catalan)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Catalan)",
+  "clientDeletedSuccessfully": "[CA] Client deleted successfully! (Catalan)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Catalan)",
+  "failedToCancelSubscription": "[CA] Failed to cancel subscription (Catalan)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Catalan)",
+  "allLanguages": "[CA] All Languages (Catalan)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Catalan)",
+  "slotDeletedSuccessfully": "[CA] Slot deleted successfully (Catalan)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[CA] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Catalan)",
+  "REDACTED_TOKEN": "[CA] Parents must approve before children can join (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Catalan)",
+  "subscribeToPro1499mo": "[CA] Subscribe to Pro (€14.99/mo) (Catalan)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Catalan)",
+  "REDACTED_TOKEN": "[CA] Business Availability Entry Screen - Coming Soon (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Catalan)",
+  "appointmentsListlength": "[CA] Appointments: {count} (Catalan)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Catalan)",
+  "clearFilters": "[CA] Clear Filters (Catalan)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Catalan)",
+  "submitBooking": "[CA] Submit Booking (Catalan)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Catalan)",
+  "REDACTED_TOKEN": "[CA] Are you sure you want to cancel this appointment? (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Catalan)",
+  "noUpcomingBookings": "[CA] No upcoming bookings (Catalan)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Catalan)",
+  "goBack": "[CA] Go Back (Catalan)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Catalan)",
+  "setup": "[CA] Setup (Catalan)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Catalan)",
+  "inviteChild": "[CA] Invite Child (Catalan)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Catalan)",
+  "goToDashboard": "[CA] Go to Dashboard (Catalan)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Catalan)",
+  "ambassadorQuotaDashboard": "[CA] Ambassador Quota Dashboard (Catalan)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[CA] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Catalan)",
+  "referralCode": "[CA] Referral Code (Catalan)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[CA] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Catalan)",
+  "date": "[CA] Date (Catalan)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Catalan)",
+  "readOnly": "[CA] Read Only (Catalan)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Catalan)",
+  "bookingRequest": "[CA] Booking Request (Catalan)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Catalan)",
+  "advancedReporting": "[CA] • Advanced reporting (Catalan)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Catalan)",
+  "rooms": "[CA] Rooms (Catalan)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Catalan)",
+  "copiedToClipboard": "[CA] Copied to clipboard (Catalan)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Catalan)",
+  "bookingConfirmed": "[CA] Booking Confirmed (Catalan)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Catalan)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Catalan)",
+  "clientAddedSuccessfully": "[CA] Client added successfully! (Catalan)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Catalan)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Catalan)",
+  "backgroundApproved": "[CA] Background approved! (Catalan)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Catalan)",
+  "familySupport": "[CA] Family Support (Catalan)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Catalan)",
+  "deletingAccount": "[CA] Deleting account... (Catalan)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Catalan)",
+  "bookAppointment": "[CA] Book Appointment (Catalan)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Catalan)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Catalan)",
+  "delete1": "[CA] Delete (Catalan)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Catalan)",
+  "sendBookingInvite": "[CA] Send Booking Invite (Catalan)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Catalan)",
+  "text": "[CA] Text (Catalan)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Catalan)",
+  "manageSubscription": "[CA] Manage Subscription (Catalan)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Catalan)",
+  "requiresInstallFallback": "[CA] Requires Install Fallback (Catalan)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Catalan)",
+  "paymentConfirmation": "[CA] Payment Confirmation (Catalan)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Catalan)",
+  "promoAppliedYourNextBillIsFree": "[CA] Promo applied! Your next bill is free. (Catalan)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Catalan)",
+  "errorLoadingSlots": "[CA] Error loading slots (Catalan)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Catalan)",
+  "REDACTED_TOKEN": "[CA] Allow other users to find and join this game (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Catalan)",
+  "REDACTED_TOKEN": "[CA] Business Onboarding Screen - Coming Soon (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Catalan)",
+  "activateBusinessProfile": "[CA] Activate Business Profile (Catalan)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Catalan)",
+  "contentNotFound": "[CA] Content not found (Catalan)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Catalan)",
+  "pspecialtynpcontactinfo": "[CA] {specialty}\\n{contactInfo} (Catalan)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Catalan)",
+  "rating": "[CA] Rating (Catalan)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Catalan)",
+  "messages": "[CA] Messages (Catalan)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Catalan)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Catalan)",
+  "becomeAnAmbassador": "[CA] Become an Ambassador (Catalan)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Catalan)",
+  "subscribeNow": "[CA] Subscribe Now (Catalan)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Catalan)",
+  "timeArgsslotformatcontext": "[CA] Time: {time} (Catalan)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Catalan)",
+  "shareViaWhatsapp": "[CA] Share via WhatsApp (Catalan)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Catalan)",
+  "users1": "[CA] Users (Catalan)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Catalan)",
+  "shareLink": "[CA] Share Link (Catalan)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[CA] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Catalan)",
+  "deleteAppointment": "[CA] Delete Appointment (Catalan)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Catalan)",
+  "toggleAvailability": "[CA] Toggle Availability (Catalan)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Catalan)",
+  "changePlan": "[CA] Change Plan (Catalan)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Catalan)",
+  "errorLoadingStaff": "[CA] Error loading staff (Catalan)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Catalan)",
+  "updateYourBusinessInformation": "[CA] Update your business information (Catalan)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[CA] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Catalan)",
+  "parentDashboard": "[CA] Parent Dashboard (Catalan)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Catalan)",
+  "menu": "[CA] Menu (Catalan)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Catalan)",
+  "studioBooking": "[CA] Studio Booking (Catalan)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Catalan)",
+  "about1": "[CA] About (Catalan)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Catalan)",
+  "multipleChoice": "[CA] Multiple Choice (Catalan)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Catalan)",
+  "REDACTED_TOKEN": "[CA] Date: {date} (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Catalan)",
+  "REDACTED_TOKEN": "[CA] Studio booking is only available on web (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Catalan)",
+  "errorLoadingBranchesE": "[CA] Error loading branches: $e (Catalan)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Catalan)",
+  "REDACTED_TOKEN": "[CA] \\uD83D\\uDCC5 {dateTime} (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Catalan)",
+  "none": "[CA] None (Catalan)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Catalan)",
+  "failedToUpdateConsentE": "[CA] Failed to update consent: $e (Catalan)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Catalan)",
+  "welcome1": "[CA] Welcome (Catalan)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Catalan)",
+  "failedToCreateSessionE": "[CA] Failed to create session: $e (Catalan)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Catalan)",
+  "inviteContact": "[CA] Invite Contact (Catalan)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Catalan)",
+  "surveyEditor": "[CA] Survey Editor (Catalan)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Catalan)",
+  "failedToStartBasicSubscriptionE": "[CA] Failed to start Basic subscription: $e (Catalan)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Catalan)",
+  "mySchedule": "[CA] My Schedule (Catalan)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Catalan)",
+  "studioDashboard": "[CA] Studio Dashboard (Catalan)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Catalan)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[CA] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[CA] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Catalan)",
+  "settingsSavedSuccessfully": "[CA] Settings saved successfully! (Catalan)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Catalan)",
+  "linkCopiedToClipboard": "[CA] Link copied to clipboard! (Catalan)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Catalan)",
+  "accept1": "[CA] Accept (Catalan)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Catalan)",
+  "noAvailableSlots": "[CA] No available slots (Catalan)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Catalan)",
+  "makeGamePublic": "[CA] Make Game Public (Catalan)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Catalan)",
+  "REDACTED_TOKEN": "[CA] Permission {category} updated to $newValue (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Catalan)",
+  "roomDeletedSuccessfully": "[CA] Room deleted successfully! (Catalan)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Catalan)",
+  "businessCalendar": "[CA] Business Calendar (Catalan)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Catalan)",
+  "addAvailability": "[CA] Add Availability (Catalan)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Catalan)",
+  "ambassadorOnboarding": "[CA] Ambassador Onboarding (Catalan)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Catalan)",
+  "phoneProfileasyncphone": "[CA] Phone: {phone} (Catalan)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Catalan)",
+  "addNewRoom": "[CA] Add New Room (Catalan)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Catalan)",
+  "requireParentApproval": "[CA] Require Parent Approval (Catalan)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Catalan)",
+  "closed": "[CA] Closed (Catalan)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Catalan)",
+  "exportAsPdf": "[CA] Export as PDF (Catalan)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Catalan)",
+  "enableVibration": "[CA] Enable Vibration (Catalan)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Catalan)",
+  "toAvailendformatcontext": "[CA] To: {endTime} (Catalan)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Catalan)",
+  "yourUpgradeCodeUpgradecode": "[CA] Your upgrade code: $upgradeCode (Catalan)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[CA] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Catalan)",
+  "country": "[CA] Country (Catalan)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[CA] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Catalan)",
+  "staffArgsstaffdisplayname": "[CA] Staff: {staffName} (Catalan)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Catalan)",
+  "revokeConsent": "[CA] Revoke Consent (Catalan)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Catalan)",
+  "settings1": "[CA] Settings (Catalan)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Catalan)",
+  "cancel1": "[CA] Cancel (Catalan)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Catalan)",
+  "REDACTED_TOKEN": "[CA] Subscription activated successfully! (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[CA] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Catalan)",
+  "broadcast": "[CA] Broadcast (Catalan)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Catalan)",
+  "noEventsScheduledThisWeek": "[CA] No events scheduled this week (Catalan)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Catalan)",
+  "googleCalendar": "[CA] Google Calendar (Catalan)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Catalan)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Catalan)",
+  "childDashboard": "[CA] Child Dashboard (Catalan)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Catalan)",
+  "failedToUploadBackgroundE": "[CA] Failed to upload background: $e (Catalan)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[CA] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[CA] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[CA] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Catalan)",
+  "noAppointments": "[CA] No appointments (Catalan)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Catalan)",
+  "unlimitedBookingsPerWeek": "[CA] • Unlimited bookings per week (Catalan)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Catalan)",
+  "scheduledAtScheduledat": "[CA] Scheduled at: $scheduledAt (Catalan)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Catalan)",
+  "selectStaff": "[CA] Select Staff (Catalan)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Catalan)",
+  "REDACTED_TOKEN": "[CA] Subscription cancelled successfully (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Catalan)",
+  "cancelAppointment": "[CA] Cancel Appointment (Catalan)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[CA] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Catalan)",
+  "businessSignup": "[CA] Business Signup (Catalan)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Catalan)",
+  "REDACTED_TOKEN": "[CA] Business Completion Screen - Coming Soon (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Catalan)",
+  "createGame1": "[CA] Create Game (Catalan)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Catalan)",
+  "valuetoint": "[CA] {value} (Catalan)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Catalan)",
+  "pleaseEnterAPromoCode": "[CA] Please enter a promo code (Catalan)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Catalan)",
+  "errorLoadingAvailabilityE": "[CA] Error loading availability: $e (Catalan)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Catalan)",
+  "parentalControls": "[CA] Parental Controls (Catalan)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Catalan)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Catalan)",
+  "childLinkedSuccessfully": "[CA] Child linked successfully! (Catalan)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Catalan)",
+  "create": "[CA] Create (Catalan)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Catalan)",
+  "noExternalMeetingsFound": "[CA] No external meetings found. (Catalan)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Catalan)",
+  "staffSelectionstaffdisplayname": "[CA] Staff: {staffName} (Catalan)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[CA] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Catalan)",
+  "schedulerScreen": "[CA] Scheduler Screen (Catalan)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Catalan)",
+  "clientUpdatedSuccessfully": "[CA] Client updated successfully! (Catalan)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Catalan)",
+  "surveyResponses": "[CA] Survey Responses (Catalan)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Catalan)",
+  "syncToOutlook": "[CA] Sync to Outlook (Catalan)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Catalan)",
+  "saveChanges": "[CA] Save Changes (Catalan)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Catalan)",
+  "pickTime": "[CA] Pick Time (Catalan)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Catalan)",
+  "registrationFailedEtostring": "[CA] Registration failed: {error} (Catalan)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Catalan)",
+  "analytics": "[CA] Analytics (Catalan)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Catalan)",
+  "errorLoadingEvents": "[CA] Error loading events (Catalan)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[CA] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[CA] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Catalan)",
+  "success1": "[CA] Success (Catalan)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[CA] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Catalan)",
+  "fromAvailstartformatcontext": "[CA] From: {startTime} (Catalan)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Catalan)",
+  "readWrite": "[CA] Read & Write (Catalan)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Catalan)",
+  "REDACTED_TOKEN": "[CA] Redirecting to Stripe checkout for Basic plan... (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[CA] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Catalan)",
+  "pickDate": "[CA] Pick Date (Catalan)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Catalan)",
+  "chatBooking": "[CA] Chat Booking (Catalan)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Catalan)",
+  "noQuestionsAdded": "[CA] No questions added (Catalan)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[CA] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[CA] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Catalan)",
+  "typeOpenCall": "[CA] Type: Open Call (Catalan)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[CA] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[CA] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Catalan)",
+  "invoiceCreatedSuccessfully": "[CA] Invoice created successfully! (Catalan)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Catalan)",
+  "noTimeSeriesDataAvailable": "[CA] No time series data available (Catalan)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[CA] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[CA] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Catalan)",
+  "failedToSendPrivacyRequestE": "[CA] Failed to send privacy request: $e (Catalan)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Catalan)",
+  "chooseYourPlan": "[CA] Choose Your Plan (Catalan)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Catalan)",
+  "playtimeManagement": "[CA] Playtime Management (Catalan)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Catalan)",
+  "availability": "[CA] Availability (Catalan)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Catalan)",
+  "eventCreated": "[CA] Event created (Catalan)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Catalan)",
+  "subscribeToBasic499mo": "[CA] Subscribe to Basic (€4.99/mo) (Catalan)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Catalan)",
+  "completion": "[CA] Completion (Catalan)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Catalan)",
+  "supportTicketSubmitted": "[CA] Support ticket submitted (Catalan)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Catalan)",
+  "monetizationSettings": "[CA] Monetization Settings (Catalan)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Catalan)",
+  "noBookingsFound": "[CA] No bookings found (Catalan)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[CA] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Catalan)",
+  "deleteSurvey": "[CA] Delete Survey (Catalan)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Catalan)",
+  "gameApprovedSuccessfully": "[CA] Game approved successfully! (Catalan)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Catalan)",
+  "errorLoadingPermissionsError": "[CA] Error loading permissions: $error (Catalan)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Catalan)",
+  "referrals": "[CA] Referrals (Catalan)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Catalan)",
+  "crm": "[CA] CRM (Catalan)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Catalan)",
+  "gameRejected": "[CA] Game rejected (Catalan)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Catalan)",
+  "appointments": "[CA] Appointments (Catalan)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Catalan)",
+  "onboardingScreen": "[CA] Onboarding Screen (Catalan)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Catalan)",
+  "welcomeToYourStudio": "[CA] Welcome to your studio (Catalan)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Catalan)",
+  "update": "[CA] Update (Catalan)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Catalan)",
+  "retry1": "[CA] Retry (Catalan)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Catalan)",
+  "booking": "[CA] Booking (Catalan)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Catalan)",
+  "parentalSettings": "[CA] Parental Settings (Catalan)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Catalan)",
+  "language": "[CA] Language (Catalan)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Catalan)",
+  "deleteSlot": "[CA] Delete Slot (Catalan)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[CA] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[CA] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Catalan)",
+  "createNewGame": "[CA] Create New Game (Catalan)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Catalan)",
+  "next1": "[CA] Next (Catalan)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Catalan)",
+  "backgroundUploadedSuccessfully": "[CA] Background uploaded successfully! (Catalan)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Catalan)",
+  "noAppointmentRequestsFound": "[CA] No appointment requests found. (Catalan)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Catalan)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Catalan)",
+  "restrictMatureContent": "[CA] Restrict mature content (Catalan)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Catalan)",
+  "ambassadors": "[CA] Ambassadors (Catalan)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Catalan)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Catalan)",
+  "paymentWasCancelled": "[CA] Payment was cancelled (Catalan)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Catalan)",
+  "clearAll": "[CA] Clear All (Catalan)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Catalan)",
+  "viewDetails": "[CA] View Details (Catalan)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Catalan)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Catalan)",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Catalan)",
+  "failedToCreateGameE": "[CA] Failed to create game: $e (Catalan)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Catalan)",
+  "noChartDataAvailable": "[CA] No chart data available (Catalan)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Catalan)",
+  "phonebasedBookingSystem": "[CA] • Phone-based booking system (Catalan)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Catalan)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Catalan)",
+  "invoices": "[CA] Invoices (Catalan)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Catalan)",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Catalan)",
+  "scheduledAtArgsscheduledat": "[CA] Scheduled at: {scheduledAt} (Catalan)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Catalan)",
+  "REDACTED_TOKEN": "[CA] Duration: {duration} minutes (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Catalan)",
+  "tryAgain": "[CA] Try Again (Catalan)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Catalan)",
+  "deleteBackground": "[CA] Delete Background (Catalan)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Catalan)",
+  "currentTierTiertouppercase": "[CA] Current Tier: {tier} (Catalan)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[CA] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Catalan)",
+  "REDACTED_TOKEN": "[CA] No clients found. Add your first client! (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[CA] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[CA] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Catalan)",
+  "appointmentRequests": "[CA] Appointment Requests (Catalan)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Catalan)",
+  "forward": "[CA] Forward (Catalan)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Catalan)",
+  "roomAddedSuccessfully": "[CA] Room added successfully! (Catalan)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Catalan)",
+  "option": "[CA] • $option (Catalan)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Catalan)",
+  "responseIndex1": "[CA] Response #{number} (Catalan)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Catalan)",
+  "crmDashboardWithAnalytics": "[CA] • CRM dashboard with analytics (Catalan)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Catalan)",
+  "contentLibrary1": "[CA] Content Library (Catalan)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Catalan)",
+  "reply": "[CA] Reply (Catalan)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Catalan)",
+  "subscriptionManagement": "[CA] Subscription Management (Catalan)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Catalan)",
+  "REDACTED_TOKEN": "[CA] Monetization settings will be implemented here (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Catalan)",
+  "failedToApplyPromoCodeE": "[CA] Failed to apply promo code: $e (Catalan)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[CA] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Catalan)",
+  "localizationContribution": "[CA] Localization Contribution (Catalan)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Catalan)",
+  "parentalConsent": "[CA] Parental Consent (Catalan)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Catalan)",
+  "businessSignupScreenComingSoon": "[CA] Business Signup Screen - Coming Soon (Catalan)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Catalan)",
+  "REDACTED_TOKEN": "[CA] Are you sure you want to delete this appointment? (Catalan)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Catalan)",
+  "syncAppointment": "[CA] Sync Appointment (Catalan)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Catalan)",
+  "iConsent": "[CA] I Consent (Catalan)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Catalan)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Catalan)",
+  "businessSetupScreenComingSoon": "[CA] Business Setup Screen - Coming Soon (Catalan)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Catalan)",
+  "edit1": "[CA] Edit (Catalan)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Catalan)",
+  "noEventsScheduledThisMonth": "[CA] No events scheduled this month (Catalan)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Catalan)",
+  "businessDashboard": "[CA] Business Dashboard (Catalan)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Catalan)",
+  "noMessagesFound": "[CA] No messages found. (Catalan)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[CA] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Catalan)",
+  "manageStaffAvailability": "[CA] Manage Staff Availability (Catalan)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Catalan)",
+  "noMissingTranslations": "[CA] No missing translations (Catalan)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Catalan)",
+  "skip": "[CA] Skip (Catalan)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[CA] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Catalan)",
+  "errorLoadingReferralCode": "[CA] Error loading referral code (Catalan)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Catalan)",
+  "allCountries": "[CA] All Countries (Catalan)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Catalan)",
+  "deleteGame": "[CA] Delete Game (Catalan)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Catalan)",
+  "staffManagementTools": "[CA] • Staff management tools (Catalan)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Catalan)",
+  "deleteMessage": "[CA] Delete Message (Catalan)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Catalan)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[CA] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Catalan)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Catalan)",
+  "openingCustomerPortal": "[CA] Opening customer portal... (Catalan)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Catalan)",
+  "signOut": "[CA] Sign Out (Catalan)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Catalan)",
+  "nameProfilename": "[CA] Name: {name} (Catalan)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Catalan)",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Catalan)",
+  "upgradeToBusiness": "[CA] Upgrade to Business (Catalan)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Catalan)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Catalan)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Catalan)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Catalan)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Catalan)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Catalan)",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Catalan)",
+  "viewResponses": "[CA] View Responses (Catalan)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Catalan)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Catalan)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Catalan)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Catalan)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Catalan)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Catalan)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Catalan)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Catalan)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Catalan)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Catalan)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

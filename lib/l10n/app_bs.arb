@@ -1,2862 +1,2862 @@
 {
   "@@locale": "bs",
-  "refresh": "[BS] Refresh",
+  "refresh": "[BS] [BS] Refresh",
   "@refresh": {
     "description": "Description"
   },
-  "home": "[BS] Home",
+  "home": "[BS] [BS] Home",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "[BS] No sessions yet",
+  "noSessionsYet": "[BS] [BS] No sessions yet",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "[BS] OK",
+  "ok": "[BS] [BS] OK",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "[BS] Choose your play mode:",
+  "playtimeLandingChooseMode": "[BS] [BS] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "[BS] Sign Up",
+  "signUp": "[BS] [BS] Sign Up",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "[BS] Schedule Message",
+  "scheduleMessage": "[BS] [BS] Schedule Message",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "[BS] Decline",
+  "decline": "[BS] [BS] Decline",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[BS] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "[BS] Login",
+  "login": "[BS] [BS] Login",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "[BS] Choose friends to invite",
+  "playtimeChooseFriends": "[BS] [BS] Choose friends to invite",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "[BS] No invites",
+  "noInvites": "[BS] [BS] No invites",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "[BS] Choose a time",
+  "playtimeChooseTime": "[BS] [BS] Choose a time",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "[BS] Success",
+  "success": "[BS] [BS] Success",
   "@success": {
     "description": "Description"
   },
-  "undo": "[BS] Undo",
+  "undo": "[BS] [BS] Undo",
   "@undo": {
     "description": "Description"
   },
-  "opened": "[BS] Opened",
+  "opened": "[BS] [BS] Opened",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "[BS] Create Virtual Session",
+  "createVirtualSession": "[BS] [BS] Create Virtual Session",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "[BS] Message sent successfully",
+  "messageSentSuccessfully": "[BS] [BS] Message sent successfully",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "[BS] Redo",
+  "redo": "[BS] [BS] Redo",
   "@redo": {
     "description": "Description"
   },
-  "next": "[BS] Next",
+  "next": "[BS] [BS] Next",
   "@next": {
     "description": "Description"
   },
-  "search": "[BS] Search",
+  "search": "[BS] [BS] Search",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "[BS] Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "[BS] [BS] Are you sure you want to cancel this invite?",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "[BS] Created",
+  "created": "[BS] [BS] Created",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "[BS] Revoke Access",
+  "revokeAccess": "[BS] [BS] Revoke Access",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[BS] Save Group for Recognition",
+  "saveGroupForRecognition": "[BS] [BS] Save Group for Recognition",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "[BS] Live playtime scheduled!",
+  "playtimeLiveScheduled": "[BS] [BS] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "[BS] Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "[BS] [BS] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "[BS] Download",
+  "download": "[BS] [BS] Download",
   "@download": {
     "description": "Description"
   },
-  "password": "[BS] Password",
+  "password": "[BS] [BS] Password",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "[BS] Error loading family links",
+  "errorLoadingFamilyLinks": "[BS] [BS] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "[BS] Cancel",
+  "cancel": "[BS] [BS] Cancel",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "[BS] Create",
+  "playtimeCreate": "[BS] [BS] Create",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "[BS] Failed to action privacy request",
+  "failedToActionPrivacyRequest": "[BS] [BS] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "[BS] APP-OINT",
+  "appTitle": "[BS] [BS] APP-OINT",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "[BS] Accept",
+  "accept": "[BS] [BS] Accept",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "[BS] Virtual Play",
+  "playtimeModeVirtual": "[BS] [BS] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "[BS] Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "[BS] [BS] Enjoy live or virtual games with your friends!",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "[BS] Delete",
+  "delete": "[BS] [BS] Delete",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "[BS] Virtual playtime started!",
+  "playtimeVirtualStarted": "[BS] [BS] Virtual playtime started!",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "[BS] Create your first game",
+  "createYourFirstGame": "[BS] [BS] Create your first game",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "[BS] Participants",
+  "participants": "[BS] [BS] Participants",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "[BS] Recipients",
+  "recipients": "[BS] [BS] Recipients",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "[BS] No results found",
+  "noResults": "[BS] [BS] No results found",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "[BS] Yes",
+  "yes": "[BS] [BS] Yes",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "[BS] Invite",
+  "invite": "[BS] [BS] Invite",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "[BS] Live Play",
+  "playtimeModeLive": "[BS] [BS] Live Play",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "[BS] Done",
+  "done": "[BS] [BS] Done",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "[BS] Let's meet via Appoint!",
+  "defaultShareMessage": "[BS] [BS] Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "[BS] No",
+  "no": "[BS] [BS] No",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "[BS] Playtime Hub",
+  "playtimeHub": "[BS] [BS] Playtime Hub",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "[BS] Create Live Session",
+  "createLiveSession": "[BS] [BS] Create Live Session",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "[BS] Enable Notifications",
+  "enableNotifications": "[BS] [BS] Enable Notifications",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "[BS] Invited",
+  "invited": "[BS] [BS] Invited",
   "@invited": {
     "description": "Description"
   },
-  "content": "[BS] Content",
+  "content": "[BS] [BS] Content",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "[BS] Meeting shared successfully",
+  "meetingSharedSuccessfully": "[BS] [BS] Meeting shared successfully",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "[BS] Welcome to Playtime",
+  "welcomeToPlaytime": "[BS] [BS] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "[BS] View All",
+  "viewAll": "[BS] [BS] View All",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "[BS] Virtual Play",
+  "playtimeVirtual": "[BS] [BS] Virtual Play",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "[BS] Staff screen coming soon",
+  "staffScreenTBD": "[BS] [BS] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "[BS] Cut",
+  "cut": "[BS] [BS] Cut",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "[BS] Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "[BS] [BS] Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "[BS] Retry",
+  "retry": "[BS] [BS] Retry",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "[BS] Compose Broadcast Message",
+  "composeBroadcastMessage": "[BS] [BS] Compose Broadcast Message",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "[BS] Send Now",
+  "sendNow": "[BS] [BS] Send Now",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "[BS] No games yet",
+  "noGamesYet": "[BS] [BS] No games yet",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "[BS] Select",
+  "select": "[BS] [BS] Select",
   "@select": {
     "description": "Description"
   },
-  "about": "[BS] About",
+  "about": "[BS] [BS] About",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "[BS] Choose",
+  "choose": "[BS] [BS] Choose",
   "@choose": {
     "description": "Description"
   },
-  "profile": "[BS] Profile",
+  "profile": "[BS] [BS] Profile",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "[BS] Remove Child",
+  "removeChild": "[BS] [BS] Remove Child",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "[BS] Status",
+  "status": "[BS] [BS] Status",
   "@status": {
     "description": "status description"
   },
-  "logout": "[BS] Logout",
+  "logout": "[BS] [BS] Logout",
   "@logout": {
     "description": "Description"
   },
-  "paste": "[BS] Paste",
+  "paste": "[BS] [BS] Paste",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "[BS] Welcome",
+  "welcome": "[BS] [BS] Welcome",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "[BS] Create a Playtime Session",
+  "playtimeCreateSession": "[BS] [BS] Create a Playtime Session",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "[BS] Family Members",
+  "familyMembers": "[BS] [BS] Family Members",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "[BS] Upload",
+  "upload": "[BS] [BS] Upload",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "[BS] Upcoming Sessions",
+  "upcomingSessions": "[BS] [BS] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "[BS] Enter group name",
+  "enterGroupName": "[BS] [BS] Enter group name",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "[BS] Confirm",
+  "confirm": "[BS] [BS] Confirm",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "[BS] Live Play",
+  "playtimeLive": "[BS] [BS] Live Play",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "[BS] Error loading invites",
+  "errorLoadingInvites": "[BS] [BS] Error loading invites",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "[BS] Targeting Filters",
+  "targetingFilters": "[BS] [BS] Targeting Filters",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "[BS] Pick Video",
+  "pickVideo": "[BS] [BS] Pick Video",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "[BS] Game deleted",
+  "playtimeGameDeleted": "[BS] [BS] Game deleted",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "[BS] Schedule for Later",
+  "scheduleForLater": "[BS] [BS] Schedule for Later",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "[BS] Access revoked successfully",
+  "accessRevokedSuccessfully": "[BS] [BS] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "[BS] Type",
+  "type": "[BS] [BS] Type",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "[BS] Checking permissions...",
+  "checkingPermissions": "[BS] [BS] Checking permissions...",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "[BS] Copy",
+  "copy": "[BS] [BS] Copy",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "[BS] Yes, Cancel",
+  "yesCancel": "[BS] [BS] Yes, Cancel",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "[BS] Email",
+  "email": "[BS] [BS] Email",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[BS] Share on WhatsApp",
+  "shareOnWhatsApp": "[BS] [BS] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "[BS] Notification Settings",
+  "notificationSettings": "[BS] [BS] Notification Settings",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "[BS] My Profile",
+  "myProfile": "[BS] [BS] My Profile",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "[BS] Revoke",
+  "revoke": "[BS] [BS] Revoke",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "[BS] No messages yet",
+  "noBroadcastMessages": "[BS] [BS] No messages yet",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "[BS] Request Type",
+  "requestType": "[BS] [BS] Request Type",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "[BS] Notifications",
+  "notifications": "[BS] [BS] Notifications",
   "@notifications": {
     "description": "Description"
   },
-  "details": "[BS] Details",
+  "details": "[BS] [BS] Details",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "[BS] Cancel Invite",
+  "cancelInvite": "[BS] [BS] Cancel Invite",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "[BS] Create New",
+  "createNew": "[BS] [BS] Create New",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "[BS] Settings",
+  "settings": "[BS] [BS] Settings",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "[BS] Reject",
+  "playtimeReject": "[BS] [BS] Reject",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "[BS] Error loading profile",
+  "errorLoadingProfile": "[BS] [BS] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "[BS] Edit",
+  "edit": "[BS] [BS] Edit",
   "@edit": {
     "description": "Description"
   },
-  "add": "[BS] Add",
+  "add": "[BS] [BS] Add",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "[BS] Game approved",
+  "playtimeGameApproved": "[BS] [BS] Game approved",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "[BS] Forgot Password?",
+  "forgotPassword": "[BS] [BS] Forgot Password?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "[BS] Family Dashboard",
+  "familyDashboard": "[BS] [BS] Family Dashboard",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "[BS] Loading...",
+  "loading": "[BS] [BS] Loading...",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "[BS] Quick Actions",
+  "quickActions": "[BS] [BS] Quick Actions",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "[BS] Playtime",
+  "playtimeTitle": "[BS] [BS] Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "[BS] OTP resent successfully",
+  "otpResentSuccessfully": "[BS] [BS] OTP resent successfully",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "[BS] Error checking permissions",
+  "errorCheckingPermissions": "[BS] [BS] Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "[BS] Client screen coming soon",
+  "clientScreenTBD": "[BS] [BS] Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "[BS] FCM Token",
+  "fcmToken": "[BS] [BS] FCM Token",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "[BS] Pick Image",
+  "pickImage": "[BS] [BS] Pick Image",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "[BS] Previous",
+  "previous": "[BS] [BS] Previous",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[BS] No profile found",
+  "noProfileFound": "[BS] [BS] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "[BS] No family members yet",
+  "noFamilyMembersYet": "[BS] [BS] No family members yet",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "[BS] Media (Optional)",
+  "mediaOptional": "[BS] [BS] Media (Optional)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "[BS] Message saved successfully",
+  "messageSavedSuccessfully": "[BS] [BS] Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "[BS] Scheduled for",
+  "scheduledFor": "[BS] [BS] Scheduled for",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "[BS] Dashboard",
+  "dashboard": "[BS] [BS] Dashboard",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "[BS] No permission for broadcast",
+  "noPermissionForBroadcast": "[BS] [BS] No permission for broadcast",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[BS] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "[BS] Invite Details",
+  "inviteDetail": "[BS] [BS] Invite Details",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "[BS] Scheduled",
+  "scheduled": "[BS] [BS] Scheduled",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "[BS] Failed to resend OTP",
+  "failedToResendOtp": "[BS] [BS] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "[BS] Scheduling",
+  "scheduling": "[BS] [BS] Scheduling",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "[BS] Error saving message",
+  "errorSavingMessage": "[BS] [BS] Error saving message",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "[BS] Save",
+  "save": "[BS] [BS] Save",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "[BS] Approve",
+  "playtimeApprove": "[BS] [BS] Approve",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "[BS] Create your first session",
+  "createYourFirstSession": "[BS] [BS] Create your first session",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "[BS] Game rejected",
+  "playtimeGameRejected": "[BS] [BS] Game rejected",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "[BS] Failed to revoke access",
+  "failedToRevokeAccess": "[BS] [BS] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "[BS] Recent Games",
+  "recentGames": "[BS] [BS] Recent Games",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "[BS] Customize Message",
+  "customizeMessage": "[BS] [BS] Customize Message",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "[BS] Failed to cancel invite",
+  "failedToCancelInvite": "[BS] [BS] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "[BS] Error sending message",
+  "errorSendingMessage": "[BS] [BS] Error sending message",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "[BS] Confirm Password",
+  "confirmPassword": "[BS] [BS] Confirm Password",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "[BS] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[BS] [BS] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "[BS] Connected Children",
+  "connectedChildren": "[BS] [BS] Connected Children",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "[BS] Share",
+  "share": "[BS] [BS] Share",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "[BS] Enter game name",
+  "playtimeEnterGameName": "[BS] [BS] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "[BS] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[BS] [BS] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "[BS] My Invites",
+  "myInvites": "[BS] [BS] My Invites",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "[BS] Create Game",
+  "createGame": "[BS] [BS] Create Game",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[BS] Group Name (Optional)",
+  "groupNameOptional": "[BS] [BS] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "[BS] No playtime sessions found.",
+  "playtimeNoSessions": "[BS] [BS] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[BS] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[BS] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[BS] [BS] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "[BS] Close",
+  "close": "[BS] [BS] Close",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "[BS] Known group detected",
+  "knownGroupDetected": "[BS] [BS] Known group detected",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "[BS] Back",
+  "back": "[BS] [BS] Back",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "[BS] Choose a game",
+  "playtimeChooseGame": "[BS] [BS] Choose a game",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "[BS] Manage Permissions",
+  "managePermissions": "[BS] [BS] Manage Permissions",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "[BS] Poll Options",
+  "pollOptions": "[BS] [BS] Poll Options",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "[BS] Clicked",
+  "clicked": "[BS] [BS] Clicked",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "[BS] Link",
+  "link": "[BS] [BS] Link",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "[BS] Your meeting is ready! Join now",
+  "meetingReadyMessage": "[BS] [BS] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "[BS] Pending Invites",
+  "pendingInvites": "[BS] [BS] Pending Invites",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "[BS] Status:",
+  "statusColon": "[BS] [BS] Status:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[BS] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[BS] [BS] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[BS] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[BS] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[BS] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[BS] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[BS] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[BS] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[BS] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[BS] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[BS] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[BS] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[BS] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[BS] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[BS] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[BS] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[BS] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[BS] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[BS] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[BS] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Bosnian)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Bosnian)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Bosnian)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Bosnian)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[BS] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[BS] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[BS] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[BS] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[BS] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[BS] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[BS] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[BS] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[BS] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[BS] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[BS] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[BS] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[BS] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[BS] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[BS] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[BS] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[BS] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[BS] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[BS] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[BS] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[BS] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[BS] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[BS] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[BS] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[BS] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[BS] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[BS] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[BS] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[BS] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[BS] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[BS] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[BS] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[BS] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[BS] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[BS] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[BS] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[BS] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[BS] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[BS] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[BS] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[BS] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[BS] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[BS] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[BS] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[BS] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[BS] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[BS] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[BS] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[BS] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[BS] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[BS] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[BS] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[BS] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[BS] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[BS] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[BS] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[BS] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[BS] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[BS] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[BS] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[BS] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[BS] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Bosnian)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Bosnian)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Bosnian)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Bosnian)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Bosnian)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Bosnian)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Bosnian)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Bosnian)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[BS] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Bosnian)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Bosnian)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Bosnian)",
+  "upload1": "[BS] Upload (Bosnian)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Bosnian)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Bosnian)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Virtual session created! Inviting friends... (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Bosnian)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Bosnian)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Bosnian)",
+  "rewards": "[BS] Rewards (Bosnian)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Bosnian)",
+  "time": "[BS] Time (Bosnian)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[BS] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Bosnian)",
+  "noSlots": "[BS] No slots (Bosnian)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Bosnian)",
+  "signIn": "[BS] Sign In (Bosnian)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Bosnian)",
+  "homeFeedScreen": "[BS] Home Feed Screen (Bosnian)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Bosnian)",
+  "selectLocation": "[BS] Select Location (Bosnian)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Bosnian)",
+  "noTicketsYet": "[BS] No tickets yet (Bosnian)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Bosnian)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Bosnian)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Bosnian)",
+  "subscriptionUnavailable": "[BS] Subscription unavailable (Bosnian)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Bosnian)",
+  "confirmBooking": "[BS] Confirm Booking (Bosnian)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Bosnian)",
+  "failedToUpdatePermissionE": "[BS] Failed to update permission: $e (Bosnian)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Bosnian)",
+  "reject": "[BS] Reject (Bosnian)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Ambassador Status: {ambassadorStatus} (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[BS] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Bosnian)",
+  "checkingSubscription": "[BS] Checking subscription... (Bosnian)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Bosnian)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Bosnian)",
+  "noContentAvailableYet": "[BS] No content available yet (Bosnian)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Bosnian)",
+  "resolve": "[BS] Resolve (Bosnian)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Bosnian)",
+  "errorLoadingSurveysError": "[BS] Error loading surveys: $error (Bosnian)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[BS] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Bosnian)",
+  "getHelpWithYourAccount": "[BS] Get help with your account (Bosnian)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Bosnian)",
+  "pay": "[BS] Pay (Bosnian)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[BS] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Bosnian)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Bosnian)",
+  "changesSavedSuccessfully": "[BS] Changes saved successfully! (Bosnian)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Bosnian)",
+  "createNewInvoice": "[BS] Create New Invoice (Bosnian)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Bosnian)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Bosnian)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Bosnian)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Bosnian)",
+  "profileSaved": "[BS] Profile saved! (Bosnian)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Bosnian)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Bosnian)",
+  "valuetointk": "[BS] \\${value}K (Bosnian)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Bosnian)",
+  "deleteAccount": "[BS] Delete Account (Bosnian)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Bosnian)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Bosnian)",
+  "businessOnboarding": "[BS] Business Onboarding (Bosnian)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Bosnian)",
+  "addNewClient": "[BS] Add New Client (Bosnian)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Bosnian)",
+  "darkMode": "[BS] Dark Mode (Bosnian)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[BS] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[BS] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Bosnian)",
+  "REDACTED_TOKEN": "[BS] You will receive a confirmation email shortly. (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Bosnian)",
+  "addQuestion": "[BS] Add Question (Bosnian)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Bosnian)",
+  "privacyPolicy": "[BS] Privacy Policy (Bosnian)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Bosnian)",
+  "branchesLengthBranches": "[BS] {branchCount} branches (Bosnian)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Bosnian)",
+  "join": "[BS] Join (Bosnian)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Bosnian)",
+  "businessSubscription": "[BS] Business Subscription (Bosnian)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Bosnian)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[BS] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Bosnian)",
+  "surveyManagement": "[BS] Survey Management (Bosnian)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[BS] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Bosnian)",
+  "noRoomsFoundAddYourFirstRoom": "[BS] No rooms found. Add your first room! (Bosnian)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Bosnian)",
+  "readOurPrivacyPolicy": "[BS] Read our privacy policy (Bosnian)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Bosnian)",
+  "couldNotOpenPrivacyPolicy": "[BS] Could not open privacy policy (Bosnian)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Bosnian)",
+  "refresh1": "[BS] Refresh (Bosnian)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Bosnian)",
+  "roomUpdatedSuccessfully": "[BS] Room updated successfully! (Bosnian)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Bosnian)",
+  "contentDetail": "[BS] Content Detail (Bosnian)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Bosnian)",
+  "cancelSubscription": "[BS] Cancel Subscription (Bosnian)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Successfully registered as Ambassador! (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Bosnian)",
+  "save1": "[BS] Save (Bosnian)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Bosnian)",
+  "copy1": "[BS] Copy (Bosnian)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Bosnian)",
+  "failedToSendInvitationE": "[BS] Failed to send invitation: $e (Bosnian)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Bosnian)",
+  "surveyScore": "[BS] Survey Score (Bosnian)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[BS] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Bosnian)",
+  "noAppointmentsFound": "[BS] No appointments found. (Bosnian)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Bosnian)",
+  "responseDetail": "[BS] Response Detail (Bosnian)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Bosnian)",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Bosnian)",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Bosnian)",
+  "failedToStartProSubscriptionE": "[BS] Failed to start Pro subscription: $e (Bosnian)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Business Dashboard Entry Screen - Coming Soon (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Bosnian)",
+  "contentFilter": "[BS] Content Filter (Bosnian)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Bosnian)",
+  "helpSupport": "[BS] Help & Support (Bosnian)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Bosnian)",
+  "editRoom": "[BS] Edit Room (Bosnian)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[BS] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[BS] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Business CRM Entry Screen - Coming Soon (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[BS] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[BS] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Bosnian)",
+  "errorLoadingDashboardError": "[BS] Error loading dashboard: $error (Bosnian)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Bosnian)",
+  "gameDeletedSuccessfully": "[BS] Game deleted successfully! (Bosnian)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Bosnian)",
+  "viewResponsesComingSoon": "[BS] View responses - Coming soon! (Bosnian)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[BS] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Bosnian)",
+  "errorLoadingRewards": "[BS] Error loading rewards (Bosnian)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Bosnian)",
+  "failedToDeleteAccountE": "[BS] Failed to delete account: $e (Bosnian)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Bosnian)",
+  "invited1": "[BS] Invited (Bosnian)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Bosnian)",
+  "noBranchesAvailable": "[BS] No branches available (Bosnian)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Bosnian)",
+  "errorError": "[BS] Error: $error (Bosnian)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Bosnian)",
+  "noEvents": "[BS] No events (Bosnian)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Bosnian)",
+  "gameCreatedSuccessfully": "[BS] Game created successfully! (Bosnian)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Bosnian)",
+  "add1": "[BS] Add (Bosnian)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[BS] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Bosnian)",
+  "eventstarttimeEventendtime": "[BS] {startTime} - {endTime} (Bosnian)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Bosnian)",
+  "allowPlaytime": "[BS] Allow Playtime (Bosnian)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Bosnian)",
+  "clients": "[BS] Clients (Bosnian)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Bosnian)",
+  "noAmbassadorDataAvailable": "[BS] No ambassador data available (Bosnian)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Bosnian)",
+  "backgroundDeletedSuccessfully": "[BS] Background deleted successfully! (Bosnian)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Bosnian)",
+  "errorSnapshoterror": "[BS] Error: {error} (Bosnian)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Bosnian)",
+  "noAnalyticsDataAvailableYet": "[BS] No analytics data available yet. (Bosnian)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Bosnian)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Business Phone Booking Entry Screen - Coming Soon (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Bosnian)",
+  "verification": "[BS] Verification (Bosnian)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Bosnian)",
+  "copyLink": "[BS] Copy Link (Bosnian)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Bosnian)",
+  "dashboard1": "[BS] Dashboard (Bosnian)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Bosnian)",
+  "manageChildAccounts": "[BS] Manage Child Accounts (Bosnian)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Bosnian)",
+  "grantConsent": "[BS] Grant Consent (Bosnian)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Bosnian)",
+  "myProfile1": "[BS] My Profile (Bosnian)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Bosnian)",
+  "submit": "[BS] Submit (Bosnian)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[BS] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Bosnian)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Bosnian)",
+  "ambassadorDashboard": "[BS] Ambassador Dashboard (Bosnian)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Bosnian)",
+  "phoneBooking": "[BS] Phone Booking (Bosnian)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Bosnian)",
+  "bookViaChat": "[BS] Book via Chat (Bosnian)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "[BS] Error",
+  "error": "[BS] [BS] Error",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Bosnian)",
+  "businessProfile": "[BS] Business Profile (Bosnian)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Business Booking Entry Screen - Coming Soon (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Bosnian)",
+  "createNewSurvey": "[BS] Create New Survey (Bosnian)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Bosnian)",
+  "backgroundRejected": "[BS] Background rejected (Bosnian)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Bosnian)",
+  "noMediaSelected": "[BS] No media selected (Bosnian)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Bosnian)",
+  "syncToGoogle": "[BS] Sync to Google (Bosnian)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Bosnian)",
+  "virtualPlaytime": "[BS] Virtual Playtime (Bosnian)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[BS] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[BS] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Bosnian)",
+  "invitationSentSuccessfully": "[BS] Invitation sent successfully! (Bosnian)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Bosnian)",
+  "registering": "[BS] Registering... (Bosnian)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Bosnian)",
+  "statusAppointmentstatusname": "[BS] Status: {status} (Bosnian)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Bosnian)",
+  "home1": "[BS] Home (Bosnian)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Bosnian)",
+  "errorSavingSettingsE": "[BS] Error saving settings: $e (Bosnian)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Bosnian)",
+  "appVersionAndInformation": "[BS] App version and information (Bosnian)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Business Subscription Entry Screen - Coming Soon (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Bosnian)",
+  "ekeyEvalue": "[BS] {key}: {value} (Bosnian)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Your payment has been processed successfully. (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Bosnian)",
+  "errorE": "[BS] Error: $e (Bosnian)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Bosnian)",
+  "viewAll1": "[BS] View All (Bosnian)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Bosnian)",
+  "editSurveyComingSoon": "[BS] Edit survey - Coming soon! (Bosnian)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Bosnian)",
+  "enterOtp": "[BS] Enter OTP (Bosnian)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Bosnian)",
+  "payment": "[BS] Payment (Bosnian)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Automatically confirm new booking requests (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Bosnian)",
+  "noRouteDefinedForSettingsname": "[BS] No route defined for {settingsName} (Bosnian)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Bosnian)",
+  "pleaseSignInToUploadABackground": "[BS] Please sign in to upload a background (Bosnian)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[BS] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Bosnian)",
+  "staffAvailability": "[BS] Staff Availability (Bosnian)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Bosnian)",
+  "livePlaytime": "[BS] Live Playtime (Bosnian)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Bosnian)",
+  "autoconfirmBookings": "[BS] Auto-Confirm Bookings (Bosnian)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Redirecting to Stripe checkout for Pro plan... (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Bosnian)",
+  "exportAsCsv": "[BS] Export as CSV (Bosnian)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Bosnian)",
+  "deleteFunctionalityComingSoon": "[BS] Delete functionality coming soon! (Bosnian)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Bosnian)",
+  "editClient": "[BS] Edit Client (Bosnian)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Are you sure you want to delete this message? (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Bosnian)",
+  "referralsAmbassadorreferrals": "[BS] Referrals: {referrals} (Bosnian)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[BS] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Bosnian)",
+  "privacyRequestSentToYourParents": "[BS] Privacy request sent to your parents! (Bosnian)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Bosnian)",
+  "clientDeletedSuccessfully": "[BS] Client deleted successfully! (Bosnian)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Bosnian)",
+  "failedToCancelSubscription": "[BS] Failed to cancel subscription (Bosnian)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Bosnian)",
+  "allLanguages": "[BS] All Languages (Bosnian)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Bosnian)",
+  "slotDeletedSuccessfully": "[BS] Slot deleted successfully (Bosnian)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[BS] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Parents must approve before children can join (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Bosnian)",
+  "subscribeToPro1499mo": "[BS] Subscribe to Pro (€14.99/mo) (Bosnian)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Business Availability Entry Screen - Coming Soon (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Bosnian)",
+  "appointmentsListlength": "[BS] Appointments: {count} (Bosnian)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Bosnian)",
+  "clearFilters": "[BS] Clear Filters (Bosnian)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Bosnian)",
+  "submitBooking": "[BS] Submit Booking (Bosnian)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Are you sure you want to cancel this appointment? (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Bosnian)",
+  "noUpcomingBookings": "[BS] No upcoming bookings (Bosnian)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Bosnian)",
+  "goBack": "[BS] Go Back (Bosnian)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Bosnian)",
+  "setup": "[BS] Setup (Bosnian)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Bosnian)",
+  "inviteChild": "[BS] Invite Child (Bosnian)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Bosnian)",
+  "goToDashboard": "[BS] Go to Dashboard (Bosnian)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Bosnian)",
+  "ambassadorQuotaDashboard": "[BS] Ambassador Quota Dashboard (Bosnian)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[BS] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Bosnian)",
+  "referralCode": "[BS] Referral Code (Bosnian)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[BS] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Bosnian)",
+  "date": "[BS] Date (Bosnian)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Bosnian)",
+  "readOnly": "[BS] Read Only (Bosnian)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Bosnian)",
+  "bookingRequest": "[BS] Booking Request (Bosnian)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Bosnian)",
+  "advancedReporting": "[BS] • Advanced reporting (Bosnian)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Bosnian)",
+  "rooms": "[BS] Rooms (Bosnian)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Bosnian)",
+  "copiedToClipboard": "[BS] Copied to clipboard (Bosnian)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Bosnian)",
+  "bookingConfirmed": "[BS] Booking Confirmed (Bosnian)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Bosnian)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Bosnian)",
+  "clientAddedSuccessfully": "[BS] Client added successfully! (Bosnian)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Bosnian)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Bosnian)",
+  "backgroundApproved": "[BS] Background approved! (Bosnian)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Bosnian)",
+  "familySupport": "[BS] Family Support (Bosnian)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Bosnian)",
+  "deletingAccount": "[BS] Deleting account... (Bosnian)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Bosnian)",
+  "bookAppointment": "[BS] Book Appointment (Bosnian)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Bosnian)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Bosnian)",
+  "delete1": "[BS] Delete (Bosnian)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Bosnian)",
+  "sendBookingInvite": "[BS] Send Booking Invite (Bosnian)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Bosnian)",
+  "text": "[BS] Text (Bosnian)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Bosnian)",
+  "manageSubscription": "[BS] Manage Subscription (Bosnian)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Bosnian)",
+  "requiresInstallFallback": "[BS] Requires Install Fallback (Bosnian)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Bosnian)",
+  "paymentConfirmation": "[BS] Payment Confirmation (Bosnian)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Bosnian)",
+  "promoAppliedYourNextBillIsFree": "[BS] Promo applied! Your next bill is free. (Bosnian)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Bosnian)",
+  "errorLoadingSlots": "[BS] Error loading slots (Bosnian)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Allow other users to find and join this game (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Business Onboarding Screen - Coming Soon (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Bosnian)",
+  "activateBusinessProfile": "[BS] Activate Business Profile (Bosnian)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Bosnian)",
+  "contentNotFound": "[BS] Content not found (Bosnian)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Bosnian)",
+  "pspecialtynpcontactinfo": "[BS] {specialty}\\n{contactInfo} (Bosnian)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Bosnian)",
+  "rating": "[BS] Rating (Bosnian)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Bosnian)",
+  "messages": "[BS] Messages (Bosnian)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Bosnian)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Bosnian)",
+  "becomeAnAmbassador": "[BS] Become an Ambassador (Bosnian)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Bosnian)",
+  "subscribeNow": "[BS] Subscribe Now (Bosnian)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Bosnian)",
+  "timeArgsslotformatcontext": "[BS] Time: {time} (Bosnian)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Bosnian)",
+  "shareViaWhatsapp": "[BS] Share via WhatsApp (Bosnian)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Bosnian)",
+  "users1": "[BS] Users (Bosnian)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Bosnian)",
+  "shareLink": "[BS] Share Link (Bosnian)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[BS] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Bosnian)",
+  "deleteAppointment": "[BS] Delete Appointment (Bosnian)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Bosnian)",
+  "toggleAvailability": "[BS] Toggle Availability (Bosnian)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Bosnian)",
+  "changePlan": "[BS] Change Plan (Bosnian)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Bosnian)",
+  "errorLoadingStaff": "[BS] Error loading staff (Bosnian)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Bosnian)",
+  "updateYourBusinessInformation": "[BS] Update your business information (Bosnian)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[BS] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Bosnian)",
+  "parentDashboard": "[BS] Parent Dashboard (Bosnian)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Bosnian)",
+  "menu": "[BS] Menu (Bosnian)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Bosnian)",
+  "studioBooking": "[BS] Studio Booking (Bosnian)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Bosnian)",
+  "about1": "[BS] About (Bosnian)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Bosnian)",
+  "multipleChoice": "[BS] Multiple Choice (Bosnian)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Date: {date} (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Studio booking is only available on web (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Bosnian)",
+  "errorLoadingBranchesE": "[BS] Error loading branches: $e (Bosnian)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Bosnian)",
+  "REDACTED_TOKEN": "[BS] \\uD83D\\uDCC5 {dateTime} (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Bosnian)",
+  "none": "[BS] None (Bosnian)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Bosnian)",
+  "failedToUpdateConsentE": "[BS] Failed to update consent: $e (Bosnian)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Bosnian)",
+  "welcome1": "[BS] Welcome (Bosnian)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Bosnian)",
+  "failedToCreateSessionE": "[BS] Failed to create session: $e (Bosnian)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Bosnian)",
+  "inviteContact": "[BS] Invite Contact (Bosnian)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Bosnian)",
+  "surveyEditor": "[BS] Survey Editor (Bosnian)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Bosnian)",
+  "failedToStartBasicSubscriptionE": "[BS] Failed to start Basic subscription: $e (Bosnian)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Bosnian)",
+  "mySchedule": "[BS] My Schedule (Bosnian)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Bosnian)",
+  "studioDashboard": "[BS] Studio Dashboard (Bosnian)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Bosnian)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[BS] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[BS] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Bosnian)",
+  "settingsSavedSuccessfully": "[BS] Settings saved successfully! (Bosnian)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Bosnian)",
+  "linkCopiedToClipboard": "[BS] Link copied to clipboard! (Bosnian)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Bosnian)",
+  "accept1": "[BS] Accept (Bosnian)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Bosnian)",
+  "noAvailableSlots": "[BS] No available slots (Bosnian)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Bosnian)",
+  "makeGamePublic": "[BS] Make Game Public (Bosnian)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Permission {category} updated to $newValue (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Bosnian)",
+  "roomDeletedSuccessfully": "[BS] Room deleted successfully! (Bosnian)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Bosnian)",
+  "businessCalendar": "[BS] Business Calendar (Bosnian)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Bosnian)",
+  "addAvailability": "[BS] Add Availability (Bosnian)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Bosnian)",
+  "ambassadorOnboarding": "[BS] Ambassador Onboarding (Bosnian)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Bosnian)",
+  "phoneProfileasyncphone": "[BS] Phone: {phone} (Bosnian)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Bosnian)",
+  "addNewRoom": "[BS] Add New Room (Bosnian)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Bosnian)",
+  "requireParentApproval": "[BS] Require Parent Approval (Bosnian)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Bosnian)",
+  "closed": "[BS] Closed (Bosnian)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Bosnian)",
+  "exportAsPdf": "[BS] Export as PDF (Bosnian)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Bosnian)",
+  "enableVibration": "[BS] Enable Vibration (Bosnian)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Bosnian)",
+  "toAvailendformatcontext": "[BS] To: {endTime} (Bosnian)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Bosnian)",
+  "yourUpgradeCodeUpgradecode": "[BS] Your upgrade code: $upgradeCode (Bosnian)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[BS] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Bosnian)",
+  "country": "[BS] Country (Bosnian)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[BS] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Bosnian)",
+  "staffArgsstaffdisplayname": "[BS] Staff: {staffName} (Bosnian)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Bosnian)",
+  "revokeConsent": "[BS] Revoke Consent (Bosnian)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Bosnian)",
+  "settings1": "[BS] Settings (Bosnian)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Bosnian)",
+  "cancel1": "[BS] Cancel (Bosnian)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Subscription activated successfully! (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[BS] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Bosnian)",
+  "broadcast": "[BS] Broadcast (Bosnian)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Bosnian)",
+  "noEventsScheduledThisWeek": "[BS] No events scheduled this week (Bosnian)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Bosnian)",
+  "googleCalendar": "[BS] Google Calendar (Bosnian)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Bosnian)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Bosnian)",
+  "childDashboard": "[BS] Child Dashboard (Bosnian)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Bosnian)",
+  "failedToUploadBackgroundE": "[BS] Failed to upload background: $e (Bosnian)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[BS] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[BS] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[BS] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Bosnian)",
+  "noAppointments": "[BS] No appointments (Bosnian)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Bosnian)",
+  "unlimitedBookingsPerWeek": "[BS] • Unlimited bookings per week (Bosnian)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Bosnian)",
+  "scheduledAtScheduledat": "[BS] Scheduled at: $scheduledAt (Bosnian)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Bosnian)",
+  "selectStaff": "[BS] Select Staff (Bosnian)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Subscription cancelled successfully (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Bosnian)",
+  "cancelAppointment": "[BS] Cancel Appointment (Bosnian)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[BS] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Bosnian)",
+  "businessSignup": "[BS] Business Signup (Bosnian)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Business Completion Screen - Coming Soon (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Bosnian)",
+  "createGame1": "[BS] Create Game (Bosnian)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Bosnian)",
+  "valuetoint": "[BS] {value} (Bosnian)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Bosnian)",
+  "pleaseEnterAPromoCode": "[BS] Please enter a promo code (Bosnian)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Bosnian)",
+  "errorLoadingAvailabilityE": "[BS] Error loading availability: $e (Bosnian)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Bosnian)",
+  "parentalControls": "[BS] Parental Controls (Bosnian)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Bosnian)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Bosnian)",
+  "childLinkedSuccessfully": "[BS] Child linked successfully! (Bosnian)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Bosnian)",
+  "create": "[BS] Create (Bosnian)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Bosnian)",
+  "noExternalMeetingsFound": "[BS] No external meetings found. (Bosnian)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Bosnian)",
+  "staffSelectionstaffdisplayname": "[BS] Staff: {staffName} (Bosnian)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[BS] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Bosnian)",
+  "schedulerScreen": "[BS] Scheduler Screen (Bosnian)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Bosnian)",
+  "clientUpdatedSuccessfully": "[BS] Client updated successfully! (Bosnian)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Bosnian)",
+  "surveyResponses": "[BS] Survey Responses (Bosnian)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Bosnian)",
+  "syncToOutlook": "[BS] Sync to Outlook (Bosnian)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Bosnian)",
+  "saveChanges": "[BS] Save Changes (Bosnian)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Bosnian)",
+  "pickTime": "[BS] Pick Time (Bosnian)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Bosnian)",
+  "registrationFailedEtostring": "[BS] Registration failed: {error} (Bosnian)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Bosnian)",
+  "analytics": "[BS] Analytics (Bosnian)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Bosnian)",
+  "errorLoadingEvents": "[BS] Error loading events (Bosnian)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[BS] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[BS] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Bosnian)",
+  "success1": "[BS] Success (Bosnian)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[BS] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Bosnian)",
+  "fromAvailstartformatcontext": "[BS] From: {startTime} (Bosnian)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Bosnian)",
+  "readWrite": "[BS] Read & Write (Bosnian)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Redirecting to Stripe checkout for Basic plan... (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[BS] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Bosnian)",
+  "pickDate": "[BS] Pick Date (Bosnian)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Bosnian)",
+  "chatBooking": "[BS] Chat Booking (Bosnian)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Bosnian)",
+  "noQuestionsAdded": "[BS] No questions added (Bosnian)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[BS] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[BS] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Bosnian)",
+  "typeOpenCall": "[BS] Type: Open Call (Bosnian)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[BS] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[BS] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Bosnian)",
+  "invoiceCreatedSuccessfully": "[BS] Invoice created successfully! (Bosnian)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Bosnian)",
+  "noTimeSeriesDataAvailable": "[BS] No time series data available (Bosnian)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[BS] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[BS] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Bosnian)",
+  "failedToSendPrivacyRequestE": "[BS] Failed to send privacy request: $e (Bosnian)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Bosnian)",
+  "chooseYourPlan": "[BS] Choose Your Plan (Bosnian)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Bosnian)",
+  "playtimeManagement": "[BS] Playtime Management (Bosnian)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Bosnian)",
+  "availability": "[BS] Availability (Bosnian)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Bosnian)",
+  "eventCreated": "[BS] Event created (Bosnian)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Bosnian)",
+  "subscribeToBasic499mo": "[BS] Subscribe to Basic (€4.99/mo) (Bosnian)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Bosnian)",
+  "completion": "[BS] Completion (Bosnian)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Bosnian)",
+  "supportTicketSubmitted": "[BS] Support ticket submitted (Bosnian)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Bosnian)",
+  "monetizationSettings": "[BS] Monetization Settings (Bosnian)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Bosnian)",
+  "noBookingsFound": "[BS] No bookings found (Bosnian)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[BS] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Bosnian)",
+  "deleteSurvey": "[BS] Delete Survey (Bosnian)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Bosnian)",
+  "gameApprovedSuccessfully": "[BS] Game approved successfully! (Bosnian)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Bosnian)",
+  "errorLoadingPermissionsError": "[BS] Error loading permissions: $error (Bosnian)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Bosnian)",
+  "referrals": "[BS] Referrals (Bosnian)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Bosnian)",
+  "crm": "[BS] CRM (Bosnian)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Bosnian)",
+  "gameRejected": "[BS] Game rejected (Bosnian)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Bosnian)",
+  "appointments": "[BS] Appointments (Bosnian)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Bosnian)",
+  "onboardingScreen": "[BS] Onboarding Screen (Bosnian)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Bosnian)",
+  "welcomeToYourStudio": "[BS] Welcome to your studio (Bosnian)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Bosnian)",
+  "update": "[BS] Update (Bosnian)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Bosnian)",
+  "retry1": "[BS] Retry (Bosnian)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Bosnian)",
+  "booking": "[BS] Booking (Bosnian)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Bosnian)",
+  "parentalSettings": "[BS] Parental Settings (Bosnian)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Bosnian)",
+  "language": "[BS] Language (Bosnian)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Bosnian)",
+  "deleteSlot": "[BS] Delete Slot (Bosnian)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[BS] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[BS] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Bosnian)",
+  "createNewGame": "[BS] Create New Game (Bosnian)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Bosnian)",
+  "next1": "[BS] Next (Bosnian)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Bosnian)",
+  "backgroundUploadedSuccessfully": "[BS] Background uploaded successfully! (Bosnian)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Bosnian)",
+  "noAppointmentRequestsFound": "[BS] No appointment requests found. (Bosnian)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Bosnian)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Bosnian)",
+  "restrictMatureContent": "[BS] Restrict mature content (Bosnian)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Bosnian)",
+  "ambassadors": "[BS] Ambassadors (Bosnian)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Bosnian)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Bosnian)",
+  "paymentWasCancelled": "[BS] Payment was cancelled (Bosnian)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Bosnian)",
+  "clearAll": "[BS] Clear All (Bosnian)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Bosnian)",
+  "viewDetails": "[BS] View Details (Bosnian)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Bosnian)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Bosnian)",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Bosnian)",
+  "failedToCreateGameE": "[BS] Failed to create game: $e (Bosnian)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Bosnian)",
+  "noChartDataAvailable": "[BS] No chart data available (Bosnian)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Bosnian)",
+  "phonebasedBookingSystem": "[BS] • Phone-based booking system (Bosnian)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Bosnian)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Bosnian)",
+  "invoices": "[BS] Invoices (Bosnian)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Bosnian)",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Bosnian)",
+  "scheduledAtArgsscheduledat": "[BS] Scheduled at: {scheduledAt} (Bosnian)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Duration: {duration} minutes (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Bosnian)",
+  "tryAgain": "[BS] Try Again (Bosnian)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Bosnian)",
+  "deleteBackground": "[BS] Delete Background (Bosnian)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Bosnian)",
+  "currentTierTiertouppercase": "[BS] Current Tier: {tier} (Bosnian)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[BS] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Bosnian)",
+  "REDACTED_TOKEN": "[BS] No clients found. Add your first client! (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[BS] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[BS] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Bosnian)",
+  "appointmentRequests": "[BS] Appointment Requests (Bosnian)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Bosnian)",
+  "forward": "[BS] Forward (Bosnian)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Bosnian)",
+  "roomAddedSuccessfully": "[BS] Room added successfully! (Bosnian)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Bosnian)",
+  "option": "[BS] • $option (Bosnian)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Bosnian)",
+  "responseIndex1": "[BS] Response #{number} (Bosnian)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Bosnian)",
+  "crmDashboardWithAnalytics": "[BS] • CRM dashboard with analytics (Bosnian)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Bosnian)",
+  "contentLibrary1": "[BS] Content Library (Bosnian)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Bosnian)",
+  "reply": "[BS] Reply (Bosnian)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Bosnian)",
+  "subscriptionManagement": "[BS] Subscription Management (Bosnian)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Monetization settings will be implemented here (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Bosnian)",
+  "failedToApplyPromoCodeE": "[BS] Failed to apply promo code: $e (Bosnian)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[BS] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Bosnian)",
+  "localizationContribution": "[BS] Localization Contribution (Bosnian)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Bosnian)",
+  "parentalConsent": "[BS] Parental Consent (Bosnian)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Bosnian)",
+  "businessSignupScreenComingSoon": "[BS] Business Signup Screen - Coming Soon (Bosnian)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Bosnian)",
+  "REDACTED_TOKEN": "[BS] Are you sure you want to delete this appointment? (Bosnian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Bosnian)",
+  "syncAppointment": "[BS] Sync Appointment (Bosnian)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Bosnian)",
+  "iConsent": "[BS] I Consent (Bosnian)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Bosnian)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Bosnian)",
+  "businessSetupScreenComingSoon": "[BS] Business Setup Screen - Coming Soon (Bosnian)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Bosnian)",
+  "edit1": "[BS] Edit (Bosnian)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Bosnian)",
+  "noEventsScheduledThisMonth": "[BS] No events scheduled this month (Bosnian)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Bosnian)",
+  "businessDashboard": "[BS] Business Dashboard (Bosnian)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Bosnian)",
+  "noMessagesFound": "[BS] No messages found. (Bosnian)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[BS] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Bosnian)",
+  "manageStaffAvailability": "[BS] Manage Staff Availability (Bosnian)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Bosnian)",
+  "noMissingTranslations": "[BS] No missing translations (Bosnian)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Bosnian)",
+  "skip": "[BS] Skip (Bosnian)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[BS] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Bosnian)",
+  "errorLoadingReferralCode": "[BS] Error loading referral code (Bosnian)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Bosnian)",
+  "allCountries": "[BS] All Countries (Bosnian)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Bosnian)",
+  "deleteGame": "[BS] Delete Game (Bosnian)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Bosnian)",
+  "staffManagementTools": "[BS] • Staff management tools (Bosnian)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Bosnian)",
+  "deleteMessage": "[BS] Delete Message (Bosnian)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Bosnian)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[BS] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Bosnian)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Bosnian)",
+  "openingCustomerPortal": "[BS] Opening customer portal... (Bosnian)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Bosnian)",
+  "signOut": "[BS] Sign Out (Bosnian)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Bosnian)",
+  "nameProfilename": "[BS] Name: {name} (Bosnian)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Bosnian)",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Bosnian)",
+  "upgradeToBusiness": "[BS] Upgrade to Business (Bosnian)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Bosnian)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Bosnian)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Bosnian)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Bosnian)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Bosnian)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Bosnian)",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Bosnian)",
+  "viewResponses": "[BS] View Responses (Bosnian)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Bosnian)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Bosnian)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Bosnian)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Bosnian)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Bosnian)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Bosnian)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Bosnian)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Bosnian)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Bosnian)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Bosnian)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

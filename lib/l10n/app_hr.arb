@@ -1,2862 +1,2862 @@
 {
   "@@locale": "hr",
-  "refresh": "Osvježi",
+  "refresh": "[HR] Osvježi",
   "@refresh": {
     "description": "Description"
   },
-  "home": "Početna",
+  "home": "[HR] Početna",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "Još nema sesija",
+  "noSessionsYet": "[HR] Još nema sesija",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "U redu",
+  "ok": "[HR] U redu",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "[HR] Choose your play mode:",
+  "playtimeLandingChooseMode": "[HR] [HR] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "Prijavi se",
+  "signUp": "[HR] Prijavi se",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "[HR] Schedule Message",
+  "scheduleMessage": "[HR] [HR] Schedule Message",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "Odbij",
+  "decline": "[HR] Odbij",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[HR] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "Prijava",
+  "login": "[HR] Prijava",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "[HR] Choose friends to invite",
+  "playtimeChooseFriends": "[HR] [HR] Choose friends to invite",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "Nema pozivnica",
+  "noInvites": "[HR] Nema pozivnica",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "Odaberite vrijeme",
+  "playtimeChooseTime": "[HR] Odaberite vrijeme",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "Uspjeh",
+  "success": "[HR] Uspjeh",
   "@success": {
     "description": "Description"
   },
-  "undo": "[HR] Undo",
+  "undo": "[HR] [HR] Undo",
   "@undo": {
     "description": "Description"
   },
-  "opened": "[HR] Opened",
+  "opened": "[HR] [HR] Opened",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "Kreiraj virtualnu sesiju",
+  "createVirtualSession": "[HR] Kreiraj virtualnu sesiju",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "[HR] Message sent successfully",
+  "messageSentSuccessfully": "[HR] [HR] Message sent successfully",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "[HR] Redo",
+  "redo": "[HR] [HR] Redo",
   "@redo": {
     "description": "Description"
   },
-  "next": "Sljedeće",
+  "next": "[HR] Sljedeće",
   "@next": {
     "description": "Description"
   },
-  "search": "Pretraži",
+  "search": "[HR] Pretraži",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "Otkaži potvrdu pozivnice",
+  "cancelInviteConfirmation": "[HR] Otkaži potvrdu pozivnice",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "[HR] Created",
+  "created": "[HR] [HR] Created",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "[HR] Revoke Access",
+  "revokeAccess": "[HR] [HR] Revoke Access",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "Spremi grupu za prepoznavanje",
+  "saveGroupForRecognition": "[HR] Spremi grupu za prepoznavanje",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "Živa sesija zakazana",
+  "playtimeLiveScheduled": "[HR] Živa sesija zakazana",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "[HR] Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "[HR] [HR] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "Preuzmi",
+  "download": "[HR] Preuzmi",
   "@download": {
     "description": "Description"
   },
-  "password": "[HR] Password",
+  "password": "[HR] [HR] Password",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "Pogreška pri učitavanju obiteljskih veza",
+  "errorLoadingFamilyLinks": "[HR] Pogreška pri učitavanju obiteljskih veza",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "Otkaži",
+  "cancel": "[HR] Otkaži",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "Kreiraj Playtime",
+  "playtimeCreate": "[HR] Kreiraj Playtime",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "[HR] Failed to action privacy request",
+  "failedToActionPrivacyRequest": "[HR] [HR] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "Naslov aplikacije",
+  "appTitle": "[HR] Naslov aplikacije",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "[HR] Accept",
+  "accept": "[HR] [HR] Accept",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "[HR] Virtual Play",
+  "playtimeModeVirtual": "[HR] [HR] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "Opis Playtime",
+  "playtimeDescription": "[HR] Opis Playtime",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "Obriši",
+  "delete": "[HR] Obriši",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "Virtualna sesija je započela",
+  "playtimeVirtualStarted": "[HR] Virtualna sesija je započela",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "Kreiraj svoju prvu igru",
+  "createYourFirstGame": "[HR] Kreiraj svoju prvu igru",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "[HR] Participants",
+  "participants": "[HR] [HR] Participants",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "[HR] Recipients",
+  "recipients": "[HR] [HR] Recipients",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "[HR] No results found",
+  "noResults": "[HR] [HR] No results found",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "Da",
+  "yes": "[HR] Da",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "Pozovi",
+  "invite": "[HR] Pozovi",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "[HR] Live Play",
+  "playtimeModeLive": "[HR] [HR] Live Play",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "[HR] Done",
+  "done": "[HR] [HR] Done",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "[HR] Let's meet via Appoint!",
+  "defaultShareMessage": "[HR] [HR] Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "Ne",
+  "no": "[HR] Ne",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "Playtime centar",
+  "playtimeHub": "[HR] Playtime centar",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "Kreiraj live sesiju",
+  "createLiveSession": "[HR] Kreiraj live sesiju",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "Omogući obavijesti",
+  "enableNotifications": "[HR] Omogući obavijesti",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "Pozvan",
+  "invited": "[HR] Pozvan",
   "@invited": {
     "description": "Description"
   },
-  "content": "Sadržaj",
+  "content": "[HR] Sadržaj",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "Sastanak je uspješno podijeljen",
+  "meetingSharedSuccessfully": "[HR] Sastanak je uspješno podijeljen",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "Dobrodošli u Playtime",
+  "welcomeToPlaytime": "[HR] Dobrodošli u Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "Prikaži sve",
+  "viewAll": "[HR] Prikaži sve",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "Virtualni Playtime",
+  "playtimeVirtual": "[HR] Virtualni Playtime",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "[HR] Staff screen coming soon",
+  "staffScreenTBD": "[HR] [HR] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "Izreži",
+  "cut": "[HR] Izreži",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "Poziv je uspješno otkazan",
+  "inviteCancelledSuccessfully": "[HR] Poziv je uspješno otkazan",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "[HR] Retry",
+  "retry": "[HR] [HR] Retry",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "[HR] Compose Broadcast Message",
+  "composeBroadcastMessage": "[HR] [HR] Compose Broadcast Message",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "Pošalji sada",
+  "sendNow": "[HR] Pošalji sada",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "Još nema igara",
+  "noGamesYet": "[HR] Još nema igara",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "Odaberi",
+  "select": "[HR] Odaberi",
   "@select": {
     "description": "Description"
   },
-  "about": "O nama",
+  "about": "[HR] O nama",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Odaberi",
+  "choose": "[HR] Odaberi",
   "@choose": {
     "description": "Description"
   },
-  "profile": "[HR] Profile",
+  "profile": "[HR] [HR] Profile",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "[HR] Remove Child",
+  "removeChild": "[HR] [HR] Remove Child",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "[HR] Status",
+  "status": "[HR] [HR] Status",
   "@status": {
     "description": "status description"
   },
-  "logout": "Odjava",
+  "logout": "[HR] Odjava",
   "@logout": {
     "description": "Description"
   },
-  "paste": "Zalijepi",
+  "paste": "[HR] Zalijepi",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "Dobrodošli",
+  "welcome": "[HR] Dobrodošli",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "Kreiraj sesiju",
+  "playtimeCreateSession": "[HR] Kreiraj sesiju",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "Članovi obitelji",
+  "familyMembers": "[HR] Članovi obitelji",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "Prenesi",
+  "upload": "[HR] Prenesi",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "Nadolazeće sesije",
+  "upcomingSessions": "[HR] Nadolazeće sesije",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "Unesite naziv grupe",
+  "enterGroupName": "[HR] Unesite naziv grupe",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "Potvrdi",
+  "confirm": "[HR] Potvrdi",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "Playtime uživo",
+  "playtimeLive": "[HR] Playtime uživo",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "Greška pri učitavanju pozivnica",
+  "errorLoadingInvites": "[HR] Greška pri učitavanju pozivnica",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "Filtri cilja",
+  "targetingFilters": "[HR] Filtri cilja",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "Odaberi video",
+  "pickVideo": "[HR] Odaberi video",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "Igra je obrisana",
+  "playtimeGameDeleted": "[HR] Igra je obrisana",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "Zakaži za kasnije",
+  "scheduleForLater": "[HR] Zakaži za kasnije",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "[HR] Access revoked successfully",
+  "accessRevokedSuccessfully": "[HR] [HR] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "Vrsta",
+  "type": "[HR] Vrsta",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "Provjera dozvola",
+  "checkingPermissions": "[HR] Provjera dozvola",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "Kopiraj",
+  "copy": "[HR] Kopiraj",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "Da, otkaži",
+  "yesCancel": "[HR] Da, otkaži",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "Email",
+  "email": "[HR] Email",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[HR] Share on WhatsApp",
+  "shareOnWhatsApp": "[HR] [HR] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "Postavke obavijesti",
+  "notificationSettings": "[HR] Postavke obavijesti",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "[HR] My Profile",
+  "myProfile": "[HR] [HR] My Profile",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "[HR] Revoke",
+  "revoke": "[HR] [HR] Revoke",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "[HR] No messages yet",
+  "noBroadcastMessages": "[HR] [HR] No messages yet",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "Vrsta zahtjeva",
+  "requestType": "[HR] Vrsta zahtjeva",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "Obavijesti",
+  "notifications": "[HR] Obavijesti",
   "@notifications": {
     "description": "Description"
   },
-  "details": "Detalji",
+  "details": "[HR] Detalji",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "Otkaži poziv",
+  "cancelInvite": "[HR] Otkaži poziv",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "Kreiraj novo",
+  "createNew": "[HR] Kreiraj novo",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "Postavke",
+  "settings": "[HR] Postavke",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "Odbaci Playtime",
+  "playtimeReject": "[HR] Odbaci Playtime",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "[HR] Error loading profile",
+  "errorLoadingProfile": "[HR] [HR] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "Uredi",
+  "edit": "[HR] Uredi",
   "@edit": {
     "description": "Description"
   },
-  "add": "Dodaj",
+  "add": "[HR] Dodaj",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "Igra je odobrena",
+  "playtimeGameApproved": "[HR] Igra je odobrena",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "[HR] Forgot Password?",
+  "forgotPassword": "[HR] [HR] Forgot Password?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "[HR] Family Dashboard",
+  "familyDashboard": "[HR] [HR] Family Dashboard",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "Učitavanje",
+  "loading": "[HR] Učitavanje",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "Brze radnje",
+  "quickActions": "[HR] Brze radnje",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "Naslov Playtime",
+  "playtimeTitle": "[HR] Naslov Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "[HR] OTP resent successfully",
+  "otpResentSuccessfully": "[HR] [HR] OTP resent successfully",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "Greška pri provjeri dozvola",
+  "errorCheckingPermissions": "[HR] Greška pri provjeri dozvola",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "[HR] Client screen coming soon",
+  "clientScreenTBD": "[HR] [HR] Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "[HR] FCM Token",
+  "fcmToken": "[HR] [HR] FCM Token",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "Odaberi sliku",
+  "pickImage": "[HR] Odaberi sliku",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "Prethodno",
+  "previous": "[HR] Prethodno",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[HR] No profile found",
+  "noProfileFound": "[HR] [HR] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "Još nema članova obitelji",
+  "noFamilyMembersYet": "[HR] Još nema članova obitelji",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "[HR] Media (Optional)",
+  "mediaOptional": "[HR] [HR] Media (Optional)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "[HR] Message saved successfully",
+  "messageSavedSuccessfully": "[HR] [HR] Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "Zakaženo za",
+  "scheduledFor": "[HR] Zakaženo za",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "[HR] Dashboard",
+  "dashboard": "[HR] [HR] Dashboard",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "Nema dozvole za emitiranje",
+  "noPermissionForBroadcast": "[HR] Nema dozvole za emitiranje",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[HR] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "Detalji poziva",
+  "inviteDetail": "[HR] Detalji poziva",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "Zakaženo",
+  "scheduled": "[HR] Zakaženo",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "[HR] Failed to resend OTP",
+  "failedToResendOtp": "[HR] [HR] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "Zakaživanje",
+  "scheduling": "[HR] Zakaživanje",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "[HR] Error saving message",
+  "errorSavingMessage": "[HR] [HR] Error saving message",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "Spremi",
+  "save": "[HR] Spremi",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "Odobri Playtime",
+  "playtimeApprove": "[HR] Odobri Playtime",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "Kreiraj svoju prvu sesiju",
+  "createYourFirstSession": "[HR] Kreiraj svoju prvu sesiju",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "Igra je odbijena",
+  "playtimeGameRejected": "[HR] Igra je odbijena",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "Neuspjelo opozivanje pristupa",
+  "failedToRevokeAccess": "[HR] Neuspjelo opozivanje pristupa",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "Nedavne igre",
+  "recentGames": "[HR] Nedavne igre",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "[HR] Customize Message",
+  "customizeMessage": "[HR] [HR] Customize Message",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "Neuspjelo otkazivanje poziva",
+  "failedToCancelInvite": "[HR] Neuspjelo otkazivanje poziva",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "[HR] Error sending message",
+  "errorSendingMessage": "[HR] [HR] Error sending message",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "[HR] Confirm Password",
+  "confirmPassword": "[HR] [HR] Confirm Password",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "[HR] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[HR] [HR] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "Povezana djeca",
+  "connectedChildren": "[HR] Povezana djeca",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "Podijeli",
+  "share": "[HR] Podijeli",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "Unesite naziv igre",
+  "playtimeEnterGameName": "[HR] Unesite naziv igre",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "Prijavite se za obiteljske značajke",
+  "pleaseLoginForFamilyFeatures": "[HR] Prijavite se za obiteljske značajke",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "Moje pozivnice",
+  "myInvites": "[HR] Moje pozivnice",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "Kreiraj igru",
+  "createGame": "[HR] Kreiraj igru",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[HR] Group Name (Optional)",
+  "groupNameOptional": "[HR] [HR] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "Nema Playtime sesija",
+  "playtimeNoSessions": "[HR] Nema Playtime sesija",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[HR] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[HR] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[HR] [HR] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "[HR] Close",
+  "close": "[HR] [HR] Close",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "[HR] Known group detected",
+  "knownGroupDetected": "[HR] [HR] Known group detected",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "[HR] Back",
+  "back": "[HR] [HR] Back",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "Odaberi igru",
+  "playtimeChooseGame": "[HR] Odaberi igru",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "Upravljanje dozvolama",
+  "managePermissions": "[HR] Upravljanje dozvolama",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "Opcije ankete",
+  "pollOptions": "[HR] Opcije ankete",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "[HR] Clicked",
+  "clicked": "[HR] [HR] Clicked",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "Poveznica",
+  "link": "[HR] Poveznica",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "Sastanak spreman",
+  "meetingReadyMessage": "[HR] Sastanak spreman",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "Nadolazeće pozivnice",
+  "pendingInvites": "[HR] Nadolazeće pozivnice",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "[HR] Status:",
+  "statusColon": "[HR] [HR] Status:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[HR] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[HR] [HR] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[HR] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[HR] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[HR] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[HR] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[HR] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[HR] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[HR] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[HR] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[HR] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[HR] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[HR] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[HR] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[HR] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[HR] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[HR] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[HR] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[HR] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[HR] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Croatian)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Croatian)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Croatian)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Croatian)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[HR] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[HR] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[HR] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[HR] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[HR] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[HR] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[HR] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[HR] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[HR] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[HR] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[HR] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[HR] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[HR] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[HR] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[HR] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[HR] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[HR] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[HR] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[HR] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[HR] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[HR] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[HR] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[HR] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[HR] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[HR] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[HR] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[HR] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[HR] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[HR] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[HR] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[HR] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[HR] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[HR] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[HR] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[HR] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[HR] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[HR] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[HR] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[HR] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[HR] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[HR] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[HR] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[HR] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[HR] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[HR] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[HR] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[HR] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[HR] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[HR] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[HR] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[HR] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[HR] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[HR] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[HR] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[HR] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[HR] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[HR] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[HR] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[HR] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[HR] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[HR] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[HR] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Croatian)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Croatian)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Croatian)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Croatian)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Croatian)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Croatian)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Croatian)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Croatian)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[HR] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Croatian)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Croatian)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Croatian)",
+  "upload1": "[HR] Upload (Croatian)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Croatian)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Croatian)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Croatian)",
+  "REDACTED_TOKEN": "[HR] Virtual session created! Inviting friends... (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Croatian)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Croatian)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Croatian)",
+  "rewards": "[HR] Rewards (Croatian)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Croatian)",
+  "time": "[HR] Time (Croatian)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[HR] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Croatian)",
+  "noSlots": "[HR] No slots (Croatian)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Croatian)",
+  "signIn": "[HR] Sign In (Croatian)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Croatian)",
+  "homeFeedScreen": "[HR] Home Feed Screen (Croatian)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Croatian)",
+  "selectLocation": "[HR] Select Location (Croatian)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Croatian)",
+  "noTicketsYet": "[HR] No tickets yet (Croatian)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Croatian)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Croatian)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Croatian)",
+  "subscriptionUnavailable": "[HR] Subscription unavailable (Croatian)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Croatian)",
+  "confirmBooking": "[HR] Confirm Booking (Croatian)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Croatian)",
+  "failedToUpdatePermissionE": "[HR] Failed to update permission: $e (Croatian)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Croatian)",
+  "reject": "[HR] Reject (Croatian)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Croatian)",
+  "REDACTED_TOKEN": "[HR] Ambassador Status: {ambassadorStatus} (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[HR] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Croatian)",
+  "checkingSubscription": "[HR] Checking subscription... (Croatian)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Croatian)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Croatian)",
+  "noContentAvailableYet": "[HR] No content available yet (Croatian)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Croatian)",
+  "resolve": "[HR] Resolve (Croatian)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Croatian)",
+  "errorLoadingSurveysError": "[HR] Error loading surveys: $error (Croatian)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[HR] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Croatian)",
+  "getHelpWithYourAccount": "[HR] Get help with your account (Croatian)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Croatian)",
+  "pay": "[HR] Pay (Croatian)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[HR] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Croatian)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Croatian)",
+  "changesSavedSuccessfully": "[HR] Changes saved successfully! (Croatian)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Croatian)",
+  "createNewInvoice": "[HR] Create New Invoice (Croatian)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Croatian)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Croatian)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Croatian)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Croatian)",
+  "profileSaved": "[HR] Profile saved! (Croatian)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Croatian)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Croatian)",
+  "valuetointk": "[HR] \\${value}K (Croatian)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Croatian)",
+  "deleteAccount": "[HR] Delete Account (Croatian)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Croatian)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Croatian)",
+  "businessOnboarding": "[HR] Business Onboarding (Croatian)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Croatian)",
+  "addNewClient": "[HR] Add New Client (Croatian)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Croatian)",
+  "darkMode": "[HR] Dark Mode (Croatian)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[HR] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[HR] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Croatian)",
+  "REDACTED_TOKEN": "[HR] You will receive a confirmation email shortly. (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Croatian)",
+  "addQuestion": "[HR] Add Question (Croatian)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Croatian)",
+  "privacyPolicy": "[HR] Privacy Policy (Croatian)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Croatian)",
+  "branchesLengthBranches": "[HR] {branchCount} branches (Croatian)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Croatian)",
+  "join": "[HR] Join (Croatian)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Croatian)",
+  "businessSubscription": "[HR] Business Subscription (Croatian)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Croatian)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[HR] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Croatian)",
+  "surveyManagement": "[HR] Survey Management (Croatian)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[HR] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Croatian)",
+  "noRoomsFoundAddYourFirstRoom": "[HR] No rooms found. Add your first room! (Croatian)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Croatian)",
+  "readOurPrivacyPolicy": "[HR] Read our privacy policy (Croatian)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Croatian)",
+  "couldNotOpenPrivacyPolicy": "[HR] Could not open privacy policy (Croatian)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Croatian)",
+  "refresh1": "[HR] Refresh (Croatian)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Croatian)",
+  "roomUpdatedSuccessfully": "[HR] Room updated successfully! (Croatian)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Croatian)",
+  "contentDetail": "[HR] Content Detail (Croatian)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Croatian)",
+  "cancelSubscription": "[HR] Cancel Subscription (Croatian)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Croatian)",
+  "REDACTED_TOKEN": "[HR] Successfully registered as Ambassador! (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Croatian)",
+  "save1": "[HR] Save (Croatian)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Croatian)",
+  "copy1": "[HR] Copy (Croatian)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Croatian)",
+  "failedToSendInvitationE": "[HR] Failed to send invitation: $e (Croatian)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Croatian)",
+  "surveyScore": "[HR] Survey Score (Croatian)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[HR] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Croatian)",
+  "noAppointmentsFound": "[HR] No appointments found. (Croatian)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Croatian)",
+  "responseDetail": "[HR] Response Detail (Croatian)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Croatian)",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Croatian)",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Croatian)",
+  "failedToStartProSubscriptionE": "[HR] Failed to start Pro subscription: $e (Croatian)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Croatian)",
+  "REDACTED_TOKEN": "[HR] Business Dashboard Entry Screen - Coming Soon (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Croatian)",
+  "contentFilter": "[HR] Content Filter (Croatian)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Croatian)",
+  "helpSupport": "[HR] Help & Support (Croatian)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Croatian)",
+  "editRoom": "[HR] Edit Room (Croatian)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[HR] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[HR] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Croatian)",
+  "REDACTED_TOKEN": "[HR] Business CRM Entry Screen - Coming Soon (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[HR] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[HR] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Croatian)",
+  "errorLoadingDashboardError": "[HR] Error loading dashboard: $error (Croatian)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Croatian)",
+  "gameDeletedSuccessfully": "[HR] Game deleted successfully! (Croatian)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Croatian)",
+  "viewResponsesComingSoon": "[HR] View responses - Coming soon! (Croatian)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[HR] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Croatian)",
+  "errorLoadingRewards": "[HR] Error loading rewards (Croatian)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Croatian)",
+  "failedToDeleteAccountE": "[HR] Failed to delete account: $e (Croatian)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Croatian)",
+  "invited1": "[HR] Invited (Croatian)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Croatian)",
+  "noBranchesAvailable": "[HR] No branches available (Croatian)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Croatian)",
+  "errorError": "[HR] Error: $error (Croatian)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Croatian)",
+  "noEvents": "[HR] No events (Croatian)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Croatian)",
+  "gameCreatedSuccessfully": "[HR] Game created successfully! (Croatian)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Croatian)",
+  "add1": "[HR] Add (Croatian)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[HR] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Croatian)",
+  "eventstarttimeEventendtime": "[HR] {startTime} - {endTime} (Croatian)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Croatian)",
+  "allowPlaytime": "[HR] Allow Playtime (Croatian)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Croatian)",
+  "clients": "[HR] Clients (Croatian)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Croatian)",
+  "noAmbassadorDataAvailable": "[HR] No ambassador data available (Croatian)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Croatian)",
+  "backgroundDeletedSuccessfully": "[HR] Background deleted successfully! (Croatian)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Croatian)",
+  "errorSnapshoterror": "[HR] Error: {error} (Croatian)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Croatian)",
+  "noAnalyticsDataAvailableYet": "[HR] No analytics data available yet. (Croatian)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Croatian)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Croatian)",
+  "REDACTED_TOKEN": "[HR] Business Phone Booking Entry Screen - Coming Soon (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Croatian)",
+  "verification": "[HR] Verification (Croatian)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Croatian)",
+  "copyLink": "[HR] Copy Link (Croatian)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Croatian)",
+  "dashboard1": "[HR] Dashboard (Croatian)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Croatian)",
+  "manageChildAccounts": "[HR] Manage Child Accounts (Croatian)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Croatian)",
+  "grantConsent": "[HR] Grant Consent (Croatian)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Croatian)",
+  "myProfile1": "[HR] My Profile (Croatian)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Croatian)",
+  "submit": "[HR] Submit (Croatian)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[HR] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Croatian)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Croatian)",
+  "ambassadorDashboard": "[HR] Ambassador Dashboard (Croatian)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Croatian)",
+  "phoneBooking": "[HR] Phone Booking (Croatian)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Croatian)",
+  "bookViaChat": "[HR] Book via Chat (Croatian)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "Greška",
+  "error": "[HR] Greška",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Croatian)",
+  "businessProfile": "[HR] Business Profile (Croatian)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Croatian)",
+  "REDACTED_TOKEN": "[HR] Business Booking Entry Screen - Coming Soon (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Croatian)",
+  "createNewSurvey": "[HR] Create New Survey (Croatian)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Croatian)",
+  "backgroundRejected": "[HR] Background rejected (Croatian)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Croatian)",
+  "noMediaSelected": "[HR] No media selected (Croatian)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Croatian)",
+  "syncToGoogle": "[HR] Sync to Google (Croatian)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Croatian)",
+  "virtualPlaytime": "[HR] Virtual Playtime (Croatian)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[HR] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[HR] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Croatian)",
+  "invitationSentSuccessfully": "[HR] Invitation sent successfully! (Croatian)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Croatian)",
+  "registering": "[HR] Registering... (Croatian)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Croatian)",
+  "statusAppointmentstatusname": "[HR] Status: {status} (Croatian)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Croatian)",
+  "home1": "[HR] Home (Croatian)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Croatian)",
+  "errorSavingSettingsE": "[HR] Error saving settings: $e (Croatian)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Croatian)",
+  "appVersionAndInformation": "[HR] App version and information (Croatian)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Croatian)",
+  "REDACTED_TOKEN": "[HR] Business Subscription Entry Screen - Coming Soon (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Croatian)",
+  "ekeyEvalue": "[HR] {key}: {value} (Croatian)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Croatian)",
+  "REDACTED_TOKEN": "[HR] Your payment has been processed successfully. (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Croatian)",
+  "errorE": "[HR] Error: $e (Croatian)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Croatian)",
+  "viewAll1": "[HR] View All (Croatian)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Croatian)",
+  "editSurveyComingSoon": "[HR] Edit survey - Coming soon! (Croatian)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Croatian)",
+  "enterOtp": "[HR] Enter OTP (Croatian)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Croatian)",
+  "payment": "[HR] Payment (Croatian)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Croatian)",
+  "REDACTED_TOKEN": "[HR] Automatically confirm new booking requests (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Croatian)",
+  "noRouteDefinedForSettingsname": "[HR] No route defined for {settingsName} (Croatian)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Croatian)",
+  "pleaseSignInToUploadABackground": "[HR] Please sign in to upload a background (Croatian)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[HR] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Croatian)",
+  "staffAvailability": "[HR] Staff Availability (Croatian)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Croatian)",
+  "livePlaytime": "[HR] Live Playtime (Croatian)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Croatian)",
+  "autoconfirmBookings": "[HR] Auto-Confirm Bookings (Croatian)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Croatian)",
+  "REDACTED_TOKEN": "[HR] Redirecting to Stripe checkout for Pro plan... (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Croatian)",
+  "exportAsCsv": "[HR] Export as CSV (Croatian)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Croatian)",
+  "deleteFunctionalityComingSoon": "[HR] Delete functionality coming soon! (Croatian)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Croatian)",
+  "editClient": "[HR] Edit Client (Croatian)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Croatian)",
+  "REDACTED_TOKEN": "[HR] Are you sure you want to delete this message? (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Croatian)",
+  "referralsAmbassadorreferrals": "[HR] Referrals: {referrals} (Croatian)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[HR] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Croatian)",
+  "privacyRequestSentToYourParents": "[HR] Privacy request sent to your parents! (Croatian)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Croatian)",
+  "clientDeletedSuccessfully": "[HR] Client deleted successfully! (Croatian)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Croatian)",
+  "failedToCancelSubscription": "[HR] Failed to cancel subscription (Croatian)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Croatian)",
+  "allLanguages": "[HR] All Languages (Croatian)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Croatian)",
+  "slotDeletedSuccessfully": "[HR] Slot deleted successfully (Croatian)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[HR] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Croatian)",
+  "REDACTED_TOKEN": "[HR] Parents must approve before children can join (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Croatian)",
+  "subscribeToPro1499mo": "[HR] Subscribe to Pro (€14.99/mo) (Croatian)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Croatian)",
+  "REDACTED_TOKEN": "[HR] Business Availability Entry Screen - Coming Soon (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Croatian)",
+  "appointmentsListlength": "[HR] Appointments: {count} (Croatian)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Croatian)",
+  "clearFilters": "[HR] Clear Filters (Croatian)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Croatian)",
+  "submitBooking": "[HR] Submit Booking (Croatian)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Croatian)",
+  "REDACTED_TOKEN": "[HR] Are you sure you want to cancel this appointment? (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Croatian)",
+  "noUpcomingBookings": "[HR] No upcoming bookings (Croatian)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Croatian)",
+  "goBack": "[HR] Go Back (Croatian)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Croatian)",
+  "setup": "[HR] Setup (Croatian)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Croatian)",
+  "inviteChild": "[HR] Invite Child (Croatian)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Croatian)",
+  "goToDashboard": "[HR] Go to Dashboard (Croatian)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Croatian)",
+  "ambassadorQuotaDashboard": "[HR] Ambassador Quota Dashboard (Croatian)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[HR] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Croatian)",
+  "referralCode": "[HR] Referral Code (Croatian)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[HR] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Croatian)",
+  "date": "[HR] Date (Croatian)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Croatian)",
+  "readOnly": "[HR] Read Only (Croatian)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Croatian)",
+  "bookingRequest": "[HR] Booking Request (Croatian)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Croatian)",
+  "advancedReporting": "[HR] • Advanced reporting (Croatian)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Croatian)",
+  "rooms": "[HR] Rooms (Croatian)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Croatian)",
+  "copiedToClipboard": "[HR] Copied to clipboard (Croatian)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Croatian)",
+  "bookingConfirmed": "[HR] Booking Confirmed (Croatian)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Croatian)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Croatian)",
+  "clientAddedSuccessfully": "[HR] Client added successfully! (Croatian)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Croatian)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Croatian)",
+  "backgroundApproved": "[HR] Background approved! (Croatian)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Croatian)",
+  "familySupport": "[HR] Family Support (Croatian)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Croatian)",
+  "deletingAccount": "[HR] Deleting account... (Croatian)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Croatian)",
+  "bookAppointment": "[HR] Book Appointment (Croatian)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Croatian)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Croatian)",
+  "delete1": "[HR] Delete (Croatian)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Croatian)",
+  "sendBookingInvite": "[HR] Send Booking Invite (Croatian)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Croatian)",
+  "text": "[HR] Text (Croatian)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Croatian)",
+  "manageSubscription": "[HR] Manage Subscription (Croatian)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Croatian)",
+  "requiresInstallFallback": "[HR] Requires Install Fallback (Croatian)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Croatian)",
+  "paymentConfirmation": "[HR] Payment Confirmation (Croatian)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Croatian)",
+  "promoAppliedYourNextBillIsFree": "[HR] Promo applied! Your next bill is free. (Croatian)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Croatian)",
+  "errorLoadingSlots": "[HR] Error loading slots (Croatian)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Croatian)",
+  "REDACTED_TOKEN": "[HR] Allow other users to find and join this game (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Croatian)",
+  "REDACTED_TOKEN": "[HR] Business Onboarding Screen - Coming Soon (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Croatian)",
+  "activateBusinessProfile": "[HR] Activate Business Profile (Croatian)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Croatian)",
+  "contentNotFound": "[HR] Content not found (Croatian)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Croatian)",
+  "pspecialtynpcontactinfo": "[HR] {specialty}\\n{contactInfo} (Croatian)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Croatian)",
+  "rating": "[HR] Rating (Croatian)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Croatian)",
+  "messages": "[HR] Messages (Croatian)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Croatian)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Croatian)",
+  "becomeAnAmbassador": "[HR] Become an Ambassador (Croatian)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Croatian)",
+  "subscribeNow": "[HR] Subscribe Now (Croatian)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Croatian)",
+  "timeArgsslotformatcontext": "[HR] Time: {time} (Croatian)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Croatian)",
+  "shareViaWhatsapp": "[HR] Share via WhatsApp (Croatian)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Croatian)",
+  "users1": "[HR] Users (Croatian)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Croatian)",
+  "shareLink": "[HR] Share Link (Croatian)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[HR] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Croatian)",
+  "deleteAppointment": "[HR] Delete Appointment (Croatian)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Croatian)",
+  "toggleAvailability": "[HR] Toggle Availability (Croatian)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Croatian)",
+  "changePlan": "[HR] Change Plan (Croatian)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Croatian)",
+  "errorLoadingStaff": "[HR] Error loading staff (Croatian)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Croatian)",
+  "updateYourBusinessInformation": "[HR] Update your business information (Croatian)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[HR] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Croatian)",
+  "parentDashboard": "[HR] Parent Dashboard (Croatian)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Croatian)",
+  "menu": "[HR] Menu (Croatian)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Croatian)",
+  "studioBooking": "[HR] Studio Booking (Croatian)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Croatian)",
+  "about1": "[HR] About (Croatian)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Croatian)",
+  "multipleChoice": "[HR] Multiple Choice (Croatian)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Croatian)",
+  "REDACTED_TOKEN": "[HR] Date: {date} (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Croatian)",
+  "REDACTED_TOKEN": "[HR] Studio booking is only available on web (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Croatian)",
+  "errorLoadingBranchesE": "[HR] Error loading branches: $e (Croatian)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Croatian)",
+  "REDACTED_TOKEN": "[HR] \\uD83D\\uDCC5 {dateTime} (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Croatian)",
+  "none": "[HR] None (Croatian)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Croatian)",
+  "failedToUpdateConsentE": "[HR] Failed to update consent: $e (Croatian)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Croatian)",
+  "welcome1": "[HR] Welcome (Croatian)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Croatian)",
+  "failedToCreateSessionE": "[HR] Failed to create session: $e (Croatian)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Croatian)",
+  "inviteContact": "[HR] Invite Contact (Croatian)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Croatian)",
+  "surveyEditor": "[HR] Survey Editor (Croatian)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Croatian)",
+  "failedToStartBasicSubscriptionE": "[HR] Failed to start Basic subscription: $e (Croatian)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Croatian)",
+  "mySchedule": "[HR] My Schedule (Croatian)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Croatian)",
+  "studioDashboard": "[HR] Studio Dashboard (Croatian)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Croatian)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[HR] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[HR] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Croatian)",
+  "settingsSavedSuccessfully": "[HR] Settings saved successfully! (Croatian)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Croatian)",
+  "linkCopiedToClipboard": "[HR] Link copied to clipboard! (Croatian)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Croatian)",
+  "accept1": "[HR] Accept (Croatian)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Croatian)",
+  "noAvailableSlots": "[HR] No available slots (Croatian)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Croatian)",
+  "makeGamePublic": "[HR] Make Game Public (Croatian)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Croatian)",
+  "REDACTED_TOKEN": "[HR] Permission {category} updated to $newValue (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Croatian)",
+  "roomDeletedSuccessfully": "[HR] Room deleted successfully! (Croatian)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Croatian)",
+  "businessCalendar": "[HR] Business Calendar (Croatian)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Croatian)",
+  "addAvailability": "[HR] Add Availability (Croatian)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Croatian)",
+  "ambassadorOnboarding": "[HR] Ambassador Onboarding (Croatian)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Croatian)",
+  "phoneProfileasyncphone": "[HR] Phone: {phone} (Croatian)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Croatian)",
+  "addNewRoom": "[HR] Add New Room (Croatian)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Croatian)",
+  "requireParentApproval": "[HR] Require Parent Approval (Croatian)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Croatian)",
+  "closed": "[HR] Closed (Croatian)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Croatian)",
+  "exportAsPdf": "[HR] Export as PDF (Croatian)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Croatian)",
+  "enableVibration": "[HR] Enable Vibration (Croatian)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Croatian)",
+  "toAvailendformatcontext": "[HR] To: {endTime} (Croatian)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Croatian)",
+  "yourUpgradeCodeUpgradecode": "[HR] Your upgrade code: $upgradeCode (Croatian)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[HR] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Croatian)",
+  "country": "[HR] Country (Croatian)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[HR] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Croatian)",
+  "staffArgsstaffdisplayname": "[HR] Staff: {staffName} (Croatian)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Croatian)",
+  "revokeConsent": "[HR] Revoke Consent (Croatian)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Croatian)",
+  "settings1": "[HR] Settings (Croatian)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Croatian)",
+  "cancel1": "[HR] Cancel (Croatian)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Croatian)",
+  "REDACTED_TOKEN": "[HR] Subscription activated successfully! (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[HR] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Croatian)",
+  "broadcast": "[HR] Broadcast (Croatian)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Croatian)",
+  "noEventsScheduledThisWeek": "[HR] No events scheduled this week (Croatian)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Croatian)",
+  "googleCalendar": "[HR] Google Calendar (Croatian)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Croatian)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Croatian)",
+  "childDashboard": "[HR] Child Dashboard (Croatian)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Croatian)",
+  "failedToUploadBackgroundE": "[HR] Failed to upload background: $e (Croatian)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[HR] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[HR] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[HR] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Croatian)",
+  "noAppointments": "[HR] No appointments (Croatian)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Croatian)",
+  "unlimitedBookingsPerWeek": "[HR] • Unlimited bookings per week (Croatian)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Croatian)",
+  "scheduledAtScheduledat": "[HR] Scheduled at: $scheduledAt (Croatian)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Croatian)",
+  "selectStaff": "[HR] Select Staff (Croatian)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Croatian)",
+  "REDACTED_TOKEN": "[HR] Subscription cancelled successfully (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Croatian)",
+  "cancelAppointment": "[HR] Cancel Appointment (Croatian)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[HR] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Croatian)",
+  "businessSignup": "[HR] Business Signup (Croatian)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Croatian)",
+  "REDACTED_TOKEN": "[HR] Business Completion Screen - Coming Soon (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Croatian)",
+  "createGame1": "[HR] Create Game (Croatian)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Croatian)",
+  "valuetoint": "[HR] {value} (Croatian)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Croatian)",
+  "pleaseEnterAPromoCode": "[HR] Please enter a promo code (Croatian)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Croatian)",
+  "errorLoadingAvailabilityE": "[HR] Error loading availability: $e (Croatian)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Croatian)",
+  "parentalControls": "[HR] Parental Controls (Croatian)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Croatian)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Croatian)",
+  "childLinkedSuccessfully": "[HR] Child linked successfully! (Croatian)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Croatian)",
+  "create": "[HR] Create (Croatian)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Croatian)",
+  "noExternalMeetingsFound": "[HR] No external meetings found. (Croatian)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Croatian)",
+  "staffSelectionstaffdisplayname": "[HR] Staff: {staffName} (Croatian)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[HR] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Croatian)",
+  "schedulerScreen": "[HR] Scheduler Screen (Croatian)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Croatian)",
+  "clientUpdatedSuccessfully": "[HR] Client updated successfully! (Croatian)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Croatian)",
+  "surveyResponses": "[HR] Survey Responses (Croatian)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Croatian)",
+  "syncToOutlook": "[HR] Sync to Outlook (Croatian)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Croatian)",
+  "saveChanges": "[HR] Save Changes (Croatian)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Croatian)",
+  "pickTime": "[HR] Pick Time (Croatian)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Croatian)",
+  "registrationFailedEtostring": "[HR] Registration failed: {error} (Croatian)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Croatian)",
+  "analytics": "[HR] Analytics (Croatian)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Croatian)",
+  "errorLoadingEvents": "[HR] Error loading events (Croatian)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[HR] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[HR] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Croatian)",
+  "success1": "[HR] Success (Croatian)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[HR] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Croatian)",
+  "fromAvailstartformatcontext": "[HR] From: {startTime} (Croatian)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Croatian)",
+  "readWrite": "[HR] Read & Write (Croatian)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Croatian)",
+  "REDACTED_TOKEN": "[HR] Redirecting to Stripe checkout for Basic plan... (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[HR] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Croatian)",
+  "pickDate": "[HR] Pick Date (Croatian)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Croatian)",
+  "chatBooking": "[HR] Chat Booking (Croatian)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Croatian)",
+  "noQuestionsAdded": "[HR] No questions added (Croatian)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[HR] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[HR] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Croatian)",
+  "typeOpenCall": "[HR] Type: Open Call (Croatian)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[HR] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[HR] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Croatian)",
+  "invoiceCreatedSuccessfully": "[HR] Invoice created successfully! (Croatian)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Croatian)",
+  "noTimeSeriesDataAvailable": "[HR] No time series data available (Croatian)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[HR] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[HR] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Croatian)",
+  "failedToSendPrivacyRequestE": "[HR] Failed to send privacy request: $e (Croatian)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Croatian)",
+  "chooseYourPlan": "[HR] Choose Your Plan (Croatian)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Croatian)",
+  "playtimeManagement": "[HR] Playtime Management (Croatian)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Croatian)",
+  "availability": "[HR] Availability (Croatian)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Croatian)",
+  "eventCreated": "[HR] Event created (Croatian)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Croatian)",
+  "subscribeToBasic499mo": "[HR] Subscribe to Basic (€4.99/mo) (Croatian)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Croatian)",
+  "completion": "[HR] Completion (Croatian)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Croatian)",
+  "supportTicketSubmitted": "[HR] Support ticket submitted (Croatian)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Croatian)",
+  "monetizationSettings": "[HR] Monetization Settings (Croatian)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Croatian)",
+  "noBookingsFound": "[HR] No bookings found (Croatian)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[HR] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Croatian)",
+  "deleteSurvey": "[HR] Delete Survey (Croatian)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Croatian)",
+  "gameApprovedSuccessfully": "[HR] Game approved successfully! (Croatian)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Croatian)",
+  "errorLoadingPermissionsError": "[HR] Error loading permissions: $error (Croatian)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Croatian)",
+  "referrals": "[HR] Referrals (Croatian)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Croatian)",
+  "crm": "[HR] CRM (Croatian)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Croatian)",
+  "gameRejected": "[HR] Game rejected (Croatian)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Croatian)",
+  "appointments": "[HR] Appointments (Croatian)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Croatian)",
+  "onboardingScreen": "[HR] Onboarding Screen (Croatian)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Croatian)",
+  "welcomeToYourStudio": "[HR] Welcome to your studio (Croatian)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Croatian)",
+  "update": "[HR] Update (Croatian)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Croatian)",
+  "retry1": "[HR] Retry (Croatian)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Croatian)",
+  "booking": "[HR] Booking (Croatian)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Croatian)",
+  "parentalSettings": "[HR] Parental Settings (Croatian)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Croatian)",
+  "language": "[HR] Language (Croatian)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Croatian)",
+  "deleteSlot": "[HR] Delete Slot (Croatian)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[HR] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[HR] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Croatian)",
+  "createNewGame": "[HR] Create New Game (Croatian)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Croatian)",
+  "next1": "[HR] Next (Croatian)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Croatian)",
+  "backgroundUploadedSuccessfully": "[HR] Background uploaded successfully! (Croatian)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Croatian)",
+  "noAppointmentRequestsFound": "[HR] No appointment requests found. (Croatian)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Croatian)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Croatian)",
+  "restrictMatureContent": "[HR] Restrict mature content (Croatian)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Croatian)",
+  "ambassadors": "[HR] Ambassadors (Croatian)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Croatian)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Croatian)",
+  "paymentWasCancelled": "[HR] Payment was cancelled (Croatian)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Croatian)",
+  "clearAll": "[HR] Clear All (Croatian)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Croatian)",
+  "viewDetails": "[HR] View Details (Croatian)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Croatian)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Croatian)",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Croatian)",
+  "failedToCreateGameE": "[HR] Failed to create game: $e (Croatian)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Croatian)",
+  "noChartDataAvailable": "[HR] No chart data available (Croatian)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Croatian)",
+  "phonebasedBookingSystem": "[HR] • Phone-based booking system (Croatian)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Croatian)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Croatian)",
+  "invoices": "[HR] Invoices (Croatian)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Croatian)",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Croatian)",
+  "scheduledAtArgsscheduledat": "[HR] Scheduled at: {scheduledAt} (Croatian)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Croatian)",
+  "REDACTED_TOKEN": "[HR] Duration: {duration} minutes (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Croatian)",
+  "tryAgain": "[HR] Try Again (Croatian)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Croatian)",
+  "deleteBackground": "[HR] Delete Background (Croatian)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Croatian)",
+  "currentTierTiertouppercase": "[HR] Current Tier: {tier} (Croatian)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[HR] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Croatian)",
+  "REDACTED_TOKEN": "[HR] No clients found. Add your first client! (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[HR] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[HR] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Croatian)",
+  "appointmentRequests": "[HR] Appointment Requests (Croatian)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Croatian)",
+  "forward": "[HR] Forward (Croatian)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Croatian)",
+  "roomAddedSuccessfully": "[HR] Room added successfully! (Croatian)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Croatian)",
+  "option": "[HR] • $option (Croatian)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Croatian)",
+  "responseIndex1": "[HR] Response #{number} (Croatian)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Croatian)",
+  "crmDashboardWithAnalytics": "[HR] • CRM dashboard with analytics (Croatian)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Croatian)",
+  "contentLibrary1": "[HR] Content Library (Croatian)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Croatian)",
+  "reply": "[HR] Reply (Croatian)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Croatian)",
+  "subscriptionManagement": "[HR] Subscription Management (Croatian)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Croatian)",
+  "REDACTED_TOKEN": "[HR] Monetization settings will be implemented here (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Croatian)",
+  "failedToApplyPromoCodeE": "[HR] Failed to apply promo code: $e (Croatian)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[HR] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Croatian)",
+  "localizationContribution": "[HR] Localization Contribution (Croatian)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Croatian)",
+  "parentalConsent": "[HR] Parental Consent (Croatian)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Croatian)",
+  "businessSignupScreenComingSoon": "[HR] Business Signup Screen - Coming Soon (Croatian)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Croatian)",
+  "REDACTED_TOKEN": "[HR] Are you sure you want to delete this appointment? (Croatian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Croatian)",
+  "syncAppointment": "[HR] Sync Appointment (Croatian)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Croatian)",
+  "iConsent": "[HR] I Consent (Croatian)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Croatian)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Croatian)",
+  "businessSetupScreenComingSoon": "[HR] Business Setup Screen - Coming Soon (Croatian)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Croatian)",
+  "edit1": "[HR] Edit (Croatian)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Croatian)",
+  "noEventsScheduledThisMonth": "[HR] No events scheduled this month (Croatian)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Croatian)",
+  "businessDashboard": "[HR] Business Dashboard (Croatian)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Croatian)",
+  "noMessagesFound": "[HR] No messages found. (Croatian)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[HR] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Croatian)",
+  "manageStaffAvailability": "[HR] Manage Staff Availability (Croatian)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Croatian)",
+  "noMissingTranslations": "[HR] No missing translations (Croatian)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Croatian)",
+  "skip": "[HR] Skip (Croatian)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[HR] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Croatian)",
+  "errorLoadingReferralCode": "[HR] Error loading referral code (Croatian)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Croatian)",
+  "allCountries": "[HR] All Countries (Croatian)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Croatian)",
+  "deleteGame": "[HR] Delete Game (Croatian)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Croatian)",
+  "staffManagementTools": "[HR] • Staff management tools (Croatian)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Croatian)",
+  "deleteMessage": "[HR] Delete Message (Croatian)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Croatian)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[HR] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Croatian)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Croatian)",
+  "openingCustomerPortal": "[HR] Opening customer portal... (Croatian)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Croatian)",
+  "signOut": "[HR] Sign Out (Croatian)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Croatian)",
+  "nameProfilename": "[HR] Name: {name} (Croatian)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Croatian)",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Croatian)",
+  "upgradeToBusiness": "[HR] Upgrade to Business (Croatian)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Croatian)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Croatian)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Croatian)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Croatian)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Croatian)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Croatian)",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Croatian)",
+  "viewResponses": "[HR] View Responses (Croatian)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Croatian)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Croatian)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Croatian)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Croatian)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Croatian)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Croatian)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Croatian)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Croatian)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Croatian)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Croatian)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

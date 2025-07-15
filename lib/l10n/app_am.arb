@@ -1,6 +1,6 @@
 {
   "@@locale": "am",
-  "refresh": "ዳግም ያዘምኑ",
+  "refresh": "[AM] ዳግም ያዘምኑ",
   "@refresh": {
     "description": "Description"
   },
@@ -8,7 +8,7 @@
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "እስካሁን ስብሰባዎች የሉም",
+  "noSessionsYet": "[AM] እስካሁን ስብሰባዎች የሉም",
   "@noSessionsYet": {
     "description": "Description"
   },
@@ -16,7 +16,7 @@
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "ሁኔታ ይምረጡ",
+  "playtimeLandingChooseMode": "[AM] ሁኔታ ይምረጡ",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
@@ -24,7 +24,7 @@
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "መልዕክት ይሰርዝ",
+  "scheduleMessage": "[AM] መልዕክት ይሰርዝ",
   "@scheduleMessage": {
     "description": "Description"
   },
@@ -32,7 +32,7 @@
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[AM] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
@@ -40,15 +40,15 @@
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "ጓደኞች ይምረጡ",
+  "playtimeChooseFriends": "[AM] ጓደኞች ይምረጡ",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "ግብዣዎች የሉም",
+  "noInvites": "[AM] ግብዣዎች የሉም",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "ሰዓት ይምረጡ",
+  "playtimeChooseTime": "[AM] ሰዓት ይምረጡ",
   "@playtimeChooseTime": {
     "description": "Description"
   },
@@ -56,7 +56,7 @@
   "@success": {
     "description": "Description"
   },
-  "undo": "ለውጡን ይቀልሱ",
+  "undo": "[AM] ለውጡን ይቀልሱ",
   "@undo": {
     "description": "Description"
   },
@@ -64,15 +64,15 @@
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "ብልጽግናዊ ትዕይንት ይፍጠሩ",
+  "createVirtualSession": "[AM] ብልጽግናዊ ትዕይንት ይፍጠሩ",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "መልዕክት በትክክል ተልኳል",
+  "messageSentSuccessfully": "[AM] መልዕክት በትክክል ተልኳል",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "እንደገና ሠርተው ይደርሱ",
+  "redo": "[AM] እንደገና ሠርተው ይደርሱ",
   "@redo": {
     "description": "Description"
   },
@@ -84,7 +84,7 @@
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "የግብዣ እውቀት ሰርዝ",
+  "cancelInviteConfirmation": "[AM] የግብዣ እውቀት ሰርዝ",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
@@ -92,19 +92,19 @@
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "መዳረሻ ይሰርዝ",
+  "revokeAccess": "[AM] መዳረሻ ይሰርዝ",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "ቡድን ለመታወቂያ ያስቀምጡ",
+  "saveGroupForRecognition": "[AM] ቡድን ለመታወቂያ ያስቀምጡ",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "በቀጥታ ስብሰባ ተዘጋጅቷል",
+  "playtimeLiveScheduled": "[AM] በቀጥታ ስብሰባ ተዘጋጅቷል",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "የመዳረሻ ሰረዝ እውቀት",
+  "revokeAccessConfirmation": "[AM] የመዳረሻ ሰረዝ እውቀት",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
@@ -112,11 +112,11 @@
   "@download": {
     "description": "Description"
   },
-  "password": "የይለፍ ቃል",
+  "password": "[AM] የይለፍ ቃል",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "የቤተሰብ አገናኝ ማስጫን ስህተት",
+  "errorLoadingFamilyLinks": "[AM] የቤተሰብ አገናኝ ማስጫን ስህተት",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
@@ -124,15 +124,15 @@
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "Playtime ይፍጠሩ",
+  "playtimeCreate": "[AM] Playtime ይፍጠሩ",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "የግላዊነት ጥያቄ ማከናወን አልተሳካም",
+  "failedToActionPrivacyRequest": "[AM] የግላዊነት ጥያቄ ማከናወን አልተሳካም",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "የመተግበሪያ ርዕስ",
+  "appTitle": "[AM] የመተግበሪያ ርዕስ",
   "@appTitle": {
     "description": "Description"
   },
@@ -140,11 +140,11 @@
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "ብልጽግናዊ ሁኔታ",
+  "playtimeModeVirtual": "[AM] ብልጽግናዊ ሁኔታ",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "የPlaytime መግለጫ",
+  "playtimeDescription": "[AM] የPlaytime መግለጫ",
   "@playtimeDescription": {
     "description": "Description"
   },
@@ -152,11 +152,11 @@
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "ብልጽግናዊ ትዕይንት ተጀምሯል",
+  "playtimeVirtualStarted": "[AM] ብልጽግናዊ ትዕይንት ተጀምሯል",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "የመጀመሪያዎቹን ጨዋታ ይፍጠሩ",
+  "createYourFirstGame": "[AM] የመጀመሪያዎቹን ጨዋታ ይፍጠሩ",
   "@createYourFirstGame": {
     "description": "Description"
   },
@@ -168,7 +168,7 @@
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "ውጤቶች የሉም",
+  "noResults": "[AM] ውጤቶች የሉም",
   "@noResults": {
     "description": "Description"
   },
@@ -180,7 +180,7 @@
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "በቀጥታ ሁኔታ",
+  "playtimeModeLive": "[AM] በቀጥታ ሁኔታ",
   "@playtimeModeLive": {
     "description": "Description"
   },
@@ -188,7 +188,7 @@
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "የአካፋይ መልእክት",
+  "defaultShareMessage": "[AM] የአካፋይ መልእክት",
   "@defaultShareMessage": {
     "description": "Description"
   },
@@ -196,15 +196,15 @@
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "የPlaytime ማዕከል",
+  "playtimeHub": "[AM] የPlaytime ማዕከል",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "በቀጥታ ትዕይንት ይፍጠሩ",
+  "createLiveSession": "[AM] በቀጥታ ትዕይንት ይፍጠሩ",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "ማሳወቂያዎችን አብቅት",
+  "enableNotifications": "[AM] ማሳወቂያዎችን አብቅት",
   "@enableNotifications": {
     "description": "Description"
   },
@@ -216,23 +216,23 @@
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "ስብሰባ በትክክል ተካፋፈለ",
+  "meetingSharedSuccessfully": "[AM] ስብሰባ በትክክል ተካፋፈለ",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "ወደ Playtime እንኳን ደህና መጣችሁ",
+  "welcomeToPlaytime": "[AM] ወደ Playtime እንኳን ደህና መጣችሁ",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "ሁሉንም እይ",
+  "viewAll": "[AM] ሁሉንም እይ",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "ብልጽግናዊ Playtime",
+  "playtimeVirtual": "[AM] ብልጽግናዊ Playtime",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "የሰራተኞች ማያ ሊታወቀው ይጠበቃል",
+  "staffScreenTBD": "[AM] የሰራተኞች ማያ ሊታወቀው ይጠበቃል",
   "@staffScreenTBD": {
     "description": "Description"
   },
@@ -240,7 +240,7 @@
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "ግብዣ በትክክል ተሰርዟል",
+  "inviteCancelledSuccessfully": "[AM] ግብዣ በትክክል ተሰርዟል",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
@@ -248,15 +248,15 @@
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "የስርጭት መልዕክት ይፍጠሩ",
+  "composeBroadcastMessage": "[AM] የስርጭት መልዕክት ይፍጠሩ",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "አሁን ይላኩ",
+  "sendNow": "[AM] አሁን ይላኩ",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "እስካሁን ጨዋታዎች የሉም",
+  "noGamesYet": "[AM] እስካሁን ጨዋታዎች የሉም",
   "@noGamesYet": {
     "description": "Description"
   },
@@ -276,7 +276,7 @@
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "ልጅ አስወግድ",
+  "removeChild": "[AM] ልጅ አስወግድ",
   "@removeChild": {
     "description": "Description"
   },
@@ -292,15 +292,15 @@
   "@paste": {
     "description": "Description"
   },
-  "welcome": "እንኳን ደህና መጣዎት",
+  "welcome": "[AM] እንኳን ደህና መጣዎት",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "ትዕይንት ይፍጠሩ",
+  "playtimeCreateSession": "[AM] ትዕይንት ይፍጠሩ",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "የቤተሰብ አባላት",
+  "familyMembers": "[AM] የቤተሰብ አባላት",
   "@familyMembers": {
     "description": "Description"
   },
@@ -308,11 +308,11 @@
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "ቀጣይ ስብሰባዎች",
+  "upcomingSessions": "[AM] ቀጣይ ስብሰባዎች",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "የቡድን ስም ያስገቡ",
+  "enterGroupName": "[AM] የቡድን ስም ያስገቡ",
   "@enterGroupName": {
     "description": "Description"
   },
@@ -320,31 +320,31 @@
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "በቀጥታ Playtime",
+  "playtimeLive": "[AM] በቀጥታ Playtime",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "የግብዣዎች ማስጫን ስህተት",
+  "errorLoadingInvites": "[AM] የግብዣዎች ማስጫን ስህተት",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "የመድረሻ ቅርጸ-ቁልፍ",
+  "targetingFilters": "[AM] የመድረሻ ቅርጸ-ቁልፍ",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "ቪዲዮ ይምረጡ",
+  "pickVideo": "[AM] ቪዲዮ ይምረጡ",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "ጨዋታ ተሰርዟል",
+  "playtimeGameDeleted": "[AM] ጨዋታ ተሰርዟል",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "ወደ ቀጣይ ይጠቅሙ",
+  "scheduleForLater": "[AM] ወደ ቀጣይ ይጠቅሙ",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "መዳረሻ በትክክል ተሰርዟል",
+  "accessRevokedSuccessfully": "[AM] መዳረሻ በትክክል ተሰርዟል",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
@@ -352,7 +352,7 @@
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "መብቶች በማረጋገጥ",
+  "checkingPermissions": "[AM] መብቶች በማረጋገጥ",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
@@ -360,7 +360,7 @@
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "አዎን, ሰርዝ",
+  "yesCancel": "[AM] አዎን, ሰርዝ",
   "@yesCancel": {
     "description": "Description"
   },
@@ -368,11 +368,11 @@
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[AM] Share on WhatsApp",
+  "shareOnWhatsApp": "[AM] [AM] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "የማሳወቂያ ቅንብሮች",
+  "notificationSettings": "[AM] የማሳወቂያ ቅንብሮች",
   "@notificationSettings": {
     "description": "Description"
   },
@@ -380,15 +380,15 @@
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "እንደገና ሰርዝ",
+  "revoke": "[AM] እንደገና ሰርዝ",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "የስርጭት መልዕክቶች የሉም",
+  "noBroadcastMessages": "[AM] የስርጭት መልዕክቶች የሉም",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "የጥያቄ ዓይነት",
+  "requestType": "[AM] የጥያቄ ዓይነት",
   "@requestType": {
     "description": "requestType description"
   },
@@ -400,11 +400,11 @@
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "ግብዣ ሰርዝ",
+  "cancelInvite": "[AM] ግብዣ ሰርዝ",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "አዲስ ይፍጠሩ",
+  "createNew": "[AM] አዲስ ይፍጠሩ",
   "@createNew": {
     "description": "Description"
   },
@@ -412,11 +412,11 @@
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "Playtime አትቀበሉ",
+  "playtimeReject": "[AM] Playtime አትቀበሉ",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "የመገለጫ ማስጫን ስህተት",
+  "errorLoadingProfile": "[AM] የመገለጫ ማስጫን ስህተት",
   "@errorLoadingProfile": {
     "description": "Description"
   },
@@ -428,47 +428,47 @@
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "ጨዋታ ተፈቅዷል",
+  "playtimeGameApproved": "[AM] ጨዋታ ተፈቅዷል",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "የይለፍ ቃል ረሳሁት?",
+  "forgotPassword": "[AM] የይለፍ ቃል ረሳሁት?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "የቤተሰብ ዳሽቦርድ",
+  "familyDashboard": "[AM] የቤተሰብ ዳሽቦርድ",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "በመስበክ ላይ",
+  "loading": "[AM] በመስበክ ላይ",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "ፈጣን እርምጃዎች",
+  "quickActions": "[AM] ፈጣን እርምጃዎች",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "የPlaytime ርዕስ",
+  "playtimeTitle": "[AM] የPlaytime ርዕስ",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "OTP በትክክል ተልኳል",
+  "otpResentSuccessfully": "[AM] OTP በትክክል ተልኳል",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "የመብት ማረጋገጫ ስህተት",
+  "errorCheckingPermissions": "[AM] የመብት ማረጋገጫ ስህተት",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "የደንበኛ ማያ ሊታወቀው ይጠበቃል",
+  "clientScreenTBD": "[AM] የደንበኛ ማያ ሊታወቀው ይጠበቃል",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "የFCM ቶኬን",
+  "fcmToken": "[AM] የFCM ቶኬን",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "ምስል ይምረጡ",
+  "pickImage": "[AM] ምስል ይምረጡ",
   "@pickImage": {
     "description": "pickImage description"
   },
@@ -476,23 +476,23 @@
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "መገለጫ አልተገኘም",
+  "noProfileFound": "[AM] መገለጫ አልተገኘም",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "እስካሁን የቤተሰብ አባላት የሉም",
+  "noFamilyMembersYet": "[AM] እስካሁን የቤተሰብ አባላት የሉም",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "ሚዲያ (አማራጭ)",
+  "mediaOptional": "[AM] ሚዲያ (አማራጭ)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "መልዕክት በትክክል ተቀመጠ",
+  "messageSavedSuccessfully": "[AM] መልዕክት በትክክል ተቀመጠ",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "ወደ… ተያዘ",
+  "scheduledFor": "[AM] ወደ… ተያዘ",
   "@scheduledFor": {
     "description": "Description"
   },
@@ -500,15 +500,15 @@
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "ስርጭት መፈቀድ የለም",
+  "noPermissionForBroadcast": "[AM] ስርጭት መፈቀድ የለም",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[AM] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "ዝርዝር ግብዣ",
+  "inviteDetail": "[AM] ዝርዝር ግብዣ",
   "@inviteDetail": {
     "description": "Description"
   },
@@ -516,15 +516,15 @@
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "OTP እንደገና ማልክት አልተሳካም",
+  "failedToResendOtp": "[AM] OTP እንደገና ማልክት አልተሳካም",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "በማዘጋጀት ላይ",
+  "scheduling": "[AM] በማዘጋጀት ላይ",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "መልዕክት ማስቀመጥ ስህተት",
+  "errorSavingMessage": "[AM] መልዕክት ማስቀመጥ ስህተት",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
@@ -532,47 +532,47 @@
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "Playtime ይቀበሉ",
+  "playtimeApprove": "[AM] Playtime ይቀበሉ",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "የመጀመሪያዎቹን ትዕይንት ይፍጠሩ",
+  "createYourFirstSession": "[AM] የመጀመሪያዎቹን ትዕይንት ይፍጠሩ",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "ጨዋታ ተከስቷል",
+  "playtimeGameRejected": "[AM] ጨዋታ ተከስቷል",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "መዳረሻ መሰረዝ አልተሳካም",
+  "failedToRevokeAccess": "[AM] መዳረሻ መሰረዝ አልተሳካም",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "የቅርብ ጊዜ ጨዋታዎች",
+  "recentGames": "[AM] የቅርብ ጊዜ ጨዋታዎች",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "መልዕክት ያስተካክሉ",
+  "customizeMessage": "[AM] መልዕክት ያስተካክሉ",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "ግብዣ ማስወገድ አልተሳካም",
+  "failedToCancelInvite": "[AM] ግብዣ ማስወገድ አልተሳካም",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "መልዕክት ማልክት ስህተት",
+  "errorSendingMessage": "[AM] መልዕክት ማልክት ስህተት",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "የይለፍ ቃል አረጋግጥ",
+  "confirmPassword": "[AM] የይለፍ ቃል አረጋግጥ",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "የግላዊነት ጥያቄዎች ማስጫን ስህተት",
+  "errorLoadingPrivacyRequests": "[AM] የግላዊነት ጥያቄዎች ማስጫን ስህተት",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "የተገናኙ ልጆች",
+  "connectedChildren": "[AM] የተገናኙ ልጆች",
   "@connectedChildren": {
     "description": "Description"
   },
@@ -580,11 +580,11 @@
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "የጨዋታውን ስም ያስገቡ",
+  "playtimeEnterGameName": "[AM] የጨዋታውን ስም ያስገቡ",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "ለቤተሰብ ባለስልጣናት እባክዎ ይግቡ",
+  "pleaseLoginForFamilyFeatures": "[AM] ለቤተሰብ ባለስልጣናት እባክዎ ይግቡ",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
@@ -592,23 +592,23 @@
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "ጨዋታ ይፍጠሩ",
+  "createGame": "[AM] ጨዋታ ይፍጠሩ",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "የቡድን ስም (አማራጭ)",
+  "groupNameOptional": "[AM] የቡድን ስም (አማራጭ)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "Playtime ስብሰባዎች የሉም",
+  "playtimeNoSessions": "[AM] Playtime ስብሰባዎች የሉም",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[AM] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "የPlaytime የወላጆች ዳሽቦርድ ርዕስ",
+  "playtimeParentDashboardTitle": "[AM] የPlaytime የወላጆች ዳሽቦርድ ርዕስ",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
@@ -616,7 +616,7 @@
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "ታዋቂ ቡድን ተገኝቷል",
+  "knownGroupDetected": "[AM] ታዋቂ ቡድን ተገኝቷል",
   "@knownGroupDetected": {
     "description": "Description"
   },
@@ -624,15 +624,15 @@
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "ጨዋታ ይምረጡ",
+  "playtimeChooseGame": "[AM] ጨዋታ ይምረጡ",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "መብቶች ያስተዳድሩ",
+  "managePermissions": "[AM] መብቶች ያስተዳድሩ",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "የምርጫ አማራጮች",
+  "pollOptions": "[AM] የምርጫ አማራጮች",
   "@pollOptions": {
     "description": "pollOptions description"
   },
@@ -644,875 +644,875 @@
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "ስብሰባው ዝግጅት ተጠናቋል",
+  "meetingReadyMessage": "[AM] ስብሰባው ዝግጅት ተጠናቋል",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "የበረሰ ግብዣዎች",
+  "pendingInvites": "[AM] የበረሰ ግብዣዎች",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "ሁኔታ:",
+  "statusColon": "[AM] ሁኔታ:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "መገለጫ ለማየት እባክዎ ይግቡ",
+  "pleaseLoginToViewProfile": "[AM] መገለጫ ለማየት እባክዎ ይግቡ",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[AM] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[AM] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[AM] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[AM] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[AM] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[AM] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[AM] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[AM] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[AM] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[AM] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[AM] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[AM] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[AM] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[AM] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[AM] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[AM] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[AM] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[AM] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Amharic)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Amharic)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Amharic)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Amharic)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[AM] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[AM] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[AM] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[AM] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[AM] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[AM] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[AM] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[AM] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[AM] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[AM] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[AM] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[AM] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[AM] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[AM] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[AM] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[AM] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[AM] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[AM] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[AM] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[AM] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[AM] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[AM] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[AM] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[AM] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[AM] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[AM] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[AM] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[AM] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[AM] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[AM] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[AM] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[AM] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[AM] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[AM] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[AM] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[AM] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[AM] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[AM] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[AM] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[AM] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[AM] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[AM] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[AM] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[AM] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[AM] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[AM] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[AM] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[AM] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[AM] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[AM] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[AM] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[AM] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[AM] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[AM] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[AM] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[AM] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[AM] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[AM] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[AM] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[AM] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[AM] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[AM] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Amharic)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Amharic)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Amharic)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Amharic)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Amharic)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Amharic)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Amharic)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Amharic)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[AM] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Amharic)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Amharic)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Amharic)",
+  "upload1": "[AM] Upload (Amharic)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Amharic)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Amharic)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Amharic)",
+  "REDACTED_TOKEN": "[AM] Virtual session created! Inviting friends... (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Amharic)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Amharic)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Amharic)",
+  "rewards": "[AM] Rewards (Amharic)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Amharic)",
+  "time": "[AM] Time (Amharic)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[AM] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Amharic)",
+  "noSlots": "[AM] No slots (Amharic)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Amharic)",
+  "signIn": "[AM] Sign In (Amharic)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Amharic)",
+  "homeFeedScreen": "[AM] Home Feed Screen (Amharic)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Amharic)",
+  "selectLocation": "[AM] Select Location (Amharic)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Amharic)",
+  "noTicketsYet": "[AM] No tickets yet (Amharic)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Amharic)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Amharic)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Amharic)",
+  "subscriptionUnavailable": "[AM] Subscription unavailable (Amharic)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Amharic)",
+  "confirmBooking": "[AM] Confirm Booking (Amharic)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Amharic)",
+  "failedToUpdatePermissionE": "[AM] Failed to update permission: $e (Amharic)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Amharic)",
+  "reject": "[AM] Reject (Amharic)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Amharic)",
+  "REDACTED_TOKEN": "[AM] Ambassador Status: {ambassadorStatus} (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[AM] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Amharic)",
+  "checkingSubscription": "[AM] Checking subscription... (Amharic)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Amharic)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Amharic)",
+  "noContentAvailableYet": "[AM] No content available yet (Amharic)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Amharic)",
+  "resolve": "[AM] Resolve (Amharic)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Amharic)",
+  "errorLoadingSurveysError": "[AM] Error loading surveys: $error (Amharic)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[AM] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Amharic)",
+  "getHelpWithYourAccount": "[AM] Get help with your account (Amharic)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Amharic)",
+  "pay": "[AM] Pay (Amharic)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[AM] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Amharic)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Amharic)",
+  "changesSavedSuccessfully": "[AM] Changes saved successfully! (Amharic)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Amharic)",
+  "createNewInvoice": "[AM] Create New Invoice (Amharic)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Amharic)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Amharic)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Amharic)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Amharic)",
+  "profileSaved": "[AM] Profile saved! (Amharic)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Amharic)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Amharic)",
+  "valuetointk": "[AM] \\${value}K (Amharic)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Amharic)",
+  "deleteAccount": "[AM] Delete Account (Amharic)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Amharic)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Amharic)",
+  "businessOnboarding": "[AM] Business Onboarding (Amharic)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Amharic)",
+  "addNewClient": "[AM] Add New Client (Amharic)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Amharic)",
+  "darkMode": "[AM] Dark Mode (Amharic)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[AM] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[AM] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Amharic)",
+  "REDACTED_TOKEN": "[AM] You will receive a confirmation email shortly. (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Amharic)",
+  "addQuestion": "[AM] Add Question (Amharic)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Amharic)",
+  "privacyPolicy": "[AM] Privacy Policy (Amharic)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Amharic)",
+  "branchesLengthBranches": "[AM] {branchCount} branches (Amharic)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Amharic)",
+  "join": "[AM] Join (Amharic)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Amharic)",
+  "businessSubscription": "[AM] Business Subscription (Amharic)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Amharic)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[AM] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Amharic)",
+  "surveyManagement": "[AM] Survey Management (Amharic)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[AM] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Amharic)",
+  "noRoomsFoundAddYourFirstRoom": "[AM] No rooms found. Add your first room! (Amharic)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Amharic)",
+  "readOurPrivacyPolicy": "[AM] Read our privacy policy (Amharic)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Amharic)",
+  "couldNotOpenPrivacyPolicy": "[AM] Could not open privacy policy (Amharic)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Amharic)",
+  "refresh1": "[AM] Refresh (Amharic)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Amharic)",
+  "roomUpdatedSuccessfully": "[AM] Room updated successfully! (Amharic)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Amharic)",
+  "contentDetail": "[AM] Content Detail (Amharic)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Amharic)",
+  "cancelSubscription": "[AM] Cancel Subscription (Amharic)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Amharic)",
+  "REDACTED_TOKEN": "[AM] Successfully registered as Ambassador! (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Amharic)",
+  "save1": "[AM] Save (Amharic)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Amharic)",
+  "copy1": "[AM] Copy (Amharic)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Amharic)",
+  "failedToSendInvitationE": "[AM] Failed to send invitation: $e (Amharic)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Amharic)",
+  "surveyScore": "[AM] Survey Score (Amharic)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[AM] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Amharic)",
+  "noAppointmentsFound": "[AM] No appointments found. (Amharic)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Amharic)",
+  "responseDetail": "[AM] Response Detail (Amharic)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Amharic)",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Amharic)",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Amharic)",
+  "failedToStartProSubscriptionE": "[AM] Failed to start Pro subscription: $e (Amharic)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Amharic)",
+  "REDACTED_TOKEN": "[AM] Business Dashboard Entry Screen - Coming Soon (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Amharic)",
+  "contentFilter": "[AM] Content Filter (Amharic)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Amharic)",
+  "helpSupport": "[AM] Help & Support (Amharic)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Amharic)",
+  "editRoom": "[AM] Edit Room (Amharic)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[AM] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[AM] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Amharic)",
+  "REDACTED_TOKEN": "[AM] Business CRM Entry Screen - Coming Soon (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[AM] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[AM] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Amharic)",
+  "errorLoadingDashboardError": "[AM] Error loading dashboard: $error (Amharic)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Amharic)",
+  "gameDeletedSuccessfully": "[AM] Game deleted successfully! (Amharic)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Amharic)",
+  "viewResponsesComingSoon": "[AM] View responses - Coming soon! (Amharic)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[AM] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Amharic)",
+  "errorLoadingRewards": "[AM] Error loading rewards (Amharic)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Amharic)",
+  "failedToDeleteAccountE": "[AM] Failed to delete account: $e (Amharic)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Amharic)",
+  "invited1": "[AM] Invited (Amharic)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Amharic)",
+  "noBranchesAvailable": "[AM] No branches available (Amharic)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Amharic)",
+  "errorError": "[AM] Error: $error (Amharic)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Amharic)",
+  "noEvents": "[AM] No events (Amharic)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Amharic)",
+  "gameCreatedSuccessfully": "[AM] Game created successfully! (Amharic)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Amharic)",
+  "add1": "[AM] Add (Amharic)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[AM] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Amharic)",
+  "eventstarttimeEventendtime": "[AM] {startTime} - {endTime} (Amharic)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Amharic)",
+  "allowPlaytime": "[AM] Allow Playtime (Amharic)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Amharic)",
+  "clients": "[AM] Clients (Amharic)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Amharic)",
+  "noAmbassadorDataAvailable": "[AM] No ambassador data available (Amharic)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Amharic)",
+  "backgroundDeletedSuccessfully": "[AM] Background deleted successfully! (Amharic)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Amharic)",
+  "errorSnapshoterror": "[AM] Error: {error} (Amharic)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Amharic)",
+  "noAnalyticsDataAvailableYet": "[AM] No analytics data available yet. (Amharic)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Amharic)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Amharic)",
+  "REDACTED_TOKEN": "[AM] Business Phone Booking Entry Screen - Coming Soon (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Amharic)",
+  "verification": "[AM] Verification (Amharic)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Amharic)",
+  "copyLink": "[AM] Copy Link (Amharic)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Amharic)",
+  "dashboard1": "[AM] Dashboard (Amharic)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Amharic)",
+  "manageChildAccounts": "[AM] Manage Child Accounts (Amharic)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Amharic)",
+  "grantConsent": "[AM] Grant Consent (Amharic)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Amharic)",
+  "myProfile1": "[AM] My Profile (Amharic)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Amharic)",
+  "submit": "[AM] Submit (Amharic)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[AM] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Amharic)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Amharic)",
+  "ambassadorDashboard": "[AM] Ambassador Dashboard (Amharic)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Amharic)",
+  "phoneBooking": "[AM] Phone Booking (Amharic)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Amharic)",
+  "bookViaChat": "[AM] Book via Chat (Amharic)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
@@ -1520,1343 +1520,1343 @@
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Amharic)",
+  "businessProfile": "[AM] Business Profile (Amharic)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Amharic)",
+  "REDACTED_TOKEN": "[AM] Business Booking Entry Screen - Coming Soon (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Amharic)",
+  "createNewSurvey": "[AM] Create New Survey (Amharic)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Amharic)",
+  "backgroundRejected": "[AM] Background rejected (Amharic)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Amharic)",
+  "noMediaSelected": "[AM] No media selected (Amharic)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Amharic)",
+  "syncToGoogle": "[AM] Sync to Google (Amharic)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Amharic)",
+  "virtualPlaytime": "[AM] Virtual Playtime (Amharic)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[AM] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[AM] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Amharic)",
+  "invitationSentSuccessfully": "[AM] Invitation sent successfully! (Amharic)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Amharic)",
+  "registering": "[AM] Registering... (Amharic)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Amharic)",
+  "statusAppointmentstatusname": "[AM] Status: {status} (Amharic)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Amharic)",
+  "home1": "[AM] Home (Amharic)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Amharic)",
+  "errorSavingSettingsE": "[AM] Error saving settings: $e (Amharic)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Amharic)",
+  "appVersionAndInformation": "[AM] App version and information (Amharic)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Amharic)",
+  "REDACTED_TOKEN": "[AM] Business Subscription Entry Screen - Coming Soon (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Amharic)",
+  "ekeyEvalue": "[AM] {key}: {value} (Amharic)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Amharic)",
+  "REDACTED_TOKEN": "[AM] Your payment has been processed successfully. (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Amharic)",
+  "errorE": "[AM] Error: $e (Amharic)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Amharic)",
+  "viewAll1": "[AM] View All (Amharic)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Amharic)",
+  "editSurveyComingSoon": "[AM] Edit survey - Coming soon! (Amharic)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Amharic)",
+  "enterOtp": "[AM] Enter OTP (Amharic)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Amharic)",
+  "payment": "[AM] Payment (Amharic)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Amharic)",
+  "REDACTED_TOKEN": "[AM] Automatically confirm new booking requests (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Amharic)",
+  "noRouteDefinedForSettingsname": "[AM] No route defined for {settingsName} (Amharic)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Amharic)",
+  "pleaseSignInToUploadABackground": "[AM] Please sign in to upload a background (Amharic)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[AM] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Amharic)",
+  "staffAvailability": "[AM] Staff Availability (Amharic)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Amharic)",
+  "livePlaytime": "[AM] Live Playtime (Amharic)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Amharic)",
+  "autoconfirmBookings": "[AM] Auto-Confirm Bookings (Amharic)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Amharic)",
+  "REDACTED_TOKEN": "[AM] Redirecting to Stripe checkout for Pro plan... (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Amharic)",
+  "exportAsCsv": "[AM] Export as CSV (Amharic)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Amharic)",
+  "deleteFunctionalityComingSoon": "[AM] Delete functionality coming soon! (Amharic)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Amharic)",
+  "editClient": "[AM] Edit Client (Amharic)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Amharic)",
+  "REDACTED_TOKEN": "[AM] Are you sure you want to delete this message? (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Amharic)",
+  "referralsAmbassadorreferrals": "[AM] Referrals: {referrals} (Amharic)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[AM] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Amharic)",
+  "privacyRequestSentToYourParents": "[AM] Privacy request sent to your parents! (Amharic)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Amharic)",
+  "clientDeletedSuccessfully": "[AM] Client deleted successfully! (Amharic)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Amharic)",
+  "failedToCancelSubscription": "[AM] Failed to cancel subscription (Amharic)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Amharic)",
+  "allLanguages": "[AM] All Languages (Amharic)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Amharic)",
+  "slotDeletedSuccessfully": "[AM] Slot deleted successfully (Amharic)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[AM] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Amharic)",
+  "REDACTED_TOKEN": "[AM] Parents must approve before children can join (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Amharic)",
+  "subscribeToPro1499mo": "[AM] Subscribe to Pro (€14.99/mo) (Amharic)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Amharic)",
+  "REDACTED_TOKEN": "[AM] Business Availability Entry Screen - Coming Soon (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Amharic)",
+  "appointmentsListlength": "[AM] Appointments: {count} (Amharic)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Amharic)",
+  "clearFilters": "[AM] Clear Filters (Amharic)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Amharic)",
+  "submitBooking": "[AM] Submit Booking (Amharic)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Amharic)",
+  "REDACTED_TOKEN": "[AM] Are you sure you want to cancel this appointment? (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Amharic)",
+  "noUpcomingBookings": "[AM] No upcoming bookings (Amharic)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Amharic)",
+  "goBack": "[AM] Go Back (Amharic)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Amharic)",
+  "setup": "[AM] Setup (Amharic)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Amharic)",
+  "inviteChild": "[AM] Invite Child (Amharic)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Amharic)",
+  "goToDashboard": "[AM] Go to Dashboard (Amharic)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Amharic)",
+  "ambassadorQuotaDashboard": "[AM] Ambassador Quota Dashboard (Amharic)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[AM] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Amharic)",
+  "referralCode": "[AM] Referral Code (Amharic)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[AM] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Amharic)",
+  "date": "[AM] Date (Amharic)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Amharic)",
+  "readOnly": "[AM] Read Only (Amharic)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Amharic)",
+  "bookingRequest": "[AM] Booking Request (Amharic)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Amharic)",
+  "advancedReporting": "[AM] • Advanced reporting (Amharic)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Amharic)",
+  "rooms": "[AM] Rooms (Amharic)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Amharic)",
+  "copiedToClipboard": "[AM] Copied to clipboard (Amharic)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Amharic)",
+  "bookingConfirmed": "[AM] Booking Confirmed (Amharic)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Amharic)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Amharic)",
+  "clientAddedSuccessfully": "[AM] Client added successfully! (Amharic)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Amharic)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Amharic)",
+  "backgroundApproved": "[AM] Background approved! (Amharic)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Amharic)",
+  "familySupport": "[AM] Family Support (Amharic)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Amharic)",
+  "deletingAccount": "[AM] Deleting account... (Amharic)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Amharic)",
+  "bookAppointment": "[AM] Book Appointment (Amharic)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Amharic)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Amharic)",
+  "delete1": "[AM] Delete (Amharic)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Amharic)",
+  "sendBookingInvite": "[AM] Send Booking Invite (Amharic)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Amharic)",
+  "text": "[AM] Text (Amharic)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Amharic)",
+  "manageSubscription": "[AM] Manage Subscription (Amharic)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Amharic)",
+  "requiresInstallFallback": "[AM] Requires Install Fallback (Amharic)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Amharic)",
+  "paymentConfirmation": "[AM] Payment Confirmation (Amharic)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Amharic)",
+  "promoAppliedYourNextBillIsFree": "[AM] Promo applied! Your next bill is free. (Amharic)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Amharic)",
+  "errorLoadingSlots": "[AM] Error loading slots (Amharic)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Amharic)",
+  "REDACTED_TOKEN": "[AM] Allow other users to find and join this game (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Amharic)",
+  "REDACTED_TOKEN": "[AM] Business Onboarding Screen - Coming Soon (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Amharic)",
+  "activateBusinessProfile": "[AM] Activate Business Profile (Amharic)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Amharic)",
+  "contentNotFound": "[AM] Content not found (Amharic)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Amharic)",
+  "pspecialtynpcontactinfo": "[AM] {specialty}\\n{contactInfo} (Amharic)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Amharic)",
+  "rating": "[AM] Rating (Amharic)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Amharic)",
+  "messages": "[AM] Messages (Amharic)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Amharic)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Amharic)",
+  "becomeAnAmbassador": "[AM] Become an Ambassador (Amharic)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Amharic)",
+  "subscribeNow": "[AM] Subscribe Now (Amharic)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Amharic)",
+  "timeArgsslotformatcontext": "[AM] Time: {time} (Amharic)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Amharic)",
+  "shareViaWhatsapp": "[AM] Share via WhatsApp (Amharic)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Amharic)",
+  "users1": "[AM] Users (Amharic)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Amharic)",
+  "shareLink": "[AM] Share Link (Amharic)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[AM] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Amharic)",
+  "deleteAppointment": "[AM] Delete Appointment (Amharic)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Amharic)",
+  "toggleAvailability": "[AM] Toggle Availability (Amharic)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Amharic)",
+  "changePlan": "[AM] Change Plan (Amharic)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Amharic)",
+  "errorLoadingStaff": "[AM] Error loading staff (Amharic)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Amharic)",
+  "updateYourBusinessInformation": "[AM] Update your business information (Amharic)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[AM] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Amharic)",
+  "parentDashboard": "[AM] Parent Dashboard (Amharic)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Amharic)",
+  "menu": "[AM] Menu (Amharic)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Amharic)",
+  "studioBooking": "[AM] Studio Booking (Amharic)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Amharic)",
+  "about1": "[AM] About (Amharic)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Amharic)",
+  "multipleChoice": "[AM] Multiple Choice (Amharic)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Amharic)",
+  "REDACTED_TOKEN": "[AM] Date: {date} (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Amharic)",
+  "REDACTED_TOKEN": "[AM] Studio booking is only available on web (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Amharic)",
+  "errorLoadingBranchesE": "[AM] Error loading branches: $e (Amharic)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Amharic)",
+  "REDACTED_TOKEN": "[AM] \\uD83D\\uDCC5 {dateTime} (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Amharic)",
+  "none": "[AM] None (Amharic)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Amharic)",
+  "failedToUpdateConsentE": "[AM] Failed to update consent: $e (Amharic)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Amharic)",
+  "welcome1": "[AM] Welcome (Amharic)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Amharic)",
+  "failedToCreateSessionE": "[AM] Failed to create session: $e (Amharic)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Amharic)",
+  "inviteContact": "[AM] Invite Contact (Amharic)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Amharic)",
+  "surveyEditor": "[AM] Survey Editor (Amharic)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Amharic)",
+  "failedToStartBasicSubscriptionE": "[AM] Failed to start Basic subscription: $e (Amharic)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Amharic)",
+  "mySchedule": "[AM] My Schedule (Amharic)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Amharic)",
+  "studioDashboard": "[AM] Studio Dashboard (Amharic)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Amharic)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[AM] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[AM] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Amharic)",
+  "settingsSavedSuccessfully": "[AM] Settings saved successfully! (Amharic)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Amharic)",
+  "linkCopiedToClipboard": "[AM] Link copied to clipboard! (Amharic)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Amharic)",
+  "accept1": "[AM] Accept (Amharic)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Amharic)",
+  "noAvailableSlots": "[AM] No available slots (Amharic)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Amharic)",
+  "makeGamePublic": "[AM] Make Game Public (Amharic)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Amharic)",
+  "REDACTED_TOKEN": "[AM] Permission {category} updated to $newValue (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Amharic)",
+  "roomDeletedSuccessfully": "[AM] Room deleted successfully! (Amharic)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Amharic)",
+  "businessCalendar": "[AM] Business Calendar (Amharic)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Amharic)",
+  "addAvailability": "[AM] Add Availability (Amharic)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Amharic)",
+  "ambassadorOnboarding": "[AM] Ambassador Onboarding (Amharic)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Amharic)",
+  "phoneProfileasyncphone": "[AM] Phone: {phone} (Amharic)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Amharic)",
+  "addNewRoom": "[AM] Add New Room (Amharic)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Amharic)",
+  "requireParentApproval": "[AM] Require Parent Approval (Amharic)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Amharic)",
+  "closed": "[AM] Closed (Amharic)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Amharic)",
+  "exportAsPdf": "[AM] Export as PDF (Amharic)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Amharic)",
+  "enableVibration": "[AM] Enable Vibration (Amharic)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Amharic)",
+  "toAvailendformatcontext": "[AM] To: {endTime} (Amharic)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Amharic)",
+  "yourUpgradeCodeUpgradecode": "[AM] Your upgrade code: $upgradeCode (Amharic)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[AM] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Amharic)",
+  "country": "[AM] Country (Amharic)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[AM] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Amharic)",
+  "staffArgsstaffdisplayname": "[AM] Staff: {staffName} (Amharic)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Amharic)",
+  "revokeConsent": "[AM] Revoke Consent (Amharic)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Amharic)",
+  "settings1": "[AM] Settings (Amharic)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Amharic)",
+  "cancel1": "[AM] Cancel (Amharic)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Amharic)",
+  "REDACTED_TOKEN": "[AM] Subscription activated successfully! (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[AM] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Amharic)",
+  "broadcast": "[AM] Broadcast (Amharic)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Amharic)",
+  "noEventsScheduledThisWeek": "[AM] No events scheduled this week (Amharic)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Amharic)",
+  "googleCalendar": "[AM] Google Calendar (Amharic)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Amharic)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Amharic)",
+  "childDashboard": "[AM] Child Dashboard (Amharic)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Amharic)",
+  "failedToUploadBackgroundE": "[AM] Failed to upload background: $e (Amharic)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[AM] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[AM] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[AM] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Amharic)",
+  "noAppointments": "[AM] No appointments (Amharic)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Amharic)",
+  "unlimitedBookingsPerWeek": "[AM] • Unlimited bookings per week (Amharic)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Amharic)",
+  "scheduledAtScheduledat": "[AM] Scheduled at: $scheduledAt (Amharic)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Amharic)",
+  "selectStaff": "[AM] Select Staff (Amharic)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Amharic)",
+  "REDACTED_TOKEN": "[AM] Subscription cancelled successfully (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Amharic)",
+  "cancelAppointment": "[AM] Cancel Appointment (Amharic)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[AM] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Amharic)",
+  "businessSignup": "[AM] Business Signup (Amharic)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Amharic)",
+  "REDACTED_TOKEN": "[AM] Business Completion Screen - Coming Soon (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Amharic)",
+  "createGame1": "[AM] Create Game (Amharic)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Amharic)",
+  "valuetoint": "[AM] {value} (Amharic)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Amharic)",
+  "pleaseEnterAPromoCode": "[AM] Please enter a promo code (Amharic)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Amharic)",
+  "errorLoadingAvailabilityE": "[AM] Error loading availability: $e (Amharic)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Amharic)",
+  "parentalControls": "[AM] Parental Controls (Amharic)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Amharic)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Amharic)",
+  "childLinkedSuccessfully": "[AM] Child linked successfully! (Amharic)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Amharic)",
+  "create": "[AM] Create (Amharic)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Amharic)",
+  "noExternalMeetingsFound": "[AM] No external meetings found. (Amharic)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Amharic)",
+  "staffSelectionstaffdisplayname": "[AM] Staff: {staffName} (Amharic)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[AM] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Amharic)",
+  "schedulerScreen": "[AM] Scheduler Screen (Amharic)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Amharic)",
+  "clientUpdatedSuccessfully": "[AM] Client updated successfully! (Amharic)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Amharic)",
+  "surveyResponses": "[AM] Survey Responses (Amharic)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Amharic)",
+  "syncToOutlook": "[AM] Sync to Outlook (Amharic)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Amharic)",
+  "saveChanges": "[AM] Save Changes (Amharic)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Amharic)",
+  "pickTime": "[AM] Pick Time (Amharic)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Amharic)",
+  "registrationFailedEtostring": "[AM] Registration failed: {error} (Amharic)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Amharic)",
+  "analytics": "[AM] Analytics (Amharic)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Amharic)",
+  "errorLoadingEvents": "[AM] Error loading events (Amharic)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[AM] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[AM] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Amharic)",
+  "success1": "[AM] Success (Amharic)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[AM] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Amharic)",
+  "fromAvailstartformatcontext": "[AM] From: {startTime} (Amharic)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Amharic)",
+  "readWrite": "[AM] Read & Write (Amharic)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Amharic)",
+  "REDACTED_TOKEN": "[AM] Redirecting to Stripe checkout for Basic plan... (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[AM] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Amharic)",
+  "pickDate": "[AM] Pick Date (Amharic)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Amharic)",
+  "chatBooking": "[AM] Chat Booking (Amharic)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Amharic)",
+  "noQuestionsAdded": "[AM] No questions added (Amharic)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[AM] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[AM] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Amharic)",
+  "typeOpenCall": "[AM] Type: Open Call (Amharic)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[AM] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[AM] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Amharic)",
+  "invoiceCreatedSuccessfully": "[AM] Invoice created successfully! (Amharic)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Amharic)",
+  "noTimeSeriesDataAvailable": "[AM] No time series data available (Amharic)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[AM] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[AM] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Amharic)",
+  "failedToSendPrivacyRequestE": "[AM] Failed to send privacy request: $e (Amharic)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Amharic)",
+  "chooseYourPlan": "[AM] Choose Your Plan (Amharic)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Amharic)",
+  "playtimeManagement": "[AM] Playtime Management (Amharic)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Amharic)",
+  "availability": "[AM] Availability (Amharic)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Amharic)",
+  "eventCreated": "[AM] Event created (Amharic)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Amharic)",
+  "subscribeToBasic499mo": "[AM] Subscribe to Basic (€4.99/mo) (Amharic)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Amharic)",
+  "completion": "[AM] Completion (Amharic)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Amharic)",
+  "supportTicketSubmitted": "[AM] Support ticket submitted (Amharic)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Amharic)",
+  "monetizationSettings": "[AM] Monetization Settings (Amharic)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Amharic)",
+  "noBookingsFound": "[AM] No bookings found (Amharic)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[AM] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Amharic)",
+  "deleteSurvey": "[AM] Delete Survey (Amharic)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Amharic)",
+  "gameApprovedSuccessfully": "[AM] Game approved successfully! (Amharic)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Amharic)",
+  "errorLoadingPermissionsError": "[AM] Error loading permissions: $error (Amharic)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Amharic)",
+  "referrals": "[AM] Referrals (Amharic)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Amharic)",
+  "crm": "[AM] CRM (Amharic)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Amharic)",
+  "gameRejected": "[AM] Game rejected (Amharic)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Amharic)",
+  "appointments": "[AM] Appointments (Amharic)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Amharic)",
+  "onboardingScreen": "[AM] Onboarding Screen (Amharic)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Amharic)",
+  "welcomeToYourStudio": "[AM] Welcome to your studio (Amharic)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Amharic)",
+  "update": "[AM] Update (Amharic)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Amharic)",
+  "retry1": "[AM] Retry (Amharic)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Amharic)",
+  "booking": "[AM] Booking (Amharic)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Amharic)",
+  "parentalSettings": "[AM] Parental Settings (Amharic)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Amharic)",
+  "language": "[AM] Language (Amharic)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Amharic)",
+  "deleteSlot": "[AM] Delete Slot (Amharic)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[AM] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[AM] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Amharic)",
+  "createNewGame": "[AM] Create New Game (Amharic)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Amharic)",
+  "next1": "[AM] Next (Amharic)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Amharic)",
+  "backgroundUploadedSuccessfully": "[AM] Background uploaded successfully! (Amharic)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Amharic)",
+  "noAppointmentRequestsFound": "[AM] No appointment requests found. (Amharic)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Amharic)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Amharic)",
+  "restrictMatureContent": "[AM] Restrict mature content (Amharic)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Amharic)",
+  "ambassadors": "[AM] Ambassadors (Amharic)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Amharic)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Amharic)",
+  "paymentWasCancelled": "[AM] Payment was cancelled (Amharic)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Amharic)",
+  "clearAll": "[AM] Clear All (Amharic)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Amharic)",
+  "viewDetails": "[AM] View Details (Amharic)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Amharic)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Amharic)",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Amharic)",
+  "failedToCreateGameE": "[AM] Failed to create game: $e (Amharic)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Amharic)",
+  "noChartDataAvailable": "[AM] No chart data available (Amharic)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Amharic)",
+  "phonebasedBookingSystem": "[AM] • Phone-based booking system (Amharic)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Amharic)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Amharic)",
+  "invoices": "[AM] Invoices (Amharic)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Amharic)",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Amharic)",
+  "scheduledAtArgsscheduledat": "[AM] Scheduled at: {scheduledAt} (Amharic)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Amharic)",
+  "REDACTED_TOKEN": "[AM] Duration: {duration} minutes (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Amharic)",
+  "tryAgain": "[AM] Try Again (Amharic)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Amharic)",
+  "deleteBackground": "[AM] Delete Background (Amharic)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Amharic)",
+  "currentTierTiertouppercase": "[AM] Current Tier: {tier} (Amharic)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[AM] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Amharic)",
+  "REDACTED_TOKEN": "[AM] No clients found. Add your first client! (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[AM] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[AM] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Amharic)",
+  "appointmentRequests": "[AM] Appointment Requests (Amharic)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Amharic)",
+  "forward": "[AM] Forward (Amharic)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Amharic)",
+  "roomAddedSuccessfully": "[AM] Room added successfully! (Amharic)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Amharic)",
+  "option": "[AM] • $option (Amharic)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Amharic)",
+  "responseIndex1": "[AM] Response #{number} (Amharic)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Amharic)",
+  "crmDashboardWithAnalytics": "[AM] • CRM dashboard with analytics (Amharic)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Amharic)",
+  "contentLibrary1": "[AM] Content Library (Amharic)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Amharic)",
+  "reply": "[AM] Reply (Amharic)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Amharic)",
+  "subscriptionManagement": "[AM] Subscription Management (Amharic)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Amharic)",
+  "REDACTED_TOKEN": "[AM] Monetization settings will be implemented here (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Amharic)",
+  "failedToApplyPromoCodeE": "[AM] Failed to apply promo code: $e (Amharic)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[AM] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Amharic)",
+  "localizationContribution": "[AM] Localization Contribution (Amharic)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Amharic)",
+  "parentalConsent": "[AM] Parental Consent (Amharic)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Amharic)",
+  "businessSignupScreenComingSoon": "[AM] Business Signup Screen - Coming Soon (Amharic)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Amharic)",
+  "REDACTED_TOKEN": "[AM] Are you sure you want to delete this appointment? (Amharic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Amharic)",
+  "syncAppointment": "[AM] Sync Appointment (Amharic)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Amharic)",
+  "iConsent": "[AM] I Consent (Amharic)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Amharic)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Amharic)",
+  "businessSetupScreenComingSoon": "[AM] Business Setup Screen - Coming Soon (Amharic)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Amharic)",
+  "edit1": "[AM] Edit (Amharic)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Amharic)",
+  "noEventsScheduledThisMonth": "[AM] No events scheduled this month (Amharic)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Amharic)",
+  "businessDashboard": "[AM] Business Dashboard (Amharic)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Amharic)",
+  "noMessagesFound": "[AM] No messages found. (Amharic)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[AM] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Amharic)",
+  "manageStaffAvailability": "[AM] Manage Staff Availability (Amharic)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Amharic)",
+  "noMissingTranslations": "[AM] No missing translations (Amharic)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Amharic)",
+  "skip": "[AM] Skip (Amharic)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[AM] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Amharic)",
+  "errorLoadingReferralCode": "[AM] Error loading referral code (Amharic)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Amharic)",
+  "allCountries": "[AM] All Countries (Amharic)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Amharic)",
+  "deleteGame": "[AM] Delete Game (Amharic)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Amharic)",
+  "staffManagementTools": "[AM] • Staff management tools (Amharic)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Amharic)",
+  "deleteMessage": "[AM] Delete Message (Amharic)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Amharic)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[AM] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Amharic)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Amharic)",
+  "openingCustomerPortal": "[AM] Opening customer portal... (Amharic)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Amharic)",
+  "signOut": "[AM] Sign Out (Amharic)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Amharic)",
+  "nameProfilename": "[AM] Name: {name} (Amharic)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Amharic)",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Amharic)",
+  "upgradeToBusiness": "[AM] Upgrade to Business (Amharic)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Amharic)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Amharic)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Amharic)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Amharic)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Amharic)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Amharic)",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Amharic)",
+  "viewResponses": "[AM] View Responses (Amharic)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Amharic)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Amharic)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Amharic)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Amharic)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Amharic)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Amharic)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Amharic)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Amharic)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Amharic)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Amharic)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

@@ -1,6 +1,6 @@
 {
   "@@locale": "ur",
-  "refresh": "[UR] Refresh",
+  "refresh": "[UR] [UR] Refresh",
   "@refresh": {
     "description": "Description"
   },
@@ -8,71 +8,71 @@
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "[UR] No sessions yet",
+  "noSessionsYet": "[UR] [UR] No sessions yet",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "[UR] OK",
+  "ok": "[UR] [UR] OK",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "[UR] Choose your play mode:",
+  "playtimeLandingChooseMode": "[UR] [UR] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "[UR] Sign Up",
+  "signUp": "[UR] [UR] Sign Up",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "[UR] Schedule Message",
+  "scheduleMessage": "[UR] [UR] Schedule Message",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "مسترد کریں",
+  "decline": "[UR] مسترد کریں",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "ایڈمن نشریات",
+  "adminBroadcast": "[UR] ایڈمن نشریات",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "لاگ ان",
+  "login": "[UR] لاگ ان",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "[UR] Choose friends to invite",
+  "playtimeChooseFriends": "[UR] [UR] Choose friends to invite",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "کوئی دعوت نہیں",
+  "noInvites": "[UR] کوئی دعوت نہیں",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "[UR] Choose a time",
+  "playtimeChooseTime": "[UR] [UR] Choose a time",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "[UR] Success",
+  "success": "[UR] [UR] Success",
   "@success": {
     "description": "Description"
   },
-  "undo": "[UR] Undo",
+  "undo": "[UR] [UR] Undo",
   "@undo": {
     "description": "Description"
   },
-  "opened": "کھولا گیا: {count}",
+  "opened": "[UR] کھولا گیا: {count}",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "[UR] Create Virtual Session",
+  "createVirtualSession": "[UR] [UR] Create Virtual Session",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "پیغام کامیابی سے بھیجا گیا",
+  "messageSentSuccessfully": "[UR] پیغام کامیابی سے بھیجا گیا",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "[UR] Redo",
+  "redo": "[UR] [UR] Redo",
   "@redo": {
     "description": "Description"
   },
@@ -80,115 +80,115 @@
   "@next": {
     "description": "Description"
   },
-  "search": "[UR] Search",
+  "search": "[UR] [UR] Search",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "کیا آپ واقعی اس دعوت کو منسوخ کرنا چاہتے ہیں؟",
+  "cancelInviteConfirmation": "[UR] کیا آپ واقعی اس دعوت کو منسوخ کرنا چاہتے ہیں؟",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "بنایا گیا: {date}",
+  "created": "[UR] بنایا گیا: {date}",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "رسائی منسوخ کریں",
+  "revokeAccess": "[UR] رسائی منسوخ کریں",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "گروپ کو شناخت کے لیے محفوظ کریں",
+  "saveGroupForRecognition": "[UR] گروپ کو شناخت کے لیے محفوظ کریں",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "[UR] Live playtime scheduled!",
+  "playtimeLiveScheduled": "[UR] [UR] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "کیا آپ واقعی اس بچے کی رسائی منسوخ کرنا چاہتے ہیں؟ یہ عمل ناقابل واپسی ہے۔",
+  "revokeAccessConfirmation": "[UR] کیا آپ واقعی اس بچے کی رسائی منسوخ کرنا چاہتے ہیں؟ یہ عمل ناقابل واپسی ہے۔",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "[UR] Download",
+  "download": "[UR] [UR] Download",
   "@download": {
     "description": "Description"
   },
-  "password": "پاس ورڈ",
+  "password": "[UR] پاس ورڈ",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "خاندانی روابط لوڈ کرنے میں خرابی: {error}",
+  "errorLoadingFamilyLinks": "[UR] خاندانی روابط لوڈ کرنے میں خرابی: {error}",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "منسوخ کریں",
+  "cancel": "[UR] منسوخ کریں",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "[UR] Create",
+  "playtimeCreate": "[UR] [UR] Create",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "{action} پرائیویسی درخواست پر عملدرآمد میں ناکامی: {error}",
+  "failedToActionPrivacyRequest": "[UR] {action} پرائیویسی درخواست پر عملدرآمد میں ناکامی: {error}",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "Appoint",
+  "appTitle": "[UR] Appoint",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "قبول کریں",
+  "accept": "[UR] قبول کریں",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "[UR] Virtual Play",
+  "playtimeModeVirtual": "[UR] [UR] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "[UR] Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "[UR] [UR] Enjoy live or virtual games with your friends!",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "[UR] Delete",
+  "delete": "[UR] [UR] Delete",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "[UR] Virtual playtime started!",
+  "playtimeVirtualStarted": "[UR] [UR] Virtual playtime started!",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "[UR] Create your first game",
+  "createYourFirstGame": "[UR] [UR] Create your first game",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "[UR] Participants",
+  "participants": "[UR] [UR] Participants",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "وصول کنندگان: {count}",
+  "recipients": "[UR] وصول کنندگان: {count}",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "[UR] No results found",
+  "noResults": "[UR] [UR] No results found",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "جی ہاں",
+  "yes": "[UR] جی ہاں",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "دعوت دیں",
+  "invite": "[UR] دعوت دیں",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "[UR] Live Play",
+  "playtimeModeLive": "[UR] [UR] Live Play",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "[UR] Done",
+  "done": "[UR] [UR] Done",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "ہیلو! میں نے APP-OINT کے ذریعے آپ کے ساتھ ملاقات شیڈول کی ہے۔ تصدیق کرنے یا دوسرا وقت تجویز کرنے کے لیے یہاں کلک کریں:",
+  "defaultShareMessage": "[UR] ہیلو! میں نے APP-OINT کے ذریعے آپ کے ساتھ ملاقات شیڈول کی ہے۔ تصدیق کرنے یا دوسرا وقت تجویز کرنے کے لیے یہاں کلک کریں:",
   "@defaultShareMessage": {
     "description": "Description"
   },
@@ -196,79 +196,79 @@
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "[UR] Playtime Hub",
+  "playtimeHub": "[UR] [UR] Playtime Hub",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "[UR] Create Live Session",
+  "createLiveSession": "[UR] [UR] Create Live Session",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "اطلاعات فعال کریں",
+  "enableNotifications": "[UR] اطلاعات فعال کریں",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "مدعو: {date}",
+  "invited": "[UR] مدعو: {date}",
   "@invited": {
     "description": "Description"
   },
-  "content": "مواد: {content}",
+  "content": "[UR] مواد: {content}",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "ملاقات کامیابی سے شیئر کی گئی!",
+  "meetingSharedSuccessfully": "[UR] ملاقات کامیابی سے شیئر کی گئی!",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "[UR] Welcome to Playtime",
+  "welcomeToPlaytime": "[UR] [UR] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "[UR] View All",
+  "viewAll": "[UR] [UR] View All",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "[UR] Virtual Play",
+  "playtimeVirtual": "[UR] [UR] Virtual Play",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "اسٹاف اسکرین - تیار ہونا باقی ہے",
+  "staffScreenTBD": "[UR] اسٹاف اسکرین - تیار ہونا باقی ہے",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "[UR] Cut",
+  "cut": "[UR] [UR] Cut",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "دعوت کامیابی سے منسوخ ہو گئی!",
+  "inviteCancelledSuccessfully": "[UR] دعوت کامیابی سے منسوخ ہو گئی!",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "[UR] Retry",
+  "retry": "[UR] [UR] Retry",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "نشریاتی پیغام لکھیں",
+  "composeBroadcastMessage": "[UR] نشریاتی پیغام لکھیں",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "ابھی بھیجیں",
+  "sendNow": "[UR] ابھی بھیجیں",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "[UR] No games yet",
+  "noGamesYet": "[UR] [UR] No games yet",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "[UR] Select",
+  "select": "[UR] [UR] Select",
   "@select": {
     "description": "Description"
   },
-  "about": "[UR] About",
+  "about": "[UR] [UR] About",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "[UR] Choose",
+  "choose": "[UR] [UR] Choose",
   "@choose": {
     "description": "Description"
   },
@@ -276,119 +276,119 @@
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "بچے کو ہٹائیں",
+  "removeChild": "[UR] بچے کو ہٹائیں",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "حیثیت: {status}",
+  "status": "[UR] حیثیت: {status}",
   "@status": {
     "description": "status description"
   },
-  "logout": "[UR] Logout",
+  "logout": "[UR] [UR] Logout",
   "@logout": {
     "description": "Description"
   },
-  "paste": "[UR] Paste",
+  "paste": "[UR] [UR] Paste",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "خوش آمدید",
+  "welcome": "[UR] خوش آمدید",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "[UR] Create a Playtime Session",
+  "playtimeCreateSession": "[UR] [UR] Create a Playtime Session",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "خاندان کے افراد",
+  "familyMembers": "[UR] خاندان کے افراد",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "[UR] Upload",
+  "upload": "[UR] [UR] Upload",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "[UR] Upcoming Sessions",
+  "upcomingSessions": "[UR] [UR] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "شناخت کے لیے گروپ کا نام درج کریں",
+  "enterGroupName": "[UR] شناخت کے لیے گروپ کا نام درج کریں",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "[UR] Confirm",
+  "confirm": "[UR] [UR] Confirm",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "[UR] Live Play",
+  "playtimeLive": "[UR] [UR] Live Play",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "دعوت نامے لوڈ کرنے میں خرابی",
+  "errorLoadingInvites": "[UR] دعوت نامے لوڈ کرنے میں خرابی",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "ہدف سازی کے فلٹرز",
+  "targetingFilters": "[UR] ہدف سازی کے فلٹرز",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "ویڈیو منتخب کریں",
+  "pickVideo": "[UR] ویڈیو منتخب کریں",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "[UR] Game deleted",
+  "playtimeGameDeleted": "[UR] [UR] Game deleted",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "بعد میں شیڈول کریں",
+  "scheduleForLater": "[UR] بعد میں شیڈول کریں",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "رسائی کامیابی سے منسوخ ہو گئی!",
+  "accessRevokedSuccessfully": "[UR] رسائی کامیابی سے منسوخ ہو گئی!",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "قسم: {type}",
+  "type": "[UR] قسم: {type}",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "اجازتیں چیک کی جا رہی ہیں...",
+  "checkingPermissions": "[UR] اجازتیں چیک کی جا رہی ہیں...",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "[UR] Copy",
+  "copy": "[UR] [UR] Copy",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "ہاں، منسوخ کریں",
+  "yesCancel": "[UR] ہاں، منسوخ کریں",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "ای میل",
+  "email": "[UR] ای میل",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "واٹس ایپ پر شیئر کریں",
+  "shareOnWhatsApp": "[UR] واٹس ایپ پر شیئر کریں",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "اطلاع کی ترتیبات",
+  "notificationSettings": "[UR] اطلاع کی ترتیبات",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "میری پروفائل",
+  "myProfile": "[UR] میری پروفائل",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "منسوخ کریں",
+  "revoke": "[UR] منسوخ کریں",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "ابھی تک کوئی نشریاتی پیغام نہیں",
+  "noBroadcastMessages": "[UR] ابھی تک کوئی نشریاتی پیغام نہیں",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "{type} درخواست",
+  "requestType": "[UR] {type} درخواست",
   "@requestType": {
     "description": "requestType description"
   },
@@ -400,123 +400,123 @@
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "دعوت منسوخ کریں",
+  "cancelInvite": "[UR] دعوت منسوخ کریں",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "[UR] Create New",
+  "createNew": "[UR] [UR] Create New",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "[UR] Settings",
+  "settings": "[UR] [UR] Settings",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "[UR] Reject",
+  "playtimeReject": "[UR] [UR] Reject",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "پروفائل لوڈ کرنے میں خرابی",
+  "errorLoadingProfile": "[UR] پروفائل لوڈ کرنے میں خرابی",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "[UR] Edit",
+  "edit": "[UR] [UR] Edit",
   "@edit": {
     "description": "Description"
   },
-  "add": "[UR] Add",
+  "add": "[UR] [UR] Add",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "[UR] Game approved",
+  "playtimeGameApproved": "[UR] [UR] Game approved",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "[UR] Forgot Password?",
+  "forgotPassword": "[UR] [UR] Forgot Password?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "فیملی ڈیش بورڈ",
+  "familyDashboard": "[UR] فیملی ڈیش بورڈ",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "لوڈ ہو رہا ہے...",
+  "loading": "[UR] لوڈ ہو رہا ہے...",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "[UR] Quick Actions",
+  "quickActions": "[UR] [UR] Quick Actions",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "[UR] Playtime",
+  "playtimeTitle": "[UR] [UR] Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "او ٹی پی کامیابی سے دوبارہ بھیجا گیا!",
+  "otpResentSuccessfully": "[UR] او ٹی پی کامیابی سے دوبارہ بھیجا گیا!",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "اجازتیں چیک کرنے میں خرابی: {error}",
+  "errorCheckingPermissions": "[UR] اجازتیں چیک کرنے میں خرابی: {error}",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "کلائنٹ اسکرین - تیار ہونا باقی ہے",
+  "clientScreenTBD": "[UR] کلائنٹ اسکرین - تیار ہونا باقی ہے",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "ایف سی ایم ٹوکن: {token}",
+  "fcmToken": "[UR] ایف سی ایم ٹوکن: {token}",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "تصویر منتخب کریں",
+  "pickImage": "[UR] تصویر منتخب کریں",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "[UR] Previous",
+  "previous": "[UR] [UR] Previous",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "کوئی پروفائل نہیں ملی",
+  "noProfileFound": "[UR] کوئی پروفائل نہیں ملی",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "ابھی تک کوئی خاندانی رکن نہیں۔ شروع کرنے کے لیے کسی کو مدعو کریں!",
+  "noFamilyMembersYet": "[UR] ابھی تک کوئی خاندانی رکن نہیں۔ شروع کرنے کے لیے کسی کو مدعو کریں!",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "میڈیا (اختیاری)",
+  "mediaOptional": "[UR] میڈیا (اختیاری)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "پیغام کامیابی سے محفوظ ہو گیا",
+  "messageSavedSuccessfully": "[UR] پیغام کامیابی سے محفوظ ہو گیا",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "[UR] Scheduled for",
+  "scheduledFor": "[UR] [UR] Scheduled for",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "ڈیش بورڈ",
+  "dashboard": "[UR] ڈیش بورڈ",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "آپ کو نشریاتی پیغامات بنانے کی اجازت نہیں ہے۔",
+  "noPermissionForBroadcast": "[UR] آپ کو نشریاتی پیغامات بنانے کی اجازت نہیں ہے۔",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[UR] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "دعوت کی تفصیل",
+  "inviteDetail": "[UR] دعوت کی تفصیل",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "شیڈول: {date}",
+  "scheduled": "[UR] شیڈول: {date}",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "او ٹی پی دوبارہ بھیجنے میں ناکامی: {error}",
+  "failedToResendOtp": "[UR] او ٹی پی دوبارہ بھیجنے میں ناکامی: {error}",
   "@failedToResendOtp": {
     "description": "Description"
   },
@@ -524,151 +524,151 @@
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "پیغام محفوظ کرنے میں خرابی: {error}",
+  "errorSavingMessage": "[UR] پیغام محفوظ کرنے میں خرابی: {error}",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "محفوظ کریں",
+  "save": "[UR] محفوظ کریں",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "[UR] Approve",
+  "playtimeApprove": "[UR] [UR] Approve",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "[UR] Create your first session",
+  "createYourFirstSession": "[UR] [UR] Create your first session",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "[UR] Game rejected",
+  "playtimeGameRejected": "[UR] [UR] Game rejected",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "رسائی منسوخ کرنے میں ناکامی: {error}",
+  "failedToRevokeAccess": "[UR] رسائی منسوخ کرنے میں ناکامی: {error}",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "[UR] Recent Games",
+  "recentGames": "[UR] [UR] Recent Games",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "اپنا پیغام حسبِ ضرورت بنائیں...",
+  "customizeMessage": "[UR] اپنا پیغام حسبِ ضرورت بنائیں...",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "دعوت منسوخ کرنے میں ناکامی: {error}",
+  "failedToCancelInvite": "[UR] دعوت منسوخ کرنے میں ناکامی: {error}",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "پیغام بھیجنے میں خرابی: {error}",
+  "errorSendingMessage": "[UR] پیغام بھیجنے میں خرابی: {error}",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "[UR] Confirm Password",
+  "confirmPassword": "[UR] [UR] Confirm Password",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "پرائیویسی درخواستیں لوڈ کرنے میں خرابی: {error}",
+  "errorLoadingPrivacyRequests": "[UR] پرائیویسی درخواستیں لوڈ کرنے میں خرابی: {error}",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "منسلک بچے",
+  "connectedChildren": "[UR] منسلک بچے",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "[UR] Share",
+  "share": "[UR] [UR] Share",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "[UR] Enter game name",
+  "playtimeEnterGameName": "[UR] [UR] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "خاندانی خصوصیات کے لیے براہ کرم لاگ ان کریں",
+  "pleaseLoginForFamilyFeatures": "[UR] خاندانی خصوصیات کے لیے براہ کرم لاگ ان کریں",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "میرے دعوت نامے",
+  "myInvites": "[UR] میرے دعوت نامے",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "[UR] Create Game",
+  "createGame": "[UR] [UR] Create Game",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "گروپ کا نام (اختیاری)",
+  "groupNameOptional": "[UR] گروپ کا نام (اختیاری)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "[UR] No playtime sessions found.",
+  "playtimeNoSessions": "[UR] [UR] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "ایڈمن اسکرین - تیار ہونا باقی ہے",
+  "adminScreenTBD": "[UR] ایڈمن اسکرین - تیار ہونا باقی ہے",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[UR] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[UR] [UR] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "بند کریں",
+  "close": "[UR] بند کریں",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "معروف گروپ شناخت ہو گیا",
+  "knownGroupDetected": "[UR] معروف گروپ شناخت ہو گیا",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "[UR] Back",
+  "back": "[UR] [UR] Back",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "[UR] Choose a game",
+  "playtimeChooseGame": "[UR] [UR] Choose a game",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "اجازتوں کا نظم کریں",
+  "managePermissions": "[UR] اجازتوں کا نظم کریں",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "پول آپشنز:",
+  "pollOptions": "[UR] پول آپشنز:",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "کلک کیا گیا: {count}",
+  "clicked": "[UR] کلک کیا گیا: {count}",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "لنک: {link}",
+  "link": "[UR] لنک: {link}",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "ملاقات تیار ہے! کیا آپ اسے اپنے گروپ کو بھیجنا چاہتے ہیں؟",
+  "meetingReadyMessage": "[UR] ملاقات تیار ہے! کیا آپ اسے اپنے گروپ کو بھیجنا چاہتے ہیں؟",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "زیر التواء دعوتیں",
+  "pendingInvites": "[UR] زیر التواء دعوتیں",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "حیثیت: {status}",
+  "statusColon": "[UR] حیثیت: {status}",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[UR] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[UR] [UR] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[UR] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[UR] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[UR] Bookings",
   "@bookings": {
     "description": "Description"
   },
@@ -680,1271 +680,1271 @@
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[UR] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[UR] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[UR] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[UR] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[UR] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[UR] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[UR] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[UR] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[UR] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[UR] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[UR] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[UR] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[UR] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Urdu)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Urdu)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Urdu)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Urdu)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[UR] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[UR] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[UR] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[UR] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[UR] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[UR] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[UR] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[UR] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[UR] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[UR] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[UR] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[UR] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[UR] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[UR] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[UR] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[UR] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[UR] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[UR] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[UR] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[UR] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[UR] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[UR] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[UR] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[UR] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[UR] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[UR] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[UR] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[UR] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[UR] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[UR] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[UR] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[UR] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[UR] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[UR] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[UR] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[UR] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[UR] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[UR] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[UR] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[UR] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[UR] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[UR] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[UR] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[UR] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[UR] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[UR] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[UR] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[UR] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[UR] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[UR] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[UR] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[UR] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[UR] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[UR] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[UR] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[UR] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[UR] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[UR] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[UR] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[UR] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[UR] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[UR] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Urdu)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Urdu)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Urdu)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "بھیجیں",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Urdu)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Urdu)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Urdu)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Urdu)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[UR] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Urdu)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Urdu)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Urdu)",
+  "upload1": "[UR] Upload (Urdu)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Urdu)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Urdu)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Urdu)",
+  "REDACTED_TOKEN": "[UR] Virtual session created! Inviting friends... (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Urdu)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Urdu)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Urdu)",
+  "rewards": "[UR] Rewards (Urdu)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Urdu)",
+  "time": "[UR] Time (Urdu)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[UR] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "کوئی دستیاب وقت نہیں",
+  "noSlots": "[UR] کوئی دستیاب وقت نہیں",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "سائن ان کریں",
+  "signIn": "[UR] سائن ان کریں",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Urdu)",
+  "homeFeedScreen": "[UR] Home Feed Screen (Urdu)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Urdu)",
+  "selectLocation": "[UR] Select Location (Urdu)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Urdu)",
+  "noTicketsYet": "[UR] No tickets yet (Urdu)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Urdu)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Urdu)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Urdu)",
+  "subscriptionUnavailable": "[UR] Subscription unavailable (Urdu)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "بُکنگ کی تصدیق کریں",
+  "confirmBooking": "[UR] بُکنگ کی تصدیق کریں",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Urdu)",
+  "failedToUpdatePermissionE": "[UR] Failed to update permission: $e (Urdu)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Urdu)",
+  "reject": "[UR] Reject (Urdu)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Urdu)",
+  "REDACTED_TOKEN": "[UR] Ambassador Status: {ambassadorStatus} (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[UR] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Urdu)",
+  "checkingSubscription": "[UR] Checking subscription... (Urdu)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Urdu)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Urdu)",
+  "noContentAvailableYet": "[UR] No content available yet (Urdu)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Urdu)",
+  "resolve": "[UR] Resolve (Urdu)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Urdu)",
+  "errorLoadingSurveysError": "[UR] Error loading surveys: $error (Urdu)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[UR] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Urdu)",
+  "getHelpWithYourAccount": "[UR] Get help with your account (Urdu)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Urdu)",
+  "pay": "[UR] Pay (Urdu)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "کوئی تنظیم نہیں",
+  "noOrganizations": "[UR] کوئی تنظیم نہیں",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "ملاقات کی تفصیلات",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Urdu)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Urdu)",
+  "changesSavedSuccessfully": "[UR] Changes saved successfully! (Urdu)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Urdu)",
+  "createNewInvoice": "[UR] Create New Invoice (Urdu)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Urdu)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Urdu)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Urdu)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Urdu)",
+  "profileSaved": "[UR] Profile saved! (Urdu)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Urdu)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Urdu)",
+  "valuetointk": "[UR] \\${value}K (Urdu)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Urdu)",
+  "deleteAccount": "[UR] Delete Account (Urdu)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Urdu)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Urdu)",
+  "businessOnboarding": "[UR] Business Onboarding (Urdu)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Urdu)",
+  "addNewClient": "[UR] Add New Client (Urdu)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Urdu)",
+  "darkMode": "[UR] Dark Mode (Urdu)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[UR] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[UR] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Urdu)",
+  "REDACTED_TOKEN": "[UR] You will receive a confirmation email shortly. (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Urdu)",
+  "addQuestion": "[UR] Add Question (Urdu)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Urdu)",
+  "privacyPolicy": "[UR] Privacy Policy (Urdu)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Urdu)",
+  "branchesLengthBranches": "[UR] {branchCount} branches (Urdu)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Urdu)",
+  "join": "[UR] Join (Urdu)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Urdu)",
+  "businessSubscription": "[UR] Business Subscription (Urdu)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Urdu)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[UR] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Urdu)",
+  "surveyManagement": "[UR] Survey Management (Urdu)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[UR] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Urdu)",
+  "noRoomsFoundAddYourFirstRoom": "[UR] No rooms found. Add your first room! (Urdu)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Urdu)",
+  "readOurPrivacyPolicy": "[UR] Read our privacy policy (Urdu)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Urdu)",
+  "couldNotOpenPrivacyPolicy": "[UR] Could not open privacy policy (Urdu)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Urdu)",
+  "refresh1": "[UR] Refresh (Urdu)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Urdu)",
+  "roomUpdatedSuccessfully": "[UR] Room updated successfully! (Urdu)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Urdu)",
+  "contentDetail": "[UR] Content Detail (Urdu)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Urdu)",
+  "cancelSubscription": "[UR] Cancel Subscription (Urdu)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Urdu)",
+  "REDACTED_TOKEN": "[UR] Successfully registered as Ambassador! (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Urdu)",
+  "save1": "[UR] Save (Urdu)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Urdu)",
+  "copy1": "[UR] Copy (Urdu)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Urdu)",
+  "failedToSendInvitationE": "[UR] Failed to send invitation: $e (Urdu)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Urdu)",
+  "surveyScore": "[UR] Survey Score (Urdu)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[UR] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Urdu)",
+  "noAppointmentsFound": "[UR] No appointments found. (Urdu)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Urdu)",
+  "responseDetail": "[UR] Response Detail (Urdu)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Urdu)",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Urdu)",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Urdu)",
+  "failedToStartProSubscriptionE": "[UR] Failed to start Pro subscription: $e (Urdu)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Urdu)",
+  "REDACTED_TOKEN": "[UR] Business Dashboard Entry Screen - Coming Soon (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Urdu)",
+  "contentFilter": "[UR] Content Filter (Urdu)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Urdu)",
+  "helpSupport": "[UR] Help & Support (Urdu)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Urdu)",
+  "editRoom": "[UR] Edit Room (Urdu)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[UR] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[UR] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Urdu)",
+  "REDACTED_TOKEN": "[UR] Business CRM Entry Screen - Coming Soon (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[UR] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[UR] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Urdu)",
+  "errorLoadingDashboardError": "[UR] Error loading dashboard: $error (Urdu)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Urdu)",
+  "gameDeletedSuccessfully": "[UR] Game deleted successfully! (Urdu)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Urdu)",
+  "viewResponsesComingSoon": "[UR] View responses - Coming soon! (Urdu)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[UR] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Urdu)",
+  "errorLoadingRewards": "[UR] Error loading rewards (Urdu)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Urdu)",
+  "failedToDeleteAccountE": "[UR] Failed to delete account: $e (Urdu)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Urdu)",
+  "invited1": "[UR] Invited (Urdu)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Urdu)",
+  "noBranchesAvailable": "[UR] No branches available (Urdu)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Urdu)",
+  "errorError": "[UR] Error: $error (Urdu)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Urdu)",
+  "noEvents": "[UR] No events (Urdu)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Urdu)",
+  "gameCreatedSuccessfully": "[UR] Game created successfully! (Urdu)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Urdu)",
+  "add1": "[UR] Add (Urdu)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[UR] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Urdu)",
+  "eventstarttimeEventendtime": "[UR] {startTime} - {endTime} (Urdu)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Urdu)",
+  "allowPlaytime": "[UR] Allow Playtime (Urdu)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Urdu)",
+  "clients": "[UR] Clients (Urdu)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Urdu)",
+  "noAmbassadorDataAvailable": "[UR] No ambassador data available (Urdu)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Urdu)",
+  "backgroundDeletedSuccessfully": "[UR] Background deleted successfully! (Urdu)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Urdu)",
+  "errorSnapshoterror": "[UR] Error: {error} (Urdu)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Urdu)",
+  "noAnalyticsDataAvailableYet": "[UR] No analytics data available yet. (Urdu)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Urdu)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Urdu)",
+  "REDACTED_TOKEN": "[UR] Business Phone Booking Entry Screen - Coming Soon (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Urdu)",
+  "verification": "[UR] Verification (Urdu)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Urdu)",
+  "copyLink": "[UR] Copy Link (Urdu)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Urdu)",
+  "dashboard1": "[UR] Dashboard (Urdu)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Urdu)",
+  "manageChildAccounts": "[UR] Manage Child Accounts (Urdu)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "اجازت دیں",
+  "grantConsent": "[UR] اجازت دیں",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Urdu)",
+  "myProfile1": "[UR] My Profile (Urdu)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Urdu)",
+  "submit": "[UR] Submit (Urdu)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[UR] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Urdu)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Urdu)",
+  "ambassadorDashboard": "[UR] Ambassador Dashboard (Urdu)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Urdu)",
+  "phoneBooking": "[UR] Phone Booking (Urdu)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "چیٹ کے ذریعے بُک کریں",
+  "bookViaChat": "[UR] چیٹ کے ذریعے بُک کریں",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "[UR] Error",
+  "error": "[UR] [UR] Error",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Urdu)",
+  "businessProfile": "[UR] Business Profile (Urdu)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Urdu)",
+  "REDACTED_TOKEN": "[UR] Business Booking Entry Screen - Coming Soon (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Urdu)",
+  "createNewSurvey": "[UR] Create New Survey (Urdu)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Urdu)",
+  "backgroundRejected": "[UR] Background rejected (Urdu)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Urdu)",
+  "noMediaSelected": "[UR] No media selected (Urdu)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Urdu)",
+  "syncToGoogle": "[UR] Sync to Google (Urdu)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Urdu)",
+  "virtualPlaytime": "[UR] Virtual Playtime (Urdu)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[UR] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[UR] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "دعوت کامیابی سے بھیج دی گئی!",
+  "invitationSentSuccessfully": "[UR] دعوت کامیابی سے بھیج دی گئی!",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Urdu)",
+  "registering": "[UR] Registering... (Urdu)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Urdu)",
+  "statusAppointmentstatusname": "[UR] Status: {status} (Urdu)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Urdu)",
+  "home1": "[UR] Home (Urdu)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Urdu)",
+  "errorSavingSettingsE": "[UR] Error saving settings: $e (Urdu)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Urdu)",
+  "appVersionAndInformation": "[UR] App version and information (Urdu)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Urdu)",
+  "REDACTED_TOKEN": "[UR] Business Subscription Entry Screen - Coming Soon (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Urdu)",
+  "ekeyEvalue": "[UR] {key}: {value} (Urdu)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Urdu)",
+  "REDACTED_TOKEN": "[UR] Your payment has been processed successfully. (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Urdu)",
+  "errorE": "[UR] Error: $e (Urdu)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Urdu)",
+  "viewAll1": "[UR] View All (Urdu)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Urdu)",
+  "editSurveyComingSoon": "[UR] Edit survey - Coming soon! (Urdu)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "او ٹی پی درج کریں",
+  "enterOtp": "[UR] او ٹی پی درج کریں",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Urdu)",
+  "payment": "[UR] Payment (Urdu)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Urdu)",
+  "REDACTED_TOKEN": "[UR] Automatically confirm new booking requests (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Urdu)",
+  "noRouteDefinedForSettingsname": "[UR] No route defined for {settingsName} (Urdu)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Urdu)",
+  "pleaseSignInToUploadABackground": "[UR] Please sign in to upload a background (Urdu)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[UR] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Urdu)",
+  "staffAvailability": "[UR] Staff Availability (Urdu)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Urdu)",
+  "livePlaytime": "[UR] Live Playtime (Urdu)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Urdu)",
+  "autoconfirmBookings": "[UR] Auto-Confirm Bookings (Urdu)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Urdu)",
+  "REDACTED_TOKEN": "[UR] Redirecting to Stripe checkout for Pro plan... (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Urdu)",
+  "exportAsCsv": "[UR] Export as CSV (Urdu)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Urdu)",
+  "deleteFunctionalityComingSoon": "[UR] Delete functionality coming soon! (Urdu)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Urdu)",
+  "editClient": "[UR] Edit Client (Urdu)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Urdu)",
+  "REDACTED_TOKEN": "[UR] Are you sure you want to delete this message? (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Urdu)",
+  "referralsAmbassadorreferrals": "[UR] Referrals: {referrals} (Urdu)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[UR] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Urdu)",
+  "privacyRequestSentToYourParents": "[UR] Privacy request sent to your parents! (Urdu)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Urdu)",
+  "clientDeletedSuccessfully": "[UR] Client deleted successfully! (Urdu)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Urdu)",
+  "failedToCancelSubscription": "[UR] Failed to cancel subscription (Urdu)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Urdu)",
+  "allLanguages": "[UR] All Languages (Urdu)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Urdu)",
+  "slotDeletedSuccessfully": "[UR] Slot deleted successfully (Urdu)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[UR] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Urdu)",
+  "REDACTED_TOKEN": "[UR] Parents must approve before children can join (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Urdu)",
+  "subscribeToPro1499mo": "[UR] Subscribe to Pro (€14.99/mo) (Urdu)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Urdu)",
+  "REDACTED_TOKEN": "[UR] Business Availability Entry Screen - Coming Soon (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Urdu)",
+  "appointmentsListlength": "[UR] Appointments: {count} (Urdu)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Urdu)",
+  "clearFilters": "[UR] Clear Filters (Urdu)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "بُکنگ جمع کروائیں",
+  "submitBooking": "[UR] بُکنگ جمع کروائیں",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Urdu)",
+  "REDACTED_TOKEN": "[UR] Are you sure you want to cancel this appointment? (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Urdu)",
+  "noUpcomingBookings": "[UR] No upcoming bookings (Urdu)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Urdu)",
+  "goBack": "[UR] Go Back (Urdu)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Urdu)",
+  "setup": "[UR] Setup (Urdu)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "بچے کو دعوت دیں",
+  "inviteChild": "[UR] بچے کو دعوت دیں",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Urdu)",
+  "goToDashboard": "[UR] Go to Dashboard (Urdu)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Urdu)",
+  "ambassadorQuotaDashboard": "[UR] Ambassador Quota Dashboard (Urdu)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[UR] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Urdu)",
+  "referralCode": "[UR] Referral Code (Urdu)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[UR] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Urdu)",
+  "date": "[UR] Date (Urdu)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "صرف پڑھنے کے لیے",
+  "readOnly": "[UR] صرف پڑھنے کے لیے",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "بُکنگ کی درخواست",
+  "bookingRequest": "[UR] بُکنگ کی درخواست",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Urdu)",
+  "advancedReporting": "[UR] • Advanced reporting (Urdu)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Urdu)",
+  "rooms": "[UR] Rooms (Urdu)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Urdu)",
+  "copiedToClipboard": "[UR] Copied to clipboard (Urdu)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "بُکنگ کی تصدیق ہو گئی ہے",
+  "bookingConfirmed": "[UR] بُکنگ کی تصدیق ہو گئی ہے",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Urdu)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Urdu)",
+  "clientAddedSuccessfully": "[UR] Client added successfully! (Urdu)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Urdu)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Urdu)",
+  "backgroundApproved": "[UR] Background approved! (Urdu)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Urdu)",
+  "familySupport": "[UR] Family Support (Urdu)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Urdu)",
+  "deletingAccount": "[UR] Deleting account... (Urdu)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "وقت بُک کریں",
+  "bookAppointment": "[UR] وقت بُک کریں",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Urdu)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Urdu)",
+  "delete1": "[UR] Delete (Urdu)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Urdu)",
+  "sendBookingInvite": "[UR] Send Booking Invite (Urdu)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Urdu)",
+  "text": "[UR] Text (Urdu)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Urdu)",
+  "manageSubscription": "[UR] Manage Subscription (Urdu)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "انسٹالیشن درکار ہے",
+  "requiresInstallFallback": "[UR] انسٹالیشن درکار ہے",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Urdu)",
+  "paymentConfirmation": "[UR] Payment Confirmation (Urdu)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Urdu)",
+  "promoAppliedYourNextBillIsFree": "[UR] Promo applied! Your next bill is free. (Urdu)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Urdu)",
+  "errorLoadingSlots": "[UR] Error loading slots (Urdu)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Urdu)",
+  "REDACTED_TOKEN": "[UR] Allow other users to find and join this game (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Urdu)",
+  "REDACTED_TOKEN": "[UR] Business Onboarding Screen - Coming Soon (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Urdu)",
+  "activateBusinessProfile": "[UR] Activate Business Profile (Urdu)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Urdu)",
+  "contentNotFound": "[UR] Content not found (Urdu)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Urdu)",
+  "pspecialtynpcontactinfo": "[UR] {specialty}\\n{contactInfo} (Urdu)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Urdu)",
+  "rating": "[UR] Rating (Urdu)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Urdu)",
+  "messages": "[UR] Messages (Urdu)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Urdu)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Urdu)",
+  "becomeAnAmbassador": "[UR] Become an Ambassador (Urdu)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Urdu)",
+  "subscribeNow": "[UR] Subscribe Now (Urdu)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Urdu)",
+  "timeArgsslotformatcontext": "[UR] Time: {time} (Urdu)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Urdu)",
+  "shareViaWhatsapp": "[UR] Share via WhatsApp (Urdu)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Urdu)",
+  "users1": "[UR] Users (Urdu)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Urdu)",
+  "shareLink": "[UR] Share Link (Urdu)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[UR] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Urdu)",
+  "deleteAppointment": "[UR] Delete Appointment (Urdu)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Urdu)",
+  "toggleAvailability": "[UR] Toggle Availability (Urdu)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Urdu)",
+  "changePlan": "[UR] Change Plan (Urdu)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Urdu)",
+  "errorLoadingStaff": "[UR] Error loading staff (Urdu)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Urdu)",
+  "updateYourBusinessInformation": "[UR] Update your business information (Urdu)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[UR] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Urdu)",
+  "parentDashboard": "[UR] Parent Dashboard (Urdu)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
@@ -1952,539 +1952,539 @@
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Urdu)",
+  "studioBooking": "[UR] Studio Booking (Urdu)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Urdu)",
+  "about1": "[UR] About (Urdu)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Urdu)",
+  "multipleChoice": "[UR] Multiple Choice (Urdu)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Urdu)",
+  "REDACTED_TOKEN": "[UR] Date: {date} (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Urdu)",
+  "REDACTED_TOKEN": "[UR] Studio booking is only available on web (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Urdu)",
+  "errorLoadingBranchesE": "[UR] Error loading branches: $e (Urdu)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Urdu)",
+  "REDACTED_TOKEN": "[UR] \\uD83D\\uDCC5 {dateTime} (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "کوئی نہیں",
+  "none": "[UR] کوئی نہیں",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Urdu)",
+  "failedToUpdateConsentE": "[UR] Failed to update consent: $e (Urdu)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Urdu)",
+  "welcome1": "[UR] Welcome (Urdu)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Urdu)",
+  "failedToCreateSessionE": "[UR] Failed to create session: $e (Urdu)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "رابطہ دعوت دیں",
+  "inviteContact": "[UR] رابطہ دعوت دیں",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Urdu)",
+  "surveyEditor": "[UR] Survey Editor (Urdu)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Urdu)",
+  "failedToStartBasicSubscriptionE": "[UR] Failed to start Basic subscription: $e (Urdu)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Urdu)",
+  "mySchedule": "[UR] My Schedule (Urdu)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Urdu)",
+  "studioDashboard": "[UR] Studio Dashboard (Urdu)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Urdu)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[UR] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[UR] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Urdu)",
+  "settingsSavedSuccessfully": "[UR] Settings saved successfully! (Urdu)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Urdu)",
+  "linkCopiedToClipboard": "[UR] Link copied to clipboard! (Urdu)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Urdu)",
+  "accept1": "[UR] Accept (Urdu)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Urdu)",
+  "noAvailableSlots": "[UR] No available slots (Urdu)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Urdu)",
+  "makeGamePublic": "[UR] Make Game Public (Urdu)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Urdu)",
+  "REDACTED_TOKEN": "[UR] Permission {category} updated to $newValue (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Urdu)",
+  "roomDeletedSuccessfully": "[UR] Room deleted successfully! (Urdu)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Urdu)",
+  "businessCalendar": "[UR] Business Calendar (Urdu)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Urdu)",
+  "addAvailability": "[UR] Add Availability (Urdu)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Urdu)",
+  "ambassadorOnboarding": "[UR] Ambassador Onboarding (Urdu)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Urdu)",
+  "phoneProfileasyncphone": "[UR] Phone: {phone} (Urdu)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Urdu)",
+  "addNewRoom": "[UR] Add New Room (Urdu)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Urdu)",
+  "requireParentApproval": "[UR] Require Parent Approval (Urdu)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Urdu)",
+  "closed": "[UR] Closed (Urdu)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Urdu)",
+  "exportAsPdf": "[UR] Export as PDF (Urdu)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Urdu)",
+  "enableVibration": "[UR] Enable Vibration (Urdu)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Urdu)",
+  "toAvailendformatcontext": "[UR] To: {endTime} (Urdu)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Urdu)",
+  "yourUpgradeCodeUpgradecode": "[UR] Your upgrade code: $upgradeCode (Urdu)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "نجی سیشن کی درخواست کریں",
+  "requestPrivateSession": "[UR] نجی سیشن کی درخواست کریں",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Urdu)",
+  "country": "[UR] Country (Urdu)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[UR] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Urdu)",
+  "staffArgsstaffdisplayname": "[UR] Staff: {staffName} (Urdu)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "اجازت واپس لیں",
+  "revokeConsent": "[UR] اجازت واپس لیں",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Urdu)",
+  "settings1": "[UR] Settings (Urdu)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Urdu)",
+  "cancel1": "[UR] Cancel (Urdu)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Urdu)",
+  "REDACTED_TOKEN": "[UR] Subscription activated successfully! (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[UR] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Urdu)",
+  "broadcast": "[UR] Broadcast (Urdu)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Urdu)",
+  "noEventsScheduledThisWeek": "[UR] No events scheduled this week (Urdu)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Urdu)",
+  "googleCalendar": "[UR] Google Calendar (Urdu)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "دعوت بھیجیں",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Urdu)",
+  "childDashboard": "[UR] Child Dashboard (Urdu)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Urdu)",
+  "failedToUploadBackgroundE": "[UR] Failed to upload background: $e (Urdu)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[UR] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[UR] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[UR] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Urdu)",
+  "noAppointments": "[UR] No appointments (Urdu)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Urdu)",
+  "unlimitedBookingsPerWeek": "[UR] • Unlimited bookings per week (Urdu)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Urdu)",
+  "scheduledAtScheduledat": "[UR] Scheduled at: $scheduledAt (Urdu)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "اسٹاف منتخب کریں",
+  "selectStaff": "[UR] اسٹاف منتخب کریں",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Urdu)",
+  "REDACTED_TOKEN": "[UR] Subscription cancelled successfully (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Urdu)",
+  "cancelAppointment": "[UR] Cancel Appointment (Urdu)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[UR] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Urdu)",
+  "businessSignup": "[UR] Business Signup (Urdu)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Urdu)",
+  "REDACTED_TOKEN": "[UR] Business Completion Screen - Coming Soon (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Urdu)",
+  "createGame1": "[UR] Create Game (Urdu)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Urdu)",
+  "valuetoint": "[UR] {value} (Urdu)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Urdu)",
+  "pleaseEnterAPromoCode": "[UR] Please enter a promo code (Urdu)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Urdu)",
+  "errorLoadingAvailabilityE": "[UR] Error loading availability: $e (Urdu)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Urdu)",
+  "parentalControls": "[UR] Parental Controls (Urdu)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Urdu)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "بچہ کامیابی سے منسلک ہو گیا!",
+  "childLinkedSuccessfully": "[UR] بچہ کامیابی سے منسلک ہو گیا!",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Urdu)",
+  "create": "[UR] Create (Urdu)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Urdu)",
+  "noExternalMeetingsFound": "[UR] No external meetings found. (Urdu)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Urdu)",
+  "staffSelectionstaffdisplayname": "[UR] Staff: {staffName} (Urdu)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[UR] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Urdu)",
+  "schedulerScreen": "[UR] Scheduler Screen (Urdu)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Urdu)",
+  "clientUpdatedSuccessfully": "[UR] Client updated successfully! (Urdu)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Urdu)",
+  "surveyResponses": "[UR] Survey Responses (Urdu)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Urdu)",
+  "syncToOutlook": "[UR] Sync to Outlook (Urdu)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Urdu)",
+  "saveChanges": "[UR] Save Changes (Urdu)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Urdu)",
+  "pickTime": "[UR] Pick Time (Urdu)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Urdu)",
+  "registrationFailedEtostring": "[UR] Registration failed: {error} (Urdu)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Urdu)",
+  "analytics": "[UR] Analytics (Urdu)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Urdu)",
+  "errorLoadingEvents": "[UR] Error loading events (Urdu)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "تنظیمیں لوڈ کرنے میں خرابی",
+  "errorLoadingOrganizations": "[UR] تنظیمیں لوڈ کرنے میں خرابی",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[UR] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Urdu)",
+  "success1": "[UR] Success (Urdu)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[UR] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Urdu)",
+  "fromAvailstartformatcontext": "[UR] From: {startTime} (Urdu)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "پڑھنے اور لکھنے کی اجازت",
+  "readWrite": "[UR] پڑھنے اور لکھنے کی اجازت",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Urdu)",
+  "REDACTED_TOKEN": "[UR] Redirecting to Stripe checkout for Basic plan... (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[UR] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "تاریخ منتخب کریں",
+  "pickDate": "[UR] تاریخ منتخب کریں",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "چیٹ بُکنگ",
+  "chatBooking": "[UR] چیٹ بُکنگ",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Urdu)",
+  "noQuestionsAdded": "[UR] No questions added (Urdu)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[UR] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[UR] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Urdu)",
+  "typeOpenCall": "[UR] Type: Open Call (Urdu)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[UR] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[UR] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Urdu)",
+  "invoiceCreatedSuccessfully": "[UR] Invoice created successfully! (Urdu)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Urdu)",
+  "noTimeSeriesDataAvailable": "[UR] No time series data available (Urdu)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[UR] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[UR] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Urdu)",
+  "failedToSendPrivacyRequestE": "[UR] Failed to send privacy request: $e (Urdu)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Urdu)",
+  "chooseYourPlan": "[UR] Choose Your Plan (Urdu)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Urdu)",
+  "playtimeManagement": "[UR] Playtime Management (Urdu)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Urdu)",
+  "availability": "[UR] Availability (Urdu)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Urdu)",
+  "eventCreated": "[UR] Event created (Urdu)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Urdu)",
+  "subscribeToBasic499mo": "[UR] Subscribe to Basic (€4.99/mo) (Urdu)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Urdu)",
+  "completion": "[UR] Completion (Urdu)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Urdu)",
+  "supportTicketSubmitted": "[UR] Support ticket submitted (Urdu)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Urdu)",
+  "monetizationSettings": "[UR] Monetization Settings (Urdu)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "کوئی بُکنگ نہیں ملی",
+  "noBookingsFound": "[UR] کوئی بُکنگ نہیں ملی",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[UR] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Urdu)",
+  "deleteSurvey": "[UR] Delete Survey (Urdu)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Urdu)",
+  "gameApprovedSuccessfully": "[UR] Game approved successfully! (Urdu)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Urdu)",
+  "errorLoadingPermissionsError": "[UR] Error loading permissions: $error (Urdu)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Urdu)",
+  "referrals": "[UR] Referrals (Urdu)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Urdu)",
+  "crm": "[UR] CRM (Urdu)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Urdu)",
+  "gameRejected": "[UR] Game rejected (Urdu)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Urdu)",
+  "appointments": "[UR] Appointments (Urdu)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Urdu)",
+  "onboardingScreen": "[UR] Onboarding Screen (Urdu)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Urdu)",
+  "welcomeToYourStudio": "[UR] Welcome to your studio (Urdu)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Urdu)",
+  "update": "[UR] Update (Urdu)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Urdu)",
+  "retry1": "[UR] Retry (Urdu)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Urdu)",
+  "booking": "[UR] Booking (Urdu)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Urdu)",
+  "parentalSettings": "[UR] Parental Settings (Urdu)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Urdu)",
+  "language": "[UR] Language (Urdu)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Urdu)",
+  "deleteSlot": "[UR] Delete Slot (Urdu)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
@@ -2492,371 +2492,371 @@
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[UR] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Urdu)",
+  "createNewGame": "[UR] Create New Game (Urdu)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Urdu)",
+  "next1": "[UR] Next (Urdu)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Urdu)",
+  "backgroundUploadedSuccessfully": "[UR] Background uploaded successfully! (Urdu)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Urdu)",
+  "noAppointmentRequestsFound": "[UR] No appointment requests found. (Urdu)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Urdu)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Urdu)",
+  "restrictMatureContent": "[UR] Restrict mature content (Urdu)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Urdu)",
+  "ambassadors": "[UR] Ambassadors (Urdu)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Urdu)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Urdu)",
+  "paymentWasCancelled": "[UR] Payment was cancelled (Urdu)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Urdu)",
+  "clearAll": "[UR] Clear All (Urdu)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Urdu)",
+  "viewDetails": "[UR] View Details (Urdu)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Urdu)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Urdu)",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Urdu)",
+  "failedToCreateGameE": "[UR] Failed to create game: $e (Urdu)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Urdu)",
+  "noChartDataAvailable": "[UR] No chart data available (Urdu)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Urdu)",
+  "phonebasedBookingSystem": "[UR] • Phone-based booking system (Urdu)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Urdu)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Urdu)",
+  "invoices": "[UR] Invoices (Urdu)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Urdu)",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Urdu)",
+  "scheduledAtArgsscheduledat": "[UR] Scheduled at: {scheduledAt} (Urdu)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Urdu)",
+  "REDACTED_TOKEN": "[UR] Duration: {duration} minutes (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Urdu)",
+  "tryAgain": "[UR] Try Again (Urdu)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Urdu)",
+  "deleteBackground": "[UR] Delete Background (Urdu)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Urdu)",
+  "currentTierTiertouppercase": "[UR] Current Tier: {tier} (Urdu)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[UR] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Urdu)",
+  "REDACTED_TOKEN": "[UR] No clients found. Add your first client! (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[UR] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[UR] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Urdu)",
+  "appointmentRequests": "[UR] Appointment Requests (Urdu)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Urdu)",
+  "forward": "[UR] Forward (Urdu)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Urdu)",
+  "roomAddedSuccessfully": "[UR] Room added successfully! (Urdu)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Urdu)",
+  "option": "[UR] • $option (Urdu)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Urdu)",
+  "responseIndex1": "[UR] Response #{number} (Urdu)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Urdu)",
+  "crmDashboardWithAnalytics": "[UR] • CRM dashboard with analytics (Urdu)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Urdu)",
+  "contentLibrary1": "[UR] Content Library (Urdu)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Urdu)",
+  "reply": "[UR] Reply (Urdu)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Urdu)",
+  "subscriptionManagement": "[UR] Subscription Management (Urdu)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Urdu)",
+  "REDACTED_TOKEN": "[UR] Monetization settings will be implemented here (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Urdu)",
+  "failedToApplyPromoCodeE": "[UR] Failed to apply promo code: $e (Urdu)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[UR] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Urdu)",
+  "localizationContribution": "[UR] Localization Contribution (Urdu)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Urdu)",
+  "parentalConsent": "[UR] Parental Consent (Urdu)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Urdu)",
+  "businessSignupScreenComingSoon": "[UR] Business Signup Screen - Coming Soon (Urdu)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Urdu)",
+  "REDACTED_TOKEN": "[UR] Are you sure you want to delete this appointment? (Urdu)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Urdu)",
+  "syncAppointment": "[UR] Sync Appointment (Urdu)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Urdu)",
+  "iConsent": "[UR] I Consent (Urdu)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Urdu)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Urdu)",
+  "businessSetupScreenComingSoon": "[UR] Business Setup Screen - Coming Soon (Urdu)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Urdu)",
+  "edit1": "[UR] Edit (Urdu)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Urdu)",
+  "noEventsScheduledThisMonth": "[UR] No events scheduled this month (Urdu)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "کاروباری ڈیش بورڈ",
+  "businessDashboard": "[UR] کاروباری ڈیش بورڈ",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Urdu)",
+  "noMessagesFound": "[UR] No messages found. (Urdu)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[UR] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Urdu)",
+  "manageStaffAvailability": "[UR] Manage Staff Availability (Urdu)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Urdu)",
+  "noMissingTranslations": "[UR] No missing translations (Urdu)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Urdu)",
+  "skip": "[UR] Skip (Urdu)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "کوئی صارف نہیں",
+  "noUsers": "[UR] کوئی صارف نہیں",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Urdu)",
+  "errorLoadingReferralCode": "[UR] Error loading referral code (Urdu)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Urdu)",
+  "allCountries": "[UR] All Countries (Urdu)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Urdu)",
+  "deleteGame": "[UR] Delete Game (Urdu)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Urdu)",
+  "staffManagementTools": "[UR] • Staff management tools (Urdu)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Urdu)",
+  "deleteMessage": "[UR] Delete Message (Urdu)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Urdu)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "کردار تبدیل کریں",
+  "changeRole": "[UR] کردار تبدیل کریں",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Urdu)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Urdu)",
+  "openingCustomerPortal": "[UR] Opening customer portal... (Urdu)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "سائن آؤٹ",
+  "signOut": "[UR] سائن آؤٹ",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Urdu)",
+  "nameProfilename": "[UR] Name: {name} (Urdu)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Urdu)",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Urdu)",
+  "upgradeToBusiness": "[UR] Upgrade to Business (Urdu)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Urdu)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Urdu)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "صارفین لوڈ کرنے میں خرابی",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "تصدیق کریں",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Urdu)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Urdu)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Urdu)",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Urdu)",
+  "viewResponses": "[UR] View Responses (Urdu)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Urdu)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Urdu)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Urdu)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Urdu)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Urdu)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Urdu)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Urdu)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Urdu)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Urdu)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Urdu)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

@@ -1,2862 +1,2862 @@
 {
   "@@locale": "fi",
-  "refresh": "Päivitä",
+  "refresh": "[FI] Päivitä",
   "@refresh": {
     "description": "Description"
   },
-  "home": "Koti",
+  "home": "[FI] Koti",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "[FI] No sessions yet",
+  "noSessionsYet": "[FI] [FI] No sessions yet",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "OK",
+  "ok": "[FI] OK",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "Valitse tila",
+  "playtimeLandingChooseMode": "[FI] Valitse tila",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "Rekisteröidy",
+  "signUp": "[FI] Rekisteröidy",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "Ajoita viesti",
+  "scheduleMessage": "[FI] Ajoita viesti",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "Hylkää",
+  "decline": "[FI] Hylkää",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[FI] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "Kirjaudu sisään",
+  "login": "[FI] Kirjaudu sisään",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "Valitse ystävät",
+  "playtimeChooseFriends": "[FI] Valitse ystävät",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "Ei kutsuja",
+  "noInvites": "[FI] Ei kutsuja",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "Valitse aika",
+  "playtimeChooseTime": "[FI] Valitse aika",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "[FI] Success",
+  "success": "[FI] [FI] Success",
   "@success": {
     "description": "Description"
   },
-  "undo": "Kumoa",
+  "undo": "[FI] Kumoa",
   "@undo": {
     "description": "Description"
   },
-  "opened": "[FI] Opened",
+  "opened": "[FI] [FI] Opened",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "Luo virtuaalisessio",
+  "createVirtualSession": "[FI] Luo virtuaalisessio",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "[FI] Message sent successfully",
+  "messageSentSuccessfully": "[FI] [FI] Message sent successfully",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "Tee uudelleen",
+  "redo": "[FI] Tee uudelleen",
   "@redo": {
     "description": "Description"
   },
-  "next": "Seuraava",
+  "next": "[FI] Seuraava",
   "@next": {
     "description": "Description"
   },
-  "search": "Etsi",
+  "search": "[FI] Etsi",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "Peru kutsun vahvistus",
+  "cancelInviteConfirmation": "[FI] Peru kutsun vahvistus",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "Luotu",
+  "created": "[FI] Luotu",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "Kumoa oikeudet",
+  "revokeAccess": "[FI] Kumoa oikeudet",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "Tallenna ryhmä tunnistusta varten",
+  "saveGroupForRecognition": "[FI] Tallenna ryhmä tunnistusta varten",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "[FI] Live playtime scheduled!",
+  "playtimeLiveScheduled": "[FI] [FI] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "Oikeuksien peruuttamisen vahvistus",
+  "revokeAccessConfirmation": "[FI] Oikeuksien peruuttamisen vahvistus",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "[FI] Download",
+  "download": "[FI] [FI] Download",
   "@download": {
     "description": "Description"
   },
-  "password": "Salasana",
+  "password": "[FI] Salasana",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "[FI] Error loading family links",
+  "errorLoadingFamilyLinks": "[FI] [FI] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "Peruuta",
+  "cancel": "[FI] Peruuta",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "Luo Playtime",
+  "playtimeCreate": "[FI] Luo Playtime",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "[FI] Failed to action privacy request",
+  "failedToActionPrivacyRequest": "[FI] [FI] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "Sovelluksen otsikko",
+  "appTitle": "[FI] Sovelluksen otsikko",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "Hyväksy",
+  "accept": "[FI] Hyväksy",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "Virtuaalitila",
+  "playtimeModeVirtual": "[FI] Virtuaalitila",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "Playtime-kuvaus",
+  "playtimeDescription": "[FI] Playtime-kuvaus",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "Poista",
+  "delete": "[FI] Poista",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "Virtuaalisessio aloitettu",
+  "playtimeVirtualStarted": "[FI] Virtuaalisessio aloitettu",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "[FI] Create your first game",
+  "createYourFirstGame": "[FI] [FI] Create your first game",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "[FI] Participants",
+  "participants": "[FI] [FI] Participants",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "[FI] Recipients",
+  "recipients": "[FI] [FI] Recipients",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "Ei tuloksia",
+  "noResults": "[FI] Ei tuloksia",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "Kyllä",
+  "yes": "[FI] Kyllä",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "Kutsu",
+  "invite": "[FI] Kutsu",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "Live-tila",
+  "playtimeModeLive": "[FI] Live-tila",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "Valmis",
+  "done": "[FI] Valmis",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "Oletusjakoviesti",
+  "defaultShareMessage": "[FI] Oletusjakoviesti",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "Ei",
+  "no": "[FI] Ei",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "Playtime-keskus",
+  "playtimeHub": "[FI] Playtime-keskus",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "[FI] Create Live Session",
+  "createLiveSession": "[FI] [FI] Create Live Session",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "Ota ilmoitukset käyttöön",
+  "enableNotifications": "[FI] Ota ilmoitukset käyttöön",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "Kutsuttu",
+  "invited": "[FI] Kutsuttu",
   "@invited": {
     "description": "Description"
   },
-  "content": "Sisältö",
+  "content": "[FI] Sisältö",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "[FI] Meeting shared successfully",
+  "meetingSharedSuccessfully": "[FI] [FI] Meeting shared successfully",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "Tervetuloa Playtimeen",
+  "welcomeToPlaytime": "[FI] Tervetuloa Playtimeen",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "Näytä kaikki",
+  "viewAll": "[FI] Näytä kaikki",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "[FI] Virtual Play",
+  "playtimeVirtual": "[FI] [FI] Virtual Play",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "Henkilökunnan näkymä määriteltävä",
+  "staffScreenTBD": "[FI] Henkilökunnan näkymä määriteltävä",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "Leikkaa",
+  "cut": "[FI] Leikkaa",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "[FI] Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "[FI] [FI] Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "Yritä uudelleen",
+  "retry": "[FI] Yritä uudelleen",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "Laadi lähetysviesti",
+  "composeBroadcastMessage": "[FI] Laadi lähetysviesti",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "Lähetä nyt",
+  "sendNow": "[FI] Lähetä nyt",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "Pelejä ei ole vielä",
+  "noGamesYet": "[FI] Pelejä ei ole vielä",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "Valitse",
+  "select": "[FI] Valitse",
   "@select": {
     "description": "Description"
   },
-  "about": "[FI] About",
+  "about": "[FI] [FI] About",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Valitse",
+  "choose": "[FI] Valitse",
   "@choose": {
     "description": "Description"
   },
-  "profile": "[FI] Profile",
+  "profile": "[FI] [FI] Profile",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "Poista lapsi",
+  "removeChild": "[FI] Poista lapsi",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "Tila",
+  "status": "[FI] Tila",
   "@status": {
     "description": "status description"
   },
-  "logout": "Kirjaudu ulos",
+  "logout": "[FI] Kirjaudu ulos",
   "@logout": {
     "description": "Description"
   },
-  "paste": "Liitä",
+  "paste": "[FI] Liitä",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "Tervetuloa",
+  "welcome": "[FI] Tervetuloa",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "[FI] Create a Playtime Session",
+  "playtimeCreateSession": "[FI] [FI] Create a Playtime Session",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "Perheenjäsenet",
+  "familyMembers": "[FI] Perheenjäsenet",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "[FI] Upload",
+  "upload": "[FI] [FI] Upload",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "[FI] Upcoming Sessions",
+  "upcomingSessions": "[FI] [FI] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "Anna ryhmän nimi",
+  "enterGroupName": "[FI] Anna ryhmän nimi",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "Vahvista",
+  "confirm": "[FI] Vahvista",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "Live Playtime",
+  "playtimeLive": "[FI] Live Playtime",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "[FI] Error loading invites",
+  "errorLoadingInvites": "[FI] [FI] Error loading invites",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "[FI] Targeting Filters",
+  "targetingFilters": "[FI] [FI] Targeting Filters",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "Valitse video",
+  "pickVideo": "[FI] Valitse video",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "Peli poistettu",
+  "playtimeGameDeleted": "[FI] Peli poistettu",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "Ajoita myöhemmäksi",
+  "scheduleForLater": "[FI] Ajoita myöhemmäksi",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "[FI] Access revoked successfully",
+  "accessRevokedSuccessfully": "[FI] [FI] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "Tyyppi",
+  "type": "[FI] Tyyppi",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "Tarkistetaan oikeuksia",
+  "checkingPermissions": "[FI] Tarkistetaan oikeuksia",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "Kopioi",
+  "copy": "[FI] Kopioi",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "Kyllä, peruuta",
+  "yesCancel": "[FI] Kyllä, peruuta",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "Sähköposti",
+  "email": "[FI] Sähköposti",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[FI] Share on WhatsApp",
+  "shareOnWhatsApp": "[FI] [FI] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "Ilmoitusasetukset",
+  "notificationSettings": "[FI] Ilmoitusasetukset",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "[FI] My Profile",
+  "myProfile": "[FI] [FI] My Profile",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "Kumoa",
+  "revoke": "[FI] Kumoa",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "Ei lähetettyjä viestejä",
+  "noBroadcastMessages": "[FI] Ei lähetettyjä viestejä",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "Pyyntötyyppi",
+  "requestType": "[FI] Pyyntötyyppi",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "Ilmoitukset",
+  "notifications": "[FI] Ilmoitukset",
   "@notifications": {
     "description": "Description"
   },
-  "details": "Tiedot",
+  "details": "[FI] Tiedot",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "Peru kutsu",
+  "cancelInvite": "[FI] Peru kutsu",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "Luo uusi",
+  "createNew": "[FI] Luo uusi",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "Asetukset",
+  "settings": "[FI] Asetukset",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "Hylkää Playtime",
+  "playtimeReject": "[FI] Hylkää Playtime",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "[FI] Error loading profile",
+  "errorLoadingProfile": "[FI] [FI] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "Muokkaa",
+  "edit": "[FI] Muokkaa",
   "@edit": {
     "description": "Description"
   },
-  "add": "Lisää",
+  "add": "[FI] Lisää",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "Peli hyväksytty",
+  "playtimeGameApproved": "[FI] Peli hyväksytty",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "Unohditko salasanan?",
+  "forgotPassword": "[FI] Unohditko salasanan?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "[FI] Family Dashboard",
+  "familyDashboard": "[FI] [FI] Family Dashboard",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "[FI] Loading...",
+  "loading": "[FI] [FI] Loading...",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "[FI] Quick Actions",
+  "quickActions": "[FI] [FI] Quick Actions",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "Playtime-otsikko",
+  "playtimeTitle": "[FI] Playtime-otsikko",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "[FI] OTP resent successfully",
+  "otpResentSuccessfully": "[FI] [FI] OTP resent successfully",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "Virhe oikeuksien tarkistuksessa",
+  "errorCheckingPermissions": "[FI] Virhe oikeuksien tarkistuksessa",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "Asiakasnäyttö määriteltävä",
+  "clientScreenTBD": "[FI] Asiakasnäyttö määriteltävä",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "FCM-tunnus",
+  "fcmToken": "[FI] FCM-tunnus",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "Valitse kuva",
+  "pickImage": "[FI] Valitse kuva",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "[FI] Previous",
+  "previous": "[FI] [FI] Previous",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[FI] No profile found",
+  "noProfileFound": "[FI] [FI] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "Ei perheenjäseniä",
+  "noFamilyMembersYet": "[FI] Ei perheenjäseniä",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "[FI] Media (Optional)",
+  "mediaOptional": "[FI] [FI] Media (Optional)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "[FI] Message saved successfully",
+  "messageSavedSuccessfully": "[FI] [FI] Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "Ajoitettu",
+  "scheduledFor": "[FI] Ajoitettu",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "[FI] Dashboard",
+  "dashboard": "[FI] [FI] Dashboard",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "Ei lupaa lähetykseen",
+  "noPermissionForBroadcast": "[FI] Ei lupaa lähetykseen",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[FI] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "Kutsun tiedot",
+  "inviteDetail": "[FI] Kutsun tiedot",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "Ajoitettu",
+  "scheduled": "[FI] Ajoitettu",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "[FI] Failed to resend OTP",
+  "failedToResendOtp": "[FI] [FI] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "Ajoitetaan",
+  "scheduling": "[FI] Ajoitetaan",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "[FI] Error saving message",
+  "errorSavingMessage": "[FI] [FI] Error saving message",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "Tallenna",
+  "save": "[FI] Tallenna",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "Hyväksy Playtime",
+  "playtimeApprove": "[FI] Hyväksy Playtime",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "[FI] Create your first session",
+  "createYourFirstSession": "[FI] [FI] Create your first session",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "Peli hylätty",
+  "playtimeGameRejected": "[FI] Peli hylätty",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "[FI] Failed to revoke access",
+  "failedToRevokeAccess": "[FI] [FI] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "Viimeisimmät pelit",
+  "recentGames": "[FI] Viimeisimmät pelit",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "Mukauta viestiä",
+  "customizeMessage": "[FI] Mukauta viestiä",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "[FI] Failed to cancel invite",
+  "failedToCancelInvite": "[FI] [FI] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "[FI] Error sending message",
+  "errorSendingMessage": "[FI] [FI] Error sending message",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "Vahvista salasana",
+  "confirmPassword": "[FI] Vahvista salasana",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "[FI] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[FI] [FI] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "Yhdistetyt lapset",
+  "connectedChildren": "[FI] Yhdistetyt lapset",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "Jaa",
+  "share": "[FI] Jaa",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "[FI] Enter game name",
+  "playtimeEnterGameName": "[FI] [FI] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "[FI] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[FI] [FI] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "Kutsuni",
+  "myInvites": "[FI] Kutsuni",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "Luo peli",
+  "createGame": "[FI] Luo peli",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[FI] Group Name (Optional)",
+  "groupNameOptional": "[FI] [FI] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "[FI] No playtime sessions found.",
+  "playtimeNoSessions": "[FI] [FI] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[FI] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[FI] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[FI] [FI] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "Sulje",
+  "close": "[FI] Sulje",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "Tunnistettu tunnettu ryhmä",
+  "knownGroupDetected": "[FI] Tunnistettu tunnettu ryhmä",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "[FI] Back",
+  "back": "[FI] [FI] Back",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "Valitse peli",
+  "playtimeChooseGame": "[FI] Valitse peli",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "[FI] Manage Permissions",
+  "managePermissions": "[FI] [FI] Manage Permissions",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "[FI] Poll Options",
+  "pollOptions": "[FI] [FI] Poll Options",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "[FI] Clicked",
+  "clicked": "[FI] [FI] Clicked",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "[FI] Link",
+  "link": "[FI] [FI] Link",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "Kokous valmis",
+  "meetingReadyMessage": "[FI] Kokous valmis",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "Odotetut kutsut",
+  "pendingInvites": "[FI] Odotetut kutsut",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "Tila:",
+  "statusColon": "[FI] Tila:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[FI] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[FI] [FI] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[FI] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[FI] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[FI] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[FI] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[FI] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[FI] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[FI] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[FI] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[FI] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[FI] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[FI] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[FI] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[FI] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[FI] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[FI] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[FI] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[FI] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[FI] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Finnish)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Finnish)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Finnish)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Finnish)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[FI] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[FI] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[FI] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[FI] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[FI] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[FI] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[FI] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[FI] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[FI] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[FI] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[FI] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[FI] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[FI] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[FI] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[FI] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[FI] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[FI] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[FI] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[FI] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[FI] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[FI] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[FI] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[FI] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[FI] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[FI] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[FI] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[FI] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[FI] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[FI] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[FI] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[FI] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[FI] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[FI] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[FI] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[FI] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[FI] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[FI] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[FI] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[FI] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[FI] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[FI] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[FI] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[FI] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[FI] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[FI] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[FI] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[FI] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[FI] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[FI] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[FI] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[FI] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[FI] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[FI] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[FI] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[FI] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[FI] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[FI] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[FI] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[FI] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[FI] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[FI] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[FI] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Finnish)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Finnish)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Finnish)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Finnish)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Finnish)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Finnish)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Finnish)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Finnish)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[FI] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Finnish)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Finnish)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Finnish)",
+  "upload1": "[FI] Upload (Finnish)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Finnish)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Finnish)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Finnish)",
+  "REDACTED_TOKEN": "[FI] Virtual session created! Inviting friends... (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Finnish)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Finnish)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Finnish)",
+  "rewards": "[FI] Rewards (Finnish)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Finnish)",
+  "time": "[FI] Time (Finnish)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[FI] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Finnish)",
+  "noSlots": "[FI] No slots (Finnish)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Finnish)",
+  "signIn": "[FI] Sign In (Finnish)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Finnish)",
+  "homeFeedScreen": "[FI] Home Feed Screen (Finnish)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Finnish)",
+  "selectLocation": "[FI] Select Location (Finnish)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Finnish)",
+  "noTicketsYet": "[FI] No tickets yet (Finnish)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Finnish)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Finnish)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Finnish)",
+  "subscriptionUnavailable": "[FI] Subscription unavailable (Finnish)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Finnish)",
+  "confirmBooking": "[FI] Confirm Booking (Finnish)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Finnish)",
+  "failedToUpdatePermissionE": "[FI] Failed to update permission: $e (Finnish)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Finnish)",
+  "reject": "[FI] Reject (Finnish)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Finnish)",
+  "REDACTED_TOKEN": "[FI] Ambassador Status: {ambassadorStatus} (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[FI] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Finnish)",
+  "checkingSubscription": "[FI] Checking subscription... (Finnish)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Finnish)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Finnish)",
+  "noContentAvailableYet": "[FI] No content available yet (Finnish)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Finnish)",
+  "resolve": "[FI] Resolve (Finnish)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Finnish)",
+  "errorLoadingSurveysError": "[FI] Error loading surveys: $error (Finnish)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[FI] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Finnish)",
+  "getHelpWithYourAccount": "[FI] Get help with your account (Finnish)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Finnish)",
+  "pay": "[FI] Pay (Finnish)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[FI] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Finnish)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Finnish)",
+  "changesSavedSuccessfully": "[FI] Changes saved successfully! (Finnish)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Finnish)",
+  "createNewInvoice": "[FI] Create New Invoice (Finnish)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Finnish)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Finnish)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Finnish)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Finnish)",
+  "profileSaved": "[FI] Profile saved! (Finnish)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Finnish)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Finnish)",
+  "valuetointk": "[FI] \\${value}K (Finnish)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Finnish)",
+  "deleteAccount": "[FI] Delete Account (Finnish)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Finnish)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Finnish)",
+  "businessOnboarding": "[FI] Business Onboarding (Finnish)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Finnish)",
+  "addNewClient": "[FI] Add New Client (Finnish)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Finnish)",
+  "darkMode": "[FI] Dark Mode (Finnish)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[FI] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[FI] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Finnish)",
+  "REDACTED_TOKEN": "[FI] You will receive a confirmation email shortly. (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Finnish)",
+  "addQuestion": "[FI] Add Question (Finnish)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Finnish)",
+  "privacyPolicy": "[FI] Privacy Policy (Finnish)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Finnish)",
+  "branchesLengthBranches": "[FI] {branchCount} branches (Finnish)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Finnish)",
+  "join": "[FI] Join (Finnish)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Finnish)",
+  "businessSubscription": "[FI] Business Subscription (Finnish)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Finnish)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[FI] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Finnish)",
+  "surveyManagement": "[FI] Survey Management (Finnish)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[FI] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Finnish)",
+  "noRoomsFoundAddYourFirstRoom": "[FI] No rooms found. Add your first room! (Finnish)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Finnish)",
+  "readOurPrivacyPolicy": "[FI] Read our privacy policy (Finnish)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Finnish)",
+  "couldNotOpenPrivacyPolicy": "[FI] Could not open privacy policy (Finnish)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Finnish)",
+  "refresh1": "[FI] Refresh (Finnish)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Finnish)",
+  "roomUpdatedSuccessfully": "[FI] Room updated successfully! (Finnish)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Finnish)",
+  "contentDetail": "[FI] Content Detail (Finnish)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Finnish)",
+  "cancelSubscription": "[FI] Cancel Subscription (Finnish)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Finnish)",
+  "REDACTED_TOKEN": "[FI] Successfully registered as Ambassador! (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Finnish)",
+  "save1": "[FI] Save (Finnish)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Finnish)",
+  "copy1": "[FI] Copy (Finnish)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Finnish)",
+  "failedToSendInvitationE": "[FI] Failed to send invitation: $e (Finnish)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Finnish)",
+  "surveyScore": "[FI] Survey Score (Finnish)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[FI] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Finnish)",
+  "noAppointmentsFound": "[FI] No appointments found. (Finnish)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Finnish)",
+  "responseDetail": "[FI] Response Detail (Finnish)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Finnish)",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Finnish)",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Finnish)",
+  "failedToStartProSubscriptionE": "[FI] Failed to start Pro subscription: $e (Finnish)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Finnish)",
+  "REDACTED_TOKEN": "[FI] Business Dashboard Entry Screen - Coming Soon (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Finnish)",
+  "contentFilter": "[FI] Content Filter (Finnish)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Finnish)",
+  "helpSupport": "[FI] Help & Support (Finnish)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Finnish)",
+  "editRoom": "[FI] Edit Room (Finnish)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[FI] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[FI] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Finnish)",
+  "REDACTED_TOKEN": "[FI] Business CRM Entry Screen - Coming Soon (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[FI] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[FI] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Finnish)",
+  "errorLoadingDashboardError": "[FI] Error loading dashboard: $error (Finnish)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Finnish)",
+  "gameDeletedSuccessfully": "[FI] Game deleted successfully! (Finnish)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Finnish)",
+  "viewResponsesComingSoon": "[FI] View responses - Coming soon! (Finnish)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[FI] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Finnish)",
+  "errorLoadingRewards": "[FI] Error loading rewards (Finnish)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Finnish)",
+  "failedToDeleteAccountE": "[FI] Failed to delete account: $e (Finnish)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Finnish)",
+  "invited1": "[FI] Invited (Finnish)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Finnish)",
+  "noBranchesAvailable": "[FI] No branches available (Finnish)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Finnish)",
+  "errorError": "[FI] Error: $error (Finnish)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Finnish)",
+  "noEvents": "[FI] No events (Finnish)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Finnish)",
+  "gameCreatedSuccessfully": "[FI] Game created successfully! (Finnish)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Finnish)",
+  "add1": "[FI] Add (Finnish)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[FI] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Finnish)",
+  "eventstarttimeEventendtime": "[FI] {startTime} - {endTime} (Finnish)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Finnish)",
+  "allowPlaytime": "[FI] Allow Playtime (Finnish)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Finnish)",
+  "clients": "[FI] Clients (Finnish)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Finnish)",
+  "noAmbassadorDataAvailable": "[FI] No ambassador data available (Finnish)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Finnish)",
+  "backgroundDeletedSuccessfully": "[FI] Background deleted successfully! (Finnish)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Finnish)",
+  "errorSnapshoterror": "[FI] Error: {error} (Finnish)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Finnish)",
+  "noAnalyticsDataAvailableYet": "[FI] No analytics data available yet. (Finnish)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Finnish)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Finnish)",
+  "REDACTED_TOKEN": "[FI] Business Phone Booking Entry Screen - Coming Soon (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Finnish)",
+  "verification": "[FI] Verification (Finnish)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Finnish)",
+  "copyLink": "[FI] Copy Link (Finnish)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Finnish)",
+  "dashboard1": "[FI] Dashboard (Finnish)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Finnish)",
+  "manageChildAccounts": "[FI] Manage Child Accounts (Finnish)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Finnish)",
+  "grantConsent": "[FI] Grant Consent (Finnish)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Finnish)",
+  "myProfile1": "[FI] My Profile (Finnish)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Finnish)",
+  "submit": "[FI] Submit (Finnish)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[FI] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Finnish)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Finnish)",
+  "ambassadorDashboard": "[FI] Ambassador Dashboard (Finnish)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Finnish)",
+  "phoneBooking": "[FI] Phone Booking (Finnish)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Finnish)",
+  "bookViaChat": "[FI] Book via Chat (Finnish)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "Virhe",
+  "error": "[FI] Virhe",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Finnish)",
+  "businessProfile": "[FI] Business Profile (Finnish)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Finnish)",
+  "REDACTED_TOKEN": "[FI] Business Booking Entry Screen - Coming Soon (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Finnish)",
+  "createNewSurvey": "[FI] Create New Survey (Finnish)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Finnish)",
+  "backgroundRejected": "[FI] Background rejected (Finnish)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Finnish)",
+  "noMediaSelected": "[FI] No media selected (Finnish)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Finnish)",
+  "syncToGoogle": "[FI] Sync to Google (Finnish)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Finnish)",
+  "virtualPlaytime": "[FI] Virtual Playtime (Finnish)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[FI] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[FI] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Finnish)",
+  "invitationSentSuccessfully": "[FI] Invitation sent successfully! (Finnish)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Finnish)",
+  "registering": "[FI] Registering... (Finnish)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Finnish)",
+  "statusAppointmentstatusname": "[FI] Status: {status} (Finnish)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Finnish)",
+  "home1": "[FI] Home (Finnish)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Finnish)",
+  "errorSavingSettingsE": "[FI] Error saving settings: $e (Finnish)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Finnish)",
+  "appVersionAndInformation": "[FI] App version and information (Finnish)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Finnish)",
+  "REDACTED_TOKEN": "[FI] Business Subscription Entry Screen - Coming Soon (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Finnish)",
+  "ekeyEvalue": "[FI] {key}: {value} (Finnish)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Finnish)",
+  "REDACTED_TOKEN": "[FI] Your payment has been processed successfully. (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Finnish)",
+  "errorE": "[FI] Error: $e (Finnish)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Finnish)",
+  "viewAll1": "[FI] View All (Finnish)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Finnish)",
+  "editSurveyComingSoon": "[FI] Edit survey - Coming soon! (Finnish)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Finnish)",
+  "enterOtp": "[FI] Enter OTP (Finnish)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Finnish)",
+  "payment": "[FI] Payment (Finnish)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Finnish)",
+  "REDACTED_TOKEN": "[FI] Automatically confirm new booking requests (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Finnish)",
+  "noRouteDefinedForSettingsname": "[FI] No route defined for {settingsName} (Finnish)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Finnish)",
+  "pleaseSignInToUploadABackground": "[FI] Please sign in to upload a background (Finnish)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[FI] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Finnish)",
+  "staffAvailability": "[FI] Staff Availability (Finnish)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Finnish)",
+  "livePlaytime": "[FI] Live Playtime (Finnish)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Finnish)",
+  "autoconfirmBookings": "[FI] Auto-Confirm Bookings (Finnish)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Finnish)",
+  "REDACTED_TOKEN": "[FI] Redirecting to Stripe checkout for Pro plan... (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Finnish)",
+  "exportAsCsv": "[FI] Export as CSV (Finnish)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Finnish)",
+  "deleteFunctionalityComingSoon": "[FI] Delete functionality coming soon! (Finnish)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Finnish)",
+  "editClient": "[FI] Edit Client (Finnish)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Finnish)",
+  "REDACTED_TOKEN": "[FI] Are you sure you want to delete this message? (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Finnish)",
+  "referralsAmbassadorreferrals": "[FI] Referrals: {referrals} (Finnish)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[FI] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Finnish)",
+  "privacyRequestSentToYourParents": "[FI] Privacy request sent to your parents! (Finnish)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Finnish)",
+  "clientDeletedSuccessfully": "[FI] Client deleted successfully! (Finnish)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Finnish)",
+  "failedToCancelSubscription": "[FI] Failed to cancel subscription (Finnish)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Finnish)",
+  "allLanguages": "[FI] All Languages (Finnish)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Finnish)",
+  "slotDeletedSuccessfully": "[FI] Slot deleted successfully (Finnish)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[FI] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Finnish)",
+  "REDACTED_TOKEN": "[FI] Parents must approve before children can join (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Finnish)",
+  "subscribeToPro1499mo": "[FI] Subscribe to Pro (€14.99/mo) (Finnish)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Finnish)",
+  "REDACTED_TOKEN": "[FI] Business Availability Entry Screen - Coming Soon (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Finnish)",
+  "appointmentsListlength": "[FI] Appointments: {count} (Finnish)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Finnish)",
+  "clearFilters": "[FI] Clear Filters (Finnish)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Finnish)",
+  "submitBooking": "[FI] Submit Booking (Finnish)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Finnish)",
+  "REDACTED_TOKEN": "[FI] Are you sure you want to cancel this appointment? (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Finnish)",
+  "noUpcomingBookings": "[FI] No upcoming bookings (Finnish)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Finnish)",
+  "goBack": "[FI] Go Back (Finnish)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Finnish)",
+  "setup": "[FI] Setup (Finnish)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Finnish)",
+  "inviteChild": "[FI] Invite Child (Finnish)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Finnish)",
+  "goToDashboard": "[FI] Go to Dashboard (Finnish)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Finnish)",
+  "ambassadorQuotaDashboard": "[FI] Ambassador Quota Dashboard (Finnish)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[FI] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Finnish)",
+  "referralCode": "[FI] Referral Code (Finnish)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[FI] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Finnish)",
+  "date": "[FI] Date (Finnish)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Finnish)",
+  "readOnly": "[FI] Read Only (Finnish)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Finnish)",
+  "bookingRequest": "[FI] Booking Request (Finnish)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Finnish)",
+  "advancedReporting": "[FI] • Advanced reporting (Finnish)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Finnish)",
+  "rooms": "[FI] Rooms (Finnish)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Finnish)",
+  "copiedToClipboard": "[FI] Copied to clipboard (Finnish)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Finnish)",
+  "bookingConfirmed": "[FI] Booking Confirmed (Finnish)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Finnish)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Finnish)",
+  "clientAddedSuccessfully": "[FI] Client added successfully! (Finnish)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Finnish)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Finnish)",
+  "backgroundApproved": "[FI] Background approved! (Finnish)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Finnish)",
+  "familySupport": "[FI] Family Support (Finnish)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Finnish)",
+  "deletingAccount": "[FI] Deleting account... (Finnish)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Finnish)",
+  "bookAppointment": "[FI] Book Appointment (Finnish)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Finnish)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Finnish)",
+  "delete1": "[FI] Delete (Finnish)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Finnish)",
+  "sendBookingInvite": "[FI] Send Booking Invite (Finnish)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Finnish)",
+  "text": "[FI] Text (Finnish)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Finnish)",
+  "manageSubscription": "[FI] Manage Subscription (Finnish)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Finnish)",
+  "requiresInstallFallback": "[FI] Requires Install Fallback (Finnish)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Finnish)",
+  "paymentConfirmation": "[FI] Payment Confirmation (Finnish)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Finnish)",
+  "promoAppliedYourNextBillIsFree": "[FI] Promo applied! Your next bill is free. (Finnish)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Finnish)",
+  "errorLoadingSlots": "[FI] Error loading slots (Finnish)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Finnish)",
+  "REDACTED_TOKEN": "[FI] Allow other users to find and join this game (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Finnish)",
+  "REDACTED_TOKEN": "[FI] Business Onboarding Screen - Coming Soon (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Finnish)",
+  "activateBusinessProfile": "[FI] Activate Business Profile (Finnish)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Finnish)",
+  "contentNotFound": "[FI] Content not found (Finnish)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Finnish)",
+  "pspecialtynpcontactinfo": "[FI] {specialty}\\n{contactInfo} (Finnish)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Finnish)",
+  "rating": "[FI] Rating (Finnish)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Finnish)",
+  "messages": "[FI] Messages (Finnish)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Finnish)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Finnish)",
+  "becomeAnAmbassador": "[FI] Become an Ambassador (Finnish)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Finnish)",
+  "subscribeNow": "[FI] Subscribe Now (Finnish)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Finnish)",
+  "timeArgsslotformatcontext": "[FI] Time: {time} (Finnish)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Finnish)",
+  "shareViaWhatsapp": "[FI] Share via WhatsApp (Finnish)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Finnish)",
+  "users1": "[FI] Users (Finnish)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Finnish)",
+  "shareLink": "[FI] Share Link (Finnish)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[FI] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Finnish)",
+  "deleteAppointment": "[FI] Delete Appointment (Finnish)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Finnish)",
+  "toggleAvailability": "[FI] Toggle Availability (Finnish)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Finnish)",
+  "changePlan": "[FI] Change Plan (Finnish)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Finnish)",
+  "errorLoadingStaff": "[FI] Error loading staff (Finnish)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Finnish)",
+  "updateYourBusinessInformation": "[FI] Update your business information (Finnish)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[FI] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Finnish)",
+  "parentDashboard": "[FI] Parent Dashboard (Finnish)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Finnish)",
+  "menu": "[FI] Menu (Finnish)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Finnish)",
+  "studioBooking": "[FI] Studio Booking (Finnish)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Finnish)",
+  "about1": "[FI] About (Finnish)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Finnish)",
+  "multipleChoice": "[FI] Multiple Choice (Finnish)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Finnish)",
+  "REDACTED_TOKEN": "[FI] Date: {date} (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Finnish)",
+  "REDACTED_TOKEN": "[FI] Studio booking is only available on web (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Finnish)",
+  "errorLoadingBranchesE": "[FI] Error loading branches: $e (Finnish)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Finnish)",
+  "REDACTED_TOKEN": "[FI] \\uD83D\\uDCC5 {dateTime} (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Finnish)",
+  "none": "[FI] None (Finnish)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Finnish)",
+  "failedToUpdateConsentE": "[FI] Failed to update consent: $e (Finnish)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Finnish)",
+  "welcome1": "[FI] Welcome (Finnish)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Finnish)",
+  "failedToCreateSessionE": "[FI] Failed to create session: $e (Finnish)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Finnish)",
+  "inviteContact": "[FI] Invite Contact (Finnish)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Finnish)",
+  "surveyEditor": "[FI] Survey Editor (Finnish)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Finnish)",
+  "failedToStartBasicSubscriptionE": "[FI] Failed to start Basic subscription: $e (Finnish)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Finnish)",
+  "mySchedule": "[FI] My Schedule (Finnish)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Finnish)",
+  "studioDashboard": "[FI] Studio Dashboard (Finnish)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Finnish)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[FI] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[FI] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Finnish)",
+  "settingsSavedSuccessfully": "[FI] Settings saved successfully! (Finnish)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Finnish)",
+  "linkCopiedToClipboard": "[FI] Link copied to clipboard! (Finnish)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Finnish)",
+  "accept1": "[FI] Accept (Finnish)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Finnish)",
+  "noAvailableSlots": "[FI] No available slots (Finnish)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Finnish)",
+  "makeGamePublic": "[FI] Make Game Public (Finnish)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Finnish)",
+  "REDACTED_TOKEN": "[FI] Permission {category} updated to $newValue (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Finnish)",
+  "roomDeletedSuccessfully": "[FI] Room deleted successfully! (Finnish)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Finnish)",
+  "businessCalendar": "[FI] Business Calendar (Finnish)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Finnish)",
+  "addAvailability": "[FI] Add Availability (Finnish)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Finnish)",
+  "ambassadorOnboarding": "[FI] Ambassador Onboarding (Finnish)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Finnish)",
+  "phoneProfileasyncphone": "[FI] Phone: {phone} (Finnish)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Finnish)",
+  "addNewRoom": "[FI] Add New Room (Finnish)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Finnish)",
+  "requireParentApproval": "[FI] Require Parent Approval (Finnish)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Finnish)",
+  "closed": "[FI] Closed (Finnish)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Finnish)",
+  "exportAsPdf": "[FI] Export as PDF (Finnish)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Finnish)",
+  "enableVibration": "[FI] Enable Vibration (Finnish)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Finnish)",
+  "toAvailendformatcontext": "[FI] To: {endTime} (Finnish)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Finnish)",
+  "yourUpgradeCodeUpgradecode": "[FI] Your upgrade code: $upgradeCode (Finnish)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[FI] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Finnish)",
+  "country": "[FI] Country (Finnish)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[FI] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Finnish)",
+  "staffArgsstaffdisplayname": "[FI] Staff: {staffName} (Finnish)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Finnish)",
+  "revokeConsent": "[FI] Revoke Consent (Finnish)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Finnish)",
+  "settings1": "[FI] Settings (Finnish)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Finnish)",
+  "cancel1": "[FI] Cancel (Finnish)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Finnish)",
+  "REDACTED_TOKEN": "[FI] Subscription activated successfully! (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[FI] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Finnish)",
+  "broadcast": "[FI] Broadcast (Finnish)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Finnish)",
+  "noEventsScheduledThisWeek": "[FI] No events scheduled this week (Finnish)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Finnish)",
+  "googleCalendar": "[FI] Google Calendar (Finnish)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Finnish)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Finnish)",
+  "childDashboard": "[FI] Child Dashboard (Finnish)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Finnish)",
+  "failedToUploadBackgroundE": "[FI] Failed to upload background: $e (Finnish)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[FI] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[FI] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[FI] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Finnish)",
+  "noAppointments": "[FI] No appointments (Finnish)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Finnish)",
+  "unlimitedBookingsPerWeek": "[FI] • Unlimited bookings per week (Finnish)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Finnish)",
+  "scheduledAtScheduledat": "[FI] Scheduled at: $scheduledAt (Finnish)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Finnish)",
+  "selectStaff": "[FI] Select Staff (Finnish)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Finnish)",
+  "REDACTED_TOKEN": "[FI] Subscription cancelled successfully (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Finnish)",
+  "cancelAppointment": "[FI] Cancel Appointment (Finnish)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[FI] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Finnish)",
+  "businessSignup": "[FI] Business Signup (Finnish)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Finnish)",
+  "REDACTED_TOKEN": "[FI] Business Completion Screen - Coming Soon (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Finnish)",
+  "createGame1": "[FI] Create Game (Finnish)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Finnish)",
+  "valuetoint": "[FI] {value} (Finnish)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Finnish)",
+  "pleaseEnterAPromoCode": "[FI] Please enter a promo code (Finnish)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Finnish)",
+  "errorLoadingAvailabilityE": "[FI] Error loading availability: $e (Finnish)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Finnish)",
+  "parentalControls": "[FI] Parental Controls (Finnish)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Finnish)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Finnish)",
+  "childLinkedSuccessfully": "[FI] Child linked successfully! (Finnish)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Finnish)",
+  "create": "[FI] Create (Finnish)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Finnish)",
+  "noExternalMeetingsFound": "[FI] No external meetings found. (Finnish)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Finnish)",
+  "staffSelectionstaffdisplayname": "[FI] Staff: {staffName} (Finnish)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[FI] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Finnish)",
+  "schedulerScreen": "[FI] Scheduler Screen (Finnish)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Finnish)",
+  "clientUpdatedSuccessfully": "[FI] Client updated successfully! (Finnish)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Finnish)",
+  "surveyResponses": "[FI] Survey Responses (Finnish)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Finnish)",
+  "syncToOutlook": "[FI] Sync to Outlook (Finnish)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Finnish)",
+  "saveChanges": "[FI] Save Changes (Finnish)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Finnish)",
+  "pickTime": "[FI] Pick Time (Finnish)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Finnish)",
+  "registrationFailedEtostring": "[FI] Registration failed: {error} (Finnish)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Finnish)",
+  "analytics": "[FI] Analytics (Finnish)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Finnish)",
+  "errorLoadingEvents": "[FI] Error loading events (Finnish)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[FI] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[FI] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Finnish)",
+  "success1": "[FI] Success (Finnish)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[FI] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Finnish)",
+  "fromAvailstartformatcontext": "[FI] From: {startTime} (Finnish)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Finnish)",
+  "readWrite": "[FI] Read & Write (Finnish)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Finnish)",
+  "REDACTED_TOKEN": "[FI] Redirecting to Stripe checkout for Basic plan... (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[FI] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Finnish)",
+  "pickDate": "[FI] Pick Date (Finnish)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Finnish)",
+  "chatBooking": "[FI] Chat Booking (Finnish)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Finnish)",
+  "noQuestionsAdded": "[FI] No questions added (Finnish)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[FI] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[FI] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Finnish)",
+  "typeOpenCall": "[FI] Type: Open Call (Finnish)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[FI] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[FI] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Finnish)",
+  "invoiceCreatedSuccessfully": "[FI] Invoice created successfully! (Finnish)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Finnish)",
+  "noTimeSeriesDataAvailable": "[FI] No time series data available (Finnish)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[FI] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[FI] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Finnish)",
+  "failedToSendPrivacyRequestE": "[FI] Failed to send privacy request: $e (Finnish)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Finnish)",
+  "chooseYourPlan": "[FI] Choose Your Plan (Finnish)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Finnish)",
+  "playtimeManagement": "[FI] Playtime Management (Finnish)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Finnish)",
+  "availability": "[FI] Availability (Finnish)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Finnish)",
+  "eventCreated": "[FI] Event created (Finnish)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Finnish)",
+  "subscribeToBasic499mo": "[FI] Subscribe to Basic (€4.99/mo) (Finnish)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Finnish)",
+  "completion": "[FI] Completion (Finnish)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Finnish)",
+  "supportTicketSubmitted": "[FI] Support ticket submitted (Finnish)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Finnish)",
+  "monetizationSettings": "[FI] Monetization Settings (Finnish)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Finnish)",
+  "noBookingsFound": "[FI] No bookings found (Finnish)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[FI] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Finnish)",
+  "deleteSurvey": "[FI] Delete Survey (Finnish)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Finnish)",
+  "gameApprovedSuccessfully": "[FI] Game approved successfully! (Finnish)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Finnish)",
+  "errorLoadingPermissionsError": "[FI] Error loading permissions: $error (Finnish)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Finnish)",
+  "referrals": "[FI] Referrals (Finnish)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Finnish)",
+  "crm": "[FI] CRM (Finnish)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Finnish)",
+  "gameRejected": "[FI] Game rejected (Finnish)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Finnish)",
+  "appointments": "[FI] Appointments (Finnish)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Finnish)",
+  "onboardingScreen": "[FI] Onboarding Screen (Finnish)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Finnish)",
+  "welcomeToYourStudio": "[FI] Welcome to your studio (Finnish)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Finnish)",
+  "update": "[FI] Update (Finnish)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Finnish)",
+  "retry1": "[FI] Retry (Finnish)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Finnish)",
+  "booking": "[FI] Booking (Finnish)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Finnish)",
+  "parentalSettings": "[FI] Parental Settings (Finnish)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Finnish)",
+  "language": "[FI] Language (Finnish)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Finnish)",
+  "deleteSlot": "[FI] Delete Slot (Finnish)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[FI] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[FI] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Finnish)",
+  "createNewGame": "[FI] Create New Game (Finnish)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Finnish)",
+  "next1": "[FI] Next (Finnish)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Finnish)",
+  "backgroundUploadedSuccessfully": "[FI] Background uploaded successfully! (Finnish)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Finnish)",
+  "noAppointmentRequestsFound": "[FI] No appointment requests found. (Finnish)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Finnish)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Finnish)",
+  "restrictMatureContent": "[FI] Restrict mature content (Finnish)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Finnish)",
+  "ambassadors": "[FI] Ambassadors (Finnish)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Finnish)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Finnish)",
+  "paymentWasCancelled": "[FI] Payment was cancelled (Finnish)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Finnish)",
+  "clearAll": "[FI] Clear All (Finnish)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Finnish)",
+  "viewDetails": "[FI] View Details (Finnish)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Finnish)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Finnish)",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Finnish)",
+  "failedToCreateGameE": "[FI] Failed to create game: $e (Finnish)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Finnish)",
+  "noChartDataAvailable": "[FI] No chart data available (Finnish)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Finnish)",
+  "phonebasedBookingSystem": "[FI] • Phone-based booking system (Finnish)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Finnish)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Finnish)",
+  "invoices": "[FI] Invoices (Finnish)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Finnish)",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Finnish)",
+  "scheduledAtArgsscheduledat": "[FI] Scheduled at: {scheduledAt} (Finnish)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Finnish)",
+  "REDACTED_TOKEN": "[FI] Duration: {duration} minutes (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Finnish)",
+  "tryAgain": "[FI] Try Again (Finnish)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Finnish)",
+  "deleteBackground": "[FI] Delete Background (Finnish)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Finnish)",
+  "currentTierTiertouppercase": "[FI] Current Tier: {tier} (Finnish)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[FI] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Finnish)",
+  "REDACTED_TOKEN": "[FI] No clients found. Add your first client! (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[FI] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[FI] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Finnish)",
+  "appointmentRequests": "[FI] Appointment Requests (Finnish)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Finnish)",
+  "forward": "[FI] Forward (Finnish)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Finnish)",
+  "roomAddedSuccessfully": "[FI] Room added successfully! (Finnish)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Finnish)",
+  "option": "[FI] • $option (Finnish)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Finnish)",
+  "responseIndex1": "[FI] Response #{number} (Finnish)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Finnish)",
+  "crmDashboardWithAnalytics": "[FI] • CRM dashboard with analytics (Finnish)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Finnish)",
+  "contentLibrary1": "[FI] Content Library (Finnish)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Finnish)",
+  "reply": "[FI] Reply (Finnish)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Finnish)",
+  "subscriptionManagement": "[FI] Subscription Management (Finnish)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Finnish)",
+  "REDACTED_TOKEN": "[FI] Monetization settings will be implemented here (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Finnish)",
+  "failedToApplyPromoCodeE": "[FI] Failed to apply promo code: $e (Finnish)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[FI] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Finnish)",
+  "localizationContribution": "[FI] Localization Contribution (Finnish)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Finnish)",
+  "parentalConsent": "[FI] Parental Consent (Finnish)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Finnish)",
+  "businessSignupScreenComingSoon": "[FI] Business Signup Screen - Coming Soon (Finnish)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Finnish)",
+  "REDACTED_TOKEN": "[FI] Are you sure you want to delete this appointment? (Finnish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Finnish)",
+  "syncAppointment": "[FI] Sync Appointment (Finnish)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Finnish)",
+  "iConsent": "[FI] I Consent (Finnish)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Finnish)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Finnish)",
+  "businessSetupScreenComingSoon": "[FI] Business Setup Screen - Coming Soon (Finnish)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Finnish)",
+  "edit1": "[FI] Edit (Finnish)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Finnish)",
+  "noEventsScheduledThisMonth": "[FI] No events scheduled this month (Finnish)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Finnish)",
+  "businessDashboard": "[FI] Business Dashboard (Finnish)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Finnish)",
+  "noMessagesFound": "[FI] No messages found. (Finnish)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[FI] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Finnish)",
+  "manageStaffAvailability": "[FI] Manage Staff Availability (Finnish)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Finnish)",
+  "noMissingTranslations": "[FI] No missing translations (Finnish)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Finnish)",
+  "skip": "[FI] Skip (Finnish)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[FI] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Finnish)",
+  "errorLoadingReferralCode": "[FI] Error loading referral code (Finnish)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Finnish)",
+  "allCountries": "[FI] All Countries (Finnish)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Finnish)",
+  "deleteGame": "[FI] Delete Game (Finnish)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Finnish)",
+  "staffManagementTools": "[FI] • Staff management tools (Finnish)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Finnish)",
+  "deleteMessage": "[FI] Delete Message (Finnish)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Finnish)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[FI] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Finnish)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Finnish)",
+  "openingCustomerPortal": "[FI] Opening customer portal... (Finnish)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Finnish)",
+  "signOut": "[FI] Sign Out (Finnish)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Finnish)",
+  "nameProfilename": "[FI] Name: {name} (Finnish)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Finnish)",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Finnish)",
+  "upgradeToBusiness": "[FI] Upgrade to Business (Finnish)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Finnish)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Finnish)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Finnish)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Finnish)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Finnish)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Finnish)",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Finnish)",
+  "viewResponses": "[FI] View Responses (Finnish)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Finnish)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Finnish)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Finnish)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Finnish)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Finnish)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Finnish)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Finnish)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Finnish)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Finnish)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Finnish)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

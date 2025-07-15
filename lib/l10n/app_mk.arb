@@ -1,2862 +1,2862 @@
 {
   "@@locale": "mk",
-  "refresh": "[MK] Refresh",
+  "refresh": "[MK] [MK] Refresh",
   "@refresh": {
     "description": "Description"
   },
-  "home": "[MK] Home",
+  "home": "[MK] [MK] Home",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "[MK] No sessions yet",
+  "noSessionsYet": "[MK] [MK] No sessions yet",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "[MK] OK",
+  "ok": "[MK] [MK] OK",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "[MK] Choose your play mode:",
+  "playtimeLandingChooseMode": "[MK] [MK] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "[MK] Sign Up",
+  "signUp": "[MK] [MK] Sign Up",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "[MK] Schedule Message",
+  "scheduleMessage": "[MK] [MK] Schedule Message",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "[MK] Decline",
+  "decline": "[MK] [MK] Decline",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[MK] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "[MK] Login",
+  "login": "[MK] [MK] Login",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "[MK] Choose friends to invite",
+  "playtimeChooseFriends": "[MK] [MK] Choose friends to invite",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "[MK] No invites",
+  "noInvites": "[MK] [MK] No invites",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "[MK] Choose a time",
+  "playtimeChooseTime": "[MK] [MK] Choose a time",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "[MK] Success",
+  "success": "[MK] [MK] Success",
   "@success": {
     "description": "Description"
   },
-  "undo": "[MK] Undo",
+  "undo": "[MK] [MK] Undo",
   "@undo": {
     "description": "Description"
   },
-  "opened": "[MK] Opened",
+  "opened": "[MK] [MK] Opened",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "[MK] Create Virtual Session",
+  "createVirtualSession": "[MK] [MK] Create Virtual Session",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "[MK] Message sent successfully",
+  "messageSentSuccessfully": "[MK] [MK] Message sent successfully",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "[MK] Redo",
+  "redo": "[MK] [MK] Redo",
   "@redo": {
     "description": "Description"
   },
-  "next": "[MK] Next",
+  "next": "[MK] [MK] Next",
   "@next": {
     "description": "Description"
   },
-  "search": "[MK] Search",
+  "search": "[MK] [MK] Search",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "[MK] Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "[MK] [MK] Are you sure you want to cancel this invite?",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "[MK] Created",
+  "created": "[MK] [MK] Created",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "[MK] Revoke Access",
+  "revokeAccess": "[MK] [MK] Revoke Access",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[MK] Save Group for Recognition",
+  "saveGroupForRecognition": "[MK] [MK] Save Group for Recognition",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "[MK] Live playtime scheduled!",
+  "playtimeLiveScheduled": "[MK] [MK] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "[MK] Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "[MK] [MK] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "[MK] Download",
+  "download": "[MK] [MK] Download",
   "@download": {
     "description": "Description"
   },
-  "password": "[MK] Password",
+  "password": "[MK] [MK] Password",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "[MK] Error loading family links",
+  "errorLoadingFamilyLinks": "[MK] [MK] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "[MK] Cancel",
+  "cancel": "[MK] [MK] Cancel",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "[MK] Create",
+  "playtimeCreate": "[MK] [MK] Create",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "[MK] Failed to action privacy request",
+  "failedToActionPrivacyRequest": "[MK] [MK] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "[MK] APP-OINT",
+  "appTitle": "[MK] [MK] APP-OINT",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "[MK] Accept",
+  "accept": "[MK] [MK] Accept",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "[MK] Virtual Play",
+  "playtimeModeVirtual": "[MK] [MK] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "[MK] Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "[MK] [MK] Enjoy live or virtual games with your friends!",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "[MK] Delete",
+  "delete": "[MK] [MK] Delete",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "[MK] Virtual playtime started!",
+  "playtimeVirtualStarted": "[MK] [MK] Virtual playtime started!",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "[MK] Create your first game",
+  "createYourFirstGame": "[MK] [MK] Create your first game",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "[MK] Participants",
+  "participants": "[MK] [MK] Participants",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "[MK] Recipients",
+  "recipients": "[MK] [MK] Recipients",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "[MK] No results found",
+  "noResults": "[MK] [MK] No results found",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "[MK] Yes",
+  "yes": "[MK] [MK] Yes",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "[MK] Invite",
+  "invite": "[MK] [MK] Invite",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "[MK] Live Play",
+  "playtimeModeLive": "[MK] [MK] Live Play",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "[MK] Done",
+  "done": "[MK] [MK] Done",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "[MK] Let's meet via Appoint!",
+  "defaultShareMessage": "[MK] [MK] Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "[MK] No",
+  "no": "[MK] [MK] No",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "[MK] Playtime Hub",
+  "playtimeHub": "[MK] [MK] Playtime Hub",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "[MK] Create Live Session",
+  "createLiveSession": "[MK] [MK] Create Live Session",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "[MK] Enable Notifications",
+  "enableNotifications": "[MK] [MK] Enable Notifications",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "[MK] Invited",
+  "invited": "[MK] [MK] Invited",
   "@invited": {
     "description": "Description"
   },
-  "content": "[MK] Content",
+  "content": "[MK] [MK] Content",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "[MK] Meeting shared successfully",
+  "meetingSharedSuccessfully": "[MK] [MK] Meeting shared successfully",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "[MK] Welcome to Playtime",
+  "welcomeToPlaytime": "[MK] [MK] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "[MK] View All",
+  "viewAll": "[MK] [MK] View All",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "[MK] Virtual Play",
+  "playtimeVirtual": "[MK] [MK] Virtual Play",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "[MK] Staff screen coming soon",
+  "staffScreenTBD": "[MK] [MK] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "[MK] Cut",
+  "cut": "[MK] [MK] Cut",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "[MK] Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "[MK] [MK] Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "[MK] Retry",
+  "retry": "[MK] [MK] Retry",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "[MK] Compose Broadcast Message",
+  "composeBroadcastMessage": "[MK] [MK] Compose Broadcast Message",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "[MK] Send Now",
+  "sendNow": "[MK] [MK] Send Now",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "[MK] No games yet",
+  "noGamesYet": "[MK] [MK] No games yet",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "[MK] Select",
+  "select": "[MK] [MK] Select",
   "@select": {
     "description": "Description"
   },
-  "about": "[MK] About",
+  "about": "[MK] [MK] About",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "[MK] Choose",
+  "choose": "[MK] [MK] Choose",
   "@choose": {
     "description": "Description"
   },
-  "profile": "[MK] Profile",
+  "profile": "[MK] [MK] Profile",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "[MK] Remove Child",
+  "removeChild": "[MK] [MK] Remove Child",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "[MK] Status",
+  "status": "[MK] [MK] Status",
   "@status": {
     "description": "status description"
   },
-  "logout": "[MK] Logout",
+  "logout": "[MK] [MK] Logout",
   "@logout": {
     "description": "Description"
   },
-  "paste": "[MK] Paste",
+  "paste": "[MK] [MK] Paste",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "[MK] Welcome",
+  "welcome": "[MK] [MK] Welcome",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "[MK] Create a Playtime Session",
+  "playtimeCreateSession": "[MK] [MK] Create a Playtime Session",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "[MK] Family Members",
+  "familyMembers": "[MK] [MK] Family Members",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "[MK] Upload",
+  "upload": "[MK] [MK] Upload",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "[MK] Upcoming Sessions",
+  "upcomingSessions": "[MK] [MK] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "[MK] Enter group name",
+  "enterGroupName": "[MK] [MK] Enter group name",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "[MK] Confirm",
+  "confirm": "[MK] [MK] Confirm",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "[MK] Live Play",
+  "playtimeLive": "[MK] [MK] Live Play",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "[MK] Error loading invites",
+  "errorLoadingInvites": "[MK] [MK] Error loading invites",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "[MK] Targeting Filters",
+  "targetingFilters": "[MK] [MK] Targeting Filters",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "[MK] Pick Video",
+  "pickVideo": "[MK] [MK] Pick Video",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "[MK] Game deleted",
+  "playtimeGameDeleted": "[MK] [MK] Game deleted",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "[MK] Schedule for Later",
+  "scheduleForLater": "[MK] [MK] Schedule for Later",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "[MK] Access revoked successfully",
+  "accessRevokedSuccessfully": "[MK] [MK] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "[MK] Type",
+  "type": "[MK] [MK] Type",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "[MK] Checking permissions...",
+  "checkingPermissions": "[MK] [MK] Checking permissions...",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "[MK] Copy",
+  "copy": "[MK] [MK] Copy",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "[MK] Yes, Cancel",
+  "yesCancel": "[MK] [MK] Yes, Cancel",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "[MK] Email",
+  "email": "[MK] [MK] Email",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[MK] Share on WhatsApp",
+  "shareOnWhatsApp": "[MK] [MK] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "[MK] Notification Settings",
+  "notificationSettings": "[MK] [MK] Notification Settings",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "[MK] My Profile",
+  "myProfile": "[MK] [MK] My Profile",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "[MK] Revoke",
+  "revoke": "[MK] [MK] Revoke",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "[MK] No messages yet",
+  "noBroadcastMessages": "[MK] [MK] No messages yet",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "[MK] Request Type",
+  "requestType": "[MK] [MK] Request Type",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "[MK] Notifications",
+  "notifications": "[MK] [MK] Notifications",
   "@notifications": {
     "description": "Description"
   },
-  "details": "[MK] Details",
+  "details": "[MK] [MK] Details",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "[MK] Cancel Invite",
+  "cancelInvite": "[MK] [MK] Cancel Invite",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "[MK] Create New",
+  "createNew": "[MK] [MK] Create New",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "[MK] Settings",
+  "settings": "[MK] [MK] Settings",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "[MK] Reject",
+  "playtimeReject": "[MK] [MK] Reject",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "[MK] Error loading profile",
+  "errorLoadingProfile": "[MK] [MK] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "[MK] Edit",
+  "edit": "[MK] [MK] Edit",
   "@edit": {
     "description": "Description"
   },
-  "add": "[MK] Add",
+  "add": "[MK] [MK] Add",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "[MK] Game approved",
+  "playtimeGameApproved": "[MK] [MK] Game approved",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "[MK] Forgot Password?",
+  "forgotPassword": "[MK] [MK] Forgot Password?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "[MK] Family Dashboard",
+  "familyDashboard": "[MK] [MK] Family Dashboard",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "[MK] Loading...",
+  "loading": "[MK] [MK] Loading...",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "[MK] Quick Actions",
+  "quickActions": "[MK] [MK] Quick Actions",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "[MK] Playtime",
+  "playtimeTitle": "[MK] [MK] Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "[MK] OTP resent successfully",
+  "otpResentSuccessfully": "[MK] [MK] OTP resent successfully",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "[MK] Error checking permissions",
+  "errorCheckingPermissions": "[MK] [MK] Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "[MK] Client screen coming soon",
+  "clientScreenTBD": "[MK] [MK] Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "[MK] FCM Token",
+  "fcmToken": "[MK] [MK] FCM Token",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "[MK] Pick Image",
+  "pickImage": "[MK] [MK] Pick Image",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "[MK] Previous",
+  "previous": "[MK] [MK] Previous",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[MK] No profile found",
+  "noProfileFound": "[MK] [MK] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "[MK] No family members yet",
+  "noFamilyMembersYet": "[MK] [MK] No family members yet",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "[MK] Media (Optional)",
+  "mediaOptional": "[MK] [MK] Media (Optional)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "[MK] Message saved successfully",
+  "messageSavedSuccessfully": "[MK] [MK] Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "[MK] Scheduled for",
+  "scheduledFor": "[MK] [MK] Scheduled for",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "[MK] Dashboard",
+  "dashboard": "[MK] [MK] Dashboard",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "[MK] No permission for broadcast",
+  "noPermissionForBroadcast": "[MK] [MK] No permission for broadcast",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[MK] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "[MK] Invite Details",
+  "inviteDetail": "[MK] [MK] Invite Details",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "[MK] Scheduled",
+  "scheduled": "[MK] [MK] Scheduled",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "[MK] Failed to resend OTP",
+  "failedToResendOtp": "[MK] [MK] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "[MK] Scheduling",
+  "scheduling": "[MK] [MK] Scheduling",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "[MK] Error saving message",
+  "errorSavingMessage": "[MK] [MK] Error saving message",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "[MK] Save",
+  "save": "[MK] [MK] Save",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "[MK] Approve",
+  "playtimeApprove": "[MK] [MK] Approve",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "[MK] Create your first session",
+  "createYourFirstSession": "[MK] [MK] Create your first session",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "[MK] Game rejected",
+  "playtimeGameRejected": "[MK] [MK] Game rejected",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "[MK] Failed to revoke access",
+  "failedToRevokeAccess": "[MK] [MK] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "[MK] Recent Games",
+  "recentGames": "[MK] [MK] Recent Games",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "[MK] Customize Message",
+  "customizeMessage": "[MK] [MK] Customize Message",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "[MK] Failed to cancel invite",
+  "failedToCancelInvite": "[MK] [MK] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "[MK] Error sending message",
+  "errorSendingMessage": "[MK] [MK] Error sending message",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "[MK] Confirm Password",
+  "confirmPassword": "[MK] [MK] Confirm Password",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "[MK] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[MK] [MK] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "[MK] Connected Children",
+  "connectedChildren": "[MK] [MK] Connected Children",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "[MK] Share",
+  "share": "[MK] [MK] Share",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "[MK] Enter game name",
+  "playtimeEnterGameName": "[MK] [MK] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "[MK] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[MK] [MK] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "[MK] My Invites",
+  "myInvites": "[MK] [MK] My Invites",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "[MK] Create Game",
+  "createGame": "[MK] [MK] Create Game",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[MK] Group Name (Optional)",
+  "groupNameOptional": "[MK] [MK] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "[MK] No playtime sessions found.",
+  "playtimeNoSessions": "[MK] [MK] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[MK] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[MK] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[MK] [MK] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "[MK] Close",
+  "close": "[MK] [MK] Close",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "[MK] Known group detected",
+  "knownGroupDetected": "[MK] [MK] Known group detected",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "[MK] Back",
+  "back": "[MK] [MK] Back",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "[MK] Choose a game",
+  "playtimeChooseGame": "[MK] [MK] Choose a game",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "[MK] Manage Permissions",
+  "managePermissions": "[MK] [MK] Manage Permissions",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "[MK] Poll Options",
+  "pollOptions": "[MK] [MK] Poll Options",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "[MK] Clicked",
+  "clicked": "[MK] [MK] Clicked",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "[MK] Link",
+  "link": "[MK] [MK] Link",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "[MK] Your meeting is ready! Join now",
+  "meetingReadyMessage": "[MK] [MK] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "[MK] Pending Invites",
+  "pendingInvites": "[MK] [MK] Pending Invites",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "[MK] Status:",
+  "statusColon": "[MK] [MK] Status:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[MK] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[MK] [MK] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[MK] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[MK] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[MK] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[MK] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[MK] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[MK] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[MK] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[MK] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[MK] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[MK] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[MK] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[MK] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[MK] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[MK] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[MK] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[MK] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[MK] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[MK] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Macedonian)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Macedonian)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Macedonian)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Macedonian)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[MK] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[MK] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[MK] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[MK] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[MK] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[MK] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[MK] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[MK] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[MK] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[MK] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[MK] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[MK] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[MK] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[MK] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[MK] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[MK] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[MK] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[MK] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[MK] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[MK] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[MK] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[MK] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[MK] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[MK] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[MK] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[MK] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[MK] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[MK] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[MK] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[MK] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[MK] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[MK] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[MK] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[MK] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[MK] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[MK] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[MK] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[MK] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[MK] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[MK] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[MK] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[MK] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[MK] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[MK] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[MK] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[MK] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[MK] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[MK] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[MK] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[MK] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[MK] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[MK] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[MK] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[MK] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[MK] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[MK] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[MK] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[MK] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[MK] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[MK] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[MK] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[MK] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Macedonian)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Macedonian)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Macedonian)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Macedonian)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Macedonian)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Macedonian)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Macedonian)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Macedonian)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[MK] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Macedonian)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Macedonian)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Macedonian)",
+  "upload1": "[MK] Upload (Macedonian)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Macedonian)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Macedonian)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Virtual session created! Inviting friends... (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Macedonian)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Macedonian)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Macedonian)",
+  "rewards": "[MK] Rewards (Macedonian)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Macedonian)",
+  "time": "[MK] Time (Macedonian)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[MK] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Macedonian)",
+  "noSlots": "[MK] No slots (Macedonian)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Macedonian)",
+  "signIn": "[MK] Sign In (Macedonian)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Macedonian)",
+  "homeFeedScreen": "[MK] Home Feed Screen (Macedonian)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Macedonian)",
+  "selectLocation": "[MK] Select Location (Macedonian)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Macedonian)",
+  "noTicketsYet": "[MK] No tickets yet (Macedonian)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Macedonian)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Macedonian)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Macedonian)",
+  "subscriptionUnavailable": "[MK] Subscription unavailable (Macedonian)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Macedonian)",
+  "confirmBooking": "[MK] Confirm Booking (Macedonian)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Macedonian)",
+  "failedToUpdatePermissionE": "[MK] Failed to update permission: $e (Macedonian)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Macedonian)",
+  "reject": "[MK] Reject (Macedonian)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Ambassador Status: {ambassadorStatus} (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[MK] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Macedonian)",
+  "checkingSubscription": "[MK] Checking subscription... (Macedonian)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Macedonian)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Macedonian)",
+  "noContentAvailableYet": "[MK] No content available yet (Macedonian)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Macedonian)",
+  "resolve": "[MK] Resolve (Macedonian)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Macedonian)",
+  "errorLoadingSurveysError": "[MK] Error loading surveys: $error (Macedonian)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[MK] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Macedonian)",
+  "getHelpWithYourAccount": "[MK] Get help with your account (Macedonian)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Macedonian)",
+  "pay": "[MK] Pay (Macedonian)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[MK] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Macedonian)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Macedonian)",
+  "changesSavedSuccessfully": "[MK] Changes saved successfully! (Macedonian)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Macedonian)",
+  "createNewInvoice": "[MK] Create New Invoice (Macedonian)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Macedonian)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Macedonian)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Macedonian)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Macedonian)",
+  "profileSaved": "[MK] Profile saved! (Macedonian)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Macedonian)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Macedonian)",
+  "valuetointk": "[MK] \\${value}K (Macedonian)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Macedonian)",
+  "deleteAccount": "[MK] Delete Account (Macedonian)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Macedonian)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Macedonian)",
+  "businessOnboarding": "[MK] Business Onboarding (Macedonian)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Macedonian)",
+  "addNewClient": "[MK] Add New Client (Macedonian)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Macedonian)",
+  "darkMode": "[MK] Dark Mode (Macedonian)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[MK] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[MK] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Macedonian)",
+  "REDACTED_TOKEN": "[MK] You will receive a confirmation email shortly. (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Macedonian)",
+  "addQuestion": "[MK] Add Question (Macedonian)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Macedonian)",
+  "privacyPolicy": "[MK] Privacy Policy (Macedonian)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Macedonian)",
+  "branchesLengthBranches": "[MK] {branchCount} branches (Macedonian)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Macedonian)",
+  "join": "[MK] Join (Macedonian)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Macedonian)",
+  "businessSubscription": "[MK] Business Subscription (Macedonian)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Macedonian)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[MK] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Macedonian)",
+  "surveyManagement": "[MK] Survey Management (Macedonian)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[MK] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Macedonian)",
+  "noRoomsFoundAddYourFirstRoom": "[MK] No rooms found. Add your first room! (Macedonian)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Macedonian)",
+  "readOurPrivacyPolicy": "[MK] Read our privacy policy (Macedonian)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Macedonian)",
+  "couldNotOpenPrivacyPolicy": "[MK] Could not open privacy policy (Macedonian)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Macedonian)",
+  "refresh1": "[MK] Refresh (Macedonian)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Macedonian)",
+  "roomUpdatedSuccessfully": "[MK] Room updated successfully! (Macedonian)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Macedonian)",
+  "contentDetail": "[MK] Content Detail (Macedonian)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Macedonian)",
+  "cancelSubscription": "[MK] Cancel Subscription (Macedonian)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Successfully registered as Ambassador! (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Macedonian)",
+  "save1": "[MK] Save (Macedonian)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Macedonian)",
+  "copy1": "[MK] Copy (Macedonian)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Macedonian)",
+  "failedToSendInvitationE": "[MK] Failed to send invitation: $e (Macedonian)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Macedonian)",
+  "surveyScore": "[MK] Survey Score (Macedonian)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[MK] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Macedonian)",
+  "noAppointmentsFound": "[MK] No appointments found. (Macedonian)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Macedonian)",
+  "responseDetail": "[MK] Response Detail (Macedonian)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Macedonian)",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Macedonian)",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Macedonian)",
+  "failedToStartProSubscriptionE": "[MK] Failed to start Pro subscription: $e (Macedonian)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Business Dashboard Entry Screen - Coming Soon (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Macedonian)",
+  "contentFilter": "[MK] Content Filter (Macedonian)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Macedonian)",
+  "helpSupport": "[MK] Help & Support (Macedonian)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Macedonian)",
+  "editRoom": "[MK] Edit Room (Macedonian)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[MK] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[MK] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Business CRM Entry Screen - Coming Soon (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[MK] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[MK] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Macedonian)",
+  "errorLoadingDashboardError": "[MK] Error loading dashboard: $error (Macedonian)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Macedonian)",
+  "gameDeletedSuccessfully": "[MK] Game deleted successfully! (Macedonian)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Macedonian)",
+  "viewResponsesComingSoon": "[MK] View responses - Coming soon! (Macedonian)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[MK] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Macedonian)",
+  "errorLoadingRewards": "[MK] Error loading rewards (Macedonian)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Macedonian)",
+  "failedToDeleteAccountE": "[MK] Failed to delete account: $e (Macedonian)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Macedonian)",
+  "invited1": "[MK] Invited (Macedonian)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Macedonian)",
+  "noBranchesAvailable": "[MK] No branches available (Macedonian)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Macedonian)",
+  "errorError": "[MK] Error: $error (Macedonian)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Macedonian)",
+  "noEvents": "[MK] No events (Macedonian)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Macedonian)",
+  "gameCreatedSuccessfully": "[MK] Game created successfully! (Macedonian)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Macedonian)",
+  "add1": "[MK] Add (Macedonian)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[MK] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Macedonian)",
+  "eventstarttimeEventendtime": "[MK] {startTime} - {endTime} (Macedonian)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Macedonian)",
+  "allowPlaytime": "[MK] Allow Playtime (Macedonian)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Macedonian)",
+  "clients": "[MK] Clients (Macedonian)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Macedonian)",
+  "noAmbassadorDataAvailable": "[MK] No ambassador data available (Macedonian)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Macedonian)",
+  "backgroundDeletedSuccessfully": "[MK] Background deleted successfully! (Macedonian)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Macedonian)",
+  "errorSnapshoterror": "[MK] Error: {error} (Macedonian)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Macedonian)",
+  "noAnalyticsDataAvailableYet": "[MK] No analytics data available yet. (Macedonian)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Macedonian)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Business Phone Booking Entry Screen - Coming Soon (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Macedonian)",
+  "verification": "[MK] Verification (Macedonian)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Macedonian)",
+  "copyLink": "[MK] Copy Link (Macedonian)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Macedonian)",
+  "dashboard1": "[MK] Dashboard (Macedonian)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Macedonian)",
+  "manageChildAccounts": "[MK] Manage Child Accounts (Macedonian)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Macedonian)",
+  "grantConsent": "[MK] Grant Consent (Macedonian)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Macedonian)",
+  "myProfile1": "[MK] My Profile (Macedonian)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Macedonian)",
+  "submit": "[MK] Submit (Macedonian)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[MK] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Macedonian)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Macedonian)",
+  "ambassadorDashboard": "[MK] Ambassador Dashboard (Macedonian)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Macedonian)",
+  "phoneBooking": "[MK] Phone Booking (Macedonian)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Macedonian)",
+  "bookViaChat": "[MK] Book via Chat (Macedonian)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "[MK] Error",
+  "error": "[MK] [MK] Error",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Macedonian)",
+  "businessProfile": "[MK] Business Profile (Macedonian)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Business Booking Entry Screen - Coming Soon (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Macedonian)",
+  "createNewSurvey": "[MK] Create New Survey (Macedonian)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Macedonian)",
+  "backgroundRejected": "[MK] Background rejected (Macedonian)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Macedonian)",
+  "noMediaSelected": "[MK] No media selected (Macedonian)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Macedonian)",
+  "syncToGoogle": "[MK] Sync to Google (Macedonian)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Macedonian)",
+  "virtualPlaytime": "[MK] Virtual Playtime (Macedonian)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[MK] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[MK] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Macedonian)",
+  "invitationSentSuccessfully": "[MK] Invitation sent successfully! (Macedonian)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Macedonian)",
+  "registering": "[MK] Registering... (Macedonian)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Macedonian)",
+  "statusAppointmentstatusname": "[MK] Status: {status} (Macedonian)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Macedonian)",
+  "home1": "[MK] Home (Macedonian)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Macedonian)",
+  "errorSavingSettingsE": "[MK] Error saving settings: $e (Macedonian)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Macedonian)",
+  "appVersionAndInformation": "[MK] App version and information (Macedonian)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Business Subscription Entry Screen - Coming Soon (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Macedonian)",
+  "ekeyEvalue": "[MK] {key}: {value} (Macedonian)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Your payment has been processed successfully. (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Macedonian)",
+  "errorE": "[MK] Error: $e (Macedonian)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Macedonian)",
+  "viewAll1": "[MK] View All (Macedonian)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Macedonian)",
+  "editSurveyComingSoon": "[MK] Edit survey - Coming soon! (Macedonian)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Macedonian)",
+  "enterOtp": "[MK] Enter OTP (Macedonian)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Macedonian)",
+  "payment": "[MK] Payment (Macedonian)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Automatically confirm new booking requests (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Macedonian)",
+  "noRouteDefinedForSettingsname": "[MK] No route defined for {settingsName} (Macedonian)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Macedonian)",
+  "pleaseSignInToUploadABackground": "[MK] Please sign in to upload a background (Macedonian)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[MK] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Macedonian)",
+  "staffAvailability": "[MK] Staff Availability (Macedonian)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Macedonian)",
+  "livePlaytime": "[MK] Live Playtime (Macedonian)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Macedonian)",
+  "autoconfirmBookings": "[MK] Auto-Confirm Bookings (Macedonian)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Redirecting to Stripe checkout for Pro plan... (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Macedonian)",
+  "exportAsCsv": "[MK] Export as CSV (Macedonian)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Macedonian)",
+  "deleteFunctionalityComingSoon": "[MK] Delete functionality coming soon! (Macedonian)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Macedonian)",
+  "editClient": "[MK] Edit Client (Macedonian)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Are you sure you want to delete this message? (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Macedonian)",
+  "referralsAmbassadorreferrals": "[MK] Referrals: {referrals} (Macedonian)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[MK] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Macedonian)",
+  "privacyRequestSentToYourParents": "[MK] Privacy request sent to your parents! (Macedonian)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Macedonian)",
+  "clientDeletedSuccessfully": "[MK] Client deleted successfully! (Macedonian)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Macedonian)",
+  "failedToCancelSubscription": "[MK] Failed to cancel subscription (Macedonian)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Macedonian)",
+  "allLanguages": "[MK] All Languages (Macedonian)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Macedonian)",
+  "slotDeletedSuccessfully": "[MK] Slot deleted successfully (Macedonian)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[MK] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Parents must approve before children can join (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Macedonian)",
+  "subscribeToPro1499mo": "[MK] Subscribe to Pro (€14.99/mo) (Macedonian)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Business Availability Entry Screen - Coming Soon (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Macedonian)",
+  "appointmentsListlength": "[MK] Appointments: {count} (Macedonian)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Macedonian)",
+  "clearFilters": "[MK] Clear Filters (Macedonian)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Macedonian)",
+  "submitBooking": "[MK] Submit Booking (Macedonian)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Are you sure you want to cancel this appointment? (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Macedonian)",
+  "noUpcomingBookings": "[MK] No upcoming bookings (Macedonian)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Macedonian)",
+  "goBack": "[MK] Go Back (Macedonian)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Macedonian)",
+  "setup": "[MK] Setup (Macedonian)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Macedonian)",
+  "inviteChild": "[MK] Invite Child (Macedonian)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Macedonian)",
+  "goToDashboard": "[MK] Go to Dashboard (Macedonian)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Macedonian)",
+  "ambassadorQuotaDashboard": "[MK] Ambassador Quota Dashboard (Macedonian)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[MK] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Macedonian)",
+  "referralCode": "[MK] Referral Code (Macedonian)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[MK] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Macedonian)",
+  "date": "[MK] Date (Macedonian)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Macedonian)",
+  "readOnly": "[MK] Read Only (Macedonian)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Macedonian)",
+  "bookingRequest": "[MK] Booking Request (Macedonian)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Macedonian)",
+  "advancedReporting": "[MK] • Advanced reporting (Macedonian)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Macedonian)",
+  "rooms": "[MK] Rooms (Macedonian)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Macedonian)",
+  "copiedToClipboard": "[MK] Copied to clipboard (Macedonian)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Macedonian)",
+  "bookingConfirmed": "[MK] Booking Confirmed (Macedonian)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Macedonian)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Macedonian)",
+  "clientAddedSuccessfully": "[MK] Client added successfully! (Macedonian)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Macedonian)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Macedonian)",
+  "backgroundApproved": "[MK] Background approved! (Macedonian)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Macedonian)",
+  "familySupport": "[MK] Family Support (Macedonian)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Macedonian)",
+  "deletingAccount": "[MK] Deleting account... (Macedonian)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Macedonian)",
+  "bookAppointment": "[MK] Book Appointment (Macedonian)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Macedonian)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Macedonian)",
+  "delete1": "[MK] Delete (Macedonian)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Macedonian)",
+  "sendBookingInvite": "[MK] Send Booking Invite (Macedonian)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Macedonian)",
+  "text": "[MK] Text (Macedonian)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Macedonian)",
+  "manageSubscription": "[MK] Manage Subscription (Macedonian)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Macedonian)",
+  "requiresInstallFallback": "[MK] Requires Install Fallback (Macedonian)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Macedonian)",
+  "paymentConfirmation": "[MK] Payment Confirmation (Macedonian)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Macedonian)",
+  "promoAppliedYourNextBillIsFree": "[MK] Promo applied! Your next bill is free. (Macedonian)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Macedonian)",
+  "errorLoadingSlots": "[MK] Error loading slots (Macedonian)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Allow other users to find and join this game (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Business Onboarding Screen - Coming Soon (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Macedonian)",
+  "activateBusinessProfile": "[MK] Activate Business Profile (Macedonian)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Macedonian)",
+  "contentNotFound": "[MK] Content not found (Macedonian)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Macedonian)",
+  "pspecialtynpcontactinfo": "[MK] {specialty}\\n{contactInfo} (Macedonian)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Macedonian)",
+  "rating": "[MK] Rating (Macedonian)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Macedonian)",
+  "messages": "[MK] Messages (Macedonian)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Macedonian)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Macedonian)",
+  "becomeAnAmbassador": "[MK] Become an Ambassador (Macedonian)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Macedonian)",
+  "subscribeNow": "[MK] Subscribe Now (Macedonian)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Macedonian)",
+  "timeArgsslotformatcontext": "[MK] Time: {time} (Macedonian)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Macedonian)",
+  "shareViaWhatsapp": "[MK] Share via WhatsApp (Macedonian)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Macedonian)",
+  "users1": "[MK] Users (Macedonian)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Macedonian)",
+  "shareLink": "[MK] Share Link (Macedonian)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[MK] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Macedonian)",
+  "deleteAppointment": "[MK] Delete Appointment (Macedonian)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Macedonian)",
+  "toggleAvailability": "[MK] Toggle Availability (Macedonian)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Macedonian)",
+  "changePlan": "[MK] Change Plan (Macedonian)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Macedonian)",
+  "errorLoadingStaff": "[MK] Error loading staff (Macedonian)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Macedonian)",
+  "updateYourBusinessInformation": "[MK] Update your business information (Macedonian)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[MK] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Macedonian)",
+  "parentDashboard": "[MK] Parent Dashboard (Macedonian)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Macedonian)",
+  "menu": "[MK] Menu (Macedonian)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Macedonian)",
+  "studioBooking": "[MK] Studio Booking (Macedonian)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Macedonian)",
+  "about1": "[MK] About (Macedonian)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Macedonian)",
+  "multipleChoice": "[MK] Multiple Choice (Macedonian)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Date: {date} (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Studio booking is only available on web (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Macedonian)",
+  "errorLoadingBranchesE": "[MK] Error loading branches: $e (Macedonian)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Macedonian)",
+  "REDACTED_TOKEN": "[MK] \\uD83D\\uDCC5 {dateTime} (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Macedonian)",
+  "none": "[MK] None (Macedonian)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Macedonian)",
+  "failedToUpdateConsentE": "[MK] Failed to update consent: $e (Macedonian)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Macedonian)",
+  "welcome1": "[MK] Welcome (Macedonian)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Macedonian)",
+  "failedToCreateSessionE": "[MK] Failed to create session: $e (Macedonian)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Macedonian)",
+  "inviteContact": "[MK] Invite Contact (Macedonian)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Macedonian)",
+  "surveyEditor": "[MK] Survey Editor (Macedonian)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Macedonian)",
+  "failedToStartBasicSubscriptionE": "[MK] Failed to start Basic subscription: $e (Macedonian)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Macedonian)",
+  "mySchedule": "[MK] My Schedule (Macedonian)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Macedonian)",
+  "studioDashboard": "[MK] Studio Dashboard (Macedonian)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Macedonian)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[MK] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[MK] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Macedonian)",
+  "settingsSavedSuccessfully": "[MK] Settings saved successfully! (Macedonian)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Macedonian)",
+  "linkCopiedToClipboard": "[MK] Link copied to clipboard! (Macedonian)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Macedonian)",
+  "accept1": "[MK] Accept (Macedonian)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Macedonian)",
+  "noAvailableSlots": "[MK] No available slots (Macedonian)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Macedonian)",
+  "makeGamePublic": "[MK] Make Game Public (Macedonian)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Permission {category} updated to $newValue (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Macedonian)",
+  "roomDeletedSuccessfully": "[MK] Room deleted successfully! (Macedonian)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Macedonian)",
+  "businessCalendar": "[MK] Business Calendar (Macedonian)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Macedonian)",
+  "addAvailability": "[MK] Add Availability (Macedonian)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Macedonian)",
+  "ambassadorOnboarding": "[MK] Ambassador Onboarding (Macedonian)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Macedonian)",
+  "phoneProfileasyncphone": "[MK] Phone: {phone} (Macedonian)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Macedonian)",
+  "addNewRoom": "[MK] Add New Room (Macedonian)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Macedonian)",
+  "requireParentApproval": "[MK] Require Parent Approval (Macedonian)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Macedonian)",
+  "closed": "[MK] Closed (Macedonian)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Macedonian)",
+  "exportAsPdf": "[MK] Export as PDF (Macedonian)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Macedonian)",
+  "enableVibration": "[MK] Enable Vibration (Macedonian)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Macedonian)",
+  "toAvailendformatcontext": "[MK] To: {endTime} (Macedonian)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Macedonian)",
+  "yourUpgradeCodeUpgradecode": "[MK] Your upgrade code: $upgradeCode (Macedonian)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[MK] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Macedonian)",
+  "country": "[MK] Country (Macedonian)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[MK] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Macedonian)",
+  "staffArgsstaffdisplayname": "[MK] Staff: {staffName} (Macedonian)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Macedonian)",
+  "revokeConsent": "[MK] Revoke Consent (Macedonian)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Macedonian)",
+  "settings1": "[MK] Settings (Macedonian)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Macedonian)",
+  "cancel1": "[MK] Cancel (Macedonian)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Subscription activated successfully! (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[MK] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Macedonian)",
+  "broadcast": "[MK] Broadcast (Macedonian)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Macedonian)",
+  "noEventsScheduledThisWeek": "[MK] No events scheduled this week (Macedonian)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Macedonian)",
+  "googleCalendar": "[MK] Google Calendar (Macedonian)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Macedonian)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Macedonian)",
+  "childDashboard": "[MK] Child Dashboard (Macedonian)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Macedonian)",
+  "failedToUploadBackgroundE": "[MK] Failed to upload background: $e (Macedonian)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[MK] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[MK] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[MK] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Macedonian)",
+  "noAppointments": "[MK] No appointments (Macedonian)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Macedonian)",
+  "unlimitedBookingsPerWeek": "[MK] • Unlimited bookings per week (Macedonian)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Macedonian)",
+  "scheduledAtScheduledat": "[MK] Scheduled at: $scheduledAt (Macedonian)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Macedonian)",
+  "selectStaff": "[MK] Select Staff (Macedonian)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Subscription cancelled successfully (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Macedonian)",
+  "cancelAppointment": "[MK] Cancel Appointment (Macedonian)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[MK] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Macedonian)",
+  "businessSignup": "[MK] Business Signup (Macedonian)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Business Completion Screen - Coming Soon (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Macedonian)",
+  "createGame1": "[MK] Create Game (Macedonian)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Macedonian)",
+  "valuetoint": "[MK] {value} (Macedonian)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Macedonian)",
+  "pleaseEnterAPromoCode": "[MK] Please enter a promo code (Macedonian)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Macedonian)",
+  "errorLoadingAvailabilityE": "[MK] Error loading availability: $e (Macedonian)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Macedonian)",
+  "parentalControls": "[MK] Parental Controls (Macedonian)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Macedonian)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Macedonian)",
+  "childLinkedSuccessfully": "[MK] Child linked successfully! (Macedonian)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Macedonian)",
+  "create": "[MK] Create (Macedonian)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Macedonian)",
+  "noExternalMeetingsFound": "[MK] No external meetings found. (Macedonian)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Macedonian)",
+  "staffSelectionstaffdisplayname": "[MK] Staff: {staffName} (Macedonian)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[MK] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Macedonian)",
+  "schedulerScreen": "[MK] Scheduler Screen (Macedonian)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Macedonian)",
+  "clientUpdatedSuccessfully": "[MK] Client updated successfully! (Macedonian)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Macedonian)",
+  "surveyResponses": "[MK] Survey Responses (Macedonian)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Macedonian)",
+  "syncToOutlook": "[MK] Sync to Outlook (Macedonian)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Macedonian)",
+  "saveChanges": "[MK] Save Changes (Macedonian)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Macedonian)",
+  "pickTime": "[MK] Pick Time (Macedonian)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Macedonian)",
+  "registrationFailedEtostring": "[MK] Registration failed: {error} (Macedonian)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Macedonian)",
+  "analytics": "[MK] Analytics (Macedonian)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Macedonian)",
+  "errorLoadingEvents": "[MK] Error loading events (Macedonian)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[MK] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[MK] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Macedonian)",
+  "success1": "[MK] Success (Macedonian)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[MK] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Macedonian)",
+  "fromAvailstartformatcontext": "[MK] From: {startTime} (Macedonian)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Macedonian)",
+  "readWrite": "[MK] Read & Write (Macedonian)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Redirecting to Stripe checkout for Basic plan... (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[MK] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Macedonian)",
+  "pickDate": "[MK] Pick Date (Macedonian)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Macedonian)",
+  "chatBooking": "[MK] Chat Booking (Macedonian)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Macedonian)",
+  "noQuestionsAdded": "[MK] No questions added (Macedonian)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[MK] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[MK] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Macedonian)",
+  "typeOpenCall": "[MK] Type: Open Call (Macedonian)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[MK] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[MK] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Macedonian)",
+  "invoiceCreatedSuccessfully": "[MK] Invoice created successfully! (Macedonian)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Macedonian)",
+  "noTimeSeriesDataAvailable": "[MK] No time series data available (Macedonian)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[MK] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[MK] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Macedonian)",
+  "failedToSendPrivacyRequestE": "[MK] Failed to send privacy request: $e (Macedonian)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Macedonian)",
+  "chooseYourPlan": "[MK] Choose Your Plan (Macedonian)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Macedonian)",
+  "playtimeManagement": "[MK] Playtime Management (Macedonian)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Macedonian)",
+  "availability": "[MK] Availability (Macedonian)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Macedonian)",
+  "eventCreated": "[MK] Event created (Macedonian)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Macedonian)",
+  "subscribeToBasic499mo": "[MK] Subscribe to Basic (€4.99/mo) (Macedonian)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Macedonian)",
+  "completion": "[MK] Completion (Macedonian)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Macedonian)",
+  "supportTicketSubmitted": "[MK] Support ticket submitted (Macedonian)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Macedonian)",
+  "monetizationSettings": "[MK] Monetization Settings (Macedonian)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Macedonian)",
+  "noBookingsFound": "[MK] No bookings found (Macedonian)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[MK] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Macedonian)",
+  "deleteSurvey": "[MK] Delete Survey (Macedonian)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Macedonian)",
+  "gameApprovedSuccessfully": "[MK] Game approved successfully! (Macedonian)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Macedonian)",
+  "errorLoadingPermissionsError": "[MK] Error loading permissions: $error (Macedonian)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Macedonian)",
+  "referrals": "[MK] Referrals (Macedonian)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Macedonian)",
+  "crm": "[MK] CRM (Macedonian)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Macedonian)",
+  "gameRejected": "[MK] Game rejected (Macedonian)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Macedonian)",
+  "appointments": "[MK] Appointments (Macedonian)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Macedonian)",
+  "onboardingScreen": "[MK] Onboarding Screen (Macedonian)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Macedonian)",
+  "welcomeToYourStudio": "[MK] Welcome to your studio (Macedonian)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Macedonian)",
+  "update": "[MK] Update (Macedonian)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Macedonian)",
+  "retry1": "[MK] Retry (Macedonian)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Macedonian)",
+  "booking": "[MK] Booking (Macedonian)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Macedonian)",
+  "parentalSettings": "[MK] Parental Settings (Macedonian)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Macedonian)",
+  "language": "[MK] Language (Macedonian)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Macedonian)",
+  "deleteSlot": "[MK] Delete Slot (Macedonian)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[MK] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[MK] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Macedonian)",
+  "createNewGame": "[MK] Create New Game (Macedonian)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Macedonian)",
+  "next1": "[MK] Next (Macedonian)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Macedonian)",
+  "backgroundUploadedSuccessfully": "[MK] Background uploaded successfully! (Macedonian)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Macedonian)",
+  "noAppointmentRequestsFound": "[MK] No appointment requests found. (Macedonian)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Macedonian)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Macedonian)",
+  "restrictMatureContent": "[MK] Restrict mature content (Macedonian)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Macedonian)",
+  "ambassadors": "[MK] Ambassadors (Macedonian)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Macedonian)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Macedonian)",
+  "paymentWasCancelled": "[MK] Payment was cancelled (Macedonian)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Macedonian)",
+  "clearAll": "[MK] Clear All (Macedonian)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Macedonian)",
+  "viewDetails": "[MK] View Details (Macedonian)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Macedonian)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Macedonian)",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Macedonian)",
+  "failedToCreateGameE": "[MK] Failed to create game: $e (Macedonian)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Macedonian)",
+  "noChartDataAvailable": "[MK] No chart data available (Macedonian)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Macedonian)",
+  "phonebasedBookingSystem": "[MK] • Phone-based booking system (Macedonian)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Macedonian)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Macedonian)",
+  "invoices": "[MK] Invoices (Macedonian)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Macedonian)",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Macedonian)",
+  "scheduledAtArgsscheduledat": "[MK] Scheduled at: {scheduledAt} (Macedonian)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Duration: {duration} minutes (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Macedonian)",
+  "tryAgain": "[MK] Try Again (Macedonian)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Macedonian)",
+  "deleteBackground": "[MK] Delete Background (Macedonian)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Macedonian)",
+  "currentTierTiertouppercase": "[MK] Current Tier: {tier} (Macedonian)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[MK] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Macedonian)",
+  "REDACTED_TOKEN": "[MK] No clients found. Add your first client! (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[MK] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[MK] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Macedonian)",
+  "appointmentRequests": "[MK] Appointment Requests (Macedonian)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Macedonian)",
+  "forward": "[MK] Forward (Macedonian)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Macedonian)",
+  "roomAddedSuccessfully": "[MK] Room added successfully! (Macedonian)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Macedonian)",
+  "option": "[MK] • $option (Macedonian)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Macedonian)",
+  "responseIndex1": "[MK] Response #{number} (Macedonian)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Macedonian)",
+  "crmDashboardWithAnalytics": "[MK] • CRM dashboard with analytics (Macedonian)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Macedonian)",
+  "contentLibrary1": "[MK] Content Library (Macedonian)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Macedonian)",
+  "reply": "[MK] Reply (Macedonian)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Macedonian)",
+  "subscriptionManagement": "[MK] Subscription Management (Macedonian)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Monetization settings will be implemented here (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Macedonian)",
+  "failedToApplyPromoCodeE": "[MK] Failed to apply promo code: $e (Macedonian)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[MK] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Macedonian)",
+  "localizationContribution": "[MK] Localization Contribution (Macedonian)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Macedonian)",
+  "parentalConsent": "[MK] Parental Consent (Macedonian)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Macedonian)",
+  "businessSignupScreenComingSoon": "[MK] Business Signup Screen - Coming Soon (Macedonian)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Macedonian)",
+  "REDACTED_TOKEN": "[MK] Are you sure you want to delete this appointment? (Macedonian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Macedonian)",
+  "syncAppointment": "[MK] Sync Appointment (Macedonian)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Macedonian)",
+  "iConsent": "[MK] I Consent (Macedonian)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Macedonian)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Macedonian)",
+  "businessSetupScreenComingSoon": "[MK] Business Setup Screen - Coming Soon (Macedonian)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Macedonian)",
+  "edit1": "[MK] Edit (Macedonian)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Macedonian)",
+  "noEventsScheduledThisMonth": "[MK] No events scheduled this month (Macedonian)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Macedonian)",
+  "businessDashboard": "[MK] Business Dashboard (Macedonian)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Macedonian)",
+  "noMessagesFound": "[MK] No messages found. (Macedonian)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[MK] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Macedonian)",
+  "manageStaffAvailability": "[MK] Manage Staff Availability (Macedonian)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Macedonian)",
+  "noMissingTranslations": "[MK] No missing translations (Macedonian)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Macedonian)",
+  "skip": "[MK] Skip (Macedonian)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[MK] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Macedonian)",
+  "errorLoadingReferralCode": "[MK] Error loading referral code (Macedonian)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Macedonian)",
+  "allCountries": "[MK] All Countries (Macedonian)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Macedonian)",
+  "deleteGame": "[MK] Delete Game (Macedonian)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Macedonian)",
+  "staffManagementTools": "[MK] • Staff management tools (Macedonian)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Macedonian)",
+  "deleteMessage": "[MK] Delete Message (Macedonian)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Macedonian)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[MK] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Macedonian)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Macedonian)",
+  "openingCustomerPortal": "[MK] Opening customer portal... (Macedonian)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Macedonian)",
+  "signOut": "[MK] Sign Out (Macedonian)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Macedonian)",
+  "nameProfilename": "[MK] Name: {name} (Macedonian)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Macedonian)",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Macedonian)",
+  "upgradeToBusiness": "[MK] Upgrade to Business (Macedonian)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Macedonian)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Macedonian)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Macedonian)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Macedonian)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Macedonian)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Macedonian)",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Macedonian)",
+  "viewResponses": "[MK] View Responses (Macedonian)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Macedonian)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Macedonian)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Macedonian)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Macedonian)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Macedonian)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Macedonian)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Macedonian)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Macedonian)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Macedonian)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Macedonian)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

@@ -1,2862 +1,2862 @@
 {
   "@@locale": "is",
-  "refresh": "Endurnýja",
+  "refresh": "[IS] Endurnýja",
   "@refresh": {
     "description": "Description"
   },
-  "home": "Heim",
+  "home": "[IS] Heim",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "Engar lotur enn",
+  "noSessionsYet": "[IS] Engar lotur enn",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "Í lagi",
+  "ok": "[IS] Í lagi",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "[IS] Choose your play mode:",
+  "playtimeLandingChooseMode": "[IS] [IS] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "Skráðu þig",
+  "signUp": "[IS] Skráðu þig",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "Skipuleggðu skilaboð",
+  "scheduleMessage": "[IS] Skipuleggðu skilaboð",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "Hafna",
+  "decline": "[IS] Hafna",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[IS] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "[IS] Login",
+  "login": "[IS] [IS] Login",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "[IS] Choose friends to invite",
+  "playtimeChooseFriends": "[IS] [IS] Choose friends to invite",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "Engar boðskrár",
+  "noInvites": "[IS] Engar boðskrár",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "Veldu tíma",
+  "playtimeChooseTime": "[IS] Veldu tíma",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "Tókst",
+  "success": "[IS] Tókst",
   "@success": {
     "description": "Description"
   },
-  "undo": "Afturkalla",
+  "undo": "[IS] Afturkalla",
   "@undo": {
     "description": "Description"
   },
-  "opened": "Opnað",
+  "opened": "[IS] Opnað",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "Búðu til sýndarlotu",
+  "createVirtualSession": "[IS] Búðu til sýndarlotu",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "Skilaboð send með góðum árangri",
+  "messageSentSuccessfully": "[IS] Skilaboð send með góðum árangri",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "Endurtaka",
+  "redo": "[IS] Endurtaka",
   "@redo": {
     "description": "Description"
   },
-  "next": "Næsta",
+  "next": "[IS] Næsta",
   "@next": {
     "description": "Description"
   },
-  "search": "Leita",
+  "search": "[IS] Leita",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "[IS] Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "[IS] [IS] Are you sure you want to cancel this invite?",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "Búið til",
+  "created": "[IS] Búið til",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "Afturkalla aðgang",
+  "revokeAccess": "[IS] Afturkalla aðgang",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[IS] Save Group for Recognition",
+  "saveGroupForRecognition": "[IS] [IS] Save Group for Recognition",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "[IS] Live playtime scheduled!",
+  "playtimeLiveScheduled": "[IS] [IS] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "Staðfesta afturköllun aðgangs",
+  "revokeAccessConfirmation": "[IS] Staðfesta afturköllun aðgangs",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "Sækja",
+  "download": "[IS] Sækja",
   "@download": {
     "description": "Description"
   },
-  "password": "[IS] Password",
+  "password": "[IS] [IS] Password",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "[IS] Error loading family links",
+  "errorLoadingFamilyLinks": "[IS] [IS] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "Hætta við",
+  "cancel": "[IS] Hætta við",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "Búðu til Playtime",
+  "playtimeCreate": "[IS] Búðu til Playtime",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "Misheppnað við að meðhöndla persónuverndarósk",
+  "failedToActionPrivacyRequest": "[IS] Misheppnað við að meðhöndla persónuverndarósk",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "[IS] APP-OINT",
+  "appTitle": "[IS] [IS] APP-OINT",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "Samþykkja",
+  "accept": "[IS] Samþykkja",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "[IS] Virtual Play",
+  "playtimeModeVirtual": "[IS] [IS] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "[IS] Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "[IS] [IS] Enjoy live or virtual games with your friends!",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "Eyða",
+  "delete": "[IS] Eyða",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "[IS] Virtual playtime started!",
+  "playtimeVirtualStarted": "[IS] [IS] Virtual playtime started!",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "Búðu til fyrstu leik",
+  "createYourFirstGame": "[IS] Búðu til fyrstu leik",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "Þátttakendur",
+  "participants": "[IS] Þátttakendur",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "Móttakendur",
+  "recipients": "[IS] Móttakendur",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "[IS] No results found",
+  "noResults": "[IS] [IS] No results found",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "Já",
+  "yes": "[IS] Já",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "Bjóða",
+  "invite": "[IS] Bjóða",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "[IS] Live Play",
+  "playtimeModeLive": "[IS] [IS] Live Play",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "Lokið",
+  "done": "[IS] Lokið",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "Sjálfgefið hlutdeildarskilaboð",
+  "defaultShareMessage": "[IS] Sjálfgefið hlutdeildarskilaboð",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "Nei",
+  "no": "[IS] Nei",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "Playtime miðstöð",
+  "playtimeHub": "[IS] Playtime miðstöð",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "[IS] Create Live Session",
+  "createLiveSession": "[IS] [IS] Create Live Session",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "[IS] Enable Notifications",
+  "enableNotifications": "[IS] [IS] Enable Notifications",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "Boðið",
+  "invited": "[IS] Boðið",
   "@invited": {
     "description": "Description"
   },
-  "content": "[IS] Content",
+  "content": "[IS] [IS] Content",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "Fundur deildur með góðum árangri",
+  "meetingSharedSuccessfully": "[IS] Fundur deildur með góðum árangri",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "[IS] Welcome to Playtime",
+  "welcomeToPlaytime": "[IS] [IS] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "Skoða allt",
+  "viewAll": "[IS] Skoða allt",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "Sýndar Playtime",
+  "playtimeVirtual": "[IS] Sýndar Playtime",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "[IS] Staff screen coming soon",
+  "staffScreenTBD": "[IS] [IS] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "Skerða",
+  "cut": "[IS] Skerða",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "Bið fyrir afturköllun boðs tókst",
+  "inviteCancelledSuccessfully": "[IS] Bið fyrir afturköllun boðs tókst",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "Reyna aftur",
+  "retry": "[IS] Reyna aftur",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "[IS] Compose Broadcast Message",
+  "composeBroadcastMessage": "[IS] [IS] Compose Broadcast Message",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "Senda núna",
+  "sendNow": "[IS] Senda núna",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "Engir leikir enn",
+  "noGamesYet": "[IS] Engir leikir enn",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "Velja",
+  "select": "[IS] Velja",
   "@select": {
     "description": "Description"
   },
-  "about": "Um",
+  "about": "[IS] Um",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Veldu",
+  "choose": "[IS] Veldu",
   "@choose": {
     "description": "Description"
   },
-  "profile": "Aðgangur",
+  "profile": "[IS] Aðgangur",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "Fjarlægja barn",
+  "removeChild": "[IS] Fjarlægja barn",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "Staða",
+  "status": "[IS] Staða",
   "@status": {
     "description": "status description"
   },
-  "logout": "Skrá út",
+  "logout": "[IS] Skrá út",
   "@logout": {
     "description": "Description"
   },
-  "paste": "[IS] Paste",
+  "paste": "[IS] [IS] Paste",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "[IS] Welcome",
+  "welcome": "[IS] [IS] Welcome",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "Búðu til lotu",
+  "playtimeCreateSession": "[IS] Búðu til lotu",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "Fjölskyldumeðlimir",
+  "familyMembers": "[IS] Fjölskyldumeðlimir",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "Hlaða upp",
+  "upload": "[IS] Hlaða upp",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "[IS] Upcoming Sessions",
+  "upcomingSessions": "[IS] [IS] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "[IS] Enter group name",
+  "enterGroupName": "[IS] [IS] Enter group name",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "Staðfesta",
+  "confirm": "[IS] Staðfesta",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "[IS] Live Play",
+  "playtimeLive": "[IS] [IS] Live Play",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "Villa við að hlaða boð",
+  "errorLoadingInvites": "[IS] Villa við að hlaða boð",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "Markmiðssíur",
+  "targetingFilters": "[IS] Markmiðssíur",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "[IS] Pick Video",
+  "pickVideo": "[IS] [IS] Pick Video",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "Leikur eytt",
+  "playtimeGameDeleted": "[IS] Leikur eytt",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "[IS] Schedule for Later",
+  "scheduleForLater": "[IS] [IS] Schedule for Later",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "Aðgangur afturkallaður með góðum árangri",
+  "accessRevokedSuccessfully": "[IS] Aðgangur afturkallaður með góðum árangri",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "Tegund",
+  "type": "[IS] Tegund",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "[IS] Checking permissions...",
+  "checkingPermissions": "[IS] [IS] Checking permissions...",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "Afrita",
+  "copy": "[IS] Afrita",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "Já, hætta við",
+  "yesCancel": "[IS] Já, hætta við",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "Tölvupóstur",
+  "email": "[IS] Tölvupóstur",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[IS] Share on WhatsApp",
+  "shareOnWhatsApp": "[IS] [IS] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "[IS] Notification Settings",
+  "notificationSettings": "[IS] [IS] Notification Settings",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "Mín prófíl",
+  "myProfile": "[IS] Mín prófíl",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "Afturkalla",
+  "revoke": "[IS] Afturkalla",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "[IS] No messages yet",
+  "noBroadcastMessages": "[IS] [IS] No messages yet",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "Tegund fyrirspurnar",
+  "requestType": "[IS] Tegund fyrirspurnar",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "[IS] Notifications",
+  "notifications": "[IS] [IS] Notifications",
   "@notifications": {
     "description": "Description"
   },
-  "details": "[IS] Details",
+  "details": "[IS] [IS] Details",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "Hætta við boð",
+  "cancelInvite": "[IS] Hætta við boð",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "Búa til nýjan",
+  "createNew": "[IS] Búa til nýjan",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "[IS] Settings",
+  "settings": "[IS] [IS] Settings",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "Hafna Playtime",
+  "playtimeReject": "[IS] Hafna Playtime",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "Villa við að hlaða prófíl",
+  "errorLoadingProfile": "[IS] Villa við að hlaða prófíl",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "Breyta",
+  "edit": "[IS] Breyta",
   "@edit": {
     "description": "Description"
   },
-  "add": "Bæta við",
+  "add": "[IS] Bæta við",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "Leikur samþykktur",
+  "playtimeGameApproved": "[IS] Leikur samþykktur",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "[IS] Forgot Password?",
+  "forgotPassword": "[IS] [IS] Forgot Password?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "Fjölskylduskjár",
+  "familyDashboard": "[IS] Fjölskylduskjár",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "Hleður",
+  "loading": "[IS] Hleður",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "Hraðaðgerðir",
+  "quickActions": "[IS] Hraðaðgerðir",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "Playtime titill",
+  "playtimeTitle": "[IS] Playtime titill",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "OTP endursent með góðum árangri",
+  "otpResentSuccessfully": "[IS] OTP endursent með góðum árangri",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "[IS] Error checking permissions",
+  "errorCheckingPermissions": "[IS] [IS] Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "[IS] Client screen coming soon",
+  "clientScreenTBD": "[IS] [IS] Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "FCM tákn",
+  "fcmToken": "[IS] FCM tákn",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "Velja mynd",
+  "pickImage": "[IS] Velja mynd",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "Fyrri",
+  "previous": "[IS] Fyrri",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "Ekkert prófíl fannst",
+  "noProfileFound": "[IS] Ekkert prófíl fannst",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "Engir fjölskyldumeðlimir enn",
+  "noFamilyMembersYet": "[IS] Engir fjölskyldumeðlimir enn",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "Fjölmiðlar (valkvætt)",
+  "mediaOptional": "[IS] Fjölmiðlar (valkvætt)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "Skilaboð vistuð með góðum árangri",
+  "messageSavedSuccessfully": "[IS] Skilaboð vistuð með góðum árangri",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "Skrásett fyrir",
+  "scheduledFor": "[IS] Skrásett fyrir",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "[IS] Dashboard",
+  "dashboard": "[IS] [IS] Dashboard",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "[IS] No permission for broadcast",
+  "noPermissionForBroadcast": "[IS] [IS] No permission for broadcast",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[IS] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "[IS] Invite Details",
+  "inviteDetail": "[IS] [IS] Invite Details",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "Skráð",
+  "scheduled": "[IS] Skráð",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "Mistókst að senda OTP aftur",
+  "failedToResendOtp": "[IS] Mistókst að senda OTP aftur",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "[IS] Scheduling",
+  "scheduling": "[IS] [IS] Scheduling",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "Villa við að vista skilaboð",
+  "errorSavingMessage": "[IS] Villa við að vista skilaboð",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "Vista",
+  "save": "[IS] Vista",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "Samþykkja Playtime",
+  "playtimeApprove": "[IS] Samþykkja Playtime",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "Búðu til fyrstu lotu þína",
+  "createYourFirstSession": "[IS] Búðu til fyrstu lotu þína",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "Leikur hafnað",
+  "playtimeGameRejected": "[IS] Leikur hafnað",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "Mistókst að afturkalla aðgang",
+  "failedToRevokeAccess": "[IS] Mistókst að afturkalla aðgang",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "Nýlegir leikir",
+  "recentGames": "[IS] Nýlegir leikir",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "Sérsníða skilaboð",
+  "customizeMessage": "[IS] Sérsníða skilaboð",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "Mistókst að hætta við boð",
+  "failedToCancelInvite": "[IS] Mistókst að hætta við boð",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "Villa við að senda skilaboð",
+  "errorSendingMessage": "[IS] Villa við að senda skilaboð",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "[IS] Confirm Password",
+  "confirmPassword": "[IS] [IS] Confirm Password",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "Villa við að hlaða persónuverndaróskir",
+  "errorLoadingPrivacyRequests": "[IS] Villa við að hlaða persónuverndaróskir",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "[IS] Connected Children",
+  "connectedChildren": "[IS] [IS] Connected Children",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "Deila",
+  "share": "[IS] Deila",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "[IS] Enter game name",
+  "playtimeEnterGameName": "[IS] [IS] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "[IS] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[IS] [IS] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "Boðskrár mínar",
+  "myInvites": "[IS] Boðskrár mínar",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "Búa til leik",
+  "createGame": "[IS] Búa til leik",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "Hópnafn (valkvætt)",
+  "groupNameOptional": "[IS] Hópnafn (valkvætt)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "Engar Playtime lotur fundust",
+  "playtimeNoSessions": "[IS] Engar Playtime lotur fundust",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[IS] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[IS] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[IS] [IS] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "Loka",
+  "close": "[IS] Loka",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "[IS] Known group detected",
+  "knownGroupDetected": "[IS] [IS] Known group detected",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "Til baka",
+  "back": "[IS] Til baka",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "Veldu leik",
+  "playtimeChooseGame": "[IS] Veldu leik",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "Sýsla með leyfi",
+  "managePermissions": "[IS] Sýsla með leyfi",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "[IS] Poll Options",
+  "pollOptions": "[IS] [IS] Poll Options",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "Ýtt á",
+  "clicked": "[IS] Ýtt á",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "Tengill",
+  "link": "[IS] Tengill",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "[IS] Your meeting is ready! Join now",
+  "meetingReadyMessage": "[IS] [IS] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "[IS] Pending Invites",
+  "pendingInvites": "[IS] [IS] Pending Invites",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "Staða:",
+  "statusColon": "[IS] Staða:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[IS] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[IS] [IS] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[IS] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[IS] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[IS] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[IS] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[IS] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[IS] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[IS] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[IS] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[IS] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[IS] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[IS] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[IS] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[IS] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[IS] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[IS] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[IS] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[IS] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[IS] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Icelandic)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Icelandic)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Icelandic)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Icelandic)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[IS] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[IS] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[IS] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[IS] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[IS] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[IS] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[IS] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[IS] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[IS] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[IS] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[IS] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[IS] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[IS] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[IS] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[IS] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[IS] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[IS] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[IS] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[IS] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[IS] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[IS] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[IS] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[IS] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[IS] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[IS] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[IS] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[IS] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[IS] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[IS] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[IS] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[IS] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[IS] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[IS] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[IS] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[IS] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[IS] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[IS] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[IS] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[IS] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[IS] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[IS] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[IS] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[IS] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[IS] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[IS] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[IS] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[IS] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[IS] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[IS] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[IS] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[IS] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[IS] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[IS] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[IS] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[IS] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[IS] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[IS] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[IS] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[IS] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[IS] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[IS] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[IS] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Icelandic)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Icelandic)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Icelandic)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Icelandic)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Icelandic)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Icelandic)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Icelandic)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Icelandic)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[IS] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Icelandic)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Icelandic)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Icelandic)",
+  "upload1": "[IS] Upload (Icelandic)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Icelandic)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Icelandic)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Virtual session created! Inviting friends... (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Icelandic)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Icelandic)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Icelandic)",
+  "rewards": "[IS] Rewards (Icelandic)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Icelandic)",
+  "time": "[IS] Time (Icelandic)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[IS] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Icelandic)",
+  "noSlots": "[IS] No slots (Icelandic)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Icelandic)",
+  "signIn": "[IS] Sign In (Icelandic)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Icelandic)",
+  "homeFeedScreen": "[IS] Home Feed Screen (Icelandic)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Icelandic)",
+  "selectLocation": "[IS] Select Location (Icelandic)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Icelandic)",
+  "noTicketsYet": "[IS] No tickets yet (Icelandic)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Icelandic)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Icelandic)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Icelandic)",
+  "subscriptionUnavailable": "[IS] Subscription unavailable (Icelandic)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Icelandic)",
+  "confirmBooking": "[IS] Confirm Booking (Icelandic)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Icelandic)",
+  "failedToUpdatePermissionE": "[IS] Failed to update permission: $e (Icelandic)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Icelandic)",
+  "reject": "[IS] Reject (Icelandic)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Ambassador Status: {ambassadorStatus} (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[IS] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Icelandic)",
+  "checkingSubscription": "[IS] Checking subscription... (Icelandic)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Icelandic)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Icelandic)",
+  "noContentAvailableYet": "[IS] No content available yet (Icelandic)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Icelandic)",
+  "resolve": "[IS] Resolve (Icelandic)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Icelandic)",
+  "errorLoadingSurveysError": "[IS] Error loading surveys: $error (Icelandic)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[IS] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Icelandic)",
+  "getHelpWithYourAccount": "[IS] Get help with your account (Icelandic)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Icelandic)",
+  "pay": "[IS] Pay (Icelandic)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[IS] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Icelandic)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Icelandic)",
+  "changesSavedSuccessfully": "[IS] Changes saved successfully! (Icelandic)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Icelandic)",
+  "createNewInvoice": "[IS] Create New Invoice (Icelandic)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Icelandic)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Icelandic)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Icelandic)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Icelandic)",
+  "profileSaved": "[IS] Profile saved! (Icelandic)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Icelandic)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Icelandic)",
+  "valuetointk": "[IS] \\${value}K (Icelandic)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Icelandic)",
+  "deleteAccount": "[IS] Delete Account (Icelandic)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Icelandic)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Icelandic)",
+  "businessOnboarding": "[IS] Business Onboarding (Icelandic)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Icelandic)",
+  "addNewClient": "[IS] Add New Client (Icelandic)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Icelandic)",
+  "darkMode": "[IS] Dark Mode (Icelandic)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[IS] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[IS] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Icelandic)",
+  "REDACTED_TOKEN": "[IS] You will receive a confirmation email shortly. (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Icelandic)",
+  "addQuestion": "[IS] Add Question (Icelandic)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Icelandic)",
+  "privacyPolicy": "[IS] Privacy Policy (Icelandic)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Icelandic)",
+  "branchesLengthBranches": "[IS] {branchCount} branches (Icelandic)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Icelandic)",
+  "join": "[IS] Join (Icelandic)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Icelandic)",
+  "businessSubscription": "[IS] Business Subscription (Icelandic)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Icelandic)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[IS] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Icelandic)",
+  "surveyManagement": "[IS] Survey Management (Icelandic)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[IS] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Icelandic)",
+  "noRoomsFoundAddYourFirstRoom": "[IS] No rooms found. Add your first room! (Icelandic)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Icelandic)",
+  "readOurPrivacyPolicy": "[IS] Read our privacy policy (Icelandic)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Icelandic)",
+  "couldNotOpenPrivacyPolicy": "[IS] Could not open privacy policy (Icelandic)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Icelandic)",
+  "refresh1": "[IS] Refresh (Icelandic)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Icelandic)",
+  "roomUpdatedSuccessfully": "[IS] Room updated successfully! (Icelandic)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Icelandic)",
+  "contentDetail": "[IS] Content Detail (Icelandic)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Icelandic)",
+  "cancelSubscription": "[IS] Cancel Subscription (Icelandic)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Successfully registered as Ambassador! (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Icelandic)",
+  "save1": "[IS] Save (Icelandic)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Icelandic)",
+  "copy1": "[IS] Copy (Icelandic)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Icelandic)",
+  "failedToSendInvitationE": "[IS] Failed to send invitation: $e (Icelandic)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Icelandic)",
+  "surveyScore": "[IS] Survey Score (Icelandic)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[IS] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Icelandic)",
+  "noAppointmentsFound": "[IS] No appointments found. (Icelandic)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Icelandic)",
+  "responseDetail": "[IS] Response Detail (Icelandic)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Icelandic)",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Icelandic)",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Icelandic)",
+  "failedToStartProSubscriptionE": "[IS] Failed to start Pro subscription: $e (Icelandic)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Business Dashboard Entry Screen - Coming Soon (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Icelandic)",
+  "contentFilter": "[IS] Content Filter (Icelandic)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Icelandic)",
+  "helpSupport": "[IS] Help & Support (Icelandic)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Icelandic)",
+  "editRoom": "[IS] Edit Room (Icelandic)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[IS] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[IS] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Business CRM Entry Screen - Coming Soon (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[IS] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[IS] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Icelandic)",
+  "errorLoadingDashboardError": "[IS] Error loading dashboard: $error (Icelandic)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Icelandic)",
+  "gameDeletedSuccessfully": "[IS] Game deleted successfully! (Icelandic)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Icelandic)",
+  "viewResponsesComingSoon": "[IS] View responses - Coming soon! (Icelandic)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[IS] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Icelandic)",
+  "errorLoadingRewards": "[IS] Error loading rewards (Icelandic)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Icelandic)",
+  "failedToDeleteAccountE": "[IS] Failed to delete account: $e (Icelandic)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Icelandic)",
+  "invited1": "[IS] Invited (Icelandic)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Icelandic)",
+  "noBranchesAvailable": "[IS] No branches available (Icelandic)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Icelandic)",
+  "errorError": "[IS] Error: $error (Icelandic)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Icelandic)",
+  "noEvents": "[IS] No events (Icelandic)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Icelandic)",
+  "gameCreatedSuccessfully": "[IS] Game created successfully! (Icelandic)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Icelandic)",
+  "add1": "[IS] Add (Icelandic)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[IS] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Icelandic)",
+  "eventstarttimeEventendtime": "[IS] {startTime} - {endTime} (Icelandic)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Icelandic)",
+  "allowPlaytime": "[IS] Allow Playtime (Icelandic)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Icelandic)",
+  "clients": "[IS] Clients (Icelandic)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Icelandic)",
+  "noAmbassadorDataAvailable": "[IS] No ambassador data available (Icelandic)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Icelandic)",
+  "backgroundDeletedSuccessfully": "[IS] Background deleted successfully! (Icelandic)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Icelandic)",
+  "errorSnapshoterror": "[IS] Error: {error} (Icelandic)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Icelandic)",
+  "noAnalyticsDataAvailableYet": "[IS] No analytics data available yet. (Icelandic)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Icelandic)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Business Phone Booking Entry Screen - Coming Soon (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Icelandic)",
+  "verification": "[IS] Verification (Icelandic)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Icelandic)",
+  "copyLink": "[IS] Copy Link (Icelandic)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Icelandic)",
+  "dashboard1": "[IS] Dashboard (Icelandic)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Icelandic)",
+  "manageChildAccounts": "[IS] Manage Child Accounts (Icelandic)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Icelandic)",
+  "grantConsent": "[IS] Grant Consent (Icelandic)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Icelandic)",
+  "myProfile1": "[IS] My Profile (Icelandic)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Icelandic)",
+  "submit": "[IS] Submit (Icelandic)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[IS] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Icelandic)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Icelandic)",
+  "ambassadorDashboard": "[IS] Ambassador Dashboard (Icelandic)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Icelandic)",
+  "phoneBooking": "[IS] Phone Booking (Icelandic)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Icelandic)",
+  "bookViaChat": "[IS] Book via Chat (Icelandic)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "Villa",
+  "error": "[IS] Villa",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Icelandic)",
+  "businessProfile": "[IS] Business Profile (Icelandic)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Business Booking Entry Screen - Coming Soon (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Icelandic)",
+  "createNewSurvey": "[IS] Create New Survey (Icelandic)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Icelandic)",
+  "backgroundRejected": "[IS] Background rejected (Icelandic)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Icelandic)",
+  "noMediaSelected": "[IS] No media selected (Icelandic)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Icelandic)",
+  "syncToGoogle": "[IS] Sync to Google (Icelandic)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Icelandic)",
+  "virtualPlaytime": "[IS] Virtual Playtime (Icelandic)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[IS] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[IS] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Icelandic)",
+  "invitationSentSuccessfully": "[IS] Invitation sent successfully! (Icelandic)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Icelandic)",
+  "registering": "[IS] Registering... (Icelandic)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Icelandic)",
+  "statusAppointmentstatusname": "[IS] Status: {status} (Icelandic)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Icelandic)",
+  "home1": "[IS] Home (Icelandic)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Icelandic)",
+  "errorSavingSettingsE": "[IS] Error saving settings: $e (Icelandic)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Icelandic)",
+  "appVersionAndInformation": "[IS] App version and information (Icelandic)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Business Subscription Entry Screen - Coming Soon (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Icelandic)",
+  "ekeyEvalue": "[IS] {key}: {value} (Icelandic)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Your payment has been processed successfully. (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Icelandic)",
+  "errorE": "[IS] Error: $e (Icelandic)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Icelandic)",
+  "viewAll1": "[IS] View All (Icelandic)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Icelandic)",
+  "editSurveyComingSoon": "[IS] Edit survey - Coming soon! (Icelandic)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Icelandic)",
+  "enterOtp": "[IS] Enter OTP (Icelandic)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Icelandic)",
+  "payment": "[IS] Payment (Icelandic)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Automatically confirm new booking requests (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Icelandic)",
+  "noRouteDefinedForSettingsname": "[IS] No route defined for {settingsName} (Icelandic)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Icelandic)",
+  "pleaseSignInToUploadABackground": "[IS] Please sign in to upload a background (Icelandic)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[IS] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Icelandic)",
+  "staffAvailability": "[IS] Staff Availability (Icelandic)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Icelandic)",
+  "livePlaytime": "[IS] Live Playtime (Icelandic)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Icelandic)",
+  "autoconfirmBookings": "[IS] Auto-Confirm Bookings (Icelandic)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Redirecting to Stripe checkout for Pro plan... (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Icelandic)",
+  "exportAsCsv": "[IS] Export as CSV (Icelandic)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Icelandic)",
+  "deleteFunctionalityComingSoon": "[IS] Delete functionality coming soon! (Icelandic)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Icelandic)",
+  "editClient": "[IS] Edit Client (Icelandic)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Are you sure you want to delete this message? (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Icelandic)",
+  "referralsAmbassadorreferrals": "[IS] Referrals: {referrals} (Icelandic)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[IS] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Icelandic)",
+  "privacyRequestSentToYourParents": "[IS] Privacy request sent to your parents! (Icelandic)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Icelandic)",
+  "clientDeletedSuccessfully": "[IS] Client deleted successfully! (Icelandic)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Icelandic)",
+  "failedToCancelSubscription": "[IS] Failed to cancel subscription (Icelandic)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Icelandic)",
+  "allLanguages": "[IS] All Languages (Icelandic)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Icelandic)",
+  "slotDeletedSuccessfully": "[IS] Slot deleted successfully (Icelandic)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[IS] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Parents must approve before children can join (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Icelandic)",
+  "subscribeToPro1499mo": "[IS] Subscribe to Pro (€14.99/mo) (Icelandic)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Business Availability Entry Screen - Coming Soon (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Icelandic)",
+  "appointmentsListlength": "[IS] Appointments: {count} (Icelandic)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Icelandic)",
+  "clearFilters": "[IS] Clear Filters (Icelandic)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Icelandic)",
+  "submitBooking": "[IS] Submit Booking (Icelandic)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Are you sure you want to cancel this appointment? (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Icelandic)",
+  "noUpcomingBookings": "[IS] No upcoming bookings (Icelandic)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Icelandic)",
+  "goBack": "[IS] Go Back (Icelandic)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Icelandic)",
+  "setup": "[IS] Setup (Icelandic)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Icelandic)",
+  "inviteChild": "[IS] Invite Child (Icelandic)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Icelandic)",
+  "goToDashboard": "[IS] Go to Dashboard (Icelandic)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Icelandic)",
+  "ambassadorQuotaDashboard": "[IS] Ambassador Quota Dashboard (Icelandic)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[IS] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Icelandic)",
+  "referralCode": "[IS] Referral Code (Icelandic)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[IS] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Icelandic)",
+  "date": "[IS] Date (Icelandic)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Icelandic)",
+  "readOnly": "[IS] Read Only (Icelandic)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Icelandic)",
+  "bookingRequest": "[IS] Booking Request (Icelandic)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Icelandic)",
+  "advancedReporting": "[IS] • Advanced reporting (Icelandic)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Icelandic)",
+  "rooms": "[IS] Rooms (Icelandic)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Icelandic)",
+  "copiedToClipboard": "[IS] Copied to clipboard (Icelandic)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Icelandic)",
+  "bookingConfirmed": "[IS] Booking Confirmed (Icelandic)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Icelandic)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Icelandic)",
+  "clientAddedSuccessfully": "[IS] Client added successfully! (Icelandic)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Icelandic)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Icelandic)",
+  "backgroundApproved": "[IS] Background approved! (Icelandic)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Icelandic)",
+  "familySupport": "[IS] Family Support (Icelandic)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Icelandic)",
+  "deletingAccount": "[IS] Deleting account... (Icelandic)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Icelandic)",
+  "bookAppointment": "[IS] Book Appointment (Icelandic)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Icelandic)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Icelandic)",
+  "delete1": "[IS] Delete (Icelandic)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Icelandic)",
+  "sendBookingInvite": "[IS] Send Booking Invite (Icelandic)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Icelandic)",
+  "text": "[IS] Text (Icelandic)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Icelandic)",
+  "manageSubscription": "[IS] Manage Subscription (Icelandic)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Icelandic)",
+  "requiresInstallFallback": "[IS] Requires Install Fallback (Icelandic)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Icelandic)",
+  "paymentConfirmation": "[IS] Payment Confirmation (Icelandic)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Icelandic)",
+  "promoAppliedYourNextBillIsFree": "[IS] Promo applied! Your next bill is free. (Icelandic)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Icelandic)",
+  "errorLoadingSlots": "[IS] Error loading slots (Icelandic)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Allow other users to find and join this game (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Business Onboarding Screen - Coming Soon (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Icelandic)",
+  "activateBusinessProfile": "[IS] Activate Business Profile (Icelandic)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Icelandic)",
+  "contentNotFound": "[IS] Content not found (Icelandic)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Icelandic)",
+  "pspecialtynpcontactinfo": "[IS] {specialty}\\n{contactInfo} (Icelandic)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Icelandic)",
+  "rating": "[IS] Rating (Icelandic)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Icelandic)",
+  "messages": "[IS] Messages (Icelandic)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Icelandic)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Icelandic)",
+  "becomeAnAmbassador": "[IS] Become an Ambassador (Icelandic)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Icelandic)",
+  "subscribeNow": "[IS] Subscribe Now (Icelandic)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Icelandic)",
+  "timeArgsslotformatcontext": "[IS] Time: {time} (Icelandic)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Icelandic)",
+  "shareViaWhatsapp": "[IS] Share via WhatsApp (Icelandic)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Icelandic)",
+  "users1": "[IS] Users (Icelandic)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Icelandic)",
+  "shareLink": "[IS] Share Link (Icelandic)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[IS] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Icelandic)",
+  "deleteAppointment": "[IS] Delete Appointment (Icelandic)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Icelandic)",
+  "toggleAvailability": "[IS] Toggle Availability (Icelandic)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Icelandic)",
+  "changePlan": "[IS] Change Plan (Icelandic)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Icelandic)",
+  "errorLoadingStaff": "[IS] Error loading staff (Icelandic)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Icelandic)",
+  "updateYourBusinessInformation": "[IS] Update your business information (Icelandic)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[IS] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Icelandic)",
+  "parentDashboard": "[IS] Parent Dashboard (Icelandic)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Icelandic)",
+  "menu": "[IS] Menu (Icelandic)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Icelandic)",
+  "studioBooking": "[IS] Studio Booking (Icelandic)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Icelandic)",
+  "about1": "[IS] About (Icelandic)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Icelandic)",
+  "multipleChoice": "[IS] Multiple Choice (Icelandic)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Date: {date} (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Studio booking is only available on web (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Icelandic)",
+  "errorLoadingBranchesE": "[IS] Error loading branches: $e (Icelandic)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Icelandic)",
+  "REDACTED_TOKEN": "[IS] \\uD83D\\uDCC5 {dateTime} (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Icelandic)",
+  "none": "[IS] None (Icelandic)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Icelandic)",
+  "failedToUpdateConsentE": "[IS] Failed to update consent: $e (Icelandic)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Icelandic)",
+  "welcome1": "[IS] Welcome (Icelandic)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Icelandic)",
+  "failedToCreateSessionE": "[IS] Failed to create session: $e (Icelandic)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Icelandic)",
+  "inviteContact": "[IS] Invite Contact (Icelandic)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Icelandic)",
+  "surveyEditor": "[IS] Survey Editor (Icelandic)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Icelandic)",
+  "failedToStartBasicSubscriptionE": "[IS] Failed to start Basic subscription: $e (Icelandic)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Icelandic)",
+  "mySchedule": "[IS] My Schedule (Icelandic)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Icelandic)",
+  "studioDashboard": "[IS] Studio Dashboard (Icelandic)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Icelandic)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[IS] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[IS] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Icelandic)",
+  "settingsSavedSuccessfully": "[IS] Settings saved successfully! (Icelandic)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Icelandic)",
+  "linkCopiedToClipboard": "[IS] Link copied to clipboard! (Icelandic)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Icelandic)",
+  "accept1": "[IS] Accept (Icelandic)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Icelandic)",
+  "noAvailableSlots": "[IS] No available slots (Icelandic)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Icelandic)",
+  "makeGamePublic": "[IS] Make Game Public (Icelandic)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Permission {category} updated to $newValue (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Icelandic)",
+  "roomDeletedSuccessfully": "[IS] Room deleted successfully! (Icelandic)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Icelandic)",
+  "businessCalendar": "[IS] Business Calendar (Icelandic)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Icelandic)",
+  "addAvailability": "[IS] Add Availability (Icelandic)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Icelandic)",
+  "ambassadorOnboarding": "[IS] Ambassador Onboarding (Icelandic)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Icelandic)",
+  "phoneProfileasyncphone": "[IS] Phone: {phone} (Icelandic)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Icelandic)",
+  "addNewRoom": "[IS] Add New Room (Icelandic)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Icelandic)",
+  "requireParentApproval": "[IS] Require Parent Approval (Icelandic)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Icelandic)",
+  "closed": "[IS] Closed (Icelandic)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Icelandic)",
+  "exportAsPdf": "[IS] Export as PDF (Icelandic)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Icelandic)",
+  "enableVibration": "[IS] Enable Vibration (Icelandic)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Icelandic)",
+  "toAvailendformatcontext": "[IS] To: {endTime} (Icelandic)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Icelandic)",
+  "yourUpgradeCodeUpgradecode": "[IS] Your upgrade code: $upgradeCode (Icelandic)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[IS] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Icelandic)",
+  "country": "[IS] Country (Icelandic)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[IS] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Icelandic)",
+  "staffArgsstaffdisplayname": "[IS] Staff: {staffName} (Icelandic)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Icelandic)",
+  "revokeConsent": "[IS] Revoke Consent (Icelandic)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Icelandic)",
+  "settings1": "[IS] Settings (Icelandic)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Icelandic)",
+  "cancel1": "[IS] Cancel (Icelandic)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Subscription activated successfully! (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[IS] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Icelandic)",
+  "broadcast": "[IS] Broadcast (Icelandic)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Icelandic)",
+  "noEventsScheduledThisWeek": "[IS] No events scheduled this week (Icelandic)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Icelandic)",
+  "googleCalendar": "[IS] Google Calendar (Icelandic)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Icelandic)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Icelandic)",
+  "childDashboard": "[IS] Child Dashboard (Icelandic)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Icelandic)",
+  "failedToUploadBackgroundE": "[IS] Failed to upload background: $e (Icelandic)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[IS] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[IS] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[IS] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Icelandic)",
+  "noAppointments": "[IS] No appointments (Icelandic)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Icelandic)",
+  "unlimitedBookingsPerWeek": "[IS] • Unlimited bookings per week (Icelandic)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Icelandic)",
+  "scheduledAtScheduledat": "[IS] Scheduled at: $scheduledAt (Icelandic)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Icelandic)",
+  "selectStaff": "[IS] Select Staff (Icelandic)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Subscription cancelled successfully (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Icelandic)",
+  "cancelAppointment": "[IS] Cancel Appointment (Icelandic)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[IS] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Icelandic)",
+  "businessSignup": "[IS] Business Signup (Icelandic)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Business Completion Screen - Coming Soon (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Icelandic)",
+  "createGame1": "[IS] Create Game (Icelandic)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Icelandic)",
+  "valuetoint": "[IS] {value} (Icelandic)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Icelandic)",
+  "pleaseEnterAPromoCode": "[IS] Please enter a promo code (Icelandic)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Icelandic)",
+  "errorLoadingAvailabilityE": "[IS] Error loading availability: $e (Icelandic)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Icelandic)",
+  "parentalControls": "[IS] Parental Controls (Icelandic)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Icelandic)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Icelandic)",
+  "childLinkedSuccessfully": "[IS] Child linked successfully! (Icelandic)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Icelandic)",
+  "create": "[IS] Create (Icelandic)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Icelandic)",
+  "noExternalMeetingsFound": "[IS] No external meetings found. (Icelandic)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Icelandic)",
+  "staffSelectionstaffdisplayname": "[IS] Staff: {staffName} (Icelandic)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[IS] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Icelandic)",
+  "schedulerScreen": "[IS] Scheduler Screen (Icelandic)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Icelandic)",
+  "clientUpdatedSuccessfully": "[IS] Client updated successfully! (Icelandic)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Icelandic)",
+  "surveyResponses": "[IS] Survey Responses (Icelandic)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Icelandic)",
+  "syncToOutlook": "[IS] Sync to Outlook (Icelandic)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Icelandic)",
+  "saveChanges": "[IS] Save Changes (Icelandic)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Icelandic)",
+  "pickTime": "[IS] Pick Time (Icelandic)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Icelandic)",
+  "registrationFailedEtostring": "[IS] Registration failed: {error} (Icelandic)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Icelandic)",
+  "analytics": "[IS] Analytics (Icelandic)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Icelandic)",
+  "errorLoadingEvents": "[IS] Error loading events (Icelandic)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[IS] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[IS] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Icelandic)",
+  "success1": "[IS] Success (Icelandic)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[IS] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Icelandic)",
+  "fromAvailstartformatcontext": "[IS] From: {startTime} (Icelandic)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Icelandic)",
+  "readWrite": "[IS] Read & Write (Icelandic)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Redirecting to Stripe checkout for Basic plan... (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[IS] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Icelandic)",
+  "pickDate": "[IS] Pick Date (Icelandic)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Icelandic)",
+  "chatBooking": "[IS] Chat Booking (Icelandic)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Icelandic)",
+  "noQuestionsAdded": "[IS] No questions added (Icelandic)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[IS] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[IS] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Icelandic)",
+  "typeOpenCall": "[IS] Type: Open Call (Icelandic)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[IS] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[IS] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Icelandic)",
+  "invoiceCreatedSuccessfully": "[IS] Invoice created successfully! (Icelandic)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Icelandic)",
+  "noTimeSeriesDataAvailable": "[IS] No time series data available (Icelandic)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[IS] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[IS] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Icelandic)",
+  "failedToSendPrivacyRequestE": "[IS] Failed to send privacy request: $e (Icelandic)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Icelandic)",
+  "chooseYourPlan": "[IS] Choose Your Plan (Icelandic)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Icelandic)",
+  "playtimeManagement": "[IS] Playtime Management (Icelandic)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Icelandic)",
+  "availability": "[IS] Availability (Icelandic)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Icelandic)",
+  "eventCreated": "[IS] Event created (Icelandic)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Icelandic)",
+  "subscribeToBasic499mo": "[IS] Subscribe to Basic (€4.99/mo) (Icelandic)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Icelandic)",
+  "completion": "[IS] Completion (Icelandic)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Icelandic)",
+  "supportTicketSubmitted": "[IS] Support ticket submitted (Icelandic)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Icelandic)",
+  "monetizationSettings": "[IS] Monetization Settings (Icelandic)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Icelandic)",
+  "noBookingsFound": "[IS] No bookings found (Icelandic)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[IS] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Icelandic)",
+  "deleteSurvey": "[IS] Delete Survey (Icelandic)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Icelandic)",
+  "gameApprovedSuccessfully": "[IS] Game approved successfully! (Icelandic)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Icelandic)",
+  "errorLoadingPermissionsError": "[IS] Error loading permissions: $error (Icelandic)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Icelandic)",
+  "referrals": "[IS] Referrals (Icelandic)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Icelandic)",
+  "crm": "[IS] CRM (Icelandic)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Icelandic)",
+  "gameRejected": "[IS] Game rejected (Icelandic)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Icelandic)",
+  "appointments": "[IS] Appointments (Icelandic)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Icelandic)",
+  "onboardingScreen": "[IS] Onboarding Screen (Icelandic)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Icelandic)",
+  "welcomeToYourStudio": "[IS] Welcome to your studio (Icelandic)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Icelandic)",
+  "update": "[IS] Update (Icelandic)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Icelandic)",
+  "retry1": "[IS] Retry (Icelandic)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Icelandic)",
+  "booking": "[IS] Booking (Icelandic)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Icelandic)",
+  "parentalSettings": "[IS] Parental Settings (Icelandic)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Icelandic)",
+  "language": "[IS] Language (Icelandic)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Icelandic)",
+  "deleteSlot": "[IS] Delete Slot (Icelandic)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[IS] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[IS] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Icelandic)",
+  "createNewGame": "[IS] Create New Game (Icelandic)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Icelandic)",
+  "next1": "[IS] Next (Icelandic)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Icelandic)",
+  "backgroundUploadedSuccessfully": "[IS] Background uploaded successfully! (Icelandic)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Icelandic)",
+  "noAppointmentRequestsFound": "[IS] No appointment requests found. (Icelandic)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Icelandic)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Icelandic)",
+  "restrictMatureContent": "[IS] Restrict mature content (Icelandic)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Icelandic)",
+  "ambassadors": "[IS] Ambassadors (Icelandic)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Icelandic)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Icelandic)",
+  "paymentWasCancelled": "[IS] Payment was cancelled (Icelandic)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Icelandic)",
+  "clearAll": "[IS] Clear All (Icelandic)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Icelandic)",
+  "viewDetails": "[IS] View Details (Icelandic)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Icelandic)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Icelandic)",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Icelandic)",
+  "failedToCreateGameE": "[IS] Failed to create game: $e (Icelandic)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Icelandic)",
+  "noChartDataAvailable": "[IS] No chart data available (Icelandic)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Icelandic)",
+  "phonebasedBookingSystem": "[IS] • Phone-based booking system (Icelandic)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Icelandic)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Icelandic)",
+  "invoices": "[IS] Invoices (Icelandic)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Icelandic)",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Icelandic)",
+  "scheduledAtArgsscheduledat": "[IS] Scheduled at: {scheduledAt} (Icelandic)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Duration: {duration} minutes (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Icelandic)",
+  "tryAgain": "[IS] Try Again (Icelandic)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Icelandic)",
+  "deleteBackground": "[IS] Delete Background (Icelandic)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Icelandic)",
+  "currentTierTiertouppercase": "[IS] Current Tier: {tier} (Icelandic)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[IS] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Icelandic)",
+  "REDACTED_TOKEN": "[IS] No clients found. Add your first client! (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[IS] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[IS] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Icelandic)",
+  "appointmentRequests": "[IS] Appointment Requests (Icelandic)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Icelandic)",
+  "forward": "[IS] Forward (Icelandic)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Icelandic)",
+  "roomAddedSuccessfully": "[IS] Room added successfully! (Icelandic)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Icelandic)",
+  "option": "[IS] • $option (Icelandic)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Icelandic)",
+  "responseIndex1": "[IS] Response #{number} (Icelandic)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Icelandic)",
+  "crmDashboardWithAnalytics": "[IS] • CRM dashboard with analytics (Icelandic)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Icelandic)",
+  "contentLibrary1": "[IS] Content Library (Icelandic)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Icelandic)",
+  "reply": "[IS] Reply (Icelandic)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Icelandic)",
+  "subscriptionManagement": "[IS] Subscription Management (Icelandic)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Monetization settings will be implemented here (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Icelandic)",
+  "failedToApplyPromoCodeE": "[IS] Failed to apply promo code: $e (Icelandic)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[IS] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Icelandic)",
+  "localizationContribution": "[IS] Localization Contribution (Icelandic)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Icelandic)",
+  "parentalConsent": "[IS] Parental Consent (Icelandic)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Icelandic)",
+  "businessSignupScreenComingSoon": "[IS] Business Signup Screen - Coming Soon (Icelandic)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Icelandic)",
+  "REDACTED_TOKEN": "[IS] Are you sure you want to delete this appointment? (Icelandic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Icelandic)",
+  "syncAppointment": "[IS] Sync Appointment (Icelandic)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Icelandic)",
+  "iConsent": "[IS] I Consent (Icelandic)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Icelandic)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Icelandic)",
+  "businessSetupScreenComingSoon": "[IS] Business Setup Screen - Coming Soon (Icelandic)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Icelandic)",
+  "edit1": "[IS] Edit (Icelandic)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Icelandic)",
+  "noEventsScheduledThisMonth": "[IS] No events scheduled this month (Icelandic)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Icelandic)",
+  "businessDashboard": "[IS] Business Dashboard (Icelandic)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Icelandic)",
+  "noMessagesFound": "[IS] No messages found. (Icelandic)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[IS] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Icelandic)",
+  "manageStaffAvailability": "[IS] Manage Staff Availability (Icelandic)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Icelandic)",
+  "noMissingTranslations": "[IS] No missing translations (Icelandic)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Icelandic)",
+  "skip": "[IS] Skip (Icelandic)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[IS] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Icelandic)",
+  "errorLoadingReferralCode": "[IS] Error loading referral code (Icelandic)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Icelandic)",
+  "allCountries": "[IS] All Countries (Icelandic)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Icelandic)",
+  "deleteGame": "[IS] Delete Game (Icelandic)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Icelandic)",
+  "staffManagementTools": "[IS] • Staff management tools (Icelandic)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Icelandic)",
+  "deleteMessage": "[IS] Delete Message (Icelandic)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Icelandic)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[IS] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Icelandic)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Icelandic)",
+  "openingCustomerPortal": "[IS] Opening customer portal... (Icelandic)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Icelandic)",
+  "signOut": "[IS] Sign Out (Icelandic)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Icelandic)",
+  "nameProfilename": "[IS] Name: {name} (Icelandic)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Icelandic)",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Icelandic)",
+  "upgradeToBusiness": "[IS] Upgrade to Business (Icelandic)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Icelandic)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Icelandic)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Icelandic)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Icelandic)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Icelandic)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Icelandic)",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Icelandic)",
+  "viewResponses": "[IS] View Responses (Icelandic)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Icelandic)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Icelandic)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Icelandic)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Icelandic)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Icelandic)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Icelandic)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Icelandic)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Icelandic)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Icelandic)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Icelandic)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

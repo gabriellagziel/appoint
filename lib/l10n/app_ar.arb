@@ -8,7 +8,7 @@
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "لا توجد جلسات بعد",
+  "noSessionsYet": "[AR] لا توجد جلسات بعد",
   "@noSessionsYet": {
     "description": "Description"
   },
@@ -16,7 +16,7 @@
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "اختر وضعاً",
+  "playtimeLandingChooseMode": "[AR] اختر وضعاً",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
@@ -24,7 +24,7 @@
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "جدولة رسالة",
+  "scheduleMessage": "[AR] جدولة رسالة",
   "@scheduleMessage": {
     "description": "Description"
   },
@@ -32,27 +32,27 @@
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[AR] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "تسجيل الدخول",
+  "login": "[AR] تسجيل الدخول",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "اختر الأصدقاء",
+  "playtimeChooseFriends": "[AR] اختر الأصدقاء",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "لا توجد دعوات",
+  "noInvites": "[AR] لا توجد دعوات",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "اختر الوقت",
+  "playtimeChooseTime": "[AR] اختر الوقت",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "تم بنجاح",
+  "success": "[AR] تم بنجاح",
   "@success": {
     "description": "Description"
   },
@@ -64,11 +64,11 @@
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "إنشاء جلسة افتراضية",
+  "createVirtualSession": "[AR] إنشاء جلسة افتراضية",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "تم إرسال الرسالة بنجاح",
+  "messageSentSuccessfully": "[AR] تم إرسال الرسالة بنجاح",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
@@ -84,27 +84,27 @@
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "إلغاء تأكيد الدعوة",
+  "cancelInviteConfirmation": "[AR] إلغاء تأكيد الدعوة",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "تم الإنشاء",
+  "created": "[AR] تم الإنشاء",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "سحب الوصول",
+  "revokeAccess": "[AR] سحب الوصول",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "احفظ المجموعة للتعرف",
+  "saveGroupForRecognition": "[AR] احفظ المجموعة للتعرف",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "تم جدول البث المباشر",
+  "playtimeLiveScheduled": "[AR] تم جدول البث المباشر",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "تأكيد سحب الوصول",
+  "revokeAccessConfirmation": "[AR] تأكيد سحب الوصول",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
@@ -112,11 +112,11 @@
   "@download": {
     "description": "Description"
   },
-  "password": "كلمة المرور",
+  "password": "[AR] كلمة المرور",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "خطأ في تحميل روابط العائلة",
+  "errorLoadingFamilyLinks": "[AR] خطأ في تحميل روابط العائلة",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
@@ -124,15 +124,15 @@
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "إنشاء Playtime",
+  "playtimeCreate": "[AR] إنشاء Playtime",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "فشل في تنفيذ طلب الخصوصية",
+  "failedToActionPrivacyRequest": "[AR] فشل في تنفيذ طلب الخصوصية",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "عنوان التطبيق",
+  "appTitle": "[AR] عنوان التطبيق",
   "@appTitle": {
     "description": "Description"
   },
@@ -140,11 +140,11 @@
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "الوضع الافتراضي",
+  "playtimeModeVirtual": "[AR] الوضع الافتراضي",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "وصف Playtime",
+  "playtimeDescription": "[AR] وصف Playtime",
   "@playtimeDescription": {
     "description": "Description"
   },
@@ -152,11 +152,11 @@
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "بدأت الجلسة الافتراضية",
+  "playtimeVirtualStarted": "[AR] بدأت الجلسة الافتراضية",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "أنشئ لعبتك الأولى",
+  "createYourFirstGame": "[AR] أنشئ لعبتك الأولى",
   "@createYourFirstGame": {
     "description": "Description"
   },
@@ -168,7 +168,7 @@
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "لا توجد نتائج",
+  "noResults": "[AR] لا توجد نتائج",
   "@noResults": {
     "description": "Description"
   },
@@ -180,7 +180,7 @@
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "وضع مباشر",
+  "playtimeModeLive": "[AR] وضع مباشر",
   "@playtimeModeLive": {
     "description": "Description"
   },
@@ -188,7 +188,7 @@
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "رسالة المشاركة الافتراضية",
+  "defaultShareMessage": "[AR] رسالة المشاركة الافتراضية",
   "@defaultShareMessage": {
     "description": "Description"
   },
@@ -196,15 +196,15 @@
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "مركز Playtime",
+  "playtimeHub": "[AR] مركز Playtime",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "إنشاء جلسة مباشرة",
+  "createLiveSession": "[AR] إنشاء جلسة مباشرة",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "تفعيل الإشعارات",
+  "enableNotifications": "[AR] تفعيل الإشعارات",
   "@enableNotifications": {
     "description": "Description"
   },
@@ -216,23 +216,23 @@
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "تم مشاركة الاجتماع بنجاح",
+  "meetingSharedSuccessfully": "[AR] تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "مرحباً بك في Playtime",
+  "welcomeToPlaytime": "[AR] مرحباً بك في Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "عرض الكل",
+  "viewAll": "[AR] عرض الكل",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "Playtime افتراضي",
+  "playtimeVirtual": "[AR] Playtime افتراضي",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "شاشة الموظفين قيد التحديد",
+  "staffScreenTBD": "[AR] شاشة الموظفين قيد التحديد",
   "@staffScreenTBD": {
     "description": "Description"
   },
@@ -240,23 +240,23 @@
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "تم إلغاء الدعوة بنجاح",
+  "inviteCancelledSuccessfully": "[AR] تم إلغاء الدعوة بنجاح",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "أعد المحاولة",
+  "retry": "[AR] أعد المحاولة",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "إنشاء رسالة البث",
+  "composeBroadcastMessage": "[AR] إنشاء رسالة البث",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "أرسل الآن",
+  "sendNow": "[AR] أرسل الآن",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "لا توجد ألعاب بعد",
+  "noGamesYet": "[AR] لا توجد ألعاب بعد",
   "@noGamesYet": {
     "description": "Description"
   },
@@ -272,11 +272,11 @@
   "@choose": {
     "description": "Description"
   },
-  "profile": "الملف الشخصي",
+  "profile": "[AR] الملف الشخصي",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "إزالة طفل",
+  "removeChild": "[AR] إزالة طفل",
   "@removeChild": {
     "description": "Description"
   },
@@ -284,7 +284,7 @@
   "@status": {
     "description": "status description"
   },
-  "logout": "تسجيل الخروج",
+  "logout": "[AR] تسجيل الخروج",
   "@logout": {
     "description": "Description"
   },
@@ -296,11 +296,11 @@
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "إنشاء جلسة",
+  "playtimeCreateSession": "[AR] إنشاء جلسة",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "أفراد العائلة",
+  "familyMembers": "[AR] أفراد العائلة",
   "@familyMembers": {
     "description": "Description"
   },
@@ -308,11 +308,11 @@
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "الجلسات القادمة",
+  "upcomingSessions": "[AR] الجلسات القادمة",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "أدخل اسم المجموعة",
+  "enterGroupName": "[AR] أدخل اسم المجموعة",
   "@enterGroupName": {
     "description": "Description"
   },
@@ -320,31 +320,31 @@
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "Playtime مباشر",
+  "playtimeLive": "[AR] Playtime مباشر",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "خطأ في تحميل الدعوات",
+  "errorLoadingInvites": "[AR] خطأ في تحميل الدعوات",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "فلاتر الاستهداف",
+  "targetingFilters": "[AR] فلاتر الاستهداف",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "اختر فيديو",
+  "pickVideo": "[AR] اختر فيديو",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "تم حذف اللعبة",
+  "playtimeGameDeleted": "[AR] تم حذف اللعبة",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "جدولة لاحقاً",
+  "scheduleForLater": "[AR] جدولة لاحقاً",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "تم سحب الوصول بنجاح",
+  "accessRevokedSuccessfully": "[AR] تم سحب الوصول بنجاح",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
@@ -352,7 +352,7 @@
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "جاري التحقق من الأذونات",
+  "checkingPermissions": "[AR] جاري التحقق من الأذونات",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
@@ -360,23 +360,23 @@
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "نعم، إلغاء",
+  "yesCancel": "[AR] نعم، إلغاء",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "البريد الإلكتروني",
+  "email": "[AR] البريد الإلكتروني",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[AR] Share on WhatsApp",
+  "shareOnWhatsApp": "[AR] [AR] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "إعدادات الإشعارات",
+  "notificationSettings": "[AR] إعدادات الإشعارات",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "ملفي الشخصي",
+  "myProfile": "[AR] ملفي الشخصي",
   "@myProfile": {
     "description": "Description"
   },
@@ -384,11 +384,11 @@
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "لا توجد رسائل بث",
+  "noBroadcastMessages": "[AR] لا توجد رسائل بث",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "نوع الطلب",
+  "requestType": "[AR] نوع الطلب",
   "@requestType": {
     "description": "requestType description"
   },
@@ -400,11 +400,11 @@
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "إلغاء الدعوة",
+  "cancelInvite": "[AR] إلغاء الدعوة",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "إنشاء جديد",
+  "createNew": "[AR] إنشاء جديد",
   "@createNew": {
     "description": "Description"
   },
@@ -412,11 +412,11 @@
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "رفض Playtime",
+  "playtimeReject": "[AR] رفض Playtime",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "خطأ في تحميل الملف الشخصي",
+  "errorLoadingProfile": "[AR] خطأ في تحميل الملف الشخصي",
   "@errorLoadingProfile": {
     "description": "Description"
   },
@@ -428,47 +428,47 @@
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "تم الموافقة على اللعبة",
+  "playtimeGameApproved": "[AR] تم الموافقة على اللعبة",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "هل نسيت كلمة المرور؟",
+  "forgotPassword": "[AR] هل نسيت كلمة المرور؟",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "لوحة تحكم العائلة",
+  "familyDashboard": "[AR] لوحة تحكم العائلة",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "جارٍ التحميل",
+  "loading": "[AR] جارٍ التحميل",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "إجراءات سريعة",
+  "quickActions": "[AR] إجراءات سريعة",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "عنوان Playtime",
+  "playtimeTitle": "[AR] عنوان Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "تم إعادة إرسال رمز التحقق",
+  "otpResentSuccessfully": "[AR] تم إعادة إرسال رمز التحقق",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "خطأ في التحقق من الأذونات",
+  "errorCheckingPermissions": "[AR] خطأ في التحقق من الأذونات",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "شاشة العميل قيد التحديد",
+  "clientScreenTBD": "[AR] شاشة العميل قيد التحديد",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "رمز FCM",
+  "fcmToken": "[AR] رمز FCM",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "اختر صورة",
+  "pickImage": "[AR] اختر صورة",
   "@pickImage": {
     "description": "pickImage description"
   },
@@ -476,39 +476,39 @@
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "لم يتم العثور على ملف شخصي",
+  "noProfileFound": "[AR] لم يتم العثور على ملف شخصي",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "لا يوجد أعضاء عائلة بعد",
+  "noFamilyMembersYet": "[AR] لا يوجد أعضاء عائلة بعد",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "وسائط (اختياري)",
+  "mediaOptional": "[AR] وسائط (اختياري)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "تم حفظ الرسالة بنجاح",
+  "messageSavedSuccessfully": "[AR] تم حفظ الرسالة بنجاح",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "مجدول لـ",
+  "scheduledFor": "[AR] مجدول لـ",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "لوحة القيادة",
+  "dashboard": "[AR] لوحة القيادة",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "لا يوجد إذن للبث",
+  "noPermissionForBroadcast": "[AR] لا يوجد إذن للبث",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "ألعاب وقت اللعب - المشرف",
+  "playtimeAdminPanelTitle": "[AR] ألعاب وقت اللعب - المشرف",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "تفاصيل الدعوة",
+  "inviteDetail": "[AR] تفاصيل الدعوة",
   "@inviteDetail": {
     "description": "Description"
   },
@@ -516,15 +516,15 @@
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "فشل في إعادة إرسال رمز التحقق",
+  "failedToResendOtp": "[AR] فشل في إعادة إرسال رمز التحقق",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "جارٍ الجدولة",
+  "scheduling": "[AR] جارٍ الجدولة",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "خطأ في حفظ الرسالة",
+  "errorSavingMessage": "[AR] خطأ في حفظ الرسالة",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
@@ -532,47 +532,47 @@
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "قبول Playtime",
+  "playtimeApprove": "[AR] قبول Playtime",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "أنشئ جلستك الأولى",
+  "createYourFirstSession": "[AR] أنشئ جلستك الأولى",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "تم رفض اللعبة",
+  "playtimeGameRejected": "[AR] تم رفض اللعبة",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "فشل في سحب الوصول",
+  "failedToRevokeAccess": "[AR] فشل في سحب الوصول",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "الألعاب الأخيرة",
+  "recentGames": "[AR] الألعاب الأخيرة",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "تخصيص الرسالة",
+  "customizeMessage": "[AR] تخصيص الرسالة",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "فشل في إلغاء الدعوة",
+  "failedToCancelInvite": "[AR] فشل في إلغاء الدعوة",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "خطأ في إرسال الرسالة",
+  "errorSendingMessage": "[AR] خطأ في إرسال الرسالة",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "تأكيد كلمة المرور",
+  "confirmPassword": "[AR] تأكيد كلمة المرور",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "خطأ في تحميل طلبات الخصوصية",
+  "errorLoadingPrivacyRequests": "[AR] خطأ في تحميل طلبات الخصوصية",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "الأطفال المتصلون",
+  "connectedChildren": "[AR] الأطفال المتصلون",
   "@connectedChildren": {
     "description": "Description"
   },
@@ -580,11 +580,11 @@
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "أدخل اسم اللعبة",
+  "playtimeEnterGameName": "[AR] أدخل اسم اللعبة",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "يرجى تسجيل الدخول لميزات العائلة",
+  "pleaseLoginForFamilyFeatures": "[AR] يرجى تسجيل الدخول لميزات العائلة",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
@@ -592,23 +592,23 @@
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "إنشاء لعبة",
+  "createGame": "[AR] إنشاء لعبة",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "اسم المجموعة (اختياري)",
+  "groupNameOptional": "[AR] اسم المجموعة (اختياري)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "لا توجد جلسات Playtime",
+  "playtimeNoSessions": "[AR] لا توجد جلسات Playtime",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[AR] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "عنوان لوحة الآباء في Playtime",
+  "playtimeParentDashboardTitle": "[AR] عنوان لوحة الآباء في Playtime",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
@@ -616,7 +616,7 @@
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "تم الكشف عن مجموعة معروفة",
+  "knownGroupDetected": "[AR] تم الكشف عن مجموعة معروفة",
   "@knownGroupDetected": {
     "description": "Description"
   },
@@ -624,19 +624,19 @@
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "اختر لعبة",
+  "playtimeChooseGame": "[AR] اختر لعبة",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "إدارة الأذونات",
+  "managePermissions": "[AR] إدارة الأذونات",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "خيارات الاستطلاع",
+  "pollOptions": "[AR] خيارات الاستطلاع",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "تم النقر",
+  "clicked": "[AR] تم النقر",
   "@clicked": {
     "description": "clicked description"
   },
@@ -644,391 +644,391 @@
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "الاجتماع جاهز",
+  "meetingReadyMessage": "[AR] الاجتماع جاهز",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "الدعوات المعلقة",
+  "pendingInvites": "[AR] الدعوات المعلقة",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "الحالة:",
+  "statusColon": "[AR] الحالة:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "يرجى تسجيل الدخول لعرض الملف الشخصي",
+  "pleaseLoginToViewProfile": "[AR] يرجى تسجيل الدخول لعرض الملف الشخصي",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[AR] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[AR] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[AR] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[AR] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[AR] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[AR] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[AR] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[AR] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[AR] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[AR] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[AR] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[AR] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[AR] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[AR] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[AR] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[AR] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[AR] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[AR] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Arabic)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Arabic)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Arabic)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Arabic)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[AR] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[AR] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[AR] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[AR] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[AR] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[AR] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[AR] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[AR] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[AR] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[AR] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[AR] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[AR] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[AR] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[AR] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[AR] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[AR] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[AR] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[AR] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[AR] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[AR] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[AR] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[AR] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[AR] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[AR] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[AR] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[AR] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[AR] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[AR] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[AR] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[AR] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[AR] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[AR] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[AR] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[AR] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[AR] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[AR] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[AR] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[AR] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[AR] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[AR] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[AR] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[AR] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[AR] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[AR] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[AR] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[AR] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[AR] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[AR] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[AR] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[AR] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[AR] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[AR] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[AR] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[AR] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[AR] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[AR] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[AR] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[AR] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[AR] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[AR] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[AR] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[AR] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Arabic)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Arabic)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Arabic)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Arabic)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Arabic)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Arabic)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Arabic)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Arabic)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[AR] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
@@ -1036,7 +1036,7 @@
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Arabic)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
@@ -1044,55 +1044,55 @@
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Arabic)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Arabic)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "تم إنشاء جلسة افتراضية، يتم دعوة الأصدقاء",
+  "REDACTED_TOKEN": "[AR] تم إنشاء جلسة افتراضية، يتم دعوة الأصدقاء",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Arabic)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Arabic)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Arabic)",
+  "rewards": "[AR] Rewards (Arabic)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Arabic)",
+  "time": "[AR] Time (Arabic)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "معرف المستخدم: {cid}",
+  "userCid": "[AR] معرف المستخدم: {cid}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Arabic)",
+  "noSlots": "[AR] No slots (Arabic)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Arabic)",
+  "signIn": "[AR] Sign In (Arabic)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Arabic)",
+  "homeFeedScreen": "[AR] Home Feed Screen (Arabic)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Arabic)",
+  "selectLocation": "[AR] Select Location (Arabic)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Arabic)",
+  "noTicketsYet": "[AR] No tickets yet (Arabic)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
@@ -1104,79 +1104,79 @@
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Arabic)",
+  "subscriptionUnavailable": "[AR] Subscription unavailable (Arabic)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Arabic)",
+  "confirmBooking": "[AR] Confirm Booking (Arabic)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Arabic)",
+  "failedToUpdatePermissionE": "[AR] Failed to update permission: $e (Arabic)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Arabic)",
+  "reject": "[AR] Reject (Arabic)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Arabic)",
+  "REDACTED_TOKEN": "[AR] Ambassador Status: {ambassadorStatus} (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[AR] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Arabic)",
+  "checkingSubscription": "[AR] Checking subscription... (Arabic)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Arabic)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Arabic)",
+  "noContentAvailableYet": "[AR] No content available yet (Arabic)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Arabic)",
+  "resolve": "[AR] Resolve (Arabic)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Arabic)",
+  "errorLoadingSurveysError": "[AR] Error loading surveys: $error (Arabic)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[AR] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Arabic)",
+  "getHelpWithYourAccount": "[AR] Get help with your account (Arabic)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Arabic)",
+  "pay": "[AR] Pay (Arabic)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[AR] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Arabic)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Arabic)",
+  "changesSavedSuccessfully": "[AR] Changes saved successfully! (Arabic)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Arabic)",
+  "createNewInvoice": "[AR] Create New Invoice (Arabic)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
@@ -1184,27 +1184,27 @@
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Arabic)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Arabic)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Arabic)",
+  "profileSaved": "[AR] Profile saved! (Arabic)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Arabic)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "قيمة إلى عدد صحيح: {k}",
+  "valuetointk": "[AR] قيمة إلى عدد صحيح: {k}",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Arabic)",
+  "deleteAccount": "[AR] Delete Account (Arabic)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
@@ -1212,123 +1212,123 @@
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Arabic)",
+  "businessOnboarding": "[AR] Business Onboarding (Arabic)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Arabic)",
+  "addNewClient": "[AR] Add New Client (Arabic)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Arabic)",
+  "darkMode": "[AR] Dark Mode (Arabic)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[AR] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[AR] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "ستتلقى رسالة تأكيد بالبريد الإلكتروني قريباً",
+  "REDACTED_TOKEN": "[AR] ستتلقى رسالة تأكيد بالبريد الإلكتروني قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Arabic)",
+  "addQuestion": "[AR] Add Question (Arabic)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Arabic)",
+  "privacyPolicy": "[AR] Privacy Policy (Arabic)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Arabic)",
+  "branchesLengthBranches": "[AR] {branchCount} branches (Arabic)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Arabic)",
+  "join": "[AR] Join (Arabic)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Arabic)",
+  "businessSubscription": "[AR] Business Subscription (Arabic)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Arabic)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[AR] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Arabic)",
+  "surveyManagement": "[AR] Survey Management (Arabic)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[AR] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Arabic)",
+  "noRoomsFoundAddYourFirstRoom": "[AR] No rooms found. Add your first room! (Arabic)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Arabic)",
+  "readOurPrivacyPolicy": "[AR] Read our privacy policy (Arabic)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Arabic)",
+  "couldNotOpenPrivacyPolicy": "[AR] Could not open privacy policy (Arabic)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Arabic)",
+  "refresh1": "[AR] Refresh (Arabic)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Arabic)",
+  "roomUpdatedSuccessfully": "[AR] Room updated successfully! (Arabic)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Arabic)",
+  "contentDetail": "[AR] Content Detail (Arabic)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Arabic)",
+  "cancelSubscription": "[AR] Cancel Subscription (Arabic)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Arabic)",
+  "REDACTED_TOKEN": "[AR] Successfully registered as Ambassador! (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Arabic)",
+  "save1": "[AR] Save (Arabic)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Arabic)",
+  "copy1": "[AR] Copy (Arabic)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Arabic)",
+  "failedToSendInvitationE": "[AR] Failed to send invitation: $e (Arabic)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Arabic)",
+  "surveyScore": "[AR] Survey Score (Arabic)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "المستخدم: {userId}",
+  "userUserid": "[AR] المستخدم: {userId}",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Arabic)",
+  "noAppointmentsFound": "[AR] No appointments found. (Arabic)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Arabic)",
+  "responseDetail": "[AR] Response Detail (Arabic)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
@@ -1340,131 +1340,131 @@
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Arabic)",
+  "failedToStartProSubscriptionE": "[AR] Failed to start Pro subscription: $e (Arabic)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Arabic)",
+  "REDACTED_TOKEN": "[AR] Business Dashboard Entry Screen - Coming Soon (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Arabic)",
+  "contentFilter": "[AR] Content Filter (Arabic)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Arabic)",
+  "helpSupport": "[AR] Help & Support (Arabic)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Arabic)",
+  "editRoom": "[AR] Edit Room (Arabic)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[AR] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[AR] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Arabic)",
+  "REDACTED_TOKEN": "[AR] Business CRM Entry Screen - Coming Soon (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[AR] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[AR] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Arabic)",
+  "errorLoadingDashboardError": "[AR] Error loading dashboard: $error (Arabic)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Arabic)",
+  "gameDeletedSuccessfully": "[AR] Game deleted successfully! (Arabic)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "عرض الردود قريباً",
+  "viewResponsesComingSoon": "[AR] عرض الردود قريباً",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[AR] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Arabic)",
+  "errorLoadingRewards": "[AR] Error loading rewards (Arabic)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Arabic)",
+  "failedToDeleteAccountE": "[AR] Failed to delete account: $e (Arabic)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Arabic)",
+  "invited1": "[AR] Invited (Arabic)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Arabic)",
+  "noBranchesAvailable": "[AR] No branches available (Arabic)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Arabic)",
+  "errorError": "[AR] Error: $error (Arabic)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Arabic)",
+  "noEvents": "[AR] No events (Arabic)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Arabic)",
+  "gameCreatedSuccessfully": "[AR] Game created successfully! (Arabic)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Arabic)",
+  "add1": "[AR] Add (Arabic)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[AR] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Arabic)",
+  "eventstarttimeEventendtime": "[AR] {startTime} - {endTime} (Arabic)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Arabic)",
+  "allowPlaytime": "[AR] Allow Playtime (Arabic)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Arabic)",
+  "clients": "[AR] Clients (Arabic)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Arabic)",
+  "noAmbassadorDataAvailable": "[AR] No ambassador data available (Arabic)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Arabic)",
+  "backgroundDeletedSuccessfully": "[AR] Background deleted successfully! (Arabic)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Arabic)",
+  "errorSnapshoterror": "[AR] Error: {error} (Arabic)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Arabic)",
+  "noAnalyticsDataAvailableYet": "[AR] No analytics data available yet. (Arabic)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Arabic)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Arabic)",
+  "REDACTED_TOKEN": "[AR] Business Phone Booking Entry Screen - Coming Soon (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
@@ -1472,47 +1472,47 @@
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Arabic)",
+  "copyLink": "[AR] Copy Link (Arabic)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Arabic)",
+  "dashboard1": "[AR] Dashboard (Arabic)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Arabic)",
+  "manageChildAccounts": "[AR] Manage Child Accounts (Arabic)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Arabic)",
+  "grantConsent": "[AR] Grant Consent (Arabic)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Arabic)",
+  "myProfile1": "[AR] My Profile (Arabic)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Arabic)",
+  "submit": "[AR] Submit (Arabic)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "سجل المستخدم: {userEmail}",
+  "userLoguseremail": "[AR] سجل المستخدم: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Arabic)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Arabic)",
+  "ambassadorDashboard": "[AR] Ambassador Dashboard (Arabic)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Arabic)",
+  "phoneBooking": "[AR] Phone Booking (Arabic)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Arabic)",
+  "bookViaChat": "[AR] Book via Chat (Arabic)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
@@ -1520,271 +1520,271 @@
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "الملف التجاري",
+  "businessProfile": "[AR] الملف التجاري",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Arabic)",
+  "REDACTED_TOKEN": "[AR] Business Booking Entry Screen - Coming Soon (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Arabic)",
+  "createNewSurvey": "[AR] Create New Survey (Arabic)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Arabic)",
+  "backgroundRejected": "[AR] Background rejected (Arabic)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Arabic)",
+  "noMediaSelected": "[AR] No media selected (Arabic)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Arabic)",
+  "syncToGoogle": "[AR] Sync to Google (Arabic)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "وقت اللعب الافتراضي",
+  "virtualPlaytime": "[AR] وقت اللعب الافتراضي",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[AR] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[AR] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Arabic)",
+  "invitationSentSuccessfully": "[AR] Invitation sent successfully! (Arabic)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Arabic)",
+  "registering": "[AR] Registering... (Arabic)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Arabic)",
+  "statusAppointmentstatusname": "[AR] Status: {status} (Arabic)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Arabic)",
+  "home1": "[AR] Home (Arabic)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Arabic)",
+  "errorSavingSettingsE": "[AR] Error saving settings: $e (Arabic)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Arabic)",
+  "appVersionAndInformation": "[AR] App version and information (Arabic)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Arabic)",
+  "REDACTED_TOKEN": "[AR] Business Subscription Entry Screen - Coming Soon (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Arabic)",
+  "ekeyEvalue": "[AR] {key}: {value} (Arabic)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "تم معالجة دفعتك بنجاح",
+  "REDACTED_TOKEN": "[AR] تم معالجة دفعتك بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Arabic)",
+  "errorE": "[AR] Error: $e (Arabic)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "عرض الكل",
+  "viewAll1": "[AR] عرض الكل",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Arabic)",
+  "editSurveyComingSoon": "[AR] Edit survey - Coming soon! (Arabic)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Arabic)",
+  "enterOtp": "[AR] Enter OTP (Arabic)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Arabic)",
+  "payment": "[AR] Payment (Arabic)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Arabic)",
+  "REDACTED_TOKEN": "[AR] Automatically confirm new booking requests (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Arabic)",
+  "noRouteDefinedForSettingsname": "[AR] No route defined for {settingsName} (Arabic)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Arabic)",
+  "pleaseSignInToUploadABackground": "[AR] Please sign in to upload a background (Arabic)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[AR] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Arabic)",
+  "staffAvailability": "[AR] Staff Availability (Arabic)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Arabic)",
+  "livePlaytime": "[AR] Live Playtime (Arabic)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Arabic)",
+  "autoconfirmBookings": "[AR] Auto-Confirm Bookings (Arabic)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Arabic)",
+  "REDACTED_TOKEN": "[AR] Redirecting to Stripe checkout for Pro plan... (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Arabic)",
+  "exportAsCsv": "[AR] Export as CSV (Arabic)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Arabic)",
+  "deleteFunctionalityComingSoon": "[AR] Delete functionality coming soon! (Arabic)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Arabic)",
+  "editClient": "[AR] Edit Client (Arabic)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Arabic)",
+  "REDACTED_TOKEN": "[AR] Are you sure you want to delete this message? (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Arabic)",
+  "referralsAmbassadorreferrals": "[AR] Referrals: {referrals} (Arabic)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[AR] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Arabic)",
+  "privacyRequestSentToYourParents": "[AR] Privacy request sent to your parents! (Arabic)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Arabic)",
+  "clientDeletedSuccessfully": "[AR] Client deleted successfully! (Arabic)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Arabic)",
+  "failedToCancelSubscription": "[AR] Failed to cancel subscription (Arabic)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Arabic)",
+  "allLanguages": "[AR] All Languages (Arabic)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Arabic)",
+  "slotDeletedSuccessfully": "[AR] Slot deleted successfully (Arabic)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[AR] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Arabic)",
+  "REDACTED_TOKEN": "[AR] Parents must approve before children can join (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Arabic)",
+  "subscribeToPro1499mo": "[AR] Subscribe to Pro (€14.99/mo) (Arabic)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Arabic)",
+  "REDACTED_TOKEN": "[AR] Business Availability Entry Screen - Coming Soon (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Arabic)",
+  "appointmentsListlength": "[AR] Appointments: {count} (Arabic)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Arabic)",
+  "clearFilters": "[AR] Clear Filters (Arabic)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Arabic)",
+  "submitBooking": "[AR] Submit Booking (Arabic)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Arabic)",
+  "REDACTED_TOKEN": "[AR] Are you sure you want to cancel this appointment? (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Arabic)",
+  "noUpcomingBookings": "[AR] No upcoming bookings (Arabic)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Arabic)",
+  "goBack": "[AR] Go Back (Arabic)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Arabic)",
+  "setup": "[AR] Setup (Arabic)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Arabic)",
+  "inviteChild": "[AR] Invite Child (Arabic)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Arabic)",
+  "goToDashboard": "[AR] Go to Dashboard (Arabic)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Arabic)",
+  "ambassadorQuotaDashboard": "[AR] Ambassador Quota Dashboard (Arabic)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[AR] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Arabic)",
+  "referralCode": "[AR] Referral Code (Arabic)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[AR] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Arabic)",
+  "date": "[AR] Date (Arabic)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Arabic)",
+  "readOnly": "[AR] Read Only (Arabic)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Arabic)",
+  "bookingRequest": "[AR] Booking Request (Arabic)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Arabic)",
+  "advancedReporting": "[AR] • Advanced reporting (Arabic)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Arabic)",
+  "rooms": "[AR] Rooms (Arabic)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Arabic)",
+  "copiedToClipboard": "[AR] Copied to clipboard (Arabic)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Arabic)",
+  "bookingConfirmed": "[AR] Booking Confirmed (Arabic)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
@@ -1792,115 +1792,115 @@
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Arabic)",
+  "clientAddedSuccessfully": "[AR] Client added successfully! (Arabic)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Arabic)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Arabic)",
+  "backgroundApproved": "[AR] Background approved! (Arabic)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Arabic)",
+  "familySupport": "[AR] Family Support (Arabic)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Arabic)",
+  "deletingAccount": "[AR] Deleting account... (Arabic)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Arabic)",
+  "bookAppointment": "[AR] Book Appointment (Arabic)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Arabic)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Arabic)",
+  "delete1": "[AR] Delete (Arabic)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Arabic)",
+  "sendBookingInvite": "[AR] Send Booking Invite (Arabic)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Arabic)",
+  "text": "[AR] Text (Arabic)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Arabic)",
+  "manageSubscription": "[AR] Manage Subscription (Arabic)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Arabic)",
+  "requiresInstallFallback": "[AR] Requires Install Fallback (Arabic)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Arabic)",
+  "paymentConfirmation": "[AR] Payment Confirmation (Arabic)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Arabic)",
+  "promoAppliedYourNextBillIsFree": "[AR] Promo applied! Your next bill is free. (Arabic)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Arabic)",
+  "errorLoadingSlots": "[AR] Error loading slots (Arabic)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Arabic)",
+  "REDACTED_TOKEN": "[AR] Allow other users to find and join this game (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Arabic)",
+  "REDACTED_TOKEN": "[AR] Business Onboarding Screen - Coming Soon (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Arabic)",
+  "activateBusinessProfile": "[AR] Activate Business Profile (Arabic)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Arabic)",
+  "contentNotFound": "[AR] Content not found (Arabic)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Arabic)",
+  "pspecialtynpcontactinfo": "[AR] {specialty}\\n{contactInfo} (Arabic)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Arabic)",
+  "rating": "[AR] Rating (Arabic)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Arabic)",
+  "messages": "[AR] Messages (Arabic)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Arabic)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Arabic)",
+  "becomeAnAmbassador": "[AR] Become an Ambassador (Arabic)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Arabic)",
+  "subscribeNow": "[AR] Subscribe Now (Arabic)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Arabic)",
+  "timeArgsslotformatcontext": "[AR] Time: {time} (Arabic)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Arabic)",
+  "shareViaWhatsapp": "[AR] Share via WhatsApp (Arabic)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
@@ -1908,87 +1908,87 @@
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Arabic)",
+  "shareLink": "[AR] Share Link (Arabic)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[AR] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Arabic)",
+  "deleteAppointment": "[AR] Delete Appointment (Arabic)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Arabic)",
+  "toggleAvailability": "[AR] Toggle Availability (Arabic)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Arabic)",
+  "changePlan": "[AR] Change Plan (Arabic)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Arabic)",
+  "errorLoadingStaff": "[AR] Error loading staff (Arabic)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Arabic)",
+  "updateYourBusinessInformation": "[AR] Update your business information (Arabic)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[AR] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Arabic)",
+  "parentDashboard": "[AR] Parent Dashboard (Arabic)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Arabic)",
+  "menu": "[AR] Menu (Arabic)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Arabic)",
+  "studioBooking": "[AR] Studio Booking (Arabic)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Arabic)",
+  "about1": "[AR] About (Arabic)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Arabic)",
+  "multipleChoice": "[AR] Multiple Choice (Arabic)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Arabic)",
+  "REDACTED_TOKEN": "[AR] Date: {date} (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Arabic)",
+  "REDACTED_TOKEN": "[AR] Studio booking is only available on web (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Arabic)",
+  "errorLoadingBranchesE": "[AR] Error loading branches: $e (Arabic)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Arabic)",
+  "REDACTED_TOKEN": "[AR] \\uD83D\\uDCC5 {dateTime} (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Arabic)",
+  "none": "[AR] None (Arabic)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Arabic)",
+  "failedToUpdateConsentE": "[AR] Failed to update consent: $e (Arabic)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
@@ -1996,27 +1996,27 @@
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Arabic)",
+  "failedToCreateSessionE": "[AR] Failed to create session: $e (Arabic)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Arabic)",
+  "inviteContact": "[AR] Invite Contact (Arabic)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Arabic)",
+  "surveyEditor": "[AR] Survey Editor (Arabic)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Arabic)",
+  "failedToStartBasicSubscriptionE": "[AR] Failed to start Basic subscription: $e (Arabic)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Arabic)",
+  "mySchedule": "[AR] My Schedule (Arabic)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Arabic)",
+  "studioDashboard": "[AR] Studio Dashboard (Arabic)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
@@ -2024,179 +2024,179 @@
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[AR] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[AR] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Arabic)",
+  "settingsSavedSuccessfully": "[AR] Settings saved successfully! (Arabic)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Arabic)",
+  "linkCopiedToClipboard": "[AR] Link copied to clipboard! (Arabic)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Arabic)",
+  "accept1": "[AR] Accept (Arabic)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Arabic)",
+  "noAvailableSlots": "[AR] No available slots (Arabic)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Arabic)",
+  "makeGamePublic": "[AR] Make Game Public (Arabic)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Arabic)",
+  "REDACTED_TOKEN": "[AR] Permission {category} updated to $newValue (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Arabic)",
+  "roomDeletedSuccessfully": "[AR] Room deleted successfully! (Arabic)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Arabic)",
+  "businessCalendar": "[AR] Business Calendar (Arabic)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Arabic)",
+  "addAvailability": "[AR] Add Availability (Arabic)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Arabic)",
+  "ambassadorOnboarding": "[AR] Ambassador Onboarding (Arabic)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Arabic)",
+  "phoneProfileasyncphone": "[AR] Phone: {phone} (Arabic)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Arabic)",
+  "addNewRoom": "[AR] Add New Room (Arabic)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Arabic)",
+  "requireParentApproval": "[AR] Require Parent Approval (Arabic)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Arabic)",
+  "closed": "[AR] Closed (Arabic)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Arabic)",
+  "exportAsPdf": "[AR] Export as PDF (Arabic)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Arabic)",
+  "enableVibration": "[AR] Enable Vibration (Arabic)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Arabic)",
+  "toAvailendformatcontext": "[AR] To: {endTime} (Arabic)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "رمز الترقية الخاص بك: {upgradeCode}",
+  "yourUpgradeCodeUpgradecode": "[AR] رمز الترقية الخاص بك: {upgradeCode}",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[AR] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Arabic)",
+  "country": "[AR] Country (Arabic)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[AR] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Arabic)",
+  "staffArgsstaffdisplayname": "[AR] Staff: {staffName} (Arabic)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Arabic)",
+  "revokeConsent": "[AR] Revoke Consent (Arabic)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Arabic)",
+  "settings1": "[AR] Settings (Arabic)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Arabic)",
+  "cancel1": "[AR] Cancel (Arabic)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Arabic)",
+  "REDACTED_TOKEN": "[AR] Subscription activated successfully! (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[AR] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Arabic)",
+  "broadcast": "[AR] Broadcast (Arabic)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Arabic)",
+  "noEventsScheduledThisWeek": "[AR] No events scheduled this week (Arabic)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Arabic)",
+  "googleCalendar": "[AR] Google Calendar (Arabic)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Arabic)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Arabic)",
+  "childDashboard": "[AR] Child Dashboard (Arabic)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Arabic)",
+  "failedToUploadBackgroundE": "[AR] Failed to upload background: $e (Arabic)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[AR] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[AR] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[AR] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Arabic)",
+  "noAppointments": "[AR] No appointments (Arabic)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Arabic)",
+  "unlimitedBookingsPerWeek": "[AR] • Unlimited bookings per week (Arabic)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Arabic)",
+  "scheduledAtScheduledat": "[AR] Scheduled at: $scheduledAt (Arabic)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Arabic)",
+  "selectStaff": "[AR] Select Staff (Arabic)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Arabic)",
+  "REDACTED_TOKEN": "[AR] Subscription cancelled successfully (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
@@ -2204,39 +2204,39 @@
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Arabic)",
+  "cancelAppointment": "[AR] Cancel Appointment (Arabic)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[AR] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Arabic)",
+  "businessSignup": "[AR] Business Signup (Arabic)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Arabic)",
+  "REDACTED_TOKEN": "[AR] Business Completion Screen - Coming Soon (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Arabic)",
+  "createGame1": "[AR] Create Game (Arabic)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "قيمة إلى عدد صحيح",
+  "valuetoint": "[AR] قيمة إلى عدد صحيح",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Arabic)",
+  "pleaseEnterAPromoCode": "[AR] Please enter a promo code (Arabic)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Arabic)",
+  "errorLoadingAvailabilityE": "[AR] Error loading availability: $e (Arabic)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Arabic)",
+  "parentalControls": "[AR] Parental Controls (Arabic)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
@@ -2244,271 +2244,271 @@
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Arabic)",
+  "childLinkedSuccessfully": "[AR] Child linked successfully! (Arabic)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Arabic)",
+  "create": "[AR] Create (Arabic)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Arabic)",
+  "noExternalMeetingsFound": "[AR] No external meetings found. (Arabic)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Arabic)",
+  "staffSelectionstaffdisplayname": "[AR] Staff: {staffName} (Arabic)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[AR] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Arabic)",
+  "schedulerScreen": "[AR] Scheduler Screen (Arabic)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Arabic)",
+  "clientUpdatedSuccessfully": "[AR] Client updated successfully! (Arabic)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Arabic)",
+  "surveyResponses": "[AR] Survey Responses (Arabic)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Arabic)",
+  "syncToOutlook": "[AR] Sync to Outlook (Arabic)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Arabic)",
+  "saveChanges": "[AR] Save Changes (Arabic)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Arabic)",
+  "pickTime": "[AR] Pick Time (Arabic)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Arabic)",
+  "registrationFailedEtostring": "[AR] Registration failed: {error} (Arabic)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Arabic)",
+  "analytics": "[AR] Analytics (Arabic)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Arabic)",
+  "errorLoadingEvents": "[AR] Error loading events (Arabic)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[AR] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[AR] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Arabic)",
+  "success1": "[AR] Success (Arabic)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[AR] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Arabic)",
+  "fromAvailstartformatcontext": "[AR] From: {startTime} (Arabic)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Arabic)",
+  "readWrite": "[AR] Read & Write (Arabic)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Arabic)",
+  "REDACTED_TOKEN": "[AR] Redirecting to Stripe checkout for Basic plan... (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[AR] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Arabic)",
+  "pickDate": "[AR] Pick Date (Arabic)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Arabic)",
+  "chatBooking": "[AR] Chat Booking (Arabic)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Arabic)",
+  "noQuestionsAdded": "[AR] No questions added (Arabic)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[AR] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[AR] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Arabic)",
+  "typeOpenCall": "[AR] Type: Open Call (Arabic)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[AR] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[AR] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Arabic)",
+  "invoiceCreatedSuccessfully": "[AR] Invoice created successfully! (Arabic)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Arabic)",
+  "noTimeSeriesDataAvailable": "[AR] No time series data available (Arabic)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[AR] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[AR] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Arabic)",
+  "failedToSendPrivacyRequestE": "[AR] Failed to send privacy request: $e (Arabic)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Arabic)",
+  "chooseYourPlan": "[AR] Choose Your Plan (Arabic)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Arabic)",
+  "playtimeManagement": "[AR] Playtime Management (Arabic)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Arabic)",
+  "availability": "[AR] Availability (Arabic)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Arabic)",
+  "eventCreated": "[AR] Event created (Arabic)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Arabic)",
+  "subscribeToBasic499mo": "[AR] Subscribe to Basic (€4.99/mo) (Arabic)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Arabic)",
+  "completion": "[AR] Completion (Arabic)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Arabic)",
+  "supportTicketSubmitted": "[AR] Support ticket submitted (Arabic)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Arabic)",
+  "monetizationSettings": "[AR] Monetization Settings (Arabic)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Arabic)",
+  "noBookingsFound": "[AR] No bookings found (Arabic)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[AR] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Arabic)",
+  "deleteSurvey": "[AR] Delete Survey (Arabic)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Arabic)",
+  "gameApprovedSuccessfully": "[AR] Game approved successfully! (Arabic)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Arabic)",
+  "errorLoadingPermissionsError": "[AR] Error loading permissions: $error (Arabic)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Arabic)",
+  "referrals": "[AR] Referrals (Arabic)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Arabic)",
+  "crm": "[AR] CRM (Arabic)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Arabic)",
+  "gameRejected": "[AR] Game rejected (Arabic)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Arabic)",
+  "appointments": "[AR] Appointments (Arabic)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Arabic)",
+  "onboardingScreen": "[AR] Onboarding Screen (Arabic)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "مرحباً بك في استوديوك",
+  "welcomeToYourStudio": "[AR] مرحباً بك في استوديوك",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Arabic)",
+  "update": "[AR] Update (Arabic)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Arabic)",
+  "retry1": "[AR] Retry (Arabic)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Arabic)",
+  "booking": "[AR] Booking (Arabic)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Arabic)",
+  "parentalSettings": "[AR] Parental Settings (Arabic)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Arabic)",
+  "language": "[AR] Language (Arabic)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Arabic)",
+  "deleteSlot": "[AR] Delete Slot (Arabic)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[AR] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[AR] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Arabic)",
+  "createNewGame": "[AR] Create New Game (Arabic)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Arabic)",
+  "next1": "[AR] Next (Arabic)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Arabic)",
+  "backgroundUploadedSuccessfully": "[AR] Background uploaded successfully! (Arabic)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Arabic)",
+  "noAppointmentRequestsFound": "[AR] No appointment requests found. (Arabic)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
@@ -2516,31 +2516,31 @@
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Arabic)",
+  "restrictMatureContent": "[AR] Restrict mature content (Arabic)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Arabic)",
+  "ambassadors": "[AR] Ambassadors (Arabic)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Arabic)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Arabic)",
+  "paymentWasCancelled": "[AR] Payment was cancelled (Arabic)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Arabic)",
+  "clearAll": "[AR] Clear All (Arabic)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "عرض التفاصيل",
+  "viewDetails": "[AR] عرض التفاصيل",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Arabic)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
@@ -2548,23 +2548,23 @@
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Arabic)",
+  "failedToCreateGameE": "[AR] Failed to create game: $e (Arabic)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Arabic)",
+  "noChartDataAvailable": "[AR] No chart data available (Arabic)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Arabic)",
+  "phonebasedBookingSystem": "[AR] • Phone-based booking system (Arabic)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Arabic)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Arabic)",
+  "invoices": "[AR] Invoices (Arabic)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
@@ -2572,111 +2572,111 @@
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Arabic)",
+  "scheduledAtArgsscheduledat": "[AR] Scheduled at: {scheduledAt} (Arabic)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Arabic)",
+  "REDACTED_TOKEN": "[AR] Duration: {duration} minutes (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Arabic)",
+  "tryAgain": "[AR] Try Again (Arabic)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Arabic)",
+  "deleteBackground": "[AR] Delete Background (Arabic)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Arabic)",
+  "currentTierTiertouppercase": "[AR] Current Tier: {tier} (Arabic)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[AR] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Arabic)",
+  "REDACTED_TOKEN": "[AR] No clients found. Add your first client! (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[AR] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[AR] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Arabic)",
+  "appointmentRequests": "[AR] Appointment Requests (Arabic)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Arabic)",
+  "forward": "[AR] Forward (Arabic)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Arabic)",
+  "roomAddedSuccessfully": "[AR] Room added successfully! (Arabic)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Arabic)",
+  "option": "[AR] • $option (Arabic)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Arabic)",
+  "responseIndex1": "[AR] Response #{number} (Arabic)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Arabic)",
+  "crmDashboardWithAnalytics": "[AR] • CRM dashboard with analytics (Arabic)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Arabic)",
+  "contentLibrary1": "[AR] Content Library (Arabic)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Arabic)",
+  "reply": "[AR] Reply (Arabic)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Arabic)",
+  "subscriptionManagement": "[AR] Subscription Management (Arabic)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Arabic)",
+  "REDACTED_TOKEN": "[AR] Monetization settings will be implemented here (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Arabic)",
+  "failedToApplyPromoCodeE": "[AR] Failed to apply promo code: $e (Arabic)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[AR] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Arabic)",
+  "localizationContribution": "[AR] Localization Contribution (Arabic)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Arabic)",
+  "parentalConsent": "[AR] Parental Consent (Arabic)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Arabic)",
+  "businessSignupScreenComingSoon": "[AR] Business Signup Screen - Coming Soon (Arabic)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Arabic)",
+  "REDACTED_TOKEN": "[AR] Are you sure you want to delete this appointment? (Arabic)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Arabic)",
+  "syncAppointment": "[AR] Sync Appointment (Arabic)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Arabic)",
+  "iConsent": "[AR] I Consent (Arabic)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
@@ -2684,39 +2684,39 @@
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Arabic)",
+  "businessSetupScreenComingSoon": "[AR] Business Setup Screen - Coming Soon (Arabic)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Arabic)",
+  "edit1": "[AR] Edit (Arabic)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Arabic)",
+  "noEventsScheduledThisMonth": "[AR] No events scheduled this month (Arabic)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "لوحة الأعمال",
+  "businessDashboard": "[AR] لوحة الأعمال",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Arabic)",
+  "noMessagesFound": "[AR] No messages found. (Arabic)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[AR] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Arabic)",
+  "manageStaffAvailability": "[AR] Manage Staff Availability (Arabic)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Arabic)",
+  "noMissingTranslations": "[AR] No missing translations (Arabic)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Arabic)",
+  "skip": "[AR] Skip (Arabic)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
@@ -2724,51 +2724,51 @@
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[AR] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Arabic)",
+  "errorLoadingReferralCode": "[AR] Error loading referral code (Arabic)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Arabic)",
+  "allCountries": "[AR] All Countries (Arabic)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Arabic)",
+  "deleteGame": "[AR] Delete Game (Arabic)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Arabic)",
+  "staffManagementTools": "[AR] • Staff management tools (Arabic)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Arabic)",
+  "deleteMessage": "[AR] Delete Message (Arabic)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Arabic)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[AR] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Arabic)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Arabic)",
+  "openingCustomerPortal": "[AR] Opening customer portal... (Arabic)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Arabic)",
+  "signOut": "[AR] Sign Out (Arabic)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Arabic)",
+  "nameProfilename": "[AR] Name: {name} (Arabic)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
@@ -2776,31 +2776,31 @@
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "ترقية للأعمال",
+  "upgradeToBusiness": "[AR] ترقية للأعمال",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Arabic)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Arabic)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Arabic)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Arabic)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Arabic)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
@@ -2808,7 +2808,7 @@
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "عرض الردود",
+  "viewResponses": "[AR] عرض الردود",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
@@ -2816,19 +2816,19 @@
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Arabic)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Arabic)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Arabic)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Arabic)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
@@ -2836,27 +2836,27 @@
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Arabic)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Arabic)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Arabic)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Arabic)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

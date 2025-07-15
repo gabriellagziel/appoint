@@ -1,2862 +1,2862 @@
 {
   "@@locale": "pl",
-  "refresh": "Odśwież",
+  "refresh": "[PL] Odśwież",
   "@refresh": {
     "description": "Description"
   },
-  "home": "[PL] Home",
+  "home": "[PL] [PL] Home",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "Brak sesji",
+  "noSessionsYet": "[PL] Brak sesji",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "OK",
+  "ok": "[PL] OK",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "Wybierz tryb",
+  "playtimeLandingChooseMode": "[PL] Wybierz tryb",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "Zarejestruj się",
+  "signUp": "[PL] Zarejestruj się",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "Zaplanuj wiadomość",
+  "scheduleMessage": "[PL] Zaplanuj wiadomość",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "Odrzuć",
+  "decline": "[PL] Odrzuć",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[PL] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "Zaloguj się",
+  "login": "[PL] Zaloguj się",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "Wybierz znajomych",
+  "playtimeChooseFriends": "[PL] Wybierz znajomych",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "Brak zaproszeń",
+  "noInvites": "[PL] Brak zaproszeń",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "Wybierz czas",
+  "playtimeChooseTime": "[PL] Wybierz czas",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "Sukces",
+  "success": "[PL] Sukces",
   "@success": {
     "description": "Description"
   },
-  "undo": "[PL] Undo",
+  "undo": "[PL] [PL] Undo",
   "@undo": {
     "description": "Description"
   },
-  "opened": "Otwarte",
+  "opened": "[PL] Otwarte",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "Utwórz wirtualną sesję",
+  "createVirtualSession": "[PL] Utwórz wirtualną sesję",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "Wiadomość wysłana pomyślnie",
+  "messageSentSuccessfully": "[PL] Wiadomość wysłana pomyślnie",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "Powtórz",
+  "redo": "[PL] Powtórz",
   "@redo": {
     "description": "Description"
   },
-  "next": "Dalej",
+  "next": "[PL] Dalej",
   "@next": {
     "description": "Description"
   },
-  "search": "Szukaj",
+  "search": "[PL] Szukaj",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "Anuluj potwierdzenie zaproszenia",
+  "cancelInviteConfirmation": "[PL] Anuluj potwierdzenie zaproszenia",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "[PL] Created",
+  "created": "[PL] [PL] Created",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "[PL] Revoke Access",
+  "revokeAccess": "[PL] [PL] Revoke Access",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "Zapisz grupę do rozpoznania",
+  "saveGroupForRecognition": "[PL] Zapisz grupę do rozpoznania",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "Sesja na żywo zaplanowana",
+  "playtimeLiveScheduled": "[PL] Sesja na żywo zaplanowana",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "[PL] Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "[PL] [PL] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "Pobierz",
+  "download": "[PL] Pobierz",
   "@download": {
     "description": "Description"
   },
-  "password": "Hasło",
+  "password": "[PL] Hasło",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "[PL] Error loading family links",
+  "errorLoadingFamilyLinks": "[PL] [PL] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "Anuluj",
+  "cancel": "[PL] Anuluj",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "Utwórz Playtime",
+  "playtimeCreate": "[PL] Utwórz Playtime",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "[PL] Failed to action privacy request",
+  "failedToActionPrivacyRequest": "[PL] [PL] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "Tytuł aplikacji",
+  "appTitle": "[PL] Tytuł aplikacji",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "Akceptuj",
+  "accept": "[PL] Akceptuj",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "Tryb wirtualny",
+  "playtimeModeVirtual": "[PL] Tryb wirtualny",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "Opis Playtime",
+  "playtimeDescription": "[PL] Opis Playtime",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "Usuń",
+  "delete": "[PL] Usuń",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "Sesja wirtualna rozpoczęta",
+  "playtimeVirtualStarted": "[PL] Sesja wirtualna rozpoczęta",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "Utwórz swoją pierwszą grę",
+  "createYourFirstGame": "[PL] Utwórz swoją pierwszą grę",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "Uczestnicy",
+  "participants": "[PL] Uczestnicy",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "[PL] Recipients",
+  "recipients": "[PL] [PL] Recipients",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "Brak wyników",
+  "noResults": "[PL] Brak wyników",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "Tak",
+  "yes": "[PL] Tak",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "Zaproś",
+  "invite": "[PL] Zaproś",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "Tryb na żywo",
+  "playtimeModeLive": "[PL] Tryb na żywo",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "[PL] Done",
+  "done": "[PL] [PL] Done",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "Domyślna wiadomość udostępniania",
+  "defaultShareMessage": "[PL] Domyślna wiadomość udostępniania",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "Nie",
+  "no": "[PL] Nie",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "Centrum Playtime",
+  "playtimeHub": "[PL] Centrum Playtime",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "Utwórz sesję na żywo",
+  "createLiveSession": "[PL] Utwórz sesję na żywo",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "Włącz powiadomienia",
+  "enableNotifications": "[PL] Włącz powiadomienia",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "Zaproś",
+  "invited": "[PL] Zaproś",
   "@invited": {
     "description": "Description"
   },
-  "content": "Treść",
+  "content": "[PL] Treść",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "[PL] Meeting shared successfully",
+  "meetingSharedSuccessfully": "[PL] [PL] Meeting shared successfully",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "Witamy w Playtime",
+  "welcomeToPlaytime": "[PL] Witamy w Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "Pokaż wszystkie",
+  "viewAll": "[PL] Pokaż wszystkie",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "Wirtualne Playtime",
+  "playtimeVirtual": "[PL] Wirtualne Playtime",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "[PL] Staff screen coming soon",
+  "staffScreenTBD": "[PL] [PL] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "Wytnij",
+  "cut": "[PL] Wytnij",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "Zaproszenie anulowane pomyślnie",
+  "inviteCancelledSuccessfully": "[PL] Zaproszenie anulowane pomyślnie",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "[PL] Retry",
+  "retry": "[PL] [PL] Retry",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "Napisz wiadomość broadcast",
+  "composeBroadcastMessage": "[PL] Napisz wiadomość broadcast",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "Wyślij teraz",
+  "sendNow": "[PL] Wyślij teraz",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "Brak gier",
+  "noGamesYet": "[PL] Brak gier",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "Wybierz",
+  "select": "[PL] Wybierz",
   "@select": {
     "description": "Description"
   },
-  "about": "O aplikacji",
+  "about": "[PL] O aplikacji",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Wybierz",
+  "choose": "[PL] Wybierz",
   "@choose": {
     "description": "Description"
   },
-  "profile": "[PL] Profile",
+  "profile": "[PL] [PL] Profile",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "Usuń dziecko",
+  "removeChild": "[PL] Usuń dziecko",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "[PL] Status",
+  "status": "[PL] [PL] Status",
   "@status": {
     "description": "status description"
   },
-  "logout": "Wyloguj się",
+  "logout": "[PL] Wyloguj się",
   "@logout": {
     "description": "Description"
   },
-  "paste": "Wklej",
+  "paste": "[PL] Wklej",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "Witamy",
+  "welcome": "[PL] Witamy",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "Utwórz sesję",
+  "playtimeCreateSession": "[PL] Utwórz sesję",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "[PL] Family Members",
+  "familyMembers": "[PL] [PL] Family Members",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "Prześlij",
+  "upload": "[PL] Prześlij",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "Nadchodzące sesje",
+  "upcomingSessions": "[PL] Nadchodzące sesje",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "Wprowadź nazwę grupy",
+  "enterGroupName": "[PL] Wprowadź nazwę grupy",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "Potwierdź",
+  "confirm": "[PL] Potwierdź",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "Playtime na żywo",
+  "playtimeLive": "[PL] Playtime na żywo",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "Błąd ładowania zaproszeń",
+  "errorLoadingInvites": "[PL] Błąd ładowania zaproszeń",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "[PL] Targeting Filters",
+  "targetingFilters": "[PL] [PL] Targeting Filters",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "Wybierz wideo",
+  "pickVideo": "[PL] Wybierz wideo",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "Gra usunięta",
+  "playtimeGameDeleted": "[PL] Gra usunięta",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "Zaplanuj na później",
+  "scheduleForLater": "[PL] Zaplanuj na później",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "[PL] Access revoked successfully",
+  "accessRevokedSuccessfully": "[PL] [PL] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "Typ",
+  "type": "[PL] Typ",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "Sprawdzanie uprawnień",
+  "checkingPermissions": "[PL] Sprawdzanie uprawnień",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "Kopiuj",
+  "copy": "[PL] Kopiuj",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "Tak, anuluj",
+  "yesCancel": "[PL] Tak, anuluj",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "Email",
+  "email": "[PL] Email",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[PL] Share on WhatsApp",
+  "shareOnWhatsApp": "[PL] [PL] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "Ustawienia powiadomień",
+  "notificationSettings": "[PL] Ustawienia powiadomień",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "[PL] My Profile",
+  "myProfile": "[PL] [PL] My Profile",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "[PL] Revoke",
+  "revoke": "[PL] [PL] Revoke",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "Brak wiadomości broadcast",
+  "noBroadcastMessages": "[PL] Brak wiadomości broadcast",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "Rodzaj żądania",
+  "requestType": "[PL] Rodzaj żądania",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "Powiadomienia",
+  "notifications": "[PL] Powiadomienia",
   "@notifications": {
     "description": "Description"
   },
-  "details": "Szczegóły",
+  "details": "[PL] Szczegóły",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "Anuluj zaproszenie",
+  "cancelInvite": "[PL] Anuluj zaproszenie",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "Utwórz nowe",
+  "createNew": "[PL] Utwórz nowe",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "Ustawienia",
+  "settings": "[PL] Ustawienia",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "Odrzuć Playtime",
+  "playtimeReject": "[PL] Odrzuć Playtime",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "[PL] Error loading profile",
+  "errorLoadingProfile": "[PL] [PL] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "Edytuj",
+  "edit": "[PL] Edytuj",
   "@edit": {
     "description": "Description"
   },
-  "add": "Dodaj",
+  "add": "[PL] Dodaj",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "[PL] Game approved",
+  "playtimeGameApproved": "[PL] [PL] Game approved",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "Zapomniałeś hasła?",
+  "forgotPassword": "[PL] Zapomniałeś hasła?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "[PL] Family Dashboard",
+  "familyDashboard": "[PL] [PL] Family Dashboard",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "Ładowanie",
+  "loading": "[PL] Ładowanie",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "Szybkie akcje",
+  "quickActions": "[PL] Szybkie akcje",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "Tytuł Playtime",
+  "playtimeTitle": "[PL] Tytuł Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "[PL] OTP resent successfully",
+  "otpResentSuccessfully": "[PL] [PL] OTP resent successfully",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "Błąd sprawdzania uprawnień",
+  "errorCheckingPermissions": "[PL] Błąd sprawdzania uprawnień",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "Ekran klienta do ustalenia",
+  "clientScreenTBD": "[PL] Ekran klienta do ustalenia",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "[PL] FCM Token",
+  "fcmToken": "[PL] [PL] FCM Token",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "Wybierz obraz",
+  "pickImage": "[PL] Wybierz obraz",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "Poprzedni",
+  "previous": "[PL] Poprzedni",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[PL] No profile found",
+  "noProfileFound": "[PL] [PL] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "[PL] No family members yet",
+  "noFamilyMembersYet": "[PL] [PL] No family members yet",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "[PL] Media (Optional)",
+  "mediaOptional": "[PL] [PL] Media (Optional)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "Wiadomość zapisana pomyślnie",
+  "messageSavedSuccessfully": "[PL] Wiadomość zapisana pomyślnie",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "Zaplanuj na",
+  "scheduledFor": "[PL] Zaplanuj na",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "Panel sterowania",
+  "dashboard": "[PL] Panel sterowania",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "Brak uprawnień do broadcast",
+  "noPermissionForBroadcast": "[PL] Brak uprawnień do broadcast",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[PL] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "Szczegóły zaproszenia",
+  "inviteDetail": "[PL] Szczegóły zaproszenia",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "Zaplanuj",
+  "scheduled": "[PL] Zaplanuj",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "[PL] Failed to resend OTP",
+  "failedToResendOtp": "[PL] [PL] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "Planowanie",
+  "scheduling": "[PL] Planowanie",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "Błąd zapisywania wiadomości",
+  "errorSavingMessage": "[PL] Błąd zapisywania wiadomości",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "Zapisz",
+  "save": "[PL] Zapisz",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "[PL] Approve",
+  "playtimeApprove": "[PL] [PL] Approve",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "Utwórz swoją pierwszą sesję",
+  "createYourFirstSession": "[PL] Utwórz swoją pierwszą sesję",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "[PL] Game rejected",
+  "playtimeGameRejected": "[PL] [PL] Game rejected",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "[PL] Failed to revoke access",
+  "failedToRevokeAccess": "[PL] [PL] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "[PL] Recent Games",
+  "recentGames": "[PL] [PL] Recent Games",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "[PL] Customize Message",
+  "customizeMessage": "[PL] [PL] Customize Message",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "Nie udało się anulować zaproszenia",
+  "failedToCancelInvite": "[PL] Nie udało się anulować zaproszenia",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "Błąd wysyłania wiadomości",
+  "errorSendingMessage": "[PL] Błąd wysyłania wiadomości",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "Potwierdź hasło",
+  "confirmPassword": "[PL] Potwierdź hasło",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "[PL] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[PL] [PL] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "Połączeni użytkownicy",
+  "connectedChildren": "[PL] Połączeni użytkownicy",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "Udostępnij",
+  "share": "[PL] Udostępnij",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "Wprowadź nazwę gry",
+  "playtimeEnterGameName": "[PL] Wprowadź nazwę gry",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "[PL] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[PL] [PL] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "[PL] My Invites",
+  "myInvites": "[PL] [PL] My Invites",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "[PL] Create Game",
+  "createGame": "[PL] [PL] Create Game",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[PL] Group Name (Optional)",
+  "groupNameOptional": "[PL] [PL] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "[PL] No playtime sessions found.",
+  "playtimeNoSessions": "[PL] [PL] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[PL] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[PL] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[PL] [PL] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "[PL] Close",
+  "close": "[PL] [PL] Close",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "[PL] Known group detected",
+  "knownGroupDetected": "[PL] [PL] Known group detected",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "[PL] Back",
+  "back": "[PL] [PL] Back",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "[PL] Choose a game",
+  "playtimeChooseGame": "[PL] [PL] Choose a game",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "[PL] Manage Permissions",
+  "managePermissions": "[PL] [PL] Manage Permissions",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "[PL] Poll Options",
+  "pollOptions": "[PL] [PL] Poll Options",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "[PL] Clicked",
+  "clicked": "[PL] [PL] Clicked",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "[PL] Link",
+  "link": "[PL] [PL] Link",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "[PL] Your meeting is ready! Join now",
+  "meetingReadyMessage": "[PL] [PL] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "[PL] Pending Invites",
+  "pendingInvites": "[PL] [PL] Pending Invites",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "[PL] Status:",
+  "statusColon": "[PL] [PL] Status:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[PL] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[PL] [PL] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[PL] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[PL] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[PL] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[PL] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[PL] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[PL] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[PL] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[PL] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[PL] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[PL] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[PL] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[PL] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[PL] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[PL] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[PL] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[PL] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[PL] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[PL] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Polish)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Polish)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Polish)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Polish)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[PL] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[PL] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[PL] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[PL] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[PL] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[PL] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[PL] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[PL] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[PL] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[PL] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[PL] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[PL] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[PL] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[PL] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[PL] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[PL] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[PL] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[PL] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[PL] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[PL] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[PL] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[PL] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[PL] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[PL] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[PL] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[PL] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[PL] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[PL] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[PL] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[PL] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[PL] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[PL] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[PL] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[PL] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[PL] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[PL] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[PL] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[PL] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[PL] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[PL] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[PL] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[PL] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[PL] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[PL] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[PL] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[PL] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[PL] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[PL] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[PL] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[PL] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[PL] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[PL] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[PL] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[PL] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[PL] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[PL] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[PL] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[PL] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[PL] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[PL] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[PL] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[PL] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Polish)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Polish)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Polish)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Polish)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Polish)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Polish)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Polish)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Polish)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[PL] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Polish)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Polish)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Polish)",
+  "upload1": "[PL] Upload (Polish)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Polish)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Polish)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Polish)",
+  "REDACTED_TOKEN": "[PL] Virtual session created! Inviting friends... (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Polish)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Polish)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Polish)",
+  "rewards": "[PL] Rewards (Polish)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Polish)",
+  "time": "[PL] Time (Polish)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[PL] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Polish)",
+  "noSlots": "[PL] No slots (Polish)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Polish)",
+  "signIn": "[PL] Sign In (Polish)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Polish)",
+  "homeFeedScreen": "[PL] Home Feed Screen (Polish)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Polish)",
+  "selectLocation": "[PL] Select Location (Polish)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Polish)",
+  "noTicketsYet": "[PL] No tickets yet (Polish)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Polish)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Polish)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Polish)",
+  "subscriptionUnavailable": "[PL] Subscription unavailable (Polish)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Polish)",
+  "confirmBooking": "[PL] Confirm Booking (Polish)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Polish)",
+  "failedToUpdatePermissionE": "[PL] Failed to update permission: $e (Polish)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Polish)",
+  "reject": "[PL] Reject (Polish)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Polish)",
+  "REDACTED_TOKEN": "[PL] Ambassador Status: {ambassadorStatus} (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[PL] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Polish)",
+  "checkingSubscription": "[PL] Checking subscription... (Polish)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Polish)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Polish)",
+  "noContentAvailableYet": "[PL] No content available yet (Polish)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Polish)",
+  "resolve": "[PL] Resolve (Polish)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Polish)",
+  "errorLoadingSurveysError": "[PL] Error loading surveys: $error (Polish)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[PL] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Polish)",
+  "getHelpWithYourAccount": "[PL] Get help with your account (Polish)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Polish)",
+  "pay": "[PL] Pay (Polish)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[PL] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Polish)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Polish)",
+  "changesSavedSuccessfully": "[PL] Changes saved successfully! (Polish)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Polish)",
+  "createNewInvoice": "[PL] Create New Invoice (Polish)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Polish)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Polish)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Polish)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Polish)",
+  "profileSaved": "[PL] Profile saved! (Polish)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Polish)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Polish)",
+  "valuetointk": "[PL] \\${value}K (Polish)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Polish)",
+  "deleteAccount": "[PL] Delete Account (Polish)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Polish)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Polish)",
+  "businessOnboarding": "[PL] Business Onboarding (Polish)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Polish)",
+  "addNewClient": "[PL] Add New Client (Polish)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Polish)",
+  "darkMode": "[PL] Dark Mode (Polish)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[PL] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[PL] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Polish)",
+  "REDACTED_TOKEN": "[PL] You will receive a confirmation email shortly. (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Polish)",
+  "addQuestion": "[PL] Add Question (Polish)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Polish)",
+  "privacyPolicy": "[PL] Privacy Policy (Polish)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Polish)",
+  "branchesLengthBranches": "[PL] {branchCount} branches (Polish)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Polish)",
+  "join": "[PL] Join (Polish)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Polish)",
+  "businessSubscription": "[PL] Business Subscription (Polish)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Polish)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[PL] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Polish)",
+  "surveyManagement": "[PL] Survey Management (Polish)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[PL] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Polish)",
+  "noRoomsFoundAddYourFirstRoom": "[PL] No rooms found. Add your first room! (Polish)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Polish)",
+  "readOurPrivacyPolicy": "[PL] Read our privacy policy (Polish)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Polish)",
+  "couldNotOpenPrivacyPolicy": "[PL] Could not open privacy policy (Polish)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Polish)",
+  "refresh1": "[PL] Refresh (Polish)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Polish)",
+  "roomUpdatedSuccessfully": "[PL] Room updated successfully! (Polish)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Polish)",
+  "contentDetail": "[PL] Content Detail (Polish)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Polish)",
+  "cancelSubscription": "[PL] Cancel Subscription (Polish)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Polish)",
+  "REDACTED_TOKEN": "[PL] Successfully registered as Ambassador! (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Polish)",
+  "save1": "[PL] Save (Polish)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Polish)",
+  "copy1": "[PL] Copy (Polish)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Polish)",
+  "failedToSendInvitationE": "[PL] Failed to send invitation: $e (Polish)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Polish)",
+  "surveyScore": "[PL] Survey Score (Polish)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[PL] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Polish)",
+  "noAppointmentsFound": "[PL] No appointments found. (Polish)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Polish)",
+  "responseDetail": "[PL] Response Detail (Polish)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Polish)",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Polish)",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Polish)",
+  "failedToStartProSubscriptionE": "[PL] Failed to start Pro subscription: $e (Polish)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Polish)",
+  "REDACTED_TOKEN": "[PL] Business Dashboard Entry Screen - Coming Soon (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Polish)",
+  "contentFilter": "[PL] Content Filter (Polish)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Polish)",
+  "helpSupport": "[PL] Help & Support (Polish)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Polish)",
+  "editRoom": "[PL] Edit Room (Polish)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[PL] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[PL] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Polish)",
+  "REDACTED_TOKEN": "[PL] Business CRM Entry Screen - Coming Soon (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[PL] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[PL] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Polish)",
+  "errorLoadingDashboardError": "[PL] Error loading dashboard: $error (Polish)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Polish)",
+  "gameDeletedSuccessfully": "[PL] Game deleted successfully! (Polish)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Polish)",
+  "viewResponsesComingSoon": "[PL] View responses - Coming soon! (Polish)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[PL] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Polish)",
+  "errorLoadingRewards": "[PL] Error loading rewards (Polish)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Polish)",
+  "failedToDeleteAccountE": "[PL] Failed to delete account: $e (Polish)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Polish)",
+  "invited1": "[PL] Invited (Polish)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Polish)",
+  "noBranchesAvailable": "[PL] No branches available (Polish)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Polish)",
+  "errorError": "[PL] Error: $error (Polish)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Polish)",
+  "noEvents": "[PL] No events (Polish)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Polish)",
+  "gameCreatedSuccessfully": "[PL] Game created successfully! (Polish)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Polish)",
+  "add1": "[PL] Add (Polish)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[PL] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Polish)",
+  "eventstarttimeEventendtime": "[PL] {startTime} - {endTime} (Polish)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Polish)",
+  "allowPlaytime": "[PL] Allow Playtime (Polish)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Polish)",
+  "clients": "[PL] Clients (Polish)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Polish)",
+  "noAmbassadorDataAvailable": "[PL] No ambassador data available (Polish)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Polish)",
+  "backgroundDeletedSuccessfully": "[PL] Background deleted successfully! (Polish)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Polish)",
+  "errorSnapshoterror": "[PL] Error: {error} (Polish)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Polish)",
+  "noAnalyticsDataAvailableYet": "[PL] No analytics data available yet. (Polish)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Polish)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Polish)",
+  "REDACTED_TOKEN": "[PL] Business Phone Booking Entry Screen - Coming Soon (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Polish)",
+  "verification": "[PL] Verification (Polish)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Polish)",
+  "copyLink": "[PL] Copy Link (Polish)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Polish)",
+  "dashboard1": "[PL] Dashboard (Polish)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Polish)",
+  "manageChildAccounts": "[PL] Manage Child Accounts (Polish)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Polish)",
+  "grantConsent": "[PL] Grant Consent (Polish)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Polish)",
+  "myProfile1": "[PL] My Profile (Polish)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Polish)",
+  "submit": "[PL] Submit (Polish)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[PL] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Polish)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Polish)",
+  "ambassadorDashboard": "[PL] Ambassador Dashboard (Polish)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Polish)",
+  "phoneBooking": "[PL] Phone Booking (Polish)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Polish)",
+  "bookViaChat": "[PL] Book via Chat (Polish)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "Błąd",
+  "error": "[PL] Błąd",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Polish)",
+  "businessProfile": "[PL] Business Profile (Polish)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Polish)",
+  "REDACTED_TOKEN": "[PL] Business Booking Entry Screen - Coming Soon (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Polish)",
+  "createNewSurvey": "[PL] Create New Survey (Polish)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Polish)",
+  "backgroundRejected": "[PL] Background rejected (Polish)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Polish)",
+  "noMediaSelected": "[PL] No media selected (Polish)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Polish)",
+  "syncToGoogle": "[PL] Sync to Google (Polish)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Polish)",
+  "virtualPlaytime": "[PL] Virtual Playtime (Polish)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[PL] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[PL] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Polish)",
+  "invitationSentSuccessfully": "[PL] Invitation sent successfully! (Polish)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Polish)",
+  "registering": "[PL] Registering... (Polish)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Polish)",
+  "statusAppointmentstatusname": "[PL] Status: {status} (Polish)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Polish)",
+  "home1": "[PL] Home (Polish)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Polish)",
+  "errorSavingSettingsE": "[PL] Error saving settings: $e (Polish)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Polish)",
+  "appVersionAndInformation": "[PL] App version and information (Polish)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Polish)",
+  "REDACTED_TOKEN": "[PL] Business Subscription Entry Screen - Coming Soon (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Polish)",
+  "ekeyEvalue": "[PL] {key}: {value} (Polish)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Polish)",
+  "REDACTED_TOKEN": "[PL] Your payment has been processed successfully. (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Polish)",
+  "errorE": "[PL] Error: $e (Polish)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Polish)",
+  "viewAll1": "[PL] View All (Polish)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Polish)",
+  "editSurveyComingSoon": "[PL] Edit survey - Coming soon! (Polish)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Polish)",
+  "enterOtp": "[PL] Enter OTP (Polish)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Polish)",
+  "payment": "[PL] Payment (Polish)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Polish)",
+  "REDACTED_TOKEN": "[PL] Automatically confirm new booking requests (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Polish)",
+  "noRouteDefinedForSettingsname": "[PL] No route defined for {settingsName} (Polish)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Polish)",
+  "pleaseSignInToUploadABackground": "[PL] Please sign in to upload a background (Polish)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[PL] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Polish)",
+  "staffAvailability": "[PL] Staff Availability (Polish)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Polish)",
+  "livePlaytime": "[PL] Live Playtime (Polish)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Polish)",
+  "autoconfirmBookings": "[PL] Auto-Confirm Bookings (Polish)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Polish)",
+  "REDACTED_TOKEN": "[PL] Redirecting to Stripe checkout for Pro plan... (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Polish)",
+  "exportAsCsv": "[PL] Export as CSV (Polish)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Polish)",
+  "deleteFunctionalityComingSoon": "[PL] Delete functionality coming soon! (Polish)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Polish)",
+  "editClient": "[PL] Edit Client (Polish)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Polish)",
+  "REDACTED_TOKEN": "[PL] Are you sure you want to delete this message? (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Polish)",
+  "referralsAmbassadorreferrals": "[PL] Referrals: {referrals} (Polish)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[PL] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Polish)",
+  "privacyRequestSentToYourParents": "[PL] Privacy request sent to your parents! (Polish)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Polish)",
+  "clientDeletedSuccessfully": "[PL] Client deleted successfully! (Polish)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Polish)",
+  "failedToCancelSubscription": "[PL] Failed to cancel subscription (Polish)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Polish)",
+  "allLanguages": "[PL] All Languages (Polish)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Polish)",
+  "slotDeletedSuccessfully": "[PL] Slot deleted successfully (Polish)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[PL] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Polish)",
+  "REDACTED_TOKEN": "[PL] Parents must approve before children can join (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Polish)",
+  "subscribeToPro1499mo": "[PL] Subscribe to Pro (€14.99/mo) (Polish)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Polish)",
+  "REDACTED_TOKEN": "[PL] Business Availability Entry Screen - Coming Soon (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Polish)",
+  "appointmentsListlength": "[PL] Appointments: {count} (Polish)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Polish)",
+  "clearFilters": "[PL] Clear Filters (Polish)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Polish)",
+  "submitBooking": "[PL] Submit Booking (Polish)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Polish)",
+  "REDACTED_TOKEN": "[PL] Are you sure you want to cancel this appointment? (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Polish)",
+  "noUpcomingBookings": "[PL] No upcoming bookings (Polish)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Polish)",
+  "goBack": "[PL] Go Back (Polish)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Polish)",
+  "setup": "[PL] Setup (Polish)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Polish)",
+  "inviteChild": "[PL] Invite Child (Polish)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Polish)",
+  "goToDashboard": "[PL] Go to Dashboard (Polish)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Polish)",
+  "ambassadorQuotaDashboard": "[PL] Ambassador Quota Dashboard (Polish)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[PL] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Polish)",
+  "referralCode": "[PL] Referral Code (Polish)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[PL] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Polish)",
+  "date": "[PL] Date (Polish)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Polish)",
+  "readOnly": "[PL] Read Only (Polish)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Polish)",
+  "bookingRequest": "[PL] Booking Request (Polish)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Polish)",
+  "advancedReporting": "[PL] • Advanced reporting (Polish)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Polish)",
+  "rooms": "[PL] Rooms (Polish)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Polish)",
+  "copiedToClipboard": "[PL] Copied to clipboard (Polish)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Polish)",
+  "bookingConfirmed": "[PL] Booking Confirmed (Polish)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Polish)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Polish)",
+  "clientAddedSuccessfully": "[PL] Client added successfully! (Polish)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Polish)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Polish)",
+  "backgroundApproved": "[PL] Background approved! (Polish)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Polish)",
+  "familySupport": "[PL] Family Support (Polish)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Polish)",
+  "deletingAccount": "[PL] Deleting account... (Polish)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Polish)",
+  "bookAppointment": "[PL] Book Appointment (Polish)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Polish)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Polish)",
+  "delete1": "[PL] Delete (Polish)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Polish)",
+  "sendBookingInvite": "[PL] Send Booking Invite (Polish)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Polish)",
+  "text": "[PL] Text (Polish)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Polish)",
+  "manageSubscription": "[PL] Manage Subscription (Polish)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Polish)",
+  "requiresInstallFallback": "[PL] Requires Install Fallback (Polish)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Polish)",
+  "paymentConfirmation": "[PL] Payment Confirmation (Polish)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Polish)",
+  "promoAppliedYourNextBillIsFree": "[PL] Promo applied! Your next bill is free. (Polish)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Polish)",
+  "errorLoadingSlots": "[PL] Error loading slots (Polish)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Polish)",
+  "REDACTED_TOKEN": "[PL] Allow other users to find and join this game (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Polish)",
+  "REDACTED_TOKEN": "[PL] Business Onboarding Screen - Coming Soon (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Polish)",
+  "activateBusinessProfile": "[PL] Activate Business Profile (Polish)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Polish)",
+  "contentNotFound": "[PL] Content not found (Polish)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Polish)",
+  "pspecialtynpcontactinfo": "[PL] {specialty}\\n{contactInfo} (Polish)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Polish)",
+  "rating": "[PL] Rating (Polish)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Polish)",
+  "messages": "[PL] Messages (Polish)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Polish)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Polish)",
+  "becomeAnAmbassador": "[PL] Become an Ambassador (Polish)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Polish)",
+  "subscribeNow": "[PL] Subscribe Now (Polish)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Polish)",
+  "timeArgsslotformatcontext": "[PL] Time: {time} (Polish)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Polish)",
+  "shareViaWhatsapp": "[PL] Share via WhatsApp (Polish)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Polish)",
+  "users1": "[PL] Users (Polish)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Polish)",
+  "shareLink": "[PL] Share Link (Polish)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[PL] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Polish)",
+  "deleteAppointment": "[PL] Delete Appointment (Polish)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Polish)",
+  "toggleAvailability": "[PL] Toggle Availability (Polish)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Polish)",
+  "changePlan": "[PL] Change Plan (Polish)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Polish)",
+  "errorLoadingStaff": "[PL] Error loading staff (Polish)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Polish)",
+  "updateYourBusinessInformation": "[PL] Update your business information (Polish)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[PL] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Polish)",
+  "parentDashboard": "[PL] Parent Dashboard (Polish)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Polish)",
+  "menu": "[PL] Menu (Polish)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Polish)",
+  "studioBooking": "[PL] Studio Booking (Polish)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Polish)",
+  "about1": "[PL] About (Polish)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Polish)",
+  "multipleChoice": "[PL] Multiple Choice (Polish)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Polish)",
+  "REDACTED_TOKEN": "[PL] Date: {date} (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Polish)",
+  "REDACTED_TOKEN": "[PL] Studio booking is only available on web (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Polish)",
+  "errorLoadingBranchesE": "[PL] Error loading branches: $e (Polish)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Polish)",
+  "REDACTED_TOKEN": "[PL] \\uD83D\\uDCC5 {dateTime} (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Polish)",
+  "none": "[PL] None (Polish)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Polish)",
+  "failedToUpdateConsentE": "[PL] Failed to update consent: $e (Polish)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Polish)",
+  "welcome1": "[PL] Welcome (Polish)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Polish)",
+  "failedToCreateSessionE": "[PL] Failed to create session: $e (Polish)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Polish)",
+  "inviteContact": "[PL] Invite Contact (Polish)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Polish)",
+  "surveyEditor": "[PL] Survey Editor (Polish)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Polish)",
+  "failedToStartBasicSubscriptionE": "[PL] Failed to start Basic subscription: $e (Polish)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Polish)",
+  "mySchedule": "[PL] My Schedule (Polish)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Polish)",
+  "studioDashboard": "[PL] Studio Dashboard (Polish)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Polish)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[PL] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[PL] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Polish)",
+  "settingsSavedSuccessfully": "[PL] Settings saved successfully! (Polish)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Polish)",
+  "linkCopiedToClipboard": "[PL] Link copied to clipboard! (Polish)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Polish)",
+  "accept1": "[PL] Accept (Polish)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Polish)",
+  "noAvailableSlots": "[PL] No available slots (Polish)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Polish)",
+  "makeGamePublic": "[PL] Make Game Public (Polish)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Polish)",
+  "REDACTED_TOKEN": "[PL] Permission {category} updated to $newValue (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Polish)",
+  "roomDeletedSuccessfully": "[PL] Room deleted successfully! (Polish)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Polish)",
+  "businessCalendar": "[PL] Business Calendar (Polish)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Polish)",
+  "addAvailability": "[PL] Add Availability (Polish)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Polish)",
+  "ambassadorOnboarding": "[PL] Ambassador Onboarding (Polish)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Polish)",
+  "phoneProfileasyncphone": "[PL] Phone: {phone} (Polish)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Polish)",
+  "addNewRoom": "[PL] Add New Room (Polish)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Polish)",
+  "requireParentApproval": "[PL] Require Parent Approval (Polish)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Polish)",
+  "closed": "[PL] Closed (Polish)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Polish)",
+  "exportAsPdf": "[PL] Export as PDF (Polish)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Polish)",
+  "enableVibration": "[PL] Enable Vibration (Polish)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Polish)",
+  "toAvailendformatcontext": "[PL] To: {endTime} (Polish)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Polish)",
+  "yourUpgradeCodeUpgradecode": "[PL] Your upgrade code: $upgradeCode (Polish)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[PL] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Polish)",
+  "country": "[PL] Country (Polish)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[PL] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Polish)",
+  "staffArgsstaffdisplayname": "[PL] Staff: {staffName} (Polish)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Polish)",
+  "revokeConsent": "[PL] Revoke Consent (Polish)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Polish)",
+  "settings1": "[PL] Settings (Polish)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Polish)",
+  "cancel1": "[PL] Cancel (Polish)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Polish)",
+  "REDACTED_TOKEN": "[PL] Subscription activated successfully! (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[PL] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Polish)",
+  "broadcast": "[PL] Broadcast (Polish)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Polish)",
+  "noEventsScheduledThisWeek": "[PL] No events scheduled this week (Polish)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Polish)",
+  "googleCalendar": "[PL] Google Calendar (Polish)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Polish)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Polish)",
+  "childDashboard": "[PL] Child Dashboard (Polish)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Polish)",
+  "failedToUploadBackgroundE": "[PL] Failed to upload background: $e (Polish)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[PL] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[PL] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[PL] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Polish)",
+  "noAppointments": "[PL] No appointments (Polish)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Polish)",
+  "unlimitedBookingsPerWeek": "[PL] • Unlimited bookings per week (Polish)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Polish)",
+  "scheduledAtScheduledat": "[PL] Scheduled at: $scheduledAt (Polish)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Polish)",
+  "selectStaff": "[PL] Select Staff (Polish)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Polish)",
+  "REDACTED_TOKEN": "[PL] Subscription cancelled successfully (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Polish)",
+  "cancelAppointment": "[PL] Cancel Appointment (Polish)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[PL] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Polish)",
+  "businessSignup": "[PL] Business Signup (Polish)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Polish)",
+  "REDACTED_TOKEN": "[PL] Business Completion Screen - Coming Soon (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Polish)",
+  "createGame1": "[PL] Create Game (Polish)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Polish)",
+  "valuetoint": "[PL] {value} (Polish)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Polish)",
+  "pleaseEnterAPromoCode": "[PL] Please enter a promo code (Polish)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Polish)",
+  "errorLoadingAvailabilityE": "[PL] Error loading availability: $e (Polish)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Polish)",
+  "parentalControls": "[PL] Parental Controls (Polish)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Polish)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Polish)",
+  "childLinkedSuccessfully": "[PL] Child linked successfully! (Polish)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Polish)",
+  "create": "[PL] Create (Polish)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Polish)",
+  "noExternalMeetingsFound": "[PL] No external meetings found. (Polish)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Polish)",
+  "staffSelectionstaffdisplayname": "[PL] Staff: {staffName} (Polish)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[PL] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Polish)",
+  "schedulerScreen": "[PL] Scheduler Screen (Polish)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Polish)",
+  "clientUpdatedSuccessfully": "[PL] Client updated successfully! (Polish)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Polish)",
+  "surveyResponses": "[PL] Survey Responses (Polish)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Polish)",
+  "syncToOutlook": "[PL] Sync to Outlook (Polish)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Polish)",
+  "saveChanges": "[PL] Save Changes (Polish)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Polish)",
+  "pickTime": "[PL] Pick Time (Polish)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Polish)",
+  "registrationFailedEtostring": "[PL] Registration failed: {error} (Polish)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Polish)",
+  "analytics": "[PL] Analytics (Polish)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Polish)",
+  "errorLoadingEvents": "[PL] Error loading events (Polish)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[PL] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[PL] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Polish)",
+  "success1": "[PL] Success (Polish)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[PL] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Polish)",
+  "fromAvailstartformatcontext": "[PL] From: {startTime} (Polish)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Polish)",
+  "readWrite": "[PL] Read & Write (Polish)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Polish)",
+  "REDACTED_TOKEN": "[PL] Redirecting to Stripe checkout for Basic plan... (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[PL] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Polish)",
+  "pickDate": "[PL] Pick Date (Polish)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Polish)",
+  "chatBooking": "[PL] Chat Booking (Polish)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Polish)",
+  "noQuestionsAdded": "[PL] No questions added (Polish)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[PL] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[PL] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Polish)",
+  "typeOpenCall": "[PL] Type: Open Call (Polish)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[PL] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[PL] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Polish)",
+  "invoiceCreatedSuccessfully": "[PL] Invoice created successfully! (Polish)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Polish)",
+  "noTimeSeriesDataAvailable": "[PL] No time series data available (Polish)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[PL] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[PL] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Polish)",
+  "failedToSendPrivacyRequestE": "[PL] Failed to send privacy request: $e (Polish)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Polish)",
+  "chooseYourPlan": "[PL] Choose Your Plan (Polish)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Polish)",
+  "playtimeManagement": "[PL] Playtime Management (Polish)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Polish)",
+  "availability": "[PL] Availability (Polish)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Polish)",
+  "eventCreated": "[PL] Event created (Polish)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Polish)",
+  "subscribeToBasic499mo": "[PL] Subscribe to Basic (€4.99/mo) (Polish)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Polish)",
+  "completion": "[PL] Completion (Polish)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Polish)",
+  "supportTicketSubmitted": "[PL] Support ticket submitted (Polish)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Polish)",
+  "monetizationSettings": "[PL] Monetization Settings (Polish)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Polish)",
+  "noBookingsFound": "[PL] No bookings found (Polish)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[PL] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Polish)",
+  "deleteSurvey": "[PL] Delete Survey (Polish)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Polish)",
+  "gameApprovedSuccessfully": "[PL] Game approved successfully! (Polish)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Polish)",
+  "errorLoadingPermissionsError": "[PL] Error loading permissions: $error (Polish)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Polish)",
+  "referrals": "[PL] Referrals (Polish)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Polish)",
+  "crm": "[PL] CRM (Polish)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Polish)",
+  "gameRejected": "[PL] Game rejected (Polish)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Polish)",
+  "appointments": "[PL] Appointments (Polish)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Polish)",
+  "onboardingScreen": "[PL] Onboarding Screen (Polish)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Polish)",
+  "welcomeToYourStudio": "[PL] Welcome to your studio (Polish)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Polish)",
+  "update": "[PL] Update (Polish)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Polish)",
+  "retry1": "[PL] Retry (Polish)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Polish)",
+  "booking": "[PL] Booking (Polish)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Polish)",
+  "parentalSettings": "[PL] Parental Settings (Polish)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Polish)",
+  "language": "[PL] Language (Polish)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Polish)",
+  "deleteSlot": "[PL] Delete Slot (Polish)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[PL] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[PL] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Polish)",
+  "createNewGame": "[PL] Create New Game (Polish)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Polish)",
+  "next1": "[PL] Next (Polish)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Polish)",
+  "backgroundUploadedSuccessfully": "[PL] Background uploaded successfully! (Polish)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Polish)",
+  "noAppointmentRequestsFound": "[PL] No appointment requests found. (Polish)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Polish)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Polish)",
+  "restrictMatureContent": "[PL] Restrict mature content (Polish)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Polish)",
+  "ambassadors": "[PL] Ambassadors (Polish)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Polish)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Polish)",
+  "paymentWasCancelled": "[PL] Payment was cancelled (Polish)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Polish)",
+  "clearAll": "[PL] Clear All (Polish)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Polish)",
+  "viewDetails": "[PL] View Details (Polish)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Polish)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Polish)",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Polish)",
+  "failedToCreateGameE": "[PL] Failed to create game: $e (Polish)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Polish)",
+  "noChartDataAvailable": "[PL] No chart data available (Polish)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Polish)",
+  "phonebasedBookingSystem": "[PL] • Phone-based booking system (Polish)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Polish)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Polish)",
+  "invoices": "[PL] Invoices (Polish)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Polish)",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Polish)",
+  "scheduledAtArgsscheduledat": "[PL] Scheduled at: {scheduledAt} (Polish)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Polish)",
+  "REDACTED_TOKEN": "[PL] Duration: {duration} minutes (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Polish)",
+  "tryAgain": "[PL] Try Again (Polish)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Polish)",
+  "deleteBackground": "[PL] Delete Background (Polish)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Polish)",
+  "currentTierTiertouppercase": "[PL] Current Tier: {tier} (Polish)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[PL] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Polish)",
+  "REDACTED_TOKEN": "[PL] No clients found. Add your first client! (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[PL] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[PL] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Polish)",
+  "appointmentRequests": "[PL] Appointment Requests (Polish)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Polish)",
+  "forward": "[PL] Forward (Polish)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Polish)",
+  "roomAddedSuccessfully": "[PL] Room added successfully! (Polish)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Polish)",
+  "option": "[PL] • $option (Polish)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Polish)",
+  "responseIndex1": "[PL] Response #{number} (Polish)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Polish)",
+  "crmDashboardWithAnalytics": "[PL] • CRM dashboard with analytics (Polish)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Polish)",
+  "contentLibrary1": "[PL] Content Library (Polish)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Polish)",
+  "reply": "[PL] Reply (Polish)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Polish)",
+  "subscriptionManagement": "[PL] Subscription Management (Polish)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Polish)",
+  "REDACTED_TOKEN": "[PL] Monetization settings will be implemented here (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Polish)",
+  "failedToApplyPromoCodeE": "[PL] Failed to apply promo code: $e (Polish)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[PL] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Polish)",
+  "localizationContribution": "[PL] Localization Contribution (Polish)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Polish)",
+  "parentalConsent": "[PL] Parental Consent (Polish)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Polish)",
+  "businessSignupScreenComingSoon": "[PL] Business Signup Screen - Coming Soon (Polish)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Polish)",
+  "REDACTED_TOKEN": "[PL] Are you sure you want to delete this appointment? (Polish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Polish)",
+  "syncAppointment": "[PL] Sync Appointment (Polish)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Polish)",
+  "iConsent": "[PL] I Consent (Polish)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Polish)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Polish)",
+  "businessSetupScreenComingSoon": "[PL] Business Setup Screen - Coming Soon (Polish)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Polish)",
+  "edit1": "[PL] Edit (Polish)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Polish)",
+  "noEventsScheduledThisMonth": "[PL] No events scheduled this month (Polish)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Polish)",
+  "businessDashboard": "[PL] Business Dashboard (Polish)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Polish)",
+  "noMessagesFound": "[PL] No messages found. (Polish)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[PL] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Polish)",
+  "manageStaffAvailability": "[PL] Manage Staff Availability (Polish)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Polish)",
+  "noMissingTranslations": "[PL] No missing translations (Polish)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Polish)",
+  "skip": "[PL] Skip (Polish)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[PL] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Polish)",
+  "errorLoadingReferralCode": "[PL] Error loading referral code (Polish)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Polish)",
+  "allCountries": "[PL] All Countries (Polish)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Polish)",
+  "deleteGame": "[PL] Delete Game (Polish)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Polish)",
+  "staffManagementTools": "[PL] • Staff management tools (Polish)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Polish)",
+  "deleteMessage": "[PL] Delete Message (Polish)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Polish)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[PL] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Polish)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Polish)",
+  "openingCustomerPortal": "[PL] Opening customer portal... (Polish)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Polish)",
+  "signOut": "[PL] Sign Out (Polish)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Polish)",
+  "nameProfilename": "[PL] Name: {name} (Polish)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Polish)",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Polish)",
+  "upgradeToBusiness": "[PL] Upgrade to Business (Polish)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Polish)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Polish)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Polish)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Polish)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Polish)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Polish)",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Polish)",
+  "viewResponses": "[PL] View Responses (Polish)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Polish)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Polish)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Polish)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Polish)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Polish)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Polish)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Polish)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Polish)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Polish)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Polish)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

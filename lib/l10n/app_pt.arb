@@ -1,2862 +1,2862 @@
 {
   "@@locale": "pt",
-  "refresh": "[PT] Refresh",
+  "refresh": "[PT] [PT] Refresh",
   "@refresh": {
     "description": "Description"
   },
-  "home": "[PT] Home",
+  "home": "[PT] [PT] Home",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "[PT] No sessions yet",
+  "noSessionsYet": "[PT] [PT] No sessions yet",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "OK",
+  "ok": "[PT] OK",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "Escolha um modo",
+  "playtimeLandingChooseMode": "[PT] Escolha um modo",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "[PT] Sign Up",
+  "signUp": "[PT] [PT] Sign Up",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "Agendar mensagem",
+  "scheduleMessage": "[PT] Agendar mensagem",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "Recusar",
+  "decline": "[PT] Recusar",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[PT] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "Entrar",
+  "login": "[PT] Entrar",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "Escolha amigos",
+  "playtimeChooseFriends": "[PT] Escolha amigos",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "[PT] No invites",
+  "noInvites": "[PT] [PT] No invites",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "[PT] Choose a time",
+  "playtimeChooseTime": "[PT] [PT] Choose a time",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "Sucesso",
+  "success": "[PT] Sucesso",
   "@success": {
     "description": "Description"
   },
-  "undo": "Desfazer",
+  "undo": "[PT] Desfazer",
   "@undo": {
     "description": "Description"
   },
-  "opened": "[PT] Opened",
+  "opened": "[PT] [PT] Opened",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "Criar sessão virtual",
+  "createVirtualSession": "[PT] Criar sessão virtual",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "Mensagem enviada com sucesso",
+  "messageSentSuccessfully": "[PT] Mensagem enviada com sucesso",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "Refazer",
+  "redo": "[PT] Refazer",
   "@redo": {
     "description": "Description"
   },
-  "next": "Próximo",
+  "next": "[PT] Próximo",
   "@next": {
     "description": "Description"
   },
-  "search": "Pesquisar",
+  "search": "[PT] Pesquisar",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "[PT] Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "[PT] [PT] Are you sure you want to cancel this invite?",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "Criado",
+  "created": "[PT] Criado",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "Revogar acesso",
+  "revokeAccess": "[PT] Revogar acesso",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[PT] Save Group for Recognition",
+  "saveGroupForRecognition": "[PT] [PT] Save Group for Recognition",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "Sessão ao vivo agendada",
+  "playtimeLiveScheduled": "[PT] Sessão ao vivo agendada",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "[PT] Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "[PT] [PT] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "Baixar",
+  "download": "[PT] Baixar",
   "@download": {
     "description": "Description"
   },
-  "password": "Senha",
+  "password": "[PT] Senha",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "[PT] Error loading family links",
+  "errorLoadingFamilyLinks": "[PT] [PT] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "Cancelar",
+  "cancel": "[PT] Cancelar",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "Criar Playtime",
+  "playtimeCreate": "[PT] Criar Playtime",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "Falha ao processar pedido de privacidade",
+  "failedToActionPrivacyRequest": "[PT] Falha ao processar pedido de privacidade",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "[PT] APP-OINT",
+  "appTitle": "[PT] [PT] APP-OINT",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "Aceitar",
+  "accept": "[PT] Aceitar",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "Modo virtual",
+  "playtimeModeVirtual": "[PT] Modo virtual",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "Descrição do Playtime",
+  "playtimeDescription": "[PT] Descrição do Playtime",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "Excluir",
+  "delete": "[PT] Excluir",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "[PT] Virtual playtime started!",
+  "playtimeVirtualStarted": "[PT] [PT] Virtual playtime started!",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "Crie seu primeiro jogo",
+  "createYourFirstGame": "[PT] Crie seu primeiro jogo",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "Participantes",
+  "participants": "[PT] Participantes",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "[PT] Recipients",
+  "recipients": "[PT] [PT] Recipients",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "Sem resultados",
+  "noResults": "[PT] Sem resultados",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "Sim",
+  "yes": "[PT] Sim",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "[PT] Invite",
+  "invite": "[PT] [PT] Invite",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "Modo ao vivo",
+  "playtimeModeLive": "[PT] Modo ao vivo",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "[PT] Done",
+  "done": "[PT] [PT] Done",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "[PT] Let's meet via Appoint!",
+  "defaultShareMessage": "[PT] [PT] Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "Não",
+  "no": "[PT] Não",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "Hub do Playtime",
+  "playtimeHub": "[PT] Hub do Playtime",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "Criar sessão ao vivo",
+  "createLiveSession": "[PT] Criar sessão ao vivo",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "[PT] Enable Notifications",
+  "enableNotifications": "[PT] [PT] Enable Notifications",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "[PT] Invited",
+  "invited": "[PT] [PT] Invited",
   "@invited": {
     "description": "Description"
   },
-  "content": "[PT] Content",
+  "content": "[PT] [PT] Content",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "Reunião compartilhada com sucesso",
+  "meetingSharedSuccessfully": "[PT] Reunião compartilhada com sucesso",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "[PT] Welcome to Playtime",
+  "welcomeToPlaytime": "[PT] [PT] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "Ver tudo",
+  "viewAll": "[PT] Ver tudo",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "Playtime virtual",
+  "playtimeVirtual": "[PT] Playtime virtual",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "[PT] Staff screen coming soon",
+  "staffScreenTBD": "[PT] [PT] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "[PT] Cut",
+  "cut": "[PT] [PT] Cut",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "[PT] Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "[PT] [PT] Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "Tentar novamente",
+  "retry": "[PT] Tentar novamente",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "[PT] Compose Broadcast Message",
+  "composeBroadcastMessage": "[PT] [PT] Compose Broadcast Message",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "[PT] Send Now",
+  "sendNow": "[PT] [PT] Send Now",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "[PT] No games yet",
+  "noGamesYet": "[PT] [PT] No games yet",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "[PT] Select",
+  "select": "[PT] [PT] Select",
   "@select": {
     "description": "Description"
   },
-  "about": "[PT] About",
+  "about": "[PT] [PT] About",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "[PT] Choose",
+  "choose": "[PT] [PT] Choose",
   "@choose": {
     "description": "Description"
   },
-  "profile": "[PT] Profile",
+  "profile": "[PT] [PT] Profile",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "[PT] Remove Child",
+  "removeChild": "[PT] [PT] Remove Child",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "[PT] Status",
+  "status": "[PT] [PT] Status",
   "@status": {
     "description": "status description"
   },
-  "logout": "[PT] Logout",
+  "logout": "[PT] [PT] Logout",
   "@logout": {
     "description": "Description"
   },
-  "paste": "[PT] Paste",
+  "paste": "[PT] [PT] Paste",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "[PT] Welcome",
+  "welcome": "[PT] [PT] Welcome",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "[PT] Create a Playtime Session",
+  "playtimeCreateSession": "[PT] [PT] Create a Playtime Session",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "[PT] Family Members",
+  "familyMembers": "[PT] [PT] Family Members",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "[PT] Upload",
+  "upload": "[PT] [PT] Upload",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "[PT] Upcoming Sessions",
+  "upcomingSessions": "[PT] [PT] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "[PT] Enter group name",
+  "enterGroupName": "[PT] [PT] Enter group name",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "[PT] Confirm",
+  "confirm": "[PT] [PT] Confirm",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "[PT] Live Play",
+  "playtimeLive": "[PT] [PT] Live Play",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "[PT] Error loading invites",
+  "errorLoadingInvites": "[PT] [PT] Error loading invites",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "[PT] Targeting Filters",
+  "targetingFilters": "[PT] [PT] Targeting Filters",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "[PT] Pick Video",
+  "pickVideo": "[PT] [PT] Pick Video",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "[PT] Game deleted",
+  "playtimeGameDeleted": "[PT] [PT] Game deleted",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "[PT] Schedule for Later",
+  "scheduleForLater": "[PT] [PT] Schedule for Later",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "[PT] Access revoked successfully",
+  "accessRevokedSuccessfully": "[PT] [PT] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "[PT] Type",
+  "type": "[PT] [PT] Type",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "[PT] Checking permissions...",
+  "checkingPermissions": "[PT] [PT] Checking permissions...",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "[PT] Copy",
+  "copy": "[PT] [PT] Copy",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "[PT] Yes, Cancel",
+  "yesCancel": "[PT] [PT] Yes, Cancel",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "[PT] Email",
+  "email": "[PT] [PT] Email",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[PT] Share on WhatsApp",
+  "shareOnWhatsApp": "[PT] [PT] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "[PT] Notification Settings",
+  "notificationSettings": "[PT] [PT] Notification Settings",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "[PT] My Profile",
+  "myProfile": "[PT] [PT] My Profile",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "[PT] Revoke",
+  "revoke": "[PT] [PT] Revoke",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "[PT] No messages yet",
+  "noBroadcastMessages": "[PT] [PT] No messages yet",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "[PT] Request Type",
+  "requestType": "[PT] [PT] Request Type",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "[PT] Notifications",
+  "notifications": "[PT] [PT] Notifications",
   "@notifications": {
     "description": "Description"
   },
-  "details": "[PT] Details",
+  "details": "[PT] [PT] Details",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "[PT] Cancel Invite",
+  "cancelInvite": "[PT] [PT] Cancel Invite",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "[PT] Create New",
+  "createNew": "[PT] [PT] Create New",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "[PT] Settings",
+  "settings": "[PT] [PT] Settings",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "[PT] Reject",
+  "playtimeReject": "[PT] [PT] Reject",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "[PT] Error loading profile",
+  "errorLoadingProfile": "[PT] [PT] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "[PT] Edit",
+  "edit": "[PT] [PT] Edit",
   "@edit": {
     "description": "Description"
   },
-  "add": "[PT] Add",
+  "add": "[PT] [PT] Add",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "[PT] Game approved",
+  "playtimeGameApproved": "[PT] [PT] Game approved",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "[PT] Forgot Password?",
+  "forgotPassword": "[PT] [PT] Forgot Password?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "[PT] Family Dashboard",
+  "familyDashboard": "[PT] [PT] Family Dashboard",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "[PT] Loading...",
+  "loading": "[PT] [PT] Loading...",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "[PT] Quick Actions",
+  "quickActions": "[PT] [PT] Quick Actions",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "[PT] Playtime",
+  "playtimeTitle": "[PT] [PT] Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "[PT] OTP resent successfully",
+  "otpResentSuccessfully": "[PT] [PT] OTP resent successfully",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "[PT] Error checking permissions",
+  "errorCheckingPermissions": "[PT] [PT] Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "[PT] Client screen coming soon",
+  "clientScreenTBD": "[PT] [PT] Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "[PT] FCM Token",
+  "fcmToken": "[PT] [PT] FCM Token",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "[PT] Pick Image",
+  "pickImage": "[PT] [PT] Pick Image",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "[PT] Previous",
+  "previous": "[PT] [PT] Previous",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[PT] No profile found",
+  "noProfileFound": "[PT] [PT] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "[PT] No family members yet",
+  "noFamilyMembersYet": "[PT] [PT] No family members yet",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "[PT] Media (Optional)",
+  "mediaOptional": "[PT] [PT] Media (Optional)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "[PT] Message saved successfully",
+  "messageSavedSuccessfully": "[PT] [PT] Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "[PT] Scheduled for",
+  "scheduledFor": "[PT] [PT] Scheduled for",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "[PT] Dashboard",
+  "dashboard": "[PT] [PT] Dashboard",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "[PT] No permission for broadcast",
+  "noPermissionForBroadcast": "[PT] [PT] No permission for broadcast",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[PT] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "[PT] Invite Details",
+  "inviteDetail": "[PT] [PT] Invite Details",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "[PT] Scheduled",
+  "scheduled": "[PT] [PT] Scheduled",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "[PT] Failed to resend OTP",
+  "failedToResendOtp": "[PT] [PT] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "[PT] Scheduling",
+  "scheduling": "[PT] [PT] Scheduling",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "[PT] Error saving message",
+  "errorSavingMessage": "[PT] [PT] Error saving message",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "[PT] Save",
+  "save": "[PT] [PT] Save",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "[PT] Approve",
+  "playtimeApprove": "[PT] [PT] Approve",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "[PT] Create your first session",
+  "createYourFirstSession": "[PT] [PT] Create your first session",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "[PT] Game rejected",
+  "playtimeGameRejected": "[PT] [PT] Game rejected",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "[PT] Failed to revoke access",
+  "failedToRevokeAccess": "[PT] [PT] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "[PT] Recent Games",
+  "recentGames": "[PT] [PT] Recent Games",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "[PT] Customize Message",
+  "customizeMessage": "[PT] [PT] Customize Message",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "[PT] Failed to cancel invite",
+  "failedToCancelInvite": "[PT] [PT] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "[PT] Error sending message",
+  "errorSendingMessage": "[PT] [PT] Error sending message",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "[PT] Confirm Password",
+  "confirmPassword": "[PT] [PT] Confirm Password",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "[PT] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[PT] [PT] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "[PT] Connected Children",
+  "connectedChildren": "[PT] [PT] Connected Children",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "[PT] Share",
+  "share": "[PT] [PT] Share",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "[PT] Enter game name",
+  "playtimeEnterGameName": "[PT] [PT] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "[PT] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[PT] [PT] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "[PT] My Invites",
+  "myInvites": "[PT] [PT] My Invites",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "[PT] Create Game",
+  "createGame": "[PT] [PT] Create Game",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[PT] Group Name (Optional)",
+  "groupNameOptional": "[PT] [PT] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "[PT] No playtime sessions found.",
+  "playtimeNoSessions": "[PT] [PT] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[PT] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[PT] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[PT] [PT] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "[PT] Close",
+  "close": "[PT] [PT] Close",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "[PT] Known group detected",
+  "knownGroupDetected": "[PT] [PT] Known group detected",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "[PT] Back",
+  "back": "[PT] [PT] Back",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "[PT] Choose a game",
+  "playtimeChooseGame": "[PT] [PT] Choose a game",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "[PT] Manage Permissions",
+  "managePermissions": "[PT] [PT] Manage Permissions",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "[PT] Poll Options",
+  "pollOptions": "[PT] [PT] Poll Options",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "[PT] Clicked",
+  "clicked": "[PT] [PT] Clicked",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "[PT] Link",
+  "link": "[PT] [PT] Link",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "[PT] Your meeting is ready! Join now",
+  "meetingReadyMessage": "[PT] [PT] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "[PT] Pending Invites",
+  "pendingInvites": "[PT] [PT] Pending Invites",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "[PT] Status:",
+  "statusColon": "[PT] [PT] Status:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[PT] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[PT] [PT] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[PT] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[PT] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[PT] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[PT] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[PT] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[PT] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[PT] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[PT] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[PT] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[PT] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[PT] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[PT] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[PT] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[PT] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[PT] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[PT] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[PT] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[PT] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Portuguese)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Portuguese)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Portuguese)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Portuguese)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[PT] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[PT] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[PT] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[PT] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[PT] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[PT] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[PT] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[PT] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[PT] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[PT] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[PT] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[PT] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[PT] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[PT] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[PT] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[PT] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[PT] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[PT] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[PT] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[PT] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[PT] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[PT] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[PT] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[PT] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[PT] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[PT] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[PT] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[PT] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[PT] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[PT] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[PT] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[PT] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[PT] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[PT] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[PT] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[PT] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[PT] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[PT] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[PT] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[PT] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[PT] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[PT] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[PT] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[PT] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[PT] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[PT] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[PT] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[PT] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[PT] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[PT] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[PT] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[PT] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[PT] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[PT] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[PT] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[PT] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[PT] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[PT] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[PT] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[PT] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[PT] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[PT] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Portuguese)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Portuguese)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Portuguese)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Portuguese)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Portuguese)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Portuguese)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Portuguese)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Portuguese)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[PT] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Portuguese)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Portuguese)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Portuguese)",
+  "upload1": "[PT] Upload (Portuguese)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Portuguese)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Portuguese)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Virtual session created! Inviting friends... (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Portuguese)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Portuguese)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Portuguese)",
+  "rewards": "[PT] Rewards (Portuguese)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Portuguese)",
+  "time": "[PT] Time (Portuguese)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[PT] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Portuguese)",
+  "noSlots": "[PT] No slots (Portuguese)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Portuguese)",
+  "signIn": "[PT] Sign In (Portuguese)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Portuguese)",
+  "homeFeedScreen": "[PT] Home Feed Screen (Portuguese)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Portuguese)",
+  "selectLocation": "[PT] Select Location (Portuguese)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Portuguese)",
+  "noTicketsYet": "[PT] No tickets yet (Portuguese)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Portuguese)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Portuguese)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Portuguese)",
+  "subscriptionUnavailable": "[PT] Subscription unavailable (Portuguese)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Portuguese)",
+  "confirmBooking": "[PT] Confirm Booking (Portuguese)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Portuguese)",
+  "failedToUpdatePermissionE": "[PT] Failed to update permission: $e (Portuguese)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Portuguese)",
+  "reject": "[PT] Reject (Portuguese)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Ambassador Status: {ambassadorStatus} (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[PT] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Portuguese)",
+  "checkingSubscription": "[PT] Checking subscription... (Portuguese)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Portuguese)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Portuguese)",
+  "noContentAvailableYet": "[PT] No content available yet (Portuguese)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Portuguese)",
+  "resolve": "[PT] Resolve (Portuguese)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Portuguese)",
+  "errorLoadingSurveysError": "[PT] Error loading surveys: $error (Portuguese)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[PT] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Portuguese)",
+  "getHelpWithYourAccount": "[PT] Get help with your account (Portuguese)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Portuguese)",
+  "pay": "[PT] Pay (Portuguese)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[PT] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Portuguese)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Portuguese)",
+  "changesSavedSuccessfully": "[PT] Changes saved successfully! (Portuguese)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Portuguese)",
+  "createNewInvoice": "[PT] Create New Invoice (Portuguese)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Portuguese)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Portuguese)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Portuguese)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Portuguese)",
+  "profileSaved": "[PT] Profile saved! (Portuguese)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Portuguese)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Portuguese)",
+  "valuetointk": "[PT] \\${value}K (Portuguese)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Portuguese)",
+  "deleteAccount": "[PT] Delete Account (Portuguese)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Portuguese)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Portuguese)",
+  "businessOnboarding": "[PT] Business Onboarding (Portuguese)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Portuguese)",
+  "addNewClient": "[PT] Add New Client (Portuguese)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Portuguese)",
+  "darkMode": "[PT] Dark Mode (Portuguese)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[PT] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[PT] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Portuguese)",
+  "REDACTED_TOKEN": "[PT] You will receive a confirmation email shortly. (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Portuguese)",
+  "addQuestion": "[PT] Add Question (Portuguese)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Portuguese)",
+  "privacyPolicy": "[PT] Privacy Policy (Portuguese)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Portuguese)",
+  "branchesLengthBranches": "[PT] {branchCount} branches (Portuguese)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Portuguese)",
+  "join": "[PT] Join (Portuguese)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Portuguese)",
+  "businessSubscription": "[PT] Business Subscription (Portuguese)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Portuguese)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[PT] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Portuguese)",
+  "surveyManagement": "[PT] Survey Management (Portuguese)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[PT] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Portuguese)",
+  "noRoomsFoundAddYourFirstRoom": "[PT] No rooms found. Add your first room! (Portuguese)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Portuguese)",
+  "readOurPrivacyPolicy": "[PT] Read our privacy policy (Portuguese)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Portuguese)",
+  "couldNotOpenPrivacyPolicy": "[PT] Could not open privacy policy (Portuguese)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Portuguese)",
+  "refresh1": "[PT] Refresh (Portuguese)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Portuguese)",
+  "roomUpdatedSuccessfully": "[PT] Room updated successfully! (Portuguese)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Portuguese)",
+  "contentDetail": "[PT] Content Detail (Portuguese)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Portuguese)",
+  "cancelSubscription": "[PT] Cancel Subscription (Portuguese)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Successfully registered as Ambassador! (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Portuguese)",
+  "save1": "[PT] Save (Portuguese)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Portuguese)",
+  "copy1": "[PT] Copy (Portuguese)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Portuguese)",
+  "failedToSendInvitationE": "[PT] Failed to send invitation: $e (Portuguese)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Portuguese)",
+  "surveyScore": "[PT] Survey Score (Portuguese)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[PT] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Portuguese)",
+  "noAppointmentsFound": "[PT] No appointments found. (Portuguese)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Portuguese)",
+  "responseDetail": "[PT] Response Detail (Portuguese)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Portuguese)",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Portuguese)",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Portuguese)",
+  "failedToStartProSubscriptionE": "[PT] Failed to start Pro subscription: $e (Portuguese)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Business Dashboard Entry Screen - Coming Soon (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Portuguese)",
+  "contentFilter": "[PT] Content Filter (Portuguese)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Portuguese)",
+  "helpSupport": "[PT] Help & Support (Portuguese)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Portuguese)",
+  "editRoom": "[PT] Edit Room (Portuguese)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[PT] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[PT] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Business CRM Entry Screen - Coming Soon (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[PT] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[PT] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Portuguese)",
+  "errorLoadingDashboardError": "[PT] Error loading dashboard: $error (Portuguese)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Portuguese)",
+  "gameDeletedSuccessfully": "[PT] Game deleted successfully! (Portuguese)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Portuguese)",
+  "viewResponsesComingSoon": "[PT] View responses - Coming soon! (Portuguese)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[PT] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Portuguese)",
+  "errorLoadingRewards": "[PT] Error loading rewards (Portuguese)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Portuguese)",
+  "failedToDeleteAccountE": "[PT] Failed to delete account: $e (Portuguese)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Portuguese)",
+  "invited1": "[PT] Invited (Portuguese)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Portuguese)",
+  "noBranchesAvailable": "[PT] No branches available (Portuguese)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Portuguese)",
+  "errorError": "[PT] Error: $error (Portuguese)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Portuguese)",
+  "noEvents": "[PT] No events (Portuguese)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Portuguese)",
+  "gameCreatedSuccessfully": "[PT] Game created successfully! (Portuguese)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Portuguese)",
+  "add1": "[PT] Add (Portuguese)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[PT] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Portuguese)",
+  "eventstarttimeEventendtime": "[PT] {startTime} - {endTime} (Portuguese)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Portuguese)",
+  "allowPlaytime": "[PT] Allow Playtime (Portuguese)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Portuguese)",
+  "clients": "[PT] Clients (Portuguese)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Portuguese)",
+  "noAmbassadorDataAvailable": "[PT] No ambassador data available (Portuguese)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Portuguese)",
+  "backgroundDeletedSuccessfully": "[PT] Background deleted successfully! (Portuguese)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Portuguese)",
+  "errorSnapshoterror": "[PT] Error: {error} (Portuguese)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Portuguese)",
+  "noAnalyticsDataAvailableYet": "[PT] No analytics data available yet. (Portuguese)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Portuguese)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Business Phone Booking Entry Screen - Coming Soon (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Portuguese)",
+  "verification": "[PT] Verification (Portuguese)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Portuguese)",
+  "copyLink": "[PT] Copy Link (Portuguese)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Portuguese)",
+  "dashboard1": "[PT] Dashboard (Portuguese)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Portuguese)",
+  "manageChildAccounts": "[PT] Manage Child Accounts (Portuguese)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Portuguese)",
+  "grantConsent": "[PT] Grant Consent (Portuguese)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Portuguese)",
+  "myProfile1": "[PT] My Profile (Portuguese)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Portuguese)",
+  "submit": "[PT] Submit (Portuguese)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[PT] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Portuguese)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Portuguese)",
+  "ambassadorDashboard": "[PT] Ambassador Dashboard (Portuguese)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Portuguese)",
+  "phoneBooking": "[PT] Phone Booking (Portuguese)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Portuguese)",
+  "bookViaChat": "[PT] Book via Chat (Portuguese)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "Erro",
+  "error": "[PT] Erro",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Portuguese)",
+  "businessProfile": "[PT] Business Profile (Portuguese)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Business Booking Entry Screen - Coming Soon (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Portuguese)",
+  "createNewSurvey": "[PT] Create New Survey (Portuguese)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Portuguese)",
+  "backgroundRejected": "[PT] Background rejected (Portuguese)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Portuguese)",
+  "noMediaSelected": "[PT] No media selected (Portuguese)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Portuguese)",
+  "syncToGoogle": "[PT] Sync to Google (Portuguese)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Portuguese)",
+  "virtualPlaytime": "[PT] Virtual Playtime (Portuguese)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[PT] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[PT] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Portuguese)",
+  "invitationSentSuccessfully": "[PT] Invitation sent successfully! (Portuguese)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Portuguese)",
+  "registering": "[PT] Registering... (Portuguese)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Portuguese)",
+  "statusAppointmentstatusname": "[PT] Status: {status} (Portuguese)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Portuguese)",
+  "home1": "[PT] Home (Portuguese)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Portuguese)",
+  "errorSavingSettingsE": "[PT] Error saving settings: $e (Portuguese)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Portuguese)",
+  "appVersionAndInformation": "[PT] App version and information (Portuguese)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Business Subscription Entry Screen - Coming Soon (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Portuguese)",
+  "ekeyEvalue": "[PT] {key}: {value} (Portuguese)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Your payment has been processed successfully. (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Portuguese)",
+  "errorE": "[PT] Error: $e (Portuguese)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Portuguese)",
+  "viewAll1": "[PT] View All (Portuguese)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Portuguese)",
+  "editSurveyComingSoon": "[PT] Edit survey - Coming soon! (Portuguese)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Portuguese)",
+  "enterOtp": "[PT] Enter OTP (Portuguese)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Portuguese)",
+  "payment": "[PT] Payment (Portuguese)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Automatically confirm new booking requests (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Portuguese)",
+  "noRouteDefinedForSettingsname": "[PT] No route defined for {settingsName} (Portuguese)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Portuguese)",
+  "pleaseSignInToUploadABackground": "[PT] Please sign in to upload a background (Portuguese)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[PT] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Portuguese)",
+  "staffAvailability": "[PT] Staff Availability (Portuguese)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Portuguese)",
+  "livePlaytime": "[PT] Live Playtime (Portuguese)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Portuguese)",
+  "autoconfirmBookings": "[PT] Auto-Confirm Bookings (Portuguese)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Redirecting to Stripe checkout for Pro plan... (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Portuguese)",
+  "exportAsCsv": "[PT] Export as CSV (Portuguese)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Portuguese)",
+  "deleteFunctionalityComingSoon": "[PT] Delete functionality coming soon! (Portuguese)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Portuguese)",
+  "editClient": "[PT] Edit Client (Portuguese)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Are you sure you want to delete this message? (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Portuguese)",
+  "referralsAmbassadorreferrals": "[PT] Referrals: {referrals} (Portuguese)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[PT] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Portuguese)",
+  "privacyRequestSentToYourParents": "[PT] Privacy request sent to your parents! (Portuguese)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Portuguese)",
+  "clientDeletedSuccessfully": "[PT] Client deleted successfully! (Portuguese)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Portuguese)",
+  "failedToCancelSubscription": "[PT] Failed to cancel subscription (Portuguese)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Portuguese)",
+  "allLanguages": "[PT] All Languages (Portuguese)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Portuguese)",
+  "slotDeletedSuccessfully": "[PT] Slot deleted successfully (Portuguese)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[PT] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Parents must approve before children can join (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Portuguese)",
+  "subscribeToPro1499mo": "[PT] Subscribe to Pro (€14.99/mo) (Portuguese)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Business Availability Entry Screen - Coming Soon (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Portuguese)",
+  "appointmentsListlength": "[PT] Appointments: {count} (Portuguese)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Portuguese)",
+  "clearFilters": "[PT] Clear Filters (Portuguese)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Portuguese)",
+  "submitBooking": "[PT] Submit Booking (Portuguese)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Are you sure you want to cancel this appointment? (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Portuguese)",
+  "noUpcomingBookings": "[PT] No upcoming bookings (Portuguese)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Portuguese)",
+  "goBack": "[PT] Go Back (Portuguese)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Portuguese)",
+  "setup": "[PT] Setup (Portuguese)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Portuguese)",
+  "inviteChild": "[PT] Invite Child (Portuguese)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Portuguese)",
+  "goToDashboard": "[PT] Go to Dashboard (Portuguese)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Portuguese)",
+  "ambassadorQuotaDashboard": "[PT] Ambassador Quota Dashboard (Portuguese)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[PT] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Portuguese)",
+  "referralCode": "[PT] Referral Code (Portuguese)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[PT] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Portuguese)",
+  "date": "[PT] Date (Portuguese)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Portuguese)",
+  "readOnly": "[PT] Read Only (Portuguese)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Portuguese)",
+  "bookingRequest": "[PT] Booking Request (Portuguese)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Portuguese)",
+  "advancedReporting": "[PT] • Advanced reporting (Portuguese)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Portuguese)",
+  "rooms": "[PT] Rooms (Portuguese)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Portuguese)",
+  "copiedToClipboard": "[PT] Copied to clipboard (Portuguese)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Portuguese)",
+  "bookingConfirmed": "[PT] Booking Confirmed (Portuguese)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Portuguese)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Portuguese)",
+  "clientAddedSuccessfully": "[PT] Client added successfully! (Portuguese)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Portuguese)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Portuguese)",
+  "backgroundApproved": "[PT] Background approved! (Portuguese)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Portuguese)",
+  "familySupport": "[PT] Family Support (Portuguese)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Portuguese)",
+  "deletingAccount": "[PT] Deleting account... (Portuguese)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Portuguese)",
+  "bookAppointment": "[PT] Book Appointment (Portuguese)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Portuguese)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Portuguese)",
+  "delete1": "[PT] Delete (Portuguese)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Portuguese)",
+  "sendBookingInvite": "[PT] Send Booking Invite (Portuguese)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Portuguese)",
+  "text": "[PT] Text (Portuguese)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Portuguese)",
+  "manageSubscription": "[PT] Manage Subscription (Portuguese)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Portuguese)",
+  "requiresInstallFallback": "[PT] Requires Install Fallback (Portuguese)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Portuguese)",
+  "paymentConfirmation": "[PT] Payment Confirmation (Portuguese)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Portuguese)",
+  "promoAppliedYourNextBillIsFree": "[PT] Promo applied! Your next bill is free. (Portuguese)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Portuguese)",
+  "errorLoadingSlots": "[PT] Error loading slots (Portuguese)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Allow other users to find and join this game (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Business Onboarding Screen - Coming Soon (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Portuguese)",
+  "activateBusinessProfile": "[PT] Activate Business Profile (Portuguese)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Portuguese)",
+  "contentNotFound": "[PT] Content not found (Portuguese)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Portuguese)",
+  "pspecialtynpcontactinfo": "[PT] {specialty}\\n{contactInfo} (Portuguese)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Portuguese)",
+  "rating": "[PT] Rating (Portuguese)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Portuguese)",
+  "messages": "[PT] Messages (Portuguese)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Portuguese)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Portuguese)",
+  "becomeAnAmbassador": "[PT] Become an Ambassador (Portuguese)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Portuguese)",
+  "subscribeNow": "[PT] Subscribe Now (Portuguese)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Portuguese)",
+  "timeArgsslotformatcontext": "[PT] Time: {time} (Portuguese)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Portuguese)",
+  "shareViaWhatsapp": "[PT] Share via WhatsApp (Portuguese)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Portuguese)",
+  "users1": "[PT] Users (Portuguese)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Portuguese)",
+  "shareLink": "[PT] Share Link (Portuguese)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[PT] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Portuguese)",
+  "deleteAppointment": "[PT] Delete Appointment (Portuguese)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Portuguese)",
+  "toggleAvailability": "[PT] Toggle Availability (Portuguese)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Portuguese)",
+  "changePlan": "[PT] Change Plan (Portuguese)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Portuguese)",
+  "errorLoadingStaff": "[PT] Error loading staff (Portuguese)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Portuguese)",
+  "updateYourBusinessInformation": "[PT] Update your business information (Portuguese)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[PT] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Portuguese)",
+  "parentDashboard": "[PT] Parent Dashboard (Portuguese)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Portuguese)",
+  "menu": "[PT] Menu (Portuguese)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Portuguese)",
+  "studioBooking": "[PT] Studio Booking (Portuguese)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Portuguese)",
+  "about1": "[PT] About (Portuguese)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Portuguese)",
+  "multipleChoice": "[PT] Multiple Choice (Portuguese)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Date: {date} (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Studio booking is only available on web (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Portuguese)",
+  "errorLoadingBranchesE": "[PT] Error loading branches: $e (Portuguese)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Portuguese)",
+  "REDACTED_TOKEN": "[PT] \\uD83D\\uDCC5 {dateTime} (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Portuguese)",
+  "none": "[PT] None (Portuguese)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Portuguese)",
+  "failedToUpdateConsentE": "[PT] Failed to update consent: $e (Portuguese)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Portuguese)",
+  "welcome1": "[PT] Welcome (Portuguese)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Portuguese)",
+  "failedToCreateSessionE": "[PT] Failed to create session: $e (Portuguese)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Portuguese)",
+  "inviteContact": "[PT] Invite Contact (Portuguese)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Portuguese)",
+  "surveyEditor": "[PT] Survey Editor (Portuguese)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Portuguese)",
+  "failedToStartBasicSubscriptionE": "[PT] Failed to start Basic subscription: $e (Portuguese)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Portuguese)",
+  "mySchedule": "[PT] My Schedule (Portuguese)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Portuguese)",
+  "studioDashboard": "[PT] Studio Dashboard (Portuguese)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Portuguese)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[PT] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[PT] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Portuguese)",
+  "settingsSavedSuccessfully": "[PT] Settings saved successfully! (Portuguese)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Portuguese)",
+  "linkCopiedToClipboard": "[PT] Link copied to clipboard! (Portuguese)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Portuguese)",
+  "accept1": "[PT] Accept (Portuguese)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Portuguese)",
+  "noAvailableSlots": "[PT] No available slots (Portuguese)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Portuguese)",
+  "makeGamePublic": "[PT] Make Game Public (Portuguese)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Permission {category} updated to $newValue (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Portuguese)",
+  "roomDeletedSuccessfully": "[PT] Room deleted successfully! (Portuguese)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Portuguese)",
+  "businessCalendar": "[PT] Business Calendar (Portuguese)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Portuguese)",
+  "addAvailability": "[PT] Add Availability (Portuguese)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Portuguese)",
+  "ambassadorOnboarding": "[PT] Ambassador Onboarding (Portuguese)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Portuguese)",
+  "phoneProfileasyncphone": "[PT] Phone: {phone} (Portuguese)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Portuguese)",
+  "addNewRoom": "[PT] Add New Room (Portuguese)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Portuguese)",
+  "requireParentApproval": "[PT] Require Parent Approval (Portuguese)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Portuguese)",
+  "closed": "[PT] Closed (Portuguese)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Portuguese)",
+  "exportAsPdf": "[PT] Export as PDF (Portuguese)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Portuguese)",
+  "enableVibration": "[PT] Enable Vibration (Portuguese)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Portuguese)",
+  "toAvailendformatcontext": "[PT] To: {endTime} (Portuguese)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Portuguese)",
+  "yourUpgradeCodeUpgradecode": "[PT] Your upgrade code: $upgradeCode (Portuguese)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[PT] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Portuguese)",
+  "country": "[PT] Country (Portuguese)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[PT] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Portuguese)",
+  "staffArgsstaffdisplayname": "[PT] Staff: {staffName} (Portuguese)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Portuguese)",
+  "revokeConsent": "[PT] Revoke Consent (Portuguese)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Portuguese)",
+  "settings1": "[PT] Settings (Portuguese)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Portuguese)",
+  "cancel1": "[PT] Cancel (Portuguese)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Subscription activated successfully! (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[PT] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Portuguese)",
+  "broadcast": "[PT] Broadcast (Portuguese)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Portuguese)",
+  "noEventsScheduledThisWeek": "[PT] No events scheduled this week (Portuguese)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Portuguese)",
+  "googleCalendar": "[PT] Google Calendar (Portuguese)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Portuguese)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Portuguese)",
+  "childDashboard": "[PT] Child Dashboard (Portuguese)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Portuguese)",
+  "failedToUploadBackgroundE": "[PT] Failed to upload background: $e (Portuguese)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[PT] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[PT] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[PT] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Portuguese)",
+  "noAppointments": "[PT] No appointments (Portuguese)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Portuguese)",
+  "unlimitedBookingsPerWeek": "[PT] • Unlimited bookings per week (Portuguese)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Portuguese)",
+  "scheduledAtScheduledat": "[PT] Scheduled at: $scheduledAt (Portuguese)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Portuguese)",
+  "selectStaff": "[PT] Select Staff (Portuguese)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Subscription cancelled successfully (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Portuguese)",
+  "cancelAppointment": "[PT] Cancel Appointment (Portuguese)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[PT] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Portuguese)",
+  "businessSignup": "[PT] Business Signup (Portuguese)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Business Completion Screen - Coming Soon (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Portuguese)",
+  "createGame1": "[PT] Create Game (Portuguese)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Portuguese)",
+  "valuetoint": "[PT] {value} (Portuguese)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Portuguese)",
+  "pleaseEnterAPromoCode": "[PT] Please enter a promo code (Portuguese)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Portuguese)",
+  "errorLoadingAvailabilityE": "[PT] Error loading availability: $e (Portuguese)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Portuguese)",
+  "parentalControls": "[PT] Parental Controls (Portuguese)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Portuguese)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Portuguese)",
+  "childLinkedSuccessfully": "[PT] Child linked successfully! (Portuguese)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Portuguese)",
+  "create": "[PT] Create (Portuguese)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Portuguese)",
+  "noExternalMeetingsFound": "[PT] No external meetings found. (Portuguese)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Portuguese)",
+  "staffSelectionstaffdisplayname": "[PT] Staff: {staffName} (Portuguese)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[PT] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Portuguese)",
+  "schedulerScreen": "[PT] Scheduler Screen (Portuguese)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Portuguese)",
+  "clientUpdatedSuccessfully": "[PT] Client updated successfully! (Portuguese)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Portuguese)",
+  "surveyResponses": "[PT] Survey Responses (Portuguese)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Portuguese)",
+  "syncToOutlook": "[PT] Sync to Outlook (Portuguese)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Portuguese)",
+  "saveChanges": "[PT] Save Changes (Portuguese)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Portuguese)",
+  "pickTime": "[PT] Pick Time (Portuguese)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Portuguese)",
+  "registrationFailedEtostring": "[PT] Registration failed: {error} (Portuguese)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Portuguese)",
+  "analytics": "[PT] Analytics (Portuguese)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Portuguese)",
+  "errorLoadingEvents": "[PT] Error loading events (Portuguese)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[PT] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[PT] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Portuguese)",
+  "success1": "[PT] Success (Portuguese)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[PT] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Portuguese)",
+  "fromAvailstartformatcontext": "[PT] From: {startTime} (Portuguese)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Portuguese)",
+  "readWrite": "[PT] Read & Write (Portuguese)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Redirecting to Stripe checkout for Basic plan... (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[PT] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Portuguese)",
+  "pickDate": "[PT] Pick Date (Portuguese)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Portuguese)",
+  "chatBooking": "[PT] Chat Booking (Portuguese)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Portuguese)",
+  "noQuestionsAdded": "[PT] No questions added (Portuguese)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[PT] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[PT] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Portuguese)",
+  "typeOpenCall": "[PT] Type: Open Call (Portuguese)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[PT] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[PT] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Portuguese)",
+  "invoiceCreatedSuccessfully": "[PT] Invoice created successfully! (Portuguese)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Portuguese)",
+  "noTimeSeriesDataAvailable": "[PT] No time series data available (Portuguese)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[PT] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[PT] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Portuguese)",
+  "failedToSendPrivacyRequestE": "[PT] Failed to send privacy request: $e (Portuguese)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Portuguese)",
+  "chooseYourPlan": "[PT] Choose Your Plan (Portuguese)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Portuguese)",
+  "playtimeManagement": "[PT] Playtime Management (Portuguese)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Portuguese)",
+  "availability": "[PT] Availability (Portuguese)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Portuguese)",
+  "eventCreated": "[PT] Event created (Portuguese)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Portuguese)",
+  "subscribeToBasic499mo": "[PT] Subscribe to Basic (€4.99/mo) (Portuguese)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Portuguese)",
+  "completion": "[PT] Completion (Portuguese)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Portuguese)",
+  "supportTicketSubmitted": "[PT] Support ticket submitted (Portuguese)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Portuguese)",
+  "monetizationSettings": "[PT] Monetization Settings (Portuguese)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Portuguese)",
+  "noBookingsFound": "[PT] No bookings found (Portuguese)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[PT] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Portuguese)",
+  "deleteSurvey": "[PT] Delete Survey (Portuguese)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Portuguese)",
+  "gameApprovedSuccessfully": "[PT] Game approved successfully! (Portuguese)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Portuguese)",
+  "errorLoadingPermissionsError": "[PT] Error loading permissions: $error (Portuguese)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Portuguese)",
+  "referrals": "[PT] Referrals (Portuguese)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Portuguese)",
+  "crm": "[PT] CRM (Portuguese)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Portuguese)",
+  "gameRejected": "[PT] Game rejected (Portuguese)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Portuguese)",
+  "appointments": "[PT] Appointments (Portuguese)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Portuguese)",
+  "onboardingScreen": "[PT] Onboarding Screen (Portuguese)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Portuguese)",
+  "welcomeToYourStudio": "[PT] Welcome to your studio (Portuguese)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Portuguese)",
+  "update": "[PT] Update (Portuguese)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Portuguese)",
+  "retry1": "[PT] Retry (Portuguese)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Portuguese)",
+  "booking": "[PT] Booking (Portuguese)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Portuguese)",
+  "parentalSettings": "[PT] Parental Settings (Portuguese)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Portuguese)",
+  "language": "[PT] Language (Portuguese)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Portuguese)",
+  "deleteSlot": "[PT] Delete Slot (Portuguese)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[PT] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[PT] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Portuguese)",
+  "createNewGame": "[PT] Create New Game (Portuguese)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Portuguese)",
+  "next1": "[PT] Next (Portuguese)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Portuguese)",
+  "backgroundUploadedSuccessfully": "[PT] Background uploaded successfully! (Portuguese)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Portuguese)",
+  "noAppointmentRequestsFound": "[PT] No appointment requests found. (Portuguese)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Portuguese)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Portuguese)",
+  "restrictMatureContent": "[PT] Restrict mature content (Portuguese)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Portuguese)",
+  "ambassadors": "[PT] Ambassadors (Portuguese)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Portuguese)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Portuguese)",
+  "paymentWasCancelled": "[PT] Payment was cancelled (Portuguese)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Portuguese)",
+  "clearAll": "[PT] Clear All (Portuguese)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Portuguese)",
+  "viewDetails": "[PT] View Details (Portuguese)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Portuguese)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Portuguese)",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Portuguese)",
+  "failedToCreateGameE": "[PT] Failed to create game: $e (Portuguese)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Portuguese)",
+  "noChartDataAvailable": "[PT] No chart data available (Portuguese)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Portuguese)",
+  "phonebasedBookingSystem": "[PT] • Phone-based booking system (Portuguese)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Portuguese)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Portuguese)",
+  "invoices": "[PT] Invoices (Portuguese)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Portuguese)",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Portuguese)",
+  "scheduledAtArgsscheduledat": "[PT] Scheduled at: {scheduledAt} (Portuguese)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Duration: {duration} minutes (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Portuguese)",
+  "tryAgain": "[PT] Try Again (Portuguese)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Portuguese)",
+  "deleteBackground": "[PT] Delete Background (Portuguese)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Portuguese)",
+  "currentTierTiertouppercase": "[PT] Current Tier: {tier} (Portuguese)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[PT] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Portuguese)",
+  "REDACTED_TOKEN": "[PT] No clients found. Add your first client! (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[PT] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[PT] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Portuguese)",
+  "appointmentRequests": "[PT] Appointment Requests (Portuguese)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Portuguese)",
+  "forward": "[PT] Forward (Portuguese)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Portuguese)",
+  "roomAddedSuccessfully": "[PT] Room added successfully! (Portuguese)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Portuguese)",
+  "option": "[PT] • $option (Portuguese)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Portuguese)",
+  "responseIndex1": "[PT] Response #{number} (Portuguese)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Portuguese)",
+  "crmDashboardWithAnalytics": "[PT] • CRM dashboard with analytics (Portuguese)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Portuguese)",
+  "contentLibrary1": "[PT] Content Library (Portuguese)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Portuguese)",
+  "reply": "[PT] Reply (Portuguese)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Portuguese)",
+  "subscriptionManagement": "[PT] Subscription Management (Portuguese)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Monetization settings will be implemented here (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Portuguese)",
+  "failedToApplyPromoCodeE": "[PT] Failed to apply promo code: $e (Portuguese)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[PT] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Portuguese)",
+  "localizationContribution": "[PT] Localization Contribution (Portuguese)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Portuguese)",
+  "parentalConsent": "[PT] Parental Consent (Portuguese)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Portuguese)",
+  "businessSignupScreenComingSoon": "[PT] Business Signup Screen - Coming Soon (Portuguese)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Portuguese)",
+  "REDACTED_TOKEN": "[PT] Are you sure you want to delete this appointment? (Portuguese)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Portuguese)",
+  "syncAppointment": "[PT] Sync Appointment (Portuguese)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Portuguese)",
+  "iConsent": "[PT] I Consent (Portuguese)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Portuguese)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Portuguese)",
+  "businessSetupScreenComingSoon": "[PT] Business Setup Screen - Coming Soon (Portuguese)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Portuguese)",
+  "edit1": "[PT] Edit (Portuguese)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Portuguese)",
+  "noEventsScheduledThisMonth": "[PT] No events scheduled this month (Portuguese)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Portuguese)",
+  "businessDashboard": "[PT] Business Dashboard (Portuguese)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Portuguese)",
+  "noMessagesFound": "[PT] No messages found. (Portuguese)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[PT] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Portuguese)",
+  "manageStaffAvailability": "[PT] Manage Staff Availability (Portuguese)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Portuguese)",
+  "noMissingTranslations": "[PT] No missing translations (Portuguese)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Portuguese)",
+  "skip": "[PT] Skip (Portuguese)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[PT] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Portuguese)",
+  "errorLoadingReferralCode": "[PT] Error loading referral code (Portuguese)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Portuguese)",
+  "allCountries": "[PT] All Countries (Portuguese)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Portuguese)",
+  "deleteGame": "[PT] Delete Game (Portuguese)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Portuguese)",
+  "staffManagementTools": "[PT] • Staff management tools (Portuguese)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Portuguese)",
+  "deleteMessage": "[PT] Delete Message (Portuguese)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Portuguese)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[PT] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Portuguese)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Portuguese)",
+  "openingCustomerPortal": "[PT] Opening customer portal... (Portuguese)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Portuguese)",
+  "signOut": "[PT] Sign Out (Portuguese)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Portuguese)",
+  "nameProfilename": "[PT] Name: {name} (Portuguese)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Portuguese)",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Portuguese)",
+  "upgradeToBusiness": "[PT] Upgrade to Business (Portuguese)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Portuguese)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Portuguese)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Portuguese)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Portuguese)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Portuguese)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Portuguese)",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Portuguese)",
+  "viewResponses": "[PT] View Responses (Portuguese)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Portuguese)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Portuguese)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Portuguese)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Portuguese)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Portuguese)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Portuguese)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Portuguese)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Portuguese)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Portuguese)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Portuguese)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

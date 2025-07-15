@@ -1,2862 +1,2862 @@
 {
   "@@locale": "ga",
-  "refresh": "[GA] Refresh",
+  "refresh": "[GA] [GA] Refresh",
   "@refresh": {
     "description": "Description"
   },
-  "home": "Baile",
+  "home": "[GA] Baile",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "Níl seisiún ann fós",
+  "noSessionsYet": "[GA] Níl seisiún ann fós",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "[GA] OK",
+  "ok": "[GA] [GA] OK",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "Roghnaigh mód",
+  "playtimeLandingChooseMode": "[GA] Roghnaigh mód",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "Cláraigh",
+  "signUp": "[GA] Cláraigh",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "Clárigh teachtaireacht",
+  "scheduleMessage": "[GA] Clárigh teachtaireacht",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "Diúltú",
+  "decline": "[GA] Diúltú",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[GA] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "Logáil isteach",
+  "login": "[GA] Logáil isteach",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "Roghnaigh cairde",
+  "playtimeChooseFriends": "[GA] Roghnaigh cairde",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "[GA] No invites",
+  "noInvites": "[GA] [GA] No invites",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "Roghnaigh am",
+  "playtimeChooseTime": "[GA] Roghnaigh am",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "[GA] Success",
+  "success": "[GA] [GA] Success",
   "@success": {
     "description": "Description"
   },
-  "undo": "Cealaigh",
+  "undo": "[GA] Cealaigh",
   "@undo": {
     "description": "Description"
   },
-  "opened": "Oscailte",
+  "opened": "[GA] Oscailte",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "[GA] Create Virtual Session",
+  "createVirtualSession": "[GA] [GA] Create Virtual Session",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "[GA] Message sent successfully",
+  "messageSentSuccessfully": "[GA] [GA] Message sent successfully",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "Déan arís",
+  "redo": "[GA] Déan arís",
   "@redo": {
     "description": "Description"
   },
-  "next": "Ar Aghaidh",
+  "next": "[GA] Ar Aghaidh",
   "@next": {
     "description": "Description"
   },
-  "search": "Cuardaigh",
+  "search": "[GA] Cuardaigh",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "Cealaigh dearbhú cuireadh",
+  "cancelInviteConfirmation": "[GA] Cealaigh dearbhú cuireadh",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "[GA] Created",
+  "created": "[GA] [GA] Created",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "[GA] Revoke Access",
+  "revokeAccess": "[GA] [GA] Revoke Access",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[GA] Save Group for Recognition",
+  "saveGroupForRecognition": "[GA] [GA] Save Group for Recognition",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "[GA] Live playtime scheduled!",
+  "playtimeLiveScheduled": "[GA] [GA] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "[GA] Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "[GA] [GA] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "Íoslódáil",
+  "download": "[GA] Íoslódáil",
   "@download": {
     "description": "Description"
   },
-  "password": "Focal faire",
+  "password": "[GA] Focal faire",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "Earráid ag luchtú na nasc teaghlach",
+  "errorLoadingFamilyLinks": "[GA] Earráid ag luchtú na nasc teaghlach",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "Cealaigh",
+  "cancel": "[GA] Cealaigh",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "Cruthaigh Playtime",
+  "playtimeCreate": "[GA] Cruthaigh Playtime",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "[GA] Failed to action privacy request",
+  "failedToActionPrivacyRequest": "[GA] [GA] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "Teideal an aip",
+  "appTitle": "[GA] Teideal an aip",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "Glac",
+  "accept": "[GA] Glac",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "[GA] Virtual Play",
+  "playtimeModeVirtual": "[GA] [GA] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "Cur síos Playtime",
+  "playtimeDescription": "[GA] Cur síos Playtime",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "Scrios",
+  "delete": "[GA] Scrios",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "[GA] Virtual playtime started!",
+  "playtimeVirtualStarted": "[GA] [GA] Virtual playtime started!",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "Cruthaigh do chéad chluiche",
+  "createYourFirstGame": "[GA] Cruthaigh do chéad chluiche",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "[GA] Participants",
+  "participants": "[GA] [GA] Participants",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "Faighteoirí",
+  "recipients": "[GA] Faighteoirí",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "[GA] No results found",
+  "noResults": "[GA] [GA] No results found",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "Tá",
+  "yes": "[GA] Tá",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "Cuireadh",
+  "invite": "[GA] Cuireadh",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "Mód beo",
+  "playtimeModeLive": "[GA] Mód beo",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "Déanta",
+  "done": "[GA] Déanta",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "[GA] Let's meet via Appoint!",
+  "defaultShareMessage": "[GA] [GA] Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "Níl",
+  "no": "[GA] Níl",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "[GA] Playtime Hub",
+  "playtimeHub": "[GA] [GA] Playtime Hub",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "Cruthaigh seisiún beo",
+  "createLiveSession": "[GA] Cruthaigh seisiún beo",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "Cumasaigh fógraí",
+  "enableNotifications": "[GA] Cumasaigh fógraí",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "Cuireadh seolta",
+  "invited": "[GA] Cuireadh seolta",
   "@invited": {
     "description": "Description"
   },
-  "content": "Ábhar",
+  "content": "[GA] Ábhar",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "[GA] Meeting shared successfully",
+  "meetingSharedSuccessfully": "[GA] [GA] Meeting shared successfully",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "Fáilte chuig Playtime",
+  "welcomeToPlaytime": "[GA] Fáilte chuig Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "Féach ar uile",
+  "viewAll": "[GA] Féach ar uile",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "[GA] Virtual Play",
+  "playtimeVirtual": "[GA] [GA] Virtual Play",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "Scáileán foirne le socrú",
+  "staffScreenTBD": "[GA] Scáileán foirne le socrú",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "Gearr",
+  "cut": "[GA] Gearr",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "[GA] Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "[GA] [GA] Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "Féach arís",
+  "retry": "[GA] Féach arís",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "Cum seoladh craolta",
+  "composeBroadcastMessage": "[GA] Cum seoladh craolta",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "Seol anois",
+  "sendNow": "[GA] Seol anois",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "Níl cluichí fós",
+  "noGamesYet": "[GA] Níl cluichí fós",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "Roghnaigh",
+  "select": "[GA] Roghnaigh",
   "@select": {
     "description": "Description"
   },
-  "about": "Maidir le",
+  "about": "[GA] Maidir le",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Roghnaigh",
+  "choose": "[GA] Roghnaigh",
   "@choose": {
     "description": "Description"
   },
-  "profile": "Próifíl",
+  "profile": "[GA] Próifíl",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "[GA] Remove Child",
+  "removeChild": "[GA] [GA] Remove Child",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "Stádas",
+  "status": "[GA] Stádas",
   "@status": {
     "description": "status description"
   },
-  "logout": "Logáil amach",
+  "logout": "[GA] Logáil amach",
   "@logout": {
     "description": "Description"
   },
-  "paste": "Greamaigh",
+  "paste": "[GA] Greamaigh",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "Fáilte",
+  "welcome": "[GA] Fáilte",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "Cruthaigh seisiún",
+  "playtimeCreateSession": "[GA] Cruthaigh seisiún",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "Baill teaghlaigh",
+  "familyMembers": "[GA] Baill teaghlaigh",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "Uaslódáil",
+  "upload": "[GA] Uaslódáil",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "[GA] Upcoming Sessions",
+  "upcomingSessions": "[GA] [GA] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "[GA] Enter group name",
+  "enterGroupName": "[GA] [GA] Enter group name",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "Deimhnigh",
+  "confirm": "[GA] Deimhnigh",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "Playtime beo",
+  "playtimeLive": "[GA] Playtime beo",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "Earráid ag luchtú cuireadh",
+  "errorLoadingInvites": "[GA] Earráid ag luchtú cuireadh",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "[GA] Targeting Filters",
+  "targetingFilters": "[GA] [GA] Targeting Filters",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "Roghnaigh físeán",
+  "pickVideo": "[GA] Roghnaigh físeán",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "Cluiche scriosta",
+  "playtimeGameDeleted": "[GA] Cluiche scriosta",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "Cláraigh le haghaidh níos déanaí",
+  "scheduleForLater": "[GA] Cláraigh le haghaidh níos déanaí",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "[GA] Access revoked successfully",
+  "accessRevokedSuccessfully": "[GA] [GA] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "[GA] Type",
+  "type": "[GA] [GA] Type",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "Ag seiceáil ceadanna",
+  "checkingPermissions": "[GA] Ag seiceáil ceadanna",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "Cóipeáil",
+  "copy": "[GA] Cóipeáil",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "Sea, cealaigh",
+  "yesCancel": "[GA] Sea, cealaigh",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "Ríomhphost",
+  "email": "[GA] Ríomhphost",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[GA] Share on WhatsApp",
+  "shareOnWhatsApp": "[GA] [GA] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "[GA] Notification Settings",
+  "notificationSettings": "[GA] [GA] Notification Settings",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "Mo phróifíl",
+  "myProfile": "[GA] Mo phróifíl",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "Cealaigh",
+  "revoke": "[GA] Cealaigh",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "Gan teachtaireachtaí craolta",
+  "noBroadcastMessages": "[GA] Gan teachtaireachtaí craolta",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "[GA] Request Type",
+  "requestType": "[GA] [GA] Request Type",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "Fógraí",
+  "notifications": "[GA] Fógraí",
   "@notifications": {
     "description": "Description"
   },
-  "details": "[GA] Details",
+  "details": "[GA] [GA] Details",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "Cealaigh cuireadh",
+  "cancelInvite": "[GA] Cealaigh cuireadh",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "Cruthaigh nua",
+  "createNew": "[GA] Cruthaigh nua",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "[GA] Settings",
+  "settings": "[GA] [GA] Settings",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "Diúltú Playtime",
+  "playtimeReject": "[GA] Diúltú Playtime",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "Earráid ag luchtú próifíle",
+  "errorLoadingProfile": "[GA] Earráid ag luchtú próifíle",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "[GA] Edit",
+  "edit": "[GA] [GA] Edit",
   "@edit": {
     "description": "Description"
   },
-  "add": "Cuir leis",
+  "add": "[GA] Cuir leis",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "[GA] Game approved",
+  "playtimeGameApproved": "[GA] [GA] Game approved",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "Ar chaill tú d'fhocal faire?",
+  "forgotPassword": "[GA] Ar chaill tú d'fhocal faire?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "[GA] Family Dashboard",
+  "familyDashboard": "[GA] [GA] Family Dashboard",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "Ag luchtú",
+  "loading": "[GA] Ag luchtú",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "Gníomhartha tapa",
+  "quickActions": "[GA] Gníomhartha tapa",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "Teideal Playtime",
+  "playtimeTitle": "[GA] Teideal Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "[GA] OTP resent successfully",
+  "otpResentSuccessfully": "[GA] [GA] OTP resent successfully",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "Earráid ag seiceáil ceadanna",
+  "errorCheckingPermissions": "[GA] Earráid ag seiceáil ceadanna",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "Scáileán cliant le socrú",
+  "clientScreenTBD": "[GA] Scáileán cliant le socrú",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "[GA] FCM Token",
+  "fcmToken": "[GA] [GA] FCM Token",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "Roghnaigh íomhá",
+  "pickImage": "[GA] Roghnaigh íomhá",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "Roimhe seo",
+  "previous": "[GA] Roimhe seo",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[GA] No profile found",
+  "noProfileFound": "[GA] [GA] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "Níl baill teaghlaigh fós",
+  "noFamilyMembersYet": "[GA] Níl baill teaghlaigh fós",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "Meán (roghnach)",
+  "mediaOptional": "[GA] Meán (roghnach)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "[GA] Message saved successfully",
+  "messageSavedSuccessfully": "[GA] [GA] Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "[GA] Scheduled for",
+  "scheduledFor": "[GA] [GA] Scheduled for",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "[GA] Dashboard",
+  "dashboard": "[GA] [GA] Dashboard",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "Gan cead le craoladh",
+  "noPermissionForBroadcast": "[GA] Gan cead le craoladh",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[GA] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "[GA] Invite Details",
+  "inviteDetail": "[GA] [GA] Invite Details",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "[GA] Scheduled",
+  "scheduled": "[GA] [GA] Scheduled",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "[GA] Failed to resend OTP",
+  "failedToResendOtp": "[GA] [GA] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "Ag clárú",
+  "scheduling": "[GA] Ag clárú",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "Earráid ag sábháil teachtaireachta",
+  "errorSavingMessage": "[GA] Earráid ag sábháil teachtaireachta",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "Sábháil",
+  "save": "[GA] Sábháil",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "[GA] Approve",
+  "playtimeApprove": "[GA] [GA] Approve",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "Cruthaigh do chéad seisiún",
+  "createYourFirstSession": "[GA] Cruthaigh do chéad seisiún",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "[GA] Game rejected",
+  "playtimeGameRejected": "[GA] [GA] Game rejected",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "[GA] Failed to revoke access",
+  "failedToRevokeAccess": "[GA] [GA] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "Cluichí is déanaí",
+  "recentGames": "[GA] Cluichí is déanaí",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "Pearlisiú teachtaireachta",
+  "customizeMessage": "[GA] Pearlisiú teachtaireachta",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "[GA] Failed to cancel invite",
+  "failedToCancelInvite": "[GA] [GA] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "Earráid ag seoladh teachtaireachta",
+  "errorSendingMessage": "[GA] Earráid ag seoladh teachtaireachta",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "Deimhnigh focal faire",
+  "confirmPassword": "[GA] Deimhnigh focal faire",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "[GA] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[GA] [GA] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "Páistí nasctha",
+  "connectedChildren": "[GA] Páistí nasctha",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "[GA] Share",
+  "share": "[GA] [GA] Share",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "[GA] Enter game name",
+  "playtimeEnterGameName": "[GA] [GA] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "[GA] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[GA] [GA] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "Mo cuireadh",
+  "myInvites": "[GA] Mo cuireadh",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "Cruthaigh cluiche",
+  "createGame": "[GA] Cruthaigh cluiche",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[GA] Group Name (Optional)",
+  "groupNameOptional": "[GA] [GA] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "[GA] No playtime sessions found.",
+  "playtimeNoSessions": "[GA] [GA] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[GA] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[GA] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[GA] [GA] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "Dún",
+  "close": "[GA] Dún",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "[GA] Known group detected",
+  "knownGroupDetected": "[GA] [GA] Known group detected",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "Ar ais",
+  "back": "[GA] Ar ais",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "Roghnaigh cluiche",
+  "playtimeChooseGame": "[GA] Roghnaigh cluiche",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "[GA] Manage Permissions",
+  "managePermissions": "[GA] [GA] Manage Permissions",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "Roghanna suirbhé",
+  "pollOptions": "[GA] Roghanna suirbhé",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "Cliceáilte",
+  "clicked": "[GA] Cliceáilte",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "Nasc",
+  "link": "[GA] Nasc",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "[GA] Your meeting is ready! Join now",
+  "meetingReadyMessage": "[GA] [GA] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "[GA] Pending Invites",
+  "pendingInvites": "[GA] [GA] Pending Invites",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "Stádas:",
+  "statusColon": "[GA] Stádas:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "Logáil isteach chun próifíl a fheiceáil",
+  "pleaseLoginToViewProfile": "[GA] Logáil isteach chun próifíl a fheiceáil",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[GA] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[GA] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[GA] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[GA] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[GA] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[GA] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[GA] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[GA] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[GA] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[GA] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[GA] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[GA] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[GA] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[GA] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[GA] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[GA] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[GA] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[GA] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Irish)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Irish)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Irish)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Irish)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[GA] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[GA] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[GA] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[GA] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[GA] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[GA] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[GA] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[GA] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[GA] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[GA] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[GA] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[GA] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[GA] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[GA] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[GA] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[GA] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[GA] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[GA] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[GA] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[GA] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[GA] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[GA] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[GA] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[GA] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[GA] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[GA] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[GA] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[GA] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[GA] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[GA] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[GA] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[GA] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[GA] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[GA] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[GA] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[GA] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[GA] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[GA] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[GA] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[GA] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[GA] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[GA] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[GA] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[GA] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[GA] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[GA] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[GA] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[GA] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[GA] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[GA] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[GA] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[GA] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[GA] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[GA] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[GA] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[GA] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[GA] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[GA] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[GA] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[GA] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[GA] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[GA] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Irish)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Irish)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Irish)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Irish)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Irish)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Irish)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Irish)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Irish)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[GA] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Irish)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Irish)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Irish)",
+  "upload1": "[GA] Upload (Irish)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Irish)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Irish)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Irish)",
+  "REDACTED_TOKEN": "[GA] Virtual session created! Inviting friends... (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Irish)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Irish)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Irish)",
+  "rewards": "[GA] Rewards (Irish)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Irish)",
+  "time": "[GA] Time (Irish)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[GA] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Irish)",
+  "noSlots": "[GA] No slots (Irish)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Irish)",
+  "signIn": "[GA] Sign In (Irish)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Irish)",
+  "homeFeedScreen": "[GA] Home Feed Screen (Irish)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Irish)",
+  "selectLocation": "[GA] Select Location (Irish)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Irish)",
+  "noTicketsYet": "[GA] No tickets yet (Irish)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Irish)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Irish)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Irish)",
+  "subscriptionUnavailable": "[GA] Subscription unavailable (Irish)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Irish)",
+  "confirmBooking": "[GA] Confirm Booking (Irish)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Irish)",
+  "failedToUpdatePermissionE": "[GA] Failed to update permission: $e (Irish)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Irish)",
+  "reject": "[GA] Reject (Irish)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Irish)",
+  "REDACTED_TOKEN": "[GA] Ambassador Status: {ambassadorStatus} (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[GA] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Irish)",
+  "checkingSubscription": "[GA] Checking subscription... (Irish)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Irish)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Irish)",
+  "noContentAvailableYet": "[GA] No content available yet (Irish)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Irish)",
+  "resolve": "[GA] Resolve (Irish)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Irish)",
+  "errorLoadingSurveysError": "[GA] Error loading surveys: $error (Irish)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[GA] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Irish)",
+  "getHelpWithYourAccount": "[GA] Get help with your account (Irish)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Irish)",
+  "pay": "[GA] Pay (Irish)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[GA] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Irish)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Irish)",
+  "changesSavedSuccessfully": "[GA] Changes saved successfully! (Irish)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Irish)",
+  "createNewInvoice": "[GA] Create New Invoice (Irish)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Irish)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Irish)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Irish)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Irish)",
+  "profileSaved": "[GA] Profile saved! (Irish)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Irish)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Irish)",
+  "valuetointk": "[GA] \\${value}K (Irish)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Irish)",
+  "deleteAccount": "[GA] Delete Account (Irish)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Irish)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Irish)",
+  "businessOnboarding": "[GA] Business Onboarding (Irish)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Irish)",
+  "addNewClient": "[GA] Add New Client (Irish)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Irish)",
+  "darkMode": "[GA] Dark Mode (Irish)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[GA] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[GA] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Irish)",
+  "REDACTED_TOKEN": "[GA] You will receive a confirmation email shortly. (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Irish)",
+  "addQuestion": "[GA] Add Question (Irish)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Irish)",
+  "privacyPolicy": "[GA] Privacy Policy (Irish)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Irish)",
+  "branchesLengthBranches": "[GA] {branchCount} branches (Irish)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Irish)",
+  "join": "[GA] Join (Irish)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Irish)",
+  "businessSubscription": "[GA] Business Subscription (Irish)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Irish)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[GA] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Irish)",
+  "surveyManagement": "[GA] Survey Management (Irish)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[GA] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Irish)",
+  "noRoomsFoundAddYourFirstRoom": "[GA] No rooms found. Add your first room! (Irish)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Irish)",
+  "readOurPrivacyPolicy": "[GA] Read our privacy policy (Irish)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Irish)",
+  "couldNotOpenPrivacyPolicy": "[GA] Could not open privacy policy (Irish)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Irish)",
+  "refresh1": "[GA] Refresh (Irish)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Irish)",
+  "roomUpdatedSuccessfully": "[GA] Room updated successfully! (Irish)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Irish)",
+  "contentDetail": "[GA] Content Detail (Irish)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Irish)",
+  "cancelSubscription": "[GA] Cancel Subscription (Irish)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Irish)",
+  "REDACTED_TOKEN": "[GA] Successfully registered as Ambassador! (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Irish)",
+  "save1": "[GA] Save (Irish)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Irish)",
+  "copy1": "[GA] Copy (Irish)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Irish)",
+  "failedToSendInvitationE": "[GA] Failed to send invitation: $e (Irish)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Irish)",
+  "surveyScore": "[GA] Survey Score (Irish)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[GA] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Irish)",
+  "noAppointmentsFound": "[GA] No appointments found. (Irish)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Irish)",
+  "responseDetail": "[GA] Response Detail (Irish)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Irish)",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Irish)",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Irish)",
+  "failedToStartProSubscriptionE": "[GA] Failed to start Pro subscription: $e (Irish)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Irish)",
+  "REDACTED_TOKEN": "[GA] Business Dashboard Entry Screen - Coming Soon (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Irish)",
+  "contentFilter": "[GA] Content Filter (Irish)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Irish)",
+  "helpSupport": "[GA] Help & Support (Irish)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Irish)",
+  "editRoom": "[GA] Edit Room (Irish)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[GA] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[GA] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Irish)",
+  "REDACTED_TOKEN": "[GA] Business CRM Entry Screen - Coming Soon (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[GA] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[GA] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Irish)",
+  "errorLoadingDashboardError": "[GA] Error loading dashboard: $error (Irish)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Irish)",
+  "gameDeletedSuccessfully": "[GA] Game deleted successfully! (Irish)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Irish)",
+  "viewResponsesComingSoon": "[GA] View responses - Coming soon! (Irish)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[GA] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Irish)",
+  "errorLoadingRewards": "[GA] Error loading rewards (Irish)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Irish)",
+  "failedToDeleteAccountE": "[GA] Failed to delete account: $e (Irish)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Irish)",
+  "invited1": "[GA] Invited (Irish)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Irish)",
+  "noBranchesAvailable": "[GA] No branches available (Irish)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Irish)",
+  "errorError": "[GA] Error: $error (Irish)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Irish)",
+  "noEvents": "[GA] No events (Irish)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Irish)",
+  "gameCreatedSuccessfully": "[GA] Game created successfully! (Irish)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Irish)",
+  "add1": "[GA] Add (Irish)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[GA] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Irish)",
+  "eventstarttimeEventendtime": "[GA] {startTime} - {endTime} (Irish)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Irish)",
+  "allowPlaytime": "[GA] Allow Playtime (Irish)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Irish)",
+  "clients": "[GA] Clients (Irish)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Irish)",
+  "noAmbassadorDataAvailable": "[GA] No ambassador data available (Irish)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Irish)",
+  "backgroundDeletedSuccessfully": "[GA] Background deleted successfully! (Irish)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Irish)",
+  "errorSnapshoterror": "[GA] Error: {error} (Irish)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Irish)",
+  "noAnalyticsDataAvailableYet": "[GA] No analytics data available yet. (Irish)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Irish)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Irish)",
+  "REDACTED_TOKEN": "[GA] Business Phone Booking Entry Screen - Coming Soon (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Irish)",
+  "verification": "[GA] Verification (Irish)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Irish)",
+  "copyLink": "[GA] Copy Link (Irish)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Irish)",
+  "dashboard1": "[GA] Dashboard (Irish)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Irish)",
+  "manageChildAccounts": "[GA] Manage Child Accounts (Irish)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Irish)",
+  "grantConsent": "[GA] Grant Consent (Irish)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Irish)",
+  "myProfile1": "[GA] My Profile (Irish)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Irish)",
+  "submit": "[GA] Submit (Irish)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[GA] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Irish)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Irish)",
+  "ambassadorDashboard": "[GA] Ambassador Dashboard (Irish)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Irish)",
+  "phoneBooking": "[GA] Phone Booking (Irish)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Irish)",
+  "bookViaChat": "[GA] Book via Chat (Irish)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "Earráid",
+  "error": "[GA] Earráid",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Irish)",
+  "businessProfile": "[GA] Business Profile (Irish)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Irish)",
+  "REDACTED_TOKEN": "[GA] Business Booking Entry Screen - Coming Soon (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Irish)",
+  "createNewSurvey": "[GA] Create New Survey (Irish)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Irish)",
+  "backgroundRejected": "[GA] Background rejected (Irish)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Irish)",
+  "noMediaSelected": "[GA] No media selected (Irish)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Irish)",
+  "syncToGoogle": "[GA] Sync to Google (Irish)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Irish)",
+  "virtualPlaytime": "[GA] Virtual Playtime (Irish)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[GA] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[GA] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Irish)",
+  "invitationSentSuccessfully": "[GA] Invitation sent successfully! (Irish)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Irish)",
+  "registering": "[GA] Registering... (Irish)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Irish)",
+  "statusAppointmentstatusname": "[GA] Status: {status} (Irish)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Irish)",
+  "home1": "[GA] Home (Irish)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Irish)",
+  "errorSavingSettingsE": "[GA] Error saving settings: $e (Irish)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Irish)",
+  "appVersionAndInformation": "[GA] App version and information (Irish)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Irish)",
+  "REDACTED_TOKEN": "[GA] Business Subscription Entry Screen - Coming Soon (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Irish)",
+  "ekeyEvalue": "[GA] {key}: {value} (Irish)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Irish)",
+  "REDACTED_TOKEN": "[GA] Your payment has been processed successfully. (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Irish)",
+  "errorE": "[GA] Error: $e (Irish)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Irish)",
+  "viewAll1": "[GA] View All (Irish)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Irish)",
+  "editSurveyComingSoon": "[GA] Edit survey - Coming soon! (Irish)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Irish)",
+  "enterOtp": "[GA] Enter OTP (Irish)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Irish)",
+  "payment": "[GA] Payment (Irish)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Irish)",
+  "REDACTED_TOKEN": "[GA] Automatically confirm new booking requests (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Irish)",
+  "noRouteDefinedForSettingsname": "[GA] No route defined for {settingsName} (Irish)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Irish)",
+  "pleaseSignInToUploadABackground": "[GA] Please sign in to upload a background (Irish)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[GA] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Irish)",
+  "staffAvailability": "[GA] Staff Availability (Irish)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Irish)",
+  "livePlaytime": "[GA] Live Playtime (Irish)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Irish)",
+  "autoconfirmBookings": "[GA] Auto-Confirm Bookings (Irish)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Irish)",
+  "REDACTED_TOKEN": "[GA] Redirecting to Stripe checkout for Pro plan... (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Irish)",
+  "exportAsCsv": "[GA] Export as CSV (Irish)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Irish)",
+  "deleteFunctionalityComingSoon": "[GA] Delete functionality coming soon! (Irish)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Irish)",
+  "editClient": "[GA] Edit Client (Irish)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Irish)",
+  "REDACTED_TOKEN": "[GA] Are you sure you want to delete this message? (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Irish)",
+  "referralsAmbassadorreferrals": "[GA] Referrals: {referrals} (Irish)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[GA] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Irish)",
+  "privacyRequestSentToYourParents": "[GA] Privacy request sent to your parents! (Irish)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Irish)",
+  "clientDeletedSuccessfully": "[GA] Client deleted successfully! (Irish)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Irish)",
+  "failedToCancelSubscription": "[GA] Failed to cancel subscription (Irish)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Irish)",
+  "allLanguages": "[GA] All Languages (Irish)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Irish)",
+  "slotDeletedSuccessfully": "[GA] Slot deleted successfully (Irish)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[GA] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Irish)",
+  "REDACTED_TOKEN": "[GA] Parents must approve before children can join (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Irish)",
+  "subscribeToPro1499mo": "[GA] Subscribe to Pro (€14.99/mo) (Irish)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Irish)",
+  "REDACTED_TOKEN": "[GA] Business Availability Entry Screen - Coming Soon (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Irish)",
+  "appointmentsListlength": "[GA] Appointments: {count} (Irish)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Irish)",
+  "clearFilters": "[GA] Clear Filters (Irish)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Irish)",
+  "submitBooking": "[GA] Submit Booking (Irish)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Irish)",
+  "REDACTED_TOKEN": "[GA] Are you sure you want to cancel this appointment? (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Irish)",
+  "noUpcomingBookings": "[GA] No upcoming bookings (Irish)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Irish)",
+  "goBack": "[GA] Go Back (Irish)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Irish)",
+  "setup": "[GA] Setup (Irish)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Irish)",
+  "inviteChild": "[GA] Invite Child (Irish)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Irish)",
+  "goToDashboard": "[GA] Go to Dashboard (Irish)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Irish)",
+  "ambassadorQuotaDashboard": "[GA] Ambassador Quota Dashboard (Irish)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[GA] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Irish)",
+  "referralCode": "[GA] Referral Code (Irish)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[GA] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Irish)",
+  "date": "[GA] Date (Irish)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Irish)",
+  "readOnly": "[GA] Read Only (Irish)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Irish)",
+  "bookingRequest": "[GA] Booking Request (Irish)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Irish)",
+  "advancedReporting": "[GA] • Advanced reporting (Irish)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Irish)",
+  "rooms": "[GA] Rooms (Irish)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Irish)",
+  "copiedToClipboard": "[GA] Copied to clipboard (Irish)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Irish)",
+  "bookingConfirmed": "[GA] Booking Confirmed (Irish)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Irish)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Irish)",
+  "clientAddedSuccessfully": "[GA] Client added successfully! (Irish)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Irish)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Irish)",
+  "backgroundApproved": "[GA] Background approved! (Irish)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Irish)",
+  "familySupport": "[GA] Family Support (Irish)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Irish)",
+  "deletingAccount": "[GA] Deleting account... (Irish)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Irish)",
+  "bookAppointment": "[GA] Book Appointment (Irish)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Irish)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Irish)",
+  "delete1": "[GA] Delete (Irish)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Irish)",
+  "sendBookingInvite": "[GA] Send Booking Invite (Irish)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Irish)",
+  "text": "[GA] Text (Irish)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Irish)",
+  "manageSubscription": "[GA] Manage Subscription (Irish)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Irish)",
+  "requiresInstallFallback": "[GA] Requires Install Fallback (Irish)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Irish)",
+  "paymentConfirmation": "[GA] Payment Confirmation (Irish)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Irish)",
+  "promoAppliedYourNextBillIsFree": "[GA] Promo applied! Your next bill is free. (Irish)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Irish)",
+  "errorLoadingSlots": "[GA] Error loading slots (Irish)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Irish)",
+  "REDACTED_TOKEN": "[GA] Allow other users to find and join this game (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Irish)",
+  "REDACTED_TOKEN": "[GA] Business Onboarding Screen - Coming Soon (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Irish)",
+  "activateBusinessProfile": "[GA] Activate Business Profile (Irish)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Irish)",
+  "contentNotFound": "[GA] Content not found (Irish)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Irish)",
+  "pspecialtynpcontactinfo": "[GA] {specialty}\\n{contactInfo} (Irish)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Irish)",
+  "rating": "[GA] Rating (Irish)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Irish)",
+  "messages": "[GA] Messages (Irish)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Irish)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Irish)",
+  "becomeAnAmbassador": "[GA] Become an Ambassador (Irish)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Irish)",
+  "subscribeNow": "[GA] Subscribe Now (Irish)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Irish)",
+  "timeArgsslotformatcontext": "[GA] Time: {time} (Irish)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Irish)",
+  "shareViaWhatsapp": "[GA] Share via WhatsApp (Irish)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Irish)",
+  "users1": "[GA] Users (Irish)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Irish)",
+  "shareLink": "[GA] Share Link (Irish)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[GA] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Irish)",
+  "deleteAppointment": "[GA] Delete Appointment (Irish)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Irish)",
+  "toggleAvailability": "[GA] Toggle Availability (Irish)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Irish)",
+  "changePlan": "[GA] Change Plan (Irish)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Irish)",
+  "errorLoadingStaff": "[GA] Error loading staff (Irish)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Irish)",
+  "updateYourBusinessInformation": "[GA] Update your business information (Irish)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[GA] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Irish)",
+  "parentDashboard": "[GA] Parent Dashboard (Irish)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Irish)",
+  "menu": "[GA] Menu (Irish)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Irish)",
+  "studioBooking": "[GA] Studio Booking (Irish)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Irish)",
+  "about1": "[GA] About (Irish)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Irish)",
+  "multipleChoice": "[GA] Multiple Choice (Irish)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Irish)",
+  "REDACTED_TOKEN": "[GA] Date: {date} (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Irish)",
+  "REDACTED_TOKEN": "[GA] Studio booking is only available on web (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Irish)",
+  "errorLoadingBranchesE": "[GA] Error loading branches: $e (Irish)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Irish)",
+  "REDACTED_TOKEN": "[GA] \\uD83D\\uDCC5 {dateTime} (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Irish)",
+  "none": "[GA] None (Irish)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Irish)",
+  "failedToUpdateConsentE": "[GA] Failed to update consent: $e (Irish)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Irish)",
+  "welcome1": "[GA] Welcome (Irish)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Irish)",
+  "failedToCreateSessionE": "[GA] Failed to create session: $e (Irish)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Irish)",
+  "inviteContact": "[GA] Invite Contact (Irish)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Irish)",
+  "surveyEditor": "[GA] Survey Editor (Irish)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Irish)",
+  "failedToStartBasicSubscriptionE": "[GA] Failed to start Basic subscription: $e (Irish)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Irish)",
+  "mySchedule": "[GA] My Schedule (Irish)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Irish)",
+  "studioDashboard": "[GA] Studio Dashboard (Irish)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Irish)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[GA] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[GA] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Irish)",
+  "settingsSavedSuccessfully": "[GA] Settings saved successfully! (Irish)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Irish)",
+  "linkCopiedToClipboard": "[GA] Link copied to clipboard! (Irish)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Irish)",
+  "accept1": "[GA] Accept (Irish)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Irish)",
+  "noAvailableSlots": "[GA] No available slots (Irish)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Irish)",
+  "makeGamePublic": "[GA] Make Game Public (Irish)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Irish)",
+  "REDACTED_TOKEN": "[GA] Permission {category} updated to $newValue (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Irish)",
+  "roomDeletedSuccessfully": "[GA] Room deleted successfully! (Irish)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Irish)",
+  "businessCalendar": "[GA] Business Calendar (Irish)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Irish)",
+  "addAvailability": "[GA] Add Availability (Irish)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Irish)",
+  "ambassadorOnboarding": "[GA] Ambassador Onboarding (Irish)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Irish)",
+  "phoneProfileasyncphone": "[GA] Phone: {phone} (Irish)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Irish)",
+  "addNewRoom": "[GA] Add New Room (Irish)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Irish)",
+  "requireParentApproval": "[GA] Require Parent Approval (Irish)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Irish)",
+  "closed": "[GA] Closed (Irish)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Irish)",
+  "exportAsPdf": "[GA] Export as PDF (Irish)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Irish)",
+  "enableVibration": "[GA] Enable Vibration (Irish)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Irish)",
+  "toAvailendformatcontext": "[GA] To: {endTime} (Irish)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Irish)",
+  "yourUpgradeCodeUpgradecode": "[GA] Your upgrade code: $upgradeCode (Irish)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[GA] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Irish)",
+  "country": "[GA] Country (Irish)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[GA] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Irish)",
+  "staffArgsstaffdisplayname": "[GA] Staff: {staffName} (Irish)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Irish)",
+  "revokeConsent": "[GA] Revoke Consent (Irish)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Irish)",
+  "settings1": "[GA] Settings (Irish)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Irish)",
+  "cancel1": "[GA] Cancel (Irish)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Irish)",
+  "REDACTED_TOKEN": "[GA] Subscription activated successfully! (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[GA] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Irish)",
+  "broadcast": "[GA] Broadcast (Irish)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Irish)",
+  "noEventsScheduledThisWeek": "[GA] No events scheduled this week (Irish)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Irish)",
+  "googleCalendar": "[GA] Google Calendar (Irish)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Irish)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Irish)",
+  "childDashboard": "[GA] Child Dashboard (Irish)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Irish)",
+  "failedToUploadBackgroundE": "[GA] Failed to upload background: $e (Irish)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[GA] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[GA] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[GA] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Irish)",
+  "noAppointments": "[GA] No appointments (Irish)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Irish)",
+  "unlimitedBookingsPerWeek": "[GA] • Unlimited bookings per week (Irish)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Irish)",
+  "scheduledAtScheduledat": "[GA] Scheduled at: $scheduledAt (Irish)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Irish)",
+  "selectStaff": "[GA] Select Staff (Irish)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Irish)",
+  "REDACTED_TOKEN": "[GA] Subscription cancelled successfully (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Irish)",
+  "cancelAppointment": "[GA] Cancel Appointment (Irish)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[GA] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Irish)",
+  "businessSignup": "[GA] Business Signup (Irish)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Irish)",
+  "REDACTED_TOKEN": "[GA] Business Completion Screen - Coming Soon (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Irish)",
+  "createGame1": "[GA] Create Game (Irish)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Irish)",
+  "valuetoint": "[GA] {value} (Irish)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Irish)",
+  "pleaseEnterAPromoCode": "[GA] Please enter a promo code (Irish)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Irish)",
+  "errorLoadingAvailabilityE": "[GA] Error loading availability: $e (Irish)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Irish)",
+  "parentalControls": "[GA] Parental Controls (Irish)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Irish)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Irish)",
+  "childLinkedSuccessfully": "[GA] Child linked successfully! (Irish)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Irish)",
+  "create": "[GA] Create (Irish)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Irish)",
+  "noExternalMeetingsFound": "[GA] No external meetings found. (Irish)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Irish)",
+  "staffSelectionstaffdisplayname": "[GA] Staff: {staffName} (Irish)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[GA] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Irish)",
+  "schedulerScreen": "[GA] Scheduler Screen (Irish)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Irish)",
+  "clientUpdatedSuccessfully": "[GA] Client updated successfully! (Irish)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Irish)",
+  "surveyResponses": "[GA] Survey Responses (Irish)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Irish)",
+  "syncToOutlook": "[GA] Sync to Outlook (Irish)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Irish)",
+  "saveChanges": "[GA] Save Changes (Irish)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Irish)",
+  "pickTime": "[GA] Pick Time (Irish)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Irish)",
+  "registrationFailedEtostring": "[GA] Registration failed: {error} (Irish)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Irish)",
+  "analytics": "[GA] Analytics (Irish)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Irish)",
+  "errorLoadingEvents": "[GA] Error loading events (Irish)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[GA] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[GA] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Irish)",
+  "success1": "[GA] Success (Irish)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[GA] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Irish)",
+  "fromAvailstartformatcontext": "[GA] From: {startTime} (Irish)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Irish)",
+  "readWrite": "[GA] Read & Write (Irish)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Irish)",
+  "REDACTED_TOKEN": "[GA] Redirecting to Stripe checkout for Basic plan... (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[GA] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Irish)",
+  "pickDate": "[GA] Pick Date (Irish)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Irish)",
+  "chatBooking": "[GA] Chat Booking (Irish)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Irish)",
+  "noQuestionsAdded": "[GA] No questions added (Irish)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[GA] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[GA] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Irish)",
+  "typeOpenCall": "[GA] Type: Open Call (Irish)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[GA] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[GA] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Irish)",
+  "invoiceCreatedSuccessfully": "[GA] Invoice created successfully! (Irish)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Irish)",
+  "noTimeSeriesDataAvailable": "[GA] No time series data available (Irish)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[GA] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[GA] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Irish)",
+  "failedToSendPrivacyRequestE": "[GA] Failed to send privacy request: $e (Irish)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Irish)",
+  "chooseYourPlan": "[GA] Choose Your Plan (Irish)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Irish)",
+  "playtimeManagement": "[GA] Playtime Management (Irish)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Irish)",
+  "availability": "[GA] Availability (Irish)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Irish)",
+  "eventCreated": "[GA] Event created (Irish)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Irish)",
+  "subscribeToBasic499mo": "[GA] Subscribe to Basic (€4.99/mo) (Irish)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Irish)",
+  "completion": "[GA] Completion (Irish)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Irish)",
+  "supportTicketSubmitted": "[GA] Support ticket submitted (Irish)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Irish)",
+  "monetizationSettings": "[GA] Monetization Settings (Irish)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Irish)",
+  "noBookingsFound": "[GA] No bookings found (Irish)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[GA] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Irish)",
+  "deleteSurvey": "[GA] Delete Survey (Irish)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Irish)",
+  "gameApprovedSuccessfully": "[GA] Game approved successfully! (Irish)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Irish)",
+  "errorLoadingPermissionsError": "[GA] Error loading permissions: $error (Irish)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Irish)",
+  "referrals": "[GA] Referrals (Irish)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Irish)",
+  "crm": "[GA] CRM (Irish)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Irish)",
+  "gameRejected": "[GA] Game rejected (Irish)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Irish)",
+  "appointments": "[GA] Appointments (Irish)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Irish)",
+  "onboardingScreen": "[GA] Onboarding Screen (Irish)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Irish)",
+  "welcomeToYourStudio": "[GA] Welcome to your studio (Irish)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Irish)",
+  "update": "[GA] Update (Irish)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Irish)",
+  "retry1": "[GA] Retry (Irish)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Irish)",
+  "booking": "[GA] Booking (Irish)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Irish)",
+  "parentalSettings": "[GA] Parental Settings (Irish)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Irish)",
+  "language": "[GA] Language (Irish)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Irish)",
+  "deleteSlot": "[GA] Delete Slot (Irish)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[GA] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[GA] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Irish)",
+  "createNewGame": "[GA] Create New Game (Irish)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Irish)",
+  "next1": "[GA] Next (Irish)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Irish)",
+  "backgroundUploadedSuccessfully": "[GA] Background uploaded successfully! (Irish)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Irish)",
+  "noAppointmentRequestsFound": "[GA] No appointment requests found. (Irish)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Irish)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Irish)",
+  "restrictMatureContent": "[GA] Restrict mature content (Irish)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Irish)",
+  "ambassadors": "[GA] Ambassadors (Irish)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Irish)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Irish)",
+  "paymentWasCancelled": "[GA] Payment was cancelled (Irish)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Irish)",
+  "clearAll": "[GA] Clear All (Irish)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Irish)",
+  "viewDetails": "[GA] View Details (Irish)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Irish)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Irish)",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Irish)",
+  "failedToCreateGameE": "[GA] Failed to create game: $e (Irish)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Irish)",
+  "noChartDataAvailable": "[GA] No chart data available (Irish)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Irish)",
+  "phonebasedBookingSystem": "[GA] • Phone-based booking system (Irish)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Irish)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Irish)",
+  "invoices": "[GA] Invoices (Irish)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Irish)",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Irish)",
+  "scheduledAtArgsscheduledat": "[GA] Scheduled at: {scheduledAt} (Irish)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Irish)",
+  "REDACTED_TOKEN": "[GA] Duration: {duration} minutes (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Irish)",
+  "tryAgain": "[GA] Try Again (Irish)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Irish)",
+  "deleteBackground": "[GA] Delete Background (Irish)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Irish)",
+  "currentTierTiertouppercase": "[GA] Current Tier: {tier} (Irish)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[GA] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Irish)",
+  "REDACTED_TOKEN": "[GA] No clients found. Add your first client! (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[GA] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[GA] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Irish)",
+  "appointmentRequests": "[GA] Appointment Requests (Irish)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Irish)",
+  "forward": "[GA] Forward (Irish)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Irish)",
+  "roomAddedSuccessfully": "[GA] Room added successfully! (Irish)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Irish)",
+  "option": "[GA] • $option (Irish)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Irish)",
+  "responseIndex1": "[GA] Response #{number} (Irish)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Irish)",
+  "crmDashboardWithAnalytics": "[GA] • CRM dashboard with analytics (Irish)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Irish)",
+  "contentLibrary1": "[GA] Content Library (Irish)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Irish)",
+  "reply": "[GA] Reply (Irish)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Irish)",
+  "subscriptionManagement": "[GA] Subscription Management (Irish)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Irish)",
+  "REDACTED_TOKEN": "[GA] Monetization settings will be implemented here (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Irish)",
+  "failedToApplyPromoCodeE": "[GA] Failed to apply promo code: $e (Irish)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[GA] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Irish)",
+  "localizationContribution": "[GA] Localization Contribution (Irish)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Irish)",
+  "parentalConsent": "[GA] Parental Consent (Irish)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Irish)",
+  "businessSignupScreenComingSoon": "[GA] Business Signup Screen - Coming Soon (Irish)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Irish)",
+  "REDACTED_TOKEN": "[GA] Are you sure you want to delete this appointment? (Irish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Irish)",
+  "syncAppointment": "[GA] Sync Appointment (Irish)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Irish)",
+  "iConsent": "[GA] I Consent (Irish)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Irish)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Irish)",
+  "businessSetupScreenComingSoon": "[GA] Business Setup Screen - Coming Soon (Irish)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Irish)",
+  "edit1": "[GA] Edit (Irish)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Irish)",
+  "noEventsScheduledThisMonth": "[GA] No events scheduled this month (Irish)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Irish)",
+  "businessDashboard": "[GA] Business Dashboard (Irish)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Irish)",
+  "noMessagesFound": "[GA] No messages found. (Irish)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[GA] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Irish)",
+  "manageStaffAvailability": "[GA] Manage Staff Availability (Irish)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Irish)",
+  "noMissingTranslations": "[GA] No missing translations (Irish)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Irish)",
+  "skip": "[GA] Skip (Irish)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[GA] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Irish)",
+  "errorLoadingReferralCode": "[GA] Error loading referral code (Irish)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Irish)",
+  "allCountries": "[GA] All Countries (Irish)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Irish)",
+  "deleteGame": "[GA] Delete Game (Irish)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Irish)",
+  "staffManagementTools": "[GA] • Staff management tools (Irish)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Irish)",
+  "deleteMessage": "[GA] Delete Message (Irish)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Irish)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[GA] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Irish)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Irish)",
+  "openingCustomerPortal": "[GA] Opening customer portal... (Irish)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Irish)",
+  "signOut": "[GA] Sign Out (Irish)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Irish)",
+  "nameProfilename": "[GA] Name: {name} (Irish)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Irish)",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Irish)",
+  "upgradeToBusiness": "[GA] Upgrade to Business (Irish)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Irish)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Irish)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Irish)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Irish)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Irish)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Irish)",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Irish)",
+  "viewResponses": "[GA] View Responses (Irish)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Irish)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Irish)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Irish)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Irish)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Irish)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Irish)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Irish)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Irish)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Irish)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Irish)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

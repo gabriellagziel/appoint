@@ -8,7 +8,7 @@
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "아직 세션이 없습니다",
+  "noSessionsYet": "[KO] 아직 세션이 없습니다",
   "@noSessionsYet": {
     "description": "Description"
   },
@@ -16,7 +16,7 @@
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "플레이 모드를 선택하세요:",
+  "playtimeLandingChooseMode": "[KO] 플레이 모드를 선택하세요:",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
@@ -24,7 +24,7 @@
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "메시지 예약",
+  "scheduleMessage": "[KO] 메시지 예약",
   "@scheduleMessage": {
     "description": "Description"
   },
@@ -32,7 +32,7 @@
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[KO] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
@@ -40,15 +40,15 @@
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "초대할 친구 선택",
+  "playtimeChooseFriends": "[KO] 초대할 친구 선택",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "초대가 없습니다",
+  "noInvites": "[KO] 초대가 없습니다",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "시간 선택",
+  "playtimeChooseTime": "[KO] 시간 선택",
   "@playtimeChooseTime": {
     "description": "Description"
   },
@@ -56,7 +56,7 @@
   "@success": {
     "description": "Description"
   },
-  "undo": "실행 취소",
+  "undo": "[KO] 실행 취소",
   "@undo": {
     "description": "Description"
   },
@@ -64,15 +64,15 @@
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "가상 세션 생성",
+  "createVirtualSession": "[KO] 가상 세션 생성",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "메시지가 성공적으로 전송되었습니다",
+  "messageSentSuccessfully": "[KO] 메시지가 성공적으로 전송되었습니다",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "다시 실행",
+  "redo": "[KO] 다시 실행",
   "@redo": {
     "description": "Description"
   },
@@ -84,7 +84,7 @@
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "초대 확인 취소",
+  "cancelInviteConfirmation": "[KO] 초대 확인 취소",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
@@ -92,19 +92,19 @@
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "접근 권한 취소",
+  "revokeAccess": "[KO] 접근 권한 취소",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "인식을 위해 그룹 저장",
+  "saveGroupForRecognition": "[KO] 인식을 위해 그룹 저장",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "라이브 세션 예약됨",
+  "playtimeLiveScheduled": "[KO] 라이브 세션 예약됨",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "접근 권한 취소 확인",
+  "revokeAccessConfirmation": "[KO] 접근 권한 취소 확인",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
@@ -116,7 +116,7 @@
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "가족 링크 로드 오류",
+  "errorLoadingFamilyLinks": "[KO] 가족 링크 로드 오류",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
@@ -124,15 +124,15 @@
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "Playtime 생성",
+  "playtimeCreate": "[KO] Playtime 생성",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "개인정보 요청 실행 실패",
+  "failedToActionPrivacyRequest": "[KO] 개인정보 요청 실행 실패",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "앱 제목",
+  "appTitle": "[KO] 앱 제목",
   "@appTitle": {
     "description": "Description"
   },
@@ -140,11 +140,11 @@
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "가상 모드",
+  "playtimeModeVirtual": "[KO] 가상 모드",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "Playtime 설명",
+  "playtimeDescription": "[KO] Playtime 설명",
   "@playtimeDescription": {
     "description": "Description"
   },
@@ -152,11 +152,11 @@
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "가상 세션 시작됨",
+  "playtimeVirtualStarted": "[KO] 가상 세션 시작됨",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "첫 게임 만들기",
+  "createYourFirstGame": "[KO] 첫 게임 만들기",
   "@createYourFirstGame": {
     "description": "Description"
   },
@@ -168,7 +168,7 @@
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "결과 없음",
+  "noResults": "[KO] 결과 없음",
   "@noResults": {
     "description": "Description"
   },
@@ -180,7 +180,7 @@
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "라이브 모드",
+  "playtimeModeLive": "[KO] 라이브 모드",
   "@playtimeModeLive": {
     "description": "Description"
   },
@@ -188,7 +188,7 @@
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "기본 공유 메시지",
+  "defaultShareMessage": "[KO] 기본 공유 메시지",
   "@defaultShareMessage": {
     "description": "Description"
   },
@@ -196,15 +196,15 @@
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "Playtime 허브",
+  "playtimeHub": "[KO] Playtime 허브",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "라이브 세션 만들기",
+  "createLiveSession": "[KO] 라이브 세션 만들기",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "알림 켜기",
+  "enableNotifications": "[KO] 알림 켜기",
   "@enableNotifications": {
     "description": "Description"
   },
@@ -216,23 +216,23 @@
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "미팅이 성공적으로 공유되었습니다",
+  "meetingSharedSuccessfully": "[KO] 미팅이 성공적으로 공유되었습니다",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "Playtime에 오신 것을 환영합니다",
+  "welcomeToPlaytime": "[KO] Playtime에 오신 것을 환영합니다",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "전체 보기",
+  "viewAll": "[KO] 전체 보기",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "가상 Playtime",
+  "playtimeVirtual": "[KO] 가상 Playtime",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "직원 화면 추후 결정",
+  "staffScreenTBD": "[KO] 직원 화면 추후 결정",
   "@staffScreenTBD": {
     "description": "Description"
   },
@@ -240,23 +240,23 @@
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "초대가 성공적으로 취소되었습니다",
+  "inviteCancelledSuccessfully": "[KO] 초대가 성공적으로 취소되었습니다",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "다시 시도",
+  "retry": "[KO] 다시 시도",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "브로드캐스트 메시지 작성",
+  "composeBroadcastMessage": "[KO] 브로드캐스트 메시지 작성",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "지금 보내기",
+  "sendNow": "[KO] 지금 보내기",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "아직 게임이 없습니다",
+  "noGamesYet": "[KO] 아직 게임이 없습니다",
   "@noGamesYet": {
     "description": "Description"
   },
@@ -276,7 +276,7 @@
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "자녀 제거",
+  "removeChild": "[KO] 자녀 제거",
   "@removeChild": {
     "description": "Description"
   },
@@ -296,11 +296,11 @@
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "플레이타임 세션 생성",
+  "playtimeCreateSession": "[KO] 플레이타임 세션 생성",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "가족 구성원",
+  "familyMembers": "[KO] 가족 구성원",
   "@familyMembers": {
     "description": "Description"
   },
@@ -308,11 +308,11 @@
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "예정된 세션",
+  "upcomingSessions": "[KO] 예정된 세션",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "그룹 이름 입력",
+  "enterGroupName": "[KO] 그룹 이름 입력",
   "@enterGroupName": {
     "description": "Description"
   },
@@ -320,31 +320,31 @@
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "라이브 플레이",
+  "playtimeLive": "[KO] 라이브 플레이",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "초대 로딩 오류",
+  "errorLoadingInvites": "[KO] 초대 로딩 오류",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "타겟팅 필터",
+  "targetingFilters": "[KO] 타겟팅 필터",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "비디오 선택",
+  "pickVideo": "[KO] 비디오 선택",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "게임이 삭제되었습니다",
+  "playtimeGameDeleted": "[KO] 게임이 삭제되었습니다",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "나중에 예약",
+  "scheduleForLater": "[KO] 나중에 예약",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "접근이 성공적으로 취소되었습니다",
+  "accessRevokedSuccessfully": "[KO] 접근이 성공적으로 취소되었습니다",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
@@ -352,7 +352,7 @@
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "권한 확인 중...",
+  "checkingPermissions": "[KO] 권한 확인 중...",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
@@ -360,7 +360,7 @@
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "예, 취소",
+  "yesCancel": "[KO] 예, 취소",
   "@yesCancel": {
     "description": "Description"
   },
@@ -368,15 +368,15 @@
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[KO] Share on WhatsApp",
+  "shareOnWhatsApp": "[KO] [KO] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "알림 설정",
+  "notificationSettings": "[KO] 알림 설정",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "내 프로필",
+  "myProfile": "[KO] 내 프로필",
   "@myProfile": {
     "description": "Description"
   },
@@ -384,11 +384,11 @@
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "아직 메시지가 없습니다",
+  "noBroadcastMessages": "[KO] 아직 메시지가 없습니다",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "요청 유형",
+  "requestType": "[KO] 요청 유형",
   "@requestType": {
     "description": "requestType description"
   },
@@ -396,1123 +396,1123 @@
   "@notifications": {
     "description": "Description"
   },
-  "details": "[KO] Details",
+  "details": "[KO] [KO] Details",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "[KO] Cancel Invite",
+  "cancelInvite": "[KO] [KO] Cancel Invite",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "[KO] Create New",
+  "createNew": "[KO] [KO] Create New",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "[KO] Settings",
+  "settings": "[KO] [KO] Settings",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "[KO] Reject",
+  "playtimeReject": "[KO] [KO] Reject",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "[KO] Error loading profile",
+  "errorLoadingProfile": "[KO] [KO] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "[KO] Edit",
+  "edit": "[KO] [KO] Edit",
   "@edit": {
     "description": "Description"
   },
-  "add": "[KO] Add",
+  "add": "[KO] [KO] Add",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "[KO] Game approved",
+  "playtimeGameApproved": "[KO] [KO] Game approved",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "[KO] Forgot Password?",
+  "forgotPassword": "[KO] [KO] Forgot Password?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "[KO] Family Dashboard",
+  "familyDashboard": "[KO] [KO] Family Dashboard",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "[KO] Loading...",
+  "loading": "[KO] [KO] Loading...",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "[KO] Quick Actions",
+  "quickActions": "[KO] [KO] Quick Actions",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "[KO] Playtime",
+  "playtimeTitle": "[KO] [KO] Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "[KO] OTP resent successfully",
+  "otpResentSuccessfully": "[KO] [KO] OTP resent successfully",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "[KO] Error checking permissions",
+  "errorCheckingPermissions": "[KO] [KO] Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "[KO] Client screen coming soon",
+  "clientScreenTBD": "[KO] [KO] Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "[KO] FCM Token",
+  "fcmToken": "[KO] [KO] FCM Token",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "[KO] Pick Image",
+  "pickImage": "[KO] [KO] Pick Image",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "[KO] Previous",
+  "previous": "[KO] [KO] Previous",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[KO] No profile found",
+  "noProfileFound": "[KO] [KO] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "[KO] No family members yet",
+  "noFamilyMembersYet": "[KO] [KO] No family members yet",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "[KO] Media (Optional)",
+  "mediaOptional": "[KO] [KO] Media (Optional)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "[KO] Message saved successfully",
+  "messageSavedSuccessfully": "[KO] [KO] Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "[KO] Scheduled for",
+  "scheduledFor": "[KO] [KO] Scheduled for",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "[KO] Dashboard",
+  "dashboard": "[KO] [KO] Dashboard",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "[KO] No permission for broadcast",
+  "noPermissionForBroadcast": "[KO] [KO] No permission for broadcast",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[KO] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "[KO] Invite Details",
+  "inviteDetail": "[KO] [KO] Invite Details",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "[KO] Scheduled",
+  "scheduled": "[KO] [KO] Scheduled",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "[KO] Failed to resend OTP",
+  "failedToResendOtp": "[KO] [KO] Failed to resend OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "[KO] Scheduling",
+  "scheduling": "[KO] [KO] Scheduling",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "[KO] Error saving message",
+  "errorSavingMessage": "[KO] [KO] Error saving message",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "[KO] Save",
+  "save": "[KO] [KO] Save",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "[KO] Approve",
+  "playtimeApprove": "[KO] [KO] Approve",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "[KO] Create your first session",
+  "createYourFirstSession": "[KO] [KO] Create your first session",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "[KO] Game rejected",
+  "playtimeGameRejected": "[KO] [KO] Game rejected",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "[KO] Failed to revoke access",
+  "failedToRevokeAccess": "[KO] [KO] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "[KO] Recent Games",
+  "recentGames": "[KO] [KO] Recent Games",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "[KO] Customize Message",
+  "customizeMessage": "[KO] [KO] Customize Message",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "[KO] Failed to cancel invite",
+  "failedToCancelInvite": "[KO] [KO] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "[KO] Error sending message",
+  "errorSendingMessage": "[KO] [KO] Error sending message",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "[KO] Confirm Password",
+  "confirmPassword": "[KO] [KO] Confirm Password",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "[KO] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[KO] [KO] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "[KO] Connected Children",
+  "connectedChildren": "[KO] [KO] Connected Children",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "[KO] Share",
+  "share": "[KO] [KO] Share",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "[KO] Enter game name",
+  "playtimeEnterGameName": "[KO] [KO] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "[KO] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[KO] [KO] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "[KO] My Invites",
+  "myInvites": "[KO] [KO] My Invites",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "[KO] Create Game",
+  "createGame": "[KO] [KO] Create Game",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[KO] Group Name (Optional)",
+  "groupNameOptional": "[KO] [KO] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "[KO] No playtime sessions found.",
+  "playtimeNoSessions": "[KO] [KO] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[KO] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[KO] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[KO] [KO] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "[KO] Close",
+  "close": "[KO] [KO] Close",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "[KO] Known group detected",
+  "knownGroupDetected": "[KO] [KO] Known group detected",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "[KO] Back",
+  "back": "[KO] [KO] Back",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "[KO] Choose a game",
+  "playtimeChooseGame": "[KO] [KO] Choose a game",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "[KO] Manage Permissions",
+  "managePermissions": "[KO] [KO] Manage Permissions",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "[KO] Poll Options",
+  "pollOptions": "[KO] [KO] Poll Options",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "[KO] Clicked",
+  "clicked": "[KO] [KO] Clicked",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "[KO] Link",
+  "link": "[KO] [KO] Link",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "[KO] Your meeting is ready! Join now",
+  "meetingReadyMessage": "[KO] [KO] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "[KO] Pending Invites",
+  "pendingInvites": "[KO] [KO] Pending Invites",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "[KO] Status:",
+  "statusColon": "[KO] [KO] Status:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[KO] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[KO] [KO] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[KO] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[KO] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[KO] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[KO] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[KO] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[KO] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[KO] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[KO] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[KO] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[KO] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[KO] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[KO] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[KO] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[KO] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[KO] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[KO] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[KO] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[KO] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Korean)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Korean)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Korean)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Korean)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[KO] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[KO] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[KO] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[KO] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[KO] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[KO] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[KO] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[KO] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[KO] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[KO] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[KO] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[KO] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[KO] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[KO] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[KO] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[KO] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[KO] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[KO] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[KO] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[KO] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[KO] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[KO] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[KO] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[KO] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[KO] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[KO] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[KO] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[KO] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[KO] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[KO] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[KO] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[KO] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[KO] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[KO] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[KO] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[KO] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[KO] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[KO] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[KO] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[KO] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[KO] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[KO] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[KO] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[KO] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[KO] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[KO] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[KO] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[KO] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[KO] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[KO] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[KO] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[KO] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[KO] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[KO] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[KO] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[KO] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[KO] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[KO] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[KO] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[KO] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[KO] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[KO] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Korean)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Korean)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Korean)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Korean)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Korean)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Korean)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Korean)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Korean)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[KO] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Korean)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Korean)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Korean)",
+  "upload1": "[KO] Upload (Korean)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Korean)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Korean)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Korean)",
+  "REDACTED_TOKEN": "[KO] Virtual session created! Inviting friends... (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Korean)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Korean)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Korean)",
+  "rewards": "[KO] Rewards (Korean)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Korean)",
+  "time": "[KO] Time (Korean)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[KO] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Korean)",
+  "noSlots": "[KO] No slots (Korean)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Korean)",
+  "signIn": "[KO] Sign In (Korean)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Korean)",
+  "homeFeedScreen": "[KO] Home Feed Screen (Korean)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Korean)",
+  "selectLocation": "[KO] Select Location (Korean)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Korean)",
+  "noTicketsYet": "[KO] No tickets yet (Korean)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Korean)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Korean)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Korean)",
+  "subscriptionUnavailable": "[KO] Subscription unavailable (Korean)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Korean)",
+  "confirmBooking": "[KO] Confirm Booking (Korean)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Korean)",
+  "failedToUpdatePermissionE": "[KO] Failed to update permission: $e (Korean)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Korean)",
+  "reject": "[KO] Reject (Korean)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Korean)",
+  "REDACTED_TOKEN": "[KO] Ambassador Status: {ambassadorStatus} (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[KO] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Korean)",
+  "checkingSubscription": "[KO] Checking subscription... (Korean)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Korean)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Korean)",
+  "noContentAvailableYet": "[KO] No content available yet (Korean)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Korean)",
+  "resolve": "[KO] Resolve (Korean)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Korean)",
+  "errorLoadingSurveysError": "[KO] Error loading surveys: $error (Korean)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[KO] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Korean)",
+  "getHelpWithYourAccount": "[KO] Get help with your account (Korean)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Korean)",
+  "pay": "[KO] Pay (Korean)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[KO] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Korean)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Korean)",
+  "changesSavedSuccessfully": "[KO] Changes saved successfully! (Korean)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Korean)",
+  "createNewInvoice": "[KO] Create New Invoice (Korean)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Korean)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Korean)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Korean)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Korean)",
+  "profileSaved": "[KO] Profile saved! (Korean)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Korean)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Korean)",
+  "valuetointk": "[KO] \\${value}K (Korean)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Korean)",
+  "deleteAccount": "[KO] Delete Account (Korean)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Korean)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Korean)",
+  "businessOnboarding": "[KO] Business Onboarding (Korean)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Korean)",
+  "addNewClient": "[KO] Add New Client (Korean)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Korean)",
+  "darkMode": "[KO] Dark Mode (Korean)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[KO] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[KO] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Korean)",
+  "REDACTED_TOKEN": "[KO] You will receive a confirmation email shortly. (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Korean)",
+  "addQuestion": "[KO] Add Question (Korean)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Korean)",
+  "privacyPolicy": "[KO] Privacy Policy (Korean)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Korean)",
+  "branchesLengthBranches": "[KO] {branchCount} branches (Korean)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Korean)",
+  "join": "[KO] Join (Korean)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Korean)",
+  "businessSubscription": "[KO] Business Subscription (Korean)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Korean)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[KO] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Korean)",
+  "surveyManagement": "[KO] Survey Management (Korean)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[KO] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Korean)",
+  "noRoomsFoundAddYourFirstRoom": "[KO] No rooms found. Add your first room! (Korean)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Korean)",
+  "readOurPrivacyPolicy": "[KO] Read our privacy policy (Korean)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Korean)",
+  "couldNotOpenPrivacyPolicy": "[KO] Could not open privacy policy (Korean)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Korean)",
+  "refresh1": "[KO] Refresh (Korean)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Korean)",
+  "roomUpdatedSuccessfully": "[KO] Room updated successfully! (Korean)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Korean)",
+  "contentDetail": "[KO] Content Detail (Korean)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Korean)",
+  "cancelSubscription": "[KO] Cancel Subscription (Korean)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Korean)",
+  "REDACTED_TOKEN": "[KO] Successfully registered as Ambassador! (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Korean)",
+  "save1": "[KO] Save (Korean)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Korean)",
+  "copy1": "[KO] Copy (Korean)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Korean)",
+  "failedToSendInvitationE": "[KO] Failed to send invitation: $e (Korean)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Korean)",
+  "surveyScore": "[KO] Survey Score (Korean)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[KO] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Korean)",
+  "noAppointmentsFound": "[KO] No appointments found. (Korean)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Korean)",
+  "responseDetail": "[KO] Response Detail (Korean)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Korean)",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Korean)",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Korean)",
+  "failedToStartProSubscriptionE": "[KO] Failed to start Pro subscription: $e (Korean)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Korean)",
+  "REDACTED_TOKEN": "[KO] Business Dashboard Entry Screen - Coming Soon (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Korean)",
+  "contentFilter": "[KO] Content Filter (Korean)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Korean)",
+  "helpSupport": "[KO] Help & Support (Korean)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Korean)",
+  "editRoom": "[KO] Edit Room (Korean)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[KO] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[KO] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Korean)",
+  "REDACTED_TOKEN": "[KO] Business CRM Entry Screen - Coming Soon (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[KO] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[KO] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Korean)",
+  "errorLoadingDashboardError": "[KO] Error loading dashboard: $error (Korean)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Korean)",
+  "gameDeletedSuccessfully": "[KO] Game deleted successfully! (Korean)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Korean)",
+  "viewResponsesComingSoon": "[KO] View responses - Coming soon! (Korean)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[KO] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Korean)",
+  "errorLoadingRewards": "[KO] Error loading rewards (Korean)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Korean)",
+  "failedToDeleteAccountE": "[KO] Failed to delete account: $e (Korean)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Korean)",
+  "invited1": "[KO] Invited (Korean)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Korean)",
+  "noBranchesAvailable": "[KO] No branches available (Korean)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Korean)",
+  "errorError": "[KO] Error: $error (Korean)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Korean)",
+  "noEvents": "[KO] No events (Korean)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Korean)",
+  "gameCreatedSuccessfully": "[KO] Game created successfully! (Korean)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Korean)",
+  "add1": "[KO] Add (Korean)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[KO] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Korean)",
+  "eventstarttimeEventendtime": "[KO] {startTime} - {endTime} (Korean)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Korean)",
+  "allowPlaytime": "[KO] Allow Playtime (Korean)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Korean)",
+  "clients": "[KO] Clients (Korean)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Korean)",
+  "noAmbassadorDataAvailable": "[KO] No ambassador data available (Korean)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Korean)",
+  "backgroundDeletedSuccessfully": "[KO] Background deleted successfully! (Korean)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Korean)",
+  "errorSnapshoterror": "[KO] Error: {error} (Korean)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Korean)",
+  "noAnalyticsDataAvailableYet": "[KO] No analytics data available yet. (Korean)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Korean)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Korean)",
+  "REDACTED_TOKEN": "[KO] Business Phone Booking Entry Screen - Coming Soon (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Korean)",
+  "verification": "[KO] Verification (Korean)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Korean)",
+  "copyLink": "[KO] Copy Link (Korean)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Korean)",
+  "dashboard1": "[KO] Dashboard (Korean)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Korean)",
+  "manageChildAccounts": "[KO] Manage Child Accounts (Korean)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Korean)",
+  "grantConsent": "[KO] Grant Consent (Korean)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Korean)",
+  "myProfile1": "[KO] My Profile (Korean)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Korean)",
+  "submit": "[KO] Submit (Korean)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[KO] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Korean)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Korean)",
+  "ambassadorDashboard": "[KO] Ambassador Dashboard (Korean)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Korean)",
+  "phoneBooking": "[KO] Phone Booking (Korean)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Korean)",
+  "bookViaChat": "[KO] Book via Chat (Korean)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
@@ -1520,1343 +1520,1343 @@
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Korean)",
+  "businessProfile": "[KO] Business Profile (Korean)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Korean)",
+  "REDACTED_TOKEN": "[KO] Business Booking Entry Screen - Coming Soon (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Korean)",
+  "createNewSurvey": "[KO] Create New Survey (Korean)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Korean)",
+  "backgroundRejected": "[KO] Background rejected (Korean)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Korean)",
+  "noMediaSelected": "[KO] No media selected (Korean)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Korean)",
+  "syncToGoogle": "[KO] Sync to Google (Korean)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Korean)",
+  "virtualPlaytime": "[KO] Virtual Playtime (Korean)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[KO] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[KO] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Korean)",
+  "invitationSentSuccessfully": "[KO] Invitation sent successfully! (Korean)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Korean)",
+  "registering": "[KO] Registering... (Korean)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Korean)",
+  "statusAppointmentstatusname": "[KO] Status: {status} (Korean)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Korean)",
+  "home1": "[KO] Home (Korean)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Korean)",
+  "errorSavingSettingsE": "[KO] Error saving settings: $e (Korean)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Korean)",
+  "appVersionAndInformation": "[KO] App version and information (Korean)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Korean)",
+  "REDACTED_TOKEN": "[KO] Business Subscription Entry Screen - Coming Soon (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Korean)",
+  "ekeyEvalue": "[KO] {key}: {value} (Korean)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Korean)",
+  "REDACTED_TOKEN": "[KO] Your payment has been processed successfully. (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Korean)",
+  "errorE": "[KO] Error: $e (Korean)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Korean)",
+  "viewAll1": "[KO] View All (Korean)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Korean)",
+  "editSurveyComingSoon": "[KO] Edit survey - Coming soon! (Korean)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Korean)",
+  "enterOtp": "[KO] Enter OTP (Korean)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Korean)",
+  "payment": "[KO] Payment (Korean)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Korean)",
+  "REDACTED_TOKEN": "[KO] Automatically confirm new booking requests (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Korean)",
+  "noRouteDefinedForSettingsname": "[KO] No route defined for {settingsName} (Korean)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Korean)",
+  "pleaseSignInToUploadABackground": "[KO] Please sign in to upload a background (Korean)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[KO] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Korean)",
+  "staffAvailability": "[KO] Staff Availability (Korean)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Korean)",
+  "livePlaytime": "[KO] Live Playtime (Korean)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Korean)",
+  "autoconfirmBookings": "[KO] Auto-Confirm Bookings (Korean)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Korean)",
+  "REDACTED_TOKEN": "[KO] Redirecting to Stripe checkout for Pro plan... (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Korean)",
+  "exportAsCsv": "[KO] Export as CSV (Korean)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Korean)",
+  "deleteFunctionalityComingSoon": "[KO] Delete functionality coming soon! (Korean)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Korean)",
+  "editClient": "[KO] Edit Client (Korean)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Korean)",
+  "REDACTED_TOKEN": "[KO] Are you sure you want to delete this message? (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Korean)",
+  "referralsAmbassadorreferrals": "[KO] Referrals: {referrals} (Korean)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[KO] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Korean)",
+  "privacyRequestSentToYourParents": "[KO] Privacy request sent to your parents! (Korean)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Korean)",
+  "clientDeletedSuccessfully": "[KO] Client deleted successfully! (Korean)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Korean)",
+  "failedToCancelSubscription": "[KO] Failed to cancel subscription (Korean)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Korean)",
+  "allLanguages": "[KO] All Languages (Korean)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Korean)",
+  "slotDeletedSuccessfully": "[KO] Slot deleted successfully (Korean)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[KO] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Korean)",
+  "REDACTED_TOKEN": "[KO] Parents must approve before children can join (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Korean)",
+  "subscribeToPro1499mo": "[KO] Subscribe to Pro (€14.99/mo) (Korean)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Korean)",
+  "REDACTED_TOKEN": "[KO] Business Availability Entry Screen - Coming Soon (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Korean)",
+  "appointmentsListlength": "[KO] Appointments: {count} (Korean)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Korean)",
+  "clearFilters": "[KO] Clear Filters (Korean)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Korean)",
+  "submitBooking": "[KO] Submit Booking (Korean)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Korean)",
+  "REDACTED_TOKEN": "[KO] Are you sure you want to cancel this appointment? (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Korean)",
+  "noUpcomingBookings": "[KO] No upcoming bookings (Korean)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Korean)",
+  "goBack": "[KO] Go Back (Korean)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Korean)",
+  "setup": "[KO] Setup (Korean)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Korean)",
+  "inviteChild": "[KO] Invite Child (Korean)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Korean)",
+  "goToDashboard": "[KO] Go to Dashboard (Korean)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Korean)",
+  "ambassadorQuotaDashboard": "[KO] Ambassador Quota Dashboard (Korean)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[KO] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Korean)",
+  "referralCode": "[KO] Referral Code (Korean)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[KO] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Korean)",
+  "date": "[KO] Date (Korean)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Korean)",
+  "readOnly": "[KO] Read Only (Korean)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Korean)",
+  "bookingRequest": "[KO] Booking Request (Korean)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Korean)",
+  "advancedReporting": "[KO] • Advanced reporting (Korean)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Korean)",
+  "rooms": "[KO] Rooms (Korean)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Korean)",
+  "copiedToClipboard": "[KO] Copied to clipboard (Korean)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Korean)",
+  "bookingConfirmed": "[KO] Booking Confirmed (Korean)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Korean)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Korean)",
+  "clientAddedSuccessfully": "[KO] Client added successfully! (Korean)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Korean)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Korean)",
+  "backgroundApproved": "[KO] Background approved! (Korean)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Korean)",
+  "familySupport": "[KO] Family Support (Korean)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Korean)",
+  "deletingAccount": "[KO] Deleting account... (Korean)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Korean)",
+  "bookAppointment": "[KO] Book Appointment (Korean)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Korean)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Korean)",
+  "delete1": "[KO] Delete (Korean)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Korean)",
+  "sendBookingInvite": "[KO] Send Booking Invite (Korean)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Korean)",
+  "text": "[KO] Text (Korean)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Korean)",
+  "manageSubscription": "[KO] Manage Subscription (Korean)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Korean)",
+  "requiresInstallFallback": "[KO] Requires Install Fallback (Korean)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Korean)",
+  "paymentConfirmation": "[KO] Payment Confirmation (Korean)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Korean)",
+  "promoAppliedYourNextBillIsFree": "[KO] Promo applied! Your next bill is free. (Korean)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Korean)",
+  "errorLoadingSlots": "[KO] Error loading slots (Korean)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Korean)",
+  "REDACTED_TOKEN": "[KO] Allow other users to find and join this game (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Korean)",
+  "REDACTED_TOKEN": "[KO] Business Onboarding Screen - Coming Soon (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Korean)",
+  "activateBusinessProfile": "[KO] Activate Business Profile (Korean)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Korean)",
+  "contentNotFound": "[KO] Content not found (Korean)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Korean)",
+  "pspecialtynpcontactinfo": "[KO] {specialty}\\n{contactInfo} (Korean)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Korean)",
+  "rating": "[KO] Rating (Korean)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Korean)",
+  "messages": "[KO] Messages (Korean)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Korean)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Korean)",
+  "becomeAnAmbassador": "[KO] Become an Ambassador (Korean)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Korean)",
+  "subscribeNow": "[KO] Subscribe Now (Korean)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Korean)",
+  "timeArgsslotformatcontext": "[KO] Time: {time} (Korean)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Korean)",
+  "shareViaWhatsapp": "[KO] Share via WhatsApp (Korean)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Korean)",
+  "users1": "[KO] Users (Korean)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Korean)",
+  "shareLink": "[KO] Share Link (Korean)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[KO] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Korean)",
+  "deleteAppointment": "[KO] Delete Appointment (Korean)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Korean)",
+  "toggleAvailability": "[KO] Toggle Availability (Korean)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Korean)",
+  "changePlan": "[KO] Change Plan (Korean)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Korean)",
+  "errorLoadingStaff": "[KO] Error loading staff (Korean)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Korean)",
+  "updateYourBusinessInformation": "[KO] Update your business information (Korean)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[KO] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Korean)",
+  "parentDashboard": "[KO] Parent Dashboard (Korean)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Korean)",
+  "menu": "[KO] Menu (Korean)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Korean)",
+  "studioBooking": "[KO] Studio Booking (Korean)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Korean)",
+  "about1": "[KO] About (Korean)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Korean)",
+  "multipleChoice": "[KO] Multiple Choice (Korean)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Korean)",
+  "REDACTED_TOKEN": "[KO] Date: {date} (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Korean)",
+  "REDACTED_TOKEN": "[KO] Studio booking is only available on web (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Korean)",
+  "errorLoadingBranchesE": "[KO] Error loading branches: $e (Korean)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Korean)",
+  "REDACTED_TOKEN": "[KO] \\uD83D\\uDCC5 {dateTime} (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Korean)",
+  "none": "[KO] None (Korean)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Korean)",
+  "failedToUpdateConsentE": "[KO] Failed to update consent: $e (Korean)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Korean)",
+  "welcome1": "[KO] Welcome (Korean)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Korean)",
+  "failedToCreateSessionE": "[KO] Failed to create session: $e (Korean)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Korean)",
+  "inviteContact": "[KO] Invite Contact (Korean)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Korean)",
+  "surveyEditor": "[KO] Survey Editor (Korean)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Korean)",
+  "failedToStartBasicSubscriptionE": "[KO] Failed to start Basic subscription: $e (Korean)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Korean)",
+  "mySchedule": "[KO] My Schedule (Korean)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Korean)",
+  "studioDashboard": "[KO] Studio Dashboard (Korean)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Korean)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[KO] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[KO] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Korean)",
+  "settingsSavedSuccessfully": "[KO] Settings saved successfully! (Korean)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Korean)",
+  "linkCopiedToClipboard": "[KO] Link copied to clipboard! (Korean)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Korean)",
+  "accept1": "[KO] Accept (Korean)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Korean)",
+  "noAvailableSlots": "[KO] No available slots (Korean)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Korean)",
+  "makeGamePublic": "[KO] Make Game Public (Korean)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Korean)",
+  "REDACTED_TOKEN": "[KO] Permission {category} updated to $newValue (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Korean)",
+  "roomDeletedSuccessfully": "[KO] Room deleted successfully! (Korean)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Korean)",
+  "businessCalendar": "[KO] Business Calendar (Korean)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Korean)",
+  "addAvailability": "[KO] Add Availability (Korean)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Korean)",
+  "ambassadorOnboarding": "[KO] Ambassador Onboarding (Korean)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Korean)",
+  "phoneProfileasyncphone": "[KO] Phone: {phone} (Korean)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Korean)",
+  "addNewRoom": "[KO] Add New Room (Korean)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Korean)",
+  "requireParentApproval": "[KO] Require Parent Approval (Korean)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Korean)",
+  "closed": "[KO] Closed (Korean)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Korean)",
+  "exportAsPdf": "[KO] Export as PDF (Korean)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Korean)",
+  "enableVibration": "[KO] Enable Vibration (Korean)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Korean)",
+  "toAvailendformatcontext": "[KO] To: {endTime} (Korean)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Korean)",
+  "yourUpgradeCodeUpgradecode": "[KO] Your upgrade code: $upgradeCode (Korean)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[KO] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Korean)",
+  "country": "[KO] Country (Korean)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[KO] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Korean)",
+  "staffArgsstaffdisplayname": "[KO] Staff: {staffName} (Korean)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Korean)",
+  "revokeConsent": "[KO] Revoke Consent (Korean)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Korean)",
+  "settings1": "[KO] Settings (Korean)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Korean)",
+  "cancel1": "[KO] Cancel (Korean)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Korean)",
+  "REDACTED_TOKEN": "[KO] Subscription activated successfully! (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[KO] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Korean)",
+  "broadcast": "[KO] Broadcast (Korean)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Korean)",
+  "noEventsScheduledThisWeek": "[KO] No events scheduled this week (Korean)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Korean)",
+  "googleCalendar": "[KO] Google Calendar (Korean)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Korean)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Korean)",
+  "childDashboard": "[KO] Child Dashboard (Korean)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Korean)",
+  "failedToUploadBackgroundE": "[KO] Failed to upload background: $e (Korean)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[KO] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[KO] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[KO] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Korean)",
+  "noAppointments": "[KO] No appointments (Korean)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Korean)",
+  "unlimitedBookingsPerWeek": "[KO] • Unlimited bookings per week (Korean)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Korean)",
+  "scheduledAtScheduledat": "[KO] Scheduled at: $scheduledAt (Korean)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Korean)",
+  "selectStaff": "[KO] Select Staff (Korean)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Korean)",
+  "REDACTED_TOKEN": "[KO] Subscription cancelled successfully (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Korean)",
+  "cancelAppointment": "[KO] Cancel Appointment (Korean)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[KO] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Korean)",
+  "businessSignup": "[KO] Business Signup (Korean)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Korean)",
+  "REDACTED_TOKEN": "[KO] Business Completion Screen - Coming Soon (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Korean)",
+  "createGame1": "[KO] Create Game (Korean)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Korean)",
+  "valuetoint": "[KO] {value} (Korean)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Korean)",
+  "pleaseEnterAPromoCode": "[KO] Please enter a promo code (Korean)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Korean)",
+  "errorLoadingAvailabilityE": "[KO] Error loading availability: $e (Korean)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Korean)",
+  "parentalControls": "[KO] Parental Controls (Korean)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Korean)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Korean)",
+  "childLinkedSuccessfully": "[KO] Child linked successfully! (Korean)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Korean)",
+  "create": "[KO] Create (Korean)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Korean)",
+  "noExternalMeetingsFound": "[KO] No external meetings found. (Korean)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Korean)",
+  "staffSelectionstaffdisplayname": "[KO] Staff: {staffName} (Korean)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[KO] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Korean)",
+  "schedulerScreen": "[KO] Scheduler Screen (Korean)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Korean)",
+  "clientUpdatedSuccessfully": "[KO] Client updated successfully! (Korean)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Korean)",
+  "surveyResponses": "[KO] Survey Responses (Korean)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Korean)",
+  "syncToOutlook": "[KO] Sync to Outlook (Korean)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Korean)",
+  "saveChanges": "[KO] Save Changes (Korean)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Korean)",
+  "pickTime": "[KO] Pick Time (Korean)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Korean)",
+  "registrationFailedEtostring": "[KO] Registration failed: {error} (Korean)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Korean)",
+  "analytics": "[KO] Analytics (Korean)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Korean)",
+  "errorLoadingEvents": "[KO] Error loading events (Korean)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[KO] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[KO] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Korean)",
+  "success1": "[KO] Success (Korean)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[KO] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Korean)",
+  "fromAvailstartformatcontext": "[KO] From: {startTime} (Korean)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Korean)",
+  "readWrite": "[KO] Read & Write (Korean)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Korean)",
+  "REDACTED_TOKEN": "[KO] Redirecting to Stripe checkout for Basic plan... (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[KO] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Korean)",
+  "pickDate": "[KO] Pick Date (Korean)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Korean)",
+  "chatBooking": "[KO] Chat Booking (Korean)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Korean)",
+  "noQuestionsAdded": "[KO] No questions added (Korean)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[KO] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[KO] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Korean)",
+  "typeOpenCall": "[KO] Type: Open Call (Korean)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[KO] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[KO] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Korean)",
+  "invoiceCreatedSuccessfully": "[KO] Invoice created successfully! (Korean)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Korean)",
+  "noTimeSeriesDataAvailable": "[KO] No time series data available (Korean)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[KO] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[KO] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Korean)",
+  "failedToSendPrivacyRequestE": "[KO] Failed to send privacy request: $e (Korean)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Korean)",
+  "chooseYourPlan": "[KO] Choose Your Plan (Korean)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Korean)",
+  "playtimeManagement": "[KO] Playtime Management (Korean)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Korean)",
+  "availability": "[KO] Availability (Korean)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Korean)",
+  "eventCreated": "[KO] Event created (Korean)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Korean)",
+  "subscribeToBasic499mo": "[KO] Subscribe to Basic (€4.99/mo) (Korean)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Korean)",
+  "completion": "[KO] Completion (Korean)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Korean)",
+  "supportTicketSubmitted": "[KO] Support ticket submitted (Korean)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Korean)",
+  "monetizationSettings": "[KO] Monetization Settings (Korean)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Korean)",
+  "noBookingsFound": "[KO] No bookings found (Korean)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[KO] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Korean)",
+  "deleteSurvey": "[KO] Delete Survey (Korean)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Korean)",
+  "gameApprovedSuccessfully": "[KO] Game approved successfully! (Korean)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Korean)",
+  "errorLoadingPermissionsError": "[KO] Error loading permissions: $error (Korean)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Korean)",
+  "referrals": "[KO] Referrals (Korean)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Korean)",
+  "crm": "[KO] CRM (Korean)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Korean)",
+  "gameRejected": "[KO] Game rejected (Korean)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Korean)",
+  "appointments": "[KO] Appointments (Korean)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Korean)",
+  "onboardingScreen": "[KO] Onboarding Screen (Korean)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Korean)",
+  "welcomeToYourStudio": "[KO] Welcome to your studio (Korean)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Korean)",
+  "update": "[KO] Update (Korean)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Korean)",
+  "retry1": "[KO] Retry (Korean)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Korean)",
+  "booking": "[KO] Booking (Korean)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Korean)",
+  "parentalSettings": "[KO] Parental Settings (Korean)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Korean)",
+  "language": "[KO] Language (Korean)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Korean)",
+  "deleteSlot": "[KO] Delete Slot (Korean)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[KO] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[KO] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Korean)",
+  "createNewGame": "[KO] Create New Game (Korean)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Korean)",
+  "next1": "[KO] Next (Korean)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Korean)",
+  "backgroundUploadedSuccessfully": "[KO] Background uploaded successfully! (Korean)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Korean)",
+  "noAppointmentRequestsFound": "[KO] No appointment requests found. (Korean)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Korean)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Korean)",
+  "restrictMatureContent": "[KO] Restrict mature content (Korean)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Korean)",
+  "ambassadors": "[KO] Ambassadors (Korean)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Korean)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Korean)",
+  "paymentWasCancelled": "[KO] Payment was cancelled (Korean)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Korean)",
+  "clearAll": "[KO] Clear All (Korean)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Korean)",
+  "viewDetails": "[KO] View Details (Korean)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Korean)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Korean)",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Korean)",
+  "failedToCreateGameE": "[KO] Failed to create game: $e (Korean)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Korean)",
+  "noChartDataAvailable": "[KO] No chart data available (Korean)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Korean)",
+  "phonebasedBookingSystem": "[KO] • Phone-based booking system (Korean)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Korean)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Korean)",
+  "invoices": "[KO] Invoices (Korean)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Korean)",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Korean)",
+  "scheduledAtArgsscheduledat": "[KO] Scheduled at: {scheduledAt} (Korean)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Korean)",
+  "REDACTED_TOKEN": "[KO] Duration: {duration} minutes (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Korean)",
+  "tryAgain": "[KO] Try Again (Korean)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Korean)",
+  "deleteBackground": "[KO] Delete Background (Korean)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Korean)",
+  "currentTierTiertouppercase": "[KO] Current Tier: {tier} (Korean)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[KO] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Korean)",
+  "REDACTED_TOKEN": "[KO] No clients found. Add your first client! (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[KO] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[KO] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Korean)",
+  "appointmentRequests": "[KO] Appointment Requests (Korean)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Korean)",
+  "forward": "[KO] Forward (Korean)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Korean)",
+  "roomAddedSuccessfully": "[KO] Room added successfully! (Korean)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Korean)",
+  "option": "[KO] • $option (Korean)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Korean)",
+  "responseIndex1": "[KO] Response #{number} (Korean)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Korean)",
+  "crmDashboardWithAnalytics": "[KO] • CRM dashboard with analytics (Korean)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Korean)",
+  "contentLibrary1": "[KO] Content Library (Korean)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Korean)",
+  "reply": "[KO] Reply (Korean)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Korean)",
+  "subscriptionManagement": "[KO] Subscription Management (Korean)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Korean)",
+  "REDACTED_TOKEN": "[KO] Monetization settings will be implemented here (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Korean)",
+  "failedToApplyPromoCodeE": "[KO] Failed to apply promo code: $e (Korean)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[KO] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Korean)",
+  "localizationContribution": "[KO] Localization Contribution (Korean)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Korean)",
+  "parentalConsent": "[KO] Parental Consent (Korean)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Korean)",
+  "businessSignupScreenComingSoon": "[KO] Business Signup Screen - Coming Soon (Korean)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Korean)",
+  "REDACTED_TOKEN": "[KO] Are you sure you want to delete this appointment? (Korean)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Korean)",
+  "syncAppointment": "[KO] Sync Appointment (Korean)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Korean)",
+  "iConsent": "[KO] I Consent (Korean)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Korean)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Korean)",
+  "businessSetupScreenComingSoon": "[KO] Business Setup Screen - Coming Soon (Korean)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Korean)",
+  "edit1": "[KO] Edit (Korean)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Korean)",
+  "noEventsScheduledThisMonth": "[KO] No events scheduled this month (Korean)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Korean)",
+  "businessDashboard": "[KO] Business Dashboard (Korean)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Korean)",
+  "noMessagesFound": "[KO] No messages found. (Korean)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[KO] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Korean)",
+  "manageStaffAvailability": "[KO] Manage Staff Availability (Korean)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Korean)",
+  "noMissingTranslations": "[KO] No missing translations (Korean)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Korean)",
+  "skip": "[KO] Skip (Korean)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[KO] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Korean)",
+  "errorLoadingReferralCode": "[KO] Error loading referral code (Korean)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Korean)",
+  "allCountries": "[KO] All Countries (Korean)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Korean)",
+  "deleteGame": "[KO] Delete Game (Korean)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Korean)",
+  "staffManagementTools": "[KO] • Staff management tools (Korean)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Korean)",
+  "deleteMessage": "[KO] Delete Message (Korean)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Korean)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[KO] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Korean)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Korean)",
+  "openingCustomerPortal": "[KO] Opening customer portal... (Korean)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Korean)",
+  "signOut": "[KO] Sign Out (Korean)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Korean)",
+  "nameProfilename": "[KO] Name: {name} (Korean)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Korean)",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Korean)",
+  "upgradeToBusiness": "[KO] Upgrade to Business (Korean)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Korean)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Korean)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Korean)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Korean)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Korean)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Korean)",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Korean)",
+  "viewResponses": "[KO] View Responses (Korean)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Korean)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Korean)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Korean)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Korean)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Korean)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Korean)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Korean)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Korean)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Korean)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Korean)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

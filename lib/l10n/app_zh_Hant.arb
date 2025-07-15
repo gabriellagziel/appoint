@@ -1,6 +1,6 @@
 {
   "@@locale": "zh_Hant",
-  "refresh": "Refresh",
+  "refresh": "[ZH_HANT] Refresh",
   "@refresh": {
     "description": "Description"
   },
@@ -8,23 +8,23 @@
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "No sessions yet",
+  "noSessionsYet": "[ZH_HANT] No sessions yet",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "OK",
+  "ok": "[ZH_HANT] OK",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "Choose your play mode:",
+  "playtimeLandingChooseMode": "[ZH_HANT] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "Sign Up",
+  "signUp": "[ZH_HANT] Sign Up",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "Schedule Message",
+  "scheduleMessage": "[ZH_HANT] Schedule Message",
   "@scheduleMessage": {
     "description": "Description"
   },
@@ -40,7 +40,7 @@
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "Choose friends to invite",
+  "playtimeChooseFriends": "[ZH_HANT] Choose friends to invite",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
@@ -48,23 +48,23 @@
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "Choose a time",
+  "playtimeChooseTime": "[ZH_HANT] Choose a time",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "Success",
+  "success": "[ZH_HANT] Success",
   "@success": {
     "description": "Description"
   },
-  "undo": "Undo",
+  "undo": "[ZH_HANT] Undo",
   "@undo": {
     "description": "Description"
   },
-  "opened": "已開啟：{count}",
+  "opened": "[ZH_HANT] 已開啟：{count}",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "Create Virtual Session",
+  "createVirtualSession": "[ZH_HANT] Create Virtual Session",
   "@createVirtualSession": {
     "description": "Description"
   },
@@ -72,7 +72,7 @@
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "Redo",
+  "redo": "[ZH_HANT] Redo",
   "@redo": {
     "description": "Description"
   },
@@ -80,7 +80,7 @@
   "@next": {
     "description": "Description"
   },
-  "search": "Search",
+  "search": "[ZH_HANT] Search",
   "@search": {
     "description": "Description"
   },
@@ -88,7 +88,7 @@
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "建立於：{date}",
+  "created": "[ZH_HANT] 建立於：{date}",
   "@created": {
     "description": "created description"
   },
@@ -100,7 +100,7 @@
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "Live playtime scheduled!",
+  "playtimeLiveScheduled": "[ZH_HANT] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
@@ -108,7 +108,7 @@
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "Download",
+  "download": "[ZH_HANT] Download",
   "@download": {
     "description": "Description"
   },
@@ -116,7 +116,7 @@
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "讀取家庭連結錯誤：{error}",
+  "errorLoadingFamilyLinks": "[ZH_HANT] 讀取家庭連結錯誤：{error}",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
@@ -124,15 +124,15 @@
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "Create",
+  "playtimeCreate": "[ZH_HANT] Create",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "{action} 隱私請求失敗：{error}",
+  "failedToActionPrivacyRequest": "[ZH_HANT] {action} 隱私請求失敗：{error}",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "Appoint",
+  "appTitle": "[ZH_HANT] Appoint",
   "@appTitle": {
     "description": "Description"
   },
@@ -140,35 +140,35 @@
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "Virtual Play",
+  "playtimeModeVirtual": "[ZH_HANT] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "Enjoy live or virtual games with your friends!",
+  "playtimeDescription": "[ZH_HANT] Enjoy live or virtual games with your friends!",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "Delete",
+  "delete": "[ZH_HANT] Delete",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "Virtual playtime started!",
+  "playtimeVirtualStarted": "[ZH_HANT] Virtual playtime started!",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "Create your first game",
+  "createYourFirstGame": "[ZH_HANT] Create your first game",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "Participants",
+  "participants": "[ZH_HANT] Participants",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "收件人：{count}",
+  "recipients": "[ZH_HANT] 收件人：{count}",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "No results found",
+  "noResults": "[ZH_HANT] No results found",
   "@noResults": {
     "description": "Description"
   },
@@ -180,15 +180,15 @@
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "Live Play",
+  "playtimeModeLive": "[ZH_HANT] Live Play",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "Done",
+  "done": "[ZH_HANT] Done",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "嗨！我透過 APP‑OINT 安排了一次會議。點此確認或提出其他時間：",
+  "defaultShareMessage": "[ZH_HANT] 嗨！我透過 APP‑OINT 安排了一次會議。點此確認或提出其他時間：",
   "@defaultShareMessage": {
     "description": "Description"
   },
@@ -196,11 +196,11 @@
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "Playtime Hub",
+  "playtimeHub": "[ZH_HANT] Playtime Hub",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "Create Live Session",
+  "createLiveSession": "[ZH_HANT] Create Live Session",
   "@createLiveSession": {
     "description": "Description"
   },
@@ -208,11 +208,11 @@
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "已邀請：{date}",
+  "invited": "[ZH_HANT] 已邀請：{date}",
   "@invited": {
     "description": "Description"
   },
-  "content": "內容：{content}",
+  "content": "[ZH_HANT] 內容：{content}",
   "@content": {
     "description": "content description"
   },
@@ -220,23 +220,23 @@
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "Welcome to Playtime",
+  "welcomeToPlaytime": "[ZH_HANT] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "View All",
+  "viewAll": "[ZH_HANT] View All",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "Virtual Play",
+  "playtimeVirtual": "[ZH_HANT] Virtual Play",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "員工畫面 – 開發中",
+  "staffScreenTBD": "[ZH_HANT] 員工畫面 – 開發中",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "Cut",
+  "cut": "[ZH_HANT] Cut",
   "@cut": {
     "description": "Description"
   },
@@ -244,7 +244,7 @@
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "Retry",
+  "retry": "[ZH_HANT] Retry",
   "@retry": {
     "description": "Description"
   },
@@ -256,19 +256,19 @@
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "No games yet",
+  "noGamesYet": "[ZH_HANT] No games yet",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "Select",
+  "select": "[ZH_HANT] Select",
   "@select": {
     "description": "Description"
   },
-  "about": "About",
+  "about": "[ZH_HANT] About",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Choose",
+  "choose": "[ZH_HANT] Choose",
   "@choose": {
     "description": "Description"
   },
@@ -280,15 +280,15 @@
   "@removeChild": {
     "description": "Description"
   },
-  "status": "狀態：{status}",
+  "status": "[ZH_HANT] 狀態：{status}",
   "@status": {
     "description": "status description"
   },
-  "logout": "Logout",
+  "logout": "[ZH_HANT] Logout",
   "@logout": {
     "description": "Description"
   },
-  "paste": "Paste",
+  "paste": "[ZH_HANT] Paste",
   "@paste": {
     "description": "Description"
   },
@@ -296,7 +296,7 @@
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "Create a Playtime Session",
+  "playtimeCreateSession": "[ZH_HANT] Create a Playtime Session",
   "@playtimeCreateSession": {
     "description": "Description"
   },
@@ -304,11 +304,11 @@
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "Upload",
+  "upload": "[ZH_HANT] Upload",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "Upcoming Sessions",
+  "upcomingSessions": "[ZH_HANT] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Description"
   },
@@ -316,11 +316,11 @@
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "Confirm",
+  "confirm": "[ZH_HANT] Confirm",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "Live Play",
+  "playtimeLive": "[ZH_HANT] Live Play",
   "@playtimeLive": {
     "description": "Description"
   },
@@ -336,7 +336,7 @@
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "Game deleted",
+  "playtimeGameDeleted": "[ZH_HANT] Game deleted",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
@@ -348,15 +348,15 @@
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "類型：{type}",
+  "type": "[ZH_HANT] 類型：{type}",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "正在檢查權限...",
+  "checkingPermissions": "[ZH_HANT] 正在檢查權限...",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "Copy",
+  "copy": "[ZH_HANT] Copy",
   "@copy": {
     "description": "Description"
   },
@@ -368,7 +368,7 @@
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "分享到 WhatsApp",
+  "shareOnWhatsApp": "[ZH_HANT] 分享到 WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
@@ -388,7 +388,7 @@
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "{type} 請求",
+  "requestType": "[ZH_HANT] {type} 請求",
   "@requestType": {
     "description": "requestType description"
   },
@@ -404,15 +404,15 @@
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "Create New",
+  "createNew": "[ZH_HANT] Create New",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "Settings",
+  "settings": "[ZH_HANT] Settings",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "Reject",
+  "playtimeReject": "[ZH_HANT] Reject",
   "@playtimeReject": {
     "description": "Description"
   },
@@ -420,19 +420,19 @@
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "Edit",
+  "edit": "[ZH_HANT] Edit",
   "@edit": {
     "description": "Description"
   },
-  "add": "Add",
+  "add": "[ZH_HANT] Add",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "Game approved",
+  "playtimeGameApproved": "[ZH_HANT] Game approved",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "Forgot Password?",
+  "forgotPassword": "[ZH_HANT] Forgot Password?",
   "@forgotPassword": {
     "description": "Description"
   },
@@ -440,31 +440,31 @@
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "載入中...",
+  "loading": "[ZH_HANT] 載入中...",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "Quick Actions",
+  "quickActions": "[ZH_HANT] Quick Actions",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "Playtime",
+  "playtimeTitle": "[ZH_HANT] Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "OTP 已重新發送成功！",
+  "otpResentSuccessfully": "[ZH_HANT] OTP 已重新發送成功！",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "檢查權限錯誤：{error}",
+  "errorCheckingPermissions": "[ZH_HANT] 檢查權限錯誤：{error}",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "客戶畫面 – 開發中",
+  "clientScreenTBD": "[ZH_HANT] 客戶畫面 – 開發中",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "FCM 令牌：{token}",
+  "fcmToken": "[ZH_HANT] FCM 令牌：{token}",
   "@fcmToken": {
     "description": "Description"
   },
@@ -472,7 +472,7 @@
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "Previous",
+  "previous": "[ZH_HANT] Previous",
   "@previous": {
     "description": "Description"
   },
@@ -492,7 +492,7 @@
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "Scheduled for",
+  "scheduledFor": "[ZH_HANT] Scheduled for",
   "@scheduledFor": {
     "description": "Description"
   },
@@ -504,7 +504,7 @@
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[ZH_HANT] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
@@ -512,11 +512,11 @@
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "已排程：{date}",
+  "scheduled": "[ZH_HANT] 已排程：{date}",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "重新發送 OTP 失敗：{error}",
+  "failedToResendOtp": "[ZH_HANT] 重新發送 OTP 失敗：{error}",
   "@failedToResendOtp": {
     "description": "Description"
   },
@@ -524,7 +524,7 @@
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "儲存訊息失敗：{error}",
+  "errorSavingMessage": "[ZH_HANT] 儲存訊息失敗：{error}",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
@@ -532,43 +532,43 @@
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "Approve",
+  "playtimeApprove": "[ZH_HANT] Approve",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "Create your first session",
+  "createYourFirstSession": "[ZH_HANT] Create your first session",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "Game rejected",
+  "playtimeGameRejected": "[ZH_HANT] Game rejected",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "撤銷存取權失敗：{error}",
+  "failedToRevokeAccess": "[ZH_HANT] 撤銷存取權失敗：{error}",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "Recent Games",
+  "recentGames": "[ZH_HANT] Recent Games",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "自訂您的訊息...",
+  "customizeMessage": "[ZH_HANT] 自訂您的訊息...",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "取消邀請失敗：{error}",
+  "failedToCancelInvite": "[ZH_HANT] 取消邀請失敗：{error}",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "發送訊息失敗：{error}",
+  "errorSendingMessage": "[ZH_HANT] 發送訊息失敗：{error}",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "Confirm Password",
+  "confirmPassword": "[ZH_HANT] Confirm Password",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "讀取隱私請求錯誤：{error}",
+  "errorLoadingPrivacyRequests": "[ZH_HANT] 讀取隱私請求錯誤：{error}",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
@@ -576,11 +576,11 @@
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "Share",
+  "share": "[ZH_HANT] Share",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "Enter game name",
+  "playtimeEnterGameName": "[ZH_HANT] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
@@ -592,7 +592,7 @@
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "Create Game",
+  "createGame": "[ZH_HANT] Create Game",
   "@createGame": {
     "description": "Description"
   },
@@ -600,15 +600,15 @@
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "No playtime sessions found.",
+  "playtimeNoSessions": "[ZH_HANT] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "管理員畫面 – 開發中",
+  "adminScreenTBD": "[ZH_HANT] 管理員畫面 – 開發中",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[ZH_HANT] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
@@ -620,11 +620,11 @@
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "Back",
+  "back": "[ZH_HANT] Back",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "Choose a game",
+  "playtimeChooseGame": "[ZH_HANT] Choose a game",
   "@playtimeChooseGame": {
     "description": "Description"
   },
@@ -636,11 +636,11 @@
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "已點擊：{count}",
+  "clicked": "[ZH_HANT] 已點擊：{count}",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "連結：{link}",
+  "link": "[ZH_HANT] 連結：{link}",
   "@link": {
     "description": "link description"
   },
@@ -652,23 +652,23 @@
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "狀態：{status}",
+  "statusColon": "[ZH_HANT] 狀態：{status}",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[ZH_HANT] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[ZH_HANT] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[ZH_HANT] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[ZH_HANT] Bookings",
   "@bookings": {
     "description": "Description"
   },
@@ -680,399 +680,399 @@
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[ZH_HANT] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[ZH_HANT] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[ZH_HANT] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[ZH_HANT] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[ZH_HANT] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[ZH_HANT] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[ZH_HANT] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[ZH_HANT] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[ZH_HANT] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[ZH_HANT] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[ZH_HANT] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[ZH_HANT] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[ZH_HANT] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Chinese (Traditional))",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Chinese (Traditional))",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Chinese (Traditional))",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Chinese (Traditional))",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[ZH_HANT] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[ZH_HANT] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[ZH_HANT] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[ZH_HANT] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[ZH_HANT] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[ZH_HANT] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[ZH_HANT] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[ZH_HANT] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[ZH_HANT] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[ZH_HANT] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[ZH_HANT] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[ZH_HANT] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[ZH_HANT] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[ZH_HANT] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[ZH_HANT] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[ZH_HANT] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[ZH_HANT] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[ZH_HANT] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[ZH_HANT] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[ZH_HANT] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[ZH_HANT] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[ZH_HANT] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[ZH_HANT] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[ZH_HANT] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[ZH_HANT] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[ZH_HANT] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[ZH_HANT] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[ZH_HANT] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[ZH_HANT] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[ZH_HANT] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[ZH_HANT] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[ZH_HANT] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[ZH_HANT] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[ZH_HANT] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[ZH_HANT] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[ZH_HANT] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[ZH_HANT] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[ZH_HANT] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[ZH_HANT] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[ZH_HANT] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[ZH_HANT] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[ZH_HANT] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[ZH_HANT] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[ZH_HANT] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[ZH_HANT] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[ZH_HANT] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[ZH_HANT] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[ZH_HANT] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[ZH_HANT] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[ZH_HANT] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[ZH_HANT] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[ZH_HANT] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[ZH_HANT] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[ZH_HANT] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[ZH_HANT] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[ZH_HANT] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[ZH_HANT] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[ZH_HANT] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[ZH_HANT] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[ZH_HANT] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[ZH_HANT] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[ZH_HANT] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Chinese (Traditional))",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Chinese (Traditional))",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Chinese (Traditional))",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "發送",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Chinese (Traditional))",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Chinese (Traditional))",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Chinese (Traditional))",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Chinese (Traditional))",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[ZH_HANT] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Chinese (Traditional))",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Chinese (Traditional))",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Chinese (Traditional))",
+  "upload1": "[ZH_HANT] Upload (Chinese (Traditional))",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Chinese (Traditional))",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Chinese (Traditional))",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Virtual session created! Inviting friends... (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Chinese (Traditional))",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Chinese (Traditional))",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Chinese (Traditional))",
+  "rewards": "[ZH_HANT] Rewards (Chinese (Traditional))",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Chinese (Traditional))",
+  "time": "[ZH_HANT] Time (Chinese (Traditional))",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[ZH_HANT] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
@@ -1084,27 +1084,27 @@
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Chinese (Traditional))",
+  "homeFeedScreen": "[ZH_HANT] Home Feed Screen (Chinese (Traditional))",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Chinese (Traditional))",
+  "selectLocation": "[ZH_HANT] Select Location (Chinese (Traditional))",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Chinese (Traditional))",
+  "noTicketsYet": "[ZH_HANT] No tickets yet (Chinese (Traditional))",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Chinese (Traditional))",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Chinese (Traditional))",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Chinese (Traditional))",
+  "subscriptionUnavailable": "[ZH_HANT] Subscription unavailable (Chinese (Traditional))",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
@@ -1112,51 +1112,51 @@
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Chinese (Traditional))",
+  "failedToUpdatePermissionE": "[ZH_HANT] Failed to update permission: $e (Chinese (Traditional))",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Chinese (Traditional))",
+  "reject": "[ZH_HANT] Reject (Chinese (Traditional))",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Ambassador Status: {ambassadorStatus} (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[ZH_HANT] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Chinese (Traditional))",
+  "checkingSubscription": "[ZH_HANT] Checking subscription... (Chinese (Traditional))",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Chinese (Traditional))",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Chinese (Traditional))",
+  "noContentAvailableYet": "[ZH_HANT] No content available yet (Chinese (Traditional))",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Chinese (Traditional))",
+  "resolve": "[ZH_HANT] Resolve (Chinese (Traditional))",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Chinese (Traditional))",
+  "errorLoadingSurveysError": "[ZH_HANT] Error loading surveys: $error (Chinese (Traditional))",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[ZH_HANT] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Chinese (Traditional))",
+  "getHelpWithYourAccount": "[ZH_HANT] Get help with your account (Chinese (Traditional))",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Chinese (Traditional))",
+  "pay": "[ZH_HANT] Pay (Chinese (Traditional))",
   "@pay": {
     "description": "Localization key for: Pay"
   },
@@ -1164,323 +1164,323 @@
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "會議詳情",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Chinese (Traditional))",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Chinese (Traditional))",
+  "changesSavedSuccessfully": "[ZH_HANT] Changes saved successfully! (Chinese (Traditional))",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Chinese (Traditional))",
+  "createNewInvoice": "[ZH_HANT] Create New Invoice (Chinese (Traditional))",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Chinese (Traditional))",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Chinese (Traditional))",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Chinese (Traditional))",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Chinese (Traditional))",
+  "profileSaved": "[ZH_HANT] Profile saved! (Chinese (Traditional))",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Chinese (Traditional))",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Chinese (Traditional))",
+  "valuetointk": "[ZH_HANT] \\${value}K (Chinese (Traditional))",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Chinese (Traditional))",
+  "deleteAccount": "[ZH_HANT] Delete Account (Chinese (Traditional))",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Chinese (Traditional))",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Chinese (Traditional))",
+  "businessOnboarding": "[ZH_HANT] Business Onboarding (Chinese (Traditional))",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Chinese (Traditional))",
+  "addNewClient": "[ZH_HANT] Add New Client (Chinese (Traditional))",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Chinese (Traditional))",
+  "darkMode": "[ZH_HANT] Dark Mode (Chinese (Traditional))",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[ZH_HANT] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[ZH_HANT] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] You will receive a confirmation email shortly. (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Chinese (Traditional))",
+  "addQuestion": "[ZH_HANT] Add Question (Chinese (Traditional))",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Chinese (Traditional))",
+  "privacyPolicy": "[ZH_HANT] Privacy Policy (Chinese (Traditional))",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Chinese (Traditional))",
+  "branchesLengthBranches": "[ZH_HANT] {branchCount} branches (Chinese (Traditional))",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Chinese (Traditional))",
+  "join": "[ZH_HANT] Join (Chinese (Traditional))",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Chinese (Traditional))",
+  "businessSubscription": "[ZH_HANT] Business Subscription (Chinese (Traditional))",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Chinese (Traditional))",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[ZH_HANT] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Chinese (Traditional))",
+  "surveyManagement": "[ZH_HANT] Survey Management (Chinese (Traditional))",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[ZH_HANT] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Chinese (Traditional))",
+  "noRoomsFoundAddYourFirstRoom": "[ZH_HANT] No rooms found. Add your first room! (Chinese (Traditional))",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Chinese (Traditional))",
+  "readOurPrivacyPolicy": "[ZH_HANT] Read our privacy policy (Chinese (Traditional))",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Chinese (Traditional))",
+  "couldNotOpenPrivacyPolicy": "[ZH_HANT] Could not open privacy policy (Chinese (Traditional))",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Chinese (Traditional))",
+  "refresh1": "[ZH_HANT] Refresh (Chinese (Traditional))",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Chinese (Traditional))",
+  "roomUpdatedSuccessfully": "[ZH_HANT] Room updated successfully! (Chinese (Traditional))",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Chinese (Traditional))",
+  "contentDetail": "[ZH_HANT] Content Detail (Chinese (Traditional))",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Chinese (Traditional))",
+  "cancelSubscription": "[ZH_HANT] Cancel Subscription (Chinese (Traditional))",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Successfully registered as Ambassador! (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Chinese (Traditional))",
+  "save1": "[ZH_HANT] Save (Chinese (Traditional))",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Chinese (Traditional))",
+  "copy1": "[ZH_HANT] Copy (Chinese (Traditional))",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Chinese (Traditional))",
+  "failedToSendInvitationE": "[ZH_HANT] Failed to send invitation: $e (Chinese (Traditional))",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Chinese (Traditional))",
+  "surveyScore": "[ZH_HANT] Survey Score (Chinese (Traditional))",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[ZH_HANT] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Chinese (Traditional))",
+  "noAppointmentsFound": "[ZH_HANT] No appointments found. (Chinese (Traditional))",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Chinese (Traditional))",
+  "responseDetail": "[ZH_HANT] Response Detail (Chinese (Traditional))",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Chinese (Traditional))",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Chinese (Traditional))",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Chinese (Traditional))",
+  "failedToStartProSubscriptionE": "[ZH_HANT] Failed to start Pro subscription: $e (Chinese (Traditional))",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Business Dashboard Entry Screen - Coming Soon (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Chinese (Traditional))",
+  "contentFilter": "[ZH_HANT] Content Filter (Chinese (Traditional))",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Chinese (Traditional))",
+  "helpSupport": "[ZH_HANT] Help & Support (Chinese (Traditional))",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Chinese (Traditional))",
+  "editRoom": "[ZH_HANT] Edit Room (Chinese (Traditional))",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[ZH_HANT] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[ZH_HANT] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Business CRM Entry Screen - Coming Soon (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[ZH_HANT] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[ZH_HANT] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Chinese (Traditional))",
+  "errorLoadingDashboardError": "[ZH_HANT] Error loading dashboard: $error (Chinese (Traditional))",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Chinese (Traditional))",
+  "gameDeletedSuccessfully": "[ZH_HANT] Game deleted successfully! (Chinese (Traditional))",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Chinese (Traditional))",
+  "viewResponsesComingSoon": "[ZH_HANT] View responses - Coming soon! (Chinese (Traditional))",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[ZH_HANT] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Chinese (Traditional))",
+  "errorLoadingRewards": "[ZH_HANT] Error loading rewards (Chinese (Traditional))",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Chinese (Traditional))",
+  "failedToDeleteAccountE": "[ZH_HANT] Failed to delete account: $e (Chinese (Traditional))",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Chinese (Traditional))",
+  "invited1": "[ZH_HANT] Invited (Chinese (Traditional))",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Chinese (Traditional))",
+  "noBranchesAvailable": "[ZH_HANT] No branches available (Chinese (Traditional))",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Chinese (Traditional))",
+  "errorError": "[ZH_HANT] Error: $error (Chinese (Traditional))",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Chinese (Traditional))",
+  "noEvents": "[ZH_HANT] No events (Chinese (Traditional))",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Chinese (Traditional))",
+  "gameCreatedSuccessfully": "[ZH_HANT] Game created successfully! (Chinese (Traditional))",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Chinese (Traditional))",
+  "add1": "[ZH_HANT] Add (Chinese (Traditional))",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[ZH_HANT] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Chinese (Traditional))",
+  "eventstarttimeEventendtime": "[ZH_HANT] {startTime} - {endTime} (Chinese (Traditional))",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Chinese (Traditional))",
+  "allowPlaytime": "[ZH_HANT] Allow Playtime (Chinese (Traditional))",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Chinese (Traditional))",
+  "clients": "[ZH_HANT] Clients (Chinese (Traditional))",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Chinese (Traditional))",
+  "noAmbassadorDataAvailable": "[ZH_HANT] No ambassador data available (Chinese (Traditional))",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Chinese (Traditional))",
+  "backgroundDeletedSuccessfully": "[ZH_HANT] Background deleted successfully! (Chinese (Traditional))",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Chinese (Traditional))",
+  "errorSnapshoterror": "[ZH_HANT] Error: {error} (Chinese (Traditional))",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Chinese (Traditional))",
+  "noAnalyticsDataAvailableYet": "[ZH_HANT] No analytics data available yet. (Chinese (Traditional))",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Chinese (Traditional))",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Business Phone Booking Entry Screen - Coming Soon (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Chinese (Traditional))",
+  "verification": "[ZH_HANT] Verification (Chinese (Traditional))",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Chinese (Traditional))",
+  "copyLink": "[ZH_HANT] Copy Link (Chinese (Traditional))",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Chinese (Traditional))",
+  "dashboard1": "[ZH_HANT] Dashboard (Chinese (Traditional))",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Chinese (Traditional))",
+  "manageChildAccounts": "[ZH_HANT] Manage Child Accounts (Chinese (Traditional))",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
@@ -1488,27 +1488,27 @@
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Chinese (Traditional))",
+  "myProfile1": "[ZH_HANT] My Profile (Chinese (Traditional))",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Chinese (Traditional))",
+  "submit": "[ZH_HANT] Submit (Chinese (Traditional))",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[ZH_HANT] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Chinese (Traditional))",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Chinese (Traditional))",
+  "ambassadorDashboard": "[ZH_HANT] Ambassador Dashboard (Chinese (Traditional))",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Chinese (Traditional))",
+  "phoneBooking": "[ZH_HANT] Phone Booking (Chinese (Traditional))",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
@@ -1516,43 +1516,43 @@
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "Error",
+  "error": "[ZH_HANT] Error",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Chinese (Traditional))",
+  "businessProfile": "[ZH_HANT] Business Profile (Chinese (Traditional))",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Business Booking Entry Screen - Coming Soon (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Chinese (Traditional))",
+  "createNewSurvey": "[ZH_HANT] Create New Survey (Chinese (Traditional))",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Chinese (Traditional))",
+  "backgroundRejected": "[ZH_HANT] Background rejected (Chinese (Traditional))",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Chinese (Traditional))",
+  "noMediaSelected": "[ZH_HANT] No media selected (Chinese (Traditional))",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Chinese (Traditional))",
+  "syncToGoogle": "[ZH_HANT] Sync to Google (Chinese (Traditional))",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Chinese (Traditional))",
+  "virtualPlaytime": "[ZH_HANT] Virtual Playtime (Chinese (Traditional))",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[ZH_HANT] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[ZH_HANT] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
@@ -1560,159 +1560,159 @@
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Chinese (Traditional))",
+  "registering": "[ZH_HANT] Registering... (Chinese (Traditional))",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Chinese (Traditional))",
+  "statusAppointmentstatusname": "[ZH_HANT] Status: {status} (Chinese (Traditional))",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Chinese (Traditional))",
+  "home1": "[ZH_HANT] Home (Chinese (Traditional))",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Chinese (Traditional))",
+  "errorSavingSettingsE": "[ZH_HANT] Error saving settings: $e (Chinese (Traditional))",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Chinese (Traditional))",
+  "appVersionAndInformation": "[ZH_HANT] App version and information (Chinese (Traditional))",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Business Subscription Entry Screen - Coming Soon (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Chinese (Traditional))",
+  "ekeyEvalue": "[ZH_HANT] {key}: {value} (Chinese (Traditional))",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Your payment has been processed successfully. (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Chinese (Traditional))",
+  "errorE": "[ZH_HANT] Error: $e (Chinese (Traditional))",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Chinese (Traditional))",
+  "viewAll1": "[ZH_HANT] View All (Chinese (Traditional))",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Chinese (Traditional))",
+  "editSurveyComingSoon": "[ZH_HANT] Edit survey - Coming soon! (Chinese (Traditional))",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "輸入 OTP",
+  "enterOtp": "[ZH_HANT] 輸入 OTP",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Chinese (Traditional))",
+  "payment": "[ZH_HANT] Payment (Chinese (Traditional))",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Automatically confirm new booking requests (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Chinese (Traditional))",
+  "noRouteDefinedForSettingsname": "[ZH_HANT] No route defined for {settingsName} (Chinese (Traditional))",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Chinese (Traditional))",
+  "pleaseSignInToUploadABackground": "[ZH_HANT] Please sign in to upload a background (Chinese (Traditional))",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[ZH_HANT] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Chinese (Traditional))",
+  "staffAvailability": "[ZH_HANT] Staff Availability (Chinese (Traditional))",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Chinese (Traditional))",
+  "livePlaytime": "[ZH_HANT] Live Playtime (Chinese (Traditional))",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Chinese (Traditional))",
+  "autoconfirmBookings": "[ZH_HANT] Auto-Confirm Bookings (Chinese (Traditional))",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Redirecting to Stripe checkout for Pro plan... (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Chinese (Traditional))",
+  "exportAsCsv": "[ZH_HANT] Export as CSV (Chinese (Traditional))",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Chinese (Traditional))",
+  "deleteFunctionalityComingSoon": "[ZH_HANT] Delete functionality coming soon! (Chinese (Traditional))",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Chinese (Traditional))",
+  "editClient": "[ZH_HANT] Edit Client (Chinese (Traditional))",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Are you sure you want to delete this message? (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Chinese (Traditional))",
+  "referralsAmbassadorreferrals": "[ZH_HANT] Referrals: {referrals} (Chinese (Traditional))",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[ZH_HANT] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Chinese (Traditional))",
+  "privacyRequestSentToYourParents": "[ZH_HANT] Privacy request sent to your parents! (Chinese (Traditional))",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Chinese (Traditional))",
+  "clientDeletedSuccessfully": "[ZH_HANT] Client deleted successfully! (Chinese (Traditional))",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Chinese (Traditional))",
+  "failedToCancelSubscription": "[ZH_HANT] Failed to cancel subscription (Chinese (Traditional))",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Chinese (Traditional))",
+  "allLanguages": "[ZH_HANT] All Languages (Chinese (Traditional))",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Chinese (Traditional))",
+  "slotDeletedSuccessfully": "[ZH_HANT] Slot deleted successfully (Chinese (Traditional))",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[ZH_HANT] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Parents must approve before children can join (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Chinese (Traditional))",
+  "subscribeToPro1499mo": "[ZH_HANT] Subscribe to Pro (€14.99/mo) (Chinese (Traditional))",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Business Availability Entry Screen - Coming Soon (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Chinese (Traditional))",
+  "appointmentsListlength": "[ZH_HANT] Appointments: {count} (Chinese (Traditional))",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Chinese (Traditional))",
+  "clearFilters": "[ZH_HANT] Clear Filters (Chinese (Traditional))",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
@@ -1720,19 +1720,19 @@
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Are you sure you want to cancel this appointment? (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Chinese (Traditional))",
+  "noUpcomingBookings": "[ZH_HANT] No upcoming bookings (Chinese (Traditional))",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Chinese (Traditional))",
+  "goBack": "[ZH_HANT] Go Back (Chinese (Traditional))",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Chinese (Traditional))",
+  "setup": "[ZH_HANT] Setup (Chinese (Traditional))",
   "@setup": {
     "description": "Localization key for: Setup"
   },
@@ -1740,27 +1740,27 @@
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Chinese (Traditional))",
+  "goToDashboard": "[ZH_HANT] Go to Dashboard (Chinese (Traditional))",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Chinese (Traditional))",
+  "ambassadorQuotaDashboard": "[ZH_HANT] Ambassador Quota Dashboard (Chinese (Traditional))",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[ZH_HANT] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Chinese (Traditional))",
+  "referralCode": "[ZH_HANT] Referral Code (Chinese (Traditional))",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[ZH_HANT] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Chinese (Traditional))",
+  "date": "[ZH_HANT] Date (Chinese (Traditional))",
   "@date": {
     "description": "Localization key for: Date"
   },
@@ -1772,15 +1772,15 @@
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Chinese (Traditional))",
+  "advancedReporting": "[ZH_HANT] • Advanced reporting (Chinese (Traditional))",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Chinese (Traditional))",
+  "rooms": "[ZH_HANT] Rooms (Chinese (Traditional))",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Chinese (Traditional))",
+  "copiedToClipboard": "[ZH_HANT] Copied to clipboard (Chinese (Traditional))",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
@@ -1788,27 +1788,27 @@
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Chinese (Traditional))",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Chinese (Traditional))",
+  "clientAddedSuccessfully": "[ZH_HANT] Client added successfully! (Chinese (Traditional))",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Chinese (Traditional))",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Chinese (Traditional))",
+  "backgroundApproved": "[ZH_HANT] Background approved! (Chinese (Traditional))",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Chinese (Traditional))",
+  "familySupport": "[ZH_HANT] Family Support (Chinese (Traditional))",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Chinese (Traditional))",
+  "deletingAccount": "[ZH_HANT] Deleting account... (Chinese (Traditional))",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
@@ -1816,23 +1816,23 @@
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Chinese (Traditional))",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Chinese (Traditional))",
+  "delete1": "[ZH_HANT] Delete (Chinese (Traditional))",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Chinese (Traditional))",
+  "sendBookingInvite": "[ZH_HANT] Send Booking Invite (Chinese (Traditional))",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Chinese (Traditional))",
+  "text": "[ZH_HANT] Text (Chinese (Traditional))",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Chinese (Traditional))",
+  "manageSubscription": "[ZH_HANT] Manage Subscription (Chinese (Traditional))",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
@@ -1840,111 +1840,111 @@
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Chinese (Traditional))",
+  "paymentConfirmation": "[ZH_HANT] Payment Confirmation (Chinese (Traditional))",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Chinese (Traditional))",
+  "promoAppliedYourNextBillIsFree": "[ZH_HANT] Promo applied! Your next bill is free. (Chinese (Traditional))",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Chinese (Traditional))",
+  "errorLoadingSlots": "[ZH_HANT] Error loading slots (Chinese (Traditional))",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Allow other users to find and join this game (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Business Onboarding Screen - Coming Soon (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Chinese (Traditional))",
+  "activateBusinessProfile": "[ZH_HANT] Activate Business Profile (Chinese (Traditional))",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Chinese (Traditional))",
+  "contentNotFound": "[ZH_HANT] Content not found (Chinese (Traditional))",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Chinese (Traditional))",
+  "pspecialtynpcontactinfo": "[ZH_HANT] {specialty}\\n{contactInfo} (Chinese (Traditional))",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Chinese (Traditional))",
+  "rating": "[ZH_HANT] Rating (Chinese (Traditional))",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Chinese (Traditional))",
+  "messages": "[ZH_HANT] Messages (Chinese (Traditional))",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Chinese (Traditional))",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Chinese (Traditional))",
+  "becomeAnAmbassador": "[ZH_HANT] Become an Ambassador (Chinese (Traditional))",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Chinese (Traditional))",
+  "subscribeNow": "[ZH_HANT] Subscribe Now (Chinese (Traditional))",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Chinese (Traditional))",
+  "timeArgsslotformatcontext": "[ZH_HANT] Time: {time} (Chinese (Traditional))",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Chinese (Traditional))",
+  "shareViaWhatsapp": "[ZH_HANT] Share via WhatsApp (Chinese (Traditional))",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Chinese (Traditional))",
+  "users1": "[ZH_HANT] Users (Chinese (Traditional))",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Chinese (Traditional))",
+  "shareLink": "[ZH_HANT] Share Link (Chinese (Traditional))",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[ZH_HANT] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Chinese (Traditional))",
+  "deleteAppointment": "[ZH_HANT] Delete Appointment (Chinese (Traditional))",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Chinese (Traditional))",
+  "toggleAvailability": "[ZH_HANT] Toggle Availability (Chinese (Traditional))",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Chinese (Traditional))",
+  "changePlan": "[ZH_HANT] Change Plan (Chinese (Traditional))",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Chinese (Traditional))",
+  "errorLoadingStaff": "[ZH_HANT] Error loading staff (Chinese (Traditional))",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Chinese (Traditional))",
+  "updateYourBusinessInformation": "[ZH_HANT] Update your business information (Chinese (Traditional))",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[ZH_HANT] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Chinese (Traditional))",
+  "parentDashboard": "[ZH_HANT] Parent Dashboard (Chinese (Traditional))",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
@@ -1952,35 +1952,35 @@
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Chinese (Traditional))",
+  "studioBooking": "[ZH_HANT] Studio Booking (Chinese (Traditional))",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Chinese (Traditional))",
+  "about1": "[ZH_HANT] About (Chinese (Traditional))",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Chinese (Traditional))",
+  "multipleChoice": "[ZH_HANT] Multiple Choice (Chinese (Traditional))",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Date: {date} (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Studio booking is only available on web (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Chinese (Traditional))",
+  "errorLoadingBranchesE": "[ZH_HANT] Error loading branches: $e (Chinese (Traditional))",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] \\uD83D\\uDCC5 {dateTime} (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
@@ -1988,15 +1988,15 @@
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Chinese (Traditional))",
+  "failedToUpdateConsentE": "[ZH_HANT] Failed to update consent: $e (Chinese (Traditional))",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Chinese (Traditional))",
+  "welcome1": "[ZH_HANT] Welcome (Chinese (Traditional))",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Chinese (Traditional))",
+  "failedToCreateSessionE": "[ZH_HANT] Failed to create session: $e (Chinese (Traditional))",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
@@ -2004,103 +2004,103 @@
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Chinese (Traditional))",
+  "surveyEditor": "[ZH_HANT] Survey Editor (Chinese (Traditional))",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Chinese (Traditional))",
+  "failedToStartBasicSubscriptionE": "[ZH_HANT] Failed to start Basic subscription: $e (Chinese (Traditional))",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Chinese (Traditional))",
+  "mySchedule": "[ZH_HANT] My Schedule (Chinese (Traditional))",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Chinese (Traditional))",
+  "studioDashboard": "[ZH_HANT] Studio Dashboard (Chinese (Traditional))",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Chinese (Traditional))",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[ZH_HANT] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[ZH_HANT] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Chinese (Traditional))",
+  "settingsSavedSuccessfully": "[ZH_HANT] Settings saved successfully! (Chinese (Traditional))",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Chinese (Traditional))",
+  "linkCopiedToClipboard": "[ZH_HANT] Link copied to clipboard! (Chinese (Traditional))",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Chinese (Traditional))",
+  "accept1": "[ZH_HANT] Accept (Chinese (Traditional))",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Chinese (Traditional))",
+  "noAvailableSlots": "[ZH_HANT] No available slots (Chinese (Traditional))",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Chinese (Traditional))",
+  "makeGamePublic": "[ZH_HANT] Make Game Public (Chinese (Traditional))",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Permission {category} updated to $newValue (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Chinese (Traditional))",
+  "roomDeletedSuccessfully": "[ZH_HANT] Room deleted successfully! (Chinese (Traditional))",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Chinese (Traditional))",
+  "businessCalendar": "[ZH_HANT] Business Calendar (Chinese (Traditional))",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Chinese (Traditional))",
+  "addAvailability": "[ZH_HANT] Add Availability (Chinese (Traditional))",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Chinese (Traditional))",
+  "ambassadorOnboarding": "[ZH_HANT] Ambassador Onboarding (Chinese (Traditional))",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Chinese (Traditional))",
+  "phoneProfileasyncphone": "[ZH_HANT] Phone: {phone} (Chinese (Traditional))",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Chinese (Traditional))",
+  "addNewRoom": "[ZH_HANT] Add New Room (Chinese (Traditional))",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Chinese (Traditional))",
+  "requireParentApproval": "[ZH_HANT] Require Parent Approval (Chinese (Traditional))",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Chinese (Traditional))",
+  "closed": "[ZH_HANT] Closed (Chinese (Traditional))",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Chinese (Traditional))",
+  "exportAsPdf": "[ZH_HANT] Export as PDF (Chinese (Traditional))",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Chinese (Traditional))",
+  "enableVibration": "[ZH_HANT] Enable Vibration (Chinese (Traditional))",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Chinese (Traditional))",
+  "toAvailendformatcontext": "[ZH_HANT] To: {endTime} (Chinese (Traditional))",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Chinese (Traditional))",
+  "yourUpgradeCodeUpgradecode": "[ZH_HANT] Your upgrade code: $upgradeCode (Chinese (Traditional))",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
@@ -2108,15 +2108,15 @@
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Chinese (Traditional))",
+  "country": "[ZH_HANT] Country (Chinese (Traditional))",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[ZH_HANT] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Chinese (Traditional))",
+  "staffArgsstaffdisplayname": "[ZH_HANT] Staff: {staffName} (Chinese (Traditional))",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
@@ -2124,71 +2124,71 @@
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Chinese (Traditional))",
+  "settings1": "[ZH_HANT] Settings (Chinese (Traditional))",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Chinese (Traditional))",
+  "cancel1": "[ZH_HANT] Cancel (Chinese (Traditional))",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Subscription activated successfully! (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[ZH_HANT] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Chinese (Traditional))",
+  "broadcast": "[ZH_HANT] Broadcast (Chinese (Traditional))",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Chinese (Traditional))",
+  "noEventsScheduledThisWeek": "[ZH_HANT] No events scheduled this week (Chinese (Traditional))",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Chinese (Traditional))",
+  "googleCalendar": "[ZH_HANT] Google Calendar (Chinese (Traditional))",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "發送邀請",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Chinese (Traditional))",
+  "childDashboard": "[ZH_HANT] Child Dashboard (Chinese (Traditional))",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Chinese (Traditional))",
+  "failedToUploadBackgroundE": "[ZH_HANT] Failed to upload background: $e (Chinese (Traditional))",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[ZH_HANT] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[ZH_HANT] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[ZH_HANT] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Chinese (Traditional))",
+  "noAppointments": "[ZH_HANT] No appointments (Chinese (Traditional))",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Chinese (Traditional))",
+  "unlimitedBookingsPerWeek": "[ZH_HANT] • Unlimited bookings per week (Chinese (Traditional))",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Chinese (Traditional))",
+  "scheduledAtScheduledat": "[ZH_HANT] Scheduled at: $scheduledAt (Chinese (Traditional))",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
@@ -2196,51 +2196,51 @@
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Subscription cancelled successfully (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Chinese (Traditional))",
+  "cancelAppointment": "[ZH_HANT] Cancel Appointment (Chinese (Traditional))",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[ZH_HANT] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Chinese (Traditional))",
+  "businessSignup": "[ZH_HANT] Business Signup (Chinese (Traditional))",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Business Completion Screen - Coming Soon (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Chinese (Traditional))",
+  "createGame1": "[ZH_HANT] Create Game (Chinese (Traditional))",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Chinese (Traditional))",
+  "valuetoint": "[ZH_HANT] {value} (Chinese (Traditional))",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Chinese (Traditional))",
+  "pleaseEnterAPromoCode": "[ZH_HANT] Please enter a promo code (Chinese (Traditional))",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Chinese (Traditional))",
+  "errorLoadingAvailabilityE": "[ZH_HANT] Error loading availability: $e (Chinese (Traditional))",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Chinese (Traditional))",
+  "parentalControls": "[ZH_HANT] Parental Controls (Chinese (Traditional))",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Chinese (Traditional))",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
@@ -2248,55 +2248,55 @@
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Chinese (Traditional))",
+  "create": "[ZH_HANT] Create (Chinese (Traditional))",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Chinese (Traditional))",
+  "noExternalMeetingsFound": "[ZH_HANT] No external meetings found. (Chinese (Traditional))",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Chinese (Traditional))",
+  "staffSelectionstaffdisplayname": "[ZH_HANT] Staff: {staffName} (Chinese (Traditional))",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[ZH_HANT] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Chinese (Traditional))",
+  "schedulerScreen": "[ZH_HANT] Scheduler Screen (Chinese (Traditional))",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Chinese (Traditional))",
+  "clientUpdatedSuccessfully": "[ZH_HANT] Client updated successfully! (Chinese (Traditional))",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Chinese (Traditional))",
+  "surveyResponses": "[ZH_HANT] Survey Responses (Chinese (Traditional))",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Chinese (Traditional))",
+  "syncToOutlook": "[ZH_HANT] Sync to Outlook (Chinese (Traditional))",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Chinese (Traditional))",
+  "saveChanges": "[ZH_HANT] Save Changes (Chinese (Traditional))",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Chinese (Traditional))",
+  "pickTime": "[ZH_HANT] Pick Time (Chinese (Traditional))",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Chinese (Traditional))",
+  "registrationFailedEtostring": "[ZH_HANT] Registration failed: {error} (Chinese (Traditional))",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Chinese (Traditional))",
+  "analytics": "[ZH_HANT] Analytics (Chinese (Traditional))",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Chinese (Traditional))",
+  "errorLoadingEvents": "[ZH_HANT] Error loading events (Chinese (Traditional))",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
@@ -2304,19 +2304,19 @@
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[ZH_HANT] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Chinese (Traditional))",
+  "success1": "[ZH_HANT] Success (Chinese (Traditional))",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[ZH_HANT] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Chinese (Traditional))",
+  "fromAvailstartformatcontext": "[ZH_HANT] From: {startTime} (Chinese (Traditional))",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
@@ -2324,11 +2324,11 @@
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Redirecting to Stripe checkout for Basic plan... (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[ZH_HANT] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
@@ -2340,83 +2340,83 @@
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Chinese (Traditional))",
+  "noQuestionsAdded": "[ZH_HANT] No questions added (Chinese (Traditional))",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[ZH_HANT] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[ZH_HANT] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Chinese (Traditional))",
+  "typeOpenCall": "[ZH_HANT] Type: Open Call (Chinese (Traditional))",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[ZH_HANT] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[ZH_HANT] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Chinese (Traditional))",
+  "invoiceCreatedSuccessfully": "[ZH_HANT] Invoice created successfully! (Chinese (Traditional))",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Chinese (Traditional))",
+  "noTimeSeriesDataAvailable": "[ZH_HANT] No time series data available (Chinese (Traditional))",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[ZH_HANT] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[ZH_HANT] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Chinese (Traditional))",
+  "failedToSendPrivacyRequestE": "[ZH_HANT] Failed to send privacy request: $e (Chinese (Traditional))",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Chinese (Traditional))",
+  "chooseYourPlan": "[ZH_HANT] Choose Your Plan (Chinese (Traditional))",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Chinese (Traditional))",
+  "playtimeManagement": "[ZH_HANT] Playtime Management (Chinese (Traditional))",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Chinese (Traditional))",
+  "availability": "[ZH_HANT] Availability (Chinese (Traditional))",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Chinese (Traditional))",
+  "eventCreated": "[ZH_HANT] Event created (Chinese (Traditional))",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Chinese (Traditional))",
+  "subscribeToBasic499mo": "[ZH_HANT] Subscribe to Basic (€4.99/mo) (Chinese (Traditional))",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Chinese (Traditional))",
+  "completion": "[ZH_HANT] Completion (Chinese (Traditional))",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Chinese (Traditional))",
+  "supportTicketSubmitted": "[ZH_HANT] Support ticket submitted (Chinese (Traditional))",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Chinese (Traditional))",
+  "monetizationSettings": "[ZH_HANT] Monetization Settings (Chinese (Traditional))",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
@@ -2424,67 +2424,67 @@
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[ZH_HANT] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Chinese (Traditional))",
+  "deleteSurvey": "[ZH_HANT] Delete Survey (Chinese (Traditional))",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Chinese (Traditional))",
+  "gameApprovedSuccessfully": "[ZH_HANT] Game approved successfully! (Chinese (Traditional))",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Chinese (Traditional))",
+  "errorLoadingPermissionsError": "[ZH_HANT] Error loading permissions: $error (Chinese (Traditional))",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Chinese (Traditional))",
+  "referrals": "[ZH_HANT] Referrals (Chinese (Traditional))",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Chinese (Traditional))",
+  "crm": "[ZH_HANT] CRM (Chinese (Traditional))",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Chinese (Traditional))",
+  "gameRejected": "[ZH_HANT] Game rejected (Chinese (Traditional))",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Chinese (Traditional))",
+  "appointments": "[ZH_HANT] Appointments (Chinese (Traditional))",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Chinese (Traditional))",
+  "onboardingScreen": "[ZH_HANT] Onboarding Screen (Chinese (Traditional))",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Chinese (Traditional))",
+  "welcomeToYourStudio": "[ZH_HANT] Welcome to your studio (Chinese (Traditional))",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Chinese (Traditional))",
+  "update": "[ZH_HANT] Update (Chinese (Traditional))",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Chinese (Traditional))",
+  "retry1": "[ZH_HANT] Retry (Chinese (Traditional))",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Chinese (Traditional))",
+  "booking": "[ZH_HANT] Booking (Chinese (Traditional))",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Chinese (Traditional))",
+  "parentalSettings": "[ZH_HANT] Parental Settings (Chinese (Traditional))",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Chinese (Traditional))",
+  "language": "[ZH_HANT] Language (Chinese (Traditional))",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Chinese (Traditional))",
+  "deleteSlot": "[ZH_HANT] Delete Slot (Chinese (Traditional))",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
@@ -2492,207 +2492,207 @@
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[ZH_HANT] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Chinese (Traditional))",
+  "createNewGame": "[ZH_HANT] Create New Game (Chinese (Traditional))",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Chinese (Traditional))",
+  "next1": "[ZH_HANT] Next (Chinese (Traditional))",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Chinese (Traditional))",
+  "backgroundUploadedSuccessfully": "[ZH_HANT] Background uploaded successfully! (Chinese (Traditional))",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Chinese (Traditional))",
+  "noAppointmentRequestsFound": "[ZH_HANT] No appointment requests found. (Chinese (Traditional))",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Chinese (Traditional))",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Chinese (Traditional))",
+  "restrictMatureContent": "[ZH_HANT] Restrict mature content (Chinese (Traditional))",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Chinese (Traditional))",
+  "ambassadors": "[ZH_HANT] Ambassadors (Chinese (Traditional))",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Chinese (Traditional))",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Chinese (Traditional))",
+  "paymentWasCancelled": "[ZH_HANT] Payment was cancelled (Chinese (Traditional))",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Chinese (Traditional))",
+  "clearAll": "[ZH_HANT] Clear All (Chinese (Traditional))",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Chinese (Traditional))",
+  "viewDetails": "[ZH_HANT] View Details (Chinese (Traditional))",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Chinese (Traditional))",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Chinese (Traditional))",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Chinese (Traditional))",
+  "failedToCreateGameE": "[ZH_HANT] Failed to create game: $e (Chinese (Traditional))",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Chinese (Traditional))",
+  "noChartDataAvailable": "[ZH_HANT] No chart data available (Chinese (Traditional))",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Chinese (Traditional))",
+  "phonebasedBookingSystem": "[ZH_HANT] • Phone-based booking system (Chinese (Traditional))",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Chinese (Traditional))",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Chinese (Traditional))",
+  "invoices": "[ZH_HANT] Invoices (Chinese (Traditional))",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Chinese (Traditional))",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Chinese (Traditional))",
+  "scheduledAtArgsscheduledat": "[ZH_HANT] Scheduled at: {scheduledAt} (Chinese (Traditional))",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Duration: {duration} minutes (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Chinese (Traditional))",
+  "tryAgain": "[ZH_HANT] Try Again (Chinese (Traditional))",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Chinese (Traditional))",
+  "deleteBackground": "[ZH_HANT] Delete Background (Chinese (Traditional))",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Chinese (Traditional))",
+  "currentTierTiertouppercase": "[ZH_HANT] Current Tier: {tier} (Chinese (Traditional))",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[ZH_HANT] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] No clients found. Add your first client! (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[ZH_HANT] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[ZH_HANT] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Chinese (Traditional))",
+  "appointmentRequests": "[ZH_HANT] Appointment Requests (Chinese (Traditional))",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Chinese (Traditional))",
+  "forward": "[ZH_HANT] Forward (Chinese (Traditional))",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Chinese (Traditional))",
+  "roomAddedSuccessfully": "[ZH_HANT] Room added successfully! (Chinese (Traditional))",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Chinese (Traditional))",
+  "option": "[ZH_HANT] • $option (Chinese (Traditional))",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Chinese (Traditional))",
+  "responseIndex1": "[ZH_HANT] Response #{number} (Chinese (Traditional))",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Chinese (Traditional))",
+  "crmDashboardWithAnalytics": "[ZH_HANT] • CRM dashboard with analytics (Chinese (Traditional))",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Chinese (Traditional))",
+  "contentLibrary1": "[ZH_HANT] Content Library (Chinese (Traditional))",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Chinese (Traditional))",
+  "reply": "[ZH_HANT] Reply (Chinese (Traditional))",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Chinese (Traditional))",
+  "subscriptionManagement": "[ZH_HANT] Subscription Management (Chinese (Traditional))",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Monetization settings will be implemented here (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Chinese (Traditional))",
+  "failedToApplyPromoCodeE": "[ZH_HANT] Failed to apply promo code: $e (Chinese (Traditional))",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[ZH_HANT] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Chinese (Traditional))",
+  "localizationContribution": "[ZH_HANT] Localization Contribution (Chinese (Traditional))",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Chinese (Traditional))",
+  "parentalConsent": "[ZH_HANT] Parental Consent (Chinese (Traditional))",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Chinese (Traditional))",
+  "businessSignupScreenComingSoon": "[ZH_HANT] Business Signup Screen - Coming Soon (Chinese (Traditional))",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Chinese (Traditional))",
+  "REDACTED_TOKEN": "[ZH_HANT] Are you sure you want to delete this appointment? (Chinese (Traditional))",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Chinese (Traditional))",
+  "syncAppointment": "[ZH_HANT] Sync Appointment (Chinese (Traditional))",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Chinese (Traditional))",
+  "iConsent": "[ZH_HANT] I Consent (Chinese (Traditional))",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Chinese (Traditional))",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Chinese (Traditional))",
+  "businessSetupScreenComingSoon": "[ZH_HANT] Business Setup Screen - Coming Soon (Chinese (Traditional))",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Chinese (Traditional))",
+  "edit1": "[ZH_HANT] Edit (Chinese (Traditional))",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Chinese (Traditional))",
+  "noEventsScheduledThisMonth": "[ZH_HANT] No events scheduled this month (Chinese (Traditional))",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
@@ -2700,27 +2700,27 @@
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Chinese (Traditional))",
+  "noMessagesFound": "[ZH_HANT] No messages found. (Chinese (Traditional))",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[ZH_HANT] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Chinese (Traditional))",
+  "manageStaffAvailability": "[ZH_HANT] Manage Staff Availability (Chinese (Traditional))",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Chinese (Traditional))",
+  "noMissingTranslations": "[ZH_HANT] No missing translations (Chinese (Traditional))",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Chinese (Traditional))",
+  "skip": "[ZH_HANT] Skip (Chinese (Traditional))",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
@@ -2728,27 +2728,27 @@
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Chinese (Traditional))",
+  "errorLoadingReferralCode": "[ZH_HANT] Error loading referral code (Chinese (Traditional))",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Chinese (Traditional))",
+  "allCountries": "[ZH_HANT] All Countries (Chinese (Traditional))",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Chinese (Traditional))",
+  "deleteGame": "[ZH_HANT] Delete Game (Chinese (Traditional))",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Chinese (Traditional))",
+  "staffManagementTools": "[ZH_HANT] • Staff management tools (Chinese (Traditional))",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Chinese (Traditional))",
+  "deleteMessage": "[ZH_HANT] Delete Message (Chinese (Traditional))",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Chinese (Traditional))",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
@@ -2756,11 +2756,11 @@
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Chinese (Traditional))",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Chinese (Traditional))",
+  "openingCustomerPortal": "[ZH_HANT] Opening customer portal... (Chinese (Traditional))",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
@@ -2768,95 +2768,95 @@
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Chinese (Traditional))",
+  "nameProfilename": "[ZH_HANT] Name: {name} (Chinese (Traditional))",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Chinese (Traditional))",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Chinese (Traditional))",
+  "upgradeToBusiness": "[ZH_HANT] Upgrade to Business (Chinese (Traditional))",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Chinese (Traditional))",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Chinese (Traditional))",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "讀取使用者錯誤",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "驗證",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Chinese (Traditional))",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Chinese (Traditional))",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Chinese (Traditional))",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Chinese (Traditional))",
+  "viewResponses": "[ZH_HANT] View Responses (Chinese (Traditional))",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Chinese (Traditional))",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Chinese (Traditional))",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Chinese (Traditional))",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Chinese (Traditional))",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Chinese (Traditional))",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Chinese (Traditional))",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Chinese (Traditional))",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Chinese (Traditional))",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Chinese (Traditional))",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Chinese (Traditional))",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

@@ -8,7 +8,7 @@
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "Все още няма сесии",
+  "noSessionsYet": "[BG] Все още няма сесии",
   "@noSessionsYet": {
     "description": "Description"
   },
@@ -16,7 +16,7 @@
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "Изберете режим",
+  "playtimeLandingChooseMode": "[BG] Изберете режим",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
@@ -24,7 +24,7 @@
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "Планиране на съобщение",
+  "scheduleMessage": "[BG] Планиране на съобщение",
   "@scheduleMessage": {
     "description": "Description"
   },
@@ -32,7 +32,7 @@
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[BG] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
@@ -40,15 +40,15 @@
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "Изберете приятели",
+  "playtimeChooseFriends": "[BG] Изберете приятели",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "Няма покани",
+  "noInvites": "[BG] Няма покани",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "Изберете час",
+  "playtimeChooseTime": "[BG] Изберете час",
   "@playtimeChooseTime": {
     "description": "Description"
   },
@@ -64,11 +64,11 @@
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "Създаване на виртуална сесия",
+  "createVirtualSession": "[BG] Създаване на виртуална сесия",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "Съобщението беше изпратено успешно",
+  "messageSentSuccessfully": "[BG] Съобщението беше изпратено успешно",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
@@ -84,7 +84,7 @@
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "Отмяна на потвърждение на покана",
+  "cancelInviteConfirmation": "[BG] Отмяна на потвърждение на покана",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
@@ -92,19 +92,19 @@
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "Отмяна на достъп",
+  "revokeAccess": "[BG] Отмяна на достъп",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "Запазване на група за разпознаване",
+  "saveGroupForRecognition": "[BG] Запазване на група за разпознаване",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "Готово е планирането на живо",
+  "playtimeLiveScheduled": "[BG] Готово е планирането на живо",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "Потвърждение за отмяна на достъп",
+  "revokeAccessConfirmation": "[BG] Потвърждение за отмяна на достъп",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
@@ -116,7 +116,7 @@
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "Грешка при зареждане на семейни връзки",
+  "errorLoadingFamilyLinks": "[BG] Грешка при зареждане на семейни връзки",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
@@ -124,15 +124,15 @@
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "Създай Playtime",
+  "playtimeCreate": "[BG] Създай Playtime",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "Неуспешно изпълнение на заявка за поверителност",
+  "failedToActionPrivacyRequest": "[BG] Неуспешно изпълнение на заявка за поверителност",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "Заглавие на приложението",
+  "appTitle": "[BG] Заглавие на приложението",
   "@appTitle": {
     "description": "Description"
   },
@@ -140,11 +140,11 @@
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "Виртуален режим",
+  "playtimeModeVirtual": "[BG] Виртуален режим",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "Описание на Playtime",
+  "playtimeDescription": "[BG] Описание на Playtime",
   "@playtimeDescription": {
     "description": "Description"
   },
@@ -152,11 +152,11 @@
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "Виртуалната сесия започна",
+  "playtimeVirtualStarted": "[BG] Виртуалната сесия започна",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "Създайте първата си игра",
+  "createYourFirstGame": "[BG] Създайте първата си игра",
   "@createYourFirstGame": {
     "description": "Description"
   },
@@ -168,7 +168,7 @@
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "Няма резултати",
+  "noResults": "[BG] Няма резултати",
   "@noResults": {
     "description": "Description"
   },
@@ -180,7 +180,7 @@
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "Реално време",
+  "playtimeModeLive": "[BG] Реално време",
   "@playtimeModeLive": {
     "description": "Description"
   },
@@ -188,7 +188,7 @@
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "Стандартно съобщение за споделяне",
+  "defaultShareMessage": "[BG] Стандартно съобщение за споделяне",
   "@defaultShareMessage": {
     "description": "Description"
   },
@@ -196,15 +196,15 @@
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "Център Playtime",
+  "playtimeHub": "[BG] Център Playtime",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "Създаване на жива сесия",
+  "createLiveSession": "[BG] Създаване на жива сесия",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "Активирай известия",
+  "enableNotifications": "[BG] Активирай известия",
   "@enableNotifications": {
     "description": "Description"
   },
@@ -216,23 +216,23 @@
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "Срещата беше споделена успешно",
+  "meetingSharedSuccessfully": "[BG] Срещата беше споделена успешно",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "Добре дошли в Playtime",
+  "welcomeToPlaytime": "[BG] Добре дошли в Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "Виж всичко",
+  "viewAll": "[BG] Виж всичко",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "Виртуален Playtime",
+  "playtimeVirtual": "[BG] Виртуален Playtime",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "Екран за персонала предстои",
+  "staffScreenTBD": "[BG] Екран за персонала предстои",
   "@staffScreenTBD": {
     "description": "Description"
   },
@@ -240,23 +240,23 @@
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "Поканата беше отменена успешно",
+  "inviteCancelledSuccessfully": "[BG] Поканата беше отменена успешно",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "Опитай отново",
+  "retry": "[BG] Опитай отново",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "Създай съобщение за излъчване",
+  "composeBroadcastMessage": "[BG] Създай съобщение за излъчване",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "Изпрати сега",
+  "sendNow": "[BG] Изпрати сега",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "Все още няма игри",
+  "noGamesYet": "[BG] Все още няма игри",
   "@noGamesYet": {
     "description": "Description"
   },
@@ -276,7 +276,7 @@
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "Премахни дете",
+  "removeChild": "[BG] Премахни дете",
   "@removeChild": {
     "description": "Description"
   },
@@ -292,15 +292,15 @@
   "@paste": {
     "description": "Description"
   },
-  "welcome": "Добре дошли",
+  "welcome": "[BG] Добре дошли",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "Създай сесия",
+  "playtimeCreateSession": "[BG] Създай сесия",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "Членове на семейството",
+  "familyMembers": "[BG] Членове на семейството",
   "@familyMembers": {
     "description": "Description"
   },
@@ -308,11 +308,11 @@
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "Предстоящи сесии",
+  "upcomingSessions": "[BG] Предстоящи сесии",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "Въведете име на група",
+  "enterGroupName": "[BG] Въведете име на група",
   "@enterGroupName": {
     "description": "Description"
   },
@@ -320,31 +320,31 @@
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "Playtime на живо",
+  "playtimeLive": "[BG] Playtime на живо",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "Грешка при зареждане на покани",
+  "errorLoadingInvites": "[BG] Грешка при зареждане на покани",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "Филтри за насочване",
+  "targetingFilters": "[BG] Филтри за насочване",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "Избери видео",
+  "pickVideo": "[BG] Избери видео",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "Играта беше изтрита",
+  "playtimeGameDeleted": "[BG] Играта беше изтрита",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "Планиране за по-късно",
+  "scheduleForLater": "[BG] Планиране за по-късно",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "Достъпът беше отменен успешно",
+  "accessRevokedSuccessfully": "[BG] Достъпът беше отменен успешно",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
@@ -352,7 +352,7 @@
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "Проверка на разрешения",
+  "checkingPermissions": "[BG] Проверка на разрешения",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
@@ -360,7 +360,7 @@
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "Да, откажи",
+  "yesCancel": "[BG] Да, откажи",
   "@yesCancel": {
     "description": "Description"
   },
@@ -368,15 +368,15 @@
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[BG] Share on WhatsApp",
+  "shareOnWhatsApp": "[BG] [BG] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "Настройки на известия",
+  "notificationSettings": "[BG] Настройки на известия",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "Моят профил",
+  "myProfile": "[BG] Моят профил",
   "@myProfile": {
     "description": "Description"
   },
@@ -384,11 +384,11 @@
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "Няма съобщения за излъчване",
+  "noBroadcastMessages": "[BG] Няма съобщения за излъчване",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "Тип заявка",
+  "requestType": "[BG] Тип заявка",
   "@requestType": {
     "description": "requestType description"
   },
@@ -400,11 +400,11 @@
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "Отмяна на покана",
+  "cancelInvite": "[BG] Отмяна на покана",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "Създай ново",
+  "createNew": "[BG] Създай ново",
   "@createNew": {
     "description": "Description"
   },
@@ -412,11 +412,11 @@
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "Откажи Playtime",
+  "playtimeReject": "[BG] Откажи Playtime",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "Грешка при зареждане на профил",
+  "errorLoadingProfile": "[BG] Грешка при зареждане на профил",
   "@errorLoadingProfile": {
     "description": "Description"
   },
@@ -428,15 +428,15 @@
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "Играта беше одобрена",
+  "playtimeGameApproved": "[BG] Играта беше одобрена",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "Забравена парола?",
+  "forgotPassword": "[BG] Забравена парола?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "Табло на семейството",
+  "familyDashboard": "[BG] Табло на семейството",
   "@familyDashboard": {
     "description": "Description"
   },
@@ -444,31 +444,31 @@
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "Бързи действия",
+  "quickActions": "[BG] Бързи действия",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "Заглавие на Playtime",
+  "playtimeTitle": "[BG] Заглавие на Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "Кодът беше изпратен отново успешно",
+  "otpResentSuccessfully": "[BG] Кодът беше изпратен отново успешно",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "Грешка при проверка на разрешения",
+  "errorCheckingPermissions": "[BG] Грешка при проверка на разрешения",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "Екран на клиента предстои",
+  "clientScreenTBD": "[BG] Екран на клиента предстои",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "FCM маркер",
+  "fcmToken": "[BG] FCM маркер",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "Избери изображение",
+  "pickImage": "[BG] Избери изображение",
   "@pickImage": {
     "description": "pickImage description"
   },
@@ -476,23 +476,23 @@
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "Не е намерен профил",
+  "noProfileFound": "[BG] Не е намерен профил",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "Все още няма членове на семейството",
+  "noFamilyMembersYet": "[BG] Все още няма членове на семейството",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "Медия (по избор)",
+  "mediaOptional": "[BG] Медия (по избор)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "Съобщението беше запазено успешно",
+  "messageSavedSuccessfully": "[BG] Съобщението беше запазено успешно",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "Планиран за",
+  "scheduledFor": "[BG] Планиран за",
   "@scheduledFor": {
     "description": "Description"
   },
@@ -500,15 +500,15 @@
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "Няма разрешение за излъчване",
+  "noPermissionForBroadcast": "[BG] Няма разрешение за излъчване",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[BG] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "Подробности за поканата",
+  "inviteDetail": "[BG] Подробности за поканата",
   "@inviteDetail": {
     "description": "Description"
   },
@@ -516,7 +516,7 @@
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "Неуспешно повторно изпращане на кода",
+  "failedToResendOtp": "[BG] Неуспешно повторно изпращане на кода",
   "@failedToResendOtp": {
     "description": "Description"
   },
@@ -524,7 +524,7 @@
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "Грешка при запазване на съобщението",
+  "errorSavingMessage": "[BG] Грешка при запазване на съобщението",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
@@ -532,47 +532,47 @@
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "Одобри Playtime",
+  "playtimeApprove": "[BG] Одобри Playtime",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "Създайте първата си сесия",
+  "createYourFirstSession": "[BG] Създайте първата си сесия",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "Играта беше отхвърлена",
+  "playtimeGameRejected": "[BG] Играта беше отхвърлена",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "Неуспешно отнемане на достъп",
+  "failedToRevokeAccess": "[BG] Неуспешно отнемане на достъп",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "Последни игри",
+  "recentGames": "[BG] Последни игри",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "Персонализиране на съобщение",
+  "customizeMessage": "[BG] Персонализиране на съобщение",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "Неуспешна отмяна на покана",
+  "failedToCancelInvite": "[BG] Неуспешна отмяна на покана",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "Грешка при изпращане на съобщение",
+  "errorSendingMessage": "[BG] Грешка при изпращане на съобщение",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "Потвърдете паролата",
+  "confirmPassword": "[BG] Потвърдете паролата",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "Грешка при зареждане на заявки за поверителност",
+  "errorLoadingPrivacyRequests": "[BG] Грешка при зареждане на заявки за поверителност",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "Свързани деца",
+  "connectedChildren": "[BG] Свързани деца",
   "@connectedChildren": {
     "description": "Description"
   },
@@ -580,35 +580,35 @@
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "Въведете име на играта",
+  "playtimeEnterGameName": "[BG] Въведете име на играта",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "Моля, влезте за семейни функции",
+  "pleaseLoginForFamilyFeatures": "[BG] Моля, влезте за семейни функции",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "Моите покани",
+  "myInvites": "[BG] Моите покани",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "Създай игра",
+  "createGame": "[BG] Създай игра",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "Име на група (по избор)",
+  "groupNameOptional": "[BG] Име на група (по избор)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "Няма сесии на Playtime",
+  "playtimeNoSessions": "[BG] Няма сесии на Playtime",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[BG] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "Заглавие на таблото за родители в Playtime",
+  "playtimeParentDashboardTitle": "[BG] Заглавие на таблото за родители в Playtime",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
@@ -616,7 +616,7 @@
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "Открита е позната група",
+  "knownGroupDetected": "[BG] Открита е позната група",
   "@knownGroupDetected": {
     "description": "Description"
   },
@@ -624,15 +624,15 @@
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "Изберете игра",
+  "playtimeChooseGame": "[BG] Изберете игра",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "Управление на разрешения",
+  "managePermissions": "[BG] Управление на разрешения",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "Опции за анкета",
+  "pollOptions": "[BG] Опции за анкета",
   "@pollOptions": {
     "description": "pollOptions description"
   },
@@ -644,875 +644,875 @@
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "Срещата е готова",
+  "meetingReadyMessage": "[BG] Срещата е готова",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "Чакащи покани",
+  "pendingInvites": "[BG] Чакащи покани",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "Статус:",
+  "statusColon": "[BG] Статус:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "Моля, влезте, за да видите профила",
+  "pleaseLoginToViewProfile": "[BG] Моля, влезте, за да видите профила",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[BG] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[BG] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[BG] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[BG] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[BG] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[BG] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[BG] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[BG] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[BG] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[BG] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[BG] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[BG] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[BG] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[BG] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[BG] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[BG] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[BG] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[BG] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Bulgarian)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Bulgarian)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Bulgarian)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Bulgarian)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[BG] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[BG] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[BG] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[BG] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[BG] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[BG] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[BG] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[BG] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[BG] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[BG] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[BG] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[BG] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[BG] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[BG] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[BG] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[BG] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[BG] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[BG] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[BG] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[BG] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[BG] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[BG] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[BG] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[BG] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[BG] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[BG] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[BG] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[BG] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[BG] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[BG] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[BG] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[BG] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[BG] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[BG] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[BG] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[BG] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[BG] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[BG] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[BG] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[BG] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[BG] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[BG] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[BG] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[BG] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[BG] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[BG] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[BG] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[BG] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[BG] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[BG] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[BG] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[BG] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[BG] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[BG] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[BG] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[BG] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[BG] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[BG] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[BG] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[BG] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[BG] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[BG] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Bulgarian)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Bulgarian)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Bulgarian)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Bulgarian)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Bulgarian)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Bulgarian)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Bulgarian)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Bulgarian)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[BG] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Bulgarian)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Bulgarian)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Bulgarian)",
+  "upload1": "[BG] Upload (Bulgarian)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Bulgarian)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Bulgarian)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Virtual session created! Inviting friends... (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Bulgarian)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Bulgarian)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Bulgarian)",
+  "rewards": "[BG] Rewards (Bulgarian)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Bulgarian)",
+  "time": "[BG] Time (Bulgarian)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[BG] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Bulgarian)",
+  "noSlots": "[BG] No slots (Bulgarian)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Bulgarian)",
+  "signIn": "[BG] Sign In (Bulgarian)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Bulgarian)",
+  "homeFeedScreen": "[BG] Home Feed Screen (Bulgarian)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Bulgarian)",
+  "selectLocation": "[BG] Select Location (Bulgarian)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Bulgarian)",
+  "noTicketsYet": "[BG] No tickets yet (Bulgarian)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Bulgarian)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Bulgarian)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Bulgarian)",
+  "subscriptionUnavailable": "[BG] Subscription unavailable (Bulgarian)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Bulgarian)",
+  "confirmBooking": "[BG] Confirm Booking (Bulgarian)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Bulgarian)",
+  "failedToUpdatePermissionE": "[BG] Failed to update permission: $e (Bulgarian)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Bulgarian)",
+  "reject": "[BG] Reject (Bulgarian)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Ambassador Status: {ambassadorStatus} (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[BG] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Bulgarian)",
+  "checkingSubscription": "[BG] Checking subscription... (Bulgarian)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Bulgarian)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Bulgarian)",
+  "noContentAvailableYet": "[BG] No content available yet (Bulgarian)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Bulgarian)",
+  "resolve": "[BG] Resolve (Bulgarian)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Bulgarian)",
+  "errorLoadingSurveysError": "[BG] Error loading surveys: $error (Bulgarian)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[BG] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Bulgarian)",
+  "getHelpWithYourAccount": "[BG] Get help with your account (Bulgarian)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Bulgarian)",
+  "pay": "[BG] Pay (Bulgarian)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[BG] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Bulgarian)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Bulgarian)",
+  "changesSavedSuccessfully": "[BG] Changes saved successfully! (Bulgarian)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Bulgarian)",
+  "createNewInvoice": "[BG] Create New Invoice (Bulgarian)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Bulgarian)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Bulgarian)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Bulgarian)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Bulgarian)",
+  "profileSaved": "[BG] Profile saved! (Bulgarian)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Bulgarian)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Bulgarian)",
+  "valuetointk": "[BG] \\${value}K (Bulgarian)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Bulgarian)",
+  "deleteAccount": "[BG] Delete Account (Bulgarian)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Bulgarian)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Bulgarian)",
+  "businessOnboarding": "[BG] Business Onboarding (Bulgarian)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Bulgarian)",
+  "addNewClient": "[BG] Add New Client (Bulgarian)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Bulgarian)",
+  "darkMode": "[BG] Dark Mode (Bulgarian)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[BG] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[BG] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] You will receive a confirmation email shortly. (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Bulgarian)",
+  "addQuestion": "[BG] Add Question (Bulgarian)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Bulgarian)",
+  "privacyPolicy": "[BG] Privacy Policy (Bulgarian)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Bulgarian)",
+  "branchesLengthBranches": "[BG] {branchCount} branches (Bulgarian)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Bulgarian)",
+  "join": "[BG] Join (Bulgarian)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Bulgarian)",
+  "businessSubscription": "[BG] Business Subscription (Bulgarian)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Bulgarian)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[BG] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Bulgarian)",
+  "surveyManagement": "[BG] Survey Management (Bulgarian)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[BG] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Bulgarian)",
+  "noRoomsFoundAddYourFirstRoom": "[BG] No rooms found. Add your first room! (Bulgarian)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Bulgarian)",
+  "readOurPrivacyPolicy": "[BG] Read our privacy policy (Bulgarian)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Bulgarian)",
+  "couldNotOpenPrivacyPolicy": "[BG] Could not open privacy policy (Bulgarian)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Bulgarian)",
+  "refresh1": "[BG] Refresh (Bulgarian)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Bulgarian)",
+  "roomUpdatedSuccessfully": "[BG] Room updated successfully! (Bulgarian)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Bulgarian)",
+  "contentDetail": "[BG] Content Detail (Bulgarian)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Bulgarian)",
+  "cancelSubscription": "[BG] Cancel Subscription (Bulgarian)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Successfully registered as Ambassador! (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Bulgarian)",
+  "save1": "[BG] Save (Bulgarian)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Bulgarian)",
+  "copy1": "[BG] Copy (Bulgarian)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Bulgarian)",
+  "failedToSendInvitationE": "[BG] Failed to send invitation: $e (Bulgarian)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Bulgarian)",
+  "surveyScore": "[BG] Survey Score (Bulgarian)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[BG] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Bulgarian)",
+  "noAppointmentsFound": "[BG] No appointments found. (Bulgarian)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Bulgarian)",
+  "responseDetail": "[BG] Response Detail (Bulgarian)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Bulgarian)",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Bulgarian)",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Bulgarian)",
+  "failedToStartProSubscriptionE": "[BG] Failed to start Pro subscription: $e (Bulgarian)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Business Dashboard Entry Screen - Coming Soon (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Bulgarian)",
+  "contentFilter": "[BG] Content Filter (Bulgarian)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Bulgarian)",
+  "helpSupport": "[BG] Help & Support (Bulgarian)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Bulgarian)",
+  "editRoom": "[BG] Edit Room (Bulgarian)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[BG] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[BG] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Business CRM Entry Screen - Coming Soon (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[BG] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[BG] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Bulgarian)",
+  "errorLoadingDashboardError": "[BG] Error loading dashboard: $error (Bulgarian)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Bulgarian)",
+  "gameDeletedSuccessfully": "[BG] Game deleted successfully! (Bulgarian)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Bulgarian)",
+  "viewResponsesComingSoon": "[BG] View responses - Coming soon! (Bulgarian)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[BG] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Bulgarian)",
+  "errorLoadingRewards": "[BG] Error loading rewards (Bulgarian)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Bulgarian)",
+  "failedToDeleteAccountE": "[BG] Failed to delete account: $e (Bulgarian)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Bulgarian)",
+  "invited1": "[BG] Invited (Bulgarian)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Bulgarian)",
+  "noBranchesAvailable": "[BG] No branches available (Bulgarian)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Bulgarian)",
+  "errorError": "[BG] Error: $error (Bulgarian)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Bulgarian)",
+  "noEvents": "[BG] No events (Bulgarian)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Bulgarian)",
+  "gameCreatedSuccessfully": "[BG] Game created successfully! (Bulgarian)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Bulgarian)",
+  "add1": "[BG] Add (Bulgarian)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[BG] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Bulgarian)",
+  "eventstarttimeEventendtime": "[BG] {startTime} - {endTime} (Bulgarian)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Bulgarian)",
+  "allowPlaytime": "[BG] Allow Playtime (Bulgarian)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Bulgarian)",
+  "clients": "[BG] Clients (Bulgarian)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Bulgarian)",
+  "noAmbassadorDataAvailable": "[BG] No ambassador data available (Bulgarian)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Bulgarian)",
+  "backgroundDeletedSuccessfully": "[BG] Background deleted successfully! (Bulgarian)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Bulgarian)",
+  "errorSnapshoterror": "[BG] Error: {error} (Bulgarian)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Bulgarian)",
+  "noAnalyticsDataAvailableYet": "[BG] No analytics data available yet. (Bulgarian)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Bulgarian)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Business Phone Booking Entry Screen - Coming Soon (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Bulgarian)",
+  "verification": "[BG] Verification (Bulgarian)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Bulgarian)",
+  "copyLink": "[BG] Copy Link (Bulgarian)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Bulgarian)",
+  "dashboard1": "[BG] Dashboard (Bulgarian)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Bulgarian)",
+  "manageChildAccounts": "[BG] Manage Child Accounts (Bulgarian)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Bulgarian)",
+  "grantConsent": "[BG] Grant Consent (Bulgarian)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Bulgarian)",
+  "myProfile1": "[BG] My Profile (Bulgarian)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Bulgarian)",
+  "submit": "[BG] Submit (Bulgarian)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[BG] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Bulgarian)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Bulgarian)",
+  "ambassadorDashboard": "[BG] Ambassador Dashboard (Bulgarian)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Bulgarian)",
+  "phoneBooking": "[BG] Phone Booking (Bulgarian)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Bulgarian)",
+  "bookViaChat": "[BG] Book via Chat (Bulgarian)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
@@ -1520,1343 +1520,1343 @@
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Bulgarian)",
+  "businessProfile": "[BG] Business Profile (Bulgarian)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Business Booking Entry Screen - Coming Soon (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Bulgarian)",
+  "createNewSurvey": "[BG] Create New Survey (Bulgarian)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Bulgarian)",
+  "backgroundRejected": "[BG] Background rejected (Bulgarian)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Bulgarian)",
+  "noMediaSelected": "[BG] No media selected (Bulgarian)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Bulgarian)",
+  "syncToGoogle": "[BG] Sync to Google (Bulgarian)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Bulgarian)",
+  "virtualPlaytime": "[BG] Virtual Playtime (Bulgarian)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[BG] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[BG] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Bulgarian)",
+  "invitationSentSuccessfully": "[BG] Invitation sent successfully! (Bulgarian)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Bulgarian)",
+  "registering": "[BG] Registering... (Bulgarian)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Bulgarian)",
+  "statusAppointmentstatusname": "[BG] Status: {status} (Bulgarian)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Bulgarian)",
+  "home1": "[BG] Home (Bulgarian)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Bulgarian)",
+  "errorSavingSettingsE": "[BG] Error saving settings: $e (Bulgarian)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Bulgarian)",
+  "appVersionAndInformation": "[BG] App version and information (Bulgarian)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Business Subscription Entry Screen - Coming Soon (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Bulgarian)",
+  "ekeyEvalue": "[BG] {key}: {value} (Bulgarian)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Your payment has been processed successfully. (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Bulgarian)",
+  "errorE": "[BG] Error: $e (Bulgarian)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Bulgarian)",
+  "viewAll1": "[BG] View All (Bulgarian)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Bulgarian)",
+  "editSurveyComingSoon": "[BG] Edit survey - Coming soon! (Bulgarian)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Bulgarian)",
+  "enterOtp": "[BG] Enter OTP (Bulgarian)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Bulgarian)",
+  "payment": "[BG] Payment (Bulgarian)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Automatically confirm new booking requests (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Bulgarian)",
+  "noRouteDefinedForSettingsname": "[BG] No route defined for {settingsName} (Bulgarian)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Bulgarian)",
+  "pleaseSignInToUploadABackground": "[BG] Please sign in to upload a background (Bulgarian)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[BG] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Bulgarian)",
+  "staffAvailability": "[BG] Staff Availability (Bulgarian)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Bulgarian)",
+  "livePlaytime": "[BG] Live Playtime (Bulgarian)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Bulgarian)",
+  "autoconfirmBookings": "[BG] Auto-Confirm Bookings (Bulgarian)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Redirecting to Stripe checkout for Pro plan... (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Bulgarian)",
+  "exportAsCsv": "[BG] Export as CSV (Bulgarian)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Bulgarian)",
+  "deleteFunctionalityComingSoon": "[BG] Delete functionality coming soon! (Bulgarian)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Bulgarian)",
+  "editClient": "[BG] Edit Client (Bulgarian)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Are you sure you want to delete this message? (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Bulgarian)",
+  "referralsAmbassadorreferrals": "[BG] Referrals: {referrals} (Bulgarian)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[BG] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Bulgarian)",
+  "privacyRequestSentToYourParents": "[BG] Privacy request sent to your parents! (Bulgarian)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Bulgarian)",
+  "clientDeletedSuccessfully": "[BG] Client deleted successfully! (Bulgarian)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Bulgarian)",
+  "failedToCancelSubscription": "[BG] Failed to cancel subscription (Bulgarian)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Bulgarian)",
+  "allLanguages": "[BG] All Languages (Bulgarian)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Bulgarian)",
+  "slotDeletedSuccessfully": "[BG] Slot deleted successfully (Bulgarian)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[BG] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Parents must approve before children can join (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Bulgarian)",
+  "subscribeToPro1499mo": "[BG] Subscribe to Pro (€14.99/mo) (Bulgarian)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Business Availability Entry Screen - Coming Soon (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Bulgarian)",
+  "appointmentsListlength": "[BG] Appointments: {count} (Bulgarian)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Bulgarian)",
+  "clearFilters": "[BG] Clear Filters (Bulgarian)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Bulgarian)",
+  "submitBooking": "[BG] Submit Booking (Bulgarian)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Are you sure you want to cancel this appointment? (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Bulgarian)",
+  "noUpcomingBookings": "[BG] No upcoming bookings (Bulgarian)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Bulgarian)",
+  "goBack": "[BG] Go Back (Bulgarian)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Bulgarian)",
+  "setup": "[BG] Setup (Bulgarian)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Bulgarian)",
+  "inviteChild": "[BG] Invite Child (Bulgarian)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Bulgarian)",
+  "goToDashboard": "[BG] Go to Dashboard (Bulgarian)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Bulgarian)",
+  "ambassadorQuotaDashboard": "[BG] Ambassador Quota Dashboard (Bulgarian)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[BG] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Bulgarian)",
+  "referralCode": "[BG] Referral Code (Bulgarian)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[BG] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Bulgarian)",
+  "date": "[BG] Date (Bulgarian)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Bulgarian)",
+  "readOnly": "[BG] Read Only (Bulgarian)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Bulgarian)",
+  "bookingRequest": "[BG] Booking Request (Bulgarian)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Bulgarian)",
+  "advancedReporting": "[BG] • Advanced reporting (Bulgarian)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Bulgarian)",
+  "rooms": "[BG] Rooms (Bulgarian)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Bulgarian)",
+  "copiedToClipboard": "[BG] Copied to clipboard (Bulgarian)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Bulgarian)",
+  "bookingConfirmed": "[BG] Booking Confirmed (Bulgarian)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Bulgarian)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Bulgarian)",
+  "clientAddedSuccessfully": "[BG] Client added successfully! (Bulgarian)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Bulgarian)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Bulgarian)",
+  "backgroundApproved": "[BG] Background approved! (Bulgarian)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Bulgarian)",
+  "familySupport": "[BG] Family Support (Bulgarian)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Bulgarian)",
+  "deletingAccount": "[BG] Deleting account... (Bulgarian)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Bulgarian)",
+  "bookAppointment": "[BG] Book Appointment (Bulgarian)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Bulgarian)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Bulgarian)",
+  "delete1": "[BG] Delete (Bulgarian)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Bulgarian)",
+  "sendBookingInvite": "[BG] Send Booking Invite (Bulgarian)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Bulgarian)",
+  "text": "[BG] Text (Bulgarian)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Bulgarian)",
+  "manageSubscription": "[BG] Manage Subscription (Bulgarian)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Bulgarian)",
+  "requiresInstallFallback": "[BG] Requires Install Fallback (Bulgarian)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Bulgarian)",
+  "paymentConfirmation": "[BG] Payment Confirmation (Bulgarian)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Bulgarian)",
+  "promoAppliedYourNextBillIsFree": "[BG] Promo applied! Your next bill is free. (Bulgarian)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Bulgarian)",
+  "errorLoadingSlots": "[BG] Error loading slots (Bulgarian)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Allow other users to find and join this game (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Business Onboarding Screen - Coming Soon (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Bulgarian)",
+  "activateBusinessProfile": "[BG] Activate Business Profile (Bulgarian)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Bulgarian)",
+  "contentNotFound": "[BG] Content not found (Bulgarian)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Bulgarian)",
+  "pspecialtynpcontactinfo": "[BG] {specialty}\\n{contactInfo} (Bulgarian)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Bulgarian)",
+  "rating": "[BG] Rating (Bulgarian)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Bulgarian)",
+  "messages": "[BG] Messages (Bulgarian)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Bulgarian)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Bulgarian)",
+  "becomeAnAmbassador": "[BG] Become an Ambassador (Bulgarian)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Bulgarian)",
+  "subscribeNow": "[BG] Subscribe Now (Bulgarian)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Bulgarian)",
+  "timeArgsslotformatcontext": "[BG] Time: {time} (Bulgarian)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Bulgarian)",
+  "shareViaWhatsapp": "[BG] Share via WhatsApp (Bulgarian)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Bulgarian)",
+  "users1": "[BG] Users (Bulgarian)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Bulgarian)",
+  "shareLink": "[BG] Share Link (Bulgarian)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[BG] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Bulgarian)",
+  "deleteAppointment": "[BG] Delete Appointment (Bulgarian)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Bulgarian)",
+  "toggleAvailability": "[BG] Toggle Availability (Bulgarian)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Bulgarian)",
+  "changePlan": "[BG] Change Plan (Bulgarian)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Bulgarian)",
+  "errorLoadingStaff": "[BG] Error loading staff (Bulgarian)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Bulgarian)",
+  "updateYourBusinessInformation": "[BG] Update your business information (Bulgarian)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[BG] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Bulgarian)",
+  "parentDashboard": "[BG] Parent Dashboard (Bulgarian)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Bulgarian)",
+  "menu": "[BG] Menu (Bulgarian)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Bulgarian)",
+  "studioBooking": "[BG] Studio Booking (Bulgarian)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Bulgarian)",
+  "about1": "[BG] About (Bulgarian)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Bulgarian)",
+  "multipleChoice": "[BG] Multiple Choice (Bulgarian)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Date: {date} (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Studio booking is only available on web (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Bulgarian)",
+  "errorLoadingBranchesE": "[BG] Error loading branches: $e (Bulgarian)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] \\uD83D\\uDCC5 {dateTime} (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Bulgarian)",
+  "none": "[BG] None (Bulgarian)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Bulgarian)",
+  "failedToUpdateConsentE": "[BG] Failed to update consent: $e (Bulgarian)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Bulgarian)",
+  "welcome1": "[BG] Welcome (Bulgarian)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Bulgarian)",
+  "failedToCreateSessionE": "[BG] Failed to create session: $e (Bulgarian)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Bulgarian)",
+  "inviteContact": "[BG] Invite Contact (Bulgarian)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Bulgarian)",
+  "surveyEditor": "[BG] Survey Editor (Bulgarian)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Bulgarian)",
+  "failedToStartBasicSubscriptionE": "[BG] Failed to start Basic subscription: $e (Bulgarian)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Bulgarian)",
+  "mySchedule": "[BG] My Schedule (Bulgarian)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Bulgarian)",
+  "studioDashboard": "[BG] Studio Dashboard (Bulgarian)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Bulgarian)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[BG] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[BG] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Bulgarian)",
+  "settingsSavedSuccessfully": "[BG] Settings saved successfully! (Bulgarian)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Bulgarian)",
+  "linkCopiedToClipboard": "[BG] Link copied to clipboard! (Bulgarian)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Bulgarian)",
+  "accept1": "[BG] Accept (Bulgarian)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Bulgarian)",
+  "noAvailableSlots": "[BG] No available slots (Bulgarian)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Bulgarian)",
+  "makeGamePublic": "[BG] Make Game Public (Bulgarian)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Permission {category} updated to $newValue (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Bulgarian)",
+  "roomDeletedSuccessfully": "[BG] Room deleted successfully! (Bulgarian)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Bulgarian)",
+  "businessCalendar": "[BG] Business Calendar (Bulgarian)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Bulgarian)",
+  "addAvailability": "[BG] Add Availability (Bulgarian)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Bulgarian)",
+  "ambassadorOnboarding": "[BG] Ambassador Onboarding (Bulgarian)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Bulgarian)",
+  "phoneProfileasyncphone": "[BG] Phone: {phone} (Bulgarian)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Bulgarian)",
+  "addNewRoom": "[BG] Add New Room (Bulgarian)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Bulgarian)",
+  "requireParentApproval": "[BG] Require Parent Approval (Bulgarian)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Bulgarian)",
+  "closed": "[BG] Closed (Bulgarian)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Bulgarian)",
+  "exportAsPdf": "[BG] Export as PDF (Bulgarian)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Bulgarian)",
+  "enableVibration": "[BG] Enable Vibration (Bulgarian)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Bulgarian)",
+  "toAvailendformatcontext": "[BG] To: {endTime} (Bulgarian)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Bulgarian)",
+  "yourUpgradeCodeUpgradecode": "[BG] Your upgrade code: $upgradeCode (Bulgarian)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[BG] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Bulgarian)",
+  "country": "[BG] Country (Bulgarian)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[BG] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Bulgarian)",
+  "staffArgsstaffdisplayname": "[BG] Staff: {staffName} (Bulgarian)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Bulgarian)",
+  "revokeConsent": "[BG] Revoke Consent (Bulgarian)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Bulgarian)",
+  "settings1": "[BG] Settings (Bulgarian)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Bulgarian)",
+  "cancel1": "[BG] Cancel (Bulgarian)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Subscription activated successfully! (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[BG] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Bulgarian)",
+  "broadcast": "[BG] Broadcast (Bulgarian)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Bulgarian)",
+  "noEventsScheduledThisWeek": "[BG] No events scheduled this week (Bulgarian)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Bulgarian)",
+  "googleCalendar": "[BG] Google Calendar (Bulgarian)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Bulgarian)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Bulgarian)",
+  "childDashboard": "[BG] Child Dashboard (Bulgarian)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Bulgarian)",
+  "failedToUploadBackgroundE": "[BG] Failed to upload background: $e (Bulgarian)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[BG] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[BG] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[BG] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Bulgarian)",
+  "noAppointments": "[BG] No appointments (Bulgarian)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Bulgarian)",
+  "unlimitedBookingsPerWeek": "[BG] • Unlimited bookings per week (Bulgarian)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Bulgarian)",
+  "scheduledAtScheduledat": "[BG] Scheduled at: $scheduledAt (Bulgarian)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Bulgarian)",
+  "selectStaff": "[BG] Select Staff (Bulgarian)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Subscription cancelled successfully (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Bulgarian)",
+  "cancelAppointment": "[BG] Cancel Appointment (Bulgarian)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[BG] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Bulgarian)",
+  "businessSignup": "[BG] Business Signup (Bulgarian)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Business Completion Screen - Coming Soon (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Bulgarian)",
+  "createGame1": "[BG] Create Game (Bulgarian)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Bulgarian)",
+  "valuetoint": "[BG] {value} (Bulgarian)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Bulgarian)",
+  "pleaseEnterAPromoCode": "[BG] Please enter a promo code (Bulgarian)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Bulgarian)",
+  "errorLoadingAvailabilityE": "[BG] Error loading availability: $e (Bulgarian)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Bulgarian)",
+  "parentalControls": "[BG] Parental Controls (Bulgarian)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Bulgarian)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Bulgarian)",
+  "childLinkedSuccessfully": "[BG] Child linked successfully! (Bulgarian)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Bulgarian)",
+  "create": "[BG] Create (Bulgarian)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Bulgarian)",
+  "noExternalMeetingsFound": "[BG] No external meetings found. (Bulgarian)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Bulgarian)",
+  "staffSelectionstaffdisplayname": "[BG] Staff: {staffName} (Bulgarian)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[BG] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Bulgarian)",
+  "schedulerScreen": "[BG] Scheduler Screen (Bulgarian)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Bulgarian)",
+  "clientUpdatedSuccessfully": "[BG] Client updated successfully! (Bulgarian)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Bulgarian)",
+  "surveyResponses": "[BG] Survey Responses (Bulgarian)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Bulgarian)",
+  "syncToOutlook": "[BG] Sync to Outlook (Bulgarian)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Bulgarian)",
+  "saveChanges": "[BG] Save Changes (Bulgarian)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Bulgarian)",
+  "pickTime": "[BG] Pick Time (Bulgarian)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Bulgarian)",
+  "registrationFailedEtostring": "[BG] Registration failed: {error} (Bulgarian)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Bulgarian)",
+  "analytics": "[BG] Analytics (Bulgarian)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Bulgarian)",
+  "errorLoadingEvents": "[BG] Error loading events (Bulgarian)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[BG] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[BG] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Bulgarian)",
+  "success1": "[BG] Success (Bulgarian)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[BG] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Bulgarian)",
+  "fromAvailstartformatcontext": "[BG] From: {startTime} (Bulgarian)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Bulgarian)",
+  "readWrite": "[BG] Read & Write (Bulgarian)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Redirecting to Stripe checkout for Basic plan... (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[BG] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Bulgarian)",
+  "pickDate": "[BG] Pick Date (Bulgarian)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Bulgarian)",
+  "chatBooking": "[BG] Chat Booking (Bulgarian)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Bulgarian)",
+  "noQuestionsAdded": "[BG] No questions added (Bulgarian)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[BG] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[BG] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Bulgarian)",
+  "typeOpenCall": "[BG] Type: Open Call (Bulgarian)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[BG] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[BG] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Bulgarian)",
+  "invoiceCreatedSuccessfully": "[BG] Invoice created successfully! (Bulgarian)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Bulgarian)",
+  "noTimeSeriesDataAvailable": "[BG] No time series data available (Bulgarian)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[BG] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[BG] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Bulgarian)",
+  "failedToSendPrivacyRequestE": "[BG] Failed to send privacy request: $e (Bulgarian)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Bulgarian)",
+  "chooseYourPlan": "[BG] Choose Your Plan (Bulgarian)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Bulgarian)",
+  "playtimeManagement": "[BG] Playtime Management (Bulgarian)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Bulgarian)",
+  "availability": "[BG] Availability (Bulgarian)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Bulgarian)",
+  "eventCreated": "[BG] Event created (Bulgarian)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Bulgarian)",
+  "subscribeToBasic499mo": "[BG] Subscribe to Basic (€4.99/mo) (Bulgarian)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Bulgarian)",
+  "completion": "[BG] Completion (Bulgarian)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Bulgarian)",
+  "supportTicketSubmitted": "[BG] Support ticket submitted (Bulgarian)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Bulgarian)",
+  "monetizationSettings": "[BG] Monetization Settings (Bulgarian)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Bulgarian)",
+  "noBookingsFound": "[BG] No bookings found (Bulgarian)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[BG] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Bulgarian)",
+  "deleteSurvey": "[BG] Delete Survey (Bulgarian)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Bulgarian)",
+  "gameApprovedSuccessfully": "[BG] Game approved successfully! (Bulgarian)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Bulgarian)",
+  "errorLoadingPermissionsError": "[BG] Error loading permissions: $error (Bulgarian)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Bulgarian)",
+  "referrals": "[BG] Referrals (Bulgarian)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Bulgarian)",
+  "crm": "[BG] CRM (Bulgarian)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Bulgarian)",
+  "gameRejected": "[BG] Game rejected (Bulgarian)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Bulgarian)",
+  "appointments": "[BG] Appointments (Bulgarian)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Bulgarian)",
+  "onboardingScreen": "[BG] Onboarding Screen (Bulgarian)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Bulgarian)",
+  "welcomeToYourStudio": "[BG] Welcome to your studio (Bulgarian)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Bulgarian)",
+  "update": "[BG] Update (Bulgarian)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Bulgarian)",
+  "retry1": "[BG] Retry (Bulgarian)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Bulgarian)",
+  "booking": "[BG] Booking (Bulgarian)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Bulgarian)",
+  "parentalSettings": "[BG] Parental Settings (Bulgarian)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Bulgarian)",
+  "language": "[BG] Language (Bulgarian)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Bulgarian)",
+  "deleteSlot": "[BG] Delete Slot (Bulgarian)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[BG] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[BG] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Bulgarian)",
+  "createNewGame": "[BG] Create New Game (Bulgarian)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Bulgarian)",
+  "next1": "[BG] Next (Bulgarian)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Bulgarian)",
+  "backgroundUploadedSuccessfully": "[BG] Background uploaded successfully! (Bulgarian)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Bulgarian)",
+  "noAppointmentRequestsFound": "[BG] No appointment requests found. (Bulgarian)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Bulgarian)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Bulgarian)",
+  "restrictMatureContent": "[BG] Restrict mature content (Bulgarian)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Bulgarian)",
+  "ambassadors": "[BG] Ambassadors (Bulgarian)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Bulgarian)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Bulgarian)",
+  "paymentWasCancelled": "[BG] Payment was cancelled (Bulgarian)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Bulgarian)",
+  "clearAll": "[BG] Clear All (Bulgarian)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Bulgarian)",
+  "viewDetails": "[BG] View Details (Bulgarian)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Bulgarian)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Bulgarian)",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Bulgarian)",
+  "failedToCreateGameE": "[BG] Failed to create game: $e (Bulgarian)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Bulgarian)",
+  "noChartDataAvailable": "[BG] No chart data available (Bulgarian)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Bulgarian)",
+  "phonebasedBookingSystem": "[BG] • Phone-based booking system (Bulgarian)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Bulgarian)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Bulgarian)",
+  "invoices": "[BG] Invoices (Bulgarian)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Bulgarian)",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Bulgarian)",
+  "scheduledAtArgsscheduledat": "[BG] Scheduled at: {scheduledAt} (Bulgarian)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Duration: {duration} minutes (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Bulgarian)",
+  "tryAgain": "[BG] Try Again (Bulgarian)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Bulgarian)",
+  "deleteBackground": "[BG] Delete Background (Bulgarian)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Bulgarian)",
+  "currentTierTiertouppercase": "[BG] Current Tier: {tier} (Bulgarian)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[BG] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] No clients found. Add your first client! (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[BG] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[BG] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Bulgarian)",
+  "appointmentRequests": "[BG] Appointment Requests (Bulgarian)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Bulgarian)",
+  "forward": "[BG] Forward (Bulgarian)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Bulgarian)",
+  "roomAddedSuccessfully": "[BG] Room added successfully! (Bulgarian)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Bulgarian)",
+  "option": "[BG] • $option (Bulgarian)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Bulgarian)",
+  "responseIndex1": "[BG] Response #{number} (Bulgarian)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Bulgarian)",
+  "crmDashboardWithAnalytics": "[BG] • CRM dashboard with analytics (Bulgarian)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Bulgarian)",
+  "contentLibrary1": "[BG] Content Library (Bulgarian)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Bulgarian)",
+  "reply": "[BG] Reply (Bulgarian)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Bulgarian)",
+  "subscriptionManagement": "[BG] Subscription Management (Bulgarian)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Monetization settings will be implemented here (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Bulgarian)",
+  "failedToApplyPromoCodeE": "[BG] Failed to apply promo code: $e (Bulgarian)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[BG] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Bulgarian)",
+  "localizationContribution": "[BG] Localization Contribution (Bulgarian)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Bulgarian)",
+  "parentalConsent": "[BG] Parental Consent (Bulgarian)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Bulgarian)",
+  "businessSignupScreenComingSoon": "[BG] Business Signup Screen - Coming Soon (Bulgarian)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Bulgarian)",
+  "REDACTED_TOKEN": "[BG] Are you sure you want to delete this appointment? (Bulgarian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Bulgarian)",
+  "syncAppointment": "[BG] Sync Appointment (Bulgarian)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Bulgarian)",
+  "iConsent": "[BG] I Consent (Bulgarian)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Bulgarian)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Bulgarian)",
+  "businessSetupScreenComingSoon": "[BG] Business Setup Screen - Coming Soon (Bulgarian)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Bulgarian)",
+  "edit1": "[BG] Edit (Bulgarian)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Bulgarian)",
+  "noEventsScheduledThisMonth": "[BG] No events scheduled this month (Bulgarian)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Bulgarian)",
+  "businessDashboard": "[BG] Business Dashboard (Bulgarian)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Bulgarian)",
+  "noMessagesFound": "[BG] No messages found. (Bulgarian)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[BG] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Bulgarian)",
+  "manageStaffAvailability": "[BG] Manage Staff Availability (Bulgarian)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Bulgarian)",
+  "noMissingTranslations": "[BG] No missing translations (Bulgarian)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Bulgarian)",
+  "skip": "[BG] Skip (Bulgarian)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[BG] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Bulgarian)",
+  "errorLoadingReferralCode": "[BG] Error loading referral code (Bulgarian)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Bulgarian)",
+  "allCountries": "[BG] All Countries (Bulgarian)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Bulgarian)",
+  "deleteGame": "[BG] Delete Game (Bulgarian)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Bulgarian)",
+  "staffManagementTools": "[BG] • Staff management tools (Bulgarian)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Bulgarian)",
+  "deleteMessage": "[BG] Delete Message (Bulgarian)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Bulgarian)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[BG] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Bulgarian)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Bulgarian)",
+  "openingCustomerPortal": "[BG] Opening customer portal... (Bulgarian)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Bulgarian)",
+  "signOut": "[BG] Sign Out (Bulgarian)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Bulgarian)",
+  "nameProfilename": "[BG] Name: {name} (Bulgarian)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Bulgarian)",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Bulgarian)",
+  "upgradeToBusiness": "[BG] Upgrade to Business (Bulgarian)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Bulgarian)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Bulgarian)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Bulgarian)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Bulgarian)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Bulgarian)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Bulgarian)",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Bulgarian)",
+  "viewResponses": "[BG] View Responses (Bulgarian)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Bulgarian)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Bulgarian)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Bulgarian)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Bulgarian)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Bulgarian)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Bulgarian)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Bulgarian)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Bulgarian)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Bulgarian)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Bulgarian)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

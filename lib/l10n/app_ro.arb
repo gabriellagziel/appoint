@@ -1,2862 +1,2862 @@
 {
   "@@locale": "ro",
-  "refresh": "Reîmprospătează",
+  "refresh": "[RO] Reîmprospătează",
   "@refresh": {
     "description": "Description"
   },
-  "home": "Acasă",
+  "home": "[RO] Acasă",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "Încă nu există sesiuni",
+  "noSessionsYet": "[RO] Încă nu există sesiuni",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "OK",
+  "ok": "[RO] OK",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "Alege modul",
+  "playtimeLandingChooseMode": "[RO] Alege modul",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "Înregistrează-te",
+  "signUp": "[RO] Înregistrează-te",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "Programează mesaj",
+  "scheduleMessage": "[RO] Programează mesaj",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "[RO] Decline",
+  "decline": "[RO] [RO] Decline",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[RO] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "Autentificare",
+  "login": "[RO] Autentificare",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "Alege prieteni",
+  "playtimeChooseFriends": "[RO] Alege prieteni",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "[RO] No invites",
+  "noInvites": "[RO] [RO] No invites",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "[RO] Choose a time",
+  "playtimeChooseTime": "[RO] [RO] Choose a time",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "Succes",
+  "success": "[RO] Succes",
   "@success": {
     "description": "Description"
   },
-  "undo": "Anulează",
+  "undo": "[RO] Anulează",
   "@undo": {
     "description": "Description"
   },
-  "opened": "Deschis",
+  "opened": "[RO] Deschis",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "Creează sesiune virtuală",
+  "createVirtualSession": "[RO] Creează sesiune virtuală",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "Mesaj trimis cu succes",
+  "messageSentSuccessfully": "[RO] Mesaj trimis cu succes",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "Repetă",
+  "redo": "[RO] Repetă",
   "@redo": {
     "description": "Description"
   },
-  "next": "[RO] Next",
+  "next": "[RO] [RO] Next",
   "@next": {
     "description": "Description"
   },
-  "search": "Caută",
+  "search": "[RO] Caută",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "[RO] Are you sure you want to cancel this invite?",
+  "cancelInviteConfirmation": "[RO] [RO] Are you sure you want to cancel this invite?",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "[RO] Created",
+  "created": "[RO] [RO] Created",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "Revocă acces",
+  "revokeAccess": "[RO] Revocă acces",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "Salvează grup pentru recunoaștere",
+  "saveGroupForRecognition": "[RO] Salvează grup pentru recunoaștere",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "[RO] Live playtime scheduled!",
+  "playtimeLiveScheduled": "[RO] [RO] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "[RO] Are you sure you want to revoke access?",
+  "revokeAccessConfirmation": "[RO] [RO] Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "Descarcă",
+  "download": "[RO] Descarcă",
   "@download": {
     "description": "Description"
   },
-  "password": "Parolă",
+  "password": "[RO] Parolă",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "[RO] Error loading family links",
+  "errorLoadingFamilyLinks": "[RO] [RO] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "Anulează",
+  "cancel": "[RO] Anulează",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "Creează Playtime",
+  "playtimeCreate": "[RO] Creează Playtime",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "[RO] Failed to action privacy request",
+  "failedToActionPrivacyRequest": "[RO] [RO] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "Titlul aplicației",
+  "appTitle": "[RO] Titlul aplicației",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "Acceptă",
+  "accept": "[RO] Acceptă",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "Mod virtual",
+  "playtimeModeVirtual": "[RO] Mod virtual",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "Descriere Playtime",
+  "playtimeDescription": "[RO] Descriere Playtime",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "Șterge",
+  "delete": "[RO] Șterge",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "Sesiune virtuală începută",
+  "playtimeVirtualStarted": "[RO] Sesiune virtuală începută",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "Creează primul tău joc",
+  "createYourFirstGame": "[RO] Creează primul tău joc",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "Participanți",
+  "participants": "[RO] Participanți",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "[RO] Recipients",
+  "recipients": "[RO] [RO] Recipients",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "[RO] No results found",
+  "noResults": "[RO] [RO] No results found",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "Da",
+  "yes": "[RO] Da",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "[RO] Invite",
+  "invite": "[RO] [RO] Invite",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "Mod live",
+  "playtimeModeLive": "[RO] Mod live",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "[RO] Done",
+  "done": "[RO] [RO] Done",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "Mesaj implicit pentru distribuire",
+  "defaultShareMessage": "[RO] Mesaj implicit pentru distribuire",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "Nu",
+  "no": "[RO] Nu",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "Centrul Playtime",
+  "playtimeHub": "[RO] Centrul Playtime",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "Creează sesiune live",
+  "createLiveSession": "[RO] Creează sesiune live",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "Activează notificări",
+  "enableNotifications": "[RO] Activează notificări",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "[RO] Invited",
+  "invited": "[RO] [RO] Invited",
   "@invited": {
     "description": "Description"
   },
-  "content": "[RO] Content",
+  "content": "[RO] [RO] Content",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "[RO] Meeting shared successfully",
+  "meetingSharedSuccessfully": "[RO] [RO] Meeting shared successfully",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "[RO] Welcome to Playtime",
+  "welcomeToPlaytime": "[RO] [RO] Welcome to Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "[RO] View All",
+  "viewAll": "[RO] [RO] View All",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "Playtime virtual",
+  "playtimeVirtual": "[RO] Playtime virtual",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "[RO] Staff screen coming soon",
+  "staffScreenTBD": "[RO] [RO] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "Decupează",
+  "cut": "[RO] Decupează",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "[RO] Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "[RO] [RO] Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "Reîncearcă",
+  "retry": "[RO] Reîncearcă",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "Compune mesaj broadcast",
+  "composeBroadcastMessage": "[RO] Compune mesaj broadcast",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "Trimite acum",
+  "sendNow": "[RO] Trimite acum",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "Încă nu există jocuri",
+  "noGamesYet": "[RO] Încă nu există jocuri",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "Selectează",
+  "select": "[RO] Selectează",
   "@select": {
     "description": "Description"
   },
-  "about": "Despre",
+  "about": "[RO] Despre",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Alege",
+  "choose": "[RO] Alege",
   "@choose": {
     "description": "Description"
   },
-  "profile": "[RO] Profile",
+  "profile": "[RO] [RO] Profile",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "[RO] Remove Child",
+  "removeChild": "[RO] [RO] Remove Child",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "Stare",
+  "status": "[RO] Stare",
   "@status": {
     "description": "status description"
   },
-  "logout": "[RO] Logout",
+  "logout": "[RO] [RO] Logout",
   "@logout": {
     "description": "Description"
   },
-  "paste": "Lipește",
+  "paste": "[RO] Lipește",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "[RO] Welcome",
+  "welcome": "[RO] [RO] Welcome",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "Creează sesiune",
+  "playtimeCreateSession": "[RO] Creează sesiune",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "Membri familie",
+  "familyMembers": "[RO] Membri familie",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "Încarcă",
+  "upload": "[RO] Încarcă",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "[RO] Upcoming Sessions",
+  "upcomingSessions": "[RO] [RO] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "[RO] Enter group name",
+  "enterGroupName": "[RO] [RO] Enter group name",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "[RO] Confirm",
+  "confirm": "[RO] [RO] Confirm",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "Playtime live",
+  "playtimeLive": "[RO] Playtime live",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "[RO] Error loading invites",
+  "errorLoadingInvites": "[RO] [RO] Error loading invites",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "[RO] Targeting Filters",
+  "targetingFilters": "[RO] [RO] Targeting Filters",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "Alege video",
+  "pickVideo": "[RO] Alege video",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "Joc șters",
+  "playtimeGameDeleted": "[RO] Joc șters",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "Programează pentru mai târziu",
+  "scheduleForLater": "[RO] Programează pentru mai târziu",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "[RO] Access revoked successfully",
+  "accessRevokedSuccessfully": "[RO] [RO] Access revoked successfully",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "Tip",
+  "type": "[RO] Tip",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "Verificare permisiuni",
+  "checkingPermissions": "[RO] Verificare permisiuni",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "Copiază",
+  "copy": "[RO] Copiază",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "Da, anulează",
+  "yesCancel": "[RO] Da, anulează",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "Email",
+  "email": "[RO] Email",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[RO] Share on WhatsApp",
+  "shareOnWhatsApp": "[RO] [RO] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "Setări notificări",
+  "notificationSettings": "[RO] Setări notificări",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "[RO] My Profile",
+  "myProfile": "[RO] [RO] My Profile",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "Revocă",
+  "revoke": "[RO] Revocă",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "Fără mesaje broadcast",
+  "noBroadcastMessages": "[RO] Fără mesaje broadcast",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "Tip cerere",
+  "requestType": "[RO] Tip cerere",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "Notificări",
+  "notifications": "[RO] Notificări",
   "@notifications": {
     "description": "Description"
   },
-  "details": "Detalii",
+  "details": "[RO] Detalii",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "[RO] Cancel Invite",
+  "cancelInvite": "[RO] [RO] Cancel Invite",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "Creează nou",
+  "createNew": "[RO] Creează nou",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "Setări",
+  "settings": "[RO] Setări",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "[RO] Reject",
+  "playtimeReject": "[RO] [RO] Reject",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "[RO] Error loading profile",
+  "errorLoadingProfile": "[RO] [RO] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "Editează",
+  "edit": "[RO] Editează",
   "@edit": {
     "description": "Description"
   },
-  "add": "Adaugă",
+  "add": "[RO] Adaugă",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "[RO] Game approved",
+  "playtimeGameApproved": "[RO] [RO] Game approved",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "[RO] Forgot Password?",
+  "forgotPassword": "[RO] [RO] Forgot Password?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "Panou familie",
+  "familyDashboard": "[RO] Panou familie",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "Se încarcă",
+  "loading": "[RO] Se încarcă",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "Acțiuni rapide",
+  "quickActions": "[RO] Acțiuni rapide",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "Titlu Playtime",
+  "playtimeTitle": "[RO] Titlu Playtime",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "OTP retrimis cu succes",
+  "otpResentSuccessfully": "[RO] OTP retrimis cu succes",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "[RO] Error checking permissions",
+  "errorCheckingPermissions": "[RO] [RO] Error checking permissions",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "[RO] Client screen coming soon",
+  "clientScreenTBD": "[RO] [RO] Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "[RO] FCM Token",
+  "fcmToken": "[RO] [RO] FCM Token",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "[RO] Pick Image",
+  "pickImage": "[RO] [RO] Pick Image",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "[RO] Previous",
+  "previous": "[RO] [RO] Previous",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[RO] No profile found",
+  "noProfileFound": "[RO] [RO] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "Fără membri de familie",
+  "noFamilyMembersYet": "[RO] Fără membri de familie",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "[RO] Media (Optional)",
+  "mediaOptional": "[RO] [RO] Media (Optional)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "[RO] Message saved successfully",
+  "messageSavedSuccessfully": "[RO] [RO] Message saved successfully",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "[RO] Scheduled for",
+  "scheduledFor": "[RO] [RO] Scheduled for",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "[RO] Dashboard",
+  "dashboard": "[RO] [RO] Dashboard",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "Fără permisiune pentru broadcast",
+  "noPermissionForBroadcast": "[RO] Fără permisiune pentru broadcast",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[RO] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "[RO] Invite Details",
+  "inviteDetail": "[RO] [RO] Invite Details",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "[RO] Scheduled",
+  "scheduled": "[RO] [RO] Scheduled",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "Nu s-a putut retrimite OTP",
+  "failedToResendOtp": "[RO] Nu s-a putut retrimite OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "Se programează",
+  "scheduling": "[RO] Se programează",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "Eroare la salvarea mesajului",
+  "errorSavingMessage": "[RO] Eroare la salvarea mesajului",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "Salvează",
+  "save": "[RO] Salvează",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "Aprobă Playtime",
+  "playtimeApprove": "[RO] Aprobă Playtime",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "Creează prima sesiune",
+  "createYourFirstSession": "[RO] Creează prima sesiune",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "[RO] Game rejected",
+  "playtimeGameRejected": "[RO] [RO] Game rejected",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "[RO] Failed to revoke access",
+  "failedToRevokeAccess": "[RO] [RO] Failed to revoke access",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "Jocuri recente",
+  "recentGames": "[RO] Jocuri recente",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "[RO] Customize Message",
+  "customizeMessage": "[RO] [RO] Customize Message",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "[RO] Failed to cancel invite",
+  "failedToCancelInvite": "[RO] [RO] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "Eroare la trimiterea mesajului",
+  "errorSendingMessage": "[RO] Eroare la trimiterea mesajului",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "[RO] Confirm Password",
+  "confirmPassword": "[RO] [RO] Confirm Password",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "[RO] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[RO] [RO] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "[RO] Connected Children",
+  "connectedChildren": "[RO] [RO] Connected Children",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "Partajează",
+  "share": "[RO] Partajează",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "[RO] Enter game name",
+  "playtimeEnterGameName": "[RO] [RO] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "[RO] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[RO] [RO] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "[RO] My Invites",
+  "myInvites": "[RO] [RO] My Invites",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "[RO] Create Game",
+  "createGame": "[RO] [RO] Create Game",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[RO] Group Name (Optional)",
+  "groupNameOptional": "[RO] [RO] Group Name (Optional)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "[RO] No playtime sessions found.",
+  "playtimeNoSessions": "[RO] [RO] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[RO] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[RO] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[RO] [RO] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "[RO] Close",
+  "close": "[RO] [RO] Close",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "[RO] Known group detected",
+  "knownGroupDetected": "[RO] [RO] Known group detected",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "[RO] Back",
+  "back": "[RO] [RO] Back",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "[RO] Choose a game",
+  "playtimeChooseGame": "[RO] [RO] Choose a game",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "[RO] Manage Permissions",
+  "managePermissions": "[RO] [RO] Manage Permissions",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "[RO] Poll Options",
+  "pollOptions": "[RO] [RO] Poll Options",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "[RO] Clicked",
+  "clicked": "[RO] [RO] Clicked",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "[RO] Link",
+  "link": "[RO] [RO] Link",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "[RO] Your meeting is ready! Join now",
+  "meetingReadyMessage": "[RO] [RO] Your meeting is ready! Join now",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "[RO] Pending Invites",
+  "pendingInvites": "[RO] [RO] Pending Invites",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "[RO] Status:",
+  "statusColon": "[RO] [RO] Status:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[RO] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[RO] [RO] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[RO] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[RO] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[RO] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[RO] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[RO] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[RO] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[RO] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[RO] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[RO] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[RO] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[RO] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[RO] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[RO] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[RO] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[RO] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[RO] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[RO] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[RO] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Romanian)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Romanian)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Romanian)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Romanian)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[RO] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[RO] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[RO] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[RO] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[RO] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[RO] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[RO] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[RO] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[RO] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[RO] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[RO] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[RO] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[RO] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[RO] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[RO] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[RO] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[RO] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[RO] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[RO] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[RO] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[RO] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[RO] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[RO] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[RO] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[RO] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[RO] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[RO] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[RO] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[RO] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[RO] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[RO] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[RO] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[RO] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[RO] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[RO] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[RO] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[RO] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[RO] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[RO] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[RO] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[RO] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[RO] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[RO] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[RO] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[RO] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[RO] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[RO] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[RO] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[RO] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[RO] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[RO] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[RO] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[RO] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[RO] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[RO] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[RO] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[RO] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[RO] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[RO] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[RO] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[RO] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[RO] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Romanian)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Romanian)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Romanian)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Romanian)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Romanian)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Romanian)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Romanian)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Romanian)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[RO] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Romanian)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Romanian)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Romanian)",
+  "upload1": "[RO] Upload (Romanian)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Romanian)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Romanian)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Romanian)",
+  "REDACTED_TOKEN": "[RO] Virtual session created! Inviting friends... (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Romanian)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Romanian)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Romanian)",
+  "rewards": "[RO] Rewards (Romanian)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Romanian)",
+  "time": "[RO] Time (Romanian)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[RO] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Romanian)",
+  "noSlots": "[RO] No slots (Romanian)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Romanian)",
+  "signIn": "[RO] Sign In (Romanian)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Romanian)",
+  "homeFeedScreen": "[RO] Home Feed Screen (Romanian)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Romanian)",
+  "selectLocation": "[RO] Select Location (Romanian)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Romanian)",
+  "noTicketsYet": "[RO] No tickets yet (Romanian)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Romanian)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Romanian)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Romanian)",
+  "subscriptionUnavailable": "[RO] Subscription unavailable (Romanian)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Romanian)",
+  "confirmBooking": "[RO] Confirm Booking (Romanian)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Romanian)",
+  "failedToUpdatePermissionE": "[RO] Failed to update permission: $e (Romanian)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Romanian)",
+  "reject": "[RO] Reject (Romanian)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Romanian)",
+  "REDACTED_TOKEN": "[RO] Ambassador Status: {ambassadorStatus} (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[RO] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Romanian)",
+  "checkingSubscription": "[RO] Checking subscription... (Romanian)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Romanian)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Romanian)",
+  "noContentAvailableYet": "[RO] No content available yet (Romanian)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Romanian)",
+  "resolve": "[RO] Resolve (Romanian)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Romanian)",
+  "errorLoadingSurveysError": "[RO] Error loading surveys: $error (Romanian)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[RO] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Romanian)",
+  "getHelpWithYourAccount": "[RO] Get help with your account (Romanian)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Romanian)",
+  "pay": "[RO] Pay (Romanian)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[RO] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Romanian)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Romanian)",
+  "changesSavedSuccessfully": "[RO] Changes saved successfully! (Romanian)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Romanian)",
+  "createNewInvoice": "[RO] Create New Invoice (Romanian)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Romanian)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Romanian)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Romanian)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Romanian)",
+  "profileSaved": "[RO] Profile saved! (Romanian)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Romanian)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Romanian)",
+  "valuetointk": "[RO] \\${value}K (Romanian)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Romanian)",
+  "deleteAccount": "[RO] Delete Account (Romanian)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Romanian)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Romanian)",
+  "businessOnboarding": "[RO] Business Onboarding (Romanian)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Romanian)",
+  "addNewClient": "[RO] Add New Client (Romanian)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Romanian)",
+  "darkMode": "[RO] Dark Mode (Romanian)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[RO] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[RO] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Romanian)",
+  "REDACTED_TOKEN": "[RO] You will receive a confirmation email shortly. (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Romanian)",
+  "addQuestion": "[RO] Add Question (Romanian)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Romanian)",
+  "privacyPolicy": "[RO] Privacy Policy (Romanian)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Romanian)",
+  "branchesLengthBranches": "[RO] {branchCount} branches (Romanian)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Romanian)",
+  "join": "[RO] Join (Romanian)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Romanian)",
+  "businessSubscription": "[RO] Business Subscription (Romanian)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Romanian)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[RO] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Romanian)",
+  "surveyManagement": "[RO] Survey Management (Romanian)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[RO] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Romanian)",
+  "noRoomsFoundAddYourFirstRoom": "[RO] No rooms found. Add your first room! (Romanian)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Romanian)",
+  "readOurPrivacyPolicy": "[RO] Read our privacy policy (Romanian)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Romanian)",
+  "couldNotOpenPrivacyPolicy": "[RO] Could not open privacy policy (Romanian)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Romanian)",
+  "refresh1": "[RO] Refresh (Romanian)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Romanian)",
+  "roomUpdatedSuccessfully": "[RO] Room updated successfully! (Romanian)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Romanian)",
+  "contentDetail": "[RO] Content Detail (Romanian)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Romanian)",
+  "cancelSubscription": "[RO] Cancel Subscription (Romanian)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Romanian)",
+  "REDACTED_TOKEN": "[RO] Successfully registered as Ambassador! (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Romanian)",
+  "save1": "[RO] Save (Romanian)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Romanian)",
+  "copy1": "[RO] Copy (Romanian)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Romanian)",
+  "failedToSendInvitationE": "[RO] Failed to send invitation: $e (Romanian)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Romanian)",
+  "surveyScore": "[RO] Survey Score (Romanian)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[RO] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Romanian)",
+  "noAppointmentsFound": "[RO] No appointments found. (Romanian)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Romanian)",
+  "responseDetail": "[RO] Response Detail (Romanian)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Romanian)",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Romanian)",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Romanian)",
+  "failedToStartProSubscriptionE": "[RO] Failed to start Pro subscription: $e (Romanian)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Romanian)",
+  "REDACTED_TOKEN": "[RO] Business Dashboard Entry Screen - Coming Soon (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Romanian)",
+  "contentFilter": "[RO] Content Filter (Romanian)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Romanian)",
+  "helpSupport": "[RO] Help & Support (Romanian)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Romanian)",
+  "editRoom": "[RO] Edit Room (Romanian)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[RO] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[RO] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Romanian)",
+  "REDACTED_TOKEN": "[RO] Business CRM Entry Screen - Coming Soon (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[RO] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[RO] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Romanian)",
+  "errorLoadingDashboardError": "[RO] Error loading dashboard: $error (Romanian)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Romanian)",
+  "gameDeletedSuccessfully": "[RO] Game deleted successfully! (Romanian)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Romanian)",
+  "viewResponsesComingSoon": "[RO] View responses - Coming soon! (Romanian)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[RO] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Romanian)",
+  "errorLoadingRewards": "[RO] Error loading rewards (Romanian)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Romanian)",
+  "failedToDeleteAccountE": "[RO] Failed to delete account: $e (Romanian)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Romanian)",
+  "invited1": "[RO] Invited (Romanian)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Romanian)",
+  "noBranchesAvailable": "[RO] No branches available (Romanian)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Romanian)",
+  "errorError": "[RO] Error: $error (Romanian)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Romanian)",
+  "noEvents": "[RO] No events (Romanian)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Romanian)",
+  "gameCreatedSuccessfully": "[RO] Game created successfully! (Romanian)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Romanian)",
+  "add1": "[RO] Add (Romanian)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[RO] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Romanian)",
+  "eventstarttimeEventendtime": "[RO] {startTime} - {endTime} (Romanian)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Romanian)",
+  "allowPlaytime": "[RO] Allow Playtime (Romanian)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Romanian)",
+  "clients": "[RO] Clients (Romanian)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Romanian)",
+  "noAmbassadorDataAvailable": "[RO] No ambassador data available (Romanian)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Romanian)",
+  "backgroundDeletedSuccessfully": "[RO] Background deleted successfully! (Romanian)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Romanian)",
+  "errorSnapshoterror": "[RO] Error: {error} (Romanian)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Romanian)",
+  "noAnalyticsDataAvailableYet": "[RO] No analytics data available yet. (Romanian)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Romanian)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Romanian)",
+  "REDACTED_TOKEN": "[RO] Business Phone Booking Entry Screen - Coming Soon (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Romanian)",
+  "verification": "[RO] Verification (Romanian)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Romanian)",
+  "copyLink": "[RO] Copy Link (Romanian)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Romanian)",
+  "dashboard1": "[RO] Dashboard (Romanian)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Romanian)",
+  "manageChildAccounts": "[RO] Manage Child Accounts (Romanian)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Romanian)",
+  "grantConsent": "[RO] Grant Consent (Romanian)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Romanian)",
+  "myProfile1": "[RO] My Profile (Romanian)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Romanian)",
+  "submit": "[RO] Submit (Romanian)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[RO] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Romanian)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Romanian)",
+  "ambassadorDashboard": "[RO] Ambassador Dashboard (Romanian)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Romanian)",
+  "phoneBooking": "[RO] Phone Booking (Romanian)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Romanian)",
+  "bookViaChat": "[RO] Book via Chat (Romanian)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "Eroare",
+  "error": "[RO] Eroare",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Romanian)",
+  "businessProfile": "[RO] Business Profile (Romanian)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Romanian)",
+  "REDACTED_TOKEN": "[RO] Business Booking Entry Screen - Coming Soon (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Romanian)",
+  "createNewSurvey": "[RO] Create New Survey (Romanian)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Romanian)",
+  "backgroundRejected": "[RO] Background rejected (Romanian)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Romanian)",
+  "noMediaSelected": "[RO] No media selected (Romanian)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Romanian)",
+  "syncToGoogle": "[RO] Sync to Google (Romanian)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Romanian)",
+  "virtualPlaytime": "[RO] Virtual Playtime (Romanian)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[RO] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[RO] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Romanian)",
+  "invitationSentSuccessfully": "[RO] Invitation sent successfully! (Romanian)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Romanian)",
+  "registering": "[RO] Registering... (Romanian)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Romanian)",
+  "statusAppointmentstatusname": "[RO] Status: {status} (Romanian)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Romanian)",
+  "home1": "[RO] Home (Romanian)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Romanian)",
+  "errorSavingSettingsE": "[RO] Error saving settings: $e (Romanian)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Romanian)",
+  "appVersionAndInformation": "[RO] App version and information (Romanian)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Romanian)",
+  "REDACTED_TOKEN": "[RO] Business Subscription Entry Screen - Coming Soon (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Romanian)",
+  "ekeyEvalue": "[RO] {key}: {value} (Romanian)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Romanian)",
+  "REDACTED_TOKEN": "[RO] Your payment has been processed successfully. (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Romanian)",
+  "errorE": "[RO] Error: $e (Romanian)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Romanian)",
+  "viewAll1": "[RO] View All (Romanian)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Romanian)",
+  "editSurveyComingSoon": "[RO] Edit survey - Coming soon! (Romanian)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Romanian)",
+  "enterOtp": "[RO] Enter OTP (Romanian)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Romanian)",
+  "payment": "[RO] Payment (Romanian)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Romanian)",
+  "REDACTED_TOKEN": "[RO] Automatically confirm new booking requests (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Romanian)",
+  "noRouteDefinedForSettingsname": "[RO] No route defined for {settingsName} (Romanian)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Romanian)",
+  "pleaseSignInToUploadABackground": "[RO] Please sign in to upload a background (Romanian)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[RO] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Romanian)",
+  "staffAvailability": "[RO] Staff Availability (Romanian)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Romanian)",
+  "livePlaytime": "[RO] Live Playtime (Romanian)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Romanian)",
+  "autoconfirmBookings": "[RO] Auto-Confirm Bookings (Romanian)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Romanian)",
+  "REDACTED_TOKEN": "[RO] Redirecting to Stripe checkout for Pro plan... (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Romanian)",
+  "exportAsCsv": "[RO] Export as CSV (Romanian)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Romanian)",
+  "deleteFunctionalityComingSoon": "[RO] Delete functionality coming soon! (Romanian)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Romanian)",
+  "editClient": "[RO] Edit Client (Romanian)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Romanian)",
+  "REDACTED_TOKEN": "[RO] Are you sure you want to delete this message? (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Romanian)",
+  "referralsAmbassadorreferrals": "[RO] Referrals: {referrals} (Romanian)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[RO] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Romanian)",
+  "privacyRequestSentToYourParents": "[RO] Privacy request sent to your parents! (Romanian)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Romanian)",
+  "clientDeletedSuccessfully": "[RO] Client deleted successfully! (Romanian)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Romanian)",
+  "failedToCancelSubscription": "[RO] Failed to cancel subscription (Romanian)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Romanian)",
+  "allLanguages": "[RO] All Languages (Romanian)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Romanian)",
+  "slotDeletedSuccessfully": "[RO] Slot deleted successfully (Romanian)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[RO] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Romanian)",
+  "REDACTED_TOKEN": "[RO] Parents must approve before children can join (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Romanian)",
+  "subscribeToPro1499mo": "[RO] Subscribe to Pro (€14.99/mo) (Romanian)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Romanian)",
+  "REDACTED_TOKEN": "[RO] Business Availability Entry Screen - Coming Soon (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Romanian)",
+  "appointmentsListlength": "[RO] Appointments: {count} (Romanian)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Romanian)",
+  "clearFilters": "[RO] Clear Filters (Romanian)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Romanian)",
+  "submitBooking": "[RO] Submit Booking (Romanian)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Romanian)",
+  "REDACTED_TOKEN": "[RO] Are you sure you want to cancel this appointment? (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Romanian)",
+  "noUpcomingBookings": "[RO] No upcoming bookings (Romanian)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Romanian)",
+  "goBack": "[RO] Go Back (Romanian)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Romanian)",
+  "setup": "[RO] Setup (Romanian)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Romanian)",
+  "inviteChild": "[RO] Invite Child (Romanian)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Romanian)",
+  "goToDashboard": "[RO] Go to Dashboard (Romanian)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Romanian)",
+  "ambassadorQuotaDashboard": "[RO] Ambassador Quota Dashboard (Romanian)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[RO] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Romanian)",
+  "referralCode": "[RO] Referral Code (Romanian)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[RO] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Romanian)",
+  "date": "[RO] Date (Romanian)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Romanian)",
+  "readOnly": "[RO] Read Only (Romanian)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Romanian)",
+  "bookingRequest": "[RO] Booking Request (Romanian)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Romanian)",
+  "advancedReporting": "[RO] • Advanced reporting (Romanian)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Romanian)",
+  "rooms": "[RO] Rooms (Romanian)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Romanian)",
+  "copiedToClipboard": "[RO] Copied to clipboard (Romanian)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Romanian)",
+  "bookingConfirmed": "[RO] Booking Confirmed (Romanian)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Romanian)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Romanian)",
+  "clientAddedSuccessfully": "[RO] Client added successfully! (Romanian)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Romanian)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Romanian)",
+  "backgroundApproved": "[RO] Background approved! (Romanian)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Romanian)",
+  "familySupport": "[RO] Family Support (Romanian)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Romanian)",
+  "deletingAccount": "[RO] Deleting account... (Romanian)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Romanian)",
+  "bookAppointment": "[RO] Book Appointment (Romanian)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Romanian)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Romanian)",
+  "delete1": "[RO] Delete (Romanian)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Romanian)",
+  "sendBookingInvite": "[RO] Send Booking Invite (Romanian)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Romanian)",
+  "text": "[RO] Text (Romanian)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Romanian)",
+  "manageSubscription": "[RO] Manage Subscription (Romanian)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Romanian)",
+  "requiresInstallFallback": "[RO] Requires Install Fallback (Romanian)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Romanian)",
+  "paymentConfirmation": "[RO] Payment Confirmation (Romanian)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Romanian)",
+  "promoAppliedYourNextBillIsFree": "[RO] Promo applied! Your next bill is free. (Romanian)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Romanian)",
+  "errorLoadingSlots": "[RO] Error loading slots (Romanian)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Romanian)",
+  "REDACTED_TOKEN": "[RO] Allow other users to find and join this game (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Romanian)",
+  "REDACTED_TOKEN": "[RO] Business Onboarding Screen - Coming Soon (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Romanian)",
+  "activateBusinessProfile": "[RO] Activate Business Profile (Romanian)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Romanian)",
+  "contentNotFound": "[RO] Content not found (Romanian)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Romanian)",
+  "pspecialtynpcontactinfo": "[RO] {specialty}\\n{contactInfo} (Romanian)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Romanian)",
+  "rating": "[RO] Rating (Romanian)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Romanian)",
+  "messages": "[RO] Messages (Romanian)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Romanian)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Romanian)",
+  "becomeAnAmbassador": "[RO] Become an Ambassador (Romanian)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Romanian)",
+  "subscribeNow": "[RO] Subscribe Now (Romanian)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Romanian)",
+  "timeArgsslotformatcontext": "[RO] Time: {time} (Romanian)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Romanian)",
+  "shareViaWhatsapp": "[RO] Share via WhatsApp (Romanian)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Romanian)",
+  "users1": "[RO] Users (Romanian)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Romanian)",
+  "shareLink": "[RO] Share Link (Romanian)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[RO] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Romanian)",
+  "deleteAppointment": "[RO] Delete Appointment (Romanian)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Romanian)",
+  "toggleAvailability": "[RO] Toggle Availability (Romanian)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Romanian)",
+  "changePlan": "[RO] Change Plan (Romanian)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Romanian)",
+  "errorLoadingStaff": "[RO] Error loading staff (Romanian)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Romanian)",
+  "updateYourBusinessInformation": "[RO] Update your business information (Romanian)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[RO] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Romanian)",
+  "parentDashboard": "[RO] Parent Dashboard (Romanian)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Romanian)",
+  "menu": "[RO] Menu (Romanian)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Romanian)",
+  "studioBooking": "[RO] Studio Booking (Romanian)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Romanian)",
+  "about1": "[RO] About (Romanian)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Romanian)",
+  "multipleChoice": "[RO] Multiple Choice (Romanian)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Romanian)",
+  "REDACTED_TOKEN": "[RO] Date: {date} (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Romanian)",
+  "REDACTED_TOKEN": "[RO] Studio booking is only available on web (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Romanian)",
+  "errorLoadingBranchesE": "[RO] Error loading branches: $e (Romanian)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Romanian)",
+  "REDACTED_TOKEN": "[RO] \\uD83D\\uDCC5 {dateTime} (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Romanian)",
+  "none": "[RO] None (Romanian)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Romanian)",
+  "failedToUpdateConsentE": "[RO] Failed to update consent: $e (Romanian)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Romanian)",
+  "welcome1": "[RO] Welcome (Romanian)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Romanian)",
+  "failedToCreateSessionE": "[RO] Failed to create session: $e (Romanian)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Romanian)",
+  "inviteContact": "[RO] Invite Contact (Romanian)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Romanian)",
+  "surveyEditor": "[RO] Survey Editor (Romanian)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Romanian)",
+  "failedToStartBasicSubscriptionE": "[RO] Failed to start Basic subscription: $e (Romanian)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Romanian)",
+  "mySchedule": "[RO] My Schedule (Romanian)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Romanian)",
+  "studioDashboard": "[RO] Studio Dashboard (Romanian)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Romanian)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[RO] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[RO] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Romanian)",
+  "settingsSavedSuccessfully": "[RO] Settings saved successfully! (Romanian)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Romanian)",
+  "linkCopiedToClipboard": "[RO] Link copied to clipboard! (Romanian)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Romanian)",
+  "accept1": "[RO] Accept (Romanian)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Romanian)",
+  "noAvailableSlots": "[RO] No available slots (Romanian)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Romanian)",
+  "makeGamePublic": "[RO] Make Game Public (Romanian)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Romanian)",
+  "REDACTED_TOKEN": "[RO] Permission {category} updated to $newValue (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Romanian)",
+  "roomDeletedSuccessfully": "[RO] Room deleted successfully! (Romanian)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Romanian)",
+  "businessCalendar": "[RO] Business Calendar (Romanian)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Romanian)",
+  "addAvailability": "[RO] Add Availability (Romanian)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Romanian)",
+  "ambassadorOnboarding": "[RO] Ambassador Onboarding (Romanian)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Romanian)",
+  "phoneProfileasyncphone": "[RO] Phone: {phone} (Romanian)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Romanian)",
+  "addNewRoom": "[RO] Add New Room (Romanian)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Romanian)",
+  "requireParentApproval": "[RO] Require Parent Approval (Romanian)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Romanian)",
+  "closed": "[RO] Closed (Romanian)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Romanian)",
+  "exportAsPdf": "[RO] Export as PDF (Romanian)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Romanian)",
+  "enableVibration": "[RO] Enable Vibration (Romanian)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Romanian)",
+  "toAvailendformatcontext": "[RO] To: {endTime} (Romanian)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Romanian)",
+  "yourUpgradeCodeUpgradecode": "[RO] Your upgrade code: $upgradeCode (Romanian)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[RO] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Romanian)",
+  "country": "[RO] Country (Romanian)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[RO] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Romanian)",
+  "staffArgsstaffdisplayname": "[RO] Staff: {staffName} (Romanian)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Romanian)",
+  "revokeConsent": "[RO] Revoke Consent (Romanian)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Romanian)",
+  "settings1": "[RO] Settings (Romanian)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Romanian)",
+  "cancel1": "[RO] Cancel (Romanian)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Romanian)",
+  "REDACTED_TOKEN": "[RO] Subscription activated successfully! (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[RO] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Romanian)",
+  "broadcast": "[RO] Broadcast (Romanian)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Romanian)",
+  "noEventsScheduledThisWeek": "[RO] No events scheduled this week (Romanian)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Romanian)",
+  "googleCalendar": "[RO] Google Calendar (Romanian)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Romanian)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Romanian)",
+  "childDashboard": "[RO] Child Dashboard (Romanian)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Romanian)",
+  "failedToUploadBackgroundE": "[RO] Failed to upload background: $e (Romanian)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[RO] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[RO] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[RO] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Romanian)",
+  "noAppointments": "[RO] No appointments (Romanian)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Romanian)",
+  "unlimitedBookingsPerWeek": "[RO] • Unlimited bookings per week (Romanian)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Romanian)",
+  "scheduledAtScheduledat": "[RO] Scheduled at: $scheduledAt (Romanian)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Romanian)",
+  "selectStaff": "[RO] Select Staff (Romanian)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Romanian)",
+  "REDACTED_TOKEN": "[RO] Subscription cancelled successfully (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Romanian)",
+  "cancelAppointment": "[RO] Cancel Appointment (Romanian)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[RO] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Romanian)",
+  "businessSignup": "[RO] Business Signup (Romanian)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Romanian)",
+  "REDACTED_TOKEN": "[RO] Business Completion Screen - Coming Soon (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Romanian)",
+  "createGame1": "[RO] Create Game (Romanian)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Romanian)",
+  "valuetoint": "[RO] {value} (Romanian)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Romanian)",
+  "pleaseEnterAPromoCode": "[RO] Please enter a promo code (Romanian)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Romanian)",
+  "errorLoadingAvailabilityE": "[RO] Error loading availability: $e (Romanian)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Romanian)",
+  "parentalControls": "[RO] Parental Controls (Romanian)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Romanian)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Romanian)",
+  "childLinkedSuccessfully": "[RO] Child linked successfully! (Romanian)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Romanian)",
+  "create": "[RO] Create (Romanian)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Romanian)",
+  "noExternalMeetingsFound": "[RO] No external meetings found. (Romanian)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Romanian)",
+  "staffSelectionstaffdisplayname": "[RO] Staff: {staffName} (Romanian)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[RO] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Romanian)",
+  "schedulerScreen": "[RO] Scheduler Screen (Romanian)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Romanian)",
+  "clientUpdatedSuccessfully": "[RO] Client updated successfully! (Romanian)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Romanian)",
+  "surveyResponses": "[RO] Survey Responses (Romanian)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Romanian)",
+  "syncToOutlook": "[RO] Sync to Outlook (Romanian)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Romanian)",
+  "saveChanges": "[RO] Save Changes (Romanian)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Romanian)",
+  "pickTime": "[RO] Pick Time (Romanian)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Romanian)",
+  "registrationFailedEtostring": "[RO] Registration failed: {error} (Romanian)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Romanian)",
+  "analytics": "[RO] Analytics (Romanian)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Romanian)",
+  "errorLoadingEvents": "[RO] Error loading events (Romanian)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[RO] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[RO] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Romanian)",
+  "success1": "[RO] Success (Romanian)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[RO] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Romanian)",
+  "fromAvailstartformatcontext": "[RO] From: {startTime} (Romanian)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Romanian)",
+  "readWrite": "[RO] Read & Write (Romanian)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Romanian)",
+  "REDACTED_TOKEN": "[RO] Redirecting to Stripe checkout for Basic plan... (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[RO] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Romanian)",
+  "pickDate": "[RO] Pick Date (Romanian)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Romanian)",
+  "chatBooking": "[RO] Chat Booking (Romanian)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Romanian)",
+  "noQuestionsAdded": "[RO] No questions added (Romanian)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[RO] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[RO] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Romanian)",
+  "typeOpenCall": "[RO] Type: Open Call (Romanian)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[RO] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[RO] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Romanian)",
+  "invoiceCreatedSuccessfully": "[RO] Invoice created successfully! (Romanian)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Romanian)",
+  "noTimeSeriesDataAvailable": "[RO] No time series data available (Romanian)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[RO] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[RO] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Romanian)",
+  "failedToSendPrivacyRequestE": "[RO] Failed to send privacy request: $e (Romanian)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Romanian)",
+  "chooseYourPlan": "[RO] Choose Your Plan (Romanian)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Romanian)",
+  "playtimeManagement": "[RO] Playtime Management (Romanian)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Romanian)",
+  "availability": "[RO] Availability (Romanian)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Romanian)",
+  "eventCreated": "[RO] Event created (Romanian)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Romanian)",
+  "subscribeToBasic499mo": "[RO] Subscribe to Basic (€4.99/mo) (Romanian)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Romanian)",
+  "completion": "[RO] Completion (Romanian)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Romanian)",
+  "supportTicketSubmitted": "[RO] Support ticket submitted (Romanian)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Romanian)",
+  "monetizationSettings": "[RO] Monetization Settings (Romanian)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Romanian)",
+  "noBookingsFound": "[RO] No bookings found (Romanian)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[RO] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Romanian)",
+  "deleteSurvey": "[RO] Delete Survey (Romanian)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Romanian)",
+  "gameApprovedSuccessfully": "[RO] Game approved successfully! (Romanian)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Romanian)",
+  "errorLoadingPermissionsError": "[RO] Error loading permissions: $error (Romanian)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Romanian)",
+  "referrals": "[RO] Referrals (Romanian)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Romanian)",
+  "crm": "[RO] CRM (Romanian)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Romanian)",
+  "gameRejected": "[RO] Game rejected (Romanian)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Romanian)",
+  "appointments": "[RO] Appointments (Romanian)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Romanian)",
+  "onboardingScreen": "[RO] Onboarding Screen (Romanian)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Romanian)",
+  "welcomeToYourStudio": "[RO] Welcome to your studio (Romanian)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Romanian)",
+  "update": "[RO] Update (Romanian)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Romanian)",
+  "retry1": "[RO] Retry (Romanian)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Romanian)",
+  "booking": "[RO] Booking (Romanian)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Romanian)",
+  "parentalSettings": "[RO] Parental Settings (Romanian)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Romanian)",
+  "language": "[RO] Language (Romanian)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Romanian)",
+  "deleteSlot": "[RO] Delete Slot (Romanian)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[RO] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[RO] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Romanian)",
+  "createNewGame": "[RO] Create New Game (Romanian)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Romanian)",
+  "next1": "[RO] Next (Romanian)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Romanian)",
+  "backgroundUploadedSuccessfully": "[RO] Background uploaded successfully! (Romanian)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Romanian)",
+  "noAppointmentRequestsFound": "[RO] No appointment requests found. (Romanian)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Romanian)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Romanian)",
+  "restrictMatureContent": "[RO] Restrict mature content (Romanian)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Romanian)",
+  "ambassadors": "[RO] Ambassadors (Romanian)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Romanian)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Romanian)",
+  "paymentWasCancelled": "[RO] Payment was cancelled (Romanian)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Romanian)",
+  "clearAll": "[RO] Clear All (Romanian)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Romanian)",
+  "viewDetails": "[RO] View Details (Romanian)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Romanian)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Romanian)",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Romanian)",
+  "failedToCreateGameE": "[RO] Failed to create game: $e (Romanian)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Romanian)",
+  "noChartDataAvailable": "[RO] No chart data available (Romanian)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Romanian)",
+  "phonebasedBookingSystem": "[RO] • Phone-based booking system (Romanian)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Romanian)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Romanian)",
+  "invoices": "[RO] Invoices (Romanian)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Romanian)",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Romanian)",
+  "scheduledAtArgsscheduledat": "[RO] Scheduled at: {scheduledAt} (Romanian)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Romanian)",
+  "REDACTED_TOKEN": "[RO] Duration: {duration} minutes (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Romanian)",
+  "tryAgain": "[RO] Try Again (Romanian)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Romanian)",
+  "deleteBackground": "[RO] Delete Background (Romanian)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Romanian)",
+  "currentTierTiertouppercase": "[RO] Current Tier: {tier} (Romanian)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[RO] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Romanian)",
+  "REDACTED_TOKEN": "[RO] No clients found. Add your first client! (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[RO] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[RO] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Romanian)",
+  "appointmentRequests": "[RO] Appointment Requests (Romanian)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Romanian)",
+  "forward": "[RO] Forward (Romanian)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Romanian)",
+  "roomAddedSuccessfully": "[RO] Room added successfully! (Romanian)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Romanian)",
+  "option": "[RO] • $option (Romanian)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Romanian)",
+  "responseIndex1": "[RO] Response #{number} (Romanian)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Romanian)",
+  "crmDashboardWithAnalytics": "[RO] • CRM dashboard with analytics (Romanian)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Romanian)",
+  "contentLibrary1": "[RO] Content Library (Romanian)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Romanian)",
+  "reply": "[RO] Reply (Romanian)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Romanian)",
+  "subscriptionManagement": "[RO] Subscription Management (Romanian)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Romanian)",
+  "REDACTED_TOKEN": "[RO] Monetization settings will be implemented here (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Romanian)",
+  "failedToApplyPromoCodeE": "[RO] Failed to apply promo code: $e (Romanian)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[RO] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Romanian)",
+  "localizationContribution": "[RO] Localization Contribution (Romanian)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Romanian)",
+  "parentalConsent": "[RO] Parental Consent (Romanian)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Romanian)",
+  "businessSignupScreenComingSoon": "[RO] Business Signup Screen - Coming Soon (Romanian)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Romanian)",
+  "REDACTED_TOKEN": "[RO] Are you sure you want to delete this appointment? (Romanian)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Romanian)",
+  "syncAppointment": "[RO] Sync Appointment (Romanian)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Romanian)",
+  "iConsent": "[RO] I Consent (Romanian)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Romanian)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Romanian)",
+  "businessSetupScreenComingSoon": "[RO] Business Setup Screen - Coming Soon (Romanian)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Romanian)",
+  "edit1": "[RO] Edit (Romanian)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Romanian)",
+  "noEventsScheduledThisMonth": "[RO] No events scheduled this month (Romanian)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Romanian)",
+  "businessDashboard": "[RO] Business Dashboard (Romanian)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Romanian)",
+  "noMessagesFound": "[RO] No messages found. (Romanian)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[RO] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Romanian)",
+  "manageStaffAvailability": "[RO] Manage Staff Availability (Romanian)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Romanian)",
+  "noMissingTranslations": "[RO] No missing translations (Romanian)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Romanian)",
+  "skip": "[RO] Skip (Romanian)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[RO] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Romanian)",
+  "errorLoadingReferralCode": "[RO] Error loading referral code (Romanian)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Romanian)",
+  "allCountries": "[RO] All Countries (Romanian)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Romanian)",
+  "deleteGame": "[RO] Delete Game (Romanian)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Romanian)",
+  "staffManagementTools": "[RO] • Staff management tools (Romanian)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Romanian)",
+  "deleteMessage": "[RO] Delete Message (Romanian)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Romanian)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[RO] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Romanian)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Romanian)",
+  "openingCustomerPortal": "[RO] Opening customer portal... (Romanian)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Romanian)",
+  "signOut": "[RO] Sign Out (Romanian)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Romanian)",
+  "nameProfilename": "[RO] Name: {name} (Romanian)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Romanian)",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Romanian)",
+  "upgradeToBusiness": "[RO] Upgrade to Business (Romanian)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Romanian)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Romanian)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Romanian)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Romanian)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Romanian)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Romanian)",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Romanian)",
+  "viewResponses": "[RO] View Responses (Romanian)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Romanian)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Romanian)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Romanian)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Romanian)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Romanian)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Romanian)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Romanian)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Romanian)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Romanian)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Romanian)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }

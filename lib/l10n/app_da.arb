@@ -1,2862 +1,2862 @@
 {
   "@@locale": "da",
-  "refresh": "[DA] Refresh",
+  "refresh": "[DA] [DA] Refresh",
   "@refresh": {
     "description": "Description"
   },
-  "home": "Hjem",
+  "home": "[DA] Hjem",
   "@home": {
     "description": "Description"
   },
-  "noSessionsYet": "[DA] No sessions yet",
+  "noSessionsYet": "[DA] [DA] No sessions yet",
   "@noSessionsYet": {
     "description": "Description"
   },
-  "ok": "OK",
+  "ok": "[DA] OK",
   "@ok": {
     "description": "Description"
   },
-  "playtimeLandingChooseMode": "[DA] Choose your play mode:",
+  "playtimeLandingChooseMode": "[DA] [DA] Choose your play mode:",
   "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "signUp": "Tilmeld dig",
+  "signUp": "[DA] Tilmeld dig",
   "@signUp": {
     "description": "Description"
   },
-  "scheduleMessage": "Planlæg besked",
+  "scheduleMessage": "[DA] Planlæg besked",
   "@scheduleMessage": {
     "description": "Description"
   },
-  "decline": "Afvis",
+  "decline": "[DA] Afvis",
   "@decline": {
     "description": "Description"
   },
-  "adminBroadcast": "Admin Broadcast",
+  "adminBroadcast": "[DA] Admin Broadcast",
   "@adminBroadcast": {
     "description": "Localization key for: Admin Broadcast"
   },
-  "login": "[DA] Login",
+  "login": "[DA] [DA] Login",
   "@login": {
     "description": "Description"
   },
-  "playtimeChooseFriends": "Vælg venner",
+  "playtimeChooseFriends": "[DA] Vælg venner",
   "@playtimeChooseFriends": {
     "description": "Description"
   },
-  "noInvites": "[DA] No invites",
+  "noInvites": "[DA] [DA] No invites",
   "@noInvites": {
     "description": "Description"
   },
-  "playtimeChooseTime": "Vælg tidspunkt",
+  "playtimeChooseTime": "[DA] Vælg tidspunkt",
   "@playtimeChooseTime": {
     "description": "Description"
   },
-  "success": "Succes",
+  "success": "[DA] Succes",
   "@success": {
     "description": "Description"
   },
-  "undo": "[DA] Undo",
+  "undo": "[DA] [DA] Undo",
   "@undo": {
     "description": "Description"
   },
-  "opened": "Åbnet",
+  "opened": "[DA] Åbnet",
   "@opened": {
     "description": "opened description"
   },
-  "createVirtualSession": "[DA] Create Virtual Session",
+  "createVirtualSession": "[DA] [DA] Create Virtual Session",
   "@createVirtualSession": {
     "description": "Description"
   },
-  "messageSentSuccessfully": "Besked sendt med succes",
+  "messageSentSuccessfully": "[DA] Besked sendt med succes",
   "@messageSentSuccessfully": {
     "description": "messageSentSuccessfully description"
   },
-  "redo": "Gentag",
+  "redo": "[DA] Gentag",
   "@redo": {
     "description": "Description"
   },
-  "next": "Næste",
+  "next": "[DA] Næste",
   "@next": {
     "description": "Description"
   },
-  "search": "Søg",
+  "search": "[DA] Søg",
   "@search": {
     "description": "Description"
   },
-  "cancelInviteConfirmation": "Annuller imødesynsbekræftelse",
+  "cancelInviteConfirmation": "[DA] Annuller imødesynsbekræftelse",
   "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "created": "Oprettet",
+  "created": "[DA] Oprettet",
   "@created": {
     "description": "created description"
   },
-  "revokeAccess": "Tilbagekald adgang",
+  "revokeAccess": "[DA] Tilbagekald adgang",
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "Gem gruppe til genkendelse",
+  "saveGroupForRecognition": "[DA] Gem gruppe til genkendelse",
   "@saveGroupForRecognition": {
     "description": "Description"
   },
-  "playtimeLiveScheduled": "[DA] Live playtime scheduled!",
+  "playtimeLiveScheduled": "[DA] [DA] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
   },
-  "revokeAccessConfirmation": "Bekræft tilbagekaldelse",
+  "revokeAccessConfirmation": "[DA] Bekræft tilbagekaldelse",
   "@revokeAccessConfirmation": {
     "description": "Description"
   },
-  "download": "Hent",
+  "download": "[DA] Hent",
   "@download": {
     "description": "Description"
   },
-  "password": "Adgangskode",
+  "password": "[DA] Adgangskode",
   "@password": {
     "description": "Description"
   },
-  "errorLoadingFamilyLinks": "[DA] Error loading family links",
+  "errorLoadingFamilyLinks": "[DA] [DA] Error loading family links",
   "@errorLoadingFamilyLinks": {
     "description": "Description"
   },
-  "cancel": "Annuller",
+  "cancel": "[DA] Annuller",
   "@cancel": {
     "description": "cancel description"
   },
-  "playtimeCreate": "Opret Playtime",
+  "playtimeCreate": "[DA] Opret Playtime",
   "@playtimeCreate": {
     "description": "Description"
   },
-  "failedToActionPrivacyRequest": "[DA] Failed to action privacy request",
+  "failedToActionPrivacyRequest": "[DA] [DA] Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
     "description": "failedToActionPrivacyRequest description"
   },
-  "appTitle": "App-titel",
+  "appTitle": "[DA] App-titel",
   "@appTitle": {
     "description": "Description"
   },
-  "accept": "Accepter",
+  "accept": "[DA] Accepter",
   "@accept": {
     "description": "Description"
   },
-  "playtimeModeVirtual": "[DA] Virtual Play",
+  "playtimeModeVirtual": "[DA] [DA] Virtual Play",
   "@playtimeModeVirtual": {
     "description": "Description"
   },
-  "playtimeDescription": "Playtime-beskrivelse",
+  "playtimeDescription": "[DA] Playtime-beskrivelse",
   "@playtimeDescription": {
     "description": "Description"
   },
-  "delete": "Slet",
+  "delete": "[DA] Slet",
   "@delete": {
     "description": "Description"
   },
-  "playtimeVirtualStarted": "[DA] Virtual playtime started!",
+  "playtimeVirtualStarted": "[DA] [DA] Virtual playtime started!",
   "@playtimeVirtualStarted": {
     "description": "Description"
   },
-  "createYourFirstGame": "Opret dit første spil",
+  "createYourFirstGame": "[DA] Opret dit første spil",
   "@createYourFirstGame": {
     "description": "Description"
   },
-  "participants": "Deltagere",
+  "participants": "[DA] Deltagere",
   "@participants": {
     "description": "Description"
   },
-  "recipients": "Modtagere",
+  "recipients": "[DA] Modtagere",
   "@recipients": {
     "description": "recipients description"
   },
-  "noResults": "[DA] No results found",
+  "noResults": "[DA] [DA] No results found",
   "@noResults": {
     "description": "Description"
   },
-  "yes": "Ja",
+  "yes": "[DA] Ja",
   "@yes": {
     "description": "yes description"
   },
-  "invite": "[DA] Invite",
+  "invite": "[DA] [DA] Invite",
   "@invite": {
     "description": "Description"
   },
-  "playtimeModeLive": "[DA] Live Play",
+  "playtimeModeLive": "[DA] [DA] Live Play",
   "@playtimeModeLive": {
     "description": "Description"
   },
-  "done": "Færdig",
+  "done": "[DA] Færdig",
   "@done": {
     "description": "Description"
   },
-  "defaultShareMessage": "[DA] Let's meet via Appoint!",
+  "defaultShareMessage": "[DA] [DA] Let's meet via Appoint!",
   "@defaultShareMessage": {
     "description": "Description"
   },
-  "no": "Nej",
+  "no": "[DA] Nej",
   "@no": {
     "description": "Description"
   },
-  "playtimeHub": "Playtime-hub",
+  "playtimeHub": "[DA] Playtime-hub",
   "@playtimeHub": {
     "description": "Description"
   },
-  "createLiveSession": "[DA] Create Live Session",
+  "createLiveSession": "[DA] [DA] Create Live Session",
   "@createLiveSession": {
     "description": "Description"
   },
-  "enableNotifications": "[DA] Enable Notifications",
+  "enableNotifications": "[DA] [DA] Enable Notifications",
   "@enableNotifications": {
     "description": "Description"
   },
-  "invited": "[DA] Invited",
+  "invited": "[DA] [DA] Invited",
   "@invited": {
     "description": "Description"
   },
-  "content": "[DA] Content",
+  "content": "[DA] [DA] Content",
   "@content": {
     "description": "content description"
   },
-  "meetingSharedSuccessfully": "Møde delt med succes",
+  "meetingSharedSuccessfully": "[DA] Møde delt med succes",
   "@meetingSharedSuccessfully": {
     "description": "Description"
   },
-  "welcomeToPlaytime": "Velkommen til Playtime",
+  "welcomeToPlaytime": "[DA] Velkommen til Playtime",
   "@welcomeToPlaytime": {
     "description": "Description"
   },
-  "viewAll": "Se alle",
+  "viewAll": "[DA] Se alle",
   "@viewAll": {
     "description": "Description"
   },
-  "playtimeVirtual": "Virtuel Playtime",
+  "playtimeVirtual": "[DA] Virtuel Playtime",
   "@playtimeVirtual": {
     "description": "Description"
   },
-  "staffScreenTBD": "[DA] Staff screen coming soon",
+  "staffScreenTBD": "[DA] [DA] Staff screen coming soon",
   "@staffScreenTBD": {
     "description": "Description"
   },
-  "cut": "Klip",
+  "cut": "[DA] Klip",
   "@cut": {
     "description": "Description"
   },
-  "inviteCancelledSuccessfully": "[DA] Invite cancelled successfully",
+  "inviteCancelledSuccessfully": "[DA] [DA] Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
     "description": "Description"
   },
-  "retry": "Prøv igen",
+  "retry": "[DA] Prøv igen",
   "@retry": {
     "description": "Description"
   },
-  "composeBroadcastMessage": "Opret udsendelsesbesked",
+  "composeBroadcastMessage": "[DA] Opret udsendelsesbesked",
   "@composeBroadcastMessage": {
     "description": "composeBroadcastMessage description"
   },
-  "sendNow": "Send nu",
+  "sendNow": "[DA] Send nu",
   "@sendNow": {
     "description": "sendNow description"
   },
-  "noGamesYet": "[DA] No games yet",
+  "noGamesYet": "[DA] [DA] No games yet",
   "@noGamesYet": {
     "description": "Description"
   },
-  "select": "Vælg",
+  "select": "[DA] Vælg",
   "@select": {
     "description": "Description"
   },
-  "about": "Om",
+  "about": "[DA] Om",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "Vælg",
+  "choose": "[DA] Vælg",
   "@choose": {
     "description": "Description"
   },
-  "profile": "[DA] Profile",
+  "profile": "[DA] [DA] Profile",
   "@profile": {
     "description": "Description"
   },
-  "removeChild": "Fjern barn",
+  "removeChild": "[DA] Fjern barn",
   "@removeChild": {
     "description": "Description"
   },
-  "status": "[DA] Status",
+  "status": "[DA] [DA] Status",
   "@status": {
     "description": "status description"
   },
-  "logout": "Log ud",
+  "logout": "[DA] Log ud",
   "@logout": {
     "description": "Description"
   },
-  "paste": "[DA] Paste",
+  "paste": "[DA] [DA] Paste",
   "@paste": {
     "description": "Description"
   },
-  "welcome": "Velkommen",
+  "welcome": "[DA] Velkommen",
   "@welcome": {
     "description": "Description"
   },
-  "playtimeCreateSession": "[DA] Create a Playtime Session",
+  "playtimeCreateSession": "[DA] [DA] Create a Playtime Session",
   "@playtimeCreateSession": {
     "description": "Description"
   },
-  "familyMembers": "Familie-medlemmer",
+  "familyMembers": "[DA] Familie-medlemmer",
   "@familyMembers": {
     "description": "Description"
   },
-  "upload": "Upload",
+  "upload": "[DA] Upload",
   "@upload": {
     "description": "Description"
   },
-  "upcomingSessions": "[DA] Upcoming Sessions",
+  "upcomingSessions": "[DA] [DA] Upcoming Sessions",
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "[DA] Enter group name",
+  "enterGroupName": "[DA] [DA] Enter group name",
   "@enterGroupName": {
     "description": "Description"
   },
-  "confirm": "Bekræft",
+  "confirm": "[DA] Bekræft",
   "@confirm": {
     "description": "Description"
   },
-  "playtimeLive": "Live Playtime",
+  "playtimeLive": "[DA] Live Playtime",
   "@playtimeLive": {
     "description": "Description"
   },
-  "errorLoadingInvites": "[DA] Error loading invites",
+  "errorLoadingInvites": "[DA] [DA] Error loading invites",
   "@errorLoadingInvites": {
     "description": "Description"
   },
-  "targetingFilters": "[DA] Targeting Filters",
+  "targetingFilters": "[DA] [DA] Targeting Filters",
   "@targetingFilters": {
     "description": "targetingFilters description"
   },
-  "pickVideo": "Vælg video",
+  "pickVideo": "[DA] Vælg video",
   "@pickVideo": {
     "description": "pickVideo description"
   },
-  "playtimeGameDeleted": "Spil slettet",
+  "playtimeGameDeleted": "[DA] Spil slettet",
   "@playtimeGameDeleted": {
     "description": "Description"
   },
-  "scheduleForLater": "Planlæg til senere",
+  "scheduleForLater": "[DA] Planlæg til senere",
   "@scheduleForLater": {
     "description": "scheduleForLater description"
   },
-  "accessRevokedSuccessfully": "Adgang tilbagekaldt med succes",
+  "accessRevokedSuccessfully": "[DA] Adgang tilbagekaldt med succes",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "Type",
+  "type": "[DA] Type",
   "@type": {
     "description": "type description"
   },
-  "checkingPermissions": "Tjekker rettigheder",
+  "checkingPermissions": "[DA] Tjekker rettigheder",
   "@checkingPermissions": {
     "description": "checkingPermissions description"
   },
-  "copy": "Kopiér",
+  "copy": "[DA] Kopiér",
   "@copy": {
     "description": "Description"
   },
-  "yesCancel": "Ja, annuller",
+  "yesCancel": "[DA] Ja, annuller",
   "@yesCancel": {
     "description": "Description"
   },
-  "email": "Email",
+  "email": "[DA] Email",
   "@email": {
     "description": "Description"
   },
-  "shareOnWhatsApp": "[DA] Share on WhatsApp",
+  "shareOnWhatsApp": "[DA] [DA] Share on WhatsApp",
   "@shareOnWhatsApp": {
     "description": "Description"
   },
-  "notificationSettings": "[DA] Notification Settings",
+  "notificationSettings": "[DA] [DA] Notification Settings",
   "@notificationSettings": {
     "description": "Description"
   },
-  "myProfile": "[DA] My Profile",
+  "myProfile": "[DA] [DA] My Profile",
   "@myProfile": {
     "description": "Description"
   },
-  "revoke": "Tilbagekald",
+  "revoke": "[DA] Tilbagekald",
   "@revoke": {
     "description": "Description"
   },
-  "noBroadcastMessages": "[DA] No messages yet",
+  "noBroadcastMessages": "[DA] [DA] No messages yet",
   "@noBroadcastMessages": {
     "description": "noBroadcastMessages description"
   },
-  "requestType": "[DA] Request Type",
+  "requestType": "[DA] [DA] Request Type",
   "@requestType": {
     "description": "requestType description"
   },
-  "notifications": "[DA] Notifications",
+  "notifications": "[DA] [DA] Notifications",
   "@notifications": {
     "description": "Description"
   },
-  "details": "Detaljer",
+  "details": "[DA] Detaljer",
   "@details": {
     "description": "details description"
   },
-  "cancelInvite": "[DA] Cancel Invite",
+  "cancelInvite": "[DA] [DA] Cancel Invite",
   "@cancelInvite": {
     "description": "Description"
   },
-  "createNew": "Opret ny",
+  "createNew": "[DA] Opret ny",
   "@createNew": {
     "description": "Description"
   },
-  "settings": "[DA] Settings",
+  "settings": "[DA] [DA] Settings",
   "@settings": {
     "description": "Description"
   },
-  "playtimeReject": "Afvis Playtime",
+  "playtimeReject": "[DA] Afvis Playtime",
   "@playtimeReject": {
     "description": "Description"
   },
-  "errorLoadingProfile": "[DA] Error loading profile",
+  "errorLoadingProfile": "[DA] [DA] Error loading profile",
   "@errorLoadingProfile": {
     "description": "Description"
   },
-  "edit": "Redigér",
+  "edit": "[DA] Redigér",
   "@edit": {
     "description": "Description"
   },
-  "add": "Tilføj",
+  "add": "[DA] Tilføj",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "Spil godkendt",
+  "playtimeGameApproved": "[DA] Spil godkendt",
   "@playtimeGameApproved": {
     "description": "Description"
   },
-  "forgotPassword": "Glemt adgangskode?",
+  "forgotPassword": "[DA] Glemt adgangskode?",
   "@forgotPassword": {
     "description": "Description"
   },
-  "familyDashboard": "Familie-oversigt",
+  "familyDashboard": "[DA] Familie-oversigt",
   "@familyDashboard": {
     "description": "Description"
   },
-  "loading": "[DA] Loading...",
+  "loading": "[DA] [DA] Loading...",
   "@loading": {
     "description": "Description"
   },
-  "quickActions": "[DA] Quick Actions",
+  "quickActions": "[DA] [DA] Quick Actions",
   "@quickActions": {
     "description": "Description"
   },
-  "playtimeTitle": "Playtime-titel",
+  "playtimeTitle": "[DA] Playtime-titel",
   "@playtimeTitle": {
     "description": "Description"
   },
-  "otpResentSuccessfully": "OTP gensendt med succes",
+  "otpResentSuccessfully": "[DA] OTP gensendt med succes",
   "@otpResentSuccessfully": {
     "description": "Description"
   },
-  "errorCheckingPermissions": "Fejl ved tjek af rettigheder",
+  "errorCheckingPermissions": "[DA] Fejl ved tjek af rettigheder",
   "@errorCheckingPermissions": {
     "description": "errorCheckingPermissions description"
   },
-  "clientScreenTBD": "Klient-skærm ikke fastlagt",
+  "clientScreenTBD": "[DA] Klient-skærm ikke fastlagt",
   "@clientScreenTBD": {
     "description": "Description"
   },
-  "fcmToken": "[DA] FCM Token",
+  "fcmToken": "[DA] [DA] FCM Token",
   "@fcmToken": {
     "description": "Description"
   },
-  "pickImage": "Vælg billede",
+  "pickImage": "[DA] Vælg billede",
   "@pickImage": {
     "description": "pickImage description"
   },
-  "previous": "[DA] Previous",
+  "previous": "[DA] [DA] Previous",
   "@previous": {
     "description": "Description"
   },
-  "noProfileFound": "[DA] No profile found",
+  "noProfileFound": "[DA] [DA] No profile found",
   "@noProfileFound": {
     "description": "Description"
   },
-  "noFamilyMembersYet": "[DA] No family members yet",
+  "noFamilyMembersYet": "[DA] [DA] No family members yet",
   "@noFamilyMembersYet": {
     "description": "Description"
   },
-  "mediaOptional": "Medier (valgfri)",
+  "mediaOptional": "[DA] Medier (valgfri)",
   "@mediaOptional": {
     "description": "mediaOptional description"
   },
-  "messageSavedSuccessfully": "Besked gemt med succes",
+  "messageSavedSuccessfully": "[DA] Besked gemt med succes",
   "@messageSavedSuccessfully": {
     "description": "messageSavedSuccessfully description"
   },
-  "scheduledFor": "Planlagt til",
+  "scheduledFor": "[DA] Planlagt til",
   "@scheduledFor": {
     "description": "Description"
   },
-  "dashboard": "Oversigt",
+  "dashboard": "[DA] Oversigt",
   "@dashboard": {
     "description": "Description"
   },
-  "noPermissionForBroadcast": "[DA] No permission for broadcast",
+  "noPermissionForBroadcast": "[DA] [DA] No permission for broadcast",
   "@noPermissionForBroadcast": {
     "description": "noPermissionForBroadcast description"
   },
-  "playtimeAdminPanelTitle": "Playtime Games – Admin",
+  "playtimeAdminPanelTitle": "[DA] Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
     "description": "Localization key for: Playtime Games – Admin"
   },
-  "inviteDetail": "[DA] Invite Details",
+  "inviteDetail": "[DA] [DA] Invite Details",
   "@inviteDetail": {
     "description": "Description"
   },
-  "scheduled": "Planlagt",
+  "scheduled": "[DA] Planlagt",
   "@scheduled": {
     "description": "scheduled description"
   },
-  "failedToResendOtp": "Kunne ikke gensende OTP",
+  "failedToResendOtp": "[DA] Kunne ikke gensende OTP",
   "@failedToResendOtp": {
     "description": "Description"
   },
-  "scheduling": "Planlægger",
+  "scheduling": "[DA] Planlægger",
   "@scheduling": {
     "description": "scheduling description"
   },
-  "errorSavingMessage": "Fejl ved gem besked",
+  "errorSavingMessage": "[DA] Fejl ved gem besked",
   "@errorSavingMessage": {
     "description": "errorSavingMessage description"
   },
-  "save": "Gem",
+  "save": "[DA] Gem",
   "@save": {
     "description": "save description"
   },
-  "playtimeApprove": "Godkend Playtime",
+  "playtimeApprove": "[DA] Godkend Playtime",
   "@playtimeApprove": {
     "description": "Description"
   },
-  "createYourFirstSession": "[DA] Create your first session",
+  "createYourFirstSession": "[DA] [DA] Create your first session",
   "@createYourFirstSession": {
     "description": "Description"
   },
-  "playtimeGameRejected": "Spil afvist",
+  "playtimeGameRejected": "[DA] Spil afvist",
   "@playtimeGameRejected": {
     "description": "Description"
   },
-  "failedToRevokeAccess": "Kunne ikke tilbagekalde adgang",
+  "failedToRevokeAccess": "[DA] Kunne ikke tilbagekalde adgang",
   "@failedToRevokeAccess": {
     "description": "Description"
   },
-  "recentGames": "Seneste spil",
+  "recentGames": "[DA] Seneste spil",
   "@recentGames": {
     "description": "Description"
   },
-  "customizeMessage": "Tilpas besked",
+  "customizeMessage": "[DA] Tilpas besked",
   "@customizeMessage": {
     "description": "Description"
   },
-  "failedToCancelInvite": "[DA] Failed to cancel invite",
+  "failedToCancelInvite": "[DA] [DA] Failed to cancel invite",
   "@failedToCancelInvite": {
     "description": "Description"
   },
-  "errorSendingMessage": "Fejl ved afsendelse af besked",
+  "errorSendingMessage": "[DA] Fejl ved afsendelse af besked",
   "@errorSendingMessage": {
     "description": "errorSendingMessage description"
   },
-  "confirmPassword": "Bekræft adgangskode",
+  "confirmPassword": "[DA] Bekræft adgangskode",
   "@confirmPassword": {
     "description": "Description"
   },
-  "errorLoadingPrivacyRequests": "[DA] Error loading privacy requests",
+  "errorLoadingPrivacyRequests": "[DA] [DA] Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
     "description": "errorLoadingPrivacyRequests description"
   },
-  "connectedChildren": "[DA] Connected Children",
+  "connectedChildren": "[DA] [DA] Connected Children",
   "@connectedChildren": {
     "description": "Description"
   },
-  "share": "Del",
+  "share": "[DA] Del",
   "@share": {
     "description": "Description"
   },
-  "playtimeEnterGameName": "[DA] Enter game name",
+  "playtimeEnterGameName": "[DA] [DA] Enter game name",
   "@playtimeEnterGameName": {
     "description": "Description"
   },
-  "pleaseLoginForFamilyFeatures": "[DA] Please login to access family features",
+  "pleaseLoginForFamilyFeatures": "[DA] [DA] Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
     "description": "Description"
   },
-  "myInvites": "[DA] My Invites",
+  "myInvites": "[DA] [DA] My Invites",
   "@myInvites": {
     "description": "Description"
   },
-  "createGame": "Opret spil",
+  "createGame": "[DA] Opret spil",
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "Gruppenavn (valgfri)",
+  "groupNameOptional": "[DA] Gruppenavn (valgfri)",
   "@groupNameOptional": {
     "description": "Description"
   },
-  "playtimeNoSessions": "[DA] No playtime sessions found.",
+  "playtimeNoSessions": "[DA] [DA] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
   },
-  "adminScreenTBD": "Admin screen coming soon",
+  "adminScreenTBD": "[DA] Admin screen coming soon",
   "@adminScreenTBD": {
     "description": "Localization key for: Admin screen coming soon"
   },
-  "playtimeParentDashboardTitle": "[DA] Playtime Dashboard",
+  "playtimeParentDashboardTitle": "[DA] [DA] Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
     "description": "Description"
   },
-  "close": "Luk",
+  "close": "[DA] Luk",
   "@close": {
     "description": "close description"
   },
-  "knownGroupDetected": "Kendt gruppe registreret",
+  "knownGroupDetected": "[DA] Kendt gruppe registreret",
   "@knownGroupDetected": {
     "description": "Description"
   },
-  "back": "Tilbage",
+  "back": "[DA] Tilbage",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "Vælg spil",
+  "playtimeChooseGame": "[DA] Vælg spil",
   "@playtimeChooseGame": {
     "description": "Description"
   },
-  "managePermissions": "[DA] Manage Permissions",
+  "managePermissions": "[DA] [DA] Manage Permissions",
   "@managePermissions": {
     "description": "Description"
   },
-  "pollOptions": "[DA] Poll Options",
+  "pollOptions": "[DA] [DA] Poll Options",
   "@pollOptions": {
     "description": "pollOptions description"
   },
-  "clicked": "Klikket",
+  "clicked": "[DA] Klikket",
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "[DA] Link",
+  "link": "[DA] [DA] Link",
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "Møde er klar",
+  "meetingReadyMessage": "[DA] Møde er klar",
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "[DA] Pending Invites",
+  "pendingInvites": "[DA] [DA] Pending Invites",
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "[DA] Status:",
+  "statusColon": "[DA] [DA] Status:",
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[DA] Please log in to view your profile.",
+  "pleaseLoginToViewProfile": "[DA] [DA] Please log in to view your profile.",
   "@pleaseLoginToViewProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "adminMetrics": "Admin Metrics",
+  "adminMetrics": "[DA] Admin Metrics",
   "@adminMetrics": {
     "description": "Localization key for: Admin Metrics"
   },
-  "overview": "Overview",
+  "overview": "[DA] Overview",
   "@overview": {
     "description": "Description"
   },
-  "bookings": "Bookings",
+  "bookings": "[DA] Bookings",
   "@bookings": {
     "description": "Description"
   },
-  "users": "users (TRANSLATE)",
+  "users": "[DA] users (TRANSLATE)",
   "@users": {
     "description": "users description"
   },
-  "revenue": "revenue (TRANSLATE)",
+  "revenue": "[DA] revenue (TRANSLATE)",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "Content Library",
+  "contentLibrary": "[DA] Content Library",
   "@contentLibrary": {
     "description": "Localization key for: Content Library"
   },
-  "authErrorUserNotFound": "No account found with this email address.",
+  "authErrorUserNotFound": "[DA] No account found with this email address.",
   "@authErrorUserNotFound": {
     "description": "Localization key for: No account found with this email address."
   },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
+  "authErrorWrongPassword": "[DA] Incorrect password. Please try again.",
   "@authErrorWrongPassword": {
     "description": "Localization key for: Incorrect password. Please try again."
   },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
+  "authErrorInvalidEmail": "[DA] Please enter a valid email address.",
   "@authErrorInvalidEmail": {
     "description": "Localization key for: Please enter a valid email address."
   },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
+  "authErrorUserDisabled": "[DA] This account has been disabled. Please contact support.",
   "@authErrorUserDisabled": {
     "description": "Localization key for: This account has been disabled. Please contact support."
   },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
+  "authErrorWeakPassword": "[DA] Password is too weak. Please choose a stronger password.",
   "@authErrorWeakPassword": {
     "description": "Localization key for: Password is too weak. Please choose a stronger password."
   },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
+  "authErrorEmailAlreadyInUse": "[DA] An account with this email already exists.",
   "@authErrorEmailAlreadyInUse": {
     "description": "Localization key for: An account with this email already exists."
   },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
+  "authErrorTooManyRequests": "[DA] Too many failed attempts. Please try again later.",
   "@authErrorTooManyRequests": {
     "description": "Localization key for: Too many failed attempts. Please try again later."
   },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
+  "authErrorOperationNotAllowed": "[DA] This sign-in method is not enabled. Please contact support.",
   "@authErrorOperationNotAllowed": {
     "description": "Localization key for: This sign-in method is not enabled. Please contact support."
   },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
+  "authErrorInvalidCredential": "[DA] Invalid credentials. Please try again.",
   "@authErrorInvalidCredential": {
     "description": "Localization key for: Invalid credentials. Please try again."
   },
-  "REDACTED_TOKEN": "An account already exists with this email using a different sign-in method.",
+  "REDACTED_TOKEN": "[DA] An account already exists with this email using a different sign-in method.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: An account already exists with this email using a different sign-in method."
   },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
+  "authErrorCredentialAlreadyInUse": "[DA] These credentials are already associated with another account.",
   "@authErrorCredentialAlreadyInUse": {
     "description": "Localization key for: These credentials are already associated with another account."
   },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
+  "authErrorNetworkRequestFailed": "[DA] Network error. Please check your connection and try again.",
   "@authErrorNetworkRequestFailed": {
     "description": "Localization key for: Network error. Please check your connection and try again."
   },
-  "socialAccountConflictTitle": "Account Already Exists (Danish)",
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
   "@socialAccountConflictTitle": {
     "description": "Localization key for: Account Already Exists"
   },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts? (Danish)",
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
   "@socialAccountConflictMessage": {
     "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
   },
-  "linkAccounts": "Link Accounts (Danish)",
+  "linkAccounts": "ربط الحسابات",
   "@linkAccounts": {
     "description": "Localization key for: Link Accounts"
   },
-  "signInWithExistingMethod": "Sign in with existing method (Danish)",
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
   "@signInWithExistingMethod": {
     "description": "Localization key for: Sign in with existing method"
   },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
+  "authErrorRequiresRecentLogin": "[DA] Please log in again to perform this operation.",
   "@authErrorRequiresRecentLogin": {
     "description": "Localization key for: Please log in again to perform this operation."
   },
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
+  "authErrorAppNotAuthorized": "[DA] This app is not authorized to use Firebase Authentication.",
   "@authErrorAppNotAuthorized": {
     "description": "Localization key for: This app is not authorized to use Firebase Authentication."
   },
-  "REDACTED_TOKEN": "The verification code is invalid.",
+  "REDACTED_TOKEN": "[DA] The verification code is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The verification code is invalid."
   },
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
+  "authErrorInvalidVerificationId": "[DA] The verification ID is invalid.",
   "@authErrorInvalidVerificationId": {
     "description": "Localization key for: The verification ID is invalid."
   },
-  "REDACTED_TOKEN": "Please enter the verification code.",
+  "REDACTED_TOKEN": "[DA] Please enter the verification code.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please enter the verification code."
   },
-  "authErrorMissingVerificationId": "Missing verification ID.",
+  "authErrorMissingVerificationId": "[DA] Missing verification ID.",
   "@authErrorMissingVerificationId": {
     "description": "Localization key for: Missing verification ID."
   },
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
+  "authErrorInvalidPhoneNumber": "[DA] The phone number is invalid.",
   "@authErrorInvalidPhoneNumber": {
     "description": "Localization key for: The phone number is invalid."
   },
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
+  "authErrorMissingPhoneNumber": "[DA] Please enter a phone number.",
   "@authErrorMissingPhoneNumber": {
     "description": "Localization key for: Please enter a phone number."
   },
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
+  "authErrorQuotaExceeded": "[DA] The SMS quota for this project has been exceeded. Please try again later.",
   "@authErrorQuotaExceeded": {
     "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
   },
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
+  "authErrorCodeExpired": "[DA] The verification code has expired. Please request a new one.",
   "@authErrorCodeExpired": {
     "description": "Localization key for: The verification code has expired. Please request a new one."
   },
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
+  "authErrorSessionExpired": "[DA] Your session has expired. Please log in again.",
   "@authErrorSessionExpired": {
     "description": "Localization key for: Your session has expired. Please log in again."
   },
-  "REDACTED_TOKEN": "Multi-factor authentication is required.",
+  "REDACTED_TOKEN": "[DA] Multi-factor authentication is required.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor authentication is required."
   },
-  "REDACTED_TOKEN": "Multi-factor information not found.",
+  "REDACTED_TOKEN": "[DA] Multi-factor information not found.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Multi-factor information not found."
   },
-  "REDACTED_TOKEN": "Missing multi-factor session.",
+  "REDACTED_TOKEN": "[DA] Missing multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing multi-factor session."
   },
-  "REDACTED_TOKEN": "Invalid multi-factor session.",
+  "REDACTED_TOKEN": "[DA] Invalid multi-factor session.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Invalid multi-factor session."
   },
-  "REDACTED_TOKEN": "This second factor is already in use.",
+  "REDACTED_TOKEN": "[DA] This second factor is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This second factor is already in use."
   },
-  "REDACTED_TOKEN": "Maximum number of second factors exceeded.",
+  "REDACTED_TOKEN": "[DA] Maximum number of second factors exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum number of second factors exceeded."
   },
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
+  "authErrorUnsupportedFirstFactor": "[DA] Unsupported first factor for multi-factor authentication.",
   "@authErrorUnsupportedFirstFactor": {
     "description": "Localization key for: Unsupported first factor for multi-factor authentication."
   },
-  "REDACTED_TOKEN": "Email change requires verification.",
+  "REDACTED_TOKEN": "[DA] Email change requires verification.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Email change requires verification."
   },
-  "REDACTED_TOKEN": "This phone number is already in use.",
+  "REDACTED_TOKEN": "[DA] This phone number is already in use.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: This phone number is already in use."
   },
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
+  "authErrorInvalidPassword": "[DA] The password is invalid or too weak.",
   "@authErrorInvalidPassword": {
     "description": "Localization key for: The password is invalid or too weak."
   },
-  "authErrorInvalidIdToken": "The ID token is invalid.",
+  "authErrorInvalidIdToken": "[DA] The ID token is invalid.",
   "@authErrorInvalidIdToken": {
     "description": "Localization key for: The ID token is invalid."
   },
-  "authErrorIdTokenExpired": "The ID token has expired.",
+  "authErrorIdTokenExpired": "[DA] The ID token has expired.",
   "@authErrorIdTokenExpired": {
     "description": "Localization key for: The ID token has expired."
   },
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
+  "authErrorIdTokenRevoked": "[DA] The ID token has been revoked.",
   "@authErrorIdTokenRevoked": {
     "description": "Localization key for: The ID token has been revoked."
   },
-  "authErrorInternalError": "An internal error occurred. Please try again.",
+  "authErrorInternalError": "[DA] An internal error occurred. Please try again.",
   "@authErrorInternalError": {
     "description": "Localization key for: An internal error occurred. Please try again."
   },
-  "authErrorInvalidArgument": "An invalid argument was provided.",
+  "authErrorInvalidArgument": "[DA] An invalid argument was provided.",
   "@authErrorInvalidArgument": {
     "description": "Localization key for: An invalid argument was provided."
   },
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
+  "authErrorInvalidClaims": "[DA] Invalid custom claims provided.",
   "@authErrorInvalidClaims": {
     "description": "Localization key for: Invalid custom claims provided."
   },
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
+  "authErrorInvalidContinueUri": "[DA] The continue URL is invalid.",
   "@authErrorInvalidContinueUri": {
     "description": "Localization key for: The continue URL is invalid."
   },
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
+  "authErrorInvalidCreationTime": "[DA] The creation time is invalid.",
   "@authErrorInvalidCreationTime": {
     "description": "Localization key for: The creation time is invalid."
   },
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
+  "authErrorInvalidDisabledField": "[DA] The disabled field value is invalid.",
   "@authErrorInvalidDisabledField": {
     "description": "Localization key for: The disabled field value is invalid."
   },
-  "authErrorInvalidDisplayName": "The display name is invalid.",
+  "authErrorInvalidDisplayName": "[DA] The display name is invalid.",
   "@authErrorInvalidDisplayName": {
     "description": "Localization key for: The display name is invalid."
   },
-  "REDACTED_TOKEN": "The dynamic link domain is invalid.",
+  "REDACTED_TOKEN": "[DA] The dynamic link domain is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The dynamic link domain is invalid."
   },
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
+  "authErrorInvalidEmailVerified": "[DA] The email verified value is invalid.",
   "@authErrorInvalidEmailVerified": {
     "description": "Localization key for: The email verified value is invalid."
   },
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
+  "authErrorInvalidHashAlgorithm": "[DA] The hash algorithm is invalid.",
   "@authErrorInvalidHashAlgorithm": {
     "description": "Localization key for: The hash algorithm is invalid."
   },
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
+  "authErrorInvalidHashBlockSize": "[DA] The hash block size is invalid.",
   "@authErrorInvalidHashBlockSize": {
     "description": "Localization key for: The hash block size is invalid."
   },
-  "REDACTED_TOKEN": "The hash derived key length is invalid.",
+  "REDACTED_TOKEN": "[DA] The hash derived key length is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash derived key length is invalid."
   },
-  "authErrorInvalidHashKey": "The hash key is invalid.",
+  "authErrorInvalidHashKey": "[DA] The hash key is invalid.",
   "@authErrorInvalidHashKey": {
     "description": "Localization key for: The hash key is invalid."
   },
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
+  "authErrorInvalidHashMemoryCost": "[DA] The hash memory cost is invalid.",
   "@authErrorInvalidHashMemoryCost": {
     "description": "Localization key for: The hash memory cost is invalid."
   },
-  "REDACTED_TOKEN": "The hash parallelization is invalid.",
+  "REDACTED_TOKEN": "[DA] The hash parallelization is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash parallelization is invalid."
   },
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
+  "authErrorInvalidHashRounds": "[DA] The hash rounds value is invalid.",
   "@authErrorInvalidHashRounds": {
     "description": "Localization key for: The hash rounds value is invalid."
   },
-  "REDACTED_TOKEN": "The hash salt separator is invalid.",
+  "REDACTED_TOKEN": "[DA] The hash salt separator is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The hash salt separator is invalid."
   },
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
+  "authErrorInvalidLastSignInTime": "[DA] The last sign-in time is invalid.",
   "@authErrorInvalidLastSignInTime": {
     "description": "Localization key for: The last sign-in time is invalid."
   },
-  "authErrorInvalidPageToken": "The page token is invalid.",
+  "authErrorInvalidPageToken": "[DA] The page token is invalid.",
   "@authErrorInvalidPageToken": {
     "description": "Localization key for: The page token is invalid."
   },
-  "authErrorInvalidProviderData": "The provider data is invalid.",
+  "authErrorInvalidProviderData": "[DA] The provider data is invalid.",
   "@authErrorInvalidProviderData": {
     "description": "Localization key for: The provider data is invalid."
   },
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
+  "authErrorInvalidProviderId": "[DA] The provider ID is invalid.",
   "@authErrorInvalidProviderId": {
     "description": "Localization key for: The provider ID is invalid."
   },
-  "REDACTED_TOKEN": "The session cookie duration is invalid.",
+  "REDACTED_TOKEN": "[DA] The session cookie duration is invalid.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The session cookie duration is invalid."
   },
-  "authErrorInvalidUid": "The UID is invalid.",
+  "authErrorInvalidUid": "[DA] The UID is invalid.",
   "@authErrorInvalidUid": {
     "description": "Localization key for: The UID is invalid."
   },
-  "authErrorInvalidUserImport": "The user import record is invalid.",
+  "authErrorInvalidUserImport": "[DA] The user import record is invalid.",
   "@authErrorInvalidUserImport": {
     "description": "Localization key for: The user import record is invalid."
   },
-  "REDACTED_TOKEN": "Maximum user import count exceeded.",
+  "REDACTED_TOKEN": "[DA] Maximum user import count exceeded.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Maximum user import count exceeded."
   },
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
+  "authErrorMissingAndroidPkgName": "[DA] Missing Android package name.",
   "@authErrorMissingAndroidPkgName": {
     "description": "Localization key for: Missing Android package name."
   },
-  "authErrorMissingContinueUri": "Missing continue URL.",
+  "authErrorMissingContinueUri": "[DA] Missing continue URL.",
   "@authErrorMissingContinueUri": {
     "description": "Localization key for: Missing continue URL."
   },
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
+  "authErrorMissingHashAlgorithm": "[DA] Missing hash algorithm.",
   "@authErrorMissingHashAlgorithm": {
     "description": "Localization key for: Missing hash algorithm."
   },
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
+  "authErrorMissingIosBundleId": "[DA] Missing iOS bundle ID.",
   "@authErrorMissingIosBundleId": {
     "description": "Localization key for: Missing iOS bundle ID."
   },
-  "authErrorMissingUid": "Missing UID.",
+  "authErrorMissingUid": "[DA] Missing UID.",
   "@authErrorMissingUid": {
     "description": "Localization key for: Missing UID."
   },
-  "REDACTED_TOKEN": "Missing OAuth client secret.",
+  "REDACTED_TOKEN": "[DA] Missing OAuth client secret.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Missing OAuth client secret."
   },
-  "authErrorProjectNotFound": "Firebase project not found.",
+  "authErrorProjectNotFound": "[DA] Firebase project not found.",
   "@authErrorProjectNotFound": {
     "description": "Localization key for: Firebase project not found."
   },
-  "authErrorReservedClaims": "Reserved claims provided.",
+  "authErrorReservedClaims": "[DA] Reserved claims provided.",
   "@authErrorReservedClaims": {
     "description": "Localization key for: Reserved claims provided."
   },
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
+  "authErrorSessionCookieExpired": "[DA] Session cookie has expired.",
   "@authErrorSessionCookieExpired": {
     "description": "Localization key for: Session cookie has expired."
   },
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
+  "authErrorSessionCookieRevoked": "[DA] Session cookie has been revoked.",
   "@authErrorSessionCookieRevoked": {
     "description": "Localization key for: Session cookie has been revoked."
   },
-  "authErrorUidAlreadyExists": "The UID is already in use.",
+  "authErrorUidAlreadyExists": "[DA] The UID is already in use.",
   "@authErrorUidAlreadyExists": {
     "description": "Localization key for: The UID is already in use."
   },
-  "REDACTED_TOKEN": "The continue URL domain is not whitelisted.",
+  "REDACTED_TOKEN": "[DA] The continue URL domain is not whitelisted.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: The continue URL domain is not whitelisted."
   },
-  "authErrorUnknown": "An unknown authentication error occurred.",
+  "authErrorUnknown": "[DA] An unknown authentication error occurred.",
   "@authErrorUnknown": {
     "description": "Localization key for: An unknown authentication error occurred."
   },
-  "checkingPermissions1": "Checking permissions... (Danish)",
+  "checkingPermissions1": "فحص الأذونات...",
   "@checkingPermissions1": {
     "description": "Localization key for: Checking permissions..."
   },
-  "paymentSuccessful": "Payment Successful! (Danish)",
+  "paymentSuccessful": "تم الدفع بنجاح",
   "@paymentSuccessful": {
     "description": "Localization key for: Payment Successful!"
   },
-  "businessAvailability": "Business Availability (Danish)",
+  "businessAvailability": "توفر الأعمال",
   "@businessAvailability": {
     "description": "Localization key for: Business Availability"
   },
-  "send": "Send (Danish)",
+  "send": "إرسال",
   "@send": {
     "description": "Localization key for: Send"
   },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle} (Danish)",
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
   "@newNotificationPayloadtitle": {
     "description": "Localization key for: New notification: {payloadTitle}"
   },
-  "gameList": "Game List (Danish)",
+  "gameList": "قائمة الألعاب",
   "@gameList": {
     "description": "Localization key for: Game List"
   },
-  "deleteAvailability": "Delete Availability (Danish)",
+  "deleteAvailability": "حذف التوفر",
   "@deleteAvailability": {
     "description": "Localization key for: Delete Availability"
   },
-  "connectToGoogleCalendar": "Connect to Google Calendar (Danish)",
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
   "@connectToGoogleCalendar": {
     "description": "Localization key for: Connect to Google Calendar"
   },
-  "adminFreeAccess": "Admin Free Access",
+  "adminFreeAccess": "[DA] Admin Free Access",
   "@adminFreeAccess": {
     "description": "Localization key for: Admin Free Access"
   },
-  "emailProfileemail": "Email: {profileEmail} (Danish)",
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
   "@emailProfileemail": {
     "description": "Localization key for: Email: {profileEmail}"
   },
-  "calendar": "Calendar (Danish)",
+  "calendar": "التقويم",
   "@calendar": {
     "description": "Localization key for: Calendar"
   },
-  "upload1": "Upload (Danish)",
+  "upload1": "[DA] Upload (Danish)",
   "@upload1": {
     "description": "Localization key for: Upload"
   },
-  "resolved": "Resolved (Danish)",
+  "resolved": "تم الحل",
   "@resolved": {
     "description": "Localization key for: Resolved"
   },
-  "keepSubscription": "Keep Subscription (Danish)",
+  "keepSubscription": "الاحتفاظ بالاشتراك",
   "@keepSubscription": {
     "description": "Localization key for: Keep Subscription"
   },
-  "REDACTED_TOKEN": "Virtual session created! Inviting friends... (Danish)",
+  "REDACTED_TOKEN": "[DA] Virtual session created! Inviting friends... (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Virtual session created! Inviting friends..."
   },
-  "noEventsScheduledForToday": "No events scheduled for today (Danish)",
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
   "@noEventsScheduledForToday": {
     "description": "Localization key for: No events scheduled for today"
   },
-  "exportData": "Export Data (Danish)",
+  "exportData": "تصدير البيانات",
   "@exportData": {
     "description": "Localization key for: Export Data"
   },
-  "rewards": "Rewards (Danish)",
+  "rewards": "[DA] Rewards (Danish)",
   "@rewards": {
     "description": "Localization key for: Rewards"
   },
-  "time": "Time (Danish)",
+  "time": "[DA] Time (Danish)",
   "@time": {
     "description": "Localization key for: Time"
   },
-  "userCid": "User {id}",
+  "userCid": "[DA] User {id}",
   "@userCid": {
     "description": "Localization key for: User {id}"
   },
-  "noSlots": "No slots (Danish)",
+  "noSlots": "[DA] No slots (Danish)",
   "@noSlots": {
     "description": "Localization key for: No slots"
   },
-  "signIn": "Sign In (Danish)",
+  "signIn": "[DA] Sign In (Danish)",
   "@signIn": {
     "description": "Localization key for: Sign In"
   },
-  "homeFeedScreen": "Home Feed Screen (Danish)",
+  "homeFeedScreen": "[DA] Home Feed Screen (Danish)",
   "@homeFeedScreen": {
     "description": "Localization key for: Home Feed Screen"
   },
-  "selectLocation": "Select Location (Danish)",
+  "selectLocation": "[DA] Select Location (Danish)",
   "@selectLocation": {
     "description": "Localization key for: Select Location"
   },
-  "noTicketsYet": "No tickets yet (Danish)",
+  "noTicketsYet": "[DA] No tickets yet (Danish)",
   "@noTicketsYet": {
     "description": "Localization key for: No tickets yet"
   },
-  "meetingSharedSuccessfully1": "Meeting shared successfully! (Danish)",
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
   "@meetingSharedSuccessfully1": {
     "description": "Localization key for: Meeting shared successfully!"
   },
-  "studioProfile": "Studio Profile (Danish)",
+  "studioProfile": "ملف الاستوديو",
   "@studioProfile": {
     "description": "Localization key for: Studio Profile"
   },
-  "subscriptionUnavailable": "Subscription unavailable (Danish)",
+  "subscriptionUnavailable": "[DA] Subscription unavailable (Danish)",
   "@subscriptionUnavailable": {
     "description": "Localization key for: Subscription unavailable"
   },
-  "confirmBooking": "Confirm Booking (Danish)",
+  "confirmBooking": "[DA] Confirm Booking (Danish)",
   "@confirmBooking": {
     "description": "Localization key for: Confirm Booking"
   },
-  "failedToUpdatePermissionE": "Failed to update permission: $e (Danish)",
+  "failedToUpdatePermissionE": "[DA] Failed to update permission: $e (Danish)",
   "@failedToUpdatePermissionE": {
     "description": "Localization key for: Failed to update permission: $e"
   },
-  "reject": "Reject (Danish)",
+  "reject": "[DA] Reject (Danish)",
   "@reject": {
     "description": "Localization key for: Reject"
   },
-  "REDACTED_TOKEN": "Ambassador Status: {ambassadorStatus} (Danish)",
+  "REDACTED_TOKEN": "[DA] Ambassador Status: {ambassadorStatus} (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
   },
-  "noProviders": "No providers",
+  "noProviders": "[DA] No providers",
   "@noProviders": {
     "description": "Localization key for: No providers"
   },
-  "checkingSubscription": "Checking subscription... (Danish)",
+  "checkingSubscription": "[DA] Checking subscription... (Danish)",
   "@checkingSubscription": {
     "description": "Localization key for: Checking subscription..."
   },
-  "errorPickingImageE": "Error picking image: $e (Danish)",
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
   "@errorPickingImageE": {
     "description": "Localization key for: Error picking image: $e"
   },
-  "noContentAvailableYet": "No content available yet (Danish)",
+  "noContentAvailableYet": "[DA] No content available yet (Danish)",
   "@noContentAvailableYet": {
     "description": "Localization key for: No content available yet"
   },
-  "resolve": "Resolve (Danish)",
+  "resolve": "[DA] Resolve (Danish)",
   "@resolve": {
     "description": "Localization key for: Resolve"
   },
-  "errorLoadingSurveysError": "Error loading surveys: $error (Danish)",
+  "errorLoadingSurveysError": "[DA] Error loading surveys: $error (Danish)",
   "@errorLoadingSurveysError": {
     "description": "Localization key for: Error loading surveys: $error"
   },
-  "errorLogerrormessage": "Error: {errorMessage}",
+  "errorLogerrormessage": "[DA] Error: {errorMessage}",
   "@errorLogerrormessage": {
     "description": "Localization key for: Error: {errorMessage}"
   },
-  "getHelpWithYourAccount": "Get help with your account (Danish)",
+  "getHelpWithYourAccount": "[DA] Get help with your account (Danish)",
   "@getHelpWithYourAccount": {
     "description": "Localization key for: Get help with your account"
   },
-  "pay": "Pay (Danish)",
+  "pay": "[DA] Pay (Danish)",
   "@pay": {
     "description": "Localization key for: Pay"
   },
-  "noOrganizations": "noOrganizations (TRANSLATE)",
+  "noOrganizations": "[DA] noOrganizations (TRANSLATE)",
   "@noOrganizations": {
     "description": "noOrganizations description"
   },
-  "meetingDetails": "meetingDetails (TRANSLATE)",
+  "meetingDetails": "تفاصيل الاجتماع",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "Error loading appointments (Danish)",
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
   "@errorLoadingAppointments": {
     "description": "Localization key for: Error loading appointments"
   },
-  "changesSavedSuccessfully": "Changes saved successfully! (Danish)",
+  "changesSavedSuccessfully": "[DA] Changes saved successfully! (Danish)",
   "@changesSavedSuccessfully": {
     "description": "Localization key for: Changes saved successfully!"
   },
-  "createNewInvoice": "Create New Invoice (Danish)",
+  "createNewInvoice": "[DA] Create New Invoice (Danish)",
   "@createNewInvoice": {
     "description": "Localization key for: Create New Invoice"
   },
-  "profileNotFound": "Profile not found. (Danish)",
+  "profileNotFound": "الملف الشخصي غير موجود",
   "@profileNotFound": {
     "description": "Localization key for: Profile not found."
   },
-  "errorConfirmingPaymentE": "Error confirming payment: $e (Danish)",
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
   "@errorConfirmingPaymentE": {
     "description": "Localization key for: Error confirming payment: $e"
   },
-  "inviteFriends": "Invite Friends (Danish)",
+  "inviteFriends": "دعوة الأصدقاء",
   "@inviteFriends": {
     "description": "Localization key for: Invite Friends"
   },
-  "profileSaved": "Profile saved! (Danish)",
+  "profileSaved": "[DA] Profile saved! (Danish)",
   "@profileSaved": {
     "description": "Localization key for: Profile saved!"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via email (Danish)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via email"
   },
-  "valuetointk": "\\${value}K (Danish)",
+  "valuetointk": "[DA] \\${value}K (Danish)",
   "@valuetointk": {
     "description": "Localization key for: \\${value}K"
   },
-  "deleteAccount": "Delete Account (Danish)",
+  "deleteAccount": "[DA] Delete Account (Danish)",
   "@deleteAccount": {
     "description": "Localization key for: Delete Account"
   },
-  "profile1": "Profile (Danish)",
+  "profile1": "الملف الشخصي",
   "@profile1": {
     "description": "Localization key for: Profile"
   },
-  "businessOnboarding": "Business Onboarding (Danish)",
+  "businessOnboarding": "[DA] Business Onboarding (Danish)",
   "@businessOnboarding": {
     "description": "Localization key for: Business Onboarding"
   },
-  "addNewClient": "Add New Client (Danish)",
+  "addNewClient": "[DA] Add New Client (Danish)",
   "@addNewClient": {
     "description": "Localization key for: Add New Client"
   },
-  "darkMode": "Dark Mode (Danish)",
+  "darkMode": "[DA] Dark Mode (Danish)",
   "@darkMode": {
     "description": "Localization key for: Dark Mode"
   },
-  "addProvider": "Add Provider",
+  "addProvider": "[DA] Add Provider",
   "@addProvider": {
     "description": "Localization key for: Add Provider"
   },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
+  "noRouteDefinedForStateuripath": "[DA] No route defined for {path}",
   "@noRouteDefinedForStateuripath": {
     "description": "Localization key for: No route defined for {path}"
   },
-  "REDACTED_TOKEN": "You will receive a confirmation email shortly. (Danish)",
+  "REDACTED_TOKEN": "[DA] You will receive a confirmation email shortly. (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: You will receive a confirmation email shortly."
   },
-  "addQuestion": "Add Question (Danish)",
+  "addQuestion": "[DA] Add Question (Danish)",
   "@addQuestion": {
     "description": "Localization key for: Add Question"
   },
-  "privacyPolicy": "Privacy Policy (Danish)",
+  "privacyPolicy": "[DA] Privacy Policy (Danish)",
   "@privacyPolicy": {
     "description": "Localization key for: Privacy Policy"
   },
-  "branchesLengthBranches": "{branchCount} branches (Danish)",
+  "branchesLengthBranches": "[DA] {branchCount} branches (Danish)",
   "@branchesLengthBranches": {
     "description": "Localization key for: {branchCount} branches"
   },
-  "join": "Join (Danish)",
+  "join": "[DA] Join (Danish)",
   "@join": {
     "description": "Localization key for: Join"
   },
-  "businessSubscription": "Business Subscription (Danish)",
+  "businessSubscription": "[DA] Business Subscription (Danish)",
   "@businessSubscription": {
     "description": "Localization key for: Business Subscription"
   },
-  "myInvites1": "My Invites (Danish)",
+  "myInvites1": "دعواتي",
   "@myInvites1": {
     "description": "Localization key for: My Invites"
   },
-  "providers": "Providers",
+  "providers": "[DA] Providers",
   "@providers": {
     "description": "Localization key for: Providers"
   },
-  "surveyManagement": "Survey Management (Danish)",
+  "surveyManagement": "[DA] Survey Management (Danish)",
   "@surveyManagement": {
     "description": "Localization key for: Survey Management"
   },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
+  "pleaseEnterAValidEmailOrPhone": "[DA] Please enter a valid email or phone",
   "@pleaseEnterAValidEmailOrPhone": {
     "description": "Localization key for: Please enter a valid email or phone"
   },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room! (Danish)",
+  "noRoomsFoundAddYourFirstRoom": "[DA] No rooms found. Add your first room! (Danish)",
   "@noRoomsFoundAddYourFirstRoom": {
     "description": "Localization key for: No rooms found. Add your first room!"
   },
-  "readOurPrivacyPolicy": "Read our privacy policy (Danish)",
+  "readOurPrivacyPolicy": "[DA] Read our privacy policy (Danish)",
   "@readOurPrivacyPolicy": {
     "description": "Localization key for: Read our privacy policy"
   },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy (Danish)",
+  "couldNotOpenPrivacyPolicy": "[DA] Could not open privacy policy (Danish)",
   "@couldNotOpenPrivacyPolicy": {
     "description": "Localization key for: Could not open privacy policy"
   },
-  "refresh1": "Refresh (Danish)",
+  "refresh1": "[DA] Refresh (Danish)",
   "@refresh1": {
     "description": "Localization key for: Refresh"
   },
-  "roomUpdatedSuccessfully": "Room updated successfully! (Danish)",
+  "roomUpdatedSuccessfully": "[DA] Room updated successfully! (Danish)",
   "@roomUpdatedSuccessfully": {
     "description": "Localization key for: Room updated successfully!"
   },
-  "contentDetail": "Content Detail (Danish)",
+  "contentDetail": "[DA] Content Detail (Danish)",
   "@contentDetail": {
     "description": "Localization key for: Content Detail"
   },
-  "cancelSubscription": "Cancel Subscription (Danish)",
+  "cancelSubscription": "[DA] Cancel Subscription (Danish)",
   "@cancelSubscription": {
     "description": "Localization key for: Cancel Subscription"
   },
-  "REDACTED_TOKEN": "Successfully registered as Ambassador! (Danish)",
+  "REDACTED_TOKEN": "[DA] Successfully registered as Ambassador! (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Successfully registered as Ambassador!"
   },
-  "save1": "Save (Danish)",
+  "save1": "[DA] Save (Danish)",
   "@save1": {
     "description": "Localization key for: Save"
   },
-  "copy1": "Copy (Danish)",
+  "copy1": "[DA] Copy (Danish)",
   "@copy1": {
     "description": "Localization key for: Copy"
   },
-  "failedToSendInvitationE": "Failed to send invitation: $e (Danish)",
+  "failedToSendInvitationE": "[DA] Failed to send invitation: $e (Danish)",
   "@failedToSendInvitationE": {
     "description": "Localization key for: Failed to send invitation: $e"
   },
-  "surveyScore": "Survey Score (Danish)",
+  "surveyScore": "[DA] Survey Score (Danish)",
   "@surveyScore": {
     "description": "Localization key for: Survey Score"
   },
-  "userUserid": "User $userId",
+  "userUserid": "[DA] User $userId",
   "@userUserid": {
     "description": "Localization key for: User $userId"
   },
-  "noAppointmentsFound": "No appointments found. (Danish)",
+  "noAppointmentsFound": "[DA] No appointments found. (Danish)",
   "@noAppointmentsFound": {
     "description": "Localization key for: No appointments found."
   },
-  "responseDetail": "Response Detail (Danish)",
+  "responseDetail": "[DA] Response Detail (Danish)",
   "@responseDetail": {
     "description": "Localization key for: Response Detail"
   },
-  "REDACTED_TOKEN": "Business Verification Screen - Coming Soon (Danish)",
+  "REDACTED_TOKEN": "شاشة التحقق من الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Verification Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Business profile activated successfully! (Danish)",
+  "REDACTED_TOKEN": "تم تفعيل الملف التجاري بنجاح",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business profile activated successfully!"
   },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e (Danish)",
+  "failedToStartProSubscriptionE": "[DA] Failed to start Pro subscription: $e (Danish)",
   "@failedToStartProSubscriptionE": {
     "description": "Localization key for: Failed to start Pro subscription: $e"
   },
-  "REDACTED_TOKEN": "Business Dashboard Entry Screen - Coming Soon (Danish)",
+  "REDACTED_TOKEN": "[DA] Business Dashboard Entry Screen - Coming Soon (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
   },
-  "contentFilter": "Content Filter (Danish)",
+  "contentFilter": "[DA] Content Filter (Danish)",
   "@contentFilter": {
     "description": "Localization key for: Content Filter"
   },
-  "helpSupport": "Help & Support (Danish)",
+  "helpSupport": "[DA] Help & Support (Danish)",
   "@helpSupport": {
     "description": "Localization key for: Help & Support"
   },
-  "editRoom": "Edit Room (Danish)",
+  "editRoom": "[DA] Edit Room (Danish)",
   "@editRoom": {
     "description": "Localization key for: Edit Room"
   },
-  "appointmentApptid": "Appointment: {appointmentId}",
+  "appointmentApptid": "[DA] Appointment: {appointmentId}",
   "@appointmentApptid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
+  "deviceLogdeviceinfo": "[DA] Device: {deviceInfo}",
   "@deviceLogdeviceinfo": {
     "description": "Localization key for: Device: {deviceInfo}"
   },
-  "REDACTED_TOKEN": "Business CRM Entry Screen - Coming Soon (Danish)",
+  "REDACTED_TOKEN": "[DA] Business CRM Entry Screen - Coming Soon (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
   },
-  "adminDashboard": "Admin Dashboard",
+  "adminDashboard": "[DA] Admin Dashboard",
   "@adminDashboard": {
     "description": "Localization key for: Admin Dashboard"
   },
-  "orgmemberidslengthMembers": "{memberCount} members",
+  "orgmemberidslengthMembers": "[DA] {memberCount} members",
   "@orgmemberidslengthMembers": {
     "description": "Localization key for: {memberCount} members"
   },
-  "errorLoadingDashboardError": "Error loading dashboard: $error (Danish)",
+  "errorLoadingDashboardError": "[DA] Error loading dashboard: $error (Danish)",
   "@errorLoadingDashboardError": {
     "description": "Localization key for: Error loading dashboard: $error"
   },
-  "gameDeletedSuccessfully": "Game deleted successfully! (Danish)",
+  "gameDeletedSuccessfully": "[DA] Game deleted successfully! (Danish)",
   "@gameDeletedSuccessfully": {
     "description": "Localization key for: Game deleted successfully!"
   },
-  "viewResponsesComingSoon": "View responses - Coming soon! (Danish)",
+  "viewResponsesComingSoon": "[DA] View responses - Coming soon! (Danish)",
   "@viewResponsesComingSoon": {
     "description": "Localization key for: View responses - Coming soon!"
   },
-  "deleteProvider": "Delete Provider",
+  "deleteProvider": "[DA] Delete Provider",
   "@deleteProvider": {
     "description": "Localization key for: Delete Provider"
   },
-  "errorLoadingRewards": "Error loading rewards (Danish)",
+  "errorLoadingRewards": "[DA] Error loading rewards (Danish)",
   "@errorLoadingRewards": {
     "description": "Localization key for: Error loading rewards"
   },
-  "failedToDeleteAccountE": "Failed to delete account: $e (Danish)",
+  "failedToDeleteAccountE": "[DA] Failed to delete account: $e (Danish)",
   "@failedToDeleteAccountE": {
     "description": "Localization key for: Failed to delete account: $e"
   },
-  "invited1": "Invited (Danish)",
+  "invited1": "[DA] Invited (Danish)",
   "@invited1": {
     "description": "Localization key for: Invited"
   },
-  "noBranchesAvailable": "No branches available (Danish)",
+  "noBranchesAvailable": "[DA] No branches available (Danish)",
   "@noBranchesAvailable": {
     "description": "Localization key for: No branches available"
   },
-  "errorError": "Error: $error (Danish)",
+  "errorError": "[DA] Error: $error (Danish)",
   "@errorError": {
     "description": "Localization key for: Error: $error"
   },
-  "noEvents": "No events (Danish)",
+  "noEvents": "[DA] No events (Danish)",
   "@noEvents": {
     "description": "Localization key for: No events"
   },
-  "gameCreatedSuccessfully": "Game created successfully! (Danish)",
+  "gameCreatedSuccessfully": "[DA] Game created successfully! (Danish)",
   "@gameCreatedSuccessfully": {
     "description": "Localization key for: Game created successfully!"
   },
-  "add1": "Add (Danish)",
+  "add1": "[DA] Add (Danish)",
   "@add1": {
     "description": "Localization key for: Add"
   },
-  "creatorCreatorid": "Creator: $creatorId",
+  "creatorCreatorid": "[DA] Creator: $creatorId",
   "@creatorCreatorid": {
     "description": "Localization key for: Creator: $creatorId"
   },
-  "eventstarttimeEventendtime": "{startTime} - {endTime} (Danish)",
+  "eventstarttimeEventendtime": "[DA] {startTime} - {endTime} (Danish)",
   "@eventstarttimeEventendtime": {
     "description": "Localization key for: {startTime} - {endTime}"
   },
-  "allowPlaytime": "Allow Playtime (Danish)",
+  "allowPlaytime": "[DA] Allow Playtime (Danish)",
   "@allowPlaytime": {
     "description": "Localization key for: Allow Playtime"
   },
-  "clients": "Clients (Danish)",
+  "clients": "[DA] Clients (Danish)",
   "@clients": {
     "description": "Localization key for: Clients"
   },
-  "noAmbassadorDataAvailable": "No ambassador data available (Danish)",
+  "noAmbassadorDataAvailable": "[DA] No ambassador data available (Danish)",
   "@noAmbassadorDataAvailable": {
     "description": "Localization key for: No ambassador data available"
   },
-  "backgroundDeletedSuccessfully": "Background deleted successfully! (Danish)",
+  "backgroundDeletedSuccessfully": "[DA] Background deleted successfully! (Danish)",
   "@backgroundDeletedSuccessfully": {
     "description": "Localization key for: Background deleted successfully!"
   },
-  "errorSnapshoterror": "Error: {error} (Danish)",
+  "errorSnapshoterror": "[DA] Error: {error} (Danish)",
   "@errorSnapshoterror": {
     "description": "Localization key for: Error: {error}"
   },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet. (Danish)",
+  "noAnalyticsDataAvailableYet": "[DA] No analytics data available yet. (Danish)",
   "@noAnalyticsDataAvailableYet": {
     "description": "Localization key for: No analytics data available yet."
   },
-  "errorDeletingSlotE": "Error deleting slot: $e (Danish)",
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
   "@errorDeletingSlotE": {
     "description": "Localization key for: Error deleting slot: $e"
   },
-  "REDACTED_TOKEN": "Business Phone Booking Entry Screen - Coming Soon (Danish)",
+  "REDACTED_TOKEN": "[DA] Business Phone Booking Entry Screen - Coming Soon (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
   },
-  "verification": "Verification (Danish)",
+  "verification": "[DA] Verification (Danish)",
   "@verification": {
     "description": "Localization key for: Verification"
   },
-  "copyLink": "Copy Link (Danish)",
+  "copyLink": "[DA] Copy Link (Danish)",
   "@copyLink": {
     "description": "Localization key for: Copy Link"
   },
-  "dashboard1": "Dashboard (Danish)",
+  "dashboard1": "[DA] Dashboard (Danish)",
   "@dashboard1": {
     "description": "Localization key for: Dashboard"
   },
-  "manageChildAccounts": "Manage Child Accounts (Danish)",
+  "manageChildAccounts": "[DA] Manage Child Accounts (Danish)",
   "@manageChildAccounts": {
     "description": "Localization key for: Manage Child Accounts"
   },
-  "grantConsent": "Grant Consent (Danish)",
+  "grantConsent": "[DA] Grant Consent (Danish)",
   "@grantConsent": {
     "description": "Localization key for: Grant Consent"
   },
-  "myProfile1": "My Profile (Danish)",
+  "myProfile1": "[DA] My Profile (Danish)",
   "@myProfile1": {
     "description": "Localization key for: My Profile"
   },
-  "submit": "Submit (Danish)",
+  "submit": "[DA] Submit (Danish)",
   "@submit": {
     "description": "Localization key for: Submit"
   },
-  "userLoguseremail": "User: {userEmail}",
+  "userLoguseremail": "[DA] User: {userEmail}",
   "@userLoguseremail": {
     "description": "Localization key for: User: {userEmail}"
   },
-  "emailNotifications": "Email Notifications (Danish)",
+  "emailNotifications": "إشعارات البريد الإلكتروني",
   "@emailNotifications": {
     "description": "Localization key for: Email Notifications"
   },
-  "ambassadorDashboard": "Ambassador Dashboard (Danish)",
+  "ambassadorDashboard": "[DA] Ambassador Dashboard (Danish)",
   "@ambassadorDashboard": {
     "description": "Localization key for: Ambassador Dashboard"
   },
-  "phoneBooking": "Phone Booking (Danish)",
+  "phoneBooking": "[DA] Phone Booking (Danish)",
   "@phoneBooking": {
     "description": "Localization key for: Phone Booking"
   },
-  "bookViaChat": "Book via Chat (Danish)",
+  "bookViaChat": "[DA] Book via Chat (Danish)",
   "@bookViaChat": {
     "description": "Localization key for: Book via Chat"
   },
-  "error": "Fejl",
+  "error": "[DA] Fejl",
   "@error": {
     "description": "Description"
   },
-  "businessProfile": "Business Profile (Danish)",
+  "businessProfile": "[DA] Business Profile (Danish)",
   "@businessProfile": {
     "description": "Localization key for: Business Profile"
   },
-  "REDACTED_TOKEN": "Business Booking Entry Screen - Coming Soon (Danish)",
+  "REDACTED_TOKEN": "[DA] Business Booking Entry Screen - Coming Soon (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
   },
-  "createNewSurvey": "Create New Survey (Danish)",
+  "createNewSurvey": "[DA] Create New Survey (Danish)",
   "@createNewSurvey": {
     "description": "Localization key for: Create New Survey"
   },
-  "backgroundRejected": "Background rejected (Danish)",
+  "backgroundRejected": "[DA] Background rejected (Danish)",
   "@backgroundRejected": {
     "description": "Localization key for: Background rejected"
   },
-  "noMediaSelected": "No media selected (Danish)",
+  "noMediaSelected": "[DA] No media selected (Danish)",
   "@noMediaSelected": {
     "description": "Localization key for: No media selected"
   },
-  "syncToGoogle": "Sync to Google (Danish)",
+  "syncToGoogle": "[DA] Sync to Google (Danish)",
   "@syncToGoogle": {
     "description": "Localization key for: Sync to Google"
   },
-  "virtualPlaytime": "Virtual Playtime (Danish)",
+  "virtualPlaytime": "[DA] Virtual Playtime (Danish)",
   "@virtualPlaytime": {
     "description": "Localization key for: Virtual Playtime"
   },
-  "colorContrastTesting": "Color Contrast Testing",
+  "colorContrastTesting": "[DA] Color Contrast Testing",
   "@colorContrastTesting": {
     "description": "Localization key for: Color Contrast Testing"
   },
-  "loginFailedE": "Login failed: $e",
+  "loginFailedE": "[DA] Login failed: $e",
   "@loginFailedE": {
     "description": "Localization key for: Login failed: $e"
   },
-  "invitationSentSuccessfully": "Invitation sent successfully! (Danish)",
+  "invitationSentSuccessfully": "[DA] Invitation sent successfully! (Danish)",
   "@invitationSentSuccessfully": {
     "description": "Localization key for: Invitation sent successfully!"
   },
-  "registering": "Registering... (Danish)",
+  "registering": "[DA] Registering... (Danish)",
   "@registering": {
     "description": "Localization key for: Registering..."
   },
-  "statusAppointmentstatusname": "Status: {status} (Danish)",
+  "statusAppointmentstatusname": "[DA] Status: {status} (Danish)",
   "@statusAppointmentstatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "home1": "Home (Danish)",
+  "home1": "[DA] Home (Danish)",
   "@home1": {
     "description": "Localization key for: Home"
   },
-  "errorSavingSettingsE": "Error saving settings: $e (Danish)",
+  "errorSavingSettingsE": "[DA] Error saving settings: $e (Danish)",
   "@errorSavingSettingsE": {
     "description": "Localization key for: Error saving settings: $e"
   },
-  "appVersionAndInformation": "App version and information (Danish)",
+  "appVersionAndInformation": "[DA] App version and information (Danish)",
   "@appVersionAndInformation": {
     "description": "Localization key for: App version and information"
   },
-  "REDACTED_TOKEN": "Business Subscription Entry Screen - Coming Soon (Danish)",
+  "REDACTED_TOKEN": "[DA] Business Subscription Entry Screen - Coming Soon (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
   },
-  "ekeyEvalue": "{key}: {value} (Danish)",
+  "ekeyEvalue": "[DA] {key}: {value} (Danish)",
   "@ekeyEvalue": {
     "description": "Localization key for: {key}: {value}"
   },
-  "REDACTED_TOKEN": "Your payment has been processed successfully. (Danish)",
+  "REDACTED_TOKEN": "[DA] Your payment has been processed successfully. (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Your payment has been processed successfully."
   },
-  "errorE": "Error: $e (Danish)",
+  "errorE": "[DA] Error: $e (Danish)",
   "@errorE": {
     "description": "Localization key for: Error: $e"
   },
-  "viewAll1": "View All (Danish)",
+  "viewAll1": "[DA] View All (Danish)",
   "@viewAll1": {
     "description": "Localization key for: View All"
   },
-  "editSurveyComingSoon": "Edit survey - Coming soon! (Danish)",
+  "editSurveyComingSoon": "[DA] Edit survey - Coming soon! (Danish)",
   "@editSurveyComingSoon": {
     "description": "Localization key for: Edit survey - Coming soon!"
   },
-  "enterOtp": "Enter OTP (Danish)",
+  "enterOtp": "[DA] Enter OTP (Danish)",
   "@enterOtp": {
     "description": "Localization key for: Enter OTP"
   },
-  "payment": "Payment (Danish)",
+  "payment": "[DA] Payment (Danish)",
   "@payment": {
     "description": "Localization key for: Payment"
   },
-  "REDACTED_TOKEN": "Automatically confirm new booking requests (Danish)",
+  "REDACTED_TOKEN": "[DA] Automatically confirm new booking requests (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Automatically confirm new booking requests"
   },
-  "errorPickingVideoE": "Error picking video: $e",
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
   "@errorPickingVideoE": {
     "description": "Localization key for: Error picking video: $e"
   },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName} (Danish)",
+  "noRouteDefinedForSettingsname": "[DA] No route defined for {settingsName} (Danish)",
   "@noRouteDefinedForSettingsname": {
     "description": "Localization key for: No route defined for {settingsName}"
   },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background (Danish)",
+  "pleaseSignInToUploadABackground": "[DA] Please sign in to upload a background (Danish)",
   "@pleaseSignInToUploadABackground": {
     "description": "Localization key for: Please sign in to upload a background"
   },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
+  "logtargettypeLogtargetid": "[DA] {targetType}: {targetId}",
   "@logtargettypeLogtargetid": {
     "description": "Localization key for: {targetType}: {targetId}"
   },
-  "staffAvailability": "Staff Availability (Danish)",
+  "staffAvailability": "[DA] Staff Availability (Danish)",
   "@staffAvailability": {
     "description": "Localization key for: Staff Availability"
   },
-  "livePlaytime": "Live Playtime (Danish)",
+  "livePlaytime": "[DA] Live Playtime (Danish)",
   "@livePlaytime": {
     "description": "Localization key for: Live Playtime"
   },
-  "autoconfirmBookings": "Auto-Confirm Bookings (Danish)",
+  "autoconfirmBookings": "[DA] Auto-Confirm Bookings (Danish)",
   "@autoconfirmBookings": {
     "description": "Localization key for: Auto-Confirm Bookings"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Pro plan... (Danish)",
+  "REDACTED_TOKEN": "[DA] Redirecting to Stripe checkout for Pro plan... (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
   },
-  "exportAsCsv": "Export as CSV (Danish)",
+  "exportAsCsv": "[DA] Export as CSV (Danish)",
   "@exportAsCsv": {
     "description": "Localization key for: Export as CSV"
   },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon! (Danish)",
+  "deleteFunctionalityComingSoon": "[DA] Delete functionality coming soon! (Danish)",
   "@deleteFunctionalityComingSoon": {
     "description": "Localization key for: Delete functionality coming soon!"
   },
-  "editClient": "Edit Client (Danish)",
+  "editClient": "[DA] Edit Client (Danish)",
   "@editClient": {
     "description": "Localization key for: Edit Client"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this message? (Danish)",
+  "REDACTED_TOKEN": "[DA] Are you sure you want to delete this message? (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this message?"
   },
-  "referralsAmbassadorreferrals": "Referrals: {referrals} (Danish)",
+  "referralsAmbassadorreferrals": "[DA] Referrals: {referrals} (Danish)",
   "@referralsAmbassadorreferrals": {
     "description": "Localization key for: Referrals: {referrals}"
   },
-  "notAuthenticated": "Not authenticated",
+  "notAuthenticated": "[DA] Not authenticated",
   "@notAuthenticated": {
     "description": "Localization key for: Not authenticated"
   },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents! (Danish)",
+  "privacyRequestSentToYourParents": "[DA] Privacy request sent to your parents! (Danish)",
   "@privacyRequestSentToYourParents": {
     "description": "Localization key for: Privacy request sent to your parents!"
   },
-  "clientDeletedSuccessfully": "Client deleted successfully! (Danish)",
+  "clientDeletedSuccessfully": "[DA] Client deleted successfully! (Danish)",
   "@clientDeletedSuccessfully": {
     "description": "Localization key for: Client deleted successfully!"
   },
-  "failedToCancelSubscription": "Failed to cancel subscription (Danish)",
+  "failedToCancelSubscription": "[DA] Failed to cancel subscription (Danish)",
   "@failedToCancelSubscription": {
     "description": "Localization key for: Failed to cancel subscription"
   },
-  "allLanguages": "All Languages (Danish)",
+  "allLanguages": "[DA] All Languages (Danish)",
   "@allLanguages": {
     "description": "Localization key for: All Languages"
   },
-  "slotDeletedSuccessfully": "Slot deleted successfully (Danish)",
+  "slotDeletedSuccessfully": "[DA] Slot deleted successfully (Danish)",
   "@slotDeletedSuccessfully": {
     "description": "Localization key for: Slot deleted successfully"
   },
-  "REDACTED_TOKEN": "Business Providers Entry Screen - Coming Soon",
+  "REDACTED_TOKEN": "[DA] Business Providers Entry Screen - Coming Soon",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Parents must approve before children can join (Danish)",
+  "REDACTED_TOKEN": "[DA] Parents must approve before children can join (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Parents must approve before children can join"
   },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo) (Danish)",
+  "subscribeToPro1499mo": "[DA] Subscribe to Pro (€14.99/mo) (Danish)",
   "@subscribeToPro1499mo": {
     "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
   },
-  "REDACTED_TOKEN": "Business Availability Entry Screen - Coming Soon (Danish)",
+  "REDACTED_TOKEN": "[DA] Business Availability Entry Screen - Coming Soon (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
   },
-  "appointmentsListlength": "Appointments: {count} (Danish)",
+  "appointmentsListlength": "[DA] Appointments: {count} (Danish)",
   "@appointmentsListlength": {
     "description": "Localization key for: Appointments: {count}"
   },
-  "clearFilters": "Clear Filters (Danish)",
+  "clearFilters": "[DA] Clear Filters (Danish)",
   "@clearFilters": {
     "description": "Localization key for: Clear Filters"
   },
-  "submitBooking": "Submit Booking (Danish)",
+  "submitBooking": "[DA] Submit Booking (Danish)",
   "@submitBooking": {
     "description": "Localization key for: Submit Booking"
   },
-  "REDACTED_TOKEN": "Are you sure you want to cancel this appointment? (Danish)",
+  "REDACTED_TOKEN": "[DA] Are you sure you want to cancel this appointment? (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to cancel this appointment?"
   },
-  "noUpcomingBookings": "No upcoming bookings (Danish)",
+  "noUpcomingBookings": "[DA] No upcoming bookings (Danish)",
   "@noUpcomingBookings": {
     "description": "Localization key for: No upcoming bookings"
   },
-  "goBack": "Go Back (Danish)",
+  "goBack": "[DA] Go Back (Danish)",
   "@goBack": {
     "description": "Localization key for: Go Back"
   },
-  "setup": "Setup (Danish)",
+  "setup": "[DA] Setup (Danish)",
   "@setup": {
     "description": "Localization key for: Setup"
   },
-  "inviteChild": "Invite Child (Danish)",
+  "inviteChild": "[DA] Invite Child (Danish)",
   "@inviteChild": {
     "description": "Localization key for: Invite Child"
   },
-  "goToDashboard": "Go to Dashboard (Danish)",
+  "goToDashboard": "[DA] Go to Dashboard (Danish)",
   "@goToDashboard": {
     "description": "Localization key for: Go to Dashboard"
   },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard (Danish)",
+  "ambassadorQuotaDashboard": "[DA] Ambassador Quota Dashboard (Danish)",
   "@ambassadorQuotaDashboard": {
     "description": "Localization key for: Ambassador Quota Dashboard"
   },
-  "adminSettings": "Admin Settings",
+  "adminSettings": "[DA] Admin Settings",
   "@adminSettings": {
     "description": "Localization key for: Admin Settings"
   },
-  "referralCode": "Referral Code (Danish)",
+  "referralCode": "[DA] Referral Code (Danish)",
   "@referralCode": {
     "description": "Localization key for: Referral Code"
   },
-  "adminLogadminemail": "Admin: {adminEmail}",
+  "adminLogadminemail": "[DA] Admin: {adminEmail}",
   "@adminLogadminemail": {
     "description": "Localization key for: Admin: {adminEmail}"
   },
-  "date": "Date (Danish)",
+  "date": "[DA] Date (Danish)",
   "@date": {
     "description": "Localization key for: Date"
   },
-  "readOnly": "Read Only (Danish)",
+  "readOnly": "[DA] Read Only (Danish)",
   "@readOnly": {
     "description": "Localization key for: Read Only"
   },
-  "bookingRequest": "Booking Request (Danish)",
+  "bookingRequest": "[DA] Booking Request (Danish)",
   "@bookingRequest": {
     "description": "Localization key for: Booking Request"
   },
-  "advancedReporting": "• Advanced reporting (Danish)",
+  "advancedReporting": "[DA] • Advanced reporting (Danish)",
   "@advancedReporting": {
     "description": "Localization key for: • Advanced reporting"
   },
-  "rooms": "Rooms (Danish)",
+  "rooms": "[DA] Rooms (Danish)",
   "@rooms": {
     "description": "Localization key for: Rooms"
   },
-  "copiedToClipboard": "Copied to clipboard (Danish)",
+  "copiedToClipboard": "[DA] Copied to clipboard (Danish)",
   "@copiedToClipboard": {
     "description": "Localization key for: Copied to clipboard"
   },
-  "bookingConfirmed": "Booking Confirmed (Danish)",
+  "bookingConfirmed": "[DA] Booking Confirmed (Danish)",
   "@bookingConfirmed": {
     "description": "Localization key for: Booking Confirmed"
   },
-  "sessionApproved": "Session approved! (Danish)",
+  "sessionApproved": "تمت الموافقة على الجلسة",
   "@sessionApproved": {
     "description": "Localization key for: Session approved!"
   },
-  "clientAddedSuccessfully": "Client added successfully! (Danish)",
+  "clientAddedSuccessfully": "[DA] Client added successfully! (Danish)",
   "@clientAddedSuccessfully": {
     "description": "Localization key for: Client added successfully!"
   },
-  "noNotifications": "No notifications (Danish)",
+  "noNotifications": "لا توجد إشعارات",
   "@noNotifications": {
     "description": "Localization key for: No notifications"
   },
-  "backgroundApproved": "Background approved! (Danish)",
+  "backgroundApproved": "[DA] Background approved! (Danish)",
   "@backgroundApproved": {
     "description": "Localization key for: Background approved!"
   },
-  "familySupport": "Family Support (Danish)",
+  "familySupport": "[DA] Family Support (Danish)",
   "@familySupport": {
     "description": "Localization key for: Family Support"
   },
-  "deletingAccount": "Deleting account... (Danish)",
+  "deletingAccount": "[DA] Deleting account... (Danish)",
   "@deletingAccount": {
     "description": "Localization key for: Deleting account..."
   },
-  "bookAppointment": "Book Appointment (Danish)",
+  "bookAppointment": "[DA] Book Appointment (Danish)",
   "@bookAppointment": {
     "description": "Localization key for: Book Appointment"
   },
-  "REDACTED_TOKEN": "Receive push notifications for new bookings (Danish)",
+  "REDACTED_TOKEN": "استقبال إشعارات الدفع للحجوزات الجديدة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive push notifications for new bookings"
   },
-  "delete1": "Delete (Danish)",
+  "delete1": "[DA] Delete (Danish)",
   "@delete1": {
     "description": "Localization key for: Delete"
   },
-  "sendBookingInvite": "Send Booking Invite (Danish)",
+  "sendBookingInvite": "[DA] Send Booking Invite (Danish)",
   "@sendBookingInvite": {
     "description": "Localization key for: Send Booking Invite"
   },
-  "text": "Text (Danish)",
+  "text": "[DA] Text (Danish)",
   "@text": {
     "description": "Localization key for: Text"
   },
-  "manageSubscription": "Manage Subscription (Danish)",
+  "manageSubscription": "[DA] Manage Subscription (Danish)",
   "@manageSubscription": {
     "description": "Localization key for: Manage Subscription"
   },
-  "requiresInstallFallback": "Requires Install Fallback (Danish)",
+  "requiresInstallFallback": "[DA] Requires Install Fallback (Danish)",
   "@requiresInstallFallback": {
     "description": "Localization key for: Requires Install Fallback"
   },
-  "paymentConfirmation": "Payment Confirmation (Danish)",
+  "paymentConfirmation": "[DA] Payment Confirmation (Danish)",
   "@paymentConfirmation": {
     "description": "Localization key for: Payment Confirmation"
   },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free. (Danish)",
+  "promoAppliedYourNextBillIsFree": "[DA] Promo applied! Your next bill is free. (Danish)",
   "@promoAppliedYourNextBillIsFree": {
     "description": "Localization key for: Promo applied! Your next bill is free."
   },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
   "@inviteeArgsinviteeid": {
     "description": "Localization key for: Invitee: {inviteeId}"
   },
-  "errorLoadingSlots": "Error loading slots (Danish)",
+  "errorLoadingSlots": "[DA] Error loading slots (Danish)",
   "@errorLoadingSlots": {
     "description": "Localization key for: Error loading slots"
   },
-  "REDACTED_TOKEN": "Allow other users to find and join this game (Danish)",
+  "REDACTED_TOKEN": "[DA] Allow other users to find and join this game (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Allow other users to find and join this game"
   },
-  "REDACTED_TOKEN": "Business Onboarding Screen - Coming Soon (Danish)",
+  "REDACTED_TOKEN": "[DA] Business Onboarding Screen - Coming Soon (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Onboarding Screen - Coming Soon"
   },
-  "activateBusinessProfile": "Activate Business Profile (Danish)",
+  "activateBusinessProfile": "[DA] Activate Business Profile (Danish)",
   "@activateBusinessProfile": {
     "description": "Localization key for: Activate Business Profile"
   },
-  "contentNotFound": "Content not found (Danish)",
+  "contentNotFound": "[DA] Content not found (Danish)",
   "@contentNotFound": {
     "description": "Localization key for: Content not found"
   },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo} (Danish)",
+  "pspecialtynpcontactinfo": "[DA] {specialty}\\n{contactInfo} (Danish)",
   "@pspecialtynpcontactinfo": {
     "description": "Localization key for: {specialty}\\n{contactInfo}"
   },
-  "rating": "Rating (Danish)",
+  "rating": "[DA] Rating (Danish)",
   "@rating": {
     "description": "Localization key for: Rating"
   },
-  "messages": "Messages (Danish)",
+  "messages": "[DA] Messages (Danish)",
   "@messages": {
     "description": "Localization key for: Messages"
   },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e (Danish)",
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
   "@errorEstimatingRecipientsE": {
     "description": "Localization key for: Error estimating recipients: $e"
   },
-  "becomeAnAmbassador": "Become an Ambassador (Danish)",
+  "becomeAnAmbassador": "[DA] Become an Ambassador (Danish)",
   "@becomeAnAmbassador": {
     "description": "Localization key for: Become an Ambassador"
   },
-  "subscribeNow": "Subscribe Now (Danish)",
+  "subscribeNow": "[DA] Subscribe Now (Danish)",
   "@subscribeNow": {
     "description": "Localization key for: Subscribe Now"
   },
-  "timeArgsslotformatcontext": "Time: {time} (Danish)",
+  "timeArgsslotformatcontext": "[DA] Time: {time} (Danish)",
   "@timeArgsslotformatcontext": {
     "description": "Localization key for: Time: {time}"
   },
-  "shareViaWhatsapp": "Share via WhatsApp (Danish)",
+  "shareViaWhatsapp": "[DA] Share via WhatsApp (Danish)",
   "@shareViaWhatsapp": {
     "description": "Localization key for: Share via WhatsApp"
   },
-  "users1": "Users (Danish)",
+  "users1": "[DA] Users (Danish)",
   "@users1": {
     "description": "Localization key for: Users"
   },
-  "shareLink": "Share Link (Danish)",
+  "shareLink": "[DA] Share Link (Danish)",
   "@shareLink": {
     "description": "Localization key for: Share Link"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
+  "REDACTED_TOKEN": "[DA] Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this provider?"
   },
-  "deleteAppointment": "Delete Appointment (Danish)",
+  "deleteAppointment": "[DA] Delete Appointment (Danish)",
   "@deleteAppointment": {
     "description": "Localization key for: Delete Appointment"
   },
-  "toggleAvailability": "Toggle Availability (Danish)",
+  "toggleAvailability": "[DA] Toggle Availability (Danish)",
   "@toggleAvailability": {
     "description": "Localization key for: Toggle Availability"
   },
-  "changePlan": "Change Plan (Danish)",
+  "changePlan": "[DA] Change Plan (Danish)",
   "@changePlan": {
     "description": "Localization key for: Change Plan"
   },
-  "errorLoadingStaff": "Error loading staff (Danish)",
+  "errorLoadingStaff": "[DA] Error loading staff (Danish)",
   "@errorLoadingStaff": {
     "description": "Localization key for: Error loading staff"
   },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
   "@errorLoadingConfigurationE": {
     "description": "Localization key for: Error loading configuration: $e"
   },
-  "updateYourBusinessInformation": "Update your business information (Danish)",
+  "updateYourBusinessInformation": "[DA] Update your business information (Danish)",
   "@updateYourBusinessInformation": {
     "description": "Localization key for: Update your business information"
   },
-  "REDACTED_TOKEN": "No providers found. Add your first provider!",
+  "REDACTED_TOKEN": "[DA] No providers found. Add your first provider!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No providers found. Add your first provider!"
   },
-  "parentDashboard": "Parent Dashboard (Danish)",
+  "parentDashboard": "[DA] Parent Dashboard (Danish)",
   "@parentDashboard": {
     "description": "Localization key for: Parent Dashboard"
   },
-  "menu": "Menu (Danish)",
+  "menu": "[DA] Menu (Danish)",
   "@menu": {
     "description": "Localization key for: Menu"
   },
-  "studioBooking": "Studio Booking (Danish)",
+  "studioBooking": "[DA] Studio Booking (Danish)",
   "@studioBooking": {
     "description": "Localization key for: Studio Booking"
   },
-  "about1": "About (Danish)",
+  "about1": "[DA] About (Danish)",
   "@about1": {
     "description": "Localization key for: About"
   },
-  "multipleChoice": "Multiple Choice (Danish)",
+  "multipleChoice": "[DA] Multiple Choice (Danish)",
   "@multipleChoice": {
     "description": "Localization key for: Multiple Choice"
   },
-  "REDACTED_TOKEN": "Date: {date} (Danish)",
+  "REDACTED_TOKEN": "[DA] Date: {date} (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Date: {date}"
   },
-  "REDACTED_TOKEN": "Studio booking is only available on web (Danish)",
+  "REDACTED_TOKEN": "[DA] Studio booking is only available on web (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Studio booking is only available on web"
   },
-  "errorLoadingBranchesE": "Error loading branches: $e (Danish)",
+  "errorLoadingBranchesE": "[DA] Error loading branches: $e (Danish)",
   "@errorLoadingBranchesE": {
     "description": "Localization key for: Error loading branches: $e"
   },
-  "REDACTED_TOKEN": "\\uD83D\\uDCC5 {dateTime} (Danish)",
+  "REDACTED_TOKEN": "[DA] \\uD83D\\uDCC5 {dateTime} (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
   },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
   "@appointmentInviteappointmentid": {
     "description": "Localization key for: Appointment: {appointmentId}"
   },
-  "none": "None (Danish)",
+  "none": "[DA] None (Danish)",
   "@none": {
     "description": "Localization key for: None"
   },
-  "failedToUpdateConsentE": "Failed to update consent: $e (Danish)",
+  "failedToUpdateConsentE": "[DA] Failed to update consent: $e (Danish)",
   "@failedToUpdateConsentE": {
     "description": "Localization key for: Failed to update consent: $e"
   },
-  "welcome1": "Welcome (Danish)",
+  "welcome1": "[DA] Welcome (Danish)",
   "@welcome1": {
     "description": "Localization key for: Welcome"
   },
-  "failedToCreateSessionE": "Failed to create session: $e (Danish)",
+  "failedToCreateSessionE": "[DA] Failed to create session: $e (Danish)",
   "@failedToCreateSessionE": {
     "description": "Localization key for: Failed to create session: $e"
   },
-  "inviteContact": "Invite Contact (Danish)",
+  "inviteContact": "[DA] Invite Contact (Danish)",
   "@inviteContact": {
     "description": "Localization key for: Invite Contact"
   },
-  "surveyEditor": "Survey Editor (Danish)",
+  "surveyEditor": "[DA] Survey Editor (Danish)",
   "@surveyEditor": {
     "description": "Localization key for: Survey Editor"
   },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e (Danish)",
+  "failedToStartBasicSubscriptionE": "[DA] Failed to start Basic subscription: $e (Danish)",
   "@failedToStartBasicSubscriptionE": {
     "description": "Localization key for: Failed to start Basic subscription: $e"
   },
-  "mySchedule": "My Schedule (Danish)",
+  "mySchedule": "[DA] My Schedule (Danish)",
   "@mySchedule": {
     "description": "Localization key for: My Schedule"
   },
-  "studioDashboard": "Studio Dashboard (Danish)",
+  "studioDashboard": "[DA] Studio Dashboard (Danish)",
   "@studioDashboard": {
     "description": "Localization key for: Studio Dashboard"
   },
-  "editProfile": "Edit Profile (Danish)",
+  "editProfile": "تحرير الملف الشخصي",
   "@editProfile": {
     "description": "Localization key for: Edit Profile"
   },
-  "logout1": "Logout",
+  "logout1": "[DA] Logout",
   "@logout1": {
     "description": "Localization key for: Logout"
   },
-  "serviceServiceidNotSelected": "Service: {service}",
+  "serviceServiceidNotSelected": "[DA] Service: {service}",
   "@serviceServiceidNotSelected": {
     "description": "Localization key for: Service: {service}"
   },
-  "settingsSavedSuccessfully": "Settings saved successfully! (Danish)",
+  "settingsSavedSuccessfully": "[DA] Settings saved successfully! (Danish)",
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard! (Danish)",
+  "linkCopiedToClipboard": "[DA] Link copied to clipboard! (Danish)",
   "@linkCopiedToClipboard": {
     "description": "Localization key for: Link copied to clipboard!"
   },
-  "accept1": "Accept (Danish)",
+  "accept1": "[DA] Accept (Danish)",
   "@accept1": {
     "description": "Localization key for: Accept"
   },
-  "noAvailableSlots": "No available slots (Danish)",
+  "noAvailableSlots": "[DA] No available slots (Danish)",
   "@noAvailableSlots": {
     "description": "Localization key for: No available slots"
   },
-  "makeGamePublic": "Make Game Public (Danish)",
+  "makeGamePublic": "[DA] Make Game Public (Danish)",
   "@makeGamePublic": {
     "description": "Localization key for: Make Game Public"
   },
-  "REDACTED_TOKEN": "Permission {category} updated to $newValue (Danish)",
+  "REDACTED_TOKEN": "[DA] Permission {category} updated to $newValue (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Permission {category} updated to $newValue"
   },
-  "roomDeletedSuccessfully": "Room deleted successfully! (Danish)",
+  "roomDeletedSuccessfully": "[DA] Room deleted successfully! (Danish)",
   "@roomDeletedSuccessfully": {
     "description": "Localization key for: Room deleted successfully!"
   },
-  "businessCalendar": "Business Calendar (Danish)",
+  "businessCalendar": "[DA] Business Calendar (Danish)",
   "@businessCalendar": {
     "description": "Localization key for: Business Calendar"
   },
-  "addAvailability": "Add Availability (Danish)",
+  "addAvailability": "[DA] Add Availability (Danish)",
   "@addAvailability": {
     "description": "Localization key for: Add Availability"
   },
-  "ambassadorOnboarding": "Ambassador Onboarding (Danish)",
+  "ambassadorOnboarding": "[DA] Ambassador Onboarding (Danish)",
   "@ambassadorOnboarding": {
     "description": "Localization key for: Ambassador Onboarding"
   },
-  "phoneProfileasyncphone": "Phone: {phone} (Danish)",
+  "phoneProfileasyncphone": "[DA] Phone: {phone} (Danish)",
   "@phoneProfileasyncphone": {
     "description": "Localization key for: Phone: {phone}"
   },
-  "addNewRoom": "Add New Room (Danish)",
+  "addNewRoom": "[DA] Add New Room (Danish)",
   "@addNewRoom": {
     "description": "Localization key for: Add New Room"
   },
-  "requireParentApproval": "Require Parent Approval (Danish)",
+  "requireParentApproval": "[DA] Require Parent Approval (Danish)",
   "@requireParentApproval": {
     "description": "Localization key for: Require Parent Approval"
   },
-  "closed": "Closed (Danish)",
+  "closed": "[DA] Closed (Danish)",
   "@closed": {
     "description": "Localization key for: Closed"
   },
-  "exportAsPdf": "Export as PDF (Danish)",
+  "exportAsPdf": "[DA] Export as PDF (Danish)",
   "@exportAsPdf": {
     "description": "Localization key for: Export as PDF"
   },
-  "enableVibration": "Enable Vibration (Danish)",
+  "enableVibration": "[DA] Enable Vibration (Danish)",
   "@enableVibration": {
     "description": "Localization key for: Enable Vibration"
   },
-  "toAvailendformatcontext": "To: {endTime} (Danish)",
+  "toAvailendformatcontext": "[DA] To: {endTime} (Danish)",
   "@toAvailendformatcontext": {
     "description": "Localization key for: To: {endTime}"
   },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode (Danish)",
+  "yourUpgradeCodeUpgradecode": "[DA] Your upgrade code: $upgradeCode (Danish)",
   "@yourUpgradeCodeUpgradecode": {
     "description": "Localization key for: Your upgrade code: $upgradeCode"
   },
-  "requestPrivateSession": "requestPrivateSession (TRANSLATE)",
+  "requestPrivateSession": "[DA] requestPrivateSession (TRANSLATE)",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "Country (Danish)",
+  "country": "[DA] Country (Danish)",
   "@country": {
     "description": "Localization key for: Country"
   },
-  "loginScreen": "Login Screen",
+  "loginScreen": "[DA] Login Screen",
   "@loginScreen": {
     "description": "Localization key for: Login Screen"
   },
-  "staffArgsstaffdisplayname": "Staff: {staffName} (Danish)",
+  "staffArgsstaffdisplayname": "[DA] Staff: {staffName} (Danish)",
   "@staffArgsstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "revokeConsent": "Revoke Consent (Danish)",
+  "revokeConsent": "[DA] Revoke Consent (Danish)",
   "@revokeConsent": {
     "description": "Localization key for: Revoke Consent"
   },
-  "settings1": "Settings (Danish)",
+  "settings1": "[DA] Settings (Danish)",
   "@settings1": {
     "description": "Localization key for: Settings"
   },
-  "cancel1": "Cancel (Danish)",
+  "cancel1": "[DA] Cancel (Danish)",
   "@cancel1": {
     "description": "Localization key for: Cancel"
   },
-  "REDACTED_TOKEN": "Subscription activated successfully! (Danish)",
+  "REDACTED_TOKEN": "[DA] Subscription activated successfully! (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription activated successfully!"
   },
-  "activityLogaction": "Activity: {action}",
+  "activityLogaction": "[DA] Activity: {action}",
   "@activityLogaction": {
     "description": "Localization key for: Activity: {action}"
   },
-  "broadcast": "Broadcast (Danish)",
+  "broadcast": "[DA] Broadcast (Danish)",
   "@broadcast": {
     "description": "Localization key for: Broadcast"
   },
-  "noEventsScheduledThisWeek": "No events scheduled this week (Danish)",
+  "noEventsScheduledThisWeek": "[DA] No events scheduled this week (Danish)",
   "@noEventsScheduledThisWeek": {
     "description": "Localization key for: No events scheduled this week"
   },
-  "googleCalendar": "Google Calendar (Danish)",
+  "googleCalendar": "[DA] Google Calendar (Danish)",
   "@googleCalendar": {
     "description": "Localization key for: Google Calendar"
   },
-  "sendInvite": "Send Invite (Danish)",
+  "sendInvite": "إرسال دعوة",
   "@sendInvite": {
     "description": "Localization key for: Send Invite"
   },
-  "childDashboard": "Child Dashboard (Danish)",
+  "childDashboard": "[DA] Child Dashboard (Danish)",
   "@childDashboard": {
     "description": "Localization key for: Child Dashboard"
   },
-  "failedToUploadBackgroundE": "Failed to upload background: $e (Danish)",
+  "failedToUploadBackgroundE": "[DA] Failed to upload background: $e (Danish)",
   "@failedToUploadBackgroundE": {
     "description": "Localization key for: Failed to upload background: $e"
   },
-  "linkchildidsubstring08": "{linkId}...",
+  "linkchildidsubstring08": "[DA] {linkId}...",
   "@linkchildidsubstring08": {
     "description": "Localization key for: {linkId}..."
   },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
+  "targetLogtargettypeLogtargetid": "[DA] Target: {targetType} - {targetId}",
   "@targetLogtargettypeLogtargetid": {
     "description": "Localization key for: Target: {targetType} - {targetId}"
   },
-  "contextContextid": "Context: $contextId",
+  "contextContextid": "[DA] Context: $contextId",
   "@contextContextid": {
     "description": "Localization key for: Context: $contextId"
   },
-  "noAppointments": "No appointments (Danish)",
+  "noAppointments": "[DA] No appointments (Danish)",
   "@noAppointments": {
     "description": "Localization key for: No appointments"
   },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week (Danish)",
+  "unlimitedBookingsPerWeek": "[DA] • Unlimited bookings per week (Danish)",
   "@unlimitedBookingsPerWeek": {
     "description": "Localization key for: • Unlimited bookings per week"
   },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
   "@errorDetailsLogerrortype": {
     "description": "Localization key for: Error Details: {errorType}"
   },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt (Danish)",
+  "scheduledAtScheduledat": "[DA] Scheduled at: $scheduledAt (Danish)",
   "@scheduledAtScheduledat": {
     "description": "Localization key for: Scheduled at: $scheduledAt"
   },
-  "selectStaff": "Select Staff (Danish)",
+  "selectStaff": "[DA] Select Staff (Danish)",
   "@selectStaff": {
     "description": "Localization key for: Select Staff"
   },
-  "REDACTED_TOKEN": "Subscription cancelled successfully (Danish)",
+  "REDACTED_TOKEN": "[DA] Subscription cancelled successfully (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Subscription cancelled successfully"
   },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
   "@pleaseLogInToViewYourProfile": {
     "description": "Localization key for: Please log in to view your profile."
   },
-  "cancelAppointment": "Cancel Appointment (Danish)",
+  "cancelAppointment": "[DA] Cancel Appointment (Danish)",
   "@cancelAppointment": {
     "description": "Localization key for: Cancel Appointment"
   },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
+  "permissionsFamilylinkchildid": "[DA] Permissions - {childId}",
   "@permissionsFamilylinkchildid": {
     "description": "Localization key for: Permissions - {childId}"
   },
-  "businessSignup": "Business Signup (Danish)",
+  "businessSignup": "[DA] Business Signup (Danish)",
   "@businessSignup": {
     "description": "Localization key for: Business Signup"
   },
-  "REDACTED_TOKEN": "Business Completion Screen - Coming Soon (Danish)",
+  "REDACTED_TOKEN": "[DA] Business Completion Screen - Coming Soon (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Completion Screen - Coming Soon"
   },
-  "createGame1": "Create Game (Danish)",
+  "createGame1": "[DA] Create Game (Danish)",
   "@createGame1": {
     "description": "Localization key for: Create Game"
   },
-  "valuetoint": "{value} (Danish)",
+  "valuetoint": "[DA] {value} (Danish)",
   "@valuetoint": {
     "description": "Localization key for: {value}"
   },
-  "pleaseEnterAPromoCode": "Please enter a promo code (Danish)",
+  "pleaseEnterAPromoCode": "[DA] Please enter a promo code (Danish)",
   "@pleaseEnterAPromoCode": {
     "description": "Localization key for: Please enter a promo code"
   },
-  "errorLoadingAvailabilityE": "Error loading availability: $e (Danish)",
+  "errorLoadingAvailabilityE": "[DA] Error loading availability: $e (Danish)",
   "@errorLoadingAvailabilityE": {
     "description": "Localization key for: Error loading availability: $e"
   },
-  "parentalControls": "Parental Controls (Danish)",
+  "parentalControls": "[DA] Parental Controls (Danish)",
   "@parentalControls": {
     "description": "Localization key for: Parental Controls"
   },
-  "editBusinessProfile": "Edit Business Profile (Danish)",
+  "editBusinessProfile": "تحرير الملف التجاري",
   "@editBusinessProfile": {
     "description": "Localization key for: Edit Business Profile"
   },
-  "childLinkedSuccessfully": "Child linked successfully! (Danish)",
+  "childLinkedSuccessfully": "[DA] Child linked successfully! (Danish)",
   "@childLinkedSuccessfully": {
     "description": "Localization key for: Child linked successfully!"
   },
-  "create": "Create (Danish)",
+  "create": "[DA] Create (Danish)",
   "@create": {
     "description": "Localization key for: Create"
   },
-  "noExternalMeetingsFound": "No external meetings found. (Danish)",
+  "noExternalMeetingsFound": "[DA] No external meetings found. (Danish)",
   "@noExternalMeetingsFound": {
     "description": "Localization key for: No external meetings found."
   },
-  "staffSelectionstaffdisplayname": "Staff: {staffName} (Danish)",
+  "staffSelectionstaffdisplayname": "[DA] Staff: {staffName} (Danish)",
   "@staffSelectionstaffdisplayname": {
     "description": "Localization key for: Staff: {staffName}"
   },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
+  "pleaseEnterAValidEmailAddress": "[DA] Please enter a valid email address",
   "@pleaseEnterAValidEmailAddress": {
     "description": "Localization key for: Please enter a valid email address"
   },
-  "schedulerScreen": "Scheduler Screen (Danish)",
+  "schedulerScreen": "[DA] Scheduler Screen (Danish)",
   "@schedulerScreen": {
     "description": "Localization key for: Scheduler Screen"
   },
-  "clientUpdatedSuccessfully": "Client updated successfully! (Danish)",
+  "clientUpdatedSuccessfully": "[DA] Client updated successfully! (Danish)",
   "@clientUpdatedSuccessfully": {
     "description": "Localization key for: Client updated successfully!"
   },
-  "surveyResponses": "Survey Responses (Danish)",
+  "surveyResponses": "[DA] Survey Responses (Danish)",
   "@surveyResponses": {
     "description": "Localization key for: Survey Responses"
   },
-  "syncToOutlook": "Sync to Outlook (Danish)",
+  "syncToOutlook": "[DA] Sync to Outlook (Danish)",
   "@syncToOutlook": {
     "description": "Localization key for: Sync to Outlook"
   },
-  "saveChanges": "Save Changes (Danish)",
+  "saveChanges": "[DA] Save Changes (Danish)",
   "@saveChanges": {
     "description": "Localization key for: Save Changes"
   },
-  "pickTime": "Pick Time (Danish)",
+  "pickTime": "[DA] Pick Time (Danish)",
   "@pickTime": {
     "description": "Localization key for: Pick Time"
   },
-  "registrationFailedEtostring": "Registration failed: {error} (Danish)",
+  "registrationFailedEtostring": "[DA] Registration failed: {error} (Danish)",
   "@registrationFailedEtostring": {
     "description": "Localization key for: Registration failed: {error}"
   },
-  "analytics": "Analytics (Danish)",
+  "analytics": "[DA] Analytics (Danish)",
   "@analytics": {
     "description": "Localization key for: Analytics"
   },
-  "errorLoadingEvents": "Error loading events (Danish)",
+  "errorLoadingEvents": "[DA] Error loading events (Danish)",
   "@errorLoadingEvents": {
     "description": "Localization key for: Error loading events"
   },
-  "errorLoadingOrganizations": "errorLoadingOrganizations (TRANSLATE)",
+  "errorLoadingOrganizations": "[DA] errorLoadingOrganizations (TRANSLATE)",
   "@errorLoadingOrganizations": {
     "description": "errorLoadingOrganizations description"
   },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
+  "businessLoginScreenComingSoon": "[DA] Business Login Screen - Coming Soon",
   "@businessLoginScreenComingSoon": {
     "description": "Localization key for: Business Login Screen - Coming Soon"
   },
-  "success1": "Success (Danish)",
+  "success1": "[DA] Success (Danish)",
   "@success1": {
     "description": "Localization key for: Success"
   },
-  "appVersionLogappversion": "App Version: {appVersion}",
+  "appVersionLogappversion": "[DA] App Version: {appVersion}",
   "@appVersionLogappversion": {
     "description": "Localization key for: App Version: {appVersion}"
   },
-  "fromAvailstartformatcontext": "From: {startTime} (Danish)",
+  "fromAvailstartformatcontext": "[DA] From: {startTime} (Danish)",
   "@fromAvailstartformatcontext": {
     "description": "Localization key for: From: {startTime}"
   },
-  "readWrite": "Read & Write (Danish)",
+  "readWrite": "[DA] Read & Write (Danish)",
   "@readWrite": {
     "description": "Localization key for: Read & Write"
   },
-  "REDACTED_TOKEN": "Redirecting to Stripe checkout for Basic plan... (Danish)",
+  "REDACTED_TOKEN": "[DA] Redirecting to Stripe checkout for Basic plan... (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
   },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
+  "errorSavingConfigurationE": "[DA] Error saving configuration: $e",
   "@errorSavingConfigurationE": {
     "description": "Localization key for: Error saving configuration: $e"
   },
-  "pickDate": "Pick Date (Danish)",
+  "pickDate": "[DA] Pick Date (Danish)",
   "@pickDate": {
     "description": "Localization key for: Pick Date"
   },
-  "chatBooking": "Chat Booking (Danish)",
+  "chatBooking": "[DA] Chat Booking (Danish)",
   "@chatBooking": {
     "description": "Localization key for: Chat Booking"
   },
-  "noQuestionsAdded": "No questions added (Danish)",
+  "noQuestionsAdded": "[DA] No questions added (Danish)",
   "@noQuestionsAdded": {
     "description": "Localization key for: No questions added"
   },
-  "severityLogseverityname": "Severity: {severity}",
+  "severityLogseverityname": "[DA] Severity: {severity}",
   "@severityLogseverityname": {
     "description": "Localization key for: Severity: {severity}"
   },
-  "markAsPaid": "Mark as Paid",
+  "markAsPaid": "[DA] Mark as Paid",
   "@markAsPaid": {
     "description": "Localization key for: Mark as Paid"
   },
-  "typeOpenCall": "Type: Open Call (Danish)",
+  "typeOpenCall": "[DA] Type: Open Call (Danish)",
   "@typeOpenCall": {
     "description": "Localization key for: Type: Open Call"
   },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
+  "appointmentAppointmentid": "[DA] Appointment {appointmentId}",
   "@appointmentAppointmentid": {
     "description": "Localization key for: Appointment {appointmentId}"
   },
-  "statusInvitestatusname": "Status: {status}",
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
   "@statusInvitestatusname": {
     "description": "Localization key for: Status: {status}"
   },
-  "businessLogin": "Business Login",
+  "businessLogin": "[DA] Business Login",
   "@businessLogin": {
     "description": "Localization key for: Business Login"
   },
-  "invoiceCreatedSuccessfully": "Invoice created successfully! (Danish)",
+  "invoiceCreatedSuccessfully": "[DA] Invoice created successfully! (Danish)",
   "@invoiceCreatedSuccessfully": {
     "description": "Localization key for: Invoice created successfully!"
   },
-  "noTimeSeriesDataAvailable": "No time series data available (Danish)",
+  "noTimeSeriesDataAvailable": "[DA] No time series data available (Danish)",
   "@noTimeSeriesDataAvailable": {
     "description": "Localization key for: No time series data available"
   },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
+  "subscribeToWidgetplanname": "[DA] Subscribe to {planName}",
   "@subscribeToWidgetplanname": {
     "description": "Localization key for: Subscribe to {planName}"
   },
-  "REDACTED_TOKEN": "Timestamp: {timestamp}",
+  "REDACTED_TOKEN": "[DA] Timestamp: {timestamp}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Timestamp: {timestamp}"
   },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e (Danish)",
+  "failedToSendPrivacyRequestE": "[DA] Failed to send privacy request: $e (Danish)",
   "@failedToSendPrivacyRequestE": {
     "description": "Localization key for: Failed to send privacy request: $e"
   },
-  "chooseYourPlan": "Choose Your Plan (Danish)",
+  "chooseYourPlan": "[DA] Choose Your Plan (Danish)",
   "@chooseYourPlan": {
     "description": "Localization key for: Choose Your Plan"
   },
-  "playtimeManagement": "Playtime Management (Danish)",
+  "playtimeManagement": "[DA] Playtime Management (Danish)",
   "@playtimeManagement": {
     "description": "Localization key for: Playtime Management"
   },
-  "availability": "Availability (Danish)",
+  "availability": "[DA] Availability (Danish)",
   "@availability": {
     "description": "Localization key for: Availability"
   },
-  "eventCreated": "Event created (Danish)",
+  "eventCreated": "[DA] Event created (Danish)",
   "@eventCreated": {
     "description": "Localization key for: Event created"
   },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo) (Danish)",
+  "subscribeToBasic499mo": "[DA] Subscribe to Basic (€4.99/mo) (Danish)",
   "@subscribeToBasic499mo": {
     "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
   },
-  "completion": "Completion (Danish)",
+  "completion": "[DA] Completion (Danish)",
   "@completion": {
     "description": "Localization key for: Completion"
   },
-  "supportTicketSubmitted": "Support ticket submitted (Danish)",
+  "supportTicketSubmitted": "[DA] Support ticket submitted (Danish)",
   "@supportTicketSubmitted": {
     "description": "Localization key for: Support ticket submitted"
   },
-  "monetizationSettings": "Monetization Settings (Danish)",
+  "monetizationSettings": "[DA] Monetization Settings (Danish)",
   "@monetizationSettings": {
     "description": "Localization key for: Monetization Settings"
   },
-  "noBookingsFound": "No bookings found (Danish)",
+  "noBookingsFound": "[DA] No bookings found (Danish)",
   "@noBookingsFound": {
     "description": "Localization key for: No bookings found"
   },
-  "admin": "Admin",
+  "admin": "[DA] Admin",
   "@admin": {
     "description": "Localization key for: Admin"
   },
-  "deleteSurvey": "Delete Survey (Danish)",
+  "deleteSurvey": "[DA] Delete Survey (Danish)",
   "@deleteSurvey": {
     "description": "Localization key for: Delete Survey"
   },
-  "gameApprovedSuccessfully": "Game approved successfully! (Danish)",
+  "gameApprovedSuccessfully": "[DA] Game approved successfully! (Danish)",
   "@gameApprovedSuccessfully": {
     "description": "Localization key for: Game approved successfully!"
   },
-  "errorLoadingPermissionsError": "Error loading permissions: $error (Danish)",
+  "errorLoadingPermissionsError": "[DA] Error loading permissions: $error (Danish)",
   "@errorLoadingPermissionsError": {
     "description": "Localization key for: Error loading permissions: $error"
   },
-  "referrals": "Referrals (Danish)",
+  "referrals": "[DA] Referrals (Danish)",
   "@referrals": {
     "description": "Localization key for: Referrals"
   },
-  "crm": "CRM (Danish)",
+  "crm": "[DA] CRM (Danish)",
   "@crm": {
     "description": "Localization key for: CRM"
   },
-  "gameRejected": "Game rejected (Danish)",
+  "gameRejected": "[DA] Game rejected (Danish)",
   "@gameRejected": {
     "description": "Localization key for: Game rejected"
   },
-  "appointments": "Appointments (Danish)",
+  "appointments": "[DA] Appointments (Danish)",
   "@appointments": {
     "description": "Localization key for: Appointments"
   },
-  "onboardingScreen": "Onboarding Screen (Danish)",
+  "onboardingScreen": "[DA] Onboarding Screen (Danish)",
   "@onboardingScreen": {
     "description": "Localization key for: Onboarding Screen"
   },
-  "welcomeToYourStudio": "Welcome to your studio (Danish)",
+  "welcomeToYourStudio": "[DA] Welcome to your studio (Danish)",
   "@welcomeToYourStudio": {
     "description": "Localization key for: Welcome to your studio"
   },
-  "update": "Update (Danish)",
+  "update": "[DA] Update (Danish)",
   "@update": {
     "description": "Localization key for: Update"
   },
-  "retry1": "Retry (Danish)",
+  "retry1": "[DA] Retry (Danish)",
   "@retry1": {
     "description": "Localization key for: Retry"
   },
-  "booking": "Booking (Danish)",
+  "booking": "[DA] Booking (Danish)",
   "@booking": {
     "description": "Localization key for: Booking"
   },
-  "parentalSettings": "Parental Settings (Danish)",
+  "parentalSettings": "[DA] Parental Settings (Danish)",
   "@parentalSettings": {
     "description": "Localization key for: Parental Settings"
   },
-  "language": "Language (Danish)",
+  "language": "[DA] Language (Danish)",
   "@language": {
     "description": "Localization key for: Language"
   },
-  "deleteSlot": "Delete Slot (Danish)",
+  "deleteSlot": "[DA] Delete Slot (Danish)",
   "@deleteSlot": {
     "description": "Localization key for: Delete Slot"
   },
-  "organizations": "organizations (TRANSLATE)",
+  "organizations": "[DA] organizations (TRANSLATE)",
   "@organizations": {
     "description": "organizations description"
   },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
+  "configurationSavedSuccessfully": "[DA] Configuration saved successfully!",
   "@configurationSavedSuccessfully": {
     "description": "Localization key for: Configuration saved successfully!"
   },
-  "createNewGame": "Create New Game (Danish)",
+  "createNewGame": "[DA] Create New Game (Danish)",
   "@createNewGame": {
     "description": "Localization key for: Create New Game"
   },
-  "next1": "Next (Danish)",
+  "next1": "[DA] Next (Danish)",
   "@next1": {
     "description": "Localization key for: Next"
   },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully! (Danish)",
+  "backgroundUploadedSuccessfully": "[DA] Background uploaded successfully! (Danish)",
   "@backgroundUploadedSuccessfully": {
     "description": "Localization key for: Background uploaded successfully!"
   },
-  "noAppointmentRequestsFound": "No appointment requests found. (Danish)",
+  "noAppointmentRequestsFound": "[DA] No appointment requests found. (Danish)",
   "@noAppointmentRequestsFound": {
     "description": "Localization key for: No appointment requests found."
   },
-  "pleaseSignInToCreateASession": "Please sign in to create a session (Danish)",
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
   "@pleaseSignInToCreateASession": {
     "description": "Localization key for: Please sign in to create a session"
   },
-  "restrictMatureContent": "Restrict mature content (Danish)",
+  "restrictMatureContent": "[DA] Restrict mature content (Danish)",
   "@restrictMatureContent": {
     "description": "Localization key for: Restrict mature content"
   },
-  "ambassadors": "Ambassadors (Danish)",
+  "ambassadors": "[DA] Ambassadors (Danish)",
   "@ambassadors": {
     "description": "Localization key for: Ambassadors"
   },
-  "smsNotifications": "SMS Notifications (Danish)",
+  "smsNotifications": "إشعارات الرسائل النصية",
   "@smsNotifications": {
     "description": "Localization key for: SMS Notifications"
   },
-  "paymentWasCancelled": "Payment was cancelled (Danish)",
+  "paymentWasCancelled": "[DA] Payment was cancelled (Danish)",
   "@paymentWasCancelled": {
     "description": "Localization key for: Payment was cancelled"
   },
-  "clearAll": "Clear All (Danish)",
+  "clearAll": "[DA] Clear All (Danish)",
   "@clearAll": {
     "description": "Localization key for: Clear All"
   },
-  "viewDetails": "View Details (Danish)",
+  "viewDetails": "[DA] View Details (Danish)",
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "Notifications (Danish)",
+  "notifications1": "الإشعارات",
   "@notifications1": {
     "description": "Localization key for: Notifications"
   },
-  "REDACTED_TOKEN": "Live session scheduled! Waiting for parent approval... (Danish)",
+  "REDACTED_TOKEN": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
   },
-  "failedToCreateGameE": "Failed to create game: $e (Danish)",
+  "failedToCreateGameE": "[DA] Failed to create game: $e (Danish)",
   "@failedToCreateGameE": {
     "description": "Localization key for: Failed to create game: $e"
   },
-  "noChartDataAvailable": "No chart data available (Danish)",
+  "noChartDataAvailable": "[DA] No chart data available (Danish)",
   "@noChartDataAvailable": {
     "description": "Localization key for: No chart data available"
   },
-  "phonebasedBookingSystem": "• Phone-based booking system (Danish)",
+  "phonebasedBookingSystem": "[DA] • Phone-based booking system (Danish)",
   "@phonebasedBookingSystem": {
     "description": "Localization key for: • Phone-based booking system"
   },
-  "enableNotifications1": "Enable Notifications (Danish)",
+  "enableNotifications1": "تفعيل الإشعارات",
   "@enableNotifications1": {
     "description": "Localization key for: Enable Notifications"
   },
-  "invoices": "Invoices (Danish)",
+  "invoices": "[DA] Invoices (Danish)",
   "@invoices": {
     "description": "Localization key for: Invoices"
   },
-  "REDACTED_TOKEN": "Please activate your business profile to continue. (Danish)",
+  "REDACTED_TOKEN": "يرجى تفعيل ملفك التجاري للمتابعة",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Please activate your business profile to continue."
   },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt} (Danish)",
+  "scheduledAtArgsscheduledat": "[DA] Scheduled at: {scheduledAt} (Danish)",
   "@scheduledAtArgsscheduledat": {
     "description": "Localization key for: Scheduled at: {scheduledAt}"
   },
-  "REDACTED_TOKEN": "Duration: {duration} minutes (Danish)",
+  "REDACTED_TOKEN": "[DA] Duration: {duration} minutes (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Duration: {duration} minutes"
   },
-  "tryAgain": "Try Again (Danish)",
+  "tryAgain": "[DA] Try Again (Danish)",
   "@tryAgain": {
     "description": "Localization key for: Try Again"
   },
-  "deleteBackground": "Delete Background (Danish)",
+  "deleteBackground": "[DA] Delete Background (Danish)",
   "@deleteBackground": {
     "description": "Localization key for: Delete Background"
   },
-  "currentTierTiertouppercase": "Current Tier: {tier} (Danish)",
+  "currentTierTiertouppercase": "[DA] Current Tier: {tier} (Danish)",
   "@currentTierTiertouppercase": {
     "description": "Localization key for: Current Tier: {tier}"
   },
-  "iDoNotConsent": "I Do Not Consent",
+  "iDoNotConsent": "[DA] I Do Not Consent",
   "@iDoNotConsent": {
     "description": "Localization key for: I Do Not Consent"
   },
-  "REDACTED_TOKEN": "No clients found. Add your first client! (Danish)",
+  "REDACTED_TOKEN": "[DA] No clients found. Add your first client! (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No clients found. Add your first client!"
   },
-  "REDACTED_TOKEN": "Settings dialog will be implemented here.",
+  "REDACTED_TOKEN": "[DA] Settings dialog will be implemented here.",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Settings dialog will be implemented here."
   },
-  "groupGroupid": "Group: $groupId",
+  "groupGroupid": "[DA] Group: $groupId",
   "@groupGroupid": {
     "description": "Localization key for: Group: $groupId"
   },
-  "appointmentRequests": "Appointment Requests (Danish)",
+  "appointmentRequests": "[DA] Appointment Requests (Danish)",
   "@appointmentRequests": {
     "description": "Localization key for: Appointment Requests"
   },
-  "forward": "Forward (Danish)",
+  "forward": "[DA] Forward (Danish)",
   "@forward": {
     "description": "Localization key for: Forward"
   },
-  "roomAddedSuccessfully": "Room added successfully! (Danish)",
+  "roomAddedSuccessfully": "[DA] Room added successfully! (Danish)",
   "@roomAddedSuccessfully": {
     "description": "Localization key for: Room added successfully!"
   },
-  "option": "• $option (Danish)",
+  "option": "[DA] • $option (Danish)",
   "@option": {
     "description": "Localization key for: • $option"
   },
-  "responseIndex1": "Response #{number} (Danish)",
+  "responseIndex1": "[DA] Response #{number} (Danish)",
   "@responseIndex1": {
     "description": "Localization key for: Response #{number}"
   },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics (Danish)",
+  "crmDashboardWithAnalytics": "[DA] • CRM dashboard with analytics (Danish)",
   "@crmDashboardWithAnalytics": {
     "description": "Localization key for: • CRM dashboard with analytics"
   },
-  "contentLibrary1": "Content Library (Danish)",
+  "contentLibrary1": "[DA] Content Library (Danish)",
   "@contentLibrary1": {
     "description": "Localization key for: Content Library"
   },
-  "reply": "Reply (Danish)",
+  "reply": "[DA] Reply (Danish)",
   "@reply": {
     "description": "Localization key for: Reply"
   },
-  "subscriptionManagement": "Subscription Management (Danish)",
+  "subscriptionManagement": "[DA] Subscription Management (Danish)",
   "@subscriptionManagement": {
     "description": "Localization key for: Subscription Management"
   },
-  "REDACTED_TOKEN": "Monetization settings will be implemented here (Danish)",
+  "REDACTED_TOKEN": "[DA] Monetization settings will be implemented here (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Monetization settings will be implemented here"
   },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e (Danish)",
+  "failedToApplyPromoCodeE": "[DA] Failed to apply promo code: $e (Danish)",
   "@failedToApplyPromoCodeE": {
     "description": "Localization key for: Failed to apply promo code: $e"
   },
-  "editProvider": "Edit Provider",
+  "editProvider": "[DA] Edit Provider",
   "@editProvider": {
     "description": "Localization key for: Edit Provider"
   },
-  "localizationContribution": "Localization Contribution (Danish)",
+  "localizationContribution": "[DA] Localization Contribution (Danish)",
   "@localizationContribution": {
     "description": "Localization key for: Localization Contribution"
   },
-  "parentalConsent": "Parental Consent (Danish)",
+  "parentalConsent": "[DA] Parental Consent (Danish)",
   "@parentalConsent": {
     "description": "Localization key for: Parental Consent"
   },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon (Danish)",
+  "businessSignupScreenComingSoon": "[DA] Business Signup Screen - Coming Soon (Danish)",
   "@businessSignupScreenComingSoon": {
     "description": "Localization key for: Business Signup Screen - Coming Soon"
   },
-  "REDACTED_TOKEN": "Are you sure you want to delete this appointment? (Danish)",
+  "REDACTED_TOKEN": "[DA] Are you sure you want to delete this appointment? (Danish)",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Are you sure you want to delete this appointment?"
   },
-  "syncAppointment": "Sync Appointment (Danish)",
+  "syncAppointment": "[DA] Sync Appointment (Danish)",
   "@syncAppointment": {
     "description": "Localization key for: Sync Appointment"
   },
-  "iConsent": "I Consent (Danish)",
+  "iConsent": "[DA] I Consent (Danish)",
   "@iConsent": {
     "description": "Localization key for: I Consent"
   },
-  "sessionRejected": "Session rejected (Danish)",
+  "sessionRejected": "تم رفض الجلسة",
   "@sessionRejected": {
     "description": "Localization key for: Session rejected"
   },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon (Danish)",
+  "businessSetupScreenComingSoon": "[DA] Business Setup Screen - Coming Soon (Danish)",
   "@businessSetupScreenComingSoon": {
     "description": "Localization key for: Business Setup Screen - Coming Soon"
   },
-  "edit1": "Edit (Danish)",
+  "edit1": "[DA] Edit (Danish)",
   "@edit1": {
     "description": "Localization key for: Edit"
   },
-  "noEventsScheduledThisMonth": "No events scheduled this month (Danish)",
+  "noEventsScheduledThisMonth": "[DA] No events scheduled this month (Danish)",
   "@noEventsScheduledThisMonth": {
     "description": "Localization key for: No events scheduled this month"
   },
-  "businessDashboard": "Business Dashboard (Danish)",
+  "businessDashboard": "[DA] Business Dashboard (Danish)",
   "@businessDashboard": {
     "description": "Localization key for: Business Dashboard"
   },
-  "noMessagesFound": "No messages found. (Danish)",
+  "noMessagesFound": "[DA] No messages found. (Danish)",
   "@noMessagesFound": {
     "description": "Localization key for: No messages found."
   },
-  "staffStaffidNotSelected": "Staff: {staff}",
+  "staffStaffidNotSelected": "[DA] Staff: {staff}",
   "@staffStaffidNotSelected": {
     "description": "Localization key for: Staff: {staff}"
   },
-  "manageStaffAvailability": "Manage Staff Availability (Danish)",
+  "manageStaffAvailability": "[DA] Manage Staff Availability (Danish)",
   "@manageStaffAvailability": {
     "description": "Localization key for: Manage Staff Availability"
   },
-  "noMissingTranslations": "No missing translations (Danish)",
+  "noMissingTranslations": "[DA] No missing translations (Danish)",
   "@noMissingTranslations": {
     "description": "Localization key for: No missing translations"
   },
-  "skip": "Skip (Danish)",
+  "skip": "[DA] Skip (Danish)",
   "@skip": {
     "description": "Localization key for: Skip"
   },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
   "@meetingIdMeetingid": {
     "description": "Localization key for: Meeting ID: $meetingId"
   },
-  "noUsers": "noUsers (TRANSLATE)",
+  "noUsers": "[DA] noUsers (TRANSLATE)",
   "@noUsers": {
     "description": "noUsers description"
   },
-  "errorLoadingReferralCode": "Error loading referral code (Danish)",
+  "errorLoadingReferralCode": "[DA] Error loading referral code (Danish)",
   "@errorLoadingReferralCode": {
     "description": "Localization key for: Error loading referral code"
   },
-  "allCountries": "All Countries (Danish)",
+  "allCountries": "[DA] All Countries (Danish)",
   "@allCountries": {
     "description": "Localization key for: All Countries"
   },
-  "deleteGame": "Delete Game (Danish)",
+  "deleteGame": "[DA] Delete Game (Danish)",
   "@deleteGame": {
     "description": "Localization key for: Delete Game"
   },
-  "staffManagementTools": "• Staff management tools (Danish)",
+  "staffManagementTools": "[DA] • Staff management tools (Danish)",
   "@staffManagementTools": {
     "description": "Localization key for: • Staff management tools"
   },
-  "deleteMessage": "Delete Message (Danish)",
+  "deleteMessage": "[DA] Delete Message (Danish)",
   "@deleteMessage": {
     "description": "Localization key for: Delete Message"
   },
-  "REDACTED_TOKEN": "Receive booking notifications via SMS (Danish)",
+  "REDACTED_TOKEN": "استقبال إشعارات الحجز عبر الرسائل النصية",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Receive booking notifications via SMS"
   },
-  "changeRole": "changeRole (TRANSLATE)",
+  "changeRole": "[DA] changeRole (TRANSLATE)",
   "@changeRole": {
     "description": "changeRole description"
   },
-  "REDACTED_TOKEN": "Error loading bookings: {error} (Danish)",
+  "REDACTED_TOKEN": "خطأ في تحميل لقطة الحجوزات: {error}",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Error loading bookings: {error}"
   },
-  "openingCustomerPortal": "Opening customer portal... (Danish)",
+  "openingCustomerPortal": "[DA] Opening customer portal... (Danish)",
   "@openingCustomerPortal": {
     "description": "Localization key for: Opening customer portal..."
   },
-  "signOut": "Sign Out (Danish)",
+  "signOut": "[DA] Sign Out (Danish)",
   "@signOut": {
     "description": "Localization key for: Sign Out"
   },
-  "nameProfilename": "Name: {name} (Danish)",
+  "nameProfilename": "[DA] Name: {name} (Danish)",
   "@nameProfilename": {
     "description": "Localization key for: Name: {name}"
   },
-  "REDACTED_TOKEN": "Business Profile Entry Screen - Coming Soon (Danish)",
+  "REDACTED_TOKEN": "شاشة إدخال الملف التجاري - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
   },
-  "upgradeToBusiness": "Upgrade to Business (Danish)",
+  "upgradeToBusiness": "[DA] Upgrade to Business (Danish)",
   "@upgradeToBusiness": {
     "description": "Localization key for: Upgrade to Business"
   },
-  "apply": "Apply (Danish)",
+  "apply": "تطبيق",
   "@apply": {
     "description": "Localization key for: Apply"
   },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error (Danish)",
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
   "@errorLoadingSubscriptionError": {
     "description": "Localization key for: Error loading subscription: $error"
   },
-  "errorLoadingUsers": "errorLoadingUsers (TRANSLATE)",
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
   "@errorLoadingUsers": {
     "description": "errorLoadingUsers description"
   },
-  "verify": "Verify (Danish)",
+  "verify": "التحقق",
   "@verify": {
     "description": "Localization key for: Verify"
   },
-  "subscription": "Subscription (Danish)",
+  "subscription": "الاشتراك",
   "@subscription": {
     "description": "Localization key for: Subscription"
   },
-  "deleteMyAccount": "Delete My Account (Danish)",
+  "deleteMyAccount": "حذف حسابي",
   "@deleteMyAccount": {
     "description": "Localization key for: Delete My Account"
   },
-  "REDACTED_TOKEN": "Business Appointments Entry Screen - Coming Soon (Danish)",
+  "REDACTED_TOKEN": "شاشة إدخال مواعيد الأعمال - قريباً",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
   },
-  "viewResponses": "View Responses (Danish)",
+  "viewResponses": "[DA] View Responses (Danish)",
   "@viewResponses": {
     "description": "Localization key for: View Responses"
   },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon (Danish)",
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
   "@businessWelcomeScreenComingSoon": {
     "description": "Localization key for: Business Welcome Screen - Coming Soon"
   },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e (Danish)",
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
   "@failedToOpenCustomerPortalE": {
     "description": "Localization key for: Failed to open customer portal: $e"
   },
-  "continueText": "Continue (Danish)",
+  "continueText": "متابعة",
   "@continueText": {
     "description": "Localization key for: Continue"
   },
-  "close1": "Close (Danish)",
+  "close1": "إغلاق",
   "@close1": {
     "description": "Localization key for: Close"
   },
-  "confirm1": "Confirm (Danish)",
+  "confirm1": "تأكيد",
   "@confirm1": {
     "description": "Localization key for: Confirm"
   },
-  "externalMeetings": "External Meetings (Danish)",
+  "externalMeetings": "الاجتماعات الخارجية",
   "@externalMeetings": {
     "description": "Localization key for: External Meetings"
   },
-  "approve": "Approve (Danish)",
+  "approve": "موافقة",
   "@approve": {
     "description": "Localization key for: Approve"
   },
-  "REDACTED_TOKEN": "No invoices found. Create your first invoice! (Danish)",
+  "REDACTED_TOKEN": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
   "@REDACTED_TOKEN": {
     "description": "Localization key for: No invoices found. Create your first invoice!"
   },
-  "subscribe": "Subscribe (Danish)",
+  "subscribe": "اشتراك",
   "@subscribe": {
     "description": "Localization key for: Subscribe"
   },
-  "login1": "Login",
+  "login1": "تسجيل الدخول",
   "@login1": {
     "description": "Localization key for: Login"
   },
-  "adminOverviewGoesHere": "Admin overview goes here",
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
   "@adminOverviewGoesHere": {
     "description": "Localization key for: Admin overview goes here"
   },
-  "loadingCheckout": "Loading checkout... (Danish)",
+  "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   }
