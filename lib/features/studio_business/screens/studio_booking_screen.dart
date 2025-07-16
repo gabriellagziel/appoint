@@ -38,6 +38,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
     }
 
     final profileAsync = ref.watch(businessProfileProvider);
+    final bookingState = ref.watch(bookingProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Studio Booking')),
@@ -148,11 +149,35 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                     ),
                     const SizedBox(height: 24),
 
+                    // Show booking state
+                    bookingState.when(
+                      data: (booking) => const SizedBox.shrink(),
+                      loading: () => const Center(
+                        child: Padding(
+                          padding: EdgeInsets.all(16),
+                          child: CircularProgressIndicator(),
+                        ),
+                      ),
+                      error: (error, stack) => Container(
+                        padding: const EdgeInsets.all(16),
+                        margin: const EdgeInsets.only(bottom: 16),
+                        decoration: BoxDecoration(
+                          color: Colors.red.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(color: Colors.red.withOpacity(0.3)),
+                        ),
+                        child: Text(
+                          'Error: $error',
+                          style: const TextStyle(color: Colors.red),
+                        ),
+                      ),
+                    ),
+
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: _isProcessing ? null : _processBooking,
-                        child: _isProcessing
+                        onPressed: _isProcessing || bookingState.isLoading ? null : _processBooking,
+                        child: _isProcessing || bookingState.isLoading
                             ? const CircularProgressIndicator()
                             : const Text('Send Booking Invite'),
                       ),
@@ -178,15 +203,15 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
           return;
         }
 
-        // Create booking
+        // Create booking using context.read
         final bookingNotifier = ref.read(bookingProvider.notifier);
-        await bookingNotifier.createBooking(
-          staffProfileId: selectedStaff!.id,
+        await bookingNotifier.submitBooking(
+          staffProfileId: selectedStaff?.id ?? 'default_staff_id',
           businessProfileId: 'business1', // This should come from the profile
-          date: selectedDate!,
-          startTime: selectedTimeSlot!,
-          endTime: _getEndTime(selectedTimeSlot!),
-          cost: selectedStaff!.hourlyRate,
+          date: selectedDate ?? DateTime.now(),
+          startTime: selectedTimeSlot ?? '09:00',
+          endTime: _getEndTime(selectedTimeSlot ?? '09:00'),
+          cost: selectedStaff?.hourlyRate ?? 50.0,
         );
 
         // Increment weekly usage
@@ -201,6 +226,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
           );
         }
       } catch (e) {
+        if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('Error: $e')),
           );
