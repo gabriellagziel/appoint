@@ -700,7 +700,6 @@ class _UploadBackgroundDialogState
           ),
         );
       }
-    } finally {
       if (mounted) {
         setState(() {
           _isUploading = false;

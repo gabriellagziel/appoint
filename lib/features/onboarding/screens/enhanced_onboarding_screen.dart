@@ -665,8 +665,8 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Failed to complete onboarding: $e')),
         );
-      }
     }
+  }
   }
 
   String _getUserTypeName(UserType? type) {

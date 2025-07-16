@@ -70,7 +70,6 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(content: Text('Login failed: $e')),
                         );
-                      } finally {
                         if (mounted) {
                           setState(() => _isLoading = false);
                         }

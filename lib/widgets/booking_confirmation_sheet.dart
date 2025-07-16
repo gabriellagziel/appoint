@@ -37,7 +37,6 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
         await AdService.showInterstitialAd();
       } catch (e) {
         // Continue even if ad fails
-      } finally {
         if (mounted) setState(() => _isLoadingAd = false);
       }
     }

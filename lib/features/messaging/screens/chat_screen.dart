@@ -106,7 +106,6 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
           SnackBar(content: Text('Failed to send message: $e')),
         );
       }
-    } finally {
       if (mounted) {
         setState(() {
           _isSending = false;
@@ -167,7 +166,6 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
           SnackBar(content: Text('Failed to send attachment: $e')),
         );
       }
-    } finally {
       if (mounted) {
         setState(() {
           _isSending = false;

@@ -106,7 +106,6 @@ class _SubscriptionManagementScreenState
           backgroundColor: Colors.red,
         ),
       );
-    } finally {
       setState(() => _isLoading = false);
     }
   }

@@ -398,7 +398,6 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
           ),
         );
       }
-    } finally {
       if (mounted) {
         setState(() {
           _isLoading = false;

@@ -291,7 +291,6 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
           SnackBar(content: Text('Error: $e')),
         );
       }
-    } finally {
       if (mounted) {
         setState(() => _isAdding = false);
       }
@@ -326,7 +325,6 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
           SnackBar(content: Text('Error: $e')),
         );
       }
-    } finally {
       if (mounted) {
         setState(() => _isAdding = false);
       }

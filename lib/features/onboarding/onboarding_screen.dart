@@ -129,7 +129,6 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
             backgroundColor: Colors.red,
           ),
         );
-    } finally {
       if (mounted) {
         setState(() {
           _isLoading = false;
@@ -318,7 +317,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                     ),
                   )
                 : Text(
-                    final _currentPage = = _pages.length - 1 
+                    _currentPage == _pages.length - 1 
                       ? l10n.getStarted 
                       : l10n.next,
                     style: const TextStyle(
