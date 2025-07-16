@@ -2,7 +2,7 @@ import 'package:appoint/features/studio_business/models/business_profile.dart';
 import 'package:appoint/features/studio_business/services/business_profile_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final businessProfileProvider =
+final studioBusinessProfileProvider =
     StateNotifierProvider<BusinessProfileNotifier, BusinessProfile?>((ref) => BusinessProfileNotifier());
 
 class BusinessProfileNotifier extends StateNotifier<BusinessProfile?> {

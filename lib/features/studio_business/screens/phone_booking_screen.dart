@@ -31,7 +31,7 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final profile = ref.watch(businessProfileProvider);
+    final profile = ref.watch(studioBusinessProfileProvider);
     if (profile == null) {
       return const Scaffold(
         appBar: AppBar(title: Text('Phone Booking')),

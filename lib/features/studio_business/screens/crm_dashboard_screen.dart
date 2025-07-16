@@ -1,6 +1,7 @@
 import 'package:appoint/models/appointment.dart';
 import 'package:appoint/models/business_profile.dart';
 import 'package:appoint/providers/studio_business_providers.dart';
+import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -9,13 +10,16 @@ class CRMDashboardScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    profileAsync = ref.watch(businessProfileProvider);
+    final profile = ref.watch(studioBusinessProfileProvider);
+
+    if (profile == null) {
+      return const Scaffold(
+        body: Center(child: CircularProgressIndicator()),
+      );
+    }
 
     return Scaffold(
-      body: profileAsync.when(
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, final _) => Center(child: Text('Error: $e')),
-        data: (profile) => Row(
+      body: Row(
           children: [
             // Sidebar
             Container(
@@ -116,13 +120,14 @@ class DashboardHome extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    profileAsync = ref.watch(businessProfileProvider);
-    statsAsync = ref.watch(dashboardStatsProvider);
+    final profile = ref.watch(studioBusinessProfileProvider);
+    final statsAsync = ref.watch(dashboardStatsProvider);
 
-    return profileAsync.when(
-      loading: () => const Center(child: CircularProgressIndicator()),
-      error: (e, final _) => Center(child: Text('Error: $e')),
-      data: (profile) => Padding(
+    if (profile == null) {
+      return const Center(child: CircularProgressIndicator());
+    }
+
+    return Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
