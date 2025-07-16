@@ -11,6 +11,8 @@ on:
 jobs:
   sync-translations:
     runs-on: ubuntu-latest
+    container:
+      image: registry.digitalocean.com/appoint/flutter-ci:latest
     env:
       CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
       CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
@@ -21,11 +23,10 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.24.5'
-          channel: 'stable'
+      - name: Setup Flutter (DigitalOcean)
+        run: |
+          echo "📦 Using DigitalOcean Flutter container..."
+          # Flutter is already available in the DigitalOcean container
       
       - name: Pull translations from Crowdin
         uses: crowdin/github-action@v2
