@@ -23,6 +23,8 @@ void main() {
   group('Admin Panel Integration Tests', () {
     late MockAdminService mockAdminService;
     late ProviderContainer container;
+    late AdminDashboardStats result;
+    late AdminDashboardStats stats;
 
     setUp(() {
       mockAdminService = MockAdminService();
@@ -264,5 +266,5 @@ void main() {
       expect(stats.totalBookings, equals(50));
       expect(stats.totalRevenue, equals(1000.0));
     });
-  }, skip: true,);
+  });
 }
