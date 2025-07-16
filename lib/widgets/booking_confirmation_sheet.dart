@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/providers/user_subscription_provider.dart';
-import 'package:appoint/providers/ad_provider.dart';
 import 'package:appoint/services/ad_service.dart';
 
 class BookingConfirmationSheet extends ConsumerStatefulWidget {
@@ -25,9 +24,16 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
   bool _isLoadingAd = false;
 
   Future<void> _handleConfirm() async {
-    final shouldShowAds = ref.read(shouldShowAdsProvider);
+    final subscriptionAsync = ref.read(userSubscriptionProvider);
     
-    if (shouldShowAds) {
+    // Check if user is premium
+    final isPremium = subscriptionAsync.maybeWhen(
+      data: (isPremium) => isPremium,
+      orElse: () => false,
+    );
+    
+    // Show ad if user is not premium
+    if (!isPremium) {
       setState(() => _isLoadingAd = true);
       try {
         await AdService.showInterstitialAd();
@@ -42,9 +48,6 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
   }
 
   Future<void> _upgradeToPremium() async {
-    final upgradeService = ref.read(premiumUpgradeProvider);
-    await upgradeService.upgradeToPremium();
-    
     // TODO: Implement real payment flow
     // For now, just show a placeholder message
     if (mounted) {
@@ -60,7 +63,6 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
   @override
   Widget build(BuildContext context) {
     final subscriptionAsync = ref.watch(userSubscriptionProvider);
-    final shouldShowAds = ref.watch(shouldShowAdsProvider);
 
     final isPremium = subscriptionAsync.maybeWhen(
       data: (isPremium) => isPremium,
@@ -145,7 +147,7 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
                           height: 20,
                           child: CircularProgressIndicator(strokeWidth: 2),
                         )
-                      : Text(shouldShowAds ? 'Confirm (with Ad)' : 'Confirm'),
+                      : Text(isPremium ? 'Confirm' : 'Confirm (with Ad)'),
                 ),
               ),
             ],
