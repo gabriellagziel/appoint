@@ -263,7 +263,6 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
           SnackBar(content: Text('Error: $e')),
         );
       }
-    } finally {
       if (mounted) {
         setState(() => _isAdding = false);
       }
@@ -303,7 +302,6 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
           SnackBar(content: Text('Error: $e')),
         );
       }
-    } finally {
       if (mounted) {
         setState(() => _isAdding = false);
       }
