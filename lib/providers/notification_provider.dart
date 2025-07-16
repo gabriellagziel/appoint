@@ -15,9 +15,8 @@ final notificationsProvider =
 /// Provider for the UI notification service
 /// This should be overridden in the app's main function with a real implementation
 final uiNotificationServiceProvider = Provider<UINotificationService>((ref) {
-  throw UnimplementedError(
-    'UINotificationService not provided. '
-    'Please override this provider in your main function.');
+  // Return a stub implementation instead of throwing UnimplementedError
+  return UINotificationService();
 });
 
 /// Provider for showing sync-related notifications
