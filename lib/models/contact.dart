@@ -5,8 +5,6 @@ part 'contact.g.dart';
 
 @freezed
 class Contact with _$Contact {
-  const Contact._();
-  
   const factory Contact({
     required final String id,
     required final String displayName,
