@@ -52,9 +52,8 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
 
     return Scaffold(
       appBar: AppBar(title: const Text('Studio Booking')),
-      body: profileAsync == null
-          ? const Center(child: CircularProgressIndicator())
-          : Padding(
+      body: profileAsync.when(
+        data: (profile) => Padding(
               padding: const EdgeInsets.all(16),
               child: Form(
                 key: _formKey,
@@ -69,11 +68,11 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              profileAsync?.name ?? 'Business Name',
+                              profile.name,
                               style: Theme.of(context).textTheme.headlineSmall,
                             ),
                             const SizedBox(height: 8),
-                            Text('Phone: ${profileAsync?.phone ?? 'N/A'}'),
+                            Text('Phone: ${profile.phone}'),
                           ],
                         ),
                       ),
@@ -212,6 +211,31 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                 ),
               ),
             ),
+        loading: () => const Center(child: CircularProgressIndicator()),
+        error: (error, stack) => Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.error, color: Colors.red.shade600, size: 64),
+              const SizedBox(height: 16),
+              Text(
+                'Error loading business profile',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.red.shade700,
+                ),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                error.toString(),
+                style: TextStyle(color: Colors.red.shade600),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 
@@ -233,7 +257,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
         final bookingNotifier = ref.read(bookingProvider.notifier);
         await bookingNotifier.submitBooking(
           staffProfileId: selectedStaff?.id ?? 'default-staff-id',
-          businessProfileId: profileAsync?.id ?? 'business1',
+          businessProfileId: profile.id,
           date: selectedDate ?? DateTime.now(),
           startTime: selectedTimeSlot ?? '09:00',
           endTime: _getEndTime(selectedTimeSlot ?? '09:00'),

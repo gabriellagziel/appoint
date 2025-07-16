@@ -31,13 +31,12 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    profileAsync = ref.watch(businessProfileProvider);
+    final profileAsync = ref.watch(businessProfileProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Phone Booking')),
-      body: profileAsync == null
-          ? const Center(child: CircularProgressIndicator())
-          : Padding(
+      body: profileAsync.when(
+        data: (profile) => Padding(
               padding: const EdgeInsets.all(16),
               child: Form(
                 key: _formKey,
@@ -52,11 +51,11 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              profileAsync.name,
+                              profile.name,
                               style: Theme.of(context).textTheme.headlineSmall,
                             ),
                             const SizedBox(height: 8),
-                            Text('Phone: ${profileAsync.phone}'),
+                            Text('Phone: ${profile.phone}'),
                           ],
                         ),
                       ),
@@ -155,6 +154,31 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
                 ),
               ),
             ),
+        loading: () => const Center(child: CircularProgressIndicator()),
+        error: (error, stack) => Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.error, color: Colors.red.shade600, size: 64),
+              const SizedBox(height: 16),
+              Text(
+                'Error loading business profile',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.red.shade700,
+                ),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                error.toString(),
+                style: TextStyle(color: Colors.red.shade600),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 
@@ -190,16 +214,16 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
     setState(() => _isProcessing = true);
 
     try {
-      phoneNumber = _phoneController.text.trim();
-      customerName = _nameController.text.trim();
+      final phoneNumber = _phoneController.text.trim();
+      final customerName = _nameController.text.trim();
       final date = _dateController.text;
       final time = _timeController.text;
 
       // Generate unique booking code
-      bookingCode = _generateBookingCode();
+      final bookingCode = _generateBookingCode();
 
       // Check if user exists in Firestore
-      userExists = await _checkUserExists(phoneNumber);
+      final userExists = await _checkUserExists(phoneNumber);
 
       if (userExists) {
         // Send in-app notification and create booking
@@ -305,8 +329,8 @@ We'll see you soon!
   }
 
   String _generateBookingCode() {
-    timestamp = DateTime.now().millisecondsSinceEpoch;
-    random = (timestamp % 10000).toString().padLeft(4, '0');
+    final timestamp = DateTime.now().millisecondsSinceEpoch;
+    final random = (timestamp % 10000).toString().padLeft(4, '0');
     return 'BK$random';
   }
 
