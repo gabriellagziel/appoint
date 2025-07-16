@@ -109,6 +109,11 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         name: 'adminBroadcast',
         builder: (context, final state) => const AdminBroadcastScreen(),
       ),
+      GoRoute(
+        path: '/admin/messages',
+        name: 'adminMessages',
+        builder: (context, final state) => const AdminBroadcastScreen(),
+      ),
 
       GoRoute(
         path: '/family/invite',
