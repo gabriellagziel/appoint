@@ -1,5 +1,5 @@
-import 'package:appoint/models/business_profile.dart';
-import 'package:appoint/services/business_profile_service.dart';
+import 'package:appoint/features/studio_business/models/business_profile.dart';
+import 'package:appoint/features/studio_business/services/business_profile_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final businessProfileProvider =
@@ -12,7 +12,7 @@ class BusinessProfileNotifier extends StateNotifier<BusinessProfile?> {
     loadProfile();
   }
 
-  _service = BusinessProfileService();
+  final _service = BusinessProfileService();
 
   Future<void> loadProfile() async {
     state = await _service.fetchProfile();
@@ -29,6 +29,6 @@ class BusinessProfileNotifier extends StateNotifier<BusinessProfile?> {
 
   Future<void> save() async {
     if (state == null) return;
-    await _service.saveProfile(state!);
+    await _service.updateProfile(state!);
   }
 }
