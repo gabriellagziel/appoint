@@ -33,6 +33,7 @@ void main() {
           ),
         );
 
+        // Check for login screen title (could be in AppBar or elsewhere)
         expect(find.text('Login'), findsOneWidget);
       });
 
@@ -47,6 +48,7 @@ void main() {
         );
 
         expect(find.byType(TextField), findsNWidgets(2));
+        // Check for email and password labels (they might be in decoration or semantics)
         expect(find.text('Email'), findsOneWidget);
         expect(find.text('Password'), findsOneWidget);
       });
