@@ -16,6 +16,9 @@ void main() {
     mockAuth = MockFirebaseAuth();
   });
 
+  late ProviderContainer container;
+  late bool isAdmin;
+
   group('Admin Role Tests', () {
     test('isAdminProvider should return false when user is not authenticated',
         () async {
@@ -27,7 +30,7 @@ void main() {
       expect(isAdmin, false);
 
       container.dispose();
-    }, skip: true,);
+    });
 
     test('AdminGuard widget should show access denied for non-admin users', () {
       container = ProviderContainer();
@@ -37,7 +40,7 @@ void main() {
       expect(container.read(isAdminProvider), isA<AsyncValue<bool>>());
 
       container.dispose();
-    }, skip: true,);
+    });
 
     test('AdminRoleMixin should provide admin checking methods', () {
       container = ProviderContainer();
@@ -46,6 +49,6 @@ void main() {
       expect(container.read(isAdminProvider), isA<AsyncValue<bool>>());
 
       container.dispose();
-    }, skip: true,);
+    });
   });
 }
