@@ -62,8 +62,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get createVirtualSession => '[BG] Създаване на виртуална сесия';
 
   @override
-  String get messageSentSuccessfully =>
-      '[BG] Съобщението беше изпратено успешно';
+  String get messageSentSuccessfully => '[BG] Съобщението беше изпратено успешно';
 
   @override
   String get redo => 'Повторно';
@@ -75,8 +74,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get search => 'Търси';
 
   @override
-  String get cancelInviteConfirmation =>
-      '[BG] Отмяна на потвърждение на покана';
+  String get cancelInviteConfirmation => '[BG] Отмяна на потвърждение на покана';
 
   @override
   String created(Object date) {
@@ -87,15 +85,13 @@ class AppLocalizationsBg extends AppLocalizations {
   String get revokeAccess => '[BG] Отмяна на достъп';
 
   @override
-  String get saveGroupForRecognition =>
-      '[BG] Запазване на група за разпознаване';
+  String get saveGroupForRecognition => '[BG] Запазване на група за разпознаване';
 
   @override
   String get playtimeLiveScheduled => '[BG] Готово е планирането на живо';
 
   @override
-  String get revokeAccessConfirmation =>
-      '[BG] Потвърждение за отмяна на достъп';
+  String get revokeAccessConfirmation => '[BG] Потвърждение за отмяна на достъп';
 
   @override
   String get download => 'Изтегляне';
@@ -207,8 +203,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get cut => 'Изрежи';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      '[BG] Поканата беше отменена успешно';
+  String get inviteCancelledSuccessfully => '[BG] Поканата беше отменена успешно';
 
   @override
   String get retry => '[BG] Опитай отново';
@@ -404,8 +399,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get mediaOptional => '[BG] Медия (по избор)';
 
   @override
-  String get messageSavedSuccessfully =>
-      '[BG] Съобщението беше запазено успешно';
+  String get messageSavedSuccessfully => '[BG] Съобщението беше запазено успешно';
 
   @override
   String get scheduledFor => '[BG] Планиран за';
@@ -491,8 +485,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get playtimeEnterGameName => '[BG] Въведете име на играта';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[BG] Моля, влезте за семейни функции';
+  String get pleaseLoginForFamilyFeatures => '[BG] Моля, влезте за семейни функции';
 
   @override
   String get myInvites => '[BG] Моите покани';
@@ -510,8 +503,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get adminScreenTBD => '[BG] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle =>
-      '[BG] Заглавие на таблото за родители в Playtime';
+  String get playtimeParentDashboardTitle => '[BG] Заглавие на таблото за родители в Playtime';
 
   @override
   String get close => 'Затвори';
@@ -553,8 +545,7 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[BG] Моля, влезте, за да видите профила';
+  String get pleaseLoginToViewProfile => '[BG] Моля, влезте, за да видите профила';
 
   @override
   String get adminMetrics => '[BG] Admin Metrics';
@@ -575,52 +566,40 @@ class AppLocalizationsBg extends AppLocalizations {
   String get contentLibrary => '[BG] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[BG] No account found with this email address.';
+  String get authErrorUserNotFound => '[BG] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[BG] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[BG] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[BG] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[BG] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[BG] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[BG] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[BG] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[BG] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[BG] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[BG] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[BG] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[BG] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[BG] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[BG] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[BG] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[BG] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      '[BG] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential => '[BG] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[BG] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[BG] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[BG] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[BG] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -637,24 +616,19 @@ class AppLocalizationsBg extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[BG] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[BG] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[BG] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[BG] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode =>
-      '[BG] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode => '[BG] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[BG] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[BG] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode =>
-      '[BG] Please enter the verification code.';
+  String get authErrorMissingVerificationCode => '[BG] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[BG] Missing verification ID.';
@@ -666,56 +640,43 @@ class AppLocalizationsBg extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[BG] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[BG] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[BG] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[BG] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[BG] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[BG] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[BG] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired =>
-      '[BG] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired => '[BG] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound =>
-      '[BG] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound => '[BG] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession =>
-      '[BG] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession => '[BG] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession =>
-      '[BG] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession => '[BG] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      '[BG] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse => '[BG] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      '[BG] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded => '[BG] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[BG] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[BG] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      '[BG] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification => '[BG] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      '[BG] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists => '[BG] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[BG] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[BG] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[BG] The ID token is invalid.';
@@ -727,12 +688,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[BG] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[BG] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[BG] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[BG] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[BG] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[BG] Invalid custom claims provided.';
@@ -741,87 +700,70 @@ class AppLocalizationsBg extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[BG] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[BG] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[BG] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[BG] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[BG] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[BG] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      '[BG] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain => '[BG] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[BG] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[BG] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[BG] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[BG] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[BG] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[BG] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      '[BG] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength => '[BG] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[BG] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[BG] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[BG] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      '[BG] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization => '[BG] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[BG] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[BG] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      '[BG] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator => '[BG] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[BG] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[BG] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[BG] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[BG] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[BG] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[BG] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      '[BG] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration => '[BG] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[BG] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[BG] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[BG] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      '[BG] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded => '[BG] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[BG] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[BG] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[BG] Missing continue URL.';
@@ -836,8 +778,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get authErrorMissingUid => '[BG] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret =>
-      '[BG] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret => '[BG] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[BG] Firebase project not found.';
@@ -846,23 +787,19 @@ class AppLocalizationsBg extends AppLocalizations {
   String get authErrorReservedClaims => '[BG] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[BG] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[BG] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[BG] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[BG] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[BG] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      '[BG] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri => '[BG] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[BG] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[BG] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -911,8 +848,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      '[BG] Virtual session created! Inviting friends... (Bulgarian)';
+  String get virtualSessionCreatedInvitingFriends => '[BG] Virtual session created! Inviting friends... (Bulgarian)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -953,15 +889,13 @@ class AppLocalizationsBg extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[BG] Subscription unavailable (Bulgarian)';
+  String get subscriptionUnavailable => '[BG] Subscription unavailable (Bulgarian)';
 
   @override
   String get confirmBooking => '[BG] Confirm Booking (Bulgarian)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[BG] Failed to update permission: \$e (Bulgarian)';
+  String get failedToUpdatePermissionE => '[BG] Failed to update permission: \$e (Bulgarian)';
 
   @override
   String get reject => '[BG] Reject (Bulgarian)';
@@ -975,8 +909,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get noProviders => '[BG] No providers';
 
   @override
-  String get checkingSubscription =>
-      '[BG] Checking subscription... (Bulgarian)';
+  String get checkingSubscription => '[BG] Checking subscription... (Bulgarian)';
 
   @override
   String errorPickingImageE(Object e) {
@@ -984,15 +917,13 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get noContentAvailableYet =>
-      '[BG] No content available yet (Bulgarian)';
+  String get noContentAvailableYet => '[BG] No content available yet (Bulgarian)';
 
   @override
   String get resolve => '[BG] Resolve (Bulgarian)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[BG] Error loading surveys: \$error (Bulgarian)';
+  String get errorLoadingSurveysError => '[BG] Error loading surveys: \$error (Bulgarian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -1000,8 +931,7 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[BG] Get help with your account (Bulgarian)';
+  String get getHelpWithYourAccount => '[BG] Get help with your account (Bulgarian)';
 
   @override
   String get pay => '[BG] Pay (Bulgarian)';
@@ -1016,8 +946,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[BG] Changes saved successfully! (Bulgarian)';
+  String get changesSavedSuccessfully => '[BG] Changes saved successfully! (Bulgarian)';
 
   @override
   String get createNewInvoice => '[BG] Create New Invoice (Bulgarian)';
@@ -1037,8 +966,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get profileSaved => '[BG] Profile saved! (Bulgarian)';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1069,8 +997,7 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      '[BG] You will receive a confirmation email shortly. (Bulgarian)';
+  String get youWillReceiveAConfirmationEmailShortly => '[BG] You will receive a confirmation email shortly. (Bulgarian)';
 
   @override
   String get addQuestion => '[BG] Add Question (Bulgarian)';
@@ -1099,26 +1026,22 @@ class AppLocalizationsBg extends AppLocalizations {
   String get surveyManagement => '[BG] Survey Management (Bulgarian)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[BG] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[BG] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[BG] No rooms found. Add your first room! (Bulgarian)';
+  String get noRoomsFoundAddYourFirstRoom => '[BG] No rooms found. Add your first room! (Bulgarian)';
 
   @override
   String get readOurPrivacyPolicy => '[BG] Read our privacy policy (Bulgarian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[BG] Could not open privacy policy (Bulgarian)';
+  String get couldNotOpenPrivacyPolicy => '[BG] Could not open privacy policy (Bulgarian)';
 
   @override
   String get refresh1 => '[BG] Refresh (Bulgarian)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[BG] Room updated successfully! (Bulgarian)';
+  String get roomUpdatedSuccessfully => '[BG] Room updated successfully! (Bulgarian)';
 
   @override
   String get contentDetail => '[BG] Content Detail (Bulgarian)';
@@ -1127,8 +1050,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get cancelSubscription => '[BG] Cancel Subscription (Bulgarian)';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      '[BG] Successfully registered as Ambassador! (Bulgarian)';
+  String get successfullyRegisteredAsAmbassador => '[BG] Successfully registered as Ambassador! (Bulgarian)';
 
   @override
   String get save1 => '[BG] Save (Bulgarian)';
@@ -1137,8 +1059,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get copy1 => '[BG] Copy (Bulgarian)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[BG] Failed to send invitation: \$e (Bulgarian)';
+  String get failedToSendInvitationE => '[BG] Failed to send invitation: \$e (Bulgarian)';
 
   @override
   String get surveyScore => '[BG] Survey Score (Bulgarian)';
@@ -1155,20 +1076,16 @@ class AppLocalizationsBg extends AppLocalizations {
   String get responseDetail => '[BG] Response Detail (Bulgarian)';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[BG] Failed to start Pro subscription: \$e (Bulgarian)';
+  String get failedToStartProSubscriptionE => '[BG] Failed to start Pro subscription: \$e (Bulgarian)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      '[BG] Business Dashboard Entry Screen - Coming Soon (Bulgarian)';
+  String get businessDashboardEntryScreenComingSoon => '[BG] Business Dashboard Entry Screen - Coming Soon (Bulgarian)';
 
   @override
   String get contentFilter => '[BG] Content Filter (Bulgarian)';
@@ -1190,8 +1107,7 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      '[BG] Business CRM Entry Screen - Coming Soon (Bulgarian)';
+  String get businessCrmEntryScreenComingSoon => '[BG] Business CRM Entry Screen - Coming Soon (Bulgarian)';
 
   @override
   String get adminDashboard => '[BG] Admin Dashboard';
@@ -1202,16 +1118,13 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[BG] Error loading dashboard: \$error (Bulgarian)';
+  String get errorLoadingDashboardError => '[BG] Error loading dashboard: \$error (Bulgarian)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[BG] Game deleted successfully! (Bulgarian)';
+  String get gameDeletedSuccessfully => '[BG] Game deleted successfully! (Bulgarian)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[BG] View responses - Coming soon! (Bulgarian)';
+  String get viewResponsesComingSoon => '[BG] View responses - Coming soon! (Bulgarian)';
 
   @override
   String get deleteProvider => '[BG] Delete Provider';
@@ -1220,8 +1133,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get errorLoadingRewards => '[BG] Error loading rewards (Bulgarian)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[BG] Failed to delete account: \$e (Bulgarian)';
+  String get failedToDeleteAccountE => '[BG] Failed to delete account: \$e (Bulgarian)';
 
   @override
   String get invited1 => '[BG] Invited (Bulgarian)';
@@ -1236,8 +1148,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get noEvents => '[BG] No events (Bulgarian)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[BG] Game created successfully! (Bulgarian)';
+  String get gameCreatedSuccessfully => '[BG] Game created successfully! (Bulgarian)';
 
   @override
   String get add1 => '[BG] Add (Bulgarian)';
@@ -1257,12 +1168,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get clients => '[BG] Clients (Bulgarian)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[BG] No ambassador data available (Bulgarian)';
+  String get noAmbassadorDataAvailable => '[BG] No ambassador data available (Bulgarian)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[BG] Background deleted successfully! (Bulgarian)';
+  String get backgroundDeletedSuccessfully => '[BG] Background deleted successfully! (Bulgarian)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1270,8 +1179,7 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[BG] No analytics data available yet. (Bulgarian)';
+  String get noAnalyticsDataAvailableYet => '[BG] No analytics data available yet. (Bulgarian)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1279,8 +1187,7 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      '[BG] Business Phone Booking Entry Screen - Coming Soon (Bulgarian)';
+  String get businessPhoneBookingEntryScreenComingSoon => '[BG] Business Phone Booking Entry Screen - Coming Soon (Bulgarian)';
 
   @override
   String get verification => '[BG] Verification (Bulgarian)';
@@ -1327,8 +1234,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get businessProfile => '[BG] Business Profile (Bulgarian)';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      '[BG] Business Booking Entry Screen - Coming Soon (Bulgarian)';
+  String get businessBookingEntryScreenComingSoon => '[BG] Business Booking Entry Screen - Coming Soon (Bulgarian)';
 
   @override
   String get createNewSurvey => '[BG] Create New Survey (Bulgarian)';
@@ -1352,8 +1258,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get loginFailedE => '[BG] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[BG] Invitation sent successfully! (Bulgarian)';
+  String get invitationSentSuccessfully => '[BG] Invitation sent successfully! (Bulgarian)';
 
   @override
   String get registering => '[BG] Registering... (Bulgarian)';
@@ -1367,16 +1272,13 @@ class AppLocalizationsBg extends AppLocalizations {
   String get home1 => '[BG] Home (Bulgarian)';
 
   @override
-  String get errorSavingSettingsE =>
-      '[BG] Error saving settings: \$e (Bulgarian)';
+  String get errorSavingSettingsE => '[BG] Error saving settings: \$e (Bulgarian)';
 
   @override
-  String get appVersionAndInformation =>
-      '[BG] App version and information (Bulgarian)';
+  String get appVersionAndInformation => '[BG] App version and information (Bulgarian)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      '[BG] Business Subscription Entry Screen - Coming Soon (Bulgarian)';
+  String get businessSubscriptionEntryScreenComingSoon => '[BG] Business Subscription Entry Screen - Coming Soon (Bulgarian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1384,8 +1286,7 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      '[BG] Your payment has been processed successfully. (Bulgarian)';
+  String get yourPaymentHasBeenProcessedSuccessfully => '[BG] Your payment has been processed successfully. (Bulgarian)';
 
   @override
   String get errorE => '[BG] Error: \$e (Bulgarian)';
@@ -1394,8 +1295,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get viewAll1 => '[BG] View All (Bulgarian)';
 
   @override
-  String get editSurveyComingSoon =>
-      '[BG] Edit survey - Coming soon! (Bulgarian)';
+  String get editSurveyComingSoon => '[BG] Edit survey - Coming soon! (Bulgarian)';
 
   @override
   String get enterOtp => '[BG] Enter OTP (Bulgarian)';
@@ -1404,8 +1304,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get payment => '[BG] Payment (Bulgarian)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      '[BG] Automatically confirm new booking requests (Bulgarian)';
+  String get automaticallyConfirmNewBookingRequests => '[BG] Automatically confirm new booking requests (Bulgarian)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1418,8 +1317,7 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[BG] Please sign in to upload a background (Bulgarian)';
+  String get pleaseSignInToUploadABackground => '[BG] Please sign in to upload a background (Bulgarian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1436,22 +1334,19 @@ class AppLocalizationsBg extends AppLocalizations {
   String get autoconfirmBookings => '[BG] Auto-Confirm Bookings (Bulgarian)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      '[BG] Redirecting to Stripe checkout for Pro plan... (Bulgarian)';
+  String get redirectingToStripeCheckoutForProPlan => '[BG] Redirecting to Stripe checkout for Pro plan... (Bulgarian)';
 
   @override
   String get exportAsCsv => '[BG] Export as CSV (Bulgarian)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[BG] Delete functionality coming soon! (Bulgarian)';
+  String get deleteFunctionalityComingSoon => '[BG] Delete functionality coming soon! (Bulgarian)';
 
   @override
   String get editClient => '[BG] Edit Client (Bulgarian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      '[BG] Are you sure you want to delete this message? (Bulgarian)';
+  String get areYouSureYouWantToDeleteThisMessage => '[BG] Are you sure you want to delete this message? (Bulgarian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1462,39 +1357,31 @@ class AppLocalizationsBg extends AppLocalizations {
   String get notAuthenticated => '[BG] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[BG] Privacy request sent to your parents! (Bulgarian)';
+  String get privacyRequestSentToYourParents => '[BG] Privacy request sent to your parents! (Bulgarian)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[BG] Client deleted successfully! (Bulgarian)';
+  String get clientDeletedSuccessfully => '[BG] Client deleted successfully! (Bulgarian)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[BG] Failed to cancel subscription (Bulgarian)';
+  String get failedToCancelSubscription => '[BG] Failed to cancel subscription (Bulgarian)';
 
   @override
   String get allLanguages => '[BG] All Languages (Bulgarian)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[BG] Slot deleted successfully (Bulgarian)';
+  String get slotDeletedSuccessfully => '[BG] Slot deleted successfully (Bulgarian)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      '[BG] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => '[BG] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      '[BG] Parents must approve before children can join (Bulgarian)';
+  String get parentsMustApproveBeforeChildrenCanJoin => '[BG] Parents must approve before children can join (Bulgarian)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[BG] Subscribe to Pro (€14.99/mo) (Bulgarian)';
+  String get subscribeToPro1499mo => '[BG] Subscribe to Pro (€14.99/mo) (Bulgarian)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      '[BG] Business Availability Entry Screen - Coming Soon (Bulgarian)';
+  String get businessAvailabilityEntryScreenComingSoon => '[BG] Business Availability Entry Screen - Coming Soon (Bulgarian)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1508,8 +1395,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get submitBooking => '[BG] Submit Booking (Bulgarian)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      '[BG] Are you sure you want to cancel this appointment? (Bulgarian)';
+  String get areYouSureYouWantToCancelThisAppointment => '[BG] Are you sure you want to cancel this appointment? (Bulgarian)';
 
   @override
   String get noUpcomingBookings => '[BG] No upcoming bookings (Bulgarian)';
@@ -1527,8 +1413,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get goToDashboard => '[BG] Go to Dashboard (Bulgarian)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[BG] Ambassador Quota Dashboard (Bulgarian)';
+  String get ambassadorQuotaDashboard => '[BG] Ambassador Quota Dashboard (Bulgarian)';
 
   @override
   String get adminSettings => '[BG] Admin Settings';
@@ -1566,8 +1451,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[BG] Client added successfully! (Bulgarian)';
+  String get clientAddedSuccessfully => '[BG] Client added successfully! (Bulgarian)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1585,8 +1469,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get bookAppointment => '[BG] Book Appointment (Bulgarian)';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[BG] Delete (Bulgarian)';
@@ -1601,15 +1484,13 @@ class AppLocalizationsBg extends AppLocalizations {
   String get manageSubscription => '[BG] Manage Subscription (Bulgarian)';
 
   @override
-  String get requiresInstallFallback =>
-      '[BG] Requires Install Fallback (Bulgarian)';
+  String get requiresInstallFallback => '[BG] Requires Install Fallback (Bulgarian)';
 
   @override
   String get paymentConfirmation => '[BG] Payment Confirmation (Bulgarian)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[BG] Promo applied! Your next bill is free. (Bulgarian)';
+  String get promoAppliedYourNextBillIsFree => '[BG] Promo applied! Your next bill is free. (Bulgarian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1620,16 +1501,13 @@ class AppLocalizationsBg extends AppLocalizations {
   String get errorLoadingSlots => '[BG] Error loading slots (Bulgarian)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      '[BG] Allow other users to find and join this game (Bulgarian)';
+  String get allowOtherUsersToFindAndJoinThisGame => '[BG] Allow other users to find and join this game (Bulgarian)';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      '[BG] Business Onboarding Screen - Coming Soon (Bulgarian)';
+  String get businessOnboardingScreenComingSoon => '[BG] Business Onboarding Screen - Coming Soon (Bulgarian)';
 
   @override
-  String get activateBusinessProfile =>
-      '[BG] Activate Business Profile (Bulgarian)';
+  String get activateBusinessProfile => '[BG] Activate Business Profile (Bulgarian)';
 
   @override
   String get contentNotFound => '[BG] Content not found (Bulgarian)';
@@ -1671,8 +1549,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get shareLink => '[BG] Share Link (Bulgarian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      '[BG] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => '[BG] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[BG] Delete Appointment (Bulgarian)';
@@ -1692,12 +1569,10 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[BG] Update your business information (Bulgarian)';
+  String get updateYourBusinessInformation => '[BG] Update your business information (Bulgarian)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      '[BG] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => '[BG] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[BG] Parent Dashboard (Bulgarian)';
@@ -1720,12 +1595,10 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      '[BG] Studio booking is only available on web (Bulgarian)';
+  String get studioBookingIsOnlyAvailableOnWeb => '[BG] Studio booking is only available on web (Bulgarian)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[BG] Error loading branches: \$e (Bulgarian)';
+  String get errorLoadingBranchesE => '[BG] Error loading branches: \$e (Bulgarian)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1741,15 +1614,13 @@ class AppLocalizationsBg extends AppLocalizations {
   String get none => '[BG] None (Bulgarian)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[BG] Failed to update consent: \$e (Bulgarian)';
+  String get failedToUpdateConsentE => '[BG] Failed to update consent: \$e (Bulgarian)';
 
   @override
   String get welcome1 => '[BG] Welcome (Bulgarian)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[BG] Failed to create session: \$e (Bulgarian)';
+  String get failedToCreateSessionE => '[BG] Failed to create session: \$e (Bulgarian)';
 
   @override
   String get inviteContact => '[BG] Invite Contact (Bulgarian)';
@@ -1758,8 +1629,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get surveyEditor => '[BG] Survey Editor (Bulgarian)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[BG] Failed to start Basic subscription: \$e (Bulgarian)';
+  String get failedToStartBasicSubscriptionE => '[BG] Failed to start Basic subscription: \$e (Bulgarian)';
 
   @override
   String get mySchedule => '[BG] My Schedule (Bulgarian)';
@@ -1779,12 +1649,10 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[BG] Settings saved successfully! (Bulgarian)';
+  String get settingsSavedSuccessfully => '[BG] Settings saved successfully! (Bulgarian)';
 
   @override
-  String get linkCopiedToClipboard =>
-      '[BG] Link copied to clipboard! (Bulgarian)';
+  String get linkCopiedToClipboard => '[BG] Link copied to clipboard! (Bulgarian)';
 
   @override
   String get accept1 => '[BG] Accept (Bulgarian)';
@@ -1801,8 +1669,7 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[BG] Room deleted successfully! (Bulgarian)';
+  String get roomDeletedSuccessfully => '[BG] Room deleted successfully! (Bulgarian)';
 
   @override
   String get businessCalendar => '[BG] Business Calendar (Bulgarian)';
@@ -1822,8 +1689,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get addNewRoom => '[BG] Add New Room (Bulgarian)';
 
   @override
-  String get requireParentApproval =>
-      '[BG] Require Parent Approval (Bulgarian)';
+  String get requireParentApproval => '[BG] Require Parent Approval (Bulgarian)';
 
   @override
   String get closed => '[BG] Closed (Bulgarian)';
@@ -1868,8 +1734,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get cancel1 => '[BG] Cancel (Bulgarian)';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      '[BG] Subscription activated successfully! (Bulgarian)';
+  String get subscriptionActivatedSuccessfully => '[BG] Subscription activated successfully! (Bulgarian)';
 
   @override
   String activityLogaction(Object action) {
@@ -1880,8 +1745,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get broadcast => '[BG] Broadcast (Bulgarian)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[BG] No events scheduled this week (Bulgarian)';
+  String get noEventsScheduledThisWeek => '[BG] No events scheduled this week (Bulgarian)';
 
   @override
   String get googleCalendar => '[BG] Google Calendar (Bulgarian)';
@@ -1893,8 +1757,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get childDashboard => '[BG] Child Dashboard (Bulgarian)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[BG] Failed to upload background: \$e (Bulgarian)';
+  String get failedToUploadBackgroundE => '[BG] Failed to upload background: \$e (Bulgarian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1913,8 +1776,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get noAppointments => '[BG] No appointments (Bulgarian)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[BG] • Unlimited bookings per week (Bulgarian)';
+  String get unlimitedBookingsPerWeek => '[BG] • Unlimited bookings per week (Bulgarian)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1922,19 +1784,16 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[BG] Scheduled at: \$scheduledAt (Bulgarian)';
+  String get scheduledAtScheduledat => '[BG] Scheduled at: \$scheduledAt (Bulgarian)';
 
   @override
   String get selectStaff => '[BG] Select Staff (Bulgarian)';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      '[BG] Subscription cancelled successfully (Bulgarian)';
+  String get subscriptionCancelledSuccessfully => '[BG] Subscription cancelled successfully (Bulgarian)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[BG] Cancel Appointment (Bulgarian)';
@@ -1948,8 +1807,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get businessSignup => '[BG] Business Signup (Bulgarian)';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      '[BG] Business Completion Screen - Coming Soon (Bulgarian)';
+  String get businessCompletionScreenComingSoon => '[BG] Business Completion Screen - Coming Soon (Bulgarian)';
 
   @override
   String get createGame1 => '[BG] Create Game (Bulgarian)';
@@ -1960,12 +1818,10 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode =>
-      '[BG] Please enter a promo code (Bulgarian)';
+  String get pleaseEnterAPromoCode => '[BG] Please enter a promo code (Bulgarian)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[BG] Error loading availability: \$e (Bulgarian)';
+  String get errorLoadingAvailabilityE => '[BG] Error loading availability: \$e (Bulgarian)';
 
   @override
   String get parentalControls => '[BG] Parental Controls (Bulgarian)';
@@ -1974,15 +1830,13 @@ class AppLocalizationsBg extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[BG] Child linked successfully! (Bulgarian)';
+  String get childLinkedSuccessfully => '[BG] Child linked successfully! (Bulgarian)';
 
   @override
   String get create => '[BG] Create (Bulgarian)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[BG] No external meetings found. (Bulgarian)';
+  String get noExternalMeetingsFound => '[BG] No external meetings found. (Bulgarian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1990,15 +1844,13 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[BG] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[BG] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[BG] Scheduler Screen (Bulgarian)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[BG] Client updated successfully! (Bulgarian)';
+  String get clientUpdatedSuccessfully => '[BG] Client updated successfully! (Bulgarian)';
 
   @override
   String get surveyResponses => '[BG] Survey Responses (Bulgarian)';
@@ -2024,12 +1876,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get errorLoadingEvents => '[BG] Error loading events (Bulgarian)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[BG] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[BG] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[BG] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[BG] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[BG] Success (Bulgarian)';
@@ -2048,12 +1898,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get readWrite => '[BG] Read & Write (Bulgarian)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      '[BG] Redirecting to Stripe checkout for Basic plan... (Bulgarian)';
+  String get redirectingToStripeCheckoutForBasicPlan => '[BG] Redirecting to Stripe checkout for Basic plan... (Bulgarian)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[BG] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[BG] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[BG] Pick Date (Bulgarian)';
@@ -2089,12 +1937,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get businessLogin => '[BG] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[BG] Invoice created successfully! (Bulgarian)';
+  String get invoiceCreatedSuccessfully => '[BG] Invoice created successfully! (Bulgarian)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[BG] No time series data available (Bulgarian)';
+  String get noTimeSeriesDataAvailable => '[BG] No time series data available (Bulgarian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2107,8 +1953,7 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[BG] Failed to send privacy request: \$e (Bulgarian)';
+  String get failedToSendPrivacyRequestE => '[BG] Failed to send privacy request: \$e (Bulgarian)';
 
   @override
   String get chooseYourPlan => '[BG] Choose Your Plan (Bulgarian)';
@@ -2123,15 +1968,13 @@ class AppLocalizationsBg extends AppLocalizations {
   String get eventCreated => '[BG] Event created (Bulgarian)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[BG] Subscribe to Basic (€4.99/mo) (Bulgarian)';
+  String get subscribeToBasic499mo => '[BG] Subscribe to Basic (€4.99/mo) (Bulgarian)';
 
   @override
   String get completion => '[BG] Completion (Bulgarian)';
 
   @override
-  String get supportTicketSubmitted =>
-      '[BG] Support ticket submitted (Bulgarian)';
+  String get supportTicketSubmitted => '[BG] Support ticket submitted (Bulgarian)';
 
   @override
   String get monetizationSettings => '[BG] Monetization Settings (Bulgarian)';
@@ -2146,12 +1989,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get deleteSurvey => '[BG] Delete Survey (Bulgarian)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[BG] Game approved successfully! (Bulgarian)';
+  String get gameApprovedSuccessfully => '[BG] Game approved successfully! (Bulgarian)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[BG] Error loading permissions: \$error (Bulgarian)';
+  String get errorLoadingPermissionsError => '[BG] Error loading permissions: \$error (Bulgarian)';
 
   @override
   String get referrals => '[BG] Referrals (Bulgarian)';
@@ -2193,8 +2034,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get organizations => '[BG] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[BG] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[BG] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[BG] Create New Game (Bulgarian)';
@@ -2203,19 +2043,16 @@ class AppLocalizationsBg extends AppLocalizations {
   String get next1 => '[BG] Next (Bulgarian)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[BG] Background uploaded successfully! (Bulgarian)';
+  String get backgroundUploadedSuccessfully => '[BG] Background uploaded successfully! (Bulgarian)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[BG] No appointment requests found. (Bulgarian)';
+  String get noAppointmentRequestsFound => '[BG] No appointment requests found. (Bulgarian)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent =>
-      '[BG] Restrict mature content (Bulgarian)';
+  String get restrictMatureContent => '[BG] Restrict mature content (Bulgarian)';
 
   @override
   String get ambassadors => '[BG] Ambassadors (Bulgarian)';
@@ -2236,19 +2073,16 @@ class AppLocalizationsBg extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE =>
-      '[BG] Failed to create game: \$e (Bulgarian)';
+  String get failedToCreateGameE => '[BG] Failed to create game: \$e (Bulgarian)';
 
   @override
   String get noChartDataAvailable => '[BG] No chart data available (Bulgarian)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[BG] • Phone-based booking system (Bulgarian)';
+  String get phonebasedBookingSystem => '[BG] • Phone-based booking system (Bulgarian)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2257,8 +2091,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get invoices => '[BG] Invoices (Bulgarian)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2285,12 +2118,10 @@ class AppLocalizationsBg extends AppLocalizations {
   String get iDoNotConsent => '[BG] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      '[BG] No clients found. Add your first client! (Bulgarian)';
+  String get noClientsFoundAddYourFirstClient => '[BG] No clients found. Add your first client! (Bulgarian)';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      '[BG] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => '[BG] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[BG] Group: \$groupId';
@@ -2302,8 +2133,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get forward => '[BG] Forward (Bulgarian)';
 
   @override
-  String get roomAddedSuccessfully =>
-      '[BG] Room added successfully! (Bulgarian)';
+  String get roomAddedSuccessfully => '[BG] Room added successfully! (Bulgarian)';
 
   @override
   String get option => '[BG] • \$option (Bulgarian)';
@@ -2314,8 +2144,7 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[BG] • CRM dashboard with analytics (Bulgarian)';
+  String get crmDashboardWithAnalytics => '[BG] • CRM dashboard with analytics (Bulgarian)';
 
   @override
   String get contentLibrary1 => '[BG] Content Library (Bulgarian)';
@@ -2324,34 +2153,28 @@ class AppLocalizationsBg extends AppLocalizations {
   String get reply => '[BG] Reply (Bulgarian)';
 
   @override
-  String get subscriptionManagement =>
-      '[BG] Subscription Management (Bulgarian)';
+  String get subscriptionManagement => '[BG] Subscription Management (Bulgarian)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      '[BG] Monetization settings will be implemented here (Bulgarian)';
+  String get monetizationSettingsWillBeImplementedHere => '[BG] Monetization settings will be implemented here (Bulgarian)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[BG] Failed to apply promo code: \$e (Bulgarian)';
+  String get failedToApplyPromoCodeE => '[BG] Failed to apply promo code: \$e (Bulgarian)';
 
   @override
   String get editProvider => '[BG] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[BG] Localization Contribution (Bulgarian)';
+  String get localizationContribution => '[BG] Localization Contribution (Bulgarian)';
 
   @override
   String get parentalConsent => '[BG] Parental Consent (Bulgarian)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[BG] Business Signup Screen - Coming Soon (Bulgarian)';
+  String get businessSignupScreenComingSoon => '[BG] Business Signup Screen - Coming Soon (Bulgarian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      '[BG] Are you sure you want to delete this appointment? (Bulgarian)';
+  String get areYouSureYouWantToDeleteThisAppointment => '[BG] Are you sure you want to delete this appointment? (Bulgarian)';
 
   @override
   String get syncAppointment => '[BG] Sync Appointment (Bulgarian)';
@@ -2363,15 +2186,13 @@ class AppLocalizationsBg extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[BG] Business Setup Screen - Coming Soon (Bulgarian)';
+  String get businessSetupScreenComingSoon => '[BG] Business Setup Screen - Coming Soon (Bulgarian)';
 
   @override
   String get edit1 => '[BG] Edit (Bulgarian)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[BG] No events scheduled this month (Bulgarian)';
+  String get noEventsScheduledThisMonth => '[BG] No events scheduled this month (Bulgarian)';
 
   @override
   String get businessDashboard => '[BG] Business Dashboard (Bulgarian)';
@@ -2385,12 +2206,10 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[BG] Manage Staff Availability (Bulgarian)';
+  String get manageStaffAvailability => '[BG] Manage Staff Availability (Bulgarian)';
 
   @override
-  String get noMissingTranslations =>
-      '[BG] No missing translations (Bulgarian)';
+  String get noMissingTranslations => '[BG] No missing translations (Bulgarian)';
 
   @override
   String get skip => '[BG] Skip (Bulgarian)';
@@ -2404,8 +2223,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get noUsers => '[BG] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[BG] Error loading referral code (Bulgarian)';
+  String get errorLoadingReferralCode => '[BG] Error loading referral code (Bulgarian)';
 
   @override
   String get allCountries => '[BG] All Countries (Bulgarian)';
@@ -2414,15 +2232,13 @@ class AppLocalizationsBg extends AppLocalizations {
   String get deleteGame => '[BG] Delete Game (Bulgarian)';
 
   @override
-  String get staffManagementTools =>
-      '[BG] • Staff management tools (Bulgarian)';
+  String get staffManagementTools => '[BG] • Staff management tools (Bulgarian)';
 
   @override
   String get deleteMessage => '[BG] Delete Message (Bulgarian)';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[BG] changeRole (TRANSLATE)';
@@ -2433,8 +2249,7 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[BG] Opening customer portal... (Bulgarian)';
+  String get openingCustomerPortal => '[BG] Opening customer portal... (Bulgarian)';
 
   @override
   String get signOut => '[BG] Sign Out (Bulgarian)';
@@ -2445,8 +2260,7 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[BG] Upgrade to Business (Bulgarian)';
@@ -2472,8 +2286,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[BG] View Responses (Bulgarian)';
@@ -2502,8 +2315,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
