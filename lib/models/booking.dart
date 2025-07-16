@@ -21,6 +21,7 @@ class Booking with _$Booking {
     final String? notes,
     @Default(false) final bool isConfirmed,
     @DateTimeConverter() final DateTime? createdAt,
+    final String? businessProfileId,
   }) = _Booking;
 
   factory Booking.fromJson(Map<String, dynamic> json) =>
