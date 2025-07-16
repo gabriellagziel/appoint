@@ -159,11 +159,16 @@ class PlaytimeService {
       final user = _auth.currentUser;
       if (user == null) throw Exception('User not authenticated');
 
-      // TODO(username): Implement this feature
-      const imageUrl = 'TODO: image url';
+      // Stub implementation for image URL generation
+      // In a real implementation, this would upload the file to Firebase Storage
+      final imageUrl = 'https://example.com/stub-image-url-${DateTime.now().millisecondsSinceEpoch}';
 
       final docRef = await _firestore.collection(_backgroundsCollection).add({
+        'name': name,
+        'description': description,
         'imageUrl': imageUrl,
+        'category': category,
+        'tags': tags,
         'createdBy': user.uid,
         'createdAt': FieldValue.serverTimestamp(),
       });
