@@ -1,0 +1,116 @@
+name: Auto Merge & Bot Feedback
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  workflow_run:
+    workflows: ["Main CI/CD Pipeline"]
+    types: [completed]
+
+jobs:
+  # Auto-merge PRs on green CI
+  auto-merge:
+    if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if PR exists
+        id: check-pr
+        run: |
+          # Find PR associated with this workflow run
+          PR_NUMBER=$(gh api repos/${{ github.repository }}/actions/runs/${{ github.event.workflow_run.id }}/jobs --jq '.jobs[0].steps[] | select(.name == "Checkout code") | .number')
+          if [ -n "$PR_NUMBER" ]; then
+            echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Auto-merge PR
+        if: steps.check-pr.outputs.pr_number != ''
+        run: |
+          PR_NUMBER=${{ steps.check-pr.outputs.pr_number }}
+          
+          # Check if PR is mergeable
+          MERGEABLE=$(gh api repos/${{ github.repository }}/pulls/$PR_NUMBER --jq '.mergeable')
+          
+          if [ "$MERGEABLE" = "true" ]; then
+            echo "🔄 Auto-merging PR #$PR_NUMBER..."
+            gh pr merge $PR_NUMBER --auto --merge
+            echo "✅ PR #$PR_NUMBER merged successfully"
+          else
+            echo "⚠️ PR #$PR_NUMBER is not mergeable (conflicts or not ready)"
+          fi
+
+  # Provide bot feedback on PR
+  bot-feedback:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Wait for CI completion
+        uses: lewagon/wait-on-check-action@v1.3.1
+        with:
+          ref: ${{ github.head_ref }}
+          check-name: 'Main CI/CD Pipeline'
+          wait-interval: 10
+          
+      - name: Get CI results
+        id: ci-results
+        run: |
+          # Get the latest workflow run for this PR
+          WORKFLOW_RUN=$(gh api repos/${{ github.repository }}/actions/runs \
+            --jq '.workflow_runs[] | select(.head_branch == "${{ github.head_ref }}" and .name == "Main CI/CD Pipeline") | .id' | head -1)
+          
+          if [ -n "$WORKFLOW_RUN" ]; then
+            # Get test results
+            TEST_COUNT=$(gh api repos/${{ github.repository }}/actions/runs/$WORKFLOW_RUN/jobs \
+              --jq '.jobs[] | select(.name | contains("test")) | .steps[] | select(.name | contains("test")) | .conclusion' | grep -c "success" || echo "0")
+            
+            # Get build duration
+            BUILD_DURATION=$(gh api repos/${{ github.repository }}/actions/runs/$WORKFLOW_RUN \
+              --jq '.duration' | awk '{print int($1/60)}')
+            
+            # Get coverage if available
+            COVERAGE=$(gh api repos/${{ github.repository }}/actions/runs/$WORKFLOW_RUN/artifacts \
+              --jq '.artifacts[] | select(.name == "coverage") | .name' | head -1 || echo "N/A")
+            
+            echo "test_count=$TEST_COUNT" >> $GITHUB_OUTPUT
+            echo "build_duration=$BUILD_DURATION" >> $GITHUB_OUTPUT
+            echo "coverage=$COVERAGE" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Post bot feedback
+        if: steps.ci-results.outputs.test_count != ''
+        run: |
+          TEST_COUNT=${{ steps.ci-results.outputs.test_count }}
+          BUILD_DURATION=${{ steps.ci-results.outputs.build_duration }}
+          COVERAGE=${{ steps.ci-results.outputs.coverage }}
+          
+          # Create feedback message
+          FEEDBACK="🤖 **App-Oint Bot Feedback**
+          
+          ✅ **CI Status**: All checks passed
+          📊 **Test Results**: $TEST_COUNT tests passed
+          ⏱️ **Build Duration**: ${BUILD_DURATION} minutes
+          📈 **Coverage**: $COVERAGE
+          
+          🚀 **Ready for merge!** This PR meets all quality standards.
+          
+          ---
+          *This is an automated message from the App-Oint infrastructure bot.*"
+          
+          # Post comment
+          gh pr comment ${{ github.event.pull_request.number }} --body "$FEEDBACK"
+          
+      - name: Post failure feedback
+        if: failure()
+        run: |
+          FEEDBACK="🤖 **App-Oint Bot Feedback**
+          
+          ❌ **CI Status**: Some checks failed
+          
+          Please review the failed checks and fix any issues before merging.
+          
+          ---
+          *This is an automated message from the App-Oint infrastructure bot.*"
+          
+          gh pr comment ${{ github.event.pull_request.number }} --body "$FEEDBACK"

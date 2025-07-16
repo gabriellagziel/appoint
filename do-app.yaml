@@ -23,3 +23,9 @@ services:
     value: "production"
   - key: PORT
     value: "8080"
+  # Use custom Docker image for faster builds
+  image:
+    registry_type: DOCR
+    registry: registry.digitalocean.com
+    repository: appoint/flutter-ci
+    tag: latest
