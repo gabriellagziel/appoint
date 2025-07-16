@@ -10,8 +10,12 @@ class Contact with _$Contact {
     required final String displayName,
     final String? phoneNumber,
     final String? email,
+    final String? location,
   }) = _Contact;
 
   factory Contact.fromJson(Map<String, dynamic> json) =>
       _$ContactFromJson(json);
+      
+  // Getters for backward compatibility
+  String? get phone => phoneNumber;
 }
