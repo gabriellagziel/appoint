@@ -2,7 +2,7 @@ name: CI Watchdog
 
 on:
   workflow_run:
-    workflows: ["Main CI/CD Pipeline"]
+    workflows: ["DigitalOcean CI Pipeline"]
     types: [in_progress, completed]
   schedule:
     # Check every 5 minutes
