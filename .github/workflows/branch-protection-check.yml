@@ -73,7 +73,7 @@ jobs:
           ## Required Status Checks
           The following status checks must pass before merging:
           
-          1. **CI/CD Pipeline** - Comprehensive build and test pipeline
+          1. **DigitalOcean CI Pipeline** - Comprehensive build and test pipeline
           2. **Code Analysis** - Static analysis and linting
           3. **Test Coverage** - Unit, widget, and integration tests
           4. **Security Scan** - Vulnerability and security checks
