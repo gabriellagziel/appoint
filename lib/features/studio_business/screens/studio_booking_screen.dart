@@ -24,7 +24,6 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   final _phoneController = TextEditingController();
   final _dateController = TextEditingController();
   final _timeController = TextEditingController();
-  bool _isProcessing = false;
 
   @override
   Widget build(BuildContext context) {
@@ -38,6 +37,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
     }
 
     final profileAsync = ref.watch(businessProfileProvider);
+    final bookingState = ref.watch(bookingProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Studio Booking')),
@@ -148,12 +148,32 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                     ),
                     const SizedBox(height: 24),
 
+                    // Error message display
+                    if (bookingState.hasError)
+                      Container(
+                        padding: const EdgeInsets.all(12),
+                        margin: const EdgeInsets.only(bottom: 16),
+                        decoration: BoxDecoration(
+                          color: Colors.red.shade50,
+                          border: Border.all(color: Colors.red.shade200),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Text(
+                          'Error: ${bookingState.error}',
+                          style: TextStyle(color: Colors.red.shade700),
+                        ),
+                      ),
+
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: _isProcessing ? null : _processBooking,
-                        child: _isProcessing
-                            ? const CircularProgressIndicator()
+                        onPressed: bookingState.isLoading ? null : _processBooking,
+                        child: bookingState.isLoading
+                            ? const SizedBox(
+                                height: 20,
+                                width: 20,
+                                child: CircularProgressIndicator(strokeWidth: 2),
+                              )
                             : const Text('Send Booking Invite'),
                       ),
                     ),
@@ -168,8 +188,6 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
 
   Future<void> _processBooking() async {
     if (_formKey.currentState!.validate()) {
-      setState(() => _isProcessing = true);
-
       try {
         // Check weekly usage for upgrade modal
         final weeklyUsage = ref.read(weeklyUsageProvider.notifier);
@@ -178,15 +196,15 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
           return;
         }
 
-        // Create booking
+        // Create booking using context.read(bookingProvider)
         final bookingNotifier = ref.read(bookingProvider.notifier);
-        await bookingNotifier.createBooking(
-          staffProfileId: selectedStaff!.id,
-          businessProfileId: 'business1', // This should come from the profile
-          date: selectedDate!,
-          startTime: selectedTimeSlot!,
-          endTime: _getEndTime(selectedTimeSlot!),
-          cost: selectedStaff!.hourlyRate,
+        await bookingNotifier.submitBooking(
+          staffProfileId: selectedStaff?.id ?? 'default_staff_id',
+          businessProfileId: 'business1', // Use default business ID since BusinessProfile doesn't have id field
+          date: selectedDate ?? DateTime.now(),
+          startTime: selectedTimeSlot ?? '09:00',
+          endTime: _getEndTime(selectedTimeSlot ?? '09:00'),
+          cost: selectedStaff?.hourlyRate ?? 50.0,
         );
 
         // Increment weekly usage
@@ -196,18 +214,15 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-              builder: (_) => const StudioBookingConfirmScreen(),
+              builder: (_) => const StudioBusinessBookingConfirmScreen(),
             ),
           );
         }
       } catch (e) {
+        if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('Error: $e')),
           );
-        }
-      } finally {
-        if (mounted) {
-          setState(() => _isProcessing = false);
         }
       }
     }
@@ -263,8 +278,8 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   }
 }
 
-class StudioBookingConfirmScreen extends StatelessWidget {
-  const StudioBookingConfirmScreen({super.key});
+class StudioBusinessBookingConfirmScreen extends StatelessWidget {
+  const StudioBusinessBookingConfirmScreen({super.key});
 
   @override
   Widget build(BuildContext context) => Scaffold(
