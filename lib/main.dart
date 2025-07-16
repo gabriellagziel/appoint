@@ -13,6 +13,7 @@ import 'firebase_options.dart';
 import 'l10n/app_localizations.dart';
 import 'providers/auth_provider.dart';
 import 'providers/theme_provider.dart';
+import 'providers/notification_provider.dart';
 import 'services/notification_service.dart';
 import 'theme/app_theme.dart';
 
@@ -40,6 +41,10 @@ void main() async {
 
     // Initialize notification service
     await NotificationService.initialize();
+    
+    // Request notification permissions on startup (Android only for now)
+    final notificationService = NotificationService();
+    await notificationService.requestPermissions();
 
     // Set system UI overlay style
     SystemChrome.setSystemUIOverlayStyle(
