@@ -106,7 +106,6 @@ class REDACTED_TOKEN
           backgroundColor: Colors.red,
         ),
       );
-    } finally {
       setState(() => _isLoading = false);
     }
   }

@@ -51,7 +51,6 @@ class REDACTED_TOKEN
           ),
         );
       }
-    } finally {
       if (mounted) {
         setState(() => _isLoading = false);
       }
@@ -80,7 +79,6 @@ class REDACTED_TOKEN
           ),
         );
       }
-    } finally {
       if (mounted) {
         setState(() => _isLoading = false);
       }
@@ -121,7 +119,6 @@ class REDACTED_TOKEN
           ),
         );
       }
-    } finally {
       if (mounted) {
         setState(() => _isApplyingPromo = false);
       }

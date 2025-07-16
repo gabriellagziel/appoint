@@ -199,7 +199,6 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
       if (mounted) Navigator.of(context).pop();
     } catch (e) {
       _showSnackbar('Error: $e', isError: true);
-    } finally {
       if (mounted) setState(() => _saving = false);
     }
   }

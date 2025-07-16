@@ -133,7 +133,6 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
           SnackBar(content: Text('Error: $e')),
         );
       }
-    } finally {
       if (mounted) {
         setState(() => _isConnecting = false);
       }

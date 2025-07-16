@@ -35,7 +35,6 @@ class REDACTED_TOKEN
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Error loading configuration: $e')),
       );
-    } finally {
       setState(() => _isLoading = false);
     }
   }
@@ -57,7 +56,6 @@ class REDACTED_TOKEN
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Error saving configuration: $e')),
       );
-    } finally {
       setState(() => _isSaving = false);
     }
   }
