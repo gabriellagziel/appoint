@@ -4,9 +4,16 @@ import 'package:appoint/services/ui_notification_service.dart';
 import 'package:appoint/providers/fcm_token_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+/// Provider for the notification service
 final notificationServiceProvider = Provider<NotificationService>(
   (ref) => NotificationService(),
 );
+
+/// Provider for notification permissions state
+final notificationPermissionsProvider = StateProvider<bool>((ref) => false);
+
+/// Provider for pending notifications
+final pendingNotificationsProvider = StateProvider<List<PendingNotificationRequest>>((ref) => []);
 
 /// Provider for notifications list
 final notificationsProvider =
@@ -19,6 +26,107 @@ final uiNotificationServiceProvider = Provider<UINotificationService>((ref) {
     'UINotificationService not provided. '
     'Please override this provider in your main function.');
 });
+
+/// Provider for notification helper methods
+final notificationHelperProvider = Provider<NotificationHelper>((ref) {
+  final notificationService = ref.watch(notificationServiceProvider);
+  return NotificationHelper(notificationService, ref);
+});
+
+/// Helper class for common notification operations
+class NotificationHelper {
+  NotificationHelper(this._notificationService, this._ref);
+  
+  final NotificationService _notificationService;
+  final Ref _ref;
+
+  /// Request notification permissions and update state
+  Future<bool> requestPermissions() async {
+    final hasPermission = await _notificationService.requestPermissions();
+    _ref.read(notificationPermissionsProvider.notifier).state = hasPermission;
+    return hasPermission;
+  }
+
+  /// Send a local notification
+  Future<void> sendLocalNotification({
+    required String title,
+    required String body,
+    String? payload,
+    int? id,
+  }) async {
+    await _notificationService.sendLocalNotification(
+      title: title,
+      body: body,
+      payload: payload,
+      id: id,
+    );
+  }
+
+  /// Schedule a notification
+  Future<void> scheduleNotification({
+    required String title,
+    required String body,
+    required DateTime scheduledDate,
+    String? payload,
+    int? id,
+  }) async {
+    await _notificationService.scheduleNotification(
+      title: title,
+      body: body,
+      scheduledDate: scheduledDate,
+      payload: payload,
+      id: id,
+    );
+  }
+
+  /// Send a push notification (stub)
+  Future<void> sendPushNotification({
+    required String fcmToken,
+    required String title,
+    required String body,
+    Map<String, dynamic>? data,
+  }) async {
+    await _notificationService.sendPushNotification(
+      fcmToken: fcmToken,
+      title: title,
+      body: body,
+      data: data,
+    );
+  }
+
+  /// Send notification to user by UID
+  Future<void> sendNotificationToUser({
+    required String uid,
+    required String title,
+    required String body,
+    Map<String, dynamic>? data,
+  }) async {
+    await _notificationService.sendNotificationToUser(
+      uid: uid,
+      title: title,
+      body: body,
+      data: data,
+    );
+  }
+
+  /// Refresh pending notifications
+  Future<void> refreshPendingNotifications() async {
+    final pending = await _notificationService.getPendingNotifications();
+    _ref.read(pendingNotificationsProvider.notifier).state = pending;
+  }
+
+  /// Cancel all notifications
+  Future<void> cancelAllNotifications() async {
+    await _notificationService.cancelAllNotifications();
+    await refreshPendingNotifications();
+  }
+
+  /// Cancel a specific notification
+  Future<void> cancelNotification(int id) async {
+    await _notificationService.cancelNotification(id);
+    await refreshPendingNotifications();
+  }
+}
 
 /// Provider for showing sync-related notifications
 final syncNotificationProvider = Provider<SyncNotificationHelper>((ref) {

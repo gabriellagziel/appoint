@@ -5,6 +5,7 @@ import 'package:appoint/models/appointment.dart';
 import 'package:appoint/providers/appointment_provider.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/providers/calendar_provider.dart';
+import 'package:appoint/providers/notification_provider.dart';
 import 'package:appoint/providers/user_subscription_provider.dart';
 import 'package:appoint/services/ad_service.dart';
 import 'package:appoint/services/maps_service.dart';
@@ -149,13 +150,17 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                                 .syncToOutlook(appt);
                           }
                           if (!mounted) return;
-                          // TODO(username): Implement notification sending
-                          // await ref
-                          //     .read(notificationServiceProvider)
-                          //     .sendNotificationToUser(
-                          //         args.inviteeId,
-                          //         'Booking Confirmed',
-                          //         'You have a new booking request');
+                          
+                          // Send local notification when booking is confirmed
+                          try {
+                            await ref.read(notificationHelperProvider).sendLocalNotification(
+                              title: 'Booking Confirmed',
+                              body: 'Your booking has been confirmed successfully!',
+                              payload: 'booking_confirmed',
+                            );
+                          } catch (e) {
+                            debugPrint('Error sending notification: $e');
+                          }
 
                           // Show success message
                           // ignore: use_build_context_synchronously
