@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/providers/user_subscription_provider.dart';
 import 'package:appoint/services/ad_service.dart';
+import 'package:appoint/features/studio_business/providers/booking_provider.dart';
 
 class BookingConfirmationSheet extends ConsumerStatefulWidget {
   const BookingConfirmationSheet({
@@ -65,6 +66,7 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
   @override
   Widget build(BuildContext context) {
     final subscriptionState = ref.watch(userSubscriptionProvider);
+    final bookingState = ref.watch(bookingProvider);
     
     return Padding(
       padding: const EdgeInsets.all(24),
@@ -73,10 +75,70 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text('Confirm Appointment',
-              style: Theme.of(context).textTheme.titleLarge,),
+              style: Theme.of(context).textTheme.titleLarge),
           const SizedBox(height: 12),
           Text(widget.summaryText),
           const SizedBox(height: 24),
+          
+          // Show booking state
+          bookingState.when(
+            data: (booking) {
+              if (booking != null) {
+                return Container(
+                  padding: const EdgeInsets.all(12),
+                  margin: const EdgeInsets.only(bottom: 16),
+                  decoration: BoxDecoration(
+                    color: Colors.green.withOpacity(0.1),
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(color: Colors.green.withOpacity(0.3)),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(Icons.check_circle, color: Colors.green, size: 20),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          'Booking created successfully!',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.green[700],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              }
+              return const SizedBox.shrink();
+            },
+            loading: () => const Center(
+              child: Padding(
+                padding: EdgeInsets.all(16),
+                child: CircularProgressIndicator(),
+              ),
+            ),
+            error: (error, stack) => Container(
+              padding: const EdgeInsets.all(12),
+              margin: const EdgeInsets.only(bottom: 16),
+              decoration: BoxDecoration(
+                color: Colors.red.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: Colors.red.withOpacity(0.3)),
+              ),
+              child: Row(
+                children: [
+                  const Icon(Icons.error, color: Colors.red, size: 20),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      'Error: $error',
+                      style: const TextStyle(color: Colors.red),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
           
           // Premium upgrade section for non-premium users
           subscriptionState.when(
@@ -155,15 +217,15 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
             children: [
               Expanded(
                 child: OutlinedButton(
-                  onPressed: widget.onCancel,
+                  onPressed: bookingState.isLoading ? null : widget.onCancel,
                   child: const Text('Cancel'),
                 ),
               ),
               const SizedBox(width: 12),
               Expanded(
                 child: ElevatedButton(
-                  onPressed: _isLoadingAd ? null : _handleConfirm,
-                  child: _isLoadingAd
+                  onPressed: (_isLoadingAd || bookingState.isLoading) ? null : _handleConfirm,
+                  child: (_isLoadingAd || bookingState.isLoading)
                     ? const SizedBox(
                         width: 20,
                         height: 20,
