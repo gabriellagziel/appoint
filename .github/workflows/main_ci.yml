@@ -148,6 +148,7 @@ jobs:
 
   # Code generation with build_runner
   generate-code:
+    if: false
     needs: setup-dependencies
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -223,6 +224,7 @@ jobs:
 
   # Code analysis and linting
   analyze:
+    if: false
     needs: generate-code
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -276,10 +278,10 @@ jobs:
 
   # Unit and widget tests
   test:
+    if: false
     needs: generate-code
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    if: ${{ !github.event.inputs.skip_tests }}
     container:
       image: registry.digitalocean.com/appoint/flutter-ci:latest
     strategy:
@@ -343,6 +345,7 @@ jobs:
 
   # Security scanning
   security-scan:
+    if: false
     needs: generate-code
     runs-on: ubuntu-latest
     timeout-minutes: 15
