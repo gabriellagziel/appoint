@@ -52,9 +52,9 @@ if ! command -v flutter &> /dev/null; then
     print_warning "Flutter not found. Installing Flutter..."
     
     # Install Flutter
-    git clone https://github.com/flutter/flutter.git -b stable /opt/flutter
-    export PATH="$PATH:/opt/flutter/bin"
-    echo 'export PATH="$PATH:/opt/flutter/bin"' >> ~/.bashrc
+    git clone https://github.com/flutter/flutter.git -b stable ./flutter
+    export PATH="$PATH:$(pwd)/flutter/bin"
+    echo 'export PATH="$PATH:$(pwd)/flutter/bin"' >> ~/.bashrc
     
     # Verify installation
     flutter doctor
