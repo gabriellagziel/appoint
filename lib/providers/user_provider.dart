@@ -1,6 +1,7 @@
 import 'package:appoint/features/studio_business/providers/business_mode_provider.dart';
 import 'package:appoint/models/user_type.dart';
 import 'package:appoint/providers/user_profile_provider.dart';
+import 'package:appoint/providers/user_subscription_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 // Combined user data class
@@ -15,6 +16,7 @@ class User {
     this.isAdminFreeAccess = false,
     this.businessMode = false,
     this.businessProfileId,
+    this.isPremium = false,
   });
   final String id;
   final String name;
@@ -25,6 +27,7 @@ class User {
   final bool isAdminFreeAccess;
   final bool businessMode;
   final String? businessProfileId;
+  final bool isPremium;
 
   // Convenience getters
   bool get isStudio => userType == UserType.studio;
@@ -43,10 +46,16 @@ final isBusinessProvider = Provider<bool>((ref) {
 final userProvider = Provider<User?>((ref) {
   final profileAsync = ref.watch(currentUserProfileProvider);
   final userType = ref.watch(businessModeProvider);
+  final subscriptionAsync = ref.watch(userSubscriptionProvider);
 
   return profileAsync.when(
     data: (profile) {
       if (profile == null) return null;
+
+      final isPremium = subscriptionAsync.maybeWhen(
+        data: (isPremium) => isPremium,
+        orElse: () => false,
+      );
 
       return User(
         id: profile.id,
@@ -58,6 +67,7 @@ final userProvider = Provider<User?>((ref) {
         isAdminFreeAccess: profile.isAdminFreeAccess ?? false,
         businessMode: profile.businessMode,
         businessProfileId: profile.businessProfileId,
+        isPremium: isPremium,
       );
     },
     loading: () => null,
