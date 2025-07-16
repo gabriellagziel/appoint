@@ -16,7 +16,6 @@ class User {
     this.isAdminFreeAccess = false,
     this.businessMode = false,
     this.businessProfileId,
-    this.isPremium = false,
   });
   final String id;
   final String name;
@@ -27,7 +26,6 @@ class User {
   final bool isAdminFreeAccess;
   final bool businessMode;
   final String? businessProfileId;
-  final bool isPremium;
 
   // Convenience getters
   bool get isStudio => userType == UserType.studio;
@@ -46,16 +44,10 @@ final isBusinessProvider = Provider<bool>((ref) {
 final userProvider = Provider<User?>((ref) {
   final profileAsync = ref.watch(currentUserProfileProvider);
   final userType = ref.watch(businessModeProvider);
-  final subscriptionAsync = ref.watch(userSubscriptionProvider);
 
   return profileAsync.when(
     data: (profile) {
       if (profile == null) return null;
-
-      final isPremium = subscriptionAsync.maybeWhen(
-        data: (isPremium) => isPremium,
-        orElse: () => false,
-      );
 
       return User(
         id: profile.id,
@@ -67,10 +59,24 @@ final userProvider = Provider<User?>((ref) {
         isAdminFreeAccess: profile.isAdminFreeAccess ?? false,
         businessMode: profile.businessMode,
         businessProfileId: profile.businessProfileId,
-        isPremium: isPremium,
       );
     },
     loading: () => null,
     error: (_, final __) => null,
+  );
+});
+
+// Provider that determines if ads should be shown
+final shouldShowAdsProvider = Provider<bool>((ref) {
+  final user = ref.watch(userProvider);
+  final subscriptionAsync = ref.watch(userSubscriptionProvider);
+  
+  // If user has admin free access, don't show ads
+  if (user?.isAdminFreeAccess == true) return false;
+  
+  // Check subscription status
+  return subscriptionAsync.maybeWhen(
+    data: (isPremium) => !isPremium,
+    orElse: () => true, // Show ads by default if subscription status is unknown
   );
 });
