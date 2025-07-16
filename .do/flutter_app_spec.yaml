@@ -1,0 +1,24 @@
+name: appoint-flutter-app
+region: fra1
+features:
+  - buildpack-stack=ubuntu-22
+
+services:
+  - name: flutter-app
+    image:
+      registry_type: DOCR
+      registry: registry.digitalocean.com
+      repository: appoint/flutter-ci
+      tag: latest
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "."
+    build_command: "flutter pub get && dart run build_runner build --delete-conflicting-outputs"
+    run_command: "flutter build web --release --web-renderer html && cd build/web && python3 -m http.server 8080"
+    http_port: 8080
+    routes:
+      - path: /
+    environment_slug: node-js
+    instance_count: 1
+    instance_size_slug: basic-xxs
