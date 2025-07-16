@@ -6,8 +6,6 @@ import 'package:appoint/providers/appointment_provider.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/providers/calendar_provider.dart';
 import 'package:appoint/providers/notification_provider.dart';
-import 'package:appoint/providers/user_subscription_provider.dart';
-import 'package:appoint/services/ad_service.dart';
 import 'package:appoint/services/maps_service.dart';
 import 'package:appoint/widgets/whatsapp_share_button.dart';
 import 'package:flutter/material.dart';
@@ -25,24 +23,7 @@ class BookingConfirmScreen extends ConsumerStatefulWidget {
 class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
   bool _syncGoogle = false;
   bool _syncOutlook = false;
-  bool _isLoadingAd = false;
   Appointment? _createdAppointment;
-
-  Future<void> _maybeShowAd() async {
-    final isPremium = ref.read(userSubscriptionProvider).maybeWhen(
-          data: (isPremium) => isPremium,
-          orElse: () => false,
-        );
-    if (isPremium) return; // isPremium now includes isAdminFreeAccess
-    setState(() => _isLoadingAd = true);
-    try {
-      await AdService.showInterstitialAd();
-    } catch (e) {
-      // continue even if ad fails
-    } finally {
-      if (mounted) setState(() => _isLoadingAd = false);
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -109,90 +90,72 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                   const SizedBox(height: 16),
                 ],
                 ElevatedButton(
-                  onPressed: _isLoadingAd
-                      ? null
-                      : () async {
-                          await _maybeShowAd();
-                          final user = ref.read(authProvider).currentUser;
-                          if (user == null) return;
-                          late final Appointment appt;
-                          if (args.openCall) {
-                            appt = await ref
-                                .read(appointmentServiceProvider)
-                                .createOpenCallRequest(
-                                  creatorId: user.uid,
-                                  inviteeId: args.inviteeId,
-                                );
-                          } else {
-                            appt = await ref
-                                .read(appointmentServiceProvider)
-                                .createScheduled(
-                                  creatorId: user.uid,
-                                  inviteeId: args.inviteeId,
-                                  scheduledAt:
-                                      args.scheduledAt ?? DateTime.now(),
-                                );
-                          }
-
-                          // Store the created appointment for sharing
-                          setState(() {
-                            _createdAppointment = appt;
-                          });
-
-                          if (_syncGoogle) {
-                            await ref
-                                .read(calendarServiceProvider)
-                                .syncToGoogle(appt);
-                          }
-                          if (_syncOutlook) {
-                            await ref
-                                .read(calendarServiceProvider)
-                                .syncToOutlook(appt);
-                          }
-                          if (!mounted) return;
-                          
-                          // Send local notification when booking is confirmed
-                          try {
-                            await ref.read(notificationHelperProvider).sendLocalNotification(
-                              title: 'Booking Confirmed',
-                              body: 'Your booking has been confirmed successfully!',
-                              payload: 'booking_confirmed',
+                  onPressed: () async {
+                      final user = ref.read(authProvider).currentUser;
+                      if (user == null) return;
+                      late final Appointment appt;
+                      if (args.openCall) {
+                        appt = await ref
+                            .read(appointmentServiceProvider)
+                            .createOpenCallRequest(
+                              creatorId: user.uid,
+                              inviteeId: args.inviteeId,
                             );
-                          } catch (e) {
-                            debugPrint('Error sending notification: $e');
-                          }
+                      } else {
+                        appt = await ref
+                            .read(appointmentServiceProvider)
+                            .createScheduled(
+                              creatorId: user.uid,
+                              inviteeId: args.inviteeId,
+                              scheduledAt:
+                                  args.scheduledAt ?? DateTime.now(),
+                            );
+                      }
 
-                          // Show success message
-                          // ignore: use_build_context_synchronously
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text(
-                                  'Booking confirmed! You can now share the invitation.'),
-                              backgroundColor: Colors.green,
-                            ),
-                          );
-                        },
-                  child: _isLoadingAd
-                      ? const SizedBox(
-                          width: 24,
-                          height: 24,
-                          child: CircularProgressIndicator(strokeWidth: 2),
-                        )
-                      : const Text('Confirm'),
+                      // Store the created appointment for sharing
+                      setState(() {
+                        _createdAppointment = appt;
+                      });
+
+                      if (_syncGoogle) {
+                        await ref
+                            .read(calendarServiceProvider)
+                            .syncToGoogle(appt);
+                      }
+                      if (_syncOutlook) {
+                        await ref
+                            .read(calendarServiceProvider)
+                            .syncToOutlook(appt);
+                      }
+                      if (!mounted) return;
+                      
+                      // Send local notification when booking is confirmed
+                      try {
+                        await ref.read(notificationHelperProvider).sendLocalNotification(
+                          title: 'Booking Confirmed',
+                          body: 'Your booking has been confirmed successfully!',
+                          payload: 'booking_confirmed',
+                        );
+                      } catch (e) {
+                        debugPrint('Error sending notification: $e');
+                      }
+
+                      // Show success message
+                      // ignore: use_build_context_synchronously
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text(
+                              'Booking confirmed! You can now share the invitation.'),
+                          backgroundColor: Colors.green,
+                        ),
+                      );
+                    },
+                  child: const Text('Confirm'),
                 ),
               ],
             ),
           ),
-          if (_isLoadingAd)
-            const ColoredBox(
-              color: Colors.black45,
-              child: Center(
-                child: Text(
-                  'Loading ad... please wait',
-                  style: TextStyle(color: Colors.white, fontSize: 16),
-                ),
-              ),
-            ),
+
         ],
       ),
     );
