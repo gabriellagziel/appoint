@@ -47,7 +47,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
       );
     }
 
-    final profile = ref.watch(businessProfileProvider);
+    final profile = ref.watch(studioBusinessProfileProvider);
     final bookingAsync = ref.watch(bookingProvider);
 
     if (profile == null) {
@@ -223,7 +223,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   // TODO(username): Implement time slot selector and staff selector when needed
 
   Future<void> _processBooking() async {
-    final profile = ref.read(businessProfileProvider);
+    final profile = ref.read(studioBusinessProfileProvider);
     if (_formKey.currentState!.validate() && profile != null) {
       setState(() => _isProcessing = true);
 
