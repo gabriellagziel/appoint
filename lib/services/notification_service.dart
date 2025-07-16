@@ -90,31 +90,36 @@ class NotificationService {
   ///
   /// TODO(username): Implement real notification fetching from Firestore
   Future<List<NotificationPayload>> fetchNotifications(String uid) async {
-    // TODO(username): Replace with real Firestore query for user notifications
+    // Stub implementation - returns empty list for now
+    // In a real implementation, this would query Firestore for user notifications
     return [];
   }
 
   /// Show an informational message to the user
   void showInfo(String message) {
-    // Implementation for UI notifications
-    // This would typically show a snackbar or toast
+    // Stub implementation for UI notifications
+    // In a real implementation, this would show a snackbar or toast
+    print('INFO: $message');
   }
 
   /// Show a warning message to the user
   void showWarning(String message) {
-    // Implementation for UI notifications
-    // This would typically show a snackbar or toast
+    // Stub implementation for UI notifications
+    // In a real implementation, this would show a snackbar or toast
+    print('WARNING: $message');
   }
 
   /// Show an error message to the user
   void showError(String message) {
-    // Implementation for UI notifications
-    // This would typically show a snackbar or toast
+    // Stub implementation for UI notifications
+    // In a real implementation, this would show a snackbar or toast
+    print('ERROR: $message');
   }
 
   /// Show a success message to the user
   void showSuccess(String message) {
-    // Implementation for UI notifications
-    // This would typically show a snackbar or toast
+    // Stub implementation for UI notifications
+    // In a real implementation, this would show a snackbar or toast
+    print('SUCCESS: $message');
   }
 }

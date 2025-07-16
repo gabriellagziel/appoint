@@ -16,8 +16,6 @@ class BookingService {
     try {
       await _firestore.collection('appointments').add(booking.toJson());
     } catch (e) {
-      // Removed debug print: debugPrint('❌ Error creating booking: $e');
-      // Removed debug print: debugPrint(st);
       rethrow;
     }
   }
@@ -35,7 +33,6 @@ class BookingService {
       final bookingWithId = booking.copyWith(id: docRef.id);
       await docRef.set(bookingWithId.toJson());
     } catch (e) {
-      // Removed debug print: debugPrint('Error submitting booking: $e\n$st');
       rethrow;
     }
   }
@@ -47,7 +44,7 @@ class BookingService {
       final snapshot = await _firestore
           .collection('appointments')
           .where('userId', isEqualTo: userId)
-          .orderBy('startTime')
+          .orderBy('dateTime')
           .get();
 
       return snapshot.docs
@@ -97,7 +94,6 @@ class BookingService {
     try {
       await _firestore.collection(_bookingsCollection).doc(bookingId).delete();
     } catch (e) {
-      // Removed debug print: debugPrint('Error canceling booking: $e\n$st');
       rethrow;
     }
   }
@@ -106,7 +102,7 @@ class BookingService {
   Stream<List<Booking>> getUserBookings(String userId) => _firestore
         .collection(_bookingsCollection)
         .where('userId', isEqualTo: userId)
-        .orderBy('startTime')
+        .orderBy('dateTime')
         .snapshots()
         .map((snapshot) => snapshot.docs
             .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
@@ -116,7 +112,7 @@ class BookingService {
   Stream<List<Booking>> getBusinessBookings(String businessId) => _firestore
         .collection(_bookingsCollection)
         .where('businessProfileId', isEqualTo: businessId)
-        .orderBy('startTime')
+        .orderBy('dateTime')
         .snapshots()
         .map((snapshot) => snapshot.docs
             .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))

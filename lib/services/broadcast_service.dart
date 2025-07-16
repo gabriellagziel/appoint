@@ -196,12 +196,12 @@ class BroadcastService {
         throw Exception('User has no FCM token');
       }
 
-      // Prepare notification payload
-      // TODO(username): Implement FCM notification sending via Firebase Functions
-      // For now, we'll just log it
-      // Removed debug print: debugPrint('Sending FCM notification to ${user.id}');
+      // Stub implementation for FCM notification sending
+      // In a real implementation, this would call Firebase Functions to send the notification
+      print('FCM notification would be sent to ${user.id} with token: $fcmToken');
+      print('Message: ${message.title} - ${message.body}');
     } catch (e) {
-      // Removed debug print: debugPrint('Failed to send FCM notification to ${user.id}: $e');
+      print('Failed to send FCM notification to ${user.id}: $e');
       rethrow;
     }
   }
