@@ -38,7 +38,7 @@ final broadcastMessagesProvider = FutureProvider<List<AdminBroadcastMessage>>((r
     throw Exception('Unauthorized: Admin access required');
   }
   
-  return broadcastService.getAllBroadcastMessages();
+  return broadcastService.getBroadcastMessages().first;
 });
 
 /// Provider for admin dashboard statistics
