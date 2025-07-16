@@ -69,11 +69,11 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              profileAsync.name,
+                              profileAsync?.name ?? 'Business Name',
                               style: Theme.of(context).textTheme.headlineSmall,
                             ),
                             const SizedBox(height: 8),
-                            Text('Phone: ${profileAsync.phone}'),
+                            Text('Phone: ${profileAsync?.phone ?? 'N/A'}'),
                           ],
                         ),
                       ),
@@ -194,10 +194,16 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: _isProcessing || bookingAsync.isLoading 
+                        onPressed: _isProcessing || bookingAsync.maybeWhen(
+                          loading: () => true,
+                          orElse: () => false,
+                        ) 
                             ? null 
                             : _processBooking,
-                        child: _isProcessing || bookingAsync.isLoading
+                        child: _isProcessing || bookingAsync.maybeWhen(
+                          loading: () => true,
+                          orElse: () => false,
+                        )
                             ? const CircularProgressIndicator()
                             : const Text('Send Booking Invite'),
                       ),
@@ -227,7 +233,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
         final bookingNotifier = ref.read(bookingProvider.notifier);
         await bookingNotifier.submitBooking(
           staffProfileId: selectedStaff?.id ?? 'default-staff-id',
-          businessProfileId: profileAsync.id ?? 'business1',
+          businessProfileId: profileAsync?.id ?? 'business1',
           date: selectedDate ?? DateTime.now(),
           startTime: selectedTimeSlot ?? '09:00',
           endTime: _getEndTime(selectedTimeSlot ?? '09:00'),
@@ -238,12 +244,13 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
         await weeklyUsage.incrementUsage();
 
         if (mounted) {
-          Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-              builder: (_) => const StudioBookingConfirmScreen(),
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Booking submitted successfully!'),
+              backgroundColor: Colors.green,
             ),
           );
+          Navigator.pop(context);
         }
       } catch (e) {
         if (mounted) {
@@ -329,28 +336,4 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
       }
     });
   }
-}
-
-class StudioBookingConfirmScreen extends StatelessWidget {
-  const StudioBookingConfirmScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(title: const Text('Booking Confirmed')),
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(Icons.check_circle, color: Colors.green, size: 64),
-            SizedBox(height: 16),
-            Text(
-              'Your studio booking has been confirmed!',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 8),
-            Text('You will receive a confirmation email shortly.'),
-          ],
-        ),
-      ),
-    );
 }
