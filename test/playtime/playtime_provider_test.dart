@@ -32,6 +32,7 @@ void main() {
     });
 
     test('playtimeServiceProvider should provide PlaytimeService', () {
+      late PlaytimeService service;
       service = container.read(playtimeServiceProvider);
       expect(service, isA<PlaytimeService>());
     });
