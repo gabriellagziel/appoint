@@ -74,8 +74,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get search => '[IT] Cerca';
 
   @override
-  String get cancelInviteConfirmation =>
-      '[IT] [IT] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => '[IT] [IT] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -92,8 +91,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get playtimeLiveScheduled => '[IT] [IT] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation =>
-      '[IT] [IT] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => '[IT] [IT] Are you sure you want to revoke access?';
 
   @override
   String get download => '[IT] Scarica';
@@ -127,8 +125,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get playtimeModeVirtual => '[IT] Modalità virtuale';
 
   @override
-  String get playtimeDescription =>
-      '[IT] [IT] Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => '[IT] [IT] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => '[IT] [IT] Delete';
@@ -188,8 +185,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully =>
-      '[IT] [IT] Meeting shared successfully';
+  String get meetingSharedSuccessfully => '[IT] [IT] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[IT] [IT] Welcome to Playtime';
@@ -207,8 +203,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get cut => '[IT] Taglia';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      '[IT] [IT] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => '[IT] [IT] Invite cancelled successfully';
 
   @override
   String get retry => '[IT] Riprova';
@@ -288,8 +283,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get scheduleForLater => '[IT] [IT] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully =>
-      '[IT] [IT] Access revoked successfully';
+  String get accessRevokedSuccessfully => '[IT] [IT] Access revoked successfully';
 
   @override
   String type(Object type) {
@@ -414,8 +408,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get dashboard => '[IT] [IT] Dashboard';
 
   @override
-  String get noPermissionForBroadcast =>
-      '[IT] [IT] No permission for broadcast';
+  String get noPermissionForBroadcast => '[IT] [IT] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[IT] Playtime Games – Admin';
@@ -492,8 +485,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get playtimeEnterGameName => '[IT] [IT] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[IT] [IT] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '[IT] [IT] Please login to access family features';
 
   @override
   String get myInvites => '[IT] [IT] My Invites';
@@ -553,8 +545,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[IT] [IT] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[IT] [IT] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[IT] Admin Metrics';
@@ -575,51 +566,40 @@ class AppLocalizationsIt extends AppLocalizations {
   String get contentLibrary => '[IT] Libreria Contenuti';
 
   @override
-  String get authErrorUserNotFound =>
-      '[IT] Nessun account trovato con questo indirizzo email.';
+  String get authErrorUserNotFound => '[IT] Nessun account trovato con questo indirizzo email.';
 
   @override
   String get authErrorWrongPassword => '[IT] Password errata. Riprova.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[IT] Inserisci un indirizzo email valido.';
+  String get authErrorInvalidEmail => '[IT] Inserisci un indirizzo email valido.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[IT] Questo account è stato disabilitato. Contatta il supporto.';
+  String get authErrorUserDisabled => '[IT] Questo account è stato disabilitato. Contatta il supporto.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[IT] La password è troppo debole. Scegli una password più sicura.';
+  String get authErrorWeakPassword => '[IT] La password è troppo debole. Scegli una password più sicura.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[IT] Esiste già un account con questa email.';
+  String get authErrorEmailAlreadyInUse => '[IT] Esiste già un account con questa email.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[IT] Troppi tentativi falliti. Riprova più tardi.';
+  String get authErrorTooManyRequests => '[IT] Troppi tentativi falliti. Riprova più tardi.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[IT] Questo metodo di accesso non è abilitato. Contatta il supporto.';
+  String get authErrorOperationNotAllowed => '[IT] Questo metodo di accesso non è abilitato. Contatta il supporto.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[IT] Credenziali non valide. Riprova.';
+  String get authErrorInvalidCredential => '[IT] Credenziali non valide. Riprova.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      '[IT] Esiste già un account con questa email usando un metodo di accesso diverso.';
+  String get authErrorAccountExistsWithDifferentCredential => '[IT] Esiste già un account con questa email usando un metodo di accesso diverso.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[IT] Queste credenziali sono già associate a un altro account.';
+  String get authErrorCredentialAlreadyInUse => '[IT] Queste credenziali sono già associate a un altro account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[IT] Errore di rete. Controlla la connessione e riprova.';
+  String get authErrorNetworkRequestFailed => '[IT] Errore di rete. Controlla la connessione e riprova.';
 
   @override
   String get socialAccountConflictTitle => 'Conflitto account social';
@@ -636,87 +616,67 @@ class AppLocalizationsIt extends AppLocalizations {
   String get signInWithExistingMethod => 'Accedi con metodo esistente';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[IT] Effettua nuovamente l\'accesso per completare questa operazione.';
+  String get authErrorRequiresRecentLogin => '[IT] Effettua nuovamente l\'accesso per completare questa operazione.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[IT] Questa app non è autorizzata a usare Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[IT] Questa app non è autorizzata a usare Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode =>
-      '[IT] Il codice di verifica non è valido.';
+  String get authErrorInvalidVerificationCode => '[IT] Il codice di verifica non è valido.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[IT] L\'ID di verifica non è valido.';
+  String get authErrorInvalidVerificationId => '[IT] L\'ID di verifica non è valido.';
 
   @override
-  String get authErrorMissingVerificationCode =>
-      '[IT] Inserisci il codice di verifica.';
+  String get authErrorMissingVerificationCode => '[IT] Inserisci il codice di verifica.';
 
   @override
   String get authErrorMissingVerificationId => '[IT] ID di verifica mancante.';
 
   @override
-  String get authErrorInvalidPhoneNumber =>
-      '[IT] Il numero di telefono non è valido.';
+  String get authErrorInvalidPhoneNumber => '[IT] Il numero di telefono non è valido.';
 
   @override
-  String get authErrorMissingPhoneNumber =>
-      '[IT] Inserisci un numero di telefono.';
+  String get authErrorMissingPhoneNumber => '[IT] Inserisci un numero di telefono.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[IT] La quota SMS per questo progetto è stata superata. Riprova più tardi.';
+  String get authErrorQuotaExceeded => '[IT] La quota SMS per questo progetto è stata superata. Riprova più tardi.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[IT] Il codice di verifica è scaduto. Richiedine uno nuovo.';
+  String get authErrorCodeExpired => '[IT] Il codice di verifica è scaduto. Richiedine uno nuovo.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[IT] La sessione è scaduta. Effettua nuovamente l\'accesso.';
+  String get authErrorSessionExpired => '[IT] La sessione è scaduta. Effettua nuovamente l\'accesso.';
 
   @override
-  String get authErrorMultiFactorAuthRequired =>
-      '[IT] È richiesta l\'autenticazione a più fattori.';
+  String get authErrorMultiFactorAuthRequired => '[IT] È richiesta l\'autenticazione a più fattori.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound =>
-      '[IT] Informazioni multi-fattore non trovate.';
+  String get authErrorMultiFactorInfoNotFound => '[IT] Informazioni multi-fattore non trovate.';
 
   @override
-  String get authErrorMissingMultiFactorSession =>
-      '[IT] Sessione multi-fattore mancante.';
+  String get authErrorMissingMultiFactorSession => '[IT] Sessione multi-fattore mancante.';
 
   @override
-  String get authErrorInvalidMultiFactorSession =>
-      '[IT] Sessione multi-fattore non valida.';
+  String get authErrorInvalidMultiFactorSession => '[IT] Sessione multi-fattore non valida.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      '[IT] Questo secondo fattore è già in uso.';
+  String get authErrorSecondFactorAlreadyInUse => '[IT] Questo secondo fattore è già in uso.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      '[IT] Numero massimo di secondi fattori superato.';
+  String get authErrorMaximumSecondFactorCountExceeded => '[IT] Numero massimo di secondi fattori superato.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[IT] Primo fattore non supportato per l\'autenticazione a più fattori.';
+  String get authErrorUnsupportedFirstFactor => '[IT] Primo fattore non supportato per l\'autenticazione a più fattori.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      '[IT] La modifica dell\'email richiede la verifica.';
+  String get authErrorEmailChangeNeedsVerification => '[IT] La modifica dell\'email richiede la verifica.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      '[IT] Questo numero di telefono è già in uso.';
+  String get authErrorPhoneNumberAlreadyExists => '[IT] Questo numero di telefono è già in uso.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[IT] La password non è valida o è troppo debole.';
+  String get authErrorInvalidPassword => '[IT] La password non è valida o è troppo debole.';
 
   @override
   String get authErrorInvalidIdToken => '[IT] Il token ID non è valido.';
@@ -728,114 +688,88 @@ class AppLocalizationsIt extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[IT] Il token ID è stato revocato.';
 
   @override
-  String get authErrorInternalError =>
-      '[IT] Si è verificato un errore interno. Riprova.';
+  String get authErrorInternalError => '[IT] Si è verificato un errore interno. Riprova.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[IT] È stato fornito un argomento non valido.';
+  String get authErrorInvalidArgument => '[IT] È stato fornito un argomento non valido.';
 
   @override
-  String get authErrorInvalidClaims =>
-      '[IT] Sono state fornite rivendicazioni personalizzate non valide.';
+  String get authErrorInvalidClaims => '[IT] Sono state fornite rivendicazioni personalizzate non valide.';
 
   @override
-  String get authErrorInvalidContinueUri =>
-      '[IT] L\'URL di continuazione non è valido.';
+  String get authErrorInvalidContinueUri => '[IT] L\'URL di continuazione non è valido.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[IT] L\'ora di creazione non è valida.';
+  String get authErrorInvalidCreationTime => '[IT] L\'ora di creazione non è valida.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[IT] Il valore del campo disabilitato non è valido.';
+  String get authErrorInvalidDisabledField => '[IT] Il valore del campo disabilitato non è valido.';
 
   @override
-  String get authErrorInvalidDisplayName =>
-      '[IT] Il nome visualizzato non è valido.';
+  String get authErrorInvalidDisplayName => '[IT] Il nome visualizzato non è valido.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      '[IT] Il dominio del link dinamico non è valido.';
+  String get authErrorInvalidDynamicLinkDomain => '[IT] Il dominio del link dinamico non è valido.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[IT] Il valore di email verificata non è valido.';
+  String get authErrorInvalidEmailVerified => '[IT] Il valore di email verificata non è valido.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[IT] L\'algoritmo di hash non è valido.';
+  String get authErrorInvalidHashAlgorithm => '[IT] L\'algoritmo di hash non è valido.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[IT] La dimensione del blocco hash non è valida.';
+  String get authErrorInvalidHashBlockSize => '[IT] La dimensione del blocco hash non è valida.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      '[IT] La lunghezza della chiave derivata dall\'hash non è valida.';
+  String get authErrorInvalidHashDerivedKeyLength => '[IT] La lunghezza della chiave derivata dall\'hash non è valida.';
 
   @override
   String get authErrorInvalidHashKey => '[IT] La chiave hash non è valida.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[IT] Il costo di memoria dell\'hash non è valido.';
+  String get authErrorInvalidHashMemoryCost => '[IT] Il costo di memoria dell\'hash non è valido.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      '[IT] La parallelizzazione dell\'hash non è valida.';
+  String get authErrorInvalidHashParallelization => '[IT] La parallelizzazione dell\'hash non è valida.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[IT] Il valore dei round di hash non è valido.';
+  String get authErrorInvalidHashRounds => '[IT] Il valore dei round di hash non è valido.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      '[IT] Il separatore di sale dell\'hash non è valido.';
+  String get authErrorInvalidHashSaltSeparator => '[IT] Il separatore di sale dell\'hash non è valido.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[IT] L\'ultima ora di accesso non è valida.';
+  String get authErrorInvalidLastSignInTime => '[IT] L\'ultima ora di accesso non è valida.';
 
   @override
-  String get authErrorInvalidPageToken =>
-      '[IT] Il token di pagina non è valido.';
+  String get authErrorInvalidPageToken => '[IT] Il token di pagina non è valido.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[IT] I dati del provider non sono validi.';
+  String get authErrorInvalidProviderData => '[IT] I dati del provider non sono validi.';
 
   @override
-  String get authErrorInvalidProviderId =>
-      '[IT] L\'ID del provider non è valido.';
+  String get authErrorInvalidProviderId => '[IT] L\'ID del provider non è valido.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      '[IT] La durata del cookie di sessione non è valida.';
+  String get authErrorInvalidSessionCookieDuration => '[IT] La durata del cookie di sessione non è valida.';
 
   @override
   String get authErrorInvalidUid => '[IT] L\'UID non è valido.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[IT] Il record di importazione utente non è valido.';
+  String get authErrorInvalidUserImport => '[IT] Il record di importazione utente non è valido.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      '[IT] Numero massimo di utenti importati superato.';
+  String get authErrorMaximumUserCountExceeded => '[IT] Numero massimo di utenti importati superato.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[IT] Nome del pacchetto Android mancante.';
+  String get authErrorMissingAndroidPkgName => '[IT] Nome del pacchetto Android mancante.';
 
   @override
-  String get authErrorMissingContinueUri =>
-      '[IT] URL di continuazione mancante.';
+  String get authErrorMissingContinueUri => '[IT] URL di continuazione mancante.';
 
   @override
-  String get authErrorMissingHashAlgorithm =>
-      '[IT] Algoritmo di hash mancante.';
+  String get authErrorMissingHashAlgorithm => '[IT] Algoritmo di hash mancante.';
 
   @override
   String get authErrorMissingIosBundleId => '[IT] ID bundle iOS mancante.';
@@ -844,34 +778,28 @@ class AppLocalizationsIt extends AppLocalizations {
   String get authErrorMissingUid => '[IT] UID mancante.';
 
   @override
-  String get authErrorMissingOauthClientSecret =>
-      '[IT] Segreto client OAuth mancante.';
+  String get authErrorMissingOauthClientSecret => '[IT] Segreto client OAuth mancante.';
 
   @override
   String get authErrorProjectNotFound => '[IT] Progetto Firebase non trovato.';
 
   @override
-  String get authErrorReservedClaims =>
-      '[IT] Sono state fornite rivendicazioni riservate.';
+  String get authErrorReservedClaims => '[IT] Sono state fornite rivendicazioni riservate.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[IT] Il cookie di sessione è scaduto.';
+  String get authErrorSessionCookieExpired => '[IT] Il cookie di sessione è scaduto.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[IT] Il cookie di sessione è stato revocato.';
+  String get authErrorSessionCookieRevoked => '[IT] Il cookie di sessione è stato revocato.';
 
   @override
   String get authErrorUidAlreadyExists => '[IT] L\'UID è già in uso.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      '[IT] Il dominio dell\'URL di continuazione non è autorizzato.';
+  String get authErrorUnauthorizedContinueUri => '[IT] Il dominio dell\'URL di continuazione non è autorizzato.';
 
   @override
-  String get authErrorUnknown =>
-      '[IT] Si è verificato un errore di autenticazione sconosciuto.';
+  String get authErrorUnknown => '[IT] Si è verificato un errore di autenticazione sconosciuto.';
 
   @override
   String get checkingPermissions1 => 'Controllo permessi...';
@@ -920,8 +848,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get keepSubscription => 'Mantieni abbonamento';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      '[IT] Sessione virtuale creata, invitando amici';
+  String get virtualSessionCreatedInvitingFriends => '[IT] Sessione virtuale creata, invitando amici';
 
   @override
   String get noEventsScheduledForToday => 'Nessun evento programmato per oggi';
@@ -962,15 +889,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get studioProfile => 'Profilo studio';
 
   @override
-  String get subscriptionUnavailable =>
-      '[IT] Subscription unavailable (Italian)';
+  String get subscriptionUnavailable => '[IT] Subscription unavailable (Italian)';
 
   @override
   String get confirmBooking => '[IT] Confirm Booking (Italian)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[IT] Failed to update permission: \$e (Italian)';
+  String get failedToUpdatePermissionE => '[IT] Failed to update permission: \$e (Italian)';
 
   @override
   String get reject => '[IT] Reject (Italian)';
@@ -998,8 +923,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get resolve => '[IT] Resolve (Italian)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[IT] Error loading surveys: \$error (Italian)';
+  String get errorLoadingSurveysError => '[IT] Error loading surveys: \$error (Italian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -1007,8 +931,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[IT] Get help with your account (Italian)';
+  String get getHelpWithYourAccount => '[IT] Get help with your account (Italian)';
 
   @override
   String get pay => '[IT] Pay (Italian)';
@@ -1020,12 +943,10 @@ class AppLocalizationsIt extends AppLocalizations {
   String get meetingDetails => 'Dettagli riunione';
 
   @override
-  String get errorLoadingAppointments =>
-      '[IT] Error loading appointments (Italian)';
+  String get errorLoadingAppointments => '[IT] Error loading appointments (Italian)';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[IT] Changes saved successfully! (Italian)';
+  String get changesSavedSuccessfully => '[IT] Changes saved successfully! (Italian)';
 
   @override
   String get createNewInvoice => '[IT] Create New Invoice (Italian)';
@@ -1045,8 +966,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get profileSaved => '[IT] Profile saved! (Italian)';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'Ricevi notifiche prenotazione via email';
+  String get receiveBookingNotificationsViaEmail => 'Ricevi notifiche prenotazione via email';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1077,8 +997,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      '[IT] Riceverai un\'email di conferma a breve';
+  String get youWillReceiveAConfirmationEmailShortly => '[IT] Riceverai un\'email di conferma a breve';
 
   @override
   String get addQuestion => '[IT] Add Question (Italian)';
@@ -1107,26 +1026,22 @@ class AppLocalizationsIt extends AppLocalizations {
   String get surveyManagement => '[IT] Survey Management (Italian)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[IT] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[IT] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[IT] No rooms found. Add your first room! (Italian)';
+  String get noRoomsFoundAddYourFirstRoom => '[IT] No rooms found. Add your first room! (Italian)';
 
   @override
   String get readOurPrivacyPolicy => '[IT] Read our privacy policy (Italian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[IT] Could not open privacy policy (Italian)';
+  String get couldNotOpenPrivacyPolicy => '[IT] Could not open privacy policy (Italian)';
 
   @override
   String get refresh1 => '[IT] Refresh (Italian)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[IT] Room updated successfully! (Italian)';
+  String get roomUpdatedSuccessfully => '[IT] Room updated successfully! (Italian)';
 
   @override
   String get contentDetail => '[IT] Content Detail (Italian)';
@@ -1135,8 +1050,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get cancelSubscription => '[IT] Cancel Subscription (Italian)';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      '[IT] Successfully registered as Ambassador! (Italian)';
+  String get successfullyRegisteredAsAmbassador => '[IT] Successfully registered as Ambassador! (Italian)';
 
   @override
   String get save1 => '[IT] Save (Italian)';
@@ -1145,8 +1059,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get copy1 => '[IT] Copy (Italian)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[IT] Failed to send invitation: \$e (Italian)';
+  String get failedToSendInvitationE => '[IT] Failed to send invitation: \$e (Italian)';
 
   @override
   String get surveyScore => '[IT] Survey Score (Italian)';
@@ -1163,20 +1076,16 @@ class AppLocalizationsIt extends AppLocalizations {
   String get responseDetail => '[IT] Response Detail (Italian)';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'Schermata verifica business - Prossimamente';
+  String get businessVerificationScreenComingSoon => 'Schermata verifica business - Prossimamente';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'Profilo business attivato con successo';
+  String get businessProfileActivatedSuccessfully => 'Profilo business attivato con successo';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[IT] Failed to start Pro subscription: \$e (Italian)';
+  String get failedToStartProSubscriptionE => '[IT] Failed to start Pro subscription: \$e (Italian)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      '[IT] Business Dashboard Entry Screen - Coming Soon (Italian)';
+  String get businessDashboardEntryScreenComingSoon => '[IT] Business Dashboard Entry Screen - Coming Soon (Italian)';
 
   @override
   String get contentFilter => '[IT] Content Filter (Italian)';
@@ -1198,8 +1107,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      '[IT] Business CRM Entry Screen - Coming Soon (Italian)';
+  String get businessCrmEntryScreenComingSoon => '[IT] Business CRM Entry Screen - Coming Soon (Italian)';
 
   @override
   String get adminDashboard => '[IT] Admin Dashboard';
@@ -1210,12 +1118,10 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[IT] Error loading dashboard: \$error (Italian)';
+  String get errorLoadingDashboardError => '[IT] Error loading dashboard: \$error (Italian)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[IT] Game deleted successfully! (Italian)';
+  String get gameDeletedSuccessfully => '[IT] Game deleted successfully! (Italian)';
 
   @override
   String get viewResponsesComingSoon => '[IT] Vedi risposte presto';
@@ -1227,8 +1133,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get errorLoadingRewards => '[IT] Error loading rewards (Italian)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[IT] Failed to delete account: \$e (Italian)';
+  String get failedToDeleteAccountE => '[IT] Failed to delete account: \$e (Italian)';
 
   @override
   String get invited1 => '[IT] Invited (Italian)';
@@ -1243,8 +1148,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get noEvents => '[IT] No events (Italian)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[IT] Game created successfully! (Italian)';
+  String get gameCreatedSuccessfully => '[IT] Game created successfully! (Italian)';
 
   @override
   String get add1 => '[IT] Add (Italian)';
@@ -1264,12 +1168,10 @@ class AppLocalizationsIt extends AppLocalizations {
   String get clients => '[IT] Clients (Italian)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[IT] No ambassador data available (Italian)';
+  String get noAmbassadorDataAvailable => '[IT] No ambassador data available (Italian)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[IT] Background deleted successfully! (Italian)';
+  String get backgroundDeletedSuccessfully => '[IT] Background deleted successfully! (Italian)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1277,8 +1179,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[IT] No analytics data available yet. (Italian)';
+  String get noAnalyticsDataAvailableYet => '[IT] No analytics data available yet. (Italian)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1286,8 +1187,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      '[IT] Business Phone Booking Entry Screen - Coming Soon (Italian)';
+  String get businessPhoneBookingEntryScreenComingSoon => '[IT] Business Phone Booking Entry Screen - Coming Soon (Italian)';
 
   @override
   String get verification => '[IT] Verifica';
@@ -1334,8 +1234,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get businessProfile => '[IT] Business Profile (Italian)';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      '[IT] Business Booking Entry Screen - Coming Soon (Italian)';
+  String get businessBookingEntryScreenComingSoon => '[IT] Business Booking Entry Screen - Coming Soon (Italian)';
 
   @override
   String get createNewSurvey => '[IT] Create New Survey (Italian)';
@@ -1359,8 +1258,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get loginFailedE => '[IT] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[IT] Invitation sent successfully! (Italian)';
+  String get invitationSentSuccessfully => '[IT] Invitation sent successfully! (Italian)';
 
   @override
   String get registering => '[IT] Registering... (Italian)';
@@ -1374,16 +1272,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get home1 => '[IT] Home (Italian)';
 
   @override
-  String get errorSavingSettingsE =>
-      '[IT] Error saving settings: \$e (Italian)';
+  String get errorSavingSettingsE => '[IT] Error saving settings: \$e (Italian)';
 
   @override
-  String get appVersionAndInformation =>
-      '[IT] App version and information (Italian)';
+  String get appVersionAndInformation => '[IT] App version and information (Italian)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      '[IT] Business Subscription Entry Screen - Coming Soon (Italian)';
+  String get businessSubscriptionEntryScreenComingSoon => '[IT] Business Subscription Entry Screen - Coming Soon (Italian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1391,8 +1286,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      '[IT] Il tuo pagamento è stato elaborato con successo';
+  String get yourPaymentHasBeenProcessedSuccessfully => '[IT] Il tuo pagamento è stato elaborato con successo';
 
   @override
   String get errorE => '[IT] Error: \$e (Italian)';
@@ -1401,8 +1295,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get viewAll1 => '[IT] Vedi tutto';
 
   @override
-  String get editSurveyComingSoon =>
-      '[IT] Edit survey - Coming soon! (Italian)';
+  String get editSurveyComingSoon => '[IT] Edit survey - Coming soon! (Italian)';
 
   @override
   String get enterOtp => '[IT] Enter OTP (Italian)';
@@ -1411,8 +1304,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get payment => '[IT] Payment (Italian)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      '[IT] Automatically confirm new booking requests (Italian)';
+  String get automaticallyConfirmNewBookingRequests => '[IT] Automatically confirm new booking requests (Italian)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1425,8 +1317,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[IT] Please sign in to upload a background (Italian)';
+  String get pleaseSignInToUploadABackground => '[IT] Please sign in to upload a background (Italian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1443,22 +1334,19 @@ class AppLocalizationsIt extends AppLocalizations {
   String get autoconfirmBookings => '[IT] Auto-Confirm Bookings (Italian)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      '[IT] Redirecting to Stripe checkout for Pro plan... (Italian)';
+  String get redirectingToStripeCheckoutForProPlan => '[IT] Redirecting to Stripe checkout for Pro plan... (Italian)';
 
   @override
   String get exportAsCsv => '[IT] Export as CSV (Italian)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[IT] Delete functionality coming soon! (Italian)';
+  String get deleteFunctionalityComingSoon => '[IT] Delete functionality coming soon! (Italian)';
 
   @override
   String get editClient => '[IT] Edit Client (Italian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      '[IT] Are you sure you want to delete this message? (Italian)';
+  String get areYouSureYouWantToDeleteThisMessage => '[IT] Are you sure you want to delete this message? (Italian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1469,39 +1357,31 @@ class AppLocalizationsIt extends AppLocalizations {
   String get notAuthenticated => '[IT] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[IT] Privacy request sent to your parents! (Italian)';
+  String get privacyRequestSentToYourParents => '[IT] Privacy request sent to your parents! (Italian)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[IT] Client deleted successfully! (Italian)';
+  String get clientDeletedSuccessfully => '[IT] Client deleted successfully! (Italian)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[IT] Failed to cancel subscription (Italian)';
+  String get failedToCancelSubscription => '[IT] Failed to cancel subscription (Italian)';
 
   @override
   String get allLanguages => '[IT] All Languages (Italian)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[IT] Slot deleted successfully (Italian)';
+  String get slotDeletedSuccessfully => '[IT] Slot deleted successfully (Italian)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      '[IT] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => '[IT] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      '[IT] Parents must approve before children can join (Italian)';
+  String get parentsMustApproveBeforeChildrenCanJoin => '[IT] Parents must approve before children can join (Italian)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[IT] Subscribe to Pro (€14.99/mo) (Italian)';
+  String get subscribeToPro1499mo => '[IT] Subscribe to Pro (€14.99/mo) (Italian)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      '[IT] Business Availability Entry Screen - Coming Soon (Italian)';
+  String get businessAvailabilityEntryScreenComingSoon => '[IT] Business Availability Entry Screen - Coming Soon (Italian)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1515,8 +1395,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get submitBooking => '[IT] Submit Booking (Italian)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      '[IT] Are you sure you want to cancel this appointment? (Italian)';
+  String get areYouSureYouWantToCancelThisAppointment => '[IT] Are you sure you want to cancel this appointment? (Italian)';
 
   @override
   String get noUpcomingBookings => '[IT] No upcoming bookings (Italian)';
@@ -1534,8 +1413,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get goToDashboard => '[IT] Go to Dashboard (Italian)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[IT] Ambassador Quota Dashboard (Italian)';
+  String get ambassadorQuotaDashboard => '[IT] Ambassador Quota Dashboard (Italian)';
 
   @override
   String get adminSettings => '[IT] Admin Settings';
@@ -1573,8 +1451,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get sessionApproved => 'Sessione approvata';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[IT] Client added successfully! (Italian)';
+  String get clientAddedSuccessfully => '[IT] Client added successfully! (Italian)';
 
   @override
   String get noNotifications => 'Nessuna notifica';
@@ -1592,8 +1469,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get bookAppointment => '[IT] Book Appointment (Italian)';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'Ricevi notifiche push per nuove prenotazioni';
+  String get receivePushNotificationsForNewBookings => 'Ricevi notifiche push per nuove prenotazioni';
 
   @override
   String get delete1 => '[IT] Delete (Italian)';
@@ -1608,15 +1484,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get manageSubscription => '[IT] Manage Subscription (Italian)';
 
   @override
-  String get requiresInstallFallback =>
-      '[IT] Requires Install Fallback (Italian)';
+  String get requiresInstallFallback => '[IT] Requires Install Fallback (Italian)';
 
   @override
   String get paymentConfirmation => '[IT] Payment Confirmation (Italian)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[IT] Promo applied! Your next bill is free. (Italian)';
+  String get promoAppliedYourNextBillIsFree => '[IT] Promo applied! Your next bill is free. (Italian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1627,16 +1501,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get errorLoadingSlots => '[IT] Error loading slots (Italian)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      '[IT] Allow other users to find and join this game (Italian)';
+  String get allowOtherUsersToFindAndJoinThisGame => '[IT] Allow other users to find and join this game (Italian)';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      '[IT] Business Onboarding Screen - Coming Soon (Italian)';
+  String get businessOnboardingScreenComingSoon => '[IT] Business Onboarding Screen - Coming Soon (Italian)';
 
   @override
-  String get activateBusinessProfile =>
-      '[IT] Activate Business Profile (Italian)';
+  String get activateBusinessProfile => '[IT] Activate Business Profile (Italian)';
 
   @override
   String get contentNotFound => '[IT] Content not found (Italian)';
@@ -1678,8 +1549,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get shareLink => '[IT] Share Link (Italian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      '[IT] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => '[IT] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[IT] Delete Appointment (Italian)';
@@ -1699,12 +1569,10 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[IT] Update your business information (Italian)';
+  String get updateYourBusinessInformation => '[IT] Update your business information (Italian)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      '[IT] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => '[IT] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[IT] Parent Dashboard (Italian)';
@@ -1727,12 +1595,10 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      '[IT] Studio booking is only available on web (Italian)';
+  String get studioBookingIsOnlyAvailableOnWeb => '[IT] Studio booking is only available on web (Italian)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[IT] Error loading branches: \$e (Italian)';
+  String get errorLoadingBranchesE => '[IT] Error loading branches: \$e (Italian)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1748,15 +1614,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get none => '[IT] None (Italian)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[IT] Failed to update consent: \$e (Italian)';
+  String get failedToUpdateConsentE => '[IT] Failed to update consent: \$e (Italian)';
 
   @override
   String get welcome1 => '[IT] Benvenuto';
 
   @override
-  String get failedToCreateSessionE =>
-      '[IT] Failed to create session: \$e (Italian)';
+  String get failedToCreateSessionE => '[IT] Failed to create session: \$e (Italian)';
 
   @override
   String get inviteContact => '[IT] Invite Contact (Italian)';
@@ -1765,8 +1629,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get surveyEditor => '[IT] Survey Editor (Italian)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[IT] Failed to start Basic subscription: \$e (Italian)';
+  String get failedToStartBasicSubscriptionE => '[IT] Failed to start Basic subscription: \$e (Italian)';
 
   @override
   String get mySchedule => '[IT] My Schedule (Italian)';
@@ -1786,12 +1649,10 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[IT] Settings saved successfully! (Italian)';
+  String get settingsSavedSuccessfully => '[IT] Settings saved successfully! (Italian)';
 
   @override
-  String get linkCopiedToClipboard =>
-      '[IT] Link copied to clipboard! (Italian)';
+  String get linkCopiedToClipboard => '[IT] Link copied to clipboard! (Italian)';
 
   @override
   String get accept1 => '[IT] Accept (Italian)';
@@ -1808,8 +1669,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[IT] Room deleted successfully! (Italian)';
+  String get roomDeletedSuccessfully => '[IT] Room deleted successfully! (Italian)';
 
   @override
   String get businessCalendar => '[IT] Business Calendar (Italian)';
@@ -1874,8 +1734,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get cancel1 => '[IT] Cancel (Italian)';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      '[IT] Subscription activated successfully! (Italian)';
+  String get subscriptionActivatedSuccessfully => '[IT] Subscription activated successfully! (Italian)';
 
   @override
   String activityLogaction(Object action) {
@@ -1886,8 +1745,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get broadcast => '[IT] Broadcast (Italian)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[IT] No events scheduled this week (Italian)';
+  String get noEventsScheduledThisWeek => '[IT] No events scheduled this week (Italian)';
 
   @override
   String get googleCalendar => '[IT] Google Calendar (Italian)';
@@ -1899,8 +1757,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get childDashboard => '[IT] Child Dashboard (Italian)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[IT] Failed to upload background: \$e (Italian)';
+  String get failedToUploadBackgroundE => '[IT] Failed to upload background: \$e (Italian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1919,8 +1776,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get noAppointments => '[IT] No appointments (Italian)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[IT] • Unlimited bookings per week (Italian)';
+  String get unlimitedBookingsPerWeek => '[IT] • Unlimited bookings per week (Italian)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1928,19 +1784,16 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[IT] Scheduled at: \$scheduledAt (Italian)';
+  String get scheduledAtScheduledat => '[IT] Scheduled at: \$scheduledAt (Italian)';
 
   @override
   String get selectStaff => '[IT] Select Staff (Italian)';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      '[IT] Subscription cancelled successfully (Italian)';
+  String get subscriptionCancelledSuccessfully => '[IT] Subscription cancelled successfully (Italian)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'Per favore accedi per vedere il tuo profilo';
+  String get pleaseLogInToViewYourProfile => 'Per favore accedi per vedere il tuo profilo';
 
   @override
   String get cancelAppointment => '[IT] Cancel Appointment (Italian)';
@@ -1954,8 +1807,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get businessSignup => '[IT] Business Signup (Italian)';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      '[IT] Business Completion Screen - Coming Soon (Italian)';
+  String get businessCompletionScreenComingSoon => '[IT] Business Completion Screen - Coming Soon (Italian)';
 
   @override
   String get createGame1 => '[IT] Create Game (Italian)';
@@ -1966,12 +1818,10 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode =>
-      '[IT] Please enter a promo code (Italian)';
+  String get pleaseEnterAPromoCode => '[IT] Please enter a promo code (Italian)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[IT] Error loading availability: \$e (Italian)';
+  String get errorLoadingAvailabilityE => '[IT] Error loading availability: \$e (Italian)';
 
   @override
   String get parentalControls => '[IT] Parental Controls (Italian)';
@@ -1980,15 +1830,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get editBusinessProfile => 'Modifica profilo business';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[IT] Child linked successfully! (Italian)';
+  String get childLinkedSuccessfully => '[IT] Child linked successfully! (Italian)';
 
   @override
   String get create => '[IT] Create (Italian)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[IT] No external meetings found. (Italian)';
+  String get noExternalMeetingsFound => '[IT] No external meetings found. (Italian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1996,15 +1844,13 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[IT] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[IT] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[IT] Scheduler Screen (Italian)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[IT] Client updated successfully! (Italian)';
+  String get clientUpdatedSuccessfully => '[IT] Client updated successfully! (Italian)';
 
   @override
   String get surveyResponses => '[IT] Survey Responses (Italian)';
@@ -2030,12 +1876,10 @@ class AppLocalizationsIt extends AppLocalizations {
   String get errorLoadingEvents => '[IT] Error loading events (Italian)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[IT] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[IT] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[IT] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[IT] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[IT] Success (Italian)';
@@ -2054,12 +1898,10 @@ class AppLocalizationsIt extends AppLocalizations {
   String get readWrite => '[IT] Read & Write (Italian)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      '[IT] Redirecting to Stripe checkout for Basic plan... (Italian)';
+  String get redirectingToStripeCheckoutForBasicPlan => '[IT] Redirecting to Stripe checkout for Basic plan... (Italian)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[IT] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[IT] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[IT] Pick Date (Italian)';
@@ -2095,12 +1937,10 @@ class AppLocalizationsIt extends AppLocalizations {
   String get businessLogin => '[IT] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[IT] Invoice created successfully! (Italian)';
+  String get invoiceCreatedSuccessfully => '[IT] Invoice created successfully! (Italian)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[IT] No time series data available (Italian)';
+  String get noTimeSeriesDataAvailable => '[IT] No time series data available (Italian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2113,8 +1953,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[IT] Failed to send privacy request: \$e (Italian)';
+  String get failedToSendPrivacyRequestE => '[IT] Failed to send privacy request: \$e (Italian)';
 
   @override
   String get chooseYourPlan => '[IT] Choose Your Plan (Italian)';
@@ -2129,15 +1968,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get eventCreated => '[IT] Event created (Italian)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[IT] Subscribe to Basic (€4.99/mo) (Italian)';
+  String get subscribeToBasic499mo => '[IT] Subscribe to Basic (€4.99/mo) (Italian)';
 
   @override
   String get completion => '[IT] Completion (Italian)';
 
   @override
-  String get supportTicketSubmitted =>
-      '[IT] Support ticket submitted (Italian)';
+  String get supportTicketSubmitted => '[IT] Support ticket submitted (Italian)';
 
   @override
   String get monetizationSettings => '[IT] Monetization Settings (Italian)';
@@ -2152,12 +1989,10 @@ class AppLocalizationsIt extends AppLocalizations {
   String get deleteSurvey => '[IT] Delete Survey (Italian)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[IT] Game approved successfully! (Italian)';
+  String get gameApprovedSuccessfully => '[IT] Game approved successfully! (Italian)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[IT] Error loading permissions: \$error (Italian)';
+  String get errorLoadingPermissionsError => '[IT] Error loading permissions: \$error (Italian)';
 
   @override
   String get referrals => '[IT] Referrals (Italian)';
@@ -2199,8 +2034,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get organizations => '[IT] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[IT] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[IT] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[IT] Create New Game (Italian)';
@@ -2209,16 +2043,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get next1 => '[IT] Next (Italian)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[IT] Background uploaded successfully! (Italian)';
+  String get backgroundUploadedSuccessfully => '[IT] Background uploaded successfully! (Italian)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[IT] No appointment requests found. (Italian)';
+  String get noAppointmentRequestsFound => '[IT] No appointment requests found. (Italian)';
 
   @override
-  String get pleaseSignInToCreateASession =>
-      'Per favore accedi per creare una sessione';
+  String get pleaseSignInToCreateASession => 'Per favore accedi per creare una sessione';
 
   @override
   String get restrictMatureContent => '[IT] Restrict mature content (Italian)';
@@ -2242,8 +2073,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get notifications1 => 'Notifiche';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'Sessione live programmata, in attesa dell\'approvazione del genitore';
+  String get liveSessionScheduledWaitingForParentApproval => 'Sessione live programmata, in attesa dell\'approvazione del genitore';
 
   @override
   String get failedToCreateGameE => '[IT] Failed to create game: \$e (Italian)';
@@ -2252,8 +2082,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get noChartDataAvailable => '[IT] No chart data available (Italian)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[IT] • Phone-based booking system (Italian)';
+  String get phonebasedBookingSystem => '[IT] • Phone-based booking system (Italian)';
 
   @override
   String get enableNotifications1 => 'Abilita notifiche';
@@ -2262,8 +2091,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get invoices => '[IT] Invoices (Italian)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'Per favore attiva il tuo profilo business per continuare';
+  String get pleaseActivateYourBusinessProfileToContinue => 'Per favore attiva il tuo profilo business per continuare';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2290,12 +2118,10 @@ class AppLocalizationsIt extends AppLocalizations {
   String get iDoNotConsent => '[IT] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      '[IT] No clients found. Add your first client! (Italian)';
+  String get noClientsFoundAddYourFirstClient => '[IT] No clients found. Add your first client! (Italian)';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      '[IT] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => '[IT] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[IT] Group: \$groupId';
@@ -2318,8 +2144,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[IT] • CRM dashboard with analytics (Italian)';
+  String get crmDashboardWithAnalytics => '[IT] • CRM dashboard with analytics (Italian)';
 
   @override
   String get contentLibrary1 => '[IT] Content Library (Italian)';
@@ -2331,30 +2156,25 @@ class AppLocalizationsIt extends AppLocalizations {
   String get subscriptionManagement => '[IT] Subscription Management (Italian)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      '[IT] Monetization settings will be implemented here (Italian)';
+  String get monetizationSettingsWillBeImplementedHere => '[IT] Monetization settings will be implemented here (Italian)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[IT] Failed to apply promo code: \$e (Italian)';
+  String get failedToApplyPromoCodeE => '[IT] Failed to apply promo code: \$e (Italian)';
 
   @override
   String get editProvider => '[IT] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[IT] Localization Contribution (Italian)';
+  String get localizationContribution => '[IT] Localization Contribution (Italian)';
 
   @override
   String get parentalConsent => '[IT] Parental Consent (Italian)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[IT] Business Signup Screen - Coming Soon (Italian)';
+  String get businessSignupScreenComingSoon => '[IT] Business Signup Screen - Coming Soon (Italian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      '[IT] Are you sure you want to delete this appointment? (Italian)';
+  String get areYouSureYouWantToDeleteThisAppointment => '[IT] Are you sure you want to delete this appointment? (Italian)';
 
   @override
   String get syncAppointment => '[IT] Sync Appointment (Italian)';
@@ -2366,15 +2186,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get sessionRejected => 'Sessione rifiutata';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[IT] Business Setup Screen - Coming Soon (Italian)';
+  String get businessSetupScreenComingSoon => '[IT] Business Setup Screen - Coming Soon (Italian)';
 
   @override
   String get edit1 => '[IT] Edit (Italian)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[IT] No events scheduled this month (Italian)';
+  String get noEventsScheduledThisMonth => '[IT] No events scheduled this month (Italian)';
 
   @override
   String get businessDashboard => '[IT] Business Dashboard (Italian)';
@@ -2388,8 +2206,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[IT] Manage Staff Availability (Italian)';
+  String get manageStaffAvailability => '[IT] Manage Staff Availability (Italian)';
 
   @override
   String get noMissingTranslations => '[IT] No missing translations (Italian)';
@@ -2406,8 +2223,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get noUsers => '[IT] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[IT] Error loading referral code (Italian)';
+  String get errorLoadingReferralCode => '[IT] Error loading referral code (Italian)';
 
   @override
   String get allCountries => '[IT] All Countries (Italian)';
@@ -2422,8 +2238,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get deleteMessage => '[IT] Delete Message (Italian)';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'Ricevi notifiche prenotazione via SMS';
+  String get receiveBookingNotificationsViaSms => 'Ricevi notifiche prenotazione via SMS';
 
   @override
   String get changeRole => '[IT] changeRole (TRANSLATE)';
@@ -2434,8 +2249,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[IT] Opening customer portal... (Italian)';
+  String get openingCustomerPortal => '[IT] Opening customer portal... (Italian)';
 
   @override
   String get signOut => '[IT] Sign Out (Italian)';
@@ -2446,8 +2260,7 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'Schermata inserimento profilo business - Prossimamente';
+  String get businessProfileEntryScreenComingSoon => 'Schermata inserimento profilo business - Prossimamente';
 
   @override
   String get upgradeToBusiness => '[IT] Aggiorna a Business';
@@ -2473,15 +2286,13 @@ class AppLocalizationsIt extends AppLocalizations {
   String get deleteMyAccount => 'Elimina il mio account';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'Schermata inserimento appuntamenti business - Prossimamente';
+  String get businessAppointmentsEntryScreenComingSoon => 'Schermata inserimento appuntamenti business - Prossimamente';
 
   @override
   String get viewResponses => '[IT] Vedi risposte';
 
   @override
-  String get businessWelcomeScreenComingSoon =>
-      'Schermata di benvenuto business - Prossimamente';
+  String get businessWelcomeScreenComingSoon => 'Schermata di benvenuto business - Prossimamente';
 
   @override
   String failedToOpenCustomerPortalE(Object e) {
@@ -2504,8 +2315,7 @@ class AppLocalizationsIt extends AppLocalizations {
   String get approve => 'Approva';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'Nessuna fattura trovata. Crea la tua prima fattura!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'Nessuna fattura trovata. Crea la tua prima fattura!';
 
   @override
   String get subscribe => 'Iscriviti';

@@ -74,8 +74,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get search => '[LV] [LV] Search';
 
   @override
-  String get cancelInviteConfirmation =>
-      '[LV] [LV] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => '[LV] [LV] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -92,8 +91,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get playtimeLiveScheduled => '[LV] [LV] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation =>
-      '[LV] [LV] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => '[LV] [LV] Are you sure you want to revoke access?';
 
   @override
   String get download => '[LV] [LV] Download';
@@ -127,8 +125,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get playtimeModeVirtual => '[LV] [LV] Virtual Play';
 
   @override
-  String get playtimeDescription =>
-      '[LV] [LV] Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => '[LV] [LV] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => '[LV] [LV] Delete';
@@ -206,8 +203,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get cut => '[LV] [LV] Cut';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      '[LV] [LV] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => '[LV] [LV] Invite cancelled successfully';
 
   @override
   String get retry => '[LV] [LV] Retry';
@@ -287,8 +283,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get scheduleForLater => '[LV] Ieplānot vēlāk';
 
   @override
-  String get accessRevokedSuccessfully =>
-      '[LV] [LV] Access revoked successfully';
+  String get accessRevokedSuccessfully => '[LV] [LV] Access revoked successfully';
 
   @override
   String type(Object type) {
@@ -413,8 +408,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get dashboard => '[LV] [LV] Dashboard';
 
   @override
-  String get noPermissionForBroadcast =>
-      '[LV] [LV] No permission for broadcast';
+  String get noPermissionForBroadcast => '[LV] [LV] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[LV] Playtime Games – Admin';
@@ -491,8 +485,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get playtimeEnterGameName => '[LV] [LV] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[LV] Lūdzu, ielogojieties, lai piekļūtu ģimenes funkcijām';
+  String get pleaseLoginForFamilyFeatures => '[LV] Lūdzu, ielogojieties, lai piekļūtu ģimenes funkcijām';
 
   @override
   String get myInvites => '[LV] [LV] My Invites';
@@ -552,8 +545,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[LV] [LV] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[LV] [LV] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[LV] Admin Metrics';
@@ -574,52 +566,40 @@ class AppLocalizationsLv extends AppLocalizations {
   String get contentLibrary => '[LV] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[LV] No account found with this email address.';
+  String get authErrorUserNotFound => '[LV] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[LV] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[LV] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[LV] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[LV] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[LV] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[LV] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[LV] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[LV] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[LV] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[LV] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[LV] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[LV] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[LV] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[LV] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[LV] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[LV] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      '[LV] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential => '[LV] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[LV] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[LV] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[LV] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[LV] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -636,24 +616,19 @@ class AppLocalizationsLv extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[LV] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[LV] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[LV] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[LV] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode =>
-      '[LV] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode => '[LV] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[LV] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[LV] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode =>
-      '[LV] Please enter the verification code.';
+  String get authErrorMissingVerificationCode => '[LV] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[LV] Missing verification ID.';
@@ -665,56 +640,43 @@ class AppLocalizationsLv extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[LV] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[LV] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[LV] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[LV] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[LV] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[LV] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[LV] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired =>
-      '[LV] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired => '[LV] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound =>
-      '[LV] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound => '[LV] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession =>
-      '[LV] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession => '[LV] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession =>
-      '[LV] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession => '[LV] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      '[LV] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse => '[LV] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      '[LV] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded => '[LV] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[LV] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[LV] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      '[LV] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification => '[LV] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      '[LV] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists => '[LV] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[LV] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[LV] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[LV] The ID token is invalid.';
@@ -726,12 +688,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[LV] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[LV] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[LV] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[LV] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[LV] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[LV] Invalid custom claims provided.';
@@ -740,87 +700,70 @@ class AppLocalizationsLv extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[LV] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[LV] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[LV] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[LV] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[LV] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[LV] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      '[LV] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain => '[LV] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[LV] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[LV] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[LV] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[LV] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[LV] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[LV] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      '[LV] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength => '[LV] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[LV] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[LV] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[LV] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      '[LV] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization => '[LV] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[LV] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[LV] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      '[LV] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator => '[LV] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[LV] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[LV] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[LV] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[LV] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[LV] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[LV] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      '[LV] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration => '[LV] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[LV] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[LV] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[LV] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      '[LV] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded => '[LV] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[LV] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[LV] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[LV] Missing continue URL.';
@@ -835,8 +778,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get authErrorMissingUid => '[LV] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret =>
-      '[LV] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret => '[LV] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[LV] Firebase project not found.';
@@ -845,23 +787,19 @@ class AppLocalizationsLv extends AppLocalizations {
   String get authErrorReservedClaims => '[LV] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[LV] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[LV] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[LV] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[LV] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[LV] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      '[LV] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri => '[LV] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[LV] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[LV] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -910,8 +848,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      '[LV] Virtual session created! Inviting friends... (Latvian)';
+  String get virtualSessionCreatedInvitingFriends => '[LV] Virtual session created! Inviting friends... (Latvian)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -952,15 +889,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[LV] Subscription unavailable (Latvian)';
+  String get subscriptionUnavailable => '[LV] Subscription unavailable (Latvian)';
 
   @override
   String get confirmBooking => '[LV] Confirm Booking (Latvian)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[LV] Failed to update permission: \$e (Latvian)';
+  String get failedToUpdatePermissionE => '[LV] Failed to update permission: \$e (Latvian)';
 
   @override
   String get reject => '[LV] Reject (Latvian)';
@@ -988,8 +923,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get resolve => '[LV] Resolve (Latvian)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[LV] Error loading surveys: \$error (Latvian)';
+  String get errorLoadingSurveysError => '[LV] Error loading surveys: \$error (Latvian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -997,8 +931,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[LV] Get help with your account (Latvian)';
+  String get getHelpWithYourAccount => '[LV] Get help with your account (Latvian)';
 
   @override
   String get pay => '[LV] Pay (Latvian)';
@@ -1013,8 +946,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[LV] Changes saved successfully! (Latvian)';
+  String get changesSavedSuccessfully => '[LV] Changes saved successfully! (Latvian)';
 
   @override
   String get createNewInvoice => '[LV] Create New Invoice (Latvian)';
@@ -1034,8 +966,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get profileSaved => '[LV] Profile saved! (Latvian)';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1066,8 +997,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      '[LV] You will receive a confirmation email shortly. (Latvian)';
+  String get youWillReceiveAConfirmationEmailShortly => '[LV] You will receive a confirmation email shortly. (Latvian)';
 
   @override
   String get addQuestion => '[LV] Add Question (Latvian)';
@@ -1096,26 +1026,22 @@ class AppLocalizationsLv extends AppLocalizations {
   String get surveyManagement => '[LV] Survey Management (Latvian)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[LV] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[LV] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[LV] No rooms found. Add your first room! (Latvian)';
+  String get noRoomsFoundAddYourFirstRoom => '[LV] No rooms found. Add your first room! (Latvian)';
 
   @override
   String get readOurPrivacyPolicy => '[LV] Read our privacy policy (Latvian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[LV] Could not open privacy policy (Latvian)';
+  String get couldNotOpenPrivacyPolicy => '[LV] Could not open privacy policy (Latvian)';
 
   @override
   String get refresh1 => '[LV] Refresh (Latvian)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[LV] Room updated successfully! (Latvian)';
+  String get roomUpdatedSuccessfully => '[LV] Room updated successfully! (Latvian)';
 
   @override
   String get contentDetail => '[LV] Content Detail (Latvian)';
@@ -1124,8 +1050,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get cancelSubscription => '[LV] Cancel Subscription (Latvian)';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      '[LV] Successfully registered as Ambassador! (Latvian)';
+  String get successfullyRegisteredAsAmbassador => '[LV] Successfully registered as Ambassador! (Latvian)';
 
   @override
   String get save1 => '[LV] Save (Latvian)';
@@ -1134,8 +1059,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get copy1 => '[LV] Copy (Latvian)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[LV] Failed to send invitation: \$e (Latvian)';
+  String get failedToSendInvitationE => '[LV] Failed to send invitation: \$e (Latvian)';
 
   @override
   String get surveyScore => '[LV] Survey Score (Latvian)';
@@ -1152,20 +1076,16 @@ class AppLocalizationsLv extends AppLocalizations {
   String get responseDetail => '[LV] Response Detail (Latvian)';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[LV] Failed to start Pro subscription: \$e (Latvian)';
+  String get failedToStartProSubscriptionE => '[LV] Failed to start Pro subscription: \$e (Latvian)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      '[LV] Business Dashboard Entry Screen - Coming Soon (Latvian)';
+  String get businessDashboardEntryScreenComingSoon => '[LV] Business Dashboard Entry Screen - Coming Soon (Latvian)';
 
   @override
   String get contentFilter => '[LV] Content Filter (Latvian)';
@@ -1187,8 +1107,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      '[LV] Business CRM Entry Screen - Coming Soon (Latvian)';
+  String get businessCrmEntryScreenComingSoon => '[LV] Business CRM Entry Screen - Coming Soon (Latvian)';
 
   @override
   String get adminDashboard => '[LV] Admin Dashboard';
@@ -1199,16 +1118,13 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[LV] Error loading dashboard: \$error (Latvian)';
+  String get errorLoadingDashboardError => '[LV] Error loading dashboard: \$error (Latvian)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[LV] Game deleted successfully! (Latvian)';
+  String get gameDeletedSuccessfully => '[LV] Game deleted successfully! (Latvian)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[LV] View responses - Coming soon! (Latvian)';
+  String get viewResponsesComingSoon => '[LV] View responses - Coming soon! (Latvian)';
 
   @override
   String get deleteProvider => '[LV] Delete Provider';
@@ -1217,8 +1133,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get errorLoadingRewards => '[LV] Error loading rewards (Latvian)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[LV] Failed to delete account: \$e (Latvian)';
+  String get failedToDeleteAccountE => '[LV] Failed to delete account: \$e (Latvian)';
 
   @override
   String get invited1 => '[LV] Invited (Latvian)';
@@ -1233,8 +1148,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get noEvents => '[LV] No events (Latvian)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[LV] Game created successfully! (Latvian)';
+  String get gameCreatedSuccessfully => '[LV] Game created successfully! (Latvian)';
 
   @override
   String get add1 => '[LV] Add (Latvian)';
@@ -1254,12 +1168,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get clients => '[LV] Clients (Latvian)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[LV] No ambassador data available (Latvian)';
+  String get noAmbassadorDataAvailable => '[LV] No ambassador data available (Latvian)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[LV] Background deleted successfully! (Latvian)';
+  String get backgroundDeletedSuccessfully => '[LV] Background deleted successfully! (Latvian)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1267,8 +1179,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[LV] No analytics data available yet. (Latvian)';
+  String get noAnalyticsDataAvailableYet => '[LV] No analytics data available yet. (Latvian)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1276,8 +1187,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      '[LV] Business Phone Booking Entry Screen - Coming Soon (Latvian)';
+  String get businessPhoneBookingEntryScreenComingSoon => '[LV] Business Phone Booking Entry Screen - Coming Soon (Latvian)';
 
   @override
   String get verification => '[LV] Verification (Latvian)';
@@ -1324,8 +1234,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get businessProfile => '[LV] Business Profile (Latvian)';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      '[LV] Business Booking Entry Screen - Coming Soon (Latvian)';
+  String get businessBookingEntryScreenComingSoon => '[LV] Business Booking Entry Screen - Coming Soon (Latvian)';
 
   @override
   String get createNewSurvey => '[LV] Create New Survey (Latvian)';
@@ -1349,8 +1258,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get loginFailedE => '[LV] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[LV] Invitation sent successfully! (Latvian)';
+  String get invitationSentSuccessfully => '[LV] Invitation sent successfully! (Latvian)';
 
   @override
   String get registering => '[LV] Registering... (Latvian)';
@@ -1364,16 +1272,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get home1 => '[LV] Home (Latvian)';
 
   @override
-  String get errorSavingSettingsE =>
-      '[LV] Error saving settings: \$e (Latvian)';
+  String get errorSavingSettingsE => '[LV] Error saving settings: \$e (Latvian)';
 
   @override
-  String get appVersionAndInformation =>
-      '[LV] App version and information (Latvian)';
+  String get appVersionAndInformation => '[LV] App version and information (Latvian)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      '[LV] Business Subscription Entry Screen - Coming Soon (Latvian)';
+  String get businessSubscriptionEntryScreenComingSoon => '[LV] Business Subscription Entry Screen - Coming Soon (Latvian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1381,8 +1286,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      '[LV] Your payment has been processed successfully. (Latvian)';
+  String get yourPaymentHasBeenProcessedSuccessfully => '[LV] Your payment has been processed successfully. (Latvian)';
 
   @override
   String get errorE => '[LV] Error: \$e (Latvian)';
@@ -1391,8 +1295,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get viewAll1 => '[LV] View All (Latvian)';
 
   @override
-  String get editSurveyComingSoon =>
-      '[LV] Edit survey - Coming soon! (Latvian)';
+  String get editSurveyComingSoon => '[LV] Edit survey - Coming soon! (Latvian)';
 
   @override
   String get enterOtp => '[LV] Enter OTP (Latvian)';
@@ -1401,8 +1304,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get payment => '[LV] Payment (Latvian)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      '[LV] Automatically confirm new booking requests (Latvian)';
+  String get automaticallyConfirmNewBookingRequests => '[LV] Automatically confirm new booking requests (Latvian)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1415,8 +1317,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[LV] Please sign in to upload a background (Latvian)';
+  String get pleaseSignInToUploadABackground => '[LV] Please sign in to upload a background (Latvian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1433,22 +1334,19 @@ class AppLocalizationsLv extends AppLocalizations {
   String get autoconfirmBookings => '[LV] Auto-Confirm Bookings (Latvian)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      '[LV] Redirecting to Stripe checkout for Pro plan... (Latvian)';
+  String get redirectingToStripeCheckoutForProPlan => '[LV] Redirecting to Stripe checkout for Pro plan... (Latvian)';
 
   @override
   String get exportAsCsv => '[LV] Export as CSV (Latvian)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[LV] Delete functionality coming soon! (Latvian)';
+  String get deleteFunctionalityComingSoon => '[LV] Delete functionality coming soon! (Latvian)';
 
   @override
   String get editClient => '[LV] Edit Client (Latvian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      '[LV] Are you sure you want to delete this message? (Latvian)';
+  String get areYouSureYouWantToDeleteThisMessage => '[LV] Are you sure you want to delete this message? (Latvian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1459,39 +1357,31 @@ class AppLocalizationsLv extends AppLocalizations {
   String get notAuthenticated => '[LV] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[LV] Privacy request sent to your parents! (Latvian)';
+  String get privacyRequestSentToYourParents => '[LV] Privacy request sent to your parents! (Latvian)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[LV] Client deleted successfully! (Latvian)';
+  String get clientDeletedSuccessfully => '[LV] Client deleted successfully! (Latvian)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[LV] Failed to cancel subscription (Latvian)';
+  String get failedToCancelSubscription => '[LV] Failed to cancel subscription (Latvian)';
 
   @override
   String get allLanguages => '[LV] All Languages (Latvian)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[LV] Slot deleted successfully (Latvian)';
+  String get slotDeletedSuccessfully => '[LV] Slot deleted successfully (Latvian)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      '[LV] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => '[LV] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      '[LV] Parents must approve before children can join (Latvian)';
+  String get parentsMustApproveBeforeChildrenCanJoin => '[LV] Parents must approve before children can join (Latvian)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[LV] Subscribe to Pro (€14.99/mo) (Latvian)';
+  String get subscribeToPro1499mo => '[LV] Subscribe to Pro (€14.99/mo) (Latvian)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      '[LV] Business Availability Entry Screen - Coming Soon (Latvian)';
+  String get businessAvailabilityEntryScreenComingSoon => '[LV] Business Availability Entry Screen - Coming Soon (Latvian)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1505,8 +1395,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get submitBooking => '[LV] Submit Booking (Latvian)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      '[LV] Are you sure you want to cancel this appointment? (Latvian)';
+  String get areYouSureYouWantToCancelThisAppointment => '[LV] Are you sure you want to cancel this appointment? (Latvian)';
 
   @override
   String get noUpcomingBookings => '[LV] No upcoming bookings (Latvian)';
@@ -1524,8 +1413,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get goToDashboard => '[LV] Go to Dashboard (Latvian)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[LV] Ambassador Quota Dashboard (Latvian)';
+  String get ambassadorQuotaDashboard => '[LV] Ambassador Quota Dashboard (Latvian)';
 
   @override
   String get adminSettings => '[LV] Admin Settings';
@@ -1563,8 +1451,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[LV] Client added successfully! (Latvian)';
+  String get clientAddedSuccessfully => '[LV] Client added successfully! (Latvian)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1582,8 +1469,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get bookAppointment => '[LV] Book Appointment (Latvian)';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[LV] Delete (Latvian)';
@@ -1598,15 +1484,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get manageSubscription => '[LV] Manage Subscription (Latvian)';
 
   @override
-  String get requiresInstallFallback =>
-      '[LV] Requires Install Fallback (Latvian)';
+  String get requiresInstallFallback => '[LV] Requires Install Fallback (Latvian)';
 
   @override
   String get paymentConfirmation => '[LV] Payment Confirmation (Latvian)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[LV] Promo applied! Your next bill is free. (Latvian)';
+  String get promoAppliedYourNextBillIsFree => '[LV] Promo applied! Your next bill is free. (Latvian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1617,16 +1501,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get errorLoadingSlots => '[LV] Error loading slots (Latvian)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      '[LV] Allow other users to find and join this game (Latvian)';
+  String get allowOtherUsersToFindAndJoinThisGame => '[LV] Allow other users to find and join this game (Latvian)';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      '[LV] Business Onboarding Screen - Coming Soon (Latvian)';
+  String get businessOnboardingScreenComingSoon => '[LV] Business Onboarding Screen - Coming Soon (Latvian)';
 
   @override
-  String get activateBusinessProfile =>
-      '[LV] Activate Business Profile (Latvian)';
+  String get activateBusinessProfile => '[LV] Activate Business Profile (Latvian)';
 
   @override
   String get contentNotFound => '[LV] Content not found (Latvian)';
@@ -1668,8 +1549,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get shareLink => '[LV] Share Link (Latvian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      '[LV] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => '[LV] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[LV] Delete Appointment (Latvian)';
@@ -1689,12 +1569,10 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[LV] Update your business information (Latvian)';
+  String get updateYourBusinessInformation => '[LV] Update your business information (Latvian)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      '[LV] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => '[LV] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[LV] Parent Dashboard (Latvian)';
@@ -1717,12 +1595,10 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      '[LV] Studio booking is only available on web (Latvian)';
+  String get studioBookingIsOnlyAvailableOnWeb => '[LV] Studio booking is only available on web (Latvian)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[LV] Error loading branches: \$e (Latvian)';
+  String get errorLoadingBranchesE => '[LV] Error loading branches: \$e (Latvian)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1738,15 +1614,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get none => '[LV] None (Latvian)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[LV] Failed to update consent: \$e (Latvian)';
+  String get failedToUpdateConsentE => '[LV] Failed to update consent: \$e (Latvian)';
 
   @override
   String get welcome1 => '[LV] Welcome (Latvian)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[LV] Failed to create session: \$e (Latvian)';
+  String get failedToCreateSessionE => '[LV] Failed to create session: \$e (Latvian)';
 
   @override
   String get inviteContact => '[LV] Invite Contact (Latvian)';
@@ -1755,8 +1629,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get surveyEditor => '[LV] Survey Editor (Latvian)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[LV] Failed to start Basic subscription: \$e (Latvian)';
+  String get failedToStartBasicSubscriptionE => '[LV] Failed to start Basic subscription: \$e (Latvian)';
 
   @override
   String get mySchedule => '[LV] My Schedule (Latvian)';
@@ -1776,12 +1649,10 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[LV] Settings saved successfully! (Latvian)';
+  String get settingsSavedSuccessfully => '[LV] Settings saved successfully! (Latvian)';
 
   @override
-  String get linkCopiedToClipboard =>
-      '[LV] Link copied to clipboard! (Latvian)';
+  String get linkCopiedToClipboard => '[LV] Link copied to clipboard! (Latvian)';
 
   @override
   String get accept1 => '[LV] Accept (Latvian)';
@@ -1798,8 +1669,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[LV] Room deleted successfully! (Latvian)';
+  String get roomDeletedSuccessfully => '[LV] Room deleted successfully! (Latvian)';
 
   @override
   String get businessCalendar => '[LV] Business Calendar (Latvian)';
@@ -1864,8 +1734,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get cancel1 => '[LV] Cancel (Latvian)';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      '[LV] Subscription activated successfully! (Latvian)';
+  String get subscriptionActivatedSuccessfully => '[LV] Subscription activated successfully! (Latvian)';
 
   @override
   String activityLogaction(Object action) {
@@ -1876,8 +1745,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get broadcast => '[LV] Broadcast (Latvian)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[LV] No events scheduled this week (Latvian)';
+  String get noEventsScheduledThisWeek => '[LV] No events scheduled this week (Latvian)';
 
   @override
   String get googleCalendar => '[LV] Google Calendar (Latvian)';
@@ -1889,8 +1757,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get childDashboard => '[LV] Child Dashboard (Latvian)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[LV] Failed to upload background: \$e (Latvian)';
+  String get failedToUploadBackgroundE => '[LV] Failed to upload background: \$e (Latvian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1909,8 +1776,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get noAppointments => '[LV] No appointments (Latvian)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[LV] • Unlimited bookings per week (Latvian)';
+  String get unlimitedBookingsPerWeek => '[LV] • Unlimited bookings per week (Latvian)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1918,19 +1784,16 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[LV] Scheduled at: \$scheduledAt (Latvian)';
+  String get scheduledAtScheduledat => '[LV] Scheduled at: \$scheduledAt (Latvian)';
 
   @override
   String get selectStaff => '[LV] Select Staff (Latvian)';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      '[LV] Subscription cancelled successfully (Latvian)';
+  String get subscriptionCancelledSuccessfully => '[LV] Subscription cancelled successfully (Latvian)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[LV] Cancel Appointment (Latvian)';
@@ -1944,8 +1807,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get businessSignup => '[LV] Business Signup (Latvian)';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      '[LV] Business Completion Screen - Coming Soon (Latvian)';
+  String get businessCompletionScreenComingSoon => '[LV] Business Completion Screen - Coming Soon (Latvian)';
 
   @override
   String get createGame1 => '[LV] Create Game (Latvian)';
@@ -1956,12 +1818,10 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode =>
-      '[LV] Please enter a promo code (Latvian)';
+  String get pleaseEnterAPromoCode => '[LV] Please enter a promo code (Latvian)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[LV] Error loading availability: \$e (Latvian)';
+  String get errorLoadingAvailabilityE => '[LV] Error loading availability: \$e (Latvian)';
 
   @override
   String get parentalControls => '[LV] Parental Controls (Latvian)';
@@ -1970,15 +1830,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[LV] Child linked successfully! (Latvian)';
+  String get childLinkedSuccessfully => '[LV] Child linked successfully! (Latvian)';
 
   @override
   String get create => '[LV] Create (Latvian)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[LV] No external meetings found. (Latvian)';
+  String get noExternalMeetingsFound => '[LV] No external meetings found. (Latvian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1986,15 +1844,13 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[LV] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[LV] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[LV] Scheduler Screen (Latvian)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[LV] Client updated successfully! (Latvian)';
+  String get clientUpdatedSuccessfully => '[LV] Client updated successfully! (Latvian)';
 
   @override
   String get surveyResponses => '[LV] Survey Responses (Latvian)';
@@ -2020,12 +1876,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get errorLoadingEvents => '[LV] Error loading events (Latvian)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[LV] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[LV] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[LV] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[LV] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[LV] Success (Latvian)';
@@ -2044,12 +1898,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get readWrite => '[LV] Read & Write (Latvian)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      '[LV] Redirecting to Stripe checkout for Basic plan... (Latvian)';
+  String get redirectingToStripeCheckoutForBasicPlan => '[LV] Redirecting to Stripe checkout for Basic plan... (Latvian)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[LV] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[LV] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[LV] Pick Date (Latvian)';
@@ -2085,12 +1937,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get businessLogin => '[LV] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[LV] Invoice created successfully! (Latvian)';
+  String get invoiceCreatedSuccessfully => '[LV] Invoice created successfully! (Latvian)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[LV] No time series data available (Latvian)';
+  String get noTimeSeriesDataAvailable => '[LV] No time series data available (Latvian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2103,8 +1953,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[LV] Failed to send privacy request: \$e (Latvian)';
+  String get failedToSendPrivacyRequestE => '[LV] Failed to send privacy request: \$e (Latvian)';
 
   @override
   String get chooseYourPlan => '[LV] Choose Your Plan (Latvian)';
@@ -2119,15 +1968,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get eventCreated => '[LV] Event created (Latvian)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[LV] Subscribe to Basic (€4.99/mo) (Latvian)';
+  String get subscribeToBasic499mo => '[LV] Subscribe to Basic (€4.99/mo) (Latvian)';
 
   @override
   String get completion => '[LV] Completion (Latvian)';
 
   @override
-  String get supportTicketSubmitted =>
-      '[LV] Support ticket submitted (Latvian)';
+  String get supportTicketSubmitted => '[LV] Support ticket submitted (Latvian)';
 
   @override
   String get monetizationSettings => '[LV] Monetization Settings (Latvian)';
@@ -2142,12 +1989,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get deleteSurvey => '[LV] Delete Survey (Latvian)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[LV] Game approved successfully! (Latvian)';
+  String get gameApprovedSuccessfully => '[LV] Game approved successfully! (Latvian)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[LV] Error loading permissions: \$error (Latvian)';
+  String get errorLoadingPermissionsError => '[LV] Error loading permissions: \$error (Latvian)';
 
   @override
   String get referrals => '[LV] Referrals (Latvian)';
@@ -2189,8 +2034,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get organizations => '[LV] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[LV] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[LV] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[LV] Create New Game (Latvian)';
@@ -2199,12 +2043,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get next1 => '[LV] Next (Latvian)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[LV] Background uploaded successfully! (Latvian)';
+  String get backgroundUploadedSuccessfully => '[LV] Background uploaded successfully! (Latvian)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[LV] No appointment requests found. (Latvian)';
+  String get noAppointmentRequestsFound => '[LV] No appointment requests found. (Latvian)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2231,8 +2073,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[LV] Failed to create game: \$e (Latvian)';
@@ -2241,8 +2082,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get noChartDataAvailable => '[LV] No chart data available (Latvian)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[LV] • Phone-based booking system (Latvian)';
+  String get phonebasedBookingSystem => '[LV] • Phone-based booking system (Latvian)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2251,8 +2091,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get invoices => '[LV] Invoices (Latvian)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2279,12 +2118,10 @@ class AppLocalizationsLv extends AppLocalizations {
   String get iDoNotConsent => '[LV] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      '[LV] No clients found. Add your first client! (Latvian)';
+  String get noClientsFoundAddYourFirstClient => '[LV] No clients found. Add your first client! (Latvian)';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      '[LV] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => '[LV] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[LV] Group: \$groupId';
@@ -2307,8 +2144,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[LV] • CRM dashboard with analytics (Latvian)';
+  String get crmDashboardWithAnalytics => '[LV] • CRM dashboard with analytics (Latvian)';
 
   @override
   String get contentLibrary1 => '[LV] Content Library (Latvian)';
@@ -2320,30 +2156,25 @@ class AppLocalizationsLv extends AppLocalizations {
   String get subscriptionManagement => '[LV] Subscription Management (Latvian)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      '[LV] Monetization settings will be implemented here (Latvian)';
+  String get monetizationSettingsWillBeImplementedHere => '[LV] Monetization settings will be implemented here (Latvian)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[LV] Failed to apply promo code: \$e (Latvian)';
+  String get failedToApplyPromoCodeE => '[LV] Failed to apply promo code: \$e (Latvian)';
 
   @override
   String get editProvider => '[LV] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[LV] Localization Contribution (Latvian)';
+  String get localizationContribution => '[LV] Localization Contribution (Latvian)';
 
   @override
   String get parentalConsent => '[LV] Parental Consent (Latvian)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[LV] Business Signup Screen - Coming Soon (Latvian)';
+  String get businessSignupScreenComingSoon => '[LV] Business Signup Screen - Coming Soon (Latvian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      '[LV] Are you sure you want to delete this appointment? (Latvian)';
+  String get areYouSureYouWantToDeleteThisAppointment => '[LV] Are you sure you want to delete this appointment? (Latvian)';
 
   @override
   String get syncAppointment => '[LV] Sync Appointment (Latvian)';
@@ -2355,15 +2186,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[LV] Business Setup Screen - Coming Soon (Latvian)';
+  String get businessSetupScreenComingSoon => '[LV] Business Setup Screen - Coming Soon (Latvian)';
 
   @override
   String get edit1 => '[LV] Edit (Latvian)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[LV] No events scheduled this month (Latvian)';
+  String get noEventsScheduledThisMonth => '[LV] No events scheduled this month (Latvian)';
 
   @override
   String get businessDashboard => '[LV] Business Dashboard (Latvian)';
@@ -2377,8 +2206,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[LV] Manage Staff Availability (Latvian)';
+  String get manageStaffAvailability => '[LV] Manage Staff Availability (Latvian)';
 
   @override
   String get noMissingTranslations => '[LV] No missing translations (Latvian)';
@@ -2395,8 +2223,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get noUsers => '[LV] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[LV] Error loading referral code (Latvian)';
+  String get errorLoadingReferralCode => '[LV] Error loading referral code (Latvian)';
 
   @override
   String get allCountries => '[LV] All Countries (Latvian)';
@@ -2411,8 +2238,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get deleteMessage => '[LV] Delete Message (Latvian)';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[LV] changeRole (TRANSLATE)';
@@ -2423,8 +2249,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[LV] Opening customer portal... (Latvian)';
+  String get openingCustomerPortal => '[LV] Opening customer portal... (Latvian)';
 
   @override
   String get signOut => '[LV] Sign Out (Latvian)';
@@ -2435,8 +2260,7 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[LV] Upgrade to Business (Latvian)';
@@ -2462,8 +2286,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[LV] View Responses (Latvian)';
@@ -2492,8 +2315,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
