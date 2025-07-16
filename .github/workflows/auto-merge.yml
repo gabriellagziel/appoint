@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
   workflow_run:
-    workflows: ["Main CI/CD Pipeline"]
+    workflows: ["DigitalOcean CI Pipeline"]
     types: [completed]
 
 jobs:
@@ -50,7 +50,7 @@ jobs:
         uses: lewagon/wait-on-check-action@v1.3.1
         with:
           ref: ${{ github.head_ref }}
-          check-name: 'Main CI/CD Pipeline'
+          check-name: 'DigitalOcean CI Pipeline'
           wait-interval: 10
           
       - name: Get CI results
@@ -58,7 +58,7 @@ jobs:
         run: |
           # Get the latest workflow run for this PR
           WORKFLOW_RUN=$(gh api repos/${{ github.repository }}/actions/runs \
-            --jq '.workflow_runs[] | select(.head_branch == "${{ github.head_ref }}" and .name == "Main CI/CD Pipeline") | .id' | head -1)
+            --jq '.workflow_runs[] | select(.head_branch == "${{ github.head_ref }}" and .name == "DigitalOcean CI Pipeline") | .id' | head -1)
           
           if [ -n "$WORKFLOW_RUN" ]; then
             # Get test results
