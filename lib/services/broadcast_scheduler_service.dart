@@ -77,7 +77,7 @@ class BroadcastSchedulerService {
 final REDACTED_TOKEN = Provider<BroadcastSchedulerService>(
   (ref) {
     final service = BroadcastSchedulerService.instance;
-    final broadcastService = ref.read(broadcastServiceProvider);
+    final broadcastService = ref.read(adminBroadcastServiceProvider);
     service.initialize(broadcastService);
     return service;
   },
