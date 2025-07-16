@@ -1,0 +1,148 @@
+name: CI Watchdog
+
+on:
+  workflow_run:
+    workflows: ["Main CI/CD Pipeline"]
+    types: [in_progress, completed]
+  schedule:
+    # Check every 5 minutes
+    - cron: '*/5 * * * *'
+
+jobs:
+  # Monitor CI jobs for loops and hangs
+  monitor-ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check for stuck workflows
+        id: check-stuck
+        run: |
+          echo "🔍 Checking for stuck CI workflows..."
+          
+          # Get all running workflows
+          RUNNING_WORKFLOWS=$(gh api repos/${{ github.repository }}/actions/runs \
+            --jq '.workflow_runs[] | select(.status == "in_progress") | {id: .id, name: .name, created_at: .created_at, updated_at: .updated_at}')
+          
+          if [ -n "$RUNNING_WORKFLOWS" ]; then
+            echo "$RUNNING_WORKFLOWS" | jq -c '.' | while read -r workflow; do
+              WORKFLOW_ID=$(echo "$workflow" | jq -r '.id')
+              WORKFLOW_NAME=$(echo "$workflow" | jq -r '.name')
+              CREATED_AT=$(echo "$workflow" | jq -r '.created_at')
+              UPDATED_AT=$(echo "$workflow" | jq -r '.updated_at')
+              
+              # Calculate duration in minutes
+              CREATED_EPOCH=$(date -d "$CREATED_AT" +%s)
+              UPDATED_EPOCH=$(date -d "$UPDATED_AT" +%s)
+              DURATION_MINUTES=$(( (UPDATED_EPOCH - CREATED_EPOCH) / 60 ))
+              
+              echo "📊 Workflow $WORKFLOW_ID ($WORKFLOW_NAME) running for $DURATION_MINUTES minutes"
+              
+              # Check if workflow has been running too long (>30 minutes)
+              if [ $DURATION_MINUTES -gt 30 ]; then
+                echo "⚠️ Workflow $WORKFLOW_ID has been running for $DURATION_MINUTES minutes (>30 min threshold)"
+                echo "stuck_workflow_id=$WORKFLOW_ID" >> $GITHUB_OUTPUT
+                echo "stuck_duration=$DURATION_MINUTES" >> $GITHUB_OUTPUT
+              fi
+            done
+          else
+            echo "✅ No stuck workflows found"
+          fi
+          
+      - name: Check for repeated steps
+        id: check-repeated
+        run: |
+          echo "🔍 Checking for repeated CI steps..."
+          
+          # Get recent workflow runs
+          RECENT_WORKFLOWS=$(gh api repos/${{ github.repository }}/actions/runs \
+            --jq '.workflow_runs[] | select(.created_at > "'$(date -d '1 hour ago' -Iseconds)'") | .id')
+          
+          echo "$RECENT_WORKFLOWS" | while read -r workflow_id; do
+            if [ -n "$workflow_id" ]; then
+              # Get jobs for this workflow
+              JOBS=$(gh api repos/${{ github.repository }}/actions/runs/$workflow_id/jobs \
+                --jq '.jobs[] | {name: .name, steps: [.steps[] | {name: .name, status: .conclusion, number: .number}]}')
+              
+              echo "$JOBS" | jq -c '.' | while read -r job; do
+                JOB_NAME=$(echo "$job" | jq -r '.name')
+                
+                # Count repeated steps
+                STEP_COUNTS=$(echo "$job" | jq -r '.steps[].name' | sort | uniq -c)
+                
+                echo "$STEP_COUNTS" | while read -r count step_name; do
+                  if [ "$count" -gt 3 ]; then
+                    echo "⚠️ Job '$JOB_NAME' has repeated step '$step_name' $count times (>3 threshold)"
+                    echo "repeated_workflow_id=$workflow_id" >> $GITHUB_OUTPUT
+                    echo "repeated_job_name=$JOB_NAME" >> $GITHUB_OUTPUT
+                    echo "repeated_step_name=$step_name" >> $GITHUB_OUTPUT
+                    echo "repeated_count=$count" >> $GITHUB_OUTPUT
+                  fi
+                done
+              done
+            fi
+          done
+          
+      - name: Handle stuck workflows
+        if: steps.check-stuck.outputs.stuck_workflow_id != ''
+        run: |
+          WORKFLOW_ID=${{ steps.check-stuck.outputs.stuck_workflow_id }}
+          DURATION=${{ steps.check-stuck.outputs.stuck_duration }}
+          
+          echo "🚨 Cancelling stuck workflow $WORKFLOW_ID (running for $DURATION minutes)"
+          
+          # Cancel the workflow
+          gh api repos/${{ github.repository }}/actions/runs/$WORKFLOW_ID/cancel -X POST
+          
+          # Send notification
+          echo "❌ Workflow $WORKFLOW_ID was cancelled due to timeout ($DURATION minutes)"
+          
+      - name: Handle repeated steps
+        if: steps.check-repeated.outputs.repeated_workflow_id != ''
+        run: |
+          WORKFLOW_ID=${{ steps.check-repeated.outputs.repeated_workflow_id }}
+          JOB_NAME=${{ steps.check-repeated.outputs.repeated_job_name }}
+          STEP_NAME=${{ steps.check-repeated.outputs.repeated_step_name }}
+          COUNT=${{ steps.check-repeated.outputs.repeated_count }}
+          
+          echo "🚨 Cancelling workflow with repeated steps"
+          echo "Workflow: $WORKFLOW_ID"
+          echo "Job: $JOB_NAME"
+          echo "Step: $STEP_NAME (repeated $COUNT times)"
+          
+          # Cancel the workflow
+          gh api repos/${{ github.repository }}/actions/runs/$WORKFLOW_ID/cancel -X POST
+          
+          # Send notification
+          echo "❌ Workflow $WORKFLOW_ID was cancelled due to repeated steps"
+          
+      - name: Send notifications
+        if: always() && (steps.check-stuck.outputs.stuck_workflow_id != '' || steps.check-repeated.outputs.repeated_workflow_id != '')
+        run: |
+          # Create notification message
+          NOTIFICATION="🚨 **CI Watchdog Alert**
+          
+          A CI workflow was cancelled due to infrastructure issues:
+          
+          "
+          
+          if [ "${{ steps.check-stuck.outputs.stuck_workflow_id }}" != "" ]; then
+            NOTIFICATION="$NOTIFICATION
+          ⏱️ **Timeout**: Workflow ${{ steps.check-stuck.outputs.stuck_workflow_id }} was running for ${{ steps.check-stuck.outputs.stuck_duration }} minutes
+          "
+          fi
+          
+          if [ "${{ steps.check-repeated.outputs.repeated_workflow_id }}" != "" ]; then
+            NOTIFICATION="$NOTIFICATION
+          🔄 **Repeated Steps**: Workflow ${{ steps.check-repeated.outputs.repeated_workflow_id }} had step '${{ steps.check-repeated.outputs.repeated_step_name }}' repeated ${{ steps.check-repeated.outputs.repeated_count }} times
+          "
+          fi
+          
+          NOTIFICATION="$NOTIFICATION
+          
+          The workflow has been automatically cancelled to prevent resource waste.
+          
+          ---
+          *This is an automated message from the CI Watchdog.*"
+          
+          # Send to a designated channel or issue
+          echo "$NOTIFICATION"
