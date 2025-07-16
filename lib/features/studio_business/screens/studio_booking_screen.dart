@@ -1,4 +1,5 @@
 import 'package:appoint/features/studio_business/models/staff_profile.dart';
+import 'package:appoint/features/studio_business/models/business_profile.dart';
 import 'package:appoint/features/studio_business/providers/booking_provider.dart';
 import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
 import 'package:appoint/features/studio_business/providers/weekly_usage_provider.dart';
@@ -19,12 +20,21 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   String? selectedTimeSlot;
   StaffProfile? selectedStaff;
   bool isConfirming = false;
-  _formKey = GlobalKey<FormState>();
-  _nameController = TextEditingController();
-  _phoneController = TextEditingController();
-  _dateController = TextEditingController();
-  _timeController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final _nameController = TextEditingController();
+  final _phoneController = TextEditingController();
+  final _dateController = TextEditingController();
+  final _timeController = TextEditingController();
   bool _isProcessing = false;
+
+  @override
+  void dispose() {
+    _nameController.dispose();
+    _phoneController.dispose();
+    _dateController.dispose();
+    _timeController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +47,8 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
       );
     }
 
-    profileAsync = ref.watch(businessProfileProvider);
+    final profileAsync = ref.watch(businessProfileProvider);
+    final bookingAsync = ref.watch(bookingProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Studio Booking')),
@@ -148,11 +159,45 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                     ),
                     const SizedBox(height: 24),
 
+                    // Show booking state
+                    bookingAsync.when(
+                      data: (booking) => const SizedBox.shrink(),
+                      loading: () => const Center(
+                        child: Padding(
+                          padding: EdgeInsets.all(16.0),
+                          child: CircularProgressIndicator(),
+                        ),
+                      ),
+                      error: (error, stack) => Container(
+                        padding: const EdgeInsets.all(16),
+                        margin: const EdgeInsets.only(bottom: 16),
+                        decoration: BoxDecoration(
+                          color: Colors.red.shade50,
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(color: Colors.red.shade200),
+                        ),
+                        child: Row(
+                          children: [
+                            Icon(Icons.error, color: Colors.red.shade600),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: Text(
+                                'Error: ${error.toString()}',
+                                style: TextStyle(color: Colors.red.shade700),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: _isProcessing ? null : _processBooking,
-                        child: _isProcessing
+                        onPressed: _isProcessing || bookingAsync.isLoading 
+                            ? null 
+                            : _processBooking,
+                        child: _isProcessing || bookingAsync.isLoading
                             ? const CircularProgressIndicator()
                             : const Text('Send Booking Invite'),
                       ),
@@ -172,21 +217,21 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
 
       try {
         // Check weekly usage for upgrade modal
-        weeklyUsage = ref.read(weeklyUsageProvider.notifier);
+        final weeklyUsage = ref.read(weeklyUsageProvider.notifier);
         if (weeklyUsage.shouldShowUpgradeModal) {
           _showUpgradeModal(weeklyUsage.upgradeCode);
           return;
         }
 
-        // Create booking
-        bookingNotifier = ref.read(bookingProvider.notifier);
-        await bookingNotifier.createBooking(
-          staffProfileId: selectedStaff!.id,
-          businessProfileId: 'business1', // This should come from the profile
-          date: selectedDate!,
-          startTime: selectedTimeSlot!,
-          endTime: _getEndTime(selectedTimeSlot!),
-          cost: selectedStaff!.hourlyRate,
+        // Create booking using submitBooking method
+        final bookingNotifier = ref.read(bookingProvider.notifier);
+        await bookingNotifier.submitBooking(
+          staffProfileId: selectedStaff?.id ?? 'default-staff-id',
+          businessProfileId: profileAsync.id ?? 'business1',
+          date: selectedDate ?? DateTime.now(),
+          startTime: selectedTimeSlot ?? '09:00',
+          endTime: _getEndTime(selectedTimeSlot ?? '09:00'),
+          cost: selectedStaff?.hourlyRate ?? 50.0,
         );
 
         // Increment weekly usage
@@ -215,12 +260,12 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   }
 
   String _getEndTime(String startTime) {
-    parts = startTime.split(':');
-    hour = int.parse(parts[0]);
-    minute = int.parse(parts[1]);
+    final parts = startTime.split(':');
+    final hour = int.parse(parts[0]);
+    final minute = int.parse(parts[1]);
 
     final endMinute = minute + 30;
-    endHour = hour + (endMinute >= 60 ? 1 : 0);
+    final endHour = hour + (endMinute >= 60 ? 1 : 0);
     final finalMinute = endMinute >= 60 ? endMinute - 60 : endMinute;
 
     return '${endHour.toString().padLeft(2, '0')}:${finalMinute.toString().padLeft(2, '0')}';
@@ -256,11 +301,33 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   }
 
   void _selectDate(BuildContext context) {
-    // Implementation of _selectDate method
+    showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime.now(),
+      lastDate: DateTime.now().add(const Duration(days: 365)),
+    ).then((date) {
+      if (date != null) {
+        setState(() {
+          selectedDate = date;
+          _dateController.text = '${date.day}/${date.month}/${date.year}';
+        });
+      }
+    });
   }
 
   void _selectTime(BuildContext context) {
-    // Implementation of _selectTime method
+    showTimePicker(
+      context: context,
+      initialTime: const TimeOfDay(hour: 9, minute: 0),
+    ).then((time) {
+      if (time != null) {
+        setState(() {
+          selectedTimeSlot = '${time.hour.toString().padLeft(2, '0')}:${time.minute.toString().padLeft(2, '0')}';
+          _timeController.text = time.format(context);
+        });
+      }
+    });
   }
 }
 
