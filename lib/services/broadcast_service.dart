@@ -242,6 +242,114 @@ class BroadcastService {
       throw Exception('Failed to delete broadcast message: $e');
     }
   }
+
+  // Get messages for a specific user based on targeting filters
+  Future<List<AdminBroadcastMessage>> getMessagesForUser(UserProfile user) async {
+    try {
+      // Get all broadcast messages
+      final allMessages = await _broadcastsCollection
+          .where('status', isEqualTo: BroadcastMessageStatus.sent.name)
+          .orderBy('createdAt', descending: true)
+          .get();
+
+      final List<AdminBroadcastMessage> userMessages = [];
+
+      for (final doc in allMessages.docs) {
+        final message = AdminBroadcastMessage.fromJson({
+          'id': doc.id,
+          ...doc.data(),
+        });
+
+        // Check if user matches the targeting filters
+        if (await _userMatchesFilters(user, message.targetingFilters)) {
+          userMessages.add(message);
+        }
+      }
+
+      return userMessages;
+    } catch (e) {
+      throw Exception('Failed to get messages for user: $e');
+    }
+  }
+
+  // Check if a user matches the targeting filters
+  Future<bool> _userMatchesFilters(UserProfile user, BroadcastTargetingFilters filters) async {
+    // If no filters are set, message goes to all users
+    if (filters.countries == null &&
+        filters.cities == null &&
+        filters.subscriptionTiers == null &&
+        filters.userRoles == null &&
+        filters.accountStatuses == null &&
+        filters.joinedAfter == null &&
+        filters.joinedBefore == null) {
+      return true;
+    }
+
+    // Get user's complete data from Firestore
+    final userDoc = await _usersCollection.doc(user.id).get();
+    if (!userDoc.exists) {
+      return false;
+    }
+
+    final userData = userDoc.data()!;
+
+    // Check country filter
+    if (filters.countries != null && filters.countries!.isNotEmpty) {
+      final userCountry = userData['country'] as String?;
+      if (userCountry == null || !filters.countries!.contains(userCountry)) {
+        return false;
+      }
+    }
+
+    // Check city filter
+    if (filters.cities != null && filters.cities!.isNotEmpty) {
+      final userCity = userData['city'] as String?;
+      if (userCity == null || !filters.cities!.contains(userCity)) {
+        return false;
+      }
+    }
+
+    // Check subscription tier filter
+    if (filters.subscriptionTiers != null && filters.subscriptionTiers!.isNotEmpty) {
+      final userSubscriptionTier = userData['subscriptionTier'] as String?;
+      if (userSubscriptionTier == null || !filters.subscriptionTiers!.contains(userSubscriptionTier)) {
+        return false;
+      }
+    }
+
+    // Check user role filter
+    if (filters.userRoles != null && filters.userRoles!.isNotEmpty) {
+      final userRole = userData['role'] as String?;
+      if (userRole == null || !filters.userRoles!.contains(userRole)) {
+        return false;
+      }
+    }
+
+    // Check account status filter
+    if (filters.accountStatuses != null && filters.accountStatuses!.isNotEmpty) {
+      final userStatus = userData['status'] as String?;
+      if (userStatus == null || !filters.accountStatuses!.contains(userStatus)) {
+        return false;
+      }
+    }
+
+    // Check join date filters
+    if (filters.joinedAfter != null) {
+      final userCreatedAt = userData['createdAt'] as Timestamp?;
+      if (userCreatedAt == null || userCreatedAt.toDate().isBefore(filters.joinedAfter!)) {
+        return false;
+      }
+    }
+
+    if (filters.joinedBefore != null) {
+      final userCreatedAt = userData['createdAt'] as Timestamp?;
+      if (userCreatedAt == null || userCreatedAt.toDate().isAfter(filters.joinedBefore!)) {
+        return false;
+      }
+    }
+
+    return true;
+  }
 }
 
 // Provider
