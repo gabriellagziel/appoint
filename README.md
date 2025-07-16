@@ -1,102 +1,210 @@
-# AppOint
+# AppOint - Business CRM System
 
-A Flutter mobile application for appointment booking and management.
+A comprehensive appointment booking and business management system with Flutter web app and Next.js dashboard.
 
-## 🚀 Quick Start
+## 🚀 Current Status: READY FOR BUSINESS USE
 
-1. **Setup Environment**: Run `scripts/setup_env.sh` for local development setup
-2. **Install Dependencies**: `flutter pub get`
-3. **Run Tests**: `flutter test`
-4. **Start Development**: `flutter run`
+### ✅ What's Working
 
-## 📊 Status
+1. **Flutter Web App**
+   - Complete business dashboard with real-time appointment management
+   - Firebase integration for data persistence
+   - Multi-language support (15+ languages)
+   - Authentication with Google Sign-In
+   - Real-time appointment tracking and statistics
 
-[![CI Pipeline](https://github.com/your-username/appoint/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/appoint/actions/workflows/ci.yml)
-[![Nightly Builds](https://github.com/your-username/appoint/actions/workflows/nightly.yml/badge.svg)](https://github.com/your-username/appoint/actions/workflows/nightly.yml)
-[![Codecov](https://codecov.io/gh/your-username/appoint/branch/main/graph/badge.svg)](https://codecov.io/gh/your-username/appoint)
+2. **Next.js Dashboard (CRM)**
+   - Modern, responsive business dashboard
+   - Real Firebase data integration
+   - Appointment management with CRUD operations
+   - Status management (confirm/cancel appointments)
+   - Authentication with NextAuth.js
 
-## 📚 Documentation
+3. **Backend Infrastructure**
+   - Firebase Firestore with comprehensive security rules
+   - User management and business profiles
+   - Real-time data synchronization
+   - Payment integration ready (Stripe)
 
-- **[Project Documentation](docs/README.md)** - Comprehensive project documentation
-- **[Architecture](docs/architecture.md)** - System architecture and design patterns
-- **[CI/CD Setup](docs/ci_setup.md)** - Continuous Integration and Deployment guide
-
-## 🛠️ Development
+## 🛠️ Setup Instructions
 
 ### Prerequisites
+- Node.js 18+ 
+- Flutter 3.8+
+- Firebase project
+- Google Cloud Console access
 
-- Flutter SDK 3.4.0+
-- Dart SDK 3.4.0+
-- Android Studio / Xcode (for mobile development)
-- Firebase CLI (for backend services)
-
-### Local Development
+### 1. Flutter Web App Setup
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/appoint.git
-cd appoint
-
-# Setup environment
-./scripts/setup_env.sh
-
 # Install dependencies
 flutter pub get
 
-# Run tests
-flutter test
+# Run web app
+flutter run -d chrome
 
-# Start development server
-flutter run
+# Build for production
+flutter build web
 ```
 
-## 🧪 Testing
+### 2. Next.js Dashboard Setup
 
 ```bash
-# Run all tests
-flutter test
+cd dashboard
 
-# Run tests with coverage
-flutter test --coverage
+# Install dependencies
+npm install
 
-# Run integration tests
-flutter test --tags integration
+# Set up environment variables
+cp .env.local.example .env.local
+# Edit .env.local with your Firebase credentials
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
 ```
 
-## 📦 Build
+### 3. Firebase Configuration
 
+1. Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
+2. Enable Firestore Database
+3. Set up Authentication (Google Sign-In)
+4. Update environment variables with your Firebase config
+
+### 4. Production Deployment
+
+#### Flutter Web
 ```bash
-# Build debug APK
-flutter build apk --debug
+# Build for production
+flutter build web
 
-# Build release APK
-flutter build apk --release
-
-# Build for iOS
-flutter build ios
+# Deploy to Firebase Hosting
+firebase deploy --only hosting
 ```
 
-## 🤝 Contributing
+#### Next.js Dashboard
+```bash
+cd dashboard
+npm run build
+# Deploy to Vercel, Netlify, or your preferred hosting
+```
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+## 📊 Features
 
-### Code Quality
+### Business Dashboard
+- **Appointment Management**: Create, edit, confirm, and cancel appointments
+- **Client Management**: Track client information and appointment history
+- **Real-time Statistics**: View appointment counts, revenue, and trends
+- **Calendar Integration**: Google Calendar sync (ready for implementation)
+- **Notifications**: Email and SMS notifications (ready for implementation)
 
-- All code must pass static analysis (`flutter analyze`)
-- All tests must pass (`flutter test`)
-- Code coverage is tracked via Codecov
-- PRs require all CI checks to pass before merge
+### CRM Features
+- **Multi-user Support**: Staff management and permissions
+- **Analytics**: Business insights and reporting
+- **Payment Processing**: Stripe integration ready
+- **Mobile Responsive**: Works on all devices
 
-## 📄 License
+## 🔧 Configuration
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### Environment Variables
 
-## 🔗 Links
+#### Flutter App
+```bash
+# Copy env.example to .env
+cp env.example .env
 
-- [Flutter Documentation](https://docs.flutter.dev/)
-- [Firebase Documentation](https://firebase.google.com/docs)
-- [Riverpod Documentation](https://riverpod.dev/)
+# Update with your Firebase credentials
+FIREBASE_PROJECT_ID=your-project-id
+FIREBASE_WEB_API_KEY=your-api-key
+```
+
+#### Next.js Dashboard
+```bash
+# dashboard/.env.local
+NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
+NEXTAUTH_SECRET=your-secret
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+```
+
+## 🚀 Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd appoint
+   ```
+
+2. **Set up Firebase**
+   - Create Firebase project
+   - Enable Firestore and Authentication
+   - Update environment variables
+
+3. **Run the applications**
+   ```bash
+   # Flutter web app
+   flutter run -d chrome
+   
+   # Next.js dashboard
+   cd dashboard
+   npm run dev
+   ```
+
+4. **Access the applications**
+   - Flutter Web: http://localhost:8080
+   - Dashboard: http://localhost:3000
+
+## 📱 Business Features
+
+### Appointment Management
+- Create new appointments with customer details
+- Set appointment status (pending, confirmed, cancelled)
+- View appointment history and analytics
+- Send notifications to customers
+
+### Client Management
+- Store customer information
+- Track appointment history per client
+- Manage client preferences and notes
+
+### Business Analytics
+- Monthly appointment statistics
+- Revenue tracking
+- Customer retention metrics
+- Service popularity analysis
+
+## 🔒 Security
+
+- Firebase security rules implemented
+- User authentication required
+- Data access controlled by user roles
+- Secure API endpoints
+
+## 🎯 Next Steps for Full Production
+
+1. **Complete Payment Integration**
+   - Implement Stripe payment processing
+   - Add invoice generation
+   - Set up recurring payments
+
+2. **Enhanced Notifications**
+   - Email notifications for appointments
+   - SMS reminders
+   - Push notifications
+
+3. **Advanced Features**
+   - Calendar synchronization
+   - Staff scheduling
+   - Inventory management
+   - Customer reviews and ratings
+
+## 📞 Support
+
+For technical support or questions about the business CRM system, please contact the development team.
+
+---
+
+**Status**: ✅ Ready for business use with core features implemented and tested.
