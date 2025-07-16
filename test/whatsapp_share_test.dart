@@ -82,7 +82,7 @@ void main() {
       expect(link.groupId, equals('test-group'));
       expect(link.shareChannel, equals('whatsapp'));
     });
-  }, skip: true,);
+  });
 
   group('Share Status Enum Tests', () {
     test('should have correct enum values', () {

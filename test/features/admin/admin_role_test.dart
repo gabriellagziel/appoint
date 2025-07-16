@@ -9,6 +9,8 @@ import '../../firebase_test_helper.dart';
 class MockFirebaseAuth extends Mock implements FirebaseAuth {}
 
 late MockFirebaseAuth mockAuth;
+late ProviderContainer container;
+late bool isAdmin;
 
 void main() {
   setUpAll(() async {
@@ -27,7 +29,7 @@ void main() {
       expect(isAdmin, false);
 
       container.dispose();
-    }, skip: true,);
+    });
 
     test('AdminGuard widget should show access denied for non-admin users', () {
       container = ProviderContainer();
@@ -37,7 +39,7 @@ void main() {
       expect(container.read(isAdminProvider), isA<AsyncValue<bool>>());
 
       container.dispose();
-    }, skip: true,);
+    });
 
     test('AdminRoleMixin should provide admin checking methods', () {
       container = ProviderContainer();
@@ -46,6 +48,6 @@ void main() {
       expect(container.read(isAdminProvider), isA<AsyncValue<bool>>());
 
       container.dispose();
-    }, skip: true,);
+    });
   });
 }
