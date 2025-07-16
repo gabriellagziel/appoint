@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/ad_logic_provider.dart';
 import 'package:appoint/providers/user_subscription_provider.dart';
 import 'package:appoint/services/ad_service.dart';
 
