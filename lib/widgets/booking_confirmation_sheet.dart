@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/subscription_provider.dart';
+import 'package:appoint/providers/user_subscription_provider.dart';
 import 'package:appoint/providers/user_provider.dart';
 import 'package:appoint/services/ad_service.dart';
 
@@ -42,14 +42,13 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
   }
 
   Future<void> _upgradeToPremium() async {
-    final upgradeProvider = ref.read(premiumUpgradeProvider);
-    await upgradeProvider.upgradeToPremium();
-    
+    // TODO: Implement real payment flow
+    // For now, just show a placeholder message
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Upgraded to Premium! Ads will no longer be shown.'),
-          backgroundColor: Colors.green,
+          content: Text('Premium upgrade coming soon! This would integrate with Stripe or in-app purchases.'),
+          backgroundColor: Colors.amber,
         ),
       );
     }
@@ -58,8 +57,13 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
   @override
   Widget build(BuildContext context) {
     final user = ref.watch(userProvider);
-    final isPremium = user?.isPremium ?? false;
+    final subscriptionAsync = ref.watch(userSubscriptionProvider);
     final shouldShowAds = ref.watch(shouldShowAdsProvider);
+
+    final isPremium = subscriptionAsync.maybeWhen(
+      data: (isPremium) => isPremium,
+      orElse: () => false,
+    );
 
     return Padding(
       padding: const EdgeInsets.all(24),

@@ -5,7 +5,6 @@ import 'package:appoint/models/appointment.dart';
 import 'package:appoint/providers/appointment_provider.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/providers/calendar_provider.dart';
-import 'package:appoint/providers/subscription_provider.dart';
 import 'package:appoint/services/maps_service.dart';
 import 'package:appoint/widgets/whatsapp_share_button.dart';
 import 'package:flutter/material.dart';
