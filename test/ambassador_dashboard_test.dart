@@ -401,7 +401,6 @@ void main() {
         // Should display chart
         expect(find.byType(BarChart), findsOneWidget);
       },
-      skip: true,
     );
 
     testWidgets(
@@ -429,7 +428,6 @@ void main() {
         expect(find.byIcon(Icons.error), findsAtLeastNWidgets(1));
         expect(find.textContaining('Error:'), findsAtLeastNWidgets(1));
       },
-      skip: true,
     );
   });
 
