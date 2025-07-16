@@ -74,8 +74,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get search => '[CA] Cerca';
 
   @override
-  String get cancelInviteConfirmation =>
-      '[CA] [CA] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => '[CA] [CA] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -92,8 +91,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get playtimeLiveScheduled => '[CA] Sessió en directe programada';
 
   @override
-  String get revokeAccessConfirmation =>
-      '[CA] [CA] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => '[CA] [CA] Are you sure you want to revoke access?';
 
   @override
   String get download => '[CA] Descarrega';
@@ -205,8 +203,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get cut => '[CA] Talla';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      '[CA] [CA] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => '[CA] [CA] Invite cancelled successfully';
 
   @override
   String get retry => '[CA] [CA] Retry';
@@ -286,8 +283,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get scheduleForLater => '[CA] Programa per més tard';
 
   @override
-  String get accessRevokedSuccessfully =>
-      '[CA] [CA] Access revoked successfully';
+  String get accessRevokedSuccessfully => '[CA] [CA] Access revoked successfully';
 
   @override
   String type(Object type) {
@@ -489,8 +485,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get playtimeEnterGameName => '[CA] [CA] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[CA] [CA] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '[CA] [CA] Please login to access family features';
 
   @override
   String get myInvites => '[CA] [CA] My Invites';
@@ -550,8 +545,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[CA] [CA] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[CA] [CA] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[CA] Admin Metrics';
@@ -572,52 +566,40 @@ class AppLocalizationsCa extends AppLocalizations {
   String get contentLibrary => '[CA] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[CA] No account found with this email address.';
+  String get authErrorUserNotFound => '[CA] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[CA] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[CA] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[CA] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[CA] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[CA] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[CA] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[CA] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[CA] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[CA] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[CA] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[CA] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[CA] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[CA] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[CA] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[CA] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[CA] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      '[CA] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential => '[CA] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[CA] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[CA] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[CA] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[CA] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -634,24 +616,19 @@ class AppLocalizationsCa extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[CA] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[CA] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[CA] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[CA] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode =>
-      '[CA] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode => '[CA] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[CA] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[CA] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode =>
-      '[CA] Please enter the verification code.';
+  String get authErrorMissingVerificationCode => '[CA] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[CA] Missing verification ID.';
@@ -663,56 +640,43 @@ class AppLocalizationsCa extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[CA] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[CA] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[CA] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[CA] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[CA] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[CA] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[CA] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired =>
-      '[CA] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired => '[CA] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound =>
-      '[CA] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound => '[CA] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession =>
-      '[CA] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession => '[CA] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession =>
-      '[CA] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession => '[CA] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      '[CA] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse => '[CA] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      '[CA] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded => '[CA] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[CA] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[CA] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      '[CA] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification => '[CA] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      '[CA] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists => '[CA] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[CA] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[CA] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[CA] The ID token is invalid.';
@@ -724,12 +688,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[CA] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[CA] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[CA] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[CA] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[CA] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[CA] Invalid custom claims provided.';
@@ -738,87 +700,70 @@ class AppLocalizationsCa extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[CA] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[CA] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[CA] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[CA] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[CA] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[CA] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      '[CA] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain => '[CA] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[CA] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[CA] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[CA] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[CA] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[CA] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[CA] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      '[CA] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength => '[CA] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[CA] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[CA] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[CA] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      '[CA] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization => '[CA] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[CA] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[CA] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      '[CA] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator => '[CA] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[CA] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[CA] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[CA] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[CA] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[CA] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[CA] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      '[CA] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration => '[CA] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[CA] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[CA] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[CA] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      '[CA] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded => '[CA] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[CA] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[CA] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[CA] Missing continue URL.';
@@ -833,8 +778,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get authErrorMissingUid => '[CA] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret =>
-      '[CA] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret => '[CA] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[CA] Firebase project not found.';
@@ -843,23 +787,19 @@ class AppLocalizationsCa extends AppLocalizations {
   String get authErrorReservedClaims => '[CA] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[CA] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[CA] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[CA] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[CA] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[CA] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      '[CA] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri => '[CA] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[CA] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[CA] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -908,8 +848,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      '[CA] Virtual session created! Inviting friends... (Catalan)';
+  String get virtualSessionCreatedInvitingFriends => '[CA] Virtual session created! Inviting friends... (Catalan)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -950,15 +889,13 @@ class AppLocalizationsCa extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[CA] Subscription unavailable (Catalan)';
+  String get subscriptionUnavailable => '[CA] Subscription unavailable (Catalan)';
 
   @override
   String get confirmBooking => '[CA] Confirm Booking (Catalan)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[CA] Failed to update permission: \$e (Catalan)';
+  String get failedToUpdatePermissionE => '[CA] Failed to update permission: \$e (Catalan)';
 
   @override
   String get reject => '[CA] Reject (Catalan)';
@@ -986,8 +923,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get resolve => '[CA] Resolve (Catalan)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[CA] Error loading surveys: \$error (Catalan)';
+  String get errorLoadingSurveysError => '[CA] Error loading surveys: \$error (Catalan)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -995,8 +931,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[CA] Get help with your account (Catalan)';
+  String get getHelpWithYourAccount => '[CA] Get help with your account (Catalan)';
 
   @override
   String get pay => '[CA] Pay (Catalan)';
@@ -1011,8 +946,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[CA] Changes saved successfully! (Catalan)';
+  String get changesSavedSuccessfully => '[CA] Changes saved successfully! (Catalan)';
 
   @override
   String get createNewInvoice => '[CA] Create New Invoice (Catalan)';
@@ -1032,8 +966,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get profileSaved => '[CA] Profile saved! (Catalan)';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1064,8 +997,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      '[CA] You will receive a confirmation email shortly. (Catalan)';
+  String get youWillReceiveAConfirmationEmailShortly => '[CA] You will receive a confirmation email shortly. (Catalan)';
 
   @override
   String get addQuestion => '[CA] Add Question (Catalan)';
@@ -1094,26 +1026,22 @@ class AppLocalizationsCa extends AppLocalizations {
   String get surveyManagement => '[CA] Survey Management (Catalan)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[CA] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[CA] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[CA] No rooms found. Add your first room! (Catalan)';
+  String get noRoomsFoundAddYourFirstRoom => '[CA] No rooms found. Add your first room! (Catalan)';
 
   @override
   String get readOurPrivacyPolicy => '[CA] Read our privacy policy (Catalan)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[CA] Could not open privacy policy (Catalan)';
+  String get couldNotOpenPrivacyPolicy => '[CA] Could not open privacy policy (Catalan)';
 
   @override
   String get refresh1 => '[CA] Refresh (Catalan)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[CA] Room updated successfully! (Catalan)';
+  String get roomUpdatedSuccessfully => '[CA] Room updated successfully! (Catalan)';
 
   @override
   String get contentDetail => '[CA] Content Detail (Catalan)';
@@ -1122,8 +1050,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get cancelSubscription => '[CA] Cancel Subscription (Catalan)';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      '[CA] Successfully registered as Ambassador! (Catalan)';
+  String get successfullyRegisteredAsAmbassador => '[CA] Successfully registered as Ambassador! (Catalan)';
 
   @override
   String get save1 => '[CA] Save (Catalan)';
@@ -1132,8 +1059,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get copy1 => '[CA] Copy (Catalan)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[CA] Failed to send invitation: \$e (Catalan)';
+  String get failedToSendInvitationE => '[CA] Failed to send invitation: \$e (Catalan)';
 
   @override
   String get surveyScore => '[CA] Survey Score (Catalan)';
@@ -1150,20 +1076,16 @@ class AppLocalizationsCa extends AppLocalizations {
   String get responseDetail => '[CA] Response Detail (Catalan)';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[CA] Failed to start Pro subscription: \$e (Catalan)';
+  String get failedToStartProSubscriptionE => '[CA] Failed to start Pro subscription: \$e (Catalan)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      '[CA] Business Dashboard Entry Screen - Coming Soon (Catalan)';
+  String get businessDashboardEntryScreenComingSoon => '[CA] Business Dashboard Entry Screen - Coming Soon (Catalan)';
 
   @override
   String get contentFilter => '[CA] Content Filter (Catalan)';
@@ -1185,8 +1107,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      '[CA] Business CRM Entry Screen - Coming Soon (Catalan)';
+  String get businessCrmEntryScreenComingSoon => '[CA] Business CRM Entry Screen - Coming Soon (Catalan)';
 
   @override
   String get adminDashboard => '[CA] Admin Dashboard';
@@ -1197,16 +1118,13 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[CA] Error loading dashboard: \$error (Catalan)';
+  String get errorLoadingDashboardError => '[CA] Error loading dashboard: \$error (Catalan)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[CA] Game deleted successfully! (Catalan)';
+  String get gameDeletedSuccessfully => '[CA] Game deleted successfully! (Catalan)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[CA] View responses - Coming soon! (Catalan)';
+  String get viewResponsesComingSoon => '[CA] View responses - Coming soon! (Catalan)';
 
   @override
   String get deleteProvider => '[CA] Delete Provider';
@@ -1215,8 +1133,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get errorLoadingRewards => '[CA] Error loading rewards (Catalan)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[CA] Failed to delete account: \$e (Catalan)';
+  String get failedToDeleteAccountE => '[CA] Failed to delete account: \$e (Catalan)';
 
   @override
   String get invited1 => '[CA] Invited (Catalan)';
@@ -1231,8 +1148,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get noEvents => '[CA] No events (Catalan)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[CA] Game created successfully! (Catalan)';
+  String get gameCreatedSuccessfully => '[CA] Game created successfully! (Catalan)';
 
   @override
   String get add1 => '[CA] Add (Catalan)';
@@ -1252,12 +1168,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get clients => '[CA] Clients (Catalan)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[CA] No ambassador data available (Catalan)';
+  String get noAmbassadorDataAvailable => '[CA] No ambassador data available (Catalan)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[CA] Background deleted successfully! (Catalan)';
+  String get backgroundDeletedSuccessfully => '[CA] Background deleted successfully! (Catalan)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1265,8 +1179,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[CA] No analytics data available yet. (Catalan)';
+  String get noAnalyticsDataAvailableYet => '[CA] No analytics data available yet. (Catalan)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1274,8 +1187,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      '[CA] Business Phone Booking Entry Screen - Coming Soon (Catalan)';
+  String get businessPhoneBookingEntryScreenComingSoon => '[CA] Business Phone Booking Entry Screen - Coming Soon (Catalan)';
 
   @override
   String get verification => '[CA] Verification (Catalan)';
@@ -1322,8 +1234,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get businessProfile => '[CA] Business Profile (Catalan)';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      '[CA] Business Booking Entry Screen - Coming Soon (Catalan)';
+  String get businessBookingEntryScreenComingSoon => '[CA] Business Booking Entry Screen - Coming Soon (Catalan)';
 
   @override
   String get createNewSurvey => '[CA] Create New Survey (Catalan)';
@@ -1347,8 +1258,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get loginFailedE => '[CA] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[CA] Invitation sent successfully! (Catalan)';
+  String get invitationSentSuccessfully => '[CA] Invitation sent successfully! (Catalan)';
 
   @override
   String get registering => '[CA] Registering... (Catalan)';
@@ -1362,16 +1272,13 @@ class AppLocalizationsCa extends AppLocalizations {
   String get home1 => '[CA] Home (Catalan)';
 
   @override
-  String get errorSavingSettingsE =>
-      '[CA] Error saving settings: \$e (Catalan)';
+  String get errorSavingSettingsE => '[CA] Error saving settings: \$e (Catalan)';
 
   @override
-  String get appVersionAndInformation =>
-      '[CA] App version and information (Catalan)';
+  String get appVersionAndInformation => '[CA] App version and information (Catalan)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      '[CA] Business Subscription Entry Screen - Coming Soon (Catalan)';
+  String get businessSubscriptionEntryScreenComingSoon => '[CA] Business Subscription Entry Screen - Coming Soon (Catalan)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1379,8 +1286,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      '[CA] Your payment has been processed successfully. (Catalan)';
+  String get yourPaymentHasBeenProcessedSuccessfully => '[CA] Your payment has been processed successfully. (Catalan)';
 
   @override
   String get errorE => '[CA] Error: \$e (Catalan)';
@@ -1389,8 +1295,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get viewAll1 => '[CA] View All (Catalan)';
 
   @override
-  String get editSurveyComingSoon =>
-      '[CA] Edit survey - Coming soon! (Catalan)';
+  String get editSurveyComingSoon => '[CA] Edit survey - Coming soon! (Catalan)';
 
   @override
   String get enterOtp => '[CA] Enter OTP (Catalan)';
@@ -1399,8 +1304,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get payment => '[CA] Payment (Catalan)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      '[CA] Automatically confirm new booking requests (Catalan)';
+  String get automaticallyConfirmNewBookingRequests => '[CA] Automatically confirm new booking requests (Catalan)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1413,8 +1317,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[CA] Please sign in to upload a background (Catalan)';
+  String get pleaseSignInToUploadABackground => '[CA] Please sign in to upload a background (Catalan)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1431,22 +1334,19 @@ class AppLocalizationsCa extends AppLocalizations {
   String get autoconfirmBookings => '[CA] Auto-Confirm Bookings (Catalan)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      '[CA] Redirecting to Stripe checkout for Pro plan... (Catalan)';
+  String get redirectingToStripeCheckoutForProPlan => '[CA] Redirecting to Stripe checkout for Pro plan... (Catalan)';
 
   @override
   String get exportAsCsv => '[CA] Export as CSV (Catalan)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[CA] Delete functionality coming soon! (Catalan)';
+  String get deleteFunctionalityComingSoon => '[CA] Delete functionality coming soon! (Catalan)';
 
   @override
   String get editClient => '[CA] Edit Client (Catalan)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      '[CA] Are you sure you want to delete this message? (Catalan)';
+  String get areYouSureYouWantToDeleteThisMessage => '[CA] Are you sure you want to delete this message? (Catalan)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1457,39 +1357,31 @@ class AppLocalizationsCa extends AppLocalizations {
   String get notAuthenticated => '[CA] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[CA] Privacy request sent to your parents! (Catalan)';
+  String get privacyRequestSentToYourParents => '[CA] Privacy request sent to your parents! (Catalan)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[CA] Client deleted successfully! (Catalan)';
+  String get clientDeletedSuccessfully => '[CA] Client deleted successfully! (Catalan)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[CA] Failed to cancel subscription (Catalan)';
+  String get failedToCancelSubscription => '[CA] Failed to cancel subscription (Catalan)';
 
   @override
   String get allLanguages => '[CA] All Languages (Catalan)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[CA] Slot deleted successfully (Catalan)';
+  String get slotDeletedSuccessfully => '[CA] Slot deleted successfully (Catalan)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      '[CA] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => '[CA] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      '[CA] Parents must approve before children can join (Catalan)';
+  String get parentsMustApproveBeforeChildrenCanJoin => '[CA] Parents must approve before children can join (Catalan)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[CA] Subscribe to Pro (€14.99/mo) (Catalan)';
+  String get subscribeToPro1499mo => '[CA] Subscribe to Pro (€14.99/mo) (Catalan)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      '[CA] Business Availability Entry Screen - Coming Soon (Catalan)';
+  String get businessAvailabilityEntryScreenComingSoon => '[CA] Business Availability Entry Screen - Coming Soon (Catalan)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1503,8 +1395,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get submitBooking => '[CA] Submit Booking (Catalan)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      '[CA] Are you sure you want to cancel this appointment? (Catalan)';
+  String get areYouSureYouWantToCancelThisAppointment => '[CA] Are you sure you want to cancel this appointment? (Catalan)';
 
   @override
   String get noUpcomingBookings => '[CA] No upcoming bookings (Catalan)';
@@ -1522,8 +1413,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get goToDashboard => '[CA] Go to Dashboard (Catalan)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[CA] Ambassador Quota Dashboard (Catalan)';
+  String get ambassadorQuotaDashboard => '[CA] Ambassador Quota Dashboard (Catalan)';
 
   @override
   String get adminSettings => '[CA] Admin Settings';
@@ -1561,8 +1451,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[CA] Client added successfully! (Catalan)';
+  String get clientAddedSuccessfully => '[CA] Client added successfully! (Catalan)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1580,8 +1469,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get bookAppointment => '[CA] Book Appointment (Catalan)';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[CA] Delete (Catalan)';
@@ -1596,15 +1484,13 @@ class AppLocalizationsCa extends AppLocalizations {
   String get manageSubscription => '[CA] Manage Subscription (Catalan)';
 
   @override
-  String get requiresInstallFallback =>
-      '[CA] Requires Install Fallback (Catalan)';
+  String get requiresInstallFallback => '[CA] Requires Install Fallback (Catalan)';
 
   @override
   String get paymentConfirmation => '[CA] Payment Confirmation (Catalan)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[CA] Promo applied! Your next bill is free. (Catalan)';
+  String get promoAppliedYourNextBillIsFree => '[CA] Promo applied! Your next bill is free. (Catalan)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1615,16 +1501,13 @@ class AppLocalizationsCa extends AppLocalizations {
   String get errorLoadingSlots => '[CA] Error loading slots (Catalan)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      '[CA] Allow other users to find and join this game (Catalan)';
+  String get allowOtherUsersToFindAndJoinThisGame => '[CA] Allow other users to find and join this game (Catalan)';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      '[CA] Business Onboarding Screen - Coming Soon (Catalan)';
+  String get businessOnboardingScreenComingSoon => '[CA] Business Onboarding Screen - Coming Soon (Catalan)';
 
   @override
-  String get activateBusinessProfile =>
-      '[CA] Activate Business Profile (Catalan)';
+  String get activateBusinessProfile => '[CA] Activate Business Profile (Catalan)';
 
   @override
   String get contentNotFound => '[CA] Content not found (Catalan)';
@@ -1666,8 +1549,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get shareLink => '[CA] Share Link (Catalan)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      '[CA] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => '[CA] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[CA] Delete Appointment (Catalan)';
@@ -1687,12 +1569,10 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[CA] Update your business information (Catalan)';
+  String get updateYourBusinessInformation => '[CA] Update your business information (Catalan)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      '[CA] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => '[CA] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[CA] Parent Dashboard (Catalan)';
@@ -1715,12 +1595,10 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      '[CA] Studio booking is only available on web (Catalan)';
+  String get studioBookingIsOnlyAvailableOnWeb => '[CA] Studio booking is only available on web (Catalan)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[CA] Error loading branches: \$e (Catalan)';
+  String get errorLoadingBranchesE => '[CA] Error loading branches: \$e (Catalan)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1736,15 +1614,13 @@ class AppLocalizationsCa extends AppLocalizations {
   String get none => '[CA] None (Catalan)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[CA] Failed to update consent: \$e (Catalan)';
+  String get failedToUpdateConsentE => '[CA] Failed to update consent: \$e (Catalan)';
 
   @override
   String get welcome1 => '[CA] Welcome (Catalan)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[CA] Failed to create session: \$e (Catalan)';
+  String get failedToCreateSessionE => '[CA] Failed to create session: \$e (Catalan)';
 
   @override
   String get inviteContact => '[CA] Invite Contact (Catalan)';
@@ -1753,8 +1629,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get surveyEditor => '[CA] Survey Editor (Catalan)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[CA] Failed to start Basic subscription: \$e (Catalan)';
+  String get failedToStartBasicSubscriptionE => '[CA] Failed to start Basic subscription: \$e (Catalan)';
 
   @override
   String get mySchedule => '[CA] My Schedule (Catalan)';
@@ -1774,12 +1649,10 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[CA] Settings saved successfully! (Catalan)';
+  String get settingsSavedSuccessfully => '[CA] Settings saved successfully! (Catalan)';
 
   @override
-  String get linkCopiedToClipboard =>
-      '[CA] Link copied to clipboard! (Catalan)';
+  String get linkCopiedToClipboard => '[CA] Link copied to clipboard! (Catalan)';
 
   @override
   String get accept1 => '[CA] Accept (Catalan)';
@@ -1796,8 +1669,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[CA] Room deleted successfully! (Catalan)';
+  String get roomDeletedSuccessfully => '[CA] Room deleted successfully! (Catalan)';
 
   @override
   String get businessCalendar => '[CA] Business Calendar (Catalan)';
@@ -1862,8 +1734,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get cancel1 => '[CA] Cancel (Catalan)';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      '[CA] Subscription activated successfully! (Catalan)';
+  String get subscriptionActivatedSuccessfully => '[CA] Subscription activated successfully! (Catalan)';
 
   @override
   String activityLogaction(Object action) {
@@ -1874,8 +1745,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get broadcast => '[CA] Broadcast (Catalan)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[CA] No events scheduled this week (Catalan)';
+  String get noEventsScheduledThisWeek => '[CA] No events scheduled this week (Catalan)';
 
   @override
   String get googleCalendar => '[CA] Google Calendar (Catalan)';
@@ -1887,8 +1757,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get childDashboard => '[CA] Child Dashboard (Catalan)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[CA] Failed to upload background: \$e (Catalan)';
+  String get failedToUploadBackgroundE => '[CA] Failed to upload background: \$e (Catalan)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1907,8 +1776,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get noAppointments => '[CA] No appointments (Catalan)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[CA] • Unlimited bookings per week (Catalan)';
+  String get unlimitedBookingsPerWeek => '[CA] • Unlimited bookings per week (Catalan)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1916,19 +1784,16 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[CA] Scheduled at: \$scheduledAt (Catalan)';
+  String get scheduledAtScheduledat => '[CA] Scheduled at: \$scheduledAt (Catalan)';
 
   @override
   String get selectStaff => '[CA] Select Staff (Catalan)';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      '[CA] Subscription cancelled successfully (Catalan)';
+  String get subscriptionCancelledSuccessfully => '[CA] Subscription cancelled successfully (Catalan)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[CA] Cancel Appointment (Catalan)';
@@ -1942,8 +1807,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get businessSignup => '[CA] Business Signup (Catalan)';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      '[CA] Business Completion Screen - Coming Soon (Catalan)';
+  String get businessCompletionScreenComingSoon => '[CA] Business Completion Screen - Coming Soon (Catalan)';
 
   @override
   String get createGame1 => '[CA] Create Game (Catalan)';
@@ -1954,12 +1818,10 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode =>
-      '[CA] Please enter a promo code (Catalan)';
+  String get pleaseEnterAPromoCode => '[CA] Please enter a promo code (Catalan)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[CA] Error loading availability: \$e (Catalan)';
+  String get errorLoadingAvailabilityE => '[CA] Error loading availability: \$e (Catalan)';
 
   @override
   String get parentalControls => '[CA] Parental Controls (Catalan)';
@@ -1968,15 +1830,13 @@ class AppLocalizationsCa extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[CA] Child linked successfully! (Catalan)';
+  String get childLinkedSuccessfully => '[CA] Child linked successfully! (Catalan)';
 
   @override
   String get create => '[CA] Create (Catalan)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[CA] No external meetings found. (Catalan)';
+  String get noExternalMeetingsFound => '[CA] No external meetings found. (Catalan)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1984,15 +1844,13 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[CA] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[CA] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[CA] Scheduler Screen (Catalan)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[CA] Client updated successfully! (Catalan)';
+  String get clientUpdatedSuccessfully => '[CA] Client updated successfully! (Catalan)';
 
   @override
   String get surveyResponses => '[CA] Survey Responses (Catalan)';
@@ -2018,12 +1876,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get errorLoadingEvents => '[CA] Error loading events (Catalan)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[CA] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[CA] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[CA] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[CA] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[CA] Success (Catalan)';
@@ -2042,12 +1898,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get readWrite => '[CA] Read & Write (Catalan)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      '[CA] Redirecting to Stripe checkout for Basic plan... (Catalan)';
+  String get redirectingToStripeCheckoutForBasicPlan => '[CA] Redirecting to Stripe checkout for Basic plan... (Catalan)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[CA] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[CA] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[CA] Pick Date (Catalan)';
@@ -2083,12 +1937,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get businessLogin => '[CA] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[CA] Invoice created successfully! (Catalan)';
+  String get invoiceCreatedSuccessfully => '[CA] Invoice created successfully! (Catalan)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[CA] No time series data available (Catalan)';
+  String get noTimeSeriesDataAvailable => '[CA] No time series data available (Catalan)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2101,8 +1953,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[CA] Failed to send privacy request: \$e (Catalan)';
+  String get failedToSendPrivacyRequestE => '[CA] Failed to send privacy request: \$e (Catalan)';
 
   @override
   String get chooseYourPlan => '[CA] Choose Your Plan (Catalan)';
@@ -2117,15 +1968,13 @@ class AppLocalizationsCa extends AppLocalizations {
   String get eventCreated => '[CA] Event created (Catalan)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[CA] Subscribe to Basic (€4.99/mo) (Catalan)';
+  String get subscribeToBasic499mo => '[CA] Subscribe to Basic (€4.99/mo) (Catalan)';
 
   @override
   String get completion => '[CA] Completion (Catalan)';
 
   @override
-  String get supportTicketSubmitted =>
-      '[CA] Support ticket submitted (Catalan)';
+  String get supportTicketSubmitted => '[CA] Support ticket submitted (Catalan)';
 
   @override
   String get monetizationSettings => '[CA] Monetization Settings (Catalan)';
@@ -2140,12 +1989,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get deleteSurvey => '[CA] Delete Survey (Catalan)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[CA] Game approved successfully! (Catalan)';
+  String get gameApprovedSuccessfully => '[CA] Game approved successfully! (Catalan)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[CA] Error loading permissions: \$error (Catalan)';
+  String get errorLoadingPermissionsError => '[CA] Error loading permissions: \$error (Catalan)';
 
   @override
   String get referrals => '[CA] Referrals (Catalan)';
@@ -2187,8 +2034,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get organizations => '[CA] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[CA] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[CA] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[CA] Create New Game (Catalan)';
@@ -2197,12 +2043,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get next1 => '[CA] Next (Catalan)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[CA] Background uploaded successfully! (Catalan)';
+  String get backgroundUploadedSuccessfully => '[CA] Background uploaded successfully! (Catalan)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[CA] No appointment requests found. (Catalan)';
+  String get noAppointmentRequestsFound => '[CA] No appointment requests found. (Catalan)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2229,8 +2073,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[CA] Failed to create game: \$e (Catalan)';
@@ -2239,8 +2082,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get noChartDataAvailable => '[CA] No chart data available (Catalan)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[CA] • Phone-based booking system (Catalan)';
+  String get phonebasedBookingSystem => '[CA] • Phone-based booking system (Catalan)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2249,8 +2091,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get invoices => '[CA] Invoices (Catalan)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2277,12 +2118,10 @@ class AppLocalizationsCa extends AppLocalizations {
   String get iDoNotConsent => '[CA] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      '[CA] No clients found. Add your first client! (Catalan)';
+  String get noClientsFoundAddYourFirstClient => '[CA] No clients found. Add your first client! (Catalan)';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      '[CA] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => '[CA] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[CA] Group: \$groupId';
@@ -2305,8 +2144,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[CA] • CRM dashboard with analytics (Catalan)';
+  String get crmDashboardWithAnalytics => '[CA] • CRM dashboard with analytics (Catalan)';
 
   @override
   String get contentLibrary1 => '[CA] Content Library (Catalan)';
@@ -2318,30 +2156,25 @@ class AppLocalizationsCa extends AppLocalizations {
   String get subscriptionManagement => '[CA] Subscription Management (Catalan)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      '[CA] Monetization settings will be implemented here (Catalan)';
+  String get monetizationSettingsWillBeImplementedHere => '[CA] Monetization settings will be implemented here (Catalan)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[CA] Failed to apply promo code: \$e (Catalan)';
+  String get failedToApplyPromoCodeE => '[CA] Failed to apply promo code: \$e (Catalan)';
 
   @override
   String get editProvider => '[CA] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[CA] Localization Contribution (Catalan)';
+  String get localizationContribution => '[CA] Localization Contribution (Catalan)';
 
   @override
   String get parentalConsent => '[CA] Parental Consent (Catalan)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[CA] Business Signup Screen - Coming Soon (Catalan)';
+  String get businessSignupScreenComingSoon => '[CA] Business Signup Screen - Coming Soon (Catalan)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      '[CA] Are you sure you want to delete this appointment? (Catalan)';
+  String get areYouSureYouWantToDeleteThisAppointment => '[CA] Are you sure you want to delete this appointment? (Catalan)';
 
   @override
   String get syncAppointment => '[CA] Sync Appointment (Catalan)';
@@ -2353,15 +2186,13 @@ class AppLocalizationsCa extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[CA] Business Setup Screen - Coming Soon (Catalan)';
+  String get businessSetupScreenComingSoon => '[CA] Business Setup Screen - Coming Soon (Catalan)';
 
   @override
   String get edit1 => '[CA] Edit (Catalan)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[CA] No events scheduled this month (Catalan)';
+  String get noEventsScheduledThisMonth => '[CA] No events scheduled this month (Catalan)';
 
   @override
   String get businessDashboard => '[CA] Business Dashboard (Catalan)';
@@ -2375,8 +2206,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[CA] Manage Staff Availability (Catalan)';
+  String get manageStaffAvailability => '[CA] Manage Staff Availability (Catalan)';
 
   @override
   String get noMissingTranslations => '[CA] No missing translations (Catalan)';
@@ -2393,8 +2223,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get noUsers => '[CA] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[CA] Error loading referral code (Catalan)';
+  String get errorLoadingReferralCode => '[CA] Error loading referral code (Catalan)';
 
   @override
   String get allCountries => '[CA] All Countries (Catalan)';
@@ -2409,8 +2238,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get deleteMessage => '[CA] Delete Message (Catalan)';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[CA] changeRole (TRANSLATE)';
@@ -2421,8 +2249,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[CA] Opening customer portal... (Catalan)';
+  String get openingCustomerPortal => '[CA] Opening customer portal... (Catalan)';
 
   @override
   String get signOut => '[CA] Sign Out (Catalan)';
@@ -2433,8 +2260,7 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[CA] Upgrade to Business (Catalan)';
@@ -2460,8 +2286,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[CA] View Responses (Catalan)';
@@ -2490,8 +2315,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';

@@ -74,8 +74,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get search => 'Поиск';
 
   @override
-  String get cancelInviteConfirmation =>
-      '[RU] Отменить подтверждение приглашения';
+  String get cancelInviteConfirmation => '[RU] Отменить подтверждение приглашения';
 
   @override
   String created(Object date) {
@@ -86,8 +85,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get revokeAccess => '[RU] Отозвать доступ';
 
   @override
-  String get saveGroupForRecognition =>
-      '[RU] Сохранить группу для распознавания';
+  String get saveGroupForRecognition => '[RU] Сохранить группу для распознавания';
 
   @override
   String get playtimeLiveScheduled => '[RU] Живая сессия запланирована';
@@ -211,8 +209,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get retry => '[RU] Повторить попытку';
 
   @override
-  String get composeBroadcastMessage =>
-      '[RU] Составить трансляционное сообщение';
+  String get composeBroadcastMessage => '[RU] Составить трансляционное сообщение';
 
   @override
   String get sendNow => '[RU] Отправить сейчас';
@@ -488,8 +485,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get playtimeEnterGameName => '[RU] Введите название игры';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[RU] [RU] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '[RU] [RU] Please login to access family features';
 
   @override
   String get myInvites => '[RU] [RU] My Invites';
@@ -549,8 +545,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[RU] Пожалуйста, войдите, чтобы просмотреть профиль';
+  String get pleaseLoginToViewProfile => '[RU] Пожалуйста, войдите, чтобы просмотреть профиль';
 
   @override
   String get adminMetrics => '[RU] Admin Metrics';
@@ -571,52 +566,40 @@ class AppLocalizationsRu extends AppLocalizations {
   String get contentLibrary => '[RU] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[RU] No account found with this email address.';
+  String get authErrorUserNotFound => '[RU] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[RU] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[RU] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[RU] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[RU] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[RU] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[RU] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[RU] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[RU] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[RU] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[RU] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[RU] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[RU] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[RU] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[RU] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[RU] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[RU] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      '[RU] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential => '[RU] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[RU] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[RU] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[RU] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[RU] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -633,24 +616,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[RU] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[RU] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[RU] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[RU] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode =>
-      '[RU] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode => '[RU] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[RU] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[RU] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode =>
-      '[RU] Please enter the verification code.';
+  String get authErrorMissingVerificationCode => '[RU] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[RU] Missing verification ID.';
@@ -662,56 +640,43 @@ class AppLocalizationsRu extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[RU] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[RU] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[RU] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[RU] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[RU] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[RU] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[RU] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired =>
-      '[RU] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired => '[RU] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound =>
-      '[RU] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound => '[RU] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession =>
-      '[RU] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession => '[RU] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession =>
-      '[RU] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession => '[RU] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      '[RU] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse => '[RU] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      '[RU] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded => '[RU] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[RU] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[RU] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      '[RU] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification => '[RU] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      '[RU] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists => '[RU] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[RU] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[RU] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[RU] The ID token is invalid.';
@@ -723,12 +688,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[RU] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[RU] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[RU] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[RU] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[RU] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[RU] Invalid custom claims provided.';
@@ -737,87 +700,70 @@ class AppLocalizationsRu extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[RU] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[RU] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[RU] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[RU] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[RU] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[RU] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      '[RU] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain => '[RU] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[RU] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[RU] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[RU] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[RU] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[RU] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[RU] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      '[RU] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength => '[RU] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[RU] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[RU] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[RU] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      '[RU] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization => '[RU] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[RU] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[RU] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      '[RU] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator => '[RU] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[RU] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[RU] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[RU] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[RU] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[RU] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[RU] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      '[RU] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration => '[RU] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[RU] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[RU] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[RU] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      '[RU] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded => '[RU] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[RU] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[RU] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[RU] Missing continue URL.';
@@ -832,8 +778,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get authErrorMissingUid => '[RU] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret =>
-      '[RU] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret => '[RU] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[RU] Firebase project not found.';
@@ -842,23 +787,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get authErrorReservedClaims => '[RU] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[RU] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[RU] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[RU] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[RU] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[RU] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      '[RU] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri => '[RU] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[RU] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[RU] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -907,8 +848,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      '[RU] Virtual session created! Inviting friends... (Russian)';
+  String get virtualSessionCreatedInvitingFriends => '[RU] Virtual session created! Inviting friends... (Russian)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -949,15 +889,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[RU] Subscription unavailable (Russian)';
+  String get subscriptionUnavailable => '[RU] Subscription unavailable (Russian)';
 
   @override
   String get confirmBooking => '[RU] Confirm Booking (Russian)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[RU] Failed to update permission: \$e (Russian)';
+  String get failedToUpdatePermissionE => '[RU] Failed to update permission: \$e (Russian)';
 
   @override
   String get reject => '[RU] Reject (Russian)';
@@ -985,8 +923,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get resolve => '[RU] Resolve (Russian)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[RU] Error loading surveys: \$error (Russian)';
+  String get errorLoadingSurveysError => '[RU] Error loading surveys: \$error (Russian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -994,8 +931,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[RU] Get help with your account (Russian)';
+  String get getHelpWithYourAccount => '[RU] Get help with your account (Russian)';
 
   @override
   String get pay => '[RU] Pay (Russian)';
@@ -1010,8 +946,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[RU] Changes saved successfully! (Russian)';
+  String get changesSavedSuccessfully => '[RU] Changes saved successfully! (Russian)';
 
   @override
   String get createNewInvoice => '[RU] Create New Invoice (Russian)';
@@ -1031,8 +966,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get profileSaved => '[RU] Profile saved! (Russian)';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1063,8 +997,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      '[RU] You will receive a confirmation email shortly. (Russian)';
+  String get youWillReceiveAConfirmationEmailShortly => '[RU] You will receive a confirmation email shortly. (Russian)';
 
   @override
   String get addQuestion => '[RU] Add Question (Russian)';
@@ -1093,26 +1026,22 @@ class AppLocalizationsRu extends AppLocalizations {
   String get surveyManagement => '[RU] Survey Management (Russian)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[RU] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[RU] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[RU] No rooms found. Add your first room! (Russian)';
+  String get noRoomsFoundAddYourFirstRoom => '[RU] No rooms found. Add your first room! (Russian)';
 
   @override
   String get readOurPrivacyPolicy => '[RU] Read our privacy policy (Russian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[RU] Could not open privacy policy (Russian)';
+  String get couldNotOpenPrivacyPolicy => '[RU] Could not open privacy policy (Russian)';
 
   @override
   String get refresh1 => '[RU] Refresh (Russian)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[RU] Room updated successfully! (Russian)';
+  String get roomUpdatedSuccessfully => '[RU] Room updated successfully! (Russian)';
 
   @override
   String get contentDetail => '[RU] Content Detail (Russian)';
@@ -1121,8 +1050,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get cancelSubscription => '[RU] Cancel Subscription (Russian)';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      '[RU] Successfully registered as Ambassador! (Russian)';
+  String get successfullyRegisteredAsAmbassador => '[RU] Successfully registered as Ambassador! (Russian)';
 
   @override
   String get save1 => '[RU] Save (Russian)';
@@ -1131,8 +1059,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get copy1 => '[RU] Copy (Russian)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[RU] Failed to send invitation: \$e (Russian)';
+  String get failedToSendInvitationE => '[RU] Failed to send invitation: \$e (Russian)';
 
   @override
   String get surveyScore => '[RU] Survey Score (Russian)';
@@ -1149,20 +1076,16 @@ class AppLocalizationsRu extends AppLocalizations {
   String get responseDetail => '[RU] Response Detail (Russian)';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[RU] Failed to start Pro subscription: \$e (Russian)';
+  String get failedToStartProSubscriptionE => '[RU] Failed to start Pro subscription: \$e (Russian)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      '[RU] Business Dashboard Entry Screen - Coming Soon (Russian)';
+  String get businessDashboardEntryScreenComingSoon => '[RU] Business Dashboard Entry Screen - Coming Soon (Russian)';
 
   @override
   String get contentFilter => '[RU] Content Filter (Russian)';
@@ -1184,8 +1107,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      '[RU] Business CRM Entry Screen - Coming Soon (Russian)';
+  String get businessCrmEntryScreenComingSoon => '[RU] Business CRM Entry Screen - Coming Soon (Russian)';
 
   @override
   String get adminDashboard => '[RU] Admin Dashboard';
@@ -1196,16 +1118,13 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[RU] Error loading dashboard: \$error (Russian)';
+  String get errorLoadingDashboardError => '[RU] Error loading dashboard: \$error (Russian)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[RU] Game deleted successfully! (Russian)';
+  String get gameDeletedSuccessfully => '[RU] Game deleted successfully! (Russian)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[RU] View responses - Coming soon! (Russian)';
+  String get viewResponsesComingSoon => '[RU] View responses - Coming soon! (Russian)';
 
   @override
   String get deleteProvider => '[RU] Delete Provider';
@@ -1214,8 +1133,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get errorLoadingRewards => '[RU] Error loading rewards (Russian)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[RU] Failed to delete account: \$e (Russian)';
+  String get failedToDeleteAccountE => '[RU] Failed to delete account: \$e (Russian)';
 
   @override
   String get invited1 => '[RU] Invited (Russian)';
@@ -1230,8 +1148,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get noEvents => '[RU] No events (Russian)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[RU] Game created successfully! (Russian)';
+  String get gameCreatedSuccessfully => '[RU] Game created successfully! (Russian)';
 
   @override
   String get add1 => '[RU] Add (Russian)';
@@ -1251,12 +1168,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get clients => '[RU] Clients (Russian)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[RU] No ambassador data available (Russian)';
+  String get noAmbassadorDataAvailable => '[RU] No ambassador data available (Russian)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[RU] Background deleted successfully! (Russian)';
+  String get backgroundDeletedSuccessfully => '[RU] Background deleted successfully! (Russian)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1264,8 +1179,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[RU] No analytics data available yet. (Russian)';
+  String get noAnalyticsDataAvailableYet => '[RU] No analytics data available yet. (Russian)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1273,8 +1187,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      '[RU] Business Phone Booking Entry Screen - Coming Soon (Russian)';
+  String get businessPhoneBookingEntryScreenComingSoon => '[RU] Business Phone Booking Entry Screen - Coming Soon (Russian)';
 
   @override
   String get verification => '[RU] Verification (Russian)';
@@ -1321,8 +1234,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get businessProfile => '[RU] Business Profile (Russian)';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      '[RU] Business Booking Entry Screen - Coming Soon (Russian)';
+  String get businessBookingEntryScreenComingSoon => '[RU] Business Booking Entry Screen - Coming Soon (Russian)';
 
   @override
   String get createNewSurvey => '[RU] Create New Survey (Russian)';
@@ -1346,8 +1258,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get loginFailedE => '[RU] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[RU] Invitation sent successfully! (Russian)';
+  String get invitationSentSuccessfully => '[RU] Invitation sent successfully! (Russian)';
 
   @override
   String get registering => '[RU] Registering... (Russian)';
@@ -1361,16 +1272,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get home1 => '[RU] Home (Russian)';
 
   @override
-  String get errorSavingSettingsE =>
-      '[RU] Error saving settings: \$e (Russian)';
+  String get errorSavingSettingsE => '[RU] Error saving settings: \$e (Russian)';
 
   @override
-  String get appVersionAndInformation =>
-      '[RU] App version and information (Russian)';
+  String get appVersionAndInformation => '[RU] App version and information (Russian)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      '[RU] Business Subscription Entry Screen - Coming Soon (Russian)';
+  String get businessSubscriptionEntryScreenComingSoon => '[RU] Business Subscription Entry Screen - Coming Soon (Russian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1378,8 +1286,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      '[RU] Your payment has been processed successfully. (Russian)';
+  String get yourPaymentHasBeenProcessedSuccessfully => '[RU] Your payment has been processed successfully. (Russian)';
 
   @override
   String get errorE => '[RU] Error: \$e (Russian)';
@@ -1388,8 +1295,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get viewAll1 => '[RU] View All (Russian)';
 
   @override
-  String get editSurveyComingSoon =>
-      '[RU] Edit survey - Coming soon! (Russian)';
+  String get editSurveyComingSoon => '[RU] Edit survey - Coming soon! (Russian)';
 
   @override
   String get enterOtp => '[RU] Enter OTP (Russian)';
@@ -1398,8 +1304,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get payment => '[RU] Payment (Russian)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      '[RU] Automatically confirm new booking requests (Russian)';
+  String get automaticallyConfirmNewBookingRequests => '[RU] Automatically confirm new booking requests (Russian)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1412,8 +1317,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[RU] Please sign in to upload a background (Russian)';
+  String get pleaseSignInToUploadABackground => '[RU] Please sign in to upload a background (Russian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1430,22 +1334,19 @@ class AppLocalizationsRu extends AppLocalizations {
   String get autoconfirmBookings => '[RU] Auto-Confirm Bookings (Russian)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      '[RU] Redirecting to Stripe checkout for Pro plan... (Russian)';
+  String get redirectingToStripeCheckoutForProPlan => '[RU] Redirecting to Stripe checkout for Pro plan... (Russian)';
 
   @override
   String get exportAsCsv => '[RU] Export as CSV (Russian)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[RU] Delete functionality coming soon! (Russian)';
+  String get deleteFunctionalityComingSoon => '[RU] Delete functionality coming soon! (Russian)';
 
   @override
   String get editClient => '[RU] Edit Client (Russian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      '[RU] Are you sure you want to delete this message? (Russian)';
+  String get areYouSureYouWantToDeleteThisMessage => '[RU] Are you sure you want to delete this message? (Russian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1456,39 +1357,31 @@ class AppLocalizationsRu extends AppLocalizations {
   String get notAuthenticated => '[RU] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[RU] Privacy request sent to your parents! (Russian)';
+  String get privacyRequestSentToYourParents => '[RU] Privacy request sent to your parents! (Russian)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[RU] Client deleted successfully! (Russian)';
+  String get clientDeletedSuccessfully => '[RU] Client deleted successfully! (Russian)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[RU] Failed to cancel subscription (Russian)';
+  String get failedToCancelSubscription => '[RU] Failed to cancel subscription (Russian)';
 
   @override
   String get allLanguages => '[RU] All Languages (Russian)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[RU] Slot deleted successfully (Russian)';
+  String get slotDeletedSuccessfully => '[RU] Slot deleted successfully (Russian)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      '[RU] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => '[RU] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      '[RU] Parents must approve before children can join (Russian)';
+  String get parentsMustApproveBeforeChildrenCanJoin => '[RU] Parents must approve before children can join (Russian)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[RU] Subscribe to Pro (€14.99/mo) (Russian)';
+  String get subscribeToPro1499mo => '[RU] Subscribe to Pro (€14.99/mo) (Russian)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      '[RU] Business Availability Entry Screen - Coming Soon (Russian)';
+  String get businessAvailabilityEntryScreenComingSoon => '[RU] Business Availability Entry Screen - Coming Soon (Russian)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1502,8 +1395,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get submitBooking => '[RU] Submit Booking (Russian)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      '[RU] Are you sure you want to cancel this appointment? (Russian)';
+  String get areYouSureYouWantToCancelThisAppointment => '[RU] Are you sure you want to cancel this appointment? (Russian)';
 
   @override
   String get noUpcomingBookings => '[RU] No upcoming bookings (Russian)';
@@ -1521,8 +1413,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get goToDashboard => '[RU] Go to Dashboard (Russian)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[RU] Ambassador Quota Dashboard (Russian)';
+  String get ambassadorQuotaDashboard => '[RU] Ambassador Quota Dashboard (Russian)';
 
   @override
   String get adminSettings => '[RU] Admin Settings';
@@ -1560,8 +1451,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[RU] Client added successfully! (Russian)';
+  String get clientAddedSuccessfully => '[RU] Client added successfully! (Russian)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1579,8 +1469,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get bookAppointment => '[RU] Book Appointment (Russian)';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[RU] Delete (Russian)';
@@ -1595,15 +1484,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get manageSubscription => '[RU] Manage Subscription (Russian)';
 
   @override
-  String get requiresInstallFallback =>
-      '[RU] Requires Install Fallback (Russian)';
+  String get requiresInstallFallback => '[RU] Requires Install Fallback (Russian)';
 
   @override
   String get paymentConfirmation => '[RU] Payment Confirmation (Russian)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[RU] Promo applied! Your next bill is free. (Russian)';
+  String get promoAppliedYourNextBillIsFree => '[RU] Promo applied! Your next bill is free. (Russian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1614,16 +1501,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get errorLoadingSlots => '[RU] Error loading slots (Russian)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      '[RU] Allow other users to find and join this game (Russian)';
+  String get allowOtherUsersToFindAndJoinThisGame => '[RU] Allow other users to find and join this game (Russian)';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      '[RU] Business Onboarding Screen - Coming Soon (Russian)';
+  String get businessOnboardingScreenComingSoon => '[RU] Business Onboarding Screen - Coming Soon (Russian)';
 
   @override
-  String get activateBusinessProfile =>
-      '[RU] Activate Business Profile (Russian)';
+  String get activateBusinessProfile => '[RU] Activate Business Profile (Russian)';
 
   @override
   String get contentNotFound => '[RU] Content not found (Russian)';
@@ -1665,8 +1549,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get shareLink => '[RU] Share Link (Russian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      '[RU] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => '[RU] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[RU] Delete Appointment (Russian)';
@@ -1686,12 +1569,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[RU] Update your business information (Russian)';
+  String get updateYourBusinessInformation => '[RU] Update your business information (Russian)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      '[RU] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => '[RU] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[RU] Parent Dashboard (Russian)';
@@ -1714,12 +1595,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      '[RU] Studio booking is only available on web (Russian)';
+  String get studioBookingIsOnlyAvailableOnWeb => '[RU] Studio booking is only available on web (Russian)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[RU] Error loading branches: \$e (Russian)';
+  String get errorLoadingBranchesE => '[RU] Error loading branches: \$e (Russian)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1735,15 +1614,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get none => '[RU] None (Russian)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[RU] Failed to update consent: \$e (Russian)';
+  String get failedToUpdateConsentE => '[RU] Failed to update consent: \$e (Russian)';
 
   @override
   String get welcome1 => '[RU] Welcome (Russian)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[RU] Failed to create session: \$e (Russian)';
+  String get failedToCreateSessionE => '[RU] Failed to create session: \$e (Russian)';
 
   @override
   String get inviteContact => '[RU] Invite Contact (Russian)';
@@ -1752,8 +1629,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get surveyEditor => '[RU] Survey Editor (Russian)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[RU] Failed to start Basic subscription: \$e (Russian)';
+  String get failedToStartBasicSubscriptionE => '[RU] Failed to start Basic subscription: \$e (Russian)';
 
   @override
   String get mySchedule => '[RU] My Schedule (Russian)';
@@ -1773,12 +1649,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[RU] Settings saved successfully! (Russian)';
+  String get settingsSavedSuccessfully => '[RU] Settings saved successfully! (Russian)';
 
   @override
-  String get linkCopiedToClipboard =>
-      '[RU] Link copied to clipboard! (Russian)';
+  String get linkCopiedToClipboard => '[RU] Link copied to clipboard! (Russian)';
 
   @override
   String get accept1 => '[RU] Accept (Russian)';
@@ -1795,8 +1669,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[RU] Room deleted successfully! (Russian)';
+  String get roomDeletedSuccessfully => '[RU] Room deleted successfully! (Russian)';
 
   @override
   String get businessCalendar => '[RU] Business Calendar (Russian)';
@@ -1861,8 +1734,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get cancel1 => '[RU] Cancel (Russian)';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      '[RU] Subscription activated successfully! (Russian)';
+  String get subscriptionActivatedSuccessfully => '[RU] Subscription activated successfully! (Russian)';
 
   @override
   String activityLogaction(Object action) {
@@ -1873,8 +1745,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get broadcast => '[RU] Broadcast (Russian)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[RU] No events scheduled this week (Russian)';
+  String get noEventsScheduledThisWeek => '[RU] No events scheduled this week (Russian)';
 
   @override
   String get googleCalendar => '[RU] Google Calendar (Russian)';
@@ -1886,8 +1757,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get childDashboard => '[RU] Child Dashboard (Russian)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[RU] Failed to upload background: \$e (Russian)';
+  String get failedToUploadBackgroundE => '[RU] Failed to upload background: \$e (Russian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1906,8 +1776,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get noAppointments => '[RU] No appointments (Russian)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[RU] • Unlimited bookings per week (Russian)';
+  String get unlimitedBookingsPerWeek => '[RU] • Unlimited bookings per week (Russian)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1915,19 +1784,16 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[RU] Scheduled at: \$scheduledAt (Russian)';
+  String get scheduledAtScheduledat => '[RU] Scheduled at: \$scheduledAt (Russian)';
 
   @override
   String get selectStaff => '[RU] Select Staff (Russian)';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      '[RU] Subscription cancelled successfully (Russian)';
+  String get subscriptionCancelledSuccessfully => '[RU] Subscription cancelled successfully (Russian)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[RU] Cancel Appointment (Russian)';
@@ -1941,8 +1807,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get businessSignup => '[RU] Business Signup (Russian)';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      '[RU] Business Completion Screen - Coming Soon (Russian)';
+  String get businessCompletionScreenComingSoon => '[RU] Business Completion Screen - Coming Soon (Russian)';
 
   @override
   String get createGame1 => '[RU] Create Game (Russian)';
@@ -1953,12 +1818,10 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode =>
-      '[RU] Please enter a promo code (Russian)';
+  String get pleaseEnterAPromoCode => '[RU] Please enter a promo code (Russian)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[RU] Error loading availability: \$e (Russian)';
+  String get errorLoadingAvailabilityE => '[RU] Error loading availability: \$e (Russian)';
 
   @override
   String get parentalControls => '[RU] Parental Controls (Russian)';
@@ -1967,15 +1830,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[RU] Child linked successfully! (Russian)';
+  String get childLinkedSuccessfully => '[RU] Child linked successfully! (Russian)';
 
   @override
   String get create => '[RU] Create (Russian)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[RU] No external meetings found. (Russian)';
+  String get noExternalMeetingsFound => '[RU] No external meetings found. (Russian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1983,15 +1844,13 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[RU] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[RU] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[RU] Scheduler Screen (Russian)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[RU] Client updated successfully! (Russian)';
+  String get clientUpdatedSuccessfully => '[RU] Client updated successfully! (Russian)';
 
   @override
   String get surveyResponses => '[RU] Survey Responses (Russian)';
@@ -2017,12 +1876,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get errorLoadingEvents => '[RU] Error loading events (Russian)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[RU] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[RU] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[RU] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[RU] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[RU] Success (Russian)';
@@ -2041,12 +1898,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get readWrite => '[RU] Read & Write (Russian)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      '[RU] Redirecting to Stripe checkout for Basic plan... (Russian)';
+  String get redirectingToStripeCheckoutForBasicPlan => '[RU] Redirecting to Stripe checkout for Basic plan... (Russian)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[RU] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[RU] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[RU] Pick Date (Russian)';
@@ -2082,12 +1937,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get businessLogin => '[RU] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[RU] Invoice created successfully! (Russian)';
+  String get invoiceCreatedSuccessfully => '[RU] Invoice created successfully! (Russian)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[RU] No time series data available (Russian)';
+  String get noTimeSeriesDataAvailable => '[RU] No time series data available (Russian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2100,8 +1953,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[RU] Failed to send privacy request: \$e (Russian)';
+  String get failedToSendPrivacyRequestE => '[RU] Failed to send privacy request: \$e (Russian)';
 
   @override
   String get chooseYourPlan => '[RU] Choose Your Plan (Russian)';
@@ -2116,15 +1968,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get eventCreated => '[RU] Event created (Russian)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[RU] Subscribe to Basic (€4.99/mo) (Russian)';
+  String get subscribeToBasic499mo => '[RU] Subscribe to Basic (€4.99/mo) (Russian)';
 
   @override
   String get completion => '[RU] Completion (Russian)';
 
   @override
-  String get supportTicketSubmitted =>
-      '[RU] Support ticket submitted (Russian)';
+  String get supportTicketSubmitted => '[RU] Support ticket submitted (Russian)';
 
   @override
   String get monetizationSettings => '[RU] Monetization Settings (Russian)';
@@ -2139,12 +1989,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get deleteSurvey => '[RU] Delete Survey (Russian)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[RU] Game approved successfully! (Russian)';
+  String get gameApprovedSuccessfully => '[RU] Game approved successfully! (Russian)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[RU] Error loading permissions: \$error (Russian)';
+  String get errorLoadingPermissionsError => '[RU] Error loading permissions: \$error (Russian)';
 
   @override
   String get referrals => '[RU] Referrals (Russian)';
@@ -2186,8 +2034,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get organizations => '[RU] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[RU] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[RU] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[RU] Create New Game (Russian)';
@@ -2196,12 +2043,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get next1 => '[RU] Next (Russian)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[RU] Background uploaded successfully! (Russian)';
+  String get backgroundUploadedSuccessfully => '[RU] Background uploaded successfully! (Russian)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[RU] No appointment requests found. (Russian)';
+  String get noAppointmentRequestsFound => '[RU] No appointment requests found. (Russian)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2228,8 +2073,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[RU] Failed to create game: \$e (Russian)';
@@ -2238,8 +2082,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get noChartDataAvailable => '[RU] No chart data available (Russian)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[RU] • Phone-based booking system (Russian)';
+  String get phonebasedBookingSystem => '[RU] • Phone-based booking system (Russian)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2248,8 +2091,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get invoices => '[RU] Invoices (Russian)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2276,12 +2118,10 @@ class AppLocalizationsRu extends AppLocalizations {
   String get iDoNotConsent => '[RU] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      '[RU] No clients found. Add your first client! (Russian)';
+  String get noClientsFoundAddYourFirstClient => '[RU] No clients found. Add your first client! (Russian)';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      '[RU] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => '[RU] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[RU] Group: \$groupId';
@@ -2304,8 +2144,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[RU] • CRM dashboard with analytics (Russian)';
+  String get crmDashboardWithAnalytics => '[RU] • CRM dashboard with analytics (Russian)';
 
   @override
   String get contentLibrary1 => '[RU] Content Library (Russian)';
@@ -2317,30 +2156,25 @@ class AppLocalizationsRu extends AppLocalizations {
   String get subscriptionManagement => '[RU] Subscription Management (Russian)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      '[RU] Monetization settings will be implemented here (Russian)';
+  String get monetizationSettingsWillBeImplementedHere => '[RU] Monetization settings will be implemented here (Russian)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[RU] Failed to apply promo code: \$e (Russian)';
+  String get failedToApplyPromoCodeE => '[RU] Failed to apply promo code: \$e (Russian)';
 
   @override
   String get editProvider => '[RU] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[RU] Localization Contribution (Russian)';
+  String get localizationContribution => '[RU] Localization Contribution (Russian)';
 
   @override
   String get parentalConsent => '[RU] Parental Consent (Russian)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[RU] Business Signup Screen - Coming Soon (Russian)';
+  String get businessSignupScreenComingSoon => '[RU] Business Signup Screen - Coming Soon (Russian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      '[RU] Are you sure you want to delete this appointment? (Russian)';
+  String get areYouSureYouWantToDeleteThisAppointment => '[RU] Are you sure you want to delete this appointment? (Russian)';
 
   @override
   String get syncAppointment => '[RU] Sync Appointment (Russian)';
@@ -2352,15 +2186,13 @@ class AppLocalizationsRu extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[RU] Business Setup Screen - Coming Soon (Russian)';
+  String get businessSetupScreenComingSoon => '[RU] Business Setup Screen - Coming Soon (Russian)';
 
   @override
   String get edit1 => '[RU] Edit (Russian)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[RU] No events scheduled this month (Russian)';
+  String get noEventsScheduledThisMonth => '[RU] No events scheduled this month (Russian)';
 
   @override
   String get businessDashboard => '[RU] Business Dashboard (Russian)';
@@ -2374,8 +2206,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[RU] Manage Staff Availability (Russian)';
+  String get manageStaffAvailability => '[RU] Manage Staff Availability (Russian)';
 
   @override
   String get noMissingTranslations => '[RU] No missing translations (Russian)';
@@ -2392,8 +2223,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get noUsers => '[RU] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[RU] Error loading referral code (Russian)';
+  String get errorLoadingReferralCode => '[RU] Error loading referral code (Russian)';
 
   @override
   String get allCountries => '[RU] All Countries (Russian)';
@@ -2408,8 +2238,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get deleteMessage => '[RU] Delete Message (Russian)';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[RU] changeRole (TRANSLATE)';
@@ -2420,8 +2249,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[RU] Opening customer portal... (Russian)';
+  String get openingCustomerPortal => '[RU] Opening customer portal... (Russian)';
 
   @override
   String get signOut => '[RU] Sign Out (Russian)';
@@ -2432,8 +2260,7 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[RU] Upgrade to Business (Russian)';
@@ -2459,8 +2286,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[RU] View Responses (Russian)';
@@ -2489,8 +2315,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
