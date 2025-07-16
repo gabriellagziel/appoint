@@ -88,21 +88,28 @@ class BookingConfirmationSheet extends ConsumerWidget {
             children: [
               Expanded(
                 child: OutlinedButton(
-                  onPressed: bookingAsync.isLoading ? null : onCancel,
+                  onPressed: bookingAsync.maybeWhen(
+                    loading: () => true,
+                    orElse: () => false,
+                  ) ? null : onCancel,
                   child: const Text('Cancel'),
                 ),
               ),
               const SizedBox(width: 12),
               Expanded(
                 child: ElevatedButton(
-                  onPressed: bookingAsync.isLoading ? null : onConfirm,
-                  child: bookingAsync.isLoading
-                      ? const SizedBox(
-                          height: 20,
-                          width: 20,
-                          child: CircularProgressIndicator(strokeWidth: 2),
-                        )
-                      : const Text('Confirm'),
+                  onPressed: bookingAsync.maybeWhen(
+                    loading: () => true,
+                    orElse: () => false,
+                  ) ? null : onConfirm,
+                  child: bookingAsync.maybeWhen(
+                    loading: () => const SizedBox(
+                      height: 20,
+                      width: 20,
+                      child: CircularProgressIndicator(strokeWidth: 2),
+                    ),
+                    orElse: () => const Text('Confirm'),
+                  ),
                 ),
               ),
             ],
