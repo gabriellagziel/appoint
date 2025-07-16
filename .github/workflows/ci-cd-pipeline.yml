@@ -176,6 +176,7 @@ jobs:
     needs: setup-cache
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    if: ${{ !github.event.inputs.skip_tests }}
     strategy:
       matrix:
         test_type: [unit, widget, integration]
