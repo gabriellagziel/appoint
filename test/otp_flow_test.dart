@@ -8,6 +8,5 @@ void main() {
     await initializeTestFirebase();
   });
 
-  testWidgets('OTP flow: send and verify code', (tester) async {},
-      skip: true,);
+  testWidgets('OTP flow: send and verify code', (tester) async {});
 }
