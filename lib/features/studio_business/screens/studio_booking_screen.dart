@@ -47,190 +47,171 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
       );
     }
 
-    final profileAsync = ref.watch(businessProfileProvider);
+    final profile = ref.watch(businessProfileProvider);
     final bookingAsync = ref.watch(bookingProvider);
+
+    if (profile == null) {
+      return const Scaffold(
+        appBar: AppBar(title: Text('Studio Booking')),
+        body: Center(child: CircularProgressIndicator()),
+      );
+    }
 
     return Scaffold(
       appBar: AppBar(title: const Text('Studio Booking')),
-      body: profileAsync.when(
-        data: (profile) => Padding(
-              padding: const EdgeInsets.all(16),
-              child: Form(
-                key: _formKey,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    // Business Info
-                    Card(
-                      child: Padding(
-                        padding: const EdgeInsets.all(16),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              profile.name,
-                              style: Theme.of(context).textTheme.headlineSmall,
-                            ),
-                            const SizedBox(height: 8),
-                            Text('Phone: ${profile.phone}'),
-                          ],
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 24),
-
-                    // Customer Details Form
-                    const Text(
-                      'Customer Details',
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                    ),
-                    const SizedBox(height: 16),
-
-                    TextFormField(
-                      controller: _nameController,
-                      decoration: const InputDecoration(
-                        labelText: 'Customer Name',
-                        border: OutlineInputBorder(),
-                      ),
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please enter customer name';
-                        }
-                        return null;
-                      },
-                    ),
-                    const SizedBox(height: 16),
-
-                    TextFormField(
-                      controller: _phoneController,
-                      decoration: const InputDecoration(
-                        labelText: 'Phone Number',
-                        border: OutlineInputBorder(),
-                        prefixText: '+1 ',
-                      ),
-                      keyboardType: TextInputType.phone,
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please enter phone number';
-                        }
-                        if (value.length < 10) {
-                          return 'Please enter a valid phone number';
-                        }
-                        return null;
-                      },
-                    ),
-                    const SizedBox(height: 16),
-
-                    TextFormField(
-                      controller: _dateController,
-                      decoration: const InputDecoration(
-                        labelText: 'Preferred Date',
-                        border: OutlineInputBorder(),
-                        suffixIcon: Icon(Icons.calendar_today),
-                      ),
-                      readOnly: true,
-                      onTap: () => _selectDate(context),
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please select a date';
-                        }
-                        return null;
-                      },
-                    ),
-                    const SizedBox(height: 16),
-
-                    TextFormField(
-                      controller: _timeController,
-                      decoration: const InputDecoration(
-                        labelText: 'Preferred Time',
-                        border: OutlineInputBorder(),
-                        suffixIcon: Icon(Icons.access_time),
-                      ),
-                      readOnly: true,
-                      onTap: () => _selectTime(context),
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please select a time';
-                        }
-                        return null;
-                      },
-                    ),
-                    const SizedBox(height: 24),
-
-                    // Show booking state
-                    bookingAsync.when(
-                      data: (booking) => const SizedBox.shrink(),
-                      loading: () => const Center(
-                        child: Padding(
-                          padding: EdgeInsets.all(16.0),
-                          child: CircularProgressIndicator(),
-                        ),
-                      ),
-                      error: (error, stack) => Container(
-                        padding: const EdgeInsets.all(16),
-                        margin: const EdgeInsets.only(bottom: 16),
-                        decoration: BoxDecoration(
-                          color: Colors.red.shade50,
-                          borderRadius: BorderRadius.circular(8),
-                          border: Border.all(color: Colors.red.shade200),
-                        ),
-                        child: Row(
-                          children: [
-                            Icon(Icons.error, color: Colors.red.shade600),
-                            const SizedBox(width: 8),
-                            Expanded(
-                              child: Text(
-                                'Error: ${error.toString()}',
-                                style: TextStyle(color: Colors.red.shade700),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-
-                    SizedBox(
-                      width: double.infinity,
-                      child: ElevatedButton(
-                        onPressed: _isProcessing || bookingAsync.maybeWhen(
-                          loading: () => true,
-                          orElse: () => false,
-                        ) 
-                            ? null 
-                            : _processBooking,
-                        child: _isProcessing || bookingAsync.maybeWhen(
-                          loading: () => true,
-                          orElse: () => false,
-                        )
-                            ? const CircularProgressIndicator()
-                            : const Text('Send Booking Invite'),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, stack) => Center(
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Form(
+          key: _formKey,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Icon(Icons.error, color: Colors.red.shade600, size: 64),
-              const SizedBox(height: 16),
-              Text(
-                'Error loading business profile',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.red.shade700,
+              // Business Info
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        profile.name,
+                        style: Theme.of(context).textTheme.headlineSmall,
+                      ),
+                      const SizedBox(height: 8),
+                      Text('Phone: ${profile.phone}'),
+                    ],
+                  ),
                 ),
               ),
-              const SizedBox(height: 8),
-              Text(
-                error.toString(),
-                style: TextStyle(color: Colors.red.shade600),
-                textAlign: TextAlign.center,
+              const SizedBox(height: 24),
+
+              // Customer Details Form
+              const Text(
+                'Customer Details',
+                style:
+                    TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 16),
+
+              TextFormField(
+                controller: _nameController,
+                decoration: const InputDecoration(
+                  labelText: 'Customer Name',
+                  border: OutlineInputBorder(),
+                ),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter customer name';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 16),
+
+              TextFormField(
+                controller: _phoneController,
+                decoration: const InputDecoration(
+                  labelText: 'Phone Number',
+                  border: OutlineInputBorder(),
+                  prefixText: '+1 ',
+                ),
+                keyboardType: TextInputType.phone,
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter phone number';
+                  }
+                  if (value.length < 10) {
+                    return 'Please enter a valid phone number';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 16),
+
+              TextFormField(
+                controller: _dateController,
+                decoration: const InputDecoration(
+                  labelText: 'Preferred Date',
+                  border: OutlineInputBorder(),
+                  suffixIcon: Icon(Icons.calendar_today),
+                ),
+                readOnly: true,
+                onTap: () => _selectDate(context),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please select a date';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 16),
+
+              TextFormField(
+                controller: _timeController,
+                decoration: const InputDecoration(
+                  labelText: 'Preferred Time',
+                  border: OutlineInputBorder(),
+                  suffixIcon: Icon(Icons.access_time),
+                ),
+                readOnly: true,
+                onTap: () => _selectTime(context),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please select a time';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 24),
+
+              // Show booking state
+              bookingAsync.when(
+                data: (booking) => const SizedBox.shrink(),
+                loading: () => const Center(
+                  child: Padding(
+                    padding: EdgeInsets.all(16.0),
+                    child: CircularProgressIndicator(),
+                  ),
+                ),
+                error: (error, stack) => Container(
+                  padding: const EdgeInsets.all(16),
+                  margin: const EdgeInsets.only(bottom: 16),
+                  decoration: BoxDecoration(
+                    color: Colors.red.shade50,
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(color: Colors.red.shade200),
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(Icons.error, color: Colors.red.shade600),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          'Error: ${error.toString()}',
+                          style: TextStyle(color: Colors.red.shade700),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: _isProcessing || bookingAsync.maybeWhen(
+                    loading: () => true,
+                    orElse: () => false,
+                  ) 
+                      ? null 
+                      : _processBooking,
+                  child: _isProcessing || bookingAsync.maybeWhen(
+                    loading: () => true,
+                    orElse: () => false,
+                  )
+                      ? const CircularProgressIndicator()
+                      : const Text('Send Booking Invite'),
+                ),
               ),
             ],
           ),
@@ -242,7 +223,8 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   // TODO(username): Implement time slot selector and staff selector when needed
 
   Future<void> _processBooking() async {
-    if (_formKey.currentState!.validate()) {
+    final profile = ref.read(businessProfileProvider);
+    if (_formKey.currentState!.validate() && profile != null) {
       setState(() => _isProcessing = true);
 
       try {
