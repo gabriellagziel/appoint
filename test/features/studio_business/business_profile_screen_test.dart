@@ -45,5 +45,5 @@ void main() {
       // Initially shows loading indicator
       expect(find.byType(CircularProgressIndicator), findsOneWidget);
     });
-  }, skip: true,);
+  });
 }
