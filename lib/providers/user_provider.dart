@@ -1,7 +1,6 @@
 import 'package:appoint/features/studio_business/providers/business_mode_provider.dart';
 import 'package:appoint/models/user_type.dart';
 import 'package:appoint/providers/user_profile_provider.dart';
-import 'package:appoint/providers/user_subscription_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 // Combined user data class
@@ -63,20 +62,5 @@ final userProvider = Provider<User?>((ref) {
     },
     loading: () => null,
     error: (_, final __) => null,
-  );
-});
-
-// Provider that determines if ads should be shown
-final shouldShowAdsProvider = Provider<bool>((ref) {
-  final user = ref.watch(userProvider);
-  final subscriptionAsync = ref.watch(userSubscriptionProvider);
-  
-  // If user has admin free access, don't show ads
-  if (user?.isAdminFreeAccess == true) return false;
-  
-  // Check subscription status
-  return subscriptionAsync.maybeWhen(
-    data: (isPremium) => !isPremium,
-    orElse: () => true, // Show ads by default if subscription status is unknown
   );
 });

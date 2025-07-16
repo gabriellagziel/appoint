@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:appoint/providers/ad_logic_provider.dart';
 import 'package:appoint/providers/user_subscription_provider.dart';
-import 'package:appoint/providers/user_provider.dart';
 import 'package:appoint/services/ad_service.dart';
 
 class BookingConfirmationSheet extends ConsumerStatefulWidget {
@@ -42,6 +42,9 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
   }
 
   Future<void> _upgradeToPremium() async {
+    final upgradeService = ref.read(premiumUpgradeProvider);
+    await upgradeService.upgradeToPremium();
+    
     // TODO: Implement real payment flow
     // For now, just show a placeholder message
     if (mounted) {
@@ -56,7 +59,6 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
 
   @override
   Widget build(BuildContext context) {
-    final user = ref.watch(userProvider);
     final subscriptionAsync = ref.watch(userSubscriptionProvider);
     final shouldShowAds = ref.watch(shouldShowAdsProvider);
 
