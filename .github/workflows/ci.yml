@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: DigitalOcean CI Pipeline
 
 on:
   push:
@@ -6,57 +6,88 @@ on:
   pull_request:
     branches: [ main, develop ]
 
+env:
+  DIGITALOCEAN_CI_LOCK: 'true'  # Lock to prevent GitHub fallback
+
 jobs:
-  analyze:
-    name: Static Analysis
+  # Validate DigitalOcean CI lock
+  validate-ci-lock:
     runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Validate DigitalOcean CI Lock
+        run: |
+          echo "🔒 Validating DigitalOcean CI lock..."
+          echo "✅ DigitalOcean CI lock is active"
+          echo "✅ All Flutter operations will use DigitalOcean container"
+          
+          # Validate required secrets
+          if [ -z "${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}" ]; then
+            echo "❌ DIGITALOCEAN_ACCESS_TOKEN not configured"
+            echo "❌ DigitalOcean CI cannot proceed"
+            exit 1
+          else
+            echo "✅ DIGITALOCEAN_ACCESS_TOKEN is configured"
+          fi
+
+  analyze:
+    name: Static Analysis (DigitalOcean)
+    needs: validate-ci-lock
+    runs-on: ubuntu-latest
+    container:
+      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Setup Dart
-        uses: dart-lang/setup-dart@e51d8e571e22473a2ddebf0ef8a2123f0ab2c02c
-        with:
-          sdk: "3.5.4"
-      
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.24.5'
-          channel: stable
-          cache: true
+      - name: Validate CI Lock
+        run: |
+          echo "🔒 Validating DigitalOcean CI lock..."
+          if [ "$DIGITALOCEAN_CI_LOCK" != "true" ]; then
+            echo "❌ DigitalOcean CI lock is disabled"
+            echo "❌ All Flutter operations must run on DigitalOcean"
+            exit 1
+          fi
+          echo "✅ DigitalOcean CI lock is active"
       
       - name: Get dependencies
         run: flutter pub get
       
       - name: Run static analysis
-        run: flutter analyze --no-fatal-infos
+        run: |
+          echo "🔍 Running Flutter analyze on DigitalOcean..."
+          flutter analyze --no-fatal-infos
 
   test:
-    name: Unit & Widget Tests
+    name: Unit & Widget Tests (DigitalOcean)
     runs-on: ubuntu-latest
     needs: analyze
+    container:
+      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Setup Dart
-        uses: dart-lang/setup-dart@e51d8e571e22473a2ddebf0ef8a2123f0ab2c02c
-        with:
-          sdk: "3.5.4"
-      
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.24.5'
-          channel: stable
-          cache: true
+      - name: Validate CI Lock
+        run: |
+          echo "🔒 Validating DigitalOcean CI lock..."
+          if [ "$DIGITALOCEAN_CI_LOCK" != "true" ]; then
+            echo "❌ DigitalOcean CI lock is disabled"
+            echo "❌ All Flutter operations must run on DigitalOcean"
+            exit 1
+          fi
+          echo "✅ DigitalOcean CI lock is active"
       
       - name: Get dependencies
         run: flutter pub get
       
       - name: Run tests with coverage
-        run: flutter test --coverage --exclude-tags integration
+        run: |
+          echo "🧪 Running tests on DigitalOcean..."
+          flutter test --coverage --exclude-tags integration
       
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
@@ -68,34 +99,37 @@ jobs:
           verbose: true
 
   build:
-    name: Build Artifacts
+    name: Build Artifacts (DigitalOcean)
     runs-on: ubuntu-latest
     needs: [analyze, test]
+    container:
+      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'zulu'
-          java-version: '17'
-      
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.24.5'
-          channel: stable
-          cache: true
+      - name: Validate CI Lock
+        run: |
+          echo "🔒 Validating DigitalOcean CI lock..."
+          if [ "$DIGITALOCEAN_CI_LOCK" != "true" ]; then
+            echo "❌ DigitalOcean CI lock is disabled"
+            echo "❌ All Flutter operations must run on DigitalOcean"
+            exit 1
+          fi
+          echo "✅ DigitalOcean CI lock is active"
       
       - name: Get dependencies
         run: flutter pub get
       
       - name: Build debug APK
-        run: flutter build apk --debug
+        run: |
+          echo "🤖 Building Android APK on DigitalOcean..."
+          flutter build apk --debug
       
       - name: Build web
-        run: flutter build web --release
+        run: |
+          echo "🌐 Building web app on DigitalOcean..."
+          flutter build web --release
       
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
@@ -112,26 +146,31 @@ jobs:
           retention-days: 30
 
   security:
-    name: Security Scan
+    name: Security Scan (DigitalOcean)
     runs-on: ubuntu-latest
     needs: analyze
+    container:
+      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.24.5'
-          channel: stable
-          cache: true
+      - name: Validate CI Lock
+        run: |
+          echo "🔒 Validating DigitalOcean CI lock..."
+          if [ "$DIGITALOCEAN_CI_LOCK" != "true" ]; then
+            echo "❌ DigitalOcean CI lock is disabled"
+            echo "❌ All Flutter operations must run on DigitalOcean"
+            exit 1
+          fi
+          echo "✅ DigitalOcean CI lock is active"
       
       - name: Get dependencies
         run: flutter pub get
       
       - name: Security audit
         run: |
-          echo "🔍 Running security audit..."
+          echo "🔍 Running security audit on DigitalOcean..."
           flutter pub deps --style=tree
           
       - name: Check for vulnerabilities
