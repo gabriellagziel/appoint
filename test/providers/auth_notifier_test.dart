@@ -27,6 +27,10 @@ void main() {
     late MockFirebaseAuth mockFirebaseAuth;
     late MockUser mockUser;
     late MockIdTokenResult mockTokenResult;
+    late AuthService authService;
+    late StreamController<AppUser?> streamController;
+    late AsyncValue<AppUser?> authState;
+    late FirebaseAuth firebaseAuth;
 
     setUp(() {
       mockAuthService = MockAuthService();
@@ -44,6 +48,7 @@ void main() {
 
     tearDown(() {
       container.dispose();
+      streamController?.close();
     });
 
     group('AuthService Provider', () {
