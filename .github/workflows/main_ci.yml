@@ -280,6 +280,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     if: ${{ !github.event.inputs.skip_tests }}
+    container:
+      image: registry.digitalocean.com/appoint/flutter-ci:latest
     strategy:
       matrix:
         test_type: [unit, widget, integration]
@@ -287,22 +289,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: ${{ env.FLUTTER_VERSION }}
-          channel: stable
-          cache: true
-          
-      - name: Restore pub cache
+      - name: Restore Flutter cache
         uses: actions/cache@v4
         with:
           path: |
-            ~/.pub-cache
+            /home/flutter/.pub-cache
             .dart_tool/
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.lock') }}
+            build/
+            .flutter-plugins
+            .flutter-plugins-dependencies
+          key: flutter-deps-${{ runner.os }}-${{ env.FLUTTER_VERSION }}-${{ hashFiles('**/pubspec.lock') }}
           restore-keys: |
-            ${{ runner.os }}-pub-
+            flutter-deps-${{ runner.os }}-${{ env.FLUTTER_VERSION }}-
+            flutter-deps-${{ runner.os }}-
             
       - name: Download generated files
         uses: actions/download-artifact@v4
@@ -347,26 +346,25 @@ jobs:
     needs: generate-code
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    container:
+      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: ${{ env.FLUTTER_VERSION }}
-          channel: stable
-          cache: true
-          
-      - name: Restore pub cache
+      - name: Restore Flutter cache
         uses: actions/cache@v4
         with:
           path: |
-            ~/.pub-cache
+            /home/flutter/.pub-cache
             .dart_tool/
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.lock') }}
+            build/
+            .flutter-plugins
+            .flutter-plugins-dependencies
+          key: flutter-deps-${{ runner.os }}-${{ env.FLUTTER_VERSION }}-${{ hashFiles('**/pubspec.lock') }}
           restore-keys: |
-            ${{ runner.os }}-pub-
+            flutter-deps-${{ runner.os }}-${{ env.FLUTTER_VERSION }}-
+            flutter-deps-${{ runner.os }}-
             
       - name: Download generated files
         uses: actions/download-artifact@v4
@@ -399,32 +397,25 @@ jobs:
     needs: [analyze, test, security-scan]
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    container:
+      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: ${{ env.FLUTTER_VERSION }}
-          channel: stable
-          cache: true
-          
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-          
-      - name: Restore pub cache
+      - name: Restore Flutter cache
         uses: actions/cache@v4
         with:
           path: |
-            ~/.pub-cache
+            /home/flutter/.pub-cache
             .dart_tool/
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.lock') }}
+            build/
+            .flutter-plugins
+            .flutter-plugins-dependencies
+          key: flutter-deps-${{ runner.os }}-${{ env.FLUTTER_VERSION }}-${{ hashFiles('**/pubspec.lock') }}
           restore-keys: |
-            ${{ runner.os }}-pub-
+            flutter-deps-${{ runner.os }}-${{ env.FLUTTER_VERSION }}-
+            flutter-deps-${{ runner.os }}-
             
       - name: Download generated files
         uses: actions/download-artifact@v4
@@ -587,6 +578,8 @@ jobs:
     runs-on: ubuntu-latest
     if: (github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch') && github.event.inputs.platform != 'android' && github.event.inputs.platform != 'ios'
     timeout-minutes: 15
+    container:
+      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -596,9 +589,6 @@ jobs:
         with:
           name: web-build
           path: build/web/
-          
-      - name: Install Firebase CLI
-        run: npm install -g firebase-tools
         
       - name: Deploy to Firebase Hosting
         env:
@@ -630,6 +620,8 @@ jobs:
     runs-on: ubuntu-latest
     if: (github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch') && github.event.inputs.platform != 'android' && github.event.inputs.platform != 'ios'
     timeout-minutes: 20
+    container:
+      image: registry.digitalocean.com/appoint/flutter-ci:latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
