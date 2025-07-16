@@ -74,8 +74,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get search => '[NL] Zoeken';
 
   @override
-  String get cancelInviteConfirmation =>
-      '[NL] [NL] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => '[NL] [NL] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -92,8 +91,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get playtimeLiveScheduled => '[NL] [NL] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation =>
-      '[NL] [NL] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => '[NL] [NL] Are you sure you want to revoke access?';
 
   @override
   String get download => '[NL] Downloaden';
@@ -127,8 +125,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get playtimeModeVirtual => '[NL] Virtuele modus';
 
   @override
-  String get playtimeDescription =>
-      '[NL] [NL] Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => '[NL] [NL] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => '[NL] Verwijderen';
@@ -188,8 +185,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully =>
-      '[NL] [NL] Meeting shared successfully';
+  String get meetingSharedSuccessfully => '[NL] [NL] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[NL] Welkom bij Playtime';
@@ -207,8 +203,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get cut => '[NL] Knippen';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      '[NL] [NL] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => '[NL] [NL] Invite cancelled successfully';
 
   @override
   String get retry => '[NL] Opnieuw proberen';
@@ -288,8 +283,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get scheduleForLater => '[NL] [NL] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully =>
-      '[NL] [NL] Access revoked successfully';
+  String get accessRevokedSuccessfully => '[NL] [NL] Access revoked successfully';
 
   @override
   String type(Object type) {
@@ -414,8 +408,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get dashboard => '[NL] Dashboard';
 
   @override
-  String get noPermissionForBroadcast =>
-      '[NL] [NL] No permission for broadcast';
+  String get noPermissionForBroadcast => '[NL] [NL] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[NL] Playtime Games – Admin';
@@ -492,8 +485,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get playtimeEnterGameName => '[NL] [NL] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[NL] [NL] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '[NL] [NL] Please login to access family features';
 
   @override
   String get myInvites => '[NL] [NL] My Invites';
@@ -553,8 +545,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[NL] [NL] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[NL] [NL] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[NL] Admin Metrics';
@@ -575,52 +566,40 @@ class AppLocalizationsNl extends AppLocalizations {
   String get contentLibrary => '[NL] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[NL] No account found with this email address.';
+  String get authErrorUserNotFound => '[NL] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[NL] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[NL] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[NL] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[NL] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[NL] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[NL] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[NL] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[NL] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[NL] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[NL] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[NL] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[NL] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[NL] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[NL] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[NL] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[NL] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN => '[NL] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[NL] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[NL] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[NL] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[NL] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -637,24 +616,19 @@ class AppLocalizationsNl extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[NL] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[NL] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[NL] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[NL] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] The verification code is invalid.';
+  String get REDACTED_TOKEN => '[NL] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[NL] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[NL] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Please enter the verification code.';
+  String get REDACTED_TOKEN => '[NL] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[NL] Missing verification ID.';
@@ -666,56 +640,43 @@ class AppLocalizationsNl extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[NL] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[NL] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[NL] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[NL] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[NL] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[NL] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[NL] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN => '[NL] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Multi-factor information not found.';
+  String get REDACTED_TOKEN => '[NL] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Missing multi-factor session.';
+  String get REDACTED_TOKEN => '[NL] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Invalid multi-factor session.';
+  String get REDACTED_TOKEN => '[NL] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] This second factor is already in use.';
+  String get REDACTED_TOKEN => '[NL] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN => '[NL] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[NL] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[NL] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Email change requires verification.';
+  String get REDACTED_TOKEN => '[NL] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] This phone number is already in use.';
+  String get REDACTED_TOKEN => '[NL] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[NL] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[NL] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[NL] The ID token is invalid.';
@@ -727,12 +688,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[NL] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[NL] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[NL] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[NL] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[NL] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[NL] Invalid custom claims provided.';
@@ -741,87 +700,70 @@ class AppLocalizationsNl extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[NL] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[NL] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[NL] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[NL] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[NL] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[NL] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN => '[NL] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[NL] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[NL] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[NL] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[NL] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[NL] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[NL] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN => '[NL] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[NL] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[NL] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[NL] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN => '[NL] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[NL] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[NL] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN => '[NL] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[NL] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[NL] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[NL] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[NL] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[NL] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[NL] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN => '[NL] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[NL] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[NL] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[NL] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN => '[NL] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[NL] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[NL] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[NL] Missing continue URL.';
@@ -836,8 +778,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get authErrorMissingUid => '[NL] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Missing OAuth client secret.';
+  String get REDACTED_TOKEN => '[NL] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[NL] Firebase project not found.';
@@ -846,23 +787,19 @@ class AppLocalizationsNl extends AppLocalizations {
   String get authErrorReservedClaims => '[NL] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[NL] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[NL] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[NL] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[NL] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[NL] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN => '[NL] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[NL] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[NL] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -911,8 +848,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Virtual session created! Inviting friends... (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Virtual session created! Inviting friends... (Dutch)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -959,8 +895,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get confirmBooking => '[NL] Confirm Booking (Dutch)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[NL] Failed to update permission: \$e (Dutch)';
+  String get failedToUpdatePermissionE => '[NL] Failed to update permission: \$e (Dutch)';
 
   @override
   String get reject => '[NL] Reject (Dutch)';
@@ -988,8 +923,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get resolve => '[NL] Resolve (Dutch)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[NL] Error loading surveys: \$error (Dutch)';
+  String get errorLoadingSurveysError => '[NL] Error loading surveys: \$error (Dutch)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -997,8 +931,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[NL] Get help with your account (Dutch)';
+  String get getHelpWithYourAccount => '[NL] Get help with your account (Dutch)';
 
   @override
   String get pay => '[NL] Pay (Dutch)';
@@ -1013,8 +946,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[NL] Changes saved successfully! (Dutch)';
+  String get changesSavedSuccessfully => '[NL] Changes saved successfully! (Dutch)';
 
   @override
   String get createNewInvoice => '[NL] Create New Invoice (Dutch)';
@@ -1034,8 +966,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get profileSaved => '[NL] Profile saved! (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1066,8 +997,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] You will receive a confirmation email shortly. (Dutch)';
+  String get REDACTED_TOKEN => '[NL] You will receive a confirmation email shortly. (Dutch)';
 
   @override
   String get addQuestion => '[NL] Add Question (Dutch)';
@@ -1096,26 +1026,22 @@ class AppLocalizationsNl extends AppLocalizations {
   String get surveyManagement => '[NL] Survey Management (Dutch)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[NL] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[NL] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[NL] No rooms found. Add your first room! (Dutch)';
+  String get noRoomsFoundAddYourFirstRoom => '[NL] No rooms found. Add your first room! (Dutch)';
 
   @override
   String get readOurPrivacyPolicy => '[NL] Read our privacy policy (Dutch)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[NL] Could not open privacy policy (Dutch)';
+  String get couldNotOpenPrivacyPolicy => '[NL] Could not open privacy policy (Dutch)';
 
   @override
   String get refresh1 => '[NL] Refresh (Dutch)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[NL] Room updated successfully! (Dutch)';
+  String get roomUpdatedSuccessfully => '[NL] Room updated successfully! (Dutch)';
 
   @override
   String get contentDetail => '[NL] Content Detail (Dutch)';
@@ -1124,8 +1050,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get cancelSubscription => '[NL] Cancel Subscription (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Successfully registered as Ambassador! (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Successfully registered as Ambassador! (Dutch)';
 
   @override
   String get save1 => '[NL] Save (Dutch)';
@@ -1134,8 +1059,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get copy1 => '[NL] Copy (Dutch)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[NL] Failed to send invitation: \$e (Dutch)';
+  String get failedToSendInvitationE => '[NL] Failed to send invitation: \$e (Dutch)';
 
   @override
   String get surveyScore => '[NL] Survey Score (Dutch)';
@@ -1152,20 +1076,16 @@ class AppLocalizationsNl extends AppLocalizations {
   String get responseDetail => '[NL] Response Detail (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[NL] Failed to start Pro subscription: \$e (Dutch)';
+  String get failedToStartProSubscriptionE => '[NL] Failed to start Pro subscription: \$e (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Business Dashboard Entry Screen - Coming Soon (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Business Dashboard Entry Screen - Coming Soon (Dutch)';
 
   @override
   String get contentFilter => '[NL] Content Filter (Dutch)';
@@ -1187,8 +1107,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Business CRM Entry Screen - Coming Soon (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Business CRM Entry Screen - Coming Soon (Dutch)';
 
   @override
   String get adminDashboard => '[NL] Admin Dashboard';
@@ -1199,16 +1118,13 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[NL] Error loading dashboard: \$error (Dutch)';
+  String get errorLoadingDashboardError => '[NL] Error loading dashboard: \$error (Dutch)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[NL] Game deleted successfully! (Dutch)';
+  String get gameDeletedSuccessfully => '[NL] Game deleted successfully! (Dutch)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[NL] View responses - Coming soon! (Dutch)';
+  String get viewResponsesComingSoon => '[NL] View responses - Coming soon! (Dutch)';
 
   @override
   String get deleteProvider => '[NL] Delete Provider';
@@ -1217,8 +1133,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get errorLoadingRewards => '[NL] Error loading rewards (Dutch)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[NL] Failed to delete account: \$e (Dutch)';
+  String get failedToDeleteAccountE => '[NL] Failed to delete account: \$e (Dutch)';
 
   @override
   String get invited1 => '[NL] Invited (Dutch)';
@@ -1233,8 +1148,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get noEvents => '[NL] No events (Dutch)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[NL] Game created successfully! (Dutch)';
+  String get gameCreatedSuccessfully => '[NL] Game created successfully! (Dutch)';
 
   @override
   String get add1 => '[NL] Add (Dutch)';
@@ -1254,12 +1168,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get clients => '[NL] Clients (Dutch)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[NL] No ambassador data available (Dutch)';
+  String get noAmbassadorDataAvailable => '[NL] No ambassador data available (Dutch)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[NL] Background deleted successfully! (Dutch)';
+  String get backgroundDeletedSuccessfully => '[NL] Background deleted successfully! (Dutch)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1267,8 +1179,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[NL] No analytics data available yet. (Dutch)';
+  String get noAnalyticsDataAvailableYet => '[NL] No analytics data available yet. (Dutch)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1276,8 +1187,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Business Phone Booking Entry Screen - Coming Soon (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Business Phone Booking Entry Screen - Coming Soon (Dutch)';
 
   @override
   String get verification => '[NL] Verification (Dutch)';
@@ -1324,8 +1234,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get businessProfile => '[NL] Business Profile (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Business Booking Entry Screen - Coming Soon (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Business Booking Entry Screen - Coming Soon (Dutch)';
 
   @override
   String get createNewSurvey => '[NL] Create New Survey (Dutch)';
@@ -1349,8 +1258,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get loginFailedE => '[NL] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[NL] Invitation sent successfully! (Dutch)';
+  String get invitationSentSuccessfully => '[NL] Invitation sent successfully! (Dutch)';
 
   @override
   String get registering => '[NL] Registering... (Dutch)';
@@ -1367,12 +1275,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get errorSavingSettingsE => '[NL] Error saving settings: \$e (Dutch)';
 
   @override
-  String get appVersionAndInformation =>
-      '[NL] App version and information (Dutch)';
+  String get appVersionAndInformation => '[NL] App version and information (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Business Subscription Entry Screen - Coming Soon (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Business Subscription Entry Screen - Coming Soon (Dutch)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1380,8 +1286,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Your payment has been processed successfully. (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Your payment has been processed successfully. (Dutch)';
 
   @override
   String get errorE => '[NL] Error: \$e (Dutch)';
@@ -1399,8 +1304,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get payment => '[NL] Payment (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Automatically confirm new booking requests (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Automatically confirm new booking requests (Dutch)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1413,8 +1317,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[NL] Please sign in to upload a background (Dutch)';
+  String get pleaseSignInToUploadABackground => '[NL] Please sign in to upload a background (Dutch)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1431,22 +1334,19 @@ class AppLocalizationsNl extends AppLocalizations {
   String get autoconfirmBookings => '[NL] Auto-Confirm Bookings (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Redirecting to Stripe checkout for Pro plan... (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Redirecting to Stripe checkout for Pro plan... (Dutch)';
 
   @override
   String get exportAsCsv => '[NL] Export as CSV (Dutch)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[NL] Delete functionality coming soon! (Dutch)';
+  String get deleteFunctionalityComingSoon => '[NL] Delete functionality coming soon! (Dutch)';
 
   @override
   String get editClient => '[NL] Edit Client (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Are you sure you want to delete this message? (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Are you sure you want to delete this message? (Dutch)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1457,39 +1357,31 @@ class AppLocalizationsNl extends AppLocalizations {
   String get notAuthenticated => '[NL] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[NL] Privacy request sent to your parents! (Dutch)';
+  String get privacyRequestSentToYourParents => '[NL] Privacy request sent to your parents! (Dutch)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[NL] Client deleted successfully! (Dutch)';
+  String get clientDeletedSuccessfully => '[NL] Client deleted successfully! (Dutch)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[NL] Failed to cancel subscription (Dutch)';
+  String get failedToCancelSubscription => '[NL] Failed to cancel subscription (Dutch)';
 
   @override
   String get allLanguages => '[NL] All Languages (Dutch)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[NL] Slot deleted successfully (Dutch)';
+  String get slotDeletedSuccessfully => '[NL] Slot deleted successfully (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN => '[NL] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Parents must approve before children can join (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Parents must approve before children can join (Dutch)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[NL] Subscribe to Pro (€14.99/mo) (Dutch)';
+  String get subscribeToPro1499mo => '[NL] Subscribe to Pro (€14.99/mo) (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Business Availability Entry Screen - Coming Soon (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Business Availability Entry Screen - Coming Soon (Dutch)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1503,8 +1395,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get submitBooking => '[NL] Submit Booking (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Are you sure you want to cancel this appointment? (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Are you sure you want to cancel this appointment? (Dutch)';
 
   @override
   String get noUpcomingBookings => '[NL] No upcoming bookings (Dutch)';
@@ -1522,8 +1413,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get goToDashboard => '[NL] Go to Dashboard (Dutch)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[NL] Ambassador Quota Dashboard (Dutch)';
+  String get ambassadorQuotaDashboard => '[NL] Ambassador Quota Dashboard (Dutch)';
 
   @override
   String get adminSettings => '[NL] Admin Settings';
@@ -1561,8 +1451,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[NL] Client added successfully! (Dutch)';
+  String get clientAddedSuccessfully => '[NL] Client added successfully! (Dutch)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1580,8 +1469,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get bookAppointment => '[NL] Book Appointment (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[NL] Delete (Dutch)';
@@ -1596,15 +1484,13 @@ class AppLocalizationsNl extends AppLocalizations {
   String get manageSubscription => '[NL] Manage Subscription (Dutch)';
 
   @override
-  String get requiresInstallFallback =>
-      '[NL] Requires Install Fallback (Dutch)';
+  String get requiresInstallFallback => '[NL] Requires Install Fallback (Dutch)';
 
   @override
   String get paymentConfirmation => '[NL] Payment Confirmation (Dutch)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[NL] Promo applied! Your next bill is free. (Dutch)';
+  String get promoAppliedYourNextBillIsFree => '[NL] Promo applied! Your next bill is free. (Dutch)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1615,16 +1501,13 @@ class AppLocalizationsNl extends AppLocalizations {
   String get errorLoadingSlots => '[NL] Error loading slots (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Allow other users to find and join this game (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Allow other users to find and join this game (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Business Onboarding Screen - Coming Soon (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Business Onboarding Screen - Coming Soon (Dutch)';
 
   @override
-  String get activateBusinessProfile =>
-      '[NL] Activate Business Profile (Dutch)';
+  String get activateBusinessProfile => '[NL] Activate Business Profile (Dutch)';
 
   @override
   String get contentNotFound => '[NL] Content not found (Dutch)';
@@ -1666,8 +1549,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get shareLink => '[NL] Share Link (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN => '[NL] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[NL] Delete Appointment (Dutch)';
@@ -1687,12 +1569,10 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[NL] Update your business information (Dutch)';
+  String get updateYourBusinessInformation => '[NL] Update your business information (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN => '[NL] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[NL] Parent Dashboard (Dutch)';
@@ -1715,12 +1595,10 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Studio booking is only available on web (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Studio booking is only available on web (Dutch)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[NL] Error loading branches: \$e (Dutch)';
+  String get errorLoadingBranchesE => '[NL] Error loading branches: \$e (Dutch)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1736,15 +1614,13 @@ class AppLocalizationsNl extends AppLocalizations {
   String get none => '[NL] None (Dutch)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[NL] Failed to update consent: \$e (Dutch)';
+  String get failedToUpdateConsentE => '[NL] Failed to update consent: \$e (Dutch)';
 
   @override
   String get welcome1 => '[NL] Welcome (Dutch)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[NL] Failed to create session: \$e (Dutch)';
+  String get failedToCreateSessionE => '[NL] Failed to create session: \$e (Dutch)';
 
   @override
   String get inviteContact => '[NL] Invite Contact (Dutch)';
@@ -1753,8 +1629,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get surveyEditor => '[NL] Survey Editor (Dutch)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[NL] Failed to start Basic subscription: \$e (Dutch)';
+  String get failedToStartBasicSubscriptionE => '[NL] Failed to start Basic subscription: \$e (Dutch)';
 
   @override
   String get mySchedule => '[NL] My Schedule (Dutch)';
@@ -1774,8 +1649,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[NL] Settings saved successfully! (Dutch)';
+  String get settingsSavedSuccessfully => '[NL] Settings saved successfully! (Dutch)';
 
   @override
   String get linkCopiedToClipboard => '[NL] Link copied to clipboard! (Dutch)';
@@ -1795,8 +1669,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[NL] Room deleted successfully! (Dutch)';
+  String get roomDeletedSuccessfully => '[NL] Room deleted successfully! (Dutch)';
 
   @override
   String get businessCalendar => '[NL] Business Calendar (Dutch)';
@@ -1861,8 +1734,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get cancel1 => '[NL] Cancel (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Subscription activated successfully! (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Subscription activated successfully! (Dutch)';
 
   @override
   String activityLogaction(Object action) {
@@ -1873,8 +1745,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get broadcast => '[NL] Broadcast (Dutch)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[NL] No events scheduled this week (Dutch)';
+  String get noEventsScheduledThisWeek => '[NL] No events scheduled this week (Dutch)';
 
   @override
   String get googleCalendar => '[NL] Google Calendar (Dutch)';
@@ -1886,8 +1757,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get childDashboard => '[NL] Child Dashboard (Dutch)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[NL] Failed to upload background: \$e (Dutch)';
+  String get failedToUploadBackgroundE => '[NL] Failed to upload background: \$e (Dutch)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1906,8 +1776,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get noAppointments => '[NL] No appointments (Dutch)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[NL] • Unlimited bookings per week (Dutch)';
+  String get unlimitedBookingsPerWeek => '[NL] • Unlimited bookings per week (Dutch)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1915,19 +1784,16 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[NL] Scheduled at: \$scheduledAt (Dutch)';
+  String get scheduledAtScheduledat => '[NL] Scheduled at: \$scheduledAt (Dutch)';
 
   @override
   String get selectStaff => '[NL] Select Staff (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Subscription cancelled successfully (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Subscription cancelled successfully (Dutch)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[NL] Cancel Appointment (Dutch)';
@@ -1941,8 +1807,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get businessSignup => '[NL] Business Signup (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Business Completion Screen - Coming Soon (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Business Completion Screen - Coming Soon (Dutch)';
 
   @override
   String get createGame1 => '[NL] Create Game (Dutch)';
@@ -1956,8 +1821,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get pleaseEnterAPromoCode => '[NL] Please enter a promo code (Dutch)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[NL] Error loading availability: \$e (Dutch)';
+  String get errorLoadingAvailabilityE => '[NL] Error loading availability: \$e (Dutch)';
 
   @override
   String get parentalControls => '[NL] Parental Controls (Dutch)';
@@ -1966,15 +1830,13 @@ class AppLocalizationsNl extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[NL] Child linked successfully! (Dutch)';
+  String get childLinkedSuccessfully => '[NL] Child linked successfully! (Dutch)';
 
   @override
   String get create => '[NL] Create (Dutch)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[NL] No external meetings found. (Dutch)';
+  String get noExternalMeetingsFound => '[NL] No external meetings found. (Dutch)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1982,15 +1844,13 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[NL] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[NL] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[NL] Scheduler Screen (Dutch)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[NL] Client updated successfully! (Dutch)';
+  String get clientUpdatedSuccessfully => '[NL] Client updated successfully! (Dutch)';
 
   @override
   String get surveyResponses => '[NL] Survey Responses (Dutch)';
@@ -2016,12 +1876,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get errorLoadingEvents => '[NL] Error loading events (Dutch)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[NL] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[NL] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[NL] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[NL] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[NL] Success (Dutch)';
@@ -2040,12 +1898,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get readWrite => '[NL] Read & Write (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Redirecting to Stripe checkout for Basic plan... (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Redirecting to Stripe checkout for Basic plan... (Dutch)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[NL] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[NL] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[NL] Pick Date (Dutch)';
@@ -2081,12 +1937,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get businessLogin => '[NL] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[NL] Invoice created successfully! (Dutch)';
+  String get invoiceCreatedSuccessfully => '[NL] Invoice created successfully! (Dutch)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[NL] No time series data available (Dutch)';
+  String get noTimeSeriesDataAvailable => '[NL] No time series data available (Dutch)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2099,8 +1953,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[NL] Failed to send privacy request: \$e (Dutch)';
+  String get failedToSendPrivacyRequestE => '[NL] Failed to send privacy request: \$e (Dutch)';
 
   @override
   String get chooseYourPlan => '[NL] Choose Your Plan (Dutch)';
@@ -2115,8 +1968,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get eventCreated => '[NL] Event created (Dutch)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[NL] Subscribe to Basic (€4.99/mo) (Dutch)';
+  String get subscribeToBasic499mo => '[NL] Subscribe to Basic (€4.99/mo) (Dutch)';
 
   @override
   String get completion => '[NL] Completion (Dutch)';
@@ -2137,12 +1989,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get deleteSurvey => '[NL] Delete Survey (Dutch)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[NL] Game approved successfully! (Dutch)';
+  String get gameApprovedSuccessfully => '[NL] Game approved successfully! (Dutch)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[NL] Error loading permissions: \$error (Dutch)';
+  String get errorLoadingPermissionsError => '[NL] Error loading permissions: \$error (Dutch)';
 
   @override
   String get referrals => '[NL] Referrals (Dutch)';
@@ -2184,8 +2034,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get organizations => '[NL] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[NL] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[NL] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[NL] Create New Game (Dutch)';
@@ -2194,12 +2043,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get next1 => '[NL] Next (Dutch)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[NL] Background uploaded successfully! (Dutch)';
+  String get backgroundUploadedSuccessfully => '[NL] Background uploaded successfully! (Dutch)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[NL] No appointment requests found. (Dutch)';
+  String get noAppointmentRequestsFound => '[NL] No appointment requests found. (Dutch)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2226,8 +2073,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[NL] Failed to create game: \$e (Dutch)';
@@ -2236,8 +2082,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get noChartDataAvailable => '[NL] No chart data available (Dutch)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[NL] • Phone-based booking system (Dutch)';
+  String get phonebasedBookingSystem => '[NL] • Phone-based booking system (Dutch)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2246,8 +2091,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get invoices => '[NL] Invoices (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2274,12 +2118,10 @@ class AppLocalizationsNl extends AppLocalizations {
   String get iDoNotConsent => '[NL] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] No clients found. Add your first client! (Dutch)';
+  String get REDACTED_TOKEN => '[NL] No clients found. Add your first client! (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN => '[NL] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[NL] Group: \$groupId';
@@ -2302,8 +2144,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[NL] • CRM dashboard with analytics (Dutch)';
+  String get crmDashboardWithAnalytics => '[NL] • CRM dashboard with analytics (Dutch)';
 
   @override
   String get contentLibrary1 => '[NL] Content Library (Dutch)';
@@ -2315,30 +2156,25 @@ class AppLocalizationsNl extends AppLocalizations {
   String get subscriptionManagement => '[NL] Subscription Management (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Monetization settings will be implemented here (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Monetization settings will be implemented here (Dutch)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[NL] Failed to apply promo code: \$e (Dutch)';
+  String get failedToApplyPromoCodeE => '[NL] Failed to apply promo code: \$e (Dutch)';
 
   @override
   String get editProvider => '[NL] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[NL] Localization Contribution (Dutch)';
+  String get localizationContribution => '[NL] Localization Contribution (Dutch)';
 
   @override
   String get parentalConsent => '[NL] Parental Consent (Dutch)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[NL] Business Signup Screen - Coming Soon (Dutch)';
+  String get businessSignupScreenComingSoon => '[NL] Business Signup Screen - Coming Soon (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[NL] Are you sure you want to delete this appointment? (Dutch)';
+  String get REDACTED_TOKEN => '[NL] Are you sure you want to delete this appointment? (Dutch)';
 
   @override
   String get syncAppointment => '[NL] Sync Appointment (Dutch)';
@@ -2350,15 +2186,13 @@ class AppLocalizationsNl extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[NL] Business Setup Screen - Coming Soon (Dutch)';
+  String get businessSetupScreenComingSoon => '[NL] Business Setup Screen - Coming Soon (Dutch)';
 
   @override
   String get edit1 => '[NL] Edit (Dutch)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[NL] No events scheduled this month (Dutch)';
+  String get noEventsScheduledThisMonth => '[NL] No events scheduled this month (Dutch)';
 
   @override
   String get businessDashboard => '[NL] Business Dashboard (Dutch)';
@@ -2372,8 +2206,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[NL] Manage Staff Availability (Dutch)';
+  String get manageStaffAvailability => '[NL] Manage Staff Availability (Dutch)';
 
   @override
   String get noMissingTranslations => '[NL] No missing translations (Dutch)';
@@ -2390,8 +2223,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get noUsers => '[NL] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[NL] Error loading referral code (Dutch)';
+  String get errorLoadingReferralCode => '[NL] Error loading referral code (Dutch)';
 
   @override
   String get allCountries => '[NL] All Countries (Dutch)';
@@ -2406,8 +2238,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get deleteMessage => '[NL] Delete Message (Dutch)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[NL] changeRole (TRANSLATE)';
@@ -2429,8 +2260,7 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[NL] Upgrade to Business (Dutch)';
@@ -2456,8 +2286,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[NL] View Responses (Dutch)';
@@ -2486,8 +2315,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';

@@ -74,8 +74,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get search => '[RO] Caută';
 
   @override
-  String get cancelInviteConfirmation =>
-      '[RO] [RO] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => '[RO] [RO] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -86,15 +85,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get revokeAccess => '[RO] Revocă acces';
 
   @override
-  String get saveGroupForRecognition =>
-      '[RO] Salvează grup pentru recunoaștere';
+  String get saveGroupForRecognition => '[RO] Salvează grup pentru recunoaștere';
 
   @override
   String get playtimeLiveScheduled => '[RO] [RO] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation =>
-      '[RO] [RO] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => '[RO] [RO] Are you sure you want to revoke access?';
 
   @override
   String get download => '[RO] Descarcă';
@@ -188,8 +185,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully =>
-      '[RO] [RO] Meeting shared successfully';
+  String get meetingSharedSuccessfully => '[RO] [RO] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[RO] [RO] Welcome to Playtime';
@@ -207,8 +203,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get cut => '[RO] Decupează';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      '[RO] [RO] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => '[RO] [RO] Invite cancelled successfully';
 
   @override
   String get retry => '[RO] Reîncearcă';
@@ -288,8 +283,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get scheduleForLater => '[RO] Programează pentru mai târziu';
 
   @override
-  String get accessRevokedSuccessfully =>
-      '[RO] [RO] Access revoked successfully';
+  String get accessRevokedSuccessfully => '[RO] [RO] Access revoked successfully';
 
   @override
   String type(Object type) {
@@ -414,8 +408,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get dashboard => '[RO] [RO] Dashboard';
 
   @override
-  String get noPermissionForBroadcast =>
-      '[RO] Fără permisiune pentru broadcast';
+  String get noPermissionForBroadcast => '[RO] Fără permisiune pentru broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[RO] Playtime Games – Admin';
@@ -492,8 +485,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get playtimeEnterGameName => '[RO] [RO] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[RO] [RO] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '[RO] [RO] Please login to access family features';
 
   @override
   String get myInvites => '[RO] [RO] My Invites';
@@ -553,8 +545,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[RO] [RO] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[RO] [RO] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[RO] Admin Metrics';
@@ -575,52 +566,40 @@ class AppLocalizationsRo extends AppLocalizations {
   String get contentLibrary => '[RO] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[RO] No account found with this email address.';
+  String get authErrorUserNotFound => '[RO] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[RO] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[RO] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[RO] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[RO] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[RO] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[RO] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[RO] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[RO] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[RO] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[RO] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[RO] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[RO] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[RO] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[RO] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[RO] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[RO] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN => '[RO] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[RO] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[RO] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[RO] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[RO] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -637,24 +616,19 @@ class AppLocalizationsRo extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[RO] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[RO] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[RO] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[RO] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] The verification code is invalid.';
+  String get REDACTED_TOKEN => '[RO] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[RO] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[RO] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Please enter the verification code.';
+  String get REDACTED_TOKEN => '[RO] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[RO] Missing verification ID.';
@@ -666,56 +640,43 @@ class AppLocalizationsRo extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[RO] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[RO] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[RO] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[RO] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[RO] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[RO] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[RO] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN => '[RO] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Multi-factor information not found.';
+  String get REDACTED_TOKEN => '[RO] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Missing multi-factor session.';
+  String get REDACTED_TOKEN => '[RO] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Invalid multi-factor session.';
+  String get REDACTED_TOKEN => '[RO] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] This second factor is already in use.';
+  String get REDACTED_TOKEN => '[RO] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN => '[RO] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[RO] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[RO] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Email change requires verification.';
+  String get REDACTED_TOKEN => '[RO] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] This phone number is already in use.';
+  String get REDACTED_TOKEN => '[RO] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[RO] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[RO] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[RO] The ID token is invalid.';
@@ -727,12 +688,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[RO] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[RO] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[RO] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[RO] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[RO] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[RO] Invalid custom claims provided.';
@@ -741,87 +700,70 @@ class AppLocalizationsRo extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[RO] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[RO] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[RO] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[RO] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[RO] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[RO] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN => '[RO] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[RO] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[RO] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[RO] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[RO] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[RO] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[RO] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN => '[RO] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[RO] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[RO] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[RO] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN => '[RO] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[RO] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[RO] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN => '[RO] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[RO] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[RO] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[RO] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[RO] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[RO] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[RO] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN => '[RO] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[RO] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[RO] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[RO] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN => '[RO] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[RO] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[RO] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[RO] Missing continue URL.';
@@ -836,8 +778,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get authErrorMissingUid => '[RO] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Missing OAuth client secret.';
+  String get REDACTED_TOKEN => '[RO] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[RO] Firebase project not found.';
@@ -846,23 +787,19 @@ class AppLocalizationsRo extends AppLocalizations {
   String get authErrorReservedClaims => '[RO] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[RO] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[RO] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[RO] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[RO] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[RO] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN => '[RO] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[RO] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[RO] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -911,8 +848,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Virtual session created! Inviting friends... (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Virtual session created! Inviting friends... (Romanian)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -953,15 +889,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[RO] Subscription unavailable (Romanian)';
+  String get subscriptionUnavailable => '[RO] Subscription unavailable (Romanian)';
 
   @override
   String get confirmBooking => '[RO] Confirm Booking (Romanian)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[RO] Failed to update permission: \$e (Romanian)';
+  String get failedToUpdatePermissionE => '[RO] Failed to update permission: \$e (Romanian)';
 
   @override
   String get reject => '[RO] Reject (Romanian)';
@@ -983,15 +917,13 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get noContentAvailableYet =>
-      '[RO] No content available yet (Romanian)';
+  String get noContentAvailableYet => '[RO] No content available yet (Romanian)';
 
   @override
   String get resolve => '[RO] Resolve (Romanian)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[RO] Error loading surveys: \$error (Romanian)';
+  String get errorLoadingSurveysError => '[RO] Error loading surveys: \$error (Romanian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -999,8 +931,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[RO] Get help with your account (Romanian)';
+  String get getHelpWithYourAccount => '[RO] Get help with your account (Romanian)';
 
   @override
   String get pay => '[RO] Pay (Romanian)';
@@ -1015,8 +946,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[RO] Changes saved successfully! (Romanian)';
+  String get changesSavedSuccessfully => '[RO] Changes saved successfully! (Romanian)';
 
   @override
   String get createNewInvoice => '[RO] Create New Invoice (Romanian)';
@@ -1036,8 +966,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get profileSaved => '[RO] Profile saved! (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1068,8 +997,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] You will receive a confirmation email shortly. (Romanian)';
+  String get REDACTED_TOKEN => '[RO] You will receive a confirmation email shortly. (Romanian)';
 
   @override
   String get addQuestion => '[RO] Add Question (Romanian)';
@@ -1098,26 +1026,22 @@ class AppLocalizationsRo extends AppLocalizations {
   String get surveyManagement => '[RO] Survey Management (Romanian)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[RO] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[RO] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[RO] No rooms found. Add your first room! (Romanian)';
+  String get noRoomsFoundAddYourFirstRoom => '[RO] No rooms found. Add your first room! (Romanian)';
 
   @override
   String get readOurPrivacyPolicy => '[RO] Read our privacy policy (Romanian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[RO] Could not open privacy policy (Romanian)';
+  String get couldNotOpenPrivacyPolicy => '[RO] Could not open privacy policy (Romanian)';
 
   @override
   String get refresh1 => '[RO] Refresh (Romanian)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[RO] Room updated successfully! (Romanian)';
+  String get roomUpdatedSuccessfully => '[RO] Room updated successfully! (Romanian)';
 
   @override
   String get contentDetail => '[RO] Content Detail (Romanian)';
@@ -1126,8 +1050,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get cancelSubscription => '[RO] Cancel Subscription (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Successfully registered as Ambassador! (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Successfully registered as Ambassador! (Romanian)';
 
   @override
   String get save1 => '[RO] Save (Romanian)';
@@ -1136,8 +1059,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get copy1 => '[RO] Copy (Romanian)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[RO] Failed to send invitation: \$e (Romanian)';
+  String get failedToSendInvitationE => '[RO] Failed to send invitation: \$e (Romanian)';
 
   @override
   String get surveyScore => '[RO] Survey Score (Romanian)';
@@ -1154,20 +1076,16 @@ class AppLocalizationsRo extends AppLocalizations {
   String get responseDetail => '[RO] Response Detail (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[RO] Failed to start Pro subscription: \$e (Romanian)';
+  String get failedToStartProSubscriptionE => '[RO] Failed to start Pro subscription: \$e (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Business Dashboard Entry Screen - Coming Soon (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Business Dashboard Entry Screen - Coming Soon (Romanian)';
 
   @override
   String get contentFilter => '[RO] Content Filter (Romanian)';
@@ -1189,8 +1107,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Business CRM Entry Screen - Coming Soon (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Business CRM Entry Screen - Coming Soon (Romanian)';
 
   @override
   String get adminDashboard => '[RO] Admin Dashboard';
@@ -1201,16 +1118,13 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[RO] Error loading dashboard: \$error (Romanian)';
+  String get errorLoadingDashboardError => '[RO] Error loading dashboard: \$error (Romanian)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[RO] Game deleted successfully! (Romanian)';
+  String get gameDeletedSuccessfully => '[RO] Game deleted successfully! (Romanian)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[RO] View responses - Coming soon! (Romanian)';
+  String get viewResponsesComingSoon => '[RO] View responses - Coming soon! (Romanian)';
 
   @override
   String get deleteProvider => '[RO] Delete Provider';
@@ -1219,8 +1133,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get errorLoadingRewards => '[RO] Error loading rewards (Romanian)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[RO] Failed to delete account: \$e (Romanian)';
+  String get failedToDeleteAccountE => '[RO] Failed to delete account: \$e (Romanian)';
 
   @override
   String get invited1 => '[RO] Invited (Romanian)';
@@ -1235,8 +1148,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get noEvents => '[RO] No events (Romanian)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[RO] Game created successfully! (Romanian)';
+  String get gameCreatedSuccessfully => '[RO] Game created successfully! (Romanian)';
 
   @override
   String get add1 => '[RO] Add (Romanian)';
@@ -1256,12 +1168,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get clients => '[RO] Clients (Romanian)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[RO] No ambassador data available (Romanian)';
+  String get noAmbassadorDataAvailable => '[RO] No ambassador data available (Romanian)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[RO] Background deleted successfully! (Romanian)';
+  String get backgroundDeletedSuccessfully => '[RO] Background deleted successfully! (Romanian)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1269,8 +1179,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[RO] No analytics data available yet. (Romanian)';
+  String get noAnalyticsDataAvailableYet => '[RO] No analytics data available yet. (Romanian)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1278,8 +1187,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Business Phone Booking Entry Screen - Coming Soon (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Business Phone Booking Entry Screen - Coming Soon (Romanian)';
 
   @override
   String get verification => '[RO] Verification (Romanian)';
@@ -1326,8 +1234,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get businessProfile => '[RO] Business Profile (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Business Booking Entry Screen - Coming Soon (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Business Booking Entry Screen - Coming Soon (Romanian)';
 
   @override
   String get createNewSurvey => '[RO] Create New Survey (Romanian)';
@@ -1351,8 +1258,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get loginFailedE => '[RO] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[RO] Invitation sent successfully! (Romanian)';
+  String get invitationSentSuccessfully => '[RO] Invitation sent successfully! (Romanian)';
 
   @override
   String get registering => '[RO] Registering... (Romanian)';
@@ -1366,16 +1272,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get home1 => '[RO] Home (Romanian)';
 
   @override
-  String get errorSavingSettingsE =>
-      '[RO] Error saving settings: \$e (Romanian)';
+  String get errorSavingSettingsE => '[RO] Error saving settings: \$e (Romanian)';
 
   @override
-  String get appVersionAndInformation =>
-      '[RO] App version and information (Romanian)';
+  String get appVersionAndInformation => '[RO] App version and information (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Business Subscription Entry Screen - Coming Soon (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Business Subscription Entry Screen - Coming Soon (Romanian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1383,8 +1286,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Your payment has been processed successfully. (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Your payment has been processed successfully. (Romanian)';
 
   @override
   String get errorE => '[RO] Error: \$e (Romanian)';
@@ -1393,8 +1295,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get viewAll1 => '[RO] View All (Romanian)';
 
   @override
-  String get editSurveyComingSoon =>
-      '[RO] Edit survey - Coming soon! (Romanian)';
+  String get editSurveyComingSoon => '[RO] Edit survey - Coming soon! (Romanian)';
 
   @override
   String get enterOtp => '[RO] Enter OTP (Romanian)';
@@ -1403,8 +1304,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get payment => '[RO] Payment (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Automatically confirm new booking requests (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Automatically confirm new booking requests (Romanian)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1417,8 +1317,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[RO] Please sign in to upload a background (Romanian)';
+  String get pleaseSignInToUploadABackground => '[RO] Please sign in to upload a background (Romanian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1435,22 +1334,19 @@ class AppLocalizationsRo extends AppLocalizations {
   String get autoconfirmBookings => '[RO] Auto-Confirm Bookings (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Redirecting to Stripe checkout for Pro plan... (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Redirecting to Stripe checkout for Pro plan... (Romanian)';
 
   @override
   String get exportAsCsv => '[RO] Export as CSV (Romanian)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[RO] Delete functionality coming soon! (Romanian)';
+  String get deleteFunctionalityComingSoon => '[RO] Delete functionality coming soon! (Romanian)';
 
   @override
   String get editClient => '[RO] Edit Client (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Are you sure you want to delete this message? (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Are you sure you want to delete this message? (Romanian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1461,39 +1357,31 @@ class AppLocalizationsRo extends AppLocalizations {
   String get notAuthenticated => '[RO] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[RO] Privacy request sent to your parents! (Romanian)';
+  String get privacyRequestSentToYourParents => '[RO] Privacy request sent to your parents! (Romanian)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[RO] Client deleted successfully! (Romanian)';
+  String get clientDeletedSuccessfully => '[RO] Client deleted successfully! (Romanian)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[RO] Failed to cancel subscription (Romanian)';
+  String get failedToCancelSubscription => '[RO] Failed to cancel subscription (Romanian)';
 
   @override
   String get allLanguages => '[RO] All Languages (Romanian)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[RO] Slot deleted successfully (Romanian)';
+  String get slotDeletedSuccessfully => '[RO] Slot deleted successfully (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN => '[RO] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Parents must approve before children can join (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Parents must approve before children can join (Romanian)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[RO] Subscribe to Pro (€14.99/mo) (Romanian)';
+  String get subscribeToPro1499mo => '[RO] Subscribe to Pro (€14.99/mo) (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Business Availability Entry Screen - Coming Soon (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Business Availability Entry Screen - Coming Soon (Romanian)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1507,8 +1395,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get submitBooking => '[RO] Submit Booking (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Are you sure you want to cancel this appointment? (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Are you sure you want to cancel this appointment? (Romanian)';
 
   @override
   String get noUpcomingBookings => '[RO] No upcoming bookings (Romanian)';
@@ -1526,8 +1413,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get goToDashboard => '[RO] Go to Dashboard (Romanian)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[RO] Ambassador Quota Dashboard (Romanian)';
+  String get ambassadorQuotaDashboard => '[RO] Ambassador Quota Dashboard (Romanian)';
 
   @override
   String get adminSettings => '[RO] Admin Settings';
@@ -1565,8 +1451,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[RO] Client added successfully! (Romanian)';
+  String get clientAddedSuccessfully => '[RO] Client added successfully! (Romanian)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1584,8 +1469,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get bookAppointment => '[RO] Book Appointment (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[RO] Delete (Romanian)';
@@ -1600,15 +1484,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get manageSubscription => '[RO] Manage Subscription (Romanian)';
 
   @override
-  String get requiresInstallFallback =>
-      '[RO] Requires Install Fallback (Romanian)';
+  String get requiresInstallFallback => '[RO] Requires Install Fallback (Romanian)';
 
   @override
   String get paymentConfirmation => '[RO] Payment Confirmation (Romanian)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[RO] Promo applied! Your next bill is free. (Romanian)';
+  String get promoAppliedYourNextBillIsFree => '[RO] Promo applied! Your next bill is free. (Romanian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1619,16 +1501,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get errorLoadingSlots => '[RO] Error loading slots (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Allow other users to find and join this game (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Allow other users to find and join this game (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Business Onboarding Screen - Coming Soon (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Business Onboarding Screen - Coming Soon (Romanian)';
 
   @override
-  String get activateBusinessProfile =>
-      '[RO] Activate Business Profile (Romanian)';
+  String get activateBusinessProfile => '[RO] Activate Business Profile (Romanian)';
 
   @override
   String get contentNotFound => '[RO] Content not found (Romanian)';
@@ -1670,8 +1549,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get shareLink => '[RO] Share Link (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN => '[RO] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[RO] Delete Appointment (Romanian)';
@@ -1691,12 +1569,10 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[RO] Update your business information (Romanian)';
+  String get updateYourBusinessInformation => '[RO] Update your business information (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN => '[RO] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[RO] Parent Dashboard (Romanian)';
@@ -1719,12 +1595,10 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Studio booking is only available on web (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Studio booking is only available on web (Romanian)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[RO] Error loading branches: \$e (Romanian)';
+  String get errorLoadingBranchesE => '[RO] Error loading branches: \$e (Romanian)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1740,15 +1614,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get none => '[RO] None (Romanian)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[RO] Failed to update consent: \$e (Romanian)';
+  String get failedToUpdateConsentE => '[RO] Failed to update consent: \$e (Romanian)';
 
   @override
   String get welcome1 => '[RO] Welcome (Romanian)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[RO] Failed to create session: \$e (Romanian)';
+  String get failedToCreateSessionE => '[RO] Failed to create session: \$e (Romanian)';
 
   @override
   String get inviteContact => '[RO] Invite Contact (Romanian)';
@@ -1757,8 +1629,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get surveyEditor => '[RO] Survey Editor (Romanian)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[RO] Failed to start Basic subscription: \$e (Romanian)';
+  String get failedToStartBasicSubscriptionE => '[RO] Failed to start Basic subscription: \$e (Romanian)';
 
   @override
   String get mySchedule => '[RO] My Schedule (Romanian)';
@@ -1778,12 +1649,10 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[RO] Settings saved successfully! (Romanian)';
+  String get settingsSavedSuccessfully => '[RO] Settings saved successfully! (Romanian)';
 
   @override
-  String get linkCopiedToClipboard =>
-      '[RO] Link copied to clipboard! (Romanian)';
+  String get linkCopiedToClipboard => '[RO] Link copied to clipboard! (Romanian)';
 
   @override
   String get accept1 => '[RO] Accept (Romanian)';
@@ -1800,8 +1669,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[RO] Room deleted successfully! (Romanian)';
+  String get roomDeletedSuccessfully => '[RO] Room deleted successfully! (Romanian)';
 
   @override
   String get businessCalendar => '[RO] Business Calendar (Romanian)';
@@ -1866,8 +1734,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get cancel1 => '[RO] Cancel (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Subscription activated successfully! (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Subscription activated successfully! (Romanian)';
 
   @override
   String activityLogaction(Object action) {
@@ -1878,8 +1745,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get broadcast => '[RO] Broadcast (Romanian)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[RO] No events scheduled this week (Romanian)';
+  String get noEventsScheduledThisWeek => '[RO] No events scheduled this week (Romanian)';
 
   @override
   String get googleCalendar => '[RO] Google Calendar (Romanian)';
@@ -1891,8 +1757,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get childDashboard => '[RO] Child Dashboard (Romanian)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[RO] Failed to upload background: \$e (Romanian)';
+  String get failedToUploadBackgroundE => '[RO] Failed to upload background: \$e (Romanian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1911,8 +1776,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get noAppointments => '[RO] No appointments (Romanian)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[RO] • Unlimited bookings per week (Romanian)';
+  String get unlimitedBookingsPerWeek => '[RO] • Unlimited bookings per week (Romanian)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1920,19 +1784,16 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[RO] Scheduled at: \$scheduledAt (Romanian)';
+  String get scheduledAtScheduledat => '[RO] Scheduled at: \$scheduledAt (Romanian)';
 
   @override
   String get selectStaff => '[RO] Select Staff (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Subscription cancelled successfully (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Subscription cancelled successfully (Romanian)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[RO] Cancel Appointment (Romanian)';
@@ -1946,8 +1807,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get businessSignup => '[RO] Business Signup (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Business Completion Screen - Coming Soon (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Business Completion Screen - Coming Soon (Romanian)';
 
   @override
   String get createGame1 => '[RO] Create Game (Romanian)';
@@ -1958,12 +1818,10 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode =>
-      '[RO] Please enter a promo code (Romanian)';
+  String get pleaseEnterAPromoCode => '[RO] Please enter a promo code (Romanian)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[RO] Error loading availability: \$e (Romanian)';
+  String get errorLoadingAvailabilityE => '[RO] Error loading availability: \$e (Romanian)';
 
   @override
   String get parentalControls => '[RO] Parental Controls (Romanian)';
@@ -1972,15 +1830,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[RO] Child linked successfully! (Romanian)';
+  String get childLinkedSuccessfully => '[RO] Child linked successfully! (Romanian)';
 
   @override
   String get create => '[RO] Create (Romanian)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[RO] No external meetings found. (Romanian)';
+  String get noExternalMeetingsFound => '[RO] No external meetings found. (Romanian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1988,15 +1844,13 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[RO] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[RO] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[RO] Scheduler Screen (Romanian)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[RO] Client updated successfully! (Romanian)';
+  String get clientUpdatedSuccessfully => '[RO] Client updated successfully! (Romanian)';
 
   @override
   String get surveyResponses => '[RO] Survey Responses (Romanian)';
@@ -2022,12 +1876,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get errorLoadingEvents => '[RO] Error loading events (Romanian)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[RO] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[RO] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[RO] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[RO] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[RO] Success (Romanian)';
@@ -2046,12 +1898,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get readWrite => '[RO] Read & Write (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Redirecting to Stripe checkout for Basic plan... (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Redirecting to Stripe checkout for Basic plan... (Romanian)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[RO] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[RO] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[RO] Pick Date (Romanian)';
@@ -2087,12 +1937,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get businessLogin => '[RO] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[RO] Invoice created successfully! (Romanian)';
+  String get invoiceCreatedSuccessfully => '[RO] Invoice created successfully! (Romanian)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[RO] No time series data available (Romanian)';
+  String get noTimeSeriesDataAvailable => '[RO] No time series data available (Romanian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2105,8 +1953,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[RO] Failed to send privacy request: \$e (Romanian)';
+  String get failedToSendPrivacyRequestE => '[RO] Failed to send privacy request: \$e (Romanian)';
 
   @override
   String get chooseYourPlan => '[RO] Choose Your Plan (Romanian)';
@@ -2121,15 +1968,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get eventCreated => '[RO] Event created (Romanian)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[RO] Subscribe to Basic (€4.99/mo) (Romanian)';
+  String get subscribeToBasic499mo => '[RO] Subscribe to Basic (€4.99/mo) (Romanian)';
 
   @override
   String get completion => '[RO] Completion (Romanian)';
 
   @override
-  String get supportTicketSubmitted =>
-      '[RO] Support ticket submitted (Romanian)';
+  String get supportTicketSubmitted => '[RO] Support ticket submitted (Romanian)';
 
   @override
   String get monetizationSettings => '[RO] Monetization Settings (Romanian)';
@@ -2144,12 +1989,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get deleteSurvey => '[RO] Delete Survey (Romanian)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[RO] Game approved successfully! (Romanian)';
+  String get gameApprovedSuccessfully => '[RO] Game approved successfully! (Romanian)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[RO] Error loading permissions: \$error (Romanian)';
+  String get errorLoadingPermissionsError => '[RO] Error loading permissions: \$error (Romanian)';
 
   @override
   String get referrals => '[RO] Referrals (Romanian)';
@@ -2191,8 +2034,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get organizations => '[RO] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[RO] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[RO] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[RO] Create New Game (Romanian)';
@@ -2201,12 +2043,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get next1 => '[RO] Next (Romanian)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[RO] Background uploaded successfully! (Romanian)';
+  String get backgroundUploadedSuccessfully => '[RO] Background uploaded successfully! (Romanian)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[RO] No appointment requests found. (Romanian)';
+  String get noAppointmentRequestsFound => '[RO] No appointment requests found. (Romanian)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2233,19 +2073,16 @@ class AppLocalizationsRo extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE =>
-      '[RO] Failed to create game: \$e (Romanian)';
+  String get failedToCreateGameE => '[RO] Failed to create game: \$e (Romanian)';
 
   @override
   String get noChartDataAvailable => '[RO] No chart data available (Romanian)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[RO] • Phone-based booking system (Romanian)';
+  String get phonebasedBookingSystem => '[RO] • Phone-based booking system (Romanian)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2254,8 +2091,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get invoices => '[RO] Invoices (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2282,12 +2118,10 @@ class AppLocalizationsRo extends AppLocalizations {
   String get iDoNotConsent => '[RO] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] No clients found. Add your first client! (Romanian)';
+  String get REDACTED_TOKEN => '[RO] No clients found. Add your first client! (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN => '[RO] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[RO] Group: \$groupId';
@@ -2299,8 +2133,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get forward => '[RO] Forward (Romanian)';
 
   @override
-  String get roomAddedSuccessfully =>
-      '[RO] Room added successfully! (Romanian)';
+  String get roomAddedSuccessfully => '[RO] Room added successfully! (Romanian)';
 
   @override
   String get option => '[RO] • \$option (Romanian)';
@@ -2311,8 +2144,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[RO] • CRM dashboard with analytics (Romanian)';
+  String get crmDashboardWithAnalytics => '[RO] • CRM dashboard with analytics (Romanian)';
 
   @override
   String get contentLibrary1 => '[RO] Content Library (Romanian)';
@@ -2321,34 +2153,28 @@ class AppLocalizationsRo extends AppLocalizations {
   String get reply => '[RO] Reply (Romanian)';
 
   @override
-  String get subscriptionManagement =>
-      '[RO] Subscription Management (Romanian)';
+  String get subscriptionManagement => '[RO] Subscription Management (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Monetization settings will be implemented here (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Monetization settings will be implemented here (Romanian)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[RO] Failed to apply promo code: \$e (Romanian)';
+  String get failedToApplyPromoCodeE => '[RO] Failed to apply promo code: \$e (Romanian)';
 
   @override
   String get editProvider => '[RO] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[RO] Localization Contribution (Romanian)';
+  String get localizationContribution => '[RO] Localization Contribution (Romanian)';
 
   @override
   String get parentalConsent => '[RO] Parental Consent (Romanian)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[RO] Business Signup Screen - Coming Soon (Romanian)';
+  String get businessSignupScreenComingSoon => '[RO] Business Signup Screen - Coming Soon (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[RO] Are you sure you want to delete this appointment? (Romanian)';
+  String get REDACTED_TOKEN => '[RO] Are you sure you want to delete this appointment? (Romanian)';
 
   @override
   String get syncAppointment => '[RO] Sync Appointment (Romanian)';
@@ -2360,15 +2186,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[RO] Business Setup Screen - Coming Soon (Romanian)';
+  String get businessSetupScreenComingSoon => '[RO] Business Setup Screen - Coming Soon (Romanian)';
 
   @override
   String get edit1 => '[RO] Edit (Romanian)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[RO] No events scheduled this month (Romanian)';
+  String get noEventsScheduledThisMonth => '[RO] No events scheduled this month (Romanian)';
 
   @override
   String get businessDashboard => '[RO] Business Dashboard (Romanian)';
@@ -2382,8 +2206,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[RO] Manage Staff Availability (Romanian)';
+  String get manageStaffAvailability => '[RO] Manage Staff Availability (Romanian)';
 
   @override
   String get noMissingTranslations => '[RO] No missing translations (Romanian)';
@@ -2400,8 +2223,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get noUsers => '[RO] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[RO] Error loading referral code (Romanian)';
+  String get errorLoadingReferralCode => '[RO] Error loading referral code (Romanian)';
 
   @override
   String get allCountries => '[RO] All Countries (Romanian)';
@@ -2416,8 +2238,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get deleteMessage => '[RO] Delete Message (Romanian)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[RO] changeRole (TRANSLATE)';
@@ -2428,8 +2249,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[RO] Opening customer portal... (Romanian)';
+  String get openingCustomerPortal => '[RO] Opening customer portal... (Romanian)';
 
   @override
   String get signOut => '[RO] Sign Out (Romanian)';
@@ -2440,8 +2260,7 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[RO] Upgrade to Business (Romanian)';
@@ -2467,8 +2286,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[RO] View Responses (Romanian)';
@@ -2497,8 +2315,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';

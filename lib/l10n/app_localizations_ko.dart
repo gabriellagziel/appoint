@@ -408,8 +408,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get dashboard => '[KO] [KO] Dashboard';
 
   @override
-  String get noPermissionForBroadcast =>
-      '[KO] [KO] No permission for broadcast';
+  String get noPermissionForBroadcast => '[KO] [KO] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[KO] Playtime Games – Admin';
@@ -486,8 +485,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get playtimeEnterGameName => '[KO] [KO] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[KO] [KO] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '[KO] [KO] Please login to access family features';
 
   @override
   String get myInvites => '[KO] [KO] My Invites';
@@ -547,8 +545,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[KO] [KO] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[KO] [KO] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[KO] Admin Metrics';
@@ -569,52 +566,40 @@ class AppLocalizationsKo extends AppLocalizations {
   String get contentLibrary => '[KO] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[KO] No account found with this email address.';
+  String get authErrorUserNotFound => '[KO] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[KO] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[KO] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[KO] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[KO] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[KO] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[KO] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[KO] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[KO] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[KO] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[KO] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[KO] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[KO] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[KO] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[KO] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[KO] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[KO] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN => '[KO] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[KO] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[KO] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[KO] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[KO] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -631,24 +616,19 @@ class AppLocalizationsKo extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[KO] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[KO] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[KO] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[KO] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] The verification code is invalid.';
+  String get REDACTED_TOKEN => '[KO] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[KO] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[KO] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Please enter the verification code.';
+  String get REDACTED_TOKEN => '[KO] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[KO] Missing verification ID.';
@@ -660,56 +640,43 @@ class AppLocalizationsKo extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[KO] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[KO] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[KO] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[KO] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[KO] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[KO] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[KO] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN => '[KO] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Multi-factor information not found.';
+  String get REDACTED_TOKEN => '[KO] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Missing multi-factor session.';
+  String get REDACTED_TOKEN => '[KO] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Invalid multi-factor session.';
+  String get REDACTED_TOKEN => '[KO] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] This second factor is already in use.';
+  String get REDACTED_TOKEN => '[KO] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN => '[KO] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[KO] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[KO] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Email change requires verification.';
+  String get REDACTED_TOKEN => '[KO] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] This phone number is already in use.';
+  String get REDACTED_TOKEN => '[KO] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[KO] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[KO] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[KO] The ID token is invalid.';
@@ -721,12 +688,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[KO] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[KO] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[KO] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[KO] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[KO] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[KO] Invalid custom claims provided.';
@@ -735,87 +700,70 @@ class AppLocalizationsKo extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[KO] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[KO] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[KO] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[KO] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[KO] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[KO] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN => '[KO] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[KO] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[KO] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[KO] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[KO] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[KO] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[KO] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN => '[KO] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[KO] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[KO] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[KO] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN => '[KO] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[KO] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[KO] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN => '[KO] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[KO] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[KO] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[KO] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[KO] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[KO] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[KO] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN => '[KO] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[KO] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[KO] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[KO] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN => '[KO] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[KO] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[KO] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[KO] Missing continue URL.';
@@ -830,8 +778,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get authErrorMissingUid => '[KO] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Missing OAuth client secret.';
+  String get REDACTED_TOKEN => '[KO] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[KO] Firebase project not found.';
@@ -840,23 +787,19 @@ class AppLocalizationsKo extends AppLocalizations {
   String get authErrorReservedClaims => '[KO] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[KO] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[KO] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[KO] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[KO] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[KO] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN => '[KO] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[KO] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[KO] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -905,8 +848,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Virtual session created! Inviting friends... (Korean)';
+  String get REDACTED_TOKEN => '[KO] Virtual session created! Inviting friends... (Korean)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -947,15 +889,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[KO] Subscription unavailable (Korean)';
+  String get subscriptionUnavailable => '[KO] Subscription unavailable (Korean)';
 
   @override
   String get confirmBooking => '[KO] Confirm Booking (Korean)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[KO] Failed to update permission: \$e (Korean)';
+  String get failedToUpdatePermissionE => '[KO] Failed to update permission: \$e (Korean)';
 
   @override
   String get reject => '[KO] Reject (Korean)';
@@ -983,8 +923,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get resolve => '[KO] Resolve (Korean)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[KO] Error loading surveys: \$error (Korean)';
+  String get errorLoadingSurveysError => '[KO] Error loading surveys: \$error (Korean)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -992,8 +931,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[KO] Get help with your account (Korean)';
+  String get getHelpWithYourAccount => '[KO] Get help with your account (Korean)';
 
   @override
   String get pay => '[KO] Pay (Korean)';
@@ -1008,8 +946,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[KO] Changes saved successfully! (Korean)';
+  String get changesSavedSuccessfully => '[KO] Changes saved successfully! (Korean)';
 
   @override
   String get createNewInvoice => '[KO] Create New Invoice (Korean)';
@@ -1029,8 +966,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get profileSaved => '[KO] Profile saved! (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1061,8 +997,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] You will receive a confirmation email shortly. (Korean)';
+  String get REDACTED_TOKEN => '[KO] You will receive a confirmation email shortly. (Korean)';
 
   @override
   String get addQuestion => '[KO] Add Question (Korean)';
@@ -1091,26 +1026,22 @@ class AppLocalizationsKo extends AppLocalizations {
   String get surveyManagement => '[KO] Survey Management (Korean)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[KO] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[KO] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[KO] No rooms found. Add your first room! (Korean)';
+  String get noRoomsFoundAddYourFirstRoom => '[KO] No rooms found. Add your first room! (Korean)';
 
   @override
   String get readOurPrivacyPolicy => '[KO] Read our privacy policy (Korean)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[KO] Could not open privacy policy (Korean)';
+  String get couldNotOpenPrivacyPolicy => '[KO] Could not open privacy policy (Korean)';
 
   @override
   String get refresh1 => '[KO] Refresh (Korean)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[KO] Room updated successfully! (Korean)';
+  String get roomUpdatedSuccessfully => '[KO] Room updated successfully! (Korean)';
 
   @override
   String get contentDetail => '[KO] Content Detail (Korean)';
@@ -1119,8 +1050,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get cancelSubscription => '[KO] Cancel Subscription (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Successfully registered as Ambassador! (Korean)';
+  String get REDACTED_TOKEN => '[KO] Successfully registered as Ambassador! (Korean)';
 
   @override
   String get save1 => '[KO] Save (Korean)';
@@ -1129,8 +1059,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get copy1 => '[KO] Copy (Korean)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[KO] Failed to send invitation: \$e (Korean)';
+  String get failedToSendInvitationE => '[KO] Failed to send invitation: \$e (Korean)';
 
   @override
   String get surveyScore => '[KO] Survey Score (Korean)';
@@ -1147,20 +1076,16 @@ class AppLocalizationsKo extends AppLocalizations {
   String get responseDetail => '[KO] Response Detail (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[KO] Failed to start Pro subscription: \$e (Korean)';
+  String get failedToStartProSubscriptionE => '[KO] Failed to start Pro subscription: \$e (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Business Dashboard Entry Screen - Coming Soon (Korean)';
+  String get REDACTED_TOKEN => '[KO] Business Dashboard Entry Screen - Coming Soon (Korean)';
 
   @override
   String get contentFilter => '[KO] Content Filter (Korean)';
@@ -1182,8 +1107,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Business CRM Entry Screen - Coming Soon (Korean)';
+  String get REDACTED_TOKEN => '[KO] Business CRM Entry Screen - Coming Soon (Korean)';
 
   @override
   String get adminDashboard => '[KO] Admin Dashboard';
@@ -1194,16 +1118,13 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[KO] Error loading dashboard: \$error (Korean)';
+  String get errorLoadingDashboardError => '[KO] Error loading dashboard: \$error (Korean)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[KO] Game deleted successfully! (Korean)';
+  String get gameDeletedSuccessfully => '[KO] Game deleted successfully! (Korean)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[KO] View responses - Coming soon! (Korean)';
+  String get viewResponsesComingSoon => '[KO] View responses - Coming soon! (Korean)';
 
   @override
   String get deleteProvider => '[KO] Delete Provider';
@@ -1212,8 +1133,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get errorLoadingRewards => '[KO] Error loading rewards (Korean)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[KO] Failed to delete account: \$e (Korean)';
+  String get failedToDeleteAccountE => '[KO] Failed to delete account: \$e (Korean)';
 
   @override
   String get invited1 => '[KO] Invited (Korean)';
@@ -1228,8 +1148,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get noEvents => '[KO] No events (Korean)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[KO] Game created successfully! (Korean)';
+  String get gameCreatedSuccessfully => '[KO] Game created successfully! (Korean)';
 
   @override
   String get add1 => '[KO] Add (Korean)';
@@ -1249,12 +1168,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get clients => '[KO] Clients (Korean)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[KO] No ambassador data available (Korean)';
+  String get noAmbassadorDataAvailable => '[KO] No ambassador data available (Korean)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[KO] Background deleted successfully! (Korean)';
+  String get backgroundDeletedSuccessfully => '[KO] Background deleted successfully! (Korean)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1262,8 +1179,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[KO] No analytics data available yet. (Korean)';
+  String get noAnalyticsDataAvailableYet => '[KO] No analytics data available yet. (Korean)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1271,8 +1187,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Business Phone Booking Entry Screen - Coming Soon (Korean)';
+  String get REDACTED_TOKEN => '[KO] Business Phone Booking Entry Screen - Coming Soon (Korean)';
 
   @override
   String get verification => '[KO] Verification (Korean)';
@@ -1319,8 +1234,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get businessProfile => '[KO] Business Profile (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Business Booking Entry Screen - Coming Soon (Korean)';
+  String get REDACTED_TOKEN => '[KO] Business Booking Entry Screen - Coming Soon (Korean)';
 
   @override
   String get createNewSurvey => '[KO] Create New Survey (Korean)';
@@ -1344,8 +1258,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get loginFailedE => '[KO] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[KO] Invitation sent successfully! (Korean)';
+  String get invitationSentSuccessfully => '[KO] Invitation sent successfully! (Korean)';
 
   @override
   String get registering => '[KO] Registering... (Korean)';
@@ -1362,12 +1275,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get errorSavingSettingsE => '[KO] Error saving settings: \$e (Korean)';
 
   @override
-  String get appVersionAndInformation =>
-      '[KO] App version and information (Korean)';
+  String get appVersionAndInformation => '[KO] App version and information (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Business Subscription Entry Screen - Coming Soon (Korean)';
+  String get REDACTED_TOKEN => '[KO] Business Subscription Entry Screen - Coming Soon (Korean)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1375,8 +1286,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Your payment has been processed successfully. (Korean)';
+  String get REDACTED_TOKEN => '[KO] Your payment has been processed successfully. (Korean)';
 
   @override
   String get errorE => '[KO] Error: \$e (Korean)';
@@ -1394,8 +1304,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get payment => '[KO] Payment (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Automatically confirm new booking requests (Korean)';
+  String get REDACTED_TOKEN => '[KO] Automatically confirm new booking requests (Korean)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1408,8 +1317,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[KO] Please sign in to upload a background (Korean)';
+  String get pleaseSignInToUploadABackground => '[KO] Please sign in to upload a background (Korean)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1426,22 +1334,19 @@ class AppLocalizationsKo extends AppLocalizations {
   String get autoconfirmBookings => '[KO] Auto-Confirm Bookings (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Redirecting to Stripe checkout for Pro plan... (Korean)';
+  String get REDACTED_TOKEN => '[KO] Redirecting to Stripe checkout for Pro plan... (Korean)';
 
   @override
   String get exportAsCsv => '[KO] Export as CSV (Korean)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[KO] Delete functionality coming soon! (Korean)';
+  String get deleteFunctionalityComingSoon => '[KO] Delete functionality coming soon! (Korean)';
 
   @override
   String get editClient => '[KO] Edit Client (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Are you sure you want to delete this message? (Korean)';
+  String get REDACTED_TOKEN => '[KO] Are you sure you want to delete this message? (Korean)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1452,39 +1357,31 @@ class AppLocalizationsKo extends AppLocalizations {
   String get notAuthenticated => '[KO] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[KO] Privacy request sent to your parents! (Korean)';
+  String get privacyRequestSentToYourParents => '[KO] Privacy request sent to your parents! (Korean)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[KO] Client deleted successfully! (Korean)';
+  String get clientDeletedSuccessfully => '[KO] Client deleted successfully! (Korean)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[KO] Failed to cancel subscription (Korean)';
+  String get failedToCancelSubscription => '[KO] Failed to cancel subscription (Korean)';
 
   @override
   String get allLanguages => '[KO] All Languages (Korean)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[KO] Slot deleted successfully (Korean)';
+  String get slotDeletedSuccessfully => '[KO] Slot deleted successfully (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN => '[KO] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Parents must approve before children can join (Korean)';
+  String get REDACTED_TOKEN => '[KO] Parents must approve before children can join (Korean)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[KO] Subscribe to Pro (€14.99/mo) (Korean)';
+  String get subscribeToPro1499mo => '[KO] Subscribe to Pro (€14.99/mo) (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Business Availability Entry Screen - Coming Soon (Korean)';
+  String get REDACTED_TOKEN => '[KO] Business Availability Entry Screen - Coming Soon (Korean)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1498,8 +1395,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get submitBooking => '[KO] Submit Booking (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Are you sure you want to cancel this appointment? (Korean)';
+  String get REDACTED_TOKEN => '[KO] Are you sure you want to cancel this appointment? (Korean)';
 
   @override
   String get noUpcomingBookings => '[KO] No upcoming bookings (Korean)';
@@ -1517,8 +1413,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get goToDashboard => '[KO] Go to Dashboard (Korean)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[KO] Ambassador Quota Dashboard (Korean)';
+  String get ambassadorQuotaDashboard => '[KO] Ambassador Quota Dashboard (Korean)';
 
   @override
   String get adminSettings => '[KO] Admin Settings';
@@ -1556,8 +1451,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[KO] Client added successfully! (Korean)';
+  String get clientAddedSuccessfully => '[KO] Client added successfully! (Korean)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1575,8 +1469,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get bookAppointment => '[KO] Book Appointment (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[KO] Delete (Korean)';
@@ -1591,15 +1484,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get manageSubscription => '[KO] Manage Subscription (Korean)';
 
   @override
-  String get requiresInstallFallback =>
-      '[KO] Requires Install Fallback (Korean)';
+  String get requiresInstallFallback => '[KO] Requires Install Fallback (Korean)';
 
   @override
   String get paymentConfirmation => '[KO] Payment Confirmation (Korean)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[KO] Promo applied! Your next bill is free. (Korean)';
+  String get promoAppliedYourNextBillIsFree => '[KO] Promo applied! Your next bill is free. (Korean)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1610,16 +1501,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get errorLoadingSlots => '[KO] Error loading slots (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Allow other users to find and join this game (Korean)';
+  String get REDACTED_TOKEN => '[KO] Allow other users to find and join this game (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Business Onboarding Screen - Coming Soon (Korean)';
+  String get REDACTED_TOKEN => '[KO] Business Onboarding Screen - Coming Soon (Korean)';
 
   @override
-  String get activateBusinessProfile =>
-      '[KO] Activate Business Profile (Korean)';
+  String get activateBusinessProfile => '[KO] Activate Business Profile (Korean)';
 
   @override
   String get contentNotFound => '[KO] Content not found (Korean)';
@@ -1661,8 +1549,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get shareLink => '[KO] Share Link (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN => '[KO] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[KO] Delete Appointment (Korean)';
@@ -1682,12 +1569,10 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[KO] Update your business information (Korean)';
+  String get updateYourBusinessInformation => '[KO] Update your business information (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN => '[KO] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[KO] Parent Dashboard (Korean)';
@@ -1710,12 +1595,10 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Studio booking is only available on web (Korean)';
+  String get REDACTED_TOKEN => '[KO] Studio booking is only available on web (Korean)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[KO] Error loading branches: \$e (Korean)';
+  String get errorLoadingBranchesE => '[KO] Error loading branches: \$e (Korean)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1731,15 +1614,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get none => '[KO] None (Korean)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[KO] Failed to update consent: \$e (Korean)';
+  String get failedToUpdateConsentE => '[KO] Failed to update consent: \$e (Korean)';
 
   @override
   String get welcome1 => '[KO] Welcome (Korean)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[KO] Failed to create session: \$e (Korean)';
+  String get failedToCreateSessionE => '[KO] Failed to create session: \$e (Korean)';
 
   @override
   String get inviteContact => '[KO] Invite Contact (Korean)';
@@ -1748,8 +1629,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get surveyEditor => '[KO] Survey Editor (Korean)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[KO] Failed to start Basic subscription: \$e (Korean)';
+  String get failedToStartBasicSubscriptionE => '[KO] Failed to start Basic subscription: \$e (Korean)';
 
   @override
   String get mySchedule => '[KO] My Schedule (Korean)';
@@ -1769,8 +1649,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[KO] Settings saved successfully! (Korean)';
+  String get settingsSavedSuccessfully => '[KO] Settings saved successfully! (Korean)';
 
   @override
   String get linkCopiedToClipboard => '[KO] Link copied to clipboard! (Korean)';
@@ -1790,8 +1669,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[KO] Room deleted successfully! (Korean)';
+  String get roomDeletedSuccessfully => '[KO] Room deleted successfully! (Korean)';
 
   @override
   String get businessCalendar => '[KO] Business Calendar (Korean)';
@@ -1856,8 +1734,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get cancel1 => '[KO] Cancel (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Subscription activated successfully! (Korean)';
+  String get REDACTED_TOKEN => '[KO] Subscription activated successfully! (Korean)';
 
   @override
   String activityLogaction(Object action) {
@@ -1868,8 +1745,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get broadcast => '[KO] Broadcast (Korean)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[KO] No events scheduled this week (Korean)';
+  String get noEventsScheduledThisWeek => '[KO] No events scheduled this week (Korean)';
 
   @override
   String get googleCalendar => '[KO] Google Calendar (Korean)';
@@ -1881,8 +1757,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get childDashboard => '[KO] Child Dashboard (Korean)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[KO] Failed to upload background: \$e (Korean)';
+  String get failedToUploadBackgroundE => '[KO] Failed to upload background: \$e (Korean)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1901,8 +1776,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get noAppointments => '[KO] No appointments (Korean)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[KO] • Unlimited bookings per week (Korean)';
+  String get unlimitedBookingsPerWeek => '[KO] • Unlimited bookings per week (Korean)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1910,19 +1784,16 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[KO] Scheduled at: \$scheduledAt (Korean)';
+  String get scheduledAtScheduledat => '[KO] Scheduled at: \$scheduledAt (Korean)';
 
   @override
   String get selectStaff => '[KO] Select Staff (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Subscription cancelled successfully (Korean)';
+  String get REDACTED_TOKEN => '[KO] Subscription cancelled successfully (Korean)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[KO] Cancel Appointment (Korean)';
@@ -1936,8 +1807,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get businessSignup => '[KO] Business Signup (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Business Completion Screen - Coming Soon (Korean)';
+  String get REDACTED_TOKEN => '[KO] Business Completion Screen - Coming Soon (Korean)';
 
   @override
   String get createGame1 => '[KO] Create Game (Korean)';
@@ -1951,8 +1821,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get pleaseEnterAPromoCode => '[KO] Please enter a promo code (Korean)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[KO] Error loading availability: \$e (Korean)';
+  String get errorLoadingAvailabilityE => '[KO] Error loading availability: \$e (Korean)';
 
   @override
   String get parentalControls => '[KO] Parental Controls (Korean)';
@@ -1961,15 +1830,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[KO] Child linked successfully! (Korean)';
+  String get childLinkedSuccessfully => '[KO] Child linked successfully! (Korean)';
 
   @override
   String get create => '[KO] Create (Korean)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[KO] No external meetings found. (Korean)';
+  String get noExternalMeetingsFound => '[KO] No external meetings found. (Korean)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1977,15 +1844,13 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[KO] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[KO] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[KO] Scheduler Screen (Korean)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[KO] Client updated successfully! (Korean)';
+  String get clientUpdatedSuccessfully => '[KO] Client updated successfully! (Korean)';
 
   @override
   String get surveyResponses => '[KO] Survey Responses (Korean)';
@@ -2011,12 +1876,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get errorLoadingEvents => '[KO] Error loading events (Korean)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[KO] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[KO] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[KO] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[KO] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[KO] Success (Korean)';
@@ -2035,12 +1898,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get readWrite => '[KO] Read & Write (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Redirecting to Stripe checkout for Basic plan... (Korean)';
+  String get REDACTED_TOKEN => '[KO] Redirecting to Stripe checkout for Basic plan... (Korean)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[KO] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[KO] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[KO] Pick Date (Korean)';
@@ -2076,12 +1937,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get businessLogin => '[KO] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[KO] Invoice created successfully! (Korean)';
+  String get invoiceCreatedSuccessfully => '[KO] Invoice created successfully! (Korean)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[KO] No time series data available (Korean)';
+  String get noTimeSeriesDataAvailable => '[KO] No time series data available (Korean)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2094,8 +1953,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[KO] Failed to send privacy request: \$e (Korean)';
+  String get failedToSendPrivacyRequestE => '[KO] Failed to send privacy request: \$e (Korean)';
 
   @override
   String get chooseYourPlan => '[KO] Choose Your Plan (Korean)';
@@ -2110,8 +1968,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get eventCreated => '[KO] Event created (Korean)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[KO] Subscribe to Basic (€4.99/mo) (Korean)';
+  String get subscribeToBasic499mo => '[KO] Subscribe to Basic (€4.99/mo) (Korean)';
 
   @override
   String get completion => '[KO] Completion (Korean)';
@@ -2132,12 +1989,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get deleteSurvey => '[KO] Delete Survey (Korean)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[KO] Game approved successfully! (Korean)';
+  String get gameApprovedSuccessfully => '[KO] Game approved successfully! (Korean)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[KO] Error loading permissions: \$error (Korean)';
+  String get errorLoadingPermissionsError => '[KO] Error loading permissions: \$error (Korean)';
 
   @override
   String get referrals => '[KO] Referrals (Korean)';
@@ -2179,8 +2034,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get organizations => '[KO] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[KO] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[KO] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[KO] Create New Game (Korean)';
@@ -2189,12 +2043,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get next1 => '[KO] Next (Korean)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[KO] Background uploaded successfully! (Korean)';
+  String get backgroundUploadedSuccessfully => '[KO] Background uploaded successfully! (Korean)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[KO] No appointment requests found. (Korean)';
+  String get noAppointmentRequestsFound => '[KO] No appointment requests found. (Korean)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2221,8 +2073,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[KO] Failed to create game: \$e (Korean)';
@@ -2231,8 +2082,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get noChartDataAvailable => '[KO] No chart data available (Korean)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[KO] • Phone-based booking system (Korean)';
+  String get phonebasedBookingSystem => '[KO] • Phone-based booking system (Korean)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2241,8 +2091,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get invoices => '[KO] Invoices (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2269,12 +2118,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get iDoNotConsent => '[KO] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] No clients found. Add your first client! (Korean)';
+  String get REDACTED_TOKEN => '[KO] No clients found. Add your first client! (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN => '[KO] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[KO] Group: \$groupId';
@@ -2297,8 +2144,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[KO] • CRM dashboard with analytics (Korean)';
+  String get crmDashboardWithAnalytics => '[KO] • CRM dashboard with analytics (Korean)';
 
   @override
   String get contentLibrary1 => '[KO] Content Library (Korean)';
@@ -2310,30 +2156,25 @@ class AppLocalizationsKo extends AppLocalizations {
   String get subscriptionManagement => '[KO] Subscription Management (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Monetization settings will be implemented here (Korean)';
+  String get REDACTED_TOKEN => '[KO] Monetization settings will be implemented here (Korean)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[KO] Failed to apply promo code: \$e (Korean)';
+  String get failedToApplyPromoCodeE => '[KO] Failed to apply promo code: \$e (Korean)';
 
   @override
   String get editProvider => '[KO] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[KO] Localization Contribution (Korean)';
+  String get localizationContribution => '[KO] Localization Contribution (Korean)';
 
   @override
   String get parentalConsent => '[KO] Parental Consent (Korean)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[KO] Business Signup Screen - Coming Soon (Korean)';
+  String get businessSignupScreenComingSoon => '[KO] Business Signup Screen - Coming Soon (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[KO] Are you sure you want to delete this appointment? (Korean)';
+  String get REDACTED_TOKEN => '[KO] Are you sure you want to delete this appointment? (Korean)';
 
   @override
   String get syncAppointment => '[KO] Sync Appointment (Korean)';
@@ -2345,15 +2186,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[KO] Business Setup Screen - Coming Soon (Korean)';
+  String get businessSetupScreenComingSoon => '[KO] Business Setup Screen - Coming Soon (Korean)';
 
   @override
   String get edit1 => '[KO] Edit (Korean)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[KO] No events scheduled this month (Korean)';
+  String get noEventsScheduledThisMonth => '[KO] No events scheduled this month (Korean)';
 
   @override
   String get businessDashboard => '[KO] Business Dashboard (Korean)';
@@ -2367,8 +2206,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[KO] Manage Staff Availability (Korean)';
+  String get manageStaffAvailability => '[KO] Manage Staff Availability (Korean)';
 
   @override
   String get noMissingTranslations => '[KO] No missing translations (Korean)';
@@ -2385,8 +2223,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get noUsers => '[KO] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[KO] Error loading referral code (Korean)';
+  String get errorLoadingReferralCode => '[KO] Error loading referral code (Korean)';
 
   @override
   String get allCountries => '[KO] All Countries (Korean)';
@@ -2401,8 +2238,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get deleteMessage => '[KO] Delete Message (Korean)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[KO] changeRole (TRANSLATE)';
@@ -2413,8 +2249,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[KO] Opening customer portal... (Korean)';
+  String get openingCustomerPortal => '[KO] Opening customer portal... (Korean)';
 
   @override
   String get signOut => '[KO] Sign Out (Korean)';
@@ -2425,8 +2260,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[KO] Upgrade to Business (Korean)';
@@ -2452,8 +2286,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[KO] View Responses (Korean)';
@@ -2482,8 +2315,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
