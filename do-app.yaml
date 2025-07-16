@@ -11,6 +11,8 @@ services:
     flutter pub get
     dart run build_runner build --delete-conflicting-outputs
     flutter build web --release --web-renderer html
+    echo "✅ Flutter web build completed"
+    ls -la build/web/
   environment_slug: node-js
   instance_count: 1
   instance_size_slug: basic-xxs
