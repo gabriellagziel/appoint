@@ -31,7 +31,7 @@ final isAdminProvider = FutureProvider<bool>((ref) async {
 
 /// Provider for broadcast messages list
 final broadcastMessagesProvider = FutureProvider<List<AdminBroadcastMessage>>((ref) async {
-  final broadcastService = ref.watch(broadcastServiceProvider);
+  final broadcastService = ref.watch(adminBroadcastServiceProvider);
   final isAdmin = await ref.watch(isAdminProvider.future);
   
   if (!isAdmin) {

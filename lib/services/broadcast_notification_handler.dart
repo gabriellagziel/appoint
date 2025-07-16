@@ -261,7 +261,7 @@ class BroadcastNotificationHandler {
 final REDACTED_TOKEN = Provider<BroadcastNotificationHandler>(
   (ref) {
     final handler = BroadcastNotificationHandler.instance;
-    final broadcastService = ref.read(broadcastServiceProvider);
+    final broadcastService = ref.read(adminBroadcastServiceProvider);
     handler.initialize(broadcastService);
     return handler;
   },

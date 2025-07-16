@@ -644,7 +644,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     }
 
     try {
-      final service = ref.read(broadcastServiceProvider);
+      final service = ref.read(adminBroadcastServiceProvider);
       final count = await service.estimateTargetAudience(_filters);
       setState(() {
         _estimatedRecipients = count;
@@ -794,7 +794,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         estimatedRecipients: _estimatedRecipients,
       );
 
-      final service = ref.read(broadcastServiceProvider);
+      final service = ref.read(adminBroadcastServiceProvider);
       await service.createBroadcastMessage(message);
 
       // Clear form and media
@@ -824,7 +824,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     final l10n = AppLocalizations.of(context);
 
     try {
-      final service = ref.read(broadcastServiceProvider);
+      final service = ref.read(adminBroadcastServiceProvider);
       await service.sendBroadcastMessage(messageId);
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
