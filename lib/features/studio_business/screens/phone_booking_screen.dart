@@ -31,149 +31,129 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final profileAsync = ref.watch(businessProfileProvider);
+    final profile = ref.watch(businessProfileProvider);
+    if (profile == null) {
+      return const Scaffold(
+        appBar: AppBar(title: Text('Phone Booking')),
+        body: Center(child: CircularProgressIndicator()),
+      );
+    }
 
     return Scaffold(
       appBar: AppBar(title: const Text('Phone Booking')),
-      body: profileAsync.when(
-        data: (profile) => Padding(
-              padding: const EdgeInsets.all(16),
-              child: Form(
-                key: _formKey,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    // Business Info
-                    Card(
-                      child: Padding(
-                        padding: const EdgeInsets.all(16),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              profile.name,
-                              style: Theme.of(context).textTheme.headlineSmall,
-                            ),
-                            const SizedBox(height: 8),
-                            Text('Phone: ${profile.phone}'),
-                          ],
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 24),
-
-                    // Customer Details Form
-                    const Text(
-                      'Customer Details',
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                    ),
-                    const SizedBox(height: 16),
-
-                    TextFormField(
-                      controller: _nameController,
-                      decoration: const InputDecoration(
-                        labelText: 'Customer Name',
-                        border: OutlineInputBorder(),
-                      ),
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please enter customer name';
-                        }
-                        return null;
-                      },
-                    ),
-                    const SizedBox(height: 16),
-
-                    TextFormField(
-                      controller: _phoneController,
-                      decoration: const InputDecoration(
-                        labelText: 'Phone Number',
-                        border: OutlineInputBorder(),
-                        prefixText: '+1 ',
-                      ),
-                      keyboardType: TextInputType.phone,
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please enter phone number';
-                        }
-                        if (value.length < 10) {
-                          return 'Please enter a valid phone number';
-                        }
-                        return null;
-                      },
-                    ),
-                    const SizedBox(height: 16),
-
-                    TextFormField(
-                      controller: _dateController,
-                      decoration: const InputDecoration(
-                        labelText: 'Preferred Date',
-                        border: OutlineInputBorder(),
-                        suffixIcon: Icon(Icons.calendar_today),
-                      ),
-                      readOnly: true,
-                      onTap: () => _selectDate(context),
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please select a date';
-                        }
-                        return null;
-                      },
-                    ),
-                    const SizedBox(height: 16),
-
-                    TextFormField(
-                      controller: _timeController,
-                      decoration: const InputDecoration(
-                        labelText: 'Preferred Time',
-                        border: OutlineInputBorder(),
-                        suffixIcon: Icon(Icons.access_time),
-                      ),
-                      readOnly: true,
-                      onTap: () => _selectTime(context),
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please select a time';
-                        }
-                        return null;
-                      },
-                    ),
-                    const SizedBox(height: 24),
-
-                    SizedBox(
-                      width: double.infinity,
-                      child: ElevatedButton(
-                        onPressed: _isProcessing ? null : _processBooking,
-                        child: _isProcessing
-                            ? const CircularProgressIndicator()
-                            : const Text('Send Booking Invite'),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, stack) => Center(
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Form(
+          key: _formKey,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Icon(Icons.error, color: Colors.red.shade600, size: 64),
-              const SizedBox(height: 16),
-              Text(
-                'Error loading business profile',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.red.shade700,
+              // Business Info
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        profile.name,
+                        style: Theme.of(context).textTheme.headlineSmall,
+                      ),
+                      const SizedBox(height: 8),
+                      Text('Phone: ${profile.phone}'),
+                    ],
+                  ),
                 ),
               ),
-              const SizedBox(height: 8),
-              Text(
-                error.toString(),
-                style: TextStyle(color: Colors.red.shade600),
-                textAlign: TextAlign.center,
+              const SizedBox(height: 24),
+
+              // Customer Details Form
+              const Text(
+                'Customer Details',
+                style:
+                    TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 16),
+
+              TextFormField(
+                controller: _nameController,
+                decoration: const InputDecoration(
+                  labelText: 'Customer Name',
+                  border: OutlineInputBorder(),
+                ),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter customer name';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 16),
+
+              TextFormField(
+                controller: _phoneController,
+                decoration: const InputDecoration(
+                  labelText: 'Phone Number',
+                  border: OutlineInputBorder(),
+                  prefixText: '+1 ',
+                ),
+                keyboardType: TextInputType.phone,
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter phone number';
+                  }
+                  if (value.length < 10) {
+                    return 'Please enter a valid phone number';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 16),
+
+              TextFormField(
+                controller: _dateController,
+                decoration: const InputDecoration(
+                  labelText: 'Preferred Date',
+                  border: OutlineInputBorder(),
+                  suffixIcon: Icon(Icons.calendar_today),
+                ),
+                readOnly: true,
+                onTap: () => _selectDate(context),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please select a date';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 16),
+
+              TextFormField(
+                controller: _timeController,
+                decoration: const InputDecoration(
+                  labelText: 'Preferred Time',
+                  border: OutlineInputBorder(),
+                  suffixIcon: Icon(Icons.access_time),
+                ),
+                readOnly: true,
+                onTap: () => _selectTime(context),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please select a time';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 24),
+
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: _isProcessing ? null : _processBooking,
+                  child: _isProcessing
+                      ? const CircularProgressIndicator()
+                      : const Text('Send Booking Invite'),
+                ),
               ),
             ],
           ),
