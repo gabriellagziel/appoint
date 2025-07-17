@@ -1,16 +1,16 @@
 import 'package:appoint/providers/family_provider.dart';
 import 'package:appoint/providers/otp_provider.dart';
 import 'package:appoint/services/family_service.dart';
-// ignore_for_file: unused_local_variable, undefined_identifier, REDACTED_TOKEN
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../mocks/firebase_mocks.dart';
-import 'firebase_test_helper.dart';
+import '../../firebase_test_helper.dart';
 
 void main() {
   setUpAll(() async {
     await initializeTestFirebase();
+    setupFirebaseMocks();
   });
 
   group('OTP Flow', () {
@@ -31,28 +31,28 @@ void main() {
     });
 
     test('sendOtp success', () async {
-      otpNotifier = container.read(otpProvider.notifier);
+      final otpNotifier = container.read(otpProvider.notifier);
       await otpNotifier.sendOtp('test@email.com', 'parentId');
       expect(mockService.sendCalled, isTrue);
       expect(container.read(otpProvider), OtpState.codeSent);
     });
 
     test('sendOtp failure', () async {
-      otpNotifier = container.read(otpProvider.notifier);
+      final otpNotifier = container.read(otpProvider.notifier);
       await otpNotifier.sendOtp('fail', 'parentId');
       expect(mockService.sendCalled, isTrue);
       expect(container.read(otpProvider), OtpState.error);
     });
 
     test('verifyOtp success', () async {
-      otpNotifier = container.read(otpProvider.notifier);
+      final otpNotifier = container.read(otpProvider.notifier);
       await otpNotifier.verifyOtp('test@email.com', '123456');
       expect(mockService.verifyCalled, isTrue);
       expect(container.read(otpProvider), OtpState.success);
     });
 
     test('verifyOtp failure', () async {
-      otpNotifier = container.read(otpProvider.notifier);
+      final otpNotifier = container.read(otpProvider.notifier);
       await otpNotifier.verifyOtp('test@email.com', '000000');
       expect(mockService.verifyCalled, isTrue);
       expect(container.read(otpProvider), OtpState.error);
