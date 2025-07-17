@@ -9,7 +9,7 @@ class AppBranding {
   // Official Slogan
   static const String slogan = Time Organized';
   static const String sloganSubtitle = Set Send Done';
-  static const String fullSlogan =$slogan\n$sloganSubtitle';
+  static const String fullSlogan = $slogan • $sloganSubtitle';
   
   // Logo Assets
   static const String logoPath = assets/images/app_oint_logo.png';
