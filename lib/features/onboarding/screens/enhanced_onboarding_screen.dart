@@ -739,10 +739,9 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
         Navigator.of(context).pushReplacementNamed('/dashboard');
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Failed to complete onboarding: $e')),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Failed to complete onboarding: $e')),
+      );
     }
   }
 
