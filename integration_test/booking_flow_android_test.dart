@@ -22,14 +22,14 @@ void main() {
     expect(find.byIcon(Icons.calendar_month), findsWidgets);
 
     // Try to find and tap a calendar icon or date picker
-    calendarIcons = find.byIcon(Icons.calendar_month);
+    final calendarIcons = find.byIcon(Icons.calendar_month);
     if (calendarIcons.evaluate().isNotEmpty) {
       await tester.tap(calendarIcons.first);
       await tester.pumpAndSettle();
     }
 
     // Look for a confirm button
-    confirmButton = find.text('Confirm');
+    final confirmButton = find.text('Confirm');
     if (confirmButton.evaluate().isNotEmpty) {
       await tester.tap(confirmButton);
       await tester.pumpAndSettle();
@@ -45,7 +45,7 @@ void main() {
     ];
 
     var foundSuccess = false;
-    for (indicator in successIndicators) {
+    for (final indicator in successIndicators) {
       if (find.text(indicator).evaluate().isNotEmpty) {
         foundSuccess = true;
         break;
