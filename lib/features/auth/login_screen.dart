@@ -1,6 +1,7 @@
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:appoint/l10n/app_localizations.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});
@@ -23,7 +24,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(title: const Text('Login')),
+      appBar: AppBar(title: Text(AppLocalizations.of(context)!.login)),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -32,14 +33,14 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               label: 'Email address',
               child: TextField(
                 controller: _emailController,
-                decoration: const InputDecoration(labelText: 'Email'),
+                decoration: InputDecoration(labelText: AppLocalizations.of(context)!.email),
               ),
             ),
             Semantics(
               label: 'Password',
               child: TextField(
                 controller: _passwordController,
-                decoration: const InputDecoration(labelText: 'Password'),
+                decoration: InputDecoration(labelText: AppLocalizations.of(context)!.password),
                 obscureText: true,
               ),
             ),
@@ -68,7 +69,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                         if (!mounted) return;
                         // ignore: use_build_context_synchronously
                         ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(content: Text('Login failed: $e')),
+                          SnackBar(content: Text(AppLocalizations.of(context)!.loginFailed(e.toString()))),
                         );
                       } finally {
                         if (mounted) {
@@ -76,7 +77,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                         }
                       }
                     },
-                    child: const Text('Sign In'),
+                    child: Text(AppLocalizations.of(context)!.signIn),
                   ),
           ],
         ),
