@@ -91,6 +91,7 @@ flutter:
 
   assets:
     - web/assets/FontManifest.json
+    - assets/images/
 
   plugin:
     platforms:
