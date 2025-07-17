@@ -65,6 +65,7 @@ import 'package:appoint/features/notifications/enhanced_notifications_screen.dar
 import 'package:appoint/features/settings/enhanced_settings_screen.dart';
 import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
 import 'package:appoint/features/profile/enhanced_profile_screen.dart';
+import 'package:appoint/features/payment/payment_confirmation_screen.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
     initialLocation: '/',
@@ -98,6 +99,45 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         path: '/search',
         name: 'search',
         builder: (context, final state) => const SearchScreen(),
+      ),
+      // Messaging and utilities
+      GoRoute(
+        path: '/messages',
+        name: 'messages',
+        builder: (context, final state) => const MessagesListScreen(),
+      ),
+      GoRoute(
+        path: '/chat/:chatId',
+        name: 'chat',
+        builder: (context, final state) {
+          final chatId = state.pathParameters['chatId']!;
+          return ChatScreen(chatId: chatId);
+        },
+      ),
+      GoRoute(
+        path: '/subscription',
+        name: 'subscription',
+        builder: (context, final state) => const SubscriptionScreen(),
+      ),
+      GoRoute(
+        path: '/rewards',
+        name: 'rewards',
+        builder: (context, final state) => const RewardsScreen(),
+      ),
+      GoRoute(
+        path: '/settings',
+        name: 'settings',
+        builder: (context, final state) => const EnhancedSettingsScreen(),
+      ),
+      GoRoute(
+        path: '/calendar',
+        name: 'calendar',
+        builder: (context, final state) => const EnhancedCalendarScreen(),
+      ),
+      GoRoute(
+        path: '/payment/confirmation',
+        name: 'paymentConfirmation',
+        builder: (context, final state) => const PaymentConfirmationScreen(),
       ),
       GoRoute(
         path: '/admin/dashboard',

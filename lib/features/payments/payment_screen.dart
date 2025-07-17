@@ -58,7 +58,7 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
           TextButton(
             onPressed: () {
               Navigator.of(context).pop();
-              context.go('/payment/confirmation', extra: true);
+              context.push('/payment/confirmation', extra: true);
             },
             child: const Text('Continue'),
           ),
