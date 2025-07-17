@@ -223,7 +223,8 @@ class ProductionConfig {
 
   // Get configuration value
   static T getValue<T>(String key, T defaultValue) {
-    return String.fromEnvironment(key, defaultValue: defaultValue.toString()) as T;
+    return String.fromEnvironment(key, defaultValue: defaultValue.toString())
+        as T;
   }
 
   // Check if feature is enabled
@@ -322,4 +323,4 @@ class ProductionConfig {
   static bool getHotReloadEnabled() {
     return enableHotReload && !isProduction;
   }
-} 
+}

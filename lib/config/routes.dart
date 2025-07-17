@@ -307,9 +307,9 @@ class AppRouter {
 
 // Placeholder screen for meeting details (to be implemented)
 class MeetingDetailsScreen extends StatelessWidget {
-
   const MeetingDetailsScreen({
-    required this.meetingId, super.key,
+    required this.meetingId,
+    super.key,
     this.creatorId,
     this.contextId,
     this.groupId,
@@ -321,30 +321,30 @@ class MeetingDetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(
-        title: const Text('Meeting Details'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('Meeting ID: $meetingId'),
-            if (creatorId != null) Text('Creator: $creatorId'),
-            if (contextId != null) Text('Context: $contextId'),
-            if (groupId != null) Text('Group: $groupId'),
-            const SizedBox(height: 24),
-            const Text(
-              'This is a placeholder screen for meeting details.',
-              style: TextStyle(fontSize: 16),
-            ),
-            const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: () => Navigator.of(context).pop(),
-              child: const Text('Close'),
-            ),
-          ],
+        appBar: AppBar(
+          title: const Text('Meeting Details'),
         ),
-      ),
-    );
+        body: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Meeting ID: $meetingId'),
+              if (creatorId != null) Text('Creator: $creatorId'),
+              if (contextId != null) Text('Context: $contextId'),
+              if (groupId != null) Text('Group: $groupId'),
+              const SizedBox(height: 24),
+              const Text(
+                'This is a placeholder screen for meeting details.',
+                style: TextStyle(fontSize: 16),
+              ),
+              const SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: () => Navigator.of(context).pop(),
+                child: const Text('Close'),
+              ),
+            ],
+          ),
+        ),
+      );
 }
