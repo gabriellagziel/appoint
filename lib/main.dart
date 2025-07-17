@@ -85,14 +85,17 @@ class AppOintApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final router = ref.watch(appRouterProvider);
     final themeMode = ref.watch(themeModeProvider);
+    // Obtain themedata instances based on the current palette selection
+    final lightTheme = ref.watch(lightThemeProvider);
+    final darkTheme = ref.watch(darkThemeProvider);
     
     return MaterialApp.router(
       title: 'APP-OINT',
       debugShowCheckedModeBanner: false,
       
       // Theme configuration
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
+      theme: lightTheme,
+      darkTheme: darkTheme,
       themeMode: themeMode,
       
       // Localization configuration
