@@ -2720,5 +2720,17 @@
   "@loginFailed": {
     "description": "Shown when login fails",
     "placeholders": { "error": {} }
-  }
+  },
+  "nameLabel": "Name",
+  "@nameLabel": { "description": "Label for name field" },
+  "pleaseEnterName": "Please enter a name",
+  "@pleaseEnterName": { "description": "Validation error when name missing" },
+  "phoneNumberLabel": "Phone Number",
+  "@phoneNumberLabel": { "description": "Label for phone number field" },
+  "pleaseEnterPhoneNumber": "Please enter a phone number",
+  "@pleaseEnterPhoneNumber": { "description": "Validation error for phone number" },
+  "emailOptionalLabel": "Email (Optional)",
+  "@emailOptionalLabel": { "description": "Label for optional email field" },
+  "requiresInstallFallback": "Requires Install Fallback",
+  "@requiresInstallFallback": { "description": "Toggle label for install fallback" }
 }
