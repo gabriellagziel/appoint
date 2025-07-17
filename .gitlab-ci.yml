@@ -1,0 +1,44 @@
+stages:
+  - test
+
+flutter_tests:
+  stage: test
+  image: "cirrusci/flutter:stable"
+  variables:
+    # Ensure consistent non-interactive environment
+    CI: "true"
+  before_script:
+    - flutter --version
+  script:
+    - flutter pub get
+    - flutter analyze
+    - flutter test
+    - flutter build apk --release
+    - flutter build web --release
+  artifacts:
+    paths:
+      - build/app/outputs/flutter-apk/app-release.apk
+    expire_in: 1 week
+
+website_tests:
+  stage: test
+  image: "node:18"
+  variables:
+    CI: "true"
+    PORT: "3000"
+  before_script:
+    - cd website
+  script:
+    - npm ci
+    - npm run lint
+    - npm run test
+    - npm run build
+    # Start server in background for health check
+    - npm start &
+    - SERVER_PID=$!
+    - sleep 8
+    - curl --fail http://localhost:${PORT}/healthz
+    - kill $SERVER_PID
+  after_script:
+    # Ensure server is stopped even if earlier steps failed
+    - kill -9 $SERVER_PID || true
