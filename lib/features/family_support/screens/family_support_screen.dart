@@ -35,7 +35,7 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
                     controller: _subjectController,
                     decoration: const InputDecoration(labelText: 'Subject'),
                     validator: (v) =>
-                        final v = = null || v.isEmpty ? 'Required' : null,
+                        v == null || v.isEmpty ? 'Required' : null,
                   ),
                   const SizedBox(height: 8),
                   TextFormField(
@@ -43,7 +43,7 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
                     decoration: const InputDecoration(labelText: 'Message'),
                     maxLines: 3,
                     validator: (v) =>
-                        final v = = null || v.isEmpty ? 'Required' : null,
+                        v == null || v.isEmpty ? 'Required' : null,
                   ),
                   const SizedBox(height: 8),
                   ElevatedButton(
@@ -102,9 +102,8 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
         );
       }
     } catch (e) {
-        ScaffoldMessenger.of(context)
-            .showSnackBar(SnackBar(content: Text('Error: $e')));
-      }
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text('Error: $e')));
     } finally {
       if (mounted) setState(() => _submitting = false);
     }

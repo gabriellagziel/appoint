@@ -15,7 +15,10 @@ class Contact with _$Contact {
 
   factory Contact.fromJson(Map<String, dynamic> json) =>
       _$ContactFromJson(json);
-      
+
+  // Added private constructor to allow custom getters and methods.
+  const Contact._();
+
   // Getters for backward compatibility
   String? get phone => phoneNumber;
 }

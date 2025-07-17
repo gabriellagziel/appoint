@@ -274,10 +274,9 @@ class FamilyDashboardScreen extends ConsumerWidget {
         );
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(l10n.failedToResendOtp(e))),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(l10n.failedToResendOtp(e))),
+      );
     }
   }
 
