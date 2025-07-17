@@ -2715,5 +2715,10 @@
   "studioManagement": "Studio Management",
   "@studioManagement": {
     "description": "Drawer header title for studio management section"
+  },
+  "loginFailed": "Login failed: {error}",
+  "@loginFailed": {
+    "description": "Shown when login fails",
+    "placeholders": { "error": {} }
   }
 }
