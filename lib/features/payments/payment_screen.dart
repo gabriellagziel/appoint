@@ -2,6 +2,7 @@ import 'package:appoint/providers/payment_provider.dart';
 import 'package:appoint/services/payment_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 class PaymentScreen extends ConsumerStatefulWidget {
   const PaymentScreen({super.key});
@@ -57,9 +58,7 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
           TextButton(
             onPressed: () {
               Navigator.of(context).pop();
-              Navigator.of(context).pushReplacementNamed(
-                  '/payment/confirmation',
-                  arguments: true,);
+              context.go('/payment/confirmation', extra: true);
             },
             child: const Text('Continue'),
           ),

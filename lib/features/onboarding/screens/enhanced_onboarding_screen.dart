@@ -2,6 +2,7 @@ import 'package:appoint/features/onboarding/services/onboarding_service.dart';
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 final onboardingServiceProvider = Provider<OnboardingService>((ref) => OnboardingService());
 
@@ -659,7 +660,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
       await service.completeOnboarding(onboardingData);
       
       if (mounted) {
-        Navigator.of(context).pushReplacementNamed('/dashboard');
+        context.go('/dashboard');
       }
     } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(

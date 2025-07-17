@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:share_plus/share_plus.dart';
 
 class AmbassadorOnboardingScreen extends ConsumerStatefulWidget {
@@ -421,8 +422,7 @@ Ready to lead the revolution?""",
           const SizedBox(height: 24),
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context)
-                  .pushReplacementNamed('/ambassador-dashboard');
+              context.go('/ambassador-dashboard');
             },
             child: const Text('Go to Dashboard'),
           ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:appoint/services/api/api_client.dart';
+import 'package:go_router/go_router.dart';
 
 class ErrorHandler {
   static final ErrorHandler _instance = ErrorHandler._();
@@ -158,7 +159,7 @@ class ErrorHandler {
 
   void _navigateToLogin(BuildContext context) {
     Navigator.of(context).pop();
-    Navigator.of(context).pushReplacementNamed('/login');
+    context.go('/login');
   }
 
   // Handle specific feature errors
