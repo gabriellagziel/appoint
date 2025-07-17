@@ -1,6 +1,7 @@
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 final userProfileProvider = StateProvider<UserProfile>((ref) => const UserProfile(
   id: 'user_123',
@@ -97,7 +98,7 @@ class EnhancedProfileScreen extends ConsumerWidget {
           ),
           IconButton(
             icon: const Icon(Icons.settings),
-            onPressed: () => Navigator.pushNamed(context, '/settings'),
+            onPressed: () => context.push('/settings'),
           ),
         ],
       ),
@@ -271,12 +272,12 @@ class EnhancedProfileScreen extends ConsumerWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             childAspectRatio: 2.5,
             children: [
-              _buildActionTile(context, Icons.search, 'Search Services', () => Navigator.pushNamed(context, '/search')),
-              _buildActionTile(context, Icons.calendar_today, 'My Calendar', () => Navigator.pushNamed(context, '/calendar')),
-              _buildActionTile(context, Icons.chat, 'Messages', () => Navigator.pushNamed(context, '/messages')),
-              _buildActionTile(context, Icons.stars, 'Rewards', () => Navigator.pushNamed(context, '/rewards')),
-              _buildActionTile(context, Icons.payment, 'Subscriptions', () => Navigator.pushNamed(context, '/subscription')),
-              _buildActionTile(context, Icons.analytics, 'Analytics', () => Navigator.pushNamed(context, '/analytics')),
+              _buildActionTile(context, Icons.search, 'Search Services', () => context.push('/search')),
+              _buildActionTile(context, Icons.calendar_today, 'My Calendar', () => context.push('/calendar')),
+              _buildActionTile(context, Icons.chat, 'Messages', () => context.push('/messages')),
+              _buildActionTile(context, Icons.stars, 'Rewards', () => context.push('/rewards')),
+              _buildActionTile(context, Icons.payment, 'Subscriptions', () => context.push('/subscription')),
+              _buildActionTile(context, Icons.analytics, 'Analytics', () => context.push('/analytics')),
             ],
           ),
         ],
@@ -331,7 +332,7 @@ class EnhancedProfileScreen extends ConsumerWidget {
                 ),
                 const Spacer(),
                 TextButton(
-                  onPressed: () => Navigator.pushNamed(context, '/family'),
+                  onPressed: () => context.push('/family'),
                   child: const Text('Manage'),
                 ),
               ],

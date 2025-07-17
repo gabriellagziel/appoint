@@ -1,5 +1,6 @@
 import 'package:appoint/features/studio_business/models/business_event.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class BusinessDashboardScreen extends StatelessWidget {
   const BusinessDashboardScreen({super.key});
@@ -51,20 +52,17 @@ class BusinessDashboardScreen extends StatelessWidget {
               runSpacing: 12,
               children: [
                 ElevatedButton.icon(
-                  onPressed: () =>
-                      Navigator.pushNamed(context, '/business/calendar'),
+                  onPressed: () => context.push('/business/calendar'),
                   icon: const Icon(Icons.calendar_today),
                   label: const Text('Calendar'),
                 ),
                 ElevatedButton.icon(
-                  onPressed: () =>
-                      Navigator.pushNamed(context, '/business/availability'),
+                  onPressed: () => context.push('/business/availability'),
                   icon: const Icon(Icons.access_time),
                   label: const Text('Availability'),
                 ),
                 ElevatedButton.icon(
-                  onPressed: () =>
-                      Navigator.pushNamed(context, '/business/profile'),
+                  onPressed: () => context.push('/business/profile'),
                   icon: const Icon(Icons.person),
                   label: const Text('Profile'),
                 ),

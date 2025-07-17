@@ -5,6 +5,7 @@ import 'package:appoint/features/studio_business/providers/weekly_usage_provider
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 class StudioBookingScreen extends ConsumerStatefulWidget {
   const StudioBookingScreen({super.key});
@@ -245,7 +246,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
           TextButton(
             onPressed: () {
               Navigator.pop(context);
-              Navigator.pushNamed(context, '/business-connect');
+              context.push('/business/connect');
             },
             child: const Text('Activate Business Profile'),
           ),

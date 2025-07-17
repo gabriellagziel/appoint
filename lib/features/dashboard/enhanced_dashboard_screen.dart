@@ -6,6 +6,7 @@ import 'package:appoint/features/search/screens/search_screen.dart';
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 final dashboardStatsProvider = FutureProvider<Map<String, dynamic>>((ref) async {
   // TODO: Implement dashboard stats
@@ -161,28 +162,28 @@ class EnhancedDashboardScreen extends ConsumerWidget {
               'Search',
               Icons.search,
               Colors.blue,
-              () => Navigator.pushNamed(context, '/search'),
+              () => context.push('/search'),
             ),
             _buildQuickActionCard(
               context,
               'Messages',
               Icons.chat,
               Colors.green,
-              () => Navigator.pushNamed(context, '/messages'),
+              () => context.push('/messages'),
             ),
             _buildQuickActionCard(
               context,
               'Rewards',
               Icons.card_giftcard,
               Colors.orange,
-              () => Navigator.pushNamed(context, '/rewards'),
+              () => context.push('/rewards'),
             ),
             _buildQuickActionCard(
               context,
               'Subscription',
               Icons.star,
               Colors.purple,
-              () => Navigator.pushNamed(context, '/subscription'),
+              () => context.push('/subscription'),
             ),
           ],
         ),
@@ -367,7 +368,7 @@ class EnhancedDashboardScreen extends ConsumerWidget {
                 fontWeight: FontWeight.bold),
             ),
             TextButton(
-              onPressed: () => Navigator.pushNamed(context, '/calendar'),
+              onPressed: () => context.push('/calendar'),
               child: const Text('View All'),
             ),
           ],
