@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:appoint/widgets/app_logo.dart';
+import 'package:appoint/constants/app_branding.dart';
 
 /// APP-OINT Splash Screen
 /// Displays the official APP-OINT logo and slogan during app initialization
@@ -96,7 +97,7 @@ class _SplashScreenState extends State<SplashScreen>
                     
                     // Slogan
                     Text(
-                      'Time Organized',
+                      AppBranding.slogan,
                       style: TextStyle(
                         fontSize: 18,
                         color: Colors.white.withOpacity(0.9),
@@ -104,7 +105,7 @@ class _SplashScreenState extends State<SplashScreen>
                       ),
                     ),
                     Text(
-                      'Set Send Done',
+                      AppBranding.sloganSubtitle,
                       style: TextStyle(
                         fontSize: 18,
                         color: Colors.white.withOpacity(0.9),

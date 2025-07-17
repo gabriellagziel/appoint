@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/providers/user_subscription_provider.dart';
 import 'package:appoint/services/ad_service.dart';
 import 'package:appoint/features/studio_business/providers/booking_provider.dart';
@@ -65,6 +66,7 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     final subscriptionState = ref.watch(userSubscriptionProvider);
     final bookingState = ref.watch(bookingProvider);
     
@@ -74,7 +76,7 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Confirm Appointment',
+          Text(l10n.confirm_appointment_button,
               style: Theme.of(context).textTheme.titleLarge),
           const SizedBox(height: 12),
           Text(widget.summaryText),
@@ -161,18 +163,18 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
                             children: [
                               Icon(Icons.star, color: Colors.orange, size: 20),
                               const SizedBox(width: 8),
-                              Text(
-                                'Upgrade to Premium',
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.orange[700],
-                                ),
-                              ),
+                                                        Text(
+                            l10n.upgrade_button,
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.orange[700],
+                            ),
+                          ),
                             ],
                           ),
                           const SizedBox(height: 8),
                           Text(
-                            'Skip ads and enjoy premium features',
+                            l10n.upgrade_prompt_description,
                             style: TextStyle(
                               color: Colors.grey[600],
                               fontSize: 12,
@@ -200,7 +202,7 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
                               ),
                             )
                           : const Icon(Icons.star, size: 16),
-                        label: Text(_isUpgrading ? 'Upgrading...' : 'Upgrade to Premium'),
+                        label: Text(_isUpgrading ? 'Upgrading...' : l10n.upgrade_button),
                       ),
                     ),
                     const SizedBox(height: 16),
@@ -218,7 +220,7 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
               Expanded(
                 child: OutlinedButton(
                   onPressed: bookingState.isLoading ? null : widget.onCancel,
-                  child: const Text('Cancel'),
+                  child: Text(l10n.cancel),
                 ),
               ),
               const SizedBox(width: 12),
@@ -231,7 +233,7 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
                         height: 20,
                         child: CircularProgressIndicator(strokeWidth: 2),
                       )
-                    : const Text('Confirm'),
+                    : Text(l10n.confirm_appointment_button),
                 ),
               ),
             ],

@@ -2859,5 +2859,41 @@
   "loadingCheckout": "Caricamento checkout...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
+  },
+  "ad_pre_title": "Guarda un annuncio per confermare il tuo appuntamento",
+  "@ad_pre_title": {
+    "description": "Ad flow string: ad_pre_title"
+  },
+  "ad_pre_description": "Come utente gratuito, devi guardare un breve annuncio prima di confermare. Puoi rimuovere tutti gli annunci permanentemente aggiornando.",
+  "@ad_pre_description": {
+    "description": "Ad flow string: ad_pre_description"
+  },
+  "watch_ad_button": "Guarda Annuncio",
+  "@watch_ad_button": {
+    "description": "Ad flow string: watch_ad_button"
+  },
+  "upgrade_button": "Passa a Premium (€4)",
+  "@upgrade_button": {
+    "description": "Ad flow string: upgrade_button"
+  },
+  "ad_post_title": "Annuncio finito! Ora puoi confermare il tuo appuntamento.",
+  "@ad_post_title": {
+    "description": "Ad flow string: ad_post_title"
+  },
+  "confirm_appointment_button": "Conferma Appuntamento",
+  "@confirm_appointment_button": {
+    "description": "Ad flow string: confirm_appointment_button"
+  },
+  "upgrade_prompt_title": "Aggiornamento una tantum",
+  "@upgrade_prompt_title": {
+    "description": "Ad flow string: upgrade_prompt_title"
+  },
+  "upgrade_prompt_description": "Paga €4 per rimuovere tutti gli annunci per sempre",
+  "@upgrade_prompt_description": {
+    "description": "Ad flow string: upgrade_prompt_description"
+  },
+  "purchase_now_button": "Acquista Ora",
+  "@purchase_now_button": {
+    "description": "Ad flow string: purchase_now_button"
   }
 }
