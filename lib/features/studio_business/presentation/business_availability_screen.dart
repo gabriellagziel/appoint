@@ -5,6 +5,8 @@ import 'package:appoint/utils/business_helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:intl/intl.dart';
 
 class BusinessAvailabilityScreen extends ConsumerStatefulWidget {
   const BusinessAvailabilityScreen({super.key});
@@ -33,8 +35,9 @@ class _BusinessAvailabilityScreenState
       ref.read(businessAvailabilityProvider.notifier).loadConfiguration();
     } catch (e) {
       if (mounted) {
+        final l10n = AppLocalizations.of(context)!;
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error loading configuration: $e')),
+          SnackBar(content: Text(l10n.errorLoadingConfiguration(e.toString()))),
         );
       }
     } finally {
@@ -52,13 +55,13 @@ class _BusinessAvailabilityScreenState
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Configuration saved successfully!')),
+          SnackBar(content: Text(AppLocalizations.of(context)!.configurationSavedSuccessfully)),
         );
       }
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error saving configuration: $e')),
+          SnackBar(content: Text(AppLocalizations.of(context)!.errorSavingConfiguration(e.toString()))),
         );
       }
     } finally {
@@ -67,24 +70,10 @@ class _BusinessAvailabilityScreenState
   }
 
   String _getDayName(int weekday) {
-    switch (weekday) {
-      case 0:
-        return 'Sunday';
-      case 1:
-        return 'Monday';
-      case 2:
-        return 'Tuesday';
-      case 3:
-        return 'Wednesday';
-      case 4:
-        return 'Thursday';
-      case 5:
-        return 'Friday';
-      case 6:
-        return 'Saturday';
-      default:
-        return 'Unknown';
-    }
+    // Use intl to obtain localized weekday name based on current locale.
+    final locale = AppLocalizations.of(context)!.localeName;
+    // In Dart, DateTime.weekday uses 1 (Mon) .. 7 (Sun)
+    return DateFormat.EEEE(locale).format(DateTime(2020, 1, weekday + 1));
   }
 
   Future<void> _pickTime(final BuildContext context, final TimeOfDay initial,
@@ -111,7 +100,7 @@ class _BusinessAvailabilityScreenState
       data: BusinessTheme.businessTheme,
       child: ResponsiveScaffold(
         appBar: AppBar(
-          title: const Text('Business Availability'),
+          title: Text(AppLocalizations.of(context)!.businessAvailability),
           centerTitle: true,
           backgroundColor: BusinessTheme.businessTheme.colorScheme.primary,
           foregroundColor: Colors.white,
@@ -129,7 +118,7 @@ class _BusinessAvailabilityScreenState
               IconButton(
                 icon: const Icon(Icons.save),
                 onPressed: _saveConfiguration,
-                tooltip: 'Save Configuration',
+                tooltip: AppLocalizations.of(context)!.save,
               ),
           ],
         ),
@@ -178,7 +167,7 @@ class _BusinessAvailabilityScreenState
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text('Start Time',
+                                Text(AppLocalizations.of(context)!.startTimeLabel,
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold),),
                                 const SizedBox(height: 8),
@@ -216,7 +205,7 @@ class _BusinessAvailabilityScreenState
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text('End Time',
+                                Text(AppLocalizations.of(context)!.endTimeLabel,
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold),),
                                 const SizedBox(height: 8),
@@ -267,7 +256,7 @@ class _BusinessAvailabilityScreenState
                               const SizedBox(width: 8),
                               Expanded(
                                 child: Text(
-                                  'End time must be after start time',
+                                  AppLocalizations.of(context)!.endTimeAfterStartTimeError,
                                   style: TextStyle(
                                       color: Colors.red.shade700, fontSize: 12,),
                                 ),
@@ -279,7 +268,7 @@ class _BusinessAvailabilityScreenState
                     ] else ...[
                       const SizedBox(height: 8),
                       Text(
-                        'Closed',
+                        AppLocalizations.of(context)!.closed,
                         style: TextStyle(
                           color: Colors.grey[600],
                           fontStyle: FontStyle.italic,
@@ -304,17 +293,13 @@ class _BusinessAvailabilityScreenState
             decoration: BoxDecoration(
               color: BusinessTheme.businessTheme.colorScheme.primary,
             ),
-            child: const Text(
-              'Studio Management',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
-              ),
+            child: Text(
+              AppLocalizations.of(context)!.studioManagement,
             ),
           ),
           ListTile(
             leading: const Icon(Icons.calendar_month),
-            title: const Text('Calendar'),
+            title: Text(AppLocalizations.of(context)!.calendar),
             onTap: () {
               Navigator.pop(context);
               context.go('/studio/calendar');
@@ -322,7 +307,7 @@ class _BusinessAvailabilityScreenState
           ),
           ListTile(
             leading: const Icon(Icons.access_time),
-            title: const Text('Availability'),
+            title: Text(AppLocalizations.of(context)!.availability),
             selected: true,
             onTap: () {
               Navigator.pop(context);
@@ -330,7 +315,7 @@ class _BusinessAvailabilityScreenState
           ),
           ListTile(
             leading: const Icon(Icons.dashboard),
-            title: const Text('Dashboard'),
+            title: Text(AppLocalizations.of(context)!.dashboard),
             onTap: () {
               Navigator.pop(context);
               context.go('/studio/dashboard');
