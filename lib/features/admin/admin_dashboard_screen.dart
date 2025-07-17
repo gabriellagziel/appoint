@@ -9,6 +9,7 @@ import 'package:appoint/l10n/app_localizations.dart';
 import 'package:appoint/utils/admin_localizations.dart';
 import 'package:appoint/providers/admin_provider.dart';
 import 'package:appoint/widgets/admin_guard.dart';
+import 'package:appoint/widgets/app_logo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -49,7 +50,13 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
     return AdminGuard(
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l10n?.adminScreenTBD ?? 'Admin Dashboard'),
+          title: Row(
+            children: [
+              const AppLogo(size: 32, logoOnly: true),
+              const SizedBox(width: 12),
+              Text(l10n?.adminScreenTBD ?? 'Admin Dashboard'),
+            ],
+          ),
           backgroundColor: Theme.of(context).primaryColor,
           foregroundColor: Colors.white,
           elevation: 0,
@@ -122,15 +129,32 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
-          const DrawerHeader(
+          DrawerHeader(
             decoration: BoxDecoration(
-              color: Colors.blue),
-            child: Text(
-              'Admin Panel',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
-              ),
+              color: Theme.of(context).primaryColor,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const AppLogo(size: 48, showText: false),
+                const SizedBox(height: 8),
+                const Text(
+                  'Admin Panel',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  'Time Organized • Set Send Done',
+                  style: TextStyle(
+                    color: Colors.white70,
+                    fontSize: 12,
+                  ),
+                ),
+              ],
             ),
           ),
           ListTile(

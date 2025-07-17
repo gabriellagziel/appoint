@@ -15,7 +15,8 @@ import 'providers/auth_provider.dart';
 import 'providers/theme_provider.dart';
 import 'providers/notification_provider.dart';
 import 'services/notification_service.dart';
-import 'theme/app_theme.dart';
+import 'theme/app_theme.dart;
+importwidgets/splash_screen.dart';
 
 /// Main entry point for the AppOint application
 void main() async {
@@ -86,7 +87,7 @@ class AppOintApp extends ConsumerWidget {
     final themeMode = ref.watch(themeModeProvider);
     
     return MaterialApp.router(
-      title: 'AppOint',
+      title: 'APP-OINT',
       debugShowCheckedModeBanner: false,
       
       // Theme configuration
@@ -134,7 +135,7 @@ class ErrorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'AppOint - Error',
+      title: 'APP-OINT - Error',
       home: Scaffold(
         backgroundColor: Colors.red.shade50,
         body: Center(
@@ -160,7 +161,7 @@ class ErrorApp extends StatelessWidget {
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  'AppOint failed to initialize properly. Please restart the app.',
+                  'APP-OINT failed to initialize properly. Please restart the app.',
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.red.shade700,
