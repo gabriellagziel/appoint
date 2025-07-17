@@ -35,7 +35,7 @@
 
 ## 3. Auth
 
-- [ ] **`user_role_provider`** – Placeholder returns `UserRole.business`; must fetch from Firebase auth claims.
+- [x] **`user_role_provider`** – Now derives role from Firebase custom claims and falls back gracefully.
 - [ ] **`login_screen.dart`** – TODO: notification token saving + auth state refresh – implement & test.
 
 ## 4. Booking / Scheduler
