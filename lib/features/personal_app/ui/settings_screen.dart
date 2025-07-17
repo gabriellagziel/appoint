@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:appoint/widgets/app_logo.dart';
+import 'package:appoint/constants/app_branding.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
@@ -33,7 +34,7 @@ class SettingsScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'Time Organized • Set Send Done',
+                  AppBranding.fullSlogan,
                   style: Theme.of(context).textTheme.bodySmall?.copyWith(
                     color: Colors.grey[600],
                   ),

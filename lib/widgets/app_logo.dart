@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'package:appoint/constants/app_branding.dart';
 
 /// APP-OINT Logo Widget
 /// Displays the official APP-OINT logo with customizable size and styling
@@ -40,7 +41,7 @@ class AppLogo extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            'Time Organized',
+            AppBranding.slogan,
             style: textStyle?.copyWith(fontSize: size * 0.15) ??
               TextStyle(
                 fontSize: size * 0.15,
@@ -48,7 +49,7 @@ class AppLogo extends StatelessWidget {
               ),
           ),
           Text(
-            'Set SendDone',
+            AppBranding.sloganSubtitle,
             style: textStyle?.copyWith(fontSize: size * 0.15) ??
               TextStyle(
                 fontSize: size * 0.15,

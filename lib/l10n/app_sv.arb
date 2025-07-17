@@ -2859,5 +2859,41 @@
   "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
+  },
+  "ad_pre_title": "Watch an ad to confirm your appointment",
+  "@ad_pre_title": {
+    "description": "Ad flow string: ad_pre_title"
+  },
+  "ad_pre_description": "As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.",
+  "@ad_pre_description": {
+    "description": "Ad flow string: ad_pre_description"
+  },
+  "watch_ad_button": "Watch Ad",
+  "@watch_ad_button": {
+    "description": "Ad flow string: watch_ad_button"
+  },
+  "upgrade_button": "Upgrade to Premium (€4)",
+  "@upgrade_button": {
+    "description": "Ad flow string: upgrade_button"
+  },
+  "ad_post_title": "Ad finished! You may now confirm your appointment.",
+  "@ad_post_title": {
+    "description": "Ad flow string: ad_post_title"
+  },
+  "confirm_appointment_button": "Confirm Appointment",
+  "@confirm_appointment_button": {
+    "description": "Ad flow string: confirm_appointment_button"
+  },
+  "upgrade_prompt_title": "One-time upgrade",
+  "@upgrade_prompt_title": {
+    "description": "Ad flow string: upgrade_prompt_title"
+  },
+  "upgrade_prompt_description": "Pay €4 to remove all ads forever",
+  "@upgrade_prompt_description": {
+    "description": "Ad flow string: upgrade_prompt_description"
+  },
+  "purchase_now_button": "Purchase Now",
+  "@purchase_now_button": {
+    "description": "Ad flow string: purchase_now_button"
   }
 }
