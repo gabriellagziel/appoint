@@ -3,6 +3,7 @@ import 'package:appoint/features/messaging/services/messaging_service.dart';
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 final userChatsProvider = StreamProvider<List<Chat>>((ref) {
   final service = ref.read(messagingServiceProvider);
@@ -184,7 +185,7 @@ class MessagesListScreen extends ConsumerWidget {
   }
 
   void _openChat(BuildContext context, Chat chat) {
-    Navigator.pushNamed(context, '/chat/${chat.id}');
+    context.push('/chat/${chat.id}');
   }
 
   void _startNewChat(BuildContext context, WidgetRef ref) {

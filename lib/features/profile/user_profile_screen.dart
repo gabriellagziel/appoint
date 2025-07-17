@@ -4,6 +4,7 @@ import 'package:appoint/providers/user_profile_provider.dart';
 import 'package:appoint/services/user_deletion_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 class UserProfileScreen extends ConsumerWidget {
   const UserProfileScreen({super.key});
@@ -68,10 +69,7 @@ class UserProfileScreen extends ConsumerWidget {
 
       // Navigate to login/onboarding
       if (context.mounted) {
-        Navigator.of(context).pushNamedAndRemoveUntil(
-          '/',
-          (route) => false,
-        );
+        context.go('/');
       }
     } catch (e) {
         Navigator.of(context).pop();
@@ -107,7 +105,7 @@ class UserProfileScreen extends ConsumerWidget {
                   const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, '/');
+                      context.go('/');
                     },
                     child: const Text('Login'),
                   ),
