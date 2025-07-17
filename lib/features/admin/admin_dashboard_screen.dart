@@ -10,6 +10,7 @@ import 'package:appoint/utils/admin_localizations.dart';
 import 'package:appoint/providers/admin_provider.dart';
 import 'package:appoint/widgets/admin_guard.dart';
 import 'package:appoint/widgets/app_logo.dart';
+import 'package:appoint/constants/app_branding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -148,7 +149,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'Time Organized • Set Send Done',
+                  AppBranding.fullSlogan,
                   style: TextStyle(
                     color: Colors.white70,
                     fontSize: 12,

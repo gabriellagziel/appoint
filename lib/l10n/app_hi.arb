@@ -2859,5 +2859,41 @@
   "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
+  },
+  "ad_pre_title": "अपनी अपॉइंटमेंट की पुष्टि के लिए एक विज्ञापन देखें",
+  "@ad_pre_title": {
+    "description": "Ad flow string: ad_pre_title"
+  },
+  "ad_pre_description": "एक मुफ्त उपयोगकर्ता के रूप में, आपको पुष्टि करने से पहले एक छोटा विज्ञापन देखना होगा। आप अपग्रेड करके सभी विज्ञापनों को स्थायी रूप से हटा सकते हैं।",
+  "@ad_pre_description": {
+    "description": "Ad flow string: ad_pre_description"
+  },
+  "watch_ad_button": "विज्ञापन देखें",
+  "@watch_ad_button": {
+    "description": "Ad flow string: watch_ad_button"
+  },
+  "upgrade_button": "प्रीमियम में अपग्रेड करें (€4)",
+  "@upgrade_button": {
+    "description": "Ad flow string: upgrade_button"
+  },
+  "ad_post_title": "विज्ञापन समाप्त! अब आप अपनी अपॉइंटमेंट की पुष्टि कर सकते हैं।",
+  "@ad_post_title": {
+    "description": "Ad flow string: ad_post_title"
+  },
+  "confirm_appointment_button": "अपॉइंटमेंट की पुष्टि करें",
+  "@confirm_appointment_button": {
+    "description": "Ad flow string: confirm_appointment_button"
+  },
+  "upgrade_prompt_title": "एक बार का अपग्रेड",
+  "@upgrade_prompt_title": {
+    "description": "Ad flow string: upgrade_prompt_title"
+  },
+  "upgrade_prompt_description": "सभी विज्ञापनों को हमेशा के लिए हटाने के लिए €4 का भुगतान करें",
+  "@upgrade_prompt_description": {
+    "description": "Ad flow string: upgrade_prompt_description"
+  },
+  "purchase_now_button": "अभी खरीदें",
+  "@purchase_now_button": {
+    "description": "Ad flow string: purchase_now_button"
   }
 }
