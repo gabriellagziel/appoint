@@ -31,7 +31,7 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
     }
     setState(() {
       _paymentStatus = PaymentStatus.processing;
-      final _errorMessage = null;
+      _errorMessage = null;
     });
     final status = await ref.read(paymentServiceProvider).handlePayment(amount);
     setState(() {
@@ -72,7 +72,7 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
     if (_paymentStatus == PaymentStatus.processing ||
         _paymentStatus == PaymentStatus.requiresAction) {
       return ColoredBox(
-        color: Colors.black.withValues(alpha: 0.5),
+        color: Colors.black.withOpacity(0.5),
         child: const Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -92,7 +92,7 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
   @override
   Widget build(BuildContext context) {
     final isLoading = _paymentStatus == PaymentStatus.processing ||
-        final _paymentStatus = = PaymentStatus.requiresAction;
+        _paymentStatus == PaymentStatus.requiresAction;
     return Stack(
       children: [
         Scaffold(
