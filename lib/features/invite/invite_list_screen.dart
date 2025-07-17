@@ -23,7 +23,7 @@ class InviteListScreen extends ConsumerWidget {
             itemBuilder: (context, final index) {
               final invite = invites[index];
               return ListTile(
-                title: Text(invite.inviteeContact?.displayName ?? 'Unknown'),
+                title: Text(invite.inviteeContact?.displayName ?? l10n.unknown),
                 subtitle: Text(invite.status.name),
                 onTap: () {
                   Navigator.pushNamed(
