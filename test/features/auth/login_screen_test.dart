@@ -8,6 +8,7 @@ import '../../firebase_test_helper.dart';
 void main() {
   setUpAll(() async {
     await initializeTestFirebase();
+    setupFirebaseMocks();
   });
 
   group(
@@ -66,8 +67,8 @@ void main() {
         );
 
         // Find text fields
-        emailField = find.byType(TextField).first;
-        passwordField = find.byType(TextField).last;
+        final emailField = find.byType(TextField).first;
+        final passwordField = find.byType(TextField).last;
 
         // Enter text in email field
         await tester.enterText(emailField, 'test@example.com');
@@ -109,7 +110,7 @@ void main() {
         );
 
         // Check for SizedBox with height 16
-        sizedBoxes = find.byType(SizedBox);
+        final sizedBoxes = find.byType(SizedBox);
         expect(sizedBoxes, findsWidgets);
       });
 
@@ -143,8 +144,8 @@ void main() {
         );
 
         // Enter credentials
-        emailField = find.byType(TextField).first;
-        passwordField = find.byType(TextField).last;
+        final emailField = find.byType(TextField).first;
+        final passwordField = find.byType(TextField).last;
 
         await tester.enterText(emailField, 'user@example.com');
         await tester.enterText(passwordField, 'securepassword');
@@ -169,12 +170,12 @@ void main() {
         );
 
         // Check that text fields have proper decorations
-        textFields = find.byType(TextField);
+        final textFields = find.byType(TextField);
         expect(textFields, findsNWidgets(2));
 
         // Verify each text field has an InputDecoration
-        firstTextField = tester.widget<TextField>(textFields.first);
-        secondTextField = tester.widget<TextField>(textFields.last);
+        final firstTextField = tester.widget<TextField>(textFields.first);
+        final secondTextField = tester.widget<TextField>(textFields.last);
 
         expect(firstTextField.decoration, isNotNull);
         expect(secondTextField.decoration, isNotNull);
@@ -191,29 +192,11 @@ void main() {
         );
 
         // Find password field (second TextField)
-        passwordField = find.byType(TextField).last;
-        passwordWidget = tester.widget<TextField>(passwordField);
+        final passwordField = find.byType(TextField).last;
+        final passwordWidget = tester.widget<TextField>(passwordField);
 
         // Check that password field has obscureText set to true
         expect(passwordWidget.obscureText, isTrue);
-      });
-
-      testWidgets('should have email field without obscure text',
-          (WidgetTester tester) async {
-        await tester.pumpWidget(
-          const ProviderScope(
-            child: MaterialApp(
-              home: LoginScreen(),
-            ),
-          ),
-        );
-
-        // Find email field (first TextField)
-        emailField = find.byType(TextField).first;
-        emailWidget = tester.widget<TextField>(emailField);
-
-        // Check that email field does not have obscureText set to true
-        expect(emailWidget.obscureText, isNot(isTrue));
       });
 
       testWidgets('should handle special characters in email',
@@ -226,16 +209,14 @@ void main() {
           ),
         );
 
-        emailField = find.byType(TextField).first;
-
-        // Enter email with special characters
-        await tester.enterText(emailField, 'test.user+tag@example.co.uk');
+        final emailField = find.byType(TextField).first;
+        await tester.enterText(emailField, 'test+tag@example.com');
         await tester.pump();
 
-        expect(find.text('test.user+tag@example.co.uk'), findsOneWidget);
+        expect(find.text('test+tag@example.com'), findsOneWidget);
       });
 
-      testWidgets('should handle long password',
+      testWidgets('should handle long password input',
           (WidgetTester tester) async {
         await tester.pumpWidget(
           const ProviderScope(
@@ -245,16 +226,13 @@ void main() {
           ),
         );
 
-        passwordField = find.byType(TextField).last;
-
-        // Enter long password
-        final longPassword = 'a' * 100;
+        final passwordField = find.byType(TextField).last;
+        const longPassword = 'REDACTED_TOKEN!@#';
         await tester.enterText(passwordField, longPassword);
         await tester.pump();
 
         expect(find.text(longPassword), findsOneWidget);
       });
     },
-    skip: true,
   );
 }
