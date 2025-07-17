@@ -12,44 +12,44 @@ class AppLocalizationsHe extends AppLocalizations {
   String get appName => 'APP-OINT';
 
   @override
-  String get welcome => 'Welcome';
+  String get welcome => 'ברוך הבא';
 
   @override
-  String get loading => 'Loading...';
+  String get loading => 'טוען...';
 
   @override
-  String get error => 'Error';
+  String get error => 'שגיאה';
 
   @override
-  String get success => 'Success';
+  String get success => 'הצלחה';
 
   @override
-  String get cancel => 'Cancel';
+  String get cancel => 'ביטול';
 
   @override
-  String get save => 'Save';
+  String get save => 'שמור';
 
   @override
-  String get delete => 'Delete';
+  String get delete => 'מחק';
 
   @override
-  String get edit => 'Edit';
+  String get edit => 'ערוך';
 
   @override
-  String get back => 'Back';
+  String get back => 'חזרה';
 
   @override
-  String get next => 'Next';
+  String get next => 'הבא';
 
   @override
-  String get done => 'Done';
+  String get done => 'בוצע';
 
   @override
-  String get ok => 'OK';
+  String get ok => 'אוקיי';
 
   @override
-  String get yes => 'Yes';
+  String get yes => 'כן';
 
   @override
-  String get no => 'No';
+  String get no => 'לא';
 }
