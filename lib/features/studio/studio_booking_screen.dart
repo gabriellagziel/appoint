@@ -139,8 +139,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                         date: _selectedDate!,
                         slot: _selectedSlot!,
                       );
-                      context.push('/studio/confirm',
-                          arguments: args,);
+                      context.push('/studio/confirm', extra: args);
                     }
                   : null,
               child: const Text('Next'),
