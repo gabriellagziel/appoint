@@ -116,8 +116,12 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     });
 
     try {
-      await OnboardingService().markOnboardingComplete();
-      AnalyticsService().trackOnboardingComplete();
+      await OnboardingService.instance.markOnboardingComplete();
+      // Track onboarding completion with placeholder values
+      await AnalyticsService().trackOnboardingComplete(
+        userType: 'guest',
+        totalTimeSeconds: 0,
+      );
       
       if (mounted) {
         context.go('/dashboard');
@@ -318,9 +322,9 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                     ),
                   )
                 : Text(
-                    final _currentPage = = _pages.length - 1 
-                      ? l10n.getStarted 
-                      : l10n.next,
+                    _currentPage == _pages.length - 1
+                        ? 'Get Started'
+                        : 'Next',
                     style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
