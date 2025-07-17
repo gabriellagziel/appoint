@@ -2,6 +2,7 @@ import 'package:appoint/features/subscriptions/models/subscription.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:stripe_platform_interface/stripe_platform_interface.dart' as stripe;
+import 'dart:developer' as dev;
 
 class SubscriptionService {
   SubscriptionService({
@@ -286,7 +287,7 @@ class SubscriptionService {
   Future<void> _cancelStripeSubscription(String subscriptionId) async {
     // This would integrate with Stripe SDK
     // For now, just log the cancellation
-    print('Canceling Stripe subscription: $subscriptionId');
+    dev.log('Canceling Stripe subscription: $subscriptionId', name: 'SubscriptionService');
   }
 
   /// Calculate end date based on interval
