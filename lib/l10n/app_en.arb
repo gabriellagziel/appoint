@@ -2699,5 +2699,21 @@
   "errorLoadingCheckout": "Error loading checkout",
   "@errorLoadingCheckout": {
     "description": "Shown when checkout page fails to load"
+  },
+  "startTimeLabel": "Start Time",
+  "@startTimeLabel": {
+    "description": "Label for start time input"
+  },
+  "endTimeLabel": "End Time",
+  "@endTimeLabel": {
+    "description": "Label for end time input"
+  },
+  "endTimeAfterStartTimeError": "End time must be after start time",
+  "@endTimeAfterStartTimeError": {
+    "description": "Error message when end time is before start time"
+  },
+  "studioManagement": "Studio Management",
+  "@studioManagement": {
+    "description": "Drawer header title for studio management section"
   }
 }
