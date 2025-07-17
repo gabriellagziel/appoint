@@ -318,9 +318,9 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                     ),
                   )
                 : Text(
-                    final _currentPage = = _pages.length - 1 
-                      ? l10n.getStarted 
-                      : l10n.next,
+                    _currentPage == _pages.length - 1
+                        ? l10n.getStarted
+                        : l10n.next,
                     style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w600,

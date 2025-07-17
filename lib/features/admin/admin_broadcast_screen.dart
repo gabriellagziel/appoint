@@ -674,8 +674,8 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
       if (pickedFile != null) {
         setState(() {
-          final _selectedImage = File(pickedFile.path);
-          final _selectedVideo = null; // Clear video if image is selected
+          _selectedImage = File(pickedFile.path);
+          _selectedVideo = null; // Clear video if image is selected
         });
       }
     } catch (e) {
@@ -700,8 +700,8 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
       if (pickedFile != null) {
         setState(() {
-          final _selectedVideo = File(pickedFile.path);
-          final _selectedImage = null; // Clear image if video is selected
+          _selectedVideo = File(pickedFile.path);
+          _selectedImage = null; // Clear image if video is selected
         });
       }
     } catch (e) {
@@ -720,7 +720,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   void _clearMedia() {
     setState(() {
       _selectedImage = null;
-      final _selectedVideo = null;
+      _selectedVideo = null;
     });
   }
 
