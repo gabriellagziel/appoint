@@ -36,11 +36,12 @@ void main() {
       // Note: In integration tests, we can't actually create real Stripe sessions
       // but we can test the service structure and error handling
       expect(
-          () => stripeService.createCheckoutSession(
-                studioId: 'test-studio-id',
-                priceId: 'price_test123',
-              ),
-          returnsNormally,);
+        () => stripeService.createCheckoutSession(
+          studioId: 'test-studio-id',
+          priceId: 'price_test123',
+        ),
+        returnsNormally,
+      );
     });
 
     testWidgets('Stripe Subscription Status Management', (tester) async {
@@ -133,8 +134,10 @@ void main() {
       // Test subscription cancellation
       // Note: In integration tests, we can't actually cancel real Stripe subscriptions
       // but we can test the service structure
-      expect(() => stripeService.cancelSubscription(testStudioId),
-          returnsNormally,);
+      expect(
+        () => stripeService.cancelSubscription(testStudioId),
+        returnsNormally,
+      );
     });
 
     testWidgets('Stripe Service Error Handling', (tester) async {
@@ -149,11 +152,12 @@ void main() {
 
       // Test with null parameters
       expect(
-          () => stripeService.updateSubscriptionStatus(
-                studioId: 'test',
-                status: 'active',
-              ),
-          returnsNormally,);
+        () => stripeService.updateSubscriptionStatus(
+          studioId: 'test',
+          status: 'active',
+        ),
+        returnsNormally,
+      );
     });
 
     testWidgets('Stripe Webhook Simulation', (tester) async {

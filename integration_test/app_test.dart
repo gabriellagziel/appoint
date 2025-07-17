@@ -38,9 +38,13 @@ void main() {
     expect(find.text('Login'), findsOneWidget);
 
     await tester.enterText(
-        find.widgetWithText(TextField, 'Email'), 'test@example.com',);
+      find.widgetWithText(TextField, 'Email'),
+      'test@example.com',
+    );
     await tester.enterText(
-        find.widgetWithText(TextField, 'Password'), 'password',);
+      find.widgetWithText(TextField, 'Password'),
+      'password',
+    );
     await tester.tap(find.text('Sign In'));
     await tester.pumpAndSettle();
 

@@ -50,8 +50,7 @@ void main() {
       }
     });
 
-    testWidgets('FCM Notification Trigger on New Booking',
-        (tester) async {
+    testWidgets('FCM Notification Trigger on New Booking', (tester) async {
       app.main();
       await tester.pumpAndSettle();
 
@@ -90,11 +89,12 @@ void main() {
 
       expect(bookings.docs, isNotEmpty);
       expect(
-          bookings.docs.first.data()['clientName'], equals('FCM Test Client'),);
+        bookings.docs.first.data()['clientName'],
+        equals('FCM Test Client'),
+      );
     });
 
-    testWidgets('FCM Topic Subscription and Unsubscription',
-        (tester) async {
+    testWidgets('FCM Topic Subscription and Unsubscription', (tester) async {
       app.main();
       await tester.pumpAndSettle();
 

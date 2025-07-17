@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:math';
 
 /// Retry Healer for Flaky Tests
-/// 
+///
 /// Automatically retries flaky tests with intelligent strategies:
 /// - Exponential backoff retry strategy
 /// - Adaptive retry limits based on test history
@@ -13,7 +13,7 @@ class RetryHealer {
   static const Duration _defaultInitialDelay = Duration(milliseconds: 100);
   static const double _defaultBackoffMultiplier = 2.0;
   static const Duration _defaultMaxDelay = Duration(seconds: 30);
-  
+
   /// Heals a flaky test using retry strategy
   static Future<HealingResult> healFlakyTest({
     required String testName,
@@ -23,7 +23,7 @@ class RetryHealer {
   }) async {
     final healingStrategy = strategy ?? _createDefaultStrategy(pattern);
     final startTime = DateTime.now();
-    
+
     try {
       // First attempt
       bool result = await testFunction();
@@ -37,18 +37,18 @@ class RetryHealer {
           reason: 'Test passed on first attempt',
         );
       }
-      
+
       // Retry attempts
       for (int attempt = 1; attempt <= healingStrategy.maxRetries; attempt++) {
         // Calculate delay
         final delay = _calculateDelay(attempt, healingStrategy);
-        
+
         // Wait before retry
         await Future.delayed(delay);
-        
+
         // Execute test
         result = await testFunction();
-        
+
         if (result) {
           return HealingResult(
             success: true,
@@ -59,13 +59,13 @@ class RetryHealer {
             reason: 'Test passed after ${attempt + 1} attempts',
           );
         }
-        
+
         // Check if we should continue based on pattern
         if (!_shouldContinueRetry(attempt, pattern, healingStrategy)) {
           break;
         }
       }
-      
+
       // All retries failed
       return HealingResult(
         success: false,
@@ -75,7 +75,6 @@ class RetryHealer {
         confidence: 0.0,
         reason: 'Test failed after ${healingStrategy.maxRetries + 1} attempts',
       );
-      
     } catch (e) {
       return HealingResult(
         success: false,
@@ -87,7 +86,7 @@ class RetryHealer {
       );
     }
   }
-  
+
   /// Heals multiple flaky tests in parallel
   static Future<List<HealingResult>> healFlakyTests({
     required Map<String, Future<bool> Function()> testFunctions,
@@ -96,13 +95,13 @@ class RetryHealer {
   }) async {
     final results = <HealingResult>[];
     final futures = <Future<HealingResult>>[];
-    
+
     for (final entry in testFunctions.entries) {
       final testName = entry.key;
       final testFunction = entry.value;
       final pattern = patterns[testName]!;
       final strategy = strategies?[testName];
-      
+
       futures.add(healFlakyTest(
         testName: testName,
         testFunction: testFunction,
@@ -110,14 +109,14 @@ class RetryHealer {
         strategy: strategy,
       ));
     }
-    
+
     // Execute all healing attempts in parallel
     final healingResults = await Future.wait(futures);
     results.addAll(healingResults);
-    
+
     return results;
   }
-  
+
   /// Creates default retry strategy based on flaky pattern
   static RetryStrategy _createDefaultStrategy(FlakyPattern pattern) {
     switch (pattern.type) {
@@ -130,7 +129,7 @@ class RetryHealer {
           jitter: true,
           adaptive: true,
         );
-        
+
       case FlakyPatternType.intermittent:
         return RetryStrategy(
           maxRetries: 3,
@@ -140,7 +139,7 @@ class RetryHealer {
           jitter: false,
           adaptive: false,
         );
-        
+
       case FlakyPatternType.consecutive:
         return RetryStrategy(
           maxRetries: 4,
@@ -150,7 +149,7 @@ class RetryHealer {
           jitter: true,
           adaptive: true,
         );
-        
+
       case FlakyPatternType.timeBased:
         return RetryStrategy(
           maxRetries: 6,
@@ -160,7 +159,7 @@ class RetryHealer {
           jitter: true,
           adaptive: true,
         );
-        
+
       case FlakyPatternType.variable:
         return RetryStrategy(
           maxRetries: 4,
@@ -172,25 +171,25 @@ class RetryHealer {
         );
     }
   }
-  
+
   /// Calculates delay for retry attempt
   static Duration _calculateDelay(int attempt, RetryStrategy strategy) {
     // Base delay with exponential backoff
-    double delayMs = strategy.initialDelay.inMilliseconds * 
+    double delayMs = strategy.initialDelay.inMilliseconds *
         pow(strategy.backoffMultiplier, attempt - 1);
-    
+
     // Apply maximum delay limit
     delayMs = delayMs.clamp(0.0, strategy.maxDelay.inMilliseconds.toDouble());
-    
+
     // Apply jitter if enabled
     if (strategy.jitter) {
       final jitterFactor = 0.1 + (Random().nextDouble() * 0.2); // 10-30% jitter
       delayMs *= jitterFactor;
     }
-    
+
     return Duration(milliseconds: delayMs.round());
   }
-  
+
   /// Determines if retry should continue based on pattern
   static bool _shouldContinueRetry(
     int attempt,
@@ -201,31 +200,31 @@ class RetryHealer {
     if (attempt >= strategy.maxRetries) {
       return false;
     }
-    
+
     // Pattern-specific retry logic
     switch (pattern.type) {
       case FlakyPatternType.timing:
         // For timing issues, continue retrying with longer delays
         return true;
-        
+
       case FlakyPatternType.intermittent:
         // For intermittent issues, limit retries to avoid excessive delays
         return attempt < 3;
-        
+
       case FlakyPatternType.consecutive:
         // For consecutive failures, be more aggressive with retries
         return attempt < 5;
-        
+
       case FlakyPatternType.timeBased:
         // For time-based issues, continue retrying with longer delays
         return true;
-        
+
       case FlakyPatternType.variable:
         // For variable issues, use adaptive retry logic
         return _adaptiveRetryLogic(attempt, pattern, strategy);
     }
   }
-  
+
   /// Adaptive retry logic for variable flaky patterns
   static bool _adaptiveRetryLogic(
     int attempt,
@@ -235,31 +234,31 @@ class RetryHealer {
     if (!strategy.adaptive) {
       return attempt < strategy.maxRetries;
     }
-    
+
     // Adaptive logic based on pattern confidence
     final confidenceFactor = pattern.confidence;
     final adaptiveMaxRetries = (strategy.maxRetries * confidenceFactor).round();
-    
+
     return attempt < adaptiveMaxRetries;
   }
-  
+
   /// Calculates confidence in healing success
   static double _calculateConfidence(int attempts, RetryStrategy strategy) {
     // Base confidence decreases with more attempts
     double confidence = 1.0 - (attempts / (strategy.maxRetries + 1));
-    
+
     // Adjust based on strategy type
     if (strategy.adaptive) {
       confidence *= 1.2; // Adaptive strategies are more effective
     }
-    
+
     if (strategy.jitter) {
       confidence *= 1.1; // Jitter helps with timing issues
     }
-    
+
     return confidence.clamp(0.0, 1.0);
   }
-  
+
   /// Creates adaptive retry strategy based on test history
   static RetryStrategy createAdaptiveStrategy({
     required String testName,
@@ -270,12 +269,12 @@ class RetryHealer {
     final retrySuccessRate = _analyzeRetrySuccessRate(history);
     final avgRetriesToSuccess = _analyzeAvgRetriesToSuccess(history);
     final failurePattern = _analyzeFailurePattern(history);
-    
+
     // Adjust strategy based on history
     int maxRetries = _defaultMaxRetries;
     Duration initialDelay = _defaultInitialDelay;
     double backoffMultiplier = _defaultBackoffMultiplier;
-    
+
     // Adjust based on retry success rate
     if (retrySuccessRate > 0.8) {
       maxRetries = 5;
@@ -284,12 +283,12 @@ class RetryHealer {
       maxRetries = 2;
       initialDelay = Duration(milliseconds: 200);
     }
-    
+
     // Adjust based on average retries to success
     if (avgRetriesToSuccess > 2) {
       maxRetries = max(maxRetries, avgRetriesToSuccess + 1);
     }
-    
+
     // Adjust based on failure pattern
     if (failurePattern == FailurePatternType.timing) {
       initialDelay = Duration(milliseconds: 300);
@@ -297,7 +296,7 @@ class RetryHealer {
     } else if (failurePattern == FailurePatternType.intermittent) {
       backoffMultiplier = 1.5;
     }
-    
+
     return RetryStrategy(
       maxRetries: maxRetries,
       initialDelay: initialDelay,
@@ -307,14 +306,14 @@ class RetryHealer {
       adaptive: true,
     );
   }
-  
+
   /// Analyzes retry success rate from history
   static double _analyzeRetrySuccessRate(List<TestExecutionHistory> history) {
     if (history.isEmpty) return 0.5;
-    
+
     int totalRetries = 0;
     int successfulRetries = 0;
-    
+
     for (final h in history) {
       if (h.retryAttempts > 0) {
         totalRetries += h.retryAttempts;
@@ -323,66 +322,71 @@ class RetryHealer {
         }
       }
     }
-    
+
     return totalRetries > 0 ? successfulRetries / totalRetries : 0.5;
   }
-  
+
   /// Analyzes average retries to success
-  static double _analyzeAvgRetriesToSuccess(List<TestExecutionHistory> history) {
+  static double _analyzeAvgRetriesToSuccess(
+      List<TestExecutionHistory> history) {
     if (history.isEmpty) return 1.0;
-    
+
     final successfulRetries = history
         .where((h) => h.finalResult && h.retryAttempts > 0)
         .map((h) => h.retryAttempts)
         .toList();
-    
+
     if (successfulRetries.isEmpty) return 1.0;
-    
+
     final sum = successfulRetries.reduce((a, b) => a + b);
     return sum / successfulRetries.length;
   }
-  
+
   /// Analyzes failure pattern from history
-  static FailurePatternType _analyzeFailurePattern(List<TestExecutionHistory> history) {
+  static FailurePatternType _analyzeFailurePattern(
+      List<TestExecutionHistory> history) {
     if (history.length < 3) return FailurePatternType.intermittent;
-    
+
     // Look for timing patterns
-    final executionTimes = history.map((h) => h.executionTime.inMilliseconds).toList();
+    final executionTimes =
+        history.map((h) => h.executionTime.inMilliseconds).toList();
     final timeVariance = _calculateVariance(executionTimes);
-    final avgTime = executionTimes.reduce((a, b) => a + b) / executionTimes.length;
+    final avgTime =
+        executionTimes.reduce((a, b) => a + b) / executionTimes.length;
     final timeVarianceRatio = timeVariance / (avgTime * avgTime);
-    
+
     if (timeVarianceRatio > 0.5) {
       return FailurePatternType.timing;
     }
-    
+
     // Look for consecutive patterns
     final results = history.map((h) => h.finalResult).toList();
     final consecutiveFailures = _calculateMaxConsecutiveFailures(results);
-    
+
     if (consecutiveFailures > 2) {
       return FailurePatternType.consecutive;
     }
-    
+
     return FailurePatternType.intermittent;
   }
-  
+
   /// Calculates variance of a list of values
   static double _calculateVariance(List<int> values) {
     if (values.isEmpty) return 0.0;
-    
+
     final mean = values.reduce((a, b) => a + b) / values.length;
-    final squaredDifferences = values.map((value) => (value - mean) * (value - mean));
+    final squaredDifferences =
+        values.map((value) => (value - mean) * (value - mean));
     final sum = squaredDifferences.reduce((a, b) => a + b);
-    
+
     return sum / values.length;
   }
-  
+
   /// Calculates maximum consecutive failures
   static int _calculateMaxConsecutiveFailures(List<bool> results) {
     int maxConsecutive = 0;
     int currentConsecutive = 0;
-    
+
     for (final result in results) {
       if (!result) {
         currentConsecutive++;
@@ -391,10 +395,10 @@ class RetryHealer {
         currentConsecutive = 0;
       }
     }
-    
+
     return maxConsecutive;
   }
-  
+
   /// Monitors healing performance and provides insights
   static Future<HealingInsights> analyzeHealingPerformance({
     required List<HealingResult> results,
@@ -403,34 +407,45 @@ class RetryHealer {
     if (results.isEmpty) {
       return HealingInsights.empty();
     }
-    
+
     final successfulHealings = results.where((r) => r.success).toList();
     final failedHealings = results.where((r) => !r.success).toList();
-    
+
     final successRate = successfulHealings.length / results.length;
-    final avgAttempts = results.map((r) => r.attempts).reduce((a, b) => a + b) / results.length;
-    final avgHealingTime = results.map((r) => r.totalTime.inMilliseconds).reduce((a, b) => a + b) / results.length;
-    
+    final avgAttempts =
+        results.map((r) => r.attempts).reduce((a, b) => a + b) / results.length;
+    final avgHealingTime =
+        results.map((r) => r.totalTime.inMilliseconds).reduce((a, b) => a + b) /
+            results.length;
+
     // Strategy effectiveness analysis
     final strategyEffectiveness = <String, double>{};
     final strategies = results.map((r) => r.strategy.name).toSet();
-    
+
     for (final strategy in strategies) {
-      final strategyResults = results.where((r) => r.strategy.name == strategy).toList();
-      final strategySuccessRate = strategyResults.where((r) => r.success).length / strategyResults.length;
+      final strategyResults =
+          results.where((r) => r.strategy.name == strategy).toList();
+      final strategySuccessRate =
+          strategyResults.where((r) => r.success).length /
+              strategyResults.length;
       strategyEffectiveness[strategy] = strategySuccessRate;
     }
-    
+
     // Pattern effectiveness analysis
     final patternEffectiveness = <FlakyPatternType, double>{};
-    final patterns = results.map((r) => r.pattern?.type).whereType<FlakyPatternType>().toSet();
-    
+    final patterns = results
+        .map((r) => r.pattern?.type)
+        .whereType<FlakyPatternType>()
+        .toSet();
+
     for (final pattern in patterns) {
-      final patternResults = results.where((r) => r.pattern?.type == pattern).toList();
-      final patternSuccessRate = patternResults.where((r) => r.success).length / patternResults.length;
+      final patternResults =
+          results.where((r) => r.pattern?.type == pattern).toList();
+      final patternSuccessRate =
+          patternResults.where((r) => r.success).length / patternResults.length;
       patternEffectiveness[pattern] = patternSuccessRate;
     }
-    
+
     return HealingInsights(
       totalHealings: results.length,
       successfulHealings: successfulHealings.length,
@@ -443,28 +458,33 @@ class RetryHealer {
       recommendations: _generateRecommendations(results, successRate),
     );
   }
-  
+
   /// Generates recommendations based on healing performance
   static List<String> _generateRecommendations(
     List<HealingResult> results,
     double successRate,
   ) {
     final recommendations = <String>[];
-    
+
     if (successRate < 0.5) {
-      recommendations.add('Consider reducing retry attempts to avoid excessive delays');
-      recommendations.add('Investigate root cause of flaky tests instead of relying on retries');
+      recommendations
+          .add('Consider reducing retry attempts to avoid excessive delays');
+      recommendations.add(
+          'Investigate root cause of flaky tests instead of relying on retries');
     }
-    
+
     if (successRate > 0.8) {
-      recommendations.add('Retry strategy is effective, consider increasing retry limits');
+      recommendations
+          .add('Retry strategy is effective, consider increasing retry limits');
     }
-    
-    final avgAttempts = results.map((r) => r.attempts).reduce((a, b) => a + b) / results.length;
+
+    final avgAttempts =
+        results.map((r) => r.attempts).reduce((a, b) => a + b) / results.length;
     if (avgAttempts > 3) {
-      recommendations.add('High average retry attempts suggest timing or resource issues');
+      recommendations
+          .add('High average retry attempts suggest timing or resource issues');
     }
-    
+
     return recommendations;
   }
 }
@@ -478,7 +498,7 @@ class RetryStrategy {
   final bool jitter;
   final bool adaptive;
   final String name;
-  
+
   RetryStrategy({
     required this.maxRetries,
     required this.initialDelay,
@@ -488,11 +508,11 @@ class RetryStrategy {
     required this.adaptive,
     String? name,
   }) : name = name ?? _generateStrategyName();
-  
+
   static String _generateStrategyName() {
     return 'RetryStrategy_${DateTime.now().millisecondsSinceEpoch}';
   }
-  
+
   @override
   String toString() {
     return 'RetryStrategy('
@@ -514,7 +534,7 @@ class HealingResult {
   final double confidence;
   final String reason;
   final FlakyPattern? pattern;
-  
+
   HealingResult({
     required this.success,
     required this.strategy,
@@ -524,7 +544,7 @@ class HealingResult {
     required this.reason,
     this.pattern,
   });
-  
+
   @override
   String toString() {
     return 'HealingResult('
@@ -543,7 +563,7 @@ class TestExecutionHistory {
   final int retryAttempts;
   final Duration executionTime;
   final DateTime timestamp;
-  
+
   TestExecutionHistory({
     required this.finalResult,
     required this.retryAttempts,
@@ -563,7 +583,7 @@ class HealingInsights {
   final Map<String, double> strategyEffectiveness;
   final Map<FlakyPatternType, double> patternEffectiveness;
   final List<String> recommendations;
-  
+
   HealingInsights({
     required this.totalHealings,
     required this.successfulHealings,
@@ -575,7 +595,7 @@ class HealingInsights {
     required this.patternEffectiveness,
     required this.recommendations,
   });
-  
+
   factory HealingInsights.empty() {
     return HealingInsights(
       totalHealings: 0,
@@ -589,7 +609,7 @@ class HealingInsights {
       recommendations: [],
     );
   }
-  
+
   @override
   String toString() {
     return 'HealingInsights('
@@ -606,4 +626,4 @@ enum FailurePatternType {
   timing,
   consecutive,
   intermittent,
-} 
+}
