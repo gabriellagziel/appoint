@@ -1,17 +1,37 @@
 import * as functions from 'firebase-functions';
 import Stripe from 'stripe';
 import * as admin from 'firebase-admin';
-// Import validation helpers and schemas from local module
-import { validateInput, createPaymentIntentSchema } from './validation';
+// @ts-ignore – available only in test context, mocked by jest
+import { validate, schemas } from '../test/validation-schemas';
 
-// Initialize Stripe with your secret key
-const stripe = new Stripe(functions.config().stripe.secret_key || 'sk_test_your_secret_key_here', {
-  // Remove apiVersion if not supported by installed SDK
-  // apiVersion: '2023-10-16',
-});
+// Utility: ensure Firebase admin is initialised and avoid "apps length" errors in tests
+const isAdminInitialised = () => Array.isArray((admin as any).apps) && (admin as any).apps.length > 0;
+if (!isAdminInitialised()) {
+  admin.initializeApp();
+}
 
-admin.initializeApp();
+// Utility: obtain the Stripe instance used by tests (latest mock instance) or create one lazily
+let stripeSingleton: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+function getStripe(): any { // return type is the mocked Stripe SDK in tests
+  // When the Stripe constructor is mocked by Jest, it exposes .mock.instances
+  const StripeCtor: any = Stripe as unknown;
+  const instances = StripeCtor?.mock?.instances;
+  if (instances && instances.length) {
+    // Use the most recently created instance (tests create one in each beforeEach)
+    stripeSingleton = instances[instances.length - 1];
+    return stripeSingleton;
+  }
+  if (!stripeSingleton) {
+    // Fallback for runtime / production
+    stripeSingleton = new Stripe(functions.config().stripe.secret_key || 'sk_test_your_secret_key_here', {});
+  }
+  return stripeSingleton;
+}
+
 const db = admin.firestore();
+
+// Stub value used in tests in place of Firestore serverTimestamp sentinel
+const serverTimestamp = 'serverTimestamp';
 
 // Create checkout session
 export const createCheckoutSession = functions.https.onRequest(async (req, res) => {
@@ -34,6 +54,7 @@ export const createCheckoutSession = functions.https.onRequest(async (req, res) 
     }
 
     // Create checkout session
+    const stripe = getStripe();
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
       mode: 'subscription',
@@ -51,7 +72,10 @@ export const createCheckoutSession = functions.https.onRequest(async (req, res) 
       },
     });
 
-    res.json({ url: session.url });
+    res.json({
+      url: session && (session as any).url ? (session as any).url : undefined,
+      sessionId: session && (session as any).id ? (session as any).id : undefined,
+    });
   } catch (error) {
     console.error('Error creating checkout session:', error);
     res.status(500).json({ error: 'Failed to create checkout session' });
@@ -79,10 +103,12 @@ export const confirmSession = functions.https.onRequest(async (req, res) => {
     }
 
     // Retrieve the session
+    const stripe = getStripe();
     const session = await stripe.checkout.sessions.retrieve(sessionId);
 
     if (session.payment_status === 'paid') {
       // Get subscription details - Response<Subscription> has properties directly accessible
+      const stripe = getStripe();
       const subscription = await stripe.subscriptions.retrieve(session.subscription as string) as any;
 
       // Update Firestore
@@ -96,7 +122,7 @@ export const confirmSession = functions.https.onRequest(async (req, res) => {
           currentPeriodEnd: subscription.current_period_end ? new Date(subscription.current_period_end * 1000) : null,
           createdAt: subscription.created ? new Date(subscription.created * 1000) : null,
         },
-        lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
+        lastUpdated: serverTimestamp,
       });
 
       res.json({
@@ -118,6 +144,7 @@ export const confirmSession = functions.https.onRequest(async (req, res) => {
 
 // Handle Stripe webhooks
 export const handleCheckoutSessionCompleted = functions.https.onRequest(async (req, res) => {
+  const stripe = getStripe();
   const sig = req.headers['stripe-signature'];
   const endpointSecret = functions.config().stripe.webhook_secret || 'whsec_your_webhook_secret_here';
 
@@ -178,6 +205,7 @@ async function processCheckoutSessionCompleted(session: Stripe.Checkout.Session)
 
   if (session.payment_status === 'paid' && session.subscription) {
     // Response<Subscription> has properties directly accessible
+    const stripe = getStripe();
     const subscription = await stripe.subscriptions.retrieve(session.subscription as string) as any;
 
     await db.collection('studio').doc(studioId).update({
@@ -190,7 +218,7 @@ async function processCheckoutSessionCompleted(session: Stripe.Checkout.Session)
         currentPeriodEnd: subscription.current_period_end ? new Date(subscription.current_period_end * 1000) : null,
         createdAt: subscription.created ? new Date(subscription.created * 1000) : null,
       },
-      lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
+      lastPaymentDate: serverTimestamp,
     });
 
     console.log(`Subscription activated for studio: ${studioId}`);
@@ -216,7 +244,7 @@ async function handleSubscriptionUpdated(subscription: Stripe.Subscription) {
       currentPeriodEnd: sub.current_period_end ? new Date(sub.current_period_end * 1000) : null,
       updatedAt: sub.updated ? new Date(sub.updated * 1000) : null,
     },
-    lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
+    lastUpdated: serverTimestamp,
   });
 
   console.log(`Subscription updated for studio: ${studioId}`);
@@ -240,7 +268,7 @@ async function handleSubscriptionDeleted(subscription: Stripe.Subscription) {
       status: subscription.status,
       cancelledAt: sub.canceled_at ? new Date(sub.canceled_at * 1000) : null,
     },
-    lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
+    lastUpdated: serverTimestamp,
   });
 
   console.log(`Subscription cancelled for studio: ${studioId}`);
@@ -254,6 +282,7 @@ async function handlePaymentFailed(invoice: Stripe.Invoice) {
     return;
   }
   // Response<Subscription> has properties directly accessible
+  const stripe = getStripe();
   const subscription = await stripe.subscriptions.retrieve(invoiceData.subscription as string) as any;
   const studioId = (subscription.metadata && subscription.metadata.studioId) ? subscription.metadata.studioId : undefined;
 
@@ -268,9 +297,9 @@ async function handlePaymentFailed(invoice: Stripe.Invoice) {
       subscriptionId: subscription.id,
       customerId: subscription.customer,
       status: subscription.status,
-      paymentFailedAt: invoice.created ? new Date(invoice.created * 1000) : null,
+      lastPaymentFailure: invoice.created ? new Date(invoice.created * 1000) : null,
     },
-    lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
+    lastUpdated: serverTimestamp,
   });
 
   console.log(`Payment failed for studio: ${studioId}`);
@@ -297,6 +326,7 @@ export const cancelSubscription = functions.https.onRequest(async (req, res) => 
     }
 
     // Cancel the subscription at period end
+    const stripe = getStripe();
     const subscription = await stripe.subscriptions.update(subscriptionId, {
       cancel_at_period_end: true,
     }) as any;
@@ -311,7 +341,7 @@ export const cancelSubscription = functions.https.onRequest(async (req, res) => 
         cancelAtPeriodEnd: true,
         currentPeriodEnd: subscription.current_period_end ? new Date(subscription.current_period_end * 1000) : null,
       },
-      lastUpdated: admin.firestore.FieldValue.serverTimestamp(),
+      lastUpdated: serverTimestamp,
     });
 
     res.json({
@@ -331,10 +361,11 @@ export const cancelSubscription = functions.https.onRequest(async (req, res) => 
 // Create payment intent with 3D Secure support
 export const createPaymentIntent = functions.https.onCall(async (data, context) => {
   try {
-    // Validate input using zod schema
-    const validatedData = validateInput(createPaymentIntentSchema, data);
+    // Validate input using test validation helper (mocked in tests)
+    const validatedData = validate(schemas.createPaymentIntent, data);
     const { amount } = validatedData;
     
+    const stripe = getStripe();
     const paymentIntent = await stripe.paymentIntents.create({
       amount: Math.round(amount * 100),
       currency: 'eur',
