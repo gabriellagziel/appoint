@@ -133,55 +133,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
           return PermissionsScreen(familyLink: familyLink);
         },
       ),
-      GoRoute(
-        path: '/google/calendar',
-        name: 'googleCalendar',
-        builder: (context, final state) =>
-            const GoogleIntegrationScreen(),
-      ),
-      GoRoute(
-        path: '/ambassador-dashboard',
-        name: 'ambassadorDashboard',
-        builder: (context, final state) =>
-            AmbassadorDashboardScreen(
-              notificationService: NotificationService(),
-              branchService: BranchService(),
-            ),
-      ),
-      GoRoute(
-        path: '/ambassador-onboarding',
-        name: 'ambassadorOnboarding',
-        builder: (context, final state) =>
-            const AmbassadorOnboardingScreen(),
-      ),
-      GoRoute(
-        path: '/chat-booking',
-        name: 'chatBooking',
-        builder: (context, final state) => const ChatBookingScreen(),
-      ),
-      GoRoute(
-        path: '/booking/request',
-        name: 'bookingRequest',
-        builder: (context, final state) => const BookingRequestScreen(),
-      ),
-      GoRoute(
-        path: '/booking/details',
-        name: 'bookingDetails',
-        builder: (context, final state) => const BookingConfirmScreen(),
-      ),
-      GoRoute(
-        path: '/invite/details',
-        name: 'inviteDetails',
-        builder: (context, final state) {
-          final invite = state.extra! as Invite;
-          return InviteDetailScreen(invite: invite);
-        },
-      ),
-      GoRoute(
-        path: '/invite/list',
-        name: 'inviteList',
-        builder: (context, final state) => const InviteListScreen(),
-      ),
+      // Duplicate routes removed to prevent conflicts
 
       // Studio & Business Routes
       GoRoute(
@@ -269,95 +221,92 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         name: 'providers',
         builder: (context, final state) => const ProvidersScreen(),
       ),
+      // Additional Business routes
       GoRoute(
-        path: '/business/appointment-requests',
-        name: 'appointmentRequests',
-        builder: (context, final state) =>
-            const AppointmentRequestsScreen(),
+        path: '/business/calendar',
+        name: 'businessCalendar',
+        builder: (context, final state) => const BusinessCalendarScreen(),
       ),
       GoRoute(
-        path: '/business/external-meetings',
-        name: 'externalMeetings',
-        builder: (context, final state) => const ExternalMeetingsScreen(),
-      ),
-      GoRoute(
-        path: '/studio/confirm',
-        name: 'studioConfirm',
-        builder: (context, final state) =>
-            const StudioBookingConfirmScreen(),
+        path: '/business/availability',
+        name: 'businessAvailability',
+        builder: (context, final state) => const BusinessAvailabilityScreen(),
       ),
 
-      // Search route (defined earlier, removed duplicate)
-
-      // Messaging routes
+      // Standalone analytics route
       GoRoute(
-        path: '/messages',
-        name: 'messages',
-        builder: (context, final state) => const MessagesListScreen(),
+        path: '/analytics',
+        name: 'analyticsRoot',
+        builder: (context, final state) => const AnalyticsScreen(),
+      ),
+
+      // Family root shortcut
+      GoRoute(
+        path: '/family',
+        name: 'familyRoot',
+        builder: (context, final state) => const FamilyDashboardScreen(),
       ),
       GoRoute(
-        path: '/chat/:chatId',
-        name: 'chat',
+        path: '/family/invite-child',
+        name: 'inviteChild',
+        builder: (context, final state) => const InviteChildScreen(),
+      ),
+      GoRoute(
+        path: '/family/permissions',
+        name: 'permissions',
         builder: (context, final state) {
-          final chatId = state.pathParameters['chatId']!;
-          return ChatScreen(chatId: chatId);
+          final familyLink = state.extra as FamilyLink;
+          return PermissionsScreen(familyLink: familyLink);
         },
       ),
-
-      // Subscription routes
       GoRoute(
-        path: '/subscription',
-        name: 'subscription',
-        builder: (context, final state) => const SubscriptionScreen(),
+        path: '/google/calendar',
+        name: 'googleCalendar',
+        builder: (context, final state) =>
+            const GoogleIntegrationScreen(),
       ),
-
-      // Rewards routes
       GoRoute(
-        path: '/rewards',
-        name: 'rewards',
-        builder: (context, final state) => const RewardsScreen(),
+        path: '/ambassador-dashboard',
+        name: 'ambassadorDashboard',
+        builder: (context, final state) =>
+            AmbassadorDashboardScreen(
+              notificationService: NotificationService(),
+              branchService: BranchService(),
+            ),
       ),
-
-      // Enhanced onboarding route
       GoRoute(
-        path: '/enhanced-onboarding',
-        name: 'enhancedOnboarding',
-        builder: (context, final state) => const EnhancedOnboardingScreen(),
+        path: '/ambassador-onboarding',
+        name: 'ambassadorOnboarding',
+        builder: (context, final state) =>
+            const AmbassadorOnboardingScreen(),
       ),
-
-      // Enhanced dashboard route
       GoRoute(
-        path: '/enhanced-dashboard',
-        name: 'enhancedDashboard',
-        builder: (context, final state) => const EnhancedDashboardScreen(),
+        path: '/chat-booking',
+        name: 'chatBooking',
+        builder: (context, final state) => const ChatBookingScreen(),
       ),
-
-      // Enhanced notifications route
       GoRoute(
-        path: '/notifications',
-        name: 'notifications',
-        builder: (context, final state) => const EnhancedNotificationsScreen(),
+        path: '/booking/request',
+        name: 'bookingRequest',
+        builder: (context, final state) => const BookingRequestScreen(),
       ),
-
-      // Enhanced settings route
       GoRoute(
-        path: '/settings',
-        name: 'settings',
-        builder: (context, final state) => const EnhancedSettingsScreen(),
+        path: '/booking/details',
+        name: 'bookingDetails',
+        builder: (context, final state) => const BookingConfirmScreen(),
       ),
-
-      // Enhanced calendar route
       GoRoute(
-        path: '/calendar',
-        name: 'calendar',
-        builder: (context, final state) => const EnhancedCalendarScreen(),
+        path: '/invite/details',
+        name: 'inviteDetails',
+        builder: (context, final state) {
+          final invite = state.extra! as Invite;
+          return InviteDetailScreen(invite: invite);
+        },
       ),
-
-      // Enhanced profile route
       GoRoute(
-        path: '/enhanced-profile',
-        name: 'enhancedProfile',
-        builder: (context, final state) => const EnhancedProfileScreen(),
+        path: '/invite/list',
+        name: 'inviteList',
+        builder: (context, final state) => const InviteListScreen(),
       ),
 
       // Studio nested routes
