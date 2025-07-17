@@ -3,6 +3,7 @@ import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/widgets/app_logo.dart';
+import 'package:appoint/constants/app_branding.dart';
 
 final onboardingServiceProvider = Provider<OnboardingService>((ref) => OnboardingService());
 
@@ -83,7 +84,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
               ),
               const SizedBox(height: 16),
               Text(
-                'Time Organized • Set Send Done',
+                AppBranding.fullSlogan,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                   color: Colors.grey[600],
                 ),

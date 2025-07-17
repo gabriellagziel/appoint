@@ -2859,5 +2859,41 @@
   "loadingCheckout": "Checkout wird geladen...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
+  },
+  "ad_pre_title": "Schauen Sie sich eine Anzeige an, um Ihren Termin zu bestätigen",
+  "@ad_pre_title": {
+    "description": "Title shown before ad for free users"
+  },
+  "ad_pre_description": "Als kostenloser Benutzer müssen Sie eine kurze Anzeige ansehen, bevor Sie bestätigen. Sie können alle Anzeigen dauerhaft entfernen, indem Sie upgraden.",
+  "@ad_pre_description": {
+    "description": "Description shown before ad for free users"
+  },
+  "watch_ad_button": "Anzeige Ansehen",
+  "@watch_ad_button": {
+    "description": "Button to watch ad"
+  },
+  "upgrade_button": "Zu Premium upgraden (€4)",
+  "@upgrade_button": {
+    "description": "Button to upgrade to premium"
+  },
+  "ad_post_title": "Anzeige beendet! Sie können jetzt Ihren Termin bestätigen.",
+  "@ad_post_title": {
+    "description": "Title shown after ad is finished"
+  },
+  "confirm_appointment_button": "Termin Bestätigen",
+  "@confirm_appointment_button": {
+    "description": "Button to confirm appointment after ad"
+  },
+  "upgrade_prompt_title": "Einmaliges Upgrade",
+  "@upgrade_prompt_title": {
+    "description": "Title for upgrade prompt"
+  },
+  "upgrade_prompt_description": "Zahlen Sie €4, um alle Anzeigen für immer zu entfernen",
+  "@upgrade_prompt_description": {
+    "description": "Description for upgrade prompt"
+  },
+  "purchase_now_button": "Jetzt Kaufen",
+  "@purchase_now_button": {
+    "description": "Button to purchase upgrade"
   }
 }

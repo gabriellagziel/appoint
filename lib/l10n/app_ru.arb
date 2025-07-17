@@ -2859,5 +2859,41 @@
   "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
+  },
+  "ad_pre_title": "Посмотрите рекламу, чтобы подтвердить встречу",
+  "@ad_pre_title": {
+    "description": "Ad flow string: ad_pre_title"
+  },
+  "ad_pre_description": "Как бесплатный пользователь, вы должны посмотреть короткую рекламу перед подтверждением. Вы можете навсегда убрать всю рекламу, обновившись.",
+  "@ad_pre_description": {
+    "description": "Ad flow string: ad_pre_description"
+  },
+  "watch_ad_button": "Смотреть Рекламу",
+  "@watch_ad_button": {
+    "description": "Ad flow string: watch_ad_button"
+  },
+  "upgrade_button": "Перейти на Премиум (€4)",
+  "@upgrade_button": {
+    "description": "Ad flow string: upgrade_button"
+  },
+  "ad_post_title": "Реклама завершена! Теперь вы можете подтвердить встречу.",
+  "@ad_post_title": {
+    "description": "Ad flow string: ad_post_title"
+  },
+  "confirm_appointment_button": "Подтвердить Встречу",
+  "@confirm_appointment_button": {
+    "description": "Ad flow string: confirm_appointment_button"
+  },
+  "upgrade_prompt_title": "Разовое обновление",
+  "@upgrade_prompt_title": {
+    "description": "Ad flow string: upgrade_prompt_title"
+  },
+  "upgrade_prompt_description": "Заплатите €4, чтобы навсегда убрать всю рекламу",
+  "@upgrade_prompt_description": {
+    "description": "Ad flow string: upgrade_prompt_description"
+  },
+  "purchase_now_button": "Купить Сейчас",
+  "@purchase_now_button": {
+    "description": "Ad flow string: purchase_now_button"
   }
 }

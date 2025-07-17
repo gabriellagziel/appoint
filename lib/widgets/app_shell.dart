@@ -1,5 +1,6 @@
 import 'package:appoint/providers/user_provider.dart';
 import 'package:appoint/widgets/app_logo.dart';
+import 'package:appoint/constants/app_branding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -54,7 +55,7 @@ class AppShell extends ConsumerWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    'Time Organized • Set Send Done',
+                    AppBranding.fullSlogan,
                     style: TextStyle(
                       color: Colors.white70,
                       fontSize: 10,

@@ -6,28 +6,28 @@ class AppBranding {
   static const String appName = 'APP-OINT';
   static const String appNameShort = 'AppOint';
   
-  // Official Slogan
-  static const String slogan = Time Organized
-  static const String sloganSubtitle = Set Send Done
-  static const String fullSlogan = $slogan • $sloganSubtitle
+  // Official Slogan - DO NOT TRANSLATE
+  static const String slogan = 'Time Organized';
+  static const String sloganSubtitle = 'Set Send Done';
+  static const String fullSlogan = '$slogan • $sloganSubtitle';
   
   // Logo Assets
-  static const String logoPath = assets/images/app_oint_logo.png';
-  static const String logoIconPath = assets/images/app_oint_icon.png';
-  static const String faviconPath = assets/images/favicon.png';
+  static const String logoPath = 'assets/images/app_oint_logo.png';
+  static const String logoIconPath = 'assets/images/app_oint_icon.png';
+  static const String faviconPath = 'assets/images/favicon.png';
   
   // App Icons
-  static const String appIconPath = assets/images/app_icon.png';
-  static const String appIconMaskablePath = assets/images/app_icon_maskable.png';
+  static const String appIconPath = 'assets/images/app_icon.png';
+  static const String appIconMaskablePath = 'assets/images/app_icon_maskable.png';
   
   // Brand Colors (extracted from the logo)
   static const int primaryOrange = 0xFFFF8C00;      // Top figure
-  static const int primaryPeach =0FFFFB366;       // Top-right figure
-  static const int primaryTeal = 0F20B2AA;        // Right figure
+  static const int primaryPeach = 0xFFFFB366;       // Top-right figure
+  static const int primaryTeal = 0xFF20B2AA;        // Right figure
   static const int primaryPurple = 0xFF8A2BE2;      // Bottom-right figure
-  static const int primaryDarkPurple = 0xFF4  // Bottom figure
-  static const int primaryBlue = 0F4169E1;        // Bottom-left figure
-  static const int primaryGreen =0FF32CD32;       // Left figure
+  static const int primaryDarkPurple = 0xFF4B0082;  // Bottom figure
+  static const int primaryBlue = 0xFF4169E1;        // Bottom-left figure
+  static const int primaryGreen = 0xFF32CD32;       // Left figure
   static const int primaryYellow = 0xFFFFD700;      // Top-left figure
   
   // Logo Colors List
