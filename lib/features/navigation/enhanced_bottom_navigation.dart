@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 final currentIndexProvider = StateProvider<int>((ref) => 0);
 
@@ -47,19 +48,19 @@ class EnhancedBottomNavigation extends ConsumerWidget {
   void _navigateToPage(BuildContext context, int index) {
     switch (index) {
       case 0:
-        Navigator.pushReplacementNamed(context, '/dashboard');
+        context.go('/dashboard');
         break;
       case 1:
-        Navigator.pushReplacementNamed(context, '/search');
+        context.go('/search');
         break;
       case 2:
-        Navigator.pushReplacementNamed(context, '/calendar');
+        context.go('/calendar');
         break;
       case 3:
-        Navigator.pushReplacementNamed(context, '/messages');
+        context.go('/messages');
         break;
       case 4:
-        Navigator.pushReplacementNamed(context, '/profile');
+        context.go('/profile');
         break;
     }
   }

@@ -120,20 +120,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         name: 'familyDashboard',
         builder: (context, final state) => const FamilyDashboardScreen(),
       ),
-      GoRoute(
-        path: '/family/invite-child',
-        name: 'inviteChild',
-        builder: (context, final state) => const InviteChildScreen(),
-      ),
-      GoRoute(
-        path: '/family/permissions',
-        name: 'permissions',
-        builder: (context, final state) {
-          final familyLink = state.extra as FamilyLink;
-          return PermissionsScreen(familyLink: familyLink);
-        },
-      ),
-      // Duplicate routes removed to prevent conflicts
+      // Duplicate family invite-child and permissions routes removed
 
       // Studio & Business Routes
       GoRoute(
@@ -245,11 +232,6 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         path: '/family',
         name: 'familyRoot',
         builder: (context, final state) => const FamilyDashboardScreen(),
-      ),
-      GoRoute(
-        path: '/family/invite-child',
-        name: 'inviteChild',
-        builder: (context, final state) => const InviteChildScreen(),
       ),
       GoRoute(
         path: '/family/permissions',
