@@ -1952,7 +1952,7 @@
   },
   "subscriptionActivatedSuccessfully": "Subscription activated successfully!",
   "@subscriptionActivatedSuccessfully": {
-    "description": "Localization key for: Subscription activated successfully!"
+    "description": "Shown when a Stripe subscription is activated successfully"
   },
   "activityLogaction": "Activity: {action}",
   "@activityLogaction": {
@@ -2348,7 +2348,7 @@
   },
   "paymentWasCancelled": "Payment was cancelled",
   "@paymentWasCancelled": {
-    "description": "Localization key for: Payment was cancelled"
+    "description": "Shown when the user cancels a Stripe payment"
   },
   "clearAll": "Clear All",
   "@clearAll": {
@@ -2677,5 +2677,27 @@
   "loadingCheckout": "Loading checkout...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
+  },
+  "errorConfirmingPayment": "Error confirming payment: {error}",
+  "@errorConfirmingPayment": {
+    "description": "Shown when Stripe payment confirmation fails",
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "subscribeTo": "Subscribe to {planName}",
+  "@subscribeTo": {
+    "description": "Title in app bar for subscription screen",
+    "placeholders": {
+      "planName": {}
+    }
+  },
+  "completeYourSubscription": "Complete your subscription below",
+  "@completeYourSubscription": {
+    "description": "Header guiding user to complete subscription steps"
+  },
+  "errorLoadingCheckout": "Error loading checkout",
+  "@errorLoadingCheckout": {
+    "description": "Shown when checkout page fails to load"
   }
 }
