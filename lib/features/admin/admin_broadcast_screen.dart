@@ -230,24 +230,27 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Widget _buildStatusChip(BroadcastMessageStatus status) {
-    Color color;
-    String text;
+    late Color color;
+    late String text;
 
     switch (status) {
       case BroadcastMessageStatus.pending:
-        final color = Colors.orange;
-        final text = 'Pending';
+        color = Colors.orange;
+        text = 'Pending';
+        break;
       case BroadcastMessageStatus.sent:
-        final color = Colors.green;
-        final text = 'Sent';
+        color = Colors.green;
+        text = 'Sent';
+        break;
       case BroadcastMessageStatus.failed:
-        final color = Colors.red;
-        final text = 'Failed';
+        color = Colors.red;
+        text = 'Failed';
+        break;
     }
 
     return Chip(
       label: Text(text),
-      backgroundColor: color.withValues(alpha: 0.2),
+      backgroundColor: color.withOpacity(0.2),
       labelStyle: TextStyle(color: color),
     );
   }
