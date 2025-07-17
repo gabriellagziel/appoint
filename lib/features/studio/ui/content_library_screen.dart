@@ -2,6 +2,7 @@
 import 'package:appoint/providers/content_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 /// Displays a paginated list of content items.
 class ContentLibraryScreen extends ConsumerStatefulWidget {
@@ -51,11 +52,7 @@ class _ContentLibraryScreenState extends ConsumerState<ContentLibraryScreen> {
                 subtitle:
                     item.description != null ? Text(item.description!) : null,
                 onTap: () {
-                  Navigator.pushNamed(
-                    context,
-                    '/content/:id',
-                    arguments: item.id,
-                  );
+                  context.push('/content/${item.id}');
                 },
               );
             },

@@ -3,6 +3,7 @@ import 'package:appoint/models/staff_member.dart';
 import 'package:appoint/providers/studio_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 class StudioBookingSelection {
 
@@ -138,7 +139,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                         date: _selectedDate!,
                         slot: _selectedSlot!,
                       );
-                      Navigator.pushNamed(context, '/studio/confirm',
+                      context.push('/studio/confirm',
                           arguments: args,);
                     }
                   : null,
