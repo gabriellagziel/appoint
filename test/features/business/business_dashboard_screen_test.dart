@@ -5,16 +5,17 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
 import '../../mocks/firebase_mocks.dart';
-import 'firebase_test_helper.dart';
+import '../../firebase_test_helper.dart';
 
 void main() {
   setUpAll(() async {
     await initializeTestFirebase();
+    setupFirebaseMocks();
   });
 
   testWidgets('Business Dashboard shows welcome text',
       (WidgetTester tester) async {
-    firestore = MockFirebaseFirestore();
+    final firestore = MockFirebaseFirestore();
 
     await tester.pumpWidget(
       const ProviderScope(
