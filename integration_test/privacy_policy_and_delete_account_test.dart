@@ -90,8 +90,10 @@ void main() {
       await tester.tap(cancelButton);
       await tester.pumpAndSettle();
 
-      expect(find.text('Are you sure you want to delete your account?'),
-          findsNothing,);
+      expect(
+        find.text('Are you sure you want to delete your account?'),
+        findsNothing,
+      );
     });
   });
 }
