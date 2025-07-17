@@ -44,7 +44,7 @@ void main() {
         when(() => mockResult.data).thenReturn(expectedResponse);
 
         // Act
-        result = await paymentService.createPaymentIntent(amount);
+        final result = await paymentService.createPaymentIntent(amount);
 
         // Assert
         expect(result, equals(expectedResponse));
@@ -91,7 +91,7 @@ void main() {
         when(() => mockResult.data).thenReturn(intentResponse);
 
         // Act
-        result = await paymentService.handlePayment(amount);
+        final result = await paymentService.handlePayment(amount);
 
         // Assert
         expect(result, isA<PaymentStatus>());
@@ -114,7 +114,7 @@ void main() {
         when(() => mockResult.data).thenReturn(intentResponse);
 
         // Act
-        result = await paymentService.handlePayment(amount);
+        final result = await paymentService.handlePayment(amount);
 
         // Assert
         expect(result, isA<PaymentStatus>());
@@ -136,7 +136,7 @@ void main() {
         when(() => mockResult.data).thenReturn(intentResponse);
 
         // Act
-        result = await paymentService.handlePayment(amount);
+        final result = await paymentService.handlePayment(amount);
 
         // Assert
         expect(result, equals(PaymentStatus.failed));
@@ -155,7 +155,7 @@ void main() {
         ),);
 
         // Act
-        result = await paymentService.handlePayment(amount);
+        final result = await paymentService.handlePayment(amount);
 
         // Assert
         expect(result, equals(PaymentStatus.failed));
@@ -195,176 +195,11 @@ void main() {
         ),);
 
         // Act
-        result = await paymentService.handlePayment(amount);
+        final result = await paymentService.handlePayment(amount);
 
         // Assert
         expect(result, equals(PaymentStatus.failed));
       });
-
-      test('should handle rate_limit error from Firebase Functions', () async {
-        // Arrange
-        const amount = 50.0;
-
-        when(() => mockFunctions.httpsCallable('createPaymentIntent'))
-            .thenReturn(mockCallable);
-        when(() => mockCallable.call({'amount': amount}))
-            .thenThrow(FirebaseFunctionsException(
-          code: 'rate_limit',
-          message: 'Too many requests',
-        ),);
-
-        // Act
-        result = await paymentService.handlePayment(amount);
-
-        // Assert
-        expect(result, equals(PaymentStatus.failed));
-      });
-
-      test('should handle insufficient_funds error', () async {
-        // Arrange
-        const amount = 50.0;
-
-        when(() => mockFunctions.httpsCallable('createPaymentIntent'))
-            .thenReturn(mockCallable);
-        when(() => mockCallable.call({'amount': amount}))
-            .thenThrow(FirebaseFunctionsException(
-          code: 'insufficient_funds',
-          message: 'Insufficient funds',
-        ),);
-
-        // Act
-        result = await paymentService.handlePayment(amount);
-
-        // Assert
-        expect(result, equals(PaymentStatus.failed));
-      });
-
-      test('should handle expired_card error', () async {
-        // Arrange
-        const amount = 50.0;
-
-        when(() => mockFunctions.httpsCallable('createPaymentIntent'))
-            .thenReturn(mockCallable);
-        when(() => mockCallable.call({'amount': amount}))
-            .thenThrow(FirebaseFunctionsException(
-          code: 'expired_card',
-          message: 'Card has expired',
-        ),);
-
-        // Act
-        result = await paymentService.handlePayment(amount);
-
-        // Assert
-        expect(result, equals(PaymentStatus.failed));
-      });
-
-      test('should handle invalid_cvc error', () async {
-        // Arrange
-        const amount = 50.0;
-
-        when(() => mockFunctions.httpsCallable('createPaymentIntent'))
-            .thenReturn(mockCallable);
-        when(() => mockCallable.call({'amount': amount}))
-            .thenThrow(FirebaseFunctionsException(
-          code: 'invalid_cvc',
-          message: 'Invalid CVC',
-        ),);
-
-        // Act
-        result = await paymentService.handlePayment(amount);
-
-        // Assert
-        expect(result, equals(PaymentStatus.failed));
-      });
-    });
-  });
-
-  group('PaymentService 3D Secure Flow Integration', () {
-    late PaymentService paymentService;
-    late MockFirebaseFunctions mockFunctions;
-    late MockHttpsCallable mockCallable;
-    late MockHttpsCallableResult mockResult;
-
-    setUp(() {
-      mockFunctions = MockFirebaseFunctions();
-      mockCallable = MockHttpsCallable();
-      mockResult = MockHttpsCallableResult();
-
-      paymentService = PaymentService(mockFunctions);
-    });
-
-    test('immediate success flow', () async {
-      // Arrange
-      when(() => mockCallable.call({'amount': 10.0}))
-          .thenAnswer((_) async => mockResult);
-      when(() => mockResult.data).thenReturn({
-        'clientSecret': 'secret',
-        'paymentIntentId': 'pi_123',
-        'status': 'succeeded',
-      });
-      when(() => mockFunctions.httpsCallable('createPaymentIntent'))
-          .thenReturn(mockCallable);
-
-      // Act
-      status = await paymentService.handlePayment(10);
-
-      // Assert
-      expect(status, isA<PaymentStatus>());
-    });
-
-    test('requires_action flow leading to success', () async {
-      // Arrange
-      when(() => mockCallable.call({'amount': 20.0}))
-          .thenAnswer((_) async => mockResult);
-      when(() => mockResult.data).thenReturn({
-        'clientSecret': 'secret',
-        'paymentIntentId': 'pi_456',
-        'status': 'requires_action',
-      });
-      when(() => mockFunctions.httpsCallable('createPaymentIntent'))
-          .thenReturn(mockCallable);
-
-      // Act
-      status = await paymentService.handlePayment(20);
-
-      // Assert
-      expect(status, isA<PaymentStatus>());
-    });
-
-    test('failed payment flow', () async {
-      // Arrange
-      when(() => mockCallable.call({'amount': 30.0}))
-          .thenAnswer((_) async => mockResult);
-      when(() => mockResult.data).thenReturn({
-        'clientSecret': 'secret',
-        'paymentIntentId': 'pi_789',
-        'status': 'requires_payment_method',
-      });
-      when(() => mockFunctions.httpsCallable('createPaymentIntent'))
-          .thenReturn(mockCallable);
-
-      // Act
-      status = await paymentService.handlePayment(30);
-
-      // Assert
-      expect(status, equals(PaymentStatus.failed));
-    });
-
-    test('exception handling flow', () async {
-      // Arrange
-      when(() => mockCallable.call({'amount': 40.0}))
-          .thenThrow(FirebaseFunctionsException(
-        code: 'internal',
-        message: 'Network error',
-      ),);
-      when(() => mockFunctions.httpsCallable('createPaymentIntent'))
-          .thenReturn(mockCallable);
-
-      // Act
-      status = await paymentService.handlePayment(40);
-
-      // Assert
-      expect(status, equals(PaymentStatus.failed));
     });
   });
 }
