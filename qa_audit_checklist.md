@@ -46,7 +46,7 @@
 
 ## 5. Notifications
 
-- [ ] **`broadcast_service.dart`** – Uses `print()` instead of logger; errors swallowed.
+[/] **`broadcast_service.dart`** – Replaced raw print with `dart:developer` log; still needs proper FCM Function integration and retry strategy.
 - [ ] **`notification_settings_screen.dart`** – `AppLocalizations` keys missing; FCM token display not localized.
 
 ## 6. Rewards / Referrals / Ambassador
