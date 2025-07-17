@@ -1,6 +1,5 @@
 import 'package:appoint/config/theme.dart';
 import 'package:appoint/features/playtime/playtime_admin_notifier.dart';
-import 'package:appoint/l10n/app_localizations.dart';
 import 'package:appoint/utils/admin_localizations.dart';
 import 'package:appoint/models/playtime_background.dart';
 import 'package:appoint/models/playtime_game.dart';
@@ -405,8 +404,6 @@ class _GamesTab extends ConsumerWidget {
 class _BackgroundsTab extends ConsumerWidget {
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    final l10n = AdminLocalizations.of(context);
-
     return Consumer(
       builder: (context, final ref, final child) {
         final backgroundsAsync = ref.watch(allBackgroundsProvider);
@@ -430,7 +427,7 @@ class _BackgroundsTab extends ConsumerWidget {
 
                   // Empty State
                   if (backgrounds.isEmpty) ...[
-                    _buildEmptyState(l10n, 'No backgrounds found'),
+                    _buildEmptyState('No backgrounds found'),
                   ],
                 ],
               ),
@@ -602,7 +599,7 @@ class _BackgroundsTab extends ConsumerWidget {
     );
   }
 
-  Widget _buildEmptyState(AppLocalizations l10n, final String message) => Center(
+  Widget _buildEmptyState(final String message) => Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
