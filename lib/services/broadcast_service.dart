@@ -2,6 +2,7 @@ import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/models/user_profile.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'dart:developer' as dev;
 
 class BroadcastService {
 
@@ -198,10 +199,11 @@ class BroadcastService {
 
       // Stub implementation for FCM notification sending
       // In a real implementation, this would call Firebase Functions to send the notification
-      print('FCM notification would be sent to ${user.id} with token: $fcmToken');
-      print('Message: ${message.title} - ${message.body}');
-    } catch (e) {
-      print('Failed to send FCM notification to ${user.id}: $e');
+      dev.log('FCM notification would be sent', name: 'BroadcastService',
+          error: {'userId': user.id, 'token': fcmToken, 'title': message.title});
+    } catch (e, st) {
+      dev.log('Failed to send FCM notification', name: 'BroadcastService',
+          error: e, stackTrace: st);
       rethrow;
     }
   }
