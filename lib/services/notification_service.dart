@@ -6,7 +6,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter/material.dart';
 import 'package:timezone/timezone.dart' as tz;
-import 'package:timezone/data/latest.dart' as tz;
+import 'package:timezone/data/latest.dart' as tzdata;
 import 'package:appoint/providers/fcm_token_provider.dart';
 
 /// Comprehensive notification service that handles both local and FCM notifications
@@ -30,8 +30,8 @@ class NotificationService {
     
     _onMessage = onMessage;
     
-    // Initialize timezone
-    tz.initializeTimeZones();
+    // Initialize timezone data
+    tzdata.initializeTimeZones();
     
     // Initialize local notifications
     await _initializeLocalNotifications();
