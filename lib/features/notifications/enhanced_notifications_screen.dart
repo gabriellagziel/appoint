@@ -1,6 +1,7 @@
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 final notificationsProvider = FutureProvider<List<NotificationItem>>((ref) async {
   // TODO: Implement real notifications
@@ -265,15 +266,15 @@ class EnhancedNotificationsScreen extends ConsumerWidget {
     switch (notification.type) {
       case NotificationType.booking:
         // Navigate to booking details
-        Navigator.pushNamed(context, '/booking/${notification.actionData?['bookingId']}');
+        context.push('/booking/${notification.actionData?['bookingId']}');
         break;
       case NotificationType.message:
         // Navigate to chat
-        Navigator.pushNamed(context, '/chat/${notification.actionData?['chatId']}');
+        context.push('/chat/${notification.actionData?['chatId']}');
         break;
       case NotificationType.rewards:
         // Navigate to rewards
-        Navigator.pushNamed(context, '/rewards');
+        context.push('/rewards');
         break;
       case NotificationType.system:
         // Handle system notification
@@ -281,11 +282,11 @@ class EnhancedNotificationsScreen extends ConsumerWidget {
         break;
       case NotificationType.payment:
         // Navigate to payment details
-        Navigator.pushNamed(context, '/payment/${notification.actionData?['paymentId']}');
+        context.push('/payment/${notification.actionData?['paymentId']}');
         break;
       case NotificationType.reminder:
         // Navigate to reminder details
-        Navigator.pushNamed(context, '/reminder/${notification.actionData?['reminderId']}');
+        context.push('/reminder/${notification.actionData?['reminderId']}');
         break;
     }
   }

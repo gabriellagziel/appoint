@@ -246,7 +246,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       ),
       GoRoute(
         path: '/business/messages',
-        name: 'messages',
+        name: 'businessMessages',
         builder: (context, final state) => const MessagesScreen(),
       ),
       GoRoute(
@@ -256,7 +256,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       ),
       GoRoute(
         path: '/business/settings',
-        name: 'settings',
+        name: 'businessSettings',
         builder: (context, final state) => const SettingsScreen(),
       ),
       GoRoute(
@@ -287,12 +287,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
             const StudioBookingConfirmScreen(),
       ),
 
-      // Search route
-      GoRoute(
-        path: '/search',
-        name: 'search',
-        builder: (context, final state) => const SearchScreen(),
-      ),
+      // Search route (defined earlier, removed duplicate)
 
       // Messaging routes
       GoRoute(

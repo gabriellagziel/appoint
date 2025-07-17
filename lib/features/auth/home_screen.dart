@@ -4,6 +4,7 @@ import 'package:appoint/theme/app_colors.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -29,28 +30,28 @@ class HomeScreen extends ConsumerWidget {
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/booking/request');
+                context.push('/booking/request');
               },
               child: const Text('Book Appointment'),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/invite/list');
+                context.push('/invite/list');
               },
               child: const Text('My Invites'),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/dashboard');
+                context.push('/dashboard');
               },
               child: const Text('Dashboard'),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/profile');
+                context.push('/profile');
               },
               child: const Text('My Profile'),
             ),
@@ -88,14 +89,14 @@ class _HomeDrawer extends ConsumerWidget {
             title: const Text('Dashboard'),
             onTap: () {
               Navigator.pop(context);
-              Navigator.pushNamed(context, '/dashboard');
+              context.push('/dashboard');
             },
           ),
           ListTile(
             title: const Text('Profile'),
             onTap: () {
               Navigator.pop(context);
-              Navigator.pushNamed(context, '/profile');
+              context.push('/profile');
             },
           ),
           FutureBuilder<bool>(
@@ -109,7 +110,7 @@ class _HomeDrawer extends ConsumerWidget {
                   title: const Text('Admin'),
                   onTap: () {
                     Navigator.pop(context);
-                    Navigator.pushNamed(context, '/admin/dashboard');
+                    context.push('/admin/dashboard');
                   },
                 );
               }

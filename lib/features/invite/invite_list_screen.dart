@@ -2,6 +2,7 @@ import 'package:appoint/l10n/app_localizations.dart';
 import 'package:appoint/providers/invite_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 class InviteListScreen extends ConsumerWidget {
   const InviteListScreen({super.key});
@@ -26,11 +27,7 @@ class InviteListScreen extends ConsumerWidget {
                 title: Text(invite.inviteeContact?.displayName ?? 'Unknown'),
                 subtitle: Text(invite.status.name),
                 onTap: () {
-                  Navigator.pushNamed(
-                    context,
-                    '/invite-detail',
-                    arguments: invite,
-                  );
+                  context.push('/invite/details', extra: invite);
                 },
               );
             },
