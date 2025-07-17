@@ -2732,5 +2732,13 @@
   "emailOptionalLabel": "Email (Optional)",
   "@emailOptionalLabel": { "description": "Label for optional email field" },
   "requiresInstallFallback": "Requires Install Fallback",
-  "@requiresInstallFallback": { "description": "Toggle label for install fallback" }
+  "@requiresInstallFallback": { "description": "Toggle label for install fallback" },
+  "fromName": "From: {name}",
+  "@fromName": { "description": "Label displaying the sender name", "placeholders": { "name": {} } },
+  "phoneLabel": "Phone: {phone}",
+  "@phoneLabel": { "description": "Label displaying phone number", "placeholders": { "phone": {} } },
+  "unknown": "Unknown",
+  "@unknown": { "description": "Fallback text for unknown values" },
+  "noPhone": "No phone",
+  "@noPhone": { "description": "Fallback when no phone is available" }
 }
