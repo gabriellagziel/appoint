@@ -65,6 +65,7 @@ import 'package:appoint/features/notifications/enhanced_notifications_screen.dar
 import 'package:appoint/features/settings/enhanced_settings_screen.dart';
 import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
 import 'package:appoint/features/profile/enhanced_profile_screen.dart';
+import 'package:appoint/features/studio_profile/studio_profile_screen.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
     initialLocation: '/',
@@ -203,7 +204,10 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       GoRoute(
         path: '/studio/profile',
         name: 'studioProfile',
-        builder: (context, final state) => const BusinessProfileScreen(),
+        builder: (context, final state) {
+          final studioId = state.extra as String? ?? '';
+          return StudioProfileScreen(studioId: studioId);
+        },
       ),
       GoRoute(
         path: '/business/connect',
@@ -251,7 +255,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       ),
       GoRoute(
         path: '/business/messages',
-        name: 'messages',
+        name: 'businessMessages',
         builder: (context, final state) => const MessagesScreen(),
       ),
       GoRoute(
@@ -261,7 +265,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       ),
       GoRoute(
         path: '/business/settings',
-        name: 'settings',
+        name: 'businessSettings',
         builder: (context, final state) => const SettingsScreen(),
       ),
       GoRoute(
@@ -290,13 +294,6 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         name: 'studioConfirm',
         builder: (context, final state) =>
             const StudioBookingConfirmScreen(),
-      ),
-
-      // Search route
-      GoRoute(
-        path: '/search',
-        name: 'search',
-        builder: (context, final state) => const SearchScreen(),
       ),
 
       // Messaging routes
