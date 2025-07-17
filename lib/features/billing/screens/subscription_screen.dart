@@ -1,3 +1,4 @@
+import 'package:appoint/l10n/app_localizations.dart';
 import 'package:appoint/services/stripe_service.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -106,9 +107,10 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
 
         if (mounted) {
           // Show success message
+          final l10n = AppLocalizations.of(context)!;
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Subscription activated successfully!'),
+            SnackBar(
+              content: Text(l10n.REDACTED_TOKEN),
               backgroundColor: Colors.green,
             ),
           );
@@ -119,9 +121,10 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
       }
     } catch (e) {
       if (mounted) {
+        final l10n = AppLocalizations.of(context)!;
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Error confirming payment: $e'),
+            content: Text(l10n.errorConfirmingPayment(e.toString())),
             backgroundColor: Colors.red,
           ),
         );
@@ -131,9 +134,10 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
 
   void _handleCancelledPayment() {
     if (mounted) {
+      final l10n = AppLocalizations.of(context)!;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Payment was cancelled'),
+        SnackBar(
+          content: Text(l10n.paymentWasCancelled),
           backgroundColor: Colors.orange,
         ),
       );
@@ -144,7 +148,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
   @override
   Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
-        title: Text('Subscribe to ${widget.planName}'),
+        title: Text(AppLocalizations.of(context)!.subscribeTo(widget.planName)),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         actions: [
           if (_isLoading)
@@ -183,7 +187,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  'Complete your subscription below',
+                  AppLocalizations.of(context)!.completeYourSubscription,
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ],
@@ -213,7 +217,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
             ),
             const SizedBox(height: 16),
             Text(
-              'Error Loading Checkout',
+              AppLocalizations.of(context)!.errorLoadingCheckout,
               style: Theme.of(context).textTheme.headlineSmall,
             ),
             const SizedBox(height: 8),
@@ -231,12 +235,12 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
                 });
                 _initializeWebView();
               },
-              child: const Text('Retry'),
+              child: Text(AppLocalizations.of(context)!.retry),
             ),
             const SizedBox(height: 16),
             TextButton(
               onPressed: () => Navigator.of(context).pop(false),
-              child: const Text('Cancel'),
+              child: Text(AppLocalizations.of(context)!.cancel),
             ),
           ],
         ),
