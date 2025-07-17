@@ -20,10 +20,10 @@ class InviteDetailScreen extends ConsumerWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Appointment: ${invite.appointmentId}'),
-            Text('From: ${invite.inviteeContact?.displayName ?? 'Unknown'}'),
-            Text('Phone: ${invite.inviteeContact?.phoneNumber ?? 'No phone'}'),
-            Text('Status: ${invite.status.name}'),
+            Text(l10n.appointmentAppointmentid(invite.appointmentId)),
+            Text(l10n.fromName(invite.inviteeContact?.displayName ?? l10n.unknown)),
+            Text(l10n.phoneLabel(invite.inviteeContact?.phoneNumber ?? l10n.noPhone)),
+            Text(l10n.statusInvitestatusname(invite.status.name, invite.status.name)),
             const SizedBox(height: 16),
             Row(
               children: [
