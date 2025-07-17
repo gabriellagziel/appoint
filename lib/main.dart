@@ -16,12 +16,19 @@ import 'providers/theme_provider.dart';
 import 'providers/notification_provider.dart';
 import 'services/notification_service.dart';
 import 'theme/app_theme.dart';
+import 'widgets/offline_banner.dart';
+import 'widgets/error_widget.dart';
 
 /// Main entry point for the AppOint application
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   
   try {
+    // Ensure that uncaught widget build errors show a friendly UI.
+    ErrorWidget.builder = (FlutterErrorDetails details) {
+      return CustomErrorWidget(message: details.exceptionAsString());
+    };
+
     // Initialize Firebase
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
@@ -108,7 +115,7 @@ class AppOintApp extends ConsumerWidget {
       
       // Builder for additional app-wide functionality
       builder: (context, child) {
-        return MediaQuery(
+        final wrapped = MediaQuery(
           data: MediaQuery.of(context).copyWith(
             textScaler: MediaQuery.of(context).textScaler.clamp(
               minScaleFactor: 0.8,
@@ -117,6 +124,9 @@ class AppOintApp extends ConsumerWidget {
           ),
           child: child ?? const SizedBox.shrink(),
         );
+
+        // Show a persistent offline banner across the entire app.
+        return OfflineBanner(child: wrapped);
       },
     );
   }
