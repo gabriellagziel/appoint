@@ -1,6 +1,8 @@
 import 'package:appoint/providers/user_notifications_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:appoint/widgets/async_value_widget.dart';
+import 'package:appoint/widgets/empty_state.dart';
 
 /// Basic screen that displays user notifications.
 class NotificationsScreen extends ConsumerWidget {
@@ -12,22 +14,23 @@ class NotificationsScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(title: const Text('Notifications')),
-      body: notificationsAsync.when(
-        data: (notifications) => notifications.isEmpty
-            ? const Center(child: Text('No notifications'))
-            : ListView.builder(
-                itemCount: notifications.length,
-                itemBuilder: (context, final index) {
-                  final item = notifications[index];
-                  return ListTile(
-                    title: Text(item.title),
-                    subtitle: Text(item.body),
-                  );
-                },
-              ),
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, final stack) =>
-            Center(child: Text('Error: $error')),
+      body: AsyncValueWidget(
+        value: notificationsAsync,
+        loading: const Center(child: CircularProgressIndicator()),
+        empty: () => const EmptyState(
+          title: 'No notifications',
+          description: 'You have no notifications at the moment.',
+        ),
+        data: (notifications) => ListView.builder(
+          itemCount: notifications.length,
+          itemBuilder: (context, index) {
+            final item = notifications[index];
+            return ListTile(
+              title: Text(item.title),
+              subtitle: Text(item.body),
+            );
+          },
+        ),
       ),
     );
   }
