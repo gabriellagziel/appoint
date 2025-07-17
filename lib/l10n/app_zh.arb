@@ -2859,5 +2859,41 @@
   "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
+  },
+  "ad_pre_title": "观看广告确认您的预约",
+  "@ad_pre_title": {
+    "description": "Ad flow string: ad_pre_title"
+  },
+  "ad_pre_description": "作为免费用户，您必须在确认前观看一个简短的广告。您可以通过升级永久移除所有广告。",
+  "@ad_pre_description": {
+    "description": "Ad flow string: ad_pre_description"
+  },
+  "watch_ad_button": "观看广告",
+  "@watch_ad_button": {
+    "description": "Ad flow string: watch_ad_button"
+  },
+  "upgrade_button": "升级到高级版 (€4)",
+  "@upgrade_button": {
+    "description": "Ad flow string: upgrade_button"
+  },
+  "ad_post_title": "广告结束！您现在可以确认您的预约。",
+  "@ad_post_title": {
+    "description": "Ad flow string: ad_post_title"
+  },
+  "confirm_appointment_button": "确认预约",
+  "@confirm_appointment_button": {
+    "description": "Ad flow string: confirm_appointment_button"
+  },
+  "upgrade_prompt_title": "一次性升级",
+  "@upgrade_prompt_title": {
+    "description": "Ad flow string: upgrade_prompt_title"
+  },
+  "upgrade_prompt_description": "支付€4永久移除所有广告",
+  "@upgrade_prompt_description": {
+    "description": "Ad flow string: upgrade_prompt_description"
+  },
+  "purchase_now_button": "立即购买",
+  "@purchase_now_button": {
+    "description": "Ad flow string: purchase_now_button"
   }
 }

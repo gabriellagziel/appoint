@@ -2859,5 +2859,41 @@
   "loadingCheckout": "Cargando checkout...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
+  },
+  "ad_pre_title": "Mira un anuncio para confirmar tu cita",
+  "@ad_pre_title": {
+    "description": "Title shown before ad for free users"
+  },
+  "ad_pre_description": "Como usuario gratuito, debes ver un anuncio corto antes de confirmar. Puedes eliminar todos los anuncios permanentemente actualizando.",
+  "@ad_pre_description": {
+    "description": "Description shown before ad for free users"
+  },
+  "watch_ad_button": "Ver Anuncio",
+  "@watch_ad_button": {
+    "description": "Button to watch ad"
+  },
+  "upgrade_button": "Actualizar a Premium (€4)",
+  "@upgrade_button": {
+    "description": "Button to upgrade to premium"
+  },
+  "ad_post_title": "¡Anuncio terminado! Ahora puedes confirmar tu cita.",
+  "@ad_post_title": {
+    "description": "Title shown after ad is finished"
+  },
+  "confirm_appointment_button": "Confirmar Cita",
+  "@confirm_appointment_button": {
+    "description": "Button to confirm appointment after ad"
+  },
+  "upgrade_prompt_title": "Actualización única",
+  "@upgrade_prompt_title": {
+    "description": "Title for upgrade prompt"
+  },
+  "upgrade_prompt_description": "Paga €4 para eliminar todos los anuncios para siempre",
+  "@upgrade_prompt_description": {
+    "description": "Description for upgrade prompt"
+  },
+  "purchase_now_button": "Comprar Ahora",
+  "@purchase_now_button": {
+    "description": "Button to purchase upgrade"
   }
 }

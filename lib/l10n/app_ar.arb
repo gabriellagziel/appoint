@@ -2859,5 +2859,41 @@
   "loadingCheckout": "جار تحميل الدفع...",
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
+  },
+  "ad_pre_title": "شاهد إعلانًا لتأكيد موعدك",
+  "@ad_pre_title": {
+    "description": "Ad flow string: ad_pre_title"
+  },
+  "ad_pre_description": "كعضو مجاني، يجب عليك مشاهدة إعلان قصير قبل التأكيد. يمكنك إزالة جميع الإعلانات نهائيًا عن طريق الترقية.",
+  "@ad_pre_description": {
+    "description": "Ad flow string: ad_pre_description"
+  },
+  "watch_ad_button": "شاهد الإعلان",
+  "@watch_ad_button": {
+    "description": "Ad flow string: watch_ad_button"
+  },
+  "upgrade_button": "الترقية إلى المميزة (€4)",
+  "@upgrade_button": {
+    "description": "Ad flow string: upgrade_button"
+  },
+  "ad_post_title": "انتهى الإعلان! يمكنك الآن تأكيد موعدك.",
+  "@ad_post_title": {
+    "description": "Ad flow string: ad_post_title"
+  },
+  "confirm_appointment_button": "تأكيد الموعد",
+  "@confirm_appointment_button": {
+    "description": "Ad flow string: confirm_appointment_button"
+  },
+  "upgrade_prompt_title": "ترقية لمرة واحدة",
+  "@upgrade_prompt_title": {
+    "description": "Ad flow string: upgrade_prompt_title"
+  },
+  "upgrade_prompt_description": "ادفع €4 لإزالة جميع الإعلانات إلى الأبد",
+  "@upgrade_prompt_description": {
+    "description": "Ad flow string: upgrade_prompt_description"
+  },
+  "purchase_now_button": "اشتر الآن",
+  "@purchase_now_button": {
+    "description": "Ad flow string: purchase_now_button"
   }
 }
