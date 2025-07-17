@@ -1,8 +1,8 @@
 import * as functions from 'firebase-functions';
 import Stripe from 'stripe';
 import * as admin from 'firebase-admin';
-// @ts-ignore
-import { validate, schemas } from '../test/validation-schemas';
+// Import validation helpers and schemas from local module
+import { validateInput, createPaymentIntentSchema } from './validation';
 
 // Initialize Stripe with your secret key
 const stripe = new Stripe(functions.config().stripe.secret_key || 'sk_test_your_secret_key_here', {
@@ -163,6 +163,9 @@ export const handleCheckoutSessionCompleted = functions.https.onRequest(async (r
     res.status(500).json({ error: 'Webhook handler failed' });
   }
 });
+
+// Alias for backward compatibility with older clients / tests
+export const stripeWebhook = handleCheckoutSessionCompleted;
 
 // Handle checkout session completed (renamed to avoid duplicate identifier)
 async function processCheckoutSessionCompleted(session: Stripe.Checkout.Session) {
@@ -328,8 +331,8 @@ export const cancelSubscription = functions.https.onRequest(async (req, res) => 
 // Create payment intent with 3D Secure support
 export const createPaymentIntent = functions.https.onCall(async (data, context) => {
   try {
-    // Validate input data
-    const validatedData = validate(schemas.createPaymentIntent, data);
+    // Validate input using zod schema
+    const validatedData = validateInput(createPaymentIntentSchema, data);
     const { amount } = validatedData;
     
     const paymentIntent = await stripe.paymentIntents.create({
