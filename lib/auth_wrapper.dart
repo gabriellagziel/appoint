@@ -25,7 +25,8 @@ class _AuthWrapperState extends ConsumerState<AuthWrapper> {
 
   Future<void> _checkOnboardingStatus() async {
     try {
-      final shouldShow = await OnboardingService.instance.shouldShowOnboarding();
+      final shouldShow =
+          await OnboardingService.instance.shouldShowOnboarding();
       setState(() {
         _shouldShowOnboarding = shouldShow;
         _isLoading = false;

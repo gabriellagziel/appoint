@@ -78,12 +78,12 @@ class EnvironmentConfig {
 
   /// Get a summary of the current configuration
   static Map<String, String> getConfigSummary() => {
-      'stripe_configured': isStripeConfigured.toString(),
-      'firebase_configured': isFirebaseConfigured.toString(),
-      'google_configured': isGoogleConfigured.toString(),
-      'family_api_url': familyApiBaseUrl,
-      'auth_redirect_uri': authRedirectUri,
-      'deep_link_base_url': deepLinkBaseUrl,
-      'whatsapp_base_url': whatsappBaseUrl,
-    };
+        'stripe_configured': isStripeConfigured.toString(),
+        'firebase_configured': isFirebaseConfigured.toString(),
+        'google_configured': isGoogleConfigured.toString(),
+        'family_api_url': familyApiBaseUrl,
+        'auth_redirect_uri': authRedirectUri,
+        'deep_link_base_url': deepLinkBaseUrl,
+        'whatsapp_base_url': whatsappBaseUrl,
+      };
 }
