@@ -12,43 +12,43 @@ class AppLocalizationsIt extends AppLocalizations {
   String get appName => 'APP-OINT';
 
   @override
-  String get welcome => 'Welcome';
+  String get welcome => 'Benvenuto';
 
   @override
-  String get loading => 'Loading...';
+  String get loading => 'Caricamento...';
 
   @override
-  String get error => 'Error';
+  String get error => 'Errore';
 
   @override
-  String get success => 'Success';
+  String get success => 'Successo';
 
   @override
-  String get cancel => 'Cancel';
+  String get cancel => 'Annulla';
 
   @override
-  String get save => 'Save';
+  String get save => 'Salva';
 
   @override
-  String get delete => 'Delete';
+  String get delete => 'Elimina';
 
   @override
-  String get edit => 'Edit';
+  String get edit => 'Modifica';
 
   @override
-  String get back => 'Back';
+  String get back => 'Indietro';
 
   @override
-  String get next => 'Next';
+  String get next => 'Avanti';
 
   @override
-  String get done => 'Done';
+  String get done => 'Fatto';
 
   @override
   String get ok => 'OK';
 
   @override
-  String get yes => 'Yes';
+  String get yes => 'Sì';
 
   @override
   String get no => 'No';
