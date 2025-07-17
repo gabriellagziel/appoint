@@ -56,7 +56,7 @@
 
 ## 7. Payments / Subscriptions
 
-- [ ] **`subscription_service.dart`** – `print('Canceling Stripe subscription …')` – remove; add proper error-handling.
+- [/] **`subscription_service.dart`** – replaced raw `print` with `dart:developer` log; still needs error-handling for Stripe API failures.
 - [ ] **UI** – `subscription_screen.dart` has TODO for billing history screen.
 
 ## 8. Studio / Business Module
