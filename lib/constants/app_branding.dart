@@ -4,12 +4,12 @@
 class AppBranding {
   // App Name
   static const String appName = 'APP-OINT';
-  static const String appNameShort = AppOint;
+  static const String appNameShort = 'AppOint';
   
   // Official Slogan
-  static const String slogan = Time Organized';
-  static const String sloganSubtitle = Set Send Done';
-  static const String fullSlogan = $slogan • $sloganSubtitle';
+  static const String slogan = Time Organized
+  static const String sloganSubtitle = Set Send Done
+  static const String fullSlogan = $slogan • $sloganSubtitle
   
   // Logo Assets
   static const String logoPath = assets/images/app_oint_logo.png';
