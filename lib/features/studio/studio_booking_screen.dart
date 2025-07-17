@@ -47,7 +47,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
     if (date != null) {
       setState(() {
         _selectedDate = date;
-        final _selectedSlot = null;
+        _selectedSlot = null;
       });
     }
   }
@@ -78,7 +78,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                 onChanged: (value) {
                   setState(() {
                     _selectedStaff = value;
-                    final _selectedSlot = null;
+                    _selectedSlot = null;
                   });
                 },
                 items: staff
