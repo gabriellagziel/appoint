@@ -9,8 +9,8 @@ class ChildDashboardScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    info = ref.watch(childInfoProvider);
-    settings = ref.watch(childSettingsProvider);
+    final info = ref.watch(childInfoProvider);
+    final settings = ref.watch(childSettingsProvider);
 
     return Scaffold(
       appBar: AppBar(

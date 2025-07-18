@@ -18,9 +18,9 @@ class CreateGameScreen extends ConsumerStatefulWidget {
 }
 
 class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
-  _formKey = GlobalKey<FormState>();
-  _nameController = TextEditingController();
-  _descriptionController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final _nameController = TextEditingController();
+  final _descriptionController = TextEditingController();
 
   String _selectedCategory = 'Action';
   int _minAge = 5;
@@ -50,7 +50,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
 
   @override
   Widget build(BuildContext context) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       appBar: AppBar(
@@ -259,8 +259,8 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
           labels: RangeLabels('$_minAge', '$_maxAge'),
           onChanged: (values) {
             setState(() {
-              _minAge = values.start.round();
-              _maxAge = values.end.round();
+              final _minAge = values.start.round();
+              final _maxAge = values.end.round();
             });
           },
         ),
@@ -283,7 +283,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
           label: '$_maxParticipants',
           onChanged: (value) {
             setState(() {
-              _maxParticipants = value.round();
+              final _maxParticipants = value.round();
             });
           },
         ),
@@ -306,7 +306,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
           label: '$_estimatedDuration',
           onChanged: (value) {
             setState(() {
-              _estimatedDuration = value.round();
+              final _estimatedDuration = value.round();
             });
           },
         ),
@@ -356,7 +356,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
 
   Widget _buildCreateButton(AppLocalizations l10n) => Consumer(
       builder: (context, final ref, final child) {
-        createGameState = ref.watch(playtimeGameNotifierProvider);
+        final createGameState = ref.watch(playtimeGameNotifierProvider);
 
         return SizedBox(
           width: double.infinity,
@@ -388,7 +388,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
     if (kIsWeb) {
       return;
     }
-    picker = ImagePicker();
+    final picker = ImagePicker();
     final image = await picker.pickImage(
       source: ImageSource.gallery,
       maxWidth: 512,
@@ -397,7 +397,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
 
     if (image != null) {
       setState(() {
-        _selectedImage = File(image.path);
+        final _selectedImage = File(image.path);
       });
     }
   }
@@ -427,8 +427,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
         );
         context.pop();
       }
-    } catch (e) {e) {
-      if (mounted) {
+    } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to create game: $e'),

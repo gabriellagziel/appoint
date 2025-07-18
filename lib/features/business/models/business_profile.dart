@@ -9,7 +9,7 @@ class BusinessProfile {
   });
 
   factory BusinessProfile.fromFirestore(DocumentSnapshot doc) {
-    data = doc.data() as Map<String, dynamic>? ?? {};
+    final data = doc.data() as Map<String, dynamic>? ?? {};
     return BusinessProfile(
       id: doc.id,
       name: data['name'] as String? ?? '',

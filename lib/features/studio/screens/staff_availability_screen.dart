@@ -11,7 +11,7 @@ class StaffAvailabilityScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    asyncSlots = ref.watch(staffSlotsWithIdProvider);
+    final asyncSlots = ref.watch(staffSlotsWithIdProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -62,8 +62,8 @@ class StaffAvailabilityScreen extends ConsumerWidget {
             itemCount: slots.length,
             itemBuilder: (context, final index) {
               final slot = slots[index];
-              dateFormat = DateFormat('MMM dd, yyyy');
-              timeFormat = DateFormat('HH:mm');
+              final dateFormat = DateFormat('MMM dd, yyyy');
+              final timeFormat = DateFormat('HH:mm');
 
               return Card(
                 margin: const EdgeInsets.only(bottom: 12),
@@ -163,7 +163,7 @@ class StaffAvailabilityScreen extends ConsumerWidget {
       builder: (context) => AlertDialog(
         title: const Text('Delete Slot'),
         content: const Text(
-            'Are you sure you want to delete this availability slot?',),
+            'Are you sure you want to delete this availability slot?'),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
@@ -185,7 +185,7 @@ class StaffAvailabilityScreen extends ConsumerWidget {
   Future<void> _deleteSlot(final BuildContext context, final WidgetRef ref,
       String slotId,) async {
     try {
-      service = ref.read(staffAvailabilityServiceProvider);
+      final service = ref.read(staffAvailabilityServiceProvider);
       await service.deleteSlot(slotId);
 
       if (context.mounted) {
@@ -196,8 +196,7 @@ class StaffAvailabilityScreen extends ConsumerWidget {
           ),
         );
       }
-    } catch (e) {e) {
-      if (context.mounted) {
+    } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Error deleting slot: $e'),

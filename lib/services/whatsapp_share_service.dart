@@ -17,6 +17,11 @@ class WhatsAppShareService {
   }
   final FirebaseFirestore _firestore;
   late final CustomDeepLinkService _deepLinkService;
+  
+  // Variable declarations for the service
+  late String message;
+  late Uri uri;
+  late bool canLaunch;
 
   // Load base URLs from environment configuration
   static const String _baseUrl = EnvironmentConfig.whatsappBaseUrl;
@@ -47,7 +52,7 @@ class WhatsAppShareService {
       );
 
       return link;
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error generating smart share link: $e');
       // Fallback to simple URL
       return '$_baseUrl/meeting/$meetingId?creatorId=$creatorId${contextId != null ? '&contextId=$contextId' : ''}';
@@ -73,20 +78,19 @@ class WhatsAppShareService {
       );
 
       // Create WhatsApp message
-      message = Uri.encodeComponent('$customMessage\n\n$shareLink');
+      final message = Uri.encodeComponent('$customMessage\n\n$shareLink');
       final whatsappUrl = '$_whatsappBaseUrl$message';
 
       // Launch WhatsApp
-      uri = Uri.parse(whatsappUrl);
-      canLaunch = await canLaunchUrl(uri);
+      final uri = Uri.parse(whatsappUrl);
+      final canLaunch = await canLaunchUrl(uri);
 
       if (canLaunch) {
         await launchUrl(uri, mode: LaunchMode.externalApplication);
 
         // Track successful share
         await FirebaseAnalytics.instance.logEvent(
-          name: 'share_whatsapp',
-        );
+          name: 'share_whatsapp');
 
         // Update group recognition if applicable
         if (groupId != null) {
@@ -101,7 +105,7 @@ class WhatsAppShareService {
         );
         return true;
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error sharing to WhatsApp: $e');
       return false;
     }
@@ -119,7 +123,7 @@ class WhatsAppShareService {
         return GroupRecognition.fromJson(doc.docs.first.data());
       }
       return null;
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error recognizing group: $e');
       return null;
     }
@@ -147,7 +151,7 @@ class WhatsAppShareService {
           .collection('group_recognition')
           .doc(groupId)
           .set(groupRecognition.toJson());
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error saving group recognition: $e');
     }
   }
@@ -160,7 +164,7 @@ class WhatsAppShareService {
         'totalShares': FieldValue.increment(1),
         'lastSharedAt': FieldValue.serverTimestamp(),
       });
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error updating group recognition: $e');
     }
   }
@@ -183,7 +187,7 @@ class WhatsAppShareService {
       );
 
       await _firestore.collection('share_analytics').add(analytics.toJson());
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error logging share analytics: $e');
     }
   }
@@ -199,8 +203,7 @@ class WhatsAppShareService {
 
         // Track link click
         await FirebaseAnalytics.instance.logEvent(
-          name: 'invite_clicked',
-        );
+          name: 'invite_clicked');
 
         // Update analytics
         await _updateShareAnalytics(meetingId, ShareStatus.clicked);
@@ -213,7 +216,7 @@ class WhatsAppShareService {
         // Navigate to appropriate screen based on user state
         // This will be handled by the main app router
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error handling deep link: $e');
     }
   }
@@ -236,7 +239,7 @@ class WhatsAppShareService {
             'respondedAt': FieldValue.serverTimestamp(),
         });
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error updating share analytics: $e');
     }
   }
@@ -265,7 +268,7 @@ class WhatsAppShareService {
             .length,
         'groupShares': analytics.where((a) => a.groupId != null).length,
       };
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error getting share stats: $e');
       return {};
     }

@@ -48,7 +48,7 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
   Future<void> loadLinks() async {
     state = state.copyWith(isLoading: true);
     try {
-      links = await _familyService.fetchFamilyLinks(parentId);
+      final links = await _familyService.fetchFamilyLinks(parentId);
       state = state.copyWith(
         isLoading: false,
         pendingInvites:
@@ -56,7 +56,7 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
         connectedChildren:
             links.where((l) => l.status == 'active').toList(),
       );
-    } catch (e) {e) {
+    } catch (e) {
       state = state.copyWith(
         isLoading: false,
         error: e.toString(),
@@ -69,7 +69,7 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
     try {
       await _familyService.cancelInvite(parentId, link.childId);
       await loadLinks();
-    } catch (e) {e) {
+    } catch (e) {
       state = state.copyWith(error: e.toString());
     }
   }
@@ -79,7 +79,7 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
     try {
       await _familyService.resendOtp(parentId, link.childId);
       // Optionally notify user via analytics or toast
-    } catch (e) {e) {
+    } catch (e) {
       state = state.copyWith(error: e.toString());
     }
   }
@@ -96,14 +96,14 @@ final StateNotifierProviderFamily<FamilyLinksNotifier, FamilyLinksState, String>
 
 final AutoDisposeFutureProviderFamily<List<Permission>, String> permissionsProvider = FutureProvider.family
     .autoDispose<List<Permission>, String>((ref, final linkId) {
-  svc = ref.watch(familyServiceProvider);
+  final svc = ref.watch(familyServiceProvider);
   return svc.fetchPermissions(linkId);
 });
 
 final AutoDisposeFutureProvider<List<PrivacyRequest>> privacyRequestsProvider =
     FutureProvider.autoDispose<List<PrivacyRequest>>((ref) {
-  svc = ref.watch(familyServiceProvider);
-  authState = ref.watch(authStateProvider);
+  final svc = ref.watch(familyServiceProvider);
+  final authState = ref.watch(authStateProvider);
 
   return authState.when(
     data: (user) {

@@ -16,10 +16,10 @@ class StaffAvailabilityNotifier
 
   Future<void> load() async {
     try {
-      data = await _service.fetchAvailability(staffId);
-      state = AsyncValue.data(data);
-    } catch (e) {e, st) {
-      state = AsyncValue.error(e, st);
+      final data = await _service.fetchAvailability(staffId);
+      final state = AsyncValue.data(data);
+    } catch (e) {
+      final state = AsyncValue.error(e, st);
     }
   }
 

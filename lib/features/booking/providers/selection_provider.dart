@@ -1,13 +1,13 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 // Staff selection provider
-staffSelectionProvider = StateProvider<String?>((final ref) => null);
+final staffSelectionProvider = StateProvider<String?>((ref) => null);
 
 // Service selection provider
-serviceSelectionProvider = StateProvider<String?>((final ref) => null);
-serviceNameProvider = StateProvider<String?>((final ref) => null);
+final serviceSelectionProvider = StateProvider<String?>((ref) => null);
+final serviceNameProvider = StateProvider<String?>((ref) => null);
 final serviceDurationProvider =
     StateProvider<int>((ref) => 60); // Default 60 minutes
 
 // Time slot selection provider
-selectedSlotProvider = StateProvider<DateTime?>((final ref) => null);
+final selectedSlotProvider = StateProvider<DateTime?>((ref) => null);

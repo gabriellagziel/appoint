@@ -9,7 +9,7 @@ final whatsappShareServiceProvider =
 // Provider for share statistics
 final FutureProviderFamily<Map<String, dynamic>, String> shareStatsProvider = FutureProvider.family<Map<String, dynamic>, String>(
   (ref, final meetingId) async {
-    service = ref.read(whatsappShareServiceProvider);
+    final service = ref.read(whatsappShareServiceProvider);
     return service.getShareStats(meetingId);
   },
 );
@@ -18,7 +18,7 @@ final FutureProviderFamily<Map<String, dynamic>, String> shareStatsProvider = Fu
 final FutureProviderFamily<GroupRecognition?, String> groupRecognitionProvider =
     FutureProvider.family<GroupRecognition?, String>(
   (ref, final phoneNumber) async {
-    service = ref.read(whatsappShareServiceProvider);
+    final service = ref.read(whatsappShareServiceProvider);
     return service.recognizeGroup(phoneNumber);
   },
 );
@@ -83,7 +83,7 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
       } else {
         state = state.copyWith(isLoading: false);
       }
-    } catch (e) {e) {
+    } catch (e) {
       state = state.copyWith(
         isLoading: false,
         error: e.toString(),
@@ -104,7 +104,7 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
         phoneNumber: phoneNumber,
         meetingId: meetingId,
       );
-    } catch (e) {e) {
+    } catch (e) {
       state = state.copyWith(error: e.toString());
     }
   }

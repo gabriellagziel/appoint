@@ -1,5 +1,6 @@
 import 'package:appoint/config/theme.dart';
 import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/services/analytics_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -9,7 +10,10 @@ class PlaytimeLandingScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
+
+    // Track screen view
+    AnalyticsService.logScreenView('PlaytimeLandingScreen');
 
     return Scaffold(
       body: Container(
@@ -104,7 +108,13 @@ class PlaytimeLandingScreen extends ConsumerWidget {
           subtitle: 'Play games online with friends',
           icon: Icons.computer,
           color: AppTheme.secondaryColor,
-          onTap: () => context.push('/playtime/virtual'),
+          onTap: () {
+            AnalyticsService.logEvent('playtime_option_selected', params: {
+              'option_type': 'virtual',
+              'location': 'landing_screen',
+            });
+            context.push('/playtime/virtual');
+          },
         ),
         const SizedBox(height: 20),
 
@@ -115,7 +125,13 @@ class PlaytimeLandingScreen extends ConsumerWidget {
           subtitle: 'Meet friends in person to play',
           icon: Icons.people,
           color: AppTheme.accentColor,
-          onTap: () => context.push('/playtime/live'),
+          onTap: () {
+            AnalyticsService.logEvent('playtime_option_selected', params: {
+              'option_type': 'live',
+              'location': 'landing_screen',
+            });
+            context.push('/playtime/live');
+          },
         ),
       ],
     );

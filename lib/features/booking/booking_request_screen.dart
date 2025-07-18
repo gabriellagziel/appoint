@@ -30,7 +30,7 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
 
   Future<void> _loadInitialData() async {
     try {
-      branches = await ref.read(branchesProvider.future);
+      final branches = await ref.read(branchesProvider.future);
       setState(() {
         _markers = branches
             .map((b) => Marker(
@@ -42,13 +42,13 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
       });
 
       if (!kIsWeb) {
-        position = await _locationService.getCurrentLocation();
+        final position = await _locationService.getCurrentLocation();
         if (position != null && _mapController != null) {
           _mapController!.moveCamera(CameraUpdate.newLatLng(
               LatLng(position.latitude, position.longitude),),);
         }
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error loading initial data: $e');
     }
   }

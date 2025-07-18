@@ -23,11 +23,11 @@ class ThemeNotifier extends StateNotifier<ThemeState> {
             const ThemeState(palette: AppPalette.blue, mode: ThemeMode.system),);
 
   void setPalette(AppPalette palette) {
-    state = state.copyWith(palette: palette);
+    final state = state.copyWith(palette: palette);
   }
 
   void setMode(ThemeMode mode) {
-    state = state.copyWith(mode: mode);
+    final state = state.copyWith(mode: mode);
   }
 }
 
@@ -35,18 +35,18 @@ final themeNotifierProvider =
     StateNotifierProvider<ThemeNotifier, ThemeState>((ref) => ThemeNotifier());
 
 /// Provides the light [ThemeData] based on the selected palette.
-final lightThemeProvider = Provider<ThemeData>((final ref) {
+final lightThemeProvider = Provider<ThemeData>((ref) {
   final state = ref.watch(themeNotifierProvider);
   final seed = paletteSeeds[state.palette] ?? AppColors.defaultSeed;
   return AppTheme.lightTheme(seed);
 });
 
 /// Provides the dark [ThemeData] based on the selected palette.
-final darkThemeProvider = Provider<ThemeData>((final ref) {
+final darkThemeProvider = Provider<ThemeData>((ref) {
   final state = ref.watch(themeNotifierProvider);
   final seed = paletteSeeds[state.palette] ?? AppColors.defaultSeed;
   return AppTheme.darkTheme(seed);
 });
 
 /// Exposes the current [ThemeMode].
-final themeModeProvider = Provider<ThemeMode>((final ref) => ref.watch(themeNotifierProvider).mode);
+final themeModeProvider = Provider<ThemeMode>((ref) => ref.watch(themeNotifierProvider).mode);

@@ -123,14 +123,12 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
         context.go('/dashboard');
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Error completing onboarding: $e'),
             backgroundColor: Colors.red,
           ),
         );
-      }
     } finally {
       if (mounted) {
         setState(() {
@@ -320,7 +318,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                     ),
                   )
                 : Text(
-                    _currentPage == _pages.length - 1 
+                    final _currentPage = = _pages.length - 1 
                       ? l10n.getStarted 
                       : l10n.next,
                     style: const TextStyle(

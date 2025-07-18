@@ -27,6 +27,13 @@ void main() {
   late MockNotificationService mockNotificationService;
   late MockBranchService mockBranchService;
   late ProviderContainer container;
+  late Finder countryDropdowns;
+  late Finder usaOption;
+  late Finder languageDropdowns;
+  late Finder spanishOption;
+  late Finder clearFiltersButton;
+  late AsyncValue<AmbassadorData> state;
+  late AmbassadorDataNotifier notifier;
 
   setUp(() {
     mockService = MockAmbassadorService();

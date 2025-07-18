@@ -8,7 +8,7 @@ class CalendarSyncScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    appt = ModalRoute.of(context)!.settings.arguments! as Appointment;
+    final appt = ModalRoute.of(context)!.settings.arguments! as Appointment;
     return Scaffold(
       appBar: AppBar(title: const Text('Sync Appointment')),
       body: Padding(

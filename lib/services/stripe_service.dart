@@ -18,7 +18,7 @@ class StripeService {
     final String? cancelUrl,
   }) async {
     try {
-      callable = _functions.httpsCallable('createCheckoutSession');
+      final callable = _functions.httpsCallable('createCheckoutSession');
 
       final result = await callable.call({
         'studioId': studioId,
@@ -29,7 +29,7 @@ class StripeService {
       });
 
       return result.data;
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error creating checkout session: $e');
       rethrow;
     }
@@ -38,10 +38,29 @@ class StripeService {
   /// Get subscription status for a studio
   Future<String?> getSubscriptionStatus(String studioId) async {
     try {
-      doc = await _firestore.collection('studio').doc(studioId).get();
+      final doc = await _firestore.collection('studio').doc(studioId).get();
       return doc.data()?['subscriptionStatus'] as String?;
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error getting subscription status: $e');
+      return null;
+    }
+  }
+
+  /// Create business checkout session for subscription upgrade
+  Future<String?> fetchCheckoutUrl(String userId) async {
+    try {
+      final callable = _functions.httpsCallable('createBusinessCheckout');
+      final result = await callable.call({
+        'userId': userId,
+      });
+      
+      if (result.data != null && result.data['checkoutUrl'] != null) {
+        return result.data['checkoutUrl'] as String;
+      }
+      
+      return null;
+    } catch (e) {
+      // Removed debug print: debugPrint('Error creating business checkout: $e');
       return null;
     }
   }
@@ -58,7 +77,7 @@ class StripeService {
         if (subscriptionId != null) 'subscriptionId': subscriptionId,
         'lastUpdated': FieldValue.serverTimestamp(),
       });
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error updating subscription status: $e');
       rethrow;
     }
@@ -67,12 +86,12 @@ class StripeService {
   /// Cancel subscription
   Future<bool> cancelSubscription(String studioId) async {
     try {
-      doc = await _firestore.collection('studio').doc(studioId).get();
-      subscriptionId = doc.data()?['subscriptionId'] as String?;
+      final doc = await _firestore.collection('studio').doc(studioId).get();
+      final subscriptionId = doc.data()?['subscriptionId'] as String?;
 
       if (subscriptionId != null) {
         // Call Cloud Function to cancel subscription
-        callable = _functions.httpsCallable('cancelSubscription');
+        final callable = _functions.httpsCallable('cancelSubscription');
         await callable.call({'subscriptionId': subscriptionId});
 
         // Update local status
@@ -84,7 +103,7 @@ class StripeService {
         return true;
       }
       return false;
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error cancelling subscription: $e');
       return false;
     }
@@ -92,10 +111,10 @@ class StripeService {
 
   /// Get subscription details
   Future<Map<String, dynamic>?> getSubscriptionDetails(
-      String studioId,) async {
+      String studioId) async {
     try {
-      doc = await _firestore.collection('studio').doc(studioId).get();
-      data = doc.data();
+      final doc = await _firestore.collection('studio').doc(studioId).get();
+      final data = doc.data();
 
       if (data != null) {
         return {
@@ -106,7 +125,7 @@ class StripeService {
         };
       }
       return null;
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error getting subscription details: $e');
       return null;
     }
@@ -114,7 +133,7 @@ class StripeService {
 
   /// Check if user has active subscription
   Future<bool> hasActiveSubscription(String studioId) async {
-    status = await getSubscriptionStatus(studioId);
+    final status = await getSubscriptionStatus(studioId);
     return status == 'active';
   }
 }

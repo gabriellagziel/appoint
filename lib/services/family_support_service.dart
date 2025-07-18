@@ -21,7 +21,7 @@ class FamilySupportService {
   Future<void> submitTicket(String subject, final String message) async {
     final uid = _auth.currentUser?.uid;
     if (uid == null) throw Exception('Not logged in');
-    doc = _collection.doc();
+    final doc = _collection.doc();
     final ticket = SupportTicket(
       id: doc.id,
       userId: uid,

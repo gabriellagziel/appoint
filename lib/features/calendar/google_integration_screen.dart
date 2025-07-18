@@ -16,14 +16,14 @@ class _GoogleIntegrationScreenState
   List<CalendarListEntry> _calendars = [];
 
   Future<void> _connect() async {
-    service = ref.read(googleCalendarServiceProvider);
+    final service = ref.read(googleCalendarServiceProvider);
     await service.signInWithGoogleCalendar();
-    cals = await service.getCalendars();
+    final cals = await service.getCalendars();
     setState(() => _calendars = cals);
   }
 
   Future<void> _addEvent(String calendarId) async {
-    service = ref.read(googleCalendarServiceProvider);
+    final service = ref.read(googleCalendarServiceProvider);
     await service.createEvent(
       calendarId,
       summary: 'Test Event',

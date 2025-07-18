@@ -199,6 +199,24 @@ class RewardProgress {
   final int rewardsRedeemed;
   final Reward? nextReward;
 
+  int get pointsToNextLevel {
+    final nextLevelPoints = _calculatePointsForLevel(level + 1);
+    return nextLevelPoints - points;
+  }
+
+  double get levelProgress {
+    final currentLevelPoints = _calculatePointsForLevel(level);
+    final nextLevelPoints = _calculatePointsForLevel(level + 1);
+    final pointsInCurrentLevel = points - currentLevelPoints;
+    final pointsNeededForLevel = nextLevelPoints - currentLevelPoints;
+    return pointsInCurrentLevel / pointsNeededForLevel;
+  }
+
+  int _calculatePointsForLevel(int level) {
+    // Simple level progression: each level requires 100 more points than the previous
+    return level * 100;
+  }
+
   Map<String, dynamic> toJson() => _$RewardProgressToJson(this);
 
   double get achievementProgress => achievementsUnlocked / totalAchievements;

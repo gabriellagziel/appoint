@@ -1,4 +1,5 @@
 import 'package:appoint/features/studio_business/models/business_event.dart';
+import 'package:appoint/widgets/app_logo.dart';
 import 'package:flutter/material.dart';
 
 class BusinessDashboardScreen extends StatelessWidget {
@@ -11,7 +12,13 @@ class BusinessDashboardScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Business Dashboard'),
+        title: Row(
+          children: [
+            const AppLogo(size: 32, logoOnly: true),
+            const SizedBox(width: 12),
+            const Text('Business Dashboard'),
+          ],
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),

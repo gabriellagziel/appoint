@@ -10,7 +10,7 @@ class StaffAvailabilityScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    avail = ref.watch(staffAvailabilityProvider);
+    final avail = ref.watch(staffAvailabilityProvider);
     return Scaffold(
       appBar: AppBar(
         title: const Text('Staff Availability'),
@@ -61,7 +61,7 @@ class StaffAvailabilityScreen extends ConsumerWidget {
             itemCount: snap.docs.length,
             itemBuilder: (context, final index) {
               final doc = snap.docs[index];
-              data = doc.data();
+              final data = doc.data();
               return Card(
                 margin: const EdgeInsets.only(bottom: 12),
                 child: ListTile(
@@ -77,7 +77,7 @@ class StaffAvailabilityScreen extends ConsumerWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                          'Available Slots: ${data['availableSlots'] ?? 'N/A'}',),
+                          'Available Slots: ${data['availableSlots'] ?? 'N/A'}'),
                       if (data['timeRange'] != null)
                         Text('Time: ${data['timeRange']}'),
                       if (data['daysOfWeek'] != null)
@@ -163,7 +163,7 @@ class StaffAvailabilityScreen extends ConsumerWidget {
       builder: (context) => AlertDialog(
         title: const Text('Delete Availability'),
         content: const Text(
-            'Are you sure you want to delete this availability slot?',),
+            'Are you sure you want to delete this availability slot?'),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
@@ -197,17 +197,17 @@ class _AvailabilityDialog extends StatefulWidget {
 }
 
 class _AvailabilityDialogState extends State<_AvailabilityDialog> {
-  _formKey = GlobalKey<FormState>();
-  _profileController = TextEditingController();
-  _slotsController = TextEditingController();
-  _timeRangeController = TextEditingController();
-  _daysController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final _profileController = TextEditingController();
+  final _slotsController = TextEditingController();
+  final _timeRangeController = TextEditingController();
+  final _daysController = TextEditingController();
 
   @override
   void initState() {
     super.initState();
     if (widget.editDoc != null) {
-      data = widget.editDoc!.data()! as Map<String, dynamic>;
+      final data = widget.editDoc!.data()! as Map<String, dynamic>;
       _profileController.text = data['profileId'] ?? '';
       _slotsController.text = data['availableSlots']?.toString() ?? '';
       _timeRangeController.text = data['timeRange'] ?? '';
@@ -227,7 +227,7 @@ class _AvailabilityDialogState extends State<_AvailabilityDialog> {
   @override
   Widget build(BuildContext context) => AlertDialog(
       title: Text(
-          widget.editDoc != null ? 'Edit Availability' : 'Add Availability',),
+          widget.editDoc != null ? 'Edit Availability' : 'Add Availability'),
       content: Form(
         key: _formKey,
         child: Column(
@@ -297,7 +297,7 @@ class _AvailabilityDialogState extends State<_AvailabilityDialog> {
                 SnackBar(
                   content: Text(widget.editDoc != null
                       ? 'Edit functionality coming soon!'
-                      : 'Add functionality coming soon!',),
+                      : 'Add functionality coming soon!'),
                 ),
               );
             }

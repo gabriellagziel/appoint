@@ -58,7 +58,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
         await Hive.openBox<String>(_pendingOperationsBoxName);
 
     // Check initial connectivity
-    connectivityResult = await _connectivity.checkConnectivity();
+    final connectivityResult = await _connectivity.checkConnectivity();
     _isOnline = connectivityResult != ConnectivityResult.none;
 
     // Start monitoring connectivity changes
@@ -111,9 +111,9 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
     // Count recent failures
     var recentFailures = 0;
-    cutoffTime = DateTime.now().subtract(const Duration(minutes: 5));
+    final cutoffTime = DateTime.now().subtract(const Duration(minutes: 5));
 
-    for (booking in _bookingsBox.values) {
+    for (final booking in _bookingsBox.values) {
       if (booking.syncStatus == 'failed' &&
           booking.lastSyncAttempt.isAfter(cutoffTime)) {
         recentFailures++;
@@ -159,10 +159,10 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
     // Show retry notification
     _notificationService?.showInfo(
-        'Retrying ${failedBookings.length} failed booking${failedBookings.length == 1 ? '' : 's'}...',);
+        'Retrying ${failedBookings.length} failed booking${failedBookings.length == 1 ? '' : 's'}...');
 
-    for (booking in failedBookings) {
-      retryCount = _getRetryCount(booking.id);
+    for (final booking in failedBookings) {
+      final retryCount = _getRetryCount(booking.id);
       if (retryCount >= _maxRetryAttempts) {
         // Mark as permanently failed
         await _bookingsBox.put(
@@ -181,7 +181,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
       try {
         await _retryBookingOperation(booking);
-      } catch (e) {e) {
+      } catch (e) {
         // Update retry count and schedule next retry
         await _bookingsBox.put(
           booking.id,
@@ -192,7 +192,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
         );
 
         // Schedule retry with exponential backoff
-        delay = _calculateRetryDelay(retryCount);
+        final delay = _calculateRetryDelay(retryCount);
         _exponentialBackoffTimer = Timer(delay, _retryFailedOperations);
       }
     }
@@ -200,11 +200,11 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
   /// Get retry count for a booking
   int _getRetryCount(String bookingId) {
-    booking = _bookingsBox.get(bookingId);
+    final booking = _bookingsBox.get(bookingId);
     if (booking == null) return 0;
 
     // Count failed attempts in the last hour
-    cutoffTime = DateTime.now().subtract(const Duration(hours: 1));
+    final cutoffTime = DateTime.now().subtract(const Duration(hours: 1));
     var count = 0;
 
     // This is a simplified approach - in a real implementation,
@@ -219,7 +219,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
   /// Retry a specific booking operation
   Future<void> _retryBookingOperation(OfflineBooking booking) async {
-    bookingRef = _firestore.collection('bookings').doc(booking.id);
+    final bookingRef = _firestore.collection('bookings').doc(booking.id);
 
     switch (booking.operation) {
       case 'create':
@@ -266,14 +266,14 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
                 Booking.fromJson({...doc.data(), 'id': doc.id});
 
             // Check if we have a local version
-            localVersion = _bookingsBox.get(doc.id);
+            final localVersion = _bookingsBox.get(doc.id);
             if (localVersion == null) {
               // No local version, add remote booking
               bookings.add(remoteBooking);
             } // else: local version exists, ignore remote
           }
         }
-      } catch (e) {e) {
+      } catch (e) {
         // If remote fetch fails, continue with local data
         debugPrint('Failed to fetch remote bookings: $e');
       }
@@ -302,7 +302,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
             .set(booking.toJson());
         await _bookingsBox.put(
             booking.id, offlineBooking.copyWith(syncStatus: 'synced'),);
-      } catch (e) {e) {
+      } catch (e) {
         await _bookingsBox.put(
             booking.id,
             offlineBooking.copyWith(
@@ -316,7 +316,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
   /// Cancel a booking
   Future<void> cancelBooking(String bookingId) async {
-    offlineBooking = _bookingsBox.get(bookingId);
+    final offlineBooking = _bookingsBox.get(bookingId);
     if (offlineBooking == null) {
       throw Exception('Booking not found');
     }
@@ -335,7 +335,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
       try {
         await _firestore.collection('bookings').doc(bookingId).delete();
         await _bookingsBox.delete(bookingId);
-      } catch (e) {e) {
+      } catch (e) {
         await _bookingsBox.put(
             bookingId,
             updatedOfflineBooking.copyWith(
@@ -349,7 +349,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
   /// Update an existing booking
   Future<void> updateBooking(Booking booking) async {
-    offlineBooking = _bookingsBox.get(booking.id);
+    final offlineBooking = _bookingsBox.get(booking.id);
     if (offlineBooking == null) {
       throw Exception('Booking not found');
     }
@@ -371,7 +371,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
             .update(booking.toJson());
         await _bookingsBox.put(
             booking.id, updatedOfflineBooking.copyWith(syncStatus: 'synced'),);
-      } catch (e) {e) {
+      } catch (e) {
         await _bookingsBox.put(
             booking.id,
             updatedOfflineBooking.copyWith(
@@ -398,7 +398,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
     _notificationService?.showInfo('Syncing bookings...');
 
     // Get pending operations sorted by priority
-    pendingOperations = _getPendingOperationsSorted();
+    final pendingOperations = _getPendingOperationsSorted();
 
     if (pendingOperations.isEmpty) {
       _notificationService?.showInfo('No changes to sync');
@@ -410,7 +410,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
     var totalSynced = 0;
 
     for (var i = 0; i < pendingOperations.length; i += batchSize) {
-      batch = _firestore.batch();
+      final batch = _firestore.batch();
       final batchOperations =
           pendingOperations.skip(i).take(batchSize).toList();
       final syncedIds = <String>[];
@@ -439,7 +439,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
         // Update sync status for successful operations
         await _updateSyncStatusBatch(syncedIds, 'synced');
         totalSynced += syncedIds.length;
-      } catch (e) {e) {
+      } catch (e) {
         // Mark failed operations
         await _updateSyncStatusBatch(syncedIds, 'failed', error: e.toString());
 
@@ -452,7 +452,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
     // Show success notification
     if (totalSynced > 0) {
       _notificationService?.showSuccess(
-          'Successfully synced $totalSynced booking${totalSynced == 1 ? '' : 's'}',);
+          'Successfully synced $totalSynced booking${totalSynced == 1 ? '' : 's'}');
     }
   }
 
@@ -464,16 +464,16 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
     // Sort by priority: deletes first, then creates, then updates
     pendingBookings.sort((a, b) {
-      priorityA = _getOperationPriority(a.operation);
-      priorityB = _getOperationPriority(b.operation);
+      final priorityA = _getOperationPriority(a.operation);
+      final priorityB = _getOperationPriority(b.operation);
 
       if (priorityA != priorityB) {
         return priorityA.compareTo(priorityB);
       }
 
       // Then sort by timestamp (oldest first)
-      timeA = a.lastSyncAttempt ?? a.createdAt ?? DateTime(1970);
-      timeB = b.lastSyncAttempt ?? b.createdAt ?? DateTime(1970);
+      final timeA = a.lastSyncAttempt ?? a.createdAt ?? DateTime(1970);
+      final timeB = b.lastSyncAttempt ?? b.createdAt ?? DateTime(1970);
       return timeA.compareTo(timeB);
     });
 
@@ -498,7 +498,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
   Future<void> _updateSyncStatusBatch(List<String> ids, String status,
       {String? error,}) async {
     for (id in ids) {
-      booking = _bookingsBox.get(id);
+      final booking = _bookingsBox.get(id);
       if (booking != null) {
         if (status == 'synced' && booking.operation == 'delete') {
           await _bookingsBox.delete(id);
@@ -590,7 +590,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
   /// Get sync history for a specific booking
   List<Map<String, dynamic>> getBookingSyncHistory(String bookingId) {
-    booking = _bookingsBox.get(bookingId);
+    final booking = _bookingsBox.get(bookingId);
     if (booking == null) return [];
 
     return [
@@ -656,7 +656,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
       // Show notification about server cancellation
       _notificationService?.showWarning(
-          'Booking ${localBooking.id} was cancelled by the service provider',);
+          'Booking ${localBooking.id} was cancelled by the service provider');
 
       throw BookingConflictException(
         bookingId: localBooking.id,
@@ -676,7 +676,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
       // Show notification about double-booking conflict
       _notificationService?.showWarning(
-          'Booking ${localBooking.id} conflicts with existing appointment',);
+          'Booking ${localBooking.id} conflicts with existing appointment');
 
       throw BookingConflictException(
         bookingId: localBooking.id,
@@ -717,7 +717,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
       if (user == null) return false;
 
       final startTime = booking.dateTime;
-      endTime = startTime.add(booking.duration);
+      final endTime = startTime.add(booking.duration);
 
       final snapshot = await _firestore
           .collection('bookings')
@@ -733,7 +733,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
           final existingBooking =
               Booking.fromJson({...doc.data(), 'id': doc.id});
           final existingStart = existingBooking.dateTime;
-          existingEnd = existingStart.add(existingBooking.duration);
+          final existingEnd = existingStart.add(existingBooking.duration);
 
           // Check for overlap
           if (startTime.isBefore(existingEnd) &&
@@ -744,7 +744,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
       }
 
       return false;
-    } catch (e) {e) {
+    } catch (e) {
       // If we can't check, assume no conflict
       return false;
     }

@@ -13,12 +13,12 @@ class SecurityService {
 
   /// Validate input data
   static bool isValidEmail(String email) {
-    emailRegex = RegExp(r'^[^@]+@[^@]+\.[^@]+$');
+    final emailRegex = RegExp(r'^[^@]+@[^@]+\.[^@]+$');
     return emailRegex.hasMatch(email);
   }
 
   static bool isValidPhone(String phone) {
-    phoneRegex = RegExp(r'^\+?[\d\s\-\(\)]{10,}$');
+    final phoneRegex = RegExp(r'^\+?[\d\s\-\(\)]{10,}$');
     return phoneRegex.hasMatch(phone);
   }
 
@@ -42,8 +42,8 @@ class SecurityService {
 
   /// Hash sensitive data
   static String hashData(String data) {
-    bytes = utf8.encode(data);
-    digest = sha256.convert(bytes);
+    final bytes = utf8.encode(data);
+    final digest = sha256.convert(bytes);
     return digest.toString();
   }
 
@@ -110,7 +110,7 @@ class SecurityService {
 
   /// Generate secure token
   static String generateSecureToken() {
-    random = DateTime.now().millisecondsSinceEpoch.toString();
+    final random = DateTime.now().millisecondsSinceEpoch.toString();
     return hashData(random);
   }
 
@@ -125,7 +125,7 @@ class SecurityService {
     }
 
     // Validate link structure
-    uri = Uri.parse(link);
+    final uri = Uri.parse(link);
     if (uri.host.isEmpty) {
       return false;
     }
@@ -147,8 +147,8 @@ class SecurityService {
 }
 
 // Riverpod providers
-securityServiceProvider = Provider<SecurityService>((final ref) => SecurityService());
+final securityServiceProvider = Provider<SecurityService>((ref) => SecurityService());
 
-securityEnabledProvider = StateProvider<bool>((final ref) {
+final securityEnabledProvider = StateProvider<bool>((ref) {
   return true; // Always enabled
 });

@@ -2,6 +2,8 @@ import 'package:appoint/features/onboarding/services/onboarding_service.dart';
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:appoint/widgets/app_logo.dart';
+import 'package:appoint/constants/app_branding.dart';
 
 final onboardingServiceProvider = Provider<OnboardingService>((ref) => OnboardingService());
 
@@ -63,32 +65,108 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
 
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            // Progress indicator
-            _buildProgressIndicator(currentStep),
-            
-            // Page content
-            Expanded(
-              child: PageView(
-                controller: _pageController,
-                onPageChanged: (index) {
-                  ref.read(onboardingStepProvider.notifier).state = index;
-                },
+        child: Padding(
+          padding: const EdgeInsets.all(24.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // App logo/icon
+              const AppLogo(size: 120),
+              
+              const SizedBox(height: 48),
+              
+              Text(
+                'Welcome to APP-OINT',
+                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 16),
+              Text(
+                AppBranding.fullSlogan,
+                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                  color: Colors.grey[600],
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 32),
+              
+              // Onboarding content
+              Expanded(
+                child: PageView.builder(
+                  controller: _pageController,
+                  onPageChanged: (index) {
+                    setState(() {
+                      _currentPage = index;
+                    });
+                  },
+                  itemCount: _onboardingPages.length,
+                  itemBuilder: (context, index) {
+                    return _buildOnboardingPage(_onboardingPages[index]);
+                  },
+                ),
+              ),
+              
+              // Page indicators
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: List.generate(
+                  _onboardingPages.length,
+                  (index) => Container(
+                    margin: const EdgeInsets.symmetric(horizontal: 4),
+                    width: 8,
+                    height: 8,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: _currentPage == index
+                          ? Theme.of(context).primaryColor
+                          : Colors.grey[300],
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 32),
+              
+              // Navigation buttons
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  _buildWelcomeStep(l10n),
-                  _buildUserTypeStep(l10n),
-                  _buildLanguageStep(l10n),
-                  _buildProfileStep(l10n),
-                  _buildPreferencesStep(l10n),
-                  _buildCompletionStep(l10n),
+                  if (_currentPage > 0)
+                    TextButton(
+                      onPressed: () {
+                        _pageController.previousPage(
+                          duration: const Duration(milliseconds: 300),
+                          curve: Curves.easeInOut,
+                        );
+                      },
+                      child: const Text('Previous'),
+                    )
+                  else
+                    const SizedBox(width: 80),
+                  
+                  ElevatedButton(
+                    onPressed: () {
+                      if (_currentPage < _onboardingPages.length - 1) {
+                        _pageController.nextPage(
+                          duration: const Duration(milliseconds: 300),
+                          curve: Curves.easeInOut,
+                        );
+                      } else {
+                        // Complete onboarding
+                        _completeOnboarding();
+                      }
+                    },
+                    child: Text(
+                      _currentPage < _onboardingPages.length - 1
+                          ? 'Next'
+                          : 'Get Started',
+                    ),
+                  ),
                 ],
               ),
-            ),
-            
-            // Navigation buttons
-            _buildNavigationButtons(currentStep, userType, l10n),
-          ],
+            ],
+          ),
         ),
       ),
     );
@@ -144,8 +222,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
           Text(
             'Welcome to APP-OINT',
             style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+              fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
           
@@ -154,8 +231,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
           Text(
             'Your all-in-one platform for appointments, family coordination, and business management.',
             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-              color: Colors.grey[600],
-            ),
+              color: Colors.grey[600]),
             textAlign: TextAlign.center,
           ),
           
@@ -194,8 +270,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
           Text(
             'How will you use APP-OINT?',
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+              fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
           
@@ -310,8 +385,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
           Text(
             'Choose your language',
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+              fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
           
@@ -361,8 +435,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
             Text(
               'Tell us about yourself',
               style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
             
@@ -444,8 +517,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
           Text(
             'What interests you?',
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+              fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
           
@@ -489,8 +561,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
                     decoration: BoxDecoration(
                       color: isSelected ? Colors.blue[50] : Colors.grey[100],
                       border: Border.all(
-                        color: isSelected ? Colors.blue : Colors.grey[300]!,
-                      ),
+                        color: isSelected ? Colors.blue : Colors.grey[300]!),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
@@ -539,8 +610,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
           Text(
             'You\'re all set!',
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              fontWeight: FontWeight.bold,
-            ),
+              fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
           
@@ -670,7 +740,6 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
         Navigator.of(context).pushReplacementNamed('/dashboard');
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Failed to complete onboarding: $e')),
         );

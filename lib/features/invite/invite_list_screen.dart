@@ -8,8 +8,8 @@ class InviteListScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    l10n = AppLocalizations.of(context)!;
-    invitesAsync = ref.watch(myInvitesStreamProvider);
+    final l10n = AppLocalizations.of(context)!;
+    final invitesAsync = ref.watch(myInvitesStreamProvider);
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.myInvites)),

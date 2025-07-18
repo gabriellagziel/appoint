@@ -36,7 +36,7 @@ class BookingService {
     try {
       await _repository.addBooking(booking);
       // Handle success
-    } catch (e) {e) {
+    } catch (e) {
       // Handle error
       debugPrint('Failed to create booking: $e');
     }
@@ -45,7 +45,7 @@ class BookingService {
   Future<List<Booking>> getBookings() async {
     try {
       return await _repository.getBookings();
-    } catch (e) {e) {
+    } catch (e) {
       debugPrint('Failed to get bookings: $e');
       return [];
     }
@@ -55,7 +55,7 @@ class BookingService {
     try {
       await _repository.cancelBooking(bookingId);
       // Handle success
-    } catch (e) {e) {
+    } catch (e) {
       // Handle error
       debugPrint('Failed to cancel booking: $e');
     }
@@ -65,7 +65,7 @@ class BookingService {
     try {
       await _repository.syncPendingChanges();
       // Handle success
-    } catch (e) {e) {
+    } catch (e) {
       // Handle error
       debugPrint('Failed to sync pending changes: $e');
     }

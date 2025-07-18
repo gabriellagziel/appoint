@@ -5,4 +5,4 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final branchServiceProvider =
     Provider<BranchService>((ref) => BranchService());
 
-branchesProvider = FutureProvider<List<Branch>>((final ref) async => ref.read(branchServiceProvider).fetchBranches());
+final branchesProvider = FutureProvider<List<Branch>>((ref) async => ref.read(branchServiceProvider).fetchBranches());

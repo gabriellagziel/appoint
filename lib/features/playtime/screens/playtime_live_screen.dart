@@ -28,12 +28,12 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
   @override
   void initState() {
     super.initState();
-    _selectedGame = widget.game;
+    final _selectedGame = widget.game;
   }
 
   @override
   Widget build(BuildContext context) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       appBar: AppBar(
@@ -111,7 +111,7 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
             ] else ...[
               Consumer(
                 builder: (context, final ref, final child) {
-                  gamesAsync = ref.watch(systemGamesProvider);
+                  final gamesAsync = ref.watch(systemGamesProvider);
 
                   return gamesAsync.when(
                     data: (games) {
@@ -685,8 +685,7 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
         // Navigate back to hub
         context.pop();
       }
-    } catch (e) {e) {
-      if (mounted) {
+    } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to create session: $e'),

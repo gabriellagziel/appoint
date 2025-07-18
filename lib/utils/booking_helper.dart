@@ -95,7 +95,7 @@ class BookingHelper {
       unawaited(_trackBookingAnalytics(createdBooking, studioId));
 
       return BookingResult.success(createdBooking, appointment);
-    } catch (e) {e) {
+    } catch (e) {
       return BookingResult.error('Failed to create booking: $e');
     }
   }
@@ -157,7 +157,7 @@ class BookingHelper {
       }
 
       return BookingResult.success(updatedBooking, null);
-    } catch (e) {e) {
+    } catch (e) {
       return BookingResult.error('Failed to update booking: $e');
     }
   }
@@ -184,7 +184,7 @@ class BookingHelper {
       unawaited(_sendCancellationNotifications(booking, reason));
 
       return BookingResult.cancelled(booking);
-    } catch (e) {e) {
+    } catch (e) {
       return BookingResult.error('Failed to cancel booking: $e');
     }
   }
@@ -279,7 +279,7 @@ class BookingHelper {
       }
 
       return slots;
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error getting available slots: $e');
       return [];
     }
@@ -400,7 +400,7 @@ class BookingHelper {
           endTime: (data['endTime'] as Timestamp).toDate(),
         );
       }).toList();
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error getting staff availability: $e');
       return [];
     }
@@ -450,7 +450,7 @@ class BookingHelper {
         'Booking Confirmed',
         'Your booking for ${booking.serviceName} has been confirmed',
       );
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error sending notifications and tracking analytics: $e');
     }
   }
@@ -474,7 +474,7 @@ class BookingHelper {
         'Booking Cancelled',
         'Your booking for ${booking.serviceName} has been cancelled. Reason: $reasonText',
       );
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error sending cancellation notifications: $e');
     }
   }
@@ -494,7 +494,7 @@ class BookingHelper {
         'createdAt': FieldValue.serverTimestamp(),
         'source': 'app',
       });
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error tracking booking analytics: $e');
     }
   }
@@ -516,7 +516,7 @@ class BookingHelper {
           'updatedAt': FieldValue.serverTimestamp(),
         });
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error updating appointment time: $e');
     }
   }
@@ -536,7 +536,7 @@ class BookingHelper {
           'cancelledAt': FieldValue.serverTimestamp(),
         });
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error cancelling appointment: $e');
     }
   }
@@ -617,4 +617,4 @@ class AvailabilitySlot {
 }
 
 /// Provider for BookingHelper
-bookingHelperProvider = Provider<BookingHelper>((final ref) => BookingHelper());
+final bookingHelperProvider = Provider<BookingHelper>((ref) => BookingHelper());

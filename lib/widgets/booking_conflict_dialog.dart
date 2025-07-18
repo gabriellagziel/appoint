@@ -18,8 +18,8 @@ class BookingConflictDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
-    dateFormat = DateFormat('MMM dd, yyyy HH:mm');
+    final theme = Theme.of(context);
+    final dateFormat = DateFormat('MMM dd, yyyy HH:mm');
 
     return AlertDialog(
       title: const Row(

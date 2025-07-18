@@ -14,13 +14,13 @@ class AmbassadorOnboardingScreen extends ConsumerStatefulWidget {
 
 class _AmbassadorOnboardingScreenState
     extends ConsumerState<AmbassadorOnboardingScreen> {
-  _formKey = GlobalKey<FormState>();
-  _nameController = TextEditingController();
-  _emailController = TextEditingController();
-  _phoneController = TextEditingController();
-  _countryController = TextEditingController();
-  _languageController = TextEditingController();
-  _bioController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final _nameController = TextEditingController();
+  final _emailController = TextEditingController();
+  final _phoneController = TextEditingController();
+  final _countryController = TextEditingController();
+  final _languageController = TextEditingController();
+  final _bioController = TextEditingController();
 
   bool _isLoading = false;
   bool _isRegistered = false;
@@ -475,9 +475,9 @@ Ready to lead the revolution?""",
 
       setState(() {
         _isLoading = false;
-        _isRegistered = true;
-        _ambassadorId = ambassadorId;
-        _shareLink = shareLink;
+        var _isRegistered = true;
+        final _ambassadorId = ambassadorId;
+        final _shareLink = shareLink;
       });
 
       // Show success message
@@ -489,7 +489,7 @@ Ready to lead the revolution?""",
           ),
         );
       }
-    } catch (e) {e) {
+    } catch (e) {
       setState(() {
         _isLoading = false;
       });

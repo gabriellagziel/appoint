@@ -142,15 +142,13 @@ class EnhancedProfileScreen extends ConsumerWidget {
             Text(
               profile.name,
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 4),
             Text(
               profile.email,
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Colors.grey[600],
-              ),
+                color: Colors.grey[600]),
             ),
             const SizedBox(height: 8),
             Container(
@@ -185,8 +183,7 @@ class EnhancedProfileScreen extends ConsumerWidget {
             Text(
               'Your Stats',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
             Row(
@@ -241,14 +238,12 @@ class EnhancedProfileScreen extends ConsumerWidget {
         Text(
           value,
           style: Theme.of(context).textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
+            fontWeight: FontWeight.bold),
         ),
         Text(
           label,
           style: Theme.of(context).textTheme.bodySmall?.copyWith(
-            color: Colors.grey[600],
-          ),
+            color: Colors.grey[600]),
           textAlign: TextAlign.center,
         ),
       ],
@@ -266,8 +261,7 @@ class EnhancedProfileScreen extends ConsumerWidget {
             child: Text(
               'Quick Actions',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
           ),
           GridView.count(
@@ -333,8 +327,7 @@ class EnhancedProfileScreen extends ConsumerWidget {
                 Text(
                   'Family',
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+                    fontWeight: FontWeight.bold),
                 ),
                 const Spacer(),
                 TextButton(
@@ -393,8 +386,7 @@ class EnhancedProfileScreen extends ConsumerWidget {
             child: Text(
               'Preferences',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
           ),
           SwitchListTile(
@@ -437,8 +429,7 @@ class EnhancedProfileScreen extends ConsumerWidget {
             child: Text(
               'Account',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
           ),
           ListTile(
@@ -592,8 +583,7 @@ class EnhancedProfileScreen extends ConsumerWidget {
       builder: (context) => AlertDialog(
         title: const Text('Delete Account'),
         content: const Text(
-          'Are you sure you want to delete your account? This action cannot be undone.',
-        ),
+          'Are you sure you want to delete your account? This action cannot be undone.'),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),

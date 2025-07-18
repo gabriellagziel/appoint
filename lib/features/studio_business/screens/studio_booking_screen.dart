@@ -19,11 +19,11 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   String? selectedTimeSlot;
   StaffProfile? selectedStaff;
   bool isConfirming = false;
-  _formKey = GlobalKey<FormState>();
-  _nameController = TextEditingController();
-  _phoneController = TextEditingController();
-  _dateController = TextEditingController();
-  _timeController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final _nameController = TextEditingController();
+  final _phoneController = TextEditingController();
+  final _dateController = TextEditingController();
+  final _timeController = TextEditingController();
   bool _isProcessing = false;
 
   @override
@@ -37,7 +37,8 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
       );
     }
 
-    profileAsync = ref.watch(businessProfileProvider);
+    final profileAsync = ref.watch(businessProfileProvider);
+    final bookingState = ref.watch(bookingProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Studio Booking')),
@@ -148,11 +149,35 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                     ),
                     const SizedBox(height: 24),
 
+                    // Show booking state
+                    bookingState.when(
+                      data: (booking) => const SizedBox.shrink(),
+                      loading: () => const Center(
+                        child: Padding(
+                          padding: EdgeInsets.all(16),
+                          child: CircularProgressIndicator(),
+                        ),
+                      ),
+                      error: (error, stack) => Container(
+                        padding: const EdgeInsets.all(16),
+                        margin: const EdgeInsets.only(bottom: 16),
+                        decoration: BoxDecoration(
+                          color: Colors.red.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(color: Colors.red.withOpacity(0.3)),
+                        ),
+                        child: Text(
+                          'Error: $error',
+                          style: const TextStyle(color: Colors.red),
+                        ),
+                      ),
+                    ),
+
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: _isProcessing ? null : _processBooking,
-                        child: _isProcessing
+                        onPressed: _isProcessing || bookingState.isLoading ? null : _processBooking,
+                        child: _isProcessing || bookingState.isLoading
                             ? const CircularProgressIndicator()
                             : const Text('Send Booking Invite'),
                       ),
@@ -172,21 +197,21 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
 
       try {
         // Check weekly usage for upgrade modal
-        weeklyUsage = ref.read(weeklyUsageProvider.notifier);
+        final weeklyUsage = ref.read(weeklyUsageProvider.notifier);
         if (weeklyUsage.shouldShowUpgradeModal) {
           _showUpgradeModal(weeklyUsage.upgradeCode);
           return;
         }
 
-        // Create booking
-        bookingNotifier = ref.read(bookingProvider.notifier);
-        await bookingNotifier.createBooking(
-          staffProfileId: selectedStaff!.id,
+        // Create booking using context.read
+        final bookingNotifier = ref.read(bookingProvider.notifier);
+        await bookingNotifier.submitBooking(
+          staffProfileId: selectedStaff?.id ?? 'default_staff_id',
           businessProfileId: 'business1', // This should come from the profile
-          date: selectedDate!,
-          startTime: selectedTimeSlot!,
-          endTime: _getEndTime(selectedTimeSlot!),
-          cost: selectedStaff!.hourlyRate,
+          date: selectedDate ?? DateTime.now(),
+          startTime: selectedTimeSlot ?? '09:00',
+          endTime: _getEndTime(selectedTimeSlot ?? '09:00'),
+          cost: selectedStaff?.hourlyRate ?? 50.0,
         );
 
         // Increment weekly usage
@@ -200,7 +225,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
             ),
           );
         }
-      } catch (e) {e) {
+      } catch (e) {
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('Error: $e')),
@@ -215,12 +240,12 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   }
 
   String _getEndTime(String startTime) {
-    parts = startTime.split(':');
-    hour = int.parse(parts[0]);
-    minute = int.parse(parts[1]);
+    final parts = startTime.split(':');
+    final hour = int.parse(parts[0]);
+    final minute = int.parse(parts[1]);
 
     final endMinute = minute + 30;
-    endHour = hour + (endMinute >= 60 ? 1 : 0);
+    final endHour = hour + (endMinute >= 60 ? 1 : 0);
     final finalMinute = endMinute >= 60 ? endMinute - 60 : endMinute;
 
     return '${endHour.toString().padLeft(2, '0')}:${finalMinute.toString().padLeft(2, '0')}';

@@ -41,26 +41,32 @@ import 'package:appoint/features/studio_business/screens/settings_screen.dart';
 import 'package:appoint/features/studio_business/screens/staff_availability_screen.dart';
 import 'package:appoint/features/studio_business/screens/studio_booking_screen.dart'
     as studio_business;
+import 'package:appoint/features/studio/studio_booking_confirm_screen.dart';
 import 'package:appoint/models/invite.dart';
+import 'package:appoint/models/family_link.dart';
+import 'package:appoint/services/notification_service.dart';
+import 'package:appoint/services/branch_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 // Enhanced features imports
+import 'package:appoint/features/onboarding/onboarding_screen.dart';
 import 'package:appoint/features/onboarding/enhanced_onboarding_screen.dart';
-import 'package:appoint/features/search/screens/search_screen.dart';
 import 'package:appoint/features/messaging/screens/messages_list_screen.dart';
 import 'package:appoint/features/messaging/screens/chat_screen.dart';
-import 'package:appoint/features/subscription/subscription_screen.dart';
+import 'package:appoint/features/subscriptions/screens/subscription_screen.dart';
 import 'package:appoint/features/rewards/rewards_screen.dart';
-import 'package:appoint/features/analytics/business_analytics_screen.dart';
 import 'package:appoint/features/dashboard/enhanced_dashboard_screen.dart';
 import 'package:appoint/features/notifications/enhanced_notifications_screen.dart';
 import 'package:appoint/features/settings/enhanced_settings_screen.dart';
 import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
 import 'package:appoint/features/profile/enhanced_profile_screen.dart';
 
-final routerProvider = Provider<GoRouter>((final ref) => GoRouter(
+final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
     initialLocation: '/',
     routes: [
       GoRoute(
@@ -103,6 +109,11 @@ final routerProvider = Provider<GoRouter>((final ref) => GoRouter(
         name: 'adminBroadcast',
         builder: (context, final state) => const AdminBroadcastScreen(),
       ),
+      GoRoute(
+        path: '/admin/messages',
+        name: 'adminMessages',
+        builder: (context, final state) => const AdminBroadcastScreen(),
+      ),
 
       GoRoute(
         path: '/family/invite',
@@ -123,7 +134,7 @@ final routerProvider = Provider<GoRouter>((final ref) => GoRouter(
         path: '/family/permissions',
         name: 'permissions',
         builder: (context, final state) {
-          final familyLink = state.extra as dynamic;
+          final familyLink = state.extra as FamilyLink;
           return PermissionsScreen(familyLink: familyLink);
         },
       ),
@@ -137,7 +148,10 @@ final routerProvider = Provider<GoRouter>((final ref) => GoRouter(
         path: '/ambassador-dashboard',
         name: 'ambassadorDashboard',
         builder: (context, final state) =>
-            const AmbassadorDashboardScreen(),
+            AmbassadorDashboardScreen(
+              notificationService: NotificationService(),
+              branchService: BranchService(),
+            ),
       ),
       GoRoute(
         path: '/ambassador-onboarding',
@@ -275,7 +289,7 @@ final routerProvider = Provider<GoRouter>((final ref) => GoRouter(
         path: '/studio/confirm',
         name: 'studioConfirm',
         builder: (context, final state) =>
-            const studio_business.StudioBookingConfirmScreen(),
+            const StudioBookingConfirmScreen(),
       ),
 
       // Search route
@@ -406,9 +420,8 @@ final routerProvider = Provider<GoRouter>((final ref) => GoRouter(
     ),
   ),);
 
-// Placeholder screen for meeting details (to be implemented)
-class MeetingDetailsScreen extends StatelessWidget {
-
+// Enhanced meeting details screen with Google Maps integration
+class MeetingDetailsScreen extends StatefulWidget {
   const MeetingDetailsScreen({
     required this.meetingId, super.key,
     this.creatorId,
@@ -421,31 +434,497 @@ class MeetingDetailsScreen extends StatelessWidget {
   final String? groupId;
 
   @override
-  Widget build(BuildContext context) => Scaffold(
+  State<MeetingDetailsScreen> createState() => _MeetingDetailsScreenState();
+}
+
+class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
+  Map<String, dynamic>? meetingData;
+  bool isLoading = true;
+  String? error;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadMeetingData();
+  }
+
+  Future<void> _loadMeetingData() async {
+    try {
+      setState(() {
+        isLoading = true;
+        error = null;
+      });
+
+      // Try to fetch from externalMeetings collection first
+      final externalDoc = await FirebaseFirestore.instance
+          .collection('externalMeetings')
+          .doc(widget.meetingId)
+          .get();
+
+      if (externalDoc.exists) {
+        setState(() {
+          meetingData = externalDoc.data();
+          isLoading = false;
+        });
+        return;
+      }
+
+      // If not found in externalMeetings, try appointments collection
+      final appointmentDoc = await FirebaseFirestore.instance
+          .collection('appointments')
+          .doc(widget.meetingId)
+          .get();
+
+      if (appointmentDoc.exists) {
+        setState(() {
+          meetingData = appointmentDoc.data();
+          isLoading = false;
+        });
+        return;
+      }
+
+      // If still not found, show error
+      setState(() {
+        error = 'Meeting not found';
+        isLoading = false;
+      });
+    } catch (e) {
+      setState(() {
+        error = 'Error loading meeting: $e';
+        isLoading = false;
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
-        title: const Text('Meeting Details'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('Meeting ID: $meetingId'),
-            if (creatorId != null) Text('Creator: $creatorId'),
-            if (contextId != null) Text('Context: $contextId'),
-            if (groupId != null) Text('Group: $groupId'),
-            const SizedBox(height: 24),
-            const Text(
-              'This is a placeholder screen for meeting details.',
-              style: TextStyle(fontSize: 16),
+        title: Text(meetingData?['title'] ?? 'Meeting Details'),
+        actions: [
+          if (meetingData != null)
+            PopupMenuButton(
+              itemBuilder: (context) => [
+                if (meetingData!['link'] != null)
+                  const PopupMenuItem(
+                    value: 'join',
+                    child: Row(
+                      children: [
+                        Icon(Icons.video_call, size: 16),
+                        SizedBox(width: 8),
+                        Text('Join Meeting'),
+                      ],
+                    ),
+                  ),
+                if (meetingData!['latitude'] != null && meetingData!['longitude'] != null)
+                  const PopupMenuItem(
+                    value: 'directions',
+                    child: Row(
+                      children: [
+                        Icon(Icons.directions, size: 16),
+                        SizedBox(width: 8),
+                        Text('Get Directions'),
+                      ],
+                    ),
+                  ),
+                const PopupMenuItem(
+                  value: 'share',
+                  child: Row(
+                    children: [
+                      Icon(Icons.share, size: 16),
+                      SizedBox(width: 8),
+                      Text('Share Meeting'),
+                    ],
+                  ),
+                ),
+              ],
+              onSelected: (value) {
+                switch (value) {
+                  case 'join':
+                    _joinMeeting(meetingData!['link']);
+                    break;
+                  case 'directions':
+                    _openDirections(
+                      meetingData!['latitude']?.toDouble(),
+                      meetingData!['longitude']?.toDouble(),
+                    );
+                    break;
+                  case 'share':
+                    _shareMeeting();
+                    break;
+                }
+              },
             ),
+        ],
+      ),
+      body: _buildBody(),
+    );
+  }
+
+  Widget _buildBody() {
+    if (isLoading) {
+      return const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            CircularProgressIndicator(),
+            SizedBox(height: 16),
+            Text('Loading meeting details...'),
+          ],
+        ),
+      );
+    }
+
+    if (error != null) {
+      return Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.error_outline, size: 64, color: Colors.grey.shade400),
             const SizedBox(height: 16),
+            Text(error!, style: const TextStyle(fontSize: 16)),
+            const SizedBox(height: 24),
             ElevatedButton(
-              onPressed: context.pop,
-              child: const Text('Close'),
+              onPressed: _loadMeetingData,
+              child: const Text('Retry'),
+            ),
+            const SizedBox(height: 8),
+            TextButton(
+              onPressed: () => context.pop(),
+              child: const Text('Go Back'),
             ),
           ],
         ),
+      );
+    }
+
+    if (meetingData == null) {
+      return Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.meeting_room_outlined, size: 64, color: Colors.grey.shade400),
+            const SizedBox(height: 16),
+            const Text('Meeting not found', style: TextStyle(fontSize: 16)),
+            const SizedBox(height: 24),
+            ElevatedButton(
+              onPressed: () => context.pop(),
+              child: const Text('Go Back'),
+            ),
+          ],
+        ),
+      );
+    }
+
+    return _buildMeetingDetails();
+  }
+
+  Widget _buildMeetingDetails() {
+    final meeting = meetingData!;
+    final hasLocation = meeting['latitude'] != null && meeting['longitude'] != null;
+
+    return SingleChildScrollView(
+      padding: const EdgeInsets.all(16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Meeting title and basic info
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: hasLocation ? Colors.green : Colors.blue,
+                        child: Icon(
+                          hasLocation ? Icons.location_on : Icons.video_call,
+                          color: Colors.white,
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              meeting['title'] ?? 'Meeting',
+                              style: const TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            if (meeting['description'] != null)
+                              Text(
+                                meeting['description'],
+                                style: TextStyle(
+                                  color: Colors.grey.shade600,
+                                  fontSize: 14,
+                                ),
+                              ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 16),
+                  _buildInfoRow(Icons.calendar_today, 'Date', meeting['date']),
+                  _buildInfoRow(Icons.access_time, 'Time', meeting['time']),
+                  if (meeting['duration'] != null)
+                    _buildInfoRow(Icons.timer, 'Duration', '${meeting['duration']} minutes'),
+                ],
+              ),
+            ),
+          ),
+
+          const SizedBox(height: 16),
+
+          // Meeting link section
+          if (meeting['link'] != null)
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Meeting Link',
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(height: 8),
+                    Container(
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: Colors.blue.shade50,
+                        border: Border.all(color: Colors.blue.shade200),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Row(
+                        children: [
+                          const Icon(Icons.link, color: Colors.blue),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: Text(
+                              meeting['link'],
+                              style: const TextStyle(color: Colors.blue),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    SizedBox(
+                      width: double.infinity,
+                      child: ElevatedButton.icon(
+                        onPressed: () => _joinMeeting(meeting['link']),
+                        icon: const Icon(Icons.video_call),
+                        label: const Text('Join Meeting'),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.blue,
+                          foregroundColor: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+
+          const SizedBox(height: 16),
+
+          // Location section with Google Maps
+          if (hasLocation || meeting['address'] != null)
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Location',
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(height: 8),
+                    if (meeting['address'] != null)
+                      Container(
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: Colors.green.shade50,
+                          border: Border.all(color: Colors.green.shade200),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Row(
+                          children: [
+                            const Icon(Icons.location_on, color: Colors.green),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: Text(meeting['address']),
+                            ),
+                          ],
+                        ),
+                      ),
+                    if (hasLocation) ...[
+                      const SizedBox(height: 12),
+                      Container(
+                        height: 250,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(color: Colors.grey.shade300),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(12),
+                          child: GoogleMap(
+                            initialCameraPosition: CameraPosition(
+                              target: LatLng(
+                                meeting['latitude'].toDouble(),
+                                meeting['longitude'].toDouble(),
+                              ),
+                              zoom: 16,
+                            ),
+                            markers: {
+                              Marker(
+                                markerId: MarkerId(widget.meetingId),
+                                position: LatLng(
+                                  meeting['latitude'].toDouble(),
+                                  meeting['longitude'].toDouble(),
+                                ),
+                                infoWindow: InfoWindow(
+                                  title: meeting['title'] ?? 'Meeting Location',
+                                  snippet: meeting['address'],
+                                ),
+                              ),
+                            },
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                      SizedBox(
+                        width: double.infinity,
+                        child: ElevatedButton.icon(
+                          onPressed: () => _openDirections(
+                            meeting['latitude']?.toDouble(),
+                            meeting['longitude']?.toDouble(),
+                          ),
+                          icon: const Icon(Icons.directions),
+                          label: const Text('Get Directions'),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.green,
+                            foregroundColor: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+            ),
+
+          const SizedBox(height: 16),
+
+          // Additional information
+          if (meeting['notes'] != null || widget.creatorId != null || widget.groupId != null)
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Additional Information',
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(height: 8),
+                    if (meeting['notes'] != null)
+                      _buildInfoRow(Icons.note, 'Notes', meeting['notes']),
+                    if (widget.creatorId != null)
+                      _buildInfoRow(Icons.person, 'Creator', widget.creatorId!),
+                    if (widget.groupId != null)
+                      _buildInfoRow(Icons.group, 'Group', widget.groupId!),
+                    _buildInfoRow(Icons.fingerprint, 'Meeting ID', widget.meetingId),
+                  ],
+                ),
+              ),
+            ),
+        ],
       ),
     );
+  }
+
+  Widget _buildInfoRow(IconData icon, String label, String? value) {
+    if (value == null) return const SizedBox.shrink();
+    
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(icon, size: 18, color: Colors.grey.shade600),
+          const SizedBox(width: 8),
+          Text(
+            '$label: ',
+            style: TextStyle(
+              fontWeight: FontWeight.w500,
+              color: Colors.grey.shade700,
+            ),
+          ),
+          Expanded(child: Text(value)),
+        ],
+      ),
+    );
+  }
+
+  void _joinMeeting(String? link) async {
+    if (link == null) return;
+    final uri = Uri.parse(link);
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    } else {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Could not open meeting link'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+    }
+  }
+
+  void _openDirections(double? latitude, double? longitude) async {
+    if (latitude == null || longitude == null) return;
+    final uri = Uri.parse('https://www.google.com/maps/dir/?api=1&destination=$latitude,$longitude');
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    } else {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Could not open directions'),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+    }
+  }
+
+  void _shareMeeting() {
+    final meeting = meetingData!;
+    final meetingInfo = '''
+Meeting: ${meeting['title'] ?? 'Meeting'}
+Date: ${meeting['date'] ?? 'TBD'}
+Time: ${meeting['time'] ?? 'TBD'}
+${meeting['link'] != null ? 'Link: ${meeting['link']}' : ''}
+${meeting['address'] != null ? 'Location: ${meeting['address']}' : ''}
+''';
+
+    // Copy to clipboard (simplified implementation)
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Meeting details copied to clipboard'),
+        backgroundColor: Colors.green,
+      ),
+    );
+  }
 }

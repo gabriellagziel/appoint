@@ -27,15 +27,15 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
         widget.slot!.startTime.month,
         widget.slot!.startTime.day,
       );
-      _startTime = TimeOfDay.fromDateTime(widget.slot!.startTime);
-      _endTime = TimeOfDay.fromDateTime(widget.slot!.endTime);
+      final _startTime = TimeOfDay.fromDateTime(widget.slot!.startTime);
+      final _endTime = TimeOfDay.fromDateTime(widget.slot!.endTime);
     }
   }
 
   @override
   Widget build(BuildContext context) {
     final isEdit = widget.slot != null;
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
     return Dialog(
       child: Padding(
         padding: const EdgeInsets.all(24),
@@ -80,7 +80,7 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
   }
 
   Widget _buildDatePicker(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
     return Row(
       children: [
         const Icon(Icons.calendar_today, size: 20),
@@ -90,7 +90,7 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
             onTap: _saving
                 ? null
                 : () async {
-                    now = DateTime.now();
+                    final now = DateTime.now();
                     final picked = await showDatePicker(
                       context: context,
                       initialDate: _date ?? now,
@@ -120,7 +120,7 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
 
   Widget _buildTimePicker(final BuildContext context,
       {required bool isStart,}) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
     final label = isStart ? 'Start Time' : 'End Time';
     final time = isStart ? _startTime : _endTime;
     return Row(
@@ -187,7 +187,7 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
       return;
     }
     setState(() => _saving = true);
-    service = ref.read(staffAvailabilityServiceProvider);
+    final service = ref.read(staffAvailabilityServiceProvider);
     try {
       if (widget.slot == null) {
         await service.addSlot(start, end);
@@ -197,7 +197,7 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
         _showSnackbar('Slot updated successfully');
       }
       if (mounted) Navigator.of(context).pop();
-    } catch (e) {e) {
+    } catch (e) {
       _showSnackbar('Error: $e', isError: true);
     } finally {
       if (mounted) setState(() => _saving = false);

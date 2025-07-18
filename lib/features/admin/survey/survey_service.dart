@@ -38,7 +38,7 @@ class SurveyService {
 
   // Create new survey
   Future<String> createSurvey(Map<String, dynamic> surveyData) async {
-    docRef = await _firestore.collection('surveys').add({
+    final docRef = await _firestore.collection('surveys').add({
       ...surveyData,
       'createdAt': FieldValue.serverTimestamp(),
       'status': 'active',
@@ -65,7 +65,7 @@ class SurveyService {
     // Get survey details to determine reward
     final surveyDoc =
         await _firestore.collection('surveys').doc(surveyId).get();
-    surveyData = surveyDoc.data();
+    final surveyData = surveyDoc.data();
 
     if (surveyData != null && surveyData['rewardPoints'] != null) {
       final points = surveyData['rewardPoints'] as int;
