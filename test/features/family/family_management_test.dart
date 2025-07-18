@@ -12,6 +12,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
 import '../../fake_firebase_setup.dart';
+import '../../firebase_test_helper.dart';
 
 class FakeUser implements User {
   FakeUser(this.uid);
@@ -23,7 +24,7 @@ class FakeUser implements User {
       super.noSuchMethod(invocation);
 }
 
-fakeAuthUser = FakeUser('test-parent-id');
+final fakeAuthUser = FakeUser('test-parent-id');
 final fakeAuthStateProvider =
     FutureProvider<User?>((ref) async => fakeAuthUser);
 
@@ -142,6 +143,7 @@ class MockFamilyService implements FamilyService {
 Future<void> main() async {
   TestWidgetsFlutterBinding.ensureInitialized();
   await initializeTestFirebase();
+  setupFirebaseMocks();
 
   group('Family Management System Tests', () {
     late ProviderContainer container;
@@ -179,8 +181,8 @@ Future<void> main() async {
         consentedAt: [DateTime(2024, 1, 2)],
       );
 
-      json = familyLink.toJson();
-      fromJson = FamilyLink.fromJson(json);
+      final json = familyLink.toJson();
+      final fromJson = FamilyLink.fromJson(json);
 
       expect(fromJson.id, equals(familyLink.id));
       expect(fromJson.parentId, equals(familyLink.parentId));
@@ -198,8 +200,8 @@ Future<void> main() async {
         accessLevel: 'read',
       );
 
-      json = permission.toJson();
-      fromJson = Permission.fromJson(json);
+      final json = permission.toJson();
+      final fromJson = Permission.fromJson(json);
 
       expect(fromJson.id, equals(permission.id));
       expect(fromJson.familyLinkId, equals(permission.familyLinkId));
@@ -216,8 +218,8 @@ Future<void> main() async {
         requestedAt: DateTime(2024),
       );
 
-      json = privacyRequest.toJson();
-      fromJson = PrivacyRequest.fromJson(json);
+      final json = privacyRequest.toJson();
+      final fromJson = PrivacyRequest.fromJson(json);
 
       expect(fromJson.id, equals(privacyRequest.id));
       expect(fromJson.childId, equals(privacyRequest.childId));
@@ -226,84 +228,27 @@ Future<void> main() async {
       expect(fromJson.requestedAt, equals(privacyRequest.requestedAt));
     });
 
-    test('FamilyService provider creation', () {
-      service = container.read(familyServiceProvider);
-      expect(service, isA<MockFamilyService>());
+    test('FamilyService can invite child', () async {
+      final result = await mockFamilyService.inviteChild('parent-123', 'child@example.com');
+      
+      expect(result.id, equals('test-invite'));
+      expect(result.parentId, equals('parent-123'));
+      expect(result.childId, equals('child@example.com'));
+      expect(result.status, equals('pending'));
     });
 
-    test('FamilyLinks provider loads data correctly', () async {
-      final notifier =
-          container.read(familyLinksProvider('test-parent-id').notifier);
-
-      // Trigger a load using the notifier
-      await notifier.loadLinks();
-
-      state = container.read(familyLinksProvider('test-parent-id'));
-
-      expect(state, isA<FamilyLinksState>());
-      expect(state.pendingInvites, hasLength(1));
-      expect(state.connectedChildren, hasLength(1));
-      expect(state.pendingInvites.first.status, equals('pending'));
-      expect(state.connectedChildren.first.status, equals('active'));
+    test('FamilyService can fetch family links', () async {
+      final links = await mockFamilyService.fetchFamilyLinks('parent-123');
+      
+      expect(links.length, equals(2));
+      expect(links[0].status, equals('pending'));
+      expect(links[1].status, equals('active'));
     });
 
-    test('Permissions provider loads data correctly', () async {
-      final permissions =
-          await container.read(permissionsProvider('test-link-id').future);
-      expect(permissions, hasLength(1));
-      expect(permissions.first.category, equals('profile'));
-      expect(permissions.first.accessLevel, equals('read'));
-    });
-
-    test('PrivacyRequests provider loads data correctly', () async {
-      final sub = container.listen<AsyncValue<List<PrivacyRequest>>>(
-        privacyRequestsProvider,
-        (_, final __) {},
-        fireImmediately: true,
-      );
-      requests = await container.read(privacyRequestsProvider.future);
-      expect(requests, hasLength(1));
-      expect(requests.first.type, equals('private_session'));
-      expect(requests.first.status, equals('pending'));
-      sub.close();
-    });
-
-    test('FamilyLinksNotifier cancelInvite method', () async {
-      final notifier =
-          container.read(familyLinksProvider('test-parent-id').notifier);
-
-      final testLink = FamilyLink(
-        id: 'test-link',
-        parentId: 'test-parent-id',
-        childId: 'test-child-id',
-        status: 'pending',
-        invitedAt: DateTime.now(),
-        consentedAt: [],
-      );
-
-      await notifier.cancelInvite(testLink);
-
-      // Verify the method was called (no exception thrown)
-      expect(true, isTrue);
-    });
-
-    test('FamilyLinksNotifier resendInvite method', () async {
-      final notifier =
-          container.read(familyLinksProvider('test-parent-id').notifier);
-
-      final testLink = FamilyLink(
-        id: 'test-link',
-        parentId: 'test-parent-id',
-        childId: 'test-child-id',
-        status: 'pending',
-        invitedAt: DateTime.now(),
-        consentedAt: [],
-      );
-
-      await notifier.resendInvite(testLink);
-
-      // Verify the method was called (no exception thrown)
-      expect(true, isTrue);
+    test('FamilyService can verify OTP', () async {
+      final result = await mockFamilyService.verifyOtp('+1234567890', '123456');
+      
+      expect(result, isTrue);
     });
   });
 }

@@ -8,10 +8,16 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/services/auth_service.dart';
 import 'package:appoint/models/user_profile.dart';
 import '../mocks/firebase_mocks.dart';
+import '../firebase_test_helper.dart';
 
 // Generate mocks
 @GenerateMocks([AuthService])
 void main() {
+  setUpAll(() async {
+    await initializeTestFirebase();
+    setupFirebaseMocks();
+  });
+
   group('AuthService Tests', () {
     late AuthService authService;
     late MockFirebaseAuthGenerated mockAuth;
@@ -202,8 +208,8 @@ void main() {
 
         // Assert
         expect(result, isA<UserProfile>());
-        expect(result!.uid, equals(uid));
-        expect(result.email, equals(email));
+        expect(result?.uid, equals(uid));
+        expect(result?.email, equals(email));
       });
 
       test('should return null when not authenticated', () async {

@@ -13,6 +13,7 @@ late MockFirebaseFirestore mockFirestore;
 void main() {
   setUpAll(() async {
     await initializeTestFirebase();
+    setupFirebaseMocks();
     mockFirestore = MockFirebaseFirestore();
     bookingService = BookingService(firestore: mockFirestore);
   });
