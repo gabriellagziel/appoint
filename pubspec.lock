@@ -21,10 +21,10 @@ packages:
     dependency: transitive
     description:
       name: _flutterfire_internals
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "1.3.57"
+    version: "1.3.58"
   _macros:
     dependency: transitive
     description: dart
@@ -54,6 +54,38 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.13.2"
+  app_links:
+    dependency: "direct main"
+    description:
+      name: app_links
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.4.0"
+  app_links_linux:
+    dependency: transitive
+    description:
+      name: app_links_linux
+      sha256: REDACTED_TOKEN
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.3"
+  app_links_platform_interface:
+    dependency: transitive
+    description:
+      name: app_links_platform_interface
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.2"
+  app_links_web:
+    dependency: transitive
+    description:
+      name: app_links_web
+      sha256: REDACTED_TOKEN
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.4"
   args:
     dependency: transitive
     description:
@@ -189,39 +221,39 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "5.6.10"
+    version: "5.6.11"
   REDACTED_TOKEN:
     dependency: "direct dev"
-    description:
-      name: REDACTED_TOKEN
-      sha256: "REDACTED_TOKEN"
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.6.10"
-  cloud_firestore_web:
-    dependency: transitive
-    description:
-      name: cloud_firestore_web
-      sha256: "REDACTED_TOKEN"
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.4.10"
-  cloud_functions:
-    dependency: "direct main"
-    description:
-      name: cloud_functions
-      sha256: "REDACTED_TOKEN"
-      url: "https://pub.dev"
-    source: hosted
-    version: "5.6.0"
-  REDACTED_TOKEN:
-    dependency: transitive
     description:
       name: REDACTED_TOKEN
       sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "5.8.0"
+    version: "6.6.11"
+  cloud_firestore_web:
+    dependency: transitive
+    description:
+      name: cloud_firestore_web
+      sha256: REDACTED_TOKEN
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.4.11"
+  cloud_functions:
+    dependency: "direct main"
+    description:
+      name: cloud_functions
+      sha256: REDACTED_TOKEN
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.6.1"
+  REDACTED_TOKEN:
+    dependency: transitive
+    description:
+      name: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.8.1"
   cloud_functions_web:
     dependency: transitive
     description:
@@ -229,7 +261,7 @@ packages:
       sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "4.11.3"
+    version: "4.11.4"
   code_builder:
     dependency: transitive
     description:
@@ -253,15 +285,15 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.2"
+    version: "6.1.4"
   REDACTED_TOKEN:
     dependency: transitive
     description:
       name: REDACTED_TOKEN
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "1.2.4"
+    version: "2.0.1"
   convert:
     dependency: transitive
     description:
@@ -450,34 +482,34 @@ packages:
     dependency: "direct main"
     description:
       name: firebase_analytics
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "11.5.1"
+    version: "11.5.2"
   REDACTED_TOKEN:
     dependency: transitive
     description:
       name: REDACTED_TOKEN
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "4.4.1"
+    version: "4.4.2"
   firebase_analytics_web:
     dependency: transitive
     description:
       name: firebase_analytics_web
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.10+14"
+    version: "0.5.10+15"
   firebase_app_check:
     dependency: "direct main"
     description:
       name: firebase_app_check
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "0.3.2+8"
+    version: "0.3.2+9"
   REDACTED_TOKEN:
     dependency: transitive
     description:
@@ -485,23 +517,23 @@ packages:
       sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.1+8"
+    version: "0.1.1+9"
   firebase_app_check_web:
     dependency: transitive
     description:
       name: firebase_app_check_web
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.0+12"
+    version: "0.2.0+13"
   firebase_auth:
     dependency: "direct main"
     description:
       name: firebase_auth
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "5.6.1"
+    version: "5.6.2"
   firebase_auth_mocks:
     dependency: "direct dev"
     description:
@@ -517,23 +549,23 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "7.7.1"
+    version: "7.7.2"
   firebase_auth_web:
     dependency: transitive
     description:
       name: firebase_auth_web
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "5.15.1"
+    version: "5.15.2"
   firebase_core:
     dependency: "direct main"
     description:
       name: firebase_core
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "3.15.0"
+    version: "3.15.1"
   REDACTED_TOKEN:
     dependency: "direct dev"
     description:
@@ -541,39 +573,39 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "5.4.1"
+    version: "6.0.0"
   firebase_core_web:
     dependency: transitive
     description:
       name: firebase_core_web
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "2.24.0"
+    version: "2.24.1"
   firebase_crashlytics:
     dependency: "direct main"
     description:
       name: firebase_crashlytics
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "4.3.8"
+    version: "4.3.9"
   REDACTED_TOKEN:
     dependency: "direct dev"
     description:
       name: REDACTED_TOKEN
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "3.8.8"
+    version: "3.8.9"
   firebase_messaging:
     dependency: "direct main"
     description:
       name: firebase_messaging
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "15.2.8"
+    version: "15.2.9"
   REDACTED_TOKEN:
     dependency: transitive
     description:
@@ -581,31 +613,31 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "4.6.8"
+    version: "4.6.9"
   firebase_messaging_web:
     dependency: transitive
     description:
       name: firebase_messaging_web
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "3.10.8"
+    version: "3.10.9"
   firebase_performance:
     dependency: "direct main"
     description:
       name: firebase_performance
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "0.10.1+8"
+    version: "0.10.1+9"
   REDACTED_TOKEN:
     dependency: transitive
     description:
       name: REDACTED_TOKEN
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.5+8"
+    version: "0.1.5+9"
   firebase_performance_web:
     dependency: transitive
     description:
@@ -613,23 +645,23 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.7+14"
+    version: "0.1.7+15"
   firebase_remote_config:
     dependency: "direct main"
     description:
       name: firebase_remote_config
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "5.4.6"
+    version: "5.4.7"
   REDACTED_TOKEN:
     dependency: transitive
     description:
       name: REDACTED_TOKEN
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "1.5.6"
+    version: "1.5.7"
   firebase_remote_config_web:
     dependency: transitive
     description:
@@ -637,7 +669,7 @@ packages:
       sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "1.8.6"
+    version: "1.8.7"
   firebase_storage:
     dependency: "direct main"
     description:
@@ -645,23 +677,23 @@ packages:
       sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "12.4.8"
+    version: "12.4.9"
   REDACTED_TOKEN:
     dependency: transitive
     description:
       name: REDACTED_TOKEN
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "5.2.8"
+    version: "5.2.9"
   firebase_storage_web:
     dependency: transitive
     description:
       name: firebase_storage_web
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "3.10.15"
+    version: "3.10.16"
   fixnum:
     dependency: transitive
     description:
@@ -732,10 +764,10 @@ packages:
     dependency: transitive
     description:
       name: REDACTED_TOKEN
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.0"
+    version: "1.0.1"
   flutter_localizations:
     dependency: "direct main"
     description: flutter
@@ -1044,6 +1076,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.2.8"
+  gtk:
+    dependency: transitive
+    description:
+      name: gtk
+      sha256: REDACTED_TOKEN
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.0"
   hive:
     dependency: "direct main"
     description:
@@ -1197,10 +1237,10 @@ packages:
     dependency: transitive
     description:
       name: js
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "0.6.7"
+    version: "0.7.2"
   json_annotation:
     dependency: "direct main"
     description:
@@ -1625,6 +1665,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.0"
+  simple_gesture_detector:
+    dependency: transitive
+    description:
+      name: simple_gesture_detector
+      sha256: REDACTED_TOKEN
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.1"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -1738,18 +1786,26 @@ packages:
     dependency: "direct main"
     description:
       name: syncfusion_flutter_charts
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "30.1.38"
+    version: "30.1.40"
   syncfusion_flutter_core:
     dependency: transitive
     description:
       name: syncfusion_flutter_core
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "30.1.38"
+    version: "30.1.40"
+  table_calendar:
+    dependency: "direct main"
+    description:
+      name: table_calendar
+      sha256: "REDACTED_TOKEN"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.2.0"
   term_glyph:
     dependency: transitive
     description:
@@ -1767,7 +1823,7 @@ packages:
     source: hosted
     version: "0.7.4"
   timezone:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: timezone
       sha256: REDACTED_TOKEN
@@ -1798,38 +1854,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.4.0"
-  uni_links:
-    dependency: "direct main"
-    description:
-      name: uni_links
-      sha256: "REDACTED_TOKEN"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.5.1"
-  uni_links_platform_interface:
-    dependency: transitive
-    description:
-      name: uni_links_platform_interface
-      sha256: "REDACTED_TOKEN"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.0"
-  uni_links_web:
-    dependency: transitive
-    description:
-      name: uni_links_web
-      sha256: "REDACTED_TOKEN"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.1.0"
   url_launcher:
     dependency: "direct main"
     description:
       name: url_launcher
-      sha256: "REDACTED_TOKEN"
+      sha256: REDACTED_TOKEN
       url: "https://pub.dev"
     source: hosted
-    version: "6.3.1"
+    version: "6.3.2"
   url_launcher_android:
     dependency: transitive
     description:
@@ -1911,7 +1943,7 @@ packages:
     source: hosted
     version: "9.0.0"
   vm_service:
-    dependency: "direct dev"
+    dependency: transitive
     description:
       name: vm_service
       sha256: REDACTED_TOKEN
@@ -1970,10 +2002,10 @@ packages:
     dependency: transitive
     description:
       name: webview_flutter_android
-      sha256: REDACTED_TOKEN
+      sha256: "REDACTED_TOKEN"
       url: "https://pub.dev"
     source: hosted
-    version: "4.7.0"
+    version: "4.8.0"
   REDACTED_TOKEN:
     dependency: transitive
     description:
@@ -2031,5 +2063,5 @@ packages:
     source: hosted
     version: "3.1.3"
 sdks:
-  dart: ">=3.8.0 <4.0.0"
+  dart: ">=3.8.1 <4.0.0"
   flutter: ">=3.27.4"

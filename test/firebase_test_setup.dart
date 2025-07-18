@@ -5,12 +5,18 @@ import 'package:firebase_auth_mocks/firebase_auth_mocks.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+// Global variables for test mocking
+late FakeFirebaseFirestore firestore;
+late MockFirebaseAuth auth;
+
 /// Initialize mock Firebase for widget tests
 Future<void> setupFirebaseMocks() async {
   // Initialize Firebase if needed
   try {
     await Firebase.initializeApp();
-  } catch (e) {_) {}
+  } catch (e) {
+    // Ignore initialization errors in tests
+  }
 
   // Override your app's Firestore and Auth providers here, e.g.:
   // Note: You'll need to override specific providers in your test files
@@ -22,7 +28,9 @@ Future<ProviderContainer> createTestContainer() async {
   // Ensure Firebase is initialized first
   try {
     await Firebase.initializeApp();
-  } catch (e) {_) {}
+  } catch (e) {
+    // Ignore initialization errors in tests
+  }
 
   firestore = FakeFirebaseFirestore();
   auth = MockFirebaseAuth();

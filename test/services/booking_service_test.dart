@@ -24,6 +24,7 @@ class MockQueryDocumentSnapshot extends Mock implements QueryDocumentSnapshot {}
 void main() {
   setUpAll(() async {
     await initializeTestFirebase();
+    setupFirebaseMocks();
   });
 
   group('BookingService', () {
@@ -132,14 +133,14 @@ void main() {
           'isConfirmed': false,
         };
 
-        mockSnapshot = MockDocumentSnapshot();
+        final mockSnapshot = MockDocumentSnapshot();
         when(() => mockDocument.get()).thenAnswer((_) async => mockSnapshot);
         when(() => mockSnapshot.exists).thenReturn(true);
-        when(mockSnapshot.data).thenReturn(bookingData);
+        when(() => mockSnapshot.data()).thenReturn(bookingData);
         when(() => mockSnapshot.id).thenReturn(bookingId);
 
         // Act
-        result = await bookingService.getBookingById(bookingId);
+        final result = await bookingService.getBookingById(bookingId);
 
         // Assert - just verify the method was called, don't test the result parsing
         verify(() => mockCollection.doc(bookingId)).called(1);
@@ -149,12 +150,12 @@ void main() {
       test('returns null when document does not exist', () async {
         // Arrange
         const bookingId = 'test-booking-id';
-        mockSnapshot = MockDocumentSnapshot();
+        final mockSnapshot = MockDocumentSnapshot();
         when(() => mockDocument.get()).thenAnswer((_) async => mockSnapshot);
         when(() => mockSnapshot.exists).thenReturn(false);
 
         // Act
-        result = await bookingService.getBookingById(bookingId);
+        final result = await bookingService.getBookingById(bookingId);
 
         // Assert
         expect(result, isNull);
@@ -167,7 +168,7 @@ void main() {
             FirebaseException(plugin: 'firestore', message: 'Get failed'),);
 
         // Act
-        result = await bookingService.getBookingById(bookingId);
+        final result = await bookingService.getBookingById(bookingId);
 
         // Assert
         expect(result, isNull);

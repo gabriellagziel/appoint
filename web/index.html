@@ -2,34 +2,91 @@
 <html lang="en">
 <head>
   <base href="/" />
-  <script src="flutter.js" defer></script>
-  <script src="main.dart.js" type="application/javascript"></script>
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.gstatic.com https://accounts.google.com; style-src 'self' 'unsafe-inline' https://accounts.google.com; img-src 'self' data: https:; connect-src 'self' https://firebase.googleapis.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com;">
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="X-Frame-Options" content="DENY">
-  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-  <title>Appoint</title>
-  <link rel="manifest" href="manifest.json">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="APP-OINT - Time Organized. Set Send Done. Your Healthcare Appointment Platform">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="REDACTED_TOKEN" content="black">
+  <meta name="apple-mobile-web-app-title" content="APP-OINT">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>APP-OINT - Time Organized. Set Send Done.</title>
+  <link rel="manifest" href="manifest.json">
+  <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin" />
+  <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="APP-OINT - Time Organized. Set Send Done.">
+  <meta property="og:description" content="APP-OINT - Time Organized. Set Send Done. Your Healthcare Appointment Platform">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://app-oint.com">
+  <meta property="og:image" content="icons/Icon-512.png">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="APP-OINT - Time Organized. Set Send Done.">
+  <meta name="twitter:description" content="APP-OINT - Time Organized. Set Send Done. Your Healthcare Appointment Platform">
+  <meta name="twitter:image" content="icons/Icon-512.png">
+
+  <!-- Google Identity Services SDK -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-analytics-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore-compat.js"></script>
+
+  <!-- Required meta tags for Google Sign-In -->
+  <meta name="google-signin-client_id" content="REDACTED_TOKEN.googleusercontent.com">
+
+  <script>
+    // Firebase Configuration
+    const firebaseConfig = {
+      apiKey: "REDACTED_TOKEN",
+      authDomain: "app-oint-core.firebaseapp.com",
+      projectId: "app-oint-core",
+      storageBucket: "app-oint-core.appspot.com",
+      messagingSenderId: "944776470711",
+      appId: "1:94477647711:web:6f38330",
+      measurementId: "G-HHH7T7HS"
+    };
+    
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    
+    console.log('Firebase initialized successfully');
+  </script>
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = null;
+  </script>
+  
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
 </head>
 <body>
   <script>
-    // Wait for Google Identity script to load before initializing
     window.addEventListener('load', function(ev) {
-      // Initialize Google Identity after the script has loaded
-      if (typeof google !== 'undefined' && google.accounts && google.accounts.id) {
-        google.accounts.id.initialize({
-          client_id: "REDACTED_TOKEN.apps.googleusercontent.com",
-          redirect_uri: "http://localhost:8080/__/auth/handler",
-        });
-      }
-      
-      // Load Flutter
-      _flutter.loader.load();
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
     });
   </script>
 </body>
