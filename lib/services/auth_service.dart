@@ -28,6 +28,7 @@ class AuthService {
       return AppUser(
         uid: user.uid,
         email: user.email,
+        emailVerified: user.emailVerified,
         role: role,
         studioId: claims['studioId'] as String?,
         businessProfileId: claims['businessProfileId'] as String?,
@@ -35,15 +36,7 @@ class AuthService {
     });
 
   Future<void> signIn(String email, final String password) async {
-    try {
-      await _firebaseAuth.signInWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
-    } on FirebaseAuthException catch (e) {
-      await _handleAuthException(e);
-      rethrow;
-    }
+    await signInWithEmailAndPassword(email: email, password: password);
   }
 
   Future<void> signOut() async {
