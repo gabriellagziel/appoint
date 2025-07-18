@@ -1,583 +1,212 @@
-# GitHub Actions Workflows
-
-This directory contains the CI/CD workflows for the APP-OINT project.
-
-## Workflow Overview
-
-### 1. `ci-enforce.yml` - Quality Gate Enforcement
-**Purpose**: Enforces code quality standards and test coverage on every push and PR.
-
-**Triggers**:
-- Push to `main` or `develop` branches
-- Pull requests to `main` or `develop` branches
-- Manual trigger via workflow_dispatch
-
-**Jobs**:
-- **setup**: Installs Flutter and caches dependencies
-- **analyze**: Runs `flutter analyze` and localization validation
-- **test-and-coverage**: Runs tests with coverage and enforces 80% minimum
-
-**Key Features**:
-- ✅ Fails on any analyzer errors/warnings
-- ✅ Enforces 80% test coverage minimum
-- ✅ Generates HTML coverage reports
-- ✅ Uploads coverage artifacts for review
-
-### 2. `ci.yml` - Comprehensive CI Pipeline
-**Purpose**: Full CI pipeline including security tests, multi-platform testing, and smoke tests.
-
-**Triggers**:
-- Push to `main` branch
-- Pull requests to `main` branch
-
-**Jobs**:
-- **lint**: Code analysis and localization validation
-- **security-rules**: Security rule testing with Firebase emulators
-- **test**: Multi-platform testing (Ubuntu + macOS) with coverage
-- **build**: APK building and artifact upload
-- **smoke-test**: Android emulator testing and app validation
-
-### 3. `release.yml` - Release Management
-**Purpose**: Automated release process with version bumping, building, and deployment.
-
-**Triggers**:
-- Push of version tags (v*)
-- Manual workflow dispatch
-
-**Jobs**:
-- **version-bump**: Semantic version bumping
-- **build-android/ios/web**: Multi-platform builds
-- **test**: Test execution
-- **security-scan**: Security auditing
-- **create-release**: GitHub release creation
-- **notify**: Slack/Discord notifications
-- **deploy**: Play Store deployment
-
-## Workflow Relationships
-
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   ci-enforce    │    │      ci.yml     │    │   release.yml   │
-│   (Quality)     │    │  (Comprehensive)│    │   (Release)     │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │
-         ▼                       ▼                       ▼
-   Fast feedback          Full validation         Production deploy
-   (PR blocking)          (Multi-platform)        (Tag-based)
-```
-
-## Quality Gates
-
-### Analyzer Health
-- Zero analyzer errors or warnings
-- All localization files validated
-- Code formatting compliance
-
-### Test Coverage
-- Minimum 80% line coverage required
-- Coverage reports generated and uploaded
-- Coverage trend monitoring
-
-### Security
-- Firestore security rules tested
-- Dependency vulnerability scanning
-- Security rule validation
-
-## Usage
-
-### For Developers
-1. **Push to feature branch**: Only `ci-enforce` runs (fast feedback)
-2. **Create PR to main**: Both `ci-enforce` and `ci.yml` run
-3. **Merge to main**: Full pipeline executes
-
-### For Releases
-1. **Create version tag**: `release.yml` automatically triggers
-2. **Manual release**: Use workflow dispatch with version input
-
-## Configuration
-
-### Coverage Threshold
-To change the coverage threshold, update the value in both:
-- `.github/workflows/ci-enforce.yml` (line with `COVERAGE < 80`)
-- `.github/workflows/ci.yml` (line with `COVERAGE < 80`)
-
-### Branch Protection
-Recommended branch protection rules for `main`:
-- Require `ci-enforce` to pass
-- Require `ci.yml` to pass
-- Require PR reviews
-- Dismiss stale reviews on new commits
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Coverage below threshold**
-   - Add more unit tests
-   - Check for untested code paths
-   - Review test exclusions
-
-2. **Analyzer failures**
-   - Fix linting issues
-   - Update generated code with `flutter packages pub run build_runner build`
-   - Check for missing imports
-
-3. **Localization validation failures**
-   - Ensure all ARB files have matching keys
-   - Run `flutter gen-l10n` locally
-   - Check for missing translations
-
-### Local Testing
-```bash
-# Run analyzer locally
-flutter analyze
-
-# Run tests with coverage
-flutter test --coverage
-
-# Check coverage locally
-genhtml coverage/lcov.info --output-directory coverage/html
-```
-
-# GitHub Actions CI/CD Workflow Setup
-
-This document explains the CI/CD workflow configuration and required setup for the AppOint Flutter project.
-
-## Overview
-
-The CI/CD pipeline consists of multiple jobs that run on different triggers:
-
-- **build-and-test**: Main build and test job
-- **content-library-test**: Content management testing
-- **deploy-functions**: Firebase Functions deployment
-- **deploy-web**: Web app deployment
-- **deploy-android**: Android app distribution
-- **deploy-ios**: iOS app distribution
-- **security-scan**: Security analysis
-- **performance-test**: Performance testing
-
-## Required GitHub Secrets
-
-You need to configure the following secrets in your GitHub repository settings:
-
-### Repository Secrets Setup
-
-1. Go to your GitHub repository
-2. Navigate to **Settings** → **Secrets and variables** → **Actions**
-3. Click **New repository secret** for each of the following:
-
-### Core Secrets
-
-| Secret Name | Description | Required For |
-|-------------|-------------|--------------|
-| `GHE_ENTERPRISE` | GitHub Enterprise hostname (e.g., `github.company.com`) | Network allowlist configuration |
-| `GHE_TOKEN` | GitHub Enterprise personal access token | Network allowlist configuration |
-| `FIREBASE_TOKEN` | Firebase CLI token for deployment | All deployment jobs |
-
-### Firebase App Distribution Secrets
-
-| Secret Name | Description | Required For |
-|-------------|-------------|--------------|
-| `FIREBASE_APP_ID` | Firebase Android app ID | Android deployment |
-| `FIREBASE_IOS_APP_ID` | Firebase iOS app ID | iOS deployment |
-
-### Optional Secrets
-
-| Secret Name | Description | Required For |
-|-------------|-------------|--------------|
-| `CODECOV_TOKEN` | Codecov token for coverage reporting | Coverage uploads |
-
-## How to Obtain Secrets
-
-### Firebase Token
-```bash
-# Install Firebase CLI
-npm install -g firebase-tools
-
-# Login to Firebase
-firebase login
-
-# Generate CI token
-firebase login:ci
-```
-
-### GitHub Enterprise Token
-1. Go to your GitHub Enterprise instance
-2. Navigate to **Settings** → **Developer settings** → **Personal access tokens**
-3. Generate a new token with appropriate permissions
-
-### Firebase App IDs
-1. Go to Firebase Console
-2. Navigate to **Project Settings** → **General**
-3. Scroll down to **Your apps** section
-4. Copy the App ID for each platform
-
-## Workflow Triggers
-
-The workflows are triggered on:
-
-- **Push** to `main` or `develop` branches
-- **Pull Request** to `main` or `develop` branches
-
-## Job Dependencies
-
-```
-build-and-test
-├── content-library-test
-├── deploy-functions
-├── deploy-web
-├── deploy-android
-├── deploy-ios
-├── security-scan
-└── performance-test
-```
-
-All deployment and testing jobs depend on the successful completion of `build-and-test`.
-
-## Environment Variables
-
-The workflow uses several environment variables:
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `FLUTTER_VERSION` | Flutter SDK version | `3.19.3` |
-| `DART_VERSION` | Dart SDK version | `3.3.1` |
-| `PUB_HOSTED_URL` | Pub package repository URL | Varies by job |
-| `FLUTTER_STORAGE_BASE_URL` | Flutter storage base URL | `https://storage.googleapis.com` |
-| `FLUTTER_CACHE_DIR` | Flutter cache directory | `~/.flutter` |
-| `PUB_CACHE` | Pub cache directory | `~/.pub-cache` |
-
-## Container Configuration
-
-All jobs run in a custom container:
-- **Image**: `ghcr.io/your-org/app-oint-dev:latest`
-- **Options**: `--pull` (always pull latest)
-
-## Network Access Requirements
-
-The workflow performs network connectivity checks for:
-
-- `storage.googleapis.com` - Flutter storage
-- `pub.dev` - Dart package repository
-- `firebase-public.firebaseio.com` - Firebase services
-- `raw.githubusercontent.com` - GitHub raw content
-- `dart.dev` - Dart documentation
-- `metadata.google.internal` - Google metadata service
-- `169.254.169.254` - AWS metadata service
-
-## Caching Strategy
-
-The workflow implements several caching layers:
-
-1. **Pub Cache**: Caches Dart packages
-2. **Flutter Cache**: Caches Flutter artifacts
-3. **Build Cache**: Caches build outputs
-
-## Error Handling
-
-The workflow includes comprehensive error handling:
-
-- **Retry Logic**: Network operations retry on failure
-- **Graceful Degradation**: Offline fallbacks where possible
-- **Conditional Steps**: Some steps only run on specific conditions
-- **Always Cleanup**: Emulator cleanup runs even on failure
-
-## Security Considerations
-
-- **Secrets**: All sensitive data is stored as GitHub secrets
-- **Network Security**: Network access is validated before operations
-- **Container Security**: Uses trusted container images
-- **Token Rotation**: Firebase tokens should be rotated regularly
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Secret Not Found**: Ensure all required secrets are configured
-2. **Network Access Denied**: Check firewall and proxy settings
-3. **Container Pull Failed**: Verify container image exists and is accessible
-4. **Firebase Deployment Failed**: Check Firebase token and project configuration
-
-### Debug Steps
-
-1. Check workflow logs for specific error messages
-2. Verify secret names match exactly (case-sensitive)
-3. Test network connectivity manually
-4. Validate Firebase project configuration
-
-## Performance Optimizations
-
-- **Parallel Jobs**: Independent jobs run in parallel
-- **Caching**: Extensive use of GitHub Actions caching
-- **Container Reuse**: Container image is reused across jobs
-- **Selective Deployment**: Only deploy what changed
-
-## Monitoring
-
-Monitor workflow performance through:
-
-- GitHub Actions dashboard
-- Workflow run logs
-- Deployment status pages
-- Firebase console for deployments
-
-## Support
-
-For issues with the CI/CD pipeline:
-
-1. Check this documentation
-2. Review workflow logs
-3. Verify secret configuration
-4. Test locally if possible
-5. Contact the development team
-
-# CI/CD and Proxy Integration Guide
-
-This guide covers the continuous integration, deployment, and proxy integration setup for the AppOint project.
-
-## 🚀 Overview
-
-Our CI/CD pipeline automates testing, building, and deployment across multiple environments using GitHub Actions and Firebase.
-
-## 📁 Workflow Structure
-
-```
-.github/workflows/
-├── pr_checks.yml          # Pull request validation
-├── release.yml            # Release and deployment
-├── firebase_deploy.yml    # Firebase deployment
-└── README.md              # This guide
-```
-
-## 🔧 Workflow Details
-
-### PR Checks (`pr_checks.yml`)
-
-**Triggers**: Pull requests to main branch
-
-**Steps**:
-1. **Setup**: Install Flutter and dependencies
-2. **Analysis**: Run `flutter analyze` for code quality
-3. **Tests**: Execute unit and integration tests
-4. **Build**: Verify builds for Android and iOS
-5. **Firestore Rules**: Validate Firestore security rules
-6. **Lint**: Check code formatting and style
-
-**Usage**:
-```bash
-# Local validation (same as CI)
-flutter analyze
-flutter test
-flutter build apk --debug
-```
-
-### Release (`release.yml`)
-
-**Triggers**: Tags matching `v*` pattern
-
-**Steps**:
-1. **Version Bump**: Automatically increment version
-2. **Build**: Create production builds
-3. **Artifacts**: Generate APK/IPA files
-4. **Deploy**: Deploy to Firebase App Distribution
-5. **Release Notes**: Generate release notes
-
-**Usage**:
-```bash
-# Create a new release
-git tag v1.2.3
-git push origin v1.2.3
-```
-
-## 🔐 Environment Configuration
+# 🚀 Main CI/CD Pipeline
+
+This is a comprehensive GitHub Actions CI/CD pipeline that handles all Flutter build, test, and deployment tasks automatically.
+
+## 🎯 Features
+
+- ✅ **Full Automation**: No local development required
+- ✅ **Flutter 3.32.5**: Latest stable version
+- ✅ **Code Generation**: Automatic `.g.dart` and `.freezed.dart` generation
+- ✅ **Multi-Platform**: Web, Android, and iOS builds
+- ✅ **Smart Caching**: Optimized dependency caching
+- ✅ **Comprehensive Testing**: Unit, widget, and integration tests
+- ✅ **Security Scanning**: Dependency vulnerability checks
+- ✅ **Deployment**: Firebase Hosting and DigitalOcean App Platform
+- ✅ **Rollback Support**: Automatic rollback on failures
+
+## 📋 Prerequisites
 
 ### Required Secrets
 
-Configure these secrets in GitHub repository settings:
+Add these secrets to your GitHub repository:
 
+#### Firebase Deployment
+- `FIREBASE_TOKEN`: Firebase CLI token for hosting deployment
+
+#### DigitalOcean Deployment
+- `DIGITALOCEAN_ACCESS_TOKEN`: DigitalOcean API token (provided: `REDACTED_TOKEN`)
+- `DIGITALOCEAN_APP_ID`: Your DigitalOcean App Platform app ID
+
+#### Android Release (Optional)
+- `ANDROID_KEYSTORE_BASE64`: Base64 encoded keystore for signed APKs
+- `PLAY_STORE_JSON_KEY`: Google Play Store service account key
+
+#### iOS Release (Optional)
+- `IOS_P12_CERTIFICATE`: iOS distribution certificate
+
+#### Notifications (Optional)
+- `SLACK_WEBHOOK_URL`: Slack webhook for deployment notifications
+
+## 🔄 Workflow Jobs
+
+### 1. Validate Setup
+- Validates all required secrets
+- Checks environment configuration
+
+### 2. Setup Dependencies
+- Installs Flutter 3.32.5 and Dart 3.5.4
+- Sets up Java 17 and Node.js 18
+- Installs all dependencies with caching
+
+### 3. Generate Code
+- Runs `build_runner` to generate `.g.dart` and `.freezed.dart` files
+- Multiple retry attempts for reliability
+- Uploads generated files as artifacts
+
+### 4. Analyze Code
+- Runs Flutter analyze
+- Checks code formatting
+- Runs spell checks
+- Verifies dependency tree
+
+### 5. Run Tests
+- Unit tests with coverage
+- Widget tests
+- Integration tests
+- Uploads coverage reports to Codecov
+
+### 6. Security Scan
+- Dependency vulnerability checks
+- Security audit
+- Dependency analysis
+
+### 7. Build Applications
+- **Web**: Flutter web build with HTML renderer
+- **Android**: APK and App Bundle builds
+- **iOS**: iOS app build (macOS runners)
+
+### 8. Deploy
+- **Firebase Hosting**: Automatic deployment to Firebase
+- **DigitalOcean**: Deployment to App Platform
+- **Releases**: GitHub releases with artifacts
+
+## 🚀 Usage
+
+### Automatic Triggers
+- **Push to main/develop**: Full CI/CD pipeline
+- **Pull Requests**: Analysis and testing only
+
+### Manual Triggers
+Use the "Run workflow" button in GitHub Actions with options:
+
+- **Environment**: staging/production
+- **Platform**: all/web/android/ios
+- **Skip Tests**: true/false
+
+### Deployment Triggers
+- **Main branch**: Automatic deployment to staging
+- **Tags (v*.*.*)**: Create GitHub releases
+- **Manual dispatch**: Deploy to specified environment
+
+## 📁 Generated Files
+
+The pipeline automatically generates:
+- `.g.dart` files for JSON serialization
+- `.freezed.dart` files for immutable data classes
+- Build artifacts for all platforms
+
+## 🔧 Configuration
+
+### Flutter Version
 ```yaml
-# Firebase Configuration
-FIREBASE_PROJECT_ID: "appoint-production"
-FIREBASE_SERVICE_ACCOUNT_KEY: "base64-encoded-service-account.json"
-
-# DigitalOcean Spaces
-DO_SPACES_ACCESS_KEY: "your-access-key"
-DO_SPACES_SECRET_KEY: "your-secret-key"
-DO_SPACES_BUCKET: "appoint-assets"
-DO_SPACE_DOMAIN: "your-space-domain.digitaloceanspaces.com"
-
-# App Distribution
-FIREBASE_APP_ID_ANDROID: "1:123456789:android:abcdef"
-FIREBASE_APP_ID_IOS: "1:123456789:ios:abcdef"
+env:
+  FLUTTER_VERSION: '3.32.5'
+  DART_VERSION: '3.5.4'
 ```
 
-### Environment Variables
+### Build Commands
+```bash
+# Code generation
+dart run build_runner build --delete-conflicting-outputs
 
-```yaml
-# Development
-FLUTTER_VERSION: "3.32.0"
-DART_VERSION: "3.4.0"
+# Web build
+flutter build web --release --web-renderer html
 
-# Build Configuration
-ANDROID_BUILD_TYPE: "release"
-IOS_BUILD_TYPE: "release"
+# Android builds
+flutter build apk --release --target-platform android-arm64
+flutter build appbundle --release
+
+# iOS build
+flutter build ios --release --no-codesign
 ```
-
-## 🌐 Proxy Integration
-
-### Firebase Hosting Proxy
-
-Configure Firebase hosting to proxy API requests:
-
-```json
-// firebase.json
-{
-  "hosting": {
-    "public": "build/web",
-    "rewrites": [
-      {
-        "source": "/api/**",
-        "function": "api"
-      },
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
-}
-```
-
-### Cloud Functions Proxy
-
-API requests are proxied through Firebase Cloud Functions:
-
-```typescript
-// functions/src/index.ts
-export const api = functions.https.onRequest((req, res) => {
-  // Proxy logic for external APIs
-  // Rate limiting and authentication
-  // Request/response transformation
-});
-```
-
-## 📱 Build Configuration
-
-### Android Build
-
-```yaml
-# android/app/build.gradle.kts
-android {
-  compileSdkVersion 34
-  
-  defaultConfig {
-    applicationId "com.appoint.app"
-    minSdkVersion 21
-    targetSdkVersion 34
-    versionCode flutterVersionCode.toInteger()
-    versionName flutterVersionName
-  }
-  
-  buildTypes {
-    release {
-      signingConfig signingConfigs.release
-      minifyEnabled true
-      proguardFiles getDefaultProguardFile('proguard-android.txt')
-    }
-  }
-}
-```
-
-### iOS Build
-
-```yaml
-# ios/Runner.xcodeproj/project.pbxproj
-# Configure signing and capabilities
-# Set up App Store Connect integration
-```
-
-## 🔄 Deployment Pipeline
-
-### Development → Staging → Production
-
-1. **Development**: Automatic deployment on PR merge
-2. **Staging**: Manual deployment from staging branch
-3. **Production**: Automatic deployment on release tags
-
-### Deployment Targets
-
-- **Firebase App Distribution**: Internal testing
-- **Firebase Hosting**: Web application
-- **App Store Connect**: iOS App Store
-- **Google Play Console**: Android Play Store
-
-## 📊 Monitoring and Analytics
-
-### Build Metrics
-
-Track build performance and success rates:
-- Build duration
-- Success/failure rates
-- Test coverage
-- Code quality metrics
-
-### Deployment Metrics
-
-Monitor deployment health:
-- Deployment frequency
-- Rollback rates
-- Environment parity
-- Release success rates
 
 ## 🛠️ Troubleshooting
 
 ### Common Issues
 
-1. **Build Failures**
-   ```bash
-   # Clear build cache
-   flutter clean
-   flutter pub get
-   ```
+1. **Build Runner Fails**
+   - Check for syntax errors in model files
+   - Verify `part` directives are correct
+   - Check pubspec.yaml dependencies
 
-2. **Test Failures**
-   ```bash
-   # Run tests with verbose output
-   flutter test --verbose
-   ```
+2. **Tests Fail**
+   - Review test output for specific failures
+   - Check for missing mocks or dependencies
+   - Verify test data setup
 
-3. **Deployment Issues**
-   ```bash
-   # Check Firebase CLI
-   firebase --version
-   firebase projects:list
-   ```
+3. **Deployment Fails**
+   - Verify secrets are correctly configured
+   - Check DigitalOcean app ID exists
+   - Review Firebase project configuration
 
-### Debug Commands
+### Debug Steps
 
-```bash
-# Local validation
-flutter doctor
-flutter analyze
-flutter test
-flutter build apk --debug
+1. Check workflow logs in GitHub Actions
+2. Verify generated files in artifacts
+3. Test locally with same Flutter version
+4. Review dependency conflicts
 
-# Firebase validation
-firebase deploy --dry-run
-firebase functions:config:get
-```
+## 📊 Monitoring
 
-## 📚 Additional Resources
+### Coverage Reports
+- Uploaded to Codecov automatically
+- Available in workflow artifacts
+- Tracked over time
 
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [Firebase CLI Documentation](https://firebase.google.com/docs/cli)
-- [Flutter CI/CD Best Practices](https://docs.flutter.dev/deployment/ci)
-- [Firebase Hosting Configuration](https://firebase.google.com/docs/hosting)
+### Build Artifacts
+- Web builds: `build/web/`
+- Android APKs: Multiple architectures
+- iOS builds: Release configuration
 
-## 🤝 Contributing
+### Notifications
+- Slack notifications for deployment status
+- GitHub release notifications
+- Email notifications for failures
 
-When adding new workflows:
-1. Test locally first
-2. Add appropriate documentation
-3. Update this README
-4. Review with the team 
+## 🔄 Rollback
+
+Automatic rollback is available for:
+- Firebase Hosting deployments
+- DigitalOcean App Platform deployments
+
+Triggered on workflow failure with manual dispatch.
+
+## 📈 Performance
+
+### Caching Strategy
+- Pub dependencies: `~/.pub-cache`
+- Dart tool: `.dart_tool/`
+- Build artifacts: `build/`
+- Node modules: `node_modules/`
+
+### Optimization
+- Parallel job execution
+- Smart dependency caching
+- Artifact sharing between jobs
+- Conditional job execution
+
+## 🎯 Success Metrics
+
+- ✅ All tests pass
+- ✅ Code generation successful
+- ✅ Build artifacts created
+- ✅ Deployment completed
+- ✅ Coverage reports uploaded
+
+## 📞 Support
+
+For issues with the CI/CD pipeline:
+1. Check workflow logs
+2. Review this documentation
+3. Verify secret configuration
+4. Test locally with same versions 
