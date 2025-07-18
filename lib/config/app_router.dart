@@ -4,6 +4,8 @@ import 'package:appoint/features/ambassador_dashboard_screen.dart';
 import 'package:appoint/features/ambassador_onboarding_screen.dart';
 import 'package:appoint/features/auth/auth_wrapper.dart';
 import 'package:appoint/features/auth/login_screen.dart';
+import 'package:appoint/features/auth/forgot_password_screen.dart';
+import 'package:appoint/features/auth/verify_email_screen.dart';
 import 'package:appoint/features/booking/booking_confirm_screen.dart';
 import 'package:appoint/features/booking/booking_request_screen.dart';
 import 'package:appoint/features/booking/screens/chat_booking_screen.dart';
@@ -404,6 +406,17 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
             groupId: args['groupId'] as String?,
           );
         },
+      ),
+
+      GoRoute(
+        path: '/forgot-password',
+        name: 'forgotPassword',
+        builder: (context, final state) => const ForgotPasswordScreen(),
+      ),
+      GoRoute(
+        path: '/verify-email',
+        name: 'verifyEmail',
+        builder: (context, final state) => const VerifyEmailScreen(),
       ),
 
       GoRoute(

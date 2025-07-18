@@ -1,0 +1,13 @@
+name: Continuous Integration
+
+push:
+  branches: [ main ]
+
+pull_request:
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Placeholder CI
+        run: echo "CI stub"
