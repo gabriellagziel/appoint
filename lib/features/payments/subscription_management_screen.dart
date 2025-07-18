@@ -29,17 +29,17 @@ class REDACTED_TOKEN
       if (user == null) {
         setState(() {
           _error = 'User not authenticated';
-          _isLoading = false;
+          var _isLoading = false;
         });
         return;
       }
 
-      details = await _stripeService.getSubscriptionDetails(user.uid);
+      final details = await _stripeService.getSubscriptionDetails(user.uid);
       setState(() {
         _subscriptionDetails = details;
-        _isLoading = false;
+        var _isLoading = false;
       });
-    } catch (e) {e) {
+    } catch (e) {
       setState(() {
         _error = 'Failed to load subscription details: $e';
         _isLoading = false;
@@ -58,8 +58,7 @@ class REDACTED_TOKEN
           title: const Text('Cancel Subscription'),
           content: const Text(
             'Are you sure you want to cancel your subscription? '
-            'You will continue to have access until the end of your current billing period.',
-          ),
+            'You will continue to have access until the end of your current billing period.'),
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(false),
@@ -77,7 +76,7 @@ class REDACTED_TOKEN
       if (confirmed == true) {
         setState(() => _isLoading = true);
 
-        success = await _stripeService.cancelSubscription(user.uid);
+        final success = await _stripeService.cancelSubscription(user.uid);
 
         if (success) {
           if (mounted) {
@@ -100,15 +99,13 @@ class REDACTED_TOKEN
           }
         }
       }
-    } catch (e) {e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Error: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Error: $e'),
+          backgroundColor: Colors.red,
+        ),
+      );
     } finally {
       setState(() => _isLoading = false);
     }
@@ -214,8 +211,7 @@ class REDACTED_TOKEN
                     Text(
                       subscriptionId,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            fontFamily: 'monospace',
-                          ),
+                            fontFamily: 'monospace'),
                     ),
                   ],
                 ),

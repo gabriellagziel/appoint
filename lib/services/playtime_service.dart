@@ -20,7 +20,7 @@ class PlaytimeService {
         _firestore = FirebaseFirestore.instance;
         _auth = FirebaseAuth.instance;
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Silently handle Firebase initialization errors in tests
     }
   }
@@ -38,14 +38,14 @@ class PlaytimeService {
     try {
       if (Firebase.apps.isEmpty) return [];
       
-      snapshot = await _firestore.collection(_gamesCollection).get();
+      final snapshot = await _firestore.collection(_gamesCollection).get();
       return snapshot.docs
           .map((doc) => PlaytimeGame.fromJson({
                 'id': doc.id,
                 ...doc.data(),
               }),)
           .toList();
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to fetch games: $e');
     }
   }
@@ -55,7 +55,7 @@ class PlaytimeService {
       final user = _auth.currentUser;
       if (user == null) throw Exception('User not authenticated');
 
-      docRef = await _firestore.collection(_gamesCollection).add({
+      final docRef = await _firestore.collection(_gamesCollection).add({
         ...game.toJson(),
         'id': null, // Remove id as it will be set by Firestore
         'createdBy': user.uid,
@@ -63,7 +63,7 @@ class PlaytimeService {
       });
 
       return game.copyWith(id: docRef.id);
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to create game: $e');
     }
   }
@@ -74,7 +74,7 @@ class PlaytimeService {
         ...game.toJson(),
         'id': null,
       });
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to update game: $e');
     }
   }
@@ -82,7 +82,7 @@ class PlaytimeService {
   Future<void> deleteGame(String gameId) async {
     try {
       await _firestore.collection(_gamesCollection).doc(gameId).delete();
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to delete game: $e');
     }
   }
@@ -90,14 +90,14 @@ class PlaytimeService {
   // Session Operations
   Future<List<PlaytimeSession>> getSessions() async {
     try {
-      snapshot = await _firestore.collection(_sessionsCollection).get();
+      final snapshot = await _firestore.collection(_sessionsCollection).get();
       return snapshot.docs
           .map((doc) => PlaytimeSession.fromJson({
                 'id': doc.id,
                 ...doc.data(),
               }),)
           .toList();
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to fetch sessions: $e');
     }
   }
@@ -107,13 +107,13 @@ class PlaytimeService {
       final user = _auth.currentUser;
       if (user == null) throw Exception('User not authenticated');
 
-      docRef = await _firestore.collection(_sessionsCollection).add({
+      final docRef = await _firestore.collection(_sessionsCollection).add({
         ...session.toJson(),
         'id': null,
       });
 
       return session.copyWith(id: docRef.id);
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to create session: $e');
     }
   }
@@ -124,7 +124,7 @@ class PlaytimeService {
         ...session.toJson(),
         'id': null,
       });
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to update session: $e');
     }
   }
@@ -140,7 +140,7 @@ class PlaytimeService {
                 ...doc.data(),
               }),)
           .toList();
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to fetch backgrounds: $e');
     }
   }
@@ -159,11 +159,16 @@ class PlaytimeService {
       final user = _auth.currentUser;
       if (user == null) throw Exception('User not authenticated');
 
-      // TODO(username): Implement this feature
-      const imageUrl = 'TODO: image url';
+      // Stub implementation for image URL generation
+      // In a real implementation, this would upload the file to Firebase Storage
+      final imageUrl = 'https://example.com/stub-image-url-${DateTime.now().millisecondsSinceEpoch}';
 
-      docRef = await _firestore.collection(_backgroundsCollection).add({
+      final docRef = await _firestore.collection(_backgroundsCollection).add({
+        'name': name,
+        'description': description,
         'imageUrl': imageUrl,
+        'category': category,
+        'tags': tags,
         'createdBy': user.uid,
         'createdAt': FieldValue.serverTimestamp(),
       });
@@ -173,7 +178,7 @@ class PlaytimeService {
         imageUrl: imageUrl,
         createdBy: user.uid,
       );
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to create background: $e');
     }
   }
@@ -199,7 +204,7 @@ class PlaytimeService {
       return PlaytimeChat.fromJson({
         ...doc.data()!,
       });
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to fetch chat: $e');
     }
   }
@@ -207,10 +212,10 @@ class PlaytimeService {
   Future<void> sendMessage(
       String sessionId, final ChatMessage message,) async {
     try {
-      chatRef = _firestore.collection(_chatsCollection).doc(sessionId);
+      final chatRef = _firestore.collection(_chatsCollection).doc(sessionId);
 
       await _firestore.runTransaction((transaction) async {
-        chatDoc = await transaction.get(chatRef);
+        final chatDoc = await transaction.get(chatRef);
         final messages = List<Map<String, dynamic>>.from(
           chatDoc.data()?['messages'] ?? [],
         );
@@ -226,7 +231,7 @@ class PlaytimeService {
             },
             SetOptions(merge: true),);
       });
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to send message: $e');
     }
   }

@@ -13,7 +13,7 @@ class OtpEntryModal extends ConsumerStatefulWidget {
 }
 
 class _OtpEntryModalState extends ConsumerState<OtpEntryModal> {
-  _codeController = TextEditingController();
+  final _codeController = TextEditingController();
 
   @override
   void dispose() {
@@ -35,7 +35,7 @@ class _OtpEntryModalState extends ConsumerState<OtpEntryModal> {
 
   @override
   Widget build(BuildContext context) {
-    state = ref.watch(otpProvider);
+    final state = ref.watch(otpProvider);
 
     return AlertDialog(
       title: const Text('Enter OTP'),

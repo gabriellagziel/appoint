@@ -39,7 +39,7 @@ class CsvExport {
       // For now, just return the CSV content as a string
       // In a real implementation, you would use platform-specific code
       // or a cross-platform package like SharePlus
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error downloading CSV: $e');
     }
   }

@@ -7,21 +7,21 @@ final studioBookingServiceProvider =
 
 final userBookingsProvider =
     FutureProvider<List<StudioBooking>>((ref) async {
-  service = ref.read(studioBookingServiceProvider);
+  final service = ref.read(studioBookingServiceProvider);
   return service.getUserBookings();
 });
 
 final FutureProviderFamily<List<StudioBooking>, String> businessBookingsProvider =
     FutureProvider.family<List<StudioBooking>, String>(
   (ref, final businessProfileId) async {
-    service = ref.read(studioBookingServiceProvider);
+    final service = ref.read(studioBookingServiceProvider);
     return service.getBusinessBookings(businessProfileId);
   },
 );
 
 final bookingProvider =
     StateNotifierProvider<BookingNotifier, AsyncValue<StudioBooking?>>(
-        (ref) => BookingNotifier(ref.read(studioBookingServiceProvider)),);
+        (ref) => BookingNotifier(ref.read(studioBookingServiceProvider)));
 
 class BookingNotifier extends StateNotifier<AsyncValue<StudioBooking?>> {
 
@@ -47,13 +47,38 @@ class BookingNotifier extends StateNotifier<AsyncValue<StudioBooking?>> {
         cost: cost,
       );
       state = AsyncValue.data(booking);
-    } catch (e) {e, st) {
-      state = AsyncValue.error(e, st);
+    } catch (e) {
+      state = AsyncValue.error(e, StackTrace.current);
+    }
+  }
+
+  Future<void> submitBooking({
+    required final String staffProfileId,
+    required final String businessProfileId,
+    required final DateTime date,
+    required final String startTime,
+    required final String endTime,
+    required final double cost,
+  }) async {
+    state = const AsyncValue.loading();
+    try {
+      final booking = await _service.createBooking(
+        staffProfileId: staffProfileId,
+        businessProfileId: businessProfileId,
+        date: date,
+        startTime: startTime,
+        endTime: endTime,
+        cost: cost,
+      );
+      state = AsyncValue.data(booking);
+    } catch (e) {
+      state = AsyncValue.error(e, StackTrace.current);
+      rethrow;
     }
   }
 
   Future<void> updateBookingStatus(
-      String bookingId, final String status,) async {
+      String bookingId, final String status) async {
     try {
       await _service.updateBookingStatus(bookingId, status);
       // Refresh the booking data
@@ -73,8 +98,12 @@ class BookingNotifier extends StateNotifier<AsyncValue<StudioBooking?>> {
         );
         state = AsyncValue.data(updatedBooking);
       }
-    } catch (e) {e, st) {
-      state = AsyncValue.error(e, st);
+    } catch (e) {
+      state = AsyncValue.error(e, StackTrace.current);
     }
+  }
+
+  void resetState() {
+    state = const AsyncValue.data(null);
   }
 }

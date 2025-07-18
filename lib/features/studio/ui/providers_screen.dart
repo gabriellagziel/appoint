@@ -8,7 +8,7 @@ class ProvidersScreen extends ConsumerWidget {
 
   Future<void> _openEditor(final BuildContext context, final WidgetRef ref,
       {CareProvider? provider,}) async {
-    nameController = TextEditingController(text: provider?.name ?? '');
+    final nameController = TextEditingController(text: provider?.name ?? '');
     final specialtyController =
         TextEditingController(text: provider?.specialty ?? '');
     final contactController =
@@ -64,7 +64,7 @@ class ProvidersScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    provsAsync = ref.watch(careProvidersProvider);
+    final provsAsync = ref.watch(careProvidersProvider);
     return Scaffold(
       appBar: AppBar(title: const Text('Providers')),
       floatingActionButton: FloatingActionButton(

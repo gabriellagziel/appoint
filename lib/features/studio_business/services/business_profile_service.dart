@@ -21,7 +21,7 @@ class BusinessProfileService {
       }
 
       return BusinessProfile.fromJson(doc.data()! as Map<String, dynamic>);
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('🚨 Business profile fetch error: $e');
       rethrow;
     }
@@ -34,7 +34,7 @@ class BusinessProfileService {
 
       await FirestoreService.updateDocument(
           'business_profiles', user.uid, profile.toJson(),);
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('🚨 Business profile update error: $e');
       rethrow;
     }

@@ -1,4 +1,5 @@
 import 'package:appoint/providers/theme_provider.dart';
+import 'package:appoint/services/analytics_service.dart';
 import 'package:appoint/theme/app_spacing.dart';
 import 'package:appoint/theme/sample_palettes.dart';
 import 'package:appoint/widgets/app_scaffold.dart';
@@ -18,9 +19,16 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   bool _vibration = false;
 
   @override
+  void initState() {
+    super.initState();
+    // Track screen view
+    AnalyticsService.logScreenView('SettingsScreen');
+  }
+
+  @override
   Widget build(BuildContext context) {
-    palette = ref.watch(themeNotifierProvider).palette;
-    darkMode = ref.watch(themeModeProvider) == ThemeMode.dark;
+    final palette = ref.watch(themeNotifierProvider).palette;
+    final darkMode = ref.watch(themeModeProvider) == ThemeMode.dark;
 
     return AppScaffold(
       title: 'Settings',
@@ -31,20 +39,38 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             SwitchListTile(
               title: const Text('Enable Notifications'),
               value: _notifications,
-              onChanged: (value) =>
-                  setState(() => _notifications = value),
+              onChanged: (value) {
+                AnalyticsService.logEvent('setting_changed', params: {
+                  'setting_type': 'notifications',
+                  'setting_value': value,
+                  'screen': 'settings',
+                });
+                setState(() => _notifications = value);
+              },
             ),
             const SizedBox(height: AppSpacing.sm),
             SwitchListTile(
               title: const Text('Enable Vibration'),
               value: _vibration,
-              onChanged: (value) => setState(() => _vibration = value),
+              onChanged: (value) {
+                AnalyticsService.logEvent('setting_changed', params: {
+                  'setting_type': 'vibration',
+                  'setting_value': value,
+                  'screen': 'settings',
+                });
+                setState(() => _vibration = value);
+              },
             ),
             const SizedBox(height: AppSpacing.sm),
             SwitchListTile(
               title: const Text('Dark Mode'),
               value: darkMode,
               onChanged: (value) {
+                AnalyticsService.logEvent('setting_changed', params: {
+                  'setting_type': 'dark_mode',
+                  'setting_value': value,
+                  'screen': 'settings',
+                });
                 ref
                     .read(themeNotifierProvider.notifier)
                     .setMode(value ? ThemeMode.dark : ThemeMode.light);
@@ -55,6 +81,11 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               value: palette,
               onChanged: (value) {
                 if (value != null) {
+                  AnalyticsService.logEvent('setting_changed', params: {
+                    'setting_type': 'theme_palette',
+                    'setting_value': value.name,
+                    'screen': 'settings',
+                  });
                   ref.read(themeNotifierProvider.notifier).setPalette(value);
                 }
               },

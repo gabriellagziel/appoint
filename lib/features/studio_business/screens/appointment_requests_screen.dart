@@ -44,7 +44,7 @@ class AppointmentRequestsScreen extends ConsumerWidget {
             padding: const EdgeInsets.all(16),
             itemCount: requests.length,
             itemBuilder: (context, final index) {
-              request = requests[index].data()! as Map<String, dynamic>;
+              final request = requests[index].data()! as Map<String, dynamic>;
               final requestId = requests[index].id;
 
               return Card(
@@ -134,7 +134,7 @@ class AppointmentRequestsScreen extends ConsumerWidget {
         'status': status,
         'updatedAt': DateTime.now().toIso8601String(),
       });
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error updating request: $e');
     }
   }
@@ -145,7 +145,7 @@ class AppointmentRequestsScreen extends ConsumerWidget {
           .collection('appointmentRequests')
           .doc(requestId)
           .delete();
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error deleting request: $e');
     }
   }

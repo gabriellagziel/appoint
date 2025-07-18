@@ -11,10 +11,10 @@ class RoomsScreen extends ConsumerStatefulWidget {
 }
 
 class _RoomsScreenState extends ConsumerState<RoomsScreen> {
-  _formKey = GlobalKey<FormState>();
-  _nameController = TextEditingController();
-  _capacityController = TextEditingController();
-  _descriptionController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final _nameController = TextEditingController();
+  final _capacityController = TextEditingController();
+  final _descriptionController = TextEditingController();
   bool _isAdding = false;
 
   @override
@@ -70,7 +70,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
             padding: const EdgeInsets.all(16),
             itemCount: rooms.length,
             itemBuilder: (context, final index) {
-              room = rooms[index].data()! as Map<String, dynamic>;
+              final room = rooms[index].data()! as Map<String, dynamic>;
               final roomId = rooms[index].id;
 
               return Card(
@@ -94,7 +94,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
                       if (room['description'] != null)
                         Text('Description: ${room['description']}'),
                       Text(
-                          'Status: ${room['isAvailable'] == true ? 'Available' : 'Occupied'}',),
+                          'Status: ${room['isAvailable'] == true ? 'Available' : 'Occupied'}'),
                     ],
                   ),
                   trailing: PopupMenuButton(
@@ -286,8 +286,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
           const SnackBar(content: Text('Room added successfully!')),
         );
       }
-    } catch (e) {e) {
-      if (mounted) {
+    } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
@@ -322,8 +321,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
           const SnackBar(content: Text('Room updated successfully!')),
         );
       }
-    } catch (e) {e) {
-      if (mounted) {
+    } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
@@ -347,11 +345,10 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
               content: Text(
-                  'Room ${!currentAvailability ? 'enabled' : 'disabled'} successfully!',),),
+                  'Room ${!currentAvailability ? 'enabled' : 'disabled'} successfully!'),),
         );
       }
-    } catch (e) {e) {
-      if (mounted) {
+    } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
@@ -368,8 +365,7 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
           const SnackBar(content: Text('Room deleted successfully!')),
         );
       }
-    } catch (e) {e) {
-      if (mounted) {
+    } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );

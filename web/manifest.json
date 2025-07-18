@@ -1,6 +1,33 @@
 {
-  "name": "Appoint",
-  "short_name": "Appoint",
+  "name": "APP-OINT - Time Organized. Set Send Done.",
+  "short_name": "T",
+  "description": "APP-OINT - Time Organized. Set Send Done. Your Healthcare Appointment Platform",
   "start_url": "/",
-  "display": "standalone"
+  "display": "standalone",
+  "theme_color": "#4169E1",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/Icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
 }

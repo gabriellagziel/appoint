@@ -28,15 +28,13 @@ class REDACTED_TOKEN
   Future<void> _loadConfiguration() async {
     setState(() => _isLoading = true);
     try {
-      service = ref.read(REDACTED_TOKEN);
+      final service = ref.read(REDACTED_TOKEN);
       await service.loadConfiguration();
       ref.read(businessAvailabilityProvider.notifier).loadConfiguration();
-    } catch (e) {e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error loading configuration: $e')),
-        );
-      }
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error loading configuration: $e')),
+      );
     } finally {
       setState(() => _isLoading = false);
     }
@@ -45,9 +43,9 @@ class REDACTED_TOKEN
   Future<void> _saveConfiguration() async {
     setState(() => _isSaving = true);
     try {
-      availability = ref.read(businessAvailabilityProvider);
-      service = ref.read(REDACTED_TOKEN);
-      config = service.toJson(availability);
+      final availability = ref.read(businessAvailabilityProvider);
+      final service = ref.read(REDACTED_TOKEN);
+      final config = service.toJson(availability);
       await service.saveConfiguration(config);
 
       if (mounted) {
@@ -55,12 +53,10 @@ class REDACTED_TOKEN
           const SnackBar(content: Text('Configuration saved successfully!')),
         );
       }
-    } catch (e) {e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error saving configuration: $e')),
-        );
-      }
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error saving configuration: $e')),
+      );
     } finally {
       setState(() => _isSaving = false);
     }
@@ -89,14 +85,14 @@ class REDACTED_TOKEN
 
   Future<void> _pickTime(final BuildContext context, final TimeOfDay initial,
       void Function(TimeOfDay) onPicked,) async {
-    picked = await showTimePicker(context: context, initialTime: initial);
+    final picked = await showTimePicker(context: context, initialTime: initial);
     if (picked != null) onPicked(picked);
   }
 
   @override
   Widget build(BuildContext context) {
-    availability = ref.watch(businessAvailabilityProvider);
-    notifier = ref.read(businessAvailabilityProvider.notifier);
+    final availability = ref.watch(businessAvailabilityProvider);
+    final notifier = ref.read(businessAvailabilityProvider.notifier);
 
     if (_isLoading) {
       return Theme(
@@ -141,7 +137,7 @@ class REDACTED_TOKEN
           itemBuilder: (context, final weekday) {
             final avail =
                 availability.firstWhere((a) => a.weekday == weekday);
-            timeRange = TimeRange(start: avail.start, end: avail.end);
+            final timeRange = TimeRange(start: avail.start, end: avail.end);
             final hasError = avail.isOpen && !timeRange.isValid;
 
             return Card(
@@ -302,8 +298,7 @@ class REDACTED_TOKEN
         children: [
           DrawerHeader(
             decoration: BoxDecoration(
-              color: BusinessTheme.businessTheme.colorScheme.primary,
-            ),
+              color: BusinessTheme.businessTheme.colorScheme.primary),
             child: const Text(
               'Studio Management',
               style: TextStyle(

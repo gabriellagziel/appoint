@@ -1,63 +1,2899 @@
 {
   "@@locale": "de",
-  "appName": "APP-OINT",
-  "@appName": {
-    "description": "The name of the application"
+  "refresh": "[DE] Aktualisieren",
+  "@refresh": {
+    "description": "Description"
   },
-  "welcome": "Welcome",
-  "@welcome": {
-    "description": "Welcome message"
+  "home": "[DE] Startseite",
+  "@home": {
+    "description": "Description"
   },
-  "loading": "Loading...",
-  "@loading": {
-    "description": "Loading message"
+  "noSessionsYet": "[DE] [DE] No sessions yet",
+  "@noSessionsYet": {
+    "description": "Description"
   },
-  "error": "Error",
-  "@error": {
-    "description": "Error message"
-  },
-  "success": "Success",
-  "@success": {
-    "description": "Success message"
-  },
-  "cancel": "Cancel",
-  "@cancel": {
-    "description": "Cancel button"
-  },
-  "save": "Save",
-  "@save": {
-    "description": "Save button"
-  },
-  "delete": "Delete",
-  "@delete": {
-    "description": "Delete button"
-  },
-  "edit": "Edit",
-  "@edit": {
-    "description": "Edit button"
-  },
-  "back": "Back",
-  "@back": {
-    "description": "Back button"
-  },
-  "next": "Next",
-  "@next": {
-    "description": "Next button"
-  },
-  "done": "Done",
-  "@done": {
-    "description": "Done button"
-  },
-  "ok": "OK",
+  "ok": "[DE] OK",
   "@ok": {
-    "description": "OK button"
+    "description": "Description"
   },
-  "yes": "Yes",
+  "playtimeLandingChooseMode": "[DE] [DE] Choose your play mode:",
+  "@playtimeLandingChooseMode": {
+    "description": "Description"
+  },
+  "signUp": "[DE] Registrieren",
+  "@signUp": {
+    "description": "Description"
+  },
+  "scheduleMessage": "[DE] Nachricht planen",
+  "@scheduleMessage": {
+    "description": "Description"
+  },
+  "decline": "[DE] Ablehnen",
+  "@decline": {
+    "description": "Description"
+  },
+  "adminBroadcast": "[DE] Admin-Rundsendung",
+  "@adminBroadcast": {
+    "description": "Localization key for: Admin Broadcast"
+  },
+  "login": "[DE] Anmelden",
+  "@login": {
+    "description": "Description"
+  },
+  "playtimeChooseFriends": "[DE] Freunde auswählen",
+  "@playtimeChooseFriends": {
+    "description": "Description"
+  },
+  "noInvites": "[DE] Keine Einladungen",
+  "@noInvites": {
+    "description": "Description"
+  },
+  "playtimeChooseTime": "[DE] Zeit auswählen",
+  "@playtimeChooseTime": {
+    "description": "Description"
+  },
+  "success": "[DE] Erfolg",
+  "@success": {
+    "description": "Description"
+  },
+  "undo": "[DE] Rückgängig",
+  "@undo": {
+    "description": "Description"
+  },
+  "opened": "[DE] Geöffnet",
+  "@opened": {
+    "description": "Description"
+  },
+  "createVirtualSession": "[DE] Virtuelle Sitzung erstellen",
+  "@createVirtualSession": {
+    "description": "Description"
+  },
+  "messageSentSuccessfully": "[DE] Nachricht erfolgreich gesendet",
+  "@messageSentSuccessfully": {
+    "description": "Description"
+  },
+  "redo": "[DE] Wiederholen",
+  "@redo": {
+    "description": "Description"
+  },
+  "next": "[DE] Weiter",
+  "@next": {
+    "description": "Description"
+  },
+  "search": "[DE] Suchen",
+  "@search": {
+    "description": "Description"
+  },
+  "cancelInviteConfirmation": "[DE] Einladung stornieren bestätigen?",
+  "@cancelInviteConfirmation": {
+    "description": "Description"
+  },
+  "created": "[DE] Erstellt",
+  "@created": {
+    "description": "Description"
+  },
+  "revokeAccess": "[DE] Zugriff widerrufen",
+  "@revokeAccess": {
+    "description": "Description"
+  },
+  "saveGroupForRecognition": "[DE] Gruppe für Erkennung speichern",
+  "@saveGroupForRecognition": {
+    "description": "Description"
+  },
+  "playtimeLiveScheduled": "[DE] Live-Spiel geplant",
+  "@playtimeLiveScheduled": {
+    "description": "Description"
+  },
+  "revokeAccessConfirmation": "[DE] Zugriff widerrufen bestätigen?",
+  "@revokeAccessConfirmation": {
+    "description": "Description"
+  },
+  "download": "[DE] Herunterladen",
+  "@download": {
+    "description": "Description"
+  },
+  "password": "[DE] Passwort",
+  "@password": {
+    "description": "Description"
+  },
+  "errorLoadingFamilyLinks": "[DE] Fehler beim Laden der Familienlinks",
+  "@errorLoadingFamilyLinks": {
+    "description": "Description"
+  },
+  "cancel": "[DE] Abbrechen",
+  "@cancel": {
+    "description": "Description"
+  },
+  "playtimeCreate": "[DE] Spiel erstellen",
+  "@playtimeCreate": {
+    "description": "Description"
+  },
+  "failedToActionPrivacyRequest": "[DE] Datenschutzanfrage konnte nicht verarbeitet werden",
+  "@failedToActionPrivacyRequest": {
+    "description": "Description"
+  },
+  "appTitle": "[DE] Appoint",
+  "@appTitle": {
+    "description": "Description"
+  },
+  "accept": "[DE] Akzeptieren",
+  "@accept": {
+    "description": "Description"
+  },
+  "playtimeModeVirtual": "[DE] Virtueller Modus",
+  "@playtimeModeVirtual": {
+    "description": "Description"
+  },
+  "playtimeDescription": "[DE] Spielbeschreibung",
+  "@playtimeDescription": {
+    "description": "Description"
+  },
+  "delete": "[DE] Löschen",
+  "@delete": {
+    "description": "Description"
+  },
+  "playtimeVirtualStarted": "[DE] Virtuelles Spiel gestartet",
+  "@playtimeVirtualStarted": {
+    "description": "Description"
+  },
+  "createYourFirstGame": "[DE] Erstellen Sie Ihr erstes Spiel",
+  "@createYourFirstGame": {
+    "description": "Description"
+  },
+  "participants": "[DE] Teilnehmer",
+  "@participants": {
+    "description": "Description"
+  },
+  "recipients": "[DE] Empfänger",
+  "@recipients": {
+    "description": "Description"
+  },
+  "noResults": "[DE] Keine Ergebnisse",
+  "@noResults": {
+    "description": "Description"
+  },
+  "yes": "[DE] Ja",
   "@yes": {
-    "description": "Yes button"
+    "description": "Description"
   },
-  "no": "No",
+  "invite": "[DE] Einladen",
+  "@invite": {
+    "description": "Description"
+  },
+  "playtimeModeLive": "[DE] Live-Modus",
+  "@playtimeModeLive": {
+    "description": "Description"
+  },
+  "done": "[DE] Fertig",
+  "@done": {
+    "description": "Description"
+  },
+  "defaultShareMessage": "[DE] Standard-Teilungsnachricht",
+  "@defaultShareMessage": {
+    "description": "Description"
+  },
+  "no": "[DE] Nein",
   "@no": {
-    "description": "No button"
+    "description": "Description"
+  },
+  "playtimeHub": "[DE] Spielezentrum",
+  "@playtimeHub": {
+    "description": "Description"
+  },
+  "createLiveSession": "[DE] Live-Sitzung erstellen",
+  "@createLiveSession": {
+    "description": "Description"
+  },
+  "enableNotifications": "[DE] Benachrichtigungen aktivieren",
+  "@enableNotifications": {
+    "description": "Description"
+  },
+  "invited": "[DE] Eingeladen",
+  "@invited": {
+    "description": "Description"
+  },
+  "content": "[DE] Inhalt",
+  "@content": {
+    "description": "Description"
+  },
+  "meetingSharedSuccessfully": "[DE] Meeting erfolgreich geteilt",
+  "@meetingSharedSuccessfully": {
+    "description": "Description"
+  },
+  "welcomeToPlaytime": "[DE] Willkommen bei Playtime",
+  "@welcomeToPlaytime": {
+    "description": "Description"
+  },
+  "viewAll": "[DE] Alle anzeigen",
+  "@viewAll": {
+    "description": "Description"
+  },
+  "playtimeVirtual": "[DE] Virtuelles Spiel",
+  "@playtimeVirtual": {
+    "description": "Description"
+  },
+  "staffScreenTBD": "[DE] Personal-Bildschirm (TBD)",
+  "@staffScreenTBD": {
+    "description": "Description"
+  },
+  "cut": "[DE] Ausschneiden",
+  "@cut": {
+    "description": "Description"
+  },
+  "inviteCancelledSuccessfully": "[DE] Einladung erfolgreich storniert",
+  "@inviteCancelledSuccessfully": {
+    "description": "Description"
+  },
+  "retry": "[DE] Wiederholen",
+  "@retry": {
+    "description": "Description"
+  },
+  "composeBroadcastMessage": "[DE] Rundnachricht verfassen",
+  "@composeBroadcastMessage": {
+    "description": "Description"
+  },
+  "sendNow": "[DE] Jetzt senden",
+  "@sendNow": {
+    "description": "Description"
+  },
+  "noGamesYet": "[DE] [DE] No games yet",
+  "@noGamesYet": {
+    "description": "Description"
+  },
+  "select": "[DE] Auswählen",
+  "@select": {
+    "description": "Description"
+  },
+  "about": "[DE] Über",
+  "@about": {
+    "description": "About navigation label"
+  },
+  "choose": "[DE] Wählen",
+  "@choose": {
+    "description": "Description"
+  },
+  "profile": "[DE] Profil",
+  "@profile": {
+    "description": "Description"
+  },
+  "removeChild": "[DE] Kind entfernen",
+  "@removeChild": {
+    "description": "Description"
+  },
+  "status": "[DE] Status",
+  "@status": {
+    "description": "Description"
+  },
+  "logout": "[DE] Abmelden",
+  "@logout": {
+    "description": "Description"
+  },
+  "paste": "[DE] Einfügen",
+  "@paste": {
+    "description": "Description"
+  },
+  "welcome": "[DE] Willkommen",
+  "@welcome": {
+    "description": "Description"
+  },
+  "playtimeCreateSession": "[DE] Spielsitzung erstellen",
+  "@playtimeCreateSession": {
+    "description": "Description"
+  },
+  "familyMembers": "[DE] Familienmitglieder",
+  "@familyMembers": {
+    "description": "Description"
+  },
+  "upload": "[DE] Hochladen",
+  "@upload": {
+    "description": "Description"
+  },
+  "upcomingSessions": "[DE] Anstehende Sitzungen",
+  "@upcomingSessions": {
+    "description": "Description"
+  },
+  "enterGroupName": "[DE] Gruppenname eingeben",
+  "@enterGroupName": {
+    "description": "Description"
+  },
+  "confirm": "[DE] Bestätigen",
+  "@confirm": {
+    "description": "Description"
+  },
+  "playtimeLive": "[DE] Live-Spiel",
+  "@playtimeLive": {
+    "description": "Description"
+  },
+  "errorLoadingInvites": "[DE] Fehler beim Laden der Einladungen",
+  "@errorLoadingInvites": {
+    "description": "Description"
+  },
+  "targetingFilters": "[DE] Zielgruppenfilter",
+  "@targetingFilters": {
+    "description": "Description"
+  },
+  "pickVideo": "[DE] Video auswählen",
+  "@pickVideo": {
+    "description": "Description"
+  },
+  "playtimeGameDeleted": "[DE] Spiel gelöscht",
+  "@playtimeGameDeleted": {
+    "description": "Description"
+  },
+  "scheduleForLater": "[DE] Für später planen",
+  "@scheduleForLater": {
+    "description": "Description"
+  },
+  "accessRevokedSuccessfully": "[DE] Zugriff erfolgreich widerrufen",
+  "@accessRevokedSuccessfully": {
+    "description": "Description"
+  },
+  "type": "[DE] Typ",
+  "@type": {
+    "description": "Description"
+  },
+  "checkingPermissions": "[DE] Berechtigungen prüfen",
+  "@checkingPermissions": {
+    "description": "Description"
+  },
+  "copy": "[DE] Kopieren",
+  "@copy": {
+    "description": "Description"
+  },
+  "yesCancel": "[DE] Ja, abbrechen",
+  "@yesCancel": {
+    "description": "Description"
+  },
+  "email": "[DE] E-Mail",
+  "@email": {
+    "description": "Description"
+  },
+  "shareOnWhatsApp": "[DE] Auf WhatsApp teilen",
+  "@shareOnWhatsApp": {
+    "description": "Description"
+  },
+  "notificationSettings": "[DE] Benachrichtigungseinstellungen",
+  "@notificationSettings": {
+    "description": "Description"
+  },
+  "myProfile": "[DE] Mein Profil",
+  "@myProfile": {
+    "description": "Description"
+  },
+  "revoke": "[DE] Widerrufen",
+  "@revoke": {
+    "description": "Description"
+  },
+  "noBroadcastMessages": "[DE] Keine Rundnachrichten",
+  "@noBroadcastMessages": {
+    "description": "Description"
+  },
+  "requestType": "[DE] Anfragetyp",
+  "@requestType": {
+    "description": "Description"
+  },
+  "notifications": "[DE] Benachrichtigungen",
+  "@notifications": {
+    "description": "Description"
+  },
+  "details": "[DE] Details",
+  "@details": {
+    "description": "Description"
+  },
+  "cancelInvite": "[DE] Einladung stornieren",
+  "@cancelInvite": {
+    "description": "Description"
+  },
+  "createNew": "[DE] [DE] Create New",
+  "@createNew": {
+    "description": "Description"
+  },
+  "settings": "[DE] Einstellungen",
+  "@settings": {
+    "description": "Description"
+  },
+  "playtimeReject": "[DE] Ablehnen",
+  "@playtimeReject": {
+    "description": "Description"
+  },
+  "errorLoadingProfile": "[DE] Fehler beim Laden des Profils",
+  "@errorLoadingProfile": {
+    "description": "Description"
+  },
+  "edit": "[DE] Bearbeiten",
+  "@edit": {
+    "description": "Description"
+  },
+  "add": "[DE] Hinzufügen",
+  "@add": {
+    "description": "Description"
+  },
+  "playtimeGameApproved": "[DE] Spiel genehmigt",
+  "@playtimeGameApproved": {
+    "description": "Description"
+  },
+  "forgotPassword": "[DE] Passwort vergessen?",
+  "@forgotPassword": {
+    "description": "Description"
+  },
+  "familyDashboard": "[DE] Familien-Dashboard",
+  "@familyDashboard": {
+    "description": "Description"
+  },
+  "loading": "[DE] Lädt...",
+  "@loading": {
+    "description": "Description"
+  },
+  "quickActions": "[DE] Schnellaktionen",
+  "@quickActions": {
+    "description": "Description"
+  },
+  "playtimeTitle": "[DE] Spieltitel",
+  "@playtimeTitle": {
+    "description": "Description"
+  },
+  "otpResentSuccessfully": "[DE] OTP erfolgreich erneut gesendet",
+  "@otpResentSuccessfully": {
+    "description": "Description"
+  },
+  "errorCheckingPermissions": "[DE] Fehler beim Prüfen der Berechtigungen",
+  "@errorCheckingPermissions": {
+    "description": "Description"
+  },
+  "clientScreenTBD": "[DE] Client-Bildschirm (TBD)",
+  "@clientScreenTBD": {
+    "description": "Description"
+  },
+  "fcmToken": "[DE] FCM-Token",
+  "@fcmToken": {
+    "description": "Description"
+  },
+  "pickImage": "[DE] Bild auswählen",
+  "@pickImage": {
+    "description": "Description"
+  },
+  "previous": "[DE] Zurück",
+  "@previous": {
+    "description": "Description"
+  },
+  "noProfileFound": "[DE] Kein Profil gefunden",
+  "@noProfileFound": {
+    "description": "Description"
+  },
+  "noFamilyMembersYet": "[DE] Noch keine Familienmitglieder",
+  "@noFamilyMembersYet": {
+    "description": "Description"
+  },
+  "mediaOptional": "[DE] Medien optional",
+  "@mediaOptional": {
+    "description": "Description"
+  },
+  "messageSavedSuccessfully": "[DE] Nachricht erfolgreich gespeichert",
+  "@messageSavedSuccessfully": {
+    "description": "Description"
+  },
+  "scheduledFor": "[DE] Geplant für",
+  "@scheduledFor": {
+    "description": "Description"
+  },
+  "dashboard": "[DE] Dashboard",
+  "@dashboard": {
+    "description": "Description"
+  },
+  "noPermissionForBroadcast": "[DE] Keine Berechtigung für Rundsendung",
+  "@noPermissionForBroadcast": {
+    "description": "Description"
+  },
+  "playtimeAdminPanelTitle": "[DE] Spiel-Admin-Panel",
+  "@playtimeAdminPanelTitle": {
+    "description": "Localization key for: Playtime Games – Admin"
+  },
+  "inviteDetail": "[DE] Einladungsdetails",
+  "@inviteDetail": {
+    "description": "Description"
+  },
+  "scheduled": "[DE] Geplant",
+  "@scheduled": {
+    "description": "Description"
+  },
+  "failedToResendOtp": "[DE] OTP konnte nicht erneut gesendet werden",
+  "@failedToResendOtp": {
+    "description": "Description"
+  },
+  "scheduling": "[DE] Planung",
+  "@scheduling": {
+    "description": "Description"
+  },
+  "errorSavingMessage": "[DE] Fehler beim Speichern der Nachricht",
+  "@errorSavingMessage": {
+    "description": "Description"
+  },
+  "save": "[DE] Speichern",
+  "@save": {
+    "description": "Description"
+  },
+  "playtimeApprove": "[DE] Genehmigen",
+  "@playtimeApprove": {
+    "description": "Description"
+  },
+  "createYourFirstSession": "[DE] Erstellen Sie Ihre erste Sitzung",
+  "@createYourFirstSession": {
+    "description": "Description"
+  },
+  "playtimeGameRejected": "[DE] Spiel abgelehnt",
+  "@playtimeGameRejected": {
+    "description": "Description"
+  },
+  "failedToRevokeAccess": "[DE] Zugriff konnte nicht widerrufen werden",
+  "@failedToRevokeAccess": {
+    "description": "Description"
+  },
+  "recentGames": "[DE] Letzte Spiele",
+  "@recentGames": {
+    "description": "Description"
+  },
+  "customizeMessage": "[DE] Nachricht anpassen",
+  "@customizeMessage": {
+    "description": "Description"
+  },
+  "failedToCancelInvite": "[DE] Einladung konnte nicht storniert werden",
+  "@failedToCancelInvite": {
+    "description": "Description"
+  },
+  "errorSendingMessage": "[DE] Fehler beim Senden der Nachricht",
+  "@errorSendingMessage": {
+    "description": "Description"
+  },
+  "confirmPassword": "[DE] Passwort bestätigen",
+  "@confirmPassword": {
+    "description": "Description"
+  },
+  "errorLoadingPrivacyRequests": "[DE] Fehler beim Laden der Datenschutzanfragen",
+  "@errorLoadingPrivacyRequests": {
+    "description": "Description"
+  },
+  "connectedChildren": "[DE] Verbundene Kinder",
+  "@connectedChildren": {
+    "description": "Description"
+  },
+  "share": "[DE] Teilen",
+  "@share": {
+    "description": "Description"
+  },
+  "playtimeEnterGameName": "[DE] Spielname eingeben",
+  "@playtimeEnterGameName": {
+    "description": "Description"
+  },
+  "pleaseLoginForFamilyFeatures": "[DE] Bitte melden Sie sich an, um auf Familienfunktionen zuzugreifen",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Description"
+  },
+  "myInvites": "[DE] Meine Einladungen",
+  "@myInvites": {
+    "description": "Description"
+  },
+  "createGame": "[DE] [DE] Create Game",
+  "@createGame": {
+    "description": "Description"
+  },
+  "groupNameOptional": "[DE] Gruppenname (optional)",
+  "@groupNameOptional": {
+    "description": "Description"
+  },
+  "playtimeNoSessions": "[DE] Keine Sitzungen",
+  "@playtimeNoSessions": {
+    "description": "Description"
+  },
+  "adminScreenTBD": "[DE] Admin-Bildschirm (TBD)",
+  "@adminScreenTBD": {
+    "description": "Localization key for: Admin screen coming soon"
+  },
+  "playtimeParentDashboardTitle": "[DE] Eltern-Dashboard",
+  "@playtimeParentDashboardTitle": {
+    "description": "Description"
+  },
+  "close": "[DE] Schließen",
+  "@close": {
+    "description": "Description"
+  },
+  "knownGroupDetected": "[DE] Bekannte Gruppe erkannt",
+  "@knownGroupDetected": {
+    "description": "Description"
+  },
+  "back": "[DE] Zurück",
+  "@back": {
+    "description": "Description"
+  },
+  "playtimeChooseGame": "[DE] Spiel auswählen",
+  "@playtimeChooseGame": {
+    "description": "Description"
+  },
+  "managePermissions": "[DE] Berechtigungen verwalten",
+  "@managePermissions": {
+    "description": "Description"
+  },
+  "pollOptions": "[DE] Umfrageoptionen",
+  "@pollOptions": {
+    "description": "Description"
+  },
+  "clicked": "[DE] Geklickt",
+  "@clicked": {
+    "description": "Description"
+  },
+  "link": "[DE] Link",
+  "@link": {
+    "description": "Description"
+  },
+  "meetingReadyMessage": "[DE] Meeting-Bereitschaftsnachricht",
+  "@meetingReadyMessage": {
+    "description": "Description"
+  },
+  "pendingInvites": "[DE] Ausstehende Einladungen",
+  "@pendingInvites": {
+    "description": "Description"
+  },
+  "statusColon": "[DE] Status:",
+  "@statusColon": {
+    "description": "Description"
+  },
+  "pleaseLoginToViewProfile": "[DE] Bitte melden Sie sich an, um das Profil zu sehen",
+  "@pleaseLoginToViewProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "adminMetrics": "[DE] Admin Metrics",
+  "@adminMetrics": {
+    "description": "Localization key for: Admin Metrics"
+  },
+  "overview": "[DE] Overview",
+  "@overview": {
+    "description": "Description"
+  },
+  "bookings": "[DE] Bookings",
+  "@bookings": {
+    "description": "Description"
+  },
+  "users": "[DE] Benutzer",
+  "@users": {
+    "description": "Description"
+  },
+  "revenue": "[DE] Einnahmen",
+  "@revenue": {
+    "description": "Description"
+  },
+  "contentLibrary": "[DE] Content Library",
+  "@contentLibrary": {
+    "description": "Localization key for: Content Library"
+  },
+  "authErrorUserNotFound": "[DE] No account found with this email address.",
+  "@authErrorUserNotFound": {
+    "description": "Localization key for: No account found with this email address."
+  },
+  "authErrorWrongPassword": "[DE] Incorrect password. Please try again.",
+  "@authErrorWrongPassword": {
+    "description": "Localization key for: Incorrect password. Please try again."
+  },
+  "authErrorInvalidEmail": "[DE] Please enter a valid email address.",
+  "@authErrorInvalidEmail": {
+    "description": "Localization key for: Please enter a valid email address."
+  },
+  "authErrorUserDisabled": "[DE] This account has been disabled. Please contact support.",
+  "@authErrorUserDisabled": {
+    "description": "Localization key for: This account has been disabled. Please contact support."
+  },
+  "authErrorWeakPassword": "[DE] Password is too weak. Please choose a stronger password.",
+  "@authErrorWeakPassword": {
+    "description": "Localization key for: Password is too weak. Please choose a stronger password."
+  },
+  "authErrorEmailAlreadyInUse": "[DE] An account with this email already exists.",
+  "@authErrorEmailAlreadyInUse": {
+    "description": "Localization key for: An account with this email already exists."
+  },
+  "authErrorTooManyRequests": "[DE] Too many failed attempts. Please try again later.",
+  "@authErrorTooManyRequests": {
+    "description": "Localization key for: Too many failed attempts. Please try again later."
+  },
+  "authErrorOperationNotAllowed": "[DE] This sign-in method is not enabled. Please contact support.",
+  "@authErrorOperationNotAllowed": {
+    "description": "Localization key for: This sign-in method is not enabled. Please contact support."
+  },
+  "authErrorInvalidCredential": "[DE] Invalid credentials. Please try again.",
+  "@authErrorInvalidCredential": {
+    "description": "Localization key for: Invalid credentials. Please try again."
+  },
+  "REDACTED_TOKEN": "[DE] An account already exists with this email using a different sign-in method.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: An account already exists with this email using a different sign-in method."
+  },
+  "authErrorCredentialAlreadyInUse": "[DE] These credentials are already associated with another account.",
+  "@authErrorCredentialAlreadyInUse": {
+    "description": "Localization key for: These credentials are already associated with another account."
+  },
+  "authErrorNetworkRequestFailed": "[DE] Network error. Please check your connection and try again.",
+  "@authErrorNetworkRequestFailed": {
+    "description": "Localization key for: Network error. Please check your connection and try again."
+  },
+  "socialAccountConflictTitle": "Social-Account-Konflikt",
+  "@socialAccountConflictTitle": {
+    "description": "Localization key for: Account Already Exists"
+  },
+  "socialAccountConflictMessage": "Es scheint bereits ein Konto zu existieren",
+  "@socialAccountConflictMessage": {
+    "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
+  },
+  "linkAccounts": "Konten verknüpfen",
+  "@linkAccounts": {
+    "description": "Localization key for: Link Accounts"
+  },
+  "signInWithExistingMethod": "Mit vorhandener Methode anmelden",
+  "@signInWithExistingMethod": {
+    "description": "Localization key for: Sign in with existing method"
+  },
+  "authErrorRequiresRecentLogin": "[DE] Please log in again to perform this operation.",
+  "@authErrorRequiresRecentLogin": {
+    "description": "Localization key for: Please log in again to perform this operation."
+  },
+  "authErrorAppNotAuthorized": "[DE] This app is not authorized to use Firebase Authentication.",
+  "@authErrorAppNotAuthorized": {
+    "description": "Localization key for: This app is not authorized to use Firebase Authentication."
+  },
+  "REDACTED_TOKEN": "[DE] The verification code is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The verification code is invalid."
+  },
+  "authErrorInvalidVerificationId": "[DE] The verification ID is invalid.",
+  "@authErrorInvalidVerificationId": {
+    "description": "Localization key for: The verification ID is invalid."
+  },
+  "REDACTED_TOKEN": "[DE] Please enter the verification code.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Please enter the verification code."
+  },
+  "authErrorMissingVerificationId": "[DE] Missing verification ID.",
+  "@authErrorMissingVerificationId": {
+    "description": "Localization key for: Missing verification ID."
+  },
+  "authErrorInvalidPhoneNumber": "[DE] The phone number is invalid.",
+  "@authErrorInvalidPhoneNumber": {
+    "description": "Localization key for: The phone number is invalid."
+  },
+  "authErrorMissingPhoneNumber": "[DE] Please enter a phone number.",
+  "@authErrorMissingPhoneNumber": {
+    "description": "Localization key for: Please enter a phone number."
+  },
+  "authErrorQuotaExceeded": "[DE] The SMS quota for this project has been exceeded. Please try again later.",
+  "@authErrorQuotaExceeded": {
+    "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
+  },
+  "authErrorCodeExpired": "[DE] The verification code has expired. Please request a new one.",
+  "@authErrorCodeExpired": {
+    "description": "Localization key for: The verification code has expired. Please request a new one."
+  },
+  "authErrorSessionExpired": "[DE] Your session has expired. Please log in again.",
+  "@authErrorSessionExpired": {
+    "description": "Localization key for: Your session has expired. Please log in again."
+  },
+  "REDACTED_TOKEN": "[DE] Multi-factor authentication is required.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Multi-factor authentication is required."
+  },
+  "REDACTED_TOKEN": "[DE] Multi-factor information not found.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Multi-factor information not found."
+  },
+  "REDACTED_TOKEN": "[DE] Missing multi-factor session.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Missing multi-factor session."
+  },
+  "REDACTED_TOKEN": "[DE] Invalid multi-factor session.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Invalid multi-factor session."
+  },
+  "REDACTED_TOKEN": "[DE] This second factor is already in use.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: This second factor is already in use."
+  },
+  "REDACTED_TOKEN": "[DE] Maximum number of second factors exceeded.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Maximum number of second factors exceeded."
+  },
+  "authErrorUnsupportedFirstFactor": "[DE] Unsupported first factor for multi-factor authentication.",
+  "@authErrorUnsupportedFirstFactor": {
+    "description": "Localization key for: Unsupported first factor for multi-factor authentication."
+  },
+  "REDACTED_TOKEN": "[DE] Email change requires verification.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Email change requires verification."
+  },
+  "REDACTED_TOKEN": "[DE] This phone number is already in use.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: This phone number is already in use."
+  },
+  "authErrorInvalidPassword": "[DE] The password is invalid or too weak.",
+  "@authErrorInvalidPassword": {
+    "description": "Localization key for: The password is invalid or too weak."
+  },
+  "authErrorInvalidIdToken": "[DE] The ID token is invalid.",
+  "@authErrorInvalidIdToken": {
+    "description": "Localization key for: The ID token is invalid."
+  },
+  "authErrorIdTokenExpired": "[DE] The ID token has expired.",
+  "@authErrorIdTokenExpired": {
+    "description": "Localization key for: The ID token has expired."
+  },
+  "authErrorIdTokenRevoked": "[DE] The ID token has been revoked.",
+  "@authErrorIdTokenRevoked": {
+    "description": "Localization key for: The ID token has been revoked."
+  },
+  "authErrorInternalError": "[DE] An internal error occurred. Please try again.",
+  "@authErrorInternalError": {
+    "description": "Localization key for: An internal error occurred. Please try again."
+  },
+  "authErrorInvalidArgument": "[DE] An invalid argument was provided.",
+  "@authErrorInvalidArgument": {
+    "description": "Localization key for: An invalid argument was provided."
+  },
+  "authErrorInvalidClaims": "[DE] Invalid custom claims provided.",
+  "@authErrorInvalidClaims": {
+    "description": "Localization key for: Invalid custom claims provided."
+  },
+  "authErrorInvalidContinueUri": "[DE] The continue URL is invalid.",
+  "@authErrorInvalidContinueUri": {
+    "description": "Localization key for: The continue URL is invalid."
+  },
+  "authErrorInvalidCreationTime": "[DE] The creation time is invalid.",
+  "@authErrorInvalidCreationTime": {
+    "description": "Localization key for: The creation time is invalid."
+  },
+  "authErrorInvalidDisabledField": "[DE] The disabled field value is invalid.",
+  "@authErrorInvalidDisabledField": {
+    "description": "Localization key for: The disabled field value is invalid."
+  },
+  "authErrorInvalidDisplayName": "[DE] The display name is invalid.",
+  "@authErrorInvalidDisplayName": {
+    "description": "Localization key for: The display name is invalid."
+  },
+  "REDACTED_TOKEN": "[DE] The dynamic link domain is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The dynamic link domain is invalid."
+  },
+  "authErrorInvalidEmailVerified": "[DE] The email verified value is invalid.",
+  "@authErrorInvalidEmailVerified": {
+    "description": "Localization key for: The email verified value is invalid."
+  },
+  "authErrorInvalidHashAlgorithm": "[DE] The hash algorithm is invalid.",
+  "@authErrorInvalidHashAlgorithm": {
+    "description": "Localization key for: The hash algorithm is invalid."
+  },
+  "authErrorInvalidHashBlockSize": "[DE] The hash block size is invalid.",
+  "@authErrorInvalidHashBlockSize": {
+    "description": "Localization key for: The hash block size is invalid."
+  },
+  "REDACTED_TOKEN": "[DE] The hash derived key length is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The hash derived key length is invalid."
+  },
+  "authErrorInvalidHashKey": "[DE] The hash key is invalid.",
+  "@authErrorInvalidHashKey": {
+    "description": "Localization key for: The hash key is invalid."
+  },
+  "authErrorInvalidHashMemoryCost": "[DE] The hash memory cost is invalid.",
+  "@authErrorInvalidHashMemoryCost": {
+    "description": "Localization key for: The hash memory cost is invalid."
+  },
+  "REDACTED_TOKEN": "[DE] The hash parallelization is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The hash parallelization is invalid."
+  },
+  "authErrorInvalidHashRounds": "[DE] The hash rounds value is invalid.",
+  "@authErrorInvalidHashRounds": {
+    "description": "Localization key for: The hash rounds value is invalid."
+  },
+  "REDACTED_TOKEN": "[DE] The hash salt separator is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The hash salt separator is invalid."
+  },
+  "authErrorInvalidLastSignInTime": "[DE] The last sign-in time is invalid.",
+  "@authErrorInvalidLastSignInTime": {
+    "description": "Localization key for: The last sign-in time is invalid."
+  },
+  "authErrorInvalidPageToken": "[DE] The page token is invalid.",
+  "@authErrorInvalidPageToken": {
+    "description": "Localization key for: The page token is invalid."
+  },
+  "authErrorInvalidProviderData": "[DE] The provider data is invalid.",
+  "@authErrorInvalidProviderData": {
+    "description": "Localization key for: The provider data is invalid."
+  },
+  "authErrorInvalidProviderId": "[DE] The provider ID is invalid.",
+  "@authErrorInvalidProviderId": {
+    "description": "Localization key for: The provider ID is invalid."
+  },
+  "REDACTED_TOKEN": "[DE] The session cookie duration is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The session cookie duration is invalid."
+  },
+  "authErrorInvalidUid": "[DE] The UID is invalid.",
+  "@authErrorInvalidUid": {
+    "description": "Localization key for: The UID is invalid."
+  },
+  "authErrorInvalidUserImport": "[DE] The user import record is invalid.",
+  "@authErrorInvalidUserImport": {
+    "description": "Localization key for: The user import record is invalid."
+  },
+  "REDACTED_TOKEN": "[DE] Maximum user import count exceeded.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Maximum user import count exceeded."
+  },
+  "authErrorMissingAndroidPkgName": "[DE] Missing Android package name.",
+  "@authErrorMissingAndroidPkgName": {
+    "description": "Localization key for: Missing Android package name."
+  },
+  "authErrorMissingContinueUri": "[DE] Missing continue URL.",
+  "@authErrorMissingContinueUri": {
+    "description": "Localization key for: Missing continue URL."
+  },
+  "authErrorMissingHashAlgorithm": "[DE] Missing hash algorithm.",
+  "@authErrorMissingHashAlgorithm": {
+    "description": "Localization key for: Missing hash algorithm."
+  },
+  "authErrorMissingIosBundleId": "[DE] Missing iOS bundle ID.",
+  "@authErrorMissingIosBundleId": {
+    "description": "Localization key for: Missing iOS bundle ID."
+  },
+  "authErrorMissingUid": "[DE] Missing UID.",
+  "@authErrorMissingUid": {
+    "description": "Localization key for: Missing UID."
+  },
+  "REDACTED_TOKEN": "[DE] Missing OAuth client secret.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Missing OAuth client secret."
+  },
+  "authErrorProjectNotFound": "[DE] Firebase project not found.",
+  "@authErrorProjectNotFound": {
+    "description": "Localization key for: Firebase project not found."
+  },
+  "authErrorReservedClaims": "[DE] Reserved claims provided.",
+  "@authErrorReservedClaims": {
+    "description": "Localization key for: Reserved claims provided."
+  },
+  "authErrorSessionCookieExpired": "[DE] Session cookie has expired.",
+  "@authErrorSessionCookieExpired": {
+    "description": "Localization key for: Session cookie has expired."
+  },
+  "authErrorSessionCookieRevoked": "[DE] Session cookie has been revoked.",
+  "@authErrorSessionCookieRevoked": {
+    "description": "Localization key for: Session cookie has been revoked."
+  },
+  "authErrorUidAlreadyExists": "[DE] The UID is already in use.",
+  "@authErrorUidAlreadyExists": {
+    "description": "Localization key for: The UID is already in use."
+  },
+  "REDACTED_TOKEN": "[DE] The continue URL domain is not whitelisted.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The continue URL domain is not whitelisted."
+  },
+  "authErrorUnknown": "[DE] An unknown authentication error occurred.",
+  "@authErrorUnknown": {
+    "description": "Localization key for: An unknown authentication error occurred."
+  },
+  "checkingPermissions1": "Berechtigungen prüfen...",
+  "@checkingPermissions1": {
+    "description": "Localization key for: Checking permissions..."
+  },
+  "paymentSuccessful": "Zahlung erfolgreich",
+  "@paymentSuccessful": {
+    "description": "Localization key for: Payment Successful!"
+  },
+  "businessAvailability": "Business-Verfügbarkeit",
+  "@businessAvailability": {
+    "description": "Localization key for: Business Availability"
+  },
+  "send": "Senden",
+  "@send": {
+    "description": "Localization key for: Send"
+  },
+  "newNotificationPayloadtitle": "Neue Benachrichtigung Titel: {title}",
+  "@newNotificationPayloadtitle": {
+    "description": "Localization key for: New notification: {payloadTitle}"
+  },
+  "gameList": "Spieleliste",
+  "@gameList": {
+    "description": "Localization key for: Game List"
+  },
+  "deleteAvailability": "Verfügbarkeit löschen",
+  "@deleteAvailability": {
+    "description": "Localization key for: Delete Availability"
+  },
+  "connectToGoogleCalendar": "Mit Google Calendar verbinden",
+  "@connectToGoogleCalendar": {
+    "description": "Localization key for: Connect to Google Calendar"
+  },
+  "adminFreeAccess": "[DE] Admin Free Access",
+  "@adminFreeAccess": {
+    "description": "Localization key for: Admin Free Access"
+  },
+  "emailProfileemail": "Profil-E-Mail: {email}",
+  "@emailProfileemail": {
+    "description": "Localization key for: Email: {profileEmail}"
+  },
+  "calendar": "Kalender",
+  "@calendar": {
+    "description": "Localization key for: Calendar"
+  },
+  "upload1": "[DE] Hochladen",
+  "@upload1": {
+    "description": "Localization key for: Upload"
+  },
+  "resolved": "Gelöst",
+  "@resolved": {
+    "description": "Localization key for: Resolved"
+  },
+  "keepSubscription": "Abonnement behalten",
+  "@keepSubscription": {
+    "description": "Localization key for: Keep Subscription"
+  },
+  "REDACTED_TOKEN": "[DE] Virtuelle Session erstellt, Freunde werden eingeladen",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Virtual session created! Inviting friends..."
+  },
+  "noEventsScheduledForToday": "Keine Ereignisse für heute geplant",
+  "@noEventsScheduledForToday": {
+    "description": "Localization key for: No events scheduled for today"
+  },
+  "exportData": "Daten exportieren",
+  "@exportData": {
+    "description": "Localization key for: Export Data"
+  },
+  "rewards": "[DE] Rewards (German)",
+  "@rewards": {
+    "description": "Localization key for: Rewards"
+  },
+  "time": "[DE] Time (German)",
+  "@time": {
+    "description": "Localization key for: Time"
+  },
+  "userCid": "[DE] Benutzer-ID: {cid}",
+  "@userCid": {
+    "description": "Localization key for: User {id}"
+  },
+  "noSlots": "[DE] No slots (German)",
+  "@noSlots": {
+    "description": "Localization key for: No slots"
+  },
+  "signIn": "[DE] Sign In (German)",
+  "@signIn": {
+    "description": "Localization key for: Sign In"
+  },
+  "homeFeedScreen": "[DE] Home Feed Screen (German)",
+  "@homeFeedScreen": {
+    "description": "Localization key for: Home Feed Screen"
+  },
+  "selectLocation": "[DE] Select Location (German)",
+  "@selectLocation": {
+    "description": "Localization key for: Select Location"
+  },
+  "noTicketsYet": "[DE] No tickets yet (German)",
+  "@noTicketsYet": {
+    "description": "Localization key for: No tickets yet"
+  },
+  "meetingSharedSuccessfully1": "Meeting erfolgreich geteilt",
+  "@meetingSharedSuccessfully1": {
+    "description": "Localization key for: Meeting shared successfully!"
+  },
+  "studioProfile": "Studio-Profil",
+  "@studioProfile": {
+    "description": "Localization key for: Studio Profile"
+  },
+  "subscriptionUnavailable": "[DE] Subscription unavailable (German)",
+  "@subscriptionUnavailable": {
+    "description": "Localization key for: Subscription unavailable"
+  },
+  "confirmBooking": "[DE] Confirm Booking (German)",
+  "@confirmBooking": {
+    "description": "Localization key for: Confirm Booking"
+  },
+  "failedToUpdatePermissionE": "[DE] Failed to update permission: $e (German)",
+  "@failedToUpdatePermissionE": {
+    "description": "Localization key for: Failed to update permission: $e"
+  },
+  "reject": "[DE] Reject (German)",
+  "@reject": {
+    "description": "Localization key for: Reject"
+  },
+  "REDACTED_TOKEN": "[DE] Ambassador Status: {ambassadorStatus} (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
+  },
+  "noProviders": "[DE] No providers",
+  "@noProviders": {
+    "description": "Localization key for: No providers"
+  },
+  "checkingSubscription": "[DE] Checking subscription... (German)",
+  "@checkingSubscription": {
+    "description": "Localization key for: Checking subscription..."
+  },
+  "errorPickingImageE": "[DE] Error picking image: $e (German)",
+  "@errorPickingImageE": {
+    "description": "Localization key for: Error picking image: $e"
+  },
+  "noContentAvailableYet": "[DE] No content available yet (German)",
+  "@noContentAvailableYet": {
+    "description": "Localization key for: No content available yet"
+  },
+  "resolve": "[DE] Resolve (German)",
+  "@resolve": {
+    "description": "Localization key for: Resolve"
+  },
+  "errorLoadingSurveysError": "[DE] Error loading surveys: $error (German)",
+  "@errorLoadingSurveysError": {
+    "description": "Localization key for: Error loading surveys: $error"
+  },
+  "errorLogerrormessage": "[DE] Error: {errorMessage}",
+  "@errorLogerrormessage": {
+    "description": "Localization key for: Error: {errorMessage}"
+  },
+  "getHelpWithYourAccount": "[DE] Get help with your account (German)",
+  "@getHelpWithYourAccount": {
+    "description": "Localization key for: Get help with your account"
+  },
+  "pay": "[DE] Pay (German)",
+  "@pay": {
+    "description": "Localization key for: Pay"
+  },
+  "noOrganizations": "[DE] Keine Organisationen",
+  "@noOrganizations": {
+    "description": "Localization key for: No organizations"
+  },
+  "meetingDetails": "Meeting-Details",
+  "@meetingDetails": {
+    "description": "Localization key for: Meeting Details"
+  },
+  "errorLoadingAppointments": "[DE] Error loading appointments (German)",
+  "@errorLoadingAppointments": {
+    "description": "Localization key for: Error loading appointments"
+  },
+  "changesSavedSuccessfully": "[DE] Changes saved successfully! (German)",
+  "@changesSavedSuccessfully": {
+    "description": "Localization key for: Changes saved successfully!"
+  },
+  "createNewInvoice": "[DE] Create New Invoice (German)",
+  "@createNewInvoice": {
+    "description": "Localization key for: Create New Invoice"
+  },
+  "profileNotFound": "Profil nicht gefunden",
+  "@profileNotFound": {
+    "description": "Localization key for: Profile not found."
+  },
+  "errorConfirmingPaymentE": "[DE] Error confirming payment: $e (German)",
+  "@errorConfirmingPaymentE": {
+    "description": "Localization key for: Error confirming payment: $e"
+  },
+  "inviteFriends": "[DE] Invite Friends (German)",
+  "@inviteFriends": {
+    "description": "Localization key for: Invite Friends"
+  },
+  "profileSaved": "[DE] Profile saved! (German)",
+  "@profileSaved": {
+    "description": "Localization key for: Profile saved!"
+  },
+  "REDACTED_TOKEN": "Buchungsbenachrichtigungen per E-Mail erhalten",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Receive booking notifications via email"
+  },
+  "valuetointk": "[DE] Wert zu Integer: {k}",
+  "@valuetointk": {
+    "description": "Localization key for: \\${value}K"
+  },
+  "deleteAccount": "[DE] Delete Account (German)",
+  "@deleteAccount": {
+    "description": "Localization key for: Delete Account"
+  },
+  "profile1": "Profil",
+  "@profile1": {
+    "description": "Localization key for: Profile"
+  },
+  "businessOnboarding": "[DE] Business Onboarding (German)",
+  "@businessOnboarding": {
+    "description": "Localization key for: Business Onboarding"
+  },
+  "addNewClient": "[DE] Add New Client (German)",
+  "@addNewClient": {
+    "description": "Localization key for: Add New Client"
+  },
+  "darkMode": "[DE] Dark Mode (German)",
+  "@darkMode": {
+    "description": "Localization key for: Dark Mode"
+  },
+  "addProvider": "[DE] Add Provider",
+  "@addProvider": {
+    "description": "Localization key for: Add Provider"
+  },
+  "noRouteDefinedForStateuripath": "[DE] No route defined for {path}",
+  "@noRouteDefinedForStateuripath": {
+    "description": "Localization key for: No route defined for {path}"
+  },
+  "REDACTED_TOKEN": "[DE] Du erhältst in Kürze eine Bestätigungs-E-Mail",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: You will receive a confirmation email shortly."
+  },
+  "addQuestion": "[DE] Add Question (German)",
+  "@addQuestion": {
+    "description": "Localization key for: Add Question"
+  },
+  "privacyPolicy": "[DE] Privacy Policy (German)",
+  "@privacyPolicy": {
+    "description": "Localization key for: Privacy Policy"
+  },
+  "branchesLengthBranches": "[DE] {branchCount} branches (German)",
+  "@branchesLengthBranches": {
+    "description": "Localization key for: {branchCount} branches"
+  },
+  "join": "[DE] Join (German)",
+  "@join": {
+    "description": "Localization key for: Join"
+  },
+  "businessSubscription": "[DE] Business Subscription (German)",
+  "@businessSubscription": {
+    "description": "Localization key for: Business Subscription"
+  },
+  "myInvites1": "[DE] My Invites (German)",
+  "@myInvites1": {
+    "description": "Localization key for: My Invites"
+  },
+  "providers": "[DE] Providers",
+  "@providers": {
+    "description": "Localization key for: Providers"
+  },
+  "surveyManagement": "[DE] Survey Management (German)",
+  "@surveyManagement": {
+    "description": "Localization key for: Survey Management"
+  },
+  "pleaseEnterAValidEmailOrPhone": "[DE] Please enter a valid email or phone",
+  "@pleaseEnterAValidEmailOrPhone": {
+    "description": "Localization key for: Please enter a valid email or phone"
+  },
+  "noRoomsFoundAddYourFirstRoom": "[DE] No rooms found. Add your first room! (German)",
+  "@noRoomsFoundAddYourFirstRoom": {
+    "description": "Localization key for: No rooms found. Add your first room!"
+  },
+  "readOurPrivacyPolicy": "[DE] Read our privacy policy (German)",
+  "@readOurPrivacyPolicy": {
+    "description": "Localization key for: Read our privacy policy"
+  },
+  "couldNotOpenPrivacyPolicy": "[DE] Could not open privacy policy (German)",
+  "@couldNotOpenPrivacyPolicy": {
+    "description": "Localization key for: Could not open privacy policy"
+  },
+  "refresh1": "[DE] Refresh (German)",
+  "@refresh1": {
+    "description": "Localization key for: Refresh"
+  },
+  "roomUpdatedSuccessfully": "[DE] Room updated successfully! (German)",
+  "@roomUpdatedSuccessfully": {
+    "description": "Localization key for: Room updated successfully!"
+  },
+  "contentDetail": "[DE] Content Detail (German)",
+  "@contentDetail": {
+    "description": "Localization key for: Content Detail"
+  },
+  "cancelSubscription": "[DE] Cancel Subscription (German)",
+  "@cancelSubscription": {
+    "description": "Localization key for: Cancel Subscription"
+  },
+  "REDACTED_TOKEN": "[DE] Successfully registered as Ambassador! (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Successfully registered as Ambassador!"
+  },
+  "save1": "[DE] Save (German)",
+  "@save1": {
+    "description": "Localization key for: Save"
+  },
+  "copy1": "[DE] Copy (German)",
+  "@copy1": {
+    "description": "Localization key for: Copy"
+  },
+  "failedToSendInvitationE": "[DE] Failed to send invitation: $e (German)",
+  "@failedToSendInvitationE": {
+    "description": "Localization key for: Failed to send invitation: $e"
+  },
+  "surveyScore": "[DE] Survey Score (German)",
+  "@surveyScore": {
+    "description": "Localization key for: Survey Score"
+  },
+  "userUserid": "[DE] Benutzer: {userId}",
+  "@userUserid": {
+    "description": "Localization key for: User $userId"
+  },
+  "noAppointmentsFound": "[DE] No appointments found. (German)",
+  "@noAppointmentsFound": {
+    "description": "Localization key for: No appointments found."
+  },
+  "responseDetail": "[DE] Response Detail (German)",
+  "@responseDetail": {
+    "description": "Localization key for: Response Detail"
+  },
+  "REDACTED_TOKEN": "REDACTED_TOKEN - Bald verfügbar",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Verification Screen - Coming Soon"
+  },
+  "REDACTED_TOKEN": "Business-Profil erfolgreich aktiviert",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business profile activated successfully!"
+  },
+  "failedToStartProSubscriptionE": "[DE] Failed to start Pro subscription: $e (German)",
+  "@failedToStartProSubscriptionE": {
+    "description": "Localization key for: Failed to start Pro subscription: $e"
+  },
+  "REDACTED_TOKEN": "[DE] Business Dashboard Entry Screen - Coming Soon (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
+  },
+  "contentFilter": "[DE] Content Filter (German)",
+  "@contentFilter": {
+    "description": "Localization key for: Content Filter"
+  },
+  "helpSupport": "[DE] Help & Support (German)",
+  "@helpSupport": {
+    "description": "Localization key for: Help & Support"
+  },
+  "editRoom": "[DE] Edit Room (German)",
+  "@editRoom": {
+    "description": "Localization key for: Edit Room"
+  },
+  "appointmentApptid": "[DE] Appointment: {appointmentId}",
+  "@appointmentApptid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "deviceLogdeviceinfo": "[DE] Device: {deviceInfo}",
+  "@deviceLogdeviceinfo": {
+    "description": "Localization key for: Device: {deviceInfo}"
+  },
+  "REDACTED_TOKEN": "[DE] Business CRM Entry Screen - Coming Soon (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
+  },
+  "adminDashboard": "[DE] Admin Dashboard",
+  "@adminDashboard": {
+    "description": "Localization key for: Admin Dashboard"
+  },
+  "orgmemberidslengthMembers": "[DE] {memberCount} members",
+  "@orgmemberidslengthMembers": {
+    "description": "Localization key for: {memberCount} members"
+  },
+  "errorLoadingDashboardError": "[DE] Error loading dashboard: $error (German)",
+  "@errorLoadingDashboardError": {
+    "description": "Localization key for: Error loading dashboard: $error"
+  },
+  "gameDeletedSuccessfully": "[DE] Game deleted successfully! (German)",
+  "@gameDeletedSuccessfully": {
+    "description": "Localization key for: Game deleted successfully!"
+  },
+  "viewResponsesComingSoon": "[DE] Antworten bald verfügbar",
+  "@viewResponsesComingSoon": {
+    "description": "Localization key for: View responses - Coming soon!"
+  },
+  "deleteProvider": "[DE] Delete Provider",
+  "@deleteProvider": {
+    "description": "Localization key for: Delete Provider"
+  },
+  "errorLoadingRewards": "[DE] Error loading rewards (German)",
+  "@errorLoadingRewards": {
+    "description": "Localization key for: Error loading rewards"
+  },
+  "failedToDeleteAccountE": "[DE] Failed to delete account: $e (German)",
+  "@failedToDeleteAccountE": {
+    "description": "Localization key for: Failed to delete account: $e"
+  },
+  "invited1": "[DE] Invited (German)",
+  "@invited1": {
+    "description": "Localization key for: Invited"
+  },
+  "noBranchesAvailable": "[DE] No branches available (German)",
+  "@noBranchesAvailable": {
+    "description": "Localization key for: No branches available"
+  },
+  "errorError": "[DE] Error: $error (German)",
+  "@errorError": {
+    "description": "Localization key for: Error: $error"
+  },
+  "noEvents": "[DE] No events (German)",
+  "@noEvents": {
+    "description": "Localization key for: No events"
+  },
+  "gameCreatedSuccessfully": "[DE] Game created successfully! (German)",
+  "@gameCreatedSuccessfully": {
+    "description": "Localization key for: Game created successfully!"
+  },
+  "add1": "[DE] Add (German)",
+  "@add1": {
+    "description": "Localization key for: Add"
+  },
+  "creatorCreatorid": "[DE] Creator: $creatorId",
+  "@creatorCreatorid": {
+    "description": "Localization key for: Creator: $creatorId"
+  },
+  "eventstarttimeEventendtime": "[DE] {startTime} - {endTime} (German)",
+  "@eventstarttimeEventendtime": {
+    "description": "Localization key for: {startTime} - {endTime}"
+  },
+  "allowPlaytime": "[DE] Allow Playtime (German)",
+  "@allowPlaytime": {
+    "description": "Localization key for: Allow Playtime"
+  },
+  "clients": "[DE] Clients (German)",
+  "@clients": {
+    "description": "Localization key for: Clients"
+  },
+  "noAmbassadorDataAvailable": "[DE] No ambassador data available (German)",
+  "@noAmbassadorDataAvailable": {
+    "description": "Localization key for: No ambassador data available"
+  },
+  "backgroundDeletedSuccessfully": "[DE] Background deleted successfully! (German)",
+  "@backgroundDeletedSuccessfully": {
+    "description": "Localization key for: Background deleted successfully!"
+  },
+  "errorSnapshoterror": "[DE] Error: {error} (German)",
+  "@errorSnapshoterror": {
+    "description": "Localization key for: Error: {error}"
+  },
+  "noAnalyticsDataAvailableYet": "[DE] No analytics data available yet. (German)",
+  "@noAnalyticsDataAvailableYet": {
+    "description": "Localization key for: No analytics data available yet."
+  },
+  "errorDeletingSlotE": "[DE] Error deleting slot: $e (German)",
+  "@errorDeletingSlotE": {
+    "description": "Localization key for: Error deleting slot: $e"
+  },
+  "REDACTED_TOKEN": "[DE] Business Phone Booking Entry Screen - Coming Soon (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
+  },
+  "verification": "[DE] Verifizierung",
+  "@verification": {
+    "description": "Localization key for: Verification"
+  },
+  "copyLink": "[DE] Copy Link (German)",
+  "@copyLink": {
+    "description": "Localization key for: Copy Link"
+  },
+  "dashboard1": "[DE] Dashboard (German)",
+  "@dashboard1": {
+    "description": "Localization key for: Dashboard"
+  },
+  "manageChildAccounts": "[DE] Manage Child Accounts (German)",
+  "@manageChildAccounts": {
+    "description": "Localization key for: Manage Child Accounts"
+  },
+  "grantConsent": "[DE] Grant Consent (German)",
+  "@grantConsent": {
+    "description": "Localization key for: Grant Consent"
+  },
+  "myProfile1": "[DE] My Profile (German)",
+  "@myProfile1": {
+    "description": "Localization key for: My Profile"
+  },
+  "submit": "[DE] Submit (German)",
+  "@submit": {
+    "description": "Localization key for: Submit"
+  },
+  "userLoguseremail": "[DE] Benutzerprotokoll: {userEmail}",
+  "@userLoguseremail": {
+    "description": "Localization key for: User: {userEmail}"
+  },
+  "emailNotifications": "E-Mail-Benachrichtigungen",
+  "@emailNotifications": {
+    "description": "Localization key for: Email Notifications"
+  },
+  "ambassadorDashboard": "[DE] Ambassador Dashboard (German)",
+  "@ambassadorDashboard": {
+    "description": "Localization key for: Ambassador Dashboard"
+  },
+  "phoneBooking": "[DE] Phone Booking (German)",
+  "@phoneBooking": {
+    "description": "Localization key for: Phone Booking"
+  },
+  "bookViaChat": "[DE] Book via Chat (German)",
+  "@bookViaChat": {
+    "description": "Localization key for: Book via Chat"
+  },
+  "error": "[DE] Fehler",
+  "@error": {
+    "description": "Description"
+  },
+  "businessProfile": "[DE] Business Profile (German)",
+  "@businessProfile": {
+    "description": "Localization key for: Business Profile"
+  },
+  "REDACTED_TOKEN": "[DE] Business Booking Entry Screen - Coming Soon (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
+  },
+  "createNewSurvey": "[DE] Create New Survey (German)",
+  "@createNewSurvey": {
+    "description": "Localization key for: Create New Survey"
+  },
+  "backgroundRejected": "[DE] Background rejected (German)",
+  "@backgroundRejected": {
+    "description": "Localization key for: Background rejected"
+  },
+  "noMediaSelected": "[DE] No media selected (German)",
+  "@noMediaSelected": {
+    "description": "Localization key for: No media selected"
+  },
+  "syncToGoogle": "[DE] Sync to Google (German)",
+  "@syncToGoogle": {
+    "description": "Localization key for: Sync to Google"
+  },
+  "virtualPlaytime": "[DE] Virtuelle Spielzeit",
+  "@virtualPlaytime": {
+    "description": "Localization key for: Virtual Playtime"
+  },
+  "colorContrastTesting": "[DE] Color Contrast Testing",
+  "@colorContrastTesting": {
+    "description": "Localization key for: Color Contrast Testing"
+  },
+  "loginFailedE": "[DE] Login failed: $e",
+  "@loginFailedE": {
+    "description": "Localization key for: Login failed: $e"
+  },
+  "invitationSentSuccessfully": "[DE] Invitation sent successfully! (German)",
+  "@invitationSentSuccessfully": {
+    "description": "Localization key for: Invitation sent successfully!"
+  },
+  "registering": "[DE] Registering... (German)",
+  "@registering": {
+    "description": "Localization key for: Registering..."
+  },
+  "statusAppointmentstatusname": "[DE] Status: {status} (German)",
+  "@statusAppointmentstatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "home1": "[DE] Home (German)",
+  "@home1": {
+    "description": "Localization key for: Home"
+  },
+  "errorSavingSettingsE": "[DE] Error saving settings: $e (German)",
+  "@errorSavingSettingsE": {
+    "description": "Localization key for: Error saving settings: $e"
+  },
+  "appVersionAndInformation": "[DE] App version and information (German)",
+  "@appVersionAndInformation": {
+    "description": "Localization key for: App version and information"
+  },
+  "REDACTED_TOKEN": "[DE] Business Subscription Entry Screen - Coming Soon (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
+  },
+  "ekeyEvalue": "[DE] {key}: {value} (German)",
+  "@ekeyEvalue": {
+    "description": "Localization key for: {key}: {value}"
+  },
+  "REDACTED_TOKEN": "[DE] Deine Zahlung wurde erfolgreich verarbeitet",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Your payment has been processed successfully."
+  },
+  "errorE": "[DE] Error: $e (German)",
+  "@errorE": {
+    "description": "Localization key for: Error: $e"
+  },
+  "viewAll1": "[DE] Alle anzeigen",
+  "@viewAll1": {
+    "description": "Localization key for: View All"
+  },
+  "editSurveyComingSoon": "[DE] Edit survey - Coming soon! (German)",
+  "@editSurveyComingSoon": {
+    "description": "Localization key for: Edit survey - Coming soon!"
+  },
+  "enterOtp": "[DE] Enter OTP (German)",
+  "@enterOtp": {
+    "description": "Localization key for: Enter OTP"
+  },
+  "payment": "[DE] Payment (German)",
+  "@payment": {
+    "description": "Localization key for: Payment"
+  },
+  "REDACTED_TOKEN": "[DE] Automatically confirm new booking requests (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Automatically confirm new booking requests"
+  },
+  "errorPickingVideoE": "[DE] Error picking video: $e",
+  "@errorPickingVideoE": {
+    "description": "Localization key for: Error picking video: $e"
+  },
+  "noRouteDefinedForSettingsname": "[DE] No route defined for {settingsName} (German)",
+  "@noRouteDefinedForSettingsname": {
+    "description": "Localization key for: No route defined for {settingsName}"
+  },
+  "pleaseSignInToUploadABackground": "[DE] Please sign in to upload a background (German)",
+  "@pleaseSignInToUploadABackground": {
+    "description": "Localization key for: Please sign in to upload a background"
+  },
+  "logtargettypeLogtargetid": "[DE] {targetType}: {targetId}",
+  "@logtargettypeLogtargetid": {
+    "description": "Localization key for: {targetType}: {targetId}"
+  },
+  "staffAvailability": "[DE] Staff Availability (German)",
+  "@staffAvailability": {
+    "description": "Localization key for: Staff Availability"
+  },
+  "livePlaytime": "[DE] Live Playtime (German)",
+  "@livePlaytime": {
+    "description": "Localization key for: Live Playtime"
+  },
+  "autoconfirmBookings": "[DE] Auto-Confirm Bookings (German)",
+  "@autoconfirmBookings": {
+    "description": "Localization key for: Auto-Confirm Bookings"
+  },
+  "REDACTED_TOKEN": "[DE] Redirecting to Stripe checkout for Pro plan... (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
+  },
+  "exportAsCsv": "[DE] Export as CSV (German)",
+  "@exportAsCsv": {
+    "description": "Localization key for: Export as CSV"
+  },
+  "deleteFunctionalityComingSoon": "[DE] Delete functionality coming soon! (German)",
+  "@deleteFunctionalityComingSoon": {
+    "description": "Localization key for: Delete functionality coming soon!"
+  },
+  "editClient": "[DE] Edit Client (German)",
+  "@editClient": {
+    "description": "Localization key for: Edit Client"
+  },
+  "REDACTED_TOKEN": "[DE] Are you sure you want to delete this message? (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Are you sure you want to delete this message?"
+  },
+  "referralsAmbassadorreferrals": "[DE] Referrals: {referrals} (German)",
+  "@referralsAmbassadorreferrals": {
+    "description": "Localization key for: Referrals: {referrals}"
+  },
+  "notAuthenticated": "[DE] Not authenticated",
+  "@notAuthenticated": {
+    "description": "Localization key for: Not authenticated"
+  },
+  "privacyRequestSentToYourParents": "[DE] Privacy request sent to your parents! (German)",
+  "@privacyRequestSentToYourParents": {
+    "description": "Localization key for: Privacy request sent to your parents!"
+  },
+  "clientDeletedSuccessfully": "[DE] Client deleted successfully! (German)",
+  "@clientDeletedSuccessfully": {
+    "description": "Localization key for: Client deleted successfully!"
+  },
+  "failedToCancelSubscription": "[DE] Failed to cancel subscription (German)",
+  "@failedToCancelSubscription": {
+    "description": "Localization key for: Failed to cancel subscription"
+  },
+  "allLanguages": "[DE] All Languages (German)",
+  "@allLanguages": {
+    "description": "Localization key for: All Languages"
+  },
+  "slotDeletedSuccessfully": "[DE] Slot deleted successfully (German)",
+  "@slotDeletedSuccessfully": {
+    "description": "Localization key for: Slot deleted successfully"
+  },
+  "REDACTED_TOKEN": "[DE] Business Providers Entry Screen - Coming Soon",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
+  },
+  "REDACTED_TOKEN": "[DE] Parents must approve before children can join (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Parents must approve before children can join"
+  },
+  "subscribeToPro1499mo": "[DE] Subscribe to Pro (€14.99/mo) (German)",
+  "@subscribeToPro1499mo": {
+    "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
+  },
+  "REDACTED_TOKEN": "[DE] Business Availability Entry Screen - Coming Soon (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
+  },
+  "appointmentsListlength": "[DE] Appointments: {count} (German)",
+  "@appointmentsListlength": {
+    "description": "Localization key for: Appointments: {count}"
+  },
+  "clearFilters": "[DE] Clear Filters (German)",
+  "@clearFilters": {
+    "description": "Localization key for: Clear Filters"
+  },
+  "submitBooking": "[DE] Submit Booking (German)",
+  "@submitBooking": {
+    "description": "Localization key for: Submit Booking"
+  },
+  "REDACTED_TOKEN": "[DE] Are you sure you want to cancel this appointment? (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Are you sure you want to cancel this appointment?"
+  },
+  "noUpcomingBookings": "[DE] No upcoming bookings (German)",
+  "@noUpcomingBookings": {
+    "description": "Localization key for: No upcoming bookings"
+  },
+  "goBack": "[DE] Go Back (German)",
+  "@goBack": {
+    "description": "Localization key for: Go Back"
+  },
+  "setup": "[DE] Setup (German)",
+  "@setup": {
+    "description": "Localization key for: Setup"
+  },
+  "inviteChild": "[DE] Invite Child (German)",
+  "@inviteChild": {
+    "description": "Localization key for: Invite Child"
+  },
+  "goToDashboard": "[DE] Go to Dashboard (German)",
+  "@goToDashboard": {
+    "description": "Localization key for: Go to Dashboard"
+  },
+  "ambassadorQuotaDashboard": "[DE] Ambassador Quota Dashboard (German)",
+  "@ambassadorQuotaDashboard": {
+    "description": "Localization key for: Ambassador Quota Dashboard"
+  },
+  "adminSettings": "[DE] Admin Settings",
+  "@adminSettings": {
+    "description": "Localization key for: Admin Settings"
+  },
+  "referralCode": "[DE] Referral Code (German)",
+  "@referralCode": {
+    "description": "Localization key for: Referral Code"
+  },
+  "adminLogadminemail": "[DE] Admin: {adminEmail}",
+  "@adminLogadminemail": {
+    "description": "Localization key for: Admin: {adminEmail}"
+  },
+  "date": "[DE] Date (German)",
+  "@date": {
+    "description": "Localization key for: Date"
+  },
+  "readOnly": "[DE] Read Only (German)",
+  "@readOnly": {
+    "description": "Localization key for: Read Only"
+  },
+  "bookingRequest": "[DE] Booking Request (German)",
+  "@bookingRequest": {
+    "description": "Localization key for: Booking Request"
+  },
+  "advancedReporting": "[DE] • Advanced reporting (German)",
+  "@advancedReporting": {
+    "description": "Localization key for: • Advanced reporting"
+  },
+  "rooms": "[DE] Rooms (German)",
+  "@rooms": {
+    "description": "Localization key for: Rooms"
+  },
+  "copiedToClipboard": "[DE] Copied to clipboard (German)",
+  "@copiedToClipboard": {
+    "description": "Localization key for: Copied to clipboard"
+  },
+  "bookingConfirmed": "[DE] Booking Confirmed (German)",
+  "@bookingConfirmed": {
+    "description": "Localization key for: Booking Confirmed"
+  },
+  "sessionApproved": "Session genehmigt",
+  "@sessionApproved": {
+    "description": "Localization key for: Session approved!"
+  },
+  "clientAddedSuccessfully": "[DE] Client added successfully! (German)",
+  "@clientAddedSuccessfully": {
+    "description": "Localization key for: Client added successfully!"
+  },
+  "noNotifications": "Keine Benachrichtigungen",
+  "@noNotifications": {
+    "description": "Localization key for: No notifications"
+  },
+  "backgroundApproved": "[DE] Background approved! (German)",
+  "@backgroundApproved": {
+    "description": "Localization key for: Background approved!"
+  },
+  "familySupport": "[DE] Family Support (German)",
+  "@familySupport": {
+    "description": "Localization key for: Family Support"
+  },
+  "deletingAccount": "[DE] Deleting account... (German)",
+  "@deletingAccount": {
+    "description": "Localization key for: Deleting account..."
+  },
+  "bookAppointment": "[DE] Book Appointment (German)",
+  "@bookAppointment": {
+    "description": "Localization key for: Book Appointment"
+  },
+  "REDACTED_TOKEN": "Push-Benachrichtigungen für neue Buchungen erhalten",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Receive push notifications for new bookings"
+  },
+  "delete1": "[DE] Delete (German)",
+  "@delete1": {
+    "description": "Localization key for: Delete"
+  },
+  "sendBookingInvite": "[DE] Send Booking Invite (German)",
+  "@sendBookingInvite": {
+    "description": "Localization key for: Send Booking Invite"
+  },
+  "text": "[DE] Text (German)",
+  "@text": {
+    "description": "Localization key for: Text"
+  },
+  "manageSubscription": "[DE] Manage Subscription (German)",
+  "@manageSubscription": {
+    "description": "Localization key for: Manage Subscription"
+  },
+  "requiresInstallFallback": "[DE] Requires Install Fallback (German)",
+  "@requiresInstallFallback": {
+    "description": "Localization key for: Requires Install Fallback"
+  },
+  "paymentConfirmation": "[DE] Payment Confirmation (German)",
+  "@paymentConfirmation": {
+    "description": "Localization key for: Payment Confirmation"
+  },
+  "promoAppliedYourNextBillIsFree": "[DE] Promo applied! Your next bill is free. (German)",
+  "@promoAppliedYourNextBillIsFree": {
+    "description": "Localization key for: Promo applied! Your next bill is free."
+  },
+  "inviteeArgsinviteeid": "[DE] Invitee: {inviteeId}",
+  "@inviteeArgsinviteeid": {
+    "description": "Localization key for: Invitee: {inviteeId}"
+  },
+  "errorLoadingSlots": "[DE] Error loading slots (German)",
+  "@errorLoadingSlots": {
+    "description": "Localization key for: Error loading slots"
+  },
+  "REDACTED_TOKEN": "[DE] Allow other users to find and join this game (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Allow other users to find and join this game"
+  },
+  "REDACTED_TOKEN": "[DE] Business Onboarding Screen - Coming Soon (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Onboarding Screen - Coming Soon"
+  },
+  "activateBusinessProfile": "[DE] Activate Business Profile (German)",
+  "@activateBusinessProfile": {
+    "description": "Localization key for: Activate Business Profile"
+  },
+  "contentNotFound": "[DE] Content not found (German)",
+  "@contentNotFound": {
+    "description": "Localization key for: Content not found"
+  },
+  "pspecialtynpcontactinfo": "[DE] {specialty}\\n{contactInfo} (German)",
+  "@pspecialtynpcontactinfo": {
+    "description": "Localization key for: {specialty}\\n{contactInfo}"
+  },
+  "rating": "[DE] Rating (German)",
+  "@rating": {
+    "description": "Localization key for: Rating"
+  },
+  "messages": "[DE] Nachrichten",
+  "@messages": {
+    "description": "Localization key for: Messages"
+  },
+  "errorEstimatingRecipientsE": "[DE] Error estimating recipients: $e (German)",
+  "@errorEstimatingRecipientsE": {
+    "description": "Localization key for: Error estimating recipients: $e"
+  },
+  "becomeAnAmbassador": "[DE] Become an Ambassador (German)",
+  "@becomeAnAmbassador": {
+    "description": "Localization key for: Become an Ambassador"
+  },
+  "subscribeNow": "[DE] Subscribe Now (German)",
+  "@subscribeNow": {
+    "description": "Localization key for: Subscribe Now"
+  },
+  "timeArgsslotformatcontext": "[DE] Time: {time} (German)",
+  "@timeArgsslotformatcontext": {
+    "description": "Localization key for: Time: {time}"
+  },
+  "shareViaWhatsapp": "[DE] Share via WhatsApp (German)",
+  "@shareViaWhatsapp": {
+    "description": "Localization key for: Share via WhatsApp"
+  },
+  "users1": "[DE] Benutzer",
+  "@users1": {
+    "description": "Localization key for: Users"
+  },
+  "shareLink": "[DE] Share Link (German)",
+  "@shareLink": {
+    "description": "Localization key for: Share Link"
+  },
+  "REDACTED_TOKEN": "[DE] Are you sure you want to delete this provider?",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Are you sure you want to delete this provider?"
+  },
+  "deleteAppointment": "[DE] Delete Appointment (German)",
+  "@deleteAppointment": {
+    "description": "Localization key for: Delete Appointment"
+  },
+  "toggleAvailability": "[DE] Toggle Availability (German)",
+  "@toggleAvailability": {
+    "description": "Localization key for: Toggle Availability"
+  },
+  "changePlan": "[DE] Change Plan (German)",
+  "@changePlan": {
+    "description": "Localization key for: Change Plan"
+  },
+  "errorLoadingStaff": "[DE] Error loading staff (German)",
+  "@errorLoadingStaff": {
+    "description": "Localization key for: Error loading staff"
+  },
+  "errorLoadingConfigurationE": "[DE] Error loading configuration: $e",
+  "@errorLoadingConfigurationE": {
+    "description": "Localization key for: Error loading configuration: $e"
+  },
+  "updateYourBusinessInformation": "[DE] Update your business information (German)",
+  "@updateYourBusinessInformation": {
+    "description": "Localization key for: Update your business information"
+  },
+  "REDACTED_TOKEN": "[DE] No providers found. Add your first provider!",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: No providers found. Add your first provider!"
+  },
+  "parentDashboard": "[DE] Parent Dashboard (German)",
+  "@parentDashboard": {
+    "description": "Localization key for: Parent Dashboard"
+  },
+  "menu": "[DE] Menu (German)",
+  "@menu": {
+    "description": "Localization key for: Menu"
+  },
+  "studioBooking": "[DE] Studio Booking (German)",
+  "@studioBooking": {
+    "description": "Localization key for: Studio Booking"
+  },
+  "about1": "[DE] About (German)",
+  "@about1": {
+    "description": "Localization key for: About"
+  },
+  "multipleChoice": "[DE] Multiple Choice (German)",
+  "@multipleChoice": {
+    "description": "Localization key for: Multiple Choice"
+  },
+  "REDACTED_TOKEN": "[DE] Date: {date} (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Date: {date}"
+  },
+  "REDACTED_TOKEN": "[DE] Studio booking is only available on web (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Studio booking is only available on web"
+  },
+  "errorLoadingBranchesE": "[DE] Error loading branches: $e (German)",
+  "@errorLoadingBranchesE": {
+    "description": "Localization key for: Error loading branches: $e"
+  },
+  "REDACTED_TOKEN": "[DE] \\uD83D\\uDCC5 {dateTime} (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
+  },
+  "appointmentInviteappointmentid": "[DE] Appointment: {appointmentId}",
+  "@appointmentInviteappointmentid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "none": "[DE] None (German)",
+  "@none": {
+    "description": "Localization key for: None"
+  },
+  "failedToUpdateConsentE": "[DE] Failed to update consent: $e (German)",
+  "@failedToUpdateConsentE": {
+    "description": "Localization key for: Failed to update consent: $e"
+  },
+  "welcome1": "[DE] Willkommen",
+  "@welcome1": {
+    "description": "Localization key for: Welcome"
+  },
+  "failedToCreateSessionE": "[DE] Failed to create session: $e (German)",
+  "@failedToCreateSessionE": {
+    "description": "Localization key for: Failed to create session: $e"
+  },
+  "inviteContact": "[DE] Invite Contact (German)",
+  "@inviteContact": {
+    "description": "Localization key for: Invite Contact"
+  },
+  "surveyEditor": "[DE] Survey Editor (German)",
+  "@surveyEditor": {
+    "description": "Localization key for: Survey Editor"
+  },
+  "failedToStartBasicSubscriptionE": "[DE] Failed to start Basic subscription: $e (German)",
+  "@failedToStartBasicSubscriptionE": {
+    "description": "Localization key for: Failed to start Basic subscription: $e"
+  },
+  "mySchedule": "[DE] My Schedule (German)",
+  "@mySchedule": {
+    "description": "Localization key for: My Schedule"
+  },
+  "studioDashboard": "[DE] Studio Dashboard (German)",
+  "@studioDashboard": {
+    "description": "Localization key for: Studio Dashboard"
+  },
+  "editProfile": "Profil bearbeiten",
+  "@editProfile": {
+    "description": "Localization key for: Edit Profile"
+  },
+  "logout1": "[DE] Logout",
+  "@logout1": {
+    "description": "Localization key for: Logout"
+  },
+  "serviceServiceidNotSelected": "[DE] Service: {service}",
+  "@serviceServiceidNotSelected": {
+    "description": "Localization key for: Service: {service}"
+  },
+  "settingsSavedSuccessfully": "[DE] Settings saved successfully! (German)",
+  "@settingsSavedSuccessfully": {
+    "description": "Localization key for: Settings saved successfully!"
+  },
+  "linkCopiedToClipboard": "[DE] Link copied to clipboard! (German)",
+  "@linkCopiedToClipboard": {
+    "description": "Localization key for: Link copied to clipboard!"
+  },
+  "accept1": "[DE] Accept (German)",
+  "@accept1": {
+    "description": "Localization key for: Accept"
+  },
+  "noAvailableSlots": "[DE] No available slots (German)",
+  "@noAvailableSlots": {
+    "description": "Localization key for: No available slots"
+  },
+  "makeGamePublic": "[DE] Make Game Public (German)",
+  "@makeGamePublic": {
+    "description": "Localization key for: Make Game Public"
+  },
+  "REDACTED_TOKEN": "[DE] Permission {category} updated to $newValue (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Permission {category} updated to $newValue"
+  },
+  "roomDeletedSuccessfully": "[DE] Room deleted successfully! (German)",
+  "@roomDeletedSuccessfully": {
+    "description": "Localization key for: Room deleted successfully!"
+  },
+  "businessCalendar": "[DE] Business Calendar (German)",
+  "@businessCalendar": {
+    "description": "Localization key for: Business Calendar"
+  },
+  "addAvailability": "[DE] Add Availability (German)",
+  "@addAvailability": {
+    "description": "Localization key for: Add Availability"
+  },
+  "ambassadorOnboarding": "[DE] Ambassador Onboarding (German)",
+  "@ambassadorOnboarding": {
+    "description": "Localization key for: Ambassador Onboarding"
+  },
+  "phoneProfileasyncphone": "[DE] Phone: {phone} (German)",
+  "@phoneProfileasyncphone": {
+    "description": "Localization key for: Phone: {phone}"
+  },
+  "addNewRoom": "[DE] Add New Room (German)",
+  "@addNewRoom": {
+    "description": "Localization key for: Add New Room"
+  },
+  "requireParentApproval": "[DE] Require Parent Approval (German)",
+  "@requireParentApproval": {
+    "description": "Localization key for: Require Parent Approval"
+  },
+  "closed": "[DE] Closed (German)",
+  "@closed": {
+    "description": "Localization key for: Closed"
+  },
+  "exportAsPdf": "[DE] Export as PDF (German)",
+  "@exportAsPdf": {
+    "description": "Localization key for: Export as PDF"
+  },
+  "enableVibration": "[DE] Enable Vibration (German)",
+  "@enableVibration": {
+    "description": "Localization key for: Enable Vibration"
+  },
+  "toAvailendformatcontext": "[DE] To: {endTime} (German)",
+  "@toAvailendformatcontext": {
+    "description": "Localization key for: To: {endTime}"
+  },
+  "yourUpgradeCodeUpgradecode": "[DE] Dein Upgrade-Code: {upgradeCode}",
+  "@yourUpgradeCodeUpgradecode": {
+    "description": "Localization key for: Your upgrade code: $upgradeCode"
+  },
+  "requestPrivateSession": "[DE] Private Sitzung anfordern",
+  "@requestPrivateSession": {
+    "description": "Localization key for: Request Private Session"
+  },
+  "country": "[DE] Country (German)",
+  "@country": {
+    "description": "Localization key for: Country"
+  },
+  "loginScreen": "[DE] Login Screen",
+  "@loginScreen": {
+    "description": "Localization key for: Login Screen"
+  },
+  "staffArgsstaffdisplayname": "[DE] Staff: {staffName} (German)",
+  "@staffArgsstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "revokeConsent": "[DE] Revoke Consent (German)",
+  "@revokeConsent": {
+    "description": "Localization key for: Revoke Consent"
+  },
+  "settings1": "[DE] Settings (German)",
+  "@settings1": {
+    "description": "Localization key for: Settings"
+  },
+  "cancel1": "[DE] Cancel (German)",
+  "@cancel1": {
+    "description": "Localization key for: Cancel"
+  },
+  "REDACTED_TOKEN": "[DE] Subscription activated successfully! (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Subscription activated successfully!"
+  },
+  "activityLogaction": "[DE] Activity: {action}",
+  "@activityLogaction": {
+    "description": "Localization key for: Activity: {action}"
+  },
+  "broadcast": "[DE] Broadcast (German)",
+  "@broadcast": {
+    "description": "Localization key for: Broadcast"
+  },
+  "noEventsScheduledThisWeek": "[DE] No events scheduled this week (German)",
+  "@noEventsScheduledThisWeek": {
+    "description": "Localization key for: No events scheduled this week"
+  },
+  "googleCalendar": "[DE] Google Calendar (German)",
+  "@googleCalendar": {
+    "description": "Localization key for: Google Calendar"
+  },
+  "sendInvite": "[DE] Send Invite (German)",
+  "@sendInvite": {
+    "description": "Localization key for: Send Invite"
+  },
+  "childDashboard": "[DE] Child Dashboard (German)",
+  "@childDashboard": {
+    "description": "Localization key for: Child Dashboard"
+  },
+  "failedToUploadBackgroundE": "[DE] Failed to upload background: $e (German)",
+  "@failedToUploadBackgroundE": {
+    "description": "Localization key for: Failed to upload background: $e"
+  },
+  "linkchildidsubstring08": "[DE] {linkId}...",
+  "@linkchildidsubstring08": {
+    "description": "Localization key for: {linkId}..."
+  },
+  "targetLogtargettypeLogtargetid": "[DE] Target: {targetType} - {targetId}",
+  "@targetLogtargettypeLogtargetid": {
+    "description": "Localization key for: Target: {targetType} - {targetId}"
+  },
+  "contextContextid": "[DE] Context: $contextId",
+  "@contextContextid": {
+    "description": "Localization key for: Context: $contextId"
+  },
+  "noAppointments": "[DE] No appointments (German)",
+  "@noAppointments": {
+    "description": "Localization key for: No appointments"
+  },
+  "unlimitedBookingsPerWeek": "[DE] • Unlimited bookings per week (German)",
+  "@unlimitedBookingsPerWeek": {
+    "description": "Localization key for: • Unlimited bookings per week"
+  },
+  "errorDetailsLogerrortype": "[DE] Error Details: {errorType}",
+  "@errorDetailsLogerrortype": {
+    "description": "Localization key for: Error Details: {errorType}"
+  },
+  "scheduledAtScheduledat": "[DE] Scheduled at: $scheduledAt (German)",
+  "@scheduledAtScheduledat": {
+    "description": "Localization key for: Scheduled at: $scheduledAt"
+  },
+  "selectStaff": "[DE] Select Staff (German)",
+  "@selectStaff": {
+    "description": "Localization key for: Select Staff"
+  },
+  "REDACTED_TOKEN": "[DE] Subscription cancelled successfully (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Subscription cancelled successfully"
+  },
+  "pleaseLogInToViewYourProfile": "Bitte melden Sie sich an, um Ihr Profil zu sehen",
+  "@pleaseLogInToViewYourProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "cancelAppointment": "[DE] Cancel Appointment (German)",
+  "@cancelAppointment": {
+    "description": "Localization key for: Cancel Appointment"
+  },
+  "permissionsFamilylinkchildid": "[DE] Permissions - {childId}",
+  "@permissionsFamilylinkchildid": {
+    "description": "Localization key for: Permissions - {childId}"
+  },
+  "businessSignup": "[DE] Business Signup (German)",
+  "@businessSignup": {
+    "description": "Localization key for: Business Signup"
+  },
+  "REDACTED_TOKEN": "[DE] Business Completion Screen - Coming Soon (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Completion Screen - Coming Soon"
+  },
+  "createGame1": "[DE] Create Game (German)",
+  "@createGame1": {
+    "description": "Localization key for: Create Game"
+  },
+  "valuetoint": "[DE] Wert zu Integer",
+  "@valuetoint": {
+    "description": "Localization key for: {value}"
+  },
+  "pleaseEnterAPromoCode": "[DE] Please enter a promo code (German)",
+  "@pleaseEnterAPromoCode": {
+    "description": "Localization key for: Please enter a promo code"
+  },
+  "errorLoadingAvailabilityE": "[DE] Error loading availability: $e (German)",
+  "@errorLoadingAvailabilityE": {
+    "description": "Localization key for: Error loading availability: $e"
+  },
+  "parentalControls": "[DE] Parental Controls (German)",
+  "@parentalControls": {
+    "description": "Localization key for: Parental Controls"
+  },
+  "editBusinessProfile": "Business-Profil bearbeiten",
+  "@editBusinessProfile": {
+    "description": "Localization key for: Edit Business Profile"
+  },
+  "childLinkedSuccessfully": "[DE] Child linked successfully! (German)",
+  "@childLinkedSuccessfully": {
+    "description": "Localization key for: Child linked successfully!"
+  },
+  "create": "[DE] Create (German)",
+  "@create": {
+    "description": "Localization key for: Create"
+  },
+  "noExternalMeetingsFound": "[DE] No external meetings found. (German)",
+  "@noExternalMeetingsFound": {
+    "description": "Localization key for: No external meetings found."
+  },
+  "staffSelectionstaffdisplayname": "[DE] Staff: {staffName} (German)",
+  "@staffSelectionstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "pleaseEnterAValidEmailAddress": "[DE] Please enter a valid email address",
+  "@pleaseEnterAValidEmailAddress": {
+    "description": "Localization key for: Please enter a valid email address"
+  },
+  "schedulerScreen": "[DE] Scheduler Screen (German)",
+  "@schedulerScreen": {
+    "description": "Localization key for: Scheduler Screen"
+  },
+  "clientUpdatedSuccessfully": "[DE] Client updated successfully! (German)",
+  "@clientUpdatedSuccessfully": {
+    "description": "Localization key for: Client updated successfully!"
+  },
+  "surveyResponses": "[DE] Survey Responses (German)",
+  "@surveyResponses": {
+    "description": "Localization key for: Survey Responses"
+  },
+  "syncToOutlook": "[DE] Sync to Outlook (German)",
+  "@syncToOutlook": {
+    "description": "Localization key for: Sync to Outlook"
+  },
+  "saveChanges": "[DE] Save Changes (German)",
+  "@saveChanges": {
+    "description": "Localization key for: Save Changes"
+  },
+  "pickTime": "[DE] Pick Time (German)",
+  "@pickTime": {
+    "description": "Localization key for: Pick Time"
+  },
+  "registrationFailedEtostring": "[DE] Registration failed: {error} (German)",
+  "@registrationFailedEtostring": {
+    "description": "Localization key for: Registration failed: {error}"
+  },
+  "analytics": "[DE] Analytics (German)",
+  "@analytics": {
+    "description": "Localization key for: Analytics"
+  },
+  "errorLoadingEvents": "[DE] Error loading events (German)",
+  "@errorLoadingEvents": {
+    "description": "Localization key for: Error loading events"
+  },
+  "errorLoadingOrganizations": "[DE] Fehler beim Laden der Organisationen",
+  "@errorLoadingOrganizations": {
+    "description": "Localization key for: Error loading organizations"
+  },
+  "businessLoginScreenComingSoon": "[DE] Business Login Screen - Coming Soon",
+  "@businessLoginScreenComingSoon": {
+    "description": "Localization key for: Business Login Screen - Coming Soon"
+  },
+  "success1": "[DE] Success (German)",
+  "@success1": {
+    "description": "Localization key for: Success"
+  },
+  "appVersionLogappversion": "[DE] App Version: {appVersion}",
+  "@appVersionLogappversion": {
+    "description": "Localization key for: App Version: {appVersion}"
+  },
+  "fromAvailstartformatcontext": "[DE] From: {startTime} (German)",
+  "@fromAvailstartformatcontext": {
+    "description": "Localization key for: From: {startTime}"
+  },
+  "readWrite": "[DE] Read & Write (German)",
+  "@readWrite": {
+    "description": "Localization key for: Read & Write"
+  },
+  "REDACTED_TOKEN": "[DE] Redirecting to Stripe checkout for Basic plan... (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
+  },
+  "errorSavingConfigurationE": "[DE] Error saving configuration: $e",
+  "@errorSavingConfigurationE": {
+    "description": "Localization key for: Error saving configuration: $e"
+  },
+  "pickDate": "[DE] Pick Date (German)",
+  "@pickDate": {
+    "description": "Localization key for: Pick Date"
+  },
+  "chatBooking": "[DE] Chat Booking (German)",
+  "@chatBooking": {
+    "description": "Localization key for: Chat Booking"
+  },
+  "noQuestionsAdded": "[DE] No questions added (German)",
+  "@noQuestionsAdded": {
+    "description": "Localization key for: No questions added"
+  },
+  "severityLogseverityname": "[DE] Severity: {severity}",
+  "@severityLogseverityname": {
+    "description": "Localization key for: Severity: {severity}"
+  },
+  "markAsPaid": "[DE] Mark as Paid",
+  "@markAsPaid": {
+    "description": "Localization key for: Mark as Paid"
+  },
+  "typeOpenCall": "[DE] Type: Open Call (German)",
+  "@typeOpenCall": {
+    "description": "Localization key for: Type: Open Call"
+  },
+  "appointmentAppointmentid": "[DE] Appointment {appointmentId}",
+  "@appointmentAppointmentid": {
+    "description": "Localization key for: Appointment {appointmentId}"
+  },
+  "statusInvitestatusname": "[DE] Status: {status}",
+  "@statusInvitestatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "businessLogin": "[DE] Business Login",
+  "@businessLogin": {
+    "description": "Localization key for: Business Login"
+  },
+  "invoiceCreatedSuccessfully": "[DE] Invoice created successfully! (German)",
+  "@invoiceCreatedSuccessfully": {
+    "description": "Localization key for: Invoice created successfully!"
+  },
+  "noTimeSeriesDataAvailable": "[DE] No time series data available (German)",
+  "@noTimeSeriesDataAvailable": {
+    "description": "Localization key for: No time series data available"
+  },
+  "subscribeToWidgetplanname": "[DE] Subscribe to {planName}",
+  "@subscribeToWidgetplanname": {
+    "description": "Localization key for: Subscribe to {planName}"
+  },
+  "REDACTED_TOKEN": "[DE] Timestamp: {timestamp}",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Timestamp: {timestamp}"
+  },
+  "failedToSendPrivacyRequestE": "[DE] Failed to send privacy request: $e (German)",
+  "@failedToSendPrivacyRequestE": {
+    "description": "Localization key for: Failed to send privacy request: $e"
+  },
+  "chooseYourPlan": "[DE] Choose Your Plan (German)",
+  "@chooseYourPlan": {
+    "description": "Localization key for: Choose Your Plan"
+  },
+  "playtimeManagement": "[DE] Playtime Management (German)",
+  "@playtimeManagement": {
+    "description": "Localization key for: Playtime Management"
+  },
+  "availability": "[DE] Availability (German)",
+  "@availability": {
+    "description": "Localization key for: Availability"
+  },
+  "eventCreated": "[DE] Event created (German)",
+  "@eventCreated": {
+    "description": "Localization key for: Event created"
+  },
+  "subscribeToBasic499mo": "[DE] Subscribe to Basic (€4.99/mo) (German)",
+  "@subscribeToBasic499mo": {
+    "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
+  },
+  "completion": "[DE] Completion (German)",
+  "@completion": {
+    "description": "Localization key for: Completion"
+  },
+  "supportTicketSubmitted": "[DE] Support ticket submitted (German)",
+  "@supportTicketSubmitted": {
+    "description": "Localization key for: Support ticket submitted"
+  },
+  "monetizationSettings": "[DE] Monetization Settings (German)",
+  "@monetizationSettings": {
+    "description": "Localization key for: Monetization Settings"
+  },
+  "noBookingsFound": "[DE] No bookings found (German)",
+  "@noBookingsFound": {
+    "description": "Localization key for: No bookings found"
+  },
+  "admin": "[DE] Admin",
+  "@admin": {
+    "description": "Localization key for: Admin"
+  },
+  "deleteSurvey": "[DE] Delete Survey (German)",
+  "@deleteSurvey": {
+    "description": "Localization key for: Delete Survey"
+  },
+  "gameApprovedSuccessfully": "[DE] Game approved successfully! (German)",
+  "@gameApprovedSuccessfully": {
+    "description": "Localization key for: Game approved successfully!"
+  },
+  "errorLoadingPermissionsError": "[DE] Error loading permissions: $error (German)",
+  "@errorLoadingPermissionsError": {
+    "description": "Localization key for: Error loading permissions: $error"
+  },
+  "referrals": "[DE] Referrals (German)",
+  "@referrals": {
+    "description": "Localization key for: Referrals"
+  },
+  "crm": "[DE] CRM (German)",
+  "@crm": {
+    "description": "Localization key for: CRM"
+  },
+  "gameRejected": "[DE] Game rejected (German)",
+  "@gameRejected": {
+    "description": "Localization key for: Game rejected"
+  },
+  "appointments": "[DE] Termine",
+  "@appointments": {
+    "description": "Localization key for: Appointments"
+  },
+  "onboardingScreen": "[DE] Onboarding Screen (German)",
+  "@onboardingScreen": {
+    "description": "Localization key for: Onboarding Screen"
+  },
+  "welcomeToYourStudio": "[DE] Willkommen in deinem Studio",
+  "@welcomeToYourStudio": {
+    "description": "Localization key for: Welcome to your studio"
+  },
+  "update": "[DE] Update (German)",
+  "@update": {
+    "description": "Localization key for: Update"
+  },
+  "retry1": "[DE] Retry (German)",
+  "@retry1": {
+    "description": "Localization key for: Retry"
+  },
+  "booking": "[DE] Booking (German)",
+  "@booking": {
+    "description": "Localization key for: Booking"
+  },
+  "parentalSettings": "[DE] Parental Settings (German)",
+  "@parentalSettings": {
+    "description": "Localization key for: Parental Settings"
+  },
+  "language": "[DE] Language (German)",
+  "@language": {
+    "description": "Localization key for: Language"
+  },
+  "deleteSlot": "[DE] Delete Slot (German)",
+  "@deleteSlot": {
+    "description": "Localization key for: Delete Slot"
+  },
+  "organizations": "[DE] Organisationen",
+  "@organizations": {
+    "description": "Localization key for: Organizations"
+  },
+  "configurationSavedSuccessfully": "[DE] Configuration saved successfully!",
+  "@configurationSavedSuccessfully": {
+    "description": "Localization key for: Configuration saved successfully!"
+  },
+  "createNewGame": "[DE] Create New Game (German)",
+  "@createNewGame": {
+    "description": "Localization key for: Create New Game"
+  },
+  "next1": "[DE] Next (German)",
+  "@next1": {
+    "description": "Localization key for: Next"
+  },
+  "backgroundUploadedSuccessfully": "[DE] Background uploaded successfully! (German)",
+  "@backgroundUploadedSuccessfully": {
+    "description": "Localization key for: Background uploaded successfully!"
+  },
+  "noAppointmentRequestsFound": "[DE] No appointment requests found. (German)",
+  "@noAppointmentRequestsFound": {
+    "description": "Localization key for: No appointment requests found."
+  },
+  "pleaseSignInToCreateASession": "Bitte melden Sie sich an, um eine Session zu erstellen",
+  "@pleaseSignInToCreateASession": {
+    "description": "Localization key for: Please sign in to create a session"
+  },
+  "restrictMatureContent": "[DE] Restrict mature content (German)",
+  "@restrictMatureContent": {
+    "description": "Localization key for: Restrict mature content"
+  },
+  "ambassadors": "[DE] Ambassadors (German)",
+  "@ambassadors": {
+    "description": "Localization key for: Ambassadors"
+  },
+  "smsNotifications": "SMS-Benachrichtigungen",
+  "@smsNotifications": {
+    "description": "Localization key for: SMS Notifications"
+  },
+  "paymentWasCancelled": "[DE] Payment was cancelled (German)",
+  "@paymentWasCancelled": {
+    "description": "Localization key for: Payment was cancelled"
+  },
+  "clearAll": "[DE] Clear All (German)",
+  "@clearAll": {
+    "description": "Localization key for: Clear All"
+  },
+  "viewDetails": "[DE] Details anzeigen",
+  "@viewDetails": {
+    "description": "Localization key for: View Details"
+  },
+  "notifications1": "Benachrichtigungen",
+  "@notifications1": {
+    "description": "Localization key for: Notifications"
+  },
+  "REDACTED_TOKEN": "Live-Session geplant, warten auf Elterngenehmigung",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
+  },
+  "failedToCreateGameE": "[DE] Failed to create game: $e (German)",
+  "@failedToCreateGameE": {
+    "description": "Localization key for: Failed to create game: $e"
+  },
+  "noChartDataAvailable": "[DE] No chart data available (German)",
+  "@noChartDataAvailable": {
+    "description": "Localization key for: No chart data available"
+  },
+  "phonebasedBookingSystem": "[DE] • Phone-based booking system (German)",
+  "@phonebasedBookingSystem": {
+    "description": "Localization key for: • Phone-based booking system"
+  },
+  "enableNotifications1": "Benachrichtigungen aktivieren",
+  "@enableNotifications1": {
+    "description": "Localization key for: Enable Notifications"
+  },
+  "invoices": "[DE] Invoices (German)",
+  "@invoices": {
+    "description": "Localization key for: Invoices"
+  },
+  "REDACTED_TOKEN": "Bitte aktivieren Sie Ihr Business-Profil, um fortzufahren",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Please activate your business profile to continue."
+  },
+  "scheduledAtArgsscheduledat": "[DE] Scheduled at: {scheduledAt} (German)",
+  "@scheduledAtArgsscheduledat": {
+    "description": "Localization key for: Scheduled at: {scheduledAt}"
+  },
+  "REDACTED_TOKEN": "[DE] Duration: {duration} minutes (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Duration: {duration} minutes"
+  },
+  "tryAgain": "[DE] Try Again (German)",
+  "@tryAgain": {
+    "description": "Localization key for: Try Again"
+  },
+  "deleteBackground": "[DE] Delete Background (German)",
+  "@deleteBackground": {
+    "description": "Localization key for: Delete Background"
+  },
+  "currentTierTiertouppercase": "[DE] Current Tier: {tier} (German)",
+  "@currentTierTiertouppercase": {
+    "description": "Localization key for: Current Tier: {tier}"
+  },
+  "iDoNotConsent": "[DE] I Do Not Consent",
+  "@iDoNotConsent": {
+    "description": "Localization key for: I Do Not Consent"
+  },
+  "REDACTED_TOKEN": "[DE] No clients found. Add your first client! (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: No clients found. Add your first client!"
+  },
+  "REDACTED_TOKEN": "[DE] Settings dialog will be implemented here.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Settings dialog will be implemented here."
+  },
+  "groupGroupid": "[DE] Group: $groupId",
+  "@groupGroupid": {
+    "description": "Localization key for: Group: $groupId"
+  },
+  "appointmentRequests": "[DE] Appointment Requests (German)",
+  "@appointmentRequests": {
+    "description": "Localization key for: Appointment Requests"
+  },
+  "forward": "[DE] Forward (German)",
+  "@forward": {
+    "description": "Localization key for: Forward"
+  },
+  "roomAddedSuccessfully": "[DE] Room added successfully! (German)",
+  "@roomAddedSuccessfully": {
+    "description": "Localization key for: Room added successfully!"
+  },
+  "option": "[DE] • $option (German)",
+  "@option": {
+    "description": "Localization key for: • $option"
+  },
+  "responseIndex1": "[DE] Response #{number} (German)",
+  "@responseIndex1": {
+    "description": "Localization key for: Response #{number}"
+  },
+  "crmDashboardWithAnalytics": "[DE] • CRM dashboard with analytics (German)",
+  "@crmDashboardWithAnalytics": {
+    "description": "Localization key for: • CRM dashboard with analytics"
+  },
+  "contentLibrary1": "[DE] Content Library (German)",
+  "@contentLibrary1": {
+    "description": "Localization key for: Content Library"
+  },
+  "reply": "[DE] Reply (German)",
+  "@reply": {
+    "description": "Localization key for: Reply"
+  },
+  "subscriptionManagement": "[DE] Subscription Management (German)",
+  "@subscriptionManagement": {
+    "description": "Localization key for: Subscription Management"
+  },
+  "REDACTED_TOKEN": "[DE] Monetization settings will be implemented here (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Monetization settings will be implemented here"
+  },
+  "failedToApplyPromoCodeE": "[DE] Failed to apply promo code: $e (German)",
+  "@failedToApplyPromoCodeE": {
+    "description": "Localization key for: Failed to apply promo code: $e"
+  },
+  "editProvider": "[DE] Edit Provider",
+  "@editProvider": {
+    "description": "Localization key for: Edit Provider"
+  },
+  "localizationContribution": "[DE] Localization Contribution (German)",
+  "@localizationContribution": {
+    "description": "Localization key for: Localization Contribution"
+  },
+  "parentalConsent": "[DE] Parental Consent (German)",
+  "@parentalConsent": {
+    "description": "Localization key for: Parental Consent"
+  },
+  "businessSignupScreenComingSoon": "[DE] Business Signup Screen - Coming Soon (German)",
+  "@businessSignupScreenComingSoon": {
+    "description": "Localization key for: Business Signup Screen - Coming Soon"
+  },
+  "REDACTED_TOKEN": "[DE] Are you sure you want to delete this appointment? (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Are you sure you want to delete this appointment?"
+  },
+  "syncAppointment": "[DE] Sync Appointment (German)",
+  "@syncAppointment": {
+    "description": "Localization key for: Sync Appointment"
+  },
+  "iConsent": "[DE] I Consent (German)",
+  "@iConsent": {
+    "description": "Localization key for: I Consent"
+  },
+  "sessionRejected": "Session abgelehnt",
+  "@sessionRejected": {
+    "description": "Localization key for: Session rejected"
+  },
+  "businessSetupScreenComingSoon": "[DE] Business Setup Screen - Coming Soon (German)",
+  "@businessSetupScreenComingSoon": {
+    "description": "Localization key for: Business Setup Screen - Coming Soon"
+  },
+  "edit1": "[DE] Edit (German)",
+  "@edit1": {
+    "description": "Localization key for: Edit"
+  },
+  "noEventsScheduledThisMonth": "[DE] No events scheduled this month (German)",
+  "@noEventsScheduledThisMonth": {
+    "description": "Localization key for: No events scheduled this month"
+  },
+  "businessDashboard": "[DE] Business Dashboard (German)",
+  "@businessDashboard": {
+    "description": "Localization key for: Business Dashboard"
+  },
+  "noMessagesFound": "[DE] No messages found. (German)",
+  "@noMessagesFound": {
+    "description": "Localization key for: No messages found."
+  },
+  "staffStaffidNotSelected": "[DE] Staff: {staff}",
+  "@staffStaffidNotSelected": {
+    "description": "Localization key for: Staff: {staff}"
+  },
+  "manageStaffAvailability": "[DE] Manage Staff Availability (German)",
+  "@manageStaffAvailability": {
+    "description": "Localization key for: Manage Staff Availability"
+  },
+  "noMissingTranslations": "[DE] No missing translations (German)",
+  "@noMissingTranslations": {
+    "description": "Localization key for: No missing translations"
+  },
+  "skip": "[DE] Skip (German)",
+  "@skip": {
+    "description": "Localization key for: Skip"
+  },
+  "meetingIdMeetingid": "Meeting-ID: {meetingId}",
+  "@meetingIdMeetingid": {
+    "description": "Localization key for: Meeting ID: $meetingId"
+  },
+  "noUsers": "[DE] Keine Benutzer",
+  "@noUsers": {
+    "description": "Localization key for: No users"
+  },
+  "errorLoadingReferralCode": "[DE] Error loading referral code (German)",
+  "@errorLoadingReferralCode": {
+    "description": "Localization key for: Error loading referral code"
+  },
+  "allCountries": "[DE] All Countries (German)",
+  "@allCountries": {
+    "description": "Localization key for: All Countries"
+  },
+  "deleteGame": "[DE] Delete Game (German)",
+  "@deleteGame": {
+    "description": "Localization key for: Delete Game"
+  },
+  "staffManagementTools": "[DE] • Staff management tools (German)",
+  "@staffManagementTools": {
+    "description": "Localization key for: • Staff management tools"
+  },
+  "deleteMessage": "[DE] Delete Message (German)",
+  "@deleteMessage": {
+    "description": "Localization key for: Delete Message"
+  },
+  "REDACTED_TOKEN": "Buchungsbenachrichtigungen per SMS erhalten",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Receive booking notifications via SMS"
+  },
+  "changeRole": "[DE] Rolle ändern",
+  "@changeRole": {
+    "description": "Localization key for: Change Role"
+  },
+  "REDACTED_TOKEN": "[DE] Error loading bookings: {error} (German)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Error loading bookings: {error}"
+  },
+  "openingCustomerPortal": "[DE] Opening customer portal... (German)",
+  "@openingCustomerPortal": {
+    "description": "Localization key for: Opening customer portal..."
+  },
+  "signOut": "[DE] Sign Out (German)",
+  "@signOut": {
+    "description": "Localization key for: Sign Out"
+  },
+  "nameProfilename": "[DE] Name: {name} (German)",
+  "@nameProfilename": {
+    "description": "Localization key for: Name: {name}"
+  },
+  "REDACTED_TOKEN": "REDACTED_TOKEN - Bald verfügbar",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
+  },
+  "upgradeToBusiness": "[DE] Auf Business upgraden",
+  "@upgradeToBusiness": {
+    "description": "Localization key for: Upgrade to Business"
+  },
+  "apply": "Anwenden",
+  "@apply": {
+    "description": "Localization key for: Apply"
+  },
+  "errorLoadingSubscriptionError": "Fehler beim Laden des Abonnements: {error}",
+  "@errorLoadingSubscriptionError": {
+    "description": "Localization key for: Error loading subscription: $error"
+  },
+  "errorLoadingUsers": "Fehler beim Laden der Benutzer",
+  "@errorLoadingUsers": {
+    "description": "Localization key for: Error loading users"
+  },
+  "verify": "Verifizieren",
+  "@verify": {
+    "description": "Localization key for: Verify"
+  },
+  "subscription": "Abonnement",
+  "@subscription": {
+    "description": "Localization key for: Subscription"
+  },
+  "deleteMyAccount": "Mein Konto löschen",
+  "@deleteMyAccount": {
+    "description": "Localization key for: Delete My Account"
+  },
+  "REDACTED_TOKEN": "REDACTED_TOKEN - Bald verfügbar",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
+  },
+  "viewResponses": "[DE] Antworten anzeigen",
+  "@viewResponses": {
+    "description": "Localization key for: View Responses"
+  },
+  "businessWelcomeScreenComingSoon": "Business-Willkommensbildschirm - Bald verfügbar",
+  "@businessWelcomeScreenComingSoon": {
+    "description": "Localization key for: Business Welcome Screen - Coming Soon"
+  },
+  "failedToOpenCustomerPortalE": "Fehler beim Öffnen des Kundenportals: {e}",
+  "@failedToOpenCustomerPortalE": {
+    "description": "Localization key for: Failed to open customer portal: $e"
+  },
+  "continueText": "Weiter",
+  "@continueText": {
+    "description": "Localization key for: Continue"
+  },
+  "close1": "Schließen",
+  "@close1": {
+    "description": "Localization key for: Close"
+  },
+  "confirm1": "Bestätigen",
+  "@confirm1": {
+    "description": "Localization key for: Confirm"
+  },
+  "externalMeetings": "Externe Meetings",
+  "@externalMeetings": {
+    "description": "Localization key for: External Meetings"
+  },
+  "approve": "Genehmigen",
+  "@approve": {
+    "description": "Localization key for: Approve"
+  },
+  "REDACTED_TOKEN": "Keine Rechnungen gefunden. Erstellen Sie Ihre erste Rechnung!",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: No invoices found. Create your first invoice!"
+  },
+  "subscribe": "Abonnieren",
+  "@subscribe": {
+    "description": "Localization key for: Subscribe"
+  },
+  "login1": "Anmelden",
+  "@login1": {
+    "description": "Localization key for: Login"
+  },
+  "adminOverviewGoesHere": "Admin-Übersicht kommt hier hin",
+  "@adminOverviewGoesHere": {
+    "description": "Localization key for: Admin overview goes here"
+  },
+  "loadingCheckout": "Checkout wird geladen...",
+  "@loadingCheckout": {
+    "description": "Localization key for: Loading checkout..."
+  },
+  "ad_pre_title": "Schauen Sie sich eine Anzeige an, um Ihren Termin zu bestätigen",
+  "@ad_pre_title": {
+    "description": "Title shown before ad for free users"
+  },
+  "ad_pre_description": "Als kostenloser Benutzer müssen Sie eine kurze Anzeige ansehen, bevor Sie bestätigen. Sie können alle Anzeigen dauerhaft entfernen, indem Sie upgraden.",
+  "@ad_pre_description": {
+    "description": "Description shown before ad for free users"
+  },
+  "watch_ad_button": "Anzeige Ansehen",
+  "@watch_ad_button": {
+    "description": "Button to watch ad"
+  },
+  "upgrade_button": "Zu Premium upgraden (€4)",
+  "@upgrade_button": {
+    "description": "Button to upgrade to premium"
+  },
+  "ad_post_title": "Anzeige beendet! Sie können jetzt Ihren Termin bestätigen.",
+  "@ad_post_title": {
+    "description": "Title shown after ad is finished"
+  },
+  "confirm_appointment_button": "Termin Bestätigen",
+  "@confirm_appointment_button": {
+    "description": "Button to confirm appointment after ad"
+  },
+  "upgrade_prompt_title": "Einmaliges Upgrade",
+  "@upgrade_prompt_title": {
+    "description": "Title for upgrade prompt"
+  },
+  "upgrade_prompt_description": "Zahlen Sie €4, um alle Anzeigen für immer zu entfernen",
+  "@upgrade_prompt_description": {
+    "description": "Description for upgrade prompt"
+  },
+  "purchase_now_button": "Jetzt Kaufen",
+  "@purchase_now_button": {
+    "description": "Button to purchase upgrade"
   }
 }

@@ -13,14 +13,14 @@ class WeeklyUsageNotifier extends StateNotifier<int> {
   static const String _lastResetKey = 'last_weekly_reset';
 
   Future<void> _loadWeeklyUsage() async {
-    prefs = await SharedPreferences.getInstance();
-    lastReset = prefs.getString(_lastResetKey);
-    now = DateTime.now();
+    final prefs = await SharedPreferences.getInstance();
+    final lastReset = prefs.getString(_lastResetKey);
+    final now = DateTime.now();
 
     // Check if we need to reset (new week)
     if (lastReset != null) {
-      lastResetDate = DateTime.parse(lastReset);
-      daysSinceReset = now.difference(lastResetDate).inDays;
+      final lastResetDate = DateTime.parse(lastReset);
+      final daysSinceReset = now.difference(lastResetDate).inDays;
 
       if (daysSinceReset >= 7) {
         // Reset for new week
@@ -33,19 +33,19 @@ class WeeklyUsageNotifier extends StateNotifier<int> {
     }
 
     // Load current usage
-    usage = prefs.getInt(_usageKey) ?? 0;
+    final usage = prefs.getInt(_usageKey) ?? 0;
     state = usage;
   }
 
   Future<void> _resetWeeklyUsage() async {
-    prefs = await SharedPreferences.getInstance();
+    final prefs = await SharedPreferences.getInstance();
     await prefs.setInt(_usageKey, 0);
     await prefs.setString(_lastResetKey, DateTime.now().toIso8601String());
     state = 0;
   }
 
   Future<void> incrementUsage() async {
-    prefs = await SharedPreferences.getInstance();
+    final prefs = await SharedPreferences.getInstance();
     final newUsage = state + 1;
     await prefs.setInt(_usageKey, newUsage);
     state = newUsage;
@@ -55,7 +55,7 @@ class WeeklyUsageNotifier extends StateNotifier<int> {
 
   String get upgradeCode {
     // Generate a simple upgrade code based on current user and timestamp
-    timestamp = DateTime.now().millisecondsSinceEpoch;
+    final timestamp = DateTime.now().millisecondsSinceEpoch;
     return 'UPGRADE_${timestamp.toString().substring(timestamp.toString().length - 6)}';
   }
 }

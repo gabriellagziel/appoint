@@ -4,15 +4,15 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 // Current user ID provider
-currentUserIdProvider = Provider<String>((final ref) {
+final currentUserIdProvider = Provider<String>((ref) {
   final user = FirebaseAuth.instance.currentUser;
   if (user == null) throw Exception('User not authenticated');
   return user.uid;
 });
 
 // Business profile stream
-businessProfileProvider = StreamProvider<BusinessProfile>((final ref) {
-  userId = ref.watch(currentUserIdProvider);
+final businessProfileProvider = StreamProvider<BusinessProfile>((ref) {
+  final userId = ref.watch(currentUserIdProvider);
   return FirebaseFirestore.instance
       .collection('business')
       .doc(userId)
@@ -31,8 +31,8 @@ businessProfileProvider = StreamProvider<BusinessProfile>((final ref) {
 });
 
 // Bookings count stream
-bookingsCountProvider = StreamProvider<int>((final ref) {
-  userId = ref.watch(currentUserIdProvider);
+final bookingsCountProvider = StreamProvider<int>((ref) {
+  final userId = ref.watch(currentUserIdProvider);
   return FirebaseFirestore.instance
       .collection('business')
       .doc(userId)
@@ -42,8 +42,8 @@ bookingsCountProvider = StreamProvider<int>((final ref) {
 });
 
 // Clients count stream (unique client IDs)
-clientsCountProvider = StreamProvider<int>((final ref) {
-  userId = ref.watch(currentUserIdProvider);
+final clientsCountProvider = StreamProvider<int>((ref) {
+  final userId = ref.watch(currentUserIdProvider);
   return FirebaseFirestore.instance
       .collection('business')
       .doc(userId)
@@ -55,7 +55,7 @@ clientsCountProvider = StreamProvider<int>((final ref) {
 // Recent bookings stream (last 10)
 final recentBookingsProvider =
     StreamProvider<List<Map<String, dynamic>>>((ref) {
-  userId = ref.watch(currentUserIdProvider);
+  final userId = ref.watch(currentUserIdProvider);
   return FirebaseFirestore.instance
       .collection('business')
       .doc(userId)
@@ -68,10 +68,10 @@ final recentBookingsProvider =
 });
 
 // Monthly revenue stream
-monthlyRevenueProvider = StreamProvider<double>((final ref) {
-  userId = ref.watch(currentUserIdProvider);
-  now = DateTime.now();
-  startOfMonth = DateTime(now.year, now.month);
+final monthlyRevenueProvider = StreamProvider<double>((ref) {
+  final userId = ref.watch(currentUserIdProvider);
+  final now = DateTime.now();
+  final startOfMonth = DateTime(now.year, now.month);
 
   return FirebaseFirestore.instance
       .collection('business')

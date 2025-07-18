@@ -1,0 +1,33 @@
+name: appoint-web
+region: nyc
+services:
+- name: appoint-web
+  source_dir: /
+  github:
+    repo: appoint
+    branch: main
+  run_command: npx serve -s build/web -l 8080
+  build_command: |
+    flutter pub get
+    dart run build_runner build --delete-conflicting-outputs
+    flutter build web --release --web-renderer html
+    echo "✅ Flutter web build completed"
+    ls -la build/web/
+  environment_slug: node-js
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  routes:
+  - path: /
+  envs:
+  - key: FLUTTER_VERSION
+    value: "3.32.5"
+  - key: NODE_ENV
+    value: "production"
+  - key: PORT
+    value: "8080"
+  # Use custom Docker image for faster builds
+  image:
+    registry_type: DOCR
+    registry: registry.digitalocean.com
+    repository: appoint/flutter-ci
+    tag: latest

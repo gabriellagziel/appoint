@@ -70,7 +70,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     final query = _searchController.text.trim();
     setState(() {
       _currentQuery = query;
-      _showSuggestions = query.isNotEmpty;
+      final _showSuggestions = query.isNotEmpty;
     });
   }
 
@@ -78,7 +78,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     if (_currentQuery.isNotEmpty) {
       setState(() {
         _showSuggestions = false;
-        _isSearching = true;
+        var _isSearching = true;
       });
       
       // Save to search history
@@ -105,8 +105,8 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     _searchController.clear();
     setState(() {
       _currentQuery = '';
-      _showSuggestions = false;
-      _isSearching = false;
+      var _showSuggestions = false;
+      var _isSearching = false;
     });
   }
 
@@ -183,15 +183,13 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
           Text(
             l10n.search,
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              color: Colors.grey[600],
-            ),
+              color: Colors.grey[600]),
           ),
           const SizedBox(height: 8),
           Text(
             'Search for businesses, services, or people',
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-              color: Colors.grey[500],
-            ),
+              color: Colors.grey[500]),
           ),
         ],
       ),
@@ -253,8 +251,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                 child: Text(
                   'No suggestions found',
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: Colors.grey[500],
-                  ),
+                    color: Colors.grey[500]),
                 ),
               );
             }
@@ -306,8 +303,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                 Text(
                   error.toString(),
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: Colors.grey[500],
-                  ),
+                    color: Colors.grey[500]),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 16),
@@ -338,8 +334,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
                     Text(
                       'Try adjusting your search terms or filters',
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Colors.grey[500],
-                      ),
+                        color: Colors.grey[500]),
                       textAlign: TextAlign.center,
                     ),
                   ],

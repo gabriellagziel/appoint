@@ -17,7 +17,7 @@ class AdminGuard extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    isAdmin = ref.watch(isAdminProvider);
+    final isAdmin = ref.watch(isAdminProvider);
 
     return isAdmin.when(
       data: (hasAdminAccess) {
@@ -121,7 +121,7 @@ mixin AdminRoleMixin {
   Future<bool> checkAdminRole(WidgetRef ref) async {
     try {
       return await ref.read(isAdminProvider.future);
-    } catch (e) {e) {
+    } catch (e) {
       return false;
     }
   }

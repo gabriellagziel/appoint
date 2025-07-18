@@ -5,19 +5,22 @@ class StudioAppointmentService {
   StudioAppointmentService({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
   final FirebaseFirestore _firestore;
+  
+  late QuerySnapshot<Map<String, dynamic>> snap;
+  late DocumentReference<Map<String, dynamic>> doc;
 
   CollectionReference<Map<String, dynamic>> get _col =>
       _firestore.collection('studio_appointments');
 
   Future<List<StudioAppointment>> fetchAppointments() async {
-    snap = await _col.get();
+    final snap = await _col.get();
     return snap.docs
         .map((d) => StudioAppointment.fromJson({...d.data(), 'id': d.id}))
         .toList();
   }
 
   Future<void> addAppointment(StudioAppointment appt) async {
-    doc = _col.doc(appt.id.isEmpty ? null : appt.id);
+    final doc = _col.doc(appt.id.isEmpty ? null : appt.id);
     await doc.set(appt.copyWith(id: doc.id).toJson());
   }
 

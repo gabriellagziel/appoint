@@ -6,8 +6,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final calendarServiceProvider =
     Provider<CalendarService>((ref) => CalendarService());
 
-googleEventsProvider = StreamProvider<List<CalendarEvent>>((final ref) {
-  authState = ref.watch(authStateProvider);
+final googleEventsProvider = StreamProvider<List<CalendarEvent>>((ref) {
+  final authState = ref.watch(authStateProvider);
   return authState.when(
     data: (user) {
       if (user == null) return const Stream.empty();
@@ -20,8 +20,8 @@ googleEventsProvider = StreamProvider<List<CalendarEvent>>((final ref) {
   );
 });
 
-outlookEventsProvider = StreamProvider<List<CalendarEvent>>((final ref) {
-  authState = ref.watch(authStateProvider);
+final outlookEventsProvider = StreamProvider<List<CalendarEvent>>((ref) {
+  final authState = ref.watch(authStateProvider);
   return authState.when(
     data: (user) {
       if (user == null) return const Stream.empty();

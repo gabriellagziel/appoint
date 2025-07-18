@@ -33,7 +33,7 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
         _hasActiveRequest =
             requests.any((req) => req.status == 'pending');
       });
-    } catch (e) {e) {
+    } catch (e) {
       // Handle error silently for now
     }
   }
@@ -58,16 +58,15 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
           ),
         );
       }
-    } catch (e) {e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to send privacy request: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
-    } finally {
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Failed to send privacy request: $e'),
+          backgroundColor: Colors.red,
+        ),
+      );
+    }
+    finally {
       if (mounted) {
         setState(() {
           _isLoading = false;
@@ -105,8 +104,7 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
                   ? 'You have a pending privacy request. Waiting for parent approval.'
                   : 'Request a private session from your parents.',
               style: TextStyle(
-                color: _hasActiveRequest ? Colors.orange : Colors.grey[600],
-              ),
+                color: _hasActiveRequest ? Colors.orange : Colors.grey[600]),
             ),
             const SizedBox(height: 16),
             if (_isLoading)

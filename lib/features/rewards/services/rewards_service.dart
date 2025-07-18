@@ -239,7 +239,7 @@ class RewardsService {
 
     while (points >= requiredPoints) {
       level++;
-      requiredPoints = 100 * (1 << (level - 1));
+      final requiredPoints = 100 * (1 << (level - 1));
     }
 
     return level;
@@ -255,7 +255,7 @@ class RewardsService {
   /// Get total number of achievements
   Future<int> _getTotalAchievements() async {
     final snapshot = await _firestore.collection('achievements').count().get();
-    return snapshot.count;
+    return snapshot.count ?? 0;
   }
 
   /// Get next available reward based on points
@@ -282,7 +282,8 @@ class RewardsService {
     ];
 
     for (final achievement in achievements) {
-      if (bookingsCount >= achievement['count'] as int) {
+      final count = achievement['count'] as int;
+      if (bookingsCount >= count) {
         await _unlockAchievement(userId, achievement['name'] as String, 
             achievement['points'] as int, AchievementType.booking);
       }
@@ -298,7 +299,8 @@ class RewardsService {
     ];
 
     for (final achievement in achievements) {
-      if (referralsCount >= achievement['count'] as int) {
+      final count = achievement['count'] as int;
+      if (referralsCount >= count) {
         await _unlockAchievement(userId, achievement['name'] as String, 
             achievement['points'] as int, AchievementType.referral);
       }
@@ -314,7 +316,8 @@ class RewardsService {
     ];
 
     for (final achievement in achievements) {
-      if (streakDays >= achievement['count'] as int) {
+      final count = achievement['count'] as int;
+      if (streakDays >= count) {
         await _unlockAchievement(userId, achievement['name'] as String, 
             achievement['points'] as int, AchievementType.streak);
       }

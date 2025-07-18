@@ -14,13 +14,14 @@ class AuthService {
   static const String redirectUri = EnvironmentConfig.authRedirectUri;
 
   final FirebaseAuth _firebaseAuth;
-  ErrorHandlingService _errorService = ErrorHandlingService();
+  final ErrorHandlingService _errorService = ErrorHandlingService();
+  IdTokenResult? token;
 
   Future<User?> currentUser() async => _firebaseAuth.currentUser;
 
   Stream<AppUser?> authStateChanges() => _firebaseAuth.authStateChanges().asyncMap((user) async {
       if (user == null) return null;
-      token = await user.getIdTokenResult(true);
+      final token = await user.getIdTokenResult(true);
       final claims = token.claims ?? <String, dynamic>{};
       final role = claims['role'] as String? ?? 'personal';
       return AppUser(
@@ -38,7 +39,7 @@ class AuthService {
         email: email,
         password: password,
       );
-    } on FirebaseAuthException catch (e) {e) {
+    } on FirebaseAuthException catch (e) {
       await _handleAuthException(e);
       rethrow;
     }
@@ -50,10 +51,10 @@ class AuthService {
 
   Future<UserCredential> signInWithGooglePopup() async {
     try {
-      googleProvider = GoogleAuthProvider();
+      final googleProvider = GoogleAuthProvider();
       googleProvider.setCustomParameters({'redirectUri': redirectUri});
       return await _firebaseAuth.signInWithPopup(googleProvider);
-    } on FirebaseAuthException catch (e) {e) {
+    } on FirebaseAuthException catch (e) {
       await _handleAuthException(e);
       rethrow;
     }
@@ -84,13 +85,12 @@ class AuthService {
 
   /// Sign in with Google and handle social account conflicts
   Future<UserCredential?> REDACTED_TOKEN(
-    BuildContext context,
-  ) async {
+    BuildContext context) async {
     try {
       return await signInWithGooglePopup();
-    } on FirebaseAuthException catch (e) {e) {
+    } on FirebaseAuthException catch (e) {
       if (isSocialAccountConflict(e)) {
-        choice = await handleSocialAccountConflict(context, e);
+        final choice = await handleSocialAccountConflict(context, e);
 
         switch (choice) {
           case 'link':
@@ -113,9 +113,9 @@ class AuthService {
 
   /// Handle account linking when user chooses to link accounts
   Future<UserCredential?> _handleAccountLinking(
-      FirebaseAuthException error,) async {
+      FirebaseAuthException error) async {
     try {
-      credential = getConflictingCredential(error);
+      final credential = getConflictingCredential(error);
       if (credential != null) {
         // Link the credential to the current user
         final currentUser = _firebaseAuth.currentUser;
@@ -123,7 +123,7 @@ class AuthService {
           return await currentUser.linkWithCredential(credential);
         }
       }
-    } on FirebaseAuthException catch (e) {e) {
+    } on FirebaseAuthException catch (e) {
       await _handleAuthException(e);
       rethrow;
     }
@@ -132,8 +132,8 @@ class AuthService {
 
   /// Handle Firebase Auth exceptions with proper error mapping
   Future<void> _handleAuthException(FirebaseAuthException e) async {
-    errorType = _mapFirebaseErrorToType(e.code);
-    severity = _getErrorSeverity(e.code);
+    final errorType = _mapFirebaseErrorToType(e.code);
+    final severity = _getErrorSeverity(e.code);
 
     await _errorService.handleError(
       e,

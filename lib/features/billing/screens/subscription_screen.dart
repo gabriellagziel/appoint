@@ -31,7 +31,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
   Future<void> _initializeWebView() async {
     try {
       // Create checkout session
-      sessionData = await StripeService().createCheckoutSession(
+      final sessionData = await StripeService().createCheckoutSession(
         studioId: widget.studioId,
         priceId: widget.priceId,
       );
@@ -39,7 +39,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
       final checkoutUrl = sessionData['url'] as String;
 
       // Initialize WebView controller
-      _controller = WebViewController()
+      final _controller = WebViewController()
         ..setJavaScriptMode(JavaScriptMode.unrestricted)
         ..setNavigationDelegate(
           NavigationDelegate(
@@ -81,7 +81,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
           ),
         )
         ..loadRequest(Uri.parse(checkoutUrl));
-    } catch (e) {e) {
+    } catch (e) {
       setState(() {
         _hasError = true;
         _errorMessage = 'Failed to initialize checkout: $e';
@@ -93,7 +93,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
   Future<void> _handleSuccessfulPayment(String url) async {
     try {
       // Extract session_id from URL
-      uri = Uri.parse(url);
+      final uri = Uri.parse(url);
       final sessionId = uri.queryParameters['session_id'];
 
       if (sessionId != null) {
@@ -117,15 +117,13 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
           Navigator.of(context).pop(true);
         }
       }
-    } catch (e) {e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Error confirming payment: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Error confirming payment: $e'),
+          backgroundColor: Colors.red,
+        ),
+      );
     }
   }
 
@@ -170,8 +168,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
                 Text(
                   widget.planName,
                   style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
+                        fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 8),
                 Text(

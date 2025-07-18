@@ -2,7 +2,7 @@ import 'package:appoint/models/booking.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-bookingServiceProvider = Provider<BookingService>((final ref) => BookingService());
+final bookingServiceProvider = Provider<BookingService>((ref) => BookingService());
 
 class BookingService {
 
@@ -15,9 +15,7 @@ class BookingService {
   Future<void> createBooking(Booking booking) async {
     try {
       await _firestore.collection('appointments').add(booking.toJson());
-    } catch (e) {e) {
-      // Removed debug print: debugPrint('❌ Error creating booking: $e');
-      // Removed debug print: debugPrint(st);
+    } catch (e) {
       rethrow;
     }
   }
@@ -31,11 +29,10 @@ class BookingService {
   /// Submits a booking to Firestore
   Future<void> submitBooking(Booking booking) async {
     try {
-      docRef = _firestore.collection(_bookingsCollection).doc();
-      bookingWithId = booking.copyWith(id: docRef.id);
+      final docRef = _firestore.collection(_bookingsCollection).doc();
+      final bookingWithId = booking.copyWith(id: docRef.id);
       await docRef.set(bookingWithId.toJson());
-    } catch (e) {e) {
-      // Removed debug print: debugPrint('Error submitting booking: $e\n$st');
+    } catch (e) {
       rethrow;
     }
   }
@@ -47,13 +44,13 @@ class BookingService {
       final snapshot = await _firestore
           .collection('appointments')
           .where('userId', isEqualTo: userId)
-          .orderBy('startTime')
+          .orderBy('dateTime')
           .get();
 
       return snapshot.docs
           .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
           .toList();
-    } catch (e) {e) {
+    } catch (e) {
       return [];
     }
   }
@@ -73,7 +70,7 @@ class BookingService {
       final allBookings = <Booking>[];
 
       // Execute batched queries
-      for (batch in batches) {
+      for (final batch in batches) {
         final snapshot = await _firestore
             .collection(_bookingsCollection)
             .where(FieldPath.documentId, whereIn: batch)
@@ -87,7 +84,7 @@ class BookingService {
       }
 
       return allBookings;
-    } catch (e) {e) {
+    } catch (e) {
       return [];
     }
   }
@@ -96,8 +93,7 @@ class BookingService {
   Future<void> cancelBooking(String bookingId) async {
     try {
       await _firestore.collection(_bookingsCollection).doc(bookingId).delete();
-    } catch (e) {e) {
-      // Removed debug print: debugPrint('Error canceling booking: $e\n$st');
+    } catch (e) {
       rethrow;
     }
   }
@@ -106,7 +102,7 @@ class BookingService {
   Stream<List<Booking>> getUserBookings(String userId) => _firestore
         .collection(_bookingsCollection)
         .where('userId', isEqualTo: userId)
-        .orderBy('startTime')
+        .orderBy('dateTime')
         .snapshots()
         .map((snapshot) => snapshot.docs
             .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
@@ -116,7 +112,7 @@ class BookingService {
   Stream<List<Booking>> getBusinessBookings(String businessId) => _firestore
         .collection(_bookingsCollection)
         .where('businessProfileId', isEqualTo: businessId)
-        .orderBy('startTime')
+        .orderBy('dateTime')
         .snapshots()
         .map((snapshot) => snapshot.docs
             .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
@@ -129,7 +125,7 @@ class BookingService {
           await _firestore.collection(_bookingsCollection).doc(bookingId).get();
       if (!doc.exists) return null;
       return Booking.fromJson({...doc.data()!, 'id': doc.id});
-    } catch (e) {e) {
+    } catch (e) {
       return null;
     }
   }
@@ -141,7 +137,7 @@ class BookingService {
           .collection(_bookingsCollection)
           .doc(booking.id)
           .update(booking.toJson());
-    } catch (e) {e) {
+    } catch (e) {
       rethrow;
     }
   }

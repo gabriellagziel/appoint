@@ -7,10 +7,10 @@ class DashboardService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
   Future<DashboardStats> fetchDashboardStats() async {
-    appointmentsSnap = await _firestore.collection('appointments').get();
+    final appointmentsSnap = await _firestore.collection('appointments').get();
     final totalAppointments = appointmentsSnap.size;
-    completedAppointments = appointmentsSnap.docs.where((final doc) {
-      status = doc.data()['status'] as String?;
+    final completedAppointments = appointmentsSnap.docs.where((final doc) {
+      final status = doc.data()['status'] as String?;
       return status == 'accepted' || status == 'completed';
     }).length;
 
@@ -36,7 +36,7 @@ class DashboardService {
   Stream<DashboardStats> watchDashboardStats() {
     final appointmentsStream =
         _firestore.collection('appointments').snapshots();
-    invitesStream = _firestore.collection('invites').snapshots();
+    final invitesStream = _firestore.collection('invites').snapshots();
     final paymentsStream =
         _firestore.collection('payments').doc('summary').snapshots();
 
@@ -55,12 +55,12 @@ class DashboardService {
       final totalAppointments = appointmentsSnapshot.size;
       final completedAppointments =
           appointmentsSnapshot.docs.where((doc) {
-        status = doc.data()['status'] as String?;
+        final status = doc.data()['status'] as String?;
         return status == 'accepted' || status == 'completed';
       }).length;
 
-      pendingInvites = invitesSnapshot.docs.where((final doc) {
-        status = doc.data()['status'] as String?;
+      final pendingInvites = invitesSnapshot.docs.where((final doc) {
+        final status = doc.data()['status'] as String?;
         return status == InviteStatus.pending.name;
       }).length;
 

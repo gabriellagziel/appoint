@@ -15,22 +15,22 @@ class StudioProfileScreen extends ConsumerStatefulWidget {
 class _StudioProfileScreenState extends ConsumerState<StudioProfileScreen> {
   StudioProfile? _profile;
   bool _loading = true;
-  _formKey = GlobalKey<FormState>();
+  final _formKey = GlobalKey<FormState>();
   late final StudioProfileService _service;
 
   @override
   void initState() {
     super.initState();
-    _service = StudioProfileService();
+    final _service = StudioProfileService();
     _loadProfile();
   }
 
   Future<void> _loadProfile() async {
     setState(() => _loading = true);
-    profile = await _service.fetchProfile(widget.studioId);
+    final profile = await _service.fetchProfile(widget.studioId);
     setState(() {
       _profile = profile;
-      _loading = false;
+      var _loading = false;
     });
   }
 

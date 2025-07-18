@@ -20,8 +20,7 @@ class UserProfileScreen extends ConsumerWidget {
             '• Chat messages\n'
             '• Payment history\n'
             '• Settings and preferences\n\n'
-            'This action is irreversible.',
-          ),
+            'This action is irreversible.'),
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
@@ -33,8 +32,7 @@ class UserProfileScreen extends ConsumerWidget {
                 _deleteAccount(context);
               },
               style: TextButton.styleFrom(
-                foregroundColor: Colors.red,
-              ),
+                foregroundColor: Colors.red),
               child: const Text('Delete Account'),
             ),
           ],
@@ -60,7 +58,7 @@ class UserProfileScreen extends ConsumerWidget {
       );
 
       // Delete the account
-      deletionService = UserDeletionService();
+      final deletionService = UserDeletionService();
       await deletionService.deleteCurrentUser();
 
       // Close loading dialog
@@ -75,9 +73,7 @@ class UserProfileScreen extends ConsumerWidget {
           (route) => false,
         );
       }
-    } catch (e) {e) {
-      // Close loading dialog
-      if (context.mounted) {
+    } catch (e) {
         Navigator.of(context).pop();
       }
 
@@ -95,8 +91,8 @@ class UserProfileScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    l10n = AppLocalizations.of(context)!;
-    authState = ref.watch(authStateProvider);
+    final l10n = AppLocalizations.of(context)!;
+    final authState = ref.watch(authStateProvider);
 
     return Scaffold(
       appBar: AppBar(title: Text(l10n.myProfile)),
@@ -119,7 +115,7 @@ class UserProfileScreen extends ConsumerWidget {
               ),
             );
           }
-          profileAsync = ref.watch(currentUserProfileProvider);
+          final profileAsync = ref.watch(currentUserProfileProvider);
           return profileAsync.when(
             data: (profile) {
               if (profile == null) {

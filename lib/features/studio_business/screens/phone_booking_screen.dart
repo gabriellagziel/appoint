@@ -13,11 +13,11 @@ class PhoneBookingScreen extends ConsumerStatefulWidget {
 }
 
 class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
-  _formKey = GlobalKey<FormState>();
-  _nameController = TextEditingController();
-  _phoneController = TextEditingController();
-  _dateController = TextEditingController();
-  _timeController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final _nameController = TextEditingController();
+  final _phoneController = TextEditingController();
+  final _dateController = TextEditingController();
+  final _timeController = TextEditingController();
   bool _isProcessing = false;
 
   @override
@@ -31,7 +31,7 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    profileAsync = ref.watch(businessProfileProvider);
+    final profileAsync = ref.watch(businessProfileProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Phone Booking')),
@@ -190,16 +190,16 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
     setState(() => _isProcessing = true);
 
     try {
-      phoneNumber = _phoneController.text.trim();
-      customerName = _nameController.text.trim();
+      final phoneNumber = _phoneController.text.trim();
+      final customerName = _nameController.text.trim();
       final date = _dateController.text;
       final time = _timeController.text;
 
       // Generate unique booking code
-      bookingCode = _generateBookingCode();
+      final bookingCode = _generateBookingCode();
 
       // Check if user exists in Firestore
-      userExists = await _checkUserExists(phoneNumber);
+      final userExists = await _checkUserExists(phoneNumber);
 
       if (userExists) {
         // Send in-app notification and create booking
@@ -214,8 +214,7 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
       // Save booking request to Firestore
       await _saveBookingRequest(
           customerName, phoneNumber, date, time, bookingCode,);
-    } catch (e) {e) {
-      if (mounted) {
+    } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
@@ -236,7 +235,7 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
           .get();
 
       return snapshot.docs.isNotEmpty;
-    } catch (e) {e) {
+    } catch (e) {
       // If error, assume user doesn't exist and proceed with WhatsApp
       return false;
     }
@@ -305,8 +304,8 @@ We'll see you soon!
   }
 
   String _generateBookingCode() {
-    timestamp = DateTime.now().millisecondsSinceEpoch;
-    random = (timestamp % 10000).toString().padLeft(4, '0');
+    final timestamp = DateTime.now().millisecondsSinceEpoch;
+    final random = (timestamp % 10000).toString().padLeft(4, '0');
     return 'BK$random';
   }
 

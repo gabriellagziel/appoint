@@ -19,7 +19,7 @@ class _PersonalSchedulerScreenState
 
   @override
   Widget build(BuildContext context) {
-    apptsAsync = ref.watch(personalAppointmentsProvider);
+    final apptsAsync = ref.watch(personalAppointmentsProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('My Schedule')),
@@ -75,14 +75,14 @@ class _PersonalSchedulerScreenState
   }
 
   Future<void> _add() async {
-    newAppt = await _showEditDialog();
+    final newAppt = await _showEditDialog();
     if (newAppt != null) {
       await ref.read(REDACTED_TOKEN).addAppointment(newAppt);
     }
   }
 
   Future<void> _edit(PersonalAppointment appt) async {
-    updated = await _showEditDialog(existing: appt);
+    final updated = await _showEditDialog(existing: appt);
     if (updated != null) {
       await ref
           .read(REDACTED_TOKEN)
@@ -96,8 +96,8 @@ class _PersonalSchedulerScreenState
 
   Future<PersonalAppointment?> _showEditDialog(
       {PersonalAppointment? existing,}) {
-    titleCtrl = TextEditingController(text: existing?.title);
-    descCtrl = TextEditingController(text: existing?.description);
+    final titleCtrl = TextEditingController(text: existing?.title);
+    final descCtrl = TextEditingController(text: existing?.description);
     var start = existing?.startTime ?? _focusedDay;
     var end =
         existing?.endTime ?? _focusedDay.add(const Duration(hours: 1));
@@ -139,7 +139,7 @@ class _PersonalSchedulerScreenState
                           }
                         },
                         child: Text(
-                            'Date: ${start.year}-${start.month}-${start.day}',),
+                            'Date: ${start.year}-${start.month}-${start.day}'),
                       ),
                     ),
                     Expanded(

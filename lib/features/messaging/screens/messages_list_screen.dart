@@ -70,15 +70,13 @@ class MessagesListScreen extends ConsumerWidget {
             Text(
               'No messages yet',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                color: Colors.grey[600],
-              ),
+                color: Colors.grey[600]),
             ),
             const SizedBox(height: 8),
             Text(
               'Start a conversation!',
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Colors.grey[500],
-              ),
+                color: Colors.grey[500]),
             ),
             const SizedBox(height: 24),
             ElevatedButton.icon(
@@ -115,8 +113,7 @@ class MessagesListScreen extends ConsumerWidget {
             child: Text(
               chat.name ?? 'Chat',
               style: TextStyle(
-                fontWeight: isUnread ? FontWeight.bold : FontWeight.normal,
-              ),
+                fontWeight: isUnread ? FontWeight.bold : FontWeight.normal),
             ),
           ),
           if (chat.isMuted)

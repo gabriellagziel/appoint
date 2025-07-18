@@ -13,14 +13,14 @@ class BusinessAvailabilityService {
 
   /// Save the business availability configuration to local storage
   Future<void> saveConfiguration(Map<String, dynamic> config) async {
-    prefs = await SharedPreferences.getInstance();
+    final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_storageKey, jsonEncode(config));
   }
 
   /// Load the business availability configuration from local storage
   Future<List<BusinessAvailability>> loadConfiguration() async {
-    prefs = await SharedPreferences.getInstance();
-    configString = prefs.getString(_storageKey);
+    final prefs = await SharedPreferences.getInstance();
+    final configString = prefs.getString(_storageKey);
 
     if (configString == null) {
       // Return default configuration if no saved config exists
@@ -36,14 +36,14 @@ class BusinessAvailabilityService {
     }
 
     try {
-      config = jsonDecode(configString) as Map<String, dynamic>;
+      final config = jsonDecode(configString) as Map<String, dynamic>;
       final availabilityList = config['availability'] as List<dynamic>;
 
       return availabilityList
           .map((item) =>
               BusinessAvailability.fromJson(item as Map<String, dynamic>),)
           .toList();
-    } catch (e) {e) {
+    } catch (e) {
       // Return default configuration if parsing fails
       return [
         for (int i = 0; i < 7; i++)
@@ -60,8 +60,8 @@ class BusinessAvailabilityService {
   /// Update a specific day's availability
   Future<void> updateDay(
       int weekday, final BusinessAvailability availability,) async {
-    currentConfig = await loadConfiguration();
-    updatedConfig = currentConfig.map((final day) {
+    final currentConfig = await loadConfiguration();
+    final updatedConfig = currentConfig.map((final day) {
       if (day.weekday == weekday) {
         return availability;
       }

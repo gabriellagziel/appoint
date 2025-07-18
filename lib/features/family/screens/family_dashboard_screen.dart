@@ -12,8 +12,8 @@ class FamilyDashboardScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    authState = ref.watch(authStateProvider);
-    l10n = AppLocalizations.of(context)!;
+    final authState = ref.watch(authStateProvider);
+    final l10n = AppLocalizations.of(context)!;
 
     return authState.when(
       data: (user) {
@@ -23,8 +23,8 @@ class FamilyDashboardScreen extends ConsumerWidget {
           );
         }
 
-        familyLinksState = ref.watch(familyLinksProvider(user.uid));
-        privacyRequestsAsync = ref.watch(privacyRequestsProvider);
+        final familyLinksState = ref.watch(familyLinksProvider(user.uid));
+        final privacyRequestsAsync = ref.watch(privacyRequestsProvider);
 
         return Scaffold(
           appBar: AppBar(
@@ -70,7 +70,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
     final FamilyLinksState familyLinksState,
     final String parentId,
   ) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
 
     return Card(
       child: Padding(
@@ -156,7 +156,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
     final WidgetRef ref,
     final FamilyLink link,
   ) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
 
     return Card(
       margin: const EdgeInsets.only(bottom: 8),
@@ -192,7 +192,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
     final WidgetRef ref,
     final FamilyLink link,
   ) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
 
     return Card(
       margin: const EdgeInsets.only(bottom: 8),
@@ -227,7 +227,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
 
   Widget _buildChildNameWidget(
       BuildContext context, final WidgetRef ref, final FamilyLink link,) {
-    childProfileAsync = ref.watch(userProfileProvider(link.childId));
+    final childProfileAsync = ref.watch(userProfileProvider(link.childId));
 
     return childProfileAsync.when(
       data: (profile) {
@@ -262,7 +262,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
     final WidgetRef ref,
     final FamilyLink link,
   ) async {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
 
     try {
       await ref
@@ -273,8 +273,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
           SnackBar(content: Text(l10n.otpResentSuccessfully)),
         );
       }
-    } catch (e) {e) {
-      if (context.mounted) {
+    } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text(l10n.failedToResendOtp(e))),
         );
@@ -287,7 +286,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
     final WidgetRef ref,
     final FamilyLink link,
   ) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
 
     showDialog(
       context: context,
@@ -311,12 +310,10 @@ class FamilyDashboardScreen extends ConsumerWidget {
                     SnackBar(content: Text(l10n.inviteCancelledSuccessfully)),
                   );
                 }
-              } catch (e) {e) {
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text(l10n.failedToCancelInvite(e))),
-                  );
-                }
+              } catch (e) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text(l10n.failedToCancelInvite(e))),
+                );
               }
             },
             child: Text(l10n.yesCancel),
@@ -338,8 +335,10 @@ class FamilyDashboardScreen extends ConsumerWidget {
           '/family/permissions',
           arguments: link,
         );
+        break;
       case 'revoke':
         _showRevokeConfirmation(context, ref, link);
+        break;
     }
   }
 
@@ -348,7 +347,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
     final WidgetRef ref,
     final AsyncValue<List<PrivacyRequest>> privacyRequestsAsync,
   ) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
 
     return Card(
       child: Padding(
@@ -395,7 +394,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
 
   Widget _buildPrivacyRequestCard(final BuildContext context,
       WidgetRef ref, final PrivacyRequest request,) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
 
     return Card(
       margin: const EdgeInsets.only(bottom: 8),
@@ -429,18 +428,18 @@ class FamilyDashboardScreen extends ConsumerWidget {
       final WidgetRef ref,
       final PrivacyRequest request,
       String action,) async {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
 
     try {
       // Get the family service and handle the privacy request
-      familyService = ref.read(familyServiceProvider);
+      final familyService = ref.read(familyServiceProvider);
       await familyService.handlePrivacyRequest(request.id, action);
 
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
-                'Privacy request ${action == 'approve' ? 'approved' : 'denied'} successfully!',),
+                'Privacy request ${action == 'approve' ? 'approved' : 'denied'} successfully!'),
             backgroundColor: action == 'approve' ? Colors.green : Colors.red,
           ),
         );
@@ -448,21 +447,19 @@ class FamilyDashboardScreen extends ConsumerWidget {
 
       // Refresh the privacy requests list
       ref.invalidate(privacyRequestsProvider);
-    } catch (e) {e) {
-      if (context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(l10n.failedToActionPrivacyRequest(action, e)),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(l10n.failedToActionPrivacyRequest(action, e)),
+          backgroundColor: Colors.red,
+        ),
+      );
     }
   }
 
   void _showRevokeConfirmation(
       BuildContext context, final WidgetRef ref, final FamilyLink link,) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
 
     showDialog(
       context: context,
@@ -479,7 +476,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
               Navigator.of(context).pop();
               try {
                 // Call family service to revoke access
-                familyService = ref.read(familyServiceProvider);
+                final familyService = ref.read(familyServiceProvider);
                 await familyService.revokeAccess(link.id);
 
                 if (context.mounted) {
@@ -495,15 +492,13 @@ class FamilyDashboardScreen extends ConsumerWidget {
                 ref
                     .read(familyLinksProvider(link.parentId).notifier)
                     .loadLinks();
-              } catch (e) {e) {
-                if (context.mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text(l10n.failedToRevokeAccess(e)),
-                      backgroundColor: Colors.red,
-                    ),
-                  );
-                }
+              } catch (e) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(l10n.failedToRevokeAccess(e)),
+                    backgroundColor: Colors.red,
+                  ),
+                );
               }
             },
             child: Text(l10n.revoke),

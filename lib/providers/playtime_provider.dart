@@ -36,26 +36,26 @@ final AutoDisposeStreamProvider<List<PlaytimeBackground>> allBackgroundsProvider
           .toList(),),);
 
 // Service Provider
-playtimeServiceProvider = Provider<PlaytimeService>((final ref) => PlaytimeService());
+final playtimeServiceProvider = Provider<PlaytimeService>((ref) => PlaytimeService());
 
 // Auth Provider
-authProvider = Provider<FirebaseAuth>((final ref) => FirebaseAuth.instance);
+final authProvider = Provider<FirebaseAuth>((ref) => FirebaseAuth.instance);
 
 // Games Providers
-gamesProvider = FutureProvider<List<PlaytimeGame>>((final ref) async {
-  service = ref.read(playtimeServiceProvider);
+final gamesProvider = FutureProvider<List<PlaytimeGame>>((ref) async {
+  final service = ref.read(playtimeServiceProvider);
   return service.getGames();
 });
 
 final systemGamesProvider =
     FutureProvider<List<PlaytimeGame>>((ref) async {
-  service = ref.read(playtimeServiceProvider);
+  final service = ref.read(playtimeServiceProvider);
   return service.getGames();
 });
 
-userGamesProvider = FutureProvider<List<PlaytimeGame>>((final ref) async {
-  service = ref.read(playtimeServiceProvider);
-  user = ref.read(authProvider).currentUser;
+final userGamesProvider = FutureProvider<List<PlaytimeGame>>((ref) async {
+  final service = ref.read(playtimeServiceProvider);
+  final user = ref.read(authProvider).currentUser;
   if (user == null) return [];
 
   return service.getGames();
@@ -63,10 +63,10 @@ userGamesProvider = FutureProvider<List<PlaytimeGame>>((final ref) async {
 
 final FutureProviderFamily<PlaytimeGame?, String> gameByIdProvider = FutureProvider.family<PlaytimeGame?, String>(
     (ref, final gameId) async {
-  games = await ref.read(gamesProvider.future);
+  final games = await ref.read(gamesProvider.future);
   try {
     return games.firstWhere((game) => game.id == gameId);
-  } catch (e) {e) {
+  } catch (e) {
     return null;
   }
 });
@@ -74,14 +74,14 @@ final FutureProviderFamily<PlaytimeGame?, String> gameByIdProvider = FutureProvi
 // Sessions Providers
 final sessionsProvider =
     FutureProvider<List<PlaytimeSession>>((ref) async {
-  service = ref.read(playtimeServiceProvider);
+  final service = ref.read(playtimeServiceProvider);
   return service.getSessions();
 });
 
 final userSessionsProvider =
     FutureProvider<List<PlaytimeSession>>((ref) async {
-  service = ref.read(playtimeServiceProvider);
-  user = ref.read(authProvider).currentUser;
+  final service = ref.read(playtimeServiceProvider);
+  final user = ref.read(authProvider).currentUser;
   if (user == null) return [];
 
   return service.getSessions();
@@ -89,22 +89,22 @@ final userSessionsProvider =
 
 final pendingSessionsProvider =
     FutureProvider<List<PlaytimeSession>>((ref) async {
-  service = ref.read(playtimeServiceProvider);
+  final service = ref.read(playtimeServiceProvider);
   return service.getSessions();
 });
 
 final confirmedSessionsProvider =
     FutureProvider<List<PlaytimeSession>>((ref) async {
-  service = ref.read(playtimeServiceProvider);
+  final service = ref.read(playtimeServiceProvider);
   return service.getSessions();
 });
 
 final FutureProviderFamily<PlaytimeSession?, String> sessionByIdProvider = FutureProvider.family<PlaytimeSession?, String>(
     (ref, final sessionId) async {
-  sessions = await ref.read(sessionsProvider.future);
+  final sessions = await ref.read(sessionsProvider.future);
   try {
     return sessions.firstWhere((session) => session.id == sessionId);
-  } catch (e) {e) {
+  } catch (e) {
     return null;
   }
 });
@@ -112,36 +112,36 @@ final FutureProviderFamily<PlaytimeSession?, String> sessionByIdProvider = Futur
 // Backgrounds Providers
 final backgroundsProvider =
     FutureProvider<List<PlaytimeBackground>>((ref) async {
-  service = ref.read(playtimeServiceProvider);
+  final service = ref.read(playtimeServiceProvider);
   return service.getBackgrounds();
 });
 
 final systemBackgroundsProvider =
     FutureProvider<List<PlaytimeBackground>>((ref) async {
-  service = ref.read(playtimeServiceProvider);
+  final service = ref.read(playtimeServiceProvider);
   return service.getBackgrounds();
 });
 
 final pendingBackgroundsProvider =
     FutureProvider<List<PlaytimeBackground>>((ref) async {
-  service = ref.read(playtimeServiceProvider);
+  final service = ref.read(playtimeServiceProvider);
   return service.getBackgrounds();
 });
 
 final approvedBackgroundsProvider =
     FutureProvider<List<PlaytimeBackground>>((ref) async {
-  service = ref.read(playtimeServiceProvider);
+  final service = ref.read(playtimeServiceProvider);
   return service.getBackgrounds();
 });
 
 final FutureProviderFamily<PlaytimeBackground?, String> backgroundByIdProvider =
     FutureProvider.family<PlaytimeBackground?, String>(
         (ref, final backgroundId) async {
-  backgrounds = await ref.read(backgroundsProvider.future);
+  final backgrounds = await ref.read(backgroundsProvider.future);
   try {
     return backgrounds
         .firstWhere((background) => background.id == backgroundId);
-  } catch (e) {e) {
+  } catch (e) {
     return null;
   }
 });
@@ -149,13 +149,13 @@ final FutureProviderFamily<PlaytimeBackground?, String> backgroundByIdProvider =
 // Chat Providers
 final FutureProviderFamily<PlaytimeChat, String> chatProvider = FutureProvider.family<PlaytimeChat, String>(
     (ref, final sessionId) async {
-  service = ref.read(playtimeServiceProvider);
+  final service = ref.read(playtimeServiceProvider);
   return service.getChat(sessionId);
 });
 
 // User Settings Providers
-childPermissionProvider = FutureProvider<bool>((final ref) async {
-  user = ref.read(authProvider).currentUser;
+final childPermissionProvider = FutureProvider<bool>((ref) async {
+  final user = ref.read(authProvider).currentUser;
   if (user == null) return false;
 
   // This would typically fetch from Firestore
@@ -163,8 +163,8 @@ childPermissionProvider = FutureProvider<bool>((final ref) async {
   return true;
 });
 
-parentApprovalStatusProvider = FutureProvider<bool>((final ref) async {
-  user = ref.read(authProvider).currentUser;
+final parentApprovalStatusProvider = FutureProvider<bool>((ref) async {
+  final user = ref.read(authProvider).currentUser;
   if (user == null) return false;
 
   // This would typically fetch from Firestore
@@ -183,8 +183,8 @@ class PlaytimeGameNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.createGame(game);
       state = const AsyncValue.data(null);
-    } catch (e) {e, stack) {
-      state = AsyncValue.error(e, stack);
+    } catch (e) {
+      final state = AsyncValue.error(e, stack);
     }
   }
 
@@ -193,8 +193,8 @@ class PlaytimeGameNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.updateGame(game);
       state = const AsyncValue.data(null);
-    } catch (e) {e, stack) {
-      state = AsyncValue.error(e, stack);
+    } catch (e) {
+      final state = AsyncValue.error(e, stack);
     }
   }
 
@@ -203,8 +203,8 @@ class PlaytimeGameNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.deleteGame(gameId);
       state = const AsyncValue.data(null);
-    } catch (e) {e, stack) {
-      state = AsyncValue.error(e, stack);
+    } catch (e) {
+      final state = AsyncValue.error(e, stack);
     }
   }
 }
@@ -219,8 +219,8 @@ class PlaytimeSessionNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.createSession(session);
       state = const AsyncValue.data(null);
-    } catch (e) {e, stack) {
-      state = AsyncValue.error(e, stack);
+    } catch (e) {
+      final state = AsyncValue.error(e, stack);
     }
   }
 
@@ -229,8 +229,8 @@ class PlaytimeSessionNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.updateSession(session);
       state = const AsyncValue.data(null);
-    } catch (e) {e, stack) {
-      state = AsyncValue.error(e, stack);
+    } catch (e) {
+      final state = AsyncValue.error(e, stack);
     }
   }
 }
@@ -253,12 +253,12 @@ class PlaytimeBackgroundNotifier extends StateNotifier<AsyncValue<void>> {
       if (kIsWeb) {
         throw UnsupportedError('createBackground is not supported on the web');
       }
-      imageFile = File(imagePath);
+      final imageFile = File(imagePath);
       await _service.createBackground(
           name, description, imageFile, category, tags,);
       state = const AsyncValue.data(null);
-    } catch (e) {e, stack) {
-      state = AsyncValue.error(e, stack);
+    } catch (e) {
+      final state = AsyncValue.error(e, stack);
     }
   }
 }
@@ -274,8 +274,8 @@ class PlaytimeChatNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.sendMessage(sessionId, message);
       state = const AsyncValue.data(null);
-    } catch (e) {e, stack) {
-      state = AsyncValue.error(e, stack);
+    } catch (e) {
+      final state = AsyncValue.error(e, stack);
     }
   }
 }
@@ -283,37 +283,37 @@ class PlaytimeChatNotifier extends StateNotifier<AsyncValue<void>> {
 // State Notifier Providers
 final playtimeGameNotifierProvider =
     StateNotifierProvider<PlaytimeGameNotifier, AsyncValue<void>>((ref) {
-  service = ref.read(playtimeServiceProvider);
+  final service = ref.read(playtimeServiceProvider);
   return PlaytimeGameNotifier(service);
 });
 
 final playtimeSessionNotifierProvider =
     StateNotifierProvider<PlaytimeSessionNotifier, AsyncValue<void>>(
         (ref) {
-  service = ref.read(playtimeServiceProvider);
+  final service = ref.read(playtimeServiceProvider);
   return PlaytimeSessionNotifier(service);
 });
 
 final REDACTED_TOKEN =
     StateNotifierProvider<PlaytimeBackgroundNotifier, AsyncValue<void>>(
         (ref) {
-  service = ref.read(playtimeServiceProvider);
+  final service = ref.read(playtimeServiceProvider);
   return PlaytimeBackgroundNotifier(service);
 });
 
 final playtimeChatNotifierProvider =
     StateNotifierProvider<PlaytimeChatNotifier, AsyncValue<void>>((ref) {
-  service = ref.read(playtimeServiceProvider);
+  final service = ref.read(playtimeServiceProvider);
   return PlaytimeChatNotifier(service);
 });
 
 // Utility Providers
 final FutureProviderFamily<bool, String> isUserInSessionProvider =
     FutureProvider.family<bool, String>((ref, final sessionId) async {
-  user = ref.read(authProvider).currentUser;
+  final user = ref.read(authProvider).currentUser;
   if (user == null) return false;
 
-  session = await ref.read(sessionByIdProvider(sessionId).future);
+  final session = await ref.read(sessionByIdProvider(sessionId).future);
   if (session == null) return false;
 
   return session.participants.contains(user.uid);
@@ -321,10 +321,10 @@ final FutureProviderFamily<bool, String> isUserInSessionProvider =
 
 final FutureProviderFamily<String?, String> userSessionRoleProvider =
     FutureProvider.family<String?, String>((ref, final sessionId) async {
-  user = ref.read(authProvider).currentUser;
+  final user = ref.read(authProvider).currentUser;
   if (user == null) return null;
 
-  session = await ref.read(sessionByIdProvider(sessionId).future);
+  final session = await ref.read(sessionByIdProvider(sessionId).future);
   if (session == null) return null;
 
   // For simplified model, we'll return a default role

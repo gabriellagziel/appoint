@@ -13,8 +13,8 @@ class DashboardScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    l10n = AppLocalizations.of(context)!;
-    statsAsync = ref.watch(dashboardStatsProvider);
+    final l10n = AppLocalizations.of(context)!;
+    final statsAsync = ref.watch(dashboardStatsProvider);
 
     return AppScaffold(
       title: l10n.dashboard,

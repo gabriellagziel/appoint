@@ -28,12 +28,12 @@ class AmbassadorService {
             .where('date', isLessThanOrEqualTo: dateRange.end);
       }
 
-      snapshot = await query.get();
+      final snapshot = await query.get();
       return snapshot.docs
           .map((doc) =>
-              AmbassadorStats.fromJson(doc.data()! as Map<String, dynamic>),)
+              AmbassadorStats.fromJson(doc.data()!),)
           .toList();
-    } catch (e) {e) {
+    } catch (e) {
       // TODO(username): Implement proper error handling and fallback data
       return [];
     }
@@ -44,11 +44,11 @@ class AmbassadorService {
 
     // Group by country for chart
     final countryGroups = <String, List<AmbassadorStats>>{};
-    for (stat in stats) {
+    for (final stat in stats) {
       countryGroups.putIfAbsent(stat.country, () => []).add(stat);
     }
 
-    for (entry in countryGroups.entries) {
+    for (final entry in countryGroups.entries) {
       final countryStats = entry.value;
       final totalAmbassadors = countryStats.fold<int>(
           0, (total, final stat) => total + stat.ambassadors,);
@@ -91,14 +91,14 @@ class AmbassadorService {
             .where('date', isLessThanOrEqualTo: range.end);
       }
 
-      snapshot = await query.get();
+      final snapshot = await query.get();
       final counts = <DateTime, int>{};
-      for (doc in snapshot.docs) {
+      for (final doc in snapshot.docs) {
         final ts = doc['date'] as Timestamp?;
         if (ts == null) continue;
         final date =
             DateTime(ts.toDate().year, ts.toDate().month, ts.toDate().day);
-        ambassadors = (doc['ambassadors'] as int?) ?? 0;
+        final ambassadors = (doc['ambassadors'] as int?) ?? 0;
         counts.update(date, (v) => v + ambassadors,
             ifAbsent: () => ambassadors,);
       }
@@ -108,8 +108,8 @@ class AmbassadorService {
           .toList();
       list.sort((a, final b) => a.date.compareTo(b.date));
       return list;
-    } catch (e) {e) {
-      now = DateTime.now();
+    } catch (e) {
+      final now = DateTime.now();
       return List.generate(7, (i) => TimeSeriesPoint(
             date: now.subtract(Duration(days: 6 - i)), count: (i + 1) * 4,),);
     }

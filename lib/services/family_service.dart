@@ -28,7 +28,7 @@ class FamilyService {
       headers: {'Content-Type': 'application/json'},
     );
 
-    link = FamilyLink.fromJson(jsonDecode(resp.body));
+    final link = FamilyLink.fromJson(jsonDecode(resp.body));
     await _logFamilyEvent('invite_sent', parentId, {
       'childId': link.childId,
       'childEmail': childEmail,
@@ -93,7 +93,7 @@ class FamilyService {
         'timestamp': FieldValue.serverTimestamp(),
         'data': data,
       });
-    } catch (e) {e) {
+    } catch (e) {
       // Don't throw on analytics failures
       // Removed debug print: debugPrint('Failed to log family event: $e');
     }
@@ -108,7 +108,7 @@ class FamilyService {
   }
 
   Future<List<Permission>> fetchPermissions(String linkId) async {
-    resp = await http.get(Uri.parse('$_base/permissions?linkId=$linkId'));
+    final resp = await http.get(Uri.parse('$_base/permissions?linkId=$linkId'));
     return (jsonDecode(resp.body) as List)
         .map((j) => Permission.fromJson(j))
         .toList();
@@ -127,7 +127,7 @@ class FamilyService {
   }
 
   Future<List<PrivacyRequest>> fetchPrivacyRequests(
-      String parentId,) async {
+      String parentId) async {
     final resp =
         await http.get(Uri.parse('$_base/privacy-requests?parentId=$parentId'));
     return (jsonDecode(resp.body) as List)
@@ -163,7 +163,7 @@ class FamilyService {
     );
 
     if (resp.statusCode == 200) {
-      data = jsonDecode(resp.body);
+      final data = jsonDecode(resp.body);
       final verified = data['verified'] ?? false;
 
       if (verified) {

@@ -35,8 +35,8 @@ class _AmbassadorDashboardScreenState
   @override
   void initState() {
     super.initState();
-    _notificationService = widget.notificationService;
-    _branchService = widget.branchService;
+    final _notificationService = widget.notificationService;
+    final _branchService = widget.branchService;
     _loadBranches();
     _initializeNotifications();
   }
@@ -46,12 +46,12 @@ class _AmbassadorDashboardScreenState
       _isLoadingBranches = true;
     });
     try {
-      branches = await _branchService.fetchBranches();
+      final branches = await _branchService.fetchBranches();
       setState(() {
         _branches = branches;
-        _isLoadingBranches = false;
+        var _isLoadingBranches = false;
       });
-    } catch (e) {e) {
+    } catch (e) {
       setState(() {
         _isLoadingBranches = false;
       });
@@ -85,8 +85,8 @@ class _AmbassadorDashboardScreenState
 
   @override
   Widget build(BuildContext context) {
-    ambassadorDataAsync = ref.watch(ambassadorDataProvider);
-    ambassadorsOverTimeAsync = ref.watch(ambassadorsOverTimeProvider);
+    final ambassadorDataAsync = ref.watch(ambassadorDataProvider);
+    final ambassadorsOverTimeAsync = ref.watch(ambassadorsOverTimeProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -304,8 +304,8 @@ class _AmbassadorDashboardScreenState
       onPressed: () {
         setState(() {
           selectedCountry = null;
-          selectedLanguage = null;
-          selectedDateRange = null;
+          final selectedLanguage = null;
+          final selectedDateRange = null;
         });
         ref.read(ambassadorDataProvider.notifier).clearFilters();
       },
@@ -503,9 +503,9 @@ class _AmbassadorDashboardScreenState
                   barTouchData: BarTouchData(enabled: false),
                   titlesData: FlTitlesData(
                     rightTitles: const AxisTitles(
-                        ,),
+                        ),
                     topTitles: const AxisTitles(
-                        ,),
+                        ),
                     bottomTitles: AxisTitles(
                       sideTitles: SideTitles(
                         showTitles: true,

@@ -31,12 +31,12 @@ class AmbassadorDataNotifier extends StateNotifier<AsyncValue<AmbassadorData>> {
         dateRange: _selectedDateRange,
       );
 
-      chartData = _service.generateChartData(stats);
-      data = AmbassadorData(stats: stats, chartData: chartData);
+      final chartData = _service.generateChartData(stats);
+      final data = AmbassadorData(stats: stats, chartData: chartData);
 
-      state = AsyncValue.data(data);
-    } catch (e) {error, stackTrace) {
-      state = AsyncValue.error(error, stackTrace);
+      final state = AsyncValue.data(data);
+    } catch (e) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 
@@ -67,7 +67,7 @@ final ambassadorDataProvider =
 // Convenience providers for filtered data
 final ambassadorStatsProvider =
     Provider<AsyncValue<List<AmbassadorStats>>>((ref) {
-  dataAsync = ref.watch(ambassadorDataProvider);
+  final dataAsync = ref.watch(ambassadorDataProvider);
   return dataAsync.when(
     data: (data) => AsyncValue.data(data.stats),
     loading: () => const AsyncValue.loading(),
@@ -77,7 +77,7 @@ final ambassadorStatsProvider =
 
 final ambassadorChartDataProvider =
     Provider<AsyncValue<List<ChartDataPoint>>>((ref) {
-  dataAsync = ref.watch(ambassadorDataProvider);
+  final dataAsync = ref.watch(ambassadorDataProvider);
   return dataAsync.when(
     data: (data) => AsyncValue.data(data.chartData),
     loading: () => const AsyncValue.loading(),
@@ -92,7 +92,7 @@ final ambassadorsOverTimeProvider =
 final ambassadorFiltersProvider =
     StateProvider<Map<String, dynamic>>((ref) => {});
 
-selectedCountryProvider = StateProvider<String?>((final ref) => null);
-selectedLanguageProvider = StateProvider<String?>((final ref) => null);
+final selectedCountryProvider = StateProvider<String?>((ref) => null);
+final selectedLanguageProvider = StateProvider<String?>((ref) => null);
 final selectedDateRangeProvider =
     StateProvider<DateTimeRange?>((ref) => null);

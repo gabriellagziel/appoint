@@ -17,14 +17,14 @@ class BusinessAvailabilityNotifier
 
   void toggleOpen(int weekday, final bool isOpen) {
     state = [
-      for (avail in state)
+      for (final avail in state)
         if (avail.weekday == weekday) avail.copyWith(isOpen: isOpen) else avail,
     ];
   }
 
   void setHours(int weekday, final TimeOfDay start, final TimeOfDay end) {
     state = [
-      for (avail in state)
+      for (final avail in state)
         if (avail.weekday == weekday)
           avail.copyWith(start: start, end: end)
         else

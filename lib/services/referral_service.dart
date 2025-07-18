@@ -13,19 +13,19 @@ class ReferralService {
   final FirebaseAuth _auth;
 
   Future<String> generateReferralCode(String userId) async {
-    docRef = _firestore.collection('referrals').doc(userId);
-    existing = await docRef.get();
-    data = existing.data();
+    final docRef = _firestore.collection('referrals').doc(userId);
+    final existing = await docRef.get();
+    final data = existing.data();
     if (data != null && data['code'] is String) {
       return data['code'] as String;
     }
 
     String code;
     var exists = true;
-    random = Random();
+    final random = Random();
     const chars = 'REDACTED_TOKEN';
     do {
-      code = List.generate(8, (_) => chars[random.nextInt(chars.length)])
+      final code = List.generate(8, (_) => chars[random.nextInt(chars.length)])
           .join();
       final query = await _firestore
           .collection('referrals')

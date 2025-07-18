@@ -7,7 +7,7 @@ class AmbassadorQuotaDashboardScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    globalStatsAsync = ref.watch(globalQuotaStatisticsProvider);
+    final globalStatsAsync = ref.watch(globalQuotaStatisticsProvider);
 
     return Scaffold(
       appBar: AppBar(

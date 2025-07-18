@@ -13,7 +13,7 @@ class SearchScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    resultsAsync = ref.watch(searchResultsProvider);
+    final resultsAsync = ref.watch(searchResultsProvider);
 
     return AppScaffold(
       title: 'Search',

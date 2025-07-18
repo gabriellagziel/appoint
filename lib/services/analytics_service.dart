@@ -376,6 +376,18 @@ class AnalyticsService {
     );
   }
 
+  // MARK: - Generic Event Logging Methods
+
+  /// Generic event logging method - use this for any custom events
+  static Future<void> logEvent(String name, {Map<String, dynamic>? params}) async {
+    await _instance._analytics.logEvent(name: name, parameters: params?.cast<String, Object>());
+  }
+
+  /// Generic screen view logging method - use this for tracking screen views
+  static Future<void> logScreenView(String screenName) async {
+    await _instance._analytics.logScreenView(screenName: screenName);
+  }
+
   // MARK: - Business Events
 
   /// Track revenue events

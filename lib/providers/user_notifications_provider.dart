@@ -5,8 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final userNotificationsProvider =
     FutureProvider<List<NotificationPayload>>((ref) {
-  uid = ref.watch(authProvider).currentUser?.uid;
+  final uid = ref.watch(authProvider).currentUser?.uid;
   if (uid == null) return Future.value([]);
-  notificationService = NotificationService();
+  final notificationService = NotificationService();
   return notificationService.fetchNotifications(uid);
 });

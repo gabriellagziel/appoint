@@ -18,11 +18,11 @@ class BroadcastService {
 
   // Create a new broadcast message
   Future<String> createBroadcastMessage(
-      AdminBroadcastMessage message,) async {
+      AdminBroadcastMessage message) async {
     try {
-      docRef = await _broadcastsCollection.add(message.toJson());
+      final docRef = await _broadcastsCollection.add(message.toJson());
       return docRef.id;
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to create broadcast message: $e');
     }
   }
@@ -41,7 +41,7 @@ class BroadcastService {
   // Get broadcast message by ID
   Future<AdminBroadcastMessage?> getBroadcastMessage(String id) async {
     try {
-      doc = await _broadcastsCollection.doc(id).get();
+      final doc = await _broadcastsCollection.doc(id).get();
       if (doc.exists) {
         return AdminBroadcastMessage.fromJson({
           'id': doc.id,
@@ -49,14 +49,14 @@ class BroadcastService {
         });
       }
       return null;
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to get broadcast message: $e');
     }
   }
 
   // Estimate target audience size
   Future<int> estimateTargetAudience(
-      BroadcastTargetingFilters filters,) async {
+      BroadcastTargetingFilters filters) async {
     try {
       Query query = _usersCollection;
 
@@ -94,9 +94,9 @@ class BroadcastService {
             query.where('createdAt', isLessThanOrEqualTo: filters.joinedBefore);
       }
 
-      snapshot = await query.get();
+      final snapshot = await query.get();
       return snapshot.docs.length;
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to estimate target audience: $e');
     }
   }
@@ -104,13 +104,13 @@ class BroadcastService {
   // Send broadcast message
   Future<void> sendBroadcastMessage(String messageId) async {
     try {
-      message = await getBroadcastMessage(messageId);
+      final message = await getBroadcastMessage(messageId);
       if (message == null) {
         throw Exception('Message not found');
       }
 
       // Get target users
-      targetUsers = await _getTargetUsers(message.targetingFilters);
+      final targetUsers = await _getTargetUsers(message.targetingFilters);
 
       // Update message with actual recipient count
       await _broadcastsCollection.doc(messageId).update({
@@ -119,10 +119,10 @@ class BroadcastService {
       });
 
       // Send FCM messages
-      for (user in targetUsers) {
+      for (final user in targetUsers) {
         await _sendFCMNotification(user, message);
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Update message with failure status
       await _broadcastsCollection.doc(messageId).update({
         'status': BroadcastMessageStatus.failed.name,
@@ -134,7 +134,7 @@ class BroadcastService {
 
   // Get target users based on filters
   Future<List<UserProfile>> _getTargetUsers(
-      BroadcastTargetingFilters filters,) async {
+      BroadcastTargetingFilters filters) async {
     try {
       Query query = _usersCollection;
 
@@ -172,14 +172,14 @@ class BroadcastService {
             query.where('createdAt', isLessThanOrEqualTo: filters.joinedBefore);
       }
 
-      snapshot = await query.get();
+      final snapshot = await query.get();
       return snapshot.docs
           .map((doc) => UserProfile.fromJson({
                 'id': doc.id,
-                ...(doc.data()! as Map<String, dynamic>),
+                ...(doc.data()!),
               }),)
           .toList();
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to get target users: $e');
     }
   }
@@ -189,19 +189,19 @@ class BroadcastService {
       UserProfile user, final AdminBroadcastMessage message,) async {
     try {
       // Get user's FCM token
-      userDoc = await _usersCollection.doc(user.id).get();
-      fcmToken = userDoc.data()?['fcmToken'] as String?;
+      final userDoc = await _usersCollection.doc(user.id).get();
+      final fcmToken = userDoc.data()?['fcmToken'] as String?;
 
       if (fcmToken == null) {
         throw Exception('User has no FCM token');
       }
 
-      // Prepare notification payload
-      // TODO(username): Implement FCM notification sending via Firebase Functions
-      // For now, we'll just log it
-      // Removed debug print: debugPrint('Sending FCM notification to ${user.id}');
-    } catch (e) {e) {
-      // Removed debug print: debugPrint('Failed to send FCM notification to ${user.id}: $e');
+      // Stub implementation for FCM notification sending
+      // In a real implementation, this would call Firebase Functions to send the notification
+      print('FCM notification would be sent to ${user.id} with token: $fcmToken');
+      print('Message: ${message.title} - ${message.body}');
+    } catch (e) {
+      print('Failed to send FCM notification to ${user.id}: $e');
       rethrow;
     }
   }
@@ -229,7 +229,7 @@ class BroadcastService {
       }
 
       await _broadcastsCollection.doc(messageId).update(updates);
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to update message analytics: $e');
     }
   }
@@ -238,11 +238,119 @@ class BroadcastService {
   Future<void> deleteBroadcastMessage(String id) async {
     try {
       await _broadcastsCollection.doc(id).delete();
-    } catch (e) {e) {
+    } catch (e) {
       throw Exception('Failed to delete broadcast message: $e');
     }
+  }
+
+  // Get messages for a specific user based on targeting filters
+  Future<List<AdminBroadcastMessage>> getMessagesForUser(UserProfile user) async {
+    try {
+      // Get all broadcast messages
+      final allMessages = await _broadcastsCollection
+          .where('status', isEqualTo: BroadcastMessageStatus.sent.name)
+          .orderBy('createdAt', descending: true)
+          .get();
+
+      final List<AdminBroadcastMessage> userMessages = [];
+
+      for (final doc in allMessages.docs) {
+        final message = AdminBroadcastMessage.fromJson({
+          'id': doc.id,
+          ...doc.data(),
+        });
+
+        // Check if user matches the targeting filters
+        if (await _userMatchesFilters(user, message.targetingFilters)) {
+          userMessages.add(message);
+        }
+      }
+
+      return userMessages;
+    } catch (e) {
+      throw Exception('Failed to get messages for user: $e');
+    }
+  }
+
+  // Check if a user matches the targeting filters
+  Future<bool> _userMatchesFilters(UserProfile user, BroadcastTargetingFilters filters) async {
+    // If no filters are set, message goes to all users
+    if (filters.countries == null &&
+        filters.cities == null &&
+        filters.subscriptionTiers == null &&
+        filters.userRoles == null &&
+        filters.accountStatuses == null &&
+        filters.joinedAfter == null &&
+        filters.joinedBefore == null) {
+      return true;
+    }
+
+    // Get user's complete data from Firestore
+    final userDoc = await _usersCollection.doc(user.id).get();
+    if (!userDoc.exists) {
+      return false;
+    }
+
+    final userData = userDoc.data()!;
+
+    // Check country filter
+    if (filters.countries != null && filters.countries!.isNotEmpty) {
+      final userCountry = userData['country'] as String?;
+      if (userCountry == null || !filters.countries!.contains(userCountry)) {
+        return false;
+      }
+    }
+
+    // Check city filter
+    if (filters.cities != null && filters.cities!.isNotEmpty) {
+      final userCity = userData['city'] as String?;
+      if (userCity == null || !filters.cities!.contains(userCity)) {
+        return false;
+      }
+    }
+
+    // Check subscription tier filter
+    if (filters.subscriptionTiers != null && filters.subscriptionTiers!.isNotEmpty) {
+      final userSubscriptionTier = userData['subscriptionTier'] as String?;
+      if (userSubscriptionTier == null || !filters.subscriptionTiers!.contains(userSubscriptionTier)) {
+        return false;
+      }
+    }
+
+    // Check user role filter
+    if (filters.userRoles != null && filters.userRoles!.isNotEmpty) {
+      final userRole = userData['role'] as String?;
+      if (userRole == null || !filters.userRoles!.contains(userRole)) {
+        return false;
+      }
+    }
+
+    // Check account status filter
+    if (filters.accountStatuses != null && filters.accountStatuses!.isNotEmpty) {
+      final userStatus = userData['status'] as String?;
+      if (userStatus == null || !filters.accountStatuses!.contains(userStatus)) {
+        return false;
+      }
+    }
+
+    // Check join date filters
+    if (filters.joinedAfter != null) {
+      final userCreatedAt = userData['createdAt'] as Timestamp?;
+      if (userCreatedAt == null || userCreatedAt.toDate().isBefore(filters.joinedAfter!)) {
+        return false;
+      }
+    }
+
+    if (filters.joinedBefore != null) {
+      final userCreatedAt = userData['createdAt'] as Timestamp?;
+      if (userCreatedAt == null || userCreatedAt.toDate().isAfter(filters.joinedBefore!)) {
+        return false;
+      }
+    }
+
+    return true;
   }
 }
 
 // Provider
-broadcastServiceProvider = Provider<BroadcastService>((final ref) => BroadcastService());
+final broadcastServiceProvider = Provider<BroadcastService>((ref) => BroadcastService());

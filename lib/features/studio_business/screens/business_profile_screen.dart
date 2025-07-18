@@ -7,8 +7,8 @@ class BusinessProfileScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    profile = ref.watch(businessProfileProvider);
-    notifier = ref.read(businessProfileProvider.notifier);
+    final profile = ref.watch(businessProfileProvider);
+    final notifier = ref.read(businessProfileProvider.notifier);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Business Profile')),

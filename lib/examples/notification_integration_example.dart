@@ -172,7 +172,7 @@ class BookingScreenExample extends ConsumerWidget {
     try {
       // Simulate booking sync that might throw a conflict
       await _simulateBookingSync();
-    } on BookingConflictException catch (e) {e) {
+    } on BookingConflictException catch (e) {
       // Show conflict dialog
       final resolution = await showBookingConflictDialog(
         context,
@@ -193,7 +193,7 @@ class BookingScreenExample extends ConsumerWidget {
           // User dismissed dialog, do nothing
           break;
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Show error notification
       ref.read(uiNotificationServiceProvider).showError('Sync failed: $e');
     }

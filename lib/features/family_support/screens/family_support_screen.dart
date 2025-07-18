@@ -11,14 +11,14 @@ class FamilySupportScreen extends ConsumerStatefulWidget {
 }
 
 class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
-  _formKey = GlobalKey<FormState>();
-  _subjectController = TextEditingController();
-  _messageController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final _subjectController = TextEditingController();
+  final _messageController = TextEditingController();
   bool _submitting = false;
 
   @override
   Widget build(BuildContext context) {
-    ticketsAsync = ref.watch(supportTicketsProvider);
+    final ticketsAsync = ref.watch(supportTicketsProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Family Support')),
@@ -35,7 +35,7 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
                     controller: _subjectController,
                     decoration: const InputDecoration(labelText: 'Subject'),
                     validator: (v) =>
-                        v == null || v.isEmpty ? 'Required' : null,
+                        final v = = null || v.isEmpty ? 'Required' : null,
                   ),
                   const SizedBox(height: 8),
                   TextFormField(
@@ -43,7 +43,7 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
                     decoration: const InputDecoration(labelText: 'Message'),
                     maxLines: 3,
                     validator: (v) =>
-                        v == null || v.isEmpty ? 'Required' : null,
+                        final v = = null || v.isEmpty ? 'Required' : null,
                   ),
                   const SizedBox(height: 8),
                   ElevatedButton(
@@ -101,8 +101,7 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
           const SnackBar(content: Text('Support ticket submitted')),
         );
       }
-    } catch (e) {e) {
-      if (mounted) {
+    } catch (e) {
         ScaffoldMessenger.of(context)
             .showSnackBar(SnackBar(content: Text('Error: $e')));
       }

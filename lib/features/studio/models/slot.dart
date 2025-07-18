@@ -10,7 +10,7 @@ class Slot {
 
   factory Slot.fromFirestore(DocumentSnapshot doc) {
     try {
-      data = doc.data() as Map<String, dynamic>?;
+      final data = doc.data() as Map<String, dynamic>?;
       if (data == null) {
         throw Exception('Document data is null');
       }
@@ -32,7 +32,7 @@ class Slot {
             : DateTime.parse(endTime.toString()),
         isBooked: isBooked,
       );
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('❌ Error parsing slot from Firestore: $e');
       // Removed debug print: debugPrint('📄 Document ID: ${doc.id}');
       rethrow;
@@ -53,7 +53,7 @@ class SlotWithId extends Slot {
   });
 
   factory SlotWithId.fromFirestore(DocumentSnapshot doc) {
-    slot = Slot.fromFirestore(doc);
+    final slot = Slot.fromFirestore(doc);
     return SlotWithId(
       id: doc.id,
       startTime: slot.startTime,

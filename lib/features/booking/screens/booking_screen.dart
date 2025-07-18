@@ -2,14 +2,19 @@ import 'package:appoint/features/booking/booking_helper.dart';
 import 'package:appoint/features/booking/services/booking_service.dart';
 import 'package:appoint/features/selection/providers/selection_provider.dart';
 import 'package:appoint/models/booking.dart';
+import 'package:appoint/services/stripe_service.dart';
+import 'package:appoint/services/usage_monitor.dart';
 import 'package:appoint/utils/snackbar_extensions.dart';
 import 'package:appoint/widgets/animations/fade_slide_in.dart';
 import 'package:appoint/widgets/animations/tap_scale_feedback.dart';
 import 'package:appoint/widgets/booking_confirmation_sheet.dart';
+import 'package:appoint/widgets/booking_blocker_modal.dart';
 import 'package:appoint/widgets/bottom_sheet_manager.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class BookingScreen extends ConsumerStatefulWidget {
   const BookingScreen({super.key});
@@ -21,28 +26,105 @@ class BookingScreen extends ConsumerStatefulWidget {
 class _BookingScreenState extends ConsumerState<BookingScreen> {
   bool _isSubmitting = false;
 
+  @override
+  void initState() {
+    super.initState();
+    // Reset weekly count if needed when booking screen loads
+    UsageMonitorService.resetWeeklyCountIfNeeded();
+  }
+
+  Future<void> _checkUsageLimitAndSubmit() async {
+    final userId = FirebaseAuth.instance.currentUser?.uid;
+    if (userId == null) return;
+
+    final weeklyCount = await ref.read(bookingServiceProvider).getWeeklyBookingCount(userId);
+    
+    if (weeklyCount >= 21) {
+      _showUpgradeDialog();
+    } else {
+      _submitBooking();
+    }
+  }
+
+  void _showUpgradeDialog() {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Upgrade to Business'),
+        content: const Text(
+          'You have reached your weekly limit of 21 bookings. Upgrade to Business mode for unlimited bookings.'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: () async {
+              Navigator.of(context).pop();
+              final userId = FirebaseAuth.instance.currentUser?.uid;
+              if (userId != null) {
+                final checkoutUrl = await StripeService().fetchCheckoutUrl(userId);
+                if (checkoutUrl != null) {
+                  await launchUrl(Uri.parse(checkoutUrl), mode: LaunchMode.externalApplication);
+                }
+              }
+            },
+            child: const Text('Upgrade'),
+          ),
+        ],
+      ),
+    );
+  }
+
   Future<void> _submitBooking() async {
     setState(() => _isSubmitting = true);
 
-    BookingHelper(ref).submitBooking().then((_) {
+    try {
+      // Check if user can create booking (usage limits)
+      final canBook = await BookingHelper(ref).canCreateBooking();
+      
+      if (!canBook) {
+        // Show business mode modal
+        if (mounted) {
+          final shouldUpgrade = await showBookingBlockerModal(context);
+          if (shouldUpgrade == true) {
+            // Use our Stripe integration for upgrade
+            final userId = FirebaseAuth.instance.currentUser?.uid;
+            if (userId != null) {
+              final checkoutUrl = await StripeService().fetchCheckoutUrl(userId);
+              if (checkoutUrl != null) {
+                await launchUrl(Uri.parse(checkoutUrl), mode: LaunchMode.externalApplication);
+              } else {
+                if (mounted) {
+                  context.showSnackBar('Failed to load checkout. Please try again.');
+                }
+              }
+            }
+          }
+        }
+        return;
+      }
+
+      // Proceed with booking if allowed
+      await BookingHelper(ref).submitBooking();
+      
       if (!mounted) return;
       context.showSnackBar('Booking confirmed');
       Navigator.pop(context);
-    }).catchError((e, final st) {
-      // Removed debug print: debugPrint('Error during booking: $e\n$st');
+    } catch (e) {
       if (!mounted) return;
       context.showSnackBar('Failed to confirm booking',
           backgroundColor: Colors.red,);
-    }).whenComplete(() {
+    } finally {
       if (mounted) setState(() => _isSubmitting = false);
-    });
+    }
   }
 
   void _showConfirmationSheet() {
-    staffId = ref.read(staffSelectionProvider);
-    serviceName = ref.read(serviceNameProvider) ?? 'Service';
-    dateTime = ref.read(selectedSlotProvider);
-    duration = ref.read(serviceDurationProvider);
+    final staffId = ref.read(staffSelectionProvider);
+    final serviceName = ref.read(serviceNameProvider) ?? 'Service';
+    final dateTime = ref.read(selectedSlotProvider);
+    final duration = ref.read(serviceDurationProvider);
     if (staffId == null || dateTime == null || duration == null) return;
 
     final summary =
@@ -55,7 +137,7 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
         onCancel: () => Navigator.of(context).pop(),
         onConfirm: () {
           Navigator.of(context).pop();
-          _submitBooking();
+          _checkUsageLimitAndSubmit();
         },
       ),
     );
@@ -63,10 +145,10 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    staffId = ref.watch(staffSelectionProvider);
-    serviceId = ref.watch(serviceSelectionProvider);
-    dateTime = ref.watch(selectedSlotProvider);
-    duration = ref.watch(serviceDurationProvider);
+    final staffId = ref.watch(staffSelectionProvider);
+    final serviceId = ref.watch(serviceSelectionProvider);
+    final dateTime = ref.watch(selectedSlotProvider);
+    final duration = ref.watch(serviceDurationProvider);
 
     return Scaffold(
       appBar: AppBar(title: const Text('Book Appointment')),
@@ -132,7 +214,7 @@ class BookingListView extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    bookingsStream = ref.watch(bookingServiceProvider).getBookings();
+    final bookingsStream = ref.watch(bookingServiceProvider).getBookings();
 
     return StreamBuilder<List<Booking>>(
       stream: bookingsStream,

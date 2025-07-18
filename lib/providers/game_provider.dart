@@ -15,17 +15,17 @@ class GameNotifier extends StateNotifier<AsyncValue<List<Game>>> {
       // TODO(username): Implement actual game loading from API or Firestore
       await Future.delayed(const Duration(seconds: 1));
       state = const AsyncValue.data([]);
-    } catch (e) {error, stackTrace) {
-      state = AsyncValue.error(error, stackTrace);
+    } catch (e) {
+      final state = AsyncValue.error(error, stackTrace);
     }
   }
 
   Future<void> addGame(Game game) async {
     try {
       final currentGames = state.value ?? [];
-      state = AsyncValue.data([...currentGames, game]);
-    } catch (e) {error, stackTrace) {
-      state = AsyncValue.error(error, stackTrace);
+      final state = AsyncValue.data([...currentGames, game]);
+    } catch (e) {
+      final state = AsyncValue.error(error, stackTrace);
     }
   }
 
@@ -34,9 +34,9 @@ class GameNotifier extends StateNotifier<AsyncValue<List<Game>>> {
       final currentGames = state.value ?? [];
       final updatedGames =
           currentGames.map((g) => g.id == game.id ? game : g).toList();
-      state = AsyncValue.data(updatedGames);
-    } catch (e) {error, stackTrace) {
-      state = AsyncValue.error(error, stackTrace);
+      final state = AsyncValue.data(updatedGames);
+    } catch (e) {
+      final state = AsyncValue.error(error, stackTrace);
     }
   }
 
@@ -45,9 +45,9 @@ class GameNotifier extends StateNotifier<AsyncValue<List<Game>>> {
       final currentGames = state.value ?? [];
       final updatedGames =
           currentGames.where((g) => g.id != gameId).toList();
-      state = AsyncValue.data(updatedGames);
-    } catch (e) {error, stackTrace) {
-      state = AsyncValue.error(error, stackTrace);
+      final state = AsyncValue.data(updatedGames);
+    } catch (e) {
+      final state = AsyncValue.error(error, stackTrace);
     }
   }
 }

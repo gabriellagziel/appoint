@@ -8,8 +8,8 @@ class ParentalControlScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    settings = ref.watch(childSettingsProvider);
-    notifier = ref.read(childSettingsProvider.notifier);
+    final settings = ref.watch(childSettingsProvider);
+    final notifier = ref.read(childSettingsProvider.notifier);
 
     return Scaffold(
       appBar: AppBar(
