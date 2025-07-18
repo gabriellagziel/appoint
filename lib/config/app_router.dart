@@ -67,6 +67,7 @@ import 'package:appoint/features/notifications/enhanced_notifications_screen.dar
 import 'package:appoint/features/settings/enhanced_settings_screen.dart';
 import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
 import 'package:appoint/features/profile/enhanced_profile_screen.dart';
+import 'package:appoint/l10n/app_localizations.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
     initialLocation: '/',
@@ -426,11 +427,17 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
             const StaffAvailabilityScreen(),
       ),
     ],
-    errorBuilder: (context, final state) => Scaffold(
-      body: Center(
-        child: Text('No route defined for ${state.uri.path}'),
-      ),
-    ),
+    errorBuilder: (context, final state) {
+      final l10n = AppLocalizations.of(context)!;
+      return Scaffold(
+        body: Center(
+          child: Text(
+            l10n.noRouteDefinedForStateuripath(state.uri.path),
+            textAlign: TextAlign.center,
+          ),
+        ),
+      );
+    },
   ),);
 
 // Enhanced meeting details screen with Google Maps integration
