@@ -29,17 +29,23 @@ export ANDROID_SDK_ROOT
 export ANDROID_HOME="$ANDROID_SDK_ROOT"
 export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH"
 
-yes | sdkmanager --licenses
-sdkmanager --install "platform-tools" "platforms;android-33" "build-tools;33.0.2"
-
 # Install Flutter if not present
 if ! command -v flutter &>/dev/null; then
   log "Installing Flutter SDK"
   cd "$HOME"
-  git clone --depth 1 --branch stable https://github.com/flutter/flutter.git
+  curl -L https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.22.2-stable.tar.xz -o flutter.tar.xz
+  tar xf flutter.tar.xz
+  rm flutter.tar.xz
   export PATH="$HOME/flutter/bin:$PATH"
-  flutter precache
+  flutter --version
+  flutter precache --web --linux --android
 fi
+
+# Accept Android licenses via Flutter helper (more reliable than sdkmanager)
+yes | flutter doctor --android-licenses || true
+
+# Install required Android platforms/build-tools
+yes | sdkmanager --install "platform-tools" "platforms;android-33" "build-tools;33.0.2" || true
 
 cd "$PROJECT_DIR"
 # Run readiness script if exists
