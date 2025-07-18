@@ -33,10 +33,13 @@ export PATH="$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$ANDROID_SDK_ROOT/platfo
 if ! command -v flutter &>/dev/null; then
   log "Installing Flutter SDK"
   cd "$HOME"
-  curl -L https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.22.2-stable.tar.xz -o flutter.tar.xz
-  tar xf flutter.tar.xz
-  rm flutter.tar.xz
+  # Get the very latest Flutter (main) which contains newest Dart (>=3.8)
+  git clone --depth 1 --branch main https://github.com/flutter/flutter.git
+  # (Clone into ~/flutter)
   export PATH="$HOME/flutter/bin:$PATH"
+  # Switch to main channel and upgrade to ensure latest engine/Dart
+  flutter channel main
+  flutter upgrade -f
   flutter --version
   flutter precache --web --linux --android
 fi
