@@ -1,4 +1,7 @@
-name: Docker Push to DigitalOcean Registry
+name: Docker Push
+
+push:
+  branches: [ main ]
 
 on:
   workflow_dispatch:
