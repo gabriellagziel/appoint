@@ -1,4 +1,7 @@
-name: Branch Protection Compliance Check
+name: Branch Protection Check
+
+push:
+  branches: [ main ]
 
 on:
   pull_request:
