@@ -68,6 +68,7 @@ import 'package:appoint/features/settings/enhanced_settings_screen.dart';
 import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
 import 'package:appoint/features/profile/enhanced_profile_screen.dart';
 import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/features/onboarding/permissions_onboarding_screen.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
     initialLocation: '/',
@@ -81,6 +82,11 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         path: '/onboarding',
         name: 'onboarding',
         builder: (context, final state) => const OnboardingScreen(),
+      ),
+      GoRoute(
+        path: '/onboarding/permissions',
+        name: 'permissionsOnboarding',
+        builder: (context, final state) => const PermissionsOnboardingScreen(),
       ),
       GoRoute(
         path: '/login',
