@@ -13,7 +13,7 @@ class PermissionsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    permissionsAsync = ref.watch(permissionsProvider(familyLink.id));
+    final permissionsAsync = ref.watch(permissionsProvider(familyLink.id));
 
     return Scaffold(
       appBar: AppBar(
@@ -148,7 +148,7 @@ class PermissionsScreen extends ConsumerWidget {
       );
 
       // Call family service to update permission
-      familyService = ref.read(familyServiceProvider);
+      final familyService = ref.read(familyServiceProvider);
       await familyService.updatePermissions(
         familyLink.id,
         [updatedPermission],
@@ -166,15 +166,13 @@ class PermissionsScreen extends ConsumerWidget {
 
       // Refresh the permissions list
       ref.invalidate(permissionsProvider(familyLink.id));
-    } catch (e) {e) {
-      if (context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to update permission: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Failed to update permission: $e'),
+          backgroundColor: Colors.red,
+        ),
+      );
     }
   }
 }

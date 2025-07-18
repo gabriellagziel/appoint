@@ -14,10 +14,10 @@ class FirestoreService {
 
   // Generic method to get collection with error handling
   static Stream<QuerySnapshot> getCollectionStream(
-      String collectionPath,) {
+      String collectionPath) {
     try {
       return _firestore.collection(collectionPath).snapshots();
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('🚨 Firestore collection stream error: $e');
       rethrow;
     }
@@ -28,7 +28,7 @@ class FirestoreService {
       String collectionPath, final String documentId,) async {
     try {
       return await _firestore.collection(collectionPath).doc(documentId).get();
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('🚨 Firestore document get error: $e');
       rethrow;
     }
@@ -39,7 +39,7 @@ class FirestoreService {
       String collectionPath, final String documentId,) {
     try {
       return _firestore.collection(collectionPath).doc(documentId).snapshots();
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('🚨 Firestore document stream error: $e');
       rethrow;
     }
@@ -50,7 +50,7 @@ class FirestoreService {
       String collectionPath, final Map<String, dynamic> data,) async {
     try {
       return await _firestore.collection(collectionPath).add(data);
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('🚨 Firestore add document error: $e');
       rethrow;
     }
@@ -61,7 +61,7 @@ class FirestoreService {
       String documentId, final Map<String, dynamic> data,) async {
     try {
       await _firestore.collection(collectionPath).doc(documentId).update(data);
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('🚨 Firestore update document error: $e');
       rethrow;
     }
@@ -72,7 +72,7 @@ class FirestoreService {
       String collectionPath, final String documentId,) async {
     try {
       await _firestore.collection(collectionPath).doc(documentId).delete();
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('🚨 Firestore delete document error: $e');
       rethrow;
     }
@@ -89,7 +89,7 @@ class FirestoreService {
         query = queryBuilder(query);
       }
       return await query.get();
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('🚨 Firestore query error: $e');
       rethrow;
     }

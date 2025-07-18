@@ -19,35 +19,35 @@ class GoogleCalendarService {
   AutoRefreshingAuthClient? _client;
 
   Future<encrypt.Key> _getEncryptionKey() async {
-    existing = await _storage.read(key: _encryptionKeyKey);
+    final existing = await _storage.read(key: _encryptionKeyKey);
     if (existing != null) {
       return encrypt.Key.fromBase64(existing);
     }
-    key = encrypt.Key.fromSecureRandom(32);
+    final key = encrypt.Key.fromSecureRandom(32);
     await _storage.write(key: _encryptionKeyKey, value: key.base64);
     return key;
   }
 
   Future<String> _encryptData(String plainText) async {
-    key = await _getEncryptionKey();
-    iv = encrypt.IV.fromSecureRandom(16);
-    encrypter = encrypt.Encrypter(encrypt.AES(key));
-    encrypted = encrypter.encrypt(plainText, iv: iv);
+    final key = await _getEncryptionKey();
+    final iv = encrypt.IV.fromSecureRandom(16);
+    final encrypter = encrypt.Encrypter(encrypt.AES(key));
+    final encrypted = encrypter.encrypt(plainText, iv: iv);
     return jsonEncode({'iv': iv.base64, 'data': encrypted.base64});
   }
 
   Future<String> _decryptData(String payload) async {
-    key = await _getEncryptionKey();
-    map = jsonDecode(payload) as Map<String, dynamic>;
-    iv = encrypt.IV.fromBase64(map['iv'] as String);
+    final key = await _getEncryptionKey();
+    final map = jsonDecode(payload) as Map<String, dynamic>;
+    final iv = encrypt.IV.fromBase64(map['iv'] as String);
     final data = map['data'] as String;
-    encrypter = encrypt.Encrypter(encrypt.AES(key));
+    final encrypter = encrypt.Encrypter(encrypt.AES(key));
     return encrypter.decrypt64(data, iv: iv);
   }
 
   Future<void> signInWithGoogleCalendar() async {
     // If credentials already stored, just load them.
-    creds = await _loadCredentials();
+    final creds = await _loadCredentials();
     if (creds != null) {
       _setClientFromCredentials(creds);
       return;
@@ -67,7 +67,7 @@ class GoogleCalendarService {
       callbackUrlScheme: Uri.parse(GoogleConfig.redirectUri).scheme,
     );
 
-    code = Uri.parse(result).queryParameters['code'];
+    final code = Uri.parse(result).queryParameters['code'];
     if (code == null || code.isEmpty) {
       throw Exception('Authorization code not found');
     }
@@ -106,9 +106,9 @@ class GoogleCalendarService {
   }
 
   Future<List<CalendarListEntry>> getCalendars() async {
-    client = await _getClient();
-    api = CalendarApi(client);
-    list = await api.calendarList.list();
+    final client = await _getClient();
+    final api = CalendarApi(client);
+    final list = await api.calendarList.list();
     return list.items ?? <CalendarListEntry>[];
   }
 
@@ -119,9 +119,9 @@ class GoogleCalendarService {
     required final DateTime end,
     final String? description,
   }) async {
-    client = await _getClient();
-    api = CalendarApi(client);
-    event = Event()
+    final client = await _getClient();
+    final api = CalendarApi(client);
+    final event = Event()
       ..summary = summary
       ..description = description
       ..start = (EventDateTime()..dateTime = start.toUtc())
@@ -132,7 +132,7 @@ class GoogleCalendarService {
 
   Future<AutoRefreshingAuthClient> _getClient() async {
     if (_client != null) return _client!;
-    creds = await _loadCredentials();
+    final creds = await _loadCredentials();
     if (creds == null) {
       throw Exception('Not authenticated with Google');
     }
@@ -140,29 +140,29 @@ class GoogleCalendarService {
   }
 
   AutoRefreshingAuthClient _setClientFromCredentials(
-      AccessCredentials creds,) {
-    clientId = ClientId(GoogleConfig.clientId);
-    client = autoRefreshingClient(clientId, creds, http.Client());
+      AccessCredentials creds) {
+    final clientId = ClientId(GoogleConfig.clientId);
+    final client = autoRefreshingClient(clientId, creds, http.Client());
     client.credentialUpdates.listen(_saveCredentials);
     _client = client;
     return client;
   }
 
   Future<AccessCredentials?> _loadCredentials() async {
-    encrypted = await _storage.read(key: _credentialKey);
+    final encrypted = await _storage.read(key: _credentialKey);
     if (encrypted == null) return null;
     try {
-      decrypted = await _decryptData(encrypted);
-      data = jsonDecode(decrypted) as Map<String, dynamic>;
+      final decrypted = await _decryptData(encrypted);
+      final data = jsonDecode(decrypted) as Map<String, dynamic>;
       return AccessCredentials.fromJson(data);
-    } catch (e) {_) {
+    } catch (e) {
       return null;
     }
   }
 
   Future<void> _saveCredentials(AccessCredentials credentials) async {
-    jsonData = jsonEncode(credentials.toJson());
-    encrypted = await _encryptData(jsonData);
+    final jsonData = jsonEncode(credentials.toJson());
+    final encrypted = await _encryptData(jsonData);
     await _storage.write(key: _credentialKey, value: encrypted);
   }
 

@@ -18,7 +18,7 @@ class AdminService {
 
   // User Management
   Future<List<AdminUser>> fetchAllUsers() async {
-    snap = await _firestore.collection('users').get();
+    final snap = await _firestore.collection('users').get();
     return snap.docs
         .map((doc) => AdminUser.fromJson(doc.data()))
         .toList();
@@ -36,7 +36,7 @@ class AdminService {
 
   // Organization Management
   Future<List<Organization>> fetchOrganizations() async {
-    snap = await _firestore.collection('organizations').get();
+    final snap = await _firestore.collection('organizations').get();
     return snap.docs
         .map((doc) => Organization.fromJson(doc.data()))
         .toList();
@@ -44,17 +44,17 @@ class AdminService {
 
   // Analytics
   Future<Analytics> fetchAnalytics() async {
-    doc = await _firestore.collection('analytics').doc('summary').get();
+    final doc = await _firestore.collection('analytics').doc('summary').get();
     return Analytics.fromJson(doc.data() ?? {});
   }
 
   // Admin Dashboard Stats
   Future<AdminDashboardStats> fetchAdminDashboardStats() async {
     // Fetch users stats
-    usersSnap = await _firestore.collection('users').get();
+    final usersSnap = await _firestore.collection('users').get();
     final totalUsers = usersSnap.size;
-    activeUsers = usersSnap.docs.where((final doc) {
-      lastActive = doc.data()['lastActive'] as Timestamp?;
+    final activeUsers = usersSnap.docs.where((final doc) {
+      final lastActive = doc.data()['lastActive'] as Timestamp?;
       if (lastActive == null) return false;
       final daysSinceActive =
           DateTime.now().difference(lastActive.toDate()).inDays;
@@ -62,14 +62,14 @@ class AdminService {
     }).length;
 
     // Fetch bookings stats
-    bookingsSnap = await _firestore.collection('appointments').get();
+    final bookingsSnap = await _firestore.collection('appointments').get();
     final totalBookings = bookingsSnap.size;
-    completedBookings = bookingsSnap.docs.where((final doc) {
-      status = doc.data()['status'] as String?;
+    final completedBookings = bookingsSnap.docs.where((final doc) {
+      final status = doc.data()['status'] as String?;
       return status == 'completed';
     }).length;
-    pendingBookings = bookingsSnap.docs.where((final doc) {
-      status = doc.data()['status'] as String?;
+    final pendingBookings = bookingsSnap.docs.where((final doc) {
+      final status = doc.data()['status'] as String?;
       return status == 'pending';
     }).length;
 
@@ -84,10 +84,10 @@ class AdminService {
         (paymentsDoc.data()?['subscriptionRevenue'] as num?)?.toDouble() ?? 0.0;
 
     // Fetch organizations stats
-    orgsSnap = await _firestore.collection('organizations').get();
+    final orgsSnap = await _firestore.collection('organizations').get();
     final totalOrganizations = orgsSnap.size;
-    activeOrganizations = orgsSnap.docs.where((final doc) {
-      lastActive = doc.data()['lastActive'] as Timestamp?;
+    final activeOrganizations = orgsSnap.docs.where((final doc) {
+      final lastActive = doc.data()['lastActive'] as Timestamp?;
       if (lastActive == null) return false;
       final daysSinceActive =
           DateTime.now().difference(lastActive.toDate()).inDays;
@@ -100,8 +100,8 @@ class AdminService {
         .where('role', isEqualTo: 'ambassador')
         .get();
     final totalAmbassadors = ambassadorsSnap.size;
-    activeAmbassadors = ambassadorsSnap.docs.where((final doc) {
-      lastActive = doc.data()['lastActive'] as Timestamp?;
+    final activeAmbassadors = ambassadorsSnap.docs.where((final doc) {
+      final lastActive = doc.data()['lastActive'] as Timestamp?;
       if (lastActive == null) return false;
       final daysSinceActive =
           DateTime.now().difference(lastActive.toDate()).inDays;
@@ -116,8 +116,8 @@ class AdminService {
                 DateTime.now().subtract(const Duration(days: 30)),),)
         .get();
     final totalErrors = errorsSnap.size;
-    criticalErrors = errorsSnap.docs.where((final doc) {
-      severity = doc.data()['severity'] as String?;
+    final criticalErrors = errorsSnap.docs.where((final doc) {
+      final severity = doc.data()['severity'] as String?;
       return severity == 'critical';
     }).length;
 
@@ -179,9 +179,9 @@ class AdminService {
       query = query.where('isResolved', isEqualTo: isResolved);
     }
 
-    snap = await query.get();
+    final snap = await query.get();
     return snap.docs.map((doc) {
-      data = doc.data()! as Map<String, dynamic>;
+      final data = doc.data()!;
       return AdminErrorLog.fromJson(data);
     }).toList();
   }
@@ -223,18 +223,18 @@ class AdminService {
       query = query.where('action', isEqualTo: action);
     }
 
-    snap = await query.get();
+    final snap = await query.get();
     return snap.docs.map((doc) {
-      data = doc.data()! as Map<String, dynamic>;
+      final data = doc.data()!;
       return AdminActivityLog.fromJson(data);
     }).toList();
   }
 
   // Ad Revenue Stats
   Future<AdRevenueStats> fetchAdRevenueStats() async {
-    doc = await _firestore.collection('ad_revenue').doc('stats').get();
+    final doc = await _firestore.collection('ad_revenue').doc('stats').get();
     if (doc.exists && doc.data() != null) {
-      data = doc.data()!;
+      final data = doc.data()!;
       return AdRevenueStats.fromJson(data);
     }
 
@@ -259,7 +259,7 @@ class AdminService {
     final doc =
         await _firestore.collection('settings').doc('monetization').get();
     if (doc.exists && doc.data() != null) {
-      data = doc.data()!;
+      final data = doc.data()!;
       return MonetizationSettings.fromJson(data);
     }
 
@@ -280,7 +280,7 @@ class AdminService {
   }
 
   Future<void> updateMonetizationSettings(
-      MonetizationSettings settings,) async {
+      MonetizationSettings settings) async {
     await _firestore
         .collection('settings')
         .doc('monetization')
@@ -301,13 +301,13 @@ class AdminService {
         .orderBy('createdAt', descending: true)
         .get();
     return snap.docs.map((doc) {
-      data = doc.data();
+      final data = doc.data();
       return AdminBroadcastMessage.fromJson(data);
     }).toList();
   }
 
   Future<void> createBroadcastMessage(
-      AdminBroadcastMessage message,) async {
+      AdminBroadcastMessage message) async {
     await _firestore.collection('admin_broadcasts').add(message.toJson());
 
     await _logAdminActivity(

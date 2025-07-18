@@ -34,15 +34,15 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           .get();
 
       if (doc.exists) {
-        data = doc.data()!;
+        final data = doc.data()!;
         setState(() {
           _notificationsEnabled = data['notificationsEnabled'] ?? true;
-          _autoConfirmBookings = data['autoConfirmBookings'] ?? false;
-          _emailNotifications = data['emailNotifications'] ?? true;
-          _smsNotifications = data['smsNotifications'] ?? false;
+          var _autoConfirmBookings = data['autoConfirmBookings'] ?? false;
+          var _emailNotifications = data['emailNotifications'] ?? true;
+          var _smsNotifications = data['smsNotifications'] ?? false;
         });
       }
-    } catch (e) {e) {
+    } catch (e) {
       // Removed debug print: debugPrint('Error loading settings: $e');
     }
   }
@@ -68,8 +68,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           const SnackBar(content: Text('Settings saved successfully!')),
         );
       }
-    } catch (e) {e) {
-      if (mounted) {
+    } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error saving settings: $e')),
         );
@@ -164,7 +163,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             subtitle: const Text('Read our privacy policy'),
             onTap: () async {
               const url = 'https://yourdomain.com/privacy-policy';
-              uri = Uri.parse(url);
+              final uri = Uri.parse(url);
               if (await canLaunchUrl(uri)) {
                 await launchUrl(uri, mode: LaunchMode.externalApplication);
               } else {
@@ -198,7 +197,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                 applicationIcon: const FlutterLogo(size: 64),
                 children: const [
                   Text(
-                      'Business management app for studios and service providers.',),
+                      'Business management app for studios and service providers.'),
                 ],
               );
             },

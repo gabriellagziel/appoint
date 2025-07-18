@@ -8,7 +8,7 @@ class AdminErrorsTab extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    errorLogs = ref.watch(errorLogsProvider({'limit': 50}));
+    final errorLogs = ref.watch(errorLogsProvider({'limit': 50}));
 
     return errorLogs.when(
       data: (logs) => ListView.builder(
@@ -86,12 +86,12 @@ class AdminErrorsTab extends ConsumerWidget {
 
   void _showResolveErrorDialog(
       BuildContext context, WidgetRef ref, AdminErrorLog? log,) {
-    controller = TextEditingController();
+    final controller = TextEditingController();
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
         title: Text(
-            log == null ? 'Resolve Error' : 'Resolve Error: ${log.errorType}',),
+            log == null ? 'Resolve Error' : 'Resolve Error: ${log.errorType}'),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [

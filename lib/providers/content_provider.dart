@@ -3,7 +3,7 @@ import 'package:appoint/services/content_service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-contentServiceProvider = Provider<ContentService>((final ref) => ContentService());
+final contentServiceProvider = Provider<ContentService>((ref) => ContentService());
 
 class ContentPagingNotifier
     extends StateNotifier<AsyncValue<List<ContentItem>>> {
@@ -35,9 +35,9 @@ class ContentPagingNotifier
         _hasMore = false;
       }
       _items.addAll(newItems);
-      state = AsyncValue.data(List.unmodifiable(_items));
-    } catch (e) {e, st) {
-      state = AsyncValue.error(e, st);
+      final state = AsyncValue.data(List.unmodifiable(_items));
+    } catch (e) {
+      final state = AsyncValue.error(e, st);
     }
   }
 }

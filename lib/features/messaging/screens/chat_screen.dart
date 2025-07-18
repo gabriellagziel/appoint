@@ -1,4 +1,5 @@
 import 'package:appoint/features/messaging/models/message.dart';
+import 'package:appoint/features/messaging/models/chat.dart';
 import 'package:appoint/features/messaging/services/messaging_service.dart';
 import 'package:appoint/features/messaging/widgets/message_bubble.dart';
 import 'package:appoint/features/messaging/widgets/attachment_picker.dart';
@@ -6,6 +7,8 @@ import 'package:appoint/l10n/app_localizations.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:io';
 
 final messagingServiceProvider = Provider<MessagingService>((ref) => MessagingService());
@@ -201,354 +204,98 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
     final chatAsync = ref.watch(chatProvider(widget.chatId));
     final messagesAsync = ref.watch(messagesProvider(widget.chatId));
 
     return Scaffold(
-      appBar: _buildAppBar(chatAsync, l10n),
+      appBar: AppBar(
+        title: chatAsync.when(
+          data: (chat) => Text(chat?.name ?? 'Chat'),
+          loading: () => const Text('Loading...'),
+          error: (_, __) => const Text('Chat'),
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.refresh),
+            onPressed: () => ref.invalidate(messagesProvider(widget.chatId)),
+          ),
+        ],
+      ),
       body: Column(
         children: [
-          // Messages list
           Expanded(
             child: messagesAsync.when(
-              loading: () => const Center(child: CircularProgressIndicator()),
-              error: (error, stack) => Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.error_outline, size: 64, color: Colors.red[300]),
-                    const SizedBox(height: 16),
-                    Text('Failed to load messages'),
-                    const SizedBox(height: 8),
-                    Text(error.toString()),
-                    const SizedBox(height: 16),
-                    ElevatedButton(
-                      onPressed: () => ref.invalidate(messagesProvider(widget.chatId)),
-                      child: const Text('Retry'),
-                    ),
-                  ],
-                ),
-              ),
               data: (messages) {
                 _messages = messages;
-                return _buildMessagesList(messages, l10n);
+                return ListView.builder(
+                  controller: _scrollController,
+                  padding: const EdgeInsets.all(16),
+                  itemCount: messages.length,
+                  itemBuilder: (context, index) {
+                    final message = messages[index];
+                    return MessageBubble(
+                      message: message,
+                      isMe: message.senderId == FirebaseAuth.instance.currentUser?.uid,
+                    );
+                  },
+                );
               },
+              loading: () => const Center(child: CircularProgressIndicator()),
+              error: (error, stack) => Center(
+                child: Text('Error: $error'),
+              ),
             ),
           ),
-          
-          // Message input
-          _buildMessageInput(l10n),
+          _buildMessageInput(),
         ],
       ),
     );
   }
 
-  PreferredSizeWidget _buildAppBar(AsyncValue<Chat?> chatAsync, AppLocalizations l10n) {
-    return AppBar(
-      title: chatAsync.when(
-        loading: () => const Text('Loading...'),
-        error: (error, stack) => const Text('Chat'),
-        data: (chat) {
-          if (chat == null) return const Text('Chat');
-          
-          return Row(
-            children: [
-              if (chat.avatar != null)
-                CircleAvatar(
-                  backgroundImage: NetworkImage(chat.avatar!),
-                  radius: 16,
-                )
-              else
-                CircleAvatar(
-                  backgroundColor: Colors.grey[300],
-                  child: Icon(Icons.person, color: Colors.grey[600]),
-                  radius: 16,
-                ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      chat.name ?? 'Chat',
-                      style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-                    ),
-                    if (chat.lastMessage != null)
-                      Text(
-                        'Last message ${_formatTime(chat.lastMessage!.timestamp)}',
-                        style: TextStyle(fontSize: 12, color: Colors.grey[600]),
-                      ),
-                  ],
-                ),
-              ),
-            ],
-          );
-        },
-      ),
-      actions: [
-        IconButton(
-          icon: const Icon(Icons.more_vert),
-          onPressed: () => _showChatOptions(),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildMessagesList(List<Message> messages, AppLocalizations l10n) {
-    if (messages.isEmpty) {
-      return Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(Icons.chat_bubble_outline, size: 64, color: Colors.grey[400]),
-            const SizedBox(height: 16),
-            Text(
-              'No messages yet',
-              style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                color: Colors.grey[600],
-              ),
-            ),
-            const SizedBox(height: 8),
-            Text(
-              'Start the conversation!',
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Colors.grey[500],
-              ),
-            ),
-          ],
-        ),
-      );
-    }
-
-    return ListView.builder(
-      controller: _scrollController,
-      padding: const EdgeInsets.all(16),
-      itemCount: messages.length,
-      reverse: true,
-      itemBuilder: (context, index) {
-        final message = messages[index];
-        final isMe = message.senderId == FirebaseAuth.instance.currentUser?.uid;
-        
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 8),
-          child: MessageBubble(
-            message: message,
-            isMe: isMe,
-            onTap: () => _onMessageTap(message),
-          ),
-        );
-      },
-    );
-  }
-
-  Widget _buildMessageInput(AppLocalizations l10n) {
+  Widget _buildMessageInput() {
     return Container(
       padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        border: Border(
-          top: BorderSide(color: Colors.grey[300]!),
-        ),
-      ),
       child: Row(
         children: [
-          // Attachment button
           IconButton(
             icon: const Icon(Icons.attach_file),
             onPressed: _isSending ? null : _sendAttachment,
-            color: Colors.grey[600],
           ),
-          
-          // Message input
           Expanded(
             child: TextField(
               controller: _messageController,
               focusNode: _focusNode,
               decoration: InputDecoration(
-                hintText: l10n.typeMessage ?? 'Type a message...',
+                hintText: 'Type a message...',
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(24),
-                  borderSide: BorderSide.none,
+                  borderRadius: BorderRadius.circular(25),
                 ),
-                filled: true,
-                fillColor: Colors.grey[100],
                 contentPadding: const EdgeInsets.symmetric(
                   horizontal: 16,
                   vertical: 12,
                 ),
               ),
-              maxLines: null,
-              textInputAction: TextInputAction.send,
               onSubmitted: (_) => _sendMessage(),
             ),
           ),
-          
           const SizedBox(width: 8),
-          
-          // Send button
-          IconButton(
-            icon: _isSending
-                ? const SizedBox(
-                    width: 20,
-                    height: 20,
-                    child: CircularProgressIndicator(strokeWidth: 2),
-                  )
-                : Icon(
-                    _isTyping ? Icons.send : Icons.mic,
-                    color: _isTyping ? Theme.of(context).primaryColor : Colors.grey[600],
-                  ),
+          FloatingActionButton(
+            mini: true,
             onPressed: _isSending ? null : (_isTyping ? _sendMessage : _startVoiceMessage),
+            child: Icon(
+              _isTyping ? Icons.send : Icons.mic,
+              color: _isTyping ? Theme.of(context).primaryColor : Colors.grey[600],
+            ),
           ),
         ],
-      ),
-    );
-  }
-
-  void _onMessageTap(Message message) {
-    // Handle message tap (show options, reply, etc.)
-    showModalBottomSheet(
-      context: context,
-      builder: (context) => _buildMessageOptions(message),
-    );
-  }
-
-  Widget _buildMessageOptions(Message message) {
-    final isMe = message.senderId == FirebaseAuth.instance.currentUser?.uid;
-    
-    return Container(
-      padding: const EdgeInsets.all(16),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          ListTile(
-            leading: const Icon(Icons.reply),
-            title: const Text('Reply'),
-            onTap: () {
-              Navigator.pop(context);
-              // TODO: Implement reply functionality
-            },
-          ),
-          if (isMe) ...[
-            ListTile(
-              leading: const Icon(Icons.edit),
-              title: const Text('Edit'),
-              onTap: () {
-                Navigator.pop(context);
-                // TODO: Implement edit functionality
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.delete, color: Colors.red),
-              title: const Text('Delete', style: TextStyle(color: Colors.red)),
-              onTap: () {
-                Navigator.pop(context);
-                _deleteMessage(message);
-              },
-            ),
-          ],
-          ListTile(
-            leading: const Icon(Icons.copy),
-            title: const Text('Copy'),
-            onTap: () {
-              Navigator.pop(context);
-              // TODO: Implement copy functionality
-            },
-          ),
-        ],
-      ),
-    );
-  }
-
-  void _deleteMessage(Message message) {
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Delete Message'),
-        content: const Text('Are you sure you want to delete this message?'),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
-          ),
-          TextButton(
-            onPressed: () async {
-              Navigator.pop(context);
-              try {
-                final service = ref.read(messagingServiceProvider);
-                await service.deleteMessage(message.id, widget.chatId);
-              } catch (e) {
-                if (mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('Failed to delete message: $e')),
-                  );
-                }
-              }
-            },
-            child: const Text('Delete', style: TextStyle(color: Colors.red)),
-          ),
-        ],
-      ),
-    );
-  }
-
-  void _showChatOptions() {
-    showModalBottomSheet(
-      context: context,
-      builder: (context) => Container(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ListTile(
-              leading: const Icon(Icons.notifications_off),
-              title: const Text('Mute Chat'),
-              onTap: () {
-                Navigator.pop(context);
-                // TODO: Implement mute functionality
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.archive),
-              title: const Text('Archive Chat'),
-              onTap: () {
-                Navigator.pop(context);
-                // TODO: Implement archive functionality
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.delete, color: Colors.red),
-              title: const Text('Delete Chat', style: TextStyle(color: Colors.red)),
-              onTap: () {
-                Navigator.pop(context);
-                // TODO: Implement delete chat functionality
-              },
-            ),
-          ],
-        ),
       ),
     );
   }
 
   void _startVoiceMessage() {
-    // TODO: Implement voice message functionality
+    // TODO: Implement voice message recording
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('Voice messages coming soon!')),
     );
-  }
-
-  String _formatTime(DateTime time) {
-    final now = DateTime.now();
-    final difference = now.difference(time);
-
-    if (difference.inDays > 0) {
-      return '${difference.inDays}d ago';
-    } else if (difference.inHours > 0) {
-      return '${difference.inHours}h ago';
-    } else if (difference.inMinutes > 0) {
-      return '${difference.inMinutes}m ago';
-    } else {
-      return 'Just now';
-    }
   }
 } 

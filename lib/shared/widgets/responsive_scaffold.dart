@@ -19,7 +19,7 @@ class ResponsiveScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    width = MediaQuery.of(context).size.width;
+    final width = MediaQuery.of(context).size.width;
     final isDesktop = width >= 800;
 
     return Scaffold(

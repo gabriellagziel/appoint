@@ -5,8 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final rewardsServiceProvider =
     Provider<RewardsService>((ref) => RewardsService());
 
-userPointsProvider = StreamProvider<int>((final ref) {
-  authState = ref.watch(authStateProvider);
+final userPointsProvider = StreamProvider<int>((ref) {
+  final authState = ref.watch(authStateProvider);
   return authState.when(
     data: (user) {
       if (user == null) {

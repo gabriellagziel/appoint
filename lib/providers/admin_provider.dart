@@ -4,33 +4,129 @@ import 'package:appoint/models/admin_user.dart';
 import 'package:appoint/models/analytics.dart';
 import 'package:appoint/models/organization.dart';
 import 'package:appoint/services/admin_service.dart';
+import 'package:appoint/services/broadcast_service.dart';
+import 'package:appoint/providers/auth_provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final adminServiceProvider =
-    Provider<AdminService>((ref) => AdminService());
+/// Provider for the admin service
+final adminServiceProvider = Provider<AdminService>((ref) => AdminService());
 
-// Admin role provider that checks Firebase Auth custom claims
-isAdminProvider = FutureProvider<bool>((final ref) async {
-  final user = FirebaseAuth.instance.currentUser;
-  if (user == null) return false;
+/// Provider for the broadcast service
+final adminBroadcastServiceProvider = Provider<BroadcastService>((ref) => BroadcastService());
 
-  try {
-    tokenResult = await user.getIdTokenResult(true);
-    return tokenResult.claims?['admin'] == true;
-  } catch (e) {e) {
-    return false;
-  }
+/// Provider to check if current user has admin privileges
+final isAdminProvider = FutureProvider<bool>((ref) async {
+  final authState = ref.watch(authStateProvider);
+  return authState.when(
+    data: (user) {
+      if (user == null) return false;
+      // Check if user has admin role
+      return user.role == 'admin' || user.role == 'superAdmin';
+    },
+    loading: () => false,
+    error: (_, __) => false,
+  );
 });
 
+/// Provider for broadcast messages list
+final broadcastMessagesProvider = FutureProvider<List<AdminBroadcastMessage>>((ref) async {
+  final broadcastService = ref.watch(adminBroadcastServiceProvider);
+  final isAdmin = await ref.watch(isAdminProvider.future);
+  
+  if (!isAdmin) {
+    throw Exception('Unauthorized: Admin access required');
+  }
+  
+  return broadcastService.getBroadcastMessages().first;
+});
+
+/// Provider for admin dashboard statistics
+final adminStatsProvider = FutureProvider<Map<String, dynamic>>((ref) async {
+  final adminService = ref.watch(adminServiceProvider);
+  final isAdmin = await ref.watch(isAdminProvider.future);
+  
+  if (!isAdmin) {
+    throw Exception('Unauthorized: Admin access required');
+  }
+  
+  return adminService.getDashboardStats();
+});
+
+/// Provider for total user count
+final totalUsersProvider = FutureProvider<int>((ref) async {
+  final adminService = ref.watch(adminServiceProvider);
+  final isAdmin = await ref.watch(isAdminProvider.future);
+  
+  if (!isAdmin) {
+    throw Exception('Unauthorized: Admin access required');
+  }
+  
+  return adminService.getTotalUsersCount();
+});
+
+/// Provider for user management operations
+class AdminNotifier extends StateNotifier<AdminState> {
+  AdminNotifier(this.ref) : super(const AdminState());
+  
+  final Ref ref;
+  
+  Future<void> deleteUser(String userId) async {
+    state = state.copyWith(isLoading: true);
+    try {
+      final adminService = ref.read(adminServiceProvider);
+      await adminService.deleteUser(userId);
+      state = state.copyWith(isLoading: false);
+    } catch (e) {
+      state = state.copyWith(isLoading: false, error: e.toString());
+    }
+  }
+  
+  Future<void> updateUserRole(String userId, String newRole) async {
+    state = state.copyWith(isLoading: true);
+    try {
+      final adminService = ref.read(adminServiceProvider);
+      await adminService.updateUserRole(userId, newRole);
+      state = state.copyWith(isLoading: false);
+    } catch (e) {
+      state = state.copyWith(isLoading: false, error: e.toString());
+    }
+  }
+}
+
+/// State for admin operations
+class AdminState {
+  const AdminState({
+    this.isLoading = false,
+    this.error,
+  });
+  
+  final bool isLoading;
+  final String? error;
+  
+  AdminState copyWith({
+    bool? isLoading,
+    String? error,
+  }) {
+    return AdminState(
+      isLoading: isLoading ?? this.isLoading,
+      error: error ?? this.error,
+    );
+  }
+}
+
+final adminNotifierProvider = StateNotifierProvider<AdminNotifier, AdminState>(
+  (ref) => AdminNotifier(ref),
+);
+
 // User Management
-allUsersProvider = FutureProvider<List<AdminUser>>((final ref) => ref.read(adminServiceProvider).fetchAllUsers());
+final allUsersProvider = FutureProvider<List<AdminUser>>((ref) => ref.read(adminServiceProvider).fetchAllUsers());
 
 // Organization Management
-orgsProvider = FutureProvider<List<Organization>>((final ref) => ref.read(adminServiceProvider).fetchOrganizations());
+final orgsProvider = FutureProvider<List<Organization>>((ref) => ref.read(adminServiceProvider).fetchOrganizations());
 
 // Analytics
-analyticsProvider = FutureProvider<Analytics>((final ref) => ref.read(adminServiceProvider).fetchAnalytics());
+final analyticsProvider = FutureProvider<Analytics>((ref) => ref.read(adminServiceProvider).fetchAnalytics());
 
 // Admin Dashboard Stats
 final adminDashboardStatsProvider =
@@ -69,18 +165,14 @@ final FutureProviderFamily<List<AdminActivityLog>, Map<String, dynamic>> activit
 });
 
 // Ad Revenue Stats
-adRevenueStatsProvider = FutureProvider<AdRevenueStats>((final ref) => ref.read(adminServiceProvider).fetchAdRevenueStats());
+final adRevenueStatsProvider = FutureProvider<AdRevenueStats>((ref) => ref.read(adminServiceProvider).fetchAdRevenueStats());
 
 // Monetization Settings
 final monetizationSettingsProvider =
     FutureProvider<MonetizationSettings>((ref) => ref.read(adminServiceProvider).fetchMonetizationSettings());
 
-// Broadcast Messages
-final broadcastMessagesProvider =
-    FutureProvider<List<AdminBroadcastMessage>>((ref) => ref.read(adminServiceProvider).fetchBroadcastMessages());
-
 // Notifiers for admin actions
-adminActionsProvider = Provider<AdminActions>((final ref) => AdminActions(ref.read(adminServiceProvider)));
+final adminActionsProvider = Provider<AdminActions>((ref) => AdminActions(ref.read(adminServiceProvider)));
 
 class AdminActions {
 
@@ -97,12 +189,12 @@ class AdminActions {
   }
 
   Future<void> updateMonetizationSettings(
-      MonetizationSettings settings,) async {
+      MonetizationSettings settings) async {
     await _adminService.updateMonetizationSettings(settings);
   }
 
   Future<void> createBroadcastMessage(
-      AdminBroadcastMessage message,) async {
+      AdminBroadcastMessage message) async {
     await _adminService.createBroadcastMessage(message);
   }
 

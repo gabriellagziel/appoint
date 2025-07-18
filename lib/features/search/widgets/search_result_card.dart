@@ -58,8 +58,7 @@ class SearchResultCard extends StatelessWidget {
         width: 60,
         height: 60,
         decoration: BoxDecoration(
-          color: Colors.grey[200],
-        ),
+          color: Colors.grey[200]),
         child: result.imageUrl.isNotEmpty
             ? Image.network(
                 result.imageUrl,
@@ -252,8 +251,7 @@ class SearchResultCard extends StatelessWidget {
     }
 
     return Wrap(
-      children: metadataWidgets,
-    );
+      children: metadataWidgets);
   }
 
   Widget _buildActionButton() {

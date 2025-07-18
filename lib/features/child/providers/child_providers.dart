@@ -14,7 +14,7 @@ class ChildInfo {
 }
 
 /// Fake provider with placeholder child profile data.
-childInfoProvider = StateProvider<ChildInfo>((final ref) => ChildInfo(
+final childInfoProvider = StateProvider<ChildInfo>((ref) => ChildInfo(
     nickname: 'PlayerOne',
     avatarUrl: 'https://via.placeholder.com/150',
   ),);
@@ -51,15 +51,15 @@ class ChildSettingsNotifier extends StateNotifier<ChildSettings> {
         ),);
 
   void togglePlaytime(bool value) {
-    state = state.copyWith(playtimeEnabled: value);
+    final state = state.copyWith(playtimeEnabled: value);
   }
 
   void toggleNotifications(bool value) {
-    state = state.copyWith(notificationsEnabled: value);
+    final state = state.copyWith(notificationsEnabled: value);
   }
 
   void toggleContentFilter(bool value) {
-    state = state.copyWith(contentFilterEnabled: value);
+    final state = state.copyWith(contentFilterEnabled: value);
   }
 }
 

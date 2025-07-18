@@ -1,4 +1,6 @@
 import 'package:appoint/providers/user_provider.dart';
+import 'package:appoint/widgets/app_logo.dart';
+import 'package:appoint/constants/app_branding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -9,7 +11,7 @@ class AppShell extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    user = ref.watch(userProvider);
+    final user = ref.watch(userProvider);
 
     if (user == null) {
       return Scaffold(body: child);
@@ -34,18 +36,7 @@ class AppShell extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  CircleAvatar(
-                    radius: 30,
-                    backgroundColor: Colors.white,
-                    child: Text(
-                      user.name.substring(0, 1).toUpperCase(),
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        color: Theme.of(context).primaryColor,
-                      ),
-                    ),
-                  ),
+                  const AppLogo(size: 48, showText: false),
                   const SizedBox(height: 8),
                   Text(
                     user.name,
@@ -60,6 +51,14 @@ class AppShell extends ConsumerWidget {
                     style: const TextStyle(
                       color: Colors.white70,
                       fontSize: 14,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    AppBranding.fullSlogan,
+                    style: TextStyle(
+                      color: Colors.white70,
+                      fontSize: 10,
                     ),
                   ),
                 ],

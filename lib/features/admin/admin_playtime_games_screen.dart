@@ -1,6 +1,6 @@
 import 'package:appoint/config/theme.dart';
 import 'package:appoint/features/playtime/playtime_admin_notifier.dart';
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/utils/admin_localizations.dart';
 import 'package:appoint/models/playtime_background.dart';
 import 'package:appoint/models/playtime_game.dart';
 import 'package:appoint/providers/playtime_provider.dart';
@@ -43,11 +43,9 @@ class AdminPlaytimeGamesScreen extends ConsumerWidget {
 class _GamesTab extends ConsumerWidget {
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    l10n = AppLocalizations.of(context)!;
-
     return Consumer(
       builder: (context, final ref, final child) {
-        gamesAsync = ref.watch(allGamesProvider);
+        final gamesAsync = ref.watch(allGamesProvider);
 
         return gamesAsync.when(
           data: (games) {
@@ -95,7 +93,7 @@ class _GamesTab extends ConsumerWidget {
 
                   // Empty State
                   if (games.isEmpty) ...[
-                    _buildEmptyState(l10n, 'No games found'),
+                    _buildEmptyState('No games found'),
                   ],
                 ],
               ),
@@ -350,7 +348,7 @@ class _GamesTab extends ConsumerWidget {
       builder: (context) => AlertDialog(
         title: const Text('Delete Game'),
         content: const Text(
-            'Are you sure you want to delete this game? This action cannot be undone.',),
+            'Are you sure you want to delete this game? This action cannot be undone.'),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
@@ -380,7 +378,7 @@ class _GamesTab extends ConsumerWidget {
     context.push('/admin/playtime/game/${game.id}');
   }
 
-  Widget _buildEmptyState(AppLocalizations l10n, final String message) => Center(
+  Widget _buildEmptyState(final String message) => Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -406,11 +404,9 @@ class _GamesTab extends ConsumerWidget {
 class _BackgroundsTab extends ConsumerWidget {
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    l10n = AppLocalizations.of(context)!;
-
     return Consumer(
       builder: (context, final ref, final child) {
-        backgroundsAsync = ref.watch(allBackgroundsProvider);
+        final backgroundsAsync = ref.watch(allBackgroundsProvider);
 
         return backgroundsAsync.when(
           data: (backgrounds) {
@@ -431,7 +427,7 @@ class _BackgroundsTab extends ConsumerWidget {
 
                   // Empty State
                   if (backgrounds.isEmpty) ...[
-                    _buildEmptyState(l10n, 'No backgrounds found'),
+                    _buildEmptyState('No backgrounds found'),
                   ],
                 ],
               ),
@@ -577,7 +573,7 @@ class _BackgroundsTab extends ConsumerWidget {
       builder: (context) => AlertDialog(
         title: const Text('Delete Background'),
         content: const Text(
-            'Are you sure you want to delete this background? This action cannot be undone.',),
+            'Are you sure you want to delete this background? This action cannot be undone.'),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
@@ -586,7 +582,7 @@ class _BackgroundsTab extends ConsumerWidget {
           ElevatedButton(
             onPressed: () {
               PlaytimeAdminNotifier.deleteGame(
-                  backgroundId,); // Reuse deleteGame for now
+                  backgroundId); // Reuse deleteGame for now
               Navigator.pop(context);
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(
@@ -603,7 +599,7 @@ class _BackgroundsTab extends ConsumerWidget {
     );
   }
 
-  Widget _buildEmptyState(AppLocalizations l10n, final String message) => Center(
+  Widget _buildEmptyState(final String message) => Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

@@ -15,7 +15,7 @@ class OtpNotifier extends StateNotifier<OtpState> {
     try {
       await _familyService.sendOtp(childContact, parentId);
       state = OtpState.codeSent;
-    } catch (e) {_) {
+    } catch (e) {
       state = OtpState.error;
     }
   }
@@ -23,19 +23,19 @@ class OtpNotifier extends StateNotifier<OtpState> {
   Future<void> verifyOtp(String childContact, final String code) async {
     state = OtpState.verifying;
     try {
-      result = await _familyService.verifyOtp(childContact, code);
+      final result = await _familyService.verifyOtp(childContact, code);
       if (result == true) {
         state = OtpState.success;
       } else {
         state = OtpState.error;
       }
-    } catch (e) {_) {
+    } catch (e) {
       state = OtpState.error;
     }
   }
 }
 
-otpProvider = StateNotifierProvider<OtpNotifier, OtpState>((final ref) {
-  familyService = ref.watch(familyServiceProvider);
+final otpProvider = StateNotifierProvider<OtpNotifier, OtpState>((ref) {
+  final familyService = ref.watch(familyServiceProvider);
   return OtpNotifier(familyService);
 });

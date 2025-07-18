@@ -40,7 +40,7 @@ class PerformanceMonitoringService {
       return;
     }
 
-    stopwatch = Stopwatch()..start();
+    final stopwatch = Stopwatch()..start();
     _activeTraces[name] = stopwatch;
 
     if (kDebugMode) {
@@ -51,7 +51,7 @@ class PerformanceMonitoringService {
     try {
       // Firebase Performance integration would go here
       // await FirebasePerformance.instance.newTrace(name).start();
-    } catch (e) {e) {
+    } catch (e) {
       developer.log('Failed to start Firebase trace: $e',
           name: 'PerformanceMonitoring',);
     }
@@ -59,7 +59,7 @@ class PerformanceMonitoringService {
 
   /// Stop a performance trace
   Future<void> stopTrace(String name) async {
-    stopwatch = _activeTraces.remove(name);
+    final stopwatch = _activeTraces.remove(name);
     if (stopwatch == null) {
       developer.log('Trace $name not found', name: 'PerformanceMonitoring');
       return;
@@ -82,7 +82,7 @@ class PerformanceMonitoringService {
       // trace = FirebasePerformance.instance.newTrace(name);
       // trace.setMetric('duration', duration.inMilliseconds);
       // await trace.stop();
-    } catch (e) {e) {
+    } catch (e) {
       developer.log('Failed to stop Firebase trace: $e',
           name: 'PerformanceMonitoring',);
     }
@@ -91,15 +91,15 @@ class PerformanceMonitoringService {
   /// Measure execution time of a synchronous function
   T measureExecutionSync<T>(String name, final T Function() function,
       {Map<String, dynamic>? attributes,}) {
-    stopwatch = Stopwatch()..start();
+    final stopwatch = Stopwatch()..start();
 
     try {
-      result = function();
+      final result = function();
       stopwatch.stop();
 
       _recordOperation(name, stopwatch.elapsed);
       return result;
-    } catch (e) {e) {
+    } catch (e) {
       stopwatch.stop();
       _recordError(name, e);
       rethrow;
@@ -110,15 +110,15 @@ class PerformanceMonitoringService {
   Future<T> measureExecutionAsync<T>(
       String name, final Future<T> Function() function,
       {Map<String, dynamic>? attributes,}) async {
-    stopwatch = Stopwatch()..start();
+    final stopwatch = Stopwatch()..start();
 
     try {
-      result = await function();
+      final result = await function();
       stopwatch.stop();
 
       _recordOperation(name, stopwatch.elapsed);
       return result;
-    } catch (e) {e) {
+    } catch (e) {
       stopwatch.stop();
       _recordError(name, e);
       rethrow;
@@ -180,7 +180,7 @@ class PerformanceMonitoringService {
   /// Get error rate for an operation
   double getErrorRate(String name) {
     final errorCount = _errorCounts[name] ?? 0;
-    totalOperations = (_traceHistory[name]?.length ?? 0) + errorCount;
+    final totalOperations = (_traceHistory[name]?.length ?? 0) + errorCount;
 
     if (totalOperations == 0) return 0;
     return errorCount / totalOperations;
@@ -216,7 +216,7 @@ extension PerformanceMonitoringExtension on WidgetRef {
   /// Measure execution time of a synchronous function
   T measureExecutionSync<T>(String name, final T Function() function,
       {Map<String, dynamic>? attributes,}) {
-    service = read(performanceMonitoringServiceProvider);
+    final service = read(performanceMonitoringServiceProvider);
     return service.measureExecutionSync(name, function, attributes: attributes);
   }
 
@@ -224,7 +224,7 @@ extension PerformanceMonitoringExtension on WidgetRef {
   Future<T> measureExecutionAsync<T>(
       String name, final Future<T> Function() function,
       {Map<String, dynamic>? attributes,}) async {
-    service = read(performanceMonitoringServiceProvider);
+    final service = read(performanceMonitoringServiceProvider);
     return service.measureExecutionAsync(name, function,
         attributes: attributes,);
   }
@@ -232,13 +232,13 @@ extension PerformanceMonitoringExtension on WidgetRef {
   /// Start a performance trace
   Future<void> startTrace(final String name,
       {Map<String, dynamic>? attributes,}) async {
-    service = read(performanceMonitoringServiceProvider);
+    final service = read(performanceMonitoringServiceProvider);
     await service.startTrace(name, attributes: attributes);
   }
 
   /// Stop a performance trace
   Future<void> stopTrace(String name) async {
-    service = read(performanceMonitoringServiceProvider);
+    final service = read(performanceMonitoringServiceProvider);
     await service.stopTrace(name);
   }
 }

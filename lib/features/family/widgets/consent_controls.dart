@@ -53,17 +53,16 @@ class _ConsentControlsState extends ConsumerState<ConsentControls> {
           SnackBar(
             content: Text(grant
                 ? 'Consent granted successfully!'
-                : 'Consent revoked successfully!',),
+                : 'Consent revoked successfully!'),
           ),
         );
       }
-    } catch (e) {e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Failed to update consent: $e')),
-        );
-      }
-    } finally {
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Failed to update consent: $e')),
+      );
+    }
+    finally {
       if (mounted) {
         setState(() {
           _isLoading = false;
@@ -101,8 +100,7 @@ class _ConsentControlsState extends ConsumerState<ConsentControls> {
                   ? 'You have granted consent for this family link.'
                   : 'You have not yet granted consent for this family link.',
               style: TextStyle(
-                color: _hasConsented ? Colors.green : Colors.orange,
-              ),
+                color: _hasConsented ? Colors.green : Colors.orange),
             ),
             const SizedBox(height: 16),
             if (_isLoading)
@@ -127,8 +125,7 @@ class _ConsentControlsState extends ConsumerState<ConsentControls> {
                       onPressed:
                           _hasConsented ? () => _updateConsent(false) : null,
                       style: OutlinedButton.styleFrom(
-                        foregroundColor: Colors.red,
-                      ),
+                        foregroundColor: Colors.red),
                       child: const Text('Revoke Consent'),
                     ),
                   ),

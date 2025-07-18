@@ -25,7 +25,7 @@ class _CommentsScreenState extends State<CommentsScreen> {
   }
 
   Future<void> _load() async {
-    items = await _service.fetchComments();
+    final items = await _service.fetchComments();
     setState(() => _comments.addAll(items));
   }
 

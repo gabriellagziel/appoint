@@ -9,8 +9,8 @@ class CalendarViewScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    googleAsync = ref.watch(googleEventsProvider);
-    outlookAsync = ref.watch(outlookEventsProvider);
+    final googleAsync = ref.watch(googleEventsProvider);
+    final outlookAsync = ref.watch(outlookEventsProvider);
     return Scaffold(
       appBar: AppBar(title: const Text('Calendar')),
       body: googleAsync.when(

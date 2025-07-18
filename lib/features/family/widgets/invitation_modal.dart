@@ -11,7 +11,7 @@ class InvitationModal extends ConsumerStatefulWidget {
 }
 
 class _InvitationModalState extends ConsumerState<InvitationModal> {
-  _emailController = TextEditingController();
+  final _emailController = TextEditingController();
   bool _isLoading = false;
 
   @override
@@ -33,8 +33,8 @@ class _InvitationModalState extends ConsumerState<InvitationModal> {
     });
 
     try {
-      familyService = ref.read(familyServiceProvider);
-      authState = await ref.read(authStateProvider.future);
+      final familyService = ref.read(familyServiceProvider);
+      final authState = await ref.read(authStateProvider.future);
 
       if (authState == null) {
         throw Exception('User not authenticated');
@@ -49,12 +49,10 @@ class _InvitationModalState extends ConsumerState<InvitationModal> {
           const SnackBar(content: Text('Invitation sent successfully!')),
         );
       }
-    } catch (e) {e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Failed to send invitation: $e')),
-        );
-      }
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Failed to send invitation: $e')),
+      );
     } finally {
       if (mounted) {
         setState(() {

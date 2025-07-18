@@ -37,7 +37,7 @@ class FCMTokenProvider extends StateNotifier<FCMTokenState> {
         FirebaseMessaging.instance.onTokenRefresh.listen(_onTokenRefresh);
         
         // Listen for user authentication changes
-        _authService.authStateChanges.listen(_onAuthStateChanged);
+        _authService.authStateChanges().listen(_onAuthStateChanged);
       } else {
         state = FCMTokenState.error('Notification permissions denied');
       }
@@ -102,12 +102,11 @@ class FCMTokenProvider extends StateNotifier<FCMTokenState> {
         });
       }
     } catch (e) {
-      // Log error but don't fail the token update
-      // In a real app, you would log this to a service like Crashlytics
+      // Handle error silently
     }
   }
 
-  /// Get current platform
+  /// Get platform identifier
   String _getPlatform() {
     if (Platform.isAndroid) return 'android';
     if (Platform.isIOS) return 'ios';
@@ -158,6 +157,12 @@ class FCMTokenState {
   factory FCMTokenState.success(String token) => FCMTokenState._(token: token);
 
   factory FCMTokenState.error(String error) => FCMTokenState._(error: error);
+
+  /// Check if token is available
+  bool get hasToken => token != null;
+
+  /// Check if there's an error
+  bool get hasError => error != null;
 }
 
 /// Provider for FCM Token

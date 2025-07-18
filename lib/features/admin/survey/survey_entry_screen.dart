@@ -7,7 +7,7 @@ class SurveyEntryScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    surveysAsync = ref.watch(surveysStreamProvider);
+    final surveysAsync = ref.watch(surveysStreamProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -144,9 +144,9 @@ class SurveyEntryScreen extends ConsumerWidget {
 
   void _showCreateSurveyDialog(
       BuildContext context, final WidgetRef ref,) {
-    titleController = TextEditingController();
-    descriptionController = TextEditingController();
-    rewardPointsController = TextEditingController(text: '10');
+    final titleController = TextEditingController();
+    final descriptionController = TextEditingController();
+    final rewardPointsController = TextEditingController(text: '10');
 
     showDialog(
       context: context,
@@ -231,7 +231,7 @@ class SurveyEntryScreen extends ConsumerWidget {
       builder: (context) => AlertDialog(
         title: const Text('Delete Survey'),
         content: const Text(
-            'Are you sure you want to delete this survey? This action cannot be undone.',),
+            'Are you sure you want to delete this survey? This action cannot be undone.'),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),

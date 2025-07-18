@@ -36,12 +36,12 @@ class _CustomBackgroundPickerState
   @override
   void initState() {
     super.initState();
-    _selectedBackgroundId = widget.selectedBackgroundId;
+    final _selectedBackgroundId = widget.selectedBackgroundId;
   }
 
   @override
   Widget build(BuildContext context) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -59,7 +59,7 @@ class _CustomBackgroundPickerState
         // Background Grid
         Consumer(
           builder: (context, final ref, final child) {
-            backgroundsAsync = ref.watch(allBackgroundsProvider);
+            final backgroundsAsync = ref.watch(allBackgroundsProvider);
 
             return backgroundsAsync.when(
               data: (backgrounds) {
@@ -250,7 +250,7 @@ class _CustomBackgroundPickerState
 
   Widget _buildUploadButton(AppLocalizations l10n) => Consumer(
       builder: (context, final ref, final child) {
-        uploadState = ref.watch(playtimeBackgroundNotifierProvider);
+        final uploadState = ref.watch(playtimeBackgroundNotifierProvider);
 
         return SizedBox(
           width: double.infinity,
@@ -271,7 +271,7 @@ class _CustomBackgroundPickerState
                 : const Icon(Icons.upload),
             label: Text(_isUploading || uploadState.isLoading
                 ? 'Uploading...'
-                : 'Upload Background',),
+                : 'Upload Background'),
             style: ElevatedButton.styleFrom(
               backgroundColor: AppTheme.primaryColor,
               foregroundColor: Colors.white,
@@ -311,9 +311,9 @@ class _UploadBackgroundDialog extends ConsumerStatefulWidget {
 
 class _UploadBackgroundDialogState
     extends ConsumerState<_UploadBackgroundDialog> {
-  _formKey = GlobalKey<FormState>();
-  _nameController = TextEditingController();
-  _descriptionController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+  final _nameController = TextEditingController();
+  final _descriptionController = TextEditingController();
   File? _selectedImage;
   String _selectedCategory = 'Nature';
   final List<String> _selectedTags = [];
@@ -563,7 +563,7 @@ class _UploadBackgroundDialogState
           spacing: 8,
           runSpacing: 8,
           children: _availableTags.map((tag) {
-            isSelected = _selectedTags.contains(tag);
+            final isSelected = _selectedTags.contains(tag);
             return FilterChip(
               label: Text(tag),
               selected: isSelected,
@@ -630,7 +630,7 @@ class _UploadBackgroundDialogState
     if (kIsWeb) {
       return;
     }
-    picker = ImagePicker();
+    final picker = ImagePicker();
     final image = await picker.pickImage(
       source: ImageSource.gallery,
       maxWidth: 1024,
@@ -639,7 +639,7 @@ class _UploadBackgroundDialogState
 
     if (image != null) {
       setState(() {
-        _selectedImage = File(image.path);
+        final _selectedImage = File(image.path);
       });
     }
   }
@@ -692,8 +692,7 @@ class _UploadBackgroundDialogState
         // Refresh the background list
         ref.invalidate(allBackgroundsProvider);
       }
-    } catch (e) {e) {
-      if (mounted) {
+    } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to upload background: $e'),

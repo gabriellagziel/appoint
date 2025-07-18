@@ -62,7 +62,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
   StreamSubscription<DocumentSnapshot>? _typingSubscription;
 
   Future<void> _initializeChat() async {
-    currentUser = await _auth.currentUser();
+    final currentUser = await _auth.currentUser();
     if (currentUser != null) {
       final sessionId =
           'booking_${currentUser.uid}_${DateTime.now().millisecondsSinceEpoch}';
@@ -74,13 +74,13 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
   }
 
   void _setupChatListeners(String sessionId, String currentUserId) {
-    chatDoc = _firestore.collection('chats').doc(sessionId);
+    final chatDoc = _firestore.collection('chats').doc(sessionId);
 
     // Listen to chat messages
-    _chatSubscription = chatDoc.snapshots().listen((snapshot) {
+    final _chatSubscription = chatDoc.snapshots().listen((snapshot) {
       if (snapshot.exists && snapshot.data() != null) {
-        data = snapshot.data()!;
-        messages = (data['messages'] as List<dynamic>?)
+        final data = snapshot.data()!;
+        final messages = (data['messages'] as List<dynamic>?)
                 ?.map((msg) =>
                     ChatMessage.fromJson(Map<String, dynamic>.from(msg)),)
                 .toList() ??
@@ -91,10 +91,10 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
     });
 
     // Listen to typing status
-    _typingSubscription = chatDoc.snapshots().listen((snapshot) {
+    final _typingSubscription = chatDoc.snapshots().listen((snapshot) {
       if (snapshot.exists && snapshot.data() != null) {
-        data = snapshot.data()!;
-        typingUsers = List<String>.from(data['typing'] ?? []);
+        final data = snapshot.data()!;
+        final typingUsers = List<String>.from(data['typing'] ?? []);
         final isOtherUserTyping =
             typingUsers.isNotEmpty && !typingUsers.contains(currentUserId);
 
@@ -104,7 +104,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
   }
 
   Future<void> addUserMessage(String text) async {
-    currentUser = await _auth.currentUser();
+    final currentUser = await _auth.currentUser();
     if (currentUser == null || state.chatSessionId == null) return;
 
     final message = ChatMessage(
@@ -130,7 +130,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
   }
 
   Future<void> addBotMessage(String text) async {
-    currentUser = await _auth.currentUser();
+    final currentUser = await _auth.currentUser();
     if (currentUser == null || state.chatSessionId == null) return;
 
     final message = ChatMessage(
@@ -156,8 +156,8 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
   Future<void> _updateChatInFirestore(ChatMessage message) async {
     if (state.chatSessionId == null) return;
 
-    chatDoc = _firestore.collection('chats').doc(state.chatSessionId);
-    messages = state.chatMessages.map((msg) => msg.toJson()).toList();
+    final chatDoc = _firestore.collection('chats').doc(state.chatSessionId);
+    final messages = state.chatMessages.map((msg) => msg.toJson()).toList();
 
     await chatDoc.set({
       'sessionId': state.chatSessionId,
@@ -167,10 +167,10 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
   }
 
   Future<void> _setTypingStatus(bool isTyping) async {
-    currentUser = await _auth.currentUser();
+    final currentUser = await _auth.currentUser();
     if (currentUser == null || state.chatSessionId == null) return;
 
-    chatDoc = _firestore.collection('chats').doc(state.chatSessionId);
+    final chatDoc = _firestore.collection('chats').doc(state.chatSessionId);
 
     if (isTyping) {
       await chatDoc.update({
@@ -184,10 +184,10 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
   }
 
   Future<void> markMessageAsRead(String messageId) async {
-    currentUser = await _auth.currentUser();
+    final currentUser = await _auth.currentUser();
     if (currentUser == null || state.chatSessionId == null) return;
 
-    updatedMessages = state.chatMessages.map((message) {
+    final updatedMessages = state.chatMessages.map((message) {
       if (message.id == messageId &&
           !message.readBy.contains(currentUser.uid)) {
         return message.copyWith(
@@ -200,8 +200,8 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
     state = state.copyWith(chatMessages: updatedMessages);
 
     // Update Firestore
-    chatDoc = _firestore.collection('chats').doc(state.chatSessionId);
-    messages = updatedMessages.map((msg) => msg.toJson()).toList();
+    final chatDoc = _firestore.collection('chats').doc(state.chatSessionId);
+    final messages = updatedMessages.map((msg) => msg.toJson()).toList();
 
     await chatDoc.update({
       'messages': messages,
@@ -216,8 +216,8 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
       // parse date from user input
       DateTime? parsedDate;
       try {
-        parsedDate = DateTime.parse(userInput);
-      } catch (e) {_) {
+        final parsedDate = DateTime.parse(userInput);
+      } catch (e) {
         parsedDate = null;
       }
       if (parsedDate != null) {
@@ -232,7 +232,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
       state = state.copyWith(time: userInput);
       addBotMessage('Any notes to add?');
     } else if (state.notes == null) {
-      state = state.copyWith(notes: userInput);
+              state = state.copyWith(notes: userInput);
       final summary = 'Here is your summary:\n'
           'Type: ${state.type}\n'
           'Date: ${state.date}\n'
@@ -249,7 +249,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
           // Simulate booking submission
           await Future.delayed(const Duration(seconds: 1));
           addBotMessage('Your booking has been confirmed!');
-        } catch (e) {e) {
+        } catch (e) {
           addBotMessage('Failed to submit booking. Please try again later.');
         }
       } else {

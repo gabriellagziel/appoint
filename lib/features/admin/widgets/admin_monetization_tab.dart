@@ -8,8 +8,8 @@ class AdminMonetizationTab extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    monetizationSettings = ref.watch(monetizationSettingsProvider);
-    adRevenueStats = ref.watch(adRevenueStatsProvider);
+    final monetizationSettings = ref.watch(monetizationSettingsProvider);
+    final adRevenueStats = ref.watch(adRevenueStatsProvider);
 
     return SingleChildScrollView(
       padding: const EdgeInsets.all(16),
@@ -135,7 +135,7 @@ class AdminMonetizationTab extends ConsumerWidget {
     );
 
   void _updateAdSetting(WidgetRef ref, String setting, final bool value) {
-    currentSettings = ref.read(monetizationSettingsProvider).value;
+    final currentSettings = ref.read(monetizationSettingsProvider).value;
     if (currentSettings != null) {
       final updatedSettings = currentSettings.copyWith(
         adsEnabledForFreeUsers: setting == 'adsEnabledForFreeUsers'

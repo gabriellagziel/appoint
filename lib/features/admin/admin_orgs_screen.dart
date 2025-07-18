@@ -7,7 +7,7 @@ class AdminOrgsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    orgsAsync = ref.watch(orgsProvider);
+    final orgsAsync = ref.watch(orgsProvider);
     return Scaffold(
       appBar: AppBar(title: const Text('Organizations')),
       body: orgsAsync.when(

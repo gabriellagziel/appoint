@@ -10,7 +10,7 @@ class InviteService {
 
   Future<void> sendInvite(final String appointmentId, final Contact invitee,
       {bool requiresInstallFallback = false,}) async {
-    doc = _firestore.collection('invites').doc();
+    final doc = _firestore.collection('invites').doc();
     final invite = Invite(
       id: doc.id,
       appointmentId: appointmentId,
@@ -31,7 +31,7 @@ class InviteService {
         .where('appointmentId', isEqualTo: appointmentId)
         .where('inviteeId', isEqualTo: inviteeId)
         .get();
-    for (doc in query.docs) {
+    for (final doc in query.docs) {
       await doc.reference.update({'status': status.name});
     }
   }

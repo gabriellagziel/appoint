@@ -5,7 +5,7 @@ class PaymentConfirmationScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    success = ModalRoute.of(context)!.settings.arguments as bool? ?? true;
+    final success = ModalRoute.of(context)!.settings.arguments as bool? ?? true;
     return Scaffold(
       appBar: AppBar(title: const Text('Payment Confirmation')),
       body: Center(

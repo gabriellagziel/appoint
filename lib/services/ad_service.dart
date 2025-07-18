@@ -7,7 +7,7 @@ class AdService {
 
   static Future<void> showInterstitialAd() async {
     await MobileAds.instance.initialize();
-    completer = Completer<void>();
+    final completer = Completer<void>();
 
     await InterstitialAd.load(
       adUnitId: _testInterstitialAdId,

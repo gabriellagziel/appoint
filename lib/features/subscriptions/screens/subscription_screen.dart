@@ -350,9 +350,9 @@ class SubscriptionScreen extends ConsumerWidget {
   Widget _buildUsageStats(UsageStats stats) {
     return Column(
       children: [
-        _buildUsageBar('Bookings', stats.bookingsUsagePercentage, stats.bookingsThisMonth, stats.bookingsLimit),
+        _buildUsageBar('Bookings', stats.bookingsUsagePercentage, stats.bookingsThisMonth.toDouble(), stats.bookingsLimit.toDouble()),
         const SizedBox(height: 8),
-        _buildUsageBar('Messages', stats.messagesUsagePercentage, stats.messagesThisMonth, stats.messagesLimit),
+        _buildUsageBar('Messages', stats.messagesUsagePercentage, stats.messagesThisMonth.toDouble(), stats.messagesLimit.toDouble()),
         const SizedBox(height: 8),
         _buildUsageBar('Storage', stats.storageUsagePercentage, stats.storageUsed, stats.storageLimit),
       ],
@@ -375,8 +375,7 @@ class SubscriptionScreen extends ConsumerWidget {
           value: percentage / 100,
           backgroundColor: Colors.grey[300],
           valueColor: AlwaysStoppedAnimation<Color>(
-            percentage > 80 ? Colors.red : Colors.green,
-          ),
+            percentage > 80 ? Colors.red : Colors.green),
         ),
       ],
     );
@@ -391,7 +390,7 @@ class SubscriptionScreen extends ConsumerWidget {
           children: [
             Text(
               'Plan Comparison',
-              style: Theme.of(context).textTheme.titleLarge,
+              style: Theme.of(context).textTheme.titleLarge!,
             ),
             const SizedBox(height: 16),
             // This would be a detailed comparison table
@@ -453,7 +452,6 @@ class SubscriptionScreen extends ConsumerWidget {
         ref.invalidate(subscriptionStatusProvider);
       }
     } catch (e) {
-      if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Failed to subscribe: $e')),
         );

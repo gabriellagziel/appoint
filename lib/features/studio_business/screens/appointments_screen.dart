@@ -7,7 +7,7 @@ class AppointmentsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    appointmentsAsync = ref.watch(appointmentsProvider);
+    final appointmentsAsync = ref.watch(appointmentsProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -45,7 +45,7 @@ class AppointmentsScreen extends ConsumerWidget {
                       Text('Status: ${appointment.status.name}'),
                       if (appointment.inviteeContact != null)
                         Text(
-                            'Client: ${appointment.inviteeContact!.displayName}',),
+                            'Client: ${appointment.inviteeContact!.displayName}'),
                     ],
                   ),
                   leading: CircleAvatar(

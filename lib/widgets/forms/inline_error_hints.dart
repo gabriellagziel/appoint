@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// Enhanced form field with inline error hints
 class InlineErrorFormField extends StatefulWidget {
 
-  const InlineErrorFormField({
+  InlineErrorFormField({
     required this.label, super.key,
     this.hint,
     this.errorText,
@@ -74,7 +74,7 @@ class _InlineErrorFormFieldState extends State<InlineErrorFormField>
 
   void _validateField(String? value) {
     if (widget.validator != null) {
-      error = widget.validator!(value);
+      final error = widget.validator!(value);
       if (error != null && error != _currentError) {
         _currentError = error;
         _animationController.forward().then((_) {
@@ -88,7 +88,7 @@ class _InlineErrorFormFieldState extends State<InlineErrorFormField>
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
     final hasError = _currentError != null || widget.errorText != null;
     final errorMessage = _currentError ?? widget.errorText;
     final isValid = !hasError && _hasBeenTouched && widget.showSuccessIcon;
@@ -237,7 +237,7 @@ class _InlineErrorFormFieldState extends State<InlineErrorFormField>
 /// Enhanced password field with inline validation
 class InlineErrorPasswordField extends StatefulWidget {
 
-  const InlineErrorPasswordField({
+  InlineErrorPasswordField({
     required this.label, super.key,
     this.hint,
     this.errorText,
@@ -272,14 +272,14 @@ class _InlineErrorPasswordFieldState extends State<InlineErrorPasswordField> {
 
   void _validatePassword(String? value) {
     if (widget.validator != null) {
-      error = widget.validator!(value);
+      final error = widget.validator!(value);
       setState(() => _currentError = error);
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
     final hasError = _currentError != null || widget.errorText != null;
     final errorMessage = _currentError ?? widget.errorText;
 
@@ -382,7 +382,7 @@ class _InlineErrorPasswordFieldState extends State<InlineErrorPasswordField> {
 /// Enhanced email field with inline validation
 class InlineErrorEmailField extends StatefulWidget {
 
-  const InlineErrorEmailField({
+  InlineErrorEmailField({
     required this.label, super.key,
     this.hint,
     this.errorText,
@@ -414,7 +414,7 @@ class _InlineErrorEmailFieldState extends State<InlineErrorEmailField> {
       return 'Email is required';
     }
 
-    emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
+    final emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
     if (!emailRegex.hasMatch(value)) {
       return 'Please enter a valid email address';
     }
@@ -424,7 +424,7 @@ class _InlineErrorEmailFieldState extends State<InlineErrorEmailField> {
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
     final hasError = _currentError != null || widget.errorText != null;
     final errorMessage = _currentError ?? widget.errorText;
 
@@ -517,7 +517,7 @@ class _InlineErrorEmailFieldState extends State<InlineErrorEmailField> {
 /// Enhanced phone field with inline validation
 class InlineErrorPhoneField extends StatefulWidget {
 
-  const InlineErrorPhoneField({
+  InlineErrorPhoneField({
     required this.label, super.key,
     this.hint,
     this.errorText,
@@ -550,7 +550,7 @@ class _InlineErrorPhoneFieldState extends State<InlineErrorPhoneField> {
     }
 
     // Remove all non-digit characters for validation
-    digitsOnly = value.replaceAll(RegExp(r'[^\d]'), '');
+    final digitsOnly = value.replaceAll(RegExp(r'[^\d]'), '');
 
     if (digitsOnly.length < 10) {
       return 'Phone number must be at least 10 digits';
@@ -565,7 +565,7 @@ class _InlineErrorPhoneFieldState extends State<InlineErrorPhoneField> {
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
     final hasError = _currentError != null || widget.errorText != null;
     final errorMessage = _currentError ?? widget.errorText;
 
@@ -689,7 +689,7 @@ class FormValidationHelper {
       return 'Email is required';
     }
 
-    emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
+    final emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
     if (!emailRegex.hasMatch(value)) {
       return 'Please enter a valid email address';
     }
@@ -703,7 +703,7 @@ class FormValidationHelper {
       return 'Phone number is required';
     }
 
-    digitsOnly = value.replaceAll(RegExp(r'[^\d]'), '');
+    final digitsOnly = value.replaceAll(RegExp(r'[^\d]'), '');
 
     if (digitsOnly.length < 10) {
       return 'Phone number must be at least 10 digits';
@@ -750,7 +750,7 @@ class FormValidationHelper {
     try {
       Uri.parse(value);
       return null;
-    } catch (e) {e) {
+    } catch (e) {
       return 'Please enter a valid URL';
     }
   }
@@ -770,12 +770,12 @@ class FormValidationHelper {
 
   /// Validate positive number
   static String? validatePositiveNumber(String? value, String fieldName) {
-    numericError = validateNumeric(value, fieldName);
+    final numericError = validateNumeric(value, fieldName);
     if (numericError != null) {
       return numericError;
     }
 
-    number = double.parse(value!);
+    final number = double.parse(value!);
     if (number <= 0) {
       return '$fieldName must be greater than 0';
     }

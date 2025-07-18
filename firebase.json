@@ -1,16 +1,29 @@
 {
-  "flutter": {
-    "platforms": {
-      "dart": {
-        "lib/firebase_options.dart": {
-          "projectId": "app-oint-core",
-          "configurations": {
-            "android": "1:944776470711:android:18eda6eda7b13730c66d32",
-            "web": "1:944776470711:web:6f3c833ef110bca6c66d32"
-          }
-        }
+
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
       }
-    }
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache, no-store, must-revalidate"
+          }
+        ]
+      }
+    ]
   },
   "emulators": {
     "functions": {
@@ -22,6 +35,9 @@
     "firestore": {
       "port": 8081,
       "rules": "firestore.rules"
+    },
+    "hosting": {
+      "port": 5000
     },
     "ui": {
       "enabled": true

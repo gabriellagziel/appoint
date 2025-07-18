@@ -21,7 +21,7 @@ class WhatsAppShareButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    shareState = ref.watch(shareDialogProvider);
+    final shareState = ref.watch(shareDialogProvider);
 
     return ElevatedButton.icon(
       onPressed:
@@ -97,15 +97,15 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
 
   @override
   Widget build(BuildContext context) {
-    shareState = ref.watch(shareDialogProvider);
-    l10n = AppLocalizations.of(context)!;
+    final shareState = ref.watch(shareDialogProvider);
+    final l10n = AppLocalizations.of(context);
 
     return AlertDialog(
       title: Row(
         children: [
           const Icon(Icons.share, color: Color(0xFF25D366)),
           const SizedBox(width: 8),
-          Text(l10n.shareOnWhatsApp),
+          Text(l10n?.shareOnWhatsApp ?? 'Share on WhatsApp'),
         ],
       ),
       content: SingleChildScrollView(
@@ -114,7 +114,7 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              l10n.meetingReadyMessage,
+              l10n?.meetingReadyMessage ?? 'Meeting is ready',
               style: const TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 16),
@@ -124,7 +124,7 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
               decoration: InputDecoration(
                 labelText: 'Message',
                 border: const OutlineInputBorder(),
-                hintText: l10n.customizeMessage,
+                hintText: l10n?.customizeMessage ?? 'Customize message',
               ),
             ),
             const SizedBox(height: 16),
@@ -135,7 +135,7 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
               ),
               const SizedBox(height: 8),
               CheckboxListTile(
-                title: Text(l10n.saveGroupForRecognition),
+                title: Text(l10n?.saveGroupForRecognition ?? 'Save group for recognition'),
                 value: _saveGroupForRecognition,
                 onChanged: (value) {
                   setState(() {
@@ -150,9 +150,9 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
                 TextField(
                   controller: _groupNameController,
                   decoration: InputDecoration(
-                    labelText: l10n.groupNameOptional,
+                    labelText: l10n?.groupNameOptional ?? 'Group name (optional)',
                     border: const OutlineInputBorder(),
-                    hintText: l10n.enterGroupName,
+                    hintText: l10n?.enterGroupName ?? 'Enter group name',
                   ),
                 ),
               ],
@@ -168,13 +168,13 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
                   children: [
                     const Icon(Icons.group, color: Colors.green),
                     const SizedBox(width: 8),
-                    Text(
-                      l10n.knownGroupDetected,
-                      style: const TextStyle(
-                        color: Colors.green,
-                        fontWeight: FontWeight.bold,
+                                          Text(
+                        l10n?.knownGroupDetected ?? 'Known group detected',
+                        style: const TextStyle(
+                          color: Colors.green,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
                   ],
                 ),
               ),
@@ -208,7 +208,7 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.of(context).pop(),
-          child: Text(l10n.cancel),
+          child: Text(l10n?.cancel ?? 'Cancel'),
         ),
         ElevatedButton.icon(
           onPressed: shareState.isLoading ? null : _shareToWhatsApp,
@@ -230,8 +230,8 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
   }
 
   Future<void> _shareToWhatsApp() async {
-    notifier = ref.read(shareDialogProvider.notifier);
-    l10n = AppLocalizations.of(context)!;
+    final notifier = ref.read(shareDialogProvider.notifier);
+    final l10n = AppLocalizations.of(context);
 
     await notifier.shareToWhatsApp(
       meetingId: widget.appointment.id,
@@ -257,7 +257,7 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
 
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(l10n.meetingSharedSuccessfully),
+          content: Text(l10n?.meetingSharedSuccessfully ?? 'Meeting shared successfully'),
           backgroundColor: const Color(0xFF25D366),
         ),
       );
