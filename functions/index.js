@@ -5,6 +5,9 @@ const {
   cancelSubscription,
   sendNotificationToStudio,
   stripeWebhook,
+  registerBusiness,
+  businessApi,
+  resetMonthlyQuotas,
 } = require('./src/index');
 
 const {
@@ -45,4 +48,9 @@ module.exports = {
   
   // Notification functions
   sendNotificationToStudio,
+
+  // Business API
+  registerBusiness,
+  businessApi,
+  resetMonthlyQuotas,
 }; 
