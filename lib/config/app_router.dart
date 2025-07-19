@@ -4,6 +4,10 @@ import 'package:appoint/features/ambassador_dashboard_screen.dart';
 import 'package:appoint/features/ambassador_onboarding_screen.dart';
 import 'package:appoint/features/auth/auth_wrapper.dart';
 import 'package:appoint/features/auth/login_screen.dart';
+import 'package:appoint/features/auth/signup_screen.dart';
+import 'package:appoint/features/auth/forgot_password_screen.dart';
+import 'package:appoint/features/auth/reset_password_screen.dart';
+import 'package:appoint/features/studio_business/entry/business_signup_screen.dart';
 import 'package:appoint/features/booking/booking_confirm_screen.dart';
 import 'package:appoint/features/booking/booking_request_screen.dart';
 import 'package:appoint/features/booking/screens/chat_booking_screen.dart';
@@ -65,6 +69,8 @@ import 'package:appoint/features/notifications/enhanced_notifications_screen.dar
 import 'package:appoint/features/settings/enhanced_settings_screen.dart';
 import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
 import 'package:appoint/features/profile/enhanced_profile_screen.dart';
+import 'package:appoint/features/settings/privacy_policy_screen.dart';
+import 'package:appoint/features/settings/terms_of_service_screen.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
     initialLocation: '/',
@@ -83,6 +89,36 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         path: '/login',
         name: 'login',
         builder: (context, final state) => const LoginScreen(),
+      ),
+      GoRoute(
+        path: '/signup',
+        name: 'signup',
+        builder: (context, final state) => const SignupScreen(),
+      ),
+      GoRoute(
+        path: '/forgot-password',
+        name: 'forgotPassword',
+        builder: (context, final state) => const ForgotPasswordScreen(),
+      ),
+      GoRoute(
+        path: '/reset-password',
+        name: 'resetPassword',
+        builder: (context, final state) => const ResetPasswordScreen(),
+      ),
+      GoRoute(
+        path: '/privacy-policy',
+        name: 'privacyPolicy',
+        builder: (context, final state) => const PrivacyPolicyScreen(),
+      ),
+      GoRoute(
+        path: '/terms-of-service',
+        name: 'termsOfService',
+        builder: (context, final state) => const TermsOfServiceScreen(),
+      ),
+      GoRoute(
+        path: '/business-signup',
+        name: 'businessSignup',
+        builder: (context, final state) => const BusinessSignupScreen(),
       ),
       GoRoute(
         path: '/dashboard',
@@ -293,13 +329,6 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       ),
 
       // Search route
-      GoRoute(
-        path: '/search',
-        name: 'search',
-        builder: (context, final state) => const SearchScreen(),
-      ),
-
-      // Messaging routes
       GoRoute(
         path: '/messages',
         name: 'messages',
