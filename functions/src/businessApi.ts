@@ -1,7 +1,7 @@
 // businessApi.ts
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
-import * as express from 'express';
+import express from 'express';
 
 // Initialize Firebase Admin if not already initialised
 if (!admin.apps.length) {
@@ -110,6 +110,29 @@ businessApiApp.use(async (req, res, next) => {
 
     const businessDoc = snap.docs[0];
     const businessData = businessDoc.data() as any;
+
+    if (businessData.status === 'blocked') {
+      res.status(402).json({ error: 'Payment Required' });
+      return;
+    }
+
+    if (businessData.status === 'limited') {
+      // Allow up to 5 calls per day – naive; count from usage_logs for today
+      const todayStart = new Date();
+      todayStart.setUTCHours(0,0,0,0);
+      const todayEnd = new Date();
+      todayEnd.setUTCHours(23,59,59,999);
+      const todayUsageSnap = await db
+        .collection(USAGE_COLLECTION)
+        .where('businessId', '==', businessDoc.id)
+        .where('timestamp', '>=', todayStart)
+        .where('timestamp', '<=', todayEnd)
+        .get();
+      if (todayUsageSnap.size >= 5) {
+        res.status(429).json({ error: 'Daily limit exceeded' });
+        return;
+      }
+    }
 
     if (businessData.status !== 'active') {
       res.status(403).json({ error: 'API key suspended' });
