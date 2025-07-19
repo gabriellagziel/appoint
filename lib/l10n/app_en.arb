@@ -2713,5 +2713,21 @@
   "purchase_now_button": "Purchase Now",
   "@purchase_now_button": {
     "description": "Button to purchase upgrade"
-  }
+  },
+  "mapsWarningTitle": "Continue Using Maps?",
+  "@mapsWarningTitle": {"description": "Title for the warning modal before consuming a free map view"},
+  "mapsWarningBody": "You've used free access for {used} of 5 meetings.\nTo keep using Google Maps after this, you'll need to upgrade to Premium.",
+  "@mapsWarningBody": {"description": "Body text for maps usage warning modal", "placeholders": {"used": {"type": "int"}}},
+  "mapsContinueCta": "Continue (Meeting {current}/{limit})",
+  "@mapsContinueCta": {"description": "CTA button for continuing with free map access", "placeholders": {"current": {"type": "int"}, "limit": {"type": "int"}}},
+  "upgradePremiumCta": "Upgrade to Premium",
+  "@upgradePremiumCta": {"description": "CTA button text to upgrade to premium"},
+  "mapsLockedTitle": "Map Access Locked",
+  "@mapsLockedTitle": {"description": "Title when user exceeded free map quota"},
+  "mapsLockedBody": "You've reached your limit of 5 meetings with free map access.\nUpgrade now to continue using Google Maps.",
+  "@mapsLockedBody": {"description": "Body text when map access is locked"},
+  "backToMeetingCta": "Back to meeting",
+  "@backToMeetingCta": {"description": "Button text to return to meeting without map"},
+  "mapsBadge": "{remaining}/5",
+  "@mapsBadge": {"description": "Badge text showing remaining free map views", "placeholders": {"remaining": {"type": "int"}}}
 }
