@@ -285,6 +285,7 @@ class ApiConfig {
     'calendar': true,
     'search': true,
     'onboarding': true,
+    'mapsPaywall': true,
   };
 
   // Check if feature is enabled

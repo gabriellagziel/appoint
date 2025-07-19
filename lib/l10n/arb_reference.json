@@ -659,5 +659,21 @@
   "clientScreenTBD": "Client screen coming soon",
   "@clientScreenTBD": {
     "description": "Client screen TBD message"
-  }
+  },
+  "mapsWarningTitle": "Continue Using Maps?",
+  "@mapsWarningTitle": {"description": "Title for map usage warning modal"},
+  "mapsWarningBody": "You've used free access for {used} of 5 meetings.\nTo keep using Google Maps after this, you'll need to upgrade to Premium.",
+  "@mapsWarningBody": {"description": "Body of the map usage warning modal", "placeholders": {"used": {"type": "int"}}},
+  "mapsContinueCta": "Continue (Meeting {current}/{limit})",
+  "@mapsContinueCta": {"description": "Continue CTA in map warning", "placeholders": {"current": {"type": "int"}, "limit": {"type": "int"}}},
+  "upgradePremiumCta": "Upgrade to Premium",
+  "@upgradePremiumCta": {"description": "CTA text to upgrade to premium"},
+  "mapsLockedTitle": "Map Access Locked",
+  "@mapsLockedTitle": {"description": "Title when map access is locked after quota"},
+  "mapsLockedBody": "You've reached your limit of 5 meetings with free map access.\nUpgrade now to continue using Google Maps.",
+  "@mapsLockedBody": {"description": "Body of locked map access modal"},
+  "backToMeetingCta": "Back to meeting",
+  "@backToMeetingCta": {"description": "Back button text in locked modal"},
+  "mapsBadge": "{remaining}/5",
+  "@mapsBadge": {"description": "Remaining quota badge", "placeholders": {"remaining": {"type": "int"}}}
 }
