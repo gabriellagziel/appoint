@@ -10,6 +10,10 @@ const {
   resetMonthlyQuotas,
   monthlyBillingJob,
   importBankPayments,
+  getUsageStats,
+  downloadUsageCSV,
+  adminAnalyticsSummary,
+  exportYearlyTax,
 } = require('./src/index');
 
 const {
@@ -57,4 +61,8 @@ module.exports = {
   resetMonthlyQuotas,
   monthlyBillingJob,
   importBankPayments,
+  getUsageStats,
+  downloadUsageCSV,
+  adminAnalyticsSummary,
+  exportYearlyTax,
 }; 
