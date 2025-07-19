@@ -14,6 +14,12 @@ const {
   downloadUsageCSV,
   adminAnalyticsSummary,
   exportYearlyTax,
+  icsFeed,
+  rotateIcsToken,
+  onAppointmentWrite,
+  processWebhookRetries,
+  oauth,
+  hourlyAlerts,
 } = require('./src/index');
 
 const {
@@ -65,4 +71,10 @@ module.exports = {
   downloadUsageCSV,
   adminAnalyticsSummary,
   exportYearlyTax,
+  icsFeed,
+  rotateIcsToken,
+  onAppointmentWrite,
+  processWebhookRetries,
+  oauth,
+  hourlyAlerts,
 }; 
