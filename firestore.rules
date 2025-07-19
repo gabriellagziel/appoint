@@ -14,13 +14,16 @@ service cloud.firestore {
     function isOwner(id) {
       return isSignedIn() && request.auth.uid == id;
     }
-    // User profiles
+    // User profiles with map-view counter validation
     match /users/{userId} {
       allow read, create: if isOwner(userId);
       allow update: if isSignedIn() &&
         isOwner(userId) &&
         (!('role' in request.resource.data) ||
-          request.resource.data.role == resource.data.role);
+          request.resource.data.role == resource.data.role) &&
+        // If the mapViewCount field is present we only allow an increment of 1
+        (!("mapViewCount" in request.resource.data) ||
+          request.resource.data.mapViewCount == resource.data.mapViewCount + 1);
     }
 
     // Bookings
@@ -145,6 +148,27 @@ service cloud.firestore {
     // Admin panel data
     match /admin/{document=**} {
       allow read, write: if isAdmin();
+    }
+
+    // Map Views limitation for free-tier users
+    match /users/{userId}/mapViews/{appointmentId} {
+      // Free & premium users can read their own map view docs
+      allow read: if isOwner(userId);
+
+      // Creation allowed only if:
+      //  • The caller owns the document
+      //  • A document for this appointment does not already exist (ensured by client attempting to create only once)
+      //  • The user has viewed fewer than 5 appointments **before** this write, and
+      //    the accompanying user document update increments the counter by 1.
+      allow create: if isOwner(userId) &&
+        !exists(/databases/$(database)/documents/users/$(userId)/mapViews/$(appointmentId)) &&
+        get(/databases/$(database)/documents/users/$(userId)).data.mapViewCount < 5 &&
+        // Validate that the user document is part of this commit and increments the counter exactly once
+        getAfter(/databases/$(database)/documents/users/$(userId)).data.mapViewCount ==
+          get(/databases/$(database)/documents/users/$(userId)).data.mapViewCount + 1;
+
+      // Updates & deletes are not allowed – a view record is immutable
+      allow update, delete: if false;
     }
   }
 } 
