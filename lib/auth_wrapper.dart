@@ -5,6 +5,7 @@ import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/services/onboarding_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:appoint/features/auth/verify_email_screen.dart';
 
 class AuthWrapper extends ConsumerStatefulWidget {
   const AuthWrapper({super.key});
@@ -61,6 +62,9 @@ class _AuthWrapperState extends ConsumerState<AuthWrapper> {
       data: (user) {
         if (user == null) {
           return const LoginScreen();
+        }
+        if (!(user.emailVerified ?? false)) {
+          return const VerifyEmailScreen();
         }
         return const DashboardScreen();
       },

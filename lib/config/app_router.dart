@@ -4,6 +4,8 @@ import 'package:appoint/features/ambassador_dashboard_screen.dart';
 import 'package:appoint/features/ambassador_onboarding_screen.dart';
 import 'package:appoint/features/auth/auth_wrapper.dart';
 import 'package:appoint/features/auth/login_screen.dart';
+import 'package:appoint/features/auth/forgot_password_screen.dart';
+import 'package:appoint/features/auth/verify_email_screen.dart';
 import 'package:appoint/features/booking/booking_confirm_screen.dart';
 import 'package:appoint/features/booking/booking_request_screen.dart';
 import 'package:appoint/features/booking/screens/chat_booking_screen.dart';
@@ -52,6 +54,8 @@ import 'package:go_router/go_router.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:appoint/services/eta_service.dart';
 
 // Enhanced features imports
 import 'package:appoint/features/onboarding/onboarding_screen.dart';
@@ -65,6 +69,8 @@ import 'package:appoint/features/notifications/enhanced_notifications_screen.dar
 import 'package:appoint/features/settings/enhanced_settings_screen.dart';
 import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
 import 'package:appoint/features/profile/enhanced_profile_screen.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/features/onboarding/permissions_onboarding_screen.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
     initialLocation: '/',
@@ -78,6 +84,11 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         path: '/onboarding',
         name: 'onboarding',
         builder: (context, final state) => const OnboardingScreen(),
+      ),
+      GoRoute(
+        path: '/onboarding/permissions',
+        name: 'permissionsOnboarding',
+        builder: (context, final state) => const PermissionsOnboardingScreen(),
       ),
       GoRoute(
         path: '/login',
@@ -407,17 +418,34 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       ),
 
       GoRoute(
+        path: '/forgot-password',
+        name: 'forgotPassword',
+        builder: (context, final state) => const ForgotPasswordScreen(),
+      ),
+      GoRoute(
+        path: '/verify-email',
+        name: 'verifyEmail',
+        builder: (context, final state) => const VerifyEmailScreen(),
+      ),
+
+      GoRoute(
         path: '/studio/staff-availability',
         name: 'studioStaffAvailability',
         builder: (context, final state) =>
             const StaffAvailabilityScreen(),
       ),
     ],
-    errorBuilder: (context, final state) => Scaffold(
-      body: Center(
-        child: Text('No route defined for ${state.uri.path}'),
-      ),
-    ),
+    errorBuilder: (context, final state) {
+      final l10n = AppLocalizations.of(context)!;
+      return Scaffold(
+        body: Center(
+          child: Text(
+            l10n.noRouteDefinedForStateuripath(state.uri.path),
+            textAlign: TextAlign.center,
+          ),
+        ),
+      );
+    },
   ),);
 
 // Enhanced meeting details screen with Google Maps integration
@@ -441,11 +469,14 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
   Map<String, dynamic>? meetingData;
   bool isLoading = true;
   String? error;
+  int? lateBy;
+  TravelMode _travelMode = TravelMode.driving; // TODO allow user selection
 
   @override
   void initState() {
     super.initState();
     _loadMeetingData();
+    _checkEta();
   }
 
   Future<void> _loadMeetingData() async {
@@ -455,7 +486,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
         error = null;
       });
 
-      // Try to fetch from externalMeetings collection first
+      // Try externalMeetings collection first
       final externalDoc = await FirebaseFirestore.instance
           .collection('externalMeetings')
           .doc(widget.meetingId)
@@ -466,24 +497,24 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
           meetingData = externalDoc.data();
           isLoading = false;
         });
+        _checkEta();
         return;
       }
 
-      // If not found in externalMeetings, try appointments collection
+      // Fallback to appointments collection
       final appointmentDoc = await FirebaseFirestore.instance
           .collection('appointments')
           .doc(widget.meetingId)
           .get();
-
       if (appointmentDoc.exists) {
         setState(() {
           meetingData = appointmentDoc.data();
           isLoading = false;
         });
+        _checkEta();
         return;
       }
 
-      // If still not found, show error
       setState(() {
         error = 'Meeting not found';
         isLoading = false;
@@ -494,6 +525,28 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
         isLoading = false;
       });
     }
+  }
+
+  Future<void> _checkEta() async {
+    try {
+      final position = await Geolocator.getCurrentPosition();
+      if (meetingData == null) return;
+      final destLat = (meetingData?['lat'] as num?)?.toDouble();
+      final destLng = (meetingData?['lng'] as num?)?.toDouble();
+      if (destLat == null || destLng == null) return;
+      final eta = await EtaService().getEtaMinutes(
+        origin: LatLng(position.latitude, position.longitude),
+        dest: LatLng(destLat, destLng),
+        mode: _travelMode,
+      );
+      if (eta == null) return;
+      final start = DateTime.parse(meetingData?['start'] ?? '');
+      final minutesUntilStart = start.difference(DateTime.now()).inMinutes;
+      final delta = eta - minutesUntilStart;
+      setState(() {
+        lateBy = delta > 0 ? delta : null;
+      });
+    } catch (_) {}
   }
 
   @override
@@ -847,6 +900,14 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                 ),
               ),
             ),
+          if (lateBy != null) ...[
+            const SizedBox(height: 16),
+            ElevatedButton.icon(
+              onPressed: _notifyLate,
+              icon: const Icon(Icons.schedule),
+              label: Text('אני מאחר (~$lateBy דק׳)'),
+            ),
+          ],
         ],
       ),
     );
@@ -926,5 +987,17 @@ ${meeting['address'] != null ? 'Location: ${meeting['address']}' : ''}
         backgroundColor: Colors.green,
       ),
     );
+  }
+
+  Future<void> _notifyLate() async {
+    final delta = lateBy;
+    if (delta == null) return;
+    // TODO: Call cloud function to notify provider
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('הודעת איחור נשלחה (~$delta דק׳)')),
+    );
+    setState(() {
+      lateBy = null;
+    });
   }
 }

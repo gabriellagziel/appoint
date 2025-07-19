@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:appoint/l10n/app_localizations.dart';
 
 class ErrorBoundary extends StatefulWidget {
   const ErrorBoundary({required this.child, super.key});
@@ -33,9 +34,9 @@ class _ErrorBoundaryState extends State<ErrorBoundary> {
               children: [
                 const Icon(Icons.error, color: Colors.red, size: 64),
                 const SizedBox(height: 16),
-                const Text('Something went wrong',
-                    style:
-                        TextStyle(fontSize: 24, fontWeight: FontWeight.bold),),
+                Text(AppLocalizations.of(context)!.authErrorInternalError,
+                    style: const TextStyle(
+                        fontSize: 24, fontWeight: FontWeight.bold),),
                 const SizedBox(height: 8),
                 Text(_error.toString(),
                     style: const TextStyle(color: Colors.grey),),
@@ -44,7 +45,8 @@ class _ErrorBoundaryState extends State<ErrorBoundary> {
                   onPressed: () => setState(() {
                     _error = null;
                   }),
-                  child: const Text('Retry'),
+                  child:
+                      Text(AppLocalizations.of(context)!.retry),
                 ),
               ],
             ),

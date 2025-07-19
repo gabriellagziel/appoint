@@ -56,6 +56,11 @@ class EnvironmentConfig {
     'GOOGLE_CLIENT_ID',
   );
 
+  // Google Maps Distance Matrix API Key
+  static const String googleMapsApiKey = String.fromEnvironment(
+    'GOOGLE_MAPS_DISTANCE_API_KEY',
+  );
+
   // Validation methods
   static bool get isStripeConfigured => stripePublishableKey.isNotEmpty;
   static bool get isFirebaseConfigured => firebaseProjectId.isNotEmpty;

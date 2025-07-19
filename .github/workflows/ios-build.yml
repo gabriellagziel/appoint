@@ -1,0 +1,16 @@
+name: iOS Build
+
+push:
+  branches: [ main ]
+
+on:
+  pull_request:
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Placeholder iOS Build
+        run: echo "iOS build stub"

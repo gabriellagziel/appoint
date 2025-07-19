@@ -1,4 +1,7 @@
-name: Update Flutter Docker Image
+name: Update Flutter Image
+
+push:
+  branches: [ main ]
 
 on:
   schedule:

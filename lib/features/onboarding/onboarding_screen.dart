@@ -120,7 +120,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       AnalyticsService().trackOnboardingComplete();
       
       if (mounted) {
-        context.go('/dashboard');
+        context.go('/onboarding/permissions');
       }
     } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(

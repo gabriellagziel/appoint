@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/widgets/app_logo.dart';
 import 'package:appoint/constants/app_branding.dart';
+import 'package:go_router/go_router.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});
@@ -116,11 +117,20 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text('Dont have an account? '),
+                  const Text('Forgot your password? '),
                   TextButton(
-                    onPressed: () {
-                      // Navigate to sign up
-                    },
+                    onPressed: () => context.push('/forgot-password'),
+                    child: const Text('Reset'),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text("Don't have an account? "),
+                  TextButton(
+                    onPressed: () => context.push('/signup'),
                     child: const Text('Sign Up'),
                   ),
                 ],

@@ -1,5 +1,6 @@
 import 'package:appoint/config/environment_config.dart';
 import 'package:appoint/models/app_user.dart';
+import 'package:appoint/models/user_profile.dart';
 import 'package:appoint/services/error_handling_service.dart';
 import 'package:appoint/widgets/social_account_conflict_dialog.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -27,6 +28,7 @@ class AuthService {
       return AppUser(
         uid: user.uid,
         email: user.email,
+        emailVerified: user.emailVerified,
         role: role,
         studioId: claims['studioId'] as String?,
         businessProfileId: claims['businessProfileId'] as String?,
@@ -34,15 +36,7 @@ class AuthService {
     });
 
   Future<void> signIn(String email, final String password) async {
-    try {
-      await _firebaseAuth.signInWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
-    } on FirebaseAuthException catch (e) {
-      await _handleAuthException(e);
-      rethrow;
-    }
+    await signInWithEmailAndPassword(email: email, password: password);
   }
 
   Future<void> signOut() async {
@@ -207,5 +201,144 @@ class AuthService {
       return e.credential;
     }
     return null;
+  }
+
+  /// Sign in with email & password – kept for backward compatibility with existing tests
+  Future<UserProfile> signInWithEmailAndPassword({
+    required String email,
+    required String password,
+  }) async {
+    if (email.isEmpty || password.isEmpty) {
+      throw ArgumentError('Email and password must not be empty');
+    }
+    if (!isValidEmail(email)) {
+      throw ArgumentError('Invalid email format');
+    }
+
+    try {
+      final credential = await _firebaseAuth.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+      final user = credential.user;
+      if (user == null) throw FirebaseAuthException(code: 'user-not-found');
+
+      if (!user.emailVerified) {
+        await user.sendEmailVerification();
+        // Immediately sign-out and force user to verify.
+        await _firebaseAuth.signOut();
+        throw FirebaseAuthException(
+          code: 'email-not-verified',
+          message: 'Email address has not been verified.',
+        );
+      }
+
+      return UserProfile(
+        id: user.uid,
+        name: user.displayName ?? '',
+        email: user.email,
+        photoUrl: user.photoURL,
+      );
+    } on FirebaseAuthException catch (e) {
+      await _handleAuthException(e);
+      rethrow;
+    }
+  }
+
+  /// Register with email & password and send verification email.
+  Future<UserProfile> createUserWithEmailAndPassword({
+    required String email,
+    required String password,
+    String? displayName,
+  }) async {
+    if (!isValidEmail(email)) {
+      throw ArgumentError('Invalid email format');
+    }
+    if (!isValidPassword(password)) {
+      throw ArgumentError('Weak password');
+    }
+
+    try {
+      final credential = await _firebaseAuth.createUserWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+      final user = credential.user;
+      if (user == null) throw FirebaseAuthException(code: 'unknown');
+
+      await user.updateDisplayName(displayName);
+      await user.sendEmailVerification();
+
+      return UserProfile(
+        id: user.uid,
+        name: displayName ?? '',
+        email: user.email,
+        photoUrl: user.photoURL,
+      );
+    } on FirebaseAuthException catch (e) {
+      await _handleAuthException(e);
+      rethrow;
+    }
+  }
+
+  /// Reset password by sending reset link to user email.
+  Future<void> resetPassword(String email) async {
+    if (!isValidEmail(email)) {
+      throw ArgumentError('Invalid email');
+    }
+    try {
+      await _firebaseAuth.sendPasswordResetEmail(email: email);
+    } on FirebaseAuthException catch (e) {
+      await _handleAuthException(e);
+      rethrow;
+    }
+  }
+
+  /// Return [UserProfile] of current authenticated user (or null).
+  Future<UserProfile?> getCurrentUser() async {
+    final user = _firebaseAuth.currentUser;
+    if (user == null) return null;
+    return UserProfile(
+      id: user.uid,
+      name: user.displayName ?? '',
+      email: user.email,
+      photoUrl: user.photoURL,
+    );
+  }
+
+  /// Update Firestore user document with new profile data.
+  Future<void> updateUserProfile(UserProfile profile) async {
+    // TODO: Implement Firestore update logic. For now we just update Firebase Auth displayName & photo
+    final user = _firebaseAuth.currentUser;
+    if (user == null) throw FirebaseAuthException(code: 'user-not-found');
+    await user.updateDisplayName(profile.name);
+    if (profile.photoUrl != null) {
+      await user.updatePhotoURL(profile.photoUrl);
+    }
+    // Firestore sync pending implementation
+  }
+
+  /// Permanently delete current user account.
+  Future<void> deleteUser() async {
+    final user = _firebaseAuth.currentUser;
+    if (user == null) throw FirebaseAuthException(code: 'user-not-found');
+    await user.delete();
+    // TODO: Optionally remove accompanying Firestore docs.
+  }
+
+  /// Validate email format using simple regex.
+  bool isValidEmail(String email) {
+    const pattern = r"^[^@\s]+@[^@\s]+\.[^@\s]+";
+    return RegExp(pattern).hasMatch(email);
+  }
+
+  /// Validate password strength (min 8 chars incl upper, lower, number).
+  bool isValidPassword(String password) {
+    if (password.length < 8) return false;
+    final hasUpper = password.contains(RegExp(r'[A-Z]'));
+    final hasLower = password.contains(RegExp(r'[a-z]'));
+    final hasNumber = password.contains(RegExp(r'[0-9]'));
+    final hasSpecial = password.contains(RegExp(r'[!@#\$&*~]'));
+    return hasUpper && hasLower && hasNumber && hasSpecial;
   }
 }
