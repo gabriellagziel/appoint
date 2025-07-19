@@ -287,7 +287,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       ),
       GoRoute(
         path: '/business/messages',
-        name: 'messages',
+        name: 'businessMessages',
         builder: (context, final state) => const MessagesScreen(),
       ),
       GoRoute(
@@ -297,7 +297,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       ),
       GoRoute(
         path: '/business/settings',
-        name: 'settings',
+        name: 'businessSettings',
         builder: (context, final state) => const SettingsScreen(),
       ),
       GoRoute(
