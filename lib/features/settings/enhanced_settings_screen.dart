@@ -1,6 +1,7 @@
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:appoint/providers/theme_provider.dart';
 
 final settingsProvider = StateProvider<Map<String, dynamic>>((ref) => {
   'notifications': {
@@ -184,6 +185,15 @@ class EnhancedSettingsScreen extends ConsumerWidget {
             subtitle: Text(_getThemeText(appearance['theme'])),
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () => _showThemeDialog(context, ref),
+          ),
+          SwitchListTile(
+            title: const Text('Dark Mode'),
+            subtitle: const Text('Toggle light/dark theme'),
+            value: ref.watch(themeModeProvider) == ThemeMode.dark,
+            onChanged: (value) {
+              ref.read(themeNotifierProvider.notifier).setMode(
+                  value ? ThemeMode.dark : ThemeMode.light);
+            },
           ),
           ListTile(
             title: const Text('Language'),
@@ -498,10 +508,7 @@ class EnhancedSettingsScreen extends ConsumerWidget {
   }
 
   void _showPrivacyPolicy(BuildContext context) {
-    // TODO: Show privacy policy
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Privacy policy coming soon!')),
-    );
+    Navigator.pushNamed(context, '/privacy-policy');
   }
 
   void _showBillingHistory(BuildContext context) {
@@ -547,10 +554,7 @@ class EnhancedSettingsScreen extends ConsumerWidget {
   }
 
   void _showTermsOfService(BuildContext context) {
-    // TODO: Show terms of service
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Terms of service coming soon!')),
-    );
+    Navigator.pushNamed(context, '/terms-of-service');
   }
 
   void _signOut(BuildContext context) {
