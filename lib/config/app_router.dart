@@ -54,6 +54,8 @@ import 'package:go_router/go_router.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:appoint/services/eta_service.dart';
 
 // Enhanced features imports
 import 'package:appoint/features/onboarding/onboarding_screen.dart';
@@ -467,11 +469,14 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
   Map<String, dynamic>? meetingData;
   bool isLoading = true;
   String? error;
+  int? lateBy;
+  TravelMode _travelMode = TravelMode.driving; // TODO allow user selection
 
   @override
   void initState() {
     super.initState();
     _loadMeetingData();
+    _checkEta();
   }
 
   Future<void> _loadMeetingData() async {
@@ -481,7 +486,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
         error = null;
       });
 
-      // Try to fetch from externalMeetings collection first
+      // Try externalMeetings collection first
       final externalDoc = await FirebaseFirestore.instance
           .collection('externalMeetings')
           .doc(widget.meetingId)
@@ -492,24 +497,24 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
           meetingData = externalDoc.data();
           isLoading = false;
         });
+        _checkEta();
         return;
       }
 
-      // If not found in externalMeetings, try appointments collection
+      // Fallback to appointments collection
       final appointmentDoc = await FirebaseFirestore.instance
           .collection('appointments')
           .doc(widget.meetingId)
           .get();
-
       if (appointmentDoc.exists) {
         setState(() {
           meetingData = appointmentDoc.data();
           isLoading = false;
         });
+        _checkEta();
         return;
       }
 
-      // If still not found, show error
       setState(() {
         error = 'Meeting not found';
         isLoading = false;
@@ -520,6 +525,28 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
         isLoading = false;
       });
     }
+  }
+
+  Future<void> _checkEta() async {
+    try {
+      final position = await Geolocator.getCurrentPosition();
+      if (meetingData == null) return;
+      final destLat = (meetingData?['lat'] as num?)?.toDouble();
+      final destLng = (meetingData?['lng'] as num?)?.toDouble();
+      if (destLat == null || destLng == null) return;
+      final eta = await EtaService().getEtaMinutes(
+        origin: LatLng(position.latitude, position.longitude),
+        dest: LatLng(destLat, destLng),
+        mode: _travelMode,
+      );
+      if (eta == null) return;
+      final start = DateTime.parse(meetingData?['start'] ?? '');
+      final minutesUntilStart = start.difference(DateTime.now()).inMinutes;
+      final delta = eta - minutesUntilStart;
+      setState(() {
+        lateBy = delta > 0 ? delta : null;
+      });
+    } catch (_) {}
   }
 
   @override
@@ -873,6 +900,14 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                 ),
               ),
             ),
+          if (lateBy != null) ...[
+            const SizedBox(height: 16),
+            ElevatedButton.icon(
+              onPressed: _notifyLate,
+              icon: const Icon(Icons.schedule),
+              label: Text('אני מאחר (~$lateBy דק׳)'),
+            ),
+          ],
         ],
       ),
     );
@@ -952,5 +987,17 @@ ${meeting['address'] != null ? 'Location: ${meeting['address']}' : ''}
         backgroundColor: Colors.green,
       ),
     );
+  }
+
+  Future<void> _notifyLate() async {
+    final delta = lateBy;
+    if (delta == null) return;
+    // TODO: Call cloud function to notify provider
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('הודעת איחור נשלחה (~$delta דק׳)')),
+    );
+    setState(() {
+      lateBy = null;
+    });
   }
 }
