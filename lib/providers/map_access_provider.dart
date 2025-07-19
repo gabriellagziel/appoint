@@ -9,3 +9,9 @@ final mapAccessProvider = FutureProvider.family<bool, String>((ref, appointmentI
   final service = MapAccessService();
   return service.canViewAndRecord(appointmentId);
 });
+
+/// Usage status provider (no mutations)
+final mapUsageStatusProvider = FutureProvider.family<MapUsageStatus, String>((ref, appointmentId) async {
+  final service = MapAccessService();
+  return service.getUsageStatus(appointmentId);
+});
