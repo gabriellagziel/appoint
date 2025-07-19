@@ -9,6 +9,7 @@ if (!admin.apps.length) {
 export * from './ambassadors';
 export * from './stripe';
 export * from './validation';
+export * from './businessApi';
 
 // Re-export for backward compatibility
 export { ambassadorQuotas } from './ambassadors'; 
