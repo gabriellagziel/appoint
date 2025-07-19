@@ -76,4 +76,66 @@ class MapAccessService {
       return true;
     });
   }
+
+  /// Retrieves the **current** usage status without recording a new view.
+  Future<MapUsageStatus> getUsageStatus(String appointmentId) async {
+    const limit = 5;
+    final uid = _auth.currentUser?.uid;
+    if (uid == null) {
+      return MapUsageStatus(
+        isPremium: false,
+        currentCount: limit,
+        limit: limit,
+        alreadyViewed: false,
+      );
+    }
+
+    final userSnap = await _firestore.collection('users').doc(uid).get();
+    final data = userSnap.data() ?? <String, dynamic>{};
+    final isPremium = (data['premium'] as bool?) ?? false;
+    final isAdminFreeAccess = (data['isAdminFreeAccess'] as bool?) ?? false;
+
+    if (isPremium || isAdminFreeAccess) {
+      return MapUsageStatus(
+        isPremium: true,
+        currentCount: 0,
+        limit: limit,
+        alreadyViewed: false,
+      );
+    }
+
+    final currentCount = (data['mapViewCount'] as int?) ?? 0;
+
+    final viewedDoc = await _firestore
+        .collection('users')
+        .doc(uid)
+        .collection('mapViews')
+        .doc(appointmentId)
+        .get();
+
+    return MapUsageStatus(
+      isPremium: false,
+      currentCount: currentCount,
+      limit: limit,
+      alreadyViewed: viewedDoc.exists,
+    );
+  }
+}
+
+/// Lightweight value-object containing current usage information for the
+/// _signed-in_ user.
+class MapUsageStatus {
+  MapUsageStatus({
+    required this.isPremium,
+    required this.currentCount,
+    required this.limit,
+    required this.alreadyViewed,
+  });
+
+  final bool isPremium;
+  final int currentCount;
+  final int limit;
+  final bool alreadyViewed;
+
+  int get remaining => (limit - currentCount).clamp(0, limit);
 }
