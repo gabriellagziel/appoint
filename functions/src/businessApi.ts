@@ -156,26 +156,35 @@ businessApiApp.use(async (req, res, next) => {
   }
 });
 
+// After body parser
+businessApiApp.use((req, _res, next) => {
+  (req as any)._startTime = Date.now();
+  next();
+});
+
 /** Helper: make usage log */
 async function logUsage({
   businessId,
   endpoint,
   ip,
   success,
+  latencyMs,
 }: {
   businessId: string;
   endpoint: string;
   ip: string | undefined;
   success: boolean;
+  latencyMs?: number;
 }) {
   try {
-    const logData = {
+    const logData: any = {
       businessId,
       endpoint,
       ip: ip || null,
       success,
       timestamp: admin.firestore.FieldValue.serverTimestamp(),
     };
+    if (latencyMs !== undefined) logData.latencyMs = latencyMs;
     await db.collection(USAGE_COLLECTION).add(logData);
   } catch (err) {
     console.error('logUsage error:', err);
@@ -200,12 +209,12 @@ businessApiApp.post('/appointments/create', async (req, res) => {
         lastUsedAt: admin.firestore.FieldValue.serverTimestamp(),
       });
 
-    await logUsage({ businessId, endpoint: 'appointments/create', ip: req.ip, success: true });
+    await logUsage({ businessId, endpoint: 'appointments/create', ip: req.ip, success: true, latencyMs: Date.now() - (req as any)._startTime });
 
     res.status(200).json({ appointmentId });
   } catch (err) {
     console.error('create appointment error:', err);
-    await logUsage({ businessId, endpoint: 'appointments/create', ip: req.ip, success: false });
+    await logUsage({ businessId, endpoint: 'appointments/create', ip: req.ip, success: false, latencyMs: Date.now() - (req as any)._startTime });
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
@@ -228,12 +237,12 @@ businessApiApp.post('/appointments/cancel', async (req, res) => {
       .doc(businessId)
       .update({ usageThisMonth: admin.firestore.FieldValue.increment(1) });
 
-    await logUsage({ businessId, endpoint: 'appointments/cancel', ip: req.ip, success: true });
+    await logUsage({ businessId, endpoint: 'appointments/cancel', ip: req.ip, success: true, latencyMs: Date.now() - (req as any)._startTime });
 
     res.status(200).json({ cancelled: true, appointmentId });
   } catch (err) {
     console.error('cancel appointment error:', err);
-    await logUsage({ businessId, endpoint: 'appointments/cancel', ip: req.ip, success: false });
+    await logUsage({ businessId, endpoint: 'appointments/cancel', ip: req.ip, success: false, latencyMs: Date.now() - (req as any)._startTime });
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
