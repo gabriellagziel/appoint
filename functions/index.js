@@ -5,6 +5,21 @@ const {
   cancelSubscription,
   sendNotificationToStudio,
   stripeWebhook,
+  registerBusiness,
+  businessApi,
+  resetMonthlyQuotas,
+  monthlyBillingJob,
+  importBankPayments,
+  getUsageStats,
+  downloadUsageCSV,
+  adminAnalyticsSummary,
+  exportYearlyTax,
+  icsFeed,
+  rotateIcsToken,
+  onAppointmentWrite,
+  processWebhookRetries,
+  oauth,
+  hourlyAlerts,
 } = require('./src/index');
 
 const {
@@ -45,4 +60,21 @@ module.exports = {
   
   // Notification functions
   sendNotificationToStudio,
+
+  // Business API
+  registerBusiness,
+  businessApi,
+  resetMonthlyQuotas,
+  monthlyBillingJob,
+  importBankPayments,
+  getUsageStats,
+  downloadUsageCSV,
+  adminAnalyticsSummary,
+  exportYearlyTax,
+  icsFeed,
+  rotateIcsToken,
+  onAppointmentWrite,
+  processWebhookRetries,
+  oauth,
+  hourlyAlerts,
 }; 
