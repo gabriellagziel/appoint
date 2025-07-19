@@ -8,6 +8,8 @@ const {
   registerBusiness,
   businessApi,
   resetMonthlyQuotas,
+  monthlyBillingJob,
+  importBankPayments,
 } = require('./src/index');
 
 const {
@@ -53,4 +55,6 @@ module.exports = {
   registerBusiness,
   businessApi,
   resetMonthlyQuotas,
+  monthlyBillingJob,
+  importBankPayments,
 }; 
