@@ -1,13 +1,15 @@
-"use client"
-
 import { Button } from '@/components/ui/button'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { useTranslation } from '@/lib/i18n'
 
 export function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const router = useRouter()
+    const { t } = useTranslation(router.locale)
 
     return (
         <nav className="bg-white shadow-sm border-b">
@@ -31,22 +33,22 @@ export function Navbar() {
                     <div className="hidden md:flex items-center space-x-6">
                         <div className="flex items-baseline space-x-4">
                             <Link href="/" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                                Home
+                                {t('navigation.home')}
                             </Link>
                             <Link href="/features" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                                Features
+                                {t('navigation.features')}
                             </Link>
                             <Link href="/pricing" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                                Pricing
+                                {t('navigation.pricing')}
                             </Link>
                             <Link href="/enterprise" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                                Enterprise
+                                {t('navigation.enterprise')}
                             </Link>
                             <Link href="/about" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                                About
+                                {t('navigation.about')}
                             </Link>
                             <Link href="/contact" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                                Contact
+                                {t('navigation.contact')}
                             </Link>
                         </div>
                         <LanguageSwitcher />
@@ -70,22 +72,22 @@ export function Navbar() {
                     <div className="md:hidden">
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                             <Link href="/" className="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">
-                                Home
+                                {t('navigation.home')}
                             </Link>
                             <Link href="/features" className="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">
-                                Features
+                                {t('navigation.features')}
                             </Link>
                             <Link href="/pricing" className="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">
-                                Pricing
+                                {t('navigation.pricing')}
                             </Link>
                             <Link href="/enterprise" className="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">
-                                Enterprise
+                                {t('navigation.enterprise')}
                             </Link>
                             <Link href="/about" className="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">
-                                About
+                                {t('navigation.about')}
                             </Link>
                             <Link href="/contact" className="text-gray-500 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">
-                                Contact
+                                {t('navigation.contact')}
                             </Link>
                             <div className="px-3 py-2">
                                 <LanguageSwitcher />
