@@ -74,7 +74,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get search => '[NO] Søk';
 
   @override
-  String get cancelInviteConfirmation => '[NO] [NO] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation =>
+      '[NO] [NO] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -91,7 +92,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get playtimeLiveScheduled => '[NO] Direktesendt økt planlagt';
 
   @override
-  String get revokeAccessConfirmation => '[NO] [NO] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation =>
+      '[NO] [NO] Are you sure you want to revoke access?';
 
   @override
   String get download => '[NO] Last ned';
@@ -203,7 +205,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get cut => '[NO] Klipp';
 
   @override
-  String get inviteCancelledSuccessfully => '[NO] [NO] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully =>
+      '[NO] [NO] Invite cancelled successfully';
 
   @override
   String get retry => '[NO] Prøv igjen';
@@ -408,7 +411,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get dashboard => '[NO] [NO] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => '[NO] [NO] No permission for broadcast';
+  String get noPermissionForBroadcast =>
+      '[NO] [NO] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[NO] Playtime Games – Admin';
@@ -485,7 +489,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get playtimeEnterGameName => '[NO] [NO] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[NO] [NO] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[NO] [NO] Please login to access family features';
 
   @override
   String get myInvites => '[NO] [NO] My Invites';
@@ -545,7 +550,8 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[NO] [NO] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[NO] [NO] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[NO] Admin Metrics';
@@ -566,40 +572,52 @@ class AppLocalizationsNo extends AppLocalizations {
   String get contentLibrary => '[NO] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[NO] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[NO] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[NO] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[NO] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[NO] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[NO] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[NO] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[NO] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[NO] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[NO] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[NO] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[NO] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[NO] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[NO] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[NO] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[NO] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[NO] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[NO] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN =>
+      '[NO] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[NO] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[NO] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[NO] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[NO] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -616,19 +634,24 @@ class AppLocalizationsNo extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[NO] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[NO] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[NO] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[NO] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] The verification code is invalid.';
+  String get REDACTED_TOKEN =>
+      '[NO] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[NO] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[NO] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Please enter the verification code.';
+  String get REDACTED_TOKEN =>
+      '[NO] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[NO] Missing verification ID.';
@@ -640,43 +663,56 @@ class AppLocalizationsNo extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[NO] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[NO] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[NO] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[NO] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[NO] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[NO] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[NO] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN =>
+      '[NO] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Multi-factor information not found.';
+  String get REDACTED_TOKEN =>
+      '[NO] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Missing multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[NO] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Invalid multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[NO] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] This second factor is already in use.';
+  String get REDACTED_TOKEN =>
+      '[NO] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN =>
+      '[NO] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[NO] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[NO] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Email change requires verification.';
+  String get REDACTED_TOKEN =>
+      '[NO] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] This phone number is already in use.';
+  String get REDACTED_TOKEN =>
+      '[NO] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[NO] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[NO] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[NO] The ID token is invalid.';
@@ -688,10 +724,12 @@ class AppLocalizationsNo extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[NO] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[NO] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[NO] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[NO] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[NO] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[NO] Invalid custom claims provided.';
@@ -700,70 +738,87 @@ class AppLocalizationsNo extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[NO] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[NO] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[NO] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[NO] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[NO] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[NO] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN =>
+      '[NO] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[NO] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[NO] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[NO] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[NO] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[NO] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[NO] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN =>
+      '[NO] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[NO] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[NO] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[NO] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN =>
+      '[NO] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[NO] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[NO] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN =>
+      '[NO] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[NO] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[NO] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[NO] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[NO] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[NO] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[NO] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN =>
+      '[NO] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[NO] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[NO] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[NO] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN =>
+      '[NO] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[NO] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[NO] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[NO] Missing continue URL.';
@@ -778,7 +833,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get authErrorMissingUid => '[NO] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Missing OAuth client secret.';
+  String get REDACTED_TOKEN =>
+      '[NO] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[NO] Firebase project not found.';
@@ -787,19 +843,23 @@ class AppLocalizationsNo extends AppLocalizations {
   String get authErrorReservedClaims => '[NO] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[NO] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[NO] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[NO] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[NO] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[NO] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[NO] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN =>
+      '[NO] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[NO] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[NO] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -848,7 +908,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Virtual session created! Inviting friends... (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Virtual session created! Inviting friends... (Norwegian)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -889,13 +950,15 @@ class AppLocalizationsNo extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[NO] Subscription unavailable (Norwegian)';
+  String get subscriptionUnavailable =>
+      '[NO] Subscription unavailable (Norwegian)';
 
   @override
   String get confirmBooking => '[NO] Confirm Booking (Norwegian)';
 
   @override
-  String get failedToUpdatePermissionE => '[NO] Failed to update permission: \$e (Norwegian)';
+  String get failedToUpdatePermissionE =>
+      '[NO] Failed to update permission: \$e (Norwegian)';
 
   @override
   String get reject => '[NO] Reject (Norwegian)';
@@ -909,7 +972,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get noProviders => '[NO] No providers';
 
   @override
-  String get checkingSubscription => '[NO] Checking subscription... (Norwegian)';
+  String get checkingSubscription =>
+      '[NO] Checking subscription... (Norwegian)';
 
   @override
   String errorPickingImageE(Object e) {
@@ -917,13 +981,15 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get noContentAvailableYet => '[NO] No content available yet (Norwegian)';
+  String get noContentAvailableYet =>
+      '[NO] No content available yet (Norwegian)';
 
   @override
   String get resolve => '[NO] Resolve (Norwegian)';
 
   @override
-  String get errorLoadingSurveysError => '[NO] Error loading surveys: \$error (Norwegian)';
+  String get errorLoadingSurveysError =>
+      '[NO] Error loading surveys: \$error (Norwegian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -931,7 +997,8 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[NO] Get help with your account (Norwegian)';
+  String get getHelpWithYourAccount =>
+      '[NO] Get help with your account (Norwegian)';
 
   @override
   String get pay => '[NO] Pay (Norwegian)';
@@ -946,7 +1013,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[NO] Changes saved successfully! (Norwegian)';
+  String get changesSavedSuccessfully =>
+      '[NO] Changes saved successfully! (Norwegian)';
 
   @override
   String get createNewInvoice => '[NO] Create New Invoice (Norwegian)';
@@ -966,7 +1034,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get profileSaved => '[NO] Profile saved! (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -997,7 +1066,8 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[NO] You will receive a confirmation email shortly. (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] You will receive a confirmation email shortly. (Norwegian)';
 
   @override
   String get addQuestion => '[NO] Add Question (Norwegian)';
@@ -1026,22 +1096,26 @@ class AppLocalizationsNo extends AppLocalizations {
   String get surveyManagement => '[NO] Survey Management (Norwegian)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[NO] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[NO] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[NO] No rooms found. Add your first room! (Norwegian)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[NO] No rooms found. Add your first room! (Norwegian)';
 
   @override
   String get readOurPrivacyPolicy => '[NO] Read our privacy policy (Norwegian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[NO] Could not open privacy policy (Norwegian)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[NO] Could not open privacy policy (Norwegian)';
 
   @override
   String get refresh1 => '[NO] Refresh (Norwegian)';
 
   @override
-  String get roomUpdatedSuccessfully => '[NO] Room updated successfully! (Norwegian)';
+  String get roomUpdatedSuccessfully =>
+      '[NO] Room updated successfully! (Norwegian)';
 
   @override
   String get contentDetail => '[NO] Content Detail (Norwegian)';
@@ -1050,7 +1124,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get cancelSubscription => '[NO] Cancel Subscription (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Successfully registered as Ambassador! (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Successfully registered as Ambassador! (Norwegian)';
 
   @override
   String get save1 => '[NO] Save (Norwegian)';
@@ -1059,7 +1134,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get copy1 => '[NO] Copy (Norwegian)';
 
   @override
-  String get failedToSendInvitationE => '[NO] Failed to send invitation: \$e (Norwegian)';
+  String get failedToSendInvitationE =>
+      '[NO] Failed to send invitation: \$e (Norwegian)';
 
   @override
   String get surveyScore => '[NO] Survey Score (Norwegian)';
@@ -1076,16 +1152,20 @@ class AppLocalizationsNo extends AppLocalizations {
   String get responseDetail => '[NO] Response Detail (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[NO] Failed to start Pro subscription: \$e (Norwegian)';
+  String get failedToStartProSubscriptionE =>
+      '[NO] Failed to start Pro subscription: \$e (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Business Dashboard Entry Screen - Coming Soon (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Business Dashboard Entry Screen - Coming Soon (Norwegian)';
 
   @override
   String get contentFilter => '[NO] Content Filter (Norwegian)';
@@ -1107,7 +1187,8 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[NO] Business CRM Entry Screen - Coming Soon (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Business CRM Entry Screen - Coming Soon (Norwegian)';
 
   @override
   String get adminDashboard => '[NO] Admin Dashboard';
@@ -1118,13 +1199,16 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[NO] Error loading dashboard: \$error (Norwegian)';
+  String get errorLoadingDashboardError =>
+      '[NO] Error loading dashboard: \$error (Norwegian)';
 
   @override
-  String get gameDeletedSuccessfully => '[NO] Game deleted successfully! (Norwegian)';
+  String get gameDeletedSuccessfully =>
+      '[NO] Game deleted successfully! (Norwegian)';
 
   @override
-  String get viewResponsesComingSoon => '[NO] View responses - Coming soon! (Norwegian)';
+  String get viewResponsesComingSoon =>
+      '[NO] View responses - Coming soon! (Norwegian)';
 
   @override
   String get deleteProvider => '[NO] Delete Provider';
@@ -1133,7 +1217,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get errorLoadingRewards => '[NO] Error loading rewards (Norwegian)';
 
   @override
-  String get failedToDeleteAccountE => '[NO] Failed to delete account: \$e (Norwegian)';
+  String get failedToDeleteAccountE =>
+      '[NO] Failed to delete account: \$e (Norwegian)';
 
   @override
   String get invited1 => '[NO] Invited (Norwegian)';
@@ -1148,7 +1233,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get noEvents => '[NO] No events (Norwegian)';
 
   @override
-  String get gameCreatedSuccessfully => '[NO] Game created successfully! (Norwegian)';
+  String get gameCreatedSuccessfully =>
+      '[NO] Game created successfully! (Norwegian)';
 
   @override
   String get add1 => '[NO] Add (Norwegian)';
@@ -1168,10 +1254,12 @@ class AppLocalizationsNo extends AppLocalizations {
   String get clients => '[NO] Clients (Norwegian)';
 
   @override
-  String get noAmbassadorDataAvailable => '[NO] No ambassador data available (Norwegian)';
+  String get noAmbassadorDataAvailable =>
+      '[NO] No ambassador data available (Norwegian)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[NO] Background deleted successfully! (Norwegian)';
+  String get backgroundDeletedSuccessfully =>
+      '[NO] Background deleted successfully! (Norwegian)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1179,7 +1267,8 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[NO] No analytics data available yet. (Norwegian)';
+  String get noAnalyticsDataAvailableYet =>
+      '[NO] No analytics data available yet. (Norwegian)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1187,7 +1276,8 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[NO] Business Phone Booking Entry Screen - Coming Soon (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Business Phone Booking Entry Screen - Coming Soon (Norwegian)';
 
   @override
   String get verification => '[NO] Verification (Norwegian)';
@@ -1234,7 +1324,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get businessProfile => '[NO] Business Profile (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Business Booking Entry Screen - Coming Soon (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Business Booking Entry Screen - Coming Soon (Norwegian)';
 
   @override
   String get createNewSurvey => '[NO] Create New Survey (Norwegian)';
@@ -1258,7 +1349,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get loginFailedE => '[NO] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[NO] Invitation sent successfully! (Norwegian)';
+  String get invitationSentSuccessfully =>
+      '[NO] Invitation sent successfully! (Norwegian)';
 
   @override
   String get registering => '[NO] Registering... (Norwegian)';
@@ -1272,13 +1364,16 @@ class AppLocalizationsNo extends AppLocalizations {
   String get home1 => '[NO] Home (Norwegian)';
 
   @override
-  String get errorSavingSettingsE => '[NO] Error saving settings: \$e (Norwegian)';
+  String get errorSavingSettingsE =>
+      '[NO] Error saving settings: \$e (Norwegian)';
 
   @override
-  String get appVersionAndInformation => '[NO] App version and information (Norwegian)';
+  String get appVersionAndInformation =>
+      '[NO] App version and information (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Business Subscription Entry Screen - Coming Soon (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Business Subscription Entry Screen - Coming Soon (Norwegian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1286,7 +1381,8 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[NO] Your payment has been processed successfully. (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Your payment has been processed successfully. (Norwegian)';
 
   @override
   String get errorE => '[NO] Error: \$e (Norwegian)';
@@ -1295,7 +1391,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get viewAll1 => '[NO] View All (Norwegian)';
 
   @override
-  String get editSurveyComingSoon => '[NO] Edit survey - Coming soon! (Norwegian)';
+  String get editSurveyComingSoon =>
+      '[NO] Edit survey - Coming soon! (Norwegian)';
 
   @override
   String get enterOtp => '[NO] Enter OTP (Norwegian)';
@@ -1304,7 +1401,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get payment => '[NO] Payment (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Automatically confirm new booking requests (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Automatically confirm new booking requests (Norwegian)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1317,7 +1415,8 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[NO] Please sign in to upload a background (Norwegian)';
+  String get pleaseSignInToUploadABackground =>
+      '[NO] Please sign in to upload a background (Norwegian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1334,19 +1433,22 @@ class AppLocalizationsNo extends AppLocalizations {
   String get autoconfirmBookings => '[NO] Auto-Confirm Bookings (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Redirecting to Stripe checkout for Pro plan... (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Redirecting to Stripe checkout for Pro plan... (Norwegian)';
 
   @override
   String get exportAsCsv => '[NO] Export as CSV (Norwegian)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[NO] Delete functionality coming soon! (Norwegian)';
+  String get deleteFunctionalityComingSoon =>
+      '[NO] Delete functionality coming soon! (Norwegian)';
 
   @override
   String get editClient => '[NO] Edit Client (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Are you sure you want to delete this message? (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Are you sure you want to delete this message? (Norwegian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1357,31 +1459,39 @@ class AppLocalizationsNo extends AppLocalizations {
   String get notAuthenticated => '[NO] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[NO] Privacy request sent to your parents! (Norwegian)';
+  String get privacyRequestSentToYourParents =>
+      '[NO] Privacy request sent to your parents! (Norwegian)';
 
   @override
-  String get clientDeletedSuccessfully => '[NO] Client deleted successfully! (Norwegian)';
+  String get clientDeletedSuccessfully =>
+      '[NO] Client deleted successfully! (Norwegian)';
 
   @override
-  String get failedToCancelSubscription => '[NO] Failed to cancel subscription (Norwegian)';
+  String get failedToCancelSubscription =>
+      '[NO] Failed to cancel subscription (Norwegian)';
 
   @override
   String get allLanguages => '[NO] All Languages (Norwegian)';
 
   @override
-  String get slotDeletedSuccessfully => '[NO] Slot deleted successfully (Norwegian)';
+  String get slotDeletedSuccessfully =>
+      '[NO] Slot deleted successfully (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN =>
+      '[NO] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Parents must approve before children can join (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Parents must approve before children can join (Norwegian)';
 
   @override
-  String get subscribeToPro1499mo => '[NO] Subscribe to Pro (€14.99/mo) (Norwegian)';
+  String get subscribeToPro1499mo =>
+      '[NO] Subscribe to Pro (€14.99/mo) (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Business Availability Entry Screen - Coming Soon (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Business Availability Entry Screen - Coming Soon (Norwegian)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1395,7 +1505,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get submitBooking => '[NO] Submit Booking (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Are you sure you want to cancel this appointment? (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Are you sure you want to cancel this appointment? (Norwegian)';
 
   @override
   String get noUpcomingBookings => '[NO] No upcoming bookings (Norwegian)';
@@ -1413,7 +1524,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get goToDashboard => '[NO] Go to Dashboard (Norwegian)';
 
   @override
-  String get ambassadorQuotaDashboard => '[NO] Ambassador Quota Dashboard (Norwegian)';
+  String get ambassadorQuotaDashboard =>
+      '[NO] Ambassador Quota Dashboard (Norwegian)';
 
   @override
   String get adminSettings => '[NO] Admin Settings';
@@ -1451,7 +1563,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[NO] Client added successfully! (Norwegian)';
+  String get clientAddedSuccessfully =>
+      '[NO] Client added successfully! (Norwegian)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1469,7 +1582,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get bookAppointment => '[NO] Book Appointment (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[NO] Delete (Norwegian)';
@@ -1484,13 +1598,15 @@ class AppLocalizationsNo extends AppLocalizations {
   String get manageSubscription => '[NO] Manage Subscription (Norwegian)';
 
   @override
-  String get requiresInstallFallback => '[NO] Requires Install Fallback (Norwegian)';
+  String get requiresInstallFallback =>
+      '[NO] Requires Install Fallback (Norwegian)';
 
   @override
   String get paymentConfirmation => '[NO] Payment Confirmation (Norwegian)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[NO] Promo applied! Your next bill is free. (Norwegian)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[NO] Promo applied! Your next bill is free. (Norwegian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1501,13 +1617,16 @@ class AppLocalizationsNo extends AppLocalizations {
   String get errorLoadingSlots => '[NO] Error loading slots (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Allow other users to find and join this game (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Allow other users to find and join this game (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Business Onboarding Screen - Coming Soon (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Business Onboarding Screen - Coming Soon (Norwegian)';
 
   @override
-  String get activateBusinessProfile => '[NO] Activate Business Profile (Norwegian)';
+  String get activateBusinessProfile =>
+      '[NO] Activate Business Profile (Norwegian)';
 
   @override
   String get contentNotFound => '[NO] Content not found (Norwegian)';
@@ -1549,7 +1668,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get shareLink => '[NO] Share Link (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN =>
+      '[NO] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[NO] Delete Appointment (Norwegian)';
@@ -1569,10 +1689,12 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[NO] Update your business information (Norwegian)';
+  String get updateYourBusinessInformation =>
+      '[NO] Update your business information (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN =>
+      '[NO] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[NO] Parent Dashboard (Norwegian)';
@@ -1595,10 +1717,12 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[NO] Studio booking is only available on web (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Studio booking is only available on web (Norwegian)';
 
   @override
-  String get errorLoadingBranchesE => '[NO] Error loading branches: \$e (Norwegian)';
+  String get errorLoadingBranchesE =>
+      '[NO] Error loading branches: \$e (Norwegian)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1614,13 +1738,15 @@ class AppLocalizationsNo extends AppLocalizations {
   String get none => '[NO] None (Norwegian)';
 
   @override
-  String get failedToUpdateConsentE => '[NO] Failed to update consent: \$e (Norwegian)';
+  String get failedToUpdateConsentE =>
+      '[NO] Failed to update consent: \$e (Norwegian)';
 
   @override
   String get welcome1 => '[NO] Welcome (Norwegian)';
 
   @override
-  String get failedToCreateSessionE => '[NO] Failed to create session: \$e (Norwegian)';
+  String get failedToCreateSessionE =>
+      '[NO] Failed to create session: \$e (Norwegian)';
 
   @override
   String get inviteContact => '[NO] Invite Contact (Norwegian)';
@@ -1629,7 +1755,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get surveyEditor => '[NO] Survey Editor (Norwegian)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[NO] Failed to start Basic subscription: \$e (Norwegian)';
+  String get failedToStartBasicSubscriptionE =>
+      '[NO] Failed to start Basic subscription: \$e (Norwegian)';
 
   @override
   String get mySchedule => '[NO] My Schedule (Norwegian)';
@@ -1649,10 +1776,12 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[NO] Settings saved successfully! (Norwegian)';
+  String get settingsSavedSuccessfully =>
+      '[NO] Settings saved successfully! (Norwegian)';
 
   @override
-  String get linkCopiedToClipboard => '[NO] Link copied to clipboard! (Norwegian)';
+  String get linkCopiedToClipboard =>
+      '[NO] Link copied to clipboard! (Norwegian)';
 
   @override
   String get accept1 => '[NO] Accept (Norwegian)';
@@ -1669,7 +1798,8 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[NO] Room deleted successfully! (Norwegian)';
+  String get roomDeletedSuccessfully =>
+      '[NO] Room deleted successfully! (Norwegian)';
 
   @override
   String get businessCalendar => '[NO] Business Calendar (Norwegian)';
@@ -1689,7 +1819,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get addNewRoom => '[NO] Add New Room (Norwegian)';
 
   @override
-  String get requireParentApproval => '[NO] Require Parent Approval (Norwegian)';
+  String get requireParentApproval =>
+      '[NO] Require Parent Approval (Norwegian)';
 
   @override
   String get closed => '[NO] Closed (Norwegian)';
@@ -1734,7 +1865,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get cancel1 => '[NO] Cancel (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Subscription activated successfully! (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Subscription activated successfully! (Norwegian)';
 
   @override
   String activityLogaction(Object action) {
@@ -1745,7 +1877,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get broadcast => '[NO] Broadcast (Norwegian)';
 
   @override
-  String get noEventsScheduledThisWeek => '[NO] No events scheduled this week (Norwegian)';
+  String get noEventsScheduledThisWeek =>
+      '[NO] No events scheduled this week (Norwegian)';
 
   @override
   String get googleCalendar => '[NO] Google Calendar (Norwegian)';
@@ -1757,7 +1890,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get childDashboard => '[NO] Child Dashboard (Norwegian)';
 
   @override
-  String get failedToUploadBackgroundE => '[NO] Failed to upload background: \$e (Norwegian)';
+  String get failedToUploadBackgroundE =>
+      '[NO] Failed to upload background: \$e (Norwegian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1776,7 +1910,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get noAppointments => '[NO] No appointments (Norwegian)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[NO] • Unlimited bookings per week (Norwegian)';
+  String get unlimitedBookingsPerWeek =>
+      '[NO] • Unlimited bookings per week (Norwegian)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1784,16 +1919,19 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[NO] Scheduled at: \$scheduledAt (Norwegian)';
+  String get scheduledAtScheduledat =>
+      '[NO] Scheduled at: \$scheduledAt (Norwegian)';
 
   @override
   String get selectStaff => '[NO] Select Staff (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Subscription cancelled successfully (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Subscription cancelled successfully (Norwegian)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[NO] Cancel Appointment (Norwegian)';
@@ -1807,7 +1945,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get businessSignup => '[NO] Business Signup (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Business Completion Screen - Coming Soon (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Business Completion Screen - Coming Soon (Norwegian)';
 
   @override
   String get createGame1 => '[NO] Create Game (Norwegian)';
@@ -1818,10 +1957,12 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[NO] Please enter a promo code (Norwegian)';
+  String get pleaseEnterAPromoCode =>
+      '[NO] Please enter a promo code (Norwegian)';
 
   @override
-  String get errorLoadingAvailabilityE => '[NO] Error loading availability: \$e (Norwegian)';
+  String get errorLoadingAvailabilityE =>
+      '[NO] Error loading availability: \$e (Norwegian)';
 
   @override
   String get parentalControls => '[NO] Parental Controls (Norwegian)';
@@ -1830,13 +1971,15 @@ class AppLocalizationsNo extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[NO] Child linked successfully! (Norwegian)';
+  String get childLinkedSuccessfully =>
+      '[NO] Child linked successfully! (Norwegian)';
 
   @override
   String get create => '[NO] Create (Norwegian)';
 
   @override
-  String get noExternalMeetingsFound => '[NO] No external meetings found. (Norwegian)';
+  String get noExternalMeetingsFound =>
+      '[NO] No external meetings found. (Norwegian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1844,13 +1987,15 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[NO] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[NO] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[NO] Scheduler Screen (Norwegian)';
 
   @override
-  String get clientUpdatedSuccessfully => '[NO] Client updated successfully! (Norwegian)';
+  String get clientUpdatedSuccessfully =>
+      '[NO] Client updated successfully! (Norwegian)';
 
   @override
   String get surveyResponses => '[NO] Survey Responses (Norwegian)';
@@ -1876,10 +2021,12 @@ class AppLocalizationsNo extends AppLocalizations {
   String get errorLoadingEvents => '[NO] Error loading events (Norwegian)';
 
   @override
-  String get errorLoadingOrganizations => '[NO] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[NO] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[NO] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[NO] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[NO] Success (Norwegian)';
@@ -1898,10 +2045,12 @@ class AppLocalizationsNo extends AppLocalizations {
   String get readWrite => '[NO] Read & Write (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Redirecting to Stripe checkout for Basic plan... (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Redirecting to Stripe checkout for Basic plan... (Norwegian)';
 
   @override
-  String get errorSavingConfigurationE => '[NO] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[NO] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[NO] Pick Date (Norwegian)';
@@ -1937,10 +2086,12 @@ class AppLocalizationsNo extends AppLocalizations {
   String get businessLogin => '[NO] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[NO] Invoice created successfully! (Norwegian)';
+  String get invoiceCreatedSuccessfully =>
+      '[NO] Invoice created successfully! (Norwegian)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[NO] No time series data available (Norwegian)';
+  String get noTimeSeriesDataAvailable =>
+      '[NO] No time series data available (Norwegian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1953,7 +2104,8 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[NO] Failed to send privacy request: \$e (Norwegian)';
+  String get failedToSendPrivacyRequestE =>
+      '[NO] Failed to send privacy request: \$e (Norwegian)';
 
   @override
   String get chooseYourPlan => '[NO] Choose Your Plan (Norwegian)';
@@ -1968,13 +2120,15 @@ class AppLocalizationsNo extends AppLocalizations {
   String get eventCreated => '[NO] Event created (Norwegian)';
 
   @override
-  String get subscribeToBasic499mo => '[NO] Subscribe to Basic (€4.99/mo) (Norwegian)';
+  String get subscribeToBasic499mo =>
+      '[NO] Subscribe to Basic (€4.99/mo) (Norwegian)';
 
   @override
   String get completion => '[NO] Completion (Norwegian)';
 
   @override
-  String get supportTicketSubmitted => '[NO] Support ticket submitted (Norwegian)';
+  String get supportTicketSubmitted =>
+      '[NO] Support ticket submitted (Norwegian)';
 
   @override
   String get monetizationSettings => '[NO] Monetization Settings (Norwegian)';
@@ -1989,10 +2143,12 @@ class AppLocalizationsNo extends AppLocalizations {
   String get deleteSurvey => '[NO] Delete Survey (Norwegian)';
 
   @override
-  String get gameApprovedSuccessfully => '[NO] Game approved successfully! (Norwegian)';
+  String get gameApprovedSuccessfully =>
+      '[NO] Game approved successfully! (Norwegian)';
 
   @override
-  String get errorLoadingPermissionsError => '[NO] Error loading permissions: \$error (Norwegian)';
+  String get errorLoadingPermissionsError =>
+      '[NO] Error loading permissions: \$error (Norwegian)';
 
   @override
   String get referrals => '[NO] Referrals (Norwegian)';
@@ -2034,7 +2190,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get organizations => '[NO] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[NO] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[NO] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[NO] Create New Game (Norwegian)';
@@ -2043,16 +2200,19 @@ class AppLocalizationsNo extends AppLocalizations {
   String get next1 => '[NO] Next (Norwegian)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[NO] Background uploaded successfully! (Norwegian)';
+  String get backgroundUploadedSuccessfully =>
+      '[NO] Background uploaded successfully! (Norwegian)';
 
   @override
-  String get noAppointmentRequestsFound => '[NO] No appointment requests found. (Norwegian)';
+  String get noAppointmentRequestsFound =>
+      '[NO] No appointment requests found. (Norwegian)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => '[NO] Restrict mature content (Norwegian)';
+  String get restrictMatureContent =>
+      '[NO] Restrict mature content (Norwegian)';
 
   @override
   String get ambassadors => '[NO] Ambassadors (Norwegian)';
@@ -2073,16 +2233,19 @@ class AppLocalizationsNo extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => '[NO] Failed to create game: \$e (Norwegian)';
+  String get failedToCreateGameE =>
+      '[NO] Failed to create game: \$e (Norwegian)';
 
   @override
   String get noChartDataAvailable => '[NO] No chart data available (Norwegian)';
 
   @override
-  String get phonebasedBookingSystem => '[NO] • Phone-based booking system (Norwegian)';
+  String get phonebasedBookingSystem =>
+      '[NO] • Phone-based booking system (Norwegian)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2091,7 +2254,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get invoices => '[NO] Invoices (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2118,10 +2282,12 @@ class AppLocalizationsNo extends AppLocalizations {
   String get iDoNotConsent => '[NO] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN => '[NO] No clients found. Add your first client! (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] No clients found. Add your first client! (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN =>
+      '[NO] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[NO] Group: \$groupId';
@@ -2133,7 +2299,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get forward => '[NO] Forward (Norwegian)';
 
   @override
-  String get roomAddedSuccessfully => '[NO] Room added successfully! (Norwegian)';
+  String get roomAddedSuccessfully =>
+      '[NO] Room added successfully! (Norwegian)';
 
   @override
   String get option => '[NO] • \$option (Norwegian)';
@@ -2144,7 +2311,8 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[NO] • CRM dashboard with analytics (Norwegian)';
+  String get crmDashboardWithAnalytics =>
+      '[NO] • CRM dashboard with analytics (Norwegian)';
 
   @override
   String get contentLibrary1 => '[NO] Content Library (Norwegian)';
@@ -2153,28 +2321,34 @@ class AppLocalizationsNo extends AppLocalizations {
   String get reply => '[NO] Reply (Norwegian)';
 
   @override
-  String get subscriptionManagement => '[NO] Subscription Management (Norwegian)';
+  String get subscriptionManagement =>
+      '[NO] Subscription Management (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Monetization settings will be implemented here (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Monetization settings will be implemented here (Norwegian)';
 
   @override
-  String get failedToApplyPromoCodeE => '[NO] Failed to apply promo code: \$e (Norwegian)';
+  String get failedToApplyPromoCodeE =>
+      '[NO] Failed to apply promo code: \$e (Norwegian)';
 
   @override
   String get editProvider => '[NO] Edit Provider';
 
   @override
-  String get localizationContribution => '[NO] Localization Contribution (Norwegian)';
+  String get localizationContribution =>
+      '[NO] Localization Contribution (Norwegian)';
 
   @override
   String get parentalConsent => '[NO] Parental Consent (Norwegian)';
 
   @override
-  String get businessSignupScreenComingSoon => '[NO] Business Signup Screen - Coming Soon (Norwegian)';
+  String get businessSignupScreenComingSoon =>
+      '[NO] Business Signup Screen - Coming Soon (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => '[NO] Are you sure you want to delete this appointment? (Norwegian)';
+  String get REDACTED_TOKEN =>
+      '[NO] Are you sure you want to delete this appointment? (Norwegian)';
 
   @override
   String get syncAppointment => '[NO] Sync Appointment (Norwegian)';
@@ -2186,13 +2360,15 @@ class AppLocalizationsNo extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[NO] Business Setup Screen - Coming Soon (Norwegian)';
+  String get businessSetupScreenComingSoon =>
+      '[NO] Business Setup Screen - Coming Soon (Norwegian)';
 
   @override
   String get edit1 => '[NO] Edit (Norwegian)';
 
   @override
-  String get noEventsScheduledThisMonth => '[NO] No events scheduled this month (Norwegian)';
+  String get noEventsScheduledThisMonth =>
+      '[NO] No events scheduled this month (Norwegian)';
 
   @override
   String get businessDashboard => '[NO] Business Dashboard (Norwegian)';
@@ -2206,10 +2382,12 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[NO] Manage Staff Availability (Norwegian)';
+  String get manageStaffAvailability =>
+      '[NO] Manage Staff Availability (Norwegian)';
 
   @override
-  String get noMissingTranslations => '[NO] No missing translations (Norwegian)';
+  String get noMissingTranslations =>
+      '[NO] No missing translations (Norwegian)';
 
   @override
   String get skip => '[NO] Skip (Norwegian)';
@@ -2223,7 +2401,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get noUsers => '[NO] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[NO] Error loading referral code (Norwegian)';
+  String get errorLoadingReferralCode =>
+      '[NO] Error loading referral code (Norwegian)';
 
   @override
   String get allCountries => '[NO] All Countries (Norwegian)';
@@ -2232,13 +2411,15 @@ class AppLocalizationsNo extends AppLocalizations {
   String get deleteGame => '[NO] Delete Game (Norwegian)';
 
   @override
-  String get staffManagementTools => '[NO] • Staff management tools (Norwegian)';
+  String get staffManagementTools =>
+      '[NO] • Staff management tools (Norwegian)';
 
   @override
   String get deleteMessage => '[NO] Delete Message (Norwegian)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[NO] changeRole (TRANSLATE)';
@@ -2249,7 +2430,8 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[NO] Opening customer portal... (Norwegian)';
+  String get openingCustomerPortal =>
+      '[NO] Opening customer portal... (Norwegian)';
 
   @override
   String get signOut => '[NO] Sign Out (Norwegian)';
@@ -2260,7 +2442,8 @@ class AppLocalizationsNo extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[NO] Upgrade to Business (Norwegian)';
@@ -2286,7 +2469,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[NO] View Responses (Norwegian)';
@@ -2315,7 +2499,8 @@ class AppLocalizationsNo extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2328,4 +2513,33 @@ class AppLocalizationsNo extends AppLocalizations {
 
   @override
   String get loadingCheckout => 'جار تحميل الدفع...';
+
+  @override
+  String get ad_pre_title => 'Watch an ad to confirm your appointment';
+
+  @override
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+
+  @override
+  String get watch_ad_button => 'Watch Ad';
+
+  @override
+  String get upgrade_button => 'Upgrade to Premium (€4)';
+
+  @override
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
+
+  @override
+  String get confirm_appointment_button => 'Confirm Appointment';
+
+  @override
+  String get upgrade_prompt_title => 'One-time upgrade';
+
+  @override
+  String get upgrade_prompt_description => 'Pay €4 to remove all ads forever';
+
+  @override
+  String get purchase_now_button => 'Purchase Now';
 }

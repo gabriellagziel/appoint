@@ -74,7 +74,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get search => '[PL] Szukaj';
 
   @override
-  String get cancelInviteConfirmation => '[PL] Anuluj potwierdzenie zaproszenia';
+  String get cancelInviteConfirmation =>
+      '[PL] Anuluj potwierdzenie zaproszenia';
 
   @override
   String created(Object date) {
@@ -91,7 +92,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get playtimeLiveScheduled => '[PL] Sesja na żywo zaplanowana';
 
   @override
-  String get revokeAccessConfirmation => '[PL] [PL] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation =>
+      '[PL] [PL] Are you sure you want to revoke access?';
 
   @override
   String get download => '[PL] Pobierz';
@@ -185,7 +187,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => '[PL] [PL] Meeting shared successfully';
+  String get meetingSharedSuccessfully =>
+      '[PL] [PL] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[PL] Witamy w Playtime';
@@ -203,7 +206,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get cut => '[PL] Wytnij';
 
   @override
-  String get inviteCancelledSuccessfully => '[PL] Zaproszenie anulowane pomyślnie';
+  String get inviteCancelledSuccessfully =>
+      '[PL] Zaproszenie anulowane pomyślnie';
 
   @override
   String get retry => '[PL] [PL] Retry';
@@ -283,7 +287,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get scheduleForLater => '[PL] Zaplanuj na później';
 
   @override
-  String get accessRevokedSuccessfully => '[PL] [PL] Access revoked successfully';
+  String get accessRevokedSuccessfully =>
+      '[PL] [PL] Access revoked successfully';
 
   @override
   String type(Object type) {
@@ -485,7 +490,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get playtimeEnterGameName => '[PL] Wprowadź nazwę gry';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[PL] [PL] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[PL] [PL] Please login to access family features';
 
   @override
   String get myInvites => '[PL] [PL] My Invites';
@@ -545,7 +551,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[PL] [PL] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[PL] [PL] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[PL] Admin Metrics';
@@ -566,40 +573,52 @@ class AppLocalizationsPl extends AppLocalizations {
   String get contentLibrary => '[PL] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[PL] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[PL] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[PL] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[PL] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[PL] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[PL] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[PL] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[PL] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[PL] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[PL] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[PL] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[PL] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[PL] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[PL] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[PL] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[PL] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[PL] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[PL] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN =>
+      '[PL] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[PL] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[PL] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[PL] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[PL] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -616,19 +635,24 @@ class AppLocalizationsPl extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[PL] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[PL] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[PL] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[PL] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] The verification code is invalid.';
+  String get REDACTED_TOKEN =>
+      '[PL] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[PL] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[PL] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Please enter the verification code.';
+  String get REDACTED_TOKEN =>
+      '[PL] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[PL] Missing verification ID.';
@@ -640,43 +664,56 @@ class AppLocalizationsPl extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[PL] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[PL] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[PL] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[PL] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[PL] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[PL] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[PL] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN =>
+      '[PL] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Multi-factor information not found.';
+  String get REDACTED_TOKEN =>
+      '[PL] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Missing multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[PL] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Invalid multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[PL] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] This second factor is already in use.';
+  String get REDACTED_TOKEN =>
+      '[PL] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN =>
+      '[PL] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[PL] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[PL] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Email change requires verification.';
+  String get REDACTED_TOKEN =>
+      '[PL] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] This phone number is already in use.';
+  String get REDACTED_TOKEN =>
+      '[PL] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[PL] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[PL] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[PL] The ID token is invalid.';
@@ -688,10 +725,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[PL] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[PL] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[PL] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[PL] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[PL] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[PL] Invalid custom claims provided.';
@@ -700,70 +739,87 @@ class AppLocalizationsPl extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[PL] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[PL] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[PL] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[PL] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[PL] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[PL] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN =>
+      '[PL] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[PL] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[PL] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[PL] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[PL] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[PL] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[PL] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN =>
+      '[PL] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[PL] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[PL] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[PL] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN =>
+      '[PL] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[PL] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[PL] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN =>
+      '[PL] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[PL] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[PL] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[PL] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[PL] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[PL] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[PL] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN =>
+      '[PL] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[PL] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[PL] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[PL] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN =>
+      '[PL] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[PL] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[PL] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[PL] Missing continue URL.';
@@ -778,7 +834,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get authErrorMissingUid => '[PL] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Missing OAuth client secret.';
+  String get REDACTED_TOKEN =>
+      '[PL] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[PL] Firebase project not found.';
@@ -787,19 +844,23 @@ class AppLocalizationsPl extends AppLocalizations {
   String get authErrorReservedClaims => '[PL] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[PL] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[PL] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[PL] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[PL] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[PL] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[PL] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN =>
+      '[PL] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[PL] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[PL] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -848,7 +909,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Virtual session created! Inviting friends... (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Virtual session created! Inviting friends... (Polish)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -889,13 +951,15 @@ class AppLocalizationsPl extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[PL] Subscription unavailable (Polish)';
+  String get subscriptionUnavailable =>
+      '[PL] Subscription unavailable (Polish)';
 
   @override
   String get confirmBooking => '[PL] Confirm Booking (Polish)';
 
   @override
-  String get failedToUpdatePermissionE => '[PL] Failed to update permission: \$e (Polish)';
+  String get failedToUpdatePermissionE =>
+      '[PL] Failed to update permission: \$e (Polish)';
 
   @override
   String get reject => '[PL] Reject (Polish)';
@@ -923,7 +987,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get resolve => '[PL] Resolve (Polish)';
 
   @override
-  String get errorLoadingSurveysError => '[PL] Error loading surveys: \$error (Polish)';
+  String get errorLoadingSurveysError =>
+      '[PL] Error loading surveys: \$error (Polish)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -931,7 +996,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[PL] Get help with your account (Polish)';
+  String get getHelpWithYourAccount =>
+      '[PL] Get help with your account (Polish)';
 
   @override
   String get pay => '[PL] Pay (Polish)';
@@ -946,7 +1012,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[PL] Changes saved successfully! (Polish)';
+  String get changesSavedSuccessfully =>
+      '[PL] Changes saved successfully! (Polish)';
 
   @override
   String get createNewInvoice => '[PL] Create New Invoice (Polish)';
@@ -966,7 +1033,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get profileSaved => '[PL] Profile saved! (Polish)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -997,7 +1065,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[PL] You will receive a confirmation email shortly. (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] You will receive a confirmation email shortly. (Polish)';
 
   @override
   String get addQuestion => '[PL] Add Question (Polish)';
@@ -1026,22 +1095,26 @@ class AppLocalizationsPl extends AppLocalizations {
   String get surveyManagement => '[PL] Survey Management (Polish)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[PL] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[PL] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[PL] No rooms found. Add your first room! (Polish)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[PL] No rooms found. Add your first room! (Polish)';
 
   @override
   String get readOurPrivacyPolicy => '[PL] Read our privacy policy (Polish)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[PL] Could not open privacy policy (Polish)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[PL] Could not open privacy policy (Polish)';
 
   @override
   String get refresh1 => '[PL] Refresh (Polish)';
 
   @override
-  String get roomUpdatedSuccessfully => '[PL] Room updated successfully! (Polish)';
+  String get roomUpdatedSuccessfully =>
+      '[PL] Room updated successfully! (Polish)';
 
   @override
   String get contentDetail => '[PL] Content Detail (Polish)';
@@ -1050,7 +1123,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get cancelSubscription => '[PL] Cancel Subscription (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Successfully registered as Ambassador! (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Successfully registered as Ambassador! (Polish)';
 
   @override
   String get save1 => '[PL] Save (Polish)';
@@ -1059,7 +1133,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get copy1 => '[PL] Copy (Polish)';
 
   @override
-  String get failedToSendInvitationE => '[PL] Failed to send invitation: \$e (Polish)';
+  String get failedToSendInvitationE =>
+      '[PL] Failed to send invitation: \$e (Polish)';
 
   @override
   String get surveyScore => '[PL] Survey Score (Polish)';
@@ -1076,16 +1151,20 @@ class AppLocalizationsPl extends AppLocalizations {
   String get responseDetail => '[PL] Response Detail (Polish)';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[PL] Failed to start Pro subscription: \$e (Polish)';
+  String get failedToStartProSubscriptionE =>
+      '[PL] Failed to start Pro subscription: \$e (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Business Dashboard Entry Screen - Coming Soon (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Business Dashboard Entry Screen - Coming Soon (Polish)';
 
   @override
   String get contentFilter => '[PL] Content Filter (Polish)';
@@ -1107,7 +1186,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[PL] Business CRM Entry Screen - Coming Soon (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Business CRM Entry Screen - Coming Soon (Polish)';
 
   @override
   String get adminDashboard => '[PL] Admin Dashboard';
@@ -1118,13 +1198,16 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[PL] Error loading dashboard: \$error (Polish)';
+  String get errorLoadingDashboardError =>
+      '[PL] Error loading dashboard: \$error (Polish)';
 
   @override
-  String get gameDeletedSuccessfully => '[PL] Game deleted successfully! (Polish)';
+  String get gameDeletedSuccessfully =>
+      '[PL] Game deleted successfully! (Polish)';
 
   @override
-  String get viewResponsesComingSoon => '[PL] View responses - Coming soon! (Polish)';
+  String get viewResponsesComingSoon =>
+      '[PL] View responses - Coming soon! (Polish)';
 
   @override
   String get deleteProvider => '[PL] Delete Provider';
@@ -1133,7 +1216,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get errorLoadingRewards => '[PL] Error loading rewards (Polish)';
 
   @override
-  String get failedToDeleteAccountE => '[PL] Failed to delete account: \$e (Polish)';
+  String get failedToDeleteAccountE =>
+      '[PL] Failed to delete account: \$e (Polish)';
 
   @override
   String get invited1 => '[PL] Invited (Polish)';
@@ -1148,7 +1232,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get noEvents => '[PL] No events (Polish)';
 
   @override
-  String get gameCreatedSuccessfully => '[PL] Game created successfully! (Polish)';
+  String get gameCreatedSuccessfully =>
+      '[PL] Game created successfully! (Polish)';
 
   @override
   String get add1 => '[PL] Add (Polish)';
@@ -1168,10 +1253,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get clients => '[PL] Clients (Polish)';
 
   @override
-  String get noAmbassadorDataAvailable => '[PL] No ambassador data available (Polish)';
+  String get noAmbassadorDataAvailable =>
+      '[PL] No ambassador data available (Polish)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[PL] Background deleted successfully! (Polish)';
+  String get backgroundDeletedSuccessfully =>
+      '[PL] Background deleted successfully! (Polish)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1179,7 +1266,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[PL] No analytics data available yet. (Polish)';
+  String get noAnalyticsDataAvailableYet =>
+      '[PL] No analytics data available yet. (Polish)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1187,7 +1275,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[PL] Business Phone Booking Entry Screen - Coming Soon (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Business Phone Booking Entry Screen - Coming Soon (Polish)';
 
   @override
   String get verification => '[PL] Verification (Polish)';
@@ -1234,7 +1323,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get businessProfile => '[PL] Business Profile (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Business Booking Entry Screen - Coming Soon (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Business Booking Entry Screen - Coming Soon (Polish)';
 
   @override
   String get createNewSurvey => '[PL] Create New Survey (Polish)';
@@ -1258,7 +1348,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get loginFailedE => '[PL] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[PL] Invitation sent successfully! (Polish)';
+  String get invitationSentSuccessfully =>
+      '[PL] Invitation sent successfully! (Polish)';
 
   @override
   String get registering => '[PL] Registering... (Polish)';
@@ -1275,10 +1366,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get errorSavingSettingsE => '[PL] Error saving settings: \$e (Polish)';
 
   @override
-  String get appVersionAndInformation => '[PL] App version and information (Polish)';
+  String get appVersionAndInformation =>
+      '[PL] App version and information (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Business Subscription Entry Screen - Coming Soon (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Business Subscription Entry Screen - Coming Soon (Polish)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1286,7 +1379,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[PL] Your payment has been processed successfully. (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Your payment has been processed successfully. (Polish)';
 
   @override
   String get errorE => '[PL] Error: \$e (Polish)';
@@ -1304,7 +1398,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get payment => '[PL] Payment (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Automatically confirm new booking requests (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Automatically confirm new booking requests (Polish)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1317,7 +1412,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[PL] Please sign in to upload a background (Polish)';
+  String get pleaseSignInToUploadABackground =>
+      '[PL] Please sign in to upload a background (Polish)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1334,19 +1430,22 @@ class AppLocalizationsPl extends AppLocalizations {
   String get autoconfirmBookings => '[PL] Auto-Confirm Bookings (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Redirecting to Stripe checkout for Pro plan... (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Redirecting to Stripe checkout for Pro plan... (Polish)';
 
   @override
   String get exportAsCsv => '[PL] Export as CSV (Polish)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[PL] Delete functionality coming soon! (Polish)';
+  String get deleteFunctionalityComingSoon =>
+      '[PL] Delete functionality coming soon! (Polish)';
 
   @override
   String get editClient => '[PL] Edit Client (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Are you sure you want to delete this message? (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Are you sure you want to delete this message? (Polish)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1357,31 +1456,39 @@ class AppLocalizationsPl extends AppLocalizations {
   String get notAuthenticated => '[PL] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[PL] Privacy request sent to your parents! (Polish)';
+  String get privacyRequestSentToYourParents =>
+      '[PL] Privacy request sent to your parents! (Polish)';
 
   @override
-  String get clientDeletedSuccessfully => '[PL] Client deleted successfully! (Polish)';
+  String get clientDeletedSuccessfully =>
+      '[PL] Client deleted successfully! (Polish)';
 
   @override
-  String get failedToCancelSubscription => '[PL] Failed to cancel subscription (Polish)';
+  String get failedToCancelSubscription =>
+      '[PL] Failed to cancel subscription (Polish)';
 
   @override
   String get allLanguages => '[PL] All Languages (Polish)';
 
   @override
-  String get slotDeletedSuccessfully => '[PL] Slot deleted successfully (Polish)';
+  String get slotDeletedSuccessfully =>
+      '[PL] Slot deleted successfully (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN =>
+      '[PL] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Parents must approve before children can join (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Parents must approve before children can join (Polish)';
 
   @override
-  String get subscribeToPro1499mo => '[PL] Subscribe to Pro (€14.99/mo) (Polish)';
+  String get subscribeToPro1499mo =>
+      '[PL] Subscribe to Pro (€14.99/mo) (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Business Availability Entry Screen - Coming Soon (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Business Availability Entry Screen - Coming Soon (Polish)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1395,7 +1502,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get submitBooking => '[PL] Submit Booking (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Are you sure you want to cancel this appointment? (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Are you sure you want to cancel this appointment? (Polish)';
 
   @override
   String get noUpcomingBookings => '[PL] No upcoming bookings (Polish)';
@@ -1413,7 +1521,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get goToDashboard => '[PL] Go to Dashboard (Polish)';
 
   @override
-  String get ambassadorQuotaDashboard => '[PL] Ambassador Quota Dashboard (Polish)';
+  String get ambassadorQuotaDashboard =>
+      '[PL] Ambassador Quota Dashboard (Polish)';
 
   @override
   String get adminSettings => '[PL] Admin Settings';
@@ -1451,7 +1560,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[PL] Client added successfully! (Polish)';
+  String get clientAddedSuccessfully =>
+      '[PL] Client added successfully! (Polish)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1469,7 +1579,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get bookAppointment => '[PL] Book Appointment (Polish)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[PL] Delete (Polish)';
@@ -1484,13 +1595,15 @@ class AppLocalizationsPl extends AppLocalizations {
   String get manageSubscription => '[PL] Manage Subscription (Polish)';
 
   @override
-  String get requiresInstallFallback => '[PL] Requires Install Fallback (Polish)';
+  String get requiresInstallFallback =>
+      '[PL] Requires Install Fallback (Polish)';
 
   @override
   String get paymentConfirmation => '[PL] Payment Confirmation (Polish)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[PL] Promo applied! Your next bill is free. (Polish)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[PL] Promo applied! Your next bill is free. (Polish)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1501,13 +1614,16 @@ class AppLocalizationsPl extends AppLocalizations {
   String get errorLoadingSlots => '[PL] Error loading slots (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Allow other users to find and join this game (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Allow other users to find and join this game (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Business Onboarding Screen - Coming Soon (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Business Onboarding Screen - Coming Soon (Polish)';
 
   @override
-  String get activateBusinessProfile => '[PL] Activate Business Profile (Polish)';
+  String get activateBusinessProfile =>
+      '[PL] Activate Business Profile (Polish)';
 
   @override
   String get contentNotFound => '[PL] Content not found (Polish)';
@@ -1549,7 +1665,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get shareLink => '[PL] Share Link (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN =>
+      '[PL] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[PL] Delete Appointment (Polish)';
@@ -1569,10 +1686,12 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[PL] Update your business information (Polish)';
+  String get updateYourBusinessInformation =>
+      '[PL] Update your business information (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN =>
+      '[PL] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[PL] Parent Dashboard (Polish)';
@@ -1595,10 +1714,12 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[PL] Studio booking is only available on web (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Studio booking is only available on web (Polish)';
 
   @override
-  String get errorLoadingBranchesE => '[PL] Error loading branches: \$e (Polish)';
+  String get errorLoadingBranchesE =>
+      '[PL] Error loading branches: \$e (Polish)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1614,13 +1735,15 @@ class AppLocalizationsPl extends AppLocalizations {
   String get none => '[PL] None (Polish)';
 
   @override
-  String get failedToUpdateConsentE => '[PL] Failed to update consent: \$e (Polish)';
+  String get failedToUpdateConsentE =>
+      '[PL] Failed to update consent: \$e (Polish)';
 
   @override
   String get welcome1 => '[PL] Welcome (Polish)';
 
   @override
-  String get failedToCreateSessionE => '[PL] Failed to create session: \$e (Polish)';
+  String get failedToCreateSessionE =>
+      '[PL] Failed to create session: \$e (Polish)';
 
   @override
   String get inviteContact => '[PL] Invite Contact (Polish)';
@@ -1629,7 +1752,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get surveyEditor => '[PL] Survey Editor (Polish)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[PL] Failed to start Basic subscription: \$e (Polish)';
+  String get failedToStartBasicSubscriptionE =>
+      '[PL] Failed to start Basic subscription: \$e (Polish)';
 
   @override
   String get mySchedule => '[PL] My Schedule (Polish)';
@@ -1649,7 +1773,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[PL] Settings saved successfully! (Polish)';
+  String get settingsSavedSuccessfully =>
+      '[PL] Settings saved successfully! (Polish)';
 
   @override
   String get linkCopiedToClipboard => '[PL] Link copied to clipboard! (Polish)';
@@ -1669,7 +1794,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[PL] Room deleted successfully! (Polish)';
+  String get roomDeletedSuccessfully =>
+      '[PL] Room deleted successfully! (Polish)';
 
   @override
   String get businessCalendar => '[PL] Business Calendar (Polish)';
@@ -1734,7 +1860,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get cancel1 => '[PL] Cancel (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Subscription activated successfully! (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Subscription activated successfully! (Polish)';
 
   @override
   String activityLogaction(Object action) {
@@ -1745,7 +1872,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get broadcast => '[PL] Broadcast (Polish)';
 
   @override
-  String get noEventsScheduledThisWeek => '[PL] No events scheduled this week (Polish)';
+  String get noEventsScheduledThisWeek =>
+      '[PL] No events scheduled this week (Polish)';
 
   @override
   String get googleCalendar => '[PL] Google Calendar (Polish)';
@@ -1757,7 +1885,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get childDashboard => '[PL] Child Dashboard (Polish)';
 
   @override
-  String get failedToUploadBackgroundE => '[PL] Failed to upload background: \$e (Polish)';
+  String get failedToUploadBackgroundE =>
+      '[PL] Failed to upload background: \$e (Polish)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1776,7 +1905,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get noAppointments => '[PL] No appointments (Polish)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[PL] • Unlimited bookings per week (Polish)';
+  String get unlimitedBookingsPerWeek =>
+      '[PL] • Unlimited bookings per week (Polish)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1784,16 +1914,19 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[PL] Scheduled at: \$scheduledAt (Polish)';
+  String get scheduledAtScheduledat =>
+      '[PL] Scheduled at: \$scheduledAt (Polish)';
 
   @override
   String get selectStaff => '[PL] Select Staff (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Subscription cancelled successfully (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Subscription cancelled successfully (Polish)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[PL] Cancel Appointment (Polish)';
@@ -1807,7 +1940,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get businessSignup => '[PL] Business Signup (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Business Completion Screen - Coming Soon (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Business Completion Screen - Coming Soon (Polish)';
 
   @override
   String get createGame1 => '[PL] Create Game (Polish)';
@@ -1821,7 +1955,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get pleaseEnterAPromoCode => '[PL] Please enter a promo code (Polish)';
 
   @override
-  String get errorLoadingAvailabilityE => '[PL] Error loading availability: \$e (Polish)';
+  String get errorLoadingAvailabilityE =>
+      '[PL] Error loading availability: \$e (Polish)';
 
   @override
   String get parentalControls => '[PL] Parental Controls (Polish)';
@@ -1830,13 +1965,15 @@ class AppLocalizationsPl extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[PL] Child linked successfully! (Polish)';
+  String get childLinkedSuccessfully =>
+      '[PL] Child linked successfully! (Polish)';
 
   @override
   String get create => '[PL] Create (Polish)';
 
   @override
-  String get noExternalMeetingsFound => '[PL] No external meetings found. (Polish)';
+  String get noExternalMeetingsFound =>
+      '[PL] No external meetings found. (Polish)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1844,13 +1981,15 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[PL] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[PL] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[PL] Scheduler Screen (Polish)';
 
   @override
-  String get clientUpdatedSuccessfully => '[PL] Client updated successfully! (Polish)';
+  String get clientUpdatedSuccessfully =>
+      '[PL] Client updated successfully! (Polish)';
 
   @override
   String get surveyResponses => '[PL] Survey Responses (Polish)';
@@ -1876,10 +2015,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get errorLoadingEvents => '[PL] Error loading events (Polish)';
 
   @override
-  String get errorLoadingOrganizations => '[PL] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[PL] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[PL] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[PL] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[PL] Success (Polish)';
@@ -1898,10 +2039,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get readWrite => '[PL] Read & Write (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Redirecting to Stripe checkout for Basic plan... (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Redirecting to Stripe checkout for Basic plan... (Polish)';
 
   @override
-  String get errorSavingConfigurationE => '[PL] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[PL] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[PL] Pick Date (Polish)';
@@ -1937,10 +2080,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get businessLogin => '[PL] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[PL] Invoice created successfully! (Polish)';
+  String get invoiceCreatedSuccessfully =>
+      '[PL] Invoice created successfully! (Polish)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[PL] No time series data available (Polish)';
+  String get noTimeSeriesDataAvailable =>
+      '[PL] No time series data available (Polish)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1953,7 +2098,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[PL] Failed to send privacy request: \$e (Polish)';
+  String get failedToSendPrivacyRequestE =>
+      '[PL] Failed to send privacy request: \$e (Polish)';
 
   @override
   String get chooseYourPlan => '[PL] Choose Your Plan (Polish)';
@@ -1968,7 +2114,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get eventCreated => '[PL] Event created (Polish)';
 
   @override
-  String get subscribeToBasic499mo => '[PL] Subscribe to Basic (€4.99/mo) (Polish)';
+  String get subscribeToBasic499mo =>
+      '[PL] Subscribe to Basic (€4.99/mo) (Polish)';
 
   @override
   String get completion => '[PL] Completion (Polish)';
@@ -1989,10 +2136,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get deleteSurvey => '[PL] Delete Survey (Polish)';
 
   @override
-  String get gameApprovedSuccessfully => '[PL] Game approved successfully! (Polish)';
+  String get gameApprovedSuccessfully =>
+      '[PL] Game approved successfully! (Polish)';
 
   @override
-  String get errorLoadingPermissionsError => '[PL] Error loading permissions: \$error (Polish)';
+  String get errorLoadingPermissionsError =>
+      '[PL] Error loading permissions: \$error (Polish)';
 
   @override
   String get referrals => '[PL] Referrals (Polish)';
@@ -2034,7 +2183,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get organizations => '[PL] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[PL] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[PL] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[PL] Create New Game (Polish)';
@@ -2043,10 +2193,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get next1 => '[PL] Next (Polish)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[PL] Background uploaded successfully! (Polish)';
+  String get backgroundUploadedSuccessfully =>
+      '[PL] Background uploaded successfully! (Polish)';
 
   @override
-  String get noAppointmentRequestsFound => '[PL] No appointment requests found. (Polish)';
+  String get noAppointmentRequestsFound =>
+      '[PL] No appointment requests found. (Polish)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2073,7 +2225,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[PL] Failed to create game: \$e (Polish)';
@@ -2082,7 +2235,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get noChartDataAvailable => '[PL] No chart data available (Polish)';
 
   @override
-  String get phonebasedBookingSystem => '[PL] • Phone-based booking system (Polish)';
+  String get phonebasedBookingSystem =>
+      '[PL] • Phone-based booking system (Polish)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2091,7 +2245,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get invoices => '[PL] Invoices (Polish)';
 
   @override
-  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2118,10 +2273,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get iDoNotConsent => '[PL] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN => '[PL] No clients found. Add your first client! (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] No clients found. Add your first client! (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN =>
+      '[PL] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[PL] Group: \$groupId';
@@ -2144,7 +2301,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[PL] • CRM dashboard with analytics (Polish)';
+  String get crmDashboardWithAnalytics =>
+      '[PL] • CRM dashboard with analytics (Polish)';
 
   @override
   String get contentLibrary1 => '[PL] Content Library (Polish)';
@@ -2156,25 +2314,30 @@ class AppLocalizationsPl extends AppLocalizations {
   String get subscriptionManagement => '[PL] Subscription Management (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Monetization settings will be implemented here (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Monetization settings will be implemented here (Polish)';
 
   @override
-  String get failedToApplyPromoCodeE => '[PL] Failed to apply promo code: \$e (Polish)';
+  String get failedToApplyPromoCodeE =>
+      '[PL] Failed to apply promo code: \$e (Polish)';
 
   @override
   String get editProvider => '[PL] Edit Provider';
 
   @override
-  String get localizationContribution => '[PL] Localization Contribution (Polish)';
+  String get localizationContribution =>
+      '[PL] Localization Contribution (Polish)';
 
   @override
   String get parentalConsent => '[PL] Parental Consent (Polish)';
 
   @override
-  String get businessSignupScreenComingSoon => '[PL] Business Signup Screen - Coming Soon (Polish)';
+  String get businessSignupScreenComingSoon =>
+      '[PL] Business Signup Screen - Coming Soon (Polish)';
 
   @override
-  String get REDACTED_TOKEN => '[PL] Are you sure you want to delete this appointment? (Polish)';
+  String get REDACTED_TOKEN =>
+      '[PL] Are you sure you want to delete this appointment? (Polish)';
 
   @override
   String get syncAppointment => '[PL] Sync Appointment (Polish)';
@@ -2186,13 +2349,15 @@ class AppLocalizationsPl extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[PL] Business Setup Screen - Coming Soon (Polish)';
+  String get businessSetupScreenComingSoon =>
+      '[PL] Business Setup Screen - Coming Soon (Polish)';
 
   @override
   String get edit1 => '[PL] Edit (Polish)';
 
   @override
-  String get noEventsScheduledThisMonth => '[PL] No events scheduled this month (Polish)';
+  String get noEventsScheduledThisMonth =>
+      '[PL] No events scheduled this month (Polish)';
 
   @override
   String get businessDashboard => '[PL] Business Dashboard (Polish)';
@@ -2206,7 +2371,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[PL] Manage Staff Availability (Polish)';
+  String get manageStaffAvailability =>
+      '[PL] Manage Staff Availability (Polish)';
 
   @override
   String get noMissingTranslations => '[PL] No missing translations (Polish)';
@@ -2223,7 +2389,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get noUsers => '[PL] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[PL] Error loading referral code (Polish)';
+  String get errorLoadingReferralCode =>
+      '[PL] Error loading referral code (Polish)';
 
   @override
   String get allCountries => '[PL] All Countries (Polish)';
@@ -2238,7 +2405,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get deleteMessage => '[PL] Delete Message (Polish)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[PL] changeRole (TRANSLATE)';
@@ -2249,7 +2417,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[PL] Opening customer portal... (Polish)';
+  String get openingCustomerPortal =>
+      '[PL] Opening customer portal... (Polish)';
 
   @override
   String get signOut => '[PL] Sign Out (Polish)';
@@ -2260,7 +2429,8 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[PL] Upgrade to Business (Polish)';
@@ -2286,7 +2456,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[PL] View Responses (Polish)';
@@ -2315,7 +2486,8 @@ class AppLocalizationsPl extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2328,4 +2500,33 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get loadingCheckout => 'جار تحميل الدفع...';
+
+  @override
+  String get ad_pre_title => 'Watch an ad to confirm your appointment';
+
+  @override
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+
+  @override
+  String get watch_ad_button => 'Watch Ad';
+
+  @override
+  String get upgrade_button => 'Upgrade to Premium (€4)';
+
+  @override
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
+
+  @override
+  String get confirm_appointment_button => 'Confirm Appointment';
+
+  @override
+  String get upgrade_prompt_title => 'One-time upgrade';
+
+  @override
+  String get upgrade_prompt_description => 'Pay €4 to remove all ads forever';
+
+  @override
+  String get purchase_now_button => 'Purchase Now';
 }

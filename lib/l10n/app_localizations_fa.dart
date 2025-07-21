@@ -74,7 +74,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get search => 'جستجو';
 
   @override
-  String get cancelInviteConfirmation => '[FA] آیا مطمئن هستید که می‌خواهید این دعوت را لغو کنید؟';
+  String get cancelInviteConfirmation =>
+      '[FA] آیا مطمئن هستید که می‌خواهید این دعوت را لغو کنید؟';
 
   @override
   String created(Object date) {
@@ -91,7 +92,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get playtimeLiveScheduled => '[FA] جلسه زنده برنامه‌ریزی شد';
 
   @override
-  String get revokeAccessConfirmation => '[FA] آیا مطمئن هستید که می‌خواهید دسترسی این کودک را لغو کنید؟ این عمل قابل بازگشت نیست.';
+  String get revokeAccessConfirmation =>
+      '[FA] آیا مطمئن هستید که می‌خواهید دسترسی این کودک را لغو کنید؟ این عمل قابل بازگشت نیست.';
 
   @override
   String get download => 'دانلود';
@@ -160,7 +162,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get done => '[FA] انجام شد';
 
   @override
-  String get defaultShareMessage => '[FA] سلام! من یک جلسه با شما از طریق APP-OINT برنامه‌ریزی کرده‌ام. برای تأیید یا پیشنهاد زمان دیگر کلیک کنید:';
+  String get defaultShareMessage =>
+      '[FA] سلام! من یک جلسه با شما از طریق APP-OINT برنامه‌ریزی کرده‌ام. برای تأیید یا پیشنهاد زمان دیگر کلیک کنید:';
 
   @override
   String get no => 'خیر';
@@ -185,7 +188,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => '[FA] جلسه با موفقیت به اشتراک گذاشته شد!';
+  String get meetingSharedSuccessfully =>
+      '[FA] جلسه با موفقیت به اشتراک گذاشته شد!';
 
   @override
   String get welcomeToPlaytime => '[FA] به Playtime خوش آمدید';
@@ -393,7 +397,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get noProfileFound => '[FA] پروفایلی یافت نشد';
 
   @override
-  String get noFamilyMembersYet => '[FA] هنوز هیچ عضو خانواده‌ای اضافه نشده است. برای شروع کسی را دعوت کنید!';
+  String get noFamilyMembersYet =>
+      '[FA] هنوز هیچ عضو خانواده‌ای اضافه نشده است. برای شروع کسی را دعوت کنید!';
 
   @override
   String get mediaOptional => '[FA] رسانه (اختیاری)';
@@ -408,7 +413,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get dashboard => 'داشبورد';
 
   @override
-  String get noPermissionForBroadcast => '[FA] شما مجاز به ایجاد پیام‌های پخش نیستید.';
+  String get noPermissionForBroadcast =>
+      '[FA] شما مجاز به ایجاد پیام‌های پخش نیستید.';
 
   @override
   String get playtimeAdminPanelTitle => '[FA] Playtime Games – Admin';
@@ -485,7 +491,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get playtimeEnterGameName => '[FA] نام بازی را وارد کنید';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[FA] برای استفاده از قابلیت‌های خانوادگی وارد شوید';
+  String get pleaseLoginForFamilyFeatures =>
+      '[FA] برای استفاده از قابلیت‌های خانوادگی وارد شوید';
 
   @override
   String get myInvites => '[FA] دعوت‌نامه‌های من';
@@ -534,7 +541,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get meetingReadyMessage => '[FA] جلسه آماده است! می‌خواهید آن را برای گروه ارسال کنید؟';
+  String get meetingReadyMessage =>
+      '[FA] جلسه آماده است! می‌خواهید آن را برای گروه ارسال کنید؟';
 
   @override
   String get pendingInvites => '[FA] دعوت‌های در انتظار';
@@ -545,7 +553,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[FA] لطفاً برای مشاهده پروفایل خود وارد شوید.';
+  String get pleaseLoginToViewProfile =>
+      '[FA] لطفاً برای مشاهده پروفایل خود وارد شوید.';
 
   @override
   String get adminMetrics => '[FA] Admin Metrics';
@@ -566,40 +575,52 @@ class AppLocalizationsFa extends AppLocalizations {
   String get contentLibrary => '[FA] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[FA] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[FA] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[FA] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[FA] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[FA] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[FA] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[FA] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[FA] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[FA] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[FA] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[FA] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[FA] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[FA] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[FA] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[FA] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[FA] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[FA] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[FA] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN =>
+      '[FA] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[FA] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[FA] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[FA] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[FA] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -616,19 +637,24 @@ class AppLocalizationsFa extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[FA] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[FA] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[FA] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[FA] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] The verification code is invalid.';
+  String get REDACTED_TOKEN =>
+      '[FA] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[FA] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[FA] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Please enter the verification code.';
+  String get REDACTED_TOKEN =>
+      '[FA] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[FA] Missing verification ID.';
@@ -640,43 +666,56 @@ class AppLocalizationsFa extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[FA] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[FA] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[FA] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[FA] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[FA] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[FA] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[FA] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN =>
+      '[FA] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Multi-factor information not found.';
+  String get REDACTED_TOKEN =>
+      '[FA] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Missing multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[FA] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Invalid multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[FA] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] This second factor is already in use.';
+  String get REDACTED_TOKEN =>
+      '[FA] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN =>
+      '[FA] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[FA] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[FA] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Email change requires verification.';
+  String get REDACTED_TOKEN =>
+      '[FA] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] This phone number is already in use.';
+  String get REDACTED_TOKEN =>
+      '[FA] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[FA] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[FA] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[FA] The ID token is invalid.';
@@ -688,10 +727,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[FA] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[FA] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[FA] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[FA] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[FA] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[FA] Invalid custom claims provided.';
@@ -700,70 +741,87 @@ class AppLocalizationsFa extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[FA] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[FA] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[FA] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[FA] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[FA] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[FA] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN =>
+      '[FA] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[FA] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[FA] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[FA] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[FA] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[FA] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[FA] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN =>
+      '[FA] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[FA] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[FA] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[FA] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN =>
+      '[FA] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[FA] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[FA] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN =>
+      '[FA] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[FA] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[FA] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[FA] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[FA] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[FA] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[FA] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN =>
+      '[FA] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[FA] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[FA] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[FA] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN =>
+      '[FA] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[FA] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[FA] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[FA] Missing continue URL.';
@@ -778,7 +836,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get authErrorMissingUid => '[FA] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Missing OAuth client secret.';
+  String get REDACTED_TOKEN =>
+      '[FA] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[FA] Firebase project not found.';
@@ -787,19 +846,23 @@ class AppLocalizationsFa extends AppLocalizations {
   String get authErrorReservedClaims => '[FA] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[FA] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[FA] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[FA] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[FA] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[FA] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[FA] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN =>
+      '[FA] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[FA] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[FA] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -848,7 +911,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Virtual session created! Inviting friends... (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Virtual session created! Inviting friends... (Persian)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -889,13 +953,15 @@ class AppLocalizationsFa extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[FA] Subscription unavailable (Persian)';
+  String get subscriptionUnavailable =>
+      '[FA] Subscription unavailable (Persian)';
 
   @override
   String get confirmBooking => '[FA] تأیید رزرو';
 
   @override
-  String get failedToUpdatePermissionE => '[FA] Failed to update permission: \$e (Persian)';
+  String get failedToUpdatePermissionE =>
+      '[FA] Failed to update permission: \$e (Persian)';
 
   @override
   String get reject => '[FA] Reject (Persian)';
@@ -923,7 +989,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get resolve => '[FA] Resolve (Persian)';
 
   @override
-  String get errorLoadingSurveysError => '[FA] Error loading surveys: \$error (Persian)';
+  String get errorLoadingSurveysError =>
+      '[FA] Error loading surveys: \$error (Persian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -931,7 +998,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[FA] Get help with your account (Persian)';
+  String get getHelpWithYourAccount =>
+      '[FA] Get help with your account (Persian)';
 
   @override
   String get pay => '[FA] Pay (Persian)';
@@ -946,7 +1014,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[FA] Changes saved successfully! (Persian)';
+  String get changesSavedSuccessfully =>
+      '[FA] Changes saved successfully! (Persian)';
 
   @override
   String get createNewInvoice => '[FA] Create New Invoice (Persian)';
@@ -966,7 +1035,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get profileSaved => '[FA] Profile saved! (Persian)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -997,7 +1067,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[FA] You will receive a confirmation email shortly. (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] You will receive a confirmation email shortly. (Persian)';
 
   @override
   String get addQuestion => '[FA] Add Question (Persian)';
@@ -1026,22 +1097,26 @@ class AppLocalizationsFa extends AppLocalizations {
   String get surveyManagement => '[FA] Survey Management (Persian)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[FA] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[FA] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[FA] No rooms found. Add your first room! (Persian)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[FA] No rooms found. Add your first room! (Persian)';
 
   @override
   String get readOurPrivacyPolicy => '[FA] Read our privacy policy (Persian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[FA] Could not open privacy policy (Persian)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[FA] Could not open privacy policy (Persian)';
 
   @override
   String get refresh1 => '[FA] Refresh (Persian)';
 
   @override
-  String get roomUpdatedSuccessfully => '[FA] Room updated successfully! (Persian)';
+  String get roomUpdatedSuccessfully =>
+      '[FA] Room updated successfully! (Persian)';
 
   @override
   String get contentDetail => '[FA] Content Detail (Persian)';
@@ -1050,7 +1125,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get cancelSubscription => '[FA] Cancel Subscription (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Successfully registered as Ambassador! (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Successfully registered as Ambassador! (Persian)';
 
   @override
   String get save1 => '[FA] Save (Persian)';
@@ -1059,7 +1135,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get copy1 => '[FA] Copy (Persian)';
 
   @override
-  String get failedToSendInvitationE => '[FA] Failed to send invitation: \$e (Persian)';
+  String get failedToSendInvitationE =>
+      '[FA] Failed to send invitation: \$e (Persian)';
 
   @override
   String get surveyScore => '[FA] Survey Score (Persian)';
@@ -1076,16 +1153,20 @@ class AppLocalizationsFa extends AppLocalizations {
   String get responseDetail => '[FA] Response Detail (Persian)';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[FA] Failed to start Pro subscription: \$e (Persian)';
+  String get failedToStartProSubscriptionE =>
+      '[FA] Failed to start Pro subscription: \$e (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Business Dashboard Entry Screen - Coming Soon (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Business Dashboard Entry Screen - Coming Soon (Persian)';
 
   @override
   String get contentFilter => '[FA] Content Filter (Persian)';
@@ -1107,7 +1188,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[FA] Business CRM Entry Screen - Coming Soon (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Business CRM Entry Screen - Coming Soon (Persian)';
 
   @override
   String get adminDashboard => '[FA] Admin Dashboard';
@@ -1118,13 +1200,16 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[FA] Error loading dashboard: \$error (Persian)';
+  String get errorLoadingDashboardError =>
+      '[FA] Error loading dashboard: \$error (Persian)';
 
   @override
-  String get gameDeletedSuccessfully => '[FA] Game deleted successfully! (Persian)';
+  String get gameDeletedSuccessfully =>
+      '[FA] Game deleted successfully! (Persian)';
 
   @override
-  String get viewResponsesComingSoon => '[FA] View responses - Coming soon! (Persian)';
+  String get viewResponsesComingSoon =>
+      '[FA] View responses - Coming soon! (Persian)';
 
   @override
   String get deleteProvider => '[FA] Delete Provider';
@@ -1133,7 +1218,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get errorLoadingRewards => '[FA] Error loading rewards (Persian)';
 
   @override
-  String get failedToDeleteAccountE => '[FA] Failed to delete account: \$e (Persian)';
+  String get failedToDeleteAccountE =>
+      '[FA] Failed to delete account: \$e (Persian)';
 
   @override
   String get invited1 => '[FA] Invited (Persian)';
@@ -1148,7 +1234,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get noEvents => '[FA] No events (Persian)';
 
   @override
-  String get gameCreatedSuccessfully => '[FA] Game created successfully! (Persian)';
+  String get gameCreatedSuccessfully =>
+      '[FA] Game created successfully! (Persian)';
 
   @override
   String get add1 => '[FA] Add (Persian)';
@@ -1168,10 +1255,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get clients => '[FA] Clients (Persian)';
 
   @override
-  String get noAmbassadorDataAvailable => '[FA] No ambassador data available (Persian)';
+  String get noAmbassadorDataAvailable =>
+      '[FA] No ambassador data available (Persian)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[FA] Background deleted successfully! (Persian)';
+  String get backgroundDeletedSuccessfully =>
+      '[FA] Background deleted successfully! (Persian)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1179,7 +1268,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[FA] No analytics data available yet. (Persian)';
+  String get noAnalyticsDataAvailableYet =>
+      '[FA] No analytics data available yet. (Persian)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1187,7 +1277,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[FA] Business Phone Booking Entry Screen - Coming Soon (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Business Phone Booking Entry Screen - Coming Soon (Persian)';
 
   @override
   String get verification => '[FA] Verification (Persian)';
@@ -1234,7 +1325,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get businessProfile => '[FA] Business Profile (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Business Booking Entry Screen - Coming Soon (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Business Booking Entry Screen - Coming Soon (Persian)';
 
   @override
   String get createNewSurvey => '[FA] Create New Survey (Persian)';
@@ -1272,13 +1364,16 @@ class AppLocalizationsFa extends AppLocalizations {
   String get home1 => '[FA] Home (Persian)';
 
   @override
-  String get errorSavingSettingsE => '[FA] Error saving settings: \$e (Persian)';
+  String get errorSavingSettingsE =>
+      '[FA] Error saving settings: \$e (Persian)';
 
   @override
-  String get appVersionAndInformation => '[FA] App version and information (Persian)';
+  String get appVersionAndInformation =>
+      '[FA] App version and information (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Business Subscription Entry Screen - Coming Soon (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Business Subscription Entry Screen - Coming Soon (Persian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1286,7 +1381,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[FA] Your payment has been processed successfully. (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Your payment has been processed successfully. (Persian)';
 
   @override
   String get errorE => '[FA] Error: \$e (Persian)';
@@ -1295,7 +1391,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get viewAll1 => '[FA] View All (Persian)';
 
   @override
-  String get editSurveyComingSoon => '[FA] Edit survey - Coming soon! (Persian)';
+  String get editSurveyComingSoon =>
+      '[FA] Edit survey - Coming soon! (Persian)';
 
   @override
   String get enterOtp => '[FA] کد OTP را وارد کنید';
@@ -1304,7 +1401,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get payment => '[FA] Payment (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Automatically confirm new booking requests (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Automatically confirm new booking requests (Persian)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1317,7 +1415,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[FA] Please sign in to upload a background (Persian)';
+  String get pleaseSignInToUploadABackground =>
+      '[FA] Please sign in to upload a background (Persian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1334,19 +1433,22 @@ class AppLocalizationsFa extends AppLocalizations {
   String get autoconfirmBookings => '[FA] Auto-Confirm Bookings (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Redirecting to Stripe checkout for Pro plan... (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Redirecting to Stripe checkout for Pro plan... (Persian)';
 
   @override
   String get exportAsCsv => '[FA] Export as CSV (Persian)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[FA] Delete functionality coming soon! (Persian)';
+  String get deleteFunctionalityComingSoon =>
+      '[FA] Delete functionality coming soon! (Persian)';
 
   @override
   String get editClient => '[FA] Edit Client (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Are you sure you want to delete this message? (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Are you sure you want to delete this message? (Persian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1357,31 +1459,39 @@ class AppLocalizationsFa extends AppLocalizations {
   String get notAuthenticated => '[FA] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[FA] Privacy request sent to your parents! (Persian)';
+  String get privacyRequestSentToYourParents =>
+      '[FA] Privacy request sent to your parents! (Persian)';
 
   @override
-  String get clientDeletedSuccessfully => '[FA] Client deleted successfully! (Persian)';
+  String get clientDeletedSuccessfully =>
+      '[FA] Client deleted successfully! (Persian)';
 
   @override
-  String get failedToCancelSubscription => '[FA] Failed to cancel subscription (Persian)';
+  String get failedToCancelSubscription =>
+      '[FA] Failed to cancel subscription (Persian)';
 
   @override
   String get allLanguages => '[FA] All Languages (Persian)';
 
   @override
-  String get slotDeletedSuccessfully => '[FA] Slot deleted successfully (Persian)';
+  String get slotDeletedSuccessfully =>
+      '[FA] Slot deleted successfully (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN =>
+      '[FA] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Parents must approve before children can join (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Parents must approve before children can join (Persian)';
 
   @override
-  String get subscribeToPro1499mo => '[FA] Subscribe to Pro (€14.99/mo) (Persian)';
+  String get subscribeToPro1499mo =>
+      '[FA] Subscribe to Pro (€14.99/mo) (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Business Availability Entry Screen - Coming Soon (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Business Availability Entry Screen - Coming Soon (Persian)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1395,7 +1505,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get submitBooking => '[FA] ارسال رزرو';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Are you sure you want to cancel this appointment? (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Are you sure you want to cancel this appointment? (Persian)';
 
   @override
   String get noUpcomingBookings => '[FA] No upcoming bookings (Persian)';
@@ -1413,7 +1524,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get goToDashboard => '[FA] Go to Dashboard (Persian)';
 
   @override
-  String get ambassadorQuotaDashboard => '[FA] Ambassador Quota Dashboard (Persian)';
+  String get ambassadorQuotaDashboard =>
+      '[FA] Ambassador Quota Dashboard (Persian)';
 
   @override
   String get adminSettings => '[FA] Admin Settings';
@@ -1451,7 +1563,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[FA] Client added successfully! (Persian)';
+  String get clientAddedSuccessfully =>
+      '[FA] Client added successfully! (Persian)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1469,7 +1582,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get bookAppointment => '[FA] رزرو نوبت';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[FA] Delete (Persian)';
@@ -1490,7 +1604,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get paymentConfirmation => '[FA] Payment Confirmation (Persian)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[FA] Promo applied! Your next bill is free. (Persian)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[FA] Promo applied! Your next bill is free. (Persian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1501,13 +1616,16 @@ class AppLocalizationsFa extends AppLocalizations {
   String get errorLoadingSlots => '[FA] Error loading slots (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Allow other users to find and join this game (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Allow other users to find and join this game (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Business Onboarding Screen - Coming Soon (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Business Onboarding Screen - Coming Soon (Persian)';
 
   @override
-  String get activateBusinessProfile => '[FA] Activate Business Profile (Persian)';
+  String get activateBusinessProfile =>
+      '[FA] Activate Business Profile (Persian)';
 
   @override
   String get contentNotFound => '[FA] Content not found (Persian)';
@@ -1549,7 +1667,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get shareLink => '[FA] Share Link (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN =>
+      '[FA] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[FA] Delete Appointment (Persian)';
@@ -1569,10 +1688,12 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[FA] Update your business information (Persian)';
+  String get updateYourBusinessInformation =>
+      '[FA] Update your business information (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN =>
+      '[FA] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[FA] Parent Dashboard (Persian)';
@@ -1595,10 +1716,12 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[FA] Studio booking is only available on web (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Studio booking is only available on web (Persian)';
 
   @override
-  String get errorLoadingBranchesE => '[FA] Error loading branches: \$e (Persian)';
+  String get errorLoadingBranchesE =>
+      '[FA] Error loading branches: \$e (Persian)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1614,13 +1737,15 @@ class AppLocalizationsFa extends AppLocalizations {
   String get none => 'هیچ‌کدام';
 
   @override
-  String get failedToUpdateConsentE => '[FA] Failed to update consent: \$e (Persian)';
+  String get failedToUpdateConsentE =>
+      '[FA] Failed to update consent: \$e (Persian)';
 
   @override
   String get welcome1 => '[FA] Welcome (Persian)';
 
   @override
-  String get failedToCreateSessionE => '[FA] Failed to create session: \$e (Persian)';
+  String get failedToCreateSessionE =>
+      '[FA] Failed to create session: \$e (Persian)';
 
   @override
   String get inviteContact => '[FA] تماس دعوت';
@@ -1629,7 +1754,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get surveyEditor => '[FA] Survey Editor (Persian)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[FA] Failed to start Basic subscription: \$e (Persian)';
+  String get failedToStartBasicSubscriptionE =>
+      '[FA] Failed to start Basic subscription: \$e (Persian)';
 
   @override
   String get mySchedule => '[FA] My Schedule (Persian)';
@@ -1649,10 +1775,12 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[FA] Settings saved successfully! (Persian)';
+  String get settingsSavedSuccessfully =>
+      '[FA] Settings saved successfully! (Persian)';
 
   @override
-  String get linkCopiedToClipboard => '[FA] Link copied to clipboard! (Persian)';
+  String get linkCopiedToClipboard =>
+      '[FA] Link copied to clipboard! (Persian)';
 
   @override
   String get accept1 => '[FA] Accept (Persian)';
@@ -1669,7 +1797,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[FA] Room deleted successfully! (Persian)';
+  String get roomDeletedSuccessfully =>
+      '[FA] Room deleted successfully! (Persian)';
 
   @override
   String get businessCalendar => '[FA] Business Calendar (Persian)';
@@ -1734,7 +1863,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get cancel1 => '[FA] Cancel (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Subscription activated successfully! (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Subscription activated successfully! (Persian)';
 
   @override
   String activityLogaction(Object action) {
@@ -1745,7 +1875,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get broadcast => '[FA] Broadcast (Persian)';
 
   @override
-  String get noEventsScheduledThisWeek => '[FA] No events scheduled this week (Persian)';
+  String get noEventsScheduledThisWeek =>
+      '[FA] No events scheduled this week (Persian)';
 
   @override
   String get googleCalendar => '[FA] Google Calendar (Persian)';
@@ -1757,7 +1888,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get childDashboard => '[FA] Child Dashboard (Persian)';
 
   @override
-  String get failedToUploadBackgroundE => '[FA] Failed to upload background: \$e (Persian)';
+  String get failedToUploadBackgroundE =>
+      '[FA] Failed to upload background: \$e (Persian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1776,7 +1908,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get noAppointments => '[FA] No appointments (Persian)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[FA] • Unlimited bookings per week (Persian)';
+  String get unlimitedBookingsPerWeek =>
+      '[FA] • Unlimited bookings per week (Persian)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1784,16 +1917,19 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[FA] Scheduled at: \$scheduledAt (Persian)';
+  String get scheduledAtScheduledat =>
+      '[FA] Scheduled at: \$scheduledAt (Persian)';
 
   @override
   String get selectStaff => '[FA] انتخاب کارمند';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Subscription cancelled successfully (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Subscription cancelled successfully (Persian)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[FA] Cancel Appointment (Persian)';
@@ -1807,7 +1943,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get businessSignup => '[FA] Business Signup (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Business Completion Screen - Coming Soon (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Business Completion Screen - Coming Soon (Persian)';
 
   @override
   String get createGame1 => '[FA] Create Game (Persian)';
@@ -1818,10 +1955,12 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[FA] Please enter a promo code (Persian)';
+  String get pleaseEnterAPromoCode =>
+      '[FA] Please enter a promo code (Persian)';
 
   @override
-  String get errorLoadingAvailabilityE => '[FA] Error loading availability: \$e (Persian)';
+  String get errorLoadingAvailabilityE =>
+      '[FA] Error loading availability: \$e (Persian)';
 
   @override
   String get parentalControls => '[FA] Parental Controls (Persian)';
@@ -1836,7 +1975,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get create => '[FA] Create (Persian)';
 
   @override
-  String get noExternalMeetingsFound => '[FA] No external meetings found. (Persian)';
+  String get noExternalMeetingsFound =>
+      '[FA] No external meetings found. (Persian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1844,13 +1984,15 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[FA] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[FA] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[FA] Scheduler Screen (Persian)';
 
   @override
-  String get clientUpdatedSuccessfully => '[FA] Client updated successfully! (Persian)';
+  String get clientUpdatedSuccessfully =>
+      '[FA] Client updated successfully! (Persian)';
 
   @override
   String get surveyResponses => '[FA] Survey Responses (Persian)';
@@ -1879,7 +2021,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get errorLoadingOrganizations => '[FA] خطا در بارگذاری سازمان‌ها';
 
   @override
-  String get businessLoginScreenComingSoon => '[FA] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[FA] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[FA] Success (Persian)';
@@ -1898,10 +2041,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get readWrite => '[FA] خواندن و نوشتن';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Redirecting to Stripe checkout for Basic plan... (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Redirecting to Stripe checkout for Basic plan... (Persian)';
 
   @override
-  String get errorSavingConfigurationE => '[FA] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[FA] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[FA] انتخاب تاریخ';
@@ -1937,10 +2082,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get businessLogin => '[FA] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[FA] Invoice created successfully! (Persian)';
+  String get invoiceCreatedSuccessfully =>
+      '[FA] Invoice created successfully! (Persian)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[FA] No time series data available (Persian)';
+  String get noTimeSeriesDataAvailable =>
+      '[FA] No time series data available (Persian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1953,7 +2100,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[FA] Failed to send privacy request: \$e (Persian)';
+  String get failedToSendPrivacyRequestE =>
+      '[FA] Failed to send privacy request: \$e (Persian)';
 
   @override
   String get chooseYourPlan => '[FA] Choose Your Plan (Persian)';
@@ -1968,13 +2116,15 @@ class AppLocalizationsFa extends AppLocalizations {
   String get eventCreated => '[FA] Event created (Persian)';
 
   @override
-  String get subscribeToBasic499mo => '[FA] Subscribe to Basic (€4.99/mo) (Persian)';
+  String get subscribeToBasic499mo =>
+      '[FA] Subscribe to Basic (€4.99/mo) (Persian)';
 
   @override
   String get completion => '[FA] Completion (Persian)';
 
   @override
-  String get supportTicketSubmitted => '[FA] Support ticket submitted (Persian)';
+  String get supportTicketSubmitted =>
+      '[FA] Support ticket submitted (Persian)';
 
   @override
   String get monetizationSettings => '[FA] Monetization Settings (Persian)';
@@ -1989,10 +2139,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get deleteSurvey => '[FA] Delete Survey (Persian)';
 
   @override
-  String get gameApprovedSuccessfully => '[FA] Game approved successfully! (Persian)';
+  String get gameApprovedSuccessfully =>
+      '[FA] Game approved successfully! (Persian)';
 
   @override
-  String get errorLoadingPermissionsError => '[FA] Error loading permissions: \$error (Persian)';
+  String get errorLoadingPermissionsError =>
+      '[FA] Error loading permissions: \$error (Persian)';
 
   @override
   String get referrals => '[FA] Referrals (Persian)';
@@ -2034,7 +2186,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get organizations => 'سازمان‌ها';
 
   @override
-  String get configurationSavedSuccessfully => '[FA] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[FA] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[FA] Create New Game (Persian)';
@@ -2043,10 +2196,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get next1 => '[FA] Next (Persian)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[FA] Background uploaded successfully! (Persian)';
+  String get backgroundUploadedSuccessfully =>
+      '[FA] Background uploaded successfully! (Persian)';
 
   @override
-  String get noAppointmentRequestsFound => '[FA] No appointment requests found. (Persian)';
+  String get noAppointmentRequestsFound =>
+      '[FA] No appointment requests found. (Persian)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2073,7 +2228,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[FA] Failed to create game: \$e (Persian)';
@@ -2082,7 +2238,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get noChartDataAvailable => '[FA] No chart data available (Persian)';
 
   @override
-  String get phonebasedBookingSystem => '[FA] • Phone-based booking system (Persian)';
+  String get phonebasedBookingSystem =>
+      '[FA] • Phone-based booking system (Persian)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2091,7 +2248,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get invoices => '[FA] Invoices (Persian)';
 
   @override
-  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2118,10 +2276,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get iDoNotConsent => '[FA] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN => '[FA] No clients found. Add your first client! (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] No clients found. Add your first client! (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN =>
+      '[FA] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[FA] Group: \$groupId';
@@ -2144,7 +2304,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[FA] • CRM dashboard with analytics (Persian)';
+  String get crmDashboardWithAnalytics =>
+      '[FA] • CRM dashboard with analytics (Persian)';
 
   @override
   String get contentLibrary1 => '[FA] Content Library (Persian)';
@@ -2156,25 +2317,30 @@ class AppLocalizationsFa extends AppLocalizations {
   String get subscriptionManagement => '[FA] Subscription Management (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Monetization settings will be implemented here (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Monetization settings will be implemented here (Persian)';
 
   @override
-  String get failedToApplyPromoCodeE => '[FA] Failed to apply promo code: \$e (Persian)';
+  String get failedToApplyPromoCodeE =>
+      '[FA] Failed to apply promo code: \$e (Persian)';
 
   @override
   String get editProvider => '[FA] Edit Provider';
 
   @override
-  String get localizationContribution => '[FA] Localization Contribution (Persian)';
+  String get localizationContribution =>
+      '[FA] Localization Contribution (Persian)';
 
   @override
   String get parentalConsent => '[FA] Parental Consent (Persian)';
 
   @override
-  String get businessSignupScreenComingSoon => '[FA] Business Signup Screen - Coming Soon (Persian)';
+  String get businessSignupScreenComingSoon =>
+      '[FA] Business Signup Screen - Coming Soon (Persian)';
 
   @override
-  String get REDACTED_TOKEN => '[FA] Are you sure you want to delete this appointment? (Persian)';
+  String get REDACTED_TOKEN =>
+      '[FA] Are you sure you want to delete this appointment? (Persian)';
 
   @override
   String get syncAppointment => '[FA] Sync Appointment (Persian)';
@@ -2186,13 +2352,15 @@ class AppLocalizationsFa extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[FA] Business Setup Screen - Coming Soon (Persian)';
+  String get businessSetupScreenComingSoon =>
+      '[FA] Business Setup Screen - Coming Soon (Persian)';
 
   @override
   String get edit1 => '[FA] Edit (Persian)';
 
   @override
-  String get noEventsScheduledThisMonth => '[FA] No events scheduled this month (Persian)';
+  String get noEventsScheduledThisMonth =>
+      '[FA] No events scheduled this month (Persian)';
 
   @override
   String get businessDashboard => '[FA] داشبورد کسب‌وکار';
@@ -2206,7 +2374,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[FA] Manage Staff Availability (Persian)';
+  String get manageStaffAvailability =>
+      '[FA] Manage Staff Availability (Persian)';
 
   @override
   String get noMissingTranslations => '[FA] No missing translations (Persian)';
@@ -2223,7 +2392,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get noUsers => '[FA] کاربری وجود ندارد';
 
   @override
-  String get errorLoadingReferralCode => '[FA] Error loading referral code (Persian)';
+  String get errorLoadingReferralCode =>
+      '[FA] Error loading referral code (Persian)';
 
   @override
   String get allCountries => '[FA] All Countries (Persian)';
@@ -2238,7 +2408,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get deleteMessage => '[FA] Delete Message (Persian)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[FA] تغییر نقش';
@@ -2249,7 +2420,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[FA] Opening customer portal... (Persian)';
+  String get openingCustomerPortal =>
+      '[FA] Opening customer portal... (Persian)';
 
   @override
   String get signOut => 'خروج';
@@ -2260,7 +2432,8 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[FA] Upgrade to Business (Persian)';
@@ -2286,7 +2459,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[FA] View Responses (Persian)';
@@ -2315,7 +2489,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2328,4 +2503,33 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get loadingCheckout => 'جار تحميل الدفع...';
+
+  @override
+  String get ad_pre_title => 'Watch an ad to confirm your appointment';
+
+  @override
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+
+  @override
+  String get watch_ad_button => 'Watch Ad';
+
+  @override
+  String get upgrade_button => 'Upgrade to Premium (€4)';
+
+  @override
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
+
+  @override
+  String get confirm_appointment_button => 'Confirm Appointment';
+
+  @override
+  String get upgrade_prompt_title => 'One-time upgrade';
+
+  @override
+  String get upgrade_prompt_description => 'Pay €4 to remove all ads forever';
+
+  @override
+  String get purchase_now_button => 'Purchase Now';
 }
