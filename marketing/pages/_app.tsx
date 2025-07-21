@@ -1,9 +1,9 @@
-import { appWithTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import type { AppProps } from 'next/app'
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }: any) {
+function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
   const isRTL = ['ar', 'he', 'fa', 'ur'].includes(router.locale || 'en')
 
@@ -15,4 +15,4 @@ function MyApp({ Component, pageProps }: any) {
   return <Component {...pageProps} />
 }
 
-export default appWithTranslation(MyApp) 
+export default MyApp 

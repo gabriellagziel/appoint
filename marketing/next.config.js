@@ -1,18 +1,14 @@
-const { i18n } = require('./next-i18next.config')
-
-/** @type {import('next').NextConfig} */
 const nextConfig = {
+  i18n: {
+    locales: ['en', 'es', 'fr', 'de', 'it', 'pt', 'ru', 'zh', 'ja', 'ko', 'ar', 'he', 'hi', 'tr', 'pl', 'nl', 'sv', 'da', 'no', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'hr', 'sr', 'sl', 'et', 'lv', 'lt', 'uk', 'fa', 'ur', 'bn', 'th', 'vi', 'id', 'ms', 'am', 'ha', 'sq', 'mk', 'bs', 'mt', 'is', 'fo', 'ga', 'cy', 'eu', 'ca', 'gl'],
+    defaultLocale: 'en',
+    localeDetection: false,
+  },
   reactStrictMode: true,
-  swcMinify: true,
-  i18n,
   images: {
-    formats: ['image/webp', 'image/avif'],
-    domains: ['localhost'],
     unoptimized: true
   },
   trailingSlash: true,
-  // Remove static export for i18n compatibility
-  // output: 'export',
-}
+};
 
-module.exports = nextConfig 
+module.exports = nextConfig; 
