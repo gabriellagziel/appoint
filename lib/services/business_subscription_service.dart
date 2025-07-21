@@ -1,11 +1,9 @@
-import 'package:appoint/config/environment_config.dart';
 import 'package:appoint/features/studio_business/models/business_subscription.dart';
 import 'package:appoint/features/studio_business/models/invoice.dart';
 import 'package:appoint/features/studio_business/models/promo_code.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class BusinessSubscriptionService {
 
@@ -25,197 +23,128 @@ class BusinessSubscriptionService {
   FirebaseAuth get auth => _auth;
   FirebaseFunctions get functions => _functions;
 
-  // Subscribe to Basic plan (€4.99)
-  Future<void> subscribeBasic() async {
-    await _subscribeToPlan(SubscriptionPlan.basic);
-  }
-
-  // Subscribe to Pro plan (€14.99)
-  Future<void> subscribePro() async {
-    await _subscribeToPlan(SubscriptionPlan.pro);
-  }
-
-  // Generic subscription method
-  Future<void> _subscribeToPlan(SubscriptionPlan plan) async {
-    try {
-      final sessionId = await createCheckoutSession(plan: plan);
-
-      // Load Stripe checkout URL from environment configuration
-      const stripeCheckoutUrl = EnvironmentConfig.stripeCheckoutUrl;
-
-      // Launch Stripe checkout
-      final url = '$stripeCheckoutUrl/$sessionId';
-      if (await canLaunchUrl(Uri.parse(url))) {
-        await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
-      } else {
-        throw Exception('Could not launch checkout URL');
-      }
-    } catch (e) {
-      throw Exception('Failed to start subscription: $e');
-    }
-  }
-
-  // Open customer portal
-  Future<void> openCustomerPortal() async {
-    try {
-      final url = await createCustomerPortalSession();
-
-      if (await canLaunchUrl(Uri.parse(url))) {
-        await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
-      } else {
-        throw Exception('Could not launch customer portal URL');
-      }
-    } catch (e) {
-      throw Exception('Failed to open customer portal: $e');
-    }
-  }
-
-  // Apply promo code
-  Future<void> applyPromoCode(String code) async {
-    try {
-      // Validate the promo code
-      final promoCode = await validatePromoCode(code);
-      if (promoCode == null) {
-        throw Exception('Invalid or expired promo code');
-      }
-
-      // Get current user
-      final user = _auth.currentUser;
-      if (user == null) {
-        throw Exception('User not authenticated');
-      }
-
-      // Check if user already has a subscription
-      final existingSubscription = await getCurrentSubscription();
-
-      if (existingSubscription != null) {
-        // Update existing subscription with promo code
-        await _firestore
-            .collection('business_subscriptions')
-            .doc(existingSubscription.id)
-            .update({
-          'promoCodeId': promoCode.id,
-          'updatedAt': DateTime.now().toIso8601String(),
-        });
-      } else {
-        // Create a new subscription document with promo code
-        await _firestore.collection('business_subscriptions').add({
-          'businessId': user.uid,
-          'customerId': user.uid,
-          'promoCodeId': promoCode.id,
-          'status': 'inactive',
-          'createdAt': DateTime.now().toIso8601String(),
-          'updatedAt': DateTime.now().toIso8601String(),
-        });
-      }
-
-      // Increment usage count
-      await _firestore.collection('promoCodes').doc(promoCode.id).update({
-        'currentUses': FieldValue.increment(1),
-        'updatedAt': DateTime.now().toIso8601String(),
-      });
-    } catch (e) {
-      throw Exception('Failed to apply promo code: $e');
-    }
-  }
-
-  // Create Stripe checkout session
-  Future<String> createCheckoutSession({
-    required final SubscriptionPlan plan,
-    final String? promoCode,
-  }) async {
-    try {
-      final callable =
-          _functions.httpsCallable('createBusinessCheckoutSession');
-      final result = await callable.call({
-        'plan': plan.name,
-        'promoCode': promoCode,
-      });
-
-      return result.data['sessionId'] as String;
-    } catch (e) {
-      throw Exception('Failed to create checkout session: $e');
-    }
-  }
-
-  // Create Stripe customer portal session
-  Future<String> createCustomerPortalSession() async {
-    try {
-      final callable = _functions.httpsCallable('createCustomerPortalSession');
-      final result = await callable.call({});
-
-      return result.data['url'] as String;
-    } catch (e) {
-      throw Exception('Failed to create customer portal session: $e');
-    }
-  }
-
-  // Validate promo code
-  Future<PromoCode?> validatePromoCode(String code) async {
-    try {
-      final doc = await _firestore
-          .collection('promoCodes')
-          .where('code', isEqualTo: code.toUpperCase())
-          .where('isActive', isEqualTo: true)
-          .limit(1)
-          .get();
-
-      if (doc.docs.isEmpty) return null;
-
-      final promoCode = PromoCode.fromJson(doc.docs.first.data());
-
-      // Check if code is still valid
-      final now = DateTime.now();
-      if (now.isBefore(promoCode.validFrom) ||
-          now.isAfter(promoCode.validUntil)) {
-        return null;
-      }
-
-      // Check if usage limit exceeded
-      if (promoCode.currentUses >= promoCode.maxUses) {
-        return null;
-      }
-
-      return promoCode;
-    } catch (e) {
-      // Removed debug print: debugPrint('Error validating promo code: $e');
-      return null;
-    }
-  }
-
-  // Get current business subscription
+  // Get current business API configuration
   Future<BusinessSubscription?> getCurrentSubscription() async {
     final user = _auth.currentUser;
     if (user == null) return null;
 
     try {
       final doc = await _firestore
-          .collection('business_subscriptions')
+          .collection('b2bApiKeys')
           .where('businessId', isEqualTo: user.uid)
-          .where('status', whereIn: ['active', 'trialing'])
+          .where('status', isEqualTo: 'active')
           .limit(1)
           .get();
 
       if (doc.docs.isEmpty) return null;
 
       final data = doc.docs.first.data();
-      data['id'] = doc.docs.first.id; // Add the document ID to the data
-      return BusinessSubscription.fromJson(data);
+      data['id'] = doc.docs.first.id;
+      
+      // Convert B2B API data to BusinessSubscription format for compatibility
+      return BusinessSubscription(
+        id: data['id'],
+        businessId: user.uid,
+        customerId: user.uid,
+        plan: SubscriptionPlan.pro, // B2B clients get full API access
+        status: SubscriptionStatus.active,
+        createdAt: (data['createdAt'] as Timestamp?)?.toDate() ?? DateTime.now(),
+        currentPeriodEnd: DateTime.now().add(const Duration(days: 30)),
+      );
     } catch (e) {
-      // Removed debug print: debugPrint('Error fetching subscription: $e');
       return null;
     }
   }
 
-  // Get subscription invoices
+  // Get API key usage and billing information
+  Future<Map<String, dynamic>> getApiUsage() async {
+    final user = _auth.currentUser;
+    if (user == null) return {};
+
+    try {
+      final doc = await _firestore
+          .collection('b2bApiKeys')
+          .where('businessId', isEqualTo: user.uid)
+          .limit(1)
+          .get();
+
+      if (doc.docs.isEmpty) return {};
+
+      final data = doc.docs.first.data();
+      return {
+        'quotaRemaining': data['quotaRemaining'] ?? 1000,
+        'mapUsageCount': data['mapUsageCount'] ?? 0,
+        'lastUsedAt': data['lastUsedAt'],
+        'status': data['status'] ?? 'active',
+      };
+    } catch (e) {
+      return {};
+    }
+  }
+
+  // Generate API key for business
+  Future<String> generateApiKey() async {
+    try {
+      final callable = _functions.httpsCallable('generateBusinessApiKey');
+      final result = await callable.call({});
+      return result.data['apiKey'] as String;
+    } catch (e) {
+      throw Exception('Failed to generate API key: $e');
+    }
+  }
+
+  // Suspend API key for non-payment
+  Future<void> suspendApiKey() async {
+    final user = _auth.currentUser;
+    if (user == null) throw Exception('User not authenticated');
+
+    try {
+      await _firestore
+          .collection('b2bApiKeys')
+          .where('businessId', isEqualTo: user.uid)
+          .get()
+          .then((snapshot) {
+        for (final doc in snapshot.docs) {
+          doc.reference.update({
+            'status': 'suspended',
+            'suspendedAt': DateTime.now().toIso8601String(),
+          });
+        }
+      });
+    } catch (e) {
+      throw Exception('Failed to suspend API key: $e');
+    }
+  }
+
+  // Reactivate API key after payment
+  Future<void> reactivateApiKey() async {
+    final user = _auth.currentUser;
+    if (user == null) throw Exception('User not authenticated');
+
+    try {
+      await _firestore
+          .collection('b2bApiKeys')
+          .where('businessId', isEqualTo: user.uid)
+          .get()
+          .then((snapshot) {
+        for (final doc in snapshot.docs) {
+          doc.reference.update({
+            'status': 'active',
+            'reactivatedAt': DateTime.now().toIso8601String(),
+          });
+        }
+      });
+    } catch (e) {
+      throw Exception('Failed to reactivate API key: $e');
+    }
+  }
+
+  // Get subscription invoices (now for API usage billing)
   Future<List<Invoice>> getInvoices({int limit = 10}) async {
     final user = _auth.currentUser;
     if (user == null) return [];
 
     try {
-      final subscription = await getCurrentSubscription();
-      if (subscription == null) return [];
-
       final snap = await _firestore
           .collection('invoices')
           .where('businessId', isEqualTo: user.uid)
@@ -227,69 +156,83 @@ class BusinessSubscriptionService {
           .map((doc) => Invoice.fromJson(doc.data()))
           .toList();
     } catch (e) {
-      // Removed debug print: debugPrint('Error fetching invoices: $e');
       return [];
     }
   }
 
-  // Stream subscription changes for real-time updates
+  // Stream API key changes for real-time updates
   Stream<BusinessSubscription?> watchSubscription() {
     final user = _auth.currentUser;
     if (user == null) return Stream.value(null);
 
     return _firestore
-        .collection('business_subscriptions')
+        .collection('b2bApiKeys')
         .where('businessId', isEqualTo: user.uid)
         .snapshots()
         .map((snapshot) {
       if (snapshot.docs.isEmpty) return null;
 
-      // Get the most recent active subscription
-      final activeSubs = snapshot.docs
-          .map((doc) {
-            final data = doc.data();
-            data['id'] = doc.id; // Add the document ID to the data
-            return BusinessSubscription.fromJson(data);
-          })
-          .where((sub) => sub.status.isActive)
-          .toList();
-
-      if (activeSubs.isEmpty) return null;
-
-      // Sort by creation date and return the latest
-      activeSubs.sort((a, final b) => b.createdAt.compareTo(a.createdAt));
-      return activeSubs.first;
+      final doc = snapshot.docs.first;
+      final data = doc.data();
+      
+      // Convert to BusinessSubscription format for compatibility
+      return BusinessSubscription(
+        id: doc.id,
+        businessId: user.uid,
+        customerId: user.uid,
+        plan: SubscriptionPlan.pro,
+        status: data['status'] == 'active' 
+            ? SubscriptionStatus.active 
+            : SubscriptionStatus.cancelled,
+        createdAt: (data['createdAt'] as Timestamp?)?.toDate() ?? DateTime.now(),
+        currentPeriodEnd: DateTime.now().add(const Duration(days: 30)),
+      );
     });
   }
 
-  // Check if user has active subscription
+  // Check if user has active API access
   Future<bool> hasActiveSubscription() async {
-    final subscription = await getCurrentSubscription();
-    return subscription != null && subscription.status.isActive;
+    final apiUsage = await getApiUsage();
+    return apiUsage['status'] == 'active';
   }
 
-  // Get subscription plan limits
+  // Get API access limits and features
   Future<Map<String, dynamic>> getSubscriptionLimits() async {
-    final subscription = await getCurrentSubscription();
-
-    if (subscription == null) {
-      return {
-        'meetingLimit': 0,
-        'hasAnalytics': false,
-        'hasCsvExport': false,
-        'hasEmailReminders': false,
-        'hasMonthlyCalendar': false,
-        'hasClientList': false,
-      };
-    }
+    final apiUsage = await getApiUsage();
+    final isActive = apiUsage['status'] == 'active';
 
     return {
-      'meetingLimit': subscription.plan.meetingLimit,
-      'hasAnalytics': subscription.plan == SubscriptionPlan.pro,
-      'hasCsvExport': subscription.plan == SubscriptionPlan.pro,
-      'hasEmailReminders': subscription.plan == SubscriptionPlan.pro,
-      'hasMonthlyCalendar': subscription.plan == SubscriptionPlan.pro,
-      'hasClientList': subscription.plan == SubscriptionPlan.pro,
+      'apiQuotaRemaining': apiUsage['quotaRemaining'] ?? 0,
+      'mapUsageCount': apiUsage['mapUsageCount'] ?? 0,
+      'hasApiAccess': isActive,
+      'hasMapAccess': isActive,
+      'hasAnalytics': isActive,
+      'hasWebhooks': isActive,
     };
+  }
+
+  // Generate monthly invoice for map usage
+  Future<void> generateMonthlyInvoice() async {
+    try {
+      final callable = _functions.httpsCallable('generateMonthlyInvoice');
+      await callable.call({});
+    } catch (e) {
+      throw Exception('Failed to generate monthly invoice: $e');
+    }
+  }
+
+  // Mark invoice as paid (admin function)
+  Future<void> markInvoiceAsPaid(String invoiceId) async {
+    try {
+      await _firestore
+          .collection('invoices')
+          .doc(invoiceId)
+          .update({
+        'status': 'paid',
+        'paidAt': DateTime.now().toIso8601String(),
+      });
+    } catch (e) {
+      throw Exception('Failed to mark invoice as paid: $e');
+    }
   }
 }

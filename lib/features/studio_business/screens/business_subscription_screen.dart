@@ -13,40 +13,31 @@ class BusinessSubscriptionScreen extends ConsumerStatefulWidget {
 
 class _BusinessSubscriptionScreenState
     extends ConsumerState<BusinessSubscriptionScreen> {
-  TextEditingController _promoCodeController = TextEditingController();
-  String? _selectedPromoCode;
   bool _isLoading = false;
-  bool _isApplyingPromo = false;
 
   @override
   void initState() {
     super.initState();
   }
 
-  @override
-  void dispose() {
-    _promoCodeController.dispose();
-    super.dispose();
-  }
-
-  Future<void> _subscribeToBasic() async {
+  Future<void> _manageApiAccess() async {
     setState(() => _isLoading = true);
 
     try {
-      final service = ref.read(businessSubscriptionServiceProvider);
-      await service.subscribeBasic();
+      // Navigate to API management screen
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
-            content: Text('Redirecting to Stripe checkout for Basic plan...'),
+            content: Text('Redirecting to API Access Management...'),
             backgroundColor: Colors.blue,
           ),
         );
       }
     } catch (e) {
+      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('Failed to start Basic subscription: $e'),
+            content: Text('Failed to access API management: $e'),
             backgroundColor: Colors.red,
           ),
         );
@@ -54,99 +45,6 @@ class _BusinessSubscriptionScreenState
     } finally {
       if (mounted) {
         setState(() => _isLoading = false);
-      }
-    }
-  }
-
-  Future<void> _subscribeToPro() async {
-    setState(() => _isLoading = true);
-
-    try {
-      final service = ref.read(businessSubscriptionServiceProvider);
-      await service.subscribePro();
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Redirecting to Stripe checkout for Pro plan...'),
-            backgroundColor: Colors.blue,
-          ),
-        );
-      }
-    } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to start Pro subscription: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
-    } finally {
-      if (mounted) {
-        setState(() => _isLoading = false);
-      }
-    }
-  }
-
-  Future<void> _applyPromoCode() async {
-    final code = _promoCodeController.text.trim();
-    if (code.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Please enter a promo code'),
-          backgroundColor: Colors.orange,
-        ),
-      );
-      return;
-    }
-
-    setState(() => _isApplyingPromo = true);
-
-    try {
-      final service = ref.read(businessSubscriptionServiceProvider);
-      await service.applyPromoCode(code);
-      setState(() => _selectedPromoCode = code);
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Promo applied! Your next bill is free.'),
-            backgroundColor: Colors.green,
-          ),
-        );
-      }
-    } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to apply promo code: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
-    } finally {
-      if (mounted) {
-        setState(() => _isApplyingPromo = false);
-      }
-    }
-  }
-
-  Future<void> _openCustomerPortal() async {
-    try {
-      final service = ref.read(businessSubscriptionServiceProvider);
-      await service.openCustomerPortal();
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Opening customer portal...'),
-            backgroundColor: Colors.blue,
-          ),
-        );
-      }
-    } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to open customer portal: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
       }
     }
   }
@@ -157,13 +55,12 @@ class _BusinessSubscriptionScreenState
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Business Subscription'),
+        title: const Text('Business API Management'),
         actions: [
-          if (subscriptionAsync.value != null)
-            TextButton(
-              onPressed: _openCustomerPortal,
-              child: const Text('Manage Subscription'),
-            ),
+          TextButton(
+            onPressed: _manageApiAccess,
+            child: const Text('Manage API Access'),
+          ),
         ],
       ),
       body: SingleChildScrollView(
@@ -171,53 +68,48 @@ class _BusinessSubscriptionScreenState
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Current subscription status
+            // Current API status
             subscriptionAsync.when(
               data: (subscription) {
-                if (subscription != null) {
-                  return Card(
-                    child: Padding(
-                      padding: const EdgeInsets.all(16),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Current Plan: ${subscription.plan.name}',
-                            style: Theme.of(context).textTheme.headlineSmall,
+                return Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'B2B API Access',
+                          style: Theme.of(context).textTheme.headlineSmall,
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          'Status: Active',
+                          style: TextStyle(
+                            color: Colors.green,
+                            fontWeight: FontWeight.bold,
                           ),
-                          const SizedBox(height: 8),
-                          Text(
-                            'Status: ${subscription.status.displayName}',
-                            style: TextStyle(
-                              color: subscription.status.color,
-                              fontWeight: FontWeight.bold,
-                            ),
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          'API Quota: 1000/month',
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          'Map Usage Charges: €0.007 per call',
+                          style: TextStyle(color: Colors.orange),
+                        ),
+                        const SizedBox(height: 16),
+                        SizedBox(
+                          width: double.infinity,
+                          child: ElevatedButton(
+                            onPressed: _manageApiAccess,
+                            child: const Text('View API Keys'),
                           ),
-                          const SizedBox(height: 8),
-                          Text(
-                            'Next billing: ${_formatDate(subscription.currentPeriodEnd)}',
-                          ),
-                          if (subscription.trialEnd != null) ...[
-                            const SizedBox(height: 8),
-                            Text(
-                              'Trial ends: ${_formatDate(subscription.trialEnd!)}',
-                              style: const TextStyle(color: Colors.orange),
-                            ),
-                          ],
-                          const SizedBox(height: 16),
-                          SizedBox(
-                            width: double.infinity,
-                            child: ElevatedButton(
-                              onPressed: _openCustomerPortal,
-                              child: const Text('Change Plan'),
-                            ),
-                          ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  );
-                }
-                return const SizedBox.shrink();
+                  ),
+                );
               },
               loading: () => const Card(
                 child: Padding(
@@ -225,17 +117,17 @@ class _BusinessSubscriptionScreenState
                   child: Center(child: CircularProgressIndicator()),
                 ),
               ),
-              error: (error, final stack) => Card(
+              error: (error, stack) => Card(
                 child: Padding(
                   padding: const EdgeInsets.all(16),
-                  child: Text('Error loading subscription: $error'),
+                  child: Text('Error loading API status: $error'),
                 ),
               ),
             ),
 
             const SizedBox(height: 24),
 
-            // Promo code section
+            // API Usage Information
             Card(
               child: Padding(
                 padding: const EdgeInsets.all(16),
@@ -243,44 +135,18 @@ class _BusinessSubscriptionScreenState
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      'Promo Code',
+                      'Usage-Based Billing',
                       style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 12),
-                    Row(
-                      children: [
-                        Expanded(
-                          child: TextField(
-                            controller: _promoCodeController,
-                            decoration: const InputDecoration(
-                              hintText: 'Enter promo code',
-                              border: OutlineInputBorder(),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(width: 12),
-                        ElevatedButton(
-                          onPressed: _isApplyingPromo ? null : _applyPromoCode,
-                          child: _isApplyingPromo
-                              ? const SizedBox(
-                                  height: 20,
-                                  width: 20,
-                                  child:
-                                      CircularProgressIndicator(strokeWidth: 2),
-                                )
-                              : const Text('Apply'),
-                        ),
-                      ],
+                    const Text(
+                      '• Standard API calls are included in your monthly quota\n'
+                      '• Map API calls are charged separately at €0.007 per request\n'
+                      '• Monthly invoices are generated automatically\n'
+                      '• Payment due within 7 days to maintain service',
+                      style: TextStyle(fontSize: 14),
                     ),
-                    if (_selectedPromoCode != null) ...[
-                      const SizedBox(height: 8),
-                      Text(
-                        'Applied: $_selectedPromoCode',
-                        style: const TextStyle(
-                            color: Colors.green, fontWeight: FontWeight.bold,),
-                      ),
-                    ],
                   ],
                 ),
               ),
@@ -288,40 +154,19 @@ class _BusinessSubscriptionScreenState
 
             const SizedBox(height: 24),
 
-            // Subscription plans
+            // API Features
             const Text(
-              'Choose Your Plan',
+              'API Features',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 16),
 
-            // Basic Plan Button
+            // API Access Button
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: _isLoading ? null : _subscribeToBasic,
-                style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(vertical: 16),
-                  backgroundColor: Colors.grey[100],
-                ),
-                child: _isLoading
-                    ? const SizedBox(
-                        height: 20,
-                        width: 20,
-                        child: CircularProgressIndicator(strokeWidth: 2),
-                      )
-                    : const Text('Subscribe to Basic (€4.99/mo)'),
-              ),
-            ),
-
-            const SizedBox(height: 12),
-
-            // Pro Plan Button
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: _isLoading ? null : _subscribeToPro,
+                onPressed: _isLoading ? null : _manageApiAccess,
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   backgroundColor: Colors.blue,
@@ -333,67 +178,57 @@ class _BusinessSubscriptionScreenState
                         width: 20,
                         child: CircularProgressIndicator(strokeWidth: 2),
                       )
-                    : const Text('Subscribe to Pro (€14.99/mo)'),
+                    : const Text('Access API Dashboard'),
               ),
             ),
 
             const SizedBox(height: 24),
 
-            // Features comparison
-            _buildFeaturesComparison(),
+            // Features overview
+            _buildFeaturesOverview(),
           ],
         ),
       ),
     );
   }
 
-  Widget _buildFeaturesComparison() => Card(
+  Widget _buildFeaturesOverview() => Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Plan Comparison',
+              'API Capabilities',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
-            _buildComparisonRow('Meetings per month', '20', 'Unlimited'),
-            _buildComparisonRow(
-                'Calendar views', 'Daily only', 'Daily + Monthly',),
-            _buildComparisonRow('Analytics', 'No', 'Yes'),
-            _buildComparisonRow('CSV Export', 'No', 'Yes'),
-            _buildComparisonRow('Email Reminders', 'No', 'Yes'),
-            _buildComparisonRow('Client List', 'No', 'Yes'),
-            _buildComparisonRow('Priority Support', 'No', 'Yes'),
+            _buildFeatureRow('Appointment Management', 'Create, update, cancel appointments'),
+            _buildFeatureRow('Calendar Integration', 'Sync with business calendars'),
+            _buildFeatureRow('Map Services', 'Location-based features (charged per use)'),
+            _buildFeatureRow('Usage Analytics', 'Track API consumption'),
+            _buildFeatureRow('Webhook Support', 'Real-time notifications'),
           ],
         ),
       ),
     );
 
-  Widget _buildComparisonRow(
-      String feature, final String basic, final String pro,) => Padding(
+  Widget _buildFeatureRow(String feature, String description) => Padding(
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Row(
         children: [
+          Icon(Icons.check_circle, color: Colors.green, size: 20),
+          const SizedBox(width: 12),
           Expanded(
-            flex: 2,
-            child: Text(feature,
-                style: const TextStyle(fontWeight: FontWeight.w500),),
-          ),
-          Expanded(
-            child: Text(basic,
-                textAlign: TextAlign.center,
-                style: const TextStyle(color: Colors.grey),),
-          ),
-          Expanded(
-            child: Text(pro,
-                textAlign: TextAlign.center,
-                style: const TextStyle(fontWeight: FontWeight.bold),),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(feature, style: const TextStyle(fontWeight: FontWeight.w500)),
+                Text(description, style: TextStyle(color: Colors.grey[600], fontSize: 12)),
+              ],
+            ),
           ),
         ],
       ),
     );
-
-  String _formatDate(DateTime date) => '${date.day}/${date.month}/${date.year}';
 }

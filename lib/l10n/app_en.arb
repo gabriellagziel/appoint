@@ -2713,5 +2713,41 @@
   "purchase_now_button": "Purchase Now",
   "@purchase_now_button": {
     "description": "Button to purchase upgrade"
+  },
+  "manageApiAccess": "Manage API Access",
+  "@manageApiAccess": {
+    "description": "Button to manage API access for business clients"
+  },
+  "apiQuota": "API Quota",
+  "@apiQuota": {
+    "description": "Label for API quota information"
+  },
+  "mapUsageCharges": "Map Usage Charges",
+  "@mapUsageCharges": {
+    "description": "Label for map API usage charges"
+  },
+  "viewApiKeys": "View API Keys",
+  "@viewApiKeys": {
+    "description": "Button to view API keys"
+  },
+  "accessApiDashboard": "Access API Dashboard",
+  "@accessApiDashboard": {
+    "description": "Button to access API dashboard"
+  },
+  "usageBasedBilling": "Usage-Based Billing",
+  "@usageBasedBilling": {
+    "description": "Title for usage-based billing section"
+  },
+  "apiCapabilities": "API Capabilities",
+  "@apiCapabilities": {
+    "description": "Title for API capabilities section"
+  },
+  "b2bApiAccess": "B2B API Access",
+  "@b2bApiAccess": {
+    "description": "Title for B2B API access section"
+  },
+  "businessApiManagement": "Business API Management",
+  "@businessApiManagement": {
+    "description": "Title for business API management screen"
   }
 }
