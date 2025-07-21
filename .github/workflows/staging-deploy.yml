@@ -1,5 +1,8 @@
 name: Staging Deployment
 
+push:
+  branches: [ main ]
+
 on:
   push:
     branches: [ develop ]
