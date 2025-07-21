@@ -10,11 +10,15 @@ class BusinessSubscription {
     required this.status,
     required this.currentPeriodStart,
     required this.currentPeriodEnd,
-    required this.createdAt, required this.updatedAt, this.trialEnd,
+    required this.createdAt, 
+    required this.updatedAt, 
+    this.trialEnd,
     this.cancelAtPeriodEnd,
     this.stripeSubscriptionId,
     this.stripePriceId,
     this.promoCodeId,
+    this.mapUsageCurrentPeriod = 0,
+    this.mapOverageThisPeriod = 0,
   });
 
   factory BusinessSubscription.fromJson(Map<String, dynamic> json) => BusinessSubscription(
@@ -23,7 +27,7 @@ class BusinessSubscription {
       customerId: json['customerId'] as String,
       plan: SubscriptionPlan.values.firstWhere(
         (e) => e.name == json['plan'],
-        orElse: () => SubscriptionPlan.basic,
+        orElse: () => SubscriptionPlan.starter,
       ),
       status: SubscriptionStatus.values.firstWhere(
         (e) => e.name == json['status'],
@@ -40,6 +44,8 @@ class BusinessSubscription {
       stripeSubscriptionId: json['stripeSubscriptionId'] as String?,
       stripePriceId: json['stripePriceId'] as String?,
       promoCodeId: json['promoCodeId'] as String?,
+      mapUsageCurrentPeriod: (json['mapUsageCurrentPeriod'] as num?)?.toInt() ?? 0,
+      mapOverageThisPeriod: (json['mapOverageThisPeriod'] as num?)?.toDouble() ?? 0.0,
     );
   final String id;
   final String businessId;
@@ -55,6 +61,8 @@ class BusinessSubscription {
   final String? stripeSubscriptionId;
   final String? stripePriceId;
   final String? promoCodeId;
+  final int mapUsageCurrentPeriod;
+  final double mapOverageThisPeriod;
 
   Map<String, dynamic> toJson() => {
       'id': id,
@@ -71,12 +79,53 @@ class BusinessSubscription {
       'stripeSubscriptionId': stripeSubscriptionId,
       'stripePriceId': stripePriceId,
       'promoCodeId': promoCodeId,
+      'mapUsageCurrentPeriod': mapUsageCurrentPeriod,
+      'mapOverageThisPeriod': mapOverageThisPeriod,
     };
+
+  BusinessSubscription copyWith({
+    String? id,
+    String? businessId,
+    String? customerId,
+    SubscriptionPlan? plan,
+    SubscriptionStatus? status,
+    DateTime? currentPeriodStart,
+    DateTime? currentPeriodEnd,
+    DateTime? trialEnd,
+    DateTime? createdAt,
+    DateTime? updatedAt,
+    String? cancelAtPeriodEnd,
+    String? stripeSubscriptionId,
+    String? stripePriceId,
+    String? promoCodeId,
+    int? mapUsageCurrentPeriod,
+    double? mapOverageThisPeriod,
+  }) {
+    return BusinessSubscription(
+      id: id ?? this.id,
+      businessId: businessId ?? this.businessId,
+      customerId: customerId ?? this.customerId,
+      plan: plan ?? this.plan,
+      status: status ?? this.status,
+      currentPeriodStart: currentPeriodStart ?? this.currentPeriodStart,
+      currentPeriodEnd: currentPeriodEnd ?? this.currentPeriodEnd,
+      trialEnd: trialEnd ?? this.trialEnd,
+      createdAt: createdAt ?? this.createdAt,
+      updatedAt: updatedAt ?? this.updatedAt,
+      cancelAtPeriodEnd: cancelAtPeriodEnd ?? this.cancelAtPeriodEnd,
+      stripeSubscriptionId: stripeSubscriptionId ?? this.stripeSubscriptionId,
+      stripePriceId: stripePriceId ?? this.stripePriceId,
+      promoCodeId: promoCodeId ?? this.promoCodeId,
+      mapUsageCurrentPeriod: mapUsageCurrentPeriod ?? this.mapUsageCurrentPeriod,
+      mapOverageThisPeriod: mapOverageThisPeriod ?? this.mapOverageThisPeriod,
+    );
+  }
 }
 
 enum SubscriptionPlan {
-  basic,
-  pro,
+  starter,
+  professional,
+  businessPlus,
 }
 
 enum SubscriptionStatus {
@@ -93,28 +142,34 @@ enum SubscriptionStatus {
 extension SubscriptionPlanExtension on SubscriptionPlan {
   String get name {
     switch (this) {
-      case SubscriptionPlan.basic:
-        return 'Basic';
-      case SubscriptionPlan.pro:
-        return 'Pro';
+      case SubscriptionPlan.starter:
+        return 'Starter';
+      case SubscriptionPlan.professional:
+        return 'Professional';
+      case SubscriptionPlan.businessPlus:
+        return 'Business Plus';
     }
   }
 
   String get description {
     switch (this) {
-      case SubscriptionPlan.basic:
-        return 'Up to 20 meetings, daily calendar view only, no analytics';
-      case SubscriptionPlan.pro:
-        return 'Unlimited meetings, daily+monthly calendar, "My Clients" list, analytics, CSV export, email reminders';
+      case SubscriptionPlan.starter:
+        return 'Up to 20 meetings, basic calendar view, no branding';
+      case SubscriptionPlan.professional:
+        return 'Unlimited meetings, full branding, up to 200 map loads, analytics, CRM features';
+      case SubscriptionPlan.businessPlus:
+        return 'Everything in Professional plus 500 map loads, advanced analytics, priority support';
     }
   }
 
   double get price {
     switch (this) {
-      case SubscriptionPlan.basic:
-        return 4.99;
-      case SubscriptionPlan.pro:
-        return 14.99;
+      case SubscriptionPlan.starter:
+        return 5.00;
+      case SubscriptionPlan.professional:
+        return 15.00;
+      case SubscriptionPlan.businessPlus:
+        return 25.00;
     }
   }
 
@@ -122,33 +177,121 @@ extension SubscriptionPlanExtension on SubscriptionPlan {
 
   int get meetingLimit {
     switch (this) {
-      case SubscriptionPlan.basic:
+      case SubscriptionPlan.starter:
         return 20;
-      case SubscriptionPlan.pro:
+      case SubscriptionPlan.professional:
+      case SubscriptionPlan.businessPlus:
         return -1; // unlimited
+    }
+  }
+
+  int get mapLimit {
+    switch (this) {
+      case SubscriptionPlan.starter:
+        return 0; // No maps included
+      case SubscriptionPlan.professional:
+        return 200;
+      case SubscriptionPlan.businessPlus:
+        return 500;
+    }
+  }
+
+  bool get brandingEnabled {
+    switch (this) {
+      case SubscriptionPlan.starter:
+        return false;
+      case SubscriptionPlan.professional:
+      case SubscriptionPlan.businessPlus:
+        return true;
+    }
+  }
+
+  bool get hasAnalytics {
+    switch (this) {
+      case SubscriptionPlan.starter:
+        return false;
+      case SubscriptionPlan.professional:
+        return true;
+      case SubscriptionPlan.businessPlus:
+        return true;
+    }
+  }
+
+  bool get hasAdvancedAnalytics {
+    switch (this) {
+      case SubscriptionPlan.starter:
+      case SubscriptionPlan.professional:
+        return false;
+      case SubscriptionPlan.businessPlus:
+        return true;
+    }
+  }
+
+  bool get hasPrioritySupport {
+    switch (this) {
+      case SubscriptionPlan.starter:
+      case SubscriptionPlan.professional:
+        return false;
+      case SubscriptionPlan.businessPlus:
+        return true;
     }
   }
 
   List<String> get features {
     switch (this) {
-      case SubscriptionPlan.basic:
+      case SubscriptionPlan.starter:
         return [
           'Up to 20 meetings per month',
           'Daily calendar view',
           'Basic booking management',
+          'Email support',
         ];
-      case SubscriptionPlan.pro:
+      case SubscriptionPlan.professional:
         return [
           'Unlimited meetings',
+          'Full business branding',
           'Daily & monthly calendar views',
-          '"My Clients" list',
+          'Up to 200 map loads/month',
+          '"My Clients" CRM list',
           'Analytics dashboard',
           'CSV export',
           'Email reminders',
+        ];
+      case SubscriptionPlan.businessPlus:
+        return [
+          'Everything in Professional',
+          'Up to 500 map loads/month',
+          'Advanced analytics',
           'Priority support',
+          'Preferred handling',
+          'Custom integrations',
         ];
     }
   }
+
+  String get stripePriceId {
+    switch (this) {
+      case SubscriptionPlan.starter:
+        return 'price_starter_monthly';
+      case SubscriptionPlan.professional:
+        return 'price_professional_monthly';
+      case SubscriptionPlan.businessPlus:
+        return 'price_business_plus_monthly';
+    }
+  }
+
+  Color get color {
+    switch (this) {
+      case SubscriptionPlan.starter:
+        return Colors.grey;
+      case SubscriptionPlan.professional:
+        return Colors.blue;
+      case SubscriptionPlan.businessPlus:
+        return Colors.purple;
+    }
+  }
+
+  bool get isRecommended => this == SubscriptionPlan.professional;
 }
 
 extension SubscriptionStatusExtension on SubscriptionStatus {
@@ -191,4 +334,10 @@ extension SubscriptionStatusExtension on SubscriptionStatus {
         return Colors.red;
     }
   }
+}
+
+// Map usage constants
+class MapUsageConstants {
+  static const double systemCostPerLoad = 0.007; // €0.007 per map load
+  static const double overageRatePerLoad = 0.01;  // €0.01 per extra load
 }
