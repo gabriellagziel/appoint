@@ -1,0 +1,69 @@
+{
+  "brand": {
+    "name": "App-Oint",
+    "tagline": "Time Organized",
+    "subtitle": "Set • Send • Done"
+  },
+  "buttons": {
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "viewDemo": "View Demo",
+    "startTrial": "Start Free Trial",
+    "scheduleDemo": "Schedule Demo",
+    "contactUs": "Contact Us",
+    "downloadNow": "Download Now",
+    "signUp": "Sign Up",
+    "logIn": "Log In",
+    "submit": "Submit",
+    "send": "Send",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close",
+    "save": "Save"
+  },
+  "navigation": {
+    "home": "Home",
+    "features": "Features",
+    "pricing": "Pricing",
+    "enterprise": "Enterprise",
+    "about": "About",
+    "contact": "Contact",
+    "blog": "Blog",
+    "support": "Support"
+  },
+  "footer": {
+    "company": "Company",
+    "product": "Product",
+    "resources": "Resources",
+    "legal": "Legal",
+    "followUs": "Follow Us",
+    "allRightsReserved": "All rights reserved",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "forms": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "company": "Company",
+    "message": "Message",
+    "subject": "Subject",
+    "required": "Required",
+    "optional": "Optional",
+    "sending": "Sending...",
+    "sent": "Sent Successfully!",
+    "error": "Something went wrong. Please try again."
+  },
+  "language": {
+    "switchLanguage": "Switch Language",
+    "currentLanguage": "AM",
+    "moreLanguages": "More languages coming soon..."
+  },
+  "seo": {
+    "defaultTitle": "App-Oint - Smart Appointment Scheduling Platform",
+    "defaultDescription": "Streamline your business with App-Oint's intelligent scheduling platform. Support for 56 languages, enterprise API, and advanced analytics."
+  }
+}
