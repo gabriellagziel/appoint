@@ -1,10 +1,14 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Temporarily removed static export to work as a service
-  trailingSlash: true,
+  i18n: {
+    locales: ['en', 'es', 'fr', 'de', 'it', 'pt', 'ru', 'zh', 'ja', 'ko', 'ar', 'he', 'hi', 'tr', 'pl', 'nl', 'sv', 'da', 'no', 'fi', 'cs', 'sk', 'hu', 'ro', 'bg', 'hr', 'sr', 'sl', 'et', 'lv', 'lt', 'uk', 'fa', 'ur', 'bn', 'th', 'vi', 'id', 'ms', 'am', 'ha', 'sq', 'mk', 'bs', 'mt', 'is', 'fo', 'ga', 'cy', 'eu', 'ca', 'gl'],
+    defaultLocale: 'en',
+    localeDetection: false,
+  },
+  reactStrictMode: true,
   images: {
     unoptimized: true
-  }
-}
+  },
+  trailingSlash: true,
+};
 
-module.exports = nextConfig 
+module.exports = nextConfig; 
