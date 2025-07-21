@@ -1,11 +1,31 @@
+import { GetStaticProps } from 'next'
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Image from 'next/image'
+import Head from 'next/head'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Briefcase, Server, Shield } from 'lucide-react'
+import { Navbar } from '@/components/Navbar'
 
 export default function Home() {
+  const { t } = useTranslation('common')
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <>
+      <Head>
+        <title>{t('seo.defaultTitle')}</title>
+        <meta name="description" content={t('seo.defaultDescription')} />
+        <meta property="og:title" content={t('seo.defaultTitle')} />
+        <meta property="og:description" content={t('seo.defaultDescription')} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('seo.defaultTitle')} />
+        <meta name="twitter:description" content={t('seo.defaultDescription')} />
+      </Head>
+      
+      <div className="min-h-screen bg-gray-50">
+        <Navbar />
+        <main className="bg-gradient-to-br from-gray-50 to-white">
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-16">
         <div className="flex min-h-[80vh] flex-col items-center justify-center text-center">
@@ -23,14 +43,10 @@ export default function Home() {
           {/* Slogan */}
           <div className="mb-12">
             <h1 className="text-5xl font-light text-gray-900 mb-4 tracking-tight">
-              Time Organized
+              {t('brand.tagline')}
             </h1>
             <div className="text-xl text-gray-600 font-light space-x-4">
-              <span>Set</span>
-              <span className="text-gray-400">·</span>
-              <span>Send</span>
-              <span className="text-gray-400">·</span>
-              <span>Done</span>
+              {t('brand.subtitle')}
             </div>
           </div>
 
@@ -126,6 +142,16 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </main>
+      </main>
+      </div>
+    </>
   )
+}
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale ?? 'en', ['common'])),
+    },
+  }
 }

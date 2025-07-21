@@ -1,0 +1,134 @@
+{
+  "hero": {
+    "title": "Get in Touch",
+    "subtitle": "Have questions about App-Oint? Need technical support? Want to explore partnerships? We're here to help and would love to hear from you.",
+    "liveChat": "Start Live Chat",
+    "scheduleCall": "Schedule Call"
+  },
+  "methods": {
+    "title": "Choose Your Contact Method",
+    "subtitle": "Reach out to the right team for the fastest and most helpful response.",
+    "general": {
+      "name": "General Support",
+      "description": "Get help with your account, billing, or general questions"
+    },
+    "sales": {
+      "name": "Sales Team",
+      "description": "Learn about our pricing plans and enterprise solutions"
+    },
+    "enterprise": {
+      "name": "Enterprise API",
+      "description": "Technical support and custom integration discussions"
+    },
+    "partnership": {
+      "name": "Partnership",
+      "description": "Explore partnership opportunities and integrations"
+    }
+  },
+  "form": {
+    "title": "Send us a Message",
+    "fullName": "Full Name",
+    "emailAddress": "Email Address",
+    "company": "Company",
+    "contactType": "Contact Type",
+    "subject": "Subject",
+    "message": "Message",
+    "sendMessage": "Send Message",
+    "sending": "Sending...",
+    "success": {
+      "title": "Message Sent Successfully!",
+      "subtitle": "Thank you for contacting us. We'll get back to you within 24 hours.",
+      "sendAnother": "Send Another Message"
+    },
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "company": "Acme Corp",
+      "subject": "How can we help you?",
+      "message": "Please provide details about your inquiry..."
+    },
+    "types": {
+      "general": "General Support",
+      "sales": "Sales Inquiry",
+      "enterprise": "Enterprise API",
+      "partnership": "Partnership",
+      "technical": "Technical Issue",
+      "billing": "Billing Question"
+    }
+  },
+  "info": {
+    "title": "Contact Information",
+    "email": {
+      "title": "Email Support",
+      "address": "support@app-oint.com",
+      "response": "24-48 hour response time"
+    },
+    "phone": {
+      "title": "Phone Support",
+      "number": "+1 (555) 123-4567",
+      "note": "Premium customers only"
+    },
+    "address": {
+      "title": "Office Address",
+      "line1": "123 Innovation Drive",
+      "line2": "Tech Hub, CA 94107",
+      "line3": "United States"
+    },
+    "hours": {
+      "title": "Support Hours",
+      "weekdays": "Monday - Friday",
+      "weekdayHours": "9:00 AM - 6:00 PM EST",
+      "saturday": "Saturday",
+      "saturdayHours": "10:00 AM - 4:00 PM EST",
+      "sunday": "Sunday",
+      "sundayHours": "Closed",
+      "emergency": "* Emergency support available 24/7 for Enterprise customers"
+    }
+  },
+  "office": {
+    "title": "Visit Our Office",
+    "subtitle": "Located in the heart of San Francisco's tech district. Schedule a visit to meet our team and see App-Oint in action.",
+    "mapComingSoon": "Interactive Map Coming Soon",
+    "mapDescription": "We're working on embedding an interactive map to help you find us easily.",
+    "getDirections": "Get Directions",
+    "transit": {
+      "title": "Public Transit",
+      "description": "2 blocks from Montgomery St. BART station"
+    },
+    "parking": {
+      "title": "Parking",
+      "description": "Validated parking available in building garage"
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "description": "Fully wheelchair accessible with elevator access"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Quick answers to common questions. Can't find what you're looking for? Contact us directly.",
+    "viewFull": "View Full FAQ",
+    "questions": {
+      "getStarted": {
+        "question": "How quickly can I get started?",
+        "answer": "You can sign up and start using App-Oint immediately. Our onboarding process takes less than 5 minutes."
+      },
+      "phoneSupport": {
+        "question": "Do you offer phone support?",
+        "answer": "Yes! Premium and Enterprise customers get priority phone support. Starter plan users can access our chat support."
+      },
+      "migration": {
+        "question": "Can I migrate from another scheduling platform?",
+        "answer": "Absolutely. We offer free data migration assistance for all new customers switching from competitors."
+      },
+      "security": {
+        "question": "Is my data secure?",
+        "answer": "Yes, we use enterprise-grade security with SSL encryption, regular backups, and GDPR compliance."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Don't wait to revolutionize your scheduling process. Start your free trial today and see why thousands of businesses trust App-Oint."
+  }
+}
