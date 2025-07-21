@@ -233,6 +233,13 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         builder: (context, final state) =>
             const business.BusinessDashboardScreen(),
       ),
+      // B2B API Management route (for CRM clients only)
+      GoRoute(
+        path: '/app.business',
+        name: 'appBusiness',
+        builder: (context, final state) =>
+            const business.BusinessDashboardScreen(),
+      ),
       GoRoute(
         path: '/business/profile',
         name: 'businessProfile',

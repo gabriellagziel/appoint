@@ -50,11 +50,11 @@ final subscriptionInvoicesProvider = FutureProvider<List<Invoice>>(
   },
 );
 
-// Promo code validation provider
-final FutureProviderFamily<PromoCode?, String> promoCodeValidationProvider = FutureProvider.family<PromoCode?, String>(
-  (ref, final code) async {
+// API usage provider
+final apiUsageProvider = FutureProvider<Map<String, dynamic>>(
+  (ref) async {
     final service = ref.watch(REDACTED_TOKEN);
-    return service.validatePromoCode(code);
+    return service.getApiUsage();
   },
 );
 
@@ -72,31 +72,43 @@ class BusinessSubscriptionNotifier
     state = const AsyncValue.loading();
     try {
       final subscription = await _service.getCurrentSubscription();
-      final state = AsyncValue.data(subscription);
-    } catch (e) {
-      final state = AsyncValue.error(error, stackTrace);
+      state = AsyncValue.data(subscription);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 
-  Future<String> createCheckoutSession({
-    required final SubscriptionPlan plan,
-    final String? promoCode,
-  }) async {
+  Future<String> generateApiKey() async {
     try {
-      return await _service.createCheckoutSession(
-        plan: plan,
-        promoCode: promoCode,
-      );
+      return await _service.generateApiKey();
     } catch (e) {
-      throw Exception('Failed to create checkout session: $error');
+      throw Exception('Failed to generate API key: $e');
     }
   }
 
-  Future<String> createCustomerPortalSession() async {
+  Future<void> generateMonthlyInvoice() async {
     try {
-      return await _service.createCustomerPortalSession();
+      await _service.generateMonthlyInvoice();
     } catch (e) {
-      throw Exception('Failed to create customer portal session: $error');
+      throw Exception('Failed to generate monthly invoice: $e');
+    }
+  }
+
+  Future<void> suspendApiKey() async {
+    try {
+      await _service.suspendApiKey();
+      await _loadSubscription();
+    } catch (e) {
+      throw Exception('Failed to suspend API key: $e');
+    }
+  }
+
+  Future<void> reactivateApiKey() async {
+    try {
+      await _service.reactivateApiKey();
+      await _loadSubscription();
+    } catch (e) {
+      throw Exception('Failed to reactivate API key: $e');
     }
   }
 
