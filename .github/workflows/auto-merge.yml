@@ -1,4 +1,7 @@
-name: Auto Merge & Bot Feedback
+name: Auto Merge
+
+push:
+  branches: [ main ]
 
 on:
   pull_request:
