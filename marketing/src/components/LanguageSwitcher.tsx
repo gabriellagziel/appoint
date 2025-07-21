@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
-import { useTranslation } from 'next-i18next'
 import { ChevronDown, Globe } from 'lucide-react'
+import { useTranslation } from '@/lib/i18n'
 
 const languages = [
   { code: 'en', name: 'English', flag: '🇺🇸', nativeName: 'English' },
@@ -64,7 +64,7 @@ const languages = [
 export function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false)
   const router = useRouter()
-  const { t } = useTranslation('common')
+  const { t } = useTranslation(router.locale)
   
   const currentLang = languages.find(lang => lang.code === router.locale) || languages[0]
 

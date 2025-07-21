@@ -1,15 +1,15 @@
-import { GetStaticProps } from 'next'
-import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Image from 'next/image'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Briefcase, Server, Shield } from 'lucide-react'
 import { Navbar } from '@/components/Navbar'
+import { useTranslation } from '@/lib/i18n'
 
 export default function Home() {
-  const { t } = useTranslation('common')
+  const router = useRouter()
+  const { t } = useTranslation(router.locale)
   return (
     <>
       <Head>
@@ -148,10 +148,4 @@ export default function Home() {
   )
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale ?? 'en', ['common'])),
-    },
-  }
-}
+

@@ -1,20 +1,20 @@
-import { GetStaticProps } from 'next'
-import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { Navbar } from '@/components/Navbar'
 import { Button } from '@/components/ui/button'
 import { Home, Mail } from 'lucide-react'
+import { useTranslation } from '@/lib/i18n'
 
 export default function Custom404() {
-  const { t } = useTranslation('errors')
+  const router = useRouter()
+  const { t } = useTranslation(router.locale)
 
   return (
     <>
       <Head>
-        <title>{t('404.title')} - App-Oint</title>
-        <meta name="description" content={t('404.description')} />
+        <title>{t('errors.404.title')} - App-Oint</title>
+        <meta name="description" content={t('errors.404.description')} />
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       
@@ -26,13 +26,13 @@ export default function Custom404() {
             <div className="mb-8">
               <div className="text-6xl font-bold text-blue-600 mb-4">404</div>
               <h1 className="text-3xl font-bold text-gray-900 mb-4">
-                {t('404.title')}
+                {t('errors.404.title')}
               </h1>
               <p className="text-xl text-gray-600 mb-2">
-                {t('404.subtitle')}
+                {t('errors.404.subtitle')}
               </p>
               <p className="text-gray-500">
-                {t('404.description')}
+                {t('errors.404.description')}
               </p>
             </div>
             
@@ -41,13 +41,13 @@ export default function Custom404() {
                 <Button asChild size="lg">
                   <Link href="/">
                     <Home className="w-4 h-4 mr-2" />
-                    {t('404.goHome')}
+                    {t('errors.404.goHome')}
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link href="/contact">
                     <Mail className="w-4 h-4 mr-2" />
-                    {t('404.contactSupport')}
+                    {t('errors.404.contactSupport')}
                   </Link>
                 </Button>
               </div>
@@ -59,10 +59,3 @@ export default function Custom404() {
   )
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale ?? 'en', ['common', 'errors'])),
-    },
-  }
-}

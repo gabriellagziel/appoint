@@ -1,14 +1,14 @@
-import { GetStaticProps } from 'next'
-import { useTranslation } from 'next-i18next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { Navbar } from '@/components/Navbar'
 import { Button } from '@/components/ui/button'
 import { RefreshCw, AlertTriangle } from 'lucide-react'
+import { useTranslation } from '@/lib/i18n'
 
 export default function Custom500() {
-  const { t } = useTranslation('errors')
+  const router = useRouter()
+  const { t } = useTranslation(router.locale)
 
   const handleRetry = () => {
     window.location.reload()
@@ -17,8 +17,8 @@ export default function Custom500() {
   return (
     <>
       <Head>
-        <title>{t('500.title')} - App-Oint</title>
-        <meta name="description" content={t('500.description')} />
+        <title>{t('errors.500.title')} - App-Oint</title>
+        <meta name="description" content={t('errors.500.description')} />
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       
@@ -30,13 +30,13 @@ export default function Custom500() {
             <div className="mb-8">
               <AlertTriangle className="w-16 h-16 text-red-500 mx-auto mb-6" />
               <h1 className="text-3xl font-bold text-gray-900 mb-4">
-                {t('500.title')}
+                {t('errors.500.title')}
               </h1>
               <p className="text-xl text-gray-600 mb-2">
-                {t('500.subtitle')}
+                {t('errors.500.subtitle')}
               </p>
               <p className="text-gray-500">
-                {t('500.description')}
+                {t('errors.500.description')}
               </p>
             </div>
             
@@ -44,12 +44,12 @@ export default function Custom500() {
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button onClick={handleRetry} size="lg">
                   <RefreshCw className="w-4 h-4 mr-2" />
-                  {t('500.tryAgain')}
+                  {t('errors.500.tryAgain')}
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link href="/contact">
                     <AlertTriangle className="w-4 h-4 mr-2" />
-                    {t('500.reportIssue')}
+                    {t('errors.500.reportIssue')}
                   </Link>
                 </Button>
               </div>
@@ -61,10 +61,3 @@ export default function Custom500() {
   )
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale ?? 'en', ['common', 'errors'])),
-    },
-  }
-}
