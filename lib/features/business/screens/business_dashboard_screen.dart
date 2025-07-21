@@ -3,7 +3,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/models/user_type.dart';
 import 'package:appoint/providers/user_provider.dart';
 import 'package:appoint/features/studio_business/models/business_event.dart';
+import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
 import 'package:appoint/widgets/app_logo.dart';
+import 'package:appoint/widgets/business_header_widget.dart';
 
 class BusinessDashboardScreen extends ConsumerWidget {
   const BusinessDashboardScreen({super.key});
@@ -12,6 +14,7 @@ class BusinessDashboardScreen extends ConsumerWidget {
   Widget build(BuildContext context, final WidgetRef ref) {
     final user = ref.watch(userProvider);
     final isStudioUser = user?.userType == UserType.studio;
+    final businessProfile = ref.watch(businessProfileProvider);
     
     return Scaffold(
       appBar: AppBar(
@@ -26,6 +29,14 @@ class BusinessDashboardScreen extends ConsumerWidget {
         ),
         backgroundColor: Theme.of(context).primaryColor,
         foregroundColor: Colors.white,
+        actions: [
+          if (businessProfile != null)
+            IconButton(
+              onPressed: () => Navigator.pushNamed(context, '/business/profile'),
+              icon: const Icon(Icons.edit),
+              tooltip: 'Edit Business Profile',
+            ),
+        ],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
@@ -34,6 +45,13 @@ class BusinessDashboardScreen extends ConsumerWidget {
           children: [
             _buildWelcomeCard(context, isStudioUser),
             const SizedBox(height: 24),
+            
+            // Business Branding Preview Card
+            if (businessProfile != null) ...[
+              _buildBrandingPreviewCard(context, businessProfile),
+              const SizedBox(height: 24),
+            ],
+            
             if (isStudioUser) ...[
               _buildStudioBookingsSection(context),
               const SizedBox(height: 24),
@@ -43,6 +61,184 @@ class BusinessDashboardScreen extends ConsumerWidget {
             _buildQuickActions(context, isStudioUser),
             const SizedBox(height: 24),
             _buildRecentActivity(context, isStudioUser),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildBrandingPreviewCard(BuildContext context, businessProfile) {
+    return Card(
+      elevation: 3,
+      child: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Icon(
+                  Icons.visibility,
+                  color: Colors.purple.shade600,
+                  size: 24,
+                ),
+                const SizedBox(width: 8),
+                Text(
+                  'Client View Preview',
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.purple.shade800,
+                  ),
+                ),
+                const Spacer(),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  decoration: BoxDecoration(
+                    color: Colors.green.shade100,
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: Colors.green.shade300),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(
+                        Icons.check_circle,
+                        size: 14,
+                        color: Colors.green.shade700,
+                      ),
+                      const SizedBox(width: 4),
+                      Text(
+                        'Live',
+                        style: TextStyle(
+                          color: Colors.green.shade700,
+                          fontSize: 11,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'This is how your business appears to clients during booking:',
+              style: TextStyle(
+                color: Colors.grey.shade600,
+                fontSize: 14,
+              ),
+            ),
+            const SizedBox(height: 16),
+            
+            // Preview using the business header widget
+            Container(
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.grey.shade300),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: const BusinessHeaderWidget(
+                showDescription: true,
+                showServices: true,
+                showHours: true,
+                compact: false,
+              ),
+            ),
+            
+            const SizedBox(height: 16),
+            
+            // Branded Booking Toggle
+            Container(
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: Colors.blue.shade50,
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: Colors.blue.shade200),
+              ),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.branding_watermark,
+                    color: Colors.blue.shade600,
+                    size: 24,
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Branded Booking Experience',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            color: Colors.blue.shade800,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          'Show your branding on all client booking pages',
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: Colors.blue.shade700,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Switch(
+                    value: true, // For now, always enabled
+                    onChanged: (value) {
+                      // TODO: Implement branded booking toggle
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text('Branded booking is always enabled for verified businesses'),
+                          backgroundColor: Colors.blue,
+                        ),
+                      );
+                    },
+                    activeColor: Colors.blue.shade600,
+                  ),
+                ],
+              ),
+            ),
+            
+            const SizedBox(height: 12),
+            
+            // Action buttons
+            Row(
+              children: [
+                Expanded(
+                  child: OutlinedButton.icon(
+                    onPressed: () => Navigator.pushNamed(context, '/business/profile'),
+                    icon: const Icon(Icons.edit, size: 18),
+                    label: const Text('Edit Branding'),
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: Colors.purple.shade600,
+                      side: BorderSide(color: Colors.purple.shade300),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: ElevatedButton.icon(
+                    onPressed: () {
+                      // TODO: Implement share business page
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text('Public business page coming soon!'),
+                          backgroundColor: Colors.blue,
+                        ),
+                      );
+                    },
+                    icon: const Icon(Icons.share, size: 18),
+                    label: const Text('Share Page'),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.purple.shade600,
+                      foregroundColor: Colors.white,
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
