@@ -85,13 +85,15 @@ class AppLocalizationsFi extends AppLocalizations {
   String get revokeAccess => '[FI] Kumoa oikeudet';
 
   @override
-  String get saveGroupForRecognition => '[FI] Tallenna ryhmä tunnistusta varten';
+  String get saveGroupForRecognition =>
+      '[FI] Tallenna ryhmä tunnistusta varten';
 
   @override
   String get playtimeLiveScheduled => '[FI] [FI] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => '[FI] Oikeuksien peruuttamisen vahvistus';
+  String get revokeAccessConfirmation =>
+      '[FI] Oikeuksien peruuttamisen vahvistus';
 
   @override
   String get download => '[FI] [FI] Download';
@@ -185,7 +187,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => '[FI] [FI] Meeting shared successfully';
+  String get meetingSharedSuccessfully =>
+      '[FI] [FI] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[FI] Tervetuloa Playtimeen';
@@ -203,7 +206,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get cut => '[FI] Leikkaa';
 
   @override
-  String get inviteCancelledSuccessfully => '[FI] [FI] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully =>
+      '[FI] [FI] Invite cancelled successfully';
 
   @override
   String get retry => '[FI] Yritä uudelleen';
@@ -283,7 +287,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get scheduleForLater => '[FI] Ajoita myöhemmäksi';
 
   @override
-  String get accessRevokedSuccessfully => '[FI] [FI] Access revoked successfully';
+  String get accessRevokedSuccessfully =>
+      '[FI] [FI] Access revoked successfully';
 
   @override
   String type(Object type) {
@@ -485,7 +490,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get playtimeEnterGameName => '[FI] [FI] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[FI] [FI] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[FI] [FI] Please login to access family features';
 
   @override
   String get myInvites => '[FI] Kutsuni';
@@ -545,7 +551,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[FI] [FI] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[FI] [FI] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[FI] Admin Metrics';
@@ -566,40 +573,52 @@ class AppLocalizationsFi extends AppLocalizations {
   String get contentLibrary => '[FI] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[FI] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[FI] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[FI] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[FI] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[FI] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[FI] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[FI] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[FI] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[FI] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[FI] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[FI] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[FI] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[FI] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[FI] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[FI] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[FI] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[FI] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[FI] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential => '[FI] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential =>
+      '[FI] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[FI] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[FI] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[FI] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[FI] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -616,19 +635,24 @@ class AppLocalizationsFi extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[FI] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[FI] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[FI] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[FI] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode => '[FI] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode =>
+      '[FI] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[FI] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[FI] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode => '[FI] Please enter the verification code.';
+  String get authErrorMissingVerificationCode =>
+      '[FI] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[FI] Missing verification ID.';
@@ -640,43 +664,56 @@ class AppLocalizationsFi extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[FI] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[FI] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[FI] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[FI] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[FI] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[FI] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[FI] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired => '[FI] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired =>
+      '[FI] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound => '[FI] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound =>
+      '[FI] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession => '[FI] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession =>
+      '[FI] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession => '[FI] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession =>
+      '[FI] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse => '[FI] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse =>
+      '[FI] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded => '[FI] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded =>
+      '[FI] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[FI] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[FI] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification => '[FI] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification =>
+      '[FI] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists => '[FI] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists =>
+      '[FI] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[FI] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[FI] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[FI] The ID token is invalid.';
@@ -688,10 +725,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[FI] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[FI] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[FI] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[FI] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[FI] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[FI] Invalid custom claims provided.';
@@ -700,70 +739,87 @@ class AppLocalizationsFi extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[FI] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[FI] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[FI] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[FI] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[FI] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[FI] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain => '[FI] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain =>
+      '[FI] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[FI] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[FI] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[FI] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[FI] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[FI] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[FI] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength => '[FI] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength =>
+      '[FI] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[FI] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[FI] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[FI] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization => '[FI] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization =>
+      '[FI] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[FI] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[FI] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator => '[FI] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator =>
+      '[FI] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[FI] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[FI] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[FI] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[FI] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[FI] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[FI] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration => '[FI] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration =>
+      '[FI] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[FI] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[FI] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[FI] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded => '[FI] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded =>
+      '[FI] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[FI] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[FI] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[FI] Missing continue URL.';
@@ -778,7 +834,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get authErrorMissingUid => '[FI] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret => '[FI] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret =>
+      '[FI] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[FI] Firebase project not found.';
@@ -787,19 +844,23 @@ class AppLocalizationsFi extends AppLocalizations {
   String get authErrorReservedClaims => '[FI] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[FI] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[FI] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[FI] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[FI] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[FI] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri => '[FI] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri =>
+      '[FI] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[FI] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[FI] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -848,7 +909,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends => '[FI] Virtual session created! Inviting friends... (Finnish)';
+  String get virtualSessionCreatedInvitingFriends =>
+      '[FI] Virtual session created! Inviting friends... (Finnish)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -889,13 +951,15 @@ class AppLocalizationsFi extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[FI] Subscription unavailable (Finnish)';
+  String get subscriptionUnavailable =>
+      '[FI] Subscription unavailable (Finnish)';
 
   @override
   String get confirmBooking => '[FI] Confirm Booking (Finnish)';
 
   @override
-  String get failedToUpdatePermissionE => '[FI] Failed to update permission: \$e (Finnish)';
+  String get failedToUpdatePermissionE =>
+      '[FI] Failed to update permission: \$e (Finnish)';
 
   @override
   String get reject => '[FI] Reject (Finnish)';
@@ -923,7 +987,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get resolve => '[FI] Resolve (Finnish)';
 
   @override
-  String get errorLoadingSurveysError => '[FI] Error loading surveys: \$error (Finnish)';
+  String get errorLoadingSurveysError =>
+      '[FI] Error loading surveys: \$error (Finnish)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -931,7 +996,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[FI] Get help with your account (Finnish)';
+  String get getHelpWithYourAccount =>
+      '[FI] Get help with your account (Finnish)';
 
   @override
   String get pay => '[FI] Pay (Finnish)';
@@ -946,7 +1012,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[FI] Changes saved successfully! (Finnish)';
+  String get changesSavedSuccessfully =>
+      '[FI] Changes saved successfully! (Finnish)';
 
   @override
   String get createNewInvoice => '[FI] Create New Invoice (Finnish)';
@@ -966,7 +1033,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get profileSaved => '[FI] Profile saved! (Finnish)';
 
   @override
-  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -997,7 +1065,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly => '[FI] You will receive a confirmation email shortly. (Finnish)';
+  String get youWillReceiveAConfirmationEmailShortly =>
+      '[FI] You will receive a confirmation email shortly. (Finnish)';
 
   @override
   String get addQuestion => '[FI] Add Question (Finnish)';
@@ -1026,22 +1095,26 @@ class AppLocalizationsFi extends AppLocalizations {
   String get surveyManagement => '[FI] Survey Management (Finnish)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[FI] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[FI] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[FI] No rooms found. Add your first room! (Finnish)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[FI] No rooms found. Add your first room! (Finnish)';
 
   @override
   String get readOurPrivacyPolicy => '[FI] Read our privacy policy (Finnish)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[FI] Could not open privacy policy (Finnish)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[FI] Could not open privacy policy (Finnish)';
 
   @override
   String get refresh1 => '[FI] Refresh (Finnish)';
 
   @override
-  String get roomUpdatedSuccessfully => '[FI] Room updated successfully! (Finnish)';
+  String get roomUpdatedSuccessfully =>
+      '[FI] Room updated successfully! (Finnish)';
 
   @override
   String get contentDetail => '[FI] Content Detail (Finnish)';
@@ -1050,7 +1123,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get cancelSubscription => '[FI] Cancel Subscription (Finnish)';
 
   @override
-  String get successfullyRegisteredAsAmbassador => '[FI] Successfully registered as Ambassador! (Finnish)';
+  String get successfullyRegisteredAsAmbassador =>
+      '[FI] Successfully registered as Ambassador! (Finnish)';
 
   @override
   String get save1 => '[FI] Save (Finnish)';
@@ -1059,7 +1133,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get copy1 => '[FI] Copy (Finnish)';
 
   @override
-  String get failedToSendInvitationE => '[FI] Failed to send invitation: \$e (Finnish)';
+  String get failedToSendInvitationE =>
+      '[FI] Failed to send invitation: \$e (Finnish)';
 
   @override
   String get surveyScore => '[FI] Survey Score (Finnish)';
@@ -1076,16 +1151,20 @@ class AppLocalizationsFi extends AppLocalizations {
   String get responseDetail => '[FI] Response Detail (Finnish)';
 
   @override
-  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[FI] Failed to start Pro subscription: \$e (Finnish)';
+  String get failedToStartProSubscriptionE =>
+      '[FI] Failed to start Pro subscription: \$e (Finnish)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon => '[FI] Business Dashboard Entry Screen - Coming Soon (Finnish)';
+  String get businessDashboardEntryScreenComingSoon =>
+      '[FI] Business Dashboard Entry Screen - Coming Soon (Finnish)';
 
   @override
   String get contentFilter => '[FI] Content Filter (Finnish)';
@@ -1107,7 +1186,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon => '[FI] Business CRM Entry Screen - Coming Soon (Finnish)';
+  String get businessCrmEntryScreenComingSoon =>
+      '[FI] Business CRM Entry Screen - Coming Soon (Finnish)';
 
   @override
   String get adminDashboard => '[FI] Admin Dashboard';
@@ -1118,13 +1198,16 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[FI] Error loading dashboard: \$error (Finnish)';
+  String get errorLoadingDashboardError =>
+      '[FI] Error loading dashboard: \$error (Finnish)';
 
   @override
-  String get gameDeletedSuccessfully => '[FI] Game deleted successfully! (Finnish)';
+  String get gameDeletedSuccessfully =>
+      '[FI] Game deleted successfully! (Finnish)';
 
   @override
-  String get viewResponsesComingSoon => '[FI] View responses - Coming soon! (Finnish)';
+  String get viewResponsesComingSoon =>
+      '[FI] View responses - Coming soon! (Finnish)';
 
   @override
   String get deleteProvider => '[FI] Delete Provider';
@@ -1133,7 +1216,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get errorLoadingRewards => '[FI] Error loading rewards (Finnish)';
 
   @override
-  String get failedToDeleteAccountE => '[FI] Failed to delete account: \$e (Finnish)';
+  String get failedToDeleteAccountE =>
+      '[FI] Failed to delete account: \$e (Finnish)';
 
   @override
   String get invited1 => '[FI] Invited (Finnish)';
@@ -1148,7 +1232,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get noEvents => '[FI] No events (Finnish)';
 
   @override
-  String get gameCreatedSuccessfully => '[FI] Game created successfully! (Finnish)';
+  String get gameCreatedSuccessfully =>
+      '[FI] Game created successfully! (Finnish)';
 
   @override
   String get add1 => '[FI] Add (Finnish)';
@@ -1168,10 +1253,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get clients => '[FI] Clients (Finnish)';
 
   @override
-  String get noAmbassadorDataAvailable => '[FI] No ambassador data available (Finnish)';
+  String get noAmbassadorDataAvailable =>
+      '[FI] No ambassador data available (Finnish)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[FI] Background deleted successfully! (Finnish)';
+  String get backgroundDeletedSuccessfully =>
+      '[FI] Background deleted successfully! (Finnish)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1179,7 +1266,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[FI] No analytics data available yet. (Finnish)';
+  String get noAnalyticsDataAvailableYet =>
+      '[FI] No analytics data available yet. (Finnish)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1187,7 +1275,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon => '[FI] Business Phone Booking Entry Screen - Coming Soon (Finnish)';
+  String get businessPhoneBookingEntryScreenComingSoon =>
+      '[FI] Business Phone Booking Entry Screen - Coming Soon (Finnish)';
 
   @override
   String get verification => '[FI] Verification (Finnish)';
@@ -1234,7 +1323,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get businessProfile => '[FI] Business Profile (Finnish)';
 
   @override
-  String get businessBookingEntryScreenComingSoon => '[FI] Business Booking Entry Screen - Coming Soon (Finnish)';
+  String get businessBookingEntryScreenComingSoon =>
+      '[FI] Business Booking Entry Screen - Coming Soon (Finnish)';
 
   @override
   String get createNewSurvey => '[FI] Create New Survey (Finnish)';
@@ -1258,7 +1348,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get loginFailedE => '[FI] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[FI] Invitation sent successfully! (Finnish)';
+  String get invitationSentSuccessfully =>
+      '[FI] Invitation sent successfully! (Finnish)';
 
   @override
   String get registering => '[FI] Registering... (Finnish)';
@@ -1272,13 +1363,16 @@ class AppLocalizationsFi extends AppLocalizations {
   String get home1 => '[FI] Home (Finnish)';
 
   @override
-  String get errorSavingSettingsE => '[FI] Error saving settings: \$e (Finnish)';
+  String get errorSavingSettingsE =>
+      '[FI] Error saving settings: \$e (Finnish)';
 
   @override
-  String get appVersionAndInformation => '[FI] App version and information (Finnish)';
+  String get appVersionAndInformation =>
+      '[FI] App version and information (Finnish)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon => '[FI] Business Subscription Entry Screen - Coming Soon (Finnish)';
+  String get businessSubscriptionEntryScreenComingSoon =>
+      '[FI] Business Subscription Entry Screen - Coming Soon (Finnish)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1286,7 +1380,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully => '[FI] Your payment has been processed successfully. (Finnish)';
+  String get yourPaymentHasBeenProcessedSuccessfully =>
+      '[FI] Your payment has been processed successfully. (Finnish)';
 
   @override
   String get errorE => '[FI] Error: \$e (Finnish)';
@@ -1295,7 +1390,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get viewAll1 => '[FI] View All (Finnish)';
 
   @override
-  String get editSurveyComingSoon => '[FI] Edit survey - Coming soon! (Finnish)';
+  String get editSurveyComingSoon =>
+      '[FI] Edit survey - Coming soon! (Finnish)';
 
   @override
   String get enterOtp => '[FI] Enter OTP (Finnish)';
@@ -1304,7 +1400,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get payment => '[FI] Payment (Finnish)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests => '[FI] Automatically confirm new booking requests (Finnish)';
+  String get automaticallyConfirmNewBookingRequests =>
+      '[FI] Automatically confirm new booking requests (Finnish)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1317,7 +1414,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[FI] Please sign in to upload a background (Finnish)';
+  String get pleaseSignInToUploadABackground =>
+      '[FI] Please sign in to upload a background (Finnish)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1334,19 +1432,22 @@ class AppLocalizationsFi extends AppLocalizations {
   String get autoconfirmBookings => '[FI] Auto-Confirm Bookings (Finnish)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan => '[FI] Redirecting to Stripe checkout for Pro plan... (Finnish)';
+  String get redirectingToStripeCheckoutForProPlan =>
+      '[FI] Redirecting to Stripe checkout for Pro plan... (Finnish)';
 
   @override
   String get exportAsCsv => '[FI] Export as CSV (Finnish)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[FI] Delete functionality coming soon! (Finnish)';
+  String get deleteFunctionalityComingSoon =>
+      '[FI] Delete functionality coming soon! (Finnish)';
 
   @override
   String get editClient => '[FI] Edit Client (Finnish)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage => '[FI] Are you sure you want to delete this message? (Finnish)';
+  String get areYouSureYouWantToDeleteThisMessage =>
+      '[FI] Are you sure you want to delete this message? (Finnish)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1357,31 +1458,39 @@ class AppLocalizationsFi extends AppLocalizations {
   String get notAuthenticated => '[FI] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[FI] Privacy request sent to your parents! (Finnish)';
+  String get privacyRequestSentToYourParents =>
+      '[FI] Privacy request sent to your parents! (Finnish)';
 
   @override
-  String get clientDeletedSuccessfully => '[FI] Client deleted successfully! (Finnish)';
+  String get clientDeletedSuccessfully =>
+      '[FI] Client deleted successfully! (Finnish)';
 
   @override
-  String get failedToCancelSubscription => '[FI] Failed to cancel subscription (Finnish)';
+  String get failedToCancelSubscription =>
+      '[FI] Failed to cancel subscription (Finnish)';
 
   @override
   String get allLanguages => '[FI] All Languages (Finnish)';
 
   @override
-  String get slotDeletedSuccessfully => '[FI] Slot deleted successfully (Finnish)';
+  String get slotDeletedSuccessfully =>
+      '[FI] Slot deleted successfully (Finnish)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon => '[FI] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon =>
+      '[FI] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin => '[FI] Parents must approve before children can join (Finnish)';
+  String get parentsMustApproveBeforeChildrenCanJoin =>
+      '[FI] Parents must approve before children can join (Finnish)';
 
   @override
-  String get subscribeToPro1499mo => '[FI] Subscribe to Pro (€14.99/mo) (Finnish)';
+  String get subscribeToPro1499mo =>
+      '[FI] Subscribe to Pro (€14.99/mo) (Finnish)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon => '[FI] Business Availability Entry Screen - Coming Soon (Finnish)';
+  String get businessAvailabilityEntryScreenComingSoon =>
+      '[FI] Business Availability Entry Screen - Coming Soon (Finnish)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1395,7 +1504,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get submitBooking => '[FI] Submit Booking (Finnish)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment => '[FI] Are you sure you want to cancel this appointment? (Finnish)';
+  String get areYouSureYouWantToCancelThisAppointment =>
+      '[FI] Are you sure you want to cancel this appointment? (Finnish)';
 
   @override
   String get noUpcomingBookings => '[FI] No upcoming bookings (Finnish)';
@@ -1413,7 +1523,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get goToDashboard => '[FI] Go to Dashboard (Finnish)';
 
   @override
-  String get ambassadorQuotaDashboard => '[FI] Ambassador Quota Dashboard (Finnish)';
+  String get ambassadorQuotaDashboard =>
+      '[FI] Ambassador Quota Dashboard (Finnish)';
 
   @override
   String get adminSettings => '[FI] Admin Settings';
@@ -1451,7 +1562,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[FI] Client added successfully! (Finnish)';
+  String get clientAddedSuccessfully =>
+      '[FI] Client added successfully! (Finnish)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1469,7 +1581,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get bookAppointment => '[FI] Book Appointment (Finnish)';
 
   @override
-  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[FI] Delete (Finnish)';
@@ -1484,13 +1597,15 @@ class AppLocalizationsFi extends AppLocalizations {
   String get manageSubscription => '[FI] Manage Subscription (Finnish)';
 
   @override
-  String get requiresInstallFallback => '[FI] Requires Install Fallback (Finnish)';
+  String get requiresInstallFallback =>
+      '[FI] Requires Install Fallback (Finnish)';
 
   @override
   String get paymentConfirmation => '[FI] Payment Confirmation (Finnish)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[FI] Promo applied! Your next bill is free. (Finnish)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[FI] Promo applied! Your next bill is free. (Finnish)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1501,13 +1616,16 @@ class AppLocalizationsFi extends AppLocalizations {
   String get errorLoadingSlots => '[FI] Error loading slots (Finnish)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame => '[FI] Allow other users to find and join this game (Finnish)';
+  String get allowOtherUsersToFindAndJoinThisGame =>
+      '[FI] Allow other users to find and join this game (Finnish)';
 
   @override
-  String get businessOnboardingScreenComingSoon => '[FI] Business Onboarding Screen - Coming Soon (Finnish)';
+  String get businessOnboardingScreenComingSoon =>
+      '[FI] Business Onboarding Screen - Coming Soon (Finnish)';
 
   @override
-  String get activateBusinessProfile => '[FI] Activate Business Profile (Finnish)';
+  String get activateBusinessProfile =>
+      '[FI] Activate Business Profile (Finnish)';
 
   @override
   String get contentNotFound => '[FI] Content not found (Finnish)';
@@ -1549,7 +1667,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get shareLink => '[FI] Share Link (Finnish)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider => '[FI] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider =>
+      '[FI] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[FI] Delete Appointment (Finnish)';
@@ -1569,10 +1688,12 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[FI] Update your business information (Finnish)';
+  String get updateYourBusinessInformation =>
+      '[FI] Update your business information (Finnish)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider => '[FI] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider =>
+      '[FI] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[FI] Parent Dashboard (Finnish)';
@@ -1595,10 +1716,12 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb => '[FI] Studio booking is only available on web (Finnish)';
+  String get studioBookingIsOnlyAvailableOnWeb =>
+      '[FI] Studio booking is only available on web (Finnish)';
 
   @override
-  String get errorLoadingBranchesE => '[FI] Error loading branches: \$e (Finnish)';
+  String get errorLoadingBranchesE =>
+      '[FI] Error loading branches: \$e (Finnish)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1614,13 +1737,15 @@ class AppLocalizationsFi extends AppLocalizations {
   String get none => '[FI] None (Finnish)';
 
   @override
-  String get failedToUpdateConsentE => '[FI] Failed to update consent: \$e (Finnish)';
+  String get failedToUpdateConsentE =>
+      '[FI] Failed to update consent: \$e (Finnish)';
 
   @override
   String get welcome1 => '[FI] Welcome (Finnish)';
 
   @override
-  String get failedToCreateSessionE => '[FI] Failed to create session: \$e (Finnish)';
+  String get failedToCreateSessionE =>
+      '[FI] Failed to create session: \$e (Finnish)';
 
   @override
   String get inviteContact => '[FI] Invite Contact (Finnish)';
@@ -1629,7 +1754,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get surveyEditor => '[FI] Survey Editor (Finnish)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[FI] Failed to start Basic subscription: \$e (Finnish)';
+  String get failedToStartBasicSubscriptionE =>
+      '[FI] Failed to start Basic subscription: \$e (Finnish)';
 
   @override
   String get mySchedule => '[FI] My Schedule (Finnish)';
@@ -1649,10 +1775,12 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[FI] Settings saved successfully! (Finnish)';
+  String get settingsSavedSuccessfully =>
+      '[FI] Settings saved successfully! (Finnish)';
 
   @override
-  String get linkCopiedToClipboard => '[FI] Link copied to clipboard! (Finnish)';
+  String get linkCopiedToClipboard =>
+      '[FI] Link copied to clipboard! (Finnish)';
 
   @override
   String get accept1 => '[FI] Accept (Finnish)';
@@ -1669,7 +1797,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[FI] Room deleted successfully! (Finnish)';
+  String get roomDeletedSuccessfully =>
+      '[FI] Room deleted successfully! (Finnish)';
 
   @override
   String get businessCalendar => '[FI] Business Calendar (Finnish)';
@@ -1734,7 +1863,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get cancel1 => '[FI] Cancel (Finnish)';
 
   @override
-  String get subscriptionActivatedSuccessfully => '[FI] Subscription activated successfully! (Finnish)';
+  String get subscriptionActivatedSuccessfully =>
+      '[FI] Subscription activated successfully! (Finnish)';
 
   @override
   String activityLogaction(Object action) {
@@ -1745,7 +1875,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get broadcast => '[FI] Broadcast (Finnish)';
 
   @override
-  String get noEventsScheduledThisWeek => '[FI] No events scheduled this week (Finnish)';
+  String get noEventsScheduledThisWeek =>
+      '[FI] No events scheduled this week (Finnish)';
 
   @override
   String get googleCalendar => '[FI] Google Calendar (Finnish)';
@@ -1757,7 +1888,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get childDashboard => '[FI] Child Dashboard (Finnish)';
 
   @override
-  String get failedToUploadBackgroundE => '[FI] Failed to upload background: \$e (Finnish)';
+  String get failedToUploadBackgroundE =>
+      '[FI] Failed to upload background: \$e (Finnish)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1776,7 +1908,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get noAppointments => '[FI] No appointments (Finnish)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[FI] • Unlimited bookings per week (Finnish)';
+  String get unlimitedBookingsPerWeek =>
+      '[FI] • Unlimited bookings per week (Finnish)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1784,16 +1917,19 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[FI] Scheduled at: \$scheduledAt (Finnish)';
+  String get scheduledAtScheduledat =>
+      '[FI] Scheduled at: \$scheduledAt (Finnish)';
 
   @override
   String get selectStaff => '[FI] Select Staff (Finnish)';
 
   @override
-  String get subscriptionCancelledSuccessfully => '[FI] Subscription cancelled successfully (Finnish)';
+  String get subscriptionCancelledSuccessfully =>
+      '[FI] Subscription cancelled successfully (Finnish)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[FI] Cancel Appointment (Finnish)';
@@ -1807,7 +1943,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get businessSignup => '[FI] Business Signup (Finnish)';
 
   @override
-  String get businessCompletionScreenComingSoon => '[FI] Business Completion Screen - Coming Soon (Finnish)';
+  String get businessCompletionScreenComingSoon =>
+      '[FI] Business Completion Screen - Coming Soon (Finnish)';
 
   @override
   String get createGame1 => '[FI] Create Game (Finnish)';
@@ -1818,10 +1955,12 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[FI] Please enter a promo code (Finnish)';
+  String get pleaseEnterAPromoCode =>
+      '[FI] Please enter a promo code (Finnish)';
 
   @override
-  String get errorLoadingAvailabilityE => '[FI] Error loading availability: \$e (Finnish)';
+  String get errorLoadingAvailabilityE =>
+      '[FI] Error loading availability: \$e (Finnish)';
 
   @override
   String get parentalControls => '[FI] Parental Controls (Finnish)';
@@ -1830,13 +1969,15 @@ class AppLocalizationsFi extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[FI] Child linked successfully! (Finnish)';
+  String get childLinkedSuccessfully =>
+      '[FI] Child linked successfully! (Finnish)';
 
   @override
   String get create => '[FI] Create (Finnish)';
 
   @override
-  String get noExternalMeetingsFound => '[FI] No external meetings found. (Finnish)';
+  String get noExternalMeetingsFound =>
+      '[FI] No external meetings found. (Finnish)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1844,13 +1985,15 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[FI] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[FI] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[FI] Scheduler Screen (Finnish)';
 
   @override
-  String get clientUpdatedSuccessfully => '[FI] Client updated successfully! (Finnish)';
+  String get clientUpdatedSuccessfully =>
+      '[FI] Client updated successfully! (Finnish)';
 
   @override
   String get surveyResponses => '[FI] Survey Responses (Finnish)';
@@ -1876,10 +2019,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get errorLoadingEvents => '[FI] Error loading events (Finnish)';
 
   @override
-  String get errorLoadingOrganizations => '[FI] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[FI] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[FI] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[FI] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[FI] Success (Finnish)';
@@ -1898,10 +2043,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get readWrite => '[FI] Read & Write (Finnish)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan => '[FI] Redirecting to Stripe checkout for Basic plan... (Finnish)';
+  String get redirectingToStripeCheckoutForBasicPlan =>
+      '[FI] Redirecting to Stripe checkout for Basic plan... (Finnish)';
 
   @override
-  String get errorSavingConfigurationE => '[FI] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[FI] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[FI] Pick Date (Finnish)';
@@ -1937,10 +2084,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get businessLogin => '[FI] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[FI] Invoice created successfully! (Finnish)';
+  String get invoiceCreatedSuccessfully =>
+      '[FI] Invoice created successfully! (Finnish)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[FI] No time series data available (Finnish)';
+  String get noTimeSeriesDataAvailable =>
+      '[FI] No time series data available (Finnish)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1953,7 +2102,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[FI] Failed to send privacy request: \$e (Finnish)';
+  String get failedToSendPrivacyRequestE =>
+      '[FI] Failed to send privacy request: \$e (Finnish)';
 
   @override
   String get chooseYourPlan => '[FI] Choose Your Plan (Finnish)';
@@ -1968,13 +2118,15 @@ class AppLocalizationsFi extends AppLocalizations {
   String get eventCreated => '[FI] Event created (Finnish)';
 
   @override
-  String get subscribeToBasic499mo => '[FI] Subscribe to Basic (€4.99/mo) (Finnish)';
+  String get subscribeToBasic499mo =>
+      '[FI] Subscribe to Basic (€4.99/mo) (Finnish)';
 
   @override
   String get completion => '[FI] Completion (Finnish)';
 
   @override
-  String get supportTicketSubmitted => '[FI] Support ticket submitted (Finnish)';
+  String get supportTicketSubmitted =>
+      '[FI] Support ticket submitted (Finnish)';
 
   @override
   String get monetizationSettings => '[FI] Monetization Settings (Finnish)';
@@ -1989,10 +2141,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get deleteSurvey => '[FI] Delete Survey (Finnish)';
 
   @override
-  String get gameApprovedSuccessfully => '[FI] Game approved successfully! (Finnish)';
+  String get gameApprovedSuccessfully =>
+      '[FI] Game approved successfully! (Finnish)';
 
   @override
-  String get errorLoadingPermissionsError => '[FI] Error loading permissions: \$error (Finnish)';
+  String get errorLoadingPermissionsError =>
+      '[FI] Error loading permissions: \$error (Finnish)';
 
   @override
   String get referrals => '[FI] Referrals (Finnish)';
@@ -2034,7 +2188,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get organizations => '[FI] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[FI] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[FI] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[FI] Create New Game (Finnish)';
@@ -2043,10 +2198,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get next1 => '[FI] Next (Finnish)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[FI] Background uploaded successfully! (Finnish)';
+  String get backgroundUploadedSuccessfully =>
+      '[FI] Background uploaded successfully! (Finnish)';
 
   @override
-  String get noAppointmentRequestsFound => '[FI] No appointment requests found. (Finnish)';
+  String get noAppointmentRequestsFound =>
+      '[FI] No appointment requests found. (Finnish)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2073,7 +2230,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[FI] Failed to create game: \$e (Finnish)';
@@ -2082,7 +2240,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get noChartDataAvailable => '[FI] No chart data available (Finnish)';
 
   @override
-  String get phonebasedBookingSystem => '[FI] • Phone-based booking system (Finnish)';
+  String get phonebasedBookingSystem =>
+      '[FI] • Phone-based booking system (Finnish)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2091,7 +2250,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get invoices => '[FI] Invoices (Finnish)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2118,10 +2278,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get iDoNotConsent => '[FI] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient => '[FI] No clients found. Add your first client! (Finnish)';
+  String get noClientsFoundAddYourFirstClient =>
+      '[FI] No clients found. Add your first client! (Finnish)';
 
   @override
-  String get settingsDialogWillBeImplementedHere => '[FI] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere =>
+      '[FI] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[FI] Group: \$groupId';
@@ -2144,7 +2306,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[FI] • CRM dashboard with analytics (Finnish)';
+  String get crmDashboardWithAnalytics =>
+      '[FI] • CRM dashboard with analytics (Finnish)';
 
   @override
   String get contentLibrary1 => '[FI] Content Library (Finnish)';
@@ -2156,25 +2319,30 @@ class AppLocalizationsFi extends AppLocalizations {
   String get subscriptionManagement => '[FI] Subscription Management (Finnish)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere => '[FI] Monetization settings will be implemented here (Finnish)';
+  String get monetizationSettingsWillBeImplementedHere =>
+      '[FI] Monetization settings will be implemented here (Finnish)';
 
   @override
-  String get failedToApplyPromoCodeE => '[FI] Failed to apply promo code: \$e (Finnish)';
+  String get failedToApplyPromoCodeE =>
+      '[FI] Failed to apply promo code: \$e (Finnish)';
 
   @override
   String get editProvider => '[FI] Edit Provider';
 
   @override
-  String get localizationContribution => '[FI] Localization Contribution (Finnish)';
+  String get localizationContribution =>
+      '[FI] Localization Contribution (Finnish)';
 
   @override
   String get parentalConsent => '[FI] Parental Consent (Finnish)';
 
   @override
-  String get businessSignupScreenComingSoon => '[FI] Business Signup Screen - Coming Soon (Finnish)';
+  String get businessSignupScreenComingSoon =>
+      '[FI] Business Signup Screen - Coming Soon (Finnish)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment => '[FI] Are you sure you want to delete this appointment? (Finnish)';
+  String get areYouSureYouWantToDeleteThisAppointment =>
+      '[FI] Are you sure you want to delete this appointment? (Finnish)';
 
   @override
   String get syncAppointment => '[FI] Sync Appointment (Finnish)';
@@ -2186,13 +2354,15 @@ class AppLocalizationsFi extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[FI] Business Setup Screen - Coming Soon (Finnish)';
+  String get businessSetupScreenComingSoon =>
+      '[FI] Business Setup Screen - Coming Soon (Finnish)';
 
   @override
   String get edit1 => '[FI] Edit (Finnish)';
 
   @override
-  String get noEventsScheduledThisMonth => '[FI] No events scheduled this month (Finnish)';
+  String get noEventsScheduledThisMonth =>
+      '[FI] No events scheduled this month (Finnish)';
 
   @override
   String get businessDashboard => '[FI] Business Dashboard (Finnish)';
@@ -2206,7 +2376,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[FI] Manage Staff Availability (Finnish)';
+  String get manageStaffAvailability =>
+      '[FI] Manage Staff Availability (Finnish)';
 
   @override
   String get noMissingTranslations => '[FI] No missing translations (Finnish)';
@@ -2223,7 +2394,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get noUsers => '[FI] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[FI] Error loading referral code (Finnish)';
+  String get errorLoadingReferralCode =>
+      '[FI] Error loading referral code (Finnish)';
 
   @override
   String get allCountries => '[FI] All Countries (Finnish)';
@@ -2238,7 +2410,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get deleteMessage => '[FI] Delete Message (Finnish)';
 
   @override
-  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[FI] changeRole (TRANSLATE)';
@@ -2249,7 +2422,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[FI] Opening customer portal... (Finnish)';
+  String get openingCustomerPortal =>
+      '[FI] Opening customer portal... (Finnish)';
 
   @override
   String get signOut => '[FI] Sign Out (Finnish)';
@@ -2260,7 +2434,8 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[FI] Upgrade to Business (Finnish)';
@@ -2286,7 +2461,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[FI] View Responses (Finnish)';
@@ -2315,7 +2491,8 @@ class AppLocalizationsFi extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2328,4 +2505,33 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get loadingCheckout => 'جار تحميل الدفع...';
+
+  @override
+  String get ad_pre_title => 'Watch an ad to confirm your appointment';
+
+  @override
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+
+  @override
+  String get watch_ad_button => 'Watch Ad';
+
+  @override
+  String get upgrade_button => 'Upgrade to Premium (€4)';
+
+  @override
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
+
+  @override
+  String get confirm_appointment_button => 'Confirm Appointment';
+
+  @override
+  String get upgrade_prompt_title => 'One-time upgrade';
+
+  @override
+  String get upgrade_prompt_description => 'Pay €4 to remove all ads forever';
+
+  @override
+  String get purchase_now_button => 'Purchase Now';
 }

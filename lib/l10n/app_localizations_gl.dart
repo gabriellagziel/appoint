@@ -74,7 +74,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get search => '[GL] [GL] Search';
 
   @override
-  String get cancelInviteConfirmation => '[GL] [GL] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation =>
+      '[GL] [GL] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -91,7 +92,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get playtimeLiveScheduled => '[GL] [GL] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => '[GL] [GL] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation =>
+      '[GL] [GL] Are you sure you want to revoke access?';
 
   @override
   String get download => '[GL] [GL] Download';
@@ -125,7 +127,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get playtimeModeVirtual => '[GL] [GL] Virtual Play';
 
   @override
-  String get playtimeDescription => '[GL] [GL] Enjoy live or virtual games with your friends!';
+  String get playtimeDescription =>
+      '[GL] [GL] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => '[GL] [GL] Delete';
@@ -185,7 +188,8 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => '[GL] [GL] Meeting shared successfully';
+  String get meetingSharedSuccessfully =>
+      '[GL] [GL] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[GL] [GL] Welcome to Playtime';
@@ -203,7 +207,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get cut => '[GL] [GL] Cut';
 
   @override
-  String get inviteCancelledSuccessfully => '[GL] [GL] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully =>
+      '[GL] [GL] Invite cancelled successfully';
 
   @override
   String get retry => '[GL] [GL] Retry';
@@ -283,7 +288,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get scheduleForLater => '[GL] [GL] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully => '[GL] [GL] Access revoked successfully';
+  String get accessRevokedSuccessfully =>
+      '[GL] [GL] Access revoked successfully';
 
   @override
   String type(Object type) {
@@ -408,7 +414,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get dashboard => '[GL] [GL] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => '[GL] [GL] No permission for broadcast';
+  String get noPermissionForBroadcast =>
+      '[GL] [GL] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[GL] Playtime Games – Admin';
@@ -485,7 +492,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get playtimeEnterGameName => '[GL] [GL] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[GL] [GL] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[GL] [GL] Please login to access family features';
 
   @override
   String get myInvites => '[GL] [GL] My Invites';
@@ -545,7 +553,8 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[GL] [GL] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[GL] [GL] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[GL] Admin Metrics';
@@ -566,40 +575,52 @@ class AppLocalizationsGl extends AppLocalizations {
   String get contentLibrary => '[GL] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[GL] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[GL] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[GL] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[GL] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[GL] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[GL] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[GL] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[GL] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[GL] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[GL] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[GL] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[GL] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[GL] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[GL] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[GL] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[GL] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[GL] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[GL] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential => '[GL] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential =>
+      '[GL] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[GL] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[GL] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[GL] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[GL] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -616,19 +637,24 @@ class AppLocalizationsGl extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[GL] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[GL] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[GL] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[GL] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode => '[GL] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode =>
+      '[GL] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[GL] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[GL] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode => '[GL] Please enter the verification code.';
+  String get authErrorMissingVerificationCode =>
+      '[GL] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[GL] Missing verification ID.';
@@ -640,43 +666,56 @@ class AppLocalizationsGl extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[GL] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[GL] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[GL] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[GL] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[GL] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[GL] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[GL] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired => '[GL] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired =>
+      '[GL] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound => '[GL] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound =>
+      '[GL] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession => '[GL] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession =>
+      '[GL] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession => '[GL] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession =>
+      '[GL] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse => '[GL] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse =>
+      '[GL] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded => '[GL] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded =>
+      '[GL] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[GL] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[GL] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification => '[GL] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification =>
+      '[GL] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists => '[GL] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists =>
+      '[GL] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[GL] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[GL] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[GL] The ID token is invalid.';
@@ -688,10 +727,12 @@ class AppLocalizationsGl extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[GL] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[GL] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[GL] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[GL] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[GL] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[GL] Invalid custom claims provided.';
@@ -700,70 +741,87 @@ class AppLocalizationsGl extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[GL] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[GL] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[GL] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[GL] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[GL] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[GL] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain => '[GL] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain =>
+      '[GL] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[GL] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[GL] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[GL] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[GL] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[GL] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[GL] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength => '[GL] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength =>
+      '[GL] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[GL] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[GL] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[GL] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization => '[GL] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization =>
+      '[GL] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[GL] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[GL] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator => '[GL] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator =>
+      '[GL] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[GL] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[GL] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[GL] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[GL] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[GL] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[GL] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration => '[GL] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration =>
+      '[GL] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[GL] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[GL] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[GL] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded => '[GL] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded =>
+      '[GL] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[GL] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[GL] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[GL] Missing continue URL.';
@@ -778,7 +836,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get authErrorMissingUid => '[GL] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret => '[GL] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret =>
+      '[GL] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[GL] Firebase project not found.';
@@ -787,19 +846,23 @@ class AppLocalizationsGl extends AppLocalizations {
   String get authErrorReservedClaims => '[GL] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[GL] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[GL] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[GL] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[GL] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[GL] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri => '[GL] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri =>
+      '[GL] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[GL] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[GL] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -848,7 +911,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends => '[GL] Virtual session created! Inviting friends... (Galician)';
+  String get virtualSessionCreatedInvitingFriends =>
+      '[GL] Virtual session created! Inviting friends... (Galician)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -889,13 +953,15 @@ class AppLocalizationsGl extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[GL] Subscription unavailable (Galician)';
+  String get subscriptionUnavailable =>
+      '[GL] Subscription unavailable (Galician)';
 
   @override
   String get confirmBooking => '[GL] Confirm Booking (Galician)';
 
   @override
-  String get failedToUpdatePermissionE => '[GL] Failed to update permission: \$e (Galician)';
+  String get failedToUpdatePermissionE =>
+      '[GL] Failed to update permission: \$e (Galician)';
 
   @override
   String get reject => '[GL] Reject (Galician)';
@@ -917,13 +983,15 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get noContentAvailableYet => '[GL] No content available yet (Galician)';
+  String get noContentAvailableYet =>
+      '[GL] No content available yet (Galician)';
 
   @override
   String get resolve => '[GL] Resolve (Galician)';
 
   @override
-  String get errorLoadingSurveysError => '[GL] Error loading surveys: \$error (Galician)';
+  String get errorLoadingSurveysError =>
+      '[GL] Error loading surveys: \$error (Galician)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -931,7 +999,8 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[GL] Get help with your account (Galician)';
+  String get getHelpWithYourAccount =>
+      '[GL] Get help with your account (Galician)';
 
   @override
   String get pay => '[GL] Pay (Galician)';
@@ -946,7 +1015,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[GL] Changes saved successfully! (Galician)';
+  String get changesSavedSuccessfully =>
+      '[GL] Changes saved successfully! (Galician)';
 
   @override
   String get createNewInvoice => '[GL] Create New Invoice (Galician)';
@@ -966,7 +1036,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get profileSaved => '[GL] Profile saved! (Galician)';
 
   @override
-  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -997,7 +1068,8 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly => '[GL] You will receive a confirmation email shortly. (Galician)';
+  String get youWillReceiveAConfirmationEmailShortly =>
+      '[GL] You will receive a confirmation email shortly. (Galician)';
 
   @override
   String get addQuestion => '[GL] Add Question (Galician)';
@@ -1026,22 +1098,26 @@ class AppLocalizationsGl extends AppLocalizations {
   String get surveyManagement => '[GL] Survey Management (Galician)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[GL] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[GL] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[GL] No rooms found. Add your first room! (Galician)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[GL] No rooms found. Add your first room! (Galician)';
 
   @override
   String get readOurPrivacyPolicy => '[GL] Read our privacy policy (Galician)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[GL] Could not open privacy policy (Galician)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[GL] Could not open privacy policy (Galician)';
 
   @override
   String get refresh1 => '[GL] Refresh (Galician)';
 
   @override
-  String get roomUpdatedSuccessfully => '[GL] Room updated successfully! (Galician)';
+  String get roomUpdatedSuccessfully =>
+      '[GL] Room updated successfully! (Galician)';
 
   @override
   String get contentDetail => '[GL] Content Detail (Galician)';
@@ -1050,7 +1126,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get cancelSubscription => '[GL] Cancel Subscription (Galician)';
 
   @override
-  String get successfullyRegisteredAsAmbassador => '[GL] Successfully registered as Ambassador! (Galician)';
+  String get successfullyRegisteredAsAmbassador =>
+      '[GL] Successfully registered as Ambassador! (Galician)';
 
   @override
   String get save1 => '[GL] Save (Galician)';
@@ -1059,7 +1136,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get copy1 => '[GL] Copy (Galician)';
 
   @override
-  String get failedToSendInvitationE => '[GL] Failed to send invitation: \$e (Galician)';
+  String get failedToSendInvitationE =>
+      '[GL] Failed to send invitation: \$e (Galician)';
 
   @override
   String get surveyScore => '[GL] Survey Score (Galician)';
@@ -1076,16 +1154,20 @@ class AppLocalizationsGl extends AppLocalizations {
   String get responseDetail => '[GL] Response Detail (Galician)';
 
   @override
-  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[GL] Failed to start Pro subscription: \$e (Galician)';
+  String get failedToStartProSubscriptionE =>
+      '[GL] Failed to start Pro subscription: \$e (Galician)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon => '[GL] Business Dashboard Entry Screen - Coming Soon (Galician)';
+  String get businessDashboardEntryScreenComingSoon =>
+      '[GL] Business Dashboard Entry Screen - Coming Soon (Galician)';
 
   @override
   String get contentFilter => '[GL] Content Filter (Galician)';
@@ -1107,7 +1189,8 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon => '[GL] Business CRM Entry Screen - Coming Soon (Galician)';
+  String get businessCrmEntryScreenComingSoon =>
+      '[GL] Business CRM Entry Screen - Coming Soon (Galician)';
 
   @override
   String get adminDashboard => '[GL] Admin Dashboard';
@@ -1118,13 +1201,16 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[GL] Error loading dashboard: \$error (Galician)';
+  String get errorLoadingDashboardError =>
+      '[GL] Error loading dashboard: \$error (Galician)';
 
   @override
-  String get gameDeletedSuccessfully => '[GL] Game deleted successfully! (Galician)';
+  String get gameDeletedSuccessfully =>
+      '[GL] Game deleted successfully! (Galician)';
 
   @override
-  String get viewResponsesComingSoon => '[GL] View responses - Coming soon! (Galician)';
+  String get viewResponsesComingSoon =>
+      '[GL] View responses - Coming soon! (Galician)';
 
   @override
   String get deleteProvider => '[GL] Delete Provider';
@@ -1133,7 +1219,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get errorLoadingRewards => '[GL] Error loading rewards (Galician)';
 
   @override
-  String get failedToDeleteAccountE => '[GL] Failed to delete account: \$e (Galician)';
+  String get failedToDeleteAccountE =>
+      '[GL] Failed to delete account: \$e (Galician)';
 
   @override
   String get invited1 => '[GL] Invited (Galician)';
@@ -1148,7 +1235,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get noEvents => '[GL] No events (Galician)';
 
   @override
-  String get gameCreatedSuccessfully => '[GL] Game created successfully! (Galician)';
+  String get gameCreatedSuccessfully =>
+      '[GL] Game created successfully! (Galician)';
 
   @override
   String get add1 => '[GL] Add (Galician)';
@@ -1168,10 +1256,12 @@ class AppLocalizationsGl extends AppLocalizations {
   String get clients => '[GL] Clients (Galician)';
 
   @override
-  String get noAmbassadorDataAvailable => '[GL] No ambassador data available (Galician)';
+  String get noAmbassadorDataAvailable =>
+      '[GL] No ambassador data available (Galician)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[GL] Background deleted successfully! (Galician)';
+  String get backgroundDeletedSuccessfully =>
+      '[GL] Background deleted successfully! (Galician)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1179,7 +1269,8 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[GL] No analytics data available yet. (Galician)';
+  String get noAnalyticsDataAvailableYet =>
+      '[GL] No analytics data available yet. (Galician)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1187,7 +1278,8 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon => '[GL] Business Phone Booking Entry Screen - Coming Soon (Galician)';
+  String get businessPhoneBookingEntryScreenComingSoon =>
+      '[GL] Business Phone Booking Entry Screen - Coming Soon (Galician)';
 
   @override
   String get verification => '[GL] Verification (Galician)';
@@ -1234,7 +1326,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get businessProfile => '[GL] Business Profile (Galician)';
 
   @override
-  String get businessBookingEntryScreenComingSoon => '[GL] Business Booking Entry Screen - Coming Soon (Galician)';
+  String get businessBookingEntryScreenComingSoon =>
+      '[GL] Business Booking Entry Screen - Coming Soon (Galician)';
 
   @override
   String get createNewSurvey => '[GL] Create New Survey (Galician)';
@@ -1258,7 +1351,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get loginFailedE => '[GL] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[GL] Invitation sent successfully! (Galician)';
+  String get invitationSentSuccessfully =>
+      '[GL] Invitation sent successfully! (Galician)';
 
   @override
   String get registering => '[GL] Registering... (Galician)';
@@ -1272,13 +1366,16 @@ class AppLocalizationsGl extends AppLocalizations {
   String get home1 => '[GL] Home (Galician)';
 
   @override
-  String get errorSavingSettingsE => '[GL] Error saving settings: \$e (Galician)';
+  String get errorSavingSettingsE =>
+      '[GL] Error saving settings: \$e (Galician)';
 
   @override
-  String get appVersionAndInformation => '[GL] App version and information (Galician)';
+  String get appVersionAndInformation =>
+      '[GL] App version and information (Galician)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon => '[GL] Business Subscription Entry Screen - Coming Soon (Galician)';
+  String get businessSubscriptionEntryScreenComingSoon =>
+      '[GL] Business Subscription Entry Screen - Coming Soon (Galician)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1286,7 +1383,8 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully => '[GL] Your payment has been processed successfully. (Galician)';
+  String get yourPaymentHasBeenProcessedSuccessfully =>
+      '[GL] Your payment has been processed successfully. (Galician)';
 
   @override
   String get errorE => '[GL] Error: \$e (Galician)';
@@ -1295,7 +1393,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get viewAll1 => '[GL] View All (Galician)';
 
   @override
-  String get editSurveyComingSoon => '[GL] Edit survey - Coming soon! (Galician)';
+  String get editSurveyComingSoon =>
+      '[GL] Edit survey - Coming soon! (Galician)';
 
   @override
   String get enterOtp => '[GL] Enter OTP (Galician)';
@@ -1304,7 +1403,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get payment => '[GL] Payment (Galician)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests => '[GL] Automatically confirm new booking requests (Galician)';
+  String get automaticallyConfirmNewBookingRequests =>
+      '[GL] Automatically confirm new booking requests (Galician)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1317,7 +1417,8 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[GL] Please sign in to upload a background (Galician)';
+  String get pleaseSignInToUploadABackground =>
+      '[GL] Please sign in to upload a background (Galician)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1334,19 +1435,22 @@ class AppLocalizationsGl extends AppLocalizations {
   String get autoconfirmBookings => '[GL] Auto-Confirm Bookings (Galician)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan => '[GL] Redirecting to Stripe checkout for Pro plan... (Galician)';
+  String get redirectingToStripeCheckoutForProPlan =>
+      '[GL] Redirecting to Stripe checkout for Pro plan... (Galician)';
 
   @override
   String get exportAsCsv => '[GL] Export as CSV (Galician)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[GL] Delete functionality coming soon! (Galician)';
+  String get deleteFunctionalityComingSoon =>
+      '[GL] Delete functionality coming soon! (Galician)';
 
   @override
   String get editClient => '[GL] Edit Client (Galician)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage => '[GL] Are you sure you want to delete this message? (Galician)';
+  String get areYouSureYouWantToDeleteThisMessage =>
+      '[GL] Are you sure you want to delete this message? (Galician)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1357,31 +1461,39 @@ class AppLocalizationsGl extends AppLocalizations {
   String get notAuthenticated => '[GL] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[GL] Privacy request sent to your parents! (Galician)';
+  String get privacyRequestSentToYourParents =>
+      '[GL] Privacy request sent to your parents! (Galician)';
 
   @override
-  String get clientDeletedSuccessfully => '[GL] Client deleted successfully! (Galician)';
+  String get clientDeletedSuccessfully =>
+      '[GL] Client deleted successfully! (Galician)';
 
   @override
-  String get failedToCancelSubscription => '[GL] Failed to cancel subscription (Galician)';
+  String get failedToCancelSubscription =>
+      '[GL] Failed to cancel subscription (Galician)';
 
   @override
   String get allLanguages => '[GL] All Languages (Galician)';
 
   @override
-  String get slotDeletedSuccessfully => '[GL] Slot deleted successfully (Galician)';
+  String get slotDeletedSuccessfully =>
+      '[GL] Slot deleted successfully (Galician)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon => '[GL] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon =>
+      '[GL] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin => '[GL] Parents must approve before children can join (Galician)';
+  String get parentsMustApproveBeforeChildrenCanJoin =>
+      '[GL] Parents must approve before children can join (Galician)';
 
   @override
-  String get subscribeToPro1499mo => '[GL] Subscribe to Pro (€14.99/mo) (Galician)';
+  String get subscribeToPro1499mo =>
+      '[GL] Subscribe to Pro (€14.99/mo) (Galician)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon => '[GL] Business Availability Entry Screen - Coming Soon (Galician)';
+  String get businessAvailabilityEntryScreenComingSoon =>
+      '[GL] Business Availability Entry Screen - Coming Soon (Galician)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1395,7 +1507,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get submitBooking => '[GL] Submit Booking (Galician)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment => '[GL] Are you sure you want to cancel this appointment? (Galician)';
+  String get areYouSureYouWantToCancelThisAppointment =>
+      '[GL] Are you sure you want to cancel this appointment? (Galician)';
 
   @override
   String get noUpcomingBookings => '[GL] No upcoming bookings (Galician)';
@@ -1413,7 +1526,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get goToDashboard => '[GL] Go to Dashboard (Galician)';
 
   @override
-  String get ambassadorQuotaDashboard => '[GL] Ambassador Quota Dashboard (Galician)';
+  String get ambassadorQuotaDashboard =>
+      '[GL] Ambassador Quota Dashboard (Galician)';
 
   @override
   String get adminSettings => '[GL] Admin Settings';
@@ -1451,7 +1565,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[GL] Client added successfully! (Galician)';
+  String get clientAddedSuccessfully =>
+      '[GL] Client added successfully! (Galician)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1469,7 +1584,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get bookAppointment => '[GL] Book Appointment (Galician)';
 
   @override
-  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[GL] Delete (Galician)';
@@ -1484,13 +1600,15 @@ class AppLocalizationsGl extends AppLocalizations {
   String get manageSubscription => '[GL] Manage Subscription (Galician)';
 
   @override
-  String get requiresInstallFallback => '[GL] Requires Install Fallback (Galician)';
+  String get requiresInstallFallback =>
+      '[GL] Requires Install Fallback (Galician)';
 
   @override
   String get paymentConfirmation => '[GL] Payment Confirmation (Galician)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[GL] Promo applied! Your next bill is free. (Galician)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[GL] Promo applied! Your next bill is free. (Galician)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1501,13 +1619,16 @@ class AppLocalizationsGl extends AppLocalizations {
   String get errorLoadingSlots => '[GL] Error loading slots (Galician)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame => '[GL] Allow other users to find and join this game (Galician)';
+  String get allowOtherUsersToFindAndJoinThisGame =>
+      '[GL] Allow other users to find and join this game (Galician)';
 
   @override
-  String get businessOnboardingScreenComingSoon => '[GL] Business Onboarding Screen - Coming Soon (Galician)';
+  String get businessOnboardingScreenComingSoon =>
+      '[GL] Business Onboarding Screen - Coming Soon (Galician)';
 
   @override
-  String get activateBusinessProfile => '[GL] Activate Business Profile (Galician)';
+  String get activateBusinessProfile =>
+      '[GL] Activate Business Profile (Galician)';
 
   @override
   String get contentNotFound => '[GL] Content not found (Galician)';
@@ -1549,7 +1670,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get shareLink => '[GL] Share Link (Galician)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider => '[GL] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider =>
+      '[GL] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[GL] Delete Appointment (Galician)';
@@ -1569,10 +1691,12 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[GL] Update your business information (Galician)';
+  String get updateYourBusinessInformation =>
+      '[GL] Update your business information (Galician)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider => '[GL] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider =>
+      '[GL] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[GL] Parent Dashboard (Galician)';
@@ -1595,10 +1719,12 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb => '[GL] Studio booking is only available on web (Galician)';
+  String get studioBookingIsOnlyAvailableOnWeb =>
+      '[GL] Studio booking is only available on web (Galician)';
 
   @override
-  String get errorLoadingBranchesE => '[GL] Error loading branches: \$e (Galician)';
+  String get errorLoadingBranchesE =>
+      '[GL] Error loading branches: \$e (Galician)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1614,13 +1740,15 @@ class AppLocalizationsGl extends AppLocalizations {
   String get none => '[GL] None (Galician)';
 
   @override
-  String get failedToUpdateConsentE => '[GL] Failed to update consent: \$e (Galician)';
+  String get failedToUpdateConsentE =>
+      '[GL] Failed to update consent: \$e (Galician)';
 
   @override
   String get welcome1 => '[GL] Welcome (Galician)';
 
   @override
-  String get failedToCreateSessionE => '[GL] Failed to create session: \$e (Galician)';
+  String get failedToCreateSessionE =>
+      '[GL] Failed to create session: \$e (Galician)';
 
   @override
   String get inviteContact => '[GL] Invite Contact (Galician)';
@@ -1629,7 +1757,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get surveyEditor => '[GL] Survey Editor (Galician)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[GL] Failed to start Basic subscription: \$e (Galician)';
+  String get failedToStartBasicSubscriptionE =>
+      '[GL] Failed to start Basic subscription: \$e (Galician)';
 
   @override
   String get mySchedule => '[GL] My Schedule (Galician)';
@@ -1649,10 +1778,12 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[GL] Settings saved successfully! (Galician)';
+  String get settingsSavedSuccessfully =>
+      '[GL] Settings saved successfully! (Galician)';
 
   @override
-  String get linkCopiedToClipboard => '[GL] Link copied to clipboard! (Galician)';
+  String get linkCopiedToClipboard =>
+      '[GL] Link copied to clipboard! (Galician)';
 
   @override
   String get accept1 => '[GL] Accept (Galician)';
@@ -1669,7 +1800,8 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[GL] Room deleted successfully! (Galician)';
+  String get roomDeletedSuccessfully =>
+      '[GL] Room deleted successfully! (Galician)';
 
   @override
   String get businessCalendar => '[GL] Business Calendar (Galician)';
@@ -1734,7 +1866,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get cancel1 => '[GL] Cancel (Galician)';
 
   @override
-  String get subscriptionActivatedSuccessfully => '[GL] Subscription activated successfully! (Galician)';
+  String get subscriptionActivatedSuccessfully =>
+      '[GL] Subscription activated successfully! (Galician)';
 
   @override
   String activityLogaction(Object action) {
@@ -1745,7 +1878,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get broadcast => '[GL] Broadcast (Galician)';
 
   @override
-  String get noEventsScheduledThisWeek => '[GL] No events scheduled this week (Galician)';
+  String get noEventsScheduledThisWeek =>
+      '[GL] No events scheduled this week (Galician)';
 
   @override
   String get googleCalendar => '[GL] Google Calendar (Galician)';
@@ -1757,7 +1891,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get childDashboard => '[GL] Child Dashboard (Galician)';
 
   @override
-  String get failedToUploadBackgroundE => '[GL] Failed to upload background: \$e (Galician)';
+  String get failedToUploadBackgroundE =>
+      '[GL] Failed to upload background: \$e (Galician)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1776,7 +1911,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get noAppointments => '[GL] No appointments (Galician)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[GL] • Unlimited bookings per week (Galician)';
+  String get unlimitedBookingsPerWeek =>
+      '[GL] • Unlimited bookings per week (Galician)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1784,16 +1920,19 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[GL] Scheduled at: \$scheduledAt (Galician)';
+  String get scheduledAtScheduledat =>
+      '[GL] Scheduled at: \$scheduledAt (Galician)';
 
   @override
   String get selectStaff => '[GL] Select Staff (Galician)';
 
   @override
-  String get subscriptionCancelledSuccessfully => '[GL] Subscription cancelled successfully (Galician)';
+  String get subscriptionCancelledSuccessfully =>
+      '[GL] Subscription cancelled successfully (Galician)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[GL] Cancel Appointment (Galician)';
@@ -1807,7 +1946,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get businessSignup => '[GL] Business Signup (Galician)';
 
   @override
-  String get businessCompletionScreenComingSoon => '[GL] Business Completion Screen - Coming Soon (Galician)';
+  String get businessCompletionScreenComingSoon =>
+      '[GL] Business Completion Screen - Coming Soon (Galician)';
 
   @override
   String get createGame1 => '[GL] Create Game (Galician)';
@@ -1818,10 +1958,12 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[GL] Please enter a promo code (Galician)';
+  String get pleaseEnterAPromoCode =>
+      '[GL] Please enter a promo code (Galician)';
 
   @override
-  String get errorLoadingAvailabilityE => '[GL] Error loading availability: \$e (Galician)';
+  String get errorLoadingAvailabilityE =>
+      '[GL] Error loading availability: \$e (Galician)';
 
   @override
   String get parentalControls => '[GL] Parental Controls (Galician)';
@@ -1830,13 +1972,15 @@ class AppLocalizationsGl extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[GL] Child linked successfully! (Galician)';
+  String get childLinkedSuccessfully =>
+      '[GL] Child linked successfully! (Galician)';
 
   @override
   String get create => '[GL] Create (Galician)';
 
   @override
-  String get noExternalMeetingsFound => '[GL] No external meetings found. (Galician)';
+  String get noExternalMeetingsFound =>
+      '[GL] No external meetings found. (Galician)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1844,13 +1988,15 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[GL] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[GL] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[GL] Scheduler Screen (Galician)';
 
   @override
-  String get clientUpdatedSuccessfully => '[GL] Client updated successfully! (Galician)';
+  String get clientUpdatedSuccessfully =>
+      '[GL] Client updated successfully! (Galician)';
 
   @override
   String get surveyResponses => '[GL] Survey Responses (Galician)';
@@ -1876,10 +2022,12 @@ class AppLocalizationsGl extends AppLocalizations {
   String get errorLoadingEvents => '[GL] Error loading events (Galician)';
 
   @override
-  String get errorLoadingOrganizations => '[GL] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[GL] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[GL] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[GL] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[GL] Success (Galician)';
@@ -1898,10 +2046,12 @@ class AppLocalizationsGl extends AppLocalizations {
   String get readWrite => '[GL] Read & Write (Galician)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan => '[GL] Redirecting to Stripe checkout for Basic plan... (Galician)';
+  String get redirectingToStripeCheckoutForBasicPlan =>
+      '[GL] Redirecting to Stripe checkout for Basic plan... (Galician)';
 
   @override
-  String get errorSavingConfigurationE => '[GL] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[GL] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[GL] Pick Date (Galician)';
@@ -1937,10 +2087,12 @@ class AppLocalizationsGl extends AppLocalizations {
   String get businessLogin => '[GL] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[GL] Invoice created successfully! (Galician)';
+  String get invoiceCreatedSuccessfully =>
+      '[GL] Invoice created successfully! (Galician)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[GL] No time series data available (Galician)';
+  String get noTimeSeriesDataAvailable =>
+      '[GL] No time series data available (Galician)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1953,7 +2105,8 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[GL] Failed to send privacy request: \$e (Galician)';
+  String get failedToSendPrivacyRequestE =>
+      '[GL] Failed to send privacy request: \$e (Galician)';
 
   @override
   String get chooseYourPlan => '[GL] Choose Your Plan (Galician)';
@@ -1968,13 +2121,15 @@ class AppLocalizationsGl extends AppLocalizations {
   String get eventCreated => '[GL] Event created (Galician)';
 
   @override
-  String get subscribeToBasic499mo => '[GL] Subscribe to Basic (€4.99/mo) (Galician)';
+  String get subscribeToBasic499mo =>
+      '[GL] Subscribe to Basic (€4.99/mo) (Galician)';
 
   @override
   String get completion => '[GL] Completion (Galician)';
 
   @override
-  String get supportTicketSubmitted => '[GL] Support ticket submitted (Galician)';
+  String get supportTicketSubmitted =>
+      '[GL] Support ticket submitted (Galician)';
 
   @override
   String get monetizationSettings => '[GL] Monetization Settings (Galician)';
@@ -1989,10 +2144,12 @@ class AppLocalizationsGl extends AppLocalizations {
   String get deleteSurvey => '[GL] Delete Survey (Galician)';
 
   @override
-  String get gameApprovedSuccessfully => '[GL] Game approved successfully! (Galician)';
+  String get gameApprovedSuccessfully =>
+      '[GL] Game approved successfully! (Galician)';
 
   @override
-  String get errorLoadingPermissionsError => '[GL] Error loading permissions: \$error (Galician)';
+  String get errorLoadingPermissionsError =>
+      '[GL] Error loading permissions: \$error (Galician)';
 
   @override
   String get referrals => '[GL] Referrals (Galician)';
@@ -2034,7 +2191,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get organizations => '[GL] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[GL] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[GL] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[GL] Create New Game (Galician)';
@@ -2043,10 +2201,12 @@ class AppLocalizationsGl extends AppLocalizations {
   String get next1 => '[GL] Next (Galician)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[GL] Background uploaded successfully! (Galician)';
+  String get backgroundUploadedSuccessfully =>
+      '[GL] Background uploaded successfully! (Galician)';
 
   @override
-  String get noAppointmentRequestsFound => '[GL] No appointment requests found. (Galician)';
+  String get noAppointmentRequestsFound =>
+      '[GL] No appointment requests found. (Galician)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2073,16 +2233,19 @@ class AppLocalizationsGl extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => '[GL] Failed to create game: \$e (Galician)';
+  String get failedToCreateGameE =>
+      '[GL] Failed to create game: \$e (Galician)';
 
   @override
   String get noChartDataAvailable => '[GL] No chart data available (Galician)';
 
   @override
-  String get phonebasedBookingSystem => '[GL] • Phone-based booking system (Galician)';
+  String get phonebasedBookingSystem =>
+      '[GL] • Phone-based booking system (Galician)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2091,7 +2254,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get invoices => '[GL] Invoices (Galician)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2118,10 +2282,12 @@ class AppLocalizationsGl extends AppLocalizations {
   String get iDoNotConsent => '[GL] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient => '[GL] No clients found. Add your first client! (Galician)';
+  String get noClientsFoundAddYourFirstClient =>
+      '[GL] No clients found. Add your first client! (Galician)';
 
   @override
-  String get settingsDialogWillBeImplementedHere => '[GL] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere =>
+      '[GL] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[GL] Group: \$groupId';
@@ -2133,7 +2299,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get forward => '[GL] Forward (Galician)';
 
   @override
-  String get roomAddedSuccessfully => '[GL] Room added successfully! (Galician)';
+  String get roomAddedSuccessfully =>
+      '[GL] Room added successfully! (Galician)';
 
   @override
   String get option => '[GL] • \$option (Galician)';
@@ -2144,7 +2311,8 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[GL] • CRM dashboard with analytics (Galician)';
+  String get crmDashboardWithAnalytics =>
+      '[GL] • CRM dashboard with analytics (Galician)';
 
   @override
   String get contentLibrary1 => '[GL] Content Library (Galician)';
@@ -2153,28 +2321,34 @@ class AppLocalizationsGl extends AppLocalizations {
   String get reply => '[GL] Reply (Galician)';
 
   @override
-  String get subscriptionManagement => '[GL] Subscription Management (Galician)';
+  String get subscriptionManagement =>
+      '[GL] Subscription Management (Galician)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere => '[GL] Monetization settings will be implemented here (Galician)';
+  String get monetizationSettingsWillBeImplementedHere =>
+      '[GL] Monetization settings will be implemented here (Galician)';
 
   @override
-  String get failedToApplyPromoCodeE => '[GL] Failed to apply promo code: \$e (Galician)';
+  String get failedToApplyPromoCodeE =>
+      '[GL] Failed to apply promo code: \$e (Galician)';
 
   @override
   String get editProvider => '[GL] Edit Provider';
 
   @override
-  String get localizationContribution => '[GL] Localization Contribution (Galician)';
+  String get localizationContribution =>
+      '[GL] Localization Contribution (Galician)';
 
   @override
   String get parentalConsent => '[GL] Parental Consent (Galician)';
 
   @override
-  String get businessSignupScreenComingSoon => '[GL] Business Signup Screen - Coming Soon (Galician)';
+  String get businessSignupScreenComingSoon =>
+      '[GL] Business Signup Screen - Coming Soon (Galician)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment => '[GL] Are you sure you want to delete this appointment? (Galician)';
+  String get areYouSureYouWantToDeleteThisAppointment =>
+      '[GL] Are you sure you want to delete this appointment? (Galician)';
 
   @override
   String get syncAppointment => '[GL] Sync Appointment (Galician)';
@@ -2186,13 +2360,15 @@ class AppLocalizationsGl extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[GL] Business Setup Screen - Coming Soon (Galician)';
+  String get businessSetupScreenComingSoon =>
+      '[GL] Business Setup Screen - Coming Soon (Galician)';
 
   @override
   String get edit1 => '[GL] Edit (Galician)';
 
   @override
-  String get noEventsScheduledThisMonth => '[GL] No events scheduled this month (Galician)';
+  String get noEventsScheduledThisMonth =>
+      '[GL] No events scheduled this month (Galician)';
 
   @override
   String get businessDashboard => '[GL] Business Dashboard (Galician)';
@@ -2206,7 +2382,8 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[GL] Manage Staff Availability (Galician)';
+  String get manageStaffAvailability =>
+      '[GL] Manage Staff Availability (Galician)';
 
   @override
   String get noMissingTranslations => '[GL] No missing translations (Galician)';
@@ -2223,7 +2400,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get noUsers => '[GL] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[GL] Error loading referral code (Galician)';
+  String get errorLoadingReferralCode =>
+      '[GL] Error loading referral code (Galician)';
 
   @override
   String get allCountries => '[GL] All Countries (Galician)';
@@ -2238,7 +2416,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get deleteMessage => '[GL] Delete Message (Galician)';
 
   @override
-  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[GL] changeRole (TRANSLATE)';
@@ -2249,7 +2428,8 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[GL] Opening customer portal... (Galician)';
+  String get openingCustomerPortal =>
+      '[GL] Opening customer portal... (Galician)';
 
   @override
   String get signOut => '[GL] Sign Out (Galician)';
@@ -2260,7 +2440,8 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[GL] Upgrade to Business (Galician)';
@@ -2286,7 +2467,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[GL] View Responses (Galician)';
@@ -2315,7 +2497,8 @@ class AppLocalizationsGl extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2328,4 +2511,33 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get loadingCheckout => 'جار تحميل الدفع...';
+
+  @override
+  String get ad_pre_title => 'Watch an ad to confirm your appointment';
+
+  @override
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+
+  @override
+  String get watch_ad_button => 'Watch Ad';
+
+  @override
+  String get upgrade_button => 'Upgrade to Premium (€4)';
+
+  @override
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
+
+  @override
+  String get confirm_appointment_button => 'Confirm Appointment';
+
+  @override
+  String get upgrade_prompt_title => 'One-time upgrade';
+
+  @override
+  String get upgrade_prompt_description => 'Pay €4 to remove all ads forever';
+
+  @override
+  String get purchase_now_button => 'Purchase Now';
 }
