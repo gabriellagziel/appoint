@@ -74,7 +74,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get search => '[HA] Search';
 
   @override
-  String get cancelInviteConfirmation => '[HA] Kuna da tabbacin kuna son soke wannan gayyata?';
+  String get cancelInviteConfirmation =>
+      '[HA] Kuna da tabbacin kuna son soke wannan gayyata?';
 
   @override
   String created(Object date) {
@@ -91,7 +92,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get playtimeLiveScheduled => '[HA] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => '[HA] Kuna da tabbacin cire izinin wannan yaron? Wannan aikin ba za a iya maida shi ba.';
+  String get revokeAccessConfirmation =>
+      '[HA] Kuna da tabbacin cire izinin wannan yaron? Wannan aikin ba za a iya maida shi ba.';
 
   @override
   String get download => '[HA] Download';
@@ -125,7 +127,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get playtimeModeVirtual => '[HA] Virtual Play';
 
   @override
-  String get playtimeDescription => '[HA] Enjoy live or virtual games with your friends!';
+  String get playtimeDescription =>
+      '[HA] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => '[HA] Delete';
@@ -160,7 +163,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get done => '[HA] Done';
 
   @override
-  String get defaultShareMessage => '[HA] Sannu! Mun shirya taro tare da kai ta APP‑OINT. Danna nan don tabbatarwa ko ba da shawarar wata lokaci:';
+  String get defaultShareMessage =>
+      '[HA] Sannu! Mun shirya taro tare da kai ta APP‑OINT. Danna nan don tabbatarwa ko ba da shawarar wata lokaci:';
 
   @override
   String get no => '[HA] A\'a';
@@ -203,7 +207,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get cut => '[HA] Cut';
 
   @override
-  String get inviteCancelledSuccessfully => '[HA] An soke gayyata cikin nasara!';
+  String get inviteCancelledSuccessfully =>
+      '[HA] An soke gayyata cikin nasara!';
 
   @override
   String get retry => '[HA] Retry';
@@ -393,7 +398,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get noProfileFound => '[HA] Ba a sami bayani ba';
 
   @override
-  String get noFamilyMembersYet => '[HA] Babu membobin iyali tukuna. Aika gayyata don farawa!';
+  String get noFamilyMembersYet =>
+      '[HA] Babu membobin iyali tukuna. Aika gayyata don farawa!';
 
   @override
   String get mediaOptional => '[HA] Kafofi (zaɓi)';
@@ -408,7 +414,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get dashboard => '[HA] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => '[HA] Ba ku da izini don ƙirƙirar saƙonnin faɗaɗa.';
+  String get noPermissionForBroadcast =>
+      '[HA] Ba ku da izini don ƙirƙirar saƙonnin faɗaɗa.';
 
   @override
   String get playtimeAdminPanelTitle => '[HA] Playtime Games – Admin';
@@ -485,7 +492,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get playtimeEnterGameName => '[HA] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[HA] Don Allah shiga don amfani da fasalolin iyali';
+  String get pleaseLoginForFamilyFeatures =>
+      '[HA] Don Allah shiga don amfani da fasalolin iyali';
 
   @override
   String get myInvites => '[HA] Gayyatar da na samu';
@@ -534,7 +542,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get meetingReadyMessage => '[HA] An shirya taro! Kuna son a tura shi zuwa rukunin ku?';
+  String get meetingReadyMessage =>
+      '[HA] An shirya taro! Kuna son a tura shi zuwa rukunin ku?';
 
   @override
   String get pendingInvites => '[HA] Gayyata a tsaye';
@@ -545,7 +554,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[HA] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[HA] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[HA] Admin Metrics';
@@ -566,40 +576,52 @@ class AppLocalizationsHa extends AppLocalizations {
   String get contentLibrary => '[HA] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[HA] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[HA] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[HA] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[HA] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[HA] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[HA] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[HA] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[HA] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[HA] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[HA] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[HA] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[HA] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[HA] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[HA] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[HA] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[HA] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[HA] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[HA] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential => '[HA] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential =>
+      '[HA] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[HA] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[HA] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[HA] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[HA] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -616,19 +638,24 @@ class AppLocalizationsHa extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[HA] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[HA] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[HA] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[HA] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode => '[HA] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode =>
+      '[HA] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[HA] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[HA] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode => '[HA] Please enter the verification code.';
+  String get authErrorMissingVerificationCode =>
+      '[HA] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[HA] Missing verification ID.';
@@ -640,43 +667,56 @@ class AppLocalizationsHa extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[HA] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[HA] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[HA] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[HA] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[HA] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[HA] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[HA] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired => '[HA] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired =>
+      '[HA] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound => '[HA] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound =>
+      '[HA] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession => '[HA] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession =>
+      '[HA] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession => '[HA] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession =>
+      '[HA] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse => '[HA] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse =>
+      '[HA] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded => '[HA] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded =>
+      '[HA] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[HA] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[HA] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification => '[HA] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification =>
+      '[HA] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists => '[HA] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists =>
+      '[HA] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[HA] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[HA] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[HA] The ID token is invalid.';
@@ -688,10 +728,12 @@ class AppLocalizationsHa extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[HA] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[HA] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[HA] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[HA] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[HA] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[HA] Invalid custom claims provided.';
@@ -700,70 +742,87 @@ class AppLocalizationsHa extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[HA] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[HA] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[HA] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[HA] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[HA] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[HA] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain => '[HA] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain =>
+      '[HA] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[HA] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[HA] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[HA] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[HA] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[HA] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[HA] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength => '[HA] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength =>
+      '[HA] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[HA] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[HA] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[HA] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization => '[HA] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization =>
+      '[HA] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[HA] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[HA] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator => '[HA] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator =>
+      '[HA] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[HA] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[HA] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[HA] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[HA] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[HA] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[HA] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration => '[HA] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration =>
+      '[HA] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[HA] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[HA] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[HA] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded => '[HA] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded =>
+      '[HA] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[HA] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[HA] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[HA] Missing continue URL.';
@@ -778,7 +837,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get authErrorMissingUid => '[HA] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret => '[HA] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret =>
+      '[HA] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[HA] Firebase project not found.';
@@ -787,19 +847,23 @@ class AppLocalizationsHa extends AppLocalizations {
   String get authErrorReservedClaims => '[HA] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[HA] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[HA] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[HA] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[HA] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[HA] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri => '[HA] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri =>
+      '[HA] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[HA] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[HA] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -848,7 +912,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends => '[HA] Virtual session created! Inviting friends... (Hausa)';
+  String get virtualSessionCreatedInvitingFriends =>
+      '[HA] Virtual session created! Inviting friends... (Hausa)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -895,7 +960,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get confirmBooking => '[HA] Tabbatar da tanadi';
 
   @override
-  String get failedToUpdatePermissionE => '[HA] Failed to update permission: \$e (Hausa)';
+  String get failedToUpdatePermissionE =>
+      '[HA] Failed to update permission: \$e (Hausa)';
 
   @override
   String get reject => '[HA] Reject (Hausa)';
@@ -923,7 +989,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get resolve => '[HA] Resolve (Hausa)';
 
   @override
-  String get errorLoadingSurveysError => '[HA] Error loading surveys: \$error (Hausa)';
+  String get errorLoadingSurveysError =>
+      '[HA] Error loading surveys: \$error (Hausa)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -931,7 +998,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[HA] Get help with your account (Hausa)';
+  String get getHelpWithYourAccount =>
+      '[HA] Get help with your account (Hausa)';
 
   @override
   String get pay => '[HA] Pay (Hausa)';
@@ -946,7 +1014,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[HA] Changes saved successfully! (Hausa)';
+  String get changesSavedSuccessfully =>
+      '[HA] Changes saved successfully! (Hausa)';
 
   @override
   String get createNewInvoice => '[HA] Create New Invoice (Hausa)';
@@ -966,7 +1035,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get profileSaved => '[HA] Profile saved! (Hausa)';
 
   @override
-  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -997,7 +1067,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly => '[HA] You will receive a confirmation email shortly. (Hausa)';
+  String get youWillReceiveAConfirmationEmailShortly =>
+      '[HA] You will receive a confirmation email shortly. (Hausa)';
 
   @override
   String get addQuestion => '[HA] Add Question (Hausa)';
@@ -1026,22 +1097,26 @@ class AppLocalizationsHa extends AppLocalizations {
   String get surveyManagement => '[HA] Survey Management (Hausa)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[HA] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[HA] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[HA] No rooms found. Add your first room! (Hausa)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[HA] No rooms found. Add your first room! (Hausa)';
 
   @override
   String get readOurPrivacyPolicy => '[HA] Read our privacy policy (Hausa)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[HA] Could not open privacy policy (Hausa)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[HA] Could not open privacy policy (Hausa)';
 
   @override
   String get refresh1 => '[HA] Refresh (Hausa)';
 
   @override
-  String get roomUpdatedSuccessfully => '[HA] Room updated successfully! (Hausa)';
+  String get roomUpdatedSuccessfully =>
+      '[HA] Room updated successfully! (Hausa)';
 
   @override
   String get contentDetail => '[HA] Content Detail (Hausa)';
@@ -1050,7 +1125,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get cancelSubscription => '[HA] Cancel Subscription (Hausa)';
 
   @override
-  String get successfullyRegisteredAsAmbassador => '[HA] Successfully registered as Ambassador! (Hausa)';
+  String get successfullyRegisteredAsAmbassador =>
+      '[HA] Successfully registered as Ambassador! (Hausa)';
 
   @override
   String get save1 => '[HA] Save (Hausa)';
@@ -1059,7 +1135,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get copy1 => '[HA] Copy (Hausa)';
 
   @override
-  String get failedToSendInvitationE => '[HA] Failed to send invitation: \$e (Hausa)';
+  String get failedToSendInvitationE =>
+      '[HA] Failed to send invitation: \$e (Hausa)';
 
   @override
   String get surveyScore => '[HA] Survey Score (Hausa)';
@@ -1076,16 +1153,20 @@ class AppLocalizationsHa extends AppLocalizations {
   String get responseDetail => '[HA] Response Detail (Hausa)';
 
   @override
-  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[HA] Failed to start Pro subscription: \$e (Hausa)';
+  String get failedToStartProSubscriptionE =>
+      '[HA] Failed to start Pro subscription: \$e (Hausa)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon => '[HA] Business Dashboard Entry Screen - Coming Soon (Hausa)';
+  String get businessDashboardEntryScreenComingSoon =>
+      '[HA] Business Dashboard Entry Screen - Coming Soon (Hausa)';
 
   @override
   String get contentFilter => '[HA] Content Filter (Hausa)';
@@ -1107,7 +1188,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon => '[HA] Business CRM Entry Screen - Coming Soon (Hausa)';
+  String get businessCrmEntryScreenComingSoon =>
+      '[HA] Business CRM Entry Screen - Coming Soon (Hausa)';
 
   @override
   String get adminDashboard => '[HA] Admin Dashboard';
@@ -1118,13 +1200,16 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[HA] Error loading dashboard: \$error (Hausa)';
+  String get errorLoadingDashboardError =>
+      '[HA] Error loading dashboard: \$error (Hausa)';
 
   @override
-  String get gameDeletedSuccessfully => '[HA] Game deleted successfully! (Hausa)';
+  String get gameDeletedSuccessfully =>
+      '[HA] Game deleted successfully! (Hausa)';
 
   @override
-  String get viewResponsesComingSoon => '[HA] View responses - Coming soon! (Hausa)';
+  String get viewResponsesComingSoon =>
+      '[HA] View responses - Coming soon! (Hausa)';
 
   @override
   String get deleteProvider => '[HA] Delete Provider';
@@ -1133,7 +1218,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get errorLoadingRewards => '[HA] Error loading rewards (Hausa)';
 
   @override
-  String get failedToDeleteAccountE => '[HA] Failed to delete account: \$e (Hausa)';
+  String get failedToDeleteAccountE =>
+      '[HA] Failed to delete account: \$e (Hausa)';
 
   @override
   String get invited1 => '[HA] Invited (Hausa)';
@@ -1148,7 +1234,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get noEvents => '[HA] No events (Hausa)';
 
   @override
-  String get gameCreatedSuccessfully => '[HA] Game created successfully! (Hausa)';
+  String get gameCreatedSuccessfully =>
+      '[HA] Game created successfully! (Hausa)';
 
   @override
   String get add1 => '[HA] Add (Hausa)';
@@ -1168,10 +1255,12 @@ class AppLocalizationsHa extends AppLocalizations {
   String get clients => '[HA] Clients (Hausa)';
 
   @override
-  String get noAmbassadorDataAvailable => '[HA] No ambassador data available (Hausa)';
+  String get noAmbassadorDataAvailable =>
+      '[HA] No ambassador data available (Hausa)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[HA] Background deleted successfully! (Hausa)';
+  String get backgroundDeletedSuccessfully =>
+      '[HA] Background deleted successfully! (Hausa)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1179,7 +1268,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[HA] No analytics data available yet. (Hausa)';
+  String get noAnalyticsDataAvailableYet =>
+      '[HA] No analytics data available yet. (Hausa)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1187,7 +1277,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon => '[HA] Business Phone Booking Entry Screen - Coming Soon (Hausa)';
+  String get businessPhoneBookingEntryScreenComingSoon =>
+      '[HA] Business Phone Booking Entry Screen - Coming Soon (Hausa)';
 
   @override
   String get verification => '[HA] Verification (Hausa)';
@@ -1234,7 +1325,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get businessProfile => '[HA] Business Profile (Hausa)';
 
   @override
-  String get businessBookingEntryScreenComingSoon => '[HA] Business Booking Entry Screen - Coming Soon (Hausa)';
+  String get businessBookingEntryScreenComingSoon =>
+      '[HA] Business Booking Entry Screen - Coming Soon (Hausa)';
 
   @override
   String get createNewSurvey => '[HA] Create New Survey (Hausa)';
@@ -1275,10 +1367,12 @@ class AppLocalizationsHa extends AppLocalizations {
   String get errorSavingSettingsE => '[HA] Error saving settings: \$e (Hausa)';
 
   @override
-  String get appVersionAndInformation => '[HA] App version and information (Hausa)';
+  String get appVersionAndInformation =>
+      '[HA] App version and information (Hausa)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon => '[HA] Business Subscription Entry Screen - Coming Soon (Hausa)';
+  String get businessSubscriptionEntryScreenComingSoon =>
+      '[HA] Business Subscription Entry Screen - Coming Soon (Hausa)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1286,7 +1380,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully => '[HA] Your payment has been processed successfully. (Hausa)';
+  String get yourPaymentHasBeenProcessedSuccessfully =>
+      '[HA] Your payment has been processed successfully. (Hausa)';
 
   @override
   String get errorE => '[HA] Error: \$e (Hausa)';
@@ -1304,7 +1399,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get payment => '[HA] Payment (Hausa)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests => '[HA] Automatically confirm new booking requests (Hausa)';
+  String get automaticallyConfirmNewBookingRequests =>
+      '[HA] Automatically confirm new booking requests (Hausa)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1317,7 +1413,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[HA] Please sign in to upload a background (Hausa)';
+  String get pleaseSignInToUploadABackground =>
+      '[HA] Please sign in to upload a background (Hausa)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1334,19 +1431,22 @@ class AppLocalizationsHa extends AppLocalizations {
   String get autoconfirmBookings => '[HA] Auto-Confirm Bookings (Hausa)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan => '[HA] Redirecting to Stripe checkout for Pro plan... (Hausa)';
+  String get redirectingToStripeCheckoutForProPlan =>
+      '[HA] Redirecting to Stripe checkout for Pro plan... (Hausa)';
 
   @override
   String get exportAsCsv => '[HA] Export as CSV (Hausa)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[HA] Delete functionality coming soon! (Hausa)';
+  String get deleteFunctionalityComingSoon =>
+      '[HA] Delete functionality coming soon! (Hausa)';
 
   @override
   String get editClient => '[HA] Edit Client (Hausa)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage => '[HA] Are you sure you want to delete this message? (Hausa)';
+  String get areYouSureYouWantToDeleteThisMessage =>
+      '[HA] Are you sure you want to delete this message? (Hausa)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1357,31 +1457,39 @@ class AppLocalizationsHa extends AppLocalizations {
   String get notAuthenticated => '[HA] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[HA] Privacy request sent to your parents! (Hausa)';
+  String get privacyRequestSentToYourParents =>
+      '[HA] Privacy request sent to your parents! (Hausa)';
 
   @override
-  String get clientDeletedSuccessfully => '[HA] Client deleted successfully! (Hausa)';
+  String get clientDeletedSuccessfully =>
+      '[HA] Client deleted successfully! (Hausa)';
 
   @override
-  String get failedToCancelSubscription => '[HA] Failed to cancel subscription (Hausa)';
+  String get failedToCancelSubscription =>
+      '[HA] Failed to cancel subscription (Hausa)';
 
   @override
   String get allLanguages => '[HA] All Languages (Hausa)';
 
   @override
-  String get slotDeletedSuccessfully => '[HA] Slot deleted successfully (Hausa)';
+  String get slotDeletedSuccessfully =>
+      '[HA] Slot deleted successfully (Hausa)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon => '[HA] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon =>
+      '[HA] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin => '[HA] Parents must approve before children can join (Hausa)';
+  String get parentsMustApproveBeforeChildrenCanJoin =>
+      '[HA] Parents must approve before children can join (Hausa)';
 
   @override
-  String get subscribeToPro1499mo => '[HA] Subscribe to Pro (€14.99/mo) (Hausa)';
+  String get subscribeToPro1499mo =>
+      '[HA] Subscribe to Pro (€14.99/mo) (Hausa)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon => '[HA] Business Availability Entry Screen - Coming Soon (Hausa)';
+  String get businessAvailabilityEntryScreenComingSoon =>
+      '[HA] Business Availability Entry Screen - Coming Soon (Hausa)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1395,7 +1503,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get submitBooking => '[HA] Miƙa tanadi';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment => '[HA] Are you sure you want to cancel this appointment? (Hausa)';
+  String get areYouSureYouWantToCancelThisAppointment =>
+      '[HA] Are you sure you want to cancel this appointment? (Hausa)';
 
   @override
   String get noUpcomingBookings => '[HA] No upcoming bookings (Hausa)';
@@ -1413,7 +1522,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get goToDashboard => '[HA] Go to Dashboard (Hausa)';
 
   @override
-  String get ambassadorQuotaDashboard => '[HA] Ambassador Quota Dashboard (Hausa)';
+  String get ambassadorQuotaDashboard =>
+      '[HA] Ambassador Quota Dashboard (Hausa)';
 
   @override
   String get adminSettings => '[HA] Admin Settings';
@@ -1451,7 +1561,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[HA] Client added successfully! (Hausa)';
+  String get clientAddedSuccessfully =>
+      '[HA] Client added successfully! (Hausa)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1469,7 +1580,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get bookAppointment => '[HA] Tanadi Haduwa';
 
   @override
-  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[HA] Delete (Hausa)';
@@ -1490,7 +1602,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get paymentConfirmation => '[HA] Payment Confirmation (Hausa)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[HA] Promo applied! Your next bill is free. (Hausa)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[HA] Promo applied! Your next bill is free. (Hausa)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1501,13 +1614,16 @@ class AppLocalizationsHa extends AppLocalizations {
   String get errorLoadingSlots => '[HA] Error loading slots (Hausa)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame => '[HA] Allow other users to find and join this game (Hausa)';
+  String get allowOtherUsersToFindAndJoinThisGame =>
+      '[HA] Allow other users to find and join this game (Hausa)';
 
   @override
-  String get businessOnboardingScreenComingSoon => '[HA] Business Onboarding Screen - Coming Soon (Hausa)';
+  String get businessOnboardingScreenComingSoon =>
+      '[HA] Business Onboarding Screen - Coming Soon (Hausa)';
 
   @override
-  String get activateBusinessProfile => '[HA] Activate Business Profile (Hausa)';
+  String get activateBusinessProfile =>
+      '[HA] Activate Business Profile (Hausa)';
 
   @override
   String get contentNotFound => '[HA] Content not found (Hausa)';
@@ -1549,7 +1665,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get shareLink => '[HA] Share Link (Hausa)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider => '[HA] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider =>
+      '[HA] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[HA] Delete Appointment (Hausa)';
@@ -1569,10 +1686,12 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[HA] Update your business information (Hausa)';
+  String get updateYourBusinessInformation =>
+      '[HA] Update your business information (Hausa)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider => '[HA] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider =>
+      '[HA] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[HA] Parent Dashboard (Hausa)';
@@ -1595,10 +1714,12 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb => '[HA] Studio booking is only available on web (Hausa)';
+  String get studioBookingIsOnlyAvailableOnWeb =>
+      '[HA] Studio booking is only available on web (Hausa)';
 
   @override
-  String get errorLoadingBranchesE => '[HA] Error loading branches: \$e (Hausa)';
+  String get errorLoadingBranchesE =>
+      '[HA] Error loading branches: \$e (Hausa)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1614,13 +1735,15 @@ class AppLocalizationsHa extends AppLocalizations {
   String get none => '[HA] Babu';
 
   @override
-  String get failedToUpdateConsentE => '[HA] Failed to update consent: \$e (Hausa)';
+  String get failedToUpdateConsentE =>
+      '[HA] Failed to update consent: \$e (Hausa)';
 
   @override
   String get welcome1 => '[HA] Welcome (Hausa)';
 
   @override
-  String get failedToCreateSessionE => '[HA] Failed to create session: \$e (Hausa)';
+  String get failedToCreateSessionE =>
+      '[HA] Failed to create session: \$e (Hausa)';
 
   @override
   String get inviteContact => '[HA] Tuntuɓi gayyata';
@@ -1629,7 +1752,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get surveyEditor => '[HA] Survey Editor (Hausa)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[HA] Failed to start Basic subscription: \$e (Hausa)';
+  String get failedToStartBasicSubscriptionE =>
+      '[HA] Failed to start Basic subscription: \$e (Hausa)';
 
   @override
   String get mySchedule => '[HA] My Schedule (Hausa)';
@@ -1649,7 +1773,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[HA] Settings saved successfully! (Hausa)';
+  String get settingsSavedSuccessfully =>
+      '[HA] Settings saved successfully! (Hausa)';
 
   @override
   String get linkCopiedToClipboard => '[HA] Link copied to clipboard! (Hausa)';
@@ -1669,7 +1794,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[HA] Room deleted successfully! (Hausa)';
+  String get roomDeletedSuccessfully =>
+      '[HA] Room deleted successfully! (Hausa)';
 
   @override
   String get businessCalendar => '[HA] Business Calendar (Hausa)';
@@ -1734,7 +1860,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get cancel1 => '[HA] Cancel (Hausa)';
 
   @override
-  String get subscriptionActivatedSuccessfully => '[HA] Subscription activated successfully! (Hausa)';
+  String get subscriptionActivatedSuccessfully =>
+      '[HA] Subscription activated successfully! (Hausa)';
 
   @override
   String activityLogaction(Object action) {
@@ -1745,7 +1872,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get broadcast => '[HA] Broadcast (Hausa)';
 
   @override
-  String get noEventsScheduledThisWeek => '[HA] No events scheduled this week (Hausa)';
+  String get noEventsScheduledThisWeek =>
+      '[HA] No events scheduled this week (Hausa)';
 
   @override
   String get googleCalendar => '[HA] Google Calendar (Hausa)';
@@ -1757,7 +1885,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get childDashboard => '[HA] Child Dashboard (Hausa)';
 
   @override
-  String get failedToUploadBackgroundE => '[HA] Failed to upload background: \$e (Hausa)';
+  String get failedToUploadBackgroundE =>
+      '[HA] Failed to upload background: \$e (Hausa)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1776,7 +1905,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get noAppointments => '[HA] No appointments (Hausa)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[HA] • Unlimited bookings per week (Hausa)';
+  String get unlimitedBookingsPerWeek =>
+      '[HA] • Unlimited bookings per week (Hausa)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1784,16 +1914,19 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[HA] Scheduled at: \$scheduledAt (Hausa)';
+  String get scheduledAtScheduledat =>
+      '[HA] Scheduled at: \$scheduledAt (Hausa)';
 
   @override
   String get selectStaff => '[HA] Zaɓi ma\'aikata';
 
   @override
-  String get subscriptionCancelledSuccessfully => '[HA] Subscription cancelled successfully (Hausa)';
+  String get subscriptionCancelledSuccessfully =>
+      '[HA] Subscription cancelled successfully (Hausa)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[HA] Cancel Appointment (Hausa)';
@@ -1807,7 +1940,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get businessSignup => '[HA] Business Signup (Hausa)';
 
   @override
-  String get businessCompletionScreenComingSoon => '[HA] Business Completion Screen - Coming Soon (Hausa)';
+  String get businessCompletionScreenComingSoon =>
+      '[HA] Business Completion Screen - Coming Soon (Hausa)';
 
   @override
   String get createGame1 => '[HA] Create Game (Hausa)';
@@ -1821,7 +1955,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get pleaseEnterAPromoCode => '[HA] Please enter a promo code (Hausa)';
 
   @override
-  String get errorLoadingAvailabilityE => '[HA] Error loading availability: \$e (Hausa)';
+  String get errorLoadingAvailabilityE =>
+      '[HA] Error loading availability: \$e (Hausa)';
 
   @override
   String get parentalControls => '[HA] Parental Controls (Hausa)';
@@ -1836,7 +1971,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get create => '[HA] Create (Hausa)';
 
   @override
-  String get noExternalMeetingsFound => '[HA] No external meetings found. (Hausa)';
+  String get noExternalMeetingsFound =>
+      '[HA] No external meetings found. (Hausa)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1844,13 +1980,15 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[HA] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[HA] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[HA] Scheduler Screen (Hausa)';
 
   @override
-  String get clientUpdatedSuccessfully => '[HA] Client updated successfully! (Hausa)';
+  String get clientUpdatedSuccessfully =>
+      '[HA] Client updated successfully! (Hausa)';
 
   @override
   String get surveyResponses => '[HA] Survey Responses (Hausa)';
@@ -1879,7 +2017,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get errorLoadingOrganizations => '[HA] Kuskure wajen ɗora ƙungiyoyi';
 
   @override
-  String get businessLoginScreenComingSoon => '[HA] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[HA] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[HA] Success (Hausa)';
@@ -1898,10 +2037,12 @@ class AppLocalizationsHa extends AppLocalizations {
   String get readWrite => '[HA] Karatu & rubutu';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan => '[HA] Redirecting to Stripe checkout for Basic plan... (Hausa)';
+  String get redirectingToStripeCheckoutForBasicPlan =>
+      '[HA] Redirecting to Stripe checkout for Basic plan... (Hausa)';
 
   @override
-  String get errorSavingConfigurationE => '[HA] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[HA] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[HA] Zaɓi Kwanan wata';
@@ -1937,10 +2078,12 @@ class AppLocalizationsHa extends AppLocalizations {
   String get businessLogin => '[HA] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[HA] Invoice created successfully! (Hausa)';
+  String get invoiceCreatedSuccessfully =>
+      '[HA] Invoice created successfully! (Hausa)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[HA] No time series data available (Hausa)';
+  String get noTimeSeriesDataAvailable =>
+      '[HA] No time series data available (Hausa)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1953,7 +2096,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[HA] Failed to send privacy request: \$e (Hausa)';
+  String get failedToSendPrivacyRequestE =>
+      '[HA] Failed to send privacy request: \$e (Hausa)';
 
   @override
   String get chooseYourPlan => '[HA] Choose Your Plan (Hausa)';
@@ -1968,7 +2112,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get eventCreated => '[HA] Event created (Hausa)';
 
   @override
-  String get subscribeToBasic499mo => '[HA] Subscribe to Basic (€4.99/mo) (Hausa)';
+  String get subscribeToBasic499mo =>
+      '[HA] Subscribe to Basic (€4.99/mo) (Hausa)';
 
   @override
   String get completion => '[HA] Completion (Hausa)';
@@ -1989,10 +2134,12 @@ class AppLocalizationsHa extends AppLocalizations {
   String get deleteSurvey => '[HA] Delete Survey (Hausa)';
 
   @override
-  String get gameApprovedSuccessfully => '[HA] Game approved successfully! (Hausa)';
+  String get gameApprovedSuccessfully =>
+      '[HA] Game approved successfully! (Hausa)';
 
   @override
-  String get errorLoadingPermissionsError => '[HA] Error loading permissions: \$error (Hausa)';
+  String get errorLoadingPermissionsError =>
+      '[HA] Error loading permissions: \$error (Hausa)';
 
   @override
   String get referrals => '[HA] Referrals (Hausa)';
@@ -2034,7 +2181,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get organizations => '[HA] Ƙungiyoyi';
 
   @override
-  String get configurationSavedSuccessfully => '[HA] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[HA] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[HA] Create New Game (Hausa)';
@@ -2043,10 +2191,12 @@ class AppLocalizationsHa extends AppLocalizations {
   String get next1 => '[HA] Next (Hausa)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[HA] Background uploaded successfully! (Hausa)';
+  String get backgroundUploadedSuccessfully =>
+      '[HA] Background uploaded successfully! (Hausa)';
 
   @override
-  String get noAppointmentRequestsFound => '[HA] No appointment requests found. (Hausa)';
+  String get noAppointmentRequestsFound =>
+      '[HA] No appointment requests found. (Hausa)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2073,7 +2223,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[HA] Failed to create game: \$e (Hausa)';
@@ -2082,7 +2233,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get noChartDataAvailable => '[HA] No chart data available (Hausa)';
 
   @override
-  String get phonebasedBookingSystem => '[HA] • Phone-based booking system (Hausa)';
+  String get phonebasedBookingSystem =>
+      '[HA] • Phone-based booking system (Hausa)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2091,7 +2243,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get invoices => '[HA] Invoices (Hausa)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2118,10 +2271,12 @@ class AppLocalizationsHa extends AppLocalizations {
   String get iDoNotConsent => '[HA] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient => '[HA] No clients found. Add your first client! (Hausa)';
+  String get noClientsFoundAddYourFirstClient =>
+      '[HA] No clients found. Add your first client! (Hausa)';
 
   @override
-  String get settingsDialogWillBeImplementedHere => '[HA] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere =>
+      '[HA] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[HA] Group: \$groupId';
@@ -2144,7 +2299,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[HA] • CRM dashboard with analytics (Hausa)';
+  String get crmDashboardWithAnalytics =>
+      '[HA] • CRM dashboard with analytics (Hausa)';
 
   @override
   String get contentLibrary1 => '[HA] Content Library (Hausa)';
@@ -2156,25 +2312,30 @@ class AppLocalizationsHa extends AppLocalizations {
   String get subscriptionManagement => '[HA] Subscription Management (Hausa)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere => '[HA] Monetization settings will be implemented here (Hausa)';
+  String get monetizationSettingsWillBeImplementedHere =>
+      '[HA] Monetization settings will be implemented here (Hausa)';
 
   @override
-  String get failedToApplyPromoCodeE => '[HA] Failed to apply promo code: \$e (Hausa)';
+  String get failedToApplyPromoCodeE =>
+      '[HA] Failed to apply promo code: \$e (Hausa)';
 
   @override
   String get editProvider => '[HA] Edit Provider';
 
   @override
-  String get localizationContribution => '[HA] Localization Contribution (Hausa)';
+  String get localizationContribution =>
+      '[HA] Localization Contribution (Hausa)';
 
   @override
   String get parentalConsent => '[HA] Parental Consent (Hausa)';
 
   @override
-  String get businessSignupScreenComingSoon => '[HA] Business Signup Screen - Coming Soon (Hausa)';
+  String get businessSignupScreenComingSoon =>
+      '[HA] Business Signup Screen - Coming Soon (Hausa)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment => '[HA] Are you sure you want to delete this appointment? (Hausa)';
+  String get areYouSureYouWantToDeleteThisAppointment =>
+      '[HA] Are you sure you want to delete this appointment? (Hausa)';
 
   @override
   String get syncAppointment => '[HA] Sync Appointment (Hausa)';
@@ -2186,13 +2347,15 @@ class AppLocalizationsHa extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[HA] Business Setup Screen - Coming Soon (Hausa)';
+  String get businessSetupScreenComingSoon =>
+      '[HA] Business Setup Screen - Coming Soon (Hausa)';
 
   @override
   String get edit1 => '[HA] Edit (Hausa)';
 
   @override
-  String get noEventsScheduledThisMonth => '[HA] No events scheduled this month (Hausa)';
+  String get noEventsScheduledThisMonth =>
+      '[HA] No events scheduled this month (Hausa)';
 
   @override
   String get businessDashboard => '[HA] Dashboard na kasuwanci';
@@ -2206,7 +2369,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[HA] Manage Staff Availability (Hausa)';
+  String get manageStaffAvailability =>
+      '[HA] Manage Staff Availability (Hausa)';
 
   @override
   String get noMissingTranslations => '[HA] No missing translations (Hausa)';
@@ -2223,7 +2387,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get noUsers => '[HA] Babu masu amfani';
 
   @override
-  String get errorLoadingReferralCode => '[HA] Error loading referral code (Hausa)';
+  String get errorLoadingReferralCode =>
+      '[HA] Error loading referral code (Hausa)';
 
   @override
   String get allCountries => '[HA] All Countries (Hausa)';
@@ -2238,7 +2403,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get deleteMessage => '[HA] Delete Message (Hausa)';
 
   @override
-  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[HA] Canza matsayi';
@@ -2260,7 +2426,8 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[HA] Upgrade to Business (Hausa)';
@@ -2286,7 +2453,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[HA] View Responses (Hausa)';
@@ -2315,7 +2483,8 @@ class AppLocalizationsHa extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2328,4 +2497,33 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get loadingCheckout => 'جار تحميل الدفع...';
+
+  @override
+  String get ad_pre_title => 'Watch an ad to confirm your appointment';
+
+  @override
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+
+  @override
+  String get watch_ad_button => 'Watch Ad';
+
+  @override
+  String get upgrade_button => 'Upgrade to Premium (€4)';
+
+  @override
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
+
+  @override
+  String get confirm_appointment_button => 'Confirm Appointment';
+
+  @override
+  String get upgrade_prompt_title => 'One-time upgrade';
+
+  @override
+  String get upgrade_prompt_description => 'Pay €4 to remove all ads forever';
+
+  @override
+  String get purchase_now_button => 'Purchase Now';
 }

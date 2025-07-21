@@ -91,7 +91,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get playtimeLiveScheduled => '[GA] [GA] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => '[GA] [GA] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation =>
+      '[GA] [GA] Are you sure you want to revoke access?';
 
   @override
   String get download => '[GA] Íoslódáil';
@@ -185,7 +186,8 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => '[GA] [GA] Meeting shared successfully';
+  String get meetingSharedSuccessfully =>
+      '[GA] [GA] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[GA] Fáilte chuig Playtime';
@@ -203,7 +205,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get cut => '[GA] Gearr';
 
   @override
-  String get inviteCancelledSuccessfully => '[GA] [GA] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully =>
+      '[GA] [GA] Invite cancelled successfully';
 
   @override
   String get retry => '[GA] Féach arís';
@@ -283,7 +286,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get scheduleForLater => '[GA] Cláraigh le haghaidh níos déanaí';
 
   @override
-  String get accessRevokedSuccessfully => '[GA] [GA] Access revoked successfully';
+  String get accessRevokedSuccessfully =>
+      '[GA] [GA] Access revoked successfully';
 
   @override
   String type(Object type) {
@@ -485,7 +489,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get playtimeEnterGameName => '[GA] [GA] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[GA] [GA] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[GA] [GA] Please login to access family features';
 
   @override
   String get myInvites => '[GA] Mo cuireadh';
@@ -545,7 +550,8 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[GA] Logáil isteach chun próifíl a fheiceáil';
+  String get pleaseLoginToViewProfile =>
+      '[GA] Logáil isteach chun próifíl a fheiceáil';
 
   @override
   String get adminMetrics => '[GA] Admin Metrics';
@@ -566,40 +572,52 @@ class AppLocalizationsGa extends AppLocalizations {
   String get contentLibrary => '[GA] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[GA] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[GA] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[GA] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[GA] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[GA] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[GA] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[GA] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[GA] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[GA] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[GA] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[GA] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[GA] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[GA] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[GA] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[GA] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[GA] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[GA] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[GA] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential => '[GA] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential =>
+      '[GA] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[GA] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[GA] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[GA] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[GA] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -616,19 +634,24 @@ class AppLocalizationsGa extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[GA] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[GA] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[GA] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[GA] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode => '[GA] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode =>
+      '[GA] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[GA] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[GA] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode => '[GA] Please enter the verification code.';
+  String get authErrorMissingVerificationCode =>
+      '[GA] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[GA] Missing verification ID.';
@@ -640,43 +663,56 @@ class AppLocalizationsGa extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[GA] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[GA] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[GA] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[GA] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[GA] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[GA] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[GA] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired => '[GA] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired =>
+      '[GA] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound => '[GA] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound =>
+      '[GA] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession => '[GA] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession =>
+      '[GA] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession => '[GA] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession =>
+      '[GA] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse => '[GA] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse =>
+      '[GA] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded => '[GA] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded =>
+      '[GA] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[GA] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[GA] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification => '[GA] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification =>
+      '[GA] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists => '[GA] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists =>
+      '[GA] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[GA] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[GA] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[GA] The ID token is invalid.';
@@ -688,10 +724,12 @@ class AppLocalizationsGa extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[GA] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[GA] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[GA] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[GA] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[GA] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[GA] Invalid custom claims provided.';
@@ -700,70 +738,87 @@ class AppLocalizationsGa extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[GA] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[GA] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[GA] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[GA] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[GA] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[GA] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain => '[GA] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain =>
+      '[GA] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[GA] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[GA] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[GA] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[GA] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[GA] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[GA] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength => '[GA] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength =>
+      '[GA] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[GA] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[GA] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[GA] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization => '[GA] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization =>
+      '[GA] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[GA] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[GA] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator => '[GA] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator =>
+      '[GA] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[GA] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[GA] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[GA] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[GA] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[GA] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[GA] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration => '[GA] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration =>
+      '[GA] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[GA] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[GA] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[GA] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded => '[GA] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded =>
+      '[GA] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[GA] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[GA] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[GA] Missing continue URL.';
@@ -778,7 +833,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get authErrorMissingUid => '[GA] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret => '[GA] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret =>
+      '[GA] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[GA] Firebase project not found.';
@@ -787,19 +843,23 @@ class AppLocalizationsGa extends AppLocalizations {
   String get authErrorReservedClaims => '[GA] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[GA] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[GA] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[GA] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[GA] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[GA] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri => '[GA] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri =>
+      '[GA] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[GA] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[GA] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -848,7 +908,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends => '[GA] Virtual session created! Inviting friends... (Irish)';
+  String get virtualSessionCreatedInvitingFriends =>
+      '[GA] Virtual session created! Inviting friends... (Irish)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -895,7 +956,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get confirmBooking => '[GA] Confirm Booking (Irish)';
 
   @override
-  String get failedToUpdatePermissionE => '[GA] Failed to update permission: \$e (Irish)';
+  String get failedToUpdatePermissionE =>
+      '[GA] Failed to update permission: \$e (Irish)';
 
   @override
   String get reject => '[GA] Reject (Irish)';
@@ -923,7 +985,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get resolve => '[GA] Resolve (Irish)';
 
   @override
-  String get errorLoadingSurveysError => '[GA] Error loading surveys: \$error (Irish)';
+  String get errorLoadingSurveysError =>
+      '[GA] Error loading surveys: \$error (Irish)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -931,7 +994,8 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[GA] Get help with your account (Irish)';
+  String get getHelpWithYourAccount =>
+      '[GA] Get help with your account (Irish)';
 
   @override
   String get pay => '[GA] Pay (Irish)';
@@ -946,7 +1010,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[GA] Changes saved successfully! (Irish)';
+  String get changesSavedSuccessfully =>
+      '[GA] Changes saved successfully! (Irish)';
 
   @override
   String get createNewInvoice => '[GA] Create New Invoice (Irish)';
@@ -966,7 +1031,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get profileSaved => '[GA] Profile saved! (Irish)';
 
   @override
-  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -997,7 +1063,8 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly => '[GA] You will receive a confirmation email shortly. (Irish)';
+  String get youWillReceiveAConfirmationEmailShortly =>
+      '[GA] You will receive a confirmation email shortly. (Irish)';
 
   @override
   String get addQuestion => '[GA] Add Question (Irish)';
@@ -1026,22 +1093,26 @@ class AppLocalizationsGa extends AppLocalizations {
   String get surveyManagement => '[GA] Survey Management (Irish)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[GA] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[GA] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[GA] No rooms found. Add your first room! (Irish)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[GA] No rooms found. Add your first room! (Irish)';
 
   @override
   String get readOurPrivacyPolicy => '[GA] Read our privacy policy (Irish)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[GA] Could not open privacy policy (Irish)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[GA] Could not open privacy policy (Irish)';
 
   @override
   String get refresh1 => '[GA] Refresh (Irish)';
 
   @override
-  String get roomUpdatedSuccessfully => '[GA] Room updated successfully! (Irish)';
+  String get roomUpdatedSuccessfully =>
+      '[GA] Room updated successfully! (Irish)';
 
   @override
   String get contentDetail => '[GA] Content Detail (Irish)';
@@ -1050,7 +1121,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get cancelSubscription => '[GA] Cancel Subscription (Irish)';
 
   @override
-  String get successfullyRegisteredAsAmbassador => '[GA] Successfully registered as Ambassador! (Irish)';
+  String get successfullyRegisteredAsAmbassador =>
+      '[GA] Successfully registered as Ambassador! (Irish)';
 
   @override
   String get save1 => '[GA] Save (Irish)';
@@ -1059,7 +1131,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get copy1 => '[GA] Copy (Irish)';
 
   @override
-  String get failedToSendInvitationE => '[GA] Failed to send invitation: \$e (Irish)';
+  String get failedToSendInvitationE =>
+      '[GA] Failed to send invitation: \$e (Irish)';
 
   @override
   String get surveyScore => '[GA] Survey Score (Irish)';
@@ -1076,16 +1149,20 @@ class AppLocalizationsGa extends AppLocalizations {
   String get responseDetail => '[GA] Response Detail (Irish)';
 
   @override
-  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[GA] Failed to start Pro subscription: \$e (Irish)';
+  String get failedToStartProSubscriptionE =>
+      '[GA] Failed to start Pro subscription: \$e (Irish)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon => '[GA] Business Dashboard Entry Screen - Coming Soon (Irish)';
+  String get businessDashboardEntryScreenComingSoon =>
+      '[GA] Business Dashboard Entry Screen - Coming Soon (Irish)';
 
   @override
   String get contentFilter => '[GA] Content Filter (Irish)';
@@ -1107,7 +1184,8 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon => '[GA] Business CRM Entry Screen - Coming Soon (Irish)';
+  String get businessCrmEntryScreenComingSoon =>
+      '[GA] Business CRM Entry Screen - Coming Soon (Irish)';
 
   @override
   String get adminDashboard => '[GA] Admin Dashboard';
@@ -1118,13 +1196,16 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[GA] Error loading dashboard: \$error (Irish)';
+  String get errorLoadingDashboardError =>
+      '[GA] Error loading dashboard: \$error (Irish)';
 
   @override
-  String get gameDeletedSuccessfully => '[GA] Game deleted successfully! (Irish)';
+  String get gameDeletedSuccessfully =>
+      '[GA] Game deleted successfully! (Irish)';
 
   @override
-  String get viewResponsesComingSoon => '[GA] View responses - Coming soon! (Irish)';
+  String get viewResponsesComingSoon =>
+      '[GA] View responses - Coming soon! (Irish)';
 
   @override
   String get deleteProvider => '[GA] Delete Provider';
@@ -1133,7 +1214,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get errorLoadingRewards => '[GA] Error loading rewards (Irish)';
 
   @override
-  String get failedToDeleteAccountE => '[GA] Failed to delete account: \$e (Irish)';
+  String get failedToDeleteAccountE =>
+      '[GA] Failed to delete account: \$e (Irish)';
 
   @override
   String get invited1 => '[GA] Invited (Irish)';
@@ -1148,7 +1230,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get noEvents => '[GA] No events (Irish)';
 
   @override
-  String get gameCreatedSuccessfully => '[GA] Game created successfully! (Irish)';
+  String get gameCreatedSuccessfully =>
+      '[GA] Game created successfully! (Irish)';
 
   @override
   String get add1 => '[GA] Add (Irish)';
@@ -1168,10 +1251,12 @@ class AppLocalizationsGa extends AppLocalizations {
   String get clients => '[GA] Clients (Irish)';
 
   @override
-  String get noAmbassadorDataAvailable => '[GA] No ambassador data available (Irish)';
+  String get noAmbassadorDataAvailable =>
+      '[GA] No ambassador data available (Irish)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[GA] Background deleted successfully! (Irish)';
+  String get backgroundDeletedSuccessfully =>
+      '[GA] Background deleted successfully! (Irish)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1179,7 +1264,8 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[GA] No analytics data available yet. (Irish)';
+  String get noAnalyticsDataAvailableYet =>
+      '[GA] No analytics data available yet. (Irish)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1187,7 +1273,8 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon => '[GA] Business Phone Booking Entry Screen - Coming Soon (Irish)';
+  String get businessPhoneBookingEntryScreenComingSoon =>
+      '[GA] Business Phone Booking Entry Screen - Coming Soon (Irish)';
 
   @override
   String get verification => '[GA] Verification (Irish)';
@@ -1234,7 +1321,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get businessProfile => '[GA] Business Profile (Irish)';
 
   @override
-  String get businessBookingEntryScreenComingSoon => '[GA] Business Booking Entry Screen - Coming Soon (Irish)';
+  String get businessBookingEntryScreenComingSoon =>
+      '[GA] Business Booking Entry Screen - Coming Soon (Irish)';
 
   @override
   String get createNewSurvey => '[GA] Create New Survey (Irish)';
@@ -1258,7 +1346,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get loginFailedE => '[GA] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[GA] Invitation sent successfully! (Irish)';
+  String get invitationSentSuccessfully =>
+      '[GA] Invitation sent successfully! (Irish)';
 
   @override
   String get registering => '[GA] Registering... (Irish)';
@@ -1275,10 +1364,12 @@ class AppLocalizationsGa extends AppLocalizations {
   String get errorSavingSettingsE => '[GA] Error saving settings: \$e (Irish)';
 
   @override
-  String get appVersionAndInformation => '[GA] App version and information (Irish)';
+  String get appVersionAndInformation =>
+      '[GA] App version and information (Irish)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon => '[GA] Business Subscription Entry Screen - Coming Soon (Irish)';
+  String get businessSubscriptionEntryScreenComingSoon =>
+      '[GA] Business Subscription Entry Screen - Coming Soon (Irish)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1286,7 +1377,8 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully => '[GA] Your payment has been processed successfully. (Irish)';
+  String get yourPaymentHasBeenProcessedSuccessfully =>
+      '[GA] Your payment has been processed successfully. (Irish)';
 
   @override
   String get errorE => '[GA] Error: \$e (Irish)';
@@ -1304,7 +1396,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get payment => '[GA] Payment (Irish)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests => '[GA] Automatically confirm new booking requests (Irish)';
+  String get automaticallyConfirmNewBookingRequests =>
+      '[GA] Automatically confirm new booking requests (Irish)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1317,7 +1410,8 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[GA] Please sign in to upload a background (Irish)';
+  String get pleaseSignInToUploadABackground =>
+      '[GA] Please sign in to upload a background (Irish)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1334,19 +1428,22 @@ class AppLocalizationsGa extends AppLocalizations {
   String get autoconfirmBookings => '[GA] Auto-Confirm Bookings (Irish)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan => '[GA] Redirecting to Stripe checkout for Pro plan... (Irish)';
+  String get redirectingToStripeCheckoutForProPlan =>
+      '[GA] Redirecting to Stripe checkout for Pro plan... (Irish)';
 
   @override
   String get exportAsCsv => '[GA] Export as CSV (Irish)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[GA] Delete functionality coming soon! (Irish)';
+  String get deleteFunctionalityComingSoon =>
+      '[GA] Delete functionality coming soon! (Irish)';
 
   @override
   String get editClient => '[GA] Edit Client (Irish)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage => '[GA] Are you sure you want to delete this message? (Irish)';
+  String get areYouSureYouWantToDeleteThisMessage =>
+      '[GA] Are you sure you want to delete this message? (Irish)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1357,31 +1454,39 @@ class AppLocalizationsGa extends AppLocalizations {
   String get notAuthenticated => '[GA] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[GA] Privacy request sent to your parents! (Irish)';
+  String get privacyRequestSentToYourParents =>
+      '[GA] Privacy request sent to your parents! (Irish)';
 
   @override
-  String get clientDeletedSuccessfully => '[GA] Client deleted successfully! (Irish)';
+  String get clientDeletedSuccessfully =>
+      '[GA] Client deleted successfully! (Irish)';
 
   @override
-  String get failedToCancelSubscription => '[GA] Failed to cancel subscription (Irish)';
+  String get failedToCancelSubscription =>
+      '[GA] Failed to cancel subscription (Irish)';
 
   @override
   String get allLanguages => '[GA] All Languages (Irish)';
 
   @override
-  String get slotDeletedSuccessfully => '[GA] Slot deleted successfully (Irish)';
+  String get slotDeletedSuccessfully =>
+      '[GA] Slot deleted successfully (Irish)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon => '[GA] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon =>
+      '[GA] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin => '[GA] Parents must approve before children can join (Irish)';
+  String get parentsMustApproveBeforeChildrenCanJoin =>
+      '[GA] Parents must approve before children can join (Irish)';
 
   @override
-  String get subscribeToPro1499mo => '[GA] Subscribe to Pro (€14.99/mo) (Irish)';
+  String get subscribeToPro1499mo =>
+      '[GA] Subscribe to Pro (€14.99/mo) (Irish)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon => '[GA] Business Availability Entry Screen - Coming Soon (Irish)';
+  String get businessAvailabilityEntryScreenComingSoon =>
+      '[GA] Business Availability Entry Screen - Coming Soon (Irish)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1395,7 +1500,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get submitBooking => '[GA] Submit Booking (Irish)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment => '[GA] Are you sure you want to cancel this appointment? (Irish)';
+  String get areYouSureYouWantToCancelThisAppointment =>
+      '[GA] Are you sure you want to cancel this appointment? (Irish)';
 
   @override
   String get noUpcomingBookings => '[GA] No upcoming bookings (Irish)';
@@ -1413,7 +1519,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get goToDashboard => '[GA] Go to Dashboard (Irish)';
 
   @override
-  String get ambassadorQuotaDashboard => '[GA] Ambassador Quota Dashboard (Irish)';
+  String get ambassadorQuotaDashboard =>
+      '[GA] Ambassador Quota Dashboard (Irish)';
 
   @override
   String get adminSettings => '[GA] Admin Settings';
@@ -1451,7 +1558,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[GA] Client added successfully! (Irish)';
+  String get clientAddedSuccessfully =>
+      '[GA] Client added successfully! (Irish)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1469,7 +1577,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get bookAppointment => '[GA] Book Appointment (Irish)';
 
   @override
-  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[GA] Delete (Irish)';
@@ -1484,13 +1593,15 @@ class AppLocalizationsGa extends AppLocalizations {
   String get manageSubscription => '[GA] Manage Subscription (Irish)';
 
   @override
-  String get requiresInstallFallback => '[GA] Requires Install Fallback (Irish)';
+  String get requiresInstallFallback =>
+      '[GA] Requires Install Fallback (Irish)';
 
   @override
   String get paymentConfirmation => '[GA] Payment Confirmation (Irish)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[GA] Promo applied! Your next bill is free. (Irish)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[GA] Promo applied! Your next bill is free. (Irish)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1501,13 +1612,16 @@ class AppLocalizationsGa extends AppLocalizations {
   String get errorLoadingSlots => '[GA] Error loading slots (Irish)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame => '[GA] Allow other users to find and join this game (Irish)';
+  String get allowOtherUsersToFindAndJoinThisGame =>
+      '[GA] Allow other users to find and join this game (Irish)';
 
   @override
-  String get businessOnboardingScreenComingSoon => '[GA] Business Onboarding Screen - Coming Soon (Irish)';
+  String get businessOnboardingScreenComingSoon =>
+      '[GA] Business Onboarding Screen - Coming Soon (Irish)';
 
   @override
-  String get activateBusinessProfile => '[GA] Activate Business Profile (Irish)';
+  String get activateBusinessProfile =>
+      '[GA] Activate Business Profile (Irish)';
 
   @override
   String get contentNotFound => '[GA] Content not found (Irish)';
@@ -1549,7 +1663,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get shareLink => '[GA] Share Link (Irish)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider => '[GA] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider =>
+      '[GA] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[GA] Delete Appointment (Irish)';
@@ -1569,10 +1684,12 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[GA] Update your business information (Irish)';
+  String get updateYourBusinessInformation =>
+      '[GA] Update your business information (Irish)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider => '[GA] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider =>
+      '[GA] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[GA] Parent Dashboard (Irish)';
@@ -1595,10 +1712,12 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb => '[GA] Studio booking is only available on web (Irish)';
+  String get studioBookingIsOnlyAvailableOnWeb =>
+      '[GA] Studio booking is only available on web (Irish)';
 
   @override
-  String get errorLoadingBranchesE => '[GA] Error loading branches: \$e (Irish)';
+  String get errorLoadingBranchesE =>
+      '[GA] Error loading branches: \$e (Irish)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1614,13 +1733,15 @@ class AppLocalizationsGa extends AppLocalizations {
   String get none => '[GA] None (Irish)';
 
   @override
-  String get failedToUpdateConsentE => '[GA] Failed to update consent: \$e (Irish)';
+  String get failedToUpdateConsentE =>
+      '[GA] Failed to update consent: \$e (Irish)';
 
   @override
   String get welcome1 => '[GA] Welcome (Irish)';
 
   @override
-  String get failedToCreateSessionE => '[GA] Failed to create session: \$e (Irish)';
+  String get failedToCreateSessionE =>
+      '[GA] Failed to create session: \$e (Irish)';
 
   @override
   String get inviteContact => '[GA] Invite Contact (Irish)';
@@ -1629,7 +1750,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get surveyEditor => '[GA] Survey Editor (Irish)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[GA] Failed to start Basic subscription: \$e (Irish)';
+  String get failedToStartBasicSubscriptionE =>
+      '[GA] Failed to start Basic subscription: \$e (Irish)';
 
   @override
   String get mySchedule => '[GA] My Schedule (Irish)';
@@ -1649,7 +1771,8 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[GA] Settings saved successfully! (Irish)';
+  String get settingsSavedSuccessfully =>
+      '[GA] Settings saved successfully! (Irish)';
 
   @override
   String get linkCopiedToClipboard => '[GA] Link copied to clipboard! (Irish)';
@@ -1669,7 +1792,8 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[GA] Room deleted successfully! (Irish)';
+  String get roomDeletedSuccessfully =>
+      '[GA] Room deleted successfully! (Irish)';
 
   @override
   String get businessCalendar => '[GA] Business Calendar (Irish)';
@@ -1734,7 +1858,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get cancel1 => '[GA] Cancel (Irish)';
 
   @override
-  String get subscriptionActivatedSuccessfully => '[GA] Subscription activated successfully! (Irish)';
+  String get subscriptionActivatedSuccessfully =>
+      '[GA] Subscription activated successfully! (Irish)';
 
   @override
   String activityLogaction(Object action) {
@@ -1745,7 +1870,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get broadcast => '[GA] Broadcast (Irish)';
 
   @override
-  String get noEventsScheduledThisWeek => '[GA] No events scheduled this week (Irish)';
+  String get noEventsScheduledThisWeek =>
+      '[GA] No events scheduled this week (Irish)';
 
   @override
   String get googleCalendar => '[GA] Google Calendar (Irish)';
@@ -1757,7 +1883,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get childDashboard => '[GA] Child Dashboard (Irish)';
 
   @override
-  String get failedToUploadBackgroundE => '[GA] Failed to upload background: \$e (Irish)';
+  String get failedToUploadBackgroundE =>
+      '[GA] Failed to upload background: \$e (Irish)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1776,7 +1903,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get noAppointments => '[GA] No appointments (Irish)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[GA] • Unlimited bookings per week (Irish)';
+  String get unlimitedBookingsPerWeek =>
+      '[GA] • Unlimited bookings per week (Irish)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1784,16 +1912,19 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[GA] Scheduled at: \$scheduledAt (Irish)';
+  String get scheduledAtScheduledat =>
+      '[GA] Scheduled at: \$scheduledAt (Irish)';
 
   @override
   String get selectStaff => '[GA] Select Staff (Irish)';
 
   @override
-  String get subscriptionCancelledSuccessfully => '[GA] Subscription cancelled successfully (Irish)';
+  String get subscriptionCancelledSuccessfully =>
+      '[GA] Subscription cancelled successfully (Irish)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[GA] Cancel Appointment (Irish)';
@@ -1807,7 +1938,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get businessSignup => '[GA] Business Signup (Irish)';
 
   @override
-  String get businessCompletionScreenComingSoon => '[GA] Business Completion Screen - Coming Soon (Irish)';
+  String get businessCompletionScreenComingSoon =>
+      '[GA] Business Completion Screen - Coming Soon (Irish)';
 
   @override
   String get createGame1 => '[GA] Create Game (Irish)';
@@ -1821,7 +1953,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get pleaseEnterAPromoCode => '[GA] Please enter a promo code (Irish)';
 
   @override
-  String get errorLoadingAvailabilityE => '[GA] Error loading availability: \$e (Irish)';
+  String get errorLoadingAvailabilityE =>
+      '[GA] Error loading availability: \$e (Irish)';
 
   @override
   String get parentalControls => '[GA] Parental Controls (Irish)';
@@ -1830,13 +1963,15 @@ class AppLocalizationsGa extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[GA] Child linked successfully! (Irish)';
+  String get childLinkedSuccessfully =>
+      '[GA] Child linked successfully! (Irish)';
 
   @override
   String get create => '[GA] Create (Irish)';
 
   @override
-  String get noExternalMeetingsFound => '[GA] No external meetings found. (Irish)';
+  String get noExternalMeetingsFound =>
+      '[GA] No external meetings found. (Irish)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1844,13 +1979,15 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[GA] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[GA] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[GA] Scheduler Screen (Irish)';
 
   @override
-  String get clientUpdatedSuccessfully => '[GA] Client updated successfully! (Irish)';
+  String get clientUpdatedSuccessfully =>
+      '[GA] Client updated successfully! (Irish)';
 
   @override
   String get surveyResponses => '[GA] Survey Responses (Irish)';
@@ -1876,10 +2013,12 @@ class AppLocalizationsGa extends AppLocalizations {
   String get errorLoadingEvents => '[GA] Error loading events (Irish)';
 
   @override
-  String get errorLoadingOrganizations => '[GA] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[GA] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[GA] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[GA] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[GA] Success (Irish)';
@@ -1898,10 +2037,12 @@ class AppLocalizationsGa extends AppLocalizations {
   String get readWrite => '[GA] Read & Write (Irish)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan => '[GA] Redirecting to Stripe checkout for Basic plan... (Irish)';
+  String get redirectingToStripeCheckoutForBasicPlan =>
+      '[GA] Redirecting to Stripe checkout for Basic plan... (Irish)';
 
   @override
-  String get errorSavingConfigurationE => '[GA] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[GA] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[GA] Pick Date (Irish)';
@@ -1937,10 +2078,12 @@ class AppLocalizationsGa extends AppLocalizations {
   String get businessLogin => '[GA] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[GA] Invoice created successfully! (Irish)';
+  String get invoiceCreatedSuccessfully =>
+      '[GA] Invoice created successfully! (Irish)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[GA] No time series data available (Irish)';
+  String get noTimeSeriesDataAvailable =>
+      '[GA] No time series data available (Irish)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1953,7 +2096,8 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[GA] Failed to send privacy request: \$e (Irish)';
+  String get failedToSendPrivacyRequestE =>
+      '[GA] Failed to send privacy request: \$e (Irish)';
 
   @override
   String get chooseYourPlan => '[GA] Choose Your Plan (Irish)';
@@ -1968,7 +2112,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get eventCreated => '[GA] Event created (Irish)';
 
   @override
-  String get subscribeToBasic499mo => '[GA] Subscribe to Basic (€4.99/mo) (Irish)';
+  String get subscribeToBasic499mo =>
+      '[GA] Subscribe to Basic (€4.99/mo) (Irish)';
 
   @override
   String get completion => '[GA] Completion (Irish)';
@@ -1989,10 +2134,12 @@ class AppLocalizationsGa extends AppLocalizations {
   String get deleteSurvey => '[GA] Delete Survey (Irish)';
 
   @override
-  String get gameApprovedSuccessfully => '[GA] Game approved successfully! (Irish)';
+  String get gameApprovedSuccessfully =>
+      '[GA] Game approved successfully! (Irish)';
 
   @override
-  String get errorLoadingPermissionsError => '[GA] Error loading permissions: \$error (Irish)';
+  String get errorLoadingPermissionsError =>
+      '[GA] Error loading permissions: \$error (Irish)';
 
   @override
   String get referrals => '[GA] Referrals (Irish)';
@@ -2034,7 +2181,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get organizations => '[GA] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[GA] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[GA] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[GA] Create New Game (Irish)';
@@ -2043,10 +2191,12 @@ class AppLocalizationsGa extends AppLocalizations {
   String get next1 => '[GA] Next (Irish)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[GA] Background uploaded successfully! (Irish)';
+  String get backgroundUploadedSuccessfully =>
+      '[GA] Background uploaded successfully! (Irish)';
 
   @override
-  String get noAppointmentRequestsFound => '[GA] No appointment requests found. (Irish)';
+  String get noAppointmentRequestsFound =>
+      '[GA] No appointment requests found. (Irish)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2073,7 +2223,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[GA] Failed to create game: \$e (Irish)';
@@ -2082,7 +2233,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get noChartDataAvailable => '[GA] No chart data available (Irish)';
 
   @override
-  String get phonebasedBookingSystem => '[GA] • Phone-based booking system (Irish)';
+  String get phonebasedBookingSystem =>
+      '[GA] • Phone-based booking system (Irish)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2091,7 +2243,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get invoices => '[GA] Invoices (Irish)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2118,10 +2271,12 @@ class AppLocalizationsGa extends AppLocalizations {
   String get iDoNotConsent => '[GA] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient => '[GA] No clients found. Add your first client! (Irish)';
+  String get noClientsFoundAddYourFirstClient =>
+      '[GA] No clients found. Add your first client! (Irish)';
 
   @override
-  String get settingsDialogWillBeImplementedHere => '[GA] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere =>
+      '[GA] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[GA] Group: \$groupId';
@@ -2144,7 +2299,8 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[GA] • CRM dashboard with analytics (Irish)';
+  String get crmDashboardWithAnalytics =>
+      '[GA] • CRM dashboard with analytics (Irish)';
 
   @override
   String get contentLibrary1 => '[GA] Content Library (Irish)';
@@ -2156,25 +2312,30 @@ class AppLocalizationsGa extends AppLocalizations {
   String get subscriptionManagement => '[GA] Subscription Management (Irish)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere => '[GA] Monetization settings will be implemented here (Irish)';
+  String get monetizationSettingsWillBeImplementedHere =>
+      '[GA] Monetization settings will be implemented here (Irish)';
 
   @override
-  String get failedToApplyPromoCodeE => '[GA] Failed to apply promo code: \$e (Irish)';
+  String get failedToApplyPromoCodeE =>
+      '[GA] Failed to apply promo code: \$e (Irish)';
 
   @override
   String get editProvider => '[GA] Edit Provider';
 
   @override
-  String get localizationContribution => '[GA] Localization Contribution (Irish)';
+  String get localizationContribution =>
+      '[GA] Localization Contribution (Irish)';
 
   @override
   String get parentalConsent => '[GA] Parental Consent (Irish)';
 
   @override
-  String get businessSignupScreenComingSoon => '[GA] Business Signup Screen - Coming Soon (Irish)';
+  String get businessSignupScreenComingSoon =>
+      '[GA] Business Signup Screen - Coming Soon (Irish)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment => '[GA] Are you sure you want to delete this appointment? (Irish)';
+  String get areYouSureYouWantToDeleteThisAppointment =>
+      '[GA] Are you sure you want to delete this appointment? (Irish)';
 
   @override
   String get syncAppointment => '[GA] Sync Appointment (Irish)';
@@ -2186,13 +2347,15 @@ class AppLocalizationsGa extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[GA] Business Setup Screen - Coming Soon (Irish)';
+  String get businessSetupScreenComingSoon =>
+      '[GA] Business Setup Screen - Coming Soon (Irish)';
 
   @override
   String get edit1 => '[GA] Edit (Irish)';
 
   @override
-  String get noEventsScheduledThisMonth => '[GA] No events scheduled this month (Irish)';
+  String get noEventsScheduledThisMonth =>
+      '[GA] No events scheduled this month (Irish)';
 
   @override
   String get businessDashboard => '[GA] Business Dashboard (Irish)';
@@ -2206,7 +2369,8 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[GA] Manage Staff Availability (Irish)';
+  String get manageStaffAvailability =>
+      '[GA] Manage Staff Availability (Irish)';
 
   @override
   String get noMissingTranslations => '[GA] No missing translations (Irish)';
@@ -2223,7 +2387,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get noUsers => '[GA] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[GA] Error loading referral code (Irish)';
+  String get errorLoadingReferralCode =>
+      '[GA] Error loading referral code (Irish)';
 
   @override
   String get allCountries => '[GA] All Countries (Irish)';
@@ -2238,7 +2403,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get deleteMessage => '[GA] Delete Message (Irish)';
 
   @override
-  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[GA] changeRole (TRANSLATE)';
@@ -2260,7 +2426,8 @@ class AppLocalizationsGa extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[GA] Upgrade to Business (Irish)';
@@ -2286,7 +2453,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[GA] View Responses (Irish)';
@@ -2315,7 +2483,8 @@ class AppLocalizationsGa extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2328,4 +2497,33 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get loadingCheckout => 'جار تحميل الدفع...';
+
+  @override
+  String get ad_pre_title => 'Watch an ad to confirm your appointment';
+
+  @override
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+
+  @override
+  String get watch_ad_button => 'Watch Ad';
+
+  @override
+  String get upgrade_button => 'Upgrade to Premium (€4)';
+
+  @override
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
+
+  @override
+  String get confirm_appointment_button => 'Confirm Appointment';
+
+  @override
+  String get upgrade_prompt_title => 'One-time upgrade';
+
+  @override
+  String get upgrade_prompt_description => 'Pay €4 to remove all ads forever';
+
+  @override
+  String get purchase_now_button => 'Purchase Now';
 }
