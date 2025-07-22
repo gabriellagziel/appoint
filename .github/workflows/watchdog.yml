@@ -1,8 +1,5 @@
 name: CI Watchdog
 
-push:
-  branches: [ main ]
-
 on:
   workflow_run:
     workflows: ["DigitalOcean CI Pipeline"]
@@ -10,6 +7,8 @@ on:
   schedule:
     # Check every 5 minutes
     - cron: '*/5 * * * *'
+  push:
+    branches: [ main ]
 
 jobs:
   # Monitor CI jobs for loops and hangs
@@ -17,6 +16,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - name: Setup GitHub CLI
+        run: |
+          curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+          echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+          sudo apt update
+          sudo apt install gh -y
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Check for stuck workflows
         id: check-stuck
         run: |
@@ -50,6 +58,8 @@ jobs:
           else
             echo "✅ No stuck workflows found"
           fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Check for repeated steps
         id: check-repeated
@@ -84,6 +94,8 @@ jobs:
               done
             fi
           done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Handle stuck workflows
         if: steps.check-stuck.outputs.stuck_workflow_id != ''
@@ -98,6 +110,8 @@ jobs:
           
           # Send notification
           echo "❌ Workflow $WORKFLOW_ID was cancelled due to timeout ($DURATION minutes)"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Handle repeated steps
         if: steps.check-repeated.outputs.repeated_workflow_id != ''
@@ -117,6 +131,8 @@ jobs:
           
           # Send notification
           echo "❌ Workflow $WORKFLOW_ID was cancelled due to repeated steps"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Send notifications
         if: always() && (steps.check-stuck.outputs.stuck_workflow_id != '' || steps.check-repeated.outputs.repeated_workflow_id != '')
@@ -149,3 +165,5 @@ jobs:
           
           # Send to a designated channel or issue
           echo "$NOTIFICATION"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
