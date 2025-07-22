@@ -15,8 +15,8 @@ import 'providers/auth_provider.dart';
 import 'providers/theme_provider.dart';
 import 'providers/notification_provider.dart';
 import 'services/notification_service.dart';
-import 'theme/app_theme.dart;
-importwidgets/splash_screen.dart';
+import 'theme/app_theme.dart';
+import 'widgets/splash_screen.dart';
 
 /// Main entry point for the AppOint application
 void main() async {
