@@ -25,14 +25,30 @@ class BusinessSubscriptionService {
   FirebaseAuth get auth => _auth;
   FirebaseFunctions get functions => _functions;
 
-  // Subscribe to Basic plan (€4.99)
-  Future<void> subscribeBasic() async {
-    await _subscribeToPlan(SubscriptionPlan.basic);
+  // Subscribe to Starter plan (€5.00)
+  Future<void> subscribeStarter() async {
+    await _subscribeToPlan(SubscriptionPlan.starter);
   }
 
-  // Subscribe to Pro plan (€14.99)
+  // Subscribe to Professional plan (€15.00)
+  Future<void> subscribeProfessional() async {
+    await _subscribeToPlan(SubscriptionPlan.professional);
+  }
+
+  // Subscribe to Business Plus plan (€25.00)
+  Future<void> subscribeBusinessPlus() async {
+    await _subscribeToPlan(SubscriptionPlan.businessPlus);
+  }
+
+  // Legacy method redirects (for backward compatibility)
+  @Deprecated('Use subscribeStarter() instead')
+  Future<void> subscribeBasic() async {
+    await subscribeStarter();
+  }
+
+  @Deprecated('Use subscribeProfessional() instead')
   Future<void> subscribePro() async {
-    await _subscribeToPlan(SubscriptionPlan.pro);
+    await subscribeProfessional();
   }
 
   // Generic subscription method
@@ -70,6 +86,122 @@ class BusinessSubscriptionService {
     }
   }
 
+  // Feature Access Control Methods
+
+  /// Check if user can access branding features
+  Future<bool> canAccessBranding() async {
+    final subscription = await getCurrentSubscription();
+    if (subscription == null || !subscription.status.isActive) {
+      return false;
+    }
+    return subscription.plan.brandingEnabled;
+  }
+
+  /// Check if user can load maps and track usage
+  Future<bool> canLoadMap() async {
+    final subscription = await getCurrentSubscription();
+    if (subscription == null || !subscription.status.isActive) {
+      return false;
+    }
+    
+    final mapLimit = subscription.plan.mapLimit;
+    if (mapLimit == 0) return false; // Starter plan has no maps
+    if (mapLimit == -1) return true; // Unlimited (not used currently)
+    
+    return subscription.mapUsageCurrentPeriod < mapLimit;
+  }
+
+  /// Record map usage and handle overages
+  Future<void> recordMapUsage() async {
+    final user = _auth.currentUser;
+    if (user == null) return;
+
+    final subscription = await getCurrentSubscription();
+    if (subscription == null || !subscription.status.isActive) {
+      throw Exception('No active subscription found');
+    }
+
+    final mapLimit = subscription.plan.mapLimit;
+    final currentUsage = subscription.mapUsageCurrentPeriod;
+    final newUsage = currentUsage + 1;
+    
+    double newOverage = subscription.mapOverageThisPeriod;
+    
+    // Calculate overage if we exceed the limit
+    if (mapLimit > 0 && newUsage > mapLimit) {
+      newOverage += MapUsageConstants.overageRatePerLoad;
+    }
+
+    // Update subscription with new usage
+    await _firestore
+        .collection('business_subscriptions')
+        .doc(subscription.id)
+        .update({
+      'mapUsageCurrentPeriod': newUsage,
+      'mapOverageThisPeriod': newOverage,
+      'updatedAt': DateTime.now().toIso8601String(),
+    });
+  }
+
+  /// Get remaining map quota for current period
+  Future<int> getRemainingMapQuota() async {
+    final subscription = await getCurrentSubscription();
+    if (subscription == null || !subscription.status.isActive) {
+      return 0;
+    }
+    
+    final mapLimit = subscription.plan.mapLimit;
+    if (mapLimit == 0) return 0; // Starter plan
+    if (mapLimit == -1) return -1; // Unlimited
+    
+    return (mapLimit - subscription.mapUsageCurrentPeriod).clamp(0, mapLimit);
+  }
+
+  /// Reset map usage at the start of new billing period
+  Future<void> resetMapUsageForNewPeriod() async {
+    final user = _auth.currentUser;
+    if (user == null) return;
+
+    final subscription = await getCurrentSubscription();
+    if (subscription == null) return;
+
+    await _firestore
+        .collection('business_subscriptions')
+        .doc(subscription.id)
+        .update({
+      'mapUsageCurrentPeriod': 0,
+      'mapOverageThisPeriod': 0.0,
+      'updatedAt': DateTime.now().toIso8601String(),
+    });
+  }
+
+  /// Generate overage invoice for map usage
+  Future<void> generateOverageInvoice() async {
+    final user = _auth.currentUser;
+    if (user == null) return;
+
+    final subscription = await getCurrentSubscription();
+    if (subscription == null || subscription.mapOverageThisPeriod <= 0) {
+      return;
+    }
+
+    // Create overage invoice
+    await _firestore.collection('invoices').add({
+      'businessId': user.uid,
+      'subscriptionId': subscription.id,
+      'type': 'overage',
+      'amount': subscription.mapOverageThisPeriod,
+      'description': 'Map usage overage charges',
+      'mapOverageAmount': subscription.mapOverageThisPeriod,
+      'mapOverageCount': (subscription.mapOverageThisPeriod / MapUsageConstants.overageRatePerLoad).round(),
+      'periodStart': subscription.currentPeriodStart.toIso8601String(),
+      'periodEnd': subscription.currentPeriodEnd.toIso8601String(),
+      'createdAt': DateTime.now().toIso8601String(),
+      'status': 'pending',
+      'currency': 'EUR',
+    });
+  }
+
   // Apply promo code
   Future<void> applyPromoCode(String code) async {
     try {
@@ -104,6 +236,9 @@ class BusinessSubscriptionService {
           'customerId': user.uid,
           'promoCodeId': promoCode.id,
           'status': 'inactive',
+          'plan': 'starter', // Default to starter
+          'mapUsageCurrentPeriod': 0,
+          'mapOverageThisPeriod': 0.0,
           'createdAt': DateTime.now().toIso8601String(),
           'updatedAt': DateTime.now().toIso8601String(),
         });
@@ -128,8 +263,14 @@ class BusinessSubscriptionService {
       final callable =
           _functions.httpsCallable('createBusinessCheckoutSession');
       final result = await callable.call({
-        'plan': plan.name,
+        'plan': plan.name.toLowerCase(),
+        'priceId': plan.stripePriceId,
         'promoCode': promoCode,
+        'metadata': {
+          'tier': plan.name,
+          'mapLimit': plan.mapLimit,
+          'brandingEnabled': plan.brandingEnabled,
+        },
       });
 
       return result.data['sessionId'] as String;
@@ -268,28 +409,68 @@ class BusinessSubscriptionService {
     return subscription != null && subscription.status.isActive;
   }
 
-  // Get subscription plan limits
+  // Get subscription plan limits and feature access
   Future<Map<String, dynamic>> getSubscriptionLimits() async {
     final subscription = await getCurrentSubscription();
 
     if (subscription == null) {
       return {
         'meetingLimit': 0,
+        'mapLimit': 0,
+        'brandingEnabled': false,
         'hasAnalytics': false,
+        'hasAdvancedAnalytics': false,
         'hasCsvExport': false,
         'hasEmailReminders': false,
         'hasMonthlyCalendar': false,
         'hasClientList': false,
+        'hasPrioritySupport': false,
+        'mapUsageCurrentPeriod': 0,
+        'mapOverageThisPeriod': 0.0,
+        'remainingMapQuota': 0,
       };
     }
 
+    final remainingMapQuota = await getRemainingMapQuota();
+
     return {
       'meetingLimit': subscription.plan.meetingLimit,
-      'hasAnalytics': subscription.plan == SubscriptionPlan.pro,
-      'hasCsvExport': subscription.plan == SubscriptionPlan.pro,
-      'hasEmailReminders': subscription.plan == SubscriptionPlan.pro,
-      'hasMonthlyCalendar': subscription.plan == SubscriptionPlan.pro,
-      'hasClientList': subscription.plan == SubscriptionPlan.pro,
+      'mapLimit': subscription.plan.mapLimit,
+      'brandingEnabled': subscription.plan.brandingEnabled,
+      'hasAnalytics': subscription.plan.hasAnalytics,
+      'hasAdvancedAnalytics': subscription.plan.hasAdvancedAnalytics,
+      'hasCsvExport': subscription.plan.hasAnalytics, // Include with analytics
+      'hasEmailReminders': subscription.plan.hasAnalytics, // Include with analytics
+      'hasMonthlyCalendar': subscription.plan != SubscriptionPlan.starter,
+      'hasClientList': subscription.plan != SubscriptionPlan.starter,
+      'hasPrioritySupport': subscription.plan.hasPrioritySupport,
+      'mapUsageCurrentPeriod': subscription.mapUsageCurrentPeriod,
+      'mapOverageThisPeriod': subscription.mapOverageThisPeriod,
+      'remainingMapQuota': remainingMapQuota,
+    };
+  }
+
+  /// Get user-friendly feature access status
+  Future<Map<String, String>> getFeatureAccessStatus() async {
+    final subscription = await getCurrentSubscription();
+    
+    if (subscription == null || !subscription.status.isActive) {
+      return {
+        'branding': 'locked',
+        'maps': 'locked',
+        'analytics': 'locked',
+        'priority_support': 'locked',
+      };
+    }
+
+    final remainingMaps = await getRemainingMapQuota();
+    
+    return {
+      'branding': subscription.plan.brandingEnabled ? 'enabled' : 'locked',
+      'maps': subscription.plan.mapLimit > 0 ? 
+              (remainingMaps > 0 ? 'enabled' : 'quota_exceeded') : 'locked',
+      'analytics': subscription.plan.hasAnalytics ? 'enabled' : 'locked',
+      'priority_support': subscription.plan.hasPrioritySupport ? 'enabled' : 'locked',
     };
   }
 }
