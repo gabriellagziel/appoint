@@ -29,7 +29,7 @@ import 'package:appoint/features/studio_business/screens/appointments_screen.dar
     as studio_appointments;
 import 'package:appoint/features/studio_business/screens/business_calendar_screen.dart';
 import 'package:appoint/features/studio_business/screens/business_connect_screen.dart';
-import 'package:appoint/features/studio_business/screens/business_dashboard_screen.dart';
+
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
 import 'package:appoint/features/studio_business/screens/clients_screen.dart'
     as studio_clients;
@@ -397,7 +397,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
             path: 'dashboard',
             name: 'studioDashboard',
             builder: (context, final state) =>
-                const BusinessDashboardScreen(),
+                const business.BusinessDashboardScreen(),
           ),
         ],
       ),

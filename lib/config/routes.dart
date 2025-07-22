@@ -40,7 +40,9 @@ import 'package:appoint/features/studio/ui/providers_screen.dart';
 import 'package:appoint/features/studio/ui/staff_screen.dart';
 import 'package:appoint/features/studio/ui/studio_dashboard_screen.dart';
 import 'package:appoint/features/studio_business/entry/business_entry_screen.dart';
-import 'package:appoint/features/studio_business/screens/business_dashboard_screen.dart';
+import 'package:appoint/features/business/screens/business_dashboard_screen.dart'
+    as business;
+
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
 import 'package:appoint/features/studio_profile/studio_profile_screen.dart';
 import 'package:appoint/models/invite.dart';
@@ -229,7 +231,7 @@ class AppRouter {
         );
       case '/business/dashboard':
         return MaterialPageRoute(
-          builder: (_) => const BusinessDashboardScreen(),
+          builder: (_) => const business.BusinessDashboardScreen(),
           settings: settings,
         );
       case '/business':
