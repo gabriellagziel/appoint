@@ -1,0 +1,18 @@
+name: App-Oint
+services:
+  - name: marketing
+    source_dir: marketing
+    routes:
+      - path: /
+  - name: business
+    source_dir: business
+    routes:
+      - path: /business/*
+  - name: admin
+    source_dir: admin
+    routes:
+      - path: /admin/*
+  - name: api
+    source_dir: functions
+    routes:
+      - path: /api/*
