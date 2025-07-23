@@ -5,117 +5,100 @@ services:
     github:
       repo: saharmor/app-oint
       branch: main
-    run_command: npm start
     build_command: npm ci && npm run build
+    run_command: npm start
     environment_slug: node-js
     instance_count: 1
     instance_size_slug: basic-xxs
-    routes:
-      - path: /
     envs:
-      - key: NODE_ENV
-        value: production
       - key: PORT
         value: "8080"
-      - key: NEXT_PUBLIC_API_URL
-        value: "https://app-oint.com/api"
-      - key: FIREBASE_PROJECT_ID
-        value: app-oint-core
-      - key: FIREBASE_APP_ID
-        value: "1:944776470711:web:6f3c833ef110bca6c66d32"
+      - key: NODE_ENV
+        value: production
+    routes:
+      - path: /
     health_check:
       http_path: /
       initial_delay_seconds: 120
       period_seconds: 30
       timeout_seconds: 10
       success_threshold: 1
-      failure_threshold: 5
+      failure_threshold: 3
   - name: business
     source_dir: business
     github:
       repo: saharmor/app-oint
       branch: main
-    run_command: flutter run --web-port=8080 --web-hostname=0.0.0.0 --release
-    build_command: flutter build web --release --base-href="/business/"
-    environment_slug: docker
-    dockerfile_path: business/Dockerfile
+    build_command: npm ci && npm run build
+    run_command: npm start
+    environment_slug: node-js
     instance_count: 1
     instance_size_slug: basic-xxs
+    envs:
+      - key: PORT
+        value: "8081"
+      - key: NODE_ENV
+        value: production
     routes:
       - path: /business
       - path: /business/*
-    envs:
-      - key: FLUTTER_WEB_PORT
-        value: "8080"
-      - key: FIREBASE_PROJECT_ID
-        value: app-oint-core
-      - key: FIREBASE_APP_ID
-        value: "1:944776470711:web:6f3c833ef110bca6c66d32"
-      - key: STRIPE_PUBLISHABLE_KEY
-        value: pk_live_51MmxwTJMwDQGx5Wujdzc3TvC7SmoriDEM1RtrKcWZbLxMZiOeYy577Y70pHkgZEUwc31HMwbfWS2b5v81oEDTC4s004Gih1Zcz
     health_check:
-      http_path: /business/
-      initial_delay_seconds: 180
+      http_path: /business
+      initial_delay_seconds: 120
       period_seconds: 30
-      timeout_seconds: 15
+      timeout_seconds: 10
       success_threshold: 1
-      failure_threshold: 5
+      failure_threshold: 3
   - name: admin
     source_dir: admin
     github:
       repo: saharmor/app-oint
       branch: main
-    run_command: flutter run --web-port=8080 --web-hostname=0.0.0.0 --release
-    build_command: flutter build web --release --base-href="/admin/"
-    environment_slug: docker
-    dockerfile_path: admin/Dockerfile
+    build_command: npm ci && npm run build
+    run_command: npm start
+    environment_slug: node-js
     instance_count: 1
     instance_size_slug: basic-xxs
+    envs:
+      - key: PORT
+        value: "8082"
+      - key: NODE_ENV
+        value: production
     routes:
       - path: /admin
       - path: /admin/*
-    envs:
-      - key: FLUTTER_WEB_PORT
-        value: "8080"
-      - key: FIREBASE_PROJECT_ID
-        value: app-oint-core
-      - key: FIREBASE_APP_ID
-        value: "1:944776470711:web:6f3c833ef110bca6c66d32"
     health_check:
-      http_path: /admin/
-      initial_delay_seconds: 180
+      http_path: /admin
+      initial_delay_seconds: 120
       period_seconds: 30
-      timeout_seconds: 15
+      timeout_seconds: 10
       success_threshold: 1
-      failure_threshold: 5
+      failure_threshold: 3
   - name: api
     source_dir: functions
     github:
       repo: saharmor/app-oint
       branch: main
-    run_command: npm start
     build_command: npm ci && npm run build
+    run_command: npm start
     environment_slug: node-js
     instance_count: 1
     instance_size_slug: basic-xxs
+    envs:
+      - key: PORT
+        value: "8083"
+      - key: NODE_ENV
+        value: production
     routes:
       - path: /api
       - path: /api/*
-    envs:
-      - key: NODE_ENV
-        value: production
-      - key: PORT
-        value: "8080"
-      - key: FIREBASE_PROJECT_ID
-        value: app-oint-core
-      - key: FIREBASE_APP_ID
-        value: "1:944776470711:web:6f3c833ef110bca6c66d32"
-      - key: STRIPE_SECRET_KEY
-        value: pk_live_51MmxwTJMwDQGx5Wujdzc3TvC7SmoriDEM1RtrKcWZbLxMZiOeYy577Y70pHkgZEUwc31HMwbfWS2b5v81oEDTC4s004Gih1Zcz
     health_check:
-      http_path: /api/status
+      http_path: /api/health
       initial_delay_seconds: 90
       period_seconds: 30
       timeout_seconds: 10
       success_threshold: 1
       failure_threshold: 3
+domains:
+  - domain: app-oint.com
+    type: PRIMARY
