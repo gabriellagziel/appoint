@@ -7,11 +7,12 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "export": "next build --no-lint && mkdir -p out && cp -r .next/server/pages/* out/ && cp -r public/* out/ || true",
-    "start": "next start",
-    "serve": "serve out",
+    "start": "next start -p ${PORT:-8080}",
+    "serve": "serve out -p ${PORT:-8080}",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
-    "generate-translations": "node scripts/generate-translations.js"
+    "generate-translations": "node scripts/generate-translations.js",
+    "production": "npm run build && npm run start"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.1.1",
