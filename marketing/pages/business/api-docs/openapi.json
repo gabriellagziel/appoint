@@ -1,0 +1,929 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "App-Oint Enterprise API",
+    "description": "Complete REST API for enterprise appointment scheduling integration",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Enterprise API Support",
+      "email": "enterprise@app-oint.com",
+      "url": "https://app-oint.com/enterprise"
+    },
+    "license": {
+      "name": "Proprietary",
+      "url": "https://app-oint.com/terms"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://us-central1-app-oint-core.cloudfunctions.net",
+      "description": "Production API Server"
+    },
+    {
+      "url": "https://api.app-oint.com",
+      "description": "Custom Domain (Future)"
+    }
+  ],
+  "security": [
+    {
+      "ApiKeyAuth": []
+    },
+    {
+      "OAuth2": ["appointments:read", "appointments:write", "billing:read"]
+    }
+  ],
+  "tags": [
+    {
+      "name": "Authentication",
+      "description": "Business registration and API key management"
+    },
+    {
+      "name": "Appointments",
+      "description": "Appointment creation, cancellation, and management"
+    },
+    {
+      "name": "Calendar",
+      "description": "Calendar feed generation and ICS token management"
+    },
+    {
+      "name": "Analytics",
+      "description": "Usage statistics and reporting"
+    },
+    {
+      "name": "Billing",
+      "description": "Invoice management and payment tracking"
+    }
+  ],
+  "paths": {
+    "/registerBusiness": {
+      "post": {
+        "tags": ["Authentication"],
+        "summary": "Register new business for API access",
+        "description": "Self-service business registration to obtain API key and initial quota",
+        "operationId": "registerBusiness",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BusinessRegistration"
+              },
+              "example": {
+                "name": "Acme Healthcare",
+                "email": "admin@acme-health.com",
+                "industry": "Healthcare"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Business registered successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BusinessRegistrationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/BadRequest"
+          },
+          "500": {
+            "$ref": "#/components/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/businessApi/appointments/create": {
+      "post": {
+        "tags": ["Appointments"],
+        "summary": "Create new appointment",
+        "description": "Create a new appointment with customer details and scheduling information",
+        "operationId": "createAppointment",
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateAppointmentRequest"
+              },
+              "example": {
+                "customerName": "John Doe",
+                "customerEmail": "john@example.com",
+                "start": "2024-01-15T10:00:00Z",
+                "duration": 60,
+                "description": "Annual checkup",
+                "location": "Room 101"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Appointment created successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AppointmentResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/RateLimited"
+          },
+          "500": {
+            "$ref": "#/components/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/businessApi/appointments/cancel": {
+      "post": {
+        "tags": ["Appointments"],
+        "summary": "Cancel existing appointment",
+        "description": "Cancel an appointment by its ID",
+        "operationId": "cancelAppointment",
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CancelAppointmentRequest"
+              },
+              "example": {
+                "appointmentId": "abc123def456"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Appointment cancelled successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CancelAppointmentResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          },
+          "429": {
+            "$ref": "#/components/responses/RateLimited"
+          },
+          "500": {
+            "$ref": "#/components/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/businessApi/appointments": {
+      "get": {
+        "tags": ["Appointments"],
+        "summary": "List appointments",
+        "description": "Retrieve a list of appointments with optional filtering",
+        "operationId": "listAppointments",
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "start",
+            "in": "query",
+            "description": "Filter appointments starting from this date (ISO 8601)",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "description": "Filter appointments ending before this date (ISO 8601)",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "description": "Filter by appointment status",
+            "schema": {
+              "type": "string",
+              "enum": ["confirmed", "cancelled", "completed"]
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Maximum number of appointments to return",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Appointments retrieved successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AppointmentListResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "429": {
+            "$ref": "#/components/responses/RateLimited"
+          },
+          "500": {
+            "$ref": "#/components/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/icsFeed": {
+      "get": {
+        "tags": ["Calendar"],
+        "summary": "Get ICS calendar feed",
+        "description": "Generate ICS calendar feed for business appointments",
+        "operationId": "getIcsFeed",
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "required": true,
+            "description": "ICS calendar access token",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ICS calendar feed",
+            "content": {
+              "text/calendar": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/BadRequest"
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          },
+          "500": {
+            "$ref": "#/components/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/rotateIcsToken": {
+      "post": {
+        "tags": ["Calendar"],
+        "summary": "Rotate ICS access token",
+        "description": "Generate new ICS calendar access token",
+        "operationId": "rotateIcsToken",
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Token rotated successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IcsTokenResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "405": {
+            "$ref": "#/components/responses/MethodNotAllowed"
+          },
+          "500": {
+            "$ref": "#/components/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/getUsageStats": {
+      "get": {
+        "tags": ["Analytics"],
+        "summary": "Get usage statistics",
+        "description": "Retrieve API usage statistics for the current or specified month",
+        "operationId": "getUsageStats",
+        "security": [
+          {
+            "ApiKeyAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "month",
+            "in": "query",
+            "description": "Month (1-12)",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            }
+          },
+          {
+            "name": "year",
+            "in": "query",
+            "description": "Year (YYYY)",
+            "schema": {
+              "type": "integer",
+              "minimum": 2024
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Usage statistics retrieved successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UsageStatsResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "500": {
+            "$ref": "#/components/responses/InternalError"
+          }
+        }
+      }
+    },
+    "/oauth/authorize": {
+      "get": {
+        "tags": ["Authentication"],
+        "summary": "OAuth2 authorization endpoint",
+        "description": "Start OAuth2 authorization flow",
+        "operationId": "authorizeOAuth",
+        "parameters": [
+          {
+            "name": "client_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "redirect_uri",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "response_type",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": ["code"]
+            }
+          },
+          {
+            "name": "scope",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "state",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "302": {
+            "description": "Redirect to authorization callback"
+          },
+          "400": {
+            "$ref": "#/components/responses/BadRequest"
+          }
+        }
+      }
+    },
+    "/oauth/token": {
+      "post": {
+        "tags": ["Authentication"],
+        "summary": "OAuth2 token exchange",
+        "description": "Exchange authorization code for access token",
+        "operationId": "exchangeToken",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "schema": {
+                "$ref": "#/components/schemas/TokenRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Token response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TokenResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/BadRequest"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BusinessRegistration": {
+        "type": "object",
+        "required": ["name", "email"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Business name",
+            "example": "Acme Healthcare"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "description": "Business contact email",
+            "example": "admin@acme-health.com"
+          },
+          "industry": {
+            "type": "string",
+            "description": "Business industry",
+            "example": "Healthcare"
+          }
+        }
+      },
+      "BusinessRegistrationResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Business ID",
+            "example": "biz_123abc"
+          },
+          "apiKey": {
+            "type": "string",
+            "description": "API key for authentication",
+            "example": "ak_123abc456def"
+          },
+          "quota": {
+            "type": "integer",
+            "description": "Monthly API call quota",
+            "example": 1000
+          },
+          "scopes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Granted API scopes",
+            "example": ["appointments:read", "appointments:write", "billing:read"]
+          }
+        }
+      },
+      "CreateAppointmentRequest": {
+        "type": "object",
+        "required": ["customerName", "start", "duration"],
+        "properties": {
+          "customerName": {
+            "type": "string",
+            "description": "Customer full name",
+            "example": "John Doe"
+          },
+          "customerEmail": {
+            "type": "string",
+            "format": "email",
+            "description": "Customer email address",
+            "example": "john@example.com"
+          },
+          "start": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Appointment start time (ISO 8601)",
+            "example": "2024-01-15T10:00:00Z"
+          },
+          "duration": {
+            "type": "integer",
+            "description": "Appointment duration in minutes",
+            "example": 60
+          },
+          "description": {
+            "type": "string",
+            "description": "Appointment description",
+            "example": "Annual checkup"
+          },
+          "location": {
+            "type": "string",
+            "description": "Appointment location",
+            "example": "Room 101"
+          }
+        }
+      },
+      "AppointmentResponse": {
+        "type": "object",
+        "properties": {
+          "appointmentId": {
+            "type": "string",
+            "description": "Unique appointment ID",
+            "example": "appt_123abc456"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["confirmed", "cancelled", "completed"],
+            "description": "Appointment status",
+            "example": "confirmed"
+          },
+          "start": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Appointment start time",
+            "example": "2024-01-15T10:00:00Z"
+          },
+          "end": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Appointment end time",
+            "example": "2024-01-15T11:00:00Z"
+          },
+          "customerName": {
+            "type": "string",
+            "description": "Customer name",
+            "example": "John Doe"
+          },
+          "duration": {
+            "type": "integer",
+            "description": "Duration in minutes",
+            "example": 60
+          }
+        }
+      },
+      "CancelAppointmentRequest": {
+        "type": "object",
+        "required": ["appointmentId"],
+        "properties": {
+          "appointmentId": {
+            "type": "string",
+            "description": "ID of appointment to cancel",
+            "example": "appt_123abc456"
+          }
+        }
+      },
+      "CancelAppointmentResponse": {
+        "type": "object",
+        "properties": {
+          "cancelled": {
+            "type": "boolean",
+            "description": "Cancellation success flag",
+            "example": true
+          },
+          "appointmentId": {
+            "type": "string",
+            "description": "Cancelled appointment ID",
+            "example": "appt_123abc456"
+          },
+          "status": {
+            "type": "string",
+            "description": "Updated appointment status",
+            "example": "cancelled"
+          },
+          "cancelledAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Cancellation timestamp",
+            "example": "2024-01-14T15:30:00Z"
+          }
+        }
+      },
+      "AppointmentListResponse": {
+        "type": "object",
+        "properties": {
+          "appointments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AppointmentResponse"
+            }
+          },
+          "count": {
+            "type": "integer",
+            "description": "Number of appointments returned"
+          },
+          "hasMore": {
+            "type": "boolean",
+            "description": "Whether more appointments are available"
+          }
+        }
+      },
+      "IcsTokenResponse": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "description": "New ICS access token",
+            "example": "ics_789xyz123"
+          }
+        }
+      },
+      "UsageStatsResponse": {
+        "type": "object",
+        "properties": {
+          "month": {
+            "type": "integer",
+            "description": "Month of statistics"
+          },
+          "year": {
+            "type": "integer",
+            "description": "Year of statistics"
+          },
+          "totalCalls": {
+            "type": "integer",
+            "description": "Total API calls made"
+          },
+          "quota": {
+            "type": "integer",
+            "description": "Monthly quota limit"
+          },
+          "remaining": {
+            "type": "integer",
+            "description": "Remaining calls this month"
+          },
+          "endpoints": {
+            "type": "object",
+            "description": "Usage breakdown by endpoint"
+          }
+        }
+      },
+      "TokenRequest": {
+        "type": "object",
+        "required": ["grant_type"],
+        "properties": {
+          "grant_type": {
+            "type": "string",
+            "enum": ["authorization_code", "client_credentials", "refresh_token"]
+          },
+          "code": {
+            "type": "string",
+            "description": "Authorization code (for authorization_code grant)"
+          },
+          "client_id": {
+            "type": "string",
+            "description": "OAuth client ID"
+          },
+          "client_secret": {
+            "type": "string",
+            "description": "OAuth client secret"
+          },
+          "refresh_token": {
+            "type": "string",
+            "description": "Refresh token (for refresh_token grant)"
+          }
+        }
+      },
+      "TokenResponse": {
+        "type": "object",
+        "properties": {
+          "access_token": {
+            "type": "string",
+            "description": "Access token"
+          },
+          "refresh_token": {
+            "type": "string",
+            "description": "Refresh token"
+          },
+          "token_type": {
+            "type": "string",
+            "description": "Token type",
+            "example": "bearer"
+          },
+          "expires_in": {
+            "type": "integer",
+            "description": "Token expiration in seconds",
+            "example": 3600
+          }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "string",
+            "description": "Error message"
+          },
+          "code": {
+            "type": "string",
+            "description": "Error code"
+          }
+        }
+      }
+    },
+    "responses": {
+      "BadRequest": {
+        "description": "Bad request",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            },
+            "example": {
+              "error": "Missing required fields: customerName, start, duration"
+            }
+          }
+        }
+      },
+      "Unauthorized": {
+        "description": "Unauthorized - Invalid or missing API key",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            },
+            "example": {
+              "error": "API key missing"
+            }
+          }
+        }
+      },
+      "Forbidden": {
+        "description": "Forbidden - Insufficient permissions",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            },
+            "example": {
+              "error": "Insufficient permissions - appointments:write required"
+            }
+          }
+        }
+      },
+      "NotFound": {
+        "description": "Resource not found",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            },
+            "example": {
+              "error": "Appointment not found"
+            }
+          }
+        }
+      },
+      "MethodNotAllowed": {
+        "description": "Method not allowed",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            },
+            "example": {
+              "error": "Method Not Allowed"
+            }
+          }
+        }
+      },
+      "RateLimited": {
+        "description": "Rate limit exceeded",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            },
+            "examples": {
+              "quota_exceeded": {
+                "summary": "Monthly quota exceeded",
+                "value": {
+                  "error": "Monthly quota exceeded - account limited to 5 calls/day"
+                }
+              },
+              "rate_limit": {
+                "summary": "Rate limit exceeded",
+                "value": {
+                  "error": "Rate limit exceeded"
+                }
+              }
+            }
+          }
+        }
+      },
+      "InternalError": {
+        "description": "Internal server error",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            },
+            "example": {
+              "error": "Internal Server Error"
+            }
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "ApiKeyAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-Key",
+        "description": "API key obtained from business registration"
+      },
+      "OAuth2": {
+        "type": "oauth2",
+        "flows": {
+          "authorizationCode": {
+            "authorizationUrl": "/oauth/authorize",
+            "tokenUrl": "/oauth/token",
+            "scopes": {
+              "appointments:read": "Read appointment data",
+              "appointments:write": "Create and modify appointments",
+              "billing:read": "Read billing and usage information",
+              "billing:write": "Manage billing and invoices"
+            }
+          },
+          "clientCredentials": {
+            "tokenUrl": "/oauth/token",
+            "scopes": {
+              "appointments:read": "Read appointment data",
+              "appointments:write": "Create and modify appointments",
+              "billing:read": "Read billing and usage information"
+            }
+          }
+        }
+      }
+    }
+  }
+}
