@@ -254,10 +254,7 @@ export const businessApi = functions.https.onRequest(businessApiApp);
  * Scheduled function: Reset monthly quotas & trigger billing every 1st day of month.
  * Runs at 00:00 on day-1 UTC.
  */
-export const resetMonthlyQuotas = functions.pubsub
-  .schedule('0 0 1 * *')
-  .timeZone('UTC')
-  .onRun(async () => {
+export const resetMonthlyQuotas = functions.scheduler.onSchedule('0 0 1 * *', async () => {
     const snapshot = await db.collection(BUSINESS_COLLECTION).get();
 
     const batch = db.batch();
