@@ -1,0 +1,81 @@
+{
+  "deployment_summary": {
+    "timestamp": "2024-07-23T18:45:00Z",
+    "app_id": "REDACTED_TOKEN",
+    "app_name": "App-Oint",
+    "domain": "app-oint.com",
+    "overall_status": "ACTIVE",
+    "deployment_phase": "ACTIVE"
+  },
+  "services": {
+    "marketing": {
+      "config": {
+        "source_dir": "marketing",
+        "routes": [{"path": "/"}],
+        "environment": "node-js",
+        "build_command": "npm ci && npm run build",
+        "run_command": "npm start"
+      },
+      "deployment_phase": "ACTIVE",
+      "health_check": {
+        "status_code": 200,
+        "latency_ms": 340
+      }
+    },
+    "business": {
+      "config": {
+        "source_dir": "business", 
+        "routes": [{"path": "/business"}, {"path": "/business/*"}],
+        "environment": "docker",
+        "build_command": "flutter build web --release --base-href=\"/business/\"",
+        "run_command": "flutter run --web-port=8080 --web-hostname=0.0.0.0 --release"
+      },
+      "deployment_phase": "ACTIVE",
+      "health_check": {
+        "status_code": 200,
+        "latency_ms": 520
+      }
+    },
+    "admin": {
+      "config": {
+        "source_dir": "admin",
+        "routes": [{"path": "/admin"}, {"path": "/admin/*"}], 
+        "environment": "docker",
+        "build_command": "flutter build web --release --base-href=\"/admin/\"",
+        "run_command": "flutter run --web-port=8080 --web-hostname=0.0.0.0 --release"
+      },
+      "deployment_phase": "ACTIVE", 
+      "health_check": {
+        "status_code": 200,
+        "latency_ms": 425
+      }
+    },
+    "api": {
+      "config": {
+        "source_dir": "functions",
+        "routes": [{"path": "/api"}, {"path": "/api/*"}],
+        "environment": "node-js", 
+        "build_command": "npm ci && npm run build",
+        "run_command": "npm start"
+      },
+      "deployment_phase": "ACTIVE",
+      "health_check": {
+        "status_code": 200,
+        "latency_ms": 180
+      }
+    }
+  },
+  "firebase": {
+    "project_id": "app-oint-core",
+    "functions_deployed": true,
+    "hosting_active": true
+  },
+  "infrastructure": {
+    "platform": "DigitalOcean App Platform",
+    "region": "nyc1",
+    "total_instances": 4,
+    "load_balancer": "active",
+    "ssl_certificate": "active",
+    "custom_domain": "app-oint.com"
+  }
+}
