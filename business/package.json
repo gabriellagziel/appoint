@@ -1,0 +1,13 @@
+{
+  "name": "business-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Building business app...'",
+    "export": "mkdir -p out && echo '<html><head><title>Business App</title></head><body><h1>App-Oint Business Panel</h1><p>Coming Soon</p></body></html>' > out/index.html",
+    "serve": "serve out -p ${PORT:-8081}",
+    "start": "npm run serve"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}
