@@ -20,7 +20,7 @@ function sendAlert(message: string) {
   console.log('ALERT:', message);
 }
 
-export const hourlyAlerts = functions.pubsub.schedule('every 60 minutes').onRun(async () => {
+export const hourlyAlerts = functions.scheduler.onSchedule('every 60 minutes', async () => {
   const now = admin.firestore.Timestamp.now();
 
   // Quota near limit
