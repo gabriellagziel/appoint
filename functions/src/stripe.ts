@@ -14,10 +14,10 @@ admin.initializeApp();
 const db = admin.firestore();
 
 // Create business checkout session (NEW)
-export const createBusinessCheckoutSession = functions.https.onCall(async (data, context) => {
+export const createBusinessCheckoutSession = functions.https.onCall(async (data: any, context: any) => {
   try {
-    const { plan, priceId, promoCode, metadata } = data;
-    const userId = context.auth?.uid;
+    const { plan, priceId, promoCode, metadata } = data || {};
+    const userId = context?.auth?.uid;
 
     if (!userId) {
       throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -129,9 +129,9 @@ export const createCheckoutSession = functions.https.onRequest(async (req, res) 
 });
 
 // Create customer portal session
-export const createCustomerPortalSession = functions.https.onCall(async (data, context) => {
+export const createCustomerPortalSession = functions.https.onCall(async (data: any, context: any) => {
   try {
-    const userId = context.auth?.uid;
+    const userId = context?.auth?.uid;
 
     if (!userId) {
       throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -348,8 +348,8 @@ async function handleSubscriptionUpdated(subscription: Stripe.Subscription) {
     // Update business subscription
     await db.collection('business_subscriptions').doc(businessId).update({
       status: subscription.status,
-      currentPeriodStart: new Date(subscription.current_period_start * 1000),
-      currentPeriodEnd: new Date(subscription.current_period_end * 1000),
+      currentPeriodStart: new Date((subscription as any).current_period_start * 1000),
+      currentPeriodEnd: new Date((subscription as any).current_period_end * 1000),
       updatedAt: new Date(),
     });
 
