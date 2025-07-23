@@ -1,6 +1,7 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import fetch from 'node-fetch';
+import { onDocumentWritten } from 'firebase-functions/v2/firestore';
 import crypto from 'crypto';
 
 if (!admin.apps.length) {
@@ -59,9 +60,9 @@ async function deliverWebhook(webhook: any, payload: any) {
  * Firestore trigger when appointments created/updated/cancelled.
  * For demo, listen to collection 'appointments'.
  */
-export const onAppointmentWrite = functions.firestore
-  .document('appointments/{appointmentId}')
-  .onWrite(async (change, context) => {
+export const onAppointmentWrite = onDocumentWritten('appointments/{appointmentId}', async (event: any) => {
+    const change = event.data;
+    const context = event;
     const after = change.after.exists ? change.after.data() : null;
     const before = change.before.exists ? change.before.data() : null;
 
@@ -85,9 +86,7 @@ export const onAppointmentWrite = functions.firestore
 /**
  * Pub/Sub scheduled function processes retries.
  */
-export const processWebhookRetries = functions.pubsub
-  .schedule('every 5 minutes')
-  .onRun(async () => {
+export const processWebhookRetries = functions.scheduler.onSchedule('every 5 minutes', async () => {
     const now = admin.firestore.Timestamp.now();
     const snap = await db.collection(WEBHOOK_COLLECTION).where('nextRetry', '<=', now).get();
     snap.forEach((doc) => {
