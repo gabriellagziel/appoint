@@ -294,13 +294,13 @@ export const assignAmbassador = functions.https.onRequest(async (req, res) => {
 });
 
 // Scheduled functions
-export const scheduledAutoAssign = functions.pubsub.schedule('every 1 hours').onRun(async (context) => {
+export const scheduledAutoAssign = functions.scheduler.onSchedule('every 1 hours').onRun(async (context) => {
   const assignedCount = await autoAssignAvailableSlots();
   console.log(`Scheduled auto-assignment completed. Assigned ${assignedCount} ambassadors.`);
   return null;
 });
 
-export const dailyQuotaReport = functions.pubsub.schedule('every 24 hours').onRun(async (context) => {
+export const dailyQuotaReport = functions.scheduler.onSchedule('every 24 hours').onRun(async (context) => {
   // Generate daily report
   const reportData = {};
   
