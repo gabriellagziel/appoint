@@ -50,6 +50,11 @@ if (isFirebaseFunctions) {
   } = require('./src/ambassador-automation');
 
   const {
+    sendAmbassadorNotification,
+    sendMonthlyReminders,
+  } = require('./src/ambassador-notifications');
+
+  const {
     createCheckoutSession: stripeCreateCheckoutSession,
   } = require('./src/stripe');
 
@@ -91,6 +96,10 @@ if (isFirebaseFunctions) {
     monthlyAmbassadorReview,
     trackUserReferral,
     getAmbassadorDashboard,
+    
+    // Ambassador notification functions
+    sendAmbassadorNotification,
+    sendMonthlyReminders,
     
     // Notification functions
     sendNotificationToStudio,
