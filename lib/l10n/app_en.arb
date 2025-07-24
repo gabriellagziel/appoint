@@ -2713,5 +2713,154 @@
   "purchase_now_button": "Purchase Now",
   "@purchase_now_button": {
     "description": "Button to purchase upgrade"
+  },
+  
+  "ambassadorDashboard": "Ambassador Dashboard",
+  "@ambassadorDashboard": {
+    "description": "Title for the ambassador dashboard screen"
+  },
+  "welcomeAmbassador": "Welcome, Ambassador!",
+  "@welcomeAmbassador": {
+    "description": "Welcome message for ambassadors"
+  },
+  "activeStatus": "Active",
+  "@activeStatus": {
+    "description": "Status label showing ambassador is active"
+  },
+  "overview": "Overview",
+  "@overview": {
+    "description": "Tab label for overview section"
+  },
+  "referrals": "Referrals",
+  "@referrals": {
+    "description": "Tab label for referrals section"
+  },
+  "rewards": "Rewards",
+  "@rewards": {
+    "description": "Tab label for rewards section"
+  },
+  "share": "Share",
+  "@share": {
+    "description": "Tab label for share section"
+  },
+  "totalReferrals": "Total Referrals",
+  "@totalReferrals": {
+    "description": "Label for total referrals count"
+  },
+  "thisMonth": "This Month",
+  "@thisMonth": {
+    "description": "Label for current month statistics"
+  },
+  "activeRewards": "Active Rewards",
+  "@activeRewards": {
+    "description": "Label for active rewards count"
+  },
+  "nextTierProgress": "Next Tier Progress",
+  "@nextTierProgress": {
+    "description": "Section title for tier progression"
+  },
+  "progressToPremium": "Progress to Premium",
+  "@progressToPremium": {
+    "description": "Label for progress towards premium tier"
+  },
+  "remaining": "remaining",
+  "@remaining": {
+    "description": "Label for remaining count towards goal"
+  },
+  "monthlyGoal": "Monthly Goal",
+  "@monthlyGoal": {
+    "description": "Section title for monthly referral goal"
+  },
+  "onTrack": "On Track",
+  "@onTrack": {
+    "description": "Status indicating user is meeting monthly goals"
+  },
+  "needsAttention": "Needs Attention",
+  "@needsAttention": {
+    "description": "Status indicating user needs to increase activity"
+  },
+  "monthlyReferralRequirement": "Refer at least 10 new users monthly to maintain ambassador status",
+  "@monthlyReferralRequirement": {
+    "description": "Explanation of monthly referral requirement"
+  },
+  "quickActions": "Quick Actions",
+  "@quickActions": {
+    "description": "Section title for quick action buttons"
+  },
+  "shareLink": "Share Link",
+  "@shareLink": {
+    "description": "Button label for sharing referral link"
+  },
+  "viewRewards": "View Rewards",
+  "@viewRewards": {
+    "description": "Button label for viewing rewards"
+  },
+  "referralStatistics": "Referral Statistics",
+  "@referralStatistics": {
+    "description": "Section title for referral statistics"
+  },
+  "activeReferrals": "Active Referrals",
+  "@activeReferrals": {
+    "description": "Label for count of active referrals"
+  },
+  "conversionRate": "Conversion Rate",
+  "@conversionRate": {
+    "description": "Label for referral conversion rate"
+  },
+  "recentReferrals": "Recent Referrals",
+  "@recentReferrals": {
+    "description": "Section title for recent referral activity"
+  },
+  "tierBenefits": "Tier Benefits",
+  "@tierBenefits": {
+    "description": "Section title for ambassador tier benefits"
+  },
+  "yourReferralQRCode": "Your Referral QR Code",
+  "@yourReferralQRCode": {
+    "description": "Title for QR code section"
+  },
+  "yourReferralLink": "Your Referral Link",
+  "@yourReferralLink": {
+    "description": "Title for referral link section"
+  },
+  "copyLink": "Copy Link",
+  "@copyLink": {
+    "description": "Tooltip for copy link button"
+  },
+  "shareYourLink": "Share Your Link",
+  "@shareYourLink": {
+    "description": "Section title for sharing options"
+  },
+  "shareViaMessage": "Message",
+  "@shareViaMessage": {
+    "description": "Button label for sharing via message"
+  },
+  "shareViaEmail": "Email",
+  "@shareViaEmail": {
+    "description": "Button label for sharing via email"
+  },
+  "shareMore": "More Options",
+  "@shareMore": {
+    "description": "Button label for additional sharing options"
+  },
+  "becomeAmbassador": "Become an Ambassador",
+  "@becomeAmbassador": {
+    "description": "Button text to join ambassador program"
+  },
+  "ambassadorEligible": "You're eligible to become an Ambassador!",
+  "@ambassadorEligible": {
+    "description": "Message shown when user is eligible for ambassador program"
+  },
+  "ambassadorWelcomeTitle": "Welcome to the Ambassador Program!",
+  "@ambassadorWelcomeTitle": {
+    "description": "Title for ambassador welcome overlay"
+  },
+  "ambassadorWelcomeMessage": "Congratulations! You've been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.",
+  "@ambassadorWelcomeMessage": {
+    "description": "Welcome message for new ambassadors"
+  },
+  "linkCopiedToClipboard": "Link copied to clipboard",
+  "@linkCopiedToClipboard": {
+    "description": "Confirmation message when link is copied"
   }
 }
