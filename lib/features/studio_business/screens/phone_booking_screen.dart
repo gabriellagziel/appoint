@@ -1,4 +1,7 @@
 import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
+import 'package:appoint/features/studio_business/screens/appointments_screen.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/widgets/whatsapp_group_share_button.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -149,6 +152,28 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
                         child: _isProcessing
                             ? const CircularProgressIndicator()
                             : const Text('Send Booking Invite'),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    
+                    // WhatsApp Group Share Button
+                    SizedBox(
+                      width: double.infinity,
+                      child: WhatsAppGroupShareButton(
+                        appointmentId: 'booking-${DateTime.now().millisecondsSinceEpoch}',
+                        creatorId: FirebaseAuth.instance.currentUser?.uid ?? '',
+                        meetingTitle: 'Appointment with ${_nameController.text}',
+                        meetingDate: DateTime.tryParse('${_dateController.text} ${_timeController.text}') ?? DateTime.now().add(Duration(days: 1)),
+                        showAsDialog: true,
+                        onShareComplete: () {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(
+                              content: Text('Shared to WhatsApp! Participants can join using the link.'),
+                              backgroundColor: Color(0xFF25D366),
+                              duration: Duration(seconds: 3),
+                            ),
+                          );
+                        },
                       ),
                     ),
                   ],
