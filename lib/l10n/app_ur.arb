@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[UR] گروپ کو شناخت کے لیے محفوظ کریں",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[UR] [UR] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[UR] [UR] Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[UR] شناخت کے لیے گروپ کا نام درج کریں",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[UR] [UR] Confirm",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[UR] گروپ کا نام (اختیاری)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[UR] [UR] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[UR] بند کریں",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[UR] معروف گروپ شناخت ہو گیا",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[UR] [UR] Back",
   "@back": {

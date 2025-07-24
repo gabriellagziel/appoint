@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[BS] [BS] Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[BS] [BS] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[BS] [BS] Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[BS] [BS] Enter group name",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[BS] [BS] Confirm",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[BS] [BS] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[BS] [BS] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[BS] [BS] Close",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[BS] [BS] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[BS] [BS] Back",
   "@back": {

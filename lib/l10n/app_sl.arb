@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[SL] [SL] Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[SL] [SL] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[SL] Prihajajoče seje",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[SL] [SL] Enter group name",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[SL] Potrdi",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[SL] [SL] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[SL] [SL] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[SL] [SL] Close",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[SL] [SL] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[SL] [SL] Back",
   "@back": {

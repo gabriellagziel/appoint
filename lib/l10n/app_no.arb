@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[NO] [NO] Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[NO] Direktesendt økt planlagt",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[NO] Kommende økter",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[NO] Angi gruppenavn",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[NO] Bekreft",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[NO] [NO] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[NO] [NO] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[NO] [NO] Close",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[NO] [NO] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[NO] [NO] Back",
   "@back": {

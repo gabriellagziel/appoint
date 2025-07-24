@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[CY] Cadw grŵp ar gyfer adnabod",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[CY] [CY] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[CY] Sesiynau sydd i ddod",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[CY] Nodwch enw'r grŵp",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[CY] Cadarnhau",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[CY] Enw'r grŵp (dewisol)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[CY] Dim sesiynau Playtime",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[CY] Cau",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[CY] Grŵp cyfarwydd wedi'i ganfod",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[CY] Yn ôl",
   "@back": {

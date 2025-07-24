@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[GA] [GA] Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[GA] [GA] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[GA] [GA] Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[GA] [GA] Enter group name",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[GA] Deimhnigh",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[GA] [GA] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[GA] [GA] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[GA] Dún",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[GA] [GA] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[GA] Ar ais",
   "@back": {

@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[CA] [CA] Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[CA] Sessió en directe programada",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[CA] [CA] Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[CA] [CA] Enter group name",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[CA] [CA] Confirm",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[CA] [CA] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[CA] [CA] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[CA] Tanca",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[CA] [CA] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[CA] Enrere",
   "@back": {
