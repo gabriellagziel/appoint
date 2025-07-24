@@ -2895,5 +2895,101 @@
   "purchase_now_button": "Purchase Now",
   "@purchase_now_button": {
     "description": "Ad flow string: purchase_now_button"
+  },
+  "ambassadorPromotionTitle": "[CA] Congratulations! You're now an Ambassador! (Catalan)",
+  "@ambassadorPromotionTitle": {
+    "description": "Title for ambassador promotion notification"
+  },
+  "ambassadorPromotionBody": "[CA] Welcome to the {tier} tier! Start sharing your referral link to earn rewards. (Catalan)",
+  "@ambassadorPromotionBody": {
+    "description": "Body text for ambassador promotion notification",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "tierUpgradeTitle": "[CA] Tier Upgrade! 🎉 (Catalan)",
+  "@tierUpgradeTitle": {
+    "description": "Title for tier upgrade notification"
+  },
+  "tierUpgradeBody": "[CA] Amazing! You've been upgraded from {previousTier} to {newTier} with {totalReferrals} referrals! (Catalan)",
+  "@tierUpgradeBody": {
+    "description": "Body text for tier upgrade notification",
+    "placeholders": {
+      "previousTier": {
+        "type": "String"
+      },
+      "newTier": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  },
+  "monthlyReminderTitle": "[CA] Monthly Goal Reminder (Catalan)",
+  "@monthlyReminderTitle": {
+    "description": "Title for monthly performance reminder notification"
+  },
+  "monthlyReminderBody": "[CA] You have {currentReferrals}/{targetReferrals} referrals this month. {daysRemaining} days left to reach your goal! (Catalan)",
+  "@monthlyReminderBody": {
+    "description": "Body text for monthly reminder notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "targetReferrals": {
+        "type": "String"
+      },
+      "daysRemaining": {
+        "type": "String"
+      }
+    }
+  },
+  "performanceWarningTitle": "[CA] Ambassador Performance Alert (Catalan)",
+  "@performanceWarningTitle": {
+    "description": "Title for performance warning notification"
+  },
+  "performanceWarningBody": "[CA] Your monthly referrals ({currentReferrals}) are below the minimum requirement ({minimumRequired}). Your ambassador status may be affected. (Catalan)",
+  "@performanceWarningBody": {
+    "description": "Body text for performance warning notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "minimumRequired": {
+        "type": "String"
+      }
+    }
+  },
+  "ambassadorDemotionTitle": "[CA] Ambassador Status Update (Catalan)",
+  "@ambassadorDemotionTitle": {
+    "description": "Title for ambassador demotion notification"
+  },
+  "ambassadorDemotionBody": "[CA] Your ambassador status has been temporarily suspended due to: {reason}. You can regain your status by meeting the requirements again. (Catalan)",
+  "@ambassadorDemotionBody": {
+    "description": "Body text for ambassador demotion notification",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "referralSuccessTitle": "[CA] New Referral! 🎉 (Catalan)",
+  "@referralSuccessTitle": {
+    "description": "Title for successful referral notification"
+  },
+  "referralSuccessBody": "[CA] {referredUserName} joined through your referral! You now have {totalReferrals} total referrals. (Catalan)",
+  "@referralSuccessBody": {
+    "description": "Body text for successful referral notification",
+    "placeholders": {
+      "referredUserName": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
   }
 }

@@ -2895,5 +2895,101 @@
   "purchase_now_button": "Purchase Now",
   "@purchase_now_button": {
     "description": "Ad flow string: purchase_now_button"
+  },
+  "ambassadorPromotionTitle": "[FA] Congratulations! You're now an Ambassador! (Persian)",
+  "@ambassadorPromotionTitle": {
+    "description": "Title for ambassador promotion notification"
+  },
+  "ambassadorPromotionBody": "[FA] Welcome to the {tier} tier! Start sharing your referral link to earn rewards. (Persian)",
+  "@ambassadorPromotionBody": {
+    "description": "Body text for ambassador promotion notification",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "tierUpgradeTitle": "[FA] Tier Upgrade! 🎉 (Persian)",
+  "@tierUpgradeTitle": {
+    "description": "Title for tier upgrade notification"
+  },
+  "tierUpgradeBody": "[FA] Amazing! You've been upgraded from {previousTier} to {newTier} with {totalReferrals} referrals! (Persian)",
+  "@tierUpgradeBody": {
+    "description": "Body text for tier upgrade notification",
+    "placeholders": {
+      "previousTier": {
+        "type": "String"
+      },
+      "newTier": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  },
+  "monthlyReminderTitle": "[FA] Monthly Goal Reminder (Persian)",
+  "@monthlyReminderTitle": {
+    "description": "Title for monthly performance reminder notification"
+  },
+  "monthlyReminderBody": "[FA] You have {currentReferrals}/{targetReferrals} referrals this month. {daysRemaining} days left to reach your goal! (Persian)",
+  "@monthlyReminderBody": {
+    "description": "Body text for monthly reminder notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "targetReferrals": {
+        "type": "String"
+      },
+      "daysRemaining": {
+        "type": "String"
+      }
+    }
+  },
+  "performanceWarningTitle": "[FA] Ambassador Performance Alert (Persian)",
+  "@performanceWarningTitle": {
+    "description": "Title for performance warning notification"
+  },
+  "performanceWarningBody": "[FA] Your monthly referrals ({currentReferrals}) are below the minimum requirement ({minimumRequired}). Your ambassador status may be affected. (Persian)",
+  "@performanceWarningBody": {
+    "description": "Body text for performance warning notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "minimumRequired": {
+        "type": "String"
+      }
+    }
+  },
+  "ambassadorDemotionTitle": "[FA] Ambassador Status Update (Persian)",
+  "@ambassadorDemotionTitle": {
+    "description": "Title for ambassador demotion notification"
+  },
+  "ambassadorDemotionBody": "[FA] Your ambassador status has been temporarily suspended due to: {reason}. You can regain your status by meeting the requirements again. (Persian)",
+  "@ambassadorDemotionBody": {
+    "description": "Body text for ambassador demotion notification",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "referralSuccessTitle": "[FA] New Referral! 🎉 (Persian)",
+  "@referralSuccessTitle": {
+    "description": "Title for successful referral notification"
+  },
+  "referralSuccessBody": "[FA] {referredUserName} joined through your referral! You now have {totalReferrals} total referrals. (Persian)",
+  "@referralSuccessBody": {
+    "description": "Body text for successful referral notification",
+    "placeholders": {
+      "referredUserName": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
   }
 }

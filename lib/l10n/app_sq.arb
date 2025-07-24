@@ -2895,5 +2895,101 @@
   "purchase_now_button": "Purchase Now",
   "@purchase_now_button": {
     "description": "Ad flow string: purchase_now_button"
+  },
+  "ambassadorPromotionTitle": "[SQ] Congratulations! You're now an Ambassador! (Albanian)",
+  "@ambassadorPromotionTitle": {
+    "description": "Title for ambassador promotion notification"
+  },
+  "ambassadorPromotionBody": "[SQ] Welcome to the {tier} tier! Start sharing your referral link to earn rewards. (Albanian)",
+  "@ambassadorPromotionBody": {
+    "description": "Body text for ambassador promotion notification",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "tierUpgradeTitle": "[SQ] Tier Upgrade! 🎉 (Albanian)",
+  "@tierUpgradeTitle": {
+    "description": "Title for tier upgrade notification"
+  },
+  "tierUpgradeBody": "[SQ] Amazing! You've been upgraded from {previousTier} to {newTier} with {totalReferrals} referrals! (Albanian)",
+  "@tierUpgradeBody": {
+    "description": "Body text for tier upgrade notification",
+    "placeholders": {
+      "previousTier": {
+        "type": "String"
+      },
+      "newTier": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  },
+  "monthlyReminderTitle": "[SQ] Monthly Goal Reminder (Albanian)",
+  "@monthlyReminderTitle": {
+    "description": "Title for monthly performance reminder notification"
+  },
+  "monthlyReminderBody": "[SQ] You have {currentReferrals}/{targetReferrals} referrals this month. {daysRemaining} days left to reach your goal! (Albanian)",
+  "@monthlyReminderBody": {
+    "description": "Body text for monthly reminder notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "targetReferrals": {
+        "type": "String"
+      },
+      "daysRemaining": {
+        "type": "String"
+      }
+    }
+  },
+  "performanceWarningTitle": "[SQ] Ambassador Performance Alert (Albanian)",
+  "@performanceWarningTitle": {
+    "description": "Title for performance warning notification"
+  },
+  "performanceWarningBody": "[SQ] Your monthly referrals ({currentReferrals}) are below the minimum requirement ({minimumRequired}). Your ambassador status may be affected. (Albanian)",
+  "@performanceWarningBody": {
+    "description": "Body text for performance warning notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "minimumRequired": {
+        "type": "String"
+      }
+    }
+  },
+  "ambassadorDemotionTitle": "[SQ] Ambassador Status Update (Albanian)",
+  "@ambassadorDemotionTitle": {
+    "description": "Title for ambassador demotion notification"
+  },
+  "ambassadorDemotionBody": "[SQ] Your ambassador status has been temporarily suspended due to: {reason}. You can regain your status by meeting the requirements again. (Albanian)",
+  "@ambassadorDemotionBody": {
+    "description": "Body text for ambassador demotion notification",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "referralSuccessTitle": "[SQ] New Referral! 🎉 (Albanian)",
+  "@referralSuccessTitle": {
+    "description": "Title for successful referral notification"
+  },
+  "referralSuccessBody": "[SQ] {referredUserName} joined through your referral! You now have {totalReferrals} total referrals. (Albanian)",
+  "@referralSuccessBody": {
+    "description": "Body text for successful referral notification",
+    "placeholders": {
+      "referredUserName": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
   }
 }

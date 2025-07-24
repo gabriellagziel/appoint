@@ -2895,5 +2895,101 @@
   "purchase_now_button": "Purchase Now",
   "@purchase_now_button": {
     "description": "Ad flow string: purchase_now_button"
+  },
+  "ambassadorPromotionTitle": "[ZH_HANT] Congratulations! You're now an Ambassador! (Chinese Traditional)",
+  "@ambassadorPromotionTitle": {
+    "description": "Title for ambassador promotion notification"
+  },
+  "ambassadorPromotionBody": "[ZH_HANT] Welcome to the {tier} tier! Start sharing your referral link to earn rewards. (Chinese Traditional)",
+  "@ambassadorPromotionBody": {
+    "description": "Body text for ambassador promotion notification",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "tierUpgradeTitle": "[ZH_HANT] Tier Upgrade! 🎉 (Chinese Traditional)",
+  "@tierUpgradeTitle": {
+    "description": "Title for tier upgrade notification"
+  },
+  "tierUpgradeBody": "[ZH_HANT] Amazing! You've been upgraded from {previousTier} to {newTier} with {totalReferrals} referrals! (Chinese Traditional)",
+  "@tierUpgradeBody": {
+    "description": "Body text for tier upgrade notification",
+    "placeholders": {
+      "previousTier": {
+        "type": "String"
+      },
+      "newTier": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  },
+  "monthlyReminderTitle": "[ZH_HANT] Monthly Goal Reminder (Chinese Traditional)",
+  "@monthlyReminderTitle": {
+    "description": "Title for monthly performance reminder notification"
+  },
+  "monthlyReminderBody": "[ZH_HANT] You have {currentReferrals}/{targetReferrals} referrals this month. {daysRemaining} days left to reach your goal! (Chinese Traditional)",
+  "@monthlyReminderBody": {
+    "description": "Body text for monthly reminder notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "targetReferrals": {
+        "type": "String"
+      },
+      "daysRemaining": {
+        "type": "String"
+      }
+    }
+  },
+  "performanceWarningTitle": "[ZH_HANT] Ambassador Performance Alert (Chinese Traditional)",
+  "@performanceWarningTitle": {
+    "description": "Title for performance warning notification"
+  },
+  "performanceWarningBody": "[ZH_HANT] Your monthly referrals ({currentReferrals}) are below the minimum requirement ({minimumRequired}). Your ambassador status may be affected. (Chinese Traditional)",
+  "@performanceWarningBody": {
+    "description": "Body text for performance warning notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "minimumRequired": {
+        "type": "String"
+      }
+    }
+  },
+  "ambassadorDemotionTitle": "[ZH_HANT] Ambassador Status Update (Chinese Traditional)",
+  "@ambassadorDemotionTitle": {
+    "description": "Title for ambassador demotion notification"
+  },
+  "ambassadorDemotionBody": "[ZH_HANT] Your ambassador status has been temporarily suspended due to: {reason}. You can regain your status by meeting the requirements again. (Chinese Traditional)",
+  "@ambassadorDemotionBody": {
+    "description": "Body text for ambassador demotion notification",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "referralSuccessTitle": "[ZH_HANT] New Referral! 🎉 (Chinese Traditional)",
+  "@referralSuccessTitle": {
+    "description": "Title for successful referral notification"
+  },
+  "referralSuccessBody": "[ZH_HANT] {referredUserName} joined through your referral! You now have {totalReferrals} total referrals. (Chinese Traditional)",
+  "@referralSuccessBody": {
+    "description": "Body text for successful referral notification",
+    "placeholders": {
+      "referredUserName": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
   }
 }
