@@ -43,7 +43,7 @@ def main():
     log_step(2, "Configure GitHub Actions Secrets")
     
     secrets = {
-        "DIGITALOCEAN_ACCESS_TOKEN": "REDACTED_TOKEN",
+        "DIGITALOCEAN_ACCESS_TOKEN": os.environ.get("DIGITALOCEAN_ACCESS_TOKEN", ""),
         "APP_ID": "REDACTED_TOKEN",
         "FIREBASE_TOKEN": firebase_token
     }
