@@ -7,15 +7,23 @@
     "serve": "serve out -p ${PORT:-8082} --single",
     "start": "npm run serve",
     "dev": "npm run serve",
-    "test": "echo 'No tests yet' && exit 0",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:health": "jest --testPathPattern=health",
     "lint": "echo 'No linting configured' && exit 0",
-    "clean": "rm -rf out node_modules/.cache",
+    "clean": "rm -rf out node_modules/.cache coverage",
     "docker:build": "docker build -t app-oint/admin:latest .",
     "docker:run": "docker run -p 8082:8082 app-oint/admin:latest",
     "docker:dev": "docker-compose up admin",
-    "health": "curl -f http://localhost:8082/health || exit 1"
+    "health": "curl -f http://localhost:8082/health.html || exit 1"
   },
   "dependencies": {
     "serve": "^14.2.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "express": "^4.18.2"
   }
 }
