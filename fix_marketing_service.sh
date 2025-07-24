@@ -6,11 +6,11 @@
 echo "🔧 App-Oint Marketing Service Diagnostic & Fix Script"
 echo "======================================================"
 
-# Environment variables (should be set externally)
+# Environment variables (must be set externally)
 if [ -z "$DIGITALOCEAN_ACCESS_TOKEN" ] || [ -z "$APP_ID" ]; then
-    echo "⚠️  Setting default environment variables for simulation..."
-    export DIGITALOCEAN_ACCESS_TOKEN="dop_v1_76ab2ee2f0b99b5d1bdb5291352f4413053f2c31edda0fbbefcd787a88c91dbb"
-    export APP_ID="620a2ee8-e942-451c-9cfd-8ece55511eb8"
+    echo "❌ Error: DIGITALOCEAN_ACCESS_TOKEN and APP_ID environment variables are required"
+    echo "Please set them before running this script"
+    exit 1
 fi
 
 # Initialize JSON report structure

@@ -7,7 +7,11 @@ echo "🚀 App-Oint Complete Deployment Process"
 echo "========================================"
 
 # Environment variables
-export DIGITALOCEAN_ACCESS_TOKEN="dop_v1_76ab2ee2f0b99b5d1bdb5291352f4413053f2c31edda0fbbefcd787a88c91dbb"
+# Ensure DIGITALOCEAN_ACCESS_TOKEN is set
+if [ -z "$DIGITALOCEAN_ACCESS_TOKEN" ]; then
+    echo "❌ Error: DIGITALOCEAN_ACCESS_TOKEN environment variable is required"
+    exit 1
+fi
 export APP_ID="620a2ee8-e942-451c-9cfd-8ece55511eb8"
 export FIREBASE_PROJECT_ID="app-oint-core"
 
