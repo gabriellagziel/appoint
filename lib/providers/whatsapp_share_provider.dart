@@ -14,39 +14,22 @@ final FutureProviderFamily<Map<String, dynamic>, String> shareStatsProvider = Fu
   },
 );
 
-// Provider for group recognition
-final FutureProviderFamily<GroupRecognition?, String> groupRecognitionProvider =
-    FutureProvider.family<GroupRecognition?, String>(
-  (ref, final phoneNumber) async {
-    final service = ref.read(whatsappShareServiceProvider);
-    return service.recognizeGroup(phoneNumber);
-  },
-);
-
 // State notifier for share dialog
 class ShareDialogState {
 
   const ShareDialogState({
     this.isLoading = false,
     this.error,
-    this.showGroupOptions = false,
-    this.knownGroups = const [],
   });
   final bool isLoading;
   final String? error;
-  final bool showGroupOptions;
-  final List<GroupRecognition> knownGroups;
 
   ShareDialogState copyWith({
     final bool? isLoading,
     final String? error,
-    final bool? showGroupOptions,
-    final List<GroupRecognition>? knownGroups,
   }) => ShareDialogState(
       isLoading: isLoading ?? this.isLoading,
       error: error,
-      showGroupOptions: showGroupOptions ?? this.showGroupOptions,
-      knownGroups: knownGroups ?? this.knownGroups,
     );
 }
 
@@ -91,30 +74,8 @@ class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
     }
   }
 
-  Future<void> saveGroupForRecognition({
-    required final String groupId,
-    required final String groupName,
-    required final String phoneNumber,
-    required final String meetingId,
-  }) async {
-    try {
-      await _service.saveGroupForRecognition(
-        groupId: groupId,
-        groupName: groupName,
-        phoneNumber: phoneNumber,
-        meetingId: meetingId,
-      );
-    } catch (e) {
-      state = state.copyWith(error: e.toString());
-    }
-  }
-
   void clearError() {
     state = state.copyWith();
-  }
-
-  void toggleGroupOptions() {
-    state = state.copyWith(showGroupOptions: !state.showGroupOptions);
   }
 }
 

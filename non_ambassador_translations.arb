@@ -134,45 +134,25 @@
   "@shareOnWhatsApp": {
     "description": "Label for WhatsApp share button"
   },
-  "shareMeetingInvitation": "Share your meeting invitation:",
-  "@shareMeetingInvitation": {
-    "description": "Title for meeting invitation sharing section"
-  },
   "meetingReadyMessage": "The meeting is ready! Would you like to send it to your group?",
   "@meetingReadyMessage": {
     "description": "Message shown in WhatsApp share dialog"
   },
-  "customizeMessage": "Customize your message...",
+  "customizeMessage": "Customize your message",
   "@customizeMessage": {
     "description": "Hint text for message customization"
   },
-  "saveGroupForRecognition": "Save group for future recognition",
-  "@saveGroupForRecognition": {
-    "description": "Label for group recognition checkbox"
+  "defaultShareMessage": "You're invited to join our meeting!",
+  "@defaultShareMessage": {
+    "description": "Default message for WhatsApp sharing"
   },
-  "groupNameOptional": "Group Name (optional)",
-  "@groupNameOptional": {
-    "description": "Label for group name input field"
-  },
-  "enterGroupName": "Enter group name for recognition",
-  "@enterGroupName": {
-    "description": "Hint text for group name input"
-  },
-  "knownGroupDetected": "Known group detected",
-  "@knownGroupDetected": {
-    "description": "Message shown when a known group is detected"
-  },
-  "meetingSharedSuccessfully": "Meeting shared successfully!",
+  "meetingSharedSuccessfully": "Meeting link shared successfully!",
   "@meetingSharedSuccessfully": {
-    "description": "Success message when meeting is shared"
+    "description": "Success message after sharing meeting"
   },
   "bookingConfirmedShare": "Booking confirmed! You can now share the invitation.",
   "@bookingConfirmedShare": {
     "description": "Message shown after booking confirmation"
-  },
-  "defaultShareMessage": "Hey! I've scheduled a meeting with you through APP-OINT. Click here to confirm or suggest a different time:",
-  "@defaultShareMessage": {
-    "description": "Default message for WhatsApp sharing"
   },
   "dashboard": "Dashboard",
   "@dashboard": {
