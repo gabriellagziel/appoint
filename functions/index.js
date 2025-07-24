@@ -37,8 +37,22 @@ const {
   createCheckoutSession: stripeCreateCheckoutSession,
 } = require('./src/stripe');
 
+const functions = require('firebase-functions');
+
+// Health check endpoint
+const health = functions.https.onRequest((req, res) => {
+  res.status(200).json({
+    status: 'healthy',
+    timestamp: new Date().toISOString(),
+    service: 'app-oint-api'
+  });
+});
+
 // Export all functions
 module.exports = {
+  // Health check
+  health,
+  
   // FCM and Booking functions
   onNewBooking,
   
