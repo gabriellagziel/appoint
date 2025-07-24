@@ -78,8 +78,6 @@ class WhatsAppShareDialog extends ConsumerStatefulWidget {
 
 class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
   TextEditingController _messageController = TextEditingController();
-  TextEditingController _groupNameController = TextEditingController();
-  bool _saveGroupForRecognition = false;
 
   @override
   void initState() {
@@ -91,7 +89,6 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
   @override
   void dispose() {
     _messageController.dispose();
-    _groupNameController.dispose();
     super.dispose();
   }
 
@@ -128,57 +125,26 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
               ),
             ),
             const SizedBox(height: 16),
-            if (widget.groupId == null) ...[
-              const Text(
-                'Group Options',
-                style: TextStyle(fontWeight: FontWeight.bold),
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: Colors.blue.shade50,
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: Colors.blue.shade200),
               ),
-              const SizedBox(height: 8),
-              CheckboxListTile(
-                title: Text(l10n?.saveGroupForRecognition ?? 'Save group for recognition'),
-                value: _saveGroupForRecognition,
-                onChanged: (value) {
-                  setState(() {
-                    _saveGroupForRecognition = value ?? false;
-                  });
-                },
-                controlAffinity: ListTileControlAffinity.leading,
-                contentPadding: EdgeInsets.zero,
-              ),
-              if (_saveGroupForRecognition) ...[
-                const SizedBox(height: 8),
-                TextField(
-                  controller: _groupNameController,
-                  decoration: InputDecoration(
-                    labelText: l10n?.groupNameOptional ?? 'Group name (optional)',
-                    border: const OutlineInputBorder(),
-                    hintText: l10n?.enterGroupName ?? 'Enter group name',
+              child: Row(
+                children: [
+                  const Icon(Icons.info, color: Colors.blue),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      'You will be able to manually select contacts or groups in WhatsApp after clicking Share.',
+                      style: const TextStyle(color: Colors.blue),
+                    ),
                   ),
-                ),
-              ],
-            ] else ...[
-              Container(
-                padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  color: Colors.green.shade50,
-                  borderRadius: BorderRadius.circular(8),
-                  border: Border.all(color: Colors.green.shade200),
-                ),
-                child: Row(
-                  children: [
-                    const Icon(Icons.group, color: Colors.green),
-                    const SizedBox(width: 8),
-                                          Text(
-                        l10n?.knownGroupDetected ?? 'Known group detected',
-                        style: const TextStyle(
-                          color: Colors.green,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                  ],
-                ),
+                ],
               ),
-            ],
+            ),
             if (shareState.error != null) ...[
               const SizedBox(height: 16),
               Container(
@@ -231,7 +197,6 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
 
   Future<void> _shareToWhatsApp() async {
     final notifier = ref.read(shareDialogProvider.notifier);
-    final l10n = AppLocalizations.of(context);
 
     await notifier.shareToWhatsApp(
       meetingId: widget.appointment.id,
@@ -241,23 +206,13 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
       groupId: widget.groupId,
     );
 
-    // Save group for recognition if requested
-    if (_saveGroupForRecognition && _groupNameController.text.isNotEmpty) {
-      await notifier.saveGroupForRecognition(
-        groupId: DateTime.now().millisecondsSinceEpoch.toString(),
-        groupName: _groupNameController.text,
-        phoneNumber: '', // This would be captured from WhatsApp
-        meetingId: widget.appointment.id,
-      );
-    }
-
     if (mounted) {
       Navigator.of(context).pop();
       widget.onShared?.call();
 
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(l10n?.meetingSharedSuccessfully ?? 'Meeting shared successfully'),
+          content: Text('Opening WhatsApp... Please manually select contacts or groups to share with.'),
           backgroundColor: const Color(0xFF25D366),
         ),
       );
