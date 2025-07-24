@@ -3,9 +3,24 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
 dist/
+build/
 coverage/
 .nyc_output/
+
+# Logs
+logs/
+*.log
+log/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
 
 # Environment and configuration files
 .env
@@ -13,7 +28,7 @@ coverage/
 .env.development.local
 .env.test.local
 .env.production.local
-*.local
+.env.*.local
 
 # IDE and editor files
 .vscode/
@@ -21,6 +36,9 @@ coverage/
 *.swp
 *.swo
 *~
+.project
+.classpath
+.settings/
 
 # OS generated files
 .DS_Store
@@ -32,15 +50,19 @@ ehthumbs.db
 Thumbs.db
 
 # Git files
-.git
+.git/
 .gitignore
+.github/
 
 # Docker files
 Dockerfile*
 .dockerignore
+docker-compose*.yml
 
-# Testing and CI
+# Testing and CI/CD
 test/
+tests/
+__tests__/
 *.test.js
 *.test.ts
 *.spec.js
@@ -48,20 +70,13 @@ test/
 jest.config.js
 .eslintrc.*
 .prettierrc*
+.eslintcache
 
-# Logs
-logs/
-*.log
-
-# Runtime data
-pids/
-*.pid
-*.seed
-*.pid.lock
-
-# Temporary files
-tmp/
-temp/
+# Documentation
+README.md
+docs/
+*.md
+!DOCKER_USAGE.md
 
 # Firebase specific
 .firebaserc
@@ -69,16 +84,113 @@ firebase.json
 firestore.rules
 firestore.indexes.json
 
-# Documentation
-README.md
-docs/
-*.md
-
-# Build tools
+# Build tools and CI
 .github/
 .gitlab-ci.yml
+.travis.yml
+.circleci/
 
-# Package manager
-.npm
+# Package manager files
+.npm/
 .yarn-integrity
 yarn.lock
+pnpm-lock.yaml
+
+# TypeScript
+*.tsbuildinfo
+
+# Temporary files
+tmp/
+temp/
+.cache/
+
+# Backup files
+*~
+*.backup
+*.bak
+*.tmp
+
+# Archive files
+*.tar
+*.zip
+*.gz
+*.rar
+
+# Security sensitive files
+*.key
+*.pem
+*.p12
+*.crt
+cert/
+certificates/
+
+# Development only files
+.env.example
+.gitattributes
+.editorconfig
+
+# Monitoring and profiling
+flamegraph.html
+.clinic/
+.0x/
+
+# Serverless framework
+.serverless/
+
+# Webpack
+.webpack/
+
+# Parcel
+.parcel-cache/
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+
+# next.js build output
+.next
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
