@@ -24,7 +24,7 @@ if ! command -v doctl &> /dev/null; then
 fi
 
 # Set the DigitalOcean token
-export DIGITALOCEAN_ACCESS_TOKEN="dop_v1_2713a62d05af1e46ad98b32e54dba2e0fbf0a982ae7977374f0a3a2c7bd78143"
+export DIGITALOCEAN_ACCESS_TOKEN="dop_v1_49e79a8ac0bfb96a51583a3602226e8d01127c5c8e7d88f9bbdbed546baaf14d"
 
 echo "🔑 Authenticating with DigitalOcean..."
 doctl auth init --access-token $DIGITALOCEAN_ACCESS_TOKEN
