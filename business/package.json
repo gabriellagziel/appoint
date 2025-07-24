@@ -2,9 +2,9 @@
   "name": "business-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "echo 'Building business app...'",
-    "export": "mkdir -p out && echo '<html><head><title>Business App</title></head><body><h1>App-Oint Business Panel</h1><p>Coming Soon</p></body></html>' > out/index.html",
-    "serve": "serve out -p ${PORT:-8081}",
+    "build": "mkdir -p out && echo 'Building business app...'",
+    "export": "mkdir -p out && cp public/index.html out/index.html",
+    "serve": "serve out -p ${PORT:-8081} --single",
     "start": "npm run serve"
   },
   "dependencies": {
