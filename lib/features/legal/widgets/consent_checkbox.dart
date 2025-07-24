@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/l10n/l10n.dart';
 import 'package:appoint/services/consent_logging_service.dart';
 
 class ConsentCheckbox extends ConsumerStatefulWidget {
@@ -31,7 +30,6 @@ class _ConsentCheckboxState extends ConsumerState<ConsentCheckbox> {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = context.l10n;
     final theme = Theme.of(context);
     
     return Column(
@@ -53,7 +51,7 @@ class _ConsentCheckboxState extends ConsumerState<ConsentCheckbox> {
             ),
             const SizedBox(width: 8),
             Expanded(
-              child: _buildConsentText(context, l10n, theme),
+              child: _buildConsentText(context, theme),
             ),
           ],
         ),
@@ -61,7 +59,7 @@ class _ConsentCheckboxState extends ConsumerState<ConsentCheckbox> {
           Padding(
             padding: const EdgeInsets.only(left: 40, top: 4),
             child: Text(
-              l10n.consentRequired,
+              'You must accept the terms and privacy policy to continue',
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.error,
               ),
@@ -71,15 +69,15 @@ class _ConsentCheckboxState extends ConsumerState<ConsentCheckbox> {
     );
   }
 
-  Widget _buildConsentText(BuildContext context, AppLocalizations l10n, ThemeData theme) {
+  Widget _buildConsentText(BuildContext context, ThemeData theme) {
     return RichText(
       text: TextSpan(
         style: theme.textTheme.bodyMedium,
         children: [
-          TextSpan(text: l10n.iAgreeToThe),
+          const TextSpan(text: 'I agree to the'),
           const TextSpan(text: ' '),
           TextSpan(
-            text: l10n.termsOfService,
+            text: 'Terms of Service',
             style: TextStyle(
               color: theme.colorScheme.primary,
               decoration: TextDecoration.underline,
@@ -88,10 +86,10 @@ class _ConsentCheckboxState extends ConsumerState<ConsentCheckbox> {
               ..onTap = () => _navigateToTerms(context),
           ),
           const TextSpan(text: ' '),
-          TextSpan(text: l10n.and),
+          const TextSpan(text: 'and'),
           const TextSpan(text: ' '),
           TextSpan(
-            text: l10n.privacyPolicy,
+            text: 'Privacy Policy',
             style: TextStyle(
               color: theme.colorScheme.primary,
               decoration: TextDecoration.underline,
@@ -145,8 +143,6 @@ class _ConsentFormState extends ConsumerState<ConsentForm> {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = context.l10n;
-    
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
@@ -160,7 +156,7 @@ class _ConsentFormState extends ConsumerState<ConsentForm> {
             initialValue: _termsAccepted,
           ),
           const SizedBox(height: 12),
-          _buildPrivacyCheckbox(l10n),
+          _buildPrivacyCheckbox(),
         ] else
           ConsentCheckbox(
             onConsentChanged: (value) {
@@ -181,14 +177,14 @@ class _ConsentFormState extends ConsumerState<ConsentForm> {
                 width: 16,
                 child: CircularProgressIndicator(strokeWidth: 2),
               )
-            : Text(widget.isSignupFlow ? l10n.createAccount : l10n.acceptAndContinue),
+            : Text(widget.isSignupFlow ? 'Create Account' : 'Accept and Continue'),
         ),
         
         if (widget.isSignupFlow)
           Padding(
             padding: const EdgeInsets.only(top: 8),
             child: Text(
-              l10n.consentSignupNotice,
+              'By creating an account, you acknowledge that you have read and agree to our Terms of Service and Privacy Policy.',
               style: Theme.of(context).textTheme.bodySmall?.copyWith(
                 color: Colors.grey[600],
               ),
@@ -199,7 +195,7 @@ class _ConsentFormState extends ConsumerState<ConsentForm> {
     );
   }
 
-  Widget _buildPrivacyCheckbox(AppLocalizations l10n) {
+  Widget _buildPrivacyCheckbox() {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -219,10 +215,10 @@ class _ConsentFormState extends ConsumerState<ConsentForm> {
             text: TextSpan(
               style: Theme.of(context).textTheme.bodyMedium,
               children: [
-                TextSpan(text: l10n.iHaveReadAndAgreeToThe),
+                const TextSpan(text: 'I have read and agree to the'),
                 const TextSpan(text: ' '),
                 TextSpan(
-                  text: l10n.privacyPolicy,
+                  text: 'Privacy Policy',
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.primary,
                     decoration: TextDecoration.underline,
