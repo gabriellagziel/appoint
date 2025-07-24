@@ -498,10 +498,7 @@ class EnhancedSettingsScreen extends ConsumerWidget {
   }
 
   void _showPrivacyPolicy(BuildContext context) {
-    // TODO: Show privacy policy
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Privacy policy coming soon!')),
-    );
+    Navigator.of(context).pushNamed('/privacy');
   }
 
   void _showBillingHistory(BuildContext context) {
@@ -547,10 +544,7 @@ class EnhancedSettingsScreen extends ConsumerWidget {
   }
 
   void _showTermsOfService(BuildContext context) {
-    // TODO: Show terms of service
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Terms of service coming soon!')),
-    );
+    Navigator.of(context).pushNamed('/terms');
   }
 
   void _signOut(BuildContext context) {

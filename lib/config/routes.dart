@@ -44,6 +44,8 @@ import 'package:appoint/features/business/screens/business_dashboard_screen.dart
     as business;
 
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
+import 'package:appoint/features/legal/screens/terms_screen.dart';
+import 'package:appoint/features/legal/screens/privacy_screen.dart';
 import 'package:appoint/features/studio_profile/studio_profile_screen.dart';
 import 'package:appoint/models/invite.dart';
 import 'package:appoint/widgets/animations/fade_slide_page_route.dart';
@@ -293,6 +295,16 @@ class AppRouter {
       case '/unsupported':
         return MaterialPageRoute(
           builder: (_) => const UnsupportedScreen(),
+          settings: settings,
+        );
+      case '/terms':
+        return MaterialPageRoute(
+          builder: (_) => const TermsScreen(),
+          settings: settings,
+        );
+      case '/privacy':
+        return MaterialPageRoute(
+          builder: (_) => const PrivacyScreen(),
           settings: settings,
         );
       default:
