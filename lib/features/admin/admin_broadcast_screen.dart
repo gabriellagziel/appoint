@@ -235,19 +235,30 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
     switch (status) {
       case BroadcastMessageStatus.pending:
-        final color = Colors.orange;
-        final text = 'Pending';
+        color = Colors.orange;
+        text = 'Pending';
+        break;
+      case BroadcastMessageStatus.sending:
+        color = Colors.blue;
+        text = 'Sending';
+        break;
       case BroadcastMessageStatus.sent:
-        final color = Colors.green;
-        final text = 'Sent';
+        color = Colors.green;
+        text = 'Sent';
+        break;
       case BroadcastMessageStatus.failed:
-        final color = Colors.red;
-        final text = 'Failed';
+        color = Colors.red;
+        text = 'Failed';
+        break;
+      case BroadcastMessageStatus.partially_sent:
+        color = Colors.amber;
+        text = 'Partial';
+        break;
     }
 
     return Chip(
       label: Text(text),
-      backgroundColor: color.withValues(alpha: 0.2),
+      backgroundColor: color.withOpacity(0.2),
       labelStyle: TextStyle(color: color),
     );
   }
