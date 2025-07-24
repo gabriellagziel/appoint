@@ -63,21 +63,17 @@ export default function SettingsPage() {
                   <Label htmlFor="timezone">Timezone</Label>
                   <Select
                     value={formData.timezone}
-                    onValueChange={(value) => setFormData({ ...formData, timezone: value })}
+                    onChange={(e) => setFormData({ ...formData, timezone: e.target.value })}
                   >
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select timezone" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="UTC">UTC</SelectItem>
-                      <SelectItem value="America/New_York">Eastern Time</SelectItem>
-                      <SelectItem value="America/Chicago">Central Time</SelectItem>
-                      <SelectItem value="America/Denver">Mountain Time</SelectItem>
+                    <SelectItem value="">Select timezone</SelectItem>
+                    <SelectItem value="UTC">UTC</SelectItem>
+                    <SelectItem value="America/New_York">Eastern Time</SelectItem>
+                    <SelectItem value="America/Chicago">Central Time</SelectItem>
+                    <SelectItem value="America/Denver">Mountain Time</SelectItem>
                       <SelectItem value="America/Los_Angeles">Pacific Time</SelectItem>
                       <SelectItem value="Europe/London">London</SelectItem>
                       <SelectItem value="Europe/Paris">Paris</SelectItem>
                       <SelectItem value="Asia/Tokyo">Tokyo</SelectItem>
-                    </SelectContent>
                   </Select>
                 </div>
               </CardContent>
@@ -138,28 +134,20 @@ export default function SettingsPage() {
                 <div className="space-y-2">
                   <Label htmlFor="passwordPolicy">Password Policy</Label>
                   <Select defaultValue="strong">
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select password policy" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="weak">Weak (6+ characters)</SelectItem>
-                      <SelectItem value="medium">Medium (8+ characters)</SelectItem>
-                      <SelectItem value="strong">Strong (12+ characters)</SelectItem>
-                    </SelectContent>
+                    <SelectItem value="">Select password policy</SelectItem>
+                    <SelectItem value="weak">Weak (6+ characters)</SelectItem>
+                    <SelectItem value="medium">Medium (8+ characters)</SelectItem>
+                    <SelectItem value="strong">Strong (12+ characters)</SelectItem>
                   </Select>
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="twoFactor">Two-Factor Authentication</Label>
                   <Select defaultValue="enabled">
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select 2FA setting" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="enabled">Enabled</SelectItem>
-                      <SelectItem value="disabled">Disabled</SelectItem>
-                      <SelectItem value="optional">Optional</SelectItem>
-                    </SelectContent>
+                    <SelectItem value="">Select 2FA setting</SelectItem>
+                    <SelectItem value="enabled">Enabled</SelectItem>
+                    <SelectItem value="disabled">Disabled</SelectItem>
+                    <SelectItem value="optional">Optional</SelectItem>
                   </Select>
                 </div>
               </CardContent>
