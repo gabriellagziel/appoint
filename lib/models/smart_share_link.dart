@@ -19,22 +19,6 @@ class SmartShareLink with _$SmartShareLink {
 }
 
 @freezed
-class GroupRecognition with _$GroupRecognition {
-  const factory GroupRecognition({
-    required final String groupId,
-    required final String groupName,
-    required final String phoneNumber,
-    required final DateTime firstSharedAt,
-    required final int totalShares,
-    required final int totalResponses,
-    final DateTime? lastSharedAt,
-  }) = _GroupRecognition;
-
-  factory GroupRecognition.fromJson(Map<String, dynamic> json) =>
-      _$GroupRecognitionFromJson(json);
-}
-
-@freezed
 class ShareAnalytics with _$ShareAnalytics {
   const factory ShareAnalytics({
     required final String meetingId,

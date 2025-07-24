@@ -59,7 +59,7 @@ class WhatsAppShareService {
     }
   }
 
-  /// Share meeting to WhatsApp
+  /// Share meeting to WhatsApp - MANUAL USER-INITIATED SHARING ONLY
   Future<bool> shareToWhatsApp({
     required final String meetingId,
     required final String creatorId,
@@ -81,7 +81,7 @@ class WhatsAppShareService {
       final message = Uri.encodeComponent('$customMessage\n\n$shareLink');
       final whatsappUrl = '$_whatsappBaseUrl$message';
 
-      // Launch WhatsApp
+      // Launch WhatsApp - USER MUST MANUALLY SELECT CONTACTS/GROUPS
       final uri = Uri.parse(whatsappUrl);
       final canLaunch = await canLaunchUrl(uri);
 
@@ -91,11 +91,6 @@ class WhatsAppShareService {
         // Track successful share
         await FirebaseAnalytics.instance.logEvent(
           name: 'share_whatsapp');
-
-        // Update group recognition if applicable
-        if (groupId != null) {
-          await _updateGroupRecognition(groupId, meetingId);
-        }
 
         return true;
       } else {
@@ -111,65 +106,7 @@ class WhatsAppShareService {
     }
   }
 
-  /// Recognize and track group interactions
-  Future<GroupRecognition?> recognizeGroup(String phoneNumber) async {
-    try {
-      final doc = await _firestore
-          .collection('group_recognition')
-          .where('phoneNumber', isEqualTo: phoneNumber)
-          .get();
-
-      if (doc.docs.isNotEmpty) {
-        return GroupRecognition.fromJson(doc.docs.first.data());
-      }
-      return null;
-    } catch (e) {
-      // Removed debug print: debugPrint('Error recognizing group: $e');
-      return null;
-    }
-  }
-
-  /// Save group for future recognition
-  Future<void> saveGroupForRecognition({
-    required final String groupId,
-    required final String groupName,
-    required final String phoneNumber,
-    required final String meetingId,
-  }) async {
-    try {
-      final groupRecognition = GroupRecognition(
-        groupId: groupId,
-        groupName: groupName,
-        phoneNumber: phoneNumber,
-        firstSharedAt: DateTime.now(),
-        totalShares: 1,
-        totalResponses: 0,
-        lastSharedAt: DateTime.now(),
-      );
-
-      await _firestore
-          .collection('group_recognition')
-          .doc(groupId)
-          .set(groupRecognition.toJson());
-    } catch (e) {
-      // Removed debug print: debugPrint('Error saving group recognition: $e');
-    }
-  }
-
-  /// Update group recognition stats
-  Future<void> _updateGroupRecognition(
-      String groupId, final String meetingId,) async {
-    try {
-      await _firestore.collection('group_recognition').doc(groupId).update({
-        'totalShares': FieldValue.increment(1),
-        'lastSharedAt': FieldValue.serverTimestamp(),
-      });
-    } catch (e) {
-      // Removed debug print: debugPrint('Error updating group recognition: $e');
-    }
-  }
-
-  /// Log share analytics
+  /// Log share analytics - BASIC TRACKING ONLY
   Future<void> logShareAnalytics({
     required final String meetingId,
     required final String channel,
@@ -207,11 +144,6 @@ class WhatsAppShareService {
 
         // Update analytics
         await _updateShareAnalytics(meetingId, ShareStatus.clicked);
-
-        // Handle group recognition
-        if (groupId != null) {
-          await _updateGroupRecognition(groupId, meetingId);
-        }
 
         // Navigate to appropriate screen based on user state
         // This will be handled by the main app router
