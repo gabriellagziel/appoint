@@ -43,6 +43,13 @@ if (isFirebaseFunctions) {
   } = require('./src/ambassadors');
 
   const {
+    dailyAmbassadorEligibilityCheck,
+    monthlyAmbassadorReview,
+    trackUserReferral,
+    getAmbassadorDashboard,
+  } = require('./src/ambassador-automation');
+
+  const {
     createCheckoutSession: stripeCreateCheckoutSession,
   } = require('./src/stripe');
 
@@ -78,6 +85,12 @@ if (isFirebaseFunctions) {
     checkAmbassadorEligibility,
     handleAmbassadorRemoval,
     ambassadorQuotas,
+    
+    // Ambassador automation functions
+    dailyAmbassadorEligibilityCheck,
+    monthlyAmbassadorReview,
+    trackUserReferral,
+    getAmbassadorDashboard,
     
     // Notification functions
     sendNotificationToStudio,
