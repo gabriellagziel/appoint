@@ -13,8 +13,10 @@ enum BroadcastMessageType {
 
 enum BroadcastMessageStatus {
   pending,
+  sending,
   sent,
   failed,
+  partially_sent,
 }
 
 @freezed

@@ -1,6 +1,8 @@
 import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/models/user_profile.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cloud_functions/cloud_functions.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class BroadcastService {
@@ -112,32 +114,9 @@ class BroadcastService {
         throw Exception('Message not found');
       }
 
-      // Get target users
-      final targetUsers = await _getTargetUsers(message.targetingFilters);
-
-      // Update message with actual recipient count and sent timestamp
-      await _broadcastsCollection.doc(messageId).update({
-        'actualRecipients': targetUsers.length,
-        'status': BroadcastMessageStatus.sent.name,
-        'sentAt': FieldValue.serverTimestamp(),
-      });
-
-      // Send FCM messages and track sent events
-      for (final user in targetUsers) {
-        try {
-          await _sendFCMNotification(user, message);
-          // Track successful send
-          await trackMessageInteraction(messageId, user.id, 'sent');
-        } catch (e) {
-          // Track failed send
-          await trackMessageInteraction(
-            messageId, 
-            user.id, 
-            'failed',
-            additionalData: {'error': e.toString()},
-          );
-        }
-      }
+      // Send via backend Firebase Function
+      // The backend function will handle targeting, batch sending, and analytics tracking
+      await _sendViaBackendFunction(messageId);
     } catch (e) {
       // Update message with failure status
       await _broadcastsCollection.doc(messageId).update({
@@ -201,24 +180,36 @@ class BroadcastService {
     }
   }
 
-  // Send FCM notification to a user
-  Future<void> _sendFCMNotification(
-      UserProfile user, final AdminBroadcastMessage message,) async {
+  // Send broadcast message via backend Firebase Function
+  Future<void> _sendViaBackendFunction(String messageId) async {
     try {
-      // Get user's FCM token
-      final userDoc = await _usersCollection.doc(user.id).get();
-      final fcmToken = userDoc.data()?['fcmToken'] as String?;
-
-      if (fcmToken == null) {
-        throw Exception('User has no FCM token');
+      // Get current user ID for admin verification
+      final user = FirebaseAuth.instance.currentUser;
+      if (user == null) {
+        throw Exception('User not authenticated');
       }
 
-      // Stub implementation for FCM notification sending
-      // In a real implementation, this would call Firebase Functions to send the notification
-      print('FCM notification would be sent to ${user.id} with token: $fcmToken');
-      print('Message: ${message.title} - ${message.body}');
+      // Call the backend Firebase Function
+      final callable = FirebaseFunctions.instance.httpsCallable('sendBroadcastMessage');
+      
+      final result = await callable.call({
+        'messageId': messageId,
+        'adminId': user.uid,
+      });
+
+      final data = result.data as Map<String, dynamic>;
+      print('Broadcast sent via backend: ${data['deliveredCount']} delivered, ${data['failedCount']} failed');
+      
+      if (data['retryCount'] > 0) {
+        print('Retries performed: ${data['retryCount']}');
+      }
+      
+      if (data['errors'] != null && (data['errors'] as List).isNotEmpty) {
+        print('Delivery errors: ${(data['errors'] as List).take(3).join(', ')}');
+      }
+      
     } catch (e) {
-      print('Failed to send FCM notification to ${user.id}: $e');
+      print('Failed to send broadcast via backend: $e');
       rethrow;
     }
   }
@@ -588,6 +579,8 @@ class BroadcastService {
   }
 
   /// Process scheduled messages that are ready to be sent
+  /// Note: This method is now primarily for manual processing
+  /// Scheduled messages are automatically processed by the backend Firebase Function
   Future<void> processScheduledMessages() async {
     try {
       final now = DateTime.now();
@@ -596,7 +589,13 @@ class BroadcastService {
       final scheduledQuery = await _broadcastsCollection
           .where('status', isEqualTo: BroadcastMessageStatus.pending.name)
           .where('scheduledFor', isLessThanOrEqualTo: now)
+          .limit(5) // Process max 5 at a time from client
           .get();
+
+      if (scheduledQuery.docs.isEmpty) {
+        print('No scheduled messages to process');
+        return;
+      }
 
       for (final doc in scheduledQuery.docs) {
         try {
@@ -604,13 +603,7 @@ class BroadcastService {
           print('Successfully sent scheduled message: ${doc.id}');
         } catch (e) {
           print('Failed to send scheduled message ${doc.id}: $e');
-          
-          // Update message with failure status
-          await _broadcastsCollection.doc(doc.id).update({
-            'status': BroadcastMessageStatus.failed.name,
-            'failureReason': 'Scheduled send failed: $e',
-            'processedAt': FieldValue.serverTimestamp(),
-          });
+          // Error handling is now managed by the backend function
         }
       }
     } catch (e) {
