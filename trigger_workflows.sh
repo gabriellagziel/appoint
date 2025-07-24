@@ -109,7 +109,7 @@ provide_instructions() {
     echo "Go to: https://github.com/$REPO_OWNER/$REPO_NAME/settings/secrets/actions"
     echo ""
     echo "Add these secrets:"
-    echo "• DIGITALOCEAN_ACCESS_TOKEN = REDACTED_TOKEN"
+    echo "• DIGITALOCEAN_ACCESS_TOKEN = ${DIGITALOCEAN_ACCESS_TOKEN:0:20}... (masked for security)"
     echo "• APP_ID = REDACTED_TOKEN"
     echo "• FIREBASE_TOKEN = <get from 'firebase login:ci'>"
     echo ""

@@ -97,7 +97,12 @@ set_github_secrets() {
     print_info "Setting up GitHub repository secrets..."
     
     # Note: These are the values from the requirements
-    DIGITALOCEAN_TOKEN="REDACTED_TOKEN"
+    # Get DIGITALOCEAN_TOKEN from environment variable
+if [ -z "$DIGITALOCEAN_ACCESS_TOKEN" ]; then
+    echo "❌ Error: DIGITALOCEAN_ACCESS_TOKEN environment variable is required"
+    exit 1
+fi
+DIGITALOCEAN_TOKEN="$DIGITALOCEAN_ACCESS_TOKEN"
     APP_ID="REDACTED_TOKEN"
     
     # Set DigitalOcean Access Token

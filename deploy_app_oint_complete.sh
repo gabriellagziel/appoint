@@ -7,7 +7,12 @@ echo "🎯 DEPLOYING FULL APP-OINT SYSTEM"
 echo "================================="
 
 # Set environment variables
-export DIGITALOCEAN_ACCESS_TOKEN="REDACTED_TOKEN"
+# DIGITALOCEAN_ACCESS_TOKEN should be set as environment variable
+if [ -z "$DIGITALOCEAN_ACCESS_TOKEN" ]; then
+    echo "❌ Error: DIGITALOCEAN_ACCESS_TOKEN environment variable is required"
+    echo "Please set it before running this script"
+    exit 1
+fi
 export APP_ID="REDACTED_TOKEN"
 
 echo ""
