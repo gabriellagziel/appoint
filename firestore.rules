@@ -111,7 +111,10 @@ service cloud.firestore {
     // Admin broadcasts
     match /admin_broadcasts/{broadcastId} {
       allow read: if isAdmin();
-      allow write: if isAdmin();
+      allow create: if isAdmin();
+      allow update: if isAdmin() || 
+        (isSignedIn() && request.auth.uid in ['firebase-functions', 'system']);
+      allow delete: if isAdmin();
     }
 
     // Broadcast analytics
