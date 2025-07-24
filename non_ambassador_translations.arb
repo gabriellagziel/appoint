@@ -924,5 +924,87 @@
   "clientScreenTBD": "Client Screen - To Be Developed",
   "@clientScreenTBD": {
     "description": "Client screen placeholder"
+  },
+  "shareToWhatsAppGroup": "Share to WhatsApp Group",
+  "@shareToWhatsAppGroup": {
+    "description": "Button text for sharing appointment to WhatsApp groups"
+  },
+  "whatsAppGroupShareTitle": "Share to WhatsApp Group",
+  "@whatsAppGroupShareTitle": {
+    "description": "Title for WhatsApp group share dialog"
+  },
+  "shareAppointmentDescription": "Share this appointment with your WhatsApp groups",
+  "@shareAppointmentDescription": {
+    "description": "Description text for WhatsApp group sharing"
+  },
+  "customMessageOptional": "Custom Message (Optional)",
+  "@customMessageOptional": {
+    "description": "Label for custom message input field"
+  },
+  "addPersonalMessage": "Add a personal message...",
+  "@addPersonalMessage": {
+    "description": "Hint text for custom message input"
+  },
+  "includeTrackingLink": "Include tracking link",
+  "@includeTrackingLink": {
+    "description": "Checkbox label for including tracking link"
+  },
+  "trackingLinkDescription": "Allows you to see who joins via this share",
+  "@trackingLinkDescription": {
+    "description": "Description for tracking link functionality"
+  },
+  "shareLink": "Share Link:",
+  "@shareLink": {
+    "description": "Label for the generated share link"
+  },
+  "linkCopiedToClipboard": "Link copied to clipboard",
+  "@linkCopiedToClipboard": {
+    "description": "Message shown when link is copied"
+  },
+  "openingWhatsApp": "Opening WhatsApp...",
+  "@openingWhatsApp": {
+    "description": "Message shown when opening WhatsApp"
+  },
+  "sharedToWhatsApp": "Shared to WhatsApp! Participants can join using the link.",
+  "@sharedToWhatsApp": {
+    "description": "Success message after sharing to WhatsApp"
+  },
+  "whatsAppGroupAnalytics": "WhatsApp Group Share Analytics",
+  "@whatsAppGroupAnalytics": {
+    "description": "Title for WhatsApp analytics section"
+  },
+  "totalShares": "Total Shares",
+  "@totalShares": {
+    "description": "Label for total shares metric"
+  },
+  "totalClicks": "Total Clicks",
+  "@totalClicks": {
+    "description": "Label for total clicks metric"
+  },
+  "totalJoins": "Total Joins",
+  "@totalJoins": {
+    "description": "Label for total joins metric"
+  },
+  "whatsAppGroupPerformance": "WhatsApp Group Performance",
+  "@whatsAppGroupPerformance": {
+    "description": "Title for WhatsApp group specific metrics"
+  },
+  "overallConversion": "Overall Conversion",
+  "@overallConversion": {
+    "description": "Label for overall conversion rate"
+  },
+  "whatsAppConversion": "WhatsApp Conversion",
+  "@whatsAppConversion": {
+    "description": "Label for WhatsApp conversion rate"
+  },
+  "joinsViaWhatsApp": "{count} joins via WhatsApp",
+  "@joinsViaWhatsApp": {
+    "description": "Text showing number of joins via WhatsApp",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "description": "Number of joins"
+      }
+    }
   }
 }

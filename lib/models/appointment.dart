@@ -21,6 +21,8 @@ class Appointment {
     this.callRequestId,
     this.inviteeContact,
     this.status = InviteStatus.pending,
+    this.source = InviteSource.direct_invite,
+    this.shareId,
   });
 
   factory Appointment.fromJson(Map<String, dynamic> json) =>
@@ -35,6 +37,8 @@ class Appointment {
   @JsonKey(includeFromJson: false, includeToJson: false)
   final Contact? inviteeContact;
   final InviteStatus status;
+  final InviteSource source; // How the participant joined
+  final String? shareId; // Unique identifier for tracking shared links
 
   Map<String, dynamic> toJson() => _$AppointmentToJson(this);
 }
