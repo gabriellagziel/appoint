@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[ID] Simpan grup untuk pengenalan",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[ID] Sesi langsung dijadwalkan",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[ID] [ID] Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[ID] Masukkan nama grup",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[ID] [ID] Confirm",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[ID] [ID] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[ID] Tidak ada sesi Playtime",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[ID] Tutup",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[ID] Grup terdeteksi",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[ID] Kembali",
   "@back": {

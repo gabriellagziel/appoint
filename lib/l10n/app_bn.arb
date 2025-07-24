@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[BN] পরিচয়ের জন্য গ্রুপ সংরক্ষণ করুন",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[BN] লাইভ সেশন শিডিউল হয়েছে",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[BN] [BN] Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[BN] পরিচয়ের জন্য গ্রুপের নাম লিখুন",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[BN] নিশ্চিত করুন",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[BN] গ্রুপের নাম (ঐচ্ছিক)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[BN] [BN] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[BN] বন্ধ করুন",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[BN] পরিচিত গ্রুপ সনাক্ত হয়েছে",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[BN] পেছনে ফিরে যান",
   "@back": {

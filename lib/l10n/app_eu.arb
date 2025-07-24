@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[EU] [EU] Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[EU] [EU] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[EU] [EU] Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[EU] Talde-izena sartu",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[EU] Berretsi",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[EU] Talde-izena (boluntarioa)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[EU] [EU] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[EU] Itxi",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[EU] Ezagutzen den taldea aurkitu da",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[EU] [EU] Back",
   "@back": {

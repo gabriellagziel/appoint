@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[AM] ቡድን ለመታወቂያ ያስቀምጡ",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[AM] በቀጥታ ስብሰባ ተዘጋጅቷል",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[AM] ቀጣይ ስብሰባዎች",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[AM] የቡድን ስም ያስገቡ",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "አረጋግጥ",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[AM] የቡድን ስም (አማራጭ)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[AM] Playtime ስብሰባዎች የሉም",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "ዝጋ",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[AM] ታዋቂ ቡድን ተገኝቷል",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "ወደፊት",
   "@back": {

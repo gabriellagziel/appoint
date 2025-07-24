@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[HA] Ajiye rukuni don gane shi gaba",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[HA] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[HA] Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[HA] Shigar da sunan rukuni don gane shi",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[HA] Confirm",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[HA] Sunan rukuni (zaɓi)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[HA] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[HA] Rufe",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[HA] An sami sanannen rukuni",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[HA] Back",
   "@back": {

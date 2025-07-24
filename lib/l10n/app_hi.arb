@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[HI] भविष्य की पहचान के लिए समूह सहेजें",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[HI] लाइव सत्र निर्धारित किया गया",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[HI] आगामी सत्र",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[HI] पहचान के लिए समूह का नाम दर्ज करें",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[HI] पुष्टि करें",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[HI] समूह का नाम (वैकल्पिक)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[HI] अभी तक कोई सत्र नहीं मिला",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[HI] बंद करें",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[HI] ज्ञात समूह पाया गया",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "पिछला",
   "@back": {

@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[ET] [ET] Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[ET] [ET] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[ET] Eelseisvad seansid",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[ET] Sisesta grupi nimi",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[ET] [ET] Confirm",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[ET] [ET] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[ET] Playtime seansse pole",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[ET] Sulge",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[ET] [ET] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[ET] Tagasi",
   "@back": {

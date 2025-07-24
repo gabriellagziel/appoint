@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[ES_419] [ES_419] Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[ES_419] [ES_419] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[ES_419] [ES_419] Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[ES_419] [ES_419] Enter group name",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[ES_419] [ES_419] Confirm",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[ES_419] [ES_419] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[ES_419] [ES_419] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[ES_419] [ES_419] Close",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[ES_419] [ES_419] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[ES_419] [ES_419] Back",
   "@back": {

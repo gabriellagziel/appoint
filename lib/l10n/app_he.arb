@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[HE] שמור קבוצה לזיהוי",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[HE] מפגש חי מתוזמן",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[HE] מפגשים קרובים",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[HE] הכנס שם קבוצה",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "אשר",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[HE] [HE] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[HE] [HE] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[HE] [HE] Close",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[HE] [HE] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[HE] [HE] Back",
   "@back": {

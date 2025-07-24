@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[LV] [LV] Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[LV] [LV] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[LV] [LV] Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[LV] Ievadiet grupas nosaukumu",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[LV] [LV] Confirm",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[LV] Grupas nosaukums (nav obligāts)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[LV] [LV] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[LV] Aizvērt",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[LV] [LV] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[LV] [LV] Back",
   "@back": {

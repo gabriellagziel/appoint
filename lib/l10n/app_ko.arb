@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[KO] 인식을 위해 그룹 저장",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[KO] 라이브 세션 예약됨",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[KO] 예정된 세션",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[KO] 그룹 이름 입력",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "확인",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[KO] [KO] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[KO] [KO] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[KO] [KO] Close",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[KO] [KO] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[KO] [KO] Back",
   "@back": {

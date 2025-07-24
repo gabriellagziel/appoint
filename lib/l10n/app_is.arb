@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[IS] [IS] Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[IS] [IS] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[IS] [IS] Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[IS] [IS] Enter group name",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[IS] Staðfesta",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[IS] Hópnafn (valkvætt)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[IS] Engar Playtime lotur fundust",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[IS] Loka",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[IS] [IS] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[IS] Til baka",
   "@back": {

@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "儲存群組以供未來辨識",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[ZH_HANT] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[ZH_HANT] Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "輸入群組名稱以便辨識",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[ZH_HANT] Confirm",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "群組名稱（選填）",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[ZH_HANT] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "關閉",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "偵測到已知群組",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[ZH_HANT] Back",
   "@back": {

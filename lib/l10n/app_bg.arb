@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[BG] Запазване на група за разпознаване",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[BG] Готово е планирането на живо",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[BG] Предстоящи сесии",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[BG] Въведете име на група",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "Потвърди",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[BG] Име на група (по избор)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[BG] Няма сесии на Playtime",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "Затвори",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[BG] Открита е позната група",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "Назад",
   "@back": {

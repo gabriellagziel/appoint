@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[DA] Gem gruppe til genkendelse",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[DA] [DA] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[DA] [DA] Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[DA] [DA] Enter group name",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[DA] Bekræft",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[DA] Gruppenavn (valgfri)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[DA] [DA] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[DA] Luk",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[DA] Kendt gruppe registreret",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[DA] Tilbage",
   "@back": {

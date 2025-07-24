@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[CS] [CS] Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[CS] Živá relace naplánována",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[CS] Nadcházející relace",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[CS] [CS] Enter group name",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[CS] Potvrdit",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[CS] [CS] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[CS] Žádná Playtime relace",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[CS] Zavřít",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[CS] [CS] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[CS] Zpět",
   "@back": {
