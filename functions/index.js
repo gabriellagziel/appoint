@@ -43,6 +43,15 @@ if (isFirebaseFunctions) {
   } = require('./src/ambassadors');
 
   const {
+    checkMeetingLocations,
+    sendMeetingReminders,
+    onMeetingCreated,
+    onParticipantStatusChange,
+    getMeetingAnalytics,
+    updateUserLocation,
+  } = require('./src/meeting-reminders');
+
+  const {
     dailyAmbassadorEligibilityCheck,
     monthlyAmbassadorReview,
     trackUserReferral,
@@ -120,6 +129,14 @@ if (isFirebaseFunctions) {
     processWebhookRetries,
     oauth,
     hourlyAlerts,
+    
+    // Meeting functions
+    checkMeetingLocations,
+    sendMeetingReminders,
+    onMeetingCreated,
+    onParticipantStatusChange,
+    getMeetingAnalytics,
+    updateUserLocation,
   };
 } else {
   // Containerized mode - use Express.js server
