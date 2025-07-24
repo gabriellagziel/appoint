@@ -3,7 +3,7 @@ import cors from 'cors';
 import { healthCheck, simpleHealthCheck } from './health';
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = parseInt(process.env.PORT || '8080', 10);
 const HOST = process.env.HOSTNAME || '0.0.0.0';
 
 // Middleware
