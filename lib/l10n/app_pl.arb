@@ -1730,7 +1730,7 @@
   },
   "goBack": "[PL] Go Back (Polish)",
   "@goBack": {
-    "description": "Localization key for: Go Back"
+    "description": "Button to go back"
   },
   "setup": "[PL] Setup (Polish)",
   "@setup": {
@@ -2895,5 +2895,221 @@
   "purchase_now_button": "Purchase Now",
   "@purchase_now_button": {
     "description": "Ad flow string: purchase_now_button"
+  },
+  "termsOfService": "[POLISH] Terms of Service",
+  "@termsOfService": {
+    "description": "Terms of Service page title"
+  },
+  "termsLastUpdated": "[POLISH] Last updated: January 2024",
+  "@termsLastUpdated": {
+    "description": "Terms of Service last updated date"
+  },
+  "termsAcceptanceTitle": "[POLISH] 1. Acceptance of Terms",
+  "@termsAcceptanceTitle": {
+    "description": "Terms of Service section title"
+  },
+  "termsAcceptanceContent": "[POLISH] By accessing and using APP-OINT, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.",
+  "@termsAcceptanceContent": {
+    "description": "Terms of Service acceptance section content"
+  },
+  "termsDescriptionTitle": "[POLISH] 2. Use License",
+  "@termsDescriptionTitle": {
+    "description": "Terms of Service description section title"
+  },
+  "termsDescriptionContent": "[POLISH] Permission is granted to temporarily use APP-OINT for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not: modify or copy the materials; use the materials for any commercial purpose or for any public display; attempt to reverse engineer any software contained on APP-OINT's platform; or remove any copyright or other proprietary notations from the materials.",
+  "@termsDescriptionContent": {
+    "description": "Terms of Service description section content"
+  },
+  "termsUserAccountsTitle": "[POLISH] 3. User Accounts",
+  "@termsUserAccountsTitle": {
+    "description": "Terms of Service user accounts section title"
+  },
+  "termsUserAccountsContent": "[POLISH] When you create an account with us, you must provide information that is accurate, complete, and current at all times. You are responsible for safeguarding the password and for all activities that occur under your account.",
+  "@termsUserAccountsContent": {
+    "description": "Terms of Service user accounts section content"
+  },
+  "termsMinorProtectionTitle": "[POLISH] 4. Protection of Minors (COPPA Compliance)",
+  "@termsMinorProtectionTitle": {
+    "description": "Terms of Service minor protection section title"
+  },
+  "termsMinorProtectionContent": "[POLISH] APP-OINT is committed to protecting the privacy of children under 13 years of age. We do not knowingly collect personal information from children under 13 without verifiable parental consent. If we learn that a child under 13 has provided us with personal information without parental consent, we will delete such information from our files.",
+  "@termsMinorProtectionContent": {
+    "description": "Terms of Service minor protection section content"
+  },
+  "termsProhibitedUsesTitle": "[POLISH] 5. Prohibited Uses",
+  "@termsProhibitedUsesTitle": {
+    "description": "Terms of Service prohibited uses section title"
+  },
+  "termsProhibitedUsesContent": "[POLISH] You may not use our service: for any unlawful purpose or to solicit others to perform unlawful acts; to violate any international, federal, provincial, or state regulations, rules, laws, or local ordinances; to infringe upon or violate our intellectual property rights or the intellectual property rights of others; to harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate; to submit false or misleading information; to upload or transmit viruses or any other type of malicious code; or to collect or track personal information of others.",
+  "@termsProhibitedUsesContent": {
+    "description": "Terms of Service prohibited uses section content"
+  },
+  "termsContentLicenseTitle": "[POLISH] 6. Content License",
+  "@termsContentLicenseTitle": {
+    "description": "Terms of Service content license section title"
+  },
+  "termsContentLicenseContent": "[POLISH] Our service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material. You are responsible for the content that you post to the service, including its legality, reliability, and appropriateness.",
+  "@termsContentLicenseContent": {
+    "description": "Terms of Service content license section content"
+  },
+  "termsPrivacyTitle": "[POLISH] 7. Privacy Policy",
+  "@termsPrivacyTitle": {
+    "description": "Terms of Service privacy section title"
+  },
+  "termsPrivacyContent": "[POLISH] Your privacy is important to us. Please review our Privacy Policy, which also governs your use of the service, to understand our practices.",
+  "@termsPrivacyContent": {
+    "description": "Terms of Service privacy section content"
+  },
+  "termsTerminationTitle": "[POLISH] 8. Termination",
+  "@termsTerminationTitle": {
+    "description": "Terms of Service termination section title"
+  },
+  "termsTerminationContent": "[POLISH] We may terminate or suspend your account and bar access to the service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of the Terms.",
+  "@termsTerminationContent": {
+    "description": "Terms of Service termination section content"
+  },
+  "termsChangesTitle": "[POLISH] 9. Changes to Terms",
+  "@termsChangesTitle": {
+    "description": "Terms of Service changes section title"
+  },
+  "termsChangesContent": "[POLISH] We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days notice prior to any new terms taking effect.",
+  "@termsChangesContent": {
+    "description": "Terms of Service changes section content"
+  },
+  "termsContactTitle": "[POLISH] 10. Contact Information",
+  "@termsContactTitle": {
+    "description": "Terms of Service contact section title"
+  },
+  "termsContactContent": "[POLISH] If you have any questions about these Terms, please contact us at legal@app-oint.com.",
+  "@termsContactContent": {
+    "description": "Terms of Service contact section content"
+  },
+  "acceptTerms": "[POLISH] Accept Terms",
+  "@acceptTerms": {
+    "description": "Button to accept terms of service"
+  },
+  "privacyLastUpdated": "[POLISH] Last updated: January 2024",
+  "@privacyLastUpdated": {
+    "description": "Privacy Policy last updated date"
+  },
+  "privacyIntroductionTitle": "[POLISH] 1. Introduction",
+  "@privacyIntroductionTitle": {
+    "description": "Privacy Policy introduction section title"
+  },
+  "privacyIntroductionContent": "[POLISH] APP-OINT respects your privacy and is committed to protecting your personal data. This privacy policy explains how we look after your personal data when you visit our platform and tells you about your privacy rights and how the law protects you.",
+  "@privacyIntroductionContent": {
+    "description": "Privacy Policy introduction section content"
+  },
+  "privacyInformationCollectedTitle": "[POLISH] 2. Information We Collect",
+  "@privacyInformationCollectedTitle": {
+    "description": "Privacy Policy information collected section title"
+  },
+  "privacyInformationCollectedContent": "[POLISH] We may collect, use, store and transfer different kinds of personal data about you including: identity data (first name, last name, username), contact data (email address, telephone numbers), technical data (internet protocol address, browser type and version, time zone setting), profile data (your username and password, your interests, preferences, feedback), usage data (information about how you use our platform), and marketing data (your preferences in receiving marketing from us).",
+  "@privacyInformationCollectedContent": {
+    "description": "Privacy Policy information collected section content"
+  },
+  "privacyHowWeUseTitle": "[POLISH] 3. How We Use Your Information",
+  "@privacyHowWeUseTitle": {
+    "description": "Privacy Policy how we use section title"
+  },
+  "privacyHowWeUseContent": "[POLISH] We use your personal data to: register you as a new customer, process and deliver your service including managing payments and communicating with you about your service, manage our relationship with you (including notifying you about changes to our terms or privacy policy), enable you to partake in a prize draw, competition or complete a survey, administer and protect our business and this platform (including troubleshooting, data analysis, testing, system maintenance, support, reporting and hosting of data), deliver relevant platform content and advertisements to you and measure or understand the effectiveness of the advertising we serve to you.",
+  "@privacyHowWeUseContent": {
+    "description": "Privacy Policy how we use section content"
+  },
+  "privacyInformationSharingTitle": "[POLISH] 4. Information Sharing",
+  "@privacyInformationSharingTitle": {
+    "description": "Privacy Policy information sharing section title"
+  },
+  "privacyInformationSharingContent": "[POLISH] We may share your personal information in the following situations: with service providers who perform services on our behalf, for business transfers in connection with any merger, sale, or transfer of all or a portion of our business, for legal requirements to comply with applicable law, legal process, or governmental request, to protect rights and safety when we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request.",
+  "@privacyInformationSharingContent": {
+    "description": "Privacy Policy information sharing section content"
+  },
+  "privacyChildrenProtectionTitle": "[POLISH] 5. Children's Privacy (COPPA Compliance)",
+  "@privacyChildrenProtectionTitle": {
+    "description": "Privacy Policy children protection section title"
+  },
+  "privacyChildrenProtectionContent": "[POLISH] Our service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us. If we become aware that we have collected personal data from children without verification of parental consent, we take steps to remove that information from our servers.",
+  "@privacyChildrenProtectionContent": {
+    "description": "Privacy Policy children protection section content"
+  },
+  "privacyDataSecurityTitle": "[POLISH] 6. Data Security",
+  "@privacyDataSecurityTitle": {
+    "description": "Privacy Policy data security section title"
+  },
+  "privacyDataSecurityContent": "[POLISH] We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorized way, altered or disclosed. We limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know.",
+  "@privacyDataSecurityContent": {
+    "description": "Privacy Policy data security section content"
+  },
+  "privacyUserRightsTitle": "[POLISH] 7. Your Data Protection Rights (GDPR)",
+  "@privacyUserRightsTitle": {
+    "description": "Privacy Policy user rights section title"
+  },
+  "privacyUserRightsContent": "[POLISH] Under certain circumstances, you have rights under data protection laws in relation to your personal data: the right to request access to your personal data, the right to request correction of your personal data, the right to request erasure of your personal data, the right to object to processing of your personal data, the right to request restriction of processing your personal data, the right to request transfer of your personal data, and the right to withdraw consent at any time where we are relying on consent to process your personal data.",
+  "@privacyUserRightsContent": {
+    "description": "Privacy Policy user rights section content"
+  },
+  "privacyCookiesTitle": "[POLISH] 8. Cookies",
+  "@privacyCookiesTitle": {
+    "description": "Privacy Policy cookies section title"
+  },
+  "privacyCookiesContent": "[POLISH] We use cookies and similar tracking technologies to track the activity on our service and hold certain information. Cookies are files with small amount of data which may include an anonymous unique identifier. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.",
+  "@privacyCookiesContent": {
+    "description": "Privacy Policy cookies section content"
+  },
+  "privacyThirdPartyTitle": "[POLISH] 9. Third-Party Services",
+  "@privacyThirdPartyTitle": {
+    "description": "Privacy Policy third party section title"
+  },
+  "privacyThirdPartyContent": "[POLISH] Our service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the privacy policy of every site you visit.",
+  "@privacyThirdPartyContent": {
+    "description": "Privacy Policy third party section content"
+  },
+  "privacyChangesTitle": "[POLISH] 10. Changes to This Privacy Policy",
+  "@privacyChangesTitle": {
+    "description": "Privacy Policy changes section title"
+  },
+  "privacyChangesContent": "[POLISH] We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'last updated' date.",
+  "@privacyChangesContent": {
+    "description": "Privacy Policy changes section content"
+  },
+  "privacyContactTitle": "[POLISH] 11. Contact Us",
+  "@privacyContactTitle": {
+    "description": "Privacy Policy contact section title"
+  },
+  "privacyContactContent": "[POLISH] If you have any questions about this Privacy Policy, please contact us at privacy@app-oint.com.",
+  "@privacyContactContent": {
+    "description": "Privacy Policy contact section content"
+  },
+  "acceptPrivacyPolicy": "[POLISH] Accept Privacy Policy",
+  "@acceptPrivacyPolicy": {
+    "description": "Button to accept privacy policy"
+  },
+  "consentRequired": "[POLISH] You must accept the terms and privacy policy to continue",
+  "@consentRequired": {
+    "description": "Error message when consent is required but not given"
+  },
+  "iAgreeToThe": "[POLISH] I agree to the",
+  "@iAgreeToThe": {
+    "description": "Start of consent text"
+  },
+  "and": "[POLISH] and",
+  "@and": {
+    "description": "Conjunction word for consent text"
+  },
+  "iHaveReadAndAgreeToThe": "[POLISH] I have read and agree to the",
+  "@iHaveReadAndAgreeToThe": {
+    "description": "Consent agreement text"
+  },
+  "createAccount": "[POLISH] Create Account",
+  "@createAccount": {
+    "description": "Button to create account after consent"
+  },
+  "acceptAndContinue": "[POLISH] Accept and Continue",
+  "@acceptAndContinue": {
+    "description": "Button to accept terms and continue"
+  },
+  "consentSignupNotice": "[POLISH] By creating an account, you acknowledge that you have read and agree to our Terms of Service and Privacy Policy.",
+  "@consentSignupNotice": {
+    "description": "Notice text shown during signup about consent"
   }
 }

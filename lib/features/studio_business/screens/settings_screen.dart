@@ -161,20 +161,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             leading: const Icon(Icons.security),
             title: const Text('Privacy Policy'),
             subtitle: const Text('Read our privacy policy'),
-            onTap: () async {
-              const url = 'https://yourdomain.com/privacy-policy';
-              final uri = Uri.parse(url);
-              if (await canLaunchUrl(uri)) {
-                await launchUrl(uri, mode: LaunchMode.externalApplication);
-              } else {
-                if (mounted) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Could not open privacy policy'),
-                    ),
-                  );
-                }
-              }
+            onTap: () {
+              Navigator.of(context).pushNamed('/privacy');
             },
           ),
           ListTile(
