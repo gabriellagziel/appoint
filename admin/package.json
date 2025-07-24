@@ -2,9 +2,9 @@
   "name": "admin-app", 
   "version": "1.0.0",
   "scripts": {
-    "build": "echo 'Building admin app...'",
-    "export": "mkdir -p out && echo '<html><head><title>Admin Panel</title></head><body><h1>App-Oint Admin Panel</h1><p>Coming Soon</p></body></html>' > out/index.html",
-    "serve": "serve out -p ${PORT:-8082}",
+    "build": "mkdir -p out && echo 'Building admin app...'",
+    "export": "mkdir -p out && cp public/index.html out/index.html",
+    "serve": "serve out -p ${PORT:-8082} --single",
     "start": "npm run serve"
   },
   "dependencies": {
