@@ -1,4 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:appoint/models/custom_form_field.dart';
 
 part 'admin_broadcast_message.freezed.dart';
 part 'admin_broadcast_message.g.dart';
@@ -9,6 +10,7 @@ enum BroadcastMessageType {
   video,
   poll,
   link,
+  form,
 }
 
 enum BroadcastMessageStatus {
@@ -30,6 +32,7 @@ class AdminBroadcastMessage with _$AdminBroadcastMessage {
     final String? videoUrl,
     final String? externalLink,
     final List<String>? pollOptions,
+    final List<CustomFormField>? formFields,
     final DateTime? scheduledFor,
     final DateTime? sentAt,
     final DateTime? processedAt,
