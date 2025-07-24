@@ -114,6 +114,13 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
+    // Broadcast analytics
+    match /broadcast_analytics/{analyticsId} {
+      allow create: if isSignedIn();
+      allow read: if isAdmin();
+      allow update: if isAdmin();
+    }
+
     // Ambassador quotas
     match /ambassador_quotas/{quotaId} {
       allow read: if isSignedIn() && (
