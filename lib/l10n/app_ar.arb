@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[AR] احفظ المجموعة للتعرف",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[AR] تم جدول البث المباشر",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[AR] الجلسات القادمة",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[AR] أدخل اسم المجموعة",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "تأكيد",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[AR] اسم المجموعة (اختياري)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[AR] لا توجد جلسات Playtime",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "إغلاق",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[AR] تم الكشف عن مجموعة معروفة",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "عودة",
   "@back": {

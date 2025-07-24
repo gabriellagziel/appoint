@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[VI] Lưu nhóm để nhận dạng",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[VI] Phiên trực tiếp đã được lên lịch",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[VI] Phiên sắp tới",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[VI] Nhập tên nhóm",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[VI] Xác nhận",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[VI] [VI] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[VI] [VI] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[VI] [VI] Close",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[VI] [VI] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[VI] [VI] Back",
   "@back": {

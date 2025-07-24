@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[FI] Tallenna ryhmä tunnistusta varten",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[FI] [FI] Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[FI] [FI] Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[FI] Anna ryhmän nimi",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[FI] Vahvista",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[FI] [FI] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[FI] [FI] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[FI] Sulje",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[FI] Tunnistettu tunnettu ryhmä",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[FI] [FI] Back",
   "@back": {

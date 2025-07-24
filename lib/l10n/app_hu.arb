@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[HU] [HU] Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[HU] Élő munkamenet ütemezve",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[HU] Közelgő munkamenetek",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[HU] [HU] Enter group name",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[HU] Megerősítés",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[HU] [HU] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[HU] [HU] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[HU] Bezárás",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[HU] [HU] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[HU] Vissza",
   "@back": {

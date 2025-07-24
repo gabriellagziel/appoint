@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "保存组以便识别",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "直播已安排",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "即将到来的会话",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "输入组名",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "确认",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "组名（可选）",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[ZH] 暂无 Playtime 会话",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "关闭",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "已知组已检测",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "返回",
   "@back": {

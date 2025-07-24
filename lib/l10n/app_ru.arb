@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[RU] Сохранить группу для распознавания",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[RU] Живая сессия запланирована",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[RU] Предстоящие сессии",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[RU] Введите название группы",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "Подтвердить",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[RU] [RU] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[RU] [RU] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[RU] [RU] Close",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[RU] [RU] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[RU] [RU] Back",
   "@back": {

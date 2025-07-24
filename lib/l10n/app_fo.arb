@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[FO] [FO] Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[FO] Livifundur settur upp",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[FO] [FO] Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[FO] Skriva bólkanavn",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[FO] Váttað",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[FO] Bólkanavn (valfrítt)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[FO] [FO] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[FO] [FO] Close",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[FO] [FO] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[FO] Tilbaka",
   "@back": {

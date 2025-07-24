@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "[UK] Зберегти групу для розпізнавання",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "[UK] Жива сесія запланована",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "[UK] Найближчі сесії",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[UK] Введіть назву групи",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "Підтвердити",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[UK] [UK] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[UK] [UK] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[UK] [UK] Close",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[UK] [UK] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[UK] [UK] Back",
   "@back": {

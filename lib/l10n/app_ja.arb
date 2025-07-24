@@ -96,10 +96,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "グループを認識用に保存",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "ライブセッションがスケジュールされました",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -310,10 +306,6 @@
   },
   "upcomingSessions": "今後のセッション",
   "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "グループ名を入力",
-  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "確認",
@@ -596,10 +588,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "[JA] [JA] Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "[JA] [JA] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -615,10 +603,6 @@
   "close": "[JA] [JA] Close",
   "@close": {
     "description": "close description"
-  },
-  "knownGroupDetected": "[JA] [JA] Known group detected",
-  "@knownGroupDetected": {
-    "description": "Description"
   },
   "back": "[JA] [JA] Back",
   "@back": {

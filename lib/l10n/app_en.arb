@@ -102,10 +102,6 @@
   "@revokeAccess": {
     "description": "Description"
   },
-  "saveGroupForRecognition": "Save Group for Recognition",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
   "playtimeLiveScheduled": "Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -321,10 +317,6 @@
   "@upcomingSessions": {
     "description": "Description"
   },
-  "enterGroupName": "Enter group name",
-  "@enterGroupName": {
-    "description": "Description"
-  },
   "confirm": "Confirm",
   "@confirm": {
     "description": "Description"
@@ -455,7 +447,7 @@
   },
   "quickActions": "Quick Actions",
   "@quickActions": {
-    "description": "Description"
+    "description": "Section title for quick action buttons"
   },
   "playtimeTitle": "Playtime",
   "@playtimeTitle": {
@@ -587,7 +579,7 @@
   },
   "share": "Share",
   "@share": {
-    "description": "Description"
+    "description": "Tab label for share section"
   },
   "playtimeEnterGameName": "Enter game name",
   "@playtimeEnterGameName": {
@@ -605,10 +597,6 @@
   "@createGame": {
     "description": "Description"
   },
-  "groupNameOptional": "Group Name (Optional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
   "playtimeNoSessions": "No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -623,10 +611,6 @@
   },
   "close": "Close",
   "@close": {
-    "description": "Description"
-  },
-  "knownGroupDetected": "Known group detected",
-  "@knownGroupDetected": {
     "description": "Description"
   },
   "back": "Back",
@@ -672,7 +656,7 @@
   },
   "overview": "Overview",
   "@overview": {
-    "description": "Description"
+    "description": "Tab label for overview section"
   },
   "bookings": "Bookings",
   "@bookings": {
@@ -887,7 +871,7 @@
   },
   "rewards": "Rewards",
   "@rewards": {
-    "description": "Localization key for: Rewards"
+    "description": "Tab label for rewards section"
   },
   "time": "Time",
   "@time": {
@@ -1295,7 +1279,7 @@
   },
   "copyLink": "Copy Link",
   "@copyLink": {
-    "description": "Localization key for: Copy Link"
+    "description": "Tooltip for copy link button"
   },
   "dashboard1": "Dashboard",
   "@dashboard1": {
@@ -1327,7 +1311,7 @@
   },
   "ambassadorDashboard": "Ambassador Dashboard",
   "@ambassadorDashboard": {
-    "description": "Localization key for: Ambassador Dashboard"
+    "description": "Title for the ambassador dashboard screen"
   },
   "phoneBooking": "Phone Booking",
   "@phoneBooking": {
@@ -1728,7 +1712,7 @@
   },
   "shareLink": "Share Link",
   "@shareLink": {
-    "description": "Localization key for: Share Link"
+    "description": "Button label for sharing referral link"
   },
   "areYouSureYouWantToDeleteThisProvider": "Are you sure you want to delete this provider?",
   "@areYouSureYouWantToDeleteThisProvider": {
@@ -1854,9 +1838,9 @@
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard!",
+  "linkCopiedToClipboard": "Link copied to clipboard",
   "@linkCopiedToClipboard": {
-    "description": "Localization key for: Link copied to clipboard!"
+    "description": "Confirmation message when link is copied"
   },
   "accept1": "Accept",
   "@accept1": {
@@ -2260,7 +2244,7 @@
   },
   "referrals": "Referrals",
   "@referrals": {
-    "description": "Localization key for: Referrals"
+    "description": "Tab label for referrals section"
   },
   "crm": "CRM",
   "@crm": {
@@ -2714,11 +2698,6 @@
   "@purchase_now_button": {
     "description": "Button to purchase upgrade"
   },
-  
-  "ambassadorDashboard": "Ambassador Dashboard",
-  "@ambassadorDashboard": {
-    "description": "Title for the ambassador dashboard screen"
-  },
   "welcomeAmbassador": "Welcome, Ambassador!",
   "@welcomeAmbassador": {
     "description": "Welcome message for ambassadors"
@@ -2726,22 +2705,6 @@
   "activeStatus": "Active",
   "@activeStatus": {
     "description": "Status label showing ambassador is active"
-  },
-  "overview": "Overview",
-  "@overview": {
-    "description": "Tab label for overview section"
-  },
-  "referrals": "Referrals",
-  "@referrals": {
-    "description": "Tab label for referrals section"
-  },
-  "rewards": "Rewards",
-  "@rewards": {
-    "description": "Tab label for rewards section"
-  },
-  "share": "Share",
-  "@share": {
-    "description": "Tab label for share section"
   },
   "totalReferrals": "Total Referrals",
   "@totalReferrals": {
@@ -2783,14 +2746,6 @@
   "@monthlyReferralRequirement": {
     "description": "Explanation of monthly referral requirement"
   },
-  "quickActions": "Quick Actions",
-  "@quickActions": {
-    "description": "Section title for quick action buttons"
-  },
-  "shareLink": "Share Link",
-  "@shareLink": {
-    "description": "Button label for sharing referral link"
-  },
   "viewRewards": "View Rewards",
   "@viewRewards": {
     "description": "Button label for viewing rewards"
@@ -2823,10 +2778,6 @@
   "@yourReferralLink": {
     "description": "Title for referral link section"
   },
-  "copyLink": "Copy Link",
-  "@copyLink": {
-    "description": "Tooltip for copy link button"
-  },
   "shareYourLink": "Share Your Link",
   "@shareYourLink": {
     "description": "Section title for sharing options"
@@ -2858,10 +2809,6 @@
   "ambassadorWelcomeMessage": "Congratulations! You've been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.",
   "@ambassadorWelcomeMessage": {
     "description": "Welcome message for new ambassadors"
-  },
-  "linkCopiedToClipboard": "Link copied to clipboard",
-  "@linkCopiedToClipboard": {
-    "description": "Confirmation message when link is copied"
   },
   "ambassadorPromotionTitle": "Congratulations! You're now an Ambassador!",
   "@ambassadorPromotionTitle": {
