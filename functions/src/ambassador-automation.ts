@@ -1,5 +1,12 @@
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
+import { 
+  sendPromotionNotification, 
+  sendTierUpgradeNotification, 
+  REDACTED_TOKEN, 
+  sendDemotionNotification, 
+  sendReferralSuccessNotification 
+} from './ambassador-notifications';
 
 const db = admin.firestore();
 
@@ -120,6 +127,16 @@ export const monthlyAmbassadorReview = functions.pubsub
         const monthlyReferrals = await getMonthlyReferralCount(profile.userId);
         
         if (monthlyReferrals < MINIMUM_MONTHLY_REFERRALS) {
+          // Send warning first if it's the first time this month
+          if (monthlyReferrals < 5) {
+            await REDACTED_TOKEN(
+              profile.userId, 
+              profile.languageCode || 'en', 
+              monthlyReferrals, 
+              MINIMUM_MONTHLY_REFERRALS
+            );
+          }
+          
           // Demote ambassador
           await demoteAmbassador(profile.userId, 'insufficient_monthly_referrals');
           demotedCount++;
@@ -334,6 +351,9 @@ async function promoteToAmbassador(userId: string): Promise<boolean> {
     // Generate share link and award basic tier reward
     await generateShareLink(userId);
     await awardTierReward(userId, 'basic');
+    
+    // Send promotion notification
+    await sendPromotionNotification(userId, languageCode, 'basic');
 
     return true;
   } catch (error) {
@@ -374,6 +394,13 @@ async function demoteAmbassador(userId: string, reason: string): Promise<void> {
     // Revoke active rewards (except lifetime)
     await revokeActiveRewards(userId);
     
+    // Send demotion notification
+    const profileDoc = await db.collection('ambassador_profiles').doc(userId).get();
+    if (profileDoc.exists) {
+      const profile = profileDoc.data()!;
+      await sendDemotionNotification(userId, profile.languageCode || 'en', reason);
+    }
+    
   } catch (error) {
     console.error('Error demoting ambassador:', error);
   }
@@ -407,6 +434,24 @@ async function trackReferralForAmbassador(ambassadorId: string, referredUserId: 
 
     // Check for tier upgrade
     await checkAndUpgradeTier(ambassadorId);
+    
+    // Send referral success notification
+    const ambassadorDoc = await db.collection('ambassador_profiles').doc(ambassadorId).get();
+    const referredUserDoc = await db.collection('users').doc(referredUserId).get();
+    
+    if (ambassadorDoc.exists && referredUserDoc.exists) {
+      const ambassador = ambassadorDoc.data()!;
+      const referredUser = referredUserDoc.data()!;
+      const referredUserName = referredUser.displayName || referredUser.email || 'New User';
+      const totalReferrals = ambassador.totalReferrals + 1; // +1 because this is the new referral
+      
+      await sendReferralSuccessNotification(
+        ambassadorId,
+        ambassador.languageCode || 'en',
+        referredUserName,
+        totalReferrals
+      );
+    }
     
   } catch (error) {
     console.error('Error tracking referral:', error);
@@ -591,6 +636,15 @@ async function checkAndUpgradeTier(userId: string): Promise<boolean> {
       });
 
       await awardTierReward(userId, newTier);
+      
+      // Send tier upgrade notification
+      await sendTierUpgradeNotification(
+        userId,
+        profile.languageCode || 'en',
+        profile.tier,
+        newTier,
+        totalReferrals
+      );
       
       // Log tier upgrade
       await db.collection('ambassador_tier_upgrades').add({
