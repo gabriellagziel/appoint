@@ -205,6 +205,106 @@ service cloud.firestore {
         request.resource.data.userId == resource.data.userId;
     }
 
+    // WhatsApp Group Share Collections
+    match /whatsapp_shares/{document} {
+      // Allow authenticated users to create shares
+      allow create: if request.auth != null 
+        && request.auth.uid == request.resource.data.creatorId;
+      
+      // Allow creators and admins to read their shares
+      allow read: if request.auth != null 
+        && (request.auth.uid == resource.data.creatorId 
+            || isAdmin(request.auth.uid));
+      
+      // No updates or deletes for data integrity
+      allow update, delete: if false;
+    }
+    
+    match /share_clicks/{document} {
+      // Allow anyone to create click events (public links)
+      allow create: if true;
+      
+      // Allow creators and admins to read click data
+      allow read: if request.auth != null 
+        && (isCreatorOfShare(request.auth.uid, resource.data.shareId)
+            || isAdmin(request.auth.uid));
+      
+      // No updates or deletes for analytics integrity
+      allow update, delete: if false;
+    }
+    
+    match /share_conversions/{document} {
+      // Allow authenticated users to create conversion events
+      allow create: if request.auth != null;
+      
+      // Allow creators, participants, and admins to read conversion data
+      allow read: if request.auth != null 
+        && (isCreatorOfShare(request.auth.uid, resource.data.shareId)
+            || request.auth.uid == resource.data.participantId
+            || isAdmin(request.auth.uid));
+      
+      // No updates or deletes for analytics integrity
+      allow update, delete: if false;
+    }
+    
+    // Enhanced invites collection with source tracking
+    match /invites/{document} {
+      // Allow authenticated users to create invites
+      allow create: if request.auth != null;
+      
+      // Allow invitees and creators to read invites
+      allow read: if request.auth != null 
+        && (request.auth.uid == resource.data.inviteeId 
+            || isCreatorOfAppointment(request.auth.uid, resource.data.appointmentId)
+            || isAdmin(request.auth.uid));
+      
+      // Allow invitees to update their response status
+      allow update: if request.auth != null 
+        && request.auth.uid == resource.data.inviteeId
+        && request.resource.data.diff(resource.data).affectedKeys()
+            .hasOnly(['status']);
+      
+      // Allow creators to delete invites
+      allow delete: if request.auth != null 
+        && isCreatorOfAppointment(request.auth.uid, resource.data.appointmentId);
+    }
+    
+    // Enhanced appointments collection with source tracking
+    match /appointments/{document} {
+      // Allow authenticated users to create appointments
+      allow create: if request.auth != null 
+        && request.auth.uid == request.resource.data.creatorId;
+      
+      // Allow creators, invitees, and admins to read appointments
+      allow read: if request.auth != null 
+        && (request.auth.uid == resource.data.creatorId 
+            || request.auth.uid == resource.data.inviteeId
+            || isAdmin(request.auth.uid));
+      
+      // Allow creators to update appointments
+      allow update: if request.auth != null 
+        && request.auth.uid == resource.data.creatorId;
+      
+      // Allow creators to delete appointments
+      allow delete: if request.auth != null 
+        && request.auth.uid == resource.data.creatorId;
+    }
+    
+    // Helper functions
+    function isAdmin(userId) {
+      return exists(/databases/$(database)/documents/admins/$(userId));
+    }
+    
+    function isCreatorOfAppointment(userId, appointmentId) {
+      return exists(/databases/$(database)/documents/appointments/$(appointmentId))
+        && get(/databases/$(database)/documents/appointments/$(appointmentId)).data.creatorId == userId;
+    }
+    
+    function isCreatorOfShare(userId, shareId) {
+      return exists(/databases/$(database)/documents/whatsapp_shares/$(shareId))
+        && get(/databases/$(database)/documents/whatsapp_shares/$(shareId)).data.creatorId == userId;
+    }
+
     // Admin panel data
     match /admin/{document=**} {
       allow read, write: if isAdmin();
