@@ -1,7 +1,7 @@
-name: appoint-web
+name: appoint-flutter-web
 region: nyc
 services:
-- name: appoint-web
+- name: appoint-flutter-web
   source_dir: /
   github:
     repo: appoint
@@ -17,7 +17,8 @@ services:
   instance_count: 1
   instance_size_slug: basic-xxs
   routes:
-  - path: /
+  - path: /flutter-web
+  - path: /flutter-web/*
   envs:
   - key: FLUTTER_VERSION
     value: "3.32.5"
