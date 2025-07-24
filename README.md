@@ -1,13 +1,84 @@
 # AppOint
 
-A Flutter mobile application for appointment booking and management.
+A Flutter mobile application for appointment booking and management with microservices architecture.
 
 ## 🚀 Quick Start
+
+### With Docker (Recommended)
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/appoint.git
+cd appoint
+
+# Start all services with Docker Compose
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+
+# Stop services
+docker-compose down
+```
+
+**Services will be available at:**
+- **Dashboard**: http://localhost:3000
+- **API/Functions**: http://localhost:8080
+- **Database**: PostgreSQL on localhost:5432
+- **Cache**: Redis on localhost:6379
+
+### Traditional Development
 
 1. **Setup Environment**: Run `scripts/setup_env.sh` for local development setup
 2. **Install Dependencies**: `flutter pub get`
 3. **Run Tests**: `flutter test`
 4. **Start Development**: `flutter run`
+
+## 🐳 Docker Development
+
+### Development Mode with Hot Reloading
+
+```bash
+# Start in development mode with hot reloading
+docker-compose --profile dev up -d
+
+# Or start specific services in dev mode
+docker-compose up dashboard-dev functions-dev -d
+```
+
+### Environment Configuration
+
+1. Copy environment files:
+   ```bash
+   cp dashboard/.env.example dashboard/.env
+   cp functions/.env.example functions/.env
+   ```
+
+2. Update the `.env` files with your configuration values
+
+3. Restart services:
+   ```bash
+   docker-compose restart
+   ```
+
+### Useful Docker Commands
+
+```bash
+# View service logs
+docker-compose logs dashboard
+docker-compose logs functions
+
+# Rebuild services after code changes
+docker-compose build dashboard functions
+
+# Reset databases
+docker-compose down -v
+docker-compose up -d
+
+# Run tests in containers
+docker-compose exec dashboard npm test
+docker-compose exec functions npm test
+```
 
 ## 📊 Status
 
@@ -20,17 +91,20 @@ A Flutter mobile application for appointment booking and management.
 - **[Project Documentation](docs/README.md)** - Comprehensive project documentation
 - **[Architecture](docs/architecture.md)** - System architecture and design patterns
 - **[CI/CD Setup](docs/ci_setup.md)** - Continuous Integration and Deployment guide
+- **[Docker Usage - Dashboard](dashboard/DOCKER_USAGE.md)** - Dashboard service Docker guide
+- **[Docker Usage - Functions](functions/DOCKER_USAGE.md)** - Functions service Docker guide
 
 ## 🛠️ Development
 
 ### Prerequisites
 
-- Flutter SDK 3.4.0+
+- Docker & Docker Compose (recommended)
+- Flutter SDK 3.4.0+ (for mobile development)
 - Dart SDK 3.4.0+
 - Android Studio / Xcode (for mobile development)
-- Firebase CLI (for backend services)
+- Node.js 22+ (for local development without Docker)
 
-### Local Development
+### Local Development (Without Docker)
 
 ```bash
 # Clone the repository
@@ -50,6 +124,21 @@ flutter test
 flutter run
 ```
 
+### Mobile Development
+
+```bash
+# Install Flutter dependencies
+flutter pub get
+
+# Run Flutter app
+flutter run
+
+# Run on specific device
+flutter run -d chrome  # Web
+flutter run -d android # Android
+flutter run -d ios     # iOS
+```
+
 ## 🧪 Testing
 
 ```bash
@@ -61,9 +150,15 @@ flutter test --coverage
 
 # Run integration tests
 flutter test --tags integration
+
+# Test Docker services
+docker-compose exec dashboard npm test
+docker-compose exec functions npm test
 ```
 
 ## 📦 Build
+
+### Mobile App
 
 ```bash
 # Build debug APK
@@ -75,6 +170,30 @@ flutter build apk --release
 # Build for iOS
 flutter build ios
 ```
+
+### Docker Images
+
+```bash
+# Build all Docker images
+docker-compose build
+
+# Build specific service
+docker-compose build dashboard
+docker-compose build functions
+
+# Build for production
+docker-compose -f docker-compose.yml -f docker-compose.prod.yml build
+```
+
+## 🔧 Architecture
+
+This project uses a microservices architecture:
+
+- **Dashboard**: Next.js frontend for admin/business management
+- **Functions**: Node.js API service handling business logic
+- **Mobile App**: Flutter cross-platform mobile application
+- **Database**: PostgreSQL for data persistence
+- **Cache**: Redis for session storage and caching
 
 ## 🤝 Contributing
 
@@ -88,6 +207,7 @@ flutter build ios
 
 - All code must pass static analysis (`flutter analyze`)
 - All tests must pass (`flutter test`)
+- Docker builds must succeed (`docker-compose build`)
 - Code coverage is tracked via Codecov
 - PRs require all CI checks to pass before merge
 
@@ -99,4 +219,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [Flutter Documentation](https://docs.flutter.dev/)
 - [Firebase Documentation](https://firebase.google.com/docs)
-- [Riverpod Documentation](https://riverpod.dev/)
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Docker Documentation](https://docs.docker.com/)
