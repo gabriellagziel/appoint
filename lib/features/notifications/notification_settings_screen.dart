@@ -3,6 +3,7 @@ import 'package:appoint/models/notification_settings.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/providers/notification_provider.dart';
 import 'package:appoint/providers/user_settings_provider.dart';
+import 'package:appoint/providers/fcm_token_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

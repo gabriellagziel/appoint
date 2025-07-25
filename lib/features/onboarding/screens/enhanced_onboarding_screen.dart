@@ -24,6 +24,10 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
   final PageController _pageController = PageController();
   final _formKey = GlobalKey<FormState>();
   
+  // Page management
+  int _currentPage = 0;
+  List<Widget> _onboardingPages = [];
+  
   // Controllers for form fields
   final _nameController = TextEditingController();
   final _emailController = TextEditingController();
