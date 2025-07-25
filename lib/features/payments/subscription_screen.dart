@@ -1,4 +1,6 @@
 import 'package:appoint/services/stripe_service.dart';
+import 'package:appoint/widgets/app_logo.dart';
+import 'package:appoint/widgets/app_attribution.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
@@ -135,19 +137,33 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
   @override
   Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
-        title: Text('Subscribe to ${widget.planName}'),
+        title: Row(
+          children: [
+            const AppLogo(size: 24, logoOnly: true),
+            const SizedBox(width: 8),
+            Text('Subscribe to ${widget.planName}'),
+          ],
+        ),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         elevation: 0,
       ),
-      body: _hasError
-          ? _buildErrorWidget()
-          : Stack(
-              children: [
-                WebViewWidget(controller: _webViewController),
-                if (_isLoading) _buildLoadingWidget(),
-              ],
-            ),
+      body: Column(
+        children: [
+          Expanded(
+            child: _hasError
+                ? _buildErrorWidget()
+                : Stack(
+                    children: [
+                      WebViewWidget(controller: _webViewController),
+                      if (_isLoading) _buildLoadingWidget(),
+                    ],
+                  ),
+          ),
+          // Attribution - Required for all payment screens
+          const AppAttributionFooter(),
+        ],
+      ),
     );
 
   Widget _buildErrorWidget() => Center(
@@ -216,22 +232,31 @@ class SubscriptionPlansScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
-        title: const Text('Choose Your Plan'),
+        title: Row(
+          children: [
+            const AppLogo(size: 24, logoOnly: true),
+            const SizedBox(width: 8),
+            const Text('Choose Your Plan'),
+          ],
+        ),
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
         elevation: 0,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            const Text(
-              'Select a subscription plan to unlock premium features',
-              style: TextStyle(fontSize: 16),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 24),
+      body: Column(
+        children: [
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const Text(
+                    'Select a subscription plan to unlock premium features',
+                    style: TextStyle(fontSize: 16),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 24),
             _buildPlanCard(
               context,
               'Basic',
@@ -271,8 +296,13 @@ class SubscriptionPlansScreen extends StatelessWidget {
                 'White-label solution',
               ],
             ),
-          ],
-        ),
+                ],
+              ),
+            ),
+          ),
+          // Attribution - Required for all subscription screens  
+          const AppAttributionFooter(),
+        ],
       ),
     );
 
