@@ -34,8 +34,8 @@ class AmbassadorDataNotifier extends StateNotifier<AsyncValue<AmbassadorData>> {
       final chartData = _service.generateChartData(stats);
       final data = AmbassadorData(stats: stats, chartData: chartData);
 
-      final state = AsyncValue.data(data);
-    } catch (e) {
+      state = AsyncValue.data(data);
+    } catch (e, stackTrace) {
       state = AsyncValue.error(e, stackTrace);
     }
   }
