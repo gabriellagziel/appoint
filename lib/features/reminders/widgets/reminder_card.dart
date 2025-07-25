@@ -28,17 +28,21 @@ class ReminderCard extends StatelessWidget {
     final isOverdue = _isOverdue;
     final timeUntil = _timeUntilTrigger;
 
-    return Dismissible(
-      key: Key(reminder.id),
-      background: _buildSwipeBackground(context, isLeading: true),
-      secondaryBackground: _buildSwipeBackground(context, isLeading: false),
-      onDismissed: (direction) {
-        if (direction == DismissDirection.startToEnd) {
-          onComplete?.call();
-        } else {
-          onDelete?.call();
-        }
-      },
+    return Semantics(
+      label: '${reminder.title}. ${reminder.description ?? ''}. ${_getAccessibilityStatus(context)}',
+      button: true,
+      enabled: true,
+      child: Dismissible(
+        key: Key(reminder.id),
+        background: _buildSwipeBackground(context, isLeading: true),
+        secondaryBackground: _buildSwipeBackground(context, isLeading: false),
+        onDismissed: (direction) {
+          if (direction == DismissDirection.startToEnd) {
+            onComplete?.call();
+          } else {
+            onDelete?.call();
+          }
+        },
       child: Card(
         margin: const EdgeInsets.only(bottom: 12),
         elevation: reminder.status == ReminderStatus.snoozed ? 1 : 2,
@@ -298,7 +302,7 @@ class ReminderCard extends StatelessWidget {
           ),
         ),
       ),
-    );
+    ));
   }
 
   Widget _buildSwipeBackground(BuildContext context, {required bool isLeading}) {
@@ -437,6 +441,18 @@ class ReminderCard extends StatelessWidget {
   bool get _isOverdue {
     if (reminder.triggerTime == null || !reminder.status.isActive) return false;
     return reminder.triggerTime!.isBefore(DateTime.now());
+  }
+
+  String _getAccessibilityStatus(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    if (reminder.status == ReminderStatus.completed) {
+      return l10n.completed;
+    } else if (_isOverdue) {
+      return l10n.overdue;
+    } else if (reminder.triggerTime != null) {
+      return _formatTriggerTime(reminder.triggerTime!, l10n);
+    }
+    return '';
   }
 
   String? get _timeUntilTrigger {
