@@ -1575,5 +1575,45 @@
   "onTrack": "On Track",
   "@onTrack": {
     "description": "On track status label"
+  },
+  "dart": "Dart",
+  "@dart": {
+    "description": "Dart programming language name"
+  },
+  "localeName": "en",
+  "@localeName": {
+    "description": "Locale name identifier"
+  },
+  "noRouteDefinedForStateuripath": "No route defined for the given URI path",
+  "@noRouteDefinedForStateuripath": {
+    "description": "Error message for undefined routes"
+  },
+  "recentReferrals": "Recent Referrals",
+  "@recentReferrals": {
+    "description": "Recent referrals section title"
+  },
+  "remaining": "Remaining",
+  "@remaining": {
+    "description": "Remaining count label"
+  },
+  "thisMonth": "This Month",
+  "@thisMonth": {
+    "description": "This month time period label"
+  },
+  "totalReferrals": "Total Referrals",
+  "@totalReferrals": {
+    "description": "Total referrals count label"
+  },
+  "viewRewards": "View Rewards",
+  "@viewRewards": {
+    "description": "View rewards button label"
+  },
+  "yaml": "YAML",
+  "@yaml": {
+    "description": "YAML file format name"
+  },
+  "yourReferralLink": "Your Referral Link",
+  "@yourReferralLink": {
+    "description": "Your referral link section title"
   }
 }
