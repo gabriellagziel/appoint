@@ -206,4 +206,3 @@ class StaffAvailabilityScreen extends ConsumerWidget {
       }
     }
   }
-}

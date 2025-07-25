@@ -13,7 +13,7 @@ Future<void> initializeOfflineBookingSystem() async {
   Hive.registerAdapter(OfflineServiceOfferingAdapter());
 
   // Initialize the offline booking repository
-  offlineRepository = OfflineBookingRepository();
+  final offlineRepository = OfflineBookingRepository();
   await offlineRepository.initialize();
 
   // Store the repository instance globally or in your dependency injection

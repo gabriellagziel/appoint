@@ -31,8 +31,8 @@ class SurveyNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _surveyService.submitResponse(surveyId, response);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(error, stackTrace);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 
@@ -41,8 +41,8 @@ class SurveyNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _surveyService.createSurvey(surveyData);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(error, stackTrace);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 
@@ -52,8 +52,8 @@ class SurveyNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _surveyService.updateSurvey(surveyId, updates);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(error, stackTrace);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 
@@ -62,8 +62,8 @@ class SurveyNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _surveyService.deleteSurvey(surveyId);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(error, stackTrace);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 }

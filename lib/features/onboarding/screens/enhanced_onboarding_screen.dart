@@ -1,5 +1,5 @@
 import 'package:appoint/features/onboarding/services/onboarding_service.dart';
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/widgets/app_logo.dart';
@@ -23,6 +23,10 @@ class EnhancedOnboardingScreen extends ConsumerStatefulWidget {
 class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScreen> {
   final PageController _pageController = PageController();
   final _formKey = GlobalKey<FormState>();
+  
+  // Page management
+  int _currentPage = 0;
+  List<Widget> _onboardingPages = [];
   
   // Controllers for form fields
   final _nameController = TextEditingController();
@@ -170,6 +174,10 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
         ),
       ),
     );
+  }
+
+  Widget _buildOnboardingPage(Widget page) {
+    return page;
   }
 
   Widget _buildProgressIndicator(int currentStep) {
@@ -776,7 +784,6 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
     
     return languages[code] ?? 'Not selected';
   }
-}
 
 enum UserType {
   personal,

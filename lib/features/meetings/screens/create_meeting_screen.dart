@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/models/meeting.dart';
 import 'package:appoint/services/meeting_service.dart';
 import 'package:appoint/providers/auth_provider.dart';
-import 'package:appoint/l10n/l10n.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class CreateMeetingScreen extends ConsumerStatefulWidget {
   const CreateMeetingScreen({super.key});

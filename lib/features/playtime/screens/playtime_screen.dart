@@ -1,4 +1,4 @@
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/services/playtime_service.dart';
 import 'package:appoint/config/theme.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -384,9 +384,6 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
         );
       }
     } catch (e) {
-        final _errorMessage = e.toString();
-      });
-      
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -398,6 +395,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
           ),
         );
       }
+    }
     } finally {
       if (mounted) {
         setState(() {
@@ -406,4 +404,3 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
       }
     }
   }
-}

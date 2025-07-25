@@ -66,7 +66,7 @@ final FutureProviderFamily<PlaytimeGame?, String> gameByIdProvider = FutureProvi
   final games = await ref.read(gamesProvider.future);
   try {
     return games.firstWhere((game) => game.id == gameId);
-  } catch (e) {
+  } catch (e, stackTrace) {
     return null;
   }
 });
@@ -104,7 +104,7 @@ final FutureProviderFamily<PlaytimeSession?, String> sessionByIdProvider = Futur
   final sessions = await ref.read(sessionsProvider.future);
   try {
     return sessions.firstWhere((session) => session.id == sessionId);
-  } catch (e) {
+  } catch (e, stackTrace) {
     return null;
   }
 });
@@ -141,7 +141,7 @@ final FutureProviderFamily<PlaytimeBackground?, String> backgroundByIdProvider =
   try {
     return backgrounds
         .firstWhere((background) => background.id == backgroundId);
-  } catch (e) {
+  } catch (e, stackTrace) {
     return null;
   }
 });
@@ -183,8 +183,8 @@ class PlaytimeGameNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.createGame(game);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(e, stack);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 
@@ -193,8 +193,8 @@ class PlaytimeGameNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.updateGame(game);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(e, stack);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 
@@ -203,8 +203,8 @@ class PlaytimeGameNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.deleteGame(gameId);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(e, stack);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 }
@@ -219,8 +219,8 @@ class PlaytimeSessionNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.createSession(session);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(e, stack);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 
@@ -229,8 +229,8 @@ class PlaytimeSessionNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.updateSession(session);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(e, stack);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 }
@@ -257,8 +257,8 @@ class PlaytimeBackgroundNotifier extends StateNotifier<AsyncValue<void>> {
       await _service.createBackground(
           name, description, imageFile, category, tags,);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(e, stack);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 }
@@ -274,8 +274,8 @@ class PlaytimeChatNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.sendMessage(sessionId, message);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(e, stack);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 }

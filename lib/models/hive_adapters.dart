@@ -8,7 +8,7 @@ class OfflineBookingAdapter extends TypeAdapter<OfflineBooking> {
 
   @override
   OfflineBooking read(BinaryReader reader) {
-    numOfFields = reader.readByte();
+    final numOfFields = reader.readByte();
     final fields = <int, dynamic>{
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
@@ -85,7 +85,7 @@ class OfflineServiceOfferingAdapter
 
   @override
   OfflineServiceOffering read(BinaryReader reader) {
-    numOfFields = reader.readByte();
+    final numOfFields = reader.readByte();
     final fields = <int, dynamic>{
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };

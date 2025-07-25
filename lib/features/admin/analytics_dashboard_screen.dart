@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fl_chart/fl_chart.dart';
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/services/analytics_service.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/models/custom_form_field.dart';

@@ -1,4 +1,4 @@
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/providers/user_profile_provider.dart';
 import 'package:appoint/services/user_deletion_service.dart';
@@ -74,9 +74,8 @@ class UserProfileScreen extends ConsumerWidget {
         );
       }
     } catch (e) {
-        Navigator.of(context).pop();
-      }
-
+      Navigator.of(context).pop();
+      
       // Show error message
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -86,6 +85,7 @@ class UserProfileScreen extends ConsumerWidget {
           ),
         );
       }
+    }
     }
   }
 
@@ -157,4 +157,3 @@ class UserProfileScreen extends ConsumerWidget {
       ),
     );
   }
-}

@@ -56,7 +56,6 @@ class _BusinessSubscriptionScreenState
         setState(() => _isLoading = false);
       }
     }
-  }
 
   Future<void> _subscribeToProfessional() async {
     setState(() => _isLoading = true);
@@ -85,7 +84,6 @@ class _BusinessSubscriptionScreenState
         setState(() => _isLoading = false);
       }
     }
-  }
 
   Future<void> _subscribeToBusinessPlus() async {
     setState(() => _isLoading = true);
@@ -114,7 +112,6 @@ class _BusinessSubscriptionScreenState
         setState(() => _isLoading = false);
       }
     }
-  }
 
   Future<void> _applyPromoCode() async {
     final code = _promoCodeController.text.trim();
@@ -155,7 +152,6 @@ class _BusinessSubscriptionScreenState
         setState(() => _isApplyingPromo = false);
       }
     }
-  }
 
   Future<void> _openCustomerPortal() async {
     try {
@@ -178,7 +174,6 @@ class _BusinessSubscriptionScreenState
         );
       }
     }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -777,4 +772,3 @@ class _BusinessSubscriptionScreenState
   }
 
   String _formatDate(DateTime date) => '${date.day}/${date.month}/${date.year}';
-}

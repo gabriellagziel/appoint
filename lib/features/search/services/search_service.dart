@@ -143,15 +143,15 @@ class SearchService {
       final data = doc.data() as Map<String, dynamic>;
       return SearchResult(
         id: doc.id,
-        title: data['name'] ?? '',
-        description: data['description'] ?? '',
+        title: data['name'] as String? ?? '',
+        description: data['description'] as String? ?? '',
         type: 'business',
-        rating: (data['rating'] ?? 0.0).toDouble(),
-        imageUrl: data['imageUrl'] ?? '',
+        rating: ((data['rating'] as double?) ?? 0.0).toDouble(),
+        imageUrl: data['imageUrl'] as String? ?? '',
         metadata: data,
-        distance: data['distance']?.toDouble(),
-        availability: data['isAvailable'] ?? true,
-        price: data['averagePrice']?.toDouble(),
+        distance: (data['distance'] as double?)?.toDouble(),
+        availability: data['isAvailable'] as bool? ?? true,
+        price: (data['averagePrice'] as double?)?.toDouble(),
       );
     }).toList();
   }
@@ -181,14 +181,14 @@ class SearchService {
       final data = doc.data() as Map<String, dynamic>;
       return SearchResult(
         id: doc.id,
-        title: data['name'] ?? '',
-        description: data['description'] ?? '',
+        title: data['name'] as String? ?? '',
+        description: data['description'] as String? ?? '',
         type: 'service',
-        rating: (data['rating'] ?? 0.0).toDouble(),
-        imageUrl: data['imageUrl'] ?? '',
+        rating: ((data['rating'] as double?) ?? 0.0).toDouble(),
+        imageUrl: data['imageUrl'] as String? ?? '',
         metadata: data,
-        availability: data['isAvailable'] ?? true,
-        price: data['price']?.toDouble(),
+        availability: data['isAvailable'] as bool? ?? true,
+        price: (data['price'] as double?)?.toDouble(),
       );
     }).toList();
   }
@@ -209,11 +209,11 @@ class SearchService {
       final data = doc.data() as Map<String, dynamic>;
       return SearchResult(
         id: doc.id,
-        title: data['displayName'] ?? '',
-        description: data['bio'] ?? '',
+        title: data['displayName'] as String? ?? '',
+        description: data['bio'] as String? ?? '',
         type: 'user',
         rating: 0.0, // Users don't have ratings
-        imageUrl: data['photoURL'] ?? '',
+        imageUrl: data['photoURL'] as String? ?? '',
         metadata: data,
       );
     }).toList();

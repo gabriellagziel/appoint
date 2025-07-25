@@ -2,7 +2,7 @@ import 'package:appoint/models/ambassador_profile.dart';
 import 'package:appoint/services/notification_service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 /// Extended notification service specifically for Ambassador-related events
 class AmbassadorNotificationService {

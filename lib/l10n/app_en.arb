@@ -6,7 +6,7 @@
   },
   "home": "Home",
   "@home": {
-    "description": "Home screen label"
+    "description": "Home navigation label"
   },
   "noSessionsYet": "No sessions yet",
   "@noSessionsYet": {
@@ -14,15 +14,15 @@
   },
   "ok": "OK",
   "@ok": {
-    "description": "OK button label"
+    "description": "OK button text"
   },
   "playtimeLandingChooseMode": "Choose your play mode:",
   "@playtimeLandingChooseMode": {
-    "description": "Prompt to choose play mode"
+    "description": "Playtime landing choose mode message"
   },
   "signUp": "Sign Up",
   "@signUp": {
-    "description": "Sign up button label"
+    "description": "Sign up button text"
   },
   "scheduleMessage": "Schedule Message",
   "@scheduleMessage": {
@@ -30,7 +30,7 @@
   },
   "decline": "Decline",
   "@decline": {
-    "description": "Decline button label"
+    "description": "Decline button"
   },
   "adminBroadcast": "Admin Broadcast",
   "@adminBroadcast": {
@@ -38,7 +38,7 @@
   },
   "login": "Login",
   "@login": {
-    "description": "Login button label"
+    "description": "Login button text"
   },
   "playtimeChooseFriends": "Choose friends to invite",
   "@playtimeChooseFriends": {
@@ -58,14 +58,11 @@
   },
   "undo": "Undo",
   "@undo": {
-    "description": "Undo button label"
+    "description": "Undo button text"
   },
-  "opened": "Opened: {count}",
+  "opened": "Opened",
   "@opened": {
-    "description": "Opened count label",
-    "placeholders": {
-      "count": {}
-    }
+    "description": "Opened status"
   },
   "createVirtualSession": "Create Virtual Session",
   "@createVirtualSession": {
@@ -77,2833 +74,1582 @@
   },
   "redo": "Redo",
   "@redo": {
-    "description": "Redo button label"
+    "description": "Redo button text"
   },
   "next": "Next",
   "@next": {
-    "description": "Next button label"
+    "description": "Next button text"
   },
   "search": "Search",
   "@search": {
-    "description": "Search placeholder"
+    "description": "Search placeholder text"
   },
   "cancelInviteConfirmation": "Are you sure you want to cancel this invite?",
   "@cancelInviteConfirmation": {
     "description": "Cancel invite confirmation message"
   },
-  "created": "Created: {date}",
+  "created": "Created",
   "@created": {
-    "description": "Created status with date",
-    "placeholders": {
-      "date": {}
-    }
+    "description": "Created status"
   },
   "revokeAccess": "Revoke Access",
   "@revokeAccess": {
-    "description": "Description"
+    "description": "Revoke access button"
+  },
+  "saveGroupForRecognition": "Save Group for Recognition",
+  "@saveGroupForRecognition": {
+    "description": "Save group for recognition label"
   },
   "playtimeLiveScheduled": "Live playtime scheduled!",
   "@playtimeLiveScheduled": {
-    "description": "Description"
+    "description": "Live playtime scheduled message"
   },
   "revokeAccessConfirmation": "Are you sure you want to revoke access?",
   "@revokeAccessConfirmation": {
-    "description": "Description"
+    "description": "Revoke access confirmation message"
   },
   "download": "Download",
   "@download": {
-    "description": "Description"
+    "description": "Download button text"
   },
   "password": "Password",
   "@password": {
-    "description": "Description"
+    "description": "Password field label"
   },
-  "errorLoadingFamilyLinks": "Error loading family links: {error}",
+  "errorLoadingFamilyLinks": "Error loading family links",
   "@errorLoadingFamilyLinks": {
-    "error": {}
+    "description": "Error loading family links message"
   },
   "cancel": "Cancel",
   "@cancel": {
-    "description": "Cancel button label"
+    "description": "Cancel button text"
   },
   "playtimeCreate": "Create",
   "@playtimeCreate": {
-    "description": "Description"
+    "description": "Create button"
   },
-  "failedToActionPrivacyRequest": "Failed to action privacy request {action}: {error}",
+  "failedToActionPrivacyRequest": "Failed to action privacy request",
   "@failedToActionPrivacyRequest": {
-    "action": {}
+    "description": "Failed to action privacy request message"
   },
   "appTitle": "APP-OINT",
   "@appTitle": {
-    "description": "Description"
+    "description": "The title of the application"
   },
   "accept": "Accept",
   "@accept": {
-    "description": "Description"
+    "description": "Accept button"
   },
   "playtimeModeVirtual": "Virtual Play",
   "@playtimeModeVirtual": {
-    "description": "Description"
+    "description": "Virtual play mode label"
   },
   "playtimeDescription": "Enjoy live or virtual games with your friends!",
   "@playtimeDescription": {
-    "description": "Description"
+    "description": "Playtime description"
   },
   "delete": "Delete",
   "@delete": {
-    "description": "Description"
+    "description": "Delete button text"
   },
   "playtimeVirtualStarted": "Virtual playtime started!",
   "@playtimeVirtualStarted": {
-    "description": "Description"
+    "description": "Virtual playtime started message"
   },
   "createYourFirstGame": "Create your first game",
   "@createYourFirstGame": {
-    "description": "Description"
+    "description": "Create your first game message"
   },
   "participants": "Participants",
   "@participants": {
-    "description": "Description"
+    "description": "Participants label"
   },
-  "recipients": "Recipients: {count}",
+  "recipients": "Recipients",
   "@recipients": {
-    "description": "Description"
+    "description": "Recipients label"
   },
   "noResults": "No results found",
   "@noResults": {
-    "description": "Description"
+    "description": "No search results message"
   },
   "yes": "Yes",
   "@yes": {
-    "description": "Description"
+    "description": "Yes button text"
   },
   "invite": "Invite",
   "@invite": {
-    "description": "Description"
+    "description": "Invite button"
   },
   "playtimeModeLive": "Live Play",
   "@playtimeModeLive": {
-    "description": "Description"
+    "description": "Live play mode label"
   },
   "done": "Done",
   "@done": {
-    "description": "Description"
+    "description": "Done button text"
   },
   "defaultShareMessage": "Let's meet via Appoint!",
   "@defaultShareMessage": {
-    "description": "Description"
+    "description": "Default share message"
   },
   "no": "No",
   "@no": {
-    "description": "Description"
+    "description": "No button text"
   },
   "playtimeHub": "Playtime Hub",
   "@playtimeHub": {
-    "description": "Description"
+    "description": "Playtime hub title"
   },
+  "error": "Error",
   "@error": {
-    "description": "Localization key for: Error"
+    "description": "Error message"
   },
   "createLiveSession": "Create Live Session",
   "@createLiveSession": {
-    "description": "Description"
+    "description": "Create live session button"
   },
   "enableNotifications": "Enable Notifications",
   "@enableNotifications": {
-    "description": "Description"
+    "description": "Enable notifications label"
   },
-  "invited": "Invited: {date}",
+  "invited": "Invited",
   "@invited": {
-    "description": "Description"
+    "description": "Invited status"
   },
-  "content": "Content: {content}",
+  "content": "Content",
   "@content": {
-    "description": "Description"
+    "description": "Content label"
   },
   "meetingSharedSuccessfully": "Meeting shared successfully",
   "@meetingSharedSuccessfully": {
-    "description": "Description"
+    "description": "Meeting shared successfully message"
   },
   "welcomeToPlaytime": "Welcome to Playtime",
   "@welcomeToPlaytime": {
-    "description": "Description"
+    "description": "Welcome to playtime message"
   },
   "viewAll": "View All",
   "@viewAll": {
-    "description": "Description"
+    "description": "View all button"
   },
   "playtimeVirtual": "Virtual Play",
   "@playtimeVirtual": {
-    "description": "Description"
+    "description": "Virtual play label"
   },
   "staffScreenTBD": "Staff screen coming soon",
   "@staffScreenTBD": {
-    "description": "Description"
+    "description": "Staff screen TBD message"
   },
   "cut": "Cut",
   "@cut": {
-    "description": "Description"
+    "description": "Cut button text"
   },
   "inviteCancelledSuccessfully": "Invite cancelled successfully",
   "@inviteCancelledSuccessfully": {
-    "description": "Description"
+    "description": "Invite cancelled successfully message"
   },
   "retry": "Retry",
   "@retry": {
-    "description": "Description"
+    "description": "Retry button text"
   },
   "composeBroadcastMessage": "Compose Broadcast Message",
   "@composeBroadcastMessage": {
-    "description": "Description"
+    "description": "Compose broadcast message title"
   },
   "sendNow": "Send Now",
   "@sendNow": {
-    "description": "Description"
+    "description": "Send now button"
   },
   "noGamesYet": "No games yet",
   "@noGamesYet": {
-    "description": "Description"
+    "description": "No games yet message"
   },
   "select": "Select",
   "@select": {
-    "description": "Description"
+    "description": "Select button text"
   },
   "about": "About",
   "@about": {
-    "description": "Description"
+    "description": "About navigation label"
   },
   "choose": "Choose",
   "@choose": {
-    "description": "Description"
+    "description": "Choose button text"
   },
   "profile": "Profile",
   "@profile": {
-    "description": "Description"
+    "description": "Profile navigation label"
   },
   "removeChild": "Remove Child",
   "@removeChild": {
-    "description": "Description"
+    "description": "Remove child button"
   },
-  "status": "Status: {status}",
+  "status": "Status",
   "@status": {
-    "description": "Description"
+    "description": "Status label"
   },
   "logout": "Logout",
   "@logout": {
-    "description": "Description"
+    "description": "Logout button text"
   },
   "paste": "Paste",
   "@paste": {
-    "description": "Description"
+    "description": "Paste button text"
   },
   "welcome": "Welcome",
   "@welcome": {
-    "description": "Description"
+    "description": "Welcome message"
   },
   "playtimeCreateSession": "Create a Playtime Session",
   "@playtimeCreateSession": {
-    "description": "Description"
+    "description": "Create playtime session button"
   },
   "familyMembers": "Family Members",
   "@familyMembers": {
-    "description": "Description"
+    "description": "Family members label"
   },
   "upload": "Upload",
   "@upload": {
-    "description": "Description"
+    "description": "Upload button text"
   },
   "upcomingSessions": "Upcoming Sessions",
   "@upcomingSessions": {
-    "description": "Description"
+    "description": "Upcoming sessions label"
+  },
+  "enterGroupName": "Enter group name",
+  "@enterGroupName": {
+    "description": "Enter group name placeholder"
   },
   "confirm": "Confirm",
   "@confirm": {
-    "description": "Description"
+    "description": "Confirm button text"
   },
   "playtimeLive": "Live Play",
   "@playtimeLive": {
-    "description": "Description"
+    "description": "Live play label"
   },
   "errorLoadingInvites": "Error loading invites",
   "@errorLoadingInvites": {
-    "description": "Description"
+    "description": "Error loading invites message"
   },
   "targetingFilters": "Targeting Filters",
   "@targetingFilters": {
-    "description": "Description"
+    "description": "Targeting filters label"
   },
   "pickVideo": "Pick Video",
   "@pickVideo": {
-    "description": "Description"
+    "description": "Pick video button"
   },
   "playtimeGameDeleted": "Game deleted",
   "@playtimeGameDeleted": {
-    "description": "Description"
+    "description": "Game deleted message"
   },
   "scheduleForLater": "Schedule for Later",
   "@scheduleForLater": {
-    "description": "Description"
+    "description": "Schedule for later button"
   },
   "accessRevokedSuccessfully": "Access revoked successfully",
   "@accessRevokedSuccessfully": {
-    "description": "Description"
+    "description": "Access revoked successfully message"
   },
-  "type": "Type: {type}",
+  "type": "Type",
   "@type": {
-    "description": "Description"
+    "description": "Type label"
   },
   "checkingPermissions": "Checking permissions...",
   "@checkingPermissions": {
-    "description": "Description"
+    "description": "Checking permissions message"
   },
   "copy": "Copy",
   "@copy": {
-    "description": "Description"
+    "description": "Copy button text"
   },
   "yesCancel": "Yes, Cancel",
   "@yesCancel": {
-    "description": "Description"
+    "description": "Yes cancel button"
   },
   "email": "Email",
   "@email": {
-    "description": "Description"
+    "description": "Email field label"
   },
   "shareOnWhatsApp": "Share on WhatsApp",
   "@shareOnWhatsApp": {
-    "description": "Description"
+    "description": "Share on WhatsApp button"
   },
   "notificationSettings": "Notification Settings",
   "@notificationSettings": {
-    "description": "Description"
+    "description": "Notification settings title"
   },
   "myProfile": "My Profile",
   "@myProfile": {
-    "description": "Description"
+    "description": "My profile title"
   },
   "revoke": "Revoke",
   "@revoke": {
-    "description": "Description"
+    "description": "Revoke button"
   },
   "noBroadcastMessages": "No messages yet",
   "@noBroadcastMessages": {
-    "description": "Description"
+    "description": "No broadcast messages message"
   },
-  "requestType": "Request Type: {type}",
+  "requestType": "Request Type",
   "@requestType": {
-    "description": "Description"
+    "description": "Request type label"
   },
   "notifications": "Notifications",
   "@notifications": {
-    "description": "Description"
+    "description": "Notifications title"
   },
   "details": "Details",
   "@details": {
-    "description": "Description"
+    "description": "Details label"
   },
   "cancelInvite": "Cancel Invite",
   "@cancelInvite": {
-    "description": "Description"
+    "description": "Cancel invite button"
   },
   "createNew": "Create New",
   "@createNew": {
-    "description": "Description"
+    "description": "Create new button"
   },
   "settings": "Settings",
   "@settings": {
-    "description": "Description"
+    "description": "Settings navigation label"
   },
   "playtimeReject": "Reject",
   "@playtimeReject": {
-    "description": "Description"
+    "description": "Playtime reject button"
   },
   "errorLoadingProfile": "Error loading profile",
   "@errorLoadingProfile": {
-    "description": "Description"
+    "description": "Error loading profile message"
   },
   "edit": "Edit",
   "@edit": {
-    "description": "Description"
+    "description": "Edit button text"
   },
   "add": "Add",
   "@add": {
-    "description": "Description"
+    "description": "Add button text"
   },
   "playtimeGameApproved": "Game approved",
   "@playtimeGameApproved": {
-    "description": "Description"
+    "description": "Game approved message"
   },
   "forgotPassword": "Forgot Password?",
   "@forgotPassword": {
-    "description": "Description"
+    "description": "Forgot password link text"
   },
   "familyDashboard": "Family Dashboard",
   "@familyDashboard": {
-    "description": "Description"
+    "description": "Family dashboard title"
   },
   "loading": "Loading...",
   "@loading": {
-    "description": "Description"
+    "description": "Loading message"
   },
   "quickActions": "Quick Actions",
   "@quickActions": {
-    "description": "Section title for quick action buttons"
+    "description": "Quick actions label"
   },
   "playtimeTitle": "Playtime",
   "@playtimeTitle": {
-    "description": "Description"
+    "description": "Playtime title"
   },
   "otpResentSuccessfully": "OTP resent successfully",
   "@otpResentSuccessfully": {
-    "description": "Description"
+    "description": "OTP resent successfully message"
   },
-  "errorCheckingPermissions": "Error checking permissions: {error}",
+  "errorCheckingPermissions": "Error checking permissions",
   "@errorCheckingPermissions": {
-    "description": "Description"
+    "description": "Error checking permissions message"
   },
   "clientScreenTBD": "Client screen coming soon",
   "@clientScreenTBD": {
-    "description": "Description"
+    "description": "Client screen TBD message"
   },
-  "fcmToken": "FCM Token: {token}",
+  "fcmToken": "FCM Token",
   "@fcmToken": {
-    "token": {}
+    "description": "FCM token label"
   },
   "pickImage": "Pick Image",
   "@pickImage": {
-    "description": "Description"
+    "description": "Pick image button"
   },
   "previous": "Previous",
   "@previous": {
-    "description": "Description"
+    "description": "Previous button text"
   },
   "noProfileFound": "No profile found",
   "@noProfileFound": {
-    "description": "Description"
+    "description": "No profile found message"
   },
   "noFamilyMembersYet": "No family members yet",
   "@noFamilyMembersYet": {
-    "description": "Description"
+    "description": "No family members yet message"
   },
   "mediaOptional": "Media (Optional)",
   "@mediaOptional": {
-    "description": "Description"
+    "description": "Media optional label"
   },
   "messageSavedSuccessfully": "Message saved successfully",
   "@messageSavedSuccessfully": {
-    "description": "Description"
+    "description": "Message saved successfully message"
   },
   "scheduledFor": "Scheduled for",
   "@scheduledFor": {
-    "description": "Description"
+    "description": "Scheduled for label"
   },
   "dashboard": "Dashboard",
   "@dashboard": {
-    "description": "Description"
+    "description": "Dashboard title"
   },
   "noPermissionForBroadcast": "No permission for broadcast",
   "@noPermissionForBroadcast": {
-    "description": "Description"
+    "description": "No permission for broadcast message"
   },
   "playtimeAdminPanelTitle": "Playtime Games – Admin",
   "@playtimeAdminPanelTitle": {
-    "description": "Description"
+    "description": "Playtime admin panel title"
   },
   "inviteDetail": "Invite Details",
   "@inviteDetail": {
-    "description": "Description"
+    "description": "Invite detail title"
   },
-  "scheduled": "Scheduled: {date}",
+  "scheduled": "Scheduled",
   "@scheduled": {
-    "description": "Description"
+    "description": "Scheduled status"
   },
-  "failedToResendOtp": "Failed to resend OTP: {error}",
+  "failedToResendOtp": "Failed to resend OTP",
   "@failedToResendOtp": {
-    "description": "Description"
+    "description": "Failed to resend OTP message"
   },
   "scheduling": "Scheduling",
   "@scheduling": {
-    "description": "Description"
+    "description": "Scheduling label"
   },
-  "errorSavingMessage": "Error saving message: {error}",
+  "errorSavingMessage": "Error saving message",
   "@errorSavingMessage": {
-    "description": "Description"
+    "description": "Error saving message message"
   },
   "save": "Save",
   "@save": {
-    "description": "Description"
+    "description": "Save button text"
   },
   "playtimeApprove": "Approve",
   "@playtimeApprove": {
-    "description": "Description"
+    "description": "Playtime approve button"
   },
   "createYourFirstSession": "Create your first session",
   "@createYourFirstSession": {
-    "description": "Description"
+    "description": "Create your first session message"
   },
   "playtimeGameRejected": "Game rejected",
   "@playtimeGameRejected": {
-    "description": "Description"
+    "description": "Game rejected message"
   },
-  "failedToRevokeAccess": "Failed to revoke access: {error}",
+  "failedToRevokeAccess": "Failed to revoke access",
   "@failedToRevokeAccess": {
-    "description": "Description"
+    "description": "Failed to revoke access message"
   },
   "recentGames": "Recent Games",
   "@recentGames": {
-    "description": "Description"
+    "description": "Recent games label"
   },
   "customizeMessage": "Customize Message",
   "@customizeMessage": {
-    "description": "Description"
+    "description": "Customize message button"
   },
-  "failedToCancelInvite": "Failed to cancel invite: {error}",
+  "failedToCancelInvite": "Failed to cancel invite",
   "@failedToCancelInvite": {
-    "description": "Description"
+    "description": "Failed to cancel invite message"
   },
-  "errorSendingMessage": "Error sending message: {error}",
+  "errorSendingMessage": "Error sending message",
   "@errorSendingMessage": {
-    "description": "Description"
+    "description": "Error sending message message"
   },
   "confirmPassword": "Confirm Password",
   "@confirmPassword": {
-    "description": "Description"
+    "description": "Confirm password field label"
   },
-  "errorLoadingPrivacyRequests": "Error loading privacy requests: {error}",
+  "errorLoadingPrivacyRequests": "Error loading privacy requests",
   "@errorLoadingPrivacyRequests": {
-    "description": "Description"
+    "description": "Error loading privacy requests message"
   },
   "connectedChildren": "Connected Children",
   "@connectedChildren": {
-    "description": "Description"
+    "description": "Connected children label"
   },
   "share": "Share",
   "@share": {
-    "description": "Tab label for share section"
+    "description": "Share button text"
   },
   "playtimeEnterGameName": "Enter game name",
   "@playtimeEnterGameName": {
-    "description": "Description"
+    "description": "Enter game name label"
   },
   "pleaseLoginForFamilyFeatures": "Please login to access family features",
   "@pleaseLoginForFamilyFeatures": {
-    "description": "Description"
+    "description": "Please login for family features message"
   },
   "myInvites": "My Invites",
   "@myInvites": {
-    "description": "Description"
+    "description": "My invites title"
   },
   "createGame": "Create Game",
   "@createGame": {
-    "description": "Description"
+    "description": "Create game button"
+  },
+  "groupNameOptional": "Group Name (Optional)",
+  "@groupNameOptional": {
+    "description": "Group name optional label"
   },
   "playtimeNoSessions": "No playtime sessions found.",
   "@playtimeNoSessions": {
-    "description": "Description"
+    "description": "No playtime sessions message"
   },
   "adminScreenTBD": "Admin screen coming soon",
   "@adminScreenTBD": {
-    "description": "Description"
+    "description": "Admin screen TBD message"
   },
   "playtimeParentDashboardTitle": "Playtime Dashboard",
   "@playtimeParentDashboardTitle": {
-    "description": "Description"
+    "description": "Playtime parent dashboard title"
   },
   "close": "Close",
   "@close": {
-    "description": "Description"
+    "description": "Close button text"
+  },
+  "knownGroupDetected": "Known group detected",
+  "@knownGroupDetected": {
+    "description": "Known group detected message"
   },
   "back": "Back",
   "@back": {
-    "description": "Description"
+    "description": "Back button text"
   },
   "playtimeChooseGame": "Choose a game",
   "@playtimeChooseGame": {
-    "description": "Description"
+    "description": "Choose game label"
   },
   "managePermissions": "Manage Permissions",
   "@managePermissions": {
-    "description": "Description"
+    "description": "Manage permissions button"
   },
   "pollOptions": "Poll Options",
   "@pollOptions": {
-    "description": "Description"
+    "description": "Poll options label"
   },
-  "clicked": "Clicked: {count}",
+  "clicked": "Clicked",
   "@clicked": {
-    "description": "Description"
+    "description": "Clicked status"
   },
-  "link": "Link: {link}",
+  "link": "Link",
   "@link": {
-    "description": "Description"
+    "description": "Link label"
   },
   "meetingReadyMessage": "Your meeting is ready! Join now",
   "@meetingReadyMessage": {
-    "description": "Description"
+    "description": "Meeting ready message"
   },
   "pendingInvites": "Pending Invites",
   "@pendingInvites": {
-    "description": "Description"
+    "description": "Pending invites label"
   },
-  "statusColon": "Status: {status}",
+  "statusColon": "Status:",
   "@statusColon": {
-    "description": "Description"
+    "description": "Status colon label"
   },
-  "pleaseLoginToViewProfile": "Please log in to view your profile.",
-  "adminMetrics": "Admin Metrics",
-  "@adminMetrics": {
-    "description": "Description"
-  },
-  "overview": "Overview",
-  "@overview": {
-    "description": "Tab label for overview section"
-  },
-  "bookings": "Bookings",
-  "@bookings": {
-    "description": "Description"
-  },
-  "users": "Users",
-  "@users": {
-    "description": "Description"
-  },
-  "revenue": "Revenue",
-  "@revenue": {
-    "description": "Description"
-  },
-  "contentLibrary": "Content Library",
-  "@contentLibrary": {},
-  "authErrorUserNotFound": "No account found with this email address.",
-  "@authErrorUserNotFound": {
-    "description": "Firebase Auth user-not-found error message"
-  },
-  "authErrorWrongPassword": "Incorrect password. Please try again.",
-  "@authErrorWrongPassword": {
-    "description": "Firebase Auth wrong-password error message"
-  },
-  "authErrorInvalidEmail": "Please enter a valid email address.",
-  "@authErrorInvalidEmail": {
-    "description": "Firebase Auth invalid-email error message"
-  },
-  "authErrorUserDisabled": "This account has been disabled. Please contact support.",
-  "@authErrorUserDisabled": {
-    "description": "Firebase Auth user-disabled error message"
-  },
-  "authErrorWeakPassword": "Password is too weak. Please choose a stronger password.",
-  "@authErrorWeakPassword": {
-    "description": "Firebase Auth weak-password error message"
-  },
-  "authErrorEmailAlreadyInUse": "An account with this email already exists.",
-  "@authErrorEmailAlreadyInUse": {
-    "description": "Firebase Auth email-already-in-use error message"
-  },
-  "authErrorTooManyRequests": "Too many failed attempts. Please try again later.",
-  "@authErrorTooManyRequests": {
-    "description": "Firebase Auth too-many-requests error message"
-  },
-  "authErrorOperationNotAllowed": "This sign-in method is not enabled. Please contact support.",
-  "@authErrorOperationNotAllowed": {
-    "description": "Firebase Auth operation-not-allowed error message"
-  },
-  "authErrorInvalidCredential": "Invalid credentials. Please try again.",
-  "@authErrorInvalidCredential": {
-    "description": "Firebase Auth invalid-credential error message"
-  },
-  "authErrorAccountExistsWithDifferentCredential": "An account already exists with this email using a different sign-in method.",
-  "@authErrorAccountExistsWithDifferentCredential": {
-    "description": "Firebase Auth account-exists-with-different-credential error message"
-  },
-  "authErrorCredentialAlreadyInUse": "These credentials are already associated with another account.",
-  "@authErrorCredentialAlreadyInUse": {
-    "description": "Firebase Auth credential-already-in-use error message"
-  },
-  "authErrorNetworkRequestFailed": "Network error. Please check your connection and try again.",
-  "@authErrorNetworkRequestFailed": {
-    "description": "Firebase Auth network-request-failed error message"
-  },
-  "socialAccountConflictTitle": "Account Already Exists",
-  "@socialAccountConflictTitle": {
-    "description": "Title for social account conflict dialog"
-  },
-  "socialAccountConflictMessage": "An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?",
-  "@socialAccountConflictMessage": {
-    "description": "Message for social account conflict dialog",
-    "placeholders": {
-      "email": {}
-    }
-  },
-  "linkAccounts": "Link Accounts",
-  "@linkAccounts": {
-    "description": "Button to link social accounts"
-  },
-  "signInWithExistingMethod": "Sign in with existing method",
-  "@signInWithExistingMethod": {
-    "description": "Button to sign in with existing method"
-  },
-  "authErrorRequiresRecentLogin": "Please log in again to perform this operation.",
-  "authErrorAppNotAuthorized": "This app is not authorized to use Firebase Authentication.",
-  "authErrorInvalidVerificationCode": "The verification code is invalid.",
-  "authErrorInvalidVerificationId": "The verification ID is invalid.",
-  "authErrorMissingVerificationCode": "Please enter the verification code.",
-  "authErrorMissingVerificationId": "Missing verification ID.",
-  "authErrorInvalidPhoneNumber": "The phone number is invalid.",
-  "authErrorMissingPhoneNumber": "Please enter a phone number.",
-  "authErrorQuotaExceeded": "The SMS quota for this project has been exceeded. Please try again later.",
-  "authErrorCodeExpired": "The verification code has expired. Please request a new one.",
-  "authErrorSessionExpired": "Your session has expired. Please log in again.",
-  "authErrorMultiFactorAuthRequired": "Multi-factor authentication is required.",
-  "authErrorMultiFactorInfoNotFound": "Multi-factor information not found.",
-  "authErrorMissingMultiFactorSession": "Missing multi-factor session.",
-  "authErrorInvalidMultiFactorSession": "Invalid multi-factor session.",
-  "authErrorSecondFactorAlreadyInUse": "This second factor is already in use.",
-  "authErrorMaximumSecondFactorCountExceeded": "Maximum number of second factors exceeded.",
-  "authErrorUnsupportedFirstFactor": "Unsupported first factor for multi-factor authentication.",
-  "authErrorEmailChangeNeedsVerification": "Email change requires verification.",
-  "authErrorPhoneNumberAlreadyExists": "This phone number is already in use.",
-  "authErrorInvalidPassword": "The password is invalid or too weak.",
-  "authErrorInvalidIdToken": "The ID token is invalid.",
-  "authErrorIdTokenExpired": "The ID token has expired.",
-  "authErrorIdTokenRevoked": "The ID token has been revoked.",
-  "authErrorInternalError": "An internal error occurred. Please try again.",
-  "authErrorInvalidArgument": "An invalid argument was provided.",
-  "authErrorInvalidClaims": "Invalid custom claims provided.",
-  "authErrorInvalidContinueUri": "The continue URL is invalid.",
-  "authErrorInvalidCreationTime": "The creation time is invalid.",
-  "authErrorInvalidDisabledField": "The disabled field value is invalid.",
-  "authErrorInvalidDisplayName": "The display name is invalid.",
-  "authErrorInvalidDynamicLinkDomain": "The dynamic link domain is invalid.",
-  "authErrorInvalidEmailVerified": "The email verified value is invalid.",
-  "authErrorInvalidHashAlgorithm": "The hash algorithm is invalid.",
-  "authErrorInvalidHashBlockSize": "The hash block size is invalid.",
-  "authErrorInvalidHashDerivedKeyLength": "The hash derived key length is invalid.",
-  "authErrorInvalidHashKey": "The hash key is invalid.",
-  "authErrorInvalidHashMemoryCost": "The hash memory cost is invalid.",
-  "authErrorInvalidHashParallelization": "The hash parallelization is invalid.",
-  "authErrorInvalidHashRounds": "The hash rounds value is invalid.",
-  "authErrorInvalidHashSaltSeparator": "The hash salt separator is invalid.",
-  "authErrorInvalidLastSignInTime": "The last sign-in time is invalid.",
-  "authErrorInvalidPageToken": "The page token is invalid.",
-  "authErrorInvalidProviderData": "The provider data is invalid.",
-  "authErrorInvalidProviderId": "The provider ID is invalid.",
-  "authErrorInvalidSessionCookieDuration": "The session cookie duration is invalid.",
-  "authErrorInvalidUid": "The UID is invalid.",
-  "authErrorInvalidUserImport": "The user import record is invalid.",
-  "authErrorMaximumUserCountExceeded": "Maximum user import count exceeded.",
-  "authErrorMissingAndroidPkgName": "Missing Android package name.",
-  "authErrorMissingContinueUri": "Missing continue URL.",
-  "authErrorMissingHashAlgorithm": "Missing hash algorithm.",
-  "authErrorMissingIosBundleId": "Missing iOS bundle ID.",
-  "authErrorMissingUid": "Missing UID.",
-  "authErrorMissingOauthClientSecret": "Missing OAuth client secret.",
-  "authErrorProjectNotFound": "Firebase project not found.",
-  "authErrorReservedClaims": "Reserved claims provided.",
-  "authErrorSessionCookieExpired": "Session cookie has expired.",
-  "authErrorSessionCookieRevoked": "Session cookie has been revoked.",
-  "authErrorUidAlreadyExists": "The UID is already in use.",
-  "authErrorUnauthorizedContinueUri": "The continue URL domain is not whitelisted.",
-  "authErrorUnknown": "An unknown authentication error occurred.",
-  "checkingPermissions1": "Checking permissions...",
-  "@checkingPermissions1": {
-    "description": "Localization key for: Checking permissions..."
-  },
-  "paymentSuccessful": "Payment Successful!",
-  "@paymentSuccessful": {
-    "description": "Localization key for: Payment Successful!"
-  },
-  "businessAvailability": "Business Availability",
-  "@businessAvailability": {
-    "description": "Localization key for: Business Availability"
-  },
-  "send": "Send",
-  "@send": {
-    "description": "Localization key for: Send"
-  },
-  "newNotificationPayloadtitle": "New notification: {payloadTitle}",
-  "@newNotificationPayloadtitle": {
-    "description": "Localization key for: New notification: ${payload.title}"
-  },
-  "gameList": "Game List",
-  "@gameList": {
-    "description": "Localization key for: Game List"
-  },
-  "deleteAvailability": "Delete Availability",
-  "@deleteAvailability": {
-    "description": "Localization key for: Delete Availability"
-  },
-  "connectToGoogleCalendar": "Connect to Google Calendar",
-  "@connectToGoogleCalendar": {
-    "description": "Localization key for: Connect to Google Calendar"
-  },
-  "adminFreeAccess": "Admin Free Access",
-  "@adminFreeAccess": {
-    "description": "Localization key for: Admin Free Access"
-  },
-  "emailProfileemail": "Email: {profileEmail}",
-  "@emailProfileemail": {
-    "description": "Localization key for: Email: ${profile.email}"
-  },
-  "calendar": "Calendar",
-  "@calendar": {
-    "description": "Localization key for: Calendar"
-  },
-  "upload1": "Upload",
-  "@upload1": {
-    "description": "Localization key for: Upload"
-  },
-  "resolved": "Resolved",
-  "@resolved": {
-    "description": "Localization key for: Resolved"
-  },
-  "keepSubscription": "Keep Subscription",
-  "@keepSubscription": {
-    "description": "Localization key for: Keep Subscription"
-  },
-  "virtualSessionCreatedInvitingFriends": "Virtual session created! Inviting friends...",
-  "@virtualSessionCreatedInvitingFriends": {
-    "description": "Localization key for: Virtual session created! Inviting friends..."
-  },
-  "noEventsScheduledForToday": "No events scheduled for today",
-  "@noEventsScheduledForToday": {
-    "description": "Localization key for: No events scheduled for today"
-  },
-  "exportData": "Export Data",
-  "@exportData": {
-    "description": "Localization key for: Export Data"
-  },
-  "rewards": "Rewards",
-  "@rewards": {
-    "description": "Tab label for rewards section"
-  },
-  "time": "Time",
-  "@time": {
-    "description": "Localization key for: Time"
-  },
-  "userCid": "User {id}",
-  "@userCid": {
-    "description": "Localization key for: User ${c.id}"
-  },
-  "noSlots": "No slots",
-  "@noSlots": {
-    "description": "Localization key for: No slots"
-  },
-  "signIn": "Sign In",
-  "@signIn": {
-    "description": "Localization key for: Sign In"
-  },
-  "homeFeedScreen": "Home Feed Screen",
-  "@homeFeedScreen": {
-    "description": "Localization key for: Home Feed Screen"
-  },
-  "selectLocation": "Select Location",
-  "@selectLocation": {
-    "description": "Localization key for: Select Location"
-  },
-  "noTicketsYet": "No tickets yet",
-  "@noTicketsYet": {
-    "description": "Localization key for: No tickets yet"
-  },
-  "meetingSharedSuccessfully1": "Meeting shared successfully!",
-  "@meetingSharedSuccessfully1": {
-    "description": "Localization key for: Meeting shared successfully!"
-  },
-  "studioProfile": "Studio Profile",
-  "@studioProfile": {
-    "description": "Localization key for: Studio Profile"
-  },
-  "subscriptionUnavailable": "Subscription unavailable",
-  "@subscriptionUnavailable": {
-    "description": "Localization key for: Subscription unavailable"
-  },
-  "confirmBooking": "Confirm Booking",
-  "@confirmBooking": {
-    "description": "Localization key for: Confirm Booking"
-  },
-  "failedToUpdatePermissionE": "Failed to update permission: $e",
-  "@failedToUpdatePermissionE": {
-    "description": "Localization key for: Failed to update permission: $e"
-  },
-  "reject": "Reject",
-  "@reject": {
-    "description": "Localization key for: Reject"
-  },
-  "ambassadorStatusAmbassadorstatus": "Ambassador Status: {ambassadorStatus}",
-  "@ambassadorStatusAmbassadorstatus": {
-    "description": "Localization key for: Ambassador Status: ${ambassador.status}"
-  },
-  "noProviders": "No providers",
-  "@noProviders": {
-    "description": "Localization key for: No providers"
-  },
-  "checkingSubscription": "Checking subscription...",
-  "@checkingSubscription": {
-    "description": "Localization key for: Checking subscription..."
-  },
-  "errorPickingImageE": "Error picking image: $e",
-  "@errorPickingImageE": {
-    "description": "Localization key for: Error picking image: $e"
-  },
-  "noContentAvailableYet": "No content available yet",
-  "@noContentAvailableYet": {
-    "description": "Localization key for: No content available yet"
-  },
-  "resolve": "Resolve",
-  "@resolve": {
-    "description": "Localization key for: Resolve"
-  },
-  "errorLoadingSurveysError": "Error loading surveys: $error",
-  "@errorLoadingSurveysError": {
-    "description": "Localization key for: Error loading surveys: $error"
-  },
-  "errorLogerrormessage": "Error: {errorMessage}",
-  "@errorLogerrormessage": {
-    "description": "Localization key for: Error: ${log.errorMessage}"
-  },
-  "getHelpWithYourAccount": "Get help with your account",
-  "@getHelpWithYourAccount": {
-    "description": "Localization key for: Get help with your account"
-  },
-  "pay": "Pay",
-  "@pay": {
-    "description": "Localization key for: Pay"
-  },
-  "noOrganizations": "No organizations",
-  "@noOrganizations": {
-    "description": "Localization key for: No organizations"
-  },
-  "meetingDetails": "Meeting Details",
-  "@meetingDetails": {
-    "description": "Localization key for: Meeting Details"
-  },
-  "errorLoadingAppointments": "Error loading appointments",
-  "@errorLoadingAppointments": {
-    "description": "Localization key for: Error loading appointments"
-  },
-  "changesSavedSuccessfully": "Changes saved successfully!",
-  "@changesSavedSuccessfully": {
-    "description": "Localization key for: Changes saved successfully!"
-  },
-  "createNewInvoice": "Create New Invoice",
-  "@createNewInvoice": {
-    "description": "Localization key for: Create New Invoice"
-  },
-  "profileNotFound": "Profile not found.",
-  "@profileNotFound": {
-    "description": "Localization key for: Profile not found."
-  },
-  "errorConfirmingPaymentE": "Error confirming payment: $e",
-  "@errorConfirmingPaymentE": {
-    "description": "Localization key for: Error confirming payment: $e"
-  },
-  "inviteFriends": "Invite Friends",
-  "@inviteFriends": {
-    "description": "Localization key for: Invite Friends"
-  },
-  "profileSaved": "Profile saved!",
-  "@profileSaved": {
-    "description": "Localization key for: Profile saved!"
-  },
-  "receiveBookingNotificationsViaEmail": "Receive booking notifications via email",
-  "@receiveBookingNotificationsViaEmail": {
-    "description": "Localization key for: Receive booking notifications via email"
-  },
-  "valuetointk": "\\${value}K",
-  "@valuetointk": {
-    "description": "Localization key for: \\$${value.toInt()}K"
-  },
-  "deleteAccount": "Delete Account",
-  "@deleteAccount": {
-    "description": "Localization key for: Delete Account"
-  },
-  "profile1": "Profile",
-  "@profile1": {
-    "description": "Localization key for: Profile"
-  },
-  "businessOnboarding": "Business Onboarding",
-  "@businessOnboarding": {
-    "description": "Localization key for: Business Onboarding"
-  },
-  "addNewClient": "Add New Client",
-  "@addNewClient": {
-    "description": "Localization key for: Add New Client"
-  },
-  "darkMode": "Dark Mode",
-  "@darkMode": {
-    "description": "Localization key for: Dark Mode"
-  },
-  "addProvider": "Add Provider",
-  "@addProvider": {
-    "description": "Localization key for: Add Provider"
-  },
-  "noRouteDefinedForStateuripath": "No route defined for {path}",
-  "@noRouteDefinedForStateuripath": {
-    "description": "Localization key for: No route defined for ${state.uri.path}"
-  },
-  "youWillReceiveAConfirmationEmailShortly": "You will receive a confirmation email shortly.",
-  "@youWillReceiveAConfirmationEmailShortly": {
-    "description": "Localization key for: You will receive a confirmation email shortly."
-  },
-  "addQuestion": "Add Question",
-  "@addQuestion": {
-    "description": "Localization key for: Add Question"
-  },
-  "privacyPolicy": "Privacy Policy",
-  "@privacyPolicy": {
-    "description": "Localization key for: Privacy Policy"
-  },
-  "branchesLengthBranches": "{branchCount} branches",
-  "@branchesLengthBranches": {
-    "description": "Localization key for: ${_branches.length} branches"
-  },
-  "join": "Join",
-  "@join": {
-    "description": "Localization key for: Join"
-  },
-  "businessSubscription": "Business Subscription",
-  "@businessSubscription": {
-    "description": "Localization key for: Business Subscription"
-  },
-  "myInvites1": "My Invites",
-  "@myInvites1": {
-    "description": "Localization key for: My Invites"
-  },
-  "providers": "Providers",
-  "@providers": {
-    "description": "Localization key for: Providers"
-  },
-  "surveyManagement": "Survey Management",
-  "@surveyManagement": {
-    "description": "Localization key for: Survey Management"
-  },
-  "pleaseEnterAValidEmailOrPhone": "Please enter a valid email or phone",
-  "@pleaseEnterAValidEmailOrPhone": {
-    "description": "Localization key for: Please enter a valid email or phone"
-  },
-  "noRoomsFoundAddYourFirstRoom": "No rooms found. Add your first room!",
-  "@noRoomsFoundAddYourFirstRoom": {
-    "description": "Localization key for: No rooms found. Add your first room!"
-  },
-  "readOurPrivacyPolicy": "Read our privacy policy",
-  "@readOurPrivacyPolicy": {
-    "description": "Localization key for: Read our privacy policy"
-  },
-  "couldNotOpenPrivacyPolicy": "Could not open privacy policy",
-  "@couldNotOpenPrivacyPolicy": {
-    "description": "Localization key for: Could not open privacy policy"
-  },
-  "refresh1": "Refresh",
-  "@refresh1": {
-    "description": "Localization key for: Refresh"
-  },
-  "roomUpdatedSuccessfully": "Room updated successfully!",
-  "@roomUpdatedSuccessfully": {
-    "description": "Localization key for: Room updated successfully!"
-  },
-  "contentDetail": "Content Detail",
-  "@contentDetail": {
-    "description": "Localization key for: Content Detail"
-  },
-  "cancelSubscription": "Cancel Subscription",
-  "@cancelSubscription": {
-    "description": "Localization key for: Cancel Subscription"
-  },
-  "successfullyRegisteredAsAmbassador": "Successfully registered as Ambassador!",
-  "@successfullyRegisteredAsAmbassador": {
-    "description": "Localization key for: Successfully registered as Ambassador!"
-  },
-  "save1": "Save",
-  "@save1": {
-    "description": "Localization key for: Save"
-  },
-  "copy1": "Copy",
-  "@copy1": {
-    "description": "Localization key for: Copy"
-  },
-  "failedToSendInvitationE": "Failed to send invitation: $e",
-  "@failedToSendInvitationE": {
-    "description": "Localization key for: Failed to send invitation: $e"
-  },
-  "surveyScore": "Survey Score",
-  "@surveyScore": {
-    "description": "Localization key for: Survey Score"
-  },
-  "userUserid": "User $userId",
-  "@userUserid": {
-    "description": "Localization key for: User $userId"
-  },
-  "noAppointmentsFound": "No appointments found.",
-  "@noAppointmentsFound": {
-    "description": "Localization key for: No appointments found."
-  },
-  "responseDetail": "Response Detail",
-  "@responseDetail": {
-    "description": "Localization key for: Response Detail"
-  },
-  "businessVerificationScreenComingSoon": "Business Verification Screen - Coming Soon",
-  "@businessVerificationScreenComingSoon": {
-    "description": "Localization key for: Business Verification Screen - Coming Soon"
-  },
-  "businessProfileActivatedSuccessfully": "Business profile activated successfully!",
-  "@businessProfileActivatedSuccessfully": {
-    "description": "Localization key for: Business profile activated successfully!"
-  },
-  "failedToStartProSubscriptionE": "Failed to start Pro subscription: $e",
-  "@failedToStartProSubscriptionE": {
-    "description": "Localization key for: Failed to start Pro subscription: $e"
-  },
-  "businessDashboardEntryScreenComingSoon": "Business Dashboard Entry Screen - Coming Soon",
-  "@businessDashboardEntryScreenComingSoon": {
-    "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
-  },
-  "contentFilter": "Content Filter",
-  "@contentFilter": {
-    "description": "Localization key for: Content Filter"
-  },
-  "helpSupport": "Help & Support",
-  "@helpSupport": {
-    "description": "Localization key for: Help & Support"
-  },
-  "editRoom": "Edit Room",
-  "@editRoom": {
-    "description": "Localization key for: Edit Room"
-  },
-  "appointmentApptid": "Appointment: {appointmentId}",
-  "@appointmentApptid": {
-    "description": "Localization key for: Appointment: ${appt.id}"
-  },
-  "deviceLogdeviceinfo": "Device: {deviceInfo}",
-  "@deviceLogdeviceinfo": {
-    "description": "Localization key for: Device: ${log.deviceInfo}"
-  },
-  "businessCrmEntryScreenComingSoon": "Business CRM Entry Screen - Coming Soon",
-  "@businessCrmEntryScreenComingSoon": {
-    "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
-  },
-  "adminDashboard": "Admin Dashboard",
-  "@adminDashboard": {
-    "description": "Localization key for: Admin Dashboard"
-  },
-  "orgmemberidslengthMembers": "{memberCount} members",
-  "@orgmemberidslengthMembers": {
-    "description": "Localization key for: ${org.memberIds.length} members"
-  },
-  "errorLoadingDashboardError": "Error loading dashboard: $error",
-  "@errorLoadingDashboardError": {
-    "description": "Localization key for: Error loading dashboard: $error"
-  },
-  "gameDeletedSuccessfully": "Game deleted successfully!",
-  "@gameDeletedSuccessfully": {
-    "description": "Localization key for: Game deleted successfully!"
-  },
-  "viewResponsesComingSoon": "View responses - Coming soon!",
-  "@viewResponsesComingSoon": {
-    "description": "Localization key for: View responses - Coming soon!"
-  },
-  "deleteProvider": "Delete Provider",
-  "@deleteProvider": {
-    "description": "Localization key for: Delete Provider"
-  },
-  "errorLoadingRewards": "Error loading rewards",
-  "@errorLoadingRewards": {
-    "description": "Localization key for: Error loading rewards"
-  },
-  "failedToDeleteAccountE": "Failed to delete account: $e",
-  "@failedToDeleteAccountE": {
-    "description": "Localization key for: Failed to delete account: $e"
-  },
-  "invited1": "Invited",
-  "@invited1": {
-    "description": "Localization key for: Invited"
-  },
-  "noBranchesAvailable": "No branches available",
-  "@noBranchesAvailable": {
-    "description": "Localization key for: No branches available"
-  },
-  "errorError": "Error: $error",
-  "@errorError": {
-    "description": "Localization key for: Error: $error"
-  },
-  "noEvents": "No events",
-  "@noEvents": {
-    "description": "Localization key for: No events"
-  },
-  "gameCreatedSuccessfully": "Game created successfully!",
-  "@gameCreatedSuccessfully": {
-    "description": "Localization key for: Game created successfully!"
-  },
-  "add1": "Add",
-  "@add1": {
-    "description": "Localization key for: Add"
-  },
-  "creatorCreatorid": "Creator: $creatorId",
-  "@creatorCreatorid": {
-    "description": "Localization key for: Creator: $creatorId"
-  },
-  "eventstarttimeEventendtime": "{startTime} - {endTime}",
-  "@eventstarttimeEventendtime": {
-    "description": "Localization key for: ${event.startTime} - ${event.endTime}"
-  },
-  "allowPlaytime": "Allow Playtime",
-  "@allowPlaytime": {
-    "description": "Localization key for: Allow Playtime"
-  },
-  "clients": "Clients",
-  "@clients": {
-    "description": "Localization key for: Clients"
-  },
-  "noAmbassadorDataAvailable": "No ambassador data available",
-  "@noAmbassadorDataAvailable": {
-    "description": "Localization key for: No ambassador data available"
-  },
-  "backgroundDeletedSuccessfully": "Background deleted successfully!",
-  "@backgroundDeletedSuccessfully": {
-    "description": "Localization key for: Background deleted successfully!"
-  },
-  "errorSnapshoterror": "Error: {error}",
-  "@errorSnapshoterror": {
-    "description": "Localization key for: Error: ${snapshot.error}"
-  },
-  "noAnalyticsDataAvailableYet": "No analytics data available yet.",
-  "@noAnalyticsDataAvailableYet": {
-    "description": "Localization key for: No analytics data available yet."
-  },
-  "errorDeletingSlotE": "Error deleting slot: $e",
-  "@errorDeletingSlotE": {
-    "description": "Localization key for: Error deleting slot: $e"
-  },
-  "businessPhoneBookingEntryScreenComingSoon": "Business Phone Booking Entry Screen - Coming Soon",
-  "@businessPhoneBookingEntryScreenComingSoon": {
-    "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
-  },
-  "verification": "Verification",
-  "@verification": {
-    "description": "Localization key for: Verification"
-  },
-  "copyLink": "Copy Link",
-  "@copyLink": {
-    "description": "Tooltip for copy link button"
-  },
-  "dashboard1": "Dashboard",
-  "@dashboard1": {
-    "description": "Localization key for: Dashboard"
-  },
-  "manageChildAccounts": "Manage Child Accounts",
-  "@manageChildAccounts": {
-    "description": "Localization key for: Manage Child Accounts"
-  },
-  "grantConsent": "Grant Consent",
-  "@grantConsent": {
-    "description": "Localization key for: Grant Consent"
-  },
-  "myProfile1": "My Profile",
-  "@myProfile1": {
-    "description": "Localization key for: My Profile"
-  },
-  "submit": "Submit",
-  "@submit": {
-    "description": "Localization key for: Submit"
-  },
-  "userLoguseremail": "User: {userEmail}",
-  "@userLoguseremail": {
-    "description": "Localization key for: User: ${log.userEmail}"
-  },
-  "emailNotifications": "Email Notifications",
-  "@emailNotifications": {
-    "description": "Localization key for: Email Notifications"
-  },
-  "ambassadorDashboard": "Ambassador Dashboard",
-  "@ambassadorDashboard": {
-    "description": "Title for the ambassador dashboard screen"
-  },
-  "phoneBooking": "Phone Booking",
-  "@phoneBooking": {
-    "description": "Localization key for: Phone Booking"
-  },
-  "bookViaChat": "Book via Chat",
-  "@bookViaChat": {
-    "description": "Localization key for: Book via Chat"
-  },
-  "error": "Error",
-  "businessProfile": "Business Profile",
-  "@businessProfile": {
-    "description": "Localization key for: Business Profile"
-  },
-  "businessBookingEntryScreenComingSoon": "Business Booking Entry Screen - Coming Soon",
-  "@businessBookingEntryScreenComingSoon": {
-    "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
-  },
-  "createNewSurvey": "Create New Survey",
-  "@createNewSurvey": {
-    "description": "Localization key for: Create New Survey"
-  },
-  "backgroundRejected": "Background rejected",
-  "@backgroundRejected": {
-    "description": "Localization key for: Background rejected"
-  },
-  "noMediaSelected": "No media selected",
-  "@noMediaSelected": {
-    "description": "Localization key for: No media selected"
-  },
-  "syncToGoogle": "Sync to Google",
-  "@syncToGoogle": {
-    "description": "Localization key for: Sync to Google"
-  },
-  "virtualPlaytime": "Virtual Playtime",
-  "@virtualPlaytime": {
-    "description": "Localization key for: Virtual Playtime"
-  },
-  "colorContrastTesting": "Color Contrast Testing",
-  "@colorContrastTesting": {
-    "description": "Localization key for: Color Contrast Testing"
-  },
-  "loginFailedE": "Login failed: $e",
-  "@loginFailedE": {
-    "description": "Localization key for: Login failed: $e"
-  },
-  "invitationSentSuccessfully": "Invitation sent successfully!",
-  "@invitationSentSuccessfully": {
-    "description": "Localization key for: Invitation sent successfully!"
-  },
-  "registering": "Registering...",
-  "@registering": {
-    "description": "Localization key for: Registering..."
-  },
-  "statusAppointmentstatusname": "Status: {status}",
-  "@statusAppointmentstatusname": {
-    "description": "Localization key for: Status: ${appointment.status.name}"
-  },
-  "home1": "Home",
-  "@home1": {
-    "description": "Localization key for: Home"
-  },
-  "errorSavingSettingsE": "Error saving settings: $e",
-  "@errorSavingSettingsE": {
-    "description": "Localization key for: Error saving settings: $e"
-  },
-  "appVersionAndInformation": "App version and information",
-  "@appVersionAndInformation": {
-    "description": "Localization key for: App version and information"
-  },
-  "businessSubscriptionEntryScreenComingSoon": "Business Subscription Entry Screen - Coming Soon",
-  "@businessSubscriptionEntryScreenComingSoon": {
-    "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
-  },
-  "ekeyEvalue": "{key}: {value}",
-  "@ekeyEvalue": {
-    "description": "Localization key for: ${e.key}: ${e.value}"
-  },
-  "yourPaymentHasBeenProcessedSuccessfully": "Your payment has been processed successfully.",
-  "@yourPaymentHasBeenProcessedSuccessfully": {
-    "description": "Localization key for: Your payment has been processed successfully."
-  },
-  "errorE": "Error: $e",
-  "@errorE": {
-    "description": "Localization key for: Error: $e"
-  },
-  "viewAll1": "View All",
-  "@viewAll1": {
-    "description": "Localization key for: View All"
-  },
-  "editSurveyComingSoon": "Edit survey - Coming soon!",
-  "@editSurveyComingSoon": {
-    "description": "Localization key for: Edit survey - Coming soon!"
-  },
-  "enterOtp": "Enter OTP",
-  "@enterOtp": {
-    "description": "Localization key for: Enter OTP"
-  },
-  "payment": "Payment",
-  "@payment": {
-    "description": "Localization key for: Payment"
-  },
-  "automaticallyConfirmNewBookingRequests": "Automatically confirm new booking requests",
-  "@automaticallyConfirmNewBookingRequests": {
-    "description": "Localization key for: Automatically confirm new booking requests"
-  },
-  "errorPickingVideoE": "Error picking video: $e",
-  "@errorPickingVideoE": {
-    "description": "Localization key for: Error picking video: $e"
-  },
-  "noRouteDefinedForSettingsname": "No route defined for {settingsName}",
-  "@noRouteDefinedForSettingsname": {
-    "description": "Localization key for: No route defined for ${settings.name}"
-  },
-  "pleaseSignInToUploadABackground": "Please sign in to upload a background",
-  "@pleaseSignInToUploadABackground": {
-    "description": "Localization key for: Please sign in to upload a background"
-  },
-  "logtargettypeLogtargetid": "{targetType}: {targetId}",
-  "@logtargettypeLogtargetid": {
-    "description": "Localization key for: ${log.targetType}: ${log.targetId}"
-  },
-  "staffAvailability": "Staff Availability",
-  "@staffAvailability": {
-    "description": "Localization key for: Staff Availability"
-  },
-  "livePlaytime": "Live Playtime",
-  "@livePlaytime": {
-    "description": "Localization key for: Live Playtime"
-  },
-  "autoconfirmBookings": "Auto-Confirm Bookings",
-  "@autoconfirmBookings": {
-    "description": "Localization key for: Auto-Confirm Bookings"
-  },
-  "redirectingToStripeCheckoutForProPlan": "Redirecting to Stripe checkout for Pro plan...",
-  "@redirectingToStripeCheckoutForProPlan": {
-    "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
-  },
-  "exportAsCsv": "Export as CSV",
-  "@exportAsCsv": {
-    "description": "Localization key for: Export as CSV"
-  },
-  "deleteFunctionalityComingSoon": "Delete functionality coming soon!",
-  "@deleteFunctionalityComingSoon": {
-    "description": "Localization key for: Delete functionality coming soon!"
-  },
-  "editClient": "Edit Client",
-  "@editClient": {
-    "description": "Localization key for: Edit Client"
-  },
-  "areYouSureYouWantToDeleteThisMessage": "Are you sure you want to delete this message?",
-  "@areYouSureYouWantToDeleteThisMessage": {
-    "description": "Localization key for: Are you sure you want to delete this message?"
-  },
-  "referralsAmbassadorreferrals": "Referrals: {referrals}",
-  "@referralsAmbassadorreferrals": {
-    "description": "Localization key for: Referrals: ${ambassador.referrals}"
-  },
-  "notAuthenticated": "Not authenticated",
-  "@notAuthenticated": {
-    "description": "Localization key for: Not authenticated"
-  },
-  "privacyRequestSentToYourParents": "Privacy request sent to your parents!",
-  "@privacyRequestSentToYourParents": {
-    "description": "Localization key for: Privacy request sent to your parents!"
-  },
-  "clientDeletedSuccessfully": "Client deleted successfully!",
-  "@clientDeletedSuccessfully": {
-    "description": "Localization key for: Client deleted successfully!"
-  },
-  "failedToCancelSubscription": "Failed to cancel subscription",
-  "@failedToCancelSubscription": {
-    "description": "Localization key for: Failed to cancel subscription"
-  },
-  "allLanguages": "All Languages",
-  "@allLanguages": {
-    "description": "Localization key for: All Languages"
-  },
-  "slotDeletedSuccessfully": "Slot deleted successfully",
-  "@slotDeletedSuccessfully": {
-    "description": "Localization key for: Slot deleted successfully"
-  },
-  "businessProvidersEntryScreenComingSoon": "Business Providers Entry Screen - Coming Soon",
-  "@businessProvidersEntryScreenComingSoon": {
-    "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
-  },
-  "parentsMustApproveBeforeChildrenCanJoin": "Parents must approve before children can join",
-  "@parentsMustApproveBeforeChildrenCanJoin": {
-    "description": "Localization key for: Parents must approve before children can join"
-  },
-  "subscribeToPro1499mo": "Subscribe to Pro (€14.99/mo)",
-  "@subscribeToPro1499mo": {
-    "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
-  },
-  "businessAvailabilityEntryScreenComingSoon": "Business Availability Entry Screen - Coming Soon",
-  "@businessAvailabilityEntryScreenComingSoon": {
-    "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
-  },
-  "appointmentsListlength": "Appointments: {count}",
-  "@appointmentsListlength": {
-    "description": "Localization key for: Appointments: ${list.length}"
-  },
-  "clearFilters": "Clear Filters",
-  "@clearFilters": {
-    "description": "Localization key for: Clear Filters"
-  },
-  "submitBooking": "Submit Booking",
-  "@submitBooking": {
-    "description": "Localization key for: Submit Booking"
-  },
-  "areYouSureYouWantToCancelThisAppointment": "Are you sure you want to cancel this appointment?",
-  "@areYouSureYouWantToCancelThisAppointment": {
-    "description": "Localization key for: Are you sure you want to cancel this appointment?"
-  },
-  "noUpcomingBookings": "No upcoming bookings",
-  "@noUpcomingBookings": {
-    "description": "Localization key for: No upcoming bookings"
-  },
-  "goBack": "Go Back",
-  "@goBack": {
-    "description": "Localization key for: Go Back"
-  },
-  "setup": "Setup",
-  "@setup": {
-    "description": "Localization key for: Setup"
-  },
-  "inviteChild": "Invite Child",
-  "@inviteChild": {
-    "description": "Localization key for: Invite Child"
-  },
-  "goToDashboard": "Go to Dashboard",
-  "@goToDashboard": {
-    "description": "Localization key for: Go to Dashboard"
-  },
-  "ambassadorQuotaDashboard": "Ambassador Quota Dashboard",
-  "@ambassadorQuotaDashboard": {
-    "description": "Localization key for: Ambassador Quota Dashboard"
-  },
-  "adminSettings": "Admin Settings",
-  "@adminSettings": {
-    "description": "Localization key for: Admin Settings"
-  },
-  "referralCode": "Referral Code",
-  "@referralCode": {
-    "description": "Localization key for: Referral Code"
-  },
-  "adminLogadminemail": "Admin: {adminEmail}",
-  "@adminLogadminemail": {
-    "description": "Localization key for: Admin: ${log.adminEmail}"
-  },
-  "date": "Date",
-  "@date": {
-    "description": "Localization key for: Date"
-  },
-  "readOnly": "Read Only",
-  "@readOnly": {
-    "description": "Localization key for: Read Only"
-  },
-  "bookingRequest": "Booking Request",
-  "@bookingRequest": {
-    "description": "Localization key for: Booking Request"
-  },
-  "advancedReporting": "• Advanced reporting",
-  "@advancedReporting": {
-    "description": "Localization key for: • Advanced reporting"
-  },
-  "rooms": "Rooms",
-  "@rooms": {
-    "description": "Localization key for: Rooms"
-  },
-  "copiedToClipboard": "Copied to clipboard",
-  "@copiedToClipboard": {
-    "description": "Localization key for: Copied to clipboard"
-  },
-  "bookingConfirmed": "Booking Confirmed",
-  "@bookingConfirmed": {
-    "description": "Localization key for: Booking Confirmed"
-  },
-  "sessionApproved": "Session approved!",
-  "@sessionApproved": {
-    "description": "Localization key for: Session approved!"
-  },
-  "clientAddedSuccessfully": "Client added successfully!",
-  "@clientAddedSuccessfully": {
-    "description": "Localization key for: Client added successfully!"
-  },
-  "noNotifications": "No notifications",
-  "@noNotifications": {
-    "description": "Localization key for: No notifications"
-  },
-  "backgroundApproved": "Background approved!",
-  "@backgroundApproved": {
-    "description": "Localization key for: Background approved!"
-  },
-  "familySupport": "Family Support",
-  "@familySupport": {
-    "description": "Localization key for: Family Support"
-  },
-  "deletingAccount": "Deleting account...",
-  "@deletingAccount": {
-    "description": "Localization key for: Deleting account..."
-  },
-  "bookAppointment": "Book Appointment",
-  "@bookAppointment": {
-    "description": "Localization key for: Book Appointment"
-  },
-  "receivePushNotificationsForNewBookings": "Receive push notifications for new bookings",
-  "@receivePushNotificationsForNewBookings": {
-    "description": "Localization key for: Receive push notifications for new bookings"
-  },
-  "delete1": "Delete",
-  "@delete1": {
-    "description": "Localization key for: Delete"
-  },
-  "sendBookingInvite": "Send Booking Invite",
-  "@sendBookingInvite": {
-    "description": "Localization key for: Send Booking Invite"
-  },
-  "text": "Text",
-  "@text": {
-    "description": "Localization key for: Text"
-  },
-  "manageSubscription": "Manage Subscription",
-  "@manageSubscription": {
-    "description": "Localization key for: Manage Subscription"
-  },
-  "requiresInstallFallback": "Requires Install Fallback",
-  "@requiresInstallFallback": {
-    "description": "Localization key for: Requires Install Fallback"
-  },
-  "paymentConfirmation": "Payment Confirmation",
-  "@paymentConfirmation": {
-    "description": "Localization key for: Payment Confirmation"
-  },
-  "promoAppliedYourNextBillIsFree": "Promo applied! Your next bill is free.",
-  "@promoAppliedYourNextBillIsFree": {
-    "description": "Localization key for: Promo applied! Your next bill is free."
-  },
-  "inviteeArgsinviteeid": "Invitee: {inviteeId}",
-  "@inviteeArgsinviteeid": {
-    "description": "Localization key for: Invitee: ${args.inviteeId}"
-  },
-  "errorLoadingSlots": "Error loading slots",
-  "@errorLoadingSlots": {
-    "description": "Localization key for: Error loading slots"
-  },
-  "allowOtherUsersToFindAndJoinThisGame": "Allow other users to find and join this game",
-  "@allowOtherUsersToFindAndJoinThisGame": {
-    "description": "Localization key for: Allow other users to find and join this game"
-  },
-  "businessOnboardingScreenComingSoon": "Business Onboarding Screen - Coming Soon",
-  "@businessOnboardingScreenComingSoon": {
-    "description": "Localization key for: Business Onboarding Screen - Coming Soon"
-  },
-  "activateBusinessProfile": "Activate Business Profile",
-  "@activateBusinessProfile": {
-    "description": "Localization key for: Activate Business Profile"
-  },
-  "contentNotFound": "Content not found",
-  "@contentNotFound": {
-    "description": "Localization key for: Content not found"
-  },
-  "pspecialtynpcontactinfo": "{specialty}\\n{contactInfo}",
-  "@pspecialtynpcontactinfo": {
-    "description": "Localization key for: ${p.specialty}\\n${p.contactInfo}"
-  },
-  "rating": "Rating",
-  "@rating": {
-    "description": "Localization key for: Rating"
-  },
-  "messages": "Messages",
-  "@messages": {
-    "description": "Localization key for: Messages"
-  },
-  "errorEstimatingRecipientsE": "Error estimating recipients: $e",
-  "@errorEstimatingRecipientsE": {
-    "description": "Localization key for: Error estimating recipients: $e"
-  },
-  "becomeAnAmbassador": "Become an Ambassador",
-  "@becomeAnAmbassador": {
-    "description": "Localization key for: Become an Ambassador"
-  },
-  "subscribeNow": "Subscribe Now",
-  "@subscribeNow": {
-    "description": "Localization key for: Subscribe Now"
-  },
-  "timeArgsslotformatcontext": "Time: {time}",
-  "@timeArgsslotformatcontext": {
-    "description": "Localization key for: Time: ${args.slot.format(context)}"
-  },
-  "shareViaWhatsapp": "Share via WhatsApp",
-  "@shareViaWhatsapp": {
-    "description": "Localization key for: Share via WhatsApp"
-  },
-  "users1": "Users",
-  "@users1": {
-    "description": "Localization key for: Users"
-  },
-  "shareLink": "Share Link",
-  "@shareLink": {
-    "description": "Button label for sharing referral link"
-  },
-  "areYouSureYouWantToDeleteThisProvider": "Are you sure you want to delete this provider?",
-  "@areYouSureYouWantToDeleteThisProvider": {
-    "description": "Localization key for: Are you sure you want to delete this provider?"
-  },
-  "deleteAppointment": "Delete Appointment",
-  "@deleteAppointment": {
-    "description": "Localization key for: Delete Appointment"
-  },
-  "toggleAvailability": "Toggle Availability",
-  "@toggleAvailability": {
-    "description": "Localization key for: Toggle Availability"
-  },
-  "changePlan": "Change Plan",
-  "@changePlan": {
-    "description": "Localization key for: Change Plan"
-  },
-  "errorLoadingStaff": "Error loading staff",
-  "@errorLoadingStaff": {
-    "description": "Localization key for: Error loading staff"
-  },
-  "errorLoadingConfigurationE": "Error loading configuration: $e",
-  "@errorLoadingConfigurationE": {
-    "description": "Localization key for: Error loading configuration: $e"
-  },
-  "updateYourBusinessInformation": "Update your business information",
-  "@updateYourBusinessInformation": {
-    "description": "Localization key for: Update your business information"
-  },
-  "noProvidersFoundAddYourFirstProvider": "No providers found. Add your first provider!",
-  "@noProvidersFoundAddYourFirstProvider": {
-    "description": "Localization key for: No providers found. Add your first provider!"
-  },
-  "parentDashboard": "Parent Dashboard",
-  "@parentDashboard": {
-    "description": "Localization key for: Parent Dashboard"
-  },
-  "menu": "Menu",
-  "@menu": {
-    "description": "Localization key for: Menu"
-  },
-  "studioBooking": "Studio Booking",
-  "@studioBooking": {
-    "description": "Localization key for: Studio Booking"
-  },
-  "about1": "About",
-  "@about1": {
-    "description": "Localization key for: About"
-  },
-  "multipleChoice": "Multiple Choice",
-  "@multipleChoice": {
-    "description": "Localization key for: Multiple Choice"
-  },
-  "dateAppointmentscheduledattostring": "Date: {date}",
-  "@dateAppointmentscheduledattostring": {
-    "description": "Localization key for: Date: ${appointment.scheduledAt.toString()}"
-  },
-  "studioBookingIsOnlyAvailableOnWeb": "Studio booking is only available on web",
-  "@studioBookingIsOnlyAvailableOnWeb": {
-    "description": "Localization key for: Studio booking is only available on web"
-  },
-  "errorLoadingBranchesE": "Error loading branches: $e",
-  "@errorLoadingBranchesE": {
-    "description": "Localization key for: Error loading branches: $e"
-  },
-  "ud83dudcc5Bookingdatetimetolocal": "\\uD83D\\uDCC5 {dateTime}",
-  "@ud83dudcc5Bookingdatetimetolocal": {
-    "description": "Localization key for: \\uD83D\\uDCC5 ${booking.dateTime.toLocal()}"
-  },
-  "appointmentInviteappointmentid": "Appointment: {appointmentId}",
-  "@appointmentInviteappointmentid": {
-    "description": "Localization key for: Appointment: ${invite.appointmentId}"
-  },
-  "none": "None",
-  "@none": {
-    "description": "Localization key for: None"
-  },
-  "failedToUpdateConsentE": "Failed to update consent: $e",
-  "@failedToUpdateConsentE": {
-    "description": "Localization key for: Failed to update consent: $e"
-  },
-  "welcome1": "Welcome",
-  "@welcome1": {
-    "description": "Localization key for: Welcome"
-  },
-  "failedToCreateSessionE": "Failed to create session: $e",
-  "@failedToCreateSessionE": {
-    "description": "Localization key for: Failed to create session: $e"
-  },
-  "inviteContact": "Invite Contact",
-  "@inviteContact": {
-    "description": "Localization key for: Invite Contact"
-  },
-  "surveyEditor": "Survey Editor",
-  "@surveyEditor": {
-    "description": "Localization key for: Survey Editor"
-  },
-  "failedToStartBasicSubscriptionE": "Failed to start Basic subscription: $e",
-  "@failedToStartBasicSubscriptionE": {
-    "description": "Localization key for: Failed to start Basic subscription: $e"
-  },
-  "mySchedule": "My Schedule",
-  "@mySchedule": {
-    "description": "Localization key for: My Schedule"
-  },
-  "studioDashboard": "Studio Dashboard",
-  "@studioDashboard": {
-    "description": "Localization key for: Studio Dashboard"
-  },
-  "editProfile": "Edit Profile",
-  "@editProfile": {
-    "description": "Localization key for: Edit Profile"
-  },
-  "logout1": "Logout",
-  "@logout1": {
-    "description": "Localization key for: Logout"
-  },
-  "serviceServiceidNotSelected": "Service: {service}",
-  "@serviceServiceidNotSelected": {
-    "description": "Localization key for: Service: ${serviceId ?? \"Not selected\"}"
-  },
-  "settingsSavedSuccessfully": "Settings saved successfully!",
-  "@settingsSavedSuccessfully": {
-    "description": "Localization key for: Settings saved successfully!"
-  },
-  "linkCopiedToClipboard": "Link copied to clipboard",
-  "@linkCopiedToClipboard": {
-    "description": "Confirmation message when link is copied"
-  },
-  "accept1": "Accept",
-  "@accept1": {
-    "description": "Localization key for: Accept"
-  },
-  "noAvailableSlots": "No available slots",
-  "@noAvailableSlots": {
-    "description": "Localization key for: No available slots"
-  },
-  "makeGamePublic": "Make Game Public",
-  "@makeGamePublic": {
-    "description": "Localization key for: Make Game Public"
-  },
-  "permissionPermissioncategoryUpdatedToNewvalue": "Permission {category} updated to $newValue",
-  "@permissionPermissioncategoryUpdatedToNewvalue": {
-    "description": "Localization key for: Permission ${permission.category} updated to $newValue"
-  },
-  "roomDeletedSuccessfully": "Room deleted successfully!",
-  "@roomDeletedSuccessfully": {
-    "description": "Localization key for: Room deleted successfully!"
-  },
-  "businessCalendar": "Business Calendar",
-  "@businessCalendar": {
-    "description": "Localization key for: Business Calendar"
-  },
-  "addAvailability": "Add Availability",
-  "@addAvailability": {
-    "description": "Localization key for: Add Availability"
-  },
-  "ambassadorOnboarding": "Ambassador Onboarding",
-  "@ambassadorOnboarding": {
-    "description": "Localization key for: Ambassador Onboarding"
-  },
-  "phoneProfileasyncphone": "Phone: {phone}",
-  "@phoneProfileasyncphone": {
-    "description": "Localization key for: Phone: ${profileAsync.phone}"
-  },
-  "addNewRoom": "Add New Room",
-  "@addNewRoom": {
-    "description": "Localization key for: Add New Room"
-  },
-  "requireParentApproval": "Require Parent Approval",
-  "@requireParentApproval": {
-    "description": "Localization key for: Require Parent Approval"
-  },
-  "closed": "Closed",
-  "@closed": {
-    "description": "Localization key for: Closed"
-  },
-  "exportAsPdf": "Export as PDF",
-  "@exportAsPdf": {
-    "description": "Localization key for: Export as PDF"
-  },
-  "enableVibration": "Enable Vibration",
-  "@enableVibration": {
-    "description": "Localization key for: Enable Vibration"
-  },
-  "toAvailendformatcontext": "To: {endTime}",
-  "@toAvailendformatcontext": {
-    "description": "Localization key for: To: ${avail.end.format(context)}"
-  },
-  "yourUpgradeCodeUpgradecode": "Your upgrade code: $upgradeCode",
-  "@yourUpgradeCodeUpgradecode": {
-    "description": "Localization key for: Your upgrade code: $upgradeCode"
-  },
-  "requestPrivateSession": "Request Private Session",
-  "@requestPrivateSession": {
-    "description": "Localization key for: Request Private Session"
-  },
-  "country": "Country",
-  "@country": {
-    "description": "Localization key for: Country"
-  },
-  "loginScreen": "Login Screen",
-  "@loginScreen": {
-    "description": "Localization key for: Login Screen"
-  },
-  "staffArgsstaffdisplayname": "Staff: {staffName}",
-  "@staffArgsstaffdisplayname": {
-    "description": "Localization key for: Staff: ${args.staff.displayName}"
-  },
-  "revokeConsent": "Revoke Consent",
-  "@revokeConsent": {
-    "description": "Localization key for: Revoke Consent"
-  },
-  "settings1": "Settings",
-  "@settings1": {
-    "description": "Localization key for: Settings"
-  },
-  "cancel1": "Cancel",
-  "@cancel1": {
-    "description": "Localization key for: Cancel"
-  },
-  "subscriptionActivatedSuccessfully": "Subscription activated successfully!",
-  "@subscriptionActivatedSuccessfully": {
-    "description": "Localization key for: Subscription activated successfully!"
-  },
-  "activityLogaction": "Activity: {action}",
-  "@activityLogaction": {
-    "description": "Localization key for: Activity: ${log.action}"
-  },
-  "broadcast": "Broadcast",
-  "@broadcast": {
-    "description": "Localization key for: Broadcast"
-  },
-  "noEventsScheduledThisWeek": "No events scheduled this week",
-  "@noEventsScheduledThisWeek": {
-    "description": "Localization key for: No events scheduled this week"
-  },
-  "googleCalendar": "Google Calendar",
-  "@googleCalendar": {
-    "description": "Localization key for: Google Calendar"
-  },
-  "sendInvite": "Send Invite",
-  "@sendInvite": {
-    "description": "Localization key for: Send Invite"
-  },
-  "childDashboard": "Child Dashboard",
-  "@childDashboard": {
-    "description": "Localization key for: Child Dashboard"
-  },
-  "failedToUploadBackgroundE": "Failed to upload background: $e",
-  "@failedToUploadBackgroundE": {
-    "description": "Localization key for: Failed to upload background: $e"
-  },
-  "linkchildidsubstring08": "{linkId}...",
-  "@linkchildidsubstring08": {
-    "description": "Localization key for: ${link.childId.substring(0, 8)}..."
-  },
-  "targetLogtargettypeLogtargetid": "Target: {targetType} - {targetId}",
-  "@targetLogtargettypeLogtargetid": {
-    "description": "Localization key for: Target: ${log.targetType} - ${log.targetId}"
-  },
-  "contextContextid": "Context: $contextId",
-  "@contextContextid": {
-    "description": "Localization key for: Context: $contextId"
-  },
-  "noAppointments": "No appointments",
-  "@noAppointments": {
-    "description": "Localization key for: No appointments"
-  },
-  "unlimitedBookingsPerWeek": "• Unlimited bookings per week",
-  "@unlimitedBookingsPerWeek": {
-    "description": "Localization key for: • Unlimited bookings per week"
-  },
-  "errorDetailsLogerrortype": "Error Details: {errorType}",
-  "@errorDetailsLogerrortype": {
-    "description": "Localization key for: Error Details: ${log.errorType}"
-  },
-  "scheduledAtScheduledat": "Scheduled at: $scheduledAt",
-  "@scheduledAtScheduledat": {
-    "description": "Localization key for: Scheduled at: $scheduledAt"
-  },
-  "selectStaff": "Select Staff",
-  "@selectStaff": {
-    "description": "Localization key for: Select Staff"
-  },
-  "subscriptionCancelledSuccessfully": "Subscription cancelled successfully",
-  "@subscriptionCancelledSuccessfully": {
-    "description": "Localization key for: Subscription cancelled successfully"
-  },
-  "pleaseLogInToViewYourProfile": "Please log in to view your profile.",
-  "@pleaseLogInToViewYourProfile": {
-    "description": "Localization key for: Please log in to view your profile."
-  },
-  "cancelAppointment": "Cancel Appointment",
-  "@cancelAppointment": {
-    "description": "Localization key for: Cancel Appointment"
-  },
-  "permissionsFamilylinkchildid": "Permissions - {childId}",
-  "@permissionsFamilylinkchildid": {
-    "description": "Localization key for: Permissions - ${familyLink.childId}"
-  },
-  "businessSignup": "Business Signup",
-  "@businessSignup": {
-    "description": "Localization key for: Business Signup"
-  },
-  "businessCompletionScreenComingSoon": "Business Completion Screen - Coming Soon",
-  "@businessCompletionScreenComingSoon": {
-    "description": "Localization key for: Business Completion Screen - Coming Soon"
-  },
-  "createGame1": "Create Game",
-  "@createGame1": {
-    "description": "Localization key for: Create Game"
-  },
-  "valuetoint": "{value}",
-  "@valuetoint": {
-    "description": "Localization key for: ${value.toInt()}"
-  },
-  "pleaseEnterAPromoCode": "Please enter a promo code",
-  "@pleaseEnterAPromoCode": {
-    "description": "Localization key for: Please enter a promo code"
-  },
-  "errorLoadingAvailabilityE": "Error loading availability: $e",
-  "@errorLoadingAvailabilityE": {
-    "description": "Localization key for: Error loading availability: $e"
-  },
-  "parentalControls": "Parental Controls",
-  "@parentalControls": {
-    "description": "Localization key for: Parental Controls"
-  },
-  "editBusinessProfile": "Edit Business Profile",
-  "@editBusinessProfile": {
-    "description": "Localization key for: Edit Business Profile"
-  },
-  "childLinkedSuccessfully": "Child linked successfully!",
-  "@childLinkedSuccessfully": {
-    "description": "Localization key for: Child linked successfully!"
-  },
-  "create": "Create",
-  "@create": {
-    "description": "Localization key for: Create"
-  },
-  "noExternalMeetingsFound": "No external meetings found.",
-  "@noExternalMeetingsFound": {
-    "description": "Localization key for: No external meetings found."
-  },
-  "staffSelectionstaffdisplayname": "Staff: {staffName}",
-  "@staffSelectionstaffdisplayname": {
-    "description": "Localization key for: Staff: ${selection.staff.displayName}"
-  },
-  "pleaseEnterAValidEmailAddress": "Please enter a valid email address",
-  "@pleaseEnterAValidEmailAddress": {
-    "description": "Localization key for: Please enter a valid email address"
-  },
-  "schedulerScreen": "Scheduler Screen",
-  "@schedulerScreen": {
-    "description": "Localization key for: Scheduler Screen"
-  },
-  "clientUpdatedSuccessfully": "Client updated successfully!",
-  "@clientUpdatedSuccessfully": {
-    "description": "Localization key for: Client updated successfully!"
-  },
-  "surveyResponses": "Survey Responses",
-  "@surveyResponses": {
-    "description": "Localization key for: Survey Responses"
-  },
-  "syncToOutlook": "Sync to Outlook",
-  "@syncToOutlook": {
-    "description": "Localization key for: Sync to Outlook"
-  },
-  "saveChanges": "Save Changes",
-  "@saveChanges": {
-    "description": "Localization key for: Save Changes"
-  },
-  "pickTime": "Pick Time",
-  "@pickTime": {
-    "description": "Localization key for: Pick Time"
-  },
-  "registrationFailedEtostring": "Registration failed: {error}",
-  "@registrationFailedEtostring": {
-    "description": "Localization key for: Registration failed: ${e.toString()}"
-  },
-  "analytics": "Analytics",
-  "@analytics": {
-    "description": "Localization key for: Analytics"
-  },
-  "errorLoadingEvents": "Error loading events",
-  "@errorLoadingEvents": {
-    "description": "Localization key for: Error loading events"
-  },
-  "errorLoadingOrganizations": "Error loading organizations",
-  "@errorLoadingOrganizations": {
-    "description": "Localization key for: Error loading organizations"
-  },
-  "businessLoginScreenComingSoon": "Business Login Screen - Coming Soon",
-  "@businessLoginScreenComingSoon": {
-    "description": "Localization key for: Business Login Screen - Coming Soon"
-  },
-  "success1": "Success",
-  "@success1": {
-    "description": "Localization key for: Success"
-  },
-  "appVersionLogappversion": "App Version: {appVersion}",
-  "@appVersionLogappversion": {
-    "description": "Localization key for: App Version: ${log.appVersion}"
-  },
-  "fromAvailstartformatcontext": "From: {startTime}",
-  "@fromAvailstartformatcontext": {
-    "description": "Localization key for: From: ${avail.start.format(context)}"
-  },
-  "readWrite": "Read & Write",
-  "@readWrite": {
-    "description": "Localization key for: Read & Write"
-  },
-  "redirectingToStripeCheckoutForBasicPlan": "Redirecting to Stripe checkout for Basic plan...",
-  "@redirectingToStripeCheckoutForBasicPlan": {
-    "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
-  },
-  "errorSavingConfigurationE": "Error saving configuration: $e",
-  "@errorSavingConfigurationE": {
-    "description": "Localization key for: Error saving configuration: $e"
-  },
-  "pickDate": "Pick Date",
-  "@pickDate": {
-    "description": "Localization key for: Pick Date"
-  },
-  "chatBooking": "Chat Booking",
-  "@chatBooking": {
-    "description": "Localization key for: Chat Booking"
-  },
-  "noQuestionsAdded": "No questions added",
-  "@noQuestionsAdded": {
-    "description": "Localization key for: No questions added"
-  },
-  "severityLogseverityname": "Severity: {severity}",
-  "@severityLogseverityname": {
-    "description": "Localization key for: Severity: ${log.severity.name}"
-  },
-  "markAsPaid": "Mark as Paid",
-  "@markAsPaid": {
-    "description": "Localization key for: Mark as Paid"
-  },
-  "typeOpenCall": "Type: Open Call",
-  "@typeOpenCall": {
-    "description": "Localization key for: Type: Open Call"
-  },
-  "appointmentAppointmentid": "Appointment {appointmentId}",
-  "@appointmentAppointmentid": {
-    "description": "Localization key for: Appointment ${appointment.id}"
-  },
-  "statusInvitestatusname": "Status: {status}",
-  "@statusInvitestatusname": {
-    "description": "Localization key for: Status: ${invite.status.name}"
-  },
-  "businessLogin": "Business Login",
-  "@businessLogin": {
-    "description": "Localization key for: Business Login"
-  },
-  "invoiceCreatedSuccessfully": "Invoice created successfully!",
-  "@invoiceCreatedSuccessfully": {
-    "description": "Localization key for: Invoice created successfully!"
-  },
-  "noTimeSeriesDataAvailable": "No time series data available",
-  "@noTimeSeriesDataAvailable": {
-    "description": "Localization key for: No time series data available"
-  },
-  "subscribeToWidgetplanname": "Subscribe to {planName}",
-  "@subscribeToWidgetplanname": {
-    "description": "Localization key for: Subscribe to ${widget.planName}"
-  },
-  "timestamp_formatdatelogtimestamp": "Timestamp: {timestamp}",
-  "@timestamp_formatdatelogtimestamp": {
-    "description": "Localization key for: Timestamp: ${_formatDate(log.timestamp)}"
-  },
-  "failedToSendPrivacyRequestE": "Failed to send privacy request: $e",
-  "@failedToSendPrivacyRequestE": {
-    "description": "Localization key for: Failed to send privacy request: $e"
-  },
-  "chooseYourPlan": "Choose Your Plan",
-  "@chooseYourPlan": {
-    "description": "Localization key for: Choose Your Plan"
-  },
-  "playtimeManagement": "Playtime Management",
-  "@playtimeManagement": {
-    "description": "Localization key for: Playtime Management"
-  },
-  "availability": "Availability",
-  "@availability": {
-    "description": "Localization key for: Availability"
-  },
-  "eventCreated": "Event created",
-  "@eventCreated": {
-    "description": "Localization key for: Event created"
-  },
-  "subscribeToBasic499mo": "Subscribe to Basic (€4.99/mo)",
-  "@subscribeToBasic499mo": {
-    "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
-  },
-  "completion": "Completion",
-  "@completion": {
-    "description": "Localization key for: Completion"
-  },
-  "supportTicketSubmitted": "Support ticket submitted",
-  "@supportTicketSubmitted": {
-    "description": "Localization key for: Support ticket submitted"
-  },
-  "monetizationSettings": "Monetization Settings",
-  "@monetizationSettings": {
-    "description": "Localization key for: Monetization Settings"
-  },
-  "noBookingsFound": "No bookings found",
-  "@noBookingsFound": {
-    "description": "Localization key for: No bookings found"
-  },
-  "admin": "Admin",
-  "@admin": {
-    "description": "Localization key for: Admin"
-  },
-  "deleteSurvey": "Delete Survey",
-  "@deleteSurvey": {
-    "description": "Localization key for: Delete Survey"
-  },
-  "gameApprovedSuccessfully": "Game approved successfully!",
-  "@gameApprovedSuccessfully": {
-    "description": "Localization key for: Game approved successfully!"
-  },
-  "errorLoadingPermissionsError": "Error loading permissions: $error",
-  "@errorLoadingPermissionsError": {
-    "description": "Localization key for: Error loading permissions: $error"
-  },
-  "referrals": "Referrals",
-  "@referrals": {
-    "description": "Tab label for referrals section"
-  },
-  "crm": "CRM",
-  "@crm": {
-    "description": "Localization key for: CRM"
-  },
-  "gameRejected": "Game rejected",
-  "@gameRejected": {
-    "description": "Localization key for: Game rejected"
-  },
-  "appointments": "Appointments",
-  "@appointments": {
-    "description": "Localization key for: Appointments"
-  },
-  "onboardingScreen": "Onboarding Screen",
-  "@onboardingScreen": {
-    "description": "Localization key for: Onboarding Screen"
-  },
-  "welcomeToYourStudio": "Welcome to your studio",
-  "@welcomeToYourStudio": {
-    "description": "Localization key for: Welcome to your studio"
-  },
-  "update": "Update",
-  "@update": {
-    "description": "Localization key for: Update"
-  },
-  "retry1": "Retry",
-  "@retry1": {
-    "description": "Localization key for: Retry"
-  },
-  "booking": "Booking",
-  "@booking": {
-    "description": "Localization key for: Booking"
-  },
-  "parentalSettings": "Parental Settings",
-  "@parentalSettings": {
-    "description": "Localization key for: Parental Settings"
-  },
-  "language": "Language",
-  "@language": {
-    "description": "Localization key for: Language"
-  },
-  "deleteSlot": "Delete Slot",
-  "@deleteSlot": {
-    "description": "Localization key for: Delete Slot"
-  },
-  "organizations": "Organizations",
-  "@organizations": {
-    "description": "Localization key for: Organizations"
-  },
-  "configurationSavedSuccessfully": "Configuration saved successfully!",
-  "@configurationSavedSuccessfully": {
-    "description": "Localization key for: Configuration saved successfully!"
-  },
-  "createNewGame": "Create New Game",
-  "@createNewGame": {
-    "description": "Localization key for: Create New Game"
-  },
-  "next1": "Next",
-  "@next1": {
-    "description": "Localization key for: Next"
-  },
-  "backgroundUploadedSuccessfully": "Background uploaded successfully!",
-  "@backgroundUploadedSuccessfully": {
-    "description": "Localization key for: Background uploaded successfully!"
-  },
-  "noAppointmentRequestsFound": "No appointment requests found.",
-  "@noAppointmentRequestsFound": {
-    "description": "Localization key for: No appointment requests found."
-  },
-  "pleaseSignInToCreateASession": "Please sign in to create a session",
-  "@pleaseSignInToCreateASession": {
-    "description": "Localization key for: Please sign in to create a session"
-  },
-  "restrictMatureContent": "Restrict mature content",
-  "@restrictMatureContent": {
-    "description": "Localization key for: Restrict mature content"
-  },
-  "ambassadors": "Ambassadors",
-  "@ambassadors": {
-    "description": "Localization key for: Ambassadors"
-  },
-  "smsNotifications": "SMS Notifications",
-  "@smsNotifications": {
-    "description": "Localization key for: SMS Notifications"
-  },
-  "paymentWasCancelled": "Payment was cancelled",
-  "@paymentWasCancelled": {
-    "description": "Localization key for: Payment was cancelled"
-  },
-  "clearAll": "Clear All",
-  "@clearAll": {
-    "description": "Localization key for: Clear All"
-  },
-  "viewDetails": "View Details",
-  "@viewDetails": {
-    "description": "Localization key for: View Details"
-  },
-  "notifications1": "Notifications",
-  "@notifications1": {
-    "description": "Localization key for: Notifications"
-  },
-  "liveSessionScheduledWaitingForParentApproval": "Live session scheduled! Waiting for parent approval...",
-  "@liveSessionScheduledWaitingForParentApproval": {
-    "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
-  },
-  "failedToCreateGameE": "Failed to create game: $e",
-  "@failedToCreateGameE": {
-    "description": "Localization key for: Failed to create game: $e"
-  },
-  "noChartDataAvailable": "No chart data available",
-  "@noChartDataAvailable": {
-    "description": "Localization key for: No chart data available"
-  },
-  "phonebasedBookingSystem": "• Phone-based booking system",
-  "@phonebasedBookingSystem": {
-    "description": "Localization key for: • Phone-based booking system"
-  },
-  "enableNotifications1": "Enable Notifications",
-  "@enableNotifications1": {
-    "description": "Localization key for: Enable Notifications"
-  },
-  "invoices": "Invoices",
-  "@invoices": {
-    "description": "Localization key for: Invoices"
-  },
-  "pleaseActivateYourBusinessProfileToContinue": "Please activate your business profile to continue.",
-  "@pleaseActivateYourBusinessProfileToContinue": {
-    "description": "Localization key for: Please activate your business profile to continue."
-  },
-  "scheduledAtArgsscheduledat": "Scheduled at: {scheduledAt}",
-  "@scheduledAtArgsscheduledat": {
-    "description": "Localization key for: Scheduled at: ${args.scheduledAt}"
-  },
-  "durationDurationinminutes0Minutes": "Duration: {duration} minutes",
-  "@durationDurationinminutes0Minutes": {
-    "description": "Localization key for: Duration: ${duration?.inMinutes ?? 0} minutes"
-  },
-  "tryAgain": "Try Again",
-  "@tryAgain": {
-    "description": "Localization key for: Try Again"
-  },
-  "deleteBackground": "Delete Background",
-  "@deleteBackground": {
-    "description": "Localization key for: Delete Background"
-  },
-  "currentTierTiertouppercase": "Current Tier: {tier}",
-  "@currentTierTiertouppercase": {
-    "description": "Localization key for: Current Tier: ${tier.toUpperCase()}"
-  },
-  "iDoNotConsent": "I Do Not Consent",
-  "@iDoNotConsent": {
-    "description": "Localization key for: I Do Not Consent"
-  },
-  "noClientsFoundAddYourFirstClient": "No clients found. Add your first client!",
-  "@noClientsFoundAddYourFirstClient": {
-    "description": "Localization key for: No clients found. Add your first client!"
-  },
-  "settingsDialogWillBeImplementedHere": "Settings dialog will be implemented here.",
-  "@settingsDialogWillBeImplementedHere": {
-    "description": "Localization key for: Settings dialog will be implemented here."
-  },
-  "groupGroupid": "Group: $groupId",
-  "@groupGroupid": {
-    "description": "Localization key for: Group: $groupId"
-  },
-  "appointmentRequests": "Appointment Requests",
-  "@appointmentRequests": {
-    "description": "Localization key for: Appointment Requests"
-  },
-  "forward": "Forward",
-  "@forward": {
-    "description": "Localization key for: Forward"
-  },
-  "roomAddedSuccessfully": "Room added successfully!",
-  "@roomAddedSuccessfully": {
-    "description": "Localization key for: Room added successfully!"
-  },
-  "option": "• $option",
-  "@option": {
-    "description": "Localization key for: • $option"
-  },
-  "responseIndex1": "Response #{number}",
-  "@responseIndex1": {
-    "description": "Localization key for: Response #${index + 1}"
-  },
-  "crmDashboardWithAnalytics": "• CRM dashboard with analytics",
-  "@crmDashboardWithAnalytics": {
-    "description": "Localization key for: • CRM dashboard with analytics"
-  },
-  "contentLibrary1": "Content Library",
-  "@contentLibrary1": {
-    "description": "Localization key for: Content Library"
-  },
-  "reply": "Reply",
-  "@reply": {
-    "description": "Localization key for: Reply"
-  },
-  "subscriptionManagement": "Subscription Management",
-  "@subscriptionManagement": {
-    "description": "Localization key for: Subscription Management"
-  },
-  "monetizationSettingsWillBeImplementedHere": "Monetization settings will be implemented here",
-  "@monetizationSettingsWillBeImplementedHere": {
-    "description": "Localization key for: Monetization settings will be implemented here"
-  },
-  "failedToApplyPromoCodeE": "Failed to apply promo code: $e",
-  "@failedToApplyPromoCodeE": {
-    "description": "Localization key for: Failed to apply promo code: $e"
-  },
-  "editProvider": "Edit Provider",
-  "@editProvider": {
-    "description": "Localization key for: Edit Provider"
-  },
-  "localizationContribution": "Localization Contribution",
-  "@localizationContribution": {
-    "description": "Localization key for: Localization Contribution"
-  },
-  "parentalConsent": "Parental Consent",
-  "@parentalConsent": {
-    "description": "Localization key for: Parental Consent"
-  },
-  "businessSignupScreenComingSoon": "Business Signup Screen - Coming Soon",
-  "@businessSignupScreenComingSoon": {
-    "description": "Localization key for: Business Signup Screen - Coming Soon"
-  },
-  "areYouSureYouWantToDeleteThisAppointment": "Are you sure you want to delete this appointment?",
-  "@areYouSureYouWantToDeleteThisAppointment": {
-    "description": "Localization key for: Are you sure you want to delete this appointment?"
-  },
-  "syncAppointment": "Sync Appointment",
-  "@syncAppointment": {
-    "description": "Localization key for: Sync Appointment"
-  },
-  "iConsent": "I Consent",
-  "@iConsent": {
-    "description": "Localization key for: I Consent"
-  },
-  "sessionRejected": "Session rejected",
-  "@sessionRejected": {
-    "description": "Localization key for: Session rejected"
-  },
-  "businessSetupScreenComingSoon": "Business Setup Screen - Coming Soon",
-  "@businessSetupScreenComingSoon": {
-    "description": "Localization key for: Business Setup Screen - Coming Soon"
-  },
-  "edit1": "Edit",
-  "@edit1": {
-    "description": "Localization key for: Edit"
-  },
-  "noEventsScheduledThisMonth": "No events scheduled this month",
-  "@noEventsScheduledThisMonth": {
-    "description": "Localization key for: No events scheduled this month"
-  },
-  "businessDashboard": "Business Dashboard",
-  "@businessDashboard": {
-    "description": "Localization key for: Business Dashboard"
-  },
-  "noMessagesFound": "No messages found.",
-  "@noMessagesFound": {
-    "description": "Localization key for: No messages found."
-  },
-  "staffStaffidNotSelected": "Staff: {staff}",
-  "@staffStaffidNotSelected": {
-    "description": "Localization key for: Staff: ${staffId ?? \"Not selected\"}"
-  },
-  "manageStaffAvailability": "Manage Staff Availability",
-  "@manageStaffAvailability": {
-    "description": "Localization key for: Manage Staff Availability"
-  },
-  "noMissingTranslations": "No missing translations",
-  "@noMissingTranslations": {
-    "description": "Localization key for: No missing translations"
-  },
-  "skip": "Skip",
-  "@skip": {
-    "description": "Localization key for: Skip"
-  },
-  "meetingIdMeetingid": "Meeting ID: $meetingId",
-  "@meetingIdMeetingid": {
-    "description": "Localization key for: Meeting ID: $meetingId"
-  },
-  "noUsers": "No users",
-  "@noUsers": {
-    "description": "Localization key for: No users"
-  },
-  "errorLoadingReferralCode": "Error loading referral code",
-  "@errorLoadingReferralCode": {
-    "description": "Localization key for: Error loading referral code"
-  },
-  "allCountries": "All Countries",
-  "@allCountries": {
-    "description": "Localization key for: All Countries"
-  },
-  "deleteGame": "Delete Game",
-  "@deleteGame": {
-    "description": "Localization key for: Delete Game"
-  },
-  "staffManagementTools": "• Staff management tools",
-  "@staffManagementTools": {
-    "description": "Localization key for: • Staff management tools"
-  },
-  "deleteMessage": "Delete Message",
-  "@deleteMessage": {
-    "description": "Localization key for: Delete Message"
-  },
-  "receiveBookingNotificationsViaSms": "Receive booking notifications via SMS",
-  "@receiveBookingNotificationsViaSms": {
-    "description": "Localization key for: Receive booking notifications via SMS"
-  },
-  "changeRole": "Change Role",
-  "@changeRole": {
-    "description": "Localization key for: Change Role"
-  },
-  "errorLoadingBookingsSnapshoterror": "Error loading bookings: {error}",
-  "@errorLoadingBookingsSnapshoterror": {
-    "description": "Localization key for: Error loading bookings: ${snapshot.error}"
-  },
-  "openingCustomerPortal": "Opening customer portal...",
-  "@openingCustomerPortal": {
-    "description": "Localization key for: Opening customer portal..."
-  },
-  "signOut": "Sign Out",
-  "@signOut": {
-    "description": "Localization key for: Sign Out"
-  },
-  "nameProfilename": "Name: {name}",
-  "@nameProfilename": {
-    "description": "Localization key for: Name: ${profile.name}"
-  },
-  "businessProfileEntryScreenComingSoon": "Business Profile Entry Screen - Coming Soon",
-  "@businessProfileEntryScreenComingSoon": {
-    "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
-  },
-  "upgradeToBusiness": "Upgrade to Business",
-  "@upgradeToBusiness": {
-    "description": "Localization key for: Upgrade to Business"
-  },
-  "apply": "Apply",
-  "@apply": {
-    "description": "Localization key for: Apply"
-  },
-  "errorLoadingSubscriptionError": "Error loading subscription: $error",
-  "@errorLoadingSubscriptionError": {
-    "description": "Localization key for: Error loading subscription: $error"
-  },
-  "errorLoadingUsers": "Error loading users",
-  "@errorLoadingUsers": {
-    "description": "Localization key for: Error loading users"
-  },
-  "verify": "Verify",
-  "@verify": {
-    "description": "Localization key for: Verify"
-  },
-  "subscription": "Subscription",
-  "@subscription": {
-    "description": "Localization key for: Subscription"
-  },
-  "deleteMyAccount": "Delete My Account",
-  "@deleteMyAccount": {
-    "description": "Localization key for: Delete My Account"
-  },
-  "businessAppointmentsEntryScreenComingSoon": "Business Appointments Entry Screen - Coming Soon",
-  "@businessAppointmentsEntryScreenComingSoon": {
-    "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
-  },
-  "viewResponses": "View Responses",
-  "@viewResponses": {
-    "description": "Localization key for: View Responses"
-  },
-  "businessWelcomeScreenComingSoon": "Business Welcome Screen - Coming Soon",
-  "@businessWelcomeScreenComingSoon": {
-    "description": "Localization key for: Business Welcome Screen - Coming Soon"
-  },
-  "failedToOpenCustomerPortalE": "Failed to open customer portal: $e",
-  "@failedToOpenCustomerPortalE": {
-    "description": "Localization key for: Failed to open customer portal: $e"
-  },
-  "continueText": "Continue",
-  "@continueText": {
-    "description": "Localization key for: Continue"
-  },
-  "close1": "Close",
-  "@close1": {
-    "description": "Localization key for: Close"
-  },
-  "confirm1": "Confirm",
-  "@confirm1": {
-    "description": "Localization key for: Confirm"
-  },
-  "externalMeetings": "External Meetings",
-  "@externalMeetings": {
-    "description": "Localization key for: External Meetings"
-  },
-  "approve": "Approve",
-  "@approve": {
-    "description": "Localization key for: Approve"
-  },
-  "noInvoicesFoundCreateYourFirstInvoice": "No invoices found. Create your first invoice!",
-  "@noInvoicesFoundCreateYourFirstInvoice": {
-    "description": "Localization key for: No invoices found. Create your first invoice!"
-  },
-  "subscribe": "Subscribe",
-  "@subscribe": {
-    "description": "Localization key for: Subscribe"
-  },
-  "login1": "Login",
-  "@login1": {
-    "description": "Localization key for: Login"
-  },
-  "adminOverviewGoesHere": "Admin overview goes here",
-  "@adminOverviewGoesHere": {
-    "description": "Localization key for: Admin overview goes here"
-  },
-  "loadingCheckout": "Loading checkout...",
-  "@loadingCheckout": {
-    "description": "Localization key for: Loading checkout..."
-  },
-  "ad_pre_title": "Watch an ad to confirm your appointment",
-  "@ad_pre_title": {
-    "description": "Title shown before ad for free users"
-  },
-  "ad_pre_description": "As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.",
-  "@ad_pre_description": {
-    "description": "Description shown before ad for free users"
-  },
-  "watch_ad_button": "Watch Ad",
-  "@watch_ad_button": {
-    "description": "Button to watch ad"
-  },
-  "upgrade_button": "Upgrade to Premium (€4)",
-  "@upgrade_button": {
-    "description": "Button to upgrade to premium"
-  },
-  "ad_post_title": "Ad finished! You may now confirm your appointment.",
-  "@ad_post_title": {
-    "description": "Title shown after ad is finished"
-  },
-  "confirm_appointment_button": "Confirm Appointment",
-  "@confirm_appointment_button": {
-    "description": "Button to confirm appointment after ad"
-  },
-  "upgrade_prompt_title": "One-time upgrade",
-  "@upgrade_prompt_title": {
-    "description": "Title for upgrade prompt"
-  },
-  "upgrade_prompt_description": "Pay €4 to remove all ads forever",
-  "@upgrade_prompt_description": {
-    "description": "Description for upgrade prompt"
-  },
-  "purchase_now_button": "Purchase Now",
-  "@purchase_now_button": {
-    "description": "Button to purchase upgrade"
-  },
-  "welcomeAmbassador": "Welcome, Ambassador!",
+  "welcomeAmbassador": "Welcome Ambassador",
   "@welcomeAmbassador": {
     "description": "Welcome message for ambassadors"
   },
-  "activeStatus": "Active",
+  "activeStatus": "Active Status",
   "@activeStatus": {
-    "description": "Status label showing ambassador is active"
-  },
-  "totalReferrals": "Total Referrals",
-  "@totalReferrals": {
-    "description": "Label for total referrals count"
-  },
-  "thisMonth": "This Month",
-  "@thisMonth": {
-    "description": "Label for current month statistics"
-  },
-  "activeRewards": "Active Rewards",
-  "@activeRewards": {
-    "description": "Label for active rewards count"
-  },
-  "nextTierProgress": "Next Tier Progress",
-  "@nextTierProgress": {
-    "description": "Section title for tier progression"
-  },
-  "progressToPremium": "Progress to Premium",
-  "@progressToPremium": {
-    "description": "Label for progress towards premium tier"
-  },
-  "remaining": "remaining",
-  "@remaining": {
-    "description": "Label for remaining count towards goal"
-  },
-  "monthlyGoal": "Monthly Goal",
-  "@monthlyGoal": {
-    "description": "Section title for monthly referral goal"
-  },
-  "onTrack": "On Track",
-  "@onTrack": {
-    "description": "Status indicating user is meeting monthly goals"
-  },
-  "needsAttention": "Needs Attention",
-  "@needsAttention": {
-    "description": "Status indicating user needs to increase activity"
-  },
-  "monthlyReferralRequirement": "Refer at least 10 new users monthly to maintain ambassador status",
-  "@monthlyReferralRequirement": {
-    "description": "Explanation of monthly referral requirement"
-  },
-  "viewRewards": "View Rewards",
-  "@viewRewards": {
-    "description": "Button label for viewing rewards"
-  },
-  "referralStatistics": "Referral Statistics",
-  "@referralStatistics": {
-    "description": "Section title for referral statistics"
-  },
-  "activeReferrals": "Active Referrals",
-  "@activeReferrals": {
-    "description": "Label for count of active referrals"
-  },
-  "conversionRate": "Conversion Rate",
-  "@conversionRate": {
-    "description": "Label for referral conversion rate"
-  },
-  "recentReferrals": "Recent Referrals",
-  "@recentReferrals": {
-    "description": "Section title for recent referral activity"
-  },
-  "tierBenefits": "Tier Benefits",
-  "@tierBenefits": {
-    "description": "Section title for ambassador tier benefits"
+    "description": "Active status label"
   },
   "yourReferralQRCode": "Your Referral QR Code",
   "@yourReferralQRCode": {
-    "description": "Title for QR code section"
+    "description": "QR code label for referrals"
   },
-  "yourReferralLink": "Your Referral Link",
-  "@yourReferralLink": {
-    "description": "Title for referral link section"
+  "formFields": "Form Fields",
+  "@formFields": {
+    "description": "Form fields label"
+  },
+  "addField": "Add Field",
+  "@addField": {
+    "description": "Add field button"
+  },
+  "editField": "Edit Field",
+  "@editField": {
+    "description": "Edit field button"
+  },
+  "textField": "Text Field",
+  "@textField": {
+    "description": "Text field type"
+  },
+  "numberField": "Number Field",
+  "@numberField": {
+    "description": "Number field type"
+  },
+  "emailField": "Email Field",
+  "@emailField": {
+    "description": "Email field type"
+  },
+  "phoneField": "Phone Field",
+  "@phoneField": {
+    "description": "Phone field type"
+  },
+  "choiceField": "Choice Field",
+  "@choiceField": {
+    "description": "Choice field type"
+  },
+  "multiselectField": "Multiselect Field",
+  "@multiselectField": {
+    "description": "Multiselect field type"
+  },
+  "dateField": "Date Field",
+  "@dateField": {
+    "description": "Date field type"
+  },
+  "timeField": "Time Field",
+  "@timeField": {
+    "description": "Time field type"
+  },
+  "datetimeField": "DateTime Field",
+  "@datetimeField": {
+    "description": "DateTime field type"
+  },
+  "booleanField": "Boolean Field",
+  "@booleanField": {
+    "description": "Boolean field type"
+  },
+  "ratingField": "Rating Field",
+  "@ratingField": {
+    "description": "Rating field type"
+  },
+  "textareaField": "Textarea Field",
+  "@textareaField": {
+    "description": "Textarea field type"
+  },
+  "deleteField": "Delete Field",
+  "@deleteField": {
+    "description": "Delete field button"
+  },
+  "noFormFields": "No form fields yet",
+  "@noFormFields": {
+    "description": "No form fields message"
+  },
+  "addFormFieldsDescription": "Add fields to create your custom form",
+  "@addFormFieldsDescription": {
+    "description": "Add form fields description"
+  },
+  "formPreviewDescription": "Preview how your form will look",
+  "@formPreviewDescription": {
+    "description": "Form preview description"
+  },
+  "required": "Required",
+  "@required": {
+    "description": "Required field indicator"
+  },
+  "enterText": "Enter text",
+  "@enterText": {
+    "description": "Enter text placeholder"
+  },
+  "enterNumber": "Enter number",
+  "@enterNumber": {
+    "description": "Enter number placeholder"
+  },
+  "selectDate": "Select date",
+  "@selectDate": {
+    "description": "Select date placeholder"
+  },
+  "selectTime": "Select time",
+  "@selectTime": {
+    "description": "Select time placeholder"
+  },
+  "selectDateTime": "Select date and time",
+  "@selectDateTime": {
+    "description": "Select date and time placeholder"
+  },
+  "rateFrom1To5": "Rate from 1 to 5",
+  "@rateFrom1To5": {
+    "description": "Rating placeholder"
+  },
+  "enterLongText": "Enter long text",
+  "@enterLongText": {
+    "description": "Long text placeholder"
+  },
+  "fieldLabel": "Field Label",
+  "@fieldLabel": {
+    "description": "Field label input"
+  },
+  "fieldDescription": "Field Description",
+  "@fieldDescription": {
+    "description": "Field description input"
+  },
+  "placeholder": "Placeholder",
+  "@placeholder": {
+    "description": "Placeholder input"
+  },
+  "defaultValue": "Default Value",
+  "@defaultValue": {
+    "description": "Default value input"
+  },
+  "isRequired": "Is Required",
+  "@isRequired": {
+    "description": "Is required checkbox"
+  },
+  "options": "Options",
+  "@options": {
+    "description": "Options label"
+  },
+  "addOption": "Add Option",
+  "@addOption": {
+    "description": "Add option button"
+  },
+  "removeOption": "Remove Option",
+  "@removeOption": {
+    "description": "Remove option button"
+  },
+  "validation": "Validation",
+  "@validation": {
+    "description": "Validation label"
+  },
+  "minLength": "Minimum Length",
+  "@minLength": {
+    "description": "Minimum length input"
+  },
+  "maxLength": "Maximum Length",
+  "@maxLength": {
+    "description": "Maximum length input"
+  },
+  "minValue": "Minimum Value",
+  "@minValue": {
+    "description": "Minimum value input"
+  },
+  "maxValue": "Maximum Value",
+  "@maxValue": {
+    "description": "Maximum value input"
+  },
+  "textAreaField": "Text Area Field",
+  "@textAreaField": {
+    "description": "Text area field type"
+  },
+  "dateTimeField": "Date Time Field",
+  "@dateTimeField": {
+    "description": "Date time field type"
+  },
+  "deleteFieldConfirmation": "Are you sure you want to delete this field?",
+  "@deleteFieldConfirmation": {
+    "description": "Delete field confirmation message"
+  },
+  "fieldType": "Field Type",
+  "@fieldType": {
+    "description": "Field type label"
+  },
+  "fieldLabelRequired": "Field label is required",
+  "@fieldLabelRequired": {
+    "description": "Field label required message"
+  },
+  "description": "Description",
+  "@description": {
+    "description": "Description label"
+  },
+  "optional": "Optional",
+  "@optional": {
+    "description": "Optional label"
+  },
+  "requiredField": "Required Field",
+  "@requiredField": {
+    "description": "Required field label"
+  },
+  "validationPattern": "Validation Pattern",
+  "@validationPattern": {
+    "description": "Validation pattern label"
+  },
+  "validationMessage": "Validation Message",
+  "@validationMessage": {
+    "description": "Validation message label"
+  },
+  "optionsRequired": "Options are required for this field type",
+  "@optionsRequired": {
+    "description": "Options required message"
+  },
+  "adminMetrics": "Admin metrics",
+  "@adminMetrics": {
+    "description": "Translation for adminMetrics"
+  },
+  "all": "All",
+  "@all": {
+    "description": "Translation for all"
+  },
+  "analytics": "Analytics",
+  "@analytics": {
+    "description": "Translation for analytics"
+  },
+  "analyticsDashboard": "Analytics dashboard",
+  "@analyticsDashboard": {
+    "description": "Translation for analyticsDashboard"
+  },
+  "apply": "Apply",
+  "@apply": {
+    "description": "Translation for apply"
+  },
+  "authErrorAccountExistsWithDifferentCredential": "Authentication error: account exists with different credential",
+  "@authErrorAccountExistsWithDifferentCredential": {
+    "description": "Translation for authErrorAccountExistsWithDifferentCredential"
+  },
+  "authErrorAppNotAuthorized": "Authentication error: app not authorized",
+  "@authErrorAppNotAuthorized": {
+    "description": "Translation for authErrorAppNotAuthorized"
+  },
+  "authErrorCodeExpired": "Authentication error: code expired",
+  "@authErrorCodeExpired": {
+    "description": "Translation for authErrorCodeExpired"
+  },
+  "authErrorCredentialAlreadyInUse": "Authentication error: credential already in use",
+  "@authErrorCredentialAlreadyInUse": {
+    "description": "Translation for authErrorCredentialAlreadyInUse"
+  },
+  "authErrorEmailAlreadyInUse": "Authentication error: email already in use",
+  "@authErrorEmailAlreadyInUse": {
+    "description": "Translation for authErrorEmailAlreadyInUse"
+  },
+  "authErrorEmailChangeNeedsVerification": "Authentication error: email change needs verification",
+  "@authErrorEmailChangeNeedsVerification": {
+    "description": "Translation for authErrorEmailChangeNeedsVerification"
+  },
+  "authErrorIdTokenExpired": "Authentication error: id token expired",
+  "@authErrorIdTokenExpired": {
+    "description": "Translation for authErrorIdTokenExpired"
+  },
+  "authErrorIdTokenRevoked": "Authentication error: id token revoked",
+  "@authErrorIdTokenRevoked": {
+    "description": "Translation for authErrorIdTokenRevoked"
+  },
+  "authErrorInternalError": "Authentication error: internal error",
+  "@authErrorInternalError": {
+    "description": "Translation for authErrorInternalError"
+  },
+  "authErrorInvalidArgument": "Authentication error: invalid argument",
+  "@authErrorInvalidArgument": {
+    "description": "Translation for authErrorInvalidArgument"
+  },
+  "authErrorInvalidClaims": "Authentication error: invalid claims",
+  "@authErrorInvalidClaims": {
+    "description": "Translation for authErrorInvalidClaims"
+  },
+  "authErrorInvalidContinueUri": "Authentication error: invalid continue uri",
+  "@authErrorInvalidContinueUri": {
+    "description": "Translation for authErrorInvalidContinueUri"
+  },
+  "authErrorInvalidCreationTime": "Authentication error: invalid creation time",
+  "@authErrorInvalidCreationTime": {
+    "description": "Translation for authErrorInvalidCreationTime"
+  },
+  "authErrorInvalidCredential": "Authentication error: invalid credential",
+  "@authErrorInvalidCredential": {
+    "description": "Translation for authErrorInvalidCredential"
+  },
+  "authErrorInvalidDisabledField": "Authentication error: invalid disabled field",
+  "@authErrorInvalidDisabledField": {
+    "description": "Translation for authErrorInvalidDisabledField"
+  },
+  "authErrorInvalidDisplayName": "Authentication error: invalid display name",
+  "@authErrorInvalidDisplayName": {
+    "description": "Translation for authErrorInvalidDisplayName"
+  },
+  "authErrorInvalidDynamicLinkDomain": "Authentication error: invalid dynamic link domain",
+  "@authErrorInvalidDynamicLinkDomain": {
+    "description": "Translation for authErrorInvalidDynamicLinkDomain"
+  },
+  "authErrorInvalidEmail": "Authentication error: invalid email",
+  "@authErrorInvalidEmail": {
+    "description": "Translation for authErrorInvalidEmail"
+  },
+  "authErrorInvalidEmailVerified": "Authentication error: invalid email verified",
+  "@authErrorInvalidEmailVerified": {
+    "description": "Translation for authErrorInvalidEmailVerified"
+  },
+  "authErrorInvalidHashAlgorithm": "Authentication error: invalid hash algorithm",
+  "@authErrorInvalidHashAlgorithm": {
+    "description": "Translation for authErrorInvalidHashAlgorithm"
+  },
+  "authErrorInvalidHashBlockSize": "Authentication error: invalid hash block size",
+  "@authErrorInvalidHashBlockSize": {
+    "description": "Translation for authErrorInvalidHashBlockSize"
+  },
+  "authErrorInvalidHashDerivedKeyLength": "Authentication error: invalid hash derived key length",
+  "@authErrorInvalidHashDerivedKeyLength": {
+    "description": "Translation for authErrorInvalidHashDerivedKeyLength"
+  },
+  "authErrorInvalidHashKey": "Authentication error: invalid hash key",
+  "@authErrorInvalidHashKey": {
+    "description": "Translation for authErrorInvalidHashKey"
+  },
+  "authErrorInvalidHashMemoryCost": "Authentication error: invalid hash memory cost",
+  "@authErrorInvalidHashMemoryCost": {
+    "description": "Translation for authErrorInvalidHashMemoryCost"
+  },
+  "authErrorInvalidHashParallelization": "Authentication error: invalid hash parallelization",
+  "@authErrorInvalidHashParallelization": {
+    "description": "Translation for authErrorInvalidHashParallelization"
+  },
+  "authErrorInvalidHashRounds": "Authentication error: invalid hash rounds",
+  "@authErrorInvalidHashRounds": {
+    "description": "Translation for authErrorInvalidHashRounds"
+  },
+  "authErrorInvalidHashSaltSeparator": "Authentication error: invalid hash salt separator",
+  "@authErrorInvalidHashSaltSeparator": {
+    "description": "Translation for authErrorInvalidHashSaltSeparator"
+  },
+  "authErrorInvalidIdToken": "Authentication error: invalid id token",
+  "@authErrorInvalidIdToken": {
+    "description": "Translation for authErrorInvalidIdToken"
+  },
+  "authErrorInvalidLastSignInTime": "Authentication error: invalid last sign in time",
+  "@authErrorInvalidLastSignInTime": {
+    "description": "Translation for authErrorInvalidLastSignInTime"
+  },
+  "authErrorInvalidMultiFactorSession": "Authentication error: invalid multi factor session",
+  "@authErrorInvalidMultiFactorSession": {
+    "description": "Translation for authErrorInvalidMultiFactorSession"
+  },
+  "authErrorInvalidPageToken": "Authentication error: invalid page token",
+  "@authErrorInvalidPageToken": {
+    "description": "Translation for authErrorInvalidPageToken"
+  },
+  "authErrorInvalidPassword": "Authentication error: invalid password",
+  "@authErrorInvalidPassword": {
+    "description": "Translation for authErrorInvalidPassword"
+  },
+  "authErrorInvalidPhoneNumber": "Authentication error: invalid phone number",
+  "@authErrorInvalidPhoneNumber": {
+    "description": "Translation for authErrorInvalidPhoneNumber"
+  },
+  "authErrorInvalidProviderData": "Authentication error: invalid provider data",
+  "@authErrorInvalidProviderData": {
+    "description": "Translation for authErrorInvalidProviderData"
+  },
+  "authErrorInvalidProviderId": "Authentication error: invalid provider id",
+  "@authErrorInvalidProviderId": {
+    "description": "Translation for authErrorInvalidProviderId"
+  },
+  "authErrorInvalidSessionCookieDuration": "Authentication error: invalid session cookie duration",
+  "@authErrorInvalidSessionCookieDuration": {
+    "description": "Translation for authErrorInvalidSessionCookieDuration"
+  },
+  "authErrorInvalidUid": "Authentication error: invalid uid",
+  "@authErrorInvalidUid": {
+    "description": "Translation for authErrorInvalidUid"
+  },
+  "authErrorInvalidUserImport": "Authentication error: invalid user import",
+  "@authErrorInvalidUserImport": {
+    "description": "Translation for authErrorInvalidUserImport"
+  },
+  "authErrorInvalidVerificationCode": "Authentication error: invalid verification code",
+  "@authErrorInvalidVerificationCode": {
+    "description": "Translation for authErrorInvalidVerificationCode"
+  },
+  "authErrorInvalidVerificationId": "Authentication error: invalid verification id",
+  "@authErrorInvalidVerificationId": {
+    "description": "Translation for authErrorInvalidVerificationId"
+  },
+  "authErrorMaximumSecondFactorCountExceeded": "Authentication error: maximum second factor count exceeded",
+  "@authErrorMaximumSecondFactorCountExceeded": {
+    "description": "Translation for authErrorMaximumSecondFactorCountExceeded"
+  },
+  "authErrorMaximumUserCountExceeded": "Authentication error: maximum user count exceeded",
+  "@authErrorMaximumUserCountExceeded": {
+    "description": "Translation for authErrorMaximumUserCountExceeded"
+  },
+  "authErrorMissingAndroidPkgName": "Authentication error: missing android pkg name",
+  "@authErrorMissingAndroidPkgName": {
+    "description": "Translation for authErrorMissingAndroidPkgName"
+  },
+  "authErrorMissingContinueUri": "Authentication error: missing continue uri",
+  "@authErrorMissingContinueUri": {
+    "description": "Translation for authErrorMissingContinueUri"
+  },
+  "authErrorMissingHashAlgorithm": "Authentication error: missing hash algorithm",
+  "@authErrorMissingHashAlgorithm": {
+    "description": "Translation for authErrorMissingHashAlgorithm"
+  },
+  "authErrorMissingIosBundleId": "Authentication error: missing ios bundle id",
+  "@authErrorMissingIosBundleId": {
+    "description": "Translation for authErrorMissingIosBundleId"
+  },
+  "authErrorMissingMultiFactorSession": "Authentication error: missing multi factor session",
+  "@authErrorMissingMultiFactorSession": {
+    "description": "Translation for authErrorMissingMultiFactorSession"
+  },
+  "authErrorMissingOauthClientSecret": "Authentication error: missing oauth client secret",
+  "@authErrorMissingOauthClientSecret": {
+    "description": "Translation for authErrorMissingOauthClientSecret"
+  },
+  "authErrorMissingPhoneNumber": "Authentication error: missing phone number",
+  "@authErrorMissingPhoneNumber": {
+    "description": "Translation for authErrorMissingPhoneNumber"
+  },
+  "authErrorMissingUid": "Authentication error: missing uid",
+  "@authErrorMissingUid": {
+    "description": "Translation for authErrorMissingUid"
+  },
+  "authErrorMissingVerificationCode": "Authentication error: missing verification code",
+  "@authErrorMissingVerificationCode": {
+    "description": "Translation for authErrorMissingVerificationCode"
+  },
+  "authErrorMissingVerificationId": "Authentication error: missing verification id",
+  "@authErrorMissingVerificationId": {
+    "description": "Translation for authErrorMissingVerificationId"
+  },
+  "authErrorMultiFactorAuthRequired": "Authentication error: multi factor auth required",
+  "@authErrorMultiFactorAuthRequired": {
+    "description": "Translation for authErrorMultiFactorAuthRequired"
+  },
+  "authErrorMultiFactorInfoNotFound": "Authentication error: multi factor info not found",
+  "@authErrorMultiFactorInfoNotFound": {
+    "description": "Translation for authErrorMultiFactorInfoNotFound"
+  },
+  "authErrorNetworkRequestFailed": "Authentication error: network request failed",
+  "@authErrorNetworkRequestFailed": {
+    "description": "Translation for authErrorNetworkRequestFailed"
+  },
+  "authErrorOperationNotAllowed": "Authentication error: operation not allowed",
+  "@authErrorOperationNotAllowed": {
+    "description": "Translation for authErrorOperationNotAllowed"
+  },
+  "authErrorPhoneNumberAlreadyExists": "Authentication error: phone number already exists",
+  "@authErrorPhoneNumberAlreadyExists": {
+    "description": "Translation for authErrorPhoneNumberAlreadyExists"
+  },
+  "authErrorProjectNotFound": "Authentication error: project not found",
+  "@authErrorProjectNotFound": {
+    "description": "Translation for authErrorProjectNotFound"
+  },
+  "authErrorQuotaExceeded": "Authentication error: quota exceeded",
+  "@authErrorQuotaExceeded": {
+    "description": "Translation for authErrorQuotaExceeded"
+  },
+  "authErrorRequiresRecentLogin": "Authentication error: requires recent login",
+  "@authErrorRequiresRecentLogin": {
+    "description": "Translation for authErrorRequiresRecentLogin"
+  },
+  "authErrorReservedClaims": "Authentication error: reserved claims",
+  "@authErrorReservedClaims": {
+    "description": "Translation for authErrorReservedClaims"
+  },
+  "authErrorSecondFactorAlreadyInUse": "Authentication error: second factor already in use",
+  "@authErrorSecondFactorAlreadyInUse": {
+    "description": "Translation for authErrorSecondFactorAlreadyInUse"
+  },
+  "authErrorSessionCookieExpired": "Authentication error: session cookie expired",
+  "@authErrorSessionCookieExpired": {
+    "description": "Translation for authErrorSessionCookieExpired"
+  },
+  "authErrorSessionCookieRevoked": "Authentication error: session cookie revoked",
+  "@authErrorSessionCookieRevoked": {
+    "description": "Translation for authErrorSessionCookieRevoked"
+  },
+  "authErrorSessionExpired": "Authentication error: session expired",
+  "@authErrorSessionExpired": {
+    "description": "Translation for authErrorSessionExpired"
+  },
+  "authErrorTooManyRequests": "Authentication error: too many requests",
+  "@authErrorTooManyRequests": {
+    "description": "Translation for authErrorTooManyRequests"
+  },
+  "authErrorUidAlreadyExists": "Authentication error: uid already exists",
+  "@authErrorUidAlreadyExists": {
+    "description": "Translation for authErrorUidAlreadyExists"
+  },
+  "authErrorUnauthorizedContinueUri": "Authentication error: unauthorized continue uri",
+  "@authErrorUnauthorizedContinueUri": {
+    "description": "Translation for authErrorUnauthorizedContinueUri"
+  },
+  "authErrorUnknown": "Authentication error: unknown",
+  "@authErrorUnknown": {
+    "description": "Translation for authErrorUnknown"
+  },
+  "authErrorUnsupportedFirstFactor": "Authentication error: unsupported first factor",
+  "@authErrorUnsupportedFirstFactor": {
+    "description": "Translation for authErrorUnsupportedFirstFactor"
+  },
+  "authErrorUserDisabled": "Authentication error: user disabled",
+  "@authErrorUserDisabled": {
+    "description": "Translation for authErrorUserDisabled"
+  },
+  "authErrorUserNotFound": "Authentication error: user not found",
+  "@authErrorUserNotFound": {
+    "description": "Translation for authErrorUserNotFound"
+  },
+  "authErrorWeakPassword": "Authentication error: weak password",
+  "@authErrorWeakPassword": {
+    "description": "Translation for authErrorWeakPassword"
+  },
+  "authErrorWrongPassword": "Authentication error: wrong password",
+  "@authErrorWrongPassword": {
+    "description": "Translation for authErrorWrongPassword"
+  },
+  "average": "Average",
+  "@average": {
+    "description": "Translation for average"
+  },
+  "bookings": "Bookings",
+  "@bookings": {
+    "description": "Translation for bookings"
+  },
+  "breakdown": "Breakdown",
+  "@breakdown": {
+    "description": "Translation for breakdown"
+  },
+  "broadcasts": "Broadcasts",
+  "@broadcasts": {
+    "description": "Translation for broadcasts"
+  },
+  "byCountry": "By country",
+  "@byCountry": {
+    "description": "Translation for byCountry"
+  },
+  "byType": "By type",
+  "@byType": {
+    "description": "Translation for byType"
+  },
+  "cities": "Cities",
+  "@cities": {
+    "description": "Translation for cities"
+  },
+  "clickRate": "Click rate",
+  "@clickRate": {
+    "description": "Translation for clickRate"
+  },
+  "confirm_appointment_button": "Confirm appointment button",
+  "@confirm_appointment_button": {
+    "description": "Translation for confirm_appointment_button"
+  },
+  "continue1": "Continue1",
+  "@continue1": {
+    "description": "Translation for continue1"
+  },
+  "countries": "Countries",
+  "@countries": {
+    "description": "Translation for countries"
+  },
+  "country": "Country",
+  "@country": {
+    "description": "Translation for country"
+  },
+  "customRange": "Custom range",
+  "@customRange": {
+    "description": "Translation for customRange"
+  },
+  "dailyLimitReached": "Daily limit reached",
+  "@dailyLimitReached": {
+    "description": "Translation for dailyLimitReached"
+  },
+  "dailyProgress": "Daily progress",
+  "@dailyProgress": {
+    "description": "Translation for dailyProgress"
+  },
+  "endDate": "End date",
+  "@endDate": {
+    "description": "Translation for endDate"
+  },
+  "engagementRate": "Engagement rate",
+  "@engagementRate": {
+    "description": "Translation for engagementRate"
+  },
+  "errorLoadingData": "Error loading data",
+  "@errorLoadingData": {
+    "description": "Translation for errorLoadingData"
+  },
+  "errorOccurred": "Error occurred",
+  "@errorOccurred": {
+    "description": "Translation for errorOccurred"
+  },
+  "estimatedRecipients": "Estimated recipients",
+  "@estimatedRecipients": {
+    "description": "Translation for estimatedRecipients"
+  },
+  "export": "Export",
+  "@export": {
+    "description": "Translation for export"
+  },
+  "exportComplete": "Export complete",
+  "@exportComplete": {
+    "description": "Translation for exportComplete"
+  },
+  "exportData": "Export data",
+  "@exportData": {
+    "description": "Translation for exportData"
+  },
+  "exportDataDescription": "Export data description",
+  "@exportDataDescription": {
+    "description": "Translation for exportDataDescription"
+  },
+  "exportFailed": "Export failed",
+  "@exportFailed": {
+    "description": "Translation for exportFailed"
+  },
+  "externalLink": "External link",
+  "@externalLink": {
+    "description": "Translation for externalLink"
+  },
+  "failed": "Failed",
+  "@failed": {
+    "description": "Translation for failed"
+  },
+  "filters": "Filters",
+  "@filters": {
+    "description": "Translation for filters"
+  },
+  "formAnalytics": "Form analytics",
+  "@formAnalytics": {
+    "description": "Translation for formAnalytics"
+  },
+  "getStarted": "Get started",
+  "@getStarted": {
+    "description": "Translation for getStarted"
+  },
+  "imageSelected": "Image selected",
+  "@imageSelected": {
+    "description": "Translation for imageSelected"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Translation for language"
+  },
+  "last30Days": "Last30 days",
+  "@last30Days": {
+    "description": "Translation for last30Days"
+  },
+  "last7Days": "Last7 days",
+  "@last7Days": {
+    "description": "Translation for last7Days"
+  },
+  "linkAccounts": "Link accounts",
+  "@linkAccounts": {
+    "description": "Translation for linkAccounts"
+  },
+  "messageType": "Message type",
+  "@messageType": {
+    "description": "Translation for messageType"
+  },
+  "mostCommon": "Most common",
+  "@mostCommon": {
+    "description": "Translation for mostCommon"
+  },
+  "noBroadcastsFound": "No broadcasts found",
+  "@noBroadcastsFound": {
+    "description": "Translation for noBroadcastsFound"
+  },
+  "noDataAvailable": "No data available",
+  "@noDataAvailable": {
+    "description": "Translation for noDataAvailable"
+  },
+  "noFormBroadcasts": "No form broadcasts",
+  "@noFormBroadcasts": {
+    "description": "Translation for noFormBroadcasts"
+  },
+  "noFormData": "No form data",
+  "@noFormData": {
+    "description": "Translation for noFormData"
+  },
+  "openRate": "Open rate",
+  "@openRate": {
+    "description": "Translation for openRate"
+  },
+  "option": "Option",
+  "@option": {
+    "description": "Translation for option"
+  },
+  "overview": "Overview",
+  "@overview": {
+    "description": "Translation for overview"
+  },
+  "partialSent": "Partial sent",
+  "@partialSent": {
+    "description": "Translation for partialSent"
+  },
+  "pending": "Pending",
+  "@pending": {
+    "description": "Translation for pending"
+  },
+  "playNow": "Play now",
+  "@playNow": {
+    "description": "Translation for playNow"
+  },
+  "playtime": "Playtime",
+  "@playtime": {
+    "description": "Translation for playtime"
+  },
+  "pleaseEnterContent": "Please enter content",
+  "@pleaseEnterContent": {
+    "description": "Translation for pleaseEnterContent"
+  },
+  "pleaseEnterLink": "Please enter link",
+  "@pleaseEnterLink": {
+    "description": "Translation for pleaseEnterLink"
+  },
+  "pleaseEnterTitle": "Please enter title",
+  "@pleaseEnterTitle": {
+    "description": "Translation for pleaseEnterTitle"
+  },
+  "responseRate": "Response rate",
+  "@responseRate": {
+    "description": "Translation for responseRate"
+  },
+  "responses": "Responses",
+  "@responses": {
+    "description": "Translation for responses"
+  },
+  "revenue": "Revenue",
+  "@revenue": {
+    "description": "Translation for revenue"
+  },
+  "sending": "Sending",
+  "@sending": {
+    "description": "Translation for sending"
+  },
+  "sent": "Sent",
+  "@sent": {
+    "description": "Translation for sent"
+  },
+  "signInWithExistingMethod": "Sign in with existing method",
+  "@signInWithExistingMethod": {
+    "description": "Translation for signInWithExistingMethod"
+  },
+  "skip": "Skip",
+  "@skip": {
+    "description": "Translation for skip"
+  },
+  "socialAccountConflictTitle": "Social account conflict title",
+  "@socialAccountConflictTitle": {
+    "description": "Translation for socialAccountConflictTitle"
+  },
+  "startDate": "Start date",
+  "@startDate": {
+    "description": "Translation for startDate"
+  },
+  "subscriptionTiers": "Subscription tiers",
+  "@subscriptionTiers": {
+    "description": "Translation for subscriptionTiers"
+  },
+  "ticketEarned": "Ticket earned",
+  "@ticketEarned": {
+    "description": "Translation for ticketEarned"
+  },
+  "tickets": "Tickets",
+  "@tickets": {
+    "description": "Translation for tickets"
+  },
+  "ticketsEarned": "Tickets earned",
+  "@ticketsEarned": {
+    "description": "Translation for ticketsEarned"
+  },
+  "timeRange": "Time range",
+  "@timeRange": {
+    "description": "Translation for timeRange"
+  },
+  "title": "Title",
+  "@title": {
+    "description": "Translation for title"
+  },
+  "today": "Today",
+  "@today": {
+    "description": "Translation for today"
+  },
+  "totalBroadcasts": "Total broadcasts",
+  "@totalBroadcasts": {
+    "description": "Translation for totalBroadcasts"
+  },
+  "totalRecipients": "Total recipients",
+  "@totalRecipients": {
+    "description": "Translation for totalRecipients"
+  },
+  "totalResponses": "Total responses",
+  "@totalResponses": {
+    "description": "Translation for totalResponses"
+  },
+  "upgrade_button": "Upgrade button",
+  "@upgrade_button": {
+    "description": "Translation for upgrade_button"
+  },
+  "upgrade_prompt_description": "Upgrade prompt description",
+  "@upgrade_prompt_description": {
+    "description": "Translation for upgrade_prompt_description"
+  },
+  "userRoles": "User roles",
+  "@userRoles": {
+    "description": "Translation for userRoles"
+  },
+  "users": "Users",
+  "@users": {
+    "description": "Translation for users"
+  },
+  "videoSelected": "Video selected",
+  "@videoSelected": {
+    "description": "Translation for videoSelected"
+  },
+  "viewFormAnalytics": "View form analytics",
+  "@viewFormAnalytics": {
+    "description": "Translation for viewFormAnalytics"
+  },
+  "ambassadorDashboard": "Ambassador Dashboard",
+  "@ambassadorDashboard": {
+    "description": "Ambassador dashboard title"
+  },
+  "referrals": "Referrals",
+  "@referrals": {
+    "description": "Referrals section label"
+  },
+  "referralStatistics": "Referral Statistics",
+  "@referralStatistics": {
+    "description": "Referral statistics section title"
+  },
+  "rewards": "Rewards",
+  "@rewards": {
+    "description": "Rewards section label"
+  },
+  "shareLink": "Share Link",
+  "@shareLink": {
+    "description": "Share link button label"
+  },
+  "shareMore": "Share More",
+  "@shareMore": {
+    "description": "Share more options label"
+  },
+  "shareViaEmail": "Share via Email",
+  "@shareViaEmail": {
+    "description": "Share via email option"
+  },
+  "shareViaMessage": "Share via Message",
+  "@shareViaMessage": {
+    "description": "Share via message option"
   },
   "shareYourLink": "Share Your Link",
   "@shareYourLink": {
-    "description": "Section title for sharing options"
+    "description": "Share your referral link section title"
   },
-  "shareViaMessage": "Message",
-  "@shareViaMessage": {
-    "description": "Button label for sharing via message"
+  "tierBenefits": "Tier Benefits",
+  "@tierBenefits": {
+    "description": "Tier benefits section title"
   },
-  "shareViaEmail": "Email",
-  "@shareViaEmail": {
-    "description": "Button label for sharing via email"
+  "activeReferrals": "Active Referrals",
+  "@activeReferrals": {
+    "description": "Active referrals count label"
   },
-  "shareMore": "More Options",
-  "@shareMore": {
-    "description": "Button label for additional sharing options"
+  "activeRewards": "Active Rewards",
+  "@activeRewards": {
+    "description": "Active rewards section title"
   },
-  "becomeAmbassador": "Become an Ambassador",
-  "@becomeAmbassador": {
-    "description": "Button text to join ambassador program"
+  "conversionRate": "Conversion Rate",
+  "@conversionRate": {
+    "description": "Conversion rate metric label"
   },
-  "ambassadorEligible": "You're eligible to become an Ambassador!",
-  "@ambassadorEligible": {
-    "description": "Message shown when user is eligible for ambassador program"
+  "copyLink": "Copy Link",
+  "@copyLink": {
+    "description": "Copy link button label"
   },
-  "ambassadorWelcomeTitle": "Welcome to the Ambassador Program!",
-  "@ambassadorWelcomeTitle": {
-    "description": "Title for ambassador welcome overlay"
+  "create": "Create",
+  "@create": {
+    "description": "Create button label"
   },
-  "ambassadorWelcomeMessage": "Congratulations! You've been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.",
-  "@ambassadorWelcomeMessage": {
-    "description": "Welcome message for new ambassadors"
+  "monthlyGoal": "Monthly Goal",
+  "@monthlyGoal": {
+    "description": "Monthly goal section title"
   },
-  "ambassadorPromotionTitle": "Congratulations! You're now an Ambassador!",
-  "@ambassadorPromotionTitle": {
-    "description": "Title for ambassador promotion notification"
+  "monthlyReferralRequirement": "Monthly Referral Requirement",
+  "@monthlyReferralRequirement": {
+    "description": "Monthly referral requirement label"
   },
-  "ambassadorPromotionBody": "Welcome to the {tier} tier! Start sharing your referral link to earn rewards.",
-  "@ambassadorPromotionBody": {
-    "description": "Body text for ambassador promotion notification",
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
+  "needsAttention": "Needs Attention",
+  "@needsAttention": {
+    "description": "Needs attention status label"
   },
-  "tierUpgradeTitle": "Tier Upgrade! 🎉",
-  "@tierUpgradeTitle": {
-    "description": "Title for tier upgrade notification"
+  "nextTierProgress": "Next Tier Progress",
+  "@nextTierProgress": {
+    "description": "Next tier progress section title"
   },
-  "tierUpgradeBody": "Amazing! You've been upgraded from {previousTier} to {newTier} with {totalReferrals} referrals!",
-  "@tierUpgradeBody": {
-    "description": "Body text for tier upgrade notification",
-    "placeholders": {
-      "previousTier": {
-        "type": "String"
-      },
-      "newTier": {
-        "type": "String"
-      },
-      "totalReferrals": {
-        "type": "String"
-      }
-    }
+  "onTrack": "On Track",
+  "@onTrack": {
+    "description": "On track status label"
   },
-  "monthlyReminderTitle": "Monthly Goal Reminder",
-  "@monthlyReminderTitle": {
-    "description": "Title for monthly performance reminder notification"
+  "dart": "Dart",
+  "@dart": {
+    "description": "Dart programming language name"
   },
-  "monthlyReminderBody": "You have {currentReferrals}/{targetReferrals} referrals this month. {daysRemaining} days left to reach your goal!",
-  "@monthlyReminderBody": {
-    "description": "Body text for monthly reminder notification",
-    "placeholders": {
-      "currentReferrals": {
-        "type": "String"
-      },
-      "targetReferrals": {
-        "type": "String"
-      },
-      "daysRemaining": {
-        "type": "String"
-      }
-    }
+  "localeName": "en",
+  "@localeName": {
+    "description": "Locale name identifier"
   },
-  "performanceWarningTitle": "Ambassador Performance Alert",
-  "@performanceWarningTitle": {
-    "description": "Title for performance warning notification"
+  "noRouteDefinedForStateuripath": "No route defined for the given URI path",
+  "@noRouteDefinedForStateuripath": {
+    "description": "Error message for undefined routes"
   },
-  "performanceWarningBody": "Your monthly referrals ({currentReferrals}) are below the minimum requirement ({minimumRequired}). Your ambassador status may be affected.",
-  "@performanceWarningBody": {
-    "description": "Body text for performance warning notification",
-    "placeholders": {
-      "currentReferrals": {
-        "type": "String"
-      },
-      "minimumRequired": {
-        "type": "String"
-      }
-    }
+  "recentReferrals": "Recent Referrals",
+  "@recentReferrals": {
+    "description": "Recent referrals section title"
   },
-  "ambassadorDemotionTitle": "Ambassador Status Update",
-  "@ambassadorDemotionTitle": {
-    "description": "Title for ambassador demotion notification"
+  "remaining": "Remaining",
+  "@remaining": {
+    "description": "Remaining count label"
   },
-  "ambassadorDemotionBody": "Your ambassador status has been temporarily suspended due to: {reason}. You can regain your status by meeting the requirements again.",
-  "@ambassadorDemotionBody": {
-    "description": "Body text for ambassador demotion notification",
-    "placeholders": {
-      "reason": {
-        "type": "String"
-      }
-    }
+  "thisMonth": "This Month",
+  "@thisMonth": {
+    "description": "This month time period label"
   },
-  "referralSuccessTitle": "New Referral! 🎉",
-  "@referralSuccessTitle": {
-    "description": "Title for successful referral notification"
+  "totalReferrals": "Total Referrals",
+  "@totalReferrals": {
+    "description": "Total referrals count label"
   },
-  "referralSuccessBody": "{referredUserName} joined through your referral! You now have {totalReferrals} total referrals.",
-  "@referralSuccessBody": {
-    "description": "Body text for successful referral notification",
-    "placeholders": {
-      "referredUserName": {
-        "type": "String"
-      },
-      "totalReferrals": {
-        "type": "String"
-      }
-    }
+  "viewRewards": "View Rewards",
+  "@viewRewards": {
+    "description": "View rewards button label"
+  },
+  "yaml": "YAML",
+  "@yaml": {
+    "description": "YAML file format name"
+  },
+  "yourReferralLink": "Your Referral Link",
+  "@yourReferralLink": {
+    "description": "Your referral link section title"
+  },
+  "progressToPremium": "Progress to Premium",
+  "@progressToPremium": {
+    "description": "Progress to premium tier label"
+  },
+  "errorEstimatingRecipients": "Error estimating recipients",
+  "@errorEstimatingRecipients": {
+    "description": "Error message when estimating recipients fails"
+  },
+  "errorPickingImage": "Error picking image",
+  "@errorPickingImage": {
+    "description": "Error message when image picking fails"
+  },
+  "errorPickingVideo": "Error picking video",
+  "@errorPickingVideo": {
+    "description": "Error message when video picking fails"
+  },
+  "userNotAuthenticated": "User not authenticated",
+  "@userNotAuthenticated": {
+    "description": "Error message when user is not authenticated"
+  },
+  "failedToUploadImage": "Failed to upload image",
+  "@failedToUploadImage": {
+    "description": "Error message when image upload fails"
+  },
+  "failedToUploadVideo": "Failed to upload video",
+  "@failedToUploadVideo": {
+    "description": "Error message when video upload fails"
+  },
+  "image": "Image",
+  "@image": {
+    "description": "Label for image content"
+  },
+  "video": "Video",
+  "@video": {
+    "description": "Label for video content"
   }
 }

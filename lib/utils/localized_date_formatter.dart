@@ -1,4 +1,4 @@
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:intl/intl.dart';
 
 /// Formats dates and relative times using the current locale.
@@ -18,7 +18,7 @@ class LocalizedDateFormatter {
 
   /// Format the difference from [timestamp] to now in a human friendly form.
   String formatRelative(DateTime timestamp) {
-    diff = DateTime.now().difference(timestamp);
+    final diff = DateTime.now().difference(timestamp);
     if (diff.inMinutes < 1) {
       return Intl.message('just now', name: 'justNow', locale: _locale);
     }

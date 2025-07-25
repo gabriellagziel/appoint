@@ -141,4 +141,10 @@ class BookingService {
       rethrow;
     }
   }
+
+  /// Get weekly booking count (stub implementation)
+  Future<int> getWeeklyBookingCount() async {
+    // TODO: Implement weekly booking count calculation
+    return 0;
+  }
 }

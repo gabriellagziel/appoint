@@ -1,7 +1,50 @@
-import 'package:stripe_platform_interface/stripe_platform_interface.dart';
+// Note: stripe package not added to pubspec.yaml yet
+// import 'package:stripe_platform_interface/stripe_platform_interface.dart';
 import 'package:appoint/models/subscription.dart';
 import 'package:appoint/models/payment.dart';
 import 'package:appoint/services/api/api_client.dart';
+
+// Temporary stub classes until stripe package is added
+class Stripe {
+  static Stripe instance = Stripe();
+  Future<void> initialise({required String publishableKey}) async {}
+  Future<PaymentIntent> createPaymentIntent(Map<String, dynamic> params) async => PaymentIntent('');
+  Future<SetupIntent> createSetupIntent(Map<String, dynamic> params) async => SetupIntent('');
+  Future<PaymentResult> confirmPayment(String paymentIntentId, PaymentMethodParams params) async => PaymentResult(PaymentIntentsStatus.Succeeded);
+}
+
+class PaymentIntent {
+  final String id;
+  PaymentIntent(this.id);
+}
+
+class SetupIntent {
+  final String id;
+  SetupIntent(this.id);
+}
+
+enum SetupIntentsStatus { succeeded, processing, requiresPaymentMethod }
+
+// Additional Stripe stub classes
+class PaymentMethodParams {
+  static PaymentMethodParams card({required PaymentMethodData paymentMethodData}) => PaymentMethodParams();
+}
+
+class PaymentMethodData {
+  final BillingDetails? billingDetails;
+  PaymentMethodData({this.billingDetails});
+}
+
+class BillingDetails {
+  BillingDetails();
+}
+
+class PaymentResult {
+  final PaymentIntentsStatus status;
+  PaymentResult(this.status);
+}
+
+enum PaymentIntentsStatus { Succeeded, Failed, Processing }
 
 class StripePaymentService {
   static final StripePaymentService _instance = StripePaymentService._();

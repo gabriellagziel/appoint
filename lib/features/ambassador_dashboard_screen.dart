@@ -610,7 +610,7 @@ class _AmbassadorDashboardScreenState
     }
 
     final counts = <String, int>{};
-    for (stat in data.stats) {
+    for (final stat in data.stats) {
       counts.update(stat.language, (v) => v + stat.ambassadors,
           ifAbsent: () => stat.ambassadors,);
     }
@@ -701,7 +701,7 @@ class _AmbassadorDashboardScreenState
 
   AmbassadorData _getFilteredData(AmbassadorData data) {
     // Apply country/language filters
-    filteredStats = data.stats.where((final s) {
+    final filteredStats = data.stats.where((final s) {
       if (selectedCountry != null && s.country != selectedCountry) {
         return false;
       }
@@ -712,7 +712,7 @@ class _AmbassadorDashboardScreenState
     }).toList();
 
     // Recalculate chart data based on filtered stats
-    filteredChartData = data.chartData.where((final point) => filteredStats.any((stat) => stat.country == point.label)).toList();
+    final filteredChartData = data.chartData.where((final point) => filteredStats.any((stat) => stat.country == point.label)).toList();
 
     return AmbassadorData(
       stats: filteredStats,

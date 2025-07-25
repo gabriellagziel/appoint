@@ -1,4 +1,4 @@
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/providers/dashboard_provider.dart';
 import 'package:appoint/theme/app_spacing.dart';
 import 'package:appoint/widgets/app_scaffold.dart';

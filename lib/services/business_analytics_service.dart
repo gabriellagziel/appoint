@@ -18,7 +18,7 @@ class BusinessAnalyticsService {
       }
       final snapshot = await query.get();
       final counts = <DateTime, int>{};
-      for (doc in snapshot.docs) {
+      for (final doc in snapshot.docs) {
         final ts = doc.data()['dateTime'] as Timestamp?;
         if (ts == null) continue;
         final date =
@@ -41,7 +41,7 @@ class BusinessAnalyticsService {
     try {
       final snapshot = await _firestore.collection('appointments').get();
       final counts = <String, int>{};
-      for (doc in snapshot.docs) {
+      for (final doc in snapshot.docs) {
         final service = doc.data()['serviceName'] as String? ?? 'Unknown';
         counts.update(service, (value) => value + 1, ifAbsent: () => 1);
       }
@@ -62,7 +62,7 @@ class BusinessAnalyticsService {
     try {
       final snapshot = await _firestore.collection('payments').get();
       final totals = <String, double>{};
-      for (doc in snapshot.docs) {
+      for (final doc in snapshot.docs) {
         final staff = doc.data()['staffId'] as String? ?? 'unknown';
         final amount = (doc.data()['amount'] as num?)?.toDouble() ?? 0;
         totals.update(staff, (value) => value + amount,

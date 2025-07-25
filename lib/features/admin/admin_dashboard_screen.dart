@@ -5,7 +5,7 @@ import 'package:appoint/features/admin/widgets/admin_activity_tab.dart';
 import 'package:appoint/features/admin/widgets/admin_errors_tab.dart';
 import 'package:appoint/features/admin/widgets/admin_monetization_tab.dart';
 import 'package:appoint/features/admin/widgets/admin_overview_tab.dart';
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/utils/admin_localizations.dart';
 import 'package:appoint/providers/admin_provider.dart';
 import 'package:appoint/widgets/admin_guard.dart';

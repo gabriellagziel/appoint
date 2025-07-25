@@ -3,7 +3,7 @@ import 'package:appoint/features/messaging/models/chat.dart';
 import 'package:appoint/features/messaging/services/messaging_service.dart';
 import 'package:appoint/features/messaging/widgets/message_bubble.dart';
 import 'package:appoint/features/messaging/widgets/attachment_picker.dart';
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

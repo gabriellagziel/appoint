@@ -16,8 +16,8 @@ class CareProvidersNotifier
     try {
       final data = await _service.fetchProviders();
       final state = AsyncValue.data(data);
-    } catch (e) {
-      final state = AsyncValue.error(e, st);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 

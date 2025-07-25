@@ -642,6 +642,37 @@ class AnalyticsService {
       throw Exception('Failed to get broadcast list: $e');
     }
   }
+
+  /// Track feature usage (stub implementation)
+  Future<void> trackFeatureUsage(String feature, {Map<String, dynamic>? properties}) async {
+    // TODO: Implement feature usage tracking
+    // For now, this is a stub to prevent undefined method errors
+  }
+
+  /// Track onboarding start (stub implementation)
+  Future<void> trackOnboardingStart() async {
+    // TODO: Implement onboarding start tracking
+  }
+
+  /// Track onboarding step (stub implementation)
+  Future<void> trackOnboardingStep(String step) async {
+    // TODO: Implement onboarding step tracking
+  }
+
+  /// Track onboarding complete (stub implementation)
+  Future<void> trackOnboardingComplete() async {
+    // TODO: Implement onboarding completion tracking
+  }
+
+  /// Log screen view (stub implementation)
+  Future<void> logScreenView(String screenName) async {
+    // TODO: Implement screen view logging
+  }
+
+  /// Log event (stub implementation)
+  Future<void> logEvent(String eventName, {Map<String, dynamic>? parameters}) async {
+    // TODO: Implement event logging
+  }
 }
 
 // Providers

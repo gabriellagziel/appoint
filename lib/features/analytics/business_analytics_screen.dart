@@ -1,4 +1,4 @@
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fl_chart/fl_chart.dart';
@@ -282,7 +282,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
                         showTitles: true,
                         getTitlesWidget: (value, meta) {
                           if (value.toInt() < monthlyData.length) {
-                            return Text(monthlyData[value.toInt()]['month']);
+                            return Text(monthlyData[value.toInt()]['month'] as String);
                           }
                           return const Text('');
                         },
@@ -295,7 +295,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
                   lineBarsData: [
                     LineChartBarData(
                       spots: monthlyData.asMap().entries.map((entry) {
-                        return FlSpot(entry.key.toDouble(), entry.value['revenue'].toDouble());
+                        return FlSpot(entry.key.toDouble(), (entry.value['revenue'] as double).toDouble());
                       }).toList(),
                       isCurved: true,
                       color: Colors.blue,
@@ -332,13 +332,13 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
               child: PieChart(
                 PieChartData(
                   sections: services.map((service) {
-                    final totalRevenue = services.fold<double>(0, (sum, s) => sum + s['revenue']);
-                    final percentage = (service['revenue'] / totalRevenue) * 100;
+                    final totalRevenue = services.fold<double>(0, (sum, s) => sum + (s['revenue'] as num));
+                    final percentage = ((service['revenue'] as double?) ?? 0.0 / totalRevenue) * 100;
                     
                     return PieChartSectionData(
-                      value: service['revenue'].toDouble(),
+                      value: (service['revenue'] as double).toDouble(),
                       title: '${percentage.toStringAsFixed(1)}%',
-                      color: _getServiceColor(service['name']),
+                      color: _getServiceColor(service['name'] as String),
                       radius: 80,
                       titleStyle: const TextStyle(
                         color: Colors.white,
@@ -365,12 +365,12 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
                       width: 12,
                       height: 12,
                       decoration: BoxDecoration(
-                        color: _getServiceColor(service['name']),
+                        color: _getServiceColor(service['name'] as String),
                         shape: BoxShape.circle,
                       ),
                     ),
                     const SizedBox(width: 4),
-                    Text(service['name']),
+                    Text(service['name'] as String),
                   ],
                 );
               }).toList(),
@@ -406,7 +406,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
                 
                 return ListTile(
                   leading: CircleAvatar(
-                    backgroundColor: _getServiceColor(service['name']),
+                    backgroundColor: _getServiceColor(service['name'] as String),
                     child: Text(
                       rank.toString(),
                       style: const TextStyle(
@@ -415,7 +415,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
                       ),
                     ),
                   ),
-                  title: Text(service['name']),
+                  title: Text(service['name'] as String),
                   subtitle: Text('${service['bookings']} bookings'),
                   trailing: Text(
                     '\$${service['revenue']}',
