@@ -1,5 +1,5 @@
 import 'package:appoint/features/booking/widgets/chat_flow_widget.dart';
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/providers/firebase_providers.dart';
 import 'package:appoint/services/auth_service.dart';
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
