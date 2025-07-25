@@ -370,7 +370,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
                       ),
                     ),
                     const SizedBox(width: 4),
-                    Text(service['name']),
+                    Text(service['name'] as String),
                   ],
                 );
               }).toList(),
@@ -406,7 +406,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
                 
                 return ListTile(
                   leading: CircleAvatar(
-                    backgroundColor: _getServiceColor(service['name']),
+                    backgroundColor: _getServiceColor(service['name'] as String),
                     child: Text(
                       rank.toString(),
                       style: const TextStyle(
@@ -415,7 +415,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
                       ),
                     ),
                   ),
-                  title: Text(service['name']),
+                  title: Text(service['name'] as String),
                   subtitle: Text('${service['bookings']} bookings'),
                   trailing: Text(
                     '\$${service['revenue']}',

@@ -46,7 +46,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   Widget build(BuildContext context) {
     final isAdmin = ref.watch(isAdminProvider);
     final broadcastMessages = ref.watch(broadcastMessagesProvider);
-    final l10n = AppLocalizations.of(context);
+    final l10n = AppLocalizations.of(context)!;
     final theme = Theme.of(context);
 
     return Scaffold(
@@ -144,7 +144,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Widget _buildMessagesList(List<AdminBroadcastMessage> messages) {
-    final l10n = AppLocalizations.of(context);
+    final l10n = AppLocalizations.of(context)!;
 
     if (messages.isEmpty) {
       return Center(
@@ -664,7 +664,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       if (!mounted) return;
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${AppLocalizations.of(context).errorEstimatingRecipients}: $e')),
+          SnackBar(content: Text('${AppLocalizations.of(context)!.errorEstimatingRecipients}: $e')),
         );
       }
     }
@@ -693,7 +693,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       if (!mounted) return;
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${AppLocalizations.of(context).errorPickingImage}: $e')),
+          SnackBar(content: Text('${AppLocalizations.of(context)!.errorPickingImage}: $e')),
         );
       }
     }
@@ -719,7 +719,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       if (!mounted) return;
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('${AppLocalizations.of(context).errorPickingVideo}: $e')),
+          SnackBar(content: Text('${AppLocalizations.of(context)!.errorPickingVideo}: $e')),
         );
       }
     }
@@ -736,7 +736,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Future<void> _saveMessage() async {
-    final l10n = AppLocalizations.of(context);
+    final l10n = AppLocalizations.of(context)!;
 
     if (!_formKey.currentState!.validate()) return;
 
@@ -759,7 +759,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       final user = FirebaseAuth.instance.currentUser;
 
       if (user == null) {
-        throw Exception('${AppLocalizations.of(context).userNotAuthenticated}');
+        throw Exception('${AppLocalizations.of(context)!.userNotAuthenticated}');
       }
 
       // Upload media files if selected
@@ -770,7 +770,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         try {
           final imageUrl = await FirebaseStorageService.instance.uploadBroadcastImage(_selectedImage!);
         } catch (e) {
-          throw Exception('${AppLocalizations.of(context).failedToUploadImage}: $e');
+          throw Exception('${AppLocalizations.of(context)!.failedToUploadImage}: $e');
         }
       }
 
@@ -778,7 +778,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         try {
           final videoUrl = await FirebaseStorageService.instance.uploadBroadcastVideo(_selectedVideo!);
         } catch (e) {
-          throw Exception('${AppLocalizations.of(context).failedToUploadVideo}: $e');
+          throw Exception('${AppLocalizations.of(context)!.failedToUploadVideo}: $e');
         }
       }
 
@@ -832,7 +832,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Future<void> _sendMessage(String messageId) async {
-    final l10n = AppLocalizations.of(context);
+    final l10n = AppLocalizations.of(context)!;
 
     try {
       final service = ref.read(adminBroadcastServiceProvider);
@@ -850,7 +850,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   void _showMessageDetails(AdminBroadcastMessage message) {
-    final l10n = AppLocalizations.of(context);
+    final l10n = AppLocalizations.of(context)!;
 
     showDialog(
       context: context,
@@ -866,7 +866,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
               Text(l10n.type(message.type.toString())),
               if (message.imageUrl != null) ...[
                 const SizedBox(height: 8),
-                const Text('${AppLocalizations.of(context).image}:',
+                const Text('${AppLocalizations.of(context)!.image}:',
                     style: TextStyle(fontWeight: FontWeight.bold),),
                 Text(message.imageUrl!, style: const TextStyle(fontSize: 12)),
                 const SizedBox(height: 8),
@@ -891,7 +891,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
               ],
               if (message.videoUrl != null) ...[
                 const SizedBox(height: 8),
-                const Text('${AppLocalizations.of(context).video}:',
+                const Text('${AppLocalizations.of(context)!.video}:',
                     style: TextStyle(fontWeight: FontWeight.bold),),
                 Text(message.videoUrl!, style: const TextStyle(fontSize: 12)),
                 const SizedBox(height: 8),
