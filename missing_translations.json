@@ -1,0 +1,331 @@
+{
+  "am": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "ar": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "bg": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "bn": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "bn_BD": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "bs": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "ca": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "cs": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "cy": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "da": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "de": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "es": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "es_419": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "et": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "eu": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "fa": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "fi": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "fo": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "fr": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "ga": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "gl": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "ha": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "he": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "hi": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "hr": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "hu": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "id": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "is": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "it": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "ja": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "ko": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "lt": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "lv": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "mk": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "ms": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "mt": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "nl": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "no": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "pl": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "pt": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "pt_BR": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "ro": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "ru": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "sk": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "sl": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "sq": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "sr": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "sv": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "th": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "tr": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "uk": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "ur": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "vi": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "zh": [
+    "formFields",
+    "addField",
+    "editField"
+  ],
+
+  "zh_Hant": [
+    "formFields",
+    "addField",
+    "editField"
+  ]
+}
