@@ -1535,5 +1535,45 @@
   "tierBenefits": "Tier Benefits",
   "@tierBenefits": {
     "description": "Tier benefits section title"
+  },
+  "activeReferrals": "Active Referrals",
+  "@activeReferrals": {
+    "description": "Active referrals count label"
+  },
+  "activeRewards": "Active Rewards",
+  "@activeRewards": {
+    "description": "Active rewards section title"
+  },
+  "conversionRate": "Conversion Rate",
+  "@conversionRate": {
+    "description": "Conversion rate metric label"
+  },
+  "copyLink": "Copy Link",
+  "@copyLink": {
+    "description": "Copy link button label"
+  },
+  "create": "Create",
+  "@create": {
+    "description": "Create button label"
+  },
+  "monthlyGoal": "Monthly Goal",
+  "@monthlyGoal": {
+    "description": "Monthly goal section title"
+  },
+  "monthlyReferralRequirement": "Monthly Referral Requirement",
+  "@monthlyReferralRequirement": {
+    "description": "Monthly referral requirement label"
+  },
+  "needsAttention": "Needs Attention",
+  "@needsAttention": {
+    "description": "Needs attention status label"
+  },
+  "nextTierProgress": "Next Tier Progress",
+  "@nextTierProgress": {
+    "description": "Next tier progress section title"
+  },
+  "onTrack": "On Track",
+  "@onTrack": {
+    "description": "On track status label"
   }
 }
