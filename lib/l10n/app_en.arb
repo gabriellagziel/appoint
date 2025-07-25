@@ -1495,5 +1495,45 @@
   "viewFormAnalytics": "View form analytics",
   "@viewFormAnalytics": {
     "description": "Translation for viewFormAnalytics"
+  },
+  "ambassadorDashboard": "Ambassador Dashboard",
+  "@ambassadorDashboard": {
+    "description": "Ambassador dashboard title"
+  },
+  "referrals": "Referrals",
+  "@referrals": {
+    "description": "Referrals section label"
+  },
+  "referralStatistics": "Referral Statistics",
+  "@referralStatistics": {
+    "description": "Referral statistics section title"
+  },
+  "rewards": "Rewards",
+  "@rewards": {
+    "description": "Rewards section label"
+  },
+  "shareLink": "Share Link",
+  "@shareLink": {
+    "description": "Share link button label"
+  },
+  "shareMore": "Share More",
+  "@shareMore": {
+    "description": "Share more options label"
+  },
+  "shareViaEmail": "Share via Email",
+  "@shareViaEmail": {
+    "description": "Share via email option"
+  },
+  "shareViaMessage": "Share via Message",
+  "@shareViaMessage": {
+    "description": "Share via message option"
+  },
+  "shareYourLink": "Share Your Link",
+  "@shareYourLink": {
+    "description": "Share your referral link section title"
+  },
+  "tierBenefits": "Tier Benefits",
+  "@tierBenefits": {
+    "description": "Tier benefits section title"
   }
 }
