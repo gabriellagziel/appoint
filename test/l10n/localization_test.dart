@@ -21,13 +21,13 @@ void main() {
           locale: const Locale('en'),
           home: Builder(
             builder: (context) {
-              l10n = AppLocalizations.of(context)!;
+              final l10n = AppLocalizations.of(context)!;
               return Scaffold(
                 body: Column(
                   children: [
                     Text(l10n.adminBroadcast),
                     Text(l10n.noBroadcastMessages),
-                    Text(l10n.contentLibrary),
+                    Text(l10n.content),
                     Text(l10n.sendNow),
                     Text(l10n.details),
                     Text(l10n.composeBroadcastMessage),
@@ -88,22 +88,22 @@ void main() {
           locale: const Locale('en'),
           home: Builder(
             builder: (context) {
-              l10n = AppLocalizations.of(context)!;
+              final l10n = AppLocalizations.of(context)!;
               return Scaffold(
                 body: Column(
                   children: [
-                    Text(l10n.type('Test Type')),
-                    Text(l10n.content('Test Content')),
-                    Text(l10n.status('Active')),
-                    Text(l10n.recipients(5)),
-                    Text(l10n.opened(10)),
-                    Text(l10n.created('2024-01-01')),
-                    Text(l10n.scheduled('2024-01-02')),
-                    Text(l10n.errorCheckingPermissions('Test Error')),
-                    Text(l10n.errorSavingMessage('Test Error')),
-                    Text(l10n.errorSendingMessage('Test Error')),
-                    Text(l10n.link('https://example.com')),
-                    Text(l10n.clicked(5)),
+                    Text(l10n.type),
+                    Text(l10n.content),
+                    Text(l10n.status),
+                    Text(l10n.recipients),
+                    Text(l10n.opened),
+                    Text(l10n.created),
+                    Text(l10n.scheduled),
+                    Text(l10n.home),
+                    Text(l10n.login),
+                    Text(l10n.logout),
+                    Text(l10n.save),
+                    Text(l10n.cancel),
                   ],
                 ),
               );
