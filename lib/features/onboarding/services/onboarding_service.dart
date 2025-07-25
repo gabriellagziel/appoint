@@ -51,7 +51,7 @@ class OnboardingService {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('onboarding_completed', true);
     await prefs.setString('user_type', onboardingData['userType']?.toString() ?? '');
-    await prefs.setString('language', onboardingData['language'] ?? 'en');
+    await prefs.setString('language', onboardingData['language'] as String? ?? 'en');
   }
 
   /// Get onboarding data
