@@ -44,14 +44,12 @@ class _BusinessSubscriptionScreenState
         );
       }
     } catch (e) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text('Failed to start Starter subscription: $e'),
-              backgroundColor: Colors.red,
-            ),
-          );
-        }
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to start Starter subscription: $e'),
+            backgroundColor: Colors.red,
+          ),
+        );
       }
     } finally {
       if (mounted) {
@@ -75,14 +73,12 @@ class _BusinessSubscriptionScreenState
         );
       }
     } catch (e) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text('Failed to start Professional subscription: $e'),
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to start Professional subscription: $e'),
             backgroundColor: Colors.red,
           ),
         );
-        }
       }
     } finally {
       if (mounted) {
@@ -106,14 +102,12 @@ class _BusinessSubscriptionScreenState
         );
       }
     } catch (e) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text('Failed to start Business Plus subscription: $e'),
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to start Business Plus subscription: $e'),
             backgroundColor: Colors.red,
           ),
         );
-        }
       }
     } finally {
       if (mounted) {
@@ -149,14 +143,12 @@ class _BusinessSubscriptionScreenState
         );
       }
     } catch (e) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text('Failed to apply promo code: $e'),
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to apply promo code: $e'),
             backgroundColor: Colors.red,
           ),
         );
-        }
       }
     } finally {
       if (mounted) {
@@ -178,14 +170,12 @@ class _BusinessSubscriptionScreenState
         );
       }
     } catch (e) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text('Failed to open customer portal: $e'),
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Failed to open customer portal: $e'),
             backgroundColor: Colors.red,
           ),
         );
-        }
       }
     }
   }
