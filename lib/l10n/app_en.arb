@@ -3418,5 +3418,114 @@
   "tomorrow": "Tomorrow",
   "@tomorrow": {
     "description": "Tomorrow label"
+  },
+  "reminderCount": "{count} reminder(s)",
+  "@reminderCount": {
+    "description": "Count of reminders for a meeting",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "noRemindersSet": "No reminders set",
+  "@noRemindersSet": {
+    "description": "Message when no reminders are set for a meeting"
+  },
+  "quickAdd": "Quick Add",
+  "@quickAdd": {
+    "description": "Quick add button label"
+  },
+  "quickReminderOptions": "Quick Reminder Options",
+  "@quickReminderOptions": {
+    "description": "Title for quick reminder options section"
+  },
+  "currentReminders": "Current Reminders",
+  "@currentReminders": {
+    "description": "Title for current reminders section"
+  },
+  "noRemindersForMeeting": "No reminders for this meeting",
+  "@noRemindersForMeeting": {
+    "description": "Empty state message for meeting reminders"
+  },
+  "addReminderToStayOrganized": "Add a reminder to stay organized",
+  "@addReminderToStayOrganized": {
+    "description": "Encouragement text for adding reminders"
+  },
+  "addCustomReminder": "Add Custom Reminder",
+  "@addCustomReminder": {
+    "description": "Button to add custom reminder"
+  },
+  "addQuickReminder": "Add Quick Reminder",
+  "@addQuickReminder": {
+    "description": "Title for quick reminder bottom sheet"
+  },
+  "fifteenMinutesBefore": "15 minutes before",
+  "@fifteenMinutesBefore": {
+    "description": "Quick reminder option"
+  },
+  "oneHourBefore": "1 hour before",
+  "@oneHourBefore": {
+    "description": "Quick reminder option"
+  },
+  "oneDayBefore": "1 day before",
+  "@oneDayBefore": {
+    "description": "Quick reminder option"
+  },
+  "dayOfMeeting": "Day of meeting",
+  "@dayOfMeeting": {
+    "description": "Quick reminder option"
+  },
+  "meeting": "Meeting",
+  "@meeting": {
+    "description": "Default meeting label"
+  },
+  "automaticReminderForMeeting": "Automatic reminder for {meetingTitle}",
+  "@automaticReminderForMeeting": {
+    "description": "Description for automatically created meeting reminders",
+    "placeholders": {
+      "meetingTitle": {
+        "type": "String"
+      }
+    }
+  },
+  "reminderAdded": "Reminder added",
+  "@reminderAdded": {
+    "description": "Success message when reminder is added"
+  },
+  "edit": "Edit",
+  "@edit": {
+    "description": "Edit action label"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button label"
+  },
+  "inDays": "In {days} days",
+  "@inDays": {
+    "description": "Time until reminder in days",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "inHours": "In {hours} hours",
+  "@inHours": {
+    "description": "Time until reminder in hours",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "inMinutes": "In {minutes} minutes",
+  "@inMinutes": {
+    "description": "Time until reminder in minutes",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
   }
 }
