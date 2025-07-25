@@ -883,11 +883,20 @@ class _AmbassadorUserDashboardState extends ConsumerState<AmbassadorUserDashboar
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: QrImageView(
-                    data: shareLink,
-                    version: QrVersion.auto,
-                    size: 200.0,
-                    foregroundColor: Colors.black,
+                  child: Container(
+                    width: 200.0,
+                    height: 200.0,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.black),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        'QR Code\n(Package Required)',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontSize: 16),
+                      ),
+                    ),
                   ),
                 ),
               ],
