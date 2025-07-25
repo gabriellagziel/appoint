@@ -2524,7 +2524,7 @@
   "@viewDetails": {
     "description": "Localization key for: View Details"
   },
-  "notifications1": "[FR] Notifications",
+  "notifications1": "Notifications",
   "@notifications1": {
     "description": "French translation for: Notifications"
   },

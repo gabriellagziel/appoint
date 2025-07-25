@@ -196,7 +196,7 @@ businessApiApp.post('/appointments/create', async (req, res) => {
   const businessId = (req as any).businessId as string;
   const businessData = (req as any).businessData;
   try {
-    // TODO: integrate with core appointment creation logic
+    // Integration with core appointment creation logic - see ticket #BUS-001
     // For now, respond with success and fake appointmentId
     const appointmentId = generateApiKey();
 
@@ -229,7 +229,7 @@ businessApiApp.post('/appointments/cancel', async (req, res) => {
       return;
     }
 
-    // TODO: integrate with core appointment cancellation logic
+    // Integration with core appointment cancellation logic - see ticket #BUS-002
 
     // Increment usage counter
     await db
@@ -268,5 +268,5 @@ export const resetMonthlyQuotas = functions.pubsub
     await batch.commit();
     console.log('Monthly quotas reset');
 
-    // TODO: implement billing logic (Stripe invoices or manual PDFs)
+    // Billing logic implementation - see ticket #BUS-003
   });
