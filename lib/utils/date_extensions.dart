@@ -29,13 +29,13 @@ extension DateExtensions on DateTime {
 
   /// Returns true if this date is tomorrow
   bool get isTomorrow {
-    tomorrow = DateTime.now().add(const Duration(days: 1));
+    final tomorrow = DateTime.now().add(const Duration(days: 1));
     return isSameDay(tomorrow);
   }
 
   /// Returns true if this date is yesterday
   bool get isYesterday {
-    yesterday = DateTime.now().subtract(const Duration(days: 1));
+    final yesterday = DateTime.now().subtract(const Duration(days: 1));
     return isSameDay(yesterday);
   }
 
@@ -71,8 +71,8 @@ extension DateExtensions on DateTime {
 
   /// Returns the number of days between this date and another date
   int daysDifference(DateTime other) {
-    thisDate = DateTime(year, month, day);
-    otherDate = DateTime(other.year, other.month, other.day);
+    final thisDate = DateTime(year, month, day);
+    final otherDate = DateTime(other.year, other.month, other.day);
     return thisDate.difference(otherDate).inDays.abs();
   }
 
@@ -84,7 +84,7 @@ extension DateExtensions on DateTime {
 
   /// Returns the age in years from this date to now
   int get age {
-    now = DateTime.now();
+    final now = DateTime.now();
     var age = now.year - year;
     if (now.month < month || (now.month == month && now.day < day)) {
       age--;
