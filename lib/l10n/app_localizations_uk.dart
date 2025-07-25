@@ -86,9 +86,6 @@ class AppLocalizationsUk extends AppLocalizations {
   String get revokeAccess => '[UK] Скасувати доступ';
 
   @override
-  String get saveGroupForRecognition => '[UK] Зберегти групу для розпізнавання';
-
-  @override
   String get playtimeLiveScheduled => '[UK] Жива сесія запланована';
 
   @override
@@ -261,9 +258,6 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get upcomingSessions => '[UK] Найближчі сесії';
-
-  @override
-  String get enterGroupName => '[UK] Введіть назву групи';
 
   @override
   String get confirm => 'Підтвердити';
@@ -499,9 +493,6 @@ class AppLocalizationsUk extends AppLocalizations {
   String get createGame => '[UK] [UK] Create Game';
 
   @override
-  String get groupNameOptional => '[UK] [UK] Group Name (Optional)';
-
-  @override
   String get playtimeNoSessions => '[UK] [UK] No playtime sessions found.';
 
   @override
@@ -512,9 +503,6 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get close => '[UK] [UK] Close';
-
-  @override
-  String get knownGroupDetected => '[UK] [UK] Known group detected';
 
   @override
   String get back => '[UK] [UK] Back';
@@ -2542,4 +2530,152 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get purchase_now_button => 'Purchase Now';
+
+  @override
+  String get welcomeAmbassador => 'Welcome, Ambassador!';
+
+  @override
+  String get activeStatus => 'Active';
+
+  @override
+  String get totalReferrals => 'Total Referrals';
+
+  @override
+  String get thisMonth => 'This Month';
+
+  @override
+  String get activeRewards => 'Active Rewards';
+
+  @override
+  String get nextTierProgress => 'Next Tier Progress';
+
+  @override
+  String get progressToPremium => 'Progress to Premium';
+
+  @override
+  String get remaining => 'remaining';
+
+  @override
+  String get monthlyGoal => 'Monthly Goal';
+
+  @override
+  String get onTrack => 'On Track';
+
+  @override
+  String get needsAttention => 'Needs Attention';
+
+  @override
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
+
+  @override
+  String get viewRewards => 'View Rewards';
+
+  @override
+  String get referralStatistics => 'Referral Statistics';
+
+  @override
+  String get activeReferrals => 'Active Referrals';
+
+  @override
+  String get conversionRate => 'Conversion Rate';
+
+  @override
+  String get recentReferrals => 'Recent Referrals';
+
+  @override
+  String get tierBenefits => 'Tier Benefits';
+
+  @override
+  String get yourReferralQRCode => 'Your Referral QR Code';
+
+  @override
+  String get yourReferralLink => 'Your Referral Link';
+
+  @override
+  String get shareYourLink => 'Share Your Link';
+
+  @override
+  String get shareViaMessage => 'Message';
+
+  @override
+  String get shareViaEmail => 'Email';
+
+  @override
+  String get shareMore => 'More Options';
+
+  @override
+  String get becomeAmbassador => 'Become an Ambassador';
+
+  @override
+  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
+
+  @override
+  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
+
+  @override
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+
+  @override
+  String get ambassadorPromotionTitle =>
+      '[UK] Congratulations! You\'re now an Ambassador! (Ukrainian)';
+
+  @override
+  String ambassadorPromotionBody(String tier) {
+    return '[UK] Welcome to the $tier tier! Start sharing your referral link to earn rewards. (Ukrainian)';
+  }
+
+  @override
+  String get tierUpgradeTitle => '[UK] Tier Upgrade! 🎉 (Ukrainian)';
+
+  @override
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
+    return '[UK] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Ukrainian)';
+  }
+
+  @override
+  String get monthlyReminderTitle => '[UK] Monthly Goal Reminder (Ukrainian)';
+
+  @override
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
+    return '[UK] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Ukrainian)';
+  }
+
+  @override
+  String get performanceWarningTitle =>
+      '[UK] Ambassador Performance Alert (Ukrainian)';
+
+  @override
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
+    return '[UK] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Ukrainian)';
+  }
+
+  @override
+  String get ambassadorDemotionTitle =>
+      '[UK] Ambassador Status Update (Ukrainian)';
+
+  @override
+  String ambassadorDemotionBody(String reason) {
+    return '[UK] Your ambassador status has been temporarily suspended due to: $reason. You can regain your status by meeting the requirements again. (Ukrainian)';
+  }
+
+  @override
+  String get referralSuccessTitle => '[UK] New Referral! 🎉 (Ukrainian)';
+
+  @override
+  String referralSuccessBody(String referredUserName, String totalReferrals) {
+    return '[UK] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Ukrainian)';
+  }
 }
