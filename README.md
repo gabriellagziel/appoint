@@ -1,6 +1,6 @@
 # AppOint
 
-A Flutter mobile application for appointment booking and management with microservices architecture.
+A comprehensive appointment booking and management platform with separate B2C mobile app and B2B web dashboard, featuring flexible pricing models and map integration.
 
 ## 🚀 Quick Start
 
@@ -210,6 +210,38 @@ This project uses a microservices architecture:
 - Docker builds must succeed (`docker-compose build`)
 - Code coverage is tracked via Codecov
 - PRs require all CI checks to pass before merge
+
+## 💰 Pricing Model
+
+### Personal App (B2C - Mobile)
+- **Free Trial**: 5 meetings with full features including maps
+- **Ad-Supported**: After 5 meetings, ads shown but no map access
+- **Premium**: €4/month via App Store/Google Play
+  - Up to 20 meetings per week
+  - Full map access
+  - Ad-free experience
+  - Premium support
+
+### Business Plans (B2B - Web Dashboard)
+- **Starter**: Free
+  - Unlimited meetings
+  - No map access
+  - Basic features
+- **Professional**: €15/month
+  - Unlimited meetings
+  - 200 map loads/month included
+  - Full branding and analytics
+  - Overage: €0.01 per extra map load
+- **Business Plus**: €25/month
+  - Everything in Professional
+  - 500 map loads/month included
+  - Advanced analytics and priority support
+  - Overage: €0.01 per extra map load
+
+### Special Cases
+- Children (minors): Always free, no map access unless parent upgrades
+- Business meeting participation: Map access charged to hosting business
+- API access: Per-call billing for enterprise customers
 
 ## 📄 License
 
