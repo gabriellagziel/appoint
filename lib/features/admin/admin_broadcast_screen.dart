@@ -472,7 +472,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return l10n.pleaseEnterLink;
+                    return 'Please enter a link';
                   }
                   return null;
                 },
@@ -500,7 +500,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
             if (_estimatedRecipients != 0) ...[
               const SizedBox(height: 16),
               Text(
-                '${l10n.estimatedRecipients}: $_estimatedRecipients',
+                'Estimated Recipients: $_estimatedRecipients',
                 style: Theme.of(context).textTheme.titleMedium,
               ),
             ],
@@ -518,7 +518,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         // Countries
         TextFormField(
           decoration: InputDecoration(
-            labelText: l10n.countries,
+                            labelText: 'Countries',
             border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
@@ -536,7 +536,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         // Cities
         TextFormField(
           decoration: InputDecoration(
-            labelText: l10n.cities,
+                            labelText: 'Cities',
             border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
@@ -554,7 +554,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         // Subscription Tiers
         TextFormField(
           decoration: InputDecoration(
-            labelText: l10n.subscriptionTiers,
+                            labelText: 'Subscription Tiers',
             border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
@@ -572,7 +572,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         // User Roles
         TextFormField(
           decoration: InputDecoration(
-            labelText: l10n.userRoles,
+                            labelText: 'User Roles',
             border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
