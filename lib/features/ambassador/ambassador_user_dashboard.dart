@@ -5,7 +5,7 @@ import 'package:qr_flutter/qr_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 import '../../models/ambassador_profile.dart';
 import '../../services/ambassador_automation_service.dart';
-import '../../l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 /// Beautiful, professional Ambassador Dashboard for users
 /// Features: progress tracking, share functionality, tier management, localized
@@ -885,7 +885,7 @@ class _AmbassadorUserDashboardState extends ConsumerState<AmbassadorUserDashboar
                   ),
                   child: QrImageView(
                     data: shareLink,
-                    version: QrVersions.auto,
+                    version: QrVersion.auto,
                     size: 200.0,
                     foregroundColor: Colors.black,
                   ),
