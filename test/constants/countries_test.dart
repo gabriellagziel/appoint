@@ -10,9 +10,9 @@ void main() {
 
   group('Countries', () {
     test('should contain expected countries', () {
-      expect(countries, contains('United States'));
-      expect(countries, contains('Canada'));
-      expect(countries, contains('United Kingdom'));
+      expect(countries.values, contains('United States'));
+      expect(countries.values, contains('United Kingdom'));
+      expect(countries['US'], equals('United States'));
     });
 
     test('valid code returns name', () {
