@@ -172,7 +172,7 @@ class BroadcastService {
       return snapshot.docs
           .map((doc) => UserProfile.fromJson({
                 'id': doc.id,
-                ...(doc.data()!),
+                ...(doc.data() as Map<String, dynamic>),
               }),)
           .toList();
     } catch (e) {
