@@ -81,7 +81,7 @@ class FamilyBackgroundService {
       final familyLinksSnapshot =
           await _firestore.collection('family_links').get();
 
-      for (doc in familyLinksSnapshot.docs) {
+      for (final doc in familyLinksSnapshot.docs) {
         final familyLink = FamilyLink.fromJson(doc.data());
 
         // Get child's profile to check age
@@ -124,7 +124,7 @@ class FamilyBackgroundService {
 
       final batch = _firestore.batch();
 
-      for (doc in permissionsSnapshot.docs) {
+      for (final doc in permissionsSnapshot.docs) {
         final permission = doc.data();
 
         // For adult children, reduce parental permissions to read-only for most categories
@@ -172,7 +172,7 @@ class FamilyBackgroundService {
 
       final batch = _firestore.batch();
 
-      for (doc in permissionsSnapshot.docs) {
+      for (final doc in permissionsSnapshot.docs) {
         final permission = doc.data();
 
         // For teenagers, add driving-related permissions and adjust existing ones
@@ -313,7 +313,7 @@ class FamilyBackgroundService {
       final familyLinksSnapshot =
           await _firestore.collection('family_links').get();
 
-      for (doc in familyLinksSnapshot.docs) {
+      for (final doc in familyLinksSnapshot.docs) {
         final familyLink = FamilyLink.fromJson(doc.data());
 
         // Check if parent and child users still exist
