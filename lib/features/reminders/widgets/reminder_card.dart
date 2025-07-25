@@ -92,9 +92,9 @@ class ReminderCard extends StatelessWidget {
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                           ),
-                          if (reminder.description.isNotEmpty)
+                          if (reminder.description?.isNotEmpty == true)
                             Text(
-                              reminder.description,
+                              reminder.description!,
                               style: theme.textTheme.bodySmall?.copyWith(
                                 color: theme.colorScheme.onSurfaceVariant,
                               ),
@@ -281,11 +281,11 @@ class ReminderCard extends StatelessWidget {
                 ],
 
                 // Tags
-                if (reminder.tags != null && reminder.tags!.isNotEmpty) ...[
+                if (reminder.tags.isNotEmpty) ...[
                   const SizedBox(height: 8),
                   Wrap(
                     spacing: 6,
-                    children: reminder.tags!.take(3).map((tag) => Chip(
+                    children: reminder.tags.take(3).map((tag) => Chip(
                       label: Text(
                         tag,
                         style: theme.textTheme.labelSmall,
