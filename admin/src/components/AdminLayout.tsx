@@ -31,7 +31,15 @@ export function AdminLayout({ children }: AdminLayoutProps) {
         <footer className="bg-gray-50 border-t border-gray-200 mt-auto">
           <div className="px-4 py-3 text-center">
             <p className="text-xs text-gray-500">
-              Powered by <span className="font-semibold text-gray-700">APP-OINT</span>
+              Powered by{" "}
+              <a 
+                href="https://app-oint.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-semibold text-blue-600 hover:text-blue-800 no-underline hover:underline"
+              >
+                APP-OINT
+              </a>
             </p>
           </div>
         </footer>
