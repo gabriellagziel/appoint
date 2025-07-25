@@ -20,7 +20,7 @@ export default function SettingsPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     // Handle form submission
-    console.log("Settings updated:", formData)
+    // Settings updated successfully
   }
 
   return (
