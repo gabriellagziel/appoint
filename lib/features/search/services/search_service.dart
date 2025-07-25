@@ -213,7 +213,7 @@ class SearchService {
         description: data['bio'] as String? ?? '',
         type: 'user',
         rating: 0.0, // Users don't have ratings
-        imageUrl: data['photoURL'] ?? '',
+        imageUrl: data['photoURL'] as String? ?? '',
         metadata: data,
       );
     }).toList();
