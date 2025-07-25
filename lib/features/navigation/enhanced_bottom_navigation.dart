@@ -33,6 +33,10 @@ class EnhancedBottomNavigation extends ConsumerWidget {
           label: 'Calendar',
         ),
         BottomNavigationBarItem(
+          icon: Icon(Icons.notifications_active),
+          label: 'Reminders',
+        ),
+        BottomNavigationBarItem(
           icon: Icon(Icons.chat),
           label: 'Messages',
         ),
@@ -56,9 +60,12 @@ class EnhancedBottomNavigation extends ConsumerWidget {
         Navigator.pushReplacementNamed(context, '/calendar');
         break;
       case 3:
-        Navigator.pushReplacementNamed(context, '/messages');
+        Navigator.pushReplacementNamed(context, '/reminders');
         break;
       case 4:
+        Navigator.pushReplacementNamed(context, '/messages');
+        break;
+      case 5:
         Navigator.pushReplacementNamed(context, '/profile');
         break;
     }
