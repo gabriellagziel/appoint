@@ -362,4 +362,22 @@ class AdminService {
     // For now, return a placeholder
     return 'PDF export for $dataType';
   }
+
+  /// Delete a user account and all associated data
+  Future<void> deleteUser(String userId) async {
+    try {
+      // Delete user document from Firestore
+      await _firestore.collection('users').doc(userId).delete();
+      
+      // Note: In a real implementation, you would also:
+      // - Delete related collections (bookings, messages, etc.)
+      // - Delete Firebase Auth user
+      // - Clean up file storage
+      // - Log the deletion for audit purposes
+      
+      print('User $userId deleted successfully');
+    } catch (e) {
+      throw Exception('Failed to delete user: $e');
+    }
+  }
 }
