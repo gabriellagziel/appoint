@@ -1,6 +1,7 @@
 import 'package:appoint/features/studio_business/models/business_profile.dart';
 import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
 import 'package:appoint/features/studio_business/services/business_profile_service.dart';
+import 'package:appoint/widgets/app_attribution.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -230,6 +231,10 @@ class BusinessHeaderWidget extends ConsumerWidget {
                 ],
               ),
             ],
+            
+            // Attribution - Required for all business-branded content
+            const SizedBox(height: 12),
+            const AppAttributionCompact(),
           ],
         ),
       ),
