@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:appoint/constants/app_branding.dart';
 import 'package:appoint/widgets/app_logo.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 /// Attribution widget that must appear on all business-branded screens
 /// Displays "Powered by App-Oint" as required by branding guidelines
@@ -27,36 +28,40 @@ class AppAttribution extends StatelessWidget {
     final logoSize = _getLogoSize();
     final fontSize = _getFontSize();
 
-    Widget content = Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        if (showLogo) ...[
-          AppLogo(size: logoSize, logoOnly: true),
-          SizedBox(width: _getSpacing()),
-        ],
-        Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Powered by',
-              style: TextStyle(
-                fontSize: fontSize * 0.8,
-                color: effectiveTextColor?.withOpacity(0.7),
-                fontWeight: FontWeight.w400,
-              ),
-            ),
-            Text(
-              'APP-OINT',
-              style: TextStyle(
-                fontSize: fontSize,
-                color: effectiveTextColor,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+    Widget content = InkWell(
+      onTap: () => _launchAppOintWebsite(),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          if (showLogo) ...[
+            AppLogo(size: logoSize, logoOnly: true),
+            SizedBox(width: _getSpacing()),
           ],
-        ),
-      ],
+          Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Powered by',
+                style: TextStyle(
+                  fontSize: fontSize * 0.8,
+                  color: effectiveTextColor?.withOpacity(0.7),
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              Text(
+                'APP-OINT',
+                style: TextStyle(
+                  fontSize: fontSize,
+                  color: const Color(0xFF1576D4), // App-Oint brand blue
+                  fontWeight: FontWeight.bold,
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
 
     if (backgroundColor != null) {
@@ -119,6 +124,19 @@ class AppAttribution extends StatelessWidget {
         return 8;
     }
   }
+
+  /// Launch App-Oint website when attribution is tapped
+  void _launchAppOintWebsite() async {
+    final Uri url = Uri.parse('https://app-oint.com');
+    try {
+      if (await canLaunchUrl(url)) {
+        await launchUrl(url, mode: LaunchMode.externalApplication);
+      }
+    } catch (e) {
+      // Silently handle launch errors
+      debugPrint('Could not launch app-oint.com: $e');
+    }
+  }
 }
 
 /// Compact horizontal attribution for tight spaces
@@ -134,21 +152,49 @@ class AppAttributionCompact extends StatelessWidget {
   Widget build(BuildContext context) {
     final effectiveTextColor = textColor ?? Colors.grey[600];
 
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        AppLogo(size: 12, logoOnly: true),
-        const SizedBox(width: 4),
-        Text(
-          'Powered by APP-OINT',
-          style: TextStyle(
-            fontSize: 10,
-            color: effectiveTextColor,
-            fontWeight: FontWeight.w500,
+    return InkWell(
+      onTap: () => _launchAppOintWebsite(),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          AppLogo(size: 12, logoOnly: true),
+          const SizedBox(width: 4),
+          RichText(
+            text: TextSpan(
+              style: TextStyle(
+                fontSize: 10,
+                color: effectiveTextColor,
+                fontWeight: FontWeight.w500,
+              ),
+              children: [
+                const TextSpan(text: 'Powered by '),
+                TextSpan(
+                  text: 'APP-OINT',
+                  style: TextStyle(
+                    color: const Color(0xFF1576D4),
+                    fontWeight: FontWeight.bold,
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
+              ],
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
+  }
+
+  /// Launch App-Oint website when attribution is tapped
+  void _launchAppOintWebsite() async {
+    final Uri url = Uri.parse('https://app-oint.com');
+    try {
+      if (await canLaunchUrl(url)) {
+        await launchUrl(url, mode: LaunchMode.externalApplication);
+      }
+    } catch (e) {
+      // Silently handle launch errors
+      debugPrint('Could not launch app-oint.com: $e');
+    }
   }
 }
 
