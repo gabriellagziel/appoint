@@ -42,7 +42,7 @@ class AccessibleText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
 
     return Semantics(
       label: semanticLabel ?? text,
@@ -137,7 +137,7 @@ class AccessibleFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
 
     return Semantics(
       label: label,
@@ -204,7 +204,7 @@ class AccessibleButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
 
     return Semantics(
       label: label,
@@ -254,7 +254,7 @@ class AccessibleCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
 
     return Semantics(
       label: semanticLabel,
