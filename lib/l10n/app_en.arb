@@ -1615,5 +1615,9 @@
   "yourReferralLink": "Your Referral Link",
   "@yourReferralLink": {
     "description": "Your referral link section title"
+  },
+  "progressToPremium": "Progress to Premium",
+  "@progressToPremium": {
+    "description": "Progress to premium tier label"
   }
 }
