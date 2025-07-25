@@ -2905,5 +2905,277 @@
         "type": "String"
       }
     }
+  },
+  "welcomeAmbassador": "Welcome Ambassador!",
+  "@welcomeAmbassador": {
+    "description": "Ambassador welcome message"
+  },
+  "activeStatus": "Active",
+  "@activeStatus": {
+    "description": "Active status label"
+  },
+  "totalReferrals": "Total Referrals",
+  "@totalReferrals": {
+    "description": "Total referrals label"
+  },
+  "thisMonth": "This Month",
+  "@thisMonth": {
+    "description": "This month label"
+  },
+  "activeRewards": "Active Rewards",
+  "@activeRewards": {
+    "description": "Active rewards label"
+  },
+  "nextTierProgress": "Next Tier Progress",
+  "@nextTierProgress": {
+    "description": "Next tier progress label"
+  },
+  "progressToPremium": "Progress to Premium",
+  "@progressToPremium": {
+    "description": "Progress to premium label"
+  },
+  "remaining": "Remaining",
+  "@remaining": {
+    "description": "Remaining label"
+  },
+  "monthlyGoal": "Monthly Goal",
+  "@monthlyGoal": {
+    "description": "Monthly goal label"
+  },
+  "onTrack": "On Track",
+  "@onTrack": {
+    "description": "On track status"
+  },
+  "needsAttention": "Needs Attention",
+  "@needsAttention": {
+    "description": "Needs attention status"
+  },
+  "monthlyReferralRequirement": "Monthly Referral Requirement",
+  "@monthlyReferralRequirement": {
+    "description": "Monthly referral requirement label"
+  },
+  "viewRewards": "View Rewards",
+  "@viewRewards": {
+    "description": "View rewards button"
+  },
+  "referralStatistics": "Referral Statistics",
+  "@referralStatistics": {
+    "description": "Referral statistics label"
+  },
+  "activeReferrals": "Active Referrals",
+  "@activeReferrals": {
+    "description": "Active referrals label"
+  },
+  "conversionRate": "Conversion Rate",
+  "@conversionRate": {
+    "description": "Conversion rate label"
+  },
+  "recentReferrals": "Recent Referrals",
+  "@recentReferrals": {
+    "description": "Recent referrals label"
+  },
+  "tierBenefits": "Tier Benefits",
+  "@tierBenefits": {
+    "description": "Tier benefits label"
+  },
+  "yourReferralQRCode": "Your Referral QR Code",
+  "@yourReferralQRCode": {
+    "description": "Referral QR code label"
+  },
+  "yourReferralLink": "Your Referral Link",
+  "@yourReferralLink": {
+    "description": "Referral link label"
+  },
+  "shareYourLink": "Share Your Link",
+  "@shareYourLink": {
+    "description": "Share link button"
+  },
+  "shareViaMessage": "Share via Message",
+  "@shareViaMessage": {
+    "description": "Share via message button"
+  },
+  "shareViaEmail": "Share via Email",
+  "@shareViaEmail": {
+    "description": "Share via email button"
+  },
+  "shareMore": "Share More",
+  "@shareMore": {
+    "description": "Share more button"
+  },
+  "becomeAmbassador": "Become Ambassador",
+  "@becomeAmbassador": {
+    "description": "Become ambassador button"
+  },
+  "ambassadorEligible": "Ambassador Eligible",
+  "@ambassadorEligible": {
+    "description": "Ambassador eligible status"
+  },
+  "ambassadorWelcomeTitle": "Welcome to the Ambassador Program!",
+  "@ambassadorWelcomeTitle": {
+    "description": "Ambassador welcome title"
+  },
+  "ambassadorWelcomeMessage": "You're now part of our exclusive ambassador community.",
+  "@ambassadorWelcomeMessage": {
+    "description": "Ambassador welcome message"
+  },
+  "formFields": "Form Fields",
+  "@formFields": {
+    "description": "Form fields label"
+  },
+  "addField": "Add Field",
+  "@addField": {
+    "description": "Add field button"
+  },
+  "noFormFields": "No form fields added yet",
+  "@noFormFields": {
+    "description": "No form fields message"
+  },
+  "addFormFieldsDescription": "Add fields to collect information from users",
+  "@addFormFieldsDescription": {
+    "description": "Add form fields description"
+  },
+  "formPreviewDescription": "Form Preview",
+  "@formPreviewDescription": {
+    "description": "Form preview description"
+  },
+  "required": "Required",
+  "@required": {
+    "description": "Required field label"
+  },
+  "textField": "Text Field",
+  "@textField": {
+    "description": "Text field type"
+  },
+  "textAreaField": "Text Area Field",
+  "@textAreaField": {
+    "description": "Text area field type"
+  },
+  "numberField": "Number Field",
+  "@numberField": {
+    "description": "Number field type"
+  },
+  "emailField": "Email Field",
+  "@emailField": {
+    "description": "Email field type"
+  },
+  "phoneField": "Phone Field",
+  "@phoneField": {
+    "description": "Phone field type"
+  },
+  "choiceField": "Choice Field",
+  "@choiceField": {
+    "description": "Choice field type"
+  },
+  "multiselectField": "Multi-select Field",
+  "@multiselectField": {
+    "description": "Multi-select field type"
+  },
+  "dateField": "Date Field",
+  "@dateField": {
+    "description": "Date field type"
+  },
+  "timeField": "Time Field",
+  "@timeField": {
+    "description": "Time field type"
+  },
+  "dateTimeField": "Date Time Field",
+  "@dateTimeField": {
+    "description": "Date time field type"
+  },
+  "booleanField": "Boolean Field",
+  "@booleanField": {
+    "description": "Boolean field type"
+  },
+  "ratingField": "Rating Field",
+  "@ratingField": {
+    "description": "Rating field type"
+  },
+  "deleteField": "Delete Field",
+  "@deleteField": {
+    "description": "Delete field button"
+  },
+  "deleteFieldConfirmation": "Are you sure you want to delete this field?",
+  "@deleteFieldConfirmation": {
+    "description": "Delete field confirmation message"
+  },
+  "fieldType": "Field Type",
+  "@fieldType": {
+    "description": "Field type label"
+  },
+  "fieldLabel": "Field Label",
+  "@fieldLabel": {
+    "description": "Field label input"
+  },
+  "fieldLabelRequired": "Field label is required",
+  "@fieldLabelRequired": {
+    "description": "Field label required error"
+  },
+  "optional": "Optional",
+  "@optional": {
+    "description": "Optional label"
+  },
+  "requiredField": "Required Field",
+  "@requiredField": {
+    "description": "Required field checkbox"
+  },
+  "options": "Options",
+  "@options": {
+    "description": "Options label"
+  },
+  "addOption": "Add Option",
+  "@addOption": {
+    "description": "Add option button"
+  },
+  "minValue": "Min Value",
+  "@minValue": {
+    "description": "Minimum value label"
+  },
+  "maxValue": "Max Value",
+  "@maxValue": {
+    "description": "Maximum value label"
+  },
+  "minLength": "Min Length",
+  "@minLength": {
+    "description": "Minimum length label"
+  },
+  "maxLength": "Max Length",
+  "@maxLength": {
+    "description": "Maximum length label"
+  },
+  "validationPattern": "Validation Pattern",
+  "@validationPattern": {
+    "description": "Validation pattern label"
+  },
+  "validationMessage": "Validation Message",
+  "@validationMessage": {
+    "description": "Validation message label"
+  },
+  "optionsRequired": "At least one option is required",
+  "@optionsRequired": {
+    "description": "Options required error"
+  },
+  "enterText": "Enter text",
+  "@enterText": {
+    "description": "Enter text placeholder"
+  },
+  "enterNumber": "Enter number",
+  "@enterNumber": {
+    "description": "Enter number placeholder"
+  },
+  "selectDate": "Select date",
+  "@selectDate": {
+    "description": "Select date placeholder"
+  },
+  "selectTime": "Select time",
+  "@selectTime": {
+    "description": "Select time placeholder"
+  },
+  "selectDateTime": "Select date and time",
+  "@selectDateTime": {
+    "description": "Select date and time placeholder"
+  },
+  "editField": "Edit Field",
+  "@editField": {
+    "description": "Edit field button"
   }
 }
