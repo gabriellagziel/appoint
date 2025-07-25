@@ -74,9 +74,8 @@ class UserProfileScreen extends ConsumerWidget {
         );
       }
     } catch (e) {
-        Navigator.of(context).pop();
-      }
-
+      Navigator.of(context).pop();
+      
       // Show error message
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -86,6 +85,7 @@ class UserProfileScreen extends ConsumerWidget {
           ),
         );
       }
+    }
     }
   }
 
