@@ -12,9 +12,9 @@ class AppBranding {
   static const String fullSlogan = '$slogan • $sloganSubtitle';
   
   // Logo Assets
-  static const String logoPath = 'assets/images/app_oint_logo.png';
-  static const String logoIconPath = 'assets/images/app_oint_icon.png';
-  static const String faviconPath = 'assets/images/favicon.png';
+  static const String logoPath = 'assets/images/app_oint_logo.svg';
+  static const String logoIconPath = 'assets/images/app_oint_logo.svg';
+  static const String faviconPath = 'web/favicon.png';
   
   // App Icons
   static const String appIconPath = 'assets/images/app_icon.png';
