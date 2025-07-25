@@ -85,7 +85,6 @@ class REDACTED_TOKEN
         setState(() => _isLoading = false);
       }
     }
-  }
 
   Future<void> _subscribeToBusinessPlus() async {
     setState(() => _isLoading = true);
@@ -114,7 +113,6 @@ class REDACTED_TOKEN
         setState(() => _isLoading = false);
       }
     }
-  }
 
   Future<void> _applyPromoCode() async {
     final code = _promoCodeController.text.trim();
@@ -155,7 +153,6 @@ class REDACTED_TOKEN
         setState(() => _isApplyingPromo = false);
       }
     }
-  }
 
   Future<void> _openCustomerPortal() async {
     try {
@@ -178,7 +175,6 @@ class REDACTED_TOKEN
         );
       }
     }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -777,4 +773,3 @@ class REDACTED_TOKEN
   }
 
   String _formatDate(DateTime date) => '${date.day}/${date.month}/${date.year}';
-}
