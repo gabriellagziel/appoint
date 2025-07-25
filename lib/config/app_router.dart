@@ -540,7 +540,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
         mode: _travelMode,
       );
       if (eta == null) return;
-      final start = DateTime.parse(meetingData?['start'] ?? '');
+      final start = DateTime.parse(meetingData?['start'] as String? ?? '');
       final minutesUntilStart = start.difference(DateTime.now()).inMinutes;
       final delta = eta - minutesUntilStart;
       setState(() {
