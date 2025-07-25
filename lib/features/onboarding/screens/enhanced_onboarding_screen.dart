@@ -176,6 +176,10 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
     );
   }
 
+  Widget _buildOnboardingPage(Widget page) {
+    return page;
+  }
+
   Widget _buildProgressIndicator(int currentStep) {
     return Container(
       padding: const EdgeInsets.all(16),
