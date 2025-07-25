@@ -235,4 +235,21 @@ class PlaytimeService {
       throw Exception('Failed to send message: $e');
     }
   }
+
+  /// Get current ticket count (stub implementation)
+  Future<int> getCurrentTicketCount() async {
+    // TODO: Implement current ticket count retrieval
+    return 0;
+  }
+
+  /// Check if user can earn more tickets today (stub implementation)
+  Future<bool> canEarnMoreToday() async {
+    // TODO: Implement daily ticket earning limit check
+    return true;
+  }
+
+  /// Grant ticket to user (stub implementation)
+  Future<void> grantTicket({required String reason}) async {
+    // TODO: Implement ticket granting logic
+  }
 }
