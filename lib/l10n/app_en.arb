@@ -875,5 +875,625 @@
   "optionsRequired": "Options are required for this field type",
   "@optionsRequired": {
     "description": "Options required message"
+  },
+  "adminMetrics": "Admin metrics",
+  "@adminMetrics": {
+    "description": "Translation for adminMetrics"
+  },
+  "all": "All",
+  "@all": {
+    "description": "Translation for all"
+  },
+  "analytics": "Analytics",
+  "@analytics": {
+    "description": "Translation for analytics"
+  },
+  "analyticsDashboard": "Analytics dashboard",
+  "@analyticsDashboard": {
+    "description": "Translation for analyticsDashboard"
+  },
+  "apply": "Apply",
+  "@apply": {
+    "description": "Translation for apply"
+  },
+  "authErrorAccountExistsWithDifferentCredential": "Authentication error: account exists with different credential",
+  "@authErrorAccountExistsWithDifferentCredential": {
+    "description": "Translation for authErrorAccountExistsWithDifferentCredential"
+  },
+  "authErrorAppNotAuthorized": "Authentication error: app not authorized",
+  "@authErrorAppNotAuthorized": {
+    "description": "Translation for authErrorAppNotAuthorized"
+  },
+  "authErrorCodeExpired": "Authentication error: code expired",
+  "@authErrorCodeExpired": {
+    "description": "Translation for authErrorCodeExpired"
+  },
+  "authErrorCredentialAlreadyInUse": "Authentication error: credential already in use",
+  "@authErrorCredentialAlreadyInUse": {
+    "description": "Translation for authErrorCredentialAlreadyInUse"
+  },
+  "authErrorEmailAlreadyInUse": "Authentication error: email already in use",
+  "@authErrorEmailAlreadyInUse": {
+    "description": "Translation for authErrorEmailAlreadyInUse"
+  },
+  "authErrorEmailChangeNeedsVerification": "Authentication error: email change needs verification",
+  "@authErrorEmailChangeNeedsVerification": {
+    "description": "Translation for authErrorEmailChangeNeedsVerification"
+  },
+  "authErrorIdTokenExpired": "Authentication error: id token expired",
+  "@authErrorIdTokenExpired": {
+    "description": "Translation for authErrorIdTokenExpired"
+  },
+  "authErrorIdTokenRevoked": "Authentication error: id token revoked",
+  "@authErrorIdTokenRevoked": {
+    "description": "Translation for authErrorIdTokenRevoked"
+  },
+  "authErrorInternalError": "Authentication error: internal error",
+  "@authErrorInternalError": {
+    "description": "Translation for authErrorInternalError"
+  },
+  "authErrorInvalidArgument": "Authentication error: invalid argument",
+  "@authErrorInvalidArgument": {
+    "description": "Translation for authErrorInvalidArgument"
+  },
+  "authErrorInvalidClaims": "Authentication error: invalid claims",
+  "@authErrorInvalidClaims": {
+    "description": "Translation for authErrorInvalidClaims"
+  },
+  "authErrorInvalidContinueUri": "Authentication error: invalid continue uri",
+  "@authErrorInvalidContinueUri": {
+    "description": "Translation for authErrorInvalidContinueUri"
+  },
+  "authErrorInvalidCreationTime": "Authentication error: invalid creation time",
+  "@authErrorInvalidCreationTime": {
+    "description": "Translation for authErrorInvalidCreationTime"
+  },
+  "authErrorInvalidCredential": "Authentication error: invalid credential",
+  "@authErrorInvalidCredential": {
+    "description": "Translation for authErrorInvalidCredential"
+  },
+  "authErrorInvalidDisabledField": "Authentication error: invalid disabled field",
+  "@authErrorInvalidDisabledField": {
+    "description": "Translation for authErrorInvalidDisabledField"
+  },
+  "authErrorInvalidDisplayName": "Authentication error: invalid display name",
+  "@authErrorInvalidDisplayName": {
+    "description": "Translation for authErrorInvalidDisplayName"
+  },
+  "authErrorInvalidDynamicLinkDomain": "Authentication error: invalid dynamic link domain",
+  "@authErrorInvalidDynamicLinkDomain": {
+    "description": "Translation for authErrorInvalidDynamicLinkDomain"
+  },
+  "authErrorInvalidEmail": "Authentication error: invalid email",
+  "@authErrorInvalidEmail": {
+    "description": "Translation for authErrorInvalidEmail"
+  },
+  "authErrorInvalidEmailVerified": "Authentication error: invalid email verified",
+  "@authErrorInvalidEmailVerified": {
+    "description": "Translation for authErrorInvalidEmailVerified"
+  },
+  "authErrorInvalidHashAlgorithm": "Authentication error: invalid hash algorithm",
+  "@authErrorInvalidHashAlgorithm": {
+    "description": "Translation for authErrorInvalidHashAlgorithm"
+  },
+  "authErrorInvalidHashBlockSize": "Authentication error: invalid hash block size",
+  "@authErrorInvalidHashBlockSize": {
+    "description": "Translation for authErrorInvalidHashBlockSize"
+  },
+  "authErrorInvalidHashDerivedKeyLength": "Authentication error: invalid hash derived key length",
+  "@authErrorInvalidHashDerivedKeyLength": {
+    "description": "Translation for authErrorInvalidHashDerivedKeyLength"
+  },
+  "authErrorInvalidHashKey": "Authentication error: invalid hash key",
+  "@authErrorInvalidHashKey": {
+    "description": "Translation for authErrorInvalidHashKey"
+  },
+  "authErrorInvalidHashMemoryCost": "Authentication error: invalid hash memory cost",
+  "@authErrorInvalidHashMemoryCost": {
+    "description": "Translation for authErrorInvalidHashMemoryCost"
+  },
+  "authErrorInvalidHashParallelization": "Authentication error: invalid hash parallelization",
+  "@authErrorInvalidHashParallelization": {
+    "description": "Translation for authErrorInvalidHashParallelization"
+  },
+  "authErrorInvalidHashRounds": "Authentication error: invalid hash rounds",
+  "@authErrorInvalidHashRounds": {
+    "description": "Translation for authErrorInvalidHashRounds"
+  },
+  "authErrorInvalidHashSaltSeparator": "Authentication error: invalid hash salt separator",
+  "@authErrorInvalidHashSaltSeparator": {
+    "description": "Translation for authErrorInvalidHashSaltSeparator"
+  },
+  "authErrorInvalidIdToken": "Authentication error: invalid id token",
+  "@authErrorInvalidIdToken": {
+    "description": "Translation for authErrorInvalidIdToken"
+  },
+  "authErrorInvalidLastSignInTime": "Authentication error: invalid last sign in time",
+  "@authErrorInvalidLastSignInTime": {
+    "description": "Translation for authErrorInvalidLastSignInTime"
+  },
+  "authErrorInvalidMultiFactorSession": "Authentication error: invalid multi factor session",
+  "@authErrorInvalidMultiFactorSession": {
+    "description": "Translation for authErrorInvalidMultiFactorSession"
+  },
+  "authErrorInvalidPageToken": "Authentication error: invalid page token",
+  "@authErrorInvalidPageToken": {
+    "description": "Translation for authErrorInvalidPageToken"
+  },
+  "authErrorInvalidPassword": "Authentication error: invalid password",
+  "@authErrorInvalidPassword": {
+    "description": "Translation for authErrorInvalidPassword"
+  },
+  "authErrorInvalidPhoneNumber": "Authentication error: invalid phone number",
+  "@authErrorInvalidPhoneNumber": {
+    "description": "Translation for authErrorInvalidPhoneNumber"
+  },
+  "authErrorInvalidProviderData": "Authentication error: invalid provider data",
+  "@authErrorInvalidProviderData": {
+    "description": "Translation for authErrorInvalidProviderData"
+  },
+  "authErrorInvalidProviderId": "Authentication error: invalid provider id",
+  "@authErrorInvalidProviderId": {
+    "description": "Translation for authErrorInvalidProviderId"
+  },
+  "authErrorInvalidSessionCookieDuration": "Authentication error: invalid session cookie duration",
+  "@authErrorInvalidSessionCookieDuration": {
+    "description": "Translation for authErrorInvalidSessionCookieDuration"
+  },
+  "authErrorInvalidUid": "Authentication error: invalid uid",
+  "@authErrorInvalidUid": {
+    "description": "Translation for authErrorInvalidUid"
+  },
+  "authErrorInvalidUserImport": "Authentication error: invalid user import",
+  "@authErrorInvalidUserImport": {
+    "description": "Translation for authErrorInvalidUserImport"
+  },
+  "authErrorInvalidVerificationCode": "Authentication error: invalid verification code",
+  "@authErrorInvalidVerificationCode": {
+    "description": "Translation for authErrorInvalidVerificationCode"
+  },
+  "authErrorInvalidVerificationId": "Authentication error: invalid verification id",
+  "@authErrorInvalidVerificationId": {
+    "description": "Translation for authErrorInvalidVerificationId"
+  },
+  "authErrorMaximumSecondFactorCountExceeded": "Authentication error: maximum second factor count exceeded",
+  "@authErrorMaximumSecondFactorCountExceeded": {
+    "description": "Translation for authErrorMaximumSecondFactorCountExceeded"
+  },
+  "authErrorMaximumUserCountExceeded": "Authentication error: maximum user count exceeded",
+  "@authErrorMaximumUserCountExceeded": {
+    "description": "Translation for authErrorMaximumUserCountExceeded"
+  },
+  "authErrorMissingAndroidPkgName": "Authentication error: missing android pkg name",
+  "@authErrorMissingAndroidPkgName": {
+    "description": "Translation for authErrorMissingAndroidPkgName"
+  },
+  "authErrorMissingContinueUri": "Authentication error: missing continue uri",
+  "@authErrorMissingContinueUri": {
+    "description": "Translation for authErrorMissingContinueUri"
+  },
+  "authErrorMissingHashAlgorithm": "Authentication error: missing hash algorithm",
+  "@authErrorMissingHashAlgorithm": {
+    "description": "Translation for authErrorMissingHashAlgorithm"
+  },
+  "authErrorMissingIosBundleId": "Authentication error: missing ios bundle id",
+  "@authErrorMissingIosBundleId": {
+    "description": "Translation for authErrorMissingIosBundleId"
+  },
+  "authErrorMissingMultiFactorSession": "Authentication error: missing multi factor session",
+  "@authErrorMissingMultiFactorSession": {
+    "description": "Translation for authErrorMissingMultiFactorSession"
+  },
+  "authErrorMissingOauthClientSecret": "Authentication error: missing oauth client secret",
+  "@authErrorMissingOauthClientSecret": {
+    "description": "Translation for authErrorMissingOauthClientSecret"
+  },
+  "authErrorMissingPhoneNumber": "Authentication error: missing phone number",
+  "@authErrorMissingPhoneNumber": {
+    "description": "Translation for authErrorMissingPhoneNumber"
+  },
+  "authErrorMissingUid": "Authentication error: missing uid",
+  "@authErrorMissingUid": {
+    "description": "Translation for authErrorMissingUid"
+  },
+  "authErrorMissingVerificationCode": "Authentication error: missing verification code",
+  "@authErrorMissingVerificationCode": {
+    "description": "Translation for authErrorMissingVerificationCode"
+  },
+  "authErrorMissingVerificationId": "Authentication error: missing verification id",
+  "@authErrorMissingVerificationId": {
+    "description": "Translation for authErrorMissingVerificationId"
+  },
+  "authErrorMultiFactorAuthRequired": "Authentication error: multi factor auth required",
+  "@authErrorMultiFactorAuthRequired": {
+    "description": "Translation for authErrorMultiFactorAuthRequired"
+  },
+  "authErrorMultiFactorInfoNotFound": "Authentication error: multi factor info not found",
+  "@authErrorMultiFactorInfoNotFound": {
+    "description": "Translation for authErrorMultiFactorInfoNotFound"
+  },
+  "authErrorNetworkRequestFailed": "Authentication error: network request failed",
+  "@authErrorNetworkRequestFailed": {
+    "description": "Translation for authErrorNetworkRequestFailed"
+  },
+  "authErrorOperationNotAllowed": "Authentication error: operation not allowed",
+  "@authErrorOperationNotAllowed": {
+    "description": "Translation for authErrorOperationNotAllowed"
+  },
+  "authErrorPhoneNumberAlreadyExists": "Authentication error: phone number already exists",
+  "@authErrorPhoneNumberAlreadyExists": {
+    "description": "Translation for authErrorPhoneNumberAlreadyExists"
+  },
+  "authErrorProjectNotFound": "Authentication error: project not found",
+  "@authErrorProjectNotFound": {
+    "description": "Translation for authErrorProjectNotFound"
+  },
+  "authErrorQuotaExceeded": "Authentication error: quota exceeded",
+  "@authErrorQuotaExceeded": {
+    "description": "Translation for authErrorQuotaExceeded"
+  },
+  "authErrorRequiresRecentLogin": "Authentication error: requires recent login",
+  "@authErrorRequiresRecentLogin": {
+    "description": "Translation for authErrorRequiresRecentLogin"
+  },
+  "authErrorReservedClaims": "Authentication error: reserved claims",
+  "@authErrorReservedClaims": {
+    "description": "Translation for authErrorReservedClaims"
+  },
+  "authErrorSecondFactorAlreadyInUse": "Authentication error: second factor already in use",
+  "@authErrorSecondFactorAlreadyInUse": {
+    "description": "Translation for authErrorSecondFactorAlreadyInUse"
+  },
+  "authErrorSessionCookieExpired": "Authentication error: session cookie expired",
+  "@authErrorSessionCookieExpired": {
+    "description": "Translation for authErrorSessionCookieExpired"
+  },
+  "authErrorSessionCookieRevoked": "Authentication error: session cookie revoked",
+  "@authErrorSessionCookieRevoked": {
+    "description": "Translation for authErrorSessionCookieRevoked"
+  },
+  "authErrorSessionExpired": "Authentication error: session expired",
+  "@authErrorSessionExpired": {
+    "description": "Translation for authErrorSessionExpired"
+  },
+  "authErrorTooManyRequests": "Authentication error: too many requests",
+  "@authErrorTooManyRequests": {
+    "description": "Translation for authErrorTooManyRequests"
+  },
+  "authErrorUidAlreadyExists": "Authentication error: uid already exists",
+  "@authErrorUidAlreadyExists": {
+    "description": "Translation for authErrorUidAlreadyExists"
+  },
+  "authErrorUnauthorizedContinueUri": "Authentication error: unauthorized continue uri",
+  "@authErrorUnauthorizedContinueUri": {
+    "description": "Translation for authErrorUnauthorizedContinueUri"
+  },
+  "authErrorUnknown": "Authentication error: unknown",
+  "@authErrorUnknown": {
+    "description": "Translation for authErrorUnknown"
+  },
+  "authErrorUnsupportedFirstFactor": "Authentication error: unsupported first factor",
+  "@authErrorUnsupportedFirstFactor": {
+    "description": "Translation for authErrorUnsupportedFirstFactor"
+  },
+  "authErrorUserDisabled": "Authentication error: user disabled",
+  "@authErrorUserDisabled": {
+    "description": "Translation for authErrorUserDisabled"
+  },
+  "authErrorUserNotFound": "Authentication error: user not found",
+  "@authErrorUserNotFound": {
+    "description": "Translation for authErrorUserNotFound"
+  },
+  "authErrorWeakPassword": "Authentication error: weak password",
+  "@authErrorWeakPassword": {
+    "description": "Translation for authErrorWeakPassword"
+  },
+  "authErrorWrongPassword": "Authentication error: wrong password",
+  "@authErrorWrongPassword": {
+    "description": "Translation for authErrorWrongPassword"
+  },
+  "average": "Average",
+  "@average": {
+    "description": "Translation for average"
+  },
+  "bookings": "Bookings",
+  "@bookings": {
+    "description": "Translation for bookings"
+  },
+  "breakdown": "Breakdown",
+  "@breakdown": {
+    "description": "Translation for breakdown"
+  },
+  "broadcasts": "Broadcasts",
+  "@broadcasts": {
+    "description": "Translation for broadcasts"
+  },
+  "byCountry": "By country",
+  "@byCountry": {
+    "description": "Translation for byCountry"
+  },
+  "byType": "By type",
+  "@byType": {
+    "description": "Translation for byType"
+  },
+  "cities": "Cities",
+  "@cities": {
+    "description": "Translation for cities"
+  },
+  "clickRate": "Click rate",
+  "@clickRate": {
+    "description": "Translation for clickRate"
+  },
+  "confirm_appointment_button": "Confirm appointment button",
+  "@confirm_appointment_button": {
+    "description": "Translation for confirm_appointment_button"
+  },
+  "continue1": "Continue1",
+  "@continue1": {
+    "description": "Translation for continue1"
+  },
+  "countries": "Countries",
+  "@countries": {
+    "description": "Translation for countries"
+  },
+  "country": "Country",
+  "@country": {
+    "description": "Translation for country"
+  },
+  "customRange": "Custom range",
+  "@customRange": {
+    "description": "Translation for customRange"
+  },
+  "dailyLimitReached": "Daily limit reached",
+  "@dailyLimitReached": {
+    "description": "Translation for dailyLimitReached"
+  },
+  "dailyProgress": "Daily progress",
+  "@dailyProgress": {
+    "description": "Translation for dailyProgress"
+  },
+  "endDate": "End date",
+  "@endDate": {
+    "description": "Translation for endDate"
+  },
+  "engagementRate": "Engagement rate",
+  "@engagementRate": {
+    "description": "Translation for engagementRate"
+  },
+  "errorLoadingData": "Error loading data",
+  "@errorLoadingData": {
+    "description": "Translation for errorLoadingData"
+  },
+  "errorOccurred": "Error occurred",
+  "@errorOccurred": {
+    "description": "Translation for errorOccurred"
+  },
+  "estimatedRecipients": "Estimated recipients",
+  "@estimatedRecipients": {
+    "description": "Translation for estimatedRecipients"
+  },
+  "export": "Export",
+  "@export": {
+    "description": "Translation for export"
+  },
+  "exportComplete": "Export complete",
+  "@exportComplete": {
+    "description": "Translation for exportComplete"
+  },
+  "exportData": "Export data",
+  "@exportData": {
+    "description": "Translation for exportData"
+  },
+  "exportDataDescription": "Export data description",
+  "@exportDataDescription": {
+    "description": "Translation for exportDataDescription"
+  },
+  "exportFailed": "Export failed",
+  "@exportFailed": {
+    "description": "Translation for exportFailed"
+  },
+  "externalLink": "External link",
+  "@externalLink": {
+    "description": "Translation for externalLink"
+  },
+  "failed": "Failed",
+  "@failed": {
+    "description": "Translation for failed"
+  },
+  "filters": "Filters",
+  "@filters": {
+    "description": "Translation for filters"
+  },
+  "formAnalytics": "Form analytics",
+  "@formAnalytics": {
+    "description": "Translation for formAnalytics"
+  },
+  "getStarted": "Get started",
+  "@getStarted": {
+    "description": "Translation for getStarted"
+  },
+  "imageSelected": "Image selected",
+  "@imageSelected": {
+    "description": "Translation for imageSelected"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Translation for language"
+  },
+  "last30Days": "Last30 days",
+  "@last30Days": {
+    "description": "Translation for last30Days"
+  },
+  "last7Days": "Last7 days",
+  "@last7Days": {
+    "description": "Translation for last7Days"
+  },
+  "linkAccounts": "Link accounts",
+  "@linkAccounts": {
+    "description": "Translation for linkAccounts"
+  },
+  "messageType": "Message type",
+  "@messageType": {
+    "description": "Translation for messageType"
+  },
+  "mostCommon": "Most common",
+  "@mostCommon": {
+    "description": "Translation for mostCommon"
+  },
+  "noBroadcastsFound": "No broadcasts found",
+  "@noBroadcastsFound": {
+    "description": "Translation for noBroadcastsFound"
+  },
+  "noDataAvailable": "No data available",
+  "@noDataAvailable": {
+    "description": "Translation for noDataAvailable"
+  },
+  "noFormBroadcasts": "No form broadcasts",
+  "@noFormBroadcasts": {
+    "description": "Translation for noFormBroadcasts"
+  },
+  "noFormData": "No form data",
+  "@noFormData": {
+    "description": "Translation for noFormData"
+  },
+  "openRate": "Open rate",
+  "@openRate": {
+    "description": "Translation for openRate"
+  },
+  "option": "Option",
+  "@option": {
+    "description": "Translation for option"
+  },
+  "overview": "Overview",
+  "@overview": {
+    "description": "Translation for overview"
+  },
+  "partialSent": "Partial sent",
+  "@partialSent": {
+    "description": "Translation for partialSent"
+  },
+  "pending": "Pending",
+  "@pending": {
+    "description": "Translation for pending"
+  },
+  "playNow": "Play now",
+  "@playNow": {
+    "description": "Translation for playNow"
+  },
+  "playtime": "Playtime",
+  "@playtime": {
+    "description": "Translation for playtime"
+  },
+  "pleaseEnterContent": "Please enter content",
+  "@pleaseEnterContent": {
+    "description": "Translation for pleaseEnterContent"
+  },
+  "pleaseEnterLink": "Please enter link",
+  "@pleaseEnterLink": {
+    "description": "Translation for pleaseEnterLink"
+  },
+  "pleaseEnterTitle": "Please enter title",
+  "@pleaseEnterTitle": {
+    "description": "Translation for pleaseEnterTitle"
+  },
+  "responseRate": "Response rate",
+  "@responseRate": {
+    "description": "Translation for responseRate"
+  },
+  "responses": "Responses",
+  "@responses": {
+    "description": "Translation for responses"
+  },
+  "revenue": "Revenue",
+  "@revenue": {
+    "description": "Translation for revenue"
+  },
+  "sending": "Sending",
+  "@sending": {
+    "description": "Translation for sending"
+  },
+  "sent": "Sent",
+  "@sent": {
+    "description": "Translation for sent"
+  },
+  "signInWithExistingMethod": "Sign in with existing method",
+  "@signInWithExistingMethod": {
+    "description": "Translation for signInWithExistingMethod"
+  },
+  "skip": "Skip",
+  "@skip": {
+    "description": "Translation for skip"
+  },
+  "socialAccountConflictTitle": "Social account conflict title",
+  "@socialAccountConflictTitle": {
+    "description": "Translation for socialAccountConflictTitle"
+  },
+  "startDate": "Start date",
+  "@startDate": {
+    "description": "Translation for startDate"
+  },
+  "subscriptionTiers": "Subscription tiers",
+  "@subscriptionTiers": {
+    "description": "Translation for subscriptionTiers"
+  },
+  "ticketEarned": "Ticket earned",
+  "@ticketEarned": {
+    "description": "Translation for ticketEarned"
+  },
+  "tickets": "Tickets",
+  "@tickets": {
+    "description": "Translation for tickets"
+  },
+  "ticketsEarned": "Tickets earned",
+  "@ticketsEarned": {
+    "description": "Translation for ticketsEarned"
+  },
+  "timeRange": "Time range",
+  "@timeRange": {
+    "description": "Translation for timeRange"
+  },
+  "title": "Title",
+  "@title": {
+    "description": "Translation for title"
+  },
+  "today": "Today",
+  "@today": {
+    "description": "Translation for today"
+  },
+  "totalBroadcasts": "Total broadcasts",
+  "@totalBroadcasts": {
+    "description": "Translation for totalBroadcasts"
+  },
+  "totalRecipients": "Total recipients",
+  "@totalRecipients": {
+    "description": "Translation for totalRecipients"
+  },
+  "totalResponses": "Total responses",
+  "@totalResponses": {
+    "description": "Translation for totalResponses"
+  },
+  "upgrade_button": "Upgrade button",
+  "@upgrade_button": {
+    "description": "Translation for upgrade_button"
+  },
+  "upgrade_prompt_description": "Upgrade prompt description",
+  "@upgrade_prompt_description": {
+    "description": "Translation for upgrade_prompt_description"
+  },
+  "userRoles": "User roles",
+  "@userRoles": {
+    "description": "Translation for userRoles"
+  },
+  "users": "Users",
+  "@users": {
+    "description": "Translation for users"
+  },
+  "videoSelected": "Video selected",
+  "@videoSelected": {
+    "description": "Translation for videoSelected"
+  },
+  "viewFormAnalytics": "View form analytics",
+  "@viewFormAnalytics": {
+    "description": "Translation for viewFormAnalytics"
   }
 }
