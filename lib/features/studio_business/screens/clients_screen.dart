@@ -327,4 +327,3 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
       }
     }
   }
-}
