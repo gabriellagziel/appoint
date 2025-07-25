@@ -553,7 +553,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(meetingData?['title'] ?? 'Meeting Details'),
+        title: Text(meetingData?['title'] as String? ?? 'Meeting Details'),
         actions: [
           if (meetingData != null)
             PopupMenuButton(
@@ -594,12 +594,12 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
               onSelected: (value) {
                 switch (value) {
                   case 'join':
-                    _joinMeeting(meetingData!['link']);
+                    _joinMeeting(meetingData!['link'] as String?);
                     break;
                   case 'directions':
                     _openDirections(
-                      meetingData!['latitude']?.toDouble(),
-                      meetingData!['longitude']?.toDouble(),
+                      (meetingData!['latitude'] as double?)?.toDouble(),
+                      (meetingData!['longitude'] as double?)?.toDouble(),
                     );
                     break;
                   case 'share':
