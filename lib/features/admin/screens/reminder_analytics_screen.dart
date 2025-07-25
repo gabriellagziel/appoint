@@ -35,22 +35,22 @@ final adminReminderStatsProvider = FutureProvider<AdminReminderStats>((ref) asyn
     },
     topUsers: [
       TopReminderUser(
-        userId: 'user1',
-        email: 'power.user@example.com',
+        userId: 'mock_user_1',
+        email: 'demo.user.1@mock.data',
         reminderCount: 127,
         completionRate: 0.89,
         planType: 'business_plus',
       ),
       TopReminderUser(
-        userId: 'user2',
-        email: 'organized@example.com',
+        userId: 'mock_user_2',
+        email: 'demo.user.2@mock.data',
         reminderCount: 98,
         completionRate: 0.92,
         planType: 'professional',
       ),
       TopReminderUser(
         userId: 'user3',
-        email: 'busy.bee@example.com',
+        email: 'demo.user.3@mock.data',
         reminderCount: 85,
         completionRate: 0.76,
         planType: 'professional',
