@@ -244,7 +244,7 @@ export const autoAssignAmbassadors = functions.https.onRequest(async (req, res) 
 
 export const getQuotaStats = functions.https.onRequest(async (req, res) => {
   try {
-    const stats = {};
+    const stats: Record<string, any> = {};
     
     for (const [key, quota] of Object.entries(ambassadorQuotas)) {
       const parts = key.split('_');
@@ -302,7 +302,7 @@ export const scheduledAutoAssign = functions.pubsub.schedule('every 1 hours').on
 
 export const dailyQuotaReport = functions.pubsub.schedule('every 24 hours').onRun(async (context) => {
   // Generate daily report
-  const reportData = {};
+  const reportData: Record<string, any> = {};
   
   for (const [key, quota] of Object.entries(ambassadorQuotas)) {
     const parts = key.split('_');
