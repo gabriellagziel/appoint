@@ -563,4 +563,3 @@ class _PlaytimeVirtualScreenState extends ConsumerState<PlaytimeVirtualScreen> {
       }
     }
   }
-}
