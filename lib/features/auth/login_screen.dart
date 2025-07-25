@@ -1,4 +1,6 @@
 import 'package:appoint/providers/auth_provider.dart';
+import 'package:appoint/providers/notification_provider.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/widgets/app_logo.dart';
@@ -52,17 +54,22 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                           _passwordController.text,
                         );
                     if (!mounted) return;
-                    // TODO(username): Implement notification token saving
-                    // uid = ref.read(authProvider).currentUser?.uid;
-                    // if (uid != null) {
-                    //   ref
-                    //       .read(notificationServiceProvider)
-                    //       .saveTokenForUser(uid);
-                    // }
-                    // TODO(username): Implement auth state refresh
-                    // if (mounted) {
-                    //   ref.refresh(authStateProvider);
-                    // }
+                    
+                    // Save notification token for user
+                    final uid = ref.read(authServiceProvider).currentUser?.uid;
+                    if (uid != null) {
+                      try {
+                        await ref.read(notificationServiceProvider).saveTokenForUser(uid);
+                      } catch (e) {
+                        // Non-critical error, log but don't block login
+                        debugPrint('Failed to save notification token: $e');
+                      }
+                    }
+                    
+                    // Refresh auth state to update UI
+                    if (mounted) {
+                      ref.refresh(authStateProvider);
+                    }
                   } catch (e) {
                     if (!mounted) return;
                     // ignore: use_build_context_synchronously
