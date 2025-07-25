@@ -25,7 +25,7 @@ class BusinessSubscriptionService {
   FirebaseAuth get auth => _auth;
   FirebaseFunctions get functions => _functions;
 
-  // Subscribe to Starter plan (€5.00)
+  // Subscribe to Starter plan (Free)
   Future<void> subscribeStarter() async {
     await _subscribeToPlan(SubscriptionPlan.starter);
   }
