@@ -89,9 +89,19 @@ class ReminderService {
     bool notificationsEnabled = true,
     List<ReminderNotificationMethod>? notificationMethods,
   }) async {
-    if (_currentUser == null) {
-      throw Exception('User must be authenticated to create reminders');
-    }
+    try {
+      if (_currentUser == null) {
+        throw Exception('User must be authenticated to create reminders');
+      }
+
+      // Input validation
+      if (title.trim().isEmpty) {
+        throw ArgumentError('Reminder title cannot be empty');
+      }
+      
+      if (title.length > 200) {
+        throw ArgumentError('Reminder title cannot exceed 200 characters');
+      }
 
     // Enforce business plan restrictions for location-based reminders
     if (type.requiresMapAccess) {
@@ -171,6 +181,11 @@ class ReminderService {
     );
 
     return reminder;
+    } catch (e) {
+      // Log error for debugging while preserving original exception
+      print('Error creating reminder: $e');
+      rethrow;
+    }
   }
 
   /// Get user's reminders with filtering and sorting
@@ -221,21 +236,30 @@ class ReminderService {
 
   /// Complete a reminder
   Future<void> completeReminder(String reminderId) async {
-    final now = DateTime.now();
-    await updateReminder(reminderId, {
-      'status': ReminderStatus.completed.name,
-      'isCompleted': true,
-      'completedAt': now.toIso8601String(),
-    });
+    try {
+      if (reminderId.trim().isEmpty) {
+        throw ArgumentError('Reminder ID cannot be empty');
+      }
 
-    await _trackAnalyticsEvent(
-      reminderId: reminderId,
-      eventType: ReminderAnalyticsEvent.reminderCompleted,
-      eventData: {'completedAt': now.toIso8601String()},
-    );
+      final now = DateTime.now();
+      await updateReminder(reminderId, {
+        'status': ReminderStatus.completed.name,
+        'isCompleted': true,
+        'completedAt': now.toIso8601String(),
+      });
 
-    // Cancel scheduled notifications
-    await _cancelNotifications(reminderId);
+      await _trackAnalyticsEvent(
+        reminderId: reminderId,
+        eventType: ReminderAnalyticsEvent.reminderCompleted,
+        eventData: {'completedAt': now.toIso8601String()},
+      );
+
+      // Cancel scheduled notifications
+      await _cancelNotifications(reminderId);
+    } catch (e) {
+      print('Error completing reminder $reminderId: $e');
+      rethrow;
+    }
   }
 
   /// Snooze a reminder
@@ -355,11 +379,17 @@ class ReminderService {
   }
 
   /// Setup geofencing for location-based reminders
+  /// TODO: Implement actual geofencing integration
   Future<void> _setupGeofencing(Reminder reminder) async {
     if (reminder.location == null) return;
 
-    // This would integrate with a geofencing service
-    // For now, we'll track that geofencing was set up
+    // PLACEHOLDER: This would integrate with a geofencing service like iOS Core Location or Android Geofencing API
+    // Current implementation only tracks analytics for demonstration purposes
+    // Production implementation should include:
+    // - Platform-specific geofencing registration
+    // - Background location monitoring
+    // - Geofence entry/exit event handling
+    // - Battery optimization considerations
     await _trackAnalyticsEvent(
       reminderId: reminder.id,
       eventType: ReminderAnalyticsEvent.locationReminderGeofenceEntered,
