@@ -246,7 +246,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
     final bookings = <Booking>[];
 
     // Get local bookings
-    for (offlineBooking in _bookingsBox.values) {
+    for (final offlineBooking in _bookingsBox.values) {
       bookings.add(offlineBooking.toBooking());
     }
 
@@ -261,7 +261,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
               .orderBy('dateTime')
               .get();
 
-          for (doc in snapshot.docs) {
+          for (final doc in snapshot.docs) {
             final remoteBooking =
                 Booking.fromJson({...doc.data(), 'id': doc.id});
 
