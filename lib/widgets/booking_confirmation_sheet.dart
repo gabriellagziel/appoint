@@ -4,6 +4,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/providers/user_subscription_provider.dart';
 import 'package:appoint/services/ad_service.dart';
 import 'package:appoint/features/studio_business/providers/booking_provider.dart';
+import 'package:appoint/widgets/app_attribution.dart';
 
 class BookingConfirmationSheet extends ConsumerStatefulWidget {
   const BookingConfirmationSheet({
@@ -238,6 +239,10 @@ class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSh
               ),
             ],
           ),
+          
+          // Attribution - Required for all booking-related screens
+          const SizedBox(height: 16),
+          const AppAttributionFooter(showBorder: false),
         ],
       ),
     );
