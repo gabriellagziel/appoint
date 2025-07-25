@@ -303,7 +303,6 @@ class FamilyBackgroundService {
       // Removed debug print: debugPrint('Error sending expired request notification: $e');
       }
     }
-  }
 
   Future<void> _validateFamilyLinks() async {
     if (kDebugMode) {
@@ -356,7 +355,6 @@ class FamilyBackgroundService {
         // Removed debug print: debugPrint('Error validating family links: $e');
       }
     }
-  }
 
   // Method to manually trigger a check (useful for testing)
   Future<void> triggerManualCheck() async {
@@ -368,7 +366,6 @@ class FamilyBackgroundService {
 
   // Method to check if service is running
   bool get isRunning => _isRunning;
-}
 
 // Extension method to easily access the service
 extension FamilyBackgroundServiceExtension on FamilyBackgroundService {
