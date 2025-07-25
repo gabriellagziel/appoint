@@ -36,7 +36,7 @@ class NotificationSettingsScreen extends ConsumerWidget {
                             .updateSettings(uid, newSettings);
                       },
                     ),
-                    if (token != null) SelectableText(l10n.fcmToken(token)),
+                    if (token != null) SelectableText(l10n.fcmToken(token as Object)),
                   ],
                 ),
               ),
