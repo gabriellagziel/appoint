@@ -1,4 +1,5 @@
 import 'package:appoint/models/subscription.dart';
+import 'package:appoint/models/subscription_plan.dart';
 import 'package:appoint/models/payment.dart';
 import 'package:appoint/services/api/api_client.dart';
 
