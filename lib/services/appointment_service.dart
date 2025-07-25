@@ -22,7 +22,9 @@ class AppointmentService {
     );
     await doc.set(appointment.toJson());
     await NotificationService().sendNotificationToUser(
-        inviteeId, 'New Appointment', 'You have a new booking',);
+        uid: inviteeId, 
+        title: 'New Appointment', 
+        body: 'You have a new booking');
     return appointment;
   }
 
@@ -42,7 +44,9 @@ class AppointmentService {
     );
     await doc.set(appointment.toJson());
     await NotificationService().sendNotificationToUser(
-        inviteeId, 'New Call Request', 'You have a new call request',);
+        uid: inviteeId, 
+        title: 'New Call Request', 
+        body: 'You have a new call request');
     return appointment;
   }
 

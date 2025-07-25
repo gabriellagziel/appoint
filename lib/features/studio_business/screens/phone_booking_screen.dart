@@ -215,9 +215,11 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
       await _saveBookingRequest(
           customerName, phoneNumber, date, time, bookingCode,);
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: $e')),
-        );
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Error: $e')),
+          );
+        }
       }
     } finally {
       if (mounted) {

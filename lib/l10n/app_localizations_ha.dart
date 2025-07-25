@@ -86,9 +86,6 @@ class AppLocalizationsHa extends AppLocalizations {
   String get revokeAccess => '[HA] Cire izini';
 
   @override
-  String get saveGroupForRecognition => '[HA] Ajiye rukuni don gane shi gaba';
-
-  @override
   String get playtimeLiveScheduled => '[HA] Live playtime scheduled!';
 
   @override
@@ -262,9 +259,6 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get upcomingSessions => '[HA] Upcoming Sessions';
-
-  @override
-  String get enterGroupName => '[HA] Shigar da sunan rukuni don gane shi';
 
   @override
   String get confirm => '[HA] Confirm';
@@ -502,9 +496,6 @@ class AppLocalizationsHa extends AppLocalizations {
   String get createGame => '[HA] Create Game';
 
   @override
-  String get groupNameOptional => '[HA] Sunan rukuni (zaɓi)';
-
-  @override
   String get playtimeNoSessions => '[HA] No playtime sessions found.';
 
   @override
@@ -515,9 +506,6 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get close => '[HA] Rufe';
-
-  @override
-  String get knownGroupDetected => '[HA] An sami sanannen rukuni';
 
   @override
   String get back => '[HA] Back';
@@ -2526,4 +2514,151 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get purchase_now_button => 'Purchase Now';
+
+  @override
+  String get welcomeAmbassador => 'Welcome, Ambassador!';
+
+  @override
+  String get activeStatus => 'Active';
+
+  @override
+  String get totalReferrals => 'Total Referrals';
+
+  @override
+  String get thisMonth => 'This Month';
+
+  @override
+  String get activeRewards => 'Active Rewards';
+
+  @override
+  String get nextTierProgress => 'Next Tier Progress';
+
+  @override
+  String get progressToPremium => 'Progress to Premium';
+
+  @override
+  String get remaining => 'remaining';
+
+  @override
+  String get monthlyGoal => 'Monthly Goal';
+
+  @override
+  String get onTrack => 'On Track';
+
+  @override
+  String get needsAttention => 'Needs Attention';
+
+  @override
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
+
+  @override
+  String get viewRewards => 'View Rewards';
+
+  @override
+  String get referralStatistics => 'Referral Statistics';
+
+  @override
+  String get activeReferrals => 'Active Referrals';
+
+  @override
+  String get conversionRate => 'Conversion Rate';
+
+  @override
+  String get recentReferrals => 'Recent Referrals';
+
+  @override
+  String get tierBenefits => 'Tier Benefits';
+
+  @override
+  String get yourReferralQRCode => 'Your Referral QR Code';
+
+  @override
+  String get yourReferralLink => 'Your Referral Link';
+
+  @override
+  String get shareYourLink => 'Share Your Link';
+
+  @override
+  String get shareViaMessage => 'Message';
+
+  @override
+  String get shareViaEmail => 'Email';
+
+  @override
+  String get shareMore => 'More Options';
+
+  @override
+  String get becomeAmbassador => 'Become an Ambassador';
+
+  @override
+  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
+
+  @override
+  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
+
+  @override
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+
+  @override
+  String get ambassadorPromotionTitle =>
+      '[HA] Congratulations! You\'re now an Ambassador! (Hausa)';
+
+  @override
+  String ambassadorPromotionBody(String tier) {
+    return '[HA] Welcome to the $tier tier! Start sharing your referral link to earn rewards. (Hausa)';
+  }
+
+  @override
+  String get tierUpgradeTitle => '[HA] Tier Upgrade! 🎉 (Hausa)';
+
+  @override
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
+    return '[HA] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Hausa)';
+  }
+
+  @override
+  String get monthlyReminderTitle => '[HA] Monthly Goal Reminder (Hausa)';
+
+  @override
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
+    return '[HA] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Hausa)';
+  }
+
+  @override
+  String get performanceWarningTitle =>
+      '[HA] Ambassador Performance Alert (Hausa)';
+
+  @override
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
+    return '[HA] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Hausa)';
+  }
+
+  @override
+  String get ambassadorDemotionTitle => '[HA] Ambassador Status Update (Hausa)';
+
+  @override
+  String ambassadorDemotionBody(String reason) {
+    return '[HA] Your ambassador status has been temporarily suspended due to: $reason. You can regain your status by meeting the requirements again. (Hausa)';
+  }
+
+  @override
+  String get referralSuccessTitle => '[HA] New Referral! 🎉 (Hausa)';
+
+  @override
+  String referralSuccessBody(String referredUserName, String totalReferrals) {
+    return '[HA] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Hausa)';
+  }
 }

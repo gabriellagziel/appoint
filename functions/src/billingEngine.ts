@@ -1,4 +1,4 @@
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import PDFDocument from 'pdfkit';
 import * as nodemailer from 'nodemailer';
@@ -108,8 +108,7 @@ function generateInvoicePDF({
       doc.text(`Rate per overage load: €${MAP_OVERAGE_RATE.toFixed(3)}`);
       doc.moveDown();
       doc.text(`Overage amount: €${mapOverageDetails.overageAmount.toFixed(2)}`, { 
-        fontSize: 14, 
-        continued: false 
+        fontSize: 14
       });
     } else {
       // Regular API usage invoice
@@ -119,8 +118,7 @@ function generateInvoicePDF({
     
     doc.moveDown();
     doc.fontSize(14).text(`Total amount due: €${amount.toFixed(2)}`, { 
-      fontSize: 16, 
-      underline: true 
+      fontSize: 16
     });
     doc.text(`Due date: ${dueDate.toDateString()}`);
 

@@ -9,7 +9,7 @@ class UserProfileScreen extends ConsumerWidget {
   const UserProfileScreen({super.key});
 
   void _showDeleteAccountDialog(BuildContext context) {
-    showDialog(
+    showDialog<void>(
       context: context,
       builder: (BuildContext context) => AlertDialog(
           title: const Text('Delete Account'),
@@ -43,7 +43,7 @@ class UserProfileScreen extends ConsumerWidget {
   Future<void> _deleteAccount(BuildContext context) async {
     try {
       // Show loading indicator
-      showDialog(
+      showDialog<void>(
         context: context,
         barrierDismissible: false,
         builder: (BuildContext context) => const AlertDialog(
@@ -75,18 +75,17 @@ class UserProfileScreen extends ConsumerWidget {
       }
     } catch (e) {
         Navigator.of(context).pop();
+        
+        // Show error message
+        if (context.mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('Failed to delete account: $e'),
+              backgroundColor: Colors.red,
+            ),
+          );
+        }
       }
-
-      // Show error message
-      if (context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to delete account: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
-    }
   }
 
   @override

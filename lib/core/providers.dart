@@ -20,7 +20,7 @@ export '../providers/dashboard_provider.dart' hide dashboardStatsProvider;
 export '../providers/family_provider.dart';
 export '../providers/family_support_provider.dart';
 // Core providers
-export '../providers/fcm_token_provider.dart';
+export '../providers/fcm_token_provider.dart' hide authServiceProvider;
 export '../providers/firebase_providers.dart' hide firebaseAuthProvider;
 export '../providers/game_provider.dart';
 // Integration providers

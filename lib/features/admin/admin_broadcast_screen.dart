@@ -55,7 +55,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         actions: [
           IconButton(
             icon: const Icon(Icons.add),
-            onPressed: () => _showComposeDialog(context, l10n, theme),
+            onPressed: () => _showComposeDialog(context, l10n!, theme),
           ),
         ],
       ),
@@ -148,7 +148,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
     if (messages.isEmpty) {
       return Center(
-        child: Text(l10n.noBroadcastMessages),
+        child: Text(l10n?.noBroadcastMessages ?? 'No broadcast messages'),
       );
     }
 
@@ -177,33 +177,33 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n.content(message.content),
+                  l10n?.content(message.content) ?? 'Content: ${message.content}',
                   maxLines: 3,
                   overflow: TextOverflow.ellipsis,
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n.type(message.type.toString()),
+                  l10n?.type(message.type.toString()) ?? 'Type: ${message.type}',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 if (message.actualRecipients != null)
                   Text(
-                    l10n.recipients(message.actualRecipients!),
+                    l10n?.recipients(message.actualRecipients!) ?? 'Recipients: ${message.actualRecipients}',
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 if (message.openedCount != null)
                   Text(
-                    l10n.opened(message.openedCount!),
+                    l10n?.opened(message.openedCount!) ?? 'Opened: ${message.openedCount}',
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n.created(message.createdAt),
+                  l10n?.created(message.createdAt) ?? 'Created: ${message.createdAt}',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 if (message.scheduledFor != null)
                   Text(
-                    l10n.scheduled(message.scheduledFor!),
+                    l10n?.scheduled(message.scheduledFor!) ?? 'Scheduled: ${message.scheduledFor}',
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 const SizedBox(height: 8),
@@ -213,11 +213,11 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                     if (message.status == BroadcastMessageStatus.pending)
                       TextButton(
                         onPressed: () => _sendMessage(message.id),
-                        child: Text(l10n.sendNow),
+                        child: Text(l10n?.sendNow ?? 'Send Now'),
                       ),
                     TextButton(
                       onPressed: () => _showMessageDetails(message),
-                      child: Text(l10n.details),
+                      child: Text(l10n?.details ?? 'Details'),
                     ),
                   ],
                 ),
@@ -329,12 +329,12 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
             TextFormField(
               controller: _titleController,
               decoration: InputDecoration(
-                labelText: l10n.title,
+                labelText: 'Title',
                 border: const OutlineInputBorder(),
               ),
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return l10n.pleaseEnterTitle;
+                  return 'Please enter a title';
                 }
                 return null;
               },
@@ -343,7 +343,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
             DropdownButtonFormField<BroadcastMessageType>(
               value: _selectedType,
               decoration: InputDecoration(
-                labelText: l10n.messageType,
+                labelText: 'Message Type',
                 border: const OutlineInputBorder(),
               ),
               items: BroadcastMessageType.values.map((type) => DropdownMenuItem(
@@ -360,13 +360,13 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
             TextFormField(
               controller: _contentController,
               decoration: InputDecoration(
-                labelText: l10n.content,
+                labelText: 'Content',
                 border: const OutlineInputBorder(),
               ),
               maxLines: 3,
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return l10n.pleaseEnterContent;
+                  return 'Please enter content';
                 }
                 return null;
               },
@@ -407,7 +407,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(
-                            '${l10n.imageSelected}: ${_selectedImage!.path.split('/').last}',
+                            'Image Selected: ${_selectedImage!.path.split('/').last}',
                             style: const TextStyle(fontSize: 12),
                           ),
                         ),
@@ -435,7 +435,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(
-                            '${l10n.videoSelected}: ${_selectedVideo!.path.split('/').last}',
+                            'Video Selected: ${_selectedVideo!.path.split('/').last}',
                             style: const TextStyle(fontSize: 12),
                           ),
                         ),
@@ -467,12 +467,12 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
               TextFormField(
                 controller: _linkController,
                 decoration: InputDecoration(
-                  labelText: l10n.externalLink,
+                  labelText: 'External Link',
                   border: const OutlineInputBorder(),
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return l10n.pleaseEnterLink;
+                    return 'Please enter a link';
                   }
                   return null;
                 },
@@ -500,7 +500,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
             if (_estimatedRecipients != 0) ...[
               const SizedBox(height: 16),
               Text(
-                '${l10n.estimatedRecipients}: $_estimatedRecipients',
+                'Estimated Recipients: $_estimatedRecipients',
                 style: Theme.of(context).textTheme.titleMedium,
               ),
             ],
@@ -518,7 +518,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         // Countries
         TextFormField(
           decoration: InputDecoration(
-            labelText: l10n.countries,
+                            labelText: 'Countries',
             border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
@@ -536,7 +536,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         // Cities
         TextFormField(
           decoration: InputDecoration(
-            labelText: l10n.cities,
+                            labelText: 'Cities',
             border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
@@ -554,7 +554,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         // Subscription Tiers
         TextFormField(
           decoration: InputDecoration(
-            labelText: l10n.subscriptionTiers,
+                            labelText: 'Subscription Tiers',
             border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
@@ -572,7 +572,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         // User Roles
         TextFormField(
           decoration: InputDecoration(
-            labelText: l10n.userRoles,
+                            labelText: 'User Roles',
             border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
