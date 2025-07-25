@@ -1,7 +1,7 @@
 import 'package:appoint/features/admin/admin_broadcast_screen.dart';
 import 'package:appoint/features/admin/admin_dashboard_screen.dart';
 import 'package:appoint/features/admin/admin_monetization_screen.dart';
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/models/admin_dashboard_stats.dart';
 import 'package:appoint/providers/admin_provider.dart';

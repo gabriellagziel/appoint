@@ -735,5 +735,145 @@
   "deleteField": "Delete Field",
   "@deleteField": {
     "description": "Delete field button"
+  },
+  "noFormFields": "No form fields yet",
+  "@noFormFields": {
+    "description": "No form fields message"
+  },
+  "addFormFieldsDescription": "Add fields to create your custom form",
+  "@addFormFieldsDescription": {
+    "description": "Add form fields description"
+  },
+  "formPreviewDescription": "Preview how your form will look",
+  "@formPreviewDescription": {
+    "description": "Form preview description"
+  },
+  "required": "Required",
+  "@required": {
+    "description": "Required field indicator"
+  },
+  "enterText": "Enter text",
+  "@enterText": {
+    "description": "Enter text placeholder"
+  },
+  "enterNumber": "Enter number",
+  "@enterNumber": {
+    "description": "Enter number placeholder"
+  },
+  "selectDate": "Select date",
+  "@selectDate": {
+    "description": "Select date placeholder"
+  },
+  "selectTime": "Select time",
+  "@selectTime": {
+    "description": "Select time placeholder"
+  },
+  "selectDateTime": "Select date and time",
+  "@selectDateTime": {
+    "description": "Select date and time placeholder"
+  },
+  "rateFrom1To5": "Rate from 1 to 5",
+  "@rateFrom1To5": {
+    "description": "Rating placeholder"
+  },
+  "enterLongText": "Enter long text",
+  "@enterLongText": {
+    "description": "Long text placeholder"
+  },
+  "fieldLabel": "Field Label",
+  "@fieldLabel": {
+    "description": "Field label input"
+  },
+  "fieldDescription": "Field Description",
+  "@fieldDescription": {
+    "description": "Field description input"
+  },
+  "placeholder": "Placeholder",
+  "@placeholder": {
+    "description": "Placeholder input"
+  },
+  "defaultValue": "Default Value",
+  "@defaultValue": {
+    "description": "Default value input"
+  },
+  "isRequired": "Is Required",
+  "@isRequired": {
+    "description": "Is required checkbox"
+  },
+  "options": "Options",
+  "@options": {
+    "description": "Options label"
+  },
+  "addOption": "Add Option",
+  "@addOption": {
+    "description": "Add option button"
+  },
+  "removeOption": "Remove Option",
+  "@removeOption": {
+    "description": "Remove option button"
+  },
+  "validation": "Validation",
+  "@validation": {
+    "description": "Validation label"
+  },
+  "minLength": "Minimum Length",
+  "@minLength": {
+    "description": "Minimum length input"
+  },
+  "maxLength": "Maximum Length",
+  "@maxLength": {
+    "description": "Maximum length input"
+  },
+  "minValue": "Minimum Value",
+  "@minValue": {
+    "description": "Minimum value input"
+  },
+  "maxValue": "Maximum Value",
+  "@maxValue": {
+    "description": "Maximum value input"
+  },
+  "textAreaField": "Text Area Field",
+  "@textAreaField": {
+    "description": "Text area field type"
+  },
+  "dateTimeField": "Date Time Field",
+  "@dateTimeField": {
+    "description": "Date time field type"
+  },
+  "deleteFieldConfirmation": "Are you sure you want to delete this field?",
+  "@deleteFieldConfirmation": {
+    "description": "Delete field confirmation message"
+  },
+  "fieldType": "Field Type",
+  "@fieldType": {
+    "description": "Field type label"
+  },
+  "fieldLabelRequired": "Field label is required",
+  "@fieldLabelRequired": {
+    "description": "Field label required message"
+  },
+  "description": "Description",
+  "@description": {
+    "description": "Description label"
+  },
+  "optional": "Optional",
+  "@optional": {
+    "description": "Optional label"
+  },
+  "requiredField": "Required Field",
+  "@requiredField": {
+    "description": "Required field label"
+  },
+  "validationPattern": "Validation Pattern",
+  "@validationPattern": {
+    "description": "Validation pattern label"
+  },
+  "validationMessage": "Validation Message",
+  "@validationMessage": {
+    "description": "Validation message label"
+  },
+  "optionsRequired": "Options are required for this field type",
+  "@optionsRequired": {
+    "description": "Options required message"
   }
 }

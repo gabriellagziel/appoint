@@ -1,4 +1,4 @@
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/services/playtime_service.dart';
 import 'package:appoint/config/theme.dart';
 import 'package:firebase_auth/firebase_auth.dart';
