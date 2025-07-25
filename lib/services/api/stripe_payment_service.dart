@@ -10,6 +10,7 @@ class Stripe {
   Future<void> initialise({required String publishableKey}) async {}
   Future<PaymentIntent> createPaymentIntent(Map<String, dynamic> params) async => PaymentIntent('');
   Future<SetupIntent> createSetupIntent(Map<String, dynamic> params) async => SetupIntent('');
+  Future<PaymentResult> confirmPayment(String paymentIntentId, PaymentMethodParams params) async => PaymentResult(PaymentIntentsStatus.Succeeded);
 }
 
 class PaymentIntent {
@@ -23,6 +24,27 @@ class SetupIntent {
 }
 
 enum SetupIntentsStatus { succeeded, processing, requiresPaymentMethod }
+
+// Additional Stripe stub classes
+class PaymentMethodParams {
+  static PaymentMethodParams card({required PaymentMethodData paymentMethodData}) => PaymentMethodParams();
+}
+
+class PaymentMethodData {
+  final BillingDetails? billingDetails;
+  PaymentMethodData({this.billingDetails});
+}
+
+class BillingDetails {
+  BillingDetails();
+}
+
+class PaymentResult {
+  final PaymentIntentsStatus status;
+  PaymentResult(this.status);
+}
+
+enum PaymentIntentsStatus { Succeeded, Failed, Processing }
 
 class StripePaymentService {
   static final StripePaymentService _instance = StripePaymentService._();
