@@ -5,6 +5,7 @@ Welcome to the AppOint documentation. This directory contains comprehensive docu
 ## 📚 Documentation Structure
 
 ### Core Documentation
+- **[Feature Inventory](../FEATURE_INVENTORY.md)** - Comprehensive list of all App-Oint platform features
 - **[Architecture](architecture.md)** - System architecture and design patterns
 - **[Routing](routing.md)** - Navigation and routing implementation
 - **[API Reference](api/)** - Backend API documentation
