@@ -93,19 +93,19 @@ class EnhancedSettingsScreen extends ConsumerWidget {
           SwitchListTile(
             title: const Text('Booking Notifications'),
             subtitle: const Text('Get notified about booking updates'),
-            value: notifications['booking'] ?? true,
+            value: notifications['booking'] as bool? ?? true,
             onChanged: (value) => _updateNotificationSetting(ref, 'booking', value),
           ),
           SwitchListTile(
             title: const Text('Message Notifications'),
             subtitle: const Text('Get notified about new messages'),
-            value: notifications['messages'] ?? true,
+            value: notifications['messages'] as bool? ?? true,
             onChanged: (value) => _updateNotificationSetting(ref, 'messages', value),
           ),
           SwitchListTile(
             title: const Text('Rewards Notifications'),
             subtitle: const Text('Get notified about points and rewards'),
-            value: notifications['rewards'] ?? true,
+            value: notifications['rewards'] as bool? ?? true,
             onChanged: (value) => _updateNotificationSetting(ref, 'rewards', value),
           ),
           SwitchListTile(
@@ -137,7 +137,7 @@ class EnhancedSettingsScreen extends ConsumerWidget {
           ),
           ListTile(
             title: const Text('Profile Visibility'),
-            subtitle: Text(_getVisibilityText(privacy['profileVisibility'])),
+            subtitle: Text(_getVisibilityText(privacy['profileVisibility'] as String)),
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () => _showVisibilityDialog(context, ref),
           ),
@@ -181,7 +181,7 @@ class EnhancedSettingsScreen extends ConsumerWidget {
           ),
           ListTile(
             title: const Text('Theme'),
-            subtitle: Text(_getThemeText(appearance['theme'])),
+            subtitle: Text(_getThemeText(appearance['theme'] as String)),
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () => _showThemeDialog(context, ref),
           ),
