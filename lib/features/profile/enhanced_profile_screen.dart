@@ -511,7 +511,7 @@ class EnhancedProfileScreen extends ConsumerWidget {
     switch (key) {
       case 'notifications':
         newPreferences = UserPreferences(
-          notifications: value,
+          notifications: value as bool,
           locationSharing: preferences.locationSharing,
           language: preferences.language,
           theme: preferences.theme,
@@ -520,7 +520,7 @@ class EnhancedProfileScreen extends ConsumerWidget {
       case 'locationSharing':
         newPreferences = UserPreferences(
           notifications: preferences.notifications,
-          locationSharing: value,
+          locationSharing: value as bool,
           language: preferences.language,
           theme: preferences.theme,
         );
