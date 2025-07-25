@@ -1619,5 +1619,37 @@
   "progressToPremium": "Progress to Premium",
   "@progressToPremium": {
     "description": "Progress to premium tier label"
+  },
+  "errorEstimatingRecipients": "Error estimating recipients",
+  "@errorEstimatingRecipients": {
+    "description": "Error message when estimating recipients fails"
+  },
+  "errorPickingImage": "Error picking image",
+  "@errorPickingImage": {
+    "description": "Error message when image picking fails"
+  },
+  "errorPickingVideo": "Error picking video",
+  "@errorPickingVideo": {
+    "description": "Error message when video picking fails"
+  },
+  "userNotAuthenticated": "User not authenticated",
+  "@userNotAuthenticated": {
+    "description": "Error message when user is not authenticated"
+  },
+  "failedToUploadImage": "Failed to upload image",
+  "@failedToUploadImage": {
+    "description": "Error message when image upload fails"
+  },
+  "failedToUploadVideo": "Failed to upload video",
+  "@failedToUploadVideo": {
+    "description": "Error message when video upload fails"
+  },
+  "image": "Image",
+  "@image": {
+    "description": "Label for image content"
+  },
+  "video": "Video",
+  "@video": {
+    "description": "Label for video content"
   }
 }
