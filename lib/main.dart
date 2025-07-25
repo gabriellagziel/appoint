@@ -10,7 +10,7 @@ import 'package:go_router/go_router.dart';
 import 'auth_wrapper.dart';
 import 'config/app_router.dart';
 import 'firebase_options.dart';
-import 'l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'providers/auth_provider.dart';
 import 'providers/theme_provider.dart';
 import 'providers/notification_provider.dart';
