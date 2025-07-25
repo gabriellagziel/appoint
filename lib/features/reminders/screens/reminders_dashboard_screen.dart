@@ -164,10 +164,15 @@ class _RemindersDashboardScreenState extends ConsumerState<RemindersDashboardScr
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () => _createNewReminder(context),
-        icon: const Icon(Icons.add_alarm),
-        label: Text(l10n.addReminder),
+      floatingActionButton: Semantics(
+        label: l10n.addReminder,
+        hint: l10n.addReminderDescription,
+        button: true,
+        child: FloatingActionButton.extended(
+          onPressed: () => _createNewReminder(context),
+          icon: const Icon(Icons.add_alarm),
+          label: Text(l10n.addReminder),
+        ),
       ),
     );
   }

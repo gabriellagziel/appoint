@@ -2954,6 +2954,10 @@
   "@addReminder": {
     "description": "Add reminder button label"
   },
+  "addReminderDescription": "Create a new reminder for important tasks or events",
+  "@addReminderDescription": {
+    "description": "Accessibility hint for add reminder button"
+  },
   "noRemindersToday": "No reminders for today",
   "@noRemindersToday": {
     "description": "Empty state message for today's reminders"
