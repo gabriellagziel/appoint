@@ -18,15 +18,15 @@ class CsvExport {
     ];
     // Group by date
     final counts = <String, int>{};
-    for (doc in snapshot.docs) {
-      date = DateTime.parse(doc['date'])
+    for (final doc in snapshot.docs) {
+      final date = DateTime.parse(doc['date'])
           .toLocal()
           .toIso8601String()
           .split('T')
           .first;
       counts[date] = (counts[date] ?? 0) + 1;
     }
-    for (entry in counts.entries) {
+    for (final entry in counts.entries) {
       rows.add([entry.key, entry.value.toString()]);
     }
     return rows.map((r) => r.join(',')).join('\n');
