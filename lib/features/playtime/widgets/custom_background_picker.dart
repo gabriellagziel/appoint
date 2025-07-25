@@ -708,4 +708,3 @@ class _UploadBackgroundDialogState
       }
     }
   }
-}
