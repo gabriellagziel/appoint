@@ -9,7 +9,8 @@ import {
   Settings, 
   BarChart3, 
   Home,
-  Menu
+  Menu,
+  List
 } from "lucide-react"
 import { Logo } from "./Logo"
 
@@ -22,6 +23,7 @@ const navigation = [
   { name: "Dashboard", href: "/admin", icon: Home },
   { name: "Users", href: "/admin/users", icon: Users },
   { name: "Analytics", href: "/admin/analytics", icon: BarChart3 },
+  { name: "Features", href: "/FEATURE_INVENTORY.md", icon: List, external: true },
   { name: "Settings", href: "/admin/settings", icon: Settings },
 ]
 
@@ -61,10 +63,14 @@ export function Sidebar({ isOpen, onToggle }: SidebarProps) {
           <nav className="flex-1 px-4 py-6 space-y-2">
             {navigation.map((item) => {
               const isActive = pathname === item.href
+              const linkProps = item.external 
+                ? { href: item.href, target: "_blank", rel: "noopener noreferrer" }
+                : { href: item.href }
+              
               return (
                 <Link
                   key={item.name}
-                  href={item.href}
+                  {...linkProps}
                   className={cn(
                     "flex items-center px-3 py-2 text-sm font-medium rounded-md transition-colors",
                     isActive

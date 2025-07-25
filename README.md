@@ -88,6 +88,7 @@ docker-compose exec functions npm test
 
 ## 📚 Documentation
 
+- **[Feature Inventory](FEATURE_INVENTORY.md)** - Comprehensive list of all App-Oint platform features
 - **[Project Documentation](docs/README.md)** - Comprehensive project documentation
 - **[Architecture](docs/architecture.md)** - System architecture and design patterns
 - **[CI/CD Setup](docs/ci_setup.md)** - Continuous Integration and Deployment guide
