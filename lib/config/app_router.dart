@@ -813,7 +813,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                             const Icon(Icons.location_on, color: Colors.green),
                             const SizedBox(width: 8),
                             Expanded(
-                              child: Text(meeting['address']),
+                              child: Text(meeting['address'] as String),
                             ),
                           ],
                         ),
@@ -831,8 +831,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                           child: GoogleMap(
                             initialCameraPosition: CameraPosition(
                               target: LatLng(
-                                meeting['latitude'].toDouble(),
-                                meeting['longitude'].toDouble(),
+                                (meeting['latitude'] as double).toDouble(),
+                                (meeting['longitude'] as double).toDouble(),
                               ),
                               zoom: 16,
                             ),
@@ -840,12 +840,12 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                               Marker(
                                 markerId: MarkerId(widget.meetingId),
                                 position: LatLng(
-                                  meeting['latitude'].toDouble(),
-                                  meeting['longitude'].toDouble(),
+                                  (meeting['latitude'] as double).toDouble(),
+                                  (meeting['longitude'] as double).toDouble(),
                                 ),
                                 infoWindow: InfoWindow(
-                                  title: meeting['title'] ?? 'Meeting Location',
-                                  snippet: meeting['address'],
+                                  title: meeting['title'] as String? ?? 'Meeting Location',
+                                  snippet: meeting['address'] as String?,
                                 ),
                               ),
                             },
@@ -857,8 +857,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                         width: double.infinity,
                         child: ElevatedButton.icon(
                           onPressed: () => _openDirections(
-                            meeting['latitude']?.toDouble(),
-                            meeting['longitude']?.toDouble(),
+                            (meeting['latitude'] as double?)?.toDouble(),
+                            (meeting['longitude'] as double?)?.toDouble(),
                           ),
                           icon: const Icon(Icons.directions),
                           label: const Text('Get Directions'),
@@ -890,7 +890,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                     ),
                     const SizedBox(height: 8),
                     if (meeting['notes'] != null)
-                      _buildInfoRow(Icons.note, 'Notes', meeting['notes']),
+                      _buildInfoRow(Icons.note, 'Notes', meeting['notes'] as String?),
                     if (widget.creatorId != null)
                       _buildInfoRow(Icons.person, 'Creator', widget.creatorId!),
                     if (widget.groupId != null)
