@@ -224,7 +224,6 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
         setState(() => _isProcessing = false);
       }
     }
-  }
 
   Future<bool> _checkUserExists(String phoneNumber) async {
     try {
