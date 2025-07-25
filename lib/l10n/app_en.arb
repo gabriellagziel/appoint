@@ -2905,5 +2905,518 @@
         "type": "String"
       }
     }
+  },
+  "myReminders": "My Reminders",
+  "@myReminders": {
+    "description": "Title for the reminders dashboard"
+  },
+  "reminderStats": "Reminder Stats",
+  "@reminderStats": {
+    "description": "Title for reminder statistics"
+  },
+  "allReminders": "All Reminders",
+  "@allReminders": {
+    "description": "Filter option for all reminders"
+  },
+  "timeBasedReminders": "Time-based",
+  "@timeBasedReminders": {
+    "description": "Filter option for time-based reminders"
+  },
+  "locationBasedReminders": "Location-based",
+  "@locationBasedReminders": {
+    "description": "Filter option for location-based reminders"
+  },
+  "meetingReminders": "Meeting",
+  "@meetingReminders": {
+    "description": "Filter option for meeting reminders"
+  },
+  "personalReminders": "Personal",
+  "@personalReminders": {
+    "description": "Filter option for personal reminders"
+  },
+  "today": "Today",
+  "@today": {
+    "description": "Today tab label"
+  },
+  "upcoming": "Upcoming",
+  "@upcoming": {
+    "description": "Upcoming tab label"
+  },
+  "overdue": "Overdue",
+  "@overdue": {
+    "description": "Overdue tab label"
+  },
+  "all": "All",
+  "@all": {
+    "description": "All tab label"
+  },
+  "addReminder": "Add Reminder",
+  "@addReminder": {
+    "description": "Add reminder button label"
+  },
+  "noRemindersToday": "No reminders for today",
+  "@noRemindersToday": {
+    "description": "Empty state message for today's reminders"
+  },
+  "noUpcomingReminders": "No upcoming reminders",
+  "@noUpcomingReminders": {
+    "description": "Empty state message for upcoming reminders"
+  },
+  "noOverdueReminders": "No overdue reminders",
+  "@noOverdueReminders": {
+    "description": "Empty state message for overdue reminders"
+  },
+  "noActiveReminders": "No active reminders",
+  "@noActiveReminders": {
+    "description": "Empty state message for active reminders"
+  },
+  "createYourFirstReminder": "Create your first reminder to stay organized!",
+  "@createYourFirstReminder": {
+    "description": "Encouragement text for empty state"
+  },
+  "errorLoadingReminders": "Error loading reminders",
+  "@errorLoadingReminders": {
+    "description": "Error message when reminders fail to load"
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Retry button label"
+  },
+  "reminderCompleted": "Reminder completed",
+  "@reminderCompleted": {
+    "description": "Success message when reminder is completed"
+  },
+  "undo": "Undo",
+  "@undo": {
+    "description": "Undo action label"
+  },
+  "reminderSnoozedFor": "Reminder snoozed for {duration}",
+  "@reminderSnoozedFor": {
+    "description": "Message when reminder is snoozed",
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  },
+  "snoozeFor": "Snooze for",
+  "@snoozeFor": {
+    "description": "Title for snooze options"
+  },
+  "fiveMinutes": "5 minutes",
+  "@fiveMinutes": {
+    "description": "5 minute snooze option"
+  },
+  "fifteenMinutes": "15 minutes",
+  "@fifteenMinutes": {
+    "description": "15 minute snooze option"
+  },
+  "thirtyMinutes": "30 minutes",
+  "@thirtyMinutes": {
+    "description": "30 minute snooze option"
+  },
+  "oneHour": "1 hour",
+  "@oneHour": {
+    "description": "1 hour snooze option"
+  },
+  "twoHours": "2 hours",
+  "@twoHours": {
+    "description": "2 hour snooze option"
+  },
+  "fourHours": "4 hours",
+  "@fourHours": {
+    "description": "4 hour snooze option"
+  },
+  "oneDay": "1 day",
+  "@oneDay": {
+    "description": "1 day snooze option"
+  },
+  "deleteReminder": "Delete Reminder",
+  "@deleteReminder": {
+    "description": "Delete reminder dialog title"
+  },
+  "deleteReminderConfirmation": "Are you sure you want to delete '{title}'?",
+  "@deleteReminderConfirmation": {
+    "description": "Delete reminder confirmation message",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "reminderDeleted": "Reminder deleted",
+  "@reminderDeleted": {
+    "description": "Success message when reminder is deleted"
+  },
+  "unlockLocationReminders": "Unlock Location Reminders",
+  "@unlockLocationReminders": {
+    "description": "Title for location reminder upgrade prompt"
+  },
+  "upgradeForLocationReminders": "Upgrade to Professional plan to create location-based reminders",
+  "@upgradeForLocationReminders": {
+    "description": "Description for location reminder upgrade"
+  },
+  "locationRemindersDescription": "Get reminded when you arrive at or leave specific locations with interactive maps and geofencing.",
+  "@locationRemindersDescription": {
+    "description": "Detailed description of location reminder features"
+  },
+  "interactiveMapsPicker": "Interactive maps picker",
+  "@interactiveMapsPicker": {
+    "description": "Feature description for maps picker"
+  },
+  "geofenceNotifications": "Geofence notifications",
+  "@geofenceNotifications": {
+    "description": "Feature description for geofencing"
+  },
+  "notNow": "Not Now",
+  "@notNow": {
+    "description": "Dismiss button for upgrade prompts"
+  },
+  "upgrade": "Upgrade",
+  "@upgrade": {
+    "description": "Upgrade button label"
+  },
+  "pro": "PRO",
+  "@pro": {
+    "description": "Pro badge label"
+  },
+  "thisWeek": "This Week",
+  "@thisWeek": {
+    "description": "This week stats label"
+  },
+  "thisMonth": "This Month",
+  "@thisMonth": {
+    "description": "This month stats label"
+  },
+  "total": "Total",
+  "@total": {
+    "description": "Total count label"
+  },
+  "completed": "Completed",
+  "@completed": {
+    "description": "Completed status label"
+  },
+  "completionRate": "Completion Rate",
+  "@completionRate": {
+    "description": "Completion rate label"
+  },
+  "totalReminders": "Total Reminders",
+  "@totalReminders": {
+    "description": "Total reminders count label"
+  },
+  "locationReminders": "Location Reminders",
+  "@locationReminders": {
+    "description": "Location reminders count label"
+  },
+  "errorLoadingStats": "Error loading stats",
+  "@errorLoadingStats": {
+    "description": "Error message when stats fail to load"
+  },
+  "close": "Close",
+  "@close": {
+    "description": "Close button label"
+  },
+  "createReminder": "Create Reminder",
+  "@createReminder": {
+    "description": "Create reminder screen title and button"
+  },
+  "back": "Back",
+  "@back": {
+    "description": "Back button label"
+  },
+  "creating": "Creating...",
+  "@creating": {
+    "description": "Loading state for reminder creation"
+  },
+  "next": "Next",
+  "@next": {
+    "description": "Next button label"
+  },
+  "whatKindOfReminder": "What kind of reminder?",
+  "@whatKindOfReminder": {
+    "description": "Question for reminder type selection"
+  },
+  "chooseReminderType": "Choose the type of reminder you'd like to create",
+  "@chooseReminderType": {
+    "description": "Instruction for reminder type selection"
+  },
+  "timeBasedReminder": "Time-based Reminder",
+  "@timeBasedReminder": {
+    "description": "Time-based reminder option title"
+  },
+  "timeBasedReminderDescription": "Get reminded at a specific date and time",
+  "@timeBasedReminderDescription": {
+    "description": "Time-based reminder description"
+  },
+  "locationBasedReminder": "Location-based Reminder",
+  "@locationBasedReminder": {
+    "description": "Location-based reminder option title"
+  },
+  "REDACTED_TOKEN": "Get reminded when you arrive at or leave a location",
+  "@REDACTED_TOKEN": {
+    "description": "Location-based reminder description"
+  },
+  "meetingReminder": "Meeting Reminder",
+  "@meetingReminder": {
+    "description": "Meeting reminder option title"
+  },
+  "meetingReminderDescription": "Remind yourself about upcoming meetings or events",
+  "@meetingReminderDescription": {
+    "description": "Meeting reminder description"
+  },
+  "personalReminder": "Personal Reminder",
+  "@personalReminder": {
+    "description": "Personal reminder option title"
+  },
+  "personalReminderDescription": "Personal tasks and to-dos",
+  "@personalReminderDescription": {
+    "description": "Personal reminder description"
+  },
+  "errorLoadingAccessInfo": "Error loading access information",
+  "@errorLoadingAccessInfo": {
+    "description": "Error when access status fails to load"
+  },
+  "tellUsAboutReminder": "Tell us about your reminder",
+  "@tellUsAboutReminder": {
+    "description": "Title for reminder details step"
+  },
+  "giveReminderDetails": "Give your reminder a title and description",
+  "@giveReminderDetails": {
+    "description": "Instruction for reminder details"
+  },
+  "reminderTitle": "Reminder Title",
+  "@reminderTitle": {
+    "description": "Label for reminder title field"
+  },
+  "reminderTitleHint": "What would you like to be reminded of?",
+  "@reminderTitleHint": {
+    "description": "Hint for reminder title field"
+  },
+  "description": "Description",
+  "@description": {
+    "description": "Label for description field"
+  },
+  "reminderDescriptionHint": "Add more details about this reminder...",
+  "@reminderDescriptionHint": {
+    "description": "Hint for reminder description field"
+  },
+  "priority": "Priority",
+  "@priority": {
+    "description": "Priority selection label"
+  },
+  "whereToRemind": "Where should we remind you?",
+  "@whereToRemind": {
+    "description": "Title for location selection step"
+  },
+  "whenToRemind": "When should we remind you?",
+  "@whenToRemind": {
+    "description": "Title for time selection step"
+  },
+  "selectLocationForReminder": "Select a location where you'd like to be reminded",
+  "@selectLocationForReminder": {
+    "description": "Instruction for location selection"
+  },
+  "selectTimeForReminder": "Choose when you'd like to be reminded",
+  "@selectTimeForReminder": {
+    "description": "Instruction for time selection"
+  },
+  "mapView": "Map View",
+  "@mapView": {
+    "description": "Map view placeholder text"
+  },
+  "changeLocation": "Change Location",
+  "@changeLocation": {
+    "description": "Button to change selected location"
+  },
+  "searchLocation": "Search Location",
+  "@searchLocation": {
+    "description": "Button to search for location"
+  },
+  "selectedLocation": "Selected Location",
+  "@selectedLocation": {
+    "description": "Label for selected location"
+  },
+  "noLocationSelected": "No location selected",
+  "@noLocationSelected": {
+    "description": "Placeholder when no location is selected"
+  },
+  "tapToSearchLocation": "Tap to search for a location",
+  "@tapToSearchLocation": {
+    "description": "Instruction to search for location"
+  },
+  "quickOptions": "Quick Options",
+  "@quickOptions": {
+    "description": "Label for quick time options"
+  },
+  "customDateTime": "Custom Date & Time",
+  "@customDateTime": {
+    "description": "Label for custom date/time section"
+  },
+  "selectDate": "Select Date",
+  "@selectDate": {
+    "description": "Button to select date"
+  },
+  "selectTime": "Select Time",
+  "@selectTime": {
+    "description": "Button to select time"
+  },
+  "reminderScheduledFor": "Reminder scheduled for:",
+  "@reminderScheduledFor": {
+    "description": "Label showing when reminder is scheduled"
+  },
+  "in15Minutes": "In 15 minutes",
+  "@in15Minutes": {
+    "description": "Quick time option"
+  },
+  "in30Minutes": "In 30 minutes",
+  "@in30Minutes": {
+    "description": "Quick time option"
+  },
+  "in1Hour": "In 1 hour",
+  "@in1Hour": {
+    "description": "Quick time option"
+  },
+  "in2Hours": "In 2 hours",
+  "@in2Hours": {
+    "description": "Quick time option"
+  },
+  "tomorrowMorning": "Tomorrow morning",
+  "@tomorrowMorning": {
+    "description": "Quick time option"
+  },
+  "additionalOptions": "Additional Options",
+  "@additionalOptions": {
+    "description": "Title for options step"
+  },
+  "customizeReminderBehavior": "Customize how your reminder works",
+  "@customizeReminderBehavior": {
+    "description": "Instruction for options step"
+  },
+  "enableNotifications": "Enable Notifications",
+  "@enableNotifications": {
+    "description": "Toggle for enabling notifications"
+  },
+  "REDACTED_TOKEN": "Receive a notification when this reminder is triggered",
+  "@REDACTED_TOKEN": {
+    "description": "Description for notification toggle"
+  },
+  "notificationMethods": "Notification Methods",
+  "@notificationMethods": {
+    "description": "Label for notification methods section"
+  },
+  "pushNotification": "Push Notification",
+  "@pushNotification": {
+    "description": "Push notification method"
+  },
+  "pushNotificationDescription": "Receive notifications on your device",
+  "@pushNotificationDescription": {
+    "description": "Push notification description"
+  },
+  "localNotification": "Local Notification",
+  "@localNotification": {
+    "description": "Local notification method"
+  },
+  "localNotificationDescription": "Scheduled notifications on this device",
+  "@localNotificationDescription": {
+    "description": "Local notification description"
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Email notification method"
+  },
+  "sms": "SMS",
+  "@sms": {
+    "description": "SMS notification method"
+  },
+  "tags": "Tags",
+  "@tags": {
+    "description": "Tags field label"
+  },
+  "tagsHint": "work, personal, urgent...",
+  "@tagsHint": {
+    "description": "Hint for tags field"
+  },
+  "separateTagsWithCommas": "Separate tags with commas",
+  "@separateTagsWithCommas": {
+    "description": "Helper text for tags field"
+  },
+  "reviewReminder": "Review Your Reminder",
+  "@reviewReminder": {
+    "description": "Title for review step"
+  },
+  "reviewReminderDetails": "Review all the details before creating your reminder",
+  "@reviewReminderDetails": {
+    "description": "Instruction for review step"
+  },
+  "triggerLocation": "Trigger Location",
+  "@triggerLocation": {
+    "description": "Label for trigger location in review"
+  },
+  "triggerTime": "Trigger Time",
+  "@triggerTime": {
+    "description": "Label for trigger time in review"
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "Notifications label in review"
+  },
+  "reminderCreated": "Reminder created successfully!",
+  "@reminderCreated": {
+    "description": "Success message when reminder is created"
+  },
+  "accessDenied": "Access Denied",
+  "@accessDenied": {
+    "description": "Access denied dialog title"
+  },
+  "ok": "OK",
+  "@ok": {
+    "description": "OK button label"
+  },
+  "snooze": "Snooze",
+  "@snooze": {
+    "description": "Snooze action label"
+  },
+  "complete": "Complete",
+  "@complete": {
+    "description": "Complete action label"
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete action label"
+  },
+  "snoozed": "Snoozed",
+  "@snoozed": {
+    "description": "Snoozed status label"
+  },
+  "overdueDays": "Overdue by {days} days",
+  "@overdueDays": {
+    "description": "Overdue by days message",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "overdueHours": "Overdue by {hours} hours",
+  "@overdueHours": {
+    "description": "Overdue by hours message",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "overdueMinutes": "Overdue by {minutes} minutes",
+  "@overdueMinutes": {
+    "description": "Overdue by minutes message",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "tomorrow": "Tomorrow",
+  "@tomorrow": {
+    "description": "Tomorrow label"
   }
 }
