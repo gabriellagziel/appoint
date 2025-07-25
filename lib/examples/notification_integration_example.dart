@@ -16,6 +16,8 @@ class NotificationIntegrationExample extends ConsumerStatefulWidget {
 
 class REDACTED_TOKEN
     extends ConsumerState<NotificationIntegrationExample> {
+  late SyncNotificationHelper syncHelper;
+
   @override
   Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
@@ -135,6 +137,8 @@ class REDACTED_TOKEN
 
 /// Example of how to set up the notification service in main.dart
 class MainAppSetupExample {
+  static late GlobalKey<ScaffoldMessengerState> messengerKey;
+
   static Widget buildApp() {
     messengerKey = GlobalKey<ScaffoldMessengerState>();
 
