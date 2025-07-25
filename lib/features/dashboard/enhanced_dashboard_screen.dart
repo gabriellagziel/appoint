@@ -3,7 +3,7 @@ import 'package:appoint/features/rewards/screens/rewards_screen.dart';
 import 'package:appoint/features/subscriptions/screens/subscription_screen.dart';
 import 'package:appoint/features/messaging/screens/messages_list_screen.dart';
 import 'package:appoint/features/search/screens/search_screen.dart';
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

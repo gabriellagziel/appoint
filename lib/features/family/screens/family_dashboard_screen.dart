@@ -1,4 +1,4 @@
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/models/family_link.dart';
 import 'package:appoint/models/privacy_request.dart';
 import 'package:appoint/providers/auth_provider.dart';

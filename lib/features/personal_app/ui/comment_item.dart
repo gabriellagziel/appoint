@@ -1,4 +1,4 @@
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/models/comment.dart';
 import 'package:appoint/utils/localized_date_formatter.dart';
 import 'package:flutter/material.dart';
