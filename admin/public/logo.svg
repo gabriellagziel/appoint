@@ -1,0 +1,28 @@
+<?xml version=10encoding="UTF-8vg width=512ight=512ox=0212xmlns=http://www.w3org/200svg">
+  <!-- Background circle -->
+  <circle cx=256240ll=white stroke="#f0f0f0troke-width="2"/>
+  
+  <!-- 8 stylized human figures arranged in a circle -->
+  <!-- Top figure (Orange) -->
+  <path d=M2560 C25680, 240 100, 240 120 C240 140, 256 160, 256 160 C256 160, 272140272207215680256l="#FF8C00 
+  <!-- Top-right figure (Peach) -->
+  <path d=M320 120 C320 120, 340 140, 340 160 C340 180, 320 200, 320 200 C320 200, 300 180, 300160 C3014032012032120 fill="#FFB366"/>
+  
+  <!-- Right figure (Teal) -->
+  <path d=M360 256 C360 256, 340 240, 340 220 C340 200, 360 180, 360 180 C360 180, 380 200, 380220 C380240360256360256ll="#20>
+  
+  <!-- Bottom-right figure (Purple) -->
+  <path d=M320 360 C320 360, 340 340, 340 320 C340 300, 320 280, 320 280 C320 280, 300 300, 300320 C3004020360,32360 fill="#8A2BE2"/>
+  
+  <!-- Bottom figure (Dark Purple) -->
+  <path d=M256 432 C256 432, 240 412, 240 392 C240 372, 256 352, 256 352 C256 352, 272 372, 272392 C27241225643256432 fill="#4B0082"/>
+  
+  <!-- Bottom-left figure (Blue) -->
+  <path d=M192 360 C192 360, 172 340, 172 320 C172 300, 192 280, 192 280 C192 280, 212 300, 21232021234019236192360ll="#41690  <!-- Left figure (Green) -->
+  <path d=M152 256 C152 256, 172 240, 172 220 C172 200, 152 180, 152 180 C152 180, 132 200, 132220132240152256152256ill=#322  
+  <!-- Top-left figure (Yellow) -->
+  <path d=M192 120 C192 120, 212 140, 212 160 C212 180, 192 200, 192 200 C192 200, 172 180, 172160 C172140192120192120 fill="#FFD700"/>
+  
+  <!-- Center connection point -->
+  <circle cx=256y="256r=8ill="#333"/>
+</svg>

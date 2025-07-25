@@ -11,6 +11,7 @@ import {
   Home,
   Menu
 } from "lucide-react"
+import { Logo } from "./Logo"
 
 interface SidebarProps {
   isOpen: boolean
@@ -45,7 +46,7 @@ export function Sidebar({ isOpen, onToggle }: SidebarProps) {
         <div className="flex h-full flex-col">
           {/* Header */}
           <div className="flex h-16 items-center justify-between px-6 border-b">
-            <h1 className="text-xl font-bold text-gray-900">Admin Panel</h1>
+            <Logo size={32} showText={false} />
             <Button
               variant="ghost"
               size="sm"
