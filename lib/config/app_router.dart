@@ -703,7 +703,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              meeting['title'] ?? 'Meeting',
+                              meeting['title'] as String? ?? 'Meeting',
                               style: const TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
@@ -711,7 +711,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                             ),
                             if (meeting['description'] != null)
                               Text(
-                                meeting['description'],
+                                meeting['description'] as String,
                                 style: TextStyle(
                                   color: Colors.grey.shade600,
                                   fontSize: 14,
@@ -723,8 +723,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                     ],
                   ),
                   const SizedBox(height: 16),
-                  _buildInfoRow(Icons.calendar_today, 'Date', meeting['date']),
-                  _buildInfoRow(Icons.access_time, 'Time', meeting['time']),
+                  _buildInfoRow(Icons.calendar_today, 'Date', meeting['date'] as String?),
+                  _buildInfoRow(Icons.access_time, 'Time', meeting['time'] as String?),
                   if (meeting['duration'] != null)
                     _buildInfoRow(Icons.timer, 'Duration', '${meeting['duration']} minutes'),
                 ],
@@ -760,7 +760,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                           const SizedBox(width: 8),
                           Expanded(
                             child: Text(
-                              meeting['link'],
+                              meeting['link'] as String,
                               style: const TextStyle(color: Colors.blue),
                             ),
                           ),
@@ -771,7 +771,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton.icon(
-                        onPressed: () => _joinMeeting(meeting['link']),
+                        onPressed: () => _joinMeeting(meeting['link'] as String?),
                         icon: const Icon(Icons.video_call),
                         label: const Text('Join Meeting'),
                         style: ElevatedButton.styleFrom(
