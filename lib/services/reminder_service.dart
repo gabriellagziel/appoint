@@ -77,7 +77,7 @@ class ReminderService {
   /// Create a new reminder with business plan enforcement
   Future<Reminder> createReminder({
     required String title,
-    required String description,
+    String? description,
     required ReminderType type,
     DateTime? triggerTime,
     ReminderLocation? location,
