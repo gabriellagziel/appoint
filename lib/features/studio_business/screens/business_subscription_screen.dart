@@ -56,7 +56,6 @@ class _BusinessSubscriptionScreenState
         setState(() => _isLoading = false);
       }
     }
-  }
 
   Future<void> _subscribeToProfessional() async {
     setState(() => _isLoading = true);
