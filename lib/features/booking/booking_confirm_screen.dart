@@ -9,6 +9,8 @@ import 'package:appoint/providers/notification_provider.dart';
 import 'package:appoint/services/maps_service.dart';
 import 'package:appoint/widgets/business_header_widget.dart';
 import 'package:appoint/widgets/whatsapp_share_button.dart';
+import 'package:appoint/widgets/app_logo.dart';
+import 'package:appoint/constants/app_branding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -32,7 +34,13 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
         ModalRoute.of(context)!.settings.arguments! as BookingRequestArgs;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Confirm Booking'),
+        title: Row(
+          children: [
+            const AppLogo(size: 24, logoOnly: true),
+            const SizedBox(width: 8),
+            const Text('Confirm Booking'),
+          ],
+        ),
         backgroundColor: Colors.blue.shade600,
         foregroundColor: Colors.white,
         elevation: 0,
