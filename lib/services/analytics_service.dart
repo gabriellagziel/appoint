@@ -205,10 +205,10 @@ class AnalyticsService {
         final message = AdminBroadcastMessage.fromJson({'id': doc.id, ...data});
 
         totalRecipients += message.actualRecipients ?? 0;
-        totalSent += message.sentCount ?? 0;
+        totalSent += message.actualRecipients ?? 0;
         totalOpened += message.openedCount ?? 0;
         totalClicked += message.clickedCount ?? 0;
-        totalResponses += message.formResponseCount ?? 0;
+        totalResponses += message.pollResponseCount ?? 0;
 
         // Breakdown by type
         final typeKey = message.type.name;
@@ -358,24 +358,24 @@ class AnalyticsService {
       final summary = AnalyticsSummary(
         totalBroadcasts: 1,
         totalRecipients: message.actualRecipients ?? 0,
-        totalSent: message.sentCount ?? 0,
+        totalSent: message.actualRecipients ?? 0,
         totalOpened: message.openedCount ?? 0,
         totalClicked: message.clickedCount ?? 0,
-        totalResponses: message.formResponseCount ?? 0,
-        openRate: message.sentCount != null && message.sentCount! > 0
-            ? ((message.openedCount ?? 0) / message.sentCount!) * 100
+        totalResponses: message.pollResponseCount ?? 0,
+        openRate: message.actualRecipients != null && message.actualRecipients! > 0
+            ? ((message.openedCount ?? 0) / message.actualRecipients!) * 100
             : 0,
         clickRate: message.openedCount != null && message.openedCount! > 0
             ? ((message.clickedCount ?? 0) / message.openedCount!) * 100
             : 0,
-        responseRate: message.sentCount != null && message.sentCount! > 0
-            ? ((message.formResponseCount ?? 0) / message.sentCount!) * 100
+        responseRate: message.actualRecipients != null && message.actualRecipients! > 0
+            ? ((message.pollResponseCount ?? 0) / message.actualRecipients!) * 100
             : 0,
         deliveryRate: message.actualRecipients != null && message.actualRecipients! > 0
-            ? ((message.sentCount ?? 0) / message.actualRecipients!) * 100
+            ? ((message.actualRecipients ?? 0) / message.actualRecipients!) * 100
             : 0,
-        engagementRate: message.sentCount != null && message.sentCount! > 0
-            ? (((message.openedCount ?? 0) + (message.clickedCount ?? 0)) / message.sentCount!) * 100
+        engagementRate: message.actualRecipients != null && message.actualRecipients! > 0
+            ? (((message.openedCount ?? 0) + (message.clickedCount ?? 0)) / message.actualRecipients!) * 100
             : 0,
         countryBreakdown: {},
         languageBreakdown: {},
