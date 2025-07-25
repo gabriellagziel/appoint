@@ -238,7 +238,7 @@ export const autoAssignAmbassadors = functions.https.onRequest(async (req, res) 
     res.json({ success: true, assignedCount });
   } catch (error) {
     console.error('Error in autoAssignAmbassadors:', error);
-    res.status(500).json({ success: false, error: error.message });
+    res.status(500).json({ success: false, error: (error as Error).message });
   }
 });
 
@@ -267,7 +267,7 @@ export const getQuotaStats = functions.https.onRequest(async (req, res) => {
     res.json(stats);
   } catch (error) {
     console.error('Error in getQuotaStats:', error);
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: (error as Error).message });
   }
 });
 
@@ -289,7 +289,7 @@ export const assignAmbassador = functions.https.onRequest(async (req, res) => {
     }
   } catch (error) {
     console.error('Error in assignAmbassador:', error);
-    res.status(500).json({ success: false, error: error.message });
+    res.status(500).json({ success: false, error: (error as Error).message });
   }
 });
 
