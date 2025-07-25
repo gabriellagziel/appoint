@@ -144,7 +144,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "ar": [
@@ -292,7 +300,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "bg": [
@@ -440,7 +456,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "bn": [
@@ -588,7 +612,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "bn_BD": [
@@ -736,7 +768,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "bs": [
@@ -884,7 +924,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "ca": [
@@ -1032,7 +1080,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "cs": [
@@ -1180,7 +1236,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "cy": [
@@ -1328,7 +1392,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "da": [
@@ -1476,7 +1548,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "de": [
@@ -1624,7 +1704,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "es": [
@@ -1772,7 +1860,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "es_419": [
@@ -1920,7 +2016,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "et": [
@@ -2068,7 +2172,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "eu": [
@@ -2216,7 +2328,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "fa": [
@@ -2364,7 +2484,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "fi": [
@@ -2512,7 +2640,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "fo": [
@@ -2660,7 +2796,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "fr": [
@@ -2808,7 +2952,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "ga": [
@@ -2956,7 +3108,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "gl": [
@@ -3104,7 +3264,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "ha": [
@@ -3252,7 +3420,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "he": [
@@ -3400,7 +3576,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "hi": [
@@ -3548,7 +3732,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "hr": [
@@ -3696,7 +3888,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "hu": [
@@ -3844,7 +4044,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "id": [
@@ -3992,7 +4200,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "is": [
@@ -4140,7 +4356,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "it": [
@@ -4288,7 +4512,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "ja": [
@@ -4436,7 +4668,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "ko": [
@@ -4584,7 +4824,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "lt": [
@@ -4732,7 +4980,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "lv": [
@@ -4880,7 +5136,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "mk": [
@@ -5028,7 +5292,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "ms": [
@@ -5176,7 +5448,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "mt": [
@@ -5324,7 +5604,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "nl": [
@@ -5472,7 +5760,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "no": [
@@ -5620,7 +5916,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "pl": [
@@ -5768,7 +6072,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "pt": [
@@ -5916,7 +6228,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "pt_BR": [
@@ -6064,7 +6384,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "ro": [
@@ -6212,7 +6540,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "ru": [
@@ -6360,7 +6696,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "sk": [
@@ -6508,7 +6852,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "sl": [
@@ -6656,7 +7008,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "sq": [
@@ -6804,7 +7164,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "sr": [
@@ -6952,7 +7320,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "sv": [
@@ -7100,7 +7476,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "th": [
@@ -7248,7 +7632,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "tr": [
@@ -7396,7 +7788,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "uk": [
@@ -7544,7 +7944,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "ur": [
@@ -7692,7 +8100,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "vi": [
@@ -7840,7 +8256,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "zh": [
@@ -7988,7 +8412,15 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ],
 
   "zh_Hant": [
@@ -8136,6 +8568,14 @@
     "viewRewards",
     "yaml",
     "yourReferralLink",
-    "progressToPremium"
+    "progressToPremium",
+    "errorEstimatingRecipients",
+    "errorPickingImage",
+    "errorPickingVideo",
+    "userNotAuthenticated",
+    "failedToUploadImage",
+    "failedToUploadVideo",
+    "image",
+    "video"
   ]
 }

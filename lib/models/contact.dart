@@ -16,6 +16,6 @@ class Contact with _$Contact {
   factory Contact.fromJson(Map<String, dynamic> json) =>
       _$ContactFromJson(json);
       
-  // Getters for backward compatibility
-  String? get phone => this.phoneNumber;
+  // Getters for backward compatibility  
+  String? get phone => phoneNumber;
 }
