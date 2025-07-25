@@ -3,6 +3,7 @@
 import { signOut, useSession } from "next-auth/react"
 import { Button } from "@/components/ui/button"
 import { Menu, LogOut, User } from "lucide-react"
+import { Logo } from "./Logo"
 
 interface TopNavProps {
   onSidebarToggle: () => void
@@ -15,7 +16,7 @@ export function TopNav({ onSidebarToggle }: TopNavProps) {
     <header className="sticky top-0 z-40 bg-white border-b">
       <div className="flex h-16 items-center justify-between px-4 lg:px-6">
         {/* Left side */}
-        <div className="flex items-center">
+        <div className="flex items-center space-x-4">
           <Button
             variant="ghost"
             size="sm"
@@ -24,6 +25,9 @@ export function TopNav({ onSidebarToggle }: TopNavProps) {
           >
             <Menu className="h-5 w-5" />
           </Button>
+          <div className="hidden lg:block">
+            <Logo size={32} showText={true} />
+          </div>
         </div>
 
         {/* Right side */}
