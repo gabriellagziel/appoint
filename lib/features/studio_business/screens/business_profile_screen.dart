@@ -3,6 +3,8 @@ import 'package:appoint/features/studio_business/models/business_profile.dart';
 import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
 import 'package:appoint/features/studio_business/services/business_profile_service.dart';
 import 'package:appoint/infra/firebase_storage_service.dart';
+import 'package:appoint/widgets/app_logo.dart';
+import 'package:appoint/widgets/app_attribution.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -83,7 +85,13 @@ class _BusinessProfileScreenState extends ConsumerState<BusinessProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Business Profile'),
+        title: Row(
+          children: [
+            const AppLogo(size: 24, logoOnly: true),
+            const SizedBox(width: 8),
+            const Text('Business Profile'),
+          ],
+        ),
         actions: [
           TextButton.icon(
             onPressed: _isSaving ? null : _saveProfile,
@@ -98,22 +106,30 @@ class _BusinessProfileScreenState extends ConsumerState<BusinessProfileScreen> {
           ),
         ],
       ),
-      body: Form(
-        key: _formKey,
-        child: ListView(
-          padding: const EdgeInsets.all(16),
-          children: [
-            _buildBrandingSection(),
-            const SizedBox(height: 32),
-            _buildBasicInfoSection(),
-            const SizedBox(height: 32),
-            _buildServicesSection(),
-            const SizedBox(height: 32),
-            _buildBusinessHoursSection(),
-            const SizedBox(height: 32),
-            _buildPreviewSection(),
-          ],
-        ),
+      body: Column(
+        children: [
+          Expanded(
+            child: Form(
+              key: _formKey,
+              child: ListView(
+                padding: const EdgeInsets.all(16),
+                children: [
+                  _buildBrandingSection(),
+                  const SizedBox(height: 32),
+                  _buildBasicInfoSection(),
+                  const SizedBox(height: 32),
+                  _buildServicesSection(),
+                  const SizedBox(height: 32),
+                  _buildBusinessHoursSection(),
+                  const SizedBox(height: 32),
+                  _buildPreviewSection(),
+                ],
+              ),
+            ),
+          ),
+          // Attribution - Required for all business-branded screens
+          const AppAttributionFooter(),
+        ],
       ),
     );
   }
