@@ -17,5 +17,5 @@ class Contact with _$Contact {
       _$ContactFromJson(json);
       
   // Getters for backward compatibility  
-  String? get phone => phoneNumber;
+  String? get phone => this.phoneNumber;
 }

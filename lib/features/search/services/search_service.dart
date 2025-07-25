@@ -188,7 +188,7 @@ class SearchService {
         imageUrl: data['imageUrl'] as String? ?? '',
         metadata: data,
         availability: data['isAvailable'] as bool? ?? true,
-        price: data['price']?.toDouble(),
+        price: (data['price'] as double?)?.toDouble(),
       );
     }).toList();
   }
@@ -209,8 +209,8 @@ class SearchService {
       final data = doc.data() as Map<String, dynamic>;
       return SearchResult(
         id: doc.id,
-        title: data['displayName'] ?? '',
-        description: data['bio'] ?? '',
+        title: data['displayName'] as String? ?? '',
+        description: data['bio'] as String? ?? '',
         type: 'user',
         rating: 0.0, // Users don't have ratings
         imageUrl: data['photoURL'] ?? '',
