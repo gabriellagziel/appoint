@@ -91,7 +91,6 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
         ),
       ),
     );
-  }
 
   Future<void> _connectBusiness() async {
     if (!_formKey.currentState!.validate()) {
@@ -143,4 +142,3 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
     // Simple validation - in a real app, this would check against a database
     return code.startsWith('UPGRADE_') && code.length >= 10;
   }
-}
