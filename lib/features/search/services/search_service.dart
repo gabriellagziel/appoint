@@ -143,15 +143,15 @@ class SearchService {
       final data = doc.data() as Map<String, dynamic>;
       return SearchResult(
         id: doc.id,
-        title: data['name'] ?? '',
-        description: data['description'] ?? '',
+        title: data['name'] as String? ?? '',
+        description: data['description'] as String? ?? '',
         type: 'business',
-        rating: (data['rating'] ?? 0.0).toDouble(),
-        imageUrl: data['imageUrl'] ?? '',
+        rating: ((data['rating'] as double?) ?? 0.0).toDouble(),
+        imageUrl: data['imageUrl'] as String? ?? '',
         metadata: data,
-        distance: data['distance']?.toDouble(),
+        distance: (data['distance'] as double?)?.toDouble(),
         availability: data['isAvailable'] ?? true,
-        price: data['averagePrice']?.toDouble(),
+        price: (data['averagePrice'] as double?)?.toDouble(),
       );
     }).toList();
   }
