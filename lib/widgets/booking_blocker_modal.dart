@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:appoint/models/personal_subscription.dart';
 
 class BookingBlockerModal extends ConsumerWidget {
-  const BookingBlockerModal({super.key});
+  const BookingBlockerModal({
+    super.key,
+    this.subscriptionStatus,
+    this.freeMeetingsRemaining,
+    this.weeklyMeetingsRemaining,
+  });
+
+  final PersonalSubscriptionStatus? subscriptionStatus;
+  final int? freeMeetingsRemaining;
+  final int? weeklyMeetingsRemaining;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -30,7 +40,7 @@ class BookingBlockerModal extends ConsumerWidget {
             
             // Title
             Text(
-              'Using App-Oint for Business?',
+              _getTitle(),
               style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: Colors.grey[800],
@@ -41,7 +51,7 @@ class BookingBlockerModal extends ConsumerWidget {
             
             // Message
             Text(
-              'You\'ve reached the weekly limit of 21 meetings. Open a business profile to continue booking without limits.',
+              _getMessage(),
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                 color: Colors.grey[600],
                 height: 1.5,
@@ -66,20 +76,20 @@ class BookingBlockerModal extends ConsumerWidget {
                   ),
                 ),
                 const SizedBox(width: 12),
-                Expanded(
-                  child: ElevatedButton(
-                    onPressed: () => Navigator.of(context).pop(true),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.orange.shade600,
-                      foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(vertical: 12),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
+                                  Expanded(
+                    child: ElevatedButton(
+                      onPressed: () => Navigator.of(context).pop(true),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: _getButtonColor(),
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
                       ),
+                      child: Text(_getButtonText()),
                     ),
-                    child: const Text('Open Business Profile'),
                   ),
-                ),
               ],
             ),
           ],
@@ -87,13 +97,85 @@ class BookingBlockerModal extends ConsumerWidget {
       ),
     );
   }
+
+  String _getTitle() {
+    if (subscriptionStatus == null) {
+      return 'Using App-Oint for Business?';
+    }
+
+    switch (subscriptionStatus!) {
+      case PersonalSubscriptionStatus.free:
+        return 'Free Meetings Limit Reached';
+      case PersonalSubscriptionStatus.premium:
+        return 'Weekly Meeting Limit Reached';
+      case PersonalSubscriptionStatus.adSupported:
+      case PersonalSubscriptionStatus.expired:
+        return 'Need More Meetings?';
+    }
+  }
+
+  String _getMessage() {
+    if (subscriptionStatus == null) {
+      return 'You\'ve reached the weekly limit of 21 meetings. Open a business profile to continue booking without limits.';
+    }
+
+    switch (subscriptionStatus!) {
+      case PersonalSubscriptionStatus.free:
+        return 'You\'ve used your 5 free meetings with full features. Upgrade to Premium for €4/month or open a business profile for unlimited meetings.';
+      case PersonalSubscriptionStatus.premium:
+        return 'You\'ve reached your weekly limit of ${weeklyMeetingsRemaining ?? 20} meetings. Upgrade to our Business platform for unlimited meetings.';
+      case PersonalSubscriptionStatus.adSupported:
+        return 'Upgrade to Premium for €4/month to remove ads and get map access, or open a business profile for unlimited meetings.';
+      case PersonalSubscriptionStatus.expired:
+        return 'Your Premium subscription has expired. Renew for €4/month or open a business profile for unlimited meetings.';
+    }
+  }
+
+  String _getButtonText() {
+    if (subscriptionStatus == null) {
+      return 'Open Business Profile';
+    }
+
+    switch (subscriptionStatus!) {
+      case PersonalSubscriptionStatus.free:
+      case PersonalSubscriptionStatus.adSupported:
+      case PersonalSubscriptionStatus.expired:
+        return 'Upgrade Options';
+      case PersonalSubscriptionStatus.premium:
+        return 'Business Plans';
+    }
+  }
+
+  Color _getButtonColor() {
+    if (subscriptionStatus == null) {
+      return Colors.orange.shade600;
+    }
+
+    switch (subscriptionStatus!) {
+      case PersonalSubscriptionStatus.free:
+      case PersonalSubscriptionStatus.adSupported:
+      case PersonalSubscriptionStatus.expired:
+        return Colors.blue.shade600;
+      case PersonalSubscriptionStatus.premium:
+        return Colors.orange.shade600;
+    }
+  }
 }
 
 /// Helper function to show the booking blocker modal
-Future<bool?> showBookingBlockerModal(BuildContext context) {
+Future<bool?> showBookingBlockerModal(
+  BuildContext context, {
+  PersonalSubscriptionStatus? subscriptionStatus,
+  int? freeMeetingsRemaining,
+  int? weeklyMeetingsRemaining,
+}) {
   return showDialog<bool>(
     context: context,
     barrierDismissible: false,
-    builder: (context) => const BookingBlockerModal(),
+    builder: (context) => BookingBlockerModal(
+      subscriptionStatus: subscriptionStatus,
+      freeMeetingsRemaining: freeMeetingsRemaining,
+      weeklyMeetingsRemaining: weeklyMeetingsRemaining,
+    ),
   );
 }
