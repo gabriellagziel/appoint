@@ -466,10 +466,10 @@ class FamilyDashboardScreen extends ConsumerWidget {
   }
 
   void _showRevokeConfirmation(
-      BuildContext context, final WidgetRef ref, final FamilyLink link,) {
+      BuildContext context, final WidgetRef ref, final FamilyLink link) {
     final l10n = AppLocalizations.of(context)!;
 
-    showDialog(
+    showDialog<void>(
       context: context,
       builder: (context) => AlertDialog(
         title: Text(l10n.revokeAccess),
