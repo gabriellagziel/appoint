@@ -12,6 +12,7 @@ Welcome to the AppOint documentation. This directory contains comprehensive docu
 - **[Deployment](deployment/)** - Deployment and infrastructure guides
 
 ### Feature Documentation
+- **[Features Overview](features/README.md)** - Complete feature documentation index
 - **[Admin Panel](features/admin/)** - Admin dashboard and management features
 - **[Booking System](features/booking/)** - Appointment booking and management
 - **[Family Management](features/family/)** - Family account and child management
