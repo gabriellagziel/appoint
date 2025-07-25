@@ -296,7 +296,6 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
         setState(() => _isAdding = false);
       }
     }
-  }
 
   Future<void> _updateRoom(String roomId) async {
     if (!_formKey.currentState!.validate()) {
