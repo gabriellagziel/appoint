@@ -464,5 +464,4 @@ class SubscriptionScreen extends ConsumerWidget {
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('Billing history coming soon!')),
     );
-  }
-} 
+  } 
