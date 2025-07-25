@@ -56,7 +56,6 @@ class REDACTED_TOKEN
         setState(() => _isLoading = false);
       }
     }
-  }
 
   Future<void> _subscribeToProfessional() async {
     setState(() => _isLoading = true);
