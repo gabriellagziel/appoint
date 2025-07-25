@@ -616,5 +616,4 @@ class RewardsScreen extends ConsumerWidget {
         );
       }
     }
-  }
-} 
+  } 
