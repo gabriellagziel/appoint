@@ -174,10 +174,9 @@ async function sendInvoiceEmail({
 }
 
 // Monthly billing job for API usage (existing)
-export const monthlyBillingJob = functions.pubsub
-  .schedule('15 0 1 * *') // 00:15 on first day UTC
-  .timeZone('UTC')
-  .onRun(async () => {
+export const monthlyBillingJob = functions.scheduler.onSchedule(
+  '15 0 1 * *',
+  async (event) => {
     const year = new Date().getUTCFullYear();
     const month = new Date().getUTCMonth(); // previous month? Actually runs first day for previous month compute
     const billingPeriodStart = new Date(Date.UTC(year, month - 1, 1));
@@ -250,10 +249,9 @@ export const monthlyBillingJob = functions.pubsub
   });
 
 // Monthly map overage billing job (NEW)
-export const monthlyMapOverageBilling = functions.pubsub
-  .schedule('30 0 1 * *') // 00:30 on first day UTC - after main billing
-  .timeZone('UTC')
-  .onRun(async () => {
+export const monthlyMapOverageBilling = functions.scheduler.onSchedule(
+  '30 0 1 * *',
+  async (event) => {
     const year = new Date().getUTCFullYear();
     const month = new Date().getUTCMonth();
 
@@ -359,8 +357,8 @@ function getMapLimitForPlan(plan: string): number {
 }
 
 // Function to manually trigger overage invoice generation (for testing)
-export const generateMapOverageInvoice = functions.https.onCall(async (data, context) => {
-  const userId = context.auth?.uid;
+export const generateMapOverageInvoice = functions.https.onCall(async (request) => {
+  const userId = request.auth?.uid;
   
   if (!userId) {
     throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -485,9 +483,9 @@ export const importBankPayments = functions.https.onRequest(async (req, res) => 
 });
 
 // Reset map usage for all subscriptions at billing period start (helper function)
-export const resetMapUsageForNewPeriod = functions.https.onCall(async (data, context) => {
+export const resetMapUsageForNewPeriod = functions.https.onCall(async (request) => {
   // This should be called by Stripe webhooks when subscription periods update
-  const { subscriptionId } = data;
+  const { subscriptionId } = request.data;
   
   if (!subscriptionId) {
     throw new functions.https.HttpsError('invalid-argument', 'Subscription ID required');

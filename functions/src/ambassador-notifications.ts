@@ -183,7 +183,7 @@ export const sendMonthlyReminders = functions.scheduler.onSchedule('0 10 * * *',
       // Only send reminders 5 days before month end
       if (daysUntilEndOfMonth !== 5) {
         console.log(`Not time for monthly reminders. ${daysUntilEndOfMonth} days until month end.`);
-        return null;
+        return;
       }
       
       const ambassadors = await db.collection('ambassador_profiles')
@@ -209,14 +209,14 @@ export const sendMonthlyReminders = functions.scheduler.onSchedule('0 10 * * *',
             sendPush: true,
             sendEmail: true,
             sendInApp: true,
-          }, { auth: { uid: 'system' } } as any);
+          });
           
           sentCount++;
         }
       }
       
       console.log(`Monthly reminder check completed. Sent ${sentCount} reminders.`);
-      return null;
+      return;
       
     } catch (error) {
       console.error('Error in monthly reminder job:', error);
@@ -348,7 +348,7 @@ async function sendEmailNotification(email: string, subject: string, body: strin
  * Convenience functions for specific notification types
  */
 export async function sendPromotionNotification(userId: string, languageCode: string, tier: string): Promise<void> {
-  await sendAmbassadorNotification({
+  await sendNotificationHelper({
     userId,
     type: AmbassadorNotificationType.PROMOTION,
     languageCode,
@@ -356,7 +356,7 @@ export async function sendPromotionNotification(userId: string, languageCode: st
     sendPush: true,
     sendEmail: true,
     sendInApp: true,
-  }, { auth: { uid: 'system' } } as any);
+  });
 }
 
 export async function sendTierUpgradeNotification(
@@ -366,7 +366,7 @@ export async function sendTierUpgradeNotification(
   newTier: string, 
   totalReferrals: number
 ): Promise<void> {
-  await sendAmbassadorNotification({
+  await sendNotificationHelper({
     userId,
     type: AmbassadorNotificationType.TIER_UPGRADE,
     languageCode,
@@ -378,7 +378,7 @@ export async function sendTierUpgradeNotification(
     sendPush: true,
     sendEmail: true,
     sendInApp: true,
-  }, { auth: { uid: 'system' } } as any);
+  });
 }
 
 export async function REDACTED_TOKEN(
@@ -387,7 +387,7 @@ export async function REDACTED_TOKEN(
   currentReferrals: number, 
   minimumRequired: number
 ): Promise<void> {
-  await sendAmbassadorNotification({
+  await sendNotificationHelper({
     userId,
     type: AmbassadorNotificationType.PERFORMANCE_WARNING,
     languageCode,
@@ -398,7 +398,7 @@ export async function REDACTED_TOKEN(
     sendPush: true,
     sendEmail: true,
     sendInApp: true,
-  }, { auth: { uid: 'system' } } as any);
+  });
 }
 
 export async function sendDemotionNotification(
@@ -406,7 +406,7 @@ export async function sendDemotionNotification(
   languageCode: string, 
   reason: string
 ): Promise<void> {
-  await sendAmbassadorNotification({
+  await sendNotificationHelper({
     userId,
     type: AmbassadorNotificationType.DEMOTION,
     languageCode,
@@ -414,7 +414,7 @@ export async function sendDemotionNotification(
     sendPush: true,
     sendEmail: true,
     sendInApp: true,
-  }, { auth: { uid: 'system' } } as any);
+  });
 }
 
 export async function sendReferralSuccessNotification(
@@ -423,7 +423,7 @@ export async function sendReferralSuccessNotification(
   referredUserName: string, 
   totalReferrals: number
 ): Promise<void> {
-  await sendAmbassadorNotification({
+  await sendNotificationHelper({
     userId,
     type: AmbassadorNotificationType.REFERRAL_SUCCESS,
     languageCode,
@@ -434,5 +434,5 @@ export async function sendReferralSuccessNotification(
     sendPush: true,
     sendEmail: false, // Usually don't email for every referral
     sendInApp: true,
-  }, { auth: { uid: 'system' } } as any);
+  });
 }
