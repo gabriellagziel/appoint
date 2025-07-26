@@ -77,7 +77,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get cancelInviteConfirmation => '[VI] Hủy xác nhận lời mời';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return '[VI] Đã tạo';
   }
 
@@ -137,7 +137,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get participants => '[VI] Người tham gia';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return '[VI] Người nhận';
   }
 
@@ -177,7 +177,7 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return '[VI] Nội dung';
   }
 
@@ -230,7 +230,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get removeChild => '[VI] Xóa trẻ em';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return '[VI] Trạng thái';
   }
 
@@ -281,7 +281,7 @@ class AppLocalizationsVi extends AppLocalizations {
       '[VI] Thu hồi quyền truy cập thành công';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return '[VI] Loại';
   }
 
@@ -412,7 +412,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get inviteDetail => '[VI] Chi tiết lời mời';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return '[VI] Đã lên lịch';
   }
 
@@ -425,7 +425,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get scheduling => '[VI] Đang lên lịch';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '[VI] [VI] Error saving message';
   }
 
@@ -458,7 +458,7 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '[VI] [VI] Error sending message';
   }
 
@@ -514,12 +514,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get pollOptions => '[VI] [VI] Poll Options';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return '[VI] [VI] Clicked';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return '[VI] [VI] Link';
   }
 
@@ -2677,4 +2677,73 @@ class AppLocalizationsVi extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[VI] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Vietnamese)';
   }
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get pleaseEnterTitle => 'Please enter a title';
+
+  @override
+  String get messageType => 'Message Type';
+
+  @override
+  String get pleaseEnterContent => 'Please enter content';
+
+  @override
+  String get imageSelected => 'Image selected';
+
+  @override
+  String get videoSelected => 'Video selected';
+
+  @override
+  String get externalLink => 'External Link';
+
+  @override
+  String get pleaseEnterLink => 'Please enter a link';
+
+  @override
+  String get estimatedRecipients => 'Estimated recipients';
+
+  @override
+  String get countries => 'Countries';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get subscriptionTiers => 'Subscription Tiers';
+
+  @override
+  String get userRoles => 'User Roles';
+
+  @override
+  String get errorEstimatingRecipients => 'Error estimating recipients';
+
+  @override
+  String get errorPickingImage => 'Error picking image';
+
+  @override
+  String get errorPickingVideo => 'Error picking video';
+
+  @override
+  String get userNotAuthenticated => 'User not authenticated';
+
+  @override
+  String get failedToUploadImage => 'Failed to upload image';
+
+  @override
+  String get failedToUploadVideo => 'Failed to upload video';
+
+  @override
+  String get image => 'Image';
+
+  @override
+  String get video => 'Video';
+
+  @override
+  String get continue1 => 'Continue';
+
+  @override
+  String get getStarted => 'Get Started';
 }

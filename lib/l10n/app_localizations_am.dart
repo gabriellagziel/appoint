@@ -77,7 +77,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get cancelInviteConfirmation => '[AM] የግብዣ እውቀት ሰርዝ';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return 'ተፈጠረ';
   }
 
@@ -137,7 +137,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get participants => 'ተሳታፊዎች';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return 'ተቀባዮች';
   }
 
@@ -177,7 +177,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return 'ይዘት';
   }
 
@@ -230,7 +230,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get removeChild => '[AM] ልጅ አስወግድ';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return 'ሁኔታ';
   }
 
@@ -280,7 +280,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get accessRevokedSuccessfully => '[AM] መዳረሻ በትክክል ተሰርዟል';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return 'ዓይነት';
   }
 
@@ -411,7 +411,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get inviteDetail => '[AM] ዝርዝር ግብዣ';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return 'ተዘጋጅቷል';
   }
 
@@ -424,7 +424,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get scheduling => '[AM] በማዘጋጀት ላይ';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '[AM] መልዕክት ማስቀመጥ ስህተት';
   }
 
@@ -457,7 +457,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '[AM] መልዕክት ማልክት ስህተት';
   }
 
@@ -512,12 +512,12 @@ class AppLocalizationsAm extends AppLocalizations {
   String get pollOptions => '[AM] የምርጫ አማራጮች';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return 'ተጫነ';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return 'አገናኝ';
   }
 
@@ -2663,4 +2663,73 @@ class AppLocalizationsAm extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[AM] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Amharic)';
   }
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get pleaseEnterTitle => 'Please enter a title';
+
+  @override
+  String get messageType => 'Message Type';
+
+  @override
+  String get pleaseEnterContent => 'Please enter content';
+
+  @override
+  String get imageSelected => 'Image selected';
+
+  @override
+  String get videoSelected => 'Video selected';
+
+  @override
+  String get externalLink => 'External Link';
+
+  @override
+  String get pleaseEnterLink => 'Please enter a link';
+
+  @override
+  String get estimatedRecipients => 'Estimated recipients';
+
+  @override
+  String get countries => 'Countries';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get subscriptionTiers => 'Subscription Tiers';
+
+  @override
+  String get userRoles => 'User Roles';
+
+  @override
+  String get errorEstimatingRecipients => 'Error estimating recipients';
+
+  @override
+  String get errorPickingImage => 'Error picking image';
+
+  @override
+  String get errorPickingVideo => 'Error picking video';
+
+  @override
+  String get userNotAuthenticated => 'User not authenticated';
+
+  @override
+  String get failedToUploadImage => 'Failed to upload image';
+
+  @override
+  String get failedToUploadVideo => 'Failed to upload video';
+
+  @override
+  String get image => 'Image';
+
+  @override
+  String get video => 'Video';
+
+  @override
+  String get continue1 => 'Continue';
+
+  @override
+  String get getStarted => 'Get Started';
 }

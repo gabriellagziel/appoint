@@ -77,7 +77,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get cancelInviteConfirmation => '[HE] בטל אישור הזמנה';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return 'נוצר';
   }
 
@@ -137,7 +137,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get participants => 'משתתפים';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return 'נמענים';
   }
 
@@ -177,7 +177,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return 'תוכן';
   }
 
@@ -230,7 +230,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get removeChild => '[HE] הסר ילד';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return 'סטטוס';
   }
 
@@ -280,7 +280,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get accessRevokedSuccessfully => '[HE] הגישה בוטלה בהצלחה';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return 'סוג';
   }
 
@@ -411,7 +411,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get inviteDetail => '[HE] פרטי הזמנה';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return 'מתוזמן';
   }
 
@@ -424,7 +424,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get scheduling => 'מתוזמן';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '[HE] שגיאה בשמירת ההודעה';
   }
 
@@ -457,7 +457,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '[HE] שגיאה בשליחת הודעה';
   }
 
@@ -513,12 +513,12 @@ class AppLocalizationsHe extends AppLocalizations {
   String get pollOptions => '[HE] [HE] Poll Options';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return '[HE] [HE] Clicked';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return '[HE] [HE] Link';
   }
 
@@ -2635,4 +2635,73 @@ class AppLocalizationsHe extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[HE] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Hebrew)';
   }
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get pleaseEnterTitle => 'Please enter a title';
+
+  @override
+  String get messageType => 'Message Type';
+
+  @override
+  String get pleaseEnterContent => 'Please enter content';
+
+  @override
+  String get imageSelected => 'Image selected';
+
+  @override
+  String get videoSelected => 'Video selected';
+
+  @override
+  String get externalLink => 'External Link';
+
+  @override
+  String get pleaseEnterLink => 'Please enter a link';
+
+  @override
+  String get estimatedRecipients => 'Estimated recipients';
+
+  @override
+  String get countries => 'Countries';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get subscriptionTiers => 'Subscription Tiers';
+
+  @override
+  String get userRoles => 'User Roles';
+
+  @override
+  String get errorEstimatingRecipients => 'Error estimating recipients';
+
+  @override
+  String get errorPickingImage => 'Error picking image';
+
+  @override
+  String get errorPickingVideo => 'Error picking video';
+
+  @override
+  String get userNotAuthenticated => 'User not authenticated';
+
+  @override
+  String get failedToUploadImage => 'Failed to upload image';
+
+  @override
+  String get failedToUploadVideo => 'Failed to upload video';
+
+  @override
+  String get image => 'Image';
+
+  @override
+  String get video => 'Video';
+
+  @override
+  String get continue1 => 'Continue';
+
+  @override
+  String get getStarted => 'Get Started';
 }

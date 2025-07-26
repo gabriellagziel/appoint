@@ -77,7 +77,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get cancelInviteConfirmation => '招待の確認をキャンセル';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return '作成しました';
   }
 
@@ -137,7 +137,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get participants => '参加者';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return '受信者';
   }
 
@@ -177,7 +177,7 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return 'コンテンツ';
   }
 
@@ -230,7 +230,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get removeChild => '子供を削除';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return 'ステータス';
   }
 
@@ -280,7 +280,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get accessRevokedSuccessfully => 'アクセスが正常に取り消されました';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return 'タイプ';
   }
 
@@ -411,7 +411,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get inviteDetail => '招待の詳細';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return 'スケジュール済み';
   }
 
@@ -424,7 +424,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get scheduling => 'スケジュール中';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return 'メッセージ保存エラー';
   }
 
@@ -457,7 +457,7 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return 'メッセージ送信エラー';
   }
 
@@ -513,12 +513,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get pollOptions => '[JA] [JA] Poll Options';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return '[JA] [JA] Clicked';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return '[JA] [JA] Link';
   }
 
@@ -2667,4 +2667,73 @@ class AppLocalizationsJa extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[JA] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Japanese)';
   }
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get pleaseEnterTitle => 'Please enter a title';
+
+  @override
+  String get messageType => 'Message Type';
+
+  @override
+  String get pleaseEnterContent => 'Please enter content';
+
+  @override
+  String get imageSelected => 'Image selected';
+
+  @override
+  String get videoSelected => 'Video selected';
+
+  @override
+  String get externalLink => 'External Link';
+
+  @override
+  String get pleaseEnterLink => 'Please enter a link';
+
+  @override
+  String get estimatedRecipients => 'Estimated recipients';
+
+  @override
+  String get countries => 'Countries';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get subscriptionTiers => 'Subscription Tiers';
+
+  @override
+  String get userRoles => 'User Roles';
+
+  @override
+  String get errorEstimatingRecipients => 'Error estimating recipients';
+
+  @override
+  String get errorPickingImage => 'Error picking image';
+
+  @override
+  String get errorPickingVideo => 'Error picking video';
+
+  @override
+  String get userNotAuthenticated => 'User not authenticated';
+
+  @override
+  String get failedToUploadImage => 'Failed to upload image';
+
+  @override
+  String get failedToUploadVideo => 'Failed to upload video';
+
+  @override
+  String get image => 'Image';
+
+  @override
+  String get video => 'Video';
+
+  @override
+  String get continue1 => 'Continue';
+
+  @override
+  String get getStarted => 'Get Started';
 }

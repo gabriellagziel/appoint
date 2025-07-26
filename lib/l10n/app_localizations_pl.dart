@@ -78,7 +78,7 @@ class AppLocalizationsPl extends AppLocalizations {
       '[PL] Anuluj potwierdzenie zaproszenia';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return '[PL] [PL] Created';
   }
 
@@ -139,7 +139,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get participants => '[PL] Uczestnicy';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return '[PL] [PL] Recipients';
   }
 
@@ -179,7 +179,7 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return '[PL] Treść';
   }
 
@@ -234,7 +234,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get removeChild => '[PL] Usuń dziecko';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return '[PL] [PL] Status';
   }
 
@@ -285,7 +285,7 @@ class AppLocalizationsPl extends AppLocalizations {
       '[PL] [PL] Access revoked successfully';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return '[PL] Typ';
   }
 
@@ -416,7 +416,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get inviteDetail => '[PL] Szczegóły zaproszenia';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return '[PL] Zaplanuj';
   }
 
@@ -429,7 +429,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get scheduling => '[PL] Planowanie';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '[PL] Błąd zapisywania wiadomości';
   }
 
@@ -462,7 +462,7 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '[PL] Błąd wysyłania wiadomości';
   }
 
@@ -518,12 +518,12 @@ class AppLocalizationsPl extends AppLocalizations {
   String get pollOptions => '[PL] [PL] Poll Options';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return '[PL] [PL] Clicked';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return '[PL] [PL] Link';
   }
 
@@ -2665,4 +2665,73 @@ class AppLocalizationsPl extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[PL] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Polish)';
   }
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get pleaseEnterTitle => 'Please enter a title';
+
+  @override
+  String get messageType => 'Message Type';
+
+  @override
+  String get pleaseEnterContent => 'Please enter content';
+
+  @override
+  String get imageSelected => 'Image selected';
+
+  @override
+  String get videoSelected => 'Video selected';
+
+  @override
+  String get externalLink => 'External Link';
+
+  @override
+  String get pleaseEnterLink => 'Please enter a link';
+
+  @override
+  String get estimatedRecipients => 'Estimated recipients';
+
+  @override
+  String get countries => 'Countries';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get subscriptionTiers => 'Subscription Tiers';
+
+  @override
+  String get userRoles => 'User Roles';
+
+  @override
+  String get errorEstimatingRecipients => 'Error estimating recipients';
+
+  @override
+  String get errorPickingImage => 'Error picking image';
+
+  @override
+  String get errorPickingVideo => 'Error picking video';
+
+  @override
+  String get userNotAuthenticated => 'User not authenticated';
+
+  @override
+  String get failedToUploadImage => 'Failed to upload image';
+
+  @override
+  String get failedToUploadVideo => 'Failed to upload video';
+
+  @override
+  String get image => 'Image';
+
+  @override
+  String get video => 'Video';
+
+  @override
+  String get continue1 => 'Continue';
+
+  @override
+  String get getStarted => 'Get Started';
 }

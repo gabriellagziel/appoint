@@ -77,7 +77,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get cancelInviteConfirmation => '取消邀请确认';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return '已创建';
   }
 
@@ -137,7 +137,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get participants => '参与者';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return '接收者';
   }
 
@@ -177,7 +177,7 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return '内容';
   }
 
@@ -230,7 +230,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get removeChild => '移除子账户';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return '状态';
   }
 
@@ -280,7 +280,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get accessRevokedSuccessfully => '访问撤销成功';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return '类型';
   }
 
@@ -411,7 +411,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get inviteDetail => '邀请详情';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return '已安排';
   }
 
@@ -424,7 +424,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get scheduling => '安排中';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '保存消息出错';
   }
 
@@ -457,7 +457,7 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '发送消息出错';
   }
 
@@ -513,12 +513,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get pollOptions => '投票选项';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return '已点击';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return '链接';
   }
 
@@ -2719,6 +2719,75 @@ class AppLocalizationsZh extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[ZH] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Chinese)';
   }
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get pleaseEnterTitle => 'Please enter a title';
+
+  @override
+  String get messageType => 'Message Type';
+
+  @override
+  String get pleaseEnterContent => 'Please enter content';
+
+  @override
+  String get imageSelected => 'Image selected';
+
+  @override
+  String get videoSelected => 'Video selected';
+
+  @override
+  String get externalLink => 'External Link';
+
+  @override
+  String get pleaseEnterLink => 'Please enter a link';
+
+  @override
+  String get estimatedRecipients => 'Estimated recipients';
+
+  @override
+  String get countries => 'Countries';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get subscriptionTiers => 'Subscription Tiers';
+
+  @override
+  String get userRoles => 'User Roles';
+
+  @override
+  String get errorEstimatingRecipients => 'Error estimating recipients';
+
+  @override
+  String get errorPickingImage => 'Error picking image';
+
+  @override
+  String get errorPickingVideo => 'Error picking video';
+
+  @override
+  String get userNotAuthenticated => 'User not authenticated';
+
+  @override
+  String get failedToUploadImage => 'Failed to upload image';
+
+  @override
+  String get failedToUploadVideo => 'Failed to upload video';
+
+  @override
+  String get image => 'Image';
+
+  @override
+  String get video => 'Video';
+
+  @override
+  String get continue1 => 'Continue';
+
+  @override
+  String get getStarted => 'Get Started';
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hant`).
@@ -2794,7 +2863,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get cancelInviteConfirmation => '您確定要取消此邀請嗎？';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return '[ZH_HANT] 建立於：$date';
   }
 
@@ -2855,7 +2924,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get participants => '[ZH_HANT] Participants';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return '[ZH_HANT] 收件人：$count';
   }
 
@@ -2896,7 +2965,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return '[ZH_HANT] 內容：$content';
   }
 
@@ -2949,7 +3018,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get removeChild => '移除孩童';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return '[ZH_HANT] 狀態：$status';
   }
 
@@ -2999,7 +3068,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get accessRevokedSuccessfully => '存取權已撤銷成功！';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return '[ZH_HANT] 類型：$type';
   }
 
@@ -3130,7 +3199,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get inviteDetail => '邀請詳情';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return '[ZH_HANT] 已排程：$date';
   }
 
@@ -3143,7 +3212,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get scheduling => '排程';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '[ZH_HANT] 儲存訊息失敗：$error';
   }
 
@@ -3176,7 +3245,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '[ZH_HANT] 發送訊息失敗：$error';
   }
 
@@ -3231,12 +3300,12 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get pollOptions => '投票選項：';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return '[ZH_HANT] 已點擊：$count';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return '[ZH_HANT] 連結：$link';
   }
 
