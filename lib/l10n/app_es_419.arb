@@ -2879,5 +2879,257 @@
   "purchase_now_button": "Purchase Now",
   "@purchase_now_button": {
     "description": "Ad flow string: purchase_now_button"
+  },
+  "welcomeAmbassador": "Welcome Ambassador",
+  "@welcomeAmbassador": {
+    "description": "Translation for welcomeAmbassador"
+  },
+  "activeStatus": "Active Status",
+  "@activeStatus": {
+    "description": "Translation for activeStatus"
+  },
+  "totalReferrals": "Total Referrals",
+  "@totalReferrals": {
+    "description": "Translation for totalReferrals"
+  },
+  "thisMonth": "This Month",
+  "@thisMonth": {
+    "description": "Translation for thisMonth"
+  },
+  "activeRewards": "Active Rewards",
+  "@activeRewards": {
+    "description": "Translation for activeRewards"
+  },
+  "nextTierProgress": "Next Tier Progress",
+  "@nextTierProgress": {
+    "description": "Translation for nextTierProgress"
+  },
+  "progressToPremium": "Progress to Premium",
+  "@progressToPremium": {
+    "description": "Translation for progressToPremium"
+  },
+  "remaining": "Remaining",
+  "@remaining": {
+    "description": "Translation for remaining"
+  },
+  "monthlyGoal": "Monthly Goal",
+  "@monthlyGoal": {
+    "description": "Translation for monthlyGoal"
+  },
+  "onTrack": "On Track",
+  "@onTrack": {
+    "description": "Translation for onTrack"
+  },
+  "needsAttention": "Needs Attention",
+  "@needsAttention": {
+    "description": "Translation for needsAttention"
+  },
+  "monthlyReferralRequirement": "Monthly Referral Requirement",
+  "@monthlyReferralRequirement": {
+    "description": "Translation for monthlyReferralRequirement"
+  },
+  "viewRewards": "View Rewards",
+  "@viewRewards": {
+    "description": "Translation for viewRewards"
+  },
+  "referralStatistics": "Referral Statistics",
+  "@referralStatistics": {
+    "description": "Translation for referralStatistics"
+  },
+  "activeReferrals": "Active Referrals",
+  "@activeReferrals": {
+    "description": "Translation for activeReferrals"
+  },
+  "conversionRate": "Conversion Rate",
+  "@conversionRate": {
+    "description": "Translation for conversionRate"
+  },
+  "recentReferrals": "Recent Referrals",
+  "@recentReferrals": {
+    "description": "Translation for recentReferrals"
+  },
+  "tierBenefits": "Tier Benefits",
+  "@tierBenefits": {
+    "description": "Translation for tierBenefits"
+  },
+  "yourReferralQRCode": "Your Referral QR Code",
+  "@yourReferralQRCode": {
+    "description": "Translation for yourReferralQRCode"
+  },
+  "yourReferralLink": "Your Referral Link",
+  "@yourReferralLink": {
+    "description": "Translation for yourReferralLink"
+  },
+  "shareYourLink": "Share Your Link",
+  "@shareYourLink": {
+    "description": "Translation for shareYourLink"
+  },
+  "shareViaMessage": "Share via Message",
+  "@shareViaMessage": {
+    "description": "Translation for shareViaMessage"
+  },
+  "shareViaEmail": "Share via Email",
+  "@shareViaEmail": {
+    "description": "Translation for shareViaEmail"
+  },
+  "shareMore": "Share More",
+  "@shareMore": {
+    "description": "Translation for shareMore"
+  },
+  "becomeAmbassador": "Become Ambassador",
+  "@becomeAmbassador": {
+    "description": "Translation for becomeAmbassador"
+  },
+  "ambassadorEligible": "Ambassador Eligible",
+  "@ambassadorEligible": {
+    "description": "Translation for ambassadorEligible"
+  },
+  "ambassadorWelcomeTitle": "Ambassador Welcome Title",
+  "@ambassadorWelcomeTitle": {
+    "description": "Translation for ambassadorWelcomeTitle"
+  },
+  "ambassadorWelcomeMessage": "Ambassador Welcome Message",
+  "@ambassadorWelcomeMessage": {
+    "description": "Translation for ambassadorWelcomeMessage"
+  },
+  "ambassadorPromotionTitle": "ambassadorPromotionTitle",
+  "@ambassadorPromotionTitle": {
+    "description": "Translation for ambassadorPromotionTitle"
+  },
+  "ambassadorPromotionBody": "ambassadorPromotionBody",
+  "@ambassadorPromotionBody": {
+    "description": "Translation for ambassadorPromotionBody"
+  },
+  "tierUpgradeTitle": "tierUpgradeTitle",
+  "@tierUpgradeTitle": {
+    "description": "Translation for tierUpgradeTitle"
+  },
+  "tierUpgradeBody": "tierUpgradeBody",
+  "@tierUpgradeBody": {
+    "description": "Translation for tierUpgradeBody"
+  },
+  "monthlyReminderTitle": "monthlyReminderTitle",
+  "@monthlyReminderTitle": {
+    "description": "Translation for monthlyReminderTitle"
+  },
+  "monthlyReminderBody": "monthlyReminderBody",
+  "@monthlyReminderBody": {
+    "description": "Translation for monthlyReminderBody"
+  },
+  "performanceWarningTitle": "performanceWarningTitle",
+  "@performanceWarningTitle": {
+    "description": "Translation for performanceWarningTitle"
+  },
+  "performanceWarningBody": "performanceWarningBody",
+  "@performanceWarningBody": {
+    "description": "Translation for performanceWarningBody"
+  },
+  "ambassadorDemotionTitle": "ambassadorDemotionTitle",
+  "@ambassadorDemotionTitle": {
+    "description": "Translation for ambassadorDemotionTitle"
+  },
+  "ambassadorDemotionBody": "ambassadorDemotionBody",
+  "@ambassadorDemotionBody": {
+    "description": "Translation for ambassadorDemotionBody"
+  },
+  "referralSuccessTitle": "referralSuccessTitle",
+  "@referralSuccessTitle": {
+    "description": "Translation for referralSuccessTitle"
+  },
+  "referralSuccessBody": "referralSuccessBody",
+  "@referralSuccessBody": {
+    "description": "Translation for referralSuccessBody"
+  },
+  "title": "Title",
+  "@title": {
+    "description": "Translation for title"
+  },
+  "pleaseEnterTitle": "Please Enter Title",
+  "@pleaseEnterTitle": {
+    "description": "Translation for pleaseEnterTitle"
+  },
+  "messageType": "Message Type",
+  "@messageType": {
+    "description": "Translation for messageType"
+  },
+  "pleaseEnterContent": "Please Enter Content",
+  "@pleaseEnterContent": {
+    "description": "Translation for pleaseEnterContent"
+  },
+  "imageSelected": "Image Selected",
+  "@imageSelected": {
+    "description": "Translation for imageSelected"
+  },
+  "videoSelected": "Video Selected",
+  "@videoSelected": {
+    "description": "Translation for videoSelected"
+  },
+  "externalLink": "External Link",
+  "@externalLink": {
+    "description": "Translation for externalLink"
+  },
+  "pleaseEnterLink": "Please Enter Link",
+  "@pleaseEnterLink": {
+    "description": "Translation for pleaseEnterLink"
+  },
+  "estimatedRecipients": "Estimated Recipients",
+  "@estimatedRecipients": {
+    "description": "Translation for estimatedRecipients"
+  },
+  "countries": "Countries",
+  "@countries": {
+    "description": "Translation for countries"
+  },
+  "cities": "Cities",
+  "@cities": {
+    "description": "Translation for cities"
+  },
+  "subscriptionTiers": "Subscription Tiers",
+  "@subscriptionTiers": {
+    "description": "Translation for subscriptionTiers"
+  },
+  "userRoles": "User Roles",
+  "@userRoles": {
+    "description": "Translation for userRoles"
+  },
+  "errorEstimatingRecipients": "Error Estimating Recipients",
+  "@errorEstimatingRecipients": {
+    "description": "Translation for errorEstimatingRecipients"
+  },
+  "errorPickingImage": "Error Picking Image",
+  "@errorPickingImage": {
+    "description": "Translation for errorPickingImage"
+  },
+  "errorPickingVideo": "Error Picking Video",
+  "@errorPickingVideo": {
+    "description": "Translation for errorPickingVideo"
+  },
+  "userNotAuthenticated": "User Not Authenticated",
+  "@userNotAuthenticated": {
+    "description": "Translation for userNotAuthenticated"
+  },
+  "failedToUploadImage": "Failed to Upload Image",
+  "@failedToUploadImage": {
+    "description": "Translation for failedToUploadImage"
+  },
+  "failedToUploadVideo": "Failed to Upload Video",
+  "@failedToUploadVideo": {
+    "description": "Translation for failedToUploadVideo"
+  },
+  "image": "Image",
+  "@image": {
+    "description": "Translation for image"
+  },
+  "video": "Video",
+  "@video": {
+    "description": "Translation for video"
+  },
+  "continue1": "Continue",
+  "@continue1": {
+    "description": "Translation for continue1"
+  },
+  "getStarted": "Get Started",
+  "@getStarted": {
+    "description": "Translation for getStarted"
   }
 }
