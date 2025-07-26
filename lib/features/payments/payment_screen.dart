@@ -92,7 +92,7 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
   @override
   Widget build(BuildContext context) {
     final isLoading = _paymentStatus == PaymentStatus.processing ||
-        final _paymentStatus = = PaymentStatus.requiresAction;
+        _paymentStatus == PaymentStatus.requiresAction;
     return Stack(
       children: [
         Scaffold(
