@@ -74,8 +74,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get search => 'Search';
 
   @override
-  String get cancelInviteConfirmation =>
-      'Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => 'Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -86,14 +85,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get revokeAccess => 'Revoke Access';
 
   @override
-  String get saveGroupForRecognition => 'Save Group for Recognition';
-
-  @override
   String get playtimeLiveScheduled => 'Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation =>
-      'Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => 'Are you sure you want to revoke access?';
 
   @override
   String get download => 'Download';
@@ -127,8 +122,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get playtimeModeVirtual => 'Virtual Play';
 
   @override
-  String get playtimeDescription =>
-      'Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => 'Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => 'Delete';
@@ -260,9 +254,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get upcomingSessions => 'Upcoming Sessions';
-
-  @override
-  String get enterGroupName => 'Enter group name';
 
   @override
   String get confirm => 'Confirm';
@@ -488,17 +479,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get playtimeEnterGameName => 'Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      'Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => 'Please login to access family features';
 
   @override
   String get myInvites => 'My Invites';
 
   @override
   String get createGame => 'Create Game';
-
-  @override
-  String get groupNameOptional => 'Group Name (Optional)';
 
   @override
   String get playtimeNoSessions => 'No playtime sessions found.';
@@ -511,9 +498,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get close => 'Close';
-
-  @override
-  String get knownGroupDetected => 'Known group detected';
 
   @override
   String get back => 'Back';
@@ -570,8 +554,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get contentLibrary => 'Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      'No account found with this email address.';
+  String get authErrorUserNotFound => 'No account found with this email address.';
 
   @override
   String get authErrorWrongPassword => 'Incorrect password. Please try again.';
@@ -580,40 +563,31 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authErrorInvalidEmail => 'Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      'This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => 'This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      'Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => 'Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      'An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => 'An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      'Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => 'Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      'This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => 'This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      'Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => 'Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      'An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential => 'An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      'These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => 'These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      'Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => 'Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'Account Already Exists';
@@ -630,24 +604,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get signInWithExistingMethod => 'Sign in with existing method';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      'Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => 'Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      'This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => 'This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode =>
-      'The verification code is invalid.';
+  String get authErrorInvalidVerificationCode => 'The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      'The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => 'The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode =>
-      'Please enter the verification code.';
+  String get authErrorMissingVerificationCode => 'Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => 'Missing verification ID.';
@@ -659,52 +628,40 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authErrorMissingPhoneNumber => 'Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      'The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => 'The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      'The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => 'The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      'Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => 'Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired =>
-      'Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired => 'Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound =>
-      'Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound => 'Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession =>
-      'Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession => 'Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession =>
-      'Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession => 'Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      'This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse => 'This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      'Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded => 'Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      'Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => 'Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      'Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification => 'Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      'This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists => 'This phone number is already in use.';
 
   @override
   String get authErrorInvalidPassword => 'The password is invalid or too weak.';
@@ -719,8 +676,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authErrorIdTokenRevoked => 'The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      'An internal error occurred. Please try again.';
+  String get authErrorInternalError => 'An internal error occurred. Please try again.';
 
   @override
   String get authErrorInvalidArgument => 'An invalid argument was provided.';
@@ -735,19 +691,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authErrorInvalidCreationTime => 'The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      'The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => 'The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => 'The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      'The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain => 'The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      'The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => 'The email verified value is invalid.';
 
   @override
   String get authErrorInvalidHashAlgorithm => 'The hash algorithm is invalid.';
@@ -756,30 +709,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authErrorInvalidHashBlockSize => 'The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      'The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength => 'The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => 'The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      'The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => 'The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      'The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization => 'The hash parallelization is invalid.';
 
   @override
   String get authErrorInvalidHashRounds => 'The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      'The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator => 'The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      'The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => 'The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => 'The page token is invalid.';
@@ -791,8 +739,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authErrorInvalidProviderId => 'The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      'The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration => 'The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => 'The UID is invalid.';
@@ -801,8 +748,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authErrorInvalidUserImport => 'The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      'Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded => 'Maximum user import count exceeded.';
 
   @override
   String get authErrorMissingAndroidPkgName => 'Missing Android package name.';
@@ -820,8 +766,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authErrorMissingUid => 'Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret =>
-      'Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret => 'Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => 'Firebase project not found.';
@@ -833,15 +778,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get authErrorSessionCookieExpired => 'Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      'Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => 'Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => 'The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      'The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri => 'The continue URL domain is not whitelisted.';
 
   @override
   String get authErrorUnknown => 'An unknown authentication error occurred.';
@@ -893,8 +836,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get keepSubscription => 'Keep Subscription';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      'Virtual session created! Inviting friends...';
+  String get virtualSessionCreatedInvitingFriends => 'Virtual session created! Inviting friends...';
 
   @override
   String get noEventsScheduledForToday => 'No events scheduled for today';
@@ -1012,8 +954,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get profileSaved => 'Profile saved!';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'Receive booking notifications via email';
+  String get receiveBookingNotificationsViaEmail => 'Receive booking notifications via email';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1044,8 +985,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      'You will receive a confirmation email shortly.';
+  String get youWillReceiveAConfirmationEmailShortly => 'You will receive a confirmation email shortly.';
 
   @override
   String get addQuestion => 'Add Question';
@@ -1074,12 +1014,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get surveyManagement => 'Survey Management';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      'Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => 'Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      'No rooms found. Add your first room!';
+  String get noRoomsFoundAddYourFirstRoom => 'No rooms found. Add your first room!';
 
   @override
   String get readOurPrivacyPolicy => 'Read our privacy policy';
@@ -1100,8 +1038,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get cancelSubscription => 'Cancel Subscription';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      'Successfully registered as Ambassador!';
+  String get successfullyRegisteredAsAmbassador => 'Successfully registered as Ambassador!';
 
   @override
   String get save1 => 'Save';
@@ -1127,20 +1064,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get responseDetail => 'Response Detail';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'Business Verification Screen - Coming Soon';
+  String get businessVerificationScreenComingSoon => 'Business Verification Screen - Coming Soon';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'Business profile activated successfully!';
+  String get businessProfileActivatedSuccessfully => 'Business profile activated successfully!';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      'Failed to start Pro subscription: \$e';
+  String get failedToStartProSubscriptionE => 'Failed to start Pro subscription: \$e';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      'Business Dashboard Entry Screen - Coming Soon';
+  String get businessDashboardEntryScreenComingSoon => 'Business Dashboard Entry Screen - Coming Soon';
 
   @override
   String get contentFilter => 'Content Filter';
@@ -1162,8 +1095,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      'Business CRM Entry Screen - Coming Soon';
+  String get businessCrmEntryScreenComingSoon => 'Business CRM Entry Screen - Coming Soon';
 
   @override
   String get adminDashboard => 'Admin Dashboard';
@@ -1227,8 +1159,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get noAmbassadorDataAvailable => 'No ambassador data available';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      'Background deleted successfully!';
+  String get backgroundDeletedSuccessfully => 'Background deleted successfully!';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1244,8 +1175,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      'Business Phone Booking Entry Screen - Coming Soon';
+  String get businessPhoneBookingEntryScreenComingSoon => 'Business Phone Booking Entry Screen - Coming Soon';
 
   @override
   String get verification => 'Verification';
@@ -1292,8 +1222,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get businessProfile => 'Business Profile';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      'Business Booking Entry Screen - Coming Soon';
+  String get businessBookingEntryScreenComingSoon => 'Business Booking Entry Screen - Coming Soon';
 
   @override
   String get createNewSurvey => 'Create New Survey';
@@ -1337,8 +1266,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get appVersionAndInformation => 'App version and information';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      'Business Subscription Entry Screen - Coming Soon';
+  String get businessSubscriptionEntryScreenComingSoon => 'Business Subscription Entry Screen - Coming Soon';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1346,8 +1274,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      'Your payment has been processed successfully.';
+  String get yourPaymentHasBeenProcessedSuccessfully => 'Your payment has been processed successfully.';
 
   @override
   String get errorE => 'Error: \$e';
@@ -1365,8 +1292,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get payment => 'Payment';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      'Automatically confirm new booking requests';
+  String get automaticallyConfirmNewBookingRequests => 'Automatically confirm new booking requests';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1379,8 +1305,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      'Please sign in to upload a background';
+  String get pleaseSignInToUploadABackground => 'Please sign in to upload a background';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1397,22 +1322,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get autoconfirmBookings => 'Auto-Confirm Bookings';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      'Redirecting to Stripe checkout for Pro plan...';
+  String get redirectingToStripeCheckoutForProPlan => 'Redirecting to Stripe checkout for Pro plan...';
 
   @override
   String get exportAsCsv => 'Export as CSV';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      'Delete functionality coming soon!';
+  String get deleteFunctionalityComingSoon => 'Delete functionality coming soon!';
 
   @override
   String get editClient => 'Edit Client';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      'Are you sure you want to delete this message?';
+  String get areYouSureYouWantToDeleteThisMessage => 'Are you sure you want to delete this message?';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1423,8 +1345,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notAuthenticated => 'Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      'Privacy request sent to your parents!';
+  String get privacyRequestSentToYourParents => 'Privacy request sent to your parents!';
 
   @override
   String get clientDeletedSuccessfully => 'Client deleted successfully!';
@@ -1439,19 +1360,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get slotDeletedSuccessfully => 'Slot deleted successfully';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      'Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => 'Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      'Parents must approve before children can join';
+  String get parentsMustApproveBeforeChildrenCanJoin => 'Parents must approve before children can join';
 
   @override
   String get subscribeToPro1499mo => 'Subscribe to Pro (€14.99/mo)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      'Business Availability Entry Screen - Coming Soon';
+  String get businessAvailabilityEntryScreenComingSoon => 'Business Availability Entry Screen - Coming Soon';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1465,8 +1383,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get submitBooking => 'Submit Booking';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      'Are you sure you want to cancel this appointment?';
+  String get areYouSureYouWantToCancelThisAppointment => 'Are you sure you want to cancel this appointment?';
 
   @override
   String get noUpcomingBookings => 'No upcoming bookings';
@@ -1540,8 +1457,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get bookAppointment => 'Book Appointment';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'Receive push notifications for new bookings';
+  String get receivePushNotificationsForNewBookings => 'Receive push notifications for new bookings';
 
   @override
   String get delete1 => 'Delete';
@@ -1562,8 +1478,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get paymentConfirmation => 'Payment Confirmation';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      'Promo applied! Your next bill is free.';
+  String get promoAppliedYourNextBillIsFree => 'Promo applied! Your next bill is free.';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1574,12 +1489,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get errorLoadingSlots => 'Error loading slots';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      'Allow other users to find and join this game';
+  String get allowOtherUsersToFindAndJoinThisGame => 'Allow other users to find and join this game';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      'Business Onboarding Screen - Coming Soon';
+  String get businessOnboardingScreenComingSoon => 'Business Onboarding Screen - Coming Soon';
 
   @override
   String get activateBusinessProfile => 'Activate Business Profile';
@@ -1624,8 +1537,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get shareLink => 'Share Link';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      'Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => 'Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => 'Delete Appointment';
@@ -1645,12 +1557,10 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      'Update your business information';
+  String get updateYourBusinessInformation => 'Update your business information';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      'No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => 'No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => 'Parent Dashboard';
@@ -1673,8 +1583,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      'Studio booking is only available on web';
+  String get studioBookingIsOnlyAvailableOnWeb => 'Studio booking is only available on web';
 
   @override
   String get errorLoadingBranchesE => 'Error loading branches: \$e';
@@ -1708,8 +1617,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get surveyEditor => 'Survey Editor';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      'Failed to start Basic subscription: \$e';
+  String get failedToStartBasicSubscriptionE => 'Failed to start Basic subscription: \$e';
 
   @override
   String get mySchedule => 'My Schedule';
@@ -1732,7 +1640,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsSavedSuccessfully => 'Settings saved successfully!';
 
   @override
-  String get linkCopiedToClipboard => 'Link copied to clipboard!';
+  String get linkCopiedToClipboard => 'Link copied to clipboard';
 
   @override
   String get accept1 => 'Accept';
@@ -1814,8 +1722,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get cancel1 => 'Cancel';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      'Subscription activated successfully!';
+  String get subscriptionActivatedSuccessfully => 'Subscription activated successfully!';
 
   @override
   String activityLogaction(Object action) {
@@ -1871,12 +1778,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get selectStaff => 'Select Staff';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      'Subscription cancelled successfully';
+  String get subscriptionCancelledSuccessfully => 'Subscription cancelled successfully';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'Please log in to view your profile.';
+  String get pleaseLogInToViewYourProfile => 'Please log in to view your profile.';
 
   @override
   String get cancelAppointment => 'Cancel Appointment';
@@ -1890,8 +1795,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get businessSignup => 'Business Signup';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      'Business Completion Screen - Coming Soon';
+  String get businessCompletionScreenComingSoon => 'Business Completion Screen - Coming Soon';
 
   @override
   String get createGame1 => 'Create Game';
@@ -1928,8 +1832,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      'Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => 'Please enter a valid email address';
 
   @override
   String get schedulerScreen => 'Scheduler Screen';
@@ -1964,8 +1867,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get errorLoadingOrganizations => 'Error loading organizations';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      'Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => 'Business Login Screen - Coming Soon';
 
   @override
   String get success1 => 'Success';
@@ -1984,8 +1886,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readWrite => 'Read & Write';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      'Redirecting to Stripe checkout for Basic plan...';
+  String get redirectingToStripeCheckoutForBasicPlan => 'Redirecting to Stripe checkout for Basic plan...';
 
   @override
   String get errorSavingConfigurationE => 'Error saving configuration: \$e';
@@ -2040,8 +1941,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      'Failed to send privacy request: \$e';
+  String get failedToSendPrivacyRequestE => 'Failed to send privacy request: \$e';
 
   @override
   String get chooseYourPlan => 'Choose Your Plan';
@@ -2080,8 +1980,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get gameApprovedSuccessfully => 'Game approved successfully!';
 
   @override
-  String get errorLoadingPermissionsError =>
-      'Error loading permissions: \$error';
+  String get errorLoadingPermissionsError => 'Error loading permissions: \$error';
 
   @override
   String get referrals => 'Referrals';
@@ -2123,8 +2022,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get organizations => 'Organizations';
 
   @override
-  String get configurationSavedSuccessfully =>
-      'Configuration saved successfully!';
+  String get configurationSavedSuccessfully => 'Configuration saved successfully!';
 
   @override
   String get createNewGame => 'Create New Game';
@@ -2133,15 +2031,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get next1 => 'Next';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      'Background uploaded successfully!';
+  String get backgroundUploadedSuccessfully => 'Background uploaded successfully!';
 
   @override
   String get noAppointmentRequestsFound => 'No appointment requests found.';
 
   @override
-  String get pleaseSignInToCreateASession =>
-      'Please sign in to create a session';
+  String get pleaseSignInToCreateASession => 'Please sign in to create a session';
 
   @override
   String get restrictMatureContent => 'Restrict mature content';
@@ -2165,8 +2061,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get notifications1 => 'Notifications';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'Live session scheduled! Waiting for parent approval...';
+  String get liveSessionScheduledWaitingForParentApproval => 'Live session scheduled! Waiting for parent approval...';
 
   @override
   String get failedToCreateGameE => 'Failed to create game: \$e';
@@ -2184,8 +2079,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get invoices => 'Invoices';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'Please activate your business profile to continue.';
+  String get pleaseActivateYourBusinessProfileToContinue => 'Please activate your business profile to continue.';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2212,12 +2106,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get iDoNotConsent => 'I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      'No clients found. Add your first client!';
+  String get noClientsFoundAddYourFirstClient => 'No clients found. Add your first client!';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      'Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => 'Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => 'Group: \$groupId';
@@ -2252,8 +2144,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get subscriptionManagement => 'Subscription Management';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      'Monetization settings will be implemented here';
+  String get monetizationSettingsWillBeImplementedHere => 'Monetization settings will be implemented here';
 
   @override
   String get failedToApplyPromoCodeE => 'Failed to apply promo code: \$e';
@@ -2268,12 +2159,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get parentalConsent => 'Parental Consent';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      'Business Signup Screen - Coming Soon';
+  String get businessSignupScreenComingSoon => 'Business Signup Screen - Coming Soon';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      'Are you sure you want to delete this appointment?';
+  String get areYouSureYouWantToDeleteThisAppointment => 'Are you sure you want to delete this appointment?';
 
   @override
   String get syncAppointment => 'Sync Appointment';
@@ -2285,8 +2174,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sessionRejected => 'Session rejected';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      'Business Setup Screen - Coming Soon';
+  String get businessSetupScreenComingSoon => 'Business Setup Screen - Coming Soon';
 
   @override
   String get edit1 => 'Edit';
@@ -2338,8 +2226,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get deleteMessage => 'Delete Message';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'Receive booking notifications via SMS';
+  String get receiveBookingNotificationsViaSms => 'Receive booking notifications via SMS';
 
   @override
   String get changeRole => 'Change Role';
@@ -2361,8 +2248,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'Business Profile Entry Screen - Coming Soon';
+  String get businessProfileEntryScreenComingSoon => 'Business Profile Entry Screen - Coming Soon';
 
   @override
   String get upgradeToBusiness => 'Upgrade to Business';
@@ -2388,15 +2274,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get deleteMyAccount => 'Delete My Account';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'Business Appointments Entry Screen - Coming Soon';
+  String get businessAppointmentsEntryScreenComingSoon => 'Business Appointments Entry Screen - Coming Soon';
 
   @override
   String get viewResponses => 'View Responses';
 
   @override
-  String get businessWelcomeScreenComingSoon =>
-      'Business Welcome Screen - Coming Soon';
+  String get businessWelcomeScreenComingSoon => 'Business Welcome Screen - Coming Soon';
 
   @override
   String failedToOpenCustomerPortalE(Object e) {
@@ -2419,8 +2303,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get approve => 'Approve';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'No invoices found. Create your first invoice!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'No invoices found. Create your first invoice!';
 
   @override
   String get subscribe => 'Subscribe';
@@ -2438,8 +2321,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description =>
-      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2448,8 +2330,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title =>
-      'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2462,4 +2343,136 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get purchase_now_button => 'Purchase Now';
+
+  @override
+  String get welcomeAmbassador => 'Welcome, Ambassador!';
+
+  @override
+  String get activeStatus => 'Active';
+
+  @override
+  String get totalReferrals => 'Total Referrals';
+
+  @override
+  String get thisMonth => 'This Month';
+
+  @override
+  String get activeRewards => 'Active Rewards';
+
+  @override
+  String get nextTierProgress => 'Next Tier Progress';
+
+  @override
+  String get progressToPremium => 'Progress to Premium';
+
+  @override
+  String get remaining => 'remaining';
+
+  @override
+  String get monthlyGoal => 'Monthly Goal';
+
+  @override
+  String get onTrack => 'On Track';
+
+  @override
+  String get needsAttention => 'Needs Attention';
+
+  @override
+  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+
+  @override
+  String get viewRewards => 'View Rewards';
+
+  @override
+  String get referralStatistics => 'Referral Statistics';
+
+  @override
+  String get activeReferrals => 'Active Referrals';
+
+  @override
+  String get conversionRate => 'Conversion Rate';
+
+  @override
+  String get recentReferrals => 'Recent Referrals';
+
+  @override
+  String get tierBenefits => 'Tier Benefits';
+
+  @override
+  String get yourReferralQRCode => 'Your Referral QR Code';
+
+  @override
+  String get yourReferralLink => 'Your Referral Link';
+
+  @override
+  String get shareYourLink => 'Share Your Link';
+
+  @override
+  String get shareViaMessage => 'Message';
+
+  @override
+  String get shareViaEmail => 'Email';
+
+  @override
+  String get shareMore => 'More Options';
+
+  @override
+  String get becomeAmbassador => 'Become an Ambassador';
+
+  @override
+  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
+
+  @override
+  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
+
+  @override
+  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+
+  @override
+  String get ambassadorPromotionTitle => 'Congratulations! You\'re now an Ambassador!';
+
+  @override
+  String ambassadorPromotionBody(String tier) {
+    return 'Welcome to the $tier tier! Start sharing your referral link to earn rewards.';
+  }
+
+  @override
+  String get tierUpgradeTitle => 'Tier Upgrade! 🎉';
+
+  @override
+  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+    return 'Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals!';
+  }
+
+  @override
+  String get monthlyReminderTitle => 'Monthly Goal Reminder';
+
+  @override
+  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+    return 'You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal!';
+  }
+
+  @override
+  String get performanceWarningTitle => 'Ambassador Performance Alert';
+
+  @override
+  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+    return 'Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected.';
+  }
+
+  @override
+  String get ambassadorDemotionTitle => 'Ambassador Status Update';
+
+  @override
+  String ambassadorDemotionBody(String reason) {
+    return 'Your ambassador status has been temporarily suspended due to: $reason. You can regain your status by meeting the requirements again.';
+  }
+
+  @override
+  String get referralSuccessTitle => 'New Referral! 🎉';
+
+  @override
+  String referralSuccessBody(String referredUserName, String totalReferrals) {
+    return '$referredUserName joined through your referral! You now have $totalReferrals total referrals.';
+  }
 }

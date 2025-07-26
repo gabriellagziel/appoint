@@ -11,7 +11,7 @@ class SettingsScreen extends StatelessWidget {
       appBar: AppBar(
         title: Row(
           children: [
-            const AppLogo(size:28 logoOnly: true),
+            const AppLogo(size: 28, logoOnly: true),
             const SizedBox(width: 8),
             const Text('Settings'),
           ],
@@ -24,7 +24,7 @@ class SettingsScreen extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             child: Column(
               children: [
-                const AppLogo(size:64 showText: false),
+                const AppLogo(size: 64, showText: false),
                 const SizedBox(height: 8),
                 Text(
                   'APP-OINT',

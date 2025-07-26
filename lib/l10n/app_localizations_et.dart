@@ -74,8 +74,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get search => '[ET] Otsi';
 
   @override
-  String get cancelInviteConfirmation =>
-      '[ET] [ET] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => '[ET] [ET] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -86,14 +85,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get revokeAccess => '[ET] Tühista juurdepääs';
 
   @override
-  String get saveGroupForRecognition => '[ET] [ET] Save Group for Recognition';
-
-  @override
   String get playtimeLiveScheduled => '[ET] [ET] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation =>
-      '[ET] [ET] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => '[ET] [ET] Are you sure you want to revoke access?';
 
   @override
   String get download => '[ET] Laadi alla';
@@ -187,8 +182,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully =>
-      '[ET] [ET] Meeting shared successfully';
+  String get meetingSharedSuccessfully => '[ET] [ET] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[ET] Tere tulemast Playtime\'i';
@@ -206,8 +200,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get cut => '[ET] Lõika';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      '[ET] [ET] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => '[ET] [ET] Invite cancelled successfully';
 
   @override
   String get retry => '[ET] Proovi uuesti';
@@ -263,9 +256,6 @@ class AppLocalizationsEt extends AppLocalizations {
   String get upcomingSessions => '[ET] Eelseisvad seansid';
 
   @override
-  String get enterGroupName => '[ET] Sisesta grupi nimi';
-
-  @override
   String get confirm => '[ET] [ET] Confirm';
 
   @override
@@ -287,8 +277,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get scheduleForLater => '[ET] Planeeri hilisemaks';
 
   @override
-  String get accessRevokedSuccessfully =>
-      '[ET] [ET] Access revoked successfully';
+  String get accessRevokedSuccessfully => '[ET] [ET] Access revoked successfully';
 
   @override
   String type(Object type) {
@@ -413,8 +402,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get dashboard => '[ET] Juhtpaneel';
 
   @override
-  String get noPermissionForBroadcast =>
-      '[ET] [ET] No permission for broadcast';
+  String get noPermissionForBroadcast => '[ET] [ET] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[ET] Playtime Games – Admin';
@@ -491,8 +479,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get playtimeEnterGameName => '[ET] Sisesta mängu nimi';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[ET] [ET] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '[ET] [ET] Please login to access family features';
 
   @override
   String get myInvites => '[ET] [ET] My Invites';
@@ -501,23 +488,16 @@ class AppLocalizationsEt extends AppLocalizations {
   String get createGame => '[ET] Loo mäng';
 
   @override
-  String get groupNameOptional => '[ET] [ET] Group Name (Optional)';
-
-  @override
   String get playtimeNoSessions => '[ET] Playtime seansse pole';
 
   @override
   String get adminScreenTBD => '[ET] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle =>
-      '[ET] Playtime vanemajuhtpaneeli pealkiri';
+  String get playtimeParentDashboardTitle => '[ET] Playtime vanemajuhtpaneeli pealkiri';
 
   @override
   String get close => '[ET] Sulge';
-
-  @override
-  String get knownGroupDetected => '[ET] [ET] Known group detected';
 
   @override
   String get back => '[ET] Tagasi';
@@ -553,8 +533,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[ET] [ET] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[ET] [ET] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[ET] Admin Metrics';
@@ -575,52 +554,40 @@ class AppLocalizationsEt extends AppLocalizations {
   String get contentLibrary => '[ET] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[ET] No account found with this email address.';
+  String get authErrorUserNotFound => '[ET] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[ET] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[ET] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[ET] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[ET] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[ET] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[ET] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[ET] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[ET] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[ET] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[ET] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[ET] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[ET] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[ET] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[ET] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[ET] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[ET] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      '[ET] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential => '[ET] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[ET] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[ET] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[ET] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[ET] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -637,24 +604,19 @@ class AppLocalizationsEt extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[ET] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[ET] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[ET] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[ET] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode =>
-      '[ET] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode => '[ET] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[ET] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[ET] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode =>
-      '[ET] Please enter the verification code.';
+  String get authErrorMissingVerificationCode => '[ET] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[ET] Missing verification ID.';
@@ -666,56 +628,43 @@ class AppLocalizationsEt extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[ET] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[ET] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[ET] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[ET] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[ET] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[ET] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[ET] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired =>
-      '[ET] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired => '[ET] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound =>
-      '[ET] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound => '[ET] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession =>
-      '[ET] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession => '[ET] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession =>
-      '[ET] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession => '[ET] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      '[ET] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse => '[ET] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      '[ET] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded => '[ET] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[ET] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[ET] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      '[ET] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification => '[ET] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      '[ET] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists => '[ET] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[ET] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[ET] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[ET] The ID token is invalid.';
@@ -727,12 +676,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[ET] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[ET] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[ET] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[ET] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[ET] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[ET] Invalid custom claims provided.';
@@ -741,87 +688,70 @@ class AppLocalizationsEt extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[ET] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[ET] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[ET] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[ET] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[ET] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[ET] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      '[ET] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain => '[ET] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[ET] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[ET] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[ET] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[ET] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[ET] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[ET] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      '[ET] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength => '[ET] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[ET] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[ET] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[ET] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      '[ET] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization => '[ET] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[ET] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[ET] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      '[ET] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator => '[ET] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[ET] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[ET] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[ET] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[ET] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[ET] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[ET] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      '[ET] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration => '[ET] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[ET] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[ET] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[ET] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      '[ET] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded => '[ET] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[ET] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[ET] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[ET] Missing continue URL.';
@@ -836,8 +766,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get authErrorMissingUid => '[ET] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret =>
-      '[ET] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret => '[ET] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[ET] Firebase project not found.';
@@ -846,23 +775,19 @@ class AppLocalizationsEt extends AppLocalizations {
   String get authErrorReservedClaims => '[ET] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[ET] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[ET] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[ET] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[ET] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[ET] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      '[ET] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri => '[ET] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[ET] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[ET] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -911,8 +836,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      '[ET] Virtual session created! Inviting friends... (Estonian)';
+  String get virtualSessionCreatedInvitingFriends => '[ET] Virtual session created! Inviting friends... (Estonian)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -953,15 +877,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[ET] Subscription unavailable (Estonian)';
+  String get subscriptionUnavailable => '[ET] Subscription unavailable (Estonian)';
 
   @override
   String get confirmBooking => '[ET] Confirm Booking (Estonian)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[ET] Failed to update permission: \$e (Estonian)';
+  String get failedToUpdatePermissionE => '[ET] Failed to update permission: \$e (Estonian)';
 
   @override
   String get reject => '[ET] Reject (Estonian)';
@@ -983,15 +905,13 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get noContentAvailableYet =>
-      '[ET] No content available yet (Estonian)';
+  String get noContentAvailableYet => '[ET] No content available yet (Estonian)';
 
   @override
   String get resolve => '[ET] Resolve (Estonian)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[ET] Error loading surveys: \$error (Estonian)';
+  String get errorLoadingSurveysError => '[ET] Error loading surveys: \$error (Estonian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -999,8 +919,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[ET] Get help with your account (Estonian)';
+  String get getHelpWithYourAccount => '[ET] Get help with your account (Estonian)';
 
   @override
   String get pay => '[ET] Pay (Estonian)';
@@ -1015,8 +934,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[ET] Changes saved successfully! (Estonian)';
+  String get changesSavedSuccessfully => '[ET] Changes saved successfully! (Estonian)';
 
   @override
   String get createNewInvoice => '[ET] Create New Invoice (Estonian)';
@@ -1036,8 +954,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get profileSaved => '[ET] Profile saved! (Estonian)';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1068,8 +985,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      '[ET] You will receive a confirmation email shortly. (Estonian)';
+  String get youWillReceiveAConfirmationEmailShortly => '[ET] You will receive a confirmation email shortly. (Estonian)';
 
   @override
   String get addQuestion => '[ET] Add Question (Estonian)';
@@ -1098,26 +1014,22 @@ class AppLocalizationsEt extends AppLocalizations {
   String get surveyManagement => '[ET] Survey Management (Estonian)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[ET] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[ET] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[ET] No rooms found. Add your first room! (Estonian)';
+  String get noRoomsFoundAddYourFirstRoom => '[ET] No rooms found. Add your first room! (Estonian)';
 
   @override
   String get readOurPrivacyPolicy => '[ET] Read our privacy policy (Estonian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[ET] Could not open privacy policy (Estonian)';
+  String get couldNotOpenPrivacyPolicy => '[ET] Could not open privacy policy (Estonian)';
 
   @override
   String get refresh1 => '[ET] Refresh (Estonian)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[ET] Room updated successfully! (Estonian)';
+  String get roomUpdatedSuccessfully => '[ET] Room updated successfully! (Estonian)';
 
   @override
   String get contentDetail => '[ET] Content Detail (Estonian)';
@@ -1126,8 +1038,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get cancelSubscription => '[ET] Cancel Subscription (Estonian)';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      '[ET] Successfully registered as Ambassador! (Estonian)';
+  String get successfullyRegisteredAsAmbassador => '[ET] Successfully registered as Ambassador! (Estonian)';
 
   @override
   String get save1 => '[ET] Save (Estonian)';
@@ -1136,8 +1047,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get copy1 => '[ET] Copy (Estonian)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[ET] Failed to send invitation: \$e (Estonian)';
+  String get failedToSendInvitationE => '[ET] Failed to send invitation: \$e (Estonian)';
 
   @override
   String get surveyScore => '[ET] Survey Score (Estonian)';
@@ -1154,20 +1064,16 @@ class AppLocalizationsEt extends AppLocalizations {
   String get responseDetail => '[ET] Response Detail (Estonian)';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[ET] Failed to start Pro subscription: \$e (Estonian)';
+  String get failedToStartProSubscriptionE => '[ET] Failed to start Pro subscription: \$e (Estonian)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      '[ET] Business Dashboard Entry Screen - Coming Soon (Estonian)';
+  String get businessDashboardEntryScreenComingSoon => '[ET] Business Dashboard Entry Screen - Coming Soon (Estonian)';
 
   @override
   String get contentFilter => '[ET] Content Filter (Estonian)';
@@ -1189,8 +1095,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      '[ET] Business CRM Entry Screen - Coming Soon (Estonian)';
+  String get businessCrmEntryScreenComingSoon => '[ET] Business CRM Entry Screen - Coming Soon (Estonian)';
 
   @override
   String get adminDashboard => '[ET] Admin Dashboard';
@@ -1201,16 +1106,13 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[ET] Error loading dashboard: \$error (Estonian)';
+  String get errorLoadingDashboardError => '[ET] Error loading dashboard: \$error (Estonian)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[ET] Game deleted successfully! (Estonian)';
+  String get gameDeletedSuccessfully => '[ET] Game deleted successfully! (Estonian)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[ET] View responses - Coming soon! (Estonian)';
+  String get viewResponsesComingSoon => '[ET] View responses - Coming soon! (Estonian)';
 
   @override
   String get deleteProvider => '[ET] Delete Provider';
@@ -1219,8 +1121,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get errorLoadingRewards => '[ET] Error loading rewards (Estonian)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[ET] Failed to delete account: \$e (Estonian)';
+  String get failedToDeleteAccountE => '[ET] Failed to delete account: \$e (Estonian)';
 
   @override
   String get invited1 => '[ET] Invited (Estonian)';
@@ -1235,8 +1136,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get noEvents => '[ET] No events (Estonian)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[ET] Game created successfully! (Estonian)';
+  String get gameCreatedSuccessfully => '[ET] Game created successfully! (Estonian)';
 
   @override
   String get add1 => '[ET] Add (Estonian)';
@@ -1256,12 +1156,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get clients => '[ET] Clients (Estonian)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[ET] No ambassador data available (Estonian)';
+  String get noAmbassadorDataAvailable => '[ET] No ambassador data available (Estonian)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[ET] Background deleted successfully! (Estonian)';
+  String get backgroundDeletedSuccessfully => '[ET] Background deleted successfully! (Estonian)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1269,8 +1167,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[ET] No analytics data available yet. (Estonian)';
+  String get noAnalyticsDataAvailableYet => '[ET] No analytics data available yet. (Estonian)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1278,8 +1175,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      '[ET] Business Phone Booking Entry Screen - Coming Soon (Estonian)';
+  String get businessPhoneBookingEntryScreenComingSoon => '[ET] Business Phone Booking Entry Screen - Coming Soon (Estonian)';
 
   @override
   String get verification => '[ET] Verification (Estonian)';
@@ -1326,8 +1222,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get businessProfile => '[ET] Business Profile (Estonian)';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      '[ET] Business Booking Entry Screen - Coming Soon (Estonian)';
+  String get businessBookingEntryScreenComingSoon => '[ET] Business Booking Entry Screen - Coming Soon (Estonian)';
 
   @override
   String get createNewSurvey => '[ET] Create New Survey (Estonian)';
@@ -1351,8 +1246,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get loginFailedE => '[ET] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[ET] Invitation sent successfully! (Estonian)';
+  String get invitationSentSuccessfully => '[ET] Invitation sent successfully! (Estonian)';
 
   @override
   String get registering => '[ET] Registering... (Estonian)';
@@ -1366,16 +1260,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get home1 => '[ET] Home (Estonian)';
 
   @override
-  String get errorSavingSettingsE =>
-      '[ET] Error saving settings: \$e (Estonian)';
+  String get errorSavingSettingsE => '[ET] Error saving settings: \$e (Estonian)';
 
   @override
-  String get appVersionAndInformation =>
-      '[ET] App version and information (Estonian)';
+  String get appVersionAndInformation => '[ET] App version and information (Estonian)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      '[ET] Business Subscription Entry Screen - Coming Soon (Estonian)';
+  String get businessSubscriptionEntryScreenComingSoon => '[ET] Business Subscription Entry Screen - Coming Soon (Estonian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1383,8 +1274,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      '[ET] Your payment has been processed successfully. (Estonian)';
+  String get yourPaymentHasBeenProcessedSuccessfully => '[ET] Your payment has been processed successfully. (Estonian)';
 
   @override
   String get errorE => '[ET] Error: \$e (Estonian)';
@@ -1393,8 +1283,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get viewAll1 => '[ET] View All (Estonian)';
 
   @override
-  String get editSurveyComingSoon =>
-      '[ET] Edit survey - Coming soon! (Estonian)';
+  String get editSurveyComingSoon => '[ET] Edit survey - Coming soon! (Estonian)';
 
   @override
   String get enterOtp => '[ET] Enter OTP (Estonian)';
@@ -1403,8 +1292,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get payment => '[ET] Payment (Estonian)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      '[ET] Automatically confirm new booking requests (Estonian)';
+  String get automaticallyConfirmNewBookingRequests => '[ET] Automatically confirm new booking requests (Estonian)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1417,8 +1305,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[ET] Please sign in to upload a background (Estonian)';
+  String get pleaseSignInToUploadABackground => '[ET] Please sign in to upload a background (Estonian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1435,22 +1322,19 @@ class AppLocalizationsEt extends AppLocalizations {
   String get autoconfirmBookings => '[ET] Auto-Confirm Bookings (Estonian)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      '[ET] Redirecting to Stripe checkout for Pro plan... (Estonian)';
+  String get redirectingToStripeCheckoutForProPlan => '[ET] Redirecting to Stripe checkout for Pro plan... (Estonian)';
 
   @override
   String get exportAsCsv => '[ET] Export as CSV (Estonian)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[ET] Delete functionality coming soon! (Estonian)';
+  String get deleteFunctionalityComingSoon => '[ET] Delete functionality coming soon! (Estonian)';
 
   @override
   String get editClient => '[ET] Edit Client (Estonian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      '[ET] Are you sure you want to delete this message? (Estonian)';
+  String get areYouSureYouWantToDeleteThisMessage => '[ET] Are you sure you want to delete this message? (Estonian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1461,39 +1345,31 @@ class AppLocalizationsEt extends AppLocalizations {
   String get notAuthenticated => '[ET] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[ET] Privacy request sent to your parents! (Estonian)';
+  String get privacyRequestSentToYourParents => '[ET] Privacy request sent to your parents! (Estonian)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[ET] Client deleted successfully! (Estonian)';
+  String get clientDeletedSuccessfully => '[ET] Client deleted successfully! (Estonian)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[ET] Failed to cancel subscription (Estonian)';
+  String get failedToCancelSubscription => '[ET] Failed to cancel subscription (Estonian)';
 
   @override
   String get allLanguages => '[ET] All Languages (Estonian)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[ET] Slot deleted successfully (Estonian)';
+  String get slotDeletedSuccessfully => '[ET] Slot deleted successfully (Estonian)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      '[ET] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => '[ET] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      '[ET] Parents must approve before children can join (Estonian)';
+  String get parentsMustApproveBeforeChildrenCanJoin => '[ET] Parents must approve before children can join (Estonian)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[ET] Subscribe to Pro (€14.99/mo) (Estonian)';
+  String get subscribeToPro1499mo => '[ET] Subscribe to Pro (€14.99/mo) (Estonian)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      '[ET] Business Availability Entry Screen - Coming Soon (Estonian)';
+  String get businessAvailabilityEntryScreenComingSoon => '[ET] Business Availability Entry Screen - Coming Soon (Estonian)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1507,8 +1383,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get submitBooking => '[ET] Submit Booking (Estonian)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      '[ET] Are you sure you want to cancel this appointment? (Estonian)';
+  String get areYouSureYouWantToCancelThisAppointment => '[ET] Are you sure you want to cancel this appointment? (Estonian)';
 
   @override
   String get noUpcomingBookings => '[ET] No upcoming bookings (Estonian)';
@@ -1526,8 +1401,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get goToDashboard => '[ET] Go to Dashboard (Estonian)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[ET] Ambassador Quota Dashboard (Estonian)';
+  String get ambassadorQuotaDashboard => '[ET] Ambassador Quota Dashboard (Estonian)';
 
   @override
   String get adminSettings => '[ET] Admin Settings';
@@ -1565,8 +1439,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[ET] Client added successfully! (Estonian)';
+  String get clientAddedSuccessfully => '[ET] Client added successfully! (Estonian)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1584,8 +1457,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get bookAppointment => '[ET] Book Appointment (Estonian)';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[ET] Delete (Estonian)';
@@ -1600,15 +1472,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get manageSubscription => '[ET] Manage Subscription (Estonian)';
 
   @override
-  String get requiresInstallFallback =>
-      '[ET] Requires Install Fallback (Estonian)';
+  String get requiresInstallFallback => '[ET] Requires Install Fallback (Estonian)';
 
   @override
   String get paymentConfirmation => '[ET] Payment Confirmation (Estonian)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[ET] Promo applied! Your next bill is free. (Estonian)';
+  String get promoAppliedYourNextBillIsFree => '[ET] Promo applied! Your next bill is free. (Estonian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1619,16 +1489,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get errorLoadingSlots => '[ET] Error loading slots (Estonian)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      '[ET] Allow other users to find and join this game (Estonian)';
+  String get allowOtherUsersToFindAndJoinThisGame => '[ET] Allow other users to find and join this game (Estonian)';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      '[ET] Business Onboarding Screen - Coming Soon (Estonian)';
+  String get businessOnboardingScreenComingSoon => '[ET] Business Onboarding Screen - Coming Soon (Estonian)';
 
   @override
-  String get activateBusinessProfile =>
-      '[ET] Activate Business Profile (Estonian)';
+  String get activateBusinessProfile => '[ET] Activate Business Profile (Estonian)';
 
   @override
   String get contentNotFound => '[ET] Content not found (Estonian)';
@@ -1670,8 +1537,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get shareLink => '[ET] Share Link (Estonian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      '[ET] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => '[ET] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[ET] Delete Appointment (Estonian)';
@@ -1691,12 +1557,10 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[ET] Update your business information (Estonian)';
+  String get updateYourBusinessInformation => '[ET] Update your business information (Estonian)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      '[ET] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => '[ET] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[ET] Parent Dashboard (Estonian)';
@@ -1719,12 +1583,10 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      '[ET] Studio booking is only available on web (Estonian)';
+  String get studioBookingIsOnlyAvailableOnWeb => '[ET] Studio booking is only available on web (Estonian)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[ET] Error loading branches: \$e (Estonian)';
+  String get errorLoadingBranchesE => '[ET] Error loading branches: \$e (Estonian)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1740,15 +1602,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get none => '[ET] None (Estonian)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[ET] Failed to update consent: \$e (Estonian)';
+  String get failedToUpdateConsentE => '[ET] Failed to update consent: \$e (Estonian)';
 
   @override
   String get welcome1 => '[ET] Welcome (Estonian)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[ET] Failed to create session: \$e (Estonian)';
+  String get failedToCreateSessionE => '[ET] Failed to create session: \$e (Estonian)';
 
   @override
   String get inviteContact => '[ET] Invite Contact (Estonian)';
@@ -1757,8 +1617,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get surveyEditor => '[ET] Survey Editor (Estonian)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[ET] Failed to start Basic subscription: \$e (Estonian)';
+  String get failedToStartBasicSubscriptionE => '[ET] Failed to start Basic subscription: \$e (Estonian)';
 
   @override
   String get mySchedule => '[ET] My Schedule (Estonian)';
@@ -1778,12 +1637,10 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[ET] Settings saved successfully! (Estonian)';
+  String get settingsSavedSuccessfully => '[ET] Settings saved successfully! (Estonian)';
 
   @override
-  String get linkCopiedToClipboard =>
-      '[ET] Link copied to clipboard! (Estonian)';
+  String get linkCopiedToClipboard => '[ET] Link copied to clipboard! (Estonian)';
 
   @override
   String get accept1 => '[ET] Accept (Estonian)';
@@ -1800,8 +1657,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[ET] Room deleted successfully! (Estonian)';
+  String get roomDeletedSuccessfully => '[ET] Room deleted successfully! (Estonian)';
 
   @override
   String get businessCalendar => '[ET] Business Calendar (Estonian)';
@@ -1866,8 +1722,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get cancel1 => '[ET] Cancel (Estonian)';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      '[ET] Subscription activated successfully! (Estonian)';
+  String get subscriptionActivatedSuccessfully => '[ET] Subscription activated successfully! (Estonian)';
 
   @override
   String activityLogaction(Object action) {
@@ -1878,8 +1733,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get broadcast => '[ET] Broadcast (Estonian)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[ET] No events scheduled this week (Estonian)';
+  String get noEventsScheduledThisWeek => '[ET] No events scheduled this week (Estonian)';
 
   @override
   String get googleCalendar => '[ET] Google Calendar (Estonian)';
@@ -1891,8 +1745,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get childDashboard => '[ET] Child Dashboard (Estonian)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[ET] Failed to upload background: \$e (Estonian)';
+  String get failedToUploadBackgroundE => '[ET] Failed to upload background: \$e (Estonian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1911,8 +1764,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get noAppointments => '[ET] No appointments (Estonian)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[ET] • Unlimited bookings per week (Estonian)';
+  String get unlimitedBookingsPerWeek => '[ET] • Unlimited bookings per week (Estonian)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1920,19 +1772,16 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[ET] Scheduled at: \$scheduledAt (Estonian)';
+  String get scheduledAtScheduledat => '[ET] Scheduled at: \$scheduledAt (Estonian)';
 
   @override
   String get selectStaff => '[ET] Select Staff (Estonian)';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      '[ET] Subscription cancelled successfully (Estonian)';
+  String get subscriptionCancelledSuccessfully => '[ET] Subscription cancelled successfully (Estonian)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[ET] Cancel Appointment (Estonian)';
@@ -1946,8 +1795,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get businessSignup => '[ET] Business Signup (Estonian)';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      '[ET] Business Completion Screen - Coming Soon (Estonian)';
+  String get businessCompletionScreenComingSoon => '[ET] Business Completion Screen - Coming Soon (Estonian)';
 
   @override
   String get createGame1 => '[ET] Create Game (Estonian)';
@@ -1958,12 +1806,10 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode =>
-      '[ET] Please enter a promo code (Estonian)';
+  String get pleaseEnterAPromoCode => '[ET] Please enter a promo code (Estonian)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[ET] Error loading availability: \$e (Estonian)';
+  String get errorLoadingAvailabilityE => '[ET] Error loading availability: \$e (Estonian)';
 
   @override
   String get parentalControls => '[ET] Parental Controls (Estonian)';
@@ -1972,15 +1818,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[ET] Child linked successfully! (Estonian)';
+  String get childLinkedSuccessfully => '[ET] Child linked successfully! (Estonian)';
 
   @override
   String get create => '[ET] Create (Estonian)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[ET] No external meetings found. (Estonian)';
+  String get noExternalMeetingsFound => '[ET] No external meetings found. (Estonian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1988,15 +1832,13 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[ET] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[ET] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[ET] Scheduler Screen (Estonian)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[ET] Client updated successfully! (Estonian)';
+  String get clientUpdatedSuccessfully => '[ET] Client updated successfully! (Estonian)';
 
   @override
   String get surveyResponses => '[ET] Survey Responses (Estonian)';
@@ -2022,12 +1864,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get errorLoadingEvents => '[ET] Error loading events (Estonian)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[ET] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[ET] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[ET] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[ET] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[ET] Success (Estonian)';
@@ -2046,12 +1886,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get readWrite => '[ET] Read & Write (Estonian)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      '[ET] Redirecting to Stripe checkout for Basic plan... (Estonian)';
+  String get redirectingToStripeCheckoutForBasicPlan => '[ET] Redirecting to Stripe checkout for Basic plan... (Estonian)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[ET] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[ET] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[ET] Pick Date (Estonian)';
@@ -2087,12 +1925,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get businessLogin => '[ET] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[ET] Invoice created successfully! (Estonian)';
+  String get invoiceCreatedSuccessfully => '[ET] Invoice created successfully! (Estonian)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[ET] No time series data available (Estonian)';
+  String get noTimeSeriesDataAvailable => '[ET] No time series data available (Estonian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2105,8 +1941,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[ET] Failed to send privacy request: \$e (Estonian)';
+  String get failedToSendPrivacyRequestE => '[ET] Failed to send privacy request: \$e (Estonian)';
 
   @override
   String get chooseYourPlan => '[ET] Choose Your Plan (Estonian)';
@@ -2121,15 +1956,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get eventCreated => '[ET] Event created (Estonian)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[ET] Subscribe to Basic (€4.99/mo) (Estonian)';
+  String get subscribeToBasic499mo => '[ET] Subscribe to Basic (€4.99/mo) (Estonian)';
 
   @override
   String get completion => '[ET] Completion (Estonian)';
 
   @override
-  String get supportTicketSubmitted =>
-      '[ET] Support ticket submitted (Estonian)';
+  String get supportTicketSubmitted => '[ET] Support ticket submitted (Estonian)';
 
   @override
   String get monetizationSettings => '[ET] Monetization Settings (Estonian)';
@@ -2144,12 +1977,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get deleteSurvey => '[ET] Delete Survey (Estonian)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[ET] Game approved successfully! (Estonian)';
+  String get gameApprovedSuccessfully => '[ET] Game approved successfully! (Estonian)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[ET] Error loading permissions: \$error (Estonian)';
+  String get errorLoadingPermissionsError => '[ET] Error loading permissions: \$error (Estonian)';
 
   @override
   String get referrals => '[ET] Referrals (Estonian)';
@@ -2191,8 +2022,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get organizations => '[ET] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[ET] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[ET] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[ET] Create New Game (Estonian)';
@@ -2201,12 +2031,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get next1 => '[ET] Next (Estonian)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[ET] Background uploaded successfully! (Estonian)';
+  String get backgroundUploadedSuccessfully => '[ET] Background uploaded successfully! (Estonian)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[ET] No appointment requests found. (Estonian)';
+  String get noAppointmentRequestsFound => '[ET] No appointment requests found. (Estonian)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2233,19 +2061,16 @@ class AppLocalizationsEt extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE =>
-      '[ET] Failed to create game: \$e (Estonian)';
+  String get failedToCreateGameE => '[ET] Failed to create game: \$e (Estonian)';
 
   @override
   String get noChartDataAvailable => '[ET] No chart data available (Estonian)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[ET] • Phone-based booking system (Estonian)';
+  String get phonebasedBookingSystem => '[ET] • Phone-based booking system (Estonian)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2254,8 +2079,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get invoices => '[ET] Invoices (Estonian)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2282,12 +2106,10 @@ class AppLocalizationsEt extends AppLocalizations {
   String get iDoNotConsent => '[ET] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      '[ET] No clients found. Add your first client! (Estonian)';
+  String get noClientsFoundAddYourFirstClient => '[ET] No clients found. Add your first client! (Estonian)';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      '[ET] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => '[ET] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[ET] Group: \$groupId';
@@ -2299,8 +2121,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get forward => '[ET] Forward (Estonian)';
 
   @override
-  String get roomAddedSuccessfully =>
-      '[ET] Room added successfully! (Estonian)';
+  String get roomAddedSuccessfully => '[ET] Room added successfully! (Estonian)';
 
   @override
   String get option => '[ET] • \$option (Estonian)';
@@ -2311,8 +2132,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[ET] • CRM dashboard with analytics (Estonian)';
+  String get crmDashboardWithAnalytics => '[ET] • CRM dashboard with analytics (Estonian)';
 
   @override
   String get contentLibrary1 => '[ET] Content Library (Estonian)';
@@ -2321,34 +2141,28 @@ class AppLocalizationsEt extends AppLocalizations {
   String get reply => '[ET] Reply (Estonian)';
 
   @override
-  String get subscriptionManagement =>
-      '[ET] Subscription Management (Estonian)';
+  String get subscriptionManagement => '[ET] Subscription Management (Estonian)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      '[ET] Monetization settings will be implemented here (Estonian)';
+  String get monetizationSettingsWillBeImplementedHere => '[ET] Monetization settings will be implemented here (Estonian)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[ET] Failed to apply promo code: \$e (Estonian)';
+  String get failedToApplyPromoCodeE => '[ET] Failed to apply promo code: \$e (Estonian)';
 
   @override
   String get editProvider => '[ET] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[ET] Localization Contribution (Estonian)';
+  String get localizationContribution => '[ET] Localization Contribution (Estonian)';
 
   @override
   String get parentalConsent => '[ET] Parental Consent (Estonian)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[ET] Business Signup Screen - Coming Soon (Estonian)';
+  String get businessSignupScreenComingSoon => '[ET] Business Signup Screen - Coming Soon (Estonian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      '[ET] Are you sure you want to delete this appointment? (Estonian)';
+  String get areYouSureYouWantToDeleteThisAppointment => '[ET] Are you sure you want to delete this appointment? (Estonian)';
 
   @override
   String get syncAppointment => '[ET] Sync Appointment (Estonian)';
@@ -2360,15 +2174,13 @@ class AppLocalizationsEt extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[ET] Business Setup Screen - Coming Soon (Estonian)';
+  String get businessSetupScreenComingSoon => '[ET] Business Setup Screen - Coming Soon (Estonian)';
 
   @override
   String get edit1 => '[ET] Edit (Estonian)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[ET] No events scheduled this month (Estonian)';
+  String get noEventsScheduledThisMonth => '[ET] No events scheduled this month (Estonian)';
 
   @override
   String get businessDashboard => '[ET] Business Dashboard (Estonian)';
@@ -2382,8 +2194,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[ET] Manage Staff Availability (Estonian)';
+  String get manageStaffAvailability => '[ET] Manage Staff Availability (Estonian)';
 
   @override
   String get noMissingTranslations => '[ET] No missing translations (Estonian)';
@@ -2400,8 +2211,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get noUsers => '[ET] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[ET] Error loading referral code (Estonian)';
+  String get errorLoadingReferralCode => '[ET] Error loading referral code (Estonian)';
 
   @override
   String get allCountries => '[ET] All Countries (Estonian)';
@@ -2416,8 +2226,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get deleteMessage => '[ET] Delete Message (Estonian)';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[ET] changeRole (TRANSLATE)';
@@ -2428,8 +2237,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[ET] Opening customer portal... (Estonian)';
+  String get openingCustomerPortal => '[ET] Opening customer portal... (Estonian)';
 
   @override
   String get signOut => '[ET] Sign Out (Estonian)';
@@ -2440,8 +2248,7 @@ class AppLocalizationsEt extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[ET] Upgrade to Business (Estonian)';
@@ -2467,8 +2274,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[ET] View Responses (Estonian)';
@@ -2497,8 +2303,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2516,8 +2321,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description =>
-      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2526,8 +2330,7 @@ class AppLocalizationsEt extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title =>
-      'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2540,4 +2343,136 @@ class AppLocalizationsEt extends AppLocalizations {
 
   @override
   String get purchase_now_button => 'Purchase Now';
+
+  @override
+  String get welcomeAmbassador => 'Welcome, Ambassador!';
+
+  @override
+  String get activeStatus => 'Active';
+
+  @override
+  String get totalReferrals => 'Total Referrals';
+
+  @override
+  String get thisMonth => 'This Month';
+
+  @override
+  String get activeRewards => 'Active Rewards';
+
+  @override
+  String get nextTierProgress => 'Next Tier Progress';
+
+  @override
+  String get progressToPremium => 'Progress to Premium';
+
+  @override
+  String get remaining => 'remaining';
+
+  @override
+  String get monthlyGoal => 'Monthly Goal';
+
+  @override
+  String get onTrack => 'On Track';
+
+  @override
+  String get needsAttention => 'Needs Attention';
+
+  @override
+  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+
+  @override
+  String get viewRewards => 'View Rewards';
+
+  @override
+  String get referralStatistics => 'Referral Statistics';
+
+  @override
+  String get activeReferrals => 'Active Referrals';
+
+  @override
+  String get conversionRate => 'Conversion Rate';
+
+  @override
+  String get recentReferrals => 'Recent Referrals';
+
+  @override
+  String get tierBenefits => 'Tier Benefits';
+
+  @override
+  String get yourReferralQRCode => 'Your Referral QR Code';
+
+  @override
+  String get yourReferralLink => 'Your Referral Link';
+
+  @override
+  String get shareYourLink => 'Share Your Link';
+
+  @override
+  String get shareViaMessage => 'Message';
+
+  @override
+  String get shareViaEmail => 'Email';
+
+  @override
+  String get shareMore => 'More Options';
+
+  @override
+  String get becomeAmbassador => 'Become an Ambassador';
+
+  @override
+  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
+
+  @override
+  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
+
+  @override
+  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+
+  @override
+  String get ambassadorPromotionTitle => '[ET] Congratulations! You\'re now an Ambassador! (Estonian)';
+
+  @override
+  String ambassadorPromotionBody(String tier) {
+    return '[ET] Welcome to the $tier tier! Start sharing your referral link to earn rewards. (Estonian)';
+  }
+
+  @override
+  String get tierUpgradeTitle => '[ET] Tier Upgrade! 🎉 (Estonian)';
+
+  @override
+  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+    return '[ET] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Estonian)';
+  }
+
+  @override
+  String get monthlyReminderTitle => '[ET] Monthly Goal Reminder (Estonian)';
+
+  @override
+  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+    return '[ET] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Estonian)';
+  }
+
+  @override
+  String get performanceWarningTitle => '[ET] Ambassador Performance Alert (Estonian)';
+
+  @override
+  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+    return '[ET] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Estonian)';
+  }
+
+  @override
+  String get ambassadorDemotionTitle => '[ET] Ambassador Status Update (Estonian)';
+
+  @override
+  String ambassadorDemotionBody(String reason) {
+    return '[ET] Your ambassador status has been temporarily suspended due to: $reason. You can regain your status by meeting the requirements again. (Estonian)';
+  }
+
+  @override
+  String get referralSuccessTitle => '[ET] New Referral! 🎉 (Estonian)';
+
+  @override
+  String referralSuccessBody(String referredUserName, String totalReferrals) {
+    return '[ET] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Estonian)';
+  }
 }

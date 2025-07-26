@@ -85,9 +85,6 @@ class AppLocalizationsCy extends AppLocalizations {
   String get revokeAccess => '[CY] Canslo mynediad';
 
   @override
-  String get saveGroupForRecognition => '[CY] Cadw grŵp ar gyfer adnabod';
-
-  @override
   String get playtimeLiveScheduled => '[CY] [CY] Live playtime scheduled!';
 
   @override
@@ -185,8 +182,7 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully =>
-      '[CY] Cyfarfod wedi ei rannu yn llwyddiannus';
+  String get meetingSharedSuccessfully => '[CY] Cyfarfod wedi ei rannu yn llwyddiannus';
 
   @override
   String get welcomeToPlaytime => '[CY] Croeso i Playtime';
@@ -204,8 +200,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get cut => '[CY] [CY] Cut';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      '[CY] Gwahoddiad wedi ei ganslo\'n llwyddiannus';
+  String get inviteCancelledSuccessfully => '[CY] Gwahoddiad wedi ei ganslo\'n llwyddiannus';
 
   @override
   String get retry => '[CY] [CY] Retry';
@@ -261,9 +256,6 @@ class AppLocalizationsCy extends AppLocalizations {
   String get upcomingSessions => '[CY] Sesiynau sydd i ddod';
 
   @override
-  String get enterGroupName => '[CY] Nodwch enw\'r grŵp';
-
-  @override
   String get confirm => '[CY] Cadarnhau';
 
   @override
@@ -285,8 +277,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get scheduleForLater => '[CY] Trefnu ar gyfer yn nes ymlaen';
 
   @override
-  String get accessRevokedSuccessfully =>
-      '[CY] Mynediad wedi ei ganslo\'n llwyddiannus';
+  String get accessRevokedSuccessfully => '[CY] Mynediad wedi ei ganslo\'n llwyddiannus';
 
   @override
   String type(Object type) {
@@ -402,8 +393,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get mediaOptional => '[CY] Cyfryngau (dewisol)';
 
   @override
-  String get messageSavedSuccessfully =>
-      '[CY] Neges wedi ei gadw\'n llwyddiannus';
+  String get messageSavedSuccessfully => '[CY] Neges wedi ei gadw\'n llwyddiannus';
 
   @override
   String get scheduledFor => '[CY] Wedi\'i drefnu ar gyfer';
@@ -412,8 +402,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get dashboard => '[CY] Dangosfwrdd';
 
   @override
-  String get noPermissionForBroadcast =>
-      '[CY] [CY] No permission for broadcast';
+  String get noPermissionForBroadcast => '[CY] [CY] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[CY] Playtime Games – Admin';
@@ -490,8 +479,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get playtimeEnterGameName => '[CY] Nodwch enw\'r gêm';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[CY] [CY] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '[CY] [CY] Please login to access family features';
 
   @override
   String get myInvites => '[CY] Fy nghwahoddiadau';
@@ -500,23 +488,16 @@ class AppLocalizationsCy extends AppLocalizations {
   String get createGame => '[CY] Creu gêm';
 
   @override
-  String get groupNameOptional => '[CY] Enw\'r grŵp (dewisol)';
-
-  @override
   String get playtimeNoSessions => '[CY] Dim sesiynau Playtime';
 
   @override
   String get adminScreenTBD => '[CY] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle =>
-      '[CY] Teitl dangosfwrdd rhiant Playtime';
+  String get playtimeParentDashboardTitle => '[CY] Teitl dangosfwrdd rhiant Playtime';
 
   @override
   String get close => '[CY] Cau';
-
-  @override
-  String get knownGroupDetected => '[CY] Grŵp cyfarwydd wedi\'i ganfod';
 
   @override
   String get back => '[CY] Yn ôl';
@@ -552,8 +533,7 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[CY] [CY] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[CY] [CY] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[CY] Admin Metrics';
@@ -574,52 +554,40 @@ class AppLocalizationsCy extends AppLocalizations {
   String get contentLibrary => '[CY] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[CY] No account found with this email address.';
+  String get authErrorUserNotFound => '[CY] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[CY] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[CY] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[CY] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[CY] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[CY] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[CY] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[CY] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[CY] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[CY] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[CY] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[CY] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[CY] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[CY] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[CY] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[CY] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[CY] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      '[CY] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential => '[CY] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[CY] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[CY] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[CY] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[CY] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -636,24 +604,19 @@ class AppLocalizationsCy extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[CY] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[CY] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[CY] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[CY] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode =>
-      '[CY] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode => '[CY] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[CY] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[CY] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode =>
-      '[CY] Please enter the verification code.';
+  String get authErrorMissingVerificationCode => '[CY] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[CY] Missing verification ID.';
@@ -665,56 +628,43 @@ class AppLocalizationsCy extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[CY] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[CY] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[CY] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[CY] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[CY] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[CY] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[CY] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired =>
-      '[CY] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired => '[CY] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound =>
-      '[CY] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound => '[CY] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession =>
-      '[CY] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession => '[CY] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession =>
-      '[CY] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession => '[CY] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      '[CY] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse => '[CY] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      '[CY] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded => '[CY] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[CY] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[CY] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      '[CY] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification => '[CY] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      '[CY] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists => '[CY] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[CY] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[CY] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[CY] The ID token is invalid.';
@@ -726,12 +676,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[CY] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[CY] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[CY] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[CY] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[CY] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[CY] Invalid custom claims provided.';
@@ -740,87 +688,70 @@ class AppLocalizationsCy extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[CY] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[CY] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[CY] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[CY] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[CY] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[CY] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      '[CY] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain => '[CY] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[CY] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[CY] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[CY] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[CY] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[CY] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[CY] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      '[CY] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength => '[CY] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[CY] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[CY] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[CY] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      '[CY] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization => '[CY] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[CY] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[CY] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      '[CY] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator => '[CY] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[CY] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[CY] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[CY] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[CY] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[CY] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[CY] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      '[CY] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration => '[CY] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[CY] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[CY] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[CY] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      '[CY] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded => '[CY] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[CY] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[CY] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[CY] Missing continue URL.';
@@ -835,8 +766,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get authErrorMissingUid => '[CY] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret =>
-      '[CY] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret => '[CY] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[CY] Firebase project not found.';
@@ -845,23 +775,19 @@ class AppLocalizationsCy extends AppLocalizations {
   String get authErrorReservedClaims => '[CY] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[CY] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[CY] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[CY] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[CY] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[CY] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      '[CY] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri => '[CY] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[CY] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[CY] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -910,8 +836,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      '[CY] Virtual session created! Inviting friends... (Welsh)';
+  String get virtualSessionCreatedInvitingFriends => '[CY] Virtual session created! Inviting friends... (Welsh)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -958,8 +883,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get confirmBooking => '[CY] Confirm Booking (Welsh)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[CY] Failed to update permission: \$e (Welsh)';
+  String get failedToUpdatePermissionE => '[CY] Failed to update permission: \$e (Welsh)';
 
   @override
   String get reject => '[CY] Reject (Welsh)';
@@ -987,8 +911,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get resolve => '[CY] Resolve (Welsh)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[CY] Error loading surveys: \$error (Welsh)';
+  String get errorLoadingSurveysError => '[CY] Error loading surveys: \$error (Welsh)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -996,8 +919,7 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[CY] Get help with your account (Welsh)';
+  String get getHelpWithYourAccount => '[CY] Get help with your account (Welsh)';
 
   @override
   String get pay => '[CY] Pay (Welsh)';
@@ -1012,8 +934,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[CY] Changes saved successfully! (Welsh)';
+  String get changesSavedSuccessfully => '[CY] Changes saved successfully! (Welsh)';
 
   @override
   String get createNewInvoice => '[CY] Create New Invoice (Welsh)';
@@ -1033,8 +954,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get profileSaved => '[CY] Profile saved! (Welsh)';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1065,8 +985,7 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      '[CY] You will receive a confirmation email shortly. (Welsh)';
+  String get youWillReceiveAConfirmationEmailShortly => '[CY] You will receive a confirmation email shortly. (Welsh)';
 
   @override
   String get addQuestion => '[CY] Add Question (Welsh)';
@@ -1095,26 +1014,22 @@ class AppLocalizationsCy extends AppLocalizations {
   String get surveyManagement => '[CY] Survey Management (Welsh)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[CY] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[CY] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[CY] No rooms found. Add your first room! (Welsh)';
+  String get noRoomsFoundAddYourFirstRoom => '[CY] No rooms found. Add your first room! (Welsh)';
 
   @override
   String get readOurPrivacyPolicy => '[CY] Read our privacy policy (Welsh)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[CY] Could not open privacy policy (Welsh)';
+  String get couldNotOpenPrivacyPolicy => '[CY] Could not open privacy policy (Welsh)';
 
   @override
   String get refresh1 => '[CY] Refresh (Welsh)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[CY] Room updated successfully! (Welsh)';
+  String get roomUpdatedSuccessfully => '[CY] Room updated successfully! (Welsh)';
 
   @override
   String get contentDetail => '[CY] Content Detail (Welsh)';
@@ -1123,8 +1038,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get cancelSubscription => '[CY] Cancel Subscription (Welsh)';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      '[CY] Successfully registered as Ambassador! (Welsh)';
+  String get successfullyRegisteredAsAmbassador => '[CY] Successfully registered as Ambassador! (Welsh)';
 
   @override
   String get save1 => '[CY] Save (Welsh)';
@@ -1133,8 +1047,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get copy1 => '[CY] Copy (Welsh)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[CY] Failed to send invitation: \$e (Welsh)';
+  String get failedToSendInvitationE => '[CY] Failed to send invitation: \$e (Welsh)';
 
   @override
   String get surveyScore => '[CY] Survey Score (Welsh)';
@@ -1151,20 +1064,16 @@ class AppLocalizationsCy extends AppLocalizations {
   String get responseDetail => '[CY] Response Detail (Welsh)';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[CY] Failed to start Pro subscription: \$e (Welsh)';
+  String get failedToStartProSubscriptionE => '[CY] Failed to start Pro subscription: \$e (Welsh)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      '[CY] Business Dashboard Entry Screen - Coming Soon (Welsh)';
+  String get businessDashboardEntryScreenComingSoon => '[CY] Business Dashboard Entry Screen - Coming Soon (Welsh)';
 
   @override
   String get contentFilter => '[CY] Content Filter (Welsh)';
@@ -1186,8 +1095,7 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      '[CY] Business CRM Entry Screen - Coming Soon (Welsh)';
+  String get businessCrmEntryScreenComingSoon => '[CY] Business CRM Entry Screen - Coming Soon (Welsh)';
 
   @override
   String get adminDashboard => '[CY] Admin Dashboard';
@@ -1198,16 +1106,13 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[CY] Error loading dashboard: \$error (Welsh)';
+  String get errorLoadingDashboardError => '[CY] Error loading dashboard: \$error (Welsh)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[CY] Game deleted successfully! (Welsh)';
+  String get gameDeletedSuccessfully => '[CY] Game deleted successfully! (Welsh)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[CY] View responses - Coming soon! (Welsh)';
+  String get viewResponsesComingSoon => '[CY] View responses - Coming soon! (Welsh)';
 
   @override
   String get deleteProvider => '[CY] Delete Provider';
@@ -1216,8 +1121,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get errorLoadingRewards => '[CY] Error loading rewards (Welsh)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[CY] Failed to delete account: \$e (Welsh)';
+  String get failedToDeleteAccountE => '[CY] Failed to delete account: \$e (Welsh)';
 
   @override
   String get invited1 => '[CY] Invited (Welsh)';
@@ -1232,8 +1136,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get noEvents => '[CY] No events (Welsh)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[CY] Game created successfully! (Welsh)';
+  String get gameCreatedSuccessfully => '[CY] Game created successfully! (Welsh)';
 
   @override
   String get add1 => '[CY] Add (Welsh)';
@@ -1253,12 +1156,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get clients => '[CY] Clients (Welsh)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[CY] No ambassador data available (Welsh)';
+  String get noAmbassadorDataAvailable => '[CY] No ambassador data available (Welsh)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[CY] Background deleted successfully! (Welsh)';
+  String get backgroundDeletedSuccessfully => '[CY] Background deleted successfully! (Welsh)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1266,8 +1167,7 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[CY] No analytics data available yet. (Welsh)';
+  String get noAnalyticsDataAvailableYet => '[CY] No analytics data available yet. (Welsh)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1275,8 +1175,7 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      '[CY] Business Phone Booking Entry Screen - Coming Soon (Welsh)';
+  String get businessPhoneBookingEntryScreenComingSoon => '[CY] Business Phone Booking Entry Screen - Coming Soon (Welsh)';
 
   @override
   String get verification => '[CY] Verification (Welsh)';
@@ -1323,8 +1222,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get businessProfile => '[CY] Business Profile (Welsh)';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      '[CY] Business Booking Entry Screen - Coming Soon (Welsh)';
+  String get businessBookingEntryScreenComingSoon => '[CY] Business Booking Entry Screen - Coming Soon (Welsh)';
 
   @override
   String get createNewSurvey => '[CY] Create New Survey (Welsh)';
@@ -1348,8 +1246,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get loginFailedE => '[CY] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[CY] Invitation sent successfully! (Welsh)';
+  String get invitationSentSuccessfully => '[CY] Invitation sent successfully! (Welsh)';
 
   @override
   String get registering => '[CY] Registering... (Welsh)';
@@ -1366,12 +1263,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get errorSavingSettingsE => '[CY] Error saving settings: \$e (Welsh)';
 
   @override
-  String get appVersionAndInformation =>
-      '[CY] App version and information (Welsh)';
+  String get appVersionAndInformation => '[CY] App version and information (Welsh)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      '[CY] Business Subscription Entry Screen - Coming Soon (Welsh)';
+  String get businessSubscriptionEntryScreenComingSoon => '[CY] Business Subscription Entry Screen - Coming Soon (Welsh)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1379,8 +1274,7 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      '[CY] Your payment has been processed successfully. (Welsh)';
+  String get yourPaymentHasBeenProcessedSuccessfully => '[CY] Your payment has been processed successfully. (Welsh)';
 
   @override
   String get errorE => '[CY] Error: \$e (Welsh)';
@@ -1398,8 +1292,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get payment => '[CY] Payment (Welsh)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      '[CY] Automatically confirm new booking requests (Welsh)';
+  String get automaticallyConfirmNewBookingRequests => '[CY] Automatically confirm new booking requests (Welsh)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1412,8 +1305,7 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[CY] Please sign in to upload a background (Welsh)';
+  String get pleaseSignInToUploadABackground => '[CY] Please sign in to upload a background (Welsh)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1430,22 +1322,19 @@ class AppLocalizationsCy extends AppLocalizations {
   String get autoconfirmBookings => '[CY] Auto-Confirm Bookings (Welsh)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      '[CY] Redirecting to Stripe checkout for Pro plan... (Welsh)';
+  String get redirectingToStripeCheckoutForProPlan => '[CY] Redirecting to Stripe checkout for Pro plan... (Welsh)';
 
   @override
   String get exportAsCsv => '[CY] Export as CSV (Welsh)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[CY] Delete functionality coming soon! (Welsh)';
+  String get deleteFunctionalityComingSoon => '[CY] Delete functionality coming soon! (Welsh)';
 
   @override
   String get editClient => '[CY] Edit Client (Welsh)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      '[CY] Are you sure you want to delete this message? (Welsh)';
+  String get areYouSureYouWantToDeleteThisMessage => '[CY] Are you sure you want to delete this message? (Welsh)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1456,39 +1345,31 @@ class AppLocalizationsCy extends AppLocalizations {
   String get notAuthenticated => '[CY] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[CY] Privacy request sent to your parents! (Welsh)';
+  String get privacyRequestSentToYourParents => '[CY] Privacy request sent to your parents! (Welsh)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[CY] Client deleted successfully! (Welsh)';
+  String get clientDeletedSuccessfully => '[CY] Client deleted successfully! (Welsh)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[CY] Failed to cancel subscription (Welsh)';
+  String get failedToCancelSubscription => '[CY] Failed to cancel subscription (Welsh)';
 
   @override
   String get allLanguages => '[CY] All Languages (Welsh)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[CY] Slot deleted successfully (Welsh)';
+  String get slotDeletedSuccessfully => '[CY] Slot deleted successfully (Welsh)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      '[CY] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => '[CY] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      '[CY] Parents must approve before children can join (Welsh)';
+  String get parentsMustApproveBeforeChildrenCanJoin => '[CY] Parents must approve before children can join (Welsh)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[CY] Subscribe to Pro (€14.99/mo) (Welsh)';
+  String get subscribeToPro1499mo => '[CY] Subscribe to Pro (€14.99/mo) (Welsh)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      '[CY] Business Availability Entry Screen - Coming Soon (Welsh)';
+  String get businessAvailabilityEntryScreenComingSoon => '[CY] Business Availability Entry Screen - Coming Soon (Welsh)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1502,8 +1383,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get submitBooking => '[CY] Submit Booking (Welsh)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      '[CY] Are you sure you want to cancel this appointment? (Welsh)';
+  String get areYouSureYouWantToCancelThisAppointment => '[CY] Are you sure you want to cancel this appointment? (Welsh)';
 
   @override
   String get noUpcomingBookings => '[CY] No upcoming bookings (Welsh)';
@@ -1521,8 +1401,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get goToDashboard => '[CY] Go to Dashboard (Welsh)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[CY] Ambassador Quota Dashboard (Welsh)';
+  String get ambassadorQuotaDashboard => '[CY] Ambassador Quota Dashboard (Welsh)';
 
   @override
   String get adminSettings => '[CY] Admin Settings';
@@ -1560,8 +1439,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[CY] Client added successfully! (Welsh)';
+  String get clientAddedSuccessfully => '[CY] Client added successfully! (Welsh)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1579,8 +1457,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get bookAppointment => '[CY] Book Appointment (Welsh)';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[CY] Delete (Welsh)';
@@ -1595,15 +1472,13 @@ class AppLocalizationsCy extends AppLocalizations {
   String get manageSubscription => '[CY] Manage Subscription (Welsh)';
 
   @override
-  String get requiresInstallFallback =>
-      '[CY] Requires Install Fallback (Welsh)';
+  String get requiresInstallFallback => '[CY] Requires Install Fallback (Welsh)';
 
   @override
   String get paymentConfirmation => '[CY] Payment Confirmation (Welsh)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[CY] Promo applied! Your next bill is free. (Welsh)';
+  String get promoAppliedYourNextBillIsFree => '[CY] Promo applied! Your next bill is free. (Welsh)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1614,16 +1489,13 @@ class AppLocalizationsCy extends AppLocalizations {
   String get errorLoadingSlots => '[CY] Error loading slots (Welsh)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      '[CY] Allow other users to find and join this game (Welsh)';
+  String get allowOtherUsersToFindAndJoinThisGame => '[CY] Allow other users to find and join this game (Welsh)';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      '[CY] Business Onboarding Screen - Coming Soon (Welsh)';
+  String get businessOnboardingScreenComingSoon => '[CY] Business Onboarding Screen - Coming Soon (Welsh)';
 
   @override
-  String get activateBusinessProfile =>
-      '[CY] Activate Business Profile (Welsh)';
+  String get activateBusinessProfile => '[CY] Activate Business Profile (Welsh)';
 
   @override
   String get contentNotFound => '[CY] Content not found (Welsh)';
@@ -1665,8 +1537,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get shareLink => '[CY] Share Link (Welsh)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      '[CY] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => '[CY] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[CY] Delete Appointment (Welsh)';
@@ -1686,12 +1557,10 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[CY] Update your business information (Welsh)';
+  String get updateYourBusinessInformation => '[CY] Update your business information (Welsh)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      '[CY] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => '[CY] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[CY] Parent Dashboard (Welsh)';
@@ -1714,12 +1583,10 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      '[CY] Studio booking is only available on web (Welsh)';
+  String get studioBookingIsOnlyAvailableOnWeb => '[CY] Studio booking is only available on web (Welsh)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[CY] Error loading branches: \$e (Welsh)';
+  String get errorLoadingBranchesE => '[CY] Error loading branches: \$e (Welsh)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1735,15 +1602,13 @@ class AppLocalizationsCy extends AppLocalizations {
   String get none => '[CY] None (Welsh)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[CY] Failed to update consent: \$e (Welsh)';
+  String get failedToUpdateConsentE => '[CY] Failed to update consent: \$e (Welsh)';
 
   @override
   String get welcome1 => '[CY] Welcome (Welsh)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[CY] Failed to create session: \$e (Welsh)';
+  String get failedToCreateSessionE => '[CY] Failed to create session: \$e (Welsh)';
 
   @override
   String get inviteContact => '[CY] Invite Contact (Welsh)';
@@ -1752,8 +1617,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get surveyEditor => '[CY] Survey Editor (Welsh)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[CY] Failed to start Basic subscription: \$e (Welsh)';
+  String get failedToStartBasicSubscriptionE => '[CY] Failed to start Basic subscription: \$e (Welsh)';
 
   @override
   String get mySchedule => '[CY] My Schedule (Welsh)';
@@ -1773,8 +1637,7 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[CY] Settings saved successfully! (Welsh)';
+  String get settingsSavedSuccessfully => '[CY] Settings saved successfully! (Welsh)';
 
   @override
   String get linkCopiedToClipboard => '[CY] Link copied to clipboard! (Welsh)';
@@ -1794,8 +1657,7 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[CY] Room deleted successfully! (Welsh)';
+  String get roomDeletedSuccessfully => '[CY] Room deleted successfully! (Welsh)';
 
   @override
   String get businessCalendar => '[CY] Business Calendar (Welsh)';
@@ -1860,8 +1722,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get cancel1 => '[CY] Cancel (Welsh)';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      '[CY] Subscription activated successfully! (Welsh)';
+  String get subscriptionActivatedSuccessfully => '[CY] Subscription activated successfully! (Welsh)';
 
   @override
   String activityLogaction(Object action) {
@@ -1872,8 +1733,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get broadcast => '[CY] Broadcast (Welsh)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[CY] No events scheduled this week (Welsh)';
+  String get noEventsScheduledThisWeek => '[CY] No events scheduled this week (Welsh)';
 
   @override
   String get googleCalendar => '[CY] Google Calendar (Welsh)';
@@ -1885,8 +1745,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get childDashboard => '[CY] Child Dashboard (Welsh)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[CY] Failed to upload background: \$e (Welsh)';
+  String get failedToUploadBackgroundE => '[CY] Failed to upload background: \$e (Welsh)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1905,8 +1764,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get noAppointments => '[CY] No appointments (Welsh)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[CY] • Unlimited bookings per week (Welsh)';
+  String get unlimitedBookingsPerWeek => '[CY] • Unlimited bookings per week (Welsh)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1914,19 +1772,16 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[CY] Scheduled at: \$scheduledAt (Welsh)';
+  String get scheduledAtScheduledat => '[CY] Scheduled at: \$scheduledAt (Welsh)';
 
   @override
   String get selectStaff => '[CY] Select Staff (Welsh)';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      '[CY] Subscription cancelled successfully (Welsh)';
+  String get subscriptionCancelledSuccessfully => '[CY] Subscription cancelled successfully (Welsh)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[CY] Cancel Appointment (Welsh)';
@@ -1940,8 +1795,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get businessSignup => '[CY] Business Signup (Welsh)';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      '[CY] Business Completion Screen - Coming Soon (Welsh)';
+  String get businessCompletionScreenComingSoon => '[CY] Business Completion Screen - Coming Soon (Welsh)';
 
   @override
   String get createGame1 => '[CY] Create Game (Welsh)';
@@ -1955,8 +1809,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get pleaseEnterAPromoCode => '[CY] Please enter a promo code (Welsh)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[CY] Error loading availability: \$e (Welsh)';
+  String get errorLoadingAvailabilityE => '[CY] Error loading availability: \$e (Welsh)';
 
   @override
   String get parentalControls => '[CY] Parental Controls (Welsh)';
@@ -1965,15 +1818,13 @@ class AppLocalizationsCy extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[CY] Child linked successfully! (Welsh)';
+  String get childLinkedSuccessfully => '[CY] Child linked successfully! (Welsh)';
 
   @override
   String get create => '[CY] Create (Welsh)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[CY] No external meetings found. (Welsh)';
+  String get noExternalMeetingsFound => '[CY] No external meetings found. (Welsh)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1981,15 +1832,13 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[CY] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[CY] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[CY] Scheduler Screen (Welsh)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[CY] Client updated successfully! (Welsh)';
+  String get clientUpdatedSuccessfully => '[CY] Client updated successfully! (Welsh)';
 
   @override
   String get surveyResponses => '[CY] Survey Responses (Welsh)';
@@ -2015,12 +1864,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get errorLoadingEvents => '[CY] Error loading events (Welsh)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[CY] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[CY] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[CY] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[CY] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[CY] Success (Welsh)';
@@ -2039,12 +1886,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get readWrite => '[CY] Read & Write (Welsh)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      '[CY] Redirecting to Stripe checkout for Basic plan... (Welsh)';
+  String get redirectingToStripeCheckoutForBasicPlan => '[CY] Redirecting to Stripe checkout for Basic plan... (Welsh)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[CY] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[CY] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[CY] Pick Date (Welsh)';
@@ -2080,12 +1925,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get businessLogin => '[CY] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[CY] Invoice created successfully! (Welsh)';
+  String get invoiceCreatedSuccessfully => '[CY] Invoice created successfully! (Welsh)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[CY] No time series data available (Welsh)';
+  String get noTimeSeriesDataAvailable => '[CY] No time series data available (Welsh)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2098,8 +1941,7 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[CY] Failed to send privacy request: \$e (Welsh)';
+  String get failedToSendPrivacyRequestE => '[CY] Failed to send privacy request: \$e (Welsh)';
 
   @override
   String get chooseYourPlan => '[CY] Choose Your Plan (Welsh)';
@@ -2114,8 +1956,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get eventCreated => '[CY] Event created (Welsh)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[CY] Subscribe to Basic (€4.99/mo) (Welsh)';
+  String get subscribeToBasic499mo => '[CY] Subscribe to Basic (€4.99/mo) (Welsh)';
 
   @override
   String get completion => '[CY] Completion (Welsh)';
@@ -2136,12 +1977,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get deleteSurvey => '[CY] Delete Survey (Welsh)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[CY] Game approved successfully! (Welsh)';
+  String get gameApprovedSuccessfully => '[CY] Game approved successfully! (Welsh)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[CY] Error loading permissions: \$error (Welsh)';
+  String get errorLoadingPermissionsError => '[CY] Error loading permissions: \$error (Welsh)';
 
   @override
   String get referrals => '[CY] Referrals (Welsh)';
@@ -2183,8 +2022,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get organizations => '[CY] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[CY] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[CY] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[CY] Create New Game (Welsh)';
@@ -2193,12 +2031,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get next1 => '[CY] Next (Welsh)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[CY] Background uploaded successfully! (Welsh)';
+  String get backgroundUploadedSuccessfully => '[CY] Background uploaded successfully! (Welsh)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[CY] No appointment requests found. (Welsh)';
+  String get noAppointmentRequestsFound => '[CY] No appointment requests found. (Welsh)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2225,8 +2061,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[CY] Failed to create game: \$e (Welsh)';
@@ -2235,8 +2070,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get noChartDataAvailable => '[CY] No chart data available (Welsh)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[CY] • Phone-based booking system (Welsh)';
+  String get phonebasedBookingSystem => '[CY] • Phone-based booking system (Welsh)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2245,8 +2079,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get invoices => '[CY] Invoices (Welsh)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2273,12 +2106,10 @@ class AppLocalizationsCy extends AppLocalizations {
   String get iDoNotConsent => '[CY] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      '[CY] No clients found. Add your first client! (Welsh)';
+  String get noClientsFoundAddYourFirstClient => '[CY] No clients found. Add your first client! (Welsh)';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      '[CY] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => '[CY] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[CY] Group: \$groupId';
@@ -2301,8 +2132,7 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[CY] • CRM dashboard with analytics (Welsh)';
+  String get crmDashboardWithAnalytics => '[CY] • CRM dashboard with analytics (Welsh)';
 
   @override
   String get contentLibrary1 => '[CY] Content Library (Welsh)';
@@ -2314,30 +2144,25 @@ class AppLocalizationsCy extends AppLocalizations {
   String get subscriptionManagement => '[CY] Subscription Management (Welsh)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      '[CY] Monetization settings will be implemented here (Welsh)';
+  String get monetizationSettingsWillBeImplementedHere => '[CY] Monetization settings will be implemented here (Welsh)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[CY] Failed to apply promo code: \$e (Welsh)';
+  String get failedToApplyPromoCodeE => '[CY] Failed to apply promo code: \$e (Welsh)';
 
   @override
   String get editProvider => '[CY] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[CY] Localization Contribution (Welsh)';
+  String get localizationContribution => '[CY] Localization Contribution (Welsh)';
 
   @override
   String get parentalConsent => '[CY] Parental Consent (Welsh)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[CY] Business Signup Screen - Coming Soon (Welsh)';
+  String get businessSignupScreenComingSoon => '[CY] Business Signup Screen - Coming Soon (Welsh)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      '[CY] Are you sure you want to delete this appointment? (Welsh)';
+  String get areYouSureYouWantToDeleteThisAppointment => '[CY] Are you sure you want to delete this appointment? (Welsh)';
 
   @override
   String get syncAppointment => '[CY] Sync Appointment (Welsh)';
@@ -2349,15 +2174,13 @@ class AppLocalizationsCy extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[CY] Business Setup Screen - Coming Soon (Welsh)';
+  String get businessSetupScreenComingSoon => '[CY] Business Setup Screen - Coming Soon (Welsh)';
 
   @override
   String get edit1 => '[CY] Edit (Welsh)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[CY] No events scheduled this month (Welsh)';
+  String get noEventsScheduledThisMonth => '[CY] No events scheduled this month (Welsh)';
 
   @override
   String get businessDashboard => '[CY] Business Dashboard (Welsh)';
@@ -2371,8 +2194,7 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[CY] Manage Staff Availability (Welsh)';
+  String get manageStaffAvailability => '[CY] Manage Staff Availability (Welsh)';
 
   @override
   String get noMissingTranslations => '[CY] No missing translations (Welsh)';
@@ -2389,8 +2211,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get noUsers => '[CY] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[CY] Error loading referral code (Welsh)';
+  String get errorLoadingReferralCode => '[CY] Error loading referral code (Welsh)';
 
   @override
   String get allCountries => '[CY] All Countries (Welsh)';
@@ -2405,8 +2226,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get deleteMessage => '[CY] Delete Message (Welsh)';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[CY] changeRole (TRANSLATE)';
@@ -2428,8 +2248,7 @@ class AppLocalizationsCy extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[CY] Upgrade to Business (Welsh)';
@@ -2455,8 +2274,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[CY] View Responses (Welsh)';
@@ -2485,8 +2303,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2504,8 +2321,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description =>
-      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2514,8 +2330,7 @@ class AppLocalizationsCy extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title =>
-      'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2528,4 +2343,136 @@ class AppLocalizationsCy extends AppLocalizations {
 
   @override
   String get purchase_now_button => 'Purchase Now';
+
+  @override
+  String get welcomeAmbassador => 'Welcome, Ambassador!';
+
+  @override
+  String get activeStatus => 'Active';
+
+  @override
+  String get totalReferrals => 'Total Referrals';
+
+  @override
+  String get thisMonth => 'This Month';
+
+  @override
+  String get activeRewards => 'Active Rewards';
+
+  @override
+  String get nextTierProgress => 'Next Tier Progress';
+
+  @override
+  String get progressToPremium => 'Progress to Premium';
+
+  @override
+  String get remaining => 'remaining';
+
+  @override
+  String get monthlyGoal => 'Monthly Goal';
+
+  @override
+  String get onTrack => 'On Track';
+
+  @override
+  String get needsAttention => 'Needs Attention';
+
+  @override
+  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+
+  @override
+  String get viewRewards => 'View Rewards';
+
+  @override
+  String get referralStatistics => 'Referral Statistics';
+
+  @override
+  String get activeReferrals => 'Active Referrals';
+
+  @override
+  String get conversionRate => 'Conversion Rate';
+
+  @override
+  String get recentReferrals => 'Recent Referrals';
+
+  @override
+  String get tierBenefits => 'Tier Benefits';
+
+  @override
+  String get yourReferralQRCode => 'Your Referral QR Code';
+
+  @override
+  String get yourReferralLink => 'Your Referral Link';
+
+  @override
+  String get shareYourLink => 'Share Your Link';
+
+  @override
+  String get shareViaMessage => 'Message';
+
+  @override
+  String get shareViaEmail => 'Email';
+
+  @override
+  String get shareMore => 'More Options';
+
+  @override
+  String get becomeAmbassador => 'Become an Ambassador';
+
+  @override
+  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
+
+  @override
+  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
+
+  @override
+  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+
+  @override
+  String get ambassadorPromotionTitle => '[CY] Congratulations! You\'re now an Ambassador! (Welsh)';
+
+  @override
+  String ambassadorPromotionBody(String tier) {
+    return '[CY] Welcome to the $tier tier! Start sharing your referral link to earn rewards. (Welsh)';
+  }
+
+  @override
+  String get tierUpgradeTitle => '[CY] Tier Upgrade! 🎉 (Welsh)';
+
+  @override
+  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+    return '[CY] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Welsh)';
+  }
+
+  @override
+  String get monthlyReminderTitle => '[CY] Monthly Goal Reminder (Welsh)';
+
+  @override
+  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+    return '[CY] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Welsh)';
+  }
+
+  @override
+  String get performanceWarningTitle => '[CY] Ambassador Performance Alert (Welsh)';
+
+  @override
+  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+    return '[CY] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Welsh)';
+  }
+
+  @override
+  String get ambassadorDemotionTitle => '[CY] Ambassador Status Update (Welsh)';
+
+  @override
+  String ambassadorDemotionBody(String reason) {
+    return '[CY] Your ambassador status has been temporarily suspended due to: $reason. You can regain your status by meeting the requirements again. (Welsh)';
+  }
+
+  @override
+  String get referralSuccessTitle => '[CY] New Referral! 🎉 (Welsh)';
+
+  @override
+  String referralSuccessBody(String referredUserName, String totalReferrals) {
+    return '[CY] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Welsh)';
+  }
 }

@@ -85,9 +85,6 @@ class AppLocalizationsAm extends AppLocalizations {
   String get revokeAccess => '[AM] መዳረሻ ይሰርዝ';
 
   @override
-  String get saveGroupForRecognition => '[AM] ቡድን ለመታወቂያ ያስቀምጡ';
-
-  @override
   String get playtimeLiveScheduled => '[AM] በቀጥታ ስብሰባ ተዘጋጅቷል';
 
   @override
@@ -257,9 +254,6 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get upcomingSessions => '[AM] ቀጣይ ስብሰባዎች';
-
-  @override
-  String get enterGroupName => '[AM] የቡድን ስም ያስገቡ';
 
   @override
   String get confirm => 'አረጋግጥ';
@@ -494,9 +488,6 @@ class AppLocalizationsAm extends AppLocalizations {
   String get createGame => '[AM] ጨዋታ ይፍጠሩ';
 
   @override
-  String get groupNameOptional => '[AM] የቡድን ስም (አማራጭ)';
-
-  @override
   String get playtimeNoSessions => '[AM] Playtime ስብሰባዎች የሉም';
 
   @override
@@ -507,9 +498,6 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get close => 'ዝጋ';
-
-  @override
-  String get knownGroupDetected => '[AM] ታዋቂ ቡድን ተገኝቷል';
 
   @override
   String get back => 'ወደፊት';
@@ -566,52 +554,40 @@ class AppLocalizationsAm extends AppLocalizations {
   String get contentLibrary => '[AM] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[AM] No account found with this email address.';
+  String get authErrorUserNotFound => '[AM] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[AM] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[AM] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[AM] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[AM] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[AM] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[AM] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[AM] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[AM] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[AM] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[AM] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[AM] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[AM] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[AM] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[AM] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[AM] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[AM] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      '[AM] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential => '[AM] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[AM] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[AM] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[AM] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[AM] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -628,24 +604,19 @@ class AppLocalizationsAm extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[AM] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[AM] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[AM] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[AM] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode =>
-      '[AM] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode => '[AM] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[AM] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[AM] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode =>
-      '[AM] Please enter the verification code.';
+  String get authErrorMissingVerificationCode => '[AM] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[AM] Missing verification ID.';
@@ -657,56 +628,43 @@ class AppLocalizationsAm extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[AM] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[AM] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[AM] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[AM] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[AM] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[AM] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[AM] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired =>
-      '[AM] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired => '[AM] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound =>
-      '[AM] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound => '[AM] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession =>
-      '[AM] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession => '[AM] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession =>
-      '[AM] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession => '[AM] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      '[AM] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse => '[AM] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      '[AM] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded => '[AM] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[AM] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[AM] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      '[AM] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification => '[AM] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      '[AM] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists => '[AM] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[AM] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[AM] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[AM] The ID token is invalid.';
@@ -718,12 +676,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[AM] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[AM] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[AM] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[AM] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[AM] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[AM] Invalid custom claims provided.';
@@ -732,87 +688,70 @@ class AppLocalizationsAm extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[AM] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[AM] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[AM] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[AM] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[AM] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[AM] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      '[AM] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain => '[AM] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[AM] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[AM] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[AM] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[AM] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[AM] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[AM] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      '[AM] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength => '[AM] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[AM] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[AM] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[AM] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      '[AM] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization => '[AM] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[AM] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[AM] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      '[AM] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator => '[AM] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[AM] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[AM] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[AM] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[AM] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[AM] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[AM] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      '[AM] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration => '[AM] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[AM] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[AM] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[AM] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      '[AM] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded => '[AM] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[AM] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[AM] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[AM] Missing continue URL.';
@@ -827,8 +766,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get authErrorMissingUid => '[AM] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret =>
-      '[AM] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret => '[AM] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[AM] Firebase project not found.';
@@ -837,23 +775,19 @@ class AppLocalizationsAm extends AppLocalizations {
   String get authErrorReservedClaims => '[AM] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[AM] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[AM] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[AM] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[AM] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[AM] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      '[AM] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri => '[AM] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[AM] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[AM] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -902,8 +836,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      '[AM] Virtual session created! Inviting friends... (Amharic)';
+  String get virtualSessionCreatedInvitingFriends => '[AM] Virtual session created! Inviting friends... (Amharic)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -944,15 +877,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[AM] Subscription unavailable (Amharic)';
+  String get subscriptionUnavailable => '[AM] Subscription unavailable (Amharic)';
 
   @override
   String get confirmBooking => '[AM] Confirm Booking (Amharic)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[AM] Failed to update permission: \$e (Amharic)';
+  String get failedToUpdatePermissionE => '[AM] Failed to update permission: \$e (Amharic)';
 
   @override
   String get reject => '[AM] Reject (Amharic)';
@@ -980,8 +911,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get resolve => '[AM] Resolve (Amharic)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[AM] Error loading surveys: \$error (Amharic)';
+  String get errorLoadingSurveysError => '[AM] Error loading surveys: \$error (Amharic)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -989,8 +919,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[AM] Get help with your account (Amharic)';
+  String get getHelpWithYourAccount => '[AM] Get help with your account (Amharic)';
 
   @override
   String get pay => '[AM] Pay (Amharic)';
@@ -1005,8 +934,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[AM] Changes saved successfully! (Amharic)';
+  String get changesSavedSuccessfully => '[AM] Changes saved successfully! (Amharic)';
 
   @override
   String get createNewInvoice => '[AM] Create New Invoice (Amharic)';
@@ -1026,8 +954,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get profileSaved => '[AM] Profile saved! (Amharic)';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1058,8 +985,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      '[AM] You will receive a confirmation email shortly. (Amharic)';
+  String get youWillReceiveAConfirmationEmailShortly => '[AM] You will receive a confirmation email shortly. (Amharic)';
 
   @override
   String get addQuestion => '[AM] Add Question (Amharic)';
@@ -1088,26 +1014,22 @@ class AppLocalizationsAm extends AppLocalizations {
   String get surveyManagement => '[AM] Survey Management (Amharic)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[AM] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[AM] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[AM] No rooms found. Add your first room! (Amharic)';
+  String get noRoomsFoundAddYourFirstRoom => '[AM] No rooms found. Add your first room! (Amharic)';
 
   @override
   String get readOurPrivacyPolicy => '[AM] Read our privacy policy (Amharic)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[AM] Could not open privacy policy (Amharic)';
+  String get couldNotOpenPrivacyPolicy => '[AM] Could not open privacy policy (Amharic)';
 
   @override
   String get refresh1 => '[AM] Refresh (Amharic)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[AM] Room updated successfully! (Amharic)';
+  String get roomUpdatedSuccessfully => '[AM] Room updated successfully! (Amharic)';
 
   @override
   String get contentDetail => '[AM] Content Detail (Amharic)';
@@ -1116,8 +1038,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get cancelSubscription => '[AM] Cancel Subscription (Amharic)';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      '[AM] Successfully registered as Ambassador! (Amharic)';
+  String get successfullyRegisteredAsAmbassador => '[AM] Successfully registered as Ambassador! (Amharic)';
 
   @override
   String get save1 => '[AM] Save (Amharic)';
@@ -1126,8 +1047,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get copy1 => '[AM] Copy (Amharic)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[AM] Failed to send invitation: \$e (Amharic)';
+  String get failedToSendInvitationE => '[AM] Failed to send invitation: \$e (Amharic)';
 
   @override
   String get surveyScore => '[AM] Survey Score (Amharic)';
@@ -1144,20 +1064,16 @@ class AppLocalizationsAm extends AppLocalizations {
   String get responseDetail => '[AM] Response Detail (Amharic)';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[AM] Failed to start Pro subscription: \$e (Amharic)';
+  String get failedToStartProSubscriptionE => '[AM] Failed to start Pro subscription: \$e (Amharic)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      '[AM] Business Dashboard Entry Screen - Coming Soon (Amharic)';
+  String get businessDashboardEntryScreenComingSoon => '[AM] Business Dashboard Entry Screen - Coming Soon (Amharic)';
 
   @override
   String get contentFilter => '[AM] Content Filter (Amharic)';
@@ -1179,8 +1095,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      '[AM] Business CRM Entry Screen - Coming Soon (Amharic)';
+  String get businessCrmEntryScreenComingSoon => '[AM] Business CRM Entry Screen - Coming Soon (Amharic)';
 
   @override
   String get adminDashboard => '[AM] Admin Dashboard';
@@ -1191,16 +1106,13 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[AM] Error loading dashboard: \$error (Amharic)';
+  String get errorLoadingDashboardError => '[AM] Error loading dashboard: \$error (Amharic)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[AM] Game deleted successfully! (Amharic)';
+  String get gameDeletedSuccessfully => '[AM] Game deleted successfully! (Amharic)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[AM] View responses - Coming soon! (Amharic)';
+  String get viewResponsesComingSoon => '[AM] View responses - Coming soon! (Amharic)';
 
   @override
   String get deleteProvider => '[AM] Delete Provider';
@@ -1209,8 +1121,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get errorLoadingRewards => '[AM] Error loading rewards (Amharic)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[AM] Failed to delete account: \$e (Amharic)';
+  String get failedToDeleteAccountE => '[AM] Failed to delete account: \$e (Amharic)';
 
   @override
   String get invited1 => '[AM] Invited (Amharic)';
@@ -1225,8 +1136,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get noEvents => '[AM] No events (Amharic)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[AM] Game created successfully! (Amharic)';
+  String get gameCreatedSuccessfully => '[AM] Game created successfully! (Amharic)';
 
   @override
   String get add1 => '[AM] Add (Amharic)';
@@ -1246,12 +1156,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get clients => '[AM] Clients (Amharic)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[AM] No ambassador data available (Amharic)';
+  String get noAmbassadorDataAvailable => '[AM] No ambassador data available (Amharic)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[AM] Background deleted successfully! (Amharic)';
+  String get backgroundDeletedSuccessfully => '[AM] Background deleted successfully! (Amharic)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1259,8 +1167,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[AM] No analytics data available yet. (Amharic)';
+  String get noAnalyticsDataAvailableYet => '[AM] No analytics data available yet. (Amharic)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1268,8 +1175,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      '[AM] Business Phone Booking Entry Screen - Coming Soon (Amharic)';
+  String get businessPhoneBookingEntryScreenComingSoon => '[AM] Business Phone Booking Entry Screen - Coming Soon (Amharic)';
 
   @override
   String get verification => '[AM] Verification (Amharic)';
@@ -1316,8 +1222,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get businessProfile => '[AM] Business Profile (Amharic)';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      '[AM] Business Booking Entry Screen - Coming Soon (Amharic)';
+  String get businessBookingEntryScreenComingSoon => '[AM] Business Booking Entry Screen - Coming Soon (Amharic)';
 
   @override
   String get createNewSurvey => '[AM] Create New Survey (Amharic)';
@@ -1341,8 +1246,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get loginFailedE => '[AM] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[AM] Invitation sent successfully! (Amharic)';
+  String get invitationSentSuccessfully => '[AM] Invitation sent successfully! (Amharic)';
 
   @override
   String get registering => '[AM] Registering... (Amharic)';
@@ -1356,16 +1260,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get home1 => '[AM] Home (Amharic)';
 
   @override
-  String get errorSavingSettingsE =>
-      '[AM] Error saving settings: \$e (Amharic)';
+  String get errorSavingSettingsE => '[AM] Error saving settings: \$e (Amharic)';
 
   @override
-  String get appVersionAndInformation =>
-      '[AM] App version and information (Amharic)';
+  String get appVersionAndInformation => '[AM] App version and information (Amharic)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      '[AM] Business Subscription Entry Screen - Coming Soon (Amharic)';
+  String get businessSubscriptionEntryScreenComingSoon => '[AM] Business Subscription Entry Screen - Coming Soon (Amharic)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1373,8 +1274,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      '[AM] Your payment has been processed successfully. (Amharic)';
+  String get yourPaymentHasBeenProcessedSuccessfully => '[AM] Your payment has been processed successfully. (Amharic)';
 
   @override
   String get errorE => '[AM] Error: \$e (Amharic)';
@@ -1383,8 +1283,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get viewAll1 => '[AM] View All (Amharic)';
 
   @override
-  String get editSurveyComingSoon =>
-      '[AM] Edit survey - Coming soon! (Amharic)';
+  String get editSurveyComingSoon => '[AM] Edit survey - Coming soon! (Amharic)';
 
   @override
   String get enterOtp => '[AM] Enter OTP (Amharic)';
@@ -1393,8 +1292,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get payment => '[AM] Payment (Amharic)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      '[AM] Automatically confirm new booking requests (Amharic)';
+  String get automaticallyConfirmNewBookingRequests => '[AM] Automatically confirm new booking requests (Amharic)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1407,8 +1305,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[AM] Please sign in to upload a background (Amharic)';
+  String get pleaseSignInToUploadABackground => '[AM] Please sign in to upload a background (Amharic)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1425,22 +1322,19 @@ class AppLocalizationsAm extends AppLocalizations {
   String get autoconfirmBookings => '[AM] Auto-Confirm Bookings (Amharic)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      '[AM] Redirecting to Stripe checkout for Pro plan... (Amharic)';
+  String get redirectingToStripeCheckoutForProPlan => '[AM] Redirecting to Stripe checkout for Pro plan... (Amharic)';
 
   @override
   String get exportAsCsv => '[AM] Export as CSV (Amharic)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[AM] Delete functionality coming soon! (Amharic)';
+  String get deleteFunctionalityComingSoon => '[AM] Delete functionality coming soon! (Amharic)';
 
   @override
   String get editClient => '[AM] Edit Client (Amharic)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      '[AM] Are you sure you want to delete this message? (Amharic)';
+  String get areYouSureYouWantToDeleteThisMessage => '[AM] Are you sure you want to delete this message? (Amharic)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1451,39 +1345,31 @@ class AppLocalizationsAm extends AppLocalizations {
   String get notAuthenticated => '[AM] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[AM] Privacy request sent to your parents! (Amharic)';
+  String get privacyRequestSentToYourParents => '[AM] Privacy request sent to your parents! (Amharic)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[AM] Client deleted successfully! (Amharic)';
+  String get clientDeletedSuccessfully => '[AM] Client deleted successfully! (Amharic)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[AM] Failed to cancel subscription (Amharic)';
+  String get failedToCancelSubscription => '[AM] Failed to cancel subscription (Amharic)';
 
   @override
   String get allLanguages => '[AM] All Languages (Amharic)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[AM] Slot deleted successfully (Amharic)';
+  String get slotDeletedSuccessfully => '[AM] Slot deleted successfully (Amharic)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      '[AM] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => '[AM] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      '[AM] Parents must approve before children can join (Amharic)';
+  String get parentsMustApproveBeforeChildrenCanJoin => '[AM] Parents must approve before children can join (Amharic)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[AM] Subscribe to Pro (€14.99/mo) (Amharic)';
+  String get subscribeToPro1499mo => '[AM] Subscribe to Pro (€14.99/mo) (Amharic)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      '[AM] Business Availability Entry Screen - Coming Soon (Amharic)';
+  String get businessAvailabilityEntryScreenComingSoon => '[AM] Business Availability Entry Screen - Coming Soon (Amharic)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1497,8 +1383,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get submitBooking => '[AM] Submit Booking (Amharic)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      '[AM] Are you sure you want to cancel this appointment? (Amharic)';
+  String get areYouSureYouWantToCancelThisAppointment => '[AM] Are you sure you want to cancel this appointment? (Amharic)';
 
   @override
   String get noUpcomingBookings => '[AM] No upcoming bookings (Amharic)';
@@ -1516,8 +1401,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get goToDashboard => '[AM] Go to Dashboard (Amharic)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[AM] Ambassador Quota Dashboard (Amharic)';
+  String get ambassadorQuotaDashboard => '[AM] Ambassador Quota Dashboard (Amharic)';
 
   @override
   String get adminSettings => '[AM] Admin Settings';
@@ -1555,8 +1439,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[AM] Client added successfully! (Amharic)';
+  String get clientAddedSuccessfully => '[AM] Client added successfully! (Amharic)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1574,8 +1457,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get bookAppointment => '[AM] Book Appointment (Amharic)';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[AM] Delete (Amharic)';
@@ -1590,15 +1472,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get manageSubscription => '[AM] Manage Subscription (Amharic)';
 
   @override
-  String get requiresInstallFallback =>
-      '[AM] Requires Install Fallback (Amharic)';
+  String get requiresInstallFallback => '[AM] Requires Install Fallback (Amharic)';
 
   @override
   String get paymentConfirmation => '[AM] Payment Confirmation (Amharic)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[AM] Promo applied! Your next bill is free. (Amharic)';
+  String get promoAppliedYourNextBillIsFree => '[AM] Promo applied! Your next bill is free. (Amharic)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1609,16 +1489,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get errorLoadingSlots => '[AM] Error loading slots (Amharic)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      '[AM] Allow other users to find and join this game (Amharic)';
+  String get allowOtherUsersToFindAndJoinThisGame => '[AM] Allow other users to find and join this game (Amharic)';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      '[AM] Business Onboarding Screen - Coming Soon (Amharic)';
+  String get businessOnboardingScreenComingSoon => '[AM] Business Onboarding Screen - Coming Soon (Amharic)';
 
   @override
-  String get activateBusinessProfile =>
-      '[AM] Activate Business Profile (Amharic)';
+  String get activateBusinessProfile => '[AM] Activate Business Profile (Amharic)';
 
   @override
   String get contentNotFound => '[AM] Content not found (Amharic)';
@@ -1660,8 +1537,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get shareLink => '[AM] Share Link (Amharic)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      '[AM] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => '[AM] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[AM] Delete Appointment (Amharic)';
@@ -1681,12 +1557,10 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[AM] Update your business information (Amharic)';
+  String get updateYourBusinessInformation => '[AM] Update your business information (Amharic)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      '[AM] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => '[AM] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[AM] Parent Dashboard (Amharic)';
@@ -1709,12 +1583,10 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      '[AM] Studio booking is only available on web (Amharic)';
+  String get studioBookingIsOnlyAvailableOnWeb => '[AM] Studio booking is only available on web (Amharic)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[AM] Error loading branches: \$e (Amharic)';
+  String get errorLoadingBranchesE => '[AM] Error loading branches: \$e (Amharic)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1730,15 +1602,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get none => '[AM] None (Amharic)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[AM] Failed to update consent: \$e (Amharic)';
+  String get failedToUpdateConsentE => '[AM] Failed to update consent: \$e (Amharic)';
 
   @override
   String get welcome1 => '[AM] Welcome (Amharic)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[AM] Failed to create session: \$e (Amharic)';
+  String get failedToCreateSessionE => '[AM] Failed to create session: \$e (Amharic)';
 
   @override
   String get inviteContact => '[AM] Invite Contact (Amharic)';
@@ -1747,8 +1617,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get surveyEditor => '[AM] Survey Editor (Amharic)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[AM] Failed to start Basic subscription: \$e (Amharic)';
+  String get failedToStartBasicSubscriptionE => '[AM] Failed to start Basic subscription: \$e (Amharic)';
 
   @override
   String get mySchedule => '[AM] My Schedule (Amharic)';
@@ -1768,12 +1637,10 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[AM] Settings saved successfully! (Amharic)';
+  String get settingsSavedSuccessfully => '[AM] Settings saved successfully! (Amharic)';
 
   @override
-  String get linkCopiedToClipboard =>
-      '[AM] Link copied to clipboard! (Amharic)';
+  String get linkCopiedToClipboard => '[AM] Link copied to clipboard! (Amharic)';
 
   @override
   String get accept1 => '[AM] Accept (Amharic)';
@@ -1790,8 +1657,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[AM] Room deleted successfully! (Amharic)';
+  String get roomDeletedSuccessfully => '[AM] Room deleted successfully! (Amharic)';
 
   @override
   String get businessCalendar => '[AM] Business Calendar (Amharic)';
@@ -1856,8 +1722,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get cancel1 => '[AM] Cancel (Amharic)';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      '[AM] Subscription activated successfully! (Amharic)';
+  String get subscriptionActivatedSuccessfully => '[AM] Subscription activated successfully! (Amharic)';
 
   @override
   String activityLogaction(Object action) {
@@ -1868,8 +1733,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get broadcast => '[AM] Broadcast (Amharic)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[AM] No events scheduled this week (Amharic)';
+  String get noEventsScheduledThisWeek => '[AM] No events scheduled this week (Amharic)';
 
   @override
   String get googleCalendar => '[AM] Google Calendar (Amharic)';
@@ -1881,8 +1745,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get childDashboard => '[AM] Child Dashboard (Amharic)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[AM] Failed to upload background: \$e (Amharic)';
+  String get failedToUploadBackgroundE => '[AM] Failed to upload background: \$e (Amharic)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1901,8 +1764,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get noAppointments => '[AM] No appointments (Amharic)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[AM] • Unlimited bookings per week (Amharic)';
+  String get unlimitedBookingsPerWeek => '[AM] • Unlimited bookings per week (Amharic)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1910,19 +1772,16 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[AM] Scheduled at: \$scheduledAt (Amharic)';
+  String get scheduledAtScheduledat => '[AM] Scheduled at: \$scheduledAt (Amharic)';
 
   @override
   String get selectStaff => '[AM] Select Staff (Amharic)';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      '[AM] Subscription cancelled successfully (Amharic)';
+  String get subscriptionCancelledSuccessfully => '[AM] Subscription cancelled successfully (Amharic)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[AM] Cancel Appointment (Amharic)';
@@ -1936,8 +1795,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get businessSignup => '[AM] Business Signup (Amharic)';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      '[AM] Business Completion Screen - Coming Soon (Amharic)';
+  String get businessCompletionScreenComingSoon => '[AM] Business Completion Screen - Coming Soon (Amharic)';
 
   @override
   String get createGame1 => '[AM] Create Game (Amharic)';
@@ -1948,12 +1806,10 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode =>
-      '[AM] Please enter a promo code (Amharic)';
+  String get pleaseEnterAPromoCode => '[AM] Please enter a promo code (Amharic)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[AM] Error loading availability: \$e (Amharic)';
+  String get errorLoadingAvailabilityE => '[AM] Error loading availability: \$e (Amharic)';
 
   @override
   String get parentalControls => '[AM] Parental Controls (Amharic)';
@@ -1962,15 +1818,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[AM] Child linked successfully! (Amharic)';
+  String get childLinkedSuccessfully => '[AM] Child linked successfully! (Amharic)';
 
   @override
   String get create => '[AM] Create (Amharic)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[AM] No external meetings found. (Amharic)';
+  String get noExternalMeetingsFound => '[AM] No external meetings found. (Amharic)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1978,15 +1832,13 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[AM] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[AM] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[AM] Scheduler Screen (Amharic)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[AM] Client updated successfully! (Amharic)';
+  String get clientUpdatedSuccessfully => '[AM] Client updated successfully! (Amharic)';
 
   @override
   String get surveyResponses => '[AM] Survey Responses (Amharic)';
@@ -2012,12 +1864,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get errorLoadingEvents => '[AM] Error loading events (Amharic)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[AM] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[AM] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[AM] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[AM] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[AM] Success (Amharic)';
@@ -2036,12 +1886,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get readWrite => '[AM] Read & Write (Amharic)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      '[AM] Redirecting to Stripe checkout for Basic plan... (Amharic)';
+  String get redirectingToStripeCheckoutForBasicPlan => '[AM] Redirecting to Stripe checkout for Basic plan... (Amharic)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[AM] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[AM] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[AM] Pick Date (Amharic)';
@@ -2077,12 +1925,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get businessLogin => '[AM] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[AM] Invoice created successfully! (Amharic)';
+  String get invoiceCreatedSuccessfully => '[AM] Invoice created successfully! (Amharic)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[AM] No time series data available (Amharic)';
+  String get noTimeSeriesDataAvailable => '[AM] No time series data available (Amharic)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2095,8 +1941,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[AM] Failed to send privacy request: \$e (Amharic)';
+  String get failedToSendPrivacyRequestE => '[AM] Failed to send privacy request: \$e (Amharic)';
 
   @override
   String get chooseYourPlan => '[AM] Choose Your Plan (Amharic)';
@@ -2111,15 +1956,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get eventCreated => '[AM] Event created (Amharic)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[AM] Subscribe to Basic (€4.99/mo) (Amharic)';
+  String get subscribeToBasic499mo => '[AM] Subscribe to Basic (€4.99/mo) (Amharic)';
 
   @override
   String get completion => '[AM] Completion (Amharic)';
 
   @override
-  String get supportTicketSubmitted =>
-      '[AM] Support ticket submitted (Amharic)';
+  String get supportTicketSubmitted => '[AM] Support ticket submitted (Amharic)';
 
   @override
   String get monetizationSettings => '[AM] Monetization Settings (Amharic)';
@@ -2134,12 +1977,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get deleteSurvey => '[AM] Delete Survey (Amharic)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[AM] Game approved successfully! (Amharic)';
+  String get gameApprovedSuccessfully => '[AM] Game approved successfully! (Amharic)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[AM] Error loading permissions: \$error (Amharic)';
+  String get errorLoadingPermissionsError => '[AM] Error loading permissions: \$error (Amharic)';
 
   @override
   String get referrals => '[AM] Referrals (Amharic)';
@@ -2181,8 +2022,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get organizations => '[AM] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[AM] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[AM] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[AM] Create New Game (Amharic)';
@@ -2191,12 +2031,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get next1 => '[AM] Next (Amharic)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[AM] Background uploaded successfully! (Amharic)';
+  String get backgroundUploadedSuccessfully => '[AM] Background uploaded successfully! (Amharic)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[AM] No appointment requests found. (Amharic)';
+  String get noAppointmentRequestsFound => '[AM] No appointment requests found. (Amharic)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2223,8 +2061,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[AM] Failed to create game: \$e (Amharic)';
@@ -2233,8 +2070,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get noChartDataAvailable => '[AM] No chart data available (Amharic)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[AM] • Phone-based booking system (Amharic)';
+  String get phonebasedBookingSystem => '[AM] • Phone-based booking system (Amharic)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2243,8 +2079,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get invoices => '[AM] Invoices (Amharic)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2271,12 +2106,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get iDoNotConsent => '[AM] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      '[AM] No clients found. Add your first client! (Amharic)';
+  String get noClientsFoundAddYourFirstClient => '[AM] No clients found. Add your first client! (Amharic)';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      '[AM] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => '[AM] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[AM] Group: \$groupId';
@@ -2299,8 +2132,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[AM] • CRM dashboard with analytics (Amharic)';
+  String get crmDashboardWithAnalytics => '[AM] • CRM dashboard with analytics (Amharic)';
 
   @override
   String get contentLibrary1 => '[AM] Content Library (Amharic)';
@@ -2312,30 +2144,25 @@ class AppLocalizationsAm extends AppLocalizations {
   String get subscriptionManagement => '[AM] Subscription Management (Amharic)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      '[AM] Monetization settings will be implemented here (Amharic)';
+  String get monetizationSettingsWillBeImplementedHere => '[AM] Monetization settings will be implemented here (Amharic)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[AM] Failed to apply promo code: \$e (Amharic)';
+  String get failedToApplyPromoCodeE => '[AM] Failed to apply promo code: \$e (Amharic)';
 
   @override
   String get editProvider => '[AM] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[AM] Localization Contribution (Amharic)';
+  String get localizationContribution => '[AM] Localization Contribution (Amharic)';
 
   @override
   String get parentalConsent => '[AM] Parental Consent (Amharic)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[AM] Business Signup Screen - Coming Soon (Amharic)';
+  String get businessSignupScreenComingSoon => '[AM] Business Signup Screen - Coming Soon (Amharic)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      '[AM] Are you sure you want to delete this appointment? (Amharic)';
+  String get areYouSureYouWantToDeleteThisAppointment => '[AM] Are you sure you want to delete this appointment? (Amharic)';
 
   @override
   String get syncAppointment => '[AM] Sync Appointment (Amharic)';
@@ -2347,15 +2174,13 @@ class AppLocalizationsAm extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[AM] Business Setup Screen - Coming Soon (Amharic)';
+  String get businessSetupScreenComingSoon => '[AM] Business Setup Screen - Coming Soon (Amharic)';
 
   @override
   String get edit1 => '[AM] Edit (Amharic)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[AM] No events scheduled this month (Amharic)';
+  String get noEventsScheduledThisMonth => '[AM] No events scheduled this month (Amharic)';
 
   @override
   String get businessDashboard => '[AM] Business Dashboard (Amharic)';
@@ -2369,8 +2194,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[AM] Manage Staff Availability (Amharic)';
+  String get manageStaffAvailability => '[AM] Manage Staff Availability (Amharic)';
 
   @override
   String get noMissingTranslations => '[AM] No missing translations (Amharic)';
@@ -2387,8 +2211,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get noUsers => '[AM] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[AM] Error loading referral code (Amharic)';
+  String get errorLoadingReferralCode => '[AM] Error loading referral code (Amharic)';
 
   @override
   String get allCountries => '[AM] All Countries (Amharic)';
@@ -2403,8 +2226,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get deleteMessage => '[AM] Delete Message (Amharic)';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[AM] changeRole (TRANSLATE)';
@@ -2415,8 +2237,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[AM] Opening customer portal... (Amharic)';
+  String get openingCustomerPortal => '[AM] Opening customer portal... (Amharic)';
 
   @override
   String get signOut => '[AM] Sign Out (Amharic)';
@@ -2427,8 +2248,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[AM] Upgrade to Business (Amharic)';
@@ -2454,8 +2274,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[AM] View Responses (Amharic)';
@@ -2484,8 +2303,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2503,8 +2321,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description =>
-      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2513,8 +2330,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title =>
-      'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2527,4 +2343,136 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get purchase_now_button => 'Purchase Now';
+
+  @override
+  String get welcomeAmbassador => 'Welcome, Ambassador!';
+
+  @override
+  String get activeStatus => 'Active';
+
+  @override
+  String get totalReferrals => 'Total Referrals';
+
+  @override
+  String get thisMonth => 'This Month';
+
+  @override
+  String get activeRewards => 'Active Rewards';
+
+  @override
+  String get nextTierProgress => 'Next Tier Progress';
+
+  @override
+  String get progressToPremium => 'Progress to Premium';
+
+  @override
+  String get remaining => 'remaining';
+
+  @override
+  String get monthlyGoal => 'Monthly Goal';
+
+  @override
+  String get onTrack => 'On Track';
+
+  @override
+  String get needsAttention => 'Needs Attention';
+
+  @override
+  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+
+  @override
+  String get viewRewards => 'View Rewards';
+
+  @override
+  String get referralStatistics => 'Referral Statistics';
+
+  @override
+  String get activeReferrals => 'Active Referrals';
+
+  @override
+  String get conversionRate => 'Conversion Rate';
+
+  @override
+  String get recentReferrals => 'Recent Referrals';
+
+  @override
+  String get tierBenefits => 'Tier Benefits';
+
+  @override
+  String get yourReferralQRCode => 'Your Referral QR Code';
+
+  @override
+  String get yourReferralLink => 'Your Referral Link';
+
+  @override
+  String get shareYourLink => 'Share Your Link';
+
+  @override
+  String get shareViaMessage => 'Message';
+
+  @override
+  String get shareViaEmail => 'Email';
+
+  @override
+  String get shareMore => 'More Options';
+
+  @override
+  String get becomeAmbassador => 'Become an Ambassador';
+
+  @override
+  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
+
+  @override
+  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
+
+  @override
+  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+
+  @override
+  String get ambassadorPromotionTitle => '[AM] Congratulations! You\'re now an Ambassador! (Amharic)';
+
+  @override
+  String ambassadorPromotionBody(String tier) {
+    return '[AM] Welcome to the $tier tier! Start sharing your referral link to earn rewards. (Amharic)';
+  }
+
+  @override
+  String get tierUpgradeTitle => '[AM] Tier Upgrade! 🎉 (Amharic)';
+
+  @override
+  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+    return '[AM] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Amharic)';
+  }
+
+  @override
+  String get monthlyReminderTitle => '[AM] Monthly Goal Reminder (Amharic)';
+
+  @override
+  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+    return '[AM] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Amharic)';
+  }
+
+  @override
+  String get performanceWarningTitle => '[AM] Ambassador Performance Alert (Amharic)';
+
+  @override
+  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+    return '[AM] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Amharic)';
+  }
+
+  @override
+  String get ambassadorDemotionTitle => '[AM] Ambassador Status Update (Amharic)';
+
+  @override
+  String ambassadorDemotionBody(String reason) {
+    return '[AM] Your ambassador status has been temporarily suspended due to: $reason. You can regain your status by meeting the requirements again. (Amharic)';
+  }
+
+  @override
+  String get referralSuccessTitle => '[AM] New Referral! 🎉 (Amharic)';
+
+  @override
+  String referralSuccessBody(String referredUserName, String totalReferrals) {
+    return '[AM] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Amharic)';
+  }
 }

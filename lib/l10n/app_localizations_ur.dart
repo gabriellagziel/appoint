@@ -74,8 +74,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get search => '[UR] [UR] Search';
 
   @override
-  String get cancelInviteConfirmation =>
-      '[UR] کیا آپ واقعی اس دعوت کو منسوخ کرنا چاہتے ہیں؟';
+  String get cancelInviteConfirmation => '[UR] کیا آپ واقعی اس دعوت کو منسوخ کرنا چاہتے ہیں؟';
 
   @override
   String created(Object date) {
@@ -86,14 +85,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get revokeAccess => '[UR] رسائی منسوخ کریں';
 
   @override
-  String get saveGroupForRecognition => '[UR] گروپ کو شناخت کے لیے محفوظ کریں';
-
-  @override
   String get playtimeLiveScheduled => '[UR] [UR] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation =>
-      '[UR] کیا آپ واقعی اس بچے کی رسائی منسوخ کرنا چاہتے ہیں؟ یہ عمل ناقابل واپسی ہے۔';
+  String get revokeAccessConfirmation => '[UR] کیا آپ واقعی اس بچے کی رسائی منسوخ کرنا چاہتے ہیں؟ یہ عمل ناقابل واپسی ہے۔';
 
   @override
   String get download => '[UR] [UR] Download';
@@ -127,8 +122,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get playtimeModeVirtual => '[UR] [UR] Virtual Play';
 
   @override
-  String get playtimeDescription =>
-      '[UR] [UR] Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => '[UR] [UR] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => '[UR] [UR] Delete';
@@ -163,8 +157,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get done => '[UR] [UR] Done';
 
   @override
-  String get defaultShareMessage =>
-      '[UR] ہیلو! میں نے APP-OINT کے ذریعے آپ کے ساتھ ملاقات شیڈول کی ہے۔ تصدیق کرنے یا دوسرا وقت تجویز کرنے کے لیے یہاں کلک کریں:';
+  String get defaultShareMessage => '[UR] ہیلو! میں نے APP-OINT کے ذریعے آپ کے ساتھ ملاقات شیڈول کی ہے۔ تصدیق کرنے یا دوسرا وقت تجویز کرنے کے لیے یہاں کلک کریں:';
 
   @override
   String get no => 'نہیں';
@@ -207,8 +200,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get cut => '[UR] [UR] Cut';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      '[UR] دعوت کامیابی سے منسوخ ہو گئی!';
+  String get inviteCancelledSuccessfully => '[UR] دعوت کامیابی سے منسوخ ہو گئی!';
 
   @override
   String get retry => '[UR] [UR] Retry';
@@ -262,9 +254,6 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get upcomingSessions => '[UR] [UR] Upcoming Sessions';
-
-  @override
-  String get enterGroupName => '[UR] شناخت کے لیے گروپ کا نام درج کریں';
 
   @override
   String get confirm => '[UR] [UR] Confirm';
@@ -373,8 +362,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get playtimeTitle => '[UR] [UR] Playtime';
 
   @override
-  String get otpResentSuccessfully =>
-      '[UR] او ٹی پی کامیابی سے دوبارہ بھیجا گیا!';
+  String get otpResentSuccessfully => '[UR] او ٹی پی کامیابی سے دوبارہ بھیجا گیا!';
 
   @override
   String errorCheckingPermissions(Object error) {
@@ -399,8 +387,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get noProfileFound => '[UR] کوئی پروفائل نہیں ملی';
 
   @override
-  String get noFamilyMembersYet =>
-      '[UR] ابھی تک کوئی خاندانی رکن نہیں۔ شروع کرنے کے لیے کسی کو مدعو کریں!';
+  String get noFamilyMembersYet => '[UR] ابھی تک کوئی خاندانی رکن نہیں۔ شروع کرنے کے لیے کسی کو مدعو کریں!';
 
   @override
   String get mediaOptional => '[UR] میڈیا (اختیاری)';
@@ -415,8 +402,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get dashboard => '[UR] ڈیش بورڈ';
 
   @override
-  String get noPermissionForBroadcast =>
-      '[UR] آپ کو نشریاتی پیغامات بنانے کی اجازت نہیں ہے۔';
+  String get noPermissionForBroadcast => '[UR] آپ کو نشریاتی پیغامات بنانے کی اجازت نہیں ہے۔';
 
   @override
   String get playtimeAdminPanelTitle => '[UR] Playtime Games – Admin';
@@ -493,17 +479,13 @@ class AppLocalizationsUr extends AppLocalizations {
   String get playtimeEnterGameName => '[UR] [UR] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[UR] خاندانی خصوصیات کے لیے براہ کرم لاگ ان کریں';
+  String get pleaseLoginForFamilyFeatures => '[UR] خاندانی خصوصیات کے لیے براہ کرم لاگ ان کریں';
 
   @override
   String get myInvites => '[UR] میرے دعوت نامے';
 
   @override
   String get createGame => '[UR] [UR] Create Game';
-
-  @override
-  String get groupNameOptional => '[UR] گروپ کا نام (اختیاری)';
 
   @override
   String get playtimeNoSessions => '[UR] [UR] No playtime sessions found.';
@@ -516,9 +498,6 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get close => '[UR] بند کریں';
-
-  @override
-  String get knownGroupDetected => '[UR] معروف گروپ شناخت ہو گیا';
 
   @override
   String get back => '[UR] [UR] Back';
@@ -543,8 +522,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get meetingReadyMessage =>
-      '[UR] ملاقات تیار ہے! کیا آپ اسے اپنے گروپ کو بھیجنا چاہتے ہیں؟';
+  String get meetingReadyMessage => '[UR] ملاقات تیار ہے! کیا آپ اسے اپنے گروپ کو بھیجنا چاہتے ہیں؟';
 
   @override
   String get pendingInvites => '[UR] زیر التواء دعوتیں';
@@ -555,8 +533,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[UR] [UR] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[UR] [UR] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[UR] Admin Metrics';
@@ -577,52 +554,40 @@ class AppLocalizationsUr extends AppLocalizations {
   String get contentLibrary => '[UR] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[UR] No account found with this email address.';
+  String get authErrorUserNotFound => '[UR] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[UR] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[UR] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[UR] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[UR] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[UR] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[UR] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[UR] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[UR] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[UR] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[UR] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[UR] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[UR] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[UR] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[UR] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[UR] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[UR] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      '[UR] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential => '[UR] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[UR] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[UR] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[UR] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[UR] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -639,24 +604,19 @@ class AppLocalizationsUr extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[UR] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[UR] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[UR] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[UR] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode =>
-      '[UR] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode => '[UR] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[UR] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[UR] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode =>
-      '[UR] Please enter the verification code.';
+  String get authErrorMissingVerificationCode => '[UR] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[UR] Missing verification ID.';
@@ -668,56 +628,43 @@ class AppLocalizationsUr extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[UR] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[UR] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[UR] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[UR] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[UR] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[UR] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[UR] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired =>
-      '[UR] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired => '[UR] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound =>
-      '[UR] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound => '[UR] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession =>
-      '[UR] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession => '[UR] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession =>
-      '[UR] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession => '[UR] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      '[UR] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse => '[UR] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      '[UR] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded => '[UR] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[UR] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[UR] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      '[UR] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification => '[UR] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      '[UR] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists => '[UR] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[UR] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[UR] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[UR] The ID token is invalid.';
@@ -729,12 +676,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[UR] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[UR] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[UR] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[UR] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[UR] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[UR] Invalid custom claims provided.';
@@ -743,87 +688,70 @@ class AppLocalizationsUr extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[UR] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[UR] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[UR] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[UR] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[UR] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[UR] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      '[UR] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain => '[UR] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[UR] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[UR] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[UR] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[UR] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[UR] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[UR] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      '[UR] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength => '[UR] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[UR] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[UR] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[UR] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      '[UR] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization => '[UR] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[UR] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[UR] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      '[UR] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator => '[UR] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[UR] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[UR] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[UR] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[UR] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[UR] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[UR] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      '[UR] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration => '[UR] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[UR] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[UR] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[UR] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      '[UR] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded => '[UR] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[UR] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[UR] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[UR] Missing continue URL.';
@@ -838,8 +766,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get authErrorMissingUid => '[UR] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret =>
-      '[UR] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret => '[UR] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[UR] Firebase project not found.';
@@ -848,23 +775,19 @@ class AppLocalizationsUr extends AppLocalizations {
   String get authErrorReservedClaims => '[UR] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[UR] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[UR] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[UR] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[UR] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[UR] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      '[UR] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri => '[UR] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[UR] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[UR] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -913,8 +836,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      '[UR] Virtual session created! Inviting friends... (Urdu)';
+  String get virtualSessionCreatedInvitingFriends => '[UR] Virtual session created! Inviting friends... (Urdu)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -961,8 +883,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get confirmBooking => '[UR] بُکنگ کی تصدیق کریں';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[UR] Failed to update permission: \$e (Urdu)';
+  String get failedToUpdatePermissionE => '[UR] Failed to update permission: \$e (Urdu)';
 
   @override
   String get reject => '[UR] Reject (Urdu)';
@@ -990,8 +911,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get resolve => '[UR] Resolve (Urdu)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[UR] Error loading surveys: \$error (Urdu)';
+  String get errorLoadingSurveysError => '[UR] Error loading surveys: \$error (Urdu)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -1014,8 +934,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[UR] Changes saved successfully! (Urdu)';
+  String get changesSavedSuccessfully => '[UR] Changes saved successfully! (Urdu)';
 
   @override
   String get createNewInvoice => '[UR] Create New Invoice (Urdu)';
@@ -1035,8 +954,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get profileSaved => '[UR] Profile saved! (Urdu)';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1067,8 +985,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      '[UR] You will receive a confirmation email shortly. (Urdu)';
+  String get youWillReceiveAConfirmationEmailShortly => '[UR] You will receive a confirmation email shortly. (Urdu)';
 
   @override
   String get addQuestion => '[UR] Add Question (Urdu)';
@@ -1097,26 +1014,22 @@ class AppLocalizationsUr extends AppLocalizations {
   String get surveyManagement => '[UR] Survey Management (Urdu)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[UR] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[UR] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[UR] No rooms found. Add your first room! (Urdu)';
+  String get noRoomsFoundAddYourFirstRoom => '[UR] No rooms found. Add your first room! (Urdu)';
 
   @override
   String get readOurPrivacyPolicy => '[UR] Read our privacy policy (Urdu)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[UR] Could not open privacy policy (Urdu)';
+  String get couldNotOpenPrivacyPolicy => '[UR] Could not open privacy policy (Urdu)';
 
   @override
   String get refresh1 => '[UR] Refresh (Urdu)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[UR] Room updated successfully! (Urdu)';
+  String get roomUpdatedSuccessfully => '[UR] Room updated successfully! (Urdu)';
 
   @override
   String get contentDetail => '[UR] Content Detail (Urdu)';
@@ -1125,8 +1038,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get cancelSubscription => '[UR] Cancel Subscription (Urdu)';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      '[UR] Successfully registered as Ambassador! (Urdu)';
+  String get successfullyRegisteredAsAmbassador => '[UR] Successfully registered as Ambassador! (Urdu)';
 
   @override
   String get save1 => '[UR] Save (Urdu)';
@@ -1135,8 +1047,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get copy1 => '[UR] Copy (Urdu)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[UR] Failed to send invitation: \$e (Urdu)';
+  String get failedToSendInvitationE => '[UR] Failed to send invitation: \$e (Urdu)';
 
   @override
   String get surveyScore => '[UR] Survey Score (Urdu)';
@@ -1153,20 +1064,16 @@ class AppLocalizationsUr extends AppLocalizations {
   String get responseDetail => '[UR] Response Detail (Urdu)';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[UR] Failed to start Pro subscription: \$e (Urdu)';
+  String get failedToStartProSubscriptionE => '[UR] Failed to start Pro subscription: \$e (Urdu)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      '[UR] Business Dashboard Entry Screen - Coming Soon (Urdu)';
+  String get businessDashboardEntryScreenComingSoon => '[UR] Business Dashboard Entry Screen - Coming Soon (Urdu)';
 
   @override
   String get contentFilter => '[UR] Content Filter (Urdu)';
@@ -1188,8 +1095,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      '[UR] Business CRM Entry Screen - Coming Soon (Urdu)';
+  String get businessCrmEntryScreenComingSoon => '[UR] Business CRM Entry Screen - Coming Soon (Urdu)';
 
   @override
   String get adminDashboard => '[UR] Admin Dashboard';
@@ -1200,16 +1106,13 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[UR] Error loading dashboard: \$error (Urdu)';
+  String get errorLoadingDashboardError => '[UR] Error loading dashboard: \$error (Urdu)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[UR] Game deleted successfully! (Urdu)';
+  String get gameDeletedSuccessfully => '[UR] Game deleted successfully! (Urdu)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[UR] View responses - Coming soon! (Urdu)';
+  String get viewResponsesComingSoon => '[UR] View responses - Coming soon! (Urdu)';
 
   @override
   String get deleteProvider => '[UR] Delete Provider';
@@ -1218,8 +1121,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get errorLoadingRewards => '[UR] Error loading rewards (Urdu)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[UR] Failed to delete account: \$e (Urdu)';
+  String get failedToDeleteAccountE => '[UR] Failed to delete account: \$e (Urdu)';
 
   @override
   String get invited1 => '[UR] Invited (Urdu)';
@@ -1234,8 +1136,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get noEvents => '[UR] No events (Urdu)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[UR] Game created successfully! (Urdu)';
+  String get gameCreatedSuccessfully => '[UR] Game created successfully! (Urdu)';
 
   @override
   String get add1 => '[UR] Add (Urdu)';
@@ -1255,12 +1156,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get clients => '[UR] Clients (Urdu)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[UR] No ambassador data available (Urdu)';
+  String get noAmbassadorDataAvailable => '[UR] No ambassador data available (Urdu)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[UR] Background deleted successfully! (Urdu)';
+  String get backgroundDeletedSuccessfully => '[UR] Background deleted successfully! (Urdu)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1268,8 +1167,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[UR] No analytics data available yet. (Urdu)';
+  String get noAnalyticsDataAvailableYet => '[UR] No analytics data available yet. (Urdu)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1277,8 +1175,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      '[UR] Business Phone Booking Entry Screen - Coming Soon (Urdu)';
+  String get businessPhoneBookingEntryScreenComingSoon => '[UR] Business Phone Booking Entry Screen - Coming Soon (Urdu)';
 
   @override
   String get verification => '[UR] Verification (Urdu)';
@@ -1325,8 +1222,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get businessProfile => '[UR] Business Profile (Urdu)';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      '[UR] Business Booking Entry Screen - Coming Soon (Urdu)';
+  String get businessBookingEntryScreenComingSoon => '[UR] Business Booking Entry Screen - Coming Soon (Urdu)';
 
   @override
   String get createNewSurvey => '[UR] Create New Survey (Urdu)';
@@ -1367,12 +1263,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get errorSavingSettingsE => '[UR] Error saving settings: \$e (Urdu)';
 
   @override
-  String get appVersionAndInformation =>
-      '[UR] App version and information (Urdu)';
+  String get appVersionAndInformation => '[UR] App version and information (Urdu)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      '[UR] Business Subscription Entry Screen - Coming Soon (Urdu)';
+  String get businessSubscriptionEntryScreenComingSoon => '[UR] Business Subscription Entry Screen - Coming Soon (Urdu)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1380,8 +1274,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      '[UR] Your payment has been processed successfully. (Urdu)';
+  String get yourPaymentHasBeenProcessedSuccessfully => '[UR] Your payment has been processed successfully. (Urdu)';
 
   @override
   String get errorE => '[UR] Error: \$e (Urdu)';
@@ -1399,8 +1292,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get payment => '[UR] Payment (Urdu)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      '[UR] Automatically confirm new booking requests (Urdu)';
+  String get automaticallyConfirmNewBookingRequests => '[UR] Automatically confirm new booking requests (Urdu)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1413,8 +1305,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[UR] Please sign in to upload a background (Urdu)';
+  String get pleaseSignInToUploadABackground => '[UR] Please sign in to upload a background (Urdu)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1431,22 +1322,19 @@ class AppLocalizationsUr extends AppLocalizations {
   String get autoconfirmBookings => '[UR] Auto-Confirm Bookings (Urdu)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      '[UR] Redirecting to Stripe checkout for Pro plan... (Urdu)';
+  String get redirectingToStripeCheckoutForProPlan => '[UR] Redirecting to Stripe checkout for Pro plan... (Urdu)';
 
   @override
   String get exportAsCsv => '[UR] Export as CSV (Urdu)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[UR] Delete functionality coming soon! (Urdu)';
+  String get deleteFunctionalityComingSoon => '[UR] Delete functionality coming soon! (Urdu)';
 
   @override
   String get editClient => '[UR] Edit Client (Urdu)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      '[UR] Are you sure you want to delete this message? (Urdu)';
+  String get areYouSureYouWantToDeleteThisMessage => '[UR] Are you sure you want to delete this message? (Urdu)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1457,16 +1345,13 @@ class AppLocalizationsUr extends AppLocalizations {
   String get notAuthenticated => '[UR] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[UR] Privacy request sent to your parents! (Urdu)';
+  String get privacyRequestSentToYourParents => '[UR] Privacy request sent to your parents! (Urdu)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[UR] Client deleted successfully! (Urdu)';
+  String get clientDeletedSuccessfully => '[UR] Client deleted successfully! (Urdu)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[UR] Failed to cancel subscription (Urdu)';
+  String get failedToCancelSubscription => '[UR] Failed to cancel subscription (Urdu)';
 
   @override
   String get allLanguages => '[UR] All Languages (Urdu)';
@@ -1475,19 +1360,16 @@ class AppLocalizationsUr extends AppLocalizations {
   String get slotDeletedSuccessfully => '[UR] Slot deleted successfully (Urdu)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      '[UR] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => '[UR] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      '[UR] Parents must approve before children can join (Urdu)';
+  String get parentsMustApproveBeforeChildrenCanJoin => '[UR] Parents must approve before children can join (Urdu)';
 
   @override
   String get subscribeToPro1499mo => '[UR] Subscribe to Pro (€14.99/mo) (Urdu)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      '[UR] Business Availability Entry Screen - Coming Soon (Urdu)';
+  String get businessAvailabilityEntryScreenComingSoon => '[UR] Business Availability Entry Screen - Coming Soon (Urdu)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1501,8 +1383,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get submitBooking => '[UR] بُکنگ جمع کروائیں';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      '[UR] Are you sure you want to cancel this appointment? (Urdu)';
+  String get areYouSureYouWantToCancelThisAppointment => '[UR] Are you sure you want to cancel this appointment? (Urdu)';
 
   @override
   String get noUpcomingBookings => '[UR] No upcoming bookings (Urdu)';
@@ -1520,8 +1401,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get goToDashboard => '[UR] Go to Dashboard (Urdu)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[UR] Ambassador Quota Dashboard (Urdu)';
+  String get ambassadorQuotaDashboard => '[UR] Ambassador Quota Dashboard (Urdu)';
 
   @override
   String get adminSettings => '[UR] Admin Settings';
@@ -1559,8 +1439,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[UR] Client added successfully! (Urdu)';
+  String get clientAddedSuccessfully => '[UR] Client added successfully! (Urdu)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1578,8 +1457,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get bookAppointment => '[UR] وقت بُک کریں';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[UR] Delete (Urdu)';
@@ -1600,8 +1478,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get paymentConfirmation => '[UR] Payment Confirmation (Urdu)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[UR] Promo applied! Your next bill is free. (Urdu)';
+  String get promoAppliedYourNextBillIsFree => '[UR] Promo applied! Your next bill is free. (Urdu)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1612,12 +1489,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get errorLoadingSlots => '[UR] Error loading slots (Urdu)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      '[UR] Allow other users to find and join this game (Urdu)';
+  String get allowOtherUsersToFindAndJoinThisGame => '[UR] Allow other users to find and join this game (Urdu)';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      '[UR] Business Onboarding Screen - Coming Soon (Urdu)';
+  String get businessOnboardingScreenComingSoon => '[UR] Business Onboarding Screen - Coming Soon (Urdu)';
 
   @override
   String get activateBusinessProfile => '[UR] Activate Business Profile (Urdu)';
@@ -1662,8 +1537,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get shareLink => '[UR] Share Link (Urdu)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      '[UR] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => '[UR] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[UR] Delete Appointment (Urdu)';
@@ -1683,12 +1557,10 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[UR] Update your business information (Urdu)';
+  String get updateYourBusinessInformation => '[UR] Update your business information (Urdu)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      '[UR] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => '[UR] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[UR] Parent Dashboard (Urdu)';
@@ -1711,8 +1583,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      '[UR] Studio booking is only available on web (Urdu)';
+  String get studioBookingIsOnlyAvailableOnWeb => '[UR] Studio booking is only available on web (Urdu)';
 
   @override
   String get errorLoadingBranchesE => '[UR] Error loading branches: \$e (Urdu)';
@@ -1731,15 +1602,13 @@ class AppLocalizationsUr extends AppLocalizations {
   String get none => '[UR] کوئی نہیں';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[UR] Failed to update consent: \$e (Urdu)';
+  String get failedToUpdateConsentE => '[UR] Failed to update consent: \$e (Urdu)';
 
   @override
   String get welcome1 => '[UR] Welcome (Urdu)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[UR] Failed to create session: \$e (Urdu)';
+  String get failedToCreateSessionE => '[UR] Failed to create session: \$e (Urdu)';
 
   @override
   String get inviteContact => '[UR] رابطہ دعوت دیں';
@@ -1748,8 +1617,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get surveyEditor => '[UR] Survey Editor (Urdu)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[UR] Failed to start Basic subscription: \$e (Urdu)';
+  String get failedToStartBasicSubscriptionE => '[UR] Failed to start Basic subscription: \$e (Urdu)';
 
   @override
   String get mySchedule => '[UR] My Schedule (Urdu)';
@@ -1769,8 +1637,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[UR] Settings saved successfully! (Urdu)';
+  String get settingsSavedSuccessfully => '[UR] Settings saved successfully! (Urdu)';
 
   @override
   String get linkCopiedToClipboard => '[UR] Link copied to clipboard! (Urdu)';
@@ -1790,8 +1657,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[UR] Room deleted successfully! (Urdu)';
+  String get roomDeletedSuccessfully => '[UR] Room deleted successfully! (Urdu)';
 
   @override
   String get businessCalendar => '[UR] Business Calendar (Urdu)';
@@ -1856,8 +1722,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get cancel1 => '[UR] Cancel (Urdu)';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      '[UR] Subscription activated successfully! (Urdu)';
+  String get subscriptionActivatedSuccessfully => '[UR] Subscription activated successfully! (Urdu)';
 
   @override
   String activityLogaction(Object action) {
@@ -1868,8 +1733,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get broadcast => '[UR] Broadcast (Urdu)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[UR] No events scheduled this week (Urdu)';
+  String get noEventsScheduledThisWeek => '[UR] No events scheduled this week (Urdu)';
 
   @override
   String get googleCalendar => '[UR] Google Calendar (Urdu)';
@@ -1881,8 +1745,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get childDashboard => '[UR] Child Dashboard (Urdu)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[UR] Failed to upload background: \$e (Urdu)';
+  String get failedToUploadBackgroundE => '[UR] Failed to upload background: \$e (Urdu)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1901,8 +1764,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get noAppointments => '[UR] No appointments (Urdu)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[UR] • Unlimited bookings per week (Urdu)';
+  String get unlimitedBookingsPerWeek => '[UR] • Unlimited bookings per week (Urdu)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1910,19 +1772,16 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[UR] Scheduled at: \$scheduledAt (Urdu)';
+  String get scheduledAtScheduledat => '[UR] Scheduled at: \$scheduledAt (Urdu)';
 
   @override
   String get selectStaff => '[UR] اسٹاف منتخب کریں';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      '[UR] Subscription cancelled successfully (Urdu)';
+  String get subscriptionCancelledSuccessfully => '[UR] Subscription cancelled successfully (Urdu)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[UR] Cancel Appointment (Urdu)';
@@ -1936,8 +1795,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get businessSignup => '[UR] Business Signup (Urdu)';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      '[UR] Business Completion Screen - Coming Soon (Urdu)';
+  String get businessCompletionScreenComingSoon => '[UR] Business Completion Screen - Coming Soon (Urdu)';
 
   @override
   String get createGame1 => '[UR] Create Game (Urdu)';
@@ -1951,8 +1809,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get pleaseEnterAPromoCode => '[UR] Please enter a promo code (Urdu)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[UR] Error loading availability: \$e (Urdu)';
+  String get errorLoadingAvailabilityE => '[UR] Error loading availability: \$e (Urdu)';
 
   @override
   String get parentalControls => '[UR] Parental Controls (Urdu)';
@@ -1967,8 +1824,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get create => '[UR] Create (Urdu)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[UR] No external meetings found. (Urdu)';
+  String get noExternalMeetingsFound => '[UR] No external meetings found. (Urdu)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1976,15 +1832,13 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[UR] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[UR] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[UR] Scheduler Screen (Urdu)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[UR] Client updated successfully! (Urdu)';
+  String get clientUpdatedSuccessfully => '[UR] Client updated successfully! (Urdu)';
 
   @override
   String get surveyResponses => '[UR] Survey Responses (Urdu)';
@@ -2013,8 +1867,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get errorLoadingOrganizations => '[UR] تنظیمیں لوڈ کرنے میں خرابی';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[UR] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[UR] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[UR] Success (Urdu)';
@@ -2033,12 +1886,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get readWrite => '[UR] پڑھنے اور لکھنے کی اجازت';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      '[UR] Redirecting to Stripe checkout for Basic plan... (Urdu)';
+  String get redirectingToStripeCheckoutForBasicPlan => '[UR] Redirecting to Stripe checkout for Basic plan... (Urdu)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[UR] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[UR] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[UR] تاریخ منتخب کریں';
@@ -2074,12 +1925,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get businessLogin => '[UR] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[UR] Invoice created successfully! (Urdu)';
+  String get invoiceCreatedSuccessfully => '[UR] Invoice created successfully! (Urdu)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[UR] No time series data available (Urdu)';
+  String get noTimeSeriesDataAvailable => '[UR] No time series data available (Urdu)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2092,8 +1941,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[UR] Failed to send privacy request: \$e (Urdu)';
+  String get failedToSendPrivacyRequestE => '[UR] Failed to send privacy request: \$e (Urdu)';
 
   @override
   String get chooseYourPlan => '[UR] Choose Your Plan (Urdu)';
@@ -2108,8 +1956,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get eventCreated => '[UR] Event created (Urdu)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[UR] Subscribe to Basic (€4.99/mo) (Urdu)';
+  String get subscribeToBasic499mo => '[UR] Subscribe to Basic (€4.99/mo) (Urdu)';
 
   @override
   String get completion => '[UR] Completion (Urdu)';
@@ -2130,12 +1977,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get deleteSurvey => '[UR] Delete Survey (Urdu)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[UR] Game approved successfully! (Urdu)';
+  String get gameApprovedSuccessfully => '[UR] Game approved successfully! (Urdu)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[UR] Error loading permissions: \$error (Urdu)';
+  String get errorLoadingPermissionsError => '[UR] Error loading permissions: \$error (Urdu)';
 
   @override
   String get referrals => '[UR] Referrals (Urdu)';
@@ -2177,8 +2022,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get organizations => 'تنظیمیں';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[UR] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[UR] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[UR] Create New Game (Urdu)';
@@ -2187,12 +2031,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get next1 => '[UR] Next (Urdu)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[UR] Background uploaded successfully! (Urdu)';
+  String get backgroundUploadedSuccessfully => '[UR] Background uploaded successfully! (Urdu)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[UR] No appointment requests found. (Urdu)';
+  String get noAppointmentRequestsFound => '[UR] No appointment requests found. (Urdu)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2219,8 +2061,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[UR] Failed to create game: \$e (Urdu)';
@@ -2229,8 +2070,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get noChartDataAvailable => '[UR] No chart data available (Urdu)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[UR] • Phone-based booking system (Urdu)';
+  String get phonebasedBookingSystem => '[UR] • Phone-based booking system (Urdu)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2239,8 +2079,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get invoices => '[UR] Invoices (Urdu)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2267,12 +2106,10 @@ class AppLocalizationsUr extends AppLocalizations {
   String get iDoNotConsent => '[UR] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      '[UR] No clients found. Add your first client! (Urdu)';
+  String get noClientsFoundAddYourFirstClient => '[UR] No clients found. Add your first client! (Urdu)';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      '[UR] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => '[UR] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[UR] Group: \$groupId';
@@ -2295,8 +2132,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[UR] • CRM dashboard with analytics (Urdu)';
+  String get crmDashboardWithAnalytics => '[UR] • CRM dashboard with analytics (Urdu)';
 
   @override
   String get contentLibrary1 => '[UR] Content Library (Urdu)';
@@ -2308,30 +2144,25 @@ class AppLocalizationsUr extends AppLocalizations {
   String get subscriptionManagement => '[UR] Subscription Management (Urdu)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      '[UR] Monetization settings will be implemented here (Urdu)';
+  String get monetizationSettingsWillBeImplementedHere => '[UR] Monetization settings will be implemented here (Urdu)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[UR] Failed to apply promo code: \$e (Urdu)';
+  String get failedToApplyPromoCodeE => '[UR] Failed to apply promo code: \$e (Urdu)';
 
   @override
   String get editProvider => '[UR] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[UR] Localization Contribution (Urdu)';
+  String get localizationContribution => '[UR] Localization Contribution (Urdu)';
 
   @override
   String get parentalConsent => '[UR] Parental Consent (Urdu)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[UR] Business Signup Screen - Coming Soon (Urdu)';
+  String get businessSignupScreenComingSoon => '[UR] Business Signup Screen - Coming Soon (Urdu)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      '[UR] Are you sure you want to delete this appointment? (Urdu)';
+  String get areYouSureYouWantToDeleteThisAppointment => '[UR] Are you sure you want to delete this appointment? (Urdu)';
 
   @override
   String get syncAppointment => '[UR] Sync Appointment (Urdu)';
@@ -2343,15 +2174,13 @@ class AppLocalizationsUr extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[UR] Business Setup Screen - Coming Soon (Urdu)';
+  String get businessSetupScreenComingSoon => '[UR] Business Setup Screen - Coming Soon (Urdu)';
 
   @override
   String get edit1 => '[UR] Edit (Urdu)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[UR] No events scheduled this month (Urdu)';
+  String get noEventsScheduledThisMonth => '[UR] No events scheduled this month (Urdu)';
 
   @override
   String get businessDashboard => '[UR] کاروباری ڈیش بورڈ';
@@ -2382,8 +2211,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get noUsers => '[UR] کوئی صارف نہیں';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[UR] Error loading referral code (Urdu)';
+  String get errorLoadingReferralCode => '[UR] Error loading referral code (Urdu)';
 
   @override
   String get allCountries => '[UR] All Countries (Urdu)';
@@ -2398,8 +2226,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get deleteMessage => '[UR] Delete Message (Urdu)';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[UR] کردار تبدیل کریں';
@@ -2421,8 +2248,7 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[UR] Upgrade to Business (Urdu)';
@@ -2448,8 +2274,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[UR] View Responses (Urdu)';
@@ -2478,8 +2303,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2497,8 +2321,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description =>
-      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2507,8 +2330,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title =>
-      'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2521,4 +2343,136 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get purchase_now_button => 'Purchase Now';
+
+  @override
+  String get welcomeAmbassador => 'Welcome, Ambassador!';
+
+  @override
+  String get activeStatus => 'Active';
+
+  @override
+  String get totalReferrals => 'Total Referrals';
+
+  @override
+  String get thisMonth => 'This Month';
+
+  @override
+  String get activeRewards => 'Active Rewards';
+
+  @override
+  String get nextTierProgress => 'Next Tier Progress';
+
+  @override
+  String get progressToPremium => 'Progress to Premium';
+
+  @override
+  String get remaining => 'remaining';
+
+  @override
+  String get monthlyGoal => 'Monthly Goal';
+
+  @override
+  String get onTrack => 'On Track';
+
+  @override
+  String get needsAttention => 'Needs Attention';
+
+  @override
+  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+
+  @override
+  String get viewRewards => 'View Rewards';
+
+  @override
+  String get referralStatistics => 'Referral Statistics';
+
+  @override
+  String get activeReferrals => 'Active Referrals';
+
+  @override
+  String get conversionRate => 'Conversion Rate';
+
+  @override
+  String get recentReferrals => 'Recent Referrals';
+
+  @override
+  String get tierBenefits => 'Tier Benefits';
+
+  @override
+  String get yourReferralQRCode => 'Your Referral QR Code';
+
+  @override
+  String get yourReferralLink => 'Your Referral Link';
+
+  @override
+  String get shareYourLink => 'Share Your Link';
+
+  @override
+  String get shareViaMessage => 'Message';
+
+  @override
+  String get shareViaEmail => 'Email';
+
+  @override
+  String get shareMore => 'More Options';
+
+  @override
+  String get becomeAmbassador => 'Become an Ambassador';
+
+  @override
+  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
+
+  @override
+  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
+
+  @override
+  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+
+  @override
+  String get ambassadorPromotionTitle => '[UR] Congratulations! You\'re now an Ambassador! (Urdu)';
+
+  @override
+  String ambassadorPromotionBody(String tier) {
+    return '[UR] Welcome to the $tier tier! Start sharing your referral link to earn rewards. (Urdu)';
+  }
+
+  @override
+  String get tierUpgradeTitle => '[UR] Tier Upgrade! 🎉 (Urdu)';
+
+  @override
+  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+    return '[UR] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Urdu)';
+  }
+
+  @override
+  String get monthlyReminderTitle => '[UR] Monthly Goal Reminder (Urdu)';
+
+  @override
+  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+    return '[UR] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Urdu)';
+  }
+
+  @override
+  String get performanceWarningTitle => '[UR] Ambassador Performance Alert (Urdu)';
+
+  @override
+  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+    return '[UR] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Urdu)';
+  }
+
+  @override
+  String get ambassadorDemotionTitle => '[UR] Ambassador Status Update (Urdu)';
+
+  @override
+  String ambassadorDemotionBody(String reason) {
+    return '[UR] Your ambassador status has been temporarily suspended due to: $reason. You can regain your status by meeting the requirements again. (Urdu)';
+  }
+
+  @override
+  String get referralSuccessTitle => '[UR] New Referral! 🎉 (Urdu)';
+
+  @override
+  String referralSuccessBody(String referredUserName, String totalReferrals) {
+    return '[UR] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Urdu)';
+  }
 }
