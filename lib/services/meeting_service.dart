@@ -389,9 +389,9 @@ class MeetingService {
   Future<void> _notifyParticipants(Meeting meeting, String title, String body) async {
     for (final participant in meeting.participants) {
       await _notificationService.sendNotificationToUser(
-        participant.userId,
-        title,
-        body,
+        uid: participant.userId,
+        title: title,
+        body: body,
       );
     }
   }
@@ -404,9 +404,9 @@ class MeetingService {
   ) async {
     for (final participant in participants) {
       await _notificationService.sendNotificationToUser(
-        participant.userId,
-        title,
-        body,
+        uid: participant.userId,
+        title: title,
+        body: body,
       );
     }
   }

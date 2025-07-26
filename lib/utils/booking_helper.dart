@@ -439,16 +439,16 @@ class BookingHelper {
     try {
       // Notify staff member
       await _notificationService.sendNotificationToUser(
-        booking.staffId,
-        'New Booking',
-        'You have a new booking for ${booking.serviceName}',
+        uid: booking.staffId,
+        title: 'New Booking',
+        body: 'You have a new booking for ${booking.serviceName}',
       );
 
       // Notify customer
       await _notificationService.sendNotificationToUser(
-        booking.userId,
-        'Booking Confirmed',
-        'Your booking for ${booking.serviceName} has been confirmed',
+        uid: booking.userId,
+        title: 'Booking Confirmed',
+        body: 'Your booking for ${booking.serviceName} has been confirmed',
       );
     } catch (e) {
       // Removed debug print: debugPrint('Error sending notifications and tracking analytics: $e');
@@ -463,16 +463,16 @@ class BookingHelper {
 
       // Notify staff member
       await _notificationService.sendNotificationToUser(
-        booking.staffId,
-        'Booking Cancelled',
-        'A booking for ${booking.serviceName} has been cancelled. Reason: $reasonText',
+        uid: booking.staffId,
+        title: 'Booking Cancelled',
+        body: 'A booking for ${booking.serviceName} has been cancelled. Reason: $reasonText',
       );
 
       // Notify customer
       await _notificationService.sendNotificationToUser(
-        booking.userId,
-        'Booking Cancelled',
-        'Your booking for ${booking.serviceName} has been cancelled. Reason: $reasonText',
+        uid: booking.userId,
+        title: 'Booking Cancelled',
+        body: 'Your booking for ${booking.serviceName} has been cancelled. Reason: $reasonText',
       );
     } catch (e) {
       // Removed debug print: debugPrint('Error sending cancellation notifications: $e');
