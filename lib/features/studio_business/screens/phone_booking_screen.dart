@@ -219,10 +219,11 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
           SnackBar(content: Text('Error: $e')),
         );
       }
-    } finally {
-      if (mounted) {
-        setState(() => _isProcessing = false);
-      }
+    }
+    
+    // Always reset processing state
+    if (mounted) {
+      setState(() => _isProcessing = false);
     }
   }
 
