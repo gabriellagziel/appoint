@@ -132,7 +132,6 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
-      }
     } finally {
       if (mounted) {
         setState(() => _isConnecting = false);
