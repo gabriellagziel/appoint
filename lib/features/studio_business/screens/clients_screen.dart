@@ -252,18 +252,17 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
         'updatedAt': DateTime.now().toIso8601String(),
       });
 
-      if (mounted) {
-        Navigator.pop(context);
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Client added successfully!')),
-        );
-      }
-    } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: $e')),
-        );
-      }
-    } finally {
+              if (mounted) {
+          Navigator.pop(context);
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Client added successfully!')),
+          );
+        }
+      } catch (e) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Error: $e')),
+          );
+      } finally {
       if (mounted) {
         setState(() => _isAdding = false);
       }
