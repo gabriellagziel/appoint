@@ -4,6 +4,8 @@ import 'package:appoint/models/ambassador_stats.dart';
 import 'package:appoint/models/branch.dart';
 import 'package:appoint/models/business_analytics.dart';
 import 'package:appoint/providers/ambassador_data_provider.dart';
+import 'package:appoint/providers/branch_provider.dart';
+import 'package:appoint/providers/notification_provider.dart';
 import 'package:appoint/services/branch_service.dart';
 import 'package:appoint/services/notification_service.dart';
 import 'package:fl_chart/fl_chart.dart';
@@ -11,11 +13,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class AmbassadorDashboardScreen extends ConsumerStatefulWidget {
-  const AmbassadorDashboardScreen({
-    required this.notificationService, required this.branchService, super.key,
-  });
-  final NotificationService notificationService;
-  final BranchService branchService;
+  const AmbassadorDashboardScreen({super.key});
 
   @override
   ConsumerState<AmbassadorDashboardScreen> createState() =>
@@ -35,8 +33,8 @@ class _AmbassadorDashboardScreenState
   @override
   void initState() {
     super.initState();
-    final _notificationService = widget.notificationService;
-    final _branchService = widget.branchService;
+    final _notificationService = ref.read(notificationServiceProvider);
+    final _branchService = ref.read(branchServiceProvider);
     _loadBranches();
     _initializeNotifications();
   }
@@ -64,6 +62,7 @@ class _AmbassadorDashboardScreenState
   }
 
   Future<void> _initializeNotifications() async {
+    final _notificationService = ref.read(notificationServiceProvider);
     await _notificationService.initialize(
       onMessage: (payload) {
         if (mounted) {
