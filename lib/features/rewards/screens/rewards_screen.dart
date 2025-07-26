@@ -615,6 +615,5 @@ class RewardsScreen extends ConsumerWidget {
           SnackBar(content: Text('Failed to redeem reward: $e')),
         );
       }
-    }
   }
 } 
