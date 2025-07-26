@@ -78,7 +78,7 @@ class AppLocalizationsLt extends AppLocalizations {
       '[LT] [LT] Are you sure you want to cancel this invite?';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return '[LT] [LT] Created';
   }
 
@@ -140,7 +140,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get participants => '[LT] [LT] Participants';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return '[LT] [LT] Recipients';
   }
 
@@ -180,7 +180,7 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return '[LT] [LT] Content';
   }
 
@@ -235,7 +235,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get removeChild => '[LT] [LT] Remove Child';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return '[LT] [LT] Status';
   }
 
@@ -286,7 +286,7 @@ class AppLocalizationsLt extends AppLocalizations {
       '[LT] [LT] Access revoked successfully';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return '[LT] [LT] Type';
   }
 
@@ -418,7 +418,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get inviteDetail => '[LT] [LT] Invite Details';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return '[LT] [LT] Scheduled';
   }
 
@@ -431,7 +431,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String get scheduling => '[LT] [LT] Scheduling';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '[LT] [LT] Error saving message';
   }
 
@@ -464,7 +464,7 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '[LT] [LT] Error sending message';
   }
 
@@ -520,12 +520,12 @@ class AppLocalizationsLt extends AppLocalizations {
   String get pollOptions => '[LT] [LT] Poll Options';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return '[LT] [LT] Clicked';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return '[LT] [LT] Link';
   }
 
@@ -2683,4 +2683,73 @@ class AppLocalizationsLt extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[LT] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Lithuanian)';
   }
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get pleaseEnterTitle => 'Please enter a title';
+
+  @override
+  String get messageType => 'Message Type';
+
+  @override
+  String get pleaseEnterContent => 'Please enter content';
+
+  @override
+  String get imageSelected => 'Image selected';
+
+  @override
+  String get videoSelected => 'Video selected';
+
+  @override
+  String get externalLink => 'External Link';
+
+  @override
+  String get pleaseEnterLink => 'Please enter a link';
+
+  @override
+  String get estimatedRecipients => 'Estimated recipients';
+
+  @override
+  String get countries => 'Countries';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get subscriptionTiers => 'Subscription Tiers';
+
+  @override
+  String get userRoles => 'User Roles';
+
+  @override
+  String get errorEstimatingRecipients => 'Error estimating recipients';
+
+  @override
+  String get errorPickingImage => 'Error picking image';
+
+  @override
+  String get errorPickingVideo => 'Error picking video';
+
+  @override
+  String get userNotAuthenticated => 'User not authenticated';
+
+  @override
+  String get failedToUploadImage => 'Failed to upload image';
+
+  @override
+  String get failedToUploadVideo => 'Failed to upload video';
+
+  @override
+  String get image => 'Image';
+
+  @override
+  String get video => 'Video';
+
+  @override
+  String get continue1 => 'Continue';
+
+  @override
+  String get getStarted => 'Get Started';
 }

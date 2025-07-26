@@ -78,7 +78,7 @@ class AppLocalizationsDe extends AppLocalizations {
       '[DE] Einladung stornieren bestätigen?';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return '[DE] Erstellt';
   }
 
@@ -138,7 +138,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get participants => '[DE] Teilnehmer';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return '[DE] Empfänger';
   }
 
@@ -178,7 +178,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return '[DE] Inhalt';
   }
 
@@ -232,7 +232,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get removeChild => '[DE] Kind entfernen';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return '[DE] Status';
   }
 
@@ -282,7 +282,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get accessRevokedSuccessfully => '[DE] Zugriff erfolgreich widerrufen';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return '[DE] Typ';
   }
 
@@ -415,7 +415,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get inviteDetail => '[DE] Einladungsdetails';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return '[DE] Geplant';
   }
 
@@ -428,7 +428,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get scheduling => '[DE] Planung';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '[DE] Fehler beim Speichern der Nachricht';
   }
 
@@ -461,7 +461,7 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '[DE] Fehler beim Senden der Nachricht';
   }
 
@@ -517,12 +517,12 @@ class AppLocalizationsDe extends AppLocalizations {
   String get pollOptions => '[DE] Umfrageoptionen';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return '[DE] Geklickt';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return '[DE] Link';
   }
 
@@ -2668,4 +2668,73 @@ class AppLocalizationsDe extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[DE] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (German)';
   }
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get pleaseEnterTitle => 'Please enter a title';
+
+  @override
+  String get messageType => 'Message Type';
+
+  @override
+  String get pleaseEnterContent => 'Please enter content';
+
+  @override
+  String get imageSelected => 'Image selected';
+
+  @override
+  String get videoSelected => 'Video selected';
+
+  @override
+  String get externalLink => 'External Link';
+
+  @override
+  String get pleaseEnterLink => 'Please enter a link';
+
+  @override
+  String get estimatedRecipients => 'Estimated recipients';
+
+  @override
+  String get countries => 'Countries';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get subscriptionTiers => 'Subscription Tiers';
+
+  @override
+  String get userRoles => 'User Roles';
+
+  @override
+  String get errorEstimatingRecipients => 'Error estimating recipients';
+
+  @override
+  String get errorPickingImage => 'Error picking image';
+
+  @override
+  String get errorPickingVideo => 'Error picking video';
+
+  @override
+  String get userNotAuthenticated => 'User not authenticated';
+
+  @override
+  String get failedToUploadImage => 'Failed to upload image';
+
+  @override
+  String get failedToUploadVideo => 'Failed to upload video';
+
+  @override
+  String get image => 'Image';
+
+  @override
+  String get video => 'Video';
+
+  @override
+  String get continue1 => 'Continue';
+
+  @override
+  String get getStarted => 'Get Started';
 }

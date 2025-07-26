@@ -78,7 +78,7 @@ class AppLocalizationsHa extends AppLocalizations {
       '[HA] Kuna da tabbacin kuna son soke wannan gayyata?';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return '[HA] An ƙirƙira: $date';
   }
 
@@ -140,7 +140,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get participants => '[HA] Participants';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return '[HA] Masu karɓa: $count';
   }
 
@@ -181,7 +181,7 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return '[HA] Abun ciki: $content';
   }
 
@@ -235,7 +235,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get removeChild => '[HA] Cire yaro';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return '[HA] Matsayi: $status';
   }
 
@@ -285,7 +285,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get accessRevokedSuccessfully => '[HA] An cire izini cikin nasara!';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return '[HA] Nau\'i: $type';
   }
 
@@ -418,7 +418,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get inviteDetail => '[HA] Cikakken gayyata';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return '[HA] An tsara: $date';
   }
 
@@ -431,7 +431,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String get scheduling => '[HA] Jadawalin lokaci';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '[HA] Kuskure wajen ajiye saƙo: $error';
   }
 
@@ -464,7 +464,7 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '[HA] Kuskure wajen aika saƙo: $error';
   }
 
@@ -520,12 +520,12 @@ class AppLocalizationsHa extends AppLocalizations {
   String get pollOptions => '[HA] Zaɓuɓɓuka:';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return '[HA] An danna: $count';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return '[HA] Haɗi: $link';
   }
 
@@ -2661,4 +2661,73 @@ class AppLocalizationsHa extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[HA] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Hausa)';
   }
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get pleaseEnterTitle => 'Please enter a title';
+
+  @override
+  String get messageType => 'Message Type';
+
+  @override
+  String get pleaseEnterContent => 'Please enter content';
+
+  @override
+  String get imageSelected => 'Image selected';
+
+  @override
+  String get videoSelected => 'Video selected';
+
+  @override
+  String get externalLink => 'External Link';
+
+  @override
+  String get pleaseEnterLink => 'Please enter a link';
+
+  @override
+  String get estimatedRecipients => 'Estimated recipients';
+
+  @override
+  String get countries => 'Countries';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get subscriptionTiers => 'Subscription Tiers';
+
+  @override
+  String get userRoles => 'User Roles';
+
+  @override
+  String get errorEstimatingRecipients => 'Error estimating recipients';
+
+  @override
+  String get errorPickingImage => 'Error picking image';
+
+  @override
+  String get errorPickingVideo => 'Error picking video';
+
+  @override
+  String get userNotAuthenticated => 'User not authenticated';
+
+  @override
+  String get failedToUploadImage => 'Failed to upload image';
+
+  @override
+  String get failedToUploadVideo => 'Failed to upload video';
+
+  @override
+  String get image => 'Image';
+
+  @override
+  String get video => 'Video';
+
+  @override
+  String get continue1 => 'Continue';
+
+  @override
+  String get getStarted => 'Get Started';
 }

@@ -78,7 +78,7 @@ class AppLocalizationsEs extends AppLocalizations {
       '[ES] ¿Confirmar cancelación de invitación?';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return '[ES] Creado';
   }
 
@@ -139,7 +139,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get participants => '[ES] Participantes';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return '[ES] Destinatarios';
   }
 
@@ -179,7 +179,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return '[ES] Contenido';
   }
 
@@ -234,7 +234,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get removeChild => '[ES] Eliminar niño';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return '[ES] Estado';
   }
 
@@ -284,7 +284,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get accessRevokedSuccessfully => '[ES] Acceso revocado exitosamente';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return '[ES] Tipo';
   }
 
@@ -416,7 +416,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get inviteDetail => '[ES] Detalle de invitación';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return '[ES] Programado';
   }
 
@@ -429,7 +429,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get scheduling => '[ES] Programación';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '[ES] Error al guardar mensaje';
   }
 
@@ -462,7 +462,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '[ES] Error al enviar mensaje';
   }
 
@@ -518,12 +518,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get pollOptions => '[ES] Opciones de encuesta';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return '[ES] Hace clic';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return '[ES] Enlace';
   }
 
@@ -2672,6 +2672,75 @@ class AppLocalizationsEs extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[ES] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Spanish)';
   }
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get pleaseEnterTitle => 'Please enter a title';
+
+  @override
+  String get messageType => 'Message Type';
+
+  @override
+  String get pleaseEnterContent => 'Please enter content';
+
+  @override
+  String get imageSelected => 'Image selected';
+
+  @override
+  String get videoSelected => 'Video selected';
+
+  @override
+  String get externalLink => 'External Link';
+
+  @override
+  String get pleaseEnterLink => 'Please enter a link';
+
+  @override
+  String get estimatedRecipients => 'Estimated recipients';
+
+  @override
+  String get countries => 'Countries';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get subscriptionTiers => 'Subscription Tiers';
+
+  @override
+  String get userRoles => 'User Roles';
+
+  @override
+  String get errorEstimatingRecipients => 'Error estimating recipients';
+
+  @override
+  String get errorPickingImage => 'Error picking image';
+
+  @override
+  String get errorPickingVideo => 'Error picking video';
+
+  @override
+  String get userNotAuthenticated => 'User not authenticated';
+
+  @override
+  String get failedToUploadImage => 'Failed to upload image';
+
+  @override
+  String get failedToUploadVideo => 'Failed to upload video';
+
+  @override
+  String get image => 'Image';
+
+  @override
+  String get video => 'Video';
+
+  @override
+  String get continue1 => 'Continue';
+
+  @override
+  String get getStarted => 'Get Started';
 }
 
 /// The translations for Spanish Castilian, as used in Latin America and the Caribbean (`es_419`).
@@ -2751,7 +2820,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
       '[ES_419] [ES_419] Are you sure you want to cancel this invite?';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return '[ES_419] [ES_419] Created';
   }
 
@@ -2815,7 +2884,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get participants => '[ES_419] [ES_419] Participants';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return '[ES_419] [ES_419] Recipients';
   }
 
@@ -2856,7 +2925,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return '[ES_419] [ES_419] Content';
   }
 
@@ -2912,7 +2981,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get removeChild => '[ES_419] [ES_419] Remove Child';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return '[ES_419] [ES_419] Status';
   }
 
@@ -2964,7 +3033,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
       '[ES_419] [ES_419] Access revoked successfully';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return '[ES_419] [ES_419] Type';
   }
 
@@ -3098,7 +3167,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get inviteDetail => '[ES_419] [ES_419] Invite Details';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return '[ES_419] [ES_419] Scheduled';
   }
 
@@ -3111,7 +3180,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get scheduling => '[ES_419] [ES_419] Scheduling';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '[ES_419] [ES_419] Error saving message';
   }
 
@@ -3145,7 +3214,7 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '[ES_419] [ES_419] Error sending message';
   }
 
@@ -3203,12 +3272,12 @@ class AppLocalizationsEs419 extends AppLocalizationsEs {
   String get pollOptions => '[ES_419] [ES_419] Poll Options';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return '[ES_419] [ES_419] Clicked';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return '[ES_419] [ES_419] Link';
   }
 

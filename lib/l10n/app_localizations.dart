@@ -304,7 +304,7 @@ abstract class AppLocalizations {
   /// **'Create Virtual Session'**
   String get createVirtualSession;
 
-  /// Message sent successfully message
+  /// Message send success confirmation
   ///
   /// In en, this message translates to:
   /// **'Message sent successfully'**
@@ -334,11 +334,11 @@ abstract class AppLocalizations {
   /// **'Are you sure you want to cancel this invite?'**
   String get cancelInviteConfirmation;
 
-  /// Created status with date
+  /// Created date display with parameter
   ///
   /// In en, this message translates to:
-  /// **'Created: {date}'**
-  String created(Object date);
+  /// **'Created: {created}'**
+  String created(String created, Object date);
 
   /// Description
   ///
@@ -442,11 +442,11 @@ abstract class AppLocalizations {
   /// **'Participants'**
   String get participants;
 
-  /// Description
+  /// Recipients display with parameter
   ///
   /// In en, this message translates to:
-  /// **'Recipients: {count}'**
-  String recipients(Object count);
+  /// **'Recipients: {recipients}'**
+  String recipients(String recipients, Object count);
 
   /// Description
   ///
@@ -514,11 +514,11 @@ abstract class AppLocalizations {
   /// **'Invited: {date}'**
   String invited(Object date);
 
-  /// Description
+  /// Content display with parameter
   ///
   /// In en, this message translates to:
   /// **'Content: {content}'**
-  String content(Object content);
+  String content(String content);
 
   /// Description
   ///
@@ -574,7 +574,7 @@ abstract class AppLocalizations {
   /// **'Compose Broadcast Message'**
   String get composeBroadcastMessage;
 
-  /// Description
+  /// Send now button
   ///
   /// In en, this message translates to:
   /// **'Send Now'**
@@ -616,11 +616,11 @@ abstract class AppLocalizations {
   /// **'Remove Child'**
   String get removeChild;
 
-  /// Description
+  /// Status display with parameter
   ///
   /// In en, this message translates to:
   /// **'Status: {status}'**
-  String status(Object status);
+  String status(String status);
 
   /// Description
   ///
@@ -712,11 +712,11 @@ abstract class AppLocalizations {
   /// **'Access revoked successfully'**
   String get accessRevokedSuccessfully;
 
-  /// Description
+  /// Type display with parameter
   ///
   /// In en, this message translates to:
   /// **'Type: {type}'**
-  String type(Object type);
+  String type(String type);
 
   /// Description
   ///
@@ -766,10 +766,10 @@ abstract class AppLocalizations {
   /// **'Revoke'**
   String get revoke;
 
-  /// Description
+  /// No broadcast messages message
   ///
   /// In en, this message translates to:
-  /// **'No messages yet'**
+  /// **'No broadcast messages'**
   String get noBroadcastMessages;
 
   /// Description
@@ -784,7 +784,7 @@ abstract class AppLocalizations {
   /// **'Notifications'**
   String get notifications;
 
-  /// Description
+  /// Details button
   ///
   /// In en, this message translates to:
   /// **'Details'**
@@ -922,7 +922,7 @@ abstract class AppLocalizations {
   /// **'Media (Optional)'**
   String get mediaOptional;
 
-  /// Description
+  /// Message save success confirmation
   ///
   /// In en, this message translates to:
   /// **'Message saved successfully'**
@@ -940,7 +940,7 @@ abstract class AppLocalizations {
   /// **'Dashboard'**
   String get dashboard;
 
-  /// Description
+  /// No permission message
   ///
   /// In en, this message translates to:
   /// **'No permission for broadcast'**
@@ -958,11 +958,11 @@ abstract class AppLocalizations {
   /// **'Invite Details'**
   String get inviteDetail;
 
-  /// Description
+  /// Scheduled date display with parameter
   ///
   /// In en, this message translates to:
-  /// **'Scheduled: {date}'**
-  String scheduled(Object date);
+  /// **'Scheduled: {scheduled}'**
+  String scheduled(String scheduled, Object date);
 
   /// Description
   ///
@@ -976,11 +976,11 @@ abstract class AppLocalizations {
   /// **'Scheduling'**
   String get scheduling;
 
-  /// Description
+  /// Error saving message with parameter
   ///
   /// In en, this message translates to:
   /// **'Error saving message: {error}'**
-  String errorSavingMessage(Object error);
+  String errorSavingMessage(String error);
 
   /// Description
   ///
@@ -1030,11 +1030,11 @@ abstract class AppLocalizations {
   /// **'Failed to cancel invite: {error}'**
   String failedToCancelInvite(Object error);
 
-  /// Description
+  /// Error sending message with parameter
   ///
   /// In en, this message translates to:
   /// **'Error sending message: {error}'**
-  String errorSendingMessage(Object error);
+  String errorSendingMessage(String error);
 
   /// Description
   ///
@@ -1126,23 +1126,23 @@ abstract class AppLocalizations {
   /// **'Manage Permissions'**
   String get managePermissions;
 
-  /// Description
+  /// Poll options label
   ///
   /// In en, this message translates to:
   /// **'Poll Options'**
   String get pollOptions;
 
-  /// Description
+  /// Clicked count display with parameter
   ///
   /// In en, this message translates to:
-  /// **'Clicked: {count}'**
-  String clicked(Object count);
+  /// **'Clicked: {clicked}'**
+  String clicked(String clicked, Object count);
 
-  /// Description
+  /// Link display with parameter
   ///
   /// In en, this message translates to:
   /// **'Link: {link}'**
-  String link(Object link);
+  String link(String link);
 
   /// Description
   ///
@@ -4772,6 +4772,144 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{referredUserName} joined through your referral! You now have {totalReferrals} total referrals.'**
   String referralSuccessBody(String referredUserName, String totalReferrals);
+
+  /// Title label
+  ///
+  /// In en, this message translates to:
+  /// **'Title'**
+  String get title;
+
+  /// Validation message for title field
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a title'**
+  String get pleaseEnterTitle;
+
+  /// Message type field label
+  ///
+  /// In en, this message translates to:
+  /// **'Message Type'**
+  String get messageType;
+
+  /// Validation message for content field
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter content'**
+  String get pleaseEnterContent;
+
+  /// Image selected confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Image selected'**
+  String get imageSelected;
+
+  /// Video selected confirmation
+  ///
+  /// In en, this message translates to:
+  /// **'Video selected'**
+  String get videoSelected;
+
+  /// External link field label
+  ///
+  /// In en, this message translates to:
+  /// **'External Link'**
+  String get externalLink;
+
+  /// Validation message for link field
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a link'**
+  String get pleaseEnterLink;
+
+  /// Estimated recipients count label
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated recipients'**
+  String get estimatedRecipients;
+
+  /// Countries filter label
+  ///
+  /// In en, this message translates to:
+  /// **'Countries'**
+  String get countries;
+
+  /// Cities filter label
+  ///
+  /// In en, this message translates to:
+  /// **'Cities'**
+  String get cities;
+
+  /// Subscription tiers filter label
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription Tiers'**
+  String get subscriptionTiers;
+
+  /// User roles filter label
+  ///
+  /// In en, this message translates to:
+  /// **'User Roles'**
+  String get userRoles;
+
+  /// Error message for recipient estimation
+  ///
+  /// In en, this message translates to:
+  /// **'Error estimating recipients'**
+  String get errorEstimatingRecipients;
+
+  /// Error message for image selection
+  ///
+  /// In en, this message translates to:
+  /// **'Error picking image'**
+  String get errorPickingImage;
+
+  /// Error message for video selection
+  ///
+  /// In en, this message translates to:
+  /// **'Error picking video'**
+  String get errorPickingVideo;
+
+  /// User not authenticated error
+  ///
+  /// In en, this message translates to:
+  /// **'User not authenticated'**
+  String get userNotAuthenticated;
+
+  /// Image upload failure message
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to upload image'**
+  String get failedToUploadImage;
+
+  /// Video upload failure message
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to upload video'**
+  String get failedToUploadVideo;
+
+  /// Image label
+  ///
+  /// In en, this message translates to:
+  /// **'Image'**
+  String get image;
+
+  /// Video label
+  ///
+  /// In en, this message translates to:
+  /// **'Video'**
+  String get video;
+
+  /// Continue button
+  ///
+  /// In en, this message translates to:
+  /// **'Continue'**
+  String get continue1;
+
+  /// Get started button
+  ///
+  /// In en, this message translates to:
+  /// **'Get Started'**
+  String get getStarted;
 }
 
 class _AppLocalizationsDelegate
