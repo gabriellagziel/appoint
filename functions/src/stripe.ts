@@ -14,10 +14,10 @@ admin.initializeApp();
 const db = admin.firestore();
 
 // Create business checkout session (NEW)
-export const createBusinessCheckoutSession = functions.https.onCall(async (data, context) => {
+export const createBusinessCheckoutSession = functions.https.onCall(async (request) => {
   try {
-    const { plan, priceId, promoCode, metadata } = data;
-    const userId = context.auth?.uid;
+    const { plan, priceId, promoCode, metadata } = request.data;
+    const userId = request.auth?.uid;
 
     if (!userId) {
       throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -129,9 +129,9 @@ export const createCheckoutSession = functions.https.onRequest(async (req, res) 
 });
 
 // Create customer portal session
-export const createCustomerPortalSession = functions.https.onCall(async (data, context) => {
+export const createCustomerPortalSession = functions.https.onCall(async (request) => {
   try {
-    const userId = context.auth?.uid;
+    const userId = request.auth?.uid;
 
     if (!userId) {
       throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');

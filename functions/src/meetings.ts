@@ -83,19 +83,19 @@ function canAccessEventFeatures(meeting: Meeting, userId: string): boolean {
 // Cloud Functions
 
 // Firestore trigger for meeting validation
-export const onMeetingWrite = functions.firestore
-  .document('meetings/{meetingId}')
-  .onWrite(async (change, context) => {
-    const meetingId = context.params.meetingId;
+export const onMeetingWrite = functions.firestore.onDocumentWritten(
+  'meetings/{meetingId}',
+  async (event) => {
+    const meetingId = event.params.meetingId;
     
     // Handle deletion
-    if (!change.after.exists) {
+    if (!event.data?.after?.exists) {
       console.log(`Meeting ${meetingId} was deleted`);
       return;
     }
     
-    const meeting = change.after.data() as Meeting;
-    const previousMeeting = change.before.exists ? change.before.data() as Meeting : null;
+    const meeting = event.data?.after?.data() as Meeting;
+    const previousMeeting = event.data?.before?.exists ? event.data?.before?.data() as Meeting : null;
     
     // Validate business rules
     const validationError = validateMeetingBusinessRules(meeting);
@@ -133,14 +133,14 @@ export const onMeetingWrite = functions.firestore
   });
 
 // HTTP function to validate meeting creation
-export const validateMeetingCreation = functions.https.onCall(async (data, context) => {
+export const validateMeetingCreation = functions.https.onCall(async (request) => {
   // Check authentication
-  if (!context.auth) {
+  if (!request.auth) {
     throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
   }
   
-  const userId = context.auth.uid;
-  const { title, participants, startTime, endTime } = data;
+  const userId = request.auth.uid;
+  const { title, participants, startTime, endTime } = request.data;
   
   // Basic validation
   if (!title || !participants || !startTime || !endTime) {
@@ -165,13 +165,13 @@ export const validateMeetingCreation = functions.https.onCall(async (data, conte
 });
 
 // HTTP function to check event feature access
-export const checkEventFeatureAccess = functions.https.onCall(async (data, context) => {
-  if (!context.auth) {
+export const checkEventFeatureAccess = functions.https.onCall(async (request) => {
+  if (!request.auth) {
     throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
   }
   
-  const userId = context.auth.uid;
-  const { meetingId, feature } = data;
+  const userId = request.auth.uid;
+  const { meetingId, feature } = request.data;
   
   // Get meeting
   const meetingDoc = await db.collection('meetings').doc(meetingId).get();
@@ -204,13 +204,13 @@ export const checkEventFeatureAccess = functions.https.onCall(async (data, conte
 });
 
 // HTTP function to get meeting analytics
-export const getMeetingAnalytics = functions.https.onCall(async (data, context) => {
-  if (!context.auth) {
+export const getMeetingAnalytics = functions.https.onCall(async (request) => {
+  if (!request.auth) {
     throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
   }
   
-  const userId = context.auth.uid;
-  const { startDate, endDate } = data;
+  const userId = request.auth.uid;
+  const { startDate, endDate } = request.data;
   
   let query = db.collection('meetings').where('organizerId', '==', userId);
   
@@ -242,13 +242,13 @@ export const getMeetingAnalytics = functions.https.onCall(async (data, context) 
 });
 
 // HTTP function to create event form (with validation)
-export const createEventForm = functions.https.onCall(async (data, context) => {
-  if (!context.auth) {
+export const createEventForm = functions.https.onCall(async (request) => {
+  if (!request.auth) {
     throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
   }
   
-  const userId = context.auth.uid;
-  const { meetingId, title, description, fields } = data;
+  const userId = request.auth.uid;
+  const { meetingId, title, description, fields } = request.data;
   
   // Get and validate meeting
   const meetingDoc = await db.collection('meetings').doc(meetingId).get();
@@ -296,9 +296,9 @@ export const createEventForm = functions.https.onCall(async (data, context) => {
 });
 
 // Scheduled function to clean up expired meetings
-export const cleanupExpiredMeetings = functions.pubsub
-  .schedule('every 24 hours')
-  .onRun(async (context) => {
+export const cleanupExpiredMeetings = functions.scheduler.onSchedule(
+  'every 24 hours',
+  async (event) => {
     const cutoffDate = new Date();
     cutoffDate.setDate(cutoffDate.getDate() - 30); // 30 days ago
     
