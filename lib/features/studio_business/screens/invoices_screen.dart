@@ -222,7 +222,6 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
-      }
     } finally {
       if (mounted) {
         setState(() => _isAdding = false);
