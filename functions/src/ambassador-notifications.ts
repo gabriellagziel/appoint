@@ -172,7 +172,7 @@ export const sendAmbassadorNotification = functions.https.onCall(async (request)
 /**
  * Scheduled function to send monthly reminders
  */
-export const sendMonthlyReminders = functions.scheduler.onSchedule('0 10 * * *', async (event) => {
+export const sendMonthlyReminders = functions.scheduler.onSchedule('0 10 * * *', async (event): Promise<void> => {
     console.log('Starting monthly reminder check...');
     
     try {
