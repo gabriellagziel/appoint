@@ -85,9 +85,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get revokeAccess => '撤销访问';
 
   @override
-  String get saveGroupForRecognition => '保存组以便识别';
-
-  @override
   String get playtimeLiveScheduled => '直播已安排';
 
   @override
@@ -257,9 +254,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get upcomingSessions => '即将到来的会话';
-
-  @override
-  String get enterGroupName => '输入组名';
 
   @override
   String get confirm => '确认';
@@ -495,9 +489,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get createGame => '创建游戏';
 
   @override
-  String get groupNameOptional => '组名（可选）';
-
-  @override
   String get playtimeNoSessions => '[ZH] 暂无 Playtime 会话';
 
   @override
@@ -508,9 +499,6 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get close => '关闭';
-
-  @override
-  String get knownGroupDetected => '已知组已检测';
 
   @override
   String get back => '返回';
@@ -2583,6 +2571,154 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get purchase_now_button => '立即购买';
+
+  @override
+  String get welcomeAmbassador => 'Welcome, Ambassador!';
+
+  @override
+  String get activeStatus => 'Active';
+
+  @override
+  String get totalReferrals => 'Total Referrals';
+
+  @override
+  String get thisMonth => 'This Month';
+
+  @override
+  String get activeRewards => 'Active Rewards';
+
+  @override
+  String get nextTierProgress => 'Next Tier Progress';
+
+  @override
+  String get progressToPremium => 'Progress to Premium';
+
+  @override
+  String get remaining => 'remaining';
+
+  @override
+  String get monthlyGoal => 'Monthly Goal';
+
+  @override
+  String get onTrack => 'On Track';
+
+  @override
+  String get needsAttention => 'Needs Attention';
+
+  @override
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
+
+  @override
+  String get viewRewards => 'View Rewards';
+
+  @override
+  String get referralStatistics => 'Referral Statistics';
+
+  @override
+  String get activeReferrals => 'Active Referrals';
+
+  @override
+  String get conversionRate => 'Conversion Rate';
+
+  @override
+  String get recentReferrals => 'Recent Referrals';
+
+  @override
+  String get tierBenefits => 'Tier Benefits';
+
+  @override
+  String get yourReferralQRCode => 'Your Referral QR Code';
+
+  @override
+  String get yourReferralLink => 'Your Referral Link';
+
+  @override
+  String get shareYourLink => 'Share Your Link';
+
+  @override
+  String get shareViaMessage => 'Message';
+
+  @override
+  String get shareViaEmail => 'Email';
+
+  @override
+  String get shareMore => 'More Options';
+
+  @override
+  String get becomeAmbassador => 'Become an Ambassador';
+
+  @override
+  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
+
+  @override
+  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
+
+  @override
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+
+  @override
+  String get ambassadorPromotionTitle =>
+      '[ZH] Congratulations! You\'re now an Ambassador! (Chinese)';
+
+  @override
+  String ambassadorPromotionBody(String tier) {
+    return '[ZH] Welcome to the $tier tier! Start sharing your referral link to earn rewards. (Chinese)';
+  }
+
+  @override
+  String get tierUpgradeTitle => '[ZH] Tier Upgrade! 🎉 (Chinese)';
+
+  @override
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
+    return '[ZH] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Chinese)';
+  }
+
+  @override
+  String get monthlyReminderTitle => '[ZH] Monthly Goal Reminder (Chinese)';
+
+  @override
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
+    return '[ZH] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Chinese)';
+  }
+
+  @override
+  String get performanceWarningTitle =>
+      '[ZH] Ambassador Performance Alert (Chinese)';
+
+  @override
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
+    return '[ZH] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Chinese)';
+  }
+
+  @override
+  String get ambassadorDemotionTitle =>
+      '[ZH] Ambassador Status Update (Chinese)';
+
+  @override
+  String ambassadorDemotionBody(String reason) {
+    return '[ZH] Your ambassador status has been temporarily suspended due to: $reason. You can regain your status by meeting the requirements again. (Chinese)';
+  }
+
+  @override
+  String get referralSuccessTitle => '[ZH] New Referral! 🎉 (Chinese)';
+
+  @override
+  String referralSuccessBody(String referredUserName, String totalReferrals) {
+    return '[ZH] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Chinese)';
+  }
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hant`).
@@ -2664,9 +2800,6 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get revokeAccess => '撤銷存取權';
-
-  @override
-  String get saveGroupForRecognition => '儲存群組以供未來辨識';
 
   @override
   String get playtimeLiveScheduled => '[ZH_HANT] Live playtime scheduled!';
@@ -2840,9 +2973,6 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get upcomingSessions => '[ZH_HANT] Upcoming Sessions';
-
-  @override
-  String get enterGroupName => '輸入群組名稱以便辨識';
 
   @override
   String get confirm => '[ZH_HANT] Confirm';
@@ -3077,9 +3207,6 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get createGame => '[ZH_HANT] Create Game';
 
   @override
-  String get groupNameOptional => '群組名稱（選填）';
-
-  @override
   String get playtimeNoSessions => '[ZH_HANT] No playtime sessions found.';
 
   @override
@@ -3090,9 +3217,6 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get close => '關閉';
-
-  @override
-  String get knownGroupDetected => '偵測到已知群組';
 
   @override
   String get back => '[ZH_HANT] Back';
@@ -5211,4 +5335,69 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get purchase_now_button => 'Purchase Now';
+
+  @override
+  String get ambassadorPromotionTitle =>
+      '[ZH_HANT] Congratulations! You\'re now an Ambassador! (Chinese Traditional)';
+
+  @override
+  String ambassadorPromotionBody(String tier) {
+    return '[ZH_HANT] Welcome to the $tier tier! Start sharing your referral link to earn rewards. (Chinese Traditional)';
+  }
+
+  @override
+  String get tierUpgradeTitle =>
+      '[ZH_HANT] Tier Upgrade! 🎉 (Chinese Traditional)';
+
+  @override
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
+    return '[ZH_HANT] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Chinese Traditional)';
+  }
+
+  @override
+  String get monthlyReminderTitle =>
+      '[ZH_HANT] Monthly Goal Reminder (Chinese Traditional)';
+
+  @override
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
+    return '[ZH_HANT] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Chinese Traditional)';
+  }
+
+  @override
+  String get performanceWarningTitle =>
+      '[ZH_HANT] Ambassador Performance Alert (Chinese Traditional)';
+
+  @override
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
+    return '[ZH_HANT] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Chinese Traditional)';
+  }
+
+  @override
+  String get ambassadorDemotionTitle =>
+      '[ZH_HANT] Ambassador Status Update (Chinese Traditional)';
+
+  @override
+  String ambassadorDemotionBody(String reason) {
+    return '[ZH_HANT] Your ambassador status has been temporarily suspended due to: $reason. You can regain your status by meeting the requirements again. (Chinese Traditional)';
+  }
+
+  @override
+  String get referralSuccessTitle =>
+      '[ZH_HANT] New Referral! 🎉 (Chinese Traditional)';
+
+  @override
+  String referralSuccessBody(String referredUserName, String totalReferrals) {
+    return '[ZH_HANT] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Chinese Traditional)';
+  }
 }

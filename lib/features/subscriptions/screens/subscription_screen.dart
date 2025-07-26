@@ -455,7 +455,6 @@ class SubscriptionScreen extends ConsumerWidget {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Failed to subscribe: $e')),
         );
-      }
     }
   }
 
