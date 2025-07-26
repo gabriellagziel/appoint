@@ -1,7 +1,11 @@
+import 'dart:convert';
+
+import 'package:appoint/models/notification_payload.dart';
+import 'package:appoint/providers/auth_provider.dart';
+import 'package:appoint/services/api_client.dart';
+import 'package:appoint/services/auth_service.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/services/api/api_client.dart';
-import 'package:appoint/services/auth_service.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:io' show Platform;
 
@@ -173,7 +177,4 @@ final fcmTokenProvider = StateNotifierProvider<FCMTokenProvider, FCMTokenState>(
 });
 
 /// Provider for API Client
-final apiClientProvider = Provider<ApiClient>((ref) => ApiClient.instance);
-
-/// Provider for Auth Service
-final authServiceProvider = Provider<AuthService>((ref) => AuthService()); 
+final apiClientProvider = Provider<ApiClient>((ref) => ApiClient.instance); 
