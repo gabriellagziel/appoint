@@ -4,7 +4,7 @@ import 'package:appoint/l10n/app_localizations.dart';
 import 'package:appoint/utils/admin_localizations.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/providers/admin_provider.dart';
-import 'package:appoint/services/broadcast_service.dart';
+import 'package:appoint/services/broadcast_service.dart' hide adminBroadcastServiceProvider;
 import 'package:appoint/infra/firebase_storage_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
