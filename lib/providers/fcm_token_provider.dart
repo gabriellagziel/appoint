@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:appoint/models/notification_payload.dart';
 import 'package:appoint/providers/auth_provider.dart';
-import 'package:appoint/services/api_client.dart';
+import 'package:appoint/services/api/api_client.dart';
 import 'package:appoint/services/auth_service.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
