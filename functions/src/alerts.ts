@@ -1,4 +1,4 @@
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v2';
 import * as admin from 'firebase-admin';
 import fetch from 'node-fetch';
 
@@ -20,7 +20,7 @@ function sendAlert(message: string) {
   console.log('ALERT:', message);
 }
 
-export const hourlyAlerts = functions.pubsub.schedule('every 60 minutes').onRun(async () => {
+export const hourlyAlerts = functions.scheduler.onSchedule('every 60 minutes', async (event) => {
   const now = admin.firestore.Timestamp.now();
 
   // Quota near limit
