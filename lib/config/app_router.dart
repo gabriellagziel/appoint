@@ -159,10 +159,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         path: '/ambassador-dashboard',
         name: 'ambassadorDashboard',
         builder: (context, final state) =>
-            AmbassadorDashboardScreen(
-              notificationService: NotificationService(),
-              branchService: BranchService(),
-            ),
+            const AmbassadorDashboardScreen(),
       ),
       GoRoute(
         path: '/ambassador-onboarding',

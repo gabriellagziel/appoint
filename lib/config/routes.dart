@@ -21,6 +21,7 @@ import 'package:appoint/features/family/widgets/invitation_modal.dart';
 import 'package:appoint/features/family_support/screens/family_support_screen.dart';
 import 'package:appoint/features/invite/invite_detail_screen.dart';
 import 'package:appoint/features/invite/invite_list_screen.dart';
+import 'package:appoint/models/family_link.dart';
 import 'package:appoint/features/personal_app/ui/content_detail_screen.dart';
 import 'package:appoint/features/personal_app/ui/edit_profile_screen.dart';
 import 'package:appoint/features/personal_app/ui/notifications_screen.dart';
