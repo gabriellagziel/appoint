@@ -170,7 +170,7 @@ class AppRouter {
           settings: settings,
         );
       case '/family/permissions':
-        final familyLink = settings.arguments as dynamic;
+        final familyLink = settings.arguments as FamilyLink;
         return MaterialPageRoute(
           builder: (_) => PermissionsScreen(familyLink: familyLink),
           settings: settings,
