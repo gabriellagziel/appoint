@@ -78,7 +78,7 @@ class UsageMonitorService {
         .collection('weekly_usage')
         .doc(weekKey)
         .snapshots()
-        .map((doc) => doc.exists ? doc.data()?['count'] ?? 0 : 0);
+        .map((doc) => doc.exists ? (doc.data()?['count'] as int?) ?? 0 : 0);
   }
 
   /// Resets weekly count if a new week has started
