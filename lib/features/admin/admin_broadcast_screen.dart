@@ -55,7 +55,9 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         actions: [
           IconButton(
             icon: const Icon(Icons.add),
-            onPressed: () => _showComposeDialog(context, l10n, theme),
+            onPressed: l10n != null 
+                ? () => _showComposeDialog(context, l10n!, theme)
+                : null,
           ),
         ],
       ),
@@ -148,7 +150,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
     if (messages.isEmpty) {
       return Center(
-        child: Text(l10n.noBroadcastMessages),
+        child: Text(l10n?.noBroadcastMessages ?? 'No broadcast messages'),
       );
     }
 
@@ -177,33 +179,33 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n.content(message.content),
+                  l10n?.content(message.content) ?? 'Content: ${message.content}',
                   maxLines: 3,
                   overflow: TextOverflow.ellipsis,
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n.type(message.type.toString()),
+                  l10n?.type(message.type.toString()) ?? 'Type: ${message.type}',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 if (message.actualRecipients != null)
                   Text(
-                    l10n.recipients(message.actualRecipients!),
+                    l10n?.recipients(message.actualRecipients!) ?? 'Recipients: ${message.actualRecipients}',
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 if (message.openedCount != null)
                   Text(
-                    l10n.opened(message.openedCount!),
+                    l10n?.opened(message.openedCount!) ?? 'Opened: ${message.openedCount}',
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n.created(message.createdAt),
+                  l10n?.created(message.createdAt) ?? 'Created: ${message.createdAt}',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 if (message.scheduledFor != null)
                   Text(
-                    l10n.scheduled(message.scheduledFor!),
+                    l10n?.scheduled(message.scheduledFor!) ?? 'Scheduled: ${message.scheduledFor}',
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 const SizedBox(height: 8),
@@ -213,11 +215,11 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                     if (message.status == BroadcastMessageStatus.pending)
                       TextButton(
                         onPressed: () => _sendMessage(message.id),
-                        child: Text(l10n.sendNow),
+                        child: Text(l10n?.sendNow ?? 'Send Now'),
                       ),
                     TextButton(
                       onPressed: () => _showMessageDetails(message),
-                      child: Text(l10n.details),
+                      child: Text(l10n?.details ?? 'Details'),
                     ),
                   ],
                 ),
