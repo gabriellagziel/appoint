@@ -1,4 +1,4 @@
-import * as functions from 'firebase-functions';
+import { scheduler, firestore, https } from 'firebase-functions/v2';
 import * as admin from 'firebase-admin';
 import { 
   sendPromotionNotification, 
@@ -46,10 +46,12 @@ export interface AmbassadorReward {
 }
 
 // Scheduled function: Daily ambassador eligibility check
-export const dailyAmbassadorEligibilityCheck = functions.pubsub
-  .schedule('0 2 * * *') // Run at 2 AM daily
-  .timeZone('UTC')
-  .onRun(async (context) => {
+export const dailyAmbassadorEligibilityCheck = scheduler.onSchedule(
+  {
+    schedule: '0 2 * * *', // Run at 2 AM daily
+    timeZone: 'UTC'
+  },
+  async (event) => {
     console.log('Starting daily ambassador eligibility check...');
     
     try {
@@ -100,10 +102,12 @@ export const dailyAmbassadorEligibilityCheck = functions.pubsub
   });
 
 // Scheduled function: Monthly ambassador performance review
-export const monthlyAmbassadorReview = functions.pubsub
-  .schedule('0 3 1 * *') // Run at 3 AM on the 1st of every month
-  .timeZone('UTC')
-  .onRun(async (context) => {
+export const monthlyAmbassadorReview = scheduler.onSchedule(
+  {
+    schedule: '0 3 1 * *', // Run at 3 AM on the 1st of every month
+    timeZone: 'UTC'
+  },
+  async (event) => {
     console.log('Starting monthly ambassador review...');
     
     try {
@@ -173,12 +177,17 @@ export const monthlyAmbassadorReview = functions.pubsub
   });
 
 // Firestore trigger: User referral tracking
-export const trackUserReferral = functions.firestore
-  .document('users/{userId}')
-  .onCreate(async (snap, context) => {
+export const trackUserReferral = firestore.onDocumentCreated(
+  'users/{userId}',
+  async (event) => {
     try {
-      const userData = snap.data();
-      const newUserId = context.params.userId;
+      const userData = event.data?.data();
+      if (!userData) {
+        console.log('No user data found');
+        return null;
+      }
+      
+      const newUserId = event.params.userId;
       
       // Check if user was referred by an ambassador
       const referralCode = userData.referralCode;
@@ -207,13 +216,13 @@ export const trackUserReferral = functions.firestore
   });
 
 // HTTPS callable: Manual ambassador promotion check
-export const checkAmbassadorEligibility = functions.https.onCall(async (data, context) => {
+export const checkAmbassadorEligibility = https.onCall(async (request) => {
   // Verify authentication
-  if (!context.auth) {
-    throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
+  if (!request.auth) {
+    throw new https.HttpsError('unauthenticated', 'User must be authenticated');
   }
 
-  const userId = data.userId || context.auth.uid;
+  const userId = request.data.userId || request.auth.uid;
   
   try {
     const referralCount = await getUserReferralCount(userId);
@@ -224,9 +233,9 @@ export const checkAmbassadorEligibility = functions.https.onCall(async (data, co
       const userDoc = await db.collection('users').doc(userId).get();
       const userData = userDoc.data();
       
-      canPromote = userData && 
+      canPromote = !!(userData && 
                    userData.isAdult === true && 
-                   userData.ambassadorStatus !== 'approved';
+                   userData.ambassadorStatus !== 'approved');
     }
 
     return {
@@ -238,24 +247,24 @@ export const checkAmbassadorEligibility = functions.https.onCall(async (data, co
     
   } catch (error) {
     console.error('Error checking ambassador eligibility:', error);
-    throw new functions.https.HttpsError('internal', 'Failed to check eligibility');
+    throw new https.HttpsError('internal', 'Failed to check eligibility');
   }
 });
 
 // HTTPS callable: Get ambassador dashboard data
-export const getAmbassadorDashboard = functions.https.onCall(async (data, context) => {
+export const getAmbassadorDashboard = https.onCall(async (request) => {
   // Verify authentication
-  if (!context.auth) {
-    throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
+  if (!request.auth) {
+    throw new https.HttpsError('unauthenticated', 'User must be authenticated');
   }
 
-  const userId = context.auth.uid;
+  const userId = request.auth.uid;
   
   try {
     // Get ambassador profile
     const profileDoc = await db.collection('ambassador_profiles').doc(userId).get();
     if (!profileDoc.exists) {
-      throw new functions.https.HttpsError('not-found', 'Ambassador profile not found');
+      throw new https.HttpsError('not-found', 'Ambassador profile not found');
     }
 
     const profile = profileDoc.data() as AmbassadorProfile;
@@ -293,7 +302,7 @@ export const getAmbassadorDashboard = functions.https.onCall(async (data, contex
     
   } catch (error) {
     console.error('Error getting ambassador dashboard:', error);
-    throw new functions.https.HttpsError('internal', 'Failed to get dashboard data');
+    throw new https.HttpsError('internal', 'Failed to get dashboard data');
   }
 });
 
