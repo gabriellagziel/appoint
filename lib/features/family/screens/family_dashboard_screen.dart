@@ -285,7 +285,6 @@ class FamilyDashboardScreen extends ConsumerWidget {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text(l10n.failedToResendOtp(e))),
         );
-      }
     }
   }
 
@@ -494,12 +493,12 @@ class FamilyDashboardScreen extends ConsumerWidget {
                       backgroundColor: Colors.green,
                     ),
                   );
+                  
+                  // Refresh the family links
+                  ref
+                      .read(familyLinksProvider(link.parentId).notifier)
+                      .loadLinks();
                 }
-
-                // Refresh the family links
-                ref
-                    .read(familyLinksProvider(link.parentId).notifier)
-                    .loadLinks();
               } catch (e) {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
