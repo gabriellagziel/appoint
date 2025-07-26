@@ -323,6 +323,7 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
         );
       }
     } catch (e) {
+      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
