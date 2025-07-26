@@ -85,9 +85,6 @@ class AppLocalizationsSk extends AppLocalizations {
   String get revokeAccess => '[SK] Odvolať prístup';
 
   @override
-  String get saveGroupForRecognition => '[SK] [SK] Save Group for Recognition';
-
-  @override
   String get playtimeLiveScheduled => '[SK] Živá relácia naplánovaná';
 
   @override
@@ -257,9 +254,6 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get upcomingSessions => '[SK] Nadchádzajúce relácie';
-
-  @override
-  String get enterGroupName => '[SK] [SK] Enter group name';
 
   @override
   String get confirm => '[SK] Potvrdiť';
@@ -495,9 +489,6 @@ class AppLocalizationsSk extends AppLocalizations {
   String get createGame => '[SK] [SK] Create Game';
 
   @override
-  String get groupNameOptional => '[SK] [SK] Group Name (Optional)';
-
-  @override
   String get playtimeNoSessions => '[SK] [SK] No playtime sessions found.';
 
   @override
@@ -508,9 +499,6 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get close => '[SK] [SK] Close';
-
-  @override
-  String get knownGroupDetected => '[SK] [SK] Known group detected';
 
   @override
   String get back => '[SK] [SK] Back';
@@ -2524,4 +2512,152 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get purchase_now_button => 'Purchase Now';
+
+  @override
+  String get welcomeAmbassador => 'Welcome, Ambassador!';
+
+  @override
+  String get activeStatus => 'Active';
+
+  @override
+  String get totalReferrals => 'Total Referrals';
+
+  @override
+  String get thisMonth => 'This Month';
+
+  @override
+  String get activeRewards => 'Active Rewards';
+
+  @override
+  String get nextTierProgress => 'Next Tier Progress';
+
+  @override
+  String get progressToPremium => 'Progress to Premium';
+
+  @override
+  String get remaining => 'remaining';
+
+  @override
+  String get monthlyGoal => 'Monthly Goal';
+
+  @override
+  String get onTrack => 'On Track';
+
+  @override
+  String get needsAttention => 'Needs Attention';
+
+  @override
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
+
+  @override
+  String get viewRewards => 'View Rewards';
+
+  @override
+  String get referralStatistics => 'Referral Statistics';
+
+  @override
+  String get activeReferrals => 'Active Referrals';
+
+  @override
+  String get conversionRate => 'Conversion Rate';
+
+  @override
+  String get recentReferrals => 'Recent Referrals';
+
+  @override
+  String get tierBenefits => 'Tier Benefits';
+
+  @override
+  String get yourReferralQRCode => 'Your Referral QR Code';
+
+  @override
+  String get yourReferralLink => 'Your Referral Link';
+
+  @override
+  String get shareYourLink => 'Share Your Link';
+
+  @override
+  String get shareViaMessage => 'Message';
+
+  @override
+  String get shareViaEmail => 'Email';
+
+  @override
+  String get shareMore => 'More Options';
+
+  @override
+  String get becomeAmbassador => 'Become an Ambassador';
+
+  @override
+  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
+
+  @override
+  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
+
+  @override
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+
+  @override
+  String get ambassadorPromotionTitle =>
+      '[SK] Congratulations! You\'re now an Ambassador! (Slovak)';
+
+  @override
+  String ambassadorPromotionBody(String tier) {
+    return '[SK] Welcome to the $tier tier! Start sharing your referral link to earn rewards. (Slovak)';
+  }
+
+  @override
+  String get tierUpgradeTitle => '[SK] Tier Upgrade! 🎉 (Slovak)';
+
+  @override
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
+    return '[SK] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Slovak)';
+  }
+
+  @override
+  String get monthlyReminderTitle => '[SK] Monthly Goal Reminder (Slovak)';
+
+  @override
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
+    return '[SK] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Slovak)';
+  }
+
+  @override
+  String get performanceWarningTitle =>
+      '[SK] Ambassador Performance Alert (Slovak)';
+
+  @override
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
+    return '[SK] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Slovak)';
+  }
+
+  @override
+  String get ambassadorDemotionTitle =>
+      '[SK] Ambassador Status Update (Slovak)';
+
+  @override
+  String ambassadorDemotionBody(String reason) {
+    return '[SK] Your ambassador status has been temporarily suspended due to: $reason. You can regain your status by meeting the requirements again. (Slovak)';
+  }
+
+  @override
+  String get referralSuccessTitle => '[SK] New Referral! 🎉 (Slovak)';
+
+  @override
+  String referralSuccessBody(String referredUserName, String totalReferrals) {
+    return '[SK] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Slovak)';
+  }
 }
