@@ -234,7 +234,7 @@ export const checkAmbassadorEligibility = functions.https.onCall(async (request)
       
       canPromote = userData && 
                    Boolean(userData.isAdult) === true && 
-                   userData.ambassadorStatus !== 'approved';
+                   userData.ambassadorStatus !== 'approved' || false;
     }
 
     return {
