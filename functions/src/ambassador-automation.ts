@@ -1,4 +1,4 @@
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v2';
 import * as admin from 'firebase-admin';
 import { 
   sendPromotionNotification, 
@@ -46,10 +46,10 @@ export interface AmbassadorReward {
 }
 
 // Scheduled function: Daily ambassador eligibility check
-export const dailyAmbassadorEligibilityCheck = functions.pubsub
-  .schedule('0 2 * * *') // Run at 2 AM daily
-  .timeZone('UTC')
-  .onRun(async (context) => {
+export const dailyAmbassadorEligibilityCheck = functions.scheduler.onSchedule({
+  schedule: '0 2 * * *', // Run at 2 AM daily
+  timeZone: 'UTC'
+}, async (context) => {
     console.log('Starting daily ambassador eligibility check...');
     
     try {
@@ -100,10 +100,10 @@ export const dailyAmbassadorEligibilityCheck = functions.pubsub
   });
 
 // Scheduled function: Monthly ambassador performance review
-export const monthlyAmbassadorReview = functions.pubsub
-  .schedule('0 3 1 * *') // Run at 3 AM on the 1st of every month
-  .timeZone('UTC')
-  .onRun(async (context) => {
+export const monthlyAmbassadorReview = functions.scheduler.onSchedule({
+  schedule: '0 3 1 * *', // Run at 3 AM on the 1st of every month
+  timeZone: 'UTC'
+}, async (context) => {
     console.log('Starting monthly ambassador review...');
     
     try {
@@ -173,9 +173,17 @@ export const monthlyAmbassadorReview = functions.pubsub
   });
 
 // Firestore trigger: User referral tracking
-export const trackUserReferral = functions.firestore
-  .document('users/{userId}')
-  .onCreate(async (snap, context) => {
+export const trackUserReferral = functions.firestore.onDocumentCreated(
+  'users/{userId}',
+  async (event) => {
+    const snap = event.data;
+    const context = event;
+    
+    if (!snap) {
+      console.log('No data in document snapshot');
+      return null;
+    }
+    
     try {
       const userData = snap.data();
       const newUserId = context.params.userId;
@@ -207,13 +215,13 @@ export const trackUserReferral = functions.firestore
   });
 
 // HTTPS callable: Manual ambassador promotion check
-export const checkAmbassadorEligibility = functions.https.onCall(async (data, context) => {
+export const checkAmbassadorEligibility = functions.https.onCall(async (request) => {
   // Verify authentication
-  if (!context.auth) {
+  if (!request.auth) {
     throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
   }
 
-  const userId = data.userId || context.auth.uid;
+  const userId = request.data.userId || request.auth.uid;
   
   try {
     const referralCount = await getUserReferralCount(userId);
@@ -225,7 +233,7 @@ export const checkAmbassadorEligibility = functions.https.onCall(async (data, co
       const userData = userDoc.data();
       
       canPromote = userData && 
-                   userData.isAdult === true && 
+                   Boolean(userData.isAdult) === true && 
                    userData.ambassadorStatus !== 'approved';
     }
 
@@ -243,13 +251,13 @@ export const checkAmbassadorEligibility = functions.https.onCall(async (data, co
 });
 
 // HTTPS callable: Get ambassador dashboard data
-export const getAmbassadorDashboard = functions.https.onCall(async (data, context) => {
+export const getAmbassadorDashboard = functions.https.onCall(async (request) => {
   // Verify authentication
-  if (!context.auth) {
+  if (!request.auth) {
     throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
   }
 
-  const userId = context.auth.uid;
+  const userId = request.auth.uid;
   
   try {
     // Get ambassador profile
