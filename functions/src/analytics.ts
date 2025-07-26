@@ -1,4 +1,5 @@
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v2';
+import type { CallableRequest } from 'firebase-functions/v2/https';
 import * as admin from 'firebase-admin';
 import { Parser } from 'json2csv';
 import archiver from 'archiver';
@@ -18,7 +19,7 @@ const BUSINESS_COLLECTION = 'business_accounts';
 /**
  * Helper to require authenticated business via API key in header.
  */
-async function requireBusiness(req: functions.Request): Promise<{ id: string; data: any }> {
+async function requireBusiness(req: any): Promise<{ id: string; data: any }> {
   const apiKey = (req.headers['x-api-key'] || req.headers['api-key']) as string | undefined;
   if (!apiKey) {
     throw new functions.https.HttpsError('unauthenticated', 'API key missing');
