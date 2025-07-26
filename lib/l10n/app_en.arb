@@ -2905,5 +2905,215 @@
         "type": "String"
       }
     }
+  },
+  "title": "Title",
+  "@title": {
+    "description": "Title label"
+  },
+  "pleaseEnterTitle": "Please enter a title",
+  "@pleaseEnterTitle": {
+    "description": "Validation message for title field"
+  },
+  "messageType": "Message Type",
+  "@messageType": {
+    "description": "Message type field label"
+  },
+  "pleaseEnterContent": "Please enter content",
+  "@pleaseEnterContent": {
+    "description": "Validation message for content field"
+  },
+  "imageSelected": "Image selected",
+  "@imageSelected": {
+    "description": "Image selected confirmation"
+  },
+  "videoSelected": "Video selected",
+  "@videoSelected": {
+    "description": "Video selected confirmation"
+  },
+  "externalLink": "External Link",
+  "@externalLink": {
+    "description": "External link field label"
+  },
+  "pleaseEnterLink": "Please enter a link",
+  "@pleaseEnterLink": {
+    "description": "Validation message for link field"
+  },
+  "estimatedRecipients": "Estimated recipients",
+  "@estimatedRecipients": {
+    "description": "Estimated recipients count label"
+  },
+  "countries": "Countries",
+  "@countries": {
+    "description": "Countries filter label"
+  },
+  "cities": "Cities",
+  "@cities": {
+    "description": "Cities filter label"
+  },
+  "subscriptionTiers": "Subscription Tiers",
+  "@subscriptionTiers": {
+    "description": "Subscription tiers filter label"
+  },
+  "userRoles": "User Roles",
+  "@userRoles": {
+    "description": "User roles filter label"
+  },
+  "errorEstimatingRecipients": "Error estimating recipients",
+  "@errorEstimatingRecipients": {
+    "description": "Error message for recipient estimation"
+  },
+  "errorPickingImage": "Error picking image",
+  "@errorPickingImage": {
+    "description": "Error message for image selection"
+  },
+  "errorPickingVideo": "Error picking video",
+  "@errorPickingVideo": {
+    "description": "Error message for video selection"
+  },
+  "noPermissionForBroadcast": "No permission for broadcast",
+  "@noPermissionForBroadcast": {
+    "description": "No permission message"
+  },
+  "userNotAuthenticated": "User not authenticated",
+  "@userNotAuthenticated": {
+    "description": "User not authenticated error"
+  },
+  "failedToUploadImage": "Failed to upload image",
+  "@failedToUploadImage": {
+    "description": "Image upload failure message"
+  },
+  "failedToUploadVideo": "Failed to upload video",
+  "@failedToUploadVideo": {
+    "description": "Video upload failure message"
+  },
+  "messageSavedSuccessfully": "Message saved successfully",
+  "@messageSavedSuccessfully": {
+    "description": "Message save success confirmation"
+  },
+  "messageSentSuccessfully": "Message sent successfully",
+  "@messageSentSuccessfully": {
+    "description": "Message send success confirmation"
+  },
+  "sendNow": "Send Now",
+  "@sendNow": {
+    "description": "Send now button"
+  },
+  "details": "Details",
+  "@details": {
+    "description": "Details button"
+  },
+  "image": "Image",
+  "@image": {
+    "description": "Image label"
+  },
+  "video": "Video",
+  "@video": {
+    "description": "Video label"
+  },
+  "pollOptions": "Poll Options",
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "continue1": "Continue",
+  "@continue1": {
+    "description": "Continue button"
+  },
+  "getStarted": "Get Started",
+  "@getStarted": {
+    "description": "Get started button"
+  },
+  "noBroadcastMessages": "No broadcast messages",
+  "@noBroadcastMessages": {
+    "description": "No broadcast messages message"
+  },
+  "content": "Content: {content}",
+  "@content": {
+    "description": "Content display with parameter",
+    "placeholders": {
+      "content": {
+        "type": "String"
+      }
+    }
+  },
+  "type": "Type: {type}",
+  "@type": {
+    "description": "Type display with parameter",
+    "placeholders": {
+      "type": {
+        "type": "String"
+      }
+    }
+  },
+  "recipients": "Recipients: {recipients}",
+  "@recipients": {
+    "description": "Recipients display with parameter",
+    "placeholders": {
+      "recipients": {
+        "type": "String"
+      }
+    }
+  },
+  "clicked": "Clicked: {clicked}",
+  "@clicked": {
+    "description": "Clicked count display with parameter",
+    "placeholders": {
+      "clicked": {
+        "type": "String"
+      }
+    }
+  },
+  "created": "Created: {created}",
+  "@created": {
+    "description": "Created date display with parameter",
+    "placeholders": {
+      "created": {
+        "type": "String"
+      }
+    }
+  },
+  "scheduled": "Scheduled: {scheduled}",
+  "@scheduled": {
+    "description": "Scheduled date display with parameter",
+    "placeholders": {
+      "scheduled": {
+        "type": "String"
+      }
+    }
+  },
+  "link": "Link: {link}",
+  "@link": {
+    "description": "Link display with parameter",
+    "placeholders": {
+      "link": {
+        "type": "String"
+      }
+    }
+  },
+  "status": "Status: {status}",
+  "@status": {
+    "description": "Status display with parameter",
+    "placeholders": {
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "errorSavingMessage": "Error saving message: {error}",
+  "@errorSavingMessage": {
+    "description": "Error saving message with parameter",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "errorSendingMessage": "Error sending message: {error}",
+  "@errorSendingMessage": {
+    "description": "Error sending message with parameter",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
   }
 }
