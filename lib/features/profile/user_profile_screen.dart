@@ -85,7 +85,6 @@ class UserProfileScreen extends ConsumerWidget {
         );
       }
     }
-    }
   }
 
   @override
