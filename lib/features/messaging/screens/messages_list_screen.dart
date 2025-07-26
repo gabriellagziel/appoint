@@ -1,8 +1,11 @@
 import 'package:appoint/features/messaging/models/message.dart';
+import 'package:appoint/features/messaging/models/chat.dart';
 import 'package:appoint/features/messaging/services/messaging_service.dart';
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+final messagingServiceProvider = Provider<MessagingService>((ref) => MessagingService());
 
 final userChatsProvider = StreamProvider<List<Chat>>((ref) {
   final service = ref.read(messagingServiceProvider);
