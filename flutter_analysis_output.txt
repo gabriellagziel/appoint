@@ -11785,10 +11785,6 @@ warning • The type argument(s) of the function 'showDialog' can't be inferred 
    info • Missing documentation for a public member • lib/features/family_support/screens/family_support_screen.dart:5:7 • public_member_api_docs
    info • Missing documentation for a public member • lib/features/family_support/screens/family_support_screen.dart:6:9 • public_member_api_docs
 warning • The declaration '<unnamed>' isn't referenced • lib/features/family_support/screens/family_support_screen.dart:13:7 • unused_element
-  error • Expected an identifier • lib/features/family_support/screens/family_support_screen.dart:38:25 • missing_identifier
-  error • Expected to find ')' • lib/features/family_support/screens/family_support_screen.dart:38:25 • expected_token
-  error • Expected an identifier • lib/features/family_support/screens/family_support_screen.dart:46:25 • missing_identifier
-  error • Expected to find ')' • lib/features/family_support/screens/family_support_screen.dart:46:25 • expected_token
    info • Parameters should not be marked as 'final' • lib/features/family_support/screens/family_support_screen.dart:82:26 • avoid_final_parameters
    info • Catch clause should use 'on' to specify the type of exception being caught • lib/features/family_support/screens/family_support_screen.dart:104:7 • avoid_catches_without_on_clauses
    info • Don't use 'BuildContext's across async gaps • lib/features/family_support/screens/family_support_screen.dart:105:30 • use_build_context_synchronously
@@ -12159,8 +12155,6 @@ warning • The type of e can't be inferred; a type must be explicitly provided 
    info • Unnecessary use of a block function body • lib/features/onboarding/onboarding_screen.dart:177:46 • prefer_expression_function_bodies
    info • Unnecessary use of a block function body • lib/features/onboarding/onboarding_screen.dart:218:65 • prefer_expression_function_bodies
    info • Unnecessary use of a block function body • lib/features/onboarding/onboarding_screen.dart:282:50 • prefer_expression_function_bodies
-  error • Expected an identifier • lib/features/onboarding/onboarding_screen.dart:321:21 • missing_identifier
-  error • Expected to find ')' • lib/features/onboarding/onboarding_screen.dart:321:21 • expected_token
    info • Missing documentation for a public member • lib/features/onboarding/onboarding_screen.dart:337:7 • public_member_api_docs
    info • Missing documentation for a public member • lib/features/onboarding/onboarding_screen.dart:338:16 • public_member_api_docs
    info • Missing documentation for a public member • lib/features/onboarding/onboarding_screen.dart:339:16 • public_member_api_docs
@@ -12286,12 +12280,6 @@ warning • The declaration '_buildNavigationButtons' isn't referenced • lib/f
    info • The local variable '_errorMessage' starts with an underscore • lib/features/payments/payment_screen.dart:34:13 • no_leading_underscores_for_local_identifiers
 warning • The value of the local variable '_errorMessage' isn't used • lib/features/payments/payment_screen.dart:34:13 • unused_local_variable
 warning • The type argument(s) of the function 'showDialog' can't be inferred • lib/features/payments/payment_screen.dart:50:5 • inference_failure_on_function_invocation
-  error • Local variable '_paymentStatus' can't be referenced before it is declared • lib/features/payments/payment_screen.dart:94:23 • referenced_before_declaration
-  error • The final variable '_paymentStatus' can't be read because it's potentially unassigned at this point • lib/features/payments/payment_screen.dart:94:23 • read_potentially_unassigned_final
-  error • Expected to find ';' • lib/features/payments/payment_screen.dart:94:66 • expected_token
-  error • Expected an identifier • lib/features/payments/payment_screen.dart:95:9 • missing_identifier
-   info • The local variable '_paymentStatus' starts with an underscore • lib/features/payments/payment_screen.dart:95:15 • no_leading_underscores_for_local_identifiers
-  error • Expected an identifier • lib/features/payments/payment_screen.dart:95:32 • missing_identifier
    info • Missing documentation for a public member • lib/features/payments/subscription_management_screen.dart:5:7 • public_member_api_docs
    info • Missing documentation for a public member • lib/features/payments/subscription_management_screen.dart:6:9 • public_member_api_docs
    info • The private field _stripeService could be 'final' • lib/features/payments/subscription_management_screen.dart:15:17 • prefer_final_fields
@@ -12384,9 +12372,7 @@ warning • The type argument(s) of the constructor 'MaterialPageRoute' can't be
    info • Unnecessary use of a block function body • lib/features/personal_app/ui/settings_screen.dart:9:38 • prefer_expression_function_bodies
    info • Use 'const' with the constructor to improve performance • lib/features/personal_app/ui/settings_screen.dart:12:16 • prefer_const_constructors
    info • Use 'const' literals as arguments to constructors of '@immutable' classes • lib/features/personal_app/ui/settings_screen.dart:13:21 • prefer_const_literals_to_create_immutables
-  error • Expected to find ',' • lib/features/personal_app/ui/settings_screen.dart:14:35 • expected_token
-   info • The value of the argument is redundant because it matches the default value • lib/features/personal_app/ui/settings_screen.dart:27:36 • avoid_redundant_argument_values
-  error • Expected to find ',' • lib/features/personal_app/ui/settings_screen.dart:27:39 • expected_token
+   info • The value of the argument is redundant because it matches the default value • lib/features/personal_app/ui/settings_screen.dart:27:37 • avoid_redundant_argument_values
    info • Missing documentation for a public member • lib/features/personal_scheduler/screens/personal_scheduler_screen.dart:8:7 • public_member_api_docs
    info • Missing documentation for a public member • lib/features/personal_scheduler/screens/personal_scheduler_screen.dart:9:9 • public_member_api_docs
    info • The line length exceeds the 80-character limit • lib/features/personal_scheduler/screens/personal_scheduler_screen.dart:52:81 • lines_longer_than_80_chars
@@ -12558,7 +12544,6 @@ warning • The value of the local variable '_selectedGame' isn't used • lib/f
    info • The line length exceeds the 80-character limit • lib/features/playtime/screens/playtime_screen.dart:9:81 • lines_longer_than_80_chars
    info • Missing documentation for a public member • lib/features/playtime/screens/playtime_screen.dart:11:7 • public_member_api_docs
    info • Missing documentation for a public member • lib/features/playtime/screens/playtime_screen.dart:12:9 • public_member_api_docs
-warning • The declaration '<unnamed>' isn't referenced • lib/features/playtime/screens/playtime_screen.dart:18:7 • unused_element
   error • The getter 'playtime' isn't defined for the type 'AppLocalizations' • lib/features/playtime/screens/playtime_screen.dart:29:26 • undefined_getter
    info • Unnecessary use of a block function body • lib/features/playtime/screens/playtime_screen.dart:79:76 • prefer_expression_function_bodies
 warning • The left operand can't be null, so the right operand is never executed • lib/features/playtime/screens/playtime_screen.dart:116:49 • dead_null_aware_expression
@@ -12598,21 +12583,10 @@ warning • The value of the local variable '_errorMessage' isn't used • lib/f
   error • The method 'grantTicket' isn't defined for the type 'PlaytimeService' • lib/features/playtime/screens/playtime_screen.dart:372:29 • undefined_method
   error • The getter 'ticketEarned' isn't defined for the type 'AppLocalizations' • lib/features/playtime/screens/playtime_screen.dart:379:45 • undefined_getter
    info • Catch clause should use 'on' to specify the type of exception being caught • lib/features/playtime/screens/playtime_screen.dart:386:7 • avoid_catches_without_on_clauses
-   info • The local variable '_errorMessage' starts with an underscore • lib/features/playtime/screens/playtime_screen.dart:387:15 • no_leading_underscores_for_local_identifiers
-warning • The value of the local variable '_errorMessage' isn't used • lib/features/playtime/screens/playtime_screen.dart:387:15 • unused_local_variable
-  error • Expected to find ';' • lib/features/playtime/screens/playtime_screen.dart:388:7 • expected_token
-  error • Expected an identifier • lib/features/playtime/screens/playtime_screen.dart:388:8 • missing_identifier
-  error • Unexpected text ';' • lib/features/playtime/screens/playtime_screen.dart:388:8 • unexpected_token
-   info • Unnecessary empty statement • lib/features/playtime/screens/playtime_screen.dart:388:9 • empty_statements
-  error • The getter 'errorOccurred' isn't defined for the type 'AppLocalizations' • lib/features/playtime/screens/playtime_screen.dart:394:45 • undefined_getter
-   info • The line length exceeds the 80-character limit • lib/features/playtime/screens/playtime_screen.dart:394:81 • lines_longer_than_80_chars
-  error • Undefined name 'e' • lib/features/playtime/screens/playtime_screen.dart:394:84 • undefined_identifier
-   info • The expression has no effect and can be removed • lib/features/playtime/screens/playtime_screen.dart:394:86 • noop_primitive_operations
-  error • Expected a class member • lib/features/playtime/screens/playtime_screen.dart:401:7 • expected_class_member
-  error • Expected an identifier • lib/features/playtime/screens/playtime_screen.dart:401:15 • missing_identifier
-  error • Methods must have an explicit list of parameters • lib/features/playtime/screens/playtime_screen.dart:401:15 • missing_method_parameters
-  error • Expected a method, getter, setter or operator declaration • lib/features/playtime/screens/playtime_screen.dart:409:1 • expected_executable
-   info • Missing a newline at the end of the file • lib/features/playtime/screens/playtime_screen.dart:409:2 • eol_at_end_of_file
+  error • The getter 'errorOccurred' isn't defined for the type 'AppLocalizations' • lib/features/playtime/screens/playtime_screen.dart:391:45 • undefined_getter
+   info • The line length exceeds the 80-character limit • lib/features/playtime/screens/playtime_screen.dart:391:81 • lines_longer_than_80_chars
+   info • The expression has no effect and can be removed • lib/features/playtime/screens/playtime_screen.dart:391:86 • noop_primitive_operations
+   info • Missing a newline at the end of the file • lib/features/playtime/screens/playtime_screen.dart:406:2 • eol_at_end_of_file
    info • Missing documentation for a public member • lib/features/playtime/screens/playtime_virtual_screen.dart:11:7 • public_member_api_docs
    info • Missing documentation for a public member • lib/features/playtime/screens/playtime_virtual_screen.dart:13:9 • public_member_api_docs
    info • Missing documentation for a public member • lib/features/playtime/screens/playtime_virtual_screen.dart:14:23 • public_member_api_docs
@@ -12735,15 +12709,14 @@ warning • The type argument(s) of the function 'showDialog' can't be inferred 
    info • Missing a newline at the end of the file • lib/features/profile/enhanced_profile_screen.dart:607:2 • eol_at_end_of_file
    info • Missing documentation for a public member • lib/features/profile/ui/edit_profile_screen.dart:6:7 • public_member_api_docs
    info • Missing documentation for a public member • lib/features/profile/ui/edit_profile_screen.dart:7:9 • public_member_api_docs
+  error • Missing concrete implementation of 'abstract class State<T extends StatefulWidget> with Diagnosticable.build' • lib/features/profile/ui/edit_profile_screen.dart:13:7 • non_abstract_class_inherits_abstract_member
    info • The private field _nameController could be 'final' • lib/features/profile/ui/edit_profile_screen.dart:14:25 • prefer_final_fields
    info • The private field _bioController could be 'final' • lib/features/profile/ui/edit_profile_screen.dart:15:25 • prefer_final_fields
    info • The private field _locationController could be 'final' • lib/features/profile/ui/edit_profile_screen.dart:16:25 • prefer_final_fields
    info • Catch clause should use 'on' to specify the type of exception being caught • lib/features/profile/ui/edit_profile_screen.dart:30:7 • avoid_catches_without_on_clauses
-  error • Expected to find '}' • lib/features/profile/ui/edit_profile_screen.dart:35:3 • expected_token
+warning • The declaration 'build' isn't referenced • lib/features/profile/ui/edit_profile_screen.dart:38:10 • unused_element
    info • Missing documentation for a public member • lib/features/profile/user_profile_screen.dart:8:7 • public_member_api_docs
-  error • Missing concrete implementation of 'abstract class ConsumerWidget extends ConsumerStatefulWidget.build' • lib/features/profile/user_profile_screen.dart:8:7 • non_abstract_class_inherits_abstract_member
    info • Missing documentation for a public member • lib/features/profile/user_profile_screen.dart:9:9 • public_member_api_docs
-warning • The declaration '_showDeleteAccountDialog' isn't referenced • lib/features/profile/user_profile_screen.dart:11:8 • unused_element
 warning • The type argument(s) of the function 'showDialog' can't be inferred • lib/features/profile/user_profile_screen.dart:12:5 • inference_failure_on_function_invocation
    info • The line length exceeds the 80-character limit • lib/features/profile/user_profile_screen.dart:17:81 • lines_longer_than_80_chars
    info • Missing an 'await' for the 'Future' computed by this expression • lib/features/profile/user_profile_screen.dart:46:7 • unawaited_futures
@@ -12751,14 +12724,11 @@ warning • The type argument(s) of the function 'showDialog' can't be inferred 
    info • Missing an 'await' for the 'Future' computed by this expression • lib/features/profile/user_profile_screen.dart:71:31 • unawaited_futures
    info • Catch clause should use 'on' to specify the type of exception being caught • lib/features/profile/user_profile_screen.dart:76:7 • avoid_catches_without_on_clauses
    info • Don't use 'BuildContext's across async gaps • lib/features/profile/user_profile_screen.dart:77:20 • use_build_context_synchronously
-   info • Missing documentation for a public member • lib/features/profile/user_profile_screen.dart:92:10 • public_member_api_docs
-   info • Parameters should not be marked as 'final' • lib/features/profile/user_profile_screen.dart:92:38 • avoid_final_parameters
-  error • The function '_showDeleteAccountDialog' isn't defined • lib/features/profile/user_profile_screen.dart:136:42 • undefined_function
-   info • Parameters should not be marked as 'final' • lib/features/profile/user_profile_screen.dart:149:24 • avoid_final_parameters
-   info • Unnecessary use of multiple underscores • lib/features/profile/user_profile_screen.dart:149:30 • unnecessary_underscores
-   info • Parameters should not be marked as 'final' • lib/features/profile/user_profile_screen.dart:154:20 • avoid_final_parameters
-   info • Unnecessary use of multiple underscores • lib/features/profile/user_profile_screen.dart:154:26 • unnecessary_underscores
-  error • Expected a method, getter, setter or operator declaration • lib/features/profile/user_profile_screen.dart:159:1 • expected_executable
+   info • Parameters should not be marked as 'final' • lib/features/profile/user_profile_screen.dart:91:38 • avoid_final_parameters
+   info • Parameters should not be marked as 'final' • lib/features/profile/user_profile_screen.dart:148:24 • avoid_final_parameters
+   info • Unnecessary use of multiple underscores • lib/features/profile/user_profile_screen.dart:148:30 • unnecessary_underscores
+   info • Parameters should not be marked as 'final' • lib/features/profile/user_profile_screen.dart:153:20 • avoid_final_parameters
+   info • Unnecessary use of multiple underscores • lib/features/profile/user_profile_screen.dart:153:26 • unnecessary_underscores
    info • Missing documentation for a public member • lib/features/providers/selection_provider.dart:4:7 • public_member_api_docs
    info • Missing documentation for a public member • lib/features/providers/selection_provider.dart:5:7 • public_member_api_docs
    info • Missing documentation for a public member • lib/features/providers/selection_provider.dart:6:7 • public_member_api_docs
@@ -12947,8 +12917,7 @@ warning • The type argument(s) of the function 'showDialog' can't be inferred 
    info • Unnecessary duplication of receiver • lib/features/rewards/screens/rewards_screen.dart:611:9 • cascade_invocations
    info • Catch clause should use 'on' to specify the type of exception being caught • lib/features/rewards/screens/rewards_screen.dart:613:7 • avoid_catches_without_on_clauses
    info • Don't use 'BuildContext's across async gaps • lib/features/rewards/screens/rewards_screen.dart:614:30 • use_build_context_synchronously
-  error • Expected a method, getter, setter or operator declaration • lib/features/rewards/screens/rewards_screen.dart:620:1 • expected_executable
-   info • Missing a newline at the end of the file • lib/features/rewards/screens/rewards_screen.dart:620:2 • eol_at_end_of_file
+   info • Missing a newline at the end of the file • lib/features/rewards/screens/rewards_screen.dart:619:2 • eol_at_end_of_file
    info • Missing documentation for a public member • lib/features/rewards/services/rewards_service.dart:5:7 • public_member_api_docs
    info • Missing documentation for a public member • lib/features/rewards/services/rewards_service.dart:6:3 • public_member_api_docs
    info • The line length exceeds the 80-character limit • lib/features/rewards/services/rewards_service.dart:30:81 • lines_longer_than_80_chars
@@ -18706,10 +18675,6 @@ warning • The type argument(s) of the function 'call' can't be inferred • li
   error • A value of type 'dynamic' can't be returned from the method 'getWeeklyUsage' because it has a return type of 'Future<int>' • lib/services/usage_monitor.dart:63:16 • return_of_invalid_type
    info • Catch clause should use 'on' to specify the type of exception being caught • lib/services/usage_monitor.dart:66:7 • avoid_catches_without_on_clauses
    info • Don't invoke 'print' in production code • lib/services/usage_monitor.dart:67:7 • avoid_print
-  error • Conditions must have a static type of 'bool' • lib/services/usage_monitor.dart:81:36 • non_bool_condition
-warning • The left operand can't be null, so the right operand is never executed • lib/services/usage_monitor.dart:81:60 • dead_null_aware_expression
-  error • Expected an identifier • lib/services/usage_monitor.dart:81:65 • missing_identifier
-  error • Expected to find ':' • lib/services/usage_monitor.dart:81:65 • expected_token
 warning • The value of the local variable 'now' isn't used • lib/services/usage_monitor.dart:93:11 • unused_local_variable
    info • Unnecessary braces in a string interpolation • lib/services/usage_monitor.dart:97:13 • unnecessary_brace_in_string_interps
    info • The value of the argument is redundant because it matches the default value • lib/services/usage_monitor.dart:109:51 • avoid_redundant_argument_values
@@ -19890,3 +19855,4 @@ warning • The type argument(s) of the function 'showDialog' can't be inferred 
    info • Dependencies not sorted alphabetically • pubspec.yaml:17:3 • sort_pub_dependencies
    info • Dependencies not sorted alphabetically • pubspec.yaml:71:3 • sort_pub_dependencies
 
+19854 issues found. (ran in 11.1s)
