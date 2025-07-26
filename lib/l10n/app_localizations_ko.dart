@@ -77,7 +77,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get cancelInviteConfirmation => '[KO] 초대 확인 취소';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return '생성됨';
   }
 
@@ -137,7 +137,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get participants => '참가자';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return '수신자';
   }
 
@@ -177,7 +177,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return '콘텐츠';
   }
 
@@ -230,7 +230,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get removeChild => '[KO] 자녀 제거';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return '상태';
   }
 
@@ -280,7 +280,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get accessRevokedSuccessfully => '[KO] 접근이 성공적으로 취소되었습니다';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return '유형';
   }
 
@@ -412,7 +412,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get inviteDetail => '[KO] [KO] Invite Details';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return '[KO] [KO] Scheduled';
   }
 
@@ -425,7 +425,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get scheduling => '[KO] [KO] Scheduling';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '[KO] [KO] Error saving message';
   }
 
@@ -458,7 +458,7 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '[KO] [KO] Error sending message';
   }
 
@@ -514,12 +514,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get pollOptions => '[KO] [KO] Poll Options';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return '[KO] [KO] Clicked';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return '[KO] [KO] Link';
   }
 
@@ -2660,4 +2660,73 @@ class AppLocalizationsKo extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[KO] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Korean)';
   }
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get pleaseEnterTitle => 'Please enter a title';
+
+  @override
+  String get messageType => 'Message Type';
+
+  @override
+  String get pleaseEnterContent => 'Please enter content';
+
+  @override
+  String get imageSelected => 'Image selected';
+
+  @override
+  String get videoSelected => 'Video selected';
+
+  @override
+  String get externalLink => 'External Link';
+
+  @override
+  String get pleaseEnterLink => 'Please enter a link';
+
+  @override
+  String get estimatedRecipients => 'Estimated recipients';
+
+  @override
+  String get countries => 'Countries';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get subscriptionTiers => 'Subscription Tiers';
+
+  @override
+  String get userRoles => 'User Roles';
+
+  @override
+  String get errorEstimatingRecipients => 'Error estimating recipients';
+
+  @override
+  String get errorPickingImage => 'Error picking image';
+
+  @override
+  String get errorPickingVideo => 'Error picking video';
+
+  @override
+  String get userNotAuthenticated => 'User not authenticated';
+
+  @override
+  String get failedToUploadImage => 'Failed to upload image';
+
+  @override
+  String get failedToUploadVideo => 'Failed to upload video';
+
+  @override
+  String get image => 'Image';
+
+  @override
+  String get video => 'Video';
+
+  @override
+  String get continue1 => 'Continue';
+
+  @override
+  String get getStarted => 'Get Started';
 }
