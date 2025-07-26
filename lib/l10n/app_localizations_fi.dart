@@ -85,10 +85,6 @@ class AppLocalizationsFi extends AppLocalizations {
   String get revokeAccess => '[FI] Kumoa oikeudet';
 
   @override
-  String get saveGroupForRecognition =>
-      '[FI] Tallenna ryhmä tunnistusta varten';
-
-  @override
   String get playtimeLiveScheduled => '[FI] [FI] Live playtime scheduled!';
 
   @override
@@ -261,9 +257,6 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get upcomingSessions => '[FI] [FI] Upcoming Sessions';
-
-  @override
-  String get enterGroupName => '[FI] Anna ryhmän nimi';
 
   @override
   String get confirm => '[FI] Vahvista';
@@ -500,9 +493,6 @@ class AppLocalizationsFi extends AppLocalizations {
   String get createGame => '[FI] Luo peli';
 
   @override
-  String get groupNameOptional => '[FI] [FI] Group Name (Optional)';
-
-  @override
   String get playtimeNoSessions => '[FI] [FI] No playtime sessions found.';
 
   @override
@@ -513,9 +503,6 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get close => '[FI] Sulje';
-
-  @override
-  String get knownGroupDetected => '[FI] Tunnistettu tunnettu ryhmä';
 
   @override
   String get back => '[FI] [FI] Back';
@@ -2534,4 +2521,152 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get purchase_now_button => 'Purchase Now';
+
+  @override
+  String get welcomeAmbassador => 'Welcome, Ambassador!';
+
+  @override
+  String get activeStatus => 'Active';
+
+  @override
+  String get totalReferrals => 'Total Referrals';
+
+  @override
+  String get thisMonth => 'This Month';
+
+  @override
+  String get activeRewards => 'Active Rewards';
+
+  @override
+  String get nextTierProgress => 'Next Tier Progress';
+
+  @override
+  String get progressToPremium => 'Progress to Premium';
+
+  @override
+  String get remaining => 'remaining';
+
+  @override
+  String get monthlyGoal => 'Monthly Goal';
+
+  @override
+  String get onTrack => 'On Track';
+
+  @override
+  String get needsAttention => 'Needs Attention';
+
+  @override
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
+
+  @override
+  String get viewRewards => 'View Rewards';
+
+  @override
+  String get referralStatistics => 'Referral Statistics';
+
+  @override
+  String get activeReferrals => 'Active Referrals';
+
+  @override
+  String get conversionRate => 'Conversion Rate';
+
+  @override
+  String get recentReferrals => 'Recent Referrals';
+
+  @override
+  String get tierBenefits => 'Tier Benefits';
+
+  @override
+  String get yourReferralQRCode => 'Your Referral QR Code';
+
+  @override
+  String get yourReferralLink => 'Your Referral Link';
+
+  @override
+  String get shareYourLink => 'Share Your Link';
+
+  @override
+  String get shareViaMessage => 'Message';
+
+  @override
+  String get shareViaEmail => 'Email';
+
+  @override
+  String get shareMore => 'More Options';
+
+  @override
+  String get becomeAmbassador => 'Become an Ambassador';
+
+  @override
+  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
+
+  @override
+  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
+
+  @override
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+
+  @override
+  String get ambassadorPromotionTitle =>
+      '[FI] Congratulations! You\'re now an Ambassador! (Finnish)';
+
+  @override
+  String ambassadorPromotionBody(String tier) {
+    return '[FI] Welcome to the $tier tier! Start sharing your referral link to earn rewards. (Finnish)';
+  }
+
+  @override
+  String get tierUpgradeTitle => '[FI] Tier Upgrade! 🎉 (Finnish)';
+
+  @override
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
+    return '[FI] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Finnish)';
+  }
+
+  @override
+  String get monthlyReminderTitle => '[FI] Monthly Goal Reminder (Finnish)';
+
+  @override
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
+    return '[FI] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Finnish)';
+  }
+
+  @override
+  String get performanceWarningTitle =>
+      '[FI] Ambassador Performance Alert (Finnish)';
+
+  @override
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
+    return '[FI] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Finnish)';
+  }
+
+  @override
+  String get ambassadorDemotionTitle =>
+      '[FI] Ambassador Status Update (Finnish)';
+
+  @override
+  String ambassadorDemotionBody(String reason) {
+    return '[FI] Your ambassador status has been temporarily suspended due to: $reason. You can regain your status by meeting the requirements again. (Finnish)';
+  }
+
+  @override
+  String get referralSuccessTitle => '[FI] New Referral! 🎉 (Finnish)';
+
+  @override
+  String referralSuccessBody(String referredUserName, String totalReferrals) {
+    return '[FI] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Finnish)';
+  }
 }
