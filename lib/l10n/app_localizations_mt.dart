@@ -74,8 +74,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get search => '[MT] [MT] Search';
 
   @override
-  String get cancelInviteConfirmation =>
-      '[MT] [MT] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => '[MT] [MT] Are you sure you want to cancel this invite?';
 
   @override
   String created(Object date) {
@@ -89,8 +88,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get playtimeLiveScheduled => '[MT] [MT] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation =>
-      '[MT] [MT] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => '[MT] [MT] Are you sure you want to revoke access?';
 
   @override
   String get download => '[MT] [MT] Download';
@@ -124,8 +122,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get playtimeModeVirtual => '[MT] [MT] Virtual Play';
 
   @override
-  String get playtimeDescription =>
-      '[MT] [MT] Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => '[MT] [MT] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => '[MT] [MT] Delete';
@@ -185,8 +182,7 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully =>
-      '[MT] [MT] Meeting shared successfully';
+  String get meetingSharedSuccessfully => '[MT] [MT] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[MT] [MT] Welcome to Playtime';
@@ -204,8 +200,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get cut => '[MT] [MT] Cut';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      '[MT] [MT] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => '[MT] [MT] Invite cancelled successfully';
 
   @override
   String get retry => '[MT] [MT] Retry';
@@ -282,8 +277,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get scheduleForLater => '[MT] [MT] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully =>
-      '[MT] [MT] Access revoked successfully';
+  String get accessRevokedSuccessfully => '[MT] [MT] Access revoked successfully';
 
   @override
   String type(Object type) {
@@ -408,8 +402,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get dashboard => '[MT] [MT] Dashboard';
 
   @override
-  String get noPermissionForBroadcast =>
-      '[MT] [MT] No permission for broadcast';
+  String get noPermissionForBroadcast => '[MT] [MT] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[MT] Playtime Games – Admin';
@@ -486,8 +479,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get playtimeEnterGameName => '[MT] [MT] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[MT] [MT] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '[MT] [MT] Please login to access family features';
 
   @override
   String get myInvites => '[MT] [MT] My Invites';
@@ -541,8 +533,7 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[MT] [MT] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[MT] [MT] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[MT] Admin Metrics';
@@ -563,52 +554,40 @@ class AppLocalizationsMt extends AppLocalizations {
   String get contentLibrary => '[MT] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[MT] No account found with this email address.';
+  String get authErrorUserNotFound => '[MT] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[MT] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[MT] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[MT] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[MT] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[MT] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[MT] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[MT] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[MT] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[MT] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[MT] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[MT] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[MT] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[MT] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[MT] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[MT] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[MT] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN => '[MT] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[MT] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[MT] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[MT] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[MT] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -625,24 +604,19 @@ class AppLocalizationsMt extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[MT] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[MT] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[MT] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[MT] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] The verification code is invalid.';
+  String get REDACTED_TOKEN => '[MT] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[MT] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[MT] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Please enter the verification code.';
+  String get REDACTED_TOKEN => '[MT] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[MT] Missing verification ID.';
@@ -654,56 +628,43 @@ class AppLocalizationsMt extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[MT] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[MT] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[MT] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[MT] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[MT] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[MT] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[MT] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN => '[MT] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Multi-factor information not found.';
+  String get REDACTED_TOKEN => '[MT] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Missing multi-factor session.';
+  String get REDACTED_TOKEN => '[MT] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Invalid multi-factor session.';
+  String get REDACTED_TOKEN => '[MT] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] This second factor is already in use.';
+  String get REDACTED_TOKEN => '[MT] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN => '[MT] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[MT] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[MT] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Email change requires verification.';
+  String get REDACTED_TOKEN => '[MT] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] This phone number is already in use.';
+  String get REDACTED_TOKEN => '[MT] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[MT] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[MT] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[MT] The ID token is invalid.';
@@ -715,12 +676,10 @@ class AppLocalizationsMt extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[MT] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[MT] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[MT] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[MT] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[MT] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[MT] Invalid custom claims provided.';
@@ -729,87 +688,70 @@ class AppLocalizationsMt extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[MT] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[MT] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[MT] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[MT] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[MT] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[MT] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN => '[MT] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[MT] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[MT] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[MT] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[MT] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[MT] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[MT] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN => '[MT] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[MT] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[MT] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[MT] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN => '[MT] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[MT] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[MT] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN => '[MT] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[MT] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[MT] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[MT] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[MT] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[MT] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[MT] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN => '[MT] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[MT] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[MT] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[MT] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN => '[MT] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[MT] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[MT] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[MT] Missing continue URL.';
@@ -824,8 +766,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get authErrorMissingUid => '[MT] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Missing OAuth client secret.';
+  String get REDACTED_TOKEN => '[MT] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[MT] Firebase project not found.';
@@ -834,23 +775,19 @@ class AppLocalizationsMt extends AppLocalizations {
   String get authErrorReservedClaims => '[MT] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[MT] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[MT] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[MT] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[MT] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[MT] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN => '[MT] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[MT] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[MT] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -899,8 +836,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Virtual session created! Inviting friends... (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Virtual session created! Inviting friends... (Maltese)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -941,15 +877,13 @@ class AppLocalizationsMt extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[MT] Subscription unavailable (Maltese)';
+  String get subscriptionUnavailable => '[MT] Subscription unavailable (Maltese)';
 
   @override
   String get confirmBooking => '[MT] Confirm Booking (Maltese)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[MT] Failed to update permission: \$e (Maltese)';
+  String get failedToUpdatePermissionE => '[MT] Failed to update permission: \$e (Maltese)';
 
   @override
   String get reject => '[MT] Reject (Maltese)';
@@ -977,8 +911,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get resolve => '[MT] Resolve (Maltese)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[MT] Error loading surveys: \$error (Maltese)';
+  String get errorLoadingSurveysError => '[MT] Error loading surveys: \$error (Maltese)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -986,8 +919,7 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[MT] Get help with your account (Maltese)';
+  String get getHelpWithYourAccount => '[MT] Get help with your account (Maltese)';
 
   @override
   String get pay => '[MT] Pay (Maltese)';
@@ -1002,8 +934,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[MT] Changes saved successfully! (Maltese)';
+  String get changesSavedSuccessfully => '[MT] Changes saved successfully! (Maltese)';
 
   @override
   String get createNewInvoice => '[MT] Create New Invoice (Maltese)';
@@ -1023,8 +954,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get profileSaved => '[MT] Profile saved! (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1055,8 +985,7 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] You will receive a confirmation email shortly. (Maltese)';
+  String get REDACTED_TOKEN => '[MT] You will receive a confirmation email shortly. (Maltese)';
 
   @override
   String get addQuestion => '[MT] Add Question (Maltese)';
@@ -1085,26 +1014,22 @@ class AppLocalizationsMt extends AppLocalizations {
   String get surveyManagement => '[MT] Survey Management (Maltese)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[MT] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[MT] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[MT] No rooms found. Add your first room! (Maltese)';
+  String get noRoomsFoundAddYourFirstRoom => '[MT] No rooms found. Add your first room! (Maltese)';
 
   @override
   String get readOurPrivacyPolicy => '[MT] Read our privacy policy (Maltese)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[MT] Could not open privacy policy (Maltese)';
+  String get couldNotOpenPrivacyPolicy => '[MT] Could not open privacy policy (Maltese)';
 
   @override
   String get refresh1 => '[MT] Refresh (Maltese)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[MT] Room updated successfully! (Maltese)';
+  String get roomUpdatedSuccessfully => '[MT] Room updated successfully! (Maltese)';
 
   @override
   String get contentDetail => '[MT] Content Detail (Maltese)';
@@ -1113,8 +1038,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get cancelSubscription => '[MT] Cancel Subscription (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Successfully registered as Ambassador! (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Successfully registered as Ambassador! (Maltese)';
 
   @override
   String get save1 => '[MT] Save (Maltese)';
@@ -1123,8 +1047,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get copy1 => '[MT] Copy (Maltese)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[MT] Failed to send invitation: \$e (Maltese)';
+  String get failedToSendInvitationE => '[MT] Failed to send invitation: \$e (Maltese)';
 
   @override
   String get surveyScore => '[MT] Survey Score (Maltese)';
@@ -1141,20 +1064,16 @@ class AppLocalizationsMt extends AppLocalizations {
   String get responseDetail => '[MT] Response Detail (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[MT] Failed to start Pro subscription: \$e (Maltese)';
+  String get failedToStartProSubscriptionE => '[MT] Failed to start Pro subscription: \$e (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Business Dashboard Entry Screen - Coming Soon (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Business Dashboard Entry Screen - Coming Soon (Maltese)';
 
   @override
   String get contentFilter => '[MT] Content Filter (Maltese)';
@@ -1176,8 +1095,7 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Business CRM Entry Screen - Coming Soon (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Business CRM Entry Screen - Coming Soon (Maltese)';
 
   @override
   String get adminDashboard => '[MT] Admin Dashboard';
@@ -1188,16 +1106,13 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[MT] Error loading dashboard: \$error (Maltese)';
+  String get errorLoadingDashboardError => '[MT] Error loading dashboard: \$error (Maltese)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[MT] Game deleted successfully! (Maltese)';
+  String get gameDeletedSuccessfully => '[MT] Game deleted successfully! (Maltese)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[MT] View responses - Coming soon! (Maltese)';
+  String get viewResponsesComingSoon => '[MT] View responses - Coming soon! (Maltese)';
 
   @override
   String get deleteProvider => '[MT] Delete Provider';
@@ -1206,8 +1121,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get errorLoadingRewards => '[MT] Error loading rewards (Maltese)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[MT] Failed to delete account: \$e (Maltese)';
+  String get failedToDeleteAccountE => '[MT] Failed to delete account: \$e (Maltese)';
 
   @override
   String get invited1 => '[MT] Invited (Maltese)';
@@ -1222,8 +1136,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get noEvents => '[MT] No events (Maltese)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[MT] Game created successfully! (Maltese)';
+  String get gameCreatedSuccessfully => '[MT] Game created successfully! (Maltese)';
 
   @override
   String get add1 => '[MT] Add (Maltese)';
@@ -1243,12 +1156,10 @@ class AppLocalizationsMt extends AppLocalizations {
   String get clients => '[MT] Clients (Maltese)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[MT] No ambassador data available (Maltese)';
+  String get noAmbassadorDataAvailable => '[MT] No ambassador data available (Maltese)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[MT] Background deleted successfully! (Maltese)';
+  String get backgroundDeletedSuccessfully => '[MT] Background deleted successfully! (Maltese)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1256,8 +1167,7 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[MT] No analytics data available yet. (Maltese)';
+  String get noAnalyticsDataAvailableYet => '[MT] No analytics data available yet. (Maltese)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1265,8 +1175,7 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Business Phone Booking Entry Screen - Coming Soon (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Business Phone Booking Entry Screen - Coming Soon (Maltese)';
 
   @override
   String get verification => '[MT] Verification (Maltese)';
@@ -1313,8 +1222,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get businessProfile => '[MT] Business Profile (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Business Booking Entry Screen - Coming Soon (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Business Booking Entry Screen - Coming Soon (Maltese)';
 
   @override
   String get createNewSurvey => '[MT] Create New Survey (Maltese)';
@@ -1338,8 +1246,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get loginFailedE => '[MT] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[MT] Invitation sent successfully! (Maltese)';
+  String get invitationSentSuccessfully => '[MT] Invitation sent successfully! (Maltese)';
 
   @override
   String get registering => '[MT] Registering... (Maltese)';
@@ -1353,16 +1260,13 @@ class AppLocalizationsMt extends AppLocalizations {
   String get home1 => '[MT] Home (Maltese)';
 
   @override
-  String get errorSavingSettingsE =>
-      '[MT] Error saving settings: \$e (Maltese)';
+  String get errorSavingSettingsE => '[MT] Error saving settings: \$e (Maltese)';
 
   @override
-  String get appVersionAndInformation =>
-      '[MT] App version and information (Maltese)';
+  String get appVersionAndInformation => '[MT] App version and information (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Business Subscription Entry Screen - Coming Soon (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Business Subscription Entry Screen - Coming Soon (Maltese)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1370,8 +1274,7 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Your payment has been processed successfully. (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Your payment has been processed successfully. (Maltese)';
 
   @override
   String get errorE => '[MT] Error: \$e (Maltese)';
@@ -1380,8 +1283,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get viewAll1 => '[MT] View All (Maltese)';
 
   @override
-  String get editSurveyComingSoon =>
-      '[MT] Edit survey - Coming soon! (Maltese)';
+  String get editSurveyComingSoon => '[MT] Edit survey - Coming soon! (Maltese)';
 
   @override
   String get enterOtp => '[MT] Enter OTP (Maltese)';
@@ -1390,8 +1292,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get payment => '[MT] Payment (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Automatically confirm new booking requests (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Automatically confirm new booking requests (Maltese)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1404,8 +1305,7 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[MT] Please sign in to upload a background (Maltese)';
+  String get pleaseSignInToUploadABackground => '[MT] Please sign in to upload a background (Maltese)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1422,22 +1322,19 @@ class AppLocalizationsMt extends AppLocalizations {
   String get autoconfirmBookings => '[MT] Auto-Confirm Bookings (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Redirecting to Stripe checkout for Pro plan... (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Redirecting to Stripe checkout for Pro plan... (Maltese)';
 
   @override
   String get exportAsCsv => '[MT] Export as CSV (Maltese)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[MT] Delete functionality coming soon! (Maltese)';
+  String get deleteFunctionalityComingSoon => '[MT] Delete functionality coming soon! (Maltese)';
 
   @override
   String get editClient => '[MT] Edit Client (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Are you sure you want to delete this message? (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Are you sure you want to delete this message? (Maltese)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1448,39 +1345,31 @@ class AppLocalizationsMt extends AppLocalizations {
   String get notAuthenticated => '[MT] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[MT] Privacy request sent to your parents! (Maltese)';
+  String get privacyRequestSentToYourParents => '[MT] Privacy request sent to your parents! (Maltese)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[MT] Client deleted successfully! (Maltese)';
+  String get clientDeletedSuccessfully => '[MT] Client deleted successfully! (Maltese)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[MT] Failed to cancel subscription (Maltese)';
+  String get failedToCancelSubscription => '[MT] Failed to cancel subscription (Maltese)';
 
   @override
   String get allLanguages => '[MT] All Languages (Maltese)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[MT] Slot deleted successfully (Maltese)';
+  String get slotDeletedSuccessfully => '[MT] Slot deleted successfully (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN => '[MT] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Parents must approve before children can join (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Parents must approve before children can join (Maltese)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[MT] Subscribe to Pro (€14.99/mo) (Maltese)';
+  String get subscribeToPro1499mo => '[MT] Subscribe to Pro (€14.99/mo) (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Business Availability Entry Screen - Coming Soon (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Business Availability Entry Screen - Coming Soon (Maltese)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1494,8 +1383,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get submitBooking => '[MT] Submit Booking (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Are you sure you want to cancel this appointment? (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Are you sure you want to cancel this appointment? (Maltese)';
 
   @override
   String get noUpcomingBookings => '[MT] No upcoming bookings (Maltese)';
@@ -1513,8 +1401,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get goToDashboard => '[MT] Go to Dashboard (Maltese)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[MT] Ambassador Quota Dashboard (Maltese)';
+  String get ambassadorQuotaDashboard => '[MT] Ambassador Quota Dashboard (Maltese)';
 
   @override
   String get adminSettings => '[MT] Admin Settings';
@@ -1552,8 +1439,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[MT] Client added successfully! (Maltese)';
+  String get clientAddedSuccessfully => '[MT] Client added successfully! (Maltese)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1571,8 +1457,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get bookAppointment => '[MT] Book Appointment (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[MT] Delete (Maltese)';
@@ -1587,15 +1472,13 @@ class AppLocalizationsMt extends AppLocalizations {
   String get manageSubscription => '[MT] Manage Subscription (Maltese)';
 
   @override
-  String get requiresInstallFallback =>
-      '[MT] Requires Install Fallback (Maltese)';
+  String get requiresInstallFallback => '[MT] Requires Install Fallback (Maltese)';
 
   @override
   String get paymentConfirmation => '[MT] Payment Confirmation (Maltese)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[MT] Promo applied! Your next bill is free. (Maltese)';
+  String get promoAppliedYourNextBillIsFree => '[MT] Promo applied! Your next bill is free. (Maltese)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1606,16 +1489,13 @@ class AppLocalizationsMt extends AppLocalizations {
   String get errorLoadingSlots => '[MT] Error loading slots (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Allow other users to find and join this game (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Allow other users to find and join this game (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Business Onboarding Screen - Coming Soon (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Business Onboarding Screen - Coming Soon (Maltese)';
 
   @override
-  String get activateBusinessProfile =>
-      '[MT] Activate Business Profile (Maltese)';
+  String get activateBusinessProfile => '[MT] Activate Business Profile (Maltese)';
 
   @override
   String get contentNotFound => '[MT] Content not found (Maltese)';
@@ -1657,8 +1537,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get shareLink => '[MT] Share Link (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN => '[MT] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[MT] Delete Appointment (Maltese)';
@@ -1678,12 +1557,10 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[MT] Update your business information (Maltese)';
+  String get updateYourBusinessInformation => '[MT] Update your business information (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN => '[MT] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[MT] Parent Dashboard (Maltese)';
@@ -1706,12 +1583,10 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Studio booking is only available on web (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Studio booking is only available on web (Maltese)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[MT] Error loading branches: \$e (Maltese)';
+  String get errorLoadingBranchesE => '[MT] Error loading branches: \$e (Maltese)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1727,15 +1602,13 @@ class AppLocalizationsMt extends AppLocalizations {
   String get none => '[MT] None (Maltese)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[MT] Failed to update consent: \$e (Maltese)';
+  String get failedToUpdateConsentE => '[MT] Failed to update consent: \$e (Maltese)';
 
   @override
   String get welcome1 => '[MT] Welcome (Maltese)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[MT] Failed to create session: \$e (Maltese)';
+  String get failedToCreateSessionE => '[MT] Failed to create session: \$e (Maltese)';
 
   @override
   String get inviteContact => '[MT] Invite Contact (Maltese)';
@@ -1744,8 +1617,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get surveyEditor => '[MT] Survey Editor (Maltese)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[MT] Failed to start Basic subscription: \$e (Maltese)';
+  String get failedToStartBasicSubscriptionE => '[MT] Failed to start Basic subscription: \$e (Maltese)';
 
   @override
   String get mySchedule => '[MT] My Schedule (Maltese)';
@@ -1765,12 +1637,10 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[MT] Settings saved successfully! (Maltese)';
+  String get settingsSavedSuccessfully => '[MT] Settings saved successfully! (Maltese)';
 
   @override
-  String get linkCopiedToClipboard =>
-      '[MT] Link copied to clipboard! (Maltese)';
+  String get linkCopiedToClipboard => '[MT] Link copied to clipboard! (Maltese)';
 
   @override
   String get accept1 => '[MT] Accept (Maltese)';
@@ -1787,8 +1657,7 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[MT] Room deleted successfully! (Maltese)';
+  String get roomDeletedSuccessfully => '[MT] Room deleted successfully! (Maltese)';
 
   @override
   String get businessCalendar => '[MT] Business Calendar (Maltese)';
@@ -1853,8 +1722,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get cancel1 => '[MT] Cancel (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Subscription activated successfully! (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Subscription activated successfully! (Maltese)';
 
   @override
   String activityLogaction(Object action) {
@@ -1865,8 +1733,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get broadcast => '[MT] Broadcast (Maltese)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[MT] No events scheduled this week (Maltese)';
+  String get noEventsScheduledThisWeek => '[MT] No events scheduled this week (Maltese)';
 
   @override
   String get googleCalendar => '[MT] Google Calendar (Maltese)';
@@ -1878,8 +1745,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get childDashboard => '[MT] Child Dashboard (Maltese)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[MT] Failed to upload background: \$e (Maltese)';
+  String get failedToUploadBackgroundE => '[MT] Failed to upload background: \$e (Maltese)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1898,8 +1764,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get noAppointments => '[MT] No appointments (Maltese)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[MT] • Unlimited bookings per week (Maltese)';
+  String get unlimitedBookingsPerWeek => '[MT] • Unlimited bookings per week (Maltese)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1907,19 +1772,16 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[MT] Scheduled at: \$scheduledAt (Maltese)';
+  String get scheduledAtScheduledat => '[MT] Scheduled at: \$scheduledAt (Maltese)';
 
   @override
   String get selectStaff => '[MT] Select Staff (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Subscription cancelled successfully (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Subscription cancelled successfully (Maltese)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[MT] Cancel Appointment (Maltese)';
@@ -1933,8 +1795,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get businessSignup => '[MT] Business Signup (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Business Completion Screen - Coming Soon (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Business Completion Screen - Coming Soon (Maltese)';
 
   @override
   String get createGame1 => '[MT] Create Game (Maltese)';
@@ -1945,12 +1806,10 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode =>
-      '[MT] Please enter a promo code (Maltese)';
+  String get pleaseEnterAPromoCode => '[MT] Please enter a promo code (Maltese)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[MT] Error loading availability: \$e (Maltese)';
+  String get errorLoadingAvailabilityE => '[MT] Error loading availability: \$e (Maltese)';
 
   @override
   String get parentalControls => '[MT] Parental Controls (Maltese)';
@@ -1959,15 +1818,13 @@ class AppLocalizationsMt extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[MT] Child linked successfully! (Maltese)';
+  String get childLinkedSuccessfully => '[MT] Child linked successfully! (Maltese)';
 
   @override
   String get create => '[MT] Create (Maltese)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[MT] No external meetings found. (Maltese)';
+  String get noExternalMeetingsFound => '[MT] No external meetings found. (Maltese)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1975,15 +1832,13 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[MT] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[MT] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[MT] Scheduler Screen (Maltese)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[MT] Client updated successfully! (Maltese)';
+  String get clientUpdatedSuccessfully => '[MT] Client updated successfully! (Maltese)';
 
   @override
   String get surveyResponses => '[MT] Survey Responses (Maltese)';
@@ -2009,12 +1864,10 @@ class AppLocalizationsMt extends AppLocalizations {
   String get errorLoadingEvents => '[MT] Error loading events (Maltese)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[MT] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[MT] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[MT] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[MT] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[MT] Success (Maltese)';
@@ -2033,12 +1886,10 @@ class AppLocalizationsMt extends AppLocalizations {
   String get readWrite => '[MT] Read & Write (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Redirecting to Stripe checkout for Basic plan... (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Redirecting to Stripe checkout for Basic plan... (Maltese)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[MT] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[MT] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[MT] Pick Date (Maltese)';
@@ -2074,12 +1925,10 @@ class AppLocalizationsMt extends AppLocalizations {
   String get businessLogin => '[MT] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[MT] Invoice created successfully! (Maltese)';
+  String get invoiceCreatedSuccessfully => '[MT] Invoice created successfully! (Maltese)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[MT] No time series data available (Maltese)';
+  String get noTimeSeriesDataAvailable => '[MT] No time series data available (Maltese)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2092,8 +1941,7 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[MT] Failed to send privacy request: \$e (Maltese)';
+  String get failedToSendPrivacyRequestE => '[MT] Failed to send privacy request: \$e (Maltese)';
 
   @override
   String get chooseYourPlan => '[MT] Choose Your Plan (Maltese)';
@@ -2108,15 +1956,13 @@ class AppLocalizationsMt extends AppLocalizations {
   String get eventCreated => '[MT] Event created (Maltese)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[MT] Subscribe to Basic (€4.99/mo) (Maltese)';
+  String get subscribeToBasic499mo => '[MT] Subscribe to Basic (€4.99/mo) (Maltese)';
 
   @override
   String get completion => '[MT] Completion (Maltese)';
 
   @override
-  String get supportTicketSubmitted =>
-      '[MT] Support ticket submitted (Maltese)';
+  String get supportTicketSubmitted => '[MT] Support ticket submitted (Maltese)';
 
   @override
   String get monetizationSettings => '[MT] Monetization Settings (Maltese)';
@@ -2131,12 +1977,10 @@ class AppLocalizationsMt extends AppLocalizations {
   String get deleteSurvey => '[MT] Delete Survey (Maltese)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[MT] Game approved successfully! (Maltese)';
+  String get gameApprovedSuccessfully => '[MT] Game approved successfully! (Maltese)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[MT] Error loading permissions: \$error (Maltese)';
+  String get errorLoadingPermissionsError => '[MT] Error loading permissions: \$error (Maltese)';
 
   @override
   String get referrals => '[MT] Referrals (Maltese)';
@@ -2178,8 +2022,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get organizations => '[MT] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[MT] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[MT] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[MT] Create New Game (Maltese)';
@@ -2188,12 +2031,10 @@ class AppLocalizationsMt extends AppLocalizations {
   String get next1 => '[MT] Next (Maltese)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[MT] Background uploaded successfully! (Maltese)';
+  String get backgroundUploadedSuccessfully => '[MT] Background uploaded successfully! (Maltese)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[MT] No appointment requests found. (Maltese)';
+  String get noAppointmentRequestsFound => '[MT] No appointment requests found. (Maltese)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2220,8 +2061,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[MT] Failed to create game: \$e (Maltese)';
@@ -2230,8 +2070,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get noChartDataAvailable => '[MT] No chart data available (Maltese)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[MT] • Phone-based booking system (Maltese)';
+  String get phonebasedBookingSystem => '[MT] • Phone-based booking system (Maltese)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2240,8 +2079,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get invoices => '[MT] Invoices (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2268,12 +2106,10 @@ class AppLocalizationsMt extends AppLocalizations {
   String get iDoNotConsent => '[MT] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] No clients found. Add your first client! (Maltese)';
+  String get REDACTED_TOKEN => '[MT] No clients found. Add your first client! (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN => '[MT] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[MT] Group: \$groupId';
@@ -2296,8 +2132,7 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[MT] • CRM dashboard with analytics (Maltese)';
+  String get crmDashboardWithAnalytics => '[MT] • CRM dashboard with analytics (Maltese)';
 
   @override
   String get contentLibrary1 => '[MT] Content Library (Maltese)';
@@ -2309,30 +2144,25 @@ class AppLocalizationsMt extends AppLocalizations {
   String get subscriptionManagement => '[MT] Subscription Management (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Monetization settings will be implemented here (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Monetization settings will be implemented here (Maltese)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[MT] Failed to apply promo code: \$e (Maltese)';
+  String get failedToApplyPromoCodeE => '[MT] Failed to apply promo code: \$e (Maltese)';
 
   @override
   String get editProvider => '[MT] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[MT] Localization Contribution (Maltese)';
+  String get localizationContribution => '[MT] Localization Contribution (Maltese)';
 
   @override
   String get parentalConsent => '[MT] Parental Consent (Maltese)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[MT] Business Signup Screen - Coming Soon (Maltese)';
+  String get businessSignupScreenComingSoon => '[MT] Business Signup Screen - Coming Soon (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[MT] Are you sure you want to delete this appointment? (Maltese)';
+  String get REDACTED_TOKEN => '[MT] Are you sure you want to delete this appointment? (Maltese)';
 
   @override
   String get syncAppointment => '[MT] Sync Appointment (Maltese)';
@@ -2344,15 +2174,13 @@ class AppLocalizationsMt extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[MT] Business Setup Screen - Coming Soon (Maltese)';
+  String get businessSetupScreenComingSoon => '[MT] Business Setup Screen - Coming Soon (Maltese)';
 
   @override
   String get edit1 => '[MT] Edit (Maltese)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[MT] No events scheduled this month (Maltese)';
+  String get noEventsScheduledThisMonth => '[MT] No events scheduled this month (Maltese)';
 
   @override
   String get businessDashboard => '[MT] Business Dashboard (Maltese)';
@@ -2366,8 +2194,7 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[MT] Manage Staff Availability (Maltese)';
+  String get manageStaffAvailability => '[MT] Manage Staff Availability (Maltese)';
 
   @override
   String get noMissingTranslations => '[MT] No missing translations (Maltese)';
@@ -2384,8 +2211,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get noUsers => '[MT] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[MT] Error loading referral code (Maltese)';
+  String get errorLoadingReferralCode => '[MT] Error loading referral code (Maltese)';
 
   @override
   String get allCountries => '[MT] All Countries (Maltese)';
@@ -2400,8 +2226,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get deleteMessage => '[MT] Delete Message (Maltese)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[MT] changeRole (TRANSLATE)';
@@ -2412,8 +2237,7 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[MT] Opening customer portal... (Maltese)';
+  String get openingCustomerPortal => '[MT] Opening customer portal... (Maltese)';
 
   @override
   String get signOut => '[MT] Sign Out (Maltese)';
@@ -2424,8 +2248,7 @@ class AppLocalizationsMt extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[MT] Upgrade to Business (Maltese)';
@@ -2451,8 +2274,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[MT] View Responses (Maltese)';
@@ -2481,8 +2303,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2500,8 +2321,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description =>
-      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2510,8 +2330,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title =>
-      'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2559,8 +2378,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement =>
-      'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2608,12 +2426,10 @@ class AppLocalizationsMt extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage =>
-      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle =>
-      '[MT] Congratulations! You\'re now an Ambassador! (Maltese)';
+  String get ambassadorPromotionTitle => '[MT] Congratulations! You\'re now an Ambassador! (Maltese)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2624,11 +2440,7 @@ class AppLocalizationsMt extends AppLocalizations {
   String get tierUpgradeTitle => '[MT] Tier Upgrade! 🎉 (Maltese)';
 
   @override
-  String tierUpgradeBody(
-    String previousTier,
-    String newTier,
-    String totalReferrals,
-  ) {
+  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
     return '[MT] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Maltese)';
   }
 
@@ -2636,29 +2448,20 @@ class AppLocalizationsMt extends AppLocalizations {
   String get monthlyReminderTitle => '[MT] Monthly Goal Reminder (Maltese)';
 
   @override
-  String monthlyReminderBody(
-    String currentReferrals,
-    String targetReferrals,
-    String daysRemaining,
-  ) {
+  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
     return '[MT] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Maltese)';
   }
 
   @override
-  String get performanceWarningTitle =>
-      '[MT] Ambassador Performance Alert (Maltese)';
+  String get performanceWarningTitle => '[MT] Ambassador Performance Alert (Maltese)';
 
   @override
-  String performanceWarningBody(
-    String currentReferrals,
-    String minimumRequired,
-  ) {
+  String performanceWarningBody(String currentReferrals, String minimumRequired) {
     return '[MT] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Maltese)';
   }
 
   @override
-  String get ambassadorDemotionTitle =>
-      '[MT] Ambassador Status Update (Maltese)';
+  String get ambassadorDemotionTitle => '[MT] Ambassador Status Update (Maltese)';
 
   @override
   String ambassadorDemotionBody(String reason) {
