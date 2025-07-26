@@ -87,9 +87,6 @@ class AppLocalizationsBn extends AppLocalizations {
   String get revokeAccess => '[BN] অ্যাক্সেস বাতিল করুন';
 
   @override
-  String get saveGroupForRecognition => '[BN] পরিচয়ের জন্য গ্রুপ সংরক্ষণ করুন';
-
-  @override
   String get playtimeLiveScheduled => '[BN] লাইভ সেশন শিডিউল হয়েছে';
 
   @override
@@ -262,9 +259,6 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get upcomingSessions => '[BN] [BN] Upcoming Sessions';
-
-  @override
-  String get enterGroupName => '[BN] পরিচয়ের জন্য গ্রুপের নাম লিখুন';
 
   @override
   String get confirm => '[BN] নিশ্চিত করুন';
@@ -503,9 +497,6 @@ class AppLocalizationsBn extends AppLocalizations {
   String get createGame => '[BN] [BN] Create Game';
 
   @override
-  String get groupNameOptional => '[BN] গ্রুপের নাম (ঐচ্ছিক)';
-
-  @override
   String get playtimeNoSessions => '[BN] [BN] No playtime sessions found.';
 
   @override
@@ -516,9 +507,6 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get close => '[BN] বন্ধ করুন';
-
-  @override
-  String get knownGroupDetected => '[BN] পরিচিত গ্রুপ সনাক্ত হয়েছে';
 
   @override
   String get back => '[BN] পেছনে ফিরে যান';
@@ -2537,6 +2525,154 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get purchase_now_button => 'Purchase Now';
+
+  @override
+  String get welcomeAmbassador => 'Welcome, Ambassador!';
+
+  @override
+  String get activeStatus => 'Active';
+
+  @override
+  String get totalReferrals => 'Total Referrals';
+
+  @override
+  String get thisMonth => 'This Month';
+
+  @override
+  String get activeRewards => 'Active Rewards';
+
+  @override
+  String get nextTierProgress => 'Next Tier Progress';
+
+  @override
+  String get progressToPremium => 'Progress to Premium';
+
+  @override
+  String get remaining => 'remaining';
+
+  @override
+  String get monthlyGoal => 'Monthly Goal';
+
+  @override
+  String get onTrack => 'On Track';
+
+  @override
+  String get needsAttention => 'Needs Attention';
+
+  @override
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
+
+  @override
+  String get viewRewards => 'View Rewards';
+
+  @override
+  String get referralStatistics => 'Referral Statistics';
+
+  @override
+  String get activeReferrals => 'Active Referrals';
+
+  @override
+  String get conversionRate => 'Conversion Rate';
+
+  @override
+  String get recentReferrals => 'Recent Referrals';
+
+  @override
+  String get tierBenefits => 'Tier Benefits';
+
+  @override
+  String get yourReferralQRCode => 'Your Referral QR Code';
+
+  @override
+  String get yourReferralLink => 'Your Referral Link';
+
+  @override
+  String get shareYourLink => 'Share Your Link';
+
+  @override
+  String get shareViaMessage => 'Message';
+
+  @override
+  String get shareViaEmail => 'Email';
+
+  @override
+  String get shareMore => 'More Options';
+
+  @override
+  String get becomeAmbassador => 'Become an Ambassador';
+
+  @override
+  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
+
+  @override
+  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
+
+  @override
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+
+  @override
+  String get ambassadorPromotionTitle =>
+      '[BN] Congratulations! You\'re now an Ambassador! (Bengali)';
+
+  @override
+  String ambassadorPromotionBody(String tier) {
+    return '[BN] Welcome to the $tier tier! Start sharing your referral link to earn rewards. (Bengali)';
+  }
+
+  @override
+  String get tierUpgradeTitle => '[BN] Tier Upgrade! 🎉 (Bengali)';
+
+  @override
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
+    return '[BN] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Bengali)';
+  }
+
+  @override
+  String get monthlyReminderTitle => '[BN] Monthly Goal Reminder (Bengali)';
+
+  @override
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
+    return '[BN] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Bengali)';
+  }
+
+  @override
+  String get performanceWarningTitle =>
+      '[BN] Ambassador Performance Alert (Bengali)';
+
+  @override
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
+    return '[BN] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Bengali)';
+  }
+
+  @override
+  String get ambassadorDemotionTitle =>
+      '[BN] Ambassador Status Update (Bengali)';
+
+  @override
+  String ambassadorDemotionBody(String reason) {
+    return '[BN] Your ambassador status has been temporarily suspended due to: $reason. You can regain your status by meeting the requirements again. (Bengali)';
+  }
+
+  @override
+  String get referralSuccessTitle => '[BN] New Referral! 🎉 (Bengali)';
+
+  @override
+  String referralSuccessBody(String referredUserName, String totalReferrals) {
+    return '[BN] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Bengali)';
+  }
 }
 
 /// The translations for Bengali Bangla, as used in Bangladesh (`bn_BD`).
@@ -2619,10 +2755,6 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
 
   @override
   String get revokeAccess => '[BN_BD] অ্যাক্সেস প্রত্যাহার করুন';
-
-  @override
-  String get saveGroupForRecognition =>
-      '[BN_BD] স্বীকৃতির জন্য গ্রুপ সংরক্ষণ করুন';
 
   @override
   String get playtimeLiveScheduled => '[BN_BD] লাইভ সেশন নির্ধারিত হয়েছে';
@@ -2797,9 +2929,6 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
 
   @override
   String get upcomingSessions => '[BN_BD] আসন্ন সেশন';
-
-  @override
-  String get enterGroupName => '[BN_BD] গোষ্ঠী নাম লিখুন';
 
   @override
   String get confirm => '[BN_BD] নিশ্চিত করুন';
@@ -3039,9 +3168,6 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get createGame => '[BN_BD] [BN_BD] Create Game';
 
   @override
-  String get groupNameOptional => '[BN_BD] [BN_BD] Group Name (Optional)';
-
-  @override
   String get playtimeNoSessions =>
       '[BN_BD] [BN_BD] No playtime sessions found.';
 
@@ -3054,9 +3180,6 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
 
   @override
   String get close => '[BN_BD] [BN_BD] Close';
-
-  @override
-  String get knownGroupDetected => '[BN_BD] [BN_BD] Known group detected';
 
   @override
   String get back => '[BN_BD] [BN_BD] Back';
@@ -5161,4 +5284,69 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
 
   @override
   String get purchase_now_button => 'Purchase Now';
+
+  @override
+  String get ambassadorPromotionTitle =>
+      '[BN_BD] Congratulations! You\'re now an Ambassador! (Bengali (Bangladesh))';
+
+  @override
+  String ambassadorPromotionBody(String tier) {
+    return '[BN_BD] Welcome to the $tier tier! Start sharing your referral link to earn rewards. (Bengali (Bangladesh))';
+  }
+
+  @override
+  String get tierUpgradeTitle =>
+      '[BN_BD] Tier Upgrade! 🎉 (Bengali (Bangladesh))';
+
+  @override
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
+    return '[BN_BD] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Bengali (Bangladesh))';
+  }
+
+  @override
+  String get monthlyReminderTitle =>
+      '[BN_BD] Monthly Goal Reminder (Bengali (Bangladesh))';
+
+  @override
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
+    return '[BN_BD] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Bengali (Bangladesh))';
+  }
+
+  @override
+  String get performanceWarningTitle =>
+      '[BN_BD] Ambassador Performance Alert (Bengali (Bangladesh))';
+
+  @override
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
+    return '[BN_BD] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Bengali (Bangladesh))';
+  }
+
+  @override
+  String get ambassadorDemotionTitle =>
+      '[BN_BD] Ambassador Status Update (Bengali (Bangladesh))';
+
+  @override
+  String ambassadorDemotionBody(String reason) {
+    return '[BN_BD] Your ambassador status has been temporarily suspended due to: $reason. You can regain your status by meeting the requirements again. (Bengali (Bangladesh))';
+  }
+
+  @override
+  String get referralSuccessTitle =>
+      '[BN_BD] New Referral! 🎉 (Bengali (Bangladesh))';
+
+  @override
+  String referralSuccessBody(String referredUserName, String totalReferrals) {
+    return '[BN_BD] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Bengali (Bangladesh))';
+  }
 }

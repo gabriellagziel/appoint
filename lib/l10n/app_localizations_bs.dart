@@ -86,9 +86,6 @@ class AppLocalizationsBs extends AppLocalizations {
   String get revokeAccess => '[BS] [BS] Revoke Access';
 
   @override
-  String get saveGroupForRecognition => '[BS] [BS] Save Group for Recognition';
-
-  @override
   String get playtimeLiveScheduled => '[BS] [BS] Live playtime scheduled!';
 
   @override
@@ -262,9 +259,6 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get upcomingSessions => '[BS] [BS] Upcoming Sessions';
-
-  @override
-  String get enterGroupName => '[BS] [BS] Enter group name';
 
   @override
   String get confirm => '[BS] [BS] Confirm';
@@ -502,9 +496,6 @@ class AppLocalizationsBs extends AppLocalizations {
   String get createGame => '[BS] [BS] Create Game';
 
   @override
-  String get groupNameOptional => '[BS] [BS] Group Name (Optional)';
-
-  @override
   String get playtimeNoSessions => '[BS] [BS] No playtime sessions found.';
 
   @override
@@ -515,9 +506,6 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get close => '[BS] [BS] Close';
-
-  @override
-  String get knownGroupDetected => '[BS] [BS] Known group detected';
 
   @override
   String get back => '[BS] [BS] Back';
@@ -2536,4 +2524,152 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get purchase_now_button => 'Purchase Now';
+
+  @override
+  String get welcomeAmbassador => 'Welcome, Ambassador!';
+
+  @override
+  String get activeStatus => 'Active';
+
+  @override
+  String get totalReferrals => 'Total Referrals';
+
+  @override
+  String get thisMonth => 'This Month';
+
+  @override
+  String get activeRewards => 'Active Rewards';
+
+  @override
+  String get nextTierProgress => 'Next Tier Progress';
+
+  @override
+  String get progressToPremium => 'Progress to Premium';
+
+  @override
+  String get remaining => 'remaining';
+
+  @override
+  String get monthlyGoal => 'Monthly Goal';
+
+  @override
+  String get onTrack => 'On Track';
+
+  @override
+  String get needsAttention => 'Needs Attention';
+
+  @override
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
+
+  @override
+  String get viewRewards => 'View Rewards';
+
+  @override
+  String get referralStatistics => 'Referral Statistics';
+
+  @override
+  String get activeReferrals => 'Active Referrals';
+
+  @override
+  String get conversionRate => 'Conversion Rate';
+
+  @override
+  String get recentReferrals => 'Recent Referrals';
+
+  @override
+  String get tierBenefits => 'Tier Benefits';
+
+  @override
+  String get yourReferralQRCode => 'Your Referral QR Code';
+
+  @override
+  String get yourReferralLink => 'Your Referral Link';
+
+  @override
+  String get shareYourLink => 'Share Your Link';
+
+  @override
+  String get shareViaMessage => 'Message';
+
+  @override
+  String get shareViaEmail => 'Email';
+
+  @override
+  String get shareMore => 'More Options';
+
+  @override
+  String get becomeAmbassador => 'Become an Ambassador';
+
+  @override
+  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
+
+  @override
+  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
+
+  @override
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+
+  @override
+  String get ambassadorPromotionTitle =>
+      '[BS] Congratulations! You\'re now an Ambassador! (Bosnian)';
+
+  @override
+  String ambassadorPromotionBody(String tier) {
+    return '[BS] Welcome to the $tier tier! Start sharing your referral link to earn rewards. (Bosnian)';
+  }
+
+  @override
+  String get tierUpgradeTitle => '[BS] Tier Upgrade! 🎉 (Bosnian)';
+
+  @override
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
+    return '[BS] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Bosnian)';
+  }
+
+  @override
+  String get monthlyReminderTitle => '[BS] Monthly Goal Reminder (Bosnian)';
+
+  @override
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
+    return '[BS] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Bosnian)';
+  }
+
+  @override
+  String get performanceWarningTitle =>
+      '[BS] Ambassador Performance Alert (Bosnian)';
+
+  @override
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
+    return '[BS] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Bosnian)';
+  }
+
+  @override
+  String get ambassadorDemotionTitle =>
+      '[BS] Ambassador Status Update (Bosnian)';
+
+  @override
+  String ambassadorDemotionBody(String reason) {
+    return '[BS] Your ambassador status has been temporarily suspended due to: $reason. You can regain your status by meeting the requirements again. (Bosnian)';
+  }
+
+  @override
+  String get referralSuccessTitle => '[BS] New Referral! 🎉 (Bosnian)';
+
+  @override
+  String referralSuccessBody(String referredUserName, String totalReferrals) {
+    return '[BS] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Bosnian)';
+  }
 }

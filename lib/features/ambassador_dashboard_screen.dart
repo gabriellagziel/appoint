@@ -28,6 +28,8 @@ class _AmbassadorDashboardScreenState
   String? selectedLanguage;
   DateTimeRange? selectedDateRange;
   late NotificationService _notificationService;
+  List<dynamic> filteredStats = [];
+  List<dynamic> filteredChartData = [];
   late BranchService _branchService;
   List<Branch> _branches = [];
   bool _isLoadingBranches = false;
@@ -610,9 +612,9 @@ class _AmbassadorDashboardScreenState
     }
 
     final counts = <String, int>{};
-    for (stat in data.stats) {
+    for (final stat in data.stats) {
       counts.update(stat.language, (v) => v + stat.ambassadors,
-          ifAbsent: () => stat.ambassadors,);
+          ifAbsent: () => stat.ambassadors);
     }
 
     return Card(

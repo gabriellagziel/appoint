@@ -1,5 +1,6 @@
 import 'package:appoint/features/admin/admin_broadcast_screen.dart';
 import 'package:appoint/features/admin/ui/admin_dashboard_screen.dart';
+import 'package:appoint/models/family_link.dart';
 import 'package:appoint/features/ambassador_dashboard_screen.dart';
 import 'package:appoint/features/ambassador_onboarding_screen.dart';
 import 'package:appoint/features/auth/home_screen.dart';
@@ -47,6 +48,8 @@ import 'package:appoint/features/studio_business/screens/business_profile_screen
 import 'package:appoint/features/studio_profile/studio_profile_screen.dart';
 import 'package:appoint/models/invite.dart';
 import 'package:appoint/widgets/animations/fade_slide_page_route.dart';
+import 'package:appoint/services/notification_service.dart';
+import 'package:appoint/services/branch_service.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter {
@@ -170,7 +173,7 @@ class AppRouter {
           settings: settings,
         );
       case '/family/permissions':
-        final familyLink = settings.arguments as dynamic;
+        final familyLink = settings.arguments as FamilyLink;
         return MaterialPageRoute(
           builder: (_) => PermissionsScreen(familyLink: familyLink),
           settings: settings,
@@ -198,7 +201,10 @@ class AppRouter {
         );
       case '/ambassador-dashboard':
         return MaterialPageRoute(
-          builder: (_) => const AmbassadorDashboardScreen(),
+          builder: (_) => AmbassadorDashboardScreen(
+            notificationService: NotificationService(),
+            branchService: BranchService(),
+          ),
           settings: settings,
         );
       case '/ambassador-onboarding':

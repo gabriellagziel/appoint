@@ -1,4 +1,4 @@
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v2';
 import * as admin from 'firebase-admin';
 
 const db = admin.firestore();
@@ -238,13 +238,13 @@ export const autoAssignAmbassadors = functions.https.onRequest(async (req, res) 
     res.json({ success: true, assignedCount });
   } catch (error) {
     console.error('Error in autoAssignAmbassadors:', error);
-    res.status(500).json({ success: false, error: error.message });
+    res.status(500).json({ success: false, error: error instanceof Error ? error.message : String(error) });
   }
 });
 
 export const getQuotaStats = functions.https.onRequest(async (req, res) => {
   try {
-    const stats = {};
+    const stats: Record<string, any> = {};
     
     for (const [key, quota] of Object.entries(ambassadorQuotas)) {
       const parts = key.split('_');
@@ -267,7 +267,7 @@ export const getQuotaStats = functions.https.onRequest(async (req, res) => {
     res.json(stats);
   } catch (error) {
     console.error('Error in getQuotaStats:', error);
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: error instanceof Error ? error.message : String(error) });
   }
 });
 
@@ -289,20 +289,20 @@ export const assignAmbassador = functions.https.onRequest(async (req, res) => {
     }
   } catch (error) {
     console.error('Error in assignAmbassador:', error);
-    res.status(500).json({ success: false, error: error.message });
+    res.status(500).json({ success: false, error: error instanceof Error ? error.message : String(error) });
   }
 });
 
 // Scheduled functions
-export const scheduledAutoAssign = functions.pubsub.schedule('every 1 hours').onRun(async (context) => {
+export const scheduledAutoAssign = functions.scheduler.onSchedule('every 1 hours', async (event) => {
   const assignedCount = await autoAssignAvailableSlots();
   console.log(`Scheduled auto-assignment completed. Assigned ${assignedCount} ambassadors.`);
-  return null;
+  return;
 });
 
-export const dailyQuotaReport = functions.pubsub.schedule('every 24 hours').onRun(async (context) => {
+export const dailyQuotaReport = functions.scheduler.onSchedule('every 24 hours', async (event): Promise<void> => {
   // Generate daily report
-  const reportData = {};
+  const reportData: Record<string, any> = {};
   
   for (const [key, quota] of Object.entries(ambassadorQuotas)) {
     const parts = key.split('_');
@@ -329,20 +329,20 @@ export const dailyQuotaReport = functions.pubsub.schedule('every 24 hours').onRu
   });
 
   console.log('Daily quota report generated and stored.');
-  return null;
+  return;
 });
 
 // Firestore triggers
-export const checkAmbassadorEligibility = functions.firestore
-  .document('users/{userId}')
-  .onUpdate(async (change, context) => {
+export const checkAmbassadorEligibility = functions.firestore.onDocumentUpdated(
+  'users/{userId}',
+  async (event) => {
     try {
-      const userId = context.params.userId;
-      const newValue = change.after.data();
-      const previousValue = change.before.data();
+      const userId = event.params.userId;
+      const newValue = event.data?.after?.data();
+      const previousValue = event.data?.before?.data();
 
       // Check if user became eligible for ambassadorship
-      if (newValue.isAmbassador === false && previousValue.isAmbassador === false) {
+      if (newValue && previousValue && newValue.isAmbassador === false && previousValue.isAmbassador === false) {
         const countryCode = newValue.countryCode;
         const languageCode = newValue.preferredLanguage;
 
@@ -356,23 +356,23 @@ export const checkAmbassadorEligibility = functions.firestore
         }
       }
 
-      return null;
+      return;
     } catch (error) {
       console.error('Error in checkAmbassadorEligibility:', error);
-      return null;
+      return;
     }
   });
 
-export const handleAmbassadorRemoval = functions.firestore
-  .document('users/{userId}')
-  .onUpdate(async (change, context) => {
+export const handleAmbassadorRemoval = functions.firestore.onDocumentUpdated(
+  'users/{userId}',
+  async (event) => {
     try {
-      const userId = context.params.userId;
-      const newValue = change.after.data();
-      const previousValue = change.before.data();
+      const userId = event.params.userId;
+      const newValue = event.data?.after?.data();
+      const previousValue = event.data?.before?.data();
 
       // Check if user was removed from ambassador role
-      if (previousValue.isAmbassador === true && newValue.isAmbassador === false) {
+      if (newValue && previousValue && previousValue.isAmbassador === true && newValue.isAmbassador === false) {
         const countryCode = previousValue.ambassadorCountry;
         const languageCode = previousValue.ambassadorLanguage;
 
@@ -396,9 +396,9 @@ export const handleAmbassadorRemoval = functions.firestore
         }
       }
 
-      return null;
+      return;
     } catch (error) {
       console.error('Error in handleAmbassadorRemoval:', error);
-      return null;
+      return;
     }
   });

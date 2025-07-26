@@ -349,12 +349,6 @@ abstract class AppLocalizations {
   /// Description
   ///
   /// In en, this message translates to:
-  /// **'Save Group for Recognition'**
-  String get saveGroupForRecognition;
-
-  /// Description
-  ///
-  /// In en, this message translates to:
   /// **'Live playtime scheduled!'**
   String get playtimeLiveScheduled;
 
@@ -673,12 +667,6 @@ abstract class AppLocalizations {
   /// Description
   ///
   /// In en, this message translates to:
-  /// **'Enter group name'**
-  String get enterGroupName;
-
-  /// Description
-  ///
-  /// In en, this message translates to:
   /// **'Confirm'**
   String get confirm;
 
@@ -868,7 +856,7 @@ abstract class AppLocalizations {
   /// **'Loading...'**
   String get loading;
 
-  /// Description
+  /// Section title for quick action buttons
   ///
   /// In en, this message translates to:
   /// **'Quick Actions'**
@@ -1066,7 +1054,7 @@ abstract class AppLocalizations {
   /// **'Connected Children'**
   String get connectedChildren;
 
-  /// Description
+  /// Tab label for share section
   ///
   /// In en, this message translates to:
   /// **'Share'**
@@ -1099,12 +1087,6 @@ abstract class AppLocalizations {
   /// Description
   ///
   /// In en, this message translates to:
-  /// **'Group Name (Optional)'**
-  String get groupNameOptional;
-
-  /// Description
-  ///
-  /// In en, this message translates to:
   /// **'No playtime sessions found.'**
   String get playtimeNoSessions;
 
@@ -1125,12 +1107,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Close'**
   String get close;
-
-  /// Description
-  ///
-  /// In en, this message translates to:
-  /// **'Known group detected'**
-  String get knownGroupDetected;
 
   /// Description
   ///
@@ -1198,7 +1174,7 @@ abstract class AppLocalizations {
   /// **'Admin Metrics'**
   String get adminMetrics;
 
-  /// Description
+  /// Tab label for overview section
   ///
   /// In en, this message translates to:
   /// **'Overview'**
@@ -1798,7 +1774,7 @@ abstract class AppLocalizations {
   /// **'Export Data'**
   String get exportData;
 
-  /// Localization key for: Rewards
+  /// Tab label for rewards section
   ///
   /// In en, this message translates to:
   /// **'Rewards'**
@@ -2410,7 +2386,7 @@ abstract class AppLocalizations {
   /// **'Verification'**
   String get verification;
 
-  /// Localization key for: Copy Link
+  /// Tooltip for copy link button
   ///
   /// In en, this message translates to:
   /// **'Copy Link'**
@@ -2458,7 +2434,7 @@ abstract class AppLocalizations {
   /// **'Email Notifications'**
   String get emailNotifications;
 
-  /// Localization key for: Ambassador Dashboard
+  /// Title for the ambassador dashboard screen
   ///
   /// In en, this message translates to:
   /// **'Ambassador Dashboard'**
@@ -3064,7 +3040,7 @@ abstract class AppLocalizations {
   /// **'Users'**
   String get users1;
 
-  /// Localization key for: Share Link
+  /// Button label for sharing referral link
   ///
   /// In en, this message translates to:
   /// **'Share Link'**
@@ -3256,10 +3232,10 @@ abstract class AppLocalizations {
   /// **'Settings saved successfully!'**
   String get settingsSavedSuccessfully;
 
-  /// Localization key for: Link copied to clipboard!
+  /// Confirmation message when link is copied
   ///
   /// In en, this message translates to:
-  /// **'Link copied to clipboard!'**
+  /// **'Link copied to clipboard'**
   String get linkCopiedToClipboard;
 
   /// Localization key for: Accept
@@ -3862,7 +3838,7 @@ abstract class AppLocalizations {
   /// **'Error loading permissions: \$error'**
   String get errorLoadingPermissionsError;
 
-  /// Localization key for: Referrals
+  /// Tab label for referrals section
   ///
   /// In en, this message translates to:
   /// **'Referrals'**
@@ -4545,6 +4521,257 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Purchase Now'**
   String get purchase_now_button;
+
+  /// Welcome message for ambassadors
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome, Ambassador!'**
+  String get welcomeAmbassador;
+
+  /// Status label showing ambassador is active
+  ///
+  /// In en, this message translates to:
+  /// **'Active'**
+  String get activeStatus;
+
+  /// Label for total referrals count
+  ///
+  /// In en, this message translates to:
+  /// **'Total Referrals'**
+  String get totalReferrals;
+
+  /// Label for current month statistics
+  ///
+  /// In en, this message translates to:
+  /// **'This Month'**
+  String get thisMonth;
+
+  /// Label for active rewards count
+  ///
+  /// In en, this message translates to:
+  /// **'Active Rewards'**
+  String get activeRewards;
+
+  /// Section title for tier progression
+  ///
+  /// In en, this message translates to:
+  /// **'Next Tier Progress'**
+  String get nextTierProgress;
+
+  /// Label for progress towards premium tier
+  ///
+  /// In en, this message translates to:
+  /// **'Progress to Premium'**
+  String get progressToPremium;
+
+  /// Label for remaining count towards goal
+  ///
+  /// In en, this message translates to:
+  /// **'remaining'**
+  String get remaining;
+
+  /// Section title for monthly referral goal
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly Goal'**
+  String get monthlyGoal;
+
+  /// Status indicating user is meeting monthly goals
+  ///
+  /// In en, this message translates to:
+  /// **'On Track'**
+  String get onTrack;
+
+  /// Status indicating user needs to increase activity
+  ///
+  /// In en, this message translates to:
+  /// **'Needs Attention'**
+  String get needsAttention;
+
+  /// Explanation of monthly referral requirement
+  ///
+  /// In en, this message translates to:
+  /// **'Refer at least 10 new users monthly to maintain ambassador status'**
+  String get monthlyReferralRequirement;
+
+  /// Button label for viewing rewards
+  ///
+  /// In en, this message translates to:
+  /// **'View Rewards'**
+  String get viewRewards;
+
+  /// Section title for referral statistics
+  ///
+  /// In en, this message translates to:
+  /// **'Referral Statistics'**
+  String get referralStatistics;
+
+  /// Label for count of active referrals
+  ///
+  /// In en, this message translates to:
+  /// **'Active Referrals'**
+  String get activeReferrals;
+
+  /// Label for referral conversion rate
+  ///
+  /// In en, this message translates to:
+  /// **'Conversion Rate'**
+  String get conversionRate;
+
+  /// Section title for recent referral activity
+  ///
+  /// In en, this message translates to:
+  /// **'Recent Referrals'**
+  String get recentReferrals;
+
+  /// Section title for ambassador tier benefits
+  ///
+  /// In en, this message translates to:
+  /// **'Tier Benefits'**
+  String get tierBenefits;
+
+  /// Title for QR code section
+  ///
+  /// In en, this message translates to:
+  /// **'Your Referral QR Code'**
+  String get yourReferralQRCode;
+
+  /// Title for referral link section
+  ///
+  /// In en, this message translates to:
+  /// **'Your Referral Link'**
+  String get yourReferralLink;
+
+  /// Section title for sharing options
+  ///
+  /// In en, this message translates to:
+  /// **'Share Your Link'**
+  String get shareYourLink;
+
+  /// Button label for sharing via message
+  ///
+  /// In en, this message translates to:
+  /// **'Message'**
+  String get shareViaMessage;
+
+  /// Button label for sharing via email
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get shareViaEmail;
+
+  /// Button label for additional sharing options
+  ///
+  /// In en, this message translates to:
+  /// **'More Options'**
+  String get shareMore;
+
+  /// Button text to join ambassador program
+  ///
+  /// In en, this message translates to:
+  /// **'Become an Ambassador'**
+  String get becomeAmbassador;
+
+  /// Message shown when user is eligible for ambassador program
+  ///
+  /// In en, this message translates to:
+  /// **'You\'re eligible to become an Ambassador!'**
+  String get ambassadorEligible;
+
+  /// Title for ambassador welcome overlay
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to the Ambassador Program!'**
+  String get ambassadorWelcomeTitle;
+
+  /// Welcome message for new ambassadors
+  ///
+  /// In en, this message translates to:
+  /// **'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.'**
+  String get ambassadorWelcomeMessage;
+
+  /// Title for ambassador promotion notification
+  ///
+  /// In en, this message translates to:
+  /// **'Congratulations! You\'re now an Ambassador!'**
+  String get ambassadorPromotionTitle;
+
+  /// Body text for ambassador promotion notification
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to the {tier} tier! Start sharing your referral link to earn rewards.'**
+  String ambassadorPromotionBody(String tier);
+
+  /// Title for tier upgrade notification
+  ///
+  /// In en, this message translates to:
+  /// **'Tier Upgrade! 🎉'**
+  String get tierUpgradeTitle;
+
+  /// Body text for tier upgrade notification
+  ///
+  /// In en, this message translates to:
+  /// **'Amazing! You\'ve been upgraded from {previousTier} to {newTier} with {totalReferrals} referrals!'**
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  );
+
+  /// Title for monthly performance reminder notification
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly Goal Reminder'**
+  String get monthlyReminderTitle;
+
+  /// Body text for monthly reminder notification
+  ///
+  /// In en, this message translates to:
+  /// **'You have {currentReferrals}/{targetReferrals} referrals this month. {daysRemaining} days left to reach your goal!'**
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  );
+
+  /// Title for performance warning notification
+  ///
+  /// In en, this message translates to:
+  /// **'Ambassador Performance Alert'**
+  String get performanceWarningTitle;
+
+  /// Body text for performance warning notification
+  ///
+  /// In en, this message translates to:
+  /// **'Your monthly referrals ({currentReferrals}) are below the minimum requirement ({minimumRequired}). Your ambassador status may be affected.'**
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  );
+
+  /// Title for ambassador demotion notification
+  ///
+  /// In en, this message translates to:
+  /// **'Ambassador Status Update'**
+  String get ambassadorDemotionTitle;
+
+  /// Body text for ambassador demotion notification
+  ///
+  /// In en, this message translates to:
+  /// **'Your ambassador status has been temporarily suspended due to: {reason}. You can regain your status by meeting the requirements again.'**
+  String ambassadorDemotionBody(String reason);
+
+  /// Title for successful referral notification
+  ///
+  /// In en, this message translates to:
+  /// **'New Referral! 🎉'**
+  String get referralSuccessTitle;
+
+  /// Body text for successful referral notification
+  ///
+  /// In en, this message translates to:
+  /// **'{referredUserName} joined through your referral! You now have {totalReferrals} total referrals.'**
+  String referralSuccessBody(String referredUserName, String totalReferrals);
 }
 
 class _AppLocalizationsDelegate

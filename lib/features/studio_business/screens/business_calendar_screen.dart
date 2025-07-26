@@ -257,23 +257,23 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
         // Responsive grid based on screen width
         int crossAxisCount;
         double childAspectRatio;
-
+        
         if (constraints.maxWidth > 1200) {
           // Large desktop/tablet landscape
-          final crossAxisCount = 4;
-          final childAspectRatio = 2.5;
+          crossAxisCount = 4;
+          childAspectRatio = 2.5;
         } else if (constraints.maxWidth > 800) {
           // Tablet
-          final crossAxisCount = 3;
-          final childAspectRatio = 2.8;
+          crossAxisCount = 3;
+          childAspectRatio = 2.8;
         } else if (constraints.maxWidth > 600) {
           // Large phone/small tablet
-          final crossAxisCount = 2;
-          final childAspectRatio = 3.0;
+          crossAxisCount = 2;
+          childAspectRatio = 3.0;
         } else {
           // Phone
-          final crossAxisCount = 1;
-          final childAspectRatio = 3.5;
+          crossAxisCount = 1;
+          childAspectRatio = 3.5;
         }
 
         return GridView.builder(
@@ -367,20 +367,20 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
 
         if (constraints.maxWidth > 1200) {
           // Large desktop/tablet landscape
-          final crossAxisCount = 6;
-          final childAspectRatio = 1.2;
+          crossAxisCount = 6;
+          childAspectRatio = 1.2;
         } else if (constraints.maxWidth > 800) {
           // Tablet
-          final crossAxisCount = 4;
-          final childAspectRatio = 1.3;
+          crossAxisCount = 4;
+          childAspectRatio = 1.3;
         } else if (constraints.maxWidth > 600) {
           // Large phone/small tablet
-          final crossAxisCount = 3;
-          final childAspectRatio = 1.4;
+          crossAxisCount = 3;
+          childAspectRatio = 1.4;
         } else {
           // Phone
-          final crossAxisCount = 2;
-          final childAspectRatio = 1.5;
+          crossAxisCount = 2;
+          childAspectRatio = 1.5;
         }
 
         return GridView.builder(
