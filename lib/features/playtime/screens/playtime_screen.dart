@@ -384,9 +384,6 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
         );
       }
     } catch (e) {
-        final _errorMessage = e.toString();
-      });
-      
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
