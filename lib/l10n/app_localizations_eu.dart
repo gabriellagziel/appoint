@@ -74,8 +74,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get search => '[EU] [EU] Search';
 
   @override
-  String get cancelInviteConfirmation =>
-      '[EU] [EU] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => '[EU] [EU] Are you sure you want to cancel this invite?';
 
   @override
   String created(String created, Object date) {
@@ -183,8 +182,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully =>
-      '[EU] [EU] Meeting shared successfully';
+  String get meetingSharedSuccessfully => '[EU] [EU] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[EU] [EU] Welcome to Playtime';
@@ -202,8 +200,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get cut => '[EU] Ebaki';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      '[EU] [EU] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => '[EU] [EU] Invite cancelled successfully';
 
   @override
   String get retry => '[EU] [EU] Retry';
@@ -280,8 +277,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get scheduleForLater => '[EU] [EU] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully =>
-      '[EU] [EU] Access revoked successfully';
+  String get accessRevokedSuccessfully => '[EU] [EU] Access revoked successfully';
 
   @override
   String type(String type) {
@@ -406,8 +402,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get dashboard => '[EU] [EU] Dashboard';
 
   @override
-  String get noPermissionForBroadcast =>
-      '[EU] [EU] No permission for broadcast';
+  String get noPermissionForBroadcast => '[EU] [EU] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[EU] Playtime Games – Admin';
@@ -484,8 +479,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get playtimeEnterGameName => '[EU] Jokoaren izena sartu';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[EU] Saioa hasi familiako funtzioetarako';
+  String get pleaseLoginForFamilyFeatures => '[EU] Saioa hasi familiako funtzioetarako';
 
   @override
   String get myInvites => '[EU] [EU] My Invites';
@@ -539,8 +533,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[EU] [EU] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[EU] [EU] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[EU] Admin Metrics';
@@ -561,52 +554,40 @@ class AppLocalizationsEu extends AppLocalizations {
   String get contentLibrary => '[EU] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[EU] No account found with this email address.';
+  String get authErrorUserNotFound => '[EU] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[EU] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[EU] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[EU] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[EU] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[EU] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[EU] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[EU] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[EU] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[EU] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[EU] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[EU] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[EU] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[EU] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[EU] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[EU] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[EU] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN => '[EU] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[EU] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[EU] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[EU] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[EU] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -623,24 +604,19 @@ class AppLocalizationsEu extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[EU] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[EU] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[EU] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[EU] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] The verification code is invalid.';
+  String get REDACTED_TOKEN => '[EU] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[EU] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[EU] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Please enter the verification code.';
+  String get REDACTED_TOKEN => '[EU] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[EU] Missing verification ID.';
@@ -652,56 +628,43 @@ class AppLocalizationsEu extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[EU] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[EU] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[EU] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[EU] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[EU] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[EU] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[EU] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN => '[EU] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Multi-factor information not found.';
+  String get REDACTED_TOKEN => '[EU] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Missing multi-factor session.';
+  String get REDACTED_TOKEN => '[EU] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Invalid multi-factor session.';
+  String get REDACTED_TOKEN => '[EU] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] This second factor is already in use.';
+  String get REDACTED_TOKEN => '[EU] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN => '[EU] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[EU] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[EU] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Email change requires verification.';
+  String get REDACTED_TOKEN => '[EU] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] This phone number is already in use.';
+  String get REDACTED_TOKEN => '[EU] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[EU] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[EU] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[EU] The ID token is invalid.';
@@ -713,12 +676,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[EU] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[EU] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[EU] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[EU] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[EU] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[EU] Invalid custom claims provided.';
@@ -727,87 +688,70 @@ class AppLocalizationsEu extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[EU] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[EU] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[EU] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[EU] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[EU] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[EU] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN => '[EU] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[EU] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[EU] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[EU] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[EU] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[EU] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[EU] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN => '[EU] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[EU] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[EU] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[EU] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN => '[EU] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[EU] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[EU] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN => '[EU] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[EU] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[EU] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[EU] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[EU] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[EU] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[EU] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN => '[EU] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[EU] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[EU] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[EU] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN => '[EU] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[EU] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[EU] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[EU] Missing continue URL.';
@@ -822,8 +766,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get authErrorMissingUid => '[EU] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Missing OAuth client secret.';
+  String get REDACTED_TOKEN => '[EU] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[EU] Firebase project not found.';
@@ -832,23 +775,19 @@ class AppLocalizationsEu extends AppLocalizations {
   String get authErrorReservedClaims => '[EU] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[EU] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[EU] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[EU] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[EU] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[EU] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN => '[EU] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[EU] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[EU] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -897,8 +836,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Virtual session created! Inviting friends... (Basque)';
+  String get REDACTED_TOKEN => '[EU] Virtual session created! Inviting friends... (Basque)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -939,15 +877,13 @@ class AppLocalizationsEu extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[EU] Subscription unavailable (Basque)';
+  String get subscriptionUnavailable => '[EU] Subscription unavailable (Basque)';
 
   @override
   String get confirmBooking => '[EU] Confirm Booking (Basque)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[EU] Failed to update permission: \$e (Basque)';
+  String get failedToUpdatePermissionE => '[EU] Failed to update permission: \$e (Basque)';
 
   @override
   String get reject => '[EU] Reject (Basque)';
@@ -975,8 +911,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get resolve => '[EU] Resolve (Basque)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[EU] Error loading surveys: \$error (Basque)';
+  String get errorLoadingSurveysError => '[EU] Error loading surveys: \$error (Basque)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -984,8 +919,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[EU] Get help with your account (Basque)';
+  String get getHelpWithYourAccount => '[EU] Get help with your account (Basque)';
 
   @override
   String get pay => '[EU] Pay (Basque)';
@@ -1000,8 +934,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[EU] Changes saved successfully! (Basque)';
+  String get changesSavedSuccessfully => '[EU] Changes saved successfully! (Basque)';
 
   @override
   String get createNewInvoice => '[EU] Create New Invoice (Basque)';
@@ -1021,8 +954,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get profileSaved => '[EU] Profile saved! (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1053,8 +985,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] You will receive a confirmation email shortly. (Basque)';
+  String get REDACTED_TOKEN => '[EU] You will receive a confirmation email shortly. (Basque)';
 
   @override
   String get addQuestion => '[EU] Add Question (Basque)';
@@ -1083,26 +1014,22 @@ class AppLocalizationsEu extends AppLocalizations {
   String get surveyManagement => '[EU] Survey Management (Basque)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[EU] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[EU] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[EU] No rooms found. Add your first room! (Basque)';
+  String get noRoomsFoundAddYourFirstRoom => '[EU] No rooms found. Add your first room! (Basque)';
 
   @override
   String get readOurPrivacyPolicy => '[EU] Read our privacy policy (Basque)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[EU] Could not open privacy policy (Basque)';
+  String get couldNotOpenPrivacyPolicy => '[EU] Could not open privacy policy (Basque)';
 
   @override
   String get refresh1 => '[EU] Refresh (Basque)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[EU] Room updated successfully! (Basque)';
+  String get roomUpdatedSuccessfully => '[EU] Room updated successfully! (Basque)';
 
   @override
   String get contentDetail => '[EU] Content Detail (Basque)';
@@ -1111,8 +1038,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get cancelSubscription => '[EU] Cancel Subscription (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Successfully registered as Ambassador! (Basque)';
+  String get REDACTED_TOKEN => '[EU] Successfully registered as Ambassador! (Basque)';
 
   @override
   String get save1 => '[EU] Save (Basque)';
@@ -1121,8 +1047,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get copy1 => '[EU] Copy (Basque)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[EU] Failed to send invitation: \$e (Basque)';
+  String get failedToSendInvitationE => '[EU] Failed to send invitation: \$e (Basque)';
 
   @override
   String get surveyScore => '[EU] Survey Score (Basque)';
@@ -1139,20 +1064,16 @@ class AppLocalizationsEu extends AppLocalizations {
   String get responseDetail => '[EU] Response Detail (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[EU] Failed to start Pro subscription: \$e (Basque)';
+  String get failedToStartProSubscriptionE => '[EU] Failed to start Pro subscription: \$e (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Business Dashboard Entry Screen - Coming Soon (Basque)';
+  String get REDACTED_TOKEN => '[EU] Business Dashboard Entry Screen - Coming Soon (Basque)';
 
   @override
   String get contentFilter => '[EU] Content Filter (Basque)';
@@ -1174,8 +1095,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Business CRM Entry Screen - Coming Soon (Basque)';
+  String get REDACTED_TOKEN => '[EU] Business CRM Entry Screen - Coming Soon (Basque)';
 
   @override
   String get adminDashboard => '[EU] Admin Dashboard';
@@ -1186,16 +1106,13 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[EU] Error loading dashboard: \$error (Basque)';
+  String get errorLoadingDashboardError => '[EU] Error loading dashboard: \$error (Basque)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[EU] Game deleted successfully! (Basque)';
+  String get gameDeletedSuccessfully => '[EU] Game deleted successfully! (Basque)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[EU] View responses - Coming soon! (Basque)';
+  String get viewResponsesComingSoon => '[EU] View responses - Coming soon! (Basque)';
 
   @override
   String get deleteProvider => '[EU] Delete Provider';
@@ -1204,8 +1121,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get errorLoadingRewards => '[EU] Error loading rewards (Basque)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[EU] Failed to delete account: \$e (Basque)';
+  String get failedToDeleteAccountE => '[EU] Failed to delete account: \$e (Basque)';
 
   @override
   String get invited1 => '[EU] Invited (Basque)';
@@ -1220,8 +1136,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get noEvents => '[EU] No events (Basque)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[EU] Game created successfully! (Basque)';
+  String get gameCreatedSuccessfully => '[EU] Game created successfully! (Basque)';
 
   @override
   String get add1 => '[EU] Add (Basque)';
@@ -1241,12 +1156,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get clients => '[EU] Clients (Basque)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[EU] No ambassador data available (Basque)';
+  String get noAmbassadorDataAvailable => '[EU] No ambassador data available (Basque)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[EU] Background deleted successfully! (Basque)';
+  String get backgroundDeletedSuccessfully => '[EU] Background deleted successfully! (Basque)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1254,8 +1167,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[EU] No analytics data available yet. (Basque)';
+  String get noAnalyticsDataAvailableYet => '[EU] No analytics data available yet. (Basque)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1263,8 +1175,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Business Phone Booking Entry Screen - Coming Soon (Basque)';
+  String get REDACTED_TOKEN => '[EU] Business Phone Booking Entry Screen - Coming Soon (Basque)';
 
   @override
   String get verification => '[EU] Verification (Basque)';
@@ -1311,8 +1222,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get businessProfile => '[EU] Business Profile (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Business Booking Entry Screen - Coming Soon (Basque)';
+  String get REDACTED_TOKEN => '[EU] Business Booking Entry Screen - Coming Soon (Basque)';
 
   @override
   String get createNewSurvey => '[EU] Create New Survey (Basque)';
@@ -1336,8 +1246,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get loginFailedE => '[EU] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[EU] Invitation sent successfully! (Basque)';
+  String get invitationSentSuccessfully => '[EU] Invitation sent successfully! (Basque)';
 
   @override
   String get registering => '[EU] Registering... (Basque)';
@@ -1354,12 +1263,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get errorSavingSettingsE => '[EU] Error saving settings: \$e (Basque)';
 
   @override
-  String get appVersionAndInformation =>
-      '[EU] App version and information (Basque)';
+  String get appVersionAndInformation => '[EU] App version and information (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Business Subscription Entry Screen - Coming Soon (Basque)';
+  String get REDACTED_TOKEN => '[EU] Business Subscription Entry Screen - Coming Soon (Basque)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1367,8 +1274,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Your payment has been processed successfully. (Basque)';
+  String get REDACTED_TOKEN => '[EU] Your payment has been processed successfully. (Basque)';
 
   @override
   String get errorE => '[EU] Error: \$e (Basque)';
@@ -1386,8 +1292,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get payment => '[EU] Payment (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Automatically confirm new booking requests (Basque)';
+  String get REDACTED_TOKEN => '[EU] Automatically confirm new booking requests (Basque)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1400,8 +1305,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[EU] Please sign in to upload a background (Basque)';
+  String get pleaseSignInToUploadABackground => '[EU] Please sign in to upload a background (Basque)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1418,22 +1322,19 @@ class AppLocalizationsEu extends AppLocalizations {
   String get autoconfirmBookings => '[EU] Auto-Confirm Bookings (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Redirecting to Stripe checkout for Pro plan... (Basque)';
+  String get REDACTED_TOKEN => '[EU] Redirecting to Stripe checkout for Pro plan... (Basque)';
 
   @override
   String get exportAsCsv => '[EU] Export as CSV (Basque)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[EU] Delete functionality coming soon! (Basque)';
+  String get deleteFunctionalityComingSoon => '[EU] Delete functionality coming soon! (Basque)';
 
   @override
   String get editClient => '[EU] Edit Client (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Are you sure you want to delete this message? (Basque)';
+  String get REDACTED_TOKEN => '[EU] Are you sure you want to delete this message? (Basque)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1444,39 +1345,31 @@ class AppLocalizationsEu extends AppLocalizations {
   String get notAuthenticated => '[EU] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[EU] Privacy request sent to your parents! (Basque)';
+  String get privacyRequestSentToYourParents => '[EU] Privacy request sent to your parents! (Basque)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[EU] Client deleted successfully! (Basque)';
+  String get clientDeletedSuccessfully => '[EU] Client deleted successfully! (Basque)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[EU] Failed to cancel subscription (Basque)';
+  String get failedToCancelSubscription => '[EU] Failed to cancel subscription (Basque)';
 
   @override
   String get allLanguages => '[EU] All Languages (Basque)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[EU] Slot deleted successfully (Basque)';
+  String get slotDeletedSuccessfully => '[EU] Slot deleted successfully (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN => '[EU] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Parents must approve before children can join (Basque)';
+  String get REDACTED_TOKEN => '[EU] Parents must approve before children can join (Basque)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[EU] Subscribe to Pro (€14.99/mo) (Basque)';
+  String get subscribeToPro1499mo => '[EU] Subscribe to Pro (€14.99/mo) (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Business Availability Entry Screen - Coming Soon (Basque)';
+  String get REDACTED_TOKEN => '[EU] Business Availability Entry Screen - Coming Soon (Basque)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1490,8 +1383,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get submitBooking => '[EU] Submit Booking (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Are you sure you want to cancel this appointment? (Basque)';
+  String get REDACTED_TOKEN => '[EU] Are you sure you want to cancel this appointment? (Basque)';
 
   @override
   String get noUpcomingBookings => '[EU] No upcoming bookings (Basque)';
@@ -1509,8 +1401,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get goToDashboard => '[EU] Go to Dashboard (Basque)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[EU] Ambassador Quota Dashboard (Basque)';
+  String get ambassadorQuotaDashboard => '[EU] Ambassador Quota Dashboard (Basque)';
 
   @override
   String get adminSettings => '[EU] Admin Settings';
@@ -1548,8 +1439,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[EU] Client added successfully! (Basque)';
+  String get clientAddedSuccessfully => '[EU] Client added successfully! (Basque)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1567,8 +1457,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get bookAppointment => '[EU] Book Appointment (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[EU] Delete (Basque)';
@@ -1583,15 +1472,13 @@ class AppLocalizationsEu extends AppLocalizations {
   String get manageSubscription => '[EU] Manage Subscription (Basque)';
 
   @override
-  String get requiresInstallFallback =>
-      '[EU] Requires Install Fallback (Basque)';
+  String get requiresInstallFallback => '[EU] Requires Install Fallback (Basque)';
 
   @override
   String get paymentConfirmation => '[EU] Payment Confirmation (Basque)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[EU] Promo applied! Your next bill is free. (Basque)';
+  String get promoAppliedYourNextBillIsFree => '[EU] Promo applied! Your next bill is free. (Basque)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1602,16 +1489,13 @@ class AppLocalizationsEu extends AppLocalizations {
   String get errorLoadingSlots => '[EU] Error loading slots (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Allow other users to find and join this game (Basque)';
+  String get REDACTED_TOKEN => '[EU] Allow other users to find and join this game (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Business Onboarding Screen - Coming Soon (Basque)';
+  String get REDACTED_TOKEN => '[EU] Business Onboarding Screen - Coming Soon (Basque)';
 
   @override
-  String get activateBusinessProfile =>
-      '[EU] Activate Business Profile (Basque)';
+  String get activateBusinessProfile => '[EU] Activate Business Profile (Basque)';
 
   @override
   String get contentNotFound => '[EU] Content not found (Basque)';
@@ -1653,8 +1537,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get shareLink => '[EU] Share Link (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN => '[EU] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[EU] Delete Appointment (Basque)';
@@ -1674,12 +1557,10 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[EU] Update your business information (Basque)';
+  String get updateYourBusinessInformation => '[EU] Update your business information (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN => '[EU] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[EU] Parent Dashboard (Basque)';
@@ -1702,12 +1583,10 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Studio booking is only available on web (Basque)';
+  String get REDACTED_TOKEN => '[EU] Studio booking is only available on web (Basque)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[EU] Error loading branches: \$e (Basque)';
+  String get errorLoadingBranchesE => '[EU] Error loading branches: \$e (Basque)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1723,15 +1602,13 @@ class AppLocalizationsEu extends AppLocalizations {
   String get none => '[EU] None (Basque)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[EU] Failed to update consent: \$e (Basque)';
+  String get failedToUpdateConsentE => '[EU] Failed to update consent: \$e (Basque)';
 
   @override
   String get welcome1 => '[EU] Welcome (Basque)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[EU] Failed to create session: \$e (Basque)';
+  String get failedToCreateSessionE => '[EU] Failed to create session: \$e (Basque)';
 
   @override
   String get inviteContact => '[EU] Invite Contact (Basque)';
@@ -1740,8 +1617,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get surveyEditor => '[EU] Survey Editor (Basque)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[EU] Failed to start Basic subscription: \$e (Basque)';
+  String get failedToStartBasicSubscriptionE => '[EU] Failed to start Basic subscription: \$e (Basque)';
 
   @override
   String get mySchedule => '[EU] My Schedule (Basque)';
@@ -1761,8 +1637,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[EU] Settings saved successfully! (Basque)';
+  String get settingsSavedSuccessfully => '[EU] Settings saved successfully! (Basque)';
 
   @override
   String get linkCopiedToClipboard => '[EU] Link copied to clipboard! (Basque)';
@@ -1782,8 +1657,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[EU] Room deleted successfully! (Basque)';
+  String get roomDeletedSuccessfully => '[EU] Room deleted successfully! (Basque)';
 
   @override
   String get businessCalendar => '[EU] Business Calendar (Basque)';
@@ -1848,8 +1722,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get cancel1 => '[EU] Cancel (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Subscription activated successfully! (Basque)';
+  String get REDACTED_TOKEN => '[EU] Subscription activated successfully! (Basque)';
 
   @override
   String activityLogaction(Object action) {
@@ -1860,8 +1733,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get broadcast => '[EU] Broadcast (Basque)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[EU] No events scheduled this week (Basque)';
+  String get noEventsScheduledThisWeek => '[EU] No events scheduled this week (Basque)';
 
   @override
   String get googleCalendar => '[EU] Google Calendar (Basque)';
@@ -1873,8 +1745,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get childDashboard => '[EU] Child Dashboard (Basque)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[EU] Failed to upload background: \$e (Basque)';
+  String get failedToUploadBackgroundE => '[EU] Failed to upload background: \$e (Basque)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1893,8 +1764,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get noAppointments => '[EU] No appointments (Basque)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[EU] • Unlimited bookings per week (Basque)';
+  String get unlimitedBookingsPerWeek => '[EU] • Unlimited bookings per week (Basque)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1902,19 +1772,16 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[EU] Scheduled at: \$scheduledAt (Basque)';
+  String get scheduledAtScheduledat => '[EU] Scheduled at: \$scheduledAt (Basque)';
 
   @override
   String get selectStaff => '[EU] Select Staff (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Subscription cancelled successfully (Basque)';
+  String get REDACTED_TOKEN => '[EU] Subscription cancelled successfully (Basque)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[EU] Cancel Appointment (Basque)';
@@ -1928,8 +1795,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get businessSignup => '[EU] Business Signup (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Business Completion Screen - Coming Soon (Basque)';
+  String get REDACTED_TOKEN => '[EU] Business Completion Screen - Coming Soon (Basque)';
 
   @override
   String get createGame1 => '[EU] Create Game (Basque)';
@@ -1943,8 +1809,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get pleaseEnterAPromoCode => '[EU] Please enter a promo code (Basque)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[EU] Error loading availability: \$e (Basque)';
+  String get errorLoadingAvailabilityE => '[EU] Error loading availability: \$e (Basque)';
 
   @override
   String get parentalControls => '[EU] Parental Controls (Basque)';
@@ -1953,15 +1818,13 @@ class AppLocalizationsEu extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[EU] Child linked successfully! (Basque)';
+  String get childLinkedSuccessfully => '[EU] Child linked successfully! (Basque)';
 
   @override
   String get create => '[EU] Create (Basque)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[EU] No external meetings found. (Basque)';
+  String get noExternalMeetingsFound => '[EU] No external meetings found. (Basque)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1969,15 +1832,13 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[EU] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[EU] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[EU] Scheduler Screen (Basque)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[EU] Client updated successfully! (Basque)';
+  String get clientUpdatedSuccessfully => '[EU] Client updated successfully! (Basque)';
 
   @override
   String get surveyResponses => '[EU] Survey Responses (Basque)';
@@ -2003,12 +1864,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get errorLoadingEvents => '[EU] Error loading events (Basque)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[EU] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[EU] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[EU] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[EU] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[EU] Success (Basque)';
@@ -2027,12 +1886,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get readWrite => '[EU] Read & Write (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Redirecting to Stripe checkout for Basic plan... (Basque)';
+  String get REDACTED_TOKEN => '[EU] Redirecting to Stripe checkout for Basic plan... (Basque)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[EU] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[EU] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[EU] Pick Date (Basque)';
@@ -2068,12 +1925,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get businessLogin => '[EU] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[EU] Invoice created successfully! (Basque)';
+  String get invoiceCreatedSuccessfully => '[EU] Invoice created successfully! (Basque)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[EU] No time series data available (Basque)';
+  String get noTimeSeriesDataAvailable => '[EU] No time series data available (Basque)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2086,8 +1941,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[EU] Failed to send privacy request: \$e (Basque)';
+  String get failedToSendPrivacyRequestE => '[EU] Failed to send privacy request: \$e (Basque)';
 
   @override
   String get chooseYourPlan => '[EU] Choose Your Plan (Basque)';
@@ -2102,8 +1956,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get eventCreated => '[EU] Event created (Basque)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[EU] Subscribe to Basic (€4.99/mo) (Basque)';
+  String get subscribeToBasic499mo => '[EU] Subscribe to Basic (€4.99/mo) (Basque)';
 
   @override
   String get completion => '[EU] Completion (Basque)';
@@ -2124,12 +1977,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get deleteSurvey => '[EU] Delete Survey (Basque)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[EU] Game approved successfully! (Basque)';
+  String get gameApprovedSuccessfully => '[EU] Game approved successfully! (Basque)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[EU] Error loading permissions: \$error (Basque)';
+  String get errorLoadingPermissionsError => '[EU] Error loading permissions: \$error (Basque)';
 
   @override
   String get referrals => '[EU] Referrals (Basque)';
@@ -2171,8 +2022,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get organizations => '[EU] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[EU] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[EU] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[EU] Create New Game (Basque)';
@@ -2181,12 +2031,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get next1 => '[EU] Next (Basque)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[EU] Background uploaded successfully! (Basque)';
+  String get backgroundUploadedSuccessfully => '[EU] Background uploaded successfully! (Basque)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[EU] No appointment requests found. (Basque)';
+  String get noAppointmentRequestsFound => '[EU] No appointment requests found. (Basque)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2213,8 +2061,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[EU] Failed to create game: \$e (Basque)';
@@ -2223,8 +2070,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get noChartDataAvailable => '[EU] No chart data available (Basque)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[EU] • Phone-based booking system (Basque)';
+  String get phonebasedBookingSystem => '[EU] • Phone-based booking system (Basque)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2233,8 +2079,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get invoices => '[EU] Invoices (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2261,12 +2106,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get iDoNotConsent => '[EU] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] No clients found. Add your first client! (Basque)';
+  String get REDACTED_TOKEN => '[EU] No clients found. Add your first client! (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN => '[EU] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[EU] Group: \$groupId';
@@ -2289,8 +2132,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[EU] • CRM dashboard with analytics (Basque)';
+  String get crmDashboardWithAnalytics => '[EU] • CRM dashboard with analytics (Basque)';
 
   @override
   String get contentLibrary1 => '[EU] Content Library (Basque)';
@@ -2302,30 +2144,25 @@ class AppLocalizationsEu extends AppLocalizations {
   String get subscriptionManagement => '[EU] Subscription Management (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Monetization settings will be implemented here (Basque)';
+  String get REDACTED_TOKEN => '[EU] Monetization settings will be implemented here (Basque)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[EU] Failed to apply promo code: \$e (Basque)';
+  String get failedToApplyPromoCodeE => '[EU] Failed to apply promo code: \$e (Basque)';
 
   @override
   String get editProvider => '[EU] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[EU] Localization Contribution (Basque)';
+  String get localizationContribution => '[EU] Localization Contribution (Basque)';
 
   @override
   String get parentalConsent => '[EU] Parental Consent (Basque)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[EU] Business Signup Screen - Coming Soon (Basque)';
+  String get businessSignupScreenComingSoon => '[EU] Business Signup Screen - Coming Soon (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      '[EU] Are you sure you want to delete this appointment? (Basque)';
+  String get REDACTED_TOKEN => '[EU] Are you sure you want to delete this appointment? (Basque)';
 
   @override
   String get syncAppointment => '[EU] Sync Appointment (Basque)';
@@ -2337,15 +2174,13 @@ class AppLocalizationsEu extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[EU] Business Setup Screen - Coming Soon (Basque)';
+  String get businessSetupScreenComingSoon => '[EU] Business Setup Screen - Coming Soon (Basque)';
 
   @override
   String get edit1 => '[EU] Edit (Basque)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[EU] No events scheduled this month (Basque)';
+  String get noEventsScheduledThisMonth => '[EU] No events scheduled this month (Basque)';
 
   @override
   String get businessDashboard => '[EU] Business Dashboard (Basque)';
@@ -2359,8 +2194,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[EU] Manage Staff Availability (Basque)';
+  String get manageStaffAvailability => '[EU] Manage Staff Availability (Basque)';
 
   @override
   String get noMissingTranslations => '[EU] No missing translations (Basque)';
@@ -2377,8 +2211,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get noUsers => '[EU] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[EU] Error loading referral code (Basque)';
+  String get errorLoadingReferralCode => '[EU] Error loading referral code (Basque)';
 
   @override
   String get allCountries => '[EU] All Countries (Basque)';
@@ -2393,8 +2226,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get deleteMessage => '[EU] Delete Message (Basque)';
 
   @override
-  String get REDACTED_TOKEN =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[EU] changeRole (TRANSLATE)';
@@ -2405,8 +2237,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[EU] Opening customer portal... (Basque)';
+  String get openingCustomerPortal => '[EU] Opening customer portal... (Basque)';
 
   @override
   String get signOut => '[EU] Sign Out (Basque)';
@@ -2417,8 +2248,7 @@ class AppLocalizationsEu extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[EU] Upgrade to Business (Basque)';
@@ -2444,8 +2274,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[EU] View Responses (Basque)';
@@ -2474,8 +2303,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2493,8 +2321,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description =>
-      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2503,8 +2330,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title =>
-      'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2552,8 +2378,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement =>
-      'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2601,12 +2426,10 @@ class AppLocalizationsEu extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage =>
-      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle =>
-      '[EU] Congratulations! You\'re now an Ambassador! (Basque)';
+  String get ambassadorPromotionTitle => '[EU] Congratulations! You\'re now an Ambassador! (Basque)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2617,11 +2440,7 @@ class AppLocalizationsEu extends AppLocalizations {
   String get tierUpgradeTitle => '[EU] Tier Upgrade! 🎉 (Basque)';
 
   @override
-  String tierUpgradeBody(
-    String previousTier,
-    String newTier,
-    String totalReferrals,
-  ) {
+  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
     return '[EU] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Basque)';
   }
 
@@ -2629,29 +2448,20 @@ class AppLocalizationsEu extends AppLocalizations {
   String get monthlyReminderTitle => '[EU] Monthly Goal Reminder (Basque)';
 
   @override
-  String monthlyReminderBody(
-    String currentReferrals,
-    String targetReferrals,
-    String daysRemaining,
-  ) {
+  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
     return '[EU] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Basque)';
   }
 
   @override
-  String get performanceWarningTitle =>
-      '[EU] Ambassador Performance Alert (Basque)';
+  String get performanceWarningTitle => '[EU] Ambassador Performance Alert (Basque)';
 
   @override
-  String performanceWarningBody(
-    String currentReferrals,
-    String minimumRequired,
-  ) {
+  String performanceWarningBody(String currentReferrals, String minimumRequired) {
     return '[EU] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Basque)';
   }
 
   @override
-  String get ambassadorDemotionTitle =>
-      '[EU] Ambassador Status Update (Basque)';
+  String get ambassadorDemotionTitle => '[EU] Ambassador Status Update (Basque)';
 
   @override
   String ambassadorDemotionBody(String reason) {
