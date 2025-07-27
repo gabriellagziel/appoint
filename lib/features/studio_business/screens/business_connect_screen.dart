@@ -2,26 +2,21 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 class BusinessConnectScreen extends ConsumerStatefulWidget {
   const BusinessConnectScreen({super.key});
-
   @override
   ConsumerState<BusinessConnectScreen> createState() =>
       _BusinessConnectScreenState();
 }
-
 class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
   final _formKey = GlobalKey<FormState>();
   final _codeController = TextEditingController();
   bool _isConnecting = false;
-
   @override
   void dispose() {
     _codeController.dispose();
     super.dispose();
   }
-
   @override
   Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(title: const Text('Activate Business Profile')),
@@ -92,25 +87,19 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
       ),
     );
   }
-
   Future<void> _connectBusiness() async {
     if (!_formKey.currentState!.validate()) {
       return;
     }
-
     setState(() => _isConnecting = true);
-
     try {
       final user = FirebaseAuth.instance.currentUser;
       if (user == null) throw Exception('Not authenticated');
-
       final upgradeCode = _codeController.text.trim();
-
       // Validate the upgrade code (in a real app, this would check against a database)
       if (!_isValidUpgradeCode(upgradeCode)) {
         throw Exception('Invalid upgrade code');
       }
-
       // Update user's business mode
       await FirebaseFirestore.instance
           .collection('users')
@@ -120,7 +109,6 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
         'upgradeCode': upgradeCode,
         'businessActivatedAt': DateTime.now().toIso8601String(),
       });
-
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
@@ -138,7 +126,6 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
       }
     }
   }
-
   bool _isValidUpgradeCode(String code) {
     // Simple validation - in a real app, this would check against a database
     return code.startsWith('UPGRADE_') && code.length >= 10;
