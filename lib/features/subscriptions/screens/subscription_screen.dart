@@ -78,20 +78,20 @@ class SubscriptionScreen extends ConsumerWidget {
       children: [
         // Current subscription status
         _buildCurrentStatus(userSubscriptionAsync, statusAsync, l10n),
-        
+
         const SizedBox(height: 24),
-        
+
         // Plans
         Text(
           'Choose Your Plan',
           style: Theme.of(context).textTheme.headlineSmall,
         ),
         const SizedBox(height: 16),
-        
+
         ...plans.map((plan) => _buildPlanCard(context, ref, plan, userSubscriptionAsync, l10n)),
-        
+
         const SizedBox(height: 24),
-        
+
         // Features comparison
         _buildFeaturesComparison(plans, l10n),
       ],
@@ -266,9 +266,9 @@ class SubscriptionScreen extends ConsumerWidget {
                   ),
               ],
             ),
-            
+
             const SizedBox(height: 16),
-            
+
             // Price
             Row(
               children: [
@@ -303,9 +303,9 @@ class SubscriptionScreen extends ConsumerWidget {
                 ),
               ],
             ),
-            
+
             const SizedBox(height: 20),
-            
+
             // Features
             ...plan.features.map((feature) => Padding(
               padding: const EdgeInsets.only(bottom: 8),
@@ -322,9 +322,9 @@ class SubscriptionScreen extends ConsumerWidget {
                 ],
               ),
             )),
-            
+
             const SizedBox(height: 24),
-            
+
             // Subscribe button
             SizedBox(
               width: double.infinity,
@@ -443,7 +443,7 @@ class SubscriptionScreen extends ConsumerWidget {
     try {
       final service = ref.read(subscriptionServiceProvider);
       await service.subscribeToPlan(plan.id);
-      
+
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Successfully subscribed to ${plan.name}!')),
