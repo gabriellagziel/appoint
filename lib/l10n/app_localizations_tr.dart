@@ -74,8 +74,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get search => '[TR] Ara';
 
   @override
-  String get cancelInviteConfirmation =>
-      '[TR] [TR] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => '[TR] [TR] Are you sure you want to cancel this invite?';
 
   @override
   String created(String created, Object date) {
@@ -89,8 +88,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get playtimeLiveScheduled => '[TR] [TR] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation =>
-      '[TR] [TR] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => '[TR] [TR] Are you sure you want to revoke access?';
 
   @override
   String get download => '[TR] İndir';
@@ -184,8 +182,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully =>
-      '[TR] [TR] Meeting shared successfully';
+  String get meetingSharedSuccessfully => '[TR] [TR] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[TR] [TR] Welcome to Playtime';
@@ -482,8 +479,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get playtimeEnterGameName => '[TR] [TR] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[TR] [TR] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '[TR] [TR] Please login to access family features';
 
   @override
   String get myInvites => '[TR] [TR] My Invites';
@@ -537,8 +533,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[TR] [TR] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[TR] [TR] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[TR] Admin Metrics';
@@ -559,52 +554,40 @@ class AppLocalizationsTr extends AppLocalizations {
   String get contentLibrary => '[TR] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[TR] No account found with this email address.';
+  String get authErrorUserNotFound => '[TR] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[TR] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[TR] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[TR] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[TR] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[TR] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[TR] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[TR] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[TR] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[TR] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[TR] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[TR] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[TR] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[TR] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[TR] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[TR] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[TR] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      '[TR] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential => '[TR] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[TR] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[TR] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[TR] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[TR] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -621,24 +604,19 @@ class AppLocalizationsTr extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[TR] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[TR] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[TR] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[TR] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode =>
-      '[TR] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode => '[TR] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[TR] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[TR] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode =>
-      '[TR] Please enter the verification code.';
+  String get authErrorMissingVerificationCode => '[TR] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[TR] Missing verification ID.';
@@ -650,56 +628,43 @@ class AppLocalizationsTr extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[TR] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[TR] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[TR] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[TR] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[TR] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[TR] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[TR] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired =>
-      '[TR] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired => '[TR] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound =>
-      '[TR] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound => '[TR] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession =>
-      '[TR] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession => '[TR] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession =>
-      '[TR] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession => '[TR] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      '[TR] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse => '[TR] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      '[TR] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded => '[TR] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[TR] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[TR] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      '[TR] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification => '[TR] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      '[TR] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists => '[TR] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[TR] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[TR] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[TR] The ID token is invalid.';
@@ -711,12 +676,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[TR] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[TR] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[TR] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[TR] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[TR] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[TR] Invalid custom claims provided.';
@@ -725,87 +688,70 @@ class AppLocalizationsTr extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[TR] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[TR] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[TR] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[TR] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[TR] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[TR] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      '[TR] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain => '[TR] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[TR] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[TR] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[TR] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[TR] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[TR] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[TR] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      '[TR] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength => '[TR] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[TR] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[TR] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[TR] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      '[TR] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization => '[TR] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[TR] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[TR] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      '[TR] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator => '[TR] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[TR] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[TR] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[TR] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[TR] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[TR] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[TR] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      '[TR] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration => '[TR] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[TR] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[TR] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[TR] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      '[TR] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded => '[TR] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[TR] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[TR] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[TR] Missing continue URL.';
@@ -820,8 +766,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get authErrorMissingUid => '[TR] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret =>
-      '[TR] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret => '[TR] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[TR] Firebase project not found.';
@@ -830,23 +775,19 @@ class AppLocalizationsTr extends AppLocalizations {
   String get authErrorReservedClaims => '[TR] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[TR] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[TR] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[TR] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[TR] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[TR] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      '[TR] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri => '[TR] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[TR] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[TR] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -895,8 +836,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      '[TR] Virtual session created! Inviting friends... (Turkish)';
+  String get virtualSessionCreatedInvitingFriends => '[TR] Virtual session created! Inviting friends... (Turkish)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -937,15 +877,13 @@ class AppLocalizationsTr extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[TR] Subscription unavailable (Turkish)';
+  String get subscriptionUnavailable => '[TR] Subscription unavailable (Turkish)';
 
   @override
   String get confirmBooking => '[TR] Confirm Booking (Turkish)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[TR] Failed to update permission: \$e (Turkish)';
+  String get failedToUpdatePermissionE => '[TR] Failed to update permission: \$e (Turkish)';
 
   @override
   String get reject => '[TR] Reject (Turkish)';
@@ -973,8 +911,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get resolve => '[TR] Resolve (Turkish)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[TR] Error loading surveys: \$error (Turkish)';
+  String get errorLoadingSurveysError => '[TR] Error loading surveys: \$error (Turkish)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -982,8 +919,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[TR] Get help with your account (Turkish)';
+  String get getHelpWithYourAccount => '[TR] Get help with your account (Turkish)';
 
   @override
   String get pay => '[TR] Pay (Turkish)';
@@ -998,8 +934,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[TR] Changes saved successfully! (Turkish)';
+  String get changesSavedSuccessfully => '[TR] Changes saved successfully! (Turkish)';
 
   @override
   String get createNewInvoice => '[TR] Create New Invoice (Turkish)';
@@ -1019,8 +954,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get profileSaved => '[TR] Profile saved! (Turkish)';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1051,8 +985,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      '[TR] You will receive a confirmation email shortly. (Turkish)';
+  String get youWillReceiveAConfirmationEmailShortly => '[TR] You will receive a confirmation email shortly. (Turkish)';
 
   @override
   String get addQuestion => '[TR] Add Question (Turkish)';
@@ -1081,26 +1014,22 @@ class AppLocalizationsTr extends AppLocalizations {
   String get surveyManagement => '[TR] Survey Management (Turkish)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[TR] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[TR] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[TR] No rooms found. Add your first room! (Turkish)';
+  String get noRoomsFoundAddYourFirstRoom => '[TR] No rooms found. Add your first room! (Turkish)';
 
   @override
   String get readOurPrivacyPolicy => '[TR] Read our privacy policy (Turkish)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[TR] Could not open privacy policy (Turkish)';
+  String get couldNotOpenPrivacyPolicy => '[TR] Could not open privacy policy (Turkish)';
 
   @override
   String get refresh1 => '[TR] Refresh (Turkish)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[TR] Room updated successfully! (Turkish)';
+  String get roomUpdatedSuccessfully => '[TR] Room updated successfully! (Turkish)';
 
   @override
   String get contentDetail => '[TR] Content Detail (Turkish)';
@@ -1109,8 +1038,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get cancelSubscription => '[TR] Cancel Subscription (Turkish)';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      '[TR] Successfully registered as Ambassador! (Turkish)';
+  String get successfullyRegisteredAsAmbassador => '[TR] Successfully registered as Ambassador! (Turkish)';
 
   @override
   String get save1 => '[TR] Save (Turkish)';
@@ -1119,8 +1047,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get copy1 => '[TR] Copy (Turkish)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[TR] Failed to send invitation: \$e (Turkish)';
+  String get failedToSendInvitationE => '[TR] Failed to send invitation: \$e (Turkish)';
 
   @override
   String get surveyScore => '[TR] Survey Score (Turkish)';
@@ -1137,20 +1064,16 @@ class AppLocalizationsTr extends AppLocalizations {
   String get responseDetail => '[TR] Response Detail (Turkish)';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[TR] Failed to start Pro subscription: \$e (Turkish)';
+  String get failedToStartProSubscriptionE => '[TR] Failed to start Pro subscription: \$e (Turkish)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      '[TR] Business Dashboard Entry Screen - Coming Soon (Turkish)';
+  String get businessDashboardEntryScreenComingSoon => '[TR] Business Dashboard Entry Screen - Coming Soon (Turkish)';
 
   @override
   String get contentFilter => '[TR] Content Filter (Turkish)';
@@ -1172,8 +1095,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      '[TR] Business CRM Entry Screen - Coming Soon (Turkish)';
+  String get businessCrmEntryScreenComingSoon => '[TR] Business CRM Entry Screen - Coming Soon (Turkish)';
 
   @override
   String get adminDashboard => '[TR] Admin Dashboard';
@@ -1184,16 +1106,13 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[TR] Error loading dashboard: \$error (Turkish)';
+  String get errorLoadingDashboardError => '[TR] Error loading dashboard: \$error (Turkish)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[TR] Game deleted successfully! (Turkish)';
+  String get gameDeletedSuccessfully => '[TR] Game deleted successfully! (Turkish)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[TR] View responses - Coming soon! (Turkish)';
+  String get viewResponsesComingSoon => '[TR] View responses - Coming soon! (Turkish)';
 
   @override
   String get deleteProvider => '[TR] Delete Provider';
@@ -1202,8 +1121,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get errorLoadingRewards => '[TR] Error loading rewards (Turkish)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[TR] Failed to delete account: \$e (Turkish)';
+  String get failedToDeleteAccountE => '[TR] Failed to delete account: \$e (Turkish)';
 
   @override
   String get invited1 => '[TR] Invited (Turkish)';
@@ -1218,8 +1136,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get noEvents => '[TR] No events (Turkish)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[TR] Game created successfully! (Turkish)';
+  String get gameCreatedSuccessfully => '[TR] Game created successfully! (Turkish)';
 
   @override
   String get add1 => '[TR] Add (Turkish)';
@@ -1239,12 +1156,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get clients => '[TR] Clients (Turkish)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[TR] No ambassador data available (Turkish)';
+  String get noAmbassadorDataAvailable => '[TR] No ambassador data available (Turkish)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[TR] Background deleted successfully! (Turkish)';
+  String get backgroundDeletedSuccessfully => '[TR] Background deleted successfully! (Turkish)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1252,8 +1167,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[TR] No analytics data available yet. (Turkish)';
+  String get noAnalyticsDataAvailableYet => '[TR] No analytics data available yet. (Turkish)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1261,8 +1175,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      '[TR] Business Phone Booking Entry Screen - Coming Soon (Turkish)';
+  String get businessPhoneBookingEntryScreenComingSoon => '[TR] Business Phone Booking Entry Screen - Coming Soon (Turkish)';
 
   @override
   String get verification => '[TR] Verification (Turkish)';
@@ -1309,8 +1222,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get businessProfile => '[TR] Business Profile (Turkish)';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      '[TR] Business Booking Entry Screen - Coming Soon (Turkish)';
+  String get businessBookingEntryScreenComingSoon => '[TR] Business Booking Entry Screen - Coming Soon (Turkish)';
 
   @override
   String get createNewSurvey => '[TR] Create New Survey (Turkish)';
@@ -1334,8 +1246,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get loginFailedE => '[TR] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[TR] Invitation sent successfully! (Turkish)';
+  String get invitationSentSuccessfully => '[TR] Invitation sent successfully! (Turkish)';
 
   @override
   String get registering => '[TR] Registering... (Turkish)';
@@ -1349,16 +1260,13 @@ class AppLocalizationsTr extends AppLocalizations {
   String get home1 => '[TR] Home (Turkish)';
 
   @override
-  String get errorSavingSettingsE =>
-      '[TR] Error saving settings: \$e (Turkish)';
+  String get errorSavingSettingsE => '[TR] Error saving settings: \$e (Turkish)';
 
   @override
-  String get appVersionAndInformation =>
-      '[TR] App version and information (Turkish)';
+  String get appVersionAndInformation => '[TR] App version and information (Turkish)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      '[TR] Business Subscription Entry Screen - Coming Soon (Turkish)';
+  String get businessSubscriptionEntryScreenComingSoon => '[TR] Business Subscription Entry Screen - Coming Soon (Turkish)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1366,8 +1274,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      '[TR] Your payment has been processed successfully. (Turkish)';
+  String get yourPaymentHasBeenProcessedSuccessfully => '[TR] Your payment has been processed successfully. (Turkish)';
 
   @override
   String get errorE => '[TR] Error: \$e (Turkish)';
@@ -1376,8 +1283,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get viewAll1 => '[TR] View All (Turkish)';
 
   @override
-  String get editSurveyComingSoon =>
-      '[TR] Edit survey - Coming soon! (Turkish)';
+  String get editSurveyComingSoon => '[TR] Edit survey - Coming soon! (Turkish)';
 
   @override
   String get enterOtp => '[TR] Enter OTP (Turkish)';
@@ -1386,8 +1292,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get payment => '[TR] Payment (Turkish)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      '[TR] Automatically confirm new booking requests (Turkish)';
+  String get automaticallyConfirmNewBookingRequests => '[TR] Automatically confirm new booking requests (Turkish)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1400,8 +1305,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[TR] Please sign in to upload a background (Turkish)';
+  String get pleaseSignInToUploadABackground => '[TR] Please sign in to upload a background (Turkish)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1418,22 +1322,19 @@ class AppLocalizationsTr extends AppLocalizations {
   String get autoconfirmBookings => '[TR] Auto-Confirm Bookings (Turkish)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      '[TR] Redirecting to Stripe checkout for Pro plan... (Turkish)';
+  String get redirectingToStripeCheckoutForProPlan => '[TR] Redirecting to Stripe checkout for Pro plan... (Turkish)';
 
   @override
   String get exportAsCsv => '[TR] Export as CSV (Turkish)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[TR] Delete functionality coming soon! (Turkish)';
+  String get deleteFunctionalityComingSoon => '[TR] Delete functionality coming soon! (Turkish)';
 
   @override
   String get editClient => '[TR] Edit Client (Turkish)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      '[TR] Are you sure you want to delete this message? (Turkish)';
+  String get areYouSureYouWantToDeleteThisMessage => '[TR] Are you sure you want to delete this message? (Turkish)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1444,39 +1345,31 @@ class AppLocalizationsTr extends AppLocalizations {
   String get notAuthenticated => '[TR] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[TR] Privacy request sent to your parents! (Turkish)';
+  String get privacyRequestSentToYourParents => '[TR] Privacy request sent to your parents! (Turkish)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[TR] Client deleted successfully! (Turkish)';
+  String get clientDeletedSuccessfully => '[TR] Client deleted successfully! (Turkish)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[TR] Failed to cancel subscription (Turkish)';
+  String get failedToCancelSubscription => '[TR] Failed to cancel subscription (Turkish)';
 
   @override
   String get allLanguages => '[TR] All Languages (Turkish)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[TR] Slot deleted successfully (Turkish)';
+  String get slotDeletedSuccessfully => '[TR] Slot deleted successfully (Turkish)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      '[TR] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => '[TR] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      '[TR] Parents must approve before children can join (Turkish)';
+  String get parentsMustApproveBeforeChildrenCanJoin => '[TR] Parents must approve before children can join (Turkish)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[TR] Subscribe to Pro (€14.99/mo) (Turkish)';
+  String get subscribeToPro1499mo => '[TR] Subscribe to Pro (€14.99/mo) (Turkish)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      '[TR] Business Availability Entry Screen - Coming Soon (Turkish)';
+  String get businessAvailabilityEntryScreenComingSoon => '[TR] Business Availability Entry Screen - Coming Soon (Turkish)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1490,8 +1383,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get submitBooking => '[TR] Submit Booking (Turkish)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      '[TR] Are you sure you want to cancel this appointment? (Turkish)';
+  String get areYouSureYouWantToCancelThisAppointment => '[TR] Are you sure you want to cancel this appointment? (Turkish)';
 
   @override
   String get noUpcomingBookings => '[TR] No upcoming bookings (Turkish)';
@@ -1509,8 +1401,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get goToDashboard => '[TR] Go to Dashboard (Turkish)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[TR] Ambassador Quota Dashboard (Turkish)';
+  String get ambassadorQuotaDashboard => '[TR] Ambassador Quota Dashboard (Turkish)';
 
   @override
   String get adminSettings => '[TR] Admin Settings';
@@ -1548,8 +1439,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[TR] Client added successfully! (Turkish)';
+  String get clientAddedSuccessfully => '[TR] Client added successfully! (Turkish)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1567,8 +1457,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get bookAppointment => '[TR] Book Appointment (Turkish)';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[TR] Delete (Turkish)';
@@ -1583,15 +1472,13 @@ class AppLocalizationsTr extends AppLocalizations {
   String get manageSubscription => '[TR] Manage Subscription (Turkish)';
 
   @override
-  String get requiresInstallFallback =>
-      '[TR] Requires Install Fallback (Turkish)';
+  String get requiresInstallFallback => '[TR] Requires Install Fallback (Turkish)';
 
   @override
   String get paymentConfirmation => '[TR] Payment Confirmation (Turkish)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[TR] Promo applied! Your next bill is free. (Turkish)';
+  String get promoAppliedYourNextBillIsFree => '[TR] Promo applied! Your next bill is free. (Turkish)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1602,16 +1489,13 @@ class AppLocalizationsTr extends AppLocalizations {
   String get errorLoadingSlots => '[TR] Error loading slots (Turkish)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      '[TR] Allow other users to find and join this game (Turkish)';
+  String get allowOtherUsersToFindAndJoinThisGame => '[TR] Allow other users to find and join this game (Turkish)';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      '[TR] Business Onboarding Screen - Coming Soon (Turkish)';
+  String get businessOnboardingScreenComingSoon => '[TR] Business Onboarding Screen - Coming Soon (Turkish)';
 
   @override
-  String get activateBusinessProfile =>
-      '[TR] Activate Business Profile (Turkish)';
+  String get activateBusinessProfile => '[TR] Activate Business Profile (Turkish)';
 
   @override
   String get contentNotFound => '[TR] Content not found (Turkish)';
@@ -1653,8 +1537,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get shareLink => '[TR] Share Link (Turkish)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      '[TR] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => '[TR] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[TR] Delete Appointment (Turkish)';
@@ -1674,12 +1557,10 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[TR] Update your business information (Turkish)';
+  String get updateYourBusinessInformation => '[TR] Update your business information (Turkish)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      '[TR] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => '[TR] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[TR] Parent Dashboard (Turkish)';
@@ -1702,12 +1583,10 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      '[TR] Studio booking is only available on web (Turkish)';
+  String get studioBookingIsOnlyAvailableOnWeb => '[TR] Studio booking is only available on web (Turkish)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[TR] Error loading branches: \$e (Turkish)';
+  String get errorLoadingBranchesE => '[TR] Error loading branches: \$e (Turkish)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1723,15 +1602,13 @@ class AppLocalizationsTr extends AppLocalizations {
   String get none => '[TR] None (Turkish)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[TR] Failed to update consent: \$e (Turkish)';
+  String get failedToUpdateConsentE => '[TR] Failed to update consent: \$e (Turkish)';
 
   @override
   String get welcome1 => '[TR] Welcome (Turkish)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[TR] Failed to create session: \$e (Turkish)';
+  String get failedToCreateSessionE => '[TR] Failed to create session: \$e (Turkish)';
 
   @override
   String get inviteContact => '[TR] Invite Contact (Turkish)';
@@ -1740,8 +1617,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get surveyEditor => '[TR] Survey Editor (Turkish)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[TR] Failed to start Basic subscription: \$e (Turkish)';
+  String get failedToStartBasicSubscriptionE => '[TR] Failed to start Basic subscription: \$e (Turkish)';
 
   @override
   String get mySchedule => '[TR] My Schedule (Turkish)';
@@ -1761,12 +1637,10 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[TR] Settings saved successfully! (Turkish)';
+  String get settingsSavedSuccessfully => '[TR] Settings saved successfully! (Turkish)';
 
   @override
-  String get linkCopiedToClipboard =>
-      '[TR] Link copied to clipboard! (Turkish)';
+  String get linkCopiedToClipboard => '[TR] Link copied to clipboard! (Turkish)';
 
   @override
   String get accept1 => '[TR] Accept (Turkish)';
@@ -1783,8 +1657,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[TR] Room deleted successfully! (Turkish)';
+  String get roomDeletedSuccessfully => '[TR] Room deleted successfully! (Turkish)';
 
   @override
   String get businessCalendar => '[TR] Business Calendar (Turkish)';
@@ -1849,8 +1722,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get cancel1 => '[TR] Cancel (Turkish)';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      '[TR] Subscription activated successfully! (Turkish)';
+  String get subscriptionActivatedSuccessfully => '[TR] Subscription activated successfully! (Turkish)';
 
   @override
   String activityLogaction(Object action) {
@@ -1861,8 +1733,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get broadcast => '[TR] Broadcast (Turkish)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[TR] No events scheduled this week (Turkish)';
+  String get noEventsScheduledThisWeek => '[TR] No events scheduled this week (Turkish)';
 
   @override
   String get googleCalendar => '[TR] Google Calendar (Turkish)';
@@ -1874,8 +1745,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get childDashboard => '[TR] Child Dashboard (Turkish)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[TR] Failed to upload background: \$e (Turkish)';
+  String get failedToUploadBackgroundE => '[TR] Failed to upload background: \$e (Turkish)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1894,8 +1764,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get noAppointments => '[TR] No appointments (Turkish)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[TR] • Unlimited bookings per week (Turkish)';
+  String get unlimitedBookingsPerWeek => '[TR] • Unlimited bookings per week (Turkish)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1903,19 +1772,16 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[TR] Scheduled at: \$scheduledAt (Turkish)';
+  String get scheduledAtScheduledat => '[TR] Scheduled at: \$scheduledAt (Turkish)';
 
   @override
   String get selectStaff => '[TR] Select Staff (Turkish)';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      '[TR] Subscription cancelled successfully (Turkish)';
+  String get subscriptionCancelledSuccessfully => '[TR] Subscription cancelled successfully (Turkish)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[TR] Cancel Appointment (Turkish)';
@@ -1929,8 +1795,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get businessSignup => '[TR] Business Signup (Turkish)';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      '[TR] Business Completion Screen - Coming Soon (Turkish)';
+  String get businessCompletionScreenComingSoon => '[TR] Business Completion Screen - Coming Soon (Turkish)';
 
   @override
   String get createGame1 => '[TR] Create Game (Turkish)';
@@ -1941,12 +1806,10 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode =>
-      '[TR] Please enter a promo code (Turkish)';
+  String get pleaseEnterAPromoCode => '[TR] Please enter a promo code (Turkish)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[TR] Error loading availability: \$e (Turkish)';
+  String get errorLoadingAvailabilityE => '[TR] Error loading availability: \$e (Turkish)';
 
   @override
   String get parentalControls => '[TR] Parental Controls (Turkish)';
@@ -1955,15 +1818,13 @@ class AppLocalizationsTr extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[TR] Child linked successfully! (Turkish)';
+  String get childLinkedSuccessfully => '[TR] Child linked successfully! (Turkish)';
 
   @override
   String get create => '[TR] Create (Turkish)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[TR] No external meetings found. (Turkish)';
+  String get noExternalMeetingsFound => '[TR] No external meetings found. (Turkish)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1971,15 +1832,13 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[TR] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[TR] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[TR] Scheduler Screen (Turkish)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[TR] Client updated successfully! (Turkish)';
+  String get clientUpdatedSuccessfully => '[TR] Client updated successfully! (Turkish)';
 
   @override
   String get surveyResponses => '[TR] Survey Responses (Turkish)';
@@ -2005,12 +1864,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get errorLoadingEvents => '[TR] Error loading events (Turkish)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[TR] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[TR] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[TR] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[TR] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[TR] Success (Turkish)';
@@ -2029,12 +1886,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get readWrite => '[TR] Read & Write (Turkish)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      '[TR] Redirecting to Stripe checkout for Basic plan... (Turkish)';
+  String get redirectingToStripeCheckoutForBasicPlan => '[TR] Redirecting to Stripe checkout for Basic plan... (Turkish)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[TR] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[TR] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[TR] Pick Date (Turkish)';
@@ -2070,12 +1925,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get businessLogin => '[TR] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[TR] Invoice created successfully! (Turkish)';
+  String get invoiceCreatedSuccessfully => '[TR] Invoice created successfully! (Turkish)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[TR] No time series data available (Turkish)';
+  String get noTimeSeriesDataAvailable => '[TR] No time series data available (Turkish)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2088,8 +1941,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[TR] Failed to send privacy request: \$e (Turkish)';
+  String get failedToSendPrivacyRequestE => '[TR] Failed to send privacy request: \$e (Turkish)';
 
   @override
   String get chooseYourPlan => '[TR] Choose Your Plan (Turkish)';
@@ -2104,15 +1956,13 @@ class AppLocalizationsTr extends AppLocalizations {
   String get eventCreated => '[TR] Event created (Turkish)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[TR] Subscribe to Basic (€4.99/mo) (Turkish)';
+  String get subscribeToBasic499mo => '[TR] Subscribe to Basic (€4.99/mo) (Turkish)';
 
   @override
   String get completion => '[TR] Completion (Turkish)';
 
   @override
-  String get supportTicketSubmitted =>
-      '[TR] Support ticket submitted (Turkish)';
+  String get supportTicketSubmitted => '[TR] Support ticket submitted (Turkish)';
 
   @override
   String get monetizationSettings => '[TR] Monetization Settings (Turkish)';
@@ -2127,12 +1977,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get deleteSurvey => '[TR] Delete Survey (Turkish)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[TR] Game approved successfully! (Turkish)';
+  String get gameApprovedSuccessfully => '[TR] Game approved successfully! (Turkish)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[TR] Error loading permissions: \$error (Turkish)';
+  String get errorLoadingPermissionsError => '[TR] Error loading permissions: \$error (Turkish)';
 
   @override
   String get referrals => '[TR] Referrals (Turkish)';
@@ -2174,8 +2022,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get organizations => '[TR] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[TR] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[TR] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[TR] Create New Game (Turkish)';
@@ -2184,12 +2031,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get next1 => '[TR] Next (Turkish)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[TR] Background uploaded successfully! (Turkish)';
+  String get backgroundUploadedSuccessfully => '[TR] Background uploaded successfully! (Turkish)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[TR] No appointment requests found. (Turkish)';
+  String get noAppointmentRequestsFound => '[TR] No appointment requests found. (Turkish)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2216,8 +2061,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[TR] Failed to create game: \$e (Turkish)';
@@ -2226,8 +2070,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get noChartDataAvailable => '[TR] No chart data available (Turkish)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[TR] • Phone-based booking system (Turkish)';
+  String get phonebasedBookingSystem => '[TR] • Phone-based booking system (Turkish)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2236,8 +2079,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get invoices => '[TR] Invoices (Turkish)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2264,12 +2106,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get iDoNotConsent => '[TR] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      '[TR] No clients found. Add your first client! (Turkish)';
+  String get noClientsFoundAddYourFirstClient => '[TR] No clients found. Add your first client! (Turkish)';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      '[TR] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => '[TR] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[TR] Group: \$groupId';
@@ -2292,8 +2132,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[TR] • CRM dashboard with analytics (Turkish)';
+  String get crmDashboardWithAnalytics => '[TR] • CRM dashboard with analytics (Turkish)';
 
   @override
   String get contentLibrary1 => '[TR] Content Library (Turkish)';
@@ -2305,30 +2144,25 @@ class AppLocalizationsTr extends AppLocalizations {
   String get subscriptionManagement => '[TR] Subscription Management (Turkish)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      '[TR] Monetization settings will be implemented here (Turkish)';
+  String get monetizationSettingsWillBeImplementedHere => '[TR] Monetization settings will be implemented here (Turkish)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[TR] Failed to apply promo code: \$e (Turkish)';
+  String get failedToApplyPromoCodeE => '[TR] Failed to apply promo code: \$e (Turkish)';
 
   @override
   String get editProvider => '[TR] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[TR] Localization Contribution (Turkish)';
+  String get localizationContribution => '[TR] Localization Contribution (Turkish)';
 
   @override
   String get parentalConsent => '[TR] Parental Consent (Turkish)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[TR] Business Signup Screen - Coming Soon (Turkish)';
+  String get businessSignupScreenComingSoon => '[TR] Business Signup Screen - Coming Soon (Turkish)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      '[TR] Are you sure you want to delete this appointment? (Turkish)';
+  String get areYouSureYouWantToDeleteThisAppointment => '[TR] Are you sure you want to delete this appointment? (Turkish)';
 
   @override
   String get syncAppointment => '[TR] Sync Appointment (Turkish)';
@@ -2340,15 +2174,13 @@ class AppLocalizationsTr extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[TR] Business Setup Screen - Coming Soon (Turkish)';
+  String get businessSetupScreenComingSoon => '[TR] Business Setup Screen - Coming Soon (Turkish)';
 
   @override
   String get edit1 => '[TR] Edit (Turkish)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[TR] No events scheduled this month (Turkish)';
+  String get noEventsScheduledThisMonth => '[TR] No events scheduled this month (Turkish)';
 
   @override
   String get businessDashboard => '[TR] Business Dashboard (Turkish)';
@@ -2362,8 +2194,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[TR] Manage Staff Availability (Turkish)';
+  String get manageStaffAvailability => '[TR] Manage Staff Availability (Turkish)';
 
   @override
   String get noMissingTranslations => '[TR] No missing translations (Turkish)';
@@ -2380,8 +2211,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get noUsers => '[TR] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[TR] Error loading referral code (Turkish)';
+  String get errorLoadingReferralCode => '[TR] Error loading referral code (Turkish)';
 
   @override
   String get allCountries => '[TR] All Countries (Turkish)';
@@ -2396,8 +2226,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get deleteMessage => '[TR] Delete Message (Turkish)';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[TR] changeRole (TRANSLATE)';
@@ -2408,8 +2237,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[TR] Opening customer portal... (Turkish)';
+  String get openingCustomerPortal => '[TR] Opening customer portal... (Turkish)';
 
   @override
   String get signOut => '[TR] Sign Out (Turkish)';
@@ -2420,8 +2248,7 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[TR] Upgrade to Business (Turkish)';
@@ -2447,8 +2274,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[TR] View Responses (Turkish)';
@@ -2477,8 +2303,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2496,8 +2321,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description =>
-      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2506,8 +2330,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title =>
-      'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2555,8 +2378,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement =>
-      'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2604,12 +2426,10 @@ class AppLocalizationsTr extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage =>
-      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle =>
-      '[TR] Congratulations! You\'re now an Ambassador! (Turkish)';
+  String get ambassadorPromotionTitle => '[TR] Congratulations! You\'re now an Ambassador! (Turkish)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2620,11 +2440,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get tierUpgradeTitle => '[TR] Tier Upgrade! 🎉 (Turkish)';
 
   @override
-  String tierUpgradeBody(
-    String previousTier,
-    String newTier,
-    String totalReferrals,
-  ) {
+  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
     return '[TR] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Turkish)';
   }
 
@@ -2632,29 +2448,20 @@ class AppLocalizationsTr extends AppLocalizations {
   String get monthlyReminderTitle => '[TR] Monthly Goal Reminder (Turkish)';
 
   @override
-  String monthlyReminderBody(
-    String currentReferrals,
-    String targetReferrals,
-    String daysRemaining,
-  ) {
+  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
     return '[TR] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Turkish)';
   }
 
   @override
-  String get performanceWarningTitle =>
-      '[TR] Ambassador Performance Alert (Turkish)';
+  String get performanceWarningTitle => '[TR] Ambassador Performance Alert (Turkish)';
 
   @override
-  String performanceWarningBody(
-    String currentReferrals,
-    String minimumRequired,
-  ) {
+  String performanceWarningBody(String currentReferrals, String minimumRequired) {
     return '[TR] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Turkish)';
   }
 
   @override
-  String get ambassadorDemotionTitle =>
-      '[TR] Ambassador Status Update (Turkish)';
+  String get ambassadorDemotionTitle => '[TR] Ambassador Status Update (Turkish)';
 
   @override
   String ambassadorDemotionBody(String reason) {

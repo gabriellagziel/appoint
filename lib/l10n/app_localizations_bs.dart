@@ -74,8 +74,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get search => '[BS] [BS] Search';
 
   @override
-  String get cancelInviteConfirmation =>
-      '[BS] [BS] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => '[BS] [BS] Are you sure you want to cancel this invite?';
 
   @override
   String created(String created, Object date) {
@@ -89,8 +88,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get playtimeLiveScheduled => '[BS] [BS] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation =>
-      '[BS] [BS] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => '[BS] [BS] Are you sure you want to revoke access?';
 
   @override
   String get download => '[BS] [BS] Download';
@@ -124,8 +122,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get playtimeModeVirtual => '[BS] [BS] Virtual Play';
 
   @override
-  String get playtimeDescription =>
-      '[BS] [BS] Enjoy live or virtual games with your friends!';
+  String get playtimeDescription => '[BS] [BS] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => '[BS] [BS] Delete';
@@ -185,8 +182,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully =>
-      '[BS] [BS] Meeting shared successfully';
+  String get meetingSharedSuccessfully => '[BS] [BS] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[BS] [BS] Welcome to Playtime';
@@ -204,8 +200,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get cut => '[BS] [BS] Cut';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      '[BS] [BS] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => '[BS] [BS] Invite cancelled successfully';
 
   @override
   String get retry => '[BS] [BS] Retry';
@@ -282,8 +277,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get scheduleForLater => '[BS] [BS] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully =>
-      '[BS] [BS] Access revoked successfully';
+  String get accessRevokedSuccessfully => '[BS] [BS] Access revoked successfully';
 
   @override
   String type(String type) {
@@ -408,8 +402,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get dashboard => '[BS] [BS] Dashboard';
 
   @override
-  String get noPermissionForBroadcast =>
-      '[BS] [BS] No permission for broadcast';
+  String get noPermissionForBroadcast => '[BS] [BS] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[BS] Playtime Games – Admin';
@@ -486,8 +479,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get playtimeEnterGameName => '[BS] [BS] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[BS] [BS] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '[BS] [BS] Please login to access family features';
 
   @override
   String get myInvites => '[BS] [BS] My Invites';
@@ -541,8 +533,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[BS] [BS] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[BS] [BS] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[BS] Admin Metrics';
@@ -563,52 +554,40 @@ class AppLocalizationsBs extends AppLocalizations {
   String get contentLibrary => '[BS] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[BS] No account found with this email address.';
+  String get authErrorUserNotFound => '[BS] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[BS] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[BS] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[BS] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[BS] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[BS] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[BS] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[BS] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[BS] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[BS] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[BS] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[BS] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[BS] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[BS] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[BS] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[BS] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[BS] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      '[BS] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential => '[BS] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[BS] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[BS] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[BS] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[BS] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -625,24 +604,19 @@ class AppLocalizationsBs extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[BS] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[BS] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[BS] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[BS] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode =>
-      '[BS] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode => '[BS] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[BS] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[BS] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode =>
-      '[BS] Please enter the verification code.';
+  String get authErrorMissingVerificationCode => '[BS] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[BS] Missing verification ID.';
@@ -654,56 +628,43 @@ class AppLocalizationsBs extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[BS] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[BS] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[BS] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[BS] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[BS] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[BS] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[BS] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired =>
-      '[BS] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired => '[BS] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound =>
-      '[BS] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound => '[BS] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession =>
-      '[BS] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession => '[BS] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession =>
-      '[BS] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession => '[BS] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      '[BS] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse => '[BS] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      '[BS] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded => '[BS] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[BS] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[BS] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      '[BS] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification => '[BS] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      '[BS] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists => '[BS] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[BS] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[BS] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[BS] The ID token is invalid.';
@@ -715,12 +676,10 @@ class AppLocalizationsBs extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[BS] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[BS] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[BS] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[BS] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[BS] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[BS] Invalid custom claims provided.';
@@ -729,87 +688,70 @@ class AppLocalizationsBs extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[BS] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[BS] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[BS] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[BS] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[BS] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[BS] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      '[BS] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain => '[BS] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[BS] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[BS] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[BS] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[BS] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[BS] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[BS] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      '[BS] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength => '[BS] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[BS] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[BS] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[BS] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      '[BS] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization => '[BS] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[BS] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[BS] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      '[BS] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator => '[BS] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[BS] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[BS] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[BS] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[BS] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[BS] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[BS] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      '[BS] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration => '[BS] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[BS] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[BS] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[BS] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      '[BS] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded => '[BS] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[BS] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[BS] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[BS] Missing continue URL.';
@@ -824,8 +766,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get authErrorMissingUid => '[BS] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret =>
-      '[BS] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret => '[BS] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[BS] Firebase project not found.';
@@ -834,23 +775,19 @@ class AppLocalizationsBs extends AppLocalizations {
   String get authErrorReservedClaims => '[BS] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[BS] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[BS] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[BS] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[BS] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[BS] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      '[BS] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri => '[BS] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[BS] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[BS] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -899,8 +836,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      '[BS] Virtual session created! Inviting friends... (Bosnian)';
+  String get virtualSessionCreatedInvitingFriends => '[BS] Virtual session created! Inviting friends... (Bosnian)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -941,15 +877,13 @@ class AppLocalizationsBs extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[BS] Subscription unavailable (Bosnian)';
+  String get subscriptionUnavailable => '[BS] Subscription unavailable (Bosnian)';
 
   @override
   String get confirmBooking => '[BS] Confirm Booking (Bosnian)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[BS] Failed to update permission: \$e (Bosnian)';
+  String get failedToUpdatePermissionE => '[BS] Failed to update permission: \$e (Bosnian)';
 
   @override
   String get reject => '[BS] Reject (Bosnian)';
@@ -977,8 +911,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get resolve => '[BS] Resolve (Bosnian)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[BS] Error loading surveys: \$error (Bosnian)';
+  String get errorLoadingSurveysError => '[BS] Error loading surveys: \$error (Bosnian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -986,8 +919,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[BS] Get help with your account (Bosnian)';
+  String get getHelpWithYourAccount => '[BS] Get help with your account (Bosnian)';
 
   @override
   String get pay => '[BS] Pay (Bosnian)';
@@ -1002,8 +934,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[BS] Changes saved successfully! (Bosnian)';
+  String get changesSavedSuccessfully => '[BS] Changes saved successfully! (Bosnian)';
 
   @override
   String get createNewInvoice => '[BS] Create New Invoice (Bosnian)';
@@ -1023,8 +954,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get profileSaved => '[BS] Profile saved! (Bosnian)';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1055,8 +985,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      '[BS] You will receive a confirmation email shortly. (Bosnian)';
+  String get youWillReceiveAConfirmationEmailShortly => '[BS] You will receive a confirmation email shortly. (Bosnian)';
 
   @override
   String get addQuestion => '[BS] Add Question (Bosnian)';
@@ -1085,26 +1014,22 @@ class AppLocalizationsBs extends AppLocalizations {
   String get surveyManagement => '[BS] Survey Management (Bosnian)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[BS] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[BS] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[BS] No rooms found. Add your first room! (Bosnian)';
+  String get noRoomsFoundAddYourFirstRoom => '[BS] No rooms found. Add your first room! (Bosnian)';
 
   @override
   String get readOurPrivacyPolicy => '[BS] Read our privacy policy (Bosnian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[BS] Could not open privacy policy (Bosnian)';
+  String get couldNotOpenPrivacyPolicy => '[BS] Could not open privacy policy (Bosnian)';
 
   @override
   String get refresh1 => '[BS] Refresh (Bosnian)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[BS] Room updated successfully! (Bosnian)';
+  String get roomUpdatedSuccessfully => '[BS] Room updated successfully! (Bosnian)';
 
   @override
   String get contentDetail => '[BS] Content Detail (Bosnian)';
@@ -1113,8 +1038,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get cancelSubscription => '[BS] Cancel Subscription (Bosnian)';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      '[BS] Successfully registered as Ambassador! (Bosnian)';
+  String get successfullyRegisteredAsAmbassador => '[BS] Successfully registered as Ambassador! (Bosnian)';
 
   @override
   String get save1 => '[BS] Save (Bosnian)';
@@ -1123,8 +1047,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get copy1 => '[BS] Copy (Bosnian)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[BS] Failed to send invitation: \$e (Bosnian)';
+  String get failedToSendInvitationE => '[BS] Failed to send invitation: \$e (Bosnian)';
 
   @override
   String get surveyScore => '[BS] Survey Score (Bosnian)';
@@ -1141,20 +1064,16 @@ class AppLocalizationsBs extends AppLocalizations {
   String get responseDetail => '[BS] Response Detail (Bosnian)';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[BS] Failed to start Pro subscription: \$e (Bosnian)';
+  String get failedToStartProSubscriptionE => '[BS] Failed to start Pro subscription: \$e (Bosnian)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      '[BS] Business Dashboard Entry Screen - Coming Soon (Bosnian)';
+  String get businessDashboardEntryScreenComingSoon => '[BS] Business Dashboard Entry Screen - Coming Soon (Bosnian)';
 
   @override
   String get contentFilter => '[BS] Content Filter (Bosnian)';
@@ -1176,8 +1095,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      '[BS] Business CRM Entry Screen - Coming Soon (Bosnian)';
+  String get businessCrmEntryScreenComingSoon => '[BS] Business CRM Entry Screen - Coming Soon (Bosnian)';
 
   @override
   String get adminDashboard => '[BS] Admin Dashboard';
@@ -1188,16 +1106,13 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[BS] Error loading dashboard: \$error (Bosnian)';
+  String get errorLoadingDashboardError => '[BS] Error loading dashboard: \$error (Bosnian)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[BS] Game deleted successfully! (Bosnian)';
+  String get gameDeletedSuccessfully => '[BS] Game deleted successfully! (Bosnian)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[BS] View responses - Coming soon! (Bosnian)';
+  String get viewResponsesComingSoon => '[BS] View responses - Coming soon! (Bosnian)';
 
   @override
   String get deleteProvider => '[BS] Delete Provider';
@@ -1206,8 +1121,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get errorLoadingRewards => '[BS] Error loading rewards (Bosnian)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[BS] Failed to delete account: \$e (Bosnian)';
+  String get failedToDeleteAccountE => '[BS] Failed to delete account: \$e (Bosnian)';
 
   @override
   String get invited1 => '[BS] Invited (Bosnian)';
@@ -1222,8 +1136,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get noEvents => '[BS] No events (Bosnian)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[BS] Game created successfully! (Bosnian)';
+  String get gameCreatedSuccessfully => '[BS] Game created successfully! (Bosnian)';
 
   @override
   String get add1 => '[BS] Add (Bosnian)';
@@ -1243,12 +1156,10 @@ class AppLocalizationsBs extends AppLocalizations {
   String get clients => '[BS] Clients (Bosnian)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[BS] No ambassador data available (Bosnian)';
+  String get noAmbassadorDataAvailable => '[BS] No ambassador data available (Bosnian)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[BS] Background deleted successfully! (Bosnian)';
+  String get backgroundDeletedSuccessfully => '[BS] Background deleted successfully! (Bosnian)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1256,8 +1167,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[BS] No analytics data available yet. (Bosnian)';
+  String get noAnalyticsDataAvailableYet => '[BS] No analytics data available yet. (Bosnian)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1265,8 +1175,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      '[BS] Business Phone Booking Entry Screen - Coming Soon (Bosnian)';
+  String get businessPhoneBookingEntryScreenComingSoon => '[BS] Business Phone Booking Entry Screen - Coming Soon (Bosnian)';
 
   @override
   String get verification => '[BS] Verification (Bosnian)';
@@ -1313,8 +1222,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get businessProfile => '[BS] Business Profile (Bosnian)';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      '[BS] Business Booking Entry Screen - Coming Soon (Bosnian)';
+  String get businessBookingEntryScreenComingSoon => '[BS] Business Booking Entry Screen - Coming Soon (Bosnian)';
 
   @override
   String get createNewSurvey => '[BS] Create New Survey (Bosnian)';
@@ -1338,8 +1246,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get loginFailedE => '[BS] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[BS] Invitation sent successfully! (Bosnian)';
+  String get invitationSentSuccessfully => '[BS] Invitation sent successfully! (Bosnian)';
 
   @override
   String get registering => '[BS] Registering... (Bosnian)';
@@ -1353,16 +1260,13 @@ class AppLocalizationsBs extends AppLocalizations {
   String get home1 => '[BS] Home (Bosnian)';
 
   @override
-  String get errorSavingSettingsE =>
-      '[BS] Error saving settings: \$e (Bosnian)';
+  String get errorSavingSettingsE => '[BS] Error saving settings: \$e (Bosnian)';
 
   @override
-  String get appVersionAndInformation =>
-      '[BS] App version and information (Bosnian)';
+  String get appVersionAndInformation => '[BS] App version and information (Bosnian)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      '[BS] Business Subscription Entry Screen - Coming Soon (Bosnian)';
+  String get businessSubscriptionEntryScreenComingSoon => '[BS] Business Subscription Entry Screen - Coming Soon (Bosnian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1370,8 +1274,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      '[BS] Your payment has been processed successfully. (Bosnian)';
+  String get yourPaymentHasBeenProcessedSuccessfully => '[BS] Your payment has been processed successfully. (Bosnian)';
 
   @override
   String get errorE => '[BS] Error: \$e (Bosnian)';
@@ -1380,8 +1283,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get viewAll1 => '[BS] View All (Bosnian)';
 
   @override
-  String get editSurveyComingSoon =>
-      '[BS] Edit survey - Coming soon! (Bosnian)';
+  String get editSurveyComingSoon => '[BS] Edit survey - Coming soon! (Bosnian)';
 
   @override
   String get enterOtp => '[BS] Enter OTP (Bosnian)';
@@ -1390,8 +1292,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get payment => '[BS] Payment (Bosnian)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      '[BS] Automatically confirm new booking requests (Bosnian)';
+  String get automaticallyConfirmNewBookingRequests => '[BS] Automatically confirm new booking requests (Bosnian)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1404,8 +1305,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[BS] Please sign in to upload a background (Bosnian)';
+  String get pleaseSignInToUploadABackground => '[BS] Please sign in to upload a background (Bosnian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1422,22 +1322,19 @@ class AppLocalizationsBs extends AppLocalizations {
   String get autoconfirmBookings => '[BS] Auto-Confirm Bookings (Bosnian)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      '[BS] Redirecting to Stripe checkout for Pro plan... (Bosnian)';
+  String get redirectingToStripeCheckoutForProPlan => '[BS] Redirecting to Stripe checkout for Pro plan... (Bosnian)';
 
   @override
   String get exportAsCsv => '[BS] Export as CSV (Bosnian)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[BS] Delete functionality coming soon! (Bosnian)';
+  String get deleteFunctionalityComingSoon => '[BS] Delete functionality coming soon! (Bosnian)';
 
   @override
   String get editClient => '[BS] Edit Client (Bosnian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      '[BS] Are you sure you want to delete this message? (Bosnian)';
+  String get areYouSureYouWantToDeleteThisMessage => '[BS] Are you sure you want to delete this message? (Bosnian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1448,39 +1345,31 @@ class AppLocalizationsBs extends AppLocalizations {
   String get notAuthenticated => '[BS] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[BS] Privacy request sent to your parents! (Bosnian)';
+  String get privacyRequestSentToYourParents => '[BS] Privacy request sent to your parents! (Bosnian)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[BS] Client deleted successfully! (Bosnian)';
+  String get clientDeletedSuccessfully => '[BS] Client deleted successfully! (Bosnian)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[BS] Failed to cancel subscription (Bosnian)';
+  String get failedToCancelSubscription => '[BS] Failed to cancel subscription (Bosnian)';
 
   @override
   String get allLanguages => '[BS] All Languages (Bosnian)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[BS] Slot deleted successfully (Bosnian)';
+  String get slotDeletedSuccessfully => '[BS] Slot deleted successfully (Bosnian)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      '[BS] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => '[BS] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      '[BS] Parents must approve before children can join (Bosnian)';
+  String get parentsMustApproveBeforeChildrenCanJoin => '[BS] Parents must approve before children can join (Bosnian)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[BS] Subscribe to Pro (€14.99/mo) (Bosnian)';
+  String get subscribeToPro1499mo => '[BS] Subscribe to Pro (€14.99/mo) (Bosnian)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      '[BS] Business Availability Entry Screen - Coming Soon (Bosnian)';
+  String get businessAvailabilityEntryScreenComingSoon => '[BS] Business Availability Entry Screen - Coming Soon (Bosnian)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1494,8 +1383,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get submitBooking => '[BS] Submit Booking (Bosnian)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      '[BS] Are you sure you want to cancel this appointment? (Bosnian)';
+  String get areYouSureYouWantToCancelThisAppointment => '[BS] Are you sure you want to cancel this appointment? (Bosnian)';
 
   @override
   String get noUpcomingBookings => '[BS] No upcoming bookings (Bosnian)';
@@ -1513,8 +1401,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get goToDashboard => '[BS] Go to Dashboard (Bosnian)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[BS] Ambassador Quota Dashboard (Bosnian)';
+  String get ambassadorQuotaDashboard => '[BS] Ambassador Quota Dashboard (Bosnian)';
 
   @override
   String get adminSettings => '[BS] Admin Settings';
@@ -1552,8 +1439,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[BS] Client added successfully! (Bosnian)';
+  String get clientAddedSuccessfully => '[BS] Client added successfully! (Bosnian)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1571,8 +1457,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get bookAppointment => '[BS] Book Appointment (Bosnian)';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[BS] Delete (Bosnian)';
@@ -1587,15 +1472,13 @@ class AppLocalizationsBs extends AppLocalizations {
   String get manageSubscription => '[BS] Manage Subscription (Bosnian)';
 
   @override
-  String get requiresInstallFallback =>
-      '[BS] Requires Install Fallback (Bosnian)';
+  String get requiresInstallFallback => '[BS] Requires Install Fallback (Bosnian)';
 
   @override
   String get paymentConfirmation => '[BS] Payment Confirmation (Bosnian)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[BS] Promo applied! Your next bill is free. (Bosnian)';
+  String get promoAppliedYourNextBillIsFree => '[BS] Promo applied! Your next bill is free. (Bosnian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1606,16 +1489,13 @@ class AppLocalizationsBs extends AppLocalizations {
   String get errorLoadingSlots => '[BS] Error loading slots (Bosnian)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      '[BS] Allow other users to find and join this game (Bosnian)';
+  String get allowOtherUsersToFindAndJoinThisGame => '[BS] Allow other users to find and join this game (Bosnian)';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      '[BS] Business Onboarding Screen - Coming Soon (Bosnian)';
+  String get businessOnboardingScreenComingSoon => '[BS] Business Onboarding Screen - Coming Soon (Bosnian)';
 
   @override
-  String get activateBusinessProfile =>
-      '[BS] Activate Business Profile (Bosnian)';
+  String get activateBusinessProfile => '[BS] Activate Business Profile (Bosnian)';
 
   @override
   String get contentNotFound => '[BS] Content not found (Bosnian)';
@@ -1657,8 +1537,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get shareLink => '[BS] Share Link (Bosnian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      '[BS] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => '[BS] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[BS] Delete Appointment (Bosnian)';
@@ -1678,12 +1557,10 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[BS] Update your business information (Bosnian)';
+  String get updateYourBusinessInformation => '[BS] Update your business information (Bosnian)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      '[BS] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => '[BS] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[BS] Parent Dashboard (Bosnian)';
@@ -1706,12 +1583,10 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      '[BS] Studio booking is only available on web (Bosnian)';
+  String get studioBookingIsOnlyAvailableOnWeb => '[BS] Studio booking is only available on web (Bosnian)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[BS] Error loading branches: \$e (Bosnian)';
+  String get errorLoadingBranchesE => '[BS] Error loading branches: \$e (Bosnian)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1727,15 +1602,13 @@ class AppLocalizationsBs extends AppLocalizations {
   String get none => '[BS] None (Bosnian)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[BS] Failed to update consent: \$e (Bosnian)';
+  String get failedToUpdateConsentE => '[BS] Failed to update consent: \$e (Bosnian)';
 
   @override
   String get welcome1 => '[BS] Welcome (Bosnian)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[BS] Failed to create session: \$e (Bosnian)';
+  String get failedToCreateSessionE => '[BS] Failed to create session: \$e (Bosnian)';
 
   @override
   String get inviteContact => '[BS] Invite Contact (Bosnian)';
@@ -1744,8 +1617,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get surveyEditor => '[BS] Survey Editor (Bosnian)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[BS] Failed to start Basic subscription: \$e (Bosnian)';
+  String get failedToStartBasicSubscriptionE => '[BS] Failed to start Basic subscription: \$e (Bosnian)';
 
   @override
   String get mySchedule => '[BS] My Schedule (Bosnian)';
@@ -1765,12 +1637,10 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[BS] Settings saved successfully! (Bosnian)';
+  String get settingsSavedSuccessfully => '[BS] Settings saved successfully! (Bosnian)';
 
   @override
-  String get linkCopiedToClipboard =>
-      '[BS] Link copied to clipboard! (Bosnian)';
+  String get linkCopiedToClipboard => '[BS] Link copied to clipboard! (Bosnian)';
 
   @override
   String get accept1 => '[BS] Accept (Bosnian)';
@@ -1787,8 +1657,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[BS] Room deleted successfully! (Bosnian)';
+  String get roomDeletedSuccessfully => '[BS] Room deleted successfully! (Bosnian)';
 
   @override
   String get businessCalendar => '[BS] Business Calendar (Bosnian)';
@@ -1853,8 +1722,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get cancel1 => '[BS] Cancel (Bosnian)';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      '[BS] Subscription activated successfully! (Bosnian)';
+  String get subscriptionActivatedSuccessfully => '[BS] Subscription activated successfully! (Bosnian)';
 
   @override
   String activityLogaction(Object action) {
@@ -1865,8 +1733,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get broadcast => '[BS] Broadcast (Bosnian)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[BS] No events scheduled this week (Bosnian)';
+  String get noEventsScheduledThisWeek => '[BS] No events scheduled this week (Bosnian)';
 
   @override
   String get googleCalendar => '[BS] Google Calendar (Bosnian)';
@@ -1878,8 +1745,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get childDashboard => '[BS] Child Dashboard (Bosnian)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[BS] Failed to upload background: \$e (Bosnian)';
+  String get failedToUploadBackgroundE => '[BS] Failed to upload background: \$e (Bosnian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1898,8 +1764,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get noAppointments => '[BS] No appointments (Bosnian)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[BS] • Unlimited bookings per week (Bosnian)';
+  String get unlimitedBookingsPerWeek => '[BS] • Unlimited bookings per week (Bosnian)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1907,19 +1772,16 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[BS] Scheduled at: \$scheduledAt (Bosnian)';
+  String get scheduledAtScheduledat => '[BS] Scheduled at: \$scheduledAt (Bosnian)';
 
   @override
   String get selectStaff => '[BS] Select Staff (Bosnian)';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      '[BS] Subscription cancelled successfully (Bosnian)';
+  String get subscriptionCancelledSuccessfully => '[BS] Subscription cancelled successfully (Bosnian)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[BS] Cancel Appointment (Bosnian)';
@@ -1933,8 +1795,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get businessSignup => '[BS] Business Signup (Bosnian)';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      '[BS] Business Completion Screen - Coming Soon (Bosnian)';
+  String get businessCompletionScreenComingSoon => '[BS] Business Completion Screen - Coming Soon (Bosnian)';
 
   @override
   String get createGame1 => '[BS] Create Game (Bosnian)';
@@ -1945,12 +1806,10 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode =>
-      '[BS] Please enter a promo code (Bosnian)';
+  String get pleaseEnterAPromoCode => '[BS] Please enter a promo code (Bosnian)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[BS] Error loading availability: \$e (Bosnian)';
+  String get errorLoadingAvailabilityE => '[BS] Error loading availability: \$e (Bosnian)';
 
   @override
   String get parentalControls => '[BS] Parental Controls (Bosnian)';
@@ -1959,15 +1818,13 @@ class AppLocalizationsBs extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[BS] Child linked successfully! (Bosnian)';
+  String get childLinkedSuccessfully => '[BS] Child linked successfully! (Bosnian)';
 
   @override
   String get create => '[BS] Create (Bosnian)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[BS] No external meetings found. (Bosnian)';
+  String get noExternalMeetingsFound => '[BS] No external meetings found. (Bosnian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1975,15 +1832,13 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[BS] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[BS] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[BS] Scheduler Screen (Bosnian)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[BS] Client updated successfully! (Bosnian)';
+  String get clientUpdatedSuccessfully => '[BS] Client updated successfully! (Bosnian)';
 
   @override
   String get surveyResponses => '[BS] Survey Responses (Bosnian)';
@@ -2009,12 +1864,10 @@ class AppLocalizationsBs extends AppLocalizations {
   String get errorLoadingEvents => '[BS] Error loading events (Bosnian)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[BS] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[BS] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[BS] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[BS] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[BS] Success (Bosnian)';
@@ -2033,12 +1886,10 @@ class AppLocalizationsBs extends AppLocalizations {
   String get readWrite => '[BS] Read & Write (Bosnian)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      '[BS] Redirecting to Stripe checkout for Basic plan... (Bosnian)';
+  String get redirectingToStripeCheckoutForBasicPlan => '[BS] Redirecting to Stripe checkout for Basic plan... (Bosnian)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[BS] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[BS] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[BS] Pick Date (Bosnian)';
@@ -2074,12 +1925,10 @@ class AppLocalizationsBs extends AppLocalizations {
   String get businessLogin => '[BS] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[BS] Invoice created successfully! (Bosnian)';
+  String get invoiceCreatedSuccessfully => '[BS] Invoice created successfully! (Bosnian)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[BS] No time series data available (Bosnian)';
+  String get noTimeSeriesDataAvailable => '[BS] No time series data available (Bosnian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2092,8 +1941,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[BS] Failed to send privacy request: \$e (Bosnian)';
+  String get failedToSendPrivacyRequestE => '[BS] Failed to send privacy request: \$e (Bosnian)';
 
   @override
   String get chooseYourPlan => '[BS] Choose Your Plan (Bosnian)';
@@ -2108,15 +1956,13 @@ class AppLocalizationsBs extends AppLocalizations {
   String get eventCreated => '[BS] Event created (Bosnian)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[BS] Subscribe to Basic (€4.99/mo) (Bosnian)';
+  String get subscribeToBasic499mo => '[BS] Subscribe to Basic (€4.99/mo) (Bosnian)';
 
   @override
   String get completion => '[BS] Completion (Bosnian)';
 
   @override
-  String get supportTicketSubmitted =>
-      '[BS] Support ticket submitted (Bosnian)';
+  String get supportTicketSubmitted => '[BS] Support ticket submitted (Bosnian)';
 
   @override
   String get monetizationSettings => '[BS] Monetization Settings (Bosnian)';
@@ -2131,12 +1977,10 @@ class AppLocalizationsBs extends AppLocalizations {
   String get deleteSurvey => '[BS] Delete Survey (Bosnian)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[BS] Game approved successfully! (Bosnian)';
+  String get gameApprovedSuccessfully => '[BS] Game approved successfully! (Bosnian)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[BS] Error loading permissions: \$error (Bosnian)';
+  String get errorLoadingPermissionsError => '[BS] Error loading permissions: \$error (Bosnian)';
 
   @override
   String get referrals => '[BS] Referrals (Bosnian)';
@@ -2178,8 +2022,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get organizations => '[BS] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[BS] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[BS] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[BS] Create New Game (Bosnian)';
@@ -2188,12 +2031,10 @@ class AppLocalizationsBs extends AppLocalizations {
   String get next1 => '[BS] Next (Bosnian)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[BS] Background uploaded successfully! (Bosnian)';
+  String get backgroundUploadedSuccessfully => '[BS] Background uploaded successfully! (Bosnian)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[BS] No appointment requests found. (Bosnian)';
+  String get noAppointmentRequestsFound => '[BS] No appointment requests found. (Bosnian)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2220,8 +2061,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[BS] Failed to create game: \$e (Bosnian)';
@@ -2230,8 +2070,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get noChartDataAvailable => '[BS] No chart data available (Bosnian)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[BS] • Phone-based booking system (Bosnian)';
+  String get phonebasedBookingSystem => '[BS] • Phone-based booking system (Bosnian)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2240,8 +2079,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get invoices => '[BS] Invoices (Bosnian)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2268,12 +2106,10 @@ class AppLocalizationsBs extends AppLocalizations {
   String get iDoNotConsent => '[BS] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      '[BS] No clients found. Add your first client! (Bosnian)';
+  String get noClientsFoundAddYourFirstClient => '[BS] No clients found. Add your first client! (Bosnian)';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      '[BS] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => '[BS] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[BS] Group: \$groupId';
@@ -2296,8 +2132,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[BS] • CRM dashboard with analytics (Bosnian)';
+  String get crmDashboardWithAnalytics => '[BS] • CRM dashboard with analytics (Bosnian)';
 
   @override
   String get contentLibrary1 => '[BS] Content Library (Bosnian)';
@@ -2309,30 +2144,25 @@ class AppLocalizationsBs extends AppLocalizations {
   String get subscriptionManagement => '[BS] Subscription Management (Bosnian)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      '[BS] Monetization settings will be implemented here (Bosnian)';
+  String get monetizationSettingsWillBeImplementedHere => '[BS] Monetization settings will be implemented here (Bosnian)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[BS] Failed to apply promo code: \$e (Bosnian)';
+  String get failedToApplyPromoCodeE => '[BS] Failed to apply promo code: \$e (Bosnian)';
 
   @override
   String get editProvider => '[BS] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[BS] Localization Contribution (Bosnian)';
+  String get localizationContribution => '[BS] Localization Contribution (Bosnian)';
 
   @override
   String get parentalConsent => '[BS] Parental Consent (Bosnian)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[BS] Business Signup Screen - Coming Soon (Bosnian)';
+  String get businessSignupScreenComingSoon => '[BS] Business Signup Screen - Coming Soon (Bosnian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      '[BS] Are you sure you want to delete this appointment? (Bosnian)';
+  String get areYouSureYouWantToDeleteThisAppointment => '[BS] Are you sure you want to delete this appointment? (Bosnian)';
 
   @override
   String get syncAppointment => '[BS] Sync Appointment (Bosnian)';
@@ -2344,15 +2174,13 @@ class AppLocalizationsBs extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[BS] Business Setup Screen - Coming Soon (Bosnian)';
+  String get businessSetupScreenComingSoon => '[BS] Business Setup Screen - Coming Soon (Bosnian)';
 
   @override
   String get edit1 => '[BS] Edit (Bosnian)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[BS] No events scheduled this month (Bosnian)';
+  String get noEventsScheduledThisMonth => '[BS] No events scheduled this month (Bosnian)';
 
   @override
   String get businessDashboard => '[BS] Business Dashboard (Bosnian)';
@@ -2366,8 +2194,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[BS] Manage Staff Availability (Bosnian)';
+  String get manageStaffAvailability => '[BS] Manage Staff Availability (Bosnian)';
 
   @override
   String get noMissingTranslations => '[BS] No missing translations (Bosnian)';
@@ -2384,8 +2211,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get noUsers => '[BS] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[BS] Error loading referral code (Bosnian)';
+  String get errorLoadingReferralCode => '[BS] Error loading referral code (Bosnian)';
 
   @override
   String get allCountries => '[BS] All Countries (Bosnian)';
@@ -2400,8 +2226,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get deleteMessage => '[BS] Delete Message (Bosnian)';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[BS] changeRole (TRANSLATE)';
@@ -2412,8 +2237,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[BS] Opening customer portal... (Bosnian)';
+  String get openingCustomerPortal => '[BS] Opening customer portal... (Bosnian)';
 
   @override
   String get signOut => '[BS] Sign Out (Bosnian)';
@@ -2424,8 +2248,7 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[BS] Upgrade to Business (Bosnian)';
@@ -2451,8 +2274,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[BS] View Responses (Bosnian)';
@@ -2481,8 +2303,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2500,8 +2321,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description =>
-      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2510,8 +2330,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title =>
-      'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2559,8 +2378,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement =>
-      'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2608,12 +2426,10 @@ class AppLocalizationsBs extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage =>
-      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle =>
-      '[BS] Congratulations! You\'re now an Ambassador! (Bosnian)';
+  String get ambassadorPromotionTitle => '[BS] Congratulations! You\'re now an Ambassador! (Bosnian)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2624,11 +2440,7 @@ class AppLocalizationsBs extends AppLocalizations {
   String get tierUpgradeTitle => '[BS] Tier Upgrade! 🎉 (Bosnian)';
 
   @override
-  String tierUpgradeBody(
-    String previousTier,
-    String newTier,
-    String totalReferrals,
-  ) {
+  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
     return '[BS] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Bosnian)';
   }
 
@@ -2636,29 +2448,20 @@ class AppLocalizationsBs extends AppLocalizations {
   String get monthlyReminderTitle => '[BS] Monthly Goal Reminder (Bosnian)';
 
   @override
-  String monthlyReminderBody(
-    String currentReferrals,
-    String targetReferrals,
-    String daysRemaining,
-  ) {
+  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
     return '[BS] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Bosnian)';
   }
 
   @override
-  String get performanceWarningTitle =>
-      '[BS] Ambassador Performance Alert (Bosnian)';
+  String get performanceWarningTitle => '[BS] Ambassador Performance Alert (Bosnian)';
 
   @override
-  String performanceWarningBody(
-    String currentReferrals,
-    String minimumRequired,
-  ) {
+  String performanceWarningBody(String currentReferrals, String minimumRequired) {
     return '[BS] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Bosnian)';
   }
 
   @override
-  String get ambassadorDemotionTitle =>
-      '[BS] Ambassador Status Update (Bosnian)';
+  String get ambassadorDemotionTitle => '[BS] Ambassador Status Update (Bosnian)';
 
   @override
   String ambassadorDemotionBody(String reason) {

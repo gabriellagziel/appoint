@@ -74,8 +74,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get search => '[PT] Pesquisar';
 
   @override
-  String get cancelInviteConfirmation =>
-      '[PT] [PT] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => '[PT] [PT] Are you sure you want to cancel this invite?';
 
   @override
   String created(String created, Object date) {
@@ -89,8 +88,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get playtimeLiveScheduled => '[PT] Sessão ao vivo agendada';
 
   @override
-  String get revokeAccessConfirmation =>
-      '[PT] [PT] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => '[PT] [PT] Are you sure you want to revoke access?';
 
   @override
   String get download => '[PT] Baixar';
@@ -184,8 +182,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully =>
-      '[PT] Reunião compartilhada com sucesso';
+  String get meetingSharedSuccessfully => '[PT] Reunião compartilhada com sucesso';
 
   @override
   String get welcomeToPlaytime => '[PT] [PT] Welcome to Playtime';
@@ -203,8 +200,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get cut => '[PT] [PT] Cut';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      '[PT] [PT] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => '[PT] [PT] Invite cancelled successfully';
 
   @override
   String get retry => '[PT] Tentar novamente';
@@ -281,8 +277,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get scheduleForLater => '[PT] [PT] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully =>
-      '[PT] [PT] Access revoked successfully';
+  String get accessRevokedSuccessfully => '[PT] [PT] Access revoked successfully';
 
   @override
   String type(String type) {
@@ -407,8 +402,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get dashboard => '[PT] [PT] Dashboard';
 
   @override
-  String get noPermissionForBroadcast =>
-      '[PT] [PT] No permission for broadcast';
+  String get noPermissionForBroadcast => '[PT] [PT] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[PT] Playtime Games – Admin';
@@ -485,8 +479,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get playtimeEnterGameName => '[PT] [PT] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[PT] [PT] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '[PT] [PT] Please login to access family features';
 
   @override
   String get myInvites => '[PT] [PT] My Invites';
@@ -540,8 +533,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[PT] [PT] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[PT] [PT] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[PT] Admin Metrics';
@@ -562,52 +554,40 @@ class AppLocalizationsPt extends AppLocalizations {
   String get contentLibrary => '[PT] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[PT] No account found with this email address.';
+  String get authErrorUserNotFound => '[PT] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[PT] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[PT] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[PT] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[PT] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[PT] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[PT] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[PT] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[PT] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[PT] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[PT] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[PT] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[PT] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[PT] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[PT] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[PT] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[PT] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      '[PT] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential => '[PT] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[PT] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[PT] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[PT] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[PT] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -624,24 +604,19 @@ class AppLocalizationsPt extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[PT] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[PT] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[PT] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[PT] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode =>
-      '[PT] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode => '[PT] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[PT] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[PT] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode =>
-      '[PT] Please enter the verification code.';
+  String get authErrorMissingVerificationCode => '[PT] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[PT] Missing verification ID.';
@@ -653,56 +628,43 @@ class AppLocalizationsPt extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[PT] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[PT] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[PT] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[PT] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[PT] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[PT] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[PT] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired =>
-      '[PT] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired => '[PT] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound =>
-      '[PT] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound => '[PT] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession =>
-      '[PT] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession => '[PT] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession =>
-      '[PT] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession => '[PT] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      '[PT] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse => '[PT] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      '[PT] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded => '[PT] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[PT] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[PT] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      '[PT] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification => '[PT] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      '[PT] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists => '[PT] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[PT] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[PT] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[PT] The ID token is invalid.';
@@ -714,12 +676,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[PT] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[PT] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[PT] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[PT] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[PT] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[PT] Invalid custom claims provided.';
@@ -728,87 +688,70 @@ class AppLocalizationsPt extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[PT] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[PT] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[PT] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[PT] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[PT] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[PT] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      '[PT] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain => '[PT] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[PT] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[PT] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[PT] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[PT] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[PT] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[PT] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      '[PT] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength => '[PT] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[PT] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[PT] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[PT] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      '[PT] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization => '[PT] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[PT] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[PT] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      '[PT] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator => '[PT] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[PT] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[PT] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[PT] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[PT] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[PT] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[PT] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      '[PT] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration => '[PT] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[PT] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[PT] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[PT] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      '[PT] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded => '[PT] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[PT] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[PT] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[PT] Missing continue URL.';
@@ -823,8 +766,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get authErrorMissingUid => '[PT] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret =>
-      '[PT] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret => '[PT] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[PT] Firebase project not found.';
@@ -833,23 +775,19 @@ class AppLocalizationsPt extends AppLocalizations {
   String get authErrorReservedClaims => '[PT] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[PT] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[PT] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[PT] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[PT] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[PT] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      '[PT] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri => '[PT] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[PT] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[PT] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -898,8 +836,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      '[PT] Virtual session created! Inviting friends... (Portuguese)';
+  String get virtualSessionCreatedInvitingFriends => '[PT] Virtual session created! Inviting friends... (Portuguese)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -940,15 +877,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[PT] Subscription unavailable (Portuguese)';
+  String get subscriptionUnavailable => '[PT] Subscription unavailable (Portuguese)';
 
   @override
   String get confirmBooking => '[PT] Confirm Booking (Portuguese)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[PT] Failed to update permission: \$e (Portuguese)';
+  String get failedToUpdatePermissionE => '[PT] Failed to update permission: \$e (Portuguese)';
 
   @override
   String get reject => '[PT] Reject (Portuguese)';
@@ -962,8 +897,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get noProviders => '[PT] No providers';
 
   @override
-  String get checkingSubscription =>
-      '[PT] Checking subscription... (Portuguese)';
+  String get checkingSubscription => '[PT] Checking subscription... (Portuguese)';
 
   @override
   String errorPickingImageE(Object e) {
@@ -971,15 +905,13 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get noContentAvailableYet =>
-      '[PT] No content available yet (Portuguese)';
+  String get noContentAvailableYet => '[PT] No content available yet (Portuguese)';
 
   @override
   String get resolve => '[PT] Resolve (Portuguese)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[PT] Error loading surveys: \$error (Portuguese)';
+  String get errorLoadingSurveysError => '[PT] Error loading surveys: \$error (Portuguese)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -987,8 +919,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[PT] Get help with your account (Portuguese)';
+  String get getHelpWithYourAccount => '[PT] Get help with your account (Portuguese)';
 
   @override
   String get pay => '[PT] Pay (Portuguese)';
@@ -1003,8 +934,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[PT] Changes saved successfully! (Portuguese)';
+  String get changesSavedSuccessfully => '[PT] Changes saved successfully! (Portuguese)';
 
   @override
   String get createNewInvoice => '[PT] Create New Invoice (Portuguese)';
@@ -1024,8 +954,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get profileSaved => '[PT] Profile saved! (Portuguese)';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1056,8 +985,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      '[PT] You will receive a confirmation email shortly. (Portuguese)';
+  String get youWillReceiveAConfirmationEmailShortly => '[PT] You will receive a confirmation email shortly. (Portuguese)';
 
   @override
   String get addQuestion => '[PT] Add Question (Portuguese)';
@@ -1086,27 +1014,22 @@ class AppLocalizationsPt extends AppLocalizations {
   String get surveyManagement => '[PT] Survey Management (Portuguese)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[PT] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[PT] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[PT] No rooms found. Add your first room! (Portuguese)';
+  String get noRoomsFoundAddYourFirstRoom => '[PT] No rooms found. Add your first room! (Portuguese)';
 
   @override
-  String get readOurPrivacyPolicy =>
-      '[PT] Read our privacy policy (Portuguese)';
+  String get readOurPrivacyPolicy => '[PT] Read our privacy policy (Portuguese)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[PT] Could not open privacy policy (Portuguese)';
+  String get couldNotOpenPrivacyPolicy => '[PT] Could not open privacy policy (Portuguese)';
 
   @override
   String get refresh1 => '[PT] Refresh (Portuguese)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[PT] Room updated successfully! (Portuguese)';
+  String get roomUpdatedSuccessfully => '[PT] Room updated successfully! (Portuguese)';
 
   @override
   String get contentDetail => '[PT] Content Detail (Portuguese)';
@@ -1115,8 +1038,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get cancelSubscription => '[PT] Cancel Subscription (Portuguese)';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      '[PT] Successfully registered as Ambassador! (Portuguese)';
+  String get successfullyRegisteredAsAmbassador => '[PT] Successfully registered as Ambassador! (Portuguese)';
 
   @override
   String get save1 => '[PT] Save (Portuguese)';
@@ -1125,8 +1047,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get copy1 => '[PT] Copy (Portuguese)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[PT] Failed to send invitation: \$e (Portuguese)';
+  String get failedToSendInvitationE => '[PT] Failed to send invitation: \$e (Portuguese)';
 
   @override
   String get surveyScore => '[PT] Survey Score (Portuguese)';
@@ -1143,20 +1064,16 @@ class AppLocalizationsPt extends AppLocalizations {
   String get responseDetail => '[PT] Response Detail (Portuguese)';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[PT] Failed to start Pro subscription: \$e (Portuguese)';
+  String get failedToStartProSubscriptionE => '[PT] Failed to start Pro subscription: \$e (Portuguese)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      '[PT] Business Dashboard Entry Screen - Coming Soon (Portuguese)';
+  String get businessDashboardEntryScreenComingSoon => '[PT] Business Dashboard Entry Screen - Coming Soon (Portuguese)';
 
   @override
   String get contentFilter => '[PT] Content Filter (Portuguese)';
@@ -1178,8 +1095,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      '[PT] Business CRM Entry Screen - Coming Soon (Portuguese)';
+  String get businessCrmEntryScreenComingSoon => '[PT] Business CRM Entry Screen - Coming Soon (Portuguese)';
 
   @override
   String get adminDashboard => '[PT] Admin Dashboard';
@@ -1190,16 +1106,13 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[PT] Error loading dashboard: \$error (Portuguese)';
+  String get errorLoadingDashboardError => '[PT] Error loading dashboard: \$error (Portuguese)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[PT] Game deleted successfully! (Portuguese)';
+  String get gameDeletedSuccessfully => '[PT] Game deleted successfully! (Portuguese)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[PT] View responses - Coming soon! (Portuguese)';
+  String get viewResponsesComingSoon => '[PT] View responses - Coming soon! (Portuguese)';
 
   @override
   String get deleteProvider => '[PT] Delete Provider';
@@ -1208,8 +1121,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get errorLoadingRewards => '[PT] Error loading rewards (Portuguese)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[PT] Failed to delete account: \$e (Portuguese)';
+  String get failedToDeleteAccountE => '[PT] Failed to delete account: \$e (Portuguese)';
 
   @override
   String get invited1 => '[PT] Invited (Portuguese)';
@@ -1224,8 +1136,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get noEvents => '[PT] No events (Portuguese)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[PT] Game created successfully! (Portuguese)';
+  String get gameCreatedSuccessfully => '[PT] Game created successfully! (Portuguese)';
 
   @override
   String get add1 => '[PT] Add (Portuguese)';
@@ -1245,12 +1156,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get clients => '[PT] Clients (Portuguese)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[PT] No ambassador data available (Portuguese)';
+  String get noAmbassadorDataAvailable => '[PT] No ambassador data available (Portuguese)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[PT] Background deleted successfully! (Portuguese)';
+  String get backgroundDeletedSuccessfully => '[PT] Background deleted successfully! (Portuguese)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1258,8 +1167,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[PT] No analytics data available yet. (Portuguese)';
+  String get noAnalyticsDataAvailableYet => '[PT] No analytics data available yet. (Portuguese)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1267,8 +1175,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      '[PT] Business Phone Booking Entry Screen - Coming Soon (Portuguese)';
+  String get businessPhoneBookingEntryScreenComingSoon => '[PT] Business Phone Booking Entry Screen - Coming Soon (Portuguese)';
 
   @override
   String get verification => '[PT] Verification (Portuguese)';
@@ -1315,8 +1222,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get businessProfile => '[PT] Business Profile (Portuguese)';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      '[PT] Business Booking Entry Screen - Coming Soon (Portuguese)';
+  String get businessBookingEntryScreenComingSoon => '[PT] Business Booking Entry Screen - Coming Soon (Portuguese)';
 
   @override
   String get createNewSurvey => '[PT] Create New Survey (Portuguese)';
@@ -1340,8 +1246,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get loginFailedE => '[PT] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[PT] Invitation sent successfully! (Portuguese)';
+  String get invitationSentSuccessfully => '[PT] Invitation sent successfully! (Portuguese)';
 
   @override
   String get registering => '[PT] Registering... (Portuguese)';
@@ -1355,16 +1260,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get home1 => '[PT] Home (Portuguese)';
 
   @override
-  String get errorSavingSettingsE =>
-      '[PT] Error saving settings: \$e (Portuguese)';
+  String get errorSavingSettingsE => '[PT] Error saving settings: \$e (Portuguese)';
 
   @override
-  String get appVersionAndInformation =>
-      '[PT] App version and information (Portuguese)';
+  String get appVersionAndInformation => '[PT] App version and information (Portuguese)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      '[PT] Business Subscription Entry Screen - Coming Soon (Portuguese)';
+  String get businessSubscriptionEntryScreenComingSoon => '[PT] Business Subscription Entry Screen - Coming Soon (Portuguese)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1372,8 +1274,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      '[PT] Your payment has been processed successfully. (Portuguese)';
+  String get yourPaymentHasBeenProcessedSuccessfully => '[PT] Your payment has been processed successfully. (Portuguese)';
 
   @override
   String get errorE => '[PT] Error: \$e (Portuguese)';
@@ -1382,8 +1283,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get viewAll1 => '[PT] View All (Portuguese)';
 
   @override
-  String get editSurveyComingSoon =>
-      '[PT] Edit survey - Coming soon! (Portuguese)';
+  String get editSurveyComingSoon => '[PT] Edit survey - Coming soon! (Portuguese)';
 
   @override
   String get enterOtp => '[PT] Enter OTP (Portuguese)';
@@ -1392,8 +1292,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get payment => '[PT] Payment (Portuguese)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      '[PT] Automatically confirm new booking requests (Portuguese)';
+  String get automaticallyConfirmNewBookingRequests => '[PT] Automatically confirm new booking requests (Portuguese)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1406,8 +1305,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[PT] Please sign in to upload a background (Portuguese)';
+  String get pleaseSignInToUploadABackground => '[PT] Please sign in to upload a background (Portuguese)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1424,22 +1322,19 @@ class AppLocalizationsPt extends AppLocalizations {
   String get autoconfirmBookings => '[PT] Auto-Confirm Bookings (Portuguese)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      '[PT] Redirecting to Stripe checkout for Pro plan... (Portuguese)';
+  String get redirectingToStripeCheckoutForProPlan => '[PT] Redirecting to Stripe checkout for Pro plan... (Portuguese)';
 
   @override
   String get exportAsCsv => '[PT] Export as CSV (Portuguese)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[PT] Delete functionality coming soon! (Portuguese)';
+  String get deleteFunctionalityComingSoon => '[PT] Delete functionality coming soon! (Portuguese)';
 
   @override
   String get editClient => '[PT] Edit Client (Portuguese)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      '[PT] Are you sure you want to delete this message? (Portuguese)';
+  String get areYouSureYouWantToDeleteThisMessage => '[PT] Are you sure you want to delete this message? (Portuguese)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1450,39 +1345,31 @@ class AppLocalizationsPt extends AppLocalizations {
   String get notAuthenticated => '[PT] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[PT] Privacy request sent to your parents! (Portuguese)';
+  String get privacyRequestSentToYourParents => '[PT] Privacy request sent to your parents! (Portuguese)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[PT] Client deleted successfully! (Portuguese)';
+  String get clientDeletedSuccessfully => '[PT] Client deleted successfully! (Portuguese)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[PT] Failed to cancel subscription (Portuguese)';
+  String get failedToCancelSubscription => '[PT] Failed to cancel subscription (Portuguese)';
 
   @override
   String get allLanguages => '[PT] All Languages (Portuguese)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[PT] Slot deleted successfully (Portuguese)';
+  String get slotDeletedSuccessfully => '[PT] Slot deleted successfully (Portuguese)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      '[PT] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => '[PT] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      '[PT] Parents must approve before children can join (Portuguese)';
+  String get parentsMustApproveBeforeChildrenCanJoin => '[PT] Parents must approve before children can join (Portuguese)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[PT] Subscribe to Pro (€14.99/mo) (Portuguese)';
+  String get subscribeToPro1499mo => '[PT] Subscribe to Pro (€14.99/mo) (Portuguese)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      '[PT] Business Availability Entry Screen - Coming Soon (Portuguese)';
+  String get businessAvailabilityEntryScreenComingSoon => '[PT] Business Availability Entry Screen - Coming Soon (Portuguese)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1496,8 +1383,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get submitBooking => '[PT] Submit Booking (Portuguese)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      '[PT] Are you sure you want to cancel this appointment? (Portuguese)';
+  String get areYouSureYouWantToCancelThisAppointment => '[PT] Are you sure you want to cancel this appointment? (Portuguese)';
 
   @override
   String get noUpcomingBookings => '[PT] No upcoming bookings (Portuguese)';
@@ -1515,8 +1401,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get goToDashboard => '[PT] Go to Dashboard (Portuguese)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[PT] Ambassador Quota Dashboard (Portuguese)';
+  String get ambassadorQuotaDashboard => '[PT] Ambassador Quota Dashboard (Portuguese)';
 
   @override
   String get adminSettings => '[PT] Admin Settings';
@@ -1554,8 +1439,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[PT] Client added successfully! (Portuguese)';
+  String get clientAddedSuccessfully => '[PT] Client added successfully! (Portuguese)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1573,8 +1457,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get bookAppointment => '[PT] Book Appointment (Portuguese)';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[PT] Delete (Portuguese)';
@@ -1589,15 +1472,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get manageSubscription => '[PT] Manage Subscription (Portuguese)';
 
   @override
-  String get requiresInstallFallback =>
-      '[PT] Requires Install Fallback (Portuguese)';
+  String get requiresInstallFallback => '[PT] Requires Install Fallback (Portuguese)';
 
   @override
   String get paymentConfirmation => '[PT] Payment Confirmation (Portuguese)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[PT] Promo applied! Your next bill is free. (Portuguese)';
+  String get promoAppliedYourNextBillIsFree => '[PT] Promo applied! Your next bill is free. (Portuguese)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1608,16 +1489,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get errorLoadingSlots => '[PT] Error loading slots (Portuguese)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      '[PT] Allow other users to find and join this game (Portuguese)';
+  String get allowOtherUsersToFindAndJoinThisGame => '[PT] Allow other users to find and join this game (Portuguese)';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      '[PT] Business Onboarding Screen - Coming Soon (Portuguese)';
+  String get businessOnboardingScreenComingSoon => '[PT] Business Onboarding Screen - Coming Soon (Portuguese)';
 
   @override
-  String get activateBusinessProfile =>
-      '[PT] Activate Business Profile (Portuguese)';
+  String get activateBusinessProfile => '[PT] Activate Business Profile (Portuguese)';
 
   @override
   String get contentNotFound => '[PT] Content not found (Portuguese)';
@@ -1659,8 +1537,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get shareLink => '[PT] Share Link (Portuguese)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      '[PT] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => '[PT] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[PT] Delete Appointment (Portuguese)';
@@ -1680,12 +1557,10 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[PT] Update your business information (Portuguese)';
+  String get updateYourBusinessInformation => '[PT] Update your business information (Portuguese)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      '[PT] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => '[PT] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[PT] Parent Dashboard (Portuguese)';
@@ -1708,12 +1583,10 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      '[PT] Studio booking is only available on web (Portuguese)';
+  String get studioBookingIsOnlyAvailableOnWeb => '[PT] Studio booking is only available on web (Portuguese)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[PT] Error loading branches: \$e (Portuguese)';
+  String get errorLoadingBranchesE => '[PT] Error loading branches: \$e (Portuguese)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1729,15 +1602,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get none => '[PT] None (Portuguese)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[PT] Failed to update consent: \$e (Portuguese)';
+  String get failedToUpdateConsentE => '[PT] Failed to update consent: \$e (Portuguese)';
 
   @override
   String get welcome1 => '[PT] Welcome (Portuguese)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[PT] Failed to create session: \$e (Portuguese)';
+  String get failedToCreateSessionE => '[PT] Failed to create session: \$e (Portuguese)';
 
   @override
   String get inviteContact => '[PT] Invite Contact (Portuguese)';
@@ -1746,8 +1617,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get surveyEditor => '[PT] Survey Editor (Portuguese)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[PT] Failed to start Basic subscription: \$e (Portuguese)';
+  String get failedToStartBasicSubscriptionE => '[PT] Failed to start Basic subscription: \$e (Portuguese)';
 
   @override
   String get mySchedule => '[PT] My Schedule (Portuguese)';
@@ -1767,12 +1637,10 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[PT] Settings saved successfully! (Portuguese)';
+  String get settingsSavedSuccessfully => '[PT] Settings saved successfully! (Portuguese)';
 
   @override
-  String get linkCopiedToClipboard =>
-      '[PT] Link copied to clipboard! (Portuguese)';
+  String get linkCopiedToClipboard => '[PT] Link copied to clipboard! (Portuguese)';
 
   @override
   String get accept1 => '[PT] Accept (Portuguese)';
@@ -1789,8 +1657,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[PT] Room deleted successfully! (Portuguese)';
+  String get roomDeletedSuccessfully => '[PT] Room deleted successfully! (Portuguese)';
 
   @override
   String get businessCalendar => '[PT] Business Calendar (Portuguese)';
@@ -1810,8 +1677,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get addNewRoom => '[PT] Add New Room (Portuguese)';
 
   @override
-  String get requireParentApproval =>
-      '[PT] Require Parent Approval (Portuguese)';
+  String get requireParentApproval => '[PT] Require Parent Approval (Portuguese)';
 
   @override
   String get closed => '[PT] Closed (Portuguese)';
@@ -1856,8 +1722,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get cancel1 => '[PT] Cancel (Portuguese)';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      '[PT] Subscription activated successfully! (Portuguese)';
+  String get subscriptionActivatedSuccessfully => '[PT] Subscription activated successfully! (Portuguese)';
 
   @override
   String activityLogaction(Object action) {
@@ -1868,8 +1733,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get broadcast => '[PT] Broadcast (Portuguese)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[PT] No events scheduled this week (Portuguese)';
+  String get noEventsScheduledThisWeek => '[PT] No events scheduled this week (Portuguese)';
 
   @override
   String get googleCalendar => '[PT] Google Calendar (Portuguese)';
@@ -1881,8 +1745,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get childDashboard => '[PT] Child Dashboard (Portuguese)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[PT] Failed to upload background: \$e (Portuguese)';
+  String get failedToUploadBackgroundE => '[PT] Failed to upload background: \$e (Portuguese)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1901,8 +1764,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get noAppointments => '[PT] No appointments (Portuguese)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[PT] • Unlimited bookings per week (Portuguese)';
+  String get unlimitedBookingsPerWeek => '[PT] • Unlimited bookings per week (Portuguese)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1910,19 +1772,16 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[PT] Scheduled at: \$scheduledAt (Portuguese)';
+  String get scheduledAtScheduledat => '[PT] Scheduled at: \$scheduledAt (Portuguese)';
 
   @override
   String get selectStaff => '[PT] Select Staff (Portuguese)';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      '[PT] Subscription cancelled successfully (Portuguese)';
+  String get subscriptionCancelledSuccessfully => '[PT] Subscription cancelled successfully (Portuguese)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[PT] Cancel Appointment (Portuguese)';
@@ -1936,8 +1795,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get businessSignup => '[PT] Business Signup (Portuguese)';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      '[PT] Business Completion Screen - Coming Soon (Portuguese)';
+  String get businessCompletionScreenComingSoon => '[PT] Business Completion Screen - Coming Soon (Portuguese)';
 
   @override
   String get createGame1 => '[PT] Create Game (Portuguese)';
@@ -1948,12 +1806,10 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode =>
-      '[PT] Please enter a promo code (Portuguese)';
+  String get pleaseEnterAPromoCode => '[PT] Please enter a promo code (Portuguese)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[PT] Error loading availability: \$e (Portuguese)';
+  String get errorLoadingAvailabilityE => '[PT] Error loading availability: \$e (Portuguese)';
 
   @override
   String get parentalControls => '[PT] Parental Controls (Portuguese)';
@@ -1962,15 +1818,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[PT] Child linked successfully! (Portuguese)';
+  String get childLinkedSuccessfully => '[PT] Child linked successfully! (Portuguese)';
 
   @override
   String get create => '[PT] Create (Portuguese)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[PT] No external meetings found. (Portuguese)';
+  String get noExternalMeetingsFound => '[PT] No external meetings found. (Portuguese)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1978,15 +1832,13 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[PT] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[PT] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[PT] Scheduler Screen (Portuguese)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[PT] Client updated successfully! (Portuguese)';
+  String get clientUpdatedSuccessfully => '[PT] Client updated successfully! (Portuguese)';
 
   @override
   String get surveyResponses => '[PT] Survey Responses (Portuguese)';
@@ -2012,12 +1864,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get errorLoadingEvents => '[PT] Error loading events (Portuguese)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[PT] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[PT] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[PT] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[PT] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[PT] Success (Portuguese)';
@@ -2036,12 +1886,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get readWrite => '[PT] Read & Write (Portuguese)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      '[PT] Redirecting to Stripe checkout for Basic plan... (Portuguese)';
+  String get redirectingToStripeCheckoutForBasicPlan => '[PT] Redirecting to Stripe checkout for Basic plan... (Portuguese)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[PT] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[PT] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[PT] Pick Date (Portuguese)';
@@ -2077,12 +1925,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get businessLogin => '[PT] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[PT] Invoice created successfully! (Portuguese)';
+  String get invoiceCreatedSuccessfully => '[PT] Invoice created successfully! (Portuguese)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[PT] No time series data available (Portuguese)';
+  String get noTimeSeriesDataAvailable => '[PT] No time series data available (Portuguese)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2095,8 +1941,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[PT] Failed to send privacy request: \$e (Portuguese)';
+  String get failedToSendPrivacyRequestE => '[PT] Failed to send privacy request: \$e (Portuguese)';
 
   @override
   String get chooseYourPlan => '[PT] Choose Your Plan (Portuguese)';
@@ -2111,15 +1956,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get eventCreated => '[PT] Event created (Portuguese)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[PT] Subscribe to Basic (€4.99/mo) (Portuguese)';
+  String get subscribeToBasic499mo => '[PT] Subscribe to Basic (€4.99/mo) (Portuguese)';
 
   @override
   String get completion => '[PT] Completion (Portuguese)';
 
   @override
-  String get supportTicketSubmitted =>
-      '[PT] Support ticket submitted (Portuguese)';
+  String get supportTicketSubmitted => '[PT] Support ticket submitted (Portuguese)';
 
   @override
   String get monetizationSettings => '[PT] Monetization Settings (Portuguese)';
@@ -2134,12 +1977,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get deleteSurvey => '[PT] Delete Survey (Portuguese)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[PT] Game approved successfully! (Portuguese)';
+  String get gameApprovedSuccessfully => '[PT] Game approved successfully! (Portuguese)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[PT] Error loading permissions: \$error (Portuguese)';
+  String get errorLoadingPermissionsError => '[PT] Error loading permissions: \$error (Portuguese)';
 
   @override
   String get referrals => '[PT] Referrals (Portuguese)';
@@ -2181,8 +2022,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get organizations => '[PT] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[PT] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[PT] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[PT] Create New Game (Portuguese)';
@@ -2191,19 +2031,16 @@ class AppLocalizationsPt extends AppLocalizations {
   String get next1 => '[PT] Next (Portuguese)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[PT] Background uploaded successfully! (Portuguese)';
+  String get backgroundUploadedSuccessfully => '[PT] Background uploaded successfully! (Portuguese)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[PT] No appointment requests found. (Portuguese)';
+  String get noAppointmentRequestsFound => '[PT] No appointment requests found. (Portuguese)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent =>
-      '[PT] Restrict mature content (Portuguese)';
+  String get restrictMatureContent => '[PT] Restrict mature content (Portuguese)';
 
   @override
   String get ambassadors => '[PT] Ambassadors (Portuguese)';
@@ -2224,20 +2061,16 @@ class AppLocalizationsPt extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE =>
-      '[PT] Failed to create game: \$e (Portuguese)';
+  String get failedToCreateGameE => '[PT] Failed to create game: \$e (Portuguese)';
 
   @override
-  String get noChartDataAvailable =>
-      '[PT] No chart data available (Portuguese)';
+  String get noChartDataAvailable => '[PT] No chart data available (Portuguese)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[PT] • Phone-based booking system (Portuguese)';
+  String get phonebasedBookingSystem => '[PT] • Phone-based booking system (Portuguese)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2246,8 +2079,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get invoices => '[PT] Invoices (Portuguese)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2274,12 +2106,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get iDoNotConsent => '[PT] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      '[PT] No clients found. Add your first client! (Portuguese)';
+  String get noClientsFoundAddYourFirstClient => '[PT] No clients found. Add your first client! (Portuguese)';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      '[PT] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => '[PT] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[PT] Group: \$groupId';
@@ -2291,8 +2121,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get forward => '[PT] Forward (Portuguese)';
 
   @override
-  String get roomAddedSuccessfully =>
-      '[PT] Room added successfully! (Portuguese)';
+  String get roomAddedSuccessfully => '[PT] Room added successfully! (Portuguese)';
 
   @override
   String get option => '[PT] • \$option (Portuguese)';
@@ -2303,8 +2132,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[PT] • CRM dashboard with analytics (Portuguese)';
+  String get crmDashboardWithAnalytics => '[PT] • CRM dashboard with analytics (Portuguese)';
 
   @override
   String get contentLibrary1 => '[PT] Content Library (Portuguese)';
@@ -2313,34 +2141,28 @@ class AppLocalizationsPt extends AppLocalizations {
   String get reply => '[PT] Reply (Portuguese)';
 
   @override
-  String get subscriptionManagement =>
-      '[PT] Subscription Management (Portuguese)';
+  String get subscriptionManagement => '[PT] Subscription Management (Portuguese)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      '[PT] Monetization settings will be implemented here (Portuguese)';
+  String get monetizationSettingsWillBeImplementedHere => '[PT] Monetization settings will be implemented here (Portuguese)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[PT] Failed to apply promo code: \$e (Portuguese)';
+  String get failedToApplyPromoCodeE => '[PT] Failed to apply promo code: \$e (Portuguese)';
 
   @override
   String get editProvider => '[PT] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[PT] Localization Contribution (Portuguese)';
+  String get localizationContribution => '[PT] Localization Contribution (Portuguese)';
 
   @override
   String get parentalConsent => '[PT] Parental Consent (Portuguese)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[PT] Business Signup Screen - Coming Soon (Portuguese)';
+  String get businessSignupScreenComingSoon => '[PT] Business Signup Screen - Coming Soon (Portuguese)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      '[PT] Are you sure you want to delete this appointment? (Portuguese)';
+  String get areYouSureYouWantToDeleteThisAppointment => '[PT] Are you sure you want to delete this appointment? (Portuguese)';
 
   @override
   String get syncAppointment => '[PT] Sync Appointment (Portuguese)';
@@ -2352,15 +2174,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[PT] Business Setup Screen - Coming Soon (Portuguese)';
+  String get businessSetupScreenComingSoon => '[PT] Business Setup Screen - Coming Soon (Portuguese)';
 
   @override
   String get edit1 => '[PT] Edit (Portuguese)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[PT] No events scheduled this month (Portuguese)';
+  String get noEventsScheduledThisMonth => '[PT] No events scheduled this month (Portuguese)';
 
   @override
   String get businessDashboard => '[PT] Business Dashboard (Portuguese)';
@@ -2374,12 +2194,10 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[PT] Manage Staff Availability (Portuguese)';
+  String get manageStaffAvailability => '[PT] Manage Staff Availability (Portuguese)';
 
   @override
-  String get noMissingTranslations =>
-      '[PT] No missing translations (Portuguese)';
+  String get noMissingTranslations => '[PT] No missing translations (Portuguese)';
 
   @override
   String get skip => '[PT] Skip (Portuguese)';
@@ -2393,8 +2211,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get noUsers => '[PT] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[PT] Error loading referral code (Portuguese)';
+  String get errorLoadingReferralCode => '[PT] Error loading referral code (Portuguese)';
 
   @override
   String get allCountries => '[PT] All Countries (Portuguese)';
@@ -2403,15 +2220,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get deleteGame => '[PT] Delete Game (Portuguese)';
 
   @override
-  String get staffManagementTools =>
-      '[PT] • Staff management tools (Portuguese)';
+  String get staffManagementTools => '[PT] • Staff management tools (Portuguese)';
 
   @override
   String get deleteMessage => '[PT] Delete Message (Portuguese)';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[PT] changeRole (TRANSLATE)';
@@ -2422,8 +2237,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[PT] Opening customer portal... (Portuguese)';
+  String get openingCustomerPortal => '[PT] Opening customer portal... (Portuguese)';
 
   @override
   String get signOut => '[PT] Sign Out (Portuguese)';
@@ -2434,8 +2248,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[PT] Upgrade to Business (Portuguese)';
@@ -2461,8 +2274,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[PT] View Responses (Portuguese)';
@@ -2491,8 +2303,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2510,8 +2321,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get ad_pre_title => 'Assista a um anúncio para confirmar sua consulta';
 
   @override
-  String get ad_pre_description =>
-      'Como usuário gratuito, você deve assistir a um anúncio curto antes de confirmar. Você pode remover todos os anúncios permanentemente fazendo upgrade.';
+  String get ad_pre_description => 'Como usuário gratuito, você deve assistir a um anúncio curto antes de confirmar. Você pode remover todos os anúncios permanentemente fazendo upgrade.';
 
   @override
   String get watch_ad_button => 'Assistir Anúncio';
@@ -2520,8 +2330,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get upgrade_button => 'Atualizar para Premium (€4)';
 
   @override
-  String get ad_post_title =>
-      'Anúncio terminado! Agora você pode confirmar sua consulta.';
+  String get ad_post_title => 'Anúncio terminado! Agora você pode confirmar sua consulta.';
 
   @override
   String get confirm_appointment_button => 'Confirmar Consulta';
@@ -2530,8 +2339,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get upgrade_prompt_title => 'Atualização única';
 
   @override
-  String get upgrade_prompt_description =>
-      'Pague €4 para remover todos os anúncios para sempre';
+  String get upgrade_prompt_description => 'Pague €4 para remover todos os anúncios para sempre';
 
   @override
   String get purchase_now_button => 'Comprar Agora';
@@ -2570,8 +2378,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement =>
-      'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2619,12 +2426,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage =>
-      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle =>
-      '[PT] Congratulations! You\'re now an Ambassador! (Portuguese)';
+  String get ambassadorPromotionTitle => '[PT] Congratulations! You\'re now an Ambassador! (Portuguese)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2635,11 +2440,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get tierUpgradeTitle => '[PT] Tier Upgrade! 🎉 (Portuguese)';
 
   @override
-  String tierUpgradeBody(
-    String previousTier,
-    String newTier,
-    String totalReferrals,
-  ) {
+  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
     return '[PT] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Portuguese)';
   }
 
@@ -2647,29 +2448,20 @@ class AppLocalizationsPt extends AppLocalizations {
   String get monthlyReminderTitle => '[PT] Monthly Goal Reminder (Portuguese)';
 
   @override
-  String monthlyReminderBody(
-    String currentReferrals,
-    String targetReferrals,
-    String daysRemaining,
-  ) {
+  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
     return '[PT] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Portuguese)';
   }
 
   @override
-  String get performanceWarningTitle =>
-      '[PT] Ambassador Performance Alert (Portuguese)';
+  String get performanceWarningTitle => '[PT] Ambassador Performance Alert (Portuguese)';
 
   @override
-  String performanceWarningBody(
-    String currentReferrals,
-    String minimumRequired,
-  ) {
+  String performanceWarningBody(String currentReferrals, String minimumRequired) {
     return '[PT] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Portuguese)';
   }
 
   @override
-  String get ambassadorDemotionTitle =>
-      '[PT] Ambassador Status Update (Portuguese)';
+  String get ambassadorDemotionTitle => '[PT] Ambassador Status Update (Portuguese)';
 
   @override
   String ambassadorDemotionBody(String reason) {
@@ -2756,7 +2548,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
 class AppLocalizationsPtBr extends AppLocalizationsPt {
-  AppLocalizationsPtBr() : super('pt_BR');
+  AppLocalizationsPtBr(): super('pt_BR');
 
   @override
   String get refresh => '[PT_BR] [PT_BR] Refresh';
@@ -2824,8 +2616,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get search => '[PT_BR] Pesquisar';
 
   @override
-  String get cancelInviteConfirmation =>
-      '[PT_BR] [PT_BR] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation => '[PT_BR] [PT_BR] Are you sure you want to cancel this invite?';
 
   @override
   String created(String created, Object date) {
@@ -2839,8 +2630,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get playtimeLiveScheduled => '[PT_BR] Sessão ao vivo agendada';
 
   @override
-  String get revokeAccessConfirmation =>
-      '[PT_BR] [PT_BR] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation => '[PT_BR] [PT_BR] Are you sure you want to revoke access?';
 
   @override
   String get download => '[PT_BR] Baixar';
@@ -2880,8 +2670,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get delete => '[PT_BR] Excluir';
 
   @override
-  String get playtimeVirtualStarted =>
-      '[PT_BR] [PT_BR] Virtual playtime started!';
+  String get playtimeVirtualStarted => '[PT_BR] [PT_BR] Virtual playtime started!';
 
   @override
   String get createYourFirstGame => '[PT_BR] Crie seu primeiro jogo';
@@ -2935,8 +2724,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get meetingSharedSuccessfully =>
-      '[PT_BR] Reunião compartilhada com sucesso';
+  String get meetingSharedSuccessfully => '[PT_BR] Reunião compartilhada com sucesso';
 
   @override
   String get welcomeToPlaytime => '[PT_BR] [PT_BR] Welcome to Playtime';
@@ -2954,15 +2742,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get cut => '[PT_BR] [PT_BR] Cut';
 
   @override
-  String get inviteCancelledSuccessfully =>
-      '[PT_BR] [PT_BR] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully => '[PT_BR] [PT_BR] Invite cancelled successfully';
 
   @override
   String get retry => '[PT_BR] Repetir';
 
   @override
-  String get composeBroadcastMessage =>
-      '[PT_BR] Escrever mensagem de transmissão';
+  String get composeBroadcastMessage => '[PT_BR] Escrever mensagem de transmissão';
 
   @override
   String get sendNow => '[PT_BR] [PT_BR] Send Now';
@@ -3235,8 +3021,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get playtimeEnterGameName => '[PT_BR] [PT_BR] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[PT_BR] [PT_BR] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '[PT_BR] [PT_BR] Please login to access family features';
 
   @override
   String get myInvites => '[PT_BR] [PT_BR] My Invites';
@@ -3245,15 +3030,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get createGame => '[PT_BR] [PT_BR] Create Game';
 
   @override
-  String get playtimeNoSessions =>
-      '[PT_BR] [PT_BR] No playtime sessions found.';
+  String get playtimeNoSessions => '[PT_BR] [PT_BR] No playtime sessions found.';
 
   @override
   String get adminScreenTBD => '[PT_BR] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle =>
-      '[PT_BR] [PT_BR] Playtime Dashboard';
+  String get playtimeParentDashboardTitle => '[PT_BR] [PT_BR] Playtime Dashboard';
 
   @override
   String get close => '[PT_BR] [PT_BR] Close';
@@ -3281,8 +3064,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get meetingReadyMessage =>
-      '[PT_BR] [PT_BR] Your meeting is ready! Join now';
+  String get meetingReadyMessage => '[PT_BR] [PT_BR] Your meeting is ready! Join now';
 
   @override
   String get pendingInvites => '[PT_BR] [PT_BR] Pending Invites';
@@ -3293,8 +3075,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get pleaseLoginToViewProfile =>
-      '[PT_BR] [PT_BR] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile => '[PT_BR] [PT_BR] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[PT_BR] Admin Metrics';
@@ -3315,52 +3096,40 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get contentLibrary => '[PT_BR] Content Library';
 
   @override
-  String get authErrorUserNotFound =>
-      '[PT_BR] No account found with this email address.';
+  String get authErrorUserNotFound => '[PT_BR] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword =>
-      '[PT_BR] Incorrect password. Please try again.';
+  String get authErrorWrongPassword => '[PT_BR] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail =>
-      '[PT_BR] Please enter a valid email address.';
+  String get authErrorInvalidEmail => '[PT_BR] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled =>
-      '[PT_BR] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled => '[PT_BR] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[PT_BR] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword => '[PT_BR] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse =>
-      '[PT_BR] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse => '[PT_BR] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[PT_BR] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests => '[PT_BR] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[PT_BR] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed => '[PT_BR] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[PT_BR] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential => '[PT_BR] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      '[PT_BR] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential => '[PT_BR] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[PT_BR] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse => '[PT_BR] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[PT_BR] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed => '[PT_BR] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -3377,88 +3146,67 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[PT_BR] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin => '[PT_BR] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[PT_BR] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[PT_BR] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode =>
-      '[PT_BR] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode => '[PT_BR] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId =>
-      '[PT_BR] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId => '[PT_BR] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode =>
-      '[PT_BR] Please enter the verification code.';
+  String get authErrorMissingVerificationCode => '[PT_BR] Please enter the verification code.';
 
   @override
-  String get authErrorMissingVerificationId =>
-      '[PT_BR] Missing verification ID.';
+  String get authErrorMissingVerificationId => '[PT_BR] Missing verification ID.';
 
   @override
-  String get authErrorInvalidPhoneNumber =>
-      '[PT_BR] The phone number is invalid.';
+  String get authErrorInvalidPhoneNumber => '[PT_BR] The phone number is invalid.';
 
   @override
-  String get authErrorMissingPhoneNumber =>
-      '[PT_BR] Please enter a phone number.';
+  String get authErrorMissingPhoneNumber => '[PT_BR] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[PT_BR] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded => '[PT_BR] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[PT_BR] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired => '[PT_BR] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired =>
-      '[PT_BR] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired => '[PT_BR] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired =>
-      '[PT_BR] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired => '[PT_BR] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound =>
-      '[PT_BR] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound => '[PT_BR] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession =>
-      '[PT_BR] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession => '[PT_BR] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession =>
-      '[PT_BR] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession => '[PT_BR] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      '[PT_BR] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse => '[PT_BR] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      '[PT_BR] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded => '[PT_BR] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[PT_BR] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor => '[PT_BR] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      '[PT_BR] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification => '[PT_BR] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      '[PT_BR] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists => '[PT_BR] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword =>
-      '[PT_BR] The password is invalid or too weak.';
+  String get authErrorInvalidPassword => '[PT_BR] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[PT_BR] The ID token is invalid.';
@@ -3467,109 +3215,85 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get authErrorIdTokenExpired => '[PT_BR] The ID token has expired.';
 
   @override
-  String get authErrorIdTokenRevoked =>
-      '[PT_BR] The ID token has been revoked.';
+  String get authErrorIdTokenRevoked => '[PT_BR] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError =>
-      '[PT_BR] An internal error occurred. Please try again.';
+  String get authErrorInternalError => '[PT_BR] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument =>
-      '[PT_BR] An invalid argument was provided.';
+  String get authErrorInvalidArgument => '[PT_BR] An invalid argument was provided.';
 
   @override
-  String get authErrorInvalidClaims =>
-      '[PT_BR] Invalid custom claims provided.';
+  String get authErrorInvalidClaims => '[PT_BR] Invalid custom claims provided.';
 
   @override
-  String get authErrorInvalidContinueUri =>
-      '[PT_BR] The continue URL is invalid.';
+  String get authErrorInvalidContinueUri => '[PT_BR] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime =>
-      '[PT_BR] The creation time is invalid.';
+  String get authErrorInvalidCreationTime => '[PT_BR] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField =>
-      '[PT_BR] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField => '[PT_BR] The disabled field value is invalid.';
 
   @override
-  String get authErrorInvalidDisplayName =>
-      '[PT_BR] The display name is invalid.';
+  String get authErrorInvalidDisplayName => '[PT_BR] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      '[PT_BR] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain => '[PT_BR] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[PT_BR] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified => '[PT_BR] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm =>
-      '[PT_BR] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm => '[PT_BR] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[PT_BR] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize => '[PT_BR] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      '[PT_BR] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength => '[PT_BR] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[PT_BR] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[PT_BR] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost => '[PT_BR] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      '[PT_BR] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization => '[PT_BR] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds =>
-      '[PT_BR] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds => '[PT_BR] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      '[PT_BR] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator => '[PT_BR] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[PT_BR] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime => '[PT_BR] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[PT_BR] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData =>
-      '[PT_BR] The provider data is invalid.';
+  String get authErrorInvalidProviderData => '[PT_BR] The provider data is invalid.';
 
   @override
-  String get authErrorInvalidProviderId =>
-      '[PT_BR] The provider ID is invalid.';
+  String get authErrorInvalidProviderId => '[PT_BR] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      '[PT_BR] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration => '[PT_BR] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[PT_BR] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[PT_BR] The user import record is invalid.';
+  String get authErrorInvalidUserImport => '[PT_BR] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      '[PT_BR] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded => '[PT_BR] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName =>
-      '[PT_BR] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName => '[PT_BR] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[PT_BR] Missing continue URL.';
@@ -3584,8 +3308,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get authErrorMissingUid => '[PT_BR] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret =>
-      '[PT_BR] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret => '[PT_BR] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[PT_BR] Firebase project not found.';
@@ -3594,23 +3317,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get authErrorReservedClaims => '[PT_BR] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired =>
-      '[PT_BR] Session cookie has expired.';
+  String get authErrorSessionCookieExpired => '[PT_BR] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked =>
-      '[PT_BR] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked => '[PT_BR] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[PT_BR] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      '[PT_BR] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri => '[PT_BR] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown =>
-      '[PT_BR] An unknown authentication error occurred.';
+  String get authErrorUnknown => '[PT_BR] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -3659,8 +3378,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      '[PT_BR] Virtual session created! Inviting friends... (Portuguese (Brazil))';
+  String get virtualSessionCreatedInvitingFriends => '[PT_BR] Virtual session created! Inviting friends... (Portuguese (Brazil))';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -3701,15 +3419,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[PT_BR] Subscription unavailable (Portuguese (Brazil))';
+  String get subscriptionUnavailable => '[PT_BR] Subscription unavailable (Portuguese (Brazil))';
 
   @override
   String get confirmBooking => '[PT_BR] Confirm Booking (Portuguese (Brazil))';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[PT_BR] Failed to update permission: \$e (Portuguese (Brazil))';
+  String get failedToUpdatePermissionE => '[PT_BR] Failed to update permission: \$e (Portuguese (Brazil))';
 
   @override
   String get reject => '[PT_BR] Reject (Portuguese (Brazil))';
@@ -3723,8 +3439,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get noProviders => '[PT_BR] No providers';
 
   @override
-  String get checkingSubscription =>
-      '[PT_BR] Checking subscription... (Portuguese (Brazil))';
+  String get checkingSubscription => '[PT_BR] Checking subscription... (Portuguese (Brazil))';
 
   @override
   String errorPickingImageE(Object e) {
@@ -3732,15 +3447,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get noContentAvailableYet =>
-      '[PT_BR] No content available yet (Portuguese (Brazil))';
+  String get noContentAvailableYet => '[PT_BR] No content available yet (Portuguese (Brazil))';
 
   @override
   String get resolve => '[PT_BR] Resolve (Portuguese (Brazil))';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[PT_BR] Error loading surveys: \$error (Portuguese (Brazil))';
+  String get errorLoadingSurveysError => '[PT_BR] Error loading surveys: \$error (Portuguese (Brazil))';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -3748,8 +3461,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[PT_BR] Get help with your account (Portuguese (Brazil))';
+  String get getHelpWithYourAccount => '[PT_BR] Get help with your account (Portuguese (Brazil))';
 
   @override
   String get pay => '[PT_BR] Pay (Portuguese (Brazil))';
@@ -3764,12 +3476,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[PT_BR] Changes saved successfully! (Portuguese (Brazil))';
+  String get changesSavedSuccessfully => '[PT_BR] Changes saved successfully! (Portuguese (Brazil))';
 
   @override
-  String get createNewInvoice =>
-      '[PT_BR] Create New Invoice (Portuguese (Brazil))';
+  String get createNewInvoice => '[PT_BR] Create New Invoice (Portuguese (Brazil))';
 
   @override
   String get profileNotFound => 'الملف الشخصي غير موجود';
@@ -3786,8 +3496,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get profileSaved => '[PT_BR] Profile saved! (Portuguese (Brazil))';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -3801,8 +3510,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get profile1 => 'الملف الشخصي';
 
   @override
-  String get businessOnboarding =>
-      '[PT_BR] Business Onboarding (Portuguese (Brazil))';
+  String get businessOnboarding => '[PT_BR] Business Onboarding (Portuguese (Brazil))';
 
   @override
   String get addNewClient => '[PT_BR] Add New Client (Portuguese (Brazil))';
@@ -3819,8 +3527,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      '[PT_BR] You will receive a confirmation email shortly. (Portuguese (Brazil))';
+  String get youWillReceiveAConfirmationEmailShortly => '[PT_BR] You will receive a confirmation email shortly. (Portuguese (Brazil))';
 
   @override
   String get addQuestion => '[PT_BR] Add Question (Portuguese (Brazil))';
@@ -3837,8 +3544,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get join => '[PT_BR] Join (Portuguese (Brazil))';
 
   @override
-  String get businessSubscription =>
-      '[PT_BR] Business Subscription (Portuguese (Brazil))';
+  String get businessSubscription => '[PT_BR] Business Subscription (Portuguese (Brazil))';
 
   @override
   String get myInvites1 => 'دعواتي';
@@ -3847,42 +3553,34 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get providers => '[PT_BR] Providers';
 
   @override
-  String get surveyManagement =>
-      '[PT_BR] Survey Management (Portuguese (Brazil))';
+  String get surveyManagement => '[PT_BR] Survey Management (Portuguese (Brazil))';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[PT_BR] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[PT_BR] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[PT_BR] No rooms found. Add your first room! (Portuguese (Brazil))';
+  String get noRoomsFoundAddYourFirstRoom => '[PT_BR] No rooms found. Add your first room! (Portuguese (Brazil))';
 
   @override
-  String get readOurPrivacyPolicy =>
-      '[PT_BR] Read our privacy policy (Portuguese (Brazil))';
+  String get readOurPrivacyPolicy => '[PT_BR] Read our privacy policy (Portuguese (Brazil))';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[PT_BR] Could not open privacy policy (Portuguese (Brazil))';
+  String get couldNotOpenPrivacyPolicy => '[PT_BR] Could not open privacy policy (Portuguese (Brazil))';
 
   @override
   String get refresh1 => '[PT_BR] Refresh (Portuguese (Brazil))';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[PT_BR] Room updated successfully! (Portuguese (Brazil))';
+  String get roomUpdatedSuccessfully => '[PT_BR] Room updated successfully! (Portuguese (Brazil))';
 
   @override
   String get contentDetail => '[PT_BR] Content Detail (Portuguese (Brazil))';
 
   @override
-  String get cancelSubscription =>
-      '[PT_BR] Cancel Subscription (Portuguese (Brazil))';
+  String get cancelSubscription => '[PT_BR] Cancel Subscription (Portuguese (Brazil))';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      '[PT_BR] Successfully registered as Ambassador! (Portuguese (Brazil))';
+  String get successfullyRegisteredAsAmbassador => '[PT_BR] Successfully registered as Ambassador! (Portuguese (Brazil))';
 
   @override
   String get save1 => '[PT_BR] Save (Portuguese (Brazil))';
@@ -3891,8 +3589,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get copy1 => '[PT_BR] Copy (Portuguese (Brazil))';
 
   @override
-  String get failedToSendInvitationE =>
-      '[PT_BR] Failed to send invitation: \$e (Portuguese (Brazil))';
+  String get failedToSendInvitationE => '[PT_BR] Failed to send invitation: \$e (Portuguese (Brazil))';
 
   @override
   String get surveyScore => '[PT_BR] Survey Score (Portuguese (Brazil))';
@@ -3903,27 +3600,22 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get noAppointmentsFound =>
-      '[PT_BR] No appointments found. (Portuguese (Brazil))';
+  String get noAppointmentsFound => '[PT_BR] No appointments found. (Portuguese (Brazil))';
 
   @override
   String get responseDetail => '[PT_BR] Response Detail (Portuguese (Brazil))';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[PT_BR] Failed to start Pro subscription: \$e (Portuguese (Brazil))';
+  String get failedToStartProSubscriptionE => '[PT_BR] Failed to start Pro subscription: \$e (Portuguese (Brazil))';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      '[PT_BR] Business Dashboard Entry Screen - Coming Soon (Portuguese (Brazil))';
+  String get businessDashboardEntryScreenComingSoon => '[PT_BR] Business Dashboard Entry Screen - Coming Soon (Portuguese (Brazil))';
 
   @override
   String get contentFilter => '[PT_BR] Content Filter (Portuguese (Brazil))';
@@ -3945,8 +3637,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      '[PT_BR] Business CRM Entry Screen - Coming Soon (Portuguese (Brazil))';
+  String get businessCrmEntryScreenComingSoon => '[PT_BR] Business CRM Entry Screen - Coming Soon (Portuguese (Brazil))';
 
   @override
   String get adminDashboard => '[PT_BR] Admin Dashboard';
@@ -3957,34 +3648,28 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[PT_BR] Error loading dashboard: \$error (Portuguese (Brazil))';
+  String get errorLoadingDashboardError => '[PT_BR] Error loading dashboard: \$error (Portuguese (Brazil))';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[PT_BR] Game deleted successfully! (Portuguese (Brazil))';
+  String get gameDeletedSuccessfully => '[PT_BR] Game deleted successfully! (Portuguese (Brazil))';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[PT_BR] View responses - Coming soon! (Portuguese (Brazil))';
+  String get viewResponsesComingSoon => '[PT_BR] View responses - Coming soon! (Portuguese (Brazil))';
 
   @override
   String get deleteProvider => '[PT_BR] Delete Provider';
 
   @override
-  String get errorLoadingRewards =>
-      '[PT_BR] Error loading rewards (Portuguese (Brazil))';
+  String get errorLoadingRewards => '[PT_BR] Error loading rewards (Portuguese (Brazil))';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[PT_BR] Failed to delete account: \$e (Portuguese (Brazil))';
+  String get failedToDeleteAccountE => '[PT_BR] Failed to delete account: \$e (Portuguese (Brazil))';
 
   @override
   String get invited1 => '[PT_BR] Invited (Portuguese (Brazil))';
 
   @override
-  String get noBranchesAvailable =>
-      '[PT_BR] No branches available (Portuguese (Brazil))';
+  String get noBranchesAvailable => '[PT_BR] No branches available (Portuguese (Brazil))';
 
   @override
   String get errorError => '[PT_BR] Error: \$error (Portuguese (Brazil))';
@@ -3993,8 +3678,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get noEvents => '[PT_BR] No events (Portuguese (Brazil))';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[PT_BR] Game created successfully! (Portuguese (Brazil))';
+  String get gameCreatedSuccessfully => '[PT_BR] Game created successfully! (Portuguese (Brazil))';
 
   @override
   String get add1 => '[PT_BR] Add (Portuguese (Brazil))';
@@ -4014,12 +3698,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get clients => '[PT_BR] Clients (Portuguese (Brazil))';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[PT_BR] No ambassador data available (Portuguese (Brazil))';
+  String get noAmbassadorDataAvailable => '[PT_BR] No ambassador data available (Portuguese (Brazil))';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[PT_BR] Background deleted successfully! (Portuguese (Brazil))';
+  String get backgroundDeletedSuccessfully => '[PT_BR] Background deleted successfully! (Portuguese (Brazil))';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -4027,8 +3709,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[PT_BR] No analytics data available yet. (Portuguese (Brazil))';
+  String get noAnalyticsDataAvailableYet => '[PT_BR] No analytics data available yet. (Portuguese (Brazil))';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -4036,8 +3717,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      '[PT_BR] Business Phone Booking Entry Screen - Coming Soon (Portuguese (Brazil))';
+  String get businessPhoneBookingEntryScreenComingSoon => '[PT_BR] Business Phone Booking Entry Screen - Coming Soon (Portuguese (Brazil))';
 
   @override
   String get verification => '[PT_BR] Verification (Portuguese (Brazil))';
@@ -4049,8 +3729,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get dashboard1 => '[PT_BR] Dashboard (Portuguese (Brazil))';
 
   @override
-  String get manageChildAccounts =>
-      '[PT_BR] Manage Child Accounts (Portuguese (Brazil))';
+  String get manageChildAccounts => '[PT_BR] Manage Child Accounts (Portuguese (Brazil))';
 
   @override
   String get grantConsent => '[PT_BR] Grant Consent (Portuguese (Brazil))';
@@ -4070,8 +3749,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get emailNotifications => 'إشعارات البريد الإلكتروني';
 
   @override
-  String get ambassadorDashboard =>
-      '[PT_BR] Ambassador Dashboard (Portuguese (Brazil))';
+  String get ambassadorDashboard => '[PT_BR] Ambassador Dashboard (Portuguese (Brazil))';
 
   @override
   String get phoneBooking => '[PT_BR] Phone Booking (Portuguese (Brazil))';
@@ -4083,31 +3761,25 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get error => '[PT_BR] Erro';
 
   @override
-  String get businessProfile =>
-      '[PT_BR] Business Profile (Portuguese (Brazil))';
+  String get businessProfile => '[PT_BR] Business Profile (Portuguese (Brazil))';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      '[PT_BR] Business Booking Entry Screen - Coming Soon (Portuguese (Brazil))';
+  String get businessBookingEntryScreenComingSoon => '[PT_BR] Business Booking Entry Screen - Coming Soon (Portuguese (Brazil))';
 
   @override
-  String get createNewSurvey =>
-      '[PT_BR] Create New Survey (Portuguese (Brazil))';
+  String get createNewSurvey => '[PT_BR] Create New Survey (Portuguese (Brazil))';
 
   @override
-  String get backgroundRejected =>
-      '[PT_BR] Background rejected (Portuguese (Brazil))';
+  String get backgroundRejected => '[PT_BR] Background rejected (Portuguese (Brazil))';
 
   @override
-  String get noMediaSelected =>
-      '[PT_BR] No media selected (Portuguese (Brazil))';
+  String get noMediaSelected => '[PT_BR] No media selected (Portuguese (Brazil))';
 
   @override
   String get syncToGoogle => '[PT_BR] Sync to Google (Portuguese (Brazil))';
 
   @override
-  String get virtualPlaytime =>
-      '[PT_BR] Virtual Playtime (Portuguese (Brazil))';
+  String get virtualPlaytime => '[PT_BR] Virtual Playtime (Portuguese (Brazil))';
 
   @override
   String get colorContrastTesting => '[PT_BR] Color Contrast Testing';
@@ -4116,8 +3788,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get loginFailedE => '[PT_BR] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[PT_BR] Invitation sent successfully! (Portuguese (Brazil))';
+  String get invitationSentSuccessfully => '[PT_BR] Invitation sent successfully! (Portuguese (Brazil))';
 
   @override
   String get registering => '[PT_BR] Registering... (Portuguese (Brazil))';
@@ -4131,16 +3802,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get home1 => '[PT_BR] Home (Portuguese (Brazil))';
 
   @override
-  String get errorSavingSettingsE =>
-      '[PT_BR] Error saving settings: \$e (Portuguese (Brazil))';
+  String get errorSavingSettingsE => '[PT_BR] Error saving settings: \$e (Portuguese (Brazil))';
 
   @override
-  String get appVersionAndInformation =>
-      '[PT_BR] App version and information (Portuguese (Brazil))';
+  String get appVersionAndInformation => '[PT_BR] App version and information (Portuguese (Brazil))';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      '[PT_BR] Business Subscription Entry Screen - Coming Soon (Portuguese (Brazil))';
+  String get businessSubscriptionEntryScreenComingSoon => '[PT_BR] Business Subscription Entry Screen - Coming Soon (Portuguese (Brazil))';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -4148,8 +3816,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      '[PT_BR] Your payment has been processed successfully. (Portuguese (Brazil))';
+  String get yourPaymentHasBeenProcessedSuccessfully => '[PT_BR] Your payment has been processed successfully. (Portuguese (Brazil))';
 
   @override
   String get errorE => '[PT_BR] Error: \$e (Portuguese (Brazil))';
@@ -4158,8 +3825,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get viewAll1 => '[PT_BR] View All (Portuguese (Brazil))';
 
   @override
-  String get editSurveyComingSoon =>
-      '[PT_BR] Edit survey - Coming soon! (Portuguese (Brazil))';
+  String get editSurveyComingSoon => '[PT_BR] Edit survey - Coming soon! (Portuguese (Brazil))';
 
   @override
   String get enterOtp => '[PT_BR] Enter OTP (Portuguese (Brazil))';
@@ -4168,8 +3834,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get payment => '[PT_BR] Payment (Portuguese (Brazil))';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      '[PT_BR] Automatically confirm new booking requests (Portuguese (Brazil))';
+  String get automaticallyConfirmNewBookingRequests => '[PT_BR] Automatically confirm new booking requests (Portuguese (Brazil))';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -4182,8 +3847,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[PT_BR] Please sign in to upload a background (Portuguese (Brazil))';
+  String get pleaseSignInToUploadABackground => '[PT_BR] Please sign in to upload a background (Portuguese (Brazil))';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -4191,33 +3855,28 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get staffAvailability =>
-      '[PT_BR] Staff Availability (Portuguese (Brazil))';
+  String get staffAvailability => '[PT_BR] Staff Availability (Portuguese (Brazil))';
 
   @override
   String get livePlaytime => '[PT_BR] Live Playtime (Portuguese (Brazil))';
 
   @override
-  String get autoconfirmBookings =>
-      '[PT_BR] Auto-Confirm Bookings (Portuguese (Brazil))';
+  String get autoconfirmBookings => '[PT_BR] Auto-Confirm Bookings (Portuguese (Brazil))';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      '[PT_BR] Redirecting to Stripe checkout for Pro plan... (Portuguese (Brazil))';
+  String get redirectingToStripeCheckoutForProPlan => '[PT_BR] Redirecting to Stripe checkout for Pro plan... (Portuguese (Brazil))';
 
   @override
   String get exportAsCsv => '[PT_BR] Export as CSV (Portuguese (Brazil))';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[PT_BR] Delete functionality coming soon! (Portuguese (Brazil))';
+  String get deleteFunctionalityComingSoon => '[PT_BR] Delete functionality coming soon! (Portuguese (Brazil))';
 
   @override
   String get editClient => '[PT_BR] Edit Client (Portuguese (Brazil))';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      '[PT_BR] Are you sure you want to delete this message? (Portuguese (Brazil))';
+  String get areYouSureYouWantToDeleteThisMessage => '[PT_BR] Are you sure you want to delete this message? (Portuguese (Brazil))';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -4228,39 +3887,31 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get notAuthenticated => '[PT_BR] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[PT_BR] Privacy request sent to your parents! (Portuguese (Brazil))';
+  String get privacyRequestSentToYourParents => '[PT_BR] Privacy request sent to your parents! (Portuguese (Brazil))';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[PT_BR] Client deleted successfully! (Portuguese (Brazil))';
+  String get clientDeletedSuccessfully => '[PT_BR] Client deleted successfully! (Portuguese (Brazil))';
 
   @override
-  String get failedToCancelSubscription =>
-      '[PT_BR] Failed to cancel subscription (Portuguese (Brazil))';
+  String get failedToCancelSubscription => '[PT_BR] Failed to cancel subscription (Portuguese (Brazil))';
 
   @override
   String get allLanguages => '[PT_BR] All Languages (Portuguese (Brazil))';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[PT_BR] Slot deleted successfully (Portuguese (Brazil))';
+  String get slotDeletedSuccessfully => '[PT_BR] Slot deleted successfully (Portuguese (Brazil))';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      '[PT_BR] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => '[PT_BR] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      '[PT_BR] Parents must approve before children can join (Portuguese (Brazil))';
+  String get parentsMustApproveBeforeChildrenCanJoin => '[PT_BR] Parents must approve before children can join (Portuguese (Brazil))';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[PT_BR] Subscribe to Pro (€14.99/mo) (Portuguese (Brazil))';
+  String get subscribeToPro1499mo => '[PT_BR] Subscribe to Pro (€14.99/mo) (Portuguese (Brazil))';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      '[PT_BR] Business Availability Entry Screen - Coming Soon (Portuguese (Brazil))';
+  String get businessAvailabilityEntryScreenComingSoon => '[PT_BR] Business Availability Entry Screen - Coming Soon (Portuguese (Brazil))';
 
   @override
   String appointmentsListlength(Object count) {
@@ -4274,12 +3925,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get submitBooking => '[PT_BR] Submit Booking (Portuguese (Brazil))';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      '[PT_BR] Are you sure you want to cancel this appointment? (Portuguese (Brazil))';
+  String get areYouSureYouWantToCancelThisAppointment => '[PT_BR] Are you sure you want to cancel this appointment? (Portuguese (Brazil))';
 
   @override
-  String get noUpcomingBookings =>
-      '[PT_BR] No upcoming bookings (Portuguese (Brazil))';
+  String get noUpcomingBookings => '[PT_BR] No upcoming bookings (Portuguese (Brazil))';
 
   @override
   String get goBack => '[PT_BR] Go Back (Portuguese (Brazil))';
@@ -4294,8 +3943,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get goToDashboard => '[PT_BR] Go to Dashboard (Portuguese (Brazil))';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[PT_BR] Ambassador Quota Dashboard (Portuguese (Brazil))';
+  String get ambassadorQuotaDashboard => '[PT_BR] Ambassador Quota Dashboard (Portuguese (Brazil))';
 
   @override
   String get adminSettings => '[PT_BR] Admin Settings';
@@ -4318,74 +3966,61 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get bookingRequest => '[PT_BR] Booking Request (Portuguese (Brazil))';
 
   @override
-  String get advancedReporting =>
-      '[PT_BR] • Advanced reporting (Portuguese (Brazil))';
+  String get advancedReporting => '[PT_BR] • Advanced reporting (Portuguese (Brazil))';
 
   @override
   String get rooms => '[PT_BR] Rooms (Portuguese (Brazil))';
 
   @override
-  String get copiedToClipboard =>
-      '[PT_BR] Copied to clipboard (Portuguese (Brazil))';
+  String get copiedToClipboard => '[PT_BR] Copied to clipboard (Portuguese (Brazil))';
 
   @override
-  String get bookingConfirmed =>
-      '[PT_BR] Booking Confirmed (Portuguese (Brazil))';
+  String get bookingConfirmed => '[PT_BR] Booking Confirmed (Portuguese (Brazil))';
 
   @override
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[PT_BR] Client added successfully! (Portuguese (Brazil))';
+  String get clientAddedSuccessfully => '[PT_BR] Client added successfully! (Portuguese (Brazil))';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
 
   @override
-  String get backgroundApproved =>
-      '[PT_BR] Background approved! (Portuguese (Brazil))';
+  String get backgroundApproved => '[PT_BR] Background approved! (Portuguese (Brazil))';
 
   @override
   String get familySupport => '[PT_BR] Family Support (Portuguese (Brazil))';
 
   @override
-  String get deletingAccount =>
-      '[PT_BR] Deleting account... (Portuguese (Brazil))';
+  String get deletingAccount => '[PT_BR] Deleting account... (Portuguese (Brazil))';
 
   @override
-  String get bookAppointment =>
-      '[PT_BR] Book Appointment (Portuguese (Brazil))';
+  String get bookAppointment => '[PT_BR] Book Appointment (Portuguese (Brazil))';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[PT_BR] Delete (Portuguese (Brazil))';
 
   @override
-  String get sendBookingInvite =>
-      '[PT_BR] Send Booking Invite (Portuguese (Brazil))';
+  String get sendBookingInvite => '[PT_BR] Send Booking Invite (Portuguese (Brazil))';
 
   @override
   String get text => '[PT_BR] Text (Portuguese (Brazil))';
 
   @override
-  String get manageSubscription =>
-      '[PT_BR] Manage Subscription (Portuguese (Brazil))';
+  String get manageSubscription => '[PT_BR] Manage Subscription (Portuguese (Brazil))';
 
   @override
-  String get requiresInstallFallback =>
-      '[PT_BR] Requires Install Fallback (Portuguese (Brazil))';
+  String get requiresInstallFallback => '[PT_BR] Requires Install Fallback (Portuguese (Brazil))';
 
   @override
-  String get paymentConfirmation =>
-      '[PT_BR] Payment Confirmation (Portuguese (Brazil))';
+  String get paymentConfirmation => '[PT_BR] Payment Confirmation (Portuguese (Brazil))';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[PT_BR] Promo applied! Your next bill is free. (Portuguese (Brazil))';
+  String get promoAppliedYourNextBillIsFree => '[PT_BR] Promo applied! Your next bill is free. (Portuguese (Brazil))';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -4393,24 +4028,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get errorLoadingSlots =>
-      '[PT_BR] Error loading slots (Portuguese (Brazil))';
+  String get errorLoadingSlots => '[PT_BR] Error loading slots (Portuguese (Brazil))';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      '[PT_BR] Allow other users to find and join this game (Portuguese (Brazil))';
+  String get allowOtherUsersToFindAndJoinThisGame => '[PT_BR] Allow other users to find and join this game (Portuguese (Brazil))';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      '[PT_BR] Business Onboarding Screen - Coming Soon (Portuguese (Brazil))';
+  String get businessOnboardingScreenComingSoon => '[PT_BR] Business Onboarding Screen - Coming Soon (Portuguese (Brazil))';
 
   @override
-  String get activateBusinessProfile =>
-      '[PT_BR] Activate Business Profile (Portuguese (Brazil))';
+  String get activateBusinessProfile => '[PT_BR] Activate Business Profile (Portuguese (Brazil))';
 
   @override
-  String get contentNotFound =>
-      '[PT_BR] Content not found (Portuguese (Brazil))';
+  String get contentNotFound => '[PT_BR] Content not found (Portuguese (Brazil))';
 
   @override
   String pspecialtynpcontactinfo(Object contactInfo, Object specialty) {
@@ -4429,8 +4059,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get becomeAnAmbassador =>
-      '[PT_BR] Become an Ambassador (Portuguese (Brazil))';
+  String get becomeAnAmbassador => '[PT_BR] Become an Ambassador (Portuguese (Brazil))';
 
   @override
   String get subscribeNow => '[PT_BR] Subscribe Now (Portuguese (Brazil))';
@@ -4441,8 +4070,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get shareViaWhatsapp =>
-      '[PT_BR] Share via WhatsApp (Portuguese (Brazil))';
+  String get shareViaWhatsapp => '[PT_BR] Share via WhatsApp (Portuguese (Brazil))';
 
   @override
   String get users1 => '[PT_BR] Users (Portuguese (Brazil))';
@@ -4451,23 +4079,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get shareLink => '[PT_BR] Share Link (Portuguese (Brazil))';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      '[PT_BR] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => '[PT_BR] Are you sure you want to delete this provider?';
 
   @override
-  String get deleteAppointment =>
-      '[PT_BR] Delete Appointment (Portuguese (Brazil))';
+  String get deleteAppointment => '[PT_BR] Delete Appointment (Portuguese (Brazil))';
 
   @override
-  String get toggleAvailability =>
-      '[PT_BR] Toggle Availability (Portuguese (Brazil))';
+  String get toggleAvailability => '[PT_BR] Toggle Availability (Portuguese (Brazil))';
 
   @override
   String get changePlan => '[PT_BR] Change Plan (Portuguese (Brazil))';
 
   @override
-  String get errorLoadingStaff =>
-      '[PT_BR] Error loading staff (Portuguese (Brazil))';
+  String get errorLoadingStaff => '[PT_BR] Error loading staff (Portuguese (Brazil))';
 
   @override
   String errorLoadingConfigurationE(Object e) {
@@ -4475,16 +4099,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[PT_BR] Update your business information (Portuguese (Brazil))';
+  String get updateYourBusinessInformation => '[PT_BR] Update your business information (Portuguese (Brazil))';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      '[PT_BR] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => '[PT_BR] No providers found. Add your first provider!';
 
   @override
-  String get parentDashboard =>
-      '[PT_BR] Parent Dashboard (Portuguese (Brazil))';
+  String get parentDashboard => '[PT_BR] Parent Dashboard (Portuguese (Brazil))';
 
   @override
   String get menu => '[PT_BR] Menu (Portuguese (Brazil))';
@@ -4504,12 +4125,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      '[PT_BR] Studio booking is only available on web (Portuguese (Brazil))';
+  String get studioBookingIsOnlyAvailableOnWeb => '[PT_BR] Studio booking is only available on web (Portuguese (Brazil))';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[PT_BR] Error loading branches: \$e (Portuguese (Brazil))';
+  String get errorLoadingBranchesE => '[PT_BR] Error loading branches: \$e (Portuguese (Brazil))';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -4525,15 +4144,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get none => '[PT_BR] None (Portuguese (Brazil))';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[PT_BR] Failed to update consent: \$e (Portuguese (Brazil))';
+  String get failedToUpdateConsentE => '[PT_BR] Failed to update consent: \$e (Portuguese (Brazil))';
 
   @override
   String get welcome1 => '[PT_BR] Welcome (Portuguese (Brazil))';
 
   @override
-  String get failedToCreateSessionE =>
-      '[PT_BR] Failed to create session: \$e (Portuguese (Brazil))';
+  String get failedToCreateSessionE => '[PT_BR] Failed to create session: \$e (Portuguese (Brazil))';
 
   @override
   String get inviteContact => '[PT_BR] Invite Contact (Portuguese (Brazil))';
@@ -4542,15 +4159,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get surveyEditor => '[PT_BR] Survey Editor (Portuguese (Brazil))';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[PT_BR] Failed to start Basic subscription: \$e (Portuguese (Brazil))';
+  String get failedToStartBasicSubscriptionE => '[PT_BR] Failed to start Basic subscription: \$e (Portuguese (Brazil))';
 
   @override
   String get mySchedule => '[PT_BR] My Schedule (Portuguese (Brazil))';
 
   @override
-  String get studioDashboard =>
-      '[PT_BR] Studio Dashboard (Portuguese (Brazil))';
+  String get studioDashboard => '[PT_BR] Studio Dashboard (Portuguese (Brazil))';
 
   @override
   String get editProfile => 'تحرير الملف الشخصي';
@@ -4564,19 +4179,16 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[PT_BR] Settings saved successfully! (Portuguese (Brazil))';
+  String get settingsSavedSuccessfully => '[PT_BR] Settings saved successfully! (Portuguese (Brazil))';
 
   @override
-  String get linkCopiedToClipboard =>
-      '[PT_BR] Link copied to clipboard! (Portuguese (Brazil))';
+  String get linkCopiedToClipboard => '[PT_BR] Link copied to clipboard! (Portuguese (Brazil))';
 
   @override
   String get accept1 => '[PT_BR] Accept (Portuguese (Brazil))';
 
   @override
-  String get noAvailableSlots =>
-      '[PT_BR] No available slots (Portuguese (Brazil))';
+  String get noAvailableSlots => '[PT_BR] No available slots (Portuguese (Brazil))';
 
   @override
   String get makeGamePublic => '[PT_BR] Make Game Public (Portuguese (Brazil))';
@@ -4587,20 +4199,16 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[PT_BR] Room deleted successfully! (Portuguese (Brazil))';
+  String get roomDeletedSuccessfully => '[PT_BR] Room deleted successfully! (Portuguese (Brazil))';
 
   @override
-  String get businessCalendar =>
-      '[PT_BR] Business Calendar (Portuguese (Brazil))';
+  String get businessCalendar => '[PT_BR] Business Calendar (Portuguese (Brazil))';
 
   @override
-  String get addAvailability =>
-      '[PT_BR] Add Availability (Portuguese (Brazil))';
+  String get addAvailability => '[PT_BR] Add Availability (Portuguese (Brazil))';
 
   @override
-  String get ambassadorOnboarding =>
-      '[PT_BR] Ambassador Onboarding (Portuguese (Brazil))';
+  String get ambassadorOnboarding => '[PT_BR] Ambassador Onboarding (Portuguese (Brazil))';
 
   @override
   String phoneProfileasyncphone(Object phone) {
@@ -4611,8 +4219,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get addNewRoom => '[PT_BR] Add New Room (Portuguese (Brazil))';
 
   @override
-  String get requireParentApproval =>
-      '[PT_BR] Require Parent Approval (Portuguese (Brazil))';
+  String get requireParentApproval => '[PT_BR] Require Parent Approval (Portuguese (Brazil))';
 
   @override
   String get closed => '[PT_BR] Closed (Portuguese (Brazil))';
@@ -4621,8 +4228,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get exportAsPdf => '[PT_BR] Export as PDF (Portuguese (Brazil))';
 
   @override
-  String get enableVibration =>
-      '[PT_BR] Enable Vibration (Portuguese (Brazil))';
+  String get enableVibration => '[PT_BR] Enable Vibration (Portuguese (Brazil))';
 
   @override
   String toAvailendformatcontext(Object endTime) {
@@ -4635,8 +4241,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get requestPrivateSession =>
-      '[PT_BR] requestPrivateSession (TRANSLATE)';
+  String get requestPrivateSession => '[PT_BR] requestPrivateSession (TRANSLATE)';
 
   @override
   String get country => '[PT_BR] Country (Portuguese (Brazil))';
@@ -4659,8 +4264,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get cancel1 => '[PT_BR] Cancel (Portuguese (Brazil))';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      '[PT_BR] Subscription activated successfully! (Portuguese (Brazil))';
+  String get subscriptionActivatedSuccessfully => '[PT_BR] Subscription activated successfully! (Portuguese (Brazil))';
 
   @override
   String activityLogaction(Object action) {
@@ -4671,8 +4275,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get broadcast => '[PT_BR] Broadcast (Portuguese (Brazil))';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[PT_BR] No events scheduled this week (Portuguese (Brazil))';
+  String get noEventsScheduledThisWeek => '[PT_BR] No events scheduled this week (Portuguese (Brazil))';
 
   @override
   String get googleCalendar => '[PT_BR] Google Calendar (Portuguese (Brazil))';
@@ -4684,8 +4287,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get childDashboard => '[PT_BR] Child Dashboard (Portuguese (Brazil))';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[PT_BR] Failed to upload background: \$e (Portuguese (Brazil))';
+  String get failedToUploadBackgroundE => '[PT_BR] Failed to upload background: \$e (Portuguese (Brazil))';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -4704,8 +4306,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get noAppointments => '[PT_BR] No appointments (Portuguese (Brazil))';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[PT_BR] • Unlimited bookings per week (Portuguese (Brazil))';
+  String get unlimitedBookingsPerWeek => '[PT_BR] • Unlimited bookings per week (Portuguese (Brazil))';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -4713,23 +4314,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[PT_BR] Scheduled at: \$scheduledAt (Portuguese (Brazil))';
+  String get scheduledAtScheduledat => '[PT_BR] Scheduled at: \$scheduledAt (Portuguese (Brazil))';
 
   @override
   String get selectStaff => '[PT_BR] Select Staff (Portuguese (Brazil))';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      '[PT_BR] Subscription cancelled successfully (Portuguese (Brazil))';
+  String get subscriptionCancelledSuccessfully => '[PT_BR] Subscription cancelled successfully (Portuguese (Brazil))';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
-  String get cancelAppointment =>
-      '[PT_BR] Cancel Appointment (Portuguese (Brazil))';
+  String get cancelAppointment => '[PT_BR] Cancel Appointment (Portuguese (Brazil))';
 
   @override
   String permissionsFamilylinkchildid(Object childId) {
@@ -4740,8 +4337,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get businessSignup => '[PT_BR] Business Signup (Portuguese (Brazil))';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      '[PT_BR] Business Completion Screen - Coming Soon (Portuguese (Brazil))';
+  String get businessCompletionScreenComingSoon => '[PT_BR] Business Completion Screen - Coming Soon (Portuguese (Brazil))';
 
   @override
   String get createGame1 => '[PT_BR] Create Game (Portuguese (Brazil))';
@@ -4752,30 +4348,25 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get pleaseEnterAPromoCode =>
-      '[PT_BR] Please enter a promo code (Portuguese (Brazil))';
+  String get pleaseEnterAPromoCode => '[PT_BR] Please enter a promo code (Portuguese (Brazil))';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[PT_BR] Error loading availability: \$e (Portuguese (Brazil))';
+  String get errorLoadingAvailabilityE => '[PT_BR] Error loading availability: \$e (Portuguese (Brazil))';
 
   @override
-  String get parentalControls =>
-      '[PT_BR] Parental Controls (Portuguese (Brazil))';
+  String get parentalControls => '[PT_BR] Parental Controls (Portuguese (Brazil))';
 
   @override
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[PT_BR] Child linked successfully! (Portuguese (Brazil))';
+  String get childLinkedSuccessfully => '[PT_BR] Child linked successfully! (Portuguese (Brazil))';
 
   @override
   String get create => '[PT_BR] Create (Portuguese (Brazil))';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[PT_BR] No external meetings found. (Portuguese (Brazil))';
+  String get noExternalMeetingsFound => '[PT_BR] No external meetings found. (Portuguese (Brazil))';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -4783,20 +4374,16 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[PT_BR] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[PT_BR] Please enter a valid email address';
 
   @override
-  String get schedulerScreen =>
-      '[PT_BR] Scheduler Screen (Portuguese (Brazil))';
+  String get schedulerScreen => '[PT_BR] Scheduler Screen (Portuguese (Brazil))';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[PT_BR] Client updated successfully! (Portuguese (Brazil))';
+  String get clientUpdatedSuccessfully => '[PT_BR] Client updated successfully! (Portuguese (Brazil))';
 
   @override
-  String get surveyResponses =>
-      '[PT_BR] Survey Responses (Portuguese (Brazil))';
+  String get surveyResponses => '[PT_BR] Survey Responses (Portuguese (Brazil))';
 
   @override
   String get syncToOutlook => '[PT_BR] Sync to Outlook (Portuguese (Brazil))';
@@ -4816,16 +4403,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get analytics => '[PT_BR] Analytics (Portuguese (Brazil))';
 
   @override
-  String get errorLoadingEvents =>
-      '[PT_BR] Error loading events (Portuguese (Brazil))';
+  String get errorLoadingEvents => '[PT_BR] Error loading events (Portuguese (Brazil))';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[PT_BR] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[PT_BR] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[PT_BR] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[PT_BR] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[PT_BR] Success (Portuguese (Brazil))';
@@ -4844,12 +4428,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get readWrite => '[PT_BR] Read & Write (Portuguese (Brazil))';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      '[PT_BR] Redirecting to Stripe checkout for Basic plan... (Portuguese (Brazil))';
+  String get redirectingToStripeCheckoutForBasicPlan => '[PT_BR] Redirecting to Stripe checkout for Basic plan... (Portuguese (Brazil))';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[PT_BR] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[PT_BR] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[PT_BR] Pick Date (Portuguese (Brazil))';
@@ -4858,8 +4440,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get chatBooking => '[PT_BR] Chat Booking (Portuguese (Brazil))';
 
   @override
-  String get noQuestionsAdded =>
-      '[PT_BR] No questions added (Portuguese (Brazil))';
+  String get noQuestionsAdded => '[PT_BR] No questions added (Portuguese (Brazil))';
 
   @override
   String severityLogseverityname(Object severity) {
@@ -4886,12 +4467,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get businessLogin => '[PT_BR] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[PT_BR] Invoice created successfully! (Portuguese (Brazil))';
+  String get invoiceCreatedSuccessfully => '[PT_BR] Invoice created successfully! (Portuguese (Brazil))';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[PT_BR] No time series data available (Portuguese (Brazil))';
+  String get noTimeSeriesDataAvailable => '[PT_BR] No time series data available (Portuguese (Brazil))';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -4904,15 +4483,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[PT_BR] Failed to send privacy request: \$e (Portuguese (Brazil))';
+  String get failedToSendPrivacyRequestE => '[PT_BR] Failed to send privacy request: \$e (Portuguese (Brazil))';
 
   @override
   String get chooseYourPlan => '[PT_BR] Choose Your Plan (Portuguese (Brazil))';
 
   @override
-  String get playtimeManagement =>
-      '[PT_BR] Playtime Management (Portuguese (Brazil))';
+  String get playtimeManagement => '[PT_BR] Playtime Management (Portuguese (Brazil))';
 
   @override
   String get availability => '[PT_BR] Availability (Portuguese (Brazil))';
@@ -4921,23 +4498,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get eventCreated => '[PT_BR] Event created (Portuguese (Brazil))';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[PT_BR] Subscribe to Basic (€4.99/mo) (Portuguese (Brazil))';
+  String get subscribeToBasic499mo => '[PT_BR] Subscribe to Basic (€4.99/mo) (Portuguese (Brazil))';
 
   @override
   String get completion => '[PT_BR] Completion (Portuguese (Brazil))';
 
   @override
-  String get supportTicketSubmitted =>
-      '[PT_BR] Support ticket submitted (Portuguese (Brazil))';
+  String get supportTicketSubmitted => '[PT_BR] Support ticket submitted (Portuguese (Brazil))';
 
   @override
-  String get monetizationSettings =>
-      '[PT_BR] Monetization Settings (Portuguese (Brazil))';
+  String get monetizationSettings => '[PT_BR] Monetization Settings (Portuguese (Brazil))';
 
   @override
-  String get noBookingsFound =>
-      '[PT_BR] No bookings found (Portuguese (Brazil))';
+  String get noBookingsFound => '[PT_BR] No bookings found (Portuguese (Brazil))';
 
   @override
   String get admin => '[PT_BR] Admin';
@@ -4946,12 +4519,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get deleteSurvey => '[PT_BR] Delete Survey (Portuguese (Brazil))';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[PT_BR] Game approved successfully! (Portuguese (Brazil))';
+  String get gameApprovedSuccessfully => '[PT_BR] Game approved successfully! (Portuguese (Brazil))';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[PT_BR] Error loading permissions: \$error (Portuguese (Brazil))';
+  String get errorLoadingPermissionsError => '[PT_BR] Error loading permissions: \$error (Portuguese (Brazil))';
 
   @override
   String get referrals => '[PT_BR] Referrals (Portuguese (Brazil))';
@@ -4966,12 +4537,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get appointments => '[PT_BR] Appointments (Portuguese (Brazil))';
 
   @override
-  String get onboardingScreen =>
-      '[PT_BR] Onboarding Screen (Portuguese (Brazil))';
+  String get onboardingScreen => '[PT_BR] Onboarding Screen (Portuguese (Brazil))';
 
   @override
-  String get welcomeToYourStudio =>
-      '[PT_BR] Welcome to your studio (Portuguese (Brazil))';
+  String get welcomeToYourStudio => '[PT_BR] Welcome to your studio (Portuguese (Brazil))';
 
   @override
   String get update => '[PT_BR] Update (Portuguese (Brazil))';
@@ -4983,8 +4552,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get booking => '[PT_BR] Booking (Portuguese (Brazil))';
 
   @override
-  String get parentalSettings =>
-      '[PT_BR] Parental Settings (Portuguese (Brazil))';
+  String get parentalSettings => '[PT_BR] Parental Settings (Portuguese (Brazil))';
 
   @override
   String get language => '[PT_BR] Language (Portuguese (Brazil))';
@@ -4996,8 +4564,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get organizations => '[PT_BR] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[PT_BR] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[PT_BR] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[PT_BR] Create New Game (Portuguese (Brazil))';
@@ -5006,19 +4573,16 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get next1 => '[PT_BR] Next (Portuguese (Brazil))';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[PT_BR] Background uploaded successfully! (Portuguese (Brazil))';
+  String get backgroundUploadedSuccessfully => '[PT_BR] Background uploaded successfully! (Portuguese (Brazil))';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[PT_BR] No appointment requests found. (Portuguese (Brazil))';
+  String get noAppointmentRequestsFound => '[PT_BR] No appointment requests found. (Portuguese (Brazil))';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent =>
-      '[PT_BR] Restrict mature content (Portuguese (Brazil))';
+  String get restrictMatureContent => '[PT_BR] Restrict mature content (Portuguese (Brazil))';
 
   @override
   String get ambassadors => '[PT_BR] Ambassadors (Portuguese (Brazil))';
@@ -5027,8 +4591,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get smsNotifications => 'إشعارات الرسائل النصية';
 
   @override
-  String get paymentWasCancelled =>
-      '[PT_BR] Payment was cancelled (Portuguese (Brazil))';
+  String get paymentWasCancelled => '[PT_BR] Payment was cancelled (Portuguese (Brazil))';
 
   @override
   String get clearAll => '[PT_BR] Clear All (Portuguese (Brazil))';
@@ -5040,20 +4603,16 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE =>
-      '[PT_BR] Failed to create game: \$e (Portuguese (Brazil))';
+  String get failedToCreateGameE => '[PT_BR] Failed to create game: \$e (Portuguese (Brazil))';
 
   @override
-  String get noChartDataAvailable =>
-      '[PT_BR] No chart data available (Portuguese (Brazil))';
+  String get noChartDataAvailable => '[PT_BR] No chart data available (Portuguese (Brazil))';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[PT_BR] • Phone-based booking system (Portuguese (Brazil))';
+  String get phonebasedBookingSystem => '[PT_BR] • Phone-based booking system (Portuguese (Brazil))';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -5062,8 +4621,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get invoices => '[PT_BR] Invoices (Portuguese (Brazil))';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -5079,8 +4637,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get tryAgain => '[PT_BR] Try Again (Portuguese (Brazil))';
 
   @override
-  String get deleteBackground =>
-      '[PT_BR] Delete Background (Portuguese (Brazil))';
+  String get deleteBackground => '[PT_BR] Delete Background (Portuguese (Brazil))';
 
   @override
   String currentTierTiertouppercase(Object tier) {
@@ -5091,26 +4648,22 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get iDoNotConsent => '[PT_BR] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      '[PT_BR] No clients found. Add your first client! (Portuguese (Brazil))';
+  String get noClientsFoundAddYourFirstClient => '[PT_BR] No clients found. Add your first client! (Portuguese (Brazil))';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      '[PT_BR] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => '[PT_BR] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[PT_BR] Group: \$groupId';
 
   @override
-  String get appointmentRequests =>
-      '[PT_BR] Appointment Requests (Portuguese (Brazil))';
+  String get appointmentRequests => '[PT_BR] Appointment Requests (Portuguese (Brazil))';
 
   @override
   String get forward => '[PT_BR] Forward (Portuguese (Brazil))';
 
   @override
-  String get roomAddedSuccessfully =>
-      '[PT_BR] Room added successfully! (Portuguese (Brazil))';
+  String get roomAddedSuccessfully => '[PT_BR] Room added successfully! (Portuguese (Brazil))';
 
   @override
   String get option => '[PT_BR] • \$option (Portuguese (Brazil))';
@@ -5121,8 +4674,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[PT_BR] • CRM dashboard with analytics (Portuguese (Brazil))';
+  String get crmDashboardWithAnalytics => '[PT_BR] • CRM dashboard with analytics (Portuguese (Brazil))';
 
   @override
   String get contentLibrary1 => '[PT_BR] Content Library (Portuguese (Brazil))';
@@ -5131,39 +4683,31 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get reply => '[PT_BR] Reply (Portuguese (Brazil))';
 
   @override
-  String get subscriptionManagement =>
-      '[PT_BR] Subscription Management (Portuguese (Brazil))';
+  String get subscriptionManagement => '[PT_BR] Subscription Management (Portuguese (Brazil))';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      '[PT_BR] Monetization settings will be implemented here (Portuguese (Brazil))';
+  String get monetizationSettingsWillBeImplementedHere => '[PT_BR] Monetization settings will be implemented here (Portuguese (Brazil))';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[PT_BR] Failed to apply promo code: \$e (Portuguese (Brazil))';
+  String get failedToApplyPromoCodeE => '[PT_BR] Failed to apply promo code: \$e (Portuguese (Brazil))';
 
   @override
   String get editProvider => '[PT_BR] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[PT_BR] Localization Contribution (Portuguese (Brazil))';
+  String get localizationContribution => '[PT_BR] Localization Contribution (Portuguese (Brazil))';
 
   @override
-  String get parentalConsent =>
-      '[PT_BR] Parental Consent (Portuguese (Brazil))';
+  String get parentalConsent => '[PT_BR] Parental Consent (Portuguese (Brazil))';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[PT_BR] Business Signup Screen - Coming Soon (Portuguese (Brazil))';
+  String get businessSignupScreenComingSoon => '[PT_BR] Business Signup Screen - Coming Soon (Portuguese (Brazil))';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      '[PT_BR] Are you sure you want to delete this appointment? (Portuguese (Brazil))';
+  String get areYouSureYouWantToDeleteThisAppointment => '[PT_BR] Are you sure you want to delete this appointment? (Portuguese (Brazil))';
 
   @override
-  String get syncAppointment =>
-      '[PT_BR] Sync Appointment (Portuguese (Brazil))';
+  String get syncAppointment => '[PT_BR] Sync Appointment (Portuguese (Brazil))';
 
   @override
   String get iConsent => '[PT_BR] I Consent (Portuguese (Brazil))';
@@ -5172,23 +4716,19 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[PT_BR] Business Setup Screen - Coming Soon (Portuguese (Brazil))';
+  String get businessSetupScreenComingSoon => '[PT_BR] Business Setup Screen - Coming Soon (Portuguese (Brazil))';
 
   @override
   String get edit1 => '[PT_BR] Edit (Portuguese (Brazil))';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[PT_BR] No events scheduled this month (Portuguese (Brazil))';
+  String get noEventsScheduledThisMonth => '[PT_BR] No events scheduled this month (Portuguese (Brazil))';
 
   @override
-  String get businessDashboard =>
-      '[PT_BR] Business Dashboard (Portuguese (Brazil))';
+  String get businessDashboard => '[PT_BR] Business Dashboard (Portuguese (Brazil))';
 
   @override
-  String get noMessagesFound =>
-      '[PT_BR] No messages found. (Portuguese (Brazil))';
+  String get noMessagesFound => '[PT_BR] No messages found. (Portuguese (Brazil))';
 
   @override
   String staffStaffidNotSelected(Object staff) {
@@ -5196,12 +4736,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[PT_BR] Manage Staff Availability (Portuguese (Brazil))';
+  String get manageStaffAvailability => '[PT_BR] Manage Staff Availability (Portuguese (Brazil))';
 
   @override
-  String get noMissingTranslations =>
-      '[PT_BR] No missing translations (Portuguese (Brazil))';
+  String get noMissingTranslations => '[PT_BR] No missing translations (Portuguese (Brazil))';
 
   @override
   String get skip => '[PT_BR] Skip (Portuguese (Brazil))';
@@ -5215,8 +4753,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get noUsers => '[PT_BR] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[PT_BR] Error loading referral code (Portuguese (Brazil))';
+  String get errorLoadingReferralCode => '[PT_BR] Error loading referral code (Portuguese (Brazil))';
 
   @override
   String get allCountries => '[PT_BR] All Countries (Portuguese (Brazil))';
@@ -5225,15 +4762,13 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get deleteGame => '[PT_BR] Delete Game (Portuguese (Brazil))';
 
   @override
-  String get staffManagementTools =>
-      '[PT_BR] • Staff management tools (Portuguese (Brazil))';
+  String get staffManagementTools => '[PT_BR] • Staff management tools (Portuguese (Brazil))';
 
   @override
   String get deleteMessage => '[PT_BR] Delete Message (Portuguese (Brazil))';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[PT_BR] changeRole (TRANSLATE)';
@@ -5244,8 +4779,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[PT_BR] Opening customer portal... (Portuguese (Brazil))';
+  String get openingCustomerPortal => '[PT_BR] Opening customer portal... (Portuguese (Brazil))';
 
   @override
   String get signOut => '[PT_BR] Sign Out (Portuguese (Brazil))';
@@ -5256,12 +4790,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
-  String get upgradeToBusiness =>
-      '[PT_BR] Upgrade to Business (Portuguese (Brazil))';
+  String get upgradeToBusiness => '[PT_BR] Upgrade to Business (Portuguese (Brazil))';
 
   @override
   String get apply => 'تطبيق';
@@ -5284,8 +4816,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[PT_BR] View Responses (Portuguese (Brazil))';
@@ -5314,8 +4845,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -5333,8 +4863,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description =>
-      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -5343,8 +4872,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title =>
-      'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -5359,8 +4887,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get purchase_now_button => 'Purchase Now';
 
   @override
-  String get ambassadorPromotionTitle =>
-      '[PT_BR] Congratulations! You\'re now an Ambassador! (Portuguese (Brazil))';
+  String get ambassadorPromotionTitle => '[PT_BR] Congratulations! You\'re now an Ambassador! (Portuguese (Brazil))';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -5368,46 +4895,31 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get tierUpgradeTitle =>
-      '[PT_BR] Tier Upgrade! 🎉 (Portuguese (Brazil))';
+  String get tierUpgradeTitle => '[PT_BR] Tier Upgrade! 🎉 (Portuguese (Brazil))';
 
   @override
-  String tierUpgradeBody(
-    String previousTier,
-    String newTier,
-    String totalReferrals,
-  ) {
+  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
     return '[PT_BR] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Portuguese (Brazil))';
   }
 
   @override
-  String get monthlyReminderTitle =>
-      '[PT_BR] Monthly Goal Reminder (Portuguese (Brazil))';
+  String get monthlyReminderTitle => '[PT_BR] Monthly Goal Reminder (Portuguese (Brazil))';
 
   @override
-  String monthlyReminderBody(
-    String currentReferrals,
-    String targetReferrals,
-    String daysRemaining,
-  ) {
+  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
     return '[PT_BR] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Portuguese (Brazil))';
   }
 
   @override
-  String get performanceWarningTitle =>
-      '[PT_BR] Ambassador Performance Alert (Portuguese (Brazil))';
+  String get performanceWarningTitle => '[PT_BR] Ambassador Performance Alert (Portuguese (Brazil))';
 
   @override
-  String performanceWarningBody(
-    String currentReferrals,
-    String minimumRequired,
-  ) {
+  String performanceWarningBody(String currentReferrals, String minimumRequired) {
     return '[PT_BR] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Portuguese (Brazil))';
   }
 
   @override
-  String get ambassadorDemotionTitle =>
-      '[PT_BR] Ambassador Status Update (Portuguese (Brazil))';
+  String get ambassadorDemotionTitle => '[PT_BR] Ambassador Status Update (Portuguese (Brazil))';
 
   @override
   String ambassadorDemotionBody(String reason) {
@@ -5415,8 +4927,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get referralSuccessTitle =>
-      '[PT_BR] New Referral! 🎉 (Portuguese (Brazil))';
+  String get referralSuccessTitle => '[PT_BR] New Referral! 🎉 (Portuguese (Brazil))';
 
   @override
   String referralSuccessBody(String referredUserName, String totalReferrals) {

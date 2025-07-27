@@ -479,8 +479,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get playtimeEnterGameName => '[HE] הכנס שם משחק';
 
   @override
-  String get pleaseLoginForFamilyFeatures =>
-      '[HE] [HE] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures => '[HE] [HE] Please login to access family features';
 
   @override
   String get myInvites => '[HE] [HE] My Invites';
@@ -567,35 +566,28 @@ class AppLocalizationsHe extends AppLocalizations {
   String get authErrorUserDisabled => '[HE] חשבון זה הושבת. אנא פנה לתמיכה.';
 
   @override
-  String get authErrorWeakPassword =>
-      '[HE] הסיסמה חלשה מדי. אנא בחר סיסמה חזקה יותר.';
+  String get authErrorWeakPassword => '[HE] הסיסמה חלשה מדי. אנא בחר סיסמה חזקה יותר.';
 
   @override
   String get authErrorEmailAlreadyInUse => '[HE] כבר קיים חשבון עם אימייל זה.';
 
   @override
-  String get authErrorTooManyRequests =>
-      '[HE] יותר מדי ניסיונות כושלים. אנא נסה שוב מאוחר יותר.';
+  String get authErrorTooManyRequests => '[HE] יותר מדי ניסיונות כושלים. אנא נסה שוב מאוחר יותר.';
 
   @override
-  String get authErrorOperationNotAllowed =>
-      '[HE] שיטת התחברות זו אינה מופעלת. אנא פנה לתמיכה.';
+  String get authErrorOperationNotAllowed => '[HE] שיטת התחברות זו אינה מופעלת. אנא פנה לתמיכה.';
 
   @override
-  String get authErrorInvalidCredential =>
-      '[HE] פרטי התחברות לא תקינים. אנא נסה שוב.';
+  String get authErrorInvalidCredential => '[HE] פרטי התחברות לא תקינים. אנא נסה שוב.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential =>
-      '[HE] כבר קיים חשבון עם אימייל זה המשתמש בשיטת התחברות אחרת.';
+  String get authErrorAccountExistsWithDifferentCredential => '[HE] כבר קיים חשבון עם אימייל זה המשתמש בשיטת התחברות אחרת.';
 
   @override
-  String get authErrorCredentialAlreadyInUse =>
-      '[HE] פרטי התחברות אלה כבר קשורים לחשבון אחר.';
+  String get authErrorCredentialAlreadyInUse => '[HE] פרטי התחברות אלה כבר קשורים לחשבון אחר.';
 
   @override
-  String get authErrorNetworkRequestFailed =>
-      '[HE] שגיאת רשת. אנא בדוק את החיבור ונסה שוב.';
+  String get authErrorNetworkRequestFailed => '[HE] שגיאת רשת. אנא בדוק את החיבור ונסה שוב.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -612,12 +604,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin =>
-      '[HE] אנא התחבר שוב לביצוע פעולה זו.';
+  String get authErrorRequiresRecentLogin => '[HE] אנא התחבר שוב לביצוע פעולה זו.';
 
   @override
-  String get authErrorAppNotAuthorized =>
-      '[HE] אפליקציה זו אינה מורשית להשתמש ב-Firebase Authentication.';
+  String get authErrorAppNotAuthorized => '[HE] אפליקציה זו אינה מורשית להשתמש ב-Firebase Authentication.';
 
   @override
   String get authErrorInvalidVerificationCode => '[HE] קוד האימות אינו תקין.';
@@ -638,12 +628,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[HE] אנא הכנס מספר טלפון.';
 
   @override
-  String get authErrorQuotaExceeded =>
-      '[HE] מכסת ה-SMS עבור פרויקט זה הותרה. אנא נסה שוב מאוחר יותר.';
+  String get authErrorQuotaExceeded => '[HE] מכסת ה-SMS עבור פרויקט זה הותרה. אנא נסה שוב מאוחר יותר.';
 
   @override
-  String get authErrorCodeExpired =>
-      '[HE] קוד האימות פג תוקף. אנא בקש אחד חדש.';
+  String get authErrorCodeExpired => '[HE] קוד האימות פג תוקף. אנא בקש אחד חדש.';
 
   @override
   String get authErrorSessionExpired => '[HE] הסשן פג תוקף. אנא התחבר שוב.';
@@ -661,24 +649,19 @@ class AppLocalizationsHe extends AppLocalizations {
   String get authErrorInvalidMultiFactorSession => '[HE] סשן רב-גורמי לא תקין.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse =>
-      '[HE] גורם שני זה כבר בשימוש.';
+  String get authErrorSecondFactorAlreadyInUse => '[HE] גורם שני זה כבר בשימוש.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded =>
-      '[HE] מספר מקסימלי של גורמים שניים הותר.';
+  String get authErrorMaximumSecondFactorCountExceeded => '[HE] מספר מקסימלי של גורמים שניים הותר.';
 
   @override
-  String get authErrorUnsupportedFirstFactor =>
-      '[HE] גורם ראשון לא נתמך לאימות רב-גורמי.';
+  String get authErrorUnsupportedFirstFactor => '[HE] גורם ראשון לא נתמך לאימות רב-גורמי.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification =>
-      '[HE] שינוי אימייל דורש אימות.';
+  String get authErrorEmailChangeNeedsVerification => '[HE] שינוי אימייל דורש אימות.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists =>
-      '[HE] מספר טלפון זה כבר בשימוש.';
+  String get authErrorPhoneNumberAlreadyExists => '[HE] מספר טלפון זה כבר בשימוש.';
 
   @override
   String get authErrorInvalidPassword => '[HE] הסיסמה אינה תקינה או חלשה מדי.';
@@ -699,12 +682,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get authErrorInvalidArgument => '[HE] סופק ארגומנט לא תקין.';
 
   @override
-  String get authErrorInvalidClaims =>
-      '[HE] סופקו טענות מותאמות אישית לא תקינות.';
+  String get authErrorInvalidClaims => '[HE] סופקו טענות מותאמות אישית לא תקינות.';
 
   @override
-  String get authErrorInvalidContinueUri =>
-      '[HE] כתובת ה-URL להמשך אינה תקינה.';
+  String get authErrorInvalidContinueUri => '[HE] כתובת ה-URL להמשך אינה תקינה.';
 
   @override
   String get authErrorInvalidCreationTime => '[HE] זמן היצירה אינו תקין.';
@@ -716,45 +697,37 @@ class AppLocalizationsHe extends AppLocalizations {
   String get authErrorInvalidDisplayName => '[HE] שם התצוגה אינו תקין.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain =>
-      '[HE] דומיין הקישור הדינמי אינו תקין.';
+  String get authErrorInvalidDynamicLinkDomain => '[HE] דומיין הקישור הדינמי אינו תקין.';
 
   @override
-  String get authErrorInvalidEmailVerified =>
-      '[HE] ערך האימייל המאומת אינו תקין.';
+  String get authErrorInvalidEmailVerified => '[HE] ערך האימייל המאומת אינו תקין.';
 
   @override
   String get authErrorInvalidHashAlgorithm => '[HE] אלגוריתם ה-hash אינו תקין.';
 
   @override
-  String get authErrorInvalidHashBlockSize =>
-      '[HE] גודל בלוק ה-hash אינו תקין.';
+  String get authErrorInvalidHashBlockSize => '[HE] גודל בלוק ה-hash אינו תקין.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength =>
-      '[HE] אורך המפתח הנגזר מה-hash אינו תקין.';
+  String get authErrorInvalidHashDerivedKeyLength => '[HE] אורך המפתח הנגזר מה-hash אינו תקין.';
 
   @override
   String get authErrorInvalidHashKey => '[HE] מפתח ה-hash אינו תקין.';
 
   @override
-  String get authErrorInvalidHashMemoryCost =>
-      '[HE] עלות הזיכרון של ה-hash אינה תקינה.';
+  String get authErrorInvalidHashMemoryCost => '[HE] עלות הזיכרון של ה-hash אינה תקינה.';
 
   @override
-  String get authErrorInvalidHashParallelization =>
-      '[HE] המקבילות של ה-hash אינה תקינה.';
+  String get authErrorInvalidHashParallelization => '[HE] המקבילות של ה-hash אינה תקינה.';
 
   @override
   String get authErrorInvalidHashRounds => '[HE] ערך סיבובי ה-hash אינו תקין.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator =>
-      '[HE] מפריד המלח של ה-hash אינו תקין.';
+  String get authErrorInvalidHashSaltSeparator => '[HE] מפריד המלח של ה-hash אינו תקין.';
 
   @override
-  String get authErrorInvalidLastSignInTime =>
-      '[HE] זמן ההתחברות האחרון אינו תקין.';
+  String get authErrorInvalidLastSignInTime => '[HE] זמן ההתחברות האחרון אינו תקין.';
 
   @override
   String get authErrorInvalidPageToken => '[HE] טוקן הדף אינו תקין.';
@@ -766,19 +739,16 @@ class AppLocalizationsHe extends AppLocalizations {
   String get authErrorInvalidProviderId => '[HE] מזהה הספק אינו תקין.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration =>
-      '[HE] משך עוגיית הסשן אינו תקין.';
+  String get authErrorInvalidSessionCookieDuration => '[HE] משך עוגיית הסשן אינו תקין.';
 
   @override
   String get authErrorInvalidUid => '[HE] ה-UID אינו תקין.';
 
   @override
-  String get authErrorInvalidUserImport =>
-      '[HE] רשומת ייבוא המשתמש אינה תקינה.';
+  String get authErrorInvalidUserImport => '[HE] רשומת ייבוא המשתמש אינה תקינה.';
 
   @override
-  String get authErrorMaximumUserCountExceeded =>
-      '[HE] מספר מקסימלי של משתמשים לייבוא הותר.';
+  String get authErrorMaximumUserCountExceeded => '[HE] מספר מקסימלי של משתמשים לייבוא הותר.';
 
   @override
   String get authErrorMissingAndroidPkgName => '[HE] שם חבילת Android חסר.';
@@ -814,8 +784,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get authErrorUidAlreadyExists => '[HE] ה-UID כבר בשימוש.';
 
   @override
-  String get authErrorUnauthorizedContinueUri =>
-      '[HE] דומיין כתובת ה-URL להמשך אינו מורשה.';
+  String get authErrorUnauthorizedContinueUri => '[HE] דומיין כתובת ה-URL להמשך אינו מורשה.';
 
   @override
   String get authErrorUnknown => '[HE] אירעה שגיאת אימות לא ידועה.';
@@ -867,8 +836,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends =>
-      '[HE] Virtual session created! Inviting friends... (Hebrew)';
+  String get virtualSessionCreatedInvitingFriends => '[HE] Virtual session created! Inviting friends... (Hebrew)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -909,15 +877,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable =>
-      '[HE] Subscription unavailable (Hebrew)';
+  String get subscriptionUnavailable => '[HE] Subscription unavailable (Hebrew)';
 
   @override
   String get confirmBooking => '[HE] Confirm Booking (Hebrew)';
 
   @override
-  String get failedToUpdatePermissionE =>
-      '[HE] Failed to update permission: \$e (Hebrew)';
+  String get failedToUpdatePermissionE => '[HE] Failed to update permission: \$e (Hebrew)';
 
   @override
   String get reject => '[HE] Reject (Hebrew)';
@@ -945,8 +911,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get resolve => '[HE] Resolve (Hebrew)';
 
   @override
-  String get errorLoadingSurveysError =>
-      '[HE] Error loading surveys: \$error (Hebrew)';
+  String get errorLoadingSurveysError => '[HE] Error loading surveys: \$error (Hebrew)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -954,8 +919,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount =>
-      '[HE] Get help with your account (Hebrew)';
+  String get getHelpWithYourAccount => '[HE] Get help with your account (Hebrew)';
 
   @override
   String get pay => '[HE] Pay (Hebrew)';
@@ -970,8 +934,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully =>
-      '[HE] Changes saved successfully! (Hebrew)';
+  String get changesSavedSuccessfully => '[HE] Changes saved successfully! (Hebrew)';
 
   @override
   String get createNewInvoice => '[HE] Create New Invoice (Hebrew)';
@@ -991,8 +954,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get profileSaved => '[HE] Profile saved! (Hebrew)';
 
   @override
-  String get receiveBookingNotificationsViaEmail =>
-      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -1023,8 +985,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly =>
-      '[HE] You will receive a confirmation email shortly. (Hebrew)';
+  String get youWillReceiveAConfirmationEmailShortly => '[HE] You will receive a confirmation email shortly. (Hebrew)';
 
   @override
   String get addQuestion => '[HE] Add Question (Hebrew)';
@@ -1053,26 +1014,22 @@ class AppLocalizationsHe extends AppLocalizations {
   String get surveyManagement => '[HE] Survey Management (Hebrew)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone =>
-      '[HE] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone => '[HE] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom =>
-      '[HE] No rooms found. Add your first room! (Hebrew)';
+  String get noRoomsFoundAddYourFirstRoom => '[HE] No rooms found. Add your first room! (Hebrew)';
 
   @override
   String get readOurPrivacyPolicy => '[HE] Read our privacy policy (Hebrew)';
 
   @override
-  String get couldNotOpenPrivacyPolicy =>
-      '[HE] Could not open privacy policy (Hebrew)';
+  String get couldNotOpenPrivacyPolicy => '[HE] Could not open privacy policy (Hebrew)';
 
   @override
   String get refresh1 => '[HE] Refresh (Hebrew)';
 
   @override
-  String get roomUpdatedSuccessfully =>
-      '[HE] Room updated successfully! (Hebrew)';
+  String get roomUpdatedSuccessfully => '[HE] Room updated successfully! (Hebrew)';
 
   @override
   String get contentDetail => '[HE] Content Detail (Hebrew)';
@@ -1081,8 +1038,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get cancelSubscription => '[HE] Cancel Subscription (Hebrew)';
 
   @override
-  String get successfullyRegisteredAsAmbassador =>
-      '[HE] Successfully registered as Ambassador! (Hebrew)';
+  String get successfullyRegisteredAsAmbassador => '[HE] Successfully registered as Ambassador! (Hebrew)';
 
   @override
   String get save1 => '[HE] Save (Hebrew)';
@@ -1091,8 +1047,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get copy1 => '[HE] Copy (Hebrew)';
 
   @override
-  String get failedToSendInvitationE =>
-      '[HE] Failed to send invitation: \$e (Hebrew)';
+  String get failedToSendInvitationE => '[HE] Failed to send invitation: \$e (Hebrew)';
 
   @override
   String get surveyScore => '[HE] Survey Score (Hebrew)';
@@ -1109,20 +1064,16 @@ class AppLocalizationsHe extends AppLocalizations {
   String get responseDetail => '[HE] Response Detail (Hebrew)';
 
   @override
-  String get businessVerificationScreenComingSoon =>
-      'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully =>
-      'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE =>
-      '[HE] Failed to start Pro subscription: \$e (Hebrew)';
+  String get failedToStartProSubscriptionE => '[HE] Failed to start Pro subscription: \$e (Hebrew)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon =>
-      '[HE] Business Dashboard Entry Screen - Coming Soon (Hebrew)';
+  String get businessDashboardEntryScreenComingSoon => '[HE] Business Dashboard Entry Screen - Coming Soon (Hebrew)';
 
   @override
   String get contentFilter => '[HE] Content Filter (Hebrew)';
@@ -1144,8 +1095,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon =>
-      '[HE] Business CRM Entry Screen - Coming Soon (Hebrew)';
+  String get businessCrmEntryScreenComingSoon => '[HE] Business CRM Entry Screen - Coming Soon (Hebrew)';
 
   @override
   String get adminDashboard => '[HE] Admin Dashboard';
@@ -1156,16 +1106,13 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError =>
-      '[HE] Error loading dashboard: \$error (Hebrew)';
+  String get errorLoadingDashboardError => '[HE] Error loading dashboard: \$error (Hebrew)';
 
   @override
-  String get gameDeletedSuccessfully =>
-      '[HE] Game deleted successfully! (Hebrew)';
+  String get gameDeletedSuccessfully => '[HE] Game deleted successfully! (Hebrew)';
 
   @override
-  String get viewResponsesComingSoon =>
-      '[HE] View responses - Coming soon! (Hebrew)';
+  String get viewResponsesComingSoon => '[HE] View responses - Coming soon! (Hebrew)';
 
   @override
   String get deleteProvider => '[HE] Delete Provider';
@@ -1174,8 +1121,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get errorLoadingRewards => '[HE] Error loading rewards (Hebrew)';
 
   @override
-  String get failedToDeleteAccountE =>
-      '[HE] Failed to delete account: \$e (Hebrew)';
+  String get failedToDeleteAccountE => '[HE] Failed to delete account: \$e (Hebrew)';
 
   @override
   String get invited1 => '[HE] Invited (Hebrew)';
@@ -1190,8 +1136,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get noEvents => '[HE] No events (Hebrew)';
 
   @override
-  String get gameCreatedSuccessfully =>
-      '[HE] Game created successfully! (Hebrew)';
+  String get gameCreatedSuccessfully => '[HE] Game created successfully! (Hebrew)';
 
   @override
   String get add1 => '[HE] Add (Hebrew)';
@@ -1211,12 +1156,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get clients => '[HE] Clients (Hebrew)';
 
   @override
-  String get noAmbassadorDataAvailable =>
-      '[HE] No ambassador data available (Hebrew)';
+  String get noAmbassadorDataAvailable => '[HE] No ambassador data available (Hebrew)';
 
   @override
-  String get backgroundDeletedSuccessfully =>
-      '[HE] Background deleted successfully! (Hebrew)';
+  String get backgroundDeletedSuccessfully => '[HE] Background deleted successfully! (Hebrew)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1224,8 +1167,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet =>
-      '[HE] No analytics data available yet. (Hebrew)';
+  String get noAnalyticsDataAvailableYet => '[HE] No analytics data available yet. (Hebrew)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1233,8 +1175,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon =>
-      '[HE] Business Phone Booking Entry Screen - Coming Soon (Hebrew)';
+  String get businessPhoneBookingEntryScreenComingSoon => '[HE] Business Phone Booking Entry Screen - Coming Soon (Hebrew)';
 
   @override
   String get verification => '[HE] Verification (Hebrew)';
@@ -1281,8 +1222,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get businessProfile => '[HE] Business Profile (Hebrew)';
 
   @override
-  String get businessBookingEntryScreenComingSoon =>
-      '[HE] Business Booking Entry Screen - Coming Soon (Hebrew)';
+  String get businessBookingEntryScreenComingSoon => '[HE] Business Booking Entry Screen - Coming Soon (Hebrew)';
 
   @override
   String get createNewSurvey => '[HE] Create New Survey (Hebrew)';
@@ -1306,8 +1246,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get loginFailedE => '[HE] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully =>
-      '[HE] Invitation sent successfully! (Hebrew)';
+  String get invitationSentSuccessfully => '[HE] Invitation sent successfully! (Hebrew)';
 
   @override
   String get registering => '[HE] Registering... (Hebrew)';
@@ -1324,12 +1263,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get errorSavingSettingsE => '[HE] Error saving settings: \$e (Hebrew)';
 
   @override
-  String get appVersionAndInformation =>
-      '[HE] App version and information (Hebrew)';
+  String get appVersionAndInformation => '[HE] App version and information (Hebrew)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon =>
-      '[HE] Business Subscription Entry Screen - Coming Soon (Hebrew)';
+  String get businessSubscriptionEntryScreenComingSoon => '[HE] Business Subscription Entry Screen - Coming Soon (Hebrew)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1337,8 +1274,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully =>
-      '[HE] Your payment has been processed successfully. (Hebrew)';
+  String get yourPaymentHasBeenProcessedSuccessfully => '[HE] Your payment has been processed successfully. (Hebrew)';
 
   @override
   String get errorE => '[HE] Error: \$e (Hebrew)';
@@ -1356,8 +1292,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get payment => '[HE] Payment (Hebrew)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests =>
-      '[HE] Automatically confirm new booking requests (Hebrew)';
+  String get automaticallyConfirmNewBookingRequests => '[HE] Automatically confirm new booking requests (Hebrew)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1370,8 +1305,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground =>
-      '[HE] Please sign in to upload a background (Hebrew)';
+  String get pleaseSignInToUploadABackground => '[HE] Please sign in to upload a background (Hebrew)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1388,22 +1322,19 @@ class AppLocalizationsHe extends AppLocalizations {
   String get autoconfirmBookings => '[HE] Auto-Confirm Bookings (Hebrew)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan =>
-      '[HE] Redirecting to Stripe checkout for Pro plan... (Hebrew)';
+  String get redirectingToStripeCheckoutForProPlan => '[HE] Redirecting to Stripe checkout for Pro plan... (Hebrew)';
 
   @override
   String get exportAsCsv => '[HE] Export as CSV (Hebrew)';
 
   @override
-  String get deleteFunctionalityComingSoon =>
-      '[HE] Delete functionality coming soon! (Hebrew)';
+  String get deleteFunctionalityComingSoon => '[HE] Delete functionality coming soon! (Hebrew)';
 
   @override
   String get editClient => '[HE] Edit Client (Hebrew)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage =>
-      '[HE] Are you sure you want to delete this message? (Hebrew)';
+  String get areYouSureYouWantToDeleteThisMessage => '[HE] Are you sure you want to delete this message? (Hebrew)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1414,39 +1345,31 @@ class AppLocalizationsHe extends AppLocalizations {
   String get notAuthenticated => '[HE] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents =>
-      '[HE] Privacy request sent to your parents! (Hebrew)';
+  String get privacyRequestSentToYourParents => '[HE] Privacy request sent to your parents! (Hebrew)';
 
   @override
-  String get clientDeletedSuccessfully =>
-      '[HE] Client deleted successfully! (Hebrew)';
+  String get clientDeletedSuccessfully => '[HE] Client deleted successfully! (Hebrew)';
 
   @override
-  String get failedToCancelSubscription =>
-      '[HE] Failed to cancel subscription (Hebrew)';
+  String get failedToCancelSubscription => '[HE] Failed to cancel subscription (Hebrew)';
 
   @override
   String get allLanguages => '[HE] All Languages (Hebrew)';
 
   @override
-  String get slotDeletedSuccessfully =>
-      '[HE] Slot deleted successfully (Hebrew)';
+  String get slotDeletedSuccessfully => '[HE] Slot deleted successfully (Hebrew)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon =>
-      '[HE] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon => '[HE] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin =>
-      '[HE] Parents must approve before children can join (Hebrew)';
+  String get parentsMustApproveBeforeChildrenCanJoin => '[HE] Parents must approve before children can join (Hebrew)';
 
   @override
-  String get subscribeToPro1499mo =>
-      '[HE] Subscribe to Pro (€14.99/mo) (Hebrew)';
+  String get subscribeToPro1499mo => '[HE] Subscribe to Pro (€14.99/mo) (Hebrew)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon =>
-      '[HE] Business Availability Entry Screen - Coming Soon (Hebrew)';
+  String get businessAvailabilityEntryScreenComingSoon => '[HE] Business Availability Entry Screen - Coming Soon (Hebrew)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1460,8 +1383,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get submitBooking => '[HE] Submit Booking (Hebrew)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment =>
-      '[HE] Are you sure you want to cancel this appointment? (Hebrew)';
+  String get areYouSureYouWantToCancelThisAppointment => '[HE] Are you sure you want to cancel this appointment? (Hebrew)';
 
   @override
   String get noUpcomingBookings => '[HE] No upcoming bookings (Hebrew)';
@@ -1479,8 +1401,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get goToDashboard => '[HE] Go to Dashboard (Hebrew)';
 
   @override
-  String get ambassadorQuotaDashboard =>
-      '[HE] Ambassador Quota Dashboard (Hebrew)';
+  String get ambassadorQuotaDashboard => '[HE] Ambassador Quota Dashboard (Hebrew)';
 
   @override
   String get adminSettings => '[HE] Admin Settings';
@@ -1518,8 +1439,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully =>
-      '[HE] Client added successfully! (Hebrew)';
+  String get clientAddedSuccessfully => '[HE] Client added successfully! (Hebrew)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1537,8 +1457,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get bookAppointment => '[HE] Book Appointment (Hebrew)';
 
   @override
-  String get receivePushNotificationsForNewBookings =>
-      'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[HE] Delete (Hebrew)';
@@ -1553,15 +1472,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get manageSubscription => '[HE] Manage Subscription (Hebrew)';
 
   @override
-  String get requiresInstallFallback =>
-      '[HE] Requires Install Fallback (Hebrew)';
+  String get requiresInstallFallback => '[HE] Requires Install Fallback (Hebrew)';
 
   @override
   String get paymentConfirmation => '[HE] Payment Confirmation (Hebrew)';
 
   @override
-  String get promoAppliedYourNextBillIsFree =>
-      '[HE] Promo applied! Your next bill is free. (Hebrew)';
+  String get promoAppliedYourNextBillIsFree => '[HE] Promo applied! Your next bill is free. (Hebrew)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1572,16 +1489,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get errorLoadingSlots => '[HE] Error loading slots (Hebrew)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame =>
-      '[HE] Allow other users to find and join this game (Hebrew)';
+  String get allowOtherUsersToFindAndJoinThisGame => '[HE] Allow other users to find and join this game (Hebrew)';
 
   @override
-  String get businessOnboardingScreenComingSoon =>
-      '[HE] Business Onboarding Screen - Coming Soon (Hebrew)';
+  String get businessOnboardingScreenComingSoon => '[HE] Business Onboarding Screen - Coming Soon (Hebrew)';
 
   @override
-  String get activateBusinessProfile =>
-      '[HE] Activate Business Profile (Hebrew)';
+  String get activateBusinessProfile => '[HE] Activate Business Profile (Hebrew)';
 
   @override
   String get contentNotFound => '[HE] Content not found (Hebrew)';
@@ -1623,8 +1537,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get shareLink => '[HE] Share Link (Hebrew)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider =>
-      '[HE] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider => '[HE] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[HE] Delete Appointment (Hebrew)';
@@ -1644,12 +1557,10 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation =>
-      '[HE] Update your business information (Hebrew)';
+  String get updateYourBusinessInformation => '[HE] Update your business information (Hebrew)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider =>
-      '[HE] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider => '[HE] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[HE] Parent Dashboard (Hebrew)';
@@ -1672,12 +1583,10 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb =>
-      '[HE] Studio booking is only available on web (Hebrew)';
+  String get studioBookingIsOnlyAvailableOnWeb => '[HE] Studio booking is only available on web (Hebrew)';
 
   @override
-  String get errorLoadingBranchesE =>
-      '[HE] Error loading branches: \$e (Hebrew)';
+  String get errorLoadingBranchesE => '[HE] Error loading branches: \$e (Hebrew)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1693,15 +1602,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get none => '[HE] None (Hebrew)';
 
   @override
-  String get failedToUpdateConsentE =>
-      '[HE] Failed to update consent: \$e (Hebrew)';
+  String get failedToUpdateConsentE => '[HE] Failed to update consent: \$e (Hebrew)';
 
   @override
   String get welcome1 => '[HE] Welcome (Hebrew)';
 
   @override
-  String get failedToCreateSessionE =>
-      '[HE] Failed to create session: \$e (Hebrew)';
+  String get failedToCreateSessionE => '[HE] Failed to create session: \$e (Hebrew)';
 
   @override
   String get inviteContact => '[HE] Invite Contact (Hebrew)';
@@ -1710,8 +1617,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get surveyEditor => '[HE] Survey Editor (Hebrew)';
 
   @override
-  String get failedToStartBasicSubscriptionE =>
-      '[HE] Failed to start Basic subscription: \$e (Hebrew)';
+  String get failedToStartBasicSubscriptionE => '[HE] Failed to start Basic subscription: \$e (Hebrew)';
 
   @override
   String get mySchedule => '[HE] My Schedule (Hebrew)';
@@ -1731,8 +1637,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully =>
-      '[HE] Settings saved successfully! (Hebrew)';
+  String get settingsSavedSuccessfully => '[HE] Settings saved successfully! (Hebrew)';
 
   @override
   String get linkCopiedToClipboard => '[HE] Link copied to clipboard! (Hebrew)';
@@ -1752,8 +1657,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully =>
-      '[HE] Room deleted successfully! (Hebrew)';
+  String get roomDeletedSuccessfully => '[HE] Room deleted successfully! (Hebrew)';
 
   @override
   String get businessCalendar => '[HE] Business Calendar (Hebrew)';
@@ -1818,8 +1722,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get cancel1 => '[HE] Cancel (Hebrew)';
 
   @override
-  String get subscriptionActivatedSuccessfully =>
-      '[HE] Subscription activated successfully! (Hebrew)';
+  String get subscriptionActivatedSuccessfully => '[HE] Subscription activated successfully! (Hebrew)';
 
   @override
   String activityLogaction(Object action) {
@@ -1830,8 +1733,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get broadcast => '[HE] Broadcast (Hebrew)';
 
   @override
-  String get noEventsScheduledThisWeek =>
-      '[HE] No events scheduled this week (Hebrew)';
+  String get noEventsScheduledThisWeek => '[HE] No events scheduled this week (Hebrew)';
 
   @override
   String get googleCalendar => '[HE] Google Calendar (Hebrew)';
@@ -1843,8 +1745,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get childDashboard => '[HE] Child Dashboard (Hebrew)';
 
   @override
-  String get failedToUploadBackgroundE =>
-      '[HE] Failed to upload background: \$e (Hebrew)';
+  String get failedToUploadBackgroundE => '[HE] Failed to upload background: \$e (Hebrew)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1863,8 +1764,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get noAppointments => '[HE] No appointments (Hebrew)';
 
   @override
-  String get unlimitedBookingsPerWeek =>
-      '[HE] • Unlimited bookings per week (Hebrew)';
+  String get unlimitedBookingsPerWeek => '[HE] • Unlimited bookings per week (Hebrew)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1872,19 +1772,16 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat =>
-      '[HE] Scheduled at: \$scheduledAt (Hebrew)';
+  String get scheduledAtScheduledat => '[HE] Scheduled at: \$scheduledAt (Hebrew)';
 
   @override
   String get selectStaff => '[HE] Select Staff (Hebrew)';
 
   @override
-  String get subscriptionCancelledSuccessfully =>
-      '[HE] Subscription cancelled successfully (Hebrew)';
+  String get subscriptionCancelledSuccessfully => '[HE] Subscription cancelled successfully (Hebrew)';
 
   @override
-  String get pleaseLogInToViewYourProfile =>
-      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[HE] Cancel Appointment (Hebrew)';
@@ -1898,8 +1795,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get businessSignup => '[HE] Business Signup (Hebrew)';
 
   @override
-  String get businessCompletionScreenComingSoon =>
-      '[HE] Business Completion Screen - Coming Soon (Hebrew)';
+  String get businessCompletionScreenComingSoon => '[HE] Business Completion Screen - Coming Soon (Hebrew)';
 
   @override
   String get createGame1 => '[HE] Create Game (Hebrew)';
@@ -1913,8 +1809,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get pleaseEnterAPromoCode => '[HE] Please enter a promo code (Hebrew)';
 
   @override
-  String get errorLoadingAvailabilityE =>
-      '[HE] Error loading availability: \$e (Hebrew)';
+  String get errorLoadingAvailabilityE => '[HE] Error loading availability: \$e (Hebrew)';
 
   @override
   String get parentalControls => '[HE] Parental Controls (Hebrew)';
@@ -1923,15 +1818,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully =>
-      '[HE] Child linked successfully! (Hebrew)';
+  String get childLinkedSuccessfully => '[HE] Child linked successfully! (Hebrew)';
 
   @override
   String get create => '[HE] Create (Hebrew)';
 
   @override
-  String get noExternalMeetingsFound =>
-      '[HE] No external meetings found. (Hebrew)';
+  String get noExternalMeetingsFound => '[HE] No external meetings found. (Hebrew)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1939,15 +1832,13 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress =>
-      '[HE] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress => '[HE] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[HE] Scheduler Screen (Hebrew)';
 
   @override
-  String get clientUpdatedSuccessfully =>
-      '[HE] Client updated successfully! (Hebrew)';
+  String get clientUpdatedSuccessfully => '[HE] Client updated successfully! (Hebrew)';
 
   @override
   String get surveyResponses => '[HE] Survey Responses (Hebrew)';
@@ -1973,12 +1864,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get errorLoadingEvents => '[HE] Error loading events (Hebrew)';
 
   @override
-  String get errorLoadingOrganizations =>
-      '[HE] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations => '[HE] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon =>
-      '[HE] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon => '[HE] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[HE] Success (Hebrew)';
@@ -1997,12 +1886,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get readWrite => '[HE] Read & Write (Hebrew)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan =>
-      '[HE] Redirecting to Stripe checkout for Basic plan... (Hebrew)';
+  String get redirectingToStripeCheckoutForBasicPlan => '[HE] Redirecting to Stripe checkout for Basic plan... (Hebrew)';
 
   @override
-  String get errorSavingConfigurationE =>
-      '[HE] Error saving configuration: \$e';
+  String get errorSavingConfigurationE => '[HE] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[HE] Pick Date (Hebrew)';
@@ -2038,12 +1925,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get businessLogin => '[HE] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully =>
-      '[HE] Invoice created successfully! (Hebrew)';
+  String get invoiceCreatedSuccessfully => '[HE] Invoice created successfully! (Hebrew)';
 
   @override
-  String get noTimeSeriesDataAvailable =>
-      '[HE] No time series data available (Hebrew)';
+  String get noTimeSeriesDataAvailable => '[HE] No time series data available (Hebrew)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -2056,8 +1941,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE =>
-      '[HE] Failed to send privacy request: \$e (Hebrew)';
+  String get failedToSendPrivacyRequestE => '[HE] Failed to send privacy request: \$e (Hebrew)';
 
   @override
   String get chooseYourPlan => '[HE] Choose Your Plan (Hebrew)';
@@ -2072,8 +1956,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get eventCreated => '[HE] Event created (Hebrew)';
 
   @override
-  String get subscribeToBasic499mo =>
-      '[HE] Subscribe to Basic (€4.99/mo) (Hebrew)';
+  String get subscribeToBasic499mo => '[HE] Subscribe to Basic (€4.99/mo) (Hebrew)';
 
   @override
   String get completion => '[HE] Completion (Hebrew)';
@@ -2094,12 +1977,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get deleteSurvey => '[HE] Delete Survey (Hebrew)';
 
   @override
-  String get gameApprovedSuccessfully =>
-      '[HE] Game approved successfully! (Hebrew)';
+  String get gameApprovedSuccessfully => '[HE] Game approved successfully! (Hebrew)';
 
   @override
-  String get errorLoadingPermissionsError =>
-      '[HE] Error loading permissions: \$error (Hebrew)';
+  String get errorLoadingPermissionsError => '[HE] Error loading permissions: \$error (Hebrew)';
 
   @override
   String get referrals => '[HE] Referrals (Hebrew)';
@@ -2141,8 +2022,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get organizations => '[HE] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully =>
-      '[HE] Configuration saved successfully!';
+  String get configurationSavedSuccessfully => '[HE] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[HE] Create New Game (Hebrew)';
@@ -2151,12 +2031,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get next1 => '[HE] Next (Hebrew)';
 
   @override
-  String get backgroundUploadedSuccessfully =>
-      '[HE] Background uploaded successfully! (Hebrew)';
+  String get backgroundUploadedSuccessfully => '[HE] Background uploaded successfully! (Hebrew)';
 
   @override
-  String get noAppointmentRequestsFound =>
-      '[HE] No appointment requests found. (Hebrew)';
+  String get noAppointmentRequestsFound => '[HE] No appointment requests found. (Hebrew)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2183,8 +2061,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval =>
-      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[HE] Failed to create game: \$e (Hebrew)';
@@ -2193,8 +2070,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get noChartDataAvailable => '[HE] No chart data available (Hebrew)';
 
   @override
-  String get phonebasedBookingSystem =>
-      '[HE] • Phone-based booking system (Hebrew)';
+  String get phonebasedBookingSystem => '[HE] • Phone-based booking system (Hebrew)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2203,8 +2079,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get invoices => '[HE] Invoices (Hebrew)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue =>
-      'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2231,12 +2106,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get iDoNotConsent => '[HE] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient =>
-      '[HE] No clients found. Add your first client! (Hebrew)';
+  String get noClientsFoundAddYourFirstClient => '[HE] No clients found. Add your first client! (Hebrew)';
 
   @override
-  String get settingsDialogWillBeImplementedHere =>
-      '[HE] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere => '[HE] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[HE] Group: \$groupId';
@@ -2259,8 +2132,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics =>
-      '[HE] • CRM dashboard with analytics (Hebrew)';
+  String get crmDashboardWithAnalytics => '[HE] • CRM dashboard with analytics (Hebrew)';
 
   @override
   String get contentLibrary1 => '[HE] Content Library (Hebrew)';
@@ -2272,30 +2144,25 @@ class AppLocalizationsHe extends AppLocalizations {
   String get subscriptionManagement => '[HE] Subscription Management (Hebrew)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere =>
-      '[HE] Monetization settings will be implemented here (Hebrew)';
+  String get monetizationSettingsWillBeImplementedHere => '[HE] Monetization settings will be implemented here (Hebrew)';
 
   @override
-  String get failedToApplyPromoCodeE =>
-      '[HE] Failed to apply promo code: \$e (Hebrew)';
+  String get failedToApplyPromoCodeE => '[HE] Failed to apply promo code: \$e (Hebrew)';
 
   @override
   String get editProvider => '[HE] Edit Provider';
 
   @override
-  String get localizationContribution =>
-      '[HE] Localization Contribution (Hebrew)';
+  String get localizationContribution => '[HE] Localization Contribution (Hebrew)';
 
   @override
   String get parentalConsent => '[HE] Parental Consent (Hebrew)';
 
   @override
-  String get businessSignupScreenComingSoon =>
-      '[HE] Business Signup Screen - Coming Soon (Hebrew)';
+  String get businessSignupScreenComingSoon => '[HE] Business Signup Screen - Coming Soon (Hebrew)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment =>
-      '[HE] Are you sure you want to delete this appointment? (Hebrew)';
+  String get areYouSureYouWantToDeleteThisAppointment => '[HE] Are you sure you want to delete this appointment? (Hebrew)';
 
   @override
   String get syncAppointment => '[HE] Sync Appointment (Hebrew)';
@@ -2307,15 +2174,13 @@ class AppLocalizationsHe extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon =>
-      '[HE] Business Setup Screen - Coming Soon (Hebrew)';
+  String get businessSetupScreenComingSoon => '[HE] Business Setup Screen - Coming Soon (Hebrew)';
 
   @override
   String get edit1 => '[HE] Edit (Hebrew)';
 
   @override
-  String get noEventsScheduledThisMonth =>
-      '[HE] No events scheduled this month (Hebrew)';
+  String get noEventsScheduledThisMonth => '[HE] No events scheduled this month (Hebrew)';
 
   @override
   String get businessDashboard => '[HE] Business Dashboard (Hebrew)';
@@ -2329,8 +2194,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability =>
-      '[HE] Manage Staff Availability (Hebrew)';
+  String get manageStaffAvailability => '[HE] Manage Staff Availability (Hebrew)';
 
   @override
   String get noMissingTranslations => '[HE] No missing translations (Hebrew)';
@@ -2347,8 +2211,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get noUsers => '[HE] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode =>
-      '[HE] Error loading referral code (Hebrew)';
+  String get errorLoadingReferralCode => '[HE] Error loading referral code (Hebrew)';
 
   @override
   String get allCountries => '[HE] All Countries (Hebrew)';
@@ -2363,8 +2226,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get deleteMessage => '[HE] Delete Message (Hebrew)';
 
   @override
-  String get receiveBookingNotificationsViaSms =>
-      'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[HE] changeRole (TRANSLATE)';
@@ -2375,8 +2237,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal =>
-      '[HE] Opening customer portal... (Hebrew)';
+  String get openingCustomerPortal => '[HE] Opening customer portal... (Hebrew)';
 
   @override
   String get signOut => '[HE] Sign Out (Hebrew)';
@@ -2387,8 +2248,7 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon =>
-      'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[HE] Upgrade to Business (Hebrew)';
@@ -2414,8 +2274,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon =>
-      'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[HE] View Responses (Hebrew)';
@@ -2444,8 +2303,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice =>
-      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2463,8 +2321,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description =>
-      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2473,8 +2330,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title =>
-      'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2522,8 +2378,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement =>
-      'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2571,12 +2426,10 @@ class AppLocalizationsHe extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage =>
-      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle =>
-      '[HE] Congratulations! You\'re now an Ambassador! (Hebrew)';
+  String get ambassadorPromotionTitle => '[HE] Congratulations! You\'re now an Ambassador! (Hebrew)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2587,11 +2440,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get tierUpgradeTitle => '[HE] Tier Upgrade! 🎉 (Hebrew)';
 
   @override
-  String tierUpgradeBody(
-    String previousTier,
-    String newTier,
-    String totalReferrals,
-  ) {
+  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
     return '[HE] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Hebrew)';
   }
 
@@ -2599,29 +2448,20 @@ class AppLocalizationsHe extends AppLocalizations {
   String get monthlyReminderTitle => '[HE] Monthly Goal Reminder (Hebrew)';
 
   @override
-  String monthlyReminderBody(
-    String currentReferrals,
-    String targetReferrals,
-    String daysRemaining,
-  ) {
+  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
     return '[HE] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Hebrew)';
   }
 
   @override
-  String get performanceWarningTitle =>
-      '[HE] Ambassador Performance Alert (Hebrew)';
+  String get performanceWarningTitle => '[HE] Ambassador Performance Alert (Hebrew)';
 
   @override
-  String performanceWarningBody(
-    String currentReferrals,
-    String minimumRequired,
-  ) {
+  String performanceWarningBody(String currentReferrals, String minimumRequired) {
     return '[HE] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Hebrew)';
   }
 
   @override
-  String get ambassadorDemotionTitle =>
-      '[HE] Ambassador Status Update (Hebrew)';
+  String get ambassadorDemotionTitle => '[HE] Ambassador Status Update (Hebrew)';
 
   @override
   String ambassadorDemotionBody(String reason) {
