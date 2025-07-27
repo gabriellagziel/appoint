@@ -218,7 +218,6 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
-      }
     } finally {
       if (mounted) {
         setState(() => _isProcessing = false);

@@ -325,6 +325,5 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
           SnackBar(content: Text('Error: $e')),
         );
       }
-    }
   }
 }
