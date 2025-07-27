@@ -74,7 +74,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get search => '[IS] Leita';
 
   @override
-  String get cancelInviteConfirmation => '[IS] [IS] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation =>
+      '[IS] [IS] Are you sure you want to cancel this invite?';
 
   @override
   String created(String created, Object date) {
@@ -122,7 +123,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get playtimeModeVirtual => '[IS] [IS] Virtual Play';
 
   @override
-  String get playtimeDescription => '[IS] [IS] Enjoy live or virtual games with your friends!';
+  String get playtimeDescription =>
+      '[IS] [IS] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => '[IS] Eyða';
@@ -182,7 +184,8 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => '[IS] Fundur deildur með góðum árangri';
+  String get meetingSharedSuccessfully =>
+      '[IS] Fundur deildur með góðum árangri';
 
   @override
   String get welcomeToPlaytime => '[IS] [IS] Welcome to Playtime';
@@ -200,7 +203,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get cut => '[IS] Skerða';
 
   @override
-  String get inviteCancelledSuccessfully => '[IS] Bið fyrir afturköllun boðs tókst';
+  String get inviteCancelledSuccessfully =>
+      '[IS] Bið fyrir afturköllun boðs tókst';
 
   @override
   String get retry => '[IS] Reyna aftur';
@@ -277,7 +281,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get scheduleForLater => '[IS] [IS] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully => '[IS] Aðgangur afturkallaður með góðum árangri';
+  String get accessRevokedSuccessfully =>
+      '[IS] Aðgangur afturkallaður með góðum árangri';
 
   @override
   String type(String type) {
@@ -393,7 +398,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get mediaOptional => '[IS] Fjölmiðlar (valkvætt)';
 
   @override
-  String get messageSavedSuccessfully => '[IS] Skilaboð vistuð með góðum árangri';
+  String get messageSavedSuccessfully =>
+      '[IS] Skilaboð vistuð með góðum árangri';
 
   @override
   String get scheduledFor => '[IS] Skrásett fyrir';
@@ -402,7 +408,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get dashboard => '[IS] [IS] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => '[IS] [IS] No permission for broadcast';
+  String get noPermissionForBroadcast =>
+      '[IS] [IS] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[IS] Playtime Games – Admin';
@@ -479,7 +486,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get playtimeEnterGameName => '[IS] [IS] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[IS] [IS] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[IS] [IS] Please login to access family features';
 
   @override
   String get myInvites => '[IS] Boðskrár mínar';
@@ -533,7 +541,8 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[IS] [IS] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[IS] [IS] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[IS] Admin Metrics';
@@ -554,40 +563,52 @@ class AppLocalizationsIs extends AppLocalizations {
   String get contentLibrary => '[IS] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[IS] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[IS] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[IS] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[IS] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[IS] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[IS] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[IS] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[IS] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[IS] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[IS] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[IS] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[IS] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[IS] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[IS] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[IS] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[IS] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[IS] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[IS] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential => '[IS] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential =>
+      '[IS] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[IS] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[IS] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[IS] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[IS] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -604,19 +625,24 @@ class AppLocalizationsIs extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[IS] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[IS] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[IS] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[IS] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode => '[IS] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode =>
+      '[IS] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[IS] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[IS] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode => '[IS] Please enter the verification code.';
+  String get authErrorMissingVerificationCode =>
+      '[IS] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[IS] Missing verification ID.';
@@ -628,43 +654,56 @@ class AppLocalizationsIs extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[IS] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[IS] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[IS] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[IS] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[IS] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[IS] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[IS] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired => '[IS] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired =>
+      '[IS] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound => '[IS] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound =>
+      '[IS] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession => '[IS] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession =>
+      '[IS] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession => '[IS] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession =>
+      '[IS] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse => '[IS] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse =>
+      '[IS] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded => '[IS] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded =>
+      '[IS] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[IS] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[IS] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification => '[IS] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification =>
+      '[IS] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists => '[IS] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists =>
+      '[IS] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[IS] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[IS] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[IS] The ID token is invalid.';
@@ -676,10 +715,12 @@ class AppLocalizationsIs extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[IS] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[IS] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[IS] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[IS] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[IS] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[IS] Invalid custom claims provided.';
@@ -688,70 +729,87 @@ class AppLocalizationsIs extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[IS] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[IS] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[IS] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[IS] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[IS] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[IS] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain => '[IS] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain =>
+      '[IS] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[IS] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[IS] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[IS] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[IS] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[IS] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[IS] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength => '[IS] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength =>
+      '[IS] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[IS] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[IS] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[IS] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization => '[IS] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization =>
+      '[IS] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[IS] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[IS] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator => '[IS] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator =>
+      '[IS] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[IS] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[IS] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[IS] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[IS] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[IS] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[IS] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration => '[IS] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration =>
+      '[IS] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[IS] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[IS] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[IS] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded => '[IS] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded =>
+      '[IS] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[IS] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[IS] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[IS] Missing continue URL.';
@@ -766,7 +824,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get authErrorMissingUid => '[IS] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret => '[IS] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret =>
+      '[IS] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[IS] Firebase project not found.';
@@ -775,19 +834,23 @@ class AppLocalizationsIs extends AppLocalizations {
   String get authErrorReservedClaims => '[IS] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[IS] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[IS] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[IS] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[IS] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[IS] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri => '[IS] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri =>
+      '[IS] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[IS] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[IS] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -836,7 +899,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends => '[IS] Virtual session created! Inviting friends... (Icelandic)';
+  String get virtualSessionCreatedInvitingFriends =>
+      '[IS] Virtual session created! Inviting friends... (Icelandic)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -877,13 +941,15 @@ class AppLocalizationsIs extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[IS] Subscription unavailable (Icelandic)';
+  String get subscriptionUnavailable =>
+      '[IS] Subscription unavailable (Icelandic)';
 
   @override
   String get confirmBooking => '[IS] Confirm Booking (Icelandic)';
 
   @override
-  String get failedToUpdatePermissionE => '[IS] Failed to update permission: \$e (Icelandic)';
+  String get failedToUpdatePermissionE =>
+      '[IS] Failed to update permission: \$e (Icelandic)';
 
   @override
   String get reject => '[IS] Reject (Icelandic)';
@@ -897,7 +963,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get noProviders => '[IS] No providers';
 
   @override
-  String get checkingSubscription => '[IS] Checking subscription... (Icelandic)';
+  String get checkingSubscription =>
+      '[IS] Checking subscription... (Icelandic)';
 
   @override
   String errorPickingImageE(Object e) {
@@ -905,13 +972,15 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get noContentAvailableYet => '[IS] No content available yet (Icelandic)';
+  String get noContentAvailableYet =>
+      '[IS] No content available yet (Icelandic)';
 
   @override
   String get resolve => '[IS] Resolve (Icelandic)';
 
   @override
-  String get errorLoadingSurveysError => '[IS] Error loading surveys: \$error (Icelandic)';
+  String get errorLoadingSurveysError =>
+      '[IS] Error loading surveys: \$error (Icelandic)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -919,7 +988,8 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[IS] Get help with your account (Icelandic)';
+  String get getHelpWithYourAccount =>
+      '[IS] Get help with your account (Icelandic)';
 
   @override
   String get pay => '[IS] Pay (Icelandic)';
@@ -934,7 +1004,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[IS] Changes saved successfully! (Icelandic)';
+  String get changesSavedSuccessfully =>
+      '[IS] Changes saved successfully! (Icelandic)';
 
   @override
   String get createNewInvoice => '[IS] Create New Invoice (Icelandic)';
@@ -954,7 +1025,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get profileSaved => '[IS] Profile saved! (Icelandic)';
 
   @override
-  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -985,7 +1057,8 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly => '[IS] You will receive a confirmation email shortly. (Icelandic)';
+  String get youWillReceiveAConfirmationEmailShortly =>
+      '[IS] You will receive a confirmation email shortly. (Icelandic)';
 
   @override
   String get addQuestion => '[IS] Add Question (Icelandic)';
@@ -1014,22 +1087,26 @@ class AppLocalizationsIs extends AppLocalizations {
   String get surveyManagement => '[IS] Survey Management (Icelandic)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[IS] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[IS] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[IS] No rooms found. Add your first room! (Icelandic)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[IS] No rooms found. Add your first room! (Icelandic)';
 
   @override
   String get readOurPrivacyPolicy => '[IS] Read our privacy policy (Icelandic)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[IS] Could not open privacy policy (Icelandic)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[IS] Could not open privacy policy (Icelandic)';
 
   @override
   String get refresh1 => '[IS] Refresh (Icelandic)';
 
   @override
-  String get roomUpdatedSuccessfully => '[IS] Room updated successfully! (Icelandic)';
+  String get roomUpdatedSuccessfully =>
+      '[IS] Room updated successfully! (Icelandic)';
 
   @override
   String get contentDetail => '[IS] Content Detail (Icelandic)';
@@ -1038,7 +1115,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get cancelSubscription => '[IS] Cancel Subscription (Icelandic)';
 
   @override
-  String get successfullyRegisteredAsAmbassador => '[IS] Successfully registered as Ambassador! (Icelandic)';
+  String get successfullyRegisteredAsAmbassador =>
+      '[IS] Successfully registered as Ambassador! (Icelandic)';
 
   @override
   String get save1 => '[IS] Save (Icelandic)';
@@ -1047,7 +1125,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get copy1 => '[IS] Copy (Icelandic)';
 
   @override
-  String get failedToSendInvitationE => '[IS] Failed to send invitation: \$e (Icelandic)';
+  String get failedToSendInvitationE =>
+      '[IS] Failed to send invitation: \$e (Icelandic)';
 
   @override
   String get surveyScore => '[IS] Survey Score (Icelandic)';
@@ -1064,16 +1143,20 @@ class AppLocalizationsIs extends AppLocalizations {
   String get responseDetail => '[IS] Response Detail (Icelandic)';
 
   @override
-  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[IS] Failed to start Pro subscription: \$e (Icelandic)';
+  String get failedToStartProSubscriptionE =>
+      '[IS] Failed to start Pro subscription: \$e (Icelandic)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon => '[IS] Business Dashboard Entry Screen - Coming Soon (Icelandic)';
+  String get businessDashboardEntryScreenComingSoon =>
+      '[IS] Business Dashboard Entry Screen - Coming Soon (Icelandic)';
 
   @override
   String get contentFilter => '[IS] Content Filter (Icelandic)';
@@ -1095,7 +1178,8 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon => '[IS] Business CRM Entry Screen - Coming Soon (Icelandic)';
+  String get businessCrmEntryScreenComingSoon =>
+      '[IS] Business CRM Entry Screen - Coming Soon (Icelandic)';
 
   @override
   String get adminDashboard => '[IS] Admin Dashboard';
@@ -1106,13 +1190,16 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[IS] Error loading dashboard: \$error (Icelandic)';
+  String get errorLoadingDashboardError =>
+      '[IS] Error loading dashboard: \$error (Icelandic)';
 
   @override
-  String get gameDeletedSuccessfully => '[IS] Game deleted successfully! (Icelandic)';
+  String get gameDeletedSuccessfully =>
+      '[IS] Game deleted successfully! (Icelandic)';
 
   @override
-  String get viewResponsesComingSoon => '[IS] View responses - Coming soon! (Icelandic)';
+  String get viewResponsesComingSoon =>
+      '[IS] View responses - Coming soon! (Icelandic)';
 
   @override
   String get deleteProvider => '[IS] Delete Provider';
@@ -1121,7 +1208,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get errorLoadingRewards => '[IS] Error loading rewards (Icelandic)';
 
   @override
-  String get failedToDeleteAccountE => '[IS] Failed to delete account: \$e (Icelandic)';
+  String get failedToDeleteAccountE =>
+      '[IS] Failed to delete account: \$e (Icelandic)';
 
   @override
   String get invited1 => '[IS] Invited (Icelandic)';
@@ -1136,7 +1224,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get noEvents => '[IS] No events (Icelandic)';
 
   @override
-  String get gameCreatedSuccessfully => '[IS] Game created successfully! (Icelandic)';
+  String get gameCreatedSuccessfully =>
+      '[IS] Game created successfully! (Icelandic)';
 
   @override
   String get add1 => '[IS] Add (Icelandic)';
@@ -1156,10 +1245,12 @@ class AppLocalizationsIs extends AppLocalizations {
   String get clients => '[IS] Clients (Icelandic)';
 
   @override
-  String get noAmbassadorDataAvailable => '[IS] No ambassador data available (Icelandic)';
+  String get noAmbassadorDataAvailable =>
+      '[IS] No ambassador data available (Icelandic)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[IS] Background deleted successfully! (Icelandic)';
+  String get backgroundDeletedSuccessfully =>
+      '[IS] Background deleted successfully! (Icelandic)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1167,7 +1258,8 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[IS] No analytics data available yet. (Icelandic)';
+  String get noAnalyticsDataAvailableYet =>
+      '[IS] No analytics data available yet. (Icelandic)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1175,7 +1267,8 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon => '[IS] Business Phone Booking Entry Screen - Coming Soon (Icelandic)';
+  String get businessPhoneBookingEntryScreenComingSoon =>
+      '[IS] Business Phone Booking Entry Screen - Coming Soon (Icelandic)';
 
   @override
   String get verification => '[IS] Verification (Icelandic)';
@@ -1222,7 +1315,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get businessProfile => '[IS] Business Profile (Icelandic)';
 
   @override
-  String get businessBookingEntryScreenComingSoon => '[IS] Business Booking Entry Screen - Coming Soon (Icelandic)';
+  String get businessBookingEntryScreenComingSoon =>
+      '[IS] Business Booking Entry Screen - Coming Soon (Icelandic)';
 
   @override
   String get createNewSurvey => '[IS] Create New Survey (Icelandic)';
@@ -1246,7 +1340,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get loginFailedE => '[IS] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[IS] Invitation sent successfully! (Icelandic)';
+  String get invitationSentSuccessfully =>
+      '[IS] Invitation sent successfully! (Icelandic)';
 
   @override
   String get registering => '[IS] Registering... (Icelandic)';
@@ -1260,13 +1355,16 @@ class AppLocalizationsIs extends AppLocalizations {
   String get home1 => '[IS] Home (Icelandic)';
 
   @override
-  String get errorSavingSettingsE => '[IS] Error saving settings: \$e (Icelandic)';
+  String get errorSavingSettingsE =>
+      '[IS] Error saving settings: \$e (Icelandic)';
 
   @override
-  String get appVersionAndInformation => '[IS] App version and information (Icelandic)';
+  String get appVersionAndInformation =>
+      '[IS] App version and information (Icelandic)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon => '[IS] Business Subscription Entry Screen - Coming Soon (Icelandic)';
+  String get businessSubscriptionEntryScreenComingSoon =>
+      '[IS] Business Subscription Entry Screen - Coming Soon (Icelandic)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1274,7 +1372,8 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully => '[IS] Your payment has been processed successfully. (Icelandic)';
+  String get yourPaymentHasBeenProcessedSuccessfully =>
+      '[IS] Your payment has been processed successfully. (Icelandic)';
 
   @override
   String get errorE => '[IS] Error: \$e (Icelandic)';
@@ -1283,7 +1382,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get viewAll1 => '[IS] View All (Icelandic)';
 
   @override
-  String get editSurveyComingSoon => '[IS] Edit survey - Coming soon! (Icelandic)';
+  String get editSurveyComingSoon =>
+      '[IS] Edit survey - Coming soon! (Icelandic)';
 
   @override
   String get enterOtp => '[IS] Enter OTP (Icelandic)';
@@ -1292,7 +1392,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get payment => '[IS] Payment (Icelandic)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests => '[IS] Automatically confirm new booking requests (Icelandic)';
+  String get automaticallyConfirmNewBookingRequests =>
+      '[IS] Automatically confirm new booking requests (Icelandic)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1305,7 +1406,8 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[IS] Please sign in to upload a background (Icelandic)';
+  String get pleaseSignInToUploadABackground =>
+      '[IS] Please sign in to upload a background (Icelandic)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1322,19 +1424,22 @@ class AppLocalizationsIs extends AppLocalizations {
   String get autoconfirmBookings => '[IS] Auto-Confirm Bookings (Icelandic)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan => '[IS] Redirecting to Stripe checkout for Pro plan... (Icelandic)';
+  String get redirectingToStripeCheckoutForProPlan =>
+      '[IS] Redirecting to Stripe checkout for Pro plan... (Icelandic)';
 
   @override
   String get exportAsCsv => '[IS] Export as CSV (Icelandic)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[IS] Delete functionality coming soon! (Icelandic)';
+  String get deleteFunctionalityComingSoon =>
+      '[IS] Delete functionality coming soon! (Icelandic)';
 
   @override
   String get editClient => '[IS] Edit Client (Icelandic)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage => '[IS] Are you sure you want to delete this message? (Icelandic)';
+  String get areYouSureYouWantToDeleteThisMessage =>
+      '[IS] Are you sure you want to delete this message? (Icelandic)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1345,31 +1450,39 @@ class AppLocalizationsIs extends AppLocalizations {
   String get notAuthenticated => '[IS] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[IS] Privacy request sent to your parents! (Icelandic)';
+  String get privacyRequestSentToYourParents =>
+      '[IS] Privacy request sent to your parents! (Icelandic)';
 
   @override
-  String get clientDeletedSuccessfully => '[IS] Client deleted successfully! (Icelandic)';
+  String get clientDeletedSuccessfully =>
+      '[IS] Client deleted successfully! (Icelandic)';
 
   @override
-  String get failedToCancelSubscription => '[IS] Failed to cancel subscription (Icelandic)';
+  String get failedToCancelSubscription =>
+      '[IS] Failed to cancel subscription (Icelandic)';
 
   @override
   String get allLanguages => '[IS] All Languages (Icelandic)';
 
   @override
-  String get slotDeletedSuccessfully => '[IS] Slot deleted successfully (Icelandic)';
+  String get slotDeletedSuccessfully =>
+      '[IS] Slot deleted successfully (Icelandic)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon => '[IS] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon =>
+      '[IS] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin => '[IS] Parents must approve before children can join (Icelandic)';
+  String get parentsMustApproveBeforeChildrenCanJoin =>
+      '[IS] Parents must approve before children can join (Icelandic)';
 
   @override
-  String get subscribeToPro1499mo => '[IS] Subscribe to Pro (€14.99/mo) (Icelandic)';
+  String get subscribeToPro1499mo =>
+      '[IS] Subscribe to Pro (€14.99/mo) (Icelandic)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon => '[IS] Business Availability Entry Screen - Coming Soon (Icelandic)';
+  String get businessAvailabilityEntryScreenComingSoon =>
+      '[IS] Business Availability Entry Screen - Coming Soon (Icelandic)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1383,7 +1496,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get submitBooking => '[IS] Submit Booking (Icelandic)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment => '[IS] Are you sure you want to cancel this appointment? (Icelandic)';
+  String get areYouSureYouWantToCancelThisAppointment =>
+      '[IS] Are you sure you want to cancel this appointment? (Icelandic)';
 
   @override
   String get noUpcomingBookings => '[IS] No upcoming bookings (Icelandic)';
@@ -1401,7 +1515,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get goToDashboard => '[IS] Go to Dashboard (Icelandic)';
 
   @override
-  String get ambassadorQuotaDashboard => '[IS] Ambassador Quota Dashboard (Icelandic)';
+  String get ambassadorQuotaDashboard =>
+      '[IS] Ambassador Quota Dashboard (Icelandic)';
 
   @override
   String get adminSettings => '[IS] Admin Settings';
@@ -1439,7 +1554,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[IS] Client added successfully! (Icelandic)';
+  String get clientAddedSuccessfully =>
+      '[IS] Client added successfully! (Icelandic)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1457,7 +1573,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get bookAppointment => '[IS] Book Appointment (Icelandic)';
 
   @override
-  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[IS] Delete (Icelandic)';
@@ -1472,13 +1589,15 @@ class AppLocalizationsIs extends AppLocalizations {
   String get manageSubscription => '[IS] Manage Subscription (Icelandic)';
 
   @override
-  String get requiresInstallFallback => '[IS] Requires Install Fallback (Icelandic)';
+  String get requiresInstallFallback =>
+      '[IS] Requires Install Fallback (Icelandic)';
 
   @override
   String get paymentConfirmation => '[IS] Payment Confirmation (Icelandic)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[IS] Promo applied! Your next bill is free. (Icelandic)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[IS] Promo applied! Your next bill is free. (Icelandic)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1489,13 +1608,16 @@ class AppLocalizationsIs extends AppLocalizations {
   String get errorLoadingSlots => '[IS] Error loading slots (Icelandic)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame => '[IS] Allow other users to find and join this game (Icelandic)';
+  String get allowOtherUsersToFindAndJoinThisGame =>
+      '[IS] Allow other users to find and join this game (Icelandic)';
 
   @override
-  String get businessOnboardingScreenComingSoon => '[IS] Business Onboarding Screen - Coming Soon (Icelandic)';
+  String get businessOnboardingScreenComingSoon =>
+      '[IS] Business Onboarding Screen - Coming Soon (Icelandic)';
 
   @override
-  String get activateBusinessProfile => '[IS] Activate Business Profile (Icelandic)';
+  String get activateBusinessProfile =>
+      '[IS] Activate Business Profile (Icelandic)';
 
   @override
   String get contentNotFound => '[IS] Content not found (Icelandic)';
@@ -1537,7 +1659,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get shareLink => '[IS] Share Link (Icelandic)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider => '[IS] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider =>
+      '[IS] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[IS] Delete Appointment (Icelandic)';
@@ -1557,10 +1680,12 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[IS] Update your business information (Icelandic)';
+  String get updateYourBusinessInformation =>
+      '[IS] Update your business information (Icelandic)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider => '[IS] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider =>
+      '[IS] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[IS] Parent Dashboard (Icelandic)';
@@ -1583,10 +1708,12 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb => '[IS] Studio booking is only available on web (Icelandic)';
+  String get studioBookingIsOnlyAvailableOnWeb =>
+      '[IS] Studio booking is only available on web (Icelandic)';
 
   @override
-  String get errorLoadingBranchesE => '[IS] Error loading branches: \$e (Icelandic)';
+  String get errorLoadingBranchesE =>
+      '[IS] Error loading branches: \$e (Icelandic)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1602,13 +1729,15 @@ class AppLocalizationsIs extends AppLocalizations {
   String get none => '[IS] None (Icelandic)';
 
   @override
-  String get failedToUpdateConsentE => '[IS] Failed to update consent: \$e (Icelandic)';
+  String get failedToUpdateConsentE =>
+      '[IS] Failed to update consent: \$e (Icelandic)';
 
   @override
   String get welcome1 => '[IS] Welcome (Icelandic)';
 
   @override
-  String get failedToCreateSessionE => '[IS] Failed to create session: \$e (Icelandic)';
+  String get failedToCreateSessionE =>
+      '[IS] Failed to create session: \$e (Icelandic)';
 
   @override
   String get inviteContact => '[IS] Invite Contact (Icelandic)';
@@ -1617,7 +1746,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get surveyEditor => '[IS] Survey Editor (Icelandic)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[IS] Failed to start Basic subscription: \$e (Icelandic)';
+  String get failedToStartBasicSubscriptionE =>
+      '[IS] Failed to start Basic subscription: \$e (Icelandic)';
 
   @override
   String get mySchedule => '[IS] My Schedule (Icelandic)';
@@ -1637,10 +1767,12 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[IS] Settings saved successfully! (Icelandic)';
+  String get settingsSavedSuccessfully =>
+      '[IS] Settings saved successfully! (Icelandic)';
 
   @override
-  String get linkCopiedToClipboard => '[IS] Link copied to clipboard! (Icelandic)';
+  String get linkCopiedToClipboard =>
+      '[IS] Link copied to clipboard! (Icelandic)';
 
   @override
   String get accept1 => '[IS] Accept (Icelandic)';
@@ -1657,7 +1789,8 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[IS] Room deleted successfully! (Icelandic)';
+  String get roomDeletedSuccessfully =>
+      '[IS] Room deleted successfully! (Icelandic)';
 
   @override
   String get businessCalendar => '[IS] Business Calendar (Icelandic)';
@@ -1677,7 +1810,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get addNewRoom => '[IS] Add New Room (Icelandic)';
 
   @override
-  String get requireParentApproval => '[IS] Require Parent Approval (Icelandic)';
+  String get requireParentApproval =>
+      '[IS] Require Parent Approval (Icelandic)';
 
   @override
   String get closed => '[IS] Closed (Icelandic)';
@@ -1722,7 +1856,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get cancel1 => '[IS] Cancel (Icelandic)';
 
   @override
-  String get subscriptionActivatedSuccessfully => '[IS] Subscription activated successfully! (Icelandic)';
+  String get subscriptionActivatedSuccessfully =>
+      '[IS] Subscription activated successfully! (Icelandic)';
 
   @override
   String activityLogaction(Object action) {
@@ -1733,7 +1868,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get broadcast => '[IS] Broadcast (Icelandic)';
 
   @override
-  String get noEventsScheduledThisWeek => '[IS] No events scheduled this week (Icelandic)';
+  String get noEventsScheduledThisWeek =>
+      '[IS] No events scheduled this week (Icelandic)';
 
   @override
   String get googleCalendar => '[IS] Google Calendar (Icelandic)';
@@ -1745,7 +1881,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get childDashboard => '[IS] Child Dashboard (Icelandic)';
 
   @override
-  String get failedToUploadBackgroundE => '[IS] Failed to upload background: \$e (Icelandic)';
+  String get failedToUploadBackgroundE =>
+      '[IS] Failed to upload background: \$e (Icelandic)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1764,7 +1901,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get noAppointments => '[IS] No appointments (Icelandic)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[IS] • Unlimited bookings per week (Icelandic)';
+  String get unlimitedBookingsPerWeek =>
+      '[IS] • Unlimited bookings per week (Icelandic)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1772,16 +1910,19 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[IS] Scheduled at: \$scheduledAt (Icelandic)';
+  String get scheduledAtScheduledat =>
+      '[IS] Scheduled at: \$scheduledAt (Icelandic)';
 
   @override
   String get selectStaff => '[IS] Select Staff (Icelandic)';
 
   @override
-  String get subscriptionCancelledSuccessfully => '[IS] Subscription cancelled successfully (Icelandic)';
+  String get subscriptionCancelledSuccessfully =>
+      '[IS] Subscription cancelled successfully (Icelandic)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[IS] Cancel Appointment (Icelandic)';
@@ -1795,7 +1936,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get businessSignup => '[IS] Business Signup (Icelandic)';
 
   @override
-  String get businessCompletionScreenComingSoon => '[IS] Business Completion Screen - Coming Soon (Icelandic)';
+  String get businessCompletionScreenComingSoon =>
+      '[IS] Business Completion Screen - Coming Soon (Icelandic)';
 
   @override
   String get createGame1 => '[IS] Create Game (Icelandic)';
@@ -1806,10 +1948,12 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[IS] Please enter a promo code (Icelandic)';
+  String get pleaseEnterAPromoCode =>
+      '[IS] Please enter a promo code (Icelandic)';
 
   @override
-  String get errorLoadingAvailabilityE => '[IS] Error loading availability: \$e (Icelandic)';
+  String get errorLoadingAvailabilityE =>
+      '[IS] Error loading availability: \$e (Icelandic)';
 
   @override
   String get parentalControls => '[IS] Parental Controls (Icelandic)';
@@ -1818,13 +1962,15 @@ class AppLocalizationsIs extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[IS] Child linked successfully! (Icelandic)';
+  String get childLinkedSuccessfully =>
+      '[IS] Child linked successfully! (Icelandic)';
 
   @override
   String get create => '[IS] Create (Icelandic)';
 
   @override
-  String get noExternalMeetingsFound => '[IS] No external meetings found. (Icelandic)';
+  String get noExternalMeetingsFound =>
+      '[IS] No external meetings found. (Icelandic)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1832,13 +1978,15 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[IS] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[IS] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[IS] Scheduler Screen (Icelandic)';
 
   @override
-  String get clientUpdatedSuccessfully => '[IS] Client updated successfully! (Icelandic)';
+  String get clientUpdatedSuccessfully =>
+      '[IS] Client updated successfully! (Icelandic)';
 
   @override
   String get surveyResponses => '[IS] Survey Responses (Icelandic)';
@@ -1864,10 +2012,12 @@ class AppLocalizationsIs extends AppLocalizations {
   String get errorLoadingEvents => '[IS] Error loading events (Icelandic)';
 
   @override
-  String get errorLoadingOrganizations => '[IS] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[IS] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[IS] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[IS] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[IS] Success (Icelandic)';
@@ -1886,10 +2036,12 @@ class AppLocalizationsIs extends AppLocalizations {
   String get readWrite => '[IS] Read & Write (Icelandic)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan => '[IS] Redirecting to Stripe checkout for Basic plan... (Icelandic)';
+  String get redirectingToStripeCheckoutForBasicPlan =>
+      '[IS] Redirecting to Stripe checkout for Basic plan... (Icelandic)';
 
   @override
-  String get errorSavingConfigurationE => '[IS] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[IS] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[IS] Pick Date (Icelandic)';
@@ -1925,10 +2077,12 @@ class AppLocalizationsIs extends AppLocalizations {
   String get businessLogin => '[IS] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[IS] Invoice created successfully! (Icelandic)';
+  String get invoiceCreatedSuccessfully =>
+      '[IS] Invoice created successfully! (Icelandic)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[IS] No time series data available (Icelandic)';
+  String get noTimeSeriesDataAvailable =>
+      '[IS] No time series data available (Icelandic)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1941,7 +2095,8 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[IS] Failed to send privacy request: \$e (Icelandic)';
+  String get failedToSendPrivacyRequestE =>
+      '[IS] Failed to send privacy request: \$e (Icelandic)';
 
   @override
   String get chooseYourPlan => '[IS] Choose Your Plan (Icelandic)';
@@ -1956,13 +2111,15 @@ class AppLocalizationsIs extends AppLocalizations {
   String get eventCreated => '[IS] Event created (Icelandic)';
 
   @override
-  String get subscribeToBasic499mo => '[IS] Subscribe to Basic (€4.99/mo) (Icelandic)';
+  String get subscribeToBasic499mo =>
+      '[IS] Subscribe to Basic (€4.99/mo) (Icelandic)';
 
   @override
   String get completion => '[IS] Completion (Icelandic)';
 
   @override
-  String get supportTicketSubmitted => '[IS] Support ticket submitted (Icelandic)';
+  String get supportTicketSubmitted =>
+      '[IS] Support ticket submitted (Icelandic)';
 
   @override
   String get monetizationSettings => '[IS] Monetization Settings (Icelandic)';
@@ -1977,10 +2134,12 @@ class AppLocalizationsIs extends AppLocalizations {
   String get deleteSurvey => '[IS] Delete Survey (Icelandic)';
 
   @override
-  String get gameApprovedSuccessfully => '[IS] Game approved successfully! (Icelandic)';
+  String get gameApprovedSuccessfully =>
+      '[IS] Game approved successfully! (Icelandic)';
 
   @override
-  String get errorLoadingPermissionsError => '[IS] Error loading permissions: \$error (Icelandic)';
+  String get errorLoadingPermissionsError =>
+      '[IS] Error loading permissions: \$error (Icelandic)';
 
   @override
   String get referrals => '[IS] Referrals (Icelandic)';
@@ -2022,7 +2181,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get organizations => '[IS] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[IS] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[IS] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[IS] Create New Game (Icelandic)';
@@ -2031,16 +2191,19 @@ class AppLocalizationsIs extends AppLocalizations {
   String get next1 => '[IS] Next (Icelandic)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[IS] Background uploaded successfully! (Icelandic)';
+  String get backgroundUploadedSuccessfully =>
+      '[IS] Background uploaded successfully! (Icelandic)';
 
   @override
-  String get noAppointmentRequestsFound => '[IS] No appointment requests found. (Icelandic)';
+  String get noAppointmentRequestsFound =>
+      '[IS] No appointment requests found. (Icelandic)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => '[IS] Restrict mature content (Icelandic)';
+  String get restrictMatureContent =>
+      '[IS] Restrict mature content (Icelandic)';
 
   @override
   String get ambassadors => '[IS] Ambassadors (Icelandic)';
@@ -2061,16 +2224,19 @@ class AppLocalizationsIs extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => '[IS] Failed to create game: \$e (Icelandic)';
+  String get failedToCreateGameE =>
+      '[IS] Failed to create game: \$e (Icelandic)';
 
   @override
   String get noChartDataAvailable => '[IS] No chart data available (Icelandic)';
 
   @override
-  String get phonebasedBookingSystem => '[IS] • Phone-based booking system (Icelandic)';
+  String get phonebasedBookingSystem =>
+      '[IS] • Phone-based booking system (Icelandic)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2079,7 +2245,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get invoices => '[IS] Invoices (Icelandic)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2106,10 +2273,12 @@ class AppLocalizationsIs extends AppLocalizations {
   String get iDoNotConsent => '[IS] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient => '[IS] No clients found. Add your first client! (Icelandic)';
+  String get noClientsFoundAddYourFirstClient =>
+      '[IS] No clients found. Add your first client! (Icelandic)';
 
   @override
-  String get settingsDialogWillBeImplementedHere => '[IS] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere =>
+      '[IS] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[IS] Group: \$groupId';
@@ -2121,7 +2290,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get forward => '[IS] Forward (Icelandic)';
 
   @override
-  String get roomAddedSuccessfully => '[IS] Room added successfully! (Icelandic)';
+  String get roomAddedSuccessfully =>
+      '[IS] Room added successfully! (Icelandic)';
 
   @override
   String get option => '[IS] • \$option (Icelandic)';
@@ -2132,7 +2302,8 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[IS] • CRM dashboard with analytics (Icelandic)';
+  String get crmDashboardWithAnalytics =>
+      '[IS] • CRM dashboard with analytics (Icelandic)';
 
   @override
   String get contentLibrary1 => '[IS] Content Library (Icelandic)';
@@ -2141,28 +2312,34 @@ class AppLocalizationsIs extends AppLocalizations {
   String get reply => '[IS] Reply (Icelandic)';
 
   @override
-  String get subscriptionManagement => '[IS] Subscription Management (Icelandic)';
+  String get subscriptionManagement =>
+      '[IS] Subscription Management (Icelandic)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere => '[IS] Monetization settings will be implemented here (Icelandic)';
+  String get monetizationSettingsWillBeImplementedHere =>
+      '[IS] Monetization settings will be implemented here (Icelandic)';
 
   @override
-  String get failedToApplyPromoCodeE => '[IS] Failed to apply promo code: \$e (Icelandic)';
+  String get failedToApplyPromoCodeE =>
+      '[IS] Failed to apply promo code: \$e (Icelandic)';
 
   @override
   String get editProvider => '[IS] Edit Provider';
 
   @override
-  String get localizationContribution => '[IS] Localization Contribution (Icelandic)';
+  String get localizationContribution =>
+      '[IS] Localization Contribution (Icelandic)';
 
   @override
   String get parentalConsent => '[IS] Parental Consent (Icelandic)';
 
   @override
-  String get businessSignupScreenComingSoon => '[IS] Business Signup Screen - Coming Soon (Icelandic)';
+  String get businessSignupScreenComingSoon =>
+      '[IS] Business Signup Screen - Coming Soon (Icelandic)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment => '[IS] Are you sure you want to delete this appointment? (Icelandic)';
+  String get areYouSureYouWantToDeleteThisAppointment =>
+      '[IS] Are you sure you want to delete this appointment? (Icelandic)';
 
   @override
   String get syncAppointment => '[IS] Sync Appointment (Icelandic)';
@@ -2174,13 +2351,15 @@ class AppLocalizationsIs extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[IS] Business Setup Screen - Coming Soon (Icelandic)';
+  String get businessSetupScreenComingSoon =>
+      '[IS] Business Setup Screen - Coming Soon (Icelandic)';
 
   @override
   String get edit1 => '[IS] Edit (Icelandic)';
 
   @override
-  String get noEventsScheduledThisMonth => '[IS] No events scheduled this month (Icelandic)';
+  String get noEventsScheduledThisMonth =>
+      '[IS] No events scheduled this month (Icelandic)';
 
   @override
   String get businessDashboard => '[IS] Business Dashboard (Icelandic)';
@@ -2194,10 +2373,12 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[IS] Manage Staff Availability (Icelandic)';
+  String get manageStaffAvailability =>
+      '[IS] Manage Staff Availability (Icelandic)';
 
   @override
-  String get noMissingTranslations => '[IS] No missing translations (Icelandic)';
+  String get noMissingTranslations =>
+      '[IS] No missing translations (Icelandic)';
 
   @override
   String get skip => '[IS] Skip (Icelandic)';
@@ -2211,7 +2392,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get noUsers => '[IS] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[IS] Error loading referral code (Icelandic)';
+  String get errorLoadingReferralCode =>
+      '[IS] Error loading referral code (Icelandic)';
 
   @override
   String get allCountries => '[IS] All Countries (Icelandic)';
@@ -2220,13 +2402,15 @@ class AppLocalizationsIs extends AppLocalizations {
   String get deleteGame => '[IS] Delete Game (Icelandic)';
 
   @override
-  String get staffManagementTools => '[IS] • Staff management tools (Icelandic)';
+  String get staffManagementTools =>
+      '[IS] • Staff management tools (Icelandic)';
 
   @override
   String get deleteMessage => '[IS] Delete Message (Icelandic)';
 
   @override
-  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[IS] changeRole (TRANSLATE)';
@@ -2237,7 +2421,8 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[IS] Opening customer portal... (Icelandic)';
+  String get openingCustomerPortal =>
+      '[IS] Opening customer portal... (Icelandic)';
 
   @override
   String get signOut => '[IS] Sign Out (Icelandic)';
@@ -2248,7 +2433,8 @@ class AppLocalizationsIs extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[IS] Upgrade to Business (Icelandic)';
@@ -2274,7 +2460,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[IS] View Responses (Icelandic)';
@@ -2303,7 +2490,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2321,7 +2509,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2330,7 +2519,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2378,7 +2568,8 @@ class AppLocalizationsIs extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2426,10 +2617,12 @@ class AppLocalizationsIs extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle => '[IS] Congratulations! You\'re now an Ambassador! (Icelandic)';
+  String get ambassadorPromotionTitle =>
+      '[IS] Congratulations! You\'re now an Ambassador! (Icelandic)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2440,7 +2633,11 @@ class AppLocalizationsIs extends AppLocalizations {
   String get tierUpgradeTitle => '[IS] Tier Upgrade! 🎉 (Icelandic)';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[IS] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Icelandic)';
   }
 
@@ -2448,20 +2645,29 @@ class AppLocalizationsIs extends AppLocalizations {
   String get monthlyReminderTitle => '[IS] Monthly Goal Reminder (Icelandic)';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[IS] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Icelandic)';
   }
 
   @override
-  String get performanceWarningTitle => '[IS] Ambassador Performance Alert (Icelandic)';
+  String get performanceWarningTitle =>
+      '[IS] Ambassador Performance Alert (Icelandic)';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[IS] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Icelandic)';
   }
 
   @override
-  String get ambassadorDemotionTitle => '[IS] Ambassador Status Update (Icelandic)';
+  String get ambassadorDemotionTitle =>
+      '[IS] Ambassador Status Update (Icelandic)';
 
   @override
   String ambassadorDemotionBody(String reason) {
