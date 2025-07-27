@@ -4,6 +4,8 @@ import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+final messagingServiceProvider = Provider<MessagingService>((ref) => MessagingService());
+
 final userChatsProvider = StreamProvider<List<Chat>>((ref) {
   final service = ref.read(messagingServiceProvider);
   return service.getUserChats();

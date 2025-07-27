@@ -13,6 +13,18 @@ final userTypeProvider = StateProvider<UserType?>((ref) => null);
 
 final onboardingDataProvider = StateProvider<Map<String, dynamic>>((ref) => {});
 
+class OnboardingPageData {
+  final String title;
+  final String description;
+  final IconData icon;
+  
+  OnboardingPageData({
+    required this.title,
+    required this.description,
+    required this.icon,
+  });
+}
+
 class EnhancedOnboardingScreen extends ConsumerStatefulWidget {
   const EnhancedOnboardingScreen({super.key});
 
@@ -29,6 +41,10 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
   final _emailController = TextEditingController();
   final _phoneController = TextEditingController();
   
+  // State variables
+  int _currentPage = 0;
+  late List<OnboardingPageData> _onboardingPages;
+  
   // Selected values
   String? _selectedLanguage;
   String? _selectedCountry;
@@ -39,6 +55,27 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
   void initState() {
     super.initState();
     _detectLanguage();
+    _initializeOnboardingPages();
+  }
+  
+  void _initializeOnboardingPages() {
+    _onboardingPages = [
+      OnboardingPageData(
+        title: 'Welcome to App-Oint',
+        description: 'Your personal appointment management solution',
+        icon: Icons.calendar_today,
+      ),
+      OnboardingPageData(
+        title: 'Schedule & Manage',
+        description: 'Easily schedule and manage all your appointments',
+        icon: Icons.schedule,
+      ),
+      OnboardingPageData(
+        title: 'Stay Connected',
+        description: 'Get notifications and stay connected with your network',
+        icon: Icons.notifications,
+      ),
+    ];
   }
 
   @override
