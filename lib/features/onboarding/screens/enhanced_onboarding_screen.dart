@@ -1,5 +1,6 @@
 import 'package:appoint/features/onboarding/services/onboarding_service.dart';
 import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/models/user_type.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/widgets/app_logo.dart';
@@ -814,8 +815,4 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
     return languages[code] ?? 'Not selected';
   }
 
-enum UserType {
-  personal,
-  business,
-  family,
-}
+
