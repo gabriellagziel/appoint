@@ -1,5 +1,5 @@
-import 'package:appoint/features/messaging/models/message.dart';
 import 'package:appoint/features/messaging/models/chat.dart';
+import 'package:appoint/features/messaging/models/message.dart';
 import 'package:appoint/features/messaging/services/messaging_service.dart';
 import 'package:appoint/features/messaging/widgets/message_bubble.dart';
 import 'package:appoint/features/messaging/widgets/attachment_picker.dart';

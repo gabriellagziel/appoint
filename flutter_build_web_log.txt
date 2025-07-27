@@ -24,144 +24,15 @@ Consider addressing these issues to enable wasm builds. See docs for more info: 
 
 Use --no-wasm-dry-run to disable these warnings.
 Target dart2js failed: ProcessException: Process exited abnormally with exit code 1:
-lib/features/family/screens/family_dashboard_screen.dart:518:1:
-Error: Expected a declaration, but got '}'.
-}
-^
-lib/features/studio_business/screens/business_connect_screen.dart:146:1:
-Error: Expected a declaration, but got '}'.
-}
-^
-lib/features/studio_business/screens/clients_screen.dart:266:7:
-Error: Expected a class member, but got 'finally'.
-    } finally {
-      ^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:266:15:
-Error: Expected an identifier, but got '{'.
-    } finally {
-              ^
-lib/features/studio_business/screens/clients_screen.dart:266:15:
-Error: A method declaration needs an explicit list of parameters.
-    } finally {
-              ^
-lib/features/studio_business/screens/clients_screen.dart:306:7:
-Error: 'finally' can't be used as an identifier because it's a keyword.
-    } finally {
-      ^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:306:7:
-Error: A function declaration needs an explicit list of parameters.
-    } finally {
-      ^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:311:3:
-Error: Expected a declaration, but got '}'.
-  }
-  ^
-lib/features/studio_business/screens/clients_screen.dart:331:3:
-Error: Expected a declaration, but got '}'.
-  }
-  ^
-lib/features/studio_business/screens/clients_screen.dart:332:1:
-Error: Expected a declaration, but got '}'.
-}
-^
-lib/features/studio_business/screens/external_meetings_screen.dart:351:1:
-Error: Expected a declaration, but got '}'.
-}
-^
-lib/features/studio_business/screens/invoices_screen.dart:226:7:
-Error: Expected a class member, but got 'finally'.
-    } finally {
-      ^^^^^^^
-lib/features/studio_business/screens/invoices_screen.dart:226:15:
-Error: Expected an identifier, but got '{'.
-    } finally {
-              ^
-lib/features/studio_business/screens/invoices_screen.dart:226:15:
-Error: A method declaration needs an explicit list of parameters.
-    } finally {
-              ^
-lib/features/studio_business/screens/invoices_screen.dart:285:1:
-Error: Expected a declaration, but got '}'.
-}
-^
-lib/features/studio_business/screens/phone_booking_screen.dart:222:7:
-Error: Expected a class member, but got 'finally'.
-    } finally {
-      ^^^^^^^
-lib/features/studio_business/screens/phone_booking_screen.dart:222:15:
-Error: Expected an identifier, but got '{'.
-    } finally {
-              ^
-lib/features/studio_business/screens/phone_booking_screen.dart:222:15:
-Error: A method declaration needs an explicit list of parameters.
-    } finally {
-              ^
-lib/features/studio_business/screens/phone_booking_screen.dart:330:1:
-Error: Expected a declaration, but got '}'.
-}
-^
-lib/features/studio_business/screens/rooms_screen.dart:294:7:
-Error: Expected a class member, but got 'finally'.
-    } finally {
-      ^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:294:15:
-Error: Expected an identifier, but got '{'.
-    } finally {
-              ^
-lib/features/studio_business/screens/rooms_screen.dart:294:15:
-Error: A method declaration needs an explicit list of parameters.
-    } finally {
-              ^
-lib/features/studio_business/screens/rooms_screen.dart:329:7:
-Error: 'finally' can't be used as an identifier because it's a keyword.
-    } finally {
-      ^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:329:7:
-Error: A function declaration needs an explicit list of parameters.
-    } finally {
-      ^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:334:3:
-Error: Expected a declaration, but got '}'.
-  }
-  ^
-lib/features/studio_business/screens/rooms_screen.dart:357:3:
-Error: Expected a declaration, but got '}'.
-  }
-  ^
-lib/features/studio_business/screens/rooms_screen.dart:374:3:
-Error: Expected a declaration, but got '}'.
-  }
-  ^
-lib/features/studio_business/screens/rooms_screen.dart:375:1:
-Error: Expected a declaration, but got '}'.
-}
-^
-lib/features/studio_business/screens/settings_screen.dart:208:1:
-Error: Expected a declaration, but got '}'.
-}
-^
-lib/features/subscriptions/screens/subscription_screen.dart:468:1:
-Error: Expected a declaration, but got '}'.
-} 
-^
-Error: Couldn't resolve the package 'flutter_gen' in 'package:flutter_gen/gen_l10n/app_localizations.dart'.
-lib/features/messaging/screens/chat_screen.dart:2:8:
-Error: Error when reading 'lib/features/messaging/models/chat.dart': Error reading 'lib/features/messaging/models/chat.dart'  (No such file or directory)
-import 'package:appoint/features/messaging/models/chat.dart';
-       ^
-lib/features/messaging/screens/chat_screen.dart:5:8:
-Error: Error when reading 'lib/features/messaging/widgets/attachment_picker.dart': Error reading 'lib/features/messaging/widgets/attachment_picker.dart'  (No such file or directory)
-import 'package:appoint/features/messaging/widgets/attachment_picker.dart';
-       ^
-lib/widgets/booking_confirmation_sheet.dart:3:8:
-Error: Not found: 'package:flutter_gen/gen_l10n/app_localizations.dart'
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-       ^
 Error: Couldn't resolve the package 'uni_links' in 'package:uni_links/uni_links.dart'.
 lib/services/custom_deep_link_service.dart:7:8:
 Error: Not found: 'package:uni_links/uni_links.dart'
 import 'package:uni_links/uni_links.dart';
        ^
+lib/features/messaging/screens/chat_screen.dart:2:1:
+Error: 'Chat' is imported from both 'package:appoint/features/messaging/models/chat.dart' and 'package:appoint/features/messaging/models/message.dart'.
+import 'package:appoint/features/messaging/models/chat.dart';
+^^^^
 lib/features/studio_business/screens/settings_screen.dart:14:7:
 Error: The non-abstract class '_SettingsScreenState' is missing implementations for these members:
  - State.build
@@ -183,6 +54,10 @@ lib/features/messaging/screens/messages_list_screen.dart:8:28:
 Error: Undefined name 'messagingServiceProvider'.
   final service = ref.read(messagingServiceProvider);
                            ^^^^^^^^^^^^^^^^^^^^^^^^
+lib/features/messaging/screens/chat_screen.dart:31:14:
+Error: 'Chat' is imported from both 'package:appoint/features/messaging/models/chat.dart' and 'package:appoint/features/messaging/models/message.dart'.
+      return Chat.fromJson({...doc.data()!, 'id': doc.id});
+             ^^^^
 lib/features/profile/enhanced_profile_screen.dart:22:18:
 Error: Cannot invoke a non-'const' constructor where a const expression is expected.
     memberSince: DateTime(2023, 1, 15),
@@ -603,203 +478,59 @@ lib/features/studio_business/screens/business_calendar_screen.dart:389:31:
 Error: Non-nullable variable 'childAspectRatio' must be assigned before it can be used.
             childAspectRatio: childAspectRatio,
                               ^^^^^^^^^^^^^^^^
-lib/features/studio_business/screens/business_connect_screen.dart:97:10:
+lib/features/studio_business/screens/business_connect_screen.dart:91:10:
 Error: Undefined name '_formKey'.
     if (!_formKey.currentState!.validate()) {
          ^^^^^^^^
-lib/features/studio_business/screens/business_connect_screen.dart:101:20:
+lib/features/studio_business/screens/business_connect_screen.dart:94:20:
 Error: Setter not found: '_isConnecting'.
     setState(() => _isConnecting = true);
                    ^^^^^^^^^^^^^
-lib/features/studio_business/screens/business_connect_screen.dart:101:5:
+lib/features/studio_business/screens/business_connect_screen.dart:94:5:
 Error: Method not found: 'setState'.
     setState(() => _isConnecting = true);
     ^^^^^^^^
-lib/features/studio_business/screens/business_connect_screen.dart:107:27:
+lib/features/studio_business/screens/business_connect_screen.dart:98:27:
 Error: Undefined name '_codeController'.
       final upgradeCode = _codeController.text.trim();
                           ^^^^^^^^^^^^^^^
+lib/features/studio_business/screens/business_connect_screen.dart:112:11:
+Error: Undefined name 'mounted'.
+      if (mounted) {
+          ^^^^^^^
+lib/features/studio_business/screens/business_connect_screen.dart:113:30:
+Error: Undefined name 'context'.
+        ScaffoldMessenger.of(context).showSnackBar(
+                             ^^^^^^^
+lib/features/studio_business/screens/business_connect_screen.dart:117:40:
+Error: Undefined name 'context'.
+        Navigator.pushReplacementNamed(context, '/business/dashboard');
+                                       ^^^^^^^
+lib/features/studio_business/screens/business_connect_screen.dart:120:28:
+Error: Undefined name 'context'.
+      ScaffoldMessenger.of(context).showSnackBar(
+                           ^^^^^^^
 lib/features/studio_business/screens/business_connect_screen.dart:124:11:
 Error: Undefined name 'mounted'.
       if (mounted) {
           ^^^^^^^
-lib/features/studio_business/screens/business_connect_screen.dart:125:30:
-Error: Undefined name 'context'.
-        ScaffoldMessenger.of(context).showSnackBar(
-                             ^^^^^^^
-lib/features/studio_business/screens/business_connect_screen.dart:129:40:
-Error: Undefined name 'context'.
-        Navigator.pushReplacementNamed(context, '/business/dashboard');
-                                       ^^^^^^^
-lib/features/studio_business/screens/business_connect_screen.dart:132:28:
-Error: Undefined name 'context'.
-      ScaffoldMessenger.of(context).showSnackBar(
-                           ^^^^^^^
-lib/features/studio_business/screens/business_connect_screen.dart:136:11:
-Error: Undefined name 'mounted'.
-      if (mounted) {
-          ^^^^^^^
-lib/features/studio_business/screens/business_connect_screen.dart:137:24:
+lib/features/studio_business/screens/business_connect_screen.dart:125:24:
 Error: Setter not found: '_isConnecting'.
         setState(() => _isConnecting = false);
                        ^^^^^^^^^^^^^
-lib/features/studio_business/screens/business_connect_screen.dart:137:9:
+lib/features/studio_business/screens/business_connect_screen.dart:125:9:
 Error: Method not found: 'setState'.
         setState(() => _isConnecting = false);
         ^^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:274:10:
-Error: Undefined name '_formKey'.
-    if (!_formKey.currentState!.validate()) {
-         ^^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:278:20:
-Error: Setter not found: '_isAdding'.
-    setState(() => _isAdding = true);
-                   ^^^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:278:5:
-Error: Method not found: 'setState'.
-    setState(() => _isAdding = true);
-    ^^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:285:17:
-Error: Undefined name '_nameController'.
-        'name': _nameController.text.trim(),
-                ^^^^^^^^^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:286:18:
-Error: Undefined name '_emailController'.
-        'email': _emailController.text.trim().isEmpty
-                 ^^^^^^^^^^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:288:15:
-Error: Undefined name '_emailController'.
-            : _emailController.text.trim(),
-              ^^^^^^^^^^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:289:18:
-Error: Undefined name '_phoneController'.
-        'phone': _phoneController.text.trim().isEmpty
-                 ^^^^^^^^^^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:291:15:
-Error: Undefined name '_phoneController'.
-            : _phoneController.text.trim(),
-              ^^^^^^^^^^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:295:11:
+lib/features/studio_business/screens/rooms_screen.dart:361:11:
 Error: Undefined name 'mounted'.
       if (mounted) {
           ^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:296:23:
-Error: Undefined name 'context'.
-        Navigator.pop(context);
-                      ^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:297:30:
+lib/features/studio_business/screens/rooms_screen.dart:362:30:
 Error: Undefined name 'context'.
         ScaffoldMessenger.of(context).showSnackBar(
                              ^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:302:30:
-Error: Undefined name 'context'.
-        ScaffoldMessenger.of(context).showSnackBar(
-                             ^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:307:11:
-Error: Undefined name 'mounted'.
-      if (mounted) {
-          ^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:308:24:
-Error: Setter not found: '_isAdding'.
-        setState(() => _isAdding = false);
-                       ^^^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:308:9:
-Error: Method not found: 'setState'.
-        setState(() => _isAdding = false);
-        ^^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:320:11:
-Error: Undefined name 'mounted'.
-      if (mounted) {
-          ^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:321:30:
-Error: Undefined name 'context'.
-        ScaffoldMessenger.of(context).showSnackBar(
-                             ^^^^^^^
-lib/features/studio_business/screens/clients_screen.dart:326:30:
-Error: Undefined name 'context'.
-        ScaffoldMessenger.of(context).showSnackBar(
-                             ^^^^^^^
-lib/features/studio_business/screens/phone_booking_screen.dart:314:16:
-Error: Undefined name 'context'.
-      context: context,
-               ^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:302:10:
-Error: Undefined name '_formKey'.
-    if (!_formKey.currentState!.validate()) {
-         ^^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:306:20:
-Error: Setter not found: '_isAdding'.
-    setState(() => _isAdding = true);
-                   ^^^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:306:5:
-Error: Method not found: 'setState'.
-    setState(() => _isAdding = true);
-    ^^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:310:17:
-Error: Undefined name '_nameController'.
-        'name': _nameController.text.trim(),
-                ^^^^^^^^^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:311:31:
-Error: Undefined name '_capacityController'.
-        'capacity': int.parse(_capacityController.text.trim()),
-                              ^^^^^^^^^^^^^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:312:24:
-Error: Undefined name '_descriptionController'.
-        'description': _descriptionController.text.trim().isEmpty
-                       ^^^^^^^^^^^^^^^^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:314:15:
-Error: Undefined name '_descriptionController'.
-            : _descriptionController.text.trim(),
-              ^^^^^^^^^^^^^^^^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:318:11:
-Error: Undefined name 'mounted'.
-      if (mounted) {
-          ^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:319:23:
-Error: Undefined name 'context'.
-        Navigator.pop(context);
-                      ^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:320:30:
-Error: Undefined name 'context'.
-        ScaffoldMessenger.of(context).showSnackBar(
-                             ^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:325:30:
-Error: Undefined name 'context'.
-        ScaffoldMessenger.of(context).showSnackBar(
-                             ^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:330:11:
-Error: Undefined name 'mounted'.
-      if (mounted) {
-          ^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:331:24:
-Error: Setter not found: '_isAdding'.
-        setState(() => _isAdding = false);
-                       ^^^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:331:9:
-Error: Method not found: 'setState'.
-        setState(() => _isAdding = false);
-        ^^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:344:11:
-Error: Undefined name 'mounted'.
-      if (mounted) {
-          ^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:345:30:
-Error: Undefined name 'context'.
-        ScaffoldMessenger.of(context).showSnackBar(
-                             ^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:352:30:
-Error: Undefined name 'context'.
-        ScaffoldMessenger.of(context).showSnackBar(
-                             ^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:363:11:
-Error: Undefined name 'mounted'.
-      if (mounted) {
-          ^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:364:30:
-Error: Undefined name 'context'.
-        ScaffoldMessenger.of(context).showSnackBar(
-                             ^^^^^^^
-lib/features/studio_business/screens/rooms_screen.dart:369:30:
+lib/features/studio_business/screens/rooms_screen.dart:367:30:
 Error: Undefined name 'context'.
         ScaffoldMessenger.of(context).showSnackBar(
                              ^^^^^^^
@@ -973,11 +704,6 @@ Error: The getter 'stackTrace' isn't defined for the type 'AmbassadorDataNotifie
  - 'AmbassadorDataNotifier' is from 'package:appoint/providers/ambassador_data_provider.dart' ('lib/providers/ambassador_data_provider.dart').
       state = AsyncValue.error(e, stackTrace);
                                   ^^^^^^^^^^
-lib/widgets/booking_confirmation_sheet.dart:70:18:
-Error: The getter 'AppLocalizations' isn't defined for the type '_BookingConfirmationSheetState'.
- - '_BookingConfirmationSheetState' is from 'package:appoint/widgets/booking_confirmation_sheet.dart' ('lib/widgets/booking_confirmation_sheet.dart').
-    final l10n = AppLocalizations.of(context)!;
-                 ^^^^^^^^^^^^^^^^
 lib/services/admin_service.dart:185:37:
 Error: The argument type 'Object' can't be assigned to the parameter type 'Map<String, dynamic>'.
  - 'Object' is from 'dart:core'.
@@ -1038,5 +764,5 @@ Error: Compilation failed.
 #19     main (package:flutter_tools/executable.dart:101:3)
 <asynchronous suspension>
 
-Compiling lib/main.dart for the Web...                             16.1s
+Compiling lib/main.dart for the Web...                             15.7s
 Error: Failed to compile application for the Web.
