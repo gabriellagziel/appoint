@@ -1,6 +1,7 @@
 import 'package:appoint/features/messaging/models/chat.dart';
 import 'package:appoint/features/messaging/models/message.dart';
 import 'package:appoint/features/messaging/services/messaging_service.dart';
+import 'package:appoint/providers/messaging_provider.dart';
 import 'package:appoint/features/messaging/widgets/message_bubble.dart';
 import 'package:appoint/features/messaging/widgets/attachment_picker.dart';
 import 'package:appoint/l10n/app_localizations.dart';
@@ -11,7 +12,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:io';
 
-final messagingServiceProvider = Provider<MessagingService>((ref) => MessagingService());
+// Moved to lib/providers/messaging_provider.dart
 
 final messagesProvider = StreamProvider.family<List<Message>, String>(
   (ref, chatId) {
