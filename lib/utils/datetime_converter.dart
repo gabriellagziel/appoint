@@ -1,4 +1,4 @@
-import 'dart:core';
+import 'dart:core' show DateTime;
 import 'package:json_annotation/json_annotation.dart';
 
 class DateTimeConverter implements JsonConverter<DateTime, String> {
