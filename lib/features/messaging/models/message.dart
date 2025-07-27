@@ -65,8 +65,8 @@ class Message {
 }
 
 @JsonSerializable()
-class Chat {
-  const Chat({
+class ChatRoom {
+  const ChatRoom({
     required this.id,
     required this.participants,
     required this.type,
@@ -80,7 +80,7 @@ class Chat {
     this.isMuted = false,
   });
 
-  factory Chat.fromJson(Map<String, dynamic> json) => _$ChatFromJson(json);
+  factory ChatRoom.fromJson(Map<String, dynamic> json) => _$ChatRoomFromJson(json);
 
   final String id;
   final List<String> participants;
@@ -94,9 +94,9 @@ class Chat {
   final bool isArchived;
   final bool isMuted;
 
-  Map<String, dynamic> toJson() => _$ChatToJson(this);
+  Map<String, dynamic> toJson() => _$ChatRoomToJson(this);
 
-  Chat copyWith({
+  ChatRoom copyWith({
     String? id,
     List<String>? participants,
     ChatType? type,
@@ -109,7 +109,7 @@ class Chat {
     bool? isArchived,
     bool? isMuted,
   }) {
-    return Chat(
+    return ChatRoom(
       id: id ?? this.id,
       participants: participants ?? this.participants,
       type: type ?? this.type,
