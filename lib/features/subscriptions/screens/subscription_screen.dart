@@ -457,12 +457,10 @@ class SubscriptionScreen extends ConsumerWidget {
         );
       }
     }
-  }
 
   void _showBillingHistory(BuildContext context, WidgetRef ref) {
     // TODO: Implement billing history screen
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('Billing history coming soon!')),
     );
-  }
-}
+}  }
