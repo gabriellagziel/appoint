@@ -1,3 +1,5 @@
+import 'dart:core' show DateTime;
+
 import 'package:appoint/utils/datetime_converter.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
