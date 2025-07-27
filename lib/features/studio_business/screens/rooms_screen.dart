@@ -368,6 +368,5 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
           SnackBar(content: Text('Error: $e')),
         );
       }
-    }
   }
 }
