@@ -699,7 +699,6 @@ class _UploadBackgroundDialogState
             backgroundColor: Colors.red,
           ),
         );
-      }
     } finally {
       if (mounted) {
         setState(() {

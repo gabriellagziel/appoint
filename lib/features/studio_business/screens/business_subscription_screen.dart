@@ -50,7 +50,6 @@ class _BusinessSubscriptionScreenState
             backgroundColor: Colors.red,
           ),
         );
-      }
     } finally {
       if (mounted) {
         setState(() => _isLoading = false);
