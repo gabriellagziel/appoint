@@ -42,6 +42,7 @@ class _BusinessSubscriptionScreenState
             backgroundColor: Colors.blue,
           ),
         );
+      }
     } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
