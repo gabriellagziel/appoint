@@ -37,9 +37,9 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         final data = doc.data()!;
         setState(() {
           _notificationsEnabled = data['notificationsEnabled'] ?? true;
-          var _autoConfirmBookings = data['autoConfirmBookings'] ?? false;
-          var _emailNotifications = data['emailNotifications'] ?? true;
-          var _smsNotifications = data['smsNotifications'] ?? false;
+          _autoConfirmBookings = data['autoConfirmBookings'] ?? false;
+          _emailNotifications = data['emailNotifications'] ?? true;
+          _smsNotifications = data['smsNotifications'] ?? false;
         });
       }
     } catch (e) {
@@ -69,6 +69,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         );
       }
     } catch (e) {
+      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error saving settings: $e')),
         );
