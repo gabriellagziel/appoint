@@ -348,7 +348,6 @@ class ExternalMeetingsScreen extends ConsumerWidget {
       }
     }
   }
-}
 
 class MeetingDetailsView extends StatelessWidget {
   final Map<String, dynamic> meeting;
