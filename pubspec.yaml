@@ -54,6 +54,7 @@ dependencies:
   connectivity_plus: ^6.1.4
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  flutter_gen: ^5.4.0
   table_calendar: ^3.0.9
   webview_flutter: ^4.9.0
   uuid: ^4.1.0
