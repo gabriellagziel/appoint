@@ -691,7 +691,6 @@ class _UploadBackgroundDialogState
         Navigator.pop(context);
         // Refresh the background list
         ref.invalidate(allBackgroundsProvider);
-      }
     } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
