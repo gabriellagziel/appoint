@@ -1,3 +1,5 @@
+import 'dart:core' show DateTime, Duration;
+
 import 'package:appoint/features/selection/providers/selection_provider.dart';
 import 'package:appoint/providers/branch_provider.dart';
 import 'package:appoint/services/location_service.dart';

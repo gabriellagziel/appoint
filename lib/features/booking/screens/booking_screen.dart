@@ -1,3 +1,5 @@
+import 'dart:core' show DateTime, Duration;
+
 import 'package:appoint/features/booking/booking_helper.dart';
 import 'package:appoint/features/booking/services/booking_service.dart';
 import 'package:appoint/features/selection/providers/selection_provider.dart';
