@@ -74,7 +74,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get search => '[FR] Rechercher';
 
   @override
-  String get cancelInviteConfirmation => '[FR] Confirmer l\'annulation de l\'invitation ?';
+  String get cancelInviteConfirmation =>
+      '[FR] Confirmer l\'annulation de l\'invitation ?';
 
   @override
   String created(String created, Object date) {
@@ -88,7 +89,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get playtimeLiveScheduled => '[FR] Jeu en direct programmé';
 
   @override
-  String get revokeAccessConfirmation => '[FR] Confirmer la révocation de l\'accès ?';
+  String get revokeAccessConfirmation =>
+      '[FR] Confirmer la révocation de l\'accès ?';
 
   @override
   String get download => '[FR] Télécharger';
@@ -200,7 +202,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get cut => '[FR] Couper';
 
   @override
-  String get inviteCancelledSuccessfully => '[FR] Invitation annulée avec succès';
+  String get inviteCancelledSuccessfully =>
+      '[FR] Invitation annulée avec succès';
 
   @override
   String get retry => '[FR] Réessayer';
@@ -262,7 +265,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get playtimeLive => '[FR] Jeu en direct';
 
   @override
-  String get errorLoadingInvites => '[FR] Erreur lors du chargement des invitations';
+  String get errorLoadingInvites =>
+      '[FR] Erreur lors du chargement des invitations';
 
   @override
   String get targetingFilters => '[FR] Filtres de ciblage';
@@ -387,7 +391,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get noProfileFound => '[FR] Aucun profil trouvé';
 
   @override
-  String get noFamilyMembersYet => '[FR] Aucun membre de la famille pour le moment';
+  String get noFamilyMembersYet =>
+      '[FR] Aucun membre de la famille pour le moment';
 
   @override
   String get mediaOptional => '[FR] Médias optionnels';
@@ -402,10 +407,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get dashboard => '[FR] Tableau de bord';
 
   @override
-  String get noPermissionForBroadcast => '[FR] Aucune permission pour la diffusion';
+  String get noPermissionForBroadcast =>
+      '[FR] Aucune permission pour la diffusion';
 
   @override
-  String get playtimeAdminPanelTitle => '[FR] Panneau d\'administration des jeux';
+  String get playtimeAdminPanelTitle =>
+      '[FR] Panneau d\'administration des jeux';
 
   @override
   String get inviteDetail => '[FR] Détail de l\'invitation';
@@ -479,7 +486,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get playtimeEnterGameName => '[FR] Entrer le nom du jeu';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[FR] Veuillez vous connecter pour accéder aux fonctionnalités familiales';
+  String get pleaseLoginForFamilyFeatures =>
+      '[FR] Veuillez vous connecter pour accéder aux fonctionnalités familiales';
 
   @override
   String get myInvites => '[FR] Mes invitations';
@@ -533,7 +541,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[FR] Veuillez vous connecter pour voir le profil';
+  String get pleaseLoginToViewProfile =>
+      '[FR] Veuillez vous connecter pour voir le profil';
 
   @override
   String get adminMetrics => '[FR] Admin Metrics';
@@ -554,40 +563,52 @@ class AppLocalizationsFr extends AppLocalizations {
   String get contentLibrary => '[FR] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[FR] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[FR] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[FR] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[FR] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[FR] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[FR] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[FR] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[FR] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[FR] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[FR] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[FR] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[FR] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[FR] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[FR] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[FR] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[FR] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[FR] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[FR] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential => '[FR] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential =>
+      '[FR] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[FR] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[FR] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[FR] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[FR] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'Conflit de compte social';
@@ -601,22 +622,28 @@ class AppLocalizationsFr extends AppLocalizations {
   String get linkAccounts => 'Lier les comptes';
 
   @override
-  String get signInWithExistingMethod => 'Se connecter avec la méthode existante';
+  String get signInWithExistingMethod =>
+      'Se connecter avec la méthode existante';
 
   @override
-  String get authErrorRequiresRecentLogin => '[FR] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[FR] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[FR] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[FR] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode => '[FR] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode =>
+      '[FR] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[FR] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[FR] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode => '[FR] Please enter the verification code.';
+  String get authErrorMissingVerificationCode =>
+      '[FR] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[FR] Missing verification ID.';
@@ -628,43 +655,56 @@ class AppLocalizationsFr extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[FR] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[FR] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[FR] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[FR] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[FR] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[FR] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[FR] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired => '[FR] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired =>
+      '[FR] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound => '[FR] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound =>
+      '[FR] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession => '[FR] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession =>
+      '[FR] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession => '[FR] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession =>
+      '[FR] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse => '[FR] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse =>
+      '[FR] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded => '[FR] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded =>
+      '[FR] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[FR] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[FR] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification => '[FR] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification =>
+      '[FR] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists => '[FR] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists =>
+      '[FR] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[FR] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[FR] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[FR] The ID token is invalid.';
@@ -676,10 +716,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[FR] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[FR] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[FR] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[FR] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[FR] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[FR] Invalid custom claims provided.';
@@ -688,70 +730,87 @@ class AppLocalizationsFr extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[FR] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[FR] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[FR] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[FR] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[FR] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[FR] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain => '[FR] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain =>
+      '[FR] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[FR] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[FR] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[FR] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[FR] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[FR] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[FR] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength => '[FR] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength =>
+      '[FR] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[FR] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[FR] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[FR] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization => '[FR] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization =>
+      '[FR] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[FR] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[FR] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator => '[FR] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator =>
+      '[FR] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[FR] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[FR] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[FR] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[FR] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[FR] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[FR] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration => '[FR] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration =>
+      '[FR] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[FR] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[FR] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[FR] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded => '[FR] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded =>
+      '[FR] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[FR] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[FR] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[FR] Missing continue URL.';
@@ -766,7 +825,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get authErrorMissingUid => '[FR] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret => '[FR] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret =>
+      '[FR] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[FR] Firebase project not found.';
@@ -775,19 +835,23 @@ class AppLocalizationsFr extends AppLocalizations {
   String get authErrorReservedClaims => '[FR] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[FR] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[FR] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[FR] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[FR] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[FR] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri => '[FR] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri =>
+      '[FR] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[FR] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[FR] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'Vérification des autorisations...';
@@ -836,10 +900,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get keepSubscription => 'Conserver l\'abonnement';
 
   @override
-  String get virtualSessionCreatedInvitingFriends => '[FR] Session virtuelle créée, invitation des amis';
+  String get virtualSessionCreatedInvitingFriends =>
+      '[FR] Session virtuelle créée, invitation des amis';
 
   @override
-  String get noEventsScheduledForToday => 'Aucun événement programmé pour aujourd\'hui';
+  String get noEventsScheduledForToday =>
+      'Aucun événement programmé pour aujourd\'hui';
 
   @override
   String get exportData => 'Exporter les données';
@@ -877,13 +943,15 @@ class AppLocalizationsFr extends AppLocalizations {
   String get studioProfile => 'Profil du studio';
 
   @override
-  String get subscriptionUnavailable => '[FR] Subscription unavailable (French)';
+  String get subscriptionUnavailable =>
+      '[FR] Subscription unavailable (French)';
 
   @override
   String get confirmBooking => '[FR] Confirm Booking (French)';
 
   @override
-  String get failedToUpdatePermissionE => '[FR] Failed to update permission: \$e (French)';
+  String get failedToUpdatePermissionE =>
+      '[FR] Failed to update permission: \$e (French)';
 
   @override
   String get reject => '[FR] Reject (French)';
@@ -911,7 +979,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get resolve => '[FR] Resolve (French)';
 
   @override
-  String get errorLoadingSurveysError => '[FR] Error loading surveys: \$error (French)';
+  String get errorLoadingSurveysError =>
+      '[FR] Error loading surveys: \$error (French)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -919,7 +988,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[FR] Get help with your account (French)';
+  String get getHelpWithYourAccount =>
+      '[FR] Get help with your account (French)';
 
   @override
   String get pay => '[FR] Pay (French)';
@@ -931,10 +1001,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get meetingDetails => 'Détails de la réunion';
 
   @override
-  String get errorLoadingAppointments => '[FR] Error loading appointments (French)';
+  String get errorLoadingAppointments =>
+      '[FR] Error loading appointments (French)';
 
   @override
-  String get changesSavedSuccessfully => '[FR] Changes saved successfully! (French)';
+  String get changesSavedSuccessfully =>
+      '[FR] Changes saved successfully! (French)';
 
   @override
   String get createNewInvoice => '[FR] Create New Invoice (French)';
@@ -954,7 +1026,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get profileSaved => '[FR] Profile saved! (French)';
 
   @override
-  String get receiveBookingNotificationsViaEmail => 'Recevoir les notifications de réservation par email';
+  String get receiveBookingNotificationsViaEmail =>
+      'Recevoir les notifications de réservation par email';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -985,7 +1058,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly => '[FR] Vous recevrez un email de confirmation sous peu';
+  String get youWillReceiveAConfirmationEmailShortly =>
+      '[FR] Vous recevrez un email de confirmation sous peu';
 
   @override
   String get addQuestion => '[FR] Add Question (French)';
@@ -1014,22 +1088,26 @@ class AppLocalizationsFr extends AppLocalizations {
   String get surveyManagement => '[FR] Survey Management (French)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[FR] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[FR] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[FR] No rooms found. Add your first room! (French)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[FR] No rooms found. Add your first room! (French)';
 
   @override
   String get readOurPrivacyPolicy => '[FR] Read our privacy policy (French)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[FR] Could not open privacy policy (French)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[FR] Could not open privacy policy (French)';
 
   @override
   String get refresh1 => '[FR] Refresh (French)';
 
   @override
-  String get roomUpdatedSuccessfully => '[FR] Room updated successfully! (French)';
+  String get roomUpdatedSuccessfully =>
+      '[FR] Room updated successfully! (French)';
 
   @override
   String get contentDetail => '[FR] Content Detail (French)';
@@ -1038,7 +1116,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get cancelSubscription => '[FR] Cancel Subscription (French)';
 
   @override
-  String get successfullyRegisteredAsAmbassador => '[FR] Successfully registered as Ambassador! (French)';
+  String get successfullyRegisteredAsAmbassador =>
+      '[FR] Successfully registered as Ambassador! (French)';
 
   @override
   String get save1 => '[FR] Save (French)';
@@ -1047,7 +1126,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get copy1 => '[FR] Copy (French)';
 
   @override
-  String get failedToSendInvitationE => '[FR] Failed to send invitation: \$e (French)';
+  String get failedToSendInvitationE =>
+      '[FR] Failed to send invitation: \$e (French)';
 
   @override
   String get surveyScore => '[FR] Survey Score (French)';
@@ -1064,16 +1144,20 @@ class AppLocalizationsFr extends AppLocalizations {
   String get responseDetail => '[FR] Response Detail (French)';
 
   @override
-  String get businessVerificationScreenComingSoon => 'Écran de vérification entreprise - Bientôt disponible';
+  String get businessVerificationScreenComingSoon =>
+      'Écran de vérification entreprise - Bientôt disponible';
 
   @override
-  String get businessProfileActivatedSuccessfully => 'Profil entreprise activé avec succès';
+  String get businessProfileActivatedSuccessfully =>
+      'Profil entreprise activé avec succès';
 
   @override
-  String get failedToStartProSubscriptionE => '[FR] Failed to start Pro subscription: \$e (French)';
+  String get failedToStartProSubscriptionE =>
+      '[FR] Failed to start Pro subscription: \$e (French)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon => '[FR] Business Dashboard Entry Screen - Coming Soon (French)';
+  String get businessDashboardEntryScreenComingSoon =>
+      '[FR] Business Dashboard Entry Screen - Coming Soon (French)';
 
   @override
   String get contentFilter => '[FR] Content Filter (French)';
@@ -1095,7 +1179,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon => '[FR] Business CRM Entry Screen - Coming Soon (French)';
+  String get businessCrmEntryScreenComingSoon =>
+      '[FR] Business CRM Entry Screen - Coming Soon (French)';
 
   @override
   String get adminDashboard => '[FR] Admin Dashboard';
@@ -1106,10 +1191,12 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[FR] Error loading dashboard: \$error (French)';
+  String get errorLoadingDashboardError =>
+      '[FR] Error loading dashboard: \$error (French)';
 
   @override
-  String get gameDeletedSuccessfully => '[FR] Game deleted successfully! (French)';
+  String get gameDeletedSuccessfully =>
+      '[FR] Game deleted successfully! (French)';
 
   @override
   String get viewResponsesComingSoon => '[FR] Voir les réponses bientôt';
@@ -1121,7 +1208,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get errorLoadingRewards => '[FR] Error loading rewards (French)';
 
   @override
-  String get failedToDeleteAccountE => '[FR] Failed to delete account: \$e (French)';
+  String get failedToDeleteAccountE =>
+      '[FR] Failed to delete account: \$e (French)';
 
   @override
   String get invited1 => '[FR] Invited (French)';
@@ -1136,7 +1224,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get noEvents => '[FR] No events (French)';
 
   @override
-  String get gameCreatedSuccessfully => '[FR] Game created successfully! (French)';
+  String get gameCreatedSuccessfully =>
+      '[FR] Game created successfully! (French)';
 
   @override
   String get add1 => '[FR] Add (French)';
@@ -1156,10 +1245,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get clients => '[FR] Clients (French)';
 
   @override
-  String get noAmbassadorDataAvailable => '[FR] No ambassador data available (French)';
+  String get noAmbassadorDataAvailable =>
+      '[FR] No ambassador data available (French)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[FR] Background deleted successfully! (French)';
+  String get backgroundDeletedSuccessfully =>
+      '[FR] Background deleted successfully! (French)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1167,7 +1258,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[FR] No analytics data available yet. (French)';
+  String get noAnalyticsDataAvailableYet =>
+      '[FR] No analytics data available yet. (French)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1175,7 +1267,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon => '[FR] Business Phone Booking Entry Screen - Coming Soon (French)';
+  String get businessPhoneBookingEntryScreenComingSoon =>
+      '[FR] Business Phone Booking Entry Screen - Coming Soon (French)';
 
   @override
   String get verification => '[FR] Vérification';
@@ -1222,7 +1315,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get businessProfile => '[FR] Business Profile (French)';
 
   @override
-  String get businessBookingEntryScreenComingSoon => '[FR] Business Booking Entry Screen - Coming Soon (French)';
+  String get businessBookingEntryScreenComingSoon =>
+      '[FR] Business Booking Entry Screen - Coming Soon (French)';
 
   @override
   String get createNewSurvey => '[FR] Create New Survey (French)';
@@ -1246,7 +1340,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get loginFailedE => '[FR] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[FR] Invitation sent successfully! (French)';
+  String get invitationSentSuccessfully =>
+      '[FR] Invitation sent successfully! (French)';
 
   @override
   String get registering => '[FR] Registering... (French)';
@@ -1263,10 +1358,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get errorSavingSettingsE => '[FR] Error saving settings: \$e (French)';
 
   @override
-  String get appVersionAndInformation => '[FR] App version and information (French)';
+  String get appVersionAndInformation =>
+      '[FR] App version and information (French)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon => '[FR] Business Subscription Entry Screen - Coming Soon (French)';
+  String get businessSubscriptionEntryScreenComingSoon =>
+      '[FR] Business Subscription Entry Screen - Coming Soon (French)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1274,7 +1371,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully => '[FR] Votre paiement a été traité avec succès';
+  String get yourPaymentHasBeenProcessedSuccessfully =>
+      '[FR] Votre paiement a été traité avec succès';
 
   @override
   String get errorE => '[FR] Error: \$e (French)';
@@ -1292,7 +1390,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get payment => '[FR] Payment (French)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests => '[FR] Automatically confirm new booking requests (French)';
+  String get automaticallyConfirmNewBookingRequests =>
+      '[FR] Automatically confirm new booking requests (French)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1305,7 +1404,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[FR] Please sign in to upload a background (French)';
+  String get pleaseSignInToUploadABackground =>
+      '[FR] Please sign in to upload a background (French)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1322,19 +1422,22 @@ class AppLocalizationsFr extends AppLocalizations {
   String get autoconfirmBookings => '[FR] Auto-Confirm Bookings (French)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan => '[FR] Redirecting to Stripe checkout for Pro plan... (French)';
+  String get redirectingToStripeCheckoutForProPlan =>
+      '[FR] Redirecting to Stripe checkout for Pro plan... (French)';
 
   @override
   String get exportAsCsv => '[FR] Export as CSV (French)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[FR] Delete functionality coming soon! (French)';
+  String get deleteFunctionalityComingSoon =>
+      '[FR] Delete functionality coming soon! (French)';
 
   @override
   String get editClient => '[FR] Edit Client (French)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage => '[FR] Are you sure you want to delete this message? (French)';
+  String get areYouSureYouWantToDeleteThisMessage =>
+      '[FR] Are you sure you want to delete this message? (French)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1345,31 +1448,39 @@ class AppLocalizationsFr extends AppLocalizations {
   String get notAuthenticated => '[FR] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[FR] Privacy request sent to your parents! (French)';
+  String get privacyRequestSentToYourParents =>
+      '[FR] Privacy request sent to your parents! (French)';
 
   @override
-  String get clientDeletedSuccessfully => '[FR] Client deleted successfully! (French)';
+  String get clientDeletedSuccessfully =>
+      '[FR] Client deleted successfully! (French)';
 
   @override
-  String get failedToCancelSubscription => '[FR] Failed to cancel subscription (French)';
+  String get failedToCancelSubscription =>
+      '[FR] Failed to cancel subscription (French)';
 
   @override
   String get allLanguages => '[FR] All Languages (French)';
 
   @override
-  String get slotDeletedSuccessfully => '[FR] Slot deleted successfully (French)';
+  String get slotDeletedSuccessfully =>
+      '[FR] Slot deleted successfully (French)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon => '[FR] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon =>
+      '[FR] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin => '[FR] Parents must approve before children can join (French)';
+  String get parentsMustApproveBeforeChildrenCanJoin =>
+      '[FR] Parents must approve before children can join (French)';
 
   @override
-  String get subscribeToPro1499mo => '[FR] Subscribe to Pro (€14.99/mo) (French)';
+  String get subscribeToPro1499mo =>
+      '[FR] Subscribe to Pro (€14.99/mo) (French)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon => '[FR] Business Availability Entry Screen - Coming Soon (French)';
+  String get businessAvailabilityEntryScreenComingSoon =>
+      '[FR] Business Availability Entry Screen - Coming Soon (French)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1383,7 +1494,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get submitBooking => '[FR] Submit Booking (French)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment => '[FR] Are you sure you want to cancel this appointment? (French)';
+  String get areYouSureYouWantToCancelThisAppointment =>
+      '[FR] Are you sure you want to cancel this appointment? (French)';
 
   @override
   String get noUpcomingBookings => '[FR] No upcoming bookings (French)';
@@ -1401,7 +1513,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get goToDashboard => '[FR] Go to Dashboard (French)';
 
   @override
-  String get ambassadorQuotaDashboard => '[FR] Ambassador Quota Dashboard (French)';
+  String get ambassadorQuotaDashboard =>
+      '[FR] Ambassador Quota Dashboard (French)';
 
   @override
   String get adminSettings => '[FR] Admin Settings';
@@ -1439,7 +1552,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get sessionApproved => 'Session approuvée';
 
   @override
-  String get clientAddedSuccessfully => '[FR] Client added successfully! (French)';
+  String get clientAddedSuccessfully =>
+      '[FR] Client added successfully! (French)';
 
   @override
   String get noNotifications => 'Aucune notification';
@@ -1457,7 +1571,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get bookAppointment => '[FR] Book Appointment (French)';
 
   @override
-  String get receivePushNotificationsForNewBookings => 'Recevoir les notifications push pour les nouvelles réservations';
+  String get receivePushNotificationsForNewBookings =>
+      'Recevoir les notifications push pour les nouvelles réservations';
 
   @override
   String get delete1 => '[FR] Delete (French)';
@@ -1472,13 +1587,15 @@ class AppLocalizationsFr extends AppLocalizations {
   String get manageSubscription => '[FR] Manage Subscription (French)';
 
   @override
-  String get requiresInstallFallback => '[FR] Requires Install Fallback (French)';
+  String get requiresInstallFallback =>
+      '[FR] Requires Install Fallback (French)';
 
   @override
   String get paymentConfirmation => '[FR] Payment Confirmation (French)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[FR] Promo applied! Your next bill is free. (French)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[FR] Promo applied! Your next bill is free. (French)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1489,13 +1606,16 @@ class AppLocalizationsFr extends AppLocalizations {
   String get errorLoadingSlots => '[FR] Error loading slots (French)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame => '[FR] Allow other users to find and join this game (French)';
+  String get allowOtherUsersToFindAndJoinThisGame =>
+      '[FR] Allow other users to find and join this game (French)';
 
   @override
-  String get businessOnboardingScreenComingSoon => '[FR] Business Onboarding Screen - Coming Soon (French)';
+  String get businessOnboardingScreenComingSoon =>
+      '[FR] Business Onboarding Screen - Coming Soon (French)';
 
   @override
-  String get activateBusinessProfile => '[FR] Activate Business Profile (French)';
+  String get activateBusinessProfile =>
+      '[FR] Activate Business Profile (French)';
 
   @override
   String get contentNotFound => '[FR] Content not found (French)';
@@ -1537,7 +1657,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get shareLink => '[FR] Share Link (French)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider => '[FR] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider =>
+      '[FR] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[FR] Delete Appointment (French)';
@@ -1557,10 +1678,12 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[FR] Update your business information (French)';
+  String get updateYourBusinessInformation =>
+      '[FR] Update your business information (French)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider => '[FR] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider =>
+      '[FR] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[FR] Parent Dashboard (French)';
@@ -1583,10 +1706,12 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb => '[FR] Studio booking is only available on web (French)';
+  String get studioBookingIsOnlyAvailableOnWeb =>
+      '[FR] Studio booking is only available on web (French)';
 
   @override
-  String get errorLoadingBranchesE => '[FR] Error loading branches: \$e (French)';
+  String get errorLoadingBranchesE =>
+      '[FR] Error loading branches: \$e (French)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1602,13 +1727,15 @@ class AppLocalizationsFr extends AppLocalizations {
   String get none => '[FR] None (French)';
 
   @override
-  String get failedToUpdateConsentE => '[FR] Failed to update consent: \$e (French)';
+  String get failedToUpdateConsentE =>
+      '[FR] Failed to update consent: \$e (French)';
 
   @override
   String get welcome1 => '[FR] Bienvenue';
 
   @override
-  String get failedToCreateSessionE => '[FR] Failed to create session: \$e (French)';
+  String get failedToCreateSessionE =>
+      '[FR] Failed to create session: \$e (French)';
 
   @override
   String get inviteContact => '[FR] Invite Contact (French)';
@@ -1617,7 +1744,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get surveyEditor => '[FR] Survey Editor (French)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[FR] Failed to start Basic subscription: \$e (French)';
+  String get failedToStartBasicSubscriptionE =>
+      '[FR] Failed to start Basic subscription: \$e (French)';
 
   @override
   String get mySchedule => '[FR] My Schedule (French)';
@@ -1637,7 +1765,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[FR] Settings saved successfully! (French)';
+  String get settingsSavedSuccessfully =>
+      '[FR] Settings saved successfully! (French)';
 
   @override
   String get linkCopiedToClipboard => '[FR] Link copied to clipboard! (French)';
@@ -1657,7 +1786,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[FR] Room deleted successfully! (French)';
+  String get roomDeletedSuccessfully =>
+      '[FR] Room deleted successfully! (French)';
 
   @override
   String get businessCalendar => '[FR] Business Calendar (French)';
@@ -1722,7 +1852,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get cancel1 => '[FR] Cancel (French)';
 
   @override
-  String get subscriptionActivatedSuccessfully => '[FR] Subscription activated successfully! (French)';
+  String get subscriptionActivatedSuccessfully =>
+      '[FR] Subscription activated successfully! (French)';
 
   @override
   String activityLogaction(Object action) {
@@ -1733,7 +1864,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get broadcast => '[FR] Broadcast (French)';
 
   @override
-  String get noEventsScheduledThisWeek => '[FR] No events scheduled this week (French)';
+  String get noEventsScheduledThisWeek =>
+      '[FR] No events scheduled this week (French)';
 
   @override
   String get googleCalendar => '[FR] Google Calendar (French)';
@@ -1745,7 +1877,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get childDashboard => '[FR] Child Dashboard (French)';
 
   @override
-  String get failedToUploadBackgroundE => '[FR] Failed to upload background: \$e (French)';
+  String get failedToUploadBackgroundE =>
+      '[FR] Failed to upload background: \$e (French)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1764,7 +1897,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get noAppointments => '[FR] No appointments (French)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[FR] • Unlimited bookings per week (French)';
+  String get unlimitedBookingsPerWeek =>
+      '[FR] • Unlimited bookings per week (French)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1772,16 +1906,19 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[FR] Scheduled at: \$scheduledAt (French)';
+  String get scheduledAtScheduledat =>
+      '[FR] Scheduled at: \$scheduledAt (French)';
 
   @override
   String get selectStaff => '[FR] Select Staff (French)';
 
   @override
-  String get subscriptionCancelledSuccessfully => '[FR] Subscription cancelled successfully (French)';
+  String get subscriptionCancelledSuccessfully =>
+      '[FR] Subscription cancelled successfully (French)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'Veuillez vous connecter pour voir votre profil';
+  String get pleaseLogInToViewYourProfile =>
+      'Veuillez vous connecter pour voir votre profil';
 
   @override
   String get cancelAppointment => '[FR] Cancel Appointment (French)';
@@ -1795,7 +1932,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get businessSignup => '[FR] Business Signup (French)';
 
   @override
-  String get businessCompletionScreenComingSoon => '[FR] Business Completion Screen - Coming Soon (French)';
+  String get businessCompletionScreenComingSoon =>
+      '[FR] Business Completion Screen - Coming Soon (French)';
 
   @override
   String get createGame1 => '[FR] Create Game (French)';
@@ -1809,7 +1947,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get pleaseEnterAPromoCode => '[FR] Please enter a promo code (French)';
 
   @override
-  String get errorLoadingAvailabilityE => '[FR] Error loading availability: \$e (French)';
+  String get errorLoadingAvailabilityE =>
+      '[FR] Error loading availability: \$e (French)';
 
   @override
   String get parentalControls => '[FR] Parental Controls (French)';
@@ -1818,13 +1957,15 @@ class AppLocalizationsFr extends AppLocalizations {
   String get editBusinessProfile => 'Modifier le profil entreprise';
 
   @override
-  String get childLinkedSuccessfully => '[FR] Child linked successfully! (French)';
+  String get childLinkedSuccessfully =>
+      '[FR] Child linked successfully! (French)';
 
   @override
   String get create => '[FR] Create (French)';
 
   @override
-  String get noExternalMeetingsFound => '[FR] No external meetings found. (French)';
+  String get noExternalMeetingsFound =>
+      '[FR] No external meetings found. (French)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1832,13 +1973,15 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[FR] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[FR] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[FR] Scheduler Screen (French)';
 
   @override
-  String get clientUpdatedSuccessfully => '[FR] Client updated successfully! (French)';
+  String get clientUpdatedSuccessfully =>
+      '[FR] Client updated successfully! (French)';
 
   @override
   String get surveyResponses => '[FR] Survey Responses (French)';
@@ -1864,10 +2007,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get errorLoadingEvents => '[FR] Error loading events (French)';
 
   @override
-  String get errorLoadingOrganizations => '[FR] Erreur lors du chargement des organisations';
+  String get errorLoadingOrganizations =>
+      '[FR] Erreur lors du chargement des organisations';
 
   @override
-  String get businessLoginScreenComingSoon => '[FR] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[FR] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[FR] Success (French)';
@@ -1886,10 +2031,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get readWrite => '[FR] Read & Write (French)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan => '[FR] Redirecting to Stripe checkout for Basic plan... (French)';
+  String get redirectingToStripeCheckoutForBasicPlan =>
+      '[FR] Redirecting to Stripe checkout for Basic plan... (French)';
 
   @override
-  String get errorSavingConfigurationE => '[FR] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[FR] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[FR] Pick Date (French)';
@@ -1925,10 +2072,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get businessLogin => '[FR] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[FR] Invoice created successfully! (French)';
+  String get invoiceCreatedSuccessfully =>
+      '[FR] Invoice created successfully! (French)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[FR] No time series data available (French)';
+  String get noTimeSeriesDataAvailable =>
+      '[FR] No time series data available (French)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1941,7 +2090,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[FR] Failed to send privacy request: \$e (French)';
+  String get failedToSendPrivacyRequestE =>
+      '[FR] Failed to send privacy request: \$e (French)';
 
   @override
   String get chooseYourPlan => '[FR] Choose Your Plan (French)';
@@ -1956,7 +2106,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get eventCreated => '[FR] Event created (French)';
 
   @override
-  String get subscribeToBasic499mo => '[FR] Subscribe to Basic (€4.99/mo) (French)';
+  String get subscribeToBasic499mo =>
+      '[FR] Subscribe to Basic (€4.99/mo) (French)';
 
   @override
   String get completion => '[FR] Completion (French)';
@@ -1977,10 +2128,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get deleteSurvey => '[FR] Delete Survey (French)';
 
   @override
-  String get gameApprovedSuccessfully => '[FR] Game approved successfully! (French)';
+  String get gameApprovedSuccessfully =>
+      '[FR] Game approved successfully! (French)';
 
   @override
-  String get errorLoadingPermissionsError => '[FR] Error loading permissions: \$error (French)';
+  String get errorLoadingPermissionsError =>
+      '[FR] Error loading permissions: \$error (French)';
 
   @override
   String get referrals => '[FR] Referrals (French)';
@@ -2022,7 +2175,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get organizations => '[FR] Organisations';
 
   @override
-  String get configurationSavedSuccessfully => '[FR] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[FR] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[FR] Create New Game (French)';
@@ -2031,13 +2185,16 @@ class AppLocalizationsFr extends AppLocalizations {
   String get next1 => '[FR] Next (French)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[FR] Background uploaded successfully! (French)';
+  String get backgroundUploadedSuccessfully =>
+      '[FR] Background uploaded successfully! (French)';
 
   @override
-  String get noAppointmentRequestsFound => '[FR] No appointment requests found. (French)';
+  String get noAppointmentRequestsFound =>
+      '[FR] No appointment requests found. (French)';
 
   @override
-  String get pleaseSignInToCreateASession => 'Veuillez vous connecter pour créer une session';
+  String get pleaseSignInToCreateASession =>
+      'Veuillez vous connecter pour créer une session';
 
   @override
   String get restrictMatureContent => '[FR] Restrict mature content (French)';
@@ -2061,7 +2218,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get notifications1 => 'Notifications';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval => 'Session en direct programmée, en attente d\'approbation parentale';
+  String get liveSessionScheduledWaitingForParentApproval =>
+      'Session en direct programmée, en attente d\'approbation parentale';
 
   @override
   String get failedToCreateGameE => '[FR] Failed to create game: \$e (French)';
@@ -2070,7 +2228,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get noChartDataAvailable => '[FR] No chart data available (French)';
 
   @override
-  String get phonebasedBookingSystem => '[FR] • Phone-based booking system (French)';
+  String get phonebasedBookingSystem =>
+      '[FR] • Phone-based booking system (French)';
 
   @override
   String get enableNotifications1 => 'Activer les notifications';
@@ -2079,7 +2238,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get invoices => '[FR] Invoices (French)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue => 'Veuillez activer votre profil entreprise pour continuer';
+  String get pleaseActivateYourBusinessProfileToContinue =>
+      'Veuillez activer votre profil entreprise pour continuer';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2106,10 +2266,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get iDoNotConsent => '[FR] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient => '[FR] No clients found. Add your first client! (French)';
+  String get noClientsFoundAddYourFirstClient =>
+      '[FR] No clients found. Add your first client! (French)';
 
   @override
-  String get settingsDialogWillBeImplementedHere => '[FR] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere =>
+      '[FR] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[FR] Group: \$groupId';
@@ -2132,7 +2294,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[FR] • CRM dashboard with analytics (French)';
+  String get crmDashboardWithAnalytics =>
+      '[FR] • CRM dashboard with analytics (French)';
 
   @override
   String get contentLibrary1 => '[FR] Content Library (French)';
@@ -2144,25 +2307,30 @@ class AppLocalizationsFr extends AppLocalizations {
   String get subscriptionManagement => '[FR] Subscription Management (French)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere => '[FR] Monetization settings will be implemented here (French)';
+  String get monetizationSettingsWillBeImplementedHere =>
+      '[FR] Monetization settings will be implemented here (French)';
 
   @override
-  String get failedToApplyPromoCodeE => '[FR] Failed to apply promo code: \$e (French)';
+  String get failedToApplyPromoCodeE =>
+      '[FR] Failed to apply promo code: \$e (French)';
 
   @override
   String get editProvider => '[FR] Edit Provider';
 
   @override
-  String get localizationContribution => '[FR] Localization Contribution (French)';
+  String get localizationContribution =>
+      '[FR] Localization Contribution (French)';
 
   @override
   String get parentalConsent => '[FR] Parental Consent (French)';
 
   @override
-  String get businessSignupScreenComingSoon => '[FR] Business Signup Screen - Coming Soon (French)';
+  String get businessSignupScreenComingSoon =>
+      '[FR] Business Signup Screen - Coming Soon (French)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment => '[FR] Are you sure you want to delete this appointment? (French)';
+  String get areYouSureYouWantToDeleteThisAppointment =>
+      '[FR] Are you sure you want to delete this appointment? (French)';
 
   @override
   String get syncAppointment => '[FR] Sync Appointment (French)';
@@ -2174,13 +2342,15 @@ class AppLocalizationsFr extends AppLocalizations {
   String get sessionRejected => 'Session rejetée';
 
   @override
-  String get businessSetupScreenComingSoon => '[FR] Business Setup Screen - Coming Soon (French)';
+  String get businessSetupScreenComingSoon =>
+      '[FR] Business Setup Screen - Coming Soon (French)';
 
   @override
   String get edit1 => '[FR] Edit (French)';
 
   @override
-  String get noEventsScheduledThisMonth => '[FR] No events scheduled this month (French)';
+  String get noEventsScheduledThisMonth =>
+      '[FR] No events scheduled this month (French)';
 
   @override
   String get businessDashboard => '[FR] Business Dashboard (French)';
@@ -2194,7 +2364,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[FR] Manage Staff Availability (French)';
+  String get manageStaffAvailability =>
+      '[FR] Manage Staff Availability (French)';
 
   @override
   String get noMissingTranslations => '[FR] No missing translations (French)';
@@ -2211,7 +2382,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get noUsers => '[FR] Aucun utilisateur';
 
   @override
-  String get errorLoadingReferralCode => '[FR] Error loading referral code (French)';
+  String get errorLoadingReferralCode =>
+      '[FR] Error loading referral code (French)';
 
   @override
   String get allCountries => '[FR] All Countries (French)';
@@ -2226,7 +2398,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get deleteMessage => '[FR] Delete Message (French)';
 
   @override
-  String get receiveBookingNotificationsViaSms => 'Recevoir les notifications de réservation par SMS';
+  String get receiveBookingNotificationsViaSms =>
+      'Recevoir les notifications de réservation par SMS';
 
   @override
   String get changeRole => '[FR] Changer de rôle';
@@ -2237,7 +2410,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[FR] Opening customer portal... (French)';
+  String get openingCustomerPortal =>
+      '[FR] Opening customer portal... (French)';
 
   @override
   String get signOut => '[FR] Sign Out (French)';
@@ -2248,7 +2422,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon => 'Écran d\'entrée profil entreprise - Bientôt disponible';
+  String get businessProfileEntryScreenComingSoon =>
+      'Écran d\'entrée profil entreprise - Bientôt disponible';
 
   @override
   String get upgradeToBusiness => '[FR] Passer aux affaires';
@@ -2274,13 +2449,15 @@ class AppLocalizationsFr extends AppLocalizations {
   String get deleteMyAccount => 'Supprimer mon compte';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon => 'Écran d\'entrée rendez-vous entreprise - Bientôt disponible';
+  String get businessAppointmentsEntryScreenComingSoon =>
+      'Écran d\'entrée rendez-vous entreprise - Bientôt disponible';
 
   @override
   String get viewResponses => '[FR] Voir les réponses';
 
   @override
-  String get businessWelcomeScreenComingSoon => 'Écran de bienvenue entreprise - Bientôt disponible';
+  String get businessWelcomeScreenComingSoon =>
+      'Écran de bienvenue entreprise - Bientôt disponible';
 
   @override
   String failedToOpenCustomerPortalE(Object e) {
@@ -2303,7 +2480,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get approve => 'Approuver';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice => 'Aucune facture trouvée. Créez votre première facture!';
+  String get noInvoicesFoundCreateYourFirstInvoice =>
+      'Aucune facture trouvée. Créez votre première facture!';
 
   @override
   String get subscribe => 'S\'abonner';
@@ -2318,10 +2496,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get loadingCheckout => 'Chargement du checkout...';
 
   @override
-  String get ad_pre_title => 'Regardez une publicité pour confirmer votre rendez-vous';
+  String get ad_pre_title =>
+      'Regardez une publicité pour confirmer votre rendez-vous';
 
   @override
-  String get ad_pre_description => 'En tant qu\'utilisateur gratuit, vous devez regarder une courte publicité avant de confirmer. Vous pouvez supprimer toutes les publicités définitivement en vous abonnant.';
+  String get ad_pre_description =>
+      'En tant qu\'utilisateur gratuit, vous devez regarder une courte publicité avant de confirmer. Vous pouvez supprimer toutes les publicités définitivement en vous abonnant.';
 
   @override
   String get watch_ad_button => 'Regarder la Publicité';
@@ -2330,7 +2510,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get upgrade_button => 'Passer à Premium (€4)';
 
   @override
-  String get ad_post_title => 'Publicité terminée ! Vous pouvez maintenant confirmer votre rendez-vous.';
+  String get ad_post_title =>
+      'Publicité terminée ! Vous pouvez maintenant confirmer votre rendez-vous.';
 
   @override
   String get confirm_appointment_button => 'Confirmer le Rendez-vous';
@@ -2339,7 +2520,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get upgrade_prompt_title => 'Mise à niveau unique';
 
   @override
-  String get upgrade_prompt_description => 'Payez €4 pour supprimer toutes les publicités pour toujours';
+  String get upgrade_prompt_description =>
+      'Payez €4 pour supprimer toutes les publicités pour toujours';
 
   @override
   String get purchase_now_button => 'Acheter Maintenant';
@@ -2378,7 +2560,8 @@ class AppLocalizationsFr extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2426,10 +2609,12 @@ class AppLocalizationsFr extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle => '[FR] Congratulations! You\'re now an Ambassador! (French)';
+  String get ambassadorPromotionTitle =>
+      '[FR] Congratulations! You\'re now an Ambassador! (French)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2440,7 +2625,11 @@ class AppLocalizationsFr extends AppLocalizations {
   String get tierUpgradeTitle => '[FR] Tier Upgrade! 🎉 (French)';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[FR] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (French)';
   }
 
@@ -2448,20 +2637,29 @@ class AppLocalizationsFr extends AppLocalizations {
   String get monthlyReminderTitle => '[FR] Monthly Goal Reminder (French)';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[FR] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (French)';
   }
 
   @override
-  String get performanceWarningTitle => '[FR] Ambassador Performance Alert (French)';
+  String get performanceWarningTitle =>
+      '[FR] Ambassador Performance Alert (French)';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[FR] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (French)';
   }
 
   @override
-  String get ambassadorDemotionTitle => '[FR] Ambassador Status Update (French)';
+  String get ambassadorDemotionTitle =>
+      '[FR] Ambassador Status Update (French)';
 
   @override
   String ambassadorDemotionBody(String reason) {

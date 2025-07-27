@@ -465,4 +465,4 @@ class SubscriptionScreen extends ConsumerWidget {
       const SnackBar(content: Text('Billing history coming soon!')),
     );
   }
-} 
+}

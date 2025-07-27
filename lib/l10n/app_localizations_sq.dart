@@ -74,7 +74,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get search => '[SQ] [SQ] Search';
 
   @override
-  String get cancelInviteConfirmation => '[SQ] [SQ] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation =>
+      '[SQ] [SQ] Are you sure you want to cancel this invite?';
 
   @override
   String created(String created, Object date) {
@@ -88,7 +89,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get playtimeLiveScheduled => '[SQ] [SQ] Live playtime scheduled!';
 
   @override
-  String get revokeAccessConfirmation => '[SQ] [SQ] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation =>
+      '[SQ] [SQ] Are you sure you want to revoke access?';
 
   @override
   String get download => '[SQ] [SQ] Download';
@@ -122,7 +124,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get playtimeModeVirtual => '[SQ] [SQ] Virtual Play';
 
   @override
-  String get playtimeDescription => '[SQ] [SQ] Enjoy live or virtual games with your friends!';
+  String get playtimeDescription =>
+      '[SQ] [SQ] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => '[SQ] [SQ] Delete';
@@ -182,7 +185,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => '[SQ] [SQ] Meeting shared successfully';
+  String get meetingSharedSuccessfully =>
+      '[SQ] [SQ] Meeting shared successfully';
 
   @override
   String get welcomeToPlaytime => '[SQ] [SQ] Welcome to Playtime';
@@ -200,7 +204,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get cut => '[SQ] [SQ] Cut';
 
   @override
-  String get inviteCancelledSuccessfully => '[SQ] [SQ] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully =>
+      '[SQ] [SQ] Invite cancelled successfully';
 
   @override
   String get retry => '[SQ] [SQ] Retry';
@@ -277,7 +282,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get scheduleForLater => '[SQ] [SQ] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully => '[SQ] [SQ] Access revoked successfully';
+  String get accessRevokedSuccessfully =>
+      '[SQ] [SQ] Access revoked successfully';
 
   @override
   String type(String type) {
@@ -402,7 +408,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get dashboard => '[SQ] [SQ] Dashboard';
 
   @override
-  String get noPermissionForBroadcast => '[SQ] [SQ] No permission for broadcast';
+  String get noPermissionForBroadcast =>
+      '[SQ] [SQ] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[SQ] Playtime Games – Admin';
@@ -479,7 +486,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get playtimeEnterGameName => '[SQ] [SQ] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[SQ] [SQ] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[SQ] [SQ] Please login to access family features';
 
   @override
   String get myInvites => '[SQ] [SQ] My Invites';
@@ -533,7 +541,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[SQ] [SQ] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[SQ] [SQ] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[SQ] Admin Metrics';
@@ -554,40 +563,52 @@ class AppLocalizationsSq extends AppLocalizations {
   String get contentLibrary => '[SQ] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[SQ] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[SQ] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[SQ] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[SQ] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[SQ] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[SQ] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[SQ] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[SQ] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[SQ] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[SQ] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[SQ] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[SQ] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[SQ] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[SQ] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[SQ] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[SQ] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[SQ] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[SQ] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential => '[SQ] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential =>
+      '[SQ] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[SQ] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[SQ] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[SQ] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[SQ] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -604,19 +625,24 @@ class AppLocalizationsSq extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[SQ] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[SQ] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[SQ] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[SQ] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode => '[SQ] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode =>
+      '[SQ] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[SQ] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[SQ] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode => '[SQ] Please enter the verification code.';
+  String get authErrorMissingVerificationCode =>
+      '[SQ] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[SQ] Missing verification ID.';
@@ -628,43 +654,56 @@ class AppLocalizationsSq extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[SQ] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[SQ] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[SQ] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[SQ] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[SQ] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[SQ] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[SQ] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired => '[SQ] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired =>
+      '[SQ] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound => '[SQ] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound =>
+      '[SQ] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession => '[SQ] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession =>
+      '[SQ] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession => '[SQ] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession =>
+      '[SQ] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse => '[SQ] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse =>
+      '[SQ] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded => '[SQ] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded =>
+      '[SQ] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[SQ] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[SQ] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification => '[SQ] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification =>
+      '[SQ] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists => '[SQ] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists =>
+      '[SQ] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[SQ] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[SQ] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[SQ] The ID token is invalid.';
@@ -676,10 +715,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[SQ] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[SQ] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[SQ] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[SQ] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[SQ] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[SQ] Invalid custom claims provided.';
@@ -688,70 +729,87 @@ class AppLocalizationsSq extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[SQ] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[SQ] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[SQ] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[SQ] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[SQ] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[SQ] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain => '[SQ] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain =>
+      '[SQ] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[SQ] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[SQ] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[SQ] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[SQ] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[SQ] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[SQ] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength => '[SQ] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength =>
+      '[SQ] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[SQ] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[SQ] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[SQ] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization => '[SQ] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization =>
+      '[SQ] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[SQ] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[SQ] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator => '[SQ] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator =>
+      '[SQ] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[SQ] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[SQ] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[SQ] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[SQ] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[SQ] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[SQ] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration => '[SQ] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration =>
+      '[SQ] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[SQ] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[SQ] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[SQ] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded => '[SQ] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded =>
+      '[SQ] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[SQ] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[SQ] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[SQ] Missing continue URL.';
@@ -766,7 +824,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get authErrorMissingUid => '[SQ] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret => '[SQ] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret =>
+      '[SQ] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[SQ] Firebase project not found.';
@@ -775,19 +834,23 @@ class AppLocalizationsSq extends AppLocalizations {
   String get authErrorReservedClaims => '[SQ] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[SQ] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[SQ] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[SQ] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[SQ] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[SQ] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri => '[SQ] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri =>
+      '[SQ] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[SQ] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[SQ] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -836,7 +899,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends => '[SQ] Virtual session created! Inviting friends... (Albanian)';
+  String get virtualSessionCreatedInvitingFriends =>
+      '[SQ] Virtual session created! Inviting friends... (Albanian)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -877,13 +941,15 @@ class AppLocalizationsSq extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[SQ] Subscription unavailable (Albanian)';
+  String get subscriptionUnavailable =>
+      '[SQ] Subscription unavailable (Albanian)';
 
   @override
   String get confirmBooking => '[SQ] Confirm Booking (Albanian)';
 
   @override
-  String get failedToUpdatePermissionE => '[SQ] Failed to update permission: \$e (Albanian)';
+  String get failedToUpdatePermissionE =>
+      '[SQ] Failed to update permission: \$e (Albanian)';
 
   @override
   String get reject => '[SQ] Reject (Albanian)';
@@ -905,13 +971,15 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get noContentAvailableYet => '[SQ] No content available yet (Albanian)';
+  String get noContentAvailableYet =>
+      '[SQ] No content available yet (Albanian)';
 
   @override
   String get resolve => '[SQ] Resolve (Albanian)';
 
   @override
-  String get errorLoadingSurveysError => '[SQ] Error loading surveys: \$error (Albanian)';
+  String get errorLoadingSurveysError =>
+      '[SQ] Error loading surveys: \$error (Albanian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -919,7 +987,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[SQ] Get help with your account (Albanian)';
+  String get getHelpWithYourAccount =>
+      '[SQ] Get help with your account (Albanian)';
 
   @override
   String get pay => '[SQ] Pay (Albanian)';
@@ -934,7 +1003,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[SQ] Changes saved successfully! (Albanian)';
+  String get changesSavedSuccessfully =>
+      '[SQ] Changes saved successfully! (Albanian)';
 
   @override
   String get createNewInvoice => '[SQ] Create New Invoice (Albanian)';
@@ -954,7 +1024,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get profileSaved => '[SQ] Profile saved! (Albanian)';
 
   @override
-  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -985,7 +1056,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly => '[SQ] You will receive a confirmation email shortly. (Albanian)';
+  String get youWillReceiveAConfirmationEmailShortly =>
+      '[SQ] You will receive a confirmation email shortly. (Albanian)';
 
   @override
   String get addQuestion => '[SQ] Add Question (Albanian)';
@@ -1014,22 +1086,26 @@ class AppLocalizationsSq extends AppLocalizations {
   String get surveyManagement => '[SQ] Survey Management (Albanian)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[SQ] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[SQ] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[SQ] No rooms found. Add your first room! (Albanian)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[SQ] No rooms found. Add your first room! (Albanian)';
 
   @override
   String get readOurPrivacyPolicy => '[SQ] Read our privacy policy (Albanian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[SQ] Could not open privacy policy (Albanian)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[SQ] Could not open privacy policy (Albanian)';
 
   @override
   String get refresh1 => '[SQ] Refresh (Albanian)';
 
   @override
-  String get roomUpdatedSuccessfully => '[SQ] Room updated successfully! (Albanian)';
+  String get roomUpdatedSuccessfully =>
+      '[SQ] Room updated successfully! (Albanian)';
 
   @override
   String get contentDetail => '[SQ] Content Detail (Albanian)';
@@ -1038,7 +1114,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get cancelSubscription => '[SQ] Cancel Subscription (Albanian)';
 
   @override
-  String get successfullyRegisteredAsAmbassador => '[SQ] Successfully registered as Ambassador! (Albanian)';
+  String get successfullyRegisteredAsAmbassador =>
+      '[SQ] Successfully registered as Ambassador! (Albanian)';
 
   @override
   String get save1 => '[SQ] Save (Albanian)';
@@ -1047,7 +1124,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get copy1 => '[SQ] Copy (Albanian)';
 
   @override
-  String get failedToSendInvitationE => '[SQ] Failed to send invitation: \$e (Albanian)';
+  String get failedToSendInvitationE =>
+      '[SQ] Failed to send invitation: \$e (Albanian)';
 
   @override
   String get surveyScore => '[SQ] Survey Score (Albanian)';
@@ -1064,16 +1142,20 @@ class AppLocalizationsSq extends AppLocalizations {
   String get responseDetail => '[SQ] Response Detail (Albanian)';
 
   @override
-  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[SQ] Failed to start Pro subscription: \$e (Albanian)';
+  String get failedToStartProSubscriptionE =>
+      '[SQ] Failed to start Pro subscription: \$e (Albanian)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon => '[SQ] Business Dashboard Entry Screen - Coming Soon (Albanian)';
+  String get businessDashboardEntryScreenComingSoon =>
+      '[SQ] Business Dashboard Entry Screen - Coming Soon (Albanian)';
 
   @override
   String get contentFilter => '[SQ] Content Filter (Albanian)';
@@ -1095,7 +1177,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon => '[SQ] Business CRM Entry Screen - Coming Soon (Albanian)';
+  String get businessCrmEntryScreenComingSoon =>
+      '[SQ] Business CRM Entry Screen - Coming Soon (Albanian)';
 
   @override
   String get adminDashboard => '[SQ] Admin Dashboard';
@@ -1106,13 +1189,16 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[SQ] Error loading dashboard: \$error (Albanian)';
+  String get errorLoadingDashboardError =>
+      '[SQ] Error loading dashboard: \$error (Albanian)';
 
   @override
-  String get gameDeletedSuccessfully => '[SQ] Game deleted successfully! (Albanian)';
+  String get gameDeletedSuccessfully =>
+      '[SQ] Game deleted successfully! (Albanian)';
 
   @override
-  String get viewResponsesComingSoon => '[SQ] View responses - Coming soon! (Albanian)';
+  String get viewResponsesComingSoon =>
+      '[SQ] View responses - Coming soon! (Albanian)';
 
   @override
   String get deleteProvider => '[SQ] Delete Provider';
@@ -1121,7 +1207,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get errorLoadingRewards => '[SQ] Error loading rewards (Albanian)';
 
   @override
-  String get failedToDeleteAccountE => '[SQ] Failed to delete account: \$e (Albanian)';
+  String get failedToDeleteAccountE =>
+      '[SQ] Failed to delete account: \$e (Albanian)';
 
   @override
   String get invited1 => '[SQ] Invited (Albanian)';
@@ -1136,7 +1223,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get noEvents => '[SQ] No events (Albanian)';
 
   @override
-  String get gameCreatedSuccessfully => '[SQ] Game created successfully! (Albanian)';
+  String get gameCreatedSuccessfully =>
+      '[SQ] Game created successfully! (Albanian)';
 
   @override
   String get add1 => '[SQ] Add (Albanian)';
@@ -1156,10 +1244,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get clients => '[SQ] Clients (Albanian)';
 
   @override
-  String get noAmbassadorDataAvailable => '[SQ] No ambassador data available (Albanian)';
+  String get noAmbassadorDataAvailable =>
+      '[SQ] No ambassador data available (Albanian)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[SQ] Background deleted successfully! (Albanian)';
+  String get backgroundDeletedSuccessfully =>
+      '[SQ] Background deleted successfully! (Albanian)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1167,7 +1257,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[SQ] No analytics data available yet. (Albanian)';
+  String get noAnalyticsDataAvailableYet =>
+      '[SQ] No analytics data available yet. (Albanian)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1175,7 +1266,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon => '[SQ] Business Phone Booking Entry Screen - Coming Soon (Albanian)';
+  String get businessPhoneBookingEntryScreenComingSoon =>
+      '[SQ] Business Phone Booking Entry Screen - Coming Soon (Albanian)';
 
   @override
   String get verification => '[SQ] Verification (Albanian)';
@@ -1222,7 +1314,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get businessProfile => '[SQ] Business Profile (Albanian)';
 
   @override
-  String get businessBookingEntryScreenComingSoon => '[SQ] Business Booking Entry Screen - Coming Soon (Albanian)';
+  String get businessBookingEntryScreenComingSoon =>
+      '[SQ] Business Booking Entry Screen - Coming Soon (Albanian)';
 
   @override
   String get createNewSurvey => '[SQ] Create New Survey (Albanian)';
@@ -1246,7 +1339,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get loginFailedE => '[SQ] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[SQ] Invitation sent successfully! (Albanian)';
+  String get invitationSentSuccessfully =>
+      '[SQ] Invitation sent successfully! (Albanian)';
 
   @override
   String get registering => '[SQ] Registering... (Albanian)';
@@ -1260,13 +1354,16 @@ class AppLocalizationsSq extends AppLocalizations {
   String get home1 => '[SQ] Home (Albanian)';
 
   @override
-  String get errorSavingSettingsE => '[SQ] Error saving settings: \$e (Albanian)';
+  String get errorSavingSettingsE =>
+      '[SQ] Error saving settings: \$e (Albanian)';
 
   @override
-  String get appVersionAndInformation => '[SQ] App version and information (Albanian)';
+  String get appVersionAndInformation =>
+      '[SQ] App version and information (Albanian)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon => '[SQ] Business Subscription Entry Screen - Coming Soon (Albanian)';
+  String get businessSubscriptionEntryScreenComingSoon =>
+      '[SQ] Business Subscription Entry Screen - Coming Soon (Albanian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1274,7 +1371,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully => '[SQ] Your payment has been processed successfully. (Albanian)';
+  String get yourPaymentHasBeenProcessedSuccessfully =>
+      '[SQ] Your payment has been processed successfully. (Albanian)';
 
   @override
   String get errorE => '[SQ] Error: \$e (Albanian)';
@@ -1283,7 +1381,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get viewAll1 => '[SQ] View All (Albanian)';
 
   @override
-  String get editSurveyComingSoon => '[SQ] Edit survey - Coming soon! (Albanian)';
+  String get editSurveyComingSoon =>
+      '[SQ] Edit survey - Coming soon! (Albanian)';
 
   @override
   String get enterOtp => '[SQ] Enter OTP (Albanian)';
@@ -1292,7 +1391,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get payment => '[SQ] Payment (Albanian)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests => '[SQ] Automatically confirm new booking requests (Albanian)';
+  String get automaticallyConfirmNewBookingRequests =>
+      '[SQ] Automatically confirm new booking requests (Albanian)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1305,7 +1405,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[SQ] Please sign in to upload a background (Albanian)';
+  String get pleaseSignInToUploadABackground =>
+      '[SQ] Please sign in to upload a background (Albanian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1322,19 +1423,22 @@ class AppLocalizationsSq extends AppLocalizations {
   String get autoconfirmBookings => '[SQ] Auto-Confirm Bookings (Albanian)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan => '[SQ] Redirecting to Stripe checkout for Pro plan... (Albanian)';
+  String get redirectingToStripeCheckoutForProPlan =>
+      '[SQ] Redirecting to Stripe checkout for Pro plan... (Albanian)';
 
   @override
   String get exportAsCsv => '[SQ] Export as CSV (Albanian)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[SQ] Delete functionality coming soon! (Albanian)';
+  String get deleteFunctionalityComingSoon =>
+      '[SQ] Delete functionality coming soon! (Albanian)';
 
   @override
   String get editClient => '[SQ] Edit Client (Albanian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage => '[SQ] Are you sure you want to delete this message? (Albanian)';
+  String get areYouSureYouWantToDeleteThisMessage =>
+      '[SQ] Are you sure you want to delete this message? (Albanian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1345,31 +1449,39 @@ class AppLocalizationsSq extends AppLocalizations {
   String get notAuthenticated => '[SQ] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[SQ] Privacy request sent to your parents! (Albanian)';
+  String get privacyRequestSentToYourParents =>
+      '[SQ] Privacy request sent to your parents! (Albanian)';
 
   @override
-  String get clientDeletedSuccessfully => '[SQ] Client deleted successfully! (Albanian)';
+  String get clientDeletedSuccessfully =>
+      '[SQ] Client deleted successfully! (Albanian)';
 
   @override
-  String get failedToCancelSubscription => '[SQ] Failed to cancel subscription (Albanian)';
+  String get failedToCancelSubscription =>
+      '[SQ] Failed to cancel subscription (Albanian)';
 
   @override
   String get allLanguages => '[SQ] All Languages (Albanian)';
 
   @override
-  String get slotDeletedSuccessfully => '[SQ] Slot deleted successfully (Albanian)';
+  String get slotDeletedSuccessfully =>
+      '[SQ] Slot deleted successfully (Albanian)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon => '[SQ] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon =>
+      '[SQ] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin => '[SQ] Parents must approve before children can join (Albanian)';
+  String get parentsMustApproveBeforeChildrenCanJoin =>
+      '[SQ] Parents must approve before children can join (Albanian)';
 
   @override
-  String get subscribeToPro1499mo => '[SQ] Subscribe to Pro (€14.99/mo) (Albanian)';
+  String get subscribeToPro1499mo =>
+      '[SQ] Subscribe to Pro (€14.99/mo) (Albanian)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon => '[SQ] Business Availability Entry Screen - Coming Soon (Albanian)';
+  String get businessAvailabilityEntryScreenComingSoon =>
+      '[SQ] Business Availability Entry Screen - Coming Soon (Albanian)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1383,7 +1495,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get submitBooking => '[SQ] Submit Booking (Albanian)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment => '[SQ] Are you sure you want to cancel this appointment? (Albanian)';
+  String get areYouSureYouWantToCancelThisAppointment =>
+      '[SQ] Are you sure you want to cancel this appointment? (Albanian)';
 
   @override
   String get noUpcomingBookings => '[SQ] No upcoming bookings (Albanian)';
@@ -1401,7 +1514,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get goToDashboard => '[SQ] Go to Dashboard (Albanian)';
 
   @override
-  String get ambassadorQuotaDashboard => '[SQ] Ambassador Quota Dashboard (Albanian)';
+  String get ambassadorQuotaDashboard =>
+      '[SQ] Ambassador Quota Dashboard (Albanian)';
 
   @override
   String get adminSettings => '[SQ] Admin Settings';
@@ -1439,7 +1553,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[SQ] Client added successfully! (Albanian)';
+  String get clientAddedSuccessfully =>
+      '[SQ] Client added successfully! (Albanian)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1457,7 +1572,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get bookAppointment => '[SQ] Book Appointment (Albanian)';
 
   @override
-  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[SQ] Delete (Albanian)';
@@ -1472,13 +1588,15 @@ class AppLocalizationsSq extends AppLocalizations {
   String get manageSubscription => '[SQ] Manage Subscription (Albanian)';
 
   @override
-  String get requiresInstallFallback => '[SQ] Requires Install Fallback (Albanian)';
+  String get requiresInstallFallback =>
+      '[SQ] Requires Install Fallback (Albanian)';
 
   @override
   String get paymentConfirmation => '[SQ] Payment Confirmation (Albanian)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[SQ] Promo applied! Your next bill is free. (Albanian)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[SQ] Promo applied! Your next bill is free. (Albanian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1489,13 +1607,16 @@ class AppLocalizationsSq extends AppLocalizations {
   String get errorLoadingSlots => '[SQ] Error loading slots (Albanian)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame => '[SQ] Allow other users to find and join this game (Albanian)';
+  String get allowOtherUsersToFindAndJoinThisGame =>
+      '[SQ] Allow other users to find and join this game (Albanian)';
 
   @override
-  String get businessOnboardingScreenComingSoon => '[SQ] Business Onboarding Screen - Coming Soon (Albanian)';
+  String get businessOnboardingScreenComingSoon =>
+      '[SQ] Business Onboarding Screen - Coming Soon (Albanian)';
 
   @override
-  String get activateBusinessProfile => '[SQ] Activate Business Profile (Albanian)';
+  String get activateBusinessProfile =>
+      '[SQ] Activate Business Profile (Albanian)';
 
   @override
   String get contentNotFound => '[SQ] Content not found (Albanian)';
@@ -1537,7 +1658,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get shareLink => '[SQ] Share Link (Albanian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider => '[SQ] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider =>
+      '[SQ] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[SQ] Delete Appointment (Albanian)';
@@ -1557,10 +1679,12 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[SQ] Update your business information (Albanian)';
+  String get updateYourBusinessInformation =>
+      '[SQ] Update your business information (Albanian)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider => '[SQ] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider =>
+      '[SQ] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[SQ] Parent Dashboard (Albanian)';
@@ -1583,10 +1707,12 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb => '[SQ] Studio booking is only available on web (Albanian)';
+  String get studioBookingIsOnlyAvailableOnWeb =>
+      '[SQ] Studio booking is only available on web (Albanian)';
 
   @override
-  String get errorLoadingBranchesE => '[SQ] Error loading branches: \$e (Albanian)';
+  String get errorLoadingBranchesE =>
+      '[SQ] Error loading branches: \$e (Albanian)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1602,13 +1728,15 @@ class AppLocalizationsSq extends AppLocalizations {
   String get none => '[SQ] None (Albanian)';
 
   @override
-  String get failedToUpdateConsentE => '[SQ] Failed to update consent: \$e (Albanian)';
+  String get failedToUpdateConsentE =>
+      '[SQ] Failed to update consent: \$e (Albanian)';
 
   @override
   String get welcome1 => '[SQ] Welcome (Albanian)';
 
   @override
-  String get failedToCreateSessionE => '[SQ] Failed to create session: \$e (Albanian)';
+  String get failedToCreateSessionE =>
+      '[SQ] Failed to create session: \$e (Albanian)';
 
   @override
   String get inviteContact => '[SQ] Invite Contact (Albanian)';
@@ -1617,7 +1745,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get surveyEditor => '[SQ] Survey Editor (Albanian)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[SQ] Failed to start Basic subscription: \$e (Albanian)';
+  String get failedToStartBasicSubscriptionE =>
+      '[SQ] Failed to start Basic subscription: \$e (Albanian)';
 
   @override
   String get mySchedule => '[SQ] My Schedule (Albanian)';
@@ -1637,10 +1766,12 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[SQ] Settings saved successfully! (Albanian)';
+  String get settingsSavedSuccessfully =>
+      '[SQ] Settings saved successfully! (Albanian)';
 
   @override
-  String get linkCopiedToClipboard => '[SQ] Link copied to clipboard! (Albanian)';
+  String get linkCopiedToClipboard =>
+      '[SQ] Link copied to clipboard! (Albanian)';
 
   @override
   String get accept1 => '[SQ] Accept (Albanian)';
@@ -1657,7 +1788,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[SQ] Room deleted successfully! (Albanian)';
+  String get roomDeletedSuccessfully =>
+      '[SQ] Room deleted successfully! (Albanian)';
 
   @override
   String get businessCalendar => '[SQ] Business Calendar (Albanian)';
@@ -1722,7 +1854,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get cancel1 => '[SQ] Cancel (Albanian)';
 
   @override
-  String get subscriptionActivatedSuccessfully => '[SQ] Subscription activated successfully! (Albanian)';
+  String get subscriptionActivatedSuccessfully =>
+      '[SQ] Subscription activated successfully! (Albanian)';
 
   @override
   String activityLogaction(Object action) {
@@ -1733,7 +1866,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get broadcast => '[SQ] Broadcast (Albanian)';
 
   @override
-  String get noEventsScheduledThisWeek => '[SQ] No events scheduled this week (Albanian)';
+  String get noEventsScheduledThisWeek =>
+      '[SQ] No events scheduled this week (Albanian)';
 
   @override
   String get googleCalendar => '[SQ] Google Calendar (Albanian)';
@@ -1745,7 +1879,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get childDashboard => '[SQ] Child Dashboard (Albanian)';
 
   @override
-  String get failedToUploadBackgroundE => '[SQ] Failed to upload background: \$e (Albanian)';
+  String get failedToUploadBackgroundE =>
+      '[SQ] Failed to upload background: \$e (Albanian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1764,7 +1899,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get noAppointments => '[SQ] No appointments (Albanian)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[SQ] • Unlimited bookings per week (Albanian)';
+  String get unlimitedBookingsPerWeek =>
+      '[SQ] • Unlimited bookings per week (Albanian)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1772,16 +1908,19 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[SQ] Scheduled at: \$scheduledAt (Albanian)';
+  String get scheduledAtScheduledat =>
+      '[SQ] Scheduled at: \$scheduledAt (Albanian)';
 
   @override
   String get selectStaff => '[SQ] Select Staff (Albanian)';
 
   @override
-  String get subscriptionCancelledSuccessfully => '[SQ] Subscription cancelled successfully (Albanian)';
+  String get subscriptionCancelledSuccessfully =>
+      '[SQ] Subscription cancelled successfully (Albanian)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[SQ] Cancel Appointment (Albanian)';
@@ -1795,7 +1934,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get businessSignup => '[SQ] Business Signup (Albanian)';
 
   @override
-  String get businessCompletionScreenComingSoon => '[SQ] Business Completion Screen - Coming Soon (Albanian)';
+  String get businessCompletionScreenComingSoon =>
+      '[SQ] Business Completion Screen - Coming Soon (Albanian)';
 
   @override
   String get createGame1 => '[SQ] Create Game (Albanian)';
@@ -1806,10 +1946,12 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[SQ] Please enter a promo code (Albanian)';
+  String get pleaseEnterAPromoCode =>
+      '[SQ] Please enter a promo code (Albanian)';
 
   @override
-  String get errorLoadingAvailabilityE => '[SQ] Error loading availability: \$e (Albanian)';
+  String get errorLoadingAvailabilityE =>
+      '[SQ] Error loading availability: \$e (Albanian)';
 
   @override
   String get parentalControls => '[SQ] Parental Controls (Albanian)';
@@ -1818,13 +1960,15 @@ class AppLocalizationsSq extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[SQ] Child linked successfully! (Albanian)';
+  String get childLinkedSuccessfully =>
+      '[SQ] Child linked successfully! (Albanian)';
 
   @override
   String get create => '[SQ] Create (Albanian)';
 
   @override
-  String get noExternalMeetingsFound => '[SQ] No external meetings found. (Albanian)';
+  String get noExternalMeetingsFound =>
+      '[SQ] No external meetings found. (Albanian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1832,13 +1976,15 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[SQ] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[SQ] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[SQ] Scheduler Screen (Albanian)';
 
   @override
-  String get clientUpdatedSuccessfully => '[SQ] Client updated successfully! (Albanian)';
+  String get clientUpdatedSuccessfully =>
+      '[SQ] Client updated successfully! (Albanian)';
 
   @override
   String get surveyResponses => '[SQ] Survey Responses (Albanian)';
@@ -1864,10 +2010,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get errorLoadingEvents => '[SQ] Error loading events (Albanian)';
 
   @override
-  String get errorLoadingOrganizations => '[SQ] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[SQ] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[SQ] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[SQ] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[SQ] Success (Albanian)';
@@ -1886,10 +2034,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get readWrite => '[SQ] Read & Write (Albanian)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan => '[SQ] Redirecting to Stripe checkout for Basic plan... (Albanian)';
+  String get redirectingToStripeCheckoutForBasicPlan =>
+      '[SQ] Redirecting to Stripe checkout for Basic plan... (Albanian)';
 
   @override
-  String get errorSavingConfigurationE => '[SQ] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[SQ] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[SQ] Pick Date (Albanian)';
@@ -1925,10 +2075,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get businessLogin => '[SQ] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[SQ] Invoice created successfully! (Albanian)';
+  String get invoiceCreatedSuccessfully =>
+      '[SQ] Invoice created successfully! (Albanian)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[SQ] No time series data available (Albanian)';
+  String get noTimeSeriesDataAvailable =>
+      '[SQ] No time series data available (Albanian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1941,7 +2093,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[SQ] Failed to send privacy request: \$e (Albanian)';
+  String get failedToSendPrivacyRequestE =>
+      '[SQ] Failed to send privacy request: \$e (Albanian)';
 
   @override
   String get chooseYourPlan => '[SQ] Choose Your Plan (Albanian)';
@@ -1956,13 +2109,15 @@ class AppLocalizationsSq extends AppLocalizations {
   String get eventCreated => '[SQ] Event created (Albanian)';
 
   @override
-  String get subscribeToBasic499mo => '[SQ] Subscribe to Basic (€4.99/mo) (Albanian)';
+  String get subscribeToBasic499mo =>
+      '[SQ] Subscribe to Basic (€4.99/mo) (Albanian)';
 
   @override
   String get completion => '[SQ] Completion (Albanian)';
 
   @override
-  String get supportTicketSubmitted => '[SQ] Support ticket submitted (Albanian)';
+  String get supportTicketSubmitted =>
+      '[SQ] Support ticket submitted (Albanian)';
 
   @override
   String get monetizationSettings => '[SQ] Monetization Settings (Albanian)';
@@ -1977,10 +2132,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get deleteSurvey => '[SQ] Delete Survey (Albanian)';
 
   @override
-  String get gameApprovedSuccessfully => '[SQ] Game approved successfully! (Albanian)';
+  String get gameApprovedSuccessfully =>
+      '[SQ] Game approved successfully! (Albanian)';
 
   @override
-  String get errorLoadingPermissionsError => '[SQ] Error loading permissions: \$error (Albanian)';
+  String get errorLoadingPermissionsError =>
+      '[SQ] Error loading permissions: \$error (Albanian)';
 
   @override
   String get referrals => '[SQ] Referrals (Albanian)';
@@ -2022,7 +2179,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get organizations => '[SQ] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[SQ] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[SQ] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[SQ] Create New Game (Albanian)';
@@ -2031,10 +2189,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get next1 => '[SQ] Next (Albanian)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[SQ] Background uploaded successfully! (Albanian)';
+  String get backgroundUploadedSuccessfully =>
+      '[SQ] Background uploaded successfully! (Albanian)';
 
   @override
-  String get noAppointmentRequestsFound => '[SQ] No appointment requests found. (Albanian)';
+  String get noAppointmentRequestsFound =>
+      '[SQ] No appointment requests found. (Albanian)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2061,16 +2221,19 @@ class AppLocalizationsSq extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => '[SQ] Failed to create game: \$e (Albanian)';
+  String get failedToCreateGameE =>
+      '[SQ] Failed to create game: \$e (Albanian)';
 
   @override
   String get noChartDataAvailable => '[SQ] No chart data available (Albanian)';
 
   @override
-  String get phonebasedBookingSystem => '[SQ] • Phone-based booking system (Albanian)';
+  String get phonebasedBookingSystem =>
+      '[SQ] • Phone-based booking system (Albanian)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2079,7 +2242,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get invoices => '[SQ] Invoices (Albanian)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2106,10 +2270,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get iDoNotConsent => '[SQ] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient => '[SQ] No clients found. Add your first client! (Albanian)';
+  String get noClientsFoundAddYourFirstClient =>
+      '[SQ] No clients found. Add your first client! (Albanian)';
 
   @override
-  String get settingsDialogWillBeImplementedHere => '[SQ] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere =>
+      '[SQ] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[SQ] Group: \$groupId';
@@ -2121,7 +2287,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get forward => '[SQ] Forward (Albanian)';
 
   @override
-  String get roomAddedSuccessfully => '[SQ] Room added successfully! (Albanian)';
+  String get roomAddedSuccessfully =>
+      '[SQ] Room added successfully! (Albanian)';
 
   @override
   String get option => '[SQ] • \$option (Albanian)';
@@ -2132,7 +2299,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[SQ] • CRM dashboard with analytics (Albanian)';
+  String get crmDashboardWithAnalytics =>
+      '[SQ] • CRM dashboard with analytics (Albanian)';
 
   @override
   String get contentLibrary1 => '[SQ] Content Library (Albanian)';
@@ -2141,28 +2309,34 @@ class AppLocalizationsSq extends AppLocalizations {
   String get reply => '[SQ] Reply (Albanian)';
 
   @override
-  String get subscriptionManagement => '[SQ] Subscription Management (Albanian)';
+  String get subscriptionManagement =>
+      '[SQ] Subscription Management (Albanian)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere => '[SQ] Monetization settings will be implemented here (Albanian)';
+  String get monetizationSettingsWillBeImplementedHere =>
+      '[SQ] Monetization settings will be implemented here (Albanian)';
 
   @override
-  String get failedToApplyPromoCodeE => '[SQ] Failed to apply promo code: \$e (Albanian)';
+  String get failedToApplyPromoCodeE =>
+      '[SQ] Failed to apply promo code: \$e (Albanian)';
 
   @override
   String get editProvider => '[SQ] Edit Provider';
 
   @override
-  String get localizationContribution => '[SQ] Localization Contribution (Albanian)';
+  String get localizationContribution =>
+      '[SQ] Localization Contribution (Albanian)';
 
   @override
   String get parentalConsent => '[SQ] Parental Consent (Albanian)';
 
   @override
-  String get businessSignupScreenComingSoon => '[SQ] Business Signup Screen - Coming Soon (Albanian)';
+  String get businessSignupScreenComingSoon =>
+      '[SQ] Business Signup Screen - Coming Soon (Albanian)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment => '[SQ] Are you sure you want to delete this appointment? (Albanian)';
+  String get areYouSureYouWantToDeleteThisAppointment =>
+      '[SQ] Are you sure you want to delete this appointment? (Albanian)';
 
   @override
   String get syncAppointment => '[SQ] Sync Appointment (Albanian)';
@@ -2174,13 +2348,15 @@ class AppLocalizationsSq extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[SQ] Business Setup Screen - Coming Soon (Albanian)';
+  String get businessSetupScreenComingSoon =>
+      '[SQ] Business Setup Screen - Coming Soon (Albanian)';
 
   @override
   String get edit1 => '[SQ] Edit (Albanian)';
 
   @override
-  String get noEventsScheduledThisMonth => '[SQ] No events scheduled this month (Albanian)';
+  String get noEventsScheduledThisMonth =>
+      '[SQ] No events scheduled this month (Albanian)';
 
   @override
   String get businessDashboard => '[SQ] Business Dashboard (Albanian)';
@@ -2194,7 +2370,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[SQ] Manage Staff Availability (Albanian)';
+  String get manageStaffAvailability =>
+      '[SQ] Manage Staff Availability (Albanian)';
 
   @override
   String get noMissingTranslations => '[SQ] No missing translations (Albanian)';
@@ -2211,7 +2388,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get noUsers => '[SQ] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[SQ] Error loading referral code (Albanian)';
+  String get errorLoadingReferralCode =>
+      '[SQ] Error loading referral code (Albanian)';
 
   @override
   String get allCountries => '[SQ] All Countries (Albanian)';
@@ -2226,7 +2404,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get deleteMessage => '[SQ] Delete Message (Albanian)';
 
   @override
-  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[SQ] changeRole (TRANSLATE)';
@@ -2237,7 +2416,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[SQ] Opening customer portal... (Albanian)';
+  String get openingCustomerPortal =>
+      '[SQ] Opening customer portal... (Albanian)';
 
   @override
   String get signOut => '[SQ] Sign Out (Albanian)';
@@ -2248,7 +2428,8 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[SQ] Upgrade to Business (Albanian)';
@@ -2274,7 +2455,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[SQ] View Responses (Albanian)';
@@ -2303,7 +2485,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2321,7 +2504,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2330,7 +2514,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2378,7 +2563,8 @@ class AppLocalizationsSq extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2426,10 +2612,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle => '[SQ] Congratulations! You\'re now an Ambassador! (Albanian)';
+  String get ambassadorPromotionTitle =>
+      '[SQ] Congratulations! You\'re now an Ambassador! (Albanian)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2440,7 +2628,11 @@ class AppLocalizationsSq extends AppLocalizations {
   String get tierUpgradeTitle => '[SQ] Tier Upgrade! 🎉 (Albanian)';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[SQ] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Albanian)';
   }
 
@@ -2448,20 +2640,29 @@ class AppLocalizationsSq extends AppLocalizations {
   String get monthlyReminderTitle => '[SQ] Monthly Goal Reminder (Albanian)';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[SQ] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Albanian)';
   }
 
   @override
-  String get performanceWarningTitle => '[SQ] Ambassador Performance Alert (Albanian)';
+  String get performanceWarningTitle =>
+      '[SQ] Ambassador Performance Alert (Albanian)';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[SQ] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Albanian)';
   }
 
   @override
-  String get ambassadorDemotionTitle => '[SQ] Ambassador Status Update (Albanian)';
+  String get ambassadorDemotionTitle =>
+      '[SQ] Ambassador Status Update (Albanian)';
 
   @override
   String ambassadorDemotionBody(String reason) {

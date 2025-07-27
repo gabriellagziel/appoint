@@ -88,7 +88,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get playtimeLiveScheduled => '[FO] Livifundur settur upp';
 
   @override
-  String get revokeAccessConfirmation => '[FO] [FO] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation =>
+      '[FO] [FO] Are you sure you want to revoke access?';
 
   @override
   String get download => '[FO] [FO] Download';
@@ -122,7 +123,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get playtimeModeVirtual => '[FO] Røktarháttur';
 
   @override
-  String get playtimeDescription => '[FO] [FO] Enjoy live or virtual games with your friends!';
+  String get playtimeDescription =>
+      '[FO] [FO] Enjoy live or virtual games with your friends!';
 
   @override
   String get delete => '[FO] Strika';
@@ -277,7 +279,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get scheduleForLater => '[FO] [FO] Schedule for Later';
 
   @override
-  String get accessRevokedSuccessfully => '[FO] [FO] Access revoked successfully';
+  String get accessRevokedSuccessfully =>
+      '[FO] [FO] Access revoked successfully';
 
   @override
   String type(String type) {
@@ -402,7 +405,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get dashboard => '[FO] Stýripanel';
 
   @override
-  String get noPermissionForBroadcast => '[FO] [FO] No permission for broadcast';
+  String get noPermissionForBroadcast =>
+      '[FO] [FO] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[FO] Playtime Games – Admin';
@@ -479,7 +483,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get playtimeEnterGameName => '[FO] [FO] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[FO] [FO] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[FO] [FO] Please login to access family features';
 
   @override
   String get myInvites => '[FO] Mín boð';
@@ -533,7 +538,8 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[FO] [FO] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[FO] [FO] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[FO] Admin Metrics';
@@ -554,40 +560,52 @@ class AppLocalizationsFo extends AppLocalizations {
   String get contentLibrary => '[FO] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[FO] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[FO] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[FO] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[FO] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[FO] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[FO] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[FO] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[FO] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[FO] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[FO] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[FO] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[FO] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[FO] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[FO] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[FO] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[FO] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[FO] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[FO] Invalid credentials. Please try again.';
 
   @override
-  String get authErrorAccountExistsWithDifferentCredential => '[FO] An account already exists with this email using a different sign-in method.';
+  String get authErrorAccountExistsWithDifferentCredential =>
+      '[FO] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[FO] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[FO] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[FO] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[FO] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -604,19 +622,24 @@ class AppLocalizationsFo extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[FO] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[FO] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[FO] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[FO] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get authErrorInvalidVerificationCode => '[FO] The verification code is invalid.';
+  String get authErrorInvalidVerificationCode =>
+      '[FO] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[FO] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[FO] The verification ID is invalid.';
 
   @override
-  String get authErrorMissingVerificationCode => '[FO] Please enter the verification code.';
+  String get authErrorMissingVerificationCode =>
+      '[FO] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[FO] Missing verification ID.';
@@ -628,43 +651,56 @@ class AppLocalizationsFo extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[FO] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[FO] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[FO] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[FO] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[FO] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[FO] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[FO] Your session has expired. Please log in again.';
 
   @override
-  String get authErrorMultiFactorAuthRequired => '[FO] Multi-factor authentication is required.';
+  String get authErrorMultiFactorAuthRequired =>
+      '[FO] Multi-factor authentication is required.';
 
   @override
-  String get authErrorMultiFactorInfoNotFound => '[FO] Multi-factor information not found.';
+  String get authErrorMultiFactorInfoNotFound =>
+      '[FO] Multi-factor information not found.';
 
   @override
-  String get authErrorMissingMultiFactorSession => '[FO] Missing multi-factor session.';
+  String get authErrorMissingMultiFactorSession =>
+      '[FO] Missing multi-factor session.';
 
   @override
-  String get authErrorInvalidMultiFactorSession => '[FO] Invalid multi-factor session.';
+  String get authErrorInvalidMultiFactorSession =>
+      '[FO] Invalid multi-factor session.';
 
   @override
-  String get authErrorSecondFactorAlreadyInUse => '[FO] This second factor is already in use.';
+  String get authErrorSecondFactorAlreadyInUse =>
+      '[FO] This second factor is already in use.';
 
   @override
-  String get authErrorMaximumSecondFactorCountExceeded => '[FO] Maximum number of second factors exceeded.';
+  String get authErrorMaximumSecondFactorCountExceeded =>
+      '[FO] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[FO] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[FO] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get authErrorEmailChangeNeedsVerification => '[FO] Email change requires verification.';
+  String get authErrorEmailChangeNeedsVerification =>
+      '[FO] Email change requires verification.';
 
   @override
-  String get authErrorPhoneNumberAlreadyExists => '[FO] This phone number is already in use.';
+  String get authErrorPhoneNumberAlreadyExists =>
+      '[FO] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[FO] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[FO] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[FO] The ID token is invalid.';
@@ -676,10 +712,12 @@ class AppLocalizationsFo extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[FO] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[FO] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[FO] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[FO] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[FO] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[FO] Invalid custom claims provided.';
@@ -688,70 +726,87 @@ class AppLocalizationsFo extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[FO] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[FO] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[FO] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[FO] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[FO] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[FO] The display name is invalid.';
 
   @override
-  String get authErrorInvalidDynamicLinkDomain => '[FO] The dynamic link domain is invalid.';
+  String get authErrorInvalidDynamicLinkDomain =>
+      '[FO] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[FO] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[FO] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[FO] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[FO] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[FO] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[FO] The hash block size is invalid.';
 
   @override
-  String get authErrorInvalidHashDerivedKeyLength => '[FO] The hash derived key length is invalid.';
+  String get authErrorInvalidHashDerivedKeyLength =>
+      '[FO] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[FO] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[FO] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[FO] The hash memory cost is invalid.';
 
   @override
-  String get authErrorInvalidHashParallelization => '[FO] The hash parallelization is invalid.';
+  String get authErrorInvalidHashParallelization =>
+      '[FO] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[FO] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[FO] The hash rounds value is invalid.';
 
   @override
-  String get authErrorInvalidHashSaltSeparator => '[FO] The hash salt separator is invalid.';
+  String get authErrorInvalidHashSaltSeparator =>
+      '[FO] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[FO] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[FO] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[FO] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[FO] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[FO] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[FO] The provider ID is invalid.';
 
   @override
-  String get authErrorInvalidSessionCookieDuration => '[FO] The session cookie duration is invalid.';
+  String get authErrorInvalidSessionCookieDuration =>
+      '[FO] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[FO] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[FO] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[FO] The user import record is invalid.';
 
   @override
-  String get authErrorMaximumUserCountExceeded => '[FO] Maximum user import count exceeded.';
+  String get authErrorMaximumUserCountExceeded =>
+      '[FO] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[FO] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[FO] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[FO] Missing continue URL.';
@@ -766,7 +821,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get authErrorMissingUid => '[FO] Missing UID.';
 
   @override
-  String get authErrorMissingOauthClientSecret => '[FO] Missing OAuth client secret.';
+  String get authErrorMissingOauthClientSecret =>
+      '[FO] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[FO] Firebase project not found.';
@@ -775,19 +831,23 @@ class AppLocalizationsFo extends AppLocalizations {
   String get authErrorReservedClaims => '[FO] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[FO] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[FO] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[FO] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[FO] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[FO] The UID is already in use.';
 
   @override
-  String get authErrorUnauthorizedContinueUri => '[FO] The continue URL domain is not whitelisted.';
+  String get authErrorUnauthorizedContinueUri =>
+      '[FO] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[FO] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[FO] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -836,7 +896,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get virtualSessionCreatedInvitingFriends => '[FO] Virtual session created! Inviting friends... (Faroese)';
+  String get virtualSessionCreatedInvitingFriends =>
+      '[FO] Virtual session created! Inviting friends... (Faroese)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -877,13 +938,15 @@ class AppLocalizationsFo extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[FO] Subscription unavailable (Faroese)';
+  String get subscriptionUnavailable =>
+      '[FO] Subscription unavailable (Faroese)';
 
   @override
   String get confirmBooking => '[FO] Confirm Booking (Faroese)';
 
   @override
-  String get failedToUpdatePermissionE => '[FO] Failed to update permission: \$e (Faroese)';
+  String get failedToUpdatePermissionE =>
+      '[FO] Failed to update permission: \$e (Faroese)';
 
   @override
   String get reject => '[FO] Reject (Faroese)';
@@ -911,7 +974,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get resolve => '[FO] Resolve (Faroese)';
 
   @override
-  String get errorLoadingSurveysError => '[FO] Error loading surveys: \$error (Faroese)';
+  String get errorLoadingSurveysError =>
+      '[FO] Error loading surveys: \$error (Faroese)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -919,7 +983,8 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[FO] Get help with your account (Faroese)';
+  String get getHelpWithYourAccount =>
+      '[FO] Get help with your account (Faroese)';
 
   @override
   String get pay => '[FO] Pay (Faroese)';
@@ -934,7 +999,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[FO] Changes saved successfully! (Faroese)';
+  String get changesSavedSuccessfully =>
+      '[FO] Changes saved successfully! (Faroese)';
 
   @override
   String get createNewInvoice => '[FO] Create New Invoice (Faroese)';
@@ -954,7 +1020,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get profileSaved => '[FO] Profile saved! (Faroese)';
 
   @override
-  String get receiveBookingNotificationsViaEmail => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get receiveBookingNotificationsViaEmail =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -985,7 +1052,8 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get youWillReceiveAConfirmationEmailShortly => '[FO] You will receive a confirmation email shortly. (Faroese)';
+  String get youWillReceiveAConfirmationEmailShortly =>
+      '[FO] You will receive a confirmation email shortly. (Faroese)';
 
   @override
   String get addQuestion => '[FO] Add Question (Faroese)';
@@ -1014,22 +1082,26 @@ class AppLocalizationsFo extends AppLocalizations {
   String get surveyManagement => '[FO] Survey Management (Faroese)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[FO] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[FO] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[FO] No rooms found. Add your first room! (Faroese)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[FO] No rooms found. Add your first room! (Faroese)';
 
   @override
   String get readOurPrivacyPolicy => '[FO] Read our privacy policy (Faroese)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[FO] Could not open privacy policy (Faroese)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[FO] Could not open privacy policy (Faroese)';
 
   @override
   String get refresh1 => '[FO] Refresh (Faroese)';
 
   @override
-  String get roomUpdatedSuccessfully => '[FO] Room updated successfully! (Faroese)';
+  String get roomUpdatedSuccessfully =>
+      '[FO] Room updated successfully! (Faroese)';
 
   @override
   String get contentDetail => '[FO] Content Detail (Faroese)';
@@ -1038,7 +1110,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get cancelSubscription => '[FO] Cancel Subscription (Faroese)';
 
   @override
-  String get successfullyRegisteredAsAmbassador => '[FO] Successfully registered as Ambassador! (Faroese)';
+  String get successfullyRegisteredAsAmbassador =>
+      '[FO] Successfully registered as Ambassador! (Faroese)';
 
   @override
   String get save1 => '[FO] Save (Faroese)';
@@ -1047,7 +1120,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get copy1 => '[FO] Copy (Faroese)';
 
   @override
-  String get failedToSendInvitationE => '[FO] Failed to send invitation: \$e (Faroese)';
+  String get failedToSendInvitationE =>
+      '[FO] Failed to send invitation: \$e (Faroese)';
 
   @override
   String get surveyScore => '[FO] Survey Score (Faroese)';
@@ -1064,16 +1138,20 @@ class AppLocalizationsFo extends AppLocalizations {
   String get responseDetail => '[FO] Response Detail (Faroese)';
 
   @override
-  String get businessVerificationScreenComingSoon => 'شاشة التحقق من الأعمال - قريباً';
+  String get businessVerificationScreenComingSoon =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get businessProfileActivatedSuccessfully => 'تم تفعيل الملف التجاري بنجاح';
+  String get businessProfileActivatedSuccessfully =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[FO] Failed to start Pro subscription: \$e (Faroese)';
+  String get failedToStartProSubscriptionE =>
+      '[FO] Failed to start Pro subscription: \$e (Faroese)';
 
   @override
-  String get businessDashboardEntryScreenComingSoon => '[FO] Business Dashboard Entry Screen - Coming Soon (Faroese)';
+  String get businessDashboardEntryScreenComingSoon =>
+      '[FO] Business Dashboard Entry Screen - Coming Soon (Faroese)';
 
   @override
   String get contentFilter => '[FO] Content Filter (Faroese)';
@@ -1095,7 +1173,8 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get businessCrmEntryScreenComingSoon => '[FO] Business CRM Entry Screen - Coming Soon (Faroese)';
+  String get businessCrmEntryScreenComingSoon =>
+      '[FO] Business CRM Entry Screen - Coming Soon (Faroese)';
 
   @override
   String get adminDashboard => '[FO] Admin Dashboard';
@@ -1106,13 +1185,16 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[FO] Error loading dashboard: \$error (Faroese)';
+  String get errorLoadingDashboardError =>
+      '[FO] Error loading dashboard: \$error (Faroese)';
 
   @override
-  String get gameDeletedSuccessfully => '[FO] Game deleted successfully! (Faroese)';
+  String get gameDeletedSuccessfully =>
+      '[FO] Game deleted successfully! (Faroese)';
 
   @override
-  String get viewResponsesComingSoon => '[FO] View responses - Coming soon! (Faroese)';
+  String get viewResponsesComingSoon =>
+      '[FO] View responses - Coming soon! (Faroese)';
 
   @override
   String get deleteProvider => '[FO] Delete Provider';
@@ -1121,7 +1203,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get errorLoadingRewards => '[FO] Error loading rewards (Faroese)';
 
   @override
-  String get failedToDeleteAccountE => '[FO] Failed to delete account: \$e (Faroese)';
+  String get failedToDeleteAccountE =>
+      '[FO] Failed to delete account: \$e (Faroese)';
 
   @override
   String get invited1 => '[FO] Invited (Faroese)';
@@ -1136,7 +1219,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get noEvents => '[FO] No events (Faroese)';
 
   @override
-  String get gameCreatedSuccessfully => '[FO] Game created successfully! (Faroese)';
+  String get gameCreatedSuccessfully =>
+      '[FO] Game created successfully! (Faroese)';
 
   @override
   String get add1 => '[FO] Add (Faroese)';
@@ -1156,10 +1240,12 @@ class AppLocalizationsFo extends AppLocalizations {
   String get clients => '[FO] Clients (Faroese)';
 
   @override
-  String get noAmbassadorDataAvailable => '[FO] No ambassador data available (Faroese)';
+  String get noAmbassadorDataAvailable =>
+      '[FO] No ambassador data available (Faroese)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[FO] Background deleted successfully! (Faroese)';
+  String get backgroundDeletedSuccessfully =>
+      '[FO] Background deleted successfully! (Faroese)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1167,7 +1253,8 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[FO] No analytics data available yet. (Faroese)';
+  String get noAnalyticsDataAvailableYet =>
+      '[FO] No analytics data available yet. (Faroese)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1175,7 +1262,8 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get businessPhoneBookingEntryScreenComingSoon => '[FO] Business Phone Booking Entry Screen - Coming Soon (Faroese)';
+  String get businessPhoneBookingEntryScreenComingSoon =>
+      '[FO] Business Phone Booking Entry Screen - Coming Soon (Faroese)';
 
   @override
   String get verification => '[FO] Verification (Faroese)';
@@ -1222,7 +1310,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get businessProfile => '[FO] Business Profile (Faroese)';
 
   @override
-  String get businessBookingEntryScreenComingSoon => '[FO] Business Booking Entry Screen - Coming Soon (Faroese)';
+  String get businessBookingEntryScreenComingSoon =>
+      '[FO] Business Booking Entry Screen - Coming Soon (Faroese)';
 
   @override
   String get createNewSurvey => '[FO] Create New Survey (Faroese)';
@@ -1246,7 +1335,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get loginFailedE => '[FO] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[FO] Invitation sent successfully! (Faroese)';
+  String get invitationSentSuccessfully =>
+      '[FO] Invitation sent successfully! (Faroese)';
 
   @override
   String get registering => '[FO] Registering... (Faroese)';
@@ -1260,13 +1350,16 @@ class AppLocalizationsFo extends AppLocalizations {
   String get home1 => '[FO] Home (Faroese)';
 
   @override
-  String get errorSavingSettingsE => '[FO] Error saving settings: \$e (Faroese)';
+  String get errorSavingSettingsE =>
+      '[FO] Error saving settings: \$e (Faroese)';
 
   @override
-  String get appVersionAndInformation => '[FO] App version and information (Faroese)';
+  String get appVersionAndInformation =>
+      '[FO] App version and information (Faroese)';
 
   @override
-  String get businessSubscriptionEntryScreenComingSoon => '[FO] Business Subscription Entry Screen - Coming Soon (Faroese)';
+  String get businessSubscriptionEntryScreenComingSoon =>
+      '[FO] Business Subscription Entry Screen - Coming Soon (Faroese)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1274,7 +1367,8 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get yourPaymentHasBeenProcessedSuccessfully => '[FO] Your payment has been processed successfully. (Faroese)';
+  String get yourPaymentHasBeenProcessedSuccessfully =>
+      '[FO] Your payment has been processed successfully. (Faroese)';
 
   @override
   String get errorE => '[FO] Error: \$e (Faroese)';
@@ -1283,7 +1377,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get viewAll1 => '[FO] View All (Faroese)';
 
   @override
-  String get editSurveyComingSoon => '[FO] Edit survey - Coming soon! (Faroese)';
+  String get editSurveyComingSoon =>
+      '[FO] Edit survey - Coming soon! (Faroese)';
 
   @override
   String get enterOtp => '[FO] Enter OTP (Faroese)';
@@ -1292,7 +1387,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get payment => '[FO] Payment (Faroese)';
 
   @override
-  String get automaticallyConfirmNewBookingRequests => '[FO] Automatically confirm new booking requests (Faroese)';
+  String get automaticallyConfirmNewBookingRequests =>
+      '[FO] Automatically confirm new booking requests (Faroese)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1305,7 +1401,8 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[FO] Please sign in to upload a background (Faroese)';
+  String get pleaseSignInToUploadABackground =>
+      '[FO] Please sign in to upload a background (Faroese)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1322,19 +1419,22 @@ class AppLocalizationsFo extends AppLocalizations {
   String get autoconfirmBookings => '[FO] Auto-Confirm Bookings (Faroese)';
 
   @override
-  String get redirectingToStripeCheckoutForProPlan => '[FO] Redirecting to Stripe checkout for Pro plan... (Faroese)';
+  String get redirectingToStripeCheckoutForProPlan =>
+      '[FO] Redirecting to Stripe checkout for Pro plan... (Faroese)';
 
   @override
   String get exportAsCsv => '[FO] Export as CSV (Faroese)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[FO] Delete functionality coming soon! (Faroese)';
+  String get deleteFunctionalityComingSoon =>
+      '[FO] Delete functionality coming soon! (Faroese)';
 
   @override
   String get editClient => '[FO] Edit Client (Faroese)';
 
   @override
-  String get areYouSureYouWantToDeleteThisMessage => '[FO] Are you sure you want to delete this message? (Faroese)';
+  String get areYouSureYouWantToDeleteThisMessage =>
+      '[FO] Are you sure you want to delete this message? (Faroese)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1345,31 +1445,39 @@ class AppLocalizationsFo extends AppLocalizations {
   String get notAuthenticated => '[FO] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[FO] Privacy request sent to your parents! (Faroese)';
+  String get privacyRequestSentToYourParents =>
+      '[FO] Privacy request sent to your parents! (Faroese)';
 
   @override
-  String get clientDeletedSuccessfully => '[FO] Client deleted successfully! (Faroese)';
+  String get clientDeletedSuccessfully =>
+      '[FO] Client deleted successfully! (Faroese)';
 
   @override
-  String get failedToCancelSubscription => '[FO] Failed to cancel subscription (Faroese)';
+  String get failedToCancelSubscription =>
+      '[FO] Failed to cancel subscription (Faroese)';
 
   @override
   String get allLanguages => '[FO] All Languages (Faroese)';
 
   @override
-  String get slotDeletedSuccessfully => '[FO] Slot deleted successfully (Faroese)';
+  String get slotDeletedSuccessfully =>
+      '[FO] Slot deleted successfully (Faroese)';
 
   @override
-  String get businessProvidersEntryScreenComingSoon => '[FO] Business Providers Entry Screen - Coming Soon';
+  String get businessProvidersEntryScreenComingSoon =>
+      '[FO] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get parentsMustApproveBeforeChildrenCanJoin => '[FO] Parents must approve before children can join (Faroese)';
+  String get parentsMustApproveBeforeChildrenCanJoin =>
+      '[FO] Parents must approve before children can join (Faroese)';
 
   @override
-  String get subscribeToPro1499mo => '[FO] Subscribe to Pro (€14.99/mo) (Faroese)';
+  String get subscribeToPro1499mo =>
+      '[FO] Subscribe to Pro (€14.99/mo) (Faroese)';
 
   @override
-  String get businessAvailabilityEntryScreenComingSoon => '[FO] Business Availability Entry Screen - Coming Soon (Faroese)';
+  String get businessAvailabilityEntryScreenComingSoon =>
+      '[FO] Business Availability Entry Screen - Coming Soon (Faroese)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1383,7 +1491,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get submitBooking => '[FO] Submit Booking (Faroese)';
 
   @override
-  String get areYouSureYouWantToCancelThisAppointment => '[FO] Are you sure you want to cancel this appointment? (Faroese)';
+  String get areYouSureYouWantToCancelThisAppointment =>
+      '[FO] Are you sure you want to cancel this appointment? (Faroese)';
 
   @override
   String get noUpcomingBookings => '[FO] No upcoming bookings (Faroese)';
@@ -1401,7 +1510,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get goToDashboard => '[FO] Go to Dashboard (Faroese)';
 
   @override
-  String get ambassadorQuotaDashboard => '[FO] Ambassador Quota Dashboard (Faroese)';
+  String get ambassadorQuotaDashboard =>
+      '[FO] Ambassador Quota Dashboard (Faroese)';
 
   @override
   String get adminSettings => '[FO] Admin Settings';
@@ -1439,7 +1549,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[FO] Client added successfully! (Faroese)';
+  String get clientAddedSuccessfully =>
+      '[FO] Client added successfully! (Faroese)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1457,7 +1568,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get bookAppointment => '[FO] Book Appointment (Faroese)';
 
   @override
-  String get receivePushNotificationsForNewBookings => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get receivePushNotificationsForNewBookings =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[FO] Delete (Faroese)';
@@ -1472,13 +1584,15 @@ class AppLocalizationsFo extends AppLocalizations {
   String get manageSubscription => '[FO] Manage Subscription (Faroese)';
 
   @override
-  String get requiresInstallFallback => '[FO] Requires Install Fallback (Faroese)';
+  String get requiresInstallFallback =>
+      '[FO] Requires Install Fallback (Faroese)';
 
   @override
   String get paymentConfirmation => '[FO] Payment Confirmation (Faroese)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[FO] Promo applied! Your next bill is free. (Faroese)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[FO] Promo applied! Your next bill is free. (Faroese)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1489,13 +1603,16 @@ class AppLocalizationsFo extends AppLocalizations {
   String get errorLoadingSlots => '[FO] Error loading slots (Faroese)';
 
   @override
-  String get allowOtherUsersToFindAndJoinThisGame => '[FO] Allow other users to find and join this game (Faroese)';
+  String get allowOtherUsersToFindAndJoinThisGame =>
+      '[FO] Allow other users to find and join this game (Faroese)';
 
   @override
-  String get businessOnboardingScreenComingSoon => '[FO] Business Onboarding Screen - Coming Soon (Faroese)';
+  String get businessOnboardingScreenComingSoon =>
+      '[FO] Business Onboarding Screen - Coming Soon (Faroese)';
 
   @override
-  String get activateBusinessProfile => '[FO] Activate Business Profile (Faroese)';
+  String get activateBusinessProfile =>
+      '[FO] Activate Business Profile (Faroese)';
 
   @override
   String get contentNotFound => '[FO] Content not found (Faroese)';
@@ -1537,7 +1654,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get shareLink => '[FO] Share Link (Faroese)';
 
   @override
-  String get areYouSureYouWantToDeleteThisProvider => '[FO] Are you sure you want to delete this provider?';
+  String get areYouSureYouWantToDeleteThisProvider =>
+      '[FO] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[FO] Delete Appointment (Faroese)';
@@ -1557,10 +1675,12 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[FO] Update your business information (Faroese)';
+  String get updateYourBusinessInformation =>
+      '[FO] Update your business information (Faroese)';
 
   @override
-  String get noProvidersFoundAddYourFirstProvider => '[FO] No providers found. Add your first provider!';
+  String get noProvidersFoundAddYourFirstProvider =>
+      '[FO] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[FO] Parent Dashboard (Faroese)';
@@ -1583,10 +1703,12 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get studioBookingIsOnlyAvailableOnWeb => '[FO] Studio booking is only available on web (Faroese)';
+  String get studioBookingIsOnlyAvailableOnWeb =>
+      '[FO] Studio booking is only available on web (Faroese)';
 
   @override
-  String get errorLoadingBranchesE => '[FO] Error loading branches: \$e (Faroese)';
+  String get errorLoadingBranchesE =>
+      '[FO] Error loading branches: \$e (Faroese)';
 
   @override
   String ud83dudcc5Bookingdatetimetolocal(Object dateTime) {
@@ -1602,13 +1724,15 @@ class AppLocalizationsFo extends AppLocalizations {
   String get none => '[FO] None (Faroese)';
 
   @override
-  String get failedToUpdateConsentE => '[FO] Failed to update consent: \$e (Faroese)';
+  String get failedToUpdateConsentE =>
+      '[FO] Failed to update consent: \$e (Faroese)';
 
   @override
   String get welcome1 => '[FO] Welcome (Faroese)';
 
   @override
-  String get failedToCreateSessionE => '[FO] Failed to create session: \$e (Faroese)';
+  String get failedToCreateSessionE =>
+      '[FO] Failed to create session: \$e (Faroese)';
 
   @override
   String get inviteContact => '[FO] Invite Contact (Faroese)';
@@ -1617,7 +1741,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get surveyEditor => '[FO] Survey Editor (Faroese)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[FO] Failed to start Basic subscription: \$e (Faroese)';
+  String get failedToStartBasicSubscriptionE =>
+      '[FO] Failed to start Basic subscription: \$e (Faroese)';
 
   @override
   String get mySchedule => '[FO] My Schedule (Faroese)';
@@ -1637,10 +1762,12 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[FO] Settings saved successfully! (Faroese)';
+  String get settingsSavedSuccessfully =>
+      '[FO] Settings saved successfully! (Faroese)';
 
   @override
-  String get linkCopiedToClipboard => '[FO] Link copied to clipboard! (Faroese)';
+  String get linkCopiedToClipboard =>
+      '[FO] Link copied to clipboard! (Faroese)';
 
   @override
   String get accept1 => '[FO] Accept (Faroese)';
@@ -1657,7 +1784,8 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[FO] Room deleted successfully! (Faroese)';
+  String get roomDeletedSuccessfully =>
+      '[FO] Room deleted successfully! (Faroese)';
 
   @override
   String get businessCalendar => '[FO] Business Calendar (Faroese)';
@@ -1722,7 +1850,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get cancel1 => '[FO] Cancel (Faroese)';
 
   @override
-  String get subscriptionActivatedSuccessfully => '[FO] Subscription activated successfully! (Faroese)';
+  String get subscriptionActivatedSuccessfully =>
+      '[FO] Subscription activated successfully! (Faroese)';
 
   @override
   String activityLogaction(Object action) {
@@ -1733,7 +1862,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get broadcast => '[FO] Broadcast (Faroese)';
 
   @override
-  String get noEventsScheduledThisWeek => '[FO] No events scheduled this week (Faroese)';
+  String get noEventsScheduledThisWeek =>
+      '[FO] No events scheduled this week (Faroese)';
 
   @override
   String get googleCalendar => '[FO] Google Calendar (Faroese)';
@@ -1745,7 +1875,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get childDashboard => '[FO] Child Dashboard (Faroese)';
 
   @override
-  String get failedToUploadBackgroundE => '[FO] Failed to upload background: \$e (Faroese)';
+  String get failedToUploadBackgroundE =>
+      '[FO] Failed to upload background: \$e (Faroese)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1764,7 +1895,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get noAppointments => '[FO] No appointments (Faroese)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[FO] • Unlimited bookings per week (Faroese)';
+  String get unlimitedBookingsPerWeek =>
+      '[FO] • Unlimited bookings per week (Faroese)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1772,16 +1904,19 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[FO] Scheduled at: \$scheduledAt (Faroese)';
+  String get scheduledAtScheduledat =>
+      '[FO] Scheduled at: \$scheduledAt (Faroese)';
 
   @override
   String get selectStaff => '[FO] Select Staff (Faroese)';
 
   @override
-  String get subscriptionCancelledSuccessfully => '[FO] Subscription cancelled successfully (Faroese)';
+  String get subscriptionCancelledSuccessfully =>
+      '[FO] Subscription cancelled successfully (Faroese)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[FO] Cancel Appointment (Faroese)';
@@ -1795,7 +1930,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get businessSignup => '[FO] Business Signup (Faroese)';
 
   @override
-  String get businessCompletionScreenComingSoon => '[FO] Business Completion Screen - Coming Soon (Faroese)';
+  String get businessCompletionScreenComingSoon =>
+      '[FO] Business Completion Screen - Coming Soon (Faroese)';
 
   @override
   String get createGame1 => '[FO] Create Game (Faroese)';
@@ -1806,10 +1942,12 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[FO] Please enter a promo code (Faroese)';
+  String get pleaseEnterAPromoCode =>
+      '[FO] Please enter a promo code (Faroese)';
 
   @override
-  String get errorLoadingAvailabilityE => '[FO] Error loading availability: \$e (Faroese)';
+  String get errorLoadingAvailabilityE =>
+      '[FO] Error loading availability: \$e (Faroese)';
 
   @override
   String get parentalControls => '[FO] Parental Controls (Faroese)';
@@ -1818,13 +1956,15 @@ class AppLocalizationsFo extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[FO] Child linked successfully! (Faroese)';
+  String get childLinkedSuccessfully =>
+      '[FO] Child linked successfully! (Faroese)';
 
   @override
   String get create => '[FO] Create (Faroese)';
 
   @override
-  String get noExternalMeetingsFound => '[FO] No external meetings found. (Faroese)';
+  String get noExternalMeetingsFound =>
+      '[FO] No external meetings found. (Faroese)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1832,13 +1972,15 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[FO] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[FO] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[FO] Scheduler Screen (Faroese)';
 
   @override
-  String get clientUpdatedSuccessfully => '[FO] Client updated successfully! (Faroese)';
+  String get clientUpdatedSuccessfully =>
+      '[FO] Client updated successfully! (Faroese)';
 
   @override
   String get surveyResponses => '[FO] Survey Responses (Faroese)';
@@ -1864,10 +2006,12 @@ class AppLocalizationsFo extends AppLocalizations {
   String get errorLoadingEvents => '[FO] Error loading events (Faroese)';
 
   @override
-  String get errorLoadingOrganizations => '[FO] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[FO] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[FO] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[FO] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[FO] Success (Faroese)';
@@ -1886,10 +2030,12 @@ class AppLocalizationsFo extends AppLocalizations {
   String get readWrite => '[FO] Read & Write (Faroese)';
 
   @override
-  String get redirectingToStripeCheckoutForBasicPlan => '[FO] Redirecting to Stripe checkout for Basic plan... (Faroese)';
+  String get redirectingToStripeCheckoutForBasicPlan =>
+      '[FO] Redirecting to Stripe checkout for Basic plan... (Faroese)';
 
   @override
-  String get errorSavingConfigurationE => '[FO] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[FO] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[FO] Pick Date (Faroese)';
@@ -1925,10 +2071,12 @@ class AppLocalizationsFo extends AppLocalizations {
   String get businessLogin => '[FO] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[FO] Invoice created successfully! (Faroese)';
+  String get invoiceCreatedSuccessfully =>
+      '[FO] Invoice created successfully! (Faroese)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[FO] No time series data available (Faroese)';
+  String get noTimeSeriesDataAvailable =>
+      '[FO] No time series data available (Faroese)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1941,7 +2089,8 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[FO] Failed to send privacy request: \$e (Faroese)';
+  String get failedToSendPrivacyRequestE =>
+      '[FO] Failed to send privacy request: \$e (Faroese)';
 
   @override
   String get chooseYourPlan => '[FO] Choose Your Plan (Faroese)';
@@ -1956,13 +2105,15 @@ class AppLocalizationsFo extends AppLocalizations {
   String get eventCreated => '[FO] Event created (Faroese)';
 
   @override
-  String get subscribeToBasic499mo => '[FO] Subscribe to Basic (€4.99/mo) (Faroese)';
+  String get subscribeToBasic499mo =>
+      '[FO] Subscribe to Basic (€4.99/mo) (Faroese)';
 
   @override
   String get completion => '[FO] Completion (Faroese)';
 
   @override
-  String get supportTicketSubmitted => '[FO] Support ticket submitted (Faroese)';
+  String get supportTicketSubmitted =>
+      '[FO] Support ticket submitted (Faroese)';
 
   @override
   String get monetizationSettings => '[FO] Monetization Settings (Faroese)';
@@ -1977,10 +2128,12 @@ class AppLocalizationsFo extends AppLocalizations {
   String get deleteSurvey => '[FO] Delete Survey (Faroese)';
 
   @override
-  String get gameApprovedSuccessfully => '[FO] Game approved successfully! (Faroese)';
+  String get gameApprovedSuccessfully =>
+      '[FO] Game approved successfully! (Faroese)';
 
   @override
-  String get errorLoadingPermissionsError => '[FO] Error loading permissions: \$error (Faroese)';
+  String get errorLoadingPermissionsError =>
+      '[FO] Error loading permissions: \$error (Faroese)';
 
   @override
   String get referrals => '[FO] Referrals (Faroese)';
@@ -2022,7 +2175,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get organizations => '[FO] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[FO] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[FO] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[FO] Create New Game (Faroese)';
@@ -2031,10 +2185,12 @@ class AppLocalizationsFo extends AppLocalizations {
   String get next1 => '[FO] Next (Faroese)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[FO] Background uploaded successfully! (Faroese)';
+  String get backgroundUploadedSuccessfully =>
+      '[FO] Background uploaded successfully! (Faroese)';
 
   @override
-  String get noAppointmentRequestsFound => '[FO] No appointment requests found. (Faroese)';
+  String get noAppointmentRequestsFound =>
+      '[FO] No appointment requests found. (Faroese)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2061,7 +2217,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get liveSessionScheduledWaitingForParentApproval => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get liveSessionScheduledWaitingForParentApproval =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[FO] Failed to create game: \$e (Faroese)';
@@ -2070,7 +2227,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get noChartDataAvailable => '[FO] No chart data available (Faroese)';
 
   @override
-  String get phonebasedBookingSystem => '[FO] • Phone-based booking system (Faroese)';
+  String get phonebasedBookingSystem =>
+      '[FO] • Phone-based booking system (Faroese)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2079,7 +2237,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get invoices => '[FO] Invoices (Faroese)';
 
   @override
-  String get pleaseActivateYourBusinessProfileToContinue => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get pleaseActivateYourBusinessProfileToContinue =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2106,10 +2265,12 @@ class AppLocalizationsFo extends AppLocalizations {
   String get iDoNotConsent => '[FO] I Do Not Consent';
 
   @override
-  String get noClientsFoundAddYourFirstClient => '[FO] No clients found. Add your first client! (Faroese)';
+  String get noClientsFoundAddYourFirstClient =>
+      '[FO] No clients found. Add your first client! (Faroese)';
 
   @override
-  String get settingsDialogWillBeImplementedHere => '[FO] Settings dialog will be implemented here.';
+  String get settingsDialogWillBeImplementedHere =>
+      '[FO] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[FO] Group: \$groupId';
@@ -2132,7 +2293,8 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[FO] • CRM dashboard with analytics (Faroese)';
+  String get crmDashboardWithAnalytics =>
+      '[FO] • CRM dashboard with analytics (Faroese)';
 
   @override
   String get contentLibrary1 => '[FO] Content Library (Faroese)';
@@ -2144,25 +2306,30 @@ class AppLocalizationsFo extends AppLocalizations {
   String get subscriptionManagement => '[FO] Subscription Management (Faroese)';
 
   @override
-  String get monetizationSettingsWillBeImplementedHere => '[FO] Monetization settings will be implemented here (Faroese)';
+  String get monetizationSettingsWillBeImplementedHere =>
+      '[FO] Monetization settings will be implemented here (Faroese)';
 
   @override
-  String get failedToApplyPromoCodeE => '[FO] Failed to apply promo code: \$e (Faroese)';
+  String get failedToApplyPromoCodeE =>
+      '[FO] Failed to apply promo code: \$e (Faroese)';
 
   @override
   String get editProvider => '[FO] Edit Provider';
 
   @override
-  String get localizationContribution => '[FO] Localization Contribution (Faroese)';
+  String get localizationContribution =>
+      '[FO] Localization Contribution (Faroese)';
 
   @override
   String get parentalConsent => '[FO] Parental Consent (Faroese)';
 
   @override
-  String get businessSignupScreenComingSoon => '[FO] Business Signup Screen - Coming Soon (Faroese)';
+  String get businessSignupScreenComingSoon =>
+      '[FO] Business Signup Screen - Coming Soon (Faroese)';
 
   @override
-  String get areYouSureYouWantToDeleteThisAppointment => '[FO] Are you sure you want to delete this appointment? (Faroese)';
+  String get areYouSureYouWantToDeleteThisAppointment =>
+      '[FO] Are you sure you want to delete this appointment? (Faroese)';
 
   @override
   String get syncAppointment => '[FO] Sync Appointment (Faroese)';
@@ -2174,13 +2341,15 @@ class AppLocalizationsFo extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[FO] Business Setup Screen - Coming Soon (Faroese)';
+  String get businessSetupScreenComingSoon =>
+      '[FO] Business Setup Screen - Coming Soon (Faroese)';
 
   @override
   String get edit1 => '[FO] Edit (Faroese)';
 
   @override
-  String get noEventsScheduledThisMonth => '[FO] No events scheduled this month (Faroese)';
+  String get noEventsScheduledThisMonth =>
+      '[FO] No events scheduled this month (Faroese)';
 
   @override
   String get businessDashboard => '[FO] Business Dashboard (Faroese)';
@@ -2194,7 +2363,8 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[FO] Manage Staff Availability (Faroese)';
+  String get manageStaffAvailability =>
+      '[FO] Manage Staff Availability (Faroese)';
 
   @override
   String get noMissingTranslations => '[FO] No missing translations (Faroese)';
@@ -2211,7 +2381,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get noUsers => '[FO] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[FO] Error loading referral code (Faroese)';
+  String get errorLoadingReferralCode =>
+      '[FO] Error loading referral code (Faroese)';
 
   @override
   String get allCountries => '[FO] All Countries (Faroese)';
@@ -2226,7 +2397,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get deleteMessage => '[FO] Delete Message (Faroese)';
 
   @override
-  String get receiveBookingNotificationsViaSms => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get receiveBookingNotificationsViaSms =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[FO] changeRole (TRANSLATE)';
@@ -2237,7 +2409,8 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[FO] Opening customer portal... (Faroese)';
+  String get openingCustomerPortal =>
+      '[FO] Opening customer portal... (Faroese)';
 
   @override
   String get signOut => '[FO] Sign Out (Faroese)';
@@ -2248,7 +2421,8 @@ class AppLocalizationsFo extends AppLocalizations {
   }
 
   @override
-  String get businessProfileEntryScreenComingSoon => 'شاشة إدخال الملف التجاري - قريباً';
+  String get businessProfileEntryScreenComingSoon =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[FO] Upgrade to Business (Faroese)';
@@ -2274,7 +2448,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get businessAppointmentsEntryScreenComingSoon => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get businessAppointmentsEntryScreenComingSoon =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[FO] View Responses (Faroese)';
@@ -2303,7 +2478,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get noInvoicesFoundCreateYourFirstInvoice => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get noInvoicesFoundCreateYourFirstInvoice =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2321,7 +2497,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2330,7 +2507,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2378,7 +2556,8 @@ class AppLocalizationsFo extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2426,10 +2605,12 @@ class AppLocalizationsFo extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle => '[FO] Congratulations! You\'re now an Ambassador! (Faroese)';
+  String get ambassadorPromotionTitle =>
+      '[FO] Congratulations! You\'re now an Ambassador! (Faroese)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2440,7 +2621,11 @@ class AppLocalizationsFo extends AppLocalizations {
   String get tierUpgradeTitle => '[FO] Tier Upgrade! 🎉 (Faroese)';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[FO] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Faroese)';
   }
 
@@ -2448,20 +2633,29 @@ class AppLocalizationsFo extends AppLocalizations {
   String get monthlyReminderTitle => '[FO] Monthly Goal Reminder (Faroese)';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[FO] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Faroese)';
   }
 
   @override
-  String get performanceWarningTitle => '[FO] Ambassador Performance Alert (Faroese)';
+  String get performanceWarningTitle =>
+      '[FO] Ambassador Performance Alert (Faroese)';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[FO] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Faroese)';
   }
 
   @override
-  String get ambassadorDemotionTitle => '[FO] Ambassador Status Update (Faroese)';
+  String get ambassadorDemotionTitle =>
+      '[FO] Ambassador Status Update (Faroese)';
 
   @override
   String ambassadorDemotionBody(String reason) {
