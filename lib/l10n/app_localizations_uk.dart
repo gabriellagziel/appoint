@@ -74,7 +74,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get search => 'Пошук';
 
   @override
-  String get cancelInviteConfirmation => '[UK] Скасувати підтвердження запрошення';
+  String get cancelInviteConfirmation =>
+      '[UK] Скасувати підтвердження запрошення';
 
   @override
   String created(String created, Object date) {
@@ -88,7 +89,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get playtimeLiveScheduled => '[UK] Жива сесія запланована';
 
   @override
-  String get revokeAccessConfirmation => '[UK] Підтвердження скасування доступу';
+  String get revokeAccessConfirmation =>
+      '[UK] Підтвердження скасування доступу';
 
   @override
   String get download => 'Завантажити';
@@ -157,7 +159,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get done => 'Готово';
 
   @override
-  String get defaultShareMessage => '[UK] За замовчуванням повідомлення для спільного доступу';
+  String get defaultShareMessage =>
+      '[UK] За замовчуванням повідомлення для спільного доступу';
 
   @override
   String get no => 'Ні';
@@ -206,7 +209,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get retry => '[UK] Спробувати знову';
 
   @override
-  String get composeBroadcastMessage => '[UK] Скласти трансляційне повідомлення';
+  String get composeBroadcastMessage =>
+      '[UK] Скласти трансляційне повідомлення';
 
   @override
   String get sendNow => '[UK] Надіслати зараз';
@@ -479,7 +483,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get playtimeEnterGameName => '[UK] Введіть назву гри';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[UK] [UK] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[UK] [UK] Please login to access family features';
 
   @override
   String get myInvites => '[UK] [UK] My Invites';
@@ -533,7 +538,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[UK] Увійдіть, щоб переглянути профіль';
+  String get pleaseLoginToViewProfile =>
+      '[UK] Увійдіть, щоб переглянути профіль';
 
   @override
   String get adminMetrics => '[UK] Admin Metrics';
@@ -554,40 +560,52 @@ class AppLocalizationsUk extends AppLocalizations {
   String get contentLibrary => '[UK] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[UK] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[UK] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[UK] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[UK] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[UK] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[UK] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[UK] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[UK] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[UK] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[UK] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[UK] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[UK] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[UK] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[UK] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[UK] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[UK] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[UK] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[UK] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN =>
+      '[UK] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[UK] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[UK] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[UK] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[UK] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -604,19 +622,24 @@ class AppLocalizationsUk extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[UK] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[UK] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[UK] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[UK] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] The verification code is invalid.';
+  String get REDACTED_TOKEN =>
+      '[UK] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[UK] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[UK] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Please enter the verification code.';
+  String get REDACTED_TOKEN =>
+      '[UK] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[UK] Missing verification ID.';
@@ -628,43 +651,56 @@ class AppLocalizationsUk extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[UK] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[UK] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[UK] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[UK] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[UK] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[UK] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[UK] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN =>
+      '[UK] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Multi-factor information not found.';
+  String get REDACTED_TOKEN =>
+      '[UK] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Missing multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[UK] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Invalid multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[UK] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] This second factor is already in use.';
+  String get REDACTED_TOKEN =>
+      '[UK] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN =>
+      '[UK] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[UK] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[UK] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Email change requires verification.';
+  String get REDACTED_TOKEN =>
+      '[UK] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] This phone number is already in use.';
+  String get REDACTED_TOKEN =>
+      '[UK] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[UK] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[UK] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[UK] The ID token is invalid.';
@@ -676,10 +712,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[UK] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[UK] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[UK] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[UK] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[UK] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[UK] Invalid custom claims provided.';
@@ -688,70 +726,87 @@ class AppLocalizationsUk extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[UK] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[UK] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[UK] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[UK] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[UK] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[UK] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN =>
+      '[UK] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[UK] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[UK] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[UK] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[UK] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[UK] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[UK] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN =>
+      '[UK] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[UK] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[UK] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[UK] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN =>
+      '[UK] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[UK] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[UK] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN =>
+      '[UK] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[UK] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[UK] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[UK] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[UK] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[UK] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[UK] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN =>
+      '[UK] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[UK] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[UK] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[UK] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN =>
+      '[UK] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[UK] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[UK] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[UK] Missing continue URL.';
@@ -766,7 +821,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get authErrorMissingUid => '[UK] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Missing OAuth client secret.';
+  String get REDACTED_TOKEN =>
+      '[UK] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[UK] Firebase project not found.';
@@ -775,19 +831,23 @@ class AppLocalizationsUk extends AppLocalizations {
   String get authErrorReservedClaims => '[UK] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[UK] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[UK] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[UK] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[UK] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[UK] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[UK] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN =>
+      '[UK] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[UK] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[UK] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -836,7 +896,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Virtual session created! Inviting friends... (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Virtual session created! Inviting friends... (Ukrainian)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -877,13 +938,15 @@ class AppLocalizationsUk extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[UK] Subscription unavailable (Ukrainian)';
+  String get subscriptionUnavailable =>
+      '[UK] Subscription unavailable (Ukrainian)';
 
   @override
   String get confirmBooking => '[UK] Confirm Booking (Ukrainian)';
 
   @override
-  String get failedToUpdatePermissionE => '[UK] Failed to update permission: \$e (Ukrainian)';
+  String get failedToUpdatePermissionE =>
+      '[UK] Failed to update permission: \$e (Ukrainian)';
 
   @override
   String get reject => '[UK] Reject (Ukrainian)';
@@ -897,7 +960,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get noProviders => '[UK] No providers';
 
   @override
-  String get checkingSubscription => '[UK] Checking subscription... (Ukrainian)';
+  String get checkingSubscription =>
+      '[UK] Checking subscription... (Ukrainian)';
 
   @override
   String errorPickingImageE(Object e) {
@@ -905,13 +969,15 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get noContentAvailableYet => '[UK] No content available yet (Ukrainian)';
+  String get noContentAvailableYet =>
+      '[UK] No content available yet (Ukrainian)';
 
   @override
   String get resolve => '[UK] Resolve (Ukrainian)';
 
   @override
-  String get errorLoadingSurveysError => '[UK] Error loading surveys: \$error (Ukrainian)';
+  String get errorLoadingSurveysError =>
+      '[UK] Error loading surveys: \$error (Ukrainian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -919,7 +985,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[UK] Get help with your account (Ukrainian)';
+  String get getHelpWithYourAccount =>
+      '[UK] Get help with your account (Ukrainian)';
 
   @override
   String get pay => '[UK] Pay (Ukrainian)';
@@ -934,7 +1001,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[UK] Changes saved successfully! (Ukrainian)';
+  String get changesSavedSuccessfully =>
+      '[UK] Changes saved successfully! (Ukrainian)';
 
   @override
   String get createNewInvoice => '[UK] Create New Invoice (Ukrainian)';
@@ -954,7 +1022,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get profileSaved => '[UK] Profile saved! (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -985,7 +1054,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[UK] You will receive a confirmation email shortly. (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] You will receive a confirmation email shortly. (Ukrainian)';
 
   @override
   String get addQuestion => '[UK] Add Question (Ukrainian)';
@@ -1014,22 +1084,26 @@ class AppLocalizationsUk extends AppLocalizations {
   String get surveyManagement => '[UK] Survey Management (Ukrainian)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[UK] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[UK] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[UK] No rooms found. Add your first room! (Ukrainian)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[UK] No rooms found. Add your first room! (Ukrainian)';
 
   @override
   String get readOurPrivacyPolicy => '[UK] Read our privacy policy (Ukrainian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[UK] Could not open privacy policy (Ukrainian)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[UK] Could not open privacy policy (Ukrainian)';
 
   @override
   String get refresh1 => '[UK] Refresh (Ukrainian)';
 
   @override
-  String get roomUpdatedSuccessfully => '[UK] Room updated successfully! (Ukrainian)';
+  String get roomUpdatedSuccessfully =>
+      '[UK] Room updated successfully! (Ukrainian)';
 
   @override
   String get contentDetail => '[UK] Content Detail (Ukrainian)';
@@ -1038,7 +1112,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get cancelSubscription => '[UK] Cancel Subscription (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Successfully registered as Ambassador! (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Successfully registered as Ambassador! (Ukrainian)';
 
   @override
   String get save1 => '[UK] Save (Ukrainian)';
@@ -1047,7 +1122,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get copy1 => '[UK] Copy (Ukrainian)';
 
   @override
-  String get failedToSendInvitationE => '[UK] Failed to send invitation: \$e (Ukrainian)';
+  String get failedToSendInvitationE =>
+      '[UK] Failed to send invitation: \$e (Ukrainian)';
 
   @override
   String get surveyScore => '[UK] Survey Score (Ukrainian)';
@@ -1064,16 +1140,20 @@ class AppLocalizationsUk extends AppLocalizations {
   String get responseDetail => '[UK] Response Detail (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[UK] Failed to start Pro subscription: \$e (Ukrainian)';
+  String get failedToStartProSubscriptionE =>
+      '[UK] Failed to start Pro subscription: \$e (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Business Dashboard Entry Screen - Coming Soon (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Business Dashboard Entry Screen - Coming Soon (Ukrainian)';
 
   @override
   String get contentFilter => '[UK] Content Filter (Ukrainian)';
@@ -1095,7 +1175,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[UK] Business CRM Entry Screen - Coming Soon (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Business CRM Entry Screen - Coming Soon (Ukrainian)';
 
   @override
   String get adminDashboard => '[UK] Admin Dashboard';
@@ -1106,13 +1187,16 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[UK] Error loading dashboard: \$error (Ukrainian)';
+  String get errorLoadingDashboardError =>
+      '[UK] Error loading dashboard: \$error (Ukrainian)';
 
   @override
-  String get gameDeletedSuccessfully => '[UK] Game deleted successfully! (Ukrainian)';
+  String get gameDeletedSuccessfully =>
+      '[UK] Game deleted successfully! (Ukrainian)';
 
   @override
-  String get viewResponsesComingSoon => '[UK] View responses - Coming soon! (Ukrainian)';
+  String get viewResponsesComingSoon =>
+      '[UK] View responses - Coming soon! (Ukrainian)';
 
   @override
   String get deleteProvider => '[UK] Delete Provider';
@@ -1121,7 +1205,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get errorLoadingRewards => '[UK] Error loading rewards (Ukrainian)';
 
   @override
-  String get failedToDeleteAccountE => '[UK] Failed to delete account: \$e (Ukrainian)';
+  String get failedToDeleteAccountE =>
+      '[UK] Failed to delete account: \$e (Ukrainian)';
 
   @override
   String get invited1 => '[UK] Invited (Ukrainian)';
@@ -1136,7 +1221,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get noEvents => '[UK] No events (Ukrainian)';
 
   @override
-  String get gameCreatedSuccessfully => '[UK] Game created successfully! (Ukrainian)';
+  String get gameCreatedSuccessfully =>
+      '[UK] Game created successfully! (Ukrainian)';
 
   @override
   String get add1 => '[UK] Add (Ukrainian)';
@@ -1156,10 +1242,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get clients => '[UK] Clients (Ukrainian)';
 
   @override
-  String get noAmbassadorDataAvailable => '[UK] No ambassador data available (Ukrainian)';
+  String get noAmbassadorDataAvailable =>
+      '[UK] No ambassador data available (Ukrainian)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[UK] Background deleted successfully! (Ukrainian)';
+  String get backgroundDeletedSuccessfully =>
+      '[UK] Background deleted successfully! (Ukrainian)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1167,7 +1255,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[UK] No analytics data available yet. (Ukrainian)';
+  String get noAnalyticsDataAvailableYet =>
+      '[UK] No analytics data available yet. (Ukrainian)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1175,7 +1264,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[UK] Business Phone Booking Entry Screen - Coming Soon (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Business Phone Booking Entry Screen - Coming Soon (Ukrainian)';
 
   @override
   String get verification => '[UK] Verification (Ukrainian)';
@@ -1222,7 +1312,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get businessProfile => '[UK] Business Profile (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Business Booking Entry Screen - Coming Soon (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Business Booking Entry Screen - Coming Soon (Ukrainian)';
 
   @override
   String get createNewSurvey => '[UK] Create New Survey (Ukrainian)';
@@ -1246,7 +1337,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get loginFailedE => '[UK] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[UK] Invitation sent successfully! (Ukrainian)';
+  String get invitationSentSuccessfully =>
+      '[UK] Invitation sent successfully! (Ukrainian)';
 
   @override
   String get registering => '[UK] Registering... (Ukrainian)';
@@ -1260,13 +1352,16 @@ class AppLocalizationsUk extends AppLocalizations {
   String get home1 => '[UK] Home (Ukrainian)';
 
   @override
-  String get errorSavingSettingsE => '[UK] Error saving settings: \$e (Ukrainian)';
+  String get errorSavingSettingsE =>
+      '[UK] Error saving settings: \$e (Ukrainian)';
 
   @override
-  String get appVersionAndInformation => '[UK] App version and information (Ukrainian)';
+  String get appVersionAndInformation =>
+      '[UK] App version and information (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Business Subscription Entry Screen - Coming Soon (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Business Subscription Entry Screen - Coming Soon (Ukrainian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1274,7 +1369,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[UK] Your payment has been processed successfully. (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Your payment has been processed successfully. (Ukrainian)';
 
   @override
   String get errorE => '[UK] Error: \$e (Ukrainian)';
@@ -1283,7 +1379,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get viewAll1 => '[UK] View All (Ukrainian)';
 
   @override
-  String get editSurveyComingSoon => '[UK] Edit survey - Coming soon! (Ukrainian)';
+  String get editSurveyComingSoon =>
+      '[UK] Edit survey - Coming soon! (Ukrainian)';
 
   @override
   String get enterOtp => '[UK] Enter OTP (Ukrainian)';
@@ -1292,7 +1389,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get payment => '[UK] Payment (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Automatically confirm new booking requests (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Automatically confirm new booking requests (Ukrainian)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1305,7 +1403,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[UK] Please sign in to upload a background (Ukrainian)';
+  String get pleaseSignInToUploadABackground =>
+      '[UK] Please sign in to upload a background (Ukrainian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1322,19 +1421,22 @@ class AppLocalizationsUk extends AppLocalizations {
   String get autoconfirmBookings => '[UK] Auto-Confirm Bookings (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Redirecting to Stripe checkout for Pro plan... (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Redirecting to Stripe checkout for Pro plan... (Ukrainian)';
 
   @override
   String get exportAsCsv => '[UK] Export as CSV (Ukrainian)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[UK] Delete functionality coming soon! (Ukrainian)';
+  String get deleteFunctionalityComingSoon =>
+      '[UK] Delete functionality coming soon! (Ukrainian)';
 
   @override
   String get editClient => '[UK] Edit Client (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Are you sure you want to delete this message? (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Are you sure you want to delete this message? (Ukrainian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1345,31 +1447,39 @@ class AppLocalizationsUk extends AppLocalizations {
   String get notAuthenticated => '[UK] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[UK] Privacy request sent to your parents! (Ukrainian)';
+  String get privacyRequestSentToYourParents =>
+      '[UK] Privacy request sent to your parents! (Ukrainian)';
 
   @override
-  String get clientDeletedSuccessfully => '[UK] Client deleted successfully! (Ukrainian)';
+  String get clientDeletedSuccessfully =>
+      '[UK] Client deleted successfully! (Ukrainian)';
 
   @override
-  String get failedToCancelSubscription => '[UK] Failed to cancel subscription (Ukrainian)';
+  String get failedToCancelSubscription =>
+      '[UK] Failed to cancel subscription (Ukrainian)';
 
   @override
   String get allLanguages => '[UK] All Languages (Ukrainian)';
 
   @override
-  String get slotDeletedSuccessfully => '[UK] Slot deleted successfully (Ukrainian)';
+  String get slotDeletedSuccessfully =>
+      '[UK] Slot deleted successfully (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN =>
+      '[UK] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Parents must approve before children can join (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Parents must approve before children can join (Ukrainian)';
 
   @override
-  String get subscribeToPro1499mo => '[UK] Subscribe to Pro (€14.99/mo) (Ukrainian)';
+  String get subscribeToPro1499mo =>
+      '[UK] Subscribe to Pro (€14.99/mo) (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Business Availability Entry Screen - Coming Soon (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Business Availability Entry Screen - Coming Soon (Ukrainian)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1383,7 +1493,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get submitBooking => '[UK] Submit Booking (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Are you sure you want to cancel this appointment? (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Are you sure you want to cancel this appointment? (Ukrainian)';
 
   @override
   String get noUpcomingBookings => '[UK] No upcoming bookings (Ukrainian)';
@@ -1401,7 +1512,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get goToDashboard => '[UK] Go to Dashboard (Ukrainian)';
 
   @override
-  String get ambassadorQuotaDashboard => '[UK] Ambassador Quota Dashboard (Ukrainian)';
+  String get ambassadorQuotaDashboard =>
+      '[UK] Ambassador Quota Dashboard (Ukrainian)';
 
   @override
   String get adminSettings => '[UK] Admin Settings';
@@ -1439,7 +1551,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[UK] Client added successfully! (Ukrainian)';
+  String get clientAddedSuccessfully =>
+      '[UK] Client added successfully! (Ukrainian)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1457,7 +1570,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get bookAppointment => '[UK] Book Appointment (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[UK] Delete (Ukrainian)';
@@ -1472,13 +1586,15 @@ class AppLocalizationsUk extends AppLocalizations {
   String get manageSubscription => '[UK] Manage Subscription (Ukrainian)';
 
   @override
-  String get requiresInstallFallback => '[UK] Requires Install Fallback (Ukrainian)';
+  String get requiresInstallFallback =>
+      '[UK] Requires Install Fallback (Ukrainian)';
 
   @override
   String get paymentConfirmation => '[UK] Payment Confirmation (Ukrainian)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[UK] Promo applied! Your next bill is free. (Ukrainian)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[UK] Promo applied! Your next bill is free. (Ukrainian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1489,13 +1605,16 @@ class AppLocalizationsUk extends AppLocalizations {
   String get errorLoadingSlots => '[UK] Error loading slots (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Allow other users to find and join this game (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Allow other users to find and join this game (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Business Onboarding Screen - Coming Soon (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Business Onboarding Screen - Coming Soon (Ukrainian)';
 
   @override
-  String get activateBusinessProfile => '[UK] Activate Business Profile (Ukrainian)';
+  String get activateBusinessProfile =>
+      '[UK] Activate Business Profile (Ukrainian)';
 
   @override
   String get contentNotFound => '[UK] Content not found (Ukrainian)';
@@ -1537,7 +1656,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get shareLink => '[UK] Share Link (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN =>
+      '[UK] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[UK] Delete Appointment (Ukrainian)';
@@ -1557,10 +1677,12 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[UK] Update your business information (Ukrainian)';
+  String get updateYourBusinessInformation =>
+      '[UK] Update your business information (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN =>
+      '[UK] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[UK] Parent Dashboard (Ukrainian)';
@@ -1583,10 +1705,12 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[UK] Studio booking is only available on web (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Studio booking is only available on web (Ukrainian)';
 
   @override
-  String get errorLoadingBranchesE => '[UK] Error loading branches: \$e (Ukrainian)';
+  String get errorLoadingBranchesE =>
+      '[UK] Error loading branches: \$e (Ukrainian)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1602,13 +1726,15 @@ class AppLocalizationsUk extends AppLocalizations {
   String get none => '[UK] None (Ukrainian)';
 
   @override
-  String get failedToUpdateConsentE => '[UK] Failed to update consent: \$e (Ukrainian)';
+  String get failedToUpdateConsentE =>
+      '[UK] Failed to update consent: \$e (Ukrainian)';
 
   @override
   String get welcome1 => '[UK] Welcome (Ukrainian)';
 
   @override
-  String get failedToCreateSessionE => '[UK] Failed to create session: \$e (Ukrainian)';
+  String get failedToCreateSessionE =>
+      '[UK] Failed to create session: \$e (Ukrainian)';
 
   @override
   String get inviteContact => '[UK] Invite Contact (Ukrainian)';
@@ -1617,7 +1743,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get surveyEditor => '[UK] Survey Editor (Ukrainian)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[UK] Failed to start Basic subscription: \$e (Ukrainian)';
+  String get failedToStartBasicSubscriptionE =>
+      '[UK] Failed to start Basic subscription: \$e (Ukrainian)';
 
   @override
   String get mySchedule => '[UK] My Schedule (Ukrainian)';
@@ -1637,10 +1764,12 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[UK] Settings saved successfully! (Ukrainian)';
+  String get settingsSavedSuccessfully =>
+      '[UK] Settings saved successfully! (Ukrainian)';
 
   @override
-  String get linkCopiedToClipboard => '[UK] Link copied to clipboard! (Ukrainian)';
+  String get linkCopiedToClipboard =>
+      '[UK] Link copied to clipboard! (Ukrainian)';
 
   @override
   String get accept1 => '[UK] Accept (Ukrainian)';
@@ -1657,7 +1786,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[UK] Room deleted successfully! (Ukrainian)';
+  String get roomDeletedSuccessfully =>
+      '[UK] Room deleted successfully! (Ukrainian)';
 
   @override
   String get businessCalendar => '[UK] Business Calendar (Ukrainian)';
@@ -1677,7 +1807,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get addNewRoom => '[UK] Add New Room (Ukrainian)';
 
   @override
-  String get requireParentApproval => '[UK] Require Parent Approval (Ukrainian)';
+  String get requireParentApproval =>
+      '[UK] Require Parent Approval (Ukrainian)';
 
   @override
   String get closed => '[UK] Closed (Ukrainian)';
@@ -1722,7 +1853,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get cancel1 => '[UK] Cancel (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Subscription activated successfully! (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Subscription activated successfully! (Ukrainian)';
 
   @override
   String activityLogaction(Object action) {
@@ -1733,7 +1865,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get broadcast => '[UK] Broadcast (Ukrainian)';
 
   @override
-  String get noEventsScheduledThisWeek => '[UK] No events scheduled this week (Ukrainian)';
+  String get noEventsScheduledThisWeek =>
+      '[UK] No events scheduled this week (Ukrainian)';
 
   @override
   String get googleCalendar => '[UK] Google Calendar (Ukrainian)';
@@ -1745,7 +1878,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get childDashboard => '[UK] Child Dashboard (Ukrainian)';
 
   @override
-  String get failedToUploadBackgroundE => '[UK] Failed to upload background: \$e (Ukrainian)';
+  String get failedToUploadBackgroundE =>
+      '[UK] Failed to upload background: \$e (Ukrainian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1764,7 +1898,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get noAppointments => '[UK] No appointments (Ukrainian)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[UK] • Unlimited bookings per week (Ukrainian)';
+  String get unlimitedBookingsPerWeek =>
+      '[UK] • Unlimited bookings per week (Ukrainian)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1772,16 +1907,19 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[UK] Scheduled at: \$scheduledAt (Ukrainian)';
+  String get scheduledAtScheduledat =>
+      '[UK] Scheduled at: \$scheduledAt (Ukrainian)';
 
   @override
   String get selectStaff => '[UK] Select Staff (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Subscription cancelled successfully (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Subscription cancelled successfully (Ukrainian)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[UK] Cancel Appointment (Ukrainian)';
@@ -1795,7 +1933,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get businessSignup => '[UK] Business Signup (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Business Completion Screen - Coming Soon (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Business Completion Screen - Coming Soon (Ukrainian)';
 
   @override
   String get createGame1 => '[UK] Create Game (Ukrainian)';
@@ -1806,10 +1945,12 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[UK] Please enter a promo code (Ukrainian)';
+  String get pleaseEnterAPromoCode =>
+      '[UK] Please enter a promo code (Ukrainian)';
 
   @override
-  String get errorLoadingAvailabilityE => '[UK] Error loading availability: \$e (Ukrainian)';
+  String get errorLoadingAvailabilityE =>
+      '[UK] Error loading availability: \$e (Ukrainian)';
 
   @override
   String get parentalControls => '[UK] Parental Controls (Ukrainian)';
@@ -1818,13 +1959,15 @@ class AppLocalizationsUk extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[UK] Child linked successfully! (Ukrainian)';
+  String get childLinkedSuccessfully =>
+      '[UK] Child linked successfully! (Ukrainian)';
 
   @override
   String get create => '[UK] Create (Ukrainian)';
 
   @override
-  String get noExternalMeetingsFound => '[UK] No external meetings found. (Ukrainian)';
+  String get noExternalMeetingsFound =>
+      '[UK] No external meetings found. (Ukrainian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1832,13 +1975,15 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[UK] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[UK] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[UK] Scheduler Screen (Ukrainian)';
 
   @override
-  String get clientUpdatedSuccessfully => '[UK] Client updated successfully! (Ukrainian)';
+  String get clientUpdatedSuccessfully =>
+      '[UK] Client updated successfully! (Ukrainian)';
 
   @override
   String get surveyResponses => '[UK] Survey Responses (Ukrainian)';
@@ -1864,10 +2009,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get errorLoadingEvents => '[UK] Error loading events (Ukrainian)';
 
   @override
-  String get errorLoadingOrganizations => '[UK] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[UK] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[UK] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[UK] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[UK] Success (Ukrainian)';
@@ -1886,10 +2033,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get readWrite => '[UK] Read & Write (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Redirecting to Stripe checkout for Basic plan... (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Redirecting to Stripe checkout for Basic plan... (Ukrainian)';
 
   @override
-  String get errorSavingConfigurationE => '[UK] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[UK] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[UK] Pick Date (Ukrainian)';
@@ -1925,10 +2074,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get businessLogin => '[UK] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[UK] Invoice created successfully! (Ukrainian)';
+  String get invoiceCreatedSuccessfully =>
+      '[UK] Invoice created successfully! (Ukrainian)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[UK] No time series data available (Ukrainian)';
+  String get noTimeSeriesDataAvailable =>
+      '[UK] No time series data available (Ukrainian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1941,7 +2092,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[UK] Failed to send privacy request: \$e (Ukrainian)';
+  String get failedToSendPrivacyRequestE =>
+      '[UK] Failed to send privacy request: \$e (Ukrainian)';
 
   @override
   String get chooseYourPlan => '[UK] Choose Your Plan (Ukrainian)';
@@ -1956,13 +2108,15 @@ class AppLocalizationsUk extends AppLocalizations {
   String get eventCreated => '[UK] Event created (Ukrainian)';
 
   @override
-  String get subscribeToBasic499mo => '[UK] Subscribe to Basic (€4.99/mo) (Ukrainian)';
+  String get subscribeToBasic499mo =>
+      '[UK] Subscribe to Basic (€4.99/mo) (Ukrainian)';
 
   @override
   String get completion => '[UK] Completion (Ukrainian)';
 
   @override
-  String get supportTicketSubmitted => '[UK] Support ticket submitted (Ukrainian)';
+  String get supportTicketSubmitted =>
+      '[UK] Support ticket submitted (Ukrainian)';
 
   @override
   String get monetizationSettings => '[UK] Monetization Settings (Ukrainian)';
@@ -1977,10 +2131,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get deleteSurvey => '[UK] Delete Survey (Ukrainian)';
 
   @override
-  String get gameApprovedSuccessfully => '[UK] Game approved successfully! (Ukrainian)';
+  String get gameApprovedSuccessfully =>
+      '[UK] Game approved successfully! (Ukrainian)';
 
   @override
-  String get errorLoadingPermissionsError => '[UK] Error loading permissions: \$error (Ukrainian)';
+  String get errorLoadingPermissionsError =>
+      '[UK] Error loading permissions: \$error (Ukrainian)';
 
   @override
   String get referrals => '[UK] Referrals (Ukrainian)';
@@ -2022,7 +2178,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get organizations => '[UK] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[UK] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[UK] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[UK] Create New Game (Ukrainian)';
@@ -2031,16 +2188,19 @@ class AppLocalizationsUk extends AppLocalizations {
   String get next1 => '[UK] Next (Ukrainian)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[UK] Background uploaded successfully! (Ukrainian)';
+  String get backgroundUploadedSuccessfully =>
+      '[UK] Background uploaded successfully! (Ukrainian)';
 
   @override
-  String get noAppointmentRequestsFound => '[UK] No appointment requests found. (Ukrainian)';
+  String get noAppointmentRequestsFound =>
+      '[UK] No appointment requests found. (Ukrainian)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => '[UK] Restrict mature content (Ukrainian)';
+  String get restrictMatureContent =>
+      '[UK] Restrict mature content (Ukrainian)';
 
   @override
   String get ambassadors => '[UK] Ambassadors (Ukrainian)';
@@ -2061,16 +2221,19 @@ class AppLocalizationsUk extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => '[UK] Failed to create game: \$e (Ukrainian)';
+  String get failedToCreateGameE =>
+      '[UK] Failed to create game: \$e (Ukrainian)';
 
   @override
   String get noChartDataAvailable => '[UK] No chart data available (Ukrainian)';
 
   @override
-  String get phonebasedBookingSystem => '[UK] • Phone-based booking system (Ukrainian)';
+  String get phonebasedBookingSystem =>
+      '[UK] • Phone-based booking system (Ukrainian)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2079,7 +2242,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get invoices => '[UK] Invoices (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2106,10 +2270,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get iDoNotConsent => '[UK] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN => '[UK] No clients found. Add your first client! (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] No clients found. Add your first client! (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN =>
+      '[UK] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[UK] Group: \$groupId';
@@ -2121,7 +2287,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get forward => '[UK] Forward (Ukrainian)';
 
   @override
-  String get roomAddedSuccessfully => '[UK] Room added successfully! (Ukrainian)';
+  String get roomAddedSuccessfully =>
+      '[UK] Room added successfully! (Ukrainian)';
 
   @override
   String get option => '[UK] • \$option (Ukrainian)';
@@ -2132,7 +2299,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[UK] • CRM dashboard with analytics (Ukrainian)';
+  String get crmDashboardWithAnalytics =>
+      '[UK] • CRM dashboard with analytics (Ukrainian)';
 
   @override
   String get contentLibrary1 => '[UK] Content Library (Ukrainian)';
@@ -2141,28 +2309,34 @@ class AppLocalizationsUk extends AppLocalizations {
   String get reply => '[UK] Reply (Ukrainian)';
 
   @override
-  String get subscriptionManagement => '[UK] Subscription Management (Ukrainian)';
+  String get subscriptionManagement =>
+      '[UK] Subscription Management (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Monetization settings will be implemented here (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Monetization settings will be implemented here (Ukrainian)';
 
   @override
-  String get failedToApplyPromoCodeE => '[UK] Failed to apply promo code: \$e (Ukrainian)';
+  String get failedToApplyPromoCodeE =>
+      '[UK] Failed to apply promo code: \$e (Ukrainian)';
 
   @override
   String get editProvider => '[UK] Edit Provider';
 
   @override
-  String get localizationContribution => '[UK] Localization Contribution (Ukrainian)';
+  String get localizationContribution =>
+      '[UK] Localization Contribution (Ukrainian)';
 
   @override
   String get parentalConsent => '[UK] Parental Consent (Ukrainian)';
 
   @override
-  String get businessSignupScreenComingSoon => '[UK] Business Signup Screen - Coming Soon (Ukrainian)';
+  String get businessSignupScreenComingSoon =>
+      '[UK] Business Signup Screen - Coming Soon (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => '[UK] Are you sure you want to delete this appointment? (Ukrainian)';
+  String get REDACTED_TOKEN =>
+      '[UK] Are you sure you want to delete this appointment? (Ukrainian)';
 
   @override
   String get syncAppointment => '[UK] Sync Appointment (Ukrainian)';
@@ -2174,13 +2348,15 @@ class AppLocalizationsUk extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[UK] Business Setup Screen - Coming Soon (Ukrainian)';
+  String get businessSetupScreenComingSoon =>
+      '[UK] Business Setup Screen - Coming Soon (Ukrainian)';
 
   @override
   String get edit1 => '[UK] Edit (Ukrainian)';
 
   @override
-  String get noEventsScheduledThisMonth => '[UK] No events scheduled this month (Ukrainian)';
+  String get noEventsScheduledThisMonth =>
+      '[UK] No events scheduled this month (Ukrainian)';
 
   @override
   String get businessDashboard => '[UK] Business Dashboard (Ukrainian)';
@@ -2194,10 +2370,12 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[UK] Manage Staff Availability (Ukrainian)';
+  String get manageStaffAvailability =>
+      '[UK] Manage Staff Availability (Ukrainian)';
 
   @override
-  String get noMissingTranslations => '[UK] No missing translations (Ukrainian)';
+  String get noMissingTranslations =>
+      '[UK] No missing translations (Ukrainian)';
 
   @override
   String get skip => '[UK] Skip (Ukrainian)';
@@ -2211,7 +2389,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get noUsers => '[UK] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[UK] Error loading referral code (Ukrainian)';
+  String get errorLoadingReferralCode =>
+      '[UK] Error loading referral code (Ukrainian)';
 
   @override
   String get allCountries => '[UK] All Countries (Ukrainian)';
@@ -2220,13 +2399,15 @@ class AppLocalizationsUk extends AppLocalizations {
   String get deleteGame => '[UK] Delete Game (Ukrainian)';
 
   @override
-  String get staffManagementTools => '[UK] • Staff management tools (Ukrainian)';
+  String get staffManagementTools =>
+      '[UK] • Staff management tools (Ukrainian)';
 
   @override
   String get deleteMessage => '[UK] Delete Message (Ukrainian)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[UK] changeRole (TRANSLATE)';
@@ -2237,7 +2418,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[UK] Opening customer portal... (Ukrainian)';
+  String get openingCustomerPortal =>
+      '[UK] Opening customer portal... (Ukrainian)';
 
   @override
   String get signOut => '[UK] Sign Out (Ukrainian)';
@@ -2248,7 +2430,8 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[UK] Upgrade to Business (Ukrainian)';
@@ -2274,7 +2457,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[UK] View Responses (Ukrainian)';
@@ -2303,7 +2487,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2321,7 +2506,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2330,7 +2516,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2378,7 +2565,8 @@ class AppLocalizationsUk extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2426,10 +2614,12 @@ class AppLocalizationsUk extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle => '[UK] Congratulations! You\'re now an Ambassador! (Ukrainian)';
+  String get ambassadorPromotionTitle =>
+      '[UK] Congratulations! You\'re now an Ambassador! (Ukrainian)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2440,7 +2630,11 @@ class AppLocalizationsUk extends AppLocalizations {
   String get tierUpgradeTitle => '[UK] Tier Upgrade! 🎉 (Ukrainian)';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[UK] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Ukrainian)';
   }
 
@@ -2448,20 +2642,29 @@ class AppLocalizationsUk extends AppLocalizations {
   String get monthlyReminderTitle => '[UK] Monthly Goal Reminder (Ukrainian)';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[UK] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Ukrainian)';
   }
 
   @override
-  String get performanceWarningTitle => '[UK] Ambassador Performance Alert (Ukrainian)';
+  String get performanceWarningTitle =>
+      '[UK] Ambassador Performance Alert (Ukrainian)';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[UK] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Ukrainian)';
   }
 
   @override
-  String get ambassadorDemotionTitle => '[UK] Ambassador Status Update (Ukrainian)';
+  String get ambassadorDemotionTitle =>
+      '[UK] Ambassador Status Update (Ukrainian)';
 
   @override
   String ambassadorDemotionBody(String reason) {

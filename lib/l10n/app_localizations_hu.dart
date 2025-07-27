@@ -74,7 +74,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get search => '[HU] Keresés';
 
   @override
-  String get cancelInviteConfirmation => '[HU] [HU] Are you sure you want to cancel this invite?';
+  String get cancelInviteConfirmation =>
+      '[HU] [HU] Are you sure you want to cancel this invite?';
 
   @override
   String created(String created, Object date) {
@@ -88,7 +89,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get playtimeLiveScheduled => '[HU] Élő munkamenet ütemezve';
 
   @override
-  String get revokeAccessConfirmation => '[HU] [HU] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation =>
+      '[HU] [HU] Are you sure you want to revoke access?';
 
   @override
   String get download => '[HU] Letöltés';
@@ -200,7 +202,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get cut => '[HU] Kivágás';
 
   @override
-  String get inviteCancelledSuccessfully => '[HU] [HU] Invite cancelled successfully';
+  String get inviteCancelledSuccessfully =>
+      '[HU] [HU] Invite cancelled successfully';
 
   @override
   String get retry => '[HU] Újrapróbálkozás';
@@ -277,7 +280,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get scheduleForLater => '[HU] Ütemezés későbbre';
 
   @override
-  String get accessRevokedSuccessfully => '[HU] [HU] Access revoked successfully';
+  String get accessRevokedSuccessfully =>
+      '[HU] [HU] Access revoked successfully';
 
   @override
   String type(String type) {
@@ -402,7 +406,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get dashboard => '[HU] Irányítópult';
 
   @override
-  String get noPermissionForBroadcast => '[HU] [HU] No permission for broadcast';
+  String get noPermissionForBroadcast =>
+      '[HU] [HU] No permission for broadcast';
 
   @override
   String get playtimeAdminPanelTitle => '[HU] Playtime Games – Admin';
@@ -479,7 +484,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get playtimeEnterGameName => '[HU] Add meg a játék nevét';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[HU] Kérjük jelentkezz be családi funkciókhoz';
+  String get pleaseLoginForFamilyFeatures =>
+      '[HU] Kérjük jelentkezz be családi funkciókhoz';
 
   @override
   String get myInvites => '[HU] Meghívásaim';
@@ -494,7 +500,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get adminScreenTBD => '[HU] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => '[HU] Playtime szülői irányítópult címe';
+  String get playtimeParentDashboardTitle =>
+      '[HU] Playtime szülői irányítópult címe';
 
   @override
   String get close => '[HU] Bezárás';
@@ -533,7 +540,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[HU] [HU] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[HU] [HU] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[HU] Admin Metrics';
@@ -554,40 +562,52 @@ class AppLocalizationsHu extends AppLocalizations {
   String get contentLibrary => '[HU] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[HU] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[HU] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[HU] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[HU] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[HU] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[HU] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[HU] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[HU] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[HU] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[HU] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[HU] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[HU] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[HU] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[HU] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[HU] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[HU] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[HU] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[HU] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN =>
+      '[HU] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[HU] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[HU] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[HU] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[HU] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -604,19 +624,24 @@ class AppLocalizationsHu extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[HU] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[HU] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[HU] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[HU] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] The verification code is invalid.';
+  String get REDACTED_TOKEN =>
+      '[HU] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[HU] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[HU] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Please enter the verification code.';
+  String get REDACTED_TOKEN =>
+      '[HU] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[HU] Missing verification ID.';
@@ -628,43 +653,56 @@ class AppLocalizationsHu extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[HU] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[HU] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[HU] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[HU] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[HU] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[HU] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[HU] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN =>
+      '[HU] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Multi-factor information not found.';
+  String get REDACTED_TOKEN =>
+      '[HU] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Missing multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[HU] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Invalid multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[HU] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] This second factor is already in use.';
+  String get REDACTED_TOKEN =>
+      '[HU] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN =>
+      '[HU] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[HU] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[HU] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Email change requires verification.';
+  String get REDACTED_TOKEN =>
+      '[HU] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] This phone number is already in use.';
+  String get REDACTED_TOKEN =>
+      '[HU] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[HU] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[HU] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[HU] The ID token is invalid.';
@@ -676,10 +714,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[HU] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[HU] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[HU] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[HU] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[HU] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[HU] Invalid custom claims provided.';
@@ -688,70 +728,87 @@ class AppLocalizationsHu extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[HU] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[HU] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[HU] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[HU] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[HU] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[HU] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN =>
+      '[HU] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[HU] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[HU] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[HU] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[HU] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[HU] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[HU] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN =>
+      '[HU] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[HU] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[HU] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[HU] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN =>
+      '[HU] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[HU] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[HU] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN =>
+      '[HU] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[HU] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[HU] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[HU] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[HU] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[HU] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[HU] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN =>
+      '[HU] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[HU] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[HU] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[HU] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN =>
+      '[HU] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[HU] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[HU] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[HU] Missing continue URL.';
@@ -766,7 +823,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get authErrorMissingUid => '[HU] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Missing OAuth client secret.';
+  String get REDACTED_TOKEN =>
+      '[HU] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[HU] Firebase project not found.';
@@ -775,19 +833,23 @@ class AppLocalizationsHu extends AppLocalizations {
   String get authErrorReservedClaims => '[HU] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[HU] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[HU] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[HU] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[HU] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[HU] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[HU] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN =>
+      '[HU] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[HU] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[HU] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -836,7 +898,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Virtual session created! Inviting friends... (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Virtual session created! Inviting friends... (Hungarian)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -877,13 +940,15 @@ class AppLocalizationsHu extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[HU] Subscription unavailable (Hungarian)';
+  String get subscriptionUnavailable =>
+      '[HU] Subscription unavailable (Hungarian)';
 
   @override
   String get confirmBooking => '[HU] Confirm Booking (Hungarian)';
 
   @override
-  String get failedToUpdatePermissionE => '[HU] Failed to update permission: \$e (Hungarian)';
+  String get failedToUpdatePermissionE =>
+      '[HU] Failed to update permission: \$e (Hungarian)';
 
   @override
   String get reject => '[HU] Reject (Hungarian)';
@@ -897,7 +962,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get noProviders => '[HU] No providers';
 
   @override
-  String get checkingSubscription => '[HU] Checking subscription... (Hungarian)';
+  String get checkingSubscription =>
+      '[HU] Checking subscription... (Hungarian)';
 
   @override
   String errorPickingImageE(Object e) {
@@ -905,13 +971,15 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get noContentAvailableYet => '[HU] No content available yet (Hungarian)';
+  String get noContentAvailableYet =>
+      '[HU] No content available yet (Hungarian)';
 
   @override
   String get resolve => '[HU] Resolve (Hungarian)';
 
   @override
-  String get errorLoadingSurveysError => '[HU] Error loading surveys: \$error (Hungarian)';
+  String get errorLoadingSurveysError =>
+      '[HU] Error loading surveys: \$error (Hungarian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -919,7 +987,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[HU] Get help with your account (Hungarian)';
+  String get getHelpWithYourAccount =>
+      '[HU] Get help with your account (Hungarian)';
 
   @override
   String get pay => '[HU] Pay (Hungarian)';
@@ -934,7 +1003,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[HU] Changes saved successfully! (Hungarian)';
+  String get changesSavedSuccessfully =>
+      '[HU] Changes saved successfully! (Hungarian)';
 
   @override
   String get createNewInvoice => '[HU] Create New Invoice (Hungarian)';
@@ -954,7 +1024,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get profileSaved => '[HU] Profile saved! (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -985,7 +1056,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[HU] You will receive a confirmation email shortly. (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] You will receive a confirmation email shortly. (Hungarian)';
 
   @override
   String get addQuestion => '[HU] Add Question (Hungarian)';
@@ -1014,22 +1086,26 @@ class AppLocalizationsHu extends AppLocalizations {
   String get surveyManagement => '[HU] Survey Management (Hungarian)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[HU] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[HU] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[HU] No rooms found. Add your first room! (Hungarian)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[HU] No rooms found. Add your first room! (Hungarian)';
 
   @override
   String get readOurPrivacyPolicy => '[HU] Read our privacy policy (Hungarian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[HU] Could not open privacy policy (Hungarian)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[HU] Could not open privacy policy (Hungarian)';
 
   @override
   String get refresh1 => '[HU] Refresh (Hungarian)';
 
   @override
-  String get roomUpdatedSuccessfully => '[HU] Room updated successfully! (Hungarian)';
+  String get roomUpdatedSuccessfully =>
+      '[HU] Room updated successfully! (Hungarian)';
 
   @override
   String get contentDetail => '[HU] Content Detail (Hungarian)';
@@ -1038,7 +1114,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get cancelSubscription => '[HU] Cancel Subscription (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Successfully registered as Ambassador! (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Successfully registered as Ambassador! (Hungarian)';
 
   @override
   String get save1 => '[HU] Save (Hungarian)';
@@ -1047,7 +1124,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get copy1 => '[HU] Copy (Hungarian)';
 
   @override
-  String get failedToSendInvitationE => '[HU] Failed to send invitation: \$e (Hungarian)';
+  String get failedToSendInvitationE =>
+      '[HU] Failed to send invitation: \$e (Hungarian)';
 
   @override
   String get surveyScore => '[HU] Survey Score (Hungarian)';
@@ -1064,16 +1142,20 @@ class AppLocalizationsHu extends AppLocalizations {
   String get responseDetail => '[HU] Response Detail (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[HU] Failed to start Pro subscription: \$e (Hungarian)';
+  String get failedToStartProSubscriptionE =>
+      '[HU] Failed to start Pro subscription: \$e (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Business Dashboard Entry Screen - Coming Soon (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Business Dashboard Entry Screen - Coming Soon (Hungarian)';
 
   @override
   String get contentFilter => '[HU] Content Filter (Hungarian)';
@@ -1095,7 +1177,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[HU] Business CRM Entry Screen - Coming Soon (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Business CRM Entry Screen - Coming Soon (Hungarian)';
 
   @override
   String get adminDashboard => '[HU] Admin Dashboard';
@@ -1106,13 +1189,16 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[HU] Error loading dashboard: \$error (Hungarian)';
+  String get errorLoadingDashboardError =>
+      '[HU] Error loading dashboard: \$error (Hungarian)';
 
   @override
-  String get gameDeletedSuccessfully => '[HU] Game deleted successfully! (Hungarian)';
+  String get gameDeletedSuccessfully =>
+      '[HU] Game deleted successfully! (Hungarian)';
 
   @override
-  String get viewResponsesComingSoon => '[HU] View responses - Coming soon! (Hungarian)';
+  String get viewResponsesComingSoon =>
+      '[HU] View responses - Coming soon! (Hungarian)';
 
   @override
   String get deleteProvider => '[HU] Delete Provider';
@@ -1121,7 +1207,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get errorLoadingRewards => '[HU] Error loading rewards (Hungarian)';
 
   @override
-  String get failedToDeleteAccountE => '[HU] Failed to delete account: \$e (Hungarian)';
+  String get failedToDeleteAccountE =>
+      '[HU] Failed to delete account: \$e (Hungarian)';
 
   @override
   String get invited1 => '[HU] Invited (Hungarian)';
@@ -1136,7 +1223,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get noEvents => '[HU] No events (Hungarian)';
 
   @override
-  String get gameCreatedSuccessfully => '[HU] Game created successfully! (Hungarian)';
+  String get gameCreatedSuccessfully =>
+      '[HU] Game created successfully! (Hungarian)';
 
   @override
   String get add1 => '[HU] Add (Hungarian)';
@@ -1156,10 +1244,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get clients => '[HU] Clients (Hungarian)';
 
   @override
-  String get noAmbassadorDataAvailable => '[HU] No ambassador data available (Hungarian)';
+  String get noAmbassadorDataAvailable =>
+      '[HU] No ambassador data available (Hungarian)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[HU] Background deleted successfully! (Hungarian)';
+  String get backgroundDeletedSuccessfully =>
+      '[HU] Background deleted successfully! (Hungarian)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1167,7 +1257,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[HU] No analytics data available yet. (Hungarian)';
+  String get noAnalyticsDataAvailableYet =>
+      '[HU] No analytics data available yet. (Hungarian)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1175,7 +1266,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[HU] Business Phone Booking Entry Screen - Coming Soon (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Business Phone Booking Entry Screen - Coming Soon (Hungarian)';
 
   @override
   String get verification => '[HU] Verification (Hungarian)';
@@ -1222,7 +1314,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get businessProfile => '[HU] Business Profile (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Business Booking Entry Screen - Coming Soon (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Business Booking Entry Screen - Coming Soon (Hungarian)';
 
   @override
   String get createNewSurvey => '[HU] Create New Survey (Hungarian)';
@@ -1246,7 +1339,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get loginFailedE => '[HU] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[HU] Invitation sent successfully! (Hungarian)';
+  String get invitationSentSuccessfully =>
+      '[HU] Invitation sent successfully! (Hungarian)';
 
   @override
   String get registering => '[HU] Registering... (Hungarian)';
@@ -1260,13 +1354,16 @@ class AppLocalizationsHu extends AppLocalizations {
   String get home1 => '[HU] Home (Hungarian)';
 
   @override
-  String get errorSavingSettingsE => '[HU] Error saving settings: \$e (Hungarian)';
+  String get errorSavingSettingsE =>
+      '[HU] Error saving settings: \$e (Hungarian)';
 
   @override
-  String get appVersionAndInformation => '[HU] App version and information (Hungarian)';
+  String get appVersionAndInformation =>
+      '[HU] App version and information (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Business Subscription Entry Screen - Coming Soon (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Business Subscription Entry Screen - Coming Soon (Hungarian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1274,7 +1371,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[HU] Your payment has been processed successfully. (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Your payment has been processed successfully. (Hungarian)';
 
   @override
   String get errorE => '[HU] Error: \$e (Hungarian)';
@@ -1283,7 +1381,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get viewAll1 => '[HU] View All (Hungarian)';
 
   @override
-  String get editSurveyComingSoon => '[HU] Edit survey - Coming soon! (Hungarian)';
+  String get editSurveyComingSoon =>
+      '[HU] Edit survey - Coming soon! (Hungarian)';
 
   @override
   String get enterOtp => '[HU] Enter OTP (Hungarian)';
@@ -1292,7 +1391,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get payment => '[HU] Payment (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Automatically confirm new booking requests (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Automatically confirm new booking requests (Hungarian)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1305,7 +1405,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[HU] Please sign in to upload a background (Hungarian)';
+  String get pleaseSignInToUploadABackground =>
+      '[HU] Please sign in to upload a background (Hungarian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1322,19 +1423,22 @@ class AppLocalizationsHu extends AppLocalizations {
   String get autoconfirmBookings => '[HU] Auto-Confirm Bookings (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Redirecting to Stripe checkout for Pro plan... (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Redirecting to Stripe checkout for Pro plan... (Hungarian)';
 
   @override
   String get exportAsCsv => '[HU] Export as CSV (Hungarian)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[HU] Delete functionality coming soon! (Hungarian)';
+  String get deleteFunctionalityComingSoon =>
+      '[HU] Delete functionality coming soon! (Hungarian)';
 
   @override
   String get editClient => '[HU] Edit Client (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Are you sure you want to delete this message? (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Are you sure you want to delete this message? (Hungarian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1345,31 +1449,39 @@ class AppLocalizationsHu extends AppLocalizations {
   String get notAuthenticated => '[HU] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[HU] Privacy request sent to your parents! (Hungarian)';
+  String get privacyRequestSentToYourParents =>
+      '[HU] Privacy request sent to your parents! (Hungarian)';
 
   @override
-  String get clientDeletedSuccessfully => '[HU] Client deleted successfully! (Hungarian)';
+  String get clientDeletedSuccessfully =>
+      '[HU] Client deleted successfully! (Hungarian)';
 
   @override
-  String get failedToCancelSubscription => '[HU] Failed to cancel subscription (Hungarian)';
+  String get failedToCancelSubscription =>
+      '[HU] Failed to cancel subscription (Hungarian)';
 
   @override
   String get allLanguages => '[HU] All Languages (Hungarian)';
 
   @override
-  String get slotDeletedSuccessfully => '[HU] Slot deleted successfully (Hungarian)';
+  String get slotDeletedSuccessfully =>
+      '[HU] Slot deleted successfully (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN =>
+      '[HU] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Parents must approve before children can join (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Parents must approve before children can join (Hungarian)';
 
   @override
-  String get subscribeToPro1499mo => '[HU] Subscribe to Pro (€14.99/mo) (Hungarian)';
+  String get subscribeToPro1499mo =>
+      '[HU] Subscribe to Pro (€14.99/mo) (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Business Availability Entry Screen - Coming Soon (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Business Availability Entry Screen - Coming Soon (Hungarian)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1383,7 +1495,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get submitBooking => '[HU] Submit Booking (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Are you sure you want to cancel this appointment? (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Are you sure you want to cancel this appointment? (Hungarian)';
 
   @override
   String get noUpcomingBookings => '[HU] No upcoming bookings (Hungarian)';
@@ -1401,7 +1514,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get goToDashboard => '[HU] Go to Dashboard (Hungarian)';
 
   @override
-  String get ambassadorQuotaDashboard => '[HU] Ambassador Quota Dashboard (Hungarian)';
+  String get ambassadorQuotaDashboard =>
+      '[HU] Ambassador Quota Dashboard (Hungarian)';
 
   @override
   String get adminSettings => '[HU] Admin Settings';
@@ -1439,7 +1553,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[HU] Client added successfully! (Hungarian)';
+  String get clientAddedSuccessfully =>
+      '[HU] Client added successfully! (Hungarian)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1457,7 +1572,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get bookAppointment => '[HU] Book Appointment (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[HU] Delete (Hungarian)';
@@ -1472,13 +1588,15 @@ class AppLocalizationsHu extends AppLocalizations {
   String get manageSubscription => '[HU] Manage Subscription (Hungarian)';
 
   @override
-  String get requiresInstallFallback => '[HU] Requires Install Fallback (Hungarian)';
+  String get requiresInstallFallback =>
+      '[HU] Requires Install Fallback (Hungarian)';
 
   @override
   String get paymentConfirmation => '[HU] Payment Confirmation (Hungarian)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[HU] Promo applied! Your next bill is free. (Hungarian)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[HU] Promo applied! Your next bill is free. (Hungarian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1489,13 +1607,16 @@ class AppLocalizationsHu extends AppLocalizations {
   String get errorLoadingSlots => '[HU] Error loading slots (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Allow other users to find and join this game (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Allow other users to find and join this game (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Business Onboarding Screen - Coming Soon (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Business Onboarding Screen - Coming Soon (Hungarian)';
 
   @override
-  String get activateBusinessProfile => '[HU] Activate Business Profile (Hungarian)';
+  String get activateBusinessProfile =>
+      '[HU] Activate Business Profile (Hungarian)';
 
   @override
   String get contentNotFound => '[HU] Content not found (Hungarian)';
@@ -1537,7 +1658,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get shareLink => '[HU] Share Link (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN =>
+      '[HU] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[HU] Delete Appointment (Hungarian)';
@@ -1557,10 +1679,12 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[HU] Update your business information (Hungarian)';
+  String get updateYourBusinessInformation =>
+      '[HU] Update your business information (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN =>
+      '[HU] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[HU] Parent Dashboard (Hungarian)';
@@ -1583,10 +1707,12 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[HU] Studio booking is only available on web (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Studio booking is only available on web (Hungarian)';
 
   @override
-  String get errorLoadingBranchesE => '[HU] Error loading branches: \$e (Hungarian)';
+  String get errorLoadingBranchesE =>
+      '[HU] Error loading branches: \$e (Hungarian)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1602,13 +1728,15 @@ class AppLocalizationsHu extends AppLocalizations {
   String get none => '[HU] None (Hungarian)';
 
   @override
-  String get failedToUpdateConsentE => '[HU] Failed to update consent: \$e (Hungarian)';
+  String get failedToUpdateConsentE =>
+      '[HU] Failed to update consent: \$e (Hungarian)';
 
   @override
   String get welcome1 => '[HU] Welcome (Hungarian)';
 
   @override
-  String get failedToCreateSessionE => '[HU] Failed to create session: \$e (Hungarian)';
+  String get failedToCreateSessionE =>
+      '[HU] Failed to create session: \$e (Hungarian)';
 
   @override
   String get inviteContact => '[HU] Invite Contact (Hungarian)';
@@ -1617,7 +1745,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get surveyEditor => '[HU] Survey Editor (Hungarian)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[HU] Failed to start Basic subscription: \$e (Hungarian)';
+  String get failedToStartBasicSubscriptionE =>
+      '[HU] Failed to start Basic subscription: \$e (Hungarian)';
 
   @override
   String get mySchedule => '[HU] My Schedule (Hungarian)';
@@ -1637,10 +1766,12 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[HU] Settings saved successfully! (Hungarian)';
+  String get settingsSavedSuccessfully =>
+      '[HU] Settings saved successfully! (Hungarian)';
 
   @override
-  String get linkCopiedToClipboard => '[HU] Link copied to clipboard! (Hungarian)';
+  String get linkCopiedToClipboard =>
+      '[HU] Link copied to clipboard! (Hungarian)';
 
   @override
   String get accept1 => '[HU] Accept (Hungarian)';
@@ -1657,7 +1788,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[HU] Room deleted successfully! (Hungarian)';
+  String get roomDeletedSuccessfully =>
+      '[HU] Room deleted successfully! (Hungarian)';
 
   @override
   String get businessCalendar => '[HU] Business Calendar (Hungarian)';
@@ -1677,7 +1809,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get addNewRoom => '[HU] Add New Room (Hungarian)';
 
   @override
-  String get requireParentApproval => '[HU] Require Parent Approval (Hungarian)';
+  String get requireParentApproval =>
+      '[HU] Require Parent Approval (Hungarian)';
 
   @override
   String get closed => '[HU] Closed (Hungarian)';
@@ -1722,7 +1855,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get cancel1 => '[HU] Cancel (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Subscription activated successfully! (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Subscription activated successfully! (Hungarian)';
 
   @override
   String activityLogaction(Object action) {
@@ -1733,7 +1867,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get broadcast => '[HU] Broadcast (Hungarian)';
 
   @override
-  String get noEventsScheduledThisWeek => '[HU] No events scheduled this week (Hungarian)';
+  String get noEventsScheduledThisWeek =>
+      '[HU] No events scheduled this week (Hungarian)';
 
   @override
   String get googleCalendar => '[HU] Google Calendar (Hungarian)';
@@ -1745,7 +1880,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get childDashboard => '[HU] Child Dashboard (Hungarian)';
 
   @override
-  String get failedToUploadBackgroundE => '[HU] Failed to upload background: \$e (Hungarian)';
+  String get failedToUploadBackgroundE =>
+      '[HU] Failed to upload background: \$e (Hungarian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1764,7 +1900,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get noAppointments => '[HU] No appointments (Hungarian)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[HU] • Unlimited bookings per week (Hungarian)';
+  String get unlimitedBookingsPerWeek =>
+      '[HU] • Unlimited bookings per week (Hungarian)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1772,16 +1909,19 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[HU] Scheduled at: \$scheduledAt (Hungarian)';
+  String get scheduledAtScheduledat =>
+      '[HU] Scheduled at: \$scheduledAt (Hungarian)';
 
   @override
   String get selectStaff => '[HU] Select Staff (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Subscription cancelled successfully (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Subscription cancelled successfully (Hungarian)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[HU] Cancel Appointment (Hungarian)';
@@ -1795,7 +1935,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get businessSignup => '[HU] Business Signup (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Business Completion Screen - Coming Soon (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Business Completion Screen - Coming Soon (Hungarian)';
 
   @override
   String get createGame1 => '[HU] Create Game (Hungarian)';
@@ -1806,10 +1947,12 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[HU] Please enter a promo code (Hungarian)';
+  String get pleaseEnterAPromoCode =>
+      '[HU] Please enter a promo code (Hungarian)';
 
   @override
-  String get errorLoadingAvailabilityE => '[HU] Error loading availability: \$e (Hungarian)';
+  String get errorLoadingAvailabilityE =>
+      '[HU] Error loading availability: \$e (Hungarian)';
 
   @override
   String get parentalControls => '[HU] Parental Controls (Hungarian)';
@@ -1818,13 +1961,15 @@ class AppLocalizationsHu extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[HU] Child linked successfully! (Hungarian)';
+  String get childLinkedSuccessfully =>
+      '[HU] Child linked successfully! (Hungarian)';
 
   @override
   String get create => '[HU] Create (Hungarian)';
 
   @override
-  String get noExternalMeetingsFound => '[HU] No external meetings found. (Hungarian)';
+  String get noExternalMeetingsFound =>
+      '[HU] No external meetings found. (Hungarian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1832,13 +1977,15 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[HU] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[HU] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[HU] Scheduler Screen (Hungarian)';
 
   @override
-  String get clientUpdatedSuccessfully => '[HU] Client updated successfully! (Hungarian)';
+  String get clientUpdatedSuccessfully =>
+      '[HU] Client updated successfully! (Hungarian)';
 
   @override
   String get surveyResponses => '[HU] Survey Responses (Hungarian)';
@@ -1864,10 +2011,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get errorLoadingEvents => '[HU] Error loading events (Hungarian)';
 
   @override
-  String get errorLoadingOrganizations => '[HU] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[HU] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[HU] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[HU] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[HU] Success (Hungarian)';
@@ -1886,10 +2035,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get readWrite => '[HU] Read & Write (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Redirecting to Stripe checkout for Basic plan... (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Redirecting to Stripe checkout for Basic plan... (Hungarian)';
 
   @override
-  String get errorSavingConfigurationE => '[HU] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[HU] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[HU] Pick Date (Hungarian)';
@@ -1925,10 +2076,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get businessLogin => '[HU] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[HU] Invoice created successfully! (Hungarian)';
+  String get invoiceCreatedSuccessfully =>
+      '[HU] Invoice created successfully! (Hungarian)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[HU] No time series data available (Hungarian)';
+  String get noTimeSeriesDataAvailable =>
+      '[HU] No time series data available (Hungarian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1941,7 +2094,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[HU] Failed to send privacy request: \$e (Hungarian)';
+  String get failedToSendPrivacyRequestE =>
+      '[HU] Failed to send privacy request: \$e (Hungarian)';
 
   @override
   String get chooseYourPlan => '[HU] Choose Your Plan (Hungarian)';
@@ -1956,13 +2110,15 @@ class AppLocalizationsHu extends AppLocalizations {
   String get eventCreated => '[HU] Event created (Hungarian)';
 
   @override
-  String get subscribeToBasic499mo => '[HU] Subscribe to Basic (€4.99/mo) (Hungarian)';
+  String get subscribeToBasic499mo =>
+      '[HU] Subscribe to Basic (€4.99/mo) (Hungarian)';
 
   @override
   String get completion => '[HU] Completion (Hungarian)';
 
   @override
-  String get supportTicketSubmitted => '[HU] Support ticket submitted (Hungarian)';
+  String get supportTicketSubmitted =>
+      '[HU] Support ticket submitted (Hungarian)';
 
   @override
   String get monetizationSettings => '[HU] Monetization Settings (Hungarian)';
@@ -1977,10 +2133,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get deleteSurvey => '[HU] Delete Survey (Hungarian)';
 
   @override
-  String get gameApprovedSuccessfully => '[HU] Game approved successfully! (Hungarian)';
+  String get gameApprovedSuccessfully =>
+      '[HU] Game approved successfully! (Hungarian)';
 
   @override
-  String get errorLoadingPermissionsError => '[HU] Error loading permissions: \$error (Hungarian)';
+  String get errorLoadingPermissionsError =>
+      '[HU] Error loading permissions: \$error (Hungarian)';
 
   @override
   String get referrals => '[HU] Referrals (Hungarian)';
@@ -2022,7 +2180,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get organizations => '[HU] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[HU] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[HU] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[HU] Create New Game (Hungarian)';
@@ -2031,16 +2190,19 @@ class AppLocalizationsHu extends AppLocalizations {
   String get next1 => '[HU] Next (Hungarian)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[HU] Background uploaded successfully! (Hungarian)';
+  String get backgroundUploadedSuccessfully =>
+      '[HU] Background uploaded successfully! (Hungarian)';
 
   @override
-  String get noAppointmentRequestsFound => '[HU] No appointment requests found. (Hungarian)';
+  String get noAppointmentRequestsFound =>
+      '[HU] No appointment requests found. (Hungarian)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => '[HU] Restrict mature content (Hungarian)';
+  String get restrictMatureContent =>
+      '[HU] Restrict mature content (Hungarian)';
 
   @override
   String get ambassadors => '[HU] Ambassadors (Hungarian)';
@@ -2061,16 +2223,19 @@ class AppLocalizationsHu extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => '[HU] Failed to create game: \$e (Hungarian)';
+  String get failedToCreateGameE =>
+      '[HU] Failed to create game: \$e (Hungarian)';
 
   @override
   String get noChartDataAvailable => '[HU] No chart data available (Hungarian)';
 
   @override
-  String get phonebasedBookingSystem => '[HU] • Phone-based booking system (Hungarian)';
+  String get phonebasedBookingSystem =>
+      '[HU] • Phone-based booking system (Hungarian)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2079,7 +2244,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get invoices => '[HU] Invoices (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2106,10 +2272,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get iDoNotConsent => '[HU] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN => '[HU] No clients found. Add your first client! (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] No clients found. Add your first client! (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN =>
+      '[HU] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[HU] Group: \$groupId';
@@ -2121,7 +2289,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get forward => '[HU] Forward (Hungarian)';
 
   @override
-  String get roomAddedSuccessfully => '[HU] Room added successfully! (Hungarian)';
+  String get roomAddedSuccessfully =>
+      '[HU] Room added successfully! (Hungarian)';
 
   @override
   String get option => '[HU] • \$option (Hungarian)';
@@ -2132,7 +2301,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[HU] • CRM dashboard with analytics (Hungarian)';
+  String get crmDashboardWithAnalytics =>
+      '[HU] • CRM dashboard with analytics (Hungarian)';
 
   @override
   String get contentLibrary1 => '[HU] Content Library (Hungarian)';
@@ -2141,28 +2311,34 @@ class AppLocalizationsHu extends AppLocalizations {
   String get reply => '[HU] Reply (Hungarian)';
 
   @override
-  String get subscriptionManagement => '[HU] Subscription Management (Hungarian)';
+  String get subscriptionManagement =>
+      '[HU] Subscription Management (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Monetization settings will be implemented here (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Monetization settings will be implemented here (Hungarian)';
 
   @override
-  String get failedToApplyPromoCodeE => '[HU] Failed to apply promo code: \$e (Hungarian)';
+  String get failedToApplyPromoCodeE =>
+      '[HU] Failed to apply promo code: \$e (Hungarian)';
 
   @override
   String get editProvider => '[HU] Edit Provider';
 
   @override
-  String get localizationContribution => '[HU] Localization Contribution (Hungarian)';
+  String get localizationContribution =>
+      '[HU] Localization Contribution (Hungarian)';
 
   @override
   String get parentalConsent => '[HU] Parental Consent (Hungarian)';
 
   @override
-  String get businessSignupScreenComingSoon => '[HU] Business Signup Screen - Coming Soon (Hungarian)';
+  String get businessSignupScreenComingSoon =>
+      '[HU] Business Signup Screen - Coming Soon (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => '[HU] Are you sure you want to delete this appointment? (Hungarian)';
+  String get REDACTED_TOKEN =>
+      '[HU] Are you sure you want to delete this appointment? (Hungarian)';
 
   @override
   String get syncAppointment => '[HU] Sync Appointment (Hungarian)';
@@ -2174,13 +2350,15 @@ class AppLocalizationsHu extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[HU] Business Setup Screen - Coming Soon (Hungarian)';
+  String get businessSetupScreenComingSoon =>
+      '[HU] Business Setup Screen - Coming Soon (Hungarian)';
 
   @override
   String get edit1 => '[HU] Edit (Hungarian)';
 
   @override
-  String get noEventsScheduledThisMonth => '[HU] No events scheduled this month (Hungarian)';
+  String get noEventsScheduledThisMonth =>
+      '[HU] No events scheduled this month (Hungarian)';
 
   @override
   String get businessDashboard => '[HU] Business Dashboard (Hungarian)';
@@ -2194,10 +2372,12 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[HU] Manage Staff Availability (Hungarian)';
+  String get manageStaffAvailability =>
+      '[HU] Manage Staff Availability (Hungarian)';
 
   @override
-  String get noMissingTranslations => '[HU] No missing translations (Hungarian)';
+  String get noMissingTranslations =>
+      '[HU] No missing translations (Hungarian)';
 
   @override
   String get skip => '[HU] Skip (Hungarian)';
@@ -2211,7 +2391,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get noUsers => '[HU] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[HU] Error loading referral code (Hungarian)';
+  String get errorLoadingReferralCode =>
+      '[HU] Error loading referral code (Hungarian)';
 
   @override
   String get allCountries => '[HU] All Countries (Hungarian)';
@@ -2220,13 +2401,15 @@ class AppLocalizationsHu extends AppLocalizations {
   String get deleteGame => '[HU] Delete Game (Hungarian)';
 
   @override
-  String get staffManagementTools => '[HU] • Staff management tools (Hungarian)';
+  String get staffManagementTools =>
+      '[HU] • Staff management tools (Hungarian)';
 
   @override
   String get deleteMessage => '[HU] Delete Message (Hungarian)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[HU] changeRole (TRANSLATE)';
@@ -2237,7 +2420,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[HU] Opening customer portal... (Hungarian)';
+  String get openingCustomerPortal =>
+      '[HU] Opening customer portal... (Hungarian)';
 
   @override
   String get signOut => '[HU] Sign Out (Hungarian)';
@@ -2248,7 +2432,8 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[HU] Upgrade to Business (Hungarian)';
@@ -2274,7 +2459,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[HU] View Responses (Hungarian)';
@@ -2303,7 +2489,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2321,7 +2508,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2330,7 +2518,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2378,7 +2567,8 @@ class AppLocalizationsHu extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2426,10 +2616,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle => '[HU] Congratulations! You\'re now an Ambassador! (Hungarian)';
+  String get ambassadorPromotionTitle =>
+      '[HU] Congratulations! You\'re now an Ambassador! (Hungarian)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2440,7 +2632,11 @@ class AppLocalizationsHu extends AppLocalizations {
   String get tierUpgradeTitle => '[HU] Tier Upgrade! 🎉 (Hungarian)';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[HU] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Hungarian)';
   }
 
@@ -2448,20 +2644,29 @@ class AppLocalizationsHu extends AppLocalizations {
   String get monthlyReminderTitle => '[HU] Monthly Goal Reminder (Hungarian)';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[HU] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Hungarian)';
   }
 
   @override
-  String get performanceWarningTitle => '[HU] Ambassador Performance Alert (Hungarian)';
+  String get performanceWarningTitle =>
+      '[HU] Ambassador Performance Alert (Hungarian)';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[HU] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Hungarian)';
   }
 
   @override
-  String get ambassadorDemotionTitle => '[HU] Ambassador Status Update (Hungarian)';
+  String get ambassadorDemotionTitle =>
+      '[HU] Ambassador Status Update (Hungarian)';
 
   @override
   String ambassadorDemotionBody(String reason) {

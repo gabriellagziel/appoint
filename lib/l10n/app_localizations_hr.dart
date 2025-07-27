@@ -88,7 +88,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get playtimeLiveScheduled => '[HR] Živa sesija zakazana';
 
   @override
-  String get revokeAccessConfirmation => '[HR] [HR] Are you sure you want to revoke access?';
+  String get revokeAccessConfirmation =>
+      '[HR] [HR] Are you sure you want to revoke access?';
 
   @override
   String get download => '[HR] Preuzmi';
@@ -182,7 +183,8 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => '[HR] Sastanak je uspješno podijeljen';
+  String get meetingSharedSuccessfully =>
+      '[HR] Sastanak je uspješno podijeljen';
 
   @override
   String get welcomeToPlaytime => '[HR] Dobrodošli u Playtime';
@@ -277,7 +279,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get scheduleForLater => '[HR] Zakaži za kasnije';
 
   @override
-  String get accessRevokedSuccessfully => '[HR] [HR] Access revoked successfully';
+  String get accessRevokedSuccessfully =>
+      '[HR] [HR] Access revoked successfully';
 
   @override
   String type(String type) {
@@ -479,7 +482,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get playtimeEnterGameName => '[HR] Unesite naziv igre';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[HR] Prijavite se za obiteljske značajke';
+  String get pleaseLoginForFamilyFeatures =>
+      '[HR] Prijavite se za obiteljske značajke';
 
   @override
   String get myInvites => '[HR] Moje pozivnice';
@@ -533,7 +537,8 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[HR] [HR] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[HR] [HR] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[HR] Admin Metrics';
@@ -554,40 +559,52 @@ class AppLocalizationsHr extends AppLocalizations {
   String get contentLibrary => '[HR] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[HR] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[HR] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[HR] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[HR] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[HR] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[HR] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[HR] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[HR] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[HR] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[HR] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[HR] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[HR] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[HR] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[HR] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[HR] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[HR] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[HR] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[HR] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN =>
+      '[HR] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[HR] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[HR] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[HR] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[HR] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -604,19 +621,24 @@ class AppLocalizationsHr extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[HR] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[HR] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[HR] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[HR] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] The verification code is invalid.';
+  String get REDACTED_TOKEN =>
+      '[HR] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[HR] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[HR] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Please enter the verification code.';
+  String get REDACTED_TOKEN =>
+      '[HR] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[HR] Missing verification ID.';
@@ -628,43 +650,56 @@ class AppLocalizationsHr extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[HR] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[HR] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[HR] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[HR] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[HR] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[HR] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[HR] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN =>
+      '[HR] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Multi-factor information not found.';
+  String get REDACTED_TOKEN =>
+      '[HR] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Missing multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[HR] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Invalid multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[HR] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] This second factor is already in use.';
+  String get REDACTED_TOKEN =>
+      '[HR] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN =>
+      '[HR] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[HR] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[HR] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Email change requires verification.';
+  String get REDACTED_TOKEN =>
+      '[HR] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] This phone number is already in use.';
+  String get REDACTED_TOKEN =>
+      '[HR] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[HR] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[HR] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[HR] The ID token is invalid.';
@@ -676,10 +711,12 @@ class AppLocalizationsHr extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[HR] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[HR] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[HR] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[HR] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[HR] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[HR] Invalid custom claims provided.';
@@ -688,70 +725,87 @@ class AppLocalizationsHr extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[HR] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[HR] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[HR] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[HR] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[HR] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[HR] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN =>
+      '[HR] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[HR] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[HR] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[HR] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[HR] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[HR] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[HR] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN =>
+      '[HR] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[HR] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[HR] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[HR] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN =>
+      '[HR] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[HR] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[HR] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN =>
+      '[HR] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[HR] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[HR] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[HR] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[HR] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[HR] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[HR] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN =>
+      '[HR] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[HR] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[HR] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[HR] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN =>
+      '[HR] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[HR] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[HR] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[HR] Missing continue URL.';
@@ -766,7 +820,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get authErrorMissingUid => '[HR] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Missing OAuth client secret.';
+  String get REDACTED_TOKEN =>
+      '[HR] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[HR] Firebase project not found.';
@@ -775,19 +830,23 @@ class AppLocalizationsHr extends AppLocalizations {
   String get authErrorReservedClaims => '[HR] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[HR] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[HR] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[HR] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[HR] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[HR] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[HR] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN =>
+      '[HR] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[HR] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[HR] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -836,7 +895,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Virtual session created! Inviting friends... (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Virtual session created! Inviting friends... (Croatian)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -877,13 +937,15 @@ class AppLocalizationsHr extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[HR] Subscription unavailable (Croatian)';
+  String get subscriptionUnavailable =>
+      '[HR] Subscription unavailable (Croatian)';
 
   @override
   String get confirmBooking => '[HR] Confirm Booking (Croatian)';
 
   @override
-  String get failedToUpdatePermissionE => '[HR] Failed to update permission: \$e (Croatian)';
+  String get failedToUpdatePermissionE =>
+      '[HR] Failed to update permission: \$e (Croatian)';
 
   @override
   String get reject => '[HR] Reject (Croatian)';
@@ -905,13 +967,15 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get noContentAvailableYet => '[HR] No content available yet (Croatian)';
+  String get noContentAvailableYet =>
+      '[HR] No content available yet (Croatian)';
 
   @override
   String get resolve => '[HR] Resolve (Croatian)';
 
   @override
-  String get errorLoadingSurveysError => '[HR] Error loading surveys: \$error (Croatian)';
+  String get errorLoadingSurveysError =>
+      '[HR] Error loading surveys: \$error (Croatian)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -919,7 +983,8 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[HR] Get help with your account (Croatian)';
+  String get getHelpWithYourAccount =>
+      '[HR] Get help with your account (Croatian)';
 
   @override
   String get pay => '[HR] Pay (Croatian)';
@@ -934,7 +999,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[HR] Changes saved successfully! (Croatian)';
+  String get changesSavedSuccessfully =>
+      '[HR] Changes saved successfully! (Croatian)';
 
   @override
   String get createNewInvoice => '[HR] Create New Invoice (Croatian)';
@@ -954,7 +1020,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get profileSaved => '[HR] Profile saved! (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -985,7 +1052,8 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[HR] You will receive a confirmation email shortly. (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] You will receive a confirmation email shortly. (Croatian)';
 
   @override
   String get addQuestion => '[HR] Add Question (Croatian)';
@@ -1014,22 +1082,26 @@ class AppLocalizationsHr extends AppLocalizations {
   String get surveyManagement => '[HR] Survey Management (Croatian)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[HR] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[HR] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[HR] No rooms found. Add your first room! (Croatian)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[HR] No rooms found. Add your first room! (Croatian)';
 
   @override
   String get readOurPrivacyPolicy => '[HR] Read our privacy policy (Croatian)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[HR] Could not open privacy policy (Croatian)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[HR] Could not open privacy policy (Croatian)';
 
   @override
   String get refresh1 => '[HR] Refresh (Croatian)';
 
   @override
-  String get roomUpdatedSuccessfully => '[HR] Room updated successfully! (Croatian)';
+  String get roomUpdatedSuccessfully =>
+      '[HR] Room updated successfully! (Croatian)';
 
   @override
   String get contentDetail => '[HR] Content Detail (Croatian)';
@@ -1038,7 +1110,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get cancelSubscription => '[HR] Cancel Subscription (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Successfully registered as Ambassador! (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Successfully registered as Ambassador! (Croatian)';
 
   @override
   String get save1 => '[HR] Save (Croatian)';
@@ -1047,7 +1120,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get copy1 => '[HR] Copy (Croatian)';
 
   @override
-  String get failedToSendInvitationE => '[HR] Failed to send invitation: \$e (Croatian)';
+  String get failedToSendInvitationE =>
+      '[HR] Failed to send invitation: \$e (Croatian)';
 
   @override
   String get surveyScore => '[HR] Survey Score (Croatian)';
@@ -1064,16 +1138,20 @@ class AppLocalizationsHr extends AppLocalizations {
   String get responseDetail => '[HR] Response Detail (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[HR] Failed to start Pro subscription: \$e (Croatian)';
+  String get failedToStartProSubscriptionE =>
+      '[HR] Failed to start Pro subscription: \$e (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Business Dashboard Entry Screen - Coming Soon (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Business Dashboard Entry Screen - Coming Soon (Croatian)';
 
   @override
   String get contentFilter => '[HR] Content Filter (Croatian)';
@@ -1095,7 +1173,8 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[HR] Business CRM Entry Screen - Coming Soon (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Business CRM Entry Screen - Coming Soon (Croatian)';
 
   @override
   String get adminDashboard => '[HR] Admin Dashboard';
@@ -1106,13 +1185,16 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[HR] Error loading dashboard: \$error (Croatian)';
+  String get errorLoadingDashboardError =>
+      '[HR] Error loading dashboard: \$error (Croatian)';
 
   @override
-  String get gameDeletedSuccessfully => '[HR] Game deleted successfully! (Croatian)';
+  String get gameDeletedSuccessfully =>
+      '[HR] Game deleted successfully! (Croatian)';
 
   @override
-  String get viewResponsesComingSoon => '[HR] View responses - Coming soon! (Croatian)';
+  String get viewResponsesComingSoon =>
+      '[HR] View responses - Coming soon! (Croatian)';
 
   @override
   String get deleteProvider => '[HR] Delete Provider';
@@ -1121,7 +1203,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get errorLoadingRewards => '[HR] Error loading rewards (Croatian)';
 
   @override
-  String get failedToDeleteAccountE => '[HR] Failed to delete account: \$e (Croatian)';
+  String get failedToDeleteAccountE =>
+      '[HR] Failed to delete account: \$e (Croatian)';
 
   @override
   String get invited1 => '[HR] Invited (Croatian)';
@@ -1136,7 +1219,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get noEvents => '[HR] No events (Croatian)';
 
   @override
-  String get gameCreatedSuccessfully => '[HR] Game created successfully! (Croatian)';
+  String get gameCreatedSuccessfully =>
+      '[HR] Game created successfully! (Croatian)';
 
   @override
   String get add1 => '[HR] Add (Croatian)';
@@ -1156,10 +1240,12 @@ class AppLocalizationsHr extends AppLocalizations {
   String get clients => '[HR] Clients (Croatian)';
 
   @override
-  String get noAmbassadorDataAvailable => '[HR] No ambassador data available (Croatian)';
+  String get noAmbassadorDataAvailable =>
+      '[HR] No ambassador data available (Croatian)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[HR] Background deleted successfully! (Croatian)';
+  String get backgroundDeletedSuccessfully =>
+      '[HR] Background deleted successfully! (Croatian)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1167,7 +1253,8 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[HR] No analytics data available yet. (Croatian)';
+  String get noAnalyticsDataAvailableYet =>
+      '[HR] No analytics data available yet. (Croatian)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1175,7 +1262,8 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[HR] Business Phone Booking Entry Screen - Coming Soon (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Business Phone Booking Entry Screen - Coming Soon (Croatian)';
 
   @override
   String get verification => '[HR] Verification (Croatian)';
@@ -1222,7 +1310,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get businessProfile => '[HR] Business Profile (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Business Booking Entry Screen - Coming Soon (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Business Booking Entry Screen - Coming Soon (Croatian)';
 
   @override
   String get createNewSurvey => '[HR] Create New Survey (Croatian)';
@@ -1246,7 +1335,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get loginFailedE => '[HR] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[HR] Invitation sent successfully! (Croatian)';
+  String get invitationSentSuccessfully =>
+      '[HR] Invitation sent successfully! (Croatian)';
 
   @override
   String get registering => '[HR] Registering... (Croatian)';
@@ -1260,13 +1350,16 @@ class AppLocalizationsHr extends AppLocalizations {
   String get home1 => '[HR] Home (Croatian)';
 
   @override
-  String get errorSavingSettingsE => '[HR] Error saving settings: \$e (Croatian)';
+  String get errorSavingSettingsE =>
+      '[HR] Error saving settings: \$e (Croatian)';
 
   @override
-  String get appVersionAndInformation => '[HR] App version and information (Croatian)';
+  String get appVersionAndInformation =>
+      '[HR] App version and information (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Business Subscription Entry Screen - Coming Soon (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Business Subscription Entry Screen - Coming Soon (Croatian)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1274,7 +1367,8 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[HR] Your payment has been processed successfully. (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Your payment has been processed successfully. (Croatian)';
 
   @override
   String get errorE => '[HR] Error: \$e (Croatian)';
@@ -1283,7 +1377,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get viewAll1 => '[HR] View All (Croatian)';
 
   @override
-  String get editSurveyComingSoon => '[HR] Edit survey - Coming soon! (Croatian)';
+  String get editSurveyComingSoon =>
+      '[HR] Edit survey - Coming soon! (Croatian)';
 
   @override
   String get enterOtp => '[HR] Enter OTP (Croatian)';
@@ -1292,7 +1387,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get payment => '[HR] Payment (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Automatically confirm new booking requests (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Automatically confirm new booking requests (Croatian)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1305,7 +1401,8 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[HR] Please sign in to upload a background (Croatian)';
+  String get pleaseSignInToUploadABackground =>
+      '[HR] Please sign in to upload a background (Croatian)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1322,19 +1419,22 @@ class AppLocalizationsHr extends AppLocalizations {
   String get autoconfirmBookings => '[HR] Auto-Confirm Bookings (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Redirecting to Stripe checkout for Pro plan... (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Redirecting to Stripe checkout for Pro plan... (Croatian)';
 
   @override
   String get exportAsCsv => '[HR] Export as CSV (Croatian)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[HR] Delete functionality coming soon! (Croatian)';
+  String get deleteFunctionalityComingSoon =>
+      '[HR] Delete functionality coming soon! (Croatian)';
 
   @override
   String get editClient => '[HR] Edit Client (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Are you sure you want to delete this message? (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Are you sure you want to delete this message? (Croatian)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1345,31 +1445,39 @@ class AppLocalizationsHr extends AppLocalizations {
   String get notAuthenticated => '[HR] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[HR] Privacy request sent to your parents! (Croatian)';
+  String get privacyRequestSentToYourParents =>
+      '[HR] Privacy request sent to your parents! (Croatian)';
 
   @override
-  String get clientDeletedSuccessfully => '[HR] Client deleted successfully! (Croatian)';
+  String get clientDeletedSuccessfully =>
+      '[HR] Client deleted successfully! (Croatian)';
 
   @override
-  String get failedToCancelSubscription => '[HR] Failed to cancel subscription (Croatian)';
+  String get failedToCancelSubscription =>
+      '[HR] Failed to cancel subscription (Croatian)';
 
   @override
   String get allLanguages => '[HR] All Languages (Croatian)';
 
   @override
-  String get slotDeletedSuccessfully => '[HR] Slot deleted successfully (Croatian)';
+  String get slotDeletedSuccessfully =>
+      '[HR] Slot deleted successfully (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN =>
+      '[HR] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Parents must approve before children can join (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Parents must approve before children can join (Croatian)';
 
   @override
-  String get subscribeToPro1499mo => '[HR] Subscribe to Pro (€14.99/mo) (Croatian)';
+  String get subscribeToPro1499mo =>
+      '[HR] Subscribe to Pro (€14.99/mo) (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Business Availability Entry Screen - Coming Soon (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Business Availability Entry Screen - Coming Soon (Croatian)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1383,7 +1491,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get submitBooking => '[HR] Submit Booking (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Are you sure you want to cancel this appointment? (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Are you sure you want to cancel this appointment? (Croatian)';
 
   @override
   String get noUpcomingBookings => '[HR] No upcoming bookings (Croatian)';
@@ -1401,7 +1510,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get goToDashboard => '[HR] Go to Dashboard (Croatian)';
 
   @override
-  String get ambassadorQuotaDashboard => '[HR] Ambassador Quota Dashboard (Croatian)';
+  String get ambassadorQuotaDashboard =>
+      '[HR] Ambassador Quota Dashboard (Croatian)';
 
   @override
   String get adminSettings => '[HR] Admin Settings';
@@ -1439,7 +1549,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[HR] Client added successfully! (Croatian)';
+  String get clientAddedSuccessfully =>
+      '[HR] Client added successfully! (Croatian)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1457,7 +1568,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get bookAppointment => '[HR] Book Appointment (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[HR] Delete (Croatian)';
@@ -1472,13 +1584,15 @@ class AppLocalizationsHr extends AppLocalizations {
   String get manageSubscription => '[HR] Manage Subscription (Croatian)';
 
   @override
-  String get requiresInstallFallback => '[HR] Requires Install Fallback (Croatian)';
+  String get requiresInstallFallback =>
+      '[HR] Requires Install Fallback (Croatian)';
 
   @override
   String get paymentConfirmation => '[HR] Payment Confirmation (Croatian)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[HR] Promo applied! Your next bill is free. (Croatian)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[HR] Promo applied! Your next bill is free. (Croatian)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1489,13 +1603,16 @@ class AppLocalizationsHr extends AppLocalizations {
   String get errorLoadingSlots => '[HR] Error loading slots (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Allow other users to find and join this game (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Allow other users to find and join this game (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Business Onboarding Screen - Coming Soon (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Business Onboarding Screen - Coming Soon (Croatian)';
 
   @override
-  String get activateBusinessProfile => '[HR] Activate Business Profile (Croatian)';
+  String get activateBusinessProfile =>
+      '[HR] Activate Business Profile (Croatian)';
 
   @override
   String get contentNotFound => '[HR] Content not found (Croatian)';
@@ -1537,7 +1654,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get shareLink => '[HR] Share Link (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN =>
+      '[HR] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[HR] Delete Appointment (Croatian)';
@@ -1557,10 +1675,12 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[HR] Update your business information (Croatian)';
+  String get updateYourBusinessInformation =>
+      '[HR] Update your business information (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN =>
+      '[HR] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[HR] Parent Dashboard (Croatian)';
@@ -1583,10 +1703,12 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[HR] Studio booking is only available on web (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Studio booking is only available on web (Croatian)';
 
   @override
-  String get errorLoadingBranchesE => '[HR] Error loading branches: \$e (Croatian)';
+  String get errorLoadingBranchesE =>
+      '[HR] Error loading branches: \$e (Croatian)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1602,13 +1724,15 @@ class AppLocalizationsHr extends AppLocalizations {
   String get none => '[HR] None (Croatian)';
 
   @override
-  String get failedToUpdateConsentE => '[HR] Failed to update consent: \$e (Croatian)';
+  String get failedToUpdateConsentE =>
+      '[HR] Failed to update consent: \$e (Croatian)';
 
   @override
   String get welcome1 => '[HR] Welcome (Croatian)';
 
   @override
-  String get failedToCreateSessionE => '[HR] Failed to create session: \$e (Croatian)';
+  String get failedToCreateSessionE =>
+      '[HR] Failed to create session: \$e (Croatian)';
 
   @override
   String get inviteContact => '[HR] Invite Contact (Croatian)';
@@ -1617,7 +1741,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get surveyEditor => '[HR] Survey Editor (Croatian)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[HR] Failed to start Basic subscription: \$e (Croatian)';
+  String get failedToStartBasicSubscriptionE =>
+      '[HR] Failed to start Basic subscription: \$e (Croatian)';
 
   @override
   String get mySchedule => '[HR] My Schedule (Croatian)';
@@ -1637,10 +1762,12 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[HR] Settings saved successfully! (Croatian)';
+  String get settingsSavedSuccessfully =>
+      '[HR] Settings saved successfully! (Croatian)';
 
   @override
-  String get linkCopiedToClipboard => '[HR] Link copied to clipboard! (Croatian)';
+  String get linkCopiedToClipboard =>
+      '[HR] Link copied to clipboard! (Croatian)';
 
   @override
   String get accept1 => '[HR] Accept (Croatian)';
@@ -1657,7 +1784,8 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[HR] Room deleted successfully! (Croatian)';
+  String get roomDeletedSuccessfully =>
+      '[HR] Room deleted successfully! (Croatian)';
 
   @override
   String get businessCalendar => '[HR] Business Calendar (Croatian)';
@@ -1722,7 +1850,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get cancel1 => '[HR] Cancel (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Subscription activated successfully! (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Subscription activated successfully! (Croatian)';
 
   @override
   String activityLogaction(Object action) {
@@ -1733,7 +1862,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get broadcast => '[HR] Broadcast (Croatian)';
 
   @override
-  String get noEventsScheduledThisWeek => '[HR] No events scheduled this week (Croatian)';
+  String get noEventsScheduledThisWeek =>
+      '[HR] No events scheduled this week (Croatian)';
 
   @override
   String get googleCalendar => '[HR] Google Calendar (Croatian)';
@@ -1745,7 +1875,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get childDashboard => '[HR] Child Dashboard (Croatian)';
 
   @override
-  String get failedToUploadBackgroundE => '[HR] Failed to upload background: \$e (Croatian)';
+  String get failedToUploadBackgroundE =>
+      '[HR] Failed to upload background: \$e (Croatian)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1764,7 +1895,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get noAppointments => '[HR] No appointments (Croatian)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[HR] • Unlimited bookings per week (Croatian)';
+  String get unlimitedBookingsPerWeek =>
+      '[HR] • Unlimited bookings per week (Croatian)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1772,16 +1904,19 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[HR] Scheduled at: \$scheduledAt (Croatian)';
+  String get scheduledAtScheduledat =>
+      '[HR] Scheduled at: \$scheduledAt (Croatian)';
 
   @override
   String get selectStaff => '[HR] Select Staff (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Subscription cancelled successfully (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Subscription cancelled successfully (Croatian)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[HR] Cancel Appointment (Croatian)';
@@ -1795,7 +1930,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get businessSignup => '[HR] Business Signup (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Business Completion Screen - Coming Soon (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Business Completion Screen - Coming Soon (Croatian)';
 
   @override
   String get createGame1 => '[HR] Create Game (Croatian)';
@@ -1806,10 +1942,12 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[HR] Please enter a promo code (Croatian)';
+  String get pleaseEnterAPromoCode =>
+      '[HR] Please enter a promo code (Croatian)';
 
   @override
-  String get errorLoadingAvailabilityE => '[HR] Error loading availability: \$e (Croatian)';
+  String get errorLoadingAvailabilityE =>
+      '[HR] Error loading availability: \$e (Croatian)';
 
   @override
   String get parentalControls => '[HR] Parental Controls (Croatian)';
@@ -1818,13 +1956,15 @@ class AppLocalizationsHr extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[HR] Child linked successfully! (Croatian)';
+  String get childLinkedSuccessfully =>
+      '[HR] Child linked successfully! (Croatian)';
 
   @override
   String get create => '[HR] Create (Croatian)';
 
   @override
-  String get noExternalMeetingsFound => '[HR] No external meetings found. (Croatian)';
+  String get noExternalMeetingsFound =>
+      '[HR] No external meetings found. (Croatian)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1832,13 +1972,15 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[HR] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[HR] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[HR] Scheduler Screen (Croatian)';
 
   @override
-  String get clientUpdatedSuccessfully => '[HR] Client updated successfully! (Croatian)';
+  String get clientUpdatedSuccessfully =>
+      '[HR] Client updated successfully! (Croatian)';
 
   @override
   String get surveyResponses => '[HR] Survey Responses (Croatian)';
@@ -1864,10 +2006,12 @@ class AppLocalizationsHr extends AppLocalizations {
   String get errorLoadingEvents => '[HR] Error loading events (Croatian)';
 
   @override
-  String get errorLoadingOrganizations => '[HR] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[HR] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[HR] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[HR] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[HR] Success (Croatian)';
@@ -1886,10 +2030,12 @@ class AppLocalizationsHr extends AppLocalizations {
   String get readWrite => '[HR] Read & Write (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Redirecting to Stripe checkout for Basic plan... (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Redirecting to Stripe checkout for Basic plan... (Croatian)';
 
   @override
-  String get errorSavingConfigurationE => '[HR] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[HR] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[HR] Pick Date (Croatian)';
@@ -1925,10 +2071,12 @@ class AppLocalizationsHr extends AppLocalizations {
   String get businessLogin => '[HR] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[HR] Invoice created successfully! (Croatian)';
+  String get invoiceCreatedSuccessfully =>
+      '[HR] Invoice created successfully! (Croatian)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[HR] No time series data available (Croatian)';
+  String get noTimeSeriesDataAvailable =>
+      '[HR] No time series data available (Croatian)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1941,7 +2089,8 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[HR] Failed to send privacy request: \$e (Croatian)';
+  String get failedToSendPrivacyRequestE =>
+      '[HR] Failed to send privacy request: \$e (Croatian)';
 
   @override
   String get chooseYourPlan => '[HR] Choose Your Plan (Croatian)';
@@ -1956,13 +2105,15 @@ class AppLocalizationsHr extends AppLocalizations {
   String get eventCreated => '[HR] Event created (Croatian)';
 
   @override
-  String get subscribeToBasic499mo => '[HR] Subscribe to Basic (€4.99/mo) (Croatian)';
+  String get subscribeToBasic499mo =>
+      '[HR] Subscribe to Basic (€4.99/mo) (Croatian)';
 
   @override
   String get completion => '[HR] Completion (Croatian)';
 
   @override
-  String get supportTicketSubmitted => '[HR] Support ticket submitted (Croatian)';
+  String get supportTicketSubmitted =>
+      '[HR] Support ticket submitted (Croatian)';
 
   @override
   String get monetizationSettings => '[HR] Monetization Settings (Croatian)';
@@ -1977,10 +2128,12 @@ class AppLocalizationsHr extends AppLocalizations {
   String get deleteSurvey => '[HR] Delete Survey (Croatian)';
 
   @override
-  String get gameApprovedSuccessfully => '[HR] Game approved successfully! (Croatian)';
+  String get gameApprovedSuccessfully =>
+      '[HR] Game approved successfully! (Croatian)';
 
   @override
-  String get errorLoadingPermissionsError => '[HR] Error loading permissions: \$error (Croatian)';
+  String get errorLoadingPermissionsError =>
+      '[HR] Error loading permissions: \$error (Croatian)';
 
   @override
   String get referrals => '[HR] Referrals (Croatian)';
@@ -2022,7 +2175,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get organizations => '[HR] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[HR] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[HR] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[HR] Create New Game (Croatian)';
@@ -2031,10 +2185,12 @@ class AppLocalizationsHr extends AppLocalizations {
   String get next1 => '[HR] Next (Croatian)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[HR] Background uploaded successfully! (Croatian)';
+  String get backgroundUploadedSuccessfully =>
+      '[HR] Background uploaded successfully! (Croatian)';
 
   @override
-  String get noAppointmentRequestsFound => '[HR] No appointment requests found. (Croatian)';
+  String get noAppointmentRequestsFound =>
+      '[HR] No appointment requests found. (Croatian)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2061,16 +2217,19 @@ class AppLocalizationsHr extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => '[HR] Failed to create game: \$e (Croatian)';
+  String get failedToCreateGameE =>
+      '[HR] Failed to create game: \$e (Croatian)';
 
   @override
   String get noChartDataAvailable => '[HR] No chart data available (Croatian)';
 
   @override
-  String get phonebasedBookingSystem => '[HR] • Phone-based booking system (Croatian)';
+  String get phonebasedBookingSystem =>
+      '[HR] • Phone-based booking system (Croatian)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2079,7 +2238,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get invoices => '[HR] Invoices (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2106,10 +2266,12 @@ class AppLocalizationsHr extends AppLocalizations {
   String get iDoNotConsent => '[HR] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN => '[HR] No clients found. Add your first client! (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] No clients found. Add your first client! (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN =>
+      '[HR] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[HR] Group: \$groupId';
@@ -2121,7 +2283,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get forward => '[HR] Forward (Croatian)';
 
   @override
-  String get roomAddedSuccessfully => '[HR] Room added successfully! (Croatian)';
+  String get roomAddedSuccessfully =>
+      '[HR] Room added successfully! (Croatian)';
 
   @override
   String get option => '[HR] • \$option (Croatian)';
@@ -2132,7 +2295,8 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[HR] • CRM dashboard with analytics (Croatian)';
+  String get crmDashboardWithAnalytics =>
+      '[HR] • CRM dashboard with analytics (Croatian)';
 
   @override
   String get contentLibrary1 => '[HR] Content Library (Croatian)';
@@ -2141,28 +2305,34 @@ class AppLocalizationsHr extends AppLocalizations {
   String get reply => '[HR] Reply (Croatian)';
 
   @override
-  String get subscriptionManagement => '[HR] Subscription Management (Croatian)';
+  String get subscriptionManagement =>
+      '[HR] Subscription Management (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Monetization settings will be implemented here (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Monetization settings will be implemented here (Croatian)';
 
   @override
-  String get failedToApplyPromoCodeE => '[HR] Failed to apply promo code: \$e (Croatian)';
+  String get failedToApplyPromoCodeE =>
+      '[HR] Failed to apply promo code: \$e (Croatian)';
 
   @override
   String get editProvider => '[HR] Edit Provider';
 
   @override
-  String get localizationContribution => '[HR] Localization Contribution (Croatian)';
+  String get localizationContribution =>
+      '[HR] Localization Contribution (Croatian)';
 
   @override
   String get parentalConsent => '[HR] Parental Consent (Croatian)';
 
   @override
-  String get businessSignupScreenComingSoon => '[HR] Business Signup Screen - Coming Soon (Croatian)';
+  String get businessSignupScreenComingSoon =>
+      '[HR] Business Signup Screen - Coming Soon (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => '[HR] Are you sure you want to delete this appointment? (Croatian)';
+  String get REDACTED_TOKEN =>
+      '[HR] Are you sure you want to delete this appointment? (Croatian)';
 
   @override
   String get syncAppointment => '[HR] Sync Appointment (Croatian)';
@@ -2174,13 +2344,15 @@ class AppLocalizationsHr extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[HR] Business Setup Screen - Coming Soon (Croatian)';
+  String get businessSetupScreenComingSoon =>
+      '[HR] Business Setup Screen - Coming Soon (Croatian)';
 
   @override
   String get edit1 => '[HR] Edit (Croatian)';
 
   @override
-  String get noEventsScheduledThisMonth => '[HR] No events scheduled this month (Croatian)';
+  String get noEventsScheduledThisMonth =>
+      '[HR] No events scheduled this month (Croatian)';
 
   @override
   String get businessDashboard => '[HR] Business Dashboard (Croatian)';
@@ -2194,7 +2366,8 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[HR] Manage Staff Availability (Croatian)';
+  String get manageStaffAvailability =>
+      '[HR] Manage Staff Availability (Croatian)';
 
   @override
   String get noMissingTranslations => '[HR] No missing translations (Croatian)';
@@ -2211,7 +2384,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get noUsers => '[HR] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[HR] Error loading referral code (Croatian)';
+  String get errorLoadingReferralCode =>
+      '[HR] Error loading referral code (Croatian)';
 
   @override
   String get allCountries => '[HR] All Countries (Croatian)';
@@ -2226,7 +2400,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get deleteMessage => '[HR] Delete Message (Croatian)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[HR] changeRole (TRANSLATE)';
@@ -2237,7 +2412,8 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[HR] Opening customer portal... (Croatian)';
+  String get openingCustomerPortal =>
+      '[HR] Opening customer portal... (Croatian)';
 
   @override
   String get signOut => '[HR] Sign Out (Croatian)';
@@ -2248,7 +2424,8 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[HR] Upgrade to Business (Croatian)';
@@ -2274,7 +2451,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[HR] View Responses (Croatian)';
@@ -2303,7 +2481,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2321,7 +2500,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2330,7 +2510,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2378,7 +2559,8 @@ class AppLocalizationsHr extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2426,10 +2608,12 @@ class AppLocalizationsHr extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle => '[HR] Congratulations! You\'re now an Ambassador! (Croatian)';
+  String get ambassadorPromotionTitle =>
+      '[HR] Congratulations! You\'re now an Ambassador! (Croatian)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2440,7 +2624,11 @@ class AppLocalizationsHr extends AppLocalizations {
   String get tierUpgradeTitle => '[HR] Tier Upgrade! 🎉 (Croatian)';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[HR] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Croatian)';
   }
 
@@ -2448,20 +2636,29 @@ class AppLocalizationsHr extends AppLocalizations {
   String get monthlyReminderTitle => '[HR] Monthly Goal Reminder (Croatian)';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[HR] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Croatian)';
   }
 
   @override
-  String get performanceWarningTitle => '[HR] Ambassador Performance Alert (Croatian)';
+  String get performanceWarningTitle =>
+      '[HR] Ambassador Performance Alert (Croatian)';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[HR] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Croatian)';
   }
 
   @override
-  String get ambassadorDemotionTitle => '[HR] Ambassador Status Update (Croatian)';
+  String get ambassadorDemotionTitle =>
+      '[HR] Ambassador Status Update (Croatian)';
 
   @override
   String ambassadorDemotionBody(String reason) {

@@ -479,7 +479,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get playtimeEnterGameName => 'ゲーム名を入力';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[JA] [JA] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[JA] [JA] Please login to access family features';
 
   @override
   String get myInvites => '[JA] [JA] My Invites';
@@ -554,40 +555,52 @@ class AppLocalizationsJa extends AppLocalizations {
   String get contentLibrary => '[JA] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[JA] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[JA] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[JA] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[JA] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[JA] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[JA] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[JA] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[JA] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[JA] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[JA] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[JA] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[JA] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[JA] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[JA] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[JA] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[JA] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[JA] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[JA] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN =>
+      '[JA] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[JA] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[JA] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[JA] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[JA] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -604,19 +617,24 @@ class AppLocalizationsJa extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[JA] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[JA] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[JA] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[JA] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] The verification code is invalid.';
+  String get REDACTED_TOKEN =>
+      '[JA] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[JA] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[JA] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Please enter the verification code.';
+  String get REDACTED_TOKEN =>
+      '[JA] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[JA] Missing verification ID.';
@@ -628,43 +646,56 @@ class AppLocalizationsJa extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[JA] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[JA] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[JA] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[JA] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[JA] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[JA] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[JA] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN =>
+      '[JA] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Multi-factor information not found.';
+  String get REDACTED_TOKEN =>
+      '[JA] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Missing multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[JA] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Invalid multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[JA] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] This second factor is already in use.';
+  String get REDACTED_TOKEN =>
+      '[JA] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN =>
+      '[JA] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[JA] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[JA] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Email change requires verification.';
+  String get REDACTED_TOKEN =>
+      '[JA] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] This phone number is already in use.';
+  String get REDACTED_TOKEN =>
+      '[JA] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[JA] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[JA] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[JA] The ID token is invalid.';
@@ -676,10 +707,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[JA] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[JA] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[JA] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[JA] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[JA] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[JA] Invalid custom claims provided.';
@@ -688,70 +721,87 @@ class AppLocalizationsJa extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[JA] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[JA] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[JA] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[JA] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[JA] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[JA] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN =>
+      '[JA] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[JA] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[JA] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[JA] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[JA] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[JA] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[JA] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN =>
+      '[JA] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[JA] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[JA] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[JA] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN =>
+      '[JA] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[JA] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[JA] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN =>
+      '[JA] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[JA] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[JA] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[JA] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[JA] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[JA] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[JA] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN =>
+      '[JA] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[JA] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[JA] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[JA] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN =>
+      '[JA] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[JA] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[JA] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[JA] Missing continue URL.';
@@ -766,7 +816,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get authErrorMissingUid => '[JA] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Missing OAuth client secret.';
+  String get REDACTED_TOKEN =>
+      '[JA] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[JA] Firebase project not found.';
@@ -775,19 +826,23 @@ class AppLocalizationsJa extends AppLocalizations {
   String get authErrorReservedClaims => '[JA] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[JA] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[JA] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[JA] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[JA] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[JA] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[JA] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN =>
+      '[JA] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[JA] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[JA] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -836,7 +891,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Virtual session created! Inviting friends... (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Virtual session created! Inviting friends... (Japanese)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -877,13 +933,15 @@ class AppLocalizationsJa extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[JA] Subscription unavailable (Japanese)';
+  String get subscriptionUnavailable =>
+      '[JA] Subscription unavailable (Japanese)';
 
   @override
   String get confirmBooking => '[JA] Confirm Booking (Japanese)';
 
   @override
-  String get failedToUpdatePermissionE => '[JA] Failed to update permission: \$e (Japanese)';
+  String get failedToUpdatePermissionE =>
+      '[JA] Failed to update permission: \$e (Japanese)';
 
   @override
   String get reject => '[JA] Reject (Japanese)';
@@ -905,13 +963,15 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get noContentAvailableYet => '[JA] No content available yet (Japanese)';
+  String get noContentAvailableYet =>
+      '[JA] No content available yet (Japanese)';
 
   @override
   String get resolve => '[JA] Resolve (Japanese)';
 
   @override
-  String get errorLoadingSurveysError => '[JA] Error loading surveys: \$error (Japanese)';
+  String get errorLoadingSurveysError =>
+      '[JA] Error loading surveys: \$error (Japanese)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -919,7 +979,8 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[JA] Get help with your account (Japanese)';
+  String get getHelpWithYourAccount =>
+      '[JA] Get help with your account (Japanese)';
 
   @override
   String get pay => '[JA] Pay (Japanese)';
@@ -934,7 +995,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[JA] Changes saved successfully! (Japanese)';
+  String get changesSavedSuccessfully =>
+      '[JA] Changes saved successfully! (Japanese)';
 
   @override
   String get createNewInvoice => '[JA] Create New Invoice (Japanese)';
@@ -954,7 +1016,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get profileSaved => '[JA] Profile saved! (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -985,7 +1048,8 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[JA] You will receive a confirmation email shortly. (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] You will receive a confirmation email shortly. (Japanese)';
 
   @override
   String get addQuestion => '[JA] Add Question (Japanese)';
@@ -1014,22 +1078,26 @@ class AppLocalizationsJa extends AppLocalizations {
   String get surveyManagement => '[JA] Survey Management (Japanese)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[JA] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[JA] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[JA] No rooms found. Add your first room! (Japanese)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[JA] No rooms found. Add your first room! (Japanese)';
 
   @override
   String get readOurPrivacyPolicy => '[JA] Read our privacy policy (Japanese)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[JA] Could not open privacy policy (Japanese)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[JA] Could not open privacy policy (Japanese)';
 
   @override
   String get refresh1 => '[JA] Refresh (Japanese)';
 
   @override
-  String get roomUpdatedSuccessfully => '[JA] Room updated successfully! (Japanese)';
+  String get roomUpdatedSuccessfully =>
+      '[JA] Room updated successfully! (Japanese)';
 
   @override
   String get contentDetail => '[JA] Content Detail (Japanese)';
@@ -1038,7 +1106,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get cancelSubscription => '[JA] Cancel Subscription (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Successfully registered as Ambassador! (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Successfully registered as Ambassador! (Japanese)';
 
   @override
   String get save1 => '[JA] Save (Japanese)';
@@ -1047,7 +1116,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get copy1 => '[JA] Copy (Japanese)';
 
   @override
-  String get failedToSendInvitationE => '[JA] Failed to send invitation: \$e (Japanese)';
+  String get failedToSendInvitationE =>
+      '[JA] Failed to send invitation: \$e (Japanese)';
 
   @override
   String get surveyScore => '[JA] Survey Score (Japanese)';
@@ -1064,16 +1134,20 @@ class AppLocalizationsJa extends AppLocalizations {
   String get responseDetail => '[JA] Response Detail (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[JA] Failed to start Pro subscription: \$e (Japanese)';
+  String get failedToStartProSubscriptionE =>
+      '[JA] Failed to start Pro subscription: \$e (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Business Dashboard Entry Screen - Coming Soon (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Business Dashboard Entry Screen - Coming Soon (Japanese)';
 
   @override
   String get contentFilter => '[JA] Content Filter (Japanese)';
@@ -1095,7 +1169,8 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[JA] Business CRM Entry Screen - Coming Soon (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Business CRM Entry Screen - Coming Soon (Japanese)';
 
   @override
   String get adminDashboard => '[JA] Admin Dashboard';
@@ -1106,13 +1181,16 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[JA] Error loading dashboard: \$error (Japanese)';
+  String get errorLoadingDashboardError =>
+      '[JA] Error loading dashboard: \$error (Japanese)';
 
   @override
-  String get gameDeletedSuccessfully => '[JA] Game deleted successfully! (Japanese)';
+  String get gameDeletedSuccessfully =>
+      '[JA] Game deleted successfully! (Japanese)';
 
   @override
-  String get viewResponsesComingSoon => '[JA] View responses - Coming soon! (Japanese)';
+  String get viewResponsesComingSoon =>
+      '[JA] View responses - Coming soon! (Japanese)';
 
   @override
   String get deleteProvider => '[JA] Delete Provider';
@@ -1121,7 +1199,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get errorLoadingRewards => '[JA] Error loading rewards (Japanese)';
 
   @override
-  String get failedToDeleteAccountE => '[JA] Failed to delete account: \$e (Japanese)';
+  String get failedToDeleteAccountE =>
+      '[JA] Failed to delete account: \$e (Japanese)';
 
   @override
   String get invited1 => '[JA] Invited (Japanese)';
@@ -1136,7 +1215,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get noEvents => '[JA] No events (Japanese)';
 
   @override
-  String get gameCreatedSuccessfully => '[JA] Game created successfully! (Japanese)';
+  String get gameCreatedSuccessfully =>
+      '[JA] Game created successfully! (Japanese)';
 
   @override
   String get add1 => '[JA] Add (Japanese)';
@@ -1156,10 +1236,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get clients => '[JA] Clients (Japanese)';
 
   @override
-  String get noAmbassadorDataAvailable => '[JA] No ambassador data available (Japanese)';
+  String get noAmbassadorDataAvailable =>
+      '[JA] No ambassador data available (Japanese)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[JA] Background deleted successfully! (Japanese)';
+  String get backgroundDeletedSuccessfully =>
+      '[JA] Background deleted successfully! (Japanese)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1167,7 +1249,8 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[JA] No analytics data available yet. (Japanese)';
+  String get noAnalyticsDataAvailableYet =>
+      '[JA] No analytics data available yet. (Japanese)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1175,7 +1258,8 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[JA] Business Phone Booking Entry Screen - Coming Soon (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Business Phone Booking Entry Screen - Coming Soon (Japanese)';
 
   @override
   String get verification => '[JA] Verification (Japanese)';
@@ -1222,7 +1306,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get businessProfile => '[JA] Business Profile (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Business Booking Entry Screen - Coming Soon (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Business Booking Entry Screen - Coming Soon (Japanese)';
 
   @override
   String get createNewSurvey => '[JA] Create New Survey (Japanese)';
@@ -1246,7 +1331,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get loginFailedE => '[JA] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[JA] Invitation sent successfully! (Japanese)';
+  String get invitationSentSuccessfully =>
+      '[JA] Invitation sent successfully! (Japanese)';
 
   @override
   String get registering => '[JA] Registering... (Japanese)';
@@ -1260,13 +1346,16 @@ class AppLocalizationsJa extends AppLocalizations {
   String get home1 => '[JA] Home (Japanese)';
 
   @override
-  String get errorSavingSettingsE => '[JA] Error saving settings: \$e (Japanese)';
+  String get errorSavingSettingsE =>
+      '[JA] Error saving settings: \$e (Japanese)';
 
   @override
-  String get appVersionAndInformation => '[JA] App version and information (Japanese)';
+  String get appVersionAndInformation =>
+      '[JA] App version and information (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Business Subscription Entry Screen - Coming Soon (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Business Subscription Entry Screen - Coming Soon (Japanese)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1274,7 +1363,8 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[JA] Your payment has been processed successfully. (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Your payment has been processed successfully. (Japanese)';
 
   @override
   String get errorE => '[JA] Error: \$e (Japanese)';
@@ -1283,7 +1373,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get viewAll1 => '[JA] View All (Japanese)';
 
   @override
-  String get editSurveyComingSoon => '[JA] Edit survey - Coming soon! (Japanese)';
+  String get editSurveyComingSoon =>
+      '[JA] Edit survey - Coming soon! (Japanese)';
 
   @override
   String get enterOtp => '[JA] Enter OTP (Japanese)';
@@ -1292,7 +1383,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get payment => '[JA] Payment (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Automatically confirm new booking requests (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Automatically confirm new booking requests (Japanese)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1305,7 +1397,8 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[JA] Please sign in to upload a background (Japanese)';
+  String get pleaseSignInToUploadABackground =>
+      '[JA] Please sign in to upload a background (Japanese)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1322,19 +1415,22 @@ class AppLocalizationsJa extends AppLocalizations {
   String get autoconfirmBookings => '[JA] Auto-Confirm Bookings (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Redirecting to Stripe checkout for Pro plan... (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Redirecting to Stripe checkout for Pro plan... (Japanese)';
 
   @override
   String get exportAsCsv => '[JA] Export as CSV (Japanese)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[JA] Delete functionality coming soon! (Japanese)';
+  String get deleteFunctionalityComingSoon =>
+      '[JA] Delete functionality coming soon! (Japanese)';
 
   @override
   String get editClient => '[JA] Edit Client (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Are you sure you want to delete this message? (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Are you sure you want to delete this message? (Japanese)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1345,31 +1441,39 @@ class AppLocalizationsJa extends AppLocalizations {
   String get notAuthenticated => '[JA] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[JA] Privacy request sent to your parents! (Japanese)';
+  String get privacyRequestSentToYourParents =>
+      '[JA] Privacy request sent to your parents! (Japanese)';
 
   @override
-  String get clientDeletedSuccessfully => '[JA] Client deleted successfully! (Japanese)';
+  String get clientDeletedSuccessfully =>
+      '[JA] Client deleted successfully! (Japanese)';
 
   @override
-  String get failedToCancelSubscription => '[JA] Failed to cancel subscription (Japanese)';
+  String get failedToCancelSubscription =>
+      '[JA] Failed to cancel subscription (Japanese)';
 
   @override
   String get allLanguages => '[JA] All Languages (Japanese)';
 
   @override
-  String get slotDeletedSuccessfully => '[JA] Slot deleted successfully (Japanese)';
+  String get slotDeletedSuccessfully =>
+      '[JA] Slot deleted successfully (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN =>
+      '[JA] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Parents must approve before children can join (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Parents must approve before children can join (Japanese)';
 
   @override
-  String get subscribeToPro1499mo => '[JA] Subscribe to Pro (€14.99/mo) (Japanese)';
+  String get subscribeToPro1499mo =>
+      '[JA] Subscribe to Pro (€14.99/mo) (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Business Availability Entry Screen - Coming Soon (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Business Availability Entry Screen - Coming Soon (Japanese)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1383,7 +1487,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get submitBooking => '[JA] Submit Booking (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Are you sure you want to cancel this appointment? (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Are you sure you want to cancel this appointment? (Japanese)';
 
   @override
   String get noUpcomingBookings => '[JA] No upcoming bookings (Japanese)';
@@ -1401,7 +1506,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get goToDashboard => '[JA] Go to Dashboard (Japanese)';
 
   @override
-  String get ambassadorQuotaDashboard => '[JA] Ambassador Quota Dashboard (Japanese)';
+  String get ambassadorQuotaDashboard =>
+      '[JA] Ambassador Quota Dashboard (Japanese)';
 
   @override
   String get adminSettings => '[JA] Admin Settings';
@@ -1439,7 +1545,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[JA] Client added successfully! (Japanese)';
+  String get clientAddedSuccessfully =>
+      '[JA] Client added successfully! (Japanese)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1457,7 +1564,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get bookAppointment => '[JA] Book Appointment (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[JA] Delete (Japanese)';
@@ -1472,13 +1580,15 @@ class AppLocalizationsJa extends AppLocalizations {
   String get manageSubscription => '[JA] Manage Subscription (Japanese)';
 
   @override
-  String get requiresInstallFallback => '[JA] Requires Install Fallback (Japanese)';
+  String get requiresInstallFallback =>
+      '[JA] Requires Install Fallback (Japanese)';
 
   @override
   String get paymentConfirmation => '[JA] Payment Confirmation (Japanese)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[JA] Promo applied! Your next bill is free. (Japanese)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[JA] Promo applied! Your next bill is free. (Japanese)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1489,13 +1599,16 @@ class AppLocalizationsJa extends AppLocalizations {
   String get errorLoadingSlots => '[JA] Error loading slots (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Allow other users to find and join this game (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Allow other users to find and join this game (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Business Onboarding Screen - Coming Soon (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Business Onboarding Screen - Coming Soon (Japanese)';
 
   @override
-  String get activateBusinessProfile => '[JA] Activate Business Profile (Japanese)';
+  String get activateBusinessProfile =>
+      '[JA] Activate Business Profile (Japanese)';
 
   @override
   String get contentNotFound => '[JA] Content not found (Japanese)';
@@ -1537,7 +1650,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get shareLink => '[JA] Share Link (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN =>
+      '[JA] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[JA] Delete Appointment (Japanese)';
@@ -1557,10 +1671,12 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[JA] Update your business information (Japanese)';
+  String get updateYourBusinessInformation =>
+      '[JA] Update your business information (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN =>
+      '[JA] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[JA] Parent Dashboard (Japanese)';
@@ -1583,10 +1699,12 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[JA] Studio booking is only available on web (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Studio booking is only available on web (Japanese)';
 
   @override
-  String get errorLoadingBranchesE => '[JA] Error loading branches: \$e (Japanese)';
+  String get errorLoadingBranchesE =>
+      '[JA] Error loading branches: \$e (Japanese)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1602,13 +1720,15 @@ class AppLocalizationsJa extends AppLocalizations {
   String get none => '[JA] None (Japanese)';
 
   @override
-  String get failedToUpdateConsentE => '[JA] Failed to update consent: \$e (Japanese)';
+  String get failedToUpdateConsentE =>
+      '[JA] Failed to update consent: \$e (Japanese)';
 
   @override
   String get welcome1 => '[JA] Welcome (Japanese)';
 
   @override
-  String get failedToCreateSessionE => '[JA] Failed to create session: \$e (Japanese)';
+  String get failedToCreateSessionE =>
+      '[JA] Failed to create session: \$e (Japanese)';
 
   @override
   String get inviteContact => '[JA] Invite Contact (Japanese)';
@@ -1617,7 +1737,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get surveyEditor => '[JA] Survey Editor (Japanese)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[JA] Failed to start Basic subscription: \$e (Japanese)';
+  String get failedToStartBasicSubscriptionE =>
+      '[JA] Failed to start Basic subscription: \$e (Japanese)';
 
   @override
   String get mySchedule => '[JA] My Schedule (Japanese)';
@@ -1637,10 +1758,12 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[JA] Settings saved successfully! (Japanese)';
+  String get settingsSavedSuccessfully =>
+      '[JA] Settings saved successfully! (Japanese)';
 
   @override
-  String get linkCopiedToClipboard => '[JA] Link copied to clipboard! (Japanese)';
+  String get linkCopiedToClipboard =>
+      '[JA] Link copied to clipboard! (Japanese)';
 
   @override
   String get accept1 => '[JA] Accept (Japanese)';
@@ -1657,7 +1780,8 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[JA] Room deleted successfully! (Japanese)';
+  String get roomDeletedSuccessfully =>
+      '[JA] Room deleted successfully! (Japanese)';
 
   @override
   String get businessCalendar => '[JA] Business Calendar (Japanese)';
@@ -1722,7 +1846,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get cancel1 => '[JA] Cancel (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Subscription activated successfully! (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Subscription activated successfully! (Japanese)';
 
   @override
   String activityLogaction(Object action) {
@@ -1733,7 +1858,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get broadcast => '[JA] Broadcast (Japanese)';
 
   @override
-  String get noEventsScheduledThisWeek => '[JA] No events scheduled this week (Japanese)';
+  String get noEventsScheduledThisWeek =>
+      '[JA] No events scheduled this week (Japanese)';
 
   @override
   String get googleCalendar => '[JA] Google Calendar (Japanese)';
@@ -1745,7 +1871,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get childDashboard => '[JA] Child Dashboard (Japanese)';
 
   @override
-  String get failedToUploadBackgroundE => '[JA] Failed to upload background: \$e (Japanese)';
+  String get failedToUploadBackgroundE =>
+      '[JA] Failed to upload background: \$e (Japanese)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1764,7 +1891,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get noAppointments => '[JA] No appointments (Japanese)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[JA] • Unlimited bookings per week (Japanese)';
+  String get unlimitedBookingsPerWeek =>
+      '[JA] • Unlimited bookings per week (Japanese)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1772,16 +1900,19 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[JA] Scheduled at: \$scheduledAt (Japanese)';
+  String get scheduledAtScheduledat =>
+      '[JA] Scheduled at: \$scheduledAt (Japanese)';
 
   @override
   String get selectStaff => '[JA] Select Staff (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Subscription cancelled successfully (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Subscription cancelled successfully (Japanese)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[JA] Cancel Appointment (Japanese)';
@@ -1795,7 +1926,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get businessSignup => '[JA] Business Signup (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Business Completion Screen - Coming Soon (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Business Completion Screen - Coming Soon (Japanese)';
 
   @override
   String get createGame1 => '[JA] Create Game (Japanese)';
@@ -1806,10 +1938,12 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[JA] Please enter a promo code (Japanese)';
+  String get pleaseEnterAPromoCode =>
+      '[JA] Please enter a promo code (Japanese)';
 
   @override
-  String get errorLoadingAvailabilityE => '[JA] Error loading availability: \$e (Japanese)';
+  String get errorLoadingAvailabilityE =>
+      '[JA] Error loading availability: \$e (Japanese)';
 
   @override
   String get parentalControls => '[JA] Parental Controls (Japanese)';
@@ -1818,13 +1952,15 @@ class AppLocalizationsJa extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[JA] Child linked successfully! (Japanese)';
+  String get childLinkedSuccessfully =>
+      '[JA] Child linked successfully! (Japanese)';
 
   @override
   String get create => '[JA] Create (Japanese)';
 
   @override
-  String get noExternalMeetingsFound => '[JA] No external meetings found. (Japanese)';
+  String get noExternalMeetingsFound =>
+      '[JA] No external meetings found. (Japanese)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1832,13 +1968,15 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[JA] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[JA] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[JA] Scheduler Screen (Japanese)';
 
   @override
-  String get clientUpdatedSuccessfully => '[JA] Client updated successfully! (Japanese)';
+  String get clientUpdatedSuccessfully =>
+      '[JA] Client updated successfully! (Japanese)';
 
   @override
   String get surveyResponses => '[JA] Survey Responses (Japanese)';
@@ -1864,10 +2002,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get errorLoadingEvents => '[JA] Error loading events (Japanese)';
 
   @override
-  String get errorLoadingOrganizations => '[JA] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[JA] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[JA] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[JA] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[JA] Success (Japanese)';
@@ -1886,10 +2026,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get readWrite => '[JA] Read & Write (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Redirecting to Stripe checkout for Basic plan... (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Redirecting to Stripe checkout for Basic plan... (Japanese)';
 
   @override
-  String get errorSavingConfigurationE => '[JA] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[JA] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[JA] Pick Date (Japanese)';
@@ -1925,10 +2067,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get businessLogin => '[JA] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[JA] Invoice created successfully! (Japanese)';
+  String get invoiceCreatedSuccessfully =>
+      '[JA] Invoice created successfully! (Japanese)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[JA] No time series data available (Japanese)';
+  String get noTimeSeriesDataAvailable =>
+      '[JA] No time series data available (Japanese)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1941,7 +2085,8 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[JA] Failed to send privacy request: \$e (Japanese)';
+  String get failedToSendPrivacyRequestE =>
+      '[JA] Failed to send privacy request: \$e (Japanese)';
 
   @override
   String get chooseYourPlan => '[JA] Choose Your Plan (Japanese)';
@@ -1956,13 +2101,15 @@ class AppLocalizationsJa extends AppLocalizations {
   String get eventCreated => '[JA] Event created (Japanese)';
 
   @override
-  String get subscribeToBasic499mo => '[JA] Subscribe to Basic (€4.99/mo) (Japanese)';
+  String get subscribeToBasic499mo =>
+      '[JA] Subscribe to Basic (€4.99/mo) (Japanese)';
 
   @override
   String get completion => '[JA] Completion (Japanese)';
 
   @override
-  String get supportTicketSubmitted => '[JA] Support ticket submitted (Japanese)';
+  String get supportTicketSubmitted =>
+      '[JA] Support ticket submitted (Japanese)';
 
   @override
   String get monetizationSettings => '[JA] Monetization Settings (Japanese)';
@@ -1977,10 +2124,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get deleteSurvey => '[JA] Delete Survey (Japanese)';
 
   @override
-  String get gameApprovedSuccessfully => '[JA] Game approved successfully! (Japanese)';
+  String get gameApprovedSuccessfully =>
+      '[JA] Game approved successfully! (Japanese)';
 
   @override
-  String get errorLoadingPermissionsError => '[JA] Error loading permissions: \$error (Japanese)';
+  String get errorLoadingPermissionsError =>
+      '[JA] Error loading permissions: \$error (Japanese)';
 
   @override
   String get referrals => '[JA] Referrals (Japanese)';
@@ -2022,7 +2171,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get organizations => '[JA] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[JA] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[JA] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[JA] Create New Game (Japanese)';
@@ -2031,10 +2181,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get next1 => '[JA] Next (Japanese)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[JA] Background uploaded successfully! (Japanese)';
+  String get backgroundUploadedSuccessfully =>
+      '[JA] Background uploaded successfully! (Japanese)';
 
   @override
-  String get noAppointmentRequestsFound => '[JA] No appointment requests found. (Japanese)';
+  String get noAppointmentRequestsFound =>
+      '[JA] No appointment requests found. (Japanese)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2061,16 +2213,19 @@ class AppLocalizationsJa extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => '[JA] Failed to create game: \$e (Japanese)';
+  String get failedToCreateGameE =>
+      '[JA] Failed to create game: \$e (Japanese)';
 
   @override
   String get noChartDataAvailable => '[JA] No chart data available (Japanese)';
 
   @override
-  String get phonebasedBookingSystem => '[JA] • Phone-based booking system (Japanese)';
+  String get phonebasedBookingSystem =>
+      '[JA] • Phone-based booking system (Japanese)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2079,7 +2234,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get invoices => '[JA] Invoices (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2106,10 +2262,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get iDoNotConsent => '[JA] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN => '[JA] No clients found. Add your first client! (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] No clients found. Add your first client! (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN =>
+      '[JA] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[JA] Group: \$groupId';
@@ -2121,7 +2279,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get forward => '[JA] Forward (Japanese)';
 
   @override
-  String get roomAddedSuccessfully => '[JA] Room added successfully! (Japanese)';
+  String get roomAddedSuccessfully =>
+      '[JA] Room added successfully! (Japanese)';
 
   @override
   String get option => '[JA] • \$option (Japanese)';
@@ -2132,7 +2291,8 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[JA] • CRM dashboard with analytics (Japanese)';
+  String get crmDashboardWithAnalytics =>
+      '[JA] • CRM dashboard with analytics (Japanese)';
 
   @override
   String get contentLibrary1 => '[JA] Content Library (Japanese)';
@@ -2141,28 +2301,34 @@ class AppLocalizationsJa extends AppLocalizations {
   String get reply => '[JA] Reply (Japanese)';
 
   @override
-  String get subscriptionManagement => '[JA] Subscription Management (Japanese)';
+  String get subscriptionManagement =>
+      '[JA] Subscription Management (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Monetization settings will be implemented here (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Monetization settings will be implemented here (Japanese)';
 
   @override
-  String get failedToApplyPromoCodeE => '[JA] Failed to apply promo code: \$e (Japanese)';
+  String get failedToApplyPromoCodeE =>
+      '[JA] Failed to apply promo code: \$e (Japanese)';
 
   @override
   String get editProvider => '[JA] Edit Provider';
 
   @override
-  String get localizationContribution => '[JA] Localization Contribution (Japanese)';
+  String get localizationContribution =>
+      '[JA] Localization Contribution (Japanese)';
 
   @override
   String get parentalConsent => '[JA] Parental Consent (Japanese)';
 
   @override
-  String get businessSignupScreenComingSoon => '[JA] Business Signup Screen - Coming Soon (Japanese)';
+  String get businessSignupScreenComingSoon =>
+      '[JA] Business Signup Screen - Coming Soon (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => '[JA] Are you sure you want to delete this appointment? (Japanese)';
+  String get REDACTED_TOKEN =>
+      '[JA] Are you sure you want to delete this appointment? (Japanese)';
 
   @override
   String get syncAppointment => '[JA] Sync Appointment (Japanese)';
@@ -2174,13 +2340,15 @@ class AppLocalizationsJa extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[JA] Business Setup Screen - Coming Soon (Japanese)';
+  String get businessSetupScreenComingSoon =>
+      '[JA] Business Setup Screen - Coming Soon (Japanese)';
 
   @override
   String get edit1 => '[JA] Edit (Japanese)';
 
   @override
-  String get noEventsScheduledThisMonth => '[JA] No events scheduled this month (Japanese)';
+  String get noEventsScheduledThisMonth =>
+      '[JA] No events scheduled this month (Japanese)';
 
   @override
   String get businessDashboard => '[JA] Business Dashboard (Japanese)';
@@ -2194,7 +2362,8 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[JA] Manage Staff Availability (Japanese)';
+  String get manageStaffAvailability =>
+      '[JA] Manage Staff Availability (Japanese)';
 
   @override
   String get noMissingTranslations => '[JA] No missing translations (Japanese)';
@@ -2211,7 +2380,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get noUsers => '[JA] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[JA] Error loading referral code (Japanese)';
+  String get errorLoadingReferralCode =>
+      '[JA] Error loading referral code (Japanese)';
 
   @override
   String get allCountries => '[JA] All Countries (Japanese)';
@@ -2226,7 +2396,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get deleteMessage => '[JA] Delete Message (Japanese)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[JA] changeRole (TRANSLATE)';
@@ -2237,7 +2408,8 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[JA] Opening customer portal... (Japanese)';
+  String get openingCustomerPortal =>
+      '[JA] Opening customer portal... (Japanese)';
 
   @override
   String get signOut => '[JA] Sign Out (Japanese)';
@@ -2248,7 +2420,8 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[JA] Upgrade to Business (Japanese)';
@@ -2274,7 +2447,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[JA] View Responses (Japanese)';
@@ -2303,7 +2477,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2321,7 +2496,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get ad_pre_title => '広告を見て予約を確認してください';
 
   @override
-  String get ad_pre_description => '無料ユーザーとして、確認前に短い広告を見る必要があります。アップグレードすることで、すべての広告を永続的に削除できます。';
+  String get ad_pre_description =>
+      '無料ユーザーとして、確認前に短い広告を見る必要があります。アップグレードすることで、すべての広告を永続的に削除できます。';
 
   @override
   String get watch_ad_button => '広告を見る';
@@ -2378,7 +2554,8 @@ class AppLocalizationsJa extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2426,10 +2603,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle => '[JA] Congratulations! You\'re now an Ambassador! (Japanese)';
+  String get ambassadorPromotionTitle =>
+      '[JA] Congratulations! You\'re now an Ambassador! (Japanese)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2440,7 +2619,11 @@ class AppLocalizationsJa extends AppLocalizations {
   String get tierUpgradeTitle => '[JA] Tier Upgrade! 🎉 (Japanese)';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[JA] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Japanese)';
   }
 
@@ -2448,20 +2631,29 @@ class AppLocalizationsJa extends AppLocalizations {
   String get monthlyReminderTitle => '[JA] Monthly Goal Reminder (Japanese)';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[JA] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Japanese)';
   }
 
   @override
-  String get performanceWarningTitle => '[JA] Ambassador Performance Alert (Japanese)';
+  String get performanceWarningTitle =>
+      '[JA] Ambassador Performance Alert (Japanese)';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[JA] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Japanese)';
   }
 
   @override
-  String get ambassadorDemotionTitle => '[JA] Ambassador Status Update (Japanese)';
+  String get ambassadorDemotionTitle =>
+      '[JA] Ambassador Status Update (Japanese)';
 
   @override
   String ambassadorDemotionBody(String reason) {

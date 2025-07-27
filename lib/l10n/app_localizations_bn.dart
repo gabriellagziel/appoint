@@ -39,7 +39,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get login => 'লগইন';
 
   @override
-  String get playtimeChooseFriends => '[BN] আমন্ত্রণ জানানোর জন্য বন্ধু নির্বাচন করুন';
+  String get playtimeChooseFriends =>
+      '[BN] আমন্ত্রণ জানানোর জন্য বন্ধু নির্বাচন করুন';
 
   @override
   String get noInvites => '[BN] কোন আমন্ত্রণ নেই';
@@ -74,7 +75,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get search => 'অনুসন্ধান';
 
   @override
-  String get cancelInviteConfirmation => '[BN] আপনি কি নিশ্চিত যে আপনি এই আমন্ত্রণ বাতিল করতে চান?';
+  String get cancelInviteConfirmation =>
+      '[BN] আপনি কি নিশ্চিত যে আপনি এই আমন্ত্রণ বাতিল করতে চান?';
 
   @override
   String created(String created, Object date) {
@@ -88,7 +90,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get playtimeLiveScheduled => '[BN] লাইভ সেশন শিডিউল হয়েছে';
 
   @override
-  String get revokeAccessConfirmation => '[BN] আপনি কি নিশ্চিত যে আপনি এই শিশুর অ্যাক্সেস বাতিল করতে চান? এটি পূর্বাবস্থায় ফেরানো যাবে না।';
+  String get revokeAccessConfirmation =>
+      '[BN] আপনি কি নিশ্চিত যে আপনি এই শিশুর অ্যাক্সেস বাতিল করতে চান? এটি পূর্বাবস্থায় ফেরানো যাবে না।';
 
   @override
   String get download => 'ডাউনলোড';
@@ -182,7 +185,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get meetingSharedSuccessfully => '[BN] মিটিং সফলভাবে শেয়ার করা হয়েছে!';
+  String get meetingSharedSuccessfully =>
+      '[BN] মিটিং সফলভাবে শেয়ার করা হয়েছে!';
 
   @override
   String get welcomeToPlaytime => '[BN] প্লেটাইমে স্বাগতম';
@@ -200,7 +204,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get cut => '[BN] [BN] Cut';
 
   @override
-  String get inviteCancelledSuccessfully => '[BN] আমন্ত্রণ সফলভাবে বাতিল হয়েছে!';
+  String get inviteCancelledSuccessfully =>
+      '[BN] আমন্ত্রণ সফলভাবে বাতিল হয়েছে!';
 
   @override
   String get retry => '[BN] পুনরায় চেষ্টা করুন';
@@ -277,7 +282,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get scheduleForLater => '[BN] পরে শিডিউল করুন';
 
   @override
-  String get accessRevokedSuccessfully => '[BN] অ্যাক্সেস সফলভাবে বাতিল হয়েছে!';
+  String get accessRevokedSuccessfully =>
+      '[BN] অ্যাক্সেস সফলভাবে বাতিল হয়েছে!';
 
   @override
   String type(String type) {
@@ -387,7 +393,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get noProfileFound => '[BN] কোনো প্রোফাইল পাওয়া যায়নি';
 
   @override
-  String get noFamilyMembersYet => '[BN] এখনও কোনো পরিবার সদস্য নেই। শুরু করতে কাউকে আমন্ত্রণ জানান!';
+  String get noFamilyMembersYet =>
+      '[BN] এখনও কোনো পরিবার সদস্য নেই। শুরু করতে কাউকে আমন্ত্রণ জানান!';
 
   @override
   String get mediaOptional => '[BN] মিডিয়া (ঐচ্ছিক)';
@@ -402,7 +409,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get dashboard => 'ড্যাশবোর্ড';
 
   @override
-  String get noPermissionForBroadcast => '[BN] আপনার সম্প্রচার বার্তা তৈরি করার অনুমতি নেই।';
+  String get noPermissionForBroadcast =>
+      '[BN] আপনার সম্প্রচার বার্তা তৈরি করার অনুমতি নেই।';
 
   @override
   String get playtimeAdminPanelTitle => '[BN] Playtime Games – Admin';
@@ -479,7 +487,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get playtimeEnterGameName => '[BN] [BN] Enter game name';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[BN] পরিবার ফিচার অ্যাক্সেস করতে দয়া করে লগইন করুন';
+  String get pleaseLoginForFamilyFeatures =>
+      '[BN] পরিবার ফিচার অ্যাক্সেস করতে দয়া করে লগইন করুন';
 
   @override
   String get myInvites => '[BN] আমার আমন্ত্রণ';
@@ -522,7 +531,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get meetingReadyMessage => '[BN] মিটিং প্রস্তুত! আপনি কি এটি আপনার গ্রুপে পাঠাতে চান?';
+  String get meetingReadyMessage =>
+      '[BN] মিটিং প্রস্তুত! আপনি কি এটি আপনার গ্রুপে পাঠাতে চান?';
 
   @override
   String get pendingInvites => '[BN] মুলতুবি আমন্ত্রণ';
@@ -554,40 +564,52 @@ class AppLocalizationsBn extends AppLocalizations {
   String get contentLibrary => '[BN] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[BN] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[BN] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[BN] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[BN] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[BN] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[BN] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[BN] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[BN] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[BN] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[BN] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[BN] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[BN] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[BN] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[BN] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[BN] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[BN] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[BN] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[BN] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN =>
+      '[BN] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[BN] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[BN] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[BN] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[BN] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -604,19 +626,24 @@ class AppLocalizationsBn extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[BN] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[BN] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[BN] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[BN] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] The verification code is invalid.';
+  String get REDACTED_TOKEN =>
+      '[BN] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[BN] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[BN] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Please enter the verification code.';
+  String get REDACTED_TOKEN =>
+      '[BN] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[BN] Missing verification ID.';
@@ -628,43 +655,56 @@ class AppLocalizationsBn extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[BN] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[BN] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[BN] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[BN] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[BN] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[BN] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[BN] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN =>
+      '[BN] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Multi-factor information not found.';
+  String get REDACTED_TOKEN =>
+      '[BN] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Missing multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[BN] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Invalid multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[BN] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] This second factor is already in use.';
+  String get REDACTED_TOKEN =>
+      '[BN] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN =>
+      '[BN] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[BN] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[BN] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Email change requires verification.';
+  String get REDACTED_TOKEN =>
+      '[BN] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] This phone number is already in use.';
+  String get REDACTED_TOKEN =>
+      '[BN] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[BN] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[BN] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[BN] The ID token is invalid.';
@@ -676,10 +716,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[BN] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[BN] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[BN] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[BN] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[BN] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[BN] Invalid custom claims provided.';
@@ -688,70 +730,87 @@ class AppLocalizationsBn extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[BN] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[BN] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[BN] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[BN] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[BN] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[BN] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN =>
+      '[BN] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[BN] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[BN] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[BN] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[BN] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[BN] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[BN] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN =>
+      '[BN] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[BN] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[BN] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[BN] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN =>
+      '[BN] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[BN] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[BN] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN =>
+      '[BN] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[BN] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[BN] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[BN] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[BN] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[BN] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[BN] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN =>
+      '[BN] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[BN] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[BN] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[BN] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN =>
+      '[BN] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[BN] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[BN] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[BN] Missing continue URL.';
@@ -766,7 +825,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get authErrorMissingUid => '[BN] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Missing OAuth client secret.';
+  String get REDACTED_TOKEN =>
+      '[BN] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[BN] Firebase project not found.';
@@ -775,19 +835,23 @@ class AppLocalizationsBn extends AppLocalizations {
   String get authErrorReservedClaims => '[BN] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[BN] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[BN] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[BN] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[BN] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[BN] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[BN] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN =>
+      '[BN] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[BN] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[BN] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -836,7 +900,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Virtual session created! Inviting friends... (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Virtual session created! Inviting friends... (Bengali)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -877,13 +942,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[BN] Subscription unavailable (Bengali)';
+  String get subscriptionUnavailable =>
+      '[BN] Subscription unavailable (Bengali)';
 
   @override
   String get confirmBooking => '[BN] Confirm Booking (Bengali)';
 
   @override
-  String get failedToUpdatePermissionE => '[BN] Failed to update permission: \$e (Bengali)';
+  String get failedToUpdatePermissionE =>
+      '[BN] Failed to update permission: \$e (Bengali)';
 
   @override
   String get reject => '[BN] Reject (Bengali)';
@@ -911,7 +978,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get resolve => '[BN] Resolve (Bengali)';
 
   @override
-  String get errorLoadingSurveysError => '[BN] Error loading surveys: \$error (Bengali)';
+  String get errorLoadingSurveysError =>
+      '[BN] Error loading surveys: \$error (Bengali)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -919,7 +987,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[BN] Get help with your account (Bengali)';
+  String get getHelpWithYourAccount =>
+      '[BN] Get help with your account (Bengali)';
 
   @override
   String get pay => '[BN] Pay (Bengali)';
@@ -934,7 +1003,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[BN] Changes saved successfully! (Bengali)';
+  String get changesSavedSuccessfully =>
+      '[BN] Changes saved successfully! (Bengali)';
 
   @override
   String get createNewInvoice => '[BN] Create New Invoice (Bengali)';
@@ -954,7 +1024,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get profileSaved => '[BN] Profile saved! (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -985,7 +1056,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[BN] You will receive a confirmation email shortly. (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] You will receive a confirmation email shortly. (Bengali)';
 
   @override
   String get addQuestion => '[BN] Add Question (Bengali)';
@@ -1014,22 +1086,26 @@ class AppLocalizationsBn extends AppLocalizations {
   String get surveyManagement => '[BN] Survey Management (Bengali)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[BN] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[BN] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[BN] No rooms found. Add your first room! (Bengali)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[BN] No rooms found. Add your first room! (Bengali)';
 
   @override
   String get readOurPrivacyPolicy => '[BN] Read our privacy policy (Bengali)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[BN] Could not open privacy policy (Bengali)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[BN] Could not open privacy policy (Bengali)';
 
   @override
   String get refresh1 => '[BN] Refresh (Bengali)';
 
   @override
-  String get roomUpdatedSuccessfully => '[BN] Room updated successfully! (Bengali)';
+  String get roomUpdatedSuccessfully =>
+      '[BN] Room updated successfully! (Bengali)';
 
   @override
   String get contentDetail => '[BN] Content Detail (Bengali)';
@@ -1038,7 +1114,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get cancelSubscription => '[BN] Cancel Subscription (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Successfully registered as Ambassador! (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Successfully registered as Ambassador! (Bengali)';
 
   @override
   String get save1 => '[BN] Save (Bengali)';
@@ -1047,7 +1124,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get copy1 => '[BN] Copy (Bengali)';
 
   @override
-  String get failedToSendInvitationE => '[BN] Failed to send invitation: \$e (Bengali)';
+  String get failedToSendInvitationE =>
+      '[BN] Failed to send invitation: \$e (Bengali)';
 
   @override
   String get surveyScore => '[BN] Survey Score (Bengali)';
@@ -1064,16 +1142,20 @@ class AppLocalizationsBn extends AppLocalizations {
   String get responseDetail => '[BN] Response Detail (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[BN] Failed to start Pro subscription: \$e (Bengali)';
+  String get failedToStartProSubscriptionE =>
+      '[BN] Failed to start Pro subscription: \$e (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Business Dashboard Entry Screen - Coming Soon (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Business Dashboard Entry Screen - Coming Soon (Bengali)';
 
   @override
   String get contentFilter => '[BN] Content Filter (Bengali)';
@@ -1095,7 +1177,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[BN] Business CRM Entry Screen - Coming Soon (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Business CRM Entry Screen - Coming Soon (Bengali)';
 
   @override
   String get adminDashboard => '[BN] Admin Dashboard';
@@ -1106,13 +1189,16 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[BN] Error loading dashboard: \$error (Bengali)';
+  String get errorLoadingDashboardError =>
+      '[BN] Error loading dashboard: \$error (Bengali)';
 
   @override
-  String get gameDeletedSuccessfully => '[BN] Game deleted successfully! (Bengali)';
+  String get gameDeletedSuccessfully =>
+      '[BN] Game deleted successfully! (Bengali)';
 
   @override
-  String get viewResponsesComingSoon => '[BN] View responses - Coming soon! (Bengali)';
+  String get viewResponsesComingSoon =>
+      '[BN] View responses - Coming soon! (Bengali)';
 
   @override
   String get deleteProvider => '[BN] Delete Provider';
@@ -1121,7 +1207,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get errorLoadingRewards => '[BN] Error loading rewards (Bengali)';
 
   @override
-  String get failedToDeleteAccountE => '[BN] Failed to delete account: \$e (Bengali)';
+  String get failedToDeleteAccountE =>
+      '[BN] Failed to delete account: \$e (Bengali)';
 
   @override
   String get invited1 => '[BN] Invited (Bengali)';
@@ -1136,7 +1223,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get noEvents => '[BN] No events (Bengali)';
 
   @override
-  String get gameCreatedSuccessfully => '[BN] Game created successfully! (Bengali)';
+  String get gameCreatedSuccessfully =>
+      '[BN] Game created successfully! (Bengali)';
 
   @override
   String get add1 => '[BN] Add (Bengali)';
@@ -1156,10 +1244,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get clients => '[BN] Clients (Bengali)';
 
   @override
-  String get noAmbassadorDataAvailable => '[BN] No ambassador data available (Bengali)';
+  String get noAmbassadorDataAvailable =>
+      '[BN] No ambassador data available (Bengali)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[BN] Background deleted successfully! (Bengali)';
+  String get backgroundDeletedSuccessfully =>
+      '[BN] Background deleted successfully! (Bengali)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1167,7 +1257,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[BN] No analytics data available yet. (Bengali)';
+  String get noAnalyticsDataAvailableYet =>
+      '[BN] No analytics data available yet. (Bengali)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1175,7 +1266,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[BN] Business Phone Booking Entry Screen - Coming Soon (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Business Phone Booking Entry Screen - Coming Soon (Bengali)';
 
   @override
   String get verification => '[BN] Verification (Bengali)';
@@ -1222,7 +1314,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get businessProfile => '[BN] Business Profile (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Business Booking Entry Screen - Coming Soon (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Business Booking Entry Screen - Coming Soon (Bengali)';
 
   @override
   String get createNewSurvey => '[BN] Create New Survey (Bengali)';
@@ -1246,7 +1339,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get loginFailedE => '[BN] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[BN] Invitation sent successfully! (Bengali)';
+  String get invitationSentSuccessfully =>
+      '[BN] Invitation sent successfully! (Bengali)';
 
   @override
   String get registering => '[BN] Registering... (Bengali)';
@@ -1260,13 +1354,16 @@ class AppLocalizationsBn extends AppLocalizations {
   String get home1 => '[BN] Home (Bengali)';
 
   @override
-  String get errorSavingSettingsE => '[BN] Error saving settings: \$e (Bengali)';
+  String get errorSavingSettingsE =>
+      '[BN] Error saving settings: \$e (Bengali)';
 
   @override
-  String get appVersionAndInformation => '[BN] App version and information (Bengali)';
+  String get appVersionAndInformation =>
+      '[BN] App version and information (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Business Subscription Entry Screen - Coming Soon (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Business Subscription Entry Screen - Coming Soon (Bengali)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1274,7 +1371,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[BN] Your payment has been processed successfully. (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Your payment has been processed successfully. (Bengali)';
 
   @override
   String get errorE => '[BN] Error: \$e (Bengali)';
@@ -1283,7 +1381,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get viewAll1 => '[BN] View All (Bengali)';
 
   @override
-  String get editSurveyComingSoon => '[BN] Edit survey - Coming soon! (Bengali)';
+  String get editSurveyComingSoon =>
+      '[BN] Edit survey - Coming soon! (Bengali)';
 
   @override
   String get enterOtp => '[BN] Enter OTP (Bengali)';
@@ -1292,7 +1391,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get payment => '[BN] Payment (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Automatically confirm new booking requests (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Automatically confirm new booking requests (Bengali)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1305,7 +1405,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[BN] Please sign in to upload a background (Bengali)';
+  String get pleaseSignInToUploadABackground =>
+      '[BN] Please sign in to upload a background (Bengali)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1322,19 +1423,22 @@ class AppLocalizationsBn extends AppLocalizations {
   String get autoconfirmBookings => '[BN] Auto-Confirm Bookings (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Redirecting to Stripe checkout for Pro plan... (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Redirecting to Stripe checkout for Pro plan... (Bengali)';
 
   @override
   String get exportAsCsv => '[BN] Export as CSV (Bengali)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[BN] Delete functionality coming soon! (Bengali)';
+  String get deleteFunctionalityComingSoon =>
+      '[BN] Delete functionality coming soon! (Bengali)';
 
   @override
   String get editClient => '[BN] Edit Client (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Are you sure you want to delete this message? (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Are you sure you want to delete this message? (Bengali)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1345,31 +1449,39 @@ class AppLocalizationsBn extends AppLocalizations {
   String get notAuthenticated => '[BN] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[BN] Privacy request sent to your parents! (Bengali)';
+  String get privacyRequestSentToYourParents =>
+      '[BN] Privacy request sent to your parents! (Bengali)';
 
   @override
-  String get clientDeletedSuccessfully => '[BN] Client deleted successfully! (Bengali)';
+  String get clientDeletedSuccessfully =>
+      '[BN] Client deleted successfully! (Bengali)';
 
   @override
-  String get failedToCancelSubscription => '[BN] Failed to cancel subscription (Bengali)';
+  String get failedToCancelSubscription =>
+      '[BN] Failed to cancel subscription (Bengali)';
 
   @override
   String get allLanguages => '[BN] All Languages (Bengali)';
 
   @override
-  String get slotDeletedSuccessfully => '[BN] Slot deleted successfully (Bengali)';
+  String get slotDeletedSuccessfully =>
+      '[BN] Slot deleted successfully (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN =>
+      '[BN] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Parents must approve before children can join (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Parents must approve before children can join (Bengali)';
 
   @override
-  String get subscribeToPro1499mo => '[BN] Subscribe to Pro (€14.99/mo) (Bengali)';
+  String get subscribeToPro1499mo =>
+      '[BN] Subscribe to Pro (€14.99/mo) (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Business Availability Entry Screen - Coming Soon (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Business Availability Entry Screen - Coming Soon (Bengali)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1383,7 +1495,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get submitBooking => '[BN] Submit Booking (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Are you sure you want to cancel this appointment? (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Are you sure you want to cancel this appointment? (Bengali)';
 
   @override
   String get noUpcomingBookings => '[BN] No upcoming bookings (Bengali)';
@@ -1401,7 +1514,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get goToDashboard => '[BN] Go to Dashboard (Bengali)';
 
   @override
-  String get ambassadorQuotaDashboard => '[BN] Ambassador Quota Dashboard (Bengali)';
+  String get ambassadorQuotaDashboard =>
+      '[BN] Ambassador Quota Dashboard (Bengali)';
 
   @override
   String get adminSettings => '[BN] Admin Settings';
@@ -1439,7 +1553,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[BN] Client added successfully! (Bengali)';
+  String get clientAddedSuccessfully =>
+      '[BN] Client added successfully! (Bengali)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1457,7 +1572,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get bookAppointment => '[BN] Book Appointment (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[BN] Delete (Bengali)';
@@ -1472,13 +1588,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get manageSubscription => '[BN] Manage Subscription (Bengali)';
 
   @override
-  String get requiresInstallFallback => '[BN] Requires Install Fallback (Bengali)';
+  String get requiresInstallFallback =>
+      '[BN] Requires Install Fallback (Bengali)';
 
   @override
   String get paymentConfirmation => '[BN] Payment Confirmation (Bengali)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[BN] Promo applied! Your next bill is free. (Bengali)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[BN] Promo applied! Your next bill is free. (Bengali)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1489,13 +1607,16 @@ class AppLocalizationsBn extends AppLocalizations {
   String get errorLoadingSlots => '[BN] Error loading slots (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Allow other users to find and join this game (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Allow other users to find and join this game (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Business Onboarding Screen - Coming Soon (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Business Onboarding Screen - Coming Soon (Bengali)';
 
   @override
-  String get activateBusinessProfile => '[BN] Activate Business Profile (Bengali)';
+  String get activateBusinessProfile =>
+      '[BN] Activate Business Profile (Bengali)';
 
   @override
   String get contentNotFound => '[BN] Content not found (Bengali)';
@@ -1537,7 +1658,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get shareLink => '[BN] Share Link (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN =>
+      '[BN] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[BN] Delete Appointment (Bengali)';
@@ -1557,10 +1679,12 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[BN] Update your business information (Bengali)';
+  String get updateYourBusinessInformation =>
+      '[BN] Update your business information (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN =>
+      '[BN] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[BN] Parent Dashboard (Bengali)';
@@ -1583,10 +1707,12 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[BN] Studio booking is only available on web (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Studio booking is only available on web (Bengali)';
 
   @override
-  String get errorLoadingBranchesE => '[BN] Error loading branches: \$e (Bengali)';
+  String get errorLoadingBranchesE =>
+      '[BN] Error loading branches: \$e (Bengali)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1602,13 +1728,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get none => '[BN] None (Bengali)';
 
   @override
-  String get failedToUpdateConsentE => '[BN] Failed to update consent: \$e (Bengali)';
+  String get failedToUpdateConsentE =>
+      '[BN] Failed to update consent: \$e (Bengali)';
 
   @override
   String get welcome1 => '[BN] Welcome (Bengali)';
 
   @override
-  String get failedToCreateSessionE => '[BN] Failed to create session: \$e (Bengali)';
+  String get failedToCreateSessionE =>
+      '[BN] Failed to create session: \$e (Bengali)';
 
   @override
   String get inviteContact => '[BN] Invite Contact (Bengali)';
@@ -1617,7 +1745,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get surveyEditor => '[BN] Survey Editor (Bengali)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[BN] Failed to start Basic subscription: \$e (Bengali)';
+  String get failedToStartBasicSubscriptionE =>
+      '[BN] Failed to start Basic subscription: \$e (Bengali)';
 
   @override
   String get mySchedule => '[BN] My Schedule (Bengali)';
@@ -1637,10 +1766,12 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[BN] Settings saved successfully! (Bengali)';
+  String get settingsSavedSuccessfully =>
+      '[BN] Settings saved successfully! (Bengali)';
 
   @override
-  String get linkCopiedToClipboard => '[BN] Link copied to clipboard! (Bengali)';
+  String get linkCopiedToClipboard =>
+      '[BN] Link copied to clipboard! (Bengali)';
 
   @override
   String get accept1 => '[BN] Accept (Bengali)';
@@ -1657,7 +1788,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[BN] Room deleted successfully! (Bengali)';
+  String get roomDeletedSuccessfully =>
+      '[BN] Room deleted successfully! (Bengali)';
 
   @override
   String get businessCalendar => '[BN] Business Calendar (Bengali)';
@@ -1722,7 +1854,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get cancel1 => '[BN] Cancel (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Subscription activated successfully! (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Subscription activated successfully! (Bengali)';
 
   @override
   String activityLogaction(Object action) {
@@ -1733,7 +1866,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get broadcast => '[BN] Broadcast (Bengali)';
 
   @override
-  String get noEventsScheduledThisWeek => '[BN] No events scheduled this week (Bengali)';
+  String get noEventsScheduledThisWeek =>
+      '[BN] No events scheduled this week (Bengali)';
 
   @override
   String get googleCalendar => '[BN] Google Calendar (Bengali)';
@@ -1745,7 +1879,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get childDashboard => '[BN] Child Dashboard (Bengali)';
 
   @override
-  String get failedToUploadBackgroundE => '[BN] Failed to upload background: \$e (Bengali)';
+  String get failedToUploadBackgroundE =>
+      '[BN] Failed to upload background: \$e (Bengali)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1764,7 +1899,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get noAppointments => '[BN] No appointments (Bengali)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[BN] • Unlimited bookings per week (Bengali)';
+  String get unlimitedBookingsPerWeek =>
+      '[BN] • Unlimited bookings per week (Bengali)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1772,16 +1908,19 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[BN] Scheduled at: \$scheduledAt (Bengali)';
+  String get scheduledAtScheduledat =>
+      '[BN] Scheduled at: \$scheduledAt (Bengali)';
 
   @override
   String get selectStaff => '[BN] Select Staff (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Subscription cancelled successfully (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Subscription cancelled successfully (Bengali)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[BN] Cancel Appointment (Bengali)';
@@ -1795,7 +1934,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get businessSignup => '[BN] Business Signup (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Business Completion Screen - Coming Soon (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Business Completion Screen - Coming Soon (Bengali)';
 
   @override
   String get createGame1 => '[BN] Create Game (Bengali)';
@@ -1806,10 +1946,12 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[BN] Please enter a promo code (Bengali)';
+  String get pleaseEnterAPromoCode =>
+      '[BN] Please enter a promo code (Bengali)';
 
   @override
-  String get errorLoadingAvailabilityE => '[BN] Error loading availability: \$e (Bengali)';
+  String get errorLoadingAvailabilityE =>
+      '[BN] Error loading availability: \$e (Bengali)';
 
   @override
   String get parentalControls => '[BN] Parental Controls (Bengali)';
@@ -1818,13 +1960,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[BN] Child linked successfully! (Bengali)';
+  String get childLinkedSuccessfully =>
+      '[BN] Child linked successfully! (Bengali)';
 
   @override
   String get create => '[BN] Create (Bengali)';
 
   @override
-  String get noExternalMeetingsFound => '[BN] No external meetings found. (Bengali)';
+  String get noExternalMeetingsFound =>
+      '[BN] No external meetings found. (Bengali)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1832,13 +1976,15 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[BN] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[BN] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[BN] Scheduler Screen (Bengali)';
 
   @override
-  String get clientUpdatedSuccessfully => '[BN] Client updated successfully! (Bengali)';
+  String get clientUpdatedSuccessfully =>
+      '[BN] Client updated successfully! (Bengali)';
 
   @override
   String get surveyResponses => '[BN] Survey Responses (Bengali)';
@@ -1864,10 +2010,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get errorLoadingEvents => '[BN] Error loading events (Bengali)';
 
   @override
-  String get errorLoadingOrganizations => '[BN] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[BN] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[BN] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[BN] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[BN] Success (Bengali)';
@@ -1886,10 +2034,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get readWrite => '[BN] Read & Write (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Redirecting to Stripe checkout for Basic plan... (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Redirecting to Stripe checkout for Basic plan... (Bengali)';
 
   @override
-  String get errorSavingConfigurationE => '[BN] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[BN] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[BN] Pick Date (Bengali)';
@@ -1925,10 +2075,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get businessLogin => '[BN] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[BN] Invoice created successfully! (Bengali)';
+  String get invoiceCreatedSuccessfully =>
+      '[BN] Invoice created successfully! (Bengali)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[BN] No time series data available (Bengali)';
+  String get noTimeSeriesDataAvailable =>
+      '[BN] No time series data available (Bengali)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1941,7 +2093,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[BN] Failed to send privacy request: \$e (Bengali)';
+  String get failedToSendPrivacyRequestE =>
+      '[BN] Failed to send privacy request: \$e (Bengali)';
 
   @override
   String get chooseYourPlan => '[BN] Choose Your Plan (Bengali)';
@@ -1956,13 +2109,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get eventCreated => '[BN] Event created (Bengali)';
 
   @override
-  String get subscribeToBasic499mo => '[BN] Subscribe to Basic (€4.99/mo) (Bengali)';
+  String get subscribeToBasic499mo =>
+      '[BN] Subscribe to Basic (€4.99/mo) (Bengali)';
 
   @override
   String get completion => '[BN] Completion (Bengali)';
 
   @override
-  String get supportTicketSubmitted => '[BN] Support ticket submitted (Bengali)';
+  String get supportTicketSubmitted =>
+      '[BN] Support ticket submitted (Bengali)';
 
   @override
   String get monetizationSettings => '[BN] Monetization Settings (Bengali)';
@@ -1977,10 +2132,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get deleteSurvey => '[BN] Delete Survey (Bengali)';
 
   @override
-  String get gameApprovedSuccessfully => '[BN] Game approved successfully! (Bengali)';
+  String get gameApprovedSuccessfully =>
+      '[BN] Game approved successfully! (Bengali)';
 
   @override
-  String get errorLoadingPermissionsError => '[BN] Error loading permissions: \$error (Bengali)';
+  String get errorLoadingPermissionsError =>
+      '[BN] Error loading permissions: \$error (Bengali)';
 
   @override
   String get referrals => '[BN] Referrals (Bengali)';
@@ -2022,7 +2179,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get organizations => '[BN] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[BN] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[BN] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[BN] Create New Game (Bengali)';
@@ -2031,10 +2189,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get next1 => '[BN] Next (Bengali)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[BN] Background uploaded successfully! (Bengali)';
+  String get backgroundUploadedSuccessfully =>
+      '[BN] Background uploaded successfully! (Bengali)';
 
   @override
-  String get noAppointmentRequestsFound => '[BN] No appointment requests found. (Bengali)';
+  String get noAppointmentRequestsFound =>
+      '[BN] No appointment requests found. (Bengali)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
@@ -2061,7 +2221,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
   String get failedToCreateGameE => '[BN] Failed to create game: \$e (Bengali)';
@@ -2070,7 +2231,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get noChartDataAvailable => '[BN] No chart data available (Bengali)';
 
   @override
-  String get phonebasedBookingSystem => '[BN] • Phone-based booking system (Bengali)';
+  String get phonebasedBookingSystem =>
+      '[BN] • Phone-based booking system (Bengali)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2079,7 +2241,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get invoices => '[BN] Invoices (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2106,10 +2269,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get iDoNotConsent => '[BN] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN => '[BN] No clients found. Add your first client! (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] No clients found. Add your first client! (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN =>
+      '[BN] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[BN] Group: \$groupId';
@@ -2132,7 +2297,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[BN] • CRM dashboard with analytics (Bengali)';
+  String get crmDashboardWithAnalytics =>
+      '[BN] • CRM dashboard with analytics (Bengali)';
 
   @override
   String get contentLibrary1 => '[BN] Content Library (Bengali)';
@@ -2144,25 +2310,30 @@ class AppLocalizationsBn extends AppLocalizations {
   String get subscriptionManagement => '[BN] Subscription Management (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Monetization settings will be implemented here (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Monetization settings will be implemented here (Bengali)';
 
   @override
-  String get failedToApplyPromoCodeE => '[BN] Failed to apply promo code: \$e (Bengali)';
+  String get failedToApplyPromoCodeE =>
+      '[BN] Failed to apply promo code: \$e (Bengali)';
 
   @override
   String get editProvider => '[BN] Edit Provider';
 
   @override
-  String get localizationContribution => '[BN] Localization Contribution (Bengali)';
+  String get localizationContribution =>
+      '[BN] Localization Contribution (Bengali)';
 
   @override
   String get parentalConsent => '[BN] Parental Consent (Bengali)';
 
   @override
-  String get businessSignupScreenComingSoon => '[BN] Business Signup Screen - Coming Soon (Bengali)';
+  String get businessSignupScreenComingSoon =>
+      '[BN] Business Signup Screen - Coming Soon (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => '[BN] Are you sure you want to delete this appointment? (Bengali)';
+  String get REDACTED_TOKEN =>
+      '[BN] Are you sure you want to delete this appointment? (Bengali)';
 
   @override
   String get syncAppointment => '[BN] Sync Appointment (Bengali)';
@@ -2174,13 +2345,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[BN] Business Setup Screen - Coming Soon (Bengali)';
+  String get businessSetupScreenComingSoon =>
+      '[BN] Business Setup Screen - Coming Soon (Bengali)';
 
   @override
   String get edit1 => '[BN] Edit (Bengali)';
 
   @override
-  String get noEventsScheduledThisMonth => '[BN] No events scheduled this month (Bengali)';
+  String get noEventsScheduledThisMonth =>
+      '[BN] No events scheduled this month (Bengali)';
 
   @override
   String get businessDashboard => '[BN] Business Dashboard (Bengali)';
@@ -2194,7 +2367,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[BN] Manage Staff Availability (Bengali)';
+  String get manageStaffAvailability =>
+      '[BN] Manage Staff Availability (Bengali)';
 
   @override
   String get noMissingTranslations => '[BN] No missing translations (Bengali)';
@@ -2211,7 +2385,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get noUsers => '[BN] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[BN] Error loading referral code (Bengali)';
+  String get errorLoadingReferralCode =>
+      '[BN] Error loading referral code (Bengali)';
 
   @override
   String get allCountries => '[BN] All Countries (Bengali)';
@@ -2226,7 +2401,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get deleteMessage => '[BN] Delete Message (Bengali)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[BN] changeRole (TRANSLATE)';
@@ -2237,7 +2413,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[BN] Opening customer portal... (Bengali)';
+  String get openingCustomerPortal =>
+      '[BN] Opening customer portal... (Bengali)';
 
   @override
   String get signOut => '[BN] Sign Out (Bengali)';
@@ -2248,7 +2425,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[BN] Upgrade to Business (Bengali)';
@@ -2274,7 +2452,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[BN] View Responses (Bengali)';
@@ -2303,7 +2482,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2321,7 +2501,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2330,7 +2511,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2378,7 +2560,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2426,10 +2609,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle => '[BN] Congratulations! You\'re now an Ambassador! (Bengali)';
+  String get ambassadorPromotionTitle =>
+      '[BN] Congratulations! You\'re now an Ambassador! (Bengali)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2440,7 +2625,11 @@ class AppLocalizationsBn extends AppLocalizations {
   String get tierUpgradeTitle => '[BN] Tier Upgrade! 🎉 (Bengali)';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[BN] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Bengali)';
   }
 
@@ -2448,20 +2637,29 @@ class AppLocalizationsBn extends AppLocalizations {
   String get monthlyReminderTitle => '[BN] Monthly Goal Reminder (Bengali)';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[BN] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Bengali)';
   }
 
   @override
-  String get performanceWarningTitle => '[BN] Ambassador Performance Alert (Bengali)';
+  String get performanceWarningTitle =>
+      '[BN] Ambassador Performance Alert (Bengali)';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[BN] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Bengali)';
   }
 
   @override
-  String get ambassadorDemotionTitle => '[BN] Ambassador Status Update (Bengali)';
+  String get ambassadorDemotionTitle =>
+      '[BN] Ambassador Status Update (Bengali)';
 
   @override
   String ambassadorDemotionBody(String reason) {
@@ -2548,7 +2746,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
 /// The translations for Bengali Bangla, as used in Bangladesh (`bn_BD`).
 class AppLocalizationsBnBd extends AppLocalizationsBn {
-  AppLocalizationsBnBd(): super('bn_BD');
+  AppLocalizationsBnBd() : super('bn_BD');
 
   @override
   String get refresh => 'রিফ্রেশ';
@@ -2604,7 +2802,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get createVirtualSession => '[BN_BD] ভার্চুয়াল সেশন তৈরি করুন';
 
   @override
-  String get messageSentSuccessfully => '[BN_BD] বার্তাটি সফলভাবে পাঠানো হয়েছে';
+  String get messageSentSuccessfully =>
+      '[BN_BD] বার্তাটি সফলভাবে পাঠানো হয়েছে';
 
   @override
   String get redo => '[BN_BD] পুনরায় করুন';
@@ -2630,7 +2829,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get playtimeLiveScheduled => '[BN_BD] লাইভ সেশন নির্ধারিত হয়েছে';
 
   @override
-  String get revokeAccessConfirmation => '[BN_BD] অ্যাক্সেস প্রত্যাহারের নিশ্চিতকরণ';
+  String get revokeAccessConfirmation =>
+      '[BN_BD] অ্যাক্সেস প্রত্যাহারের নিশ্চিতকরণ';
 
   @override
   String get download => 'ডাউনলোড';
@@ -2724,7 +2924,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get meetingSharedSuccessfully => '[BN_BD] মিটিং সফলভাবে শেয়ার করা হয়েছে';
+  String get meetingSharedSuccessfully =>
+      '[BN_BD] মিটিং সফলভাবে শেয়ার করা হয়েছে';
 
   @override
   String get welcomeToPlaytime => '[BN_BD] Playtime এ স্বাগতম';
@@ -2742,7 +2943,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get cut => 'কাটুন';
 
   @override
-  String get inviteCancelledSuccessfully => '[BN_BD] আমন্ত্রণ সফলভাবে বাতিল করা হয়েছে';
+  String get inviteCancelledSuccessfully =>
+      '[BN_BD] আমন্ত্রণ সফলভাবে বাতিল করা হয়েছে';
 
   @override
   String get retry => '[BN_BD] আবার চেষ্টা করুন';
@@ -2819,7 +3021,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get scheduleForLater => '[BN_BD] পরে শিডিউল করুন';
 
   @override
-  String get accessRevokedSuccessfully => '[BN_BD] অ্যাক্সেস সফলভাবে প্রত্যাহার করা হয়েছে';
+  String get accessRevokedSuccessfully =>
+      '[BN_BD] অ্যাক্সেস সফলভাবে প্রত্যাহার করা হয়েছে';
 
   @override
   String type(String type) {
@@ -2904,7 +3107,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get playtimeTitle => '[BN_BD] Playtime শিরোনাম';
 
   @override
-  String get otpResentSuccessfully => '[BN_BD] OTP সফলভাবে পুনরায় পাঠানো হয়েছে';
+  String get otpResentSuccessfully =>
+      '[BN_BD] OTP সফলভাবে পুনরায় পাঠানো হয়েছে';
 
   @override
   String errorCheckingPermissions(Object error) {
@@ -2912,7 +3116,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get clientScreenTBD => '[BN_BD] ক্লায়েন্ট স্ক্রিন পরে নিশ্চিত করা হবে';
+  String get clientScreenTBD =>
+      '[BN_BD] ক্লায়েন্ট স্ক্রিন পরে নিশ্চিত করা হবে';
 
   @override
   String fcmToken(Object token) {
@@ -2935,7 +3140,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get mediaOptional => '[BN_BD] মিডিয়া (ঐচ্ছিক)';
 
   @override
-  String get messageSavedSuccessfully => '[BN_BD] বার্তা সফলভাবে সংরক্ষণ করা হয়েছে';
+  String get messageSavedSuccessfully =>
+      '[BN_BD] বার্তা সফলভাবে সংরক্ষণ করা হয়েছে';
 
   @override
   String get scheduledFor => 'নির্ধারিত';
@@ -3021,7 +3227,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get playtimeEnterGameName => '[BN_BD] গেমের নাম লিখুন';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[BN_BD] [BN_BD] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[BN_BD] [BN_BD] Please login to access family features';
 
   @override
   String get myInvites => '[BN_BD] [BN_BD] My Invites';
@@ -3030,13 +3237,15 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get createGame => '[BN_BD] [BN_BD] Create Game';
 
   @override
-  String get playtimeNoSessions => '[BN_BD] [BN_BD] No playtime sessions found.';
+  String get playtimeNoSessions =>
+      '[BN_BD] [BN_BD] No playtime sessions found.';
 
   @override
   String get adminScreenTBD => '[BN_BD] Admin screen coming soon';
 
   @override
-  String get playtimeParentDashboardTitle => '[BN_BD] [BN_BD] Playtime Dashboard';
+  String get playtimeParentDashboardTitle =>
+      '[BN_BD] [BN_BD] Playtime Dashboard';
 
   @override
   String get close => '[BN_BD] [BN_BD] Close';
@@ -3064,7 +3273,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get meetingReadyMessage => '[BN_BD] [BN_BD] Your meeting is ready! Join now';
+  String get meetingReadyMessage =>
+      '[BN_BD] [BN_BD] Your meeting is ready! Join now';
 
   @override
   String get pendingInvites => '[BN_BD] [BN_BD] Pending Invites';
@@ -3075,7 +3285,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[BN_BD] প্রোফাইল দেখতে অনুগ্রহ করে লগইন করুন';
+  String get pleaseLoginToViewProfile =>
+      '[BN_BD] প্রোফাইল দেখতে অনুগ্রহ করে লগইন করুন';
 
   @override
   String get adminMetrics => '[BN_BD] Admin Metrics';
@@ -3096,40 +3307,52 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get contentLibrary => '[BN_BD] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[BN_BD] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[BN_BD] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[BN_BD] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[BN_BD] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[BN_BD] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[BN_BD] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[BN_BD] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[BN_BD] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[BN_BD] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[BN_BD] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[BN_BD] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[BN_BD] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[BN_BD] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[BN_BD] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[BN_BD] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[BN_BD] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[BN_BD] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[BN_BD] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[BN_BD] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[BN_BD] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[BN_BD] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[BN_BD] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -3146,67 +3369,88 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[BN_BD] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[BN_BD] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[BN_BD] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[BN_BD] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] The verification code is invalid.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[BN_BD] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[BN_BD] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Please enter the verification code.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Please enter the verification code.';
 
   @override
-  String get authErrorMissingVerificationId => '[BN_BD] Missing verification ID.';
+  String get authErrorMissingVerificationId =>
+      '[BN_BD] Missing verification ID.';
 
   @override
-  String get authErrorInvalidPhoneNumber => '[BN_BD] The phone number is invalid.';
+  String get authErrorInvalidPhoneNumber =>
+      '[BN_BD] The phone number is invalid.';
 
   @override
-  String get authErrorMissingPhoneNumber => '[BN_BD] Please enter a phone number.';
+  String get authErrorMissingPhoneNumber =>
+      '[BN_BD] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[BN_BD] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[BN_BD] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[BN_BD] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[BN_BD] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[BN_BD] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[BN_BD] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Multi-factor information not found.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Missing multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Invalid multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] This second factor is already in use.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[BN_BD] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[BN_BD] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Email change requires verification.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] This phone number is already in use.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[BN_BD] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[BN_BD] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[BN_BD] The ID token is invalid.';
@@ -3215,85 +3459,109 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get authErrorIdTokenExpired => '[BN_BD] The ID token has expired.';
 
   @override
-  String get authErrorIdTokenRevoked => '[BN_BD] The ID token has been revoked.';
+  String get authErrorIdTokenRevoked =>
+      '[BN_BD] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[BN_BD] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[BN_BD] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[BN_BD] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[BN_BD] An invalid argument was provided.';
 
   @override
-  String get authErrorInvalidClaims => '[BN_BD] Invalid custom claims provided.';
+  String get authErrorInvalidClaims =>
+      '[BN_BD] Invalid custom claims provided.';
 
   @override
-  String get authErrorInvalidContinueUri => '[BN_BD] The continue URL is invalid.';
+  String get authErrorInvalidContinueUri =>
+      '[BN_BD] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[BN_BD] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[BN_BD] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[BN_BD] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[BN_BD] The disabled field value is invalid.';
 
   @override
-  String get authErrorInvalidDisplayName => '[BN_BD] The display name is invalid.';
+  String get authErrorInvalidDisplayName =>
+      '[BN_BD] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[BN_BD] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[BN_BD] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[BN_BD] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[BN_BD] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[BN_BD] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[BN_BD] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[BN_BD] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[BN_BD] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[BN_BD] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[BN_BD] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[BN_BD] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[BN_BD] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[BN_BD] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[BN_BD] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[BN_BD] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[BN_BD] The provider data is invalid.';
 
   @override
-  String get authErrorInvalidProviderId => '[BN_BD] The provider ID is invalid.';
+  String get authErrorInvalidProviderId =>
+      '[BN_BD] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[BN_BD] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[BN_BD] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[BN_BD] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[BN_BD] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[BN_BD] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[BN_BD] Missing continue URL.';
@@ -3308,7 +3576,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get authErrorMissingUid => '[BN_BD] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Missing OAuth client secret.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[BN_BD] Firebase project not found.';
@@ -3317,19 +3586,23 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get authErrorReservedClaims => '[BN_BD] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[BN_BD] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[BN_BD] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[BN_BD] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[BN_BD] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[BN_BD] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[BN_BD] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[BN_BD] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -3378,7 +3651,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Virtual session created! Inviting friends... (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Virtual session created! Inviting friends... (Bengali (Bangladesh))';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -3404,7 +3678,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get signIn => '[BN_BD] Sign In (Bengali (Bangladesh))';
 
   @override
-  String get homeFeedScreen => '[BN_BD] Home Feed Screen (Bengali (Bangladesh))';
+  String get homeFeedScreen =>
+      '[BN_BD] Home Feed Screen (Bengali (Bangladesh))';
 
   @override
   String get selectLocation => '[BN_BD] Select Location (Bengali (Bangladesh))';
@@ -3419,13 +3694,15 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[BN_BD] Subscription unavailable (Bengali (Bangladesh))';
+  String get subscriptionUnavailable =>
+      '[BN_BD] Subscription unavailable (Bengali (Bangladesh))';
 
   @override
   String get confirmBooking => '[BN_BD] Confirm Booking (Bengali (Bangladesh))';
 
   @override
-  String get failedToUpdatePermissionE => '[BN_BD] Failed to update permission: \$e (Bengali (Bangladesh))';
+  String get failedToUpdatePermissionE =>
+      '[BN_BD] Failed to update permission: \$e (Bengali (Bangladesh))';
 
   @override
   String get reject => '[BN_BD] Reject (Bengali (Bangladesh))';
@@ -3439,7 +3716,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get noProviders => '[BN_BD] No providers';
 
   @override
-  String get checkingSubscription => '[BN_BD] Checking subscription... (Bengali (Bangladesh))';
+  String get checkingSubscription =>
+      '[BN_BD] Checking subscription... (Bengali (Bangladesh))';
 
   @override
   String errorPickingImageE(Object e) {
@@ -3447,13 +3725,15 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get noContentAvailableYet => '[BN_BD] No content available yet (Bengali (Bangladesh))';
+  String get noContentAvailableYet =>
+      '[BN_BD] No content available yet (Bengali (Bangladesh))';
 
   @override
   String get resolve => '[BN_BD] Resolve (Bengali (Bangladesh))';
 
   @override
-  String get errorLoadingSurveysError => '[BN_BD] Error loading surveys: \$error (Bengali (Bangladesh))';
+  String get errorLoadingSurveysError =>
+      '[BN_BD] Error loading surveys: \$error (Bengali (Bangladesh))';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -3461,7 +3741,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get getHelpWithYourAccount => '[BN_BD] Get help with your account (Bengali (Bangladesh))';
+  String get getHelpWithYourAccount =>
+      '[BN_BD] Get help with your account (Bengali (Bangladesh))';
 
   @override
   String get pay => '[BN_BD] Pay (Bengali (Bangladesh))';
@@ -3476,10 +3757,12 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[BN_BD] Changes saved successfully! (Bengali (Bangladesh))';
+  String get changesSavedSuccessfully =>
+      '[BN_BD] Changes saved successfully! (Bengali (Bangladesh))';
 
   @override
-  String get createNewInvoice => '[BN_BD] Create New Invoice (Bengali (Bangladesh))';
+  String get createNewInvoice =>
+      '[BN_BD] Create New Invoice (Bengali (Bangladesh))';
 
   @override
   String get profileNotFound => 'الملف الشخصي غير موجود';
@@ -3496,7 +3779,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get profileSaved => '[BN_BD] Profile saved! (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -3510,7 +3794,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get profile1 => 'الملف الشخصي';
 
   @override
-  String get businessOnboarding => '[BN_BD] Business Onboarding (Bengali (Bangladesh))';
+  String get businessOnboarding =>
+      '[BN_BD] Business Onboarding (Bengali (Bangladesh))';
 
   @override
   String get addNewClient => '[BN_BD] Add New Client (Bengali (Bangladesh))';
@@ -3527,7 +3812,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] You will receive a confirmation email shortly. (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] You will receive a confirmation email shortly. (Bengali (Bangladesh))';
 
   @override
   String get addQuestion => '[BN_BD] Add Question (Bengali (Bangladesh))';
@@ -3544,7 +3830,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get join => '[BN_BD] Join (Bengali (Bangladesh))';
 
   @override
-  String get businessSubscription => '[BN_BD] Business Subscription (Bengali (Bangladesh))';
+  String get businessSubscription =>
+      '[BN_BD] Business Subscription (Bengali (Bangladesh))';
 
   @override
   String get myInvites1 => 'دعواتي';
@@ -3553,34 +3840,42 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get providers => '[BN_BD] Providers';
 
   @override
-  String get surveyManagement => '[BN_BD] Survey Management (Bengali (Bangladesh))';
+  String get surveyManagement =>
+      '[BN_BD] Survey Management (Bengali (Bangladesh))';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[BN_BD] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[BN_BD] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[BN_BD] No rooms found. Add your first room! (Bengali (Bangladesh))';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[BN_BD] No rooms found. Add your first room! (Bengali (Bangladesh))';
 
   @override
-  String get readOurPrivacyPolicy => '[BN_BD] Read our privacy policy (Bengali (Bangladesh))';
+  String get readOurPrivacyPolicy =>
+      '[BN_BD] Read our privacy policy (Bengali (Bangladesh))';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[BN_BD] Could not open privacy policy (Bengali (Bangladesh))';
+  String get couldNotOpenPrivacyPolicy =>
+      '[BN_BD] Could not open privacy policy (Bengali (Bangladesh))';
 
   @override
   String get refresh1 => '[BN_BD] Refresh (Bengali (Bangladesh))';
 
   @override
-  String get roomUpdatedSuccessfully => '[BN_BD] Room updated successfully! (Bengali (Bangladesh))';
+  String get roomUpdatedSuccessfully =>
+      '[BN_BD] Room updated successfully! (Bengali (Bangladesh))';
 
   @override
   String get contentDetail => '[BN_BD] Content Detail (Bengali (Bangladesh))';
 
   @override
-  String get cancelSubscription => '[BN_BD] Cancel Subscription (Bengali (Bangladesh))';
+  String get cancelSubscription =>
+      '[BN_BD] Cancel Subscription (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Successfully registered as Ambassador! (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Successfully registered as Ambassador! (Bengali (Bangladesh))';
 
   @override
   String get save1 => '[BN_BD] Save (Bengali (Bangladesh))';
@@ -3589,7 +3884,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get copy1 => '[BN_BD] Copy (Bengali (Bangladesh))';
 
   @override
-  String get failedToSendInvitationE => '[BN_BD] Failed to send invitation: \$e (Bengali (Bangladesh))';
+  String get failedToSendInvitationE =>
+      '[BN_BD] Failed to send invitation: \$e (Bengali (Bangladesh))';
 
   @override
   String get surveyScore => '[BN_BD] Survey Score (Bengali (Bangladesh))';
@@ -3600,22 +3896,27 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get noAppointmentsFound => '[BN_BD] No appointments found. (Bengali (Bangladesh))';
+  String get noAppointmentsFound =>
+      '[BN_BD] No appointments found. (Bengali (Bangladesh))';
 
   @override
   String get responseDetail => '[BN_BD] Response Detail (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[BN_BD] Failed to start Pro subscription: \$e (Bengali (Bangladesh))';
+  String get failedToStartProSubscriptionE =>
+      '[BN_BD] Failed to start Pro subscription: \$e (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Business Dashboard Entry Screen - Coming Soon (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Business Dashboard Entry Screen - Coming Soon (Bengali (Bangladesh))';
 
   @override
   String get contentFilter => '[BN_BD] Content Filter (Bengali (Bangladesh))';
@@ -3637,7 +3938,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Business CRM Entry Screen - Coming Soon (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Business CRM Entry Screen - Coming Soon (Bengali (Bangladesh))';
 
   @override
   String get adminDashboard => '[BN_BD] Admin Dashboard';
@@ -3648,28 +3950,34 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get errorLoadingDashboardError => '[BN_BD] Error loading dashboard: \$error (Bengali (Bangladesh))';
+  String get errorLoadingDashboardError =>
+      '[BN_BD] Error loading dashboard: \$error (Bengali (Bangladesh))';
 
   @override
-  String get gameDeletedSuccessfully => '[BN_BD] Game deleted successfully! (Bengali (Bangladesh))';
+  String get gameDeletedSuccessfully =>
+      '[BN_BD] Game deleted successfully! (Bengali (Bangladesh))';
 
   @override
-  String get viewResponsesComingSoon => '[BN_BD] View responses - Coming soon! (Bengali (Bangladesh))';
+  String get viewResponsesComingSoon =>
+      '[BN_BD] View responses - Coming soon! (Bengali (Bangladesh))';
 
   @override
   String get deleteProvider => '[BN_BD] Delete Provider';
 
   @override
-  String get errorLoadingRewards => '[BN_BD] Error loading rewards (Bengali (Bangladesh))';
+  String get errorLoadingRewards =>
+      '[BN_BD] Error loading rewards (Bengali (Bangladesh))';
 
   @override
-  String get failedToDeleteAccountE => '[BN_BD] Failed to delete account: \$e (Bengali (Bangladesh))';
+  String get failedToDeleteAccountE =>
+      '[BN_BD] Failed to delete account: \$e (Bengali (Bangladesh))';
 
   @override
   String get invited1 => '[BN_BD] Invited (Bengali (Bangladesh))';
 
   @override
-  String get noBranchesAvailable => '[BN_BD] No branches available (Bengali (Bangladesh))';
+  String get noBranchesAvailable =>
+      '[BN_BD] No branches available (Bengali (Bangladesh))';
 
   @override
   String get errorError => '[BN_BD] Error: \$error (Bengali (Bangladesh))';
@@ -3678,7 +3986,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get noEvents => '[BN_BD] No events (Bengali (Bangladesh))';
 
   @override
-  String get gameCreatedSuccessfully => '[BN_BD] Game created successfully! (Bengali (Bangladesh))';
+  String get gameCreatedSuccessfully =>
+      '[BN_BD] Game created successfully! (Bengali (Bangladesh))';
 
   @override
   String get add1 => '[BN_BD] Add (Bengali (Bangladesh))';
@@ -3698,10 +4007,12 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get clients => '[BN_BD] Clients (Bengali (Bangladesh))';
 
   @override
-  String get noAmbassadorDataAvailable => '[BN_BD] No ambassador data available (Bengali (Bangladesh))';
+  String get noAmbassadorDataAvailable =>
+      '[BN_BD] No ambassador data available (Bengali (Bangladesh))';
 
   @override
-  String get backgroundDeletedSuccessfully => '[BN_BD] Background deleted successfully! (Bengali (Bangladesh))';
+  String get backgroundDeletedSuccessfully =>
+      '[BN_BD] Background deleted successfully! (Bengali (Bangladesh))';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -3709,7 +4020,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[BN_BD] No analytics data available yet. (Bengali (Bangladesh))';
+  String get noAnalyticsDataAvailableYet =>
+      '[BN_BD] No analytics data available yet. (Bengali (Bangladesh))';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -3717,7 +4029,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Business Phone Booking Entry Screen - Coming Soon (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Business Phone Booking Entry Screen - Coming Soon (Bengali (Bangladesh))';
 
   @override
   String get verification => '[BN_BD] Verification (Bengali (Bangladesh))';
@@ -3729,7 +4042,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get dashboard1 => '[BN_BD] Dashboard (Bengali (Bangladesh))';
 
   @override
-  String get manageChildAccounts => '[BN_BD] Manage Child Accounts (Bengali (Bangladesh))';
+  String get manageChildAccounts =>
+      '[BN_BD] Manage Child Accounts (Bengali (Bangladesh))';
 
   @override
   String get grantConsent => '[BN_BD] Grant Consent (Bengali (Bangladesh))';
@@ -3749,7 +4063,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get emailNotifications => 'إشعارات البريد الإلكتروني';
 
   @override
-  String get ambassadorDashboard => '[BN_BD] Ambassador Dashboard (Bengali (Bangladesh))';
+  String get ambassadorDashboard =>
+      '[BN_BD] Ambassador Dashboard (Bengali (Bangladesh))';
 
   @override
   String get phoneBooking => '[BN_BD] Phone Booking (Bengali (Bangladesh))';
@@ -3761,25 +4076,31 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get error => 'ত্রুটি';
 
   @override
-  String get businessProfile => '[BN_BD] Business Profile (Bengali (Bangladesh))';
+  String get businessProfile =>
+      '[BN_BD] Business Profile (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Business Booking Entry Screen - Coming Soon (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Business Booking Entry Screen - Coming Soon (Bengali (Bangladesh))';
 
   @override
-  String get createNewSurvey => '[BN_BD] Create New Survey (Bengali (Bangladesh))';
+  String get createNewSurvey =>
+      '[BN_BD] Create New Survey (Bengali (Bangladesh))';
 
   @override
-  String get backgroundRejected => '[BN_BD] Background rejected (Bengali (Bangladesh))';
+  String get backgroundRejected =>
+      '[BN_BD] Background rejected (Bengali (Bangladesh))';
 
   @override
-  String get noMediaSelected => '[BN_BD] No media selected (Bengali (Bangladesh))';
+  String get noMediaSelected =>
+      '[BN_BD] No media selected (Bengali (Bangladesh))';
 
   @override
   String get syncToGoogle => '[BN_BD] Sync to Google (Bengali (Bangladesh))';
 
   @override
-  String get virtualPlaytime => '[BN_BD] Virtual Playtime (Bengali (Bangladesh))';
+  String get virtualPlaytime =>
+      '[BN_BD] Virtual Playtime (Bengali (Bangladesh))';
 
   @override
   String get colorContrastTesting => '[BN_BD] Color Contrast Testing';
@@ -3788,7 +4109,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get loginFailedE => '[BN_BD] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[BN_BD] Invitation sent successfully! (Bengali (Bangladesh))';
+  String get invitationSentSuccessfully =>
+      '[BN_BD] Invitation sent successfully! (Bengali (Bangladesh))';
 
   @override
   String get registering => '[BN_BD] Registering... (Bengali (Bangladesh))';
@@ -3802,13 +4124,16 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get home1 => '[BN_BD] Home (Bengali (Bangladesh))';
 
   @override
-  String get errorSavingSettingsE => '[BN_BD] Error saving settings: \$e (Bengali (Bangladesh))';
+  String get errorSavingSettingsE =>
+      '[BN_BD] Error saving settings: \$e (Bengali (Bangladesh))';
 
   @override
-  String get appVersionAndInformation => '[BN_BD] App version and information (Bengali (Bangladesh))';
+  String get appVersionAndInformation =>
+      '[BN_BD] App version and information (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Business Subscription Entry Screen - Coming Soon (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Business Subscription Entry Screen - Coming Soon (Bengali (Bangladesh))';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -3816,7 +4141,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Your payment has been processed successfully. (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Your payment has been processed successfully. (Bengali (Bangladesh))';
 
   @override
   String get errorE => '[BN_BD] Error: \$e (Bengali (Bangladesh))';
@@ -3825,7 +4151,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get viewAll1 => '[BN_BD] View All (Bengali (Bangladesh))';
 
   @override
-  String get editSurveyComingSoon => '[BN_BD] Edit survey - Coming soon! (Bengali (Bangladesh))';
+  String get editSurveyComingSoon =>
+      '[BN_BD] Edit survey - Coming soon! (Bengali (Bangladesh))';
 
   @override
   String get enterOtp => '[BN_BD] Enter OTP (Bengali (Bangladesh))';
@@ -3834,7 +4161,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get payment => '[BN_BD] Payment (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Automatically confirm new booking requests (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Automatically confirm new booking requests (Bengali (Bangladesh))';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -3847,7 +4175,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[BN_BD] Please sign in to upload a background (Bengali (Bangladesh))';
+  String get pleaseSignInToUploadABackground =>
+      '[BN_BD] Please sign in to upload a background (Bengali (Bangladesh))';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -3855,28 +4184,33 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get staffAvailability => '[BN_BD] Staff Availability (Bengali (Bangladesh))';
+  String get staffAvailability =>
+      '[BN_BD] Staff Availability (Bengali (Bangladesh))';
 
   @override
   String get livePlaytime => '[BN_BD] Live Playtime (Bengali (Bangladesh))';
 
   @override
-  String get autoconfirmBookings => '[BN_BD] Auto-Confirm Bookings (Bengali (Bangladesh))';
+  String get autoconfirmBookings =>
+      '[BN_BD] Auto-Confirm Bookings (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Redirecting to Stripe checkout for Pro plan... (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Redirecting to Stripe checkout for Pro plan... (Bengali (Bangladesh))';
 
   @override
   String get exportAsCsv => '[BN_BD] Export as CSV (Bengali (Bangladesh))';
 
   @override
-  String get deleteFunctionalityComingSoon => '[BN_BD] Delete functionality coming soon! (Bengali (Bangladesh))';
+  String get deleteFunctionalityComingSoon =>
+      '[BN_BD] Delete functionality coming soon! (Bengali (Bangladesh))';
 
   @override
   String get editClient => '[BN_BD] Edit Client (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Are you sure you want to delete this message? (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Are you sure you want to delete this message? (Bengali (Bangladesh))';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -3887,31 +4221,39 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get notAuthenticated => '[BN_BD] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[BN_BD] Privacy request sent to your parents! (Bengali (Bangladesh))';
+  String get privacyRequestSentToYourParents =>
+      '[BN_BD] Privacy request sent to your parents! (Bengali (Bangladesh))';
 
   @override
-  String get clientDeletedSuccessfully => '[BN_BD] Client deleted successfully! (Bengali (Bangladesh))';
+  String get clientDeletedSuccessfully =>
+      '[BN_BD] Client deleted successfully! (Bengali (Bangladesh))';
 
   @override
-  String get failedToCancelSubscription => '[BN_BD] Failed to cancel subscription (Bengali (Bangladesh))';
+  String get failedToCancelSubscription =>
+      '[BN_BD] Failed to cancel subscription (Bengali (Bangladesh))';
 
   @override
   String get allLanguages => '[BN_BD] All Languages (Bengali (Bangladesh))';
 
   @override
-  String get slotDeletedSuccessfully => '[BN_BD] Slot deleted successfully (Bengali (Bangladesh))';
+  String get slotDeletedSuccessfully =>
+      '[BN_BD] Slot deleted successfully (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Parents must approve before children can join (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Parents must approve before children can join (Bengali (Bangladesh))';
 
   @override
-  String get subscribeToPro1499mo => '[BN_BD] Subscribe to Pro (€14.99/mo) (Bengali (Bangladesh))';
+  String get subscribeToPro1499mo =>
+      '[BN_BD] Subscribe to Pro (€14.99/mo) (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Business Availability Entry Screen - Coming Soon (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Business Availability Entry Screen - Coming Soon (Bengali (Bangladesh))';
 
   @override
   String appointmentsListlength(Object count) {
@@ -3925,10 +4267,12 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get submitBooking => '[BN_BD] Submit Booking (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Are you sure you want to cancel this appointment? (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Are you sure you want to cancel this appointment? (Bengali (Bangladesh))';
 
   @override
-  String get noUpcomingBookings => '[BN_BD] No upcoming bookings (Bengali (Bangladesh))';
+  String get noUpcomingBookings =>
+      '[BN_BD] No upcoming bookings (Bengali (Bangladesh))';
 
   @override
   String get goBack => '[BN_BD] Go Back (Bengali (Bangladesh))';
@@ -3943,7 +4287,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get goToDashboard => '[BN_BD] Go to Dashboard (Bengali (Bangladesh))';
 
   @override
-  String get ambassadorQuotaDashboard => '[BN_BD] Ambassador Quota Dashboard (Bengali (Bangladesh))';
+  String get ambassadorQuotaDashboard =>
+      '[BN_BD] Ambassador Quota Dashboard (Bengali (Bangladesh))';
 
   @override
   String get adminSettings => '[BN_BD] Admin Settings';
@@ -3966,61 +4311,74 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get bookingRequest => '[BN_BD] Booking Request (Bengali (Bangladesh))';
 
   @override
-  String get advancedReporting => '[BN_BD] • Advanced reporting (Bengali (Bangladesh))';
+  String get advancedReporting =>
+      '[BN_BD] • Advanced reporting (Bengali (Bangladesh))';
 
   @override
   String get rooms => '[BN_BD] Rooms (Bengali (Bangladesh))';
 
   @override
-  String get copiedToClipboard => '[BN_BD] Copied to clipboard (Bengali (Bangladesh))';
+  String get copiedToClipboard =>
+      '[BN_BD] Copied to clipboard (Bengali (Bangladesh))';
 
   @override
-  String get bookingConfirmed => '[BN_BD] Booking Confirmed (Bengali (Bangladesh))';
+  String get bookingConfirmed =>
+      '[BN_BD] Booking Confirmed (Bengali (Bangladesh))';
 
   @override
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[BN_BD] Client added successfully! (Bengali (Bangladesh))';
+  String get clientAddedSuccessfully =>
+      '[BN_BD] Client added successfully! (Bengali (Bangladesh))';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
 
   @override
-  String get backgroundApproved => '[BN_BD] Background approved! (Bengali (Bangladesh))';
+  String get backgroundApproved =>
+      '[BN_BD] Background approved! (Bengali (Bangladesh))';
 
   @override
   String get familySupport => '[BN_BD] Family Support (Bengali (Bangladesh))';
 
   @override
-  String get deletingAccount => '[BN_BD] Deleting account... (Bengali (Bangladesh))';
+  String get deletingAccount =>
+      '[BN_BD] Deleting account... (Bengali (Bangladesh))';
 
   @override
-  String get bookAppointment => '[BN_BD] Book Appointment (Bengali (Bangladesh))';
+  String get bookAppointment =>
+      '[BN_BD] Book Appointment (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[BN_BD] Delete (Bengali (Bangladesh))';
 
   @override
-  String get sendBookingInvite => '[BN_BD] Send Booking Invite (Bengali (Bangladesh))';
+  String get sendBookingInvite =>
+      '[BN_BD] Send Booking Invite (Bengali (Bangladesh))';
 
   @override
   String get text => '[BN_BD] Text (Bengali (Bangladesh))';
 
   @override
-  String get manageSubscription => '[BN_BD] Manage Subscription (Bengali (Bangladesh))';
+  String get manageSubscription =>
+      '[BN_BD] Manage Subscription (Bengali (Bangladesh))';
 
   @override
-  String get requiresInstallFallback => '[BN_BD] Requires Install Fallback (Bengali (Bangladesh))';
+  String get requiresInstallFallback =>
+      '[BN_BD] Requires Install Fallback (Bengali (Bangladesh))';
 
   @override
-  String get paymentConfirmation => '[BN_BD] Payment Confirmation (Bengali (Bangladesh))';
+  String get paymentConfirmation =>
+      '[BN_BD] Payment Confirmation (Bengali (Bangladesh))';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[BN_BD] Promo applied! Your next bill is free. (Bengali (Bangladesh))';
+  String get promoAppliedYourNextBillIsFree =>
+      '[BN_BD] Promo applied! Your next bill is free. (Bengali (Bangladesh))';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -4028,19 +4386,24 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get errorLoadingSlots => '[BN_BD] Error loading slots (Bengali (Bangladesh))';
+  String get errorLoadingSlots =>
+      '[BN_BD] Error loading slots (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Allow other users to find and join this game (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Allow other users to find and join this game (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Business Onboarding Screen - Coming Soon (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Business Onboarding Screen - Coming Soon (Bengali (Bangladesh))';
 
   @override
-  String get activateBusinessProfile => '[BN_BD] Activate Business Profile (Bengali (Bangladesh))';
+  String get activateBusinessProfile =>
+      '[BN_BD] Activate Business Profile (Bengali (Bangladesh))';
 
   @override
-  String get contentNotFound => '[BN_BD] Content not found (Bengali (Bangladesh))';
+  String get contentNotFound =>
+      '[BN_BD] Content not found (Bengali (Bangladesh))';
 
   @override
   String pspecialtynpcontactinfo(Object contactInfo, Object specialty) {
@@ -4059,7 +4422,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get becomeAnAmbassador => '[BN_BD] Become an Ambassador (Bengali (Bangladesh))';
+  String get becomeAnAmbassador =>
+      '[BN_BD] Become an Ambassador (Bengali (Bangladesh))';
 
   @override
   String get subscribeNow => '[BN_BD] Subscribe Now (Bengali (Bangladesh))';
@@ -4070,7 +4434,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get shareViaWhatsapp => '[BN_BD] Share via WhatsApp (Bengali (Bangladesh))';
+  String get shareViaWhatsapp =>
+      '[BN_BD] Share via WhatsApp (Bengali (Bangladesh))';
 
   @override
   String get users1 => '[BN_BD] Users (Bengali (Bangladesh))';
@@ -4079,19 +4444,23 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get shareLink => '[BN_BD] Share Link (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Are you sure you want to delete this provider?';
 
   @override
-  String get deleteAppointment => '[BN_BD] Delete Appointment (Bengali (Bangladesh))';
+  String get deleteAppointment =>
+      '[BN_BD] Delete Appointment (Bengali (Bangladesh))';
 
   @override
-  String get toggleAvailability => '[BN_BD] Toggle Availability (Bengali (Bangladesh))';
+  String get toggleAvailability =>
+      '[BN_BD] Toggle Availability (Bengali (Bangladesh))';
 
   @override
   String get changePlan => '[BN_BD] Change Plan (Bengali (Bangladesh))';
 
   @override
-  String get errorLoadingStaff => '[BN_BD] Error loading staff (Bengali (Bangladesh))';
+  String get errorLoadingStaff =>
+      '[BN_BD] Error loading staff (Bengali (Bangladesh))';
 
   @override
   String errorLoadingConfigurationE(Object e) {
@@ -4099,13 +4468,16 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get updateYourBusinessInformation => '[BN_BD] Update your business information (Bengali (Bangladesh))';
+  String get updateYourBusinessInformation =>
+      '[BN_BD] Update your business information (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] No providers found. Add your first provider!';
 
   @override
-  String get parentDashboard => '[BN_BD] Parent Dashboard (Bengali (Bangladesh))';
+  String get parentDashboard =>
+      '[BN_BD] Parent Dashboard (Bengali (Bangladesh))';
 
   @override
   String get menu => '[BN_BD] Menu (Bengali (Bangladesh))';
@@ -4125,10 +4497,12 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Studio booking is only available on web (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Studio booking is only available on web (Bengali (Bangladesh))';
 
   @override
-  String get errorLoadingBranchesE => '[BN_BD] Error loading branches: \$e (Bengali (Bangladesh))';
+  String get errorLoadingBranchesE =>
+      '[BN_BD] Error loading branches: \$e (Bengali (Bangladesh))';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -4144,13 +4518,15 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get none => '[BN_BD] None (Bengali (Bangladesh))';
 
   @override
-  String get failedToUpdateConsentE => '[BN_BD] Failed to update consent: \$e (Bengali (Bangladesh))';
+  String get failedToUpdateConsentE =>
+      '[BN_BD] Failed to update consent: \$e (Bengali (Bangladesh))';
 
   @override
   String get welcome1 => '[BN_BD] Welcome (Bengali (Bangladesh))';
 
   @override
-  String get failedToCreateSessionE => '[BN_BD] Failed to create session: \$e (Bengali (Bangladesh))';
+  String get failedToCreateSessionE =>
+      '[BN_BD] Failed to create session: \$e (Bengali (Bangladesh))';
 
   @override
   String get inviteContact => '[BN_BD] Invite Contact (Bengali (Bangladesh))';
@@ -4159,13 +4535,15 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get surveyEditor => '[BN_BD] Survey Editor (Bengali (Bangladesh))';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[BN_BD] Failed to start Basic subscription: \$e (Bengali (Bangladesh))';
+  String get failedToStartBasicSubscriptionE =>
+      '[BN_BD] Failed to start Basic subscription: \$e (Bengali (Bangladesh))';
 
   @override
   String get mySchedule => '[BN_BD] My Schedule (Bengali (Bangladesh))';
 
   @override
-  String get studioDashboard => '[BN_BD] Studio Dashboard (Bengali (Bangladesh))';
+  String get studioDashboard =>
+      '[BN_BD] Studio Dashboard (Bengali (Bangladesh))';
 
   @override
   String get editProfile => 'تحرير الملف الشخصي';
@@ -4179,19 +4557,23 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[BN_BD] Settings saved successfully! (Bengali (Bangladesh))';
+  String get settingsSavedSuccessfully =>
+      '[BN_BD] Settings saved successfully! (Bengali (Bangladesh))';
 
   @override
-  String get linkCopiedToClipboard => '[BN_BD] Link copied to clipboard! (Bengali (Bangladesh))';
+  String get linkCopiedToClipboard =>
+      '[BN_BD] Link copied to clipboard! (Bengali (Bangladesh))';
 
   @override
   String get accept1 => '[BN_BD] Accept (Bengali (Bangladesh))';
 
   @override
-  String get noAvailableSlots => '[BN_BD] No available slots (Bengali (Bangladesh))';
+  String get noAvailableSlots =>
+      '[BN_BD] No available slots (Bengali (Bangladesh))';
 
   @override
-  String get makeGamePublic => '[BN_BD] Make Game Public (Bengali (Bangladesh))';
+  String get makeGamePublic =>
+      '[BN_BD] Make Game Public (Bengali (Bangladesh))';
 
   @override
   String REDACTED_TOKEN(Object category) {
@@ -4199,16 +4581,20 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[BN_BD] Room deleted successfully! (Bengali (Bangladesh))';
+  String get roomDeletedSuccessfully =>
+      '[BN_BD] Room deleted successfully! (Bengali (Bangladesh))';
 
   @override
-  String get businessCalendar => '[BN_BD] Business Calendar (Bengali (Bangladesh))';
+  String get businessCalendar =>
+      '[BN_BD] Business Calendar (Bengali (Bangladesh))';
 
   @override
-  String get addAvailability => '[BN_BD] Add Availability (Bengali (Bangladesh))';
+  String get addAvailability =>
+      '[BN_BD] Add Availability (Bengali (Bangladesh))';
 
   @override
-  String get ambassadorOnboarding => '[BN_BD] Ambassador Onboarding (Bengali (Bangladesh))';
+  String get ambassadorOnboarding =>
+      '[BN_BD] Ambassador Onboarding (Bengali (Bangladesh))';
 
   @override
   String phoneProfileasyncphone(Object phone) {
@@ -4219,7 +4605,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get addNewRoom => '[BN_BD] Add New Room (Bengali (Bangladesh))';
 
   @override
-  String get requireParentApproval => '[BN_BD] Require Parent Approval (Bengali (Bangladesh))';
+  String get requireParentApproval =>
+      '[BN_BD] Require Parent Approval (Bengali (Bangladesh))';
 
   @override
   String get closed => '[BN_BD] Closed (Bengali (Bangladesh))';
@@ -4228,7 +4615,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get exportAsPdf => '[BN_BD] Export as PDF (Bengali (Bangladesh))';
 
   @override
-  String get enableVibration => '[BN_BD] Enable Vibration (Bengali (Bangladesh))';
+  String get enableVibration =>
+      '[BN_BD] Enable Vibration (Bengali (Bangladesh))';
 
   @override
   String toAvailendformatcontext(Object endTime) {
@@ -4241,7 +4629,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get requestPrivateSession => '[BN_BD] requestPrivateSession (TRANSLATE)';
+  String get requestPrivateSession =>
+      '[BN_BD] requestPrivateSession (TRANSLATE)';
 
   @override
   String get country => '[BN_BD] Country (Bengali (Bangladesh))';
@@ -4264,7 +4653,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get cancel1 => '[BN_BD] Cancel (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Subscription activated successfully! (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Subscription activated successfully! (Bengali (Bangladesh))';
 
   @override
   String activityLogaction(Object action) {
@@ -4275,7 +4665,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get broadcast => '[BN_BD] Broadcast (Bengali (Bangladesh))';
 
   @override
-  String get noEventsScheduledThisWeek => '[BN_BD] No events scheduled this week (Bengali (Bangladesh))';
+  String get noEventsScheduledThisWeek =>
+      '[BN_BD] No events scheduled this week (Bengali (Bangladesh))';
 
   @override
   String get googleCalendar => '[BN_BD] Google Calendar (Bengali (Bangladesh))';
@@ -4287,7 +4678,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get childDashboard => '[BN_BD] Child Dashboard (Bengali (Bangladesh))';
 
   @override
-  String get failedToUploadBackgroundE => '[BN_BD] Failed to upload background: \$e (Bengali (Bangladesh))';
+  String get failedToUploadBackgroundE =>
+      '[BN_BD] Failed to upload background: \$e (Bengali (Bangladesh))';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -4306,7 +4698,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get noAppointments => '[BN_BD] No appointments (Bengali (Bangladesh))';
 
   @override
-  String get unlimitedBookingsPerWeek => '[BN_BD] • Unlimited bookings per week (Bengali (Bangladesh))';
+  String get unlimitedBookingsPerWeek =>
+      '[BN_BD] • Unlimited bookings per week (Bengali (Bangladesh))';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -4314,19 +4707,23 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get scheduledAtScheduledat => '[BN_BD] Scheduled at: \$scheduledAt (Bengali (Bangladesh))';
+  String get scheduledAtScheduledat =>
+      '[BN_BD] Scheduled at: \$scheduledAt (Bengali (Bangladesh))';
 
   @override
   String get selectStaff => '[BN_BD] Select Staff (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Subscription cancelled successfully (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Subscription cancelled successfully (Bengali (Bangladesh))';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
-  String get cancelAppointment => '[BN_BD] Cancel Appointment (Bengali (Bangladesh))';
+  String get cancelAppointment =>
+      '[BN_BD] Cancel Appointment (Bengali (Bangladesh))';
 
   @override
   String permissionsFamilylinkchildid(Object childId) {
@@ -4337,7 +4734,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get businessSignup => '[BN_BD] Business Signup (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Business Completion Screen - Coming Soon (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Business Completion Screen - Coming Soon (Bengali (Bangladesh))';
 
   @override
   String get createGame1 => '[BN_BD] Create Game (Bengali (Bangladesh))';
@@ -4348,25 +4746,30 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[BN_BD] Please enter a promo code (Bengali (Bangladesh))';
+  String get pleaseEnterAPromoCode =>
+      '[BN_BD] Please enter a promo code (Bengali (Bangladesh))';
 
   @override
-  String get errorLoadingAvailabilityE => '[BN_BD] Error loading availability: \$e (Bengali (Bangladesh))';
+  String get errorLoadingAvailabilityE =>
+      '[BN_BD] Error loading availability: \$e (Bengali (Bangladesh))';
 
   @override
-  String get parentalControls => '[BN_BD] Parental Controls (Bengali (Bangladesh))';
+  String get parentalControls =>
+      '[BN_BD] Parental Controls (Bengali (Bangladesh))';
 
   @override
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[BN_BD] Child linked successfully! (Bengali (Bangladesh))';
+  String get childLinkedSuccessfully =>
+      '[BN_BD] Child linked successfully! (Bengali (Bangladesh))';
 
   @override
   String get create => '[BN_BD] Create (Bengali (Bangladesh))';
 
   @override
-  String get noExternalMeetingsFound => '[BN_BD] No external meetings found. (Bengali (Bangladesh))';
+  String get noExternalMeetingsFound =>
+      '[BN_BD] No external meetings found. (Bengali (Bangladesh))';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -4374,16 +4777,20 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[BN_BD] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[BN_BD] Please enter a valid email address';
 
   @override
-  String get schedulerScreen => '[BN_BD] Scheduler Screen (Bengali (Bangladesh))';
+  String get schedulerScreen =>
+      '[BN_BD] Scheduler Screen (Bengali (Bangladesh))';
 
   @override
-  String get clientUpdatedSuccessfully => '[BN_BD] Client updated successfully! (Bengali (Bangladesh))';
+  String get clientUpdatedSuccessfully =>
+      '[BN_BD] Client updated successfully! (Bengali (Bangladesh))';
 
   @override
-  String get surveyResponses => '[BN_BD] Survey Responses (Bengali (Bangladesh))';
+  String get surveyResponses =>
+      '[BN_BD] Survey Responses (Bengali (Bangladesh))';
 
   @override
   String get syncToOutlook => '[BN_BD] Sync to Outlook (Bengali (Bangladesh))';
@@ -4403,13 +4810,16 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get analytics => '[BN_BD] Analytics (Bengali (Bangladesh))';
 
   @override
-  String get errorLoadingEvents => '[BN_BD] Error loading events (Bengali (Bangladesh))';
+  String get errorLoadingEvents =>
+      '[BN_BD] Error loading events (Bengali (Bangladesh))';
 
   @override
-  String get errorLoadingOrganizations => '[BN_BD] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[BN_BD] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[BN_BD] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[BN_BD] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[BN_BD] Success (Bengali (Bangladesh))';
@@ -4428,10 +4838,12 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get readWrite => '[BN_BD] Read & Write (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Redirecting to Stripe checkout for Basic plan... (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Redirecting to Stripe checkout for Basic plan... (Bengali (Bangladesh))';
 
   @override
-  String get errorSavingConfigurationE => '[BN_BD] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[BN_BD] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[BN_BD] Pick Date (Bengali (Bangladesh))';
@@ -4440,7 +4852,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get chatBooking => '[BN_BD] Chat Booking (Bengali (Bangladesh))';
 
   @override
-  String get noQuestionsAdded => '[BN_BD] No questions added (Bengali (Bangladesh))';
+  String get noQuestionsAdded =>
+      '[BN_BD] No questions added (Bengali (Bangladesh))';
 
   @override
   String severityLogseverityname(Object severity) {
@@ -4467,10 +4880,12 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get businessLogin => '[BN_BD] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[BN_BD] Invoice created successfully! (Bengali (Bangladesh))';
+  String get invoiceCreatedSuccessfully =>
+      '[BN_BD] Invoice created successfully! (Bengali (Bangladesh))';
 
   @override
-  String get noTimeSeriesDataAvailable => '[BN_BD] No time series data available (Bengali (Bangladesh))';
+  String get noTimeSeriesDataAvailable =>
+      '[BN_BD] No time series data available (Bengali (Bangladesh))';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -4483,13 +4898,16 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[BN_BD] Failed to send privacy request: \$e (Bengali (Bangladesh))';
+  String get failedToSendPrivacyRequestE =>
+      '[BN_BD] Failed to send privacy request: \$e (Bengali (Bangladesh))';
 
   @override
-  String get chooseYourPlan => '[BN_BD] Choose Your Plan (Bengali (Bangladesh))';
+  String get chooseYourPlan =>
+      '[BN_BD] Choose Your Plan (Bengali (Bangladesh))';
 
   @override
-  String get playtimeManagement => '[BN_BD] Playtime Management (Bengali (Bangladesh))';
+  String get playtimeManagement =>
+      '[BN_BD] Playtime Management (Bengali (Bangladesh))';
 
   @override
   String get availability => '[BN_BD] Availability (Bengali (Bangladesh))';
@@ -4498,19 +4916,23 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get eventCreated => '[BN_BD] Event created (Bengali (Bangladesh))';
 
   @override
-  String get subscribeToBasic499mo => '[BN_BD] Subscribe to Basic (€4.99/mo) (Bengali (Bangladesh))';
+  String get subscribeToBasic499mo =>
+      '[BN_BD] Subscribe to Basic (€4.99/mo) (Bengali (Bangladesh))';
 
   @override
   String get completion => '[BN_BD] Completion (Bengali (Bangladesh))';
 
   @override
-  String get supportTicketSubmitted => '[BN_BD] Support ticket submitted (Bengali (Bangladesh))';
+  String get supportTicketSubmitted =>
+      '[BN_BD] Support ticket submitted (Bengali (Bangladesh))';
 
   @override
-  String get monetizationSettings => '[BN_BD] Monetization Settings (Bengali (Bangladesh))';
+  String get monetizationSettings =>
+      '[BN_BD] Monetization Settings (Bengali (Bangladesh))';
 
   @override
-  String get noBookingsFound => '[BN_BD] No bookings found (Bengali (Bangladesh))';
+  String get noBookingsFound =>
+      '[BN_BD] No bookings found (Bengali (Bangladesh))';
 
   @override
   String get admin => '[BN_BD] Admin';
@@ -4519,10 +4941,12 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get deleteSurvey => '[BN_BD] Delete Survey (Bengali (Bangladesh))';
 
   @override
-  String get gameApprovedSuccessfully => '[BN_BD] Game approved successfully! (Bengali (Bangladesh))';
+  String get gameApprovedSuccessfully =>
+      '[BN_BD] Game approved successfully! (Bengali (Bangladesh))';
 
   @override
-  String get errorLoadingPermissionsError => '[BN_BD] Error loading permissions: \$error (Bengali (Bangladesh))';
+  String get errorLoadingPermissionsError =>
+      '[BN_BD] Error loading permissions: \$error (Bengali (Bangladesh))';
 
   @override
   String get referrals => '[BN_BD] Referrals (Bengali (Bangladesh))';
@@ -4537,10 +4961,12 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get appointments => '[BN_BD] Appointments (Bengali (Bangladesh))';
 
   @override
-  String get onboardingScreen => '[BN_BD] Onboarding Screen (Bengali (Bangladesh))';
+  String get onboardingScreen =>
+      '[BN_BD] Onboarding Screen (Bengali (Bangladesh))';
 
   @override
-  String get welcomeToYourStudio => '[BN_BD] Welcome to your studio (Bengali (Bangladesh))';
+  String get welcomeToYourStudio =>
+      '[BN_BD] Welcome to your studio (Bengali (Bangladesh))';
 
   @override
   String get update => '[BN_BD] Update (Bengali (Bangladesh))';
@@ -4552,7 +4978,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get booking => '[BN_BD] Booking (Bengali (Bangladesh))';
 
   @override
-  String get parentalSettings => '[BN_BD] Parental Settings (Bengali (Bangladesh))';
+  String get parentalSettings =>
+      '[BN_BD] Parental Settings (Bengali (Bangladesh))';
 
   @override
   String get language => '[BN_BD] Language (Bengali (Bangladesh))';
@@ -4564,7 +4991,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get organizations => '[BN_BD] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[BN_BD] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[BN_BD] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[BN_BD] Create New Game (Bengali (Bangladesh))';
@@ -4573,16 +5001,19 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get next1 => '[BN_BD] Next (Bengali (Bangladesh))';
 
   @override
-  String get backgroundUploadedSuccessfully => '[BN_BD] Background uploaded successfully! (Bengali (Bangladesh))';
+  String get backgroundUploadedSuccessfully =>
+      '[BN_BD] Background uploaded successfully! (Bengali (Bangladesh))';
 
   @override
-  String get noAppointmentRequestsFound => '[BN_BD] No appointment requests found. (Bengali (Bangladesh))';
+  String get noAppointmentRequestsFound =>
+      '[BN_BD] No appointment requests found. (Bengali (Bangladesh))';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => '[BN_BD] Restrict mature content (Bengali (Bangladesh))';
+  String get restrictMatureContent =>
+      '[BN_BD] Restrict mature content (Bengali (Bangladesh))';
 
   @override
   String get ambassadors => '[BN_BD] Ambassadors (Bengali (Bangladesh))';
@@ -4591,7 +5022,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get smsNotifications => 'إشعارات الرسائل النصية';
 
   @override
-  String get paymentWasCancelled => '[BN_BD] Payment was cancelled (Bengali (Bangladesh))';
+  String get paymentWasCancelled =>
+      '[BN_BD] Payment was cancelled (Bengali (Bangladesh))';
 
   @override
   String get clearAll => '[BN_BD] Clear All (Bengali (Bangladesh))';
@@ -4603,16 +5035,20 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => '[BN_BD] Failed to create game: \$e (Bengali (Bangladesh))';
+  String get failedToCreateGameE =>
+      '[BN_BD] Failed to create game: \$e (Bengali (Bangladesh))';
 
   @override
-  String get noChartDataAvailable => '[BN_BD] No chart data available (Bengali (Bangladesh))';
+  String get noChartDataAvailable =>
+      '[BN_BD] No chart data available (Bengali (Bangladesh))';
 
   @override
-  String get phonebasedBookingSystem => '[BN_BD] • Phone-based booking system (Bengali (Bangladesh))';
+  String get phonebasedBookingSystem =>
+      '[BN_BD] • Phone-based booking system (Bengali (Bangladesh))';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -4621,7 +5057,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get invoices => '[BN_BD] Invoices (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -4637,7 +5074,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get tryAgain => '[BN_BD] Try Again (Bengali (Bangladesh))';
 
   @override
-  String get deleteBackground => '[BN_BD] Delete Background (Bengali (Bangladesh))';
+  String get deleteBackground =>
+      '[BN_BD] Delete Background (Bengali (Bangladesh))';
 
   @override
   String currentTierTiertouppercase(Object tier) {
@@ -4648,22 +5086,26 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get iDoNotConsent => '[BN_BD] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] No clients found. Add your first client! (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] No clients found. Add your first client! (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[BN_BD] Group: \$groupId';
 
   @override
-  String get appointmentRequests => '[BN_BD] Appointment Requests (Bengali (Bangladesh))';
+  String get appointmentRequests =>
+      '[BN_BD] Appointment Requests (Bengali (Bangladesh))';
 
   @override
   String get forward => '[BN_BD] Forward (Bengali (Bangladesh))';
 
   @override
-  String get roomAddedSuccessfully => '[BN_BD] Room added successfully! (Bengali (Bangladesh))';
+  String get roomAddedSuccessfully =>
+      '[BN_BD] Room added successfully! (Bengali (Bangladesh))';
 
   @override
   String get option => '[BN_BD] • \$option (Bengali (Bangladesh))';
@@ -4674,40 +5116,50 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[BN_BD] • CRM dashboard with analytics (Bengali (Bangladesh))';
+  String get crmDashboardWithAnalytics =>
+      '[BN_BD] • CRM dashboard with analytics (Bengali (Bangladesh))';
 
   @override
-  String get contentLibrary1 => '[BN_BD] Content Library (Bengali (Bangladesh))';
+  String get contentLibrary1 =>
+      '[BN_BD] Content Library (Bengali (Bangladesh))';
 
   @override
   String get reply => '[BN_BD] Reply (Bengali (Bangladesh))';
 
   @override
-  String get subscriptionManagement => '[BN_BD] Subscription Management (Bengali (Bangladesh))';
+  String get subscriptionManagement =>
+      '[BN_BD] Subscription Management (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Monetization settings will be implemented here (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Monetization settings will be implemented here (Bengali (Bangladesh))';
 
   @override
-  String get failedToApplyPromoCodeE => '[BN_BD] Failed to apply promo code: \$e (Bengali (Bangladesh))';
+  String get failedToApplyPromoCodeE =>
+      '[BN_BD] Failed to apply promo code: \$e (Bengali (Bangladesh))';
 
   @override
   String get editProvider => '[BN_BD] Edit Provider';
 
   @override
-  String get localizationContribution => '[BN_BD] Localization Contribution (Bengali (Bangladesh))';
+  String get localizationContribution =>
+      '[BN_BD] Localization Contribution (Bengali (Bangladesh))';
 
   @override
-  String get parentalConsent => '[BN_BD] Parental Consent (Bengali (Bangladesh))';
+  String get parentalConsent =>
+      '[BN_BD] Parental Consent (Bengali (Bangladesh))';
 
   @override
-  String get businessSignupScreenComingSoon => '[BN_BD] Business Signup Screen - Coming Soon (Bengali (Bangladesh))';
+  String get businessSignupScreenComingSoon =>
+      '[BN_BD] Business Signup Screen - Coming Soon (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => '[BN_BD] Are you sure you want to delete this appointment? (Bengali (Bangladesh))';
+  String get REDACTED_TOKEN =>
+      '[BN_BD] Are you sure you want to delete this appointment? (Bengali (Bangladesh))';
 
   @override
-  String get syncAppointment => '[BN_BD] Sync Appointment (Bengali (Bangladesh))';
+  String get syncAppointment =>
+      '[BN_BD] Sync Appointment (Bengali (Bangladesh))';
 
   @override
   String get iConsent => '[BN_BD] I Consent (Bengali (Bangladesh))';
@@ -4716,19 +5168,23 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[BN_BD] Business Setup Screen - Coming Soon (Bengali (Bangladesh))';
+  String get businessSetupScreenComingSoon =>
+      '[BN_BD] Business Setup Screen - Coming Soon (Bengali (Bangladesh))';
 
   @override
   String get edit1 => '[BN_BD] Edit (Bengali (Bangladesh))';
 
   @override
-  String get noEventsScheduledThisMonth => '[BN_BD] No events scheduled this month (Bengali (Bangladesh))';
+  String get noEventsScheduledThisMonth =>
+      '[BN_BD] No events scheduled this month (Bengali (Bangladesh))';
 
   @override
-  String get businessDashboard => '[BN_BD] Business Dashboard (Bengali (Bangladesh))';
+  String get businessDashboard =>
+      '[BN_BD] Business Dashboard (Bengali (Bangladesh))';
 
   @override
-  String get noMessagesFound => '[BN_BD] No messages found. (Bengali (Bangladesh))';
+  String get noMessagesFound =>
+      '[BN_BD] No messages found. (Bengali (Bangladesh))';
 
   @override
   String staffStaffidNotSelected(Object staff) {
@@ -4736,10 +5192,12 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get manageStaffAvailability => '[BN_BD] Manage Staff Availability (Bengali (Bangladesh))';
+  String get manageStaffAvailability =>
+      '[BN_BD] Manage Staff Availability (Bengali (Bangladesh))';
 
   @override
-  String get noMissingTranslations => '[BN_BD] No missing translations (Bengali (Bangladesh))';
+  String get noMissingTranslations =>
+      '[BN_BD] No missing translations (Bengali (Bangladesh))';
 
   @override
   String get skip => '[BN_BD] Skip (Bengali (Bangladesh))';
@@ -4753,7 +5211,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get noUsers => '[BN_BD] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[BN_BD] Error loading referral code (Bengali (Bangladesh))';
+  String get errorLoadingReferralCode =>
+      '[BN_BD] Error loading referral code (Bengali (Bangladesh))';
 
   @override
   String get allCountries => '[BN_BD] All Countries (Bengali (Bangladesh))';
@@ -4762,13 +5221,15 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get deleteGame => '[BN_BD] Delete Game (Bengali (Bangladesh))';
 
   @override
-  String get staffManagementTools => '[BN_BD] • Staff management tools (Bengali (Bangladesh))';
+  String get staffManagementTools =>
+      '[BN_BD] • Staff management tools (Bengali (Bangladesh))';
 
   @override
   String get deleteMessage => '[BN_BD] Delete Message (Bengali (Bangladesh))';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[BN_BD] changeRole (TRANSLATE)';
@@ -4779,7 +5240,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get openingCustomerPortal => '[BN_BD] Opening customer portal... (Bengali (Bangladesh))';
+  String get openingCustomerPortal =>
+      '[BN_BD] Opening customer portal... (Bengali (Bangladesh))';
 
   @override
   String get signOut => '[BN_BD] Sign Out (Bengali (Bangladesh))';
@@ -4790,10 +5252,12 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
-  String get upgradeToBusiness => '[BN_BD] Upgrade to Business (Bengali (Bangladesh))';
+  String get upgradeToBusiness =>
+      '[BN_BD] Upgrade to Business (Bengali (Bangladesh))';
 
   @override
   String get apply => 'تطبيق';
@@ -4816,7 +5280,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[BN_BD] View Responses (Bengali (Bangladesh))';
@@ -4845,7 +5310,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -4863,7 +5329,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -4872,7 +5339,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -4887,7 +5355,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   String get purchase_now_button => 'Purchase Now';
 
   @override
-  String get ambassadorPromotionTitle => '[BN_BD] Congratulations! You\'re now an Ambassador! (Bengali (Bangladesh))';
+  String get ambassadorPromotionTitle =>
+      '[BN_BD] Congratulations! You\'re now an Ambassador! (Bengali (Bangladesh))';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -4895,31 +5364,46 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get tierUpgradeTitle => '[BN_BD] Tier Upgrade! 🎉 (Bengali (Bangladesh))';
+  String get tierUpgradeTitle =>
+      '[BN_BD] Tier Upgrade! 🎉 (Bengali (Bangladesh))';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[BN_BD] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Bengali (Bangladesh))';
   }
 
   @override
-  String get monthlyReminderTitle => '[BN_BD] Monthly Goal Reminder (Bengali (Bangladesh))';
+  String get monthlyReminderTitle =>
+      '[BN_BD] Monthly Goal Reminder (Bengali (Bangladesh))';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[BN_BD] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Bengali (Bangladesh))';
   }
 
   @override
-  String get performanceWarningTitle => '[BN_BD] Ambassador Performance Alert (Bengali (Bangladesh))';
+  String get performanceWarningTitle =>
+      '[BN_BD] Ambassador Performance Alert (Bengali (Bangladesh))';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[BN_BD] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Bengali (Bangladesh))';
   }
 
   @override
-  String get ambassadorDemotionTitle => '[BN_BD] Ambassador Status Update (Bengali (Bangladesh))';
+  String get ambassadorDemotionTitle =>
+      '[BN_BD] Ambassador Status Update (Bengali (Bangladesh))';
 
   @override
   String ambassadorDemotionBody(String reason) {
@@ -4927,7 +5411,8 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
   }
 
   @override
-  String get referralSuccessTitle => '[BN_BD] New Referral! 🎉 (Bengali (Bangladesh))';
+  String get referralSuccessTitle =>
+      '[BN_BD] New Referral! 🎉 (Bengali (Bangladesh))';
 
   @override
   String referralSuccessBody(String referredUserName, String totalReferrals) {

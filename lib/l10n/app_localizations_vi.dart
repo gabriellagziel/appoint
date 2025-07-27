@@ -277,7 +277,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get scheduleForLater => '[VI] Lên lịch sau';
 
   @override
-  String get accessRevokedSuccessfully => '[VI] Thu hồi quyền truy cập thành công';
+  String get accessRevokedSuccessfully =>
+      '[VI] Thu hồi quyền truy cập thành công';
 
   @override
   String type(String type) {
@@ -479,7 +480,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get playtimeEnterGameName => '[VI] Nhập tên trò chơi';
 
   @override
-  String get pleaseLoginForFamilyFeatures => '[VI] [VI] Please login to access family features';
+  String get pleaseLoginForFamilyFeatures =>
+      '[VI] [VI] Please login to access family features';
 
   @override
   String get myInvites => '[VI] [VI] My Invites';
@@ -533,7 +535,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get pleaseLoginToViewProfile => '[VI] [VI] Please log in to view your profile.';
+  String get pleaseLoginToViewProfile =>
+      '[VI] [VI] Please log in to view your profile.';
 
   @override
   String get adminMetrics => '[VI] Admin Metrics';
@@ -554,40 +557,52 @@ class AppLocalizationsVi extends AppLocalizations {
   String get contentLibrary => '[VI] Content Library';
 
   @override
-  String get authErrorUserNotFound => '[VI] No account found with this email address.';
+  String get authErrorUserNotFound =>
+      '[VI] No account found with this email address.';
 
   @override
-  String get authErrorWrongPassword => '[VI] Incorrect password. Please try again.';
+  String get authErrorWrongPassword =>
+      '[VI] Incorrect password. Please try again.';
 
   @override
-  String get authErrorInvalidEmail => '[VI] Please enter a valid email address.';
+  String get authErrorInvalidEmail =>
+      '[VI] Please enter a valid email address.';
 
   @override
-  String get authErrorUserDisabled => '[VI] This account has been disabled. Please contact support.';
+  String get authErrorUserDisabled =>
+      '[VI] This account has been disabled. Please contact support.';
 
   @override
-  String get authErrorWeakPassword => '[VI] Password is too weak. Please choose a stronger password.';
+  String get authErrorWeakPassword =>
+      '[VI] Password is too weak. Please choose a stronger password.';
 
   @override
-  String get authErrorEmailAlreadyInUse => '[VI] An account with this email already exists.';
+  String get authErrorEmailAlreadyInUse =>
+      '[VI] An account with this email already exists.';
 
   @override
-  String get authErrorTooManyRequests => '[VI] Too many failed attempts. Please try again later.';
+  String get authErrorTooManyRequests =>
+      '[VI] Too many failed attempts. Please try again later.';
 
   @override
-  String get authErrorOperationNotAllowed => '[VI] This sign-in method is not enabled. Please contact support.';
+  String get authErrorOperationNotAllowed =>
+      '[VI] This sign-in method is not enabled. Please contact support.';
 
   @override
-  String get authErrorInvalidCredential => '[VI] Invalid credentials. Please try again.';
+  String get authErrorInvalidCredential =>
+      '[VI] Invalid credentials. Please try again.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] An account already exists with this email using a different sign-in method.';
+  String get REDACTED_TOKEN =>
+      '[VI] An account already exists with this email using a different sign-in method.';
 
   @override
-  String get authErrorCredentialAlreadyInUse => '[VI] These credentials are already associated with another account.';
+  String get authErrorCredentialAlreadyInUse =>
+      '[VI] These credentials are already associated with another account.';
 
   @override
-  String get authErrorNetworkRequestFailed => '[VI] Network error. Please check your connection and try again.';
+  String get authErrorNetworkRequestFailed =>
+      '[VI] Network error. Please check your connection and try again.';
 
   @override
   String get socialAccountConflictTitle => 'تعارض حساب الشبكة الاجتماعية';
@@ -604,19 +619,24 @@ class AppLocalizationsVi extends AppLocalizations {
   String get signInWithExistingMethod => 'تسجيل الدخول بالطريقة الموجودة';
 
   @override
-  String get authErrorRequiresRecentLogin => '[VI] Please log in again to perform this operation.';
+  String get authErrorRequiresRecentLogin =>
+      '[VI] Please log in again to perform this operation.';
 
   @override
-  String get authErrorAppNotAuthorized => '[VI] This app is not authorized to use Firebase Authentication.';
+  String get authErrorAppNotAuthorized =>
+      '[VI] This app is not authorized to use Firebase Authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] The verification code is invalid.';
+  String get REDACTED_TOKEN =>
+      '[VI] The verification code is invalid.';
 
   @override
-  String get authErrorInvalidVerificationId => '[VI] The verification ID is invalid.';
+  String get authErrorInvalidVerificationId =>
+      '[VI] The verification ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Please enter the verification code.';
+  String get REDACTED_TOKEN =>
+      '[VI] Please enter the verification code.';
 
   @override
   String get authErrorMissingVerificationId => '[VI] Missing verification ID.';
@@ -628,43 +648,56 @@ class AppLocalizationsVi extends AppLocalizations {
   String get authErrorMissingPhoneNumber => '[VI] Please enter a phone number.';
 
   @override
-  String get authErrorQuotaExceeded => '[VI] The SMS quota for this project has been exceeded. Please try again later.';
+  String get authErrorQuotaExceeded =>
+      '[VI] The SMS quota for this project has been exceeded. Please try again later.';
 
   @override
-  String get authErrorCodeExpired => '[VI] The verification code has expired. Please request a new one.';
+  String get authErrorCodeExpired =>
+      '[VI] The verification code has expired. Please request a new one.';
 
   @override
-  String get authErrorSessionExpired => '[VI] Your session has expired. Please log in again.';
+  String get authErrorSessionExpired =>
+      '[VI] Your session has expired. Please log in again.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Multi-factor authentication is required.';
+  String get REDACTED_TOKEN =>
+      '[VI] Multi-factor authentication is required.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Multi-factor information not found.';
+  String get REDACTED_TOKEN =>
+      '[VI] Multi-factor information not found.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Missing multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[VI] Missing multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Invalid multi-factor session.';
+  String get REDACTED_TOKEN =>
+      '[VI] Invalid multi-factor session.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] This second factor is already in use.';
+  String get REDACTED_TOKEN =>
+      '[VI] This second factor is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Maximum number of second factors exceeded.';
+  String get REDACTED_TOKEN =>
+      '[VI] Maximum number of second factors exceeded.';
 
   @override
-  String get authErrorUnsupportedFirstFactor => '[VI] Unsupported first factor for multi-factor authentication.';
+  String get authErrorUnsupportedFirstFactor =>
+      '[VI] Unsupported first factor for multi-factor authentication.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Email change requires verification.';
+  String get REDACTED_TOKEN =>
+      '[VI] Email change requires verification.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] This phone number is already in use.';
+  String get REDACTED_TOKEN =>
+      '[VI] This phone number is already in use.';
 
   @override
-  String get authErrorInvalidPassword => '[VI] The password is invalid or too weak.';
+  String get authErrorInvalidPassword =>
+      '[VI] The password is invalid or too weak.';
 
   @override
   String get authErrorInvalidIdToken => '[VI] The ID token is invalid.';
@@ -676,10 +709,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get authErrorIdTokenRevoked => '[VI] The ID token has been revoked.';
 
   @override
-  String get authErrorInternalError => '[VI] An internal error occurred. Please try again.';
+  String get authErrorInternalError =>
+      '[VI] An internal error occurred. Please try again.';
 
   @override
-  String get authErrorInvalidArgument => '[VI] An invalid argument was provided.';
+  String get authErrorInvalidArgument =>
+      '[VI] An invalid argument was provided.';
 
   @override
   String get authErrorInvalidClaims => '[VI] Invalid custom claims provided.';
@@ -688,70 +723,87 @@ class AppLocalizationsVi extends AppLocalizations {
   String get authErrorInvalidContinueUri => '[VI] The continue URL is invalid.';
 
   @override
-  String get authErrorInvalidCreationTime => '[VI] The creation time is invalid.';
+  String get authErrorInvalidCreationTime =>
+      '[VI] The creation time is invalid.';
 
   @override
-  String get authErrorInvalidDisabledField => '[VI] The disabled field value is invalid.';
+  String get authErrorInvalidDisabledField =>
+      '[VI] The disabled field value is invalid.';
 
   @override
   String get authErrorInvalidDisplayName => '[VI] The display name is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] The dynamic link domain is invalid.';
+  String get REDACTED_TOKEN =>
+      '[VI] The dynamic link domain is invalid.';
 
   @override
-  String get authErrorInvalidEmailVerified => '[VI] The email verified value is invalid.';
+  String get authErrorInvalidEmailVerified =>
+      '[VI] The email verified value is invalid.';
 
   @override
-  String get authErrorInvalidHashAlgorithm => '[VI] The hash algorithm is invalid.';
+  String get authErrorInvalidHashAlgorithm =>
+      '[VI] The hash algorithm is invalid.';
 
   @override
-  String get authErrorInvalidHashBlockSize => '[VI] The hash block size is invalid.';
+  String get authErrorInvalidHashBlockSize =>
+      '[VI] The hash block size is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] The hash derived key length is invalid.';
+  String get REDACTED_TOKEN =>
+      '[VI] The hash derived key length is invalid.';
 
   @override
   String get authErrorInvalidHashKey => '[VI] The hash key is invalid.';
 
   @override
-  String get authErrorInvalidHashMemoryCost => '[VI] The hash memory cost is invalid.';
+  String get authErrorInvalidHashMemoryCost =>
+      '[VI] The hash memory cost is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] The hash parallelization is invalid.';
+  String get REDACTED_TOKEN =>
+      '[VI] The hash parallelization is invalid.';
 
   @override
-  String get authErrorInvalidHashRounds => '[VI] The hash rounds value is invalid.';
+  String get authErrorInvalidHashRounds =>
+      '[VI] The hash rounds value is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] The hash salt separator is invalid.';
+  String get REDACTED_TOKEN =>
+      '[VI] The hash salt separator is invalid.';
 
   @override
-  String get authErrorInvalidLastSignInTime => '[VI] The last sign-in time is invalid.';
+  String get authErrorInvalidLastSignInTime =>
+      '[VI] The last sign-in time is invalid.';
 
   @override
   String get authErrorInvalidPageToken => '[VI] The page token is invalid.';
 
   @override
-  String get authErrorInvalidProviderData => '[VI] The provider data is invalid.';
+  String get authErrorInvalidProviderData =>
+      '[VI] The provider data is invalid.';
 
   @override
   String get authErrorInvalidProviderId => '[VI] The provider ID is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] The session cookie duration is invalid.';
+  String get REDACTED_TOKEN =>
+      '[VI] The session cookie duration is invalid.';
 
   @override
   String get authErrorInvalidUid => '[VI] The UID is invalid.';
 
   @override
-  String get authErrorInvalidUserImport => '[VI] The user import record is invalid.';
+  String get authErrorInvalidUserImport =>
+      '[VI] The user import record is invalid.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Maximum user import count exceeded.';
+  String get REDACTED_TOKEN =>
+      '[VI] Maximum user import count exceeded.';
 
   @override
-  String get authErrorMissingAndroidPkgName => '[VI] Missing Android package name.';
+  String get authErrorMissingAndroidPkgName =>
+      '[VI] Missing Android package name.';
 
   @override
   String get authErrorMissingContinueUri => '[VI] Missing continue URL.';
@@ -766,7 +818,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get authErrorMissingUid => '[VI] Missing UID.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Missing OAuth client secret.';
+  String get REDACTED_TOKEN =>
+      '[VI] Missing OAuth client secret.';
 
   @override
   String get authErrorProjectNotFound => '[VI] Firebase project not found.';
@@ -775,19 +828,23 @@ class AppLocalizationsVi extends AppLocalizations {
   String get authErrorReservedClaims => '[VI] Reserved claims provided.';
 
   @override
-  String get authErrorSessionCookieExpired => '[VI] Session cookie has expired.';
+  String get authErrorSessionCookieExpired =>
+      '[VI] Session cookie has expired.';
 
   @override
-  String get authErrorSessionCookieRevoked => '[VI] Session cookie has been revoked.';
+  String get authErrorSessionCookieRevoked =>
+      '[VI] Session cookie has been revoked.';
 
   @override
   String get authErrorUidAlreadyExists => '[VI] The UID is already in use.';
 
   @override
-  String get REDACTED_TOKEN => '[VI] The continue URL domain is not whitelisted.';
+  String get REDACTED_TOKEN =>
+      '[VI] The continue URL domain is not whitelisted.';
 
   @override
-  String get authErrorUnknown => '[VI] An unknown authentication error occurred.';
+  String get authErrorUnknown =>
+      '[VI] An unknown authentication error occurred.';
 
   @override
   String get checkingPermissions1 => 'فحص الأذونات...';
@@ -836,7 +893,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get keepSubscription => 'الاحتفاظ بالاشتراك';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Virtual session created! Inviting friends... (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Virtual session created! Inviting friends... (Vietnamese)';
 
   @override
   String get noEventsScheduledForToday => 'لا توجد أحداث مجدولة لليوم';
@@ -877,13 +935,15 @@ class AppLocalizationsVi extends AppLocalizations {
   String get studioProfile => 'ملف الاستوديو';
 
   @override
-  String get subscriptionUnavailable => '[VI] Subscription unavailable (Vietnamese)';
+  String get subscriptionUnavailable =>
+      '[VI] Subscription unavailable (Vietnamese)';
 
   @override
   String get confirmBooking => '[VI] Confirm Booking (Vietnamese)';
 
   @override
-  String get failedToUpdatePermissionE => '[VI] Failed to update permission: \$e (Vietnamese)';
+  String get failedToUpdatePermissionE =>
+      '[VI] Failed to update permission: \$e (Vietnamese)';
 
   @override
   String get reject => '[VI] Reject (Vietnamese)';
@@ -897,7 +957,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get noProviders => '[VI] No providers';
 
   @override
-  String get checkingSubscription => '[VI] Checking subscription... (Vietnamese)';
+  String get checkingSubscription =>
+      '[VI] Checking subscription... (Vietnamese)';
 
   @override
   String errorPickingImageE(Object e) {
@@ -905,13 +966,15 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get noContentAvailableYet => '[VI] No content available yet (Vietnamese)';
+  String get noContentAvailableYet =>
+      '[VI] No content available yet (Vietnamese)';
 
   @override
   String get resolve => '[VI] Resolve (Vietnamese)';
 
   @override
-  String get errorLoadingSurveysError => '[VI] Error loading surveys: \$error (Vietnamese)';
+  String get errorLoadingSurveysError =>
+      '[VI] Error loading surveys: \$error (Vietnamese)';
 
   @override
   String errorLogerrormessage(Object errorMessage) {
@@ -919,7 +982,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get getHelpWithYourAccount => '[VI] Get help with your account (Vietnamese)';
+  String get getHelpWithYourAccount =>
+      '[VI] Get help with your account (Vietnamese)';
 
   @override
   String get pay => '[VI] Pay (Vietnamese)';
@@ -934,7 +998,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get errorLoadingAppointments => 'خطأ في تحميل المواعيد';
 
   @override
-  String get changesSavedSuccessfully => '[VI] Changes saved successfully! (Vietnamese)';
+  String get changesSavedSuccessfully =>
+      '[VI] Changes saved successfully! (Vietnamese)';
 
   @override
   String get createNewInvoice => '[VI] Create New Invoice (Vietnamese)';
@@ -954,7 +1019,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get profileSaved => '[VI] Profile saved! (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر البريد الإلكتروني';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر البريد الإلكتروني';
 
   @override
   String valuetointk(Object k, Object value) {
@@ -985,7 +1051,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[VI] You will receive a confirmation email shortly. (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] You will receive a confirmation email shortly. (Vietnamese)';
 
   @override
   String get addQuestion => '[VI] Add Question (Vietnamese)';
@@ -1014,22 +1081,27 @@ class AppLocalizationsVi extends AppLocalizations {
   String get surveyManagement => '[VI] Survey Management (Vietnamese)';
 
   @override
-  String get pleaseEnterAValidEmailOrPhone => '[VI] Please enter a valid email or phone';
+  String get pleaseEnterAValidEmailOrPhone =>
+      '[VI] Please enter a valid email or phone';
 
   @override
-  String get noRoomsFoundAddYourFirstRoom => '[VI] No rooms found. Add your first room! (Vietnamese)';
+  String get noRoomsFoundAddYourFirstRoom =>
+      '[VI] No rooms found. Add your first room! (Vietnamese)';
 
   @override
-  String get readOurPrivacyPolicy => '[VI] Read our privacy policy (Vietnamese)';
+  String get readOurPrivacyPolicy =>
+      '[VI] Read our privacy policy (Vietnamese)';
 
   @override
-  String get couldNotOpenPrivacyPolicy => '[VI] Could not open privacy policy (Vietnamese)';
+  String get couldNotOpenPrivacyPolicy =>
+      '[VI] Could not open privacy policy (Vietnamese)';
 
   @override
   String get refresh1 => '[VI] Refresh (Vietnamese)';
 
   @override
-  String get roomUpdatedSuccessfully => '[VI] Room updated successfully! (Vietnamese)';
+  String get roomUpdatedSuccessfully =>
+      '[VI] Room updated successfully! (Vietnamese)';
 
   @override
   String get contentDetail => '[VI] Content Detail (Vietnamese)';
@@ -1038,7 +1110,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get cancelSubscription => '[VI] Cancel Subscription (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Successfully registered as Ambassador! (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Successfully registered as Ambassador! (Vietnamese)';
 
   @override
   String get save1 => '[VI] Save (Vietnamese)';
@@ -1047,7 +1120,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get copy1 => '[VI] Copy (Vietnamese)';
 
   @override
-  String get failedToSendInvitationE => '[VI] Failed to send invitation: \$e (Vietnamese)';
+  String get failedToSendInvitationE =>
+      '[VI] Failed to send invitation: \$e (Vietnamese)';
 
   @override
   String get surveyScore => '[VI] Survey Score (Vietnamese)';
@@ -1064,16 +1138,20 @@ class AppLocalizationsVi extends AppLocalizations {
   String get responseDetail => '[VI] Response Detail (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة التحقق من الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة التحقق من الأعمال - قريباً';
 
   @override
-  String get REDACTED_TOKEN => 'تم تفعيل الملف التجاري بنجاح';
+  String get REDACTED_TOKEN =>
+      'تم تفعيل الملف التجاري بنجاح';
 
   @override
-  String get failedToStartProSubscriptionE => '[VI] Failed to start Pro subscription: \$e (Vietnamese)';
+  String get failedToStartProSubscriptionE =>
+      '[VI] Failed to start Pro subscription: \$e (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Business Dashboard Entry Screen - Coming Soon (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Business Dashboard Entry Screen - Coming Soon (Vietnamese)';
 
   @override
   String get contentFilter => '[VI] Content Filter (Vietnamese)';
@@ -1095,7 +1173,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[VI] Business CRM Entry Screen - Coming Soon (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Business CRM Entry Screen - Coming Soon (Vietnamese)';
 
   @override
   String get adminDashboard => '[VI] Admin Dashboard';
@@ -1106,13 +1185,16 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get errorLoadingDashboardError => '[VI] Error loading dashboard: \$error (Vietnamese)';
+  String get errorLoadingDashboardError =>
+      '[VI] Error loading dashboard: \$error (Vietnamese)';
 
   @override
-  String get gameDeletedSuccessfully => '[VI] Game deleted successfully! (Vietnamese)';
+  String get gameDeletedSuccessfully =>
+      '[VI] Game deleted successfully! (Vietnamese)';
 
   @override
-  String get viewResponsesComingSoon => '[VI] View responses - Coming soon! (Vietnamese)';
+  String get viewResponsesComingSoon =>
+      '[VI] View responses - Coming soon! (Vietnamese)';
 
   @override
   String get deleteProvider => '[VI] Delete Provider';
@@ -1121,7 +1203,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get errorLoadingRewards => '[VI] Error loading rewards (Vietnamese)';
 
   @override
-  String get failedToDeleteAccountE => '[VI] Failed to delete account: \$e (Vietnamese)';
+  String get failedToDeleteAccountE =>
+      '[VI] Failed to delete account: \$e (Vietnamese)';
 
   @override
   String get invited1 => '[VI] Invited (Vietnamese)';
@@ -1136,7 +1219,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get noEvents => '[VI] No events (Vietnamese)';
 
   @override
-  String get gameCreatedSuccessfully => '[VI] Game created successfully! (Vietnamese)';
+  String get gameCreatedSuccessfully =>
+      '[VI] Game created successfully! (Vietnamese)';
 
   @override
   String get add1 => '[VI] Add (Vietnamese)';
@@ -1156,10 +1240,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get clients => '[VI] Clients (Vietnamese)';
 
   @override
-  String get noAmbassadorDataAvailable => '[VI] No ambassador data available (Vietnamese)';
+  String get noAmbassadorDataAvailable =>
+      '[VI] No ambassador data available (Vietnamese)';
 
   @override
-  String get backgroundDeletedSuccessfully => '[VI] Background deleted successfully! (Vietnamese)';
+  String get backgroundDeletedSuccessfully =>
+      '[VI] Background deleted successfully! (Vietnamese)';
 
   @override
   String errorSnapshoterror(Object error) {
@@ -1167,7 +1253,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get noAnalyticsDataAvailableYet => '[VI] No analytics data available yet. (Vietnamese)';
+  String get noAnalyticsDataAvailableYet =>
+      '[VI] No analytics data available yet. (Vietnamese)';
 
   @override
   String errorDeletingSlotE(Object e) {
@@ -1175,7 +1262,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[VI] Business Phone Booking Entry Screen - Coming Soon (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Business Phone Booking Entry Screen - Coming Soon (Vietnamese)';
 
   @override
   String get verification => '[VI] Verification (Vietnamese)';
@@ -1222,7 +1310,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get businessProfile => '[VI] Business Profile (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Business Booking Entry Screen - Coming Soon (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Business Booking Entry Screen - Coming Soon (Vietnamese)';
 
   @override
   String get createNewSurvey => '[VI] Create New Survey (Vietnamese)';
@@ -1246,7 +1335,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get loginFailedE => '[VI] Login failed: \$e';
 
   @override
-  String get invitationSentSuccessfully => '[VI] Invitation sent successfully! (Vietnamese)';
+  String get invitationSentSuccessfully =>
+      '[VI] Invitation sent successfully! (Vietnamese)';
 
   @override
   String get registering => '[VI] Registering... (Vietnamese)';
@@ -1260,13 +1350,16 @@ class AppLocalizationsVi extends AppLocalizations {
   String get home1 => '[VI] Home (Vietnamese)';
 
   @override
-  String get errorSavingSettingsE => '[VI] Error saving settings: \$e (Vietnamese)';
+  String get errorSavingSettingsE =>
+      '[VI] Error saving settings: \$e (Vietnamese)';
 
   @override
-  String get appVersionAndInformation => '[VI] App version and information (Vietnamese)';
+  String get appVersionAndInformation =>
+      '[VI] App version and information (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Business Subscription Entry Screen - Coming Soon (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Business Subscription Entry Screen - Coming Soon (Vietnamese)';
 
   @override
   String ekeyEvalue(Object key, Object value) {
@@ -1274,7 +1367,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[VI] Your payment has been processed successfully. (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Your payment has been processed successfully. (Vietnamese)';
 
   @override
   String get errorE => '[VI] Error: \$e (Vietnamese)';
@@ -1283,7 +1377,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get viewAll1 => '[VI] View All (Vietnamese)';
 
   @override
-  String get editSurveyComingSoon => '[VI] Edit survey - Coming soon! (Vietnamese)';
+  String get editSurveyComingSoon =>
+      '[VI] Edit survey - Coming soon! (Vietnamese)';
 
   @override
   String get enterOtp => '[VI] Enter OTP (Vietnamese)';
@@ -1292,7 +1387,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get payment => '[VI] Payment (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Automatically confirm new booking requests (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Automatically confirm new booking requests (Vietnamese)';
 
   @override
   String errorPickingVideoE(Object e) {
@@ -1305,7 +1401,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get pleaseSignInToUploadABackground => '[VI] Please sign in to upload a background (Vietnamese)';
+  String get pleaseSignInToUploadABackground =>
+      '[VI] Please sign in to upload a background (Vietnamese)';
 
   @override
   String logtargettypeLogtargetid(Object targetId, Object targetType) {
@@ -1322,19 +1419,22 @@ class AppLocalizationsVi extends AppLocalizations {
   String get autoconfirmBookings => '[VI] Auto-Confirm Bookings (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Redirecting to Stripe checkout for Pro plan... (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Redirecting to Stripe checkout for Pro plan... (Vietnamese)';
 
   @override
   String get exportAsCsv => '[VI] Export as CSV (Vietnamese)';
 
   @override
-  String get deleteFunctionalityComingSoon => '[VI] Delete functionality coming soon! (Vietnamese)';
+  String get deleteFunctionalityComingSoon =>
+      '[VI] Delete functionality coming soon! (Vietnamese)';
 
   @override
   String get editClient => '[VI] Edit Client (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Are you sure you want to delete this message? (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Are you sure you want to delete this message? (Vietnamese)';
 
   @override
   String referralsAmbassadorreferrals(Object referrals) {
@@ -1345,31 +1445,39 @@ class AppLocalizationsVi extends AppLocalizations {
   String get notAuthenticated => '[VI] Not authenticated';
 
   @override
-  String get privacyRequestSentToYourParents => '[VI] Privacy request sent to your parents! (Vietnamese)';
+  String get privacyRequestSentToYourParents =>
+      '[VI] Privacy request sent to your parents! (Vietnamese)';
 
   @override
-  String get clientDeletedSuccessfully => '[VI] Client deleted successfully! (Vietnamese)';
+  String get clientDeletedSuccessfully =>
+      '[VI] Client deleted successfully! (Vietnamese)';
 
   @override
-  String get failedToCancelSubscription => '[VI] Failed to cancel subscription (Vietnamese)';
+  String get failedToCancelSubscription =>
+      '[VI] Failed to cancel subscription (Vietnamese)';
 
   @override
   String get allLanguages => '[VI] All Languages (Vietnamese)';
 
   @override
-  String get slotDeletedSuccessfully => '[VI] Slot deleted successfully (Vietnamese)';
+  String get slotDeletedSuccessfully =>
+      '[VI] Slot deleted successfully (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Business Providers Entry Screen - Coming Soon';
+  String get REDACTED_TOKEN =>
+      '[VI] Business Providers Entry Screen - Coming Soon';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Parents must approve before children can join (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Parents must approve before children can join (Vietnamese)';
 
   @override
-  String get subscribeToPro1499mo => '[VI] Subscribe to Pro (€14.99/mo) (Vietnamese)';
+  String get subscribeToPro1499mo =>
+      '[VI] Subscribe to Pro (€14.99/mo) (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Business Availability Entry Screen - Coming Soon (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Business Availability Entry Screen - Coming Soon (Vietnamese)';
 
   @override
   String appointmentsListlength(Object count) {
@@ -1383,7 +1491,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get submitBooking => '[VI] Submit Booking (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Are you sure you want to cancel this appointment? (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Are you sure you want to cancel this appointment? (Vietnamese)';
 
   @override
   String get noUpcomingBookings => '[VI] No upcoming bookings (Vietnamese)';
@@ -1401,7 +1510,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get goToDashboard => '[VI] Go to Dashboard (Vietnamese)';
 
   @override
-  String get ambassadorQuotaDashboard => '[VI] Ambassador Quota Dashboard (Vietnamese)';
+  String get ambassadorQuotaDashboard =>
+      '[VI] Ambassador Quota Dashboard (Vietnamese)';
 
   @override
   String get adminSettings => '[VI] Admin Settings';
@@ -1439,7 +1549,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get sessionApproved => 'تمت الموافقة على الجلسة';
 
   @override
-  String get clientAddedSuccessfully => '[VI] Client added successfully! (Vietnamese)';
+  String get clientAddedSuccessfully =>
+      '[VI] Client added successfully! (Vietnamese)';
 
   @override
   String get noNotifications => 'لا توجد إشعارات';
@@ -1457,7 +1568,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get bookAppointment => '[VI] Book Appointment (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الدفع للحجوزات الجديدة';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الدفع للحجوزات الجديدة';
 
   @override
   String get delete1 => '[VI] Delete (Vietnamese)';
@@ -1472,13 +1584,15 @@ class AppLocalizationsVi extends AppLocalizations {
   String get manageSubscription => '[VI] Manage Subscription (Vietnamese)';
 
   @override
-  String get requiresInstallFallback => '[VI] Requires Install Fallback (Vietnamese)';
+  String get requiresInstallFallback =>
+      '[VI] Requires Install Fallback (Vietnamese)';
 
   @override
   String get paymentConfirmation => '[VI] Payment Confirmation (Vietnamese)';
 
   @override
-  String get promoAppliedYourNextBillIsFree => '[VI] Promo applied! Your next bill is free. (Vietnamese)';
+  String get promoAppliedYourNextBillIsFree =>
+      '[VI] Promo applied! Your next bill is free. (Vietnamese)';
 
   @override
   String inviteeArgsinviteeid(Object inviteeId) {
@@ -1489,13 +1603,16 @@ class AppLocalizationsVi extends AppLocalizations {
   String get errorLoadingSlots => '[VI] Error loading slots (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Allow other users to find and join this game (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Allow other users to find and join this game (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Business Onboarding Screen - Coming Soon (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Business Onboarding Screen - Coming Soon (Vietnamese)';
 
   @override
-  String get activateBusinessProfile => '[VI] Activate Business Profile (Vietnamese)';
+  String get activateBusinessProfile =>
+      '[VI] Activate Business Profile (Vietnamese)';
 
   @override
   String get contentNotFound => '[VI] Content not found (Vietnamese)';
@@ -1537,7 +1654,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get shareLink => '[VI] Share Link (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Are you sure you want to delete this provider?';
+  String get REDACTED_TOKEN =>
+      '[VI] Are you sure you want to delete this provider?';
 
   @override
   String get deleteAppointment => '[VI] Delete Appointment (Vietnamese)';
@@ -1557,10 +1675,12 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get updateYourBusinessInformation => '[VI] Update your business information (Vietnamese)';
+  String get updateYourBusinessInformation =>
+      '[VI] Update your business information (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] No providers found. Add your first provider!';
+  String get REDACTED_TOKEN =>
+      '[VI] No providers found. Add your first provider!';
 
   @override
   String get parentDashboard => '[VI] Parent Dashboard (Vietnamese)';
@@ -1583,10 +1703,12 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => '[VI] Studio booking is only available on web (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Studio booking is only available on web (Vietnamese)';
 
   @override
-  String get errorLoadingBranchesE => '[VI] Error loading branches: \$e (Vietnamese)';
+  String get errorLoadingBranchesE =>
+      '[VI] Error loading branches: \$e (Vietnamese)';
 
   @override
   String REDACTED_TOKEN(Object dateTime) {
@@ -1602,13 +1724,15 @@ class AppLocalizationsVi extends AppLocalizations {
   String get none => '[VI] None (Vietnamese)';
 
   @override
-  String get failedToUpdateConsentE => '[VI] Failed to update consent: \$e (Vietnamese)';
+  String get failedToUpdateConsentE =>
+      '[VI] Failed to update consent: \$e (Vietnamese)';
 
   @override
   String get welcome1 => '[VI] Welcome (Vietnamese)';
 
   @override
-  String get failedToCreateSessionE => '[VI] Failed to create session: \$e (Vietnamese)';
+  String get failedToCreateSessionE =>
+      '[VI] Failed to create session: \$e (Vietnamese)';
 
   @override
   String get inviteContact => '[VI] Invite Contact (Vietnamese)';
@@ -1617,7 +1741,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get surveyEditor => '[VI] Survey Editor (Vietnamese)';
 
   @override
-  String get failedToStartBasicSubscriptionE => '[VI] Failed to start Basic subscription: \$e (Vietnamese)';
+  String get failedToStartBasicSubscriptionE =>
+      '[VI] Failed to start Basic subscription: \$e (Vietnamese)';
 
   @override
   String get mySchedule => '[VI] My Schedule (Vietnamese)';
@@ -1637,10 +1762,12 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get settingsSavedSuccessfully => '[VI] Settings saved successfully! (Vietnamese)';
+  String get settingsSavedSuccessfully =>
+      '[VI] Settings saved successfully! (Vietnamese)';
 
   @override
-  String get linkCopiedToClipboard => '[VI] Link copied to clipboard! (Vietnamese)';
+  String get linkCopiedToClipboard =>
+      '[VI] Link copied to clipboard! (Vietnamese)';
 
   @override
   String get accept1 => '[VI] Accept (Vietnamese)';
@@ -1657,7 +1784,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get roomDeletedSuccessfully => '[VI] Room deleted successfully! (Vietnamese)';
+  String get roomDeletedSuccessfully =>
+      '[VI] Room deleted successfully! (Vietnamese)';
 
   @override
   String get businessCalendar => '[VI] Business Calendar (Vietnamese)';
@@ -1677,7 +1805,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get addNewRoom => '[VI] Add New Room (Vietnamese)';
 
   @override
-  String get requireParentApproval => '[VI] Require Parent Approval (Vietnamese)';
+  String get requireParentApproval =>
+      '[VI] Require Parent Approval (Vietnamese)';
 
   @override
   String get closed => '[VI] Closed (Vietnamese)';
@@ -1722,7 +1851,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get cancel1 => '[VI] Cancel (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Subscription activated successfully! (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Subscription activated successfully! (Vietnamese)';
 
   @override
   String activityLogaction(Object action) {
@@ -1733,7 +1863,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get broadcast => '[VI] Broadcast (Vietnamese)';
 
   @override
-  String get noEventsScheduledThisWeek => '[VI] No events scheduled this week (Vietnamese)';
+  String get noEventsScheduledThisWeek =>
+      '[VI] No events scheduled this week (Vietnamese)';
 
   @override
   String get googleCalendar => '[VI] Google Calendar (Vietnamese)';
@@ -1745,7 +1876,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get childDashboard => '[VI] Child Dashboard (Vietnamese)';
 
   @override
-  String get failedToUploadBackgroundE => '[VI] Failed to upload background: \$e (Vietnamese)';
+  String get failedToUploadBackgroundE =>
+      '[VI] Failed to upload background: \$e (Vietnamese)';
 
   @override
   String linkchildidsubstring08(Object linkId) {
@@ -1764,7 +1896,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get noAppointments => '[VI] No appointments (Vietnamese)';
 
   @override
-  String get unlimitedBookingsPerWeek => '[VI] • Unlimited bookings per week (Vietnamese)';
+  String get unlimitedBookingsPerWeek =>
+      '[VI] • Unlimited bookings per week (Vietnamese)';
 
   @override
   String errorDetailsLogerrortype(Object errorType, Object logErrorType) {
@@ -1772,16 +1905,19 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get scheduledAtScheduledat => '[VI] Scheduled at: \$scheduledAt (Vietnamese)';
+  String get scheduledAtScheduledat =>
+      '[VI] Scheduled at: \$scheduledAt (Vietnamese)';
 
   @override
   String get selectStaff => '[VI] Select Staff (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Subscription cancelled successfully (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Subscription cancelled successfully (Vietnamese)';
 
   @override
-  String get pleaseLogInToViewYourProfile => 'يرجى تسجيل الدخول لعرض ملفك الشخصي';
+  String get pleaseLogInToViewYourProfile =>
+      'يرجى تسجيل الدخول لعرض ملفك الشخصي';
 
   @override
   String get cancelAppointment => '[VI] Cancel Appointment (Vietnamese)';
@@ -1795,7 +1931,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get businessSignup => '[VI] Business Signup (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Business Completion Screen - Coming Soon (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Business Completion Screen - Coming Soon (Vietnamese)';
 
   @override
   String get createGame1 => '[VI] Create Game (Vietnamese)';
@@ -1806,10 +1943,12 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAPromoCode => '[VI] Please enter a promo code (Vietnamese)';
+  String get pleaseEnterAPromoCode =>
+      '[VI] Please enter a promo code (Vietnamese)';
 
   @override
-  String get errorLoadingAvailabilityE => '[VI] Error loading availability: \$e (Vietnamese)';
+  String get errorLoadingAvailabilityE =>
+      '[VI] Error loading availability: \$e (Vietnamese)';
 
   @override
   String get parentalControls => '[VI] Parental Controls (Vietnamese)';
@@ -1818,13 +1957,15 @@ class AppLocalizationsVi extends AppLocalizations {
   String get editBusinessProfile => 'تحرير الملف التجاري';
 
   @override
-  String get childLinkedSuccessfully => '[VI] Child linked successfully! (Vietnamese)';
+  String get childLinkedSuccessfully =>
+      '[VI] Child linked successfully! (Vietnamese)';
 
   @override
   String get create => '[VI] Create (Vietnamese)';
 
   @override
-  String get noExternalMeetingsFound => '[VI] No external meetings found. (Vietnamese)';
+  String get noExternalMeetingsFound =>
+      '[VI] No external meetings found. (Vietnamese)';
 
   @override
   String staffSelectionstaffdisplayname(Object staffName) {
@@ -1832,13 +1973,15 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get pleaseEnterAValidEmailAddress => '[VI] Please enter a valid email address';
+  String get pleaseEnterAValidEmailAddress =>
+      '[VI] Please enter a valid email address';
 
   @override
   String get schedulerScreen => '[VI] Scheduler Screen (Vietnamese)';
 
   @override
-  String get clientUpdatedSuccessfully => '[VI] Client updated successfully! (Vietnamese)';
+  String get clientUpdatedSuccessfully =>
+      '[VI] Client updated successfully! (Vietnamese)';
 
   @override
   String get surveyResponses => '[VI] Survey Responses (Vietnamese)';
@@ -1864,10 +2007,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get errorLoadingEvents => '[VI] Error loading events (Vietnamese)';
 
   @override
-  String get errorLoadingOrganizations => '[VI] errorLoadingOrganizations (TRANSLATE)';
+  String get errorLoadingOrganizations =>
+      '[VI] errorLoadingOrganizations (TRANSLATE)';
 
   @override
-  String get businessLoginScreenComingSoon => '[VI] Business Login Screen - Coming Soon';
+  String get businessLoginScreenComingSoon =>
+      '[VI] Business Login Screen - Coming Soon';
 
   @override
   String get success1 => '[VI] Success (Vietnamese)';
@@ -1886,10 +2031,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get readWrite => '[VI] Read & Write (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Redirecting to Stripe checkout for Basic plan... (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Redirecting to Stripe checkout for Basic plan... (Vietnamese)';
 
   @override
-  String get errorSavingConfigurationE => '[VI] Error saving configuration: \$e';
+  String get errorSavingConfigurationE =>
+      '[VI] Error saving configuration: \$e';
 
   @override
   String get pickDate => '[VI] Pick Date (Vietnamese)';
@@ -1925,10 +2072,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get businessLogin => '[VI] Business Login';
 
   @override
-  String get invoiceCreatedSuccessfully => '[VI] Invoice created successfully! (Vietnamese)';
+  String get invoiceCreatedSuccessfully =>
+      '[VI] Invoice created successfully! (Vietnamese)';
 
   @override
-  String get noTimeSeriesDataAvailable => '[VI] No time series data available (Vietnamese)';
+  String get noTimeSeriesDataAvailable =>
+      '[VI] No time series data available (Vietnamese)';
 
   @override
   String subscribeToWidgetplanname(Object planName) {
@@ -1941,7 +2090,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get failedToSendPrivacyRequestE => '[VI] Failed to send privacy request: \$e (Vietnamese)';
+  String get failedToSendPrivacyRequestE =>
+      '[VI] Failed to send privacy request: \$e (Vietnamese)';
 
   @override
   String get chooseYourPlan => '[VI] Choose Your Plan (Vietnamese)';
@@ -1956,13 +2106,15 @@ class AppLocalizationsVi extends AppLocalizations {
   String get eventCreated => '[VI] Event created (Vietnamese)';
 
   @override
-  String get subscribeToBasic499mo => '[VI] Subscribe to Basic (€4.99/mo) (Vietnamese)';
+  String get subscribeToBasic499mo =>
+      '[VI] Subscribe to Basic (€4.99/mo) (Vietnamese)';
 
   @override
   String get completion => '[VI] Completion (Vietnamese)';
 
   @override
-  String get supportTicketSubmitted => '[VI] Support ticket submitted (Vietnamese)';
+  String get supportTicketSubmitted =>
+      '[VI] Support ticket submitted (Vietnamese)';
 
   @override
   String get monetizationSettings => '[VI] Monetization Settings (Vietnamese)';
@@ -1977,10 +2129,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get deleteSurvey => '[VI] Delete Survey (Vietnamese)';
 
   @override
-  String get gameApprovedSuccessfully => '[VI] Game approved successfully! (Vietnamese)';
+  String get gameApprovedSuccessfully =>
+      '[VI] Game approved successfully! (Vietnamese)';
 
   @override
-  String get errorLoadingPermissionsError => '[VI] Error loading permissions: \$error (Vietnamese)';
+  String get errorLoadingPermissionsError =>
+      '[VI] Error loading permissions: \$error (Vietnamese)';
 
   @override
   String get referrals => '[VI] Referrals (Vietnamese)';
@@ -2022,7 +2176,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get organizations => '[VI] organizations (TRANSLATE)';
 
   @override
-  String get configurationSavedSuccessfully => '[VI] Configuration saved successfully!';
+  String get configurationSavedSuccessfully =>
+      '[VI] Configuration saved successfully!';
 
   @override
   String get createNewGame => '[VI] Create New Game (Vietnamese)';
@@ -2031,16 +2186,19 @@ class AppLocalizationsVi extends AppLocalizations {
   String get next1 => '[VI] Next (Vietnamese)';
 
   @override
-  String get backgroundUploadedSuccessfully => '[VI] Background uploaded successfully! (Vietnamese)';
+  String get backgroundUploadedSuccessfully =>
+      '[VI] Background uploaded successfully! (Vietnamese)';
 
   @override
-  String get noAppointmentRequestsFound => '[VI] No appointment requests found. (Vietnamese)';
+  String get noAppointmentRequestsFound =>
+      '[VI] No appointment requests found. (Vietnamese)';
 
   @override
   String get pleaseSignInToCreateASession => 'يرجى تسجيل الدخول لإنشاء جلسة';
 
   @override
-  String get restrictMatureContent => '[VI] Restrict mature content (Vietnamese)';
+  String get restrictMatureContent =>
+      '[VI] Restrict mature content (Vietnamese)';
 
   @override
   String get ambassadors => '[VI] Ambassadors (Vietnamese)';
@@ -2061,16 +2219,20 @@ class AppLocalizationsVi extends AppLocalizations {
   String get notifications1 => 'الإشعارات';
 
   @override
-  String get REDACTED_TOKEN => 'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
+  String get REDACTED_TOKEN =>
+      'تم جدولة جلسة مباشرة، في انتظار موافقة الوالد';
 
   @override
-  String get failedToCreateGameE => '[VI] Failed to create game: \$e (Vietnamese)';
+  String get failedToCreateGameE =>
+      '[VI] Failed to create game: \$e (Vietnamese)';
 
   @override
-  String get noChartDataAvailable => '[VI] No chart data available (Vietnamese)';
+  String get noChartDataAvailable =>
+      '[VI] No chart data available (Vietnamese)';
 
   @override
-  String get phonebasedBookingSystem => '[VI] • Phone-based booking system (Vietnamese)';
+  String get phonebasedBookingSystem =>
+      '[VI] • Phone-based booking system (Vietnamese)';
 
   @override
   String get enableNotifications1 => 'تفعيل الإشعارات';
@@ -2079,7 +2241,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get invoices => '[VI] Invoices (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => 'يرجى تفعيل ملفك التجاري للمتابعة';
+  String get REDACTED_TOKEN =>
+      'يرجى تفعيل ملفك التجاري للمتابعة';
 
   @override
   String scheduledAtArgsscheduledat(Object scheduledAt) {
@@ -2106,10 +2269,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get iDoNotConsent => '[VI] I Do Not Consent';
 
   @override
-  String get REDACTED_TOKEN => '[VI] No clients found. Add your first client! (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] No clients found. Add your first client! (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Settings dialog will be implemented here.';
+  String get REDACTED_TOKEN =>
+      '[VI] Settings dialog will be implemented here.';
 
   @override
   String get groupGroupid => '[VI] Group: \$groupId';
@@ -2121,7 +2286,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get forward => '[VI] Forward (Vietnamese)';
 
   @override
-  String get roomAddedSuccessfully => '[VI] Room added successfully! (Vietnamese)';
+  String get roomAddedSuccessfully =>
+      '[VI] Room added successfully! (Vietnamese)';
 
   @override
   String get option => '[VI] • \$option (Vietnamese)';
@@ -2132,7 +2298,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get crmDashboardWithAnalytics => '[VI] • CRM dashboard with analytics (Vietnamese)';
+  String get crmDashboardWithAnalytics =>
+      '[VI] • CRM dashboard with analytics (Vietnamese)';
 
   @override
   String get contentLibrary1 => '[VI] Content Library (Vietnamese)';
@@ -2141,28 +2308,34 @@ class AppLocalizationsVi extends AppLocalizations {
   String get reply => '[VI] Reply (Vietnamese)';
 
   @override
-  String get subscriptionManagement => '[VI] Subscription Management (Vietnamese)';
+  String get subscriptionManagement =>
+      '[VI] Subscription Management (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Monetization settings will be implemented here (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Monetization settings will be implemented here (Vietnamese)';
 
   @override
-  String get failedToApplyPromoCodeE => '[VI] Failed to apply promo code: \$e (Vietnamese)';
+  String get failedToApplyPromoCodeE =>
+      '[VI] Failed to apply promo code: \$e (Vietnamese)';
 
   @override
   String get editProvider => '[VI] Edit Provider';
 
   @override
-  String get localizationContribution => '[VI] Localization Contribution (Vietnamese)';
+  String get localizationContribution =>
+      '[VI] Localization Contribution (Vietnamese)';
 
   @override
   String get parentalConsent => '[VI] Parental Consent (Vietnamese)';
 
   @override
-  String get businessSignupScreenComingSoon => '[VI] Business Signup Screen - Coming Soon (Vietnamese)';
+  String get businessSignupScreenComingSoon =>
+      '[VI] Business Signup Screen - Coming Soon (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => '[VI] Are you sure you want to delete this appointment? (Vietnamese)';
+  String get REDACTED_TOKEN =>
+      '[VI] Are you sure you want to delete this appointment? (Vietnamese)';
 
   @override
   String get syncAppointment => '[VI] Sync Appointment (Vietnamese)';
@@ -2174,13 +2347,15 @@ class AppLocalizationsVi extends AppLocalizations {
   String get sessionRejected => 'تم رفض الجلسة';
 
   @override
-  String get businessSetupScreenComingSoon => '[VI] Business Setup Screen - Coming Soon (Vietnamese)';
+  String get businessSetupScreenComingSoon =>
+      '[VI] Business Setup Screen - Coming Soon (Vietnamese)';
 
   @override
   String get edit1 => '[VI] Edit (Vietnamese)';
 
   @override
-  String get noEventsScheduledThisMonth => '[VI] No events scheduled this month (Vietnamese)';
+  String get noEventsScheduledThisMonth =>
+      '[VI] No events scheduled this month (Vietnamese)';
 
   @override
   String get businessDashboard => '[VI] Business Dashboard (Vietnamese)';
@@ -2194,10 +2369,12 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get manageStaffAvailability => '[VI] Manage Staff Availability (Vietnamese)';
+  String get manageStaffAvailability =>
+      '[VI] Manage Staff Availability (Vietnamese)';
 
   @override
-  String get noMissingTranslations => '[VI] No missing translations (Vietnamese)';
+  String get noMissingTranslations =>
+      '[VI] No missing translations (Vietnamese)';
 
   @override
   String get skip => '[VI] Skip (Vietnamese)';
@@ -2211,7 +2388,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get noUsers => '[VI] noUsers (TRANSLATE)';
 
   @override
-  String get errorLoadingReferralCode => '[VI] Error loading referral code (Vietnamese)';
+  String get errorLoadingReferralCode =>
+      '[VI] Error loading referral code (Vietnamese)';
 
   @override
   String get allCountries => '[VI] All Countries (Vietnamese)';
@@ -2220,13 +2398,15 @@ class AppLocalizationsVi extends AppLocalizations {
   String get deleteGame => '[VI] Delete Game (Vietnamese)';
 
   @override
-  String get staffManagementTools => '[VI] • Staff management tools (Vietnamese)';
+  String get staffManagementTools =>
+      '[VI] • Staff management tools (Vietnamese)';
 
   @override
   String get deleteMessage => '[VI] Delete Message (Vietnamese)';
 
   @override
-  String get REDACTED_TOKEN => 'استقبال إشعارات الحجز عبر الرسائل النصية';
+  String get REDACTED_TOKEN =>
+      'استقبال إشعارات الحجز عبر الرسائل النصية';
 
   @override
   String get changeRole => '[VI] changeRole (TRANSLATE)';
@@ -2237,7 +2417,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get openingCustomerPortal => '[VI] Opening customer portal... (Vietnamese)';
+  String get openingCustomerPortal =>
+      '[VI] Opening customer portal... (Vietnamese)';
 
   @override
   String get signOut => '[VI] Sign Out (Vietnamese)';
@@ -2248,7 +2429,8 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال الملف التجاري - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال الملف التجاري - قريباً';
 
   @override
   String get upgradeToBusiness => '[VI] Upgrade to Business (Vietnamese)';
@@ -2274,7 +2456,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get deleteMyAccount => 'حذف حسابي';
 
   @override
-  String get REDACTED_TOKEN => 'شاشة إدخال مواعيد الأعمال - قريباً';
+  String get REDACTED_TOKEN =>
+      'شاشة إدخال مواعيد الأعمال - قريباً';
 
   @override
   String get viewResponses => '[VI] View Responses (Vietnamese)';
@@ -2303,7 +2486,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get approve => 'موافقة';
 
   @override
-  String get REDACTED_TOKEN => 'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
+  String get REDACTED_TOKEN =>
+      'لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!';
 
   @override
   String get subscribe => 'اشتراك';
@@ -2321,7 +2505,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get ad_pre_title => 'Watch an ad to confirm your appointment';
 
   @override
-  String get ad_pre_description => 'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
+  String get ad_pre_description =>
+      'As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.';
 
   @override
   String get watch_ad_button => 'Watch Ad';
@@ -2330,7 +2515,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get upgrade_button => 'Upgrade to Premium (€4)';
 
   @override
-  String get ad_post_title => 'Ad finished! You may now confirm your appointment.';
+  String get ad_post_title =>
+      'Ad finished! You may now confirm your appointment.';
 
   @override
   String get confirm_appointment_button => 'Confirm Appointment';
@@ -2378,7 +2564,8 @@ class AppLocalizationsVi extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement => 'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement =>
+      'Refer at least 10 new users monthly to maintain ambassador status';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2426,10 +2613,12 @@ class AppLocalizationsVi extends AppLocalizations {
   String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
 
   @override
-  String get ambassadorWelcomeMessage => 'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage =>
+      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
 
   @override
-  String get ambassadorPromotionTitle => '[VI] Congratulations! You\'re now an Ambassador! (Vietnamese)';
+  String get ambassadorPromotionTitle =>
+      '[VI] Congratulations! You\'re now an Ambassador! (Vietnamese)';
 
   @override
   String ambassadorPromotionBody(String tier) {
@@ -2440,7 +2629,11 @@ class AppLocalizationsVi extends AppLocalizations {
   String get tierUpgradeTitle => '[VI] Tier Upgrade! 🎉 (Vietnamese)';
 
   @override
-  String tierUpgradeBody(String previousTier, String newTier, String totalReferrals) {
+  String tierUpgradeBody(
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[VI] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Vietnamese)';
   }
 
@@ -2448,20 +2641,29 @@ class AppLocalizationsVi extends AppLocalizations {
   String get monthlyReminderTitle => '[VI] Monthly Goal Reminder (Vietnamese)';
 
   @override
-  String monthlyReminderBody(String currentReferrals, String targetReferrals, String daysRemaining) {
+  String monthlyReminderBody(
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[VI] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Vietnamese)';
   }
 
   @override
-  String get performanceWarningTitle => '[VI] Ambassador Performance Alert (Vietnamese)';
+  String get performanceWarningTitle =>
+      '[VI] Ambassador Performance Alert (Vietnamese)';
 
   @override
-  String performanceWarningBody(String currentReferrals, String minimumRequired) {
+  String performanceWarningBody(
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[VI] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Vietnamese)';
   }
 
   @override
-  String get ambassadorDemotionTitle => '[VI] Ambassador Status Update (Vietnamese)';
+  String get ambassadorDemotionTitle =>
+      '[VI] Ambassador Status Update (Vietnamese)';
 
   @override
   String ambassadorDemotionBody(String reason) {
