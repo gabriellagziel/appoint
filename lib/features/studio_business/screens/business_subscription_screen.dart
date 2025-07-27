@@ -50,7 +50,6 @@ class REDACTED_TOKEN
             backgroundColor: Colors.red,
           ),
         );
-      }
     } finally {
       if (mounted) {
         setState(() => _isLoading = false);

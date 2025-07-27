@@ -104,7 +104,6 @@ class _FamilySupportScreenState extends ConsumerState<FamilySupportScreen> {
     } catch (e) {
         ScaffoldMessenger.of(context)
             .showSnackBar(SnackBar(content: Text('Error: $e')));
-      }
     } finally {
       if (mounted) setState(() => _submitting = false);
     }
