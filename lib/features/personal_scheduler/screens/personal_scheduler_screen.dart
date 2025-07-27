@@ -173,7 +173,7 @@ class _PersonalSchedulerScreenState
             ),
             TextButton(
               onPressed: () {
-                id = existing?.id ?? const Uuid().v4();
+                final String id = existing?.id ?? const Uuid().v4();
                 final userId =
                     existing?.userId ?? ref.read(authProvider).currentUser!.uid;
                 final appt = PersonalAppointment(
