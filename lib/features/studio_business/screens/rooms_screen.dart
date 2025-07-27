@@ -369,4 +369,3 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
         );
       }
   }
-}

@@ -762,7 +762,6 @@ class _BusinessSubscriptionScreenState
         ],
       ),
     );
-  }
 
   IconData _getPlanIcon(SubscriptionPlan plan) {
     switch (plan) {
@@ -772,8 +771,5 @@ class _BusinessSubscriptionScreenState
         return Icons.business_center;
       case SubscriptionPlan.businessPlus:
         return Icons.workspace_premium;
-    }
-  }
 
   String _formatDate(DateTime date) => '${date.day}/${date.month}/${date.year}';
-}

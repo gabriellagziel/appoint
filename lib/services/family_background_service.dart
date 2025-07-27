@@ -367,7 +367,6 @@ class FamilyBackgroundService {
 
   // Method to check if service is running
   bool get isRunning => _isRunning;
-}
 
 // Extension method to easily access the service
 extension FamilyBackgroundServiceExtension on FamilyBackgroundService {

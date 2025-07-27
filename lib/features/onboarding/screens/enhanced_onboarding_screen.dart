@@ -776,10 +776,9 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
     
     return languages[code] ?? 'Not selected';
   }
-}
 
 enum UserType {
   personal,
   business,
   family,
-} 
+}
