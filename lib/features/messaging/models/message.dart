@@ -165,7 +165,7 @@ class Conversation {
       _$ConversationFromJson(json);
 
   final String id;
-  final Chat chat;
+  final ChatRoom chat;
   final List<Message> messages;
   final int unreadCount;
   final Map<String, UserProfile>? participantProfiles;

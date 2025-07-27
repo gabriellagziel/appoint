@@ -23,11 +23,11 @@ class ThemeNotifier extends StateNotifier<ThemeState> {
             const ThemeState(palette: AppPalette.blue, mode: ThemeMode.system),);
 
   void setPalette(AppPalette palette) {
-    final state = state.copyWith(palette: palette);
+    state = state.copyWith(palette: palette);
   }
 
   void setMode(ThemeMode mode) {
-    final state = state.copyWith(mode: mode);
+    state = state.copyWith(mode: mode);
   }
 }
 
