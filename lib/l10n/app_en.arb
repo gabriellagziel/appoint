@@ -3115,5 +3115,65 @@
         "type": "String"
       }
     }
+  },
+  "sendNow": "Send Now",
+  "@sendNow": {
+    "description": "Send now button"
+  },
+  "details": "Details",
+  "@details": {
+    "description": "Details label"
+  },
+  "dashboard": "Dashboard",
+  "@dashboard": {
+    "description": "Dashboard label"
+  },
+  "myInvites": "My Invites",
+  "@myInvites": {
+    "description": "My invites label"
+  },
+  "accept": "Accept",
+  "@accept": {
+    "description": "Accept button"
+  },
+  "createNew": "Create New",
+  "@createNew": {
+    "description": "Create new button"
+  },
+  "viewAll": "View All",
+  "@viewAll": {
+    "description": "View all button"
+  },
+  "myProfile": "My Profile",
+  "@myProfile": {
+    "description": "My profile label"
+  },
+  "staffScreenTBD": "Staff Screen TBD",
+  "@staffScreenTBD": {
+    "description": "Staff screen placeholder"
+  },
+  "adminScreenTBD": "Admin Screen TBD",
+  "@adminScreenTBD": {
+    "description": "Admin screen placeholder"
+  },
+  "clientScreenTBD": "Client Screen TBD",
+  "@clientScreenTBD": {
+    "description": "Client screen placeholder"
+  },
+  "shareOnWhatsApp": "Share on WhatsApp",
+  "@shareOnWhatsApp": {
+    "description": "Share on WhatsApp button"
+  },
+  "customizeMessage": "Customize Message",
+  "@customizeMessage": {
+    "description": "Customize message label"
+  },
+  "enterGroupName": "Enter Group Name",
+  "@enterGroupName": {
+    "description": "Enter group name prompt"
+  },
+  "sent": "Sent",
+  "@sent": {
+    "description": "Sent status"
   }
 }
