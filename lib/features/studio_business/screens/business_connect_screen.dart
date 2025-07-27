@@ -130,4 +130,3 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
     // Simple validation - in a real app, this would check against a database
     return code.startsWith('UPGRADE_') && code.length >= 10;
   }
-}
