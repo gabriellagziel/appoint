@@ -301,7 +301,6 @@ class FamilyBackgroundService {
       }
     } catch (e) {
       // Removed debug print: debugPrint('Error sending expired request notification: $e');
-      }
     }
   }
 
