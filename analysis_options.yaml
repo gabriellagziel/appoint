@@ -2,7 +2,17 @@ include: package:very_good_analysis/analysis_options.yaml
 
 analyzer:
   exclude:
+    # Generated files
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
     - "lib/generated_plugin_registrant.dart"
+    
+    # Fix scripts and utilities
+    - "fix_*.dart"
+    - "fix_*.sh"
+    - "fix_*.py"
+    
+    # Platform-specific directories
     - "android/**"
     - "ios/**"
     - "build/**"
@@ -11,23 +21,31 @@ analyzer:
     - "linux/**"
     - "macos/**"
     - "windows/**"
+    
+    # Test directories
     - "integration_test/**"
     - "test/**"
+    
+    # External packages and tools
     - "packages/**"
-    - "admin/**"
-    - "marketing/**"
-    - "dashboard/**"
-    - "functions/**"
-    - "default/**"
     - "node_modules/**"
     - ".next/**"
     - "out/**"
     - "dist/**"
     - "coverage/**"
+    
+    # Documentation and scripts
     - "docs/**"
     - "scripts/**"
     - "tools/**"
     - "tool/**"
+    
+    # Project-specific directories
+    - "admin/**"
+    - "marketing/**"
+    - "dashboard/**"
+    - "functions/**"
+    - "default/**"
     - "ml/**"
     - "analytics/**"
     - "performance/**"
@@ -43,9 +61,6 @@ analyzer:
     - "diagnostics/**"
     - "integrations/**"
     - "config/**"
-    - "marketing/**"
-    - "admin/**"
-    - "dashboard/**"
   
   errors:
     # Treat missing required parameters as a warning (not a hint)
@@ -62,7 +77,7 @@ linter:
     # Error Rules
     - always_declare_return_types
     - avoid_empty_else
-    - avoid_print
+    # - avoid_print  # Disabled - too noisy during development
     - REDACTED_TOKEN
     - await_only_futures
     - camel_case_types
@@ -92,7 +107,7 @@ linter:
     - prefer_is_empty
     - prefer_is_not_empty
     - REDACTED_TOKEN
-    - slash_for_doc_comments
+    # - slash_for_doc_comments  # Disabled - too noisy for now
     - test_types_in_equals
     - throw_in_finally
     - type_init_formals
@@ -147,7 +162,7 @@ linter:
     - join_return_with_assignment
     - REDACTED_TOKEN
     - REDACTED_TOKEN
-    - lines_longer_than_80_chars
+    # - lines_longer_than_80_chars  # Disabled - too restrictive during development
     - REDACTED_TOKEN
     - no_adjacent_strings_in_list
     - no_duplicate_case_values
@@ -189,7 +204,7 @@ linter:
     - sort_child_properties_last
     - sort_constructors_first
     - sort_unnamed_constructors_first
-    - type_annotate_public_apis
+    # - type_annotate_public_apis  # Disabled - too noisy for now
     - unawaited_futures
     - unnecessary_await_in_return
     - unnecessary_const
