@@ -72,6 +72,7 @@ class _BusinessSubscriptionScreenState
         );
       }
     } catch (e) {
+      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to start Professional subscription: $e'),
@@ -101,6 +102,7 @@ class _BusinessSubscriptionScreenState
         );
       }
     } catch (e) {
+      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to start Business Plus subscription: $e'),
@@ -142,6 +144,7 @@ class _BusinessSubscriptionScreenState
         );
       }
     } catch (e) {
+      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to apply promo code: $e'),
@@ -169,6 +172,7 @@ class _BusinessSubscriptionScreenState
         );
       }
     } catch (e) {
+      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to open customer portal: $e'),
@@ -771,5 +775,8 @@ class _BusinessSubscriptionScreenState
         return Icons.business_center;
       case SubscriptionPlan.businessPlus:
         return Icons.workspace_premium;
+    }
+  }
 
   String _formatDate(DateTime date) => '${date.day}/${date.month}/${date.year}';
+}
