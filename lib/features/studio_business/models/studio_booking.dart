@@ -4,7 +4,6 @@ part 'studio_booking.g.dart';
 
 @JsonSerializable()
 class StudioBooking {
-
   StudioBooking({
     required this.id,
     required this.customerId,

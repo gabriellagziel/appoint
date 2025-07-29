@@ -7,12 +7,15 @@ class FadeSlideRoute<T> extends PageRouteBuilder<T> {
     this.duration = const Duration(milliseconds: 300),
     this.direction = AxisDirection.right,
   }) : super(
-          pageBuilder:
-              (context, final animation, final secondaryAnimation) =>
-                  builder(context),
+          pageBuilder: (context, final animation, final secondaryAnimation) =>
+              builder(context),
           transitionDuration: duration,
-          transitionsBuilder: (final context, final animation,
-              secondaryAnimation, final child,) {
+          transitionsBuilder: (
+            final context,
+            final animation,
+            secondaryAnimation,
+            final child,
+          ) {
             final offsetAnimation = Tween<Offset>(
               begin: _offsetForDirection(direction),
               end: Offset.zero,

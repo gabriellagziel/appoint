@@ -4,7 +4,6 @@ import 'package:appoint/config/environment_config.dart';
 import 'package:appoint/services/whatsapp_share_service.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
-import 'package:uni_links/uni_links.dart';
 
 class CustomDeepLinkService {
   CustomDeepLinkService({WhatsAppShareService? whatsappShareService}) {
@@ -17,7 +16,7 @@ class CustomDeepLinkService {
   // GlobalKey is kept for future navigation features.
   // ignore: unused_field
   GlobalKey<NavigatorState>? _navigatorKey;
-  
+
   // Variable declarations for the service
   late Uri? initialUri;
 

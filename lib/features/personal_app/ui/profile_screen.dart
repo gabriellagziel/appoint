@@ -34,8 +34,11 @@ class ProfileScreen extends ConsumerWidget {
               children: [
                 const CircleAvatar(
                   radius: 40,
-                  child: Icon(Icons.person,
-                      size: 40, semanticLabel: 'profile icon',),
+                  child: Icon(
+                    Icons.person,
+                    size: 40,
+                    semanticLabel: 'profile icon',
+                  ),
                 ),
                 const SizedBox(height: AppSpacing.md),
                 Text(
@@ -49,7 +52,8 @@ class ProfileScreen extends ConsumerWidget {
                 const SizedBox(height: AppSpacing.xs),
                 subscriptionAsync.when(
                   data: (isSub) => Text(
-                    isSub ? 'Premium Subscriber' : 'Free User'),
+                    isSub ? 'Premium Subscriber' : 'Free User',
+                  ),
                   loading: () => const Text('Checking subscription...'),
                   error: (_, final __) =>
                       const Text('Subscription unavailable'),

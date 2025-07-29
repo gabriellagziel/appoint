@@ -173,8 +173,11 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
     );
   }
 
-  void _showEditClientDialog(final BuildContext context, final String clientId,
-      Map<String, dynamic> client,) {
+  void _showEditClientDialog(
+    final BuildContext context,
+    final String clientId,
+    Map<String, dynamic> client,
+  ) {
     _nameController.text = client['name'] ?? '';
     _emailController.text = client['email'] ?? '';
     _phoneController.text = client['phone'] ?? '';
@@ -252,17 +255,17 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
         'updatedAt': DateTime.now().toIso8601String(),
       });
 
-              if (mounted) {
-          Navigator.pop(context);
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Client added successfully!')),
-          );
-        }
-      } catch (e) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Error: $e')),
-          );
-      } finally {
+      if (mounted) {
+        Navigator.pop(context);
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Client added successfully!')),
+        );
+      }
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error: $e')),
+      );
+    } finally {
       if (mounted) {
         setState(() => _isAdding = false);
       }
@@ -298,9 +301,9 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
         );
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: $e')),
-        );
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error: $e')),
+      );
     } finally {
       if (mounted) {
         setState(() => _isAdding = false);
@@ -321,9 +324,9 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
         );
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: $e')),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error: $e')),
+      );
+    }
   }
 }

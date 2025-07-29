@@ -7,9 +7,9 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 class SecurityService {
   factory SecurityService() => _instance;
   SecurityService._internal();
-  static SecurityService _instance = SecurityService._internal();
+  static final SecurityService _instance = SecurityService._internal();
 
-  FlutterSecureStorage _secureStorage = const FlutterSecureStorage();
+  final FlutterSecureStorage _secureStorage = const FlutterSecureStorage();
 
   /// Validate input data
   static bool isValidEmail(String email) {
@@ -53,7 +53,8 @@ class SecurityService {
   }
 
   /// Retrieve sensitive data securely
-  Future<String?> getSecureData(String key) async => _secureStorage.read(key: key);
+  Future<String?> getSecureData(String key) async =>
+      _secureStorage.read(key: key);
 
   /// Delete sensitive data
   Future<void> deleteSecureData(String key) async {
@@ -134,8 +135,10 @@ class SecurityService {
   }
 
   /// Log security event
-  static void logSecurityEvent(final String event,
-      {Map<String, dynamic>? details,}) {
+  static void logSecurityEvent(
+    final String event, {
+    Map<String, dynamic>? details,
+  }) {
     if (kDebugMode) {
       // Removed debug print: debugPrint('🔒 Security Event: $event');
       if (details != null) {
@@ -147,7 +150,8 @@ class SecurityService {
 }
 
 // Riverpod providers
-final securityServiceProvider = Provider<SecurityService>((ref) => SecurityService());
+final securityServiceProvider =
+    Provider<SecurityService>((ref) => SecurityService());
 
 final securityEnabledProvider = StateProvider<bool>((ref) {
   return true; // Always enabled

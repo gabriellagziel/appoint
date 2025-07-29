@@ -4,7 +4,6 @@ part 'studio_profile.g.dart';
 
 @JsonSerializable()
 class StudioProfile {
-
   StudioProfile({
     required this.id,
     required this.name,
@@ -12,7 +11,12 @@ class StudioProfile {
     required this.address,
     required this.phone,
     required this.email,
-    required this.services, required this.equipment, required this.studioHours, required this.createdAt, required this.updatedAt, this.website = '',
+    required this.services,
+    required this.equipment,
+    required this.studioHours,
+    required this.createdAt,
+    required this.updatedAt,
+    this.website = '',
     this.logoUrl,
     this.coverImageUrl,
     this.photos = const [],
@@ -57,22 +61,23 @@ class StudioProfile {
     final bool? isActive,
     final DateTime? createdAt,
     final DateTime? updatedAt,
-  }) => StudioProfile(
-      id: id ?? this.id,
-      name: name ?? this.name,
-      description: description ?? this.description,
-      address: address ?? this.address,
-      phone: phone ?? this.phone,
-      email: email ?? this.email,
-      website: website ?? this.website,
-      services: services ?? this.services,
-      equipment: equipment ?? this.equipment,
-      studioHours: studioHours ?? this.studioHours,
-      logoUrl: logoUrl ?? this.logoUrl,
-      coverImageUrl: coverImageUrl ?? this.coverImageUrl,
-      photos: photos ?? this.photos,
-      isActive: isActive ?? this.isActive,
-      createdAt: createdAt ?? this.createdAt,
-      updatedAt: updatedAt ?? this.updatedAt,
-    );
+  }) =>
+      StudioProfile(
+        id: id ?? this.id,
+        name: name ?? this.name,
+        description: description ?? this.description,
+        address: address ?? this.address,
+        phone: phone ?? this.phone,
+        email: email ?? this.email,
+        website: website ?? this.website,
+        services: services ?? this.services,
+        equipment: equipment ?? this.equipment,
+        studioHours: studioHours ?? this.studioHours,
+        logoUrl: logoUrl ?? this.logoUrl,
+        coverImageUrl: coverImageUrl ?? this.coverImageUrl,
+        photos: photos ?? this.photos,
+        isActive: isActive ?? this.isActive,
+        createdAt: createdAt ?? this.createdAt,
+        updatedAt: updatedAt ?? this.updatedAt,
+      );
 }

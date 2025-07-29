@@ -36,7 +36,8 @@ class BusinessUtils {
   }
 
   /// Check if user type is a business type (business or studio)
-  static bool isBusinessType(UserType userType) => userType == UserType.business || userType == UserType.studio;
+  static bool isBusinessType(UserType userType) =>
+      userType == UserType.business || userType == UserType.studio;
 
   /// Get the appropriate dashboard title for a user type
   static String getDashboardTitle(UserType userType) {

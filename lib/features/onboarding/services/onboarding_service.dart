@@ -50,7 +50,8 @@ class OnboardingService {
     // Save to local storage
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('onboarding_completed', true);
-    await prefs.setString('user_type', onboardingData['userType']?.toString() ?? '');
+    await prefs.setString(
+        'user_type', onboardingData['userType']?.toString() ?? '');
     await prefs.setString('language', onboardingData['language'] ?? 'en');
   }
 
@@ -123,11 +124,11 @@ class OnboardingService {
   Future<Map<String, dynamic>> getOnboardingAnalytics() async {
     final snapshot = await _firestore.collection('users').get();
     final users = snapshot.docs;
-    
-    int totalUsers = users.length;
-    int completedOnboarding = 0;
-    Map<String, int> userTypeCounts = {};
-    Map<String, int> languageCounts = {};
+
+    final totalUsers = users.length;
+    var completedOnboarding = 0;
+    final userTypeCounts = <String, int>{};
+    final languageCounts = <String, int>{};
 
     for (final user in users) {
       final data = user.data();
@@ -149,9 +150,10 @@ class OnboardingService {
     return {
       'totalUsers': totalUsers,
       'completedOnboarding': completedOnboarding,
-      'completionRate': totalUsers > 0 ? (completedOnboarding / totalUsers) * 100 : 0,
+      'completionRate':
+          totalUsers > 0 ? (completedOnboarding / totalUsers) * 100 : 0,
       'userTypeDistribution': userTypeCounts,
       'languageDistribution': languageCounts,
     };
   }
-} 
+}

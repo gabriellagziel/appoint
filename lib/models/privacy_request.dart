@@ -1,5 +1,4 @@
 class PrivacyRequest {
-
   PrivacyRequest({
     required this.id,
     required this.childId,
@@ -8,8 +7,7 @@ class PrivacyRequest {
     required this.requestedAt,
   });
 
-  factory PrivacyRequest.fromJson(Map<String, dynamic> json) =>
-      PrivacyRequest(
+  factory PrivacyRequest.fromJson(Map<String, dynamic> json) => PrivacyRequest(
         id: json['id'],
         childId: json['childId'],
         type: json['type'],

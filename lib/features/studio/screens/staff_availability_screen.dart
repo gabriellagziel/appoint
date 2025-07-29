@@ -148,8 +148,11 @@ class StaffAvailabilityScreen extends ConsumerWidget {
     );
   }
 
-  void _showSlotDialog(final BuildContext context, final WidgetRef ref,
-      {SlotWithId? slot,}) {
+  void _showSlotDialog(
+    final BuildContext context,
+    final WidgetRef ref, {
+    SlotWithId? slot,
+  }) {
     showDialog(
       context: context,
       builder: (context) => SlotDialog(slot: slot),
@@ -157,13 +160,17 @@ class StaffAvailabilityScreen extends ConsumerWidget {
   }
 
   void _confirmDelete(
-      BuildContext context, final WidgetRef ref, final String slotId,) {
+    BuildContext context,
+    final WidgetRef ref,
+    final String slotId,
+  ) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
         title: const Text('Delete Slot'),
         content: const Text(
-            'Are you sure you want to delete this availability slot?'),
+          'Are you sure you want to delete this availability slot?',
+        ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
@@ -182,8 +189,11 @@ class StaffAvailabilityScreen extends ConsumerWidget {
     );
   }
 
-  Future<void> _deleteSlot(final BuildContext context, final WidgetRef ref,
-      String slotId,) async {
+  Future<void> _deleteSlot(
+    final BuildContext context,
+    final WidgetRef ref,
+    String slotId,
+  ) async {
     try {
       final service = ref.read(staffAvailabilityServiceProvider);
       await service.deleteSlot(slotId);
@@ -197,12 +207,12 @@ class StaffAvailabilityScreen extends ConsumerWidget {
         );
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Error deleting slot: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Error deleting slot: $e'),
+          backgroundColor: Colors.red,
+        ),
+      );
     }
   }
+}

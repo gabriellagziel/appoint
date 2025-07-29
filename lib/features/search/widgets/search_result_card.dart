@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 class SearchResultCard extends StatelessWidget {
   const SearchResultCard({
-    super.key,
     required this.result,
+    super.key,
     this.onTap,
   });
 
@@ -12,65 +12,61 @@ class SearchResultCard extends StatelessWidget {
   final VoidCallback? onTap;
 
   @override
-  Widget build(BuildContext context) {
-    return Card(
-      elevation: 2,
-      margin: EdgeInsets.zero,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(12),
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Image
-              _buildImage(),
-              const SizedBox(width: 16),
-              
-              // Content
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    _buildTitle(),
-                    const SizedBox(height: 4),
-                    _buildDescription(),
-                    const SizedBox(height: 8),
-                    _buildMetadata(),
-                  ],
+  Widget build(BuildContext context) => Card(
+        elevation: 2,
+        margin: EdgeInsets.zero,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(12),
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Image
+                _buildImage(),
+                const SizedBox(width: 16),
+
+                // Content
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      _buildTitle(),
+                      const SizedBox(height: 4),
+                      _buildDescription(),
+                      const SizedBox(height: 8),
+                      _buildMetadata(),
+                    ],
+                  ),
                 ),
-              ),
-              
-              // Action button
-              _buildActionButton(),
-            ],
+
+                // Action button
+                _buildActionButton(),
+              ],
+            ),
           ),
         ),
-      ),
-    );
-  }
+      );
 
-  Widget _buildImage() {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(8),
-      child: Container(
-        width: 60,
-        height: 60,
-        decoration: BoxDecoration(
-          color: Colors.grey[200]),
-        child: result.imageUrl.isNotEmpty
-            ? Image.network(
-                result.imageUrl,
-                fit: BoxFit.cover,
-                errorBuilder: (context, error, stackTrace) {
-                  return _buildPlaceholderIcon();
-                },
-              )
-            : _buildPlaceholderIcon(),
-      ),
-    );
-  }
+  Widget _buildImage() => ClipRRect(
+        borderRadius: BorderRadius.circular(8),
+        child: Container(
+          width: 60,
+          height: 60,
+          decoration: BoxDecoration(
+            color: Colors.grey[200],
+          ),
+          child: result.imageUrl.isNotEmpty
+              ? Image.network(
+                  result.imageUrl,
+                  fit: BoxFit.cover,
+                  errorBuilder: (context, error, stackTrace) =>
+                      _buildPlaceholderIcon(),
+                )
+              : _buildPlaceholderIcon(),
+        ),
+      );
 
   Widget _buildPlaceholderIcon() {
     IconData iconData;
@@ -80,15 +76,12 @@ class SearchResultCard extends StatelessWidget {
       case 'business':
         iconData = Icons.business;
         iconColor = Colors.blue;
-        break;
       case 'service':
         iconData = Icons.miscellaneous_services;
         iconColor = Colors.green;
-        break;
       case 'user':
         iconData = Icons.person;
         iconColor = Colors.orange;
-        break;
       default:
         iconData = Icons.search;
         iconColor = Colors.grey;
@@ -101,56 +94,52 @@ class SearchResultCard extends StatelessWidget {
     );
   }
 
-  Widget _buildTitle() {
-    return Row(
-      children: [
-        Expanded(
-          child: Text(
-            result.title,
-            style: const TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
+  Widget _buildTitle() => Row(
+        children: [
+          Expanded(
+            child: Text(
+              result.title,
+              style: const TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
             ),
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
           ),
-        ),
-        if (result.rating > 0) ...[
-          const SizedBox(width: 8),
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Icon(
-                Icons.star,
-                size: 16,
-                color: Colors.amber[600],
-              ),
-              const SizedBox(width: 4),
-              Text(
-                result.rating.toStringAsFixed(1),
-                style: const TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
+          if (result.rating > 0) ...[
+            const SizedBox(width: 8),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(
+                  Icons.star,
+                  size: 16,
+                  color: Colors.amber[600],
                 ),
-              ),
-            ],
-          ),
+                const SizedBox(width: 4),
+                Text(
+                  result.rating.toStringAsFixed(1),
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ],
+            ),
+          ],
         ],
-      ],
-    );
-  }
+      );
 
-  Widget _buildDescription() {
-    return Text(
-      result.description,
-      style: TextStyle(
-        fontSize: 14,
-        color: Colors.grey[600],
-      ),
-      maxLines: 2,
-      overflow: TextOverflow.ellipsis,
-    );
-  }
+  Widget _buildDescription() => Text(
+        result.description,
+        style: TextStyle(
+          fontSize: 14,
+          color: Colors.grey[600],
+        ),
+        maxLines: 2,
+        overflow: TextOverflow.ellipsis,
+      );
 
   Widget _buildMetadata() {
     final metadataWidgets = <Widget>[];
@@ -251,7 +240,8 @@ class SearchResultCard extends StatelessWidget {
     }
 
     return Wrap(
-      children: metadataWidgets);
+      children: metadataWidgets,
+    );
   }
 
   Widget _buildActionButton() {
@@ -262,15 +252,12 @@ class SearchResultCard extends StatelessWidget {
       case 'business':
         iconData = Icons.visibility;
         tooltip = 'View Business';
-        break;
       case 'service':
         iconData = Icons.book_online;
         tooltip = 'Book Service';
-        break;
       case 'user':
         iconData = Icons.person_add;
         tooltip = 'View Profile';
-        break;
       default:
         iconData = Icons.arrow_forward;
         tooltip = 'View Details';
@@ -311,4 +298,4 @@ class SearchResultCard extends StatelessWidget {
         return 'Other';
     }
   }
-} 
+}

@@ -1,17 +1,16 @@
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/models/custom_form_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:appoint/models/custom_form_field.dart';
-import 'package:appoint/l10n/app_localizations.dart';
 
 class FormBuilder extends StatefulWidget {
-  final List<CustomFormField> initialFields;
-  final ValueChanged<List<CustomFormField>> onFieldsChanged;
-
   const FormBuilder({
+    required this.onFieldsChanged,
     super.key,
     this.initialFields = const [],
-    required this.onFieldsChanged,
   });
+  final List<CustomFormField> initialFields;
+  final ValueChanged<List<CustomFormField>> onFieldsChanged;
 
   @override
   State<FormBuilder> createState() => _FormBuilderState();
@@ -25,13 +24,15 @@ class _FormBuilderState extends State<FormBuilder> {
   void initState() {
     super.initState();
     _fields = List.from(widget.initialFields);
-    _nextOrder = _fields.isEmpty ? 0 : _fields.map((f) => f.order).reduce((a, b) => a > b ? a : b) + 1;
+    _nextOrder = _fields.isEmpty
+        ? 0
+        : _fields.map((f) => f.order).reduce((a, b) => a > b ? a : b) + 1;
   }
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -124,7 +125,7 @@ class _FormBuilderState extends State<FormBuilder> {
 
   Widget _buildFieldCard(CustomFormField field, int index) {
     final l10n = AppLocalizations.of(context)!;
-    
+
     return Card(
       key: ValueKey(field.id),
       margin: const EdgeInsets.only(bottom: 8),
@@ -222,7 +223,7 @@ class _FormBuilderState extends State<FormBuilder> {
 
   Widget _buildFieldPreview(CustomFormField field) {
     final l10n = AppLocalizations.of(context)!;
-    
+
     switch (field.type) {
       case CustomFormFieldType.text:
       case CustomFormFieldType.email:
@@ -235,7 +236,7 @@ class _FormBuilderState extends State<FormBuilder> {
             border: const OutlineInputBorder(),
           ),
         );
-        
+
       case CustomFormFieldType.textarea:
         return TextFormField(
           enabled: false,
@@ -266,10 +267,14 @@ class _FormBuilderState extends State<FormBuilder> {
             labelText: field.label,
             border: const OutlineInputBorder(),
           ),
-          items: field.options?.map((option) => DropdownMenuItem(
-            value: option,
-            child: Text(option),
-          )).toList(),
+          items: field.options
+              ?.map(
+                (option) => DropdownMenuItem(
+                  value: option,
+                  child: Text(option),
+                ),
+              )
+              .toList(),
           onChanged: null,
         );
 
@@ -279,12 +284,14 @@ class _FormBuilderState extends State<FormBuilder> {
           children: [
             Text(field.label),
             const SizedBox(height: 8),
-            ...?field.options?.map((option) => CheckboxListTile(
-              title: Text(option),
-              value: false,
-              onChanged: null,
-              dense: true,
-            )),
+            ...?field.options?.map(
+              (option) => CheckboxListTile(
+                title: Text(option),
+                value: false,
+                onChanged: null,
+                dense: true,
+              ),
+            ),
           ],
         );
 
@@ -302,8 +309,9 @@ class _FormBuilderState extends State<FormBuilder> {
             Text(field.label),
             const SizedBox(height: 8),
             Row(
-              children: List.generate(field.maxValue ?? 5, (index) => 
-                Icon(
+              children: List.generate(
+                field.maxValue ?? 5,
+                (index) => const Icon(
                   Icons.star_border,
                   color: Colors.amber,
                   size: 32,
@@ -379,7 +387,8 @@ class _FormBuilderState extends State<FormBuilder> {
     }
   }
 
-  String _getFieldTypeDisplayName(CustomFormFieldType type, AppLocalizations l10n) {
+  String _getFieldTypeDisplayName(
+      CustomFormFieldType type, AppLocalizations l10n) {
     switch (type) {
       case CustomFormFieldType.text:
         return l10n.textField;
@@ -418,7 +427,7 @@ class _FormBuilderState extends State<FormBuilder> {
 
   void _deleteField(int index) {
     final l10n = AppLocalizations.of(context)!;
-    
+
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -458,7 +467,7 @@ class _FormBuilderState extends State<FormBuilder> {
   }
 
   void _updateFieldsOrder() {
-    for (int i = 0; i < _fields.length; i++) {
+    for (var i = 0; i < _fields.length; i++) {
       _fields[i] = _fields[i].copyWith(order: i);
     }
   }
@@ -485,14 +494,13 @@ class _FormBuilderState extends State<FormBuilder> {
 }
 
 class FieldEditorDialog extends StatefulWidget {
-  final CustomFormField? field;
-  final ValueChanged<CustomFormField> onSave;
-
   const FieldEditorDialog({
+    required this.onSave,
     super.key,
     this.field,
-    required this.onSave,
   });
+  final CustomFormField? field;
+  final ValueChanged<CustomFormField> onSave;
 
   @override
   State<FieldEditorDialog> createState() => _FieldEditorDialogState();
@@ -510,7 +518,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
   final _maxLengthController = TextEditingController();
   final _validationPatternController = TextEditingController();
   final _validationMessageController = TextEditingController();
-  
+
   CustomFormFieldType _selectedType = CustomFormFieldType.text;
   bool _isRequired = false;
   List<String> _options = [];
@@ -540,7 +548,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    
+
     return AlertDialog(
       title: Text(widget.field == null ? l10n.addField : l10n.editField),
       content: SizedBox(
@@ -558,12 +566,14 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                     labelText: l10n.fieldType,
                     border: const OutlineInputBorder(),
                   ),
-                  items: CustomFormFieldType.values.map((type) => 
-                    DropdownMenuItem(
-                      value: type,
-                      child: Text(_getFieldTypeDisplayName(type, l10n)),
-                    ),
-                  ).toList(),
+                  items: CustomFormFieldType.values
+                      .map(
+                        (type) => DropdownMenuItem(
+                          value: type,
+                          child: Text(_getFieldTypeDisplayName(type, l10n)),
+                        ),
+                      )
+                      .toList(),
                   onChanged: (value) {
                     setState(() {
                       _selectedType = value!;
@@ -571,7 +581,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                   },
                 ),
                 const SizedBox(height: 16),
-                
+
                 // Label
                 TextFormField(
                   controller: _labelController,
@@ -587,7 +597,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                   },
                 ),
                 const SizedBox(height: 16),
-                
+
                 // Description
                 TextFormField(
                   controller: _descriptionController,
@@ -598,7 +608,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                   maxLines: 2,
                 ),
                 const SizedBox(height: 16),
-                
+
                 // Placeholder
                 if (_selectedType == CustomFormFieldType.text ||
                     _selectedType == CustomFormFieldType.textarea ||
@@ -614,7 +624,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                   ),
                   const SizedBox(height: 16),
                 ],
-                
+
                 // Required toggle
                 CheckboxListTile(
                   title: Text(l10n.requiredField),
@@ -626,7 +636,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                   },
                 ),
                 const SizedBox(height: 16),
-                
+
                 // Type-specific fields
                 ..._buildTypeSpecificFields(l10n),
               ],
@@ -652,7 +662,8 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
       case CustomFormFieldType.choice:
       case CustomFormFieldType.multiselect:
         return [
-          Text(l10n.options, style: const TextStyle(fontWeight: FontWeight.bold)),
+          Text(l10n.options,
+              style: const TextStyle(fontWeight: FontWeight.bold)),
           const SizedBox(height: 8),
           Row(
             children: [
@@ -796,7 +807,8 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
     });
   }
 
-  String _getFieldTypeDisplayName(CustomFormFieldType type, AppLocalizations l10n) {
+  String _getFieldTypeDisplayName(
+      CustomFormFieldType type, AppLocalizations l10n) {
     switch (type) {
       case CustomFormFieldType.text:
         return l10n.textField;
@@ -829,8 +841,8 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
     if (!_formKey.currentState!.validate()) return;
 
     // Validate options for choice/multiselect fields
-    if ((_selectedType == CustomFormFieldType.choice || 
-         _selectedType == CustomFormFieldType.multiselect) && 
+    if ((_selectedType == CustomFormFieldType.choice ||
+            _selectedType == CustomFormFieldType.multiselect) &&
         _options.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(AppLocalizations.of(context)!.optionsRequired)),
@@ -842,35 +854,35 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
       id: widget.field?.id ?? DateTime.now().millisecondsSinceEpoch.toString(),
       type: _selectedType,
       label: _labelController.text.trim(),
-      description: _descriptionController.text.trim().isEmpty 
-          ? null 
+      description: _descriptionController.text.trim().isEmpty
+          ? null
           : _descriptionController.text.trim(),
-      placeholder: _placeholderController.text.trim().isEmpty 
-          ? null 
+      placeholder: _placeholderController.text.trim().isEmpty
+          ? null
           : _placeholderController.text.trim(),
-      defaultValue: _defaultValueController.text.trim().isEmpty 
-          ? null 
+      defaultValue: _defaultValueController.text.trim().isEmpty
+          ? null
           : _defaultValueController.text.trim(),
       required: _isRequired,
       order: widget.field?.order ?? 0,
       options: _options.isEmpty ? null : _options,
-      minValue: _minValueController.text.trim().isEmpty 
-          ? null 
+      minValue: _minValueController.text.trim().isEmpty
+          ? null
           : int.tryParse(_minValueController.text.trim()),
-      maxValue: _maxValueController.text.trim().isEmpty 
-          ? null 
+      maxValue: _maxValueController.text.trim().isEmpty
+          ? null
           : int.tryParse(_maxValueController.text.trim()),
-      minLength: _minLengthController.text.trim().isEmpty 
-          ? null 
+      minLength: _minLengthController.text.trim().isEmpty
+          ? null
           : int.tryParse(_minLengthController.text.trim()),
-      maxLength: _maxLengthController.text.trim().isEmpty 
-          ? null 
+      maxLength: _maxLengthController.text.trim().isEmpty
+          ? null
           : int.tryParse(_maxLengthController.text.trim()),
-      validationPattern: _validationPatternController.text.trim().isEmpty 
-          ? null 
+      validationPattern: _validationPatternController.text.trim().isEmpty
+          ? null
           : _validationPatternController.text.trim(),
-      validationMessage: _validationMessageController.text.trim().isEmpty 
-          ? null 
+      validationMessage: _validationMessageController.text.trim().isEmpty
+          ? null
           : _validationMessageController.text.trim(),
     );
 

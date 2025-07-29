@@ -4,11 +4,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class PerformanceMetrics {
-
   PerformanceMetrics({
     required this.name,
     required this.duration,
-    required this.timestamp, this.attributes,
+    required this.timestamp,
+    this.attributes,
   });
   final String name;
   final Duration duration;
@@ -16,7 +16,8 @@ class PerformanceMetrics {
   final DateTime timestamp;
 
   @override
-  String toString() => 'PerformanceMetrics: $name took ${duration.inMilliseconds}ms';
+  String toString() =>
+      'PerformanceMetrics: $name took ${duration.inMilliseconds}ms';
 }
 
 /// Service for monitoring application performance
@@ -32,11 +33,15 @@ class PerformanceMonitoringService {
   final Map<String, Duration> _operationTimes = {};
 
   /// Start a performance trace
-  Future<void> startTrace(final String name,
-      {Map<String, dynamic>? attributes,}) async {
+  Future<void> startTrace(
+    final String name, {
+    Map<String, dynamic>? attributes,
+  }) async {
     if (_activeTraces.containsKey(name)) {
-      developer.log('Trace $name already active',
-          name: 'PerformanceMonitoring',);
+      developer.log(
+        'Trace $name already active',
+        name: 'PerformanceMonitoring',
+      );
       return;
     }
 
@@ -52,8 +57,10 @@ class PerformanceMonitoringService {
       // Firebase Performance integration would go here
       // await FirebasePerformance.instance.newTrace(name).start();
     } catch (e) {
-      developer.log('Failed to start Firebase trace: $e',
-          name: 'PerformanceMonitoring',);
+      developer.log(
+        'Failed to start Firebase trace: $e',
+        name: 'PerformanceMonitoring',
+      );
     }
   }
 
@@ -72,8 +79,10 @@ class PerformanceMonitoringService {
     _traceHistory.putIfAbsent(name, () => []).add(duration);
 
     if (kDebugMode) {
-      developer.log('Stopped trace: $name (${duration.inMilliseconds}ms)',
-          name: 'PerformanceMonitoring',);
+      developer.log(
+        'Stopped trace: $name (${duration.inMilliseconds}ms)',
+        name: 'PerformanceMonitoring',
+      );
     }
 
     // Send to Firebase Performance if available
@@ -83,14 +92,19 @@ class PerformanceMonitoringService {
       // trace.setMetric('duration', duration.inMilliseconds);
       // await trace.stop();
     } catch (e) {
-      developer.log('Failed to stop Firebase trace: $e',
-          name: 'PerformanceMonitoring',);
+      developer.log(
+        'Failed to stop Firebase trace: $e',
+        name: 'PerformanceMonitoring',
+      );
     }
   }
 
   /// Measure execution time of a synchronous function
-  T measureExecutionSync<T>(String name, final T Function() function,
-      {Map<String, dynamic>? attributes,}) {
+  T measureExecutionSync<T>(
+    String name,
+    final T Function() function, {
+    Map<String, dynamic>? attributes,
+  }) {
     final stopwatch = Stopwatch()..start();
 
     try {
@@ -108,8 +122,10 @@ class PerformanceMonitoringService {
 
   /// Measure execution time of an asynchronous function
   Future<T> measureExecutionAsync<T>(
-      String name, final Future<T> Function() function,
-      {Map<String, dynamic>? attributes,}) async {
+    String name,
+    final Future<T> Function() function, {
+    Map<String, dynamic>? attributes,
+  }) async {
     final stopwatch = Stopwatch()..start();
 
     try {
@@ -130,8 +146,10 @@ class PerformanceMonitoringService {
     _operationTimes[name] = duration;
 
     if (kDebugMode) {
-      developer.log('Operation $name completed in ${duration.inMilliseconds}ms',
-          name: 'PerformanceMonitoring',);
+      developer.log(
+        'Operation $name completed in ${duration.inMilliseconds}ms',
+        name: 'PerformanceMonitoring',
+      );
     }
   }
 
@@ -139,8 +157,10 @@ class PerformanceMonitoringService {
   void _recordError(String name, final Object error) {
     _errorCounts[name] = (_errorCounts[name] ?? 0) + 1;
 
-    developer.log('Error in operation $name: $error',
-        name: 'PerformanceMonitoring',);
+    developer.log(
+      'Error in operation $name: $error',
+      name: 'PerformanceMonitoring',
+    );
   }
 
   /// Get performance metrics
@@ -155,8 +175,10 @@ class PerformanceMonitoringService {
     metrics['error_counts'] = _errorCounts;
 
     // Trace history
-    metrics['trace_history'] = _traceHistory.map((key, final value) =>
-        MapEntry(key, value.map((d) => d.inMilliseconds).toList()),);
+    metrics['trace_history'] = _traceHistory.map(
+      (key, final value) =>
+          MapEntry(key, value.map((d) => d.inMilliseconds).toList()),
+    );
 
     // Active traces
     metrics['active_traces'] = _activeTraces.length;
@@ -196,42 +218,53 @@ class PerformanceMonitoringService {
 
   /// Export metrics for analysis
   Map<String, dynamic> exportMetrics() => {
-      'timestamp': DateTime.now().toIso8601String(),
-      'metrics': getMetrics(),
-      'summary': {
-        'total_operations': _operationTimes.length,
-        'total_errors': _errorCounts.values
-            .fold(0, (sum, final count) => sum + count),
-        'active_traces': _activeTraces.length,
-      },
-    };
+        'timestamp': DateTime.now().toIso8601String(),
+        'metrics': getMetrics(),
+        'summary': {
+          'total_operations': _operationTimes.length,
+          'total_errors':
+              _errorCounts.values.fold(0, (sum, final count) => sum + count),
+          'active_traces': _activeTraces.length,
+        },
+      };
 }
 
 /// Riverpod provider for performance monitoring service
 final performanceMonitoringServiceProvider =
-    Provider<PerformanceMonitoringService>((ref) => PerformanceMonitoringService());
+    Provider<PerformanceMonitoringService>(
+        (ref) => PerformanceMonitoringService());
 
 /// Extension for easy performance monitoring
 extension PerformanceMonitoringExtension on WidgetRef {
   /// Measure execution time of a synchronous function
-  T measureExecutionSync<T>(String name, final T Function() function,
-      {Map<String, dynamic>? attributes,}) {
+  T measureExecutionSync<T>(
+    String name,
+    final T Function() function, {
+    Map<String, dynamic>? attributes,
+  }) {
     final service = read(performanceMonitoringServiceProvider);
     return service.measureExecutionSync(name, function, attributes: attributes);
   }
 
   /// Measure execution time of an asynchronous function
   Future<T> measureExecutionAsync<T>(
-      String name, final Future<T> Function() function,
-      {Map<String, dynamic>? attributes,}) async {
+    String name,
+    final Future<T> Function() function, {
+    Map<String, dynamic>? attributes,
+  }) async {
     final service = read(performanceMonitoringServiceProvider);
-    return service.measureExecutionAsync(name, function,
-        attributes: attributes,);
+    return service.measureExecutionAsync(
+      name,
+      function,
+      attributes: attributes,
+    );
   }
 
   /// Start a performance trace
-  Future<void> startTrace(final String name,
-      {Map<String, dynamic>? attributes,}) async {
+  Future<void> startTrace(
+    final String name, {
+    Map<String, dynamic>? attributes,
+  }) async {
     final service = read(performanceMonitoringServiceProvider);
     await service.startTrace(name, attributes: attributes);
   }

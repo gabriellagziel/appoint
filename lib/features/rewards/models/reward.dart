@@ -20,8 +20,7 @@ class Reward {
     this.metadata,
   });
 
-  factory Reward.fromJson(Map<String, dynamic> json) =>
-      _$RewardFromJson(json);
+  factory Reward.fromJson(Map<String, dynamic> json) => _$RewardFromJson(json);
 
   final String id;
   final String name;
@@ -39,8 +38,10 @@ class Reward {
 
   Map<String, dynamic> toJson() => _$RewardToJson(this);
 
-  bool get isExpired => expiryDate != null && DateTime.now().isAfter(expiryDate!);
-  bool get isLimited => maxRedemptions != null && currentRedemptions >= maxRedemptions!;
+  bool get isExpired =>
+      expiryDate != null && DateTime.now().isAfter(expiryDate!);
+  bool get isLimited =>
+      maxRedemptions != null && currentRedemptions >= maxRedemptions!;
   bool get canRedeem => isAvailable && !isExpired && !isLimited;
 }
 
@@ -263,4 +264,4 @@ enum PointsTransactionType {
 int _calculatePointsForLevel(int level) {
   // Exponential growth: 100 * 2^(level-1)
   return 100 * (1 << (level - 1));
-} 
+}

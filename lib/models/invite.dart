@@ -7,16 +7,16 @@ enum InviteStatus { pending, accepted, declined }
 
 @JsonSerializable()
 class Invite {
-
   Invite({
     required this.id,
     required this.appointmentId,
     required this.inviteeId,
-    required this.status, required this.requiresInstallFallback, this.inviteeContact,
+    required this.status,
+    required this.requiresInstallFallback,
+    this.inviteeContact,
   });
 
-  factory Invite.fromJson(Map<String, dynamic> json) =>
-      _$InviteFromJson(json);
+  factory Invite.fromJson(Map<String, dynamic> json) => _$InviteFromJson(json);
   final String id;
   final String appointmentId;
   final String inviteeId;

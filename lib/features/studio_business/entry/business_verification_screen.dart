@@ -6,9 +6,9 @@ class BusinessVerificationScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) => Scaffold(
-      appBar: AppBar(title: const Text('Verification')),
-      body: const Center(
-        child: Text('Business Verification Screen - Coming Soon'),
-      ),
-    );
+        appBar: AppBar(title: const Text('Verification')),
+        body: const Center(
+          child: Text('Business Verification Screen - Coming Soon'),
+        ),
+      );
 }

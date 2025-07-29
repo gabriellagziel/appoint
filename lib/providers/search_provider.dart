@@ -1,8 +1,7 @@
 import 'package:appoint/services/search_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final searchServiceProvider =
-    Provider<SearchService>((ref) => SearchService());
+final searchServiceProvider = Provider<SearchService>((ref) => SearchService());
 
 final searchQueryProvider = StateProvider<String>((ref) => '');
 

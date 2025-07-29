@@ -10,7 +10,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 /// FCM Token Provider that manages Firebase Cloud Messaging tokens
 /// Handles token retrieval, storage, and backend synchronization
 class FCMTokenProvider extends StateNotifier<FCMTokenState> {
-  FCMTokenProvider(this._authService, this._apiClient) : super(FCMTokenState.initial()) {
+  FCMTokenProvider(this._authService, this._apiClient)
+      : super(FCMTokenState.initial()) {
     _initialize();
   }
 
@@ -21,17 +22,15 @@ class FCMTokenProvider extends StateNotifier<FCMTokenState> {
   Future<void> _initialize() async {
     try {
       // Request notification permissions
-      final settings = await FirebaseMessaging.instance.requestPermission(
-        
-      );
+      final settings = await FirebaseMessaging.instance.requestPermission();
 
       if (settings.authorizationStatus == AuthorizationStatus.authorized) {
         // Get initial token
         await _getAndStoreToken();
-        
+
         // Listen for token refresh
         FirebaseMessaging.instance.onTokenRefresh.listen(_onTokenRefresh);
-        
+
         // Listen for user authentication changes
         _authService.authStateChanges().listen(_onAuthStateChanged);
       } else {
@@ -46,9 +45,9 @@ class FCMTokenProvider extends StateNotifier<FCMTokenState> {
   Future<void> _getAndStoreToken() async {
     try {
       state = FCMTokenState.loading();
-      
+
       final token = await FirebaseMessaging.instance.getToken();
-      
+
       if (token != null) {
         state = FCMTokenState.success(token);
         await _sendTokenToBackend(token);
@@ -79,18 +78,21 @@ class FCMTokenProvider extends StateNotifier<FCMTokenState> {
     if (currentToken != null) {
       await _sendTokenToBackend(currentToken);
     }
-    }
+  }
 
   /// Send FCM token to backend
   Future<void> _sendTokenToBackend(String token) async {
     try {
       final currentUser = _authService.currentUser;
-      await _apiClient.post('/users/fcm-token', data: {
-        'token': token,
-        'platform': _getPlatform(),
-        'appVersion': _getAppVersion(),
-      },);
-        } catch (e) {
+      await _apiClient.post(
+        '/users/fcm-token',
+        data: {
+          'token': token,
+          'platform': _getPlatform(),
+          'appVersion': _getAppVersion(),
+        },
+      );
+    } catch (e) {
       // Handle error silently
     }
   }
@@ -129,7 +131,6 @@ class FCMTokenProvider extends StateNotifier<FCMTokenState> {
 
 /// State class for FCM Token Provider
 class FCMTokenState {
-
   const FCMTokenState._({
     this.token,
     this.isLoading = false,
@@ -155,7 +156,8 @@ class FCMTokenState {
 }
 
 /// Provider for FCM Token
-final fcmTokenProvider = StateNotifierProvider<FCMTokenProvider, FCMTokenState>((ref) {
+final fcmTokenProvider =
+    StateNotifierProvider<FCMTokenProvider, FCMTokenState>((ref) {
   final authService = ref.watch(authServiceProvider);
   final apiClient = ref.watch(apiClientProvider);
   return FCMTokenProvider(authService, apiClient);
@@ -164,4 +166,4 @@ final fcmTokenProvider = StateNotifierProvider<FCMTokenProvider, FCMTokenState>(
 /// Provider for API Client
 final apiClientProvider = Provider<ApiClient>((ref) => ApiClient.instance);
 
-/// Provider for Auth Service - imported from auth_provider.dart 
+/// Provider for Auth Service - imported from auth_provider.dart

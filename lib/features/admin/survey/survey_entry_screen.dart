@@ -143,7 +143,9 @@ class SurveyEntryScreen extends ConsumerWidget {
   }
 
   void _showCreateSurveyDialog(
-      BuildContext context, final WidgetRef ref,) {
+    BuildContext context,
+    final WidgetRef ref,
+  ) {
     final titleController = TextEditingController();
     final descriptionController = TextEditingController();
     final rewardPointsController = TextEditingController(text: '10');
@@ -206,8 +208,12 @@ class SurveyEntryScreen extends ConsumerWidget {
     );
   }
 
-  void _handleSurveyAction(final BuildContext context, final WidgetRef ref,
-      String surveyId, final String action,) {
+  void _handleSurveyAction(
+    final BuildContext context,
+    final WidgetRef ref,
+    String surveyId,
+    final String action,
+  ) {
     switch (action) {
       case 'edit':
         // TODO(username): Implement this featurent edit survey
@@ -225,13 +231,17 @@ class SurveyEntryScreen extends ConsumerWidget {
   }
 
   void _showDeleteConfirmation(
-      BuildContext context, final WidgetRef ref, final String surveyId,) {
+    BuildContext context,
+    final WidgetRef ref,
+    final String surveyId,
+  ) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
         title: const Text('Delete Survey'),
         content: const Text(
-            'Are you sure you want to delete this survey? This action cannot be undone.'),
+          'Are you sure you want to delete this survey? This action cannot be undone.',
+        ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
@@ -251,7 +261,9 @@ class SurveyEntryScreen extends ConsumerWidget {
   }
 
   void _showSurveyDetails(
-      BuildContext context, final Map<String, dynamic> survey,) {
+    BuildContext context,
+    final Map<String, dynamic> survey,
+  ) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(

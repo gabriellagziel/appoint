@@ -5,11 +5,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 // Combined user data class
 class User {
-
   const User({
     required this.id,
     required this.name,
-    required this.userType, this.email,
+    required this.userType,
+    this.email,
     this.phone,
     this.photoUrl,
     this.isAdminFreeAccess = false,

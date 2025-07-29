@@ -1,26 +1,28 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:fl_chart/fl_chart.dart';
 import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/services/analytics_service.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/models/custom_form_field.dart';
+import 'package:appoint/services/analytics_service.dart';
+import 'package:fl_chart/fl_chart.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 
 class AnalyticsDashboardScreen extends ConsumerStatefulWidget {
   const AnalyticsDashboardScreen({super.key});
 
   @override
-  ConsumerState<AnalyticsDashboardScreen> createState() => _AnalyticsDashboardScreenState();
+  ConsumerState<AnalyticsDashboardScreen> createState() =>
+      _AnalyticsDashboardScreenState();
 }
 
-class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScreen> {
+class _AnalyticsDashboardScreenState
+    extends ConsumerState<AnalyticsDashboardScreen> {
   int _selectedTabIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    
+
     return Scaffold(
       appBar: AppBar(
         title: Text(l10n.analyticsDashboard),
@@ -73,7 +75,7 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
 
   Widget _buildFilterChips() {
     final filter = ref.watch(analyticsFilterProvider);
-    
+
     return Container(
       padding: const EdgeInsets.all(16),
       child: Wrap(
@@ -86,21 +88,24 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
           ),
           if (filter.country != null)
             FilterChip(
-              label: Text('${AppLocalizations.of(context)!.country}: ${filter.country}'),
+              label: Text(
+                  '${AppLocalizations.of(context)!.country}: ${filter.country}'),
               selected: true,
               onSelected: (_) => _clearCountryFilter(),
               deleteIcon: const Icon(Icons.close, size: 16),
             ),
           if (filter.language != null)
             FilterChip(
-              label: Text('${AppLocalizations.of(context)!.language}: ${filter.language}'),
+              label: Text(
+                  '${AppLocalizations.of(context)!.language}: ${filter.language}'),
               selected: true,
               onSelected: (_) => _clearLanguageFilter(),
               deleteIcon: const Icon(Icons.close, size: 16),
             ),
           if (filter.messageType != null)
             FilterChip(
-              label: Text('${AppLocalizations.of(context)!.type}: ${filter.messageType!.name}'),
+              label: Text(
+                  '${AppLocalizations.of(context)!.type}: ${filter.messageType!.name}'),
               selected: true,
               onSelected: (_) => _clearTypeFilter(),
               deleteIcon: const Icon(Icons.close, size: 16),
@@ -110,25 +115,23 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
     );
   }
 
-  Widget _buildOverviewTab() {
-    return SingleChildScrollView(
-      padding: const EdgeInsets.all(16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          _buildOverviewCards(),
-          const SizedBox(height: 24),
-          _buildChartsSection(),
-          const SizedBox(height: 24),
-          _buildBreakdownSection(),
-        ],
-      ),
-    );
-  }
+  Widget _buildOverviewTab() => SingleChildScrollView(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _buildOverviewCards(),
+            const SizedBox(height: 24),
+            _buildChartsSection(),
+            const SizedBox(height: 24),
+            _buildBreakdownSection(),
+          ],
+        ),
+      );
 
   Widget _buildOverviewCards() {
     final summaryAsync = ref.watch(analyticsSummaryProvider);
-    
+
     return summaryAsync.when(
       data: (summary) => Column(
         children: [
@@ -177,7 +180,7 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
           ),
         ],
       ),
-      loading: () => _buildLoadingCards(),
+      loading: _buildLoadingCards,
       error: (error, stack) => _buildErrorCard(error.toString()),
     );
   }
@@ -187,44 +190,43 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
     required String value,
     required IconData icon,
     required Color color,
-  }) {
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Icon(icon, color: color, size: 24),
-                const SizedBox(width: 8),
-                Expanded(
-                  child: Text(
-                    title,
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: Colors.grey[600],
+  }) =>
+      Card(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Icon(icon, color: color, size: 24),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      title,
+                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                            color: Colors.grey[600],
+                          ),
                     ),
                   ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 8),
-            Text(
-              value,
-              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                fontWeight: FontWeight.bold,
-                color: color,
+                ],
               ),
-            ),
-          ],
+              const SizedBox(height: 8),
+              Text(
+                value,
+                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                      color: color,
+                    ),
+              ),
+            ],
+          ),
         ),
-      ),
-    );
-  }
+      );
 
   Widget _buildChartsSection() {
     final l10n = AppLocalizations.of(context)!;
-    
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -236,10 +238,10 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
         SizedBox(
           height: 300,
           child: ref.watch(analyticsTimeSeriesProvider).when(
-            data: (timeSeriesData) => _buildTimeSeriesChart(timeSeriesData),
-            loading: () => const Center(child: CircularProgressIndicator()),
-            error: (error, stack) => _buildErrorCard(error.toString()),
-          ),
+                data: _buildTimeSeriesChart,
+                loading: () => const Center(child: CircularProgressIndicator()),
+                error: (error, stack) => _buildErrorCard(error.toString()),
+              ),
         ),
       ],
     );
@@ -253,13 +255,13 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
     }
 
     final maxY = data
-        .map((d) => [d.sent, d.opened, d.clicked, d.responses].reduce((a, b) => a > b ? a : b))
+        .map((d) => [d.sent, d.opened, d.clicked, d.responses]
+            .reduce((a, b) => a > b ? a : b))
         .reduce((a, b) => a > b ? a : b)
         .toDouble();
 
     return LineChart(
       LineChartData(
-        gridData: FlGridData(show: true),
         titlesData: FlTitlesData(
           leftTitles: AxisTitles(
             sideTitles: SideTitles(
@@ -287,8 +289,8 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
               },
             ),
           ),
-          topTitles: const AxisTitles(sideTitles: SideTitles(showTitles: false)),
-          rightTitles: const AxisTitles(sideTitles: SideTitles(showTitles: false)),
+          topTitles: const AxisTitles(),
+          rightTitles: const AxisTitles(),
         ),
         borderData: FlBorderData(show: true),
         minX: 0,
@@ -298,66 +300,90 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
         lineBarsData: [
           // Sent line
           LineChartBarData(
-            spots: data.asMap().entries.map((entry) => 
-              FlSpot(entry.key.toDouble(), entry.value.sent.toDouble())
-            ).toList(),
+            spots: data
+                .asMap()
+                .entries
+                .map(
+                  (entry) =>
+                      FlSpot(entry.key.toDouble(), entry.value.sent.toDouble()),
+                )
+                .toList(),
             isCurved: true,
             color: Colors.blue,
-            barWidth: 2,
             dotData: const FlDotData(show: false),
-            belowBarData: BarAreaData(show: false),
+            belowBarData: BarAreaData(),
           ),
           // Opened line
           LineChartBarData(
-            spots: data.asMap().entries.map((entry) => 
-              FlSpot(entry.key.toDouble(), entry.value.opened.toDouble())
-            ).toList(),
+            spots: data
+                .asMap()
+                .entries
+                .map(
+                  (entry) => FlSpot(
+                      entry.key.toDouble(), entry.value.opened.toDouble()),
+                )
+                .toList(),
             isCurved: true,
             color: Colors.green,
-            barWidth: 2,
             dotData: const FlDotData(show: false),
-            belowBarData: BarAreaData(show: false),
+            belowBarData: BarAreaData(),
           ),
           // Clicked line
           LineChartBarData(
-            spots: data.asMap().entries.map((entry) => 
-              FlSpot(entry.key.toDouble(), entry.value.clicked.toDouble())
-            ).toList(),
+            spots: data
+                .asMap()
+                .entries
+                .map(
+                  (entry) => FlSpot(
+                      entry.key.toDouble(), entry.value.clicked.toDouble()),
+                )
+                .toList(),
             isCurved: true,
             color: Colors.orange,
-            barWidth: 2,
             dotData: const FlDotData(show: false),
-            belowBarData: BarAreaData(show: false),
+            belowBarData: BarAreaData(),
           ),
           // Responses line
           LineChartBarData(
-            spots: data.asMap().entries.map((entry) => 
-              FlSpot(entry.key.toDouble(), entry.value.responses.toDouble())
-            ).toList(),
+            spots: data
+                .asMap()
+                .entries
+                .map(
+                  (entry) => FlSpot(
+                      entry.key.toDouble(), entry.value.responses.toDouble()),
+                )
+                .toList(),
             isCurved: true,
             color: Colors.purple,
-            barWidth: 2,
             dotData: const FlDotData(show: false),
-            belowBarData: BarAreaData(show: false),
+            belowBarData: BarAreaData(),
           ),
         ],
         lineTouchData: LineTouchData(
           touchTooltipData: LineTouchTooltipData(
             tooltipBgColor: Colors.black87,
-            getTooltipItems: (touchedSpots) {
-              return touchedSpots.map((spot) {
-                final data = this.data[spot.x.toInt()];
-                final labels = ['Sent', 'Opened', 'Clicked', 'Responses'];
-                final values = [data.sent, data.opened, data.clicked, data.responses];
-                final colors = [Colors.blue, Colors.green, Colors.orange, Colors.purple];
-                
-                return LineTooltipItem(
-                  '${labels[spot.barIndex]}: ${values[spot.barIndex]}\n'
-                  '${DateFormat('MMM dd').format(data.date)}',
-                  TextStyle(color: colors[spot.barIndex]),
-                );
-              }).toList();
-            },
+            getTooltipItems: (touchedSpots) => touchedSpots.map((spot) {
+              final data = this.data[spot.x.toInt()];
+              final labels = ['Sent', 'Opened', 'Clicked', 'Responses'];
+              final values = [
+                data.sent,
+                data.opened,
+                data.clicked,
+                data.responses
+              ];
+              final colors = [
+                Colors.blue,
+                Colors.green,
+                Colors.orange,
+                Colors.purple
+              ];
+
+              return LineTooltipItem(
+                '${labels[spot.barIndex]}: ${values[spot.barIndex]}\n'
+                '${DateFormat('MMM dd').format(data.date)}',
+                TextStyle(color: colors[spot.barIndex]),
+              );
+            }).toList(),
           ),
         ),
       ),
@@ -366,7 +392,7 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
 
   Widget _buildBreakdownSection() {
     final summaryAsync = ref.watch(analyticsSummaryProvider);
-    
+
     return summaryAsync.when(
       data: (summary) => Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -428,39 +454,40 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
           children: [
             Text(title, style: Theme.of(context).textTheme.titleMedium),
             const SizedBox(height: 16),
-            ...sortedEntries.take(5).map((entry) => Padding(
-              padding: const EdgeInsets.only(bottom: 8),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Expanded(
-                    child: Text(
-                      entry.key,
-                      style: Theme.of(context).textTheme.bodyMedium,
+            ...sortedEntries.take(5).map(
+                  (entry) => Padding(
+                    padding: const EdgeInsets.only(bottom: 8),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Expanded(
+                          child: Text(
+                            entry.key,
+                            style: Theme.of(context).textTheme.bodyMedium,
+                          ),
+                        ),
+                        Text(
+                          _formatNumber(entry.value),
+                          style:
+                              Theme.of(context).textTheme.bodyMedium?.copyWith(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                        ),
+                      ],
                     ),
                   ),
-                  Text(
-                    _formatNumber(entry.value),
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ],
-              ),
-            )),
+                ),
           ],
         ),
       ),
     );
   }
 
-  Widget _buildBroadcastsTab() {
-    return ref.watch(broadcastListProvider).when(
-      data: (broadcasts) => _buildBroadcastList(broadcasts),
-      loading: () => const Center(child: CircularProgressIndicator()),
-      error: (error, stack) => _buildErrorCard(error.toString()),
-    );
-  }
+  Widget _buildBroadcastsTab() => ref.watch(broadcastListProvider).when(
+        data: _buildBroadcastList,
+        loading: () => const Center(child: CircularProgressIndicator()),
+        error: (error, stack) => _buildErrorCard(error.toString()),
+      );
 
   Widget _buildBroadcastList(List<BroadcastAnalyticsDetail> broadcasts) {
     if (broadcasts.isEmpty) {
@@ -481,7 +508,7 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
 
   Widget _buildBroadcastCard(BroadcastAnalyticsDetail broadcast) {
     final l10n = AppLocalizations.of(context)!;
-    
+
     return Card(
       margin: const EdgeInsets.only(bottom: 16),
       child: Padding(
@@ -501,10 +528,11 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        DateFormat('MMM dd, yyyy HH:mm').format(broadcast.message.createdAt),
+                        DateFormat('MMM dd, yyyy HH:mm')
+                            .format(broadcast.message.createdAt),
                         style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                          color: Colors.grey[600],
-                        ),
+                              color: Colors.grey[600],
+                            ),
                       ),
                     ],
                   ),
@@ -515,11 +543,15 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
             const SizedBox(height: 16),
             Row(
               children: [
-                _buildStatItem(l10n.sent, broadcast.summary.totalSent.toString()),
-                _buildStatItem(l10n.opened, broadcast.summary.totalOpened.toString()),
-                _buildStatItem(l10n.clicked, broadcast.summary.totalClicked.toString()),
+                _buildStatItem(
+                    l10n.sent, broadcast.summary.totalSent.toString()),
+                _buildStatItem(
+                    l10n.opened, broadcast.summary.totalOpened.toString()),
+                _buildStatItem(
+                    l10n.clicked, broadcast.summary.totalClicked.toString()),
                 if (broadcast.message.type == BroadcastMessageType.form)
-                  _buildStatItem(l10n.responses, broadcast.summary.totalResponses.toString()),
+                  _buildStatItem(l10n.responses,
+                      broadcast.summary.totalResponses.toString()),
               ],
             ),
             const SizedBox(height: 16),
@@ -528,7 +560,8 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
                 _buildRateItem(l10n.openRate, broadcast.summary.openRate),
                 _buildRateItem(l10n.clickRate, broadcast.summary.clickRate),
                 if (broadcast.message.type == BroadcastMessageType.form)
-                  _buildRateItem(l10n.responseRate, broadcast.summary.responseRate),
+                  _buildRateItem(
+                      l10n.responseRate, broadcast.summary.responseRate),
               ],
             ),
             if (broadcast.message.type == BroadcastMessageType.form &&
@@ -545,48 +578,44 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
     );
   }
 
-  Widget _buildStatItem(String label, String value) {
-    return Expanded(
-      child: Column(
-        children: [
-          Text(
-            value,
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-              fontWeight: FontWeight.bold,
+  Widget _buildStatItem(String label, String value) => Expanded(
+        child: Column(
+          children: [
+            Text(
+              value,
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
             ),
-          ),
-          Text(
-            label,
-            style: Theme.of(context).textTheme.bodySmall?.copyWith(
-              color: Colors.grey[600],
+            Text(
+              label,
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: Colors.grey[600],
+                  ),
             ),
-          ),
-        ],
-      ),
-    );
-  }
+          ],
+        ),
+      );
 
-  Widget _buildRateItem(String label, double rate) {
-    return Expanded(
-      child: Column(
-        children: [
-          Text(
-            '${rate.toStringAsFixed(1)}%',
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-              fontWeight: FontWeight.bold,
-              color: _getRateColor(rate),
+  Widget _buildRateItem(String label, double rate) => Expanded(
+        child: Column(
+          children: [
+            Text(
+              '${rate.toStringAsFixed(1)}%',
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                    color: _getRateColor(rate),
+                  ),
             ),
-          ),
-          Text(
-            label,
-            style: Theme.of(context).textTheme.bodySmall?.copyWith(
-              color: Colors.grey[600],
+            Text(
+              label,
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: Colors.grey[600],
+                  ),
             ),
-          ),
-        ],
-      ),
-    );
-  }
+          ],
+        ),
+      );
 
   Widget _buildStatusChip(BroadcastMessageStatus status) {
     Color color;
@@ -596,23 +625,18 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
       case BroadcastMessageStatus.pending:
         color = Colors.orange;
         text = AppLocalizations.of(context)!.pending;
-        break;
       case BroadcastMessageStatus.sending:
         color = Colors.blue;
         text = AppLocalizations.of(context)!.sending;
-        break;
       case BroadcastMessageStatus.sent:
         color = Colors.green;
         text = AppLocalizations.of(context)!.sent;
-        break;
       case BroadcastMessageStatus.failed:
         color = Colors.red;
         text = AppLocalizations.of(context)!.failed;
-        break;
       case BroadcastMessageStatus.partially_sent:
         color = Colors.amber;
         text = AppLocalizations.of(context)!.partialSent;
-        break;
     }
 
     return Chip(
@@ -622,170 +646,165 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
     );
   }
 
-  Widget _buildFormAnalyticsTab() {
-    return ref.watch(broadcastListProvider).when(
-      data: (broadcasts) {
-        final formBroadcasts = broadcasts
-            .where((b) => b.message.type == BroadcastMessageType.form)
-            .toList();
-        
-        if (formBroadcasts.isEmpty) {
-          return Center(
-            child: Text(AppLocalizations.of(context)!.noFormBroadcasts),
+  Widget _buildFormAnalyticsTab() => ref.watch(broadcastListProvider).when(
+        data: (broadcasts) {
+          final formBroadcasts = broadcasts
+              .where((b) => b.message.type == BroadcastMessageType.form)
+              .toList();
+
+          if (formBroadcasts.isEmpty) {
+            return Center(
+              child: Text(AppLocalizations.of(context)!.noFormBroadcasts),
+            );
+          }
+
+          return ListView.builder(
+            padding: const EdgeInsets.all(16),
+            itemCount: formBroadcasts.length,
+            itemBuilder: (context, index) {
+              final broadcast = formBroadcasts[index];
+              return _buildFormAnalyticsCard(broadcast);
+            },
           );
-        }
+        },
+        loading: () => const Center(child: CircularProgressIndicator()),
+        error: (error, stack) => _buildErrorCard(error.toString()),
+      );
 
-        return ListView.builder(
+  Widget _buildFormAnalyticsCard(BroadcastAnalyticsDetail broadcast) => Card(
+        margin: const EdgeInsets.only(bottom: 16),
+        child: Padding(
           padding: const EdgeInsets.all(16),
-          itemCount: formBroadcasts.length,
-          itemBuilder: (context, index) {
-            final broadcast = formBroadcasts[index];
-            return _buildFormAnalyticsCard(broadcast);
-          },
-        );
-      },
-      loading: () => const Center(child: CircularProgressIndicator()),
-      error: (error, stack) => _buildErrorCard(error.toString()),
-    );
-  }
-
-  Widget _buildFormAnalyticsCard(BroadcastAnalyticsDetail broadcast) {
-    return Card(
-      margin: const EdgeInsets.only(bottom: 16),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              broadcast.message.title,
-              style: Theme.of(context).textTheme.titleMedium,
-            ),
-            const SizedBox(height: 8),
-            Text(
-              '${AppLocalizations.of(context)!.totalResponses}: ${broadcast.summary.totalResponses}',
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
-            const SizedBox(height: 16),
-            if (broadcast.formStatistics != null)
-              ...broadcast.formStatistics!.map((stat) => _buildFormFieldStat(stat))
-            else
-              Text(AppLocalizations.of(context)!.noFormData),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildFormFieldStat(FormFieldStatistics stat) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 12),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            stat.fieldLabel,
-            style: Theme.of(context).textTheme.titleSmall,
-          ),
-          const SizedBox(height: 4),
-          Row(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('${AppLocalizations.of(context)!.responses}: ${stat.validResponses}'),
-              const SizedBox(width: 16),
-              if (stat.averageValue != null)
-                Text('${AppLocalizations.of(context)!.average}: ${stat.averageValue!.toStringAsFixed(2)}'),
-              if (stat.mostCommonValue != null)
-                Text('${AppLocalizations.of(context)!.mostCommon}: ${stat.mostCommonValue}'),
+              Text(
+                broadcast.message.title,
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              const SizedBox(height: 8),
+              Text(
+                '${AppLocalizations.of(context)!.totalResponses}: ${broadcast.summary.totalResponses}',
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
+              const SizedBox(height: 16),
+              if (broadcast.formStatistics != null)
+                ...broadcast.formStatistics!.map(_buildFormFieldStat)
+              else
+                Text(AppLocalizations.of(context)!.noFormData),
             ],
           ),
-          if (stat.choiceDistribution != null && stat.choiceDistribution!.isNotEmpty) ...[
-            const SizedBox(height: 8),
-            ...stat.choiceDistribution!.entries.map((entry) => Padding(
-              padding: const EdgeInsets.only(left: 16, bottom: 4),
-              child: Row(
-                children: [
-                  Expanded(child: Text(entry.key)),
-                  Text('${entry.value} (${((entry.value / stat.validResponses) * 100).toStringAsFixed(1)}%)'),
-                ],
-              ),
-            )),
-          ],
-        ],
-      ),
-    );
-  }
-
-  Widget _buildLoadingCards() {
-    return Column(
-      children: [
-        Row(
-          children: [
-            Expanded(child: _buildLoadingCard()),
-            const SizedBox(width: 16),
-            Expanded(child: _buildLoadingCard()),
-          ],
         ),
-        const SizedBox(height: 16),
-        Row(
-          children: [
-            Expanded(child: _buildLoadingCard()),
-            const SizedBox(width: 16),
-            Expanded(child: _buildLoadingCard()),
-          ],
-        ),
-      ],
-    );
-  }
+      );
 
-  Widget _buildLoadingCard() {
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
+  Widget _buildFormFieldStat(FormFieldStatistics stat) => Padding(
+        padding: const EdgeInsets.only(bottom: 12),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              width: 100,
-              height: 16,
-              color: Colors.grey[300],
-            ),
-            const SizedBox(height: 8),
-            Container(
-              width: 60,
-              height: 24,
-              color: Colors.grey[300],
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildErrorCard(String error) {
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          children: [
-            Icon(Icons.error, color: Colors.red, size: 48),
-            const SizedBox(height: 16),
             Text(
-              AppLocalizations.of(context)!.errorLoadingData,
-              style: Theme.of(context).textTheme.titleMedium,
+              stat.fieldLabel,
+              style: Theme.of(context).textTheme.titleSmall,
             ),
-            const SizedBox(height: 8),
-            Text(
-              error,
-              style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                color: Colors.grey[600],
+            const SizedBox(height: 4),
+            Row(
+              children: [
+                Text(
+                    '${AppLocalizations.of(context)!.responses}: ${stat.validResponses}'),
+                const SizedBox(width: 16),
+                if (stat.averageValue != null)
+                  Text(
+                      '${AppLocalizations.of(context)!.average}: ${stat.averageValue!.toStringAsFixed(2)}'),
+                if (stat.mostCommonValue != null)
+                  Text(
+                      '${AppLocalizations.of(context)!.mostCommon}: ${stat.mostCommonValue}'),
+              ],
+            ),
+            if (stat.choiceDistribution != null &&
+                stat.choiceDistribution!.isNotEmpty) ...[
+              const SizedBox(height: 8),
+              ...stat.choiceDistribution!.entries.map(
+                (entry) => Padding(
+                  padding: const EdgeInsets.only(left: 16, bottom: 4),
+                  child: Row(
+                    children: [
+                      Expanded(child: Text(entry.key)),
+                      Text(
+                          '${entry.value} (${((entry.value / stat.validResponses) * 100).toStringAsFixed(1)}%)'),
+                    ],
+                  ),
+                ),
               ),
-              textAlign: TextAlign.center,
-            ),
+            ],
           ],
         ),
-      ),
-    );
-  }
+      );
+
+  Widget _buildLoadingCards() => Column(
+        children: [
+          Row(
+            children: [
+              Expanded(child: _buildLoadingCard()),
+              const SizedBox(width: 16),
+              Expanded(child: _buildLoadingCard()),
+            ],
+          ),
+          const SizedBox(height: 16),
+          Row(
+            children: [
+              Expanded(child: _buildLoadingCard()),
+              const SizedBox(width: 16),
+              Expanded(child: _buildLoadingCard()),
+            ],
+          ),
+        ],
+      );
+
+  Widget _buildLoadingCard() => Card(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                width: 100,
+                height: 16,
+                color: Colors.grey[300],
+              ),
+              const SizedBox(height: 8),
+              Container(
+                width: 60,
+                height: 24,
+                color: Colors.grey[300],
+              ),
+            ],
+          ),
+        ),
+      );
+
+  Widget _buildErrorCard(String error) => Card(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              const Icon(Icons.error, color: Colors.red, size: 48),
+              const SizedBox(height: 16),
+              Text(
+                AppLocalizations.of(context)!.errorLoadingData,
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              const SizedBox(height: 8),
+              Text(
+                error,
+                style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                      color: Colors.grey[600],
+                    ),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+        ),
+      );
 
   Color _getRateColor(double rate) {
     if (rate >= 80) return Colors.green;
@@ -843,7 +862,7 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
   void _showExportDialog() {
     showDialog(
       context: context,
-      builder: (context) => ExportDialog(),
+      builder: (context) => const ExportDialog(),
     );
   }
 
@@ -856,33 +875,29 @@ class _AnalyticsDashboardScreenState extends ConsumerState<AnalyticsDashboardScr
 
   void _clearCountryFilter() {
     final currentFilter = ref.read(analyticsFilterProvider);
-    ref.read(analyticsFilterProvider.notifier).state = 
-        currentFilter.copyWith(country: null);
+    ref.read(analyticsFilterProvider.notifier).state = currentFilter.copyWith();
   }
 
   void _clearLanguageFilter() {
     final currentFilter = ref.read(analyticsFilterProvider);
-    ref.read(analyticsFilterProvider.notifier).state = 
-        currentFilter.copyWith(language: null);
+    ref.read(analyticsFilterProvider.notifier).state = currentFilter.copyWith();
   }
 
   void _clearTypeFilter() {
     final currentFilter = ref.read(analyticsFilterProvider);
-    ref.read(analyticsFilterProvider.notifier).state = 
-        currentFilter.copyWith(messageType: null);
+    ref.read(analyticsFilterProvider.notifier).state = currentFilter.copyWith();
   }
 }
 
 // Helper Dialogs
 class FilterDialog extends StatefulWidget {
-  final AnalyticsFilter currentFilter;
-  final ValueChanged<AnalyticsFilter> onFilterChanged;
-
   const FilterDialog({
-    super.key,
     required this.currentFilter,
     required this.onFilterChanged,
+    super.key,
   });
+  final AnalyticsFilter currentFilter;
+  final ValueChanged<AnalyticsFilter> onFilterChanged;
 
   @override
   State<FilterDialog> createState() => _FilterDialogState();
@@ -900,7 +915,7 @@ class _FilterDialogState extends State<FilterDialog> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    
+
     return AlertDialog(
       title: Text(l10n.filters),
       content: Column(
@@ -910,7 +925,7 @@ class _FilterDialogState extends State<FilterDialog> {
             value: _filter.country,
             decoration: InputDecoration(labelText: l10n.country),
             items: const [
-              DropdownMenuItem(value: null, child: Text('All')),
+              DropdownMenuItem(child: Text('All')),
               DropdownMenuItem(value: 'US', child: Text('United States')),
               DropdownMenuItem(value: 'CA', child: Text('Canada')),
               DropdownMenuItem(value: 'UK', child: Text('United Kingdom')),
@@ -926,9 +941,10 @@ class _FilterDialogState extends State<FilterDialog> {
             value: _filter.messageType,
             decoration: InputDecoration(labelText: l10n.messageType),
             items: [
-              DropdownMenuItem(value: null, child: Text(l10n.all)),
-              ...BroadcastMessageType.values.map((type) =>
-                DropdownMenuItem(value: type, child: Text(type.name))),
+              DropdownMenuItem(child: Text(l10n.all)),
+              ...BroadcastMessageType.values.map(
+                (type) => DropdownMenuItem(value: type, child: Text(type.name)),
+              ),
             ],
             onChanged: (value) {
               setState(() {
@@ -956,14 +972,13 @@ class _FilterDialogState extends State<FilterDialog> {
 }
 
 class TimeRangeDialog extends StatefulWidget {
-  final AnalyticsFilter currentFilter;
-  final ValueChanged<AnalyticsFilter> onFilterChanged;
-
   const TimeRangeDialog({
-    super.key,
     required this.currentFilter,
     required this.onFilterChanged,
+    super.key,
   });
+  final AnalyticsFilter currentFilter;
+  final ValueChanged<AnalyticsFilter> onFilterChanged;
 
   @override
   State<TimeRangeDialog> createState() => _TimeRangeDialogState();
@@ -985,22 +1000,24 @@ class _TimeRangeDialogState extends State<TimeRangeDialog> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    
+
     return AlertDialog(
       title: Text(l10n.timeRange),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          ...TimeRange.values.map((range) => RadioListTile<TimeRange>(
-            title: Text(_getTimeRangeLabel(range)),
-            value: range,
-            groupValue: _selectedRange,
-            onChanged: (value) {
-              setState(() {
-                _selectedRange = value!;
-              });
-            },
-          )),
+          ...TimeRange.values.map(
+            (range) => RadioListTile<TimeRange>(
+              title: Text(_getTimeRangeLabel(range)),
+              value: range,
+              groupValue: _selectedRange,
+              onChanged: (value) {
+                setState(() {
+                  _selectedRange = value!;
+                });
+              },
+            ),
+          ),
           if (_selectedRange == TimeRange.custom) ...[
             const SizedBox(height: 16),
             Row(
@@ -1010,8 +1027,10 @@ class _TimeRangeDialogState extends State<TimeRangeDialog> {
                     onPressed: () async {
                       final date = await showDatePicker(
                         context: context,
-                        initialDate: _startDate ?? DateTime.now().subtract(const Duration(days: 7)),
-                        firstDate: DateTime.now().subtract(const Duration(days: 365)),
+                        initialDate: _startDate ??
+                            DateTime.now().subtract(const Duration(days: 7)),
+                        firstDate:
+                            DateTime.now().subtract(const Duration(days: 365)),
                         lastDate: DateTime.now(),
                       );
                       if (date != null) {
@@ -1020,9 +1039,11 @@ class _TimeRangeDialogState extends State<TimeRangeDialog> {
                         });
                       }
                     },
-                    child: Text(_startDate != null 
-                        ? DateFormat('MMM dd, yyyy').format(_startDate!)
-                        : l10n.startDate),
+                    child: Text(
+                      _startDate != null
+                          ? DateFormat('MMM dd, yyyy').format(_startDate!)
+                          : l10n.startDate,
+                    ),
                   ),
                 ),
                 const SizedBox(width: 16),
@@ -1032,7 +1053,8 @@ class _TimeRangeDialogState extends State<TimeRangeDialog> {
                       final date = await showDatePicker(
                         context: context,
                         initialDate: _endDate ?? DateTime.now(),
-                        firstDate: _startDate ?? DateTime.now().subtract(const Duration(days: 365)),
+                        firstDate: _startDate ??
+                            DateTime.now().subtract(const Duration(days: 365)),
                         lastDate: DateTime.now(),
                       );
                       if (date != null) {
@@ -1041,9 +1063,11 @@ class _TimeRangeDialogState extends State<TimeRangeDialog> {
                         });
                       }
                     },
-                    child: Text(_endDate != null 
-                        ? DateFormat('MMM dd, yyyy').format(_endDate!)
-                        : l10n.endDate),
+                    child: Text(
+                      _endDate != null
+                          ? DateFormat('MMM dd, yyyy').format(_endDate!)
+                          : l10n.endDate,
+                    ),
                   ),
                 ),
               ],
@@ -1088,10 +1112,12 @@ class _TimeRangeDialogState extends State<TimeRangeDialog> {
 }
 
 class ExportDialog extends ConsumerWidget {
+  const ExportDialog({super.key});
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context)!;
-    
+
     return AlertDialog(
       title: Text(l10n.exportData),
       content: Text(l10n.exportDataDescription),
@@ -1123,17 +1149,16 @@ class ExportDialog extends ConsumerWidget {
 }
 
 class FormAnalyticsDetailDialog extends StatelessWidget {
-  final BroadcastAnalyticsDetail broadcast;
-
   const FormAnalyticsDetailDialog({
-    super.key,
     required this.broadcast,
+    super.key,
   });
+  final BroadcastAnalyticsDetail broadcast;
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    
+
     return AlertDialog(
       title: Text('${l10n.formAnalytics}: ${broadcast.message.title}'),
       content: SizedBox(
@@ -1143,10 +1168,12 @@ class FormAnalyticsDetailDialog extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('${l10n.totalResponses}: ${broadcast.summary.totalResponses}'),
+              Text(
+                  '${l10n.totalResponses}: ${broadcast.summary.totalResponses}'),
               const SizedBox(height: 16),
               if (broadcast.formStatistics != null)
-                ...broadcast.formStatistics!.map((stat) => _buildDetailedFieldStat(context, stat))
+                ...broadcast.formStatistics!
+                    .map((stat) => _buildDetailedFieldStat(context, stat))
               else
                 Text(l10n.noFormData),
             ],
@@ -1162,37 +1189,41 @@ class FormAnalyticsDetailDialog extends StatelessWidget {
     );
   }
 
-  Widget _buildDetailedFieldStat(BuildContext context, FormFieldStatistics stat) {
-    return Card(
-      margin: const EdgeInsets.only(bottom: 12),
-      child: Padding(
-        padding: const EdgeInsets.all(12),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              stat.fieldLabel,
-              style: Theme.of(context).textTheme.titleSmall,
-            ),
-            const SizedBox(height: 8),
-            Text('Type: ${stat.fieldType.name}'),
-            Text('Total Responses: ${stat.totalResponses}'),
-            Text('Valid Responses: ${stat.validResponses}'),
-            if (stat.averageValue != null)
-              Text('Average: ${stat.averageValue!.toStringAsFixed(2)}'),
-            if (stat.mostCommonValue != null)
-              Text('Most Common: ${stat.mostCommonValue}'),
-            if (stat.choiceDistribution != null && stat.choiceDistribution!.isNotEmpty) ...[
+  Widget _buildDetailedFieldStat(
+          BuildContext context, FormFieldStatistics stat) =>
+      Card(
+        margin: const EdgeInsets.only(bottom: 12),
+        child: Padding(
+          padding: const EdgeInsets.all(12),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                stat.fieldLabel,
+                style: Theme.of(context).textTheme.titleSmall,
+              ),
               const SizedBox(height: 8),
-              Text('Distribution:'),
-              ...stat.choiceDistribution!.entries.map((entry) => Padding(
-                padding: const EdgeInsets.only(left: 16),
-                child: Text('${entry.key}: ${entry.value} (${((entry.value / stat.validResponses) * 100).toStringAsFixed(1)}%)'),
-              )),
+              Text('Type: ${stat.fieldType.name}'),
+              Text('Total Responses: ${stat.totalResponses}'),
+              Text('Valid Responses: ${stat.validResponses}'),
+              if (stat.averageValue != null)
+                Text('Average: ${stat.averageValue!.toStringAsFixed(2)}'),
+              if (stat.mostCommonValue != null)
+                Text('Most Common: ${stat.mostCommonValue}'),
+              if (stat.choiceDistribution != null &&
+                  stat.choiceDistribution!.isNotEmpty) ...[
+                const SizedBox(height: 8),
+                const Text('Distribution:'),
+                ...stat.choiceDistribution!.entries.map(
+                  (entry) => Padding(
+                    padding: const EdgeInsets.only(left: 16),
+                    child: Text(
+                        '${entry.key}: ${entry.value} (${((entry.value / stat.validResponses) * 100).toStringAsFixed(1)}%)'),
+                  ),
+                ),
+              ],
             ],
-          ],
+          ),
         ),
-      ),
-    );
-  }
+      );
 }

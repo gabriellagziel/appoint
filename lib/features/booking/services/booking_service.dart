@@ -2,10 +2,10 @@ import 'package:appoint/models/booking.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final bookingServiceProvider = Provider<BookingService>((ref) => BookingService());
+final bookingServiceProvider =
+    Provider<BookingService>((ref) => BookingService());
 
 class BookingService {
-
   BookingService({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
   final FirebaseFirestore _firestore;
@@ -21,10 +21,12 @@ class BookingService {
   }
 
   /// Gets a stream of all bookings
-  Stream<List<Booking>> getBookings() => _firestore.collection(_bookingsCollection).snapshots().map(
-        (snapshot) => snapshot.docs
-            .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
-            .toList(),);
+  Stream<List<Booking>> getBookings() =>
+      _firestore.collection(_bookingsCollection).snapshots().map(
+            (snapshot) => snapshot.docs
+                .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
+                .toList(),
+          );
 
   /// Submits a booking to Firestore
   Future<void> submitBooking(Booking booking) async {
@@ -63,8 +65,12 @@ class BookingService {
       // Split into batches of 10 (Firestore limit for 'in' queries)
       final batches = <List<String>>[];
       for (var i = 0; i < bookingIds.length; i += 10) {
-        batches.add(bookingIds.sublist(
-            i, i + 10 > bookingIds.length ? bookingIds.length : i + 10,),);
+        batches.add(
+          bookingIds.sublist(
+            i,
+            i + 10 > bookingIds.length ? bookingIds.length : i + 10,
+          ),
+        );
       }
 
       final allBookings = <Booking>[];
@@ -100,23 +106,27 @@ class BookingService {
 
   /// Gets a stream of bookings for a specific user
   Stream<List<Booking>> getUserBookings(String userId) => _firestore
-        .collection(_bookingsCollection)
-        .where('userId', isEqualTo: userId)
-        .orderBy('dateTime')
-        .snapshots()
-        .map((snapshot) => snapshot.docs
+      .collection(_bookingsCollection)
+      .where('userId', isEqualTo: userId)
+      .orderBy('dateTime')
+      .snapshots()
+      .map(
+        (snapshot) => snapshot.docs
             .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
-            .toList(),);
+            .toList(),
+      );
 
   /// Gets a stream of bookings for a specific business
   Stream<List<Booking>> getBusinessBookings(String businessId) => _firestore
-        .collection(_bookingsCollection)
-        .where('businessProfileId', isEqualTo: businessId)
-        .orderBy('dateTime')
-        .snapshots()
-        .map((snapshot) => snapshot.docs
+      .collection(_bookingsCollection)
+      .where('businessProfileId', isEqualTo: businessId)
+      .orderBy('dateTime')
+      .snapshots()
+      .map(
+        (snapshot) => snapshot.docs
             .map((doc) => Booking.fromJson({...doc.data(), 'id': doc.id}))
-            .toList(),);
+            .toList(),
+      );
 
   /// Get a booking by its ID
   Future<Booking?> getBookingById(String bookingId) async {

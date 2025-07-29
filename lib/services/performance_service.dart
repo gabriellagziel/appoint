@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 class PerformanceService {
   factory PerformanceService() => _instance;
   PerformanceService._internal();
-  static PerformanceService _instance = PerformanceService._internal();
+  static final PerformanceService _instance = PerformanceService._internal();
 
   final FirebasePerformance _performance = FirebasePerformance.instance;
 
@@ -68,7 +68,8 @@ class PerformanceService {
 
   /// Track app startup time
   Future<void> trackAppStartup(
-      Future<void> Function() startupOperation,) async {
+    Future<void> Function() startupOperation,
+  ) async {
     final trace = _performance.newTrace('app_startup');
     await trace.start();
 
@@ -96,7 +97,8 @@ class PerformanceService {
 }
 
 // Riverpod providers
-final performanceServiceProvider = Provider<PerformanceService>((ref) => PerformanceService());
+final performanceServiceProvider =
+    Provider<PerformanceService>((ref) => PerformanceService());
 
 final performanceEnabledProvider = StateProvider<bool>((ref) {
   return !kDebugMode; // Enable in release mode only

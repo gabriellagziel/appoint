@@ -1,7 +1,7 @@
+import 'package:appoint/models/ambassador_profile.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
-import '../models/ambassador_profile.dart';
 
 /// Comprehensive Ambassador Automation Service
 /// Handles all automated processes: promotion, demotion, tier management, rewards
@@ -21,7 +21,7 @@ class AmbassadorAutomationService {
       if (!userDoc.exists) return false;
 
       final userData = userDoc.data()!;
-      
+
       // Must be adult and not already ambassador
       if (userData['isAdult'] != true) return false;
       if (userData['ambassadorStatus'] == 'approved') return false;
@@ -109,9 +109,10 @@ class AmbassadorAutomationService {
   Future<void> _reviewAmbassadorPerformance(AmbassadorProfile profile) async {
     try {
       final monthlyReferrals = await _getMonthlyReferralCount(profile.userId);
-      
+
       if (monthlyReferrals < _minimumMonthlyReferrals) {
-        await _demoteAmbassador(profile.userId, 'insufficient_monthly_referrals');
+        await _demoteAmbassador(
+            profile.userId, 'insufficient_monthly_referrals');
       } else {
         // Update activity and schedule next review
         await _updateAmbassadorActivity(profile.userId, monthlyReferrals);
@@ -135,7 +136,8 @@ class AmbassadorAutomationService {
         });
 
         // Update ambassador profile
-        transaction.update(_firestore.collection('ambassador_profiles').doc(userId), {
+        transaction
+            .update(_firestore.collection('ambassador_profiles').doc(userId), {
           'status': 'inactive',
           'statusChangedAt': FieldValue.serverTimestamp(),
           'lastActivityDate': FieldValue.serverTimestamp(),
@@ -162,15 +164,17 @@ class AmbassadorAutomationService {
     try {
       final totalReferrals = await _getUserReferralCount(userId);
       final currentProfile = await _getAmbassadorProfile(userId);
-      
+
       if (currentProfile == null) return;
 
-      AmbassadorTier newTier = currentProfile.tier;
+      var newTier = currentProfile.tier;
 
       // Determine new tier
-      if (totalReferrals >= _lifetimeTierReferrals && currentProfile.tier != AmbassadorTier.lifetime) {
+      if (totalReferrals >= _lifetimeTierReferrals &&
+          currentProfile.tier != AmbassadorTier.lifetime) {
         newTier = AmbassadorTier.lifetime;
-      } else if (totalReferrals >= _premiumTierReferrals && currentProfile.tier == AmbassadorTier.basic) {
+      } else if (totalReferrals >= _premiumTierReferrals &&
+          currentProfile.tier == AmbassadorTier.basic) {
         newTier = AmbassadorTier.premium;
       }
 
@@ -216,15 +220,12 @@ class AmbassadorAutomationService {
         case AmbassadorTier.basic:
           rewardType = AmbassadorRewardType.premiumFeatures;
           expiresAt = now.add(const Duration(days: 365)); // 1 year
-          break;
         case AmbassadorTier.premium:
           rewardType = AmbassadorRewardType.oneYearAccess;
           expiresAt = now.add(const Duration(days: 365));
-          break;
         case AmbassadorTier.lifetime:
           rewardType = AmbassadorRewardType.lifetimeAccess;
           expiresAt = DateTime(2099, 12, 31); // Far future date
-          break;
       }
 
       final reward = AmbassadorReward(
@@ -237,8 +238,11 @@ class AmbassadorAutomationService {
         description: rewardType.displayName,
       );
 
-      await _firestore.collection('ambassador_rewards').doc(reward.id).set(reward.toJson());
-      
+      await _firestore
+          .collection('ambassador_rewards')
+          .doc(reward.id)
+          .set(reward.toJson());
+
       // Update ambassador profile with new reward
       await _firestore.collection('ambassador_profiles').doc(userId).update({
         'earnedRewards': FieldValue.arrayUnion([reward.toJson()]),
@@ -254,7 +258,7 @@ class AmbassadorAutomationService {
     try {
       final shareCode = _generateUniqueCode(userId);
       final shareLink = 'https://app-oint.com/invite/$shareCode';
-      
+
       await _firestore.collection('ambassador_profiles').doc(userId).update({
         'shareLink': shareLink,
         'shareCode': shareCode,
@@ -279,10 +283,11 @@ class AmbassadorAutomationService {
   }
 
   /// Update ambassador monthly activity
-  Future<void> _updateAmbassadorActivity(String userId, int monthlyReferrals) async {
+  Future<void> _updateAmbassadorActivity(
+      String userId, int monthlyReferrals) async {
     try {
       final nextMonth = DateTime.now().add(const Duration(days: 30));
-      final nextReview = DateTime(nextMonth.year, nextMonth.month, 1);
+      final nextReview = DateTime(nextMonth.year, nextMonth.month);
 
       await _firestore.collection('ambassador_profiles').doc(userId).update({
         'monthlyReferrals': monthlyReferrals,
@@ -316,7 +321,8 @@ class AmbassadorAutomationService {
         );
 
         // Update ambassador counts
-        transaction.update(_firestore.collection('ambassador_profiles').doc(ambassadorId), {
+        transaction.update(
+            _firestore.collection('ambassador_profiles').doc(ambassadorId), {
           'totalReferrals': FieldValue.increment(1),
           'activeReferrals': FieldValue.increment(1),
           'monthlyReferrals': FieldValue.increment(1),
@@ -355,12 +361,14 @@ class AmbassadorAutomationService {
   }
 
   Future<AmbassadorProfile?> _getAmbassadorProfile(String userId) async {
-    final doc = await _firestore.collection('ambassador_profiles').doc(userId).get();
+    final doc =
+        await _firestore.collection('ambassador_profiles').doc(userId).get();
     if (!doc.exists) return null;
     return AmbassadorProfile.fromJson(doc.data()!);
   }
 
-  Future<bool> _checkQuotaAvailability(String countryCode, String languageCode) async {
+  Future<bool> _checkQuotaAvailability(
+      String countryCode, String languageCode) async {
     // Implementation would check against ambassador quotas
     // This is a simplified version
     return true;

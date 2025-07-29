@@ -8,7 +8,20 @@ class BookingRequestArgs {
     this.location,
     this.businessId,
   });
-  
+
+  factory BookingRequestArgs.fromJson(Map<String, dynamic> json) =>
+      BookingRequestArgs(
+        inviteeId: json['inviteeId'] as String,
+        openCall: json['openCall'] as bool,
+        scheduledAt: json['scheduledAt'] != null
+            ? DateTime.parse(json['scheduledAt'] as String)
+            : null,
+        serviceType: json['serviceType'] as String?,
+        notes: json['notes'] as String?,
+        location: json['location'] as String?,
+        businessId: json['businessId'] as String?,
+      );
+
   final String inviteeId;
   final bool openCall;
   final DateTime? scheduledAt;
@@ -25,41 +38,24 @@ class BookingRequestArgs {
     String? notes,
     String? location,
     String? businessId,
-  }) {
-    return BookingRequestArgs(
-      inviteeId: inviteeId ?? this.inviteeId,
-      openCall: openCall ?? this.openCall,
-      scheduledAt: scheduledAt ?? this.scheduledAt,
-      serviceType: serviceType ?? this.serviceType,
-      notes: notes ?? this.notes,
-      location: location ?? this.location,
-      businessId: businessId ?? this.businessId,
-    );
-  }
+  }) =>
+      BookingRequestArgs(
+        inviteeId: inviteeId ?? this.inviteeId,
+        openCall: openCall ?? this.openCall,
+        scheduledAt: scheduledAt ?? this.scheduledAt,
+        serviceType: serviceType ?? this.serviceType,
+        notes: notes ?? this.notes,
+        location: location ?? this.location,
+        businessId: businessId ?? this.businessId,
+      );
 
-  Map<String, dynamic> toJson() {
-    return {
-      'inviteeId': inviteeId,
-      'openCall': openCall,
-      'scheduledAt': scheduledAt?.toIso8601String(),
-      'serviceType': serviceType,
-      'notes': notes,
-      'location': location,
-      'businessId': businessId,
-    };
-  }
-
-  factory BookingRequestArgs.fromJson(Map<String, dynamic> json) {
-    return BookingRequestArgs(
-      inviteeId: json['inviteeId'] as String,
-      openCall: json['openCall'] as bool,
-      scheduledAt: json['scheduledAt'] != null 
-          ? DateTime.parse(json['scheduledAt'] as String)
-          : null,
-      serviceType: json['serviceType'] as String?,
-      notes: json['notes'] as String?,
-      location: json['location'] as String?,
-      businessId: json['businessId'] as String?,
-    );
-  }
+  Map<String, dynamic> toJson() => {
+        'inviteeId': inviteeId,
+        'openCall': openCall,
+        'scheduledAt': scheduledAt?.toIso8601String(),
+        'serviceType': serviceType,
+        'notes': notes,
+        'location': location,
+        'businessId': businessId,
+      };
 }

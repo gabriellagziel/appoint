@@ -34,7 +34,8 @@ class RewardsScreen extends ConsumerWidget {
                 if (nextTier != null) ...[
                   const SizedBox(height: 8),
                   Text(
-                      'Next Tier (${nextTier['tier']}) at ${nextTier['points']} points',),
+                    'Next Tier (${nextTier['tier']}) at ${nextTier['points']} points',
+                  ),
                 ],
               ],
             ),
@@ -48,7 +49,9 @@ class RewardsScreen extends ConsumerWidget {
   }
 
   Map<String, dynamic>? _nextTierInfo(
-      int points, final RewardsService rewardsService,) {
+    int points,
+    final RewardsService rewardsService,
+  ) {
     if (points < RewardsService.rewardTiers['silver']!) {
       return {
         'tier': 'silver',

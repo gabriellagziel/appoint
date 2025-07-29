@@ -1,6 +1,8 @@
 mixin ServiceErrorHandler {
-  Future<T?> handleServiceCall<T>(Future<T> Function() fn,
-      {void Function(Object, StackTrace)? onError,}) async {
+  Future<T?> handleServiceCall<T>(
+    Future<T> Function() fn, {
+    void Function(Object, StackTrace)? onError,
+  }) async {
     try {
       return await fn();
     } catch (e) {

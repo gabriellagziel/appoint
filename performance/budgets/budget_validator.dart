@@ -1,15 +1,15 @@
 import 'dart:io';
-import 'dart:convert';
 import 'package:yaml/yaml.dart';
 
 /// Performance budget validator
-/// 
+///
 /// Validates performance metrics against defined budgets and generates reports
 class PerformanceBudgetValidator {
-  static const String _budgetFile = 'performance/budgets/performance_budget.yaml';
-  
+  static const String _budgetFile =
+      'performance/budgets/performance_budget.yaml';
+
   late Map<String, dynamic> _budget;
-  
+
   /// Loads the performance budget configuration
   Future<void> loadBudget() async {
     try {
@@ -17,14 +17,14 @@ class PerformanceBudgetValidator {
       if (!await file.exists()) {
         throw Exception('Performance budget file not found: $_budgetFile');
       }
-      
+
       final content = await file.readAsString();
       _budget = loadYaml(content) as Map<String, dynamic>;
     } catch (e) {
       throw Exception('Failed to load performance budget: $e');
     }
   }
-  
+
   /// Validates a single metric against its budget
   BudgetValidationResult validateMetric({
     required String metricPath,
@@ -43,11 +43,11 @@ class PerformanceBudgetValidator {
           message: 'No budget defined for metric: $metricPath',
         );
       }
-      
+
       final target = budget['target'];
       final warning = budget['warning'];
       final critical = budget['critical'];
-      
+
       if (value <= target) {
         return BudgetValidationResult(
           metric: metricPath,
@@ -76,7 +76,8 @@ class PerformanceBudgetValidator {
           critical: critical,
           isValid: false,
           severity: BudgetViolationSeverity.critical,
-          message: 'Metric exceeds warning threshold but within critical threshold',
+          message:
+              'Metric exceeds warning threshold but within critical threshold',
         );
       } else {
         return BudgetValidationResult(
@@ -100,7 +101,7 @@ class PerformanceBudgetValidator {
       );
     }
   }
-  
+
   /// Validates multiple metrics against their budgets
   BudgetValidationReport validateMetrics({
     required Map<String, dynamic> metrics,
@@ -108,7 +109,7 @@ class PerformanceBudgetValidator {
     String? deviceType,
   }) {
     final results = <BudgetValidationResult>[];
-    
+
     for (final entry in metrics.entries) {
       final result = validateMetric(
         metricPath: entry.key,
@@ -118,7 +119,7 @@ class PerformanceBudgetValidator {
       );
       results.add(result);
     }
-    
+
     return BudgetValidationReport(
       results: results,
       platform: platform,
@@ -126,7 +127,7 @@ class PerformanceBudgetValidator {
       timestamp: DateTime.now(),
     );
   }
-  
+
   /// Validates startup time performance
   BudgetValidationResult validateStartupTime({
     required Duration startupTime,
@@ -140,7 +141,7 @@ class PerformanceBudgetValidator {
       deviceType: deviceType,
     );
   }
-  
+
   /// Validates frame time performance
   BudgetValidationResult validateFrameTime({
     required Duration frameTime,
@@ -154,7 +155,7 @@ class PerformanceBudgetValidator {
       deviceType: deviceType,
     );
   }
-  
+
   /// Validates jank percentage
   BudgetValidationResult validateJankPercentage({
     required double jankPercentage,
@@ -168,7 +169,7 @@ class PerformanceBudgetValidator {
       deviceType: deviceType,
     );
   }
-  
+
   /// Validates memory usage
   BudgetValidationResult validateMemoryUsage({
     required int memoryUsageMB,
@@ -182,7 +183,7 @@ class PerformanceBudgetValidator {
       deviceType: deviceType,
     );
   }
-  
+
   /// Validates network response time
   BudgetValidationResult validateNetworkResponseTime({
     required Duration responseTime,
@@ -196,7 +197,7 @@ class PerformanceBudgetValidator {
       deviceType: deviceType,
     );
   }
-  
+
   /// Gets the budget configuration for a specific metric
   Map<String, dynamic>? _getBudgetForMetric(
     String metricPath,
@@ -205,7 +206,7 @@ class PerformanceBudgetValidator {
   ) {
     final pathParts = metricPath.split('.');
     Map<String, dynamic>? current = _budget;
-    
+
     // Navigate to the metric in the budget
     for (final part in pathParts) {
       if (current == null || !current.containsKey(part)) {
@@ -213,9 +214,9 @@ class PerformanceBudgetValidator {
       }
       current = current[part] as Map<String, dynamic>?;
     }
-    
+
     if (current == null) return null;
-    
+
     // Apply platform-specific overrides
     if (platform != null && _budget.containsKey('platforms')) {
       final platforms = _budget['platforms'] as Map<String, dynamic>;
@@ -227,7 +228,7 @@ class PerformanceBudgetValidator {
         }
       }
     }
-    
+
     // Apply device-specific overrides
     if (deviceType != null && _budget.containsKey('devices')) {
       final devices = _budget['devices'] as Map<String, dynamic>;
@@ -239,27 +240,27 @@ class PerformanceBudgetValidator {
         }
       }
     }
-    
+
     return current;
   }
-  
+
   /// Gets a nested value from a map using path parts
   Map<String, dynamic>? _getNestedValue(
     Map<String, dynamic> map,
     List<String> pathParts,
   ) {
     Map<String, dynamic>? current = map;
-    
+
     for (final part in pathParts) {
       if (current == null || !current.containsKey(part)) {
         return null;
       }
       current = current[part] as Map<String, dynamic>?;
     }
-    
+
     return current;
   }
-  
+
   /// Merges two budget configurations
   Map<String, dynamic> _mergeBudgets(
     Map<String, dynamic> base,
@@ -269,26 +270,31 @@ class PerformanceBudgetValidator {
     merged.addAll(override);
     return merged;
   }
-  
+
   /// Detects performance regressions
   List<PerformanceRegression> detectRegressions({
     required Map<String, dynamic> currentMetrics,
     required Map<String, dynamic> baselineMetrics,
   }) {
     final regressions = <PerformanceRegression>[];
-    final regressionThresholds = _budget['regression_detection'] as Map<String, dynamic>;
-    
+    final regressionThresholds =
+        _budget['regression_detection'] as Map<String, dynamic>;
+
     for (final entry in currentMetrics.entries) {
       final metric = entry.key;
       final currentValue = entry.value;
       final baselineValue = baselineMetrics[metric];
-      
-      if (baselineValue != null && baselineValue is num && currentValue is num) {
-        final percentageIncrease = ((currentValue - baselineValue) / baselineValue) * 100;
-        
+
+      if (baselineValue != null &&
+          baselineValue is num &&
+          currentValue is num) {
+        final percentageIncrease =
+            ((currentValue - baselineValue) / baselineValue) * 100;
+
         final threshold = _getRegressionThreshold(metric, regressionThresholds);
-        final significantThreshold = _getSignificantRegressionThreshold(metric, regressionThresholds);
-        
+        final significantThreshold =
+            _getSignificantRegressionThreshold(metric, regressionThresholds);
+
         if (percentageIncrease >= significantThreshold) {
           regressions.add(PerformanceRegression(
             metric: metric,
@@ -310,43 +316,46 @@ class PerformanceBudgetValidator {
         }
       }
     }
-    
+
     return regressions;
   }
-  
+
   /// Gets the regression threshold for a metric
-  double _getRegressionThreshold(String metric, Map<String, dynamic> thresholds) {
+  double _getRegressionThreshold(
+      String metric, Map<String, dynamic> thresholds) {
     final metricThresholds = thresholds[metric] as Map<String, dynamic>?;
     return metricThresholds?['regression_threshold'] as double? ?? 10.0;
   }
-  
+
   /// Gets the significant regression threshold for a metric
-  double _getSignificantRegressionThreshold(String metric, Map<String, dynamic> thresholds) {
+  double _getSignificantRegressionThreshold(
+      String metric, Map<String, dynamic> thresholds) {
     final metricThresholds = thresholds[metric] as Map<String, dynamic>?;
     return metricThresholds?['significant_regression'] as double? ?? 25.0;
   }
-  
+
   /// Generates a performance budget report
   PerformanceBudgetReport generateReport({
     required BudgetValidationReport validationReport,
     List<PerformanceRegression>? regressions,
   }) {
     final totalMetrics = validationReport.results.length;
-    final passedMetrics = validationReport.results.where((r) => r.isValid).length;
+    final passedMetrics =
+        validationReport.results.where((r) => r.isValid).length;
     final failedMetrics = totalMetrics - passedMetrics;
-    
+
     final criticalViolations = validationReport.results
         .where((r) => r.severity == BudgetViolationSeverity.critical)
         .length;
-    
+
     final errorViolations = validationReport.results
         .where((r) => r.severity == BudgetViolationSeverity.error)
         .length;
-    
+
     final warningViolations = validationReport.results
         .where((r) => r.severity == BudgetViolationSeverity.warning)
         .length;
-    
+
     return PerformanceBudgetReport(
       validationReport: validationReport,
       regressions: regressions ?? [],
@@ -373,7 +382,7 @@ class BudgetValidationResult {
   final bool isValid;
   final BudgetViolationSeverity severity;
   final String message;
-  
+
   BudgetValidationResult({
     required this.metric,
     required this.value,
@@ -384,7 +393,7 @@ class BudgetValidationResult {
     required this.severity,
     required this.message,
   });
-  
+
   @override
   String toString() {
     return 'BudgetValidationResult('
@@ -410,24 +419,27 @@ class BudgetValidationReport {
   final String? platform;
   final String? deviceType;
   final DateTime timestamp;
-  
+
   BudgetValidationReport({
     required this.results,
     this.platform,
     this.deviceType,
     required this.timestamp,
   });
-  
+
   bool get allMetricsValid => results.every((r) => r.isValid);
-  
-  List<BudgetValidationResult> get criticalViolations =>
-      results.where((r) => r.severity == BudgetViolationSeverity.critical).toList();
-  
-  List<BudgetValidationResult> get errorViolations =>
-      results.where((r) => r.severity == BudgetViolationSeverity.error).toList();
-  
-  List<BudgetValidationResult> get warningViolations =>
-      results.where((r) => r.severity == BudgetViolationSeverity.warning).toList();
+
+  List<BudgetValidationResult> get criticalViolations => results
+      .where((r) => r.severity == BudgetViolationSeverity.critical)
+      .toList();
+
+  List<BudgetValidationResult> get errorViolations => results
+      .where((r) => r.severity == BudgetViolationSeverity.error)
+      .toList();
+
+  List<BudgetValidationResult> get warningViolations => results
+      .where((r) => r.severity == BudgetViolationSeverity.warning)
+      .toList();
 }
 
 /// Performance regression
@@ -438,7 +450,7 @@ class PerformanceRegression {
   final double percentageIncrease;
   final PerformanceRegressionSeverity severity;
   final double threshold;
-  
+
   PerformanceRegression({
     required this.metric,
     required this.baselineValue,
@@ -447,7 +459,7 @@ class PerformanceRegression {
     required this.severity,
     required this.threshold,
   });
-  
+
   @override
   String toString() {
     return 'PerformanceRegression('
@@ -473,7 +485,7 @@ class BudgetSummary {
   final int errorViolations;
   final int warningViolations;
   final double passRate;
-  
+
   BudgetSummary({
     required this.totalMetrics,
     required this.passedMetrics,
@@ -483,9 +495,9 @@ class BudgetSummary {
     required this.warningViolations,
     required this.passRate,
   });
-  
+
   bool get isHealthy => criticalViolations == 0 && errorViolations == 0;
-  
+
   @override
   String toString() {
     return 'BudgetSummary('
@@ -502,15 +514,15 @@ class PerformanceBudgetReport {
   final BudgetValidationReport validationReport;
   final List<PerformanceRegression> regressions;
   final BudgetSummary summary;
-  
+
   PerformanceBudgetReport({
     required this.validationReport,
     required this.regressions,
     required this.summary,
   });
-  
+
   bool get isHealthy => summary.isHealthy && regressions.isEmpty;
-  
+
   @override
   String toString() {
     return 'PerformanceBudgetReport('
@@ -519,4 +531,4 @@ class PerformanceBudgetReport {
         'healthy: $isHealthy'
         ')';
   }
-} 
+}

@@ -26,29 +26,37 @@ class ColorContrastTesting {
     luminance1 = calculateRelativeLuminance(color1);
     luminance2 = calculateRelativeLuminance(color2);
 
-    double lighter = max(luminance1, luminance2);
-    double darker = min(luminance1, luminance2);
+    final double lighter = max(luminance1, luminance2);
+    final double darker = min(luminance1, luminance2);
 
     return (lighter + 0.05) / (darker + 0.05);
   }
 
   /// Check if contrast ratio meets WCAG AA standards
-  static bool meetsWCAGAA(Color foreground, Color background,
-      {bool isLargeText = false,}) {
+  static bool meetsWCAGAA(
+    Color foreground,
+    Color background, {
+    bool isLargeText = false,
+  }) {
     ratio = calculateContrastRatio(foreground, background);
     return isLargeText ? ratio >= 3.0 : ratio >= 4.5;
   }
 
   /// Check if contrast ratio meets WCAG AAA standards
-  static bool meetsWCAGAAA(Color foreground, Color background,
-      {bool isLargeText = false,}) {
+  static bool meetsWCAGAAA(
+    Color foreground,
+    Color background, {
+    bool isLargeText = false,
+  }) {
     ratio = calculateContrastRatio(foreground, background);
     return isLargeText ? ratio >= 4.5 : ratio >= 7.0;
   }
 
   /// Get contrast ratio with descriptive text
   static String getContrastRatioDescription(
-      Color foreground, Color background,) {
+    Color foreground,
+    Color background,
+  ) {
     ratio = calculateContrastRatio(foreground, background);
 
     if (ratio >= 7.0) {
@@ -63,8 +71,10 @@ class ColorContrastTesting {
   }
 
   /// Find accessible text color for a given background
-  static Color findAccessibleTextColor(Color background,
-      {bool preferDark = true,}) {
+  static Color findAccessibleTextColor(
+    Color background, {
+    bool preferDark = true,
+  }) {
     const black = Color(0xFF000000);
     const white = Color(0xFFFFFFFF);
 
@@ -79,8 +89,10 @@ class ColorContrastTesting {
   }
 
   /// Generate accessible color palette
-  static List<Color> generateAccessiblePalette(Color baseColor,
-      {int count = 5,}) {
+  static List<Color> generateAccessiblePalette(
+    Color baseColor, {
+    int count = 5,
+  }) {
     final palette = <Color>[];
     baseLuminance = calculateRelativeLuminance(baseColor);
 
@@ -165,14 +177,14 @@ class ColorContrastTesting {
       report.writeln('$status: $test');
     });
 
-    final passedCount =
-        results.values.where((bool passed) => passed).length;
+    final passedCount = results.values.where((bool passed) => passed).length;
     final totalCount = results.length;
     passRate = (passedCount / totalCount) * 100;
 
     report.writeln();
     report.writeln(
-        'Summary: $passedCount/$totalCount tests passed (${passRate.toStringAsFixed(1)}%)',);
+      'Summary: $passedCount/$totalCount tests passed (${passRate.toStringAsFixed(1)}%)',
+    );
 
     return report.toString();
   }
@@ -180,9 +192,11 @@ class ColorContrastTesting {
 
 /// Widget for testing color contrast
 class ColorContrastTester extends StatefulWidget {
-
   const ColorContrastTester({
-    required this.foreground, required this.background, required this.label, super.key,
+    required this.foreground,
+    required this.background,
+    required this.label,
+    super.key,
   });
   final Color foreground;
   final Color background;
@@ -229,72 +243,72 @@ class _ColorContrastTesterState extends State<ColorContrastTester> {
 
   @override
   Widget build(BuildContext context) => Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              widget.label,
-              style: Theme.of(context).textTheme.titleMedium,
-            ),
-            const SizedBox(height: 8),
-            Container(
-              width: double.infinity,
-              height: 60,
-              decoration: BoxDecoration(
-                color: widget.background,
-                borderRadius: BorderRadius.circular(8),
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                widget.label,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
-              child: Center(
-                child: Text(
-                  'Sample Text',
-                  style: TextStyle(
-                    color: widget.foreground,
-                    fontSize: 18,
-                    fontWeight: FontWeight.w500,
+              const SizedBox(height: 8),
+              Container(
+                width: double.infinity,
+                height: 60,
+                decoration: BoxDecoration(
+                  color: widget.background,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Center(
+                  child: Text(
+                    'Sample Text',
+                    style: TextStyle(
+                      color: widget.foreground,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ),
               ),
-            ),
-            const SizedBox(height: 8),
-            Row(
-              children: [
-                Icon(
-                  _meetsWCAGAAA
-                      ? Icons.check_circle
-                      : _meetsWCAGAA
-                          ? Icons.warning
-                          : Icons.error,
-                  color: _meetsWCAGAAA
-                      ? Colors.green
-                      : _meetsWCAGAA
-                          ? Colors.orange
-                          : Colors.red,
-                  size: 20,
-                ),
-                const SizedBox(width: 8),
-                Text(
-                  '${_contrastRatio.toStringAsFixed(2)}:1',
-                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
-                      ),
-                ),
-                const SizedBox(width: 8),
-                Text(
-                  _meetsWCAGAAA
-                      ? 'WCAG AAA'
-                      : _meetsWCAGAA
-                          ? 'WCAG AA'
-                          : 'Below AA',
-                  style: Theme.of(context).textTheme.bodySmall,
-                ),
-              ],
-            ),
-          ],
+              const SizedBox(height: 8),
+              Row(
+                children: [
+                  Icon(
+                    _meetsWCAGAAA
+                        ? Icons.check_circle
+                        : _meetsWCAGAA
+                            ? Icons.warning
+                            : Icons.error,
+                    color: _meetsWCAGAAA
+                        ? Colors.green
+                        : _meetsWCAGAA
+                            ? Colors.orange
+                            : Colors.red,
+                    size: 20,
+                  ),
+                  const SizedBox(width: 8),
+                  Text(
+                    '${_contrastRatio.toStringAsFixed(2)}:1',
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                  ),
+                  const SizedBox(width: 8),
+                  Text(
+                    _meetsWCAGAAA
+                        ? 'WCAG AAA'
+                        : _meetsWCAGAA
+                            ? 'WCAG AA'
+                            : 'Below AA',
+                    style: Theme.of(context).textTheme.bodySmall,
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 }
 
 /// Screen for testing color contrast
@@ -331,49 +345,50 @@ class _ColorContrastTestScreenState extends State<ColorContrastTestScreen> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(
-        title: const Text('Color Contrast Testing'),
-      ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Color Contrast Test Results',
-              style: Theme.of(context).textTheme.headlineSmall,
-            ),
-            const SizedBox(height: 16),
-            ..._testColors.expand(
-              (foreground) => _backgroundColors.map(
-                (background) => ColorContrastTester(
-                  foreground: foreground,
-                  background: background,
-                  label:
-                      '${_getColorName(foreground)} on ${_getColorName(background)}',
-                ),
-              ),
-            ),
-            const SizedBox(height: 24),
-            Text(
-              'Theme Contrast Report',
-              style: Theme.of(context).textTheme.headlineSmall,
-            ),
-            const SizedBox(height: 16),
-            Card(
-              child: Padding(
-                padding: const EdgeInsets.all(16),
-                child: Text(
-                  ColorContrastTesting.generateContrastReport(
-                      Theme.of(context),),
-                  style: Theme.of(context).textTheme.bodyMedium,
-                ),
-              ),
-            ),
-          ],
+        appBar: AppBar(
+          title: const Text('Color Contrast Testing'),
         ),
-      ),
-    );
+        body: SingleChildScrollView(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Color Contrast Test Results',
+                style: Theme.of(context).textTheme.headlineSmall,
+              ),
+              const SizedBox(height: 16),
+              ..._testColors.expand(
+                (foreground) => _backgroundColors.map(
+                  (background) => ColorContrastTester(
+                    foreground: foreground,
+                    background: background,
+                    label:
+                        '${_getColorName(foreground)} on ${_getColorName(background)}',
+                  ),
+                ),
+              ),
+              const SizedBox(height: 24),
+              Text(
+                'Theme Contrast Report',
+                style: Theme.of(context).textTheme.headlineSmall,
+              ),
+              const SizedBox(height: 16),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Text(
+                    ColorContrastTesting.generateContrastReport(
+                      Theme.of(context),
+                    ),
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
 
   String _getColorName(Color color) {
     if (color == Colors.black) return 'Black';
@@ -393,13 +408,16 @@ class _ColorContrastTestScreenState extends State<ColorContrastTestScreen> {
 /// Mixin for adding contrast testing to widgets
 mixin ContrastTestingMixin {
   /// Test contrast for a widget's colors
-  bool testWidgetContrast(Color foreground, Color background) => ColorContrastTesting.meetsWCAGAA(foreground, background);
+  bool testWidgetContrast(Color foreground, Color background) =>
+      ColorContrastTesting.meetsWCAGAA(foreground, background);
 
   /// Get accessible text color for a background
-  Color getAccessibleTextColor(Color background) => ColorContrastTesting.findAccessibleTextColor(background);
+  Color getAccessibleTextColor(Color background) =>
+      ColorContrastTesting.findAccessibleTextColor(background);
 
   /// Generate accessible color palette
-  List<Color> generateAccessiblePalette(Color baseColor) => ColorContrastTesting.generateAccessiblePalette(baseColor);
+  List<Color> generateAccessiblePalette(Color baseColor) =>
+      ColorContrastTesting.generateAccessiblePalette(baseColor);
 }
 
 /// Provider for color contrast testing
@@ -410,13 +428,16 @@ class ColorContrastProvider {
       ColorContrastProvider._internal();
 
   /// Test a color combination
-  bool testContrast(Color foreground, Color background) => ColorContrastTesting.meetsWCAGAA(foreground, background);
+  bool testContrast(Color foreground, Color background) =>
+      ColorContrastTesting.meetsWCAGAA(foreground, background);
 
   /// Get contrast ratio
-  double getContrastRatio(Color foreground, Color background) => ColorContrastTesting.calculateContrastRatio(foreground, background);
+  double getContrastRatio(Color foreground, Color background) =>
+      ColorContrastTesting.calculateContrastRatio(foreground, background);
 
   /// Generate contrast report for current theme
-  String generateThemeReport(ThemeData theme) => ColorContrastTesting.generateContrastReport(theme);
+  String generateThemeReport(ThemeData theme) =>
+      ColorContrastTesting.generateContrastReport(theme);
 
   /// Test all color combinations in a list
   Map<String, bool> testColorCombinations(List<Color> colors) {

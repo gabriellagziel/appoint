@@ -46,19 +46,20 @@ class BookingHelper {
   Future<void> submitBooking() async {
     final booking = _buildBooking();
     await ref.read(bookingServiceProvider).submitBooking(booking);
-    
+
     // Increment usage counter after successful booking
     await ref.read(usageMonitorProvider).incrementWeeklyUsage(_userId);
   }
-  
+
   /// Checks if the user can create a booking based on usage limits
   Future<bool> canCreateBooking() async {
     final user = ref.read(userProvider);
     if (user == null) return false;
-    
+
     final isBusiness = user.businessMode;
-    final currentUsage = await ref.read(usageMonitorProvider).getWeeklyUsage(_userId);
-    
+    final currentUsage =
+        await ref.read(usageMonitorProvider).getWeeklyUsage(_userId);
+
     return !UsageMonitorService.shouldBlockBooking(
       weeklyCount: currentUsage,
       isBusiness: isBusiness,

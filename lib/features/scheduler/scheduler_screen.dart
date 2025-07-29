@@ -5,6 +5,6 @@ class SchedulerScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => const Scaffold(
-      body: Center(child: Text('Scheduler Screen')),
-    );
+        body: Center(child: Text('Scheduler Screen')),
+      );
 }

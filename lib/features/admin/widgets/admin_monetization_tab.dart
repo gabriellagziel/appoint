@@ -20,15 +20,13 @@ class AdminMonetizationTab extends ConsumerWidget {
             data: (settings) =>
                 _buildMonetizationSettings(context, ref, settings),
             loading: () => const Center(child: CircularProgressIndicator()),
-            error: (error, final stack) =>
-                Center(child: Text('Error: $error')),
+            error: (error, final stack) => Center(child: Text('Error: $error')),
           ),
           const SizedBox(height: 24),
           adRevenueStats.when(
             data: _buildAdRevenueStats,
             loading: () => const Center(child: CircularProgressIndicator()),
-            error: (error, final stack) =>
-                Center(child: Text('Error: $error')),
+            error: (error, final stack) => Center(child: Text('Error: $error')),
           ),
         ],
       ),
@@ -36,103 +34,123 @@ class AdminMonetizationTab extends ConsumerWidget {
   }
 
   Widget _buildMonetizationSettings(
-      BuildContext context, WidgetRef ref, MonetizationSettings settings,) => Card(
-      elevation: 4,
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Text(
-              'Ad Settings',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
+    BuildContext context,
+    WidgetRef ref,
+    MonetizationSettings settings,
+  ) =>
+      Card(
+        elevation: 4,
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                'Ad Settings',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-            const SizedBox(height: 16),
-            _buildSettingSwitch(
-              'Ads for Free Users',
-              settings.adsEnabledForFreeUsers,
-              (value) =>
-                  _updateAdSetting(ref, 'adsEnabledForFreeUsers', value),
-            ),
-            _buildSettingSwitch(
-              'Ads for Children',
-              settings.adsEnabledForChildren,
-              (value) =>
-                  _updateAdSetting(ref, 'adsEnabledForChildren', value),
-            ),
-            _buildSettingSwitch(
-              'Ads for Studio Users',
-              settings.adsEnabledForStudioUsers,
-              (value) =>
-                  _updateAdSetting(ref, 'adsEnabledForStudioUsers', value),
-            ),
-            _buildSettingSwitch(
-              'Ads for Premium Users',
-              settings.adsEnabledForPremiumUsers,
-              (value) =>
-                  _updateAdSetting(ref, 'adsEnabledForPremiumUsers', value),
-            ),
-          ],
+              const SizedBox(height: 16),
+              _buildSettingSwitch(
+                'Ads for Free Users',
+                settings.adsEnabledForFreeUsers,
+                (value) =>
+                    _updateAdSetting(ref, 'adsEnabledForFreeUsers', value),
+              ),
+              _buildSettingSwitch(
+                'Ads for Children',
+                settings.adsEnabledForChildren,
+                (value) =>
+                    _updateAdSetting(ref, 'adsEnabledForChildren', value),
+              ),
+              _buildSettingSwitch(
+                'Ads for Studio Users',
+                settings.adsEnabledForStudioUsers,
+                (value) =>
+                    _updateAdSetting(ref, 'adsEnabledForStudioUsers', value),
+              ),
+              _buildSettingSwitch(
+                'Ads for Premium Users',
+                settings.adsEnabledForPremiumUsers,
+                (value) =>
+                    _updateAdSetting(ref, 'adsEnabledForPremiumUsers', value),
+              ),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 
-  Widget _buildSettingSwitch(final String title, final bool value,
-      ValueChanged<bool> onChanged,) => SwitchListTile(
-      title: Text(title),
-      value: value,
-      onChanged: onChanged,
-    );
+  Widget _buildSettingSwitch(
+    final String title,
+    final bool value,
+    ValueChanged<bool> onChanged,
+  ) =>
+      SwitchListTile(
+        title: Text(title),
+        value: value,
+        onChanged: onChanged,
+      );
 
   Widget _buildAdRevenueStats(AdRevenueStats stats) => Card(
-      elevation: 4,
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Text(
-              'Ad Revenue Statistics',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
+        elevation: 4,
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                'Ad Revenue Statistics',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-            const SizedBox(height: 16),
-            _buildStatRow(
-                'Total Revenue', '\$${stats.totalRevenue.toStringAsFixed(2)}',),
-            _buildStatRow('Monthly Revenue',
-                '\$${stats.monthlyRevenue.toStringAsFixed(2)}',),
-            _buildStatRow('Weekly Revenue',
-                '\$${stats.weeklyRevenue.toStringAsFixed(2)}',),
-            _buildStatRow(
-                'Daily Revenue', '\$${stats.dailyRevenue.toStringAsFixed(2)}',),
-            _buildStatRow(
-                'Total Impressions', stats.totalImpressions.toString(),),
-            _buildStatRow('Total Clicks', stats.totalClicks.toString()),
-            _buildStatRow('Click Through Rate',
-                '${(stats.clickThroughRate * 100).toStringAsFixed(2)}%',),
-          ],
+              const SizedBox(height: 16),
+              _buildStatRow(
+                'Total Revenue',
+                '\$${stats.totalRevenue.toStringAsFixed(2)}',
+              ),
+              _buildStatRow(
+                'Monthly Revenue',
+                '\$${stats.monthlyRevenue.toStringAsFixed(2)}',
+              ),
+              _buildStatRow(
+                'Weekly Revenue',
+                '\$${stats.weeklyRevenue.toStringAsFixed(2)}',
+              ),
+              _buildStatRow(
+                'Daily Revenue',
+                '\$${stats.dailyRevenue.toStringAsFixed(2)}',
+              ),
+              _buildStatRow(
+                'Total Impressions',
+                stats.totalImpressions.toString(),
+              ),
+              _buildStatRow('Total Clicks', stats.totalClicks.toString()),
+              _buildStatRow(
+                'Click Through Rate',
+                '${(stats.clickThroughRate * 100).toStringAsFixed(2)}%',
+              ),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 
   Widget _buildStatRow(String label, final String value) => Padding(
-      padding: const EdgeInsets.symmetric(vertical: 4),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(label),
-          Text(
-            value,
-            style: const TextStyle(fontWeight: FontWeight.bold),
-          ),
-        ],
-      ),
-    );
+        padding: const EdgeInsets.symmetric(vertical: 4),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(label),
+            Text(
+              value,
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ],
+        ),
+      );
 
   void _updateAdSetting(WidgetRef ref, String setting, final bool value) {
     final currentSettings = ref.read(monetizationSettingsProvider).value;

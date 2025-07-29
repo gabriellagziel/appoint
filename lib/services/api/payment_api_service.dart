@@ -1,12 +1,11 @@
-import 'package:appoint/models/subscription.dart';
 import 'package:appoint/models/payment.dart';
+import 'package:appoint/models/subscription.dart';
 import 'package:appoint/services/api/api_client.dart';
 
 class PaymentApiService {
+  PaymentApiService._();
   static final PaymentApiService _instance = PaymentApiService._();
   static PaymentApiService get instance => _instance;
-  
-  PaymentApiService._();
 
   // Get available subscription plans
   Future<List<SubscriptionPlan>> getSubscriptionPlans() async {
@@ -16,7 +15,7 @@ class PaymentApiService {
       );
 
       final plans = response['plans'] as List;
-      return plans.map((plan) => SubscriptionPlan.fromJson(plan)).toList();
+      return plans.map(SubscriptionPlan.fromJson).toList();
     } catch (e) {
       rethrow;
     }
@@ -216,7 +215,8 @@ class PaymentApiService {
       final queryParams = <String, dynamic>{};
       if (limit != null) queryParams['limit'] = limit;
       if (offset != null) queryParams['offset'] = offset;
-      if (fromDate != null) queryParams['fromDate'] = fromDate.toIso8601String();
+      if (fromDate != null)
+        queryParams['fromDate'] = fromDate.toIso8601String();
       if (toDate != null) queryParams['toDate'] = toDate.toIso8601String();
 
       final response = await ApiClient.instance.get<Map<String, dynamic>>(
@@ -355,6 +355,16 @@ class PaymentMethod {
     required this.isDefault,
   });
 
+  factory PaymentMethod.fromJson(Map<String, dynamic> json) => PaymentMethod(
+        id: json['id'] as String,
+        type: json['type'] as String,
+        last4: json['last4'] as String,
+        brand: json['brand'] as String,
+        expMonth: json['expMonth'] as int,
+        expYear: json['expYear'] as int,
+        isDefault: json['isDefault'] as bool,
+      );
+
   final String id;
   final String type;
   final String last4;
@@ -362,18 +372,6 @@ class PaymentMethod {
   final int expMonth;
   final int expYear;
   final bool isDefault;
-
-  factory PaymentMethod.fromJson(Map<String, dynamic> json) {
-    return PaymentMethod(
-      id: json['id'] as String,
-      type: json['type'] as String,
-      last4: json['last4'] as String,
-      brand: json['brand'] as String,
-      expMonth: json['expMonth'] as int,
-      expYear: json['expYear'] as int,
-      isDefault: json['isDefault'] as bool,
-    );
-  }
 }
 
 class BillingHistoryItem {
@@ -387,6 +385,17 @@ class BillingHistoryItem {
     this.description,
   });
 
+  factory BillingHistoryItem.fromJson(Map<String, dynamic> json) =>
+      BillingHistoryItem(
+        id: json['id'] as String,
+        amount: (json['amount'] as num).toDouble(),
+        currency: json['currency'] as String,
+        status: json['status'] as String,
+        type: json['type'] as String,
+        date: DateTime.parse(json['date'] as String),
+        description: json['description'] as String?,
+      );
+
   final String id;
   final double amount;
   final String currency;
@@ -394,18 +403,6 @@ class BillingHistoryItem {
   final String type;
   final DateTime date;
   final String? description;
-
-  factory BillingHistoryItem.fromJson(Map<String, dynamic> json) {
-    return BillingHistoryItem(
-      id: json['id'] as String,
-      amount: (json['amount'] as num).toDouble(),
-      currency: json['currency'] as String,
-      status: json['status'] as String,
-      type: json['type'] as String,
-      date: DateTime.parse(json['date'] as String),
-      description: json['description'] as String?,
-    );
-  }
 }
 
 class Invoice {
@@ -420,6 +417,21 @@ class Invoice {
     this.items,
   });
 
+  factory Invoice.fromJson(Map<String, dynamic> json) => Invoice(
+        id: json['id'] as String,
+        amount: (json['amount'] as num).toDouble(),
+        currency: json['currency'] as String,
+        status: json['status'] as String,
+        date: DateTime.parse(json['date'] as String),
+        dueDate: DateTime.parse(json['dueDate'] as String),
+        description: json['description'] as String?,
+        items: json['items'] != null
+            ? (json['items'] as List)
+                .map((item) => InvoiceItem.fromJson(item))
+                .toList()
+            : null,
+      );
+
   final String id;
   final double amount;
   final String currency;
@@ -428,23 +440,6 @@ class Invoice {
   final DateTime dueDate;
   final String? description;
   final List<InvoiceItem>? items;
-
-  factory Invoice.fromJson(Map<String, dynamic> json) {
-    return Invoice(
-      id: json['id'] as String,
-      amount: (json['amount'] as num).toDouble(),
-      currency: json['currency'] as String,
-      status: json['status'] as String,
-      date: DateTime.parse(json['date'] as String),
-      dueDate: DateTime.parse(json['dueDate'] as String),
-      description: json['description'] as String?,
-      items: json['items'] != null
-          ? (json['items'] as List)
-              .map((item) => InvoiceItem.fromJson(item))
-              .toList()
-          : null,
-    );
-  }
 }
 
 class InvoiceItem {
@@ -454,17 +449,15 @@ class InvoiceItem {
     required this.quantity,
   });
 
+  factory InvoiceItem.fromJson(Map<String, dynamic> json) => InvoiceItem(
+        description: json['description'] as String,
+        amount: (json['amount'] as num).toDouble(),
+        quantity: json['quantity'] as int,
+      );
+
   final String description;
   final double amount;
   final int quantity;
-
-  factory InvoiceItem.fromJson(Map<String, dynamic> json) {
-    return InvoiceItem(
-      description: json['description'] as String,
-      amount: (json['amount'] as num).toDouble(),
-      quantity: json['quantity'] as int,
-    );
-  }
 }
 
 class SubscriptionUsage {
@@ -475,17 +468,17 @@ class SubscriptionUsage {
     required this.limits,
   });
 
+  factory SubscriptionUsage.fromJson(Map<String, dynamic> json) =>
+      SubscriptionUsage(
+        currentPeriodStart:
+            DateTime.parse(json['currentPeriodStart'] as String),
+        currentPeriodEnd: DateTime.parse(json['currentPeriodEnd'] as String),
+        usage: Map<String, int>.from(json['usage']),
+        limits: Map<String, int>.from(json['limits']),
+      );
+
   final DateTime currentPeriodStart;
   final DateTime currentPeriodEnd;
   final Map<String, int> usage;
   final Map<String, int> limits;
-
-  factory SubscriptionUsage.fromJson(Map<String, dynamic> json) {
-    return SubscriptionUsage(
-      currentPeriodStart: DateTime.parse(json['currentPeriodStart'] as String),
-      currentPeriodEnd: DateTime.parse(json['currentPeriodEnd'] as String),
-      usage: Map<String, int>.from(json['usage']),
-      limits: Map<String, int>.from(json['limits']),
-    );
-  }
-} 
+}

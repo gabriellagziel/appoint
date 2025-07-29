@@ -1,13 +1,12 @@
-import 'package:stripe_platform_interface/stripe_platform_interface.dart';
-import 'package:appoint/models/subscription.dart';
 import 'package:appoint/models/payment.dart';
+import 'package:appoint/models/subscription.dart';
 import 'package:appoint/services/api/api_client.dart';
+import 'package:stripe_platform_interface/stripe_platform_interface.dart';
 
 class StripePaymentService {
+  StripePaymentService._();
   static final StripePaymentService _instance = StripePaymentService._();
   static StripePaymentService get instance => _instance;
-  
-  StripePaymentService._();
 
   // Initialize Stripe
   Future<void> initialize() async {
@@ -50,7 +49,7 @@ class StripePaymentService {
       // Confirm payment with Stripe
       final paymentResult = await Stripe.instance.confirmPayment(
         paymentIntentId,
-        PaymentMethodParams.card(
+        const PaymentMethodParams.card(
           paymentMethodData: PaymentMethodData(
             billingDetails: BillingDetails(),
           ),
@@ -224,7 +223,8 @@ class StripePaymentService {
   }
 
   // Get customer payment methods
-  Future<List<PaymentMethod>> getCustomerPaymentMethods(String customerId) async {
+  Future<List<PaymentMethod>> getCustomerPaymentMethods(
+      String customerId) async {
     try {
       final response = await ApiClient.instance.get<Map<String, dynamic>>(
         '/customers/$customerId/payment-methods',
@@ -265,7 +265,7 @@ class StripePaymentService {
     try {
       final result = await Stripe.instance.confirmSetupIntent(
         setupIntentId,
-        PaymentMethodParams.card(
+        const PaymentMethodParams.card(
           paymentMethodData: PaymentMethodData(
             billingDetails: BillingDetails(),
           ),
@@ -331,7 +331,7 @@ class StripePaymentService {
       );
 
       final payments = response['payments'] as List;
-      return payments.map((payment) => Payment.fromJson(payment)).toList();
+      return payments.map(Payment.fromJson).toList();
     } catch (e) {
       rethrow;
     }
@@ -375,21 +375,19 @@ class StripeCustomer {
     this.metadata,
   });
 
+  factory StripeCustomer.fromJson(Map<String, dynamic> json) => StripeCustomer(
+        id: json['id'] as String,
+        email: json['email'] as String,
+        name: json['name'] as String?,
+        phone: json['phone'] as String?,
+        metadata: json['metadata'] as Map<String, dynamic>?,
+      );
+
   final String id;
   final String email;
   final String? name;
   final String? phone;
   final Map<String, dynamic>? metadata;
-
-  factory StripeCustomer.fromJson(Map<String, dynamic> json) {
-    return StripeCustomer(
-      id: json['id'] as String,
-      email: json['email'] as String,
-      name: json['name'] as String?,
-      phone: json['phone'] as String?,
-      metadata: json['metadata'] as Map<String, dynamic>?,
-    );
-  }
 }
 
 class SetupIntent {
@@ -399,17 +397,15 @@ class SetupIntent {
     required this.status,
   });
 
+  factory SetupIntent.fromJson(Map<String, dynamic> json) => SetupIntent(
+        id: json['id'] as String,
+        clientSecret: json['client_secret'] as String,
+        status: json['status'] as String,
+      );
+
   final String id;
   final String clientSecret;
   final String status;
-
-  factory SetupIntent.fromJson(Map<String, dynamic> json) {
-    return SetupIntent(
-      id: json['id'] as String,
-      clientSecret: json['client_secret'] as String,
-      status: json['status'] as String,
-    );
-  }
 }
 
 class Refund {
@@ -421,19 +417,17 @@ class Refund {
     this.reason,
   });
 
+  factory Refund.fromJson(Map<String, dynamic> json) => Refund(
+        id: json['id'] as String,
+        amount: (json['amount'] as num).toDouble() / 100, // Convert from cents
+        currency: json['currency'] as String,
+        status: json['status'] as String,
+        reason: json['reason'] as String?,
+      );
+
   final String id;
   final double amount;
   final String currency;
   final String status;
   final String? reason;
-
-  factory Refund.fromJson(Map<String, dynamic> json) {
-    return Refund(
-      id: json['id'] as String,
-      amount: (json['amount'] as num).toDouble() / 100, // Convert from cents
-      currency: json['currency'] as String,
-      status: json['status'] as String,
-      reason: json['reason'] as String?,
-    );
-  }
-} 
+}

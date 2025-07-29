@@ -1,14 +1,13 @@
-import 'package:flutter/material.dart';
 import 'package:appoint/services/api/api_client.dart';
+import 'package:flutter/material.dart';
 
 class ErrorHandler {
+  ErrorHandler._();
   static final ErrorHandler _instance = ErrorHandler._();
   static ErrorHandler get instance => _instance;
-  
-  ErrorHandler._();
 
   // Handle API errors and show appropriate messages
-  void handleApiError(dynamic error, BuildContext context) {
+  void handleApiError(error, BuildContext context) {
     if (error is ApiException) {
       _handleApiException(error, context);
     } else {
@@ -26,7 +25,6 @@ class ErrorHandler {
           'Retry',
           () => _retryLastAction(context),
         );
-        break;
       case ApiExceptionType.network:
         _showErrorDialog(
           context,
@@ -35,7 +33,6 @@ class ErrorHandler {
           'Retry',
           () => _retryLastAction(context),
         );
-        break;
       case ApiExceptionType.unauthorized:
         _showErrorDialog(
           context,
@@ -44,16 +41,14 @@ class ErrorHandler {
           'Login',
           () => _navigateToLogin(context),
         );
-        break;
       case ApiExceptionType.forbidden:
         _showErrorDialog(
           context,
           'Access Denied',
-          'You don\'t have permission to perform this action.',
+          "You don't have permission to perform this action.",
           'OK',
           () => Navigator.of(context).pop(),
         );
-        break;
       case ApiExceptionType.notFound:
         _showErrorDialog(
           context,
@@ -62,10 +57,8 @@ class ErrorHandler {
           'OK',
           () => Navigator.of(context).pop(),
         );
-        break;
       case ApiExceptionType.validation:
         _showValidationError(context, exception.validationErrors);
-        break;
       case ApiExceptionType.server:
         _showErrorDialog(
           context,
@@ -74,7 +67,6 @@ class ErrorHandler {
           'Retry',
           () => _retryLastAction(context),
         );
-        break;
       case ApiExceptionType.cancelled:
         // Don't show dialog for cancelled requests
         break;
@@ -86,11 +78,11 @@ class ErrorHandler {
           'Retry',
           () => _retryLastAction(context),
         );
-        break;
     }
   }
 
-  void _showValidationError(BuildContext context, Map<String, List<String>>? errors) {
+  void _showValidationError(
+      BuildContext context, Map<String, List<String>>? errors) {
     if (errors == null || errors.isEmpty) {
       _showGenericError(context, 'Validation failed');
       return;
@@ -162,7 +154,7 @@ class ErrorHandler {
   }
 
   // Handle specific feature errors
-  void handleBookingError(dynamic error, BuildContext context) {
+  void handleBookingError(error, BuildContext context) {
     if (error is ApiException && error.type == ApiExceptionType.validation) {
       _showBookingValidationError(context, error.validationErrors);
     } else {
@@ -170,9 +162,10 @@ class ErrorHandler {
     }
   }
 
-  void _showBookingValidationError(BuildContext context, Map<String, List<String>>? errors) {
-    String message = 'Please fix the following errors:';
-    
+  void _showBookingValidationError(
+      BuildContext context, Map<String, List<String>>? errors) {
+    var message = 'Please fix the following errors:';
+
     if (errors != null) {
       if (errors.containsKey('startTime')) {
         message += '\n• Invalid start time';
@@ -197,7 +190,7 @@ class ErrorHandler {
     );
   }
 
-  void handlePaymentError(dynamic error, BuildContext context) {
+  void handlePaymentError(error, BuildContext context) {
     if (error is ApiException && error.type == ApiExceptionType.validation) {
       _showPaymentValidationError(context, error.validationErrors);
     } else {
@@ -205,9 +198,10 @@ class ErrorHandler {
     }
   }
 
-  void _showPaymentValidationError(BuildContext context, Map<String, List<String>>? errors) {
-    String message = 'Payment failed. Please check:';
-    
+  void _showPaymentValidationError(
+      BuildContext context, Map<String, List<String>>? errors) {
+    var message = 'Payment failed. Please check:';
+
     if (errors != null) {
       if (errors.containsKey('cardNumber')) {
         message += '\n• Card number is invalid';
@@ -232,10 +226,12 @@ class ErrorHandler {
     );
   }
 
-  void handleAuthError(dynamic error, BuildContext context) {
+  void handleAuthError(error, BuildContext context) {
     if (error is ApiException && error.type == ApiExceptionType.unauthorized) {
-      _showAuthError(context, 'Invalid credentials. Please check your email and password.');
-    } else if (error is ApiException && error.type == ApiExceptionType.validation) {
+      _showAuthError(context,
+          'Invalid credentials. Please check your email and password.');
+    } else if (error is ApiException &&
+        error.type == ApiExceptionType.validation) {
       _showAuthValidationError(context, error.validationErrors);
     } else {
       handleApiError(error, context);
@@ -252,9 +248,10 @@ class ErrorHandler {
     );
   }
 
-  void _showAuthValidationError(BuildContext context, Map<String, List<String>>? errors) {
-    String message = 'Please fix the following errors:';
-    
+  void _showAuthValidationError(
+      BuildContext context, Map<String, List<String>>? errors) {
+    var message = 'Please fix the following errors:';
+
     if (errors != null) {
       if (errors.containsKey('email')) {
         message += '\n• Invalid email address';
@@ -277,7 +274,7 @@ class ErrorHandler {
   }
 
   // Log errors for analytics
-  void logError(dynamic error, {String? feature, Map<String, dynamic>? context}) {
+  void logError(error, {String? feature, Map<String, dynamic>? context}) {
     // TODO: Implement error logging to analytics service
     if (kDebugMode) {
       print('🚨 Error in $feature: $error');
@@ -315,7 +312,8 @@ class ErrorHandler {
     Navigator.of(context).pop();
     // TODO: Implement app settings navigation
     ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Please enable permissions in device settings')),
+      const SnackBar(
+          content: Text('Please enable permissions in device settings')),
     );
   }
 
@@ -336,7 +334,8 @@ class ErrorHandler {
         actions: [
           if (secondaryAction != null)
             TextButton(
-              onPressed: onSecondaryPressed ?? () => Navigator.of(context).pop(),
+              onPressed:
+                  onSecondaryPressed ?? () => Navigator.of(context).pop(),
               child: Text(secondaryAction),
             ),
           ElevatedButton(
@@ -347,4 +346,4 @@ class ErrorHandler {
       ),
     );
   }
-} 
+}

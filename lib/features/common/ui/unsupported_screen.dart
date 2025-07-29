@@ -6,12 +6,12 @@ class UnsupportedScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      body: Center(
-        child: Text(
-          'Unsupported account type',
-          style: Theme.of(context).textTheme.headlineSmall,
-          textAlign: TextAlign.center,
+        body: Center(
+          child: Text(
+            'Unsupported account type',
+            style: Theme.of(context).textTheme.headlineSmall,
+            textAlign: TextAlign.center,
+          ),
         ),
-      ),
-    );
+      );
 }

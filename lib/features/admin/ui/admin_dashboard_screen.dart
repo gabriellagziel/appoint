@@ -6,7 +6,7 @@ class AdminDashboardScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) => Scaffold(
-      appBar: AppBar(title: const Text('Admin Dashboard')),
-      body: const Center(child: Text('Admin overview goes here')),
-    );
+        appBar: AppBar(title: const Text('Admin Dashboard')),
+        body: const Center(child: Text('Admin overview goes here')),
+      );
 }

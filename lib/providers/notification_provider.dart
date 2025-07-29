@@ -1,7 +1,6 @@
 import 'package:appoint/models/notification_payload.dart';
 import 'package:appoint/services/notification_service.dart';
 import 'package:appoint/services/ui_notification_service.dart';
-import 'package:appoint/providers/fcm_token_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// Provider for the notification service
@@ -13,7 +12,8 @@ final notificationServiceProvider = Provider<NotificationService>(
 final notificationPermissionsProvider = StateProvider<bool>((ref) => false);
 
 /// Provider for pending notifications
-final pendingNotificationsProvider = StateProvider<List<PendingNotificationRequest>>((ref) => []);
+final pendingNotificationsProvider =
+    StateProvider<List<PendingNotificationRequest>>((ref) => []);
 
 /// Provider for notifications list
 final notificationsProvider =
@@ -35,7 +35,7 @@ final notificationHelperProvider = Provider<NotificationHelper>((ref) {
 /// Helper class for common notification operations
 class NotificationHelper {
   NotificationHelper(this._notificationService, this._ref);
-  
+
   final NotificationService _notificationService;
   final Ref _ref;
 
@@ -149,7 +149,8 @@ class SyncNotificationHelper {
       _notificationService.showInfo('No changes to sync');
     } else {
       _notificationService.showSuccess(
-          'Successfully synced $syncedCount booking${syncedCount == 1 ? '' : 's'}');
+        'Successfully synced $syncedCount booking${syncedCount == 1 ? '' : 's'}',
+      );
     }
   }
 

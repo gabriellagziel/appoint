@@ -45,8 +45,10 @@ void main() {
       expect(quotas.containsKey('NG_en'), true);
 
       // Check for major languages
-      expect(quotas.values.any((quota) => quota > 200),
-          true,); // Should have some large quotas
+      expect(
+        quotas.values.any((quota) => quota > 200),
+        true,
+      ); // Should have some large quotas
     });
 
     test('should have reasonable quota distribution', () {
@@ -159,8 +161,11 @@ void main() {
       };
 
       for (entry in expectedQuotas.entries) {
-        expect(AmbassadorQuotaService.ambassadorQuotas[entry.key], entry.value,
-            reason: 'Quota mismatch for ${entry.key}',);
+        expect(
+          AmbassadorQuotaService.ambassadorQuotas[entry.key],
+          entry.value,
+          reason: 'Quota mismatch for ${entry.key}',
+        );
       }
     });
   });

@@ -22,7 +22,8 @@ extension DateExtensions on DateTime {
 
   /// Checks if two dates are the same day (ignoring time)
   /// Example: 2025-07-05T23:30:00Z and 2025-07-05T00:05:00Z -> true
-  bool isSameDay(DateTime other) => year == other.year && month == other.month && day == other.day;
+  bool isSameDay(DateTime other) =>
+      year == other.year && month == other.month && day == other.day;
 
   /// Returns true if this date is today
   bool get isToday => isSameDay(DateTime.now());

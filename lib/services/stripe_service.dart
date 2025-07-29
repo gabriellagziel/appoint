@@ -4,7 +4,7 @@ import 'package:cloud_functions/cloud_functions.dart';
 class StripeService {
   factory StripeService() => _instance;
   StripeService._internal();
-  static StripeService _instance = StripeService._internal();
+  static final StripeService _instance = StripeService._internal();
 
   final FirebaseFunctions _functions = FirebaseFunctions.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -53,11 +53,11 @@ class StripeService {
       final result = await callable.call({
         'userId': userId,
       });
-      
+
       if (result.data != null && result.data['checkoutUrl'] != null) {
         return result.data['checkoutUrl'] as String;
       }
-      
+
       return null;
     } catch (e) {
       // Removed debug print: debugPrint('Error creating business checkout: $e');
@@ -111,7 +111,8 @@ class StripeService {
 
   /// Get subscription details
   Future<Map<String, dynamic>?> getSubscriptionDetails(
-      String studioId) async {
+    String studioId,
+  ) async {
     try {
       final doc = await _firestore.collection('studio').doc(studioId).get();
       final data = doc.data();

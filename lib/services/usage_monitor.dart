@@ -1,11 +1,12 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 // Provider for weekly usage count
 final weeklyUsageProvider = StateProvider<int>((ref) => 0);
 
 // Provider for usage monitor service
-final usageMonitorProvider = Provider<UsageMonitorService>((ref) => UsageMonitorService());
+final usageMonitorProvider =
+    Provider<UsageMonitorService>((ref) => UsageMonitorService());
 
 class UsageMonitorService {
   static const int maxFreeMeetings = 21;
@@ -15,9 +16,8 @@ class UsageMonitorService {
   static bool shouldBlockBooking({
     required int weeklyCount,
     required bool isBusiness,
-  }) {
-    return !isBusiness && weeklyCount >= maxFreeMeetings;
-  }
+  }) =>
+      !isBusiness && weeklyCount >= maxFreeMeetings;
 
   /// Increments the weekly usage count
   Future<void> incrementWeeklyUsage(String userId) async {
@@ -94,7 +94,7 @@ class UsageMonitorService {
     final startOfWeek = _getWeekStart();
     final year = startOfWeek.year;
     final weekNumber = _getWeekNumber(startOfWeek);
-    return '${year}-W${weekNumber.toString().padLeft(2, '0')}';
+    return '$year-W${weekNumber.toString().padLeft(2, '0')}';
   }
 
   /// Gets the start of the current week (Monday)
@@ -106,15 +106,16 @@ class UsageMonitorService {
 
   /// Gets the week number of the year
   int _getWeekNumber(DateTime date) {
-    final firstDayOfYear = DateTime(date.year, 1, 1);
+    final firstDayOfYear = DateTime(date.year);
     final firstWeekday = firstDayOfYear.weekday;
     final daysInFirstWeek = 8 - firstWeekday;
-    final firstWeekEnd = firstDayOfYear.add(Duration(days: daysInFirstWeek - 1));
-    
+    final firstWeekEnd =
+        firstDayOfYear.add(Duration(days: daysInFirstWeek - 1));
+
     if (date.isBefore(firstWeekEnd) || date.isAtSameMomentAs(firstWeekEnd)) {
       return 1;
     }
-    
+
     final daysSinceFirstWeek = date.difference(firstWeekEnd).inDays;
     return (daysSinceFirstWeek / 7).floor() + 2;
   }

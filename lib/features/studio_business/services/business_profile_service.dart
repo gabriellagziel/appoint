@@ -3,7 +3,6 @@ import 'package:appoint/services/firestore_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class BusinessProfileService {
-
   BusinessProfileService({
     final FirebaseAuth? auth,
   }) : _auth = auth ?? FirebaseAuth.instance;
@@ -33,7 +32,10 @@ class BusinessProfileService {
       if (user == null) throw Exception('Not authenticated');
 
       await FirestoreService.updateDocument(
-          'business_profiles', user.uid, profile.toJson(),);
+        'business_profiles',
+        user.uid,
+        profile.toJson(),
+      );
     } catch (e) {
       // Removed debug print: debugPrint('🚨 Business profile update error: $e');
       rethrow;

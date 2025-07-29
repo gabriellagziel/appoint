@@ -22,9 +22,10 @@ class AppointmentService {
     );
     await doc.set(appointment.toJson());
     await NotificationService().sendNotificationToUser(
-        uid: inviteeId, 
-        title: 'New Appointment', 
-        body: 'You have a new booking');
+      uid: inviteeId,
+      title: 'New Appointment',
+      body: 'You have a new booking',
+    );
     return appointment;
   }
 
@@ -44,17 +45,20 @@ class AppointmentService {
     );
     await doc.set(appointment.toJson());
     await NotificationService().sendNotificationToUser(
-        uid: inviteeId, 
-        title: 'New Call Request', 
-        body: 'You have a new call request');
+      uid: inviteeId,
+      title: 'New Call Request',
+      body: 'You have a new call request',
+    );
     return appointment;
   }
 
   Stream<List<Appointment>> watchMyAppointments(String userId) => _firestore
-        .collection('appointments')
-        .where('creatorId', isEqualTo: userId)
-        .snapshots()
-        .map((snapshot) => snapshot.docs
+      .collection('appointments')
+      .where('creatorId', isEqualTo: userId)
+      .snapshots()
+      .map(
+        (snapshot) => snapshot.docs
             .map((doc) => Appointment.fromJson(doc.data()))
-            .toList(),);
+            .toList(),
+      );
 }

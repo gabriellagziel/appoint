@@ -8,7 +8,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class BusinessSubscriptionService {
-
   BusinessSubscriptionService({
     final FirebaseFirestore? firestore,
     final FirebaseAuth? auth,
@@ -103,11 +102,11 @@ class BusinessSubscriptionService {
     if (subscription == null || !subscription.status.isActive) {
       return false;
     }
-    
+
     final mapLimit = subscription.plan.mapLimit;
     if (mapLimit == 0) return false; // Starter plan has no maps
     if (mapLimit == -1) return true; // Unlimited (not used currently)
-    
+
     return subscription.mapUsageCurrentPeriod < mapLimit;
   }
 
@@ -124,9 +123,9 @@ class BusinessSubscriptionService {
     final mapLimit = subscription.plan.mapLimit;
     final currentUsage = subscription.mapUsageCurrentPeriod;
     final newUsage = currentUsage + 1;
-    
-    double newOverage = subscription.mapOverageThisPeriod;
-    
+
+    var newOverage = subscription.mapOverageThisPeriod;
+
     // Calculate overage if we exceed the limit
     if (mapLimit > 0 && newUsage > mapLimit) {
       newOverage += MapUsageConstants.overageRatePerLoad;
@@ -149,11 +148,11 @@ class BusinessSubscriptionService {
     if (subscription == null || !subscription.status.isActive) {
       return 0;
     }
-    
+
     final mapLimit = subscription.plan.mapLimit;
     if (mapLimit == 0) return 0; // Starter plan
     if (mapLimit == -1) return -1; // Unlimited
-    
+
     return (mapLimit - subscription.mapUsageCurrentPeriod).clamp(0, mapLimit);
   }
 
@@ -193,7 +192,9 @@ class BusinessSubscriptionService {
       'amount': subscription.mapOverageThisPeriod,
       'description': 'Map usage overage charges',
       'mapOverageAmount': subscription.mapOverageThisPeriod,
-      'mapOverageCount': (subscription.mapOverageThisPeriod / MapUsageConstants.overageRatePerLoad).round(),
+      'mapOverageCount': (subscription.mapOverageThisPeriod /
+              MapUsageConstants.overageRatePerLoad)
+          .round(),
       'periodStart': subscription.currentPeriodStart.toIso8601String(),
       'periodEnd': subscription.currentPeriodEnd.toIso8601String(),
       'createdAt': DateTime.now().toIso8601String(),
@@ -364,9 +365,7 @@ class BusinessSubscriptionService {
           .limit(limit)
           .get();
 
-      return snap.docs
-          .map((doc) => Invoice.fromJson(doc.data()))
-          .toList();
+      return snap.docs.map((doc) => Invoice.fromJson(doc.data())).toList();
     } catch (e) {
       // Removed debug print: debugPrint('Error fetching invoices: $e');
       return [];
@@ -440,7 +439,8 @@ class BusinessSubscriptionService {
       'hasAnalytics': subscription.plan.hasAnalytics,
       'hasAdvancedAnalytics': subscription.plan.hasAdvancedAnalytics,
       'hasCsvExport': subscription.plan.hasAnalytics, // Include with analytics
-      'hasEmailReminders': subscription.plan.hasAnalytics, // Include with analytics
+      'hasEmailReminders':
+          subscription.plan.hasAnalytics, // Include with analytics
       'hasMonthlyCalendar': subscription.plan != SubscriptionPlan.starter,
       'hasClientList': subscription.plan != SubscriptionPlan.starter,
       'hasPrioritySupport': subscription.plan.hasPrioritySupport,
@@ -453,7 +453,7 @@ class BusinessSubscriptionService {
   /// Get user-friendly feature access status
   Future<Map<String, String>> getFeatureAccessStatus() async {
     final subscription = await getCurrentSubscription();
-    
+
     if (subscription == null || !subscription.status.isActive) {
       return {
         'branding': 'locked',
@@ -464,13 +464,15 @@ class BusinessSubscriptionService {
     }
 
     final remainingMaps = await getRemainingMapQuota();
-    
+
     return {
       'branding': subscription.plan.brandingEnabled ? 'enabled' : 'locked',
-      'maps': subscription.plan.mapLimit > 0 ? 
-              (remainingMaps > 0 ? 'enabled' : 'quota_exceeded') : 'locked',
+      'maps': subscription.plan.mapLimit > 0
+          ? (remainingMaps > 0 ? 'enabled' : 'quota_exceeded')
+          : 'locked',
       'analytics': subscription.plan.hasAnalytics ? 'enabled' : 'locked',
-      'priority_support': subscription.plan.hasPrioritySupport ? 'enabled' : 'locked',
+      'priority_support':
+          subscription.plan.hasPrioritySupport ? 'enabled' : 'locked',
     };
   }
 }

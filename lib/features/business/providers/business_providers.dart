@@ -63,8 +63,10 @@ final recentBookingsProvider =
       .orderBy('createdAt', descending: true)
       .limit(10)
       .snapshots()
-      .map((snap) =>
-          snap.docs.map((doc) => {'id': doc.id, ...doc.data()}).toList(),);
+      .map(
+        (snap) =>
+            snap.docs.map((doc) => {'id': doc.id, ...doc.data()}).toList(),
+      );
 });
 
 // Monthly revenue stream
@@ -77,13 +79,17 @@ final monthlyRevenueProvider = StreamProvider<double>((ref) {
       .collection('business')
       .doc(userId)
       .collection('bookings')
-      .where('createdAt',
-          isGreaterThanOrEqualTo: Timestamp.fromDate(startOfMonth),)
+      .where(
+        'createdAt',
+        isGreaterThanOrEqualTo: Timestamp.fromDate(startOfMonth),
+      )
       .where('status', isEqualTo: 'completed')
       .snapshots()
-      .map((snap) => snap.docs.fold<double>(
-            0,
-            (total, final doc) =>
-                total + (doc.data()['amount'] as double? ?? 0.0),
-          ),);
+      .map(
+        (snap) => snap.docs.fold<double>(
+          0,
+          (total, final doc) =>
+              total + (doc.data()['amount'] as double? ?? 0.0),
+        ),
+      );
 });
