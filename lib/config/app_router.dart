@@ -3,24 +3,37 @@ import 'package:appoint/features/admin/admin_dashboard_screen.dart';
 import 'package:appoint/features/ambassador_dashboard_screen.dart';
 import 'package:appoint/features/ambassador_onboarding_screen.dart';
 import 'package:appoint/features/auth/auth_wrapper.dart';
-import 'package:appoint/features/auth/login_screen.dart';
 import 'package:appoint/features/auth/forgot_password_screen.dart';
+import 'package:appoint/features/auth/login_screen.dart';
 import 'package:appoint/features/auth/verify_email_screen.dart';
 import 'package:appoint/features/booking/booking_confirm_screen.dart';
 import 'package:appoint/features/booking/booking_request_screen.dart';
 import 'package:appoint/features/booking/screens/chat_booking_screen.dart';
 import 'package:appoint/features/business/screens/business_dashboard_screen.dart'
     as business;
+import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
 import 'package:appoint/features/calendar/google_integration_screen.dart';
 import 'package:appoint/features/dashboard/dashboard_screen.dart';
+import 'package:appoint/features/dashboard/enhanced_dashboard_screen.dart';
 import 'package:appoint/features/family/screens/family_dashboard_screen.dart';
 import 'package:appoint/features/family/screens/invite_child_screen.dart';
 import 'package:appoint/features/family/screens/permissions_screen.dart';
 import 'package:appoint/features/family/widgets/invitation_modal.dart';
 import 'package:appoint/features/invite/invite_detail_screen.dart';
 import 'package:appoint/features/invite/invite_list_screen.dart';
+import 'package:appoint/features/messaging/screens/chat_screen.dart';
+import 'package:appoint/features/messaging/screens/messages_list_screen.dart';
+import 'package:appoint/features/notifications/enhanced_notifications_screen.dart';
+import 'package:appoint/features/onboarding/enhanced_onboarding_screen.dart';
+// Enhanced features imports
+import 'package:appoint/features/onboarding/onboarding_screen.dart';
+import 'package:appoint/features/onboarding/permissions_onboarding_screen.dart';
+import 'package:appoint/features/profile/enhanced_profile_screen.dart';
 import 'package:appoint/features/profile/user_profile_screen.dart';
+import 'package:appoint/features/rewards/rewards_screen.dart';
 import 'package:appoint/features/search/screens/search_screen.dart';
+import 'package:appoint/features/settings/enhanced_settings_screen.dart';
+import 'package:appoint/features/studio/studio_booking_confirm_screen.dart';
 import 'package:appoint/features/studio_business/entry/studio_entry_screen.dart';
 import 'package:appoint/features/studio_business/presentation/business_availability_screen.dart';
 import 'package:appoint/features/studio_business/screens/analytics_screen.dart';
@@ -29,7 +42,6 @@ import 'package:appoint/features/studio_business/screens/appointments_screen.dar
     as studio_appointments;
 import 'package:appoint/features/studio_business/screens/business_calendar_screen.dart';
 import 'package:appoint/features/studio_business/screens/business_connect_screen.dart';
-
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
 import 'package:appoint/features/studio_business/screens/clients_screen.dart'
     as studio_clients;
@@ -43,34 +55,20 @@ import 'package:appoint/features/studio_business/screens/settings_screen.dart';
 import 'package:appoint/features/studio_business/screens/staff_availability_screen.dart';
 import 'package:appoint/features/studio_business/screens/studio_booking_screen.dart'
     as studio_business;
-import 'package:appoint/features/studio/studio_booking_confirm_screen.dart';
-import 'package:appoint/models/invite.dart';
+import 'package:appoint/features/subscriptions/screens/subscription_screen.dart';
+import 'package:appoint/l10n/app_localizations.dart';
 import 'package:appoint/models/family_link.dart';
-import 'package:appoint/services/notification_service.dart';
+import 'package:appoint/models/invite.dart';
 import 'package:appoint/services/branch_service.dart';
+import 'package:appoint/services/eta_service.dart';
+import 'package:appoint/services/notification_service.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:geolocator/geolocator.dart';
-import 'package:appoint/services/eta_service.dart';
-
-// Enhanced features imports
-import 'package:appoint/features/onboarding/onboarding_screen.dart';
-import 'package:appoint/features/onboarding/enhanced_onboarding_screen.dart';
-import 'package:appoint/features/messaging/screens/messages_list_screen.dart';
-import 'package:appoint/features/messaging/screens/chat_screen.dart';
-import 'package:appoint/features/subscriptions/screens/subscription_screen.dart';
-import 'package:appoint/features/rewards/rewards_screen.dart';
-import 'package:appoint/features/dashboard/enhanced_dashboard_screen.dart';
-import 'package:appoint/features/notifications/enhanced_notifications_screen.dart';
-import 'package:appoint/features/settings/enhanced_settings_screen.dart';
-import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
-import 'package:appoint/features/profile/enhanced_profile_screen.dart';
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/features/onboarding/permissions_onboarding_screen.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
     initialLocation: '/',
@@ -145,7 +143,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         path: '/family/permissions',
         name: 'permissions',
         builder: (context, final state) {
-          final familyLink = state.extra as FamilyLink;
+          final familyLink = state.extra! as FamilyLink;
           return PermissionsScreen(familyLink: familyLink);
         },
       ),
@@ -470,7 +468,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
   bool isLoading = true;
   String? error;
   int? lateBy;
-  TravelMode _travelMode = TravelMode.driving; // TODO allow user selection
+  final TravelMode _travelMode = TravelMode.driving; // TODOallow user selection
 
   @override
   void initState() {
@@ -550,8 +548,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
         title: Text(meetingData?['title'] ?? 'Meeting Details'),
         actions: [
@@ -595,16 +592,13 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                 switch (value) {
                   case 'join':
                     _joinMeeting(meetingData!['link']);
-                    break;
                   case 'directions':
                     _openDirections(
                       meetingData!['latitude']?.toDouble(),
                       meetingData!['longitude']?.toDouble(),
                     );
-                    break;
                   case 'share':
                     _shareMeeting();
-                    break;
                 }
               },
             ),
@@ -612,7 +606,6 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
       ),
       body: _buildBody(),
     );
-  }
 
   Widget _buildBody() {
     if (isLoading) {
@@ -892,9 +885,9 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                     if (meeting['notes'] != null)
                       _buildInfoRow(Icons.note, 'Notes', meeting['notes']),
                     if (widget.creatorId != null)
-                      _buildInfoRow(Icons.person, 'Creator', widget.creatorId!),
+                      _buildInfoRow(Icons.person, 'Creator', widget.creatorId),
                     if (widget.groupId != null)
-                      _buildInfoRow(Icons.group, 'Group', widget.groupId!),
+                      _buildInfoRow(Icons.group, 'Group', widget.groupId),
                     _buildInfoRow(Icons.fingerprint, 'Meeting ID', widget.meetingId),
                   ],
                 ),
@@ -936,7 +929,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
     );
   }
 
-  void _joinMeeting(String? link) async {
+  Future<void> _joinMeeting(String? link) async {
     if (link == null) return;
     final uri = Uri.parse(link);
     if (await canLaunchUrl(uri)) {
@@ -953,7 +946,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
     }
   }
 
-  void _openDirections(double? latitude, double? longitude) async {
+  Future<void> _openDirections(double? latitude, double? longitude) async {
     if (latitude == null || longitude == null) return;
     final uri = Uri.parse('https://www.google.com/maps/dir/?api=1&destination=$latitude,$longitude');
     if (await canLaunchUrl(uri)) {
