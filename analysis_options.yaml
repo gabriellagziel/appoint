@@ -10,6 +10,12 @@ analyzer:
     - "android/**"
     - "ios/**"
     - "build/**"
+    - ".dart_tool/**"
+    - ".packages"
+    - ".metadata"
+    - ".pub/**"
+    - ".idea/**"
+    - ".vscode/**"
 
   errors:
     public_member_api_docs: ignore
