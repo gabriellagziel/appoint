@@ -42,7 +42,9 @@ void main() {
     await firestore.collection('chats').add({'userId': uid, 'msg': 'hi'});
     await firestore.collection('profiles').doc(uid).set({'bio': 'bye'});
     await auth.signInWithEmailAndPassword(
-        email: testEmail, password: testPassword,);
+      email: testEmail,
+      password: testPassword,
+    );
     expect(auth.currentUser, isNotNull);
     expect(auth.currentUser!.uid, equals(uid));
     app.main();
@@ -96,7 +98,9 @@ void main() {
       password: testPassword,
     );
     await auth.signInWithEmailAndPassword(
-        email: testEmail, password: testPassword,);
+      email: testEmail,
+      password: testPassword,
+    );
 
     // Start app and navigate to profile
     app.main();
@@ -142,7 +146,9 @@ void main() {
     });
 
     await auth.signInWithEmailAndPassword(
-        email: testEmail, password: testPassword,);
+      email: testEmail,
+      password: testPassword,
+    );
 
     // Start app and navigate to profile
     app.main();

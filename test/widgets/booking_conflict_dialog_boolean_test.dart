@@ -32,7 +32,9 @@ void main() {
                   ElevatedButton(
                     onPressed: () async {
                       final result = await showBookingConflictDialog(
-                          context, testConflict,);
+                        context,
+                        testConflict,
+                      );
                       // "Keep Mine" should return true (keepLocal)
                       keepMineResult = result == ConflictResolution.keepLocal;
                     },
@@ -41,7 +43,9 @@ void main() {
                   ElevatedButton(
                     onPressed: () async {
                       final result = await showBookingConflictDialog(
-                          context, testConflict,);
+                        context,
+                        testConflict,
+                      );
                       // "Keep Server" should return false (not keepLocal)
                       keepServerResult = result != ConflictResolution.keepLocal;
                     },
@@ -82,8 +86,11 @@ void main() {
       await tester.pumpAndSettle();
 
       // Assert that keepServerResult is true (which means it's not keepLocal, so it's false for keepLocal)
-      expect(keepServerResult, isTrue,
-          reason: '"Keep Server" should return false (not keepLocal)',);
+      expect(
+        keepServerResult,
+        isTrue,
+        reason: '"Keep Server" should return false (not keepLocal)',
+      );
     });
 
     testWidgets('should return correct boolean values for all dialog options',
@@ -152,16 +159,22 @@ void main() {
       await tester.pumpAndSettle();
       await tester.tap(find.text('Keep Server Version'));
       await tester.pumpAndSettle();
-      expect(keepServerResult, isTrue,
-          reason: '"Keep Server" should return true for keepRemote',);
+      expect(
+        keepServerResult,
+        isTrue,
+        reason: '"Keep Server" should return true for keepRemote',
+      );
 
       // Test "Merge" returns false (when checking for keepLocal)
       await tester.tap(find.text('Test Merge'));
       await tester.pumpAndSettle();
       await tester.tap(find.text('Merge Changes'));
       await tester.pumpAndSettle();
-      expect(mergeResult, isTrue,
-          reason: '"Merge" should return true for merge',);
+      expect(
+        mergeResult,
+        isTrue,
+        reason: '"Merge" should return true for merge',
+      );
     });
   });
 }

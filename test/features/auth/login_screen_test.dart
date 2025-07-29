@@ -42,8 +42,7 @@ void main() {
         expect(find.text('Password'), findsOneWidget);
       });
 
-      testWidgets('should have sign in button',
-          (WidgetTester tester) async {
+      testWidgets('should have sign in button', (WidgetTester tester) async {
         await tester.pumpWidget(
           const ProviderScope(
             child: MaterialApp(

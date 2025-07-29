@@ -7,7 +7,8 @@ class FakeFirebaseFirestore implements FirebaseFirestore {
   final Map<String, Map<String, Map<String, dynamic>>> _storage = {};
 
   @override
-  CollectionReference<Map<String, dynamic>> collection(String path) => _FakeCollectionReference(this, path);
+  CollectionReference<Map<String, dynamic>> collection(String path) =>
+      _FakeCollectionReference(this, path);
 
   @override
   Future<T> runTransaction<T>(
@@ -24,14 +25,12 @@ class FakeFirebaseFirestore implements FirebaseFirestore {
   // ignore: no-empty-block
   @override
   // coverage:ignore-start
-  dynamic noSuchMethod(Invocation invocation) =>
-      super.noSuchMethod(invocation);
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
   // coverage:ignore-end
 }
 
 class _FakeCollectionReference
     implements CollectionReference<Map<String, dynamic>> {
-
   _FakeCollectionReference(this._fs, this._path);
   final FakeFirebaseFirestore _fs;
   final String _path;
@@ -41,7 +40,8 @@ class _FakeCollectionReference
 
   @override
   Future<DocumentReference<Map<String, dynamic>>> add(
-      Map<String, dynamic> data,) async {
+    Map<String, dynamic> data,
+  ) async {
     id = DateTime.now().microsecondsSinceEpoch.toString();
     _col[id] = Map<String, dynamic>.from(data);
     return _FakeDocumentReference(_path, id, _fs);
@@ -55,8 +55,9 @@ class _FakeCollectionReference
   }
 
   @override
-  Future<QuerySnapshot<Map<String, dynamic>>> get(
-      [GetOptions? options,]) async {
+  Future<QuerySnapshot<Map<String, dynamic>>> get([
+    GetOptions? options,
+  ]) async {
     final docs = _col.entries
         .map((e) => _FakeQueryDocumentSnapshot(e.key, e.value))
         .toList();
@@ -85,17 +86,16 @@ class _FakeCollectionReference
     final Iterable<Object?>? whereIn,
     final Iterable<Object?>? whereNotIn,
     final bool? isNull,
-  }) => _FakeQuery(this, field, isEqualTo: isEqualTo);
+  }) =>
+      _FakeQuery(this, field, isEqualTo: isEqualTo);
 
   @override
   // coverage:ignore-start
-  dynamic noSuchMethod(Invocation invocation) =>
-      super.noSuchMethod(invocation);
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
   // coverage:ignore-end
 }
 
 class _FakeQuery implements Query<Map<String, dynamic>> {
-
   _FakeQuery(this._collection, this._field, {Object? isEqualTo})
       : _isEqualTo = isEqualTo;
   final _FakeCollectionReference _collection;
@@ -104,8 +104,9 @@ class _FakeQuery implements Query<Map<String, dynamic>> {
   int? _limit;
 
   @override
-  Future<QuerySnapshot<Map<String, dynamic>>> get(
-      [GetOptions? options,]) async {
+  Future<QuerySnapshot<Map<String, dynamic>>> get([
+    GetOptions? options,
+  ]) async {
     var docs = _collection._col.entries
         .where((entry) {
           if (_isEqualTo != null) {
@@ -132,14 +133,12 @@ class _FakeQuery implements Query<Map<String, dynamic>> {
 
   @override
   // coverage:ignore-start
-  dynamic noSuchMethod(Invocation invocation) =>
-      super.noSuchMethod(invocation);
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
   // coverage:ignore-end
 }
 
 class _FakeDocumentReference
     implements DocumentReference<Map<String, dynamic>> {
-
   _FakeDocumentReference(this._path, this._id, this._fs);
   final String _path;
   final String _id;
@@ -156,15 +155,18 @@ class _FakeDocumentReference
       _FakeCollectionReference(_fs, _path.split('/').first);
 
   @override
-  Future<void> set(final Map<String, dynamic> data,
-      [SetOptions? options,]) async {
+  Future<void> set(
+    final Map<String, dynamic> data, [
+    SetOptions? options,
+  ]) async {
     _fs._storage[_path] ??= <String, Map<String, dynamic>>{};
     _fs._storage[_path]![_id] = Map<String, dynamic>.from(data);
   }
 
   @override
-  Future<DocumentSnapshot<Map<String, dynamic>>> get(
-      [GetOptions? options,]) async {
+  Future<DocumentSnapshot<Map<String, dynamic>>> get([
+    GetOptions? options,
+  ]) async {
     final data = _fs._storage[_path]?[_id];
     return _FakeDocumentSnapshot(id, data);
   }
@@ -192,13 +194,11 @@ class _FakeDocumentReference
 
   @override
   // coverage:ignore-start
-  dynamic noSuchMethod(Invocation invocation) =>
-      super.noSuchMethod(invocation);
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
   // coverage:ignore-end
 }
 
 class _FakeDocumentSnapshot implements DocumentSnapshot<Map<String, dynamic>> {
-
   _FakeDocumentSnapshot(String id, final Map<String, dynamic>? data)
       : _id = id,
         _data = data;
@@ -216,8 +216,7 @@ class _FakeDocumentSnapshot implements DocumentSnapshot<Map<String, dynamic>> {
 
   @override
   // coverage:ignore-start
-  dynamic noSuchMethod(Invocation invocation) =>
-      super.noSuchMethod(invocation);
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
   // coverage:ignore-end
 }
 
@@ -230,8 +229,7 @@ class _FakeQuerySnapshot implements QuerySnapshot<Map<String, dynamic>> {
 
   @override
   // coverage:ignore-start
-  dynamic noSuchMethod(Invocation invocation) =>
-      super.noSuchMethod(invocation);
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
   // coverage:ignore-end
 }
 
@@ -244,14 +242,14 @@ class _FakeQueryDocumentSnapshot extends _FakeDocumentSnapshot
 }
 
 class _FakeTransaction implements Transaction {
-
   _FakeTransaction(this._fs);
   final FakeFirebaseFirestore _fs;
   final Map<String, Map<String, dynamic>> _pendingChanges = {};
 
   @override
   Future<DocumentSnapshot<T>> get<T extends Object?>(
-      DocumentReference<T> documentRef,) async {
+    DocumentReference<T> documentRef,
+  ) async {
     final path = documentRef.path;
     final id = documentRef.id;
     final data = _pendingChanges[path]?[id] ?? _fs._storage[path]?[id];
@@ -316,7 +314,6 @@ class _FakeTransaction implements Transaction {
 
   @override
   // coverage:ignore-start
-  dynamic noSuchMethod(Invocation invocation) =>
-      super.noSuchMethod(invocation);
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
   // coverage:ignore-end
 }

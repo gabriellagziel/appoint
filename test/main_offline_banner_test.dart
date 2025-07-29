@@ -6,8 +6,11 @@ import 'package:flutter_test/flutter_test.dart';
 
 // Minimal offline banner widget for testing
 class TestOfflineBanner extends StatefulWidget {
-  const TestOfflineBanner(
-      {required this.child, required this.connectivityStream, super.key,});
+  const TestOfflineBanner({
+    required this.child,
+    required this.connectivityStream,
+    super.key,
+  });
   final Widget child;
   final Stream<ConnectivityResult> connectivityStream;
   @override
@@ -39,35 +42,35 @@ class _TestOfflineBannerState extends State<TestOfflineBanner> {
 
   @override
   Widget build(BuildContext context) => Stack(
-      children: [
-        widget.child,
-        if (_isOffline)
-          Positioned(
-            top: 0,
-            left: 0,
-            right: 0,
-            child: Material(
-              color: Colors.red,
-              elevation: 4,
-              child: SafeArea(
-                bottom: false,
-                child: Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.symmetric(vertical: 8),
-                  alignment: Alignment.center,
-                  child: const Text(
-                    'You are offline',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+        children: [
+          widget.child,
+          if (_isOffline)
+            Positioned(
+              top: 0,
+              left: 0,
+              right: 0,
+              child: Material(
+                color: Colors.red,
+                elevation: 4,
+                child: SafeArea(
+                  bottom: false,
+                  child: Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    alignment: Alignment.center,
+                    child: const Text(
+                      'You are offline',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
               ),
             ),
-          ),
-      ],
-    );
+        ],
+      );
 }
 
 void main() {
@@ -83,15 +86,15 @@ void main() {
     });
 
     Widget createTestWidget() => MaterialApp(
-        home: TestOfflineBanner(
-          connectivityStream: connectivityController.stream,
-          child: const Scaffold(
-            body: Center(
-              child: Text('Main Content'),
+          home: TestOfflineBanner(
+            connectivityStream: connectivityController.stream,
+            child: const Scaffold(
+              body: Center(
+                child: Text('Main Content'),
+              ),
             ),
           ),
-        ),
-      );
+        );
 
     testWidgets('shows offline banner when connectivity is lost',
         (tester) async {
