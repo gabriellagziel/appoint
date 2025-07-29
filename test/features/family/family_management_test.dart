@@ -20,8 +20,7 @@ class FakeUser implements User {
   final String uid;
   // Implement only the members used by the code, throw UnimplementedError for others
   @override
-  dynamic noSuchMethod(Invocation invocation) =>
-      super.noSuchMethod(invocation);
+  dynamic noSuchMethod(Invocation invocation) => super.noSuchMethod(invocation);
 }
 
 final fakeAuthUser = FakeUser('test-parent-id');
@@ -32,20 +31,22 @@ class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
 
 // Mock FamilyService for testing
 class MockFamilyService implements FamilyService {
-
   MockFamilyService({required this.firestore});
   final FirebaseFirestore firestore;
 
   @override
   Future<FamilyLink> inviteChild(
-      String parentId, final String childEmail,) async => FamilyLink(
-      id: 'test-invite',
-      parentId: parentId,
-      childId: childEmail,
-      status: 'pending',
-      invitedAt: DateTime.now(),
-      consentedAt: [],
-    );
+    String parentId,
+    final String childEmail,
+  ) async =>
+      FamilyLink(
+        id: 'test-invite',
+        parentId: parentId,
+        childId: childEmail,
+        status: 'pending',
+        invitedAt: DateTime.now(),
+        consentedAt: [],
+      );
 
   @override
   Future<List<FamilyLink>> fetchFamilyLinks(String parentId) async {
@@ -72,25 +73,27 @@ class MockFamilyService implements FamilyService {
 
   @override
   Future<List<Permission>> fetchPermissions(String linkId) async => [
-      Permission(
-        id: 'perm-1',
-        familyLinkId: linkId,
-        category: 'profile',
-        accessLevel: 'read',
-      ),
-    ];
+        Permission(
+          id: 'perm-1',
+          familyLinkId: linkId,
+          category: 'profile',
+          accessLevel: 'read',
+        ),
+      ];
 
   @override
   Future<List<PrivacyRequest>> fetchPrivacyRequests(
-      String parentId,) async => [
-      PrivacyRequest(
-        id: 'req-1',
-        childId: 'child-1',
-        type: 'private_session',
-        status: 'pending',
-        requestedAt: DateTime(2024),
-      ),
-    ];
+    String parentId,
+  ) async =>
+      [
+        PrivacyRequest(
+          id: 'req-1',
+          childId: 'child-1',
+          type: 'private_session',
+          status: 'pending',
+          requestedAt: DateTime(2024),
+        ),
+      ];
 
   @override
   Future<void> cancelInvite(String parentId, final String childId) async {
@@ -109,7 +112,9 @@ class MockFamilyService implements FamilyService {
 
   @override
   Future<void> updatePermissions(
-      String linkId, final List<Permission> perms,) async {
+    String linkId,
+    final List<Permission> perms,
+  ) async {
     // Mock implementation
   }
 
@@ -130,7 +135,9 @@ class MockFamilyService implements FamilyService {
 
   @override
   Future<void> handlePrivacyRequest(
-      String requestId, final String action,) async {
+    String requestId,
+    final String action,
+  ) async {
     // Mock implementation
   }
 
@@ -156,13 +163,15 @@ Future<void> main() async {
       container = ProviderContainer(
         overrides: [
           familyServiceProvider.overrideWithValue(mockFamilyService),
-          authStateProvider.overrideWith((ref) => Stream.value(
-                const AppUser(
-                  uid: 'test-user-id',
-                  email: 'test@example.com',
-                  role: 'user',
-                ),
-              ),),
+          authStateProvider.overrideWith(
+            (ref) => Stream.value(
+              const AppUser(
+                uid: 'test-user-id',
+                email: 'test@example.com',
+                role: 'user',
+              ),
+            ),
+          ),
         ],
       );
     });
@@ -229,8 +238,9 @@ Future<void> main() async {
     });
 
     test('FamilyService can invite child', () async {
-      final result = await mockFamilyService.inviteChild('parent-123', 'child@example.com');
-      
+      final result = await mockFamilyService.inviteChild(
+          'parent-123', 'child@example.com');
+
       expect(result.id, equals('test-invite'));
       expect(result.parentId, equals('parent-123'));
       expect(result.childId, equals('child@example.com'));
@@ -239,7 +249,7 @@ Future<void> main() async {
 
     test('FamilyService can fetch family links', () async {
       final links = await mockFamilyService.fetchFamilyLinks('parent-123');
-      
+
       expect(links.length, equals(2));
       expect(links[0].status, equals('pending'));
       expect(links[1].status, equals('active'));
@@ -247,7 +257,7 @@ Future<void> main() async {
 
     test('FamilyService can verify OTP', () async {
       final result = await mockFamilyService.verifyOtp('+1234567890', '123456');
-      
+
       expect(result, isTrue);
     });
   });

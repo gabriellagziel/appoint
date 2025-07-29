@@ -268,8 +268,10 @@ void main() {
           expect('just now', 'just now');
         } else if (timeDiff.inMinutes < 60) {
           minutes = timeDiff.inMinutes.abs();
-          expect(minutes == 1 ? '1 minute ago' : '$minutes minutes ago',
-              '30 seconds ago',);
+          expect(
+            minutes == 1 ? '1 minute ago' : '$minutes minutes ago',
+            '30 seconds ago',
+          );
         }
       });
 
@@ -278,8 +280,10 @@ void main() {
         recent = tz(2025, 3, 9, 11, 30);
         timeDiff = recent.difference(now);
         minutes = timeDiff.inMinutes.abs();
-        expect(minutes == 1 ? '1 minute ago' : '$minutes minutes ago',
-            '30 minutes ago',);
+        expect(
+          minutes == 1 ? '1 minute ago' : '$minutes minutes ago',
+          '30 minutes ago',
+        );
       });
 
       test('returns singular minute correctly', () {
@@ -287,8 +291,10 @@ void main() {
         recent = tz(2025, 3, 9, 11, 59);
         timeDiff = recent.difference(now);
         minutes = timeDiff.inMinutes.abs();
-        expect(minutes == 1 ? '1 minute ago' : '$minutes minutes ago',
-            '1 minute ago',);
+        expect(
+          minutes == 1 ? '1 minute ago' : '$minutes minutes ago',
+          '1 minute ago',
+        );
       });
 
       test('returns hours ago for recent times', () {

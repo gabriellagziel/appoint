@@ -8,8 +8,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'firebase_test_helper.dart';
 
 void main() {
-  setUpAll(() async {
-  });
+  setUpAll(() async {});
   group('NotificationsScreen', () {
     testWidgets('shows notifications from provider', (tester) async {
       final notifications = [
@@ -17,10 +16,11 @@ void main() {
         NotificationPayload(id: '2', title: 'B', body: 'b'),
       ];
 
-      final container = ProviderContainer(overrides: [
-        userNotificationsProvider
-            .overrideWith((ref) async => notifications),
-      ],);
+      final container = ProviderContainer(
+        overrides: [
+          userNotificationsProvider.overrideWith((ref) async => notifications),
+        ],
+      );
 
       await tester.pumpWidget(
         UncontrolledProviderScope(
