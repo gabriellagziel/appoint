@@ -34,8 +34,10 @@ void main() {
                       keepLocalResult = await showBookingConflictDialog(
                             context,
                             testConflict,
-                            onKeepLocal: () => debugPrint('Keep local callback'),
-                            onKeepRemote: () => debugPrint('Keep remote callback'),
+                            onKeepLocal: () =>
+                                debugPrint('Keep local callback'),
+                            onKeepRemote: () =>
+                                debugPrint('Keep remote callback'),
                           ) ==
                           ConflictResolution.keepLocal;
                     },
@@ -48,8 +50,10 @@ void main() {
                       keepServerResult = await showBookingConflictDialog(
                             context,
                             testConflict,
-                            onKeepLocal: () => debugPrint('Keep local callback'),
-                            onKeepRemote: () => debugPrint('Keep remote callback'),
+                            onKeepLocal: () =>
+                                debugPrint('Keep local callback'),
+                            onKeepRemote: () =>
+                                debugPrint('Keep remote callback'),
                           ) ==
                           ConflictResolution.keepRemote;
                     },
@@ -109,7 +113,9 @@ void main() {
                   ElevatedButton(
                     onPressed: () async {
                       final result = await showBookingConflictDialog(
-                          context, testConflict,);
+                        context,
+                        testConflict,
+                      );
                       keepMineResult = result == ConflictResolution.keepLocal;
                     },
                     child: const Text('Test Keep Mine'),
@@ -117,7 +123,9 @@ void main() {
                   ElevatedButton(
                     onPressed: () async {
                       final result = await showBookingConflictDialog(
-                          context, testConflict,);
+                        context,
+                        testConflict,
+                      );
                       keepServerResult =
                           result == ConflictResolution.keepRemote;
                     },
@@ -184,8 +192,10 @@ void main() {
       expect(find.byIcon(Icons.warning), findsOneWidget);
 
       // Verify conflict information
-      expect(find.text('Your local change conflicts with a server update.'),
-          findsOneWidget,);
+      expect(
+        find.text('Your local change conflicts with a server update.'),
+        findsOneWidget,
+      );
       expect(find.text('Booking ID: test-booking-123'), findsOneWidget);
       expect(find.text('Local: Jan 01, 2023 10:00'), findsOneWidget);
       expect(find.text('Server: Jan 01, 2023 11:00'), findsOneWidget);
@@ -195,7 +205,9 @@ void main() {
       expect(find.text('Keep Server Version'), findsOneWidget);
       expect(find.text('Keep My Version'), findsOneWidget);
       expect(
-          find.text('Which version would you like to keep?'), findsOneWidget,);
+        find.text('Which version would you like to keep?'),
+        findsOneWidget,
+      );
     });
 
     testWidgets(

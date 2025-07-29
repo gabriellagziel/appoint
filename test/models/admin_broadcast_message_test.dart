@@ -166,8 +166,10 @@ void main() {
       expect(message.targetingFilters.minAge, equals(18));
       expect(message.targetingFilters.maxAge, equals(65));
       expect(message.targetingFilters.userRoles, equals(['user', 'premium']));
-      expect(message.targetingFilters.subscriptionTiers,
-          equals(['basic', 'premium']),);
+      expect(
+        message.targetingFilters.subscriptionTiers,
+        equals(['basic', 'premium']),
+      );
       expect(message.targetingFilters.accountStatuses, equals(['active']));
     });
 

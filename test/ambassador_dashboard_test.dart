@@ -41,8 +41,8 @@ void main() {
     mockBranchService = MockBranchService();
 
     // Stub the notification service to prevent Firebase calls
-    when(() => mockNotificationService.initialize(onMessage: any(named: 'onMessage')))
-        .thenAnswer((_) async {});
+    when(() => mockNotificationService.initialize(
+        onMessage: any(named: 'onMessage'))).thenAnswer((_) async {});
 
     // Stub the branch service to return empty list
     when(() => mockBranchService.fetchBranches()).thenAnswer((_) async => []);
@@ -199,7 +199,7 @@ void main() {
       // Find and tap the country dropdown
       countryDropdowns = find.byType(DropdownButtonFormField<String>);
       expect(countryDropdowns, findsWidgets);
-      
+
       // Tap the first dropdown (country filter)
       await tester.tap(countryDropdowns.first);
       await tester.pumpAndSettle();
@@ -273,7 +273,7 @@ void main() {
       // Find and tap the language dropdown (second dropdown)
       languageDropdowns = find.byType(DropdownButtonFormField<String>);
       expect(languageDropdowns, findsWidgets);
-      
+
       // Tap the second dropdown (language filter)
       await tester.tap(languageDropdowns.at(1));
       await tester.pumpAndSettle();

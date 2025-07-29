@@ -22,8 +22,10 @@ void main() {
     });
 
     test('should be instantiable', () {
-      expect(TestServiceFactory.createUserDeletionService,
-          returnsNormally,);
+      expect(
+        TestServiceFactory.createUserDeletionService,
+        returnsNormally,
+      );
     });
 
     test('should have proper class structure', () {

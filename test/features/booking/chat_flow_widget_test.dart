@@ -35,11 +35,11 @@ void main() {
     });
 
     Widget createTestWidget() => ProviderScope(
-        parent: container,
-        child: MaterialApp(
-          home: ChatFlowWidget(auth: AuthService()),
-        ),
-      );
+          parent: container,
+          child: MaterialApp(
+            home: ChatFlowWidget(auth: AuthService()),
+          ),
+        );
 
     group('Typing Indicator', () {
       testWidgets('should show typing indicator when other user is typing',
