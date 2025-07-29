@@ -1,26 +1,27 @@
 import 'dart:io';
+
+import 'package:appoint/models/ambassador_profile.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:appoint/models/ambassador_profile.dart';
 
 /// Service for handling Ambassador deep links and mobile sharing
 class AmbassadorDeepLinkService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   static const String _domainPrefix = 'https://appoint.page.link';
   static const String _androidPackageName = 'com.appoint.app';
-  static const String _iosAppStoreId = '123456789'; // Replace with actual App Store ID
+  static const String _iosAppStoreId =
+      '123456789'; // Replace with actual App Store ID
   static const String _iosBundleId = 'com.appoint.app';
 
   /// Initialize deep link handling
   Future<void> initialize() async {
     // Handle deep links when app is opened from cold start
-    final PendingDynamicLinkData? initialLink =
-        await FirebaseDynamicLinks.instance.getInitialLink();
-    
+    final initialLink = await FirebaseDynamicLinks.instance.getInitialLink();
+
     if (initialLink != null) {
       await _handleDynamicLink(initialLink);
     }
@@ -41,7 +42,7 @@ class AmbassadorDeepLinkService {
     String? customMessage,
   }) async {
     try {
-      final DynamicLinkParameters parameters = DynamicLinkParameters(
+      final parameters = DynamicLinkParameters(
         uriPrefix: _domainPrefix,
         link: Uri.parse('https://app-oint.com/invite/$referralCode'),
         androidParameters: const AndroidParameters(
@@ -55,8 +56,8 @@ class AmbassadorDeepLinkService {
         ),
         socialMetaTagParameters: SocialMetaTagParameters(
           title: 'Join App-Oint with my referral!',
-          description: customMessage ?? 
-              'I\'m inviting you to join App-Oint, the best appointment booking app. Use my referral code to get started!',
+          description: customMessage ??
+              "I'm inviting you to join App-Oint, the best appointment booking app. Use my referral code to get started!",
           imageUrl: Uri.parse('https://app-oint.com/assets/invite-banner.png'),
         ),
         dynamicLinkParametersOptions: const DynamicLinkParametersOptions(
@@ -64,7 +65,7 @@ class AmbassadorDeepLinkService {
         ),
       );
 
-      final ShortDynamicLink shortLink = 
+      final shortLink =
           await FirebaseDynamicLinks.instance.buildShortLink(parameters);
 
       // Log the link generation
@@ -103,11 +104,11 @@ class AmbassadorDeepLinkService {
       );
 
       // Create share content
-      final shareText = customMessage ?? 
-          'Hey! I\'m using App-Oint for all my appointments and I think you\'d love it too! 📅✨\n\n'
-          'Use my referral code "$referralCode" when you sign up and we both get rewards! 🎉\n\n'
-          'Download here: $shareLink\n\n'
-          'Thanks!\n- $ambassadorName';
+      final shareText = customMessage ??
+          "Hey! I'm using App-Oint for all my appointments and I think you'd love it too! 📅✨\n\n"
+              'Use my referral code "$referralCode" when you sign up and we both get rewards! 🎉\n\n'
+              'Download here: $shareLink\n\n'
+              'Thanks!\n- $ambassadorName';
 
       // Share with specific targets if provided, otherwise use default share sheet
       if (preferredTargets != null && preferredTargets.isNotEmpty) {
@@ -128,49 +129,41 @@ class AmbassadorDeepLinkService {
 
       // Log the share event
       await _logShareEvent(ambassadorId, referralCode, preferredTargets);
-
     } catch (e) {
       debugPrint('Error sharing ambassador link: $e');
       // Show error dialog
       if (context.mounted) {
-        _showErrorDialog(context, 'Failed to share referral link. Please try again.');
+        _showErrorDialog(
+            context, 'Failed to share referral link. Please try again.');
       }
     }
   }
 
   /// Share to specific platform
   Future<void> _shareToSpecificTarget(
-    ShareTarget target, 
-    String text, 
-    String link, 
+    ShareTarget target,
+    String text,
+    String link,
     BuildContext context,
   ) async {
     try {
       switch (target) {
         case ShareTarget.whatsapp:
           await _shareToWhatsApp(text);
-          break;
         case ShareTarget.messenger:
           await _shareToMessenger(text);
-          break;
         case ShareTarget.email:
           await _shareToEmail(text, link);
-          break;
         case ShareTarget.sms:
           await _shareToSMS(text);
-          break;
         case ShareTarget.telegram:
           await _shareToTelegram(text);
-          break;
         case ShareTarget.twitter:
           await _shareToTwitter(text);
-          break;
         case ShareTarget.linkedin:
           await _shareToLinkedIn(text);
-          break;
         case ShareTarget.copy:
           await _copyToClipboard(text, context);
-          break;
       }
     } catch (e) {
       debugPrint('Error sharing to ${target.name}: $e');
@@ -183,9 +176,10 @@ class AmbassadorDeepLinkService {
   Future<void> _shareToWhatsApp(String text) async {
     final encodedText = Uri.encodeComponent(text);
     final whatsappUrl = 'https://wa.me/?text=$encodedText';
-    
+
     if (await canLaunchUrl(Uri.parse(whatsappUrl))) {
-      await launchUrl(Uri.parse(whatsappUrl), mode: LaunchMode.externalApplication);
+      await launchUrl(Uri.parse(whatsappUrl),
+          mode: LaunchMode.externalApplication);
     } else {
       throw Exception('WhatsApp not available');
     }
@@ -195,9 +189,10 @@ class AmbassadorDeepLinkService {
   Future<void> _shareToMessenger(String text) async {
     final encodedText = Uri.encodeComponent(text);
     final messengerUrl = 'fb-messenger://share/?text=$encodedText';
-    
+
     if (await canLaunchUrl(Uri.parse(messengerUrl))) {
-      await launchUrl(Uri.parse(messengerUrl), mode: LaunchMode.externalApplication);
+      await launchUrl(Uri.parse(messengerUrl),
+          mode: LaunchMode.externalApplication);
     } else {
       throw Exception('Messenger not available');
     }
@@ -208,7 +203,7 @@ class AmbassadorDeepLinkService {
     final subject = Uri.encodeComponent('Join App-Oint with my referral!');
     final body = Uri.encodeComponent(text);
     final emailUrl = 'mailto:?subject=$subject&body=$body';
-    
+
     if (await canLaunchUrl(Uri.parse(emailUrl))) {
       await launchUrl(Uri.parse(emailUrl));
     } else {
@@ -220,7 +215,7 @@ class AmbassadorDeepLinkService {
   Future<void> _shareToSMS(String text) async {
     final body = Uri.encodeComponent(text);
     final smsUrl = Platform.isAndroid ? 'sms:?body=$body' : 'sms:&body=$body';
-    
+
     if (await canLaunchUrl(Uri.parse(smsUrl))) {
       await launchUrl(Uri.parse(smsUrl));
     } else {
@@ -232,9 +227,10 @@ class AmbassadorDeepLinkService {
   Future<void> _shareToTelegram(String text) async {
     final encodedText = Uri.encodeComponent(text);
     final telegramUrl = 'tg://msg?text=$encodedText';
-    
+
     if (await canLaunchUrl(Uri.parse(telegramUrl))) {
-      await launchUrl(Uri.parse(telegramUrl), mode: LaunchMode.externalApplication);
+      await launchUrl(Uri.parse(telegramUrl),
+          mode: LaunchMode.externalApplication);
     } else {
       throw Exception('Telegram not available');
     }
@@ -244,9 +240,10 @@ class AmbassadorDeepLinkService {
   Future<void> _shareToTwitter(String text) async {
     final encodedText = Uri.encodeComponent(text);
     final twitterUrl = 'https://twitter.com/intent/tweet?text=$encodedText';
-    
+
     if (await canLaunchUrl(Uri.parse(twitterUrl))) {
-      await launchUrl(Uri.parse(twitterUrl), mode: LaunchMode.externalApplication);
+      await launchUrl(Uri.parse(twitterUrl),
+          mode: LaunchMode.externalApplication);
     } else {
       throw Exception('Twitter not available');
     }
@@ -255,10 +252,12 @@ class AmbassadorDeepLinkService {
   /// Share to LinkedIn
   Future<void> _shareToLinkedIn(String text) async {
     final encodedText = Uri.encodeComponent(text);
-    final linkedinUrl = 'https://www.linkedin.com/sharing/share-offsite/?url=$encodedText';
-    
+    final linkedinUrl =
+        'https://www.linkedin.com/sharing/share-offsite/?url=$encodedText';
+
     if (await canLaunchUrl(Uri.parse(linkedinUrl))) {
-      await launchUrl(Uri.parse(linkedinUrl), mode: LaunchMode.externalApplication);
+      await launchUrl(Uri.parse(linkedinUrl),
+          mode: LaunchMode.externalApplication);
     } else {
       throw Exception('LinkedIn not available');
     }
@@ -278,7 +277,8 @@ class AmbassadorDeepLinkService {
   }
 
   /// Handle incoming dynamic links
-  Future<void> _handleDynamicLink(PendingDynamicLinkData dynamicLinkData) async {
+  Future<void> _handleDynamicLink(
+      PendingDynamicLinkData dynamicLinkData) async {
     try {
       final Uri link = dynamicLinkData.link;
       debugPrint('Received dynamic link: $link');
@@ -315,7 +315,8 @@ class AmbassadorDeepLinkService {
         // Track link click
         await _trackLinkClick(referralCode, ambassadorId);
 
-        debugPrint('Referral code processed: $referralCode for ambassador: $ambassadorId');
+        debugPrint(
+            'Referral code processed: $referralCode for ambassador: $ambassadorId');
       } else {
         debugPrint('Invalid or expired referral code: $referralCode');
       }
@@ -325,7 +326,8 @@ class AmbassadorDeepLinkService {
   }
 
   /// Store referral code for later use during registration
-  Future<void> _storeReferralCode(String referralCode, String ambassadorId) async {
+  Future<void> _storeReferralCode(
+      String referralCode, String ambassadorId) async {
     // Store in shared preferences or secure storage
     // This will be used when the user actually registers
     await _firestore.collection('pending_referrals').add({
@@ -350,8 +352,8 @@ class AmbassadorDeepLinkService {
 
   /// Log share event for analytics
   Future<void> _logShareEvent(
-    String ambassadorId, 
-    String referralCode, 
+    String ambassadorId,
+    String referralCode,
     List<ShareTarget>? targets,
   ) async {
     await _firestore.collection('ambassador_share_events').add({
@@ -390,13 +392,12 @@ class AmbassadorDeepLinkService {
   String generateQRCodeData({
     required String referralCode,
     required String ambassadorId,
-  }) {
-    return 'https://app-oint.com/invite/$referralCode';
-  }
+  }) =>
+      'https://app-oint.com/invite/$referralCode';
 
   /// Get available share targets based on platform and installed apps
   Future<List<ShareTarget>> getAvailableShareTargets() async {
-    final List<ShareTarget> availableTargets = [
+    final availableTargets = <ShareTarget>[
       ShareTarget.copy,
       ShareTarget.email,
       ShareTarget.sms,
@@ -413,7 +414,7 @@ class AmbassadorDeepLinkService {
       if (await canLaunchUrl(Uri.parse('tg://msg'))) {
         availableTargets.add(ShareTarget.telegram);
       }
-      
+
       // Always add web-based sharing options
       availableTargets.addAll([
         ShareTarget.twitter,

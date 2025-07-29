@@ -18,6 +18,5 @@ class Game with _$Game {
     required final DateTime updatedAt,
   }) = _Game;
 
-  factory Game.fromJson(Map<String, dynamic> json) =>
-      _$GameFromJson(json);
+  factory Game.fromJson(Map<String, dynamic> json) => _$GameFromJson(json);
 }

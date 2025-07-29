@@ -3,10 +3,9 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:path/path.dart' as path;
 
 class FirebaseStorageService {
+  FirebaseStorageService._();
   static final FirebaseStorageService _instance = FirebaseStorageService._();
   static FirebaseStorageService get instance => _instance;
-  
-  FirebaseStorageService._();
 
   final FirebaseStorage _storage = FirebaseStorage.instance;
 
@@ -31,13 +30,13 @@ class FirebaseStorageService {
 
       // Upload file
       final uploadTask = ref.putFile(file, metadata);
-      
+
       // Wait for upload to complete
       final snapshot = await uploadTask;
-      
+
       // Get download URL
       final downloadUrl = await snapshot.ref.getDownloadURL();
-      
+
       return downloadUrl;
     } catch (e) {
       throw Exception('Failed to upload file: $e');
@@ -45,14 +44,12 @@ class FirebaseStorageService {
   }
 
   /// Upload image for broadcast message
-  Future<String> uploadBroadcastImage(File imageFile) async {
-    return uploadFile(imageFile, 'broadcast_messages/images');
-  }
+  Future<String> uploadBroadcastImage(File imageFile) async =>
+      uploadFile(imageFile, 'broadcast_messages/images');
 
   /// Upload video for broadcast message
-  Future<String> uploadBroadcastVideo(File videoFile) async {
-    return uploadFile(videoFile, 'broadcast_messages/videos');
-  }
+  Future<String> uploadBroadcastVideo(File videoFile) async =>
+      uploadFile(videoFile, 'broadcast_messages/videos');
 
   /// Delete a file from Firebase Storage
   Future<void> deleteFile(String downloadUrl) async {

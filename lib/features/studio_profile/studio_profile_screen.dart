@@ -21,7 +21,7 @@ class _StudioProfileScreenState extends ConsumerState<StudioProfileScreen> {
   @override
   void initState() {
     super.initState();
-    final _service = StudioProfileService();
+    final service = StudioProfileService();
     _loadProfile();
   }
 
@@ -30,7 +30,7 @@ class _StudioProfileScreenState extends ConsumerState<StudioProfileScreen> {
     final profile = await _service.fetchProfile(widget.studioId);
     setState(() {
       _profile = profile;
-      var _loading = false;
+      const loading = false;
     });
   }
 
@@ -72,17 +72,14 @@ class _StudioProfileScreenState extends ConsumerState<StudioProfileScreen> {
               TextFormField(
                 initialValue: _profile!.name,
                 decoration: const InputDecoration(labelText: 'Studio Name'),
-                onSaved: (v) =>
-                    _profile = _profile!.copyWith(name: v ?? ''),
-                validator: (v) =>
-                    v == null || v.isEmpty ? 'Required' : null,
+                onSaved: (v) => _profile = _profile!.copyWith(name: v ?? ''),
+                validator: (v) => v == null || v.isEmpty ? 'Required' : null,
               ),
               const SizedBox(height: 16),
               TextFormField(
                 initialValue: _profile!.description,
                 decoration: const InputDecoration(labelText: 'Description'),
-                onSaved: (v) =>
-                    _profile = _profile!.copyWith(description: v),
+                onSaved: (v) => _profile = _profile!.copyWith(description: v),
               ),
               const SizedBox(height: 16),
               TextFormField(
@@ -107,7 +104,8 @@ class _StudioProfileScreenState extends ConsumerState<StudioProfileScreen> {
                 title: const Text('Admin Free Access'),
                 value: _profile!.isAdminFreeAccess ?? false,
                 onChanged: (v) => setState(
-                    () => _profile = _profile!.copyWith(isAdminFreeAccess: v),),
+                  () => _profile = _profile!.copyWith(isAdminFreeAccess: v),
+                ),
               ),
               const SizedBox(height: 24),
               ElevatedButton(

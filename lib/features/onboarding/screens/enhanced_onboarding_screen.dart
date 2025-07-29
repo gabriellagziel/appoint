@@ -1,11 +1,12 @@
+import 'package:appoint/constants/app_branding.dart';
 import 'package:appoint/features/onboarding/services/onboarding_service.dart';
 import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/widgets/app_logo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/widgets/app_logo.dart';
-import 'package:appoint/constants/app_branding.dart';
 
-final onboardingServiceProvider = Provider<OnboardingService>((ref) => OnboardingService());
+final onboardingServiceProvider =
+    Provider<OnboardingService>((ref) => OnboardingService());
 
 final onboardingStepProvider = StateProvider<int>((ref) => 0);
 
@@ -17,23 +18,25 @@ class EnhancedOnboardingScreen extends ConsumerStatefulWidget {
   const EnhancedOnboardingScreen({super.key});
 
   @override
-  ConsumerState<EnhancedOnboardingScreen> createState() => _EnhancedOnboardingScreenState();
+  ConsumerState<EnhancedOnboardingScreen> createState() =>
+      _EnhancedOnboardingScreenState();
 }
 
-class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScreen> {
+class _EnhancedOnboardingScreenState
+    extends ConsumerState<EnhancedOnboardingScreen> {
   final PageController _pageController = PageController();
   final _formKey = GlobalKey<FormState>();
-  
+
   // Controllers for form fields
   final _nameController = TextEditingController();
   final _emailController = TextEditingController();
   final _phoneController = TextEditingController();
-  
+
   // Selected values
   String? _selectedLanguage;
   String? _selectedCountry;
   String? _selectedTimezone;
-  List<String> _selectedInterests = [];
+  final List<String> _selectedInterests = [];
 
   @override
   void initState() {
@@ -66,32 +69,32 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(24.0),
+          padding: const EdgeInsets.all(24),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // App logo/icon
               const AppLogo(size: 120),
-              
+
               const SizedBox(height: 48),
-              
+
               Text(
                 'Welcome to APP-OINT',
                 style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                  fontWeight: FontWeight.bold,
-                ),
+                      fontWeight: FontWeight.bold,
+                    ),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 16),
               Text(
                 AppBranding.fullSlogan,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                  color: Colors.grey[600],
-                ),
+                      color: Colors.grey[600],
+                    ),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 32),
-              
+
               // Onboarding content
               Expanded(
                 child: PageView.builder(
@@ -102,12 +105,11 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
                     });
                   },
                   itemCount: _onboardingPages.length,
-                  itemBuilder: (context, index) {
-                    return _buildOnboardingPage(_onboardingPages[index]);
-                  },
+                  itemBuilder: (context, index) =>
+                      _buildOnboardingPage(_onboardingPages[index]),
                 ),
               ),
-              
+
               // Page indicators
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -127,7 +129,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
                 ),
               ),
               const SizedBox(height: 32),
-              
+
               // Navigation buttons
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -144,7 +146,6 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
                     )
                   else
                     const SizedBox(width: 80),
-                  
                   ElevatedButton(
                     onPressed: () {
                       if (_currentPage < _onboardingPages.length - 1) {
@@ -172,144 +173,141 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
     );
   }
 
-  Widget _buildProgressIndicator(int currentStep) {
-    return Container(
-      padding: const EdgeInsets.all(16),
-      child: Row(
-        children: List.generate(6, (index) {
-          final isActive = index <= currentStep;
-          final isCurrent = index == currentStep;
-          
-          return Expanded(
-            child: Container(
-              margin: const EdgeInsets.symmetric(horizontal: 4),
-              height: 4,
+  Widget _buildProgressIndicator(int currentStep) => Container(
+        padding: const EdgeInsets.all(16),
+        child: Row(
+          children: List.generate(6, (index) {
+            final isActive = index <= currentStep;
+            final isCurrent = index == currentStep;
+
+            return Expanded(
+              child: Container(
+                margin: const EdgeInsets.symmetric(horizontal: 4),
+                height: 4,
+                decoration: BoxDecoration(
+                  color: isActive ? Colors.blue : Colors.grey[300],
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+            );
+          }),
+        ),
+      );
+
+  Widget _buildWelcomeStep(AppLocalizations l10n) => Padding(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // App logo/icon
+            Container(
+              width: 120,
+              height: 120,
               decoration: BoxDecoration(
-                color: isActive ? Colors.blue : Colors.grey[300],
-                borderRadius: BorderRadius.circular(2),
+                color: Theme.of(context).primaryColor,
+                borderRadius: BorderRadius.circular(60),
+              ),
+              child: const Icon(
+                Icons.schedule,
+                color: Colors.white,
+                size: 60,
               ),
             ),
-          );
-        }),
-      ),
-    );
-  }
 
-  Widget _buildWelcomeStep(AppLocalizations l10n) {
-    return Padding(
-      padding: const EdgeInsets.all(24),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          // App logo/icon
-          Container(
-            width: 120,
-            height: 120,
-            decoration: BoxDecoration(
-              color: Theme.of(context).primaryColor,
-              borderRadius: BorderRadius.circular(60),
-            ),
-            child: const Icon(
-              Icons.schedule,
-              color: Colors.white,
-              size: 60,
-            ),
-          ),
-          
-          const SizedBox(height: 32),
-          
-          // Welcome text
-          Text(
-            'Welcome to APP-OINT',
-            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-              fontWeight: FontWeight.bold),
-            textAlign: TextAlign.center,
-          ),
-          
-          const SizedBox(height: 16),
-          
-          Text(
-            'Your all-in-one platform for appointments, family coordination, and business management.',
-            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-              color: Colors.grey[600]),
-            textAlign: TextAlign.center,
-          ),
-          
-          const SizedBox(height: 32),
-          
-          // Feature highlights
-          _buildFeatureHighlight(Icons.calendar_today, 'Smart Scheduling'),
-          const SizedBox(height: 16),
-          _buildFeatureHighlight(Icons.family_restroom, 'Family Coordination'),
-          const SizedBox(height: 16),
-          _buildFeatureHighlight(Icons.business, 'Business Management'),
-        ],
-      ),
-    );
-  }
+            const SizedBox(height: 32),
 
-  Widget _buildFeatureHighlight(IconData icon, String title) {
-    return Row(
-      children: [
-        Icon(icon, color: Colors.blue, size: 24),
-        const SizedBox(width: 12),
-        Text(
-          title,
-          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+            // Welcome text
+            Text(
+              'Welcome to APP-OINT',
+              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+              textAlign: TextAlign.center,
+            ),
+
+            const SizedBox(height: 16),
+
+            Text(
+              'Your all-in-one platform for appointments, family coordination, and business management.',
+              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                    color: Colors.grey[600],
+                  ),
+              textAlign: TextAlign.center,
+            ),
+
+            const SizedBox(height: 32),
+
+            // Feature highlights
+            _buildFeatureHighlight(Icons.calendar_today, 'Smart Scheduling'),
+            const SizedBox(height: 16),
+            _buildFeatureHighlight(
+                Icons.family_restroom, 'Family Coordination'),
+            const SizedBox(height: 16),
+            _buildFeatureHighlight(Icons.business, 'Business Management'),
+          ],
         ),
-      ],
-    );
-  }
+      );
 
-  Widget _buildUserTypeStep(AppLocalizations l10n) {
-    return Padding(
-      padding: const EdgeInsets.all(24),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+  Widget _buildFeatureHighlight(IconData icon, String title) => Row(
         children: [
+          Icon(icon, color: Colors.blue, size: 24),
+          const SizedBox(width: 12),
           Text(
-            'How will you use APP-OINT?',
-            style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              fontWeight: FontWeight.bold),
-            textAlign: TextAlign.center,
-          ),
-          
-          const SizedBox(height: 32),
-          
-          // User type options
-          _buildUserTypeOption(
-            UserType.personal,
-            'Personal',
-            'Manage your appointments and family activities',
-            Icons.person,
-          ),
-          
-          const SizedBox(height: 16),
-          
-          _buildUserTypeOption(
-            UserType.business,
-            'Business',
-            'Manage your studio or service business',
-            Icons.business,
-          ),
-          
-          const SizedBox(height: 16),
-          
-          _buildUserTypeOption(
-            UserType.family,
-            'Family',
-            'Coordinate activities with your family',
-            Icons.family_restroom,
+            title,
+            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
           ),
         ],
-      ),
-    );
-  }
+      );
 
-  Widget _buildUserTypeOption(UserType type, String title, String description, IconData icon) {
+  Widget _buildUserTypeStep(AppLocalizations l10n) => Padding(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'How will you use APP-OINT?',
+              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+              textAlign: TextAlign.center,
+            ),
+
+            const SizedBox(height: 32),
+
+            // User type options
+            _buildUserTypeOption(
+              UserType.personal,
+              'Personal',
+              'Manage your appointments and family activities',
+              Icons.person,
+            ),
+
+            const SizedBox(height: 16),
+
+            _buildUserTypeOption(
+              UserType.business,
+              'Business',
+              'Manage your studio or service business',
+              Icons.business,
+            ),
+
+            const SizedBox(height: 16),
+
+            _buildUserTypeOption(
+              UserType.family,
+              'Family',
+              'Coordinate activities with your family',
+              Icons.family_restroom,
+            ),
+          ],
+        ),
+      );
+
+  Widget _buildUserTypeOption(
+      UserType type, String title, String description, IconData icon) {
     final selectedType = ref.watch(userTypeProvider);
     final isSelected = selectedType == type;
-    
+
     return GestureDetector(
       onTap: () {
         ref.read(userTypeProvider.notifier).state = type;
@@ -385,19 +383,18 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
           Text(
             'Choose your language',
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              fontWeight: FontWeight.bold),
+                  fontWeight: FontWeight.bold,
+                ),
             textAlign: TextAlign.center,
           ),
-          
           const SizedBox(height: 32),
-          
           Expanded(
             child: ListView.builder(
               itemCount: languages.length,
               itemBuilder: (context, index) {
                 final language = languages[index];
                 final isSelected = _selectedLanguage == language['code'];
-                
+
                 return ListTile(
                   leading: Radio<String>(
                     value: language['code']!,
@@ -409,7 +406,9 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
                     },
                   ),
                   title: Text(language['name']!),
-                  trailing: isSelected ? const Icon(Icons.check, color: Colors.blue) : null,
+                  trailing: isSelected
+                      ? const Icon(Icons.check, color: Colors.blue)
+                      : null,
                   onTap: () {
                     setState(() {
                       _selectedLanguage = language['code'];
@@ -424,78 +423,77 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
     );
   }
 
-  Widget _buildProfileStep(AppLocalizations l10n) {
-    return Padding(
-      padding: const EdgeInsets.all(24),
-      child: Form(
-        key: _formKey,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'Tell us about yourself',
-              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center,
-            ),
-            
-            const SizedBox(height: 32),
-            
-            // Name field
-            TextFormField(
-              controller: _nameController,
-              decoration: const InputDecoration(
-                labelText: 'Full Name',
-                border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.person),
+  Widget _buildProfileStep(AppLocalizations l10n) => Padding(
+        padding: const EdgeInsets.all(24),
+        child: Form(
+          key: _formKey,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Tell us about yourself',
+                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+                textAlign: TextAlign.center,
               ),
-              validator: (value) {
-                if (value == null || value.isEmpty) {
-                  return 'Please enter your name';
-                }
-                return null;
-              },
-            ),
-            
-            const SizedBox(height: 16),
-            
-            // Email field
-            TextFormField(
-              controller: _emailController,
-              decoration: const InputDecoration(
-                labelText: 'Email Address',
-                border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.email),
+
+              const SizedBox(height: 32),
+
+              // Name field
+              TextFormField(
+                controller: _nameController,
+                decoration: const InputDecoration(
+                  labelText: 'Full Name',
+                  border: OutlineInputBorder(),
+                  prefixIcon: Icon(Icons.person),
+                ),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter your name';
+                  }
+                  return null;
+                },
               ),
-              keyboardType: TextInputType.emailAddress,
-              validator: (value) {
-                if (value == null || value.isEmpty) {
-                  return 'Please enter your email';
-                }
-                if (!value.contains('@')) {
-                  return 'Please enter a valid email';
-                }
-                return null;
-              },
-            ),
-            
-            const SizedBox(height: 16),
-            
-            // Phone field
-            TextFormField(
-              controller: _phoneController,
-              decoration: const InputDecoration(
-                labelText: 'Phone Number (Optional)',
-                border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.phone),
+
+              const SizedBox(height: 16),
+
+              // Email field
+              TextFormField(
+                controller: _emailController,
+                decoration: const InputDecoration(
+                  labelText: 'Email Address',
+                  border: OutlineInputBorder(),
+                  prefixIcon: Icon(Icons.email),
+                ),
+                keyboardType: TextInputType.emailAddress,
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter your email';
+                  }
+                  if (!value.contains('@')) {
+                    return 'Please enter a valid email';
+                  }
+                  return null;
+                },
               ),
-              keyboardType: TextInputType.phone,
-            ),
-          ],
+
+              const SizedBox(height: 16),
+
+              // Phone field
+              TextFormField(
+                controller: _phoneController,
+                decoration: const InputDecoration(
+                  labelText: 'Phone Number (Optional)',
+                  border: OutlineInputBorder(),
+                  prefixIcon: Icon(Icons.phone),
+                ),
+                keyboardType: TextInputType.phone,
+              ),
+            ],
+          ),
         ),
-      ),
-    );
-  }
+      );
 
   Widget _buildPreferencesStep(AppLocalizations l10n) {
     final interests = [
@@ -517,12 +515,11 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
           Text(
             'What interests you?',
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              fontWeight: FontWeight.bold),
+                  fontWeight: FontWeight.bold,
+                ),
             textAlign: TextAlign.center,
           ),
-          
           const SizedBox(height: 16),
-          
           Text(
             'Select topics that interest you (optional)',
             style: TextStyle(
@@ -531,9 +528,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
             ),
             textAlign: TextAlign.center,
           ),
-          
           const SizedBox(height: 32),
-          
           Expanded(
             child: GridView.builder(
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -546,7 +541,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
               itemBuilder: (context, index) {
                 final interest = interests[index];
                 final isSelected = _selectedInterests.contains(interest);
-                
+
                 return GestureDetector(
                   onTap: () {
                     setState(() {
@@ -561,7 +556,8 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
                     decoration: BoxDecoration(
                       color: isSelected ? Colors.blue[50] : Colors.grey[100],
                       border: Border.all(
-                        color: isSelected ? Colors.blue : Colors.grey[300]!),
+                        color: isSelected ? Colors.blue : Colors.grey[300]!,
+                      ),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
@@ -569,7 +565,8 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
                         interest,
                         style: TextStyle(
                           color: isSelected ? Colors.blue : Colors.black87,
-                          fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+                          fontWeight:
+                              isSelected ? FontWeight.bold : FontWeight.normal,
                         ),
                         textAlign: TextAlign.center,
                       ),
@@ -584,62 +581,62 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
     );
   }
 
-  Widget _buildCompletionStep(AppLocalizations l10n) {
-    return Padding(
-      padding: const EdgeInsets.all(24),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          // Success icon
-          Container(
-            width: 100,
-            height: 100,
-            decoration: BoxDecoration(
-              color: Colors.green[100],
-              shape: BoxShape.circle,
+  Widget _buildCompletionStep(AppLocalizations l10n) => Padding(
+        padding: const EdgeInsets.all(24),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // Success icon
+            Container(
+              width: 100,
+              height: 100,
+              decoration: BoxDecoration(
+                color: Colors.green[100],
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(
+                Icons.check,
+                color: Colors.green,
+                size: 60,
+              ),
             ),
-            child: const Icon(
-              Icons.check,
-              color: Colors.green,
-              size: 60,
+
+            const SizedBox(height: 32),
+
+            Text(
+              "You're all set!",
+              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+              textAlign: TextAlign.center,
             ),
-          ),
-          
-          const SizedBox(height: 32),
-          
-          Text(
-            'You\'re all set!',
-            style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              fontWeight: FontWeight.bold),
-            textAlign: TextAlign.center,
-          ),
-          
-          const SizedBox(height: 16),
-          
-          Text(
-            'Welcome to APP-OINT. We\'re excited to help you manage your appointments and activities.',
-            style: TextStyle(
-              color: Colors.grey[600],
-              fontSize: 16,
+
+            const SizedBox(height: 16),
+
+            Text(
+              "Welcome to APP-OINT. We're excited to help you manage your appointments and activities.",
+              style: TextStyle(
+                color: Colors.grey[600],
+                fontSize: 16,
+              ),
+              textAlign: TextAlign.center,
             ),
-            textAlign: TextAlign.center,
-          ),
-          
-          const SizedBox(height: 32),
-          
-          // Summary of selections
-          _buildSummaryItem('User Type', _getUserTypeName(ref.watch(userTypeProvider))),
-          _buildSummaryItem('Language', _getLanguageName(_selectedLanguage)),
-          if (_nameController.text.isNotEmpty)
-            _buildSummaryItem('Name', _nameController.text),
-        ],
-      ),
-    );
-  }
+
+            const SizedBox(height: 32),
+
+            // Summary of selections
+            _buildSummaryItem(
+                'User Type', _getUserTypeName(ref.watch(userTypeProvider))),
+            _buildSummaryItem('Language', _getLanguageName(_selectedLanguage)),
+            if (_nameController.text.isNotEmpty)
+              _buildSummaryItem('Name', _nameController.text),
+          ],
+        ),
+      );
 
   Widget _buildSummaryItem(String label, String? value) {
     if (value == null) return const SizedBox.shrink();
-    
+
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
@@ -654,38 +651,39 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
     );
   }
 
-  Widget _buildNavigationButtons(int currentStep, UserType? userType, AppLocalizations l10n) {
-    return Container(
-      padding: const EdgeInsets.all(24),
-      child: Row(
-        children: [
-          // Back button
-          if (currentStep > 0)
+  Widget _buildNavigationButtons(
+          int currentStep, UserType? userType, AppLocalizations l10n) =>
+      Container(
+        padding: const EdgeInsets.all(24),
+        child: Row(
+          children: [
+            // Back button
+            if (currentStep > 0)
+              Expanded(
+                child: OutlinedButton(
+                  onPressed: () {
+                    _pageController.previousPage(
+                      duration: const Duration(milliseconds: 300),
+                      curve: Curves.easeInOut,
+                    );
+                  },
+                  child: const Text('Back'),
+                ),
+              ),
+
+            if (currentStep > 0) const SizedBox(width: 16),
+
+            // Next/Complete button
             Expanded(
-              child: OutlinedButton(
-                onPressed: () {
-                  _pageController.previousPage(
-                    duration: const Duration(milliseconds: 300),
-                    curve: Curves.easeInOut,
-                  );
-                },
-                child: const Text('Back'),
+              child: ElevatedButton(
+                onPressed:
+                    _canProceed(currentStep, userType) ? _handleNext : null,
+                child: Text(currentStep == 5 ? 'Get Started' : 'Next'),
               ),
             ),
-          
-          if (currentStep > 0) const SizedBox(width: 16),
-          
-          // Next/Complete button
-          Expanded(
-            child: ElevatedButton(
-              onPressed: _canProceed(currentStep, userType) ? _handleNext : null,
-              child: Text(currentStep == 5 ? 'Get Started' : 'Next'),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
+          ],
+        ),
+      );
 
   bool _canProceed(int currentStep, UserType? userType) {
     switch (currentStep) {
@@ -708,7 +706,7 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
 
   void _handleNext() {
     final currentStep = ref.read(onboardingStepProvider);
-    
+
     if (currentStep == 5) {
       _completeOnboarding();
     } else {
@@ -719,10 +717,10 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
     }
   }
 
-  void _completeOnboarding() async {
+  Future<void> _completeOnboarding() async {
     try {
       final service = ref.read(onboardingServiceProvider);
-      
+
       // Save onboarding data
       final onboardingData = {
         'userType': ref.read(userTypeProvider),
@@ -733,49 +731,49 @@ class _EnhancedOnboardingScreenState extends ConsumerState<EnhancedOnboardingScr
         'interests': _selectedInterests,
         'completedAt': DateTime.now().toIso8601String(),
       };
-      
+
       await service.completeOnboarding(onboardingData);
-      
+
       if (mounted) {
         Navigator.of(context).pushReplacementNamed('/dashboard');
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Failed to complete onboarding: $e')),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Failed to complete onboarding: $e')),
+      );
     }
   }
+}
 
-  String _getUserTypeName(UserType? type) {
-    switch (type) {
-      case UserType.personal:
-        return 'Personal';
-      case UserType.business:
-        return 'Business';
-      case UserType.family:
-        return 'Family';
-      default:
-        return 'Not selected';
-    }
+String _getUserTypeName(UserType? type) {
+  switch (type) {
+    case UserType.personal:
+      return 'Personal';
+    case UserType.business:
+      return 'Business';
+    case UserType.family:
+      return 'Family';
+    default:
+      return 'Not selected';
   }
+}
 
-  String _getLanguageName(String? code) {
-    final languages = {
-      'en': 'English',
-      'es': 'Español',
-      'fr': 'Français',
-      'de': 'Deutsch',
-      'it': 'Italiano',
-      'pt': 'Português',
-      'ar': 'العربية',
-      'zh': '中文',
-      'ja': '日本語',
-      'ko': '한국어',
-    };
-    
-    return languages[code] ?? 'Not selected';
-  }
+String _getLanguageName(String? code) {
+  final languages = {
+    'en': 'English',
+    'es': 'Español',
+    'fr': 'Français',
+    'de': 'Deutsch',
+    'it': 'Italiano',
+    'pt': 'Português',
+    'ar': 'العربية',
+    'zh': '中文',
+    'ja': '日本語',
+    'ko': '한국어',
+  };
+
+  return languages[code] ?? 'Not selected';
+}
 
 enum UserType {
   personal,

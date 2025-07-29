@@ -69,8 +69,7 @@ class ProvidersScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, final stack) =>
-            Center(child: Text('Error: $error')),
+        error: (error, final stack) => Center(child: Text('Error: $error')),
       ),
     );
   }
@@ -123,7 +122,9 @@ class ProvidersScreen extends ConsumerWidget {
   }
 
   void _showEditProviderDialog(
-      BuildContext context, final Map<String, dynamic> provider,) {
+    BuildContext context,
+    final Map<String, dynamic> provider,
+  ) {
     final formKey = GlobalKey<FormState>();
     final nameController = TextEditingController(text: provider['name'] ?? '');
     final roleController = TextEditingController(text: provider['role'] ?? '');
@@ -171,7 +172,9 @@ class ProvidersScreen extends ConsumerWidget {
   }
 
   void _showDeleteConfirmation(
-      BuildContext context, final String providerId,) {
+    BuildContext context,
+    final String providerId,
+  ) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(

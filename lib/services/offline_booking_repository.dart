@@ -11,7 +11,8 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:hive/hive.dart';
 
-class OfflineBookingRepository { // Track the timer created in _retryFailedOperations
+class OfflineBookingRepository {
+  // Track the timer created in _retryFailedOperations
 
   OfflineBookingRepository({
     FirebaseFirestore? firestore,
@@ -46,8 +47,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
   bool _circuitBreakerOpen = false;
   DateTime? _circuitBreakerOpenedAt;
   Timer? _retryTimer;
-  Timer?
-      _exponentialBackoffTimer;
+  Timer? _exponentialBackoffTimer;
 
   /// Initialize Hive boxes and connectivity monitoring
   Future<void> initialize() async {
@@ -159,7 +159,8 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
     // Show retry notification
     _notificationService?.showInfo(
-        'Retrying ${failedBookings.length} failed booking${failedBookings.length == 1 ? '' : 's'}...');
+      'Retrying ${failedBookings.length} failed booking${failedBookings.length == 1 ? '' : 's'}...',
+    );
 
     for (final booking in failedBookings) {
       final retryCount = _getRetryCount(booking.id);
@@ -301,14 +302,17 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
             .doc(booking.id)
             .set(booking.toJson());
         await _bookingsBox.put(
-            booking.id, offlineBooking.copyWith(syncStatus: 'synced'),);
+          booking.id,
+          offlineBooking.copyWith(syncStatus: 'synced'),
+        );
       } catch (e) {
         await _bookingsBox.put(
-            booking.id,
-            offlineBooking.copyWith(
-              syncStatus: 'failed',
-              syncError: e.toString(),
-            ),);
+          booking.id,
+          offlineBooking.copyWith(
+            syncStatus: 'failed',
+            syncError: e.toString(),
+          ),
+        );
         rethrow;
       }
     }
@@ -337,11 +341,12 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
         await _bookingsBox.delete(bookingId);
       } catch (e) {
         await _bookingsBox.put(
-            bookingId,
-            updatedOfflineBooking.copyWith(
-              syncStatus: 'failed',
-              syncError: e.toString(),
-            ),);
+          bookingId,
+          updatedOfflineBooking.copyWith(
+            syncStatus: 'failed',
+            syncError: e.toString(),
+          ),
+        );
         rethrow;
       }
     }
@@ -370,14 +375,17 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
             .doc(booking.id)
             .update(booking.toJson());
         await _bookingsBox.put(
-            booking.id, updatedOfflineBooking.copyWith(syncStatus: 'synced'),);
+          booking.id,
+          updatedOfflineBooking.copyWith(syncStatus: 'synced'),
+        );
       } catch (e) {
         await _bookingsBox.put(
-            booking.id,
-            updatedOfflineBooking.copyWith(
-              syncStatus: 'failed',
-              syncError: e.toString(),
-            ),);
+          booking.id,
+          updatedOfflineBooking.copyWith(
+            syncStatus: 'failed',
+            syncError: e.toString(),
+          ),
+        );
         rethrow;
       }
     }
@@ -452,7 +460,8 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
     // Show success notification
     if (totalSynced > 0) {
       _notificationService?.showSuccess(
-          'Successfully synced $totalSynced booking${totalSynced == 1 ? '' : 's'}');
+        'Successfully synced $totalSynced booking${totalSynced == 1 ? '' : 's'}',
+      );
     }
   }
 
@@ -495,8 +504,11 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
   }
 
   /// Update sync status for a batch of operations
-  Future<void> _updateSyncStatusBatch(List<String> ids, String status,
-      {String? error,}) async {
+  Future<void> _updateSyncStatusBatch(
+    List<String> ids,
+    String status, {
+    String? error,
+  }) async {
     for (id in ids) {
       final booking = _bookingsBox.get(id);
       if (booking != null) {
@@ -521,9 +533,11 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
     cutoffDate = DateTime.now().subtract(const Duration(days: 30));
 
     final staleBookings = _bookingsBox.values
-        .where((booking) =>
-            booking.syncStatus == 'synced' &&
-            booking.lastSyncAttempt.isBefore(cutoffDate),)
+        .where(
+          (booking) =>
+              booking.syncStatus == 'synced' &&
+              booking.lastSyncAttempt.isBefore(cutoffDate),
+        )
         .map((booking) => booking.id)
         .toList();
 
@@ -534,9 +548,11 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
     // Also clean up permanently failed entries older than 7 days
     failedCutoffDate = DateTime.now().subtract(const Duration(days: 7));
     final failedBookings = _bookingsBox.values
-        .where((booking) =>
-            booking.syncStatus == 'permanently_failed' &&
-            booking.lastSyncAttempt.isBefore(failedCutoffDate),)
+        .where(
+          (booking) =>
+              booking.syncStatus == 'permanently_failed' &&
+              booking.lastSyncAttempt.isBefore(failedCutoffDate),
+        )
         .map((booking) => booking.id)
         .toList();
 
@@ -610,10 +626,12 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
   bool get isCircuitBreakerOpen => _circuitBreakerOpen;
 
   /// Get sync status for a specific booking
-  String? getBookingSyncStatus(String bookingId) => _bookingsBox.get(bookingId)?.syncStatus;
+  String? getBookingSyncStatus(String bookingId) =>
+      _bookingsBox.get(bookingId)?.syncStatus;
 
   /// Get sync error for a specific booking
-  String? getBookingSyncError(String bookingId) => _bookingsBox.get(bookingId)?.syncError;
+  String? getBookingSyncError(String bookingId) =>
+      _bookingsBox.get(bookingId)?.syncError;
 
   /// Force retry of failed operations
   Future<void> retryFailedOperations() async {
@@ -639,7 +657,9 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
   /// Enhanced conflict resolution with business logic validation
   Future<Booking> _resolveConflict(
-      OfflineBooking localBooking, Map<String, dynamic> remoteData,) async {
+    OfflineBooking localBooking,
+    Map<String, dynamic> remoteData,
+  ) async {
     final remoteBooking =
         Booking.fromJson({...remoteData, 'id': localBooking.id});
 
@@ -656,7 +676,8 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
       // Show notification about server cancellation
       _notificationService?.showWarning(
-          'Booking ${localBooking.id} was cancelled by the service provider');
+        'Booking ${localBooking.id} was cancelled by the service provider',
+      );
 
       throw BookingConflictException(
         bookingId: localBooking.id,
@@ -676,7 +697,8 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
       // Show notification about double-booking conflict
       _notificationService?.showWarning(
-          'Booking ${localBooking.id} conflicts with existing appointment');
+        'Booking ${localBooking.id} conflicts with existing appointment',
+      );
 
       throw BookingConflictException(
         bookingId: localBooking.id,
@@ -723,8 +745,10 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
           .collection('bookings')
           .where('userId', isEqualTo: user.uid)
           .where('dateTime', isLessThan: endTime)
-          .where('dateTime',
-              isGreaterThan: startTime.subtract(booking.duration),)
+          .where(
+            'dateTime',
+            isGreaterThan: startTime.subtract(booking.duration),
+          )
           .get();
 
       // Check for overlapping bookings (excluding the current booking)

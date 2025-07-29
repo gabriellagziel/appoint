@@ -22,16 +22,21 @@ class DashboardScreen extends ConsumerWidget {
         data: (stats) {
           final cards = [
             _StatsCard(
-                title: 'Total Appointments',
-                value: '${stats.totalAppointments}',),
+              title: 'Total Appointments',
+              value: '${stats.totalAppointments}',
+            ),
             _StatsCard(
-                title: 'Completed Appointments',
-                value: '${stats.completedAppointments}',),
+              title: 'Completed Appointments',
+              value: '${stats.completedAppointments}',
+            ),
             _StatsCard(
-                title: 'Pending Invites', value: '${stats.pendingInvites}',),
+              title: 'Pending Invites',
+              value: '${stats.pendingInvites}',
+            ),
             _StatsCard(
-                title: 'Revenue',
-                value: '\$${stats.revenue.toStringAsFixed(2)}',),
+              title: 'Revenue',
+              value: '\$${stats.revenue.toStringAsFixed(2)}',
+            ),
           ];
 
           return ResponsiveScaffold(
@@ -70,9 +75,9 @@ class _StatsCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Card(
-      child: ListTile(
-        title: Text(title),
-        subtitle: Text(value),
-      ),
-    );
+        child: ListTile(
+          title: Text(title),
+          subtitle: Text(value),
+        ),
+      );
 }

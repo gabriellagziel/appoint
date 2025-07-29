@@ -11,7 +11,8 @@ Future<int> _heapUsage() async {
   info = await developer.Service.getInfo();
   if (info.serverUri == null) return -1;
   final service = await vmServiceConnectUri(
-      'ws://localhost:${info.serverUri!.port}${info.serverUri!.path}ws',);
+    'ws://localhost:${info.serverUri!.port}${info.serverUri!.path}ws',
+  );
   vmData = await service.getVM();
   final iso = vmData.isolates?.first;
   if (iso == null) return -1;
@@ -27,17 +28,20 @@ void main() {
       before = await _heapUsage();
       sw = Stopwatch()..start();
 
-      await binding.watchPerformance(() async {
-        await app.appMain();
-        await tester.pumpAndSettle();
-        navigator = tester.state<NavigatorState>(find.byType(Navigator));
-        navigator.pushNamed('/chat-booking');
-        await tester.pumpAndSettle();
+      await binding.watchPerformance(
+        () async {
+          await app.appMain();
+          await tester.pumpAndSettle();
+          navigator = tester.state<NavigatorState>(find.byType(Navigator));
+          navigator.pushNamed('/chat-booking');
+          await tester.pumpAndSettle();
 
-        await tester.enterText(find.byType(TextField).first, 'Haircut');
-        await tester.testTextInput.receiveAction(TextInputAction.done);
-        await tester.pumpAndSettle();
-      }, reportKey: 'booking_chat',);
+          await tester.enterText(find.byType(TextField).first, 'Haircut');
+          await tester.testTextInput.receiveAction(TextInputAction.done);
+          await tester.pumpAndSettle();
+        },
+        reportKey: 'booking_chat',
+      );
 
       sw.stop();
       after = await _heapUsage();
@@ -54,18 +58,21 @@ void main() {
       before = await _heapUsage();
       sw = Stopwatch()..start();
 
-      await binding.watchPerformance(() async {
-        await app.appMain();
-        await tester.pumpAndSettle();
-        navigator = tester.state<NavigatorState>(find.byType(Navigator));
-        for (var i = 0; i < 5; i++) {
-          navigator.pushNamed('/dashboard');
+      await binding.watchPerformance(
+        () async {
+          await app.appMain();
           await tester.pumpAndSettle();
-          expect(find.text('Dashboard'), findsOneWidget);
-          await tester.pageBack();
-          await tester.pumpAndSettle();
-        }
-      }, reportKey: 'dashboard_flow',);
+          navigator = tester.state<NavigatorState>(find.byType(Navigator));
+          for (var i = 0; i < 5; i++) {
+            navigator.pushNamed('/dashboard');
+            await tester.pumpAndSettle();
+            expect(find.text('Dashboard'), findsOneWidget);
+            await tester.pageBack();
+            await tester.pumpAndSettle();
+          }
+        },
+        reportKey: 'dashboard_flow',
+      );
 
       sw.stop();
       after = await _heapUsage();

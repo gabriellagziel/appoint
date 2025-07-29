@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class BusinessSubscription {
-
   BusinessSubscription({
     required this.id,
     required this.businessId,
@@ -10,8 +9,8 @@ class BusinessSubscription {
     required this.status,
     required this.currentPeriodStart,
     required this.currentPeriodEnd,
-    required this.createdAt, 
-    required this.updatedAt, 
+    required this.createdAt,
+    required this.updatedAt,
     this.trialEnd,
     this.cancelAtPeriodEnd,
     this.stripeSubscriptionId,
@@ -21,32 +20,36 @@ class BusinessSubscription {
     this.mapOverageThisPeriod = 0,
   });
 
-  factory BusinessSubscription.fromJson(Map<String, dynamic> json) => BusinessSubscription(
-      id: json['id'] as String,
-      businessId: json['businessId'] as String,
-      customerId: json['customerId'] as String,
-      plan: SubscriptionPlan.values.firstWhere(
-        (e) => e.name == json['plan'],
-        orElse: () => SubscriptionPlan.starter,
-      ),
-      status: SubscriptionStatus.values.firstWhere(
-        (e) => e.name == json['status'],
-        orElse: () => SubscriptionStatus.inactive,
-      ),
-      currentPeriodStart: DateTime.parse(json['currentPeriodStart'] as String),
-      currentPeriodEnd: DateTime.parse(json['currentPeriodEnd'] as String),
-      trialEnd: json['trialEnd'] != null
-          ? DateTime.parse(json['trialEnd'] as String)
-          : null,
-      createdAt: DateTime.parse(json['createdAt'] as String),
-      updatedAt: DateTime.parse(json['updatedAt'] as String),
-      cancelAtPeriodEnd: json['cancelAtPeriodEnd'] as String?,
-      stripeSubscriptionId: json['stripeSubscriptionId'] as String?,
-      stripePriceId: json['stripePriceId'] as String?,
-      promoCodeId: json['promoCodeId'] as String?,
-      mapUsageCurrentPeriod: (json['mapUsageCurrentPeriod'] as num?)?.toInt() ?? 0,
-      mapOverageThisPeriod: (json['mapOverageThisPeriod'] as num?)?.toDouble() ?? 0.0,
-    );
+  factory BusinessSubscription.fromJson(Map<String, dynamic> json) =>
+      BusinessSubscription(
+        id: json['id'] as String,
+        businessId: json['businessId'] as String,
+        customerId: json['customerId'] as String,
+        plan: SubscriptionPlan.values.firstWhere(
+          (e) => e.name == json['plan'],
+          orElse: () => SubscriptionPlan.starter,
+        ),
+        status: SubscriptionStatus.values.firstWhere(
+          (e) => e.name == json['status'],
+          orElse: () => SubscriptionStatus.inactive,
+        ),
+        currentPeriodStart:
+            DateTime.parse(json['currentPeriodStart'] as String),
+        currentPeriodEnd: DateTime.parse(json['currentPeriodEnd'] as String),
+        trialEnd: json['trialEnd'] != null
+            ? DateTime.parse(json['trialEnd'] as String)
+            : null,
+        createdAt: DateTime.parse(json['createdAt'] as String),
+        updatedAt: DateTime.parse(json['updatedAt'] as String),
+        cancelAtPeriodEnd: json['cancelAtPeriodEnd'] as String?,
+        stripeSubscriptionId: json['stripeSubscriptionId'] as String?,
+        stripePriceId: json['stripePriceId'] as String?,
+        promoCodeId: json['promoCodeId'] as String?,
+        mapUsageCurrentPeriod:
+            (json['mapUsageCurrentPeriod'] as num?)?.toInt() ?? 0,
+        mapOverageThisPeriod:
+            (json['mapOverageThisPeriod'] as num?)?.toDouble() ?? 0.0,
+      );
   final String id;
   final String businessId;
   final String customerId;
@@ -65,23 +68,23 @@ class BusinessSubscription {
   final double mapOverageThisPeriod;
 
   Map<String, dynamic> toJson() => {
-      'id': id,
-      'businessId': businessId,
-      'customerId': customerId,
-      'plan': plan.name,
-      'status': status.name,
-      'currentPeriodStart': currentPeriodStart.toIso8601String(),
-      'currentPeriodEnd': currentPeriodEnd.toIso8601String(),
-      'trialEnd': trialEnd?.toIso8601String(),
-      'createdAt': createdAt.toIso8601String(),
-      'updatedAt': updatedAt.toIso8601String(),
-      'cancelAtPeriodEnd': cancelAtPeriodEnd,
-      'stripeSubscriptionId': stripeSubscriptionId,
-      'stripePriceId': stripePriceId,
-      'promoCodeId': promoCodeId,
-      'mapUsageCurrentPeriod': mapUsageCurrentPeriod,
-      'mapOverageThisPeriod': mapOverageThisPeriod,
-    };
+        'id': id,
+        'businessId': businessId,
+        'customerId': customerId,
+        'plan': plan.name,
+        'status': status.name,
+        'currentPeriodStart': currentPeriodStart.toIso8601String(),
+        'currentPeriodEnd': currentPeriodEnd.toIso8601String(),
+        'trialEnd': trialEnd?.toIso8601String(),
+        'createdAt': createdAt.toIso8601String(),
+        'updatedAt': updatedAt.toIso8601String(),
+        'cancelAtPeriodEnd': cancelAtPeriodEnd,
+        'stripeSubscriptionId': stripeSubscriptionId,
+        'stripePriceId': stripePriceId,
+        'promoCodeId': promoCodeId,
+        'mapUsageCurrentPeriod': mapUsageCurrentPeriod,
+        'mapOverageThisPeriod': mapOverageThisPeriod,
+      };
 
   BusinessSubscription copyWith({
     String? id,
@@ -100,26 +103,26 @@ class BusinessSubscription {
     String? promoCodeId,
     int? mapUsageCurrentPeriod,
     double? mapOverageThisPeriod,
-  }) {
-    return BusinessSubscription(
-      id: id ?? this.id,
-      businessId: businessId ?? this.businessId,
-      customerId: customerId ?? this.customerId,
-      plan: plan ?? this.plan,
-      status: status ?? this.status,
-      currentPeriodStart: currentPeriodStart ?? this.currentPeriodStart,
-      currentPeriodEnd: currentPeriodEnd ?? this.currentPeriodEnd,
-      trialEnd: trialEnd ?? this.trialEnd,
-      createdAt: createdAt ?? this.createdAt,
-      updatedAt: updatedAt ?? this.updatedAt,
-      cancelAtPeriodEnd: cancelAtPeriodEnd ?? this.cancelAtPeriodEnd,
-      stripeSubscriptionId: stripeSubscriptionId ?? this.stripeSubscriptionId,
-      stripePriceId: stripePriceId ?? this.stripePriceId,
-      promoCodeId: promoCodeId ?? this.promoCodeId,
-      mapUsageCurrentPeriod: mapUsageCurrentPeriod ?? this.mapUsageCurrentPeriod,
-      mapOverageThisPeriod: mapOverageThisPeriod ?? this.mapOverageThisPeriod,
-    );
-  }
+  }) =>
+      BusinessSubscription(
+        id: id ?? this.id,
+        businessId: businessId ?? this.businessId,
+        customerId: customerId ?? this.customerId,
+        plan: plan ?? this.plan,
+        status: status ?? this.status,
+        currentPeriodStart: currentPeriodStart ?? this.currentPeriodStart,
+        currentPeriodEnd: currentPeriodEnd ?? this.currentPeriodEnd,
+        trialEnd: trialEnd ?? this.trialEnd,
+        createdAt: createdAt ?? this.createdAt,
+        updatedAt: updatedAt ?? this.updatedAt,
+        cancelAtPeriodEnd: cancelAtPeriodEnd ?? this.cancelAtPeriodEnd,
+        stripeSubscriptionId: stripeSubscriptionId ?? this.stripeSubscriptionId,
+        stripePriceId: stripePriceId ?? this.stripePriceId,
+        promoCodeId: promoCodeId ?? this.promoCodeId,
+        mapUsageCurrentPeriod:
+            mapUsageCurrentPeriod ?? this.mapUsageCurrentPeriod,
+        mapOverageThisPeriod: mapOverageThisPeriod ?? this.mapOverageThisPeriod,
+      );
 }
 
 enum SubscriptionPlan {
@@ -165,11 +168,11 @@ extension SubscriptionPlanExtension on SubscriptionPlan {
   double get price {
     switch (this) {
       case SubscriptionPlan.starter:
-        return 5.00;
+        return 5;
       case SubscriptionPlan.professional:
-        return 15.00;
+        return 15;
       case SubscriptionPlan.businessPlus:
-        return 25.00;
+        return 25;
     }
   }
 
@@ -316,8 +319,8 @@ extension SubscriptionStatusExtension on SubscriptionStatus {
     }
   }
 
-  bool get isActive => this == SubscriptionStatus.active ||
-        this == SubscriptionStatus.trialing;
+  bool get isActive =>
+      this == SubscriptionStatus.active || this == SubscriptionStatus.trialing;
 
   Color get color {
     switch (this) {
@@ -339,5 +342,5 @@ extension SubscriptionStatusExtension on SubscriptionStatus {
 // Map usage constants
 class MapUsageConstants {
   static const double systemCostPerLoad = 0.007; // €0.007 per map load
-  static const double overageRatePerLoad = 0.01;  // €0.01 per extra load
+  static const double overageRatePerLoad = 0.01; // €0.01 per extra load
 }

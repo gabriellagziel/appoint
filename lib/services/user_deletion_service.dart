@@ -2,13 +2,12 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class UserDeletionService {
-
   /// Constructor that accepts injected dependencies for testing
   UserDeletionService({
     FirebaseFirestore? firestore,
     FirebaseAuth? auth,
-  }) : _firestore = firestore ?? FirebaseFirestore.instance,
-       _auth = auth ?? FirebaseAuth.instance;
+  })  : _firestore = firestore ?? FirebaseFirestore.instance,
+        _auth = auth ?? FirebaseAuth.instance;
   final FirebaseFirestore _firestore;
   final FirebaseAuth _auth;
 
@@ -43,11 +42,13 @@ class UserDeletionService {
     batch.delete(_firestore.collection('users').doc(uid));
 
     // Delete user settings
-    batch.delete(_firestore
-        .collection('users')
-        .doc(uid)
-        .collection('settings')
-        .doc('notifications'),);
+    batch.delete(
+      _firestore
+          .collection('users')
+          .doc(uid)
+          .collection('settings')
+          .doc('notifications'),
+    );
 
     // Delete business profile if exists
     batch.delete(_firestore.collection('business_profiles').doc(uid));

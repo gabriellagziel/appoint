@@ -11,7 +11,9 @@ class StudioService {
   }
 
   Future<StaffAvailability> fetchAvailability(
-      String staffId, final DateTime date,) async {
+    String staffId,
+    final DateTime date,
+  ) async {
     final doc = await _firestore
         .collection('availability/$staffId/dates')
         .doc(date.toIso8601String())

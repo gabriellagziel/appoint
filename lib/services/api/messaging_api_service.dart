@@ -1,12 +1,11 @@
-import 'package:appoint/models/message.dart';
 import 'package:appoint/models/chat.dart';
+import 'package:appoint/models/message.dart';
 import 'package:appoint/services/api/api_client.dart';
 
 class MessagingApiService {
+  MessagingApiService._();
   static final MessagingApiService _instance = MessagingApiService._();
   static MessagingApiService get instance => _instance;
-  
-  MessagingApiService._();
 
   // Get user's chats
   Future<List<Chat>> getUserChats() async {
@@ -16,7 +15,7 @@ class MessagingApiService {
       );
 
       final chats = response['chats'] as List;
-      return chats.map((chat) => Chat.fromJson(chat)).toList();
+      return chats.map(Chat.fromJson).toList();
     } catch (e) {
       rethrow;
     }
@@ -39,7 +38,7 @@ class MessagingApiService {
       );
 
       final messages = response['messages'] as List;
-      return messages.map((message) => Message.fromJson(message)).toList();
+      return messages.map(Message.fromJson).toList();
     } catch (e) {
       rethrow;
     }
@@ -158,10 +157,10 @@ class MessagingApiService {
     String? messageType,
   }) async {
     try {
-      final response = await ApiClient.instance.uploadFile<Map<String, dynamic>>(
+      final response =
+          await ApiClient.instance.uploadFile<Map<String, dynamic>>(
         '/chats/$chatId/messages/file',
         File(filePath),
-        fieldName: 'file',
         extraData: {
           'fileName': fileName,
           'type': messageType ?? 'file',
@@ -208,7 +207,7 @@ class MessagingApiService {
       );
 
       final messages = response['messages'] as List;
-      return messages.map((message) => Message.fromJson(message)).toList();
+      return messages.map(Message.fromJson).toList();
     } catch (e) {
       rethrow;
     }
@@ -225,7 +224,9 @@ class MessagingApiService {
       );
 
       final reactions = response['reactions'] as List;
-      return reactions.map((reaction) => MessageReaction.fromJson(reaction)).toList();
+      return reactions
+          .map((reaction) => MessageReaction.fromJson(reaction))
+          .toList();
     } catch (e) {
       rethrow;
     }
@@ -346,7 +347,7 @@ class MessagingApiService {
       );
 
       final chats = response['chats'] as List;
-      return chats.map((chat) => Chat.fromJson(chat)).toList();
+      return chats.map(Chat.fromJson).toList();
     } catch (e) {
       rethrow;
     }
@@ -361,19 +362,18 @@ class MessageReaction {
     required this.timestamp,
   });
 
+  factory MessageReaction.fromJson(Map<String, dynamic> json) =>
+      MessageReaction(
+        reaction: json['reaction'] as String,
+        userId: json['userId'] as String,
+        userName: json['userName'] as String,
+        timestamp: DateTime.parse(json['timestamp'] as String),
+      );
+
   final String reaction;
   final String userId;
   final String userName;
   final DateTime timestamp;
-
-  factory MessageReaction.fromJson(Map<String, dynamic> json) {
-    return MessageReaction(
-      reaction: json['reaction'] as String,
-      userId: json['userId'] as String,
-      userName: json['userName'] as String,
-      timestamp: DateTime.parse(json['timestamp'] as String),
-    );
-  }
 }
 
 class ChatParticipant {
@@ -385,21 +385,20 @@ class ChatParticipant {
     required this.lastSeen,
   });
 
+  factory ChatParticipant.fromJson(Map<String, dynamic> json) =>
+      ChatParticipant(
+        userId: json['userId'] as String,
+        userName: json['userName'] as String,
+        avatar: json['avatar'] as String?,
+        isOnline: json['isOnline'] as bool,
+        lastSeen: json['lastSeen'] != null
+            ? DateTime.parse(json['lastSeen'] as String)
+            : null,
+      );
+
   final String userId;
   final String userName;
   final String? avatar;
   final bool isOnline;
   final DateTime? lastSeen;
-
-  factory ChatParticipant.fromJson(Map<String, dynamic> json) {
-    return ChatParticipant(
-      userId: json['userId'] as String,
-      userName: json['userName'] as String,
-      avatar: json['avatar'] as String?,
-      isOnline: json['isOnline'] as bool,
-      lastSeen: json['lastSeen'] != null 
-          ? DateTime.parse(json['lastSeen'] as String)
-          : null,
-    );
-  }
-} 
+}

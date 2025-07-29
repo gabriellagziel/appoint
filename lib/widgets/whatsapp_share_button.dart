@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class WhatsAppShareButton extends ConsumerWidget {
-
   const WhatsAppShareButton({
-    required this.appointment, super.key,
+    required this.appointment,
+    super.key,
     this.customMessage,
     this.groupId,
     this.contextId,
@@ -57,9 +57,9 @@ class WhatsAppShareButton extends ConsumerWidget {
 }
 
 class WhatsAppShareDialog extends ConsumerStatefulWidget {
-
   const WhatsAppShareDialog({
-    required this.appointment, super.key,
+    required this.appointment,
+    super.key,
     this.customMessage,
     this.groupId,
     this.contextId,
@@ -77,7 +77,7 @@ class WhatsAppShareDialog extends ConsumerStatefulWidget {
 }
 
 class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
-  TextEditingController _messageController = TextEditingController();
+  final TextEditingController _messageController = TextEditingController();
 
   @override
   void initState() {
@@ -132,14 +132,14 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
                 borderRadius: BorderRadius.circular(8),
                 border: Border.all(color: Colors.blue.shade200),
               ),
-              child: Row(
+              child: const Row(
                 children: [
-                  const Icon(Icons.info, color: Colors.blue),
-                  const SizedBox(width: 8),
+                  Icon(Icons.info, color: Colors.blue),
+                  SizedBox(width: 8),
                   Expanded(
                     child: Text(
                       'You will be able to manually select contacts or groups in WhatsApp after clicking Share.',
-                      style: const TextStyle(color: Colors.blue),
+                      style: TextStyle(color: Colors.blue),
                     ),
                   ),
                 ],
@@ -211,9 +211,10 @@ class _WhatsAppShareDialogState extends ConsumerState<WhatsAppShareDialog> {
       widget.onShared?.call();
 
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Opening WhatsApp... Please manually select contacts or groups to share with.'),
-          backgroundColor: const Color(0xFF25D366),
+        const SnackBar(
+          content: Text(
+              'Opening WhatsApp... Please manually select contacts or groups to share with.'),
+          backgroundColor: Color(0xFF25D366),
         ),
       );
     }

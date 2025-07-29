@@ -1,12 +1,12 @@
 /// Thrown when a local booking operation conflicts with the server state.
 class BookingConflictException implements Exception {
-
   BookingConflictException({
     required this.bookingId,
     required this.localUpdatedAt,
     required this.remoteUpdatedAt,
     this.message = 'Booking conflict detected.',
   });
+
   /// The ID of the booking that caused the conflict.
   final String bookingId;
 
@@ -21,5 +21,5 @@ class BookingConflictException implements Exception {
 
   @override
   String toString() => 'BookingConflictException: bookingId=$bookingId '
-        '(local: $localUpdatedAt, remote: $remoteUpdatedAt) — $message';
+      '(local: $localUpdatedAt, remote: $remoteUpdatedAt) — $message';
 }

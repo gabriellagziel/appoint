@@ -6,11 +6,11 @@ class StudioDashboardScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(
-        title: const Text('Studio Dashboard'),
-      ),
-      body: const Center(
-        child: Text('Welcome to your studio'),
-      ),
-    );
+        appBar: AppBar(
+          title: const Text('Studio Dashboard'),
+        ),
+        body: const Center(
+          child: Text('Welcome to your studio'),
+        ),
+      );
 }

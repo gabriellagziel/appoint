@@ -23,7 +23,8 @@ void main() {
 
       // Mock the authStateChanges method to throw SocketException
       when(() => mockAuthService.authStateChanges()).thenAnswer(
-          (_) => Stream.error(const SocketException('No Internet')),);
+        (_) => Stream.error(const SocketException('No Internet')),
+      );
     });
 
     tearDown(() {

@@ -40,11 +40,14 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               title: const Text('Enable Notifications'),
               value: _notifications,
               onChanged: (value) {
-                AnalyticsService.logEvent('setting_changed', params: {
-                  'setting_type': 'notifications',
-                  'setting_value': value,
-                  'screen': 'settings',
-                });
+                AnalyticsService.logEvent(
+                  'setting_changed',
+                  params: {
+                    'setting_type': 'notifications',
+                    'setting_value': value,
+                    'screen': 'settings',
+                  },
+                );
                 setState(() => _notifications = value);
               },
             ),
@@ -53,11 +56,14 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               title: const Text('Enable Vibration'),
               value: _vibration,
               onChanged: (value) {
-                AnalyticsService.logEvent('setting_changed', params: {
-                  'setting_type': 'vibration',
-                  'setting_value': value,
-                  'screen': 'settings',
-                });
+                AnalyticsService.logEvent(
+                  'setting_changed',
+                  params: {
+                    'setting_type': 'vibration',
+                    'setting_value': value,
+                    'screen': 'settings',
+                  },
+                );
                 setState(() => _vibration = value);
               },
             ),
@@ -66,11 +72,14 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               title: const Text('Dark Mode'),
               value: darkMode,
               onChanged: (value) {
-                AnalyticsService.logEvent('setting_changed', params: {
-                  'setting_type': 'dark_mode',
-                  'setting_value': value,
-                  'screen': 'settings',
-                });
+                AnalyticsService.logEvent(
+                  'setting_changed',
+                  params: {
+                    'setting_type': 'dark_mode',
+                    'setting_value': value,
+                    'screen': 'settings',
+                  },
+                );
                 ref
                     .read(themeNotifierProvider.notifier)
                     .setMode(value ? ThemeMode.dark : ThemeMode.light);
@@ -81,11 +90,14 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               value: palette,
               onChanged: (value) {
                 if (value != null) {
-                  AnalyticsService.logEvent('setting_changed', params: {
-                    'setting_type': 'theme_palette',
-                    'setting_value': value.name,
-                    'screen': 'settings',
-                  });
+                  AnalyticsService.logEvent(
+                    'setting_changed',
+                    params: {
+                      'setting_type': 'theme_palette',
+                      'setting_value': value.name,
+                      'screen': 'settings',
+                    },
+                  );
                   ref.read(themeNotifierProvider.notifier).setPalette(value);
                 }
               },

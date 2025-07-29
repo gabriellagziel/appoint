@@ -31,8 +31,7 @@ class _LocalizationContributionScreenState
                   padding: const EdgeInsets.all(16),
                   child: DropdownButton<String>(
                     value: _selectedLocale,
-                    onChanged: (val) =>
-                        setState(() => _selectedLocale = val),
+                    onChanged: (val) => setState(() => _selectedLocale = val),
                     items: [
                       for (locale in locales)
                         DropdownMenuItem(

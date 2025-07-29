@@ -1,4 +1,5 @@
-class Permission { // "none"|"read"|"write"
+class Permission {
+  // "none"|"read"|"write"
 
   Permission({
     required this.id,

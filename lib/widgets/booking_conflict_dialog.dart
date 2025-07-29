@@ -4,9 +4,9 @@ import 'package:intl/intl.dart';
 
 /// Dialog for resolving booking conflicts
 class BookingConflictDialog extends StatelessWidget {
-
   const BookingConflictDialog({
-    required this.conflict, super.key,
+    required this.conflict,
+    super.key,
     this.onKeepLocal,
     this.onKeepRemote,
     this.onMerge,
@@ -76,54 +76,54 @@ class BookingConflictDialog extends StatelessWidget {
   }
 
   Widget _buildConflictInfo(DateFormat dateFormat) => Container(
-      padding: const EdgeInsets.all(12),
-      decoration: BoxDecoration(
-        color: Colors.grey.shade100,
-        borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: Colors.grey.shade300),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            'Booking ID: ${conflict.bookingId}',
-            style: const TextStyle(fontWeight: FontWeight.w500),
-          ),
-          const SizedBox(height: 8),
-          Row(
-            children: [
-              Icon(Icons.access_time, size: 16, color: Colors.grey.shade600),
-              const SizedBox(width: 4),
-              Text(
-                'Local: ${dateFormat.format(conflict.localUpdatedAt)}',
-                style: TextStyle(color: Colors.grey.shade700),
-              ),
-            ],
-          ),
-          const SizedBox(height: 4),
-          Row(
-            children: [
-              Icon(Icons.cloud, size: 16, color: Colors.grey.shade600),
-              const SizedBox(width: 4),
-              Text(
-                'Server: ${dateFormat.format(conflict.remoteUpdatedAt)}',
-                style: TextStyle(color: Colors.grey.shade700),
-              ),
-            ],
-          ),
-          if (conflict.message.isNotEmpty) ...[
-            const SizedBox(height: 8),
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          color: Colors.grey.shade100,
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(color: Colors.grey.shade300),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
             Text(
-              conflict.message,
-              style: TextStyle(
-                color: Colors.grey.shade600,
-                fontStyle: FontStyle.italic,
-              ),
+              'Booking ID: ${conflict.bookingId}',
+              style: const TextStyle(fontWeight: FontWeight.w500),
             ),
+            const SizedBox(height: 8),
+            Row(
+              children: [
+                Icon(Icons.access_time, size: 16, color: Colors.grey.shade600),
+                const SizedBox(width: 4),
+                Text(
+                  'Local: ${dateFormat.format(conflict.localUpdatedAt)}',
+                  style: TextStyle(color: Colors.grey.shade700),
+                ),
+              ],
+            ),
+            const SizedBox(height: 4),
+            Row(
+              children: [
+                Icon(Icons.cloud, size: 16, color: Colors.grey.shade600),
+                const SizedBox(width: 4),
+                Text(
+                  'Server: ${dateFormat.format(conflict.remoteUpdatedAt)}',
+                  style: TextStyle(color: Colors.grey.shade700),
+                ),
+              ],
+            ),
+            if (conflict.message.isNotEmpty) ...[
+              const SizedBox(height: 8),
+              Text(
+                conflict.message,
+                style: TextStyle(
+                  color: Colors.grey.shade600,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+            ],
           ],
-        ],
-      ),
-    );
+        ),
+      );
 }
 
 /// Enum for conflict resolution options
@@ -140,13 +140,14 @@ Future<ConflictResolution?> showBookingConflictDialog(
   VoidCallback? onKeepLocal,
   VoidCallback? onKeepRemote,
   VoidCallback? onMerge,
-}) => showDialog<ConflictResolution>(
-    context: context,
-    barrierDismissible: false,
-    builder: (context) => BookingConflictDialog(
-      conflict: conflict,
-      onKeepLocal: onKeepLocal,
-      onKeepRemote: onKeepRemote,
-      onMerge: onMerge,
-    ),
-  );
+}) =>
+    showDialog<ConflictResolution>(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) => BookingConflictDialog(
+        conflict: conflict,
+        onKeepLocal: onKeepLocal,
+        onKeepRemote: onKeepRemote,
+        onMerge: onMerge,
+      ),
+    );

@@ -134,26 +134,32 @@ class AnalyticsScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildKPICard(final String title, final String value,
-      IconData icon, final Color color,) => Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          children: [
-            Icon(icon, color: color, size: 32),
-            const SizedBox(height: 8),
-            Text(
-              value,
-              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
-            Text(
-              title,
-              style: const TextStyle(fontSize: 14, color: Colors.grey),
-            ),
-          ],
+  Widget _buildKPICard(
+    final String title,
+    final String value,
+    IconData icon,
+    final Color color,
+  ) =>
+      Card(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              Icon(icon, color: color, size: 32),
+              const SizedBox(height: 8),
+              Text(
+                value,
+                style:
+                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+              Text(
+                title,
+                style: const TextStyle(fontSize: 14, color: Colors.grey),
+              ),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 
   String _getTotalBookings(List<QueryDocumentSnapshot> data) {
     var total = 0;

@@ -3,7 +3,8 @@ import 'package:appoint/services/studio_appointment_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final studioAppointmentServiceProvider = Provider<StudioAppointmentService>(
-    (ref) => StudioAppointmentService(),);
+  (ref) => StudioAppointmentService(),
+);
 
 class StudioAppointmentsNotifier
     extends StateNotifier<AsyncValue<List<StudioAppointment>>> {

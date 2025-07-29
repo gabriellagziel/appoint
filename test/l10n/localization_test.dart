@@ -123,7 +123,9 @@ void main() {
       expect(find.text('Created: 2024-01-01'), findsOneWidget);
       expect(find.text('Scheduled: 2024-01-02'), findsOneWidget);
       expect(
-          find.text('Error checking permissions: Test Error'), findsOneWidget,);
+        find.text('Error checking permissions: Test Error'),
+        findsOneWidget,
+      );
       expect(find.text('Error saving message: Test Error'), findsOneWidget);
       expect(find.text('Error sending message: Test Error'), findsOneWidget);
       expect(find.text('Link: https://example.com'), findsOneWidget);

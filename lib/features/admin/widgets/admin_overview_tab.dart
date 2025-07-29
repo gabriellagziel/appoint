@@ -52,134 +52,139 @@ class AdminOverviewTab extends ConsumerWidget {
   }
 
   Widget _buildStatsCards(AdminDashboardStats stats) => GridView.count(
-      crossAxisCount: 2,
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      crossAxisSpacing: 16,
-      mainAxisSpacing: 16,
-      childAspectRatio: 1.5,
-      children: [
-        StatCard(
-          title: 'Total Users',
-          value: stats.totalUsers.toString(),
-          icon: Icons.people,
-          color: Colors.blue,
-          subtitle: '${stats.activeUsers} active',
-        ),
-        StatCard(
-          title: 'Total Bookings',
-          value: stats.totalBookings.toString(),
-          icon: Icons.calendar_today,
-          color: Colors.green,
-          subtitle: '${stats.completedBookings} completed',
-        ),
-        StatCard(
-          title: 'Total Revenue',
-          value: '\$${stats.totalRevenue.toStringAsFixed(2)}',
-          icon: Icons.attach_money,
-          color: Colors.orange,
-          subtitle: 'Ad: \$${stats.adRevenue.toStringAsFixed(2)}',
-        ),
-        StatCard(
-          title: 'Organizations',
-          value: stats.totalOrganizations.toString(),
-          icon: Icons.business,
-          color: Colors.purple,
-          subtitle: '${stats.activeOrganizations} active',
-        ),
-        StatCard(
-          title: 'Ambassadors',
-          value: stats.totalAmbassadors.toString(),
-          icon: Icons.star,
-          color: Colors.amber,
-          subtitle: '${stats.activeAmbassadors} active',
-        ),
-        StatCard(
-          title: 'Errors',
-          value: stats.totalErrors.toString(),
-          icon: Icons.error,
-          color: Colors.red,
-          subtitle: '${stats.criticalErrors} critical',
-        ),
-      ],
-    );
+        crossAxisCount: 2,
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
+        crossAxisSpacing: 16,
+        mainAxisSpacing: 16,
+        childAspectRatio: 1.5,
+        children: [
+          StatCard(
+            title: 'Total Users',
+            value: stats.totalUsers.toString(),
+            icon: Icons.people,
+            color: Colors.blue,
+            subtitle: '${stats.activeUsers} active',
+          ),
+          StatCard(
+            title: 'Total Bookings',
+            value: stats.totalBookings.toString(),
+            icon: Icons.calendar_today,
+            color: Colors.green,
+            subtitle: '${stats.completedBookings} completed',
+          ),
+          StatCard(
+            title: 'Total Revenue',
+            value: '\$${stats.totalRevenue.toStringAsFixed(2)}',
+            icon: Icons.attach_money,
+            color: Colors.orange,
+            subtitle: 'Ad: \$${stats.adRevenue.toStringAsFixed(2)}',
+          ),
+          StatCard(
+            title: 'Organizations',
+            value: stats.totalOrganizations.toString(),
+            icon: Icons.business,
+            color: Colors.purple,
+            subtitle: '${stats.activeOrganizations} active',
+          ),
+          StatCard(
+            title: 'Ambassadors',
+            value: stats.totalAmbassadors.toString(),
+            icon: Icons.star,
+            color: Colors.amber,
+            subtitle: '${stats.activeAmbassadors} active',
+          ),
+          StatCard(
+            title: 'Errors',
+            value: stats.totalErrors.toString(),
+            icon: Icons.error,
+            color: Colors.red,
+            subtitle: '${stats.criticalErrors} critical',
+          ),
+        ],
+      );
 
   Widget _buildQuickActions(BuildContext context) => Card(
-      elevation: 4,
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Text(
-              'Quick Actions',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
+        elevation: 4,
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                'Quick Actions',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-            const SizedBox(height: 16),
-            Wrap(
-              spacing: 12,
-              runSpacing: 12,
-              children: [
-                _buildActionButton(
-                  'Send Broadcast',
-                  Icons.broadcast_on_personal,
-                  Colors.blue,
-                  () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const AdminBroadcastScreen(),
+              const SizedBox(height: 16),
+              Wrap(
+                spacing: 12,
+                runSpacing: 12,
+                children: [
+                  _buildActionButton(
+                    'Send Broadcast',
+                    Icons.broadcast_on_personal,
+                    Colors.blue,
+                    () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const AdminBroadcastScreen(),
+                      ),
                     ),
                   ),
-                ),
-                _buildActionButton(
-                  'Manage Users',
-                  Icons.people,
-                  Colors.green,
-                  () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const AdminUsersScreen(),
+                  _buildActionButton(
+                    'Manage Users',
+                    Icons.people,
+                    Colors.green,
+                    () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const AdminUsersScreen(),
+                      ),
                     ),
                   ),
-                ),
-                _buildActionButton(
-                  'Organizations',
-                  Icons.business,
-                  Colors.purple,
-                  () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const AdminOrgsScreen(),
+                  _buildActionButton(
+                    'Organizations',
+                    Icons.business,
+                    Colors.purple,
+                    () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const AdminOrgsScreen(),
+                      ),
                     ),
                   ),
-                ),
-                _buildActionButton(
-                  'Export Data',
-                  Icons.download,
-                  Colors.orange,
-                  () => _showExportDialog(context),
-                ),
-              ],
-            ),
-          ],
+                  _buildActionButton(
+                    'Export Data',
+                    Icons.download,
+                    Colors.orange,
+                    () => _showExportDialog(context),
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 
-  Widget _buildActionButton(final String title, final IconData icon,
-      Color color, final VoidCallback onPressed,) => ElevatedButton.icon(
-      onPressed: onPressed,
-      icon: Icon(icon, color: Colors.white),
-      label: Text(title),
-      style: ElevatedButton.styleFrom(
-        backgroundColor: color,
-        foregroundColor: Colors.white,
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-      ),
-    );
+  Widget _buildActionButton(
+    final String title,
+    final IconData icon,
+    Color color,
+    final VoidCallback onPressed,
+  ) =>
+      ElevatedButton.icon(
+        onPressed: onPressed,
+        icon: Icon(icon, color: Colors.white),
+        label: Text(title),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: color,
+          foregroundColor: Colors.white,
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        ),
+      );
 
   void _showExportDialog(BuildContext context) {
     showDialog(

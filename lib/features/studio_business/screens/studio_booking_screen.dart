@@ -164,7 +164,8 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                         decoration: BoxDecoration(
                           color: Colors.red.withOpacity(0.1),
                           borderRadius: BorderRadius.circular(8),
-                          border: Border.all(color: Colors.red.withOpacity(0.3)),
+                          border:
+                              Border.all(color: Colors.red.withOpacity(0.3)),
                         ),
                         child: Text(
                           'Error: $error',
@@ -176,7 +177,9 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: _isProcessing || bookingState.isLoading ? null : _processBooking,
+                        onPressed: _isProcessing || bookingState.isLoading
+                            ? null
+                            : _processBooking,
                         child: _isProcessing || bookingState.isLoading
                             ? const CircularProgressIndicator()
                             : const Text('Send Booking Invite'),
@@ -294,21 +297,21 @@ class StudioBookingConfirmScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(title: const Text('Booking Confirmed')),
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(Icons.check_circle, color: Colors.green, size: 64),
-            SizedBox(height: 16),
-            Text(
-              'Your studio booking has been confirmed!',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 8),
-            Text('You will receive a confirmation email shortly.'),
-          ],
+        appBar: AppBar(title: const Text('Booking Confirmed')),
+        body: const Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.check_circle, color: Colors.green, size: 64),
+              SizedBox(height: 16),
+              Text(
+                'Your studio booking has been confirmed!',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(height: 8),
+              Text('You will receive a confirmation email shortly.'),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 }

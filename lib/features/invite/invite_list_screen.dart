@@ -37,8 +37,7 @@ class InviteListScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (_, final __) =>
-            Center(child: Text(l10n.errorLoadingInvites)),
+        error: (_, final __) => Center(child: Text(l10n.errorLoadingInvites)),
       ),
     );
   }

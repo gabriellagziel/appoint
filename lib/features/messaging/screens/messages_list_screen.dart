@@ -39,7 +39,7 @@ class MessagesListScreen extends ConsumerWidget {
             children: [
               Icon(Icons.error_outline, size: 64, color: Colors.red[300]),
               const SizedBox(height: 16),
-              Text('Failed to load messages'),
+              const Text('Failed to load messages'),
               const SizedBox(height: 8),
               Text(error.toString()),
               const SizedBox(height: 16),
@@ -59,7 +59,8 @@ class MessagesListScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildChatsList(BuildContext context, WidgetRef ref, List<Chat> chats, AppLocalizations l10n) {
+  Widget _buildChatsList(BuildContext context, WidgetRef ref, List<Chat> chats,
+      AppLocalizations l10n) {
     if (chats.isEmpty) {
       return Center(
         child: Column(
@@ -70,13 +71,15 @@ class MessagesListScreen extends ConsumerWidget {
             Text(
               'No messages yet',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                color: Colors.grey[600]),
+                    color: Colors.grey[600],
+                  ),
             ),
             const SizedBox(height: 8),
             Text(
               'Start a conversation!',
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Colors.grey[500]),
+                    color: Colors.grey[500],
+                  ),
             ),
             const SizedBox(height: 24),
             ElevatedButton.icon(
@@ -100,12 +103,15 @@ class MessagesListScreen extends ConsumerWidget {
 
   Widget _buildChatTile(BuildContext context, WidgetRef ref, Chat chat) {
     final isUnread = chat.lastMessage != null && !chat.lastMessage!.isRead;
-    
+
     return ListTile(
       leading: CircleAvatar(
-        backgroundImage: chat.avatar != null ? NetworkImage(chat.avatar!) : null,
+        backgroundImage:
+            chat.avatar != null ? NetworkImage(chat.avatar!) : null,
         backgroundColor: chat.avatar == null ? Colors.grey[300] : null,
-        child: chat.avatar == null ? Icon(Icons.person, color: Colors.grey[600]) : null,
+        child: chat.avatar == null
+            ? Icon(Icons.person, color: Colors.grey[600])
+            : null,
       ),
       title: Row(
         children: [
@@ -113,7 +119,8 @@ class MessagesListScreen extends ConsumerWidget {
             child: Text(
               chat.name ?? 'Chat',
               style: TextStyle(
-                fontWeight: isUnread ? FontWeight.bold : FontWeight.normal),
+                fontWeight: isUnread ? FontWeight.bold : FontWeight.normal,
+              ),
             ),
           ),
           if (chat.isMuted)
@@ -305,4 +312,4 @@ class MessagesListScreen extends ConsumerWidget {
       ),
     );
   }
-} 
+}

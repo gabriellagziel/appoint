@@ -1,5 +1,4 @@
 class PromoCode {
-
   PromoCode({
     required this.id,
     required this.code,
@@ -18,26 +17,26 @@ class PromoCode {
   });
 
   factory PromoCode.fromJson(Map<String, dynamic> json) => PromoCode(
-      id: json['id'] as String,
-      code: json['code'] as String,
-      description: json['description'] as String,
-      type: PromoCodeType.values.firstWhere(
-        (e) => e.name == json['type'],
-        orElse: () => PromoCodeType.freeTrial,
-      ),
-      value: (json['value'] as num).toDouble(),
-      validFrom: DateTime.parse(json['validFrom'] as String),
-      validUntil: DateTime.parse(json['validUntil'] as String),
-      maxUses: json['maxUses'] as int,
-      currentUses: json['currentUses'] as int,
-      isActive: json['isActive'] as bool,
-      createdAt: DateTime.parse(json['createdAt'] as String),
-      updatedAt: DateTime.parse(json['updatedAt'] as String),
-      applicablePlans: json['applicablePlans'] != null
-          ? List<String>.from(json['applicablePlans'] as List)
-          : null,
-      minimumSubscriptionMonths: json['minimumSubscriptionMonths'] as int?,
-    );
+        id: json['id'] as String,
+        code: json['code'] as String,
+        description: json['description'] as String,
+        type: PromoCodeType.values.firstWhere(
+          (e) => e.name == json['type'],
+          orElse: () => PromoCodeType.freeTrial,
+        ),
+        value: (json['value'] as num).toDouble(),
+        validFrom: DateTime.parse(json['validFrom'] as String),
+        validUntil: DateTime.parse(json['validUntil'] as String),
+        maxUses: json['maxUses'] as int,
+        currentUses: json['currentUses'] as int,
+        isActive: json['isActive'] as bool,
+        createdAt: DateTime.parse(json['createdAt'] as String),
+        updatedAt: DateTime.parse(json['updatedAt'] as String),
+        applicablePlans: json['applicablePlans'] != null
+            ? List<String>.from(json['applicablePlans'] as List)
+            : null,
+        minimumSubscriptionMonths: json['minimumSubscriptionMonths'] as int?,
+      );
   final String id;
   final String code;
   final String description;
@@ -54,21 +53,21 @@ class PromoCode {
   final int? minimumSubscriptionMonths;
 
   Map<String, dynamic> toJson() => {
-      'id': id,
-      'code': code,
-      'description': description,
-      'type': type.name,
-      'value': value,
-      'validFrom': validFrom.toIso8601String(),
-      'validUntil': validUntil.toIso8601String(),
-      'maxUses': maxUses,
-      'currentUses': currentUses,
-      'isActive': isActive,
-      'createdAt': createdAt.toIso8601String(),
-      'updatedAt': updatedAt.toIso8601String(),
-      'applicablePlans': applicablePlans,
-      'minimumSubscriptionMonths': minimumSubscriptionMonths,
-    };
+        'id': id,
+        'code': code,
+        'description': description,
+        'type': type.name,
+        'value': value,
+        'validFrom': validFrom.toIso8601String(),
+        'validUntil': validUntil.toIso8601String(),
+        'maxUses': maxUses,
+        'currentUses': currentUses,
+        'isActive': isActive,
+        'createdAt': createdAt.toIso8601String(),
+        'updatedAt': updatedAt.toIso8601String(),
+        'applicablePlans': applicablePlans,
+        'minimumSubscriptionMonths': minimumSubscriptionMonths,
+      };
 }
 
 enum PromoCodeType {

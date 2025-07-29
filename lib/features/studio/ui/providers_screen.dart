@@ -6,8 +6,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 class ProvidersScreen extends ConsumerWidget {
   const ProvidersScreen({super.key});
 
-  Future<void> _openEditor(final BuildContext context, final WidgetRef ref,
-      {CareProvider? provider,}) async {
+  Future<void> _openEditor(
+    final BuildContext context,
+    final WidgetRef ref, {
+    CareProvider? provider,
+  }) async {
     final nameController = TextEditingController(text: provider?.name ?? '');
     final specialtyController =
         TextEditingController(text: provider?.specialty ?? '');
@@ -17,48 +20,48 @@ class ProvidersScreen extends ConsumerWidget {
     await showDialog(
       context: context,
       builder: (context) => AlertDialog(
-          title: Text(provider == null ? 'Add Provider' : 'Edit Provider'),
-          content: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              TextField(
-                controller: nameController,
-                decoration: const InputDecoration(labelText: 'Name'),
-              ),
-              TextField(
-                controller: specialtyController,
-                decoration: const InputDecoration(labelText: 'Specialty'),
-              ),
-              TextField(
-                controller: contactController,
-                decoration: const InputDecoration(labelText: 'Contact Info'),
-              ),
-            ],
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: const Text('Cancel'),
+        title: Text(provider == null ? 'Add Provider' : 'Edit Provider'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            TextField(
+              controller: nameController,
+              decoration: const InputDecoration(labelText: 'Name'),
             ),
-            ElevatedButton(
-              onPressed: () {
-                final newProv = CareProvider(
-                  id: provider?.id ?? '',
-                  name: nameController.text,
-                  specialty: specialtyController.text,
-                  contactInfo: contactController.text,
-                );
-                if (provider == null) {
-                  ref.read(careProvidersProvider.notifier).add(newProv);
-                } else {
-                  ref.read(careProvidersProvider.notifier).update(newProv);
-                }
-                Navigator.pop(context);
-              },
-              child: const Text('Save'),
+            TextField(
+              controller: specialtyController,
+              decoration: const InputDecoration(labelText: 'Specialty'),
+            ),
+            TextField(
+              controller: contactController,
+              decoration: const InputDecoration(labelText: 'Contact Info'),
             ),
           ],
         ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              final newProv = CareProvider(
+                id: provider?.id ?? '',
+                name: nameController.text,
+                specialty: specialtyController.text,
+                contactInfo: contactController.text,
+              );
+              if (provider == null) {
+                ref.read(careProvidersProvider.notifier).add(newProv);
+              } else {
+                ref.read(careProvidersProvider.notifier).update(newProv);
+              }
+              Navigator.pop(context);
+            },
+            child: const Text('Save'),
+          ),
+        ],
+      ),
     );
   }
 

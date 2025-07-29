@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:appoint/widgets/app_logo.dart';
 import 'package:appoint/constants/app_branding.dart';
+import 'package:appoint/widgets/app_logo.dart';
+import 'package:flutter/material.dart';
 
 /// APP-OINT Splash Screen
 /// Displays the official APP-OINT logo and slogan during app initialization
@@ -26,20 +26,24 @@ class _SplashScreenState extends State<SplashScreen>
     );
 
     _fadeAnimation = Tween<double>(
-      begin: 0.0,
-      end: 1.0,
-    ).animate(CurvedAnimation(
-      parent: _animationController,
-      curve: const Interval(0.0, 0.8, curve: Curves.easeIn),
-    ));
+      begin: 0,
+      end: 1,
+    ).animate(
+      CurvedAnimation(
+        parent: _animationController,
+        curve: const Interval(0, 0.8, curve: Curves.easeIn),
+      ),
+    );
 
     _scaleAnimation = Tween<double>(
       begin: 0.8,
-      end: 1.0,
-    ).animate(CurvedAnimation(
-      parent: _animationController,
-      curve: const Interval(0.2, 0.8, curve: Curves.elasticOut),
-    ));
+      end: 1,
+    ).animate(
+      CurvedAnimation(
+        parent: _animationController,
+        curve: const Interval(0.2, 0.8, curve: Curves.elasticOut),
+      ),
+    );
 
     _animationController.forward();
   }
@@ -51,14 +55,12 @@ class _SplashScreenState extends State<SplashScreen>
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
-      body: Center(
-        child: AnimatedBuilder(
-          animation: _animationController,
-          builder: (context, child) {
-            return FadeTransition(
+  Widget build(BuildContext context) => Scaffold(
+        backgroundColor: Theme.of(context).primaryColor,
+        body: Center(
+          child: AnimatedBuilder(
+            animation: _animationController,
+            builder: (context, child) => FadeTransition(
               opacity: _fadeAnimation,
               child: ScaleTransition(
                 scale: _scaleAnimation,
@@ -82,19 +84,19 @@ class _SplashScreenState extends State<SplashScreen>
                       child: const AppLogo(size: 120, showText: false),
                     ),
                     const SizedBox(height: 40),
-                    
+
                     // APP-OINT Text
-                    Text(
+                    const Text(
                       'APP-OINT',
                       style: TextStyle(
                         fontSize: 36,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
-                        letterSpacing: 2.0,
+                        letterSpacing: 2,
                       ),
                     ),
                     const SizedBox(height: 16),
-                    
+
                     // Slogan
                     Text(
                       AppBranding.slogan,
@@ -113,7 +115,7 @@ class _SplashScreenState extends State<SplashScreen>
                       ),
                     ),
                     const SizedBox(height: 60),
-                    
+
                     // Loading indicator
                     SizedBox(
                       width: 40,
@@ -128,10 +130,8 @@ class _SplashScreenState extends State<SplashScreen>
                   ],
                 ),
               ),
-            );
-          },
+            ),
+          ),
         ),
-      ),
-    );
-  }
+      );
 }

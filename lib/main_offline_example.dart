@@ -28,7 +28,6 @@ Future<void> initializeOfflineBookingSystem() async {
 
 // Example usage in a widget or service:
 class BookingService {
-
   BookingService(this._repository);
   final OfflineBookingRepository _repository;
 

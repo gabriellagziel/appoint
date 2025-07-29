@@ -16,14 +16,22 @@ void main() {
     final customTextTheme = AppTypography.textTheme;
 
     // Check that the theme includes our custom typography properties
-    expect(themeTextTheme.headlineLarge?.fontSize,
-        customTextTheme.headlineLarge?.fontSize,);
-    expect(themeTextTheme.headlineMedium?.fontSize,
-        customTextTheme.headlineMedium?.fontSize,);
-    expect(themeTextTheme.bodyMedium?.fontSize,
-        customTextTheme.bodyMedium?.fontSize,);
-    expect(themeTextTheme.bodySmall?.fontSize,
-        customTextTheme.bodySmall?.fontSize,);
+    expect(
+      themeTextTheme.headlineLarge?.fontSize,
+      customTextTheme.headlineLarge?.fontSize,
+    );
+    expect(
+      themeTextTheme.headlineMedium?.fontSize,
+      customTextTheme.headlineMedium?.fontSize,
+    );
+    expect(
+      themeTextTheme.bodyMedium?.fontSize,
+      customTextTheme.bodyMedium?.fontSize,
+    );
+    expect(
+      themeTextTheme.bodySmall?.fontSize,
+      customTextTheme.bodySmall?.fontSize,
+    );
     expect(themeTextTheme.bodySmall?.color, customTextTheme.bodySmall?.color);
   });
 }

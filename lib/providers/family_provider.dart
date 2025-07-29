@@ -5,11 +5,11 @@ import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/services/family_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-Provider<FamilyService> familyServiceProvider = Provider((final _) => FamilyService());
+Provider<FamilyService> familyServiceProvider =
+    Provider((final _) => FamilyService());
 
 /// Represents the loading state for family links
 class FamilyLinksState {
-
   FamilyLinksState({
     this.isLoading = false,
     this.pendingInvites = const [],
@@ -26,17 +26,17 @@ class FamilyLinksState {
     final List<FamilyLink>? pendingInvites,
     final List<FamilyLink>? connectedChildren,
     final String? error,
-  }) => FamilyLinksState(
-      isLoading: isLoading ?? this.isLoading,
-      pendingInvites: pendingInvites ?? this.pendingInvites,
-      connectedChildren: connectedChildren ?? this.connectedChildren,
-      error: error,
-    );
+  }) =>
+      FamilyLinksState(
+        isLoading: isLoading ?? this.isLoading,
+        pendingInvites: pendingInvites ?? this.pendingInvites,
+        connectedChildren: connectedChildren ?? this.connectedChildren,
+        error: error,
+      );
 }
 
 /// StateNotifier for managing family links (invites and children)
 class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
-
   FamilyLinksNotifier(this._familyService, this.parentId)
       : super(FamilyLinksState()) {
     loadLinks();
@@ -51,10 +51,8 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
       final links = await _familyService.fetchFamilyLinks(parentId);
       state = state.copyWith(
         isLoading: false,
-        pendingInvites:
-            links.where((l) => l.status == 'pending').toList(),
-        connectedChildren:
-            links.where((l) => l.status == 'active').toList(),
+        pendingInvites: links.where((l) => l.status == 'pending').toList(),
+        connectedChildren: links.where((l) => l.status == 'active').toList(),
       );
     } catch (e) {
       state = state.copyWith(
@@ -86,7 +84,8 @@ class FamilyLinksNotifier extends StateNotifier<FamilyLinksState> {
 }
 
 /// Provider for FamilyLinksNotifier, requires parentId from auth
-final StateNotifierProviderFamily<FamilyLinksNotifier, FamilyLinksState, String> familyLinksProvider =
+final StateNotifierProviderFamily<FamilyLinksNotifier, FamilyLinksState, String>
+    familyLinksProvider =
     StateNotifierProvider.family<FamilyLinksNotifier, FamilyLinksState, String>(
   (ref, final String parentId) => FamilyLinksNotifier(
     ref.read(familyServiceProvider),
@@ -94,8 +93,9 @@ final StateNotifierProviderFamily<FamilyLinksNotifier, FamilyLinksState, String>
   ),
 );
 
-final AutoDisposeFutureProviderFamily<List<Permission>, String> permissionsProvider = FutureProvider.family
-    .autoDispose<List<Permission>, String>((ref, final linkId) {
+final AutoDisposeFutureProviderFamily<List<Permission>, String>
+    permissionsProvider = FutureProvider.family
+        .autoDispose<List<Permission>, String>((ref, final linkId) {
   final svc = ref.watch(familyServiceProvider);
   return svc.fetchPermissions(linkId);
 });

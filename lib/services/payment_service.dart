@@ -5,7 +5,6 @@ import 'package:flutter_stripe/flutter_stripe.dart';
 enum PaymentStatus { initial, processing, requiresAction, succeeded, failed }
 
 class PaymentService {
-
   PaymentService([FirebaseFunctions? functions])
       : _functions = functions ?? FirebaseFunctions.instance;
   final FirebaseFunctions _functions;
@@ -53,7 +52,8 @@ class PaymentService {
       final paymentResult = await Stripe.instance.confirmPayment(
         paymentIntentClientSecret: clientSecret,
         data: const PaymentMethodParams.card(
-            paymentMethodData: PaymentMethodData(),),
+          paymentMethodData: PaymentMethodData(),
+        ),
       );
       switch (paymentResult.status) {
         case PaymentIntentsStatus.Succeeded:

@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:appoint/utils/admin_localizations.dart';
+import 'package:flutter/material.dart';
 
 /// A utility class that automatically wraps admin routes with English-only localization
 class AdminRouteWrapper {
@@ -35,12 +35,11 @@ class AdminRouteWrapper {
     RouteSettings? settings,
   }) {
     final isAdmin = AdminLocalizations.isAdminRouteByName(routeName);
-    
+
     return MaterialPageRoute<T>(
       settings: settings ?? RouteSettings(name: routeName),
-      builder: (context) => isAdmin 
-          ? AdminLocalizations.enforceEnglish(child: child)
-          : child,
+      builder: (context) =>
+          isAdmin ? AdminLocalizations.enforceEnglish(child: child) : child,
     );
   }
 
@@ -57,10 +56,11 @@ class AdminRouteWrapper {
   /// Checks if a route is an admin route using multiple patterns
   static bool isAdminRoute(String? routeName) {
     if (routeName == null) return false;
-    
-    return adminRoutePatterns.any((pattern) => 
-      routeName.contains(pattern) || 
-      routeName.toLowerCase().contains(pattern.toLowerCase())
+
+    return adminRoutePatterns.any(
+      (pattern) =>
+          routeName.contains(pattern) ||
+          routeName.toLowerCase().contains(pattern.toLowerCase()),
     );
   }
 }

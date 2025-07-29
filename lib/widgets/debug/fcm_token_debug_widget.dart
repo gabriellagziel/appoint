@@ -1,6 +1,6 @@
+import 'package:appoint/providers/fcm_token_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/fcm_token_provider.dart';
 
 /// Debug widget to display FCM token status
 /// Only use this in development builds
@@ -62,7 +62,8 @@ class FCMTokenDebugWidget extends ConsumerWidget {
               const SizedBox(height: 8),
               const Text(
                 'Error:',
-                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
+                style:
+                    TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
               ),
               const SizedBox(height: 4),
               Container(
@@ -107,30 +108,28 @@ class FCMTokenDebugWidget extends ConsumerWidget {
     );
   }
 
-  Widget _buildStatusRow(String label, bool value) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 2),
-      child: Row(
-        children: [
-          Icon(
-            value ? Icons.check_circle : Icons.cancel,
-            color: value ? Colors.green : Colors.red,
-            size: 16,
-          ),
-          const SizedBox(width: 8),
-          Text(label),
-          const Spacer(),
-          Text(
-            value ? 'Yes' : 'No',
-            style: TextStyle(
+  Widget _buildStatusRow(String label, bool value) => Padding(
+        padding: const EdgeInsets.symmetric(vertical: 2),
+        child: Row(
+          children: [
+            Icon(
+              value ? Icons.check_circle : Icons.cancel,
               color: value ? Colors.green : Colors.red,
-              fontWeight: FontWeight.bold,
+              size: 16,
             ),
-          ),
-        ],
-      ),
-    );
-  }
+            const SizedBox(width: 8),
+            Text(label),
+            const Spacer(),
+            Text(
+              value ? 'Yes' : 'No',
+              style: TextStyle(
+                color: value ? Colors.green : Colors.red,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      );
 
   void _copyTokenToClipboard(BuildContext context, String? token) {
     if (token != null) {
@@ -151,4 +150,4 @@ class FCMTokenDebugWidget extends ConsumerWidget {
       );
     }
   }
-} 
+}

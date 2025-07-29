@@ -6,9 +6,9 @@ class BusinessProfileEntryScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) => Scaffold(
-      appBar: AppBar(title: const Text('Profile')),
-      body: const Center(
-        child: Text('Business Profile Entry Screen - Coming Soon'),
-      ),
-    );
+        appBar: AppBar(title: const Text('Profile')),
+        body: const Center(
+          child: Text('Business Profile Entry Screen - Coming Soon'),
+        ),
+      );
 }

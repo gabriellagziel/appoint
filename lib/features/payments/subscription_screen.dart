@@ -1,14 +1,16 @@
 import 'package:appoint/services/stripe_service.dart';
-import 'package:appoint/widgets/app_logo.dart';
 import 'package:appoint/widgets/app_attribution.dart';
+import 'package:appoint/widgets/app_logo.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class SubscriptionScreen extends StatefulWidget {
-
   const SubscriptionScreen({
-    required this.priceId, required this.planName, required this.price, super.key,
+    required this.priceId,
+    required this.planName,
+    required this.price,
+    super.key,
   });
   final String priceId;
   final String planName;
@@ -23,7 +25,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
   bool _isLoading = true;
   bool _hasError = false;
   String _errorMessage = '';
-  StripeService _stripeService = StripeService();
+  final StripeService _stripeService = StripeService();
 
   @override
   void initState() {
@@ -37,8 +39,8 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
       if (user == null) {
         setState(() {
           _hasError = true;
-          final _errorMessage = 'User not authenticated';
-          var _isLoading = false;
+          const errorMessage = 'User not authenticated';
+          const isLoading = false;
         });
         return;
       }
@@ -59,7 +61,7 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
       }
 
       // Initialize WebView
-      final _webViewController = WebViewController()
+      final webViewController = WebViewController()
         ..setJavaScriptMode(JavaScriptMode.unrestricted)
         ..setNavigationDelegate(
           NavigationDelegate(
@@ -136,93 +138,93 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(
-        title: Row(
+        appBar: AppBar(
+          title: Row(
+            children: [
+              const AppLogo(size: 24, logoOnly: true),
+              const SizedBox(width: 8),
+              Text('Subscribe to ${widget.planName}'),
+            ],
+          ),
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.black,
+          elevation: 0,
+        ),
+        body: Column(
           children: [
-            const AppLogo(size: 24, logoOnly: true),
-            const SizedBox(width: 8),
-            Text('Subscribe to ${widget.planName}'),
+            Expanded(
+              child: _hasError
+                  ? _buildErrorWidget()
+                  : Stack(
+                      children: [
+                        WebViewWidget(controller: _webViewController),
+                        if (_isLoading) _buildLoadingWidget(),
+                      ],
+                    ),
+            ),
+            // Attribution - Required for all payment screens
+            const AppAttributionFooter(),
           ],
         ),
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.black,
-        elevation: 0,
-      ),
-      body: Column(
-        children: [
-          Expanded(
-            child: _hasError
-                ? _buildErrorWidget()
-                : Stack(
-                    children: [
-                      WebViewWidget(controller: _webViewController),
-                      if (_isLoading) _buildLoadingWidget(),
-                    ],
-                  ),
-          ),
-          // Attribution - Required for all payment screens
-          const AppAttributionFooter(),
-        ],
-      ),
-    );
+      );
 
   Widget _buildErrorWidget() => Center(
-      child: Padding(
-        padding: const EdgeInsets.all(24),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Icon(
-              Icons.error_outline,
-              size: 64,
-              color: Colors.red,
-            ),
-            const SizedBox(height: 16),
-            Text(
-              'Checkout Error',
-              style: Theme.of(context).textTheme.headlineSmall,
-            ),
-            const SizedBox(height: 8),
-            Text(
-              _errorMessage,
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
-            const SizedBox(height: 24),
-            ElevatedButton(
-              onPressed: () {
-                setState(() {
-                  _hasError = false;
-                  _errorMessage = '';
-                  _isLoading = true;
-                });
-                _initializeCheckout();
-              },
-              child: const Text('Try Again'),
-            ),
-            const SizedBox(height: 16),
-            TextButton(
-              onPressed: () => Navigator.of(context).pop(false),
-              child: const Text('Cancel'),
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(
+                Icons.error_outline,
+                size: 64,
+                color: Colors.red,
+              ),
+              const SizedBox(height: 16),
+              Text(
+                'Checkout Error',
+                style: Theme.of(context).textTheme.headlineSmall,
+              ),
+              const SizedBox(height: 8),
+              Text(
+                _errorMessage,
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
+              const SizedBox(height: 24),
+              ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    _hasError = false;
+                    _errorMessage = '';
+                    _isLoading = true;
+                  });
+                  _initializeCheckout();
+                },
+                child: const Text('Try Again'),
+              ),
+              const SizedBox(height: 16),
+              TextButton(
+                onPressed: () => Navigator.of(context).pop(false),
+                child: const Text('Cancel'),
+              ),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 
   Widget _buildLoadingWidget() => const ColoredBox(
-      color: Colors.white,
-      child: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            CircularProgressIndicator(),
-            SizedBox(height: 16),
-            Text('Loading checkout...'),
-          ],
+        color: Colors.white,
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CircularProgressIndicator(),
+              SizedBox(height: 16),
+              Text('Loading checkout...'),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 }
 
 // Subscription Plan Selection Screen
@@ -231,80 +233,80 @@ class SubscriptionPlansScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(
-        title: Row(
-          children: [
-            const AppLogo(size: 24, logoOnly: true),
-            const SizedBox(width: 8),
-            const Text('Choose Your Plan'),
-          ],
+        appBar: AppBar(
+          title: const Row(
+            children: [
+              AppLogo(size: 24, logoOnly: true),
+              SizedBox(width: 8),
+              Text('Choose Your Plan'),
+            ],
+          ),
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.black,
+          elevation: 0,
         ),
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.black,
-        elevation: 0,
-      ),
-      body: Column(
-        children: [
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  const Text(
-                    'Select a subscription plan to unlock premium features',
-                    style: TextStyle(fontSize: 16),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 24),
-            _buildPlanCard(
-              context,
-              'Basic',
-              r'$9.99/month',
-              'price_basic_monthly',
-              [
-                'Up to 50 bookings/month',
-                'Basic analytics',
-                'Email support',
-              ],
-            ),
-            const SizedBox(height: 16),
-            _buildPlanCard(
-              context,
-              'Professional',
-              r'$19.99/month',
-              'price_professional_monthly',
-              [
-                'Up to 200 bookings/month',
-                'Advanced analytics',
-                'Priority support',
-                'Custom branding',
-              ],
-              isRecommended: true,
-            ),
-            const SizedBox(height: 16),
-            _buildPlanCard(
-              context,
-              'Enterprise',
-              r'$49.99/month',
-              'price_enterprise_monthly',
-              [
-                'Unlimited bookings',
-                'Full analytics suite',
-                '24/7 support',
-                'Custom integrations',
-                'White-label solution',
-              ],
-            ),
-                ],
+        body: Column(
+          children: [
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    const Text(
+                      'Select a subscription plan to unlock premium features',
+                      style: TextStyle(fontSize: 16),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 24),
+                    _buildPlanCard(
+                      context,
+                      'Basic',
+                      r'$9.99/month',
+                      'price_basic_monthly',
+                      [
+                        'Up to 50 bookings/month',
+                        'Basic analytics',
+                        'Email support',
+                      ],
+                    ),
+                    const SizedBox(height: 16),
+                    _buildPlanCard(
+                      context,
+                      'Professional',
+                      r'$19.99/month',
+                      'price_professional_monthly',
+                      [
+                        'Up to 200 bookings/month',
+                        'Advanced analytics',
+                        'Priority support',
+                        'Custom branding',
+                      ],
+                      isRecommended: true,
+                    ),
+                    const SizedBox(height: 16),
+                    _buildPlanCard(
+                      context,
+                      'Enterprise',
+                      r'$49.99/month',
+                      'price_enterprise_monthly',
+                      [
+                        'Unlimited bookings',
+                        'Full analytics suite',
+                        '24/7 support',
+                        'Custom integrations',
+                        'White-label solution',
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-          // Attribution - Required for all subscription screens  
-          const AppAttributionFooter(),
-        ],
-      ),
-    );
+            // Attribution - Required for all subscription screens
+            const AppAttributionFooter(),
+          ],
+        ),
+      );
 
   Widget _buildPlanCard(
     final BuildContext context,
@@ -313,58 +315,60 @@ class SubscriptionPlansScreen extends StatelessWidget {
     final String priceId,
     final List<String> features, {
     final bool isRecommended = false,
-  }) => Card(
-      elevation: isRecommended ? 4 : 2,
-      child: Container(
-        decoration: isRecommended
-            ? BoxDecoration(
-                border: Border.all(color: Colors.blue, width: 2),
-                borderRadius: BorderRadius.circular(8),
-              )
-            : null,
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    name,
-                    style: Theme.of(context).textTheme.headlineSmall,
-                  ),
-                  if (isRecommended)
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 8,
-                        vertical: 4,
-                      ),
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: const Text(
-                        'RECOMMENDED',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold,
+  }) =>
+      Card(
+        elevation: isRecommended ? 4 : 2,
+        child: Container(
+          decoration: isRecommended
+              ? BoxDecoration(
+                  border: Border.all(color: Colors.blue, width: 2),
+                  borderRadius: BorderRadius.circular(8),
+                )
+              : null,
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      name,
+                      style: Theme.of(context).textTheme.headlineSmall,
+                    ),
+                    if (isRecommended)
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 8,
+                          vertical: 4,
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: const Text(
+                          'RECOMMENDED',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
-                    ),
-                ],
-              ),
-              const SizedBox(height: 8),
-              Text(
-                price,
-                style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                      color: Colors.blue,
-                      fontWeight: FontWeight.bold,
-                    ),
-              ),
-              const SizedBox(height: 16),
-              ...features.map((feature) => Padding(
+                  ],
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  price,
+                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                        color: Colors.blue,
+                        fontWeight: FontWeight.bold,
+                      ),
+                ),
+                const SizedBox(height: 16),
+                ...features.map(
+                  (feature) => Padding(
                     padding: const EdgeInsets.symmetric(vertical: 4),
                     child: Row(
                       children: [
@@ -373,34 +377,36 @@ class SubscriptionPlansScreen extends StatelessWidget {
                         Expanded(child: Text(feature)),
                       ],
                     ),
-                  ),),
-              const SizedBox(height: 16),
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => SubscriptionScreen(
-                          priceId: priceId,
-                          planName: name,
-                          price: double.parse(
-                              price.replaceAll(RegExp(r'[^\d.]'), ''),),
-                        ),
-                      ),
-                    );
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: isRecommended ? Colors.blue : null,
-                    foregroundColor: isRecommended ? Colors.white : null,
-                    padding: const EdgeInsets.symmetric(vertical: 12),
                   ),
-                  child: const Text('Subscribe'),
                 ),
-              ),
-            ],
+                const SizedBox(height: 16),
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => SubscriptionScreen(
+                            priceId: priceId,
+                            planName: name,
+                            price: double.parse(
+                              price.replaceAll(RegExp(r'[^\d.]'), ''),
+                            ),
+                          ),
+                        ),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: isRecommended ? Colors.blue : null,
+                      foregroundColor: isRecommended ? Colors.white : null,
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                    ),
+                    child: const Text('Subscribe'),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
-      ),
-    );
+      );
 }

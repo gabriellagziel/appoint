@@ -4,7 +4,6 @@ part 'analytics.g.dart';
 
 @JsonSerializable()
 class Analytics {
-
   Analytics({
     required this.totalUsers,
     required this.totalOrgs,

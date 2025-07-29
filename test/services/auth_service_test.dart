@@ -284,8 +284,7 @@ void main() {
         when(mockFirestore.collection('users')).thenReturn(
           MockCollectionReferenceGenerated(),
         );
-        when(mockFirestore.collection('users').doc(uid))
-            .thenReturn(mockDocRef);
+        when(mockFirestore.collection('users').doc(uid)).thenReturn(mockDocRef);
         when(mockDocRef.delete()).thenAnswer((_) async => null);
 
         // Act
@@ -301,7 +300,8 @@ void main() {
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.delete()).thenThrow(FirebaseAuthException(
           code: 'requires-recent-login',
-          message: 'This operation is sensitive and requires recent authentication.',
+          message:
+              'This operation is sensitive and requires recent authentication.',
         ));
 
         // Act & Assert

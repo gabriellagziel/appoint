@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 /// Basic wrapper around [Scaffold] used across the app.
 class AppScaffold extends StatelessWidget {
   const AppScaffold({
-    required this.body, super.key,
+    required this.body,
+    super.key,
     this.title,
     this.actions,
     this.floatingActionButton,
@@ -39,7 +40,9 @@ class AppScaffold extends StatelessWidget {
           ? null
           : (title != null || actions != null
               ? AppBar(
-                  title: title != null ? Text(title!) : null, actions: actions,)
+                  title: title != null ? Text(title!) : null,
+                  actions: actions,
+                )
               : null),
       body: Padding(
         padding: const EdgeInsets.all(AppSpacing.md),

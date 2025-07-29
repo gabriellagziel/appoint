@@ -15,29 +15,30 @@ class CalendarViewScreen extends ConsumerWidget {
       appBar: AppBar(title: const Text('Calendar')),
       body: googleAsync.when(
         data: (gEvents) => outlookAsync.when(
-            data: (oEvents) {
-              final events = [...gEvents, ...oEvents];
-              events.sort(
-                  (a, final b) => a.startTime.compareTo(b.startTime),);
-              if (events.isEmpty) {
-                return const Center(child: Text('No events'));
-              }
-              return ListView.builder(
-                itemCount: events.length,
-                itemBuilder: (context, final index) {
-                  final event = events[index];
-                  return ListTile(
-                    title: Text(event.title),
-                    subtitle: Text('${event.startTime} - ${event.endTime}'),
-                    trailing: Text(event.location ?? ''),
-                  );
-                },
-              );
-            },
-            loading: () => const Center(child: CircularProgressIndicator()),
-            error: (_, final __) =>
-                const Center(child: Text('Error loading events')),
-          ),
+          data: (oEvents) {
+            final events = [...gEvents, ...oEvents];
+            events.sort(
+              (a, final b) => a.startTime.compareTo(b.startTime),
+            );
+            if (events.isEmpty) {
+              return const Center(child: Text('No events'));
+            }
+            return ListView.builder(
+              itemCount: events.length,
+              itemBuilder: (context, final index) {
+                final event = events[index];
+                return ListTile(
+                  title: Text(event.title),
+                  subtitle: Text('${event.startTime} - ${event.endTime}'),
+                  trailing: Text(event.location ?? ''),
+                );
+              },
+            );
+          },
+          loading: () => const Center(child: CircularProgressIndicator()),
+          error: (_, final __) =>
+              const Center(child: Text('Error loading events')),
+        ),
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (_, final __) =>
             const Center(child: Text('Error loading events')),

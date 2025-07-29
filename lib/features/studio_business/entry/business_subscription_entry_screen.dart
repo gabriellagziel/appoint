@@ -6,9 +6,9 @@ class BusinessSubscriptionEntryScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) => Scaffold(
-      appBar: AppBar(title: const Text('Subscription')),
-      body: const Center(
-        child: Text('Business Subscription Entry Screen - Coming Soon'),
-      ),
-    );
+        appBar: AppBar(title: const Text('Subscription')),
+        body: const Center(
+          child: Text('Business Subscription Entry Screen - Coming Soon'),
+        ),
+      );
 }

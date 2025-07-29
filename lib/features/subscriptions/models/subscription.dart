@@ -186,8 +186,10 @@ class UsageStats {
 
   Map<String, dynamic> toJson() => _$UsageStatsToJson(this);
 
-  double get bookingsUsagePercentage => (bookingsThisMonth / bookingsLimit) * 100;
-  double get messagesUsagePercentage => (messagesThisMonth / messagesLimit) * 100;
+  double get bookingsUsagePercentage =>
+      (bookingsThisMonth / bookingsLimit) * 100;
+  double get messagesUsagePercentage =>
+      (messagesThisMonth / messagesLimit) * 100;
   double get storageUsagePercentage => (storageUsed / storageLimit) * 100;
 }
 
@@ -233,4 +235,4 @@ enum PaymentMethodType {
   bankAccount,
   @JsonValue('paypal')
   paypal,
-} 
+}

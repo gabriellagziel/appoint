@@ -20,7 +20,8 @@ class ThemeState {
 class ThemeNotifier extends StateNotifier<ThemeState> {
   ThemeNotifier()
       : super(
-            const ThemeState(palette: AppPalette.blue, mode: ThemeMode.system),);
+          const ThemeState(palette: AppPalette.blue, mode: ThemeMode.system),
+        );
 
   void setPalette(AppPalette palette) {
     final state = state.copyWith(palette: palette);
@@ -49,4 +50,5 @@ final darkThemeProvider = Provider<ThemeData>((ref) {
 });
 
 /// Exposes the current [ThemeMode].
-final themeModeProvider = Provider<ThemeMode>((ref) => ref.watch(themeNotifierProvider).mode);
+final themeModeProvider =
+    Provider<ThemeMode>((ref) => ref.watch(themeNotifierProvider).mode);

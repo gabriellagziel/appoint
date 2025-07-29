@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 /// A chip widget for displaying booking time slots with availability status
 class BookingSlotChip extends StatelessWidget {
   const BookingSlotChip({
-    required this.time, required this.available, required this.onSelected, super.key,
+    required this.time,
+    required this.available,
+    required this.onSelected,
+    super.key,
     this.selected = false,
     this.disabled = false,
   });
@@ -45,7 +48,7 @@ class BookingSlotChip extends StatelessWidget {
         onSelected: isAvailable ? (_) => onSelected(time) : null,
         backgroundColor: _getBackgroundColor(theme),
         selectedColor: theme.colorScheme.primaryContainer,
-        disabledColor: theme.colorScheme.surfaceVariant,
+        disabledColor: theme.colorScheme.surfaceContainerHighest,
         side: BorderSide(
           color: _getBorderColor(theme),
         ),
@@ -87,14 +90,14 @@ class BookingSlotChip extends StatelessWidget {
 
   Color _getBackgroundColor(ThemeData theme) {
     if (disabled) {
-      return theme.colorScheme.surfaceVariant;
+      return theme.colorScheme.surfaceContainerHighest;
     }
     if (selected) {
       return theme.colorScheme.primaryContainer;
     }
     return available
         ? theme.colorScheme.surface
-        : theme.colorScheme.surfaceVariant;
+        : theme.colorScheme.surfaceContainerHighest;
   }
 
   Color _getBorderColor(ThemeData theme) {

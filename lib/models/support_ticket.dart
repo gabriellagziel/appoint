@@ -1,7 +1,6 @@
 import 'package:appoint/utils/datetime_converter.dart';
 
 class SupportTicket {
-
   SupportTicket({
     required this.id,
     required this.userId,
@@ -12,13 +11,13 @@ class SupportTicket {
   });
 
   factory SupportTicket.fromJson(Map<String, dynamic> json) => SupportTicket(
-      id: json['id'] as String,
-      userId: json['userId'] as String,
-      subject: json['subject'] as String,
-      message: json['message'] as String,
-      createdAt: DateTime.parse(json['createdAt'] as String),
-      status: json['status'] as String? ?? 'open',
-    );
+        id: json['id'] as String,
+        userId: json['userId'] as String,
+        subject: json['subject'] as String,
+        message: json['message'] as String,
+        createdAt: DateTime.parse(json['createdAt'] as String),
+        status: json['status'] as String? ?? 'open',
+      );
   final String id;
   final String userId;
   final String subject;

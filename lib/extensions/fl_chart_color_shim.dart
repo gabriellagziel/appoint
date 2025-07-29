@@ -21,16 +21,18 @@ extension ColorChannelShims on Color {
   // ignore: deprecated_member_use
   double get b => blue / 255.0;
 
-  Color withValues(
-      {final double? alpha,
-      final double? red,
-      final double? green,
-      double? blue,}) => Color.fromARGB(
-      (255 * (alpha ?? a)).round(),
-      (255 * (red ?? r)).round(),
-      (255 * (green ?? g)).round(),
-      (255 * (blue ?? b)).round(),
-    );
+  Color withValues({
+    final double? alpha,
+    final double? red,
+    final double? green,
+    double? blue,
+  }) =>
+      Color.fromARGB(
+        (255 * (alpha ?? a)).round(),
+        (255 * (red ?? r)).round(),
+        (255 * (green ?? g)).round(),
+        (255 * (blue ?? b)).round(),
+      );
 }
 
 /// Adds missing color getters used by tests.

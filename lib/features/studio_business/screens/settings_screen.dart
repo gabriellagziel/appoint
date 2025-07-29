@@ -13,9 +13,9 @@ class SettingsScreen extends ConsumerStatefulWidget {
 
 class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   bool _notificationsEnabled = true;
-  bool _autoConfirmBookings = false;
-  bool _emailNotifications = true;
-  bool _smsNotifications = false;
+  final bool _autoConfirmBookings = false;
+  final bool _emailNotifications = true;
+  final bool _smsNotifications = false;
 
   @override
   void initState() {
@@ -37,9 +37,9 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         final data = doc.data()!;
         setState(() {
           _notificationsEnabled = data['notificationsEnabled'] ?? true;
-          var _autoConfirmBookings = data['autoConfirmBookings'] ?? false;
-          var _emailNotifications = data['emailNotifications'] ?? true;
-          var _smsNotifications = data['smsNotifications'] ?? false;
+          final autoConfirmBookings = data['autoConfirmBookings'] ?? false;
+          final emailNotifications = data['emailNotifications'] ?? true;
+          final smsNotifications = data['smsNotifications'] ?? false;
         });
       }
     } catch (e) {
@@ -197,7 +197,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                 applicationIcon: const FlutterLogo(size: 64),
                 children: const [
                   Text(
-                      'Business management app for studios and service providers.'),
+                      'Business management app for studios and service providers.',),
                 ],
               );
             },

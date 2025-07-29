@@ -8,17 +8,18 @@ class BottomSheetManager {
     required final Widget child,
     final bool isDismissible = true,
     final bool useSafeArea = true,
-  }) => showModalBottomSheet<T>(
-      context: context,
-      isScrollControlled: true,
-      isDismissible: isDismissible,
-      useSafeArea: useSafeArea,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
-      ),
-      builder: (_) => Padding(
-        padding: MediaQuery.of(context).viewInsets,
-        child: child,
-      ),
-    );
+  }) =>
+      showModalBottomSheet<T>(
+        context: context,
+        isScrollControlled: true,
+        isDismissible: isDismissible,
+        useSafeArea: useSafeArea,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
+        ),
+        builder: (_) => Padding(
+          padding: MediaQuery.of(context).viewInsets,
+          child: child,
+        ),
+      );
 }
