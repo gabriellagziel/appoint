@@ -3,10 +3,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class PersonalSchedulerService {
-
-  PersonalSchedulerService(
-      {FirebaseFirestore? firestore, final FirebaseAuth? auth,})
-      : _firestore = firestore ?? FirebaseFirestore.instance,
+  PersonalSchedulerService({
+    FirebaseFirestore? firestore,
+    final FirebaseAuth? auth,
+  })  : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance;
   final FirebaseFirestore _firestore;
   final FirebaseAuth _auth;

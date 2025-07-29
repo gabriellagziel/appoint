@@ -6,9 +6,9 @@ class BusinessOnboardingScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) => Scaffold(
-      appBar: AppBar(title: const Text('Business Onboarding')),
-      body: const Center(
-        child: Text('Business Onboarding Screen - Coming Soon'),
-      ),
-    );
+        appBar: AppBar(title: const Text('Business Onboarding')),
+        body: const Center(
+          child: Text('Business Onboarding Screen - Coming Soon'),
+        ),
+      );
 }

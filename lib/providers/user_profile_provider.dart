@@ -21,4 +21,5 @@ final currentUserProfileProvider = StreamProvider<UserProfile?>((ref) {
 });
 
 final FutureProviderFamily<UserProfile?, String> userProfileProvider =
-    FutureProvider.family<UserProfile?, String>((ref, final uid) => ref.read(userProfileServiceProvider).getProfile(uid));
+    FutureProvider.family<UserProfile?, String>((ref, final uid) =>
+        ref.read(userProfileServiceProvider).getProfile(uid));

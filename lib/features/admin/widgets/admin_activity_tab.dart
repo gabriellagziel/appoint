@@ -61,7 +61,8 @@ class AdminActivityTab extends ConsumerWidget {
     }
   }
 
-  String _formatDate(DateTime date) => '${date.day}/${date.month}/${date.year} ${date.hour}:${date.minute}';
+  String _formatDate(DateTime date) =>
+      '${date.day}/${date.month}/${date.year} ${date.hour}:${date.minute}';
 
   void _showActivityDetailsDialog(BuildContext context, AdminActivityLog log) {
     showDialog(
@@ -78,8 +79,10 @@ class AdminActivityTab extends ConsumerWidget {
             const SizedBox(height: 8),
             Text('Timestamp: ${_formatDate(log.timestamp)}'),
             const SizedBox(height: 8),
-            const Text('Details:',
-                style: TextStyle(fontWeight: FontWeight.bold),),
+            const Text(
+              'Details:',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
             const SizedBox(height: 4),
             Container(
               padding: const EdgeInsets.all(8),

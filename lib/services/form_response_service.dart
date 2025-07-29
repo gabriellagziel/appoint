@@ -6,7 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 class FormResponseService {
   FormResponseService({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
-  
+
   final FirebaseFirestore _firestore;
 
   // Collection references
@@ -83,10 +83,14 @@ class FormResponseService {
           .orderBy('submittedAt', descending: true)
           .get();
 
-      return snapshot.docs.map((doc) => FormResponse.fromJson({
-        'id': doc.id,
-        ...doc.data(),
-      })).toList();
+      return snapshot.docs
+          .map(
+            (doc) => FormResponse.fromJson({
+              'id': doc.id,
+              ...doc.data(),
+            }),
+          )
+          .toList();
     } catch (e) {
       throw Exception('Failed to get form responses: $e');
     }
@@ -122,9 +126,11 @@ class FormResponseService {
         .where((value) => value != null)
         .toList();
 
-    final validResponses = fieldResponses.where((value) => 
-      value.toString().trim().isNotEmpty
-    ).toList();
+    final validResponses = fieldResponses
+        .where(
+          (value) => value.toString().trim().isNotEmpty,
+        )
+        .toList();
 
     // Calculate statistics based on field type
     double? averageValue;
@@ -139,26 +145,26 @@ class FormResponseService {
             .where((v) => v != null)
             .cast<double>()
             .toList();
-        
+
         if (numericValues.isNotEmpty) {
-          averageValue = numericValues.reduce((a, b) => a + b) / numericValues.length;
+          averageValue =
+              numericValues.reduce((a, b) => a + b) / numericValues.length;
         }
-        break;
 
       case CustomFormFieldType.choice:
       case CustomFormFieldType.boolean:
         choiceDistribution = <String, int>{};
         for (final value in validResponses) {
           final stringValue = value.toString();
-          choiceDistribution[stringValue] = (choiceDistribution[stringValue] ?? 0) + 1;
+          choiceDistribution[stringValue] =
+              (choiceDistribution[stringValue] ?? 0) + 1;
         }
-        
+
         if (choiceDistribution.isNotEmpty) {
           mostCommonValue = choiceDistribution.entries
               .reduce((a, b) => a.value > b.value ? a : b)
               .key;
         }
-        break;
 
       case CustomFormFieldType.multiselect:
         choiceDistribution = <String, int>{};
@@ -166,25 +172,24 @@ class FormResponseService {
           if (value is List) {
             for (final item in value) {
               final stringValue = item.toString();
-              choiceDistribution[stringValue] = (choiceDistribution[stringValue] ?? 0) + 1;
+              choiceDistribution[stringValue] =
+                  (choiceDistribution[stringValue] ?? 0) + 1;
             }
           }
         }
-        break;
 
       default:
         // For text fields, find most common response
-        final stringResponses = validResponses.map((v) => v.toString()).toList();
+        final stringResponses =
+            validResponses.map((v) => v.toString()).toList();
         if (stringResponses.isNotEmpty) {
           final frequency = <String, int>{};
           for (final response in stringResponses) {
             frequency[response] = (frequency[response] ?? 0) + 1;
           }
-          mostCommonValue = frequency.entries
-              .reduce((a, b) => a.value > b.value ? a : b)
-              .key;
+          mostCommonValue =
+              frequency.entries.reduce((a, b) => a.value > b.value ? a : b).key;
         }
-        break;
     }
 
     return FormFieldStatistics(
@@ -232,7 +237,7 @@ class FormResponseService {
   Future<void> _trackFieldResponse(
     String messageId,
     String fieldId,
-    dynamic value,
+    value,
   ) async {
     try {
       final analyticsRef = _firestore.collection('broadcast_analytics').doc();
@@ -284,7 +289,8 @@ class FormResponseService {
             return value.toString();
           }),
         ];
-        csvLines.add(row.map((cell) => '"${cell.toString().replaceAll('"', '""')}"').join(','));
+        csvLines.add(
+            row.map((cell) => '"${cell.replaceAll('"', '""')}"').join(','));
       }
 
       return csvLines.join('\n');
@@ -302,9 +308,10 @@ class FormResponseService {
 
     for (final field in formFields) {
       final value = responses[field.id];
-      
+
       // Check required fields
-      if (field.required && (value == null || value.toString().trim().isEmpty)) {
+      if (field.required &&
+          (value == null || value.toString().trim().isEmpty)) {
         errors[field.id] = 'This field is required';
         continue;
       }
@@ -320,13 +327,11 @@ class FormResponseService {
           if (!_isValidEmail(value.toString())) {
             errors[field.id] = 'Please enter a valid email address';
           }
-          break;
 
         case CustomFormFieldType.phone:
           if (!_isValidPhone(value.toString())) {
             errors[field.id] = 'Please enter a valid phone number';
           }
-          break;
 
         case CustomFormFieldType.number:
           final numValue = double.tryParse(value.toString());
@@ -340,7 +345,6 @@ class FormResponseService {
               errors[field.id] = 'Value must be at most ${field.maxValue}';
             }
           }
-          break;
 
         case CustomFormFieldType.rating:
           final rating = int.tryParse(value.toString());
@@ -353,7 +357,6 @@ class FormResponseService {
               errors[field.id] = 'Rating must be between $min and $max';
             }
           }
-          break;
 
         case CustomFormFieldType.text:
         case CustomFormFieldType.textarea:
@@ -370,13 +373,12 @@ class FormResponseService {
               errors[field.id] = field.validationMessage ?? 'Invalid format';
             }
           }
-          break;
 
         case CustomFormFieldType.choice:
-          if (field.options != null && !field.options!.contains(value.toString())) {
+          if (field.options != null &&
+              !field.options!.contains(value.toString())) {
             errors[field.id] = 'Please select a valid option';
           }
-          break;
 
         case CustomFormFieldType.multiselect:
           if (value is List) {
@@ -391,26 +393,24 @@ class FormResponseService {
           } else {
             errors[field.id] = 'Invalid selection format';
           }
-          break;
 
         case CustomFormFieldType.date:
         case CustomFormFieldType.datetime:
           if (DateTime.tryParse(value.toString()) == null) {
             errors[field.id] = 'Please enter a valid date';
           }
-          break;
 
         case CustomFormFieldType.time:
           if (!_isValidTime(value.toString())) {
             errors[field.id] = 'Please enter a valid time (HH:MM)';
           }
-          break;
 
         case CustomFormFieldType.boolean:
-          if (value is! bool && !['true', 'false', '0', '1'].contains(value.toString().toLowerCase())) {
+          if (value is! bool &&
+              !['true', 'false', '0', '1']
+                  .contains(value.toString().toLowerCase())) {
             errors[field.id] = 'Invalid boolean value';
           }
-          break;
       }
     }
 
@@ -418,9 +418,9 @@ class FormResponseService {
   }
 
   /// Email validation
-  bool _isValidEmail(String email) {
-    return RegExp(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$').hasMatch(email);
-  }
+  bool _isValidEmail(String email) =>
+      RegExp(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$')
+          .hasMatch(email);
 
   /// Phone validation (basic)
   bool _isValidPhone(String phone) {
@@ -429,9 +429,8 @@ class FormResponseService {
   }
 
   /// Time validation (HH:MM format)
-  bool _isValidTime(String time) {
-    return RegExp(r'^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$').hasMatch(time);
-  }
+  bool _isValidTime(String time) =>
+      RegExp(r'^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$').hasMatch(time);
 
   /// Check if user has already submitted form
   Future<bool> hasUserSubmittedForm(String messageId) async {
@@ -478,9 +477,8 @@ class FormResponseService {
 
 /// Custom exception for form validation errors
 class FormValidationException implements Exception {
-  final Map<String, String> errors;
-  
   FormValidationException(this.errors);
+  final Map<String, String> errors;
 
   @override
   String toString() => 'Form validation failed: ${errors.values.join(', ')}';

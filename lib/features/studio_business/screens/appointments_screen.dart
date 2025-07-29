@@ -45,7 +45,8 @@ class AppointmentsScreen extends ConsumerWidget {
                       Text('Status: ${appointment.status.name}'),
                       if (appointment.inviteeContact != null)
                         Text(
-                            'Client: ${appointment.inviteeContact!.displayName}'),
+                          'Client: ${appointment.inviteeContact!.displayName}',
+                        ),
                     ],
                   ),
                   leading: CircleAvatar(
@@ -80,8 +81,7 @@ class AppointmentsScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, final stack) =>
-            Center(child: Text('Error: $error')),
+        error: (error, final stack) => Center(child: Text('Error: $error')),
       ),
     );
   }
@@ -99,8 +99,11 @@ class AppointmentsScreen extends ConsumerWidget {
     }
   }
 
-  void _handleAppointmentAction(final BuildContext context,
-      String appointmentId, final String action,) {
+  void _handleAppointmentAction(
+    final BuildContext context,
+    String appointmentId,
+    final String action,
+  ) {
     switch (action) {
       case 'edit':
         // TODO(username): Implement this featurentment screen
@@ -113,7 +116,9 @@ class AppointmentsScreen extends ConsumerWidget {
   }
 
   void _showCancelConfirmation(
-      BuildContext context, final String appointmentId,) {
+    BuildContext context,
+    final String appointmentId,
+  ) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -138,7 +143,9 @@ class AppointmentsScreen extends ConsumerWidget {
   }
 
   void _showDeleteConfirmation(
-      BuildContext context, final String appointmentId,) {
+    BuildContext context,
+    final String appointmentId,
+  ) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(

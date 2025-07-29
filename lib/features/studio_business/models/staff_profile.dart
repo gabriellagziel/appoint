@@ -4,12 +4,14 @@ part 'staff_profile.g.dart';
 
 @JsonSerializable()
 class StaffProfile {
-
   StaffProfile({
     required this.id,
     required this.businessProfileId,
     required this.name,
-    required this.services, required this.hourlyRate, required this.createdAt, this.photoUrl,
+    required this.services,
+    required this.hourlyRate,
+    required this.createdAt,
+    this.photoUrl,
     this.bio,
     this.isActive = true,
     this.updatedAt,

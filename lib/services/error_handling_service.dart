@@ -21,10 +21,11 @@ enum ErrorType {
 }
 
 class AppError {
-
   AppError({
     required this.message,
-    required this.type, required this.severity, this.code,
+    required this.type,
+    required this.severity,
+    this.code,
     this.stackTrace,
     this.context,
   });
@@ -80,10 +81,8 @@ class ErrorHandlingService {
         error,
         stackTrace,
         reason: appError.message,
-        information: context?.entries
-                .map((e) => '${e.key}: ${e.value}')
-                .toList() ??
-            [],
+        information:
+            context?.entries.map((e) => '${e.key}: ${e.value}').toList() ?? [],
       );
     }
 
@@ -107,7 +106,9 @@ class ErrorHandlingService {
 
   /// Handle network errors
   Future<void> handleNetworkError(
-      error, final StackTrace? stackTrace,) async {
+    error,
+    final StackTrace? stackTrace,
+  ) async {
     await handleError(
       error,
       stackTrace,
@@ -118,7 +119,9 @@ class ErrorHandlingService {
 
   /// Handle authentication errors
   Future<void> handleAuthError(
-      error, final StackTrace? stackTrace,) async {
+    error,
+    final StackTrace? stackTrace,
+  ) async {
     await handleError(
       error,
       stackTrace,
@@ -130,7 +133,9 @@ class ErrorHandlingService {
 
   /// Handle validation errors
   Future<void> handleValidationError(
-      error, final StackTrace? stackTrace,) async {
+    error,
+    final StackTrace? stackTrace,
+  ) async {
     await handleError(
       error,
       stackTrace,
@@ -142,7 +147,9 @@ class ErrorHandlingService {
 
   /// Handle database errors
   Future<void> handleDatabaseError(
-      error, final StackTrace? stackTrace,) async {
+    error,
+    final StackTrace? stackTrace,
+  ) async {
     await handleError(
       error,
       stackTrace,
@@ -154,7 +161,9 @@ class ErrorHandlingService {
 
   /// Handle file errors
   Future<void> handleFileError(
-      error, final StackTrace? stackTrace,) async {
+    error,
+    final StackTrace? stackTrace,
+  ) async {
     await handleError(
       error,
       stackTrace,
@@ -182,7 +191,8 @@ class ErrorHandlingService {
   }
 
   /// Check if error is recoverable
-  bool isRecoverable(AppError error) => error.severity != ErrorSeverity.critical;
+  bool isRecoverable(AppError error) =>
+      error.severity != ErrorSeverity.critical;
 
   /// Get error recovery suggestion
   String getRecoverySuggestion(AppError error) {
@@ -204,7 +214,9 @@ class ErrorHandlingService {
 
   /// Get localized Firebase Auth error message
   String getLocalizedFirebaseAuthError(
-      FirebaseAuthException e, AppLocalizations l10n,) {
+    FirebaseAuthException e,
+    AppLocalizations l10n,
+  ) {
     switch (e.code) {
       case 'user-not-found':
         return l10n.authErrorUserNotFound;
@@ -358,8 +370,9 @@ class ErrorHandlingService {
   }
 
   /// Check if Firebase Auth error is a social account conflict
-  bool isSocialAccountConflict(FirebaseAuthException e) => e.code == 'REDACTED_TOKEN' ||
-        e.code == 'credential-already-in-use';
+  bool isSocialAccountConflict(FirebaseAuthException e) =>
+      e.code == 'REDACTED_TOKEN' ||
+      e.code == 'credential-already-in-use';
 }
 
 // Riverpod providers

@@ -1,11 +1,9 @@
 import 'package:firebase_analytics/firebase_analytics.dart';
-import 'package:flutter/foundation.dart';
 
 class AnalyticsService {
+  AnalyticsService._();
   static final AnalyticsService _instance = AnalyticsService._();
   static AnalyticsService get instance => _instance;
-  
-  AnalyticsService._();
 
   final FirebaseAnalytics _analytics = FirebaseAnalytics.instance;
 
@@ -360,4 +358,4 @@ class AnalyticsService {
 
   // Get analytics instance for direct access
   FirebaseAnalytics get analytics => _analytics;
-} 
+}

@@ -9,8 +9,10 @@ void main() async {
 
   // Step 2: Run build runner to generate files in default location
   print('Running build runner to generate files...');
-  final result = await Process.run('flutter',
-      ['pub', 'run', 'build_runner', 'build', '--delete-conflicting-outputs'],);
+  final result = await Process.run(
+    'flutter',
+    ['pub', 'run', 'build_runner', 'build', '--delete-conflicting-outputs'],
+  );
   if (result.exitCode != 0) {
     print('Build runner failed: ${result.stderr}');
     return;

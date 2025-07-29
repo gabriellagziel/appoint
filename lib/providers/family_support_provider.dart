@@ -5,4 +5,5 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final familySupportServiceProvider =
     Provider<FamilySupportService>((ref) => FamilySupportService());
 
-final supportTicketsProvider = StreamProvider<List<SupportTicket>>((ref) => ref.watch(familySupportServiceProvider).watchTickets());
+final supportTicketsProvider = StreamProvider<List<SupportTicket>>(
+    (ref) => ref.watch(familySupportServiceProvider).watchTickets());

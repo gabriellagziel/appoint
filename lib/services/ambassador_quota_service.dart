@@ -4,7 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 /// Supports 50 countries and languages with hard-capped quotas
 class AmbassadorQuotaService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  
+
   // Variable declarations for the service
   late int quota;
   late bool isEligible;
@@ -91,7 +91,9 @@ class AmbassadorQuotaService {
 
   /// Get current ambassador count for a country-language combination
   Future<int> getCurrentAmbassadorCount(
-      String countryCode, final String languageCode,) async {
+    String countryCode,
+    final String languageCode,
+  ) async {
     try {
       final snapshot = await _firestore
           .collection('ambassadors')
@@ -110,7 +112,9 @@ class AmbassadorQuotaService {
 
   /// Check if there are available slots for a country-language combination
   Future<bool> hasAvailableSlots(
-      String countryCode, final String languageCode,) async {
+    String countryCode,
+    final String languageCode,
+  ) async {
     final quota = getQuota(countryCode, languageCode);
     if (quota == 0) return false;
 
@@ -121,7 +125,9 @@ class AmbassadorQuotaService {
 
   /// Get available slots count for a country-language combination
   Future<int> getAvailableSlots(
-      String countryCode, final String languageCode,) async {
+    String countryCode,
+    final String languageCode,
+  ) async {
     final quota = getQuota(countryCode, languageCode);
     if (quota == 0) return 0;
 
@@ -334,7 +340,9 @@ class AmbassadorQuotaService {
 
   /// Find next eligible user for ambassadorship in a specific country-language
   Future<String?> findNextEligibleUser(
-      String countryCode, final String languageCode,) async {
+    String countryCode,
+    final String languageCode,
+  ) async {
     try {
       // Query for eligible users in the specified country
       final usersSnapshot = await _firestore

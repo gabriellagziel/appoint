@@ -36,7 +36,9 @@ class CRMDashboardScreen extends ConsumerWidget {
                         Text(
                           profile.name,
                           style: const TextStyle(
-                              fontSize: 18, fontWeight: FontWeight.bold,),
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ],
                     ),
@@ -95,20 +97,25 @@ class CRMDashboardScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildNavItem(final BuildContext context, final String title,
-      final IconData icon, final VoidCallback onTap,
-      {bool isSelected = false,}) => ListTile(
-      leading: Icon(icon, color: isSelected ? Colors.blue : Colors.grey),
-      title: Text(
-        title,
-        style: TextStyle(
-          color: isSelected ? Colors.blue : Colors.black,
-          fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+  Widget _buildNavItem(
+    final BuildContext context,
+    final String title,
+    final IconData icon,
+    final VoidCallback onTap, {
+    bool isSelected = false,
+  }) =>
+      ListTile(
+        leading: Icon(icon, color: isSelected ? Colors.blue : Colors.grey),
+        title: Text(
+          title,
+          style: TextStyle(
+            color: isSelected ? Colors.blue : Colors.black,
+            fontWeight: isSelected ? FontWeight.bold : FontWeight.normal,
+          ),
         ),
-      ),
-      onTap: onTap,
-      selected: isSelected,
-    );
+        onTap: onTap,
+        selected: isSelected,
+      );
 }
 
 class DashboardHome extends ConsumerWidget {
@@ -148,14 +155,20 @@ class DashboardHome extends ConsumerWidget {
                 // Quick Stats
                 Row(
                   children: [
-                    _buildStatCard('Weekly Bookings',
-                        '${statsAsync['totalBookings'] ?? 0}',),
+                    _buildStatCard(
+                      'Weekly Bookings',
+                      '${statsAsync['totalBookings'] ?? 0}',
+                    ),
                     const SizedBox(width: 16),
                     _buildStatCard(
-                        'Total Clients', '${statsAsync['totalClients'] ?? 0}',),
+                      'Total Clients',
+                      '${statsAsync['totalClients'] ?? 0}',
+                    ),
                     const SizedBox(width: 16),
-                    _buildStatCard('Upcoming',
-                        '${statsAsync['upcomingAppointments'] ?? 0}',),
+                    _buildStatCard(
+                      'Upcoming',
+                      '${statsAsync['upcomingAppointments'] ?? 0}',
+                    ),
                   ],
                 ),
               ],
@@ -224,55 +237,67 @@ class DashboardHome extends ConsumerWidget {
   }
 
   Widget _buildStatCard(String title, final String value) => Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          children: [
-            Text(title, style: const TextStyle(fontSize: 12)),
-            const SizedBox(height: 4),
-            Text(value,
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              Text(title, style: const TextStyle(fontSize: 12)),
+              const SizedBox(height: 4),
+              Text(
+                value,
                 style:
-                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
-          ],
+                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 
   Widget _buildKPICard(
-      String title, final String value, final IconData icon,) => Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          children: [
-            Icon(icon, size: 32, color: Colors.blue),
-            const SizedBox(height: 8),
-            Text(value,
+    String title,
+    final String value,
+    final IconData icon,
+  ) =>
+      Card(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              Icon(icon, size: 32, color: Colors.blue),
+              const SizedBox(height: 8),
+              Text(
+                value,
                 style:
-                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),),
-            Text(title, style: const TextStyle(fontSize: 14)),
-          ],
+                    const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+              Text(title, style: const TextStyle(fontSize: 14)),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 
   Widget _buildQuickAction(
-      String title, final IconData icon, final VoidCallback onTap,) => Expanded(
-      child: Card(
-        child: InkWell(
-          onTap: onTap,
-          child: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Column(
-              children: [
-                Icon(icon, size: 32),
-                const SizedBox(height: 8),
-                Text(title, textAlign: TextAlign.center),
-              ],
+    String title,
+    final IconData icon,
+    final VoidCallback onTap,
+  ) =>
+      Expanded(
+        child: Card(
+          child: InkWell(
+            onTap: onTap,
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                children: [
+                  Icon(icon, size: 32),
+                  const SizedBox(height: 8),
+                  Text(title, textAlign: TextAlign.center),
+                ],
+              ),
             ),
           ),
         ),
-      ),
-    );
+      );
 }
 
 // Real screens for other sections
@@ -300,8 +325,7 @@ class ClientsScreen extends ConsumerWidget {
           },
         ),
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, final stack) =>
-            Center(child: Text('Error: $error')),
+        error: (error, final stack) => Center(child: Text('Error: $error')),
       ),
     );
   }
@@ -329,8 +353,7 @@ class AppointmentsScreen extends ConsumerWidget {
           },
         ),
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (error, final stack) =>
-            Center(child: Text('Error: $error')),
+        error: (error, final stack) => Center(child: Text('Error: $error')),
       ),
     );
   }

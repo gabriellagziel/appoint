@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class PermissionsScreen extends ConsumerWidget {
-
   const PermissionsScreen({
-    required this.familyLink, super.key,
+    required this.familyLink,
+    super.key,
   });
   final FamilyLink familyLink;
 
@@ -20,8 +20,7 @@ class PermissionsScreen extends ConsumerWidget {
         title: Text('Permissions - ${familyLink.childId}'),
       ),
       body: permissionsAsync.when(
-        data: (permissions) =>
-            _buildPermissionsList(context, ref, permissions),
+        data: (permissions) => _buildPermissionsList(context, ref, permissions),
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (error, final stack) => Center(
           child: Text('Error loading permissions: $error'),
@@ -34,43 +33,45 @@ class PermissionsScreen extends ConsumerWidget {
     final BuildContext context,
     final WidgetRef ref,
     final List<Permission> permissions,
-  ) => ListView.builder(
-      padding: const EdgeInsets.all(16),
-      itemCount: permissions.length,
-      itemBuilder: (context, final index) {
-        final permission = permissions[index];
-        return Card(
-          margin: const EdgeInsets.only(bottom: 8),
-          child: ListTile(
-            leading: Icon(
-              _getAccessLevelIcon(permission.accessLevel),
-              color: _getAccessLevelColor(permission.accessLevel),
+  ) =>
+      ListView.builder(
+        padding: const EdgeInsets.all(16),
+        itemCount: permissions.length,
+        itemBuilder: (context, final index) {
+          final permission = permissions[index];
+          return Card(
+            margin: const EdgeInsets.only(bottom: 8),
+            child: ListTile(
+              leading: Icon(
+                _getAccessLevelIcon(permission.accessLevel),
+                color: _getAccessLevelColor(permission.accessLevel),
+              ),
+              title: Text(_getCategoryDisplayName(permission.category)),
+              subtitle: Text(_getCategoryDescription(permission.category)),
+              trailing: _buildAccessLevelSelector(context, ref, permission),
             ),
-            title: Text(_getCategoryDisplayName(permission.category)),
-            subtitle: Text(_getCategoryDescription(permission.category)),
-            trailing: _buildAccessLevelSelector(context, ref, permission),
-          ),
-        );
-      },
-    );
+          );
+        },
+      );
 
   Widget _buildAccessLevelSelector(
     final BuildContext context,
     final WidgetRef ref,
     final Permission permission,
-  ) => DropdownButton<String>(
-      value: permission.accessLevel,
-      onChanged: (String? newValue) {
-        if (newValue != null) {
-          _updatePermission(context, ref, permission, newValue);
-        }
-      },
-      items: const [
-        DropdownMenuItem(value: 'none', child: Text('None')),
-        DropdownMenuItem(value: 'read', child: Text('Read Only')),
-        DropdownMenuItem(value: 'write', child: Text('Read & Write')),
-      ],
-    );
+  ) =>
+      DropdownButton<String>(
+        value: permission.accessLevel,
+        onChanged: (String? newValue) {
+          if (newValue != null) {
+            _updatePermission(context, ref, permission, newValue);
+          }
+        },
+        items: const [
+          DropdownMenuItem(value: 'none', child: Text('None')),
+          DropdownMenuItem(value: 'read', child: Text('Read Only')),
+          DropdownMenuItem(value: 'write', child: Text('Read & Write')),
+        ],
+      );
 
   IconData _getAccessLevelIcon(String accessLevel) {
     switch (accessLevel) {

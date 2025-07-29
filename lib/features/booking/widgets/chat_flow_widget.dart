@@ -7,10 +7,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// A chat-driven booking flow widget with typing indicators and read receipts.
 class ChatFlowWidget extends ConsumerStatefulWidget {
-
   const ChatFlowWidget({
-    required this.auth, super.key,
+    required this.auth,
+    super.key,
   });
+
   /// [auth] is injected for testability.
   final AuthService auth;
 
@@ -19,13 +20,12 @@ class ChatFlowWidget extends ConsumerStatefulWidget {
 }
 
 class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
-
   ChatFlowWidgetState(this._auth);
   // Injected instead of direct FirebaseAuth.instance
   final AuthService _auth;
 
-  TextEditingController _controller = TextEditingController();
-  ScrollController _scrollController = ScrollController();
+  final TextEditingController _controller = TextEditingController();
+  final ScrollController _scrollController = ScrollController();
   static const int maxMessageLength = 500;
 
   @override
@@ -80,53 +80,56 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
   }
 
   Widget _buildTypingIndicator() => Align(
-      alignment: Alignment.centerLeft,
-      child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-        child: Card(
-          color: Colors.grey[200],
-          child: Padding(
-            padding: const EdgeInsets.all(12),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  'Typing',
-                  style: TextStyle(
-                    color: Colors.grey[600],
-                    fontStyle: FontStyle.italic,
+        alignment: Alignment.centerLeft,
+        child: Container(
+          margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+          child: Card(
+            color: Colors.grey[200],
+            child: Padding(
+              padding: const EdgeInsets.all(12),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    'Typing',
+                    style: TextStyle(
+                      color: Colors.grey[600],
+                      fontStyle: FontStyle.italic,
+                    ),
                   ),
-                ),
-                const SizedBox(width: 8),
-                _buildTypingDots(),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-
-  Widget _buildTypingDots() => Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        for (int i = 0; i < 3; i++)
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 2),
-            child: AnimatedContainer(
-              duration: Duration(milliseconds: 600 + (i * 200)),
-              width: 6,
-              height: 6,
-              decoration: BoxDecoration(
-                color: Colors.grey[600],
-                shape: BoxShape.circle,
+                  const SizedBox(width: 8),
+                  _buildTypingDots(),
+                ],
               ),
             ),
           ),
-      ],
-    );
+        ),
+      );
+
+  Widget _buildTypingDots() => Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          for (int i = 0; i < 3; i++)
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 2),
+              child: AnimatedContainer(
+                duration: Duration(milliseconds: 600 + (i * 200)),
+                width: 6,
+                height: 6,
+                decoration: BoxDecoration(
+                  color: Colors.grey[600],
+                  shape: BoxShape.circle,
+                ),
+              ),
+            ),
+        ],
+      );
 
   Widget _buildMessageBubble(
-      ChatMessage msg, bool isUser, String? currentUserId,) {
+    ChatMessage msg,
+    bool isUser,
+    String? currentUserId,
+  ) {
     final hasBeenRead =
         currentUserId != null && msg.readBy.contains(currentUserId);
 
@@ -143,7 +146,8 @@ class ChatFlowWidgetState extends ConsumerState<ChatFlowWidget> {
                 child: Text(
                   msg.content,
                   style: TextStyle(
-                    color: isUser ? Colors.white : Colors.black87),
+                    color: isUser ? Colors.white : Colors.black87,
+                  ),
                 ),
               ),
             ),

@@ -18,30 +18,30 @@ class NotificationSettingsScreen extends ConsumerWidget {
       appBar: AppBar(title: Text(l10n.notificationSettings)),
       body: settingsAsync.when(
         data: (settings) => tokenAsync.when(
-            data: (token) => Padding(
-                padding: const EdgeInsets.all(16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SwitchListTile(
-                      title: Text(l10n.enableNotifications),
-                      value: settings.push,
-                      onChanged: (v) async {
-                        final uid = ref.read(authProvider).currentUser?.uid;
-                        if (uid == null) return;
-                        final newSettings = NotificationSettings(push: v);
-                        await ref
-                            .read(userSettingsServiceProvider)
-                            .updateSettings(uid, newSettings);
-                      },
-                    ),
-                    if (token != null) SelectableText(l10n.fcmToken(token)),
-                  ],
+          data: (token) => Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SwitchListTile(
+                  title: Text(l10n.enableNotifications),
+                  value: settings.push,
+                  onChanged: (v) async {
+                    final uid = ref.read(authProvider).currentUser?.uid;
+                    if (uid == null) return;
+                    final newSettings = NotificationSettings(push: v);
+                    await ref
+                        .read(userSettingsServiceProvider)
+                        .updateSettings(uid, newSettings);
+                  },
                 ),
-              ),
-            loading: () => const Center(child: CircularProgressIndicator()),
-            error: (e, final _) => Center(child: Text('Error: $e')),
+                if (token != null) SelectableText(l10n.fcmToken(token)),
+              ],
+            ),
           ),
+          loading: () => const Center(child: CircularProgressIndicator()),
+          error: (e, final _) => Center(child: Text('Error: $e')),
+        ),
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, final _) => Center(child: Text('Error: $e')),
       ),

@@ -47,14 +47,12 @@ class DashboardService {
     ]).map((values) {
       final appointmentsSnapshot =
           values[0] as QuerySnapshot<Map<String, dynamic>>;
-      final invitesSnapshot =
-          values[1] as QuerySnapshot<Map<String, dynamic>>;
+      final invitesSnapshot = values[1] as QuerySnapshot<Map<String, dynamic>>;
       final paymentsSnapshot =
           values[2] as DocumentSnapshot<Map<String, dynamic>>;
 
       final totalAppointments = appointmentsSnapshot.size;
-      final completedAppointments =
-          appointmentsSnapshot.docs.where((doc) {
+      final completedAppointments = appointmentsSnapshot.docs.where((doc) {
         final status = doc.data()['status'] as String?;
         return status == 'accepted' || status == 'completed';
       }).length;

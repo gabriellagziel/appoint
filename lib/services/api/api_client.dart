@@ -1,30 +1,34 @@
 import 'dart:convert';
 import 'dart:io';
+
+import 'package:appoint/services/auth_service.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:appoint/services/auth_service.dart';
 
 class ApiClient {
   ApiClient._({AuthService? authService})
       : _authService = authService ?? AuthService();
-  
+
   static final ApiClient _instance = ApiClient._();
   static ApiClient get instance => _instance;
 
   late final Dio _dio;
   final AuthService _authService;
-  final String _baseUrl = 'https://api.appoint.com/v1'; // TODO: Replace with real API URL
+  final String _baseUrl =
+      'https://api.appoint.com/v1'; // TODO: Replace with real API URL
 
   void initialize() {
-    _dio = Dio(BaseOptions(
-      baseUrl: _baseUrl,
-      connectTimeout: const Duration(seconds: 30),
-      receiveTimeout: const Duration(seconds: 30),
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-      },
-    ));
+    _dio = Dio(
+      BaseOptions(
+        baseUrl: _baseUrl,
+        connectTimeout: const Duration(seconds: 30),
+        receiveTimeout: const Duration(seconds: 30),
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+      ),
+    );
 
     // Add interceptors
     _dio.interceptors.addAll([
@@ -60,7 +64,7 @@ class ApiClient {
   // Generic POST request
   Future<T> post<T>(
     String path, {
-    dynamic data,
+    data,
     Map<String, dynamic>? queryParameters,
     Options? options,
     CancelToken? cancelToken,
@@ -82,7 +86,7 @@ class ApiClient {
   // Generic PUT request
   Future<T> put<T>(
     String path, {
-    dynamic data,
+    data,
     Map<String, dynamic>? queryParameters,
     Options? options,
     CancelToken? cancelToken,
@@ -104,7 +108,7 @@ class ApiClient {
   // Generic DELETE request
   Future<T> delete<T>(
     String path, {
-    dynamic data,
+    data,
     Map<String, dynamic>? queryParameters,
     Options? options,
     CancelToken? cancelToken,
@@ -157,26 +161,26 @@ class ApiClient {
       case DioExceptionType.connectionTimeout:
       case DioExceptionType.sendTimeout:
       case DioExceptionType.receiveTimeout:
-        return ApiException(
+        return const ApiException(
           message: 'Connection timeout. Please check your internet connection.',
           type: ApiExceptionType.timeout,
         );
       case DioExceptionType.badResponse:
         final statusCode = e.response?.statusCode;
         final data = e.response?.data;
-        
+
         if (statusCode == 401) {
-          return ApiException(
+          return const ApiException(
             message: 'Unauthorized. Please login again.',
             type: ApiExceptionType.unauthorized,
           );
         } else if (statusCode == 403) {
-          return ApiException(
+          return const ApiException(
             message: 'Access forbidden.',
             type: ApiExceptionType.forbidden,
           );
         } else if (statusCode == 404) {
-          return ApiException(
+          return const ApiException(
             message: 'Resource not found.',
             type: ApiExceptionType.notFound,
           );
@@ -188,7 +192,7 @@ class ApiClient {
             validationErrors: errors,
           );
         } else if (statusCode! >= 500) {
-          return ApiException(
+          return const ApiException(
             message: 'Server error. Please try again later.',
             type: ApiExceptionType.server,
           );
@@ -199,30 +203,32 @@ class ApiClient {
           );
         }
       case DioExceptionType.cancel:
-        return ApiException(
+        return const ApiException(
           message: 'Request was cancelled.',
           type: ApiExceptionType.cancelled,
         );
       case DioExceptionType.connectionError:
-        return ApiException(
+        return const ApiException(
           message: 'No internet connection.',
           type: ApiExceptionType.network,
         );
       default:
-        return ApiException(
+        return const ApiException(
           message: 'An unexpected error occurred.',
           type: ApiExceptionType.unknown,
         );
     }
   }
 
-  Map<String, List<String>> _parseValidationErrors(dynamic data) {
+  Map<String, List<String>> _parseValidationErrors(data) {
     if (data is Map<String, dynamic> && data.containsKey('errors')) {
       final errors = data['errors'] as Map<String, dynamic>;
-      return errors.map((key, value) => MapEntry(
-        key,
-        value is List ? value.cast<String>() : [value.toString()],
-      ));
+      return errors.map(
+        (key, value) => MapEntry(
+          key,
+          value is List ? value.cast<String>() : [value.toString()],
+        ),
+      );
     }
     return {};
   }
@@ -257,12 +263,12 @@ enum ApiExceptionType {
 
 // Auth interceptor to add authentication headers
 class _AuthInterceptor extends Interceptor {
+  _AuthInterceptor(this._authService);
   final AuthService _authService;
 
-  _AuthInterceptor(this._authService);
-
   @override
-  void onRequest(RequestOptions options, RequestInterceptorHandler handler) async {
+  Future<void> onRequest(
+      RequestOptions options, RequestInterceptorHandler handler) async {
     final user = await _authService.currentUser();
     if (user != null) {
       final token = await user.getIdToken();
@@ -272,14 +278,15 @@ class _AuthInterceptor extends Interceptor {
   }
 
   @override
-  void onError(DioException err, ErrorInterceptorHandler handler) async {
+  Future<void> onError(
+      DioException err, ErrorInterceptorHandler handler) async {
     if (err.response?.statusCode == 401) {
       // Token expired, try to refresh
       final user = await _authService.currentUser();
       if (user != null) {
         final token = await user.getIdToken(true); // Force refresh
         err.requestOptions.headers['Authorization'] = 'Bearer $token';
-        
+
         final response = await ApiClient.instance.dio.fetch(err.requestOptions);
         handler.resolve(response);
         return;
@@ -305,7 +312,8 @@ class _LoggingInterceptor extends Interceptor {
   @override
   void onResponse(Response response, ResponseInterceptorHandler handler) {
     if (kDebugMode) {
-      print('✅ API Response: ${response.statusCode} ${response.requestOptions.path}');
+      print(
+          '✅ API Response: ${response.statusCode} ${response.requestOptions.path}');
     }
     handler.next(response);
   }
@@ -313,7 +321,8 @@ class _LoggingInterceptor extends Interceptor {
   @override
   void onError(DioException err, ErrorInterceptorHandler handler) {
     if (kDebugMode) {
-      print('❌ API Error: ${err.response?.statusCode} ${err.requestOptions.path}');
+      print(
+          '❌ API Error: ${err.response?.statusCode} ${err.requestOptions.path}');
       print('Error: ${err.message}');
     }
     handler.next(err);
@@ -326,7 +335,7 @@ class _ErrorInterceptor extends Interceptor {
   void onError(DioException err, ErrorInterceptorHandler handler) {
     // Log error for analytics
     // AnalyticsService.instance.logError(err);
-    
+
     handler.next(err);
   }
 }
@@ -337,12 +346,13 @@ class _RetryInterceptor extends Interceptor {
   static const Duration _retryDelay = Duration(seconds: 1);
 
   @override
-  void onError(DioException err, ErrorInterceptorHandler handler) async {
+  Future<void> onError(
+      DioException err, ErrorInterceptorHandler handler) async {
     if (_shouldRetry(err) && err.requestOptions.extra['retryCount'] == null) {
       err.requestOptions.extra['retryCount'] = 1;
-      
+
       await Future.delayed(_retryDelay);
-      
+
       try {
         final response = await ApiClient.instance.dio.fetch(err.requestOptions);
         handler.resolve(response);
@@ -351,13 +361,12 @@ class _RetryInterceptor extends Interceptor {
         // Continue with error handling
       }
     }
-    
+
     handler.next(err);
   }
 
-  bool _shouldRetry(DioException err) {
-    return err.type == DioExceptionType.connectionError ||
-           err.type == DioExceptionType.connectionTimeout ||
-           (err.response?.statusCode ?? 0) >= 500;
-  }
-} 
+  bool _shouldRetry(DioException err) =>
+      err.type == DioExceptionType.connectionError ||
+      err.type == DioExceptionType.connectionTimeout ||
+      (err.response?.statusCode ?? 0) >= 500;
+}

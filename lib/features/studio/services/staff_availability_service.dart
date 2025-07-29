@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class StaffAvailabilityService {
-
   StaffAvailabilityService(this.studioId);
   final FirebaseFirestore _db = FirebaseFirestore.instance;
   final String studioId;
@@ -23,7 +22,10 @@ class StaffAvailabilityService {
   }
 
   Future<void> updateSlot(
-      String id, final DateTime startTime, final DateTime endTime,) async {
+    String id,
+    final DateTime startTime,
+    final DateTime endTime,
+  ) async {
     try {
       await _collection.doc(id).update({
         'startTime': Timestamp.fromDate(startTime),

@@ -9,8 +9,10 @@ class AppTheme {
   static ThemeData darkTheme(Color seedColor) =>
       _buildTheme(seedColor: seedColor, brightness: Brightness.dark);
 
-  static ThemeData fromSeed(final Color seedColor,
-          {Brightness brightness = Brightness.light,}) =>
+  static ThemeData fromSeed(
+    final Color seedColor, {
+    Brightness brightness = Brightness.light,
+  }) =>
       _buildTheme(seedColor: seedColor, brightness: brightness);
 
   static ThemeData _buildTheme({

@@ -34,64 +34,65 @@ class _SurveyEditorScreenState extends State<SurveyEditorScreen> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(
-        title: const Text('Survey Editor'),
-      ),
-      body: ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          if (_questions.isEmpty)
-            const Padding(
-              padding: EdgeInsets.all(24),
-              child: Center(child: Text('No questions added')),
-            ),
-          ..._questions.asMap().entries.map(
-                (entry) => _buildQuestionCard(entry.key, entry.value),
-              ),
-          const SizedBox(height: 16),
-          ElevatedButton.icon(
-            onPressed: _addQuestion,
-            icon: const Icon(Icons.add),
-            label: const Text('Add Question'),
-          ),
-        ],
-      ),
-    );
-
-  Widget _buildQuestionCard(int index, final _QuestionItem item) => Card(
-      margin: const EdgeInsets.only(bottom: 12),
-      child: Padding(
-        padding: const EdgeInsets.all(12),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        appBar: AppBar(
+          title: const Text('Survey Editor'),
+        ),
+        body: ListView(
+          padding: const EdgeInsets.all(16),
           children: [
-            TextField(
-              controller: item.controller,
-              decoration: const InputDecoration(labelText: 'Question'),
-            ),
-            const SizedBox(height: 8),
-            DropdownButton<String>(
-              value: item.type,
-              items: const [
-                DropdownMenuItem(value: 'text', child: Text('Text')),
-                DropdownMenuItem(
-                    value: 'multiple', child: Text('Multiple Choice'),),
-                DropdownMenuItem(value: 'rating', child: Text('Rating')),
-              ],
-              onChanged: (val) =>
-                  setState(() => item.type = val ?? 'text'),
-            ),
-            Align(
-              alignment: Alignment.centerRight,
-              child: IconButton(
-                icon: const Icon(Icons.delete),
-                onPressed: () => _removeQuestion(index),
+            if (_questions.isEmpty)
+              const Padding(
+                padding: EdgeInsets.all(24),
+                child: Center(child: Text('No questions added')),
               ),
+            ..._questions.asMap().entries.map(
+                  (entry) => _buildQuestionCard(entry.key, entry.value),
+                ),
+            const SizedBox(height: 16),
+            ElevatedButton.icon(
+              onPressed: _addQuestion,
+              icon: const Icon(Icons.add),
+              label: const Text('Add Question'),
             ),
           ],
         ),
-      ),
-    );
+      );
+
+  Widget _buildQuestionCard(int index, final _QuestionItem item) => Card(
+        margin: const EdgeInsets.only(bottom: 12),
+        child: Padding(
+          padding: const EdgeInsets.all(12),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              TextField(
+                controller: item.controller,
+                decoration: const InputDecoration(labelText: 'Question'),
+              ),
+              const SizedBox(height: 8),
+              DropdownButton<String>(
+                value: item.type,
+                items: const [
+                  DropdownMenuItem(value: 'text', child: Text('Text')),
+                  DropdownMenuItem(
+                    value: 'multiple',
+                    child: Text('Multiple Choice'),
+                  ),
+                  DropdownMenuItem(value: 'rating', child: Text('Rating')),
+                ],
+                onChanged: (val) => setState(() => item.type = val ?? 'text'),
+              ),
+              Align(
+                alignment: Alignment.centerRight,
+                child: IconButton(
+                  icon: const Icon(Icons.delete),
+                  onPressed: () => _removeQuestion(index),
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
 }
 
 class _QuestionItem {

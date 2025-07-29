@@ -4,7 +4,6 @@ part 'admin_user.g.dart';
 
 @JsonSerializable()
 class AdminUser {
-
   AdminUser({
     required this.uid,
     required this.email,

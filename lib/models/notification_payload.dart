@@ -1,5 +1,4 @@
 class NotificationPayload {
-
   NotificationPayload({
     required this.id,
     required this.title,

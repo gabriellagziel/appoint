@@ -1,5 +1,4 @@
 class StudioAppointment {
-
   StudioAppointment({
     required this.id,
     required this.title,
@@ -8,13 +7,14 @@ class StudioAppointment {
     this.notes,
   });
 
-  factory StudioAppointment.fromJson(Map<String, dynamic> json) => StudioAppointment(
-      id: json['id'] as String,
-      title: json['title'] as String,
-      time: DateTime.parse(json['time'] as String),
-      client: json['client'] as String,
-      notes: json['notes'] as String?,
-    );
+  factory StudioAppointment.fromJson(Map<String, dynamic> json) =>
+      StudioAppointment(
+        id: json['id'] as String,
+        title: json['title'] as String,
+        time: DateTime.parse(json['time'] as String),
+        client: json['client'] as String,
+        notes: json['notes'] as String?,
+      );
   final String id;
   final String title;
   final DateTime time;
@@ -35,11 +35,12 @@ class StudioAppointment {
     final DateTime? time,
     final String? client,
     final String? notes,
-  }) => StudioAppointment(
-      id: id ?? this.id,
-      title: title ?? this.title,
-      time: time ?? this.time,
-      client: client ?? this.client,
-      notes: notes ?? this.notes,
-    );
+  }) =>
+      StudioAppointment(
+        id: id ?? this.id,
+        title: title ?? this.title,
+        time: time ?? this.time,
+        client: client ?? this.client,
+        notes: notes ?? this.notes,
+      );
 }

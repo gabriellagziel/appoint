@@ -31,7 +31,7 @@ class AmbassadorProfile with _$AmbassadorProfile {
     Map<String, dynamic>? customData,
   }) = _AmbassadorProfile;
 
-  factory AmbassadorProfile.fromJson(Map<String, dynamic> json) => 
+  factory AmbassadorProfile.fromJson(Map<String, dynamic> json) =>
       _$AmbassadorProfileFromJson(json);
 
   // Factory for new ambassador
@@ -58,7 +58,7 @@ class AmbassadorProfile with _$AmbassadorProfile {
       metrics: AmbassadorMetrics.empty(),
       statusChangedAt: now,
       tierChangedAt: now,
-      nextMonthlyReviewAt: DateTime(now.year, now.month + 1, 1),
+      nextMonthlyReviewAt: DateTime(now.year, now.month + 1),
     );
   }
 }
@@ -147,7 +147,7 @@ class AmbassadorReward with _$AmbassadorReward {
     Map<String, dynamic>? metadata,
   }) = _AmbassadorReward;
 
-  factory AmbassadorReward.fromJson(Map<String, dynamic> json) => 
+  factory AmbassadorReward.fromJson(Map<String, dynamic> json) =>
       _$AmbassadorRewardFromJson(json);
 }
 
@@ -187,20 +187,20 @@ class AmbassadorMetrics with _$AmbassadorMetrics {
     required int globalRanking,
   }) = _AmbassadorMetrics;
 
-  factory AmbassadorMetrics.fromJson(Map<String, dynamic> json) => 
+  factory AmbassadorMetrics.fromJson(Map<String, dynamic> json) =>
       _$AmbassadorMetricsFromJson(json);
 
   factory AmbassadorMetrics.empty() => AmbassadorMetrics(
-    conversionRate: 0,
-    averageReferralsPerMonth: 0,
-    streakDays: 0,
-    longestStreak: 0,
-    lastReferralDate: DateTime.now(),
-    monthlyBreakdown: {},
-    engagementScore: 0.0,
-    countryRanking: 0,
-    globalRanking: 0,
-  );
+        conversionRate: 0,
+        averageReferralsPerMonth: 0,
+        streakDays: 0,
+        longestStreak: 0,
+        lastReferralDate: DateTime.now(),
+        monthlyBreakdown: {},
+        engagementScore: 0,
+        countryRanking: 0,
+        globalRanking: 0,
+      );
 }
 
 /// Ambassador Referral Record
@@ -218,6 +218,6 @@ class AmbassadorReferral with _$AmbassadorReferral {
     Map<String, dynamic>? metadata,
   }) = _AmbassadorReferral;
 
-  factory AmbassadorReferral.fromJson(Map<String, dynamic> json) => 
+  factory AmbassadorReferral.fromJson(Map<String, dynamic> json) =>
       _$AmbassadorReferralFromJson(json);
 }

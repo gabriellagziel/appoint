@@ -9,7 +9,6 @@ import 'package:googleapis_auth/googleapis_auth.dart';
 import 'package:http/http.dart' as http;
 
 class GoogleCalendarService {
-
   GoogleCalendarService({FlutterSecureStorage? storage})
       : _storage = storage ?? const FlutterSecureStorage();
   static const _credentialKey = 'google_calendar_credentials';
@@ -87,7 +86,7 @@ class GoogleCalendarService {
       throw Exception('Token exchange failed: ${tokenResp.body}');
     }
 
-    Map<String, dynamic> data = jsonDecode(tokenResp.body);
+    final Map<String, dynamic> data = jsonDecode(tokenResp.body);
     final accessToken = AccessToken(
       'Bearer',
       data['access_token'] as String,
@@ -140,7 +139,8 @@ class GoogleCalendarService {
   }
 
   AutoRefreshingAuthClient _setClientFromCredentials(
-      AccessCredentials creds) {
+    AccessCredentials creds,
+  ) {
     final clientId = ClientId(GoogleConfig.clientId);
     final client = autoRefreshingClient(clientId, creds, http.Client());
     client.credentialUpdates.listen(_saveCredentials);

@@ -1,6 +1,6 @@
+import 'package:appoint/providers/fcm_token_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/providers/fcm_token_provider.dart';
 
 /// Simple widget to display FCM token status
 class FCMTokenStatusWidget extends ConsumerWidget {
@@ -52,36 +52,35 @@ class FCMTokenStatusWidget extends ConsumerWidget {
     );
   }
 
-  Widget _buildStatusRow(String label, bool value, {bool errorColor = false}) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 2),
-      child: Row(
-        children: [
-          Icon(
-            value ? Icons.check_circle : Icons.cancel,
-            color: errorColor
-                ? Colors.red
-                : value
-                    ? Colors.green
-                    : Colors.grey,
-            size: 16,
-          ),
-          const SizedBox(width: 8),
-          Text(label),
-          const Spacer(),
-          Text(
-            value ? 'Yes' : 'No',
-            style: TextStyle(
+  Widget _buildStatusRow(String label, bool value, {bool errorColor = false}) =>
+      Padding(
+        padding: const EdgeInsets.symmetric(vertical: 2),
+        child: Row(
+          children: [
+            Icon(
+              value ? Icons.check_circle : Icons.cancel,
               color: errorColor
                   ? Colors.red
                   : value
                       ? Colors.green
                       : Colors.grey,
-              fontWeight: FontWeight.bold,
+              size: 16,
             ),
-          ),
-        ],
-      ),
-    );
-  }
-} 
+            const SizedBox(width: 8),
+            Text(label),
+            const Spacer(),
+            Text(
+              value ? 'Yes' : 'No',
+              style: TextStyle(
+                color: errorColor
+                    ? Colors.red
+                    : value
+                        ? Colors.green
+                        : Colors.grey,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      );
+}

@@ -27,8 +27,8 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
         widget.slot!.startTime.month,
         widget.slot!.startTime.day,
       );
-      final _startTime = TimeOfDay.fromDateTime(widget.slot!.startTime);
-      final _endTime = TimeOfDay.fromDateTime(widget.slot!.endTime);
+      final startTime = TimeOfDay.fromDateTime(widget.slot!.startTime);
+      final endTime = TimeOfDay.fromDateTime(widget.slot!.endTime);
     }
   }
 
@@ -118,8 +118,10 @@ class _SlotDialogState extends ConsumerState<SlotDialog> {
     );
   }
 
-  Widget _buildTimePicker(final BuildContext context,
-      {required bool isStart,}) {
+  Widget _buildTimePicker(
+    final BuildContext context, {
+    required bool isStart,
+  }) {
     final theme = Theme.of(context);
     final label = isStart ? 'Start Time' : 'End Time';
     final time = isStart ? _startTime : _endTime;

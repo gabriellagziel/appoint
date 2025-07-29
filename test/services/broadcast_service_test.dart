@@ -7,10 +7,18 @@ import 'package:mocktail/mocktail.dart';
 import '../firebase_test_helper.dart';
 
 class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
-class MockCollectionReference extends Mock implements CollectionReference<Map<String, dynamic>> {}
-class MockDocumentReference extends Mock implements DocumentReference<Map<String, dynamic>> {}
-class MockQuerySnapshot extends Mock implements QuerySnapshot<Map<String, dynamic>> {}
-class MockDocumentSnapshot extends Mock implements DocumentSnapshot<Map<String, dynamic>> {}
+
+class MockCollectionReference extends Mock
+    implements CollectionReference<Map<String, dynamic>> {}
+
+class MockDocumentReference extends Mock
+    implements DocumentReference<Map<String, dynamic>> {}
+
+class MockQuerySnapshot extends Mock
+    implements QuerySnapshot<Map<String, dynamic>> {}
+
+class MockDocumentSnapshot extends Mock
+    implements DocumentSnapshot<Map<String, dynamic>> {}
 
 void main() {
   setUpAll(() async {
@@ -29,14 +37,14 @@ void main() {
       mockBroadcastsCollection = MockCollectionReference();
       mockAnalyticsCollection = MockCollectionReference();
       mockUsersCollection = MockCollectionReference();
-      
+
       when(() => mockFirestore.collection('admin_broadcasts'))
           .thenReturn(mockBroadcastsCollection);
       when(() => mockFirestore.collection('broadcast_analytics'))
           .thenReturn(mockAnalyticsCollection);
       when(() => mockFirestore.collection('users'))
           .thenReturn(mockUsersCollection);
-      
+
       broadcastService = BroadcastService(firestore: mockFirestore);
     });
 
@@ -49,10 +57,8 @@ void main() {
         final mockDocRef = MockDocumentReference();
         when(() => mockAnalyticsCollection.add(any()))
             .thenAnswer((_) async => mockDocRef);
-        when(() => mockBroadcastsCollection.doc(any()))
-            .thenReturn(mockDocRef);
-        when(() => mockDocRef.update(any()))
-            .thenAnswer((_) async => {});
+        when(() => mockBroadcastsCollection.doc(any())).thenReturn(mockDocRef);
+        when(() => mockDocRef.update(any())).thenAnswer((_) async => {});
 
         await broadcastService.trackMessageInteraction(
           'message-123',
@@ -67,10 +73,8 @@ void main() {
         final mockDocRef = MockDocumentReference();
         when(() => mockAnalyticsCollection.add(any()))
             .thenAnswer((_) async => mockDocRef);
-        when(() => mockBroadcastsCollection.doc(any()))
-            .thenReturn(mockDocRef);
-        when(() => mockDocRef.update(any()))
-            .thenAnswer((_) async => {});
+        when(() => mockBroadcastsCollection.doc(any())).thenReturn(mockDocRef);
+        when(() => mockDocRef.update(any())).thenAnswer((_) async => {});
 
         await broadcastService.trackMessageInteraction(
           'message-123',
@@ -85,7 +89,7 @@ void main() {
       test('should get message analytics', () async {
         final mockMessageDoc = MockDocumentSnapshot();
         final mockAnalyticsQuery = MockQuerySnapshot();
-        
+
         when(() => mockBroadcastsCollection.doc('message-123'))
             .thenReturn(MockDocumentReference());
         when(() => MockDocumentReference().get())
@@ -103,17 +107,17 @@ void main() {
           'failedCount': 5,
         });
 
-        when(() => mockAnalyticsCollection
-            .where('messageId', isEqualTo: 'message-123'))
-            .thenReturn(mockAnalyticsCollection);
-        when(() => mockAnalyticsCollection
-            .orderBy('timestamp', descending: true))
+        when(() => mockAnalyticsCollection.where('messageId',
+            isEqualTo: 'message-123')).thenReturn(mockAnalyticsCollection);
+        when(() =>
+                mockAnalyticsCollection.orderBy('timestamp', descending: true))
             .thenReturn(mockAnalyticsCollection);
         when(() => mockAnalyticsCollection.get())
             .thenAnswer((_) async => mockAnalyticsQuery);
         when(() => mockAnalyticsQuery.docs).thenReturn([]);
 
-        final analytics = await broadcastService.getMessageAnalytics('message-123');
+        final analytics =
+            await broadcastService.getMessageAnalytics('message-123');
 
         expect(analytics['messageId'], 'message-123');
         expect(analytics['actualRecipients'], 100);
@@ -129,17 +133,16 @@ void main() {
         final mockDoc1 = MockDocumentSnapshot();
         final mockDoc2 = MockDocumentSnapshot();
 
-        when(() => mockBroadcastsCollection
-            .where('status', isEqualTo: 'sent'))
+        when(() => mockBroadcastsCollection.where('status', isEqualTo: 'sent'))
             .thenReturn(mockBroadcastsCollection);
-        when(() => mockBroadcastsCollection
-            .orderBy('createdAt', descending: true))
+        when(() =>
+                mockBroadcastsCollection.orderBy('createdAt', descending: true))
             .thenReturn(mockBroadcastsCollection);
         when(() => mockBroadcastsCollection.get())
             .thenAnswer((_) async => mockQuerySnapshot);
 
         when(() => mockQuerySnapshot.docs).thenReturn([mockDoc1, mockDoc2]);
-        
+
         when(() => mockDoc1.data()).thenReturn({
           'actualRecipients': 100,
           'openedCount': 80,
@@ -148,7 +151,7 @@ void main() {
           'type': 'text',
           'createdAt': Timestamp.fromDate(DateTime(2024, 1, 15)),
         });
-        
+
         when(() => mockDoc2.data()).thenReturn({
           'actualRecipients': 150,
           'openedCount': 120,
@@ -174,11 +177,10 @@ void main() {
         final mockQuerySnapshot = MockQuerySnapshot();
         final mockDoc = MockDocumentSnapshot();
 
-        when(() => mockBroadcastsCollection
-            .where('status', isEqualTo: 'sent'))
+        when(() => mockBroadcastsCollection.where('status', isEqualTo: 'sent'))
             .thenReturn(mockBroadcastsCollection);
-        when(() => mockBroadcastsCollection
-            .orderBy('createdAt', descending: true))
+        when(() =>
+                mockBroadcastsCollection.orderBy('createdAt', descending: true))
             .thenReturn(mockBroadcastsCollection);
         when(() => mockBroadcastsCollection.get())
             .thenAnswer((_) async => mockQuerySnapshot);
@@ -209,23 +211,21 @@ void main() {
         final mockDoc = MockDocumentSnapshot();
         final mockDocRef = MockDocumentReference();
 
-        when(() => mockBroadcastsCollection
-            .where('status', isEqualTo: 'pending'))
+        when(() =>
+                mockBroadcastsCollection.where('status', isEqualTo: 'pending'))
             .thenReturn(mockBroadcastsCollection);
-        when(() => mockBroadcastsCollection
-            .where('scheduledFor', isLessThanOrEqualTo: any()))
-            .thenReturn(mockBroadcastsCollection);
+        when(() => mockBroadcastsCollection.where('scheduledFor',
+            isLessThanOrEqualTo: any())).thenReturn(mockBroadcastsCollection);
         when(() => mockBroadcastsCollection.get())
             .thenAnswer((_) async => mockQuerySnapshot);
 
         when(() => mockQuerySnapshot.docs).thenReturn([mockDoc]);
         when(() => mockDoc.id).thenReturn('message-123');
-        
+
         // Mock the getBroadcastMessage and sendBroadcastMessage calls
         when(() => mockBroadcastsCollection.doc('message-123'))
             .thenReturn(mockDocRef);
-        when(() => mockDocRef.get())
-            .thenAnswer((_) async => mockDoc);
+        when(() => mockDocRef.get()).thenAnswer((_) async => mockDoc);
         when(() => mockDoc.exists).thenReturn(true);
         when(() => mockDoc.data()).thenReturn({
           'id': 'message-123',
@@ -237,7 +237,8 @@ void main() {
           'createdByAdminName': 'Admin',
           'createdAt': Timestamp.now(),
           'status': 'pending',
-          'scheduledFor': Timestamp.fromDate(DateTime.now().subtract(Duration(minutes: 5))),
+          'scheduledFor':
+              Timestamp.fromDate(DateTime.now().subtract(Duration(minutes: 5))),
         });
 
         // Mock the _getTargetUsers call
@@ -247,14 +248,14 @@ void main() {
             .thenAnswer((_) async => MockQuerySnapshot());
         when(() => MockQuerySnapshot().docs).thenReturn([]);
 
-        when(() => mockDocRef.update(any()))
-            .thenAnswer((_) async => {});
+        when(() => mockDocRef.update(any())).thenAnswer((_) async => {});
 
         await broadcastService.processScheduledMessages();
 
         // Verify that the scheduled message processing was attempted
-        verify(() => mockBroadcastsCollection
-            .where('status', isEqualTo: 'pending')).called(1);
+        verify(() =>
+                mockBroadcastsCollection.where('status', isEqualTo: 'pending'))
+            .called(1);
       });
     });
 
@@ -348,7 +349,8 @@ void main() {
         );
       });
 
-      test('should throw exception for non-existent message analytics', () async {
+      test('should throw exception for non-existent message analytics',
+          () async {
         final mockMessageDoc = MockDocumentSnapshot();
         when(() => mockBroadcastsCollection.doc('non-existent'))
             .thenReturn(MockDocumentReference());

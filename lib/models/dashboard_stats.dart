@@ -1,5 +1,4 @@
 class DashboardStats {
-
   DashboardStats({
     required this.totalAppointments,
     required this.completedAppointments,

@@ -61,25 +61,25 @@ class NetworkErrorRetry extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Icon(Icons.wifi_off, size: 64, color: Colors.red),
-            const SizedBox(height: 16),
-            const Text(
-              'Network error. Please check your connection and try again.',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 16),
-            ),
-            const SizedBox(height: 24),
-            ElevatedButton.icon(
-              icon: const Icon(Icons.refresh),
-              label: const Text('Retry'),
-              onPressed: onRetry,
-            ),
-          ],
+        body: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Icon(Icons.wifi_off, size: 64, color: Colors.red),
+              const SizedBox(height: 16),
+              const Text(
+                'Network error. Please check your connection and try again.',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 16),
+              ),
+              const SizedBox(height: 24),
+              ElevatedButton.icon(
+                icon: const Icon(Icons.refresh),
+                label: const Text('Retry'),
+                onPressed: onRetry,
+              ),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 }

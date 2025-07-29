@@ -9,12 +9,14 @@ class LocalizedDateFormatter {
   LocalizedDateFormatter(this._locale);
 
   /// Create a formatter from the generated [AppLocalizations].
-  factory LocalizedDateFormatter.fromL10n(AppLocalizations l10n) => LocalizedDateFormatter(l10n.localeName);
+  factory LocalizedDateFormatter.fromL10n(AppLocalizations l10n) =>
+      LocalizedDateFormatter(l10n.localeName);
 
   final String _locale;
 
   /// Format a calendar date like "Jan 5, 2024" respecting locale.
-  String formatDate(DateTime date) => DateFormat.yMMMMEEEEd(_locale).format(date);
+  String formatDate(DateTime date) =>
+      DateFormat.yMMMMEEEEd(_locale).format(date);
 
   /// Format the difference from [timestamp] to now in a human friendly form.
   String formatRelative(DateTime timestamp) {

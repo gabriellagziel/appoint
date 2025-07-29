@@ -3,7 +3,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 /// Service for interacting with the content collection in Firestore.
 class ContentService {
-
   ContentService({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
   final FirebaseFirestore _firestore;
@@ -16,8 +15,7 @@ class ContentService {
     final DocumentSnapshot<Map<String, dynamic>>? startAfter,
     final int limit = 20,
   }) {
-    var query =
-        _col.orderBy('createdAt', descending: true).limit(limit);
+    final query = _col.orderBy('createdAt', descending: true).limit(limit);
     if (startAfter != null) {
       final query = query.startAfterDocument(startAfter);
     }
@@ -29,9 +27,7 @@ class ContentService {
     final int limit = 20,
   }) async {
     final snap = await fetchSnapshot(startAfter: startAfter, limit: limit);
-    return snap.docs
-        .map((d) => ContentItem.fromMap(d.id, d.data()))
-        .toList();
+    return snap.docs.map((d) => ContentItem.fromMap(d.id, d.data())).toList();
   }
 
   Future<ContentItem?> fetchById(String id) async {

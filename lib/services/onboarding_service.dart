@@ -1,14 +1,14 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class OnboardingService {
+  OnboardingService._internal();
   static const String _onboardingCompletedKey = 'onboarding_completed';
   static const String _onboardingVersionKey = 'onboarding_version';
   static const String _currentOnboardingVersion = '1.0.0';
 
   static OnboardingService? _instance;
-  static OnboardingService get instance => _instance ??= OnboardingService._internal();
-  
-  OnboardingService._internal();
+  static OnboardingService get instance =>
+      _instance ??= OnboardingService._internal();
 
   /// Check if onboarding has been completed
   Future<bool> isOnboardingCompleted() async {
@@ -16,13 +16,13 @@ class OnboardingService {
       final prefs = await SharedPreferences.getInstance();
       final completed = prefs.getBool(_onboardingCompletedKey) ?? false;
       final version = prefs.getString(_onboardingVersionKey);
-      
+
       // If version changed, reset onboarding
       if (version != _currentOnboardingVersion) {
         await prefs.remove(_onboardingCompletedKey);
         return false;
       }
-      
+
       return completed;
     } catch (e) {
       // If there's an error, assume onboarding is not completed
@@ -63,7 +63,5 @@ class OnboardingService {
   }
 
   /// Check if onboarding should be shown (for new users or version updates)
-  Future<bool> shouldShowOnboarding() async {
-    return !await isOnboardingCompleted();
-  }
-} 
+  Future<bool> shouldShowOnboarding() async => !await isOnboardingCompleted();
+}

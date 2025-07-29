@@ -17,13 +17,19 @@ class AuthWrapper extends ConsumerWidget {
       case UserRole.business:
         return const BusinessDashboardScreen();
       case UserRole.staff:
-        return Scaffold(body: Center(child: Text(l10n?.staffScreenTBD ?? 'Staff Screen TBD')));
+        return Scaffold(
+            body: Center(
+                child: Text(l10n?.staffScreenTBD ?? 'Staff Screen TBD')));
       case UserRole.admin:
-        return Scaffold(body: Center(child: Text(l10n?.adminScreenTBD ?? 'Admin Screen TBD')));
+        return Scaffold(
+            body: Center(
+                child: Text(l10n?.adminScreenTBD ?? 'Admin Screen TBD')));
       case UserRole.client:
-        return Scaffold(body: Center(child: Text(l10n?.clientScreenTBD ?? 'Client Screen TBD')));
+        return Scaffold(
+            body: Center(
+                child: Text(l10n?.clientScreenTBD ?? 'Client Screen TBD')));
       default:
-        return Scaffold(body: Center(child: Text('Unknown role')));
+        return const Scaffold(body: Center(child: Text('Unknown role')));
     }
   }
 }

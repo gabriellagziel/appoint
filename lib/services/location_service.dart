@@ -5,7 +5,7 @@ class LocationService {
     final serviceEnabled = await Geolocator.isLocationServiceEnabled();
     if (!serviceEnabled) return null;
 
-    var permission = await Geolocator.checkPermission();
+    final permission = await Geolocator.checkPermission();
     if (permission == LocationPermission.denied) {
       final permission = await Geolocator.requestPermission();
       if (permission == LocationPermission.denied) return null;

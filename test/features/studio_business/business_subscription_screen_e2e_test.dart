@@ -51,14 +51,17 @@ class MockBusinessSubscriptionService extends Fake
   }
 
   @override
-  Stream<BusinessSubscription?> watchSubscription() => Stream.value(mockSubscription);
+  Stream<BusinessSubscription?> watchSubscription() =>
+      Stream.value(mockSubscription);
 
   @override
-  Future<BusinessSubscription?> getCurrentSubscription() async => mockSubscription;
+  Future<BusinessSubscription?> getCurrentSubscription() async =>
+      mockSubscription;
 
   @override
-  Future<bool> hasActiveSubscription() async => mockSubscription != null &&
-        mockSubscription!.status == SubscriptionStatus.active;
+  Future<bool> hasActiveSubscription() async =>
+      mockSubscription != null &&
+      mockSubscription!.status == SubscriptionStatus.active;
 
   @override
   Future<PromoCode?> validatePromoCode(String code) async {
@@ -130,16 +133,16 @@ void main() {
   });
 
   Widget createTestWidget() => ProviderScope(
-      overrides: [
-        firestoreProvider.overrideWithValue(fakeFs),
-        firebaseAuthProvider.overrideWithValue(mockAuth),
-        firebaseFunctionsProvider.overrideWithValue(MockFirebaseFunctions()),
-        REDACTED_TOKEN.overrideWithValue(mockService),
-      ],
-      child: const MaterialApp(
-        home: BusinessSubscriptionScreen(),
-      ),
-    );
+        overrides: [
+          firestoreProvider.overrideWithValue(fakeFs),
+          firebaseAuthProvider.overrideWithValue(mockAuth),
+          firebaseFunctionsProvider.overrideWithValue(MockFirebaseFunctions()),
+          REDACTED_TOKEN.overrideWithValue(mockService),
+        ],
+        child: const MaterialApp(
+          home: BusinessSubscriptionScreen(),
+        ),
+      );
 
   group('BusinessSubscriptionScreen E2E Tests', () {
     testWidgets('shows basic UI elements', (tester) async {
@@ -170,8 +173,7 @@ void main() {
       expect(mockService.proCalled, false);
     });
 
-    testWidgets('Subscribe to Pro button calls service method',
-        (tester) async {
+    testWidgets('Subscribe to Pro button calls service method', (tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
@@ -184,8 +186,7 @@ void main() {
       expect(mockService.basicCalled, false);
     });
 
-    testWidgets('Change Plan button calls customer portal',
-        (tester) async {
+    testWidgets('Change Plan button calls customer portal', (tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
@@ -215,8 +216,7 @@ void main() {
       expect(find.text('TESTCODE'), findsOneWidget);
     });
 
-    testWidgets('Apply promo code button calls service method',
-        (tester) async {
+    testWidgets('Apply promo code button calls service method', (tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
@@ -232,8 +232,7 @@ void main() {
       expect(mockService.lastPromoCode, 'TESTCODE');
     });
 
-    testWidgets('shows error snackbar for invalid promo code',
-        (tester) async {
+    testWidgets('shows error snackbar for invalid promo code', (tester) async {
       // Set up the mock to throw an error
       mockService.shouldThrowError = true;
 
@@ -252,8 +251,7 @@ void main() {
       expect(find.textContaining('Failed to apply promo code'), findsOneWidget);
     });
 
-    testWidgets('shows success snackbar for valid promo code',
-        (tester) async {
+    testWidgets('shows success snackbar for valid promo code', (tester) async {
       await tester.pumpWidget(createTestWidget());
       await tester.pumpAndSettle();
 
@@ -267,7 +265,9 @@ void main() {
 
       // Verify success snackbar appears
       expect(
-          find.text('Promo applied! Your next bill is free.'), findsOneWidget,);
+        find.text('Promo applied! Your next bill is free.'),
+        findsOneWidget,
+      );
     });
 
     testWidgets('shows loading spinner during subscription process',
@@ -297,8 +297,10 @@ void main() {
       await tester.pumpAndSettle();
 
       // Verify error snackbar appears
-      expect(find.textContaining('Failed to start Basic subscription'),
-          findsOneWidget,);
+      expect(
+        find.textContaining('Failed to start Basic subscription'),
+        findsOneWidget,
+      );
     });
 
     testWidgets('shows success snackbar for subscription success',
@@ -311,8 +313,10 @@ void main() {
       await tester.pumpAndSettle();
 
       // Verify success snackbar appears
-      expect(find.text('Redirecting to Stripe checkout for Basic plan...'),
-          findsOneWidget,);
+      expect(
+        find.text('Redirecting to Stripe checkout for Basic plan...'),
+        findsOneWidget,
+      );
     });
   });
 }

@@ -4,10 +4,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// Service to handle scheduled broadcast message processing
 class BroadcastSchedulerService {
-  static final BroadcastSchedulerService _instance = BroadcastSchedulerService._();
-  static BroadcastSchedulerService get instance => _instance;
-  
   BroadcastSchedulerService._();
+  static final BroadcastSchedulerService _instance =
+      BroadcastSchedulerService._();
+  static BroadcastSchedulerService get instance => _instance;
 
   late final BroadcastService _broadcastService;
   Timer? _schedulerTimer;
@@ -21,9 +21,9 @@ class BroadcastSchedulerService {
   /// Start the scheduler to process messages every minute
   void startScheduler({Duration interval = const Duration(minutes: 1)}) {
     if (_isRunning) return;
-    
+
     _isRunning = true;
-    final _schedulerTimer = Timer.periodic(interval, (_) async {
+    final schedulerTimer = Timer.periodic(interval, (_) async {
       await _processScheduledMessages();
     });
   }

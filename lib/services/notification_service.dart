@@ -1,22 +1,22 @@
 import 'dart:io';
+
 import 'package:appoint/models/notification_payload.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cloud_functions/cloud_functions.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter/material.dart';
-import 'package:timezone/timezone.dart' as tz;
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/data/latest.dart' as tz;
-import 'package:appoint/providers/fcm_token_provider.dart';
+import 'package:timezone/timezone.dart' as tz;
 
 /// Comprehensive notification service that handles both local and FCM notifications
 class NotificationService {
   final FirebaseMessaging _messaging = FirebaseMessaging.instance;
   final FirebaseFunctions _functions = FirebaseFunctions.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  
+
   // Local notifications plugin
-  final FlutterLocalNotificationsPlugin _localNotifications = 
+  final FlutterLocalNotificationsPlugin _localNotifications =
       FlutterLocalNotificationsPlugin();
 
   Function(NotificationPayload)? _onMessage;
@@ -27,35 +27,32 @@ class NotificationService {
     Function(NotificationPayload)? onMessage,
   }) async {
     if (_isInitialized) return;
-    
+
     _onMessage = onMessage;
-    
+
     // Initialize timezone
     tz.initializeTimeZones();
-    
+
     // Initialize local notifications
     await _initializeLocalNotifications();
-    
+
     // Initialize FCM
     await _initializeFCM();
-    
+
     _isInitialized = true;
   }
 
   /// Initialize local notifications
   Future<void> _initializeLocalNotifications() async {
-    const androidSettings = AndroidInitializationSettings('@mipmap/ic_launcher');
-    const iosSettings = DarwinInitializationSettings(
-      requestAlertPermission: true,
-      requestBadgePermission: true,
-      requestSoundPermission: true,
-    );
-    
+    const androidSettings =
+        AndroidInitializationSettings('@mipmap/ic_launcher');
+    const iosSettings = DarwinInitializationSettings();
+
     const initializationSettings = InitializationSettings(
       android: androidSettings,
       iOS: iosSettings,
     );
-    
+
     await _localNotifications.initialize(
       initializationSettings,
       REDACTED_TOKEN: _onLocalNotificationTapped,
@@ -103,18 +100,18 @@ class NotificationService {
       importance: Importance.high,
       priority: Priority.high,
     );
-    
+
     const iosDetails = DarwinNotificationDetails(
       presentAlert: true,
       presentBadge: true,
       presentSound: true,
     );
-    
+
     const details = NotificationDetails(
       android: androidDetails,
       iOS: iosDetails,
     );
-    
+
     await _localNotifications.show(
       id ?? DateTime.now().millisecondsSinceEpoch ~/ 1000,
       title,
@@ -139,18 +136,18 @@ class NotificationService {
       importance: Importance.high,
       priority: Priority.high,
     );
-    
+
     const iosDetails = DarwinNotificationDetails(
       presentAlert: true,
       presentBadge: true,
       presentSound: true,
     );
-    
+
     const details = NotificationDetails(
       android: androidDetails,
       iOS: iosDetails,
     );
-    
+
     await _localNotifications.zonedSchedule(
       id ?? DateTime.now().millisecondsSinceEpoch ~/ 1000,
       title,
@@ -173,7 +170,7 @@ class NotificationService {
       // This is a stub implementation - in a real app, this would call FCM
       debugPrint('FCM Stub: Sending notification to token: $fcmToken');
       debugPrint('Title: $title, Body: $body, Data: $data');
-      
+
       // In a real implementation, you would call:
       // await _functions
       //     .httpsCallable('sendNotification')
@@ -199,7 +196,7 @@ class NotificationService {
     try {
       final doc = await _firestore.collection('users').doc(uid).get();
       final token = doc.data()?['fcmToken'] as String?;
-      
+
       if (token != null) {
         await sendPushNotification(
           fcmToken: token,
@@ -234,9 +231,7 @@ class NotificationService {
   }
 
   /// Get FCM token
-  Future<String?> getToken() async {
-    return await _messaging.getToken();
-  }
+  Future<String?> getToken() async => _messaging.getToken();
 
   /// Save token for user using Firestore
   Future<void> saveTokenForUser(String uid) async {
@@ -251,8 +246,11 @@ class NotificationService {
 
   /// Send notification to specific token (legacy method)
   Future<void> sendNotification(
-      final String token, final String title, final String body,
-      {Map<String, dynamic>? data,}) async {
+    final String token,
+    final String title,
+    final String body, {
+    Map<String, dynamic>? data,
+  }) async {
     await sendPushNotification(
       fcmToken: token,
       title: title,
@@ -263,7 +261,10 @@ class NotificationService {
 
   /// Send test notification
   Future<void> sendTestNotification(
-      String token, final String title, final String body,) async {
+    String token,
+    final String title,
+    final String body,
+  ) async {
     await sendPushNotification(
       fcmToken: token,
       title: title,
@@ -273,7 +274,7 @@ class NotificationService {
 
   /// Fetch notifications for the given user.
   ///
-  /// TODO(username): Implement real notification fetching from Firestore
+  // TODO(username): Implement real notification fetching from Firestore
   Future<List<NotificationPayload>> fetchNotifications(String uid) async {
     // Stub implementation - returns empty list for now
     // In a real implementation, this would query Firestore for user notifications
@@ -319,7 +320,6 @@ class NotificationService {
   }
 
   /// Get pending notification requests
-  Future<List<PendingNotificationRequest>> getPendingNotifications() async {
-    return await _localNotifications.pendingNotificationRequests();
-  }
+  Future<List<PendingNotificationRequest>> getPendingNotifications() async =>
+      _localNotifications.pendingNotificationRequests();
 }

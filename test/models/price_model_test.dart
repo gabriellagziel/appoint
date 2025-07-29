@@ -17,15 +17,13 @@ void main() {
 
   group('equality & hashCode', () {
     test('identical values are equal', () {
-      const clone =
-          PriceModel(amount: 50, currency: 'USD');
+      const clone = PriceModel(amount: 50, currency: 'USD');
       expect(base, clone);
       expect(base.hashCode, clone.hashCode);
     });
 
     test('different values are not equal', () {
-      const other =
-          PriceModel(amount: 55, currency: 'USD');
+      const other = PriceModel(amount: 55, currency: 'USD');
       expect(base == other, isFalse);
     });
   });

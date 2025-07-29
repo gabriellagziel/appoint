@@ -51,23 +51,23 @@ class _InviteChildScreenState extends ConsumerState<InviteChildScreen> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(title: const Text('Invite Child')),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          children: [
-            TextField(
-              controller: _contactController,
-              decoration:
-                  const InputDecoration(labelText: 'Child Email or Phone'),
-            ),
-            const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: _onSendInvite,
-              child: const Text('Send Invite'),
-            ),
-          ],
+        appBar: AppBar(title: const Text('Invite Child')),
+        body: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              TextField(
+                controller: _contactController,
+                decoration:
+                    const InputDecoration(labelText: 'Child Email or Phone'),
+              ),
+              const SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: _onSendInvite,
+                child: const Text('Send Invite'),
+              ),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 }

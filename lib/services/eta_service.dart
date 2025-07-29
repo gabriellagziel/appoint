@@ -1,27 +1,29 @@
 import 'dart:convert';
+
 import 'package:appoint/config/environment_config.dart';
-import 'package:http/http.dart' as http;
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:http/http.dart' as http;
 
 enum TravelMode { driving, walking, bicycling, transit }
 
 class EtaService {
+  factory EtaService() => _instance;
   // singleton
   EtaService._();
   static final EtaService _instance = EtaService._();
-  factory EtaService() => _instance;
 
   Future<int?> getEtaMinutes({
     required LatLng origin,
     required LatLng dest,
     TravelMode mode = TravelMode.driving,
   }) async {
-    final key = EnvironmentConfig.googleMapsApiKey;
+    const key = EnvironmentConfig.googleMapsApiKey;
     if (key.isEmpty) {
       throw Exception('Google Maps API key not configured');
     }
 
-    final uri = Uri.https('maps.googleapis.com', '/maps/api/distancematrix/json', {
+    final uri =
+        Uri.https('maps.googleapis.com', '/maps/api/distancematrix/json', {
       'origins': '${origin.latitude},${origin.longitude}',
       'destinations': '${dest.latitude},${dest.longitude}',
       'departure_time': 'now',
@@ -40,7 +42,8 @@ class EtaService {
       return null;
     }
     final element = data['rows'][0]['elements'][0];
-    final seconds = element['duration_in_traffic']?['value'] ?? element['duration']['value'];
+    final seconds = element['duration_in_traffic']?['value'] ??
+        element['duration']['value'];
     return (seconds / 60).round();
   }
 }

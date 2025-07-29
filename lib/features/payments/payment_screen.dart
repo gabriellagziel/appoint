@@ -11,7 +11,7 @@ class PaymentScreen extends ConsumerStatefulWidget {
 }
 
 class _PaymentScreenState extends ConsumerState<PaymentScreen> {
-  TextEditingController _amountController = TextEditingController();
+  final TextEditingController _amountController = TextEditingController();
   PaymentStatus _paymentStatus = PaymentStatus.initial;
   String? _errorMessage;
 
@@ -31,7 +31,7 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
     }
     setState(() {
       _paymentStatus = PaymentStatus.processing;
-      final _errorMessage = null;
+      const errorMessage = null;
     });
     final status = await ref.read(paymentServiceProvider).handlePayment(amount);
     setState(() {
@@ -58,8 +58,9 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
             onPressed: () {
               Navigator.of(context).pop();
               Navigator.of(context).pushReplacementNamed(
-                  '/payment/confirmation',
-                  arguments: true,);
+                '/payment/confirmation',
+                arguments: true,
+              );
             },
             child: const Text('Continue'),
           ),
@@ -79,8 +80,10 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
             children: [
               CircularProgressIndicator(),
               SizedBox(height: 16),
-              Text('Authenticating…',
-                  style: TextStyle(color: Colors.white, fontSize: 18),),
+              Text(
+                'Authenticating…',
+                style: TextStyle(color: Colors.white, fontSize: 18),
+              ),
             ],
           ),
         ),

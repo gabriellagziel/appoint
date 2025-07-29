@@ -10,7 +10,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class BookingHelper {
-
   BookingHelper({
     final BookingService? bookingService,
     final AppointmentService? appointmentService,
@@ -244,35 +243,47 @@ class BookingHelper {
 
           // Only add slot if it's still within business hours
           if (time.hour >= businessStartHour) {
-            isAvailable = availability.any((final avail) =>
-                avail.startTime.isBefore(time) &&
-                avail.endTime.isAfter(adjustedEnd),);
+            isAvailable = availability.any(
+              (final avail) =>
+                  avail.startTime.isBefore(time) &&
+                  avail.endTime.isAfter(adjustedEnd),
+            );
 
             if (isAvailable) {
               final isBooked = await _isSlotBooked(
-                  staffId, time, adjustedEnd.difference(time),);
+                staffId,
+                time,
+                adjustedEnd.difference(time),
+              );
               if (!isBooked) {
-                slots.add(TimeSlot(
-                  startTime: time,
-                  endTime: adjustedEnd,
-                  isAvailable: true,
-                ),);
+                slots.add(
+                  TimeSlot(
+                    startTime: time,
+                    endTime: adjustedEnd,
+                    isAvailable: true,
+                  ),
+                );
               }
             }
           }
         } else {
           // Normal slot within same day
-          isAvailable = availability.any((final avail) =>
-              avail.startTime.isBefore(time) && avail.endTime.isAfter(slotEnd),);
+          isAvailable = availability.any(
+            (final avail) =>
+                avail.startTime.isBefore(time) &&
+                avail.endTime.isAfter(slotEnd),
+          );
 
           if (isAvailable) {
             isBooked = await _isSlotBooked(staffId, time, duration);
             if (!isBooked) {
-              slots.add(TimeSlot(
-                startTime: time,
-                endTime: slotEnd,
-                isAvailable: true,
-              ),);
+              slots.add(
+                TimeSlot(
+                  startTime: time,
+                  endTime: slotEnd,
+                  isAvailable: true,
+                ),
+              );
             }
           }
         }
@@ -303,7 +314,8 @@ class BookingHelper {
     maxDate = now.add(const Duration(days: 30));
     if (dateTime.isAfter(maxDate)) {
       return ValidationResult.error(
-          'Booking cannot be more than 30 days in advance',);
+        'Booking cannot be more than 30 days in advance',
+      );
     }
 
     // Check if staff exists and is available
@@ -325,7 +337,8 @@ class BookingHelper {
     // Check if booking starts within business hours
     if (dateTime.hour < businessStartHour || dateTime.hour >= businessEndHour) {
       return ValidationResult.error(
-          'Bookings are only available between 9 AM and 6 PM local time',);
+        'Bookings are only available between 9 AM and 6 PM local time',
+      );
     }
 
     // Check if booking duration would extend beyond business hours
@@ -337,20 +350,23 @@ class BookingHelper {
       // Booking crosses midnight - check if it starts late enough to be valid
       if (dateTime.hour < businessStartHour) {
         return ValidationResult.error(
-            'Bookings cannot start before 9 AM local time',);
+          'Bookings cannot start before 9 AM local time',
+        );
       }
     } else {
       // Same day booking - check if it ends within business hours
       if (bookingEndHour > businessEndHour) {
         return ValidationResult.error(
-            'Bookings cannot extend beyond 6 PM local time',);
+          'Bookings cannot extend beyond 6 PM local time',
+        );
       }
     }
 
     // Validate booking duration (minimum 15 minutes, maximum 8 hours)
     if (duration.inMinutes < 15) {
       return ValidationResult.error(
-          'Booking duration must be at least 15 minutes',);
+        'Booking duration must be at least 15 minutes',
+      );
     }
     if (duration.inHours > 8) {
       return ValidationResult.error('Booking duration cannot exceed 8 hours');
@@ -385,7 +401,9 @@ class BookingHelper {
 
   /// Get staff availability
   Future<List<AvailabilitySlot>> _getStaffAvailability(
-      String staffId, final DateTime date,) async {
+    String staffId,
+    final DateTime date,
+  ) async {
     try {
       final snapshot = await _firestore
           .collection('staff_availability')
@@ -407,8 +425,11 @@ class BookingHelper {
   }
 
   /// Check if a time slot is already booked
-  Future<bool> _isSlotBooked(final String staffId, final DateTime startTime,
-      Duration duration,) async {
+  Future<bool> _isSlotBooked(
+    final String staffId,
+    final DateTime startTime,
+    Duration duration,
+  ) async {
     endTime = startTime.add(duration);
 
     final snapshot = await _firestore
@@ -435,7 +456,9 @@ class BookingHelper {
 
   /// Send notifications and track analytics (fire and forget)
   Future<void> _sendBookingNotifications(
-      Booking booking, final Appointment appointment,) async {
+    Booking booking,
+    final Appointment appointment,
+  ) async {
     try {
       // Notify staff member
       await _notificationService.sendNotificationToUser(
@@ -457,7 +480,9 @@ class BookingHelper {
 
   /// Send cancellation notifications
   Future<void> _sendCancellationNotifications(
-      Booking booking, final String? reason,) async {
+    Booking booking,
+    final String? reason,
+  ) async {
     try {
       final reasonText = reason ?? 'No reason provided';
 
@@ -465,14 +490,16 @@ class BookingHelper {
       await _notificationService.sendNotificationToUser(
         uid: booking.staffId,
         title: 'Booking Cancelled',
-        body: 'A booking for ${booking.serviceName} has been cancelled. Reason: $reasonText',
+        body:
+            'A booking for ${booking.serviceName} has been cancelled. Reason: $reasonText',
       );
 
       // Notify customer
       await _notificationService.sendNotificationToUser(
         uid: booking.userId,
         title: 'Booking Cancelled',
-        body: 'Your booking for ${booking.serviceName} has been cancelled. Reason: $reasonText',
+        body:
+            'Your booking for ${booking.serviceName} has been cancelled. Reason: $reasonText',
       );
     } catch (e) {
       // Removed debug print: debugPrint('Error sending cancellation notifications: $e');
@@ -481,7 +508,9 @@ class BookingHelper {
 
   /// Track booking analytics
   Future<void> _trackBookingAnalytics(
-      Booking booking, final String? studioId,) async {
+    Booking booking,
+    final String? studioId,
+  ) async {
     try {
       await _firestore.collection('booking_analytics').add({
         'bookingId': booking.id,
@@ -501,7 +530,9 @@ class BookingHelper {
 
   /// Update appointment time
   Future<void> _updateAppointmentTime(
-      String bookingId, final DateTime newTime,) async {
+    String bookingId,
+    final DateTime newTime,
+  ) async {
     try {
       // Find appointment by booking ID
       final snapshot = await _firestore
@@ -544,7 +575,6 @@ class BookingHelper {
 
 /// Result class for booking operations
 class BookingResult {
-
   BookingResult._({
     required this.isSuccess,
     this.booking,
@@ -553,21 +583,24 @@ class BookingResult {
   });
 
   factory BookingResult.success(
-      Booking? booking, final Appointment? appointment,) => BookingResult._(
-      isSuccess: true,
-      booking: booking,
-      appointment: appointment,
-    );
+    Booking? booking,
+    final Appointment? appointment,
+  ) =>
+      BookingResult._(
+        isSuccess: true,
+        booking: booking,
+        appointment: appointment,
+      );
 
   factory BookingResult.error(String message) => BookingResult._(
-      isSuccess: false,
-      errorMessage: message,
-    );
+        isSuccess: false,
+        errorMessage: message,
+      );
 
   factory BookingResult.cancelled(Booking booking) => BookingResult._(
-      isSuccess: true,
-      booking: booking,
-    );
+        isSuccess: true,
+        booking: booking,
+      );
   final bool isSuccess;
   final Booking? booking;
   final Appointment? appointment;
@@ -576,7 +609,6 @@ class BookingResult {
 
 /// Validation result for booking parameters
 class ValidationResult {
-
   ValidationResult._({
     required this.isValid,
     this.errorMessage,
@@ -585,16 +617,15 @@ class ValidationResult {
   factory ValidationResult.success() => ValidationResult._(isValid: true);
 
   factory ValidationResult.error(String message) => ValidationResult._(
-      isValid: false,
-      errorMessage: message,
-    );
+        isValid: false,
+        errorMessage: message,
+      );
   final bool isValid;
   final String? errorMessage;
 }
 
 /// Time slot for availability
 class TimeSlot {
-
   TimeSlot({
     required this.startTime,
     required this.endTime,
@@ -607,7 +638,6 @@ class TimeSlot {
 
 /// Availability slot for staff
 class AvailabilitySlot {
-
   AvailabilitySlot({
     required this.startTime,
     required this.endTime,

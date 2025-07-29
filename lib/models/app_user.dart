@@ -22,22 +22,23 @@ class AppUser with _$AppUser {
     @JsonKey(includeFromJson: false, includeToJson: false) User? firebaseUser,
   }) = _AppUser;
 
-  factory AppUser.fromJson(Map<String, dynamic> json) => _$AppUserFromJson(json);
+  factory AppUser.fromJson(Map<String, dynamic> json) =>
+      _$AppUserFromJson(json);
 
-  factory AppUser.fromFirebaseUser(User firebaseUser, {Map<String, dynamic>? customClaims}) {
-    return AppUser(
-      uid: firebaseUser.uid,
-      email: firebaseUser.email,
-      displayName: firebaseUser.displayName,
-      photoURL: firebaseUser.photoURL,
-      emailVerified: firebaseUser.emailVerified,
-      role: customClaims?['role'] ?? 'user',
-      studioId: customClaims?['studioId'],
-      businessProfileId: customClaims?['businessProfileId'],
-      customClaims: customClaims,
-      firebaseUser: firebaseUser,
-    );
-  }
+  factory AppUser.fromFirebaseUser(User firebaseUser,
+          {Map<String, dynamic>? customClaims}) =>
+      AppUser(
+        uid: firebaseUser.uid,
+        email: firebaseUser.email,
+        displayName: firebaseUser.displayName,
+        photoURL: firebaseUser.photoURL,
+        emailVerified: firebaseUser.emailVerified,
+        role: customClaims?['role'] ?? 'user',
+        studioId: customClaims?['studioId'],
+        businessProfileId: customClaims?['businessProfileId'],
+        customClaims: customClaims,
+        firebaseUser: firebaseUser,
+      );
 }
 
 /// User roles enum
@@ -49,11 +50,9 @@ enum UserRole {
   superAdmin;
 
   String get value => name;
-  
-  static UserRole fromString(String role) {
-    return UserRole.values.firstWhere(
-      (r) => r.value == role,
-      orElse: () => UserRole.user,
-    );
-  }
+
+  static UserRole fromString(String role) => UserRole.values.firstWhere(
+        (r) => r.value == role,
+        orElse: () => UserRole.user,
+      );
 }

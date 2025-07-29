@@ -3,7 +3,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class StudioBookingService {
-
   StudioBookingService({
     final FirebaseFirestore? firestore,
     final FirebaseAuth? auth,
@@ -53,13 +52,15 @@ class StudioBookingService {
         .get();
 
     return snapshot.docs
-        .map((doc) =>
-            StudioBooking.fromJson({...doc.data(), 'id': doc.id}),)
+        .map(
+          (doc) => StudioBooking.fromJson({...doc.data(), 'id': doc.id}),
+        )
         .toList();
   }
 
   Future<List<StudioBooking>> getBusinessBookings(
-      String businessProfileId) async {
+    String businessProfileId,
+  ) async {
     final snapshot = await _firestore
         .collection('studio_bookings')
         .where('businessProfileId', isEqualTo: businessProfileId)
@@ -67,13 +68,16 @@ class StudioBookingService {
         .get();
 
     return snapshot.docs
-        .map((doc) =>
-            StudioBooking.fromJson({...doc.data(), 'id': doc.id}),)
+        .map(
+          (doc) => StudioBooking.fromJson({...doc.data(), 'id': doc.id}),
+        )
         .toList();
   }
 
   Future<void> updateBookingStatus(
-      String bookingId, final String status,) async {
+    String bookingId,
+    final String status,
+  ) async {
     await _firestore.collection('studio_bookings').doc(bookingId).update({
       'status': status,
       'updatedAt': DateTime.now().toIso8601String(),

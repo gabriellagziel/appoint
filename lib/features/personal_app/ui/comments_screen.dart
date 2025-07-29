@@ -15,7 +15,7 @@ class CommentsScreen extends StatefulWidget {
 }
 
 class _CommentsScreenState extends State<CommentsScreen> {
-  CommentService _service = CommentService();
+  final CommentService _service = CommentService();
   final List<Comment> _comments = [];
 
   @override

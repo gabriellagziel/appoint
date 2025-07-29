@@ -113,7 +113,7 @@ import 'app_localizations_zh.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -136,11 +136,11 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
@@ -4923,59 +4923,59 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) => <String>[
-    'am',
-    'ar',
-    'bg',
-    'bn',
-    'bs',
-    'ca',
-    'cs',
-    'cy',
-    'da',
-    'de',
-    'en',
-    'es',
-    'et',
-    'eu',
-    'fa',
-    'fi',
-    'fo',
-    'fr',
-    'ga',
-    'gl',
-    'ha',
-    'he',
-    'hi',
-    'hr',
-    'hu',
-    'id',
-    'is',
-    'it',
-    'ja',
-    'ko',
-    'lt',
-    'lv',
-    'mk',
-    'ms',
-    'mt',
-    'nl',
-    'no',
-    'pl',
-    'pt',
-    'ro',
-    'ru',
-    'sk',
-    'sl',
-    'sq',
-    'sr',
-    'sv',
-    'th',
-    'tr',
-    'uk',
-    'ur',
-    'vi',
-    'zh',
-  ].contains(locale.languageCode);
+        'am',
+        'ar',
+        'bg',
+        'bn',
+        'bs',
+        'ca',
+        'cs',
+        'cy',
+        'da',
+        'de',
+        'en',
+        'es',
+        'et',
+        'eu',
+        'fa',
+        'fi',
+        'fo',
+        'fr',
+        'ga',
+        'gl',
+        'ha',
+        'he',
+        'hi',
+        'hr',
+        'hu',
+        'id',
+        'is',
+        'it',
+        'ja',
+        'ko',
+        'lt',
+        'lv',
+        'mk',
+        'ms',
+        'mt',
+        'nl',
+        'no',
+        'pl',
+        'pt',
+        'ro',
+        'ru',
+        'sk',
+        'sl',
+        'sq',
+        'sr',
+        'sv',
+        'th',
+        'tr',
+        'uk',
+        'ur',
+        'vi',
+        'zh',
+      ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;

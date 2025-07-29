@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main() async {
   print('🔧 Starting comprehensive fix of all remaining issues...');
-  
+
   await fixAllModels();
   await fixAllServices();
   await fixAllProviders();
@@ -10,13 +10,13 @@ void main() async {
   await fixAllUtils();
   await fixAllTheme();
   await fixAllTools();
-  
+
   print('✅ All remaining issues fixed!');
 }
 
 Future<void> fixAllModels() async {
   print('🔧 Fixing all model files...');
-  
+
   final modelFiles = [
     'lib/models/playtime_chat.dart',
     'lib/models/playtime_game.dart',
@@ -35,7 +35,7 @@ Future<void> fixAllModels() async {
     'lib/models/user_role.dart',
     'lib/models/user_type.dart',
   ];
-  
+
   for (final file in modelFiles) {
     if (await File(file).exists()) {
       await fixModelFile(file);
@@ -45,7 +45,7 @@ Future<void> fixAllModels() async {
 
 Future<void> fixAllServices() async {
   print('🔧 Fixing all service files...');
-  
+
   final serviceFiles = [
     'lib/services/ad_service.dart',
     'lib/services/admin_service.dart',
@@ -120,7 +120,7 @@ Future<void> fixAllServices() async {
     'lib/services/user_settings_service.dart',
     'lib/services/whatsapp_share_service.dart',
   ];
-  
+
   for (final file in serviceFiles) {
     if (await File(file).exists()) {
       await fixServiceFile(file);
@@ -130,7 +130,7 @@ Future<void> fixAllServices() async {
 
 Future<void> fixAllProviders() async {
   print('🔧 Fixing all provider files...');
-  
+
   final providerFiles = [
     'lib/providers/admin_broadcast_provider.dart',
     'lib/providers/admin_provider.dart',
@@ -174,7 +174,7 @@ Future<void> fixAllProviders() async {
     'lib/providers/user_subscription_provider.dart',
     'lib/providers/whatsapp_share_provider.dart',
   ];
-  
+
   for (final file in providerFiles) {
     if (await File(file).exists()) {
       await fixProviderFile(file);
@@ -184,7 +184,7 @@ Future<void> fixAllProviders() async {
 
 Future<void> fixAllWidgets() async {
   print('🔧 Fixing all widget files...');
-  
+
   final widgetFiles = [
     'lib/shared/widgets/responsive_scaffold.dart',
     'lib/widgets/accessibility/accessibility_enhancements.dart',
@@ -232,7 +232,7 @@ Future<void> fixAllWidgets() async {
     'lib/widgets/timezone_selector.dart',
     'lib/widgets/whatsapp_share_button.dart',
   ];
-  
+
   for (final file in widgetFiles) {
     if (await File(file).exists()) {
       await fixWidgetFile(file);
@@ -242,7 +242,7 @@ Future<void> fixAllWidgets() async {
 
 Future<void> fixAllUtils() async {
   print('🔧 Fixing all utility files...');
-  
+
   final utilFiles = [
     'lib/utils/admin_localizations.dart',
     'lib/utils/admin_route_wrapper.dart',
@@ -260,7 +260,7 @@ Future<void> fixAllUtils() async {
     'lib/utils/snackbar_extensions.dart',
     'lib/utils/time_utils.dart',
   ];
-  
+
   for (final file in utilFiles) {
     if (await File(file).exists()) {
       await fixUtilFile(file);
@@ -270,7 +270,7 @@ Future<void> fixAllUtils() async {
 
 Future<void> fixAllTheme() async {
   print('🔧 Fixing all theme files...');
-  
+
   final themeFiles = [
     'lib/theme/app_breakpoints.dart',
     'lib/theme/app_colors.dart',
@@ -281,7 +281,7 @@ Future<void> fixAllTheme() async {
     'lib/theme/sample_palettes.dart',
     'lib/theme/typography.dart',
   ];
-  
+
   for (final file in themeFiles) {
     if (await File(file).exists()) {
       await fixThemeFile(file);
@@ -291,14 +291,14 @@ Future<void> fixAllTheme() async {
 
 Future<void> fixAllTools() async {
   print('🔧 Fixing all tool files...');
-  
+
   final toolFiles = [
     'tool/arb_validator.dart',
     'tool/generate_origins.dart',
     'tool/localization_dashboard.dart',
     'tool/skip_unfinished_locales.dart',
   ];
-  
+
   for (final file in toolFiles) {
     if (await File(file).exists()) {
       await fixToolFile(file);
@@ -309,11 +309,16 @@ Future<void> fixAllTools() async {
 Future<void> fixModelFile(String filePath) async {
   try {
     String content = await File(filePath).readAsString();
-    
-    if (content.contains('param1') || content.contains(r'$1') || content.contains('TODO: Implement')) {
+
+    if (content.contains('param1') ||
+        content.contains(r'$1') ||
+        content.contains('TODO: Implement')) {
       final fileName = filePath.split('/').last.replaceAll('.dart', '');
-      final className = fileName.split('_').map((e) => e[0].toUpperCase() + e.substring(1)).join('');
-      
+      final className = fileName
+          .split('_')
+          .map((e) => e[0].toUpperCase() + e.substring(1))
+          .join('');
+
       content = '''import 'dart:convert';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
@@ -332,7 +337,7 @@ class $className with _\$$className {
       _\$${className}FromJson(json);
 }
 ''';
-      
+
       await File(filePath).writeAsString(content);
       print('✅ Fixed $filePath');
     }
@@ -344,11 +349,16 @@ class $className with _\$$className {
 Future<void> fixServiceFile(String filePath) async {
   try {
     String content = await File(filePath).readAsString();
-    
-    if (content.contains('param1') || content.contains(r'$1') || content.contains('TODO: Implement')) {
+
+    if (content.contains('param1') ||
+        content.contains(r'$1') ||
+        content.contains('TODO: Implement')) {
       final fileName = filePath.split('/').last.replaceAll('.dart', '');
-      final className = fileName.split('_').map((e) => e[0].toUpperCase() + e.substring(1)).join('');
-      
+      final className = fileName
+          .split('_')
+          .map((e) => e[0].toUpperCase() + e.substring(1))
+          .join('');
+
       content = '''import 'dart:async';
 
 class $className {
@@ -365,7 +375,7 @@ class $className {
   }
 }
 ''';
-      
+
       await File(filePath).writeAsString(content);
       print('✅ Fixed $filePath');
     }
@@ -377,11 +387,16 @@ class $className {
 Future<void> fixProviderFile(String filePath) async {
   try {
     String content = await File(filePath).readAsString();
-    
-    if (content.contains('param1') || content.contains(r'$1') || content.contains('TODO: Implement')) {
+
+    if (content.contains('param1') ||
+        content.contains(r'$1') ||
+        content.contains('TODO: Implement')) {
       final fileName = filePath.split('/').last.replaceAll('.dart', '');
-      final className = fileName.split('_').map((e) => e[0].toUpperCase() + e.substring(1)).join('');
-      
+      final className = fileName
+          .split('_')
+          .map((e) => e[0].toUpperCase() + e.substring(1))
+          .join('');
+
       content = '''import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class $className extends StateNotifier<dynamic> {
@@ -400,7 +415,7 @@ final ${fileName}Provider = StateNotifierProvider<$className, dynamic>((ref) {
   return $className();
 });
 ''';
-      
+
       await File(filePath).writeAsString(content);
       print('✅ Fixed $filePath');
     }
@@ -412,11 +427,16 @@ final ${fileName}Provider = StateNotifierProvider<$className, dynamic>((ref) {
 Future<void> fixWidgetFile(String filePath) async {
   try {
     String content = await File(filePath).readAsString();
-    
-    if (content.contains('param1') || content.contains(r'$1') || content.contains('TODO: Implement')) {
+
+    if (content.contains('param1') ||
+        content.contains(r'$1') ||
+        content.contains('TODO: Implement')) {
       final fileName = filePath.split('/').last.replaceAll('.dart', '');
-      final className = fileName.split('_').map((e) => e[0].toUpperCase() + e.substring(1)).join('');
-      
+      final className = fileName
+          .split('_')
+          .map((e) => e[0].toUpperCase() + e.substring(1))
+          .join('');
+
       content = '''import 'package:flutter/material.dart';
 
 class $className extends StatelessWidget {
@@ -430,7 +450,7 @@ class $className extends StatelessWidget {
   }
 }
 ''';
-      
+
       await File(filePath).writeAsString(content);
       print('✅ Fixed $filePath');
     }
@@ -442,11 +462,16 @@ class $className extends StatelessWidget {
 Future<void> fixUtilFile(String filePath) async {
   try {
     String content = await File(filePath).readAsString();
-    
-    if (content.contains('param1') || content.contains(r'$1') || content.contains('TODO: Implement')) {
+
+    if (content.contains('param1') ||
+        content.contains(r'$1') ||
+        content.contains('TODO: Implement')) {
       final fileName = filePath.split('/').last.replaceAll('.dart', '');
-      final className = fileName.split('_').map((e) => e[0].toUpperCase() + e.substring(1)).join('');
-      
+      final className = fileName
+          .split('_')
+          .map((e) => e[0].toUpperCase() + e.substring(1))
+          .join('');
+
       content = '''import 'dart:async';
 
 class $className {
@@ -463,7 +488,7 @@ class $className {
   }
 }
 ''';
-      
+
       await File(filePath).writeAsString(content);
       print('✅ Fixed $filePath');
     }
@@ -475,11 +500,16 @@ class $className {
 Future<void> fixThemeFile(String filePath) async {
   try {
     String content = await File(filePath).readAsString();
-    
-    if (content.contains('param1') || content.contains(r'$1') || content.contains('TODO: Implement')) {
+
+    if (content.contains('param1') ||
+        content.contains(r'$1') ||
+        content.contains('TODO: Implement')) {
       final fileName = filePath.split('/').last.replaceAll('.dart', '');
-      final className = fileName.split('_').map((e) => e[0].toUpperCase() + e.substring(1)).join('');
-      
+      final className = fileName
+          .split('_')
+          .map((e) => e[0].toUpperCase() + e.substring(1))
+          .join('');
+
       content = '''import 'package:flutter/material.dart';
 
 class $className {
@@ -490,7 +520,7 @@ class $className {
   // TODO: Implement theme properties
 }
 ''';
-      
+
       await File(filePath).writeAsString(content);
       print('✅ Fixed $filePath');
     }
@@ -502,11 +532,16 @@ class $className {
 Future<void> fixToolFile(String filePath) async {
   try {
     String content = await File(filePath).readAsString();
-    
-    if (content.contains('param1') || content.contains(r'$1') || content.contains('TODO: Implement')) {
+
+    if (content.contains('param1') ||
+        content.contains(r'$1') ||
+        content.contains('TODO: Implement')) {
       final fileName = filePath.split('/').last.replaceAll('.dart', '');
-      final className = fileName.split('_').map((e) => e[0].toUpperCase() + e.substring(1)).join('');
-      
+      final className = fileName
+          .split('_')
+          .map((e) => e[0].toUpperCase() + e.substring(1))
+          .join('');
+
       content = '''import 'dart:io';
 
 void main() async {
@@ -514,11 +549,11 @@ void main() async {
   // TODO: Implement tool functionality
 }
 ''';
-      
+
       await File(filePath).writeAsString(content);
       print('✅ Fixed $filePath');
     }
   } catch (e) {
     print('⚠️ Could not fix $filePath: $e');
   }
-} 
+}

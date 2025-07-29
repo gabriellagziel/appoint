@@ -1,8 +1,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-final weeklyUsageProvider =
-    StateNotifierProvider<WeeklyUsageNotifier, int>((ref) => WeeklyUsageNotifier());
+final weeklyUsageProvider = StateNotifierProvider<WeeklyUsageNotifier, int>(
+    (ref) => WeeklyUsageNotifier());
 
 class WeeklyUsageNotifier extends StateNotifier<int> {
   WeeklyUsageNotifier() : super(0) {

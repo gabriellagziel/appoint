@@ -15,4 +15,5 @@ class BookingService {
   }
 }
 
-final bookingServiceProvider = Provider<BookingService>((ref) => BookingService());
+final bookingServiceProvider =
+    Provider<BookingService>((ref) => BookingService());

@@ -80,103 +80,109 @@ class PlaytimeHubScreen extends ConsumerWidget {
   }
 
   Widget _buildWelcomeSection(
-      BuildContext context, final AppLocalizations l10n,) => Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: AppTheme.primaryColor,
-        borderRadius: BorderRadius.circular(16),
-        boxShadow: [
-          BoxShadow(
-            color: AppTheme.primaryColor.withAlpha((255 * 0.3).round()),
-            blurRadius: 10,
-            offset: const Offset(0, 4),
-          ),
-        ],
-      ),
-      child: Column(
+    BuildContext context,
+    final AppLocalizations l10n,
+  ) =>
+      Container(
+        padding: const EdgeInsets.all(20),
+        decoration: BoxDecoration(
+          color: AppTheme.primaryColor,
+          borderRadius: BorderRadius.circular(16),
+          boxShadow: [
+            BoxShadow(
+              color: AppTheme.primaryColor.withAlpha((255 * 0.3).round()),
+              blurRadius: 10,
+              offset: const Offset(0, 4),
+            ),
+          ],
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withAlpha((255 * 0.2).round()),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: const Icon(
+                    Icons.games,
+                    color: Colors.white,
+                    size: 24,
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        l10n.welcomeToPlaytime,
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        l10n.playtimeDescription,
+                        style: TextStyle(
+                          color: Colors.white.withAlpha((255 * 0.9).round()),
+                          fontSize: 14,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      );
+
+  Widget _buildQuickActions(
+    BuildContext context,
+    final AppLocalizations l10n,
+  ) =>
+      Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Text(
+            l10n.quickActions,
+            style: const TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 12),
           Row(
             children: [
-              Container(
-                padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  color: Colors.white.withAlpha((255 * 0.2).round()),
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: const Icon(
-                  Icons.games,
-                  color: Colors.white,
-                  size: 24,
+              Expanded(
+                child: _buildActionCard(
+                  context,
+                  l10n.playtimeVirtual,
+                  Icons.computer,
+                  AppTheme.secondaryColor,
+                  () => context.push('/playtime/virtual'),
                 ),
               ),
               const SizedBox(width: 12),
               Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      l10n.welcomeToPlaytime,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      l10n.playtimeDescription,
-                      style: TextStyle(
-                        color: Colors.white.withAlpha((255 * 0.9).round()),
-                        fontSize: 14,
-                      ),
-                    ),
-                  ],
+                child: _buildActionCard(
+                  context,
+                  l10n.playtimeLive,
+                  Icons.people,
+                  AppTheme.accentColor,
+                  () => context.push('/playtime/live'),
                 ),
               ),
             ],
           ),
         ],
-      ),
-    );
-
-  Widget _buildQuickActions(
-      BuildContext context, final AppLocalizations l10n,) => Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          l10n.quickActions,
-          style: const TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        const SizedBox(height: 12),
-        Row(
-          children: [
-            Expanded(
-              child: _buildActionCard(
-                context,
-                l10n.playtimeVirtual,
-                Icons.computer,
-                AppTheme.secondaryColor,
-                () => context.push('/playtime/virtual'),
-              ),
-            ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: _buildActionCard(
-                context,
-                l10n.playtimeLive,
-                Icons.people,
-                AppTheme.accentColor,
-                () => context.push('/playtime/live'),
-              ),
-            ),
-          ],
-        ),
-      ],
-    );
+      );
 
   Widget _buildActionCard(
     final BuildContext context,
@@ -184,283 +190,310 @@ class PlaytimeHubScreen extends ConsumerWidget {
     final IconData icon,
     final Color color,
     final VoidCallback onTap,
-  ) => GestureDetector(
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.all(20),
-        decoration: BoxDecoration(
-          color: color.withAlpha((255 * 0.1).round()),
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: color.withAlpha((255 * 0.3).round())),
+  ) =>
+      GestureDetector(
+        onTap: onTap,
+        child: Container(
+          padding: const EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            color: color.withAlpha((255 * 0.1).round()),
+            borderRadius: BorderRadius.circular(16),
+            border: Border.all(color: color.withAlpha((255 * 0.3).round())),
+          ),
+          child: Column(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: color,
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Icon(
+                  icon,
+                  color: Colors.white,
+                  size: 24,
+                ),
+              ),
+              const SizedBox(height: 12),
+              Text(
+                title,
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                  color: color,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
         ),
+      );
+
+  Widget _buildRecentGames(
+    BuildContext context,
+    final AppLocalizations l10n,
+  ) =>
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                l10n.recentGames,
+                style: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              TextButton(
+                onPressed: () => context.push('/playtime/games'),
+                child: Text(l10n.viewAll),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          Consumer(
+            builder: (context, final ref, final child) {
+              final gamesAsync = ref.watch(systemGamesProvider);
+
+              return gamesAsync.when(
+                data: (games) {
+                  if (games.isEmpty) {
+                    return _buildEmptyState(
+                      context,
+                      l10n.noGamesYet,
+                      l10n.createYourFirstGame,
+                      Icons.games,
+                    );
+                  }
+
+                  return SizedBox(
+                    height: 120,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: games.take(5).length,
+                      itemBuilder: (context, final index) {
+                        final game = games[index];
+                        return _buildGameCard(context, game, l10n);
+                      },
+                    ),
+                  );
+                },
+                loading: () => const Center(child: CircularProgressIndicator()),
+                error: (error, final stack) => Text('Error: $error'),
+              );
+            },
+          ),
+        ],
+      );
+
+  Widget _buildGameCard(
+    final BuildContext context,
+    final PlaytimeGame game,
+    AppLocalizations l10n,
+  ) =>
+      Container(
+        width: 120,
+        margin: const EdgeInsets.only(right: 12),
+        child: Card(
+          elevation: 2,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          child: InkWell(
+            onTap: () => context.push('/playtime/game/${game.id}'),
+            borderRadius: BorderRadius.circular(12),
+            child: Padding(
+              padding: const EdgeInsets.all(12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 20,
+                        onBackgroundImageError: (_, final __) {},
+                        child: const Icon(Icons.games, size: 20),
+                      ),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: Text(
+                          game.name,
+                          style: const TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 12,
+                          ),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    game.status,
+                    style: TextStyle(
+                      fontSize: 10,
+                      color: Colors.grey[600],
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    'Created by: ${game.createdBy}',
+                    style: TextStyle(
+                      fontSize: 10,
+                      color: Colors.grey[600],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      );
+
+  Widget _buildUpcomingSessions(
+    BuildContext context,
+    final AppLocalizations l10n,
+  ) =>
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                l10n.upcomingSessions,
+                style: const TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              TextButton(
+                onPressed: () => context.push('/playtime/sessions'),
+                child: Text(l10n.viewAll),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          Consumer(
+            builder: (context, final ref, final child) {
+              final sessionsAsync = ref.watch(confirmedSessionsProvider);
+
+              return sessionsAsync.when(
+                data: (sessions) {
+                  if (sessions.isEmpty) {
+                    return _buildEmptyState(
+                      context,
+                      l10n.noSessionsYet,
+                      l10n.createYourFirstSession,
+                      Icons.event,
+                    );
+                  }
+
+                  return Column(
+                    children: sessions
+                        .take(3)
+                        .map((session) =>
+                            _buildSessionCard(context, session, l10n))
+                        .toList(),
+                  );
+                },
+                loading: () => const Center(child: CircularProgressIndicator()),
+                error: (error, final stack) => Text('Error: $error'),
+              );
+            },
+          ),
+        ],
+      );
+
+  Widget _buildSessionCard(
+    final BuildContext context,
+    PlaytimeSession session,
+    final AppLocalizations l10n,
+  ) =>
+      Card(
+        margin: const EdgeInsets.only(bottom: 8),
+        elevation: 2,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        child: ListTile(
+          contentPadding: const EdgeInsets.all(16),
+          leading: CircleAvatar(
+            backgroundColor: session.mode == 'virtual'
+                ? AppTheme.secondaryColor
+                : AppTheme.accentColor,
+            child: Icon(
+              session.mode == 'virtual' ? Icons.computer : Icons.people,
+              color: Colors.white,
+            ),
+          ),
+          title: Text(
+            'Session ${session.id}',
+            style: const TextStyle(fontWeight: FontWeight.w600),
+          ),
+          subtitle: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const SizedBox(height: 4),
+              Text(
+                '${l10n.scheduledFor}: ${_formatDateTime(session.scheduledTime)}',
+                style: TextStyle(color: Colors.grey[600]),
+              ),
+              const SizedBox(height: 2),
+              Text(
+                '${session.participants.length} ${l10n.participants}',
+                style: TextStyle(color: Colors.grey[600]),
+              ),
+            ],
+          ),
+          trailing: IconButton(
+            icon: const Icon(Icons.arrow_forward_ios),
+            onPressed: () => context.push('/playtime/session/${session.id}'),
+          ),
+        ),
+      );
+
+  Widget _buildEmptyState(
+    final BuildContext context,
+    final String title,
+    String subtitle,
+    final IconData icon,
+  ) =>
+      Container(
+        padding: const EdgeInsets.all(24),
         child: Column(
           children: [
-            Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: color,
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Icon(
-                icon,
-                color: Colors.white,
-                size: 24,
-              ),
+            Icon(
+              icon,
+              size: 48,
+              color: Colors.grey[400],
             ),
             const SizedBox(height: 12),
             Text(
               title,
               style: TextStyle(
-                fontSize: 14,
+                fontSize: 16,
                 fontWeight: FontWeight.w600,
-                color: color,
+                color: Colors.grey[600],
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              subtitle,
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.grey[500],
               ),
               textAlign: TextAlign.center,
             ),
           ],
         ),
-      ),
-    );
-
-  Widget _buildRecentGames(
-      BuildContext context, final AppLocalizations l10n,) => Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              l10n.recentGames,
-              style: const TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            TextButton(
-              onPressed: () => context.push('/playtime/games'),
-              child: Text(l10n.viewAll),
-            ),
-          ],
-        ),
-        const SizedBox(height: 12),
-        Consumer(
-          builder: (context, final ref, final child) {
-            final gamesAsync = ref.watch(systemGamesProvider);
-
-            return gamesAsync.when(
-              data: (games) {
-                if (games.isEmpty) {
-                  return _buildEmptyState(
-                    context,
-                    l10n.noGamesYet,
-                    l10n.createYourFirstGame,
-                    Icons.games,
-                  );
-                }
-
-                return SizedBox(
-                  height: 120,
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: games.take(5).length,
-                    itemBuilder: (context, final index) {
-                      final game = games[index];
-                      return _buildGameCard(context, game, l10n);
-                    },
-                  ),
-                );
-              },
-              loading: () => const Center(child: CircularProgressIndicator()),
-              error: (error, final stack) => Text('Error: $error'),
-            );
-          },
-        ),
-      ],
-    );
-
-  Widget _buildGameCard(final BuildContext context, final PlaytimeGame game,
-      AppLocalizations l10n,) => Container(
-      width: 120,
-      margin: const EdgeInsets.only(right: 12),
-      child: Card(
-        elevation: 2,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        child: InkWell(
-          onTap: () => context.push('/playtime/game/${game.id}'),
-          borderRadius: BorderRadius.circular(12),
-          child: Padding(
-            padding: const EdgeInsets.all(12),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    CircleAvatar(
-                      radius: 20,
-                      onBackgroundImageError: (_, final __) {},
-                      child: const Icon(Icons.games, size: 20),
-                    ),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        game.name,
-                        style: const TextStyle(
-                          fontWeight: FontWeight.w600,
-                          fontSize: 12,
-                        ),
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  game.status,
-                  style: TextStyle(
-                    fontSize: 10,
-                    color: Colors.grey[600],
-                  ),
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  'Created by: ${game.createdBy}',
-                  style: TextStyle(
-                    fontSize: 10,
-                    color: Colors.grey[600],
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-
-  Widget _buildUpcomingSessions(
-      BuildContext context, final AppLocalizations l10n,) => Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              l10n.upcomingSessions,
-              style: const TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            TextButton(
-              onPressed: () => context.push('/playtime/sessions'),
-              child: Text(l10n.viewAll),
-            ),
-          ],
-        ),
-        const SizedBox(height: 12),
-        Consumer(
-          builder: (context, final ref, final child) {
-            final sessionsAsync = ref.watch(confirmedSessionsProvider);
-
-            return sessionsAsync.when(
-              data: (sessions) {
-                if (sessions.isEmpty) {
-                  return _buildEmptyState(
-                    context,
-                    l10n.noSessionsYet,
-                    l10n.createYourFirstSession,
-                    Icons.event,
-                  );
-                }
-
-                return Column(
-                  children: sessions.take(3).map((session) => _buildSessionCard(context, session, l10n)).toList(),
-                );
-              },
-              loading: () => const Center(child: CircularProgressIndicator()),
-              error: (error, final stack) => Text('Error: $error'),
-            );
-          },
-        ),
-      ],
-    );
-
-  Widget _buildSessionCard(final BuildContext context,
-      PlaytimeSession session, final AppLocalizations l10n,) => Card(
-      margin: const EdgeInsets.only(bottom: 8),
-      elevation: 2,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      child: ListTile(
-        contentPadding: const EdgeInsets.all(16),
-        leading: CircleAvatar(
-          backgroundColor: session.mode == 'virtual'
-              ? AppTheme.secondaryColor
-              : AppTheme.accentColor,
-          child: Icon(
-            session.mode == 'virtual' ? Icons.computer : Icons.people,
-            color: Colors.white,
-          ),
-        ),
-        title: Text(
-          'Session ${session.id}',
-          style: const TextStyle(fontWeight: FontWeight.w600),
-        ),
-        subtitle: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const SizedBox(height: 4),
-            Text(
-              '${l10n.scheduledFor}: ${_formatDateTime(session.scheduledTime)}',
-              style: TextStyle(color: Colors.grey[600]),
-            ),
-            const SizedBox(height: 2),
-            Text(
-              '${session.participants.length} ${l10n.participants}',
-              style: TextStyle(color: Colors.grey[600]),
-            ),
-          ],
-        ),
-        trailing: IconButton(
-          icon: const Icon(Icons.arrow_forward_ios),
-          onPressed: () => context.push('/playtime/session/${session.id}'),
-        ),
-      ),
-    );
-
-  Widget _buildEmptyState(final BuildContext context, final String title,
-      String subtitle, final IconData icon,) => Container(
-      padding: const EdgeInsets.all(24),
-      child: Column(
-        children: [
-          Icon(
-            icon,
-            size: 48,
-            color: Colors.grey[400],
-          ),
-          const SizedBox(height: 12),
-          Text(
-            title,
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w600,
-              color: Colors.grey[600],
-            ),
-          ),
-          const SizedBox(height: 4),
-          Text(
-            subtitle,
-            style: TextStyle(
-              fontSize: 14,
-              color: Colors.grey[500],
-            ),
-            textAlign: TextAlign.center,
-          ),
-        ],
-      ),
-    );
+      );
 
   void _showCreateOptions(
-      BuildContext context, final AppLocalizations l10n,) {
+    BuildContext context,
+    final AppLocalizations l10n,
+  ) {
     BottomSheetManager.show(
       context: context,
       child: Container(
@@ -530,41 +563,42 @@ class PlaytimeHubScreen extends ConsumerWidget {
     final IconData icon,
     final Color color,
     final VoidCallback onTap,
-  ) => InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(12),
-      child: Container(
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: color.withAlpha((255 * 0.1).round()),
-          borderRadius: BorderRadius.circular(12),
-          border: Border.all(color: color.withAlpha((255 * 0.3).round())),
-        ),
-        child: Row(
-          children: [
-            Container(
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                color: color,
-                borderRadius: BorderRadius.circular(8),
+  ) =>
+      InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(12),
+        child: Container(
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            color: color.withAlpha((255 * 0.1).round()),
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(color: color.withAlpha((255 * 0.3).round())),
+          ),
+          child: Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: color,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Icon(icon, color: Colors.white, size: 20),
               ),
-              child: Icon(icon, color: Colors.white, size: 20),
-            ),
-            const SizedBox(width: 12),
-            Text(
-              title,
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
-                color: color,
+              const SizedBox(width: 12),
+              Text(
+                title,
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                  color: color,
+                ),
               ),
-            ),
-            const Spacer(),
-            Icon(Icons.arrow_forward_ios, color: color, size: 16),
-          ],
+              const Spacer(),
+              Icon(Icons.arrow_forward_ios, color: color, size: 16),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 
   String _formatDateTime(DateTime dateTime) {
     final now = DateTime.now();

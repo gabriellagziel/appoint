@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class StaffAvailabilityScreen extends ConsumerWidget {
-
   const StaffAvailabilityScreen({super.key});
   static const routeName = '/studio/staff-availability';
 
@@ -77,7 +76,8 @@ class StaffAvailabilityScreen extends ConsumerWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                          'Available Slots: ${data['availableSlots'] ?? 'N/A'}'),
+                        'Available Slots: ${data['availableSlots'] ?? 'N/A'}',
+                      ),
                       if (data['timeRange'] != null)
                         Text('Time: ${data['timeRange']}'),
                       if (data['daysOfWeek'] != null)
@@ -141,15 +141,20 @@ class StaffAvailabilityScreen extends ConsumerWidget {
   }
 
   void _showAddAvailabilityDialog(
-      BuildContext context, final WidgetRef ref,) {
+    BuildContext context,
+    final WidgetRef ref,
+  ) {
     showDialog(
       context: context,
       builder: (context) => const _AvailabilityDialog(),
     );
   }
 
-  void _showEditAvailabilityDialog(final BuildContext context,
-      WidgetRef ref, final DocumentSnapshot doc,) {
+  void _showEditAvailabilityDialog(
+    final BuildContext context,
+    WidgetRef ref,
+    final DocumentSnapshot doc,
+  ) {
     showDialog(
       context: context,
       builder: (context) => _AvailabilityDialog(editDoc: doc),
@@ -157,13 +162,17 @@ class StaffAvailabilityScreen extends ConsumerWidget {
   }
 
   void _showDeleteConfirmation(
-      BuildContext context, final WidgetRef ref, final String docId,) {
+    BuildContext context,
+    final WidgetRef ref,
+    final String docId,
+  ) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
         title: const Text('Delete Availability'),
         content: const Text(
-            'Are you sure you want to delete this availability slot?'),
+          'Are you sure you want to delete this availability slot?',
+        ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
@@ -175,7 +184,8 @@ class StaffAvailabilityScreen extends ConsumerWidget {
               Navigator.pop(context);
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(
-                    content: Text('Delete functionality coming soon!'),),
+                  content: Text('Delete functionality coming soon!'),
+                ),
               );
             },
             style: TextButton.styleFrom(foregroundColor: Colors.red),
@@ -188,7 +198,6 @@ class StaffAvailabilityScreen extends ConsumerWidget {
 }
 
 class _AvailabilityDialog extends StatefulWidget {
-
   const _AvailabilityDialog({this.editDoc});
   final DocumentSnapshot? editDoc;
 
@@ -226,84 +235,87 @@ class _AvailabilityDialogState extends State<_AvailabilityDialog> {
 
   @override
   Widget build(BuildContext context) => AlertDialog(
-      title: Text(
-          widget.editDoc != null ? 'Edit Availability' : 'Add Availability'),
-      content: Form(
-        key: _formKey,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            TextFormField(
-              controller: _profileController,
-              decoration: const InputDecoration(
-                labelText: 'Staff Member/Profile ID',
-                border: OutlineInputBorder(),
-              ),
-              validator: (value) {
-                if (value == null || value.isEmpty) {
-                  return 'Please enter a staff member or profile ID';
-                }
-                return null;
-              },
-            ),
-            const SizedBox(height: 16),
-            TextFormField(
-              controller: _slotsController,
-              decoration: const InputDecoration(
-                labelText: 'Available Slots',
-                border: OutlineInputBorder(),
-                hintText: 'e.g., 10',
-              ),
-              keyboardType: TextInputType.number,
-              validator: (value) {
-                if (value == null || value.isEmpty) {
-                  return 'Please enter available slots';
-                }
-                return null;
-              },
-            ),
-            const SizedBox(height: 16),
-            TextFormField(
-              controller: _timeRangeController,
-              decoration: const InputDecoration(
-                labelText: 'Time Range',
-                border: OutlineInputBorder(),
-                hintText: 'e.g., 9:00 AM - 5:00 PM',
-              ),
-            ),
-            const SizedBox(height: 16),
-            TextFormField(
-              controller: _daysController,
-              decoration: const InputDecoration(
-                labelText: 'Days of Week',
-                border: OutlineInputBorder(),
-                hintText: 'e.g., Monday, Tuesday, Wednesday',
-              ),
-            ),
-          ],
+        title: Text(
+          widget.editDoc != null ? 'Edit Availability' : 'Add Availability',
         ),
-      ),
-      actions: [
-        TextButton(
-          onPressed: () => Navigator.pop(context),
-          child: const Text('Cancel'),
-        ),
-        ElevatedButton(
-          onPressed: () {
-            if (_formKey.currentState!.validate()) {
-              // TODO(username): Implement this featurent save functionality
-              Navigator.pop(context);
-              ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
-                  content: Text(widget.editDoc != null
-                      ? 'Edit functionality coming soon!'
-                      : 'Add functionality coming soon!'),
+        content: Form(
+          key: _formKey,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              TextFormField(
+                controller: _profileController,
+                decoration: const InputDecoration(
+                  labelText: 'Staff Member/Profile ID',
+                  border: OutlineInputBorder(),
                 ),
-              );
-            }
-          },
-          child: Text(widget.editDoc != null ? 'Update' : 'Add'),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter a staff member or profile ID';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 16),
+              TextFormField(
+                controller: _slotsController,
+                decoration: const InputDecoration(
+                  labelText: 'Available Slots',
+                  border: OutlineInputBorder(),
+                  hintText: 'e.g., 10',
+                ),
+                keyboardType: TextInputType.number,
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter available slots';
+                  }
+                  return null;
+                },
+              ),
+              const SizedBox(height: 16),
+              TextFormField(
+                controller: _timeRangeController,
+                decoration: const InputDecoration(
+                  labelText: 'Time Range',
+                  border: OutlineInputBorder(),
+                  hintText: 'e.g., 9:00 AM - 5:00 PM',
+                ),
+              ),
+              const SizedBox(height: 16),
+              TextFormField(
+                controller: _daysController,
+                decoration: const InputDecoration(
+                  labelText: 'Days of Week',
+                  border: OutlineInputBorder(),
+                  hintText: 'e.g., Monday, Tuesday, Wednesday',
+                ),
+              ),
+            ],
+          ),
         ),
-      ],
-    );
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              if (_formKey.currentState!.validate()) {
+                // TODO(username): Implement this featurent save functionality
+                Navigator.pop(context);
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(
+                      widget.editDoc != null
+                          ? 'Edit functionality coming soon!'
+                          : 'Add functionality coming soon!',
+                    ),
+                  ),
+                );
+              }
+            },
+            child: Text(widget.editDoc != null ? 'Update' : 'Add'),
+          ),
+        ],
+      );
 }

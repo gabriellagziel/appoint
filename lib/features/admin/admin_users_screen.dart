@@ -7,8 +7,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 class AdminUsersScreen extends ConsumerWidget {
   const AdminUsersScreen({super.key});
 
-  Future<void> _changeRole(final BuildContext context, final WidgetRef ref,
-      AdminUser user,) async {
+  Future<void> _changeRole(
+    final BuildContext context,
+    final WidgetRef ref,
+    AdminUser user,
+  ) async {
     final newRole = user.role == 'admin' ? 'manager' : 'admin';
     await FirebaseFirestore.instance
         .collection('users')
@@ -35,7 +38,8 @@ class AdminUsersScreen extends ConsumerWidget {
               final user = users[index];
               return ListTile(
                 title: Text(
-                    user.displayName.isEmpty ? user.email : user.displayName),
+                  user.displayName.isEmpty ? user.email : user.displayName,
+                ),
                 subtitle: Text(user.role),
                 trailing: ElevatedButton(
                   onPressed: () => _changeRole(context, ref, user),

@@ -36,8 +36,12 @@ class BusinessAvailabilityNotifier
     // TODO(username): Implement loading configuration from backend
   }
 
-  void updateDay(final int weekday,
-      {bool? isOpen, final TimeOfDay? start, final TimeOfDay? end,}) {
+  void updateDay(
+    final int weekday, {
+    bool? isOpen,
+    final TimeOfDay? start,
+    final TimeOfDay? end,
+  }) {
     // TODO(username): Implement updating a single day's availability
   }
 }

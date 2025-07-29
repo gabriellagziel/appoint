@@ -46,8 +46,7 @@ class ReferralScreen extends ConsumerWidget {
             ),
           ),
           loading: () => const CircularProgressIndicator(),
-          error: (e, final _) =>
-              const Text('Error loading referral code'),
+          error: (e, final _) => const Text('Error loading referral code'),
         ),
       ),
     );

@@ -3,7 +3,8 @@ import 'package:appoint/services/staff_availability_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final REDACTED_TOKEN = Provider<StaffAvailabilityService>(
-    (ref) => StaffAvailabilityService(),);
+  (ref) => StaffAvailabilityService(),
+);
 
 class StaffAvailabilityNotifier
     extends StateNotifier<AsyncValue<List<StaffAvailability>>> {
@@ -34,8 +35,12 @@ class StaffAvailabilityNotifier
   }
 }
 
-final StateNotifierProviderFamily<StaffAvailabilityNotifier, AsyncValue<List<StaffAvailability>>, String> staffAvailabilityProvider = StateNotifierProvider.family<
-    StaffAvailabilityNotifier, AsyncValue<List<StaffAvailability>>, String>(
+final StateNotifierProviderFamily<StaffAvailabilityNotifier,
+        AsyncValue<List<StaffAvailability>>, String> staffAvailabilityProvider =
+    StateNotifierProvider.family<StaffAvailabilityNotifier,
+        AsyncValue<List<StaffAvailability>>, String>(
   (ref, final staffId) => StaffAvailabilityNotifier(
-      ref.read(REDACTED_TOKEN), staffId,),
+    ref.read(REDACTED_TOKEN),
+    staffId,
+  ),
 );

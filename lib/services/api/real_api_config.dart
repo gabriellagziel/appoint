@@ -232,14 +232,14 @@ class ApiConfig {
 
   // Get endpoint URL
   static String getEndpoint(String key, {Map<String, String>? params}) {
-    String endpoint = endpoints[key] ?? '/$key';
-    
+    var endpoint = endpoints[key] ?? '/$key';
+
     if (params != null) {
       params.forEach((key, value) {
         endpoint = endpoint.replaceAll('{$key}', value);
       });
     }
-    
+
     return endpoint;
   }
 
@@ -288,7 +288,6 @@ class ApiConfig {
   };
 
   // Check if feature is enabled
-  static bool isFeatureEnabled(String feature) {
-    return featureFlags[feature] ?? false;
-  }
-} 
+  static bool isFeatureEnabled(String feature) =>
+      featureFlags[feature] ?? false;
+}

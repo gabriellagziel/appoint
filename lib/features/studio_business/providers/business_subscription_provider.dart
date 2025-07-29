@@ -3,7 +3,8 @@ import 'package:appoint/features/studio_business/services/business_profile_servi
 import 'package:appoint/services/business_subscription_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final REDACTED_TOKEN = Provider<BusinessSubscriptionService>(
+final REDACTED_TOKEN =
+    Provider<BusinessSubscriptionService>(
   (ref) => BusinessSubscriptionService(),
 );
 
@@ -52,7 +53,8 @@ final remainingMapQuotaProvider = FutureProvider<int>(
 );
 
 // Map usage tracking provider
-final mapUsageNotifierProvider = StateNotifierProvider<MapUsageNotifier, AsyncValue<void>>(
+final mapUsageNotifierProvider =
+    StateNotifierProvider<MapUsageNotifier, AsyncValue<void>>(
   (ref) => MapUsageNotifier(ref.watch(REDACTED_TOKEN)),
 );
 
@@ -84,7 +86,7 @@ class MapUsageNotifier extends StateNotifier<AsyncValue<void>> {
 // Business profile provider with branding access control
 final businessProfileProvider =
     StateNotifierProvider<BusinessProfileNotifier, BusinessProfile?>(
-  (ref) => BusinessProfileNotifier(ref),
+  BusinessProfileNotifier.new,
 );
 
 class BusinessProfileNotifier extends StateNotifier<BusinessProfile?> {
@@ -108,10 +110,10 @@ class BusinessProfileNotifier extends StateNotifier<BusinessProfile?> {
   /// Check if user can access branding features before allowing profile updates
   Future<bool> _canAccessBranding() async {
     final subscriptionService = _ref.read(REDACTED_TOKEN);
-    return await subscriptionService.canAccessBranding();
+    return subscriptionService.canAccessBranding();
   }
 
-  void updateField({
+  Future<void> updateField({
     String? name,
     String? description,
     String? phone,
@@ -124,21 +126,22 @@ class BusinessProfileNotifier extends StateNotifier<BusinessProfile?> {
     String? coverImageUrl,
   }) async {
     if (state == null) return;
-    
+
     // Check branding access for branding-related fields
-    final isBrandingUpdate = logoUrl != null || 
-                            coverImageUrl != null || 
-                            description != null || 
-                            services != null ||
-                            businessHours != null;
-    
+    final isBrandingUpdate = logoUrl != null ||
+        coverImageUrl != null ||
+        description != null ||
+        services != null ||
+        businessHours != null;
+
     if (isBrandingUpdate) {
       final canAccess = await _canAccessBranding();
       if (!canAccess) {
-        throw Exception('Branding features require Professional plan or higher');
+        throw Exception(
+            'Branding features require Professional plan or higher');
       }
     }
-    
+
     state = state!.copyWith(
       name: name ?? state!.name,
       description: description ?? state!.description,
@@ -154,39 +157,41 @@ class BusinessProfileNotifier extends StateNotifier<BusinessProfile?> {
     );
   }
 
-  void updateProfile(BusinessProfile profile) async {
+  Future<void> updateProfile(BusinessProfile profile) async {
     // Check branding access for profile with branding features
-    final hasBrandingFeatures = profile.logoUrl != null || 
-                               profile.coverImageUrl != null || 
-                               profile.description.isNotEmpty || 
-                               profile.services.isNotEmpty;
-    
+    final hasBrandingFeatures = profile.logoUrl != null ||
+        profile.coverImageUrl != null ||
+        profile.description.isNotEmpty ||
+        profile.services.isNotEmpty;
+
     if (hasBrandingFeatures) {
       final canAccess = await _canAccessBranding();
       if (!canAccess) {
-        throw Exception('Branding features require Professional plan or higher');
+        throw Exception(
+            'Branding features require Professional plan or higher');
       }
     }
-    
+
     state = profile;
   }
 
   Future<void> save() async {
     if (state == null) return;
-    
+
     // Final branding access check before saving
-    final hasBrandingFeatures = state!.logoUrl != null || 
-                               state!.coverImageUrl != null || 
-                               state!.description.isNotEmpty || 
-                               state!.services.isNotEmpty;
-    
+    final hasBrandingFeatures = state!.logoUrl != null ||
+        state!.coverImageUrl != null ||
+        state!.description.isNotEmpty ||
+        state!.services.isNotEmpty;
+
     if (hasBrandingFeatures) {
       final canAccess = await _canAccessBranding();
       if (!canAccess) {
-        throw Exception('Branding features require Professional plan or higher');
+        throw Exception(
+            'Branding features require Professional plan or higher');
       }
     }
-    
+
     await _service.updateProfile(state!);
   }
 }
@@ -223,7 +228,7 @@ final currentPlanProvider = Provider<SubscriptionPlan?>((ref) {
 final mapUsageStatsProvider = Provider<Map<String, dynamic>>((ref) {
   final subscriptionAsync = ref.watch(currentSubscriptionProvider);
   final limitsAsync = ref.watch(subscriptionLimitsProvider);
-  
+
   return subscriptionAsync.when(
     data: (subscription) {
       if (subscription == null) {
@@ -235,7 +240,7 @@ final mapUsageStatsProvider = Provider<Map<String, dynamic>>((ref) {
           'hasLimit': false,
         };
       }
-      
+
       return limitsAsync.when(
         data: (limits) => {
           'current': subscription.mapUsageCurrentPeriod,

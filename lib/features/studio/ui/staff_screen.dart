@@ -68,7 +68,8 @@ class _StaffScreenState extends ConsumerState<StaffScreen> {
                   child: TextField(
                     controller: _slotController,
                     decoration: const InputDecoration(
-                      labelText: 'HH:MM'),
+                      labelText: 'HH:MM',
+                    ),
                   ),
                 ),
                 IconButton(
@@ -83,10 +84,12 @@ class _StaffScreenState extends ConsumerState<StaffScreen> {
             child: availabilityAsync.when(
               data: (list) {
                 final todays = list
-                    .where((a) =>
-                        a.date.year == _selectedDate.year &&
-                        a.date.month == _selectedDate.month &&
-                        a.date.day == _selectedDate.day,)
+                    .where(
+                      (a) =>
+                          a.date.year == _selectedDate.year &&
+                          a.date.month == _selectedDate.month &&
+                          a.date.day == _selectedDate.day,
+                    )
                     .toList();
                 if (todays.isEmpty) {
                   return const Center(child: Text('No slots'));
@@ -103,8 +106,10 @@ class _StaffScreenState extends ConsumerState<StaffScreen> {
                         icon: const Icon(Icons.delete),
                         onPressed: () async {
                           await ref
-                              .read(staffAvailabilityProvider(widget.staffId)
-                                  .notifier,)
+                              .read(
+                                staffAvailabilityProvider(widget.staffId)
+                                    .notifier,
+                              )
                               .delete(_selectedDate);
                         },
                       ),

@@ -93,11 +93,11 @@ class EventFormSubmission with _$EventFormSubmission {
     required String id,
     required String formId,
     required String meetingId,
+    required Map<String, dynamic> responses,
+    @DateTimeConverter() required DateTime submittedAt,
     String? userId,
     String? participantName,
     String? participantEmail,
-    required Map<String, dynamic> responses,
-    @DateTimeConverter() required DateTime submittedAt,
     @Default(false) bool isAnonymous,
   }) = _EventFormSubmission;
 
@@ -155,24 +155,24 @@ class EventSettings with _$EventSettings {
     @Default(false) bool allowWaitlist,
     int? maxAttendees,
     @DateTimeConverter() DateTime? registrationDeadline,
-    
+
     // Chat settings
     @Default(true) bool enableGroupChat,
     @Default(false) bool allowParticipantInvites,
     @Default(false) bool moderateChat,
-    
+
     // Visibility settings
     @Default(false) bool isPublic,
     @Default(false) bool allowPublicRegistration,
-    
+
     // Notification settings
     @Default(true) bool sendReminders,
     @Default(<int>[24, 1]) List<int> reminderHours, // hours before event
-    
+
     // Recording and notes
     @Default(false) bool allowRecording,
     @Default(false) bool enableSharedNotes,
-    
+
     // Custom settings
     Map<String, dynamic>? customSettings,
   }) = _EventSettings;
@@ -184,43 +184,57 @@ class EventSettings with _$EventSettings {
 // Extension methods for business logic
 extension EventFormValidation on EventCustomForm {
   bool get hasRequiredFields => fields.any((field) => field.isRequired);
-  
+
   bool get isExpired {
     if (submissionDeadline == null) return false;
     return DateTime.now().isAfter(submissionDeadline!);
   }
-  
+
   int get fieldCount => fields.length;
 }
 
 extension ChecklistProgress on EventChecklist {
   int get totalItems => items.length;
-  
-  int get completedItems => items.where((item) => 
-      item.status == ChecklistItemStatus.completed).length;
-  
+
+  int get completedItems => items
+      .where(
+        (item) => item.status == ChecklistItemStatus.completed,
+      )
+      .length;
+
   int get requiredItems => items.where((item) => item.isRequired).length;
-  
-  int get completedRequiredItems => items.where((item) => 
-      item.isRequired && item.status == ChecklistItemStatus.completed).length;
-  
+
+  int get completedRequiredItems => items
+      .where(
+        (item) =>
+            item.isRequired && item.status == ChecklistItemStatus.completed,
+      )
+      .length;
+
   double get progress => totalItems == 0 ? 0.0 : completedItems / totalItems;
-  
-  double get requiredProgress => requiredItems == 0 ? 1.0 : 
-      completedRequiredItems / requiredItems;
-  
+
+  double get requiredProgress =>
+      requiredItems == 0 ? 1.0 : completedRequiredItems / requiredItems;
+
   bool get isComplete => progress == 1.0;
-  
+
   bool get allRequiredCompleted => requiredProgress == 1.0;
-  
-  List<EventChecklistItem> get pendingItems => items.where((item) => 
-      item.status == ChecklistItemStatus.pending).toList();
-  
+
+  List<EventChecklistItem> get pendingItems => items
+      .where(
+        (item) => item.status == ChecklistItemStatus.pending,
+      )
+      .toList();
+
   List<EventChecklistItem> get overDueItems {
     final now = DateTime.now();
-    return items.where((item) => 
-        item.dueDate != null && 
-        item.dueDate!.isBefore(now) && 
-        item.status != ChecklistItemStatus.completed).toList();
+    return items
+        .where(
+          (item) =>
+              item.dueDate != null &&
+              item.dueDate!.isBefore(now) &&
+              item.status != ChecklistItemStatus.completed,
+        )
+        .toList();
   }
 }

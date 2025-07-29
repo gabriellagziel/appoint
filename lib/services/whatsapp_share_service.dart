@@ -7,7 +7,6 @@ import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class WhatsAppShareService {
-
   WhatsAppShareService({
     final FirebaseFirestore? firestore,
     final CustomDeepLinkService? deepLinkService,
@@ -17,7 +16,7 @@ class WhatsAppShareService {
   }
   final FirebaseFirestore _firestore;
   late final CustomDeepLinkService _deepLinkService;
-  
+
   // Variable declarations for the service
   late String message;
   late Uri uri;
@@ -90,7 +89,8 @@ class WhatsAppShareService {
 
         // Track successful share
         await FirebaseAnalytics.instance.logEvent(
-          name: 'share_whatsapp');
+          name: 'share_whatsapp',
+        );
 
         return true;
       } else {
@@ -140,7 +140,8 @@ class WhatsAppShareService {
 
         // Track link click
         await FirebaseAnalytics.instance.logEvent(
-          name: 'invite_clicked');
+          name: 'invite_clicked',
+        );
 
         // Update analytics
         await _updateShareAnalytics(meetingId, ShareStatus.clicked);
@@ -155,7 +156,9 @@ class WhatsAppShareService {
 
   /// Update share analytics status
   Future<void> _updateShareAnalytics(
-      String meetingId, final ShareStatus status,) async {
+    String meetingId,
+    final ShareStatus status,
+  ) async {
     try {
       final query = await _firestore
           .collection('share_analytics')
@@ -192,12 +195,10 @@ class WhatsAppShareService {
         'totalShares': analytics.length,
         'whatsappShares':
             analytics.where((a) => a.channel == 'whatsapp').length,
-        'totalClicks': analytics
-            .where((a) => a.status == ShareStatus.clicked)
-            .length,
-        'totalResponses': analytics
-            .where((a) => a.status == ShareStatus.responded)
-            .length,
+        'totalClicks':
+            analytics.where((a) => a.status == ShareStatus.clicked).length,
+        'totalResponses':
+            analytics.where((a) => a.status == ShareStatus.responded).length,
         'groupShares': analytics.where((a) => a.groupId != null).length,
       };
     } catch (e) {

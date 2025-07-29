@@ -6,9 +6,9 @@ class BusinessProvidersEntryScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) => Scaffold(
-      appBar: AppBar(title: const Text('Providers')),
-      body: const Center(
-        child: Text('Business Providers Entry Screen - Coming Soon'),
-      ),
-    );
+        appBar: AppBar(title: const Text('Providers')),
+        body: const Center(
+          child: Text('Business Providers Entry Screen - Coming Soon'),
+        ),
+      );
 }

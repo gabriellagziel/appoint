@@ -6,9 +6,9 @@ class BusinessCrmEntryScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) => Scaffold(
-      appBar: AppBar(title: const Text('CRM')),
-      body: const Center(
-        child: Text('Business CRM Entry Screen - Coming Soon'),
-      ),
-    );
+        appBar: AppBar(title: const Text('CRM')),
+        body: const Center(
+          child: Text('Business CRM Entry Screen - Coming Soon'),
+        ),
+      );
 }
