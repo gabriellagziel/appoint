@@ -44,12 +44,14 @@ class _BusinessSubscriptionScreenState
         );
       }
     } catch (e) {
+      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to start Starter subscription: $e'),
             backgroundColor: Colors.red,
           ),
         );
+      }
     } finally {
       if (mounted) {
         setState(() => _isLoading = false);
@@ -766,6 +768,7 @@ class _BusinessSubscriptionScreenState
         ],
       ),
     );
+  }
 
   IconData _getPlanIcon(SubscriptionPlan plan) {
     switch (plan) {
