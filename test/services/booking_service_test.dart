@@ -62,7 +62,8 @@ void main() {
         // Arrange
         const bookingId = 'test-booking-id';
         when(() => mockDocument.delete()).thenThrow(
-            FirebaseException(plugin: 'firestore', message: 'Delete failed'),);
+          FirebaseException(plugin: 'firestore', message: 'Delete failed'),
+        );
 
         // Act & Assert
         expect(
@@ -108,7 +109,8 @@ void main() {
         );
 
         when(() => mockDocument.update(any())).thenThrow(
-            FirebaseException(plugin: 'firestore', message: 'Update failed'),);
+          FirebaseException(plugin: 'firestore', message: 'Update failed'),
+        );
 
         // Act & Assert
         expect(
@@ -165,7 +167,8 @@ void main() {
         // Arrange
         const bookingId = 'test-booking-id';
         when(() => mockDocument.get()).thenThrow(
-            FirebaseException(plugin: 'firestore', message: 'Get failed'),);
+          FirebaseException(plugin: 'firestore', message: 'Get failed'),
+        );
 
         // Act
         final result = await bookingService.getBookingById(bookingId);

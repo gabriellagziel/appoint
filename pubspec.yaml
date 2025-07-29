@@ -66,6 +66,11 @@ dependencies:
   timezone: ^0.10.1
   permission_handler: ^11.1.0
 
+  path: any
+  qr_flutter: any
+  firebase_dynamic_links: any
+  csv: any
+  path_provider: any
 dev_dependencies:
   integration_test:
     sdk: flutter
@@ -88,6 +93,10 @@ dev_dependencies:
   mockito: ^5.0.17
   very_good_analysis: ^9.0.0
 
+  flutter_driver: any
+  vm_service: any
+  path: any
+  yaml: any
 flutter:
   uses-material-design: true
   generate: true

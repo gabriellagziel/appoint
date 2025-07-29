@@ -32,18 +32,20 @@ void main() {
   });
 
   Widget wrapWithProviders() => ProviderScope(
-      overrides: [
-        firestoreProvider.overrideWithValue(fakeFirestore),
-        authServiceProvider.overrideWithValue(mockAuthService),
-        bookingDraftProvider.overrideWith((ref) => BookingDraftNotifier(
+        overrides: [
+          firestoreProvider.overrideWithValue(fakeFirestore),
+          authServiceProvider.overrideWithValue(mockAuthService),
+          bookingDraftProvider.overrideWith(
+            (ref) => BookingDraftNotifier(
               firestore: fakeFirestore,
               auth: mockAuthService,
-            ),),
-      ],
-      child: MaterialApp(
-        home: ChatFlowWidget(auth: mockAuthService),
-      ),
-    );
+            ),
+          ),
+        ],
+        child: MaterialApp(
+          home: ChatFlowWidget(auth: mockAuthService),
+        ),
+      );
 
   testWidgets('shows welcome message and handles user input', (tester) async {
     await tester.pumpWidget(wrapWithProviders());
@@ -54,8 +56,10 @@ void main() {
     await tester.pumpAndSettle();
 
     // Should show welcome message
-    expect(find.text('Welcome! What type of appointment would you like?'),
-        findsOneWidget,);
+    expect(
+      find.text('Welcome! What type of appointment would you like?'),
+      findsOneWidget,
+    );
 
     // Send a message
     await tester.enterText(find.byType(TextField), 'Hello');
@@ -98,7 +102,9 @@ void main() {
     await tester.pumpAndSettle();
 
     // Should show welcome message
-    expect(find.text('Welcome! What type of appointment would you like?'),
-        findsOneWidget,);
+    expect(
+      find.text('Welcome! What type of appointment would you like?'),
+      findsOneWidget,
+    );
   });
 }

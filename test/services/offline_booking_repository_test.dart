@@ -117,8 +117,10 @@ void main() {
         bookings = await repository.getBookings();
         expect(bookings.length, equals(1));
         expect(bookings.first.id, equals('test-booking-1'));
-        expect(repository.getBookingSyncStatus('test-booking-1'),
-            equals('pending'),);
+        expect(
+          repository.getBookingSyncStatus('test-booking-1'),
+          equals('pending'),
+        );
       });
 
       test('should sync booking immediately when online', () async {
@@ -147,8 +149,10 @@ void main() {
         await repository.addBooking(booking);
 
         verify(mockDocument.set(any)).called(1);
-        expect(repository.getBookingSyncStatus('test-booking-1'),
-            equals('synced'),);
+        expect(
+          repository.getBookingSyncStatus('test-booking-1'),
+          equals('synced'),
+        );
       });
     });
 
@@ -176,10 +180,14 @@ void main() {
         // Then cancel it
         await repository.cancelBooking('test-booking-1');
 
-        expect(repository.getBookingSyncStatus('test-booking-1'),
-            equals('pending'),);
-        expect(repository.getPendingOperationsCount(),
-            equals(1),); // Only the delete operation is pending
+        expect(
+          repository.getBookingSyncStatus('test-booking-1'),
+          equals('pending'),
+        );
+        expect(
+          repository.getPendingOperationsCount(),
+          equals(1),
+        ); // Only the delete operation is pending
       });
 
       test('should delete booking immediately when online', () async {
@@ -246,10 +254,10 @@ void main() {
               Timestamp.fromDate(DateTime.now()).toDate().toIso8601String(),
           'duration': 60 * 60 * 1000000, // 60 minutes in microseconds
           'is_confirmed': false,
-          'created_at':
-              Timestamp.fromDate(DateTime.now().subtract(const Duration(hours: 1)))
-                  .toDate()
-                  .toIso8601String(),
+          'created_at': Timestamp.fromDate(
+                  DateTime.now().subtract(const Duration(hours: 1)))
+              .toDate()
+              .toIso8601String(),
         });
 
         await repository.initialize();
@@ -303,10 +311,10 @@ void main() {
               Timestamp.fromDate(DateTime.now()).toDate().toIso8601String(),
           'duration': 60 * 60 * 1000000,
           'is_confirmed': false,
-          'created_at':
-              Timestamp.fromDate(DateTime.now().subtract(const Duration(hours: 1)))
-                  .toDate()
-                  .toIso8601String(),
+          'created_at': Timestamp.fromDate(
+                  DateTime.now().subtract(const Duration(hours: 1)))
+              .toDate()
+              .toIso8601String(),
         });
 
         await repository.initialize();
@@ -359,10 +367,10 @@ void main() {
               Timestamp.fromDate(DateTime.now()).toDate().toIso8601String(),
           'duration': 60 * 60 * 1000000,
           'is_confirmed': false,
-          'created_at':
-              Timestamp.fromDate(DateTime.now().subtract(const Duration(hours: 1)))
-                  .toDate()
-                  .toIso8601String(),
+          'created_at': Timestamp.fromDate(
+                  DateTime.now().subtract(const Duration(hours: 1)))
+              .toDate()
+              .toIso8601String(),
         });
 
         await repository.initialize();
@@ -376,8 +384,8 @@ void main() {
           serviceName: 'Test Service (Local)',
           dateTime: DateTime.now(),
           duration: const Duration(minutes: 60),
-          createdAt:
-              DateTime.now().subtract(const Duration(hours: 2)), // Local is older
+          createdAt: DateTime.now()
+              .subtract(const Duration(hours: 2)), // Local is older
         );
         await repository.addBooking(localBooking);
 
@@ -416,10 +424,10 @@ void main() {
               Timestamp.fromDate(DateTime.now()).toDate().toIso8601String(),
           'duration': 60 * 60 * 1000000,
           'is_confirmed': false,
-          'created_at':
-              Timestamp.fromDate(DateTime.now().subtract(const Duration(hours: 2)))
-                  .toDate()
-                  .toIso8601String(),
+          'created_at': Timestamp.fromDate(
+                  DateTime.now().subtract(const Duration(hours: 2)))
+              .toDate()
+              .toIso8601String(),
         });
 
         await repository.initialize();
@@ -433,8 +441,8 @@ void main() {
           serviceName: 'Test Service (Local)',
           dateTime: DateTime.now(),
           duration: const Duration(minutes: 60),
-          createdAt:
-              DateTime.now().subtract(const Duration(hours: 1)), // Local is newer
+          createdAt: DateTime.now()
+              .subtract(const Duration(hours: 1)), // Local is newer
         );
         await repository.addBooking(localBooking);
 
@@ -476,8 +484,10 @@ void main() {
 
         // Verify sync happened
         verify(mockDocument.set(any)).called(1);
-        expect(repository.getBookingSyncStatus('test-booking-1'),
-            equals('synced'),);
+        expect(
+          repository.getBookingSyncStatus('test-booking-1'),
+          equals('synced'),
+        );
       });
 
       test('should handle sync errors gracefully', () async {
@@ -509,10 +519,14 @@ void main() {
         } catch (e) {
           // Exception is expected
         }
-        expect(repository.getBookingSyncStatus('test-booking-1'),
-            equals('failed'),);
-        expect(repository.getBookingSyncError('test-booking-1'),
-            contains('Network error'),);
+        expect(
+          repository.getBookingSyncStatus('test-booking-1'),
+          equals('failed'),
+        );
+        expect(
+          repository.getBookingSyncError('test-booking-1'),
+          contains('Network error'),
+        );
       });
     });
 

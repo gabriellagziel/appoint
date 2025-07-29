@@ -15,31 +15,39 @@ void main() {
 
       expect(notificationService.infoMessages.length, equals(1));
       expect(
-          notificationService.infoMessages.first, equals('Test info message'),);
+        notificationService.infoMessages.first,
+        equals('Test info message'),
+      );
     });
 
     test('should track warning messages', () {
       notificationService.showWarning('Test warning message');
 
       expect(notificationService.warningMessages.length, equals(1));
-      expect(notificationService.warningMessages.first,
-          equals('Test warning message'),);
+      expect(
+        notificationService.warningMessages.first,
+        equals('Test warning message'),
+      );
     });
 
     test('should track error messages', () {
       notificationService.showError('Test error message');
 
       expect(notificationService.errorMessages.length, equals(1));
-      expect(notificationService.errorMessages.first,
-          equals('Test error message'),);
+      expect(
+        notificationService.errorMessages.first,
+        equals('Test error message'),
+      );
     });
 
     test('should track success messages', () {
       notificationService.showSuccess('Test success message');
 
       expect(notificationService.successMessages.length, equals(1));
-      expect(notificationService.successMessages.first,
-          equals('Test success message'),);
+      expect(
+        notificationService.successMessages.first,
+        equals('Test success message'),
+      );
     });
 
     test('should track multiple messages', () {
@@ -72,9 +80,12 @@ void main() {
     test('should return unmodifiable lists', () {
       notificationService.showInfo('Test message');
 
-      expect(() {
-        notificationService.infoMessages.add('Another message');
-      }, throwsA(isA<UnsupportedError>()),);
+      expect(
+        () {
+          notificationService.infoMessages.add('Another message');
+        },
+        throwsA(isA<UnsupportedError>()),
+      );
     });
   });
 

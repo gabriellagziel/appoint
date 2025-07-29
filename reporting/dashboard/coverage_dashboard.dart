@@ -417,14 +417,14 @@ class CoverageDashboard {
         <h2>Coverage by Category</h2>
         ${report.metrics.categoryCoverage.entries.map((e) => 
           '<p><strong>${e.key}:</strong> ${e.value.toStringAsFixed(1)}%</p>'
-        ).join('')}
+        ).join()}
     </div>
     
     <div class="category">
         <h2>Coverage Gaps</h2>
         ${report.gaps.take(10).map((g) => 
           '<div class="gap"><strong>${g.filePath}</strong>: ${g.coverage.toStringAsFixed(1)}% (${g.uncoveredLines.length} uncovered lines)</div>'
-        ).join('')}
+        ).join()}
     </div>
     
     <div class="category">
@@ -435,7 +435,7 @@ class CoverageDashboard {
             Action: ${r.action}<br>
             Impact: ${r.impact}
           </div>'
-        ).join('')}
+        ).join()}
     </div>
 </body>
 </html>
