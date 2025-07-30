@@ -1,6 +1,6 @@
 name: appoint-app-v2
 region: fra1
-# Force deployment with latest useSession fixes - 2025-07-13 03:20:00
+# Minimal configuration fix - 2025-01-13
 
 services:
   - name: api
@@ -9,40 +9,18 @@ services:
       repo: "gabriellagziel/appoint"
       branch: main
     source_dir: "functions"
-    build_command: "rm -rf .next && npm install && npm run build"
-    run_command: "npm run start"
+    build_command: "npm ci && npm run build"
+    run_command: "npm start"
     routes:
       - path: /api
 
-  - name: admin
+  - name: web
     environment_slug: node-js
     github:
       repo: "gabriellagziel/appoint"
       branch: main
-    source_dir: "admin"
-    build_command: "rm -rf .next && npm install && npm run build"
-    run_command: "npm start"
-    routes:
-      - path: /admin
-
-  - name: dashboard
-    environment_slug: node-js
-    github:
-      repo: "gabriellagziel/appoint"
-      branch: main
-    source_dir: "dashboard"
-    build_command: "rm -rf .next && npm install && npm run build"
-    run_command: "npm start"
-    routes:
-      - path: /dashboard
-
-  - name: marketing
-    environment_slug: node-js
-    github:
-      repo: "gabriellagziel/appoint"
-      branch: main
-    source_dir: "marketing"
-    build_command: "rm -rf .next out && npm install && npm run build"
-    run_command: "npm start"
+    source_dir: "."
+    build_command: "flutter build web --release"
+    run_command: "serve -s build/web -l 8080"
     routes:
       - path: / 
