@@ -10,6 +10,8 @@ void main() {
   });
 
   group('ReferralService', () {
+    late ReferralService service;
+
     test('should be instantiable with mocked dependencies', () {
       // Test that the service can be instantiated with mocked dependencies
       service = TestServiceFactory.createReferralService();

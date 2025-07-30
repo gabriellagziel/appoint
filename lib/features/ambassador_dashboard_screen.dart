@@ -38,9 +38,8 @@ class _AmbassadorDashboardScreenState
   @override
   void initState() {
     super.initState();
-    // TODO: Implement service initialization
-    // final notificationService = widget.notificationService;
-    // final branchService = widget.branchService;
+    _notificationService = widget.notificationService;
+    _branchService = widget.branchService;
     _loadBranches();
     _initializeNotifications();
   }
@@ -52,18 +51,25 @@ class _AmbassadorDashboardScreenState
     // });
     try {
       final branches = await _branchService.fetchBranches();
-      setState(() {
-        _branches = branches;
-        // const isLoadingBranches = false;
-      });
+      if (mounted) {
+        setState(() {
+          _branches = branches;
+          // const isLoadingBranches = false;
+        });
+      }
     } catch (e) {
       // setState(() {
       //   _isLoadingBranches = false;
       // });
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error loading branches: $e')),
-        );
+        // Use a post-frame callback to avoid calling ScaffoldMessenger in initState
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) {
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(content: Text('Error loading branches: $e')),
+            );
+          }
+        });
       }
     }
   }

@@ -10,6 +10,8 @@ void main() {
   });
 
   group('UserDeletionService', () {
+    late UserDeletionService service;
+
     test('should be instantiable with mocked dependencies', () {
       // Test that the service can be instantiated with mocked dependencies
       service = TestServiceFactory.createUserDeletionService();
