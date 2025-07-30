@@ -52,6 +52,59 @@ service cloud.firestore {
         (request.auth.uid == ambassadorId || isAdmin());
     }
 
+    // Ambassador profiles
+    match /ambassador_profiles/{userId} {
+      allow read: if isSignedIn() && (isOwner(userId) || isAdmin());
+      allow write: if isOwner(userId) || isAdmin();
+    }
+
+    // Ambassador referrals
+    match /ambassador_referrals/{referralId} {
+      allow read: if isSignedIn() && (
+        request.auth.uid == resource.data.ambassadorId ||
+        request.auth.uid == resource.data.referredUserId ||
+        isAdmin()
+      );
+      allow create: if isSignedIn();
+      allow update: if isSignedIn() && (
+        request.auth.uid == resource.data.ambassadorId ||
+        isAdmin()
+      );
+    }
+
+    // Ambassador rewards
+    match /ambassador_rewards/{rewardId} {
+      allow read: if isSignedIn() && (
+        request.auth.uid == resource.data.ambassadorId ||
+        isAdmin()
+      );
+      allow write: if isAdmin();
+    }
+
+    // Ambassador share codes
+    match /ambassador_share_codes/{shareCode} {
+      allow read: if isSignedIn();
+      allow write: if isAdmin();
+    }
+
+    // Ambassador automation logs
+    match /ambassador_automation_logs/{logId} {
+      allow read: if isAdmin();
+      allow write: if isAdmin();
+    }
+
+    // Ambassador demotions
+    match /ambassador_demotions/{demotionId} {
+      allow read: if isAdmin();
+      allow write: if isAdmin();
+    }
+
+    // Ambassador tier upgrades
+    match /ambassador_tier_upgrades/{upgradeId} {
+      allow read: if isAdmin();
+      allow write: if isAdmin();
+    }
+
     // Admin broadcasts
     match /admin_broadcasts/{broadcastId} {
       allow read: if isAdmin();
