@@ -229,15 +229,15 @@ void main() {
     };
 
     codes.forEach((code, expected) {
-      e = FirebaseAuthException(code: code);
-      result = service.getLocalizedFirebaseAuthError(e, l10n);
+      final e = FirebaseAuthException(code: code);
+      final result = service.getLocalizedFirebaseAuthError(e, l10n);
       expect(result, expected, reason: 'Failed for code: $code');
     });
   });
 
   test('returns unknown for unmapped error code', () {
-    e = FirebaseAuthException(code: 'some-unknown-code');
-    result = service.getLocalizedFirebaseAuthError(e, l10n);
+    final e = FirebaseAuthException(code: 'some-unknown-code');
+    final result = service.getLocalizedFirebaseAuthError(e, l10n);
     expect(result, l10n.authErrorUnknown);
   });
 }
