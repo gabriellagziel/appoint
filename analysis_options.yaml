@@ -1,40 +1,231 @@
+include: package:flutter_lints/flutter.yaml
+
 analyzer:
   exclude:
-    - "**/*.g.dart"
-    - "**/*.freezed.dart"
-    - "fix_*.dart"
-    - "fix_*.py"
-    - "fix_*.sh"
-    - "test/**"
-    - "l10n/**"
+    - "lib/generated_plugin_registrant.dart"
     - "android/**"
     - "ios/**"
     - "build/**"
-    - ".dart_tool/**"
-    - ".packages"
-    - ".metadata"
-    - ".pub/**"
-    - ".idea/**"
-    - ".vscode/**"
-
+    - "test_driver/**"
+    - "web/**"
+    - "linux/**"
+    - "macos/**"
+    - "windows/**"
+    - "integration_test/**"
+    - "test/**"
+    - "packages/**"
+    - "admin/**"
+    - "marketing/**"
+    - "dashboard/**"
+    - "functions/**"
+    - "default/**"
+    - "node_modules/**"
+    - ".next/**"
+    - "out/**"
+    - "dist/**"
+    - "coverage/**"
+    - "docs/**"
+    - "scripts/**"
+    - "tools/**"
+    - "tool/**"
+    - "ml/**"
+    - "analytics/**"
+    - "performance/**"
+    - "monitoring/**"
+    - "reporting/**"
+    - "security/**"
+    - "self_healing/**"
+    - "flaky_detection/**"
+    - "test_data_generation/**"
+    - "fastlane/**"
+    - "production/**"
+    - "accessibility/**"
+    - "diagnostics/**"
+    - "integrations/**"
+    - "config/**"
+    - "marketing/**"
+    - "admin/**"
+    - "dashboard/**"
+  
   errors:
-    public_member_api_docs: ignore
-    constant_identifier_names: ignore
-    non_constant_identifier_names: ignore
-    lines_longer_than_80_chars: ignore
-    avoid_print: ignore
-    cascade_invocations: ignore
-    prefer_is_empty: ignore
-    unused_local_variable: ignore
-    dead_code: ignore
-    unused_element: ignore
-    unused_import: ignore
-    unused_field: ignore
-    unused_parameter: ignore
+    # Treat missing required parameters as a warning (not a hint)
+    missing_required_param: warning
+    # Treat missing returns as a warning (not a hint)
+    missing_return: warning
+    # Allow having TODOs in the code
+    todo: ignore
+    # Allow self-reference to deprecated members
+    deprecated_member_use: ignore
 
 linter:
   rules:
-    prefer_const_constructors: true
-    avoid_redundant_argument_values: true
-    avoid_unnecessary_containers: true
-    unnecessary_null_checks: true
+    # Error Rules
+    - always_declare_return_types
+    - avoid_empty_else
+    - avoid_print
+    - REDACTED_TOKEN
+    - await_only_futures
+    - camel_case_types
+    - cancel_subscriptions
+    - close_sinks
+    - comment_references
+    - control_flow_in_finally
+    - directives_ordering
+    - empty_catches
+    - empty_constructor_bodies
+    - empty_statements
+    - hash_and_equals
+    - implementation_imports
+    - library_names
+    - library_prefixes
+    - non_constant_identifier_names
+    - package_names
+    - package_prefixed_library_names
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - REDACTED_TOKEN
+    - prefer_contains
+    - prefer_equal_for_default_values
+    - prefer_final_fields
+    - prefer_final_locals
+    - prefer_initializing_formals
+    - prefer_is_empty
+    - prefer_is_not_empty
+    - REDACTED_TOKEN
+    - slash_for_doc_comments
+    - test_types_in_equals
+    - throw_in_finally
+    - type_init_formals
+    - REDACTED_TOKEN
+    - unnecessary_getters_setters
+    - unnecessary_new
+    - REDACTED_TOKEN
+    - unnecessary_statements
+    - unrelated_type_equality_checks
+    - use_rethrow_when_possible
+    - valid_regexps
+
+    # Style Rules
+    - always_use_package_imports
+    - avoid_annotating_with_dynamic
+    - REDACTED_TOKEN
+    - REDACTED_TOKEN
+    - avoid_catching_errors
+    - avoid_double_and_int_checks
+    - REDACTED_TOKEN
+    - avoid_escaping_inner_quotes
+    - REDACTED_TOKEN
+    - avoid_implementing_value_types
+    - avoid_init_to_null
+    - REDACTED_TOKEN
+    - REDACTED_TOKEN
+    - avoid_private_typedef_functions
+    - avoid_redundant_argument_values
+    - avoid_relative_lib_imports
+    - avoid_return_types_on_setters
+    - avoid_returning_null_for_future
+    - avoid_returning_null_for_void
+    - avoid_returning_this
+    - avoid_setters_without_getters
+    - avoid_shadowing_type_parameters
+    - REDACTED_TOKEN
+    - avoid_type_to_string
+    - avoid_types_as_parameter_names
+    - avoid_unnecessary_containers
+    # - avoid_unused_parameters  # Removed - not a valid lint rule
+    - avoid_void_async
+    - camel_case_extensions
+    - cascade_invocations
+    - cast_nullable_to_non_nullable
+    - constant_identifier_names
+    - REDACTED_TOKEN
+    - depend_on_referenced_packages
+    - deprecated_consistency
+    - exhaustive_cases
+    - file_names
+    - flutter_style_todos
+    - join_return_with_assignment
+    - REDACTED_TOKEN
+    - REDACTED_TOKEN
+    - lines_longer_than_80_chars
+    - REDACTED_TOKEN
+    - no_adjacent_strings_in_list
+    - no_duplicate_case_values
+    - no_logic_in_create_state
+    - no_runtimeType_toString
+    - REDACTED_TOKEN
+    - null_closures
+    - omit_local_variable_types
+    - one_member_abstracts
+    - only_throw_errors
+    - overridden_fields
+    - parameter_assignments
+    - REDACTED_TOKEN
+    - REDACTED_TOKEN
+    - prefer_asserts_with_message
+    - prefer_collection_literals
+    - prefer_conditional_assignment
+    - REDACTED_TOKEN
+    - REDACTED_TOKEN
+    - prefer_final_in_for_each
+    - REDACTED_TOKEN
+    - REDACTED_TOKEN
+    - REDACTED_TOKEN
+    - REDACTED_TOKEN
+    - prefer_if_null_operators
+    - prefer_inlined_adds
+    - prefer_int_literals
+    - REDACTED_TOKEN
+    - prefer_is_not_operator
+    - prefer_iterable_whereType
+    - prefer_mixin
+    - prefer_null_aware_operators
+    - prefer_single_quotes
+    - prefer_spread_collections
+    - provide_deprecation_message
+    - recursive_getters
+    - require_trailing_commas
+    - sized_box_for_whitespace
+    - sort_child_properties_last
+    - sort_constructors_first
+    - sort_unnamed_constructors_first
+    - type_annotate_public_apis
+    - unawaited_futures
+    - unnecessary_await_in_return
+    - unnecessary_const
+    - unnecessary_lambdas
+    - unnecessary_late
+    - unnecessary_null_checks
+    - REDACTED_TOKEN
+    - REDACTED_TOKEN
+    - unnecessary_overrides
+    - unnecessary_parenthesis
+    - unnecessary_raw_strings
+    - unnecessary_string_escapes
+    - REDACTED_TOKEN
+    - unnecessary_this
+
+# Additional rules for testing
+test:
+  rules:
+    - avoid_print
+    - avoid_web_libraries_in_flutter
+    - no_duplicate_case_values
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - REDACTED_TOKEN
+    - prefer_final_fields
+    - prefer_final_locals
+    - prefer_initializing_formals
+    - REDACTED_TOKEN
+    - slash_for_doc_comments
+    - test_types_in_equals
+    - type_init_formals
+    - REDACTED_TOKEN
+    - unnecessary_getters_setters
+    - unnecessary_new
+    - REDACTED_TOKEN
+    - unnecessary_statements
+    - unrelated_type_equality_checks
+    - use_rethrow_when_possible
+    - valid_regexps
