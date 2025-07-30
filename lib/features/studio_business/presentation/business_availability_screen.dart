@@ -5,6 +5,8 @@ import 'package:appoint/utils/business_helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:appoint/l10n/app_localizations.dart';
+import 'package:intl/intl.dart';
 
 class BusinessAvailabilityScreen extends ConsumerStatefulWidget {
   const BusinessAvailabilityScreen({super.key});
@@ -28,13 +30,16 @@ class REDACTED_TOKEN
   Future<void> _loadConfiguration() async {
     setState(() => _isLoading = true);
     try {
-      final service = ref.read(REDACTED_TOKEN);
+      service = ref.read(REDACTED_TOKEN);
       await service.loadConfiguration();
       ref.read(businessAvailabilityProvider.notifier).loadConfiguration();
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error loading configuration: $e')),
-      );
+      if (mounted) {
+        final l10n = AppLocalizations.of(context)!;
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(l10n.errorLoadingConfiguration(e.toString()))),
+        );
+      }
     } finally {
       setState(() => _isLoading = false);
     }
@@ -43,59 +48,44 @@ class REDACTED_TOKEN
   Future<void> _saveConfiguration() async {
     setState(() => _isSaving = true);
     try {
-      final availability = ref.read(businessAvailabilityProvider);
-      final service = ref.read(REDACTED_TOKEN);
-      final config = service.toJson(availability);
+      availability = ref.read(businessAvailabilityProvider);
+      service = ref.read(REDACTED_TOKEN);
+      config = service.toJson(availability);
       await service.saveConfiguration(config);
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Configuration saved successfully!')),
+          SnackBar(content: Text(AppLocalizations.of(context)!.configurationSavedSuccessfully)),
         );
       }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error saving configuration: $e')),
-      );
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(AppLocalizations.of(context)!.errorSavingConfiguration(e.toString()))),
+        );
+      }
     } finally {
       setState(() => _isSaving = false);
     }
   }
 
   String _getDayName(int weekday) {
-    switch (weekday) {
-      case 0:
-        return 'Sunday';
-      case 1:
-        return 'Monday';
-      case 2:
-        return 'Tuesday';
-      case 3:
-        return 'Wednesday';
-      case 4:
-        return 'Thursday';
-      case 5:
-        return 'Friday';
-      case 6:
-        return 'Saturday';
-      default:
-        return 'Unknown';
-    }
+    // Use intl to obtain localized weekday name based on current locale.
+    final locale = AppLocalizations.of(context)!.localeName;
+    // In Dart, DateTime.weekday uses 1 (Mon) .. 7 (Sun)
+    return DateFormat.EEEE(locale).format(DateTime(2020, 1, weekday + 1));
   }
 
-  Future<void> _pickTime(
-    final BuildContext context,
-    final TimeOfDay initial,
-    void Function(TimeOfDay) onPicked,
-  ) async {
-    final picked = await showTimePicker(context: context, initialTime: initial);
+  Future<void> _pickTime(final BuildContext context, final TimeOfDay initial,
+      void Function(TimeOfDay) onPicked,) async {
+    picked = await showTimePicker(context: context, initialTime: initial);
     if (picked != null) onPicked(picked);
   }
 
   @override
   Widget build(BuildContext context) {
-    final availability = ref.watch(businessAvailabilityProvider);
-    final notifier = ref.read(businessAvailabilityProvider.notifier);
+    availability = ref.watch(businessAvailabilityProvider);
+    notifier = ref.read(businessAvailabilityProvider.notifier);
 
     if (_isLoading) {
       return Theme(
@@ -110,7 +100,7 @@ class REDACTED_TOKEN
       data: BusinessTheme.businessTheme,
       child: ResponsiveScaffold(
         appBar: AppBar(
-          title: const Text('Business Availability'),
+          title: Text(AppLocalizations.of(context)!.businessAvailability),
           centerTitle: true,
           backgroundColor: BusinessTheme.businessTheme.colorScheme.primary,
           foregroundColor: Colors.white,
@@ -128,7 +118,7 @@ class REDACTED_TOKEN
               IconButton(
                 icon: const Icon(Icons.save),
                 onPressed: _saveConfiguration,
-                tooltip: 'Save Configuration',
+                tooltip: AppLocalizations.of(context)!.save,
               ),
           ],
         ),
@@ -138,8 +128,9 @@ class REDACTED_TOKEN
           itemCount: 7,
           separatorBuilder: (_, final __) => const SizedBox(height: 8),
           itemBuilder: (context, final weekday) {
-            final avail = availability.firstWhere((a) => a.weekday == weekday);
-            final timeRange = TimeRange(start: avail.start, end: avail.end);
+            final avail =
+                availability.firstWhere((a) => a.weekday == weekday);
+            timeRange = TimeRange(start: avail.start, end: avail.end);
             final hasError = avail.isOpen && !timeRange.isValid;
 
             return Card(
@@ -176,10 +167,9 @@ class REDACTED_TOKEN
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text(
-                                  'Start Time',
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
+                                Text(AppLocalizations.of(context)!.startTimeLabel,
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),),
                                 const SizedBox(height: 8),
                                 InkWell(
                                   onTap: () => _pickTime(
@@ -192,9 +182,7 @@ class REDACTED_TOKEN
                                   ),
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
-                                      horizontal: 12,
-                                      vertical: 8,
-                                    ),
+                                        horizontal: 12, vertical: 8,),
                                     decoration: BoxDecoration(
                                       border: Border.all(color: Colors.grey),
                                       borderRadius: BorderRadius.circular(4),
@@ -217,10 +205,9 @@ class REDACTED_TOKEN
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text(
-                                  'End Time',
-                                  style: TextStyle(fontWeight: FontWeight.bold),
-                                ),
+                                Text(AppLocalizations.of(context)!.endTimeLabel,
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),),
                                 const SizedBox(height: 8),
                                 InkWell(
                                   onTap: () => _pickTime(
@@ -233,9 +220,7 @@ class REDACTED_TOKEN
                                   ),
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
-                                      horizontal: 12,
-                                      vertical: 8,
-                                    ),
+                                        horizontal: 12, vertical: 8,),
                                     decoration: BoxDecoration(
                                       border: Border.all(color: Colors.grey),
                                       borderRadius: BorderRadius.circular(4),
@@ -266,19 +251,14 @@ class REDACTED_TOKEN
                           ),
                           child: Row(
                             children: [
-                              Icon(
-                                Icons.error_outline,
-                                color: Colors.red.shade700,
-                                size: 16,
-                              ),
+                              Icon(Icons.error_outline,
+                                  color: Colors.red.shade700, size: 16,),
                               const SizedBox(width: 8),
                               Expanded(
                                 child: Text(
-                                  'End time must be after start time',
+                                  AppLocalizations.of(context)!.endTimeAfterStartTimeError,
                                   style: TextStyle(
-                                    color: Colors.red.shade700,
-                                    fontSize: 12,
-                                  ),
+                                      color: Colors.red.shade700, fontSize: 12,),
                                 ),
                               ),
                             ],
@@ -288,7 +268,7 @@ class REDACTED_TOKEN
                     ] else ...[
                       const SizedBox(height: 8),
                       Text(
-                        'Closed',
+                        AppLocalizations.of(context)!.closed,
                         style: TextStyle(
                           color: Colors.grey[600],
                           fontStyle: FontStyle.italic,
@@ -306,46 +286,42 @@ class REDACTED_TOKEN
   }
 
   Widget _buildDrawer(BuildContext context) => Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            DrawerHeader(
-              decoration: BoxDecoration(
-                color: BusinessTheme.businessTheme.colorScheme.primary,
-              ),
-              child: const Text(
-                'Studio Management',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                ),
-              ),
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: [
+          DrawerHeader(
+            decoration: BoxDecoration(
+              color: BusinessTheme.businessTheme.colorScheme.primary,
             ),
-            ListTile(
-              leading: const Icon(Icons.calendar_month),
-              title: const Text('Calendar'),
-              onTap: () {
-                Navigator.pop(context);
-                context.go('/studio/calendar');
-              },
+            child: Text(
+              AppLocalizations.of(context)!.studioManagement,
             ),
-            ListTile(
-              leading: const Icon(Icons.access_time),
-              title: const Text('Availability'),
-              selected: true,
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.dashboard),
-              title: const Text('Dashboard'),
-              onTap: () {
-                Navigator.pop(context);
-                context.go('/studio/dashboard');
-              },
-            ),
-          ],
-        ),
-      );
+          ),
+          ListTile(
+            leading: const Icon(Icons.calendar_month),
+            title: Text(AppLocalizations.of(context)!.calendar),
+            onTap: () {
+              Navigator.pop(context);
+              context.go('/studio/calendar');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.access_time),
+            title: Text(AppLocalizations.of(context)!.availability),
+            selected: true,
+            onTap: () {
+              Navigator.pop(context);
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.dashboard),
+            title: Text(AppLocalizations.of(context)!.dashboard),
+            onTap: () {
+              Navigator.pop(context);
+              context.go('/studio/dashboard');
+            },
+          ),
+        ],
+      ),
+    );
 }
