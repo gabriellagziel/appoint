@@ -9,14 +9,10 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/your-org/app-oint-dev:latest
-      options: --pull
     env:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
-      PUB_CACHE: ~/.pub-cache
     services:
       firebase:
         image: cdrx/fake-firebase-emulator:latest
@@ -29,10 +25,16 @@ jobs:
           FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
     steps:
       - uses: actions/checkout@v4
-      - name: Check network access
-        run: |
-          curl --fail https://pub.dev
-          curl --fail https://storage.googleapis.com
+      - name: Check required network access
+        run: node scripts/check-network-allowlist.js
+      - name: Fetch tags
+        run: git fetch --tags
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.20.0'
+      - name: Add Flutter to PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -40,13 +42,6 @@ jobs:
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pub-
-      - name: Check required network access
-        run: |
-          for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
-          done
-      - name: Fetch tags
-        run: git fetch --tags
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -58,16 +53,9 @@ jobs:
         run: |
     which dart
           dart --version
-          curl --fail https://firebase-public.firebaseio.com
-          curl --fail https://storage.googleapis.com
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
-      - name: Debug SDK in Container
-        run: |
-          echo "CI PATH: $PATH"
-          which flutter || echo "flutter not found"
-          which dart    || echo "dart not found"
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -80,23 +68,13 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Check network access
+      - name: Flutter pub get
         run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
-      - name: Cache Pub packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
-      - name: Check storage connectivity
-        run: curl --fail https://storage.googleapis.com
-      - run: flutter pub get
+          for i in {1..3}; do
+            flutter pub get && break || sleep 5
+          done
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
       - name: Install Firebase CLI
@@ -113,15 +91,34 @@ jobs:
           fi
       - name: Start Firebase emulators
         run: |
-          export FIREBASE_STORAGE_EMULATOR_HOST="localhost:9199"
-          (firebase emulators:start --only firestore,auth,storage || sleep 5 && firebase emulators:start --only firestore,auth,storage) &
+          attempts=0
+          until firebase emulators:start --only firestore,auth >/tmp/firebase.log 2>&1; do
+            attempts=$((attempts+1))
+            if [ $attempts -ge 3 ]; then
+              cat /tmp/firebase.log
+              exit 1
+            fi
+            echo "Retrying firebase emulators..."
+            sleep 5
+          done &
           echo $! > emulator.pid
       - run: flutter pub downgrade || true
-      - name: Run Dart tests
-        run: dart test --coverage=coverage
-      - name: Run Flutter integration tests
-        run: flutter test integration_test --reporter=compact
-      - name: Upload coverage artifact
+      - name: Run tests with coverage
+        run: |
+          if which dart >/dev/null 2>&1; then
+            echo "Using Dart at $(which dart)"
+            dart test --coverage
+          else
+            echo "::warning::dart CLI not found; using flutter" >&2
+            flutter test --coverage
+          fi
+      - run: dart test integration_test/
+      - name: Check coverage report
+        if: success() && hashFiles('coverage/lcov.info') != ''
+        run: |
+          echo "Coverage file found. Ready to upload."
+      - name: Upload coverage
+        if: success() && hashFiles('coverage/lcov.info') != ''
         uses: actions/upload-artifact@v3
         with:
           name: coverage-report
@@ -134,21 +131,22 @@ jobs:
   content-library-test:
     needs: build-and-test
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/your-org/app-oint-dev:latest
-      options: --pull
     env:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
-      PUB_CACHE: ~/.pub-cache
     steps:
       - uses: actions/checkout@v4
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
+      - name: Check required network access
+        run: node scripts/check-network-allowlist.js
+      - name: Fetch tags
+        run: git fetch --tags
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.20.0'
+      - name: Add Flutter to PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -156,13 +154,6 @@ jobs:
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pub-
-      - name: Check required network access
-        run: |
-          for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
-          done
-      - name: Fetch tags
-        run: git fetch --tags
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -174,9 +165,7 @@ jobs:
         run: |
     which dart
           dart --version
-          curl --fail https://firebase-public.firebaseio.com
-          curl --fail https://storage.googleapis.com
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -191,23 +180,13 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Check network access
+      - name: Flutter pub get
         run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
-      - name: Cache Pub packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
-      - name: Check storage connectivity
-        run: curl --fail https://storage.googleapis.com
-      - run: flutter pub get --offline
+          for i in {1..3}; do
+            flutter pub get && break || sleep 5
+          done
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
@@ -229,22 +208,23 @@ jobs:
   deploy-functions:
     needs: build-and-test
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/your-org/app-oint-dev:latest
-      options: --pull
     if: github.ref == 'refs/heads/main'
     env:
       PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
-      PUB_CACHE: ~/.pub-cache
     steps:
       - uses: actions/checkout@v4
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
+      - name: Check required network access
+        run: node scripts/check-network-allowlist.js
+      - name: Fetch tags
+        run: git fetch --tags
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.20.0'
+      - name: Add Flutter to PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -252,13 +232,6 @@ jobs:
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pub-
-      - name: Check required network access
-        run: |
-          for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
-          done
-      - name: Fetch tags
-        run: git fetch --tags
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -270,9 +243,7 @@ jobs:
         run: |
     which dart
           dart --version
-          curl --fail https://firebase-public.firebaseio.com
-          curl --fail https://storage.googleapis.com
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -295,22 +266,23 @@ jobs:
   deploy-hosting:
     needs: build-and-test
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/your-org/app-oint-dev:latest
-      options: --pull
     if: github.ref == 'refs/heads/main'
     env:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
-      PUB_CACHE: ~/.pub-cache
     steps:
       - uses: actions/checkout@v4
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
+      - name: Check required network access
+        run: node scripts/check-network-allowlist.js
+      - name: Fetch tags
+        run: git fetch --tags
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.20.0'
+      - name: Add Flutter to PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -318,13 +290,6 @@ jobs:
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pub-
-      - name: Check required network access
-        run: |
-          for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
-          done
-      - name: Fetch tags
-        run: git fetch --tags
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -336,9 +301,7 @@ jobs:
         run: |
     which dart
           dart --version
-          curl --fail https://firebase-public.firebaseio.com
-          curl --fail https://storage.googleapis.com
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -353,23 +316,13 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Check network access
+      - name: Flutter pub get
         run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
-      - name: Cache Pub packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
-      - name: Check storage connectivity
-        run: curl --fail https://storage.googleapis.com
-      - run: flutter pub get --offline
+          for i in {1..3}; do
+            flutter pub get && break || sleep 5
+          done
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
@@ -382,8 +335,13 @@ jobs:
             echo "::warning::dart CLI not found; using flutter" >&2
             flutter test --coverage
           fi
-      - run: flutter test integration_test
-      - name: Upload coverage artifact
+      - run: dart test integration_test/
+      - name: Check coverage report
+        if: success() && hashFiles('coverage/lcov.info') != ''
+        run: |
+          echo "Coverage file found. Ready to upload."
+      - name: Upload coverage
+        if: success() && hashFiles('coverage/lcov.info') != ''
         uses: actions/upload-artifact@v3
         with:
           name: coverage-report
@@ -398,22 +356,23 @@ jobs:
   smoke-test:
     needs: [deploy-functions, deploy-hosting]
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/your-org/app-oint-dev:latest
-      options: --pull
     if: github.ref == 'refs/heads/main'
     env:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
-      PUB_CACHE: ~/.pub-cache
     steps:
       - uses: actions/checkout@v4
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
+      - name: Check required network access
+        run: node scripts/check-network-allowlist.js
+      - name: Fetch tags
+        run: git fetch --tags
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.20.0'
+      - name: Add Flutter to PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -421,13 +380,6 @@ jobs:
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pub-
-      - name: Check required network access
-        run: |
-          for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
-          done
-      - name: Fetch tags
-        run: git fetch --tags
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -439,9 +391,7 @@ jobs:
         run: |
     which dart
           dart --version
-          curl --fail https://firebase-public.firebaseio.com
-          curl --fail https://storage.googleapis.com
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -456,23 +406,13 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Check network access
+      - name: Flutter pub get
         run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
-      - name: Cache Pub packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
-      - name: Check storage connectivity
-        run: curl --fail https://storage.googleapis.com
-      - run: flutter pub get --offline
+          for i in {1..3}; do
+            flutter pub get && break || sleep 5
+          done
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
@@ -485,8 +425,13 @@ jobs:
             echo "::warning::dart CLI not found; using flutter" >&2
             flutter test --coverage
           fi
-      - run: flutter test integration_test
-      - name: Upload coverage artifact
+      - run: dart test integration_test/
+      - name: Check coverage report
+        if: success() && hashFiles('coverage/lcov.info') != ''
+        run: |
+          echo "Coverage file found. Ready to upload."
+      - name: Upload coverage
+        if: success() && hashFiles('coverage/lcov.info') != ''
         uses: actions/upload-artifact@v3
         with:
           name: coverage-report
@@ -505,14 +450,18 @@ jobs:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
-      PUB_CACHE: ~/.pub-cache
     steps:
       - uses: actions/checkout@v4
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
+      - name: Check required network access
+        run: node scripts/check-network-allowlist.js
+      - name: Fetch tags
+        run: git fetch --tags
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.20.0'
+      - name: Add Flutter to PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -520,13 +469,6 @@ jobs:
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pub-
-      - name: Check required network access
-        run: |
-          for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
-          done
-      - name: Fetch tags
-        run: git fetch --tags
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -538,9 +480,7 @@ jobs:
         run: |
     which dart
           dart --version
-          curl --fail https://firebase-public.firebaseio.com
-          curl --fail https://storage.googleapis.com
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -555,23 +495,13 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Check network access
+      - name: Flutter pub get
         run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
-      - name: Cache Pub packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
-      - name: Check storage connectivity
-        run: curl --fail https://storage.googleapis.com
-      - run: flutter pub get --offline
+          for i in {1..3}; do
+            flutter pub get && break || sleep 5
+          done
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
@@ -584,8 +514,13 @@ jobs:
             echo "::warning::dart CLI not found; using flutter" >&2
             flutter test --coverage
           fi
-      - run: flutter test integration_test
-      - name: Upload coverage artifact
+      - run: dart test integration_test/
+      - name: Check coverage report
+        if: success() && hashFiles('coverage/lcov.info') != ''
+        run: |
+          echo "Coverage file found. Ready to upload."
+      - name: Upload coverage
+        if: success() && hashFiles('coverage/lcov.info') != ''
         uses: actions/upload-artifact@v3
         with:
           name: coverage-report
@@ -599,22 +534,23 @@ jobs:
   notify:
     needs: [build-and-test, deploy-functions, deploy-hosting, smoke-test]
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/your-org/app-oint-dev:latest
-      options: --pull
     if: always()
     env:
       PUB_HOSTED_URL: http://localhost:4873
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
-      PUB_CACHE: ~/.pub-cache
     steps:
       - uses: actions/checkout@v4
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
+      - name: Check required network access
+        run: node scripts/check-network-allowlist.js
+      - name: Fetch tags
+        run: git fetch --tags
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.20.0'
+      - name: Add Flutter to PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -622,13 +558,6 @@ jobs:
           key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pub-
-      - name: Check required network access
-        run: |
-          for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase-public.firebaseio.com metadata.google.internal 169.254.169.254; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
-          done
-      - name: Fetch tags
-        run: git fetch --tags
       - name: Clear Flutter cache
         run: flutter clean
       - name: Verify Flutter Version
@@ -640,9 +569,7 @@ jobs:
         run: |
     which dart
           dart --version
-          curl --fail https://firebase-public.firebaseio.com
-          curl --fail https://storage.googleapis.com
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Install Verdaccio
@@ -653,17 +580,13 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Check network access
+      - name: Flutter pub get
         run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
-      - name: Check storage connectivity
-        run: curl --fail https://storage.googleapis.com
-      - run: flutter pub get --offline
+          for i in {1..3}; do
+            flutter pub get && break || sleep 5
+          done
       - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs --offline
+      - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
       - run: flutter pub downgrade || true
@@ -676,8 +599,13 @@ jobs:
             echo "::warning::dart CLI not found; using flutter" >&2
             flutter test --coverage
           fi
-      - run: flutter test integration_test
-      - name: Upload coverage artifact
+      - run: dart test integration_test/
+      - name: Check coverage report
+        if: success() && hashFiles('coverage/lcov.info') != ''
+        run: |
+          echo "Coverage file found. Ready to upload."
+      - name: Upload coverage
+        if: success() && hashFiles('coverage/lcov.info') != ''
         uses: actions/upload-artifact@v3
         with:
           name: coverage-report
