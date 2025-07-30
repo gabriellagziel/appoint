@@ -4,7 +4,11 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
-  "postCreateCommand": "./scripts/devcontainer-init.sh",
+  "postCreateCommand": "./scripts/devcontainer-init.sh && which dart && dart --version",
+  "containerEnv": {
+    "ALLOWED_HOSTS": "storage.googleapis.com dart.dev pub.dev firebase-public.firebaseio.com",
+    "GITHUB_CODESPACES_PORTS_HTTPS_PROXY_ALLOWED_HOSTS": "storage.googleapis.com,dart.dev,pub.dev,firebase-public.firebaseio.com"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -18,20 +22,14 @@
           "storage.googleapis.com",
           "dart.dev",
           "pub.dev",
-          "firebase-public.firebaseio.com",
-          "raw.githubusercontent.com"
+          "firebase-public.firebaseio.com"
         ]
       }
     }
   },
-  "containerEnv": {
-    "ALLOWED_DOMAINS": "raw.githubusercontent.com"
-  },
   "features": {},
-  "containerEnv": {
-    "GITHUB_CODESPACES_PORTS_HTTPS_PROXY_ALLOWED_HOSTS": "storage.googleapis.com,dart.dev,pub.dev,firebase-public.firebaseio.com"
-  },
   "mounts": [
     "source=${localEnv:HOME}/.pub-cache,target=/root/.pub-cache,type=bind"
   ]
+
 }
