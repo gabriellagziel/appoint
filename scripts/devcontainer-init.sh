@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
-flutter gen-l10n
-flutter pub run build_runner build --delete-conflicting-outputs --offline
+for domain in storage.googleapis.com dart.dev pub.dev firebase-public.firebaseio.com raw.githubusercontent.com; do
+  echo "Checking $domain…"
+  curl --fail "https://$domain" -I >/dev/null
+done
+
