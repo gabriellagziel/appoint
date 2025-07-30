@@ -4,8 +4,10 @@ import 'package:appoint/features/ambassador_dashboard_screen.dart';
 import 'package:appoint/features/ambassador_onboarding_screen.dart';
 import 'package:appoint/features/auth/auth_wrapper.dart';
 import 'package:appoint/features/auth/login_screen.dart';
+import 'package:appoint/features/auth/signup_screen.dart';
 import 'package:appoint/features/auth/forgot_password_screen.dart';
-import 'package:appoint/features/auth/verify_email_screen.dart';
+import 'package:appoint/features/auth/reset_password_screen.dart';
+import 'package:appoint/features/studio_business/entry/business_signup_screen.dart';
 import 'package:appoint/features/booking/booking_confirm_screen.dart';
 import 'package:appoint/features/booking/booking_request_screen.dart';
 import 'package:appoint/features/booking/screens/chat_booking_screen.dart';
@@ -29,7 +31,7 @@ import 'package:appoint/features/studio_business/screens/appointments_screen.dar
     as studio_appointments;
 import 'package:appoint/features/studio_business/screens/business_calendar_screen.dart';
 import 'package:appoint/features/studio_business/screens/business_connect_screen.dart';
-
+import 'package:appoint/features/studio_business/screens/business_dashboard_screen.dart';
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
 import 'package:appoint/features/studio_business/screens/clients_screen.dart'
     as studio_clients;
@@ -54,8 +56,6 @@ import 'package:go_router/go_router.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:geolocator/geolocator.dart';
-import 'package:appoint/services/eta_service.dart';
 
 // Enhanced features imports
 import 'package:appoint/features/onboarding/onboarding_screen.dart';
@@ -69,8 +69,8 @@ import 'package:appoint/features/notifications/enhanced_notifications_screen.dar
 import 'package:appoint/features/settings/enhanced_settings_screen.dart';
 import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
 import 'package:appoint/features/profile/enhanced_profile_screen.dart';
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/features/onboarding/permissions_onboarding_screen.dart';
+import 'package:appoint/features/settings/privacy_policy_screen.dart';
+import 'package:appoint/features/settings/terms_of_service_screen.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
     initialLocation: '/',
@@ -86,14 +86,39 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         builder: (context, final state) => const OnboardingScreen(),
       ),
       GoRoute(
-        path: '/onboarding/permissions',
-        name: 'permissionsOnboarding',
-        builder: (context, final state) => const PermissionsOnboardingScreen(),
-      ),
-      GoRoute(
         path: '/login',
         name: 'login',
         builder: (context, final state) => const LoginScreen(),
+      ),
+      GoRoute(
+        path: '/signup',
+        name: 'signup',
+        builder: (context, final state) => const SignupScreen(),
+      ),
+      GoRoute(
+        path: '/forgot-password',
+        name: 'forgotPassword',
+        builder: (context, final state) => const ForgotPasswordScreen(),
+      ),
+      GoRoute(
+        path: '/reset-password',
+        name: 'resetPassword',
+        builder: (context, final state) => const ResetPasswordScreen(),
+      ),
+      GoRoute(
+        path: '/privacy-policy',
+        name: 'privacyPolicy',
+        builder: (context, final state) => const PrivacyPolicyScreen(),
+      ),
+      GoRoute(
+        path: '/terms-of-service',
+        name: 'termsOfService',
+        builder: (context, final state) => const TermsOfServiceScreen(),
+      ),
+      GoRoute(
+        path: '/business-signup',
+        name: 'businessSignup',
+        builder: (context, final state) => const BusinessSignupScreen(),
       ),
       GoRoute(
         path: '/dashboard',
@@ -262,7 +287,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       ),
       GoRoute(
         path: '/business/messages',
-        name: 'messages',
+        name: 'businessMessages',
         builder: (context, final state) => const MessagesScreen(),
       ),
       GoRoute(
@@ -272,7 +297,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       ),
       GoRoute(
         path: '/business/settings',
-        name: 'settings',
+        name: 'businessSettings',
         builder: (context, final state) => const SettingsScreen(),
       ),
       GoRoute(
@@ -304,13 +329,6 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       ),
 
       // Search route
-      GoRoute(
-        path: '/search',
-        name: 'search',
-        builder: (context, final state) => const SearchScreen(),
-      ),
-
-      // Messaging routes
       GoRoute(
         path: '/messages',
         name: 'messages',
@@ -397,7 +415,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
             path: 'dashboard',
             name: 'studioDashboard',
             builder: (context, final state) =>
-                const business.BusinessDashboardScreen(),
+                const BusinessDashboardScreen(),
           ),
         ],
       ),
@@ -418,34 +436,17 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       ),
 
       GoRoute(
-        path: '/forgot-password',
-        name: 'forgotPassword',
-        builder: (context, final state) => const ForgotPasswordScreen(),
-      ),
-      GoRoute(
-        path: '/verify-email',
-        name: 'verifyEmail',
-        builder: (context, final state) => const VerifyEmailScreen(),
-      ),
-
-      GoRoute(
         path: '/studio/staff-availability',
         name: 'studioStaffAvailability',
         builder: (context, final state) =>
             const StaffAvailabilityScreen(),
       ),
     ],
-    errorBuilder: (context, final state) {
-      final l10n = AppLocalizations.of(context)!;
-      return Scaffold(
-        body: Center(
-          child: Text(
-            l10n.noRouteDefinedForStateuripath(state.uri.path),
-            textAlign: TextAlign.center,
-          ),
-        ),
-      );
-    },
+    errorBuilder: (context, final state) => Scaffold(
+      body: Center(
+        child: Text('No route defined for ${state.uri.path}'),
+      ),
+    ),
   ),);
 
 // Enhanced meeting details screen with Google Maps integration
@@ -469,14 +470,11 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
   Map<String, dynamic>? meetingData;
   bool isLoading = true;
   String? error;
-  int? lateBy;
-  TravelMode _travelMode = TravelMode.driving; // TODO allow user selection
 
   @override
   void initState() {
     super.initState();
     _loadMeetingData();
-    _checkEta();
   }
 
   Future<void> _loadMeetingData() async {
@@ -486,7 +484,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
         error = null;
       });
 
-      // Try externalMeetings collection first
+      // Try to fetch from externalMeetings collection first
       final externalDoc = await FirebaseFirestore.instance
           .collection('externalMeetings')
           .doc(widget.meetingId)
@@ -497,24 +495,24 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
           meetingData = externalDoc.data();
           isLoading = false;
         });
-        _checkEta();
         return;
       }
 
-      // Fallback to appointments collection
+      // If not found in externalMeetings, try appointments collection
       final appointmentDoc = await FirebaseFirestore.instance
           .collection('appointments')
           .doc(widget.meetingId)
           .get();
+
       if (appointmentDoc.exists) {
         setState(() {
           meetingData = appointmentDoc.data();
           isLoading = false;
         });
-        _checkEta();
         return;
       }
 
+      // If still not found, show error
       setState(() {
         error = 'Meeting not found';
         isLoading = false;
@@ -527,33 +525,11 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
     }
   }
 
-  Future<void> _checkEta() async {
-    try {
-      final position = await Geolocator.getCurrentPosition();
-      if (meetingData == null) return;
-      final destLat = (meetingData?['lat'] as num?)?.toDouble();
-      final destLng = (meetingData?['lng'] as num?)?.toDouble();
-      if (destLat == null || destLng == null) return;
-      final eta = await EtaService().getEtaMinutes(
-        origin: LatLng(position.latitude, position.longitude),
-        dest: LatLng(destLat, destLng),
-        mode: _travelMode,
-      );
-      if (eta == null) return;
-      final start = DateTime.parse((meetingData?['start'] as String?) ?? '');
-      final minutesUntilStart = start.difference(DateTime.now()).inMinutes;
-      final delta = eta - minutesUntilStart;
-      setState(() {
-        lateBy = delta > 0 ? delta : null;
-      });
-    } catch (_) {}
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text((meetingData?['title'] as String?) ?? 'Meeting Details'),
+        title: Text(meetingData?['title'] ?? 'Meeting Details'),
         actions: [
           if (meetingData != null)
             PopupMenuButton(
@@ -900,14 +876,6 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                 ),
               ),
             ),
-          if (lateBy != null) ...[
-            const SizedBox(height: 16),
-            ElevatedButton.icon(
-              onPressed: _notifyLate,
-              icon: const Icon(Icons.schedule),
-              label: Text('אני מאחר (~$lateBy דק׳)'),
-            ),
-          ],
         ],
       ),
     );
@@ -987,17 +955,5 @@ ${meeting['address'] != null ? 'Location: ${meeting['address']}' : ''}
         backgroundColor: Colors.green,
       ),
     );
-  }
-
-  Future<void> _notifyLate() async {
-    final delta = lateBy;
-    if (delta == null) return;
-    // TODO: Call cloud function to notify provider
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('הודעת איחור נשלחה (~$delta דק׳)')),
-    );
-    setState(() {
-      lateBy = null;
-    });
   }
 }
