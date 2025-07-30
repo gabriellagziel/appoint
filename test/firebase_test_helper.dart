@@ -69,8 +69,8 @@ class FirebaseTestHelper {
   static MockUser createMockUser() => MockUser();
   static MockUserCredential createMockUserCredential() => MockUserCredential();
 
-  /// Setup comprehensive Firebase mocks for all services
-  static void setupComprehensiveFirebaseMocks() {
+  /// Setup basic Firebase mocks for testing
+  static void setupBasicFirebaseMocks() {
     // Setup Firebase Auth mocks
     final mockAuth = createMockAuth();
     final mockUser = createMockUser();
@@ -100,55 +100,8 @@ class FirebaseTestHelper {
             email: any(named: 'email'), password: any(named: 'password')))
         .thenAnswer((_) async => mockUserCredential);
     when(() => mockAuth.signOut()).thenAnswer((_) async {});
-
-    // Setup Firestore mocks
-    final mockFirestore = createMockFirestore();
-    final mockCollection = MockCollectionReference();
-    final mockDocument = MockDocumentReference();
-    final mockDocumentSnapshot = MockDocumentSnapshot();
-    final mockQuerySnapshot = MockQuerySnapshot();
-
-    // Setup collection mock
-    when(() => mockFirestore.collection(any())).thenReturn(mockCollection);
-    when(() => mockCollection.doc(any())).thenReturn(mockDocument);
-    when(() => mockCollection.add(any())).thenAnswer((_) async => mockDocument);
-    when(() => mockCollection.snapshots())
-        .thenAnswer((_) => Stream.value(mockQuerySnapshot as QuerySnapshot<Map<String, dynamic>>));
-
-    // Setup document mock
-    when(() => mockDocument.set(any())).thenAnswer((_) async {});
-    when(() => mockDocument.update(any())).thenAnswer((_) async {});
-    when(() => mockDocument.delete()).thenAnswer((_) async {});
-    when(() => mockDocument.snapshots())
-        .thenAnswer((_) => Stream.value(mockDocumentSnapshot));
-    when(() => mockDocument.get())
-        .thenAnswer((_) async => mockDocumentSnapshot);
-
-    // Setup document snapshot mock
-    when(() => mockDocumentSnapshot.exists).thenReturn(true);
-    when(() => mockDocumentSnapshot.data()).thenReturn({
-      'id': 'test-doc-id',
-      'name': 'Test Document',
-      'createdAt': DateTime.now().toIso8601String(),
-    });
-
-    // Setup query snapshot mock with proper type casting
-    when(() => mockQuerySnapshot.docs)
-        .thenReturn([mockDocumentSnapshot as QueryDocumentSnapshot<Object?>]);
-    when(() => mockQuerySnapshot.size).thenReturn(1);
   }
 }
-
-// Additional mock classes with proper type parameters
-class MockCollectionReference extends Mock
-    implements CollectionReference<Map<String, dynamic>> {}
-
-class MockDocumentReference extends Mock {}
-
-class MockDocumentSnapshot extends Mock {}
-
-class MockQuerySnapshot extends Mock
-    implements QuerySnapshot<Object?> {}
 
 /// Legacy function for backward compatibility
 Future<void> initializeTestFirebase() async {
@@ -165,7 +118,7 @@ final mockFirestore = MockFirebaseFirestore();
 
 // Helper function to setup Firebase mocks
 void setupFirebaseMocks() {
-  FirebaseTestHelper.setupComprehensiveFirebaseMocks();
+  FirebaseTestHelper.setupBasicFirebaseMocks();
 }
 
 // Helper function to create a test widget with Firebase mocks
