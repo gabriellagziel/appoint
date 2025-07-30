@@ -1,71 +1,47 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
+import '../models/reward_tier.dart';
 
 class RewardsService {
-  RewardsService({FirebaseFirestore? firestore})
-      : _firestore = firestore ?? FirebaseFirestore.instance;
   final FirebaseFirestore _firestore;
+  final FirebaseAuth _auth;
 
-  /// Points awarded when a referral signs up.
-  static const int referralSignupPoints = 10;
+  RewardsService({FirebaseFirestore? firestore, FirebaseAuth? auth})
+      : _firestore = firestore ?? FirebaseFirestore.instance,
+        _auth = auth ?? FirebaseAuth.instance;
 
-  /// Reward tier thresholds.
-  static const Map<String, int> rewardTiers = {
-    'bronze': 0,
-    'silver': 100,
-    'gold': 500,
-    'platinum': 1000,
-  };
-
-  /// Increment the current user's points when a referral signs up.
-  Future<int> addReferralSignupPoints(String referrerId) async =>
-      _incrementPoints(referrerId, referralSignupPoints);
-
-  /// Get the current point balance for a user.
-  Future<int> getPoints(String userId) async {
-    final doc = await _firestore.collection('user_rewards').doc(userId).get();
-    return (doc.data()?['points'] as int?) ?? 0;
-  }
-
-  /// Stream the point balance for a user.
-  Stream<int> watchPoints(String userId) => _firestore
-      .collection('user_rewards')
-      .doc(userId)
-      .snapshots()
-      .map((doc) => (doc.data()?['points'] as int?) ?? 0);
-
-  /// Determine the reward tier for a given point balance.
-  String tierForPoints(int points) {
-    if (points >= rewardTiers['platinum']!) return 'platinum';
-    if (points >= rewardTiers['gold']!) return 'gold';
-    if (points >= rewardTiers['silver']!) return 'silver';
-    return 'bronze';
-  }
-
-  Future<int> _incrementPoints(String userId, final int points) async {
-    final doc = _firestore.collection('user_rewards').doc(userId);
-    return _firestore.runTransaction((tx) async {
-      final snapshot = await tx.get(doc);
-      final current = (snapshot.data()?['points'] as int?) ?? 0;
-      final updated = current + points;
-      tx.set(doc, {'points': updated}, SetOptions(merge: true));
-      return updated;
+  /// Adds [points] to the currently authenticated user.
+  Future<void> addPoints(int points) async {
+    final uid = _auth.currentUser?.uid;
+    if (uid == null) return;
+    final ref = _firestore.collection('rewards').doc(uid);
+    await _firestore.runTransaction((tx) async {
+      final doc = await tx.get(ref);
+      final current = doc.exists ? (doc.data()?['points'] ?? 0) as int : 0;
+      tx.set(ref, {'points': current + points});
     });
   }
 
-  // TODO(username): Implement actual rewards logic
-  Future<int> getUserPoints(String userId) async {
-    // Stub implementation - returns current points from database
-    return getPoints(userId);
+  /// Returns a stream of the user's points.
+  Stream<int> watchPoints(String uid) {
+    return _firestore.collection('rewards').doc(uid).snapshots().map((doc) {
+      if (!doc.exists) return 0;
+      return (doc.data()?['points'] ?? 0) as int;
+    });
   }
 
-  Future<void> addPoints(String userId, final int points) async {
-    // Stub implementation - adds points to user account
-    await _incrementPoints(userId, points);
+  /// Fetches the user's current points once.
+  Future<int> getPoints(String uid) async {
+    final doc = await _firestore.collection('rewards').doc(uid).get();
+    if (!doc.exists) return 0;
+    return (doc.data()?['points'] ?? 0) as int;
   }
 
-  Future<void> redeemReward(String userId, final String rewardId) async {
-    // Stub implementation - logs reward redemption
-    // In a real implementation, this would validate the reward and deduct points
-    print('Reward redemption requested: User $userId, Reward $rewardId');
-  }
+  /// Predefined reward tiers.
+  List<RewardTier> get rewardTiers => const [
+        RewardTier(name: 'Bronze', pointsRequired: 100),
+        RewardTier(name: 'Silver', pointsRequired: 500),
+        RewardTier(name: 'Gold', pointsRequired: 1000),
+      ];
 }
