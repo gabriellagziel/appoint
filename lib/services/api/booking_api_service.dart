@@ -1,6 +1,4 @@
 import 'package:appoint/models/booking.dart';
-import 'package:appoint/models/business.dart';
-import 'package:appoint/models/service.dart';
 import 'package:appoint/services/api/api_client.dart';
 
 class BookingApiService {

@@ -27,7 +27,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(l10n.playtime ?? 'Playtime'),
+        title: Text('Playtime'),
         backgroundColor: AppTheme.primaryColor,
         foregroundColor: Colors.white,
         elevation: 0,
@@ -171,7 +171,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
                     ),
                     const SizedBox(width: 8),
                     Text(
-                      l10n.tickets ?? 'Tickets',
+                      'Tickets',
                       style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -190,7 +190,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
                   ),
                 ),
                 Text(
-                  l10n.ticketsEarned ?? 'Tickets Earned',
+                  'Tickets Earned',
                   style: TextStyle(
                     fontSize: 14,
                     color: Colors.grey[600],
@@ -249,10 +249,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
                           ),
                           const SizedBox(height: 4),
                           Text(
-                            canEarn
-                                ? (l10n.playNow ?? 'Play Now!')
-                                : (l10n.dailyLimitReached ??
-                                    'Daily Limit Reached'),
+                            canEarn ? 'Play Now' : 'Daily Limit Reached',
                             style: const TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
@@ -302,7 +299,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
                     ),
                     const SizedBox(width: 8),
                     Text(
-                      l10n.dailyProgress ?? 'Daily Progress',
+                      'Daily Progress',
                       style: const TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -319,7 +316,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  '$earnedToday/$maxTickets ${l10n.ticketsEarned ?? 'tickets earned today'}',
+                  '$earnedToday/$maxTickets tickets earned today',
                   style: TextStyle(
                     fontSize: 14,
                     color: Colors.grey[600],
@@ -382,7 +379,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
-              AppLocalizations.of(context)?.ticketEarned ?? 'Ticket earned! 🎉',
+              'Ticket earned! 🎉',
             ),
             backgroundColor: Colors.green,
             duration: const Duration(seconds: 2),
@@ -394,8 +391,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
-              AppLocalizations.of(context)?.errorOccurred ??
-                  'An error occurred: $e',
+              'An error occurred: $e',
             ),
             backgroundColor: Colors.red,
             duration: const Duration(seconds: 3),

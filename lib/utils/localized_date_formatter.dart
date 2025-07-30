@@ -20,7 +20,7 @@ class LocalizedDateFormatter {
 
   /// Format the difference from [timestamp] to now in a human friendly form.
   String formatRelative(DateTime timestamp) {
-    diff = DateTime.now().difference(timestamp);
+    final diff = DateTime.now().difference(timestamp);
     if (diff.inMinutes < 1) {
       return Intl.message('just now', name: 'justNow', locale: _locale);
     }

@@ -31,7 +31,8 @@ class AmbassadorService {
       final snapshot = await query.get();
       return snapshot.docs
           .map(
-            (doc) => AmbassadorStats.fromJson(doc.data()!),
+            (doc) =>
+                AmbassadorStats.fromJson(doc.data()! as Map<String, dynamic>),
           )
           .toList();
     } catch (e) {

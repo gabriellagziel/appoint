@@ -51,7 +51,23 @@ final adminStatsProvider = FutureProvider<Map<String, dynamic>>((ref) async {
     throw Exception('Unauthorized: Admin access required');
   }
 
-  return adminService.getDashboardStats();
+  final stats = await adminService.fetchAdminDashboardStats();
+  return {
+    'totalUsers': stats.totalUsers,
+    'activeUsers': stats.activeUsers,
+    'totalBookings': stats.totalBookings,
+    'completedBookings': stats.completedBookings,
+    'pendingBookings': stats.pendingBookings,
+    'totalRevenue': stats.totalRevenue,
+    'adRevenue': stats.adRevenue,
+    'subscriptionRevenue': stats.subscriptionRevenue,
+    'totalOrganizations': stats.totalOrganizations,
+    'activeOrganizations': stats.activeOrganizations,
+    'totalAmbassadors': stats.totalAmbassadors,
+    'activeAmbassadors': stats.activeAmbassadors,
+    'totalErrors': stats.totalErrors,
+    'criticalErrors': stats.criticalErrors,
+  };
 });
 
 /// Provider for total user count
@@ -63,7 +79,8 @@ final totalUsersProvider = FutureProvider<int>((ref) async {
     throw Exception('Unauthorized: Admin access required');
   }
 
-  return adminService.getTotalUsersCount();
+  final stats = await adminService.fetchAdminDashboardStats();
+  return stats.totalUsers;
 });
 
 /// Provider for user management operations
@@ -76,7 +93,8 @@ class AdminNotifier extends StateNotifier<AdminState> {
     state = state.copyWith(isLoading: true);
     try {
       final adminService = ref.read(adminServiceProvider);
-      await adminService.deleteUser(userId);
+      // For now, we'll update the user's role to 'deleted' instead of actually deleting
+      await adminService.updateUserRole(userId, 'deleted');
       state = state.copyWith(isLoading: false);
     } catch (e) {
       state = state.copyWith(isLoading: false, error: e.toString());

@@ -264,20 +264,20 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
 
         if (constraints.maxWidth > 1200) {
           // Large desktop/tablet landscape
-          const crossAxisCount = 4;
-          const childAspectRatio = 2.5;
+          crossAxisCount = 4;
+          childAspectRatio = 2.5;
         } else if (constraints.maxWidth > 800) {
           // Tablet
-          const crossAxisCount = 3;
-          const childAspectRatio = 2.8;
+          crossAxisCount = 3;
+          childAspectRatio = 2.8;
         } else if (constraints.maxWidth > 600) {
           // Large phone/small tablet
-          const crossAxisCount = 2;
-          const childAspectRatio = 3.0;
+          crossAxisCount = 2;
+          childAspectRatio = 3.0;
         } else {
           // Phone
-          const crossAxisCount = 1;
-          const childAspectRatio = 3.5;
+          crossAxisCount = 1;
+          childAspectRatio = 3.5;
         }
 
         return GridView.builder(
@@ -372,20 +372,20 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
 
         if (constraints.maxWidth > 1200) {
           // Large desktop/tablet landscape
-          const crossAxisCount = 6;
-          const childAspectRatio = 1.2;
+          crossAxisCount = 6;
+          childAspectRatio = 1.2;
         } else if (constraints.maxWidth > 800) {
           // Tablet
-          const crossAxisCount = 4;
-          const childAspectRatio = 1.3;
+          crossAxisCount = 4;
+          childAspectRatio = 1.3;
         } else if (constraints.maxWidth > 600) {
           // Large phone/small tablet
-          const crossAxisCount = 3;
-          const childAspectRatio = 1.4;
+          crossAxisCount = 3;
+          childAspectRatio = 1.4;
         } else {
           // Phone
-          const crossAxisCount = 2;
-          const childAspectRatio = 1.5;
+          crossAxisCount = 2;
+          childAspectRatio = 1.5;
         }
 
         return GridView.builder(

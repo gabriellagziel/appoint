@@ -151,4 +151,24 @@ class BookingService {
       rethrow;
     }
   }
+
+  /// Gets the weekly booking count for a user
+  Future<int> getWeeklyBookingCount(String userId) async {
+    try {
+      final now = DateTime.now();
+      final weekStart = now.subtract(Duration(days: now.weekday - 1));
+      final weekEnd = weekStart.add(const Duration(days: 7));
+
+      final snapshot = await _firestore
+          .collection(_bookingsCollection)
+          .where('userId', isEqualTo: userId)
+          .where('dateTime', isGreaterThanOrEqualTo: weekStart)
+          .where('dateTime', isLessThan: weekEnd)
+          .get();
+
+      return snapshot.docs.length;
+    } catch (e) {
+      return 0;
+    }
+  }
 }

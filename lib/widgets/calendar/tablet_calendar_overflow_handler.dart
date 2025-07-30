@@ -461,7 +461,7 @@ class ResponsiveCalendarDayView extends StatelessWidget {
                               bottom: BorderSide(
                                 color: Theme.of(context)
                                     .dividerColor
-                                    .withOpacity(0.3),
+                                    .withValues(alpha: 0.3),
                               ),
                             ),
                           ),
@@ -512,7 +512,7 @@ class ResponsiveCalendarEventCard extends StatelessWidget {
 
           return Card(
             elevation: isSelected ? 4 : 2,
-            color: color?.withOpacity(0.1) ?? Theme.of(context).cardColor,
+            color: color?.withValues(alpha: 0.1) ?? Theme.of(context).cardColor,
             child: InkWell(
               onTap: onTap,
               borderRadius: BorderRadius.circular(isTablet ? 12 : 8),
@@ -553,7 +553,7 @@ class ResponsiveCalendarEventCard extends StatelessWidget {
                             color: Theme.of(context)
                                 .colorScheme
                                 .onSurface
-                                .withOpacity(0.6),
+                                .withValues(alpha: 0.6),
                           ),
                           const SizedBox(width: 4),
                           Expanded(
@@ -581,7 +581,7 @@ class ResponsiveCalendarEventCard extends StatelessWidget {
                             color: Theme.of(context)
                                 .colorScheme
                                 .onSurface
-                                .withOpacity(0.6),
+                                .withValues(alpha: 0.6),
                           ),
                           const SizedBox(width: 4),
                           Expanded(

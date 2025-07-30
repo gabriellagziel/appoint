@@ -34,9 +34,9 @@ class ContentPagingNotifier
         _hasMore = false;
       }
       _items.addAll(newItems);
-      final state = AsyncValue.data(List.unmodifiable(_items));
-    } catch (e) {
-      final state = AsyncValue.error(e, st);
+      state = AsyncValue.data(List.unmodifiable(_items));
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 }

@@ -972,14 +972,15 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
   }
 
   void _shareMeeting() {
-    final meeting = meetingData!;
-    final meetingInfo = '''
-Meeting: ${meeting['title'] ?? 'Meeting'}
-Date: ${meeting['date'] ?? 'TBD'}
-Time: ${meeting['time'] ?? 'TBD'}
-${meeting['link'] != null ? 'Link: ${meeting['link']}' : ''}
-${meeting['address'] != null ? 'Location: ${meeting['address']}' : ''}
-''';
+    // TODO: Implement actual sharing functionality
+    // final meeting = meetingData!;
+    // final meetingInfo = '''
+    // Meeting: ${meeting['title'] ?? 'Meeting'}
+    // Date: ${meeting['date'] ?? 'TBD'}
+    // Time: ${meeting['time'] ?? 'TBD'}
+    // ${meeting['link'] != null ? 'Link: ${meeting['link']}' : ''}
+    // ${meeting['address'] != null ? 'Location: ${meeting['address']}' : ''}
+    // ''';
 
     // Copy to clipboard (simplified implementation)
     ScaffoldMessenger.of(context).showSnackBar(

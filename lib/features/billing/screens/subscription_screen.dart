@@ -1,6 +1,5 @@
 import 'package:appoint/services/stripe_service.dart';
 import 'package:flutter/material.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 
 class SubscriptionScreen extends StatefulWidget {
   const SubscriptionScreen({
@@ -20,7 +19,6 @@ class SubscriptionScreen extends StatefulWidget {
 }
 
 class _SubscriptionScreenState extends State<SubscriptionScreen> {
-  late final WebViewController _controller;
   bool _isLoading = true;
   bool _hasError = false;
   String _errorMessage = '';
@@ -34,56 +32,12 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
   Future<void> _initializeWebView() async {
     try {
       // Create checkout session
-      final sessionData = await StripeService().createCheckoutSession(
+      await StripeService().createCheckoutSession(
         studioId: widget.studioId,
         priceId: widget.priceId,
       );
 
-      final checkoutUrl = sessionData['url'] as String;
-
-      // Initialize WebView controller
-      final controller = WebViewController()
-        ..setJavaScriptMode(JavaScriptMode.unrestricted)
-        ..setNavigationDelegate(
-          NavigationDelegate(
-            onPageStarted: (String url) {
-              setState(() {
-                _isLoading = true;
-              });
-            },
-            onPageFinished: (String url) {
-              setState(() {
-                _isLoading = false;
-              });
-
-              // Check for success URL with session_id
-              if (url.contains('session_id=')) {
-                _handleSuccessfulPayment(url);
-              }
-
-              // Check for cancel URL
-              if (url.contains('canceled=true') || url.contains('cancel_url')) {
-                _handleCancelledPayment();
-              }
-            },
-            onNavigationRequest: (NavigationRequest request) {
-              // Handle navigation requests
-              if (request.url.contains('session_id=')) {
-                _handleSuccessfulPayment(request.url);
-                return NavigationDecision.prevent;
-              }
-              return NavigationDecision.navigate;
-            },
-            onWebResourceError: (WebResourceError error) {
-              setState(() {
-                _hasError = true;
-                _errorMessage = 'Error loading checkout: ${error.description}';
-                _isLoading = false;
-              });
-            },
-          ),
-        )
-        ..loadRequest(Uri.parse(checkoutUrl));
+      // TODO: Implement checkout URL handling and WebView controller
     } catch (e) {
       setState(() {
         _hasError = true;
@@ -93,54 +47,55 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
     }
   }
 
-  Future<void> _handleSuccessfulPayment(String url) async {
-    try {
-      // Extract session_id from URL
-      final uri = Uri.parse(url);
-      final sessionId = uri.queryParameters['session_id'];
-
-      if (sessionId != null) {
-        // Update subscription status
-        await StripeService().updateSubscriptionStatus(
-          studioId: widget.studioId,
-          status: 'active',
-          subscriptionId: sessionId,
-        );
-
-        if (mounted) {
-          // Show success message
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Subscription activated successfully!'),
-              backgroundColor: Colors.green,
-            ),
-          );
-
-          // Navigate back
-          Navigator.of(context).pop(true);
-        }
-      }
-    } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Error confirming payment: $e'),
-          backgroundColor: Colors.red,
-        ),
-      );
-    }
-  }
-
-  void _handleCancelledPayment() {
-    if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Payment was cancelled'),
-          backgroundColor: Colors.orange,
-        ),
-      );
-      Navigator.of(context).pop(false);
-    }
-  }
+  // TODO: Implement payment handling
+  // Future<void> _handleSuccessfulPayment(String url) async {
+  //   try {
+  //     // Extract session_id from URL
+  //     final uri = Uri.parse(url);
+  //     final sessionId = uri.queryParameters['session_id'];
+  //
+  //     if (sessionId != null) {
+  //       // Update subscription status
+  //       await StripeService().updateSubscriptionStatus(
+  //         studioId: widget.studioId,
+  //         status: 'active',
+  //         subscriptionId: sessionId,
+  //       );
+  //
+  //       if (mounted) {
+  //         // Show success message
+  //         ScaffoldMessenger.of(context).showSnackBar(
+  //           const SnackBar(
+  //             content: Text('Subscription activated successfully!'),
+  //             backgroundColor: Colors.green,
+  //           ),
+  //         );
+  //
+  //         // Navigate back
+  //         Navigator.of(context).pop(true);
+  //       }
+  //     }
+  //   } catch (e) {
+  //     ScaffoldMessenger.of(context).showSnackBar(
+  //       SnackBar(
+  //         content: Text('Error confirming payment: $e'),
+  //         backgroundColor: Colors.red,
+  //       ),
+  //     );
+  //   }
+  // }
+  //
+  // void _handleCancelledPayment() {
+  //   if (mounted) {
+  //     ScaffoldMessenger.of(context).showSnackBar(
+  //       const SnackBar(
+  //         content: Text('Payment was cancelled'),
+  //         backgroundColor: Colors.orange,
+  //       ),
+  //     );
+  //     Navigator.of(context).pop(false);
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) => Scaffold(
@@ -193,9 +148,37 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
 
             // WebView or error content
             Expanded(
-              child: _hasError
-                  ? _buildErrorWidget()
-                  : WebViewWidget(controller: _controller),
+              child:
+                  _hasError ? _buildErrorWidget() : _buildPlaceholderWidget(),
+            ),
+          ],
+        ),
+      );
+
+  Widget _buildPlaceholderWidget() => const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.payment,
+              size: 64,
+              color: Colors.grey,
+            ),
+            SizedBox(height: 16),
+            Text(
+              'Payment Integration Coming Soon',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 8),
+            Text(
+              'WebView checkout will be implemented here',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.grey,
+              ),
             ),
           ],
         ),

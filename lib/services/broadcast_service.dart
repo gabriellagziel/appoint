@@ -136,63 +136,6 @@ class BroadcastService {
     }
   }
 
-  // Get target users based on filters
-  Future<List<UserProfile>> _getTargetUsers(
-    BroadcastTargetingFilters filters,
-  ) async {
-    try {
-      Query query = _usersCollection;
-
-      // Apply filters
-      if (filters.countries != null && filters.countries!.isNotEmpty) {
-        query = query.where('country', whereIn: filters.countries);
-      }
-
-      if (filters.cities != null && filters.cities!.isNotEmpty) {
-        query = query.where('city', whereIn: filters.cities);
-      }
-
-      if (filters.subscriptionTiers != null &&
-          filters.subscriptionTiers!.isNotEmpty) {
-        query =
-            query.where('subscriptionTier', whereIn: filters.subscriptionTiers);
-      }
-
-      if (filters.userRoles != null && filters.userRoles!.isNotEmpty) {
-        query = query.where('role', whereIn: filters.userRoles);
-      }
-
-      if (filters.accountStatuses != null &&
-          filters.accountStatuses!.isNotEmpty) {
-        query = query.where('status', whereIn: filters.accountStatuses);
-      }
-
-      if (filters.joinedAfter != null) {
-        query = query.where(
-          'createdAt',
-          isGreaterThanOrEqualTo: filters.joinedAfter,
-        );
-      }
-
-      if (filters.joinedBefore != null) {
-        query =
-            query.where('createdAt', isLessThanOrEqualTo: filters.joinedBefore);
-      }
-
-      final snapshot = await query.get();
-      return snapshot.docs
-          .map(
-            (doc) => UserProfile.fromJson({
-              'id': doc.id,
-              ...(doc.data()!),
-            }),
-          )
-          .toList();
-    } catch (e) {
-      throw Exception('Failed to get target users: $e');
-    }
-  }
-
   // Send broadcast message via backend Firebase Function
   Future<void> _sendViaBackendFunction(String messageId) async {
     try {

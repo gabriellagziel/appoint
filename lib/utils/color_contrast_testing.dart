@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 class ColorContrastTesting {
   /// Calculate relative luminance of a color
   static double calculateRelativeLuminance(Color color) {
-    r = _normalizeColorComponent(color.red);
-    g = _normalizeColorComponent(color.green);
-    b = _normalizeColorComponent(color.blue);
+    final r = _normalizeColorComponent((color.r * 255.0).round() & 0xff);
+    final g = _normalizeColorComponent((color.g * 255.0).round() & 0xff);
+    final b = _normalizeColorComponent((color.b * 255.0).round() & 0xff);
 
     return 0.2126 * r + 0.7152 * g + 0.0722 * b;
   }
@@ -23,8 +23,8 @@ class ColorContrastTesting {
 
   /// Calculate contrast ratio between two colors
   static double calculateContrastRatio(Color color1, Color color2) {
-    luminance1 = calculateRelativeLuminance(color1);
-    luminance2 = calculateRelativeLuminance(color2);
+    final luminance1 = calculateRelativeLuminance(color1);
+    final luminance2 = calculateRelativeLuminance(color2);
 
     final double lighter = max(luminance1, luminance2);
     final double darker = min(luminance1, luminance2);
@@ -38,7 +38,7 @@ class ColorContrastTesting {
     Color background, {
     bool isLargeText = false,
   }) {
-    ratio = calculateContrastRatio(foreground, background);
+    final ratio = calculateContrastRatio(foreground, background);
     return isLargeText ? ratio >= 3.0 : ratio >= 4.5;
   }
 
@@ -48,7 +48,7 @@ class ColorContrastTesting {
     Color background, {
     bool isLargeText = false,
   }) {
-    ratio = calculateContrastRatio(foreground, background);
+    final ratio = calculateContrastRatio(foreground, background);
     return isLargeText ? ratio >= 4.5 : ratio >= 7.0;
   }
 
@@ -57,7 +57,7 @@ class ColorContrastTesting {
     Color foreground,
     Color background,
   ) {
-    ratio = calculateContrastRatio(foreground, background);
+    final ratio = calculateContrastRatio(foreground, background);
 
     if (ratio >= 7.0) {
       return 'Excellent (${ratio.toStringAsFixed(2)}:1) - Meets WCAG AAA';
@@ -78,8 +78,8 @@ class ColorContrastTesting {
     const black = Color(0xFF000000);
     const white = Color(0xFFFFFFFF);
 
-    blackContrast = calculateContrastRatio(black, background);
-    whiteContrast = calculateContrastRatio(white, background);
+    final blackContrast = calculateContrastRatio(black, background);
+    final whiteContrast = calculateContrastRatio(white, background);
 
     if (preferDark) {
       return blackContrast >= whiteContrast ? black : white;
@@ -94,11 +94,10 @@ class ColorContrastTesting {
     int count = 5,
   }) {
     final palette = <Color>[];
-    baseLuminance = calculateRelativeLuminance(baseColor);
 
     for (var i = 0; i < count; i++) {
-      factor = 0.2 + (i * 0.2);
-      accessibleColor = _adjustColorLuminance(baseColor, factor);
+      final factor = 0.2 + (i * 0.2);
+      final accessibleColor = _adjustColorLuminance(baseColor, factor);
       palette.add(accessibleColor);
     }
 
@@ -107,8 +106,8 @@ class ColorContrastTesting {
 
   /// Adjust color luminance while maintaining hue and saturation
   static Color _adjustColorLuminance(Color color, double factor) {
-    hsl = HSLColor.fromColor(color);
-    newLightness = (hsl.lightness * factor).clamp(0.0, 1.0);
+    final hsl = HSLColor.fromColor(color);
+    final newLightness = (hsl.lightness * factor).clamp(0.0, 1.0);
     return hsl.withLightness(newLightness).toColor();
   }
 
@@ -165,8 +164,8 @@ class ColorContrastTesting {
 
   /// Generate contrast report for a theme
   static String generateContrastReport(ThemeData theme) {
-    results = testThemeContrast(theme);
-    report = StringBuffer();
+    final results = testThemeContrast(theme);
+    final report = StringBuffer();
 
     report.writeln('Color Contrast Report');
     report.writeln('===================');
@@ -179,7 +178,7 @@ class ColorContrastTesting {
 
     final passedCount = results.values.where((bool passed) => passed).length;
     final totalCount = results.length;
-    passRate = (passedCount / totalCount) * 100;
+    final passRate = (passedCount / totalCount) * 100;
 
     report.writeln();
     report.writeln(

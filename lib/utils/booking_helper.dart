@@ -108,7 +108,7 @@ class BookingHelper {
     final String? newStatus,
   }) async {
     try {
-      existingBooking = await _bookingService.getBookingById(bookingId);
+      final existingBooking = await _bookingService.getBookingById(bookingId);
       if (existingBooking == null) {
         return BookingResult.error('Booking not found');
       }
@@ -167,7 +167,7 @@ class BookingHelper {
     final String? reason,
   }) async {
     try {
-      booking = await _bookingService.getBookingById(bookingId);
+      final booking = await _bookingService.getBookingById(bookingId);
       if (booking == null) {
         return BookingResult.error('Booking not found');
       }
@@ -195,17 +195,17 @@ class BookingHelper {
     final Duration? slotDuration,
   }) async {
     try {
-      duration = slotDuration ?? const Duration(minutes: 30);
+      final duration = slotDuration ?? const Duration(minutes: 30);
       final slots = <TimeSlot>[];
 
       // Get staff availability for the date
-      availability = await _getStaffAvailability(staffId, date);
+      final availability = await _getStaffAvailability(staffId, date);
       if (availability.isEmpty) {
         return slots;
       }
 
       // Generate time slots with proper timezone handling
-      localDate = DateTime(date.year, date.month, date.day);
+      final localDate = DateTime(date.year, date.month, date.day);
       const businessStartHour = 9; // 9 AM local time
       const businessEndHour = 18; // 6 PM local time
 
@@ -227,7 +227,7 @@ class BookingHelper {
       for (var time = startTime;
           time.isBefore(endTime);
           time = time.add(duration)) {
-        slotEnd = time.add(duration);
+        final slotEnd = time.add(duration);
 
         // Ensure slot doesn't cross midnight
         if (slotEnd.day != time.day) {
@@ -243,7 +243,7 @@ class BookingHelper {
 
           // Only add slot if it's still within business hours
           if (time.hour >= businessStartHour) {
-            isAvailable = availability.any(
+            final isAvailable = availability.any(
               (final avail) =>
                   avail.startTime.isBefore(time) &&
                   avail.endTime.isAfter(adjustedEnd),
@@ -268,14 +268,14 @@ class BookingHelper {
           }
         } else {
           // Normal slot within same day
-          isAvailable = availability.any(
+          final isAvailable = availability.any(
             (final avail) =>
                 avail.startTime.isBefore(time) &&
                 avail.endTime.isAfter(slotEnd),
           );
 
           if (isAvailable) {
-            isBooked = await _isSlotBooked(staffId, time, duration);
+            final isBooked = await _isSlotBooked(staffId, time, duration);
             if (!isBooked) {
               slots.add(
                 TimeSlot(
@@ -305,13 +305,13 @@ class BookingHelper {
     required final Duration duration,
   }) async {
     // Check if date is in the future (using local time)
-    now = DateTime.now();
+    final now = DateTime.now();
     if (dateTime.isBefore(now)) {
       return ValidationResult.error('Booking time must be in the future');
     }
 
     // Check if date is within allowed range (e.g., 30 days)
-    maxDate = now.add(const Duration(days: 30));
+    final maxDate = now.add(const Duration(days: 30));
     if (dateTime.isAfter(maxDate)) {
       return ValidationResult.error(
         'Booking cannot be more than 30 days in advance',
@@ -319,13 +319,13 @@ class BookingHelper {
     }
 
     // Check if staff exists and is available
-    staffExists = await _checkStaffExists(staffId);
+    final staffExists = await _checkStaffExists(staffId);
     if (!staffExists) {
       return ValidationResult.error('Selected staff member not found');
     }
 
     // Check if service exists
-    serviceExists = await _checkServiceExists(serviceId);
+    final serviceExists = await _checkServiceExists(serviceId);
     if (!serviceExists) {
       return ValidationResult.error('Selected service not found');
     }
@@ -342,7 +342,7 @@ class BookingHelper {
     }
 
     // Check if booking duration would extend beyond business hours
-    bookingEnd = dateTime.add(duration);
+    final bookingEnd = dateTime.add(duration);
     final bookingEndHour = bookingEnd.hour;
 
     // Handle midnight crossing
@@ -382,7 +382,7 @@ class BookingHelper {
     required final Duration duration,
     final String? excludeBookingId,
   }) async {
-    endTime = dateTime.add(duration);
+    final endTime = dateTime.add(duration);
 
     final query = _firestore
         .collection('bookings')
@@ -390,7 +390,7 @@ class BookingHelper {
         .where('dateTime', isLessThan: endTime)
         .where('dateTime', isGreaterThan: dateTime);
 
-    snapshot = await query.get();
+    final snapshot = await query.get();
 
     if (excludeBookingId != null) {
       return snapshot.docs.any((doc) => doc.id != excludeBookingId);
@@ -412,7 +412,7 @@ class BookingHelper {
           .get();
 
       return snapshot.docs.map((doc) {
-        data = doc.data();
+        final data = doc.data();
         return AvailabilitySlot(
           startTime: (data['startTime'] as Timestamp).toDate(),
           endTime: (data['endTime'] as Timestamp).toDate(),
@@ -430,7 +430,7 @@ class BookingHelper {
     final DateTime startTime,
     Duration duration,
   ) async {
-    endTime = startTime.add(duration);
+    final endTime = startTime.add(duration);
 
     final snapshot = await _firestore
         .collection('bookings')
@@ -444,13 +444,13 @@ class BookingHelper {
 
   /// Check if staff member exists
   Future<bool> _checkStaffExists(String staffId) async {
-    doc = await _firestore.collection('staff').doc(staffId).get();
+    final doc = await _firestore.collection('staff').doc(staffId).get();
     return doc.exists;
   }
 
   /// Check if service exists
   Future<bool> _checkServiceExists(String serviceId) async {
-    doc = await _firestore.collection('services').doc(serviceId).get();
+    final doc = await _firestore.collection('services').doc(serviceId).get();
     return doc.exists;
   }
 

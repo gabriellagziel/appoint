@@ -6,7 +6,7 @@ class TimeOfDayConverter implements JsonConverter<TimeOfDay, String> {
 
   @override
   TimeOfDay fromJson(String json) {
-    parts = json.split(':');
+    final parts = json.split(':');
     return TimeOfDay(
       hour: int.parse(parts[0]),
       minute: int.parse(parts[1]),
@@ -15,8 +15,8 @@ class TimeOfDayConverter implements JsonConverter<TimeOfDay, String> {
 
   @override
   String toJson(TimeOfDay object) {
-    h = object.hour.toString().padLeft(2, '0');
-    m = object.minute.toString().padLeft(2, '0');
+    final h = object.hour.toString().padLeft(2, '0');
+    final m = object.minute.toString().padLeft(2, '0');
     return '$h:$m';
   }
 }

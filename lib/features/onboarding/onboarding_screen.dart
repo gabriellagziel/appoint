@@ -1,6 +1,6 @@
 import 'package:appoint/config/theme.dart';
 import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/services/analytics_service.dart';
+import 'package:appoint/services/analytics/analytics_service.dart';
 import 'package:appoint/services/onboarding_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -80,11 +80,11 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   }
 
   void _trackOnboardingStart() {
-    AnalyticsService().trackOnboardingStart();
+    AnalyticsService.instance.trackOnboardingStart();
   }
 
   void _trackOnboardingStep(int stepNumber) {
-    AnalyticsService().trackOnboardingStep(
+    AnalyticsService.instance.trackOnboardingStep(
       stepName: _pages[stepNumber].title,
       stepNumber: stepNumber + 1,
       totalSteps: _pages.length,
@@ -122,8 +122,8 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     });
 
     try {
-      await OnboardingService().markOnboardingComplete();
-      AnalyticsService().trackOnboardingComplete();
+      await OnboardingService.instance.markOnboardingComplete();
+      AnalyticsService.instance.trackOnboardingComplete();
 
       if (mounted) {
         context.go('/onboarding/permissions');
@@ -228,7 +228,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
               width: 120,
               height: 120,
               decoration: BoxDecoration(
-                color: page.color.withOpacity(0.1),
+                color: page.color.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(60),
               ),
               child: Icon(
