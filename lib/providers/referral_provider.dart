@@ -1,14 +1,19 @@
-import 'package:appoint/providers/auth_provider.dart';
-import 'package:appoint/services/referral_service.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final referralServiceProvider =
-    Provider<ReferralService>((ref) => ReferralService());
+/// Provides the referral link for the current user if available.
+final referralLinkProvider = FutureProvider<String?>(
+  (ref) async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) return null;
 
-final referralCodeProvider = FutureProvider<String>((ref) async {
-  final user = ref.read(authProvider).currentUser;
-  if (user == null) {
-    throw Exception('User not logged in');
-  }
-  return ref.read(referralServiceProvider).generateReferralCode(user.uid);
-});
+    final snap = await FirebaseFirestore.instance
+        .collection('ambassadors')
+        .where('userId', isEqualTo: user.uid)
+        .limit(1)
+        .get();
+    if (snap.docs.isEmpty) return null;
+    return snap.docs.first.data()['shareLink'] as String?;
+  },
+);
