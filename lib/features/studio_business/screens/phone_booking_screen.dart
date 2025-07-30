@@ -1,7 +1,4 @@
 import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
-import 'package:appoint/features/studio_business/screens/appointments_screen.dart';
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/widgets/whatsapp_group_share_button.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -154,28 +151,6 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
                             : const Text('Send Booking Invite'),
                       ),
                     ),
-                    const SizedBox(height: 12),
-                    
-                    // WhatsApp Group Share Button
-                    SizedBox(
-                      width: double.infinity,
-                      child: WhatsAppGroupShareButton(
-                        appointmentId: 'booking-${DateTime.now().millisecondsSinceEpoch}',
-                        creatorId: FirebaseAuth.instance.currentUser?.uid ?? '',
-                        meetingTitle: 'Appointment with ${_nameController.text}',
-                        meetingDate: DateTime.tryParse('${_dateController.text} ${_timeController.text}') ?? DateTime.now().add(Duration(days: 1)),
-                        showAsDialog: true,
-                        onShareComplete: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('Shared to WhatsApp! Participants can join using the link.'),
-                              backgroundColor: Color(0xFF25D366),
-                              duration: Duration(seconds: 3),
-                            ),
-                          );
-                        },
-                      ),
-                    ),
                   ],
                 ),
               ),
@@ -229,12 +204,7 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
       if (userExists) {
         // Send in-app notification and create booking
         await _createBookingForExistingUser(
-          phoneNumber,
-          customerName,
-          date,
-          time,
-          bookingCode,
-        );
+            phoneNumber, customerName, date, time, bookingCode,);
         _showSuccessDialog('In-app notification sent to existing user');
       } else {
         // Open WhatsApp with download link and booking code
@@ -243,16 +213,14 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
 
       // Save booking request to Firestore
       await _saveBookingRequest(
-        customerName,
-        phoneNumber,
-        date,
-        time,
-        bookingCode,
-      );
+          customerName, phoneNumber, date, time, bookingCode,);
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error: $e')),
-      );
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Error: $e')),
+          );
+        }
+      }
     } finally {
       if (mounted) {
         setState(() => _isProcessing = false);
@@ -276,23 +244,21 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
   }
 
   Future<void> _createBookingForExistingUser(
-    final String phoneNumber,
-    final String customerName,
-    final String date,
-    final String time,
-    String bookingCode,
-  ) async {
+      final String phoneNumber,
+      final String customerName,
+      final String date,
+      final String time,
+      String bookingCode,) async {
     // TODO(username): Implement push notification via FCM and create booking record
     // Creating booking for existing user: $phoneNumber, $customerName, $date, $time, $bookingCode
   }
 
   Future<void> _openWhatsApp(
-    final String phoneNumber,
-    final String customerName,
-    final String date,
-    final String time,
-    String bookingCode,
-  ) async {
+      final String phoneNumber,
+      final String customerName,
+      final String date,
+      final String time,
+      String bookingCode,) async {
     final message = '''
 Hi $customerName!
 
@@ -319,12 +285,11 @@ We'll see you soon!
   }
 
   Future<void> _saveBookingRequest(
-    final String customerName,
-    final String phoneNumber,
-    final String date,
-    final String time,
-    String bookingCode,
-  ) async {
+      final String customerName,
+      final String phoneNumber,
+      final String date,
+      final String time,
+      String bookingCode,) async {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) throw Exception('Not authenticated');
 

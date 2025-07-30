@@ -219,9 +219,12 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
         );
       }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error: $e')),
-      );
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Error: $e')),
+          );
+        }
+      }
     } finally {
       if (mounted) {
         setState(() => _isAdding = false);
@@ -257,9 +260,7 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
   }
 
   Future<void> _updateInvoiceStatus(
-    String invoiceId,
-    final String status,
-  ) async {
+      String invoiceId, final String status,) async {
     try {
       await FirebaseFirestore.instance
           .collection('invoices')

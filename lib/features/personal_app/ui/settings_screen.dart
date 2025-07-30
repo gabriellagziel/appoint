@@ -1,58 +1,94 @@
-import 'package:appoint/providers/ambassador_record_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-class SettingsScreen extends ConsumerWidget {
+import 'package:appoint/widgets/app_logo.dart';
+import 'package:appoint/constants/app_branding.dart';
+
+class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
 
   @override
-  Widget build(BuildContext context, final WidgetRef ref) {
-    ambassadorAsync = ref.watch(ambassadorRecordProvider);
-
+  Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Settings')),
-      body: ambassadorAsync.when(
-        data: (ambassador) {
-          if (ambassador == null) {
-            return Center(
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/ambassador-onboarding');
-                },
-                child: const Text('Become an Ambassador'),
-              ),
-            );
-          }
-
-          return Padding(
+      appBar: AppBar(
+        title: Row(
+          children: [
+            const AppLogo(size: 28, logoOnly: true),
+            const SizedBox(width: 8),
+            const Text('Settings'),
+          ],
+        ),
+      ),
+      body: ListView(
+        children: [
+          // App branding section
+          Container(
             padding: const EdgeInsets.all(16),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Ambassador Status: ${ambassador.status}'),
+            const AppLogo(size: 64, showText: false),
                 const SizedBox(height: 8),
-                Text('Referrals: ${ambassador.referrals}'),
-                const SizedBox(height: 8),
-                SelectableText(ambassador.shareLink),
-                const SizedBox(height: 8),
-                ElevatedButton.icon(
-                  icon: const Icon(Icons.share),
-                  onPressed: () {
-                    SharePlus.instance.share(
-                      ShareParams(
-                        text:
-                            'Join me on Appoint! Use my ambassador link: ${ambassador.shareLink}',
-                        subject: 'Appoint - Ambassador Link',
-                      ),
-                    );
-                  },
-                  label: const Text('Share Link'),
+                Text(
+                  'APP-OINT',
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  AppBranding.fullSlogan,
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: Colors.grey[600],
+                  ),
                 ),
               ],
             ),
-          );
-        },
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, final _) => Center(child: Text('Error: $e')),
+          ),
+          const Divider(),
+
+          // Settings options
+          ListTile(
+            leading: const Icon(Icons.person),
+            title: const Text('Profile'),
+            onTap: () {
+              // Navigate to profile
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.notifications),
+            title: const Text('Notifications'),
+            onTap: () {
+              // Navigate to notifications
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.security),
+            title: const Text('Privacy & Security'),
+            onTap: () {
+              // Navigate to privacy settings
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.help),
+            title: const Text('Help & Support'),
+            onTap: () {
+              // Navigate to help
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.info),
+            title: const Text('About'),
+            onTap: () {
+              // Navigate to about
+            },
+          ),
+          const Divider(),
+          ListTile(
+            leading: const Icon(Icons.logout),
+            title: const Text('Logout'),
+            onTap: () {
+              // Handle logout
+            },
+          ),
+        ],
       ),
     );
   }

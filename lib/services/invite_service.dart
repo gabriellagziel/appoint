@@ -42,7 +42,9 @@ class InviteService {
     }
     
     await NotificationService().sendNotificationToUser(
-        invitee.id, 'New Invite', 'You have a new invite',);
+        uid: invitee.id, 
+        title: 'New Invite', 
+        body: 'You have a new invite');
   }
 
   Future<void> respondToInvite(final String appointmentId,

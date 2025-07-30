@@ -78,7 +78,7 @@ class AppLocalizationsPt extends AppLocalizations {
       '[PT] [PT] Are you sure you want to cancel this invite?';
 
   @override
-  String created(String created, Object date) {
+  String created(Object date) {
     return '[PT] Criado';
   }
 
@@ -139,7 +139,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get participants => '[PT] Participantes';
 
   @override
-  String recipients(String recipients, Object count) {
+  String recipients(Object count) {
     return '[PT] [PT] Recipients';
   }
 
@@ -179,7 +179,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String content(String content) {
+  String content(Object content) {
     return '[PT] [PT] Content';
   }
 
@@ -234,7 +234,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get removeChild => '[PT] [PT] Remove Child';
 
   @override
-  String status(String status) {
+  String status(Object status) {
     return '[PT] [PT] Status';
   }
 
@@ -285,7 +285,7 @@ class AppLocalizationsPt extends AppLocalizations {
       '[PT] [PT] Access revoked successfully';
 
   @override
-  String type(String type) {
+  String type(Object type) {
     return '[PT] [PT] Type';
   }
 
@@ -417,7 +417,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get inviteDetail => '[PT] [PT] Invite Details';
 
   @override
-  String scheduled(String scheduled, Object date) {
+  String scheduled(Object date) {
     return '[PT] [PT] Scheduled';
   }
 
@@ -430,7 +430,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get scheduling => '[PT] [PT] Scheduling';
 
   @override
-  String errorSavingMessage(String error) {
+  String errorSavingMessage(Object error) {
     return '[PT] [PT] Error saving message';
   }
 
@@ -463,7 +463,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(String error) {
+  String errorSendingMessage(Object error) {
     return '[PT] [PT] Error sending message';
   }
 
@@ -519,12 +519,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get pollOptions => '[PT] [PT] Poll Options';
 
   @override
-  String clicked(String clicked, Object count) {
+  String clicked(Object count) {
     return '[PT] [PT] Clicked';
   }
 
   @override
-  String link(String link) {
+  String link(Object link) {
     return '[PT] [PT] Link';
   }
 
@@ -2683,196 +2683,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[PT] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Portuguese)';
   }
-
-  @override
-  String get title => 'Title';
-
-  @override
-  String get pleaseEnterTitle => 'Please enter a title';
-
-  @override
-  String get messageType => 'Message Type';
-
-  @override
-  String get pleaseEnterContent => 'Please enter content';
-
-  @override
-  String get imageSelected => 'Image selected';
-
-  @override
-  String get videoSelected => 'Video selected';
-
-  @override
-  String get externalLink => 'External Link';
-
-  @override
-  String get pleaseEnterLink => 'Please enter a link';
-
-  @override
-  String get estimatedRecipients => 'Estimated recipients';
-
-  @override
-  String get countries => 'Countries';
-
-  @override
-  String get cities => 'Cities';
-
-  @override
-  String get subscriptionTiers => 'Subscription Tiers';
-
-  @override
-  String get userRoles => 'User Roles';
-
-  @override
-  String get errorEstimatingRecipients => 'Error estimating recipients';
-
-  @override
-  String get errorPickingImage => 'Error picking image';
-
-  @override
-  String get errorPickingVideo => 'Error picking video';
-
-  @override
-  String get userNotAuthenticated => 'User not authenticated';
-
-  @override
-  String get failedToUploadImage => 'Failed to upload image';
-
-  @override
-  String get failedToUploadVideo => 'Failed to upload video';
-
-  @override
-  String get image => 'Image';
-
-  @override
-  String get video => 'Video';
-
-  @override
-  String get continue1 => 'Continue';
-
-  @override
-  String get getStarted => 'Get Started';
-
-  @override
-  String get analyticsDashboard => 'Analytics Dashboard';
-
-  @override
-  String get filters => 'Filters';
-
-  @override
-  String get broadcasts => 'Broadcasts';
-
-  @override
-  String get formAnalytics => 'Form Analytics';
-
-  @override
-  String get totalBroadcasts => 'Total Broadcasts';
-
-  @override
-  String get totalRecipients => 'Total Recipients';
-
-  @override
-  String get openRate => 'Open Rate';
-
-  @override
-  String get engagementRate => 'Engagement Rate';
-
-  @override
-  String get noDataAvailable => 'No data available';
-
-  @override
-  String get breakdown => 'Breakdown';
-
-  @override
-  String get byCountry => 'By Country';
-
-  @override
-  String get byType => 'By Type';
-
-  @override
-  String get noBroadcastsFound => 'No broadcasts found';
-
-  @override
-  String get sent => 'Sent';
-
-  @override
-  String get responses => 'Responses';
-
-  @override
-  String get clickRate => 'Click Rate';
-
-  @override
-  String get responseRate => 'Response Rate';
-
-  @override
-  String get viewFormAnalytics => 'View Form Analytics';
-
-  @override
-  String get pending => 'Pending';
-
-  @override
-  String get sending => 'Sending';
-
-  @override
-  String get failed => 'Failed';
-
-  @override
-  String get partialSent => 'Partial Sent';
-
-  @override
-  String get noFormBroadcasts => 'No form broadcasts';
-
-  @override
-  String get totalResponses => 'Total Responses';
-
-  @override
-  String get noFormData => 'No form data';
-
-  @override
-  String get average => 'Average';
-
-  @override
-  String get mostCommon => 'Most Common';
-
-  @override
-  String get errorLoadingData => 'Error loading data';
-
-  @override
-  String get today => 'Today';
-
-  @override
-  String get last7Days => 'Last 7 Days';
-
-  @override
-  String get last30Days => 'Last 30 Days';
-
-  @override
-  String get customRange => 'Custom Range';
-
-  @override
-  String get all => 'All';
-
-  @override
-  String get timeRange => 'Time Range';
-
-  @override
-  String get startDate => 'Start Date';
-
-  @override
-  String get endDate => 'End Date';
-
-  @override
-  String get exportDataDescription =>
-      'Export analytics data for the selected time range';
-
-  @override
-  String get exportComplete => 'Export complete';
-
-  @override
-  String get exportFailed => 'Export failed';
-
-  @override
-  String get export => 'Export';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -2949,7 +2759,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       '[PT_BR] [PT_BR] Are you sure you want to cancel this invite?';
 
   @override
-  String created(String created, Object date) {
+  String created(Object date) {
     return '[PT_BR] Criado';
   }
 
@@ -3011,7 +2821,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get participants => '[PT_BR] Participantes';
 
   @override
-  String recipients(String recipients, Object count) {
+  String recipients(Object count) {
     return '[PT_BR] [PT_BR] Recipients';
   }
 
@@ -3051,7 +2861,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String content(String content) {
+  String content(Object content) {
     return '[PT_BR] [PT_BR] Content';
   }
 
@@ -3107,7 +2917,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get removeChild => '[PT_BR] Remover membro';
 
   @override
-  String status(String status) {
+  String status(Object status) {
     return '[PT_BR] [PT_BR] Status';
   }
 
@@ -3157,7 +2967,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get accessRevokedSuccessfully => '[PT_BR] Acesso revogado com sucesso';
 
   @override
-  String type(String type) {
+  String type(Object type) {
     return '[PT_BR] Tipo';
   }
 
@@ -3288,7 +3098,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get inviteDetail => '[PT_BR] [PT_BR] Invite Details';
 
   @override
-  String scheduled(String scheduled, Object date) {
+  String scheduled(Object date) {
     return '[PT_BR] Agendado';
   }
 
@@ -3301,7 +3111,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get scheduling => '[PT_BR] [PT_BR] Scheduling';
 
   @override
-  String errorSavingMessage(String error) {
+  String errorSavingMessage(Object error) {
     return '[PT_BR] Erro ao salvar mensagem';
   }
 
@@ -3334,7 +3144,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String errorSendingMessage(String error) {
+  String errorSendingMessage(Object error) {
     return '[PT_BR] Erro ao enviar mensagem';
   }
 
@@ -3392,12 +3202,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get pollOptions => '[PT_BR] [PT_BR] Poll Options';
 
   @override
-  String clicked(String clicked, Object count) {
+  String clicked(Object count) {
     return '[PT_BR] [PT_BR] Clicked';
   }
 
   @override
-  String link(String link) {
+  String link(Object link) {
     return '[PT_BR] [PT_BR] Link';
   }
 
