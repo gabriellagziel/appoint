@@ -1,6 +1,7 @@
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 final settingsProvider = StateProvider<Map<String, dynamic>>((ref) => {
   'notifications': {
@@ -69,7 +70,7 @@ class EnhancedSettingsScreen extends ConsumerWidget {
         title: const Text('John Doe'),
         subtitle: const Text('john.doe@example.com'),
         trailing: const Icon(Icons.edit),
-        onTap: () => Navigator.pushNamed(context, '/profile/edit'),
+        onTap: () => context.push('/profile/edit'),
       ),
     );
   }
@@ -222,7 +223,7 @@ class EnhancedSettingsScreen extends ConsumerWidget {
             title: const Text('Current Plan'),
             subtitle: Text(_getPlanText(subscription['plan'])),
             trailing: const Icon(Icons.arrow_forward_ios),
-            onTap: () => Navigator.pushNamed(context, '/subscription'),
+            onTap: () => context.push('/subscription'),
           ),
           SwitchListTile(
             title: const Text('Auto-Renew'),
@@ -562,7 +563,7 @@ class EnhancedSettingsScreen extends ConsumerWidget {
             onPressed: () {
               Navigator.pop(context);
               // TODO: Implement sign out
-              Navigator.pushReplacementNamed(context, '/login');
+              context.go('/login');
             },
             child: const Text('Sign Out'),
           ),

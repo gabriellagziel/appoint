@@ -3,6 +3,7 @@ import 'package:appoint/providers/user_provider.dart';
 import 'package:appoint/widgets/app_logo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
 class AppShell extends ConsumerWidget {
   const AppShell({required this.child, super.key});
@@ -73,7 +74,7 @@ class AppShell extends ConsumerWidget {
                     title: Text(item.label),
                     onTap: () {
                       Navigator.pop(context); // Close drawer
-                      Navigator.pushNamed(context, item.route);
+                      context.go(item.route);
                     },
                   );
                 },

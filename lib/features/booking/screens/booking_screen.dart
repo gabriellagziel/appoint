@@ -17,6 +17,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:go_router/go_router.dart';
 
 class BookingScreen extends ConsumerStatefulWidget {
   const BookingScreen({super.key});
@@ -162,7 +163,7 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
             // Chat Booking Button with tap feedback
             TapScaleFeedback(
               child: ElevatedButton.icon(
-                onPressed: () => Navigator.pushNamed(context, '/chat-booking'),
+                onPressed: () => context.push('/chat-booking'),
                 icon: const Icon(Icons.chat_bubble_outline),
                 label: const Text('Book via Chat'),
               ),
