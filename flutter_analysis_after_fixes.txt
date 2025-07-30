@@ -1,0 +1,166 @@
+Analyzing APP-OINT...                                           
+
+warning • The declaration '_formatDate' isn't referenced • lib/features/admin/admin_broadcast_screen.dart:922:10 • unused_element
+warning • Unused import: '../../providers/admin_provider.dart' • lib/features/admin/admin_monetization_screen.dart:3:8 • unused_import
+warning • The value of the local variable 'l10n' isn't used • lib/features/admin/admin_playtime_games_screen.dart:17:11 • unused_local_variable
+warning • The value of the local variable 'l10n' isn't used • lib/features/admin/admin_playtime_games_screen.dart:646:11 • unused_local_variable
+warning • The declaration '_getStatusColor' isn't referenced • lib/features/playtime/screens/parent_dashboard_screen.dart:623:9 • unused_element
+warning • Unused import: '../../../providers/playtime_provider.dart' • lib/features/playtime/screens/playtime_landing_screen.dart:7:8 • unused_import
+warning • Unused import: '../../../services/playtime_service.dart' • lib/features/playtime/screens/playtime_virtual_screen.dart:11:8 • unused_import
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_am.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_am.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_am.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_ar.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ar.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ar.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_bg.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_bg.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_bg.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_bn.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_bn.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_bn.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_cs.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_cs.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_cs.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_da.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_da.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_da.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_de.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_de.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_de.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_el.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_el.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_el.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_es.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_es.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_es.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_fa.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_fa.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_fa.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_fi.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_fi.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_fi.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_fr.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_fr.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_fr.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_gu.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_gu.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_gu.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_ha.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ha.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ha.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_he.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_he.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_he.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_hi.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_hi.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_hi.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_hr.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_hr.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_hr.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_hu.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_hu.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_hu.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_id.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_id.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_id.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_it.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_it.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_it.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_ja.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ja.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ja.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_kn.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_kn.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_kn.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_ko.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ko.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ko.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_lt.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_lt.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_lt.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_lv.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_lv.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_lv.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_mr.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_mr.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_mr.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_ms.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ms.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ms.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_ne.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ne.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ne.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_nl.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_nl.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_nl.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_no.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_no.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_no.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_pl.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_pl.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_pl.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_pt.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_pt.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_pt.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_ro.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ro.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ro.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_ru.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ru.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ru.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_si.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_si.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_si.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_sk.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_sk.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_sk.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_sl.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_sl.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_sl.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_sr.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_sr.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_sr.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_sv.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_sv.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_sv.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_sw.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_sw.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_sw.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_ta.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ta.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ta.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_th.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_th.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_th.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_tl.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_tl.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_tl.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_tr.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_tr.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_tr.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_uk.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_uk.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_uk.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_ur.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ur.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_ur.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_vi.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_vi.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_vi.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_zh.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_zh.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_zh.dart:198:14 • REDACTED_TOKEN
+  error • Missing concrete implementations of 'getter abstract class AppLocalizations.accept', 'getter abstract class AppLocalizations.accessRevokedSuccessfully', 'getter abstract class AppLocalizations.adminBroadcast', 'getter abstract class AppLocalizations.adminScreenTBD', and 97 more • lib/l10n/app_localizations_zu.dart:8:7 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_zu.dart:174:14 • REDACTED_TOKEN
+warning • The getter doesn't override an inherited getter • lib/l10n/app_localizations_zu.dart:198:14 • REDACTED_TOKEN
+warning • Unnecessary cast • lib/services/admin_service.dart:299:20 • unnecessary_cast
+warning • Unnecessary cast • lib/services/playtime_service.dart:29:20 • unnecessary_cast
+warning • Unnecessary cast • lib/services/playtime_service.dart:81:20 • unnecessary_cast
+warning • Unnecessary cast • lib/services/playtime_service.dart:124:20 • unnecessary_cast
+warning • Unused import: 'package:firebase_core/firebase_core.dart' • test/ambassador_dashboard_test.dart:11:8 • unused_import
+warning • The receiver can't be null, so the null-aware operator '?.' is unnecessary • test/ambassador_dashboard_test.dart:373:29 • invalid_null_aware_operator
+warning • Unused import: 'package:firebase_core/firebase_core.dart' • test/ambassador_quota_service_test.dart:4:8 • unused_import
+warning • The value of the local variable 'mockFirebaseAuth' isn't used • test/features/admin/admin_panel_integration_test.dart:30:27 • unused_local_variable
+warning • The value of the local variable 'mockFirestore' isn't used • test/features/admin/admin_panel_integration_test.dart:31:32 • unused_local_variable
+
