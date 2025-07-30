@@ -12,14 +12,14 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:image_picker/image_picker.dart';
 
 class CustomBackgroundPicker extends ConsumerStatefulWidget {
-  const CustomBackgroundPicker({
+  CustomBackgroundPicker({
     super.key,
     this.selectedBackgroundId,
-    this.onBackgroundSelected,
+    required this.onBackgroundSelected,
     this.showUploadOption = true,
   });
   final String? selectedBackgroundId;
-  Function(String backgroundId)? onBackgroundSelected;
+  final Function(String backgroundId) onBackgroundSelected;
   final bool showUploadOption;
 
   @override
@@ -35,7 +35,7 @@ class _CustomBackgroundPickerState
   @override
   void initState() {
     super.initState();
-    final selectedBackgroundId = widget.selectedBackgroundId;
+    _selectedBackgroundId = widget.selectedBackgroundId;
   }
 
   @override
@@ -137,7 +137,7 @@ class _CustomBackgroundPickerState
           setState(() {
             _selectedBackgroundId = background.id;
           });
-          widget.onBackgroundSelected?.call(background.id);
+          widget.onBackgroundSelected(background.id);
         },
         child: Card(
           elevation: isSelected ? 4 : 1,
@@ -297,7 +297,7 @@ class _CustomBackgroundPickerState
           setState(() {
             _selectedBackgroundId = backgroundId;
           });
-          widget.onBackgroundSelected?.call(backgroundId);
+          widget.onBackgroundSelected(backgroundId);
         },
       ),
     );
@@ -306,7 +306,7 @@ class _CustomBackgroundPickerState
 
 class _UploadBackgroundDialog extends ConsumerStatefulWidget {
   const _UploadBackgroundDialog({required this.onBackgroundUploaded});
-  Function(String backgroundId) onBackgroundUploaded;
+  final Function(String backgroundId) onBackgroundUploaded;
 
   @override
   ConsumerState<_UploadBackgroundDialog> createState() =>
@@ -648,7 +648,7 @@ class _UploadBackgroundDialogState
 
     if (image != null) {
       setState(() {
-        final selectedImage = File(image.path);
+        _selectedImage = File(image.path);
       });
     }
   }

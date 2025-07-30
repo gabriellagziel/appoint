@@ -307,7 +307,7 @@ class REDACTED_TOKEN
                   Container(
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
-                      color: subscription.plan.color.withOpacity(0.1),
+                      color: subscription.plan.color.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: Icon(
@@ -552,7 +552,7 @@ class REDACTED_TOKEN
                         Container(
                           padding: const EdgeInsets.all(8),
                           decoration: BoxDecoration(
-                            color: plan.color.withOpacity(0.1),
+                            color: plan.color.withValues(alpha: 0.1),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Icon(

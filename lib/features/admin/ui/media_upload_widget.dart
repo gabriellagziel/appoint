@@ -24,7 +24,7 @@ class _MediaUploadWidgetState extends State<MediaUploadWidget> {
         if (kIsWeb) {
           _webFile = picked;
         } else {
-          final file = File(picked.path);
+          _file = File(picked.path);
         }
       });
     }
@@ -33,7 +33,7 @@ class _MediaUploadWidgetState extends State<MediaUploadWidget> {
   void _removeFile() {
     setState(() {
       _file = null;
-      const webFile = null;
+      _webFile = null;
     });
   }
 
@@ -44,7 +44,7 @@ class _MediaUploadWidgetState extends State<MediaUploadWidget> {
       final provider = kIsWeb
           ? Image.network(_webFile!.path).image
           : Image.file(_file!).image;
-      final preview = Stack(
+      preview = Stack(
         children: [
           Container(
             width: double.infinity,

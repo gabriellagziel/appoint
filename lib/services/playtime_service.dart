@@ -245,4 +245,66 @@ class PlaytimeService {
       throw Exception('Failed to send message: $e');
     }
   }
+
+  // Ticket System
+  Stream<int> getCurrentTicketCount() {
+    try {
+      final user = _auth.currentUser;
+      if (user == null) return Stream.value(0);
+
+      return _firestore
+          .collection('users')
+          .doc(user.uid)
+          .collection('tickets')
+          .snapshots()
+          .map((snapshot) => snapshot.docs.length);
+    } catch (e) {
+      return Stream.value(0);
+    }
+  }
+
+  Future<bool> canEarnMoreToday() async {
+    try {
+      final user = _auth.currentUser;
+      if (user == null) return false;
+
+      final today = DateTime.now();
+      final startOfDay = DateTime(today.year, today.month, today.day);
+
+      final snapshot = await _firestore
+          .collection('users')
+          .doc(user.uid)
+          .collection('tickets')
+          .where('earnedAt', isGreaterThanOrEqualTo: startOfDay)
+          .get();
+
+      // Allow earning up to 10 tickets per day
+      return snapshot.docs.length < 10;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  Future<void> grantTicket() async {
+    try {
+      final user = _auth.currentUser;
+      if (user == null) throw Exception('User not authenticated');
+
+      final canEarn = await canEarnMoreToday();
+      if (!canEarn) {
+        throw Exception('Daily ticket limit reached');
+      }
+
+      await _firestore
+          .collection('users')
+          .doc(user.uid)
+          .collection('tickets')
+          .add({
+        'earnedAt': FieldValue.serverTimestamp(),
+        'source': 'playtime',
+      });
+    } catch (e) {
+      throw Exception('Failed to grant ticket: $e');
+    }
+  }
 }

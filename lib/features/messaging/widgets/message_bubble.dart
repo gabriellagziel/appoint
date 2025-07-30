@@ -199,7 +199,7 @@ class MessageBubble extends StatelessWidget {
                 child: Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.5),
+                    color: Colors.black.withValues(alpha: 0.5),
                     shape: BoxShape.circle,
                   ),
                   child: const Icon(
@@ -228,7 +228,8 @@ class MessageBubble extends StatelessWidget {
             width: 100,
             height: 4,
             decoration: BoxDecoration(
-              color: isMe ? Colors.white.withOpacity(0.3) : Colors.grey[400],
+              color:
+                  isMe ? Colors.white.withValues(alpha: 0.3) : Colors.grey[400],
               borderRadius: BorderRadius.circular(2),
             ),
           ),
@@ -266,7 +267,8 @@ class MessageBubble extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-            color: isMe ? Colors.white.withOpacity(0.2) : Colors.grey[100],
+            color:
+                isMe ? Colors.white.withValues(alpha: 0.2) : Colors.grey[100],
             borderRadius: BorderRadius.circular(8),
           ),
           child: Row(
@@ -292,7 +294,7 @@ class MessageBubble extends StatelessWidget {
                       _formatFileSize(attachment.size!),
                       style: TextStyle(
                         color: isMe
-                            ? Colors.white.withOpacity(0.7)
+                            ? Colors.white.withValues(alpha: 0.7)
                             : Colors.grey[600],
                         fontSize: 12,
                       ),
@@ -344,7 +346,7 @@ class MessageBubble extends StatelessWidget {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                     decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.7),
+                      color: Colors.black.withValues(alpha: 0.7),
                       borderRadius: BorderRadius.circular(4),
                     ),
                     child: const Text(

@@ -13,7 +13,8 @@ class BusinessConnectScreen extends ConsumerStatefulWidget {
 class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
   final _formKey = GlobalKey<FormState>();
   final _codeController = TextEditingController();
-  final bool _isConnecting = false;
+  bool _isConnecting = false;
+
   @override
   void dispose() {
     _codeController.dispose();
@@ -91,47 +92,50 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
           ),
         ),
       );
-}
 
-Future<void> _connectBusiness() async {
-  if (!_formKey.currentState!.validate()) {
-    return;
-  }
-  setState(() => _isConnecting = true);
-  try {
-    final user = FirebaseAuth.instance.currentUser;
-    if (user == null) throw Exception('Not authenticated');
-    final upgradeCode = _codeController.text.trim();
-    // Validate the upgrade code (in a real app, this would check against a database)
-    if (!_isValidUpgradeCode(upgradeCode)) {
-      throw Exception('Invalid upgrade code');
+  Future<void> _connectBusiness() async {
+    if (!_formKey.currentState!.validate()) {
+      return;
     }
-    // Update user's business mode
-    await FirebaseFirestore.instance.collection('users').doc(user.uid).update({
-      'businessMode': true,
-      'upgradeCode': upgradeCode,
-      'businessActivatedAt': DateTime.now().toIso8601String(),
-    });
-    if (mounted) {
+    setState(() => _isConnecting = true);
+    try {
+      final user = FirebaseAuth.instance.currentUser;
+      if (user == null) throw Exception('Not authenticated');
+      final upgradeCode = _codeController.text.trim();
+      // Validate the upgrade code (in a real app, this would check against a database)
+      if (!_isValidUpgradeCode(upgradeCode)) {
+        throw Exception('Invalid upgrade code');
+      }
+      // Update user's business mode
+      await FirebaseFirestore.instance
+          .collection('users')
+          .doc(user.uid)
+          .update({
+        'businessMode': true,
+        'upgradeCode': upgradeCode,
+        'businessActivatedAt': DateTime.now().toIso8601String(),
+      });
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Business profile activated successfully!'),
+          ),
+        );
+        Navigator.pushReplacementNamed(context, '/business/dashboard');
+      }
+    } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Business profile activated successfully!'),
-        ),
+        SnackBar(content: Text('Error: $e')),
       );
-      Navigator.pushReplacementNamed(context, '/business/dashboard');
-    }
-  } catch (e) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Error: $e')),
-    );
-  } finally {
-    if (mounted) {
-      setState(() => _isConnecting = false);
+    } finally {
+      if (mounted) {
+        setState(() => _isConnecting = false);
+      }
     }
   }
-}
 
-bool _isValidUpgradeCode(String code) {
-  // Simple validation - in a real app, this would check against a database
-  return code.startsWith('UPGRADE_') && code.length >= 10;
+  bool _isValidUpgradeCode(String code) {
+    // Simple validation - in a real app, this would check against a database
+    return code.startsWith('UPGRADE_') && code.length >= 10;
+  }
 }

@@ -44,7 +44,7 @@ class AccessibleText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
 
     return Semantics(
       label: semanticLabel ?? text,
@@ -132,16 +132,16 @@ class AccessibleFormField extends StatelessWidget {
   final bool obscureText;
   final Widget? prefixIcon;
   final Widget? suffixIcon;
-  String? Function(String?)? validator;
-  void Function(String)? onChanged;
-  void Function(String)? onSubmitted;
+  final String? Function(String?)? validator;
+  final void Function(String)? onChanged;
+  final void Function(String)? onSubmitted;
   final bool enabled;
   final int? maxLines;
   final int? maxLength;
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
 
     return Semantics(
       label: label,
@@ -210,7 +210,7 @@ class AccessibleButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
 
     return Semantics(
       label: label,
@@ -225,7 +225,7 @@ class AccessibleButton extends StatelessWidget {
           style: style?.copyWith(
             backgroundColor: WidgetStateProperty.resolveWith((states) {
               if (states.contains(WidgetState.disabled)) {
-                return theme.colorScheme.onSurface.withOpacity(0.12);
+                return theme.colorScheme.onSurface.withValues(alpha: 0.12);
               }
               return style?.backgroundColor?.resolve(states) ??
                   theme.colorScheme.primary;
@@ -260,7 +260,7 @@ class AccessibleCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
 
     return Semantics(
       label: semanticLabel,

@@ -1,5 +1,6 @@
 import 'package:appoint/services/api/api_client.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 
 class ErrorHandler {
   ErrorHandler._();
@@ -297,14 +298,23 @@ class ErrorHandler {
 
   // Handle permission errors
   void handlePermissionError(BuildContext context, String permission) {
-    _showErrorDialog(
-      context,
-      'Permission Required',
-      'This feature requires $permission permission. Please enable it in your device settings.',
-      'Settings',
-      () => _openAppSettings(context),
-      secondaryAction: 'Cancel',
-      onSecondaryPressed: () => Navigator.of(context).pop(),
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Permission Required'),
+        content: Text(
+            'This feature requires $permission permission. Please enable it in your device settings.'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton(
+            onPressed: () => _openAppSettings(context),
+            child: const Text('Settings'),
+          ),
+        ],
+      ),
     );
   }
 
@@ -314,36 +324,6 @@ class ErrorHandler {
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
           content: Text('Please enable permissions in device settings')),
-    );
-  }
-
-  void _showErrorDialog(
-    BuildContext context,
-    String title,
-    String message,
-    String primaryButtonText,
-    VoidCallback onPrimaryPressed, {
-    String? secondaryAction,
-    VoidCallback? onSecondaryPressed,
-  }) {
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: Text(title),
-        content: Text(message),
-        actions: [
-          if (secondaryAction != null)
-            TextButton(
-              onPressed:
-                  onSecondaryPressed ?? () => Navigator.of(context).pop(),
-              child: Text(secondaryAction),
-            ),
-          ElevatedButton(
-            onPressed: onPrimaryPressed,
-            child: Text(primaryButtonText),
-          ),
-        ],
-      ),
     );
   }
 }

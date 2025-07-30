@@ -13,8 +13,8 @@ class _SurveyEditorScreenState extends State<SurveyEditorScreen> {
 
   @override
   void dispose() {
-    for (q in _questions) {
-      q.controller.dispose();
+    for (final question in _questions) {
+      question.controller.dispose();
     }
     super.dispose();
   }

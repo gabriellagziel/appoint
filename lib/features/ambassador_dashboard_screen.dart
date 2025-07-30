@@ -32,31 +32,34 @@ class _AmbassadorDashboardScreenState
   late NotificationService _notificationService;
   late BranchService _branchService;
   List<Branch> _branches = [];
-  bool _isLoadingBranches = false;
+  // TODO: Implement loading state
+  // bool _isLoadingBranches = false;
 
   @override
   void initState() {
     super.initState();
-    final notificationService = widget.notificationService;
-    final branchService = widget.branchService;
+    // TODO: Implement service initialization
+    // final notificationService = widget.notificationService;
+    // final branchService = widget.branchService;
     _loadBranches();
     _initializeNotifications();
   }
 
   Future<void> _loadBranches() async {
-    setState(() {
-      _isLoadingBranches = true;
-    });
+    // TODO: Implement loading state
+    // setState(() {
+    //   _isLoadingBranches = true;
+    // });
     try {
       final branches = await _branchService.fetchBranches();
       setState(() {
         _branches = branches;
-        const isLoadingBranches = false;
+        // const isLoadingBranches = false;
       });
     } catch (e) {
-      setState(() {
-        _isLoadingBranches = false;
-      });
+      // setState(() {
+      //   _isLoadingBranches = false;
+      // });
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error loading branches: $e')),
@@ -317,8 +320,8 @@ class _AmbassadorDashboardScreenState
         onPressed: () {
           setState(() {
             selectedCountry = null;
-            const selectedLanguage = null;
-            const selectedDateRange = null;
+            selectedLanguage = null;
+            selectedDateRange = null;
           });
           ref.read(ambassadorDataProvider.notifier).clearFilters();
         },
@@ -326,14 +329,15 @@ class _AmbassadorDashboardScreenState
       );
 
   Widget _buildBranchStats() {
-    if (_isLoadingBranches) {
-      return const Card(
-        child: Padding(
-          padding: EdgeInsets.all(16),
-          child: Center(child: CircularProgressIndicator()),
-        ),
-      );
-    }
+    // TODO: Implement loading state check
+    // if (_isLoadingBranches) {
+    //   return const Card(
+    //     child: Padding(
+    //       padding: EdgeInsets.all(16),
+    //       child: Center(child: CircularProgressIndicator()),
+    //     ),
+    //   );
+    // }
 
     return Card(
       child: Padding(
@@ -656,7 +660,7 @@ class _AmbassadorDashboardScreenState
     }
 
     final counts = <String, int>{};
-    for (stat in data.stats) {
+    for (final stat in data.stats) {
       counts.update(
         stat.language,
         (v) => v + stat.ambassadors,
@@ -744,13 +748,13 @@ class _AmbassadorDashboardScreenState
     if (chartData.isEmpty) return 100;
 
     final maxValue =
-        chartData.map((e) => e.value).reduce((a, final b) => a > b ? a : b);
+        chartData.map((e) => e.value).reduce((a, b) => a > b ? a : b);
     return maxValue;
   }
 
   AmbassadorData _getFilteredData(AmbassadorData data) {
     // Apply country/language filters
-    filteredStats = data.stats.where((final s) {
+    final filteredStats = data.stats.where((final s) {
       if (selectedCountry != null && s.country != selectedCountry) {
         return false;
       }
@@ -761,7 +765,7 @@ class _AmbassadorDashboardScreenState
     }).toList();
 
     // Recalculate chart data based on filtered stats
-    filteredChartData = data.chartData
+    final filteredChartData = data.chartData
         .where((final point) =>
             filteredStats.any((stat) => stat.country == point.label))
         .toList();

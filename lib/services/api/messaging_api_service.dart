@@ -1,5 +1,5 @@
-import 'package:appoint/models/chat.dart';
-import 'package:appoint/models/message.dart';
+import 'dart:io';
+import 'package:appoint/models/enhanced_chat_message.dart';
 import 'package:appoint/services/api/api_client.dart';
 
 class MessagingApiService {
@@ -7,30 +7,16 @@ class MessagingApiService {
   static final MessagingApiService _instance = MessagingApiService._();
   static MessagingApiService get instance => _instance;
 
-  // Get user's chats
-  Future<List<Chat>> getUserChats() async {
-    try {
-      final response = await ApiClient.instance.get<Map<String, dynamic>>(
-        '/chats',
-      );
-
-      final chats = response['chats'] as List;
-      return chats.map(Chat.fromJson).toList();
-    } catch (e) {
-      rethrow;
-    }
-  }
-
-  // Get chat messages
-  Future<List<Message>> getChatMessages({
+  // Get chat history
+  Future<List<EnhancedChatMessage>> getChatHistory({
     required String chatId,
     int? limit,
-    String? beforeMessageId,
+    int? offset,
   }) async {
     try {
       final queryParams = <String, dynamic>{};
       if (limit != null) queryParams['limit'] = limit;
-      if (beforeMessageId != null) queryParams['before'] = beforeMessageId;
+      if (offset != null) queryParams['offset'] = offset;
 
       final response = await ApiClient.instance.get<Map<String, dynamic>>(
         '/chats/$chatId/messages',
@@ -38,14 +24,16 @@ class MessagingApiService {
       );
 
       final messages = response['messages'] as List;
-      return messages.map(Message.fromJson).toList();
+      return messages
+          .map((message) => EnhancedChatMessage.fromJson(message))
+          .toList();
     } catch (e) {
       rethrow;
     }
   }
 
-  // Send message
-  Future<Message> sendMessage({
+  // Send a message
+  Future<EnhancedChatMessage> sendMessage({
     required String chatId,
     required String content,
     String? messageType,
@@ -56,19 +44,44 @@ class MessagingApiService {
         '/chats/$chatId/messages',
         data: {
           'content': content,
-          'type': messageType ?? 'text',
-          if (metadata != null) 'metadata': metadata,
+          'messageType': messageType ?? 'text',
+          'metadata': metadata,
         },
       );
 
-      return Message.fromJson(response);
+      return EnhancedChatMessage.fromJson(response);
     } catch (e) {
       rethrow;
     }
   }
 
-  // Create new chat
-  Future<Chat> createChat({
+  // Get user's chats
+  Future<List<Map<String, dynamic>>> getUserChats({
+    String? status,
+    int? limit,
+    int? offset,
+  }) async {
+    try {
+      final queryParams = <String, dynamic>{};
+      if (status != null) queryParams['status'] = status;
+      if (limit != null) queryParams['limit'] = limit;
+      if (offset != null) queryParams['offset'] = offset;
+
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/chats',
+        queryParameters: queryParams,
+      );
+
+      return (response['chats'] as List)
+          .map((chat) => chat as Map<String, dynamic>)
+          .toList();
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Create a new chat
+  Future<Map<String, dynamic>> createChat({
     required String participantId,
     String? initialMessage,
   }) async {
@@ -77,24 +90,69 @@ class MessagingApiService {
         '/chats',
         data: {
           'participantId': participantId,
-          if (initialMessage != null) 'initialMessage': initialMessage,
+          'initialMessage': initialMessage,
         },
       );
 
-      return Chat.fromJson(response);
+      return response;
     } catch (e) {
       rethrow;
     }
   }
 
   // Get chat details
-  Future<Chat> getChatDetails(String chatId) async {
+  Future<Map<String, dynamic>> getChat(String chatId) async {
     try {
       final response = await ApiClient.instance.get<Map<String, dynamic>>(
         '/chats/$chatId',
       );
 
-      return Chat.fromJson(response);
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Update chat status
+  Future<void> updateChatStatus({
+    required String chatId,
+    required String status,
+  }) async {
+    try {
+      await ApiClient.instance.put<Map<String, dynamic>>(
+        '/chats/$chatId',
+        data: {
+          'status': status,
+        },
+      );
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Send file message
+  Future<EnhancedChatMessage> sendFileMessage({
+    required String chatId,
+    required String filePath,
+    required String fileName,
+    String? messageType,
+    Map<String, dynamic>? metadata,
+  }) async {
+    try {
+      // Create form data for file upload
+      final formData = {
+        'file': await File(filePath).readAsBytes(),
+        'fileName': fileName,
+        'messageType': messageType ?? 'file',
+        'metadata': metadata,
+      };
+
+      final response = await ApiClient.instance.post<Map<String, dynamic>>(
+        '/chats/$chatId/messages/file',
+        data: formData,
+      );
+
+      return EnhancedChatMessage.fromJson(response);
     } catch (e) {
       rethrow;
     }
@@ -103,13 +161,13 @@ class MessagingApiService {
   // Mark messages as read
   Future<void> markMessagesAsRead({
     required String chatId,
-    List<String>? messageIds,
+    required List<String> messageIds,
   }) async {
     try {
       await ApiClient.instance.put<Map<String, dynamic>>(
-        '/chats/$chatId/read',
+        '/chats/$chatId/messages/read',
         data: {
-          if (messageIds != null) 'messageIds': messageIds,
+          'messageIds': messageIds,
         },
       );
     } catch (e) {
@@ -117,7 +175,7 @@ class MessagingApiService {
     }
   }
 
-  // Delete message
+  // Delete a message
   Future<void> deleteMessage({
     required String chatId,
     required String messageId,
@@ -126,48 +184,6 @@ class MessagingApiService {
       await ApiClient.instance.delete<Map<String, dynamic>>(
         '/chats/$chatId/messages/$messageId',
       );
-    } catch (e) {
-      rethrow;
-    }
-  }
-
-  // Edit message
-  Future<Message> editMessage({
-    required String chatId,
-    required String messageId,
-    required String newContent,
-  }) async {
-    try {
-      final response = await ApiClient.instance.put<Map<String, dynamic>>(
-        '/chats/$chatId/messages/$messageId',
-        data: {'content': newContent},
-      );
-
-      return Message.fromJson(response);
-    } catch (e) {
-      rethrow;
-    }
-  }
-
-  // Send file message
-  Future<Message> sendFileMessage({
-    required String chatId,
-    required String filePath,
-    required String fileName,
-    String? messageType,
-  }) async {
-    try {
-      final response =
-          await ApiClient.instance.uploadFile<Map<String, dynamic>>(
-        '/chats/$chatId/messages/file',
-        File(filePath),
-        extraData: {
-          'fileName': fileName,
-          'type': messageType ?? 'file',
-        },
-      );
-
-      return Message.fromJson(response);
     } catch (e) {
       rethrow;
     }
@@ -187,19 +203,24 @@ class MessagingApiService {
   }
 
   // Search messages
-  Future<List<Message>> searchMessages({
+  Future<List<EnhancedChatMessage>> searchMessages({
     required String query,
     String? chatId,
+    DateTime? fromDate,
+    DateTime? toDate,
     int? limit,
     int? offset,
   }) async {
     try {
       final queryParams = <String, dynamic>{
-        'q': query,
-        if (chatId != null) 'chatId': chatId,
-        if (limit != null) 'limit': limit,
-        if (offset != null) 'offset': offset,
+        'query': query,
       };
+      if (chatId != null) queryParams['chatId'] = chatId;
+      if (fromDate != null)
+        queryParams['fromDate'] = fromDate.toIso8601String();
+      if (toDate != null) queryParams['toDate'] = toDate.toIso8601String();
+      if (limit != null) queryParams['limit'] = limit;
+      if (offset != null) queryParams['offset'] = offset;
 
       final response = await ApiClient.instance.get<Map<String, dynamic>>(
         '/messages/search',
@@ -207,33 +228,150 @@ class MessagingApiService {
       );
 
       final messages = response['messages'] as List;
-      return messages.map(Message.fromJson).toList();
-    } catch (e) {
-      rethrow;
-    }
-  }
-
-  // Get message reactions
-  Future<List<MessageReaction>> getMessageReactions({
-    required String chatId,
-    required String messageId,
-  }) async {
-    try {
-      final response = await ApiClient.instance.get<Map<String, dynamic>>(
-        '/chats/$chatId/messages/$messageId/reactions',
-      );
-
-      final reactions = response['reactions'] as List;
-      return reactions
-          .map((reaction) => MessageReaction.fromJson(reaction))
+      return messages
+          .map((message) => EnhancedChatMessage.fromJson(message))
           .toList();
     } catch (e) {
       rethrow;
     }
   }
 
-  // Add reaction to message
-  Future<void> addMessageReaction({
+  // Get message statistics
+  Future<Map<String, dynamic>> getMessageStats({
+    String? chatId,
+    DateTime? fromDate,
+    DateTime? toDate,
+  }) async {
+    try {
+      final queryParams = <String, dynamic>{};
+      if (chatId != null) queryParams['chatId'] = chatId;
+      if (fromDate != null)
+        queryParams['fromDate'] = fromDate.toIso8601String();
+      if (toDate != null) queryParams['toDate'] = toDate.toIso8601String();
+
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/messages/stats',
+        queryParameters: queryParams,
+      );
+
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Get chat participants
+  Future<List<Map<String, dynamic>>> getChatParticipants(String chatId) async {
+    try {
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/chats/$chatId/participants',
+      );
+
+      return (response['participants'] as List)
+          .map((participant) => participant as Map<String, dynamic>)
+          .toList();
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Add participant to chat
+  Future<void> addChatParticipant({
+    required String chatId,
+    required String participantId,
+  }) async {
+    try {
+      await ApiClient.instance.post<Map<String, dynamic>>(
+        '/chats/$chatId/participants',
+        data: {
+          'participantId': participantId,
+        },
+      );
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Remove participant from chat
+  Future<void> removeChatParticipant({
+    required String chatId,
+    required String participantId,
+  }) async {
+    try {
+      await ApiClient.instance.delete<Map<String, dynamic>>(
+        '/chats/$chatId/participants/$participantId',
+      );
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Get chat settings
+  Future<Map<String, dynamic>> getChatSettings(String chatId) async {
+    try {
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/chats/$chatId/settings',
+      );
+
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Update chat settings
+  Future<void> updateChatSettings({
+    required String chatId,
+    required Map<String, dynamic> settings,
+  }) async {
+    try {
+      await ApiClient.instance.put<Map<String, dynamic>>(
+        '/chats/$chatId/settings',
+        data: settings,
+      );
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Get message by ID
+  Future<EnhancedChatMessage> getMessage({
+    required String chatId,
+    required String messageId,
+  }) async {
+    try {
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/chats/$chatId/messages/$messageId',
+      );
+
+      return EnhancedChatMessage.fromJson(response);
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Edit a message
+  Future<EnhancedChatMessage> editMessage({
+    required String chatId,
+    required String messageId,
+    required String newContent,
+  }) async {
+    try {
+      final response = await ApiClient.instance.put<Map<String, dynamic>>(
+        '/chats/$chatId/messages/$messageId',
+        data: {
+          'content': newContent,
+        },
+      );
+
+      return EnhancedChatMessage.fromJson(response);
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // React to a message
+  Future<void> reactToMessage({
     required String chatId,
     required String messageId,
     required String reaction,
@@ -241,7 +379,9 @@ class MessagingApiService {
     try {
       await ApiClient.instance.post<Map<String, dynamic>>(
         '/chats/$chatId/messages/$messageId/reactions',
-        data: {'reaction': reaction},
+        data: {
+          'reaction': reaction,
+        },
       );
     } catch (e) {
       rethrow;
@@ -263,142 +403,110 @@ class MessagingApiService {
     }
   }
 
-  // Get chat participants
-  Future<List<ChatParticipant>> getChatParticipants(String chatId) async {
+  // Get message reactions
+  Future<Map<String, List<String>>> getMessageReactions({
+    required String chatId,
+    required String messageId,
+  }) async {
     try {
       final response = await ApiClient.instance.get<Map<String, dynamic>>(
-        '/chats/$chatId/participants',
+        '/chats/$chatId/messages/$messageId/reactions',
       );
 
-      final participants = response['participants'] as List;
-      return participants.map((p) => ChatParticipant.fromJson(p)).toList();
+      final reactions = response['reactions'] as Map<String, dynamic>;
+      return reactions
+          .map((key, value) => MapEntry(key, List<String>.from(value)));
     } catch (e) {
       rethrow;
     }
   }
 
-  // Add participant to chat
-  Future<void> addChatParticipant({
-    required String chatId,
-    required String participantId,
+  // Forward message
+  Future<void> forwardMessage({
+    required String sourceChatId,
+    required String messageId,
+    required List<String> targetChatIds,
   }) async {
     try {
       await ApiClient.instance.post<Map<String, dynamic>>(
-        '/chats/$chatId/participants',
-        data: {'participantId': participantId},
+        '/chats/$sourceChatId/messages/$messageId/forward',
+        data: {
+          'targetChatIds': targetChatIds,
+        },
       );
     } catch (e) {
       rethrow;
     }
   }
 
-  // Remove participant from chat
-  Future<void> removeChatParticipant({
-    required String chatId,
-    required String participantId,
-  }) async {
-    try {
-      await ApiClient.instance.delete<Map<String, dynamic>>(
-        '/chats/$chatId/participants/$participantId',
-      );
-    } catch (e) {
-      rethrow;
-    }
-  }
-
-  // Leave chat
-  Future<void> leaveChat(String chatId) async {
-    try {
-      await ApiClient.instance.delete<Map<String, dynamic>>(
-        '/chats/$chatId/leave',
-      );
-    } catch (e) {
-      rethrow;
-    }
-  }
-
-  // Archive chat
-  Future<void> archiveChat(String chatId) async {
-    try {
-      await ApiClient.instance.put<Map<String, dynamic>>(
-        '/chats/$chatId/archive',
-      );
-    } catch (e) {
-      rethrow;
-    }
-  }
-
-  // Unarchive chat
-  Future<void> unarchiveChat(String chatId) async {
-    try {
-      await ApiClient.instance.put<Map<String, dynamic>>(
-        '/chats/$chatId/unarchive',
-      );
-    } catch (e) {
-      rethrow;
-    }
-  }
-
-  // Get archived chats
-  Future<List<Chat>> getArchivedChats() async {
+  // Get typing indicators
+  Future<List<Map<String, dynamic>>> getTypingIndicators(String chatId) async {
     try {
       final response = await ApiClient.instance.get<Map<String, dynamic>>(
-        '/chats/archived',
+        '/chats/$chatId/typing',
       );
 
-      final chats = response['chats'] as List;
-      return chats.map(Chat.fromJson).toList();
+      return (response['typing'] as List)
+          .map((indicator) => indicator as Map<String, dynamic>)
+          .toList();
     } catch (e) {
       rethrow;
     }
   }
-}
 
-class MessageReaction {
-  const MessageReaction({
-    required this.reaction,
-    required this.userId,
-    required this.userName,
-    required this.timestamp,
-  });
+  // Send typing indicator
+  Future<void> sendTypingIndicator({
+    required String chatId,
+    required bool isTyping,
+  }) async {
+    try {
+      await ApiClient.instance.post<Map<String, dynamic>>(
+        '/chats/$chatId/typing',
+        data: {
+          'isTyping': isTyping,
+        },
+      );
+    } catch (e) {
+      rethrow;
+    }
+  }
 
-  factory MessageReaction.fromJson(Map<String, dynamic> json) =>
-      MessageReaction(
-        reaction: json['reaction'] as String,
-        userId: json['userId'] as String,
-        userName: json['userName'] as String,
-        timestamp: DateTime.parse(json['timestamp'] as String),
+  // Get message delivery status
+  Future<Map<String, String>> getMessageDeliveryStatus({
+    required String chatId,
+    required String messageId,
+  }) async {
+    try {
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/chats/$chatId/messages/$messageId/delivery-status',
       );
 
-  final String reaction;
-  final String userId;
-  final String userName;
-  final DateTime timestamp;
-}
+      return Map<String, String>.from(response['status']);
+    } catch (e) {
+      rethrow;
+    }
+  }
 
-class ChatParticipant {
-  const ChatParticipant({
-    required this.userId,
-    required this.userName,
-    required this.avatar,
-    required this.isOnline,
-    required this.lastSeen,
-  });
+  // Get chat analytics
+  Future<Map<String, dynamic>> getChatAnalytics({
+    required String chatId,
+    DateTime? fromDate,
+    DateTime? toDate,
+  }) async {
+    try {
+      final queryParams = <String, dynamic>{};
+      if (fromDate != null)
+        queryParams['fromDate'] = fromDate.toIso8601String();
+      if (toDate != null) queryParams['toDate'] = toDate.toIso8601String();
 
-  factory ChatParticipant.fromJson(Map<String, dynamic> json) =>
-      ChatParticipant(
-        userId: json['userId'] as String,
-        userName: json['userName'] as String,
-        avatar: json['avatar'] as String?,
-        isOnline: json['isOnline'] as bool,
-        lastSeen: json['lastSeen'] != null
-            ? DateTime.parse(json['lastSeen'] as String)
-            : null,
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/chats/$chatId/analytics',
+        queryParameters: queryParams,
       );
 
-  final String userId;
-  final String userName;
-  final String? avatar;
-  final bool isOnline;
-  final DateTime? lastSeen;
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
 }

@@ -1,4 +1,5 @@
 import 'package:appoint/features/studio_business/models/business_subscription.dart';
+import 'package:appoint/features/studio_business/models/business_profile.dart';
 import 'package:appoint/features/studio_business/services/business_profile_service.dart';
 import 'package:appoint/services/business_subscription_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

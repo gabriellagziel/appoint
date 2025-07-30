@@ -334,8 +334,8 @@ class FamilyBackgroundService {
         }
 
         // Check for consent expiration (if applicable)
-        if (familyLink.consentedAt.isNotEmpty) {
-          final lastConsent = familyLink.consentedAt.last;
+        if (familyLink.consentedAt != null) {
+          final lastConsent = familyLink.consentedAt!;
           final consentAge = DateTime.now().difference(lastConsent).inDays;
 
           // If consent is older than 1 year, mark for renewal

@@ -199,7 +199,7 @@ abstract class AppLocalizations {
     Locale('ur'),
     Locale('vi'),
     Locale('zh'),
-    Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hant'),
+    Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hant')
   ];
 
   /// Refresh button text
@@ -4713,10 +4713,7 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Amazing! You\'ve been upgraded from {previousTier} to {newTier} with {totalReferrals} referrals!'**
   String tierUpgradeBody(
-    String previousTier,
-    String newTier,
-    String totalReferrals,
-  );
+      String previousTier, String newTier, String totalReferrals);
 
   /// Title for monthly performance reminder notification
   ///
@@ -4729,10 +4726,7 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'You have {currentReferrals}/{targetReferrals} referrals this month. {daysRemaining} days left to reach your goal!'**
   String monthlyReminderBody(
-    String currentReferrals,
-    String targetReferrals,
-    String daysRemaining,
-  );
+      String currentReferrals, String targetReferrals, String daysRemaining);
 
   /// Title for performance warning notification
   ///
@@ -4745,9 +4739,7 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your monthly referrals ({currentReferrals}) are below the minimum requirement ({minimumRequired}). Your ambassador status may be affected.'**
   String performanceWarningBody(
-    String currentReferrals,
-    String minimumRequired,
-  );
+      String currentReferrals, String minimumRequired);
 
   /// Title for ambassador demotion notification
   ///
@@ -4910,6 +4902,246 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Get Started'**
   String get getStarted;
+
+  /// No description provided for @analyticsDashboard.
+  ///
+  /// In en, this message translates to:
+  /// **'Analytics Dashboard'**
+  String get analyticsDashboard;
+
+  /// No description provided for @filters.
+  ///
+  /// In en, this message translates to:
+  /// **'Filters'**
+  String get filters;
+
+  /// No description provided for @broadcasts.
+  ///
+  /// In en, this message translates to:
+  /// **'Broadcasts'**
+  String get broadcasts;
+
+  /// No description provided for @formAnalytics.
+  ///
+  /// In en, this message translates to:
+  /// **'Form Analytics'**
+  String get formAnalytics;
+
+  /// No description provided for @totalBroadcasts.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Broadcasts'**
+  String get totalBroadcasts;
+
+  /// No description provided for @totalRecipients.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Recipients'**
+  String get totalRecipients;
+
+  /// No description provided for @openRate.
+  ///
+  /// In en, this message translates to:
+  /// **'Open Rate'**
+  String get openRate;
+
+  /// No description provided for @engagementRate.
+  ///
+  /// In en, this message translates to:
+  /// **'Engagement Rate'**
+  String get engagementRate;
+
+  /// No description provided for @noDataAvailable.
+  ///
+  /// In en, this message translates to:
+  /// **'No data available'**
+  String get noDataAvailable;
+
+  /// No description provided for @breakdown.
+  ///
+  /// In en, this message translates to:
+  /// **'Breakdown'**
+  String get breakdown;
+
+  /// No description provided for @byCountry.
+  ///
+  /// In en, this message translates to:
+  /// **'By Country'**
+  String get byCountry;
+
+  /// No description provided for @byType.
+  ///
+  /// In en, this message translates to:
+  /// **'By Type'**
+  String get byType;
+
+  /// No description provided for @noBroadcastsFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No broadcasts found'**
+  String get noBroadcastsFound;
+
+  /// No description provided for @sent.
+  ///
+  /// In en, this message translates to:
+  /// **'Sent'**
+  String get sent;
+
+  /// No description provided for @responses.
+  ///
+  /// In en, this message translates to:
+  /// **'Responses'**
+  String get responses;
+
+  /// No description provided for @clickRate.
+  ///
+  /// In en, this message translates to:
+  /// **'Click Rate'**
+  String get clickRate;
+
+  /// No description provided for @responseRate.
+  ///
+  /// In en, this message translates to:
+  /// **'Response Rate'**
+  String get responseRate;
+
+  /// No description provided for @viewFormAnalytics.
+  ///
+  /// In en, this message translates to:
+  /// **'View Form Analytics'**
+  String get viewFormAnalytics;
+
+  /// No description provided for @pending.
+  ///
+  /// In en, this message translates to:
+  /// **'Pending'**
+  String get pending;
+
+  /// No description provided for @sending.
+  ///
+  /// In en, this message translates to:
+  /// **'Sending'**
+  String get sending;
+
+  /// No description provided for @failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed'**
+  String get failed;
+
+  /// No description provided for @partialSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Partial Sent'**
+  String get partialSent;
+
+  /// No description provided for @noFormBroadcasts.
+  ///
+  /// In en, this message translates to:
+  /// **'No form broadcasts'**
+  String get noFormBroadcasts;
+
+  /// No description provided for @totalResponses.
+  ///
+  /// In en, this message translates to:
+  /// **'Total Responses'**
+  String get totalResponses;
+
+  /// No description provided for @noFormData.
+  ///
+  /// In en, this message translates to:
+  /// **'No form data'**
+  String get noFormData;
+
+  /// No description provided for @average.
+  ///
+  /// In en, this message translates to:
+  /// **'Average'**
+  String get average;
+
+  /// No description provided for @mostCommon.
+  ///
+  /// In en, this message translates to:
+  /// **'Most Common'**
+  String get mostCommon;
+
+  /// No description provided for @errorLoadingData.
+  ///
+  /// In en, this message translates to:
+  /// **'Error loading data'**
+  String get errorLoadingData;
+
+  /// No description provided for @today.
+  ///
+  /// In en, this message translates to:
+  /// **'Today'**
+  String get today;
+
+  /// No description provided for @last7Days.
+  ///
+  /// In en, this message translates to:
+  /// **'Last 7 Days'**
+  String get last7Days;
+
+  /// No description provided for @last30Days.
+  ///
+  /// In en, this message translates to:
+  /// **'Last 30 Days'**
+  String get last30Days;
+
+  /// No description provided for @customRange.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom Range'**
+  String get customRange;
+
+  /// No description provided for @all.
+  ///
+  /// In en, this message translates to:
+  /// **'All'**
+  String get all;
+
+  /// No description provided for @timeRange.
+  ///
+  /// In en, this message translates to:
+  /// **'Time Range'**
+  String get timeRange;
+
+  /// No description provided for @startDate.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Date'**
+  String get startDate;
+
+  /// No description provided for @endDate.
+  ///
+  /// In en, this message translates to:
+  /// **'End Date'**
+  String get endDate;
+
+  /// No description provided for @exportDataDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Export analytics data for the selected time range'**
+  String get exportDataDescription;
+
+  /// No description provided for @exportComplete.
+  ///
+  /// In en, this message translates to:
+  /// **'Export complete'**
+  String get exportComplete;
+
+  /// No description provided for @exportFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Export failed'**
+  String get exportFailed;
+
+  /// No description provided for @export.
+  ///
+  /// In en, this message translates to:
+  /// **'Export'**
+  String get export;
 }
 
 class _AppLocalizationsDelegate
@@ -4974,7 +5206,7 @@ class _AppLocalizationsDelegate
         'uk',
         'ur',
         'vi',
-        'zh',
+        'zh'
       ].contains(locale.languageCode);
 
   @override
@@ -5131,9 +5363,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.',
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }

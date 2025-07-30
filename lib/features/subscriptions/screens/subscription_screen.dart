@@ -98,7 +98,7 @@ class SubscriptionScreen extends ConsumerWidget {
           const SizedBox(height: 24),
 
           // Features comparison
-          _buildFeaturesComparison(plans, l10n),
+          _buildFeaturesComparison(context, plans, l10n),
         ],
       );
 
@@ -403,7 +403,7 @@ class SubscriptionScreen extends ConsumerWidget {
         ],
       );
 
-  Widget _buildFeaturesComparison(
+  Widget _buildFeaturesComparison(BuildContext context,
           List<SubscriptionPlan> plans, AppLocalizations l10n) =>
       Card(
         child: Padding(

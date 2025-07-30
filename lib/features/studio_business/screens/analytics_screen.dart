@@ -163,7 +163,7 @@ class AnalyticsScreen extends ConsumerWidget {
 
   String _getTotalBookings(List<QueryDocumentSnapshot> data) {
     var total = 0;
-    for (doc in data) {
+    for (final doc in data) {
       final analytics = doc.data()! as Map<String, dynamic>;
       if (analytics['type'] == 'booking') {
         total += (analytics['count'] ?? 0) as int;
@@ -174,7 +174,7 @@ class AnalyticsScreen extends ConsumerWidget {
 
   String _getTotalRevenue(List<QueryDocumentSnapshot> data) {
     double total = 0;
-    for (doc in data) {
+    for (final doc in data) {
       final analytics = doc.data()! as Map<String, dynamic>;
       if (analytics['type'] == 'revenue') {
         total += (analytics['amount'] ?? 0).toDouble();
@@ -185,7 +185,7 @@ class AnalyticsScreen extends ConsumerWidget {
 
   String _getActiveClients(List<QueryDocumentSnapshot> data) {
     var total = 0;
-    for (doc in data) {
+    for (final doc in data) {
       final analytics = doc.data()! as Map<String, dynamic>;
       if (analytics['type'] == 'client') {
         total += (analytics['count'] ?? 0) as int;
@@ -197,7 +197,7 @@ class AnalyticsScreen extends ConsumerWidget {
   String _getAverageRating(List<QueryDocumentSnapshot> data) {
     double total = 0;
     var count = 0;
-    for (doc in data) {
+    for (final doc in data) {
       final analytics = doc.data()! as Map<String, dynamic>;
       if (analytics['type'] == 'rating') {
         total += (analytics['rating'] ?? 0).toDouble();

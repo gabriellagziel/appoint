@@ -220,7 +220,7 @@ class FamilyDashboardScreen extends ConsumerWidget {
         ),
         title: _buildChildNameWidget(context, ref, link),
         subtitle: Text(
-          'Connected: ${_formatDate(link.consentedAt.isNotEmpty ? link.consentedAt.last : link.invitedAt)}',
+          'Connected: ${_formatDate(link.consentedAt ?? link.invitedAt)}',
         ),
         trailing: PopupMenuButton<String>(
           onSelected: (value) =>

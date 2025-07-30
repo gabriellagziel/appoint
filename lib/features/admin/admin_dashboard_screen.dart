@@ -54,7 +54,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
             children: [
               const AppLogo(size: 32, logoOnly: true),
               const SizedBox(width: 12),
-              Text(l10n.adminScreenTBD ?? 'Admin Dashboard'),
+              Text(l10n.adminScreenTBD),
             ],
           ),
           backgroundColor: Theme.of(context).primaryColor,

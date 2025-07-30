@@ -20,7 +20,8 @@ class SemanticButton extends StatelessWidget {
         child: InkWell(
           onTap: onPressed,
           borderRadius: BorderRadius.circular(4),
-          hoverColor: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+          hoverColor:
+              Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
           child: ConstrainedBox(
             constraints: const BoxConstraints(minHeight: 48, minWidth: 48),
             child: Center(child: child),

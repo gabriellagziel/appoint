@@ -381,11 +381,11 @@ class _SearchScreenState extends ConsumerState<SearchScreen> {
     // Navigate based on result type
     switch (result.type) {
       case 'business':
-        context.push('/business/${result.id}');
+        Navigator.pushNamed(context, '/business/${result.id}');
       case 'service':
-        context.push('/service/${result.id}');
+        Navigator.pushNamed(context, '/service/${result.id}');
       case 'user':
-        context.push('/profile/${result.id}');
+        Navigator.pushNamed(context, '/profile/${result.id}');
       default:
         // Handle other types
         break;

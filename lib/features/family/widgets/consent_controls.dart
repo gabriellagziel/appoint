@@ -28,7 +28,7 @@ class _ConsentControlsState extends ConsumerState<ConsentControls> {
 
   void _checkConsentStatus() {
     // Check if current user has already consented
-    _hasConsented = widget.familyLink.consentedAt.isNotEmpty;
+    _hasConsented = widget.familyLink.consentedAt != null;
   }
 
   Future<void> _updateConsent(bool grant) async {

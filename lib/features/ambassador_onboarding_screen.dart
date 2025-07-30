@@ -484,9 +484,10 @@ Ready to lead the revolution?""",
 
       setState(() {
         _isLoading = false;
-        const isRegistered = true;
-        final ambassadorId0 = ambassadorId;
-        final shareLink0 = shareLink;
+        // TODO: Implement registration state tracking
+        // const isRegistered = true;
+        // final ambassadorId0 = ambassadorId;
+        // final shareLink0 = shareLink;
       });
 
       // Show success message

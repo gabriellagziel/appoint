@@ -15,5 +15,5 @@ class Booking with _$Booking {
   }) = _Booking;
 
   factory Booking.fromJson(Map<String, dynamic> json) =>
-      _$BookingFromJson(json);
+      _$$_BookingFromJson(json);
 }

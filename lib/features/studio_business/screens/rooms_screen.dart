@@ -362,20 +362,20 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
       );
     }
   }
-}
 
-Future<void> _deleteRoom(String roomId) async {
-  try {
-    await FirebaseFirestore.instance.collection('rooms').doc(roomId).delete();
+  Future<void> _deleteRoom(String roomId) async {
+    try {
+      await FirebaseFirestore.instance.collection('rooms').doc(roomId).delete();
 
-    if (mounted) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Room deleted successfully!')),
+        );
+      }
+    } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Room deleted successfully!')),
+        SnackBar(content: Text('Error: $e')),
       );
     }
-  } catch (e) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Error: $e')),
-    );
   }
 }

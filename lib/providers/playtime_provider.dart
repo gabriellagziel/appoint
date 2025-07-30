@@ -192,8 +192,8 @@ class PlaytimeGameNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.createGame(game);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(e, stack);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 
@@ -202,8 +202,8 @@ class PlaytimeGameNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.updateGame(game);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(e, stack);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 
@@ -212,8 +212,8 @@ class PlaytimeGameNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.deleteGame(gameId);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(e, stack);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 }
@@ -227,8 +227,8 @@ class PlaytimeSessionNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.createSession(session);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(e, stack);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 
@@ -237,8 +237,8 @@ class PlaytimeSessionNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.updateSession(session);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(e, stack);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 }
@@ -269,8 +269,8 @@ class PlaytimeBackgroundNotifier extends StateNotifier<AsyncValue<void>> {
         tags,
       );
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(e, stack);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 }
@@ -287,8 +287,8 @@ class PlaytimeChatNotifier extends StateNotifier<AsyncValue<void>> {
     try {
       await _service.sendMessage(sessionId, message);
       state = const AsyncValue.data(null);
-    } catch (e) {
-      final state = AsyncValue.error(e, stack);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 }

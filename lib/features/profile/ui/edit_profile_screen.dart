@@ -28,77 +28,84 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
         FirebaseAnalytics.instance.logEvent(name: eventName);
       }
     } catch (e) {
-      _nameController.dispose();
-      _bioController.dispose();
-      _locationController.dispose();
-      super.dispose();
+      // Ignore analytics errors
     }
+  }
 
-    @override
-    Widget build(BuildContext context) => Scaffold(
-          appBar: AppBar(
-            title: const Text('Edit Profile'),
-          ),
-          body: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Column(
+  @override
+  void dispose() {
+    _nameController.dispose();
+    _bioController.dispose();
+    _locationController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Edit Profile'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          children: [
+            Semantics(
+              label: 'Full name',
+              child: TextField(
+                controller: _nameController,
+                decoration: const InputDecoration(labelText: 'Name'),
+              ),
+            ),
+            const SizedBox(height: 8),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Semantics(
-                  label: 'Full name',
-                  child: TextField(
-                    controller: _nameController,
-                    decoration: const InputDecoration(labelText: 'Name'),
+                  label: 'Personal biography',
+                  hint: 'Tell us about yourself',
+                  child: TextFormField(
+                    controller: _bioController,
+                    inputFormatters: [
+                      REDACTED_TOKEN(150),
+                    ],
+                    onChanged: (_) => setState(() {}),
+                    decoration: const InputDecoration(labelText: 'Bio'),
                   ),
                 ),
-                const SizedBox(height: 8),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Semantics(
-                      label: 'Personal biography',
-                      hint: 'Tell us about yourself',
-                      child: TextFormField(
-                        controller: _bioController,
-                        inputFormatters: [
-                          REDACTED_TOKEN(150),
-                        ],
-                        onChanged: (_) => setState(() {}),
-                        decoration: const InputDecoration(labelText: 'Bio'),
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: Text(
-                        '${_bioController.text.length}/150',
-                        style: Theme.of(context).textTheme.bodySmall,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 8),
-                Semantics(
-                  label: 'Location or city',
-                  child: TextField(
-                    controller: _locationController,
-                    decoration: const InputDecoration(labelText: 'Location'),
+                const SizedBox(height: 4),
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: Text(
+                    '${_bioController.text.length}/150',
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
-                ),
-                const SizedBox(height: 16),
-                ElevatedButton(
-                  onPressed: () {
-                    _logAnalyticsEvent('profile_saved');
-                    Navigator.pop(context, {
-                      'name': _nameController.text,
-                      'bio': _bioController.text,
-                      'location': _locationController.text,
-                    });
-                  },
-                  child: const Text('Save Changes'),
                 ),
               ],
             ),
-          ),
-        );
+            const SizedBox(height: 8),
+            Semantics(
+              label: 'Location or city',
+              child: TextField(
+                controller: _locationController,
+                decoration: const InputDecoration(labelText: 'Location'),
+              ),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                _logAnalyticsEvent('profile_saved');
+                Navigator.pop(context, {
+                  'name': _nameController.text,
+                  'bio': _bioController.text,
+                  'location': _locationController.text,
+                });
+              },
+              child: const Text('Save Changes'),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

@@ -19,7 +19,6 @@ enum AnalyticsMetric {
 }
 
 class AnalyticsFilter {
-
   const AnalyticsFilter({
     this.timeRange = TimeRange.last7Days,
     this.startDate,
@@ -45,21 +44,22 @@ class AnalyticsFilter {
     String? language,
     String? segment,
     BroadcastMessageType? messageType,
-  }) => AnalyticsFilter(
-      timeRange: timeRange ?? this.timeRange,
-      startDate: startDate ?? this.startDate,
-      endDate: endDate ?? this.endDate,
-      country: country ?? this.country,
-      language: language ?? this.language,
-      segment: segment ?? this.segment,
-      messageType: messageType ?? this.messageType,
-    );
+  }) =>
+      AnalyticsFilter(
+        timeRange: timeRange ?? this.timeRange,
+        startDate: startDate ?? this.startDate,
+        endDate: endDate ?? this.endDate,
+        country: country ?? this.country,
+        language: language ?? this.language,
+        segment: segment ?? this.segment,
+        messageType: messageType ?? this.messageType,
+      );
 
   DateTime get effectiveStartDate {
     if (timeRange == TimeRange.custom) {
       return startDate ?? DateTime.now().subtract(const Duration(days: 7));
     }
-    
+
     final now = DateTime.now();
     switch (timeRange) {
       case TimeRange.today:
@@ -82,7 +82,6 @@ class AnalyticsFilter {
 }
 
 class AnalyticsSummary {
-
   const AnalyticsSummary({
     required this.totalBroadcasts,
     required this.totalRecipients,
@@ -118,7 +117,6 @@ class AnalyticsSummary {
 }
 
 class AnalyticsTimeSeriesData {
-
   const AnalyticsTimeSeriesData({
     required this.date,
     required this.sent,
@@ -134,11 +132,11 @@ class AnalyticsTimeSeriesData {
 }
 
 class BroadcastAnalyticsDetail {
-
   const BroadcastAnalyticsDetail({
     required this.message,
     required this.summary,
-    required this.rawAnalytics, this.formStatistics,
+    required this.rawAnalytics,
+    this.formStatistics,
   });
   final AdminBroadcastMessage message;
   final AnalyticsSummary summary;
@@ -171,7 +169,8 @@ class AnalyticsService {
           .where('createdAt', isLessThanOrEqualTo: filter.effectiveEndDate);
 
       if (filter.messageType != null) {
-        broadcastQuery = broadcastQuery.where('type', isEqualTo: filter.messageType!.name);
+        broadcastQuery =
+            broadcastQuery.where('type', isEqualTo: filter.messageType!.name);
       }
 
       final broadcastDocs = await broadcastQuery.get();
@@ -192,8 +191,8 @@ class AnalyticsService {
       var totalClicked = 0;
       var totalResponses = 0;
 
-      final var countryBreakdown = <String, int>{};
-      final var languageBreakdown = <String, int>{};
+      final countryBreakdown = <String, int>{};
+      final languageBreakdown = <String, int>{};
       final typeBreakdown = <String, int>{};
       final statusBreakdown = <String, int>{};
 
@@ -202,10 +201,12 @@ class AnalyticsService {
         final message = AdminBroadcastMessage.fromJson({'id': doc.id, ...data});
 
         totalRecipients += message.actualRecipients ?? 0;
-        totalSent += message.sentCount ?? 0;
+        totalSent += message.actualRecipients ??
+            0; // Use actualRecipients instead of sentCount
         totalOpened += message.openedCount ?? 0;
         totalClicked += message.clickedCount ?? 0;
-        totalResponses += message.formResponseCount ?? 0;
+        totalResponses += message.pollResponseCount ??
+            0; // Use pollResponseCount instead of formResponseCount
 
         // Breakdown by type
         final typeKey = message.type.name;
@@ -218,23 +219,30 @@ class AnalyticsService {
         // Country/language breakdown from targeting filters
         if (message.targetingFilters.countries != null) {
           for (final country in message.targetingFilters.countries!) {
-            countryBreakdown[country] = (countryBreakdown[country] ?? 0) + (message.actualRecipients ?? 0);
+            countryBreakdown[country] = (countryBreakdown[country] ?? 0) +
+                (message.actualRecipients ?? 0);
           }
         }
 
         if (message.targetingFilters.languages != null) {
           for (final language in message.targetingFilters.languages!) {
-            languageBreakdown[language] = (languageBreakdown[language] ?? 0) + (message.actualRecipients ?? 0);
+            languageBreakdown[language] = (languageBreakdown[language] ?? 0) +
+                (message.actualRecipients ?? 0);
           }
         }
       }
 
       // Calculate rates
-      final var openRate = totalSent > 0 ? (totalOpened / totalSent) * 100 : 0;
-      final var clickRate = totalOpened > 0 ? (totalClicked / totalOpened) * 100 : 0;
-      final var responseRate = totalSent > 0 ? (totalResponses / totalSent) * 100 : 0;
-      final deliveryRate = totalRecipients > 0 ? (totalSent / totalRecipients) * 100 : 0;
-      final engagementRate = totalSent > 0 ? ((totalOpened + totalClicked) / totalSent) * 100 : 0;
+      final openRate = totalSent > 0 ? (totalOpened / totalSent) * 100 : 0.0;
+      final clickRate =
+          totalOpened > 0 ? (totalClicked / totalOpened) * 100 : 0.0;
+      final responseRate =
+          totalSent > 0 ? (totalResponses / totalSent) * 100 : 0.0;
+      final deliveryRate =
+          totalRecipients > 0 ? (totalSent / totalRecipients) * 100 : 0.0;
+      final engagementRate = totalSent > 0
+          ? ((totalOpened + totalClicked) / totalSent) * 100
+          : 0.0;
 
       return AnalyticsSummary(
         totalBroadcasts: totalBroadcasts,
@@ -259,13 +267,14 @@ class AnalyticsService {
   }
 
   /// Get time series data for charts
-  Future<List<AnalyticsTimeSeriesData>> getTimeSeriesData(AnalyticsFilter filter) async {
+  Future<List<AnalyticsTimeSeriesData>> getTimeSeriesData(
+      AnalyticsFilter filter) async {
     try {
       final startDate = filter.effectiveStartDate;
       final endDate = filter.effectiveEndDate;
       final daysDiff = endDate.difference(startDate).inDays;
 
-      final var timeSeriesData = <AnalyticsTimeSeriesData>[];
+      final timeSeriesData = <AnalyticsTimeSeriesData>[];
 
       for (var i = 0; i <= daysDiff; i++) {
         final currentDate = startDate.add(Duration(days: i));
@@ -301,13 +310,15 @@ class AnalyticsService {
           }
         }
 
-        timeSeriesData.add(AnalyticsTimeSeriesData(
-          date: currentDate,
-          sent: sent,
-          opened: opened,
-          clicked: clicked,
-          responses: responses,
-        ),);
+        timeSeriesData.add(
+          AnalyticsTimeSeriesData(
+            date: currentDate,
+            sent: sent,
+            opened: opened,
+            clicked: clicked,
+            responses: responses,
+          ),
+        );
       }
 
       return timeSeriesData;
@@ -317,7 +328,8 @@ class AnalyticsService {
   }
 
   /// Get detailed analytics for a specific broadcast
-  Future<BroadcastAnalyticsDetail> getBroadcastAnalyticsDetail(String messageId) async {
+  Future<BroadcastAnalyticsDetail> getBroadcastAnalyticsDetail(
+      String messageId) async {
     try {
       // Get the broadcast message
       final messageDoc = await _broadcastsCollection.doc(messageId).get();
@@ -336,7 +348,7 @@ class AnalyticsService {
           .get();
 
       final eventCounts = <String, int>{};
-      final var rawAnalytics = <String, dynamic>{};
+      final rawAnalytics = <String, dynamic>{};
 
       for (final doc in analyticsSnapshot.docs) {
         final data = doc.data();
@@ -351,25 +363,33 @@ class AnalyticsService {
       final summary = AnalyticsSummary(
         totalBroadcasts: 1,
         totalRecipients: message.actualRecipients ?? 0,
-        totalSent: message.sentCount ?? 0,
+        totalSent: message.actualRecipients ?? 0,
         totalOpened: message.openedCount ?? 0,
         totalClicked: message.clickedCount ?? 0,
-        totalResponses: message.formResponseCount ?? 0,
-        openRate: message.sentCount != null && message.sentCount! > 0
-            ? ((message.openedCount ?? 0) / message.sentCount!) * 100
-            : 0,
+        totalResponses: message.pollResponseCount ?? 0,
+        openRate:
+            message.actualRecipients != null && message.actualRecipients! > 0
+                ? ((message.openedCount ?? 0) / message.actualRecipients!) * 100
+                : 0,
         clickRate: message.openedCount != null && message.openedCount! > 0
             ? ((message.clickedCount ?? 0) / message.openedCount!) * 100
             : 0,
-        responseRate: message.sentCount != null && message.sentCount! > 0
-            ? ((message.formResponseCount ?? 0) / message.sentCount!) * 100
+        responseRate: message.actualRecipients != null &&
+                message.actualRecipients! > 0
+            ? ((message.pollResponseCount ?? 0) / message.actualRecipients!) *
+                100
             : 0,
-        deliveryRate: message.actualRecipients != null && message.actualRecipients! > 0
-            ? ((message.sentCount ?? 0) / message.actualRecipients!) * 100
+        deliveryRate: message.actualRecipients != null &&
+                message.actualRecipients! > 0
+            ? ((message.actualRecipients ?? 0) / message.actualRecipients!) *
+                100
             : 0,
-        engagementRate: message.sentCount != null && message.sentCount! > 0
-            ? (((message.openedCount ?? 0) + (message.clickedCount ?? 0)) / message.sentCount!) * 100
-            : 0,
+        engagementRate:
+            message.actualRecipients != null && message.actualRecipients! > 0
+                ? (((message.openedCount ?? 0) + (message.clickedCount ?? 0)) /
+                        message.actualRecipients!) *
+                    100
+                : 0,
         countryBreakdown: {},
         languageBreakdown: {},
         typeBreakdown: {message.type.name: 1},
@@ -378,8 +398,10 @@ class AnalyticsService {
 
       // Get form statistics if it's a form message
       List<FormFieldStatistics>? formStatistics;
-      if (message.type == BroadcastMessageType.form && message.formFields != null) {
-        formStatistics = await _getFormStatistics(messageId, message.formFields!);
+      if (message.type == BroadcastMessageType.form &&
+          message.formFields != null) {
+        formStatistics =
+            await _getFormStatistics(messageId, message.formFields!);
       }
 
       return BroadcastAnalyticsDetail(
@@ -403,23 +425,30 @@ class AnalyticsService {
           .where('messageId', isEqualTo: messageId)
           .get();
 
-      final responses = responsesSnapshot.docs.map((doc) => {
-        'id': doc.id,
-        ...doc.data(),
-      },).toList();
+      final responses = responsesSnapshot.docs
+          .map(
+            (doc) => {
+              'id': doc.id,
+              ...doc.data(),
+            },
+          )
+          .toList();
 
       final statistics = <FormFieldStatistics>[];
 
       for (final field in formFields) {
         final fieldResponses = responses
-            .where((response) => 
-                response['responses'] != null && 
-                response['responses'][field.id] != null,)
+            .where(
+              (response) =>
+                  response['responses'] != null &&
+                  response['responses'][field.id] != null,
+            )
             .map((response) => response['responses'][field.id])
             .toList();
 
         final validResponses = fieldResponses
-            .where((value) => value != null && value.toString().trim().isNotEmpty)
+            .where(
+                (value) => value != null && value.toString().trim().isNotEmpty)
             .toList();
 
         // Calculate statistics based on field type
@@ -435,9 +464,10 @@ class AnalyticsService {
                 .where((v) => v != null)
                 .cast<double>()
                 .toList();
-            
+
             if (numericValues.isNotEmpty) {
-              averageValue = numericValues.reduce((a, b) => a + b) / numericValues.length;
+              averageValue =
+                  numericValues.reduce((a, b) => a + b) / numericValues.length;
             }
 
           case CustomFormFieldType.choice:
@@ -445,9 +475,10 @@ class AnalyticsService {
             choiceDistribution = <String, int>{};
             for (final value in validResponses) {
               final stringValue = value.toString();
-              choiceDistribution[stringValue] = (choiceDistribution[stringValue] ?? 0) + 1;
+              choiceDistribution[stringValue] =
+                  (choiceDistribution[stringValue] ?? 0) + 1;
             }
-            
+
             if (choiceDistribution.isNotEmpty) {
               mostCommonValue = choiceDistribution.entries
                   .reduce((a, b) => a.value > b.value ? a : b)
@@ -460,14 +491,16 @@ class AnalyticsService {
               if (value is List) {
                 for (final item in value) {
                   final stringValue = item.toString();
-                  choiceDistribution[stringValue] = (choiceDistribution[stringValue] ?? 0) + 1;
+                  choiceDistribution[stringValue] =
+                      (choiceDistribution[stringValue] ?? 0) + 1;
                 }
               }
             }
 
           default:
             // For text fields, find most common response
-            final stringResponses = validResponses.map((v) => v.toString()).toList();
+            final stringResponses =
+                validResponses.map((v) => v.toString()).toList();
             if (stringResponses.isNotEmpty) {
               final frequency = <String, int>{};
               for (final response in stringResponses) {
@@ -479,17 +512,19 @@ class AnalyticsService {
             }
         }
 
-        statistics.add(FormFieldStatistics(
-          fieldId: field.id,
-          fieldLabel: field.label,
-          fieldType: field.type,
-          totalResponses: fieldResponses.length,
-          validResponses: validResponses.length,
-          averageValue: averageValue,
-          mostCommonValue: mostCommonValue,
-          choiceDistribution: choiceDistribution,
-          allResponses: validResponses.map((v) => v.toString()).toList(),
-        ),);
+        statistics.add(
+          FormFieldStatistics(
+            fieldId: field.id,
+            fieldLabel: field.label,
+            fieldType: field.type,
+            totalResponses: fieldResponses.length,
+            validResponses: validResponses.length,
+            averageValue: averageValue,
+            mostCommonValue: mostCommonValue,
+            choiceDistribution: choiceDistribution,
+            allResponses: validResponses.map((v) => v.toString()).toList(),
+          ),
+        );
       }
 
       return statistics;
@@ -507,7 +542,8 @@ class AnalyticsService {
       final csvLines = <String>[];
 
       // Header
-      csvLines.add('"Analytics Export - ${filter.effectiveStartDate.toIso8601String()} to ${filter.effectiveEndDate.toIso8601String()}"');
+      csvLines.add(
+          '"Analytics Export - ${filter.effectiveStartDate.toIso8601String()} to ${filter.effectiveEndDate.toIso8601String()}"');
       csvLines.add('');
 
       // Summary
@@ -520,16 +556,20 @@ class AnalyticsService {
       csvLines.add('"Total Responses","${summary.totalResponses}"');
       csvLines.add('"Open Rate","${summary.openRate.toStringAsFixed(2)}%"');
       csvLines.add('"Click Rate","${summary.clickRate.toStringAsFixed(2)}%"');
-      csvLines.add('"Response Rate","${summary.responseRate.toStringAsFixed(2)}%"');
-      csvLines.add('"Delivery Rate","${summary.deliveryRate.toStringAsFixed(2)}%"');
-      csvLines.add('"Engagement Rate","${summary.engagementRate.toStringAsFixed(2)}%"');
+      csvLines
+          .add('"Response Rate","${summary.responseRate.toStringAsFixed(2)}%"');
+      csvLines
+          .add('"Delivery Rate","${summary.deliveryRate.toStringAsFixed(2)}%"');
+      csvLines.add(
+          '"Engagement Rate","${summary.engagementRate.toStringAsFixed(2)}%"');
       csvLines.add('');
 
       // Time series data
       csvLines.add('"Daily Metrics"');
       csvLines.add('"Date","Sent","Opened","Clicked","Responses"');
       for (final data in timeSeriesData) {
-        csvLines.add('"${data.date.toIso8601String().split('T')[0]}","${data.sent}","${data.opened}","${data.clicked}","${data.responses}"');
+        csvLines.add(
+            '"${data.date.toIso8601String().split('T')[0]}","${data.sent}","${data.opened}","${data.clicked}","${data.responses}"');
       }
       csvLines.add('');
 
@@ -575,28 +615,32 @@ class AnalyticsService {
 
   /// Get empty analytics summary
   AnalyticsSummary _getEmptyAnalyticsSummary() => const AnalyticsSummary(
-      totalBroadcasts: 0,
-      totalRecipients: 0,
-      totalSent: 0,
-      totalOpened: 0,
-      totalClicked: 0,
-      totalResponses: 0,
-      openRate: 0,
-      clickRate: 0,
-      responseRate: 0,
-      deliveryRate: 0,
-      engagementRate: 0,
-      countryBreakdown: {},
-      languageBreakdown: {},
-      typeBreakdown: {},
-      statusBreakdown: {},
-    );
+        totalBroadcasts: 0,
+        totalRecipients: 0,
+        totalSent: 0,
+        totalOpened: 0,
+        totalClicked: 0,
+        totalResponses: 0,
+        openRate: 0,
+        clickRate: 0,
+        responseRate: 0,
+        deliveryRate: 0,
+        engagementRate: 0,
+        countryBreakdown: {},
+        languageBreakdown: {},
+        typeBreakdown: {},
+        statusBreakdown: {},
+      );
 
   /// Get analytics stream for real-time updates
-  Stream<AnalyticsSummary> getAnalyticsStream(AnalyticsFilter filter) => Stream.periodic(const Duration(seconds: 30), (_) async => getAnalyticsSummary(filter)).asyncMap((future) => future);
+  Stream<AnalyticsSummary> getAnalyticsStream(AnalyticsFilter filter) =>
+      Stream.periodic(const Duration(seconds: 30),
+              (_) async => getAnalyticsSummary(filter))
+          .asyncMap((future) => future);
 
   /// Get broadcast list with analytics
-  Future<List<BroadcastAnalyticsDetail>> getBroadcastList(AnalyticsFilter filter) async {
+  Future<List<BroadcastAnalyticsDetail>> getBroadcastList(
+      AnalyticsFilter filter) async {
     try {
       var query = _broadcastsCollection
           .where('createdAt', isGreaterThanOrEqualTo: filter.effectiveStartDate)
@@ -642,19 +686,24 @@ final analyticsSummaryProvider = FutureProvider<AnalyticsSummary>((ref) async {
   return analyticsService.getAnalyticsSummary(filter);
 });
 
-final analyticsTimeSeriesProvider = FutureProvider<List<AnalyticsTimeSeriesData>>((ref) async {
+final analyticsTimeSeriesProvider =
+    FutureProvider<List<AnalyticsTimeSeriesData>>((ref) async {
   final analyticsService = ref.watch(analyticsServiceProvider);
   final filter = ref.watch(analyticsFilterProvider);
   return analyticsService.getTimeSeriesData(filter);
 });
 
-final broadcastListProvider = FutureProvider<List<BroadcastAnalyticsDetail>>((ref) async {
+final broadcastListProvider =
+    FutureProvider<List<BroadcastAnalyticsDetail>>((ref) async {
   final analyticsService = ref.watch(analyticsServiceProvider);
   final filter = ref.watch(analyticsFilterProvider);
   return analyticsService.getBroadcastList(filter);
 });
 
-final FutureProviderFamily<BroadcastAnalyticsDetail, String> REDACTED_TOKEN = FutureProvider.family<BroadcastAnalyticsDetail, String>((ref, messageId) async {
+final FutureProviderFamily<BroadcastAnalyticsDetail, String>
+    REDACTED_TOKEN =
+    FutureProvider.family<BroadcastAnalyticsDetail, String>(
+        (ref, messageId) async {
   final analyticsService = ref.watch(analyticsServiceProvider);
   return analyticsService.getBroadcastAnalyticsDetail(messageId);
 });
