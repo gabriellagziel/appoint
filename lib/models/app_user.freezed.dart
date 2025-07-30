@@ -31,7 +31,7 @@ mixin _$AppUser {
   DateTime? get createdAt => throw _privateConstructorUsedError;
   DateTime? get lastLoginAt => throw _privateConstructorUsedError;
   Map<String, dynamic>? get customClaims => throw _privateConstructorUsedError;
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @UserConverter()
   User? get firebaseUser => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>(
@@ -47,8 +47,7 @@ mixin _$AppUser {
             DateTime? createdAt,
             DateTime? lastLoginAt,
             Map<String, dynamic>? customClaims,
-            @JsonKey(includeFromJson: false, includeToJson: false)
-            User? firebaseUser)
+            @UserConverter() User? firebaseUser)
         $default,
   ) =>
       throw _privateConstructorUsedError;
@@ -66,8 +65,7 @@ mixin _$AppUser {
             DateTime? createdAt,
             DateTime? lastLoginAt,
             Map<String, dynamic>? customClaims,
-            @JsonKey(includeFromJson: false, includeToJson: false)
-            User? firebaseUser)?
+            @UserConverter() User? firebaseUser)?
         $default,
   ) =>
       throw _privateConstructorUsedError;
@@ -85,8 +83,7 @@ mixin _$AppUser {
             DateTime? createdAt,
             DateTime? lastLoginAt,
             Map<String, dynamic>? customClaims,
-            @JsonKey(includeFromJson: false, includeToJson: false)
-            User? firebaseUser)?
+            @UserConverter() User? firebaseUser)?
         $default, {
     required TResult orElse(),
   }) =>
@@ -114,8 +111,7 @@ abstract class $AppUserCopyWith<$Res> {
       DateTime? createdAt,
       DateTime? lastLoginAt,
       Map<String, dynamic>? customClaims,
-      @JsonKey(includeFromJson: false, includeToJson: false)
-      User? firebaseUser});
+      @UserConverter() User? firebaseUser});
 }
 
 /// @nodoc
@@ -216,8 +212,7 @@ abstract class _$$AppUserImplCopyWith<$Res> implements $AppUserCopyWith<$Res> {
       DateTime? createdAt,
       DateTime? lastLoginAt,
       Map<String, dynamic>? customClaims,
-      @JsonKey(includeFromJson: false, includeToJson: false)
-      User? firebaseUser});
+      @UserConverter() User? firebaseUser});
 }
 
 /// @nodoc
@@ -312,7 +307,7 @@ class _$AppUserImpl implements _AppUser {
       this.createdAt,
       this.lastLoginAt,
       final Map<String, dynamic>? customClaims,
-      @JsonKey(includeFromJson: false, includeToJson: false) this.firebaseUser})
+      @UserConverter() this.firebaseUser})
       : _customClaims = customClaims;
 
   factory _$AppUserImpl.fromJson(Map<String, dynamic> json) =>
@@ -349,7 +344,7 @@ class _$AppUserImpl implements _AppUser {
   }
 
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @UserConverter()
   final User? firebaseUser;
 
   @override
@@ -423,8 +418,7 @@ class _$AppUserImpl implements _AppUser {
             DateTime? createdAt,
             DateTime? lastLoginAt,
             Map<String, dynamic>? customClaims,
-            @JsonKey(includeFromJson: false, includeToJson: false)
-            User? firebaseUser)
+            @UserConverter() User? firebaseUser)
         $default,
   ) {
     return $default(
@@ -457,8 +451,7 @@ class _$AppUserImpl implements _AppUser {
             DateTime? createdAt,
             DateTime? lastLoginAt,
             Map<String, dynamic>? customClaims,
-            @JsonKey(includeFromJson: false, includeToJson: false)
-            User? firebaseUser)?
+            @UserConverter() User? firebaseUser)?
         $default,
   ) {
     return $default?.call(
@@ -491,8 +484,7 @@ class _$AppUserImpl implements _AppUser {
             DateTime? createdAt,
             DateTime? lastLoginAt,
             Map<String, dynamic>? customClaims,
-            @JsonKey(includeFromJson: false, includeToJson: false)
-            User? firebaseUser)?
+            @UserConverter() User? firebaseUser)?
         $default, {
     required TResult orElse(),
   }) {
@@ -535,8 +527,7 @@ abstract class _AppUser implements AppUser {
       final DateTime? createdAt,
       final DateTime? lastLoginAt,
       final Map<String, dynamic>? customClaims,
-      @JsonKey(includeFromJson: false, includeToJson: false)
-      final User? firebaseUser}) = _$AppUserImpl;
+      @UserConverter() final User? firebaseUser}) = _$AppUserImpl;
 
   factory _AppUser.fromJson(Map<String, dynamic> json) = _$AppUserImpl.fromJson;
 
@@ -563,7 +554,7 @@ abstract class _AppUser implements AppUser {
   @override
   Map<String, dynamic>? get customClaims;
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
+  @UserConverter()
   User? get firebaseUser;
   @override
   @JsonKey(ignore: true)

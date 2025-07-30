@@ -55,8 +55,8 @@ void main() {
         type: AppointmentType.scheduled,
       );
 
-      json = appointment.toJson();
-      newAppointment = Appointment.fromJson(json);
+      final json = appointment.toJson();
+      final newAppointment = Appointment.fromJson(json);
 
       expect(newAppointment.id, appointment.id);
       expect(newAppointment.creatorId, appointment.creatorId);

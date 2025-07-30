@@ -2626,7 +2626,10 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String tierUpgradeBody(
-      String previousTier, String newTier, String totalReferrals) {
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[BN] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Bengali)';
   }
 
@@ -2635,7 +2638,10 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String monthlyReminderBody(
-      String currentReferrals, String targetReferrals, String daysRemaining) {
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[BN] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Bengali)';
   }
 
@@ -2645,7 +2651,9 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String performanceWarningBody(
-      String currentReferrals, String minimumRequired) {
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[BN] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Bengali)';
   }
 
@@ -5482,7 +5490,10 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
 
   @override
   String tierUpgradeBody(
-      String previousTier, String newTier, String totalReferrals) {
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[BN_BD] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Bengali (Bangladesh))';
   }
 
@@ -5492,7 +5503,10 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
 
   @override
   String monthlyReminderBody(
-      String currentReferrals, String targetReferrals, String daysRemaining) {
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[BN_BD] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Bengali (Bangladesh))';
   }
 
@@ -5502,7 +5516,9 @@ class AppLocalizationsBnBd extends AppLocalizationsBn {
 
   @override
   String performanceWarningBody(
-      String currentReferrals, String minimumRequired) {
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[BN_BD] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Bengali (Bangladesh))';
   }
 
