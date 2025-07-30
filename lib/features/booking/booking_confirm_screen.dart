@@ -7,7 +7,6 @@ import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/providers/calendar_provider.dart';
 import 'package:appoint/providers/notification_provider.dart';
 import 'package:appoint/services/maps_service.dart';
-import 'package:appoint/widgets/app_logo.dart';
 import 'package:appoint/widgets/business_header_widget.dart';
 import 'package:appoint/widgets/whatsapp_share_button.dart';
 import 'package:flutter/material.dart';
@@ -33,13 +32,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
         ModalRoute.of(context)!.settings.arguments! as BookingRequestArgs;
     return Scaffold(
       appBar: AppBar(
-        title: const Row(
-          children: [
-            AppLogo(size: 24, logoOnly: true),
-            SizedBox(width: 8),
-            Text('Confirm Booking'),
-          ],
-        ),
+        title: const Text('Confirm Booking'),
         backgroundColor: Colors.blue.shade600,
         foregroundColor: Colors.white,
         elevation: 0,
@@ -53,11 +46,14 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
               children: [
                 // Business Header - Show business branding
                 const BusinessHeaderWidget(
+                  showDescription: true,
+                  showServices: true,
                   showHours: true,
+                  compact: false,
                 ),
-
+                
                 const SizedBox(height: 24),
-
+                
                 // Booking Details Section
                 Card(
                   elevation: 2,
@@ -76,30 +72,28 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                             const SizedBox(width: 8),
                             Text(
                               'Booking Details',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .titleLarge
-                                  ?.copyWith(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.blue.shade800,
-                                  ),
+                              style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blue.shade800,
+                              ),
                             ),
                           ],
                         ),
                         const SizedBox(height: 16),
+                        
                         _buildDetailRow(
                           icon: Icons.person,
                           label: 'Client ID',
                           value: args.inviteeId,
                         ),
                         const SizedBox(height: 12),
+                        
                         _buildDetailRow(
                           icon: args.openCall ? Icons.call : Icons.schedule,
                           label: 'Appointment Type',
-                          value: args.openCall
-                              ? 'Open Call'
-                              : 'Scheduled Appointment',
+                          value: args.openCall ? 'Open Call' : 'Scheduled Appointment',
                         ),
+                        
                         if (!args.openCall && args.scheduledAt != null) ...[
                           const SizedBox(height: 12),
                           _buildDetailRow(
@@ -108,6 +102,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                             value: _formatDateTime(args.scheduledAt!),
                           ),
                         ],
+                        
                         if (args.serviceType != null) ...[
                           const SizedBox(height: 12),
                           _buildDetailRow(
@@ -116,6 +111,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                             value: args.serviceType!,
                           ),
                         ],
+                        
                         if (args.notes != null && args.notes!.isNotEmpty) ...[
                           const SizedBox(height: 12),
                           _buildDetailRow(
@@ -129,9 +125,9 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                     ),
                   ),
                 ),
-
+                
                 const SizedBox(height: 20),
-
+                
                 // Location Section (if available)
                 if (args.location != null) ...[
                   Card(
@@ -151,22 +147,19 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                               const SizedBox(width: 8),
                               Text(
                                 'Meeting Location',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .titleLarge
-                                    ?.copyWith(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.green.shade800,
-                                    ),
+                                style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.green.shade800,
+                                ),
                               ),
                             ],
                           ),
                           const SizedBox(height: 16),
+                          
                           SizedBox(
                             height: 200,
                             child: GoogleMap(
-                              initialCameraPosition:
-                                  MapsService.initialPosition,
+                              initialCameraPosition: MapsService.initialPosition,
                               onMapCreated: (_) {},
                               myLocationEnabled: true,
                             ),
@@ -177,7 +170,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                   ),
                   const SizedBox(height: 20),
                 ],
-
+                
                 // Calendar Sync Options
                 Card(
                   elevation: 2,
@@ -196,13 +189,10 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                             const SizedBox(width: 8),
                             Text(
                               'Calendar Integration',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .titleLarge
-                                  ?.copyWith(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.orange.shade800,
-                                  ),
+                              style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.orange.shade800,
+                              ),
                             ),
                           ],
                         ),
@@ -215,6 +205,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                           ),
                         ),
                         const SizedBox(height: 12),
+                        
                         SwitchListTile(
                           title: const Text('Sync to Google Calendar'),
                           subtitle: const Text('Add to your Google Calendar'),
@@ -223,13 +214,13 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                             width: 32,
                             height: 32,
                             errorBuilder: (context, error, stackTrace) =>
-                                const Icon(Icons.calendar_today,
-                                    color: Colors.blue),
+                                const Icon(Icons.calendar_today, color: Colors.blue),
                           ),
                           value: _syncGoogle,
                           onChanged: (v) => setState(() => _syncGoogle = v),
                           contentPadding: EdgeInsets.zero,
                         ),
+                        
                         SwitchListTile(
                           title: const Text('Sync to Outlook'),
                           subtitle: const Text('Add to your Outlook Calendar'),
@@ -238,8 +229,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                             width: 32,
                             height: 32,
                             errorBuilder: (context, error, stackTrace) =>
-                                const Icon(Icons.calendar_month,
-                                    color: Colors.indigo),
+                                const Icon(Icons.calendar_month, color: Colors.indigo),
                           ),
                           value: _syncOutlook,
                           onChanged: (v) => setState(() => _syncOutlook = v),
@@ -249,7 +239,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                     ),
                   ),
                 ),
-
+                
                 // Sharing Section (shown after booking is confirmed)
                 if (_createdAppointment != null) ...[
                   const SizedBox(height: 20),
@@ -270,13 +260,10 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                               const SizedBox(width: 8),
                               Text(
                                 'Share Appointment',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .titleLarge
-                                    ?.copyWith(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.purple.shade800,
-                                    ),
+                                style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.purple.shade800,
+                                ),
                               ),
                             ],
                           ),
@@ -289,15 +276,15 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                             ),
                           ),
                           const SizedBox(height: 16),
+                          
                           WhatsAppShareButton(
                             appointment: _createdAppointment!,
                             customMessage:
-                                'Hello! Your appointment has been confirmed through APP-OINT. Here are the details:',
+                                "Hello! Your appointment has been confirmed through APP-OINT. Here are the details:",
                             onShared: () {
                               ScaffoldMessenger.of(context).showSnackBar(
                                 const SnackBar(
-                                  content:
-                                      Text('Appointment shared successfully!'),
+                                  content: Text('Appointment shared successfully!'),
                                   backgroundColor: Color(0xFF25D366),
                                 ),
                               );
@@ -308,22 +295,20 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                     ),
                   ),
                 ],
-
+                
                 const SizedBox(height: 32),
-
+                
                 // Confirm Button
                 SizedBox(
                   width: double.infinity,
                   height: 56,
                   child: ElevatedButton.icon(
-                    onPressed: _createdAppointment != null
-                        ? null
-                        : () => _confirmBooking(args),
-                    icon: _createdAppointment != null
+                    onPressed: _createdAppointment != null ? null : () => _confirmBooking(args),
+                    icon: _createdAppointment != null 
                         ? const Icon(Icons.check_circle)
                         : const Icon(Icons.event_available),
                     label: Text(
-                      _createdAppointment != null
+                      _createdAppointment != null 
                           ? 'Booking Confirmed!'
                           : 'Confirm Booking',
                       style: const TextStyle(
@@ -332,8 +317,8 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: _createdAppointment != null
-                          ? Colors.green.shade600
+                      backgroundColor: _createdAppointment != null 
+                          ? Colors.green.shade600 
                           : Colors.blue.shade600,
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(
@@ -343,7 +328,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
                     ),
                   ),
                 ),
-
+                
                 const SizedBox(height: 20),
               ],
             ),
@@ -358,51 +343,51 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
     required String label,
     required String value,
     bool multiline = false,
-  }) =>
-      Row(
-        crossAxisAlignment:
-            multiline ? CrossAxisAlignment.start : CrossAxisAlignment.center,
-        children: [
-          Container(
-            padding: const EdgeInsets.all(8),
-            decoration: BoxDecoration(
-              color: Colors.blue.shade50,
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: Icon(
-              icon,
-              size: 20,
-              color: Colors.blue.shade600,
-            ),
+  }) {
+    return Row(
+      crossAxisAlignment: multiline ? CrossAxisAlignment.start : CrossAxisAlignment.center,
+      children: [
+        Container(
+          padding: const EdgeInsets.all(8),
+          decoration: BoxDecoration(
+            color: Colors.blue.shade50,
+            borderRadius: BorderRadius.circular(8),
           ),
-          const SizedBox(width: 12),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  label,
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.grey.shade600,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-                const SizedBox(height: 2),
-                Text(
-                  value,
-                  style: const TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w500,
-                  ),
-                  maxLines: multiline ? null : 1,
-                  overflow: multiline ? null : TextOverflow.ellipsis,
-                ),
-              ],
-            ),
+          child: Icon(
+            icon,
+            size: 20,
+            color: Colors.blue.shade600,
           ),
-        ],
-      );
+        ),
+        const SizedBox(width: 12),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                label,
+                style: TextStyle(
+                  fontSize: 12,
+                  color: Colors.grey.shade600,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              const SizedBox(height: 2),
+              Text(
+                value,
+                style: const TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500,
+                ),
+                maxLines: multiline ? null : 1,
+                overflow: multiline ? null : TextOverflow.ellipsis,
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
 
   String _formatDateTime(DateTime dateTime) {
     final weekday = _getWeekday(dateTime.weekday);
@@ -411,7 +396,7 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
     final hour = dateTime.hour > 12 ? dateTime.hour - 12 : dateTime.hour;
     final minute = dateTime.minute.toString().padLeft(2, '0');
     final period = dateTime.hour >= 12 ? 'PM' : 'AM';
-
+    
     return '$weekday, $month $day at $hour:$minute $period';
   }
 
@@ -421,20 +406,8 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
   }
 
   String _getMonth(int month) {
-    const months = [
-      'Jan',
-      'Feb',
-      'Mar',
-      'Apr',
-      'May',
-      'Jun',
-      'Jul',
-      'Aug',
-      'Sep',
-      'Oct',
-      'Nov',
-      'Dec',
-    ];
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                   'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     return months[month - 1];
   }
 
@@ -442,15 +415,19 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
     try {
       final user = ref.read(authProvider).currentUser;
       if (user == null) return;
-
+      
       late final Appointment appt;
       if (args.openCall) {
-        appt = await ref.read(appointmentServiceProvider).createOpenCallRequest(
+        appt = await ref
+            .read(appointmentServiceProvider)
+            .createOpenCallRequest(
               creatorId: user.uid,
               inviteeId: args.inviteeId,
             );
       } else {
-        appt = await ref.read(appointmentServiceProvider).createScheduled(
+        appt = await ref
+            .read(appointmentServiceProvider)
+            .createScheduled(
               creatorId: user.uid,
               inviteeId: args.inviteeId,
               scheduledAt: args.scheduledAt ?? DateTime.now(),
@@ -464,21 +441,25 @@ class _BookingConfirmScreenState extends ConsumerState<BookingConfirmScreen> {
 
       // Sync to calendars if requested
       if (_syncGoogle) {
-        await ref.read(calendarServiceProvider).syncToGoogle(appt);
+        await ref
+            .read(calendarServiceProvider)
+            .syncToGoogle(appt);
       }
       if (_syncOutlook) {
-        await ref.read(calendarServiceProvider).syncToOutlook(appt);
+        await ref
+            .read(calendarServiceProvider)
+            .syncToOutlook(appt);
       }
-
+      
       if (!mounted) return;
-
+      
       // Send local notification when booking is confirmed
       try {
         await ref.read(notificationHelperProvider).sendLocalNotification(
-              title: 'Booking Confirmed',
-              body: 'Your booking has been confirmed successfully!',
-              payload: 'booking_confirmed',
-            );
+          title: 'Booking Confirmed',
+          body: 'Your booking has been confirmed successfully!',
+          payload: 'booking_confirmed',
+        );
       } catch (e) {
         debugPrint('Error sending notification: $e');
       }
