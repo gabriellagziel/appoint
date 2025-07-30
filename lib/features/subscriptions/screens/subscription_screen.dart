@@ -4,11 +4,9 @@ import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final subscriptionServiceProvider =
-    Provider<SubscriptionService>((ref) => SubscriptionService());
+final subscriptionServiceProvider = Provider<SubscriptionService>((ref) => SubscriptionService());
 
-final availablePlansProvider =
-    FutureProvider<List<SubscriptionPlan>>((ref) async {
+final availablePlansProvider = FutureProvider<List<SubscriptionPlan>>((ref) async {
   final service = ref.read(subscriptionServiceProvider);
   return service.getAvailablePlans();
 });
@@ -18,8 +16,7 @@ final userSubscriptionProvider = FutureProvider<UserSubscription?>((ref) async {
   return service.getUserSubscription();
 });
 
-final subscriptionStatusProvider =
-    FutureProvider<SubscriptionStatus>((ref) async {
+final subscriptionStatusProvider = FutureProvider<SubscriptionStatus>((ref) async {
   final service = ref.read(subscriptionServiceProvider);
   return service.getCurrentStatus();
 });
@@ -52,7 +49,7 @@ class SubscriptionScreen extends ConsumerWidget {
             children: [
               Icon(Icons.error_outline, size: 64, color: Colors.red[300]),
               const SizedBox(height: 16),
-              const Text('Failed to load plans'),
+              Text('Failed to load plans'),
               const SizedBox(height: 8),
               Text(error.toString()),
               const SizedBox(height: 16),
@@ -63,8 +60,7 @@ class SubscriptionScreen extends ConsumerWidget {
             ],
           ),
         ),
-        data: (plans) => _buildPlansList(
-            context, ref, plans, userSubscriptionAsync, statusAsync, l10n),
+        data: (plans) => _buildPlansList(context, ref, plans, userSubscriptionAsync, statusAsync, l10n),
       ),
     );
   }
@@ -76,38 +72,66 @@ class SubscriptionScreen extends ConsumerWidget {
     AsyncValue<UserSubscription?> userSubscriptionAsync,
     AsyncValue<SubscriptionStatus> statusAsync,
     AppLocalizations l10n,
-  ) =>
-      ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          // Current subscription status
-          _buildCurrentStatus(userSubscriptionAsync, statusAsync, l10n),
-
-          const SizedBox(height: 24),
-
-          // Plans
-          Text(
-            'Choose Your Plan',
-            style: Theme.of(context).textTheme.headlineSmall,
-          ),
-          const SizedBox(height: 16),
-
-          ...plans.map((plan) =>
-              _buildPlanCard(context, ref, plan, userSubscriptionAsync, l10n)),
-
-          const SizedBox(height: 24),
-
-          // Features comparison
-          _buildFeaturesComparison(context, plans, l10n),
-        ],
-      );
+  ) {
+    return ListView(
+      padding: const EdgeInsets.all(16),
+      children: [
+        // Current subscription status
+        _buildCurrentStatus(userSubscriptionAsync, statusAsync, l10n),
+        
+        const SizedBox(height: 24),
+        
+        // Plans
+        Text(
+          'Choose Your Plan',
+          style: Theme.of(context).textTheme.headlineSmall,
+        ),
+        const SizedBox(height: 16),
+        
+        ...plans.map((plan) => _buildPlanCard(context, ref, plan, userSubscriptionAsync, l10n)),
+        
+        const SizedBox(height: 24),
+        
+        // Features comparison
+        _buildFeaturesComparison(plans, l10n),
+      ],
+    );
+  }
 
   Widget _buildCurrentStatus(
     AsyncValue<UserSubscription?> userSubscriptionAsync,
     AsyncValue<SubscriptionStatus> statusAsync,
     AppLocalizations l10n,
-  ) =>
-      statusAsync.when(
+  ) {
+    return statusAsync.when(
+      loading: () => const Card(
+        child: Padding(
+          padding: EdgeInsets.all(16),
+          child: Row(
+            children: [
+              CircularProgressIndicator(),
+              SizedBox(width: 16),
+              Text('Loading subscription status...'),
+            ],
+          ),
+        ),
+      ),
+      error: (error, stack) => Card(
+        color: Colors.red[50],
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Row(
+            children: [
+              Icon(Icons.error, color: Colors.red),
+              const SizedBox(width: 16),
+              Expanded(
+                child: Text('Error loading subscription: $error'),
+              ),
+            ],
+          ),
+        ),
+      ),
+      data: (status) => userSubscriptionAsync.when(
         loading: () => const Card(
           child: Padding(
             padding: EdgeInsets.all(16),
@@ -115,7 +139,7 @@ class SubscriptionScreen extends ConsumerWidget {
               children: [
                 CircularProgressIndicator(),
                 SizedBox(width: 16),
-                Text('Loading subscription status...'),
+                Text('Loading subscription details...'),
               ],
             ),
           ),
@@ -126,7 +150,7 @@ class SubscriptionScreen extends ConsumerWidget {
             padding: const EdgeInsets.all(16),
             child: Row(
               children: [
-                const Icon(Icons.error, color: Colors.red),
+                Icon(Icons.error, color: Colors.red),
                 const SizedBox(width: 16),
                 Expanded(
                   child: Text('Error loading subscription: $error'),
@@ -135,88 +159,55 @@ class SubscriptionScreen extends ConsumerWidget {
             ),
           ),
         ),
-        data: (status) => userSubscriptionAsync.when(
-          loading: () => const Card(
-            child: Padding(
-              padding: EdgeInsets.all(16),
-              child: Row(
-                children: [
-                  CircularProgressIndicator(),
-                  SizedBox(width: 16),
-                  Text('Loading subscription details...'),
-                ],
-              ),
-            ),
-          ),
-          error: (error, stack) => Card(
-            color: Colors.red[50],
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Row(
-                children: [
-                  const Icon(Icons.error, color: Colors.red),
-                  const SizedBox(width: 16),
-                  Expanded(
-                    child: Text('Error loading subscription: $error'),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          data: (userSubscription) => Card(
-            color: status == SubscriptionStatus.active
-                ? Colors.green[50]
-                : Colors.orange[50],
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Icon(
-                        status == SubscriptionStatus.active
-                            ? Icons.check_circle
-                            : Icons.warning,
-                        color: status == SubscriptionStatus.active
-                            ? Colors.green
-                            : Colors.orange,
-                      ),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+        data: (userSubscription) => Card(
+          color: status == SubscriptionStatus.active ? Colors.green[50] : Colors.orange[50],
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Icon(
+                      status == SubscriptionStatus.active ? Icons.check_circle : Icons.warning,
+                      color: status == SubscriptionStatus.active ? Colors.green : Colors.orange,
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            _getStatusText(status),
+                            style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                          if (userSubscription != null)
                             Text(
-                              _getStatusText(status),
-                              style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
+                              userSubscription.currentPlan.name,
+                              style: TextStyle(
+                                color: Colors.grey[600],
+                                fontSize: 14,
                               ),
                             ),
-                            if (userSubscription != null)
-                              Text(
-                                userSubscription.currentPlan.name,
-                                style: TextStyle(
-                                  color: Colors.grey[600],
-                                  fontSize: 14,
-                                ),
-                              ),
-                          ],
-                        ),
+                        ],
                       ),
-                    ],
-                  ),
-                  if (userSubscription != null) ...[
-                    const SizedBox(height: 16),
-                    _buildUsageStats(userSubscription.usageStats),
+                    ),
                   ],
+                ),
+                if (userSubscription != null) ...[
+                  const SizedBox(height: 16),
+                  _buildUsageStats(userSubscription.usageStats),
                 ],
-              ),
+              ],
             ),
           ),
         ),
-      );
+      ),
+    );
+  }
 
   Widget _buildPlanCard(
     BuildContext context,
@@ -224,204 +215,191 @@ class SubscriptionScreen extends ConsumerWidget {
     SubscriptionPlan plan,
     AsyncValue<UserSubscription?> userSubscriptionAsync,
     AppLocalizations l10n,
-  ) =>
-      Card(
-        margin: const EdgeInsets.only(bottom: 16),
-        child: Padding(
-          padding: const EdgeInsets.all(20),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Plan header
-              Row(
-                children: [
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          plan.name,
-                          style: const TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          plan.description,
-                          style: TextStyle(
-                            color: Colors.grey[600],
-                            fontSize: 16,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  if (plan.isPopular)
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 8, vertical: 4),
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).primaryColor,
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: const Text(
-                        'POPULAR',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                ],
-              ),
-
-              const SizedBox(height: 16),
-
-              // Price
-              Row(
-                children: [
-                  Text(
-                    '\$${plan.price.toStringAsFixed(2)}',
-                    style: const TextStyle(
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const SizedBox(width: 8),
-                  Column(
+  ) {
+    return Card(
+      margin: const EdgeInsets.only(bottom: 16),
+      child: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Plan header
+            Row(
+              children: [
+                Expanded(
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        '/${_getIntervalText(plan.interval)}',
+                        plan.name,
+                        style: const TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        plan.description,
                         style: TextStyle(
                           color: Colors.grey[600],
                           fontSize: 16,
                         ),
                       ),
-                      if (plan.hasDiscount)
-                        Text(
-                          '\$${plan.originalPrice!.toStringAsFixed(2)}',
-                          style: TextStyle(
-                            color: Colors.grey[500],
-                            fontSize: 14,
-                            decoration: TextDecoration.lineThrough,
-                          ),
-                        ),
                     ],
+                  ),
+                ),
+                if (plan.isPopular)
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                    decoration: BoxDecoration(
+                      color: Theme.of(context).primaryColor,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: const Text(
+                      'POPULAR',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+            
+            const SizedBox(height: 16),
+            
+            // Price
+            Row(
+              children: [
+                Text(
+                  '\$${plan.price.toStringAsFixed(2)}',
+                  style: const TextStyle(
+                    fontSize: 32,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      '/${_getIntervalText(plan.interval)}',
+                      style: TextStyle(
+                        color: Colors.grey[600],
+                        fontSize: 16,
+                      ),
+                    ),
+                    if (plan.hasDiscount)
+                      Text(
+                        '\$${plan.originalPrice!.toStringAsFixed(2)}',
+                        style: TextStyle(
+                          color: Colors.grey[500],
+                          fontSize: 14,
+                          decoration: TextDecoration.lineThrough,
+                        ),
+                      ),
+                  ],
+                ),
+              ],
+            ),
+            
+            const SizedBox(height: 20),
+            
+            // Features
+            ...plan.features.map((feature) => Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Row(
+                children: [
+                  Icon(Icons.check, color: Colors.green, size: 20),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Text(
+                      feature,
+                      style: const TextStyle(fontSize: 16),
+                    ),
                   ),
                 ],
               ),
-
-              const SizedBox(height: 20),
-
-              // Features
-              ...plan.features.map(
-                (feature) => Padding(
-                  padding: const EdgeInsets.only(bottom: 8),
-                  child: Row(
-                    children: [
-                      const Icon(Icons.check, color: Colors.green, size: 20),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Text(
-                          feature,
-                          style: const TextStyle(fontSize: 16),
-                        ),
-                      ),
-                    ],
-                  ),
+            )),
+            
+            const SizedBox(height: 24),
+            
+            // Subscribe button
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () => _subscribeToPlan(context, ref, plan),
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  backgroundColor: plan.isPopular ? Theme.of(context).primaryColor : null,
+                  foregroundColor: plan.isPopular ? Colors.white : null,
+                ),
+                child: Text(
+                  _getSubscribeButtonText(plan, userSubscriptionAsync),
+                  style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
               ),
-
-              const SizedBox(height: 24),
-
-              // Subscribe button
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () => _subscribeToPlan(context, ref, plan),
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    backgroundColor:
-                        plan.isPopular ? Theme.of(context).primaryColor : null,
-                    foregroundColor: plan.isPopular ? Colors.white : null,
-                  ),
-                  child: Text(
-                    _getSubscribeButtonText(plan, userSubscriptionAsync),
-                    style: const TextStyle(
-                        fontSize: 16, fontWeight: FontWeight.bold),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      );
-
-  Widget _buildUsageStats(UsageStats stats) => Column(
-        children: [
-          _buildUsageBar(
-              'Bookings',
-              stats.bookingsUsagePercentage,
-              stats.bookingsThisMonth.toDouble(),
-              stats.bookingsLimit.toDouble()),
-          const SizedBox(height: 8),
-          _buildUsageBar(
-              'Messages',
-              stats.messagesUsagePercentage,
-              stats.messagesThisMonth.toDouble(),
-              stats.messagesLimit.toDouble()),
-          const SizedBox(height: 8),
-          _buildUsageBar('Storage', stats.storageUsagePercentage,
-              stats.storageUsed, stats.storageLimit),
-        ],
-      );
-
-  Widget _buildUsageBar(
-          String label, double percentage, double used, double limit) =>
-      Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(label, style: const TextStyle(fontSize: 14)),
-              Text('${used.toInt()}/${limit.toInt()}',
-                  style: const TextStyle(fontSize: 14)),
-            ],
-          ),
-          const SizedBox(height: 4),
-          LinearProgressIndicator(
-            value: percentage / 100,
-            backgroundColor: Colors.grey[300],
-            valueColor: AlwaysStoppedAnimation<Color>(
-              percentage > 80 ? Colors.red : Colors.green,
             ),
-          ),
-        ],
-      );
-
-  Widget _buildFeaturesComparison(BuildContext context,
-          List<SubscriptionPlan> plans, AppLocalizations l10n) =>
-      Card(
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Plan Comparison',
-                style: Theme.of(context).textTheme.titleLarge,
-              ),
-              const SizedBox(height: 16),
-              // This would be a detailed comparison table
-              const Text('Detailed feature comparison coming soon...'),
-            ],
-          ),
+          ],
         ),
-      );
+      ),
+    );
+  }
+
+  Widget _buildUsageStats(UsageStats stats) {
+    return Column(
+      children: [
+        _buildUsageBar('Bookings', stats.bookingsUsagePercentage, stats.bookingsThisMonth.toDouble(), stats.bookingsLimit.toDouble()),
+        const SizedBox(height: 8),
+        _buildUsageBar('Messages', stats.messagesUsagePercentage, stats.messagesThisMonth.toDouble(), stats.messagesLimit.toDouble()),
+        const SizedBox(height: 8),
+        _buildUsageBar('Storage', stats.storageUsagePercentage, stats.storageUsed, stats.storageLimit),
+      ],
+    );
+  }
+
+  Widget _buildUsageBar(String label, double percentage, double used, double limit) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(label, style: const TextStyle(fontSize: 14)),
+            Text('${used.toInt()}/${limit.toInt()}', style: const TextStyle(fontSize: 14)),
+          ],
+        ),
+        const SizedBox(height: 4),
+        LinearProgressIndicator(
+          value: percentage / 100,
+          backgroundColor: Colors.grey[300],
+          valueColor: AlwaysStoppedAnimation<Color>(
+            percentage > 80 ? Colors.red : Colors.green),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildFeaturesComparison(List<SubscriptionPlan> plans, AppLocalizations l10n) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Plan Comparison',
+              style: Theme.of(context).textTheme.titleLarge!,
+            ),
+            const SizedBox(height: 16),
+            // This would be a detailed comparison table
+            Text('Detailed feature comparison coming soon...'),
+          ],
+        ),
+      ),
+    );
+  }
 
   String _getStatusText(SubscriptionStatus status) {
     switch (status) {
@@ -449,24 +427,23 @@ class SubscriptionScreen extends ConsumerWidget {
     }
   }
 
-  String _getSubscribeButtonText(SubscriptionPlan plan,
-          AsyncValue<UserSubscription?> userSubscriptionAsync) =>
-      userSubscriptionAsync.when(
-        loading: () => 'Loading...',
-        error: (error, stack) => 'Subscribe',
-        data: (userSubscription) {
-          if (userSubscription == null) return 'Subscribe';
-          if (userSubscription.currentPlan.id == plan.id) return 'Current Plan';
-          return 'Switch Plan';
-        },
-      );
+  String _getSubscribeButtonText(SubscriptionPlan plan, AsyncValue<UserSubscription?> userSubscriptionAsync) {
+    return userSubscriptionAsync.when(
+      loading: () => 'Loading...',
+      error: (error, stack) => 'Subscribe',
+      data: (userSubscription) {
+        if (userSubscription == null) return 'Subscribe';
+        if (userSubscription.currentPlan.id == plan.id) return 'Current Plan';
+        return 'Switch Plan';
+      },
+    );
+  }
 
-  Future<void> _subscribeToPlan(
-      BuildContext context, WidgetRef ref, SubscriptionPlan plan) async {
+  void _subscribeToPlan(BuildContext context, WidgetRef ref, SubscriptionPlan plan) async {
     try {
       final service = ref.read(subscriptionServiceProvider);
       await service.subscribeToPlan(plan.id);
-
+      
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Successfully subscribed to ${plan.name}!')),
@@ -475,9 +452,9 @@ class SubscriptionScreen extends ConsumerWidget {
         ref.invalidate(subscriptionStatusProvider);
       }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Failed to subscribe: $e')),
-      );
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Failed to subscribe: $e')),
+        );
     }
   }
 
@@ -487,4 +464,4 @@ class SubscriptionScreen extends ConsumerWidget {
       const SnackBar(content: Text('Billing history coming soon!')),
     );
   }
-}
+} 
