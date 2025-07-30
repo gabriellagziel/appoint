@@ -7,24 +7,88 @@ on:
     branches: [ main ]
 
 jobs:
-    analyze_and_test:
-      name: Analyze & Test
-      runs-on: ubuntu-latest
-      env:
-        PUB_HOSTED_URL: https://pub.dev
-        FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
-      steps:
+  analyze_and_test:
+    name: Analyze & Test
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/your-org/app-oint-dev:latest
+      options: --pull
+    env:
+      PUB_HOSTED_URL: https://pub.flutter-io.cn
+      FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
+      FLUTTER_CACHE_DIR: ~/.flutter
+      PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
+    steps:
       - uses: actions/checkout@v3
-      - name: Set up Flutter
+      - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.7.0'
-
-      - run: flutter pub get
-      - run: tool/codegen.sh
+          flutter-version: '3.32.0'
+          cache: true
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: '3.4.0'
+      - name: Ensure Flutter & Dart in PATH
+        run: |
+          echo "/usr/local/flutter/bin" >> $GITHUB_PATH
+          echo "/usr/lib/dart/bin" >> $GITHUB_PATH
+      # network checks removed for offline usage
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
+      - name: Configure Network Allowlist
+        run: |
+          scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
+      - name: Clear Flutter cache
+        run: flutter clean
+      - name: Verify Flutter Version
+        run: flutter --version
+      - name: "Pre-flight: Verify Dart"
+        run: |
+          which dart
+          version_line=$(dart --version 2>&1)
+          echo "$version_line"
+          sdk=$(echo "$version_line" | awk '{print $4}')
+          required=3.4.0
+          if [ "$(printf '%s\n%s\n' "$required" "$sdk" | sort -V | head -n1)" != "$required" ]; then
+            echo "Dart SDK $sdk is below required $required" && exit 1
+          fi
+      # network checks removed for offline usage
+      - name: Get dependencies
+        run: flutter pub get
+      - run: dart pub get
+      - name: Verify firebase_app_check resolution
+        run: grep firebase_app_check pubspec.lock
+      - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
-      - run: flutter test --coverage
+      - run: dart analyze
+      - name: Start Firebase emulators
+        run: |
+          echo "FIREBASE_AUTH_EMULATOR_HOST=localhost:9099" >> $GITHUB_ENV
+          echo "FIRESTORE_EMULATOR_HOST=localhost:8080" >> $GITHUB_ENV
+          echo "FIREBASE_STORAGE_EMULATOR_HOST=localhost:9199" >> $GITHUB_ENV
+          firebase emulators:start --only auth,firestore,storage --project app-oint-core &
+          sleep 5
+      - name: Run Flutter tests with coverage
+        run: dart test --coverage
+      - name: Run Flutter integration tests
+        run: flutter test integration_test --coverage --reporter=compact
+      - name: Generate localizations
+        run: flutter gen-l10n
+      - name: Check for undefined localization getters
+        run: dart scripts/check_l10n_getters.dart
+      - run: flutter build web
       - uses: codecov/codecov-action@v3
         with:
           files: coverage/lcov.info
           fail_ci_if_error: true
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/lcov.info
