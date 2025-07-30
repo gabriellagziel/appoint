@@ -1,0 +1,15 @@
+  error • The argument type 'dynamic' can't be assigned to the parameter type 'String'.  • lib/config/app_router.dart:543:36 • argument_type_not_assignable
+  error • The argument type 'dynamic' can't be assigned to the parameter type 'String'.  • lib/config/app_router.dart:556:21 • argument_type_not_assignable
+  error • The argument type 'dynamic' can't be assigned to the parameter type 'String?'.  • lib/config/app_router.dart:597:34 • argument_type_not_assignable
+  error • The argument type 'dynamic' can't be assigned to the parameter type 'double?'.  • lib/config/app_router.dart:601:23 • argument_type_not_assignable
+  error • The argument type 'dynamic' can't be assigned to the parameter type 'double?'.  • lib/config/app_router.dart:602:23 • argument_type_not_assignable
+  error • The argument type 'dynamic' can't be assigned to the parameter type 'String'.  • lib/config/app_router.dart:706:31 • argument_type_not_assignable
+  error • The argument type 'dynamic' can't be assigned to the parameter type 'String'.  • lib/config/app_router.dart:714:33 • argument_type_not_assignable
+  error • The argument type 'dynamic' can't be assigned to the parameter type 'String?'.  • lib/config/app_router.dart:726:63 • argument_type_not_assignable
+  error • The argument type 'dynamic' can't be assigned to the parameter type 'String?'.  • lib/config/app_router.dart:727:60 • argument_type_not_assignable
+  error • The argument type 'dynamic' can't be assigned to the parameter type 'String'.  • lib/config/app_router.dart:763:31 • argument_type_not_assignable
+  error • The argument type 'dynamic' can't be assigned to the parameter type 'String?'.  • lib/config/app_router.dart:774:55 • argument_type_not_assignable
+  error • The argument type 'dynamic' can't be assigned to the parameter type 'String'.  • lib/config/app_router.dart:816:43 • argument_type_not_assignable
+  error • The argument type 'dynamic' can't be assigned to the parameter type 'double'.  • lib/config/app_router.dart:834:33 • argument_type_not_assignable
+  error • The argument type 'dynamic' can't be assigned to the parameter type 'double'.  • lib/config/app_router.dart:835:33 • argument_type_not_assignable
+  error • The argument type 'dynamic' can't be assigned to the parameter type 'double'.  • lib/config/app_router.dart:843:35 • argument_type_not_assignable

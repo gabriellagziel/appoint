@@ -1,0 +1,187 @@
+[INFO] Generating build script...
+[INFO] Generating build script completed, took 273ms
+
+[INFO] Initializing inputs
+[INFO] Reading cached asset graph...
+[INFO] Reading cached asset graph completed, took 269ms
+
+[INFO] Checking for updates since last build...
+[INFO] Checking for updates since last build completed, took 1.9s
+
+[INFO] Running build...
+[INFO] 1.0s elapsed, 5/6 actions completed.
+[INFO] 2.0s elapsed, 5/8 actions completed.
+[INFO] 10.5s elapsed, 46/47 actions completed.
+[INFO] Running build completed, took 10.6s
+
+[INFO] Caching finalized dependency graph...
+[INFO] Caching finalized dependency graph completed, took 172ms
+
+[SEVERE] hive_generator on lib/features/playtime/widgets/custom_background_picker.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/playtime/widgets/custom_background_picker.dart (or an existing part) contains the following errors.
+custom_background_picker.dart:703:7: Expected a class member.
+custom_background_picker.dart:703:15: Expected an identifier.
+custom_background_picker.dart:703:15: Methods must have an explicit list of parameters.
+And 1 more...
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/studio_business/screens/rooms_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/studio_business/screens/rooms_screen.dart (or an existing part) contains the following errors.
+rooms_screen.dart:294:7: Expected a class member.
+rooms_screen.dart:294:15: Expected an identifier.
+rooms_screen.dart:294:15: Methods must have an explicit list of parameters.
+And 6 more...
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/playtime/screens/playtime_live_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/playtime/screens/playtime_live_screen.dart (or an existing part) contains the following errors.
+playtime_live_screen.dart:698:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/personal_app/ui/settings_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/personal_app/ui/settings_screen.dart (or an existing part) contains the following errors.
+settings_screen.dart:14:35: Expected to find ','.
+settings_screen.dart:27:39: Expected to find ','.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/studio_business/screens/phone_booking_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/studio_business/screens/phone_booking_screen.dart (or an existing part) contains the following errors.
+phone_booking_screen.dart:222:7: Expected a class member.
+phone_booking_screen.dart:222:15: Expected an identifier.
+phone_booking_screen.dart:222:15: Methods must have an explicit list of parameters.
+And 1 more...
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/studio_business/screens/settings_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/studio_business/screens/settings_screen.dart (or an existing part) contains the following errors.
+settings_screen.dart:208:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/studio_business/screens/business_subscription_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/studio_business/screens/business_subscription_screen.dart (or an existing part) contains the following errors.
+business_subscription_screen.dart:54:7: Expected a class member.
+business_subscription_screen.dart:54:15: Expected an identifier.
+business_subscription_screen.dart:54:15: Methods must have an explicit list of parameters.
+And 11 more...
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/studio_business/screens/invoices_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/studio_business/screens/invoices_screen.dart (or an existing part) contains the following errors.
+invoices_screen.dart:226:7: Expected a class member.
+invoices_screen.dart:226:15: Expected an identifier.
+invoices_screen.dart:226:15: Methods must have an explicit list of parameters.
+And 1 more...
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/family_support/screens/family_support_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/family_support/screens/family_support_screen.dart (or an existing part) contains the following errors.
+family_support_screen.dart:38:25: Expected an identifier.
+family_support_screen.dart:38:25: Expected to find ')'.
+family_support_screen.dart:46:25: Expected an identifier.
+And 5 more...
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/subscriptions/screens/subscription_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/subscriptions/screens/subscription_screen.dart (or an existing part) contains the following errors.
+subscription_screen.dart:468:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/services/usage_monitor.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/services/usage_monitor.dart (or an existing part) contains the following errors.
+usage_monitor.dart:81:65: Expected to find ':'.
+usage_monitor.dart:81:65: Expected an identifier.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/services/family_background_service.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/services/family_background_service.dart (or an existing part) contains the following errors.
+family_background_service.dart:306:3: Expected a method, getter, setter or operator declaration.
+family_background_service.dart:359:3: Expected a method, getter, setter or operator declaration.
+family_background_service.dart:371:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/onboarding/onboarding_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/onboarding/onboarding_screen.dart (or an existing part) contains the following errors.
+onboarding_screen.dart:321:21: Expected an identifier.
+onboarding_screen.dart:321:21: Expected to find ')'.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/playtime/screens/playtime_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/playtime/screens/playtime_screen.dart (or an existing part) contains the following errors.
+playtime_screen.dart:399:7: Expected a class member.
+playtime_screen.dart:399:15: Expected an identifier.
+playtime_screen.dart:399:15: Methods must have an explicit list of parameters.
+And 1 more...
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] mockito:mockBuilder on test/services/booking_service_enhanced_test.dart (cached):
+
+Invalid @GenerateMocks annotation: The GenerateMocks "classes" argument is missing, includes an unknown type, or includes an extension
+[SEVERE] hive_generator on lib/features/payments/payment_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/payments/payment_screen.dart (or an existing part) contains the following errors.
+payment_screen.dart:95:9: Expected an identifier.
+payment_screen.dart:94:66: Expected to find ';'.
+payment_screen.dart:95:32: Expected an identifier.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] hive_generator on lib/features/studio/screens/staff_availability_screen.dart (cached):
+
+This builder requires Dart inputs without syntax errors.
+However, package:appoint/features/studio/screens/staff_availability_screen.dart (or an existing part) contains the following errors.
+staff_availability_screen.dart:209:1: Expected a method, getter, setter or operator declaration.
+
+Try fixing the errors and re-running the build.
+
+[SEVERE] freezed on lib/models/contact.dart (cached):
+
+Getters require a MyClass._() constructor
+package:appoint/models/contact.dart:20:15
+   ╷
+20 │   String? get phone => phoneNumber;
+   │               ^^^^^
+   ╵
+[SEVERE] Failed after 10.9s
