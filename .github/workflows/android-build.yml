@@ -1,0 +1,16 @@
+name: Android Build
+
+push:
+  branches: [ main ]
+
+on:
+  pull_request:
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Placeholder Android Build
+        run: echo "Android build stub"

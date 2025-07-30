@@ -1,0 +1,29 @@
+# app_spec.yaml
+name: appoint-app-v2
+region: fra1
+features:
+  - buildpack-stack=ubuntu-22
+
+static_sites:
+  - name: marketing
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "marketing"
+    output_dir: "out"
+    build_command: "npm install && npm run build"
+    routes:
+      - path: /marketing
+
+services:
+  - name: api
+    environment_slug: node-js
+    github:
+      repo: "gabriellagziel/appoint"
+      branch: main
+    source_dir: "functions"
+    build_command: "npm install && npm run build"
+    run_command: "npm run start"
+    routes:
+      - path: /api
+ 

@@ -1,0 +1,87 @@
+📊 Analyzing branches...
+📈 Branch Statistics:
+  Total branches: 421
+  Codex/Cursor branches: 411
+  Other branches: 10
+
+📅 Branches by last activity:
+🗑️ Stale branches (older than 30 days):
+origin/cursor/fix-and-unify-ci-cd-workflows-for-gabriellagziel-appoint-ed63 26 minutes ago
+origin/cursor/harden-ci-pipeline-with-safe-merge-requirements-b0a8 2 hours ago
+origin/cursor/ci-enhancement-static-analysis-coverage-artifacts 2 hours ago
+origin/cursor/update-ci-for-analysis-coverage-and-artifacts-5271 2 hours ago
+origin/cursor/update-ci-for-analysis-coverage-and-artifacts-7cd1 2 hours ago
+origin/cursor/validate-and-fix-app-oint-ci-cd-pipeline-3d55 2 hours ago
+origin/cursor/validate-and-fix-app-oint-ci-cd-pipeline-97c4 3 hours ago
+origin/cursor/validate-and-fix-app-oint-ci-cd-pipeline-8c46 5 hours ago
+origin/cursor/deep-scan-and-repair-ci-cd-pipeline-e0bf 5 hours ago
+origin/cursor/fix-and-optimize-appoint-ci-cd-pipeline-3538 6 hours ago
+origin/cursor/fix-ci-cd-pipeline-localization-and-dependency-issues-c689 6 hours ago
+origin/cursor/bc-6d0224f5-204f-4189-86b3-5d20e99def87-19ca 7 hours ago
+origin/cursor/show-my-website-fcc8 8 hours ago
+origin/cursor/audit-app-oint-for-production-readiness-59bf 9 hours ago
+origin/cursor/fix-firebase-hosting-deployment-directory-1c4b 10 hours ago
+origin/cursor/investigate-prompt-merge-failure-5a71 11 hours ago
+origin/cursor/fix-and-deploy-flutter-web-app-to-firebase-6520 11 hours ago
+origin/cursor/fix-flutter-web-deployment-and-add-ci-24eb 11 hours ago
+origin/cursor/create-admin-broadcast-message-model-and-ui-7cad 12 hours ago
+origin/cursor/analyze-ci-pipeline-check-statuses-7eee 12 hours ago
+
+✅ Essential branches to keep:
+  - main
+  - develop
+  - feature/ci-cd-enhancements
+  - emergency/firebase-hosting-fix
+  - safe-backup-20250715
+
+🗑️ Branches safe for deletion (stale codex/cursor):
+origin/cursor/fix-and-unify-ci-cd-workflows-for-gabriellagziel-appoint-ed63
+origin/cursor/harden-ci-pipeline-with-safe-merge-requirements-b0a8
+origin/cursor/ci-enhancement-static-analysis-coverage-artifacts
+origin/cursor/update-ci-for-analysis-coverage-and-artifacts-5271
+origin/cursor/update-ci-for-analysis-coverage-and-artifacts-7cd1
+origin/cursor/validate-and-fix-app-oint-ci-cd-pipeline-3d55
+origin/cursor/validate-and-fix-app-oint-ci-cd-pipeline-97c4
+origin/cursor/validate-and-fix-app-oint-ci-cd-pipeline-8c46
+origin/cursor/deep-scan-and-repair-ci-cd-pipeline-e0bf
+origin/cursor/fix-and-optimize-appoint-ci-cd-pipeline-3538
+origin/cursor/fix-ci-cd-pipeline-localization-and-dependency-issues-c689
+origin/cursor/bc-6d0224f5-204f-4189-86b3-5d20e99def87-19ca
+origin/cursor/show-my-website-fcc8
+origin/cursor/audit-app-oint-for-production-readiness-59bf
+origin/cursor/fix-firebase-hosting-deployment-directory-1c4b
+origin/cursor/investigate-prompt-merge-failure-5a71
+origin/cursor/fix-and-deploy-flutter-web-app-to-firebase-6520
+origin/cursor/fix-flutter-web-deployment-and-add-ci-24eb
+origin/cursor/create-admin-broadcast-message-model-and-ui-7cad
+origin/cursor/analyze-ci-pipeline-check-statuses-7eee
+origin/cursor/implement-stripe-redirect-and-firestore-usage-logging-e696
+origin/cursor/create-analytics-service-for-user-events-6978
+origin/cursor/build-settings-screen-for-personal-app-900b
+origin/cursor/optimize-firebase-functions-and-integrate-playtime-feature-2cea
+origin/cursor/fix-ci-jobs-for-analyzer-tests-l10n-and-firebase-cdf6
+origin/cursor/implement-business-mode-usage-monitoring-and-blocking-6f0b
+origin/cursor/fix-firebase-web-deploy-with-flutter-build-a801
+origin/cursor/automate-firebase-hosting-deployment-on-main-push-8722
+origin/cursor/find-missing-translations-40f2
+origin/cursor/translate-app-to-56-languages-6b6b
+origin/cursor/build-flutter-web-application-0d41
+origin/cursor/finalize-app-oint-com-production-deployment-b0d4
+origin/cursor/check-project-readiness-for-development-4971
+origin/cursor/check-digital-ocean-status-a83a
+origin/cursor/automate-firebase-hosting-deployment-87d0
+origin/cursor/analyze-github-changes-for-project-summary-f8ec
+origin/cursor/analyze-github-changes-for-project-summary-b132
+origin/cursor/fetch-app-oint-com-data-c25e
+origin/cursor/explain-the-concept-5b54
+origin/cursor/check-meeting-page-and-google-maps-integration-447c
+origin/cursor/achieve-100-project-functionality-8889
+origin/cursor/check-app-readiness-for-ios-and-android-901b
+origin/cursor/create-rules-for-agent-interactions-ffa0
+origin/cursor/identify-and-resolve-project-issues-76be
+origin/cursor/complete-project-audit-efae
+origin/codex/create-github-actions-ci-workflow-for-dart-and-flutter
+origin/codex/update-flutter-sdk-and-verify-dart-version
+origin/codex/create-terraform-modules-for-retention-and-alerting
+origin/codex/generate-terraform-configuration-for-appoint-system-monitori
+origin/v0pwgg-codex/resolve-merge-conflicts-in-ci.yml

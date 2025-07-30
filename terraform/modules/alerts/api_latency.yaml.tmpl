@@ -1,0 +1,25 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: api-latency-slo
+  namespace: ${namespace}
+spec:
+  groups:
+  - name: api-latency
+    rules:
+    - alert: ApiLatencyP95
+      expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket{job="appoint-api"}[5m])) by (le)) * 1000 > ${api_p95_latency_ms}
+      for: 5m
+      labels:
+        severity: warning
+      annotations:
+        summary: "API p95 latency above ${api_p95_latency_ms}ms"
+        description: "p95 API latency > ${api_p95_latency_ms}ms over 5 minutes."
+    - alert: ApiLatencyP99
+      expr: histogram_quantile(0.99, sum(rate(http_request_duration_seconds_bucket{job="appoint-api"}[5m])) by (le)) * 1000 > ${api_p99_latency_ms}
+      for: 5m
+      labels:
+        severity: critical
+      annotations:
+        summary: "API p99 latency above ${api_p99_latency_ms}ms"
+        description: "p99 API latency > ${api_p99_latency_ms}ms over 5 minutes."

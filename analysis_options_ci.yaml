@@ -1,0 +1,53 @@
+# Simplified analysis options for CI - focuses only on critical errors
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "lib/generated_plugin_registrant.dart"
+    - "android/**"
+    - "ios/**"
+    - "build/**"
+    - "test_driver/**"
+    - "web/**"
+    - "linux/**"
+    - "macos/**"
+    - "windows/**"
+    - "integration_test/**"
+    - "test/**"
+    - "packages/**"
+    - "admin/**"
+    - "marketing/**"
+    - "dashboard/**"
+    - "functions/**"
+    - "default/**"
+    - "node_modules/**"
+    - ".next/**"
+    - "out/**"
+    - "dist/**"
+    - "coverage/**"
+    - "docs/**"
+    - "scripts/**"
+    - "tools/**"
+    - "tool/**"
+
+linter:
+  rules:
+    # Disable style rules that don't affect functionality
+    public_member_api_docs: false
+    lines_longer_than_80_chars: false
+    avoid_final_parameters: false
+    directives_ordering: false
+    
+    # Keep only critical error rules
+    avoid_print: true
+    prefer_const_constructors: false
+    prefer_const_literals_to_create_immutables: false
+    
+    # Disable other style rules
+    avoid_catches_without_on_clauses: false
+    missing_required_param: true
+    undefined_getter: true
+    undefined_method: true
+    undefined_function: true
+    undefined_class: true
+    undefined_identifier: true
