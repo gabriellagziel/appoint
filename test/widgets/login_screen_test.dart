@@ -80,7 +80,7 @@ void main() {
 
       // Act
       await tester.pumpWidget(createTestWidget(const LoginScreen()));
-      passwordField = find.byType(TextField).last;
+      final passwordField = find.byType(TextField).last;
       await tester.enterText(passwordField, 'password123');
       await tester.pump();
 
