@@ -4,7 +4,7 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
-  "postCreateCommand": "scripts/devcontainer-init.sh && which flutter && flutter --version && which dart && dart --version",
+  "postCreateCommand": "flutter --version && dart --version && which flutter && which dart",
   "containerEnv": {
     "ALLOWED_HOSTS": "storage.googleapis.com dart.dev pub.dev firebase-public.firebaseio.com",
     "REDACTED_TOKEN": "storage.googleapis.com,dart.dev,pub.dev,firebase-public.firebaseio.com",
