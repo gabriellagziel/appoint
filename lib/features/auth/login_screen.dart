@@ -87,56 +87,58 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         body: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(24),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                // App logo and branding
-                const AppLogo(size: 100),
-                const SizedBox(height: 32),
-                Text(
-                  'Welcome Back',
-                  style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                        fontWeight: FontWeight.bold,
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  // App logo and branding
+                  const AppLogo(size: 100),
+                  const SizedBox(height: 32),
+                  Text(
+                    'Welcome Back',
+                    style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                    textAlign: TextAlign.center,
+                  ),
+                  Text(
+                    AppBranding.fullSlogan,
+                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                          color: Colors.grey[600],
+                        ),
+                    textAlign: TextAlign.center,
+                  ),
+                  const SizedBox(height: 48),
+
+                  // Login form
+                  _buildLoginForm(),
+
+                  const SizedBox(height: 24),
+
+                  // Sign up link
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text('Forgot your password? '),
+                      TextButton(
+                        onPressed: () => context.push('/forgot-password'),
+                        child: const Text('Reset'),
                       ),
-                  textAlign: TextAlign.center,
-                ),
-                Text(
-                  AppBranding.fullSlogan,
-                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                        color: Colors.grey[600],
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text("Don't have an account? "),
+                      TextButton(
+                        onPressed: () => context.push('/signup'),
+                        child: const Text('Sign Up'),
                       ),
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 48),
-
-                // Login form
-                _buildLoginForm(),
-
-                const SizedBox(height: 24),
-
-                // Sign up link
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Text('Forgot your password? '),
-                    TextButton(
-                      onPressed: () => context.push('/forgot-password'),
-                      child: const Text('Reset'),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 8),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Text("Don't have an account? "),
-                    TextButton(
-                      onPressed: () => context.push('/signup'),
-                      child: const Text('Sign Up'),
-                    ),
-                  ],
-                ),
-              ],
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ),
