@@ -1,0 +1,147 @@
+name: "Submodule CI (legacy)"
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      PUB_HOSTED_URL: https://pub.flutter-io.cn
+      FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.0'
+          cache: true
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: '3.4.0'
+      - name: Add Flutter & Dart to PATH
+        run: |
+          echo "${{ runner.temp }}/flutter/bin" >> "$GITHUB_PATH"
+          echo "${{ runner.temp }}/dart-sdk/bin" >> "$GITHUB_PATH"
+      - name: Pre-flight Dart version check
+        run: |
+          version=$(dart --version 2>&1 | awk '{print $4}')
+          required=3.4.0
+          if [ "$(printf '%s\n%s\n' "$required" "$version" | sort -V | head -n1)" != "$required" ]; then
+            echo "Dart SDK $version is below required $required" && exit 1
+          fi
+      - run: flutter pub get
+      - run: flutter analyze
+      - name: Run tests
+        run: |
+          tries=3
+          for i in $(seq 1 $tries); do
+            flutter test --coverage --no-pub && break
+            if [ $i -eq $tries ]; then
+              exit 1
+            fi
+            echo "Retrying tests ($i/$tries)..."
+            sleep 5
+          done
+      - name: Install lcov
+        run: sudo apt-get install lcov
+      
+      - name: Generate coverage report
+        run: genhtml coverage/lcov.info -o coverage/html
+      
+      - name: Check coverage threshold
+        run: |
+          COVERAGE=$(lcov --summary coverage/lcov.info | grep lines | awk '{print $2}' | sed 's/%//')
+          if (( $(echo "$COVERAGE < 80" | bc -l) )); then
+            echo "❌ Coverage ($COVERAGE%) below threshold (80%)"
+            exit 1
+          else
+            echo "✅ Coverage ($COVERAGE%) meets threshold (80%)"
+          fi
+      
+      - name: Upload coverage
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage
+          path: coverage/lcov.info
+      
+      - name: Upload APK for smoke testing
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+          retention-days: 1
+
+  smoke-test:
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.0'
+          channel: 'stable'
+      
+      - name: Download APK
+        uses: actions/download-artifact@v3
+        with:
+          name: app-apk
+          path: build/app/outputs/flutter-apk/
+      
+      - name: Setup Android emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          target: google_apis
+          arch: x86_64
+          profile: Nexus 6
+          script: |
+            adb shell input keyevent 82
+            adb shell input keyevent 82
+            adb shell input keyevent 82
+      
+      - name: Install APK
+        run: |
+          adb install -r build/app/outputs/flutter-apk/app-release.apk
+      
+      - name: Run smoke tests
+        run: |
+          # Wait for app to be ready
+          sleep 10
+          
+          # Launch app
+          adb shell am start -n com.example.appoint/.MainActivity
+          sleep 5
+          
+          # Basic smoke test - check if app launches without crash
+          adb shell dumpsys activity activities | grep -q "com.example.appoint" || exit 1
+          
+          # Test basic navigation (if app has login screen)
+          # adb shell input tap 500 800  # Example tap coordinates
+          # sleep 2
+          
+          echo "✅ Smoke test passed - app launched successfully"
+      
+      - name: Capture screenshots on failure
+        if: failure()
+        run: |
+          adb shell screencap /sdcard/screenshot.png
+          adb pull /sdcard/screenshot.png screenshot.png
+          echo "Screenshot captured on failure"
+        continue-on-error: true
+      
+      - name: Upload failure screenshot
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: failure-screenshot
+          path: screenshot.png
+        continue-on-error: true
