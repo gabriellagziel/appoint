@@ -77,7 +77,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get cancelInviteConfirmation => '[FI] Peru kutsun vahvistus';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return '[FI] Luotu';
   }
 
@@ -138,7 +138,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get participants => '[FI] [FI] Participants';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return '[FI] [FI] Recipients';
   }
 
@@ -178,7 +178,7 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return '[FI] Sisältö';
   }
 
@@ -233,7 +233,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get removeChild => '[FI] Poista lapsi';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return '[FI] Tila';
   }
 
@@ -284,7 +284,7 @@ class AppLocalizationsFi extends AppLocalizations {
       '[FI] [FI] Access revoked successfully';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return '[FI] Tyyppi';
   }
 
@@ -415,7 +415,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get inviteDetail => '[FI] Kutsun tiedot';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return '[FI] Ajoitettu';
   }
 
@@ -428,7 +428,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get scheduling => '[FI] Ajoitetaan';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '[FI] [FI] Error saving message';
   }
 
@@ -461,7 +461,7 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '[FI] [FI] Error sending message';
   }
 
@@ -517,12 +517,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get pollOptions => '[FI] [FI] Poll Options';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return '[FI] [FI] Clicked';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return '[FI] [FI] Link';
   }
 
@@ -2523,10 +2523,10 @@ class AppLocalizationsFi extends AppLocalizations {
   String get purchase_now_button => 'Purchase Now';
 
   @override
-  String get welcomeAmbassador => 'Welcome, Ambassador!';
+  String get welcomeAmbassador => 'Welcome Ambassador';
 
   @override
-  String get activeStatus => 'Active';
+  String get activeStatus => 'Active Status';
 
   @override
   String get totalReferrals => 'Total Referrals';
@@ -2544,7 +2544,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get progressToPremium => 'Progress to Premium';
 
   @override
-  String get remaining => 'remaining';
+  String get remaining => 'Remaining';
 
   @override
   String get monthlyGoal => 'Monthly Goal';
@@ -2556,8 +2556,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement =>
-      'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement => 'Monthly Referral Requirement';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2587,26 +2586,25 @@ class AppLocalizationsFi extends AppLocalizations {
   String get shareYourLink => 'Share Your Link';
 
   @override
-  String get shareViaMessage => 'Message';
+  String get shareViaMessage => 'Share via Message';
 
   @override
-  String get shareViaEmail => 'Email';
+  String get shareViaEmail => 'Share via Email';
 
   @override
-  String get shareMore => 'More Options';
+  String get shareMore => 'Share More';
 
   @override
-  String get becomeAmbassador => 'Become an Ambassador';
+  String get becomeAmbassador => 'Become Ambassador';
 
   @override
-  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
+  String get ambassadorEligible => 'Ambassador Eligible';
 
   @override
-  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
+  String get ambassadorWelcomeTitle => 'Ambassador Welcome Title';
 
   @override
-  String get ambassadorWelcomeMessage =>
-      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage => 'Ambassador Welcome Message';
 
   @override
   String get ambassadorPromotionTitle =>
@@ -2669,4 +2667,73 @@ class AppLocalizationsFi extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[FI] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Finnish)';
   }
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get pleaseEnterTitle => 'Please Enter Title';
+
+  @override
+  String get messageType => 'Message Type';
+
+  @override
+  String get pleaseEnterContent => 'Please Enter Content';
+
+  @override
+  String get imageSelected => 'Image Selected';
+
+  @override
+  String get videoSelected => 'Video Selected';
+
+  @override
+  String get externalLink => 'External Link';
+
+  @override
+  String get pleaseEnterLink => 'Please Enter Link';
+
+  @override
+  String get estimatedRecipients => 'Estimated Recipients';
+
+  @override
+  String get countries => 'Countries';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get subscriptionTiers => 'Subscription Tiers';
+
+  @override
+  String get userRoles => 'User Roles';
+
+  @override
+  String get errorEstimatingRecipients => 'Error Estimating Recipients';
+
+  @override
+  String get errorPickingImage => 'Error Picking Image';
+
+  @override
+  String get errorPickingVideo => 'Error Picking Video';
+
+  @override
+  String get userNotAuthenticated => 'User Not Authenticated';
+
+  @override
+  String get failedToUploadImage => 'Failed to Upload Image';
+
+  @override
+  String get failedToUploadVideo => 'Failed to Upload Video';
+
+  @override
+  String get image => 'Image';
+
+  @override
+  String get video => 'Video';
+
+  @override
+  String get continue1 => 'Continue';
+
+  @override
+  String get getStarted => 'Get Started';
 }

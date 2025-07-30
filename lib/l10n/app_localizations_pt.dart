@@ -78,7 +78,7 @@ class AppLocalizationsPt extends AppLocalizations {
       '[PT] [PT] Are you sure you want to cancel this invite?';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return '[PT] Criado';
   }
 
@@ -139,7 +139,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get participants => '[PT] Participantes';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return '[PT] [PT] Recipients';
   }
 
@@ -179,7 +179,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return '[PT] [PT] Content';
   }
 
@@ -234,7 +234,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get removeChild => '[PT] [PT] Remove Child';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return '[PT] [PT] Status';
   }
 
@@ -285,7 +285,7 @@ class AppLocalizationsPt extends AppLocalizations {
       '[PT] [PT] Access revoked successfully';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return '[PT] [PT] Type';
   }
 
@@ -417,7 +417,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get inviteDetail => '[PT] [PT] Invite Details';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return '[PT] [PT] Scheduled';
   }
 
@@ -430,7 +430,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get scheduling => '[PT] [PT] Scheduling';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '[PT] [PT] Error saving message';
   }
 
@@ -463,7 +463,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '[PT] [PT] Error sending message';
   }
 
@@ -519,12 +519,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get pollOptions => '[PT] [PT] Poll Options';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return '[PT] [PT] Clicked';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return '[PT] [PT] Link';
   }
 
@@ -2537,10 +2537,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get purchase_now_button => 'Comprar Agora';
 
   @override
-  String get welcomeAmbassador => 'Welcome, Ambassador!';
+  String get welcomeAmbassador => 'Welcome Ambassador';
 
   @override
-  String get activeStatus => 'Active';
+  String get activeStatus => 'Active Status';
 
   @override
   String get totalReferrals => 'Total Referrals';
@@ -2558,7 +2558,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get progressToPremium => 'Progress to Premium';
 
   @override
-  String get remaining => 'remaining';
+  String get remaining => 'Remaining';
 
   @override
   String get monthlyGoal => 'Monthly Goal';
@@ -2570,8 +2570,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement =>
-      'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement => 'Monthly Referral Requirement';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2601,26 +2600,25 @@ class AppLocalizationsPt extends AppLocalizations {
   String get shareYourLink => 'Share Your Link';
 
   @override
-  String get shareViaMessage => 'Message';
+  String get shareViaMessage => 'Share via Message';
 
   @override
-  String get shareViaEmail => 'Email';
+  String get shareViaEmail => 'Share via Email';
 
   @override
-  String get shareMore => 'More Options';
+  String get shareMore => 'Share More';
 
   @override
-  String get becomeAmbassador => 'Become an Ambassador';
+  String get becomeAmbassador => 'Become Ambassador';
 
   @override
-  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
+  String get ambassadorEligible => 'Ambassador Eligible';
 
   @override
-  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
+  String get ambassadorWelcomeTitle => 'Ambassador Welcome Title';
 
   @override
-  String get ambassadorWelcomeMessage =>
-      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage => 'Ambassador Welcome Message';
 
   @override
   String get ambassadorPromotionTitle =>
@@ -2683,6 +2681,75 @@ class AppLocalizationsPt extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[PT] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Portuguese)';
   }
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get pleaseEnterTitle => 'Please Enter Title';
+
+  @override
+  String get messageType => 'Message Type';
+
+  @override
+  String get pleaseEnterContent => 'Please Enter Content';
+
+  @override
+  String get imageSelected => 'Image Selected';
+
+  @override
+  String get videoSelected => 'Video Selected';
+
+  @override
+  String get externalLink => 'External Link';
+
+  @override
+  String get pleaseEnterLink => 'Please Enter Link';
+
+  @override
+  String get estimatedRecipients => 'Estimated Recipients';
+
+  @override
+  String get countries => 'Countries';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get subscriptionTiers => 'Subscription Tiers';
+
+  @override
+  String get userRoles => 'User Roles';
+
+  @override
+  String get errorEstimatingRecipients => 'Error Estimating Recipients';
+
+  @override
+  String get errorPickingImage => 'Error Picking Image';
+
+  @override
+  String get errorPickingVideo => 'Error Picking Video';
+
+  @override
+  String get userNotAuthenticated => 'User Not Authenticated';
+
+  @override
+  String get failedToUploadImage => 'Failed to Upload Image';
+
+  @override
+  String get failedToUploadVideo => 'Failed to Upload Video';
+
+  @override
+  String get image => 'Image';
+
+  @override
+  String get video => 'Video';
+
+  @override
+  String get continue1 => 'Continue';
+
+  @override
+  String get getStarted => 'Get Started';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -2759,7 +2826,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
       '[PT_BR] [PT_BR] Are you sure you want to cancel this invite?';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return '[PT_BR] Criado';
   }
 
@@ -2821,7 +2888,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get participants => '[PT_BR] Participantes';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return '[PT_BR] [PT_BR] Recipients';
   }
 
@@ -2861,7 +2928,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return '[PT_BR] [PT_BR] Content';
   }
 
@@ -2917,7 +2984,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get removeChild => '[PT_BR] Remover membro';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return '[PT_BR] [PT_BR] Status';
   }
 
@@ -2967,7 +3034,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get accessRevokedSuccessfully => '[PT_BR] Acesso revogado com sucesso';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return '[PT_BR] Tipo';
   }
 
@@ -3098,7 +3165,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get inviteDetail => '[PT_BR] [PT_BR] Invite Details';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return '[PT_BR] Agendado';
   }
 
@@ -3111,7 +3178,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get scheduling => '[PT_BR] [PT_BR] Scheduling';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '[PT_BR] Erro ao salvar mensagem';
   }
 
@@ -3144,7 +3211,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '[PT_BR] Erro ao enviar mensagem';
   }
 
@@ -3202,12 +3269,12 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get pollOptions => '[PT_BR] [PT_BR] Poll Options';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return '[PT_BR] [PT_BR] Clicked';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return '[PT_BR] [PT_BR] Link';
   }
 
@@ -5290,6 +5357,90 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get purchase_now_button => 'Purchase Now';
 
   @override
+  String get welcomeAmbassador => 'Welcome Ambassador';
+
+  @override
+  String get activeStatus => 'Active Status';
+
+  @override
+  String get totalReferrals => 'Total Referrals';
+
+  @override
+  String get thisMonth => 'This Month';
+
+  @override
+  String get activeRewards => 'Active Rewards';
+
+  @override
+  String get nextTierProgress => 'Next Tier Progress';
+
+  @override
+  String get progressToPremium => 'Progress to Premium';
+
+  @override
+  String get remaining => 'Remaining';
+
+  @override
+  String get monthlyGoal => 'Monthly Goal';
+
+  @override
+  String get onTrack => 'On Track';
+
+  @override
+  String get needsAttention => 'Needs Attention';
+
+  @override
+  String get monthlyReferralRequirement => 'Monthly Referral Requirement';
+
+  @override
+  String get viewRewards => 'View Rewards';
+
+  @override
+  String get referralStatistics => 'Referral Statistics';
+
+  @override
+  String get activeReferrals => 'Active Referrals';
+
+  @override
+  String get conversionRate => 'Conversion Rate';
+
+  @override
+  String get recentReferrals => 'Recent Referrals';
+
+  @override
+  String get tierBenefits => 'Tier Benefits';
+
+  @override
+  String get yourReferralQRCode => 'Your Referral QR Code';
+
+  @override
+  String get yourReferralLink => 'Your Referral Link';
+
+  @override
+  String get shareYourLink => 'Share Your Link';
+
+  @override
+  String get shareViaMessage => 'Share via Message';
+
+  @override
+  String get shareViaEmail => 'Share via Email';
+
+  @override
+  String get shareMore => 'Share More';
+
+  @override
+  String get becomeAmbassador => 'Become Ambassador';
+
+  @override
+  String get ambassadorEligible => 'Ambassador Eligible';
+
+  @override
+  String get ambassadorWelcomeTitle => 'Ambassador Welcome Title';
+
+  @override
+  String get ambassadorWelcomeMessage => 'Ambassador Welcome Message';
+
+  @override
   String get ambassadorPromotionTitle =>
       '[PT_BR] Congratulations! You\'re now an Ambassador! (Portuguese (Brazil))';
 
@@ -5353,4 +5504,73 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[PT_BR] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Portuguese (Brazil))';
   }
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get pleaseEnterTitle => 'Please Enter Title';
+
+  @override
+  String get messageType => 'Message Type';
+
+  @override
+  String get pleaseEnterContent => 'Please Enter Content';
+
+  @override
+  String get imageSelected => 'Image Selected';
+
+  @override
+  String get videoSelected => 'Video Selected';
+
+  @override
+  String get externalLink => 'External Link';
+
+  @override
+  String get pleaseEnterLink => 'Please Enter Link';
+
+  @override
+  String get estimatedRecipients => 'Estimated Recipients';
+
+  @override
+  String get countries => 'Countries';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get subscriptionTiers => 'Subscription Tiers';
+
+  @override
+  String get userRoles => 'User Roles';
+
+  @override
+  String get errorEstimatingRecipients => 'Error Estimating Recipients';
+
+  @override
+  String get errorPickingImage => 'Error Picking Image';
+
+  @override
+  String get errorPickingVideo => 'Error Picking Video';
+
+  @override
+  String get userNotAuthenticated => 'User Not Authenticated';
+
+  @override
+  String get failedToUploadImage => 'Failed to Upload Image';
+
+  @override
+  String get failedToUploadVideo => 'Failed to Upload Video';
+
+  @override
+  String get image => 'Image';
+
+  @override
+  String get video => 'Video';
+
+  @override
+  String get continue1 => 'Continue';
+
+  @override
+  String get getStarted => 'Get Started';
 }

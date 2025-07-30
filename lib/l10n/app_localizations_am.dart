@@ -77,7 +77,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get cancelInviteConfirmation => '[AM] የግብዣ እውቀት ሰርዝ';
 
   @override
-  String created(Object date) {
+  String created(String created, Object date) {
     return 'ተፈጠረ';
   }
 
@@ -137,7 +137,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get participants => 'ተሳታፊዎች';
 
   @override
-  String recipients(Object count) {
+  String recipients(String recipients, Object count) {
     return 'ተቀባዮች';
   }
 
@@ -177,7 +177,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String content(Object content) {
+  String content(String content) {
     return 'ይዘት';
   }
 
@@ -230,7 +230,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get removeChild => '[AM] ልጅ አስወግድ';
 
   @override
-  String status(Object status) {
+  String status(String status) {
     return 'ሁኔታ';
   }
 
@@ -280,7 +280,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get accessRevokedSuccessfully => '[AM] መዳረሻ በትክክል ተሰርዟል';
 
   @override
-  String type(Object type) {
+  String type(String type) {
     return 'ዓይነት';
   }
 
@@ -411,7 +411,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get inviteDetail => '[AM] ዝርዝር ግብዣ';
 
   @override
-  String scheduled(Object date) {
+  String scheduled(String scheduled, Object date) {
     return 'ተዘጋጅቷል';
   }
 
@@ -424,7 +424,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get scheduling => '[AM] በማዘጋጀት ላይ';
 
   @override
-  String errorSavingMessage(Object error) {
+  String errorSavingMessage(String error) {
     return '[AM] መልዕክት ማስቀመጥ ስህተት';
   }
 
@@ -457,7 +457,7 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(Object error) {
+  String errorSendingMessage(String error) {
     return '[AM] መልዕክት ማልክት ስህተት';
   }
 
@@ -512,12 +512,12 @@ class AppLocalizationsAm extends AppLocalizations {
   String get pollOptions => '[AM] የምርጫ አማራጮች';
 
   @override
-  String clicked(Object count) {
+  String clicked(String clicked, Object count) {
     return 'ተጫነ';
   }
 
   @override
-  String link(Object link) {
+  String link(String link) {
     return 'አገናኝ';
   }
 
@@ -2517,10 +2517,10 @@ class AppLocalizationsAm extends AppLocalizations {
   String get purchase_now_button => 'Purchase Now';
 
   @override
-  String get welcomeAmbassador => 'Welcome, Ambassador!';
+  String get welcomeAmbassador => 'Welcome Ambassador';
 
   @override
-  String get activeStatus => 'Active';
+  String get activeStatus => 'Active Status';
 
   @override
   String get totalReferrals => 'Total Referrals';
@@ -2538,7 +2538,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get progressToPremium => 'Progress to Premium';
 
   @override
-  String get remaining => 'remaining';
+  String get remaining => 'Remaining';
 
   @override
   String get monthlyGoal => 'Monthly Goal';
@@ -2550,8 +2550,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String get needsAttention => 'Needs Attention';
 
   @override
-  String get monthlyReferralRequirement =>
-      'Refer at least 10 new users monthly to maintain ambassador status';
+  String get monthlyReferralRequirement => 'Monthly Referral Requirement';
 
   @override
   String get viewRewards => 'View Rewards';
@@ -2581,26 +2580,25 @@ class AppLocalizationsAm extends AppLocalizations {
   String get shareYourLink => 'Share Your Link';
 
   @override
-  String get shareViaMessage => 'Message';
+  String get shareViaMessage => 'Share via Message';
 
   @override
-  String get shareViaEmail => 'Email';
+  String get shareViaEmail => 'Share via Email';
 
   @override
-  String get shareMore => 'More Options';
+  String get shareMore => 'Share More';
 
   @override
-  String get becomeAmbassador => 'Become an Ambassador';
+  String get becomeAmbassador => 'Become Ambassador';
 
   @override
-  String get ambassadorEligible => 'You\'re eligible to become an Ambassador!';
+  String get ambassadorEligible => 'Ambassador Eligible';
 
   @override
-  String get ambassadorWelcomeTitle => 'Welcome to the Ambassador Program!';
+  String get ambassadorWelcomeTitle => 'Ambassador Welcome Title';
 
   @override
-  String get ambassadorWelcomeMessage =>
-      'Congratulations! You\'ve been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.';
+  String get ambassadorWelcomeMessage => 'Ambassador Welcome Message';
 
   @override
   String get ambassadorPromotionTitle =>
@@ -2663,4 +2661,73 @@ class AppLocalizationsAm extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[AM] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Amharic)';
   }
+
+  @override
+  String get title => 'Title';
+
+  @override
+  String get pleaseEnterTitle => 'Please Enter Title';
+
+  @override
+  String get messageType => 'Message Type';
+
+  @override
+  String get pleaseEnterContent => 'Please Enter Content';
+
+  @override
+  String get imageSelected => 'Image Selected';
+
+  @override
+  String get videoSelected => 'Video Selected';
+
+  @override
+  String get externalLink => 'External Link';
+
+  @override
+  String get pleaseEnterLink => 'Please Enter Link';
+
+  @override
+  String get estimatedRecipients => 'Estimated Recipients';
+
+  @override
+  String get countries => 'Countries';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get subscriptionTiers => 'Subscription Tiers';
+
+  @override
+  String get userRoles => 'User Roles';
+
+  @override
+  String get errorEstimatingRecipients => 'Error Estimating Recipients';
+
+  @override
+  String get errorPickingImage => 'Error Picking Image';
+
+  @override
+  String get errorPickingVideo => 'Error Picking Video';
+
+  @override
+  String get userNotAuthenticated => 'User Not Authenticated';
+
+  @override
+  String get failedToUploadImage => 'Failed to Upload Image';
+
+  @override
+  String get failedToUploadVideo => 'Failed to Upload Video';
+
+  @override
+  String get image => 'Image';
+
+  @override
+  String get video => 'Video';
+
+  @override
+  String get continue1 => 'Continue';
+
+  @override
+  String get getStarted => 'Get Started';
 }
