@@ -8,7 +8,7 @@ final userProfileProvider = StateProvider<UserProfile>((ref) => UserProfile(
       email: 'john.doe@example.com',
       phone: '+1 (555) 123-4567',
       userType: UserType.family,
-      preferences: UserPreferences(
+      preferences: const UserPreferences(
         notifications: true,
         locationSharing: false,
         language: 'en',

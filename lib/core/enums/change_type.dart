@@ -7,4 +7,4 @@ enum ChangeType {
   performance,
   security,
   dependency,
-} 
+}

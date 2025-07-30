@@ -2,7 +2,6 @@ import 'package:appoint/models/notification_payload.dart';
 import 'package:appoint/services/notification_service.dart';
 import 'package:appoint/services/ui_notification_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter/foundation.dart';
 
 /// Provider for the notification service
 final notificationServiceProvider = Provider<NotificationService>(
