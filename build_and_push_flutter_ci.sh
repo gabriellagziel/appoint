@@ -61,7 +61,7 @@ validate_token() {
     log_info "🔐 Validating DigitalOcean token..."
     
     # Set token from setup script
-    export DIGITALOCEAN_ACCESS_TOKEN="dop_v1_6953fe4dfd40012ec096ec82b3bbd373804c21433ddb64903b87cfc1bdf3136e"
+    export DIGITALOCEAN_ACCESS_TOKEN="dop_v1_6deb32fff925f45e637d6a3b364f38fcd345d9b7b14d3ffa8bd463208ffa0cc4"
     
     # Test token with doctl
     if doctl auth init --access-token "$DIGITALOCEAN_ACCESS_TOKEN" 2>/dev/null; then
