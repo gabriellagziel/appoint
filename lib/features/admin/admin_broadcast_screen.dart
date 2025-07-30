@@ -147,6 +147,12 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
   Widget _buildMessagesList(List<AdminBroadcastMessage> messages) {
     final l10n = AppLocalizations.of(context);
+    
+    if (l10n == null) {
+      return const Center(
+        child: Text('Localization not available'),
+      );
+    }
 
     if (messages.isEmpty) {
       return Center(
@@ -265,7 +271,17 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     );
   }
 
-  void _showComposeDialog(BuildContext context, AppLocalizations l10n, ThemeData theme) {
+  void _showComposeDialog(BuildContext context, AppLocalizations? l10n, ThemeData theme) {
+    if (l10n == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Localization not available'),
+          backgroundColor: Colors.red,
+        ),
+      );
+      return;
+    }
+    
     // Check admin privileges before showing the dialog
     final isAdmin = ref.read(isAdminProvider);
     isAdmin.when(
@@ -320,7 +336,12 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     );
   }
 
-  Widget _buildComposeForm(AppLocalizations l10n, ThemeData theme) {
+  Widget _buildComposeForm(AppLocalizations? l10n, ThemeData theme) {
+    if (l10n == null) {
+      return const Center(
+        child: Text('Localization not available'),
+      );
+    }
 
     return Form(
       key: _formKey,
@@ -512,7 +533,10 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     );
   }
 
-  Widget _buildTargetingFilters(AppLocalizations l10n) {
+  Widget _buildTargetingFilters(AppLocalizations? l10n) {
+    if (l10n == null) {
+      return const SizedBox.shrink();
+    }
 
     return ExpansionTile(
       title: Text(l10n.targetingFilters),
@@ -592,7 +616,10 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     );
   }
 
-  Widget _buildSchedulingOptions(AppLocalizations l10n) {
+  Widget _buildSchedulingOptions(AppLocalizations? l10n) {
+    if (l10n == null) {
+      return const SizedBox.shrink();
+    }
 
     return ExpansionTile(
       title: Text(l10n.scheduling),
