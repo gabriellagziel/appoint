@@ -4,6 +4,7 @@ on:
   push:
     branches: [ main, recovery-backup-from-web-edits ]
   pull_request:
+  workflow_dispatch:
 
 jobs:
   build-and-test:
