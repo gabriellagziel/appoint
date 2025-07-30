@@ -150,7 +150,7 @@ class MockDocumentSnapshot extends Mock
     implements DocumentSnapshot<Map<String, dynamic>> {}
 
 class MockQuerySnapshot extends Mock
-    implements QuerySnapshot<Map<String, dynamic>> {}
+    implements QuerySnapshot<Object?> {}
 
 /// Legacy function for backward compatibility
 Future<void> initializeTestFirebase() async {
