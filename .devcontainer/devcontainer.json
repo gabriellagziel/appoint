@@ -18,10 +18,14 @@
           "storage.googleapis.com",
           "dart.dev",
           "pub.dev",
-          "firebase-public.firebaseio.com"
+          "firebase-public.firebaseio.com",
+          "raw.githubusercontent.com"
         ]
       }
     }
+  },
+  "containerEnv": {
+    "ALLOWED_DOMAINS": "raw.githubusercontent.com"
   },
   "features": {},
   "containerEnv": {
