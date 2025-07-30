@@ -1,28 +1,6 @@
 import 'dart:async';
 import 'dart:math';
 
-/// Flaky pattern types
-enum FlakyPatternType {
-  intermittent,
-  timing,
-  consecutive,
-  timeBased,
-  variable,
-}
-
-/// Flaky pattern data
-class FlakyPattern {
-  final FlakyPatternType type;
-  final double confidence;
-  final String description;
-
-  FlakyPattern({
-    required this.type,
-    required this.confidence,
-    required this.description,
-  });
-}
-
 /// Retry Healer for Flaky Tests
 ///
 /// Automatically retries flaky tests with intelligent strategies:
@@ -121,17 +99,15 @@ class RetryHealer {
     for (final entry in testFunctions.entries) {
       final testName = entry.key;
       final testFunction = entry.value;
-      final pattern = patterns[testName];
+      final pattern = patterns[testName]!;
       final strategy = strategies?[testName];
 
-      if (pattern != null) {
-        futures.add(healFlakyTest(
-          testName: testName,
-          testFunction: testFunction,
-          pattern: pattern,
-          strategy: strategy,
-        ));
-      }
+      futures.add(healFlakyTest(
+        testName: testName,
+        testFunction: testFunction,
+        pattern: pattern,
+        strategy: strategy,
+      ));
     }
 
     // Execute all healing attempts in parallel
@@ -147,9 +123,9 @@ class RetryHealer {
       case FlakyPatternType.timing:
         return RetryStrategy(
           maxRetries: 5,
-          initialDelay: const Duration(milliseconds: 200),
+          initialDelay: Duration(milliseconds: 200),
           backoffMultiplier: 1.5,
-          maxDelay: const Duration(seconds: 10),
+          maxDelay: Duration(seconds: 10),
           jitter: true,
           adaptive: true,
         );
@@ -157,9 +133,9 @@ class RetryHealer {
       case FlakyPatternType.intermittent:
         return RetryStrategy(
           maxRetries: 3,
-          initialDelay: const Duration(milliseconds: 100),
+          initialDelay: Duration(milliseconds: 100),
           backoffMultiplier: 2.0,
-          maxDelay: const Duration(seconds: 5),
+          maxDelay: Duration(seconds: 5),
           jitter: false,
           adaptive: false,
         );
@@ -167,9 +143,9 @@ class RetryHealer {
       case FlakyPatternType.consecutive:
         return RetryStrategy(
           maxRetries: 4,
-          initialDelay: const Duration(milliseconds: 500),
+          initialDelay: Duration(milliseconds: 500),
           backoffMultiplier: 2.5,
-          maxDelay: const Duration(seconds: 15),
+          maxDelay: Duration(seconds: 15),
           jitter: true,
           adaptive: true,
         );
@@ -177,9 +153,9 @@ class RetryHealer {
       case FlakyPatternType.timeBased:
         return RetryStrategy(
           maxRetries: 6,
-          initialDelay: const Duration(seconds: 1),
+          initialDelay: Duration(seconds: 1),
           backoffMultiplier: 2.0,
-          maxDelay: _defaultMaxDelay,
+          maxDelay: Duration(seconds: 30),
           jitter: true,
           adaptive: true,
         );
@@ -187,9 +163,9 @@ class RetryHealer {
       case FlakyPatternType.variable:
         return RetryStrategy(
           maxRetries: 4,
-          initialDelay: const Duration(milliseconds: 300),
+          initialDelay: Duration(milliseconds: 300),
           backoffMultiplier: 1.8,
-          maxDelay: const Duration(seconds: 8),
+          maxDelay: Duration(seconds: 8),
           jitter: true,
           adaptive: true,
         );
@@ -200,7 +176,7 @@ class RetryHealer {
   static Duration _calculateDelay(int attempt, RetryStrategy strategy) {
     // Base delay with exponential backoff
     double delayMs = strategy.initialDelay.inMilliseconds *
-        pow(strategy.backoffMultiplier, attempt - 1).toDouble();
+        pow(strategy.backoffMultiplier, attempt - 1);
 
     // Apply maximum delay limit
     delayMs = delayMs.clamp(0.0, strategy.maxDelay.inMilliseconds.toDouble());
@@ -302,20 +278,20 @@ class RetryHealer {
     // Adjust based on retry success rate
     if (retrySuccessRate > 0.8) {
       maxRetries = 5;
-      initialDelay = const Duration(milliseconds: 50);
+      initialDelay = Duration(milliseconds: 50);
     } else if (retrySuccessRate < 0.3) {
       maxRetries = 2;
-      initialDelay = const Duration(milliseconds: 200);
+      initialDelay = Duration(milliseconds: 200);
     }
 
     // Adjust based on average retries to success
     if (avgRetriesToSuccess > 2) {
-      maxRetries = max(maxRetries, (avgRetriesToSuccess + 1).toInt());
+      maxRetries = max(maxRetries, avgRetriesToSuccess + 1);
     }
 
     // Adjust based on failure pattern
     if (failurePattern == FailurePatternType.timing) {
-      initialDelay = const Duration(milliseconds: 300);
+      initialDelay = Duration(milliseconds: 300);
       backoffMultiplier = 2.5;
     } else if (failurePattern == FailurePatternType.intermittent) {
       backoffMultiplier = 1.5;
@@ -325,7 +301,7 @@ class RetryHealer {
       maxRetries: maxRetries,
       initialDelay: initialDelay,
       backoffMultiplier: backoffMultiplier,
-      maxDelay: _defaultMaxDelay,
+      maxDelay: Duration(seconds: 30),
       jitter: true,
       adaptive: true,
     );
@@ -403,7 +379,7 @@ class RetryHealer {
         values.map((value) => (value - mean) * (value - mean));
     final sum = squaredDifferences.reduce((a, b) => a + b);
 
-    return sum.toDouble() / values.length;
+    return sum / values.length;
   }
 
   /// Calculates maximum consecutive failures

@@ -329,6 +329,7 @@ class StatisticalDetector {
     if (results.isEmpty) return 0.0;
 
     final passCount = results.where((r) => r).length;
+    final failCount = results.length - passCount;
 
     // Variance for binary outcomes
     final p = passCount / results.length;
@@ -433,7 +434,7 @@ class StatisticalDetector {
     // Group by time of day
     final timeGroups = <int, List<TestExecution>>{};
     for (final execution in executions) {
-      final hour = execution.timestamp.hour;
+      final hour = execution.executionTime.hour;
       timeGroups.putIfAbsent(hour, () => []).add(execution);
     }
 
@@ -461,7 +462,7 @@ class StatisticalDetector {
     // Check for day-of-week patterns
     final dayGroups = <int, List<TestExecution>>{};
     for (final execution in executions) {
-      final day = execution.timestamp.weekday;
+      final day = execution.executionTime.weekday;
       dayGroups.putIfAbsent(day, () => []).add(execution);
     }
 
@@ -502,13 +503,13 @@ class StatisticalDetector {
 class TestExecution {
   final bool passed;
   final Duration executionTime;
-  final DateTime timestamp;
+  final DateTime executionTime;
   final Map<String, dynamic> metadata;
 
   TestExecution({
     required this.passed,
     required this.executionTime,
-    required this.timestamp,
+    required this.executionTime,
     this.metadata = const {},
   });
 }

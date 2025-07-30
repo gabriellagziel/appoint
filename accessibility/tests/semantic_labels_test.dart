@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:integration_test/integration_test.dart';
 
 /// Accessibility tests for semantic labels
 ///
@@ -248,8 +249,8 @@ class SemanticLabelsTest {
 
     // Find all image widgets
     final images = find.byType(Image);
-    // Note: Image.network and Image.asset are constructors, not types
-    // We'll test all Image widgets together
+    final networkImages = find.byType(Image.network);
+    final assetImages = find.byType(Image.asset);
 
     // Test Image widgets
     for (int i = 0; i < tester.widgetList(images).length; i++) {
@@ -268,12 +269,46 @@ class SemanticLabelsTest {
       }
     }
 
-    // Note: All Image widgets are tested together since Image.network and Image.asset are constructors, not types
+    // Test NetworkImage widgets
+    for (int i = 0; i < tester.widgetList(networkImages).length; i++) {
+      final image = tester.widget<Image>(networkImages.at(i));
+      final hasAltText = _hasImageAltText(image);
+
+      if (!hasAltText) {
+        issues.add(AccessibilityIssue(
+          type: AccessibilityIssueType.missingAltText,
+          severity: AccessibilityIssueSeverity.high,
+          description: 'NetworkImage at index $i is missing alternative text',
+          recommendation:
+              'Add semanticLabel or excludeSemantics for decorative images',
+          element: 'NetworkImage[$i]',
+        ));
+      }
+    }
+
+    // Test AssetImage widgets
+    for (int i = 0; i < tester.widgetList(assetImages).length; i++) {
+      final image = tester.widget<Image>(assetImages.at(i));
+      final hasAltText = _hasImageAltText(image);
+
+      if (!hasAltText) {
+        issues.add(AccessibilityIssue(
+          type: AccessibilityIssueType.missingAltText,
+          severity: AccessibilityIssueSeverity.high,
+          description: 'AssetImage at index $i is missing alternative text',
+          recommendation:
+              'Add semanticLabel or excludeSemantics for decorative images',
+          element: 'AssetImage[$i]',
+        ));
+      }
+    }
 
     return AccessibilityTestResult(
       testType: 'Image Alternative Text',
       issues: issues,
-      totalElements: tester.widgetList(images).length,
+      totalElements: tester.widgetList(images).length +
+          tester.widgetList(networkImages).length +
+          tester.widgetList(assetImages).length,
     );
   }
 
@@ -408,8 +443,6 @@ class SemanticLabelsTest {
 
   /// Helper method to check if a ListTile has a label
   static bool _hasListTileLabel(ListTile tile) {
-    // Note: In newer Flutter versions, title and subtitle might be non-nullable
-    // This check ensures compatibility across versions
     return tile.title != null || tile.subtitle != null;
   }
 
