@@ -67,7 +67,7 @@ dependencies:
   permission_handler: ^11.1.0
   path: ^1.8.3
   qr_flutter: ^4.1.0
-  firebase_dynamic_links: ^5.4.6
+  firebase_dynamic_links: ^6.1.9
   csv: ^5.1.1
   path_provider: ^2.1.2
 
