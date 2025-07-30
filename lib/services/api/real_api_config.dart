@@ -184,10 +184,8 @@ class ApiConfig {
     // Notifications
     'notifications': '/notifications',
     'notification': '/notifications/{id}',
-    'markRead': '/notifications/{id}/read',
     'markAllRead': '/notifications/read-all',
     'deleteNotification': '/notifications/{id}',
-    'notificationSettings': '/notifications/settings',
     'notificationPreferences': '/notifications/preferences',
 
     // Calendar
@@ -206,14 +204,12 @@ class ApiConfig {
     'appSettings': '/settings/app',
     'privacySettings': '/settings/privacy',
     'securitySettings': '/settings/security',
-    'notificationSettings': '/settings/notifications',
     'languageSettings': '/settings/language',
     'themeSettings': '/settings/theme',
 
     // Analytics
     'analytics': '/analytics',
     'userAnalytics': '/analytics/user',
-    'businessAnalytics': '/analytics/business',
     'bookingAnalytics': '/analytics/bookings',
     'revenueAnalytics': '/analytics/revenue',
     'userBehavior': '/analytics/behavior',
@@ -232,14 +228,14 @@ class ApiConfig {
 
   // Get endpoint URL
   static String getEndpoint(String key, {Map<String, String>? params}) {
-    String endpoint = endpoints[key] ?? '/$key';
-    
+    var endpoint = endpoints[key] ?? '/$key';
+
     if (params != null) {
       params.forEach((key, value) {
         endpoint = endpoint.replaceAll('{$key}', value);
       });
     }
-    
+
     return endpoint;
   }
 
@@ -288,7 +284,6 @@ class ApiConfig {
   };
 
   // Check if feature is enabled
-  static bool isFeatureEnabled(String feature) {
-    return featureFlags[feature] ?? false;
-  }
-} 
+  static bool isFeatureEnabled(String feature) =>
+      featureFlags[feature] ?? false;
+}

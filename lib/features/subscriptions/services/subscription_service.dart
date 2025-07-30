@@ -1,7 +1,6 @@
 import 'package:appoint/features/subscriptions/models/subscription.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:stripe_platform_interface/stripe_platform_interface.dart' as stripe;
 
 class SubscriptionService {
   SubscriptionService({
@@ -16,10 +15,10 @@ class SubscriptionService {
   /// Get available subscription plans
   Future<List<SubscriptionPlan>> getAvailablePlans() async {
     final snapshot = await _firestore.collection('subscription_plans').get();
-    
-    return snapshot.docs.map((doc) {
-      return SubscriptionPlan.fromJson({...doc.data(), 'id': doc.id});
-    }).toList();
+
+    return snapshot.docs
+        .map((doc) => SubscriptionPlan.fromJson({...doc.data(), 'id': doc.id}))
+        .toList();
   }
 
   /// Subscribe to a plan
@@ -28,7 +27,8 @@ class SubscriptionService {
     if (user == null) throw Exception('Not authenticated');
 
     // Get plan details
-    final planDoc = await _firestore.collection('subscription_plans').doc(planId).get();
+    final planDoc =
+        await _firestore.collection('subscription_plans').doc(planId).get();
     if (!planDoc.exists) throw Exception('Plan not found');
 
     final plan = SubscriptionPlan.fromJson({...planDoc.data()!, 'id': planId});
@@ -86,10 +86,7 @@ class SubscriptionService {
     }
 
     // Update in Firestore
-    await _firestore
-        .collection('subscriptions')
-        .doc(subscription.id)
-        .update({
+    await _firestore.collection('subscriptions').doc(subscription.id).update({
       'status': 'canceled',
       'canceledAt': FieldValue.serverTimestamp(),
       'cancelAtPeriodEnd': true,
@@ -137,10 +134,11 @@ class SubscriptionService {
 
     final userData = userDoc.data()!;
     final planId = userData['subscriptionPlanId'] as String?;
-    
+
     if (planId == null) return null;
 
-    final planDoc = await _firestore.collection('subscription_plans').doc(planId).get();
+    final planDoc =
+        await _firestore.collection('subscription_plans').doc(planId).get();
     if (!planDoc.exists) return null;
 
     final plan = SubscriptionPlan.fromJson({...planDoc.data()!, 'id': planId});
@@ -213,9 +211,9 @@ class SubscriptionService {
         .collection('payment_methods')
         .get();
 
-    return snapshot.docs.map((doc) {
-      return PaymentMethod.fromJson({...doc.data(), 'id': doc.id});
-    }).toList();
+    return snapshot.docs
+        .map((doc) => PaymentMethod.fromJson({...doc.data(), 'id': doc.id}))
+        .toList();
   }
 
   /// Get billing history
@@ -227,15 +225,15 @@ class SubscriptionService {
         .limit(50)
         .get();
 
-    return snapshot.docs.map((doc) {
-      return Payment.fromJson({...doc.data(), 'id': doc.id});
-    }).toList();
+    return snapshot.docs
+        .map((doc) => Payment.fromJson({...doc.data(), 'id': doc.id}))
+        .toList();
   }
 
   /// Get usage stats
   Future<UsageStats> _getUsageStats(String userId) async {
     final now = DateTime.now();
-    final startOfMonth = DateTime(now.year, now.month, 1);
+    final startOfMonth = DateTime(now.year, now.month);
 
     // Get bookings this month
     final bookingsSnapshot = await _firestore
@@ -270,7 +268,8 @@ class SubscriptionService {
   }
 
   /// Create Stripe subscription
-  Future<StripeSubscription> _createStripeSubscription(SubscriptionPlan plan) async {
+  Future<StripeSubscription> _createStripeSubscription(
+      SubscriptionPlan plan) async {
     // This would integrate with Stripe SDK
     // For now, return a mock subscription
     return StripeSubscription(
@@ -292,7 +291,7 @@ class SubscriptionService {
   /// Calculate end date based on interval
   DateTime _calculateEndDate(SubscriptionInterval interval) {
     final now = DateTime.now();
-    
+
     switch (interval) {
       case SubscriptionInterval.weekly:
         return now.add(const Duration(days: 7));
@@ -319,4 +318,4 @@ class StripeSubscription {
   final String status;
   final DateTime currentPeriodStart;
   final DateTime currentPeriodEnd;
-} 
+}

@@ -5,7 +5,7 @@ import '../../firebase_test_helper.dart';
 
 void main() {
   setUpAll(() async {
-  await initializeTestFirebase();
+    await initializeTestFirebase();
   });
 
   group('Admin Broadcast System Tests', () {
@@ -52,8 +52,10 @@ void main() {
 
         expect(message.targetingFilters.countries, ['US', 'CA']);
         expect(message.targetingFilters.cities, ['New York', 'Toronto']);
-        expect(message.targetingFilters.subscriptionTiers,
-            ['premium', 'business'],);
+        expect(
+          message.targetingFilters.subscriptionTiers,
+          ['premium', 'business'],
+        );
         expect(message.targetingFilters.userRoles, ['client', 'business']);
       });
 

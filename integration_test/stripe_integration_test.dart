@@ -30,17 +30,19 @@ void main() {
       app.main();
       await tester.pumpAndSettle();
 
+      late StripeService stripeService;
       stripeService = StripeService();
 
       // Test checkout session creation
       // Note: In integration tests, we can't actually create real Stripe sessions
       // but we can test the service structure and error handling
       expect(
-          () => stripeService.createCheckoutSession(
-                studioId: 'test-studio-id',
-                priceId: 'price_test123',
-              ),
-          returnsNormally,);
+        () => stripeService.createCheckoutSession(
+          studioId: 'test-studio-id',
+          priceId: 'price_test123',
+        ),
+        returnsNormally,
+      );
     });
 
     testWidgets('Stripe Subscription Status Management', (tester) async {
@@ -48,6 +50,8 @@ void main() {
       await tester.pumpAndSettle();
 
       const testStudioId = 'test-studio-stripe';
+      late StripeService stripeService;
+      late String? status;
       stripeService = StripeService();
 
       // Test subscription status checking
@@ -72,6 +76,8 @@ void main() {
       await tester.pumpAndSettle();
 
       const testStudioId = 'test-studio-details';
+      late StripeService stripeService;
+      late Map<String, dynamic>? details;
       stripeService = StripeService();
 
       // Set up test subscription data
@@ -98,6 +104,8 @@ void main() {
       await tester.pumpAndSettle();
 
       const testStudioId = 'test-studio-active';
+      late StripeService stripeService;
+      late bool isActive;
       stripeService = StripeService();
 
       // Test inactive subscription
@@ -121,6 +129,7 @@ void main() {
       await tester.pumpAndSettle();
 
       const testStudioId = 'test-studio-cancel';
+      late StripeService stripeService;
       stripeService = StripeService();
 
       // Set up active subscription
@@ -133,14 +142,18 @@ void main() {
       // Test subscription cancellation
       // Note: In integration tests, we can't actually cancel real Stripe subscriptions
       // but we can test the service structure
-      expect(() => stripeService.cancelSubscription(testStudioId),
-          returnsNormally,);
+      expect(
+        () => stripeService.cancelSubscription(testStudioId),
+        returnsNormally,
+      );
     });
 
     testWidgets('Stripe Service Error Handling', (tester) async {
       app.main();
       await tester.pumpAndSettle();
 
+      late StripeService stripeService;
+      late String? status;
       stripeService = StripeService();
 
       // Test with invalid studio ID
@@ -149,11 +162,12 @@ void main() {
 
       // Test with null parameters
       expect(
-          () => stripeService.updateSubscriptionStatus(
-                studioId: 'test',
-                status: 'active',
-              ),
-          returnsNormally,);
+        () => stripeService.updateSubscriptionStatus(
+          studioId: 'test',
+          status: 'active',
+        ),
+        returnsNormally,
+      );
     });
 
     testWidgets('Stripe Webhook Simulation', (tester) async {

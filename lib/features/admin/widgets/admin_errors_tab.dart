@@ -40,7 +40,9 @@ class AdminErrorsTab extends ConsumerWidget {
               ),
               trailing: log.isResolved
                   ? const Chip(
-                      label: Text('Resolved'), backgroundColor: Colors.green,)
+                      label: Text('Resolved'),
+                      backgroundColor: Colors.green,
+                    )
                   : IconButton(
                       icon: const Icon(Icons.check_circle_outline),
                       onPressed: () =>
@@ -82,16 +84,21 @@ class AdminErrorsTab extends ConsumerWidget {
     }
   }
 
-  String _formatDate(DateTime date) => '${date.day}/${date.month}/${date.year} ${date.hour}:${date.minute}';
+  String _formatDate(DateTime date) =>
+      '${date.day}/${date.month}/${date.year} ${date.hour}:${date.minute}';
 
   void _showResolveErrorDialog(
-      BuildContext context, WidgetRef ref, AdminErrorLog? log,) {
+    BuildContext context,
+    WidgetRef ref,
+    AdminErrorLog? log,
+  ) {
     final controller = TextEditingController();
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
         title: Text(
-            log == null ? 'Resolve Error' : 'Resolve Error: ${log.errorType}'),
+          log == null ? 'Resolve Error' : 'Resolve Error: ${log.errorType}',
+        ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -156,8 +163,10 @@ class AdminErrorsTab extends ConsumerWidget {
                 Text('App Version: ${log.appVersion}'),
               ],
               const SizedBox(height: 8),
-              const Text('Stack Trace:',
-                  style: TextStyle(fontWeight: FontWeight.bold),),
+              const Text(
+                'Stack Trace:',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
               const SizedBox(height: 4),
               Container(
                 padding: const EdgeInsets.all(8),

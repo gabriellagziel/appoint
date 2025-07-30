@@ -3,11 +3,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 /// Represents a piece of content in the library.
 class ContentItem {
-
   ContentItem({
     required this.id,
     required this.title,
-    required this.createdAt, this.description,
+    required this.createdAt,
+    this.description,
     this.imageUrl,
   });
 
@@ -38,9 +38,9 @@ class ContentItem {
 
   /// Converts this item to a map for Firestore.
   Map<String, dynamic> toMap() => {
-      'title': title,
-      'description': description,
-      'imageUrl': imageUrl,
-      'createdAt': Timestamp.fromDate(createdAt),
-    };
+        'title': title,
+        'description': description,
+        'imageUrl': imageUrl,
+        'createdAt': Timestamp.fromDate(createdAt),
+      };
 }

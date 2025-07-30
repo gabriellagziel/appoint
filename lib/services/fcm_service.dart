@@ -7,7 +7,7 @@ import 'package:go_router/go_router.dart';
 class FCMService {
   factory FCMService() => _instance;
   FCMService._internal();
-  static FCMService _instance = FCMService._internal();
+  static final FCMService _instance = FCMService._internal();
 
   final FirebaseMessaging _messaging = FirebaseMessaging.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -20,9 +20,7 @@ class FCMService {
   Future<void> initialize() async {
     try {
       // Request permission
-      final settings = await _messaging.requestPermission(
-        
-      );
+      final settings = await _messaging.requestPermission();
 
       // Removed debug print: debugPrint('FCM Permission status: ${settings.authorizationStatus}');
 
@@ -44,8 +42,7 @@ class FCMService {
         FirebaseMessaging.onMessageOpenedApp.listen(_handleNotificationTap);
 
         // Handle notification tap when app is terminated
-        final initialMessage =
-            await _messaging.getInitialMessage();
+        final initialMessage = await _messaging.getInitialMessage();
         if (initialMessage != null) {
           _handleNotificationTap(initialMessage);
         }

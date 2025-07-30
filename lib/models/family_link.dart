@@ -1,5 +1,4 @@
 class FamilyLink {
-
   FamilyLink({
     required this.id,
     required this.parentId,
@@ -15,16 +14,16 @@ class FamilyLink {
         childId: json['childId'],
         status: json['status'],
         invitedAt: DateTime.parse(json['invitedAt']),
-        consentedAt: (json['consentedAt'] as List)
-            .map(DateTime.parse)
-            .toList(),
+        consentedAt: json['consentedAt'] != null
+            ? DateTime.parse(json['consentedAt'])
+            : null,
       );
   final String id;
   final String parentId;
   final String childId;
   final String status; // "pending" | "active" | "revoked"
   final DateTime invitedAt;
-  final List<DateTime> consentedAt;
+  final DateTime? consentedAt;
 
   Map<String, dynamic> toJson() => {
         'id': id,
@@ -32,7 +31,6 @@ class FamilyLink {
         'childId': childId,
         'status': status,
         'invitedAt': invitedAt.toIso8601String(),
-        'consentedAt':
-            consentedAt.map((d) => d.toIso8601String()).toList(),
+        'consentedAt': consentedAt?.toIso8601String(),
       };
 }

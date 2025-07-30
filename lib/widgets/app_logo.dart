@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
 import 'dart:math';
+
 import 'package:appoint/constants/app_branding.dart';
+import 'package:flutter/material.dart';
 
 /// APP-OINT Logo Widget
 /// Displays the official APP-OINT logo with customizable size and styling
@@ -32,57 +33,55 @@ class AppLogo extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             'APP-OINT',
-            style: textStyle ?? 
-              TextStyle(
-                fontSize: size * 0.3,
-                fontWeight: FontWeight.bold,
-                color: Theme.of(context).primaryColor,
-              ),
+            style: textStyle ??
+                TextStyle(
+                  fontSize: size * 0.3,
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).primaryColor,
+                ),
           ),
           const SizedBox(height: 4),
           Text(
             AppBranding.slogan,
             style: textStyle?.copyWith(fontSize: size * 0.15) ??
-              TextStyle(
-                fontSize: size * 0.15,
-                color: Colors.grey[600],
-              ),
+                TextStyle(
+                  fontSize: size * 0.15,
+                  color: Colors.grey[600],
+                ),
           ),
           Text(
             AppBranding.sloganSubtitle,
             style: textStyle?.copyWith(fontSize: size * 0.15) ??
-              TextStyle(
-                fontSize: size * 0.15,
-                color: Colors.grey[600],
-              ),
+                TextStyle(
+                  fontSize: size * 0.15,
+                  color: Colors.grey[600],
+                ),
           ),
         ],
       ],
     );
   }
 
-  Widget _buildLogoOnly() {
-    return Container(
-      width: size,
-      height: size,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: Colors.white,
-        border: Border.all(color: Colors.grey[300]!, width: 2),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.1),
-            blurRadius: 8,
-            offset: const Offset(0, 2),
-          ),
-        ],
-      ),
-      child: CustomPaint(
-        painter: AppLogoPainter(),
-        size: Size(size, size),
-      ),
-    );
-  }
+  Widget _buildLogoOnly() => Container(
+        width: size,
+        height: size,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: Colors.white,
+          border: Border.all(color: Colors.grey[300]!, width: 2),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withValues(alpha: 0.1),
+              blurRadius: 8,
+              offset: const Offset(0, 2),
+            ),
+          ],
+        ),
+        child: CustomPaint(
+          painter: AppLogoPainter(),
+          size: Size(size, size),
+        ),
+      );
 }
 
 /// Custom painter for the APP-OINT logo
@@ -117,7 +116,7 @@ class AppLogoPainter extends CustomPainter {
       const Color(0xFFFFD700), // Yellow
     ];
 
-    for (int i = 0; i < 8; i++) {
+    for (var i = 0; i < 8; i++) {
       final angle = i * (2 * pi / 8);
       final figureCenter = Offset(
         center.dx + (radius * cos(angle)),

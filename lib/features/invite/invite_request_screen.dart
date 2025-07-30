@@ -30,8 +30,7 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final appointmentId =
-        ModalRoute.of(context)!.settings.arguments! as String;
+    final appointmentId = ModalRoute.of(context)!.settings.arguments! as String;
     return Scaffold(
       appBar: AppBar(title: const Text('Invite Contact')),
       body: Form(
@@ -68,8 +67,7 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
               SwitchListTile(
                 title: const Text('Requires Install Fallback'),
                 value: _requiresInstallFallback,
-                onChanged: (v) =>
-                    setState(() => _requiresInstallFallback = v),
+                onChanged: (v) => setState(() => _requiresInstallFallback = v),
               ),
               const SizedBox(height: 16),
               ElevatedButton(
@@ -84,8 +82,10 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
                           : _emailController.text,
                     );
                     await ref.read(inviteServiceProvider).sendInvite(
-                        appointmentId, contact,
-                        requiresInstallFallback: _requiresInstallFallback,);
+                          appointmentId,
+                          contact,
+                          requiresInstallFallback: _requiresInstallFallback,
+                        );
                     if (!mounted) return;
                     // ignore: use_build_context_synchronously
                     Navigator.pop(context);

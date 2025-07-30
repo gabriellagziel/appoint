@@ -41,7 +41,8 @@ Future<void> updatePartDirectives() async {
     // Update part directives to use correct path
     content = content.replaceAllMapped(
       RegExp(
-          r"part '\.\./\.\./\.\./generated/models/([^.]+)\.(freezed|g)\.dart';",),
+        r"part '\.\./\.\./\.\./generated/models/([^.]+)\.(freezed|g)\.dart';",
+      ),
       (match) {
         modified = true;
         return "part '../../../generated/features/studio_business/models/${match.group(1)}.${match.group(2)}.dart';";
@@ -58,8 +59,10 @@ Future<void> updatePartDirectives() async {
 Future<void> updateGeneratedPartOfHeaders() async {
   print('Updating generated files part of headers...');
 
-  final result = await Process.run('find',
-      ['lib/generated/features/studio_business/models', '-name', '*.dart'],);
+  final result = await Process.run(
+    'find',
+    ['lib/generated/features/studio_business/models', '-name', '*.dart'],
+  );
   final files = result.stdout.toString().trim().split('\n');
 
   for (final filePath in files) {

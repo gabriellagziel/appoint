@@ -1,5 +1,4 @@
 class NotificationItem {
-
   NotificationItem({
     required this.title,
     required this.body,

@@ -6,9 +6,9 @@ class BusinessSetupScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) => Scaffold(
-      appBar: AppBar(title: const Text('Setup')),
-      body: const Center(
-        child: Text('Business Setup Screen - Coming Soon'),
-      ),
-    );
+        appBar: AppBar(title: const Text('Setup')),
+        body: const Center(
+          child: Text('Business Setup Screen - Coming Soon'),
+        ),
+      );
 }

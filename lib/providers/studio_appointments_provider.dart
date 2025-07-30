@@ -3,7 +3,8 @@ import 'package:appoint/services/studio_appointment_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final studioAppointmentServiceProvider = Provider<StudioAppointmentService>(
-    (ref) => StudioAppointmentService(),);
+  (ref) => StudioAppointmentService(),
+);
 
 class StudioAppointmentsNotifier
     extends StateNotifier<AsyncValue<List<StudioAppointment>>> {
@@ -16,9 +17,9 @@ class StudioAppointmentsNotifier
   Future<void> load() async {
     try {
       final data = await _service.fetchAppointments();
-      final state = AsyncValue.data(data);
-    } catch (e) {
-      final state = AsyncValue.error(e, st);
+      state = AsyncValue.data(data);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 

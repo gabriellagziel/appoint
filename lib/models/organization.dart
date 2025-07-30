@@ -4,7 +4,6 @@ part 'organization.g.dart';
 
 @JsonSerializable()
 class Organization {
-
   Organization({
     required this.id,
     required this.name,

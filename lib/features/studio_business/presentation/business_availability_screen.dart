@@ -83,8 +83,11 @@ class _BusinessAvailabilityScreenState
     }
   }
 
-  Future<void> _pickTime(final BuildContext context, final TimeOfDay initial,
-      void Function(TimeOfDay) onPicked,) async {
+  Future<void> _pickTime(
+    final BuildContext context,
+    final TimeOfDay initial,
+    void Function(TimeOfDay) onPicked,
+  ) async {
     final picked = await showTimePicker(context: context, initialTime: initial);
     if (picked != null) onPicked(picked);
   }
@@ -135,8 +138,7 @@ class _BusinessAvailabilityScreenState
           itemCount: 7,
           separatorBuilder: (_, final __) => const SizedBox(height: 8),
           itemBuilder: (context, final weekday) {
-            final avail =
-                availability.firstWhere((a) => a.weekday == weekday);
+            final avail = availability.firstWhere((a) => a.weekday == weekday);
             final timeRange = TimeRange(start: avail.start, end: avail.end);
             final hasError = avail.isOpen && !timeRange.isValid;
 
@@ -174,9 +176,10 @@ class _BusinessAvailabilityScreenState
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text('Start Time',
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.bold),),
+                                const Text(
+                                  'Start Time',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
                                 const SizedBox(height: 8),
                                 InkWell(
                                   onTap: () => _pickTime(
@@ -189,7 +192,9 @@ class _BusinessAvailabilityScreenState
                                   ),
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 12, vertical: 8,),
+                                      horizontal: 12,
+                                      vertical: 8,
+                                    ),
                                     decoration: BoxDecoration(
                                       border: Border.all(color: Colors.grey),
                                       borderRadius: BorderRadius.circular(4),
@@ -212,9 +217,10 @@ class _BusinessAvailabilityScreenState
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                const Text('End Time',
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.bold),),
+                                const Text(
+                                  'End Time',
+                                  style: TextStyle(fontWeight: FontWeight.bold),
+                                ),
                                 const SizedBox(height: 8),
                                 InkWell(
                                   onTap: () => _pickTime(
@@ -227,7 +233,9 @@ class _BusinessAvailabilityScreenState
                                   ),
                                   child: Container(
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 12, vertical: 8,),
+                                      horizontal: 12,
+                                      vertical: 8,
+                                    ),
                                     decoration: BoxDecoration(
                                       border: Border.all(color: Colors.grey),
                                       borderRadius: BorderRadius.circular(4),
@@ -258,14 +266,19 @@ class _BusinessAvailabilityScreenState
                           ),
                           child: Row(
                             children: [
-                              Icon(Icons.error_outline,
-                                  color: Colors.red.shade700, size: 16,),
+                              Icon(
+                                Icons.error_outline,
+                                color: Colors.red.shade700,
+                                size: 16,
+                              ),
                               const SizedBox(width: 8),
                               Expanded(
                                 child: Text(
                                   'End time must be after start time',
                                   style: TextStyle(
-                                      color: Colors.red.shade700, fontSize: 12,),
+                                    color: Colors.red.shade700,
+                                    fontSize: 12,
+                                  ),
                                 ),
                               ),
                             ],
@@ -293,45 +306,46 @@ class _BusinessAvailabilityScreenState
   }
 
   Widget _buildDrawer(BuildContext context) => Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          DrawerHeader(
-            decoration: BoxDecoration(
-              color: BusinessTheme.businessTheme.colorScheme.primary),
-            child: const Text(
-              'Studio Management',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: BusinessTheme.businessTheme.colorScheme.primary,
+              ),
+              child: const Text(
+                'Studio Management',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
               ),
             ),
-          ),
-          ListTile(
-            leading: const Icon(Icons.calendar_month),
-            title: const Text('Calendar'),
-            onTap: () {
-              Navigator.pop(context);
-              context.go('/studio/calendar');
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.access_time),
-            title: const Text('Availability'),
-            selected: true,
-            onTap: () {
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.dashboard),
-            title: const Text('Dashboard'),
-            onTap: () {
-              Navigator.pop(context);
-              context.go('/studio/dashboard');
-            },
-          ),
-        ],
-      ),
-    );
+            ListTile(
+              leading: const Icon(Icons.calendar_month),
+              title: const Text('Calendar'),
+              onTap: () {
+                Navigator.pop(context);
+                context.go('/studio/calendar');
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.access_time),
+              title: const Text('Availability'),
+              selected: true,
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.dashboard),
+              title: const Text('Dashboard'),
+              onTap: () {
+                Navigator.pop(context);
+                context.go('/studio/dashboard');
+              },
+            ),
+          ],
+        ),
+      );
 }

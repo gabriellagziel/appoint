@@ -22,7 +22,8 @@ class MockUser extends User {
 
 void main() {
   group('Unified BusinessDashboardScreen', () {
-    testWidgets('renders business dashboard for business user type', (WidgetTester tester) async {
+    testWidgets('renders business dashboard for business user type',
+        (WidgetTester tester) async {
       const mockBusinessUser = MockUser(
         id: 'business-user-1',
         name: 'Business User',
@@ -64,7 +65,8 @@ void main() {
       expect(find.text('Studio Sessions'), findsNothing);
     });
 
-    testWidgets('renders studio dashboard for studio user type', (WidgetTester tester) async {
+    testWidgets('renders studio dashboard for studio user type',
+        (WidgetTester tester) async {
       const mockStudioUser = MockUser(
         id: 'studio-user-1',
         name: 'Studio User',
@@ -126,7 +128,8 @@ void main() {
       expect(find.text('Welcome to Your Business Dashboard'), findsOneWidget);
     });
 
-    testWidgets('shows app logo only for studio users', (WidgetTester tester) async {
+    testWidgets('shows app logo only for studio users',
+        (WidgetTester tester) async {
       const mockStudioUser = MockUser(
         id: 'studio-user-1',
         name: 'Studio User',
@@ -150,7 +153,8 @@ void main() {
       expect(find.byType(AppLogo), findsOneWidget);
     });
 
-    testWidgets('does not show app logo for business users', (WidgetTester tester) async {
+    testWidgets('does not show app logo for business users',
+        (WidgetTester tester) async {
       const mockBusinessUser = MockUser(
         id: 'business-user-1',
         name: 'Business User',
@@ -174,7 +178,8 @@ void main() {
       expect(find.byType(AppLogo), findsNothing);
     });
 
-    testWidgets('studio bookings section shows empty state correctly', (WidgetTester tester) async {
+    testWidgets('studio bookings section shows empty state correctly',
+        (WidgetTester tester) async {
       const mockStudioUser = MockUser(
         id: 'studio-user-1',
         name: 'Studio User',
@@ -200,7 +205,8 @@ void main() {
     });
 
     group('Quick Actions Navigation', () {
-      testWidgets('studio user can access studio-specific routes', (WidgetTester tester) async {
+      testWidgets('studio user can access studio-specific routes',
+          (WidgetTester tester) async {
         const mockStudioUser = MockUser(
           id: 'studio-user-1',
           name: 'Studio User',
@@ -215,10 +221,14 @@ void main() {
             child: MaterialApp(
               home: const BusinessDashboardScreen(),
               routes: {
-                '/business/calendar': (context) => const Scaffold(body: Text('Calendar')),
-                '/business/availability': (context) => const Scaffold(body: Text('Availability')),
-                '/business/profile': (context) => const Scaffold(body: Text('Profile')),
-                '/studio/booking': (context) => const Scaffold(body: Text('Studio Booking')),
+                '/business/calendar': (context) =>
+                    const Scaffold(body: Text('Calendar')),
+                '/business/availability': (context) =>
+                    const Scaffold(body: Text('Availability')),
+                '/business/profile': (context) =>
+                    const Scaffold(body: Text('Profile')),
+                '/studio/booking': (context) =>
+                    const Scaffold(body: Text('Studio Booking')),
               },
             ),
           ),

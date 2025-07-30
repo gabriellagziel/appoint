@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:appoint/constants/app_branding.dart';
 import 'package:appoint/widgets/app_logo.dart';
+import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 /// Attribution widget that must appear on all business-branded screens
@@ -29,7 +28,7 @@ class AppAttribution extends StatelessWidget {
     final fontSize = _getFontSize();
 
     Widget content = InkWell(
-      onTap: () => _launchAppOintWebsite(),
+      onTap: _launchAppOintWebsite,
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -45,7 +44,7 @@ class AppAttribution extends StatelessWidget {
                 'Powered by',
                 style: TextStyle(
                   fontSize: fontSize * 0.8,
-                  color: effectiveTextColor?.withOpacity(0.7),
+                  color: effectiveTextColor?.withValues(alpha: 0.7),
                   fontWeight: FontWeight.w400,
                 ),
               ),
@@ -126,8 +125,8 @@ class AppAttribution extends StatelessWidget {
   }
 
   /// Launch App-Oint website when attribution is tapped
-  void _launchAppOintWebsite() async {
-    final Uri url = Uri.parse('https://app-oint.com');
+  Future<void> _launchAppOintWebsite() async {
+    final url = Uri.parse('https://app-oint.com');
     try {
       if (await canLaunchUrl(url)) {
         await launchUrl(url, mode: LaunchMode.externalApplication);
@@ -153,11 +152,11 @@ class AppAttributionCompact extends StatelessWidget {
     final effectiveTextColor = textColor ?? Colors.grey[600];
 
     return InkWell(
-      onTap: () => _launchAppOintWebsite(),
+      onTap: _launchAppOintWebsite,
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          AppLogo(size: 12, logoOnly: true),
+          const AppLogo(size: 12, logoOnly: true),
           const SizedBox(width: 4),
           RichText(
             text: TextSpan(
@@ -166,12 +165,12 @@ class AppAttributionCompact extends StatelessWidget {
                 color: effectiveTextColor,
                 fontWeight: FontWeight.w500,
               ),
-              children: [
-                const TextSpan(text: 'Powered by '),
+              children: const [
+                TextSpan(text: 'Powered by '),
                 TextSpan(
                   text: 'APP-OINT',
                   style: TextStyle(
-                    color: const Color(0xFF1576D4),
+                    color: Color(0xFF1576D4),
                     fontWeight: FontWeight.bold,
                     decoration: TextDecoration.underline,
                   ),
@@ -185,8 +184,8 @@ class AppAttributionCompact extends StatelessWidget {
   }
 
   /// Launch App-Oint website when attribution is tapped
-  void _launchAppOintWebsite() async {
-    final Uri url = Uri.parse('https://app-oint.com');
+  Future<void> _launchAppOintWebsite() async {
+    final url = Uri.parse('https://app-oint.com');
     try {
       if (await canLaunchUrl(url)) {
         await launchUrl(url, mode: LaunchMode.externalApplication);
@@ -226,14 +225,11 @@ class AppAttributionFooter extends StatelessWidget {
             ? Border(
                 top: BorderSide(
                   color: Colors.grey[300]!,
-                  width: 1,
                 ),
               )
             : null,
       ),
       child: AppAttribution(
-        size: AttributionSize.normal,
-        alignment: Alignment.center,
         textColor: effectiveTextColor,
       ),
     );

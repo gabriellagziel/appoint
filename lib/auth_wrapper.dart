@@ -1,11 +1,11 @@
 import 'package:appoint/features/auth/login_screen.dart';
+import 'package:appoint/features/auth/verify_email_screen.dart';
 import 'package:appoint/features/dashboard/dashboard_screen.dart';
 import 'package:appoint/features/onboarding/onboarding_screen.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/services/onboarding_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:appoint/features/auth/verify_email_screen.dart';
 
 class AuthWrapper extends ConsumerStatefulWidget {
   const AuthWrapper({super.key});
@@ -26,7 +26,8 @@ class _AuthWrapperState extends ConsumerState<AuthWrapper> {
 
   Future<void> _checkOnboardingStatus() async {
     try {
-      final shouldShow = await OnboardingService.instance.shouldShowOnboarding();
+      final shouldShow =
+          await OnboardingService.instance.shouldShowOnboarding();
       setState(() {
         _shouldShowOnboarding = shouldShow;
         _isLoading = false;

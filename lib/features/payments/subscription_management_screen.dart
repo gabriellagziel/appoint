@@ -12,7 +12,7 @@ class SubscriptionManagementScreen extends StatefulWidget {
 
 class _SubscriptionManagementScreenState
     extends State<SubscriptionManagementScreen> {
-  StripeService _stripeService = StripeService();
+  final StripeService _stripeService = StripeService();
   bool _isLoading = true;
   Map<String, dynamic>? _subscriptionDetails;
   String? _error;
@@ -29,7 +29,7 @@ class _SubscriptionManagementScreenState
       if (user == null) {
         setState(() {
           _error = 'User not authenticated';
-          var _isLoading = false;
+          const isLoading = false;
         });
         return;
       }
@@ -37,7 +37,7 @@ class _SubscriptionManagementScreenState
       final details = await _stripeService.getSubscriptionDetails(user.uid);
       setState(() {
         _subscriptionDetails = details;
-        var _isLoading = false;
+        const isLoading = false;
       });
     } catch (e) {
       setState(() {
@@ -57,8 +57,8 @@ class _SubscriptionManagementScreenState
         builder: (context) => AlertDialog(
           title: const Text('Cancel Subscription'),
           content: const Text(
-            'Are you sure you want to cancel your subscription? '
-            'You will continue to have access until the end of your current billing period.'),
+              'Are you sure you want to cancel your subscription? '
+              'You will continue to have access until the end of your current billing period.'),
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(false),
@@ -113,46 +113,46 @@ class _SubscriptionManagementScreenState
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(
-        title: const Text('Subscription Management'),
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.black,
-        elevation: 0,
-      ),
-      body: _isLoading
-          ? const Center(child: CircularProgressIndicator())
-          : _error != null
-              ? _buildErrorWidget()
-              : _buildSubscriptionWidget(),
-    );
+        appBar: AppBar(
+          title: const Text('Subscription Management'),
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.black,
+          elevation: 0,
+        ),
+        body: _isLoading
+            ? const Center(child: CircularProgressIndicator())
+            : _error != null
+                ? _buildErrorWidget()
+                : _buildSubscriptionWidget(),
+      );
 
   Widget _buildErrorWidget() => Center(
-      child: Padding(
-        padding: const EdgeInsets.all(24),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Icon(Icons.error_outline, size: 64, color: Colors.red),
-            const SizedBox(height: 16),
-            Text(
-              'Error',
-              style: Theme.of(context).textTheme.headlineSmall,
-            ),
-            const SizedBox(height: 8),
-            Text(
-              _error!,
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
-            const SizedBox(height: 24),
-            ElevatedButton(
-              onPressed: _loadSubscriptionDetails,
-              child: const Text('Try Again'),
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(Icons.error_outline, size: 64, color: Colors.red),
+              const SizedBox(height: 16),
+              Text(
+                'Error',
+                style: Theme.of(context).textTheme.headlineSmall,
+              ),
+              const SizedBox(height: 8),
+              Text(
+                _error!,
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
+              const SizedBox(height: 24),
+              ElevatedButton(
+                onPressed: _loadSubscriptionDetails,
+                child: const Text('Try Again'),
+              ),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 
   Widget _buildSubscriptionWidget() {
     final status = _subscriptionDetails?['status'] ?? 'inactive';
@@ -211,7 +211,8 @@ class _SubscriptionManagementScreenState
                     Text(
                       subscriptionId,
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            fontFamily: 'monospace'),
+                            fontFamily: 'monospace',
+                          ),
                     ),
                   ],
                 ),

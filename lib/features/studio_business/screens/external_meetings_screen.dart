@@ -45,8 +45,10 @@ class ExternalMeetingsScreen extends ConsumerWidget {
                   SizedBox(height: 16),
                   Text('No external meetings found.'),
                   SizedBox(height: 8),
-                  Text('Create meetings through your booking system.',
-                      style: TextStyle(color: Colors.grey, fontSize: 12)),
+                  Text(
+                    'Create meetings through your booking system.',
+                    style: TextStyle(color: Colors.grey, fontSize: 12),
+                  ),
                 ],
               ),
             );
@@ -58,7 +60,8 @@ class ExternalMeetingsScreen extends ConsumerWidget {
             itemBuilder: (context, final index) {
               final meeting = meetings[index].data()! as Map<String, dynamic>;
               final meetingId = meetings[index].id;
-              final hasLocation = meeting['latitude'] != null && meeting['longitude'] != null;
+              final hasLocation =
+                  meeting['latitude'] != null && meeting['longitude'] != null;
 
               return Card(
                 margin: const EdgeInsets.only(bottom: 16),
@@ -67,7 +70,8 @@ class ExternalMeetingsScreen extends ConsumerWidget {
                   children: [
                     ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: hasLocation ? Colors.green : Colors.blue,
+                        backgroundColor:
+                            hasLocation ? Colors.green : Colors.blue,
                         child: Icon(
                           hasLocation ? Icons.location_on : Icons.video_call,
                           color: Colors.white,
@@ -83,7 +87,8 @@ class ExternalMeetingsScreen extends ConsumerWidget {
                           const SizedBox(height: 4),
                           Row(
                             children: [
-                              const Icon(Icons.calendar_today, size: 16, color: Colors.grey),
+                              const Icon(Icons.calendar_today,
+                                  size: 16, color: Colors.grey),
                               const SizedBox(width: 4),
                               Text('${meeting['date']}'),
                             ],
@@ -91,7 +96,8 @@ class ExternalMeetingsScreen extends ConsumerWidget {
                           const SizedBox(height: 2),
                           Row(
                             children: [
-                              const Icon(Icons.access_time, size: 16, color: Colors.grey),
+                              const Icon(Icons.access_time,
+                                  size: 16, color: Colors.grey),
                               const SizedBox(width: 4),
                               Text('${meeting['time']}'),
                             ],
@@ -100,7 +106,8 @@ class ExternalMeetingsScreen extends ConsumerWidget {
                             const SizedBox(height: 2),
                             Row(
                               children: [
-                                const Icon(Icons.description, size: 16, color: Colors.grey),
+                                const Icon(Icons.description,
+                                    size: 16, color: Colors.grey),
                                 const SizedBox(width: 4),
                                 Expanded(child: Text(meeting['description'])),
                               ],
@@ -110,7 +117,8 @@ class ExternalMeetingsScreen extends ConsumerWidget {
                             const SizedBox(height: 2),
                             Row(
                               children: [
-                                const Icon(Icons.location_on, size: 16, color: Colors.grey),
+                                const Icon(Icons.location_on,
+                                    size: 16, color: Colors.grey),
                                 const SizedBox(width: 4),
                                 Expanded(child: Text(meeting['address'])),
                               ],
@@ -120,7 +128,8 @@ class ExternalMeetingsScreen extends ConsumerWidget {
                             const SizedBox(height: 2),
                             Row(
                               children: [
-                                const Icon(Icons.link, size: 16, color: Colors.grey),
+                                const Icon(Icons.link,
+                                    size: 16, color: Colors.grey),
                                 const SizedBox(width: 4),
                                 Expanded(
                                   child: Text(
@@ -173,7 +182,8 @@ class ExternalMeetingsScreen extends ConsumerWidget {
                               children: [
                                 Icon(Icons.delete, size: 16, color: Colors.red),
                                 SizedBox(width: 8),
-                                Text('Delete', style: TextStyle(color: Colors.red)),
+                                Text('Delete',
+                                    style: TextStyle(color: Colors.red)),
                               ],
                             ),
                           ),
@@ -182,16 +192,13 @@ class ExternalMeetingsScreen extends ConsumerWidget {
                           switch (value) {
                             case 'details':
                               _showMeetingDetails(context, meeting, meetingId);
-                              break;
                             case 'join':
                               _joinMeeting(meeting['link']);
-                              break;
                             case 'directions':
-                              _openDirections(meeting['latitude'], meeting['longitude']);
-                              break;
+                              _openDirections(
+                                  meeting['latitude'], meeting['longitude']);
                             case 'delete':
                               _deleteMeeting(context, meetingId);
-                              break;
                           }
                         },
                       ),
@@ -233,7 +240,8 @@ class ExternalMeetingsScreen extends ConsumerWidget {
                             zoomGesturesEnabled: false,
                             rotateGesturesEnabled: false,
                             tiltGesturesEnabled: false,
-                            onTap: (_) => _showMeetingDetails(context, meeting, meetingId),
+                            onTap: (_) => _showMeetingDetails(
+                                context, meeting, meetingId),
                           ),
                         ),
                       ),
@@ -247,7 +255,7 @@ class ExternalMeetingsScreen extends ConsumerWidget {
     );
   }
 
-  void _joinMeeting(String? link) async {
+  Future<void> _joinMeeting(String? link) async {
     if (link == null) return;
     final uri = Uri.parse(link);
     if (await canLaunchUrl(uri)) {
@@ -255,15 +263,17 @@ class ExternalMeetingsScreen extends ConsumerWidget {
     }
   }
 
-  void _openDirections(double? latitude, double? longitude) async {
+  Future<void> _openDirections(double? latitude, double? longitude) async {
     if (latitude == null || longitude == null) return;
-    final uri = Uri.parse('https://www.google.com/maps/dir/?api=1&destination=$latitude,$longitude');
+    final uri = Uri.parse(
+        'https://www.google.com/maps/dir/?api=1&destination=$latitude,$longitude');
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri, mode: LaunchMode.externalApplication);
     }
   }
 
-  void _showMeetingDetails(BuildContext context, Map<String, dynamic> meeting, String meetingId) {
+  void _showMeetingDetails(
+      BuildContext context, Map<String, dynamic> meeting, String meetingId) {
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
@@ -328,7 +338,7 @@ class ExternalMeetingsScreen extends ConsumerWidget {
             .collection('externalMeetings')
             .doc(meetingId)
             .delete();
-        
+
         if (context.mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
@@ -338,33 +348,33 @@ class ExternalMeetingsScreen extends ConsumerWidget {
           );
         }
       } catch (e) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text('Error deleting meeting: $e'),
-              backgroundColor: Colors.red,
-            ),
-          );
-        }
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Error deleting meeting: $e'),
+            backgroundColor: Colors.red,
+          ),
+        );
       }
     }
   }
+}
 
 class MeetingDetailsView extends StatelessWidget {
+  const MeetingDetailsView({
+    required this.meeting,
+    required this.meetingId,
+    required this.scrollController,
+    super.key,
+  });
   final Map<String, dynamic> meeting;
   final String meetingId;
   final ScrollController scrollController;
 
-  const MeetingDetailsView({
-    super.key,
-    required this.meeting,
-    required this.meetingId,
-    required this.scrollController,
-  });
-
   @override
   Widget build(BuildContext context) {
-    final hasLocation = meeting['latitude'] != null && meeting['longitude'] != null;
-    
+    final hasLocation =
+        meeting['latitude'] != null && meeting['longitude'] != null;
+
     return ListView(
       controller: scrollController,
       padding: const EdgeInsets.all(20),
@@ -374,19 +384,15 @@ class MeetingDetailsView extends StatelessWidget {
           style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 20),
-        
         _buildDetailRow(Icons.calendar_today, 'Date', meeting['date']),
         _buildDetailRow(Icons.access_time, 'Time', meeting['time']),
-        
         if (meeting['description'] != null)
-          _buildDetailRow(Icons.description, 'Description', meeting['description']),
-        
+          _buildDetailRow(
+              Icons.description, 'Description', meeting['description']),
         if (meeting['link'] != null)
           _buildLinkRow(Icons.link, 'Meeting Link', meeting['link']),
-        
         if (meeting['address'] != null)
           _buildDetailRow(Icons.location_on, 'Address', meeting['address']),
-        
         if (hasLocation) ...[
           const SizedBox(height: 20),
           const Text(
@@ -446,7 +452,7 @@ class MeetingDetailsView extends StatelessWidget {
 
   Widget _buildDetailRow(IconData icon, String label, String? value) {
     if (value == null) return const SizedBox.shrink();
-    
+
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Row(
@@ -480,7 +486,7 @@ class MeetingDetailsView extends StatelessWidget {
 
   Widget _buildLinkRow(IconData icon, String label, String? link) {
     if (link == null) return const SizedBox.shrink();
-    
+
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Row(
@@ -519,15 +525,16 @@ class MeetingDetailsView extends StatelessWidget {
     );
   }
 
-  void _openDirections(double? latitude, double? longitude) async {
+  Future<void> _openDirections(double? latitude, double? longitude) async {
     if (latitude == null || longitude == null) return;
-    final uri = Uri.parse('https://www.google.com/maps/dir/?api=1&destination=$latitude,$longitude');
+    final uri = Uri.parse(
+        'https://www.google.com/maps/dir/?api=1&destination=$latitude,$longitude');
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri, mode: LaunchMode.externalApplication);
     }
   }
 
-  void _launchUrl(String url) async {
+  Future<void> _launchUrl(String url) async {
     final uri = Uri.parse(url);
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri, mode: LaunchMode.externalApplication);

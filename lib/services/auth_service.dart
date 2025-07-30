@@ -7,7 +7,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class AuthService {
-
   /// Constructor that accepts injected dependencies for testing
   AuthService({FirebaseAuth? firebaseAuth})
       : _firebaseAuth = firebaseAuth ?? FirebaseAuth.instance;
@@ -20,20 +19,21 @@ class AuthService {
 
   Future<User?> currentUser() async => _firebaseAuth.currentUser;
 
-  Stream<AppUser?> authStateChanges() => _firebaseAuth.authStateChanges().asyncMap((user) async {
-      if (user == null) return null;
-      final token = await user.getIdTokenResult(true);
-      final claims = token.claims ?? <String, dynamic>{};
-      final role = claims['role'] as String? ?? 'personal';
-      return AppUser(
-        uid: user.uid,
-        email: user.email,
-        emailVerified: user.emailVerified,
-        role: role,
-        studioId: claims['studioId'] as String?,
-        businessProfileId: claims['businessProfileId'] as String?,
-      );
-    });
+  Stream<AppUser?> authStateChanges() =>
+      _firebaseAuth.authStateChanges().asyncMap((user) async {
+        if (user == null) return null;
+        final token = await user.getIdTokenResult(true);
+        final claims = token.claims ?? <String, dynamic>{};
+        final role = claims['role'] as String? ?? 'personal';
+        return AppUser(
+          uid: user.uid,
+          email: user.email,
+          emailVerified: user.emailVerified,
+          role: role,
+          studioId: claims['studioId'] as String?,
+          businessProfileId: claims['businessProfileId'] as String?,
+        );
+      });
 
   Future<void> signIn(String email, final String password) async {
     await signInWithEmailAndPassword(email: email, password: password);
@@ -79,7 +79,8 @@ class AuthService {
 
   /// Sign in with Google and handle social account conflicts
   Future<UserCredential?> signInWithGooglePopupWithConflictHandling(
-    BuildContext context) async {
+    BuildContext context,
+  ) async {
     try {
       return await signInWithGooglePopup();
     } on FirebaseAuthException catch (e) {
@@ -107,7 +108,8 @@ class AuthService {
 
   /// Handle account linking when user chooses to link accounts
   Future<UserCredential?> _handleAccountLinking(
-      FirebaseAuthException error) async {
+    FirebaseAuthException error,
+  ) async {
     try {
       final credential = getConflictingCredential(error);
       if (credential != null) {
@@ -184,8 +186,9 @@ class AuthService {
   }
 
   /// Check if the error is a social account link conflict
-  bool isSocialAccountConflict(FirebaseAuthException e) => e.code == 'account-exists-with-different-credential' ||
-        e.code == 'credential-already-in-use';
+  bool isSocialAccountConflict(FirebaseAuthException e) =>
+      e.code == 'account-exists-with-different-credential' ||
+      e.code == 'credential-already-in-use';
 
   /// Get the email associated with the conflicting account
   String? getConflictingEmail(FirebaseAuthException e) {
@@ -328,16 +331,16 @@ class AuthService {
 
   /// Validate email format using simple regex.
   bool isValidEmail(String email) {
-    const pattern = r"^[^@\s]+@[^@\s]+\.[^@\s]+";
+    const pattern = r'^[^@\s]+@[^@\s]+\.[^@\s]+';
     return RegExp(pattern).hasMatch(email);
   }
 
   /// Validate password strength (min 8 chars incl upper, lower, number).
   bool isValidPassword(String password) {
     if (password.length < 8) return false;
-    final hasUpper = password.contains(RegExp(r'[A-Z]'));
-    final hasLower = password.contains(RegExp(r'[a-z]'));
-    final hasNumber = password.contains(RegExp(r'[0-9]'));
+    final hasUpper = password.contains(RegExp('[A-Z]'));
+    final hasLower = password.contains(RegExp('[a-z]'));
+    final hasNumber = password.contains(RegExp('[0-9]'));
     final hasSpecial = password.contains(RegExp(r'[!@#\$&*~]'));
     return hasUpper && hasLower && hasNumber && hasSpecial;
   }

@@ -24,8 +24,7 @@ class SurveyResponsesScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (_) =>
-                        SurveyResponseDetailScreen(response: r),
+                    builder: (_) => SurveyResponseDetailScreen(response: r),
                   ),
                 );
               },
@@ -38,30 +37,31 @@ class SurveyResponsesScreen extends StatelessWidget {
 }
 
 class SurveyResponseDetailScreen extends StatelessWidget {
-
   const SurveyResponseDetailScreen({required this.response, super.key});
   final Map<String, dynamic> response;
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(
-        title: const Text('Response Detail'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('User: ${response['user']}'),
-            const SizedBox(height: 12),
-            ...response['answers'].entries.map<Widget>((e) => Padding(
-                  padding: const EdgeInsets.only(bottom: 8),
-                  child: Text('${e.key}: ${e.value}'),
-                ),),
-          ],
+        appBar: AppBar(
+          title: const Text('Response Detail'),
         ),
-      ),
-    );
+        body: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('User: ${response['user']}'),
+              const SizedBox(height: 12),
+              ...response['answers'].entries.map<Widget>(
+                    (e) => Padding(
+                      padding: const EdgeInsets.only(bottom: 8),
+                      child: Text('${e.key}: ${e.value}'),
+                    ),
+                  ),
+            ],
+          ),
+        ),
+      );
 }
 
 final List<Map<String, dynamic>> _dummyResponses = [

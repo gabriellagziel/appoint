@@ -18,7 +18,7 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
   @override
   void initState() {
     super.initState();
-    final _tabController = TabController(length: 3, vsync: this);
+    final tabController = TabController(length: 3, vsync: this);
   }
 
   @override
@@ -29,27 +29,27 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(
-        title: const Text('Business Calendar'),
-        centerTitle: true,
-        bottom: TabBar(
+        appBar: AppBar(
+          title: const Text('Business Calendar'),
+          centerTitle: true,
+          bottom: TabBar(
+            controller: _tabController,
+            tabs: const [
+              Tab(text: 'Day', icon: Icon(Icons.view_day)),
+              Tab(text: 'Week', icon: Icon(Icons.view_week)),
+              Tab(text: 'Month', icon: Icon(Icons.calendar_month)),
+            ],
+          ),
+        ),
+        body: TabBarView(
           controller: _tabController,
-          tabs: const [
-            Tab(text: 'Day', icon: Icon(Icons.view_day)),
-            Tab(text: 'Week', icon: Icon(Icons.view_week)),
-            Tab(text: 'Month', icon: Icon(Icons.calendar_month)),
+          children: [
+            _buildDayView(),
+            _buildWeekView(),
+            _buildMonthView(),
           ],
         ),
-      ),
-      body: TabBarView(
-        controller: _tabController,
-        children: [
-          _buildDayView(),
-          _buildWeekView(),
-          _buildMonthView(),
-        ],
-      ),
-    );
+      );
 
   Widget _buildDayView() {
     if (_events.isEmpty) {
@@ -103,7 +103,8 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
                                   .textTheme
                                   .titleMedium
                                   ?.copyWith(
-                                    fontWeight: FontWeight.bold),
+                                    fontWeight: FontWeight.bold,
+                                  ),
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
                             ),
@@ -135,7 +136,9 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
                           ),
                           Container(
                             padding: const EdgeInsets.symmetric(
-                                horizontal: 8, vertical: 4,),
+                              horizontal: 8,
+                              vertical: 4,
+                            ),
                             decoration: BoxDecoration(
                               color: Theme.of(context)
                                   .colorScheme
@@ -186,7 +189,8 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
                   title: Text(
                     event.title,
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                          fontWeight: FontWeight.bold),
+                          fontWeight: FontWeight.bold,
+                        ),
                   ),
                   subtitle: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -260,20 +264,20 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
 
         if (constraints.maxWidth > 1200) {
           // Large desktop/tablet landscape
-          final crossAxisCount = 4;
-          final childAspectRatio = 2.5;
+          crossAxisCount = 4;
+          childAspectRatio = 2.5;
         } else if (constraints.maxWidth > 800) {
           // Tablet
-          final crossAxisCount = 3;
-          final childAspectRatio = 2.8;
+          crossAxisCount = 3;
+          childAspectRatio = 2.8;
         } else if (constraints.maxWidth > 600) {
           // Large phone/small tablet
-          final crossAxisCount = 2;
-          final childAspectRatio = 3.0;
+          crossAxisCount = 2;
+          childAspectRatio = 3.0;
         } else {
           // Phone
-          final crossAxisCount = 1;
-          final childAspectRatio = 3.5;
+          crossAxisCount = 1;
+          childAspectRatio = 3.5;
         }
 
         return GridView.builder(
@@ -309,7 +313,8 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
                                 .textTheme
                                 .titleMedium
                                 ?.copyWith(
-                                  fontWeight: FontWeight.bold),
+                                  fontWeight: FontWeight.bold,
+                                ),
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                           ),
@@ -367,20 +372,20 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
 
         if (constraints.maxWidth > 1200) {
           // Large desktop/tablet landscape
-          final crossAxisCount = 6;
-          final childAspectRatio = 1.2;
+          crossAxisCount = 6;
+          childAspectRatio = 1.2;
         } else if (constraints.maxWidth > 800) {
           // Tablet
-          final crossAxisCount = 4;
-          final childAspectRatio = 1.3;
+          crossAxisCount = 4;
+          childAspectRatio = 1.3;
         } else if (constraints.maxWidth > 600) {
           // Large phone/small tablet
-          final crossAxisCount = 3;
-          final childAspectRatio = 1.4;
+          crossAxisCount = 3;
+          childAspectRatio = 1.4;
         } else {
           // Phone
-          final crossAxisCount = 2;
-          final childAspectRatio = 1.5;
+          crossAxisCount = 2;
+          childAspectRatio = 1.5;
         }
 
         return GridView.builder(
@@ -410,7 +415,8 @@ class _BusinessCalendarScreenState extends State<BusinessCalendarScreen>
                     Text(
                       event.title,
                       style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                            fontWeight: FontWeight.bold),
+                            fontWeight: FontWeight.bold,
+                          ),
                       textAlign: TextAlign.center,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,

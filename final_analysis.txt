@@ -1,0 +1,124 @@
+Analyzing lib...                                                
+
+   info • The value of the argument is redundant because it matches the default value • lib/features/ambassador/ambassador_user_dashboard.dart:895:30 • avoid_redundant_argument_values
+   info • 'foregroundColor' is deprecated and shouldn't be used. use colors in eyeStyle and dataModuleStyle instead • lib/features/ambassador/ambassador_user_dashboard.dart:897:21 • deprecated_member_use
+   info • 'Share' is deprecated and shouldn't be used. Use SharePlus instead • lib/features/ambassador/ambassador_user_dashboard.dart:1068:11 • deprecated_member_use
+   info • 'share' is deprecated and shouldn't be used. Use SharePlus.instance.share() instead • lib/features/ambassador/ambassador_user_dashboard.dart:1068:17 • deprecated_member_use
+   info • 'Share' is deprecated and shouldn't be used. Use SharePlus instead • lib/features/ambassador/ambassador_user_dashboard.dart:1084:11 • deprecated_member_use
+   info • 'share' is deprecated and shouldn't be used. Use SharePlus.instance.share() instead • lib/features/ambassador/ambassador_user_dashboard.dart:1084:17 • deprecated_member_use
+   info • 'Share' is deprecated and shouldn't be used. Use SharePlus instead • lib/features/ambassador/ambassador_user_dashboard.dart:1091:11 • deprecated_member_use
+   info • 'share' is deprecated and shouldn't be used. Use SharePlus.instance.share() instead • lib/features/ambassador/ambassador_user_dashboard.dart:1091:17 • deprecated_member_use
+   info • 'Share' is deprecated and shouldn't be used. Use SharePlus instead • lib/features/ambassador/ambassador_user_dashboard.dart:1098:11 • deprecated_member_use
+   info • 'share' is deprecated and shouldn't be used. Use SharePlus.instance.share() instead • lib/features/ambassador/ambassador_user_dashboard.dart:1098:17 • deprecated_member_use
+warning • The value of the local variable 'l10n' isn't used • lib/features/calendar/enhanced_calendar_screen.dart:93:11 • unused_local_variable
+   info • Use 'const' with the constructor to improve performance • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:63:5 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:71:5 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:78:5 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:85:5 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:92:5 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:99:5 • prefer_const_constructors
+warning • The declaration '_buildUserTypeOption' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:285:10 • unused_element
+warning • The declaration '_buildSummaryItem' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:343:10 • unused_element
+warning • The declaration '_buildNavigationButtons' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:360:10 • unused_element
+warning • The declaration '_getUserTypeName' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:454:8 • unused_element
+warning • The declaration '_getLanguageName' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:467:8 • unused_element
+warning • The value of the local variable 'isLoading' isn't used • lib/features/payments/subscription_management_screen.dart:32:17 • unused_local_variable
+warning • The value of the local variable 'isLoading' isn't used • lib/features/payments/subscription_management_screen.dart:40:15 • unused_local_variable
+warning • The value of the local variable 'errorMessage' isn't used • lib/features/payments/subscription_screen.dart:42:17 • unused_local_variable
+warning • The value of the local variable 'isLoading' isn't used • lib/features/payments/subscription_screen.dart:43:17 • unused_local_variable
+warning • The value of the local variable 'webViewController' isn't used • lib/features/payments/subscription_screen.dart:64:13 • unused_local_variable
+warning • The value of the local variable 'minAge' isn't used • lib/features/playtime/screens/create_game_screen.dart:266:23 • unused_local_variable
+warning • The value of the local variable 'maxAge' isn't used • lib/features/playtime/screens/create_game_screen.dart:267:23 • unused_local_variable
+warning • The value of the local variable 'maxParticipants' isn't used • lib/features/playtime/screens/create_game_screen.dart:290:23 • unused_local_variable
+warning • The value of the local variable 'estimatedDuration' isn't used • lib/features/playtime/screens/create_game_screen.dart:313:23 • unused_local_variable
+warning • The value of the local variable 'selectedImage' isn't used • lib/features/playtime/screens/create_game_screen.dart:406:15 • unused_local_variable
+warning • The value of the local variable 'selectedGame' isn't used • lib/features/playtime/screens/playtime_live_screen.dart:30:11 • unused_local_variable
+   info • Use 'const' with the constructor to improve performance • lib/features/playtime/screens/playtime_screen.dart:30:16 • prefer_const_constructors
+warning • The left operand can't be null, so the right operand is never executed • lib/features/playtime/screens/playtime_screen.dart:117:51 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/playtime/screens/playtime_screen.dart:127:29 • dead_null_aware_expression
+   info • Use 'const' with the constructor to improve performance • lib/features/playtime/screens/playtime_screen.dart:164:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/playtime/screens/playtime_screen.dart:173:21 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/playtime/screens/playtime_screen.dart:293:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/playtime/screens/playtime_screen.dart:301:21 • prefer_const_constructors
+warning • The value of the local variable 'errorMessage' isn't used • lib/features/playtime/screens/playtime_screen.dart:364:13 • unused_local_variable
+   info • Use 'const' with the constructor to improve performance • lib/features/playtime/screens/playtime_screen.dart:380:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/playtime/screens/playtime_screen.dart:381:22 • prefer_const_constructors
+warning • The value of the local variable 'selectedGame' isn't used • lib/features/playtime/screens/playtime_virtual_screen.dart:28:11 • unused_local_variable
+   info • Use 'const' with the constructor to improve performance • lib/features/profile/enhanced_profile_screen.dart:11:20 • prefer_const_constructors
+warning • The value of the local variable 'l10n' isn't used • lib/features/profile/enhanced_profile_screen.dart:85:11 • unused_local_variable
+warning • The value of the local variable 'requiredPoints' isn't used • lib/features/rewards/services/rewards_service.dart:249:13 • unused_local_variable
+warning • The value of the local variable 'showSuggestions' isn't used • lib/features/search/screens/search_screen.dart:76:13 • unused_local_variable
+warning • The value of the local variable 'isSearching' isn't used • lib/features/search/screens/search_screen.dart:84:15 • unused_local_variable
+warning • The value of the local variable 'showSuggestions' isn't used • lib/features/search/screens/search_screen.dart:111:13 • unused_local_variable
+warning • The value of the local variable 'isSearching' isn't used • lib/features/search/screens/search_screen.dart:112:13 • unused_local_variable
+warning • The value of the local variable 'filters' isn't used • lib/features/search/widgets/search_filters_sheet.dart:59:11 • unused_local_variable
+warning • The value of the local variable 'selectedCategory' isn't used • lib/features/search/widgets/search_filters_sheet.dart:80:11 • unused_local_variable
+warning • The value of the local variable 'selectedSortBy' isn't used • lib/features/search/widgets/search_filters_sheet.dart:81:11 • unused_local_variable
+warning • The value of the local variable 'availabilityOnly' isn't used • lib/features/search/widgets/search_filters_sheet.dart:82:11 • unused_local_variable
+warning • The value of the local variable 'selectedCategory' isn't used • lib/features/search/widgets/search_filters_sheet.dart:118:13 • unused_local_variable
+warning • The value of the local variable 'selectedSortBy' isn't used • lib/features/search/widgets/search_filters_sheet.dart:119:13 • unused_local_variable
+warning • The value of the local variable 'availabilityOnly' isn't used • lib/features/search/widgets/search_filters_sheet.dart:120:13 • unused_local_variable
+warning • The value of the local variable 'l10n' isn't used • lib/features/settings/enhanced_settings_screen.dart:35:11 • unused_local_variable
+warning • The value of the local variable 'startTime' isn't used • lib/features/studio/screens/slot_dialog.dart:30:13 • unused_local_variable
+warning • The value of the local variable 'endTime' isn't used • lib/features/studio/screens/slot_dialog.dart:31:13 • unused_local_variable
+warning • The value of the local variable 'selectedSlot' isn't used • lib/features/studio/studio_booking_screen.dart:49:15 • unused_local_variable
+warning • The value of the local variable 'selectedSlot' isn't used • lib/features/studio/studio_booking_screen.dart:82:27 • unused_local_variable
+warning • The value of the local variable 'tabController' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:21:11 • unused_local_variable
+warning • The value of the local variable 'bytes' isn't used • lib/features/studio_business/screens/business_profile_screen.dart:761:15 • unused_local_variable
+warning • Unused import: 'package:url_launcher/url_launcher.dart' • lib/features/studio_business/screens/settings_screen.dart:5:8 • unused_import
+warning • The value of the local variable 'service' isn't used • lib/features/studio_profile/studio_profile_screen.dart:24:11 • unused_local_variable
+warning • The value of the local variable 'loading' isn't used • lib/features/studio_profile/studio_profile_screen.dart:33:13 • unused_local_variable
+warning • Unused import: 'package:cloud_firestore/cloud_firestore.dart' • lib/models/ambassador_profile.dart:1:8 • unused_import
+warning • The annotation 'JsonKey.new' can only be used on fields or getters • lib/models/app_user.dart:22:6 • invalid_annotation_target
+warning • The annotation 'JsonSerializable.new' can only be used on classes • lib/models/service_offering.dart:8:4 • invalid_annotation_target
+warning • The value of the local variable 'chatSubscription' isn't used • lib/providers/booking_draft_provider.dart:79:11 • unused_local_variable
+warning • The value of the local variable 'typingSubscription' isn't used • lib/providers/booking_draft_provider.dart:94:11 • unused_local_variable
+warning • The value of the local variable 'parsedDate' isn't used • lib/providers/booking_draft_provider.dart:222:15 • unused_local_variable
+warning • The value of the local variable 'currentUser' isn't used • lib/providers/fcm_token_provider.dart:75:11 • unused_local_variable
+warning • The value of the local variable 'currentUser' isn't used • lib/providers/fcm_token_provider.dart:86:13 • unused_local_variable
+warning • Unused import: 'package:flutter/foundation.dart' • lib/providers/notification_provider.dart:5:8 • unused_import
+warning • The method doesn't override an inherited method • lib/providers/notification_provider.dart:29:16 • override_on_non_overriding_member
+warning • The method doesn't override an inherited method • lib/providers/notification_provider.dart:39:16 • override_on_non_overriding_member
+warning • The method doesn't override an inherited method • lib/providers/notification_provider.dart:45:16 • override_on_non_overriding_member
+warning • Unused import: 'dart:convert' • lib/services/ambassador_analytics_service.dart:1:8 • unused_import
+warning • The value of the field '_auth' isn't used • lib/services/ambassador_automation_service.dart:10:22 • unused_field
+   info • 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion • lib/services/ambassador_mobile_notifications.dart:421:22 • deprecated_member_use
+warning • The value of the local variable 'analyticsData' isn't used • lib/services/analytics_service.dart:184:13 • unused_local_variable
+warning • The value of the field '_maxRetries' isn't used • lib/services/api/api_client.dart:345:20 • unused_field
+warning • Dead code • lib/services/auth_service.dart:106:5 • dead_code
+warning • The value of the local variable 'schedulerTimer' isn't used • lib/services/broadcast_scheduler_service.dart:26:11 • unused_local_variable
+warning • The declaration '_handleDeepLink' isn't referenced • lib/services/custom_deep_link_service.dart:73:16 • unused_element
+warning • The declaration '_formSubmissionsCollection' isn't referenced • lib/services/meeting_service.dart:19:27 • unused_element
+warning • The value of the field '_functions' isn't used • lib/services/notification_service.dart:15:27 • unused_field
+   info • 'calendar' is deprecated and shouldn't be used. Use [calendarWriteOnly] and [calendarFullAccess] • lib/services/permission_service.dart:16:37 • deprecated_member_use
+warning • The value of the local variable 'now' isn't used • lib/services/usage_monitor.dart:93:11 • unused_local_variable
+warning • The value of the local variable 'groupId' isn't used • lib/services/whatsapp_share_service.dart:139:15 • unused_local_variable
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:8:21 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:9:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:10:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:14:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:18:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:22:31 • deprecated_member_use
+warning • The value of the local variable 'theme' isn't used • lib/widgets/accessibility/accessibility_enhancements.dart:263:11 • unused_local_variable
+warning • The value of the local variable 'theme' isn't used • lib/widgets/app_attribution.dart:25:11 • unused_local_variable
+warning • The value of the local variable 'theme' isn't used • lib/widgets/app_attribution.dart:215:11 • unused_local_variable
+warning • This default clause is covered by the previous cases • lib/widgets/auth_wrapper.dart:31:7 • unreachable_switch_default
+warning • The value of the local variable 'effectiveColumnWidth' isn't used • lib/widgets/calendar/tablet_calendar_overflow_handler.dart:225:17 • unused_local_variable
+warning • The value of the local variable 'effectiveCellHeight' isn't used • lib/widgets/calendar/tablet_calendar_overflow_handler.dart:314:17 • unused_local_variable
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:553:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:576:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:592:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:608:33 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:653:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:660:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:703:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:715:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:735:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:747:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:760:25 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:769:25 • prefer_const_constructors
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorFormField.validator, InlineErrorFormField.onChanged, InlineErrorFormField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:5:7 • must_be_immutable
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorPasswordField.validator, InlineErrorPasswordField.onChanged, InlineErrorPasswordField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:239:7 • must_be_immutable
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorEmailField.onChanged, InlineErrorEmailField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:384:7 • must_be_immutable
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorPhoneField.onChanged, InlineErrorPhoneField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:519:7 • must_be_immutable
+

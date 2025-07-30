@@ -1,13 +1,10 @@
 import 'package:appoint/models/booking.dart';
-import 'package:appoint/models/service.dart';
-import 'package:appoint/models/business.dart';
 import 'package:appoint/services/api/api_client.dart';
 
 class BookingApiService {
+  BookingApiService._();
   static final BookingApiService _instance = BookingApiService._();
   static BookingApiService get instance => _instance;
-  
-  BookingApiService._();
 
   // Get available time slots for a service
   Future<List<DateTime>> getAvailableSlots({
@@ -71,7 +68,8 @@ class BookingApiService {
     try {
       final queryParams = <String, dynamic>{};
       if (status != null) queryParams['status'] = status;
-      if (fromDate != null) queryParams['fromDate'] = fromDate.toIso8601String();
+      if (fromDate != null)
+        queryParams['fromDate'] = fromDate.toIso8601String();
       if (toDate != null) queryParams['toDate'] = toDate.toIso8601String();
       if (limit != null) queryParams['limit'] = limit;
       if (offset != null) queryParams['offset'] = offset;
@@ -169,7 +167,8 @@ class BookingApiService {
   }) async {
     try {
       final queryParams = <String, dynamic>{};
-      if (fromDate != null) queryParams['fromDate'] = fromDate.toIso8601String();
+      if (fromDate != null)
+        queryParams['fromDate'] = fromDate.toIso8601String();
       if (toDate != null) queryParams['toDate'] = toDate.toIso8601String();
       if (limit != null) queryParams['limit'] = limit;
       if (offset != null) queryParams['offset'] = offset;
@@ -230,7 +229,8 @@ class BookingApiService {
   }) async {
     try {
       final queryParams = <String, dynamic>{};
-      if (fromDate != null) queryParams['fromDate'] = fromDate.toIso8601String();
+      if (fromDate != null)
+        queryParams['fromDate'] = fromDate.toIso8601String();
       if (toDate != null) queryParams['toDate'] = toDate.toIso8601String();
 
       final response = await ApiClient.instance.get<Map<String, dynamic>>(
@@ -253,7 +253,8 @@ class BookingApiService {
     try {
       final queryParams = <String, dynamic>{};
       if (status != null) queryParams['status'] = status;
-      if (fromDate != null) queryParams['fromDate'] = fromDate.toIso8601String();
+      if (fromDate != null)
+        queryParams['fromDate'] = fromDate.toIso8601String();
       if (toDate != null) queryParams['toDate'] = toDate.toIso8601String();
 
       final response = await ApiClient.instance.get<Map<String, dynamic>>(
@@ -295,4 +296,4 @@ class BookingApiService {
       rethrow;
     }
   }
-} 
+}

@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 /// Animates its child fading in while sliding from a given [direction].
 class FadeSlideIn extends StatefulWidget {
   const FadeSlideIn({
-    required this.child, super.key,
+    required this.child,
+    super.key,
     this.direction = AxisDirection.down,
     this.duration = const Duration(milliseconds: 400),
     this.delay = Duration.zero,
@@ -56,13 +57,13 @@ class _FadeSlideInState extends State<FadeSlideIn>
 
   @override
   Widget build(BuildContext context) => AnimatedBuilder(
-      animation: _controller,
-      builder: (context, final child) => Opacity(
+        animation: _controller,
+        builder: (context, final child) => Opacity(
           opacity: _opacity.value,
           child: SlideTransition(position: _offset, child: child),
         ),
-      child: widget.child,
-    );
+        child: widget.child,
+      );
 
   static Offset _offsetForDirection(AxisDirection direction) {
     switch (direction) {

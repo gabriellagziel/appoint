@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 
 /// Displays a single comment with a relative timestamp.
 class CommentItem extends StatelessWidget {
-
   const CommentItem({required this.comment, super.key});
   final Comment comment;
 

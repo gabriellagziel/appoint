@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:appoint/exceptions/booking_conflict_exception.dart';
 import 'package:appoint/models/booking.dart';
 import 'package:appoint/models/offline_booking.dart';
 import 'package:appoint/models/offline_service_offering.dart';
@@ -9,9 +8,11 @@ import 'package:appoint/services/ui_notification_service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 import 'package:hive/hive.dart';
 
-class OfflineBookingRepository { // Track the timer created in _retryFailedOperations
+class OfflineBookingRepository {
+  // Track the timer created in _retryFailedOperations
 
   OfflineBookingRepository({
     FirebaseFirestore? firestore,
@@ -30,7 +31,6 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
   static const int _maxRetryAttempts = 5;
   static const Duration _baseRetryDelay = Duration(seconds: 1);
   static const Duration _maxRetryDelay = Duration(minutes: 5);
-  static const Duration _circuitBreakerTimeout = Duration(minutes: 10);
 
   late Box<OfflineBooking> _bookingsBox;
   late Box<OfflineServiceOffering> _servicesBox;
@@ -41,13 +41,11 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
   final Connectivity _connectivity;
   final UINotificationService? _notificationService;
 
-  StreamSubscription<ConnectivityResult>? _connectivitySubscription;
+  StreamSubscription<List<ConnectivityResult>>? _connectivitySubscription;
   bool _isOnline = false;
   bool _circuitBreakerOpen = false;
-  DateTime? _circuitBreakerOpenedAt;
   Timer? _retryTimer;
-  Timer?
-      _exponentialBackoffTimer;
+  Timer? _exponentialBackoffTimer;
 
   /// Initialize Hive boxes and connectivity monitoring
   Future<void> initialize() async {
@@ -63,9 +61,10 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
     // Start monitoring connectivity changes
     _connectivitySubscription = _connectivity.onConnectivityChanged.listen(
-      (ConnectivityResult result) {
+      (List<ConnectivityResult> results) {
         final wasOnline = _isOnline;
-        _isOnline = result != ConnectivityResult.none;
+        _isOnline =
+            results.isNotEmpty && results.first != ConnectivityResult.none;
 
         // If we just came back online, sync pending changes
         if (!wasOnline && _isOnline) {
@@ -124,29 +123,6 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
         10; // Open circuit breaker after 10 recent failures
   }
 
-  /// Check if circuit breaker should be closed
-  bool _shouldCloseCircuitBreaker() {
-    if (!_circuitBreakerOpen) return false;
-
-    return _circuitBreakerOpenedAt != null &&
-        DateTime.now().difference(_circuitBreakerOpenedAt!) >
-            _circuitBreakerTimeout;
-  }
-
-  /// Schedule retry for failed operations
-  void _scheduleRetry() {
-    if (_retryTimer?.isActive == true) return;
-
-    _retryTimer = Timer(const Duration(minutes: 1), () {
-      if (_isOnline && !_shouldOpenCircuitBreaker()) {
-        // Fire and forget - we don't need to await this
-        _retryFailedOperations().catchError((error) {
-          debugPrint('Retry operation failed: $error');
-        });
-      }
-    });
-  }
-
   /// Retry failed operations with exponential backoff
   Future<void> _retryFailedOperations() async {
     if (!_isOnline || _shouldOpenCircuitBreaker()) return;
@@ -159,7 +135,8 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
     // Show retry notification
     _notificationService?.showInfo(
-        'Retrying ${failedBookings.length} failed booking${failedBookings.length == 1 ? '' : 's'}...');
+      'Retrying ${failedBookings.length} failed booking${failedBookings.length == 1 ? '' : 's'}...',
+    );
 
     for (final booking in failedBookings) {
       final retryCount = _getRetryCount(booking.id);
@@ -246,7 +223,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
     final bookings = <Booking>[];
 
     // Get local bookings
-    for (offlineBooking in _bookingsBox.values) {
+    for (final offlineBooking in _bookingsBox.values) {
       bookings.add(offlineBooking.toBooking());
     }
 
@@ -261,7 +238,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
               .orderBy('dateTime')
               .get();
 
-          for (doc in snapshot.docs) {
+          for (final doc in snapshot.docs) {
             final remoteBooking =
                 Booking.fromJson({...doc.data(), 'id': doc.id});
 
@@ -301,14 +278,17 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
             .doc(booking.id)
             .set(booking.toJson());
         await _bookingsBox.put(
-            booking.id, offlineBooking.copyWith(syncStatus: 'synced'),);
+          booking.id,
+          offlineBooking.copyWith(syncStatus: 'synced'),
+        );
       } catch (e) {
         await _bookingsBox.put(
-            booking.id,
-            offlineBooking.copyWith(
-              syncStatus: 'failed',
-              syncError: e.toString(),
-            ),);
+          booking.id,
+          offlineBooking.copyWith(
+            syncStatus: 'failed',
+            syncError: e.toString(),
+          ),
+        );
         rethrow;
       }
     }
@@ -337,11 +317,12 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
         await _bookingsBox.delete(bookingId);
       } catch (e) {
         await _bookingsBox.put(
-            bookingId,
-            updatedOfflineBooking.copyWith(
-              syncStatus: 'failed',
-              syncError: e.toString(),
-            ),);
+          bookingId,
+          updatedOfflineBooking.copyWith(
+            syncStatus: 'failed',
+            syncError: e.toString(),
+          ),
+        );
         rethrow;
       }
     }
@@ -370,14 +351,17 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
             .doc(booking.id)
             .update(booking.toJson());
         await _bookingsBox.put(
-            booking.id, updatedOfflineBooking.copyWith(syncStatus: 'synced'),);
+          booking.id,
+          updatedOfflineBooking.copyWith(syncStatus: 'synced'),
+        );
       } catch (e) {
         await _bookingsBox.put(
-            booking.id,
-            updatedOfflineBooking.copyWith(
-              syncStatus: 'failed',
-              syncError: e.toString(),
-            ),);
+          booking.id,
+          updatedOfflineBooking.copyWith(
+            syncStatus: 'failed',
+            syncError: e.toString(),
+          ),
+        );
         rethrow;
       }
     }
@@ -417,7 +401,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
       try {
         // Process batch operations
-        for (operation in batchOperations) {
+        for (final operation in batchOperations) {
           final bookingRef =
               _firestore.collection('bookings').doc(operation.id);
 
@@ -452,7 +436,8 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
     // Show success notification
     if (totalSynced > 0) {
       _notificationService?.showSuccess(
-          'Successfully synced $totalSynced booking${totalSynced == 1 ? '' : 's'}');
+        'Successfully synced $totalSynced booking${totalSynced == 1 ? '' : 's'}',
+      );
     }
   }
 
@@ -472,8 +457,8 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
       }
 
       // Then sort by timestamp (oldest first)
-      final timeA = a.lastSyncAttempt ?? a.createdAt ?? DateTime(1970);
-      final timeB = b.lastSyncAttempt ?? b.createdAt ?? DateTime(1970);
+      final timeA = a.createdAt ?? DateTime(1970);
+      final timeB = b.createdAt ?? DateTime(1970);
       return timeA.compareTo(timeB);
     });
 
@@ -495,9 +480,12 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
   }
 
   /// Update sync status for a batch of operations
-  Future<void> _updateSyncStatusBatch(List<String> ids, String status,
-      {String? error,}) async {
-    for (id in ids) {
+  Future<void> _updateSyncStatusBatch(
+    List<String> ids,
+    String status, {
+    String? error,
+  }) async {
+    for (final id in ids) {
       final booking = _bookingsBox.get(id);
       if (booking != null) {
         if (status == 'synced' && booking.operation == 'delete') {
@@ -518,29 +506,33 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
 
   /// Clean up stale entries (older than 30 days)
   Future<void> cleanupStaleEntries() async {
-    cutoffDate = DateTime.now().subtract(const Duration(days: 30));
+    final cutoffDate = DateTime.now().subtract(const Duration(days: 30));
 
     final staleBookings = _bookingsBox.values
-        .where((booking) =>
-            booking.syncStatus == 'synced' &&
-            booking.lastSyncAttempt.isBefore(cutoffDate),)
+        .where(
+          (booking) =>
+              booking.syncStatus == 'synced' &&
+              booking.lastSyncAttempt.isBefore(cutoffDate),
+        )
         .map((booking) => booking.id)
         .toList();
 
-    for (id in staleBookings) {
+    for (final id in staleBookings) {
       await _bookingsBox.delete(id);
     }
 
     // Also clean up permanently failed entries older than 7 days
-    failedCutoffDate = DateTime.now().subtract(const Duration(days: 7));
+    final failedCutoffDate = DateTime.now().subtract(const Duration(days: 7));
     final failedBookings = _bookingsBox.values
-        .where((booking) =>
-            booking.syncStatus == 'permanently_failed' &&
-            booking.lastSyncAttempt.isBefore(failedCutoffDate),)
+        .where(
+          (booking) =>
+              booking.syncStatus == 'permanently_failed' &&
+              booking.lastSyncAttempt.isBefore(failedCutoffDate),
+        )
         .map((booking) => booking.id)
         .toList();
 
-    for (id in failedBookings) {
+    for (final id in failedBookings) {
       await _bookingsBox.delete(id);
     }
   }
@@ -548,10 +540,10 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
   /// Get pending operations count
   int getPendingOperationsCount() {
     var count = 0;
-    for (booking in _bookingsBox.values) {
+    for (final booking in _bookingsBox.values) {
       if (booking.syncStatus == 'pending') count++;
     }
-    for (service in _servicesBox.values) {
+    for (final service in _servicesBox.values) {
       if (service.syncStatus == 'pending') count++;
     }
     return count;
@@ -564,7 +556,7 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
     var failed = 0;
     var permanentlyFailed = 0;
 
-    for (booking in _bookingsBox.values) {
+    for (final booking in _bookingsBox.values) {
       switch (booking.syncStatus) {
         case 'pending':
           pending++;
@@ -610,10 +602,12 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
   bool get isCircuitBreakerOpen => _circuitBreakerOpen;
 
   /// Get sync status for a specific booking
-  String? getBookingSyncStatus(String bookingId) => _bookingsBox.get(bookingId)?.syncStatus;
+  String? getBookingSyncStatus(String bookingId) =>
+      _bookingsBox.get(bookingId)?.syncStatus;
 
   /// Get sync error for a specific booking
-  String? getBookingSyncError(String bookingId) => _bookingsBox.get(bookingId)?.syncError;
+  String? getBookingSyncError(String bookingId) =>
+      _bookingsBox.get(bookingId)?.syncError;
 
   /// Force retry of failed operations
   Future<void> retryFailedOperations() async {
@@ -627,7 +621,6 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
   /// Reset circuit breaker
   void resetCircuitBreaker() {
     _circuitBreakerOpen = false;
-    _circuitBreakerOpenedAt = null;
   }
 
   /// Clear all local data (for testing or reset)
@@ -635,137 +628,5 @@ class OfflineBookingRepository { // Track the timer created in _retryFailedOpera
     await _bookingsBox.clear();
     await _servicesBox.clear();
     await _pendingOperationsBox.clear();
-  }
-
-  /// Enhanced conflict resolution with business logic validation
-  Future<Booking> _resolveConflict(
-      OfflineBooking localBooking, Map<String, dynamic> remoteData,) async {
-    final remoteBooking =
-        Booking.fromJson({...remoteData, 'id': localBooking.id});
-
-    // Check for server-side cancellation
-    if (remoteData['isCancelled'] == true &&
-        localBooking.operation != 'delete') {
-      // Server cancelled the booking - this takes precedence
-      await _bookingsBox.delete(localBooking.id);
-      final localUpdatedAt =
-          localBooking.updatedAt ?? localBooking.createdAt ?? DateTime(1970);
-      final remoteUpdatedAt = remoteData['updatedAt'] as Timestamp? ??
-          remoteData['createdAt'] as Timestamp? ??
-          Timestamp.fromDate(DateTime(1970));
-
-      // Show notification about server cancellation
-      _notificationService?.showWarning(
-          'Booking ${localBooking.id} was cancelled by the service provider');
-
-      throw BookingConflictException(
-        bookingId: localBooking.id,
-        localUpdatedAt: localUpdatedAt,
-        remoteUpdatedAt: remoteUpdatedAt.toDate(),
-        message: 'Booking was cancelled on the server',
-      );
-    }
-
-    // Check for double-booking conflicts
-    if (await _isDoubleBooking(remoteBooking)) {
-      final localUpdatedAt =
-          localBooking.updatedAt ?? localBooking.createdAt ?? DateTime(1970);
-      final remoteUpdatedAt = remoteData['updatedAt'] as Timestamp? ??
-          remoteData['createdAt'] as Timestamp? ??
-          Timestamp.fromDate(DateTime(1970));
-
-      // Show notification about double-booking conflict
-      _notificationService?.showWarning(
-          'Booking ${localBooking.id} conflicts with existing appointment');
-
-      throw BookingConflictException(
-        bookingId: localBooking.id,
-        localUpdatedAt: localUpdatedAt,
-        remoteUpdatedAt: remoteUpdatedAt.toDate(),
-        message: 'Booking conflicts with existing appointment',
-      );
-    }
-
-    // Standard timestamp-based resolution
-    final localUpdatedAt =
-        localBooking.updatedAt ?? localBooking.createdAt ?? DateTime(1970);
-    final remoteUpdatedAt = remoteData['updatedAt'] as Timestamp? ??
-        remoteData['createdAt'] as Timestamp? ??
-        Timestamp.fromDate(DateTime(1970));
-
-    if (remoteUpdatedAt.toDate().isAfter(localUpdatedAt)) {
-      // Remote is newer - update local
-      final updatedOfflineBooking = OfflineBooking.fromBooking(
-        remoteBooking,
-        syncStatus: 'synced',
-        operation: 'update',
-      );
-      await _bookingsBox.put(localBooking.id, updatedOfflineBooking);
-      return remoteBooking;
-    } else {
-      // Local is newer or same - keep local
-      return localBooking.toBooking();
-    }
-  }
-
-  /// Check if a booking would create a double-booking conflict
-  Future<bool> _isDoubleBooking(Booking booking) async {
-    if (!_isOnline) return false;
-
-    try {
-      final user = _auth.currentUser;
-      if (user == null) return false;
-
-      final startTime = booking.dateTime;
-      final endTime = startTime.add(booking.duration);
-
-      final snapshot = await _firestore
-          .collection('bookings')
-          .where('userId', isEqualTo: user.uid)
-          .where('dateTime', isLessThan: endTime)
-          .where('dateTime',
-              isGreaterThan: startTime.subtract(booking.duration),)
-          .get();
-
-      // Check for overlapping bookings (excluding the current booking)
-      for (doc in snapshot.docs) {
-        if (doc.id != booking.id) {
-          final existingBooking =
-              Booking.fromJson({...doc.data(), 'id': doc.id});
-          final existingStart = existingBooking.dateTime;
-          final existingEnd = existingStart.add(existingBooking.duration);
-
-          // Check for overlap
-          if (startTime.isBefore(existingEnd) &&
-              endTime.isAfter(existingStart)) {
-            return true;
-          }
-        }
-      }
-
-      return false;
-    } catch (e) {
-      // If we can't check, assume no conflict
-      return false;
-    }
-  }
-
-  /// Merge conflicting bookings at field level
-  Future<Booking> _mergeBookings(Booking local, Booking remote) async {
-    // For now, implement a simple merge strategy
-    // In a real implementation, you might want more sophisticated merging
-
-    return Booking(
-      id: local.id,
-      userId: local.userId,
-      staffId: remote.staffId, // Prefer remote for staff assignment
-      serviceId: local.serviceId,
-      serviceName: local.serviceName,
-      dateTime: remote.dateTime, // Prefer remote for time changes
-      duration: local.duration,
-      notes: local.notes ?? remote.notes, // Merge notes
-      isConfirmed: remote.isConfirmed, // Prefer remote confirmation status
-      createdAt: local.createdAt,
-    );
   }
 }

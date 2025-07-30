@@ -1,11 +1,10 @@
+import 'package:appoint/constants/app_branding.dart';
 import 'package:appoint/providers/user_provider.dart';
 import 'package:appoint/widgets/app_logo.dart';
-import 'package:appoint/constants/app_branding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class AppShell extends ConsumerWidget {
-
   const AppShell({required this.child, super.key});
   final Widget child;
 
@@ -54,7 +53,7 @@ class AppShell extends ConsumerWidget {
                     ),
                   ),
                   const SizedBox(height: 4),
-                  Text(
+                  const Text(
                     AppBranding.fullSlogan,
                     style: TextStyle(
                       color: Colors.white70,
@@ -98,7 +97,6 @@ class AppShell extends ConsumerWidget {
 }
 
 class MenuItem {
-
   const MenuItem({
     required this.label,
     required this.icon,

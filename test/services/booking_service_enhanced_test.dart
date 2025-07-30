@@ -10,7 +10,15 @@ import 'package:appoint/models/user_profile.dart';
 import '../mocks/firebase_mocks.dart';
 
 // Generate mocks
-@GenerateMocks([BookingService])
+@GenerateMocks([
+  BookingService,
+  FirebaseFirestore,
+  CollectionReference,
+  DocumentReference,
+  DocumentSnapshot,
+  Query,
+  QuerySnapshot
+])
 void main() {
   group('BookingService Enhanced Tests', () {
     late BookingService bookingService;
@@ -48,7 +56,8 @@ void main() {
         );
 
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
-        when(mockCollection.add(booking.toJson())).thenAnswer((_) async => mockDocRef);
+        when(mockCollection.add(booking.toJson()))
+            .thenAnswer((_) async => mockDocRef);
         when(mockDocRef.id).thenReturn('booking-123');
 
         // Act
@@ -92,7 +101,8 @@ void main() {
           providerId: '',
           service: '',
           startTime: DateTime.now(),
-          endTime: DateTime.now().subtract(Duration(hours: 1)), // End before start
+          endTime:
+              DateTime.now().subtract(Duration(hours: 1)), // End before start
           status: BookingStatus.pending,
           createdAt: DateTime.now(),
           updatedAt: DateTime.now(),
@@ -128,7 +138,8 @@ void main() {
           'providerId': 'provider-2',
           'service': 'Elder Care',
           'startTime': DateTime.now().add(Duration(days: 1)).toIso8601String(),
-          'endTime': DateTime.now().add(Duration(days: 1, hours: 1)).toIso8601String(),
+          'endTime':
+              DateTime.now().add(Duration(days: 1, hours: 1)).toIso8601String(),
           'status': 'confirmed',
           'createdAt': DateTime.now().toIso8601String(),
           'updatedAt': DateTime.now().toIso8601String(),
@@ -143,7 +154,8 @@ void main() {
         when(mockDoc2.data()).thenReturn(bookingData2);
 
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
-        when(mockCollection.where('userId', isEqualTo: userId)).thenReturn(mockQuery);
+        when(mockCollection.where('userId', isEqualTo: userId))
+            .thenReturn(mockQuery);
         when(mockQuery.get()).thenAnswer((_) async => mockQuerySnapshot);
         when(mockQuerySnapshot.docs).thenReturn([mockDoc1, mockDoc2]);
 
@@ -163,7 +175,8 @@ void main() {
         const userId = 'user-123';
 
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
-        when(mockCollection.where('userId', isEqualTo: userId)).thenReturn(mockQuery);
+        when(mockCollection.where('userId', isEqualTo: userId))
+            .thenReturn(mockQuery);
         when(mockQuery.get()).thenAnswer((_) async => mockQuerySnapshot);
         when(mockQuerySnapshot.docs).thenReturn([]);
 
@@ -179,7 +192,8 @@ void main() {
         const userId = 'user-123';
 
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
-        when(mockCollection.where('userId', isEqualTo: userId)).thenReturn(mockQuery);
+        when(mockCollection.where('userId', isEqualTo: userId))
+            .thenReturn(mockQuery);
         when(mockQuery.get()).thenThrow(FirebaseException(plugin: 'firestore'));
 
         // Act & Assert
@@ -198,7 +212,8 @@ void main() {
 
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
         when(mockCollection.doc(bookingId)).thenReturn(mockDocRef);
-        when(mockDocRef.update({'status': newStatus.name, 'updatedAt': anyNamed('updatedAt')}))
+        when(mockDocRef.update(
+                {'status': newStatus.name, 'updatedAt': anyNamed('updatedAt')}))
             .thenAnswer((_) async => null);
 
         // Act
@@ -218,7 +233,8 @@ void main() {
 
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
         when(mockCollection.doc(bookingId)).thenReturn(mockDocRef);
-        when(mockDocRef.update({'status': newStatus.name, 'updatedAt': anyNamed('updatedAt')}))
+        when(mockDocRef.update(
+                {'status': newStatus.name, 'updatedAt': anyNamed('updatedAt')}))
             .thenThrow(FirebaseException(plugin: 'firestore'));
 
         // Act & Assert
@@ -326,7 +342,8 @@ void main() {
 
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
         when(mockCollection.doc(bookingId)).thenReturn(mockDocRef);
-        when(mockDocRef.get()).thenThrow(FirebaseException(plugin: 'firestore'));
+        when(mockDocRef.get())
+            .thenThrow(FirebaseException(plugin: 'firestore'));
 
         // Act & Assert
         expect(
@@ -420,7 +437,8 @@ void main() {
           'providerId': providerId,
           'service': 'Elder Care',
           'startTime': DateTime.now().add(Duration(days: 1)).toIso8601String(),
-          'endTime': DateTime.now().add(Duration(days: 1, hours: 1)).toIso8601String(),
+          'endTime':
+              DateTime.now().add(Duration(days: 1, hours: 1)).toIso8601String(),
           'status': 'confirmed',
         };
 
@@ -455,7 +473,8 @@ void main() {
         final endTime = startTime.add(Duration(hours: 1));
 
         // Act
-        final isValid = bookingService.isValidBookingTimeRange(startTime, endTime);
+        final isValid =
+            bookingService.isValidBookingTimeRange(startTime, endTime);
 
         // Assert
         expect(isValid, isTrue);
@@ -464,10 +483,12 @@ void main() {
       test('should reject invalid booking time range', () {
         // Arrange
         final startTime = DateTime.now();
-        final endTime = startTime.subtract(Duration(hours: 1)); // End before start
+        final endTime =
+            startTime.subtract(Duration(hours: 1)); // End before start
 
         // Act
-        final isValid = bookingService.isValidBookingTimeRange(startTime, endTime);
+        final isValid =
+            bookingService.isValidBookingTimeRange(startTime, endTime);
 
         // Assert
         expect(isValid, isFalse);
@@ -479,11 +500,12 @@ void main() {
         final endTime = startTime.add(Duration(hours: 2));
 
         // Act
-        final duration = bookingService.calculateBookingDuration(startTime, endTime);
+        final duration =
+            bookingService.calculateBookingDuration(startTime, endTime);
 
         // Assert
         expect(duration.inHours, equals(2));
       });
     });
   });
-} 
+}

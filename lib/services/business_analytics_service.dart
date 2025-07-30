@@ -9,8 +9,7 @@ class BusinessAnalyticsService {
     final DateTimeRange? range,
   }) async {
     try {
-      var query =
-          _firestore.collection('appointments').orderBy('dateTime');
+      var query = _firestore.collection('appointments').orderBy('dateTime');
       if (range != null) {
         query = query
             .where('dateTime', isGreaterThanOrEqualTo: range.start)
@@ -18,7 +17,7 @@ class BusinessAnalyticsService {
       }
       final snapshot = await query.get();
       final counts = <DateTime, int>{};
-      for (doc in snapshot.docs) {
+      for (final doc in snapshot.docs) {
         final ts = doc.data()['dateTime'] as Timestamp?;
         if (ts == null) continue;
         final date =
@@ -32,8 +31,13 @@ class BusinessAnalyticsService {
     } catch (e) {
       // Return sample data when offline or on error
       final now = DateTime.now();
-      return List.generate(7, (i) => TimeSeriesPoint(
-            date: now.subtract(Duration(days: 6 - i)), count: (i + 1) * 3,),);
+      return List.generate(
+        7,
+        (i) => TimeSeriesPoint(
+          date: now.subtract(Duration(days: 6 - i)),
+          count: (i + 1) * 3,
+        ),
+      );
     }
   }
 
@@ -41,13 +45,14 @@ class BusinessAnalyticsService {
     try {
       final snapshot = await _firestore.collection('appointments').get();
       final counts = <String, int>{};
-      for (doc in snapshot.docs) {
+      for (final doc in snapshot.docs) {
         final service = doc.data()['serviceName'] as String? ?? 'Unknown';
         counts.update(service, (value) => value + 1, ifAbsent: () => 1);
       }
       return counts.entries
-          .map((e) =>
-              ServiceDistribution(service: e.key, bookings: e.value),)
+          .map(
+            (e) => ServiceDistribution(service: e.key, bookings: e.value),
+          )
           .toList();
     } catch (e) {
       return [
@@ -62,11 +67,14 @@ class BusinessAnalyticsService {
     try {
       final snapshot = await _firestore.collection('payments').get();
       final totals = <String, double>{};
-      for (doc in snapshot.docs) {
+      for (final doc in snapshot.docs) {
         final staff = doc.data()['staffId'] as String? ?? 'unknown';
         final amount = (doc.data()['amount'] as num?)?.toDouble() ?? 0;
-        totals.update(staff, (value) => value + amount,
-            ifAbsent: () => amount,);
+        totals.update(
+          staff,
+          (value) => value + amount,
+          ifAbsent: () => amount,
+        );
       }
       return totals.entries
           .map((e) => RevenueByStaff(staff: e.key, revenue: e.value))

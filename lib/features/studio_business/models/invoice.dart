@@ -1,5 +1,4 @@
 class Invoice {
-
   Invoice({
     required this.id,
     required this.businessId,
@@ -21,31 +20,31 @@ class Invoice {
   });
 
   factory Invoice.fromJson(Map<String, dynamic> json) => Invoice(
-      id: json['id'] as String,
-      businessId: json['businessId'] as String,
-      subscriptionId: json['subscriptionId'] as String,
-      customerId: json['customerId'] as String,
-      amount: (json['amount'] as num).toDouble(),
-      currency: json['currency'] as String,
-      status: InvoiceStatus.values.firstWhere(
-        (e) => e.name == json['status'],
-        orElse: () => InvoiceStatus.draft,
-      ),
-      dueDate: DateTime.parse(json['dueDate'] as String),
-      createdAt: DateTime.parse(json['createdAt'] as String),
-      updatedAt: DateTime.parse(json['updatedAt'] as String),
-      stripeInvoiceId: json['stripeInvoiceId'] as String?,
-      stripePaymentIntentId: json['stripePaymentIntentId'] as String?,
-      description: json['description'] as String?,
-      metadata: json['metadata'] as Map<String, dynamic>?,
-      promoCodeId: json['promoCodeId'] as String?,
-      discountAmount: json['discountAmount'] != null
-          ? (json['discountAmount'] as num).toDouble()
-          : null,
-      taxAmount: json['taxAmount'] != null
-          ? (json['taxAmount'] as num).toDouble()
-          : null,
-    );
+        id: json['id'] as String,
+        businessId: json['businessId'] as String,
+        subscriptionId: json['subscriptionId'] as String,
+        customerId: json['customerId'] as String,
+        amount: (json['amount'] as num).toDouble(),
+        currency: json['currency'] as String,
+        status: InvoiceStatus.values.firstWhere(
+          (e) => e.name == json['status'],
+          orElse: () => InvoiceStatus.draft,
+        ),
+        dueDate: DateTime.parse(json['dueDate'] as String),
+        createdAt: DateTime.parse(json['createdAt'] as String),
+        updatedAt: DateTime.parse(json['updatedAt'] as String),
+        stripeInvoiceId: json['stripeInvoiceId'] as String?,
+        stripePaymentIntentId: json['stripePaymentIntentId'] as String?,
+        description: json['description'] as String?,
+        metadata: json['metadata'] as Map<String, dynamic>?,
+        promoCodeId: json['promoCodeId'] as String?,
+        discountAmount: json['discountAmount'] != null
+            ? (json['discountAmount'] as num).toDouble()
+            : null,
+        taxAmount: json['taxAmount'] != null
+            ? (json['taxAmount'] as num).toDouble()
+            : null,
+      );
   final String id;
   final String businessId;
   final String subscriptionId;
@@ -65,24 +64,24 @@ class Invoice {
   final double? taxAmount;
 
   Map<String, dynamic> toJson() => {
-      'id': id,
-      'businessId': businessId,
-      'subscriptionId': subscriptionId,
-      'customerId': customerId,
-      'amount': amount,
-      'currency': currency,
-      'status': status.name,
-      'dueDate': dueDate.toIso8601String(),
-      'createdAt': createdAt.toIso8601String(),
-      'updatedAt': updatedAt.toIso8601String(),
-      'stripeInvoiceId': stripeInvoiceId,
-      'stripePaymentIntentId': stripePaymentIntentId,
-      'description': description,
-      'metadata': metadata,
-      'promoCodeId': promoCodeId,
-      'discountAmount': discountAmount,
-      'taxAmount': taxAmount,
-    };
+        'id': id,
+        'businessId': businessId,
+        'subscriptionId': subscriptionId,
+        'customerId': customerId,
+        'amount': amount,
+        'currency': currency,
+        'status': status.name,
+        'dueDate': dueDate.toIso8601String(),
+        'createdAt': createdAt.toIso8601String(),
+        'updatedAt': updatedAt.toIso8601String(),
+        'stripeInvoiceId': stripeInvoiceId,
+        'stripePaymentIntentId': stripePaymentIntentId,
+        'description': description,
+        'metadata': metadata,
+        'promoCodeId': promoCodeId,
+        'discountAmount': discountAmount,
+        'taxAmount': taxAmount,
+      };
 }
 
 enum InvoiceStatus {

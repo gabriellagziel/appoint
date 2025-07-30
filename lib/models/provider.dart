@@ -4,11 +4,13 @@ part 'provider.g.dart';
 
 @JsonSerializable()
 class BusinessProvider {
-
   BusinessProvider({
     required this.id,
     required this.name,
-    required this.businessProfileId, required this.createdAt, required this.updatedAt, this.role,
+    required this.businessProfileId,
+    required this.createdAt,
+    required this.updatedAt,
+    this.role,
   });
 
   factory BusinessProvider.fromJson(Map<String, dynamic> json) =>

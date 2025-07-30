@@ -9,7 +9,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// Holds the booking draft data and chat history
 class BookingDraft {
-
   BookingDraft({
     this.type,
     this.date,
@@ -35,19 +34,19 @@ class BookingDraft {
     final List<ChatMessage>? chatMessages,
     final String? chatSessionId,
     final bool? isOtherUserTyping,
-  }) => BookingDraft(
-      type: type ?? this.type,
-      date: date ?? this.date,
-      time: time ?? this.time,
-      notes: notes ?? this.notes,
-      chatMessages: chatMessages ?? List.from(this.chatMessages),
-      chatSessionId: chatSessionId ?? this.chatSessionId,
-      isOtherUserTyping: isOtherUserTyping ?? this.isOtherUserTyping,
-    );
+  }) =>
+      BookingDraft(
+        type: type ?? this.type,
+        date: date ?? this.date,
+        time: time ?? this.time,
+        notes: notes ?? this.notes,
+        chatMessages: chatMessages ?? List.from(this.chatMessages),
+        chatSessionId: chatSessionId ?? this.chatSessionId,
+        isOtherUserTyping: isOtherUserTyping ?? this.isOtherUserTyping,
+      );
 }
 
 class BookingDraftNotifier extends StateNotifier<BookingDraft> {
-
   BookingDraftNotifier({
     required FirebaseFirestore firestore,
     required AuthService auth,
@@ -77,12 +76,13 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
     final chatDoc = _firestore.collection('chats').doc(sessionId);
 
     // Listen to chat messages
-    final _chatSubscription = chatDoc.snapshots().listen((snapshot) {
+    final chatSubscription = chatDoc.snapshots().listen((snapshot) {
       if (snapshot.exists && snapshot.data() != null) {
         final data = snapshot.data()!;
         final messages = (data['messages'] as List<dynamic>?)
-                ?.map((msg) =>
-                    ChatMessage.fromJson(Map<String, dynamic>.from(msg)),)
+                ?.map(
+                  (msg) => ChatMessage.fromJson(Map<String, dynamic>.from(msg)),
+                )
                 .toList() ??
             [];
 
@@ -91,7 +91,7 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
     });
 
     // Listen to typing status
-    final _typingSubscription = chatDoc.snapshots().listen((snapshot) {
+    final typingSubscription = chatDoc.snapshots().listen((snapshot) {
       if (snapshot.exists && snapshot.data() != null) {
         final data = snapshot.data()!;
         final typingUsers = List<String>.from(data['typing'] ?? []);
@@ -159,11 +159,14 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
     final chatDoc = _firestore.collection('chats').doc(state.chatSessionId);
     final messages = state.chatMessages.map((msg) => msg.toJson()).toList();
 
-    await chatDoc.set({
-      'sessionId': state.chatSessionId,
-      'messages': messages,
-      'lastUpdated': FieldValue.serverTimestamp(),
-    }, SetOptions(merge: true),);
+    await chatDoc.set(
+      {
+        'sessionId': state.chatSessionId,
+        'messages': messages,
+        'lastUpdated': FieldValue.serverTimestamp(),
+      },
+      SetOptions(merge: true),
+    );
   }
 
   Future<void> _setTypingStatus(bool isTyping) async {
@@ -225,14 +228,15 @@ class BookingDraftNotifier extends StateNotifier<BookingDraft> {
         addBotMessage('At what time? (e.g. 14:00)');
       } else {
         addBotMessage(
-            "Sorry, I didn't understand that date. Please use YYYY-MM-DD format.",);
+          "Sorry, I didn't understand that date. Please use YYYY-MM-DD format.",
+        );
       }
     } else if (state.time == null) {
       // assume valid time format
       state = state.copyWith(time: userInput);
       addBotMessage('Any notes to add?');
     } else if (state.notes == null) {
-              state = state.copyWith(notes: userInput);
+      state = state.copyWith(notes: userInput);
       final summary = 'Here is your summary:\n'
           'Type: ${state.type}\n'
           'Date: ${state.date}\n'

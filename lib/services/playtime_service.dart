@@ -37,13 +37,15 @@ class PlaytimeService {
   Future<List<PlaytimeGame>> getGames() async {
     try {
       if (Firebase.apps.isEmpty) return [];
-      
+
       final snapshot = await _firestore.collection(_gamesCollection).get();
       return snapshot.docs
-          .map((doc) => PlaytimeGame.fromJson({
-                'id': doc.id,
-                ...doc.data(),
-              }),)
+          .map(
+            (doc) => PlaytimeGame.fromJson({
+              'id': doc.id,
+              ...doc.data(),
+            }),
+          )
           .toList();
     } catch (e) {
       throw Exception('Failed to fetch games: $e');
@@ -92,10 +94,12 @@ class PlaytimeService {
     try {
       final snapshot = await _firestore.collection(_sessionsCollection).get();
       return snapshot.docs
-          .map((doc) => PlaytimeSession.fromJson({
-                'id': doc.id,
-                ...doc.data(),
-              }),)
+          .map(
+            (doc) => PlaytimeSession.fromJson({
+              'id': doc.id,
+              ...doc.data(),
+            }),
+          )
           .toList();
     } catch (e) {
       throw Exception('Failed to fetch sessions: $e');
@@ -135,10 +139,12 @@ class PlaytimeService {
       final snapshot =
           await _firestore.collection(_backgroundsCollection).get();
       return snapshot.docs
-          .map((doc) => PlaytimeBackground.fromJson({
-                'id': doc.id,
-                ...doc.data(),
-              }),)
+          .map(
+            (doc) => PlaytimeBackground.fromJson({
+              'id': doc.id,
+              ...doc.data(),
+            }),
+          )
           .toList();
     } catch (e) {
       throw Exception('Failed to fetch backgrounds: $e');
@@ -161,7 +167,8 @@ class PlaytimeService {
 
       // Stub implementation for image URL generation
       // In a real implementation, this would upload the file to Firebase Storage
-      final imageUrl = 'https://example.com/stub-image-url-${DateTime.now().millisecondsSinceEpoch}';
+      final imageUrl =
+          'https://example.com/stub-image-url-${DateTime.now().millisecondsSinceEpoch}';
 
       final docRef = await _firestore.collection(_backgroundsCollection).add({
         'name': name,
@@ -210,7 +217,9 @@ class PlaytimeService {
   }
 
   Future<void> sendMessage(
-      String sessionId, final ChatMessage message,) async {
+    String sessionId,
+    final ChatMessage message,
+  ) async {
     try {
       final chatRef = _firestore.collection(_chatsCollection).doc(sessionId);
 
@@ -223,16 +232,79 @@ class PlaytimeService {
         messages.add(message.toJson());
 
         transaction.set(
-            chatRef,
-            {
-              'sessionId': sessionId,
-              'messages': messages,
-              'updatedAt': FieldValue.serverTimestamp(),
-            },
-            SetOptions(merge: true),);
+          chatRef,
+          {
+            'sessionId': sessionId,
+            'messages': messages,
+            'updatedAt': FieldValue.serverTimestamp(),
+          },
+          SetOptions(merge: true),
+        );
       });
     } catch (e) {
       throw Exception('Failed to send message: $e');
+    }
+  }
+
+  // Ticket System
+  Stream<int> getCurrentTicketCount() {
+    try {
+      final user = _auth.currentUser;
+      if (user == null) return Stream.value(0);
+
+      return _firestore
+          .collection('users')
+          .doc(user.uid)
+          .collection('tickets')
+          .snapshots()
+          .map((snapshot) => snapshot.docs.length);
+    } catch (e) {
+      return Stream.value(0);
+    }
+  }
+
+  Future<bool> canEarnMoreToday() async {
+    try {
+      final user = _auth.currentUser;
+      if (user == null) return false;
+
+      final today = DateTime.now();
+      final startOfDay = DateTime(today.year, today.month, today.day);
+
+      final snapshot = await _firestore
+          .collection('users')
+          .doc(user.uid)
+          .collection('tickets')
+          .where('earnedAt', isGreaterThanOrEqualTo: startOfDay)
+          .get();
+
+      // Allow earning up to 10 tickets per day
+      return snapshot.docs.length < 10;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  Future<void> grantTicket() async {
+    try {
+      final user = _auth.currentUser;
+      if (user == null) throw Exception('User not authenticated');
+
+      final canEarn = await canEarnMoreToday();
+      if (!canEarn) {
+        throw Exception('Daily ticket limit reached');
+      }
+
+      await _firestore
+          .collection('users')
+          .doc(user.uid)
+          .collection('tickets')
+          .add({
+        'earnedAt': FieldValue.serverTimestamp(),
+        'source': 'playtime',
+      });
+    } catch (e) {
+      throw Exception('Failed to grant ticket: $e');
     }
   }
 }
