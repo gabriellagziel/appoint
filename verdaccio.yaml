@@ -1,2 +1,1 @@
 storage: ./third_party/verdaccio_storage
-listen: 0.0.0.0:4873
