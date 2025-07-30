@@ -97,7 +97,13 @@ case "$SECTION" in
     ;;
   all)
     run_flutter_checks
-    run_website_checks
+
+    # Only run website checks if a website directory actually exists
+    if [[ -d "website" ]]; then
+      run_website_checks
+    else
+      log "Skipping website checks – no website/ directory found"
+    fi
     ;;
   *)
     usage
