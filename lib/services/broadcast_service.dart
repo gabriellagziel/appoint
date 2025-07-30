@@ -354,5 +354,4 @@ class BroadcastService {
   }
 }
 
-// Provider
-final broadcastServiceProvider = Provider<BroadcastService>((ref) => BroadcastService());
+// Provider moved to admin_provider.dart to avoid conflicts

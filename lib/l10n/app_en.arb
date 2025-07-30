@@ -2678,56 +2678,194 @@
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   },
-  "ad_pre_title": "Watch an ad to confirm your appointment",
-  "@ad_pre_title": {
-    "description": "Title shown before ad for free users"
+  "sendNow": "Send Now",
+  "@sendNow": {
+    "description": "Send now button"
   },
-  "ad_pre_description": "As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.",
-  "@ad_pre_description": {
-    "description": "Description shown before ad for free users"
+  "details": "Details",
+  "@details": {
+    "description": "Details button"
   },
-  "watch_ad_button": "Watch Ad",
-  "@watch_ad_button": {
-    "description": "Button to watch ad"
+  "noPermissionForBroadcast": "You do not have permission to send broadcast messages",
+  "@noPermissionForBroadcast": {
+    "description": "No permission for broadcast message"
   },
-  "upgrade_button": "Upgrade to Premium (€4)",
-  "@upgrade_button": {
-    "description": "Button to upgrade to premium"
+  "composeBroadcastMessage": "Compose Broadcast Message",
+  "@composeBroadcastMessage": {
+    "description": "Compose broadcast message title"
   },
-  "ad_post_title": "Ad finished! You may now confirm your appointment.",
-  "@ad_post_title": {
-    "description": "Title shown after ad is finished"
+  "checkingPermissions": "Checking permissions...",
+  "@checkingPermissions": {
+    "description": "Checking permissions message"
   },
-  "confirm_appointment_button": "Confirm Appointment",
-  "@confirm_appointment_button": {
-    "description": "Button to confirm appointment after ad"
+  "errorCheckingPermissions": "Error checking permissions: {error}",
+  "@errorCheckingPermissions": {
+    "description": "Error checking permissions message",
+    "placeholders": {
+      "error": {}
+    }
   },
-  "upgrade_prompt_title": "One-time upgrade",
-  "@upgrade_prompt_title": {
-    "description": "Title for upgrade prompt"
+  "mediaOptional": "Media (Optional)",
+  "@mediaOptional": {
+    "description": "Media optional section"
   },
-  "upgrade_prompt_description": "Pay €4 to remove all ads forever",
-  "@upgrade_prompt_description": {
-    "description": "Description for upgrade prompt"
+  "pickImage": "Pick Image",
+  "@pickImage": {
+    "description": "Pick image button"
   },
-  "purchase_now_button": "Purchase Now",
-  "@purchase_now_button": {
-    "description": "Button to purchase upgrade"
+  "pickVideo": "Pick Video",
+  "@pickVideo": {
+    "description": "Pick video button"
   },
-  "mapsWarningTitle": "Continue Using Maps?",
-  "@mapsWarningTitle": {"description": "Title for the warning modal before consuming a free map view"},
-  "mapsWarningBody": "You've used free access for {used} of 5 meetings.\nTo keep using Google Maps after this, you'll need to upgrade to Premium.",
-  "@mapsWarningBody": {"description": "Body text for maps usage warning modal", "placeholders": {"used": {"type": "int"}}},
-  "mapsContinueCta": "Continue (Meeting {current}/{limit})",
-  "@mapsContinueCta": {"description": "CTA button for continuing with free map access", "placeholders": {"current": {"type": "int"}, "limit": {"type": "int"}}},
-  "upgradePremiumCta": "Upgrade to Premium",
-  "@upgradePremiumCta": {"description": "CTA button text to upgrade to premium"},
-  "mapsLockedTitle": "Map Access Locked",
-  "@mapsLockedTitle": {"description": "Title when user exceeded free map quota"},
-  "mapsLockedBody": "You've reached your limit of 5 meetings with free map access.\nUpgrade now to continue using Google Maps.",
-  "@mapsLockedBody": {"description": "Body text when map access is locked"},
-  "backToMeetingCta": "Back to meeting",
-  "@backToMeetingCta": {"description": "Button text to return to meeting without map"},
-  "mapsBadge": "{remaining}/5",
-  "@mapsBadge": {"description": "Badge text showing remaining free map views", "placeholders": {"remaining": {"type": "int"}}}
+  "pollOptions": "Poll Options",
+  "@pollOptions": {
+    "description": "Poll options label"
+  },
+  "targetingFilters": "Targeting Filters",
+  "@targetingFilters": {
+    "description": "Targeting filters section"
+  },
+  "scheduling": "Scheduling",
+  "@scheduling": {
+    "description": "Scheduling section"
+  },
+  "scheduleForLater": "Schedule for Later",
+  "@scheduleForLater": {
+    "description": "Schedule for later option"
+  },
+  "messageSavedSuccessfully": "Message saved successfully",
+  "@messageSavedSuccessfully": {
+    "description": "Message saved successfully"
+  },
+  "errorSavingMessage": "Error saving message: {error}",
+  "@errorSavingMessage": {
+    "description": "Error saving message",
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "errorSendingMessage": "Error sending message: {error}",
+  "@errorSendingMessage": {
+    "description": "Error sending message",
+    "placeholders": {
+      "error": {}
+    }
+  },
+  "content": "Content",
+  "@content": {
+    "description": "Content label"
+  },
+  "type": "Type: {type}",
+  "@type": {
+    "description": "Type label",
+    "placeholders": {
+      "type": {}
+    }
+  },
+  "recipients": "Recipients: {count}",
+  "@recipients": {
+    "description": "Recipients label",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "created": "Created: {date}",
+  "@created": {
+    "description": "Created label",
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "scheduled": "Scheduled: {date}",
+  "@scheduled": {
+    "description": "Scheduled label",
+    "placeholders": {
+      "date": {}
+    }
+  },
+  "clicked": "Clicked: {count}",
+  "@clicked": {
+    "description": "Clicked label",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "status": "Status: {status}",
+  "@status": {
+    "description": "Status label",
+    "placeholders": {
+      "status": {}
+    }
+  },
+  "link": "Link: {link}",
+  "@link": {
+    "description": "Link label",
+    "placeholders": {
+      "link": {}
+    }
+  },
+  "close": "Close",
+  "@close": {
+    "description": "Close button"
+  },
+  "title": "Title",
+  "@title": {
+    "description": "Title label"
+  },
+  "pleaseEnterTitle": "Please enter a title",
+  "@pleaseEnterTitle": {
+    "description": "Please enter title message"
+  },
+  "messageType": "Message Type",
+  "@messageType": {
+    "description": "Message type label"
+  },
+  "pleaseEnterContent": "Please enter content",
+  "@pleaseEnterContent": {
+    "description": "Please enter content message"
+  },
+  "imageSelected": "Image selected",
+  "@imageSelected": {
+    "description": "Image selected message"
+  },
+  "videoSelected": "Video selected",
+  "@videoSelected": {
+    "description": "Video selected message"
+  },
+  "externalLink": "External Link",
+  "@externalLink": {
+    "description": "External link label"
+  },
+  "pleaseEnterLink": "Please enter a link",
+  "@pleaseEnterLink": {
+    "description": "Please enter link message"
+  },
+  "option": "Option",
+  "@option": {
+    "description": "Option label"
+  },
+  "estimatedRecipients": "Estimated Recipients",
+  "@estimatedRecipients": {
+    "description": "Estimated recipients label"
+  },
+  "countries": "Countries",
+  "@countries": {
+    "description": "Countries label"
+  },
+  "cities": "Cities",
+  "@cities": {
+    "description": "Cities label"
+  },
+  "subscriptionTiers": "Subscription Tiers",
+  "@subscriptionTiers": {
+    "description": "Subscription tiers label"
+  },
+  "userRoles": "User Roles",
+  "@userRoles": {
+    "description": "User roles label"
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Save button"
+  }
 }
