@@ -13,4 +13,3 @@ flutter.tar.xz
 .flutter-plugins-dependencies
 pubspec.lock
 third_party/pub_cache/
-third_party/verdaccio_storage/
