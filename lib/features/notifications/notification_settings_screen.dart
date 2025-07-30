@@ -3,8 +3,13 @@ import 'package:appoint/models/notification_settings.dart';
 import 'package:appoint/providers/auth_provider.dart';
 // import 'package:appoint/providers/notification_provider.dart'; // Unused
 import 'package:appoint/providers/user_settings_provider.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+final fcmTokenProvider = FutureProvider<String?>((ref) async {
+  return FirebaseMessaging.instance.getToken();
+});
 
 class NotificationSettingsScreen extends ConsumerWidget {
   const NotificationSettingsScreen({super.key});

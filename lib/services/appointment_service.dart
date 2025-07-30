@@ -2,6 +2,8 @@ import 'dart:core';
 
 import 'package:appoint/models/appointment.dart';
 import 'package:appoint/services/notification_service.dart';
+import 'dart:core' show DateTime, Duration;
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class AppointmentService {
