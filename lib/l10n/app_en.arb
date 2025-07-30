@@ -1952,7 +1952,7 @@
   },
   "subscriptionActivatedSuccessfully": "Subscription activated successfully!",
   "@subscriptionActivatedSuccessfully": {
-    "description": "Localization key for: Subscription activated successfully!"
+    "description": "Shown when a Stripe subscription is activated successfully"
   },
   "activityLogaction": "Activity: {action}",
   "@activityLogaction": {
@@ -2348,7 +2348,7 @@
   },
   "paymentWasCancelled": "Payment was cancelled",
   "@paymentWasCancelled": {
-    "description": "Localization key for: Payment was cancelled"
+    "description": "Shown when the user cancels a Stripe payment"
   },
   "clearAll": "Clear All",
   "@clearAll": {
@@ -2678,194 +2678,67 @@
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   },
-  "sendNow": "Send Now",
-  "@sendNow": {
-    "description": "Send now button"
-  },
-  "details": "Details",
-  "@details": {
-    "description": "Details button"
-  },
-  "noPermissionForBroadcast": "You do not have permission to send broadcast messages",
-  "@noPermissionForBroadcast": {
-    "description": "No permission for broadcast message"
-  },
-  "composeBroadcastMessage": "Compose Broadcast Message",
-  "@composeBroadcastMessage": {
-    "description": "Compose broadcast message title"
-  },
-  "checkingPermissions": "Checking permissions...",
-  "@checkingPermissions": {
-    "description": "Checking permissions message"
-  },
-  "errorCheckingPermissions": "Error checking permissions: {error}",
-  "@errorCheckingPermissions": {
-    "description": "Error checking permissions message",
+  "errorConfirmingPayment": "Error confirming payment: {error}",
+  "@errorConfirmingPayment": {
+    "description": "Shown when Stripe payment confirmation fails",
     "placeholders": {
       "error": {}
     }
   },
-  "mediaOptional": "Media (Optional)",
-  "@mediaOptional": {
-    "description": "Media optional section"
-  },
-  "pickImage": "Pick Image",
-  "@pickImage": {
-    "description": "Pick image button"
-  },
-  "pickVideo": "Pick Video",
-  "@pickVideo": {
-    "description": "Pick video button"
-  },
-  "pollOptions": "Poll Options",
-  "@pollOptions": {
-    "description": "Poll options label"
-  },
-  "targetingFilters": "Targeting Filters",
-  "@targetingFilters": {
-    "description": "Targeting filters section"
-  },
-  "scheduling": "Scheduling",
-  "@scheduling": {
-    "description": "Scheduling section"
-  },
-  "scheduleForLater": "Schedule for Later",
-  "@scheduleForLater": {
-    "description": "Schedule for later option"
-  },
-  "messageSavedSuccessfully": "Message saved successfully",
-  "@messageSavedSuccessfully": {
-    "description": "Message saved successfully"
-  },
-  "errorSavingMessage": "Error saving message: {error}",
-  "@errorSavingMessage": {
-    "description": "Error saving message",
+  "subscribeTo": "Subscribe to {planName}",
+  "@subscribeTo": {
+    "description": "Title in app bar for subscription screen",
     "placeholders": {
-      "error": {}
+      "planName": {}
     }
   },
-  "errorSendingMessage": "Error sending message: {error}",
-  "@errorSendingMessage": {
-    "description": "Error sending message",
-    "placeholders": {
-      "error": {}
-    }
+  "completeYourSubscription": "Complete your subscription below",
+  "@completeYourSubscription": {
+    "description": "Header guiding user to complete subscription steps"
   },
-  "content": "Content",
-  "@content": {
-    "description": "Content label"
+  "errorLoadingCheckout": "Error loading checkout",
+  "@errorLoadingCheckout": {
+    "description": "Shown when checkout page fails to load"
   },
-  "type": "Type: {type}",
-  "@type": {
-    "description": "Type label",
-    "placeholders": {
-      "type": {}
-    }
+  "startTimeLabel": "Start Time",
+  "@startTimeLabel": {
+    "description": "Label for start time input"
   },
-  "recipients": "Recipients: {count}",
-  "@recipients": {
-    "description": "Recipients label",
-    "placeholders": {
-      "count": {}
-    }
+  "endTimeLabel": "End Time",
+  "@endTimeLabel": {
+    "description": "Label for end time input"
   },
-  "created": "Created: {date}",
-  "@created": {
-    "description": "Created label",
-    "placeholders": {
-      "date": {}
-    }
+  "endTimeAfterStartTimeError": "End time must be after start time",
+  "@endTimeAfterStartTimeError": {
+    "description": "Error message when end time is before start time"
   },
-  "scheduled": "Scheduled: {date}",
-  "@scheduled": {
-    "description": "Scheduled label",
-    "placeholders": {
-      "date": {}
-    }
+  "studioManagement": "Studio Management",
+  "@studioManagement": {
+    "description": "Drawer header title for studio management section"
   },
-  "clicked": "Clicked: {count}",
-  "@clicked": {
-    "description": "Clicked label",
-    "placeholders": {
-      "count": {}
-    }
+  "loginFailed": "Login failed: {error}",
+  "@loginFailed": {
+    "description": "Shown when login fails",
+    "placeholders": { "error": {} }
   },
-  "status": "Status: {status}",
-  "@status": {
-    "description": "Status label",
-    "placeholders": {
-      "status": {}
-    }
-  },
-  "link": "Link: {link}",
-  "@link": {
-    "description": "Link label",
-    "placeholders": {
-      "link": {}
-    }
-  },
-  "close": "Close",
-  "@close": {
-    "description": "Close button"
-  },
-  "title": "Title",
-  "@title": {
-    "description": "Title label"
-  },
-  "pleaseEnterTitle": "Please enter a title",
-  "@pleaseEnterTitle": {
-    "description": "Please enter title message"
-  },
-  "messageType": "Message Type",
-  "@messageType": {
-    "description": "Message type label"
-  },
-  "pleaseEnterContent": "Please enter content",
-  "@pleaseEnterContent": {
-    "description": "Please enter content message"
-  },
-  "imageSelected": "Image selected",
-  "@imageSelected": {
-    "description": "Image selected message"
-  },
-  "videoSelected": "Video selected",
-  "@videoSelected": {
-    "description": "Video selected message"
-  },
-  "externalLink": "External Link",
-  "@externalLink": {
-    "description": "External link label"
-  },
-  "pleaseEnterLink": "Please enter a link",
-  "@pleaseEnterLink": {
-    "description": "Please enter link message"
-  },
-  "option": "Option",
-  "@option": {
-    "description": "Option label"
-  },
-  "estimatedRecipients": "Estimated Recipients",
-  "@estimatedRecipients": {
-    "description": "Estimated recipients label"
-  },
-  "countries": "Countries",
-  "@countries": {
-    "description": "Countries label"
-  },
-  "cities": "Cities",
-  "@cities": {
-    "description": "Cities label"
-  },
-  "subscriptionTiers": "Subscription Tiers",
-  "@subscriptionTiers": {
-    "description": "Subscription tiers label"
-  },
-  "userRoles": "User Roles",
-  "@userRoles": {
-    "description": "User roles label"
-  },
-  "save": "Save",
-  "@save": {
-    "description": "Save button"
-  }
+  "nameLabel": "Name",
+  "@nameLabel": { "description": "Label for name field" },
+  "pleaseEnterName": "Please enter a name",
+  "@pleaseEnterName": { "description": "Validation error when name missing" },
+  "phoneNumberLabel": "Phone Number",
+  "@phoneNumberLabel": { "description": "Label for phone number field" },
+  "pleaseEnterPhoneNumber": "Please enter a phone number",
+  "@pleaseEnterPhoneNumber": { "description": "Validation error for phone number" },
+  "emailOptionalLabel": "Email (Optional)",
+  "@emailOptionalLabel": { "description": "Label for optional email field" },
+  "requiresInstallFallback": "Requires Install Fallback",
+  "@requiresInstallFallback": { "description": "Toggle label for install fallback" },
+  "fromName": "From: {name}",
+  "@fromName": { "description": "Label displaying the sender name", "placeholders": { "name": {} } },
+  "phoneLabel": "Phone: {phone}",
+  "@phoneLabel": { "description": "Label displaying phone number", "placeholders": { "phone": {} } },
+  "unknown": "Unknown",
+  "@unknown": { "description": "Fallback text for unknown values" },
+  "noPhone": "No phone",
+  "@noPhone": { "description": "Fallback when no phone is available" }
 }
