@@ -55,7 +55,7 @@ void main() {
       expect(find.byIcon(Icons.refresh), findsOneWidget);
 
       // Locate and tap the Retry label directly
-      retryText = find.text('Retry');
+      final retryText = find.text('Retry');
       expect(retryText, findsOneWidget);
       await tester.tap(retryText);
       await tester.pumpAndSettle();
@@ -78,12 +78,12 @@ void main() {
       await tester.pumpAndSettle();
 
       // Assert: Network error UI styling is correct
-      wifiOffIcon = tester.widget<Icon>(find.byIcon(Icons.wifi_off));
+      final wifiOffIcon = tester.widget<Icon>(find.byIcon(Icons.wifi_off));
       expect(wifiOffIcon.size, 64);
       expect(wifiOffIcon.color, Colors.red);
 
       // Check that Retry text is present
-      retryText = find.text('Retry');
+      final retryText = find.text('Retry');
       expect(retryText, findsOneWidget);
     });
 
@@ -129,7 +129,7 @@ void main() {
       expect(find.textContaining('check your connection'), findsOneWidget);
       expect(find.textContaining('try again'), findsOneWidget);
       expect(find.byIcon(Icons.refresh), findsOneWidget);
-      retryText = find.text('Retry');
+      final retryText = find.text('Retry');
       expect(retryText, findsOneWidget);
     });
 
@@ -157,7 +157,7 @@ void main() {
       debugPrint(tester.element(find.byType(AuthWrapper)).toStringDeep());
 
       // Locate the Retry label
-      retryText = find.text('Retry');
+      final retryText = find.text('Retry');
       expect(retryText, findsOneWidget);
 
       // Tap the label to trigger the button

@@ -10,7 +10,7 @@ import 'booking_conflict_test.mocks.dart';
 void main() {
   group('BookingService booking conflict edge cases', () {
     test('should detect conflict for two overlapping bookings', () async {
-      mockBookingService = MockBookingService();
+      final mockBookingService = MockBookingService();
       final booking1 = Booking(
         id: '1',
         userId: 'userA',
@@ -42,9 +42,9 @@ void main() {
             final b = bookings[j];
             if (a.staffId == b.staffId) {
               final aStart = a.dateTime;
-              aEnd = a.dateTime.add(a.duration);
+              final aEnd = a.dateTime.add(a.duration);
               final bStart = b.dateTime;
-              bEnd = b.dateTime.add(b.duration);
+              final bEnd = b.dateTime.add(b.duration);
               if (aStart.isBefore(bEnd) && bStart.isBefore(aEnd)) {
                 return true;
               }
@@ -54,9 +54,9 @@ void main() {
         return false;
       }
 
-      bookingsStream = mockBookingService.getBookings();
+      final bookingsStream = mockBookingService.getBookings();
       final bookings = await bookingsStream.first;
-      conflict = hasConflict(bookings);
+      final conflict = hasConflict(bookings);
       expect(conflict, isTrue);
     });
   });

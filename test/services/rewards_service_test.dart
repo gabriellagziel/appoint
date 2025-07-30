@@ -33,7 +33,7 @@ void main() {
       await service.addReferralSignupPoints(userId);
       await service.addReferralSignupPoints(userId);
 
-      points = await service.getPoints(userId);
+      final points = await service.getPoints(userId);
       expect(points, RewardsService.referralSignupPoints * 2);
     });
   });

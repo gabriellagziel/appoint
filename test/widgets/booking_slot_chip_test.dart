@@ -19,7 +19,7 @@ void main() {
       );
 
       // Ensure semantics label exists for screen-reader users
-      semantics = tester.getSemantics(find.byType(BookingSlotChip));
+      final semantics = tester.getSemantics(find.byType(BookingSlotChip));
       expect(semantics, isNotNull);
 
       // Tap and verify callback
@@ -73,7 +73,7 @@ void main() {
         ),
       );
 
-      semantics = tester.getSemantics(find.byType(BookingSlotChip));
+      final semantics = tester.getSemantics(find.byType(BookingSlotChip));
       expect(semantics, isNotNull);
     });
 
@@ -91,7 +91,7 @@ void main() {
         ),
       );
 
-      semantics = tester.getSemantics(find.byType(BookingSlotChip));
+      final semantics = tester.getSemantics(find.byType(BookingSlotChip));
       expect(semantics, isNotNull);
     });
 
@@ -146,7 +146,7 @@ void main() {
         ),
       );
 
-      chip = tester.widget<FilterChip>(find.byType(FilterChip));
+      final chip = tester.widget<FilterChip>(find.byType(FilterChip));
       expect(chip.selected, true);
     });
 
@@ -164,7 +164,7 @@ void main() {
         ),
       );
 
-      semantics = tester.getSemantics(find.byType(BookingSlotChip));
+      final semantics = tester.getSemantics(find.byType(BookingSlotChip));
       expect(semantics, isNotNull);
     });
 
@@ -332,12 +332,12 @@ void main() {
       );
 
       // Verify all chips are rendered with proper semantics
-      chips = find.byType(BookingSlotChip);
+      final chips = find.byType(BookingSlotChip);
       expect(chips, findsNWidgets(3));
 
       // Verify each individual chip has semantics
       for (var i = 0; i < 3; i++) {
-        semantics = tester.getSemantics(chips.at(i));
+        final semantics = tester.getSemantics(chips.at(i));
         expect(semantics, isNotNull);
       }
     });
