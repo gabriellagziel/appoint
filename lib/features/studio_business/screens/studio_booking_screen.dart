@@ -2,14 +2,9 @@ import 'package:appoint/features/studio_business/models/staff_profile.dart';
 import 'package:appoint/features/studio_business/providers/booking_provider.dart';
 import 'package:appoint/features/studio_business/providers/business_profile_provider.dart';
 import 'package:appoint/features/studio_business/providers/weekly_usage_provider.dart';
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/widgets/whatsapp_group_share_button.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class StudioBookingScreen extends ConsumerStatefulWidget {
   const StudioBookingScreen({super.key});
@@ -29,7 +24,6 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   final _phoneController = TextEditingController();
   final _dateController = TextEditingController();
   final _timeController = TextEditingController();
-  bool _isProcessing = false;
 
   @override
   Widget build(BuildContext context) {
@@ -154,62 +148,33 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
                     ),
                     const SizedBox(height: 24),
 
-                    // Show booking state
-                    bookingState.when(
-                      data: (booking) => const SizedBox.shrink(),
-                      loading: () => const Center(
-                        child: Padding(
-                          padding: EdgeInsets.all(16),
-                          child: CircularProgressIndicator(),
-                        ),
-                      ),
-                      error: (error, stack) => Container(
-                        padding: const EdgeInsets.all(16),
+                    // Error message display
+                    if (bookingState.hasError)
+                      Container(
+                        padding: const EdgeInsets.all(12),
                         margin: const EdgeInsets.only(bottom: 16),
                         decoration: BoxDecoration(
-                          color: Colors.red.withValues(alpha: 0.1),
+                          color: Colors.red.shade50,
+                          border: Border.all(color: Colors.red.shade200),
                           borderRadius: BorderRadius.circular(8),
-                          border: Border.all(
-                              color: Colors.red.withValues(alpha: 0.3)),
                         ),
                         child: Text(
-                          'Error: $error',
-                          style: const TextStyle(color: Colors.red),
+                          'Error: ${bookingState.error}',
+                          style: TextStyle(color: Colors.red.shade700),
                         ),
                       ),
-                    ),
 
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: _isProcessing || bookingState.isLoading
-                            ? null
-                            : _processBooking,
-                        child: _isProcessing || bookingState.isLoading
-                            ? const CircularProgressIndicator()
+                        onPressed: bookingState.isLoading ? null : _processBooking,
+                        child: bookingState.isLoading
+                            ? const SizedBox(
+                                height: 20,
+                                width: 20,
+                                child: CircularProgressIndicator(strokeWidth: 2),
+                              )
                             : const Text('Send Booking Invite'),
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                    
-                    // WhatsApp Group Share Button
-                    SizedBox(
-                      width: double.infinity,
-                      child: WhatsAppGroupShareButton(
-                        appointmentId: 'studio-booking-${DateTime.now().millisecondsSinceEpoch}',
-                        creatorId: FirebaseAuth.instance.currentUser?.uid ?? '',
-                        meetingTitle: 'Studio Session with ${_nameController.text}',
-                        meetingDate: DateTime.tryParse('${_dateController.text} ${_timeController.text}') ?? DateTime.now().add(Duration(days: 1)),
-                        showAsDialog: true,
-                        onShareComplete: () {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            const SnackBar(
-                              content: Text('Shared to WhatsApp! Participants can join using the link.'),
-                              backgroundColor: Color(0xFF25D366),
-                              duration: Duration(seconds: 3),
-                            ),
-                          );
-                        },
                       ),
                     ),
                   ],
@@ -223,8 +188,6 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
 
   Future<void> _processBooking() async {
     if (_formKey.currentState!.validate()) {
-      setState(() => _isProcessing = true);
-
       try {
         // Check weekly usage for upgrade modal
         final weeklyUsage = ref.read(weeklyUsageProvider.notifier);
@@ -233,11 +196,11 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
           return;
         }
 
-        // Create booking using context.read
+        // Create booking using context.read(bookingProvider)
         final bookingNotifier = ref.read(bookingProvider.notifier);
         await bookingNotifier.submitBooking(
           staffProfileId: selectedStaff?.id ?? 'default_staff_id',
-          businessProfileId: 'business1', // This should come from the profile
+          businessProfileId: 'business1', // Use default business ID since BusinessProfile doesn't have id field
           date: selectedDate ?? DateTime.now(),
           startTime: selectedTimeSlot ?? '09:00',
           endTime: _getEndTime(selectedTimeSlot ?? '09:00'),
@@ -251,7 +214,7 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
-              builder: (_) => const Container(),
+              builder: (_) => const REDACTED_TOKEN(),
             ),
           );
         }
@@ -260,10 +223,6 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('Error: $e')),
           );
-        }
-      } finally {
-        if (mounted) {
-          setState(() => _isProcessing = false);
         }
       }
     }
@@ -319,26 +278,26 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
   }
 }
 
-class StudioBookingConfirmScreen extends StatelessWidget {
-  const Container({super.key});
+class REDACTED_TOKEN extends StatelessWidget {
+  const REDACTED_TOKEN({super.key});
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(title: const Text('Booking Confirmed')),
-        body: const Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.check_circle, color: Colors.green, size: 64),
-              SizedBox(height: 16),
-              Text(
-                'Your studio booking has been confirmed!',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 8),
-              Text('You will receive a confirmation email shortly.'),
-            ],
-          ),
+      appBar: AppBar(title: const Text('Booking Confirmed')),
+      body: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.check_circle, color: Colors.green, size: 64),
+            SizedBox(height: 16),
+            Text(
+              'Your studio booking has been confirmed!',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 8),
+            Text('You will receive a confirmation email shortly.'),
+          ],
         ),
-      );
+      ),
+    );
 }
