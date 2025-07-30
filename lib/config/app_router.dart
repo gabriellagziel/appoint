@@ -71,6 +71,9 @@ import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
 import 'package:appoint/features/profile/enhanced_profile_screen.dart';
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:appoint/features/onboarding/permissions_onboarding_screen.dart';
+import 'package:appoint/features/reminders/screens/reminders_dashboard_screen.dart';
+import 'package:appoint/features/reminders/screens/create_reminder_screen.dart';
+import 'package:appoint/features/admin/screens/reminder_analytics_screen.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
     initialLocation: '/',
@@ -106,6 +109,16 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         builder: (context, final state) => const UserProfileScreen(),
       ),
       GoRoute(
+        path: '/reminders',
+        name: 'reminders',
+        builder: (context, final state) => const RemindersDashboardScreen(),
+      ),
+      GoRoute(
+        path: '/reminders/create',
+        name: 'createReminder',
+        builder: (context, final state) => const CreateReminderScreen(),
+      ),
+      GoRoute(
         path: '/search',
         name: 'search',
         builder: (context, final state) => const SearchScreen(),
@@ -124,6 +137,11 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         path: '/admin/messages',
         name: 'adminMessages',
         builder: (context, final state) => const AdminBroadcastScreen(),
+      ),
+      GoRoute(
+        path: '/admin/reminder-analytics',
+        name: 'adminReminderAnalytics',
+        builder: (context, final state) => const ReminderAnalyticsScreen(),
       ),
 
       GoRoute(
