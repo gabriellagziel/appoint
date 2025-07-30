@@ -1,14 +1,13 @@
-import 'package:firebase_auth_platform_interface/firebase_auth_platform_interface.dart';
 import 'package:flutter_test/flutter_test.dart';
-
-import 'test_config.dart';
-import 'test_setup.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'fake_firebase_setup.dart';
 
 void main() {
-  setupTestConfig();
-  setupFirebaseMocks();
+  TestWidgetsFlutterBinding.ensureInitialized();
 
-  test('setup loads without error', () {
-    expect(() => FirebaseAuthPlatform.instance, returnsNormally);
+  test('Firebase initializes with mocks', () async {
+    final app = await initializeTestFirebase();
+    expect(Firebase.apps.isNotEmpty, isTrue);
+    expect(app, isA<FirebaseApp>());
   });
 }
