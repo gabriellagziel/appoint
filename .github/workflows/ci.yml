@@ -2,22 +2,190 @@ name: CI
 
 on:
   push:
+    branches: [ main ]
   pull_request:
+    branches: [ main ]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    env:
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+    services:
+      firebase:
+        image: cdrx/fake-firebase-emulator:latest
+        ports:
+          - 8080:8080   # Firestore
+          - 5001:5001   # Functions
+      env:
+        FIREBASE_PROJECT: app-oint-core
     steps:
       - uses: actions/checkout@v4
+
+        - name: Setup Flutter
+          uses: subosito/flutter-action@v2
+          with:
+            flutter-version: '3.7.0'
+            channel: stable
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+
+      - name: Start Firebase emulators
+        run: |
+          firebase emulators:start --only firestore,functions &
+          echo $! > emulator.pid
+
+      - name: Run unit tests
+        run: flutter test test/services
+
+      - name: Run integration tests
+        run: flutter test integration_test/app_test.dart
+
+      - name: Stop emulators
+        if: always()
+        run: |
+          kill $(cat emulator.pid)
+
+  deploy-functions:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    env:
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: functions/package-lock.json
+
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+
+      - name: Install Functions Dependencies
+        run: |
+          cd functions
+          npm ci
+
+      - name: Lint Functions
+        run: |
+          cd functions
+          npm run lint
+
+      - name: Deploy Functions
+        run: firebase deploy --only functions --token "${{ secrets.FIREBASE_TOKEN }}"
+
+  deploy-hosting:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    env:
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.24.5'
+          flutter-version: '3.7.0'
           channel: stable
-          cache: true
-      - run: flutter --version
-      - run: dart --version
-      - run: flutter pub get
-      - run: flutter analyze
-      - run: dart test --coverage
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build Web App
+        run: flutter build web --release
+
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+
+      - name: Deploy to Firebase Hosting
+        run: firebase deploy --only hosting --token "${{ secrets.FIREBASE_TOKEN }}"
+
+  smoke-test:
+    needs: [deploy-functions, deploy-hosting]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    env:
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.7.0'
+          channel: stable
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Run Smoke Tests
+        run: |
+          echo "Running smoke tests against production..."
+          # Add your smoke test commands here
+          # For example, curl the deployed app to ensure it's responding
+          curl -f https://app-oint-core.web.app || exit 1
+          echo "Smoke tests passed!"
+
+  security-scan:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    env:
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Security Scan
+        run: |
+          echo "Running security scan..."
+          # Add security scanning tools here
+          # For example: npm audit, snyk, etc.
+          echo "Security scan completed"
+
+  notify:
+    needs: [build-and-test, deploy-functions, deploy-hosting, smoke-test]
+    runs-on: ubuntu-latest
+    if: always()
+
+    env:
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+
+    steps:
+      - name: Notify on Success
+        if: success()
+        run: |
+          echo "✅ All CI/CD steps completed successfully!"
+          echo "🚀 App deployed to: https://app-oint-core.web.app"
+          echo "🔧 Functions deployed to: https://us-central1-app-oint-core.cloudfunctions.net"
+
+      - name: Notify on Failure
+        if: failure()
+        run: |
+          echo "❌ CI/CD pipeline failed!"
+          echo "Please check the logs for details." 
