@@ -1,33 +1,32 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/bin/bash
+set -e
 
-DART_VERSION=3.4.0
-FLUTTER_VERSION=3.32.0
-
-mkdir -p "$HOME/sdks"
-cd "$HOME/sdks"
+DART_VERSION="3.4.0"
+FLUTTER_VERSION="3.32.0"
 
 # Install Dart
-if [ ! -d "dart-sdk" ]; then
-  curl -sSL "https://storage.googleapis.com/dart-archive/channels/stable/release/${DART_VERSION}/sdk/dartsdk-linux-x64-release.zip" -o dartsdk.zip
-  unzip -q dartsdk.zip
-  rm dartsdk.zip
-fi
+echo "Installing Dart $DART_VERSION..."
+mkdir -p ~/.local
+curl -sSL "https://storage.googleapis.com/dart-archive/channels/stable/release/${DART_VERSION}/sdk/dartsdk-linux-x64-release.zip" -o dart-sdk.zip
+unzip -q dart-sdk.zip -d ~/.local
+rm dart-sdk.zip
+export PATH="${HOME}/.local/dart-sdk/bin:$PATH"
 
-# Install Flutter
-if [ ! -d "flutter" ]; then
-  curl -sSL "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${FLUTTER_VERSION}-stable.tar.xz" -o flutter.tar.xz
-  tar xf flutter.tar.xz
-  rm flutter.tar.xz
-fi
+echo "Installing Flutter $FLUTTER_VERSION..."
+curl -sSL "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${FLUTTER_VERSION}-stable.tar.xz" -o flutter.tar.xz
+tar xf flutter.tar.xz -C ~/.local
+rm flutter.tar.xz
+export PATH="${HOME}/.local/flutter/bin:$PATH"
 
-export PATH="$HOME/sdks/dart-sdk/bin:$HOME/sdks/flutter/bin:$PATH"
+flutter --version
+dart --version
 
-yes | flutter doctor --android-licenses >/dev/null 2>&1 || true
+# Accept licenses
+flutter doctor --android-licenses || true
 
-cd "$(git rev-parse --show-toplevel)"
-
+# Get dependencies and run checks
 flutter pub get
 flutter analyze
+dart test
 
-dart test --coverage
+echo "Setup complete"
