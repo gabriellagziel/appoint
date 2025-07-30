@@ -1,0 +1,2891 @@
+# Complete Translation Needs Report
+
+## Overview
+This report provides a comprehensive list of ALL translation needs across all ARB files.
+
+**Total Expected Keys:** 166  
+**Files Needing Translation:** 34  
+**Total Missing Keys:** 98  
+**Total TODO_TRANSLATE Entries:** 2135  
+**Total Translation Tasks:** 2233
+
+## Summary by Locale
+
+| Locale | File | Missing Keys | TODO Entries | Total Tasks | Status |
+|--------|------|--------------|--------------|-------------|---------|
+| bs | app_bs.arb | 0 | 166 | 166 | ❌ Needs Translation |
+| gl | app_gl.arb | 0 | 166 | 166 | ❌ Needs Translation |
+| lt | app_lt.arb | 0 | 166 | 166 | ❌ Needs Translation |
+| mk | app_mk.arb | 0 | 166 | 166 | ❌ Needs Translation |
+| mt | app_mt.arb | 0 | 166 | 166 | ❌ Needs Translation |
+| sq | app_sq.arb | 0 | 166 | 166 | ❌ Needs Translation |
+| sr | app_sr.arb | 0 | 166 | 166 | ❌ Needs Translation |
+| de | app_de.arb | 0 | 103 | 103 | ❌ Needs Translation |
+| es | app_es.arb | 0 | 103 | 103 | ❌ Needs Translation |
+| fr | app_fr.arb | 0 | 103 | 103 | ❌ Needs Translation |
+| it | app_it.arb | 0 | 103 | 103 | ❌ Needs Translation |
+| pt | app_pt.arb | 0 | 103 | 103 | ❌ Needs Translation |
+| lv | app_lv.arb | 0 | 71 | 71 | ❌ Needs Translation |
+| ur | app_ur.arb | 0 | 71 | 71 | ❌ Needs Translation |
+| ko | app_ko.arb | 0 | 66 | 66 | ❌ Needs Translation |
+| bn | app_bn.arb | 0 | 23 | 23 | ❌ Needs Translation |
+| vi | app_vi.arb | 2 | 18 | 20 | ❌ Needs Translation |
+| bn_BD | app_bn_BD.arb | 19 | 0 | 19 | ❌ Needs Translation |
+| he | app_he.arb | 19 | 0 | 19 | ❌ Needs Translation |
+| ja | app_ja.arb | 0 | 19 | 19 | ❌ Needs Translation |
+| ms | app_ms.arb | 0 | 19 | 19 | ❌ Needs Translation |
+| nl | app_nl.arb | 0 | 19 | 19 | ❌ Needs Translation |
+| no | app_no.arb | 0 | 19 | 19 | ❌ Needs Translation |
+| pl | app_pl.arb | 0 | 19 | 19 | ❌ Needs Translation |
+| pt_BR | app_pt_BR.arb | 19 | 0 | 19 | ❌ Needs Translation |
+| ro | app_ro.arb | 0 | 19 | 19 | ❌ Needs Translation |
+| ru | app_ru.arb | 0 | 19 | 19 | ❌ Needs Translation |
+| sk | app_sk.arb | 0 | 19 | 19 | ❌ Needs Translation |
+| sl | app_sl.arb | 0 | 19 | 19 | ❌ Needs Translation |
+| sv | app_sv.arb | 0 | 19 | 19 | ❌ Needs Translation |
+| th | app_th.arb | 0 | 19 | 19 | ❌ Needs Translation |
+| tr | app_tr.arb | 19 | 0 | 19 | ❌ Needs Translation |
+| uk | app_uk.arb | 19 | 0 | 19 | ❌ Needs Translation |
+| zh | app_zh.arb | 1 | 0 | 1 | ❌ Needs Translation |
+
+## Detailed Translation Needs by Locale
+
+### bs - app_bs.arb
+**Total Translation Tasks:** 166
+
+**TODO_TRANSLATE Entries (166):**
+- `about`: TODO_TRANSLATE: About
+- `accept`: TODO_TRANSLATE: Accept
+- `accessRevokedSuccessfully`: TODO_TRANSLATE: Access revoked successfully
+- `add`: TODO_TRANSLATE: Add
+- `adminBroadcast`: TODO_TRANSLATE: Admin Broadcast
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `appTitle`: TODO_TRANSLATE: APP-OINT
+- `back`: TODO_TRANSLATE: Back
+- `cancel`: TODO_TRANSLATE: Cancel
+- `cancelInvite`: TODO_TRANSLATE: Cancel Invite
+- `cancelInviteConfirmation`: TODO_TRANSLATE: Are you sure you want to cancel this invite?
+- `checkingPermissions`: TODO_TRANSLATE: Checking permissions...
+- `choose`: TODO_TRANSLATE: Choose
+- `clicked`: TODO_TRANSLATE: Clicked
+- `clientScreenTBD`: TODO_TRANSLATE: Client screen coming soon
+- `close`: TODO_TRANSLATE: Close
+- `composeBroadcastMessage`: TODO_TRANSLATE: Compose Broadcast Message
+- `confirm`: TODO_TRANSLATE: Confirm
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `connectedChildren`: TODO_TRANSLATE: Connected Children
+- `content`: TODO_TRANSLATE: Content
+- `copy`: TODO_TRANSLATE: Copy
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createLiveSession`: TODO_TRANSLATE: Create Live Session
+- `createNew`: TODO_TRANSLATE: Create New
+- `createVirtualSession`: TODO_TRANSLATE: Create Virtual Session
+- `createYourFirstGame`: TODO_TRANSLATE: Create your first game
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `created`: TODO_TRANSLATE: Created
+- `customizeMessage`: TODO_TRANSLATE: Customize Message
+- `cut`: TODO_TRANSLATE: Cut
+- `dashboard`: TODO_TRANSLATE: Dashboard
+- `decline`: TODO_TRANSLATE: Decline
+- `defaultShareMessage`: TODO_TRANSLATE: Let's meet via Appoint!
+- `delete`: TODO_TRANSLATE: Delete
+- `details`: TODO_TRANSLATE: Details
+- `done`: TODO_TRANSLATE: Done
+- `download`: TODO_TRANSLATE: Download
+- `edit`: TODO_TRANSLATE: Edit
+- `email`: TODO_TRANSLATE: Email
+- `enableNotifications`: TODO_TRANSLATE: Enable Notifications
+- `enterGroupName`: TODO_TRANSLATE: Enter group name
+- `error`: TODO_TRANSLATE: Error
+- `errorCheckingPermissions`: TODO_TRANSLATE: Error checking permissions
+- `errorLoadingFamilyLinks`: TODO_TRANSLATE: Error loading family links
+- `errorLoadingInvites`: TODO_TRANSLATE: Error loading invites
+- `errorLoadingPrivacyRequests`: TODO_TRANSLATE: Error loading privacy requests
+- `errorLoadingProfile`: TODO_TRANSLATE: Error loading profile
+- `errorSavingMessage`: TODO_TRANSLATE: Error saving message
+- `errorSendingMessage`: TODO_TRANSLATE: Error sending message
+- `failedToActionPrivacyRequest`: TODO_TRANSLATE: Failed to action privacy request
+- `failedToCancelInvite`: TODO_TRANSLATE: Failed to cancel invite
+- `failedToResendOtp`: TODO_TRANSLATE: Failed to resend OTP
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `familyDashboard`: TODO_TRANSLATE: Family Dashboard
+- `familyMembers`: TODO_TRANSLATE: Family Members
+- `fcmToken`: TODO_TRANSLATE: FCM Token
+- `forgotPassword`: TODO_TRANSLATE: Forgot Password?
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `home`: TODO_TRANSLATE: Home
+- `invite`: TODO_TRANSLATE: Invite
+- `inviteCancelledSuccessfully`: TODO_TRANSLATE: Invite cancelled successfully
+- `inviteDetail`: TODO_TRANSLATE: Invite Details
+- `invited`: TODO_TRANSLATE: Invited
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `loading`: TODO_TRANSLATE: Loading...
+- `login`: TODO_TRANSLATE: Login
+- `logout`: TODO_TRANSLATE: Logout
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `mediaOptional`: TODO_TRANSLATE: Media (Optional)
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `meetingSharedSuccessfully`: TODO_TRANSLATE: Meeting shared successfully
+- `messageSavedSuccessfully`: TODO_TRANSLATE: Message saved successfully
+- `messageSentSuccessfully`: TODO_TRANSLATE: Message sent successfully
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `myProfile`: TODO_TRANSLATE: My Profile
+- `next`: TODO_TRANSLATE: Next
+- `no`: TODO_TRANSLATE: No
+- `noBroadcastMessages`: TODO_TRANSLATE: No messages yet
+- `noFamilyMembersYet`: TODO_TRANSLATE: No family members yet
+- `noGamesYet`: TODO_TRANSLATE: No games yet
+- `noInvites`: TODO_TRANSLATE: No invites
+- `noPermissionForBroadcast`: TODO_TRANSLATE: No permission for broadcast
+- `noProfileFound`: TODO_TRANSLATE: No profile found
+- `noResults`: TODO_TRANSLATE: No results found
+- `noSessionsYet`: TODO_TRANSLATE: No sessions yet
+- `notificationSettings`: TODO_TRANSLATE: Notification Settings
+- `notifications`: TODO_TRANSLATE: Notifications
+- `ok`: TODO_TRANSLATE: OK
+- `opened`: TODO_TRANSLATE: Opened
+- `otpResentSuccessfully`: TODO_TRANSLATE: OTP resent successfully
+- `participants`: TODO_TRANSLATE: Participants
+- `password`: TODO_TRANSLATE: Password
+- `paste`: TODO_TRANSLATE: Paste
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `pickImage`: TODO_TRANSLATE: Pick Image
+- `pickVideo`: TODO_TRANSLATE: Pick Video
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseFriends`: TODO_TRANSLATE: Choose friends to invite
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeChooseTime`: TODO_TRANSLATE: Choose a time
+- `playtimeCreate`: TODO_TRANSLATE: Create
+- `playtimeCreateSession`: TODO_TRANSLATE: Create a Playtime Session
+- `playtimeDescription`: TODO_TRANSLATE: Enjoy live or virtual games with your friends!
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameDeleted`: TODO_TRANSLATE: Game deleted
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeHub`: TODO_TRANSLATE: Playtime Hub
+- `playtimeLandingChooseMode`: TODO_TRANSLATE: Choose your play mode:
+- `playtimeLive`: TODO_TRANSLATE: Live Play
+- `playtimeLiveScheduled`: TODO_TRANSLATE: Live playtime scheduled!
+- `playtimeModeLive`: TODO_TRANSLATE: Live Play
+- `playtimeModeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `playtimeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeVirtualStarted`: TODO_TRANSLATE: Virtual playtime started!
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `previous`: TODO_TRANSLATE: Previous
+- `profile`: TODO_TRANSLATE: Profile
+- `quickActions`: TODO_TRANSLATE: Quick Actions
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `recipients`: TODO_TRANSLATE: Recipients
+- `redo`: TODO_TRANSLATE: Redo
+- `refresh`: TODO_TRANSLATE: Refresh
+- `removeChild`: TODO_TRANSLATE: Remove Child
+- `requestType`: TODO_TRANSLATE: Request Type
+- `retry`: TODO_TRANSLATE: Retry
+- `revoke`: TODO_TRANSLATE: Revoke
+- `revokeAccess`: TODO_TRANSLATE: Revoke Access
+- `revokeAccessConfirmation`: TODO_TRANSLATE: Are you sure you want to revoke access?
+- `save`: TODO_TRANSLATE: Save
+- `saveGroupForRecognition`: TODO_TRANSLATE: Save Group for Recognition
+- `scheduleForLater`: TODO_TRANSLATE: Schedule for Later
+- `scheduleMessage`: TODO_TRANSLATE: Schedule Message
+- `scheduled`: TODO_TRANSLATE: Scheduled
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `scheduling`: TODO_TRANSLATE: Scheduling
+- `search`: TODO_TRANSLATE: Search
+- `select`: TODO_TRANSLATE: Select
+- `sendNow`: TODO_TRANSLATE: Send Now
+- `settings`: TODO_TRANSLATE: Settings
+- `share`: TODO_TRANSLATE: Share
+- `shareOnWhatsApp`: TODO_TRANSLATE: Share on WhatsApp
+- `signUp`: TODO_TRANSLATE: Sign Up
+- `staffScreenTBD`: TODO_TRANSLATE: Staff screen coming soon
+- `status`: TODO_TRANSLATE: Status
+- `statusColon`: TODO_TRANSLATE: Status:
+- `success`: TODO_TRANSLATE: Success
+- `targetingFilters`: TODO_TRANSLATE: Targeting Filters
+- `type`: TODO_TRANSLATE: Type
+- `undo`: TODO_TRANSLATE: Undo
+- `upcomingSessions`: TODO_TRANSLATE: Upcoming Sessions
+- `upload`: TODO_TRANSLATE: Upload
+- `viewAll`: TODO_TRANSLATE: View All
+- `welcome`: TODO_TRANSLATE: Welcome
+- `welcomeToPlaytime`: TODO_TRANSLATE: Welcome to Playtime
+- `yes`: TODO_TRANSLATE: Yes
+- `yesCancel`: TODO_TRANSLATE: Yes, Cancel
+
+---
+
+### gl - app_gl.arb
+**Total Translation Tasks:** 166
+
+**TODO_TRANSLATE Entries (166):**
+- `about`: TODO_TRANSLATE: About
+- `accept`: TODO_TRANSLATE: Accept
+- `accessRevokedSuccessfully`: TODO_TRANSLATE: Access revoked successfully
+- `add`: TODO_TRANSLATE: Add
+- `adminBroadcast`: TODO_TRANSLATE: Admin Broadcast
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `appTitle`: TODO_TRANSLATE: APP-OINT
+- `back`: TODO_TRANSLATE: Back
+- `cancel`: TODO_TRANSLATE: Cancel
+- `cancelInvite`: TODO_TRANSLATE: Cancel Invite
+- `cancelInviteConfirmation`: TODO_TRANSLATE: Are you sure you want to cancel this invite?
+- `checkingPermissions`: TODO_TRANSLATE: Checking permissions...
+- `choose`: TODO_TRANSLATE: Choose
+- `clicked`: TODO_TRANSLATE: Clicked
+- `clientScreenTBD`: TODO_TRANSLATE: Client screen coming soon
+- `close`: TODO_TRANSLATE: Close
+- `composeBroadcastMessage`: TODO_TRANSLATE: Compose Broadcast Message
+- `confirm`: TODO_TRANSLATE: Confirm
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `connectedChildren`: TODO_TRANSLATE: Connected Children
+- `content`: TODO_TRANSLATE: Content
+- `copy`: TODO_TRANSLATE: Copy
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createLiveSession`: TODO_TRANSLATE: Create Live Session
+- `createNew`: TODO_TRANSLATE: Create New
+- `createVirtualSession`: TODO_TRANSLATE: Create Virtual Session
+- `createYourFirstGame`: TODO_TRANSLATE: Create your first game
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `created`: TODO_TRANSLATE: Created
+- `customizeMessage`: TODO_TRANSLATE: Customize Message
+- `cut`: TODO_TRANSLATE: Cut
+- `dashboard`: TODO_TRANSLATE: Dashboard
+- `decline`: TODO_TRANSLATE: Decline
+- `defaultShareMessage`: TODO_TRANSLATE: Let's meet via Appoint!
+- `delete`: TODO_TRANSLATE: Delete
+- `details`: TODO_TRANSLATE: Details
+- `done`: TODO_TRANSLATE: Done
+- `download`: TODO_TRANSLATE: Download
+- `edit`: TODO_TRANSLATE: Edit
+- `email`: TODO_TRANSLATE: Email
+- `enableNotifications`: TODO_TRANSLATE: Enable Notifications
+- `enterGroupName`: TODO_TRANSLATE: Enter group name
+- `error`: TODO_TRANSLATE: Error
+- `errorCheckingPermissions`: TODO_TRANSLATE: Error checking permissions
+- `errorLoadingFamilyLinks`: TODO_TRANSLATE: Error loading family links
+- `errorLoadingInvites`: TODO_TRANSLATE: Error loading invites
+- `errorLoadingPrivacyRequests`: TODO_TRANSLATE: Error loading privacy requests
+- `errorLoadingProfile`: TODO_TRANSLATE: Error loading profile
+- `errorSavingMessage`: TODO_TRANSLATE: Error saving message
+- `errorSendingMessage`: TODO_TRANSLATE: Error sending message
+- `failedToActionPrivacyRequest`: TODO_TRANSLATE: Failed to action privacy request
+- `failedToCancelInvite`: TODO_TRANSLATE: Failed to cancel invite
+- `failedToResendOtp`: TODO_TRANSLATE: Failed to resend OTP
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `familyDashboard`: TODO_TRANSLATE: Family Dashboard
+- `familyMembers`: TODO_TRANSLATE: Family Members
+- `fcmToken`: TODO_TRANSLATE: FCM Token
+- `forgotPassword`: TODO_TRANSLATE: Forgot Password?
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `home`: TODO_TRANSLATE: Home
+- `invite`: TODO_TRANSLATE: Invite
+- `inviteCancelledSuccessfully`: TODO_TRANSLATE: Invite cancelled successfully
+- `inviteDetail`: TODO_TRANSLATE: Invite Details
+- `invited`: TODO_TRANSLATE: Invited
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `loading`: TODO_TRANSLATE: Loading...
+- `login`: TODO_TRANSLATE: Login
+- `logout`: TODO_TRANSLATE: Logout
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `mediaOptional`: TODO_TRANSLATE: Media (Optional)
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `meetingSharedSuccessfully`: TODO_TRANSLATE: Meeting shared successfully
+- `messageSavedSuccessfully`: TODO_TRANSLATE: Message saved successfully
+- `messageSentSuccessfully`: TODO_TRANSLATE: Message sent successfully
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `myProfile`: TODO_TRANSLATE: My Profile
+- `next`: TODO_TRANSLATE: Next
+- `no`: TODO_TRANSLATE: No
+- `noBroadcastMessages`: TODO_TRANSLATE: No messages yet
+- `noFamilyMembersYet`: TODO_TRANSLATE: No family members yet
+- `noGamesYet`: TODO_TRANSLATE: No games yet
+- `noInvites`: TODO_TRANSLATE: No invites
+- `noPermissionForBroadcast`: TODO_TRANSLATE: No permission for broadcast
+- `noProfileFound`: TODO_TRANSLATE: No profile found
+- `noResults`: TODO_TRANSLATE: No results found
+- `noSessionsYet`: TODO_TRANSLATE: No sessions yet
+- `notificationSettings`: TODO_TRANSLATE: Notification Settings
+- `notifications`: TODO_TRANSLATE: Notifications
+- `ok`: TODO_TRANSLATE: OK
+- `opened`: TODO_TRANSLATE: Opened
+- `otpResentSuccessfully`: TODO_TRANSLATE: OTP resent successfully
+- `participants`: TODO_TRANSLATE: Participants
+- `password`: TODO_TRANSLATE: Password
+- `paste`: TODO_TRANSLATE: Paste
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `pickImage`: TODO_TRANSLATE: Pick Image
+- `pickVideo`: TODO_TRANSLATE: Pick Video
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseFriends`: TODO_TRANSLATE: Choose friends to invite
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeChooseTime`: TODO_TRANSLATE: Choose a time
+- `playtimeCreate`: TODO_TRANSLATE: Create
+- `playtimeCreateSession`: TODO_TRANSLATE: Create a Playtime Session
+- `playtimeDescription`: TODO_TRANSLATE: Enjoy live or virtual games with your friends!
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameDeleted`: TODO_TRANSLATE: Game deleted
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeHub`: TODO_TRANSLATE: Playtime Hub
+- `playtimeLandingChooseMode`: TODO_TRANSLATE: Choose your play mode:
+- `playtimeLive`: TODO_TRANSLATE: Live Play
+- `playtimeLiveScheduled`: TODO_TRANSLATE: Live playtime scheduled!
+- `playtimeModeLive`: TODO_TRANSLATE: Live Play
+- `playtimeModeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `playtimeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeVirtualStarted`: TODO_TRANSLATE: Virtual playtime started!
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `previous`: TODO_TRANSLATE: Previous
+- `profile`: TODO_TRANSLATE: Profile
+- `quickActions`: TODO_TRANSLATE: Quick Actions
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `recipients`: TODO_TRANSLATE: Recipients
+- `redo`: TODO_TRANSLATE: Redo
+- `refresh`: TODO_TRANSLATE: Refresh
+- `removeChild`: TODO_TRANSLATE: Remove Child
+- `requestType`: TODO_TRANSLATE: Request Type
+- `retry`: TODO_TRANSLATE: Retry
+- `revoke`: TODO_TRANSLATE: Revoke
+- `revokeAccess`: TODO_TRANSLATE: Revoke Access
+- `revokeAccessConfirmation`: TODO_TRANSLATE: Are you sure you want to revoke access?
+- `save`: TODO_TRANSLATE: Save
+- `saveGroupForRecognition`: TODO_TRANSLATE: Save Group for Recognition
+- `scheduleForLater`: TODO_TRANSLATE: Schedule for Later
+- `scheduleMessage`: TODO_TRANSLATE: Schedule Message
+- `scheduled`: TODO_TRANSLATE: Scheduled
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `scheduling`: TODO_TRANSLATE: Scheduling
+- `search`: TODO_TRANSLATE: Search
+- `select`: TODO_TRANSLATE: Select
+- `sendNow`: TODO_TRANSLATE: Send Now
+- `settings`: TODO_TRANSLATE: Settings
+- `share`: TODO_TRANSLATE: Share
+- `shareOnWhatsApp`: TODO_TRANSLATE: Share on WhatsApp
+- `signUp`: TODO_TRANSLATE: Sign Up
+- `staffScreenTBD`: TODO_TRANSLATE: Staff screen coming soon
+- `status`: TODO_TRANSLATE: Status
+- `statusColon`: TODO_TRANSLATE: Status:
+- `success`: TODO_TRANSLATE: Success
+- `targetingFilters`: TODO_TRANSLATE: Targeting Filters
+- `type`: TODO_TRANSLATE: Type
+- `undo`: TODO_TRANSLATE: Undo
+- `upcomingSessions`: TODO_TRANSLATE: Upcoming Sessions
+- `upload`: TODO_TRANSLATE: Upload
+- `viewAll`: TODO_TRANSLATE: View All
+- `welcome`: TODO_TRANSLATE: Welcome
+- `welcomeToPlaytime`: TODO_TRANSLATE: Welcome to Playtime
+- `yes`: TODO_TRANSLATE: Yes
+- `yesCancel`: TODO_TRANSLATE: Yes, Cancel
+
+---
+
+### lt - app_lt.arb
+**Total Translation Tasks:** 166
+
+**TODO_TRANSLATE Entries (166):**
+- `about`: TODO_TRANSLATE: About
+- `accept`: TODO_TRANSLATE: Accept
+- `accessRevokedSuccessfully`: TODO_TRANSLATE: Access revoked successfully
+- `add`: TODO_TRANSLATE: Add
+- `adminBroadcast`: TODO_TRANSLATE: Admin Broadcast
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `appTitle`: TODO_TRANSLATE: APP-OINT
+- `back`: TODO_TRANSLATE: Back
+- `cancel`: TODO_TRANSLATE: Cancel
+- `cancelInvite`: TODO_TRANSLATE: Cancel Invite
+- `cancelInviteConfirmation`: TODO_TRANSLATE: Are you sure you want to cancel this invite?
+- `checkingPermissions`: TODO_TRANSLATE: Checking permissions...
+- `choose`: TODO_TRANSLATE: Choose
+- `clicked`: TODO_TRANSLATE: Clicked
+- `clientScreenTBD`: TODO_TRANSLATE: Client screen coming soon
+- `close`: TODO_TRANSLATE: Close
+- `composeBroadcastMessage`: TODO_TRANSLATE: Compose Broadcast Message
+- `confirm`: TODO_TRANSLATE: Confirm
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `connectedChildren`: TODO_TRANSLATE: Connected Children
+- `content`: TODO_TRANSLATE: Content
+- `copy`: TODO_TRANSLATE: Copy
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createLiveSession`: TODO_TRANSLATE: Create Live Session
+- `createNew`: TODO_TRANSLATE: Create New
+- `createVirtualSession`: TODO_TRANSLATE: Create Virtual Session
+- `createYourFirstGame`: TODO_TRANSLATE: Create your first game
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `created`: TODO_TRANSLATE: Created
+- `customizeMessage`: TODO_TRANSLATE: Customize Message
+- `cut`: TODO_TRANSLATE: Cut
+- `dashboard`: TODO_TRANSLATE: Dashboard
+- `decline`: TODO_TRANSLATE: Decline
+- `defaultShareMessage`: TODO_TRANSLATE: Let's meet via Appoint!
+- `delete`: TODO_TRANSLATE: Delete
+- `details`: TODO_TRANSLATE: Details
+- `done`: TODO_TRANSLATE: Done
+- `download`: TODO_TRANSLATE: Download
+- `edit`: TODO_TRANSLATE: Edit
+- `email`: TODO_TRANSLATE: Email
+- `enableNotifications`: TODO_TRANSLATE: Enable Notifications
+- `enterGroupName`: TODO_TRANSLATE: Enter group name
+- `error`: TODO_TRANSLATE: Error
+- `errorCheckingPermissions`: TODO_TRANSLATE: Error checking permissions
+- `errorLoadingFamilyLinks`: TODO_TRANSLATE: Error loading family links
+- `errorLoadingInvites`: TODO_TRANSLATE: Error loading invites
+- `errorLoadingPrivacyRequests`: TODO_TRANSLATE: Error loading privacy requests
+- `errorLoadingProfile`: TODO_TRANSLATE: Error loading profile
+- `errorSavingMessage`: TODO_TRANSLATE: Error saving message
+- `errorSendingMessage`: TODO_TRANSLATE: Error sending message
+- `failedToActionPrivacyRequest`: TODO_TRANSLATE: Failed to action privacy request
+- `failedToCancelInvite`: TODO_TRANSLATE: Failed to cancel invite
+- `failedToResendOtp`: TODO_TRANSLATE: Failed to resend OTP
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `familyDashboard`: TODO_TRANSLATE: Family Dashboard
+- `familyMembers`: TODO_TRANSLATE: Family Members
+- `fcmToken`: TODO_TRANSLATE: FCM Token
+- `forgotPassword`: TODO_TRANSLATE: Forgot Password?
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `home`: TODO_TRANSLATE: Home
+- `invite`: TODO_TRANSLATE: Invite
+- `inviteCancelledSuccessfully`: TODO_TRANSLATE: Invite cancelled successfully
+- `inviteDetail`: TODO_TRANSLATE: Invite Details
+- `invited`: TODO_TRANSLATE: Invited
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `loading`: TODO_TRANSLATE: Loading...
+- `login`: TODO_TRANSLATE: Login
+- `logout`: TODO_TRANSLATE: Logout
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `mediaOptional`: TODO_TRANSLATE: Media (Optional)
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `meetingSharedSuccessfully`: TODO_TRANSLATE: Meeting shared successfully
+- `messageSavedSuccessfully`: TODO_TRANSLATE: Message saved successfully
+- `messageSentSuccessfully`: TODO_TRANSLATE: Message sent successfully
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `myProfile`: TODO_TRANSLATE: My Profile
+- `next`: TODO_TRANSLATE: Next
+- `no`: TODO_TRANSLATE: No
+- `noBroadcastMessages`: TODO_TRANSLATE: No messages yet
+- `noFamilyMembersYet`: TODO_TRANSLATE: No family members yet
+- `noGamesYet`: TODO_TRANSLATE: No games yet
+- `noInvites`: TODO_TRANSLATE: No invites
+- `noPermissionForBroadcast`: TODO_TRANSLATE: No permission for broadcast
+- `noProfileFound`: TODO_TRANSLATE: No profile found
+- `noResults`: TODO_TRANSLATE: No results found
+- `noSessionsYet`: TODO_TRANSLATE: No sessions yet
+- `notificationSettings`: TODO_TRANSLATE: Notification Settings
+- `notifications`: TODO_TRANSLATE: Notifications
+- `ok`: TODO_TRANSLATE: OK
+- `opened`: TODO_TRANSLATE: Opened
+- `otpResentSuccessfully`: TODO_TRANSLATE: OTP resent successfully
+- `participants`: TODO_TRANSLATE: Participants
+- `password`: TODO_TRANSLATE: Password
+- `paste`: TODO_TRANSLATE: Paste
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `pickImage`: TODO_TRANSLATE: Pick Image
+- `pickVideo`: TODO_TRANSLATE: Pick Video
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseFriends`: TODO_TRANSLATE: Choose friends to invite
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeChooseTime`: TODO_TRANSLATE: Choose a time
+- `playtimeCreate`: TODO_TRANSLATE: Create
+- `playtimeCreateSession`: TODO_TRANSLATE: Create a Playtime Session
+- `playtimeDescription`: TODO_TRANSLATE: Enjoy live or virtual games with your friends!
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameDeleted`: TODO_TRANSLATE: Game deleted
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeHub`: TODO_TRANSLATE: Playtime Hub
+- `playtimeLandingChooseMode`: TODO_TRANSLATE: Choose your play mode:
+- `playtimeLive`: TODO_TRANSLATE: Live Play
+- `playtimeLiveScheduled`: TODO_TRANSLATE: Live playtime scheduled!
+- `playtimeModeLive`: TODO_TRANSLATE: Live Play
+- `playtimeModeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `playtimeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeVirtualStarted`: TODO_TRANSLATE: Virtual playtime started!
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `previous`: TODO_TRANSLATE: Previous
+- `profile`: TODO_TRANSLATE: Profile
+- `quickActions`: TODO_TRANSLATE: Quick Actions
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `recipients`: TODO_TRANSLATE: Recipients
+- `redo`: TODO_TRANSLATE: Redo
+- `refresh`: TODO_TRANSLATE: Refresh
+- `removeChild`: TODO_TRANSLATE: Remove Child
+- `requestType`: TODO_TRANSLATE: Request Type
+- `retry`: TODO_TRANSLATE: Retry
+- `revoke`: TODO_TRANSLATE: Revoke
+- `revokeAccess`: TODO_TRANSLATE: Revoke Access
+- `revokeAccessConfirmation`: TODO_TRANSLATE: Are you sure you want to revoke access?
+- `save`: TODO_TRANSLATE: Save
+- `saveGroupForRecognition`: TODO_TRANSLATE: Save Group for Recognition
+- `scheduleForLater`: TODO_TRANSLATE: Schedule for Later
+- `scheduleMessage`: TODO_TRANSLATE: Schedule Message
+- `scheduled`: TODO_TRANSLATE: Scheduled
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `scheduling`: TODO_TRANSLATE: Scheduling
+- `search`: TODO_TRANSLATE: Search
+- `select`: TODO_TRANSLATE: Select
+- `sendNow`: TODO_TRANSLATE: Send Now
+- `settings`: TODO_TRANSLATE: Settings
+- `share`: TODO_TRANSLATE: Share
+- `shareOnWhatsApp`: TODO_TRANSLATE: Share on WhatsApp
+- `signUp`: TODO_TRANSLATE: Sign Up
+- `staffScreenTBD`: TODO_TRANSLATE: Staff screen coming soon
+- `status`: TODO_TRANSLATE: Status
+- `statusColon`: TODO_TRANSLATE: Status:
+- `success`: TODO_TRANSLATE: Success
+- `targetingFilters`: TODO_TRANSLATE: Targeting Filters
+- `type`: TODO_TRANSLATE: Type
+- `undo`: TODO_TRANSLATE: Undo
+- `upcomingSessions`: TODO_TRANSLATE: Upcoming Sessions
+- `upload`: TODO_TRANSLATE: Upload
+- `viewAll`: TODO_TRANSLATE: View All
+- `welcome`: TODO_TRANSLATE: Welcome
+- `welcomeToPlaytime`: TODO_TRANSLATE: Welcome to Playtime
+- `yes`: TODO_TRANSLATE: Yes
+- `yesCancel`: TODO_TRANSLATE: Yes, Cancel
+
+---
+
+### mk - app_mk.arb
+**Total Translation Tasks:** 166
+
+**TODO_TRANSLATE Entries (166):**
+- `about`: TODO_TRANSLATE: About
+- `accept`: TODO_TRANSLATE: Accept
+- `accessRevokedSuccessfully`: TODO_TRANSLATE: Access revoked successfully
+- `add`: TODO_TRANSLATE: Add
+- `adminBroadcast`: TODO_TRANSLATE: Admin Broadcast
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `appTitle`: TODO_TRANSLATE: APP-OINT
+- `back`: TODO_TRANSLATE: Back
+- `cancel`: TODO_TRANSLATE: Cancel
+- `cancelInvite`: TODO_TRANSLATE: Cancel Invite
+- `cancelInviteConfirmation`: TODO_TRANSLATE: Are you sure you want to cancel this invite?
+- `checkingPermissions`: TODO_TRANSLATE: Checking permissions...
+- `choose`: TODO_TRANSLATE: Choose
+- `clicked`: TODO_TRANSLATE: Clicked
+- `clientScreenTBD`: TODO_TRANSLATE: Client screen coming soon
+- `close`: TODO_TRANSLATE: Close
+- `composeBroadcastMessage`: TODO_TRANSLATE: Compose Broadcast Message
+- `confirm`: TODO_TRANSLATE: Confirm
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `connectedChildren`: TODO_TRANSLATE: Connected Children
+- `content`: TODO_TRANSLATE: Content
+- `copy`: TODO_TRANSLATE: Copy
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createLiveSession`: TODO_TRANSLATE: Create Live Session
+- `createNew`: TODO_TRANSLATE: Create New
+- `createVirtualSession`: TODO_TRANSLATE: Create Virtual Session
+- `createYourFirstGame`: TODO_TRANSLATE: Create your first game
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `created`: TODO_TRANSLATE: Created
+- `customizeMessage`: TODO_TRANSLATE: Customize Message
+- `cut`: TODO_TRANSLATE: Cut
+- `dashboard`: TODO_TRANSLATE: Dashboard
+- `decline`: TODO_TRANSLATE: Decline
+- `defaultShareMessage`: TODO_TRANSLATE: Let's meet via Appoint!
+- `delete`: TODO_TRANSLATE: Delete
+- `details`: TODO_TRANSLATE: Details
+- `done`: TODO_TRANSLATE: Done
+- `download`: TODO_TRANSLATE: Download
+- `edit`: TODO_TRANSLATE: Edit
+- `email`: TODO_TRANSLATE: Email
+- `enableNotifications`: TODO_TRANSLATE: Enable Notifications
+- `enterGroupName`: TODO_TRANSLATE: Enter group name
+- `error`: TODO_TRANSLATE: Error
+- `errorCheckingPermissions`: TODO_TRANSLATE: Error checking permissions
+- `errorLoadingFamilyLinks`: TODO_TRANSLATE: Error loading family links
+- `errorLoadingInvites`: TODO_TRANSLATE: Error loading invites
+- `errorLoadingPrivacyRequests`: TODO_TRANSLATE: Error loading privacy requests
+- `errorLoadingProfile`: TODO_TRANSLATE: Error loading profile
+- `errorSavingMessage`: TODO_TRANSLATE: Error saving message
+- `errorSendingMessage`: TODO_TRANSLATE: Error sending message
+- `failedToActionPrivacyRequest`: TODO_TRANSLATE: Failed to action privacy request
+- `failedToCancelInvite`: TODO_TRANSLATE: Failed to cancel invite
+- `failedToResendOtp`: TODO_TRANSLATE: Failed to resend OTP
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `familyDashboard`: TODO_TRANSLATE: Family Dashboard
+- `familyMembers`: TODO_TRANSLATE: Family Members
+- `fcmToken`: TODO_TRANSLATE: FCM Token
+- `forgotPassword`: TODO_TRANSLATE: Forgot Password?
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `home`: TODO_TRANSLATE: Home
+- `invite`: TODO_TRANSLATE: Invite
+- `inviteCancelledSuccessfully`: TODO_TRANSLATE: Invite cancelled successfully
+- `inviteDetail`: TODO_TRANSLATE: Invite Details
+- `invited`: TODO_TRANSLATE: Invited
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `loading`: TODO_TRANSLATE: Loading...
+- `login`: TODO_TRANSLATE: Login
+- `logout`: TODO_TRANSLATE: Logout
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `mediaOptional`: TODO_TRANSLATE: Media (Optional)
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `meetingSharedSuccessfully`: TODO_TRANSLATE: Meeting shared successfully
+- `messageSavedSuccessfully`: TODO_TRANSLATE: Message saved successfully
+- `messageSentSuccessfully`: TODO_TRANSLATE: Message sent successfully
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `myProfile`: TODO_TRANSLATE: My Profile
+- `next`: TODO_TRANSLATE: Next
+- `no`: TODO_TRANSLATE: No
+- `noBroadcastMessages`: TODO_TRANSLATE: No messages yet
+- `noFamilyMembersYet`: TODO_TRANSLATE: No family members yet
+- `noGamesYet`: TODO_TRANSLATE: No games yet
+- `noInvites`: TODO_TRANSLATE: No invites
+- `noPermissionForBroadcast`: TODO_TRANSLATE: No permission for broadcast
+- `noProfileFound`: TODO_TRANSLATE: No profile found
+- `noResults`: TODO_TRANSLATE: No results found
+- `noSessionsYet`: TODO_TRANSLATE: No sessions yet
+- `notificationSettings`: TODO_TRANSLATE: Notification Settings
+- `notifications`: TODO_TRANSLATE: Notifications
+- `ok`: TODO_TRANSLATE: OK
+- `opened`: TODO_TRANSLATE: Opened
+- `otpResentSuccessfully`: TODO_TRANSLATE: OTP resent successfully
+- `participants`: TODO_TRANSLATE: Participants
+- `password`: TODO_TRANSLATE: Password
+- `paste`: TODO_TRANSLATE: Paste
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `pickImage`: TODO_TRANSLATE: Pick Image
+- `pickVideo`: TODO_TRANSLATE: Pick Video
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseFriends`: TODO_TRANSLATE: Choose friends to invite
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeChooseTime`: TODO_TRANSLATE: Choose a time
+- `playtimeCreate`: TODO_TRANSLATE: Create
+- `playtimeCreateSession`: TODO_TRANSLATE: Create a Playtime Session
+- `playtimeDescription`: TODO_TRANSLATE: Enjoy live or virtual games with your friends!
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameDeleted`: TODO_TRANSLATE: Game deleted
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeHub`: TODO_TRANSLATE: Playtime Hub
+- `playtimeLandingChooseMode`: TODO_TRANSLATE: Choose your play mode:
+- `playtimeLive`: TODO_TRANSLATE: Live Play
+- `playtimeLiveScheduled`: TODO_TRANSLATE: Live playtime scheduled!
+- `playtimeModeLive`: TODO_TRANSLATE: Live Play
+- `playtimeModeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `playtimeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeVirtualStarted`: TODO_TRANSLATE: Virtual playtime started!
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `previous`: TODO_TRANSLATE: Previous
+- `profile`: TODO_TRANSLATE: Profile
+- `quickActions`: TODO_TRANSLATE: Quick Actions
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `recipients`: TODO_TRANSLATE: Recipients
+- `redo`: TODO_TRANSLATE: Redo
+- `refresh`: TODO_TRANSLATE: Refresh
+- `removeChild`: TODO_TRANSLATE: Remove Child
+- `requestType`: TODO_TRANSLATE: Request Type
+- `retry`: TODO_TRANSLATE: Retry
+- `revoke`: TODO_TRANSLATE: Revoke
+- `revokeAccess`: TODO_TRANSLATE: Revoke Access
+- `revokeAccessConfirmation`: TODO_TRANSLATE: Are you sure you want to revoke access?
+- `save`: TODO_TRANSLATE: Save
+- `saveGroupForRecognition`: TODO_TRANSLATE: Save Group for Recognition
+- `scheduleForLater`: TODO_TRANSLATE: Schedule for Later
+- `scheduleMessage`: TODO_TRANSLATE: Schedule Message
+- `scheduled`: TODO_TRANSLATE: Scheduled
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `scheduling`: TODO_TRANSLATE: Scheduling
+- `search`: TODO_TRANSLATE: Search
+- `select`: TODO_TRANSLATE: Select
+- `sendNow`: TODO_TRANSLATE: Send Now
+- `settings`: TODO_TRANSLATE: Settings
+- `share`: TODO_TRANSLATE: Share
+- `shareOnWhatsApp`: TODO_TRANSLATE: Share on WhatsApp
+- `signUp`: TODO_TRANSLATE: Sign Up
+- `staffScreenTBD`: TODO_TRANSLATE: Staff screen coming soon
+- `status`: TODO_TRANSLATE: Status
+- `statusColon`: TODO_TRANSLATE: Status:
+- `success`: TODO_TRANSLATE: Success
+- `targetingFilters`: TODO_TRANSLATE: Targeting Filters
+- `type`: TODO_TRANSLATE: Type
+- `undo`: TODO_TRANSLATE: Undo
+- `upcomingSessions`: TODO_TRANSLATE: Upcoming Sessions
+- `upload`: TODO_TRANSLATE: Upload
+- `viewAll`: TODO_TRANSLATE: View All
+- `welcome`: TODO_TRANSLATE: Welcome
+- `welcomeToPlaytime`: TODO_TRANSLATE: Welcome to Playtime
+- `yes`: TODO_TRANSLATE: Yes
+- `yesCancel`: TODO_TRANSLATE: Yes, Cancel
+
+---
+
+### mt - app_mt.arb
+**Total Translation Tasks:** 166
+
+**TODO_TRANSLATE Entries (166):**
+- `about`: TODO_TRANSLATE: About
+- `accept`: TODO_TRANSLATE: Accept
+- `accessRevokedSuccessfully`: TODO_TRANSLATE: Access revoked successfully
+- `add`: TODO_TRANSLATE: Add
+- `adminBroadcast`: TODO_TRANSLATE: Admin Broadcast
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `appTitle`: TODO_TRANSLATE: APP-OINT
+- `back`: TODO_TRANSLATE: Back
+- `cancel`: TODO_TRANSLATE: Cancel
+- `cancelInvite`: TODO_TRANSLATE: Cancel Invite
+- `cancelInviteConfirmation`: TODO_TRANSLATE: Are you sure you want to cancel this invite?
+- `checkingPermissions`: TODO_TRANSLATE: Checking permissions...
+- `choose`: TODO_TRANSLATE: Choose
+- `clicked`: TODO_TRANSLATE: Clicked
+- `clientScreenTBD`: TODO_TRANSLATE: Client screen coming soon
+- `close`: TODO_TRANSLATE: Close
+- `composeBroadcastMessage`: TODO_TRANSLATE: Compose Broadcast Message
+- `confirm`: TODO_TRANSLATE: Confirm
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `connectedChildren`: TODO_TRANSLATE: Connected Children
+- `content`: TODO_TRANSLATE: Content
+- `copy`: TODO_TRANSLATE: Copy
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createLiveSession`: TODO_TRANSLATE: Create Live Session
+- `createNew`: TODO_TRANSLATE: Create New
+- `createVirtualSession`: TODO_TRANSLATE: Create Virtual Session
+- `createYourFirstGame`: TODO_TRANSLATE: Create your first game
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `created`: TODO_TRANSLATE: Created
+- `customizeMessage`: TODO_TRANSLATE: Customize Message
+- `cut`: TODO_TRANSLATE: Cut
+- `dashboard`: TODO_TRANSLATE: Dashboard
+- `decline`: TODO_TRANSLATE: Decline
+- `defaultShareMessage`: TODO_TRANSLATE: Let's meet via Appoint!
+- `delete`: TODO_TRANSLATE: Delete
+- `details`: TODO_TRANSLATE: Details
+- `done`: TODO_TRANSLATE: Done
+- `download`: TODO_TRANSLATE: Download
+- `edit`: TODO_TRANSLATE: Edit
+- `email`: TODO_TRANSLATE: Email
+- `enableNotifications`: TODO_TRANSLATE: Enable Notifications
+- `enterGroupName`: TODO_TRANSLATE: Enter group name
+- `error`: TODO_TRANSLATE: Error
+- `errorCheckingPermissions`: TODO_TRANSLATE: Error checking permissions
+- `errorLoadingFamilyLinks`: TODO_TRANSLATE: Error loading family links
+- `errorLoadingInvites`: TODO_TRANSLATE: Error loading invites
+- `errorLoadingPrivacyRequests`: TODO_TRANSLATE: Error loading privacy requests
+- `errorLoadingProfile`: TODO_TRANSLATE: Error loading profile
+- `errorSavingMessage`: TODO_TRANSLATE: Error saving message
+- `errorSendingMessage`: TODO_TRANSLATE: Error sending message
+- `failedToActionPrivacyRequest`: TODO_TRANSLATE: Failed to action privacy request
+- `failedToCancelInvite`: TODO_TRANSLATE: Failed to cancel invite
+- `failedToResendOtp`: TODO_TRANSLATE: Failed to resend OTP
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `familyDashboard`: TODO_TRANSLATE: Family Dashboard
+- `familyMembers`: TODO_TRANSLATE: Family Members
+- `fcmToken`: TODO_TRANSLATE: FCM Token
+- `forgotPassword`: TODO_TRANSLATE: Forgot Password?
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `home`: TODO_TRANSLATE: Home
+- `invite`: TODO_TRANSLATE: Invite
+- `inviteCancelledSuccessfully`: TODO_TRANSLATE: Invite cancelled successfully
+- `inviteDetail`: TODO_TRANSLATE: Invite Details
+- `invited`: TODO_TRANSLATE: Invited
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `loading`: TODO_TRANSLATE: Loading...
+- `login`: TODO_TRANSLATE: Login
+- `logout`: TODO_TRANSLATE: Logout
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `mediaOptional`: TODO_TRANSLATE: Media (Optional)
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `meetingSharedSuccessfully`: TODO_TRANSLATE: Meeting shared successfully
+- `messageSavedSuccessfully`: TODO_TRANSLATE: Message saved successfully
+- `messageSentSuccessfully`: TODO_TRANSLATE: Message sent successfully
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `myProfile`: TODO_TRANSLATE: My Profile
+- `next`: TODO_TRANSLATE: Next
+- `no`: TODO_TRANSLATE: No
+- `noBroadcastMessages`: TODO_TRANSLATE: No messages yet
+- `noFamilyMembersYet`: TODO_TRANSLATE: No family members yet
+- `noGamesYet`: TODO_TRANSLATE: No games yet
+- `noInvites`: TODO_TRANSLATE: No invites
+- `noPermissionForBroadcast`: TODO_TRANSLATE: No permission for broadcast
+- `noProfileFound`: TODO_TRANSLATE: No profile found
+- `noResults`: TODO_TRANSLATE: No results found
+- `noSessionsYet`: TODO_TRANSLATE: No sessions yet
+- `notificationSettings`: TODO_TRANSLATE: Notification Settings
+- `notifications`: TODO_TRANSLATE: Notifications
+- `ok`: TODO_TRANSLATE: OK
+- `opened`: TODO_TRANSLATE: Opened
+- `otpResentSuccessfully`: TODO_TRANSLATE: OTP resent successfully
+- `participants`: TODO_TRANSLATE: Participants
+- `password`: TODO_TRANSLATE: Password
+- `paste`: TODO_TRANSLATE: Paste
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `pickImage`: TODO_TRANSLATE: Pick Image
+- `pickVideo`: TODO_TRANSLATE: Pick Video
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseFriends`: TODO_TRANSLATE: Choose friends to invite
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeChooseTime`: TODO_TRANSLATE: Choose a time
+- `playtimeCreate`: TODO_TRANSLATE: Create
+- `playtimeCreateSession`: TODO_TRANSLATE: Create a Playtime Session
+- `playtimeDescription`: TODO_TRANSLATE: Enjoy live or virtual games with your friends!
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameDeleted`: TODO_TRANSLATE: Game deleted
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeHub`: TODO_TRANSLATE: Playtime Hub
+- `playtimeLandingChooseMode`: TODO_TRANSLATE: Choose your play mode:
+- `playtimeLive`: TODO_TRANSLATE: Live Play
+- `playtimeLiveScheduled`: TODO_TRANSLATE: Live playtime scheduled!
+- `playtimeModeLive`: TODO_TRANSLATE: Live Play
+- `playtimeModeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `playtimeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeVirtualStarted`: TODO_TRANSLATE: Virtual playtime started!
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `previous`: TODO_TRANSLATE: Previous
+- `profile`: TODO_TRANSLATE: Profile
+- `quickActions`: TODO_TRANSLATE: Quick Actions
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `recipients`: TODO_TRANSLATE: Recipients
+- `redo`: TODO_TRANSLATE: Redo
+- `refresh`: TODO_TRANSLATE: Refresh
+- `removeChild`: TODO_TRANSLATE: Remove Child
+- `requestType`: TODO_TRANSLATE: Request Type
+- `retry`: TODO_TRANSLATE: Retry
+- `revoke`: TODO_TRANSLATE: Revoke
+- `revokeAccess`: TODO_TRANSLATE: Revoke Access
+- `revokeAccessConfirmation`: TODO_TRANSLATE: Are you sure you want to revoke access?
+- `save`: TODO_TRANSLATE: Save
+- `saveGroupForRecognition`: TODO_TRANSLATE: Save Group for Recognition
+- `scheduleForLater`: TODO_TRANSLATE: Schedule for Later
+- `scheduleMessage`: TODO_TRANSLATE: Schedule Message
+- `scheduled`: TODO_TRANSLATE: Scheduled
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `scheduling`: TODO_TRANSLATE: Scheduling
+- `search`: TODO_TRANSLATE: Search
+- `select`: TODO_TRANSLATE: Select
+- `sendNow`: TODO_TRANSLATE: Send Now
+- `settings`: TODO_TRANSLATE: Settings
+- `share`: TODO_TRANSLATE: Share
+- `shareOnWhatsApp`: TODO_TRANSLATE: Share on WhatsApp
+- `signUp`: TODO_TRANSLATE: Sign Up
+- `staffScreenTBD`: TODO_TRANSLATE: Staff screen coming soon
+- `status`: TODO_TRANSLATE: Status
+- `statusColon`: TODO_TRANSLATE: Status:
+- `success`: TODO_TRANSLATE: Success
+- `targetingFilters`: TODO_TRANSLATE: Targeting Filters
+- `type`: TODO_TRANSLATE: Type
+- `undo`: TODO_TRANSLATE: Undo
+- `upcomingSessions`: TODO_TRANSLATE: Upcoming Sessions
+- `upload`: TODO_TRANSLATE: Upload
+- `viewAll`: TODO_TRANSLATE: View All
+- `welcome`: TODO_TRANSLATE: Welcome
+- `welcomeToPlaytime`: TODO_TRANSLATE: Welcome to Playtime
+- `yes`: TODO_TRANSLATE: Yes
+- `yesCancel`: TODO_TRANSLATE: Yes, Cancel
+
+---
+
+### sq - app_sq.arb
+**Total Translation Tasks:** 166
+
+**TODO_TRANSLATE Entries (166):**
+- `about`: TODO_TRANSLATE: About
+- `accept`: TODO_TRANSLATE: Accept
+- `accessRevokedSuccessfully`: TODO_TRANSLATE: Access revoked successfully
+- `add`: TODO_TRANSLATE: Add
+- `adminBroadcast`: TODO_TRANSLATE: Admin Broadcast
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `appTitle`: TODO_TRANSLATE: APP-OINT
+- `back`: TODO_TRANSLATE: Back
+- `cancel`: TODO_TRANSLATE: Cancel
+- `cancelInvite`: TODO_TRANSLATE: Cancel Invite
+- `cancelInviteConfirmation`: TODO_TRANSLATE: Are you sure you want to cancel this invite?
+- `checkingPermissions`: TODO_TRANSLATE: Checking permissions...
+- `choose`: TODO_TRANSLATE: Choose
+- `clicked`: TODO_TRANSLATE: Clicked
+- `clientScreenTBD`: TODO_TRANSLATE: Client screen coming soon
+- `close`: TODO_TRANSLATE: Close
+- `composeBroadcastMessage`: TODO_TRANSLATE: Compose Broadcast Message
+- `confirm`: TODO_TRANSLATE: Confirm
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `connectedChildren`: TODO_TRANSLATE: Connected Children
+- `content`: TODO_TRANSLATE: Content
+- `copy`: TODO_TRANSLATE: Copy
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createLiveSession`: TODO_TRANSLATE: Create Live Session
+- `createNew`: TODO_TRANSLATE: Create New
+- `createVirtualSession`: TODO_TRANSLATE: Create Virtual Session
+- `createYourFirstGame`: TODO_TRANSLATE: Create your first game
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `created`: TODO_TRANSLATE: Created
+- `customizeMessage`: TODO_TRANSLATE: Customize Message
+- `cut`: TODO_TRANSLATE: Cut
+- `dashboard`: TODO_TRANSLATE: Dashboard
+- `decline`: TODO_TRANSLATE: Decline
+- `defaultShareMessage`: TODO_TRANSLATE: Let's meet via Appoint!
+- `delete`: TODO_TRANSLATE: Delete
+- `details`: TODO_TRANSLATE: Details
+- `done`: TODO_TRANSLATE: Done
+- `download`: TODO_TRANSLATE: Download
+- `edit`: TODO_TRANSLATE: Edit
+- `email`: TODO_TRANSLATE: Email
+- `enableNotifications`: TODO_TRANSLATE: Enable Notifications
+- `enterGroupName`: TODO_TRANSLATE: Enter group name
+- `error`: TODO_TRANSLATE: Error
+- `errorCheckingPermissions`: TODO_TRANSLATE: Error checking permissions
+- `errorLoadingFamilyLinks`: TODO_TRANSLATE: Error loading family links
+- `errorLoadingInvites`: TODO_TRANSLATE: Error loading invites
+- `errorLoadingPrivacyRequests`: TODO_TRANSLATE: Error loading privacy requests
+- `errorLoadingProfile`: TODO_TRANSLATE: Error loading profile
+- `errorSavingMessage`: TODO_TRANSLATE: Error saving message
+- `errorSendingMessage`: TODO_TRANSLATE: Error sending message
+- `failedToActionPrivacyRequest`: TODO_TRANSLATE: Failed to action privacy request
+- `failedToCancelInvite`: TODO_TRANSLATE: Failed to cancel invite
+- `failedToResendOtp`: TODO_TRANSLATE: Failed to resend OTP
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `familyDashboard`: TODO_TRANSLATE: Family Dashboard
+- `familyMembers`: TODO_TRANSLATE: Family Members
+- `fcmToken`: TODO_TRANSLATE: FCM Token
+- `forgotPassword`: TODO_TRANSLATE: Forgot Password?
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `home`: TODO_TRANSLATE: Home
+- `invite`: TODO_TRANSLATE: Invite
+- `inviteCancelledSuccessfully`: TODO_TRANSLATE: Invite cancelled successfully
+- `inviteDetail`: TODO_TRANSLATE: Invite Details
+- `invited`: TODO_TRANSLATE: Invited
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `loading`: TODO_TRANSLATE: Loading...
+- `login`: TODO_TRANSLATE: Login
+- `logout`: TODO_TRANSLATE: Logout
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `mediaOptional`: TODO_TRANSLATE: Media (Optional)
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `meetingSharedSuccessfully`: TODO_TRANSLATE: Meeting shared successfully
+- `messageSavedSuccessfully`: TODO_TRANSLATE: Message saved successfully
+- `messageSentSuccessfully`: TODO_TRANSLATE: Message sent successfully
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `myProfile`: TODO_TRANSLATE: My Profile
+- `next`: TODO_TRANSLATE: Next
+- `no`: TODO_TRANSLATE: No
+- `noBroadcastMessages`: TODO_TRANSLATE: No messages yet
+- `noFamilyMembersYet`: TODO_TRANSLATE: No family members yet
+- `noGamesYet`: TODO_TRANSLATE: No games yet
+- `noInvites`: TODO_TRANSLATE: No invites
+- `noPermissionForBroadcast`: TODO_TRANSLATE: No permission for broadcast
+- `noProfileFound`: TODO_TRANSLATE: No profile found
+- `noResults`: TODO_TRANSLATE: No results found
+- `noSessionsYet`: TODO_TRANSLATE: No sessions yet
+- `notificationSettings`: TODO_TRANSLATE: Notification Settings
+- `notifications`: TODO_TRANSLATE: Notifications
+- `ok`: TODO_TRANSLATE: OK
+- `opened`: TODO_TRANSLATE: Opened
+- `otpResentSuccessfully`: TODO_TRANSLATE: OTP resent successfully
+- `participants`: TODO_TRANSLATE: Participants
+- `password`: TODO_TRANSLATE: Password
+- `paste`: TODO_TRANSLATE: Paste
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `pickImage`: TODO_TRANSLATE: Pick Image
+- `pickVideo`: TODO_TRANSLATE: Pick Video
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseFriends`: TODO_TRANSLATE: Choose friends to invite
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeChooseTime`: TODO_TRANSLATE: Choose a time
+- `playtimeCreate`: TODO_TRANSLATE: Create
+- `playtimeCreateSession`: TODO_TRANSLATE: Create a Playtime Session
+- `playtimeDescription`: TODO_TRANSLATE: Enjoy live or virtual games with your friends!
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameDeleted`: TODO_TRANSLATE: Game deleted
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeHub`: TODO_TRANSLATE: Playtime Hub
+- `playtimeLandingChooseMode`: TODO_TRANSLATE: Choose your play mode:
+- `playtimeLive`: TODO_TRANSLATE: Live Play
+- `playtimeLiveScheduled`: TODO_TRANSLATE: Live playtime scheduled!
+- `playtimeModeLive`: TODO_TRANSLATE: Live Play
+- `playtimeModeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `playtimeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeVirtualStarted`: TODO_TRANSLATE: Virtual playtime started!
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `previous`: TODO_TRANSLATE: Previous
+- `profile`: TODO_TRANSLATE: Profile
+- `quickActions`: TODO_TRANSLATE: Quick Actions
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `recipients`: TODO_TRANSLATE: Recipients
+- `redo`: TODO_TRANSLATE: Redo
+- `refresh`: TODO_TRANSLATE: Refresh
+- `removeChild`: TODO_TRANSLATE: Remove Child
+- `requestType`: TODO_TRANSLATE: Request Type
+- `retry`: TODO_TRANSLATE: Retry
+- `revoke`: TODO_TRANSLATE: Revoke
+- `revokeAccess`: TODO_TRANSLATE: Revoke Access
+- `revokeAccessConfirmation`: TODO_TRANSLATE: Are you sure you want to revoke access?
+- `save`: TODO_TRANSLATE: Save
+- `saveGroupForRecognition`: TODO_TRANSLATE: Save Group for Recognition
+- `scheduleForLater`: TODO_TRANSLATE: Schedule for Later
+- `scheduleMessage`: TODO_TRANSLATE: Schedule Message
+- `scheduled`: TODO_TRANSLATE: Scheduled
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `scheduling`: TODO_TRANSLATE: Scheduling
+- `search`: TODO_TRANSLATE: Search
+- `select`: TODO_TRANSLATE: Select
+- `sendNow`: TODO_TRANSLATE: Send Now
+- `settings`: TODO_TRANSLATE: Settings
+- `share`: TODO_TRANSLATE: Share
+- `shareOnWhatsApp`: TODO_TRANSLATE: Share on WhatsApp
+- `signUp`: TODO_TRANSLATE: Sign Up
+- `staffScreenTBD`: TODO_TRANSLATE: Staff screen coming soon
+- `status`: TODO_TRANSLATE: Status
+- `statusColon`: TODO_TRANSLATE: Status:
+- `success`: TODO_TRANSLATE: Success
+- `targetingFilters`: TODO_TRANSLATE: Targeting Filters
+- `type`: TODO_TRANSLATE: Type
+- `undo`: TODO_TRANSLATE: Undo
+- `upcomingSessions`: TODO_TRANSLATE: Upcoming Sessions
+- `upload`: TODO_TRANSLATE: Upload
+- `viewAll`: TODO_TRANSLATE: View All
+- `welcome`: TODO_TRANSLATE: Welcome
+- `welcomeToPlaytime`: TODO_TRANSLATE: Welcome to Playtime
+- `yes`: TODO_TRANSLATE: Yes
+- `yesCancel`: TODO_TRANSLATE: Yes, Cancel
+
+---
+
+### sr - app_sr.arb
+**Total Translation Tasks:** 166
+
+**TODO_TRANSLATE Entries (166):**
+- `about`: TODO_TRANSLATE: About
+- `accept`: TODO_TRANSLATE: Accept
+- `accessRevokedSuccessfully`: TODO_TRANSLATE: Access revoked successfully
+- `add`: TODO_TRANSLATE: Add
+- `adminBroadcast`: TODO_TRANSLATE: Admin Broadcast
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `appTitle`: TODO_TRANSLATE: APP-OINT
+- `back`: TODO_TRANSLATE: Back
+- `cancel`: TODO_TRANSLATE: Cancel
+- `cancelInvite`: TODO_TRANSLATE: Cancel Invite
+- `cancelInviteConfirmation`: TODO_TRANSLATE: Are you sure you want to cancel this invite?
+- `checkingPermissions`: TODO_TRANSLATE: Checking permissions...
+- `choose`: TODO_TRANSLATE: Choose
+- `clicked`: TODO_TRANSLATE: Clicked
+- `clientScreenTBD`: TODO_TRANSLATE: Client screen coming soon
+- `close`: TODO_TRANSLATE: Close
+- `composeBroadcastMessage`: TODO_TRANSLATE: Compose Broadcast Message
+- `confirm`: TODO_TRANSLATE: Confirm
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `connectedChildren`: TODO_TRANSLATE: Connected Children
+- `content`: TODO_TRANSLATE: Content
+- `copy`: TODO_TRANSLATE: Copy
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createLiveSession`: TODO_TRANSLATE: Create Live Session
+- `createNew`: TODO_TRANSLATE: Create New
+- `createVirtualSession`: TODO_TRANSLATE: Create Virtual Session
+- `createYourFirstGame`: TODO_TRANSLATE: Create your first game
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `created`: TODO_TRANSLATE: Created
+- `customizeMessage`: TODO_TRANSLATE: Customize Message
+- `cut`: TODO_TRANSLATE: Cut
+- `dashboard`: TODO_TRANSLATE: Dashboard
+- `decline`: TODO_TRANSLATE: Decline
+- `defaultShareMessage`: TODO_TRANSLATE: Let's meet via Appoint!
+- `delete`: TODO_TRANSLATE: Delete
+- `details`: TODO_TRANSLATE: Details
+- `done`: TODO_TRANSLATE: Done
+- `download`: TODO_TRANSLATE: Download
+- `edit`: TODO_TRANSLATE: Edit
+- `email`: TODO_TRANSLATE: Email
+- `enableNotifications`: TODO_TRANSLATE: Enable Notifications
+- `enterGroupName`: TODO_TRANSLATE: Enter group name
+- `error`: TODO_TRANSLATE: Error
+- `errorCheckingPermissions`: TODO_TRANSLATE: Error checking permissions
+- `errorLoadingFamilyLinks`: TODO_TRANSLATE: Error loading family links
+- `errorLoadingInvites`: TODO_TRANSLATE: Error loading invites
+- `errorLoadingPrivacyRequests`: TODO_TRANSLATE: Error loading privacy requests
+- `errorLoadingProfile`: TODO_TRANSLATE: Error loading profile
+- `errorSavingMessage`: TODO_TRANSLATE: Error saving message
+- `errorSendingMessage`: TODO_TRANSLATE: Error sending message
+- `failedToActionPrivacyRequest`: TODO_TRANSLATE: Failed to action privacy request
+- `failedToCancelInvite`: TODO_TRANSLATE: Failed to cancel invite
+- `failedToResendOtp`: TODO_TRANSLATE: Failed to resend OTP
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `familyDashboard`: TODO_TRANSLATE: Family Dashboard
+- `familyMembers`: TODO_TRANSLATE: Family Members
+- `fcmToken`: TODO_TRANSLATE: FCM Token
+- `forgotPassword`: TODO_TRANSLATE: Forgot Password?
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `home`: TODO_TRANSLATE: Home
+- `invite`: TODO_TRANSLATE: Invite
+- `inviteCancelledSuccessfully`: TODO_TRANSLATE: Invite cancelled successfully
+- `inviteDetail`: TODO_TRANSLATE: Invite Details
+- `invited`: TODO_TRANSLATE: Invited
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `loading`: TODO_TRANSLATE: Loading...
+- `login`: TODO_TRANSLATE: Login
+- `logout`: TODO_TRANSLATE: Logout
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `mediaOptional`: TODO_TRANSLATE: Media (Optional)
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `meetingSharedSuccessfully`: TODO_TRANSLATE: Meeting shared successfully
+- `messageSavedSuccessfully`: TODO_TRANSLATE: Message saved successfully
+- `messageSentSuccessfully`: TODO_TRANSLATE: Message sent successfully
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `myProfile`: TODO_TRANSLATE: My Profile
+- `next`: TODO_TRANSLATE: Next
+- `no`: TODO_TRANSLATE: No
+- `noBroadcastMessages`: TODO_TRANSLATE: No messages yet
+- `noFamilyMembersYet`: TODO_TRANSLATE: No family members yet
+- `noGamesYet`: TODO_TRANSLATE: No games yet
+- `noInvites`: TODO_TRANSLATE: No invites
+- `noPermissionForBroadcast`: TODO_TRANSLATE: No permission for broadcast
+- `noProfileFound`: TODO_TRANSLATE: No profile found
+- `noResults`: TODO_TRANSLATE: No results found
+- `noSessionsYet`: TODO_TRANSLATE: No sessions yet
+- `notificationSettings`: TODO_TRANSLATE: Notification Settings
+- `notifications`: TODO_TRANSLATE: Notifications
+- `ok`: TODO_TRANSLATE: OK
+- `opened`: TODO_TRANSLATE: Opened
+- `otpResentSuccessfully`: TODO_TRANSLATE: OTP resent successfully
+- `participants`: TODO_TRANSLATE: Participants
+- `password`: TODO_TRANSLATE: Password
+- `paste`: TODO_TRANSLATE: Paste
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `pickImage`: TODO_TRANSLATE: Pick Image
+- `pickVideo`: TODO_TRANSLATE: Pick Video
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseFriends`: TODO_TRANSLATE: Choose friends to invite
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeChooseTime`: TODO_TRANSLATE: Choose a time
+- `playtimeCreate`: TODO_TRANSLATE: Create
+- `playtimeCreateSession`: TODO_TRANSLATE: Create a Playtime Session
+- `playtimeDescription`: TODO_TRANSLATE: Enjoy live or virtual games with your friends!
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameDeleted`: TODO_TRANSLATE: Game deleted
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeHub`: TODO_TRANSLATE: Playtime Hub
+- `playtimeLandingChooseMode`: TODO_TRANSLATE: Choose your play mode:
+- `playtimeLive`: TODO_TRANSLATE: Live Play
+- `playtimeLiveScheduled`: TODO_TRANSLATE: Live playtime scheduled!
+- `playtimeModeLive`: TODO_TRANSLATE: Live Play
+- `playtimeModeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `playtimeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeVirtualStarted`: TODO_TRANSLATE: Virtual playtime started!
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `previous`: TODO_TRANSLATE: Previous
+- `profile`: TODO_TRANSLATE: Profile
+- `quickActions`: TODO_TRANSLATE: Quick Actions
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `recipients`: TODO_TRANSLATE: Recipients
+- `redo`: TODO_TRANSLATE: Redo
+- `refresh`: TODO_TRANSLATE: Refresh
+- `removeChild`: TODO_TRANSLATE: Remove Child
+- `requestType`: TODO_TRANSLATE: Request Type
+- `retry`: TODO_TRANSLATE: Retry
+- `revoke`: TODO_TRANSLATE: Revoke
+- `revokeAccess`: TODO_TRANSLATE: Revoke Access
+- `revokeAccessConfirmation`: TODO_TRANSLATE: Are you sure you want to revoke access?
+- `save`: TODO_TRANSLATE: Save
+- `saveGroupForRecognition`: TODO_TRANSLATE: Save Group for Recognition
+- `scheduleForLater`: TODO_TRANSLATE: Schedule for Later
+- `scheduleMessage`: TODO_TRANSLATE: Schedule Message
+- `scheduled`: TODO_TRANSLATE: Scheduled
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `scheduling`: TODO_TRANSLATE: Scheduling
+- `search`: TODO_TRANSLATE: Search
+- `select`: TODO_TRANSLATE: Select
+- `sendNow`: TODO_TRANSLATE: Send Now
+- `settings`: TODO_TRANSLATE: Settings
+- `share`: TODO_TRANSLATE: Share
+- `shareOnWhatsApp`: TODO_TRANSLATE: Share on WhatsApp
+- `signUp`: TODO_TRANSLATE: Sign Up
+- `staffScreenTBD`: TODO_TRANSLATE: Staff screen coming soon
+- `status`: TODO_TRANSLATE: Status
+- `statusColon`: TODO_TRANSLATE: Status:
+- `success`: TODO_TRANSLATE: Success
+- `targetingFilters`: TODO_TRANSLATE: Targeting Filters
+- `type`: TODO_TRANSLATE: Type
+- `undo`: TODO_TRANSLATE: Undo
+- `upcomingSessions`: TODO_TRANSLATE: Upcoming Sessions
+- `upload`: TODO_TRANSLATE: Upload
+- `viewAll`: TODO_TRANSLATE: View All
+- `welcome`: TODO_TRANSLATE: Welcome
+- `welcomeToPlaytime`: TODO_TRANSLATE: Welcome to Playtime
+- `yes`: TODO_TRANSLATE: Yes
+- `yesCancel`: TODO_TRANSLATE: Yes, Cancel
+
+---
+
+### de - app_de.arb
+**Total Translation Tasks:** 103
+
+**TODO_TRANSLATE Entries (103):**
+- `about`: TODO_TRANSLATE: About
+- `accessRevokedSuccessfully`: TODO_TRANSLATE: Access revoked successfully
+- `add`: TODO_TRANSLATE: Add
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `cancelInvite`: TODO_TRANSLATE: Cancel Invite
+- `checkingPermissions`: TODO_TRANSLATE: Checking permissions...
+- `choose`: TODO_TRANSLATE: Choose
+- `clicked`: TODO_TRANSLATE: Clicked
+- `clientScreenTBD`: TODO_TRANSLATE: Client screen coming soon
+- `close`: TODO_TRANSLATE: Close
+- `composeBroadcastMessage`: TODO_TRANSLATE: Compose Broadcast Message
+- `confirm`: TODO_TRANSLATE: Confirm
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `connectedChildren`: TODO_TRANSLATE: Connected Children
+- `copy`: TODO_TRANSLATE: Copy
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createNew`: TODO_TRANSLATE: Create New
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `customizeMessage`: TODO_TRANSLATE: Customize Message
+- `dashboard`: TODO_TRANSLATE: Dashboard
+- `details`: TODO_TRANSLATE: Details
+- `edit`: TODO_TRANSLATE: Edit
+- `email`: TODO_TRANSLATE: Email
+- `enterGroupName`: TODO_TRANSLATE: Enter group name
+- `errorCheckingPermissions`: TODO_TRANSLATE: Error checking permissions
+- `errorLoadingInvites`: TODO_TRANSLATE: Error loading invites
+- `errorLoadingPrivacyRequests`: TODO_TRANSLATE: Error loading privacy requests
+- `errorLoadingProfile`: TODO_TRANSLATE: Error loading profile
+- `errorSavingMessage`: TODO_TRANSLATE: Error saving message
+- `errorSendingMessage`: TODO_TRANSLATE: Error sending message
+- `failedToCancelInvite`: TODO_TRANSLATE: Failed to cancel invite
+- `failedToResendOtp`: TODO_TRANSLATE: Failed to resend OTP
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `familyDashboard`: TODO_TRANSLATE: Family Dashboard
+- `familyMembers`: TODO_TRANSLATE: Family Members
+- `fcmToken`: TODO_TRANSLATE: FCM Token
+- `forgotPassword`: TODO_TRANSLATE: Forgot Password?
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `inviteDetail`: TODO_TRANSLATE: Invite Details
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `loading`: TODO_TRANSLATE: Loading...
+- `logout`: TODO_TRANSLATE: Logout
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `mediaOptional`: TODO_TRANSLATE: Media (Optional)
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `messageSavedSuccessfully`: TODO_TRANSLATE: Message saved successfully
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `myProfile`: TODO_TRANSLATE: My Profile
+- `noBroadcastMessages`: TODO_TRANSLATE: No messages yet
+- `noFamilyMembersYet`: TODO_TRANSLATE: No family members yet
+- `noGamesYet`: TODO_TRANSLATE: No games yet
+- `noPermissionForBroadcast`: TODO_TRANSLATE: No permission for broadcast
+- `noProfileFound`: TODO_TRANSLATE: No profile found
+- `notificationSettings`: TODO_TRANSLATE: Notification Settings
+- `notifications`: TODO_TRANSLATE: Notifications
+- `otpResentSuccessfully`: TODO_TRANSLATE: OTP resent successfully
+- `paste`: TODO_TRANSLATE: Paste
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `pickImage`: TODO_TRANSLATE: Pick Image
+- `pickVideo`: TODO_TRANSLATE: Pick Video
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeCreateSession`: TODO_TRANSLATE: Create a Playtime Session
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameDeleted`: TODO_TRANSLATE: Game deleted
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeLive`: TODO_TRANSLATE: Live Play
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `previous`: TODO_TRANSLATE: Previous
+- `profile`: TODO_TRANSLATE: Profile
+- `quickActions`: TODO_TRANSLATE: Quick Actions
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `removeChild`: TODO_TRANSLATE: Remove Child
+- `requestType`: TODO_TRANSLATE: Request Type
+- `revoke`: TODO_TRANSLATE: Revoke
+- `save`: TODO_TRANSLATE: Save
+- `scheduleForLater`: TODO_TRANSLATE: Schedule for Later
+- `scheduled`: TODO_TRANSLATE: Scheduled
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `scheduling`: TODO_TRANSLATE: Scheduling
+- `select`: TODO_TRANSLATE: Select
+- `sendNow`: TODO_TRANSLATE: Send Now
+- `settings`: TODO_TRANSLATE: Settings
+- `share`: TODO_TRANSLATE: Share
+- `shareOnWhatsApp`: TODO_TRANSLATE: Share on WhatsApp
+- `status`: TODO_TRANSLATE: Status
+- `statusColon`: TODO_TRANSLATE: Status:
+- `targetingFilters`: TODO_TRANSLATE: Targeting Filters
+- `type`: TODO_TRANSLATE: Type
+- `upcomingSessions`: TODO_TRANSLATE: Upcoming Sessions
+- `upload`: TODO_TRANSLATE: Upload
+- `welcome`: TODO_TRANSLATE: Welcome
+- `yesCancel`: TODO_TRANSLATE: Yes, Cancel
+
+---
+
+### es - app_es.arb
+**Total Translation Tasks:** 103
+
+**TODO_TRANSLATE Entries (103):**
+- `about`: TODO_TRANSLATE: About
+- `accessRevokedSuccessfully`: TODO_TRANSLATE: Access revoked successfully
+- `add`: TODO_TRANSLATE: Add
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `cancelInvite`: TODO_TRANSLATE: Cancel Invite
+- `checkingPermissions`: TODO_TRANSLATE: Checking permissions...
+- `choose`: TODO_TRANSLATE: Choose
+- `clicked`: TODO_TRANSLATE: Clicked
+- `clientScreenTBD`: TODO_TRANSLATE: Client screen coming soon
+- `close`: TODO_TRANSLATE: Close
+- `composeBroadcastMessage`: TODO_TRANSLATE: Compose Broadcast Message
+- `confirm`: TODO_TRANSLATE: Confirm
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `connectedChildren`: TODO_TRANSLATE: Connected Children
+- `copy`: TODO_TRANSLATE: Copy
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createNew`: TODO_TRANSLATE: Create New
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `customizeMessage`: TODO_TRANSLATE: Customize Message
+- `dashboard`: TODO_TRANSLATE: Dashboard
+- `details`: TODO_TRANSLATE: Details
+- `edit`: TODO_TRANSLATE: Edit
+- `email`: TODO_TRANSLATE: Email
+- `enterGroupName`: TODO_TRANSLATE: Enter group name
+- `errorCheckingPermissions`: TODO_TRANSLATE: Error checking permissions
+- `errorLoadingInvites`: TODO_TRANSLATE: Error loading invites
+- `errorLoadingPrivacyRequests`: TODO_TRANSLATE: Error loading privacy requests
+- `errorLoadingProfile`: TODO_TRANSLATE: Error loading profile
+- `errorSavingMessage`: TODO_TRANSLATE: Error saving message
+- `errorSendingMessage`: TODO_TRANSLATE: Error sending message
+- `failedToCancelInvite`: TODO_TRANSLATE: Failed to cancel invite
+- `failedToResendOtp`: TODO_TRANSLATE: Failed to resend OTP
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `familyDashboard`: TODO_TRANSLATE: Family Dashboard
+- `familyMembers`: TODO_TRANSLATE: Family Members
+- `fcmToken`: TODO_TRANSLATE: FCM Token
+- `forgotPassword`: TODO_TRANSLATE: Forgot Password?
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `inviteDetail`: TODO_TRANSLATE: Invite Details
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `loading`: TODO_TRANSLATE: Loading...
+- `logout`: TODO_TRANSLATE: Logout
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `mediaOptional`: TODO_TRANSLATE: Media (Optional)
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `messageSavedSuccessfully`: TODO_TRANSLATE: Message saved successfully
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `myProfile`: TODO_TRANSLATE: My Profile
+- `noBroadcastMessages`: TODO_TRANSLATE: No messages yet
+- `noFamilyMembersYet`: TODO_TRANSLATE: No family members yet
+- `noGamesYet`: TODO_TRANSLATE: No games yet
+- `noPermissionForBroadcast`: TODO_TRANSLATE: No permission for broadcast
+- `noProfileFound`: TODO_TRANSLATE: No profile found
+- `notificationSettings`: TODO_TRANSLATE: Notification Settings
+- `notifications`: TODO_TRANSLATE: Notifications
+- `otpResentSuccessfully`: TODO_TRANSLATE: OTP resent successfully
+- `paste`: TODO_TRANSLATE: Paste
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `pickImage`: TODO_TRANSLATE: Pick Image
+- `pickVideo`: TODO_TRANSLATE: Pick Video
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeCreateSession`: TODO_TRANSLATE: Create a Playtime Session
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameDeleted`: TODO_TRANSLATE: Game deleted
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeLive`: TODO_TRANSLATE: Live Play
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `previous`: TODO_TRANSLATE: Previous
+- `profile`: TODO_TRANSLATE: Profile
+- `quickActions`: TODO_TRANSLATE: Quick Actions
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `removeChild`: TODO_TRANSLATE: Remove Child
+- `requestType`: TODO_TRANSLATE: Request Type
+- `revoke`: TODO_TRANSLATE: Revoke
+- `save`: TODO_TRANSLATE: Save
+- `scheduleForLater`: TODO_TRANSLATE: Schedule for Later
+- `scheduled`: TODO_TRANSLATE: Scheduled
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `scheduling`: TODO_TRANSLATE: Scheduling
+- `select`: TODO_TRANSLATE: Select
+- `sendNow`: TODO_TRANSLATE: Send Now
+- `settings`: TODO_TRANSLATE: Settings
+- `share`: TODO_TRANSLATE: Share
+- `shareOnWhatsApp`: TODO_TRANSLATE: Share on WhatsApp
+- `status`: TODO_TRANSLATE: Status
+- `statusColon`: TODO_TRANSLATE: Status:
+- `targetingFilters`: TODO_TRANSLATE: Targeting Filters
+- `type`: TODO_TRANSLATE: Type
+- `upcomingSessions`: TODO_TRANSLATE: Upcoming Sessions
+- `upload`: TODO_TRANSLATE: Upload
+- `welcome`: TODO_TRANSLATE: Welcome
+- `yesCancel`: TODO_TRANSLATE: Yes, Cancel
+
+---
+
+### fr - app_fr.arb
+**Total Translation Tasks:** 103
+
+**TODO_TRANSLATE Entries (103):**
+- `about`: TODO_TRANSLATE: About
+- `accessRevokedSuccessfully`: TODO_TRANSLATE: Access revoked successfully
+- `add`: TODO_TRANSLATE: Add
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `cancelInvite`: TODO_TRANSLATE: Cancel Invite
+- `checkingPermissions`: TODO_TRANSLATE: Checking permissions...
+- `choose`: TODO_TRANSLATE: Choose
+- `clicked`: TODO_TRANSLATE: Clicked
+- `clientScreenTBD`: TODO_TRANSLATE: Client screen coming soon
+- `close`: TODO_TRANSLATE: Close
+- `composeBroadcastMessage`: TODO_TRANSLATE: Compose Broadcast Message
+- `confirm`: TODO_TRANSLATE: Confirm
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `connectedChildren`: TODO_TRANSLATE: Connected Children
+- `copy`: TODO_TRANSLATE: Copy
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createNew`: TODO_TRANSLATE: Create New
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `customizeMessage`: TODO_TRANSLATE: Customize Message
+- `dashboard`: TODO_TRANSLATE: Dashboard
+- `details`: TODO_TRANSLATE: Details
+- `edit`: TODO_TRANSLATE: Edit
+- `email`: TODO_TRANSLATE: Email
+- `enterGroupName`: TODO_TRANSLATE: Enter group name
+- `errorCheckingPermissions`: TODO_TRANSLATE: Error checking permissions
+- `errorLoadingInvites`: TODO_TRANSLATE: Error loading invites
+- `errorLoadingPrivacyRequests`: TODO_TRANSLATE: Error loading privacy requests
+- `errorLoadingProfile`: TODO_TRANSLATE: Error loading profile
+- `errorSavingMessage`: TODO_TRANSLATE: Error saving message
+- `errorSendingMessage`: TODO_TRANSLATE: Error sending message
+- `failedToCancelInvite`: TODO_TRANSLATE: Failed to cancel invite
+- `failedToResendOtp`: TODO_TRANSLATE: Failed to resend OTP
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `familyDashboard`: TODO_TRANSLATE: Family Dashboard
+- `familyMembers`: TODO_TRANSLATE: Family Members
+- `fcmToken`: TODO_TRANSLATE: FCM Token
+- `forgotPassword`: TODO_TRANSLATE: Forgot Password?
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `inviteDetail`: TODO_TRANSLATE: Invite Details
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `loading`: TODO_TRANSLATE: Loading...
+- `logout`: TODO_TRANSLATE: Logout
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `mediaOptional`: TODO_TRANSLATE: Media (Optional)
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `messageSavedSuccessfully`: TODO_TRANSLATE: Message saved successfully
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `myProfile`: TODO_TRANSLATE: My Profile
+- `noBroadcastMessages`: TODO_TRANSLATE: No messages yet
+- `noFamilyMembersYet`: TODO_TRANSLATE: No family members yet
+- `noGamesYet`: TODO_TRANSLATE: No games yet
+- `noPermissionForBroadcast`: TODO_TRANSLATE: No permission for broadcast
+- `noProfileFound`: TODO_TRANSLATE: No profile found
+- `notificationSettings`: TODO_TRANSLATE: Notification Settings
+- `notifications`: TODO_TRANSLATE: Notifications
+- `otpResentSuccessfully`: TODO_TRANSLATE: OTP resent successfully
+- `paste`: TODO_TRANSLATE: Paste
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `pickImage`: TODO_TRANSLATE: Pick Image
+- `pickVideo`: TODO_TRANSLATE: Pick Video
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeCreateSession`: TODO_TRANSLATE: Create a Playtime Session
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameDeleted`: TODO_TRANSLATE: Game deleted
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeLive`: TODO_TRANSLATE: Live Play
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `previous`: TODO_TRANSLATE: Previous
+- `profile`: TODO_TRANSLATE: Profile
+- `quickActions`: TODO_TRANSLATE: Quick Actions
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `removeChild`: TODO_TRANSLATE: Remove Child
+- `requestType`: TODO_TRANSLATE: Request Type
+- `revoke`: TODO_TRANSLATE: Revoke
+- `save`: TODO_TRANSLATE: Save
+- `scheduleForLater`: TODO_TRANSLATE: Schedule for Later
+- `scheduled`: TODO_TRANSLATE: Scheduled
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `scheduling`: TODO_TRANSLATE: Scheduling
+- `select`: TODO_TRANSLATE: Select
+- `sendNow`: TODO_TRANSLATE: Send Now
+- `settings`: TODO_TRANSLATE: Settings
+- `share`: TODO_TRANSLATE: Share
+- `shareOnWhatsApp`: TODO_TRANSLATE: Share on WhatsApp
+- `status`: TODO_TRANSLATE: Status
+- `statusColon`: TODO_TRANSLATE: Status:
+- `targetingFilters`: TODO_TRANSLATE: Targeting Filters
+- `type`: TODO_TRANSLATE: Type
+- `upcomingSessions`: TODO_TRANSLATE: Upcoming Sessions
+- `upload`: TODO_TRANSLATE: Upload
+- `welcome`: TODO_TRANSLATE: Welcome
+- `yesCancel`: TODO_TRANSLATE: Yes, Cancel
+
+---
+
+### it - app_it.arb
+**Total Translation Tasks:** 103
+
+**TODO_TRANSLATE Entries (103):**
+- `about`: TODO_TRANSLATE: About
+- `accessRevokedSuccessfully`: TODO_TRANSLATE: Access revoked successfully
+- `add`: TODO_TRANSLATE: Add
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `cancelInvite`: TODO_TRANSLATE: Cancel Invite
+- `checkingPermissions`: TODO_TRANSLATE: Checking permissions...
+- `choose`: TODO_TRANSLATE: Choose
+- `clicked`: TODO_TRANSLATE: Clicked
+- `clientScreenTBD`: TODO_TRANSLATE: Client screen coming soon
+- `close`: TODO_TRANSLATE: Close
+- `composeBroadcastMessage`: TODO_TRANSLATE: Compose Broadcast Message
+- `confirm`: TODO_TRANSLATE: Confirm
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `connectedChildren`: TODO_TRANSLATE: Connected Children
+- `copy`: TODO_TRANSLATE: Copy
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createNew`: TODO_TRANSLATE: Create New
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `customizeMessage`: TODO_TRANSLATE: Customize Message
+- `dashboard`: TODO_TRANSLATE: Dashboard
+- `details`: TODO_TRANSLATE: Details
+- `edit`: TODO_TRANSLATE: Edit
+- `email`: TODO_TRANSLATE: Email
+- `enterGroupName`: TODO_TRANSLATE: Enter group name
+- `errorCheckingPermissions`: TODO_TRANSLATE: Error checking permissions
+- `errorLoadingInvites`: TODO_TRANSLATE: Error loading invites
+- `errorLoadingPrivacyRequests`: TODO_TRANSLATE: Error loading privacy requests
+- `errorLoadingProfile`: TODO_TRANSLATE: Error loading profile
+- `errorSavingMessage`: TODO_TRANSLATE: Error saving message
+- `errorSendingMessage`: TODO_TRANSLATE: Error sending message
+- `failedToCancelInvite`: TODO_TRANSLATE: Failed to cancel invite
+- `failedToResendOtp`: TODO_TRANSLATE: Failed to resend OTP
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `familyDashboard`: TODO_TRANSLATE: Family Dashboard
+- `familyMembers`: TODO_TRANSLATE: Family Members
+- `fcmToken`: TODO_TRANSLATE: FCM Token
+- `forgotPassword`: TODO_TRANSLATE: Forgot Password?
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `inviteDetail`: TODO_TRANSLATE: Invite Details
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `loading`: TODO_TRANSLATE: Loading...
+- `logout`: TODO_TRANSLATE: Logout
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `mediaOptional`: TODO_TRANSLATE: Media (Optional)
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `messageSavedSuccessfully`: TODO_TRANSLATE: Message saved successfully
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `myProfile`: TODO_TRANSLATE: My Profile
+- `noBroadcastMessages`: TODO_TRANSLATE: No messages yet
+- `noFamilyMembersYet`: TODO_TRANSLATE: No family members yet
+- `noGamesYet`: TODO_TRANSLATE: No games yet
+- `noPermissionForBroadcast`: TODO_TRANSLATE: No permission for broadcast
+- `noProfileFound`: TODO_TRANSLATE: No profile found
+- `notificationSettings`: TODO_TRANSLATE: Notification Settings
+- `notifications`: TODO_TRANSLATE: Notifications
+- `otpResentSuccessfully`: TODO_TRANSLATE: OTP resent successfully
+- `paste`: TODO_TRANSLATE: Paste
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `pickImage`: TODO_TRANSLATE: Pick Image
+- `pickVideo`: TODO_TRANSLATE: Pick Video
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeCreateSession`: TODO_TRANSLATE: Create a Playtime Session
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameDeleted`: TODO_TRANSLATE: Game deleted
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeLive`: TODO_TRANSLATE: Live Play
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `previous`: TODO_TRANSLATE: Previous
+- `profile`: TODO_TRANSLATE: Profile
+- `quickActions`: TODO_TRANSLATE: Quick Actions
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `removeChild`: TODO_TRANSLATE: Remove Child
+- `requestType`: TODO_TRANSLATE: Request Type
+- `revoke`: TODO_TRANSLATE: Revoke
+- `save`: TODO_TRANSLATE: Save
+- `scheduleForLater`: TODO_TRANSLATE: Schedule for Later
+- `scheduled`: TODO_TRANSLATE: Scheduled
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `scheduling`: TODO_TRANSLATE: Scheduling
+- `select`: TODO_TRANSLATE: Select
+- `sendNow`: TODO_TRANSLATE: Send Now
+- `settings`: TODO_TRANSLATE: Settings
+- `share`: TODO_TRANSLATE: Share
+- `shareOnWhatsApp`: TODO_TRANSLATE: Share on WhatsApp
+- `status`: TODO_TRANSLATE: Status
+- `statusColon`: TODO_TRANSLATE: Status:
+- `targetingFilters`: TODO_TRANSLATE: Targeting Filters
+- `type`: TODO_TRANSLATE: Type
+- `upcomingSessions`: TODO_TRANSLATE: Upcoming Sessions
+- `upload`: TODO_TRANSLATE: Upload
+- `welcome`: TODO_TRANSLATE: Welcome
+- `yesCancel`: TODO_TRANSLATE: Yes, Cancel
+
+---
+
+### pt - app_pt.arb
+**Total Translation Tasks:** 103
+
+**TODO_TRANSLATE Entries (103):**
+- `about`: TODO_TRANSLATE: About
+- `accessRevokedSuccessfully`: TODO_TRANSLATE: Access revoked successfully
+- `add`: TODO_TRANSLATE: Add
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `cancelInvite`: TODO_TRANSLATE: Cancel Invite
+- `checkingPermissions`: TODO_TRANSLATE: Checking permissions...
+- `choose`: TODO_TRANSLATE: Choose
+- `clicked`: TODO_TRANSLATE: Clicked
+- `clientScreenTBD`: TODO_TRANSLATE: Client screen coming soon
+- `close`: TODO_TRANSLATE: Close
+- `composeBroadcastMessage`: TODO_TRANSLATE: Compose Broadcast Message
+- `confirm`: TODO_TRANSLATE: Confirm
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `connectedChildren`: TODO_TRANSLATE: Connected Children
+- `copy`: TODO_TRANSLATE: Copy
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createNew`: TODO_TRANSLATE: Create New
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `customizeMessage`: TODO_TRANSLATE: Customize Message
+- `dashboard`: TODO_TRANSLATE: Dashboard
+- `details`: TODO_TRANSLATE: Details
+- `edit`: TODO_TRANSLATE: Edit
+- `email`: TODO_TRANSLATE: Email
+- `enterGroupName`: TODO_TRANSLATE: Enter group name
+- `errorCheckingPermissions`: TODO_TRANSLATE: Error checking permissions
+- `errorLoadingInvites`: TODO_TRANSLATE: Error loading invites
+- `errorLoadingPrivacyRequests`: TODO_TRANSLATE: Error loading privacy requests
+- `errorLoadingProfile`: TODO_TRANSLATE: Error loading profile
+- `errorSavingMessage`: TODO_TRANSLATE: Error saving message
+- `errorSendingMessage`: TODO_TRANSLATE: Error sending message
+- `failedToCancelInvite`: TODO_TRANSLATE: Failed to cancel invite
+- `failedToResendOtp`: TODO_TRANSLATE: Failed to resend OTP
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `familyDashboard`: TODO_TRANSLATE: Family Dashboard
+- `familyMembers`: TODO_TRANSLATE: Family Members
+- `fcmToken`: TODO_TRANSLATE: FCM Token
+- `forgotPassword`: TODO_TRANSLATE: Forgot Password?
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `inviteDetail`: TODO_TRANSLATE: Invite Details
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `loading`: TODO_TRANSLATE: Loading...
+- `logout`: TODO_TRANSLATE: Logout
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `mediaOptional`: TODO_TRANSLATE: Media (Optional)
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `messageSavedSuccessfully`: TODO_TRANSLATE: Message saved successfully
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `myProfile`: TODO_TRANSLATE: My Profile
+- `noBroadcastMessages`: TODO_TRANSLATE: No messages yet
+- `noFamilyMembersYet`: TODO_TRANSLATE: No family members yet
+- `noGamesYet`: TODO_TRANSLATE: No games yet
+- `noPermissionForBroadcast`: TODO_TRANSLATE: No permission for broadcast
+- `noProfileFound`: TODO_TRANSLATE: No profile found
+- `notificationSettings`: TODO_TRANSLATE: Notification Settings
+- `notifications`: TODO_TRANSLATE: Notifications
+- `otpResentSuccessfully`: TODO_TRANSLATE: OTP resent successfully
+- `paste`: TODO_TRANSLATE: Paste
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `pickImage`: TODO_TRANSLATE: Pick Image
+- `pickVideo`: TODO_TRANSLATE: Pick Video
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeCreateSession`: TODO_TRANSLATE: Create a Playtime Session
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameDeleted`: TODO_TRANSLATE: Game deleted
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeLive`: TODO_TRANSLATE: Live Play
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `previous`: TODO_TRANSLATE: Previous
+- `profile`: TODO_TRANSLATE: Profile
+- `quickActions`: TODO_TRANSLATE: Quick Actions
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `removeChild`: TODO_TRANSLATE: Remove Child
+- `requestType`: TODO_TRANSLATE: Request Type
+- `revoke`: TODO_TRANSLATE: Revoke
+- `save`: TODO_TRANSLATE: Save
+- `scheduleForLater`: TODO_TRANSLATE: Schedule for Later
+- `scheduled`: TODO_TRANSLATE: Scheduled
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `scheduling`: TODO_TRANSLATE: Scheduling
+- `select`: TODO_TRANSLATE: Select
+- `sendNow`: TODO_TRANSLATE: Send Now
+- `settings`: TODO_TRANSLATE: Settings
+- `share`: TODO_TRANSLATE: Share
+- `shareOnWhatsApp`: TODO_TRANSLATE: Share on WhatsApp
+- `status`: TODO_TRANSLATE: Status
+- `statusColon`: TODO_TRANSLATE: Status:
+- `targetingFilters`: TODO_TRANSLATE: Targeting Filters
+- `type`: TODO_TRANSLATE: Type
+- `upcomingSessions`: TODO_TRANSLATE: Upcoming Sessions
+- `upload`: TODO_TRANSLATE: Upload
+- `welcome`: TODO_TRANSLATE: Welcome
+- `yesCancel`: TODO_TRANSLATE: Yes, Cancel
+
+---
+
+### lv - app_lv.arb
+**Total Translation Tasks:** 71
+
+**TODO_TRANSLATE Entries (71):**
+- `about`: TODO_TRANSLATE: About
+- `add`: TODO_TRANSLATE: Add
+- `back`: TODO_TRANSLATE: Back
+- `choose`: TODO_TRANSLATE: Choose
+- `confirm`: TODO_TRANSLATE: Confirm
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `copy`: TODO_TRANSLATE: Copy
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createLiveSession`: TODO_TRANSLATE: Create Live Session
+- `createNew`: TODO_TRANSLATE: Create New
+- `createVirtualSession`: TODO_TRANSLATE: Create Virtual Session
+- `createYourFirstGame`: TODO_TRANSLATE: Create your first game
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `cut`: TODO_TRANSLATE: Cut
+- `delete`: TODO_TRANSLATE: Delete
+- `done`: TODO_TRANSLATE: Done
+- `download`: TODO_TRANSLATE: Download
+- `edit`: TODO_TRANSLATE: Edit
+- `error`: TODO_TRANSLATE: Error
+- `forgotPassword`: TODO_TRANSLATE: Forgot Password?
+- `logout`: TODO_TRANSLATE: Logout
+- `noGamesYet`: TODO_TRANSLATE: No games yet
+- `noResults`: TODO_TRANSLATE: No results found
+- `noSessionsYet`: TODO_TRANSLATE: No sessions yet
+- `ok`: TODO_TRANSLATE: OK
+- `participants`: TODO_TRANSLATE: Participants
+- `paste`: TODO_TRANSLATE: Paste
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseFriends`: TODO_TRANSLATE: Choose friends to invite
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeChooseTime`: TODO_TRANSLATE: Choose a time
+- `playtimeCreate`: TODO_TRANSLATE: Create
+- `playtimeCreateSession`: TODO_TRANSLATE: Create a Playtime Session
+- `playtimeDescription`: TODO_TRANSLATE: Enjoy live or virtual games with your friends!
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameDeleted`: TODO_TRANSLATE: Game deleted
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeHub`: TODO_TRANSLATE: Playtime Hub
+- `playtimeLandingChooseMode`: TODO_TRANSLATE: Choose your play mode:
+- `playtimeLive`: TODO_TRANSLATE: Live Play
+- `playtimeLiveScheduled`: TODO_TRANSLATE: Live playtime scheduled!
+- `playtimeModeLive`: TODO_TRANSLATE: Live Play
+- `playtimeModeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `playtimeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeVirtualStarted`: TODO_TRANSLATE: Virtual playtime started!
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `previous`: TODO_TRANSLATE: Previous
+- `quickActions`: TODO_TRANSLATE: Quick Actions
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `redo`: TODO_TRANSLATE: Redo
+- `refresh`: TODO_TRANSLATE: Refresh
+- `retry`: TODO_TRANSLATE: Retry
+- `scheduleMessage`: TODO_TRANSLATE: Schedule Message
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `search`: TODO_TRANSLATE: Search
+- `select`: TODO_TRANSLATE: Select
+- `settings`: TODO_TRANSLATE: Settings
+- `share`: TODO_TRANSLATE: Share
+- `signUp`: TODO_TRANSLATE: Sign Up
+- `success`: TODO_TRANSLATE: Success
+- `undo`: TODO_TRANSLATE: Undo
+- `upcomingSessions`: TODO_TRANSLATE: Upcoming Sessions
+- `upload`: TODO_TRANSLATE: Upload
+- `viewAll`: TODO_TRANSLATE: View All
+- `welcomeToPlaytime`: TODO_TRANSLATE: Welcome to Playtime
+
+---
+
+### ur - app_ur.arb
+**Total Translation Tasks:** 71
+
+**TODO_TRANSLATE Entries (71):**
+- `about`: TODO_TRANSLATE: About
+- `add`: TODO_TRANSLATE: Add
+- `back`: TODO_TRANSLATE: Back
+- `choose`: TODO_TRANSLATE: Choose
+- `confirm`: TODO_TRANSLATE: Confirm
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `copy`: TODO_TRANSLATE: Copy
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createLiveSession`: TODO_TRANSLATE: Create Live Session
+- `createNew`: TODO_TRANSLATE: Create New
+- `createVirtualSession`: TODO_TRANSLATE: Create Virtual Session
+- `createYourFirstGame`: TODO_TRANSLATE: Create your first game
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `cut`: TODO_TRANSLATE: Cut
+- `delete`: TODO_TRANSLATE: Delete
+- `done`: TODO_TRANSLATE: Done
+- `download`: TODO_TRANSLATE: Download
+- `edit`: TODO_TRANSLATE: Edit
+- `error`: TODO_TRANSLATE: Error
+- `forgotPassword`: TODO_TRANSLATE: Forgot Password?
+- `logout`: TODO_TRANSLATE: Logout
+- `noGamesYet`: TODO_TRANSLATE: No games yet
+- `noResults`: TODO_TRANSLATE: No results found
+- `noSessionsYet`: TODO_TRANSLATE: No sessions yet
+- `ok`: TODO_TRANSLATE: OK
+- `participants`: TODO_TRANSLATE: Participants
+- `paste`: TODO_TRANSLATE: Paste
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseFriends`: TODO_TRANSLATE: Choose friends to invite
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeChooseTime`: TODO_TRANSLATE: Choose a time
+- `playtimeCreate`: TODO_TRANSLATE: Create
+- `playtimeCreateSession`: TODO_TRANSLATE: Create a Playtime Session
+- `playtimeDescription`: TODO_TRANSLATE: Enjoy live or virtual games with your friends!
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameDeleted`: TODO_TRANSLATE: Game deleted
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeHub`: TODO_TRANSLATE: Playtime Hub
+- `playtimeLandingChooseMode`: TODO_TRANSLATE: Choose your play mode:
+- `playtimeLive`: TODO_TRANSLATE: Live Play
+- `playtimeLiveScheduled`: TODO_TRANSLATE: Live playtime scheduled!
+- `playtimeModeLive`: TODO_TRANSLATE: Live Play
+- `playtimeModeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `playtimeVirtual`: TODO_TRANSLATE: Virtual Play
+- `playtimeVirtualStarted`: TODO_TRANSLATE: Virtual playtime started!
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `previous`: TODO_TRANSLATE: Previous
+- `quickActions`: TODO_TRANSLATE: Quick Actions
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `redo`: TODO_TRANSLATE: Redo
+- `refresh`: TODO_TRANSLATE: Refresh
+- `retry`: TODO_TRANSLATE: Retry
+- `scheduleMessage`: TODO_TRANSLATE: Schedule Message
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `search`: TODO_TRANSLATE: Search
+- `select`: TODO_TRANSLATE: Select
+- `settings`: TODO_TRANSLATE: Settings
+- `share`: TODO_TRANSLATE: Share
+- `signUp`: TODO_TRANSLATE: Sign Up
+- `success`: TODO_TRANSLATE: Success
+- `undo`: TODO_TRANSLATE: Undo
+- `upcomingSessions`: TODO_TRANSLATE: Upcoming Sessions
+- `upload`: TODO_TRANSLATE: Upload
+- `viewAll`: TODO_TRANSLATE: View All
+- `welcomeToPlaytime`: TODO_TRANSLATE: Welcome to Playtime
+
+---
+
+### ko - app_ko.arb
+**Total Translation Tasks:** 66
+
+**TODO_TRANSLATE Entries (66):**
+- `add`: TODO_TRANSLATE: Add
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `cancelInvite`: TODO_TRANSLATE: Cancel Invite
+- `clicked`: TODO_TRANSLATE: Clicked
+- `clientScreenTBD`: TODO_TRANSLATE: Client screen coming soon
+- `close`: TODO_TRANSLATE: Close
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `connectedChildren`: TODO_TRANSLATE: Connected Children
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createNew`: TODO_TRANSLATE: Create New
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `customizeMessage`: TODO_TRANSLATE: Customize Message
+- `dashboard`: TODO_TRANSLATE: Dashboard
+- `details`: TODO_TRANSLATE: Details
+- `edit`: TODO_TRANSLATE: Edit
+- `errorCheckingPermissions`: TODO_TRANSLATE: Error checking permissions
+- `errorLoadingPrivacyRequests`: TODO_TRANSLATE: Error loading privacy requests
+- `errorLoadingProfile`: TODO_TRANSLATE: Error loading profile
+- `errorSavingMessage`: TODO_TRANSLATE: Error saving message
+- `errorSendingMessage`: TODO_TRANSLATE: Error sending message
+- `failedToCancelInvite`: TODO_TRANSLATE: Failed to cancel invite
+- `failedToResendOtp`: TODO_TRANSLATE: Failed to resend OTP
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `familyDashboard`: TODO_TRANSLATE: Family Dashboard
+- `fcmToken`: TODO_TRANSLATE: FCM Token
+- `forgotPassword`: TODO_TRANSLATE: Forgot Password?
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `inviteDetail`: TODO_TRANSLATE: Invite Details
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `loading`: TODO_TRANSLATE: Loading...
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `mediaOptional`: TODO_TRANSLATE: Media (Optional)
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `messageSavedSuccessfully`: TODO_TRANSLATE: Message saved successfully
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `noFamilyMembersYet`: TODO_TRANSLATE: No family members yet
+- `noPermissionForBroadcast`: TODO_TRANSLATE: No permission for broadcast
+- `noProfileFound`: TODO_TRANSLATE: No profile found
+- `otpResentSuccessfully`: TODO_TRANSLATE: OTP resent successfully
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `pickImage`: TODO_TRANSLATE: Pick Image
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `previous`: TODO_TRANSLATE: Previous
+- `quickActions`: TODO_TRANSLATE: Quick Actions
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `save`: TODO_TRANSLATE: Save
+- `scheduled`: TODO_TRANSLATE: Scheduled
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `scheduling`: TODO_TRANSLATE: Scheduling
+- `settings`: TODO_TRANSLATE: Settings
+- `share`: TODO_TRANSLATE: Share
+- `statusColon`: TODO_TRANSLATE: Status:
+
+---
+
+### bn - app_bn.arb
+**Total Translation Tasks:** 23
+
+**TODO_TRANSLATE Entries (23):**
+- `confirmPassword`: TODO_TRANSLATE: Confirm Password
+- `createGame`: TODO_TRANSLATE: Create Game
+- `createYourFirstSession`: TODO_TRANSLATE: Create your first session
+- `cut`: TODO_TRANSLATE: Cut
+- `delete`: TODO_TRANSLATE: Delete
+- `error`: TODO_TRANSLATE: Error
+- `participants`: TODO_TRANSLATE: Participants
+- `paste`: TODO_TRANSLATE: Paste
+- `playtimeAdminPanelTitle`: TODO_TRANSLATE: Playtime Games – Admin
+- `playtimeApprove`: TODO_TRANSLATE: Approve
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeEnterGameName`: TODO_TRANSLATE: Enter game name
+- `playtimeGameApproved`: TODO_TRANSLATE: Game approved
+- `playtimeGameDeleted`: TODO_TRANSLATE: Game deleted
+- `playtimeGameRejected`: TODO_TRANSLATE: Game rejected
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `playtimeReject`: TODO_TRANSLATE: Reject
+- `playtimeTitle`: TODO_TRANSLATE: Playtime
+- `recentGames`: TODO_TRANSLATE: Recent Games
+- `scheduledFor`: TODO_TRANSLATE: Scheduled for
+- `share`: TODO_TRANSLATE: Share
+- `upcomingSessions`: TODO_TRANSLATE: Upcoming Sessions
+
+---
+
+### vi - app_vi.arb
+**Total Translation Tasks:** 20
+
+**Missing Keys (2):**
+- `failedToRevokeAccess`
+- `pleaseLoginForFamilyFeatures`
+
+**TODO_TRANSLATE Entries (18):**
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `clicked`: TODO_TRANSLATE: Clicked
+- `close`: TODO_TRANSLATE: Close
+- `createGame`: TODO_TRANSLATE: Create Game
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `pleaseLoginToViewProfile`: TODO_TRANSLATE: Please log in to view your profile.
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `statusColon`: TODO_TRANSLATE: Status:
+
+---
+
+### bn_BD - app_bn_BD.arb
+**Total Translation Tasks:** 19
+
+**Missing Keys (19):**
+- `adminScreenTBD`
+- `back`
+- `clicked`
+- `close`
+- `createGame`
+- `failedToRevokeAccess`
+- `groupNameOptional`
+- `knownGroupDetected`
+- `link`
+- `managePermissions`
+- `meetingReadyMessage`
+- `myInvites`
+- `pendingInvites`
+- `playtimeChooseGame`
+- `playtimeNoSessions`
+- `playtimeParentDashboardTitle`
+- `pleaseLoginForFamilyFeatures`
+- `pollOptions`
+- `statusColon`
+
+---
+
+### he - app_he.arb
+**Total Translation Tasks:** 19
+
+**Missing Keys (19):**
+- `adminScreenTBD`
+- `back`
+- `clicked`
+- `close`
+- `createGame`
+- `failedToRevokeAccess`
+- `groupNameOptional`
+- `knownGroupDetected`
+- `link`
+- `managePermissions`
+- `meetingReadyMessage`
+- `myInvites`
+- `pendingInvites`
+- `playtimeChooseGame`
+- `playtimeNoSessions`
+- `playtimeParentDashboardTitle`
+- `pleaseLoginForFamilyFeatures`
+- `pollOptions`
+- `statusColon`
+
+---
+
+### ja - app_ja.arb
+**Total Translation Tasks:** 19
+
+**TODO_TRANSLATE Entries (19):**
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `clicked`: TODO_TRANSLATE: Clicked
+- `close`: TODO_TRANSLATE: Close
+- `createGame`: TODO_TRANSLATE: Create Game
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `statusColon`: TODO_TRANSLATE: Status:
+
+---
+
+### ms - app_ms.arb
+**Total Translation Tasks:** 19
+
+**TODO_TRANSLATE Entries (19):**
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `clicked`: TODO_TRANSLATE: Clicked
+- `close`: TODO_TRANSLATE: Close
+- `createGame`: TODO_TRANSLATE: Create Game
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `statusColon`: TODO_TRANSLATE: Status:
+
+---
+
+### nl - app_nl.arb
+**Total Translation Tasks:** 19
+
+**TODO_TRANSLATE Entries (19):**
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `clicked`: TODO_TRANSLATE: Clicked
+- `close`: TODO_TRANSLATE: Close
+- `createGame`: TODO_TRANSLATE: Create Game
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `statusColon`: TODO_TRANSLATE: Status:
+
+---
+
+### no - app_no.arb
+**Total Translation Tasks:** 19
+
+**TODO_TRANSLATE Entries (19):**
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `clicked`: TODO_TRANSLATE: Clicked
+- `close`: TODO_TRANSLATE: Close
+- `createGame`: TODO_TRANSLATE: Create Game
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `statusColon`: TODO_TRANSLATE: Status:
+
+---
+
+### pl - app_pl.arb
+**Total Translation Tasks:** 19
+
+**TODO_TRANSLATE Entries (19):**
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `clicked`: TODO_TRANSLATE: Clicked
+- `close`: TODO_TRANSLATE: Close
+- `createGame`: TODO_TRANSLATE: Create Game
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `statusColon`: TODO_TRANSLATE: Status:
+
+---
+
+### pt_BR - app_pt_BR.arb
+**Total Translation Tasks:** 19
+
+**Missing Keys (19):**
+- `adminScreenTBD`
+- `back`
+- `clicked`
+- `close`
+- `createGame`
+- `failedToRevokeAccess`
+- `groupNameOptional`
+- `knownGroupDetected`
+- `link`
+- `managePermissions`
+- `meetingReadyMessage`
+- `myInvites`
+- `pendingInvites`
+- `playtimeChooseGame`
+- `playtimeNoSessions`
+- `playtimeParentDashboardTitle`
+- `pleaseLoginForFamilyFeatures`
+- `pollOptions`
+- `statusColon`
+
+---
+
+### ro - app_ro.arb
+**Total Translation Tasks:** 19
+
+**TODO_TRANSLATE Entries (19):**
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `clicked`: TODO_TRANSLATE: Clicked
+- `close`: TODO_TRANSLATE: Close
+- `createGame`: TODO_TRANSLATE: Create Game
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `statusColon`: TODO_TRANSLATE: Status:
+
+---
+
+### ru - app_ru.arb
+**Total Translation Tasks:** 19
+
+**TODO_TRANSLATE Entries (19):**
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `clicked`: TODO_TRANSLATE: Clicked
+- `close`: TODO_TRANSLATE: Close
+- `createGame`: TODO_TRANSLATE: Create Game
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `statusColon`: TODO_TRANSLATE: Status:
+
+---
+
+### sk - app_sk.arb
+**Total Translation Tasks:** 19
+
+**TODO_TRANSLATE Entries (19):**
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `clicked`: TODO_TRANSLATE: Clicked
+- `close`: TODO_TRANSLATE: Close
+- `createGame`: TODO_TRANSLATE: Create Game
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `statusColon`: TODO_TRANSLATE: Status:
+
+---
+
+### sl - app_sl.arb
+**Total Translation Tasks:** 19
+
+**TODO_TRANSLATE Entries (19):**
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `clicked`: TODO_TRANSLATE: Clicked
+- `close`: TODO_TRANSLATE: Close
+- `createGame`: TODO_TRANSLATE: Create Game
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `statusColon`: TODO_TRANSLATE: Status:
+
+---
+
+### sv - app_sv.arb
+**Total Translation Tasks:** 19
+
+**TODO_TRANSLATE Entries (19):**
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `clicked`: TODO_TRANSLATE: Clicked
+- `close`: TODO_TRANSLATE: Close
+- `createGame`: TODO_TRANSLATE: Create Game
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `statusColon`: TODO_TRANSLATE: Status:
+
+---
+
+### th - app_th.arb
+**Total Translation Tasks:** 19
+
+**TODO_TRANSLATE Entries (19):**
+- `adminScreenTBD`: TODO_TRANSLATE: Admin screen coming soon
+- `back`: TODO_TRANSLATE: Back
+- `clicked`: TODO_TRANSLATE: Clicked
+- `close`: TODO_TRANSLATE: Close
+- `createGame`: TODO_TRANSLATE: Create Game
+- `failedToRevokeAccess`: TODO_TRANSLATE: Failed to revoke access
+- `groupNameOptional`: TODO_TRANSLATE: Group Name (Optional)
+- `knownGroupDetected`: TODO_TRANSLATE: Known group detected
+- `link`: TODO_TRANSLATE: Link
+- `managePermissions`: TODO_TRANSLATE: Manage Permissions
+- `meetingReadyMessage`: TODO_TRANSLATE: Your meeting is ready! Join now
+- `myInvites`: TODO_TRANSLATE: My Invites
+- `pendingInvites`: TODO_TRANSLATE: Pending Invites
+- `playtimeChooseGame`: TODO_TRANSLATE: Choose a game
+- `playtimeNoSessions`: TODO_TRANSLATE: No playtime sessions found.
+- `playtimeParentDashboardTitle`: TODO_TRANSLATE: Playtime Dashboard
+- `pleaseLoginForFamilyFeatures`: TODO_TRANSLATE: Please login to access family features
+- `pollOptions`: TODO_TRANSLATE: Poll Options
+- `statusColon`: TODO_TRANSLATE: Status:
+
+---
+
+### tr - app_tr.arb
+**Total Translation Tasks:** 19
+
+**Missing Keys (19):**
+- `adminScreenTBD`
+- `back`
+- `clicked`
+- `close`
+- `createGame`
+- `failedToRevokeAccess`
+- `groupNameOptional`
+- `knownGroupDetected`
+- `link`
+- `managePermissions`
+- `meetingReadyMessage`
+- `myInvites`
+- `pendingInvites`
+- `playtimeChooseGame`
+- `playtimeNoSessions`
+- `playtimeParentDashboardTitle`
+- `pleaseLoginForFamilyFeatures`
+- `pollOptions`
+- `statusColon`
+
+---
+
+### uk - app_uk.arb
+**Total Translation Tasks:** 19
+
+**Missing Keys (19):**
+- `adminScreenTBD`
+- `back`
+- `clicked`
+- `close`
+- `createGame`
+- `failedToRevokeAccess`
+- `groupNameOptional`
+- `knownGroupDetected`
+- `link`
+- `managePermissions`
+- `meetingReadyMessage`
+- `myInvites`
+- `pendingInvites`
+- `playtimeChooseGame`
+- `playtimeNoSessions`
+- `playtimeParentDashboardTitle`
+- `pleaseLoginForFamilyFeatures`
+- `pollOptions`
+- `statusColon`
+
+---
+
+### zh - app_zh.arb
+**Total Translation Tasks:** 1
+
+**Missing Keys (1):**
+- `pleaseLoginForFamilyFeatures`
+
+---
+
+## Complete List of Keys Needing Translation
+
+### Playtime Keys (24)
+- `playtimeAdminPanelTitle`
+- `playtimeApprove`
+- `playtimeChooseFriends`
+- `playtimeChooseGame`
+- `playtimeChooseTime`
+- `playtimeCreate`
+- `playtimeCreateSession`
+- `playtimeDescription`
+- `playtimeEnterGameName`
+- `playtimeGameApproved`
+- `playtimeGameDeleted`
+- `playtimeGameRejected`
+- `playtimeHub`
+- `playtimeLandingChooseMode`
+- `playtimeLive`
+- `playtimeLiveScheduled`
+- `playtimeModeLive`
+- `playtimeModeVirtual`
+- `playtimeNoSessions`
+- `playtimeParentDashboardTitle`
+- `playtimeReject`
+- `playtimeTitle`
+- `playtimeVirtual`
+- `playtimeVirtualStarted`
+
+### Admin Keys (2)
+- `adminBroadcast`
+- `adminScreenTBD`
+
+### Family Keys (5)
+- `errorLoadingFamilyLinks`
+- `familyDashboard`
+- `familyMembers`
+- `noFamilyMembersYet`
+- `pleaseLoginForFamilyFeatures`
+
+### Other Keys (134)
+- `about`
+- `accept`
+- `accessRevokedSuccessfully`
+- `add`
+- `appTitle`
+- `back`
+- `cancel`
+- `cancelInvite`
+- `cancelInviteConfirmation`
+- `checkingPermissions`
+- `choose`
+- `clicked`
+- `clientScreenTBD`
+- `close`
+- `composeBroadcastMessage`
+- `confirm`
+- `confirmPassword`
+- `connectedChildren`
+- `content`
+- `copy`
+- `createGame`
+- `createLiveSession`
+- `createNew`
+- `createVirtualSession`
+- `createYourFirstGame`
+- `createYourFirstSession`
+- `created`
+- `customizeMessage`
+- `cut`
+- `dashboard`
+- `decline`
+- `defaultShareMessage`
+- `delete`
+- `details`
+- `done`
+- `download`
+- `edit`
+- `email`
+- `enableNotifications`
+- `enterGroupName`
+- `error`
+- `errorCheckingPermissions`
+- `errorLoadingInvites`
+- `errorLoadingPrivacyRequests`
+- `errorLoadingProfile`
+- `errorSavingMessage`
+- `errorSendingMessage`
+- `failedToActionPrivacyRequest`
+- `failedToCancelInvite`
+- `failedToResendOtp`
+- `failedToRevokeAccess`
+- `fcmToken`
+- `forgotPassword`
+- `groupNameOptional`
+- `home`
+- `invite`
+- `inviteCancelledSuccessfully`
+- `inviteDetail`
+- `invited`
+- `knownGroupDetected`
+- `link`
+- `loading`
+- `login`
+- `logout`
+- `managePermissions`
+- `mediaOptional`
+- `meetingReadyMessage`
+- `meetingSharedSuccessfully`
+- `messageSavedSuccessfully`
+- `messageSentSuccessfully`
+- `myInvites`
+- `myProfile`
+- `next`
+- `no`
+- `noBroadcastMessages`
+- `noGamesYet`
+- `noInvites`
+- `noPermissionForBroadcast`
+- `noProfileFound`
+- `noResults`
+- `noSessionsYet`
+- `notificationSettings`
+- `notifications`
+- `ok`
+- `opened`
+- `otpResentSuccessfully`
+- `participants`
+- `password`
+- `paste`
+- `pendingInvites`
+- `pickImage`
+- `pickVideo`
+- `pleaseLoginToViewProfile`
+- `pollOptions`
+- `previous`
+- `profile`
+- `quickActions`
+- `recentGames`
+- `recipients`
+- `redo`
+- `refresh`
+- `removeChild`
+- `requestType`
+- `retry`
+- `revoke`
+- `revokeAccess`
+- `revokeAccessConfirmation`
+- `save`
+- `saveGroupForRecognition`
+- `scheduleForLater`
+- `scheduleMessage`
+- `scheduled`
+- `scheduledFor`
+- `scheduling`
+- `search`
+- `select`
+- `sendNow`
+- `settings`
+- `share`
+- `shareOnWhatsApp`
+- `signUp`
+- `staffScreenTBD`
+- `status`
+- `statusColon`
+- `success`
+- `targetingFilters`
+- `type`
+- `undo`
+- `upcomingSessions`
+- `upload`
+- `viewAll`
+- `welcome`
+- `yes`
+- `yesCancel`
+
+## Priority Translation List
+
+### High Priority (Missing from multiple files)
+- `pleaseLoginForFamilyFeatures` (missing from 7 files)
+- `failedToRevokeAccess` (missing from 6 files)
+- `adminScreenTBD` (missing from 5 files)
+- `back` (missing from 5 files)
+- `clicked` (missing from 5 files)
+- `close` (missing from 5 files)
+- `createGame` (missing from 5 files)
+- `groupNameOptional` (missing from 5 files)
+- `knownGroupDetected` (missing from 5 files)
+- `link` (missing from 5 files)
+- `managePermissions` (missing from 5 files)
+- `meetingReadyMessage` (missing from 5 files)
+- `myInvites` (missing from 5 files)
+- `pendingInvites` (missing from 5 files)
+- `playtimeChooseGame` (missing from 5 files)
+- `playtimeNoSessions` (missing from 5 files)
+- `playtimeParentDashboardTitle` (missing from 5 files)
+- `pollOptions` (missing from 5 files)
+- `statusColon` (missing from 5 files)
+
+### Medium Priority (TODO_TRANSLATE entries)
+Total TODO entries across all files: 166
+- `about`
+- `accept`
+- `accessRevokedSuccessfully`
+- `add`
+- `adminBroadcast`
+- `adminScreenTBD`
+- `appTitle`
+- `back`
+- `cancel`
+- `cancelInvite`
+- `cancelInviteConfirmation`
+- `checkingPermissions`
+- `choose`
+- `clicked`
+- `clientScreenTBD`
+- `close`
+- `composeBroadcastMessage`
+- `confirm`
+- `confirmPassword`
+- `connectedChildren`
+- `content`
+- `copy`
+- `createGame`
+- `createLiveSession`
+- `createNew`
+- `createVirtualSession`
+- `createYourFirstGame`
+- `createYourFirstSession`
+- `created`
+- `customizeMessage`
+- `cut`
+- `dashboard`
+- `decline`
+- `defaultShareMessage`
+- `delete`
+- `details`
+- `done`
+- `download`
+- `edit`
+- `email`
+- `enableNotifications`
+- `enterGroupName`
+- `error`
+- `errorCheckingPermissions`
+- `errorLoadingFamilyLinks`
+- `errorLoadingInvites`
+- `errorLoadingPrivacyRequests`
+- `errorLoadingProfile`
+- `errorSavingMessage`
+- `errorSendingMessage`
+- `failedToActionPrivacyRequest`
+- `failedToCancelInvite`
+- `failedToResendOtp`
+- `failedToRevokeAccess`
+- `familyDashboard`
+- `familyMembers`
+- `fcmToken`
+- `forgotPassword`
+- `groupNameOptional`
+- `home`
+- `invite`
+- `inviteCancelledSuccessfully`
+- `inviteDetail`
+- `invited`
+- `knownGroupDetected`
+- `link`
+- `loading`
+- `login`
+- `logout`
+- `managePermissions`
+- `mediaOptional`
+- `meetingReadyMessage`
+- `meetingSharedSuccessfully`
+- `messageSavedSuccessfully`
+- `messageSentSuccessfully`
+- `myInvites`
+- `myProfile`
+- `next`
+- `no`
+- `noBroadcastMessages`
+- `noFamilyMembersYet`
+- `noGamesYet`
+- `noInvites`
+- `noPermissionForBroadcast`
+- `noProfileFound`
+- `noResults`
+- `noSessionsYet`
+- `notificationSettings`
+- `notifications`
+- `ok`
+- `opened`
+- `otpResentSuccessfully`
+- `participants`
+- `password`
+- `paste`
+- `pendingInvites`
+- `pickImage`
+- `pickVideo`
+- `playtimeAdminPanelTitle`
+- `playtimeApprove`
+- `playtimeChooseFriends`
+- `playtimeChooseGame`
+- `playtimeChooseTime`
+- `playtimeCreate`
+- `playtimeCreateSession`
+- `playtimeDescription`
+- `playtimeEnterGameName`
+- `playtimeGameApproved`
+- `playtimeGameDeleted`
+- `playtimeGameRejected`
+- `playtimeHub`
+- `playtimeLandingChooseMode`
+- `playtimeLive`
+- `playtimeLiveScheduled`
+- `playtimeModeLive`
+- `playtimeModeVirtual`
+- `playtimeNoSessions`
+- `playtimeParentDashboardTitle`
+- `playtimeReject`
+- `playtimeTitle`
+- `playtimeVirtual`
+- `playtimeVirtualStarted`
+- `pleaseLoginForFamilyFeatures`
+- `pleaseLoginToViewProfile`
+- `pollOptions`
+- `previous`
+- `profile`
+- `quickActions`
+- `recentGames`
+- `recipients`
+- `redo`
+- `refresh`
+- `removeChild`
+- `requestType`
+- `retry`
+- `revoke`
+- `revokeAccess`
+- `revokeAccessConfirmation`
+- `save`
+- `saveGroupForRecognition`
+- `scheduleForLater`
+- `scheduleMessage`
+- `scheduled`
+- `scheduledFor`
+- `scheduling`
+- `search`
+- `select`
+- `sendNow`
+- `settings`
+- `share`
+- `shareOnWhatsApp`
+- `signUp`
+- `staffScreenTBD`
+- `status`
+- `statusColon`
+- `success`
+- `targetingFilters`
+- `type`
+- `undo`
+- `upcomingSessions`
+- `upload`
+- `viewAll`
+- `welcome`
+- `welcomeToPlaytime`
+- `yes`
+- `yesCancel`

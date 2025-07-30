@@ -1,0 +1,239 @@
+Analyzing appoint...                                            
+
+warning • The operand can't be 'null', so the condition is always 'true' • accessibility/tests/semantic_labels_test.dart:418:23 • unnecessary_null_comparison
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:439:50 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:493:37 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:517:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:579:58 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:633:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:673:44 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:691:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:744:22 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:788:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:873:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:922:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:1019:28 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:1040:40 • deprecated_member_use
+warning • The value of the field '_selectedTabIndex' isn't used • lib/features/admin/analytics_dashboard_screen.dart:20:7 • unused_field
+warning • The value of the local variable 'csvData' isn't used • lib/features/admin/analytics_dashboard_screen.dart:1131:21 • unused_local_variable
+warning • Unused import: 'package:appoint/services/ambassador_automation_service.dart' • lib/features/ambassador/ambassador_user_dashboard.dart:3:8 • unused_import
+warning • The value of the field '_profile' isn't used • lib/features/ambassador/ambassador_user_dashboard.dart:25:22 • unused_field
+warning • The value of the field '_recentReferrals' isn't used • lib/features/ambassador/ambassador_user_dashboard.dart:26:34 • unused_field
+warning • The value of the field '_activeRewards' isn't used • lib/features/ambassador/ambassador_user_dashboard.dart:27:32 • unused_field
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:149:41 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:162:41 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:186:47 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:196:41 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:256:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:292:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:360:30 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:361:31 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:387:38 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:388:39 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:478:34 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:525:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:593:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:652:34 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:653:33 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:694:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:734:24 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:736:43 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:780:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:813:23 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:814:59 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:818:62 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:869:44 • deprecated_member_use
+   info • The value of the argument is redundant because it matches the default value • lib/features/ambassador/ambassador_user_dashboard.dart:893:30 • avoid_redundant_argument_values
+   info • 'foregroundColor' is deprecated and shouldn't be used. use colors in eyeStyle and dataModuleStyle instead • lib/features/ambassador/ambassador_user_dashboard.dart:895:21 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:911:44 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:972:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:1042:34 • deprecated_member_use
+   info • 'Share' is deprecated and shouldn't be used. Use SharePlus instead • lib/features/ambassador/ambassador_user_dashboard.dart:1066:11 • deprecated_member_use
+   info • 'share' is deprecated and shouldn't be used. Use SharePlus.instance.share() instead • lib/features/ambassador/ambassador_user_dashboard.dart:1066:17 • deprecated_member_use
+   info • 'Share' is deprecated and shouldn't be used. Use SharePlus instead • lib/features/ambassador/ambassador_user_dashboard.dart:1082:11 • deprecated_member_use
+   info • 'share' is deprecated and shouldn't be used. Use SharePlus.instance.share() instead • lib/features/ambassador/ambassador_user_dashboard.dart:1082:17 • deprecated_member_use
+   info • 'Share' is deprecated and shouldn't be used. Use SharePlus instead • lib/features/ambassador/ambassador_user_dashboard.dart:1089:11 • deprecated_member_use
+   info • 'share' is deprecated and shouldn't be used. Use SharePlus.instance.share() instead • lib/features/ambassador/ambassador_user_dashboard.dart:1089:17 • deprecated_member_use
+   info • 'Share' is deprecated and shouldn't be used. Use SharePlus instead • lib/features/ambassador/ambassador_user_dashboard.dart:1096:11 • deprecated_member_use
+   info • 'share' is deprecated and shouldn't be used. Use SharePlus.instance.share() instead • lib/features/ambassador/ambassador_user_dashboard.dart:1096:17 • deprecated_member_use
+warning • The value of the local variable 'notificationService' isn't used • lib/features/ambassador_dashboard_screen.dart:40:11 • unused_local_variable
+warning • The value of the local variable 'branchService' isn't used • lib/features/ambassador_dashboard_screen.dart:41:11 • unused_local_variable
+warning • The value of the local variable 'isLoadingBranches' isn't used • lib/features/ambassador_dashboard_screen.dart:54:15 • unused_local_variable
+warning • The value of the local variable 'selectedLanguage' isn't used • lib/features/ambassador_dashboard_screen.dart:320:19 • unused_local_variable
+warning • The value of the local variable 'selectedDateRange' isn't used • lib/features/ambassador_dashboard_screen.dart:321:19 • unused_local_variable
+warning • The value of the local variable 'isRegistered' isn't used • lib/features/ambassador_onboarding_screen.dart:487:15 • unused_local_variable
+warning • The value of the local variable 'ambassadorId0' isn't used • lib/features/ambassador_onboarding_screen.dart:488:15 • unused_local_variable
+warning • The value of the local variable 'shareLink0' isn't used • lib/features/ambassador_onboarding_screen.dart:489:15 • unused_local_variable
+warning • The value of the local variable 'controller' isn't used • lib/features/billing/screens/subscription_screen.dart:45:13 • unused_local_variable
+warning • The value of the local variable 'l10n' isn't used • lib/features/calendar/enhanced_calendar_screen.dart:93:11 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/dashboard/enhanced_dashboard_screen.dart:206:32 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/dashboard/enhanced_dashboard_screen.dart:206:56 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/messaging/widgets/message_bubble.dart:202:41 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/messaging/widgets/message_bubble.dart:231:42 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/messaging/widgets/message_bubble.dart:269:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/messaging/widgets/message_bubble.dart:295:44 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/messaging/widgets/message_bubble.dart:347:43 • deprecated_member_use
+warning • The value of the field '_selectedCountry' isn't used • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:53:11 • unused_field
+warning • The value of the field '_selectedTimezone' isn't used • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:54:11 • unused_field
+   info • Use 'const' with the constructor to improve performance • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:62:5 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:70:5 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:77:5 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:84:5 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:91:5 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:98:5 • prefer_const_constructors
+warning • The value of the local variable 'currentStep' isn't used • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:131:11 • unused_local_variable
+warning • The value of the local variable 'userType' isn't used • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:132:11 • unused_local_variable
+warning • The value of the local variable 'l10n' isn't used • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:133:11 • unused_local_variable
+warning • The declaration '_buildProgressIndicator' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:283:10 • unused_element
+warning • The value of the local variable 'isCurrent' isn't used • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:288:19 • unused_local_variable
+warning • The declaration '_buildWelcomeStep' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:304:10 • unused_element
+warning • The declaration '_buildUserTypeStep' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:369:10 • unused_element
+warning • The declaration '_buildLanguageStep' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:471:10 • unused_element
+warning • The declaration '_buildProfileStep' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:533:10 • unused_element
+warning • The declaration '_buildPreferencesStep' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:605:10 • unused_element
+warning • The declaration '_buildCompletionStep' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:691:10 • unused_element
+warning • The declaration '_buildNavigationButtons' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:761:10 • unused_element
+warning • The value of the local variable 'errorMessage' isn't used • lib/features/payments/payment_screen.dart:34:13 • unused_local_variable
+warning • The value of the local variable 'isLoading' isn't used • lib/features/payments/subscription_management_screen.dart:32:17 • unused_local_variable
+warning • The value of the local variable 'isLoading' isn't used • lib/features/payments/subscription_management_screen.dart:40:15 • unused_local_variable
+warning • The value of the local variable 'errorMessage' isn't used • lib/features/payments/subscription_screen.dart:42:17 • unused_local_variable
+warning • The value of the local variable 'isLoading' isn't used • lib/features/payments/subscription_screen.dart:43:17 • unused_local_variable
+warning • The value of the local variable 'webViewController' isn't used • lib/features/payments/subscription_screen.dart:64:13 • unused_local_variable
+warning • The value of the local variable 'minAge' isn't used • lib/features/playtime/screens/create_game_screen.dart:266:23 • unused_local_variable
+warning • The value of the local variable 'maxAge' isn't used • lib/features/playtime/screens/create_game_screen.dart:267:23 • unused_local_variable
+warning • The value of the local variable 'maxParticipants' isn't used • lib/features/playtime/screens/create_game_screen.dart:290:23 • unused_local_variable
+warning • The value of the local variable 'estimatedDuration' isn't used • lib/features/playtime/screens/create_game_screen.dart:313:23 • unused_local_variable
+warning • The value of the local variable 'selectedImage' isn't used • lib/features/playtime/screens/create_game_screen.dart:406:15 • unused_local_variable
+warning • The value of the local variable 'selectedGame' isn't used • lib/features/playtime/screens/playtime_live_screen.dart:30:11 • unused_local_variable
+   info • Use 'const' with the constructor to improve performance • lib/features/playtime/screens/playtime_screen.dart:30:16 • prefer_const_constructors
+warning • The left operand can't be null, so the right operand is never executed • lib/features/playtime/screens/playtime_screen.dart:117:51 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/playtime/screens/playtime_screen.dart:127:29 • dead_null_aware_expression
+   info • Use 'const' with the constructor to improve performance • lib/features/playtime/screens/playtime_screen.dart:164:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/playtime/screens/playtime_screen.dart:173:21 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/playtime/screens/playtime_screen.dart:293:17 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/playtime/screens/playtime_screen.dart:301:21 • prefer_const_constructors
+warning • The value of the local variable 'errorMessage' isn't used • lib/features/playtime/screens/playtime_screen.dart:364:13 • unused_local_variable
+   info • Use 'const' with the constructor to improve performance • lib/features/playtime/screens/playtime_screen.dart:380:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/features/playtime/screens/playtime_screen.dart:381:22 • prefer_const_constructors
+warning • The value of the local variable 'selectedGame' isn't used • lib/features/playtime/screens/playtime_virtual_screen.dart:28:11 • unused_local_variable
+   info • Use 'const' with the constructor to improve performance • lib/features/profile/enhanced_profile_screen.dart:11:20 • prefer_const_constructors
+warning • The value of the local variable 'l10n' isn't used • lib/features/profile/enhanced_profile_screen.dart:85:11 • unused_local_variable
+warning • The value of the local variable 'requiredPoints' isn't used • lib/features/rewards/services/rewards_service.dart:249:13 • unused_local_variable
+warning • The value of the local variable 'showSuggestions' isn't used • lib/features/search/screens/search_screen.dart:76:13 • unused_local_variable
+warning • The value of the local variable 'isSearching' isn't used • lib/features/search/screens/search_screen.dart:84:15 • unused_local_variable
+warning • The value of the local variable 'showSuggestions' isn't used • lib/features/search/screens/search_screen.dart:111:13 • unused_local_variable
+warning • The value of the local variable 'isSearching' isn't used • lib/features/search/screens/search_screen.dart:112:13 • unused_local_variable
+warning • The value of the local variable 'filters' isn't used • lib/features/search/widgets/search_filters_sheet.dart:59:11 • unused_local_variable
+warning • The value of the local variable 'selectedCategory' isn't used • lib/features/search/widgets/search_filters_sheet.dart:80:11 • unused_local_variable
+warning • The value of the local variable 'selectedSortBy' isn't used • lib/features/search/widgets/search_filters_sheet.dart:81:11 • unused_local_variable
+warning • The value of the local variable 'availabilityOnly' isn't used • lib/features/search/widgets/search_filters_sheet.dart:82:11 • unused_local_variable
+warning • The value of the local variable 'selectedCategory' isn't used • lib/features/search/widgets/search_filters_sheet.dart:118:13 • unused_local_variable
+warning • The value of the local variable 'selectedSortBy' isn't used • lib/features/search/widgets/search_filters_sheet.dart:119:13 • unused_local_variable
+warning • The value of the local variable 'availabilityOnly' isn't used • lib/features/search/widgets/search_filters_sheet.dart:120:13 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/search/widgets/search_result_card.dart:152:34 • deprecated_member_use
+warning • The value of the local variable 'l10n' isn't used • lib/features/settings/enhanced_settings_screen.dart:35:11 • unused_local_variable
+warning • The value of the local variable 'startTime' isn't used • lib/features/studio/screens/slot_dialog.dart:30:13 • unused_local_variable
+warning • The value of the local variable 'endTime' isn't used • lib/features/studio/screens/slot_dialog.dart:31:13 • unused_local_variable
+warning • The value of the local variable 'selectedSlot' isn't used • lib/features/studio/studio_booking_screen.dart:49:15 • unused_local_variable
+warning • The value of the local variable 'selectedSlot' isn't used • lib/features/studio/studio_booking_screen.dart:82:27 • unused_local_variable
+warning • The value of the local variable 'tabController' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:21:11 • unused_local_variable
+warning • The value of the local variable 'bytes' isn't used • lib/features/studio_business/screens/business_profile_screen.dart:761:15 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/studio_business/screens/business_subscription_screen.dart:310:54 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/studio_business/screens/business_subscription_screen.dart:555:47 • deprecated_member_use
+warning • Unused import: 'package:url_launcher/url_launcher.dart' • lib/features/studio_business/screens/settings_screen.dart:5:8 • unused_import
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/studio_business/screens/studio_booking_screen.dart:165:45 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/studio_business/screens/studio_booking_screen.dart:168:60 • deprecated_member_use
+warning • The value of the local variable 'service' isn't used • lib/features/studio_profile/studio_profile_screen.dart:24:11 • unused_local_variable
+warning • The value of the local variable 'loading' isn't used • lib/features/studio_profile/studio_profile_screen.dart:33:13 • unused_local_variable
+warning • Unused import: 'package:cloud_firestore/cloud_firestore.dart' • lib/models/ambassador_profile.dart:1:8 • unused_import
+warning • The annotation 'JsonKey.new' can only be used on fields or getters • lib/models/app_user.dart:22:6 • invalid_annotation_target
+warning • The annotation 'JsonSerializable.new' can only be used on classes • lib/models/service_offering.dart:8:4 • invalid_annotation_target
+warning • The value of the local variable 'chatSubscription' isn't used • lib/providers/booking_draft_provider.dart:79:11 • unused_local_variable
+warning • The value of the local variable 'typingSubscription' isn't used • lib/providers/booking_draft_provider.dart:94:11 • unused_local_variable
+warning • The value of the local variable 'parsedDate' isn't used • lib/providers/booking_draft_provider.dart:222:15 • unused_local_variable
+warning • The value of the local variable 'currentUser' isn't used • lib/providers/fcm_token_provider.dart:75:11 • unused_local_variable
+warning • The value of the local variable 'currentUser' isn't used • lib/providers/fcm_token_provider.dart:86:13 • unused_local_variable
+warning • Unused import: 'package:flutter/foundation.dart' • lib/providers/notification_provider.dart:5:8 • unused_import
+warning • The method doesn't override an inherited method • lib/providers/notification_provider.dart:29:16 • REDACTED_TOKEN
+warning • The method doesn't override an inherited method • lib/providers/notification_provider.dart:39:16 • REDACTED_TOKEN
+warning • The method doesn't override an inherited method • lib/providers/notification_provider.dart:45:16 • REDACTED_TOKEN
+warning • Unused import: 'dart:convert' • lib/services/ambassador_analytics_service.dart:1:8 • unused_import
+warning • The value of the field '_auth' isn't used • lib/services/ambassador_automation_service.dart:10:22 • unused_field
+   info • 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion • lib/services/ambassador_mobile_notifications.dart:421:22 • deprecated_member_use
+warning • The value of the local variable 'analyticsData' isn't used • lib/services/analytics_service.dart:184:13 • unused_local_variable
+warning • The value of the field '_maxRetries' isn't used • lib/services/api/api_client.dart:345:20 • unused_field
+warning • Dead code • lib/services/auth_service.dart:106:5 • dead_code
+warning • The value of the local variable 'schedulerTimer' isn't used • lib/services/broadcast_scheduler_service.dart:26:11 • unused_local_variable
+warning • The declaration '_handleDeepLink' isn't referenced • lib/services/custom_deep_link_service.dart:73:16 • unused_element
+warning • The declaration '_formSubmissionsCollection' isn't referenced • lib/services/meeting_service.dart:19:27 • unused_element
+warning • The value of the field '_functions' isn't used • lib/services/notification_service.dart:15:27 • unused_field
+   info • 'calendar' is deprecated and shouldn't be used. Use [calendarWriteOnly] and [calendarFullAccess] • lib/services/permission_service.dart:16:37 • deprecated_member_use
+warning • The value of the local variable 'now' isn't used • lib/services/usage_monitor.dart:93:11 • unused_local_variable
+warning • The value of the local variable 'groupId' isn't used • lib/services/whatsapp_share_service.dart:139:15 • unused_local_variable
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:8:21 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:9:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:10:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:14:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:18:31 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:22:31 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/accessibility/accessibility_enhancements.dart:228:52 • deprecated_member_use
+warning • The value of the local variable 'theme' isn't used • lib/widgets/accessibility/accessibility_enhancements.dart:263:11 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/accessibility/semantic_button.dart:23:61 • deprecated_member_use
+warning • The value of the local variable 'theme' isn't used • lib/widgets/app_attribution.dart:25:11 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/app_attribution.dart:47:46 • deprecated_member_use
+warning • The value of the local variable 'theme' isn't used • lib/widgets/app_attribution.dart:215:11 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/app_logo.dart:74:35 • deprecated_member_use
+warning • This default clause is covered by the previous cases • lib/widgets/auth_wrapper.dart:31:7 • unreachable_switch_default
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking/booking_slot_chip.dart:81:49 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking/booking_slot_chip.dart:88:39 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking/booking_slot_chip.dart:108:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking/booking_slot_chip.dart:112:37 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking/booking_slot_chip.dart:120:51 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking_confirmation_sheet.dart:97:41 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking_confirmation_sheet.dart:99:60 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking_confirmation_sheet.dart:131:35 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking_confirmation_sheet.dart:133:54 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking_confirmation_sheet.dart:160:46 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking_confirmation_sheet.dart:163:61 • deprecated_member_use
+warning • The value of the local variable 'effectiveColumnWidth' isn't used • lib/widgets/calendar/REDACTED_TOKEN.dart:225:17 • unused_local_variable
+warning • The value of the local variable 'effectiveCellHeight' isn't used • lib/widgets/calendar/REDACTED_TOKEN.dart:314:17 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/calendar/REDACTED_TOKEN.dart:464:38 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/calendar/REDACTED_TOKEN.dart:515:27 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/calendar/REDACTED_TOKEN.dart:556:34 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/calendar/REDACTED_TOKEN.dart:584:34 • deprecated_member_use
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:553:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:576:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:592:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:608:33 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:653:11 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:660:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:703:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:715:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:735:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:747:31 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:760:25 • prefer_const_constructors
+   info • Use 'const' with the constructor to improve performance • lib/widgets/form_builder.dart:769:25 • prefer_const_constructors
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorFormField.validator, InlineErrorFormField.onChanged, InlineErrorFormField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:5:7 • must_be_immutable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/forms/inline_error_hints.dart:164:47 • deprecated_member_use
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorPasswordField.validator, InlineErrorPasswordField.onChanged, InlineErrorPasswordField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:239:7 • must_be_immutable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/forms/inline_error_hints.dart:350:43 • deprecated_member_use
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorEmailField.onChanged, InlineErrorEmailField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:384:7 • must_be_immutable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/forms/inline_error_hints.dart:485:43 • deprecated_member_use
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorPhoneField.onChanged, InlineErrorPhoneField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:519:7 • must_be_immutable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/forms/inline_error_hints.dart:626:43 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/splash_screen.dart:78:49 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/splash_screen.dart:105:45 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/splash_screen.dart:113:45 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/splash_screen.dart:125:40 • deprecated_member_use
+warning • The value of the field '_frameBudget' isn't used • performance/benchmarks/frame_time_test.dart:14:25 • unused_field
+warning • The value of the field '_testDurationFrames' isn't used • performance/benchmarks/frame_time_test.dart:18:20 • unused_field
+warning • The value of the field '_timeout' isn't used • performance/benchmarks/startup_time_test.dart:13:25 • unused_field
+warning • The value of the local variable 'app' isn't used • performance/benchmarks/startup_time_test.dart:22:13 • unused_local_variable
+warning • The dev dependency on path is unnecessary because there is also a normal dependency on that package • pubspec.yaml:98:3 • unnecessary_dev_dependency
+warning • The value of the local variable 'monitor' isn't used • scripts/phase3_test_runner.dart:130:9 • unused_local_variable
+warning • The value of the local variable 'monitor' isn't used • scripts/phase3_test_runner.dart:172:9 • unused_local_variable
+warning • The value of the field '_lockFile' isn't used • security/scanners/dependency_scanner.dart:10:23 • unused_field
+warning • The value of the local variable 'problematicLicenses' isn't used • security/scanners/dependency_scanner.dart:283:11 • unused_local_variable
+warning • The value of the field '_maxRetries' isn't used • self_healing/monitors/pipeline_monitor.dart:9:20 • unused_field
+warning • The value of the local variable 'minLength' isn't used • test_data_generation/generators/edge_case_generator.dart:29:11 • unused_local_variable
+

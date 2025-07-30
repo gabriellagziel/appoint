@@ -1,0 +1,40 @@
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "fix_*.dart"
+    - "fix_*.py"
+    - "fix_*.sh"
+    - "test/**"
+    - "l10n/**"
+    - "android/**"
+    - "ios/**"
+    - "build/**"
+    - ".dart_tool/**"
+    - ".packages"
+    - ".metadata"
+    - ".pub/**"
+    - ".idea/**"
+    - ".vscode/**"
+
+  errors:
+    public_member_api_docs: ignore
+    constant_identifier_names: ignore
+    non_constant_identifier_names: ignore
+    lines_longer_than_80_chars: ignore
+    avoid_print: ignore
+    cascade_invocations: ignore
+    prefer_is_empty: ignore
+    unused_local_variable: ignore
+    dead_code: ignore
+    unused_element: ignore
+    unused_import: ignore
+    unused_field: ignore
+    unused_parameter: ignore
+
+linter:
+  rules:
+    prefer_const_constructors: true
+    avoid_redundant_argument_values: true
+    avoid_unnecessary_containers: true
+    unnecessary_null_checks: true

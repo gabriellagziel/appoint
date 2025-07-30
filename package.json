@@ -1,0 +1,38 @@
+{
+  "name": "appoint-localization",
+  "version": "1.0.0",
+  "description": "Localization infrastructure for APP-OINT",
+  "scripts": {
+    "prepare": "husky install",
+    "pre-commit": "husky add .husky/pre-commit \"npm run pre-commit-hook\"",
+    "pre-commit-hook": "npm run spell-check && npm run analyze",
+    "spell-check": "cspell \"lib/l10n/app_*.arb\" --no-progress",
+    "analyze": "flutter analyze --no-fatal-infos",
+    "gen-todos": "python3 tool/generate_todo_list.py",
+    "merge-arb": "node tool/merge_arb.js",
+    "check-translations": "python3 tool/back_translation_check.py",
+    "localization-ci": "npm run spell-check && flutter gen-l10n && npm run check-translations && npm run gen-todos",
+    "setup-hooks": "npm install && husky install && chmod +x .husky/pre-commit"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.dart": [
+      "flutter analyze --write=none --no-fatal-infos --no-fatal-warnings",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "cspell": "^6.31.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^16.1.2",
+    "markdownlint-cli": "^0.45.0",
+    "prettier": "^3.5.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
