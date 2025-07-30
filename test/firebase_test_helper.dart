@@ -6,9 +6,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
-// Mock Firebase services
+// Mock Firebase services using firebase_auth_mocks
 class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
 
+// Use the proper mock classes from firebase_auth_mocks
 class MockFirebaseAuth extends Mock implements FirebaseAuth {}
 
 class MockUser extends Mock implements User {}
@@ -75,7 +76,7 @@ class FirebaseTestHelper {
     final mockUser = createMockUser();
     final mockUserCredential = createMockUserCredential();
 
-    // Setup user mock
+    // Setup user mock with proper method stubs
     when(() => mockUser.uid).thenReturn('test-user-id');
     when(() => mockUser.email).thenReturn('test@example.com');
     when(() => mockUser.displayName).thenReturn('Test User');
@@ -86,7 +87,7 @@ class FirebaseTestHelper {
     // Setup user credential mock
     when(() => mockUserCredential.user).thenReturn(mockUser);
 
-    // Setup auth mock
+    // Setup auth mock with proper method stubs
     when(() => mockAuth.currentUser).thenReturn(mockUser);
     when(() => mockAuth.authStateChanges())
         .thenAnswer((_) => Stream.value(mockUser));
@@ -131,14 +132,14 @@ class FirebaseTestHelper {
       'createdAt': DateTime.now().toIso8601String(),
     });
 
-    // Setup query snapshot mock
+    // Setup query snapshot mock with proper type casting
     when(() => mockQuerySnapshot.docs).thenReturn(
-        [mockDocumentSnapshot as QueryDocumentSnapshot<Map<String, dynamic>>]);
+        [mockDocumentSnapshot as QueryDocumentSnapshot<Object?>]);
     when(() => mockQuerySnapshot.size).thenReturn(1);
   }
 }
 
-// Additional mock classes
+// Additional mock classes with proper type parameters
 class MockCollectionReference extends Mock
     implements CollectionReference<Map<String, dynamic>> {}
 
