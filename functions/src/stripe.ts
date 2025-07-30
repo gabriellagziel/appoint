@@ -571,3 +571,196 @@ export const createPaymentIntent = functions.https.onCall(async (data, context) 
     throw new functions.https.HttpsError('internal', 'Failed to create payment intent');
   }
 }); 
+
+/**
+ * Enterprise Billing: Create invoice for quota overage
+ */
+export const createOverageInvoice = functions.https.onCall(async (data, context) => {
+  try {
+    const { businessId, overage, amount } = data;
+    
+    if (!context.auth?.uid) {
+      throw new functions.https.HttpsError('unauthenticated', 'Authentication required');
+    }
+
+    // Get business data
+    const businessDoc = await db.collection('business_accounts').doc(businessId).get();
+    if (!businessDoc.exists) {
+      throw new functions.https.HttpsError('not-found', 'Business not found');
+    }
+
+    const businessData = businessDoc.data();
+    
+    // Create Stripe customer if not exists
+    let customerId = businessData?.stripeCustomerId;
+    if (!customerId) {
+      const customer = await stripe.customers.create({
+        email: businessData?.email,
+        name: businessData?.name,
+        metadata: { businessId }
+      });
+      customerId = customer.id;
+      
+      // Update business record
+      await db.collection('business_accounts').doc(businessId).update({
+        stripeCustomerId: customerId
+      });
+    }
+
+    // Create invoice
+    const invoice = await stripe.invoices.create({
+      customer: customerId,
+      description: `API Overage Charges - ${overage} excess calls`,
+      metadata: {
+        businessId,
+        type: 'api_overage',
+        period: new Date().toISOString().substring(0, 7)
+      }
+    });
+
+    // Add invoice item
+    await stripe.invoiceItems.create({
+      customer: customerId,
+      invoice: invoice.id,
+      amount: Math.round(amount * 100), // Convert to cents
+      currency: 'usd',
+      description: `API overage: ${overage} calls @ $0.01 each`
+    });
+
+    // Finalize and send invoice
+    const finalizedInvoice = await stripe.invoices.finalizeInvoice(invoice.id);
+    await stripe.invoices.sendInvoice(invoice.id);
+
+    // Log invoice in Firestore
+    await db.collection('invoices').add({
+      businessId,
+      stripeInvoiceId: invoice.id,
+      amount,
+      currency: 'usd',
+      description: `Overage charges for ${overage} API calls`,
+      period: new Date().toISOString().substring(0, 7),
+      status: 'pending',
+      overage,
+      createdAt: admin.firestore.FieldValue.serverTimestamp()
+    });
+
+    return { 
+      success: true, 
+      invoiceId: invoice.id,
+      amount,
+      status: finalizedInvoice.status
+    };
+  } catch (error) {
+    console.error('Create overage invoice error:', error);
+    throw new functions.https.HttpsError('internal', 'Failed to create invoice');
+  }
+});
+
+/**
+ * Webhook handler for Stripe invoice events
+ */
+export const handleInvoiceWebhook = functions.https.onRequest(async (req, res) => {
+  const sig = req.headers['stripe-signature'] as string;
+  
+  try {
+    const event = stripe.webhooks.constructEvent(
+      req.rawBody,
+      sig,
+      functions.config().stripe.webhook_secret
+    );
+
+    switch (event.type) {
+      case 'invoice.payment_succeeded':
+        await handleInvoicePaymentSucceeded(event.data.object);
+        break;
+      case 'invoice.payment_failed':
+        await handleInvoicePaymentFailed(event.data.object);
+        break;
+      case 'invoice.finalized':
+        await handleInvoiceFinalized(event.data.object);
+        break;
+    }
+
+    res.status(200).json({ received: true });
+  } catch (error) {
+    console.error('Stripe webhook error:', error);
+    res.status(400).send('Webhook error');
+  }
+});
+
+async function handleInvoicePaymentSucceeded(invoice: any) {
+  const businessId = invoice.metadata?.businessId;
+  if (!businessId) return;
+
+  // Update invoice status in Firestore
+  const invoiceQuery = await db
+    .collection('invoices')
+    .where('stripeInvoiceId', '==', invoice.id)
+    .limit(1)
+    .get();
+
+  if (!invoiceQuery.empty) {
+    await invoiceQuery.docs[0].ref.update({
+      status: 'paid',
+      paidAt: admin.firestore.FieldValue.serverTimestamp()
+    });
+  }
+
+  // Restore business account status if payment clears outstanding balance
+  const businessDoc = await db.collection('business_accounts').doc(businessId).get();
+  if (businessDoc.exists) {
+    const businessData = businessDoc.data();
+    
+    // Check if there are any remaining unpaid invoices
+    const unpaidInvoices = await db
+      .collection('invoices')
+      .where('businessId', '==', businessId)
+      .where('status', '==', 'pending')
+      .get();
+
+    if (unpaidInvoices.size === 0 && businessData?.status === 'blocked') {
+      // Restore to active status
+      await db.collection('business_accounts').doc(businessId).update({
+        status: 'active',
+        paymentRestoredAt: admin.firestore.FieldValue.serverTimestamp()
+      });
+      
+      console.log(`Business ${businessId} restored to active status after payment`);
+    }
+  }
+}
+
+async function handleInvoicePaymentFailed(invoice: any) {
+  const businessId = invoice.metadata?.businessId;
+  if (!businessId) return;
+
+  // Update invoice status
+  const invoiceQuery = await db
+    .collection('invoices')
+    .where('stripeInvoiceId', '==', invoice.id)
+    .limit(1)
+    .get();
+
+  if (!invoiceQuery.empty) {
+    await invoiceQuery.docs[0].ref.update({
+      status: 'failed',
+      failedAt: admin.firestore.FieldValue.serverTimestamp()
+    });
+  }
+
+  // Suspend business account after payment failure
+  await db.collection('business_accounts').doc(businessId).update({
+    status: 'suspended',
+    suspendedAt: admin.firestore.FieldValue.serverTimestamp(),
+    suspensionReason: 'payment_failed'
+  });
+
+  console.log(`Business ${businessId} suspended due to payment failure`);
+}
+
+async function handleInvoiceFinalized(invoice: any) {
+  const businessId = invoice.metadata?.businessId;
+  if (!businessId) return;
+
+  console.log(`Invoice ${invoice.id} finalized for business ${businessId}`);
+} 
