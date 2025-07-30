@@ -1,4 +1,4 @@
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 
 const db = admin.firestore();
@@ -225,7 +225,7 @@ export const sendMonthlyReminders = functions.pubsub
         
         // Only send reminder if they have less than 10 referrals this month
         if (profile.monthlyReferrals < 10) {
-          await sendAmbassadorNotification({
+          await (sendAmbassadorNotification as any)({
             userId: profile.userId,
             type: AmbassadorNotificationType.MONTHLY_REMINDER,
             languageCode: profile.languageCode || 'en',
@@ -376,7 +376,7 @@ async function sendEmailNotification(email: string, subject: string, body: strin
  * Convenience functions for specific notification types
  */
 export async function sendPromotionNotification(userId: string, languageCode: string, tier: string): Promise<void> {
-  await sendAmbassadorNotification({
+  await (sendAmbassadorNotification as any)({
     userId,
     type: AmbassadorNotificationType.PROMOTION,
     languageCode,
@@ -394,7 +394,7 @@ export async function sendTierUpgradeNotification(
   newTier: string, 
   totalReferrals: number
 ): Promise<void> {
-  await sendAmbassadorNotification({
+  await (sendAmbassadorNotification as any)({
     userId,
     type: AmbassadorNotificationType.TIER_UPGRADE,
     languageCode,
@@ -415,7 +415,7 @@ export async function sendPerformanceWarningNotification(
   currentReferrals: number, 
   minimumRequired: number
 ): Promise<void> {
-  await sendAmbassadorNotification({
+  await (sendAmbassadorNotification as any)({
     userId,
     type: AmbassadorNotificationType.PERFORMANCE_WARNING,
     languageCode,
@@ -434,7 +434,7 @@ export async function sendDemotionNotification(
   languageCode: string, 
   reason: string
 ): Promise<void> {
-  await sendAmbassadorNotification({
+  await (sendAmbassadorNotification as any)({
     userId,
     type: AmbassadorNotificationType.DEMOTION,
     languageCode,
@@ -451,7 +451,7 @@ export async function sendReferralSuccessNotification(
   referredUserName: string, 
   totalReferrals: number
 ): Promise<void> {
-  await sendAmbassadorNotification({
+  await (sendAmbassadorNotification as any)({
     userId,
     type: AmbassadorNotificationType.REFERRAL_SUCCESS,
     languageCode,
