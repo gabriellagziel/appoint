@@ -1,4 +1,4 @@
-import * as functions from 'firebase-functions/v1';
+import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 import PDFDocument from 'pdfkit';
 import * as nodemailer from 'nodemailer';
@@ -108,7 +108,8 @@ function generateInvoicePDF({
       doc.text(`Rate per overage load: €${MAP_OVERAGE_RATE.toFixed(3)}`);
       doc.moveDown();
       doc.text(`Overage amount: €${mapOverageDetails.overageAmount.toFixed(2)}`, { 
-        fontSize: 14
+        fontSize: 14, 
+        continued: false 
       });
     } else {
       // Regular API usage invoice
@@ -118,7 +119,8 @@ function generateInvoicePDF({
     
     doc.moveDown();
     doc.fontSize(14).text(`Total amount due: €${amount.toFixed(2)}`, { 
-      fontSize: 16
+      fontSize: 16, 
+      underline: true 
     });
     doc.text(`Due date: ${dueDate.toDateString()}`);
 
@@ -172,9 +174,10 @@ async function sendInvoiceEmail({
 }
 
 // Monthly billing job for API usage (existing)
-export const monthlyBillingJob = functions.scheduler.onSchedule(
-  '15 0 1 * *',
-  async (event) => {
+export const monthlyBillingJob = functions.pubsub
+  .schedule('15 0 1 * *') // 00:15 on first day UTC
+  .timeZone('UTC')
+  .onRun(async () => {
     const year = new Date().getUTCFullYear();
     const month = new Date().getUTCMonth(); // previous month? Actually runs first day for previous month compute
     const billingPeriodStart = new Date(Date.UTC(year, month - 1, 1));
@@ -247,9 +250,10 @@ export const monthlyBillingJob = functions.scheduler.onSchedule(
   });
 
 // Monthly map overage billing job (NEW)
-export const monthlyMapOverageBilling = functions.scheduler.onSchedule(
-  '30 0 1 * *',
-  async (event) => {
+export const monthlyMapOverageBilling = functions.pubsub
+  .schedule('30 0 1 * *') // 00:30 on first day UTC - after main billing
+  .timeZone('UTC')
+  .onRun(async () => {
     const year = new Date().getUTCFullYear();
     const month = new Date().getUTCMonth();
 
@@ -355,8 +359,8 @@ function getMapLimitForPlan(plan: string): number {
 }
 
 // Function to manually trigger overage invoice generation (for testing)
-export const generateMapOverageInvoice = functions.https.onCall(async (request) => {
-  const userId = request.auth?.uid;
+export const generateMapOverageInvoice = functions.https.onCall(async (data, context) => {
+  const userId = context.auth?.uid;
   
   if (!userId) {
     throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
@@ -481,9 +485,9 @@ export const importBankPayments = functions.https.onRequest(async (req, res) => 
 });
 
 // Reset map usage for all subscriptions at billing period start (helper function)
-export const resetMapUsageForNewPeriod = functions.https.onCall(async (request) => {
+export const resetMapUsageForNewPeriod = functions.https.onCall(async (data, context) => {
   // This should be called by Stripe webhooks when subscription periods update
-  const { subscriptionId } = request.data;
+  const { subscriptionId } = data;
   
   if (!subscriptionId) {
     throw new functions.https.HttpsError('invalid-argument', 'Subscription ID required');
