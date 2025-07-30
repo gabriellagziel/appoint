@@ -1,105 +1,181 @@
-import 'package:appoint/generated/pigeon_auth_api.dart';
-import 'package:appoint/generated/pigeon_firestore_api.dart';
-import 'package:cloud_firestore_platform_interface/cloud_firestore_platform_interface.dart';
-import 'package:cloud_functions_platform_interface/cloud_functions_platform_interface.dart';
-import 'package:file_picker/file_picker.dart';
-import 'package:firebase_auth_platform_interface/firebase_auth_platform_interface.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_crashlytics_platform_interface/firebase_crashlytics_platform_interface.dart';
-import 'package:firebase_messaging_platform_interface/firebase_messaging_platform_interface.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mocktail/mocktail.dart';
-import 'package:plugin_platform_interface/plugin_platform_interface.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:appoint/firebase_options.dart';
+import 'package:flutter/services.dart';
+import 'package:firebase_core_platform_interface/test.dart';
+import 'package:cloud_firestore_platform_interface/src/method_channel/utils/firestore_message_codec.dart';
+import 'package:cloud_firestore_platform_interface/src/pigeon/messages.pigeon.dart';
 
-import 'mocks/service_mocks.dart';
+// Common test utilities
+class TestUtils {
+  static const testEmail = 'test@example.com';
+  static const testPassword = 'testpassword123';
+  static const testUserId = 'test-user-id';
+  static const testUserName = 'Test User';
 
-// Mocks
-class MockFirebaseAuthPlatform extends Mock
-    with MockPlatformInterfaceMixin
-    implements FirebaseAuthPlatform {}
-
-class MockFirebaseFirestorePlatform extends Mock
-    with MockPlatformInterfaceMixin
-    implements FirebaseFirestorePlatform {}
-
-class MockFirebaseCrashlyticsPlatform extends Mock
-    with MockPlatformInterfaceMixin
-    implements FirebaseCrashlyticsPlatform {}
-
-class MockFirebaseMessagingPlatform extends Mock
-    with MockPlatformInterfaceMixin
-    implements FirebaseMessagingPlatform {}
-
-class MockFirebaseFunctionsPlatform extends Mock
-    with MockPlatformInterfaceMixin
-    implements FirebaseFunctionsPlatform {}
-
-class MockFilePicker extends Mock
-    with MockPlatformInterfaceMixin
-    implements FilePicker {}
-
-class MockAuthHostApi extends Mock implements AuthHostApi {}
-
-class MockFirestoreHostApi extends Mock implements FirestoreHostApi {}
-
-late MockFirestoreService mockFirestoreService;
-late MockAuthService mockAuthService;
-late MockFirebaseStorageService mockStorageService;
-late MockNotificationService mockNotificationService;
-
-void registerServiceMocks() {
-  mockFirestoreService = MockFirestoreService();
-  mockAuthService = MockAuthService();
-  mockStorageService = MockFirebaseStorageService();
-  mockNotificationService = MockNotificationService();
+  static DateTime get testDateTime => DateTime(2025, 6, 18, 10, 0);
+  static DateTime get testCreatedAt => DateTime(2025, 6, 17);
 }
 
-/// Global test setup that initializes Firebase and all mocks
 Future<void> setupTestEnvironment() async {
-  // Initialize Firebase with test configuration
-  try {
-    await Firebase.initializeApp();
-  } catch (e) {
-    // If already initialized, continue
-  }
-
-  // Set up platform mocks
-  FirebaseAuthPlatform.instance = MockFirebaseAuthPlatform();
-  FirebaseFirestorePlatform.instance = MockFirebaseFirestorePlatform();
-  FirebaseCrashlyticsPlatform.instance = MockFirebaseCrashlyticsPlatform();
-  FirebaseMessagingPlatform.instance = MockFirebaseMessagingPlatform();
-  FirebaseFunctionsPlatform.instance = MockFirebaseFunctionsPlatform();
-  FilePicker.platform = MockFilePicker();
-
-  // Set up Pigeon API mocks
-  AuthHostApi.setup(MockAuthHostApi());
-  FirestoreHostApi.setup(MockFirestoreHostApi());
-
-  registerServiceMocks();
+  // Initialize Firebase for tests
+  await registerFirebaseMock();
 }
 
-void setupFirebaseMocks() {
-  setUpAll(() async {
-    await setupTestEnvironment();
-  });
+// Centralized Firebase mock setup for all tests
+Future<void> registerFirebaseMock() async {
+  TestWidgetsFlutterBinding.ensureInitialized();
+  setupFirebaseCoreMocks();
+  // Add other Firebase channels to mock as needed
 
-  setUp(() {
-    // Reset mocks before each test
-    reset(mockFirestoreService);
-    reset(mockAuthService);
-    reset(mockStorageService);
-    reset(mockNotificationService);
-  });
-}
-
-/// Simple setup for tests that don't need full Firebase mocking
-void setupBasicTestEnvironment() {
-  setUpAll(() async {
-    // Initialize Firebase if not already done
-    try {
-      await Firebase.initializeApp();
-    } catch (e) {
-      // Ignore if already initialized
+  // Mock Firebase Auth
+  const MethodChannel firebaseAuthChannel =
+      MethodChannel('plugins.flutter.io/firebase_auth');
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .setMockMethodCallHandler(firebaseAuthChannel,
+          (MethodCall methodCall) async {
+    print(
+        '[Mock] firebaseAuthChannel: method=${methodCall.method}, arguments=${methodCall.arguments}');
+    // Return mock responses for auth methods as needed
+    switch (methodCall.method) {
+      case 'signInWithEmailAndPassword':
+        return {
+          'user': {
+            'uid': 'test-user-id',
+            'email': 'test@example.com',
+          },
+        };
+      case 'signOut':
+        return null;
+      case 'currentUser':
+        return {
+          'uid': 'test-user-id',
+          'email': 'test@example.com',
+        };
+      default:
+        return null;
     }
   });
+
+  // Mock Cloud Firestore
+  const MethodChannel cloudFirestoreChannel =
+      MethodChannel('plugins.flutter.io/cloud_firestore');
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .setMockMethodCallHandler(cloudFirestoreChannel,
+          (MethodCall methodCall) async {
+    print(
+        '[Mock] cloudFirestoreChannel: method=${methodCall.method}, arguments=${methodCall.arguments}');
+    // Return mock responses for Firestore methods as needed
+    switch (methodCall.method) {
+      case 'DocumentReference#get':
+        return {'data': {}};
+      case 'DocumentReference#set':
+        return null;
+      case 'DocumentReference#update':
+        return null;
+      case 'DocumentReference#delete':
+        return null;
+      case 'Query#get':
+        return {'documents': []};
+      case 'Query#count':
+        return {'count': 0};
+      case 'FirebaseFirestore#addSnapshotListener':
+        return '0';
+      case 'Query#addSnapshotListener':
+        return '0';
+      case 'DocumentReference#addSnapshotListener':
+        return '0';
+      default:
+        return null;
+    }
+  });
+
+  const String querySnapshotChannel =
+      'dev.flutter.pigeon.cloud_firestore_platform_interface.FirebaseFirestoreHostApi.querySnapshot';
+  const String documentSnapshotChannel =
+      'dev.flutter.pigeon.cloud_firestore_platform_interface.FirebaseFirestoreHostApi.documentReferenceSnapshot';
+  const MessageCodec<Object?> firestoreCodec = FirebaseFirestoreHostApi.codec;
+
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .setMockMessageHandler(querySnapshotChannel, (ByteData? message) async {
+    return firestoreCodec.encodeMessage(<Object?>['0']);
+  });
+
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .setMockMessageHandler(documentSnapshotChannel, (ByteData? message) async {
+    return firestoreCodec.encodeMessage(<Object?>['0']);
+  });
+
+  // Mock Firebase Storage
+  const MethodChannel firebaseStorageChannel =
+      MethodChannel('plugins.flutter.io/firebase_storage');
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .setMockMethodCallHandler(firebaseStorageChannel,
+          (MethodCall methodCall) async {
+    print(
+        '[Mock] firebaseStorageChannel: method=${methodCall.method}, arguments=${methodCall.arguments}');
+    // Return mock responses for Firebase Storage methods as needed
+    return null;
+  });
+
+  // Mock Firebase Messaging
+  const MethodChannel firebaseMessagingChannel =
+      MethodChannel('plugins.flutter.io/firebase_messaging');
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .setMockMethodCallHandler(firebaseMessagingChannel,
+          (MethodCall methodCall) async {
+    print(
+        '[Mock] firebaseMessagingChannel: method=${methodCall.method}, arguments=${methodCall.arguments}');
+    // Return mock responses for Firebase Messaging methods as needed
+    return null;
+  });
+
+  // Mock Firebase App Check
+  const MethodChannel firebaseAppCheckChannel =
+      MethodChannel('plugins.flutter.io/firebase_app_check');
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .setMockMethodCallHandler(firebaseAppCheckChannel,
+          (MethodCall methodCall) async {
+    print(
+        '[Mock] firebaseAppCheckChannel: method=${methodCall.method}, arguments=${methodCall.arguments}');
+    // Return mock responses for Firebase App Check methods as needed
+    return null;
+  });
+
+  // Mock Firebase Crashlytics
+  const MethodChannel firebaseCrashlyticsChannel =
+      MethodChannel('plugins.flutter.io/firebase_crashlytics');
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .setMockMethodCallHandler(firebaseCrashlyticsChannel,
+          (MethodCall methodCall) async {
+    print(
+        '[Mock] firebaseCrashlyticsChannel: method=${methodCall.method}, arguments=${methodCall.arguments}');
+    // Return mock responses for Firebase Crashlytics methods as needed
+    return null;
+  });
+
+  // Mock file_picker plugin to suppress platform warnings in tests
+  const MethodChannel filePickerChannel =
+      MethodChannel('plugins.flutter.io/file_picker');
+  TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .setMockMethodCallHandler(filePickerChannel,
+          (MethodCall methodCall) async {
+    print(
+        '[Mock] filePickerChannel: method=${methodCall.method}, arguments=${methodCall.arguments}');
+    // Return mock responses for file_picker methods as needed
+    return null;
+  });
+
+  // Initialize Firebase app if not already initialized
+  try {
+    if (Firebase.apps.isEmpty) {
+      await Firebase.initializeApp(
+          options: DefaultFirebaseOptions.currentPlatform);
+    }
+  } catch (e) {
+    // Ignore duplicate app errors
+    if (!e.toString().contains('duplicate-app')) {
+      rethrow;
+    }
+  }
 }
