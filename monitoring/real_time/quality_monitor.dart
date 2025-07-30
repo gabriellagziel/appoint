@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math';
 
 /// Real-Time Quality Monitor
 ///
@@ -229,44 +230,58 @@ class QualityMonitor {
     }
   }
 
-  /// Gets current quality summary
-  QualitySummary getQualitySummary() {
-    if (_metrics.isEmpty) {
-      return QualitySummary.empty();
-    }
+  /// Gets quality summary for the specified time window
+  QualitySummary getQualitySummary({Duration? timeWindow}) {
+    final window = timeWindow ?? const Duration(hours: 1);
+    final cutoff = DateTime.now().subtract(window);
 
-    final recentMetrics = _metrics
-        .where((m) => DateTime.now().difference(m.timestamp).inMinutes < 5)
-        .toList();
+    final recentMetrics =
+        _metrics.where((m) => m.timestamp.isAfter(cutoff)).toList();
 
     if (recentMetrics.isEmpty) {
       return QualitySummary.empty();
     }
 
-    final coverage = recentMetrics
+    final coverageValues = recentMetrics
         .where((m) => m.type == MetricType.coverage)
         .map((m) => m.value)
-        .average;
+        .toList();
+    final coverage = coverageValues.isEmpty
+        ? 0.0
+        : coverageValues.reduce((a, b) => a + b) / coverageValues.length;
 
-    final passRate = recentMetrics
+    final passRateValues = recentMetrics
         .where((m) => m.type == MetricType.passRate)
         .map((m) => m.value)
-        .average;
+        .toList();
+    final passRate = passRateValues.isEmpty
+        ? 0.0
+        : passRateValues.reduce((a, b) => a + b) / passRateValues.length;
 
-    final buildSuccess = recentMetrics
+    final buildSuccessValues = recentMetrics
         .where((m) => m.type == MetricType.buildSuccess)
         .map((m) => m.value)
-        .average;
+        .toList();
+    final buildSuccess = buildSuccessValues.isEmpty
+        ? 0.0
+        : buildSuccessValues.reduce((a, b) => a + b) /
+            buildSuccessValues.length;
 
-    final codeQuality = recentMetrics
+    final codeQualityValues = recentMetrics
         .where((m) => m.type == MetricType.codeQuality)
         .map((m) => m.value)
-        .average;
+        .toList();
+    final codeQuality = codeQualityValues.isEmpty
+        ? 0.0
+        : codeQualityValues.reduce((a, b) => a + b) / codeQualityValues.length;
 
-    final performance = recentMetrics
+    final performanceValues = recentMetrics
         .where((m) => m.type == MetricType.performance)
         .map((m) => m.value)
-        .average;
+        .toList();
+    final performance = performanceValues.isEmpty
+        ? 0.0
+        : performanceValues.reduce((a, b) => a + b) / performanceValues.length;
 
     final overallScore =
         (coverage + passRate + buildSuccess + codeQuality + performance) / 5;

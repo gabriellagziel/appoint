@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math';
 
 /// Pipeline Monitor for Self-Healing CI/CD
 ///
@@ -44,7 +45,7 @@ class PipelineMonitor {
     try {
       // Simulate health check
       final isHealthy = Random().nextBool();
-      final issues = isHealthy ? [] : _generateMockIssues();
+      final issues = isHealthy ? <PipelineIssue>[] : _generateMockIssues();
 
       return PipelineHealth(
         status: isHealthy ? HealthStatus.healthy : HealthStatus.degraded,

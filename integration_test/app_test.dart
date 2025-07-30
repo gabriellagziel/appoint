@@ -7,7 +7,7 @@ void main() {
   REDACTED_TOKEN.ensureInitialized();
 
   testWidgets('edit profile flow', (tester) async {
-    await app.appMain();
+    app.main();
     await tester.pumpAndSettle();
 
     expect(find.text('Welcome'), findsOneWidget);
@@ -31,7 +31,7 @@ void main() {
   });
 
   testWidgets('referral copy flow', (tester) async {
-    await app.appMain();
+    app.main();
     await tester.pumpAndSettle();
 
     // Login screen should appear
@@ -49,7 +49,7 @@ void main() {
     await tester.pumpAndSettle();
 
     // Navigate directly to onboarding
-    navigator = tester.state<NavigatorState>(find.byType(Navigator));
+    final navigator = tester.state<NavigatorState>(find.byType(Navigator));
     navigator.pushNamed('/ambassador-onboarding');
     await tester.pumpAndSettle();
 

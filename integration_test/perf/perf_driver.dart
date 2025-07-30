@@ -29,6 +29,7 @@ void main() {
     );
 
     final summary = binding.reportData;
+    late File file;
     file = File('performance/booking_flow_summary.json')
       ..createSync(recursive: true);
     file.writeAsStringSync(jsonEncode(summary));
