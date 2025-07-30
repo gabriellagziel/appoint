@@ -1,47 +1,48 @@
-import 'dart:io';
-
-import 'package:appoint/features/messaging/models/chat.dart' as chat_model;
+import 'package:appoint/features/messaging/models/chat.dart';
 import 'package:appoint/features/messaging/models/message.dart';
 import 'package:appoint/features/messaging/services/messaging_service.dart';
+import 'package:appoint/providers/messaging_provider.dart';
 import 'package:appoint/features/messaging/widgets/message_bubble.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:appoint/features/messaging/widgets/attachment_picker.dart';
+import 'package:appoint/l10n/app_localizations.dart';
 import 'package:file_picker/file_picker.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'dart:io';
 
-final messagingServiceProvider =
-    Provider<MessagingService>((ref) => MessagingService());
+// Moved to lib/providers/messaging_provider.dart
 
-final StreamProviderFamily<List<Message>, String> messagesProvider =
-    StreamProvider.family<List<Message>, String>(
+final messagesProvider = StreamProvider.family<List<Message>, String>(
   (ref, chatId) {
     final service = ref.read(messagingServiceProvider);
     return service.getMessages(chatId);
   },
 );
 
-final StreamProviderFamily<dynamic, String> chatProvider =
-    StreamProvider.family<chat_model.Chat?, String>(
-  (ref, chatId) => FirebaseFirestore.instance
-      .collection('chats')
-      .doc(chatId)
-      .snapshots()
-      .map((doc) {
-    if (!doc.exists) return null;
-    return chat_model.Chat.fromJson({...doc.data()!, 'id': doc.id});
-  }),
+final chatProvider = StreamProvider.family<Chat?, String>(
+  (ref, chatId) {
+    return FirebaseFirestore.instance
+        .collection('chats')
+        .doc(chatId)
+        .snapshots()
+        .map((doc) {
+      if (!doc.exists) return null;
+      return Chat.fromJson({...doc.data()!, 'id': doc.id});
+    });
+  },
 );
 
 class ChatScreen extends ConsumerStatefulWidget {
   const ChatScreen({
-    required this.chatId,
     super.key,
+    required this.chatId,
     this.initialChat,
   });
 
   final String chatId;
-  final chat_model.Chat? initialChat;
+  final Chat? initialChat;
 
   @override
   ConsumerState<ChatScreen> createState() => _ChatScreenState();
@@ -51,9 +52,10 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
   final TextEditingController _messageController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
   final FocusNode _focusNode = FocusNode();
-
+  
   bool _isTyping = false;
   bool _isSending = false;
+  List<Message> _messages = [];
 
   @override
   void initState() {
@@ -75,7 +77,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
     });
   }
 
-  Future<void> _sendMessage() async {
+  void _sendMessage() async {
     if (_messageController.text.trim().isEmpty) return;
 
     setState(() {
@@ -114,9 +116,12 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
     }
   }
 
-  Future<void> _sendAttachment() async {
+  void _sendAttachment() async {
     try {
-      final result = await FilePicker.platform.pickFiles();
+      final result = await FilePicker.platform.pickFiles(
+        type: FileType.any,
+        allowMultiple: false,
+      );
 
       if (result != null && result.files.isNotEmpty) {
         final file = File(result.files.first.path!);
@@ -222,6 +227,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
           Expanded(
             child: messagesAsync.when(
               data: (messages) {
+                _messages = messages;
                 return ListView.builder(
                   controller: _scrollController,
                   padding: const EdgeInsets.all(16),
@@ -230,8 +236,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
                     final message = messages[index];
                     return MessageBubble(
                       message: message,
-                      isMe: message.senderId ==
-                          FirebaseAuth.instance.currentUser?.uid,
+                      isMe: message.senderId == FirebaseAuth.instance.currentUser?.uid,
                     );
                   },
                 );
@@ -248,47 +253,45 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
     );
   }
 
-  Widget _buildMessageInput() => Container(
-        padding: const EdgeInsets.all(16),
-        child: Row(
-          children: [
-            IconButton(
-              icon: const Icon(Icons.attach_file),
-              onPressed: _isSending ? null : _sendAttachment,
-            ),
-            Expanded(
-              child: TextField(
-                controller: _messageController,
-                focusNode: _focusNode,
-                decoration: InputDecoration(
-                  hintText: 'Type a message...',
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(25),
-                  ),
-                  contentPadding: const EdgeInsets.symmetric(
-                    horizontal: 16,
-                    vertical: 12,
-                  ),
+  Widget _buildMessageInput() {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      child: Row(
+        children: [
+          IconButton(
+            icon: const Icon(Icons.attach_file),
+            onPressed: _isSending ? null : _sendAttachment,
+          ),
+          Expanded(
+            child: TextField(
+              controller: _messageController,
+              focusNode: _focusNode,
+              decoration: InputDecoration(
+                hintText: 'Type a message...',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(25),
                 ),
-                onSubmitted: (_) => _sendMessage(),
+                contentPadding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 12,
+                ),
               ),
+              onSubmitted: (_) => _sendMessage(),
             ),
-            const SizedBox(width: 8),
-            FloatingActionButton(
-              mini: true,
-              onPressed: _isSending
-                  ? null
-                  : (_isTyping ? _sendMessage : _startVoiceMessage),
-              child: Icon(
-                _isTyping ? Icons.send : Icons.mic,
-                color: _isTyping
-                    ? Theme.of(context).primaryColor
-                    : Colors.grey[600],
-              ),
+          ),
+          const SizedBox(width: 8),
+          FloatingActionButton(
+            mini: true,
+            onPressed: _isSending ? null : (_isTyping ? _sendMessage : _startVoiceMessage),
+            child: Icon(
+              _isTyping ? Icons.send : Icons.mic,
+              color: _isTyping ? Theme.of(context).primaryColor : Colors.grey[600],
             ),
-          ],
-        ),
-      );
+          ),
+        ],
+      ),
+    );
+  }
 
   void _startVoiceMessage() {
     // TODO: Implement voice message recording
@@ -296,4 +299,4 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
       const SnackBar(content: Text('Voice messages coming soon!')),
     );
   }
-}
+} 
