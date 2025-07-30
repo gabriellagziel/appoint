@@ -5,7 +5,6 @@ part 'offline_service_offering.g.dart';
 
 @HiveType(typeId: 2)
 class OfflineServiceOffering extends HiveObject {
-
   OfflineServiceOffering({
     required this.id,
     required this.businessId,
@@ -13,7 +12,8 @@ class OfflineServiceOffering extends HiveObject {
     required this.description,
     required this.price,
     required this.durationInMinutes,
-    required this.lastSyncAttempt, this.category,
+    required this.lastSyncAttempt,
+    this.category,
     this.staffIds,
     this.isActive = true,
     this.createdAt,
@@ -29,23 +29,24 @@ class OfflineServiceOffering extends HiveObject {
     String operation = 'create',
     DateTime? lastSyncAttempt,
     String? syncError,
-  }) => OfflineServiceOffering(
-      id: service.id,
-      businessId: service.businessId,
-      name: service.name,
-      description: service.description,
-      price: service.price,
-      durationInMinutes: service.duration.inMinutes,
-      category: service.category,
-      staffIds: service.staffIds,
-      isActive: service.isActive,
-      createdAt: service.createdAt,
-      updatedAt: DateTime.now(),
-      syncStatus: syncStatus,
-      operation: operation,
-      lastSyncAttempt: lastSyncAttempt ?? DateTime.now(),
-      syncError: syncError,
-    );
+  }) =>
+      OfflineServiceOffering(
+        id: service.id,
+        businessId: service.businessId,
+        name: service.name,
+        description: service.description,
+        price: service.price,
+        durationInMinutes: service.duration.inMinutes,
+        category: service.category,
+        staffIds: service.staffIds,
+        isActive: service.isActive,
+        createdAt: service.createdAt,
+        updatedAt: DateTime.now(),
+        syncStatus: syncStatus,
+        operation: operation,
+        lastSyncAttempt: lastSyncAttempt ?? DateTime.now(),
+        syncError: syncError,
+      );
   @HiveField(0)
   final String id;
 
@@ -92,18 +93,18 @@ class OfflineServiceOffering extends HiveObject {
   final String? syncError;
 
   ServiceOffering toServiceOffering() => ServiceOffering(
-      id: id,
-      businessId: businessId,
-      name: name,
-      description: description,
-      price: price,
-      duration: Duration(minutes: durationInMinutes),
-      category: category,
-      staffIds: staffIds,
-      isActive: isActive,
-      createdAt: createdAt,
-      updatedAt: updatedAt,
-    );
+        id: id,
+        businessId: businessId,
+        name: name,
+        description: description,
+        price: price,
+        duration: Duration(minutes: durationInMinutes),
+        category: category,
+        staffIds: staffIds,
+        isActive: isActive,
+        createdAt: createdAt,
+        updatedAt: updatedAt,
+      );
 
   OfflineServiceOffering copyWith({
     String? id,
@@ -121,21 +122,22 @@ class OfflineServiceOffering extends HiveObject {
     String? operation,
     DateTime? lastSyncAttempt,
     String? syncError,
-  }) => OfflineServiceOffering(
-      id: id ?? this.id,
-      businessId: businessId ?? this.businessId,
-      name: name ?? this.name,
-      description: description ?? this.description,
-      price: price ?? this.price,
-      durationInMinutes: durationInMinutes ?? this.durationInMinutes,
-      category: category ?? this.category,
-      staffIds: staffIds ?? this.staffIds,
-      isActive: isActive ?? this.isActive,
-      createdAt: createdAt ?? this.createdAt,
-      updatedAt: updatedAt ?? this.updatedAt,
-      syncStatus: syncStatus ?? this.syncStatus,
-      operation: operation ?? this.operation,
-      lastSyncAttempt: lastSyncAttempt ?? this.lastSyncAttempt,
-      syncError: syncError ?? this.syncError,
-    );
+  }) =>
+      OfflineServiceOffering(
+        id: id ?? this.id,
+        businessId: businessId ?? this.businessId,
+        name: name ?? this.name,
+        description: description ?? this.description,
+        price: price ?? this.price,
+        durationInMinutes: durationInMinutes ?? this.durationInMinutes,
+        category: category ?? this.category,
+        staffIds: staffIds ?? this.staffIds,
+        isActive: isActive ?? this.isActive,
+        createdAt: createdAt ?? this.createdAt,
+        updatedAt: updatedAt ?? this.updatedAt,
+        syncStatus: syncStatus ?? this.syncStatus,
+        operation: operation ?? this.operation,
+        lastSyncAttempt: lastSyncAttempt ?? this.lastSyncAttempt,
+        syncError: syncError ?? this.syncError,
+      );
 }

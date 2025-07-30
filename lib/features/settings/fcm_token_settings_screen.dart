@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:appoint/providers/fcm_token_provider.dart';
 import 'package:appoint/widgets/debug/fcm_token_debug_widget.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// Settings screen for FCM token management
 /// This screen allows users to view and manage their notification settings
@@ -85,7 +85,7 @@ class FCMTokenSettingsScreen extends ConsumerWidget {
               ),
             ),
             const SizedBox(height: 16),
-            
+
             // Actions Card
             Card(
               child: Padding(
@@ -108,7 +108,9 @@ class FCMTokenSettingsScreen extends ConsumerWidget {
                             onPressed: fcmState.isLoading
                                 ? null
                                 : () {
-                                    ref.read(fcmTokenProvider.notifier).refreshToken();
+                                    ref
+                                        .read(fcmTokenProvider.notifier)
+                                        .refreshToken();
                                   },
                             icon: const Icon(Icons.refresh),
                             label: const Text('Refresh Token'),
@@ -133,9 +135,9 @@ class FCMTokenSettingsScreen extends ConsumerWidget {
               ),
             ),
             const SizedBox(height: 16),
-            
+
             // Debug Widget (only in debug mode)
-            if (const bool.fromEnvironment('DEBUG_MODE', defaultValue: false))
+            if (const bool.fromEnvironment('DEBUG_MODE'))
               const FCMTokenDebugWidget(),
           ],
         ),
@@ -149,42 +151,41 @@ class FCMTokenSettingsScreen extends ConsumerWidget {
     IconData trueIcon,
     IconData falseIcon, {
     bool errorColor = false,
-  }) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 4),
-      child: Row(
-        children: [
-          Icon(
-            value ? trueIcon : falseIcon,
-            color: errorColor
-                ? Colors.red
-                : value
-                    ? Colors.green
-                    : Colors.grey,
-            size: 20,
-          ),
-          const SizedBox(width: 12),
-          Expanded(
-            child: Text(
-              title,
-              style: const TextStyle(fontSize: 16),
-            ),
-          ),
-          Text(
-            value ? 'Yes' : 'No',
-            style: TextStyle(
+  }) =>
+      Padding(
+        padding: const EdgeInsets.symmetric(vertical: 4),
+        child: Row(
+          children: [
+            Icon(
+              value ? trueIcon : falseIcon,
               color: errorColor
                   ? Colors.red
                   : value
                       ? Colors.green
                       : Colors.grey,
-              fontWeight: FontWeight.bold,
+              size: 20,
             ),
-          ),
-        ],
-      ),
-    );
-  }
+            const SizedBox(width: 12),
+            Expanded(
+              child: Text(
+                title,
+                style: const TextStyle(fontSize: 16),
+              ),
+            ),
+            Text(
+              value ? 'Yes' : 'No',
+              style: TextStyle(
+                color: errorColor
+                    ? Colors.red
+                    : value
+                        ? Colors.green
+                        : Colors.grey,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      );
 
   void _showTokenDialog(BuildContext context, String token) {
     showDialog(
@@ -222,4 +223,4 @@ class FCMTokenSettingsScreen extends ConsumerWidget {
       ),
     );
   }
-} 
+}

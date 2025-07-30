@@ -1,5 +1,5 @@
 import 'package:appoint/providers/theme_provider.dart';
-import 'package:appoint/services/analytics_service.dart';
+import 'package:appoint/services/analytics/analytics_service.dart';
 import 'package:appoint/theme/app_spacing.dart';
 import 'package:appoint/theme/sample_palettes.dart';
 import 'package:appoint/widgets/app_scaffold.dart';
@@ -22,7 +22,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   void initState() {
     super.initState();
     // Track screen view
-    AnalyticsService.logScreenView('SettingsScreen');
+    AnalyticsService.instance.trackScreenView(screenName: 'SettingsScreen');
   }
 
   @override
@@ -40,11 +40,14 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               title: const Text('Enable Notifications'),
               value: _notifications,
               onChanged: (value) {
-                AnalyticsService.logEvent('setting_changed', params: {
-                  'setting_type': 'notifications',
-                  'setting_value': value,
-                  'screen': 'settings',
-                });
+                AnalyticsService.instance.trackUserAction(
+                  action: 'setting_changed',
+                  parameters: {
+                    'setting_type': 'notifications',
+                    'setting_value': value,
+                    'screen': 'settings',
+                  },
+                );
                 setState(() => _notifications = value);
               },
             ),
@@ -53,11 +56,14 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               title: const Text('Enable Vibration'),
               value: _vibration,
               onChanged: (value) {
-                AnalyticsService.logEvent('setting_changed', params: {
-                  'setting_type': 'vibration',
-                  'setting_value': value,
-                  'screen': 'settings',
-                });
+                AnalyticsService.instance.trackUserAction(
+                  action: 'setting_changed',
+                  parameters: {
+                    'setting_type': 'vibration',
+                    'setting_value': value,
+                    'screen': 'settings',
+                  },
+                );
                 setState(() => _vibration = value);
               },
             ),
@@ -66,11 +72,14 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               title: const Text('Dark Mode'),
               value: darkMode,
               onChanged: (value) {
-                AnalyticsService.logEvent('setting_changed', params: {
-                  'setting_type': 'dark_mode',
-                  'setting_value': value,
-                  'screen': 'settings',
-                });
+                AnalyticsService.instance.trackUserAction(
+                  action: 'setting_changed',
+                  parameters: {
+                    'setting_type': 'dark_mode',
+                    'setting_value': value,
+                    'screen': 'settings',
+                  },
+                );
                 ref
                     .read(themeNotifierProvider.notifier)
                     .setMode(value ? ThemeMode.dark : ThemeMode.light);
@@ -81,11 +90,14 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               value: palette,
               onChanged: (value) {
                 if (value != null) {
-                  AnalyticsService.logEvent('setting_changed', params: {
-                    'setting_type': 'theme_palette',
-                    'setting_value': value.name,
-                    'screen': 'settings',
-                  });
+                  AnalyticsService.instance.trackUserAction(
+                    action: 'setting_changed',
+                    parameters: {
+                      'setting_type': 'theme_palette',
+                      'setting_value': value.name,
+                      'screen': 'settings',
+                    },
+                  );
                   ref.read(themeNotifierProvider.notifier).setPalette(value);
                 }
               },

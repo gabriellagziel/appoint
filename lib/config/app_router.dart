@@ -3,24 +3,37 @@ import 'package:appoint/features/admin/admin_dashboard_screen.dart';
 import 'package:appoint/features/ambassador_dashboard_screen.dart';
 import 'package:appoint/features/ambassador_onboarding_screen.dart';
 import 'package:appoint/features/auth/auth_wrapper.dart';
-import 'package:appoint/features/auth/login_screen.dart';
 import 'package:appoint/features/auth/forgot_password_screen.dart';
+import 'package:appoint/features/auth/login_screen.dart';
 import 'package:appoint/features/auth/verify_email_screen.dart';
 import 'package:appoint/features/booking/booking_confirm_screen.dart';
 import 'package:appoint/features/booking/booking_request_screen.dart';
 import 'package:appoint/features/booking/screens/chat_booking_screen.dart';
 import 'package:appoint/features/business/screens/business_dashboard_screen.dart'
     as business;
+import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
 import 'package:appoint/features/calendar/google_integration_screen.dart';
 import 'package:appoint/features/dashboard/dashboard_screen.dart';
+import 'package:appoint/features/dashboard/enhanced_dashboard_screen.dart';
 import 'package:appoint/features/family/screens/family_dashboard_screen.dart';
 import 'package:appoint/features/family/screens/invite_child_screen.dart';
 import 'package:appoint/features/family/screens/permissions_screen.dart';
 import 'package:appoint/features/family/widgets/invitation_modal.dart';
 import 'package:appoint/features/invite/invite_detail_screen.dart';
 import 'package:appoint/features/invite/invite_list_screen.dart';
+import 'package:appoint/features/messaging/screens/chat_screen.dart';
+import 'package:appoint/features/messaging/screens/messages_list_screen.dart';
+import 'package:appoint/features/notifications/enhanced_notifications_screen.dart';
+import 'package:appoint/features/onboarding/enhanced_onboarding_screen.dart';
+// Enhanced features imports
+import 'package:appoint/features/onboarding/onboarding_screen.dart';
+import 'package:appoint/features/onboarding/permissions_onboarding_screen.dart';
+import 'package:appoint/features/profile/enhanced_profile_screen.dart';
 import 'package:appoint/features/profile/user_profile_screen.dart';
+import 'package:appoint/features/rewards/rewards_screen.dart';
 import 'package:appoint/features/search/screens/search_screen.dart';
+import 'package:appoint/features/settings/enhanced_settings_screen.dart';
+import 'package:appoint/features/studio/studio_booking_confirm_screen.dart';
 import 'package:appoint/features/studio_business/entry/studio_entry_screen.dart';
 import 'package:appoint/features/studio_business/presentation/business_availability_screen.dart';
 import 'package:appoint/features/studio_business/screens/analytics_screen.dart';
@@ -29,7 +42,6 @@ import 'package:appoint/features/studio_business/screens/appointments_screen.dar
     as studio_appointments;
 import 'package:appoint/features/studio_business/screens/business_calendar_screen.dart';
 import 'package:appoint/features/studio_business/screens/business_connect_screen.dart';
-
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
 import 'package:appoint/features/studio_business/screens/clients_screen.dart'
     as studio_clients;
@@ -43,36 +55,23 @@ import 'package:appoint/features/studio_business/screens/settings_screen.dart';
 import 'package:appoint/features/studio_business/screens/staff_availability_screen.dart';
 import 'package:appoint/features/studio_business/screens/studio_booking_screen.dart'
     as studio_business;
-import 'package:appoint/features/studio/studio_booking_confirm_screen.dart';
-import 'package:appoint/models/invite.dart';
+import 'package:appoint/features/subscriptions/screens/subscription_screen.dart';
+import 'package:appoint/l10n/app_localizations.dart';
 import 'package:appoint/models/family_link.dart';
-import 'package:appoint/services/notification_service.dart';
+import 'package:appoint/models/invite.dart';
 import 'package:appoint/services/branch_service.dart';
+import 'package:appoint/services/eta_service.dart';
+import 'package:appoint/services/notification_service.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:geolocator/geolocator.dart';
-import 'package:appoint/services/eta_service.dart';
 
-// Enhanced features imports
-import 'package:appoint/features/onboarding/onboarding_screen.dart';
-import 'package:appoint/features/onboarding/enhanced_onboarding_screen.dart';
-import 'package:appoint/features/messaging/screens/messages_list_screen.dart';
-import 'package:appoint/features/messaging/screens/chat_screen.dart';
-import 'package:appoint/features/subscriptions/screens/subscription_screen.dart';
-import 'package:appoint/features/rewards/rewards_screen.dart';
-import 'package:appoint/features/dashboard/enhanced_dashboard_screen.dart';
-import 'package:appoint/features/notifications/enhanced_notifications_screen.dart';
-import 'package:appoint/features/settings/enhanced_settings_screen.dart';
-import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
-import 'package:appoint/features/profile/enhanced_profile_screen.dart';
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/features/onboarding/permissions_onboarding_screen.dart';
-
-final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
+final appRouterProvider = Provider<GoRouter>(
+  (ref) => GoRouter(
     initialLocation: '/',
     routes: [
       GoRoute(
@@ -145,30 +144,27 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         path: '/family/permissions',
         name: 'permissions',
         builder: (context, final state) {
-          final familyLink = state.extra as FamilyLink;
+          final familyLink = state.extra! as FamilyLink;
           return PermissionsScreen(familyLink: familyLink);
         },
       ),
       GoRoute(
         path: '/google/calendar',
         name: 'googleCalendar',
-        builder: (context, final state) =>
-            const GoogleIntegrationScreen(),
+        builder: (context, final state) => const GoogleIntegrationScreen(),
       ),
       GoRoute(
         path: '/ambassador-dashboard',
         name: 'ambassadorDashboard',
-        builder: (context, final state) =>
-            AmbassadorDashboardScreen(
-              notificationService: NotificationService(),
-              branchService: BranchService(),
-            ),
+        builder: (context, final state) => AmbassadorDashboardScreen(
+          notificationService: NotificationService(),
+          branchService: BranchService(),
+        ),
       ),
       GoRoute(
         path: '/ambassador-onboarding',
         name: 'ambassadorOnboarding',
-        builder: (context, final state) =>
-            const AmbassadorOnboardingScreen(),
+        builder: (context, final state) => const AmbassadorOnboardingScreen(),
       ),
       GoRoute(
         path: '/chat-booking',
@@ -246,8 +242,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       GoRoute(
         path: '/business/clients',
         name: 'clients',
-        builder: (context, final state) =>
-            const studio_clients.ClientsScreen(),
+        builder: (context, final state) => const studio_clients.ClientsScreen(),
       ),
       GoRoute(
         path: '/business/appointments',
@@ -288,8 +283,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       GoRoute(
         path: '/business/appointment-requests',
         name: 'appointmentRequests',
-        builder: (context, final state) =>
-            const AppointmentRequestsScreen(),
+        builder: (context, final state) => const AppointmentRequestsScreen(),
       ),
       GoRoute(
         path: '/business/external-meetings',
@@ -299,8 +293,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       GoRoute(
         path: '/studio/confirm',
         name: 'studioConfirm',
-        builder: (context, final state) =>
-            const StudioBookingConfirmScreen(),
+        builder: (context, final state) => const StudioBookingConfirmScreen(),
       ),
 
       // Search route
@@ -431,8 +424,7 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
       GoRoute(
         path: '/studio/staff-availability',
         name: 'studioStaffAvailability',
-        builder: (context, final state) =>
-            const StaffAvailabilityScreen(),
+        builder: (context, final state) => const StaffAvailabilityScreen(),
       ),
     ],
     errorBuilder: (context, final state) {
@@ -446,12 +438,14 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         ),
       );
     },
-  ),);
+  ),
+);
 
 // Enhanced meeting details screen with Google Maps integration
 class MeetingDetailsScreen extends StatefulWidget {
   const MeetingDetailsScreen({
-    required this.meetingId, super.key,
+    required this.meetingId,
+    super.key,
     this.creatorId,
     this.contextId,
     this.groupId,
@@ -470,7 +464,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
   bool isLoading = true;
   String? error;
   int? lateBy;
-  TravelMode _travelMode = TravelMode.driving; // TODO allow user selection
+  final TravelMode _travelMode = TravelMode.driving; // TODOallow user selection
 
   @override
   void initState() {
@@ -550,69 +544,65 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(meetingData?['title'] ?? 'Meeting Details'),
-        actions: [
-          if (meetingData != null)
-            PopupMenuButton(
-              itemBuilder: (context) => [
-                if (meetingData!['link'] != null)
+  Widget build(BuildContext context) => Scaffold(
+        appBar: AppBar(
+          title: Text(meetingData?['title'] ?? 'Meeting Details'),
+          actions: [
+            if (meetingData != null)
+              PopupMenuButton(
+                itemBuilder: (context) => [
+                  if (meetingData!['link'] != null)
+                    const PopupMenuItem(
+                      value: 'join',
+                      child: Row(
+                        children: [
+                          Icon(Icons.video_call, size: 16),
+                          SizedBox(width: 8),
+                          Text('Join Meeting'),
+                        ],
+                      ),
+                    ),
+                  if (meetingData!['latitude'] != null &&
+                      meetingData!['longitude'] != null)
+                    const PopupMenuItem(
+                      value: 'directions',
+                      child: Row(
+                        children: [
+                          Icon(Icons.directions, size: 16),
+                          SizedBox(width: 8),
+                          Text('Get Directions'),
+                        ],
+                      ),
+                    ),
                   const PopupMenuItem(
-                    value: 'join',
+                    value: 'share',
                     child: Row(
                       children: [
-                        Icon(Icons.video_call, size: 16),
+                        Icon(Icons.share, size: 16),
                         SizedBox(width: 8),
-                        Text('Join Meeting'),
+                        Text('Share Meeting'),
                       ],
                     ),
                   ),
-                if (meetingData!['latitude'] != null && meetingData!['longitude'] != null)
-                  const PopupMenuItem(
-                    value: 'directions',
-                    child: Row(
-                      children: [
-                        Icon(Icons.directions, size: 16),
-                        SizedBox(width: 8),
-                        Text('Get Directions'),
-                      ],
-                    ),
-                  ),
-                const PopupMenuItem(
-                  value: 'share',
-                  child: Row(
-                    children: [
-                      Icon(Icons.share, size: 16),
-                      SizedBox(width: 8),
-                      Text('Share Meeting'),
-                    ],
-                  ),
-                ),
-              ],
-              onSelected: (value) {
-                switch (value) {
-                  case 'join':
-                    _joinMeeting(meetingData!['link']);
-                    break;
-                  case 'directions':
-                    _openDirections(
-                      meetingData!['latitude']?.toDouble(),
-                      meetingData!['longitude']?.toDouble(),
-                    );
-                    break;
-                  case 'share':
-                    _shareMeeting();
-                    break;
-                }
-              },
-            ),
-        ],
-      ),
-      body: _buildBody(),
-    );
-  }
+                ],
+                onSelected: (value) {
+                  switch (value) {
+                    case 'join':
+                      _joinMeeting(meetingData!['link']);
+                    case 'directions':
+                      _openDirections(
+                        meetingData!['latitude']?.toDouble(),
+                        meetingData!['longitude']?.toDouble(),
+                      );
+                    case 'share':
+                      _shareMeeting();
+                  }
+                },
+              ),
+          ],
+        ),
+        body: _buildBody(),
+      );
 
   Widget _buildBody() {
     if (isLoading) {
@@ -656,7 +646,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.meeting_room_outlined, size: 64, color: Colors.grey.shade400),
+            Icon(Icons.meeting_room_outlined,
+                size: 64, color: Colors.grey.shade400),
             const SizedBox(height: 16),
             const Text('Meeting not found', style: TextStyle(fontSize: 16)),
             const SizedBox(height: 24),
@@ -674,7 +665,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
 
   Widget _buildMeetingDetails() {
     final meeting = meetingData!;
-    final hasLocation = meeting['latitude'] != null && meeting['longitude'] != null;
+    final hasLocation =
+        meeting['latitude'] != null && meeting['longitude'] != null;
 
     return SingleChildScrollView(
       padding: const EdgeInsets.all(16),
@@ -691,7 +683,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                   Row(
                     children: [
                       CircleAvatar(
-                        backgroundColor: hasLocation ? Colors.green : Colors.blue,
+                        backgroundColor:
+                            hasLocation ? Colors.green : Colors.blue,
                         child: Icon(
                           hasLocation ? Icons.location_on : Icons.video_call,
                           color: Colors.white,
@@ -726,7 +719,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                   _buildInfoRow(Icons.calendar_today, 'Date', meeting['date']),
                   _buildInfoRow(Icons.access_time, 'Time', meeting['time']),
                   if (meeting['duration'] != null)
-                    _buildInfoRow(Icons.timer, 'Duration', '${meeting['duration']} minutes'),
+                    _buildInfoRow(Icons.timer, 'Duration',
+                        '${meeting['duration']} minutes'),
                 ],
               ),
             ),
@@ -744,7 +738,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                   children: [
                     const Text(
                       'Meeting Link',
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      style:
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 8),
                     Container(
@@ -797,7 +792,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                   children: [
                     const Text(
                       'Location',
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      style:
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 8),
                     if (meeting['address'] != null)
@@ -877,7 +873,9 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
           const SizedBox(height: 16),
 
           // Additional information
-          if (meeting['notes'] != null || widget.creatorId != null || widget.groupId != null)
+          if (meeting['notes'] != null ||
+              widget.creatorId != null ||
+              widget.groupId != null)
             Card(
               child: Padding(
                 padding: const EdgeInsets.all(16),
@@ -886,16 +884,18 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                   children: [
                     const Text(
                       'Additional Information',
-                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                      style:
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 8),
                     if (meeting['notes'] != null)
                       _buildInfoRow(Icons.note, 'Notes', meeting['notes']),
                     if (widget.creatorId != null)
-                      _buildInfoRow(Icons.person, 'Creator', widget.creatorId!),
+                      _buildInfoRow(Icons.person, 'Creator', widget.creatorId),
                     if (widget.groupId != null)
-                      _buildInfoRow(Icons.group, 'Group', widget.groupId!),
-                    _buildInfoRow(Icons.fingerprint, 'Meeting ID', widget.meetingId),
+                      _buildInfoRow(Icons.group, 'Group', widget.groupId),
+                    _buildInfoRow(
+                        Icons.fingerprint, 'Meeting ID', widget.meetingId),
                   ],
                 ),
               ),
@@ -915,7 +915,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
 
   Widget _buildInfoRow(IconData icon, String label, String? value) {
     if (value == null) return const SizedBox.shrink();
-    
+
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
@@ -936,7 +936,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
     );
   }
 
-  void _joinMeeting(String? link) async {
+  Future<void> _joinMeeting(String? link) async {
     if (link == null) return;
     final uri = Uri.parse(link);
     if (await canLaunchUrl(uri)) {
@@ -953,9 +953,10 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
     }
   }
 
-  void _openDirections(double? latitude, double? longitude) async {
+  Future<void> _openDirections(double? latitude, double? longitude) async {
     if (latitude == null || longitude == null) return;
-    final uri = Uri.parse('https://www.google.com/maps/dir/?api=1&destination=$latitude,$longitude');
+    final uri = Uri.parse(
+        'https://www.google.com/maps/dir/?api=1&destination=$latitude,$longitude');
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri, mode: LaunchMode.externalApplication);
     } else {
@@ -971,14 +972,15 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
   }
 
   void _shareMeeting() {
-    final meeting = meetingData!;
-    final meetingInfo = '''
-Meeting: ${meeting['title'] ?? 'Meeting'}
-Date: ${meeting['date'] ?? 'TBD'}
-Time: ${meeting['time'] ?? 'TBD'}
-${meeting['link'] != null ? 'Link: ${meeting['link']}' : ''}
-${meeting['address'] != null ? 'Location: ${meeting['address']}' : ''}
-''';
+    // TODO: Implement actual sharing functionality
+    // final meeting = meetingData!;
+    // final meetingInfo = '''
+    // Meeting: ${meeting['title'] ?? 'Meeting'}
+    // Date: ${meeting['date'] ?? 'TBD'}
+    // Time: ${meeting['time'] ?? 'TBD'}
+    // ${meeting['link'] != null ? 'Link: ${meeting['link']}' : ''}
+    // ${meeting['address'] != null ? 'Location: ${meeting['address']}' : ''}
+    // ''';
 
     // Copy to clipboard (simplified implementation)
     ScaffoldMessenger.of(context).showSnackBar(

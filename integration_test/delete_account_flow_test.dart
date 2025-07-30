@@ -24,6 +24,14 @@ void main() {
   });
 
   testWidgets('Delete My Account flow deletes user and data', (tester) async {
+    // Declare variables
+    late Finder profileTab;
+    late Finder profileIcon;
+    late Finder deleteButton;
+    late Finder confirmDelete;
+    late DocumentSnapshot userDoc;
+    late DocumentSnapshot profileDoc;
+
     // Seed test user and docs
     const testEmail = 'delete_test@example.com';
     const testPassword = 'testpassword';
@@ -42,7 +50,9 @@ void main() {
     await firestore.collection('chats').add({'userId': uid, 'msg': 'hi'});
     await firestore.collection('profiles').doc(uid).set({'bio': 'bye'});
     await auth.signInWithEmailAndPassword(
-        email: testEmail, password: testPassword,);
+      email: testEmail,
+      password: testPassword,
+    );
     expect(auth.currentUser, isNotNull);
     expect(auth.currentUser!.uid, equals(uid));
     app.main();
@@ -86,6 +96,10 @@ void main() {
 
   testWidgets('Delete account confirmation dialog shows correct content',
       (tester) async {
+    // Declare variables
+    late Finder profileTab;
+    late Finder deleteButton;
+
     // Arrange: Create and login test user
     const testEmail = 'confirm_test@example.com';
     const testPassword = 'testpassword';
@@ -96,7 +110,9 @@ void main() {
       password: testPassword,
     );
     await auth.signInWithEmailAndPassword(
-        email: testEmail, password: testPassword,);
+      email: testEmail,
+      password: testPassword,
+    );
 
     // Start app and navigate to profile
     app.main();
@@ -123,6 +139,12 @@ void main() {
 
   testWidgets('Cancel delete account closes dialog without deletion',
       (tester) async {
+    // Declare variables
+    late Finder profileTab;
+    late Finder deleteButton;
+    late Finder cancelButton;
+    late DocumentSnapshot userDoc;
+
     // Arrange: Create and login test user
     const testEmail = 'cancel_test@example.com';
     const testPassword = 'testpassword';
@@ -142,7 +164,9 @@ void main() {
     });
 
     await auth.signInWithEmailAndPassword(
-        email: testEmail, password: testPassword,);
+      email: testEmail,
+      password: testPassword,
+    );
 
     // Start app and navigate to profile
     app.main();

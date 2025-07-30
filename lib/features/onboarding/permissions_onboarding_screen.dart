@@ -8,10 +8,12 @@ class PermissionsOnboardingScreen extends ConsumerStatefulWidget {
   const PermissionsOnboardingScreen({super.key});
 
   @override
-  ConsumerState<PermissionsOnboardingScreen> createState() => REDACTED_TOKEN();
+  ConsumerState<PermissionsOnboardingScreen> createState() =>
+      REDACTED_TOKEN();
 }
 
-class REDACTED_TOKEN extends ConsumerState<PermissionsOnboardingScreen> {
+class REDACTED_TOKEN
+    extends ConsumerState<PermissionsOnboardingScreen> {
   int _step = 0; // 0 notif, 1 calendar, 2 location
   bool _isLoading = false;
 
@@ -21,13 +23,10 @@ class REDACTED_TOKEN extends ConsumerState<PermissionsOnboardingScreen> {
     switch (_step) {
       case 0:
         await perm.requestNotificationPermission();
-        break;
       case 1:
         await perm.requestCalendarPermission();
-        break;
       case 2:
         await perm.requestLocationPermission();
-        break;
     }
     setState(() {
       _isLoading = false;
@@ -51,16 +50,21 @@ class REDACTED_TOKEN extends ConsumerState<PermissionsOnboardingScreen> {
       'Sync appointments with your calendar', // TODO: Localize
       'Enhance features with location data', // TODO: Localize
     ];
-    final icons = [Icons.notifications_active, Icons.calendar_month, Icons.location_on];
+    final icons = [
+      Icons.notifications_active,
+      Icons.calendar_month,
+      Icons.location_on
+    ];
 
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(24.0),
+          padding: const EdgeInsets.all(24),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(icons[_step], size: 80, color: Theme.of(context).primaryColor),
+              Icon(icons[_step],
+                  size: 80, color: Theme.of(context).primaryColor),
               const SizedBox(height: 24),
               Text(
                 titles[_step],
@@ -78,7 +82,10 @@ class REDACTED_TOKEN extends ConsumerState<PermissionsOnboardingScreen> {
                 child: ElevatedButton(
                   onPressed: _isLoading ? null : _requestNext,
                   child: _isLoading
-                      ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2))
+                      ? const SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: CircularProgressIndicator(strokeWidth: 2))
                       : Text(_step < 2 ? l10n.continue1 : l10n.getStarted),
                 ),
               ),

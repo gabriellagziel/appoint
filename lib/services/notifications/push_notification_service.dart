@@ -1,15 +1,15 @@
+import 'package:appoint/services/analytics/analytics_service.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:appoint/services/analytics/analytics_service.dart';
 
 class PushNotificationService {
+  PushNotificationService._();
   static final PushNotificationService _instance = PushNotificationService._();
   static PushNotificationService get instance => _instance;
-  
-  PushNotificationService._();
 
   final FirebaseMessaging _firebaseMessaging = FirebaseMessaging.instance;
-  final FlutterLocalNotificationsPlugin _localNotifications = FlutterLocalNotificationsPlugin();
+  final FlutterLocalNotificationsPlugin _localNotifications =
+      FlutterLocalNotificationsPlugin();
 
   // Initialize notifications
   Future<void> initialize() async {
@@ -31,19 +31,12 @@ class PushNotificationService {
 
   // Request notification permission
   Future<void> _requestPermission() async {
-    final settings = await _firebaseMessaging.requestPermission(
-      alert: true,
-      announcement: false,
-      badge: true,
-      carPlay: false,
-      criticalAlert: false,
-      provisional: false,
-      sound: true,
-    );
+    final settings = await _firebaseMessaging.requestPermission();
 
     if (settings.authorizationStatus == AuthorizationStatus.authorized) {
       print('User granted notification permission');
-    } else if (settings.authorizationStatus == AuthorizationStatus.provisional) {
+    } else if (settings.authorizationStatus ==
+        AuthorizationStatus.provisional) {
       print('User granted provisional notification permission');
     } else {
       print('User declined notification permission');
@@ -52,12 +45,9 @@ class PushNotificationService {
 
   // Initialize local notifications
   Future<void> _initializeLocalNotifications() async {
-    const androidSettings = AndroidInitializationSettings('@mipmap/ic_launcher');
-    const iosSettings = DarwinInitializationSettings(
-      requestAlertPermission: true,
-      requestBadgePermission: true,
-      requestSoundPermission: true,
-    );
+    const androidSettings =
+        AndroidInitializationSettings('@mipmap/ic_launcher');
+    const iosSettings = DarwinInitializationSettings();
 
     const initializationSettings = InitializationSettings(
       android: androidSettings,
@@ -114,7 +104,8 @@ class PushNotificationService {
     );
 
     await _localNotifications
-        .REDACTED_TOKEN<REDACTED_TOKEN>()
+        .REDACTED_TOKEN<
+            REDACTED_TOKEN>()
         ?.createNotificationChannel(androidChannel);
   }
 
@@ -131,7 +122,7 @@ class PushNotificationService {
   // Handle foreground messages
   void _handleForegroundMessage(RemoteMessage message) {
     print('Received foreground message: ${message.messageId}');
-    
+
     // Show local notification
     _showLocalNotification(message);
 
@@ -150,7 +141,7 @@ class PushNotificationService {
   // Handle notification tap
   void _handleNotificationTap(RemoteMessage message) {
     print('Notification tapped: ${message.messageId}');
-    
+
     // Handle different notification types
     final data = message.data;
     final type = data['type'];
@@ -158,19 +149,14 @@ class PushNotificationService {
     switch (type) {
       case 'booking':
         _handleBookingNotification(data);
-        break;
       case 'message':
         _handleMessageNotification(data);
-        break;
       case 'reward':
         _handleRewardNotification(data);
-        break;
       case 'subscription':
         _handleSubscriptionNotification(data);
-        break;
       case 'family':
         _handleFamilyNotification(data);
-        break;
       default:
         _handleGenericNotification(data);
     }
@@ -189,10 +175,10 @@ class PushNotificationService {
   // Handle local notification tap
   void _onNotificationTapped(NotificationResponse response) {
     print('Local notification tapped: ${response.payload}');
-    
+
     if (response.payload != null) {
       final data = Map<String, dynamic>.from(
-        response.payload as Map<String, dynamic>,
+        response.payload! as Map<String, dynamic>,
       );
       _handleNotificationTap(RemoteMessage(data: data));
     }
@@ -206,7 +192,6 @@ class PushNotificationService {
       channelDescription: 'This channel is used for important notifications.',
       importance: Importance.high,
       priority: Priority.high,
-      showWhen: true,
     );
 
     const iosDetails = DarwinNotificationDetails(
@@ -329,8 +314,6 @@ class PushNotificationService {
       'local_channel',
       'Local Notifications',
       channelDescription: 'This channel is used for local notifications.',
-      importance: Importance.defaultImportance,
-      priority: Priority.defaultPriority,
     );
 
     const iosDetails = DarwinNotificationDetails();
@@ -360,9 +343,8 @@ class PushNotificationService {
   }
 
   // Get notification settings
-  Future<NotificationSettings> getNotificationSettings() async {
-    return await _firebaseMessaging.getNotificationSettings();
-  }
+  Future<NotificationSettings> getNotificationSettings() async =>
+      _firebaseMessaging.getNotificationSettings();
 
   // Check if notifications are enabled
   Future<bool> areNotificationsEnabled() async {
@@ -375,7 +357,7 @@ class PushNotificationService {
 @pragma('vm:entry-point')
 Future<void> REDACTED_TOKEN(RemoteMessage message) async {
   print('Handling background message: ${message.messageId}');
-  
+
   // Track background notification
   AnalyticsService.instance.trackUserAction(
     action: 'REDACTED_TOKEN',
@@ -386,4 +368,4 @@ Future<void> REDACTED_TOKEN(RemoteMessage message) async {
       'data': message.data,
     },
   );
-} 
+}

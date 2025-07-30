@@ -23,10 +23,10 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
   final _descriptionController = TextEditingController();
 
   String _selectedCategory = 'Action';
-  int _minAge = 5;
-  int _maxAge = 12;
-  int _maxParticipants = 4;
-  int _estimatedDuration = 30;
+  final int _minAge = 5;
+  final int _maxAge = 12;
+  final int _maxParticipants = 4;
+  final int _estimatedDuration = 30;
   File? _selectedImage;
   bool _isPublic = true;
   bool _parentApprovalRequired = false;
@@ -89,300 +89,306 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
   }
 
   Widget _buildImageSection(AppLocalizations l10n) => Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'Game Icon',
-          style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-            color: Colors.grey[800],
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Game Icon',
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Colors.grey[800],
+            ),
           ),
-        ),
-        const SizedBox(height: 12),
-        Center(
-          child: GestureDetector(
-            onTap: _pickImage,
-            child: Container(
-              width: 120,
-              height: 120,
-              decoration: BoxDecoration(
-                color: Colors.grey[200],
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(
-                  color: Colors.grey[300]!,
-                  width: 2,
+          const SizedBox(height: 12),
+          Center(
+            child: GestureDetector(
+              onTap: _pickImage,
+              child: Container(
+                width: 120,
+                height: 120,
+                decoration: BoxDecoration(
+                  color: Colors.grey[200],
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(
+                    color: Colors.grey[300]!,
+                    width: 2,
+                  ),
                 ),
-              ),
-              child: _selectedImage != null
-                  ? ClipRRect(
-                      borderRadius: BorderRadius.circular(14),
-                      child: Image.file(
-                        _selectedImage!,
-                        fit: BoxFit.cover,
-                      ),
-                    )
-                  : Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.add_a_photo,
-                          size: 32,
-                          color: Colors.grey[600],
+                child: _selectedImage != null
+                    ? ClipRRect(
+                        borderRadius: BorderRadius.circular(14),
+                        child: Image.file(
+                          _selectedImage!,
+                          fit: BoxFit.cover,
                         ),
-                        const SizedBox(height: 8),
-                        Text(
-                          'Add Icon',
-                          style: TextStyle(
-                            fontSize: 12,
+                      )
+                    : Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.add_a_photo,
+                            size: 32,
                             color: Colors.grey[600],
                           ),
-                        ),
-                      ],
-                    ),
-            ),
-          ),
-        ),
-      ],
-    );
-
-  Widget _buildBasicInformation(AppLocalizations l10n) => Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'Basic Information',
-          style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-            color: Colors.grey[800],
-          ),
-        ),
-        const SizedBox(height: 16),
-
-        // Game Name
-        TextFormField(
-          controller: _nameController,
-          decoration: InputDecoration(
-            labelText: 'Game Name',
-            hintText: 'Enter game name',
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            prefixIcon: const Icon(Icons.games),
-          ),
-          validator: (value) {
-            if (value == null || value.isEmpty) {
-              return 'Please enter a game name';
-            }
-            if (value.length < 3) {
-              return 'Game name must be at least 3 characters';
-            }
-            return null;
-          },
-        ),
-        const SizedBox(height: 16),
-
-        // Game Description
-        TextFormField(
-          controller: _descriptionController,
-          decoration: InputDecoration(
-            labelText: 'Game Description',
-            hintText: 'Describe your game',
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            prefixIcon: const Icon(Icons.description),
-          ),
-          maxLines: 3,
-          validator: (value) {
-            if (value == null || value.isEmpty) {
-              return 'Please enter a game description';
-            }
-            if (value.length < 10) {
-              return 'Description must be at least 10 characters';
-            }
-            return null;
-          },
-        ),
-        const SizedBox(height: 16),
-
-        // Category
-        DropdownButtonFormField<String>(
-          value: _selectedCategory,
-          decoration: InputDecoration(
-            labelText: 'Category',
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            prefixIcon: const Icon(Icons.category),
-          ),
-          items: _categories.map((category) => DropdownMenuItem(
-              value: category,
-              child: Text(category),
-            ),).toList(),
-          onChanged: (value) {
-            setState(() {
-              _selectedCategory = value!;
-            });
-          },
-        ),
-      ],
-    );
-
-  Widget _buildGameSettings(AppLocalizations l10n) => Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'Game Settings',
-          style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-            color: Colors.grey[800],
-          ),
-        ),
-        const SizedBox(height: 16),
-
-        // Age Range
-        Text(
-          'Age Range: $_minAge - $_maxAge years',
-          style: const TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-        const SizedBox(height: 8),
-        RangeSlider(
-          values: RangeValues(_minAge.toDouble(), _maxAge.toDouble()),
-          min: 3,
-          max: 18,
-          divisions: 15,
-          labels: RangeLabels('$_minAge', '$_maxAge'),
-          onChanged: (values) {
-            setState(() {
-              final _minAge = values.start.round();
-              final _maxAge = values.end.round();
-            });
-          },
-        ),
-        const SizedBox(height: 16),
-
-        // Max Participants
-        Text(
-          'Max Participants: $_maxParticipants',
-          style: const TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-        const SizedBox(height: 8),
-        Slider(
-          value: _maxParticipants.toDouble(),
-          min: 2,
-          max: 10,
-          divisions: 8,
-          label: '$_maxParticipants',
-          onChanged: (value) {
-            setState(() {
-              final _maxParticipants = value.round();
-            });
-          },
-        ),
-        const SizedBox(height: 16),
-
-        // Estimated Duration
-        Text(
-          'Estimated Duration: $_estimatedDuration minutes',
-          style: const TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-        const SizedBox(height: 8),
-        Slider(
-          value: _estimatedDuration.toDouble(),
-          min: 15,
-          max: 120,
-          divisions: 21,
-          label: '$_estimatedDuration',
-          onChanged: (value) {
-            setState(() {
-              final _estimatedDuration = value.round();
-            });
-          },
-        ),
-      ],
-    );
-
-  Widget _buildPrivacySettings(AppLocalizations l10n) => Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'Privacy Settings',
-          style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-            color: Colors.grey[800],
-          ),
-        ),
-        const SizedBox(height: 16),
-
-        // Public/Private Toggle
-        SwitchListTile(
-          title: const Text('Make Game Public'),
-          subtitle: const Text('Allow other users to find and join this game'),
-          value: _isPublic,
-          onChanged: (value) {
-            setState(() {
-              _isPublic = value;
-            });
-          },
-          activeColor: AppTheme.primaryColor,
-        ),
-
-        // Parent Approval Toggle
-        SwitchListTile(
-          title: const Text('Require Parent Approval'),
-          subtitle: const Text('Parents must approve before children can join'),
-          value: _parentApprovalRequired,
-          onChanged: (value) {
-            setState(() {
-              _parentApprovalRequired = value;
-            });
-          },
-          activeColor: AppTheme.primaryColor,
-        ),
-      ],
-    );
-
-  Widget _buildCreateButton(AppLocalizations l10n) => Consumer(
-      builder: (context, final ref, final child) {
-        final createGameState = ref.watch(playtimeGameNotifierProvider);
-
-        return SizedBox(
-          width: double.infinity,
-          height: 50,
-          child: ElevatedButton(
-            onPressed: createGameState.isLoading ? null : _createGame,
-            style: ElevatedButton.styleFrom(
-              backgroundColor: AppTheme.primaryColor,
-              foregroundColor: Colors.white,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
+                          const SizedBox(height: 8),
+                          Text(
+                            'Add Icon',
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.grey[600],
+                            ),
+                          ),
+                        ],
+                      ),
               ),
             ),
-            child: createGameState.isLoading
-                ? const CircularProgressIndicator(color: Colors.white)
-                : const Text(
-                    'Create Game',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
           ),
-        );
-      },
-    );
+        ],
+      );
+
+  Widget _buildBasicInformation(AppLocalizations l10n) => Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Basic Information',
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Colors.grey[800],
+            ),
+          ),
+          const SizedBox(height: 16),
+
+          // Game Name
+          TextFormField(
+            controller: _nameController,
+            decoration: InputDecoration(
+              labelText: 'Game Name',
+              hintText: 'Enter game name',
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+              prefixIcon: const Icon(Icons.games),
+            ),
+            validator: (value) {
+              if (value == null || value.isEmpty) {
+                return 'Please enter a game name';
+              }
+              if (value.length < 3) {
+                return 'Game name must be at least 3 characters';
+              }
+              return null;
+            },
+          ),
+          const SizedBox(height: 16),
+
+          // Game Description
+          TextFormField(
+            controller: _descriptionController,
+            decoration: InputDecoration(
+              labelText: 'Game Description',
+              hintText: 'Describe your game',
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+              prefixIcon: const Icon(Icons.description),
+            ),
+            maxLines: 3,
+            validator: (value) {
+              if (value == null || value.isEmpty) {
+                return 'Please enter a game description';
+              }
+              if (value.length < 10) {
+                return 'Description must be at least 10 characters';
+              }
+              return null;
+            },
+          ),
+          const SizedBox(height: 16),
+
+          // Category
+          DropdownButtonFormField<String>(
+            value: _selectedCategory,
+            decoration: InputDecoration(
+              labelText: 'Category',
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+              prefixIcon: const Icon(Icons.category),
+            ),
+            items: _categories
+                .map(
+                  (category) => DropdownMenuItem(
+                    value: category,
+                    child: Text(category),
+                  ),
+                )
+                .toList(),
+            onChanged: (value) {
+              setState(() {
+                _selectedCategory = value!;
+              });
+            },
+          ),
+        ],
+      );
+
+  Widget _buildGameSettings(AppLocalizations l10n) => Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Game Settings',
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Colors.grey[800],
+            ),
+          ),
+          const SizedBox(height: 16),
+
+          // Age Range
+          Text(
+            'Age Range: $_minAge - $_maxAge years',
+            style: const TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+          const SizedBox(height: 8),
+          RangeSlider(
+            values: RangeValues(_minAge.toDouble(), _maxAge.toDouble()),
+            min: 3,
+            max: 18,
+            divisions: 15,
+            labels: RangeLabels('$_minAge', '$_maxAge'),
+            onChanged: (values) {
+              setState(() {
+                final minAge = values.start.round();
+                final maxAge = values.end.round();
+              });
+            },
+          ),
+          const SizedBox(height: 16),
+
+          // Max Participants
+          Text(
+            'Max Participants: $_maxParticipants',
+            style: const TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Slider(
+            value: _maxParticipants.toDouble(),
+            min: 2,
+            max: 10,
+            divisions: 8,
+            label: '$_maxParticipants',
+            onChanged: (value) {
+              setState(() {
+                final maxParticipants = value.round();
+              });
+            },
+          ),
+          const SizedBox(height: 16),
+
+          // Estimated Duration
+          Text(
+            'Estimated Duration: $_estimatedDuration minutes',
+            style: const TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Slider(
+            value: _estimatedDuration.toDouble(),
+            min: 15,
+            max: 120,
+            divisions: 21,
+            label: '$_estimatedDuration',
+            onChanged: (value) {
+              setState(() {
+                final estimatedDuration = value.round();
+              });
+            },
+          ),
+        ],
+      );
+
+  Widget _buildPrivacySettings(AppLocalizations l10n) => Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Privacy Settings',
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+              color: Colors.grey[800],
+            ),
+          ),
+          const SizedBox(height: 16),
+
+          // Public/Private Toggle
+          SwitchListTile(
+            title: const Text('Make Game Public'),
+            subtitle:
+                const Text('Allow other users to find and join this game'),
+            value: _isPublic,
+            onChanged: (value) {
+              setState(() {
+                _isPublic = value;
+              });
+            },
+            activeColor: AppTheme.primaryColor,
+          ),
+
+          // Parent Approval Toggle
+          SwitchListTile(
+            title: const Text('Require Parent Approval'),
+            subtitle:
+                const Text('Parents must approve before children can join'),
+            value: _parentApprovalRequired,
+            onChanged: (value) {
+              setState(() {
+                _parentApprovalRequired = value;
+              });
+            },
+            activeColor: AppTheme.primaryColor,
+          ),
+        ],
+      );
+
+  Widget _buildCreateButton(AppLocalizations l10n) => Consumer(
+        builder: (context, final ref, final child) {
+          final createGameState = ref.watch(playtimeGameNotifierProvider);
+
+          return SizedBox(
+            width: double.infinity,
+            height: 50,
+            child: ElevatedButton(
+              onPressed: createGameState.isLoading ? null : _createGame,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppTheme.primaryColor,
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: createGameState.isLoading
+                  ? const CircularProgressIndicator(color: Colors.white)
+                  : const Text(
+                      'Create Game',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+            ),
+          );
+        },
+      );
 
   Future<void> _pickImage() async {
     if (kIsWeb) {
@@ -397,7 +403,7 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
 
     if (image != null) {
       setState(() {
-        final _selectedImage = File(image.path);
+        final selectedImage = File(image.path);
       });
     }
   }
@@ -428,12 +434,12 @@ class _CreateGameScreenState extends ConsumerState<CreateGameScreen> {
         context.pop();
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to create game: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Failed to create game: $e'),
+          backgroundColor: Colors.red,
+        ),
+      );
     }
   }
+}

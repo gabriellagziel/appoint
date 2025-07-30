@@ -30,8 +30,10 @@ class AmbassadorService {
 
       final snapshot = await query.get();
       return snapshot.docs
-          .map((doc) =>
-              AmbassadorStats.fromJson(doc.data()!),)
+          .map(
+            (doc) =>
+                AmbassadorStats.fromJson(doc.data()! as Map<String, dynamic>),
+          )
           .toList();
     } catch (e) {
       // TODO(username): Implement proper error handling and fallback data
@@ -51,11 +53,17 @@ class AmbassadorService {
     for (final entry in countryGroups.entries) {
       final countryStats = entry.value;
       final totalAmbassadors = countryStats.fold<int>(
-          0, (total, final stat) => total + stat.ambassadors,);
+        0,
+        (total, final stat) => total + stat.ambassadors,
+      );
       final totalReferrals = countryStats.fold<int>(
-          0, (total, final stat) => total + stat.referrals,);
+        0,
+        (total, final stat) => total + stat.referrals,
+      );
       final avgSurveyScore = countryStats.fold<double>(
-              0, (total, final stat) => total + stat.surveyScore,) /
+            0,
+            (total, final stat) => total + stat.surveyScore,
+          ) /
           countryStats.length;
 
       chartData.addAll([
@@ -99,8 +107,11 @@ class AmbassadorService {
         final date =
             DateTime(ts.toDate().year, ts.toDate().month, ts.toDate().day);
         final ambassadors = (doc['ambassadors'] as int?) ?? 0;
-        counts.update(date, (v) => v + ambassadors,
-            ifAbsent: () => ambassadors,);
+        counts.update(
+          date,
+          (v) => v + ambassadors,
+          ifAbsent: () => ambassadors,
+        );
       }
 
       final list = counts.entries
@@ -110,8 +121,13 @@ class AmbassadorService {
       return list;
     } catch (e) {
       final now = DateTime.now();
-      return List.generate(7, (i) => TimeSeriesPoint(
-            date: now.subtract(Duration(days: 6 - i)), count: (i + 1) * 4,),);
+      return List.generate(
+        7,
+        (i) => TimeSeriesPoint(
+          date: now.subtract(Duration(days: 6 - i)),
+          count: (i + 1) * 4,
+        ),
+      );
     }
   }
 }

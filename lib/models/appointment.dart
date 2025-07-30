@@ -11,7 +11,6 @@ enum AppointmentType { scheduled, openCall }
 
 @JsonSerializable()
 class Appointment {
-
   Appointment({
     required this.id,
     required this.creatorId,

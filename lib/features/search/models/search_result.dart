@@ -34,9 +34,8 @@ class SearchResult {
   Map<String, dynamic> toJson() => _$SearchResultToJson(this);
 
   @override
-  String toString() {
-    return 'SearchResult(id: $id, title: $title, type: $type, rating: $rating)';
-  }
+  String toString() =>
+      'SearchResult(id: $id, title: $title, type: $type, rating: $rating)';
 
   @override
   bool operator ==(Object other) {
@@ -81,15 +80,14 @@ class SearchFilters {
     bool? availability,
     double? distance,
     String? sortBy,
-  }) {
-    return SearchFilters(
-      location: location ?? this.location,
-      category: category ?? this.category,
-      minRating: minRating ?? this.minRating,
-      maxPrice: maxPrice ?? this.maxPrice,
-      availability: availability ?? this.availability,
-      distance: distance ?? this.distance,
-      sortBy: sortBy ?? this.sortBy,
-    );
-  }
-} 
+  }) =>
+      SearchFilters(
+        location: location ?? this.location,
+        category: category ?? this.category,
+        minRating: minRating ?? this.minRating,
+        maxPrice: maxPrice ?? this.maxPrice,
+        availability: availability ?? this.availability,
+        distance: distance ?? this.distance,
+        sortBy: sortBy ?? this.sortBy,
+      );
+}

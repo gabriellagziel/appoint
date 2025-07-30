@@ -6,7 +6,9 @@ import 'package:appoint/services/api/api_client.dart';
 import 'package:appoint/services/auth_service.dart';
 
 class MockFirebaseMessaging extends Mock implements FirebaseMessaging {}
+
 class MockApiClient extends Mock implements ApiClient {}
+
 class MockAuthService extends Mock implements AuthService {}
 
 void main() {
@@ -97,4 +99,4 @@ void main() {
       expect(true, isTrue); // Placeholder test
     });
   });
-} 
+}

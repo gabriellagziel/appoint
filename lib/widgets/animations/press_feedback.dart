@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 /// Provides a subtle scale animation when the child is pressed.
 class PressFeedback extends StatefulWidget {
   const PressFeedback({
-    required this.child, super.key,
+    required this.child,
+    super.key,
     this.onTap,
     this.duration = const Duration(milliseconds: 100),
     this.scale = 0.95,
@@ -36,16 +37,16 @@ class _PressFeedbackState extends State<PressFeedback> {
 
   @override
   Widget build(BuildContext context) => GestureDetector(
-      onTapDown: (_) => _setPressed(true),
-      onTapUp: (_) => _setPressed(false),
-      onTapCancel: () => _setPressed(false),
-      onTap: widget.onTap,
-      child: AnimatedScale(
-        scale: _pressed ? widget.scale : 1.0,
-        duration: widget.duration,
-        child: widget.child,
-      ),
-    );
+        onTapDown: (_) => _setPressed(true),
+        onTapUp: (_) => _setPressed(false),
+        onTapCancel: () => _setPressed(false),
+        onTap: widget.onTap,
+        child: AnimatedScale(
+          scale: _pressed ? widget.scale : 1.0,
+          duration: widget.duration,
+          child: widget.child,
+        ),
+      );
 }
 
 /// Example usage:

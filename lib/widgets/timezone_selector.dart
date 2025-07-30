@@ -28,26 +28,26 @@ class _TimezoneSelectorState extends State<TimezoneSelector> {
 
   @override
   Widget build(BuildContext context) => DropdownButtonFormField<String>(
-      decoration: const InputDecoration(
-        labelText: 'Timezone',
-        border: OutlineInputBorder(),
-        contentPadding: EdgeInsets.symmetric(
-          horizontal: AppSpacing.md,
-          vertical: AppSpacing.sm,
+        decoration: const InputDecoration(
+          labelText: 'Timezone',
+          border: OutlineInputBorder(),
+          contentPadding: EdgeInsets.symmetric(
+            horizontal: AppSpacing.md,
+            vertical: AppSpacing.sm,
+          ),
         ),
-      ),
-      value: _selectedTimezone,
-      style: AppTextStyles.body,
-      items: _timezones
-          .map((tz) => DropdownMenuItem(value: tz, child: Text(tz)))
-          .toList(),
-      onChanged: (value) {
-        setState(() {
-          _selectedTimezone = value;
-        });
-        if (value != null) {
-          // Removed debug print: debugPrint('Selected timezone: $value');
-        }
-      },
-    );
+        value: _selectedTimezone,
+        style: AppTextStyles.body,
+        items: _timezones
+            .map((tz) => DropdownMenuItem(value: tz, child: Text(tz)))
+            .toList(),
+        onChanged: (value) {
+          setState(() {
+            _selectedTimezone = value;
+          });
+          if (value != null) {
+            // Removed debug print: debugPrint('Selected timezone: $value');
+          }
+        },
+      );
 }

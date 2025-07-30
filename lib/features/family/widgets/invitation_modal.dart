@@ -41,7 +41,9 @@ class _InvitationModalState extends ConsumerState<InvitationModal> {
       }
 
       await familyService.inviteChild(
-          authState.uid, _emailController.text.trim(),);
+        authState.uid,
+        _emailController.text.trim(),
+      );
 
       if (mounted) {
         Navigator.of(context).pop();
@@ -64,30 +66,30 @@ class _InvitationModalState extends ConsumerState<InvitationModal> {
 
   @override
   Widget build(BuildContext context) => AlertDialog(
-      title: const Text('Invite Child'),
-      content: TextField(
-        controller: _emailController,
-        decoration: const InputDecoration(
-          labelText: 'Child Email',
-          hintText: "Enter child's email address",
+        title: const Text('Invite Child'),
+        content: TextField(
+          controller: _emailController,
+          decoration: const InputDecoration(
+            labelText: 'Child Email',
+            hintText: "Enter child's email address",
+          ),
+          keyboardType: TextInputType.emailAddress,
         ),
-        keyboardType: TextInputType.emailAddress,
-      ),
-      actions: [
-        TextButton(
-          onPressed: _isLoading ? null : () => Navigator.of(context).pop(),
-          child: const Text('Cancel'),
-        ),
-        TextButton(
-          onPressed: _isLoading ? null : _sendInvitation,
-          child: _isLoading
-              ? const SizedBox(
-                  width: 16,
-                  height: 16,
-                  child: CircularProgressIndicator(strokeWidth: 2),
-                )
-              : const Text('Send'),
-        ),
-      ],
-    );
+        actions: [
+          TextButton(
+            onPressed: _isLoading ? null : () => Navigator.of(context).pop(),
+            child: const Text('Cancel'),
+          ),
+          TextButton(
+            onPressed: _isLoading ? null : _sendInvitation,
+            child: _isLoading
+                ? const SizedBox(
+                    width: 16,
+                    height: 16,
+                    child: CircularProgressIndicator(strokeWidth: 2),
+                  )
+                : const Text('Send'),
+          ),
+        ],
+      );
 }

@@ -5,12 +5,10 @@ import 'package:flutter_test/flutter_test.dart';
 import 'firebase_test_helper.dart';
 
 void main() {
-  setUpAll(() async {
-  });
+  setUpAll(() async {});
 
   group('ParentalSettingsScreen', () {
-    testWidgets('shows toggle and manage accounts button',
-        (tester) async {
+    testWidgets('shows toggle and manage accounts button', (tester) async {
       await tester.pumpWidget(
         const MaterialApp(home: ParentalSettingsScreen()),
       );

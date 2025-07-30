@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ConsentControls extends ConsumerStatefulWidget {
-
   const ConsentControls({
-    required this.familyLink, super.key,
+    required this.familyLink,
+    super.key,
     this.onConsentChanged,
   });
   final FamilyLink familyLink;
@@ -28,7 +28,7 @@ class _ConsentControlsState extends ConsumerState<ConsentControls> {
 
   void _checkConsentStatus() {
     // Check if current user has already consented
-    _hasConsented = widget.familyLink.consentedAt.isNotEmpty;
+    _hasConsented = widget.familyLink.consentedAt != null;
   }
 
   Future<void> _updateConsent(bool grant) async {
@@ -51,9 +51,11 @@ class _ConsentControlsState extends ConsumerState<ConsentControls> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(grant
-                ? 'Consent granted successfully!'
-                : 'Consent revoked successfully!'),
+            content: Text(
+              grant
+                  ? 'Consent granted successfully!'
+                  : 'Consent revoked successfully!',
+            ),
           ),
         );
       }
@@ -61,8 +63,7 @@ class _ConsentControlsState extends ConsumerState<ConsentControls> {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Failed to update consent: $e')),
       );
-    }
-    finally {
+    } finally {
       if (mounted) {
         setState(() {
           _isLoading = false;
@@ -73,75 +74,77 @@ class _ConsentControlsState extends ConsumerState<ConsentControls> {
 
   @override
   Widget build(BuildContext context) => Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Icon(
-                  _hasConsented ? Icons.check_circle : Icons.pending,
-                  color: _hasConsented ? Colors.green : Colors.orange,
-                ),
-                const SizedBox(width: 8),
-                const Text(
-                  'Parental Consent',
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 8),
-            Text(
-              _hasConsented
-                  ? 'You have granted consent for this family link.'
-                  : 'You have not yet granted consent for this family link.',
-              style: TextStyle(
-                color: _hasConsented ? Colors.green : Colors.orange),
-            ),
-            const SizedBox(height: 16),
-            if (_isLoading)
-              const Center(child: CircularProgressIndicator())
-            else
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
               Row(
                 children: [
-                  Expanded(
-                    child: ElevatedButton(
-                      onPressed:
-                          _hasConsented ? null : () => _updateConsent(true),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.green,
-                        foregroundColor: Colors.white,
-                      ),
-                      child: const Text('Grant Consent'),
-                    ),
+                  Icon(
+                    _hasConsented ? Icons.check_circle : Icons.pending,
+                    color: _hasConsented ? Colors.green : Colors.orange,
                   ),
                   const SizedBox(width: 8),
-                  Expanded(
-                    child: OutlinedButton(
-                      onPressed:
-                          _hasConsented ? () => _updateConsent(false) : null,
-                      style: OutlinedButton.styleFrom(
-                        foregroundColor: Colors.red),
-                      child: const Text('Revoke Consent'),
+                  const Text(
+                    'Parental Consent',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ],
               ),
-            const SizedBox(height: 8),
-            const Text(
-              'Note: Both parents must grant consent for full access.',
-              style: TextStyle(
-                fontSize: 12,
-                color: Colors.grey,
-                fontStyle: FontStyle.italic,
+              const SizedBox(height: 8),
+              Text(
+                _hasConsented
+                    ? 'You have granted consent for this family link.'
+                    : 'You have not yet granted consent for this family link.',
+                style: TextStyle(
+                  color: _hasConsented ? Colors.green : Colors.orange,
+                ),
               ),
-            ),
-          ],
+              const SizedBox(height: 16),
+              if (_isLoading)
+                const Center(child: CircularProgressIndicator())
+              else
+                Row(
+                  children: [
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed:
+                            _hasConsented ? null : () => _updateConsent(true),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.green,
+                          foregroundColor: Colors.white,
+                        ),
+                        child: const Text('Grant Consent'),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: OutlinedButton(
+                        onPressed:
+                            _hasConsented ? () => _updateConsent(false) : null,
+                        style: OutlinedButton.styleFrom(
+                          foregroundColor: Colors.red,
+                        ),
+                        child: const Text('Revoke Consent'),
+                      ),
+                    ),
+                  ],
+                ),
+              const SizedBox(height: 8),
+              const Text(
+                'Note: Both parents must grant consent for full access.',
+                style: TextStyle(
+                  fontSize: 12,
+                  color: Colors.grey,
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 }

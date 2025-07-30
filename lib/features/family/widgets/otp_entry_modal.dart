@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class OtpEntryModal extends ConsumerStatefulWidget {
-  const OtpEntryModal(
-      {required this.parentId, required this.childContact, super.key,});
+  const OtpEntryModal({
+    required this.parentId,
+    required this.childContact,
+    super.key,
+  });
   final String parentId;
   final String childContact;
 
@@ -50,8 +53,10 @@ class _OtpEntryModalState extends ConsumerState<OtpEntryModal> {
           if (state == OtpState.error)
             const Padding(
               padding: EdgeInsets.only(top: 8),
-              child: Text('Invalid code, please try again.',
-                  style: TextStyle(color: Colors.red),),
+              child: Text(
+                'Invalid code, please try again.',
+                style: TextStyle(color: Colors.red),
+              ),
             ),
         ],
       ),

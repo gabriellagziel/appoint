@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class PrivacyRequestWidget extends ConsumerStatefulWidget {
-
   const PrivacyRequestWidget({
-    required this.childId, super.key,
+    required this.childId,
+    super.key,
   });
   final String childId;
 
@@ -30,8 +30,7 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
           .read(familyServiceProvider)
           .fetchPrivacyRequests(widget.childId);
       setState(() {
-        _hasActiveRequest =
-            requests.any((req) => req.status == 'pending');
+        _hasActiveRequest = requests.any((req) => req.status == 'pending');
       });
     } catch (e) {
       // Handle error silently for now
@@ -65,8 +64,7 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
           backgroundColor: Colors.red,
         ),
       );
-    }
-    finally {
+    } finally {
       if (mounted) {
         setState(() {
           _isLoading = false;
@@ -77,62 +75,63 @@ class _PrivacyRequestWidgetState extends ConsumerState<PrivacyRequestWidget> {
 
   @override
   Widget build(BuildContext context) => Card(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Icon(
-                  _hasActiveRequest ? Icons.pending : Icons.privacy_tip,
-                  color: _hasActiveRequest ? Colors.orange : Colors.blue,
-                ),
-                const SizedBox(width: 8),
-                const Text(
-                  'Privacy Request',
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Icon(
+                    _hasActiveRequest ? Icons.pending : Icons.privacy_tip,
+                    color: _hasActiveRequest ? Colors.orange : Colors.blue,
                   ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 8),
-            Text(
-              _hasActiveRequest
-                  ? 'You have a pending privacy request. Waiting for parent approval.'
-                  : 'Request a private session from your parents.',
-              style: TextStyle(
-                color: _hasActiveRequest ? Colors.orange : Colors.grey[600]),
-            ),
-            const SizedBox(height: 16),
-            if (_isLoading)
-              const Center(child: CircularProgressIndicator())
-            else if (!_hasActiveRequest)
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton.icon(
-                  onPressed: _sendPrivacyRequest,
-                  icon: const Icon(Icons.privacy_tip),
-                  label: const Text('Request Private Session'),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
-                    foregroundColor: Colors.white,
+                  const SizedBox(width: 8),
+                  const Text(
+                    'Privacy Request',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              Text(
+                _hasActiveRequest
+                    ? 'You have a pending privacy request. Waiting for parent approval.'
+                    : 'Request a private session from your parents.',
+                style: TextStyle(
+                  color: _hasActiveRequest ? Colors.orange : Colors.grey[600],
                 ),
               ),
-            const SizedBox(height: 8),
-            const Text(
-              'This will notify your parents that you want to use the app privately.',
-              style: TextStyle(
-                fontSize: 12,
-                color: Colors.grey,
-                fontStyle: FontStyle.italic,
+              const SizedBox(height: 16),
+              if (_isLoading)
+                const Center(child: CircularProgressIndicator())
+              else if (!_hasActiveRequest)
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton.icon(
+                    onPressed: _sendPrivacyRequest,
+                    icon: const Icon(Icons.privacy_tip),
+                    label: const Text('Request Private Session'),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue,
+                      foregroundColor: Colors.white,
+                    ),
+                  ),
+                ),
+              const SizedBox(height: 8),
+              const Text(
+                'This will notify your parents that you want to use the app privately.',
+                style: TextStyle(
+                  fontSize: 12,
+                  color: Colors.grey,
+                  fontStyle: FontStyle.italic,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
-      ),
-    );
+      );
 }

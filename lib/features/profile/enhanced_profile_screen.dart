@@ -2,26 +2,24 @@ import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final userProfileProvider = StateProvider<UserProfile>((ref) => const UserProfile(
-  id: 'user_123',
-  name: 'John Doe',
-  email: 'john.doe@example.com',
-  phone: '+1 (555) 123-4567',
-  avatar: null,
-  userType: UserType.family,
-  familyId: 'family_456',
-  preferences: UserPreferences(
-    notifications: true,
-    locationSharing: false,
-    language: 'en',
-    theme: 'system',
-  ),
-  stats: UserStats(
-    totalBookings: 25,
-    totalPoints: 1250,
-    memberSince: DateTime(2023, 1, 15),
-  ),
-));
+final userProfileProvider = StateProvider<UserProfile>((ref) => UserProfile(
+      id: 'user_123',
+      name: 'John Doe',
+      email: 'john.doe@example.com',
+      phone: '+1 (555) 123-4567',
+      userType: UserType.family,
+      preferences: UserPreferences(
+        notifications: true,
+        locationSharing: false,
+        language: 'en',
+        theme: 'light',
+      ),
+      stats: UserStats(
+        totalBookings: 25,
+        totalPoints: 1250,
+        memberSince: DateTime(2023, 1, 15),
+      ),
+    ));
 
 class UserProfile {
   const UserProfile({
@@ -29,11 +27,11 @@ class UserProfile {
     required this.name,
     required this.email,
     required this.phone,
-    this.avatar,
     required this.userType,
-    this.familyId,
     required this.preferences,
     required this.stats,
+    this.avatar,
+    this.familyId,
   });
 
   final String id;
@@ -116,197 +114,206 @@ class EnhancedProfileScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildProfileHeader(BuildContext context, UserProfile profile) {
-    return Card(
-      margin: const EdgeInsets.all(16),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          children: [
-            CircleAvatar(
-              radius: 50,
-              backgroundColor: Theme.of(context).primaryColor,
-              backgroundImage: profile.avatar != null ? NetworkImage(profile.avatar!) : null,
-              child: profile.avatar == null
-                  ? Text(
-                      profile.name.split(' ').map((n) => n[0]).join(''),
-                      style: const TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
-                    )
-                  : null,
-            ),
-            const SizedBox(height: 16),
-            Text(
-              profile.name,
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 4),
-            Text(
-              profile.email,
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                color: Colors.grey[600]),
-            ),
-            const SizedBox(height: 8),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
-              decoration: BoxDecoration(
-                color: _getUserTypeColor(profile.userType),
-                borderRadius: BorderRadius.circular(12),
+  Widget _buildProfileHeader(BuildContext context, UserProfile profile) => Card(
+        margin: const EdgeInsets.all(16),
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              CircleAvatar(
+                radius: 50,
+                backgroundColor: Theme.of(context).primaryColor,
+                backgroundImage: profile.avatar != null
+                    ? NetworkImage(profile.avatar!)
+                    : null,
+                child: profile.avatar == null
+                    ? Text(
+                        profile.name.split(' ').map((n) => n[0]).join(),
+                        style: const TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      )
+                    : null,
               ),
-              child: Text(
-                _getUserTypeText(profile.userType),
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontSize: 12,
-                  fontWeight: FontWeight.bold,
+              const SizedBox(height: 16),
+              Text(
+                profile.name,
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                profile.email,
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: Colors.grey[600],
+                    ),
+              ),
+              const SizedBox(height: 8),
+              Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                decoration: BoxDecoration(
+                  color: _getUserTypeColor(profile.userType),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Text(
+                  _getUserTypeText(profile.userType),
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
-      ),
-    );
-  }
+      );
 
-  Widget _buildStatsSection(BuildContext context, UserStats stats) {
-    return Card(
-      margin: const EdgeInsets.symmetric(horizontal: 16),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
+  Widget _buildStatsSection(BuildContext context, UserStats stats) => Card(
+        margin: const EdgeInsets.symmetric(horizontal: 16),
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Your Stats',
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+              ),
+              const SizedBox(height: 16),
+              Row(
+                children: [
+                  Expanded(
+                    child: _buildStatItem(
+                      context,
+                      Icons.calendar_today,
+                      'Total Bookings',
+                      stats.totalBookings.toString(),
+                      Colors.blue,
+                    ),
+                  ),
+                  Expanded(
+                    child: _buildStatItem(
+                      context,
+                      Icons.stars,
+                      'Points Earned',
+                      stats.totalPoints.toString(),
+                      Colors.orange,
+                    ),
+                  ),
+                  Expanded(
+                    child: _buildStatItem(
+                      context,
+                      Icons.person_add,
+                      'Member Since',
+                      '${stats.memberSince.month}/${stats.memberSince.year}',
+                      Colors.green,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      );
+
+  Widget _buildStatItem(BuildContext context, IconData icon, String label,
+          String value, Color color) =>
+      Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: color.withValues(alpha: 0.1),
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: Icon(icon, color: color, size: 24),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            value,
+            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                ),
+          ),
+          Text(
+            label,
+            style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                  color: Colors.grey[600],
+                ),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      );
+
+  Widget _buildQuickActions(BuildContext context) => Card(
+        margin: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Your Stats',
-              style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold),
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Text(
+                'Quick Actions',
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+              ),
             ),
-            const SizedBox(height: 16),
-            Row(
+            GridView.count(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              crossAxisCount: 2,
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              childAspectRatio: 2.5,
               children: [
-                Expanded(
-                  child: _buildStatItem(
-                    context,
-                    Icons.calendar_today,
-                    'Total Bookings',
-                    stats.totalBookings.toString(),
-                    Colors.blue,
-                  ),
-                ),
-                Expanded(
-                  child: _buildStatItem(
-                    context,
-                    Icons.stars,
-                    'Points Earned',
-                    stats.totalPoints.toString(),
-                    Colors.orange,
-                  ),
-                ),
-                Expanded(
-                  child: _buildStatItem(
-                    context,
-                    Icons.person_add,
-                    'Member Since',
-                    '${stats.memberSince.month}/${stats.memberSince.year}',
-                    Colors.green,
-                  ),
-                ),
+                _buildActionTile(context, Icons.search, 'Search Services',
+                    () => Navigator.pushNamed(context, '/search')),
+                _buildActionTile(context, Icons.calendar_today, 'My Calendar',
+                    () => Navigator.pushNamed(context, '/calendar')),
+                _buildActionTile(context, Icons.chat, 'Messages',
+                    () => Navigator.pushNamed(context, '/messages')),
+                _buildActionTile(context, Icons.stars, 'Rewards',
+                    () => Navigator.pushNamed(context, '/rewards')),
+                _buildActionTile(context, Icons.payment, 'Subscriptions',
+                    () => Navigator.pushNamed(context, '/subscription')),
+                _buildActionTile(context, Icons.analytics, 'Analytics',
+                    () => Navigator.pushNamed(context, '/analytics')),
               ],
             ),
           ],
         ),
-      ),
-    );
-  }
+      );
 
-  Widget _buildStatItem(BuildContext context, IconData icon, String label, String value, Color color) {
-    return Column(
-      children: [
-        Container(
-          padding: const EdgeInsets.all(12),
-          decoration: BoxDecoration(
-            color: color.withOpacity(0.1),
-            borderRadius: BorderRadius.circular(8),
-          ),
-          child: Icon(icon, color: color, size: 24),
-        ),
-        const SizedBox(height: 8),
-        Text(
-          value,
-          style: Theme.of(context).textTheme.titleMedium?.copyWith(
-            fontWeight: FontWeight.bold),
-        ),
-        Text(
-          label,
-          style: Theme.of(context).textTheme.bodySmall?.copyWith(
-            color: Colors.grey[600]),
-          textAlign: TextAlign.center,
-        ),
-      ],
-    );
-  }
-
-  Widget _buildQuickActions(BuildContext context) {
-    return Card(
-      margin: const EdgeInsets.all(16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: Text(
-              'Quick Actions',
-              style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold),
+  Widget _buildActionTile(BuildContext context, IconData icon, String label,
+          VoidCallback onTap) =>
+      Card(
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(8),
+          child: Padding(
+            padding: const EdgeInsets.all(12),
+            child: Row(
+              children: [
+                Icon(icon, color: Theme.of(context).primaryColor),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Text(
+                    label,
+                    style: const TextStyle(fontWeight: FontWeight.w500),
+                  ),
+                ),
+              ],
             ),
           ),
-          GridView.count(
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            crossAxisCount: 2,
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            childAspectRatio: 2.5,
-            children: [
-              _buildActionTile(context, Icons.search, 'Search Services', () => Navigator.pushNamed(context, '/search')),
-              _buildActionTile(context, Icons.calendar_today, 'My Calendar', () => Navigator.pushNamed(context, '/calendar')),
-              _buildActionTile(context, Icons.chat, 'Messages', () => Navigator.pushNamed(context, '/messages')),
-              _buildActionTile(context, Icons.stars, 'Rewards', () => Navigator.pushNamed(context, '/rewards')),
-              _buildActionTile(context, Icons.payment, 'Subscriptions', () => Navigator.pushNamed(context, '/subscription')),
-              _buildActionTile(context, Icons.analytics, 'Analytics', () => Navigator.pushNamed(context, '/analytics')),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildActionTile(BuildContext context, IconData icon, String label, VoidCallback onTap) {
-    return Card(
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(8),
-        child: Padding(
-          padding: const EdgeInsets.all(12),
-          child: Row(
-            children: [
-              Icon(icon, color: Theme.of(context).primaryColor),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Text(
-                  label,
-                  style: const TextStyle(fontWeight: FontWeight.w500),
-                ),
-              ),
-            ],
-          ),
         ),
-      ),
-    );
-  }
+      );
 
   Widget _buildFamilySection(BuildContext context, UserProfile profile) {
     if (profile.familyId == null) {
@@ -322,12 +329,14 @@ class EnhancedProfileScreen extends ConsumerWidget {
             padding: const EdgeInsets.all(16),
             child: Row(
               children: [
-                Icon(Icons.family_restroom, color: Theme.of(context).primaryColor),
+                Icon(Icons.family_restroom,
+                    color: Theme.of(context).primaryColor),
                 const SizedBox(width: 8),
                 Text(
                   'Family',
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.bold),
+                        fontWeight: FontWeight.bold,
+                      ),
                 ),
                 const Spacer(),
                 TextButton(
@@ -365,7 +374,8 @@ class EnhancedProfileScreen extends ConsumerWidget {
                     ],
                   ),
                 ),
-                Icon(Icons.arrow_forward_ios, size: 16, color: Colors.grey[400]),
+                Icon(Icons.arrow_forward_ios,
+                    size: 16, color: Colors.grey[400]),
               ],
             ),
           ),
@@ -375,85 +385,87 @@ class EnhancedProfileScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildPreferencesSection(BuildContext context, WidgetRef ref, UserPreferences preferences) {
-    return Card(
-      margin: const EdgeInsets.all(16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: Text(
-              'Preferences',
-              style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold),
+  Widget _buildPreferencesSection(
+          BuildContext context, WidgetRef ref, UserPreferences preferences) =>
+      Card(
+        margin: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Text(
+                'Preferences',
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+              ),
             ),
-          ),
-          SwitchListTile(
-            title: const Text('Notifications'),
-            subtitle: const Text('Receive push notifications'),
-            value: preferences.notifications,
-            onChanged: (value) => _updatePreference(ref, 'notifications', value),
-          ),
-          SwitchListTile(
-            title: const Text('Location Sharing'),
-            subtitle: const Text('Share location for nearby services'),
-            value: preferences.locationSharing,
-            onChanged: (value) => _updatePreference(ref, 'locationSharing', value),
-          ),
-          ListTile(
-            title: const Text('Language'),
-            subtitle: Text(_getLanguageText(preferences.language)),
-            trailing: const Icon(Icons.arrow_forward_ios),
-            onTap: () => _changeLanguage(context, ref),
-          ),
-          ListTile(
-            title: const Text('Theme'),
-            subtitle: Text(_getThemeText(preferences.theme)),
-            trailing: const Icon(Icons.arrow_forward_ios),
-            onTap: () => _changeTheme(context, ref),
-          ),
-        ],
-      ),
-    );
-  }
+            SwitchListTile(
+              title: const Text('Notifications'),
+              subtitle: const Text('Receive push notifications'),
+              value: preferences.notifications,
+              onChanged: (value) =>
+                  _updatePreference(ref, 'notifications', value),
+            ),
+            SwitchListTile(
+              title: const Text('Location Sharing'),
+              subtitle: const Text('Share location for nearby services'),
+              value: preferences.locationSharing,
+              onChanged: (value) =>
+                  _updatePreference(ref, 'locationSharing', value),
+            ),
+            ListTile(
+              title: const Text('Language'),
+              subtitle: Text(_getLanguageText(preferences.language)),
+              trailing: const Icon(Icons.arrow_forward_ios),
+              onTap: () => _changeLanguage(context, ref),
+            ),
+            ListTile(
+              title: const Text('Theme'),
+              subtitle: Text(_getThemeText(preferences.theme)),
+              trailing: const Icon(Icons.arrow_forward_ios),
+              onTap: () => _changeTheme(context, ref),
+            ),
+          ],
+        ),
+      );
 
-  Widget _buildAccountSection(BuildContext context) {
-    return Card(
-      margin: const EdgeInsets.all(16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: Text(
-              'Account',
-              style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                fontWeight: FontWeight.bold),
+  Widget _buildAccountSection(BuildContext context) => Card(
+        margin: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Text(
+                'Account',
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      fontWeight: FontWeight.bold,
+                    ),
+              ),
             ),
-          ),
-          ListTile(
-            leading: const Icon(Icons.security),
-            title: const Text('Security'),
-            trailing: const Icon(Icons.arrow_forward_ios),
-            onTap: () => _showSecuritySettings(context),
-          ),
-          ListTile(
-            leading: const Icon(Icons.backup),
-            title: const Text('Backup & Restore'),
-            trailing: const Icon(Icons.arrow_forward_ios),
-            onTap: () => _showBackupSettings(context),
-          ),
-          ListTile(
-            leading: const Icon(Icons.delete),
-            title: const Text('Delete Account'),
-            trailing: const Icon(Icons.arrow_forward_ios),
-            onTap: () => _showDeleteAccountDialog(context),
-          ),
-        ],
-      ),
-    );
-  }
+            ListTile(
+              leading: const Icon(Icons.security),
+              title: const Text('Security'),
+              trailing: const Icon(Icons.arrow_forward_ios),
+              onTap: () => _showSecuritySettings(context),
+            ),
+            ListTile(
+              leading: const Icon(Icons.backup),
+              title: const Text('Backup & Restore'),
+              trailing: const Icon(Icons.arrow_forward_ios),
+              onTap: () => _showBackupSettings(context),
+            ),
+            ListTile(
+              leading: const Icon(Icons.delete),
+              title: const Text('Delete Account'),
+              trailing: const Icon(Icons.arrow_forward_ios),
+              onTap: () => _showDeleteAccountDialog(context),
+            ),
+          ],
+        ),
+      );
 
   Color _getUserTypeColor(UserType userType) {
     switch (userType) {
@@ -503,10 +515,10 @@ class EnhancedProfileScreen extends ConsumerWidget {
     }
   }
 
-  void _updatePreference(WidgetRef ref, String key, dynamic value) {
+  void _updatePreference(WidgetRef ref, String key, value) {
     final profile = ref.read(userProfileProvider);
     final preferences = profile.preferences;
-    
+
     UserPreferences newPreferences;
     switch (key) {
       case 'notifications':
@@ -516,7 +528,6 @@ class EnhancedProfileScreen extends ConsumerWidget {
           language: preferences.language,
           theme: preferences.theme,
         );
-        break;
       case 'locationSharing':
         newPreferences = UserPreferences(
           notifications: preferences.notifications,
@@ -524,7 +535,6 @@ class EnhancedProfileScreen extends ConsumerWidget {
           language: preferences.language,
           theme: preferences.theme,
         );
-        break;
       default:
         return;
     }
@@ -583,7 +593,8 @@ class EnhancedProfileScreen extends ConsumerWidget {
       builder: (context) => AlertDialog(
         title: const Text('Delete Account'),
         content: const Text(
-          'Are you sure you want to delete your account? This action cannot be undone.'),
+          'Are you sure you want to delete your account? This action cannot be undone.',
+        ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
@@ -604,4 +615,4 @@ class EnhancedProfileScreen extends ConsumerWidget {
       ),
     );
   }
-} 
+}

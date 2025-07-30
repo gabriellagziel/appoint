@@ -69,8 +69,7 @@ class BusinessHeaderWidget extends ConsumerWidget {
                           child: Image.network(
                             businessProfile.logoUrl!,
                             fit: BoxFit.cover,
-                            errorBuilder: (context, error, stackTrace) =>
-                                Icon(
+                            errorBuilder: (context, error, stackTrace) => Icon(
                               Icons.business,
                               size: compact ? 24 : 32,
                               color: Colors.grey.shade400,
@@ -84,7 +83,7 @@ class BusinessHeaderWidget extends ConsumerWidget {
                         ),
                 ),
                 const SizedBox(width: 12),
-                
+
                 // Business info
                 Expanded(
                   child: Column(
@@ -93,9 +92,9 @@ class BusinessHeaderWidget extends ConsumerWidget {
                       Text(
                         businessProfile.name,
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                          fontWeight: FontWeight.bold,
-                          fontSize: compact ? 16 : 20,
-                        ),
+                              fontWeight: FontWeight.bold,
+                              fontSize: compact ? 16 : 20,
+                            ),
                       ),
                       if (businessProfile.phone.isNotEmpty)
                         Text(
@@ -118,10 +117,11 @@ class BusinessHeaderWidget extends ConsumerWidget {
                     ],
                   ),
                 ),
-                
+
                 // Verified badge (for future use)
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
                     color: Colors.green.shade100,
                     borderRadius: BorderRadius.circular(12),
@@ -149,7 +149,7 @@ class BusinessHeaderWidget extends ConsumerWidget {
                 ),
               ],
             ),
-            
+
             // Business description
             if (showDescription && businessProfile.description.isNotEmpty) ...[
               const SizedBox(height: 12),
@@ -164,39 +164,48 @@ class BusinessHeaderWidget extends ConsumerWidget {
                 overflow: TextOverflow.ellipsis,
               ),
             ],
-            
+
             // Services
             if (showServices && businessProfile.services.isNotEmpty) ...[
               const SizedBox(height: 12),
               Wrap(
                 spacing: 6,
                 runSpacing: 6,
-                children: businessProfile.services.take(compact ? 3 : 5).map((service) => Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                  decoration: BoxDecoration(
-                    color: Colors.blue.shade100,
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Text(
-                    service,
-                    style: TextStyle(
-                      color: Colors.blue.shade800,
-                      fontSize: 11,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                )).toList(),
+                children: businessProfile.services
+                    .take(compact ? 3 : 5)
+                    .map(
+                      (service) => Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 8, vertical: 4),
+                        decoration: BoxDecoration(
+                          color: Colors.blue.shade100,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Text(
+                          service,
+                          style: TextStyle(
+                            color: Colors.blue.shade800,
+                            fontSize: 11,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    )
+                    .toList(),
               ),
             ],
-            
+
             // Business hours
             if (showHours && businessProfile.businessHours.isNotEmpty) ...[
               const SizedBox(height: 12),
-              _buildBusinessHours(context, businessProfile.businessHours, compact),
+              _buildBusinessHours(
+                  context, businessProfile.businessHours, compact),
             ],
-            
+
             // Contact information
-            if (!compact && (businessProfile.email.isNotEmpty || businessProfile.website.isNotEmpty)) ...[
+            if (!compact &&
+                (businessProfile.email.isNotEmpty ||
+                    businessProfile.website.isNotEmpty)) ...[
               const SizedBox(height: 12),
               Row(
                 children: [
@@ -211,7 +220,8 @@ class BusinessHeaderWidget extends ConsumerWidget {
                       ),
                     ),
                   ],
-                  if (businessProfile.email.isNotEmpty && businessProfile.website.isNotEmpty)
+                  if (businessProfile.email.isNotEmpty &&
+                      businessProfile.website.isNotEmpty)
                     Text(
                       ' • ',
                       style: TextStyle(color: Colors.grey.shade400),
@@ -220,7 +230,9 @@ class BusinessHeaderWidget extends ConsumerWidget {
                     Icon(Icons.language, size: 16, color: Colors.grey.shade600),
                     const SizedBox(width: 4),
                     Text(
-                      businessProfile.website.replaceAll('https://', '').replaceAll('http://', ''),
+                      businessProfile.website
+                          .replaceAll('https://', '')
+                          .replaceAll('http://', ''),
                       style: TextStyle(
                         color: Colors.blue.shade600,
                         fontSize: 12,
@@ -231,7 +243,7 @@ class BusinessHeaderWidget extends ConsumerWidget {
                 ],
               ),
             ],
-            
+
             // Attribution - Required for all business-branded content
             const SizedBox(height: 12),
             const AppAttributionCompact(),
@@ -241,16 +253,25 @@ class BusinessHeaderWidget extends ConsumerWidget {
     );
   }
 
-  Widget _buildBusinessHours(BuildContext context, Map<String, dynamic> businessHours, bool compact) {
+  Widget _buildBusinessHours(
+      BuildContext context, Map<String, dynamic> businessHours, bool compact) {
     final today = DateTime.now().weekday;
-    final dayNames = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+    final dayNames = [
+      'monday',
+      'tuesday',
+      'wednesday',
+      'thursday',
+      'friday',
+      'saturday',
+      'sunday'
+    ];
     final todayKey = dayNames[today - 1];
     final todayHours = businessHours[todayKey] as Map<String, dynamic>?;
-    
+
     if (todayHours == null) return const SizedBox.shrink();
-    
+
     final isOpenToday = todayHours['closed'] != true;
-    
+
     return Container(
       padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
@@ -270,7 +291,7 @@ class BusinessHeaderWidget extends ConsumerWidget {
           ),
           const SizedBox(width: 6),
           Text(
-            isOpenToday 
+            isOpenToday
                 ? 'Open today: ${todayHours['open']} - ${todayHours['close']}'
                 : 'Closed today',
             style: TextStyle(
@@ -286,7 +307,9 @@ class BusinessHeaderWidget extends ConsumerWidget {
 }
 
 // Provider for fetching specific business profile by ID (for future use)
-final businessProfileByIdProvider = FutureProvider.family<BusinessProfile?, String>((ref, businessId) async {
+final FutureProviderFamily<BusinessProfile?, String>
+    businessProfileByIdProvider =
+    FutureProvider.family<BusinessProfile?, String>((ref, businessId) async {
   try {
     final service = BusinessProfileService();
     return await service.fetchProfile();

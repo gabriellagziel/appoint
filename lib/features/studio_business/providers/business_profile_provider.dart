@@ -37,7 +37,7 @@ class BusinessProfileNotifier extends StateNotifier<BusinessProfile?> {
     String? coverImageUrl,
   }) {
     if (state == null) return;
-    
+
     state = state!.copyWith(
       name: name ?? state!.name,
       description: description ?? state!.description,

@@ -1,4 +1,5 @@
 import 'package:appoint/models/hive_adapters.dart';
+import 'package:appoint/models/booking.dart';
 import 'package:appoint/services/offline_booking_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -13,7 +14,7 @@ Future<void> initializeOfflineBookingSystem() async {
   Hive.registerAdapter(OfflineServiceOfferingAdapter());
 
   // Initialize the offline booking repository
-  offlineRepository = OfflineBookingRepository();
+  final offlineRepository = OfflineBookingRepository();
   await offlineRepository.initialize();
 
   // Store the repository instance globally or in your dependency injection
@@ -28,7 +29,6 @@ Future<void> initializeOfflineBookingSystem() async {
 
 // Example usage in a widget or service:
 class BookingService {
-
   BookingService(this._repository);
   final OfflineBookingRepository _repository;
 

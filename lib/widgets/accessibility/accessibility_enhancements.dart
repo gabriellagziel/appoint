@@ -3,25 +3,27 @@ import 'package:flutter/material.dart';
 /// Enhanced accessibility utilities and components
 class AccessibilityEnhancements {
   /// Check if the app is running with accessibility features enabled
-  static bool get isAccessibilityEnabled => WidgetsBinding
-            .instance.window.accessibilityFeatures.accessibleNavigation ||
-        WidgetsBinding.instance.window.accessibilityFeatures.invertColors ||
-        WidgetsBinding.instance.window.accessibilityFeatures.reduceMotion;
+  static bool get isAccessibilityEnabled =>
+      WidgetsBinding
+          .instance.window.accessibilityFeatures.accessibleNavigation ||
+      WidgetsBinding.instance.window.accessibilityFeatures.invertColors ||
+      WidgetsBinding.instance.window.accessibilityFeatures.reduceMotion;
 
   /// Check if screen reader is active
-  static bool get isScreenReaderActive => WidgetsBinding
-        .instance.window.accessibilityFeatures.accessibleNavigation;
+  static bool get isScreenReaderActive =>
+      WidgetsBinding.instance.window.accessibilityFeatures.accessibleNavigation;
 
   /// Check if high contrast is enabled
-  static bool get isHighContrastEnabled => WidgetsBinding.instance.window.accessibilityFeatures.highContrast;
+  static bool get isHighContrastEnabled =>
+      WidgetsBinding.instance.window.accessibilityFeatures.highContrast;
 
   /// Check if reduced motion is preferred
-  static bool get isReducedMotionPreferred => WidgetsBinding.instance.window.accessibilityFeatures.reduceMotion;
+  static bool get isReducedMotionPreferred =>
+      WidgetsBinding.instance.window.accessibilityFeatures.reduceMotion;
 }
 
 /// Enhanced accessible text widget with proper semantics
 class AccessibleText extends StatelessWidget {
-
   const AccessibleText(
     this.text, {
     super.key,
@@ -42,7 +44,7 @@ class AccessibleText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
 
     return Semantics(
       label: semanticLabel ?? text,
@@ -62,9 +64,10 @@ class AccessibleText extends StatelessWidget {
 
 /// Enhanced accessible image widget
 class AccessibleImage extends StatelessWidget {
-
   const AccessibleImage({
-    required this.imageUrl, required this.altText, super.key,
+    required this.imageUrl,
+    required this.altText,
+    super.key,
     this.width,
     this.height,
     this.fit,
@@ -81,31 +84,32 @@ class AccessibleImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: altText,
-      image: true,
-      child: Image.network(
-        imageUrl,
-        width: width,
-        height: height,
-        fit: fit,
-        loadingBuilder: (context, child, loadingProgress) {
-          if (loadingProgress == null) return child;
-          return placeholder ?? const CircularProgressIndicator();
-        },
-        errorBuilder: (context, error, stackTrace) => errorWidget ??
+        label: altText,
+        image: true,
+        child: Image.network(
+          imageUrl,
+          width: width,
+          height: height,
+          fit: fit,
+          loadingBuilder: (context, child, loadingProgress) {
+            if (loadingProgress == null) return child;
+            return placeholder ?? const CircularProgressIndicator();
+          },
+          errorBuilder: (context, error, stackTrace) =>
+              errorWidget ??
               Container(
                 color: Colors.grey[200],
                 child: const Icon(Icons.broken_image, color: Colors.grey),
               ),
-      ),
-    );
+        ),
+      );
 }
 
 /// Enhanced accessible form field with proper labels and hints
 class AccessibleFormField extends StatelessWidget {
-
   const AccessibleFormField({
-    required this.label, super.key,
+    required this.label,
+    super.key,
     this.hint,
     this.errorText,
     this.controller,
@@ -128,16 +132,16 @@ class AccessibleFormField extends StatelessWidget {
   final bool obscureText;
   final Widget? prefixIcon;
   final Widget? suffixIcon;
-  String? Function(String?)? validator;
-  void Function(String)? onChanged;
-  void Function(String)? onSubmitted;
+  final String? Function(String?)? validator;
+  final void Function(String)? onChanged;
+  final void Function(String)? onSubmitted;
   final bool enabled;
   final int? maxLines;
   final int? maxLength;
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
 
     return Semantics(
       label: label,
@@ -184,9 +188,11 @@ class AccessibleFormField extends StatelessWidget {
 
 /// Enhanced accessible button with proper focus management
 class AccessibleButton extends StatelessWidget {
-
   const AccessibleButton({
-    required this.onPressed, required this.child, required this.label, super.key,
+    required this.onPressed,
+    required this.child,
+    required this.label,
+    super.key,
     this.hint,
     this.style,
     this.isEnabled = true,
@@ -204,7 +210,7 @@ class AccessibleButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
 
     return Semantics(
       label: label,
@@ -219,7 +225,7 @@ class AccessibleButton extends StatelessWidget {
           style: style?.copyWith(
             backgroundColor: WidgetStateProperty.resolveWith((states) {
               if (states.contains(WidgetState.disabled)) {
-                return theme.colorScheme.onSurface.withOpacity(0.12);
+                return theme.colorScheme.onSurface.withValues(alpha: 0.12);
               }
               return style?.backgroundColor?.resolve(states) ??
                   theme.colorScheme.primary;
@@ -234,9 +240,9 @@ class AccessibleButton extends StatelessWidget {
 
 /// Enhanced accessible card with proper semantics
 class AccessibleCard extends StatelessWidget {
-
   const AccessibleCard({
-    required this.child, super.key,
+    required this.child,
+    super.key,
     this.padding,
     this.margin,
     this.borderRadius,
@@ -254,7 +260,7 @@ class AccessibleCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    theme = Theme.of(context);
+    final theme = Theme.of(context);
 
     return Semantics(
       label: semanticLabel,
@@ -280,9 +286,9 @@ class AccessibleCard extends StatelessWidget {
 
 /// Enhanced accessible list tile with proper semantics
 class AccessibleListTile extends StatelessWidget {
-
   const AccessibleListTile({
-    required this.title, super.key,
+    required this.title,
+    super.key,
     this.leading,
     this.subtitle,
     this.trailing,
@@ -302,27 +308,27 @@ class AccessibleListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: semanticLabel,
-      button: onTap != null,
-      selected: isSelected,
-      enabled: enabled,
-      child: ListTile(
-        leading: leading,
-        title: title,
-        subtitle: subtitle,
-        trailing: trailing,
-        onTap: enabled ? onTap : null,
+        label: semanticLabel,
+        button: onTap != null,
         selected: isSelected,
         enabled: enabled,
-      ),
-    );
+        child: ListTile(
+          leading: leading,
+          title: title,
+          subtitle: subtitle,
+          trailing: trailing,
+          onTap: enabled ? onTap : null,
+          selected: isSelected,
+          enabled: enabled,
+        ),
+      );
 }
 
 /// Enhanced accessible dialog with proper focus management
 class AccessibleDialog extends StatelessWidget {
-
   const AccessibleDialog({
-    required this.child, super.key,
+    required this.child,
+    super.key,
     this.semanticLabel,
     this.barrierDismissible = true,
     this.barrierColor,
@@ -334,11 +340,11 @@ class AccessibleDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: semanticLabel,
-      child: Dialog(
-        child: child,
-      ),
-    );
+        label: semanticLabel,
+        child: Dialog(
+          child: child,
+        ),
+      );
 
   static Future<T?> show<T>({
     required BuildContext context,
@@ -346,24 +352,25 @@ class AccessibleDialog extends StatelessWidget {
     String? semanticLabel,
     bool barrierDismissible = true,
     Color? barrierColor,
-  }) => showDialog<T>(
-      context: context,
-      barrierDismissible: barrierDismissible,
-      barrierColor: barrierColor,
-      builder: (context) => AccessibleDialog(
-        semanticLabel: semanticLabel,
+  }) =>
+      showDialog<T>(
+        context: context,
         barrierDismissible: barrierDismissible,
         barrierColor: barrierColor,
-        child: child,
-      ),
-    );
+        builder: (context) => AccessibleDialog(
+          semanticLabel: semanticLabel,
+          barrierDismissible: barrierDismissible,
+          barrierColor: barrierColor,
+          child: child,
+        ),
+      );
 }
 
 /// Enhanced accessible bottom sheet
 class AccessibleBottomSheet extends StatelessWidget {
-
   const AccessibleBottomSheet({
-    required this.child, super.key,
+    required this.child,
+    super.key,
     this.semanticLabel,
     this.isScrollControlled = false,
     this.enableDrag = true,
@@ -377,12 +384,12 @@ class AccessibleBottomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: semanticLabel,
-      child: Container(
-        color: backgroundColor,
-        child: child,
-      ),
-    );
+        label: semanticLabel,
+        child: Container(
+          color: backgroundColor,
+          child: child,
+        ),
+      );
 
   static Future<T?> show<T>({
     required BuildContext context,
@@ -391,26 +398,27 @@ class AccessibleBottomSheet extends StatelessWidget {
     bool isScrollControlled = false,
     bool enableDrag = true,
     Color? backgroundColor,
-  }) => showModalBottomSheet<T>(
-      context: context,
-      isScrollControlled: isScrollControlled,
-      enableDrag: enableDrag,
-      backgroundColor: backgroundColor,
-      builder: (context) => AccessibleBottomSheet(
-        semanticLabel: semanticLabel,
+  }) =>
+      showModalBottomSheet<T>(
+        context: context,
         isScrollControlled: isScrollControlled,
         enableDrag: enableDrag,
         backgroundColor: backgroundColor,
-        child: child,
-      ),
-    );
+        builder: (context) => AccessibleBottomSheet(
+          semanticLabel: semanticLabel,
+          isScrollControlled: isScrollControlled,
+          enableDrag: enableDrag,
+          backgroundColor: backgroundColor,
+          child: child,
+        ),
+      );
 }
 
 /// Enhanced accessible navigation drawer
 class AccessibleNavigationDrawer extends StatelessWidget {
-
   const AccessibleNavigationDrawer({
-    required this.child, super.key,
+    required this.child,
+    super.key,
     this.semanticLabel,
   });
   final Widget child;
@@ -418,16 +426,15 @@ class AccessibleNavigationDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: semanticLabel ?? 'Navigation drawer',
-      child: Drawer(
-        child: child,
-      ),
-    );
+        label: semanticLabel ?? 'Navigation drawer',
+        child: Drawer(
+          child: child,
+        ),
+      );
 }
 
 /// Enhanced accessible app bar with proper semantics
 class AccessibleAppBar extends StatelessWidget implements PreferredSizeWidget {
-
   const AccessibleAppBar({
     super.key,
     this.title,
@@ -444,15 +451,15 @@ class AccessibleAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: semanticLabel ?? 'App bar',
-      header: true,
-      child: AppBar(
-        title: title,
-        actions: actions,
-        leading: leading,
-        automaticallyImplyLeading: automaticallyImplyLeading,
-      ),
-    );
+        label: semanticLabel ?? 'App bar',
+        header: true,
+        child: AppBar(
+          title: title,
+          actions: actions,
+          leading: leading,
+          automaticallyImplyLeading: automaticallyImplyLeading,
+        ),
+      );
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
@@ -460,9 +467,10 @@ class AccessibleAppBar extends StatelessWidget implements PreferredSizeWidget {
 
 /// Enhanced accessible bottom navigation bar
 class AccessibleBottomNavigationBar extends StatelessWidget {
-
   const AccessibleBottomNavigationBar({
-    required this.items, required this.currentIndex, super.key,
+    required this.items,
+    required this.currentIndex,
+    super.key,
     this.onTap,
     this.semanticLabel,
   });
@@ -473,20 +481,20 @@ class AccessibleBottomNavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: semanticLabel ?? 'Bottom navigation',
-      child: BottomNavigationBar(
-        items: items,
-        currentIndex: currentIndex,
-        onTap: onTap,
-      ),
-    );
+        label: semanticLabel ?? 'Bottom navigation',
+        child: BottomNavigationBar(
+          items: items,
+          currentIndex: currentIndex,
+          onTap: onTap,
+        ),
+      );
 }
 
 /// Enhanced accessible tab bar
 class AccessibleTabBar extends StatelessWidget implements PreferredSizeWidget {
-
   const AccessibleTabBar({
-    required this.tabs, super.key,
+    required this.tabs,
+    super.key,
     this.controller,
     this.semanticLabel,
   });
@@ -496,12 +504,12 @@ class AccessibleTabBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: semanticLabel ?? 'Tab bar',
-      child: TabBar(
-        tabs: tabs,
-        controller: controller,
-      ),
-    );
+        label: semanticLabel ?? 'Tab bar',
+        child: TabBar(
+          tabs: tabs,
+          controller: controller,
+        ),
+      );
 
   @override
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
@@ -509,9 +517,9 @@ class AccessibleTabBar extends StatelessWidget implements PreferredSizeWidget {
 
 /// Enhanced accessible tab bar view
 class AccessibleTabBarView extends StatelessWidget {
-
   const AccessibleTabBarView({
-    required this.children, super.key,
+    required this.children,
+    super.key,
     this.controller,
     this.semanticLabel,
   });
@@ -521,19 +529,19 @@ class AccessibleTabBarView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: semanticLabel ?? 'Tab content',
-      child: TabBarView(
-        controller: controller,
-        children: children,
-      ),
-    );
+        label: semanticLabel ?? 'Tab content',
+        child: TabBarView(
+          controller: controller,
+          children: children,
+        ),
+      );
 }
 
 /// Enhanced accessible scroll view
 class AccessibleScrollView extends StatelessWidget {
-
   const AccessibleScrollView({
-    required this.children, super.key,
+    required this.children,
+    super.key,
     this.controller,
     this.semanticLabel,
     this.primary = true,
@@ -549,23 +557,24 @@ class AccessibleScrollView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: semanticLabel,
-      child: SingleChildScrollView(
-        controller: controller,
-        primary: primary,
-        physics: physics,
-        child: Column(
-          children: children,
+        label: semanticLabel,
+        child: SingleChildScrollView(
+          controller: controller,
+          primary: primary,
+          physics: physics,
+          child: Column(
+            children: children,
+          ),
         ),
-      ),
-    );
+      );
 }
 
 /// Enhanced accessible grid view
 class AccessibleGridView extends StatelessWidget {
-
   const AccessibleGridView({
-    required this.children, required this.crossAxisCount, super.key,
+    required this.children,
+    required this.crossAxisCount,
+    super.key,
     this.crossAxisSpacing = 0.0,
     this.mainAxisSpacing = 0.0,
     this.semanticLabel,
@@ -578,21 +587,21 @@ class AccessibleGridView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: semanticLabel,
-      child: GridView.count(
-        crossAxisCount: crossAxisCount,
-        crossAxisSpacing: crossAxisSpacing,
-        mainAxisSpacing: mainAxisSpacing,
-        children: children,
-      ),
-    );
+        label: semanticLabel,
+        child: GridView.count(
+          crossAxisCount: crossAxisCount,
+          crossAxisSpacing: crossAxisSpacing,
+          mainAxisSpacing: mainAxisSpacing,
+          children: children,
+        ),
+      );
 }
 
 /// Enhanced accessible list view
 class AccessibleListView extends StatelessWidget {
-
   const AccessibleListView({
-    required this.children, super.key,
+    required this.children,
+    super.key,
     this.controller,
     this.semanticLabel,
     this.primary = true,
@@ -608,21 +617,23 @@ class AccessibleListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: semanticLabel,
-      child: ListView(
-        controller: controller,
-        primary: primary,
-        physics: physics,
-        children: children,
-      ),
-    );
+        label: semanticLabel,
+        child: ListView(
+          controller: controller,
+          primary: primary,
+          physics: physics,
+          children: children,
+        ),
+      );
 }
 
 /// Enhanced accessible switch
 class AccessibleSwitch extends StatelessWidget {
-
   const AccessibleSwitch({
-    required this.value, required this.onChanged, required this.label, super.key,
+    required this.value,
+    required this.onChanged,
+    required this.label,
+    super.key,
     this.hint,
     this.enabled = true,
   });
@@ -634,22 +645,24 @@ class AccessibleSwitch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: label,
-      hint: hint,
-      value: value.toString(),
-      onTap: enabled ? () => onChanged?.call(!value) : null,
-      child: Switch(
-        value: value,
-        onChanged: enabled ? onChanged : null,
-      ),
-    );
+        label: label,
+        hint: hint,
+        value: value.toString(),
+        onTap: enabled ? () => onChanged?.call(!value) : null,
+        child: Switch(
+          value: value,
+          onChanged: enabled ? onChanged : null,
+        ),
+      );
 }
 
 /// Enhanced accessible checkbox
 class AccessibleCheckbox extends StatelessWidget {
-
   const AccessibleCheckbox({
-    required this.value, required this.onChanged, required this.label, super.key,
+    required this.value,
+    required this.onChanged,
+    required this.label,
+    super.key,
     this.hint,
     this.enabled = true,
   });
@@ -661,22 +674,25 @@ class AccessibleCheckbox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: label,
-      hint: hint,
-      value: value.toString(),
-      onTap: enabled && value != null ? () => onChanged?.call(!value!) : null,
-      child: Checkbox(
-        value: value,
-        onChanged: enabled ? onChanged : null,
-      ),
-    );
+        label: label,
+        hint: hint,
+        value: value.toString(),
+        onTap: enabled && value != null ? () => onChanged?.call(!value!) : null,
+        child: Checkbox(
+          value: value,
+          onChanged: enabled ? onChanged : null,
+        ),
+      );
 }
 
 /// Enhanced accessible radio button
 class AccessibleRadio<T> extends StatelessWidget {
-
   const AccessibleRadio({
-    required this.value, required this.groupValue, required this.onChanged, required this.label, super.key,
+    required this.value,
+    required this.groupValue,
+    required this.onChanged,
+    required this.label,
+    super.key,
     this.hint,
     this.enabled = true,
   });
@@ -689,23 +705,27 @@ class AccessibleRadio<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: label,
-      hint: hint,
-      value: (value == groupValue).toString(),
-      onTap: enabled ? () => onChanged?.call(value) : null,
-      child: Radio<T>(
-        value: value,
-        groupValue: groupValue,
-        onChanged: enabled ? onChanged : null,
-      ),
-    );
+        label: label,
+        hint: hint,
+        value: (value == groupValue).toString(),
+        onTap: enabled ? () => onChanged?.call(value) : null,
+        child: Radio<T>(
+          value: value,
+          groupValue: groupValue,
+          onChanged: enabled ? onChanged : null,
+        ),
+      );
 }
 
 /// Enhanced accessible slider
 class AccessibleSlider extends StatelessWidget {
-
   const AccessibleSlider({
-    required this.value, required this.onChanged, required this.min, required this.max, required this.label, super.key,
+    required this.value,
+    required this.onChanged,
+    required this.min,
+    required this.max,
+    required this.label,
+    super.key,
     this.divisions,
     this.hint,
     this.enabled = true,
@@ -721,24 +741,24 @@ class AccessibleSlider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: label,
-      hint: hint,
-      value: value.toString(),
-      child: Slider(
-        value: value,
-        onChanged: enabled ? onChanged : null,
-        min: min,
-        max: max,
-        divisions: divisions,
-      ),
-    );
+        label: label,
+        hint: hint,
+        value: value.toString(),
+        child: Slider(
+          value: value,
+          onChanged: enabled ? onChanged : null,
+          min: min,
+          max: max,
+          divisions: divisions,
+        ),
+      );
 }
 
 /// Enhanced accessible progress indicator
 class AccessibleProgressIndicator extends StatelessWidget {
-
   const AccessibleProgressIndicator({
-    required this.label, super.key,
+    required this.label,
+    super.key,
     this.value,
     this.hint,
     this.backgroundColor,
@@ -752,23 +772,24 @@ class AccessibleProgressIndicator extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: label,
-      hint: hint,
-      value: value?.toString() ?? 'Indeterminate',
-      child: LinearProgressIndicator(
-        value: value,
-        backgroundColor: backgroundColor,
-        valueColor: AlwaysStoppedAnimation<Color>(
-            valueColor ?? Theme.of(context).colorScheme.primary,),
-      ),
-    );
+        label: label,
+        hint: hint,
+        value: value?.toString() ?? 'Indeterminate',
+        child: LinearProgressIndicator(
+          value: value,
+          backgroundColor: backgroundColor,
+          valueColor: AlwaysStoppedAnimation<Color>(
+            valueColor ?? Theme.of(context).colorScheme.primary,
+          ),
+        ),
+      );
 }
 
 /// Enhanced accessible circular progress indicator
 class REDACTED_TOKEN extends StatelessWidget {
-
   const REDACTED_TOKEN({
-    required this.label, super.key,
+    required this.label,
+    super.key,
     this.value,
     this.hint,
     this.backgroundColor,
@@ -784,24 +805,26 @@ class REDACTED_TOKEN extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: label,
-      hint: hint,
-      value: value?.toString() ?? 'Indeterminate',
-      child: CircularProgressIndicator(
-        value: value,
-        backgroundColor: backgroundColor,
-        valueColor: AlwaysStoppedAnimation<Color>(
-            valueColor ?? Theme.of(context).colorScheme.primary,),
-        strokeWidth: strokeWidth,
-      ),
-    );
+        label: label,
+        hint: hint,
+        value: value?.toString() ?? 'Indeterminate',
+        child: CircularProgressIndicator(
+          value: value,
+          backgroundColor: backgroundColor,
+          valueColor: AlwaysStoppedAnimation<Color>(
+            valueColor ?? Theme.of(context).colorScheme.primary,
+          ),
+          strokeWidth: strokeWidth,
+        ),
+      );
 }
 
 /// Enhanced accessible icon
 class AccessibleIcon extends StatelessWidget {
-
   const AccessibleIcon({
-    required this.icon, required this.label, super.key,
+    required this.icon,
+    required this.label,
+    super.key,
     this.size,
     this.color,
     this.hint,
@@ -814,21 +837,22 @@ class AccessibleIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: label,
-      hint: hint,
-      child: Icon(
-        icon,
-        size: size,
-        color: color,
-      ),
-    );
+        label: label,
+        hint: hint,
+        child: Icon(
+          icon,
+          size: size,
+          color: color,
+        ),
+      );
 }
 
 /// Enhanced accessible tooltip
 class AccessibleTooltip extends StatelessWidget {
-
   const AccessibleTooltip({
-    required this.message, required this.child, super.key,
+    required this.message,
+    required this.child,
+    super.key,
     this.semanticLabel,
   });
   final String message;
@@ -837,19 +861,19 @@ class AccessibleTooltip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: semanticLabel ?? message,
-      child: Tooltip(
-        message: message,
-        child: child,
-      ),
-    );
+        label: semanticLabel ?? message,
+        child: Tooltip(
+          message: message,
+          child: child,
+        ),
+      );
 }
 
 /// Enhanced accessible snackbar
 class AccessibleSnackBar extends StatelessWidget {
-
   const AccessibleSnackBar({
-    required this.content, super.key,
+    required this.content,
+    super.key,
     this.actionLabel,
     this.onAction,
     this.duration,
@@ -863,19 +887,19 @@ class AccessibleSnackBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: semanticLabel ?? content,
-      liveRegion: true,
-      child: SnackBar(
-        content: Text(content),
-        action: actionLabel != null
-            ? SnackBarAction(
-                label: actionLabel!,
-                onPressed: onAction ?? () {},
-              )
-            : null,
-        duration: duration ?? const Duration(seconds: 4),
-      ),
-    );
+        label: semanticLabel ?? content,
+        liveRegion: true,
+        child: SnackBar(
+          content: Text(content),
+          action: actionLabel != null
+              ? SnackBarAction(
+                  label: actionLabel!,
+                  onPressed: onAction ?? () {},
+                )
+              : null,
+          duration: duration ?? const Duration(seconds: 4),
+        ),
+      );
 
   static void show(
     BuildContext context, {
@@ -906,9 +930,10 @@ class AccessibleSnackBar extends StatelessWidget {
 
 /// Enhanced accessible alert dialog
 class AccessibleAlertDialog extends StatelessWidget {
-
   const AccessibleAlertDialog({
-    required this.title, required this.content, super.key,
+    required this.title,
+    required this.content,
+    super.key,
     this.actions,
     this.semanticLabel,
   });
@@ -919,13 +944,13 @@ class AccessibleAlertDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: semanticLabel ?? title,
-      child: AlertDialog(
-        title: Text(title),
-        content: Text(content),
-        actions: actions,
-      ),
-    );
+        label: semanticLabel ?? title,
+        child: AlertDialog(
+          title: Text(title),
+          content: Text(content),
+          actions: actions,
+        ),
+      );
 
   static Future<T?> show<T>({
     required BuildContext context,
@@ -933,22 +958,26 @@ class AccessibleAlertDialog extends StatelessWidget {
     required String content,
     List<Widget>? actions,
     String? semanticLabel,
-  }) => showDialog<T>(
-      context: context,
-      builder: (context) => AccessibleAlertDialog(
-        title: title,
-        content: content,
-        actions: actions,
-        semanticLabel: semanticLabel,
-      ),
-    );
+  }) =>
+      showDialog<T>(
+        context: context,
+        builder: (context) => AccessibleAlertDialog(
+          title: title,
+          content: content,
+          actions: actions,
+          semanticLabel: semanticLabel,
+        ),
+      );
 }
 
 /// Enhanced accessible confirmation dialog
 class AccessibleConfirmationDialog extends StatelessWidget {
-
   const AccessibleConfirmationDialog({
-    required this.title, required this.content, required this.confirmLabel, required this.cancelLabel, super.key,
+    required this.title,
+    required this.content,
+    required this.confirmLabel,
+    required this.cancelLabel,
+    super.key,
     this.onConfirm,
     this.onCancel,
     this.semanticLabel,
@@ -963,28 +992,28 @@ class AccessibleConfirmationDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-      label: semanticLabel ?? title,
-      child: AlertDialog(
-        title: Text(title),
-        content: Text(content),
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.of(context).pop(false);
-              onCancel?.call();
-            },
-            child: Text(cancelLabel),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).pop(true);
-              onConfirm?.call();
-            },
-            child: Text(confirmLabel),
-          ),
-        ],
-      ),
-    );
+        label: semanticLabel ?? title,
+        child: AlertDialog(
+          title: Text(title),
+          content: Text(content),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop(false);
+                onCancel?.call();
+              },
+              child: Text(cancelLabel),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop(true);
+                onConfirm?.call();
+              },
+              child: Text(confirmLabel),
+            ),
+          ],
+        ),
+      );
 
   static Future<bool?> show({
     required BuildContext context,
@@ -995,16 +1024,17 @@ class AccessibleConfirmationDialog extends StatelessWidget {
     VoidCallback? onConfirm,
     VoidCallback? onCancel,
     String? semanticLabel,
-  }) => showDialog<bool>(
-      context: context,
-      builder: (context) => AccessibleConfirmationDialog(
-        title: title,
-        content: content,
-        confirmLabel: confirmLabel,
-        cancelLabel: cancelLabel,
-        onConfirm: onConfirm,
-        onCancel: onCancel,
-        semanticLabel: semanticLabel,
-      ),
-    );
+  }) =>
+      showDialog<bool>(
+        context: context,
+        builder: (context) => AccessibleConfirmationDialog(
+          title: title,
+          content: content,
+          confirmLabel: confirmLabel,
+          cancelLabel: cancelLabel,
+          onConfirm: onConfirm,
+          onCancel: onCancel,
+          semanticLabel: semanticLabel,
+        ),
+      );
 }

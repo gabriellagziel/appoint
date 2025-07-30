@@ -5,7 +5,6 @@ part 'offline_booking.g.dart';
 
 @HiveType(typeId: 1)
 class OfflineBooking extends HiveObject {
-
   OfflineBooking({
     required this.id,
     required this.userId,
@@ -14,7 +13,8 @@ class OfflineBooking extends HiveObject {
     required this.serviceName,
     required this.dateTime,
     required this.durationInMinutes,
-    required this.lastSyncAttempt, this.notes,
+    required this.lastSyncAttempt,
+    this.notes,
     this.isConfirmed = false,
     this.createdAt,
     this.updatedAt,
@@ -29,23 +29,24 @@ class OfflineBooking extends HiveObject {
     String operation = 'create',
     DateTime? lastSyncAttempt,
     String? syncError,
-  }) => OfflineBooking(
-      id: booking.id,
-      userId: booking.userId,
-      staffId: booking.staffId,
-      serviceId: booking.serviceId,
-      serviceName: booking.serviceName,
-      dateTime: booking.dateTime,
-      durationInMinutes: booking.duration.inMinutes,
-      notes: booking.notes,
-      isConfirmed: booking.isConfirmed,
-      createdAt: booking.createdAt,
-      updatedAt: DateTime.now(),
-      syncStatus: syncStatus,
-      operation: operation,
-      lastSyncAttempt: lastSyncAttempt ?? DateTime.now(),
-      syncError: syncError,
-    );
+  }) =>
+      OfflineBooking(
+        id: booking.id,
+        userId: booking.userId,
+        staffId: booking.staffId,
+        serviceId: booking.serviceId,
+        serviceName: booking.serviceName,
+        dateTime: booking.dateTime,
+        durationInMinutes: booking.duration.inMinutes,
+        notes: booking.notes,
+        isConfirmed: booking.isConfirmed,
+        createdAt: booking.createdAt,
+        updatedAt: DateTime.now(),
+        syncStatus: syncStatus,
+        operation: operation,
+        lastSyncAttempt: lastSyncAttempt ?? DateTime.now(),
+        syncError: syncError,
+      );
   @HiveField(0)
   final String id;
 
@@ -92,17 +93,17 @@ class OfflineBooking extends HiveObject {
   final String? syncError;
 
   Booking toBooking() => Booking(
-      id: id,
-      userId: userId,
-      staffId: staffId,
-      serviceId: serviceId,
-      serviceName: serviceName,
-      dateTime: dateTime,
-      duration: Duration(minutes: durationInMinutes),
-      notes: notes,
-      isConfirmed: isConfirmed,
-      createdAt: createdAt,
-    );
+        id: id,
+        userId: userId,
+        staffId: staffId,
+        serviceId: serviceId,
+        serviceName: serviceName,
+        dateTime: dateTime,
+        duration: Duration(minutes: durationInMinutes),
+        notes: notes,
+        isConfirmed: isConfirmed,
+        createdAt: createdAt,
+      );
 
   OfflineBooking copyWith({
     String? id,
@@ -120,21 +121,22 @@ class OfflineBooking extends HiveObject {
     String? operation,
     DateTime? lastSyncAttempt,
     String? syncError,
-  }) => OfflineBooking(
-      id: id ?? this.id,
-      userId: userId ?? this.userId,
-      staffId: staffId ?? this.staffId,
-      serviceId: serviceId ?? this.serviceId,
-      serviceName: serviceName ?? this.serviceName,
-      dateTime: dateTime ?? this.dateTime,
-      durationInMinutes: durationInMinutes ?? this.durationInMinutes,
-      notes: notes ?? this.notes,
-      isConfirmed: isConfirmed ?? this.isConfirmed,
-      createdAt: createdAt ?? this.createdAt,
-      updatedAt: updatedAt ?? this.updatedAt,
-      syncStatus: syncStatus ?? this.syncStatus,
-      operation: operation ?? this.operation,
-      lastSyncAttempt: lastSyncAttempt ?? this.lastSyncAttempt,
-      syncError: syncError ?? this.syncError,
-    );
+  }) =>
+      OfflineBooking(
+        id: id ?? this.id,
+        userId: userId ?? this.userId,
+        staffId: staffId ?? this.staffId,
+        serviceId: serviceId ?? this.serviceId,
+        serviceName: serviceName ?? this.serviceName,
+        dateTime: dateTime ?? this.dateTime,
+        durationInMinutes: durationInMinutes ?? this.durationInMinutes,
+        notes: notes ?? this.notes,
+        isConfirmed: isConfirmed ?? this.isConfirmed,
+        createdAt: createdAt ?? this.createdAt,
+        updatedAt: updatedAt ?? this.updatedAt,
+        syncStatus: syncStatus ?? this.syncStatus,
+        operation: operation ?? this.operation,
+        lastSyncAttempt: lastSyncAttempt ?? this.lastSyncAttempt,
+        syncError: syncError ?? this.syncError,
+      );
 }

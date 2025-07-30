@@ -1,5 +1,4 @@
 class Comment {
-
   Comment({
     required this.id,
     required this.text,

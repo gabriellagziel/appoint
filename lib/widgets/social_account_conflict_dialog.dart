@@ -3,9 +3,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class SocialAccountConflictDialog extends StatelessWidget {
-
   const SocialAccountConflictDialog({
-    required this.error, super.key,
+    required this.error,
+    super.key,
     this.onLinkAccounts,
     this.onSignInWithExistingMethod,
     this.onCancel,
@@ -23,7 +23,8 @@ class SocialAccountConflictDialog extends StatelessWidget {
     return AlertDialog(
       title: Text(l10n?.socialAccountConflictTitle ?? 'Account Conflict'),
       content: Text(
-        l10n?.socialAccountConflictMessage(conflictingEmail) ?? 'An account with this email already exists.',
+        l10n?.socialAccountConflictMessage(conflictingEmail) ??
+            'An account with this email already exists.',
       ),
       actions: [
         TextButton(
@@ -33,7 +34,8 @@ class SocialAccountConflictDialog extends StatelessWidget {
         TextButton(
           onPressed: onSignInWithExistingMethod ??
               () => Navigator.of(context).pop('existing'),
-          child: Text(l10n?.signInWithExistingMethod ?? 'Sign in with existing method'),
+          child: Text(
+              l10n?.signInWithExistingMethod ?? 'Sign in with existing method'),
         ),
         ElevatedButton(
           onPressed: onLinkAccounts ?? () => Navigator.of(context).pop('link'),

@@ -36,8 +36,7 @@ void main() {
   group('LoginScreen Widget Tests', () {
     testWidgets('should display login form', (WidgetTester tester) async {
       // Arrange
-      when(() => mockAuthService.signIn(any(), any()))
-          .thenAnswer((_) async {});
+      when(() => mockAuthService.signIn(any(), any())).thenAnswer((_) async {});
 
       // Act
       await tester.pumpWidget(createTestWidget(const LoginScreen()));
@@ -51,8 +50,7 @@ void main() {
     testWidgets('should show email and password fields',
         (WidgetTester tester) async {
       // Arrange
-      when(() => mockAuthService.signIn(any(), any()))
-          .thenAnswer((_) async {});
+      when(() => mockAuthService.signIn(any(), any())).thenAnswer((_) async {});
 
       // Act
       await tester.pumpWidget(createTestWidget(const LoginScreen()));
@@ -65,8 +63,7 @@ void main() {
 
     testWidgets('should handle email input', (WidgetTester tester) async {
       // Arrange
-      when(() => mockAuthService.signIn(any(), any()))
-          .thenAnswer((_) async {});
+      when(() => mockAuthService.signIn(any(), any())).thenAnswer((_) async {});
 
       // Act
       await tester.pumpWidget(createTestWidget(const LoginScreen()));
@@ -77,11 +74,9 @@ void main() {
       expect(find.text('test@example.com'), findsOneWidget);
     });
 
-    testWidgets('should handle password input',
-        (WidgetTester tester) async {
+    testWidgets('should handle password input', (WidgetTester tester) async {
       // Arrange
-      when(() => mockAuthService.signIn(any(), any()))
-          .thenAnswer((_) async {});
+      when(() => mockAuthService.signIn(any(), any())).thenAnswer((_) async {});
 
       // Act
       await tester.pumpWidget(createTestWidget(const LoginScreen()));
@@ -95,8 +90,7 @@ void main() {
 
     testWidgets('should show loading state', (WidgetTester tester) async {
       // Arrange
-      when(() => mockAuthService.signIn(any(), any()))
-          .thenAnswer((_) async {
+      when(() => mockAuthService.signIn(any(), any())).thenAnswer((_) async {
         await Future.delayed(const Duration(seconds: 1));
       });
 
@@ -129,11 +123,9 @@ void main() {
       expect(find.textContaining('Login failed'), findsOneWidget);
     });
 
-    testWidgets('should handle successful login',
-        (WidgetTester tester) async {
+    testWidgets('should handle successful login', (WidgetTester tester) async {
       // Arrange
-      when(() => mockAuthService.signIn(any(), any()))
-          .thenAnswer((_) async {});
+      when(() => mockAuthService.signIn(any(), any())).thenAnswer((_) async {});
 
       // Act
       await tester.pumpWidget(createTestWidget(const LoginScreen()));

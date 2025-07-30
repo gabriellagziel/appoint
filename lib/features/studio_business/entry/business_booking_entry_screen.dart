@@ -6,9 +6,9 @@ class BusinessBookingEntryScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) => Scaffold(
-      appBar: AppBar(title: const Text('Booking')),
-      body: const Center(
-        child: Text('Business Booking Entry Screen - Coming Soon'),
-      ),
-    );
+        appBar: AppBar(title: const Text('Booking')),
+        body: const Center(
+          child: Text('Business Booking Entry Screen - Coming Soon'),
+        ),
+      );
 }

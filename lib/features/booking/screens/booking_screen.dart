@@ -7,8 +7,8 @@ import 'package:appoint/services/usage_monitor.dart';
 import 'package:appoint/utils/snackbar_extensions.dart';
 import 'package:appoint/widgets/animations/fade_slide_in.dart';
 import 'package:appoint/widgets/animations/tap_scale_feedback.dart';
-import 'package:appoint/widgets/booking_confirmation_sheet.dart';
 import 'package:appoint/widgets/booking_blocker_modal.dart';
+import 'package:appoint/widgets/booking_confirmation_sheet.dart';
 import 'package:appoint/widgets/bottom_sheet_manager.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -37,8 +37,9 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
     final userId = FirebaseAuth.instance.currentUser?.uid;
     if (userId == null) return;
 
-    final weeklyCount = await ref.read(bookingServiceProvider).getWeeklyBookingCount(userId);
-    
+    final weeklyCount =
+        await ref.read(bookingServiceProvider).getWeeklyBookingCount(userId);
+
     if (weeklyCount >= 21) {
       _showUpgradeDialog();
     } else {
@@ -52,7 +53,8 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
       builder: (context) => AlertDialog(
         title: const Text('Upgrade to Business'),
         content: const Text(
-          'You have reached your weekly limit of 21 bookings. Upgrade to Business mode for unlimited bookings.'),
+          'You have reached your weekly limit of 21 bookings. Upgrade to Business mode for unlimited bookings.',
+        ),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
@@ -63,9 +65,11 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
               Navigator.of(context).pop();
               final userId = FirebaseAuth.instance.currentUser?.uid;
               if (userId != null) {
-                final checkoutUrl = await StripeService().fetchCheckoutUrl(userId);
+                final checkoutUrl =
+                    await StripeService().fetchCheckoutUrl(userId);
                 if (checkoutUrl != null) {
-                  await launchUrl(Uri.parse(checkoutUrl), mode: LaunchMode.externalApplication);
+                  await launchUrl(Uri.parse(checkoutUrl),
+                      mode: LaunchMode.externalApplication);
                 }
               }
             },
@@ -82,7 +86,7 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
     try {
       // Check if user can create booking (usage limits)
       final canBook = await BookingHelper(ref).canCreateBooking();
-      
+
       if (!canBook) {
         // Show business mode modal
         if (mounted) {
@@ -91,12 +95,15 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
             // Use our Stripe integration for upgrade
             final userId = FirebaseAuth.instance.currentUser?.uid;
             if (userId != null) {
-              final checkoutUrl = await StripeService().fetchCheckoutUrl(userId);
+              final checkoutUrl =
+                  await StripeService().fetchCheckoutUrl(userId);
               if (checkoutUrl != null) {
-                await launchUrl(Uri.parse(checkoutUrl), mode: LaunchMode.externalApplication);
+                await launchUrl(Uri.parse(checkoutUrl),
+                    mode: LaunchMode.externalApplication);
               } else {
                 if (mounted) {
-                  context.showSnackBar('Failed to load checkout. Please try again.');
+                  context.showSnackBar(
+                      'Failed to load checkout. Please try again.');
                 }
               }
             }
@@ -107,14 +114,16 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
 
       // Proceed with booking if allowed
       await BookingHelper(ref).submitBooking();
-      
+
       if (!mounted) return;
       context.showSnackBar('Booking confirmed');
       Navigator.pop(context);
     } catch (e) {
       if (!mounted) return;
-      context.showSnackBar('Failed to confirm booking',
-          backgroundColor: Colors.red,);
+      context.showSnackBar(
+        'Failed to confirm booking',
+        backgroundColor: Colors.red,
+      );
     } finally {
       if (mounted) setState(() => _isSubmitting = false);
     }
@@ -177,7 +186,8 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
                     Text('Service: ${serviceId ?? "Not selected"}'),
                     const SizedBox(height: 8),
                     Text(
-                        'Date & Time: ${dateTime?.toLocal() ?? "Not selected"}',),
+                      'Date & Time: ${dateTime?.toLocal() ?? "Not selected"}',
+                    ),
                     const SizedBox(height: 8),
                     Text('Duration: ${duration?.inMinutes ?? 0} minutes'),
                   ],

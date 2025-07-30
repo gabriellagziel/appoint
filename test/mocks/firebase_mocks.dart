@@ -67,8 +67,10 @@ class TestDataFactory {
       'userId': userId ?? 'test-user-id',
       'providerId': providerId ?? 'test-provider-id',
       'service': 'Child Care',
-      'startTime': (startTime ?? DateTime.now().add(Duration(hours: 1))).toIso8601String(),
-      'endTime': (endTime ?? DateTime.now().add(Duration(hours: 2))).toIso8601String(),
+      'startTime': (startTime ?? DateTime.now().add(Duration(hours: 1)))
+          .toIso8601String(),
+      'endTime':
+          (endTime ?? DateTime.now().add(Duration(hours: 2))).toIso8601String(),
       'status': status ?? 'pending',
       'createdAt': DateTime.now().toIso8601String(),
       'updatedAt': DateTime.now().toIso8601String(),
@@ -111,7 +113,8 @@ class TestDataFactory {
       'message': message ?? 'This is a test broadcast message',
       'type': type ?? 'text',
       'targetAudience': 'all',
-      'scheduledTime': DateTime.now().add(Duration(minutes: 5)).toIso8601String(),
+      'scheduledTime':
+          DateTime.now().add(Duration(minutes: 5)).toIso8601String(),
       'status': 'scheduled',
       'createdAt': DateTime.now().toIso8601String(),
       'updatedAt': DateTime.now().toIso8601String(),

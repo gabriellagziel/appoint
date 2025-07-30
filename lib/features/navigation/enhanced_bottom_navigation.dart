@@ -48,19 +48,14 @@ class EnhancedBottomNavigation extends ConsumerWidget {
     switch (index) {
       case 0:
         Navigator.pushReplacementNamed(context, '/dashboard');
-        break;
       case 1:
         Navigator.pushReplacementNamed(context, '/search');
-        break;
       case 2:
         Navigator.pushReplacementNamed(context, '/calendar');
-        break;
       case 3:
         Navigator.pushReplacementNamed(context, '/messages');
-        break;
       case 4:
         Navigator.pushReplacementNamed(context, '/profile');
-        break;
     }
   }
-} 
+}

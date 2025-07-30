@@ -1,0 +1,1037 @@
+Analyzing lib...                                                
+
+warning • The value of the local variable 'meetingInfo' isn't used • lib/config/app_router.dart:968:11 • unused_local_variable
+  error • The named parameter 'branchService' is required, but there's no corresponding argument • lib/config/routes.dart:200:33 • missing_required_argument
+  error • The named parameter 'notificationService' is required, but there's no corresponding argument • lib/config/routes.dart:200:33 • missing_required_argument
+  error • The name 'authServiceProvider' is defined in the libraries 'package:appoint/providers/auth_provider.dart' and 'package:appoint/providers/fcm_token_provider.dart' • lib/core/providers.dart:23:8 • ambiguous_export
+  error • Undefined name 'syncHelper' • lib/examples/REDACTED_TOKEN.dart:116:5 • undefined_identifier
+  error • Undefined name 'syncHelper' • lib/examples/REDACTED_TOKEN.dart:119:5 • undefined_identifier
+  error • Undefined name 'syncHelper' • lib/examples/REDACTED_TOKEN.dart:123:7 • undefined_identifier
+  error • Undefined name 'syncHelper' • lib/examples/REDACTED_TOKEN.dart:128:7 • undefined_identifier
+  error • Undefined name 'syncHelper' • lib/examples/REDACTED_TOKEN.dart:132:48 • undefined_identifier
+  error • Undefined name 'messengerKey' • lib/examples/REDACTED_TOKEN.dart:139:5 • undefined_identifier
+  error • Undefined name 'messengerKey' • lib/examples/REDACTED_TOKEN.dart:144:39 • undefined_identifier
+  error • Undefined name 'messengerKey' • lib/examples/REDACTED_TOKEN.dart:149:31 • undefined_identifier
+  error • The argument type 'AppLocalizations?' can't be assigned to the parameter type 'AppLocalizations'.  • lib/features/admin/admin_broadcast_screen.dart:58:58 • argument_type_not_assignable
+  error • The property 'noBroadcastMessages' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:151:26 • unchecked_use_of_nullable_value
+  error • The method 'content' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:180:24 • unchecked_use_of_nullable_value
+  error • The method 'type' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:186:24 • unchecked_use_of_nullable_value
+  error • The method 'recipients' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:191:26 • unchecked_use_of_nullable_value
+  error • The argument type 'int' can't be assigned to the parameter type 'String'.  • lib/features/admin/admin_broadcast_screen.dart:191:37 • argument_type_not_assignable
+  error • 2 positional arguments expected by 'recipients', but 1 found • lib/features/admin/admin_broadcast_screen.dart:191:62 • not_enough_positional_arguments
+  error • The method 'opened' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:196:26 • unchecked_use_of_nullable_value
+  error • The method 'created' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:201:24 • unchecked_use_of_nullable_value
+  error • The argument type 'DateTime' can't be assigned to the parameter type 'String'.  • lib/features/admin/admin_broadcast_screen.dart:201:32 • argument_type_not_assignable
+  error • 2 positional arguments expected by 'created', but 1 found • lib/features/admin/admin_broadcast_screen.dart:201:49 • not_enough_positional_arguments
+  error • The method 'scheduled' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:206:26 • unchecked_use_of_nullable_value
+  error • The argument type 'DateTime' can't be assigned to the parameter type 'String'.  • lib/features/admin/admin_broadcast_screen.dart:206:36 • argument_type_not_assignable
+  error • 2 positional arguments expected by 'scheduled', but 1 found • lib/features/admin/admin_broadcast_screen.dart:206:57 • not_enough_positional_arguments
+  error • The property 'sendNow' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:216:42 • unchecked_use_of_nullable_value
+  error • The property 'details' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:220:40 • unchecked_use_of_nullable_value
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/admin_broadcast_screen.dart:256:30 • deprecated_member_use
+  error • The argument type 'String Function(String)' can't be assigned to the parameter type 'String?'.  • lib/features/admin/admin_broadcast_screen.dart:356:28 • argument_type_not_assignable
+  error • The name 'adminBroadcastServiceProvider' is defined in the libraries 'package:appoint/providers/admin_provider.dart' and 'package:appoint/services/broadcast_service.dart' • lib/features/admin/admin_broadcast_screen.dart:644:32 • ambiguous_import
+  error • The property 'errorEstimatingRecipients' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:653:66 • unchecked_use_of_nullable_value
+warning • The value of the local variable 'selectedImage' isn't used • lib/features/admin/admin_broadcast_screen.dart:674:17 • unused_local_variable
+warning • The value of the local variable 'selectedVideo' isn't used • lib/features/admin/admin_broadcast_screen.dart:675:17 • unused_local_variable
+  error • The property 'errorPickingImage' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:682:66 • unchecked_use_of_nullable_value
+warning • The value of the local variable 'selectedVideo' isn't used • lib/features/admin/admin_broadcast_screen.dart:700:17 • unused_local_variable
+warning • The value of the local variable 'selectedImage' isn't used • lib/features/admin/admin_broadcast_screen.dart:701:17 • unused_local_variable
+  error • The property 'errorPickingVideo' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:708:66 • unchecked_use_of_nullable_value
+warning • The value of the local variable 'selectedVideo' isn't used • lib/features/admin/admin_broadcast_screen.dart:720:13 • unused_local_variable
+  error • The property 'noPermissionForBroadcast' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:736:32 • unchecked_use_of_nullable_value
+  error • The property 'userNotAuthenticated' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:748:54 • unchecked_use_of_nullable_value
+warning • The value of the local variable 'imageUrl' isn't used • lib/features/admin/admin_broadcast_screen.dart:757:17 • unused_local_variable
+  error • The property 'failedToUploadImage' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:759:59 • unchecked_use_of_nullable_value
+warning • The value of the local variable 'videoUrl' isn't used • lib/features/admin/admin_broadcast_screen.dart:765:17 • unused_local_variable
+  error • The property 'failedToUploadVideo' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:767:59 • unchecked_use_of_nullable_value
+  error • The name 'adminBroadcastServiceProvider' is defined in the libraries 'package:appoint/providers/admin_provider.dart' and 'package:appoint/services/broadcast_service.dart' • lib/features/admin/admin_broadcast_screen.dart:794:32 • ambiguous_import
+  error • The property 'messageSavedSuccessfully' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:807:39 • unchecked_use_of_nullable_value
+  error • The method 'errorSavingMessage' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:814:39 • unchecked_use_of_nullable_value
+  error • The argument type 'Object' can't be assigned to the parameter type 'String'.  • lib/features/admin/admin_broadcast_screen.dart:814:58 • argument_type_not_assignable
+  error • The name 'adminBroadcastServiceProvider' is defined in the libraries 'package:appoint/providers/admin_provider.dart' and 'package:appoint/services/broadcast_service.dart' • lib/features/admin/admin_broadcast_screen.dart:824:32 • ambiguous_import
+  error • The property 'messageSentSuccessfully' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:828:37 • unchecked_use_of_nullable_value
+  error • The method 'errorSendingMessage' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:833:37 • unchecked_use_of_nullable_value
+  error • The argument type 'Object' can't be assigned to the parameter type 'String'.  • lib/features/admin/admin_broadcast_screen.dart:833:57 • argument_type_not_assignable
+  error • The method 'content' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:850:25 • unchecked_use_of_nullable_value
+  error • The method 'type' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:852:25 • unchecked_use_of_nullable_value
+  error • Methods can't be invoked in constant expressions • lib/features/admin/admin_broadcast_screen.dart:855:31 • const_eval_method_invocation
+  error • The property 'image' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:855:60 • unchecked_use_of_nullable_value
+  error • Methods can't be invoked in constant expressions • lib/features/admin/admin_broadcast_screen.dart:880:31 • const_eval_method_invocation
+  error • The property 'video' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:880:60 • unchecked_use_of_nullable_value
+  error • The method 'link' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:897:27 • unchecked_use_of_nullable_value
+  error • The property 'pollOptions' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:900:27 • unchecked_use_of_nullable_value
+  error • The method 'status' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:905:25 • unchecked_use_of_nullable_value
+  error • The method 'recipients' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:907:27 • unchecked_use_of_nullable_value
+  error • The argument type 'int' can't be assigned to the parameter type 'String'.  • lib/features/admin/admin_broadcast_screen.dart:907:38 • argument_type_not_assignable
+  error • 2 positional arguments expected by 'recipients', but 1 found • lib/features/admin/admin_broadcast_screen.dart:907:63 • not_enough_positional_arguments
+  error • The method 'opened' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:909:27 • unchecked_use_of_nullable_value
+  error • The method 'clicked' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:911:27 • unchecked_use_of_nullable_value
+  error • The argument type 'int' can't be assigned to the parameter type 'String'.  • lib/features/admin/admin_broadcast_screen.dart:911:35 • argument_type_not_assignable
+  error • 2 positional arguments expected by 'clicked', but 1 found • lib/features/admin/admin_broadcast_screen.dart:911:56 • not_enough_positional_arguments
+  error • The method 'created' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:913:25 • unchecked_use_of_nullable_value
+  error • The argument type 'DateTime' can't be assigned to the parameter type 'String'.  • lib/features/admin/admin_broadcast_screen.dart:913:33 • argument_type_not_assignable
+  error • 2 positional arguments expected by 'created', but 1 found • lib/features/admin/admin_broadcast_screen.dart:913:50 • not_enough_positional_arguments
+  error • The method 'scheduled' can't be unconditionally invoked because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:915:27 • unchecked_use_of_nullable_value
+  error • The argument type 'DateTime' can't be assigned to the parameter type 'String'.  • lib/features/admin/admin_broadcast_screen.dart:915:37 • argument_type_not_assignable
+  error • 2 positional arguments expected by 'scheduled', but 1 found • lib/features/admin/admin_broadcast_screen.dart:915:58 • not_enough_positional_arguments
+  error • The property 'close' can't be unconditionally accessed because the receiver can be 'null' • lib/features/admin/admin_broadcast_screen.dart:922:30 • unchecked_use_of_nullable_value
+warning • The left operand can't be null, so the right operand is never executed • lib/features/admin/admin_dashboard_screen.dart:57:43 • dead_null_aware_expression
+warning • The value of the local variable 'l10n' isn't used • lib/features/admin/ambassador_admin_dashboard.dart:66:11 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:203:41 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:206:38 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:220:32 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:259:38 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:347:38 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:404:50 • deprecated_member_use
+   info • 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre • lib/features/admin/ambassador_admin_dashboard.dart:433:62 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:454:37 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:478:38 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:538:54 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:590:38 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:630:42 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:648:38 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:696:22 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:740:38 • deprecated_member_use
+   info • 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre • lib/features/admin/ambassador_admin_dashboard.dart:780:33 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:809:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:858:38 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:954:26 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/ambassador_admin_dashboard.dart:975:38 • deprecated_member_use
+   info • 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre • lib/features/admin/ambassador_admin_dashboard.dart:1017:40 • deprecated_member_use
+warning • The value of the field '_selectedTabIndex' isn't used • lib/features/admin/analytics_dashboard_screen.dart:18:7 • unused_field
+  error • The getter 'analyticsDashboard' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:26:26 • undefined_getter
+  error • The getter 'filters' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:36:27 • undefined_getter
+  error • The getter 'broadcasts' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:52:38 • undefined_getter
+  error • The getter 'formAnalytics' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:53:38 • undefined_getter
+  error • The getter 'totalBroadcasts' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:137:56 • undefined_getter
+  error • The getter 'totalRecipients' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:146:56 • undefined_getter
+  error • The getter 'openRate' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:159:56 • undefined_getter
+  error • The getter 'engagementRate' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:168:56 • undefined_getter
+  error • The getter 'noDataAvailable' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:247:51 • undefined_getter
+  error • The named parameter 'tooltipBgColor' isn't defined • lib/features/admin/analytics_dashboard_screen.dart:337:13 • undefined_named_parameter
+  error • The getter 'data' isn't defined for the type '_AnalyticsDashboardScreenState' • lib/features/admin/analytics_dashboard_screen.dart:339:35 • undefined_getter
+  error • The getter 'breakdown' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:364:43 • undefined_getter
+  error • 2 positional arguments expected by '_buildBreakdownCard', but 0 found • lib/features/admin/analytics_dashboard_screen.dart:372:19 • not_enough_positional_arguments
+  error • The named parameter 'title' isn't defined • lib/features/admin/analytics_dashboard_screen.dart:372:19 • undefined_named_parameter
+  error • The getter 'byCountry' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:372:56 • undefined_getter
+  error • The named parameter 'data' isn't defined • lib/features/admin/analytics_dashboard_screen.dart:373:19 • undefined_named_parameter
+  error • 2 positional arguments expected by '_buildBreakdownCard', but 0 found • lib/features/admin/analytics_dashboard_screen.dart:379:19 • not_enough_positional_arguments
+  error • The named parameter 'title' isn't defined • lib/features/admin/analytics_dashboard_screen.dart:379:19 • undefined_named_parameter
+  error • The getter 'byType' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:379:56 • undefined_getter
+  error • The named parameter 'data' isn't defined • lib/features/admin/analytics_dashboard_screen.dart:380:19 • undefined_named_parameter
+  error • The getter 'noDataAvailable' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:402:50 • undefined_getter
+  error • The getter 'noBroadcastsFound' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:455:51 • undefined_getter
+  error • The getter 'sent' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:505:37 • undefined_getter
+  error • The argument type 'String Function(Object)' can't be assigned to the parameter type 'String'.  • lib/features/admin/analytics_dashboard_screen.dart:506:32 • argument_type_not_assignable
+  error • The argument type 'String Function(String, Object)' can't be assigned to the parameter type 'String'.  • lib/features/admin/analytics_dashboard_screen.dart:507:32 • argument_type_not_assignable
+  error • The getter 'responses' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:509:39 • undefined_getter
+  error • The getter 'openRate' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:515:37 • undefined_getter
+  error • The getter 'clickRate' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:516:37 • undefined_getter
+  error • The getter 'responseRate' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:518:39 • undefined_getter
+  error • The getter 'viewFormAnalytics' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:526:34 • undefined_getter
+  error • The getter 'pending' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:581:46 • undefined_getter
+  error • The getter 'sending' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:584:46 • undefined_getter
+  error • The getter 'sent' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:587:46 • undefined_getter
+  error • The getter 'failed' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:590:46 • undefined_getter
+  error • The getter 'partialSent' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:593:46 • undefined_getter
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/admin/analytics_dashboard_screen.dart:598:30 • deprecated_member_use
+  error • The getter 'noFormBroadcasts' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:611:55 • undefined_getter
+  error • The getter 'totalResponses' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:641:48 • undefined_getter
+  error • The getter 'noFormData' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:648:50 • undefined_getter
+  error • The getter 'responses' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:666:53 • undefined_getter
+  error • The getter 'average' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:669:55 • undefined_getter
+  error • The getter 'mostCommon' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:671:55 • undefined_getter
+  error • The getter 'errorLoadingData' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:740:45 • undefined_getter
+  error • The getter 'today' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:775:21 • undefined_getter
+  error • The getter 'last7Days' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:777:21 • undefined_getter
+  error • The getter 'last30Days' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:779:21 • undefined_getter
+  error • The getter 'customRange' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:781:21 • undefined_getter
+  error • The getter 'filters' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:869:24 • undefined_getter
+  error • The getter 'all' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:893:49 • undefined_getter
+  error • The getter 'timeRange' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:952:24 • undefined_getter
+  error • The getter 'startDate' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:987:32 • undefined_getter
+  error • The getter 'endDate' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:1008:32 • undefined_getter
+  error • The getter 'today' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:1041:21 • undefined_getter
+  error • The getter 'last7Days' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:1043:21 • undefined_getter
+  error • The getter 'last30Days' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:1045:21 • undefined_getter
+  error • The getter 'customRange' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:1047:21 • undefined_getter
+  error • The getter 'exportDataDescription' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:1061:26 • undefined_getter
+warning • The value of the local variable 'csvData' isn't used • lib/features/admin/analytics_dashboard_screen.dart:1070:21 • unused_local_variable
+  error • The getter 'exportComplete' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:1074:45 • undefined_getter
+  error • The getter 'exportFailed' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:1078:48 • undefined_getter
+  error • The getter 'export' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:1082:28 • undefined_getter
+  error • The getter 'formAnalytics' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:1101:27 • undefined_getter
+  error • The getter 'totalResponses' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:1109:28 • undefined_getter
+  error • The getter 'noFormData' isn't defined for the type 'AppLocalizations' • lib/features/admin/analytics_dashboard_screen.dart:1114:27 • undefined_getter
+warning • The value of the local variable 'tabController' isn't used • lib/features/admin/metrics_dashboard.dart:25:11 • unused_local_variable
+  error • The method 'trackFeatureUsage' isn't defined for the type 'AnalyticsService' • lib/features/admin/metrics_dashboard.dart:37:29 • undefined_method
+warning • The value of the local variable 'state' isn't used • lib/features/admin/survey/survey_provider.dart:35:13 • unused_local_variable
+  error • Undefined name 'error' • lib/features/admin/survey/survey_provider.dart:35:38 • undefined_identifier
+  error • Undefined name 'stackTrace' • lib/features/admin/survey/survey_provider.dart:35:45 • undefined_identifier
+warning • The value of the local variable 'state' isn't used • lib/features/admin/survey/survey_provider.dart:45:13 • unused_local_variable
+  error • Undefined name 'error' • lib/features/admin/survey/survey_provider.dart:45:38 • undefined_identifier
+  error • Undefined name 'stackTrace' • lib/features/admin/survey/survey_provider.dart:45:45 • undefined_identifier
+warning • The value of the local variable 'state' isn't used • lib/features/admin/survey/survey_provider.dart:56:13 • unused_local_variable
+  error • Undefined name 'error' • lib/features/admin/survey/survey_provider.dart:56:38 • undefined_identifier
+  error • Undefined name 'stackTrace' • lib/features/admin/survey/survey_provider.dart:56:45 • undefined_identifier
+warning • The value of the local variable 'state' isn't used • lib/features/admin/survey/survey_provider.dart:66:13 • unused_local_variable
+  error • Undefined name 'error' • lib/features/admin/survey/survey_provider.dart:66:38 • undefined_identifier
+  error • Undefined name 'stackTrace' • lib/features/admin/survey/survey_provider.dart:66:45 • undefined_identifier
+warning • The value of the local variable 'file' isn't used • lib/features/admin/ui/media_upload_widget.dart:27:17 • unused_local_variable
+warning • The value of the local variable 'webFile' isn't used • lib/features/admin/ui/media_upload_widget.dart:36:13 • unused_local_variable
+warning • The value of the local variable 'preview' isn't used • lib/features/admin/ui/media_upload_widget.dart:47:13 • unused_local_variable
+  error • The non-nullable local variable 'preview' must be assigned before it can be used • lib/features/admin/ui/media_upload_widget.dart:82:9 • REDACTED_TOKEN
+  error • Undefined name 'q' • lib/features/admin/ui/survey_editor_screen.dart:16:10 • undefined_identifier
+  error • Undefined name 'q' • lib/features/admin/ui/survey_editor_screen.dart:17:7 • undefined_identifier
+  error • Target of URI doesn't exist: 'package:qr_flutter/qr_flutter.dart' • lib/features/ambassador/ambassador_user_dashboard.dart:7:8 • uri_does_not_exist
+warning • The value of the field '_profile' isn't used • lib/features/ambassador/ambassador_user_dashboard.dart:23:22 • unused_field
+warning • The value of the field '_recentReferrals' isn't used • lib/features/ambassador/ambassador_user_dashboard.dart:24:34 • unused_field
+warning • The value of the field '_activeRewards' isn't used • lib/features/ambassador/ambassador_user_dashboard.dart:25:32 • unused_field
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:144:39 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:157:39 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:181:45 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:190:39 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:248:38 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:283:38 • deprecated_member_use
+   info • 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre • lib/features/ambassador/ambassador_user_dashboard.dart:318:58 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:348:43 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:348:76 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:371:51 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:371:84 • deprecated_member_use
+   info • 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre • lib/features/ambassador/ambassador_user_dashboard.dart:395:54 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:460:32 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:504:38 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:571:38 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:629:46 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:629:77 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:667:38 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:705:22 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:707:41 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:750:38 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:778:33 • deprecated_member_use
+   info • 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre • lib/features/ambassador/ambassador_user_dashboard.dart:778:70 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:778:85 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:781:63 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:830:44 • deprecated_member_use
+  error • The method 'QrImageView' isn't defined for the type '_AmbassadorUserDashboardState' • lib/features/ambassador/ambassador_user_dashboard.dart:852:26 • undefined_method
+  error • Undefined name 'QrVersions' • lib/features/ambassador/ambassador_user_dashboard.dart:854:30 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:872:44 • deprecated_member_use
+   info • 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre • lib/features/ambassador/ambassador_user_dashboard.dart:891:46 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:931:38 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/ambassador/ambassador_user_dashboard.dart:1000:32 • deprecated_member_use
+   info • 'Share' is deprecated and shouldn't be used. Use SharePlus instead • lib/features/ambassador/ambassador_user_dashboard.dart:1024:11 • deprecated_member_use
+   info • 'share' is deprecated and shouldn't be used. Use SharePlus.instance.share() instead • lib/features/ambassador/ambassador_user_dashboard.dart:1024:17 • deprecated_member_use
+   info • 'Share' is deprecated and shouldn't be used. Use SharePlus instead • lib/features/ambassador/ambassador_user_dashboard.dart:1040:11 • deprecated_member_use
+   info • 'share' is deprecated and shouldn't be used. Use SharePlus.instance.share() instead • lib/features/ambassador/ambassador_user_dashboard.dart:1040:17 • deprecated_member_use
+   info • 'Share' is deprecated and shouldn't be used. Use SharePlus instead • lib/features/ambassador/ambassador_user_dashboard.dart:1047:11 • deprecated_member_use
+   info • 'share' is deprecated and shouldn't be used. Use SharePlus.instance.share() instead • lib/features/ambassador/ambassador_user_dashboard.dart:1047:17 • deprecated_member_use
+   info • 'Share' is deprecated and shouldn't be used. Use SharePlus instead • lib/features/ambassador/ambassador_user_dashboard.dart:1054:11 • deprecated_member_use
+   info • 'share' is deprecated and shouldn't be used. Use SharePlus.instance.share() instead • lib/features/ambassador/ambassador_user_dashboard.dart:1054:17 • deprecated_member_use
+warning • The value of the local variable 'notificationService' isn't used • lib/features/ambassador_dashboard_screen.dart:38:11 • unused_local_variable
+warning • The value of the local variable 'branchService' isn't used • lib/features/ambassador_dashboard_screen.dart:39:11 • unused_local_variable
+warning • The value of the local variable 'isLoadingBranches' isn't used • lib/features/ambassador_dashboard_screen.dart:52:15 • unused_local_variable
+warning • The value of the local variable 'selectedLanguage' isn't used • lib/features/ambassador_dashboard_screen.dart:307:17 • unused_local_variable
+warning • The value of the local variable 'selectedDateRange' isn't used • lib/features/ambassador_dashboard_screen.dart:308:17 • unused_local_variable
+  error • Undefined name 'stat' • lib/features/ambassador_dashboard_screen.dart:613:10 • undefined_identifier
+  error • Undefined name 'stat' • lib/features/ambassador_dashboard_screen.dart:614:21 • undefined_identifier
+  error • The returned type 'double' isn't returnable from a 'int' function, as required by the closure's context • lib/features/ambassador_dashboard_screen.dart:614:43 • REDACTED_TOKEN
+  error • Undefined name 'stat' • lib/features/ambassador_dashboard_screen.dart:614:47 • undefined_identifier
+  error • Undefined name 'stat' • lib/features/ambassador_dashboard_screen.dart:615:27 • undefined_identifier
+  error • Undefined name 'filteredStats' • lib/features/ambassador_dashboard_screen.dart:704:5 • undefined_identifier
+  error • Undefined name 'filteredChartData' • lib/features/ambassador_dashboard_screen.dart:715:5 • undefined_identifier
+  error • Undefined name 'filteredStats' • lib/features/ambassador_dashboard_screen.dart:715:63 • undefined_identifier
+  error • Undefined name 'filteredStats' • lib/features/ambassador_dashboard_screen.dart:718:14 • undefined_identifier
+  error • Undefined name 'filteredChartData' • lib/features/ambassador_dashboard_screen.dart:719:18 • undefined_identifier
+warning • The value of the local variable 'isRegistered' isn't used • lib/features/ambassador_onboarding_screen.dart:478:15 • unused_local_variable
+warning • The value of the local variable 'ambassadorId0' isn't used • lib/features/ambassador_onboarding_screen.dart:479:15 • unused_local_variable
+warning • The value of the local variable 'shareLink0' isn't used • lib/features/ambassador_onboarding_screen.dart:480:15 • unused_local_variable
+warning • The value of the local variable 'controller' isn't used • lib/features/billing/screens/subscription_screen.dart:42:13 • unused_local_variable
+  error • Target of URI doesn't exist: 'package:appoint/features/booking/domain/entities/booking.freezed.dart' • lib/features/booking/domain/entities/booking.dart:6:6 • uri_does_not_exist
+  error • Target of URI hasn't been generated: 'package:appoint/features/booking/domain/entities/booking.g.dart' • lib/features/booking/domain/entities/booking.dart:7:6 • uri_has_not_been_generated
+  error • The name '_Booking' isn't a type and can't be used in a redirected constructor • lib/features/booking/domain/entities/booking.dart:15:8 • redirect_to_non_class
+  error • The method '_$BookingFromJson' isn't defined for the type 'Booking' • lib/features/booking/domain/entities/booking.dart:18:7 • undefined_method
+  error • The method 'getWeeklyBookingCount' isn't defined for the type 'BookingService' • lib/features/booking/screens/booking_screen.dart:40:64 • undefined_method
+warning • The value of the local variable 'l10n' isn't used • lib/features/calendar/enhanced_calendar_screen.dart:91:11 • unused_local_variable
+  error • Local variable 'state' can't be referenced before it is declared • lib/features/child/providers/child_providers.dart:54:19 • referenced_before_declaration
+  error • Local variable 'state' can't be referenced before it is declared • lib/features/child/providers/child_providers.dart:58:19 • referenced_before_declaration
+  error • Local variable 'state' can't be referenced before it is declared • lib/features/child/providers/child_providers.dart:62:19 • referenced_before_declaration
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/dashboard/enhanced_dashboard_screen.dart:193:30 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/dashboard/enhanced_dashboard_screen.dart:193:54 • deprecated_member_use
+  error • Undefined name 'locale' • lib/features/localization/REDACTED_TOKEN.dart:37:28 • undefined_identifier
+  error • Undefined name 'locale' • lib/features/localization/REDACTED_TOKEN.dart:39:34 • undefined_identifier
+  error • Undefined name 'locale' • lib/features/localization/REDACTED_TOKEN.dart:40:39 • undefined_identifier
+  error • Undefined name 'key' • lib/features/localization/REDACTED_TOKEN.dart:49:28 • undefined_identifier
+  error • Undefined name 'key' • lib/features/localization/REDACTED_TOKEN.dart:54:42 • undefined_identifier
+  error • Undefined name 'AppLocalizations' • lib/features/meetings/screens/create_meeting_screen.dart:47:18 • undefined_identifier
+warning • The value of the local variable 'theme' isn't used • lib/features/meetings/screens/create_meeting_screen.dart:48:11 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/meetings/screens/create_meeting_screen.dart:155:68 • deprecated_member_use
+  error • Undefined class 'AppLocalizations' • lib/features/meetings/screens/create_meeting_screen.dart:184:33 • undefined_class
+  error • Undefined class 'AppLocalizations' • lib/features/meetings/screens/create_meeting_screen.dart:221:32 • undefined_class
+  error • Undefined class 'AppLocalizations' • lib/features/meetings/screens/create_meeting_screen.dart:263:32 • undefined_class
+  error • Undefined class 'AppLocalizations' • lib/features/meetings/screens/create_meeting_screen.dart:295:36 • undefined_class
+  error • Undefined class 'AppLocalizations' • lib/features/meetings/screens/create_meeting_screen.dart:374:37 • undefined_class
+  error • The name 'Chat' is defined in the libraries 'package:appoint/features/messaging/models/chat.dart' and 'package:appoint/features/messaging/models/message.dart' • lib/features/messaging/screens/chat_screen.dart:24:82 • ambiguous_import
+  error • The name 'Chat' is defined in the libraries 'package:appoint/features/messaging/models/chat.dart' and 'package:appoint/features/messaging/models/message.dart' • lib/features/messaging/screens/chat_screen.dart:31:14 • ambiguous_import
+  error • The name 'Chat' is defined in the libraries 'package:appoint/features/messaging/models/chat.dart' and 'package:appoint/features/messaging/models/message.dart' • lib/features/messaging/screens/chat_screen.dart:42:9 • ambiguous_import
+warning • The value of the field '_messages' isn't used • lib/features/messaging/screens/chat_screen.dart:55:17 • unused_field
+  error • Undefined name 'messagingServiceProvider' • lib/features/messaging/screens/messages_list_screen.dart:8:28 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/messaging/widgets/message_bubble.dart:193:41 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/messaging/widgets/message_bubble.dart:222:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/messaging/widgets/message_bubble.dart:260:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/messaging/widgets/message_bubble.dart:285:52 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/messaging/widgets/message_bubble.dart:335:41 • deprecated_member_use
+  error • Undefined name 'fcmTokenProvider' • lib/features/notifications/notification_settings_screen.dart:15:34 • undefined_identifier
+  error • The method 'trackOnboardingStart' isn't defined for the type 'AnalyticsService' • lib/features/onboarding/onboarding_screen.dart:77:24 • undefined_method
+  error • The method 'trackOnboardingStep' isn't defined for the type 'AnalyticsService' • lib/features/onboarding/onboarding_screen.dart:81:24 • undefined_method
+  error • The class 'OnboardingService' doesn't have an unnamed constructor • lib/features/onboarding/onboarding_screen.dart:119:13 • REDACTED_TOKEN
+  error • The method 'trackOnboardingComplete' isn't defined for the type 'AnalyticsService' • lib/features/onboarding/onboarding_screen.dart:120:26 • undefined_method
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/onboarding/onboarding_screen.dart:224:33 • deprecated_member_use
+warning • The value of the field '_selectedCountry' isn't used • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:34:11 • unused_field
+warning • The value of the field '_selectedTimezone' isn't used • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:35:11 • unused_field
+warning • The value of the local variable 'currentStep' isn't used • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:62:11 • unused_local_variable
+warning • The value of the local variable 'userType' isn't used • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:63:11 • unused_local_variable
+warning • The value of the local variable 'l10n' isn't used • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:64:11 • unused_local_variable
+  error • Undefined name '_currentPage' • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:101:23 • undefined_identifier
+  error • Undefined name '_onboardingPages' • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:104:30 • undefined_identifier
+  error • The method '_buildOnboardingPage' isn't defined for the type '_EnhancedOnboardingScreenState' • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:105:52 • undefined_method
+  error • Undefined name '_onboardingPages' • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:105:73 • undefined_identifier
+  error • Undefined name '_onboardingPages' • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:113:19 • undefined_identifier
+  error • Undefined name '_currentPage' • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:120:30 • undefined_identifier
+  error • Undefined name '_currentPage' • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:133:23 • undefined_identifier
+  error • Undefined name '_currentPage' • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:148:27 • undefined_identifier
+  error • Undefined name '_onboardingPages' • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:148:42 • undefined_identifier
+  error • Undefined name '_currentPage' • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:159:23 • undefined_identifier
+  error • Undefined name '_onboardingPages' • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:159:38 • undefined_identifier
+warning • The declaration '_buildProgressIndicator' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:173:10 • unused_element
+warning • The value of the local variable 'isCurrent' isn't used • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:178:17 • unused_local_variable
+warning • The declaration '_buildWelcomeStep' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:194:10 • unused_element
+warning • The declaration '_buildUserTypeStep' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:256:10 • unused_element
+warning • The declaration '_buildLanguageStep' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:356:10 • unused_element
+warning • The declaration '_buildProfileStep' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:417:10 • unused_element
+warning • The declaration '_buildPreferencesStep' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:488:10 • unused_element
+warning • The declaration '_buildCompletionStep' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:575:10 • unused_element
+warning • The declaration '_buildNavigationButtons' isn't referenced • lib/features/onboarding/screens/enhanced_onboarding_screen.dart:643:10 • unused_element
+warning • The value of the local variable 'errorMessage' isn't used • lib/features/payments/payment_screen.dart:34:13 • unused_local_variable
+warning • The value of the local variable 'isLoading' isn't used • lib/features/payments/subscription_management_screen.dart:32:17 • unused_local_variable
+warning • The value of the local variable 'isLoading' isn't used • lib/features/payments/subscription_management_screen.dart:40:15 • unused_local_variable
+warning • The value of the local variable 'errorMessage' isn't used • lib/features/payments/subscription_screen.dart:40:17 • unused_local_variable
+warning • The value of the local variable 'isLoading' isn't used • lib/features/payments/subscription_screen.dart:41:17 • unused_local_variable
+warning • The value of the local variable 'webViewController' isn't used • lib/features/payments/subscription_screen.dart:62:13 • unused_local_variable
+  error • Undefined name 'id' • lib/features/personal_scheduler/screens/personal_scheduler_screen.dart:176:17 • undefined_identifier
+  error • Undefined name 'id' • lib/features/personal_scheduler/screens/personal_scheduler_screen.dart:180:23 • undefined_identifier
+warning • The value of the local variable 'minAge' isn't used • lib/features/playtime/screens/create_game_screen.dart:262:21 • unused_local_variable
+warning • The value of the local variable 'maxAge' isn't used • lib/features/playtime/screens/create_game_screen.dart:263:21 • unused_local_variable
+warning • The value of the local variable 'maxParticipants' isn't used • lib/features/playtime/screens/create_game_screen.dart:286:21 • unused_local_variable
+warning • The value of the local variable 'estimatedDuration' isn't used • lib/features/playtime/screens/create_game_screen.dart:309:21 • unused_local_variable
+warning • The value of the local variable 'selectedImage' isn't used • lib/features/playtime/screens/create_game_screen.dart:400:15 • unused_local_variable
+  error • The method 'logScreenView' isn't defined for the type 'AnalyticsService' • lib/features/playtime/screens/playtime_landing_screen.dart:16:22 • undefined_method
+  error • The method 'logEvent' isn't defined for the type 'AnalyticsService' • lib/features/playtime/screens/playtime_landing_screen.dart:112:30 • undefined_method
+  error • The method 'logEvent' isn't defined for the type 'AnalyticsService' • lib/features/playtime/screens/playtime_landing_screen.dart:129:30 • undefined_method
+warning • The value of the local variable 'selectedGame' isn't used • lib/features/playtime/screens/playtime_live_screen.dart:31:11 • unused_local_variable
+  error • The getter 'playtime' isn't defined for the type 'AppLocalizations' • lib/features/playtime/screens/playtime_screen.dart:29:26 • undefined_getter
+warning • The left operand can't be null, so the right operand is never executed • lib/features/playtime/screens/playtime_screen.dart:115:49 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/playtime/screens/playtime_screen.dart:124:51 • dead_null_aware_expression
+  error • The method 'getCurrentTicketCount' isn't defined for the type 'PlaytimeService' • lib/features/playtime/screens/playtime_screen.dart:140:31 • undefined_method
+  error • The getter 'tickets' isn't defined for the type 'AppLocalizations' • lib/features/playtime/screens/playtime_screen.dart:169:26 • undefined_getter
+  error • The getter 'ticketsEarned' isn't defined for the type 'AppLocalizations' • lib/features/playtime/screens/playtime_screen.dart:188:22 • undefined_getter
+  error • The method 'canEarnMoreToday' isn't defined for the type 'PlaytimeService' • lib/features/playtime/screens/playtime_screen.dart:201:31 • undefined_method
+  error • The getter 'playNow' isn't defined for the type 'AppLocalizations' • lib/features/playtime/screens/playtime_screen.dart:242:39 • undefined_getter
+  error • The getter 'dailyLimitReached' isn't defined for the type 'AppLocalizations' • lib/features/playtime/screens/playtime_screen.dart:243:39 • undefined_getter
+  error • The method 'canEarnMoreToday' isn't defined for the type 'PlaytimeService' • lib/features/playtime/screens/playtime_screen.dart:258:31 • undefined_method
+  error • The getter 'dailyProgress' isn't defined for the type 'AppLocalizations' • lib/features/playtime/screens/playtime_screen.dart:290:26 • undefined_getter
+  error • The getter 'ticketsEarned' isn't defined for the type 'AppLocalizations' • lib/features/playtime/screens/playtime_screen.dart:306:50 • undefined_getter
+warning • The value of the local variable 'errorMessage' isn't used • lib/features/playtime/screens/playtime_screen.dart:351:13 • unused_local_variable
+  error • The method 'grantTicket' isn't defined for the type 'PlaytimeService' • lib/features/playtime/screens/playtime_screen.dart:362:29 • undefined_method
+  error • The getter 'ticketEarned' isn't defined for the type 'AppLocalizations' • lib/features/playtime/screens/playtime_screen.dart:369:45 • undefined_getter
+  error • The getter 'errorOccurred' isn't defined for the type 'AppLocalizations' • lib/features/playtime/screens/playtime_screen.dart:381:45 • undefined_getter
+warning • The value of the local variable 'selectedGame' isn't used • lib/features/playtime/screens/playtime_virtual_screen.dart:29:11 • unused_local_variable
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: CustomBackgroundPicker.onBackgroundSelected • lib/features/playtime/widgets/custom_background_picker.dart:14:7 • must_be_immutable
+  error • Can't define a const constructor for a class with non-final fields • lib/features/playtime/widgets/custom_background_picker.dart:16:9 • REDACTED_TOKEN
+warning • The value of the local variable 'selectedBackgroundId' isn't used • lib/features/playtime/widgets/custom_background_picker.dart:39:11 • unused_local_variable
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: _UploadBackgroundDialog.onBackgroundUploaded • lib/features/playtime/widgets/custom_background_picker.dart:302:7 • must_be_immutable
+  error • Can't define a const constructor for a class with non-final fields • lib/features/playtime/widgets/custom_background_picker.dart:304:9 • REDACTED_TOKEN
+warning • The value of the local variable 'selectedImage' isn't used • lib/features/playtime/widgets/custom_background_picker.dart:642:15 • unused_local_variable
+  error • The constructor being called isn't a const constructor • lib/features/profile/enhanced_profile_screen.dart:21:18 • const_with_non_const
+warning • The value of the local variable 'l10n' isn't used • lib/features/profile/enhanced_profile_screen.dart:83:11 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/profile/enhanced_profile_screen.dart:223:26 • deprecated_member_use
+  error • Missing concrete implementation of 'abstract class State<T extends StatefulWidget> with Diagnosticable.build' • lib/features/profile/ui/edit_profile_screen.dart:13:7 • REDACTED_TOKEN
+warning • The declaration 'build' isn't referenced • lib/features/profile/ui/edit_profile_screen.dart:38:10 • unused_element
+warning • The value of the local variable 'requiredPoints' isn't used • lib/features/rewards/services/rewards_service.dart:234:13 • unused_local_variable
+warning • The value of the local variable 'showSuggestions' isn't used • lib/features/search/screens/search_screen.dart:73:13 • unused_local_variable
+warning • The value of the local variable 'isSearching' isn't used • lib/features/search/screens/search_screen.dart:81:15 • unused_local_variable
+warning • The value of the local variable 'showSuggestions' isn't used • lib/features/search/screens/search_screen.dart:108:13 • unused_local_variable
+warning • The value of the local variable 'isSearching' isn't used • lib/features/search/screens/search_screen.dart:109:13 • unused_local_variable
+  error • The method 'push' isn't defined for the type 'BuildContext' • lib/features/search/screens/search_screen.dart:370:17 • undefined_method
+  error • The method 'push' isn't defined for the type 'BuildContext' • lib/features/search/screens/search_screen.dart:372:17 • undefined_method
+  error • The method 'push' isn't defined for the type 'BuildContext' • lib/features/search/screens/search_screen.dart:374:17 • undefined_method
+warning • The value of the local variable 'filters' isn't used • lib/features/search/widgets/search_filters_sheet.dart:57:11 • unused_local_variable
+warning • The value of the local variable 'selectedCategory' isn't used • lib/features/search/widgets/search_filters_sheet.dart:78:11 • unused_local_variable
+warning • The value of the local variable 'selectedSortBy' isn't used • lib/features/search/widgets/search_filters_sheet.dart:79:11 • unused_local_variable
+warning • The value of the local variable 'availabilityOnly' isn't used • lib/features/search/widgets/search_filters_sheet.dart:80:11 • unused_local_variable
+warning • The value of the local variable 'selectedCategory' isn't used • lib/features/search/widgets/search_filters_sheet.dart:116:13 • unused_local_variable
+warning • The value of the local variable 'selectedSortBy' isn't used • lib/features/search/widgets/search_filters_sheet.dart:117:13 • unused_local_variable
+warning • The value of the local variable 'availabilityOnly' isn't used • lib/features/search/widgets/search_filters_sheet.dart:118:13 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/search/widgets/search_result_card.dart:149:34 • deprecated_member_use
+warning • The value of the local variable 'l10n' isn't used • lib/features/settings/enhanced_settings_screen.dart:33:11 • unused_local_variable
+  error • The method 'logScreenView' isn't defined for the type 'AnalyticsService' • lib/features/settings/settings_screen.dart:25:22 • undefined_method
+  error • The method 'logEvent' isn't defined for the type 'AnalyticsService' • lib/features/settings/settings_screen.dart:43:34 • undefined_method
+  error • The method 'logEvent' isn't defined for the type 'AnalyticsService' • lib/features/settings/settings_screen.dart:56:34 • undefined_method
+  error • The method 'logEvent' isn't defined for the type 'AnalyticsService' • lib/features/settings/settings_screen.dart:69:34 • undefined_method
+  error • The method 'logEvent' isn't defined for the type 'AnalyticsService' • lib/features/settings/settings_screen.dart:84:36 • undefined_method
+warning • The value of the local variable 'startTime' isn't used • lib/features/studio/screens/slot_dialog.dart:30:13 • unused_local_variable
+warning • The value of the local variable 'endTime' isn't used • lib/features/studio/screens/slot_dialog.dart:31:13 • unused_local_variable
+warning • The value of the local variable 'selectedSlot' isn't used • lib/features/studio/studio_booking_screen.dart:50:15 • unused_local_variable
+warning • The value of the local variable 'selectedSlot' isn't used • lib/features/studio/studio_booking_screen.dart:81:27 • unused_local_variable
+  error • The name 'BusinessProfile' isn't a type, so it can't be used as a type argument • lib/features/studio_business/providers/business_subscription_provider.dart:86:52 • non_type_as_type_argument
+  error • The name 'BusinessProfile' isn't a type, so it can't be used as a type argument • lib/features/studio_business/providers/business_subscription_provider.dart:90:53 • non_type_as_type_argument
+  error • Undefined class 'BusinessProfile' • lib/features/studio_business/providers/business_subscription_provider.dart:157:30 • undefined_class
+  error • Undefined name 'thirtyDaysAgo' • lib/features/studio_business/providers/meetings_per_day_provider.dart:14:5 • undefined_identifier
+  error • Undefined name 'thirtyDaysAgo' • lib/features/studio_business/providers/meetings_per_day_provider.dart:18:48 • undefined_identifier
+  error • Undefined name 'doc' • lib/features/studio_business/providers/meetings_per_day_provider.dart:21:10 • undefined_identifier
+  error • Undefined name 'doc' • lib/features/studio_business/providers/meetings_per_day_provider.dart:22:35 • undefined_identifier
+  error • Undefined name 'doc' • lib/features/studio_business/screens/analytics_screen.dart:160:10 • undefined_identifier
+  error • Undefined name 'doc' • lib/features/studio_business/screens/analytics_screen.dart:161:25 • undefined_identifier
+  error • Undefined name 'doc' • lib/features/studio_business/screens/analytics_screen.dart:171:10 • undefined_identifier
+  error • Undefined name 'doc' • lib/features/studio_business/screens/analytics_screen.dart:172:25 • undefined_identifier
+  error • Undefined name 'doc' • lib/features/studio_business/screens/analytics_screen.dart:182:10 • undefined_identifier
+  error • Undefined name 'doc' • lib/features/studio_business/screens/analytics_screen.dart:183:25 • undefined_identifier
+  error • Undefined name 'doc' • lib/features/studio_business/screens/analytics_screen.dart:194:10 • undefined_identifier
+  error • Undefined name 'doc' • lib/features/studio_business/screens/analytics_screen.dart:195:25 • undefined_identifier
+warning • The value of the local variable 'tabController' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:21:11 • unused_local_variable
+warning • The value of the local variable 'crossAxisCount' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:263:17 • unused_local_variable
+warning • The value of the local variable 'childAspectRatio' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:264:17 • unused_local_variable
+warning • The value of the local variable 'crossAxisCount' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:267:17 • unused_local_variable
+warning • The value of the local variable 'childAspectRatio' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:268:17 • unused_local_variable
+warning • The value of the local variable 'crossAxisCount' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:271:17 • unused_local_variable
+warning • The value of the local variable 'childAspectRatio' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:272:17 • unused_local_variable
+warning • The value of the local variable 'crossAxisCount' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:275:17 • unused_local_variable
+warning • The value of the local variable 'childAspectRatio' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:276:17 • unused_local_variable
+  error • The non-nullable local variable 'crossAxisCount' must be assigned before it can be used • lib/features/studio_business/screens/business_calendar_screen.dart:281:29 • REDACTED_TOKEN
+  error • The non-nullable local variable 'childAspectRatio' must be assigned before it can be used • lib/features/studio_business/screens/business_calendar_screen.dart:282:31 • REDACTED_TOKEN
+warning • The value of the local variable 'crossAxisCount' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:370:17 • unused_local_variable
+warning • The value of the local variable 'childAspectRatio' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:371:17 • unused_local_variable
+warning • The value of the local variable 'crossAxisCount' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:374:17 • unused_local_variable
+warning • The value of the local variable 'childAspectRatio' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:375:17 • unused_local_variable
+warning • The value of the local variable 'crossAxisCount' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:378:17 • unused_local_variable
+warning • The value of the local variable 'childAspectRatio' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:379:17 • unused_local_variable
+warning • The value of the local variable 'crossAxisCount' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:382:17 • unused_local_variable
+warning • The value of the local variable 'childAspectRatio' isn't used • lib/features/studio_business/screens/business_calendar_screen.dart:383:17 • unused_local_variable
+  error • The non-nullable local variable 'crossAxisCount' must be assigned before it can be used • lib/features/studio_business/screens/business_calendar_screen.dart:388:29 • REDACTED_TOKEN
+  error • The non-nullable local variable 'childAspectRatio' must be assigned before it can be used • lib/features/studio_business/screens/business_calendar_screen.dart:389:31 • REDACTED_TOKEN
+  error • Undefined name '_formKey' • lib/features/studio_business/screens/business_connect_screen.dart:91:10 • undefined_identifier
+  error • The function 'setState' isn't defined • lib/features/studio_business/screens/business_connect_screen.dart:94:5 • undefined_function
+  error • Undefined name '_isConnecting' • lib/features/studio_business/screens/business_connect_screen.dart:94:20 • undefined_identifier
+  error • Undefined name '_codeController' • lib/features/studio_business/screens/business_connect_screen.dart:98:27 • undefined_identifier
+  error • Undefined name 'mounted' • lib/features/studio_business/screens/business_connect_screen.dart:112:11 • undefined_identifier
+  error • Undefined name 'context' • lib/features/studio_business/screens/business_connect_screen.dart:113:30 • undefined_identifier
+  error • Undefined name 'context' • lib/features/studio_business/screens/business_connect_screen.dart:117:40 • undefined_identifier
+  error • Undefined name 'context' • lib/features/studio_business/screens/business_connect_screen.dart:120:28 • undefined_identifier
+  error • Undefined name 'mounted' • lib/features/studio_business/screens/business_connect_screen.dart:124:11 • undefined_identifier
+  error • The function 'setState' isn't defined • lib/features/studio_business/screens/business_connect_screen.dart:125:9 • undefined_function
+  error • Undefined name '_isConnecting' • lib/features/studio_business/screens/business_connect_screen.dart:125:24 • undefined_identifier
+warning • The value of the local variable 'bytes' isn't used • lib/features/studio_business/screens/business_profile_screen.dart:728:15 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/studio_business/screens/business_subscription_screen.dart:302:52 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/studio_business/screens/business_subscription_screen.dart:538:45 • deprecated_member_use
+  error • Undefined name 'mounted' • lib/features/studio_business/screens/rooms_screen.dart:361:11 • undefined_identifier
+  error • Undefined name 'context' • lib/features/studio_business/screens/rooms_screen.dart:362:30 • undefined_identifier
+  error • Undefined name 'context' • lib/features/studio_business/screens/rooms_screen.dart:367:30 • undefined_identifier
+  error • Missing concrete implementation of 'abstract class State<T extends StatefulWidget> with Diagnosticable.build' • lib/features/studio_business/screens/settings_screen.dart:14:7 • REDACTED_TOKEN
+warning • The value of the local variable 'autoConfirmBookings' isn't used • lib/features/studio_business/screens/settings_screen.dart:40:17 • unused_local_variable
+warning • The value of the local variable 'emailNotifications' isn't used • lib/features/studio_business/screens/settings_screen.dart:41:17 • unused_local_variable
+warning • The value of the local variable 'smsNotifications' isn't used • lib/features/studio_business/screens/settings_screen.dart:42:17 • unused_local_variable
+warning • The declaration '_saveSettings' isn't referenced • lib/features/studio_business/screens/settings_screen.dart:50:16 • unused_element
+  error • Undefined name '_saveSettings' • lib/features/studio_business/screens/settings_screen.dart:85:24 • undefined_identifier
+  error • Undefined name '_notificationsEnabled' • lib/features/studio_business/screens/settings_screen.dart:101:20 • undefined_identifier
+  error • The function 'setState' isn't defined • lib/features/studio_business/screens/settings_screen.dart:103:15 • undefined_function
+  error • Undefined name '_notificationsEnabled' • lib/features/studio_business/screens/settings_screen.dart:104:17 • undefined_identifier
+  error • Undefined name '_emailNotifications' • lib/features/studio_business/screens/settings_screen.dart:111:20 • undefined_identifier
+  error • The function 'setState' isn't defined • lib/features/studio_business/screens/settings_screen.dart:113:15 • undefined_function
+  error • Undefined name '_emailNotifications' • lib/features/studio_business/screens/settings_screen.dart:114:17 • undefined_identifier
+  error • Undefined name '_smsNotifications' • lib/features/studio_business/screens/settings_screen.dart:121:20 • undefined_identifier
+  error • The function 'setState' isn't defined • lib/features/studio_business/screens/settings_screen.dart:123:15 • undefined_function
+  error • Undefined name '_smsNotifications' • lib/features/studio_business/screens/settings_screen.dart:124:17 • undefined_identifier
+  error • Undefined name '_autoConfirmBookings' • lib/features/studio_business/screens/settings_screen.dart:138:20 • undefined_identifier
+  error • The function 'setState' isn't defined • lib/features/studio_business/screens/settings_screen.dart:140:15 • undefined_function
+  error • Undefined name '_autoConfirmBookings' • lib/features/studio_business/screens/settings_screen.dart:141:17 • undefined_identifier
+  error • Undefined name 'mounted' • lib/features/studio_business/screens/settings_screen.dart:170:21 • undefined_identifier
+  error • Expected a method, getter, setter or operator declaration • lib/features/studio_business/screens/settings_screen.dart:208:3 • expected_executable
+  error • Expected a method, getter, setter or operator declaration • lib/features/studio_business/screens/settings_screen.dart:209:1 • expected_executable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/studio_business/screens/studio_booking_screen.dart:165:45 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/studio_business/screens/studio_booking_screen.dart:167:64 • deprecated_member_use
+warning • The value of the local variable 'service' isn't used • lib/features/studio_profile/studio_profile_screen.dart:24:11 • unused_local_variable
+warning • The value of the local variable 'loading' isn't used • lib/features/studio_profile/studio_profile_screen.dart:33:13 • unused_local_variable
+  error • The parameter 'paymentMethods' can't have a value of 'null' because of its type, but the implicit default value is 'null' • lib/features/subscriptions/models/subscription.dart:120:10 • REDACTED_TOKEN
+  error • The parameter 'billingHistory' can't have a value of 'null' because of its type, but the implicit default value is 'null' • lib/features/subscriptions/models/subscription.dart:121:10 • REDACTED_TOKEN
+  error • The parameter 'usageStats' can't have a value of 'null' because of its type, but the implicit default value is 'null' • lib/features/subscriptions/models/subscription.dart:122:10 • REDACTED_TOKEN
+  error • Undefined name 'context' • lib/features/subscriptions/screens/subscription_screen.dart:382:31 • undefined_identifier
+  error • Instance member 'initialize' can't be accessed using static access • lib/main.dart:37:31 • REDACTED_TOKEN
+  error • Undefined name 'offlineRepository' • lib/main_offline_example.dart:16:3 • undefined_identifier
+  error • Undefined name 'offlineRepository' • lib/main_offline_example.dart:17:9 • undefined_identifier
+  error • Undefined class 'Booking' • lib/main_offline_example.dart:35:30 • undefined_class
+  error • The name 'Booking' isn't a type, so it can't be used as a type argument • lib/main_offline_example.dart:45:15 • non_type_as_type_argument
+  error • Undefined class 'Color' • lib/models/ambassador_profile.dart:124:3 • undefined_class
+  error • The name 'Color' isn't a class • lib/models/ambassador_profile.dart:127:22 • creation_with_non_type
+  error • The name 'Color' isn't a class • lib/models/ambassador_profile.dart:129:22 • creation_with_non_type
+  error • The name 'Color' isn't a class • lib/models/ambassador_profile.dart:131:22 • creation_with_non_type
+warning • The annotation 'JsonKey.new' can only be used on fields or getters • lib/models/app_user.dart:22:6 • invalid_annotation_target
+  error • The argument type 'List<dynamic>' can't be assigned to the parameter type 'List<DateTime>'.  • lib/models/family_link.dart:18:22 • argument_type_not_assignable
+  error • The argument type 'DateTime Function(String)' can't be assigned to the parameter type 'dynamic Function(dynamic)'.  • lib/models/family_link.dart:19:18 • argument_type_not_assignable
+  error • Undefined name 'numOfFields' • lib/models/hive_adapters.dart:11:5 • undefined_identifier
+  error • Undefined name 'numOfFields' • lib/models/hive_adapters.dart:13:27 • undefined_identifier
+  error • Undefined name 'numOfFields' • lib/models/hive_adapters.dart:88:5 • undefined_identifier
+  error • Undefined name 'numOfFields' • lib/models/hive_adapters.dart:90:27 • undefined_identifier
+warning • The annotation 'JsonSerializable.new' can only be used on classes • lib/models/service_offering.dart:8:4 • invalid_annotation_target
+  error • Undefined name 'parts' • lib/models/time_of_day_converter.dart:9:5 • undefined_identifier
+  error • Undefined name 'parts' • lib/models/time_of_day_converter.dart:11:23 • undefined_identifier
+  error • Undefined name 'parts' • lib/models/time_of_day_converter.dart:12:25 • undefined_identifier
+  error • Undefined name 'h' • lib/models/time_of_day_converter.dart:18:5 • undefined_identifier
+  error • Undefined name 'm' • lib/models/time_of_day_converter.dart:19:5 • undefined_identifier
+  error • Undefined name 'h' • lib/models/time_of_day_converter.dart:20:14 • undefined_identifier
+  error • Undefined name 'm' • lib/models/time_of_day_converter.dart:20:17 • undefined_identifier
+  error • The getter 'future' isn't defined for the type 'FutureProviderFamily<UserProfile?, String>' • lib/providers/admin_broadcast_provider.dart:18:58 • undefined_getter
+  error • The argument type 'Object' can't be assigned to the parameter type 'UserProfile'.  • lib/providers/admin_broadcast_provider.dart:24:37 • argument_type_not_assignable
+  error • The method 'getDashboardStats' isn't defined for the type 'AdminService' • lib/providers/admin_provider.dart:52:23 • undefined_method
+  error • The method 'getTotalUsersCount' isn't defined for the type 'AdminService' • lib/providers/admin_provider.dart:64:23 • undefined_method
+  error • The method 'deleteUser' isn't defined for the type 'AdminService' • lib/providers/admin_provider.dart:77:26 • undefined_method
+warning • The value of the local variable 'state' isn't used • lib/providers/ambassador_data_provider.dart:37:13 • unused_local_variable
+  error • Undefined name 'stackTrace' • lib/providers/ambassador_data_provider.dart:39:35 • undefined_identifier
+warning • The value of the local variable 'chatSubscription' isn't used • lib/providers/booking_draft_provider.dart:80:11 • unused_local_variable
+warning • The value of the local variable 'typingSubscription' isn't used • lib/providers/booking_draft_provider.dart:94:11 • unused_local_variable
+warning • The value of the local variable 'parsedDate' isn't used • lib/providers/booking_draft_provider.dart:219:15 • unused_local_variable
+warning • The value of the local variable 'state' isn't used • lib/providers/care_providers_provider.dart:18:13 • unused_local_variable
+warning • The value of the local variable 'state' isn't used • lib/providers/care_providers_provider.dart:20:13 • unused_local_variable
+  error • Undefined name 'st' • lib/providers/care_providers_provider.dart:20:41 • undefined_identifier
+warning • The value of the local variable 'state' isn't used • lib/providers/content_provider.dart:38:13 • unused_local_variable
+warning • The value of the local variable 'state' isn't used • lib/providers/content_provider.dart:40:13 • unused_local_variable
+  error • Undefined name 'st' • lib/providers/content_provider.dart:40:41 • undefined_identifier
+warning • The value of the local variable 'currentUser' isn't used • lib/providers/fcm_token_provider.dart:75:11 • unused_local_variable
+warning • The value of the local variable 'currentUser' isn't used • lib/providers/fcm_token_provider.dart:86:13 • unused_local_variable
+warning • The value of the local variable 'state' isn't used • lib/providers/game_provider.dart:19:13 • unused_local_variable
+  error • Undefined name 'error' • lib/providers/game_provider.dart:19:38 • undefined_identifier
+  error • Undefined name 'stackTrace' • lib/providers/game_provider.dart:19:45 • undefined_identifier
+  error • Local variable 'state' can't be referenced before it is declared • lib/providers/game_provider.dart:25:28 • referenced_before_declaration
+  error • The final variable 'state' can't be read because it's potentially unassigned at this point • lib/providers/game_provider.dart:25:28 • REDACTED_TOKEN
+warning • The value of the local variable 'state' isn't used • lib/providers/game_provider.dart:28:13 • unused_local_variable
+  error • Undefined name 'error' • lib/providers/game_provider.dart:28:38 • undefined_identifier
+  error • Undefined name 'stackTrace' • lib/providers/game_provider.dart:28:45 • undefined_identifier
+  error • Local variable 'state' can't be referenced before it is declared • lib/providers/game_provider.dart:34:28 • referenced_before_declaration
+  error • The final variable 'state' can't be read because it's potentially unassigned at this point • lib/providers/game_provider.dart:34:28 • REDACTED_TOKEN
+warning • The value of the local variable 'state' isn't used • lib/providers/game_provider.dart:39:13 • unused_local_variable
+  error • Undefined name 'error' • lib/providers/game_provider.dart:39:38 • undefined_identifier
+  error • Undefined name 'stackTrace' • lib/providers/game_provider.dart:39:45 • undefined_identifier
+  error • Local variable 'state' can't be referenced before it is declared • lib/providers/game_provider.dart:45:28 • referenced_before_declaration
+  error • The final variable 'state' can't be read because it's potentially unassigned at this point • lib/providers/game_provider.dart:45:28 • REDACTED_TOKEN
+warning • The value of the local variable 'state' isn't used • lib/providers/game_provider.dart:50:13 • unused_local_variable
+  error • Undefined name 'error' • lib/providers/game_provider.dart:50:38 • undefined_identifier
+  error • Undefined name 'stackTrace' • lib/providers/game_provider.dart:50:45 • undefined_identifier
+  error • The name 'PendingNotificationRequest' isn't a type, so it can't be used as a type argument • lib/providers/notification_provider.dart:15:57 • non_type_as_type_argument
+  error • Abstract classes can't be instantiated • lib/providers/notification_provider.dart:25:10 • instantiate_abstract_class
+warning • The value of the local variable 'state' isn't used • lib/providers/playtime_provider.dart:187:13 • unused_local_variable
+  error • Undefined name 'stack' • lib/providers/playtime_provider.dart:187:41 • undefined_identifier
+warning • The value of the local variable 'state' isn't used • lib/providers/playtime_provider.dart:197:13 • unused_local_variable
+  error • Undefined name 'stack' • lib/providers/playtime_provider.dart:197:41 • undefined_identifier
+warning • The value of the local variable 'state' isn't used • lib/providers/playtime_provider.dart:207:13 • unused_local_variable
+  error • Undefined name 'stack' • lib/providers/playtime_provider.dart:207:41 • undefined_identifier
+warning • The value of the local variable 'state' isn't used • lib/providers/playtime_provider.dart:223:13 • unused_local_variable
+  error • Undefined name 'stack' • lib/providers/playtime_provider.dart:223:41 • undefined_identifier
+warning • The value of the local variable 'state' isn't used • lib/providers/playtime_provider.dart:233:13 • unused_local_variable
+  error • Undefined name 'stack' • lib/providers/playtime_provider.dart:233:41 • undefined_identifier
+warning • The value of the local variable 'state' isn't used • lib/providers/playtime_provider.dart:261:13 • unused_local_variable
+  error • Undefined name 'stack' • lib/providers/playtime_provider.dart:261:41 • undefined_identifier
+warning • The value of the local variable 'state' isn't used • lib/providers/playtime_provider.dart:278:13 • unused_local_variable
+  error • Undefined name 'stack' • lib/providers/playtime_provider.dart:278:41 • undefined_identifier
+warning • The value of the local variable 'state' isn't used • lib/providers/REDACTED_TOKEN.dart:20:13 • unused_local_variable
+warning • The value of the local variable 'state' isn't used • lib/providers/REDACTED_TOKEN.dart:22:13 • unused_local_variable
+  error • Undefined name 'st' • lib/providers/REDACTED_TOKEN.dart:22:41 • undefined_identifier
+warning • The value of the local variable 'state' isn't used • lib/providers/studio_appointments_provider.dart:19:13 • unused_local_variable
+warning • The value of the local variable 'state' isn't used • lib/providers/studio_appointments_provider.dart:21:13 • unused_local_variable
+  error • Undefined name 'st' • lib/providers/studio_appointments_provider.dart:21:41 • undefined_identifier
+  error • Local variable 'state' can't be referenced before it is declared • lib/providers/theme_provider.dart:26:19 • referenced_before_declaration
+  error • Local variable 'state' can't be referenced before it is declared • lib/providers/theme_provider.dart:30:19 • referenced_before_declaration
+  error • The argument type 'Object' can't be assigned to the parameter type 'Map<String, dynamic>'.  • lib/services/admin_service.dart:185:37 • argument_type_not_assignable
+  error • The argument type 'Object' can't be assigned to the parameter type 'Map<String, dynamic>'.  • lib/services/admin_service.dart:229:40 • argument_type_not_assignable
+  error • Target of URI doesn't exist: 'package:csv/csv.dart' • lib/services/ambassador_analytics_service.dart:6:8 • uri_does_not_exist
+  error • The name 'ListToCsvConverter' isn't a class • lib/services/ambassador_analytics_service.dart:369:31 • creation_with_non_type
+warning • The value of the field '_auth' isn't used • lib/services/ambassador_automation_service.dart:10:22 • unused_field
+  error • Target of URI doesn't exist: 'package:firebase_dynamic_links/firebase_dynamic_links.dart' • lib/services/ambassador_deep_link_service.dart:5:8 • uri_does_not_exist
+  error • Undefined name 'FirebaseDynamicLinks' • lib/services/ambassador_deep_link_service.dart:23:15 • undefined_identifier
+  error • Undefined name 'FirebaseDynamicLinks' • lib/services/ambassador_deep_link_service.dart:30:5 • undefined_identifier
+  error • The method 'DynamicLinkParameters' isn't defined for the type 'AmbassadorDeepLinkService' • lib/services/ambassador_deep_link_service.dart:45:26 • undefined_method
+  error • The name 'AndroidParameters' isn't a class • lib/services/ambassador_deep_link_service.dart:48:34 • creation_with_non_type
+  error • The name 'IOSParameters' isn't a class • lib/services/ambassador_deep_link_service.dart:52:30 • creation_with_non_type
+  error • The method 'SocialMetaTagParameters' isn't defined for the type 'AmbassadorDeepLinkService' • lib/services/ambassador_deep_link_service.dart:57:34 • undefined_method
+  error • The name 'DynamicLinkParametersOptions' isn't a class • lib/services/ambassador_deep_link_service.dart:63:45 • creation_with_non_type
+  error • Undefined name 'ShortDynamicLinkPathLength' • lib/services/ambassador_deep_link_service.dart:64:39 • undefined_identifier
+  error • Undefined name 'FirebaseDynamicLinks' • lib/services/ambassador_deep_link_service.dart:69:17 • undefined_identifier
+   info • 'Share' is deprecated and shouldn't be used. Use SharePlus instead • lib/services/ambassador_deep_link_service.dart:123:15 • deprecated_member_use
+   info • 'share' is deprecated and shouldn't be used. Use SharePlus.instance.share() instead • lib/services/ambassador_deep_link_service.dart:123:21 • deprecated_member_use
+   info • 'Share' is deprecated and shouldn't be used. Use SharePlus instead • lib/services/ambassador_deep_link_service.dart:171:13 • deprecated_member_use
+   info • 'share' is deprecated and shouldn't be used. Use SharePlus.instance.share() instead • lib/services/ambassador_deep_link_service.dart:171:19 • deprecated_member_use
+  error • Undefined class 'PendingDynamicLinkData' • lib/services/ambassador_deep_link_service.dart:274:35 • undefined_class
+  error • Const variables must be initialized with a constant value • lib/services/ambassador_mobile_notifications.dart:223:16 • REDACTED_TOKEN
+  error • Invalid constant value • lib/services/ambassador_mobile_notifications.dart:223:16 • invalid_constant
+  error • The getter '_firestore' isn't defined for the type 'AmbassadorNotificationService' • lib/services/ambassador_mobile_notifications.dart:247:60 • undefined_getter
+   info • 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion • lib/services/ambassador_mobile_notifications.dart:418:73 • deprecated_member_use
+  error • The argument type 'Object' can't be assigned to the parameter type 'Map<String, dynamic>'.  • lib/services/ambassador_service.dart:34:40 • argument_type_not_assignable
+  error • The argument type 'Map<String, dynamic>?' can't be assigned to the parameter type 'Map<String, Object>?'.  • lib/services/analytics/analytics_service.dart:35:19 • argument_type_not_assignable
+  error • The argument type 'Map<String, dynamic>?' can't be assigned to the parameter type 'Map<String, Object>?'.  • lib/services/analytics/analytics_service.dart:356:19 • argument_type_not_assignable
+warning • The value of the local variable 'analyticsData' isn't used • lib/services/analytics_service.dart:185:13 • unused_local_variable
+  error • Members can't be declared to be both 'final' and 'var' • lib/services/analytics_service.dart:195:13 • final_and_var
+  error • Members can't be declared to be both 'final' and 'var' • lib/services/analytics_service.dart:196:13 • final_and_var
+  error • A value of type 'double' can't be assigned to a variable of type 'int' • lib/services/analytics_service.dart:205:22 • invalid_assignment
+  error • The getter 'sentCount' isn't defined for the type 'AdminBroadcastMessage' • lib/services/analytics_service.dart:205:30 • undefined_getter
+  error • A value of type 'double' can't be assigned to a variable of type 'int' • lib/services/analytics_service.dart:208:27 • invalid_assignment
+  error • The getter 'formResponseCount' isn't defined for the type 'AdminBroadcastMessage' • lib/services/analytics_service.dart:208:35 • undefined_getter
+  error • Members can't be declared to be both 'final' and 'var' • lib/services/analytics_service.dart:233:13 • final_and_var
+  error • Members can't be declared to be both 'final' and 'var' • lib/services/analytics_service.dart:234:13 • final_and_var
+  error • Members can't be declared to be both 'final' and 'var' • lib/services/analytics_service.dart:235:13 • final_and_var
+  error • The argument type 'num' can't be assigned to the parameter type 'double'.  • lib/services/analytics_service.dart:246:19 • argument_type_not_assignable
+  error • The argument type 'num' can't be assigned to the parameter type 'double'.  • lib/services/analytics_service.dart:247:20 • argument_type_not_assignable
+  error • The argument type 'num' can't be assigned to the parameter type 'double'.  • lib/services/analytics_service.dart:248:23 • argument_type_not_assignable
+  error • The argument type 'num' can't be assigned to the parameter type 'double'.  • lib/services/analytics_service.dart:249:23 • argument_type_not_assignable
+  error • The argument type 'num' can't be assigned to the parameter type 'double'.  • lib/services/analytics_service.dart:250:25 • argument_type_not_assignable
+  error • Members can't be declared to be both 'final' and 'var' • lib/services/analytics_service.dart:268:13 • final_and_var
+  error • Members can't be declared to be both 'final' and 'var' • lib/services/analytics_service.dart:339:13 • final_and_var
+  error • The getter 'sentCount' isn't defined for the type 'AdminBroadcastMessage' • lib/services/analytics_service.dart:354:28 • undefined_getter
+  error • The getter 'formResponseCount' isn't defined for the type 'AdminBroadcastMessage' • lib/services/analytics_service.dart:357:33 • undefined_getter
+  error • The getter 'sentCount' isn't defined for the type 'AdminBroadcastMessage' • lib/services/analytics_service.dart:358:27 • undefined_getter
+  error • The getter 'sentCount' isn't defined for the type 'AdminBroadcastMessage' • lib/services/analytics_service.dart:358:56 • undefined_getter
+  error • The getter 'sentCount' isn't defined for the type 'AdminBroadcastMessage' • lib/services/analytics_service.dart:359:53 • undefined_getter
+  error • The getter 'sentCount' isn't defined for the type 'AdminBroadcastMessage' • lib/services/analytics_service.dart:364:31 • undefined_getter
+  error • The getter 'sentCount' isn't defined for the type 'AdminBroadcastMessage' • lib/services/analytics_service.dart:364:60 • undefined_getter
+  error • The getter 'formResponseCount' isn't defined for the type 'AdminBroadcastMessage' • lib/services/analytics_service.dart:365:25 • undefined_getter
+  error • The getter 'sentCount' isn't defined for the type 'AdminBroadcastMessage' • lib/services/analytics_service.dart:365:59 • undefined_getter
+  error • The getter 'sentCount' isn't defined for the type 'AdminBroadcastMessage' • lib/services/analytics_service.dart:368:25 • undefined_getter
+  error • The getter 'sentCount' isn't defined for the type 'AdminBroadcastMessage' • lib/services/analytics_service.dart:370:33 • undefined_getter
+  error • The getter 'sentCount' isn't defined for the type 'AdminBroadcastMessage' • lib/services/analytics_service.dart:370:62 • undefined_getter
+  error • The getter 'sentCount' isn't defined for the type 'AdminBroadcastMessage' • lib/services/analytics_service.dart:371:85 • undefined_getter
+warning • The value of the field '_maxRetries' isn't used • lib/services/api/api_client.dart:337:20 • unused_field
+  error • Target of URI doesn't exist: 'package:appoint/models/business.dart' • lib/services/api/booking_api_service.dart:2:8 • uri_does_not_exist
+  error • Target of URI doesn't exist: 'package:appoint/models/service.dart' • lib/services/api/booking_api_service.dart:3:8 • uri_does_not_exist
+  error • Target of URI doesn't exist: 'package:appoint/models/chat.dart' • lib/services/api/messaging_api_service.dart:1:8 • uri_does_not_exist
+  error • Target of URI doesn't exist: 'package:appoint/models/message.dart' • lib/services/api/messaging_api_service.dart:2:8 • uri_does_not_exist
+  error • The name 'Chat' isn't a type, so it can't be used as a type argument • lib/services/api/messaging_api_service.dart:12:15 • non_type_as_type_argument
+  error • Undefined name 'Chat' • lib/services/api/messaging_api_service.dart:19:24 • undefined_identifier
+  error • The name 'Message' isn't a type, so it can't be used as a type argument • lib/services/api/messaging_api_service.dart:26:15 • non_type_as_type_argument
+  error • Undefined name 'Message' • lib/services/api/messaging_api_service.dart:42:27 • undefined_identifier
+  error • The name 'Message' isn't a type, so it can't be used as a type argument • lib/services/api/messaging_api_service.dart:49:10 • non_type_as_type_argument
+  error • Undefined name 'Message' • lib/services/api/messaging_api_service.dart:65:14 • undefined_identifier
+  error • The name 'Chat' isn't a type, so it can't be used as a type argument • lib/services/api/messaging_api_service.dart:72:10 • non_type_as_type_argument
+  error • Undefined name 'Chat' • lib/services/api/messaging_api_service.dart:85:14 • undefined_identifier
+  error • The name 'Chat' isn't a type, so it can't be used as a type argument • lib/services/api/messaging_api_service.dart:92:10 • non_type_as_type_argument
+  error • Undefined name 'Chat' • lib/services/api/messaging_api_service.dart:98:14 • undefined_identifier
+  error • The name 'Message' isn't a type, so it can't be used as a type argument • lib/services/api/messaging_api_service.dart:136:10 • non_type_as_type_argument
+  error • Undefined name 'Message' • lib/services/api/messaging_api_service.dart:147:14 • undefined_identifier
+  error • The name 'Message' isn't a type, so it can't be used as a type argument • lib/services/api/messaging_api_service.dart:154:10 • non_type_as_type_argument
+  error • The method 'File' isn't defined for the type 'MessagingApiService' • lib/services/api/messaging_api_service.dart:163:9 • undefined_method
+  error • Undefined name 'Message' • lib/services/api/messaging_api_service.dart:170:14 • undefined_identifier
+  error • The name 'Message' isn't a type, so it can't be used as a type argument • lib/services/api/messaging_api_service.dart:190:15 • non_type_as_type_argument
+  error • Undefined name 'Message' • lib/services/api/messaging_api_service.dart:210:27 • undefined_identifier
+  error • The name 'Chat' isn't a type, so it can't be used as a type argument • lib/services/api/messaging_api_service.dart:341:15 • non_type_as_type_argument
+  error • Undefined name 'Chat' • lib/services/api/messaging_api_service.dart:348:24 • undefined_identifier
+  error • Target of URI doesn't exist: 'package:appoint/models/payment.dart' • lib/services/api/payment_api_service.dart:1:8 • uri_does_not_exist
+  error • Target of URI doesn't exist: 'package:appoint/models/subscription.dart' • lib/services/api/payment_api_service.dart:2:8 • uri_does_not_exist
+  error • The name 'SubscriptionPlan' isn't a type, so it can't be used as a type argument • lib/services/api/payment_api_service.dart:12:15 • non_type_as_type_argument
+  error • Undefined name 'SubscriptionPlan' • lib/services/api/payment_api_service.dart:19:24 • undefined_identifier
+  error • The name 'Subscription' isn't a type, so it can't be used as a type argument • lib/services/api/payment_api_service.dart:26:10 • non_type_as_type_argument
+  error • Undefined name 'Subscription' • lib/services/api/payment_api_service.dart:36:14 • undefined_identifier
+  error • The name 'Subscription' isn't a type, so it can't be used as a type argument • lib/services/api/payment_api_service.dart:43:10 • non_type_as_type_argument
+  error • Undefined name 'Subscription' • lib/services/api/payment_api_service.dart:58:14 • undefined_identifier
+  error • The name 'Subscription' isn't a type, so it can't be used as a type argument • lib/services/api/payment_api_service.dart:83:10 • non_type_as_type_argument
+  error • Undefined name 'Subscription' • lib/services/api/payment_api_service.dart:89:14 • undefined_identifier
+  error • The name 'Subscription' isn't a type, so it can't be used as a type argument • lib/services/api/payment_api_service.dart:96:10 • non_type_as_type_argument
+  error • Undefined name 'Subscription' • lib/services/api/payment_api_service.dart:109:14 • undefined_identifier
+  error • The name 'Subscription' isn't a type, so it can't be used as a type argument • lib/services/api/payment_api_service.dart:116:10 • non_type_as_type_argument
+  error • Undefined name 'Subscription' • lib/services/api/payment_api_service.dart:129:14 • undefined_identifier
+  error • The name 'Payment' isn't a type, so it can't be used as a type argument • lib/services/api/payment_api_service.dart:261:10 • non_type_as_type_argument
+  error • Undefined name 'Payment' • lib/services/api/payment_api_service.dart:280:14 • undefined_identifier
+  error • The name 'Payment' isn't a type, so it can't be used as a type argument • lib/services/api/payment_api_service.dart:287:10 • non_type_as_type_argument
+  error • Undefined name 'Payment' • lib/services/api/payment_api_service.dart:293:14 • undefined_identifier
+  error • The name 'Payment' isn't a type, so it can't be used as a type argument • lib/services/api/payment_api_service.dart:300:10 • non_type_as_type_argument
+  error • Undefined name 'Payment' • lib/services/api/payment_api_service.dart:314:14 • undefined_identifier
+  error • Two keys in a constant map literal can't be equal • lib/services/api/real_api_config.dart:187:5 • equal_keys_in_const_map
+  error • Two keys in a constant map literal can't be equal • lib/services/api/real_api_config.dart:209:5 • equal_keys_in_const_map
+  error • Two keys in a constant map literal can't be equal • lib/services/api/real_api_config.dart:216:5 • equal_keys_in_const_map
+  error • Target of URI doesn't exist: 'package:appoint/models/business.dart' • lib/services/api/search_api_service.dart:1:8 • uri_does_not_exist
+  error • Target of URI doesn't exist: 'package:appoint/models/professional.dart' • lib/services/api/search_api_service.dart:2:8 • uri_does_not_exist
+  error • Target of URI doesn't exist: 'package:appoint/models/service.dart' • lib/services/api/search_api_service.dart:3:8 • uri_does_not_exist
+  error • The name 'Service' isn't a type, so it can't be used as a type argument • lib/services/api/search_api_service.dart:196:15 • non_type_as_type_argument
+  error • Undefined name 'Service' • lib/services/api/search_api_service.dart:218:27 • undefined_identifier
+  error • Target of URI doesn't exist: 'package:appoint/models/payment.dart' • lib/services/api/stripe_payment_service.dart:1:8 • uri_does_not_exist
+  error • Target of URI doesn't exist: 'package:appoint/models/subscription.dart' • lib/services/api/stripe_payment_service.dart:2:8 • uri_does_not_exist
+  error • Undefined name 'Stripe' • lib/services/api/stripe_payment_service.dart:15:11 • undefined_identifier
+  error • Undefined name 'Stripe' • lib/services/api/stripe_payment_service.dart:51:35 • undefined_identifier
+  error • The name 'Subscription' isn't a type, so it can't be used as a type argument • lib/services/api/stripe_payment_service.dart:90:10 • non_type_as_type_argument
+  error • Undefined name 'Subscription' • lib/services/api/stripe_payment_service.dart:107:14 • undefined_identifier
+  error • The name 'Subscription' isn't a type, so it can't be used as a type argument • lib/services/api/stripe_payment_service.dart:114:10 • non_type_as_type_argument
+  error • Undefined name 'Subscription' • lib/services/api/stripe_payment_service.dart:130:14 • undefined_identifier
+  error • Undefined name 'Stripe' • lib/services/api/stripe_payment_service.dart:266:28 • undefined_identifier
+  error • Undefined name 'SetupIntentsStatus' • lib/services/api/stripe_payment_service.dart:275:28 • undefined_identifier
+  error • The name 'Payment' isn't a type, so it can't be used as a type argument • lib/services/api/stripe_payment_service.dart:317:15 • non_type_as_type_argument
+  error • Undefined name 'Payment' • lib/services/api/stripe_payment_service.dart:334:27 • undefined_identifier
+warning • Dead code • lib/services/auth_service.dart:105:5 • dead_code
+warning • The value of the local variable 'schedulerTimer' isn't used • lib/services/broadcast_scheduler_service.dart:26:11 • unused_local_variable
+warning • The declaration '_getTargetUsers' isn't referenced • lib/services/broadcast_service.dart:132:29 • unused_element
+  error • Spread elements in map literals must implement 'Map' • lib/services/broadcast_service.dart:175:20 • not_map_spread
+  error • Undefined name 'doc' • lib/services/business_analytics_service.dart:21:12 • undefined_identifier
+  error • Undefined name 'doc' • lib/services/business_analytics_service.dart:22:20 • undefined_identifier
+  error • Undefined name 'doc' • lib/services/business_analytics_service.dart:44:12 • undefined_identifier
+  error • Undefined name 'doc' • lib/services/business_analytics_service.dart:45:25 • undefined_identifier
+  error • Undefined name 'doc' • lib/services/business_analytics_service.dart:65:12 • undefined_identifier
+  error • Undefined name 'doc' • lib/services/business_analytics_service.dart:66:23 • undefined_identifier
+  error • Undefined name 'doc' • lib/services/business_analytics_service.dart:67:25 • undefined_identifier
+  error • Local variable 'query' can't be referenced before it is declared • lib/services/content_service.dart:22:21 • referenced_before_declaration
+warning • The declaration '_handleDeepLink' isn't referenced • lib/services/custom_deep_link_service.dart:73:16 • unused_element
+  error • Undefined name 'kDebugMode' • lib/services/error/error_handler.dart:274:9 • undefined_identifier
+  error • The named parameter 'secondaryAction' isn't defined • lib/services/error/error_handler.dart:301:7 • undefined_named_parameter
+  error • The named parameter 'onSecondaryPressed' isn't defined • lib/services/error/error_handler.dart:302:7 • undefined_named_parameter
+warning • The declaration '_showErrorDialog' isn't referenced • lib/services/error/error_handler.dart:314:8 • unused_element
+  error • The name '_showErrorDialog' is already defined • lib/services/error/error_handler.dart:314:8 • duplicate_definition
+warning • The declaration '_formSubmissionsCollection' isn't referenced • lib/services/meeting_service.dart:16:27 • unused_element
+warning • The value of the field '_functions' isn't used • lib/services/notification_service.dart:15:27 • unused_field
+  error • A value of type 'StreamSubscription<List<ConnectivityResult>>' can't be assigned to a variable of type 'StreamSubscription<ConnectivityResult>?' • lib/services/offline_booking_repository.dart:65:33 • invalid_assignment
+  error • The argument type 'void Function(ConnectivityResult)' can't be assigned to the parameter type 'void Function(List<ConnectivityResult>)?'.  • lib/services/offline_booking_repository.dart:66:7 • argument_type_not_assignable
+warning • The declaration '_shouldCloseCircuitBreaker' isn't referenced • lib/services/offline_booking_repository.dart:128:8 • unused_element
+warning • The declaration '_scheduleRetry' isn't referenced • lib/services/offline_booking_repository.dart:137:8 • unused_element
+  error • The method 'debugPrint' isn't defined for the type 'OfflineBookingRepository' • lib/services/offline_booking_repository.dart:144:11 • undefined_method
+  error • Undefined name 'offlineBooking' • lib/services/offline_booking_repository.dart:249:10 • undefined_identifier
+  error • Undefined name 'offlineBooking' • lib/services/offline_booking_repository.dart:250:20 • undefined_identifier
+  error • Undefined name 'doc' • lib/services/offline_booking_repository.dart:264:16 • undefined_identifier
+  error • Undefined name 'doc' • lib/services/offline_booking_repository.dart:266:38 • undefined_identifier
+  error • Undefined name 'doc' • lib/services/offline_booking_repository.dart:266:56 • undefined_identifier
+  error • Undefined name 'doc' • lib/services/offline_booking_repository.dart:269:51 • undefined_identifier
+  error • The method 'debugPrint' isn't defined for the type 'OfflineBookingRepository' • lib/services/offline_booking_repository.dart:278:9 • undefined_method
+  error • Undefined name 'operation' • lib/services/offline_booking_repository.dart:420:14 • undefined_identifier
+  error • Undefined name 'operation' • lib/services/offline_booking_repository.dart:422:53 • undefined_identifier
+  error • Undefined name 'operation' • lib/services/offline_booking_repository.dart:424:19 • undefined_identifier
+  error • Undefined name 'operation' • lib/services/offline_booking_repository.dart:426:37 • undefined_identifier
+  error • Undefined name 'operation' • lib/services/offline_booking_repository.dart:428:40 • undefined_identifier
+  error • Undefined name 'operation' • lib/services/offline_booking_repository.dart:433:25 • undefined_identifier
+warning • The left operand can't be null, so the right operand is never executed • lib/services/offline_booking_repository.dart:475:42 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/services/offline_booking_repository.dart:476:42 • dead_null_aware_expression
+  error • Undefined name 'id' • lib/services/offline_booking_repository.dart:500:10 • undefined_identifier
+  error • Undefined name 'id' • lib/services/offline_booking_repository.dart:501:40 • undefined_identifier
+  error • Undefined name 'id' • lib/services/offline_booking_repository.dart:504:37 • undefined_identifier
+  error • Undefined name 'id' • lib/services/offline_booking_repository.dart:507:13 • undefined_identifier
+  error • Undefined name 'cutoffDate' • lib/services/offline_booking_repository.dart:521:5 • undefined_identifier
+  error • Undefined name 'cutoffDate' • lib/services/offline_booking_repository.dart:526:46 • undefined_identifier
+  error • Undefined name 'id' • lib/services/offline_booking_repository.dart:530:10 • undefined_identifier
+  error • Undefined name 'id' • lib/services/offline_booking_repository.dart:531:33 • undefined_identifier
+  error • Undefined name 'failedCutoffDate' • lib/services/offline_booking_repository.dart:535:5 • undefined_identifier
+  error • Undefined name 'failedCutoffDate' • lib/services/offline_booking_repository.dart:539:46 • undefined_identifier
+  error • Undefined name 'id' • lib/services/offline_booking_repository.dart:543:10 • undefined_identifier
+  error • Undefined name 'id' • lib/services/offline_booking_repository.dart:544:33 • undefined_identifier
+  error • Undefined name 'booking' • lib/services/offline_booking_repository.dart:551:10 • undefined_identifier
+  error • Undefined name 'booking' • lib/services/offline_booking_repository.dart:552:11 • undefined_identifier
+  error • Undefined name 'service' • lib/services/offline_booking_repository.dart:554:10 • undefined_identifier
+  error • Undefined name 'service' • lib/services/offline_booking_repository.dart:555:11 • undefined_identifier
+  error • Undefined name 'booking' • lib/services/offline_booking_repository.dart:567:10 • undefined_identifier
+  error • Undefined name 'booking' • lib/services/offline_booking_repository.dart:568:15 • undefined_identifier
+warning • The declaration '_resolveConflict' isn't referenced • lib/services/offline_booking_repository.dart:641:19 • unused_element
+  error • Undefined name 'doc' • lib/services/offline_booking_repository.dart:731:12 • undefined_identifier
+  error • Undefined name 'doc' • lib/services/offline_booking_repository.dart:732:13 • undefined_identifier
+  error • Undefined name 'doc' • lib/services/offline_booking_repository.dart:734:36 • undefined_identifier
+  error • Undefined name 'doc' • lib/services/offline_booking_repository.dart:734:54 • undefined_identifier
+warning • The declaration '_mergeBookings' isn't referenced • lib/services/offline_booking_repository.dart:754:19 • unused_element
+   info • 'calendar' is deprecated and shouldn't be used. Use [calendarWriteOnly] and [calendarFullAccess] • lib/services/permission_service.dart:16:37 • deprecated_member_use
+  error • The non-nullable local variable 'code' must be assigned before it can be used • lib/services/referral_service.dart:40:15 • REDACTED_TOKEN
+  error • The non-nullable local variable 'code' must be assigned before it can be used • lib/services/referral_service.dart:44:12 • REDACTED_TOKEN
+  error • Undefined name 'stack' • lib/services/service_error_handler.dart:7:24 • undefined_identifier
+warning • The value of the local variable 'now' isn't used • lib/services/usage_monitor.dart:91:11 • unused_local_variable
+warning • The value of the local variable 'groupId' isn't used • lib/services/whatsapp_share_service.dart:139:15 • unused_local_variable
+  error • Undefined name 'existingBooking' • lib/utils/booking_helper.dart:112:7 • undefined_identifier
+  error • Undefined name 'existingBooking' • lib/utils/booking_helper.dart:113:11 • undefined_identifier
+  error • Undefined name 'existingBooking' • lib/utils/booking_helper.dart:120:19 • undefined_identifier
+  error • Undefined name 'existingBooking' • lib/utils/booking_helper.dart:121:20 • undefined_identifier
+  error • Undefined name 'existingBooking' • lib/utils/booking_helper.dart:122:22 • undefined_identifier
+  error • Undefined name 'existingBooking' • lib/utils/booking_helper.dart:124:36 • undefined_identifier
+  error • Undefined name 'existingBooking' • lib/utils/booking_helper.dart:133:20 • undefined_identifier
+  error • Undefined name 'existingBooking' • lib/utils/booking_helper.dart:135:36 • undefined_identifier
+  error • Undefined name 'existingBooking' • lib/utils/booking_helper.dart:145:30 • undefined_identifier
+  error • Undefined name 'existingBooking' • lib/utils/booking_helper.dart:146:34 • undefined_identifier
+  error • Undefined name 'existingBooking' • lib/utils/booking_helper.dart:147:34 • undefined_identifier
+  error • Undefined name 'existingBooking' • lib/utils/booking_helper.dart:148:28 • undefined_identifier
+  error • Undefined name 'booking' • lib/utils/booking_helper.dart:171:7 • undefined_identifier
+  error • Undefined name 'booking' • lib/utils/booking_helper.dart:172:11 • undefined_identifier
+  error • Undefined name 'booking' • lib/utils/booking_helper.dart:184:48 • undefined_identifier
+  error • Undefined name 'booking' • lib/utils/booking_helper.dart:186:38 • undefined_identifier
+  error • Undefined name 'duration' • lib/utils/booking_helper.dart:199:7 • undefined_identifier
+  error • Undefined name 'availability' • lib/utils/booking_helper.dart:203:7 • undefined_identifier
+  error • Undefined name 'availability' • lib/utils/booking_helper.dart:204:11 • undefined_identifier
+  error • Undefined name 'localDate' • lib/utils/booking_helper.dart:209:7 • undefined_identifier
+  error • Undefined name 'localDate' • lib/utils/booking_helper.dart:215:9 • undefined_identifier
+  error • Undefined name 'localDate' • lib/utils/booking_helper.dart:216:9 • undefined_identifier
+  error • Undefined name 'localDate' • lib/utils/booking_helper.dart:217:9 • undefined_identifier
+  error • Undefined name 'localDate' • lib/utils/booking_helper.dart:221:9 • undefined_identifier
+  error • Undefined name 'localDate' • lib/utils/booking_helper.dart:222:9 • undefined_identifier
+  error • Undefined name 'localDate' • lib/utils/booking_helper.dart:223:9 • undefined_identifier
+  error • Undefined name 'duration' • lib/utils/booking_helper.dart:230:27 • undefined_identifier
+  error • Undefined name 'slotEnd' • lib/utils/booking_helper.dart:231:9 • undefined_identifier
+  error • Undefined name 'duration' • lib/utils/booking_helper.dart:231:28 • undefined_identifier
+  error • Undefined name 'slotEnd' • lib/utils/booking_helper.dart:234:13 • undefined_identifier
+  error • Undefined name 'isAvailable' • lib/utils/booking_helper.dart:247:13 • undefined_identifier
+  error • Undefined name 'availability' • lib/utils/booking_helper.dart:247:27 • undefined_identifier
+  error • Undefined name 'isAvailable' • lib/utils/booking_helper.dart:251:17 • undefined_identifier
+  error • Undefined name 'isAvailable' • lib/utils/booking_helper.dart:265:11 • undefined_identifier
+  error • Undefined name 'availability' • lib/utils/booking_helper.dart:265:25 • undefined_identifier
+  error • Undefined name 'slotEnd' • lib/utils/booking_helper.dart:266:71 • undefined_identifier
+  error • Undefined name 'isAvailable' • lib/utils/booking_helper.dart:268:15 • undefined_identifier
+  error • Undefined name 'isBooked' • lib/utils/booking_helper.dart:269:13 • undefined_identifier
+  error • Undefined name 'duration' • lib/utils/booking_helper.dart:269:59 • undefined_identifier
+  error • Undefined name 'isBooked' • lib/utils/booking_helper.dart:270:18 • undefined_identifier
+  error • Undefined name 'slotEnd' • lib/utils/booking_helper.dart:273:26 • undefined_identifier
+  error • Undefined name 'now' • lib/utils/booking_helper.dart:297:5 • undefined_identifier
+  error • Undefined name 'now' • lib/utils/booking_helper.dart:298:27 • undefined_identifier
+  error • Undefined name 'maxDate' • lib/utils/booking_helper.dart:303:5 • undefined_identifier
+  error • Undefined name 'now' • lib/utils/booking_helper.dart:303:15 • undefined_identifier
+  error • Undefined name 'maxDate' • lib/utils/booking_helper.dart:304:26 • undefined_identifier
+  error • Undefined name 'staffExists' • lib/utils/booking_helper.dart:310:5 • undefined_identifier
+  error • Undefined name 'staffExists' • lib/utils/booking_helper.dart:311:10 • undefined_identifier
+  error • Undefined name 'serviceExists' • lib/utils/booking_helper.dart:316:5 • undefined_identifier
+  error • Undefined name 'serviceExists' • lib/utils/booking_helper.dart:317:10 • undefined_identifier
+  error • Undefined name 'bookingEnd' • lib/utils/booking_helper.dart:332:5 • undefined_identifier
+  error • Undefined name 'bookingEnd' • lib/utils/booking_helper.dart:333:28 • undefined_identifier
+  error • Undefined name 'bookingEnd' • lib/utils/booking_helper.dart:336:9 • undefined_identifier
+  error • Undefined name 'endTime' • lib/utils/booking_helper.dart:369:5 • undefined_identifier
+  error • Undefined name 'endTime' • lib/utils/booking_helper.dart:374:40 • undefined_identifier
+  error • Undefined name 'snapshot' • lib/utils/booking_helper.dart:377:5 • undefined_identifier
+  error • Undefined name 'snapshot' • lib/utils/booking_helper.dart:380:14 • undefined_identifier
+  error • Undefined name 'snapshot' • lib/utils/booking_helper.dart:383:12 • undefined_identifier
+  error • Undefined name 'data' • lib/utils/booking_helper.dart:397:9 • undefined_identifier
+  error • Undefined name 'data' • lib/utils/booking_helper.dart:399:23 • undefined_identifier
+  error • Undefined name 'data' • lib/utils/booking_helper.dart:400:21 • undefined_identifier
+  error • Undefined name 'endTime' • lib/utils/booking_helper.dart:412:5 • undefined_identifier
+  error • Undefined name 'endTime' • lib/utils/booking_helper.dart:417:40 • undefined_identifier
+  error • Undefined name 'doc' • lib/utils/booking_helper.dart:426:5 • undefined_identifier
+  error • Undefined name 'doc' • lib/utils/booking_helper.dart:427:12 • undefined_identifier
+  error • Undefined name 'doc' • lib/utils/booking_helper.dart:432:5 • undefined_identifier
+  error • Undefined name 'doc' • lib/utils/booking_helper.dart:433:12 • undefined_identifier
+  error • Undefined name 'r' • lib/utils/color_contrast_testing.dart:9:5 • undefined_identifier
+   info • 'red' is deprecated and shouldn't be used. Use (*.r * 255.0).round() & 0xff • lib/utils/color_contrast_testing.dart:9:40 • deprecated_member_use
+  error • Undefined name 'g' • lib/utils/color_contrast_testing.dart:10:5 • undefined_identifier
+   info • 'green' is deprecated and shouldn't be used. Use (*.g * 255.0).round() & 0xff • lib/utils/color_contrast_testing.dart:10:40 • deprecated_member_use
+  error • Undefined name 'b' • lib/utils/color_contrast_testing.dart:11:5 • undefined_identifier
+   info • 'blue' is deprecated and shouldn't be used. Use (*.b * 255.0).round() & 0xff • lib/utils/color_contrast_testing.dart:11:40 • deprecated_member_use
+  error • Undefined name 'r' • lib/utils/color_contrast_testing.dart:13:21 • undefined_identifier
+  error • Undefined name 'g' • lib/utils/color_contrast_testing.dart:13:34 • undefined_identifier
+  error • Undefined name 'b' • lib/utils/color_contrast_testing.dart:13:47 • undefined_identifier
+  error • Undefined name 'luminance1' • lib/utils/color_contrast_testing.dart:26:5 • undefined_identifier
+  error • Undefined name 'luminance2' • lib/utils/color_contrast_testing.dart:27:5 • undefined_identifier
+  error • Undefined name 'luminance1' • lib/utils/color_contrast_testing.dart:29:32 • undefined_identifier
+  error • Undefined name 'luminance2' • lib/utils/color_contrast_testing.dart:29:44 • undefined_identifier
+  error • Undefined name 'luminance1' • lib/utils/color_contrast_testing.dart:30:31 • undefined_identifier
+  error • Undefined name 'luminance2' • lib/utils/color_contrast_testing.dart:30:43 • undefined_identifier
+  error • Undefined name 'ratio' • lib/utils/color_contrast_testing.dart:38:5 • undefined_identifier
+  error • Undefined name 'ratio' • lib/utils/color_contrast_testing.dart:39:26 • undefined_identifier
+  error • Undefined name 'ratio' • lib/utils/color_contrast_testing.dart:39:41 • undefined_identifier
+  error • Undefined name 'ratio' • lib/utils/color_contrast_testing.dart:45:5 • undefined_identifier
+  error • Undefined name 'ratio' • lib/utils/color_contrast_testing.dart:46:26 • undefined_identifier
+  error • Undefined name 'ratio' • lib/utils/color_contrast_testing.dart:46:41 • undefined_identifier
+  error • Undefined name 'ratio' • lib/utils/color_contrast_testing.dart:52:5 • undefined_identifier
+  error • Undefined name 'ratio' • lib/utils/color_contrast_testing.dart:54:9 • undefined_identifier
+  error • Undefined name 'ratio' • lib/utils/color_contrast_testing.dart:55:28 • undefined_identifier
+  error • Undefined name 'ratio' • lib/utils/color_contrast_testing.dart:56:16 • undefined_identifier
+  error • Undefined name 'ratio' • lib/utils/color_contrast_testing.dart:57:23 • undefined_identifier
+  error • Undefined name 'ratio' • lib/utils/color_contrast_testing.dart:58:16 • undefined_identifier
+  error • Undefined name 'ratio' • lib/utils/color_contrast_testing.dart:59:23 • undefined_identifier
+  error • Undefined name 'ratio' • lib/utils/color_contrast_testing.dart:61:23 • undefined_identifier
+  error • Undefined name 'blackContrast' • lib/utils/color_contrast_testing.dart:71:5 • undefined_identifier
+  error • Undefined name 'whiteContrast' • lib/utils/color_contrast_testing.dart:72:5 • undefined_identifier
+  error • Undefined name 'blackContrast' • lib/utils/color_contrast_testing.dart:75:14 • undefined_identifier
+  error • Undefined name 'whiteContrast' • lib/utils/color_contrast_testing.dart:75:31 • undefined_identifier
+  error • Undefined name 'whiteContrast' • lib/utils/color_contrast_testing.dart:77:14 • undefined_identifier
+  error • Undefined name 'blackContrast' • lib/utils/color_contrast_testing.dart:77:31 • undefined_identifier
+  error • Undefined name 'baseLuminance' • lib/utils/color_contrast_testing.dart:85:5 • undefined_identifier
+  error • Undefined name 'factor' • lib/utils/color_contrast_testing.dart:88:7 • undefined_identifier
+  error • Undefined name 'accessibleColor' • lib/utils/color_contrast_testing.dart:89:7 • undefined_identifier
+  error • Undefined name 'factor' • lib/utils/color_contrast_testing.dart:89:58 • undefined_identifier
+  error • Undefined name 'accessibleColor' • lib/utils/color_contrast_testing.dart:90:19 • undefined_identifier
+  error • Undefined name 'hsl' • lib/utils/color_contrast_testing.dart:98:5 • undefined_identifier
+  error • Undefined name 'newLightness' • lib/utils/color_contrast_testing.dart:99:5 • undefined_identifier
+  error • Undefined name 'hsl' • lib/utils/color_contrast_testing.dart:99:21 • undefined_identifier
+  error • Undefined name 'hsl' • lib/utils/color_contrast_testing.dart:100:12 • undefined_identifier
+  error • Undefined name 'newLightness' • lib/utils/color_contrast_testing.dart:100:30 • undefined_identifier
+  error • Undefined name 'results' • lib/utils/color_contrast_testing.dart:156:5 • undefined_identifier
+  error • Undefined name 'report' • lib/utils/color_contrast_testing.dart:157:5 • undefined_identifier
+  error • Undefined name 'report' • lib/utils/color_contrast_testing.dart:159:5 • undefined_identifier
+  error • Undefined name 'report' • lib/utils/color_contrast_testing.dart:160:5 • undefined_identifier
+  error • Undefined name 'report' • lib/utils/color_contrast_testing.dart:161:5 • undefined_identifier
+  error • Undefined name 'results' • lib/utils/color_contrast_testing.dart:163:5 • undefined_identifier
+  error • Undefined name 'report' • lib/utils/color_contrast_testing.dart:165:7 • undefined_identifier
+  error • Undefined name 'results' • lib/utils/color_contrast_testing.dart:169:9 • undefined_identifier
+  error • Undefined name 'results' • lib/utils/color_contrast_testing.dart:170:24 • undefined_identifier
+  error • Undefined name 'passRate' • lib/utils/color_contrast_testing.dart:171:5 • undefined_identifier
+  error • Undefined name 'report' • lib/utils/color_contrast_testing.dart:173:5 • undefined_identifier
+  error • Undefined name 'report' • lib/utils/color_contrast_testing.dart:174:5 • undefined_identifier
+  error • Undefined name 'passRate' • lib/utils/color_contrast_testing.dart:175:60 • undefined_identifier
+  error • Undefined name 'report' • lib/utils/color_contrast_testing.dart:177:12 • undefined_identifier
+  error • Undefined name 'now' • lib/utils/csv_export.dart:9:5 • undefined_identifier
+  error • Undefined name 'thirtyDaysAgo' • lib/utils/csv_export.dart:10:5 • undefined_identifier
+  error • Undefined name 'now' • lib/utils/csv_export.dart:10:21 • undefined_identifier
+  error • Undefined name 'thirtyDaysAgo' • lib/utils/csv_export.dart:14:48 • undefined_identifier
+  error • Undefined name 'doc' • lib/utils/csv_export.dart:21:10 • undefined_identifier
+  error • Undefined name 'date' • lib/utils/csv_export.dart:22:7 • undefined_identifier
+  error • Undefined name 'doc' • lib/utils/csv_export.dart:22:29 • undefined_identifier
+  error • Undefined name 'date' • lib/utils/csv_export.dart:27:14 • undefined_identifier
+  error • Undefined name 'date' • lib/utils/csv_export.dart:27:30 • undefined_identifier
+  error • Undefined name 'entry' • lib/utils/csv_export.dart:29:10 • undefined_identifier
+  error • Undefined name 'entry' • lib/utils/csv_export.dart:30:17 • undefined_identifier
+  error • Undefined name 'entry' • lib/utils/csv_export.dart:30:28 • undefined_identifier
+  error • Undefined name 'tomorrow' • lib/utils/date_extensions.dart:32:5 • undefined_identifier
+  error • Undefined name 'tomorrow' • lib/utils/date_extensions.dart:33:22 • undefined_identifier
+  error • Undefined name 'yesterday' • lib/utils/date_extensions.dart:38:5 • undefined_identifier
+  error • Undefined name 'yesterday' • lib/utils/date_extensions.dart:39:22 • undefined_identifier
+  error • Undefined name 'thisDate' • lib/utils/date_extensions.dart:74:5 • undefined_identifier
+  error • Undefined name 'otherDate' • lib/utils/date_extensions.dart:75:5 • undefined_identifier
+  error • Undefined name 'thisDate' • lib/utils/date_extensions.dart:76:12 • undefined_identifier
+  error • Undefined name 'otherDate' • lib/utils/date_extensions.dart:76:32 • undefined_identifier
+  error • Undefined name 'now' • lib/utils/date_extensions.dart:87:5 • undefined_identifier
+  error • Undefined name 'now' • lib/utils/date_extensions.dart:88:15 • undefined_identifier
+  error • Undefined name 'now' • lib/utils/date_extensions.dart:89:9 • undefined_identifier
+  error • Undefined name 'now' • lib/utils/date_extensions.dart:89:31 • undefined_identifier
+  error • Undefined name 'now' • lib/utils/date_extensions.dart:89:53 • undefined_identifier
+  error • Undefined name 'now' • lib/utils/date_extensions.dart:98:5 • undefined_identifier
+  error • Undefined name 'timeDiff' • lib/utils/date_extensions.dart:99:5 • undefined_identifier
+  error • Undefined name 'now' • lib/utils/date_extensions.dart:99:27 • undefined_identifier
+  error • Undefined name 'timeDiff' • lib/utils/date_extensions.dart:101:9 • undefined_identifier
+  error • Undefined name 'timeDiff' • lib/utils/date_extensions.dart:103:16 • undefined_identifier
+  error • Undefined name 'minutes' • lib/utils/date_extensions.dart:104:7 • undefined_identifier
+  error • Undefined name 'timeDiff' • lib/utils/date_extensions.dart:104:17 • undefined_identifier
+  error • Undefined name 'minutes' • lib/utils/date_extensions.dart:105:14 • undefined_identifier
+  error • Undefined name 'minutes' • lib/utils/date_extensions.dart:105:48 • undefined_identifier
+  error • Undefined name 'timeDiff' • lib/utils/date_extensions.dart:106:16 • undefined_identifier
+  error • Undefined name 'hours' • lib/utils/date_extensions.dart:107:7 • undefined_identifier
+  error • Undefined name 'timeDiff' • lib/utils/date_extensions.dart:107:15 • undefined_identifier
+  error • Undefined name 'hours' • lib/utils/date_extensions.dart:108:14 • undefined_identifier
+  error • Undefined name 'hours' • lib/utils/date_extensions.dart:108:44 • undefined_identifier
+  error • Undefined name 'timeDiff' • lib/utils/date_extensions.dart:109:16 • undefined_identifier
+  error • Undefined name 'days' • lib/utils/date_extensions.dart:110:7 • undefined_identifier
+  error • Undefined name 'timeDiff' • lib/utils/date_extensions.dart:110:14 • undefined_identifier
+  error • Undefined name 'days' • lib/utils/date_extensions.dart:111:14 • undefined_identifier
+  error • Undefined name 'days' • lib/utils/date_extensions.dart:111:42 • undefined_identifier
+  error • Undefined name 'diff' • lib/utils/localized_date_formatter.dart:21:5 • undefined_identifier
+  error • Undefined name 'diff' • lib/utils/localized_date_formatter.dart:22:9 • undefined_identifier
+  error • Undefined name 'diff' • lib/utils/localized_date_formatter.dart:25:9 • undefined_identifier
+  error • Undefined name 'diff' • lib/utils/localized_date_formatter.dart:26:23 • undefined_identifier
+  error • Undefined name 'diff' • lib/utils/localized_date_formatter.dart:36:9 • undefined_identifier
+  error • Undefined name 'diff' • lib/utils/localized_date_formatter.dart:37:21 • undefined_identifier
+  error • Undefined name 'diff' • lib/utils/localized_date_formatter.dart:47:18 • undefined_identifier
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:7:23 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:8:33 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:9:33 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:13:19 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:16:68 • deprecated_member_use
+   info • 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre • lib/widgets/accessibility/accessibility_enhancements.dart:19:71 • deprecated_member_use
+  error • Undefined name 'theme' • lib/widgets/accessibility/accessibility_enhancements.dart:45:5 • undefined_identifier
+  error • Undefined name 'theme' • lib/widgets/accessibility/accessibility_enhancements.dart:53:34 • undefined_identifier
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: AccessibleFormField.validator, AccessibleFormField.onChanged, AccessibleFormField.onSubmitted • lib/widgets/accessibility/accessibility_enhancements.dart:105:7 • must_be_immutable
+  error • Can't define a const constructor for a class with non-final fields • lib/widgets/accessibility/accessibility_enhancements.dart:107:9 • REDACTED_TOKEN
+  error • Undefined name 'theme' • lib/widgets/accessibility/accessibility_enhancements.dart:140:5 • undefined_identifier
+  error • Undefined name 'theme' • lib/widgets/accessibility/accessibility_enhancements.dart:168:22 • undefined_identifier
+  error • Undefined name 'theme' • lib/widgets/accessibility/accessibility_enhancements.dart:175:22 • undefined_identifier
+  error • Undefined name 'theme' • lib/widgets/accessibility/accessibility_enhancements.dart:207:5 • undefined_identifier
+  error • Undefined name 'theme' • lib/widgets/accessibility/accessibility_enhancements.dart:222:24 • undefined_identifier
+  error • Undefined name 'theme' • lib/widgets/accessibility/accessibility_enhancements.dart:225:19 • undefined_identifier
+  error • Undefined name 'theme' • lib/widgets/accessibility/accessibility_enhancements.dart:257:5 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/accessibility/semantic_button.dart:21:51 • deprecated_member_use
+warning • The value of the local variable 'theme' isn't used • lib/widgets/app_attribution.dart:25:11 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/app_attribution.dart:47:46 • deprecated_member_use
+warning • The value of the local variable 'theme' isn't used • lib/widgets/app_attribution.dart:215:11 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/app_logo.dart:74:33 • deprecated_member_use
+warning • This default clause is covered by the previous cases • lib/widgets/auth_wrapper.dart:25:7 • unreachable_switch_default
+   info • 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre • lib/widgets/booking/booking_slot_chip.dart:48:42 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking/booking_slot_chip.dart:78:49 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking/booking_slot_chip.dart:85:39 • deprecated_member_use
+   info • 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre • lib/widgets/booking/booking_slot_chip.dart:90:32 • deprecated_member_use
+   info • 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre • lib/widgets/booking/booking_slot_chip.dart:97:29 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking/booking_slot_chip.dart:105:40 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking/booking_slot_chip.dart:109:37 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking/booking_slot_chip.dart:117:51 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking_confirmation_sheet.dart:94:41 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking_confirmation_sheet.dart:96:60 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking_confirmation_sheet.dart:127:35 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking_confirmation_sheet.dart:129:54 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking_confirmation_sheet.dart:156:46 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/booking_confirmation_sheet.dart:158:65 • deprecated_member_use
+warning • The value of the local variable 'effectiveColumnWidth' isn't used • lib/widgets/calendar/REDACTED_TOKEN.dart:224:15 • unused_local_variable
+warning • The value of the local variable 'effectiveCellHeight' isn't used • lib/widgets/calendar/REDACTED_TOKEN.dart:311:15 • unused_local_variable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/calendar/REDACTED_TOKEN.dart:459:36 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/calendar/REDACTED_TOKEN.dart:510:25 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/calendar/REDACTED_TOKEN.dart:550:32 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/calendar/REDACTED_TOKEN.dart:576:32 • deprecated_member_use
+  error • The getter 'formFields' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:41:20 • undefined_getter
+  error • The getter 'addField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:47:32 • undefined_getter
+  error • The getter 'noFormFields' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:69:24 • undefined_getter
+  error • The getter 'addFormFieldsDescription' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:77:24 • undefined_getter
+  error • The getter 'formPreviewDescription' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:113:26 • undefined_getter
+  error • The getter 'required' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:165:38 • undefined_getter
+  error • The getter 'editField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:192:37 • undefined_getter
+  error • The getter 'deleteField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:197:37 • undefined_getter
+  error • The getter 'enterText' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:233:49 • undefined_getter
+  error • The getter 'enterText' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:244:49 • undefined_getter
+  error • The getter 'enterNumber' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:254:28 • undefined_getter
+  error • The getter 'selectDate' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:320:28 • undefined_getter
+  error • The getter 'selectTime' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:331:28 • undefined_getter
+  error • The getter 'selectDateTime' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:342:28 • undefined_getter
+warning • This default clause is covered by the previous cases • lib/widgets/form_builder.dart:348:7 • unreachable_switch_default
+  error • The getter 'textField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:384:21 • undefined_getter
+  error • The getter 'textAreaField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:386:21 • undefined_getter
+  error • The getter 'numberField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:388:21 • undefined_getter
+  error • The getter 'emailField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:390:21 • undefined_getter
+  error • The getter 'phoneField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:392:21 • undefined_getter
+  error • The getter 'choiceField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:394:21 • undefined_getter
+  error • The getter 'multiselectField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:396:21 • undefined_getter
+  error • The getter 'dateField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:398:21 • undefined_getter
+  error • The getter 'timeField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:400:21 • undefined_getter
+  error • The getter 'dateTimeField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:402:21 • undefined_getter
+  error • The getter 'booleanField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:404:21 • undefined_getter
+  error • The getter 'ratingField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:406:21 • undefined_getter
+  error • The getter 'deleteField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:424:26 • undefined_getter
+  error • The getter 'deleteFieldConfirmation' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:425:28 • undefined_getter
+  error • The getter 'addField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:543:47 • undefined_getter
+  error • The getter 'editField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:543:63 • undefined_getter
+  error • The getter 'fieldType' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:556:37 • undefined_getter
+  error • The getter 'fieldLabel' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:577:37 • undefined_getter
+  error • The getter 'fieldLabelRequired' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:582:35 • undefined_getter
+  error • The getter 'description' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:593:40 • undefined_getter
+  error • The getter 'optional' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:593:61 • undefined_getter
+  error • The getter 'placeholder' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:609:42 • undefined_getter
+  error • The getter 'optional' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:609:63 • undefined_getter
+  error • The getter 'requiredField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:618:36 • undefined_getter
+  error • The getter 'options' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:653:21 • undefined_getter
+  error • The getter 'addOption' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:661:37 • undefined_getter
+  error • The getter 'minValue' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:704:37 • undefined_getter
+  error • The getter 'maxValue' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:716:37 • undefined_getter
+  error • The getter 'minLength' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:736:37 • undefined_getter
+  error • The getter 'maxLength' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:748:37 • undefined_getter
+  error • The getter 'validationPattern' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:761:34 • undefined_getter
+  error • The getter 'optional' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:761:61 • undefined_getter
+  error • The getter 'validationMessage' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:770:34 • undefined_getter
+  error • The getter 'optional' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:770:61 • undefined_getter
+  error • The getter 'textField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:800:21 • undefined_getter
+  error • The getter 'textAreaField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:802:21 • undefined_getter
+  error • The getter 'numberField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:804:21 • undefined_getter
+  error • The getter 'emailField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:806:21 • undefined_getter
+  error • The getter 'phoneField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:808:21 • undefined_getter
+  error • The getter 'choiceField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:810:21 • undefined_getter
+  error • The getter 'multiselectField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:812:21 • undefined_getter
+  error • The getter 'dateField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:814:21 • undefined_getter
+  error • The getter 'timeField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:816:21 • undefined_getter
+  error • The getter 'dateTimeField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:818:21 • undefined_getter
+  error • The getter 'booleanField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:820:21 • undefined_getter
+  error • The getter 'ratingField' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:822:21 • undefined_getter
+  error • The getter 'optionsRequired' isn't defined for the type 'AppLocalizations' • lib/widgets/form_builder.dart:834:62 • undefined_getter
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorFormField.validator, InlineErrorFormField.onChanged, InlineErrorFormField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:5:7 • must_be_immutable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/forms/inline_error_hints.dart:164:49 • deprecated_member_use
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorPasswordField.validator, InlineErrorPasswordField.onChanged, InlineErrorPasswordField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:238:7 • must_be_immutable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/forms/inline_error_hints.dart:349:43 • deprecated_member_use
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorEmailField.onChanged, InlineErrorEmailField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:383:7 • must_be_immutable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/forms/inline_error_hints.dart:484:43 • deprecated_member_use
+warning • This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorPhoneField.onChanged, InlineErrorPhoneField.onSubmitted • lib/widgets/forms/inline_error_hints.dart:518:7 • must_be_immutable
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/forms/inline_error_hints.dart:625:43 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/splash_screen.dart:74:49 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/splash_screen.dart:101:45 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/splash_screen.dart:109:45 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/widgets/splash_screen.dart:121:40 • deprecated_member_use
+

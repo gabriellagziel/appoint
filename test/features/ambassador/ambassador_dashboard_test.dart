@@ -161,7 +161,9 @@ void main() {
       ];
 
       final averageScore = stats.fold<double>(
-              0, (sum, final stat) => sum + stat.surveyScore,) /
+            0,
+            (sum, final stat) => sum + stat.surveyScore,
+          ) /
           stats.length;
       expect(averageScore, equals(4.35));
     });
@@ -185,9 +187,8 @@ void main() {
         ),
       ];
 
-      final maxValue = chartData
-          .map((e) => e.value)
-          .reduce((a, final b) => a > b ? a : b);
+      final maxValue =
+          chartData.map((e) => e.value).reduce((a, final b) => a > b ? a : b);
       expect(maxValue, equals(30.0));
     });
   });

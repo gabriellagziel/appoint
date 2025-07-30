@@ -5,7 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final REDACTED_TOKEN =
     Provider<StaffAvailabilityService>((ref) => StaffAvailabilityService());
 
-final FutureProviderFamily<List<StaffAvailability>, String> staffAvailabilityProvider =
+final FutureProviderFamily<List<StaffAvailability>, String>
+    staffAvailabilityProvider =
     FutureProvider.family<List<StaffAvailability>, String>(
   (ref, final businessProfileId) async {
     final service = ref.read(REDACTED_TOKEN);
@@ -13,7 +14,8 @@ final FutureProviderFamily<List<StaffAvailability>, String> staffAvailabilityPro
   },
 );
 
-final FutureProviderFamily<StaffAvailability?, String> staffAvailabilityByIdProvider =
+final FutureProviderFamily<StaffAvailability?, String>
+    staffAvailabilityByIdProvider =
     FutureProvider.family<StaffAvailability?, String>(
   (ref, final staffProfileId) async {
     final service = ref.read(REDACTED_TOKEN);

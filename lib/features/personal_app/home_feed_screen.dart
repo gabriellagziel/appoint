@@ -9,6 +9,7 @@ class HomeFeedScreen extends StatelessWidget {
     const body = Center(child: Text('Home Feed Screen'));
 
     return const Scaffold(
-      body: body);
+      body: body,
+    );
   }
 }

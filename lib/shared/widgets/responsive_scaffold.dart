@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ResponsiveScaffold extends StatelessWidget {
-
   const ResponsiveScaffold({
-    required this.body, super.key,
+    required this.body,
+    super.key,
     this.drawer,
     this.bottomNavigationBar,
     this.appBar,

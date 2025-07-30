@@ -2615,10 +2615,7 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String tierUpgradeBody(
-    String previousTier,
-    String newTier,
-    String totalReferrals,
-  ) {
+      String previousTier, String newTier, String totalReferrals) {
     return '[GA] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Irish)';
   }
 
@@ -2627,10 +2624,7 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String monthlyReminderBody(
-    String currentReferrals,
-    String targetReferrals,
-    String daysRemaining,
-  ) {
+      String currentReferrals, String targetReferrals, String daysRemaining) {
     return '[GA] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Irish)';
   }
 
@@ -2640,9 +2634,7 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String performanceWarningBody(
-    String currentReferrals,
-    String minimumRequired,
-  ) {
+      String currentReferrals, String minimumRequired) {
     return '[GA] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Irish)';
   }
 
@@ -2730,4 +2722,125 @@ class AppLocalizationsGa extends AppLocalizations {
 
   @override
   String get getStarted => 'Get Started';
+
+  @override
+  String get analyticsDashboard => 'Analytics Dashboard';
+
+  @override
+  String get filters => 'Filters';
+
+  @override
+  String get broadcasts => 'Broadcasts';
+
+  @override
+  String get formAnalytics => 'Form Analytics';
+
+  @override
+  String get totalBroadcasts => 'Total Broadcasts';
+
+  @override
+  String get totalRecipients => 'Total Recipients';
+
+  @override
+  String get openRate => 'Open Rate';
+
+  @override
+  String get engagementRate => 'Engagement Rate';
+
+  @override
+  String get noDataAvailable => 'No data available';
+
+  @override
+  String get breakdown => 'Breakdown';
+
+  @override
+  String get byCountry => 'By Country';
+
+  @override
+  String get byType => 'By Type';
+
+  @override
+  String get noBroadcastsFound => 'No broadcasts found';
+
+  @override
+  String get sent => 'Sent';
+
+  @override
+  String get responses => 'Responses';
+
+  @override
+  String get clickRate => 'Click Rate';
+
+  @override
+  String get responseRate => 'Response Rate';
+
+  @override
+  String get viewFormAnalytics => 'View Form Analytics';
+
+  @override
+  String get pending => 'Pending';
+
+  @override
+  String get sending => 'Sending';
+
+  @override
+  String get failed => 'Failed';
+
+  @override
+  String get partialSent => 'Partial Sent';
+
+  @override
+  String get noFormBroadcasts => 'No form broadcasts';
+
+  @override
+  String get totalResponses => 'Total Responses';
+
+  @override
+  String get noFormData => 'No form data';
+
+  @override
+  String get average => 'Average';
+
+  @override
+  String get mostCommon => 'Most Common';
+
+  @override
+  String get errorLoadingData => 'Error loading data';
+
+  @override
+  String get today => 'Today';
+
+  @override
+  String get last7Days => 'Last 7 Days';
+
+  @override
+  String get last30Days => 'Last 30 Days';
+
+  @override
+  String get customRange => 'Custom Range';
+
+  @override
+  String get all => 'All';
+
+  @override
+  String get timeRange => 'Time Range';
+
+  @override
+  String get startDate => 'Start Date';
+
+  @override
+  String get endDate => 'End Date';
+
+  @override
+  String get exportDataDescription =>
+      'Export analytics data for the selected time range';
+
+  @override
+  String get exportComplete => 'Export complete';
+
+  @override
+  String get exportFailed => 'Export failed';
+
+  @override
+  String get export => 'Export';
 }

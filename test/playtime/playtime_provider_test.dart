@@ -17,14 +17,16 @@ void main() {
     late ProviderContainer container;
 
     setUp(() {
-      container = ProviderContainer(overrides: [
-        allGamesProvider
-            .overrideWith((ref) => Stream.value(<PlaytimeGame>[])),
-        allSessionsProvider
-            .overrideWith((ref) => Stream.value(<PlaytimeSession>[])),
-        allBackgroundsProvider
-            .overrideWith((ref) => Stream.value(<PlaytimeBackground>[])),
-      ],);
+      container = ProviderContainer(
+        overrides: [
+          allGamesProvider
+              .overrideWith((ref) => Stream.value(<PlaytimeGame>[])),
+          allSessionsProvider
+              .overrideWith((ref) => Stream.value(<PlaytimeSession>[])),
+          allBackgroundsProvider
+              .overrideWith((ref) => Stream.value(<PlaytimeBackground>[])),
+        ],
+      );
     });
 
     tearDown(() {
@@ -37,19 +39,37 @@ void main() {
       expect(service, isA<PlaytimeService>());
     });
 
-    test('allGamesProvider should provide list of games', () async {
-      expect(container.read(allGamesProvider),
-          isA<AsyncValue<List<PlaytimeGame>>>(),);
-    }, skip: true,);
+    test(
+      'allGamesProvider should provide list of games',
+      () async {
+        expect(
+          container.read(allGamesProvider),
+          isA<AsyncValue<List<PlaytimeGame>>>(),
+        );
+      },
+      skip: true,
+    );
 
-    test('allSessionsProvider should provide list of sessions', () async {
-      expect(container.read(allSessionsProvider),
-          isA<AsyncValue<List<PlaytimeSession>>>(),);
-    }, skip: true,);
+    test(
+      'allSessionsProvider should provide list of sessions',
+      () async {
+        expect(
+          container.read(allSessionsProvider),
+          isA<AsyncValue<List<PlaytimeSession>>>(),
+        );
+      },
+      skip: true,
+    );
 
-    test('allBackgroundsProvider should provide list of backgrounds', () async {
-      expect(container.read(allBackgroundsProvider),
-          isA<AsyncValue<List<PlaytimeBackground>>>(),);
-    }, skip: true,);
+    test(
+      'allBackgroundsProvider should provide list of backgrounds',
+      () async {
+        expect(
+          container.read(allBackgroundsProvider),
+          isA<AsyncValue<List<PlaytimeBackground>>>(),
+        );
+      },
+      skip: true,
+    );
   });
 }

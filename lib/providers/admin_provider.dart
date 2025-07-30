@@ -3,17 +3,17 @@ import 'package:appoint/models/admin_dashboard_stats.dart';
 import 'package:appoint/models/admin_user.dart';
 import 'package:appoint/models/analytics.dart';
 import 'package:appoint/models/organization.dart';
+import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/services/admin_service.dart';
 import 'package:appoint/services/broadcast_service.dart';
-import 'package:appoint/providers/auth_provider.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// Provider for the admin service
 final adminServiceProvider = Provider<AdminService>((ref) => AdminService());
 
 /// Provider for the broadcast service
-final adminBroadcastServiceProvider = Provider<BroadcastService>((ref) => BroadcastService());
+final adminBroadcastServiceProvider =
+    Provider<BroadcastService>((ref) => BroadcastService());
 
 /// Provider to check if current user has admin privileges
 final isAdminProvider = FutureProvider<bool>((ref) async {
@@ -30,14 +30,15 @@ final isAdminProvider = FutureProvider<bool>((ref) async {
 });
 
 /// Provider for broadcast messages list
-final broadcastMessagesProvider = FutureProvider<List<AdminBroadcastMessage>>((ref) async {
+final broadcastMessagesProvider =
+    FutureProvider<List<AdminBroadcastMessage>>((ref) async {
   final broadcastService = ref.watch(adminBroadcastServiceProvider);
   final isAdmin = await ref.watch(isAdminProvider.future);
-  
+
   if (!isAdmin) {
     throw Exception('Unauthorized: Admin access required');
   }
-  
+
   return broadcastService.getBroadcastMessages().first;
 });
 
@@ -45,43 +46,61 @@ final broadcastMessagesProvider = FutureProvider<List<AdminBroadcastMessage>>((r
 final adminStatsProvider = FutureProvider<Map<String, dynamic>>((ref) async {
   final adminService = ref.watch(adminServiceProvider);
   final isAdmin = await ref.watch(isAdminProvider.future);
-  
+
   if (!isAdmin) {
     throw Exception('Unauthorized: Admin access required');
   }
-  
-  return adminService.getDashboardStats();
+
+  final stats = await adminService.fetchAdminDashboardStats();
+  return {
+    'totalUsers': stats.totalUsers,
+    'activeUsers': stats.activeUsers,
+    'totalBookings': stats.totalBookings,
+    'completedBookings': stats.completedBookings,
+    'pendingBookings': stats.pendingBookings,
+    'totalRevenue': stats.totalRevenue,
+    'adRevenue': stats.adRevenue,
+    'subscriptionRevenue': stats.subscriptionRevenue,
+    'totalOrganizations': stats.totalOrganizations,
+    'activeOrganizations': stats.activeOrganizations,
+    'totalAmbassadors': stats.totalAmbassadors,
+    'activeAmbassadors': stats.activeAmbassadors,
+    'totalErrors': stats.totalErrors,
+    'criticalErrors': stats.criticalErrors,
+  };
 });
 
 /// Provider for total user count
 final totalUsersProvider = FutureProvider<int>((ref) async {
   final adminService = ref.watch(adminServiceProvider);
   final isAdmin = await ref.watch(isAdminProvider.future);
-  
+
   if (!isAdmin) {
     throw Exception('Unauthorized: Admin access required');
   }
-  
-  return adminService.getTotalUsersCount();
+
+  final stats = await adminService.fetchAdminDashboardStats();
+  return stats.totalUsers;
 });
 
 /// Provider for user management operations
 class AdminNotifier extends StateNotifier<AdminState> {
   AdminNotifier(this.ref) : super(const AdminState());
-  
+
   final Ref ref;
-  
+
   Future<void> deleteUser(String userId) async {
     state = state.copyWith(isLoading: true);
     try {
       final adminService = ref.read(adminServiceProvider);
-      await adminService.deleteUser(userId);
+      // For now, we'll update the user's role to 'deleted' instead of actually deleting
+      await adminService.updateUserRole(userId, 'deleted');
       state = state.copyWith(isLoading: false);
     } catch (e) {
       state = state.copyWith(isLoading: false, error: e.toString());
     }
   }
-  
+
   Future<void> updateUserRole(String userId, String newRole) async {
     state = state.copyWith(isLoading: true);
     try {
@@ -100,40 +119,43 @@ class AdminState {
     this.isLoading = false,
     this.error,
   });
-  
+
   final bool isLoading;
   final String? error;
-  
+
   AdminState copyWith({
     bool? isLoading,
     String? error,
-  }) {
-    return AdminState(
-      isLoading: isLoading ?? this.isLoading,
-      error: error ?? this.error,
-    );
-  }
+  }) =>
+      AdminState(
+        isLoading: isLoading ?? this.isLoading,
+        error: error ?? this.error,
+      );
 }
 
 final adminNotifierProvider = StateNotifierProvider<AdminNotifier, AdminState>(
-  (ref) => AdminNotifier(ref),
+  AdminNotifier.new,
 );
 
 // User Management
-final allUsersProvider = FutureProvider<List<AdminUser>>((ref) => ref.read(adminServiceProvider).fetchAllUsers());
+final allUsersProvider = FutureProvider<List<AdminUser>>(
+    (ref) => ref.read(adminServiceProvider).fetchAllUsers());
 
 // Organization Management
-final orgsProvider = FutureProvider<List<Organization>>((ref) => ref.read(adminServiceProvider).fetchOrganizations());
+final orgsProvider = FutureProvider<List<Organization>>(
+    (ref) => ref.read(adminServiceProvider).fetchOrganizations());
 
 // Analytics
-final analyticsProvider = FutureProvider<Analytics>((ref) => ref.read(adminServiceProvider).fetchAnalytics());
+final analyticsProvider = FutureProvider<Analytics>(
+    (ref) => ref.read(adminServiceProvider).fetchAnalytics());
 
 // Admin Dashboard Stats
-final adminDashboardStatsProvider =
-    FutureProvider<AdminDashboardStats>((ref) => ref.read(adminServiceProvider).fetchAdminDashboardStats());
+final adminDashboardStatsProvider = FutureProvider<AdminDashboardStats>(
+    (ref) => ref.read(adminServiceProvider).fetchAdminDashboardStats());
 
 // Error Logs
-final FutureProviderFamily<List<AdminErrorLog>, Map<String, dynamic>> errorLogsProvider =
+final FutureProviderFamily<List<AdminErrorLog>, Map<String, dynamic>>
+    errorLogsProvider =
     FutureProvider.family<List<AdminErrorLog>, Map<String, dynamic>>(
         (ref, final filters) {
   final severity = filters['severity'] as String?;
@@ -150,7 +172,8 @@ final FutureProviderFamily<List<AdminErrorLog>, Map<String, dynamic>> errorLogsP
 });
 
 // Activity Logs
-final FutureProviderFamily<List<AdminActivityLog>, Map<String, dynamic>> activityLogsProvider =
+final FutureProviderFamily<List<AdminActivityLog>, Map<String, dynamic>>
+    activityLogsProvider =
     FutureProvider.family<List<AdminActivityLog>, Map<String, dynamic>>(
         (ref, final filters) {
   final adminId = filters['adminId'] as String?;
@@ -165,17 +188,18 @@ final FutureProviderFamily<List<AdminActivityLog>, Map<String, dynamic>> activit
 });
 
 // Ad Revenue Stats
-final adRevenueStatsProvider = FutureProvider<AdRevenueStats>((ref) => ref.read(adminServiceProvider).fetchAdRevenueStats());
+final adRevenueStatsProvider = FutureProvider<AdRevenueStats>(
+    (ref) => ref.read(adminServiceProvider).fetchAdRevenueStats());
 
 // Monetization Settings
-final monetizationSettingsProvider =
-    FutureProvider<MonetizationSettings>((ref) => ref.read(adminServiceProvider).fetchMonetizationSettings());
+final monetizationSettingsProvider = FutureProvider<MonetizationSettings>(
+    (ref) => ref.read(adminServiceProvider).fetchMonetizationSettings());
 
 // Notifiers for admin actions
-final adminActionsProvider = Provider<AdminActions>((ref) => AdminActions(ref.read(adminServiceProvider)));
+final adminActionsProvider = Provider<AdminActions>(
+    (ref) => AdminActions(ref.read(adminServiceProvider)));
 
 class AdminActions {
-
   AdminActions(this._adminService);
   final AdminService _adminService;
 
@@ -184,23 +208,33 @@ class AdminActions {
   }
 
   Future<void> resolveError(
-      String errorId, final String resolutionNotes,) async {
+    String errorId,
+    final String resolutionNotes,
+  ) async {
     await _adminService.resolveError(errorId, resolutionNotes);
   }
 
   Future<void> updateMonetizationSettings(
-      MonetizationSettings settings) async {
+    MonetizationSettings settings,
+  ) async {
     await _adminService.updateMonetizationSettings(settings);
   }
 
   Future<void> createBroadcastMessage(
-      AdminBroadcastMessage message) async {
+    AdminBroadcastMessage message,
+  ) async {
     await _adminService.createBroadcastMessage(message);
   }
 
-  Future<String> exportDataAsCSV(final String dataType,
-      {Map<String, dynamic>? filters,}) async => _adminService.exportDataAsCSV(dataType, filters: filters);
+  Future<String> exportDataAsCSV(
+    final String dataType, {
+    Map<String, dynamic>? filters,
+  }) async =>
+      _adminService.exportDataAsCSV(dataType, filters: filters);
 
-  Future<String> exportDataAsPDF(final String dataType,
-      {Map<String, dynamic>? filters,}) async => _adminService.exportDataAsPDF(dataType, filters: filters);
+  Future<String> exportDataAsPDF(
+    final String dataType, {
+    Map<String, dynamic>? filters,
+  }) async =>
+      _adminService.exportDataAsPDF(dataType, filters: filters);
 }

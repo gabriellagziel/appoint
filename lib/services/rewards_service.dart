@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class RewardsService {
-
   RewardsService({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
   final FirebaseFirestore _firestore;
@@ -18,7 +17,8 @@ class RewardsService {
   };
 
   /// Increment the current user's points when a referral signs up.
-  Future<int> addReferralSignupPoints(String referrerId) async => _incrementPoints(referrerId, referralSignupPoints);
+  Future<int> addReferralSignupPoints(String referrerId) async =>
+      _incrementPoints(referrerId, referralSignupPoints);
 
   /// Get the current point balance for a user.
   Future<int> getPoints(String userId) async {
@@ -28,10 +28,10 @@ class RewardsService {
 
   /// Stream the point balance for a user.
   Stream<int> watchPoints(String userId) => _firestore
-        .collection('user_rewards')
-        .doc(userId)
-        .snapshots()
-        .map((doc) => (doc.data()?['points'] as int?) ?? 0);
+      .collection('user_rewards')
+      .doc(userId)
+      .snapshots()
+      .map((doc) => (doc.data()?['points'] as int?) ?? 0);
 
   /// Determine the reward tier for a given point balance.
   String tierForPoints(int points) {
@@ -55,7 +55,7 @@ class RewardsService {
   // TODO(username): Implement actual rewards logic
   Future<int> getUserPoints(String userId) async {
     // Stub implementation - returns current points from database
-    return await getPoints(userId);
+    return getPoints(userId);
   }
 
   Future<void> addPoints(String userId, final int points) async {

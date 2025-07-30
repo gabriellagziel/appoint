@@ -6,9 +6,9 @@ class BusinessCompletionScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) => Scaffold(
-      appBar: AppBar(title: const Text('Completion')),
-      body: const Center(
-        child: Text('Business Completion Screen - Coming Soon'),
-      ),
-    );
+        appBar: AppBar(title: const Text('Completion')),
+        body: const Center(
+          child: Text('Business Completion Screen - Coming Soon'),
+        ),
+      );
 }

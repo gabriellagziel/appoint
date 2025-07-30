@@ -17,7 +17,6 @@ abstract class UINotificationService {
 
 /// Implementation using ScaffoldMessenger for showing snackbars
 class ScaffoldNotificationService implements UINotificationService {
-
   ScaffoldNotificationService(this.messengerKey);
   final GlobalKey<ScaffoldMessengerState> messengerKey;
 

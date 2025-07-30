@@ -25,8 +25,10 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
     }).catchError((e, final st) {
       // Removed debug print: debugPrint('Error during booking: $e\n$st');
       if (!mounted) return;
-      context.showSnackBar('Failed to confirm booking',
-          backgroundColor: Colors.red,);
+      context.showSnackBar(
+        'Failed to confirm booking',
+        backgroundColor: Colors.red,
+      );
     }).whenComplete(() {
       if (mounted) setState(() => _isSubmitting = false);
     });
@@ -57,7 +59,8 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
                     Text('Service: ${serviceId ?? "Not selected"}'),
                     const SizedBox(height: 8),
                     Text(
-                        'Date & Time: ${dateTime?.toLocal() ?? "Not selected"}',),
+                      'Date & Time: ${dateTime?.toLocal() ?? "Not selected"}',
+                    ),
                     const SizedBox(height: 8),
                     Text('Duration: ${duration?.inMinutes ?? 0} minutes'),
                   ],

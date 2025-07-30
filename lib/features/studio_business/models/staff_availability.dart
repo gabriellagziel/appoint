@@ -17,7 +17,8 @@ class TimeOfDayConverter implements JsonConverter<TimeOfDay, String> {
 }
 
 @JsonSerializable()
-class TimeRange { // 0-6 (Sunday-Saturday)
+class TimeRange {
+  // 0-6 (Sunday-Saturday)
 
   TimeRange({
     required this.start,
@@ -37,7 +38,6 @@ class TimeRange { // 0-6 (Sunday-Saturday)
 
 @JsonSerializable()
 class StaffAvailability {
-
   StaffAvailability({
     required this.id,
     required this.profileId,

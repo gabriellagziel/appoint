@@ -30,6 +30,6 @@ class ChatMessage with _$ChatMessage {
     Map<String, dynamic>? metadata,
   }) = _ChatMessage;
 
-  factory ChatMessage.fromJson(Map<String, dynamic> json) => 
+  factory ChatMessage.fromJson(Map<String, dynamic> json) =>
       _$ChatMessageFromJson(json);
 }

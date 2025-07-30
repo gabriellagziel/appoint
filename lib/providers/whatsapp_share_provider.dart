@@ -1,4 +1,3 @@
-import 'package:appoint/models/smart_share_link.dart';
 import 'package:appoint/services/whatsapp_share_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -7,7 +6,8 @@ final whatsappShareServiceProvider =
     Provider<WhatsAppShareService>((ref) => WhatsAppShareService());
 
 // Provider for share statistics
-final FutureProviderFamily<Map<String, dynamic>, String> shareStatsProvider = FutureProvider.family<Map<String, dynamic>, String>(
+final FutureProviderFamily<Map<String, dynamic>, String> shareStatsProvider =
+    FutureProvider.family<Map<String, dynamic>, String>(
   (ref, final meetingId) async {
     final service = ref.read(whatsappShareServiceProvider);
     return service.getShareStats(meetingId);
@@ -16,7 +16,6 @@ final FutureProviderFamily<Map<String, dynamic>, String> shareStatsProvider = Fu
 
 // State notifier for share dialog
 class ShareDialogState {
-
   const ShareDialogState({
     this.isLoading = false,
     this.error,
@@ -27,14 +26,14 @@ class ShareDialogState {
   ShareDialogState copyWith({
     final bool? isLoading,
     final String? error,
-  }) => ShareDialogState(
-      isLoading: isLoading ?? this.isLoading,
-      error: error,
-    );
+  }) =>
+      ShareDialogState(
+        isLoading: isLoading ?? this.isLoading,
+        error: error,
+      );
 }
 
 class ShareDialogNotifier extends StateNotifier<ShareDialogState> {
-
   ShareDialogNotifier(this._service) : super(const ShareDialogState());
   final WhatsAppShareService _service;
 

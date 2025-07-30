@@ -14,7 +14,8 @@ class FirestoreService {
 
   // Generic method to get collection with error handling
   static Stream<QuerySnapshot> getCollectionStream(
-      String collectionPath) {
+    String collectionPath,
+  ) {
     try {
       return _firestore.collection(collectionPath).snapshots();
     } catch (e) {
@@ -25,7 +26,9 @@ class FirestoreService {
 
   // Generic method to get document with error handling
   static Future<DocumentSnapshot> getDocument(
-      String collectionPath, final String documentId,) async {
+    String collectionPath,
+    final String documentId,
+  ) async {
     try {
       return await _firestore.collection(collectionPath).doc(documentId).get();
     } catch (e) {
@@ -36,7 +39,9 @@ class FirestoreService {
 
   // Generic method to get document stream with error handling
   static Stream<DocumentSnapshot> getDocumentStream(
-      String collectionPath, final String documentId,) {
+    String collectionPath,
+    final String documentId,
+  ) {
     try {
       return _firestore.collection(collectionPath).doc(documentId).snapshots();
     } catch (e) {
@@ -47,7 +52,9 @@ class FirestoreService {
 
   // Generic method to add document with error handling
   static Future<DocumentReference> addDocument(
-      String collectionPath, final Map<String, dynamic> data,) async {
+    String collectionPath,
+    final Map<String, dynamic> data,
+  ) async {
     try {
       return await _firestore.collection(collectionPath).add(data);
     } catch (e) {
@@ -57,8 +64,11 @@ class FirestoreService {
   }
 
   // Generic method to update document with error handling
-  static Future<void> updateDocument(final String collectionPath,
-      String documentId, final Map<String, dynamic> data,) async {
+  static Future<void> updateDocument(
+    final String collectionPath,
+    String documentId,
+    final Map<String, dynamic> data,
+  ) async {
     try {
       await _firestore.collection(collectionPath).doc(documentId).update(data);
     } catch (e) {
@@ -69,7 +79,9 @@ class FirestoreService {
 
   // Generic method to delete document with error handling
   static Future<void> deleteDocument(
-      String collectionPath, final String documentId,) async {
+    String collectionPath,
+    final String documentId,
+  ) async {
     try {
       await _firestore.collection(collectionPath).doc(documentId).delete();
     } catch (e) {
@@ -96,19 +108,25 @@ class FirestoreService {
   }
 
   // Business-specific methods
-  static Stream<QuerySnapshot> getBusinessesStream() => getCollectionStream('businesses');
+  static Stream<QuerySnapshot> getBusinessesStream() =>
+      getCollectionStream('businesses');
 
-  static Stream<QuerySnapshot> getStudiosStream() => getCollectionStream('studios');
+  static Stream<QuerySnapshot> getStudiosStream() =>
+      getCollectionStream('studios');
 
-  static Stream<QuerySnapshot> getAppointmentsStream() => getCollectionStream('appointments');
+  static Stream<QuerySnapshot> getAppointmentsStream() =>
+      getCollectionStream('appointments');
 
-  static Stream<QuerySnapshot> getClientsStream() => getCollectionStream('clients');
+  static Stream<QuerySnapshot> getClientsStream() =>
+      getCollectionStream('clients');
 
   static Stream<QuerySnapshot> getStaffStream() => getCollectionStream('staff');
 
-  static Stream<QuerySnapshot> getServicesStream() => getCollectionStream('services');
+  static Stream<QuerySnapshot> getServicesStream() =>
+      getCollectionStream('services');
 
-  static Stream<QuerySnapshot> getBookingsStream() => getCollectionStream('bookings');
+  static Stream<QuerySnapshot> getBookingsStream() =>
+      getCollectionStream('bookings');
 
   static Stream<QuerySnapshot> getUsersStream() => getCollectionStream('users');
 }

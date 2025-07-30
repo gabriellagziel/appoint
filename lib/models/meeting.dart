@@ -59,26 +59,24 @@ class Meeting with _$Meeting {
     required String id,
     required String organizerId,
     required String title,
-    String? description,
     @DateTimeConverter()
     @JsonKey(name: 'startTime')
     required DateTime startTime,
-    @DateTimeConverter()
-    @JsonKey(name: 'endTime')
-    required DateTime endTime,
+    @DateTimeConverter() @JsonKey(name: 'endTime') required DateTime endTime,
+    String? description,
     String? location,
     String? virtualMeetingUrl,
     @Default(<MeetingParticipant>[]) List<MeetingParticipant> participants,
     @Default(MeetingStatus.draft) MeetingStatus status,
     @DateTimeConverter() DateTime? createdAt,
     @DateTimeConverter() DateTime? updatedAt,
-    
+
     // Event-specific features (only available for events)
     String? customFormId,
     String? checklistId,
     String? groupChatId,
     Map<String, dynamic>? eventSettings,
-    
+
     // Business-related fields
     String? businessProfileId,
     bool? isRecurring,
@@ -113,13 +111,12 @@ extension MeetingExtensions on Meeting {
   /// Check if user is an admin (organizer or admin role)
   bool isAdmin(String userId) {
     if (isOrganizer(userId)) return true;
-    return participants.any((p) => p.userId == userId && p.role == ParticipantRole.admin);
+    return participants
+        .any((p) => p.userId == userId && p.role == ParticipantRole.admin);
   }
 
   /// Check if user can access event-only features
-  bool canAccessEventFeatures(String userId) {
-    return isEvent && isAdmin(userId);
-  }
+  bool canAccessEventFeatures(String userId) => isEvent && isAdmin(userId);
 
   /// Get participant by user ID
   MeetingParticipant? getParticipant(String userId) {
@@ -145,7 +142,5 @@ extension MeetingExtensions on Meeting {
   }
 
   /// Get display name for meeting type
-  String get typeDisplayName {
-    return isEvent ? 'Event' : 'Meeting';
-  }
+  String get typeDisplayName => isEvent ? 'Event' : 'Meeting';
 }

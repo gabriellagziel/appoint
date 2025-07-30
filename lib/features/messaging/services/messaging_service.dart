@@ -1,8 +1,9 @@
+import 'dart:io';
+
 import 'package:appoint/features/messaging/models/message.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'dart:io';
 
 class MessagingService {
   MessagingService({
@@ -18,18 +19,18 @@ class MessagingService {
   final FirebaseStorage _storage;
 
   /// Get real-time stream of messages for a chat
-  Stream<List<Message>> getMessages(String chatId) {
-    return _firestore
-        .collection('chats')
-        .doc(chatId)
-        .collection('messages')
-        .orderBy('timestamp', descending: true)
-        .limit(50)
-        .snapshots()
-        .map((snapshot) => snapshot.docs
+  Stream<List<Message>> getMessages(String chatId) => _firestore
+      .collection('chats')
+      .doc(chatId)
+      .collection('messages')
+      .orderBy('timestamp', descending: true)
+      .limit(50)
+      .snapshots()
+      .map(
+        (snapshot) => snapshot.docs
             .map((doc) => Message.fromJson({...doc.data(), 'id': doc.id}))
-            .toList());
-  }
+            .toList(),
+      );
 
   /// Send a message
   Future<void> sendMessage(Message message) async {
@@ -73,9 +74,11 @@ class MessagingService {
         .where('participants', arrayContains: user.uid)
         .orderBy('updatedAt', descending: true)
         .snapshots()
-        .map((snapshot) => snapshot.docs
-            .map((doc) => Chat.fromJson({...doc.data(), 'id': doc.id}))
-            .toList());
+        .map(
+          (snapshot) => snapshot.docs
+              .map((doc) => Chat.fromJson({...doc.data(), 'id': doc.id}))
+              .toList(),
+        );
   }
 
   /// Create a new chat
@@ -112,7 +115,8 @@ class MessagingService {
     final user = _auth.currentUser;
     if (user == null) throw Exception('Not authenticated');
 
-    final fileName = '${DateTime.now().millisecondsSinceEpoch}_${file.path.split('/').last}';
+    final fileName =
+        '${DateTime.now().millisecondsSinceEpoch}_${file.path.split('/').last}';
     final ref = _storage.ref().child('chats/$chatId/attachments/$fileName');
 
     final uploadTask = ref.putFile(file);
@@ -145,7 +149,7 @@ class MessagingService {
         .get();
 
     if (!messageDoc.exists) throw Exception('Message not found');
-    
+
     final message = Message.fromJson({...messageDoc.data()!, 'id': messageId});
     if (message.senderId != user.uid) throw Exception('Not authorized');
 
@@ -217,11 +221,13 @@ class MessagingService {
     if (user == null) return;
 
     // Get chat participants
-    final chatDoc = await _firestore.collection('chats').doc(message.chatId).get();
+    final chatDoc =
+        await _firestore.collection('chats').doc(message.chatId).get();
     if (!chatDoc.exists) return;
 
     final chat = Chat.fromJson({...chatDoc.data()!, 'id': message.chatId});
-    final otherParticipants = chat.participants.where((id) => id != user.uid).toList();
+    final otherParticipants =
+        chat.participants.where((id) => id != user.uid).toList();
 
     // Send push notifications to other participants
     for (final participantId in otherParticipants) {
@@ -257,7 +263,7 @@ class MessagingService {
   /// Get attachment type from file path
   AttachmentType _getAttachmentType(String filePath) {
     final extension = filePath.split('.').last.toLowerCase();
-    
+
     switch (extension) {
       case 'jpg':
       case 'jpeg':
@@ -287,7 +293,7 @@ class MessagingService {
   /// Get MIME type from file path
   String? _getMimeType(String filePath) {
     final extension = filePath.split('.').last.toLowerCase();
-    
+
     switch (extension) {
       case 'jpg':
       case 'jpeg':
@@ -312,4 +318,4 @@ class MessagingService {
         return null;
     }
   }
-} 
+}

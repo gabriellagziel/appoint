@@ -39,7 +39,8 @@ class StudioBookingScreen extends ConsumerWidget {
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(
                                 content: Text(
-                                    'Booking slot: ${formatted(slot.startTime)}',),
+                                  'Booking slot: ${formatted(slot.startTime)}',
+                                ),
                               ),
                             );
                           },

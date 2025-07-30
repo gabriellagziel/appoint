@@ -21,13 +21,14 @@ class UserProfileService {
     return getProfile(user.uid);
   }
 
-  Stream<UserProfile?> watchProfile(String uid) => _firestore.collection('users').doc(uid).snapshots().map((doc) {
-      if (!doc.exists) return null;
-      return UserProfile.fromJson({
-        'id': doc.id,
-        ...doc.data()!,
+  Stream<UserProfile?> watchProfile(String uid) =>
+      _firestore.collection('users').doc(uid).snapshots().map((doc) {
+        if (!doc.exists) return null;
+        return UserProfile.fromJson({
+          'id': doc.id,
+          ...doc.data()!,
+        });
       });
-    });
 
   Future<void> updateProfile(UserProfile profile) async {
     await _firestore.collection('users').doc(profile.id).set(profile.toJson());

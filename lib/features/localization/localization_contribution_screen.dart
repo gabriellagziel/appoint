@@ -31,10 +31,9 @@ class REDACTED_TOKEN
                   padding: const EdgeInsets.all(16),
                   child: DropdownButton<String>(
                     value: _selectedLocale,
-                    onChanged: (val) =>
-                        setState(() => _selectedLocale = val),
+                    onChanged: (val) => setState(() => _selectedLocale = val),
                     items: [
-                      for (locale in locales)
+                      for (final locale in locales)
                         DropdownMenuItem(
                           value: locale,
                           child: Text(locale),
@@ -46,7 +45,7 @@ class REDACTED_TOKEN
                   child: ListView(
                     padding: const EdgeInsets.all(16),
                     children: [
-                      for (key in missingTranslations[_selectedLocale]!)
+                      for (final key in missingTranslations[_selectedLocale]!)
                         Padding(
                           padding: const EdgeInsets.symmetric(vertical: 8),
                           child: TextField(
@@ -59,7 +58,7 @@ class REDACTED_TOKEN
                       const SizedBox(height: 16),
                       ElevatedButton(
                         onPressed: () {
-                          // TODO(username): Implement this featurend translations to backend
+                          // TODO(username): Implement this feature and send translations to backend
                         },
                         child: const Text('Submit'),
                       ),

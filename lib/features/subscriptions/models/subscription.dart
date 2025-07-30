@@ -117,9 +117,16 @@ class UserSubscription {
     required this.userId,
     required this.currentPlan,
     this.activeSubscription,
-    this.paymentMethods,
-    this.billingHistory,
-    this.usageStats,
+    this.paymentMethods = const [],
+    this.billingHistory = const [],
+    this.usageStats = const UsageStats(
+      bookingsThisMonth: 0,
+      bookingsLimit: 0,
+      messagesThisMonth: 0,
+      messagesLimit: 0,
+      storageUsed: 0.0,
+      storageLimit: 0.0,
+    ),
   });
 
   factory UserSubscription.fromJson(Map<String, dynamic> json) =>
@@ -186,8 +193,10 @@ class UsageStats {
 
   Map<String, dynamic> toJson() => _$UsageStatsToJson(this);
 
-  double get bookingsUsagePercentage => (bookingsThisMonth / bookingsLimit) * 100;
-  double get messagesUsagePercentage => (messagesThisMonth / messagesLimit) * 100;
+  double get bookingsUsagePercentage =>
+      (bookingsThisMonth / bookingsLimit) * 100;
+  double get messagesUsagePercentage =>
+      (messagesThisMonth / messagesLimit) * 100;
   double get storageUsagePercentage => (storageUsed / storageLimit) * 100;
 }
 
@@ -233,4 +242,4 @@ enum PaymentMethodType {
   bankAccount,
   @JsonValue('paypal')
   paypal,
-} 
+}

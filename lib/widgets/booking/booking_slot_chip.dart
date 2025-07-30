@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 /// A chip widget for displaying booking time slots with availability status
 class BookingSlotChip extends StatelessWidget {
   const BookingSlotChip({
-    required this.time, required this.available, required this.onSelected, super.key,
+    required this.time,
+    required this.available,
+    required this.onSelected,
+    super.key,
     this.selected = false,
     this.disabled = false,
   });
@@ -45,7 +48,7 @@ class BookingSlotChip extends StatelessWidget {
         onSelected: isAvailable ? (_) => onSelected(time) : null,
         backgroundColor: _getBackgroundColor(theme),
         selectedColor: theme.colorScheme.primaryContainer,
-        disabledColor: theme.colorScheme.surfaceVariant,
+        disabledColor: theme.colorScheme.surfaceContainerHighest,
         side: BorderSide(
           color: _getBorderColor(theme),
         ),
@@ -75,26 +78,26 @@ class BookingSlotChip extends StatelessWidget {
 
   Color _getTextColor(ThemeData theme) {
     if (disabled) {
-      return theme.colorScheme.onSurfaceVariant.withOpacity(0.6);
+      return theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.6);
     }
     if (selected) {
       return theme.colorScheme.onPrimaryContainer;
     }
     return available
         ? theme.colorScheme.onSurface
-        : theme.colorScheme.onSurface.withOpacity(0.6);
+        : theme.colorScheme.onSurface.withValues(alpha: 0.6);
   }
 
   Color _getBackgroundColor(ThemeData theme) {
     if (disabled) {
-      return theme.colorScheme.surfaceVariant;
+      return theme.colorScheme.surfaceContainerHighest;
     }
     if (selected) {
       return theme.colorScheme.primaryContainer;
     }
     return available
         ? theme.colorScheme.surface
-        : theme.colorScheme.surfaceVariant;
+        : theme.colorScheme.surfaceContainerHighest;
   }
 
   Color _getBorderColor(ThemeData theme) {
@@ -102,11 +105,11 @@ class BookingSlotChip extends StatelessWidget {
       return theme.colorScheme.primary;
     }
     if (disabled) {
-      return theme.colorScheme.outline.withOpacity(0.3);
+      return theme.colorScheme.outline.withValues(alpha: 0.3);
     }
     return available
         ? theme.colorScheme.outline
-        : theme.colorScheme.outline.withOpacity(0.5);
+        : theme.colorScheme.outline.withValues(alpha: 0.5);
   }
 
   Widget? _buildAvailabilityIcon(ThemeData theme) {
@@ -114,7 +117,7 @@ class BookingSlotChip extends StatelessWidget {
       return Icon(
         Icons.block,
         size: 16,
-        color: theme.colorScheme.onSurfaceVariant.withOpacity(0.6),
+        color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.6),
       );
     }
     if (!available) {

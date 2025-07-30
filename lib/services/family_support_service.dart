@@ -3,10 +3,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class FamilySupportService {
-
-  FamilySupportService(
-      {FirebaseFirestore? firestore, final FirebaseAuth? auth,})
-      : _firestore = firestore ?? FirebaseFirestore.instance,
+  FamilySupportService({
+    FirebaseFirestore? firestore,
+    final FirebaseAuth? auth,
+  })  : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance;
   final FirebaseFirestore _firestore;
   final FirebaseAuth _auth;

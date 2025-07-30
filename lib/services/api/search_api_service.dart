@@ -1,13 +1,10 @@
-import 'package:appoint/models/service.dart';
-import 'package:appoint/models/business.dart';
-import 'package:appoint/models/professional.dart';
+import 'package:appoint/models/service_offering.dart';
 import 'package:appoint/services/api/api_client.dart';
 
 class SearchApiService {
+  SearchApiService._();
   static final SearchApiService _instance = SearchApiService._();
   static SearchApiService get instance => _instance;
-  
-  SearchApiService._();
 
   // Search services with advanced filters
   Future<SearchResults> searchServices({
@@ -43,7 +40,8 @@ class SearchApiService {
         if (minPrice != null) 'minPrice': minPrice,
         if (tags != null) 'tags': tags.join(','),
         if (availableNow != null) 'availableNow': availableNow,
-        if (availableDate != null) 'availableDate': availableDate.toIso8601String(),
+        if (availableDate != null)
+          'availableDate': availableDate.toIso8601String(),
         if (limit != null) 'limit': limit,
         if (offset != null) 'offset': offset,
       };
@@ -131,7 +129,8 @@ class SearchApiService {
         if (sortBy != null) 'sortBy': sortBy,
         if (sortOrder != null) 'sortOrder': sortOrder,
         if (minRating != null) 'minRating': minRating,
-        if (specializations != null) 'specializations': specializations.join(','),
+        if (specializations != null)
+          'specializations': specializations.join(','),
         if (verified != null) 'verified': verified,
         if (availableNow != null) 'availableNow': availableNow,
         if (limit != null) 'limit': limit,
@@ -193,21 +192,21 @@ class SearchApiService {
   }
 
   // Get nearby services
-  Future<List<Service>> getNearbyServices({
+  Future<List<ServiceOffering>> getNearbyServices({
     required double latitude,
     required double longitude,
     double? radius,
-    String? category,
-    int? limit,
+    List<String>? categories,
+    List<String>? serviceIds,
   }) async {
     try {
       final queryParams = <String, dynamic>{
-        'lat': latitude,
-        'lng': longitude,
-        if (radius != null) 'radius': radius,
-        if (category != null) 'category': category,
-        if (limit != null) 'limit': limit,
+        'latitude': latitude,
+        'longitude': longitude,
       };
+      if (radius != null) queryParams['radius'] = radius;
+      if (categories != null) queryParams['categories'] = categories.join(',');
+      if (serviceIds != null) queryParams['services'] = serviceIds.join(',');
 
       final response = await ApiClient.instance.get<Map<String, dynamic>>(
         '/search/nearby/services',
@@ -215,7 +214,10 @@ class SearchApiService {
       );
 
       final services = response['services'] as List;
-      return services.map((service) => Service.fromJson(service)).toList();
+      return services
+          .map((service) =>
+              ServiceOffering.fromJson(service as Map<String, dynamic>))
+          .toList();
     } catch (e) {
       rethrow;
     }
@@ -284,6 +286,16 @@ class SearchResults {
     this.suggestions,
   });
 
+  factory SearchResults.fromJson(Map<String, dynamic> json) => SearchResults(
+        items: json['items'] as List,
+        total: json['total'] as int,
+        page: json['page'] as int,
+        limit: json['limit'] as int,
+        hasMore: json['hasMore'] as bool,
+        filters: json['filters'] as Map<String, dynamic>?,
+        suggestions: json['suggestions']?.cast<String>(),
+      );
+
   final List<dynamic> items;
   final int total;
   final int page;
@@ -291,18 +303,6 @@ class SearchResults {
   final bool hasMore;
   final Map<String, dynamic>? filters;
   final List<String>? suggestions;
-
-  factory SearchResults.fromJson(Map<String, dynamic> json) {
-    return SearchResults(
-      items: json['items'] as List,
-      total: json['total'] as int,
-      page: json['page'] as int,
-      limit: json['limit'] as int,
-      hasMore: json['hasMore'] as bool,
-      filters: json['filters'] as Map<String, dynamic>?,
-      suggestions: json['suggestions']?.cast<String>(),
-    );
-  }
 }
 
 class SearchCategory {
@@ -313,23 +313,21 @@ class SearchCategory {
     this.subcategories,
   });
 
+  factory SearchCategory.fromJson(Map<String, dynamic> json) => SearchCategory(
+        id: json['id'] as String,
+        name: json['name'] as String,
+        icon: json['icon'] as String,
+        subcategories: json['subcategories'] != null
+            ? (json['subcategories'] as List)
+                .map((cat) => SearchCategory.fromJson(cat))
+                .toList()
+            : null,
+      );
+
   final String id;
   final String name;
   final String icon;
   final List<SearchCategory>? subcategories;
-
-  factory SearchCategory.fromJson(Map<String, dynamic> json) {
-    return SearchCategory(
-      id: json['id'] as String,
-      name: json['name'] as String,
-      icon: json['icon'] as String,
-      subcategories: json['subcategories'] != null
-          ? (json['subcategories'] as List)
-              .map((cat) => SearchCategory.fromJson(cat))
-              .toList()
-          : null,
-    );
-  }
 }
 
 class TrendingSearch {
@@ -337,17 +335,15 @@ class TrendingSearch {
     required this.query,
     required this.count,
     required this.trend,
-  });
+  }); // 'up', 'down', 'stable'
+
+  factory TrendingSearch.fromJson(Map<String, dynamic> json) => TrendingSearch(
+        query: json['query'] as String,
+        count: json['count'] as int,
+        trend: json['trend'] as String,
+      );
 
   final String query;
   final int count;
-  final String trend; // 'up', 'down', 'stable'
-
-  factory TrendingSearch.fromJson(Map<String, dynamic> json) {
-    return TrendingSearch(
-      query: json['query'] as String,
-      count: json['count'] as int,
-      trend: json['trend'] as String,
-    );
-  }
-} 
+  final String trend;
+}

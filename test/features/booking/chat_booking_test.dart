@@ -19,8 +19,7 @@ void main() {
   });
 
   group('ChatBookingScreen', () {
-    testWidgets('should display chat interface',
-        (WidgetTester tester) async {
+    testWidgets('should display chat interface', (WidgetTester tester) async {
       await tester.pumpWidget(
         const ProviderScope(
           child: MaterialApp(

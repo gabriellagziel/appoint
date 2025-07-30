@@ -5,7 +5,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// Shows details for a single content item.
 class ContentDetailScreen extends ConsumerWidget {
-
   const ContentDetailScreen({required this.contentId, super.key});
   final String contentId;
 
