@@ -6,15 +6,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 
+// Import the generated mocks
+import 'mocks/firebase_mocks.mocks.dart';
+
 // Mock Firebase services using firebase_auth_mocks
 class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
 
-// Use the proper mock classes from firebase_auth_mocks
+// Use the generated mock classes
 class MockFirebaseAuth extends Mock implements FirebaseAuth {}
-
-class MockUser extends Mock implements User {}
-
-class MockUserCredential extends Mock implements UserCredential {}
 
 /// Helper class for Firebase test initialization
 class FirebaseTestHelper {
