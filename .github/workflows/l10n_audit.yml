@@ -1,11 +1,9 @@
-name: CI
+name: L10n Audit
 
-on:
-  push:
-  pull_request:
+on: [push, pull_request]
 
 jobs:
-  build:
+  l10n_audit:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -14,10 +12,9 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.24.5'
-          channel: stable
+          channel: 'stable'
           cache: true
-      - run: flutter --version
-      - run: dart --version
-      - run: flutter pub get
-      - run: flutter analyze
-      - run: dart test --coverage
+      - name: Install deps
+        run: flutter pub get
+      - name: Run L10n Audit
+        run: python3 tools/l10n_audit.py 
