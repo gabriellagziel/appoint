@@ -8,12 +8,6 @@ import 'package:mocktail/mocktail.dart';
 // Import the generated mocks
 import 'mocks/firebase_mocks.mocks.dart';
 
-// Mock Firebase services using firebase_auth_mocks
-class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
-
-// Use the generated mock classes
-class MockFirebaseAuth extends Mock implements FirebaseAuth {}
-
 /// Helper class for Firebase test initialization
 class FirebaseTestHelper {
   static bool _isInitialized = false;
