@@ -29,6 +29,7 @@ void main() {
       expect(service, isNotNull);
       expect(service.generateSmartShareLink, isA<Function>());
       expect(service.shareToWhatsApp, isA<Function>());
+      expect(service.recognizeGroup, isA<Function>());
     });
 
     test('should create ShareAnalytics with correct data', () {
@@ -47,6 +48,24 @@ void main() {
       expect(analytics.status, equals(ShareStatus.shared));
     });
 
+    test('should create GroupRecognition with correct data', () {
+      final group = GroupRecognition(
+        groupId: 'test-group',
+        groupName: 'Test Group',
+        phoneNumber: '+1234567890',
+        firstSharedAt: DateTime.now(),
+        totalShares: 5,
+        totalResponses: 2,
+        lastSharedAt: DateTime.now(),
+      );
+
+      expect(group.groupId, equals('test-group'));
+      expect(group.groupName, equals('Test Group'));
+      expect(group.phoneNumber, equals('+1234567890'));
+      expect(group.totalShares, equals(5));
+      expect(group.totalResponses, equals(2));
+    });
+
     test('should create SmartShareLink with correct data', () {
       final link = SmartShareLink(
         meetingId: 'test-meeting',
@@ -62,12 +81,6 @@ void main() {
       expect(link.contextId, equals('test-context'));
       expect(link.groupId, equals('test-group'));
       expect(link.shareChannel, equals('whatsapp'));
-    });
-
-    test('should only use manual WhatsApp sharing via wa.me links', () {
-      // Verify the service uses the standard wa.me URL format
-      // This ensures no unauthorized API access to WhatsApp
-      expect(true, isTrue); // Placeholder for URL validation
     });
   });
 

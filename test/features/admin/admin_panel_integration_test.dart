@@ -23,12 +23,16 @@ void main() {
   group('Admin Panel Integration Tests', () {
     late MockAdminService mockAdminService;
     late ProviderContainer container;
+    late AdminDashboardStats result;
+    late AdminDashboardStats stats;
 
     setUp(() {
       mockAdminService = MockAdminService();
 
       container = ProviderContainer(
-        overrides: [adminServiceProvider.overrideWithValue(mockAdminService)],
+        overrides: [
+          adminServiceProvider.overrideWithValue(mockAdminService),
+        ],
       );
     });
 
@@ -36,9 +40,8 @@ void main() {
       container.dispose();
     });
 
-    testWidgets('Admin Dashboard loads with stats', (
-      WidgetTester tester,
-    ) async {
+    testWidgets('Admin Dashboard loads with stats',
+        (WidgetTester tester) async {
       // Mock admin dashboard stats
       final mockStats = AdminDashboardStats(
         totalUsers: 1000,
@@ -101,7 +104,8 @@ void main() {
       testContainer.dispose();
     });
 
-    testWidgets('Admin Broadcast screen loads', (WidgetTester tester) async {
+    testWidgets('Admin Broadcast screen loads',
+        (WidgetTester tester) async {
       // Mock broadcast messages
       final mockMessages = [
         AdminBroadcastMessage(
@@ -149,7 +153,8 @@ void main() {
       testContainer.dispose();
     });
 
-    testWidgets('Admin Monetization screen loads', (WidgetTester tester) async {
+    testWidgets('Admin Monetization screen loads',
+        (WidgetTester tester) async {
       // Mock monetization settings
       final mockSettings = MonetizationSettings(
         adsEnabledForFreeUsers: true,
@@ -165,9 +170,8 @@ void main() {
         lastUpdated: DateTime.now(),
       );
 
-      when(
-        () => mockAdminService.fetchMonetizationSettings(),
-      ).thenAnswer((_) async => mockSettings);
+      when(() => mockAdminService.fetchMonetizationSettings())
+          .thenAnswer((_) async => mockSettings);
 
       // Build the monetization screen with proper localization
       await tester.pumpWidget(
@@ -216,11 +220,10 @@ void main() {
         lastUpdated: DateTime.now(),
       );
 
-      when(
-        () => mockAdminService.fetchAdminDashboardStats(),
-      ).thenAnswer((_) async => mockStats);
+      when(() => mockAdminService.fetchAdminDashboardStats())
+          .thenAnswer((_) async => mockStats);
 
-      final result = await mockAdminService.fetchAdminDashboardStats();
+      result = await mockAdminService.fetchAdminDashboardStats();
       expect(result.totalUsers, equals(100));
       expect(result.totalBookings, equals(50));
       expect(result.totalRevenue, equals(1000.0));
@@ -255,14 +258,13 @@ void main() {
         lastUpdated: DateTime.now(),
       );
 
-      when(
-        () => mockAdminService.fetchAdminDashboardStats(),
-      ).thenAnswer((_) async => mockStats);
+      when(() => mockAdminService.fetchAdminDashboardStats())
+          .thenAnswer((_) async => mockStats);
 
-      final stats = await container.read(adminDashboardStatsProvider.future);
+      stats = await container.read(adminDashboardStatsProvider.future);
       expect(stats.totalUsers, equals(100));
       expect(stats.totalBookings, equals(50));
       expect(stats.totalRevenue, equals(1000.0));
     });
-  }, skip: true);
+  });
 }
