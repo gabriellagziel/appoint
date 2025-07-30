@@ -5,16 +5,17 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 
 void main() {
-  binding = REDACTED_TOKEN.ensureInitialized();
+  final binding = REDACTED_TOKEN.ensureInitialized();
 
   group('Dashboard Navigation Stress', () {
     testWidgets('navigate to dashboard repeatedly', (tester) async {
       await binding.watchPerformance(
         () async {
-          await app.appMain();
+          app.main();
           await tester.pumpAndSettle();
 
-          navigator = tester.state<NavigatorState>(find.byType(Navigator));
+          final navigator =
+              tester.state<NavigatorState>(find.byType(Navigator));
           for (var i = 0; i < 50; i++) {
             navigator.pushNamed('/dashboard');
             await tester.pumpAndSettle();

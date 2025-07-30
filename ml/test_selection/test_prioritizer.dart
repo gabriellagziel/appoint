@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
-import 'dart:math';
+
+import 'change_analyzer.dart';
 
 /// Test Prioritizer for Intelligent Test Selection
 ///
@@ -244,7 +245,7 @@ class TestPrioritizer {
         score: prediction.score,
         confidence: prediction.confidence,
         failureProbability: prediction.failureProbability,
-        executionTime: Duration(milliseconds: prediction.executionTimeMs),
+        executionTime: prediction.executionTime,
         relevanceScore: prediction.relevanceScore,
       );
     } catch (e) {
