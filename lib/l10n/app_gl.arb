@@ -1,0 +1,2979 @@
+{
+  "@@locale": "gl",
+  "refresh": "[GL] [GL] Refresh",
+  "@refresh": {
+    "description": "Description"
+  },
+  "home": "[GL] [GL] Home",
+  "@home": {
+    "description": "Description"
+  },
+  "noSessionsYet": "[GL] [GL] No sessions yet",
+  "@noSessionsYet": {
+    "description": "Description"
+  },
+  "ok": "[GL] [GL] OK",
+  "@ok": {
+    "description": "Description"
+  },
+  "playtimeLandingChooseMode": "[GL] [GL] Choose your play mode:",
+  "@playtimeLandingChooseMode": {
+    "description": "Description"
+  },
+  "signUp": "[GL] [GL] Sign Up",
+  "@signUp": {
+    "description": "Description"
+  },
+  "scheduleMessage": "[GL] [GL] Schedule Message",
+  "@scheduleMessage": {
+    "description": "Description"
+  },
+  "decline": "[GL] [GL] Decline",
+  "@decline": {
+    "description": "Description"
+  },
+  "adminBroadcast": "[GL] Admin Broadcast",
+  "@adminBroadcast": {
+    "description": "Localization key for: Admin Broadcast"
+  },
+  "login": "[GL] [GL] Login",
+  "@login": {
+    "description": "Description"
+  },
+  "playtimeChooseFriends": "[GL] [GL] Choose friends to invite",
+  "@playtimeChooseFriends": {
+    "description": "Description"
+  },
+  "noInvites": "[GL] [GL] No invites",
+  "@noInvites": {
+    "description": "Description"
+  },
+  "playtimeChooseTime": "[GL] [GL] Choose a time",
+  "@playtimeChooseTime": {
+    "description": "Description"
+  },
+  "success": "[GL] [GL] Success",
+  "@success": {
+    "description": "Description"
+  },
+  "undo": "[GL] [GL] Undo",
+  "@undo": {
+    "description": "Description"
+  },
+  "opened": "[GL] [GL] Opened",
+  "@opened": {
+    "description": "opened description"
+  },
+  "createVirtualSession": "[GL] [GL] Create Virtual Session",
+  "@createVirtualSession": {
+    "description": "Description"
+  },
+  "messageSentSuccessfully": "[GL] [GL] Message sent successfully",
+  "@messageSentSuccessfully": {
+    "description": "messageSentSuccessfully description"
+  },
+  "redo": "[GL] [GL] Redo",
+  "@redo": {
+    "description": "Description"
+  },
+  "next": "[GL] [GL] Next",
+  "@next": {
+    "description": "Description"
+  },
+  "search": "[GL] [GL] Search",
+  "@search": {
+    "description": "Description"
+  },
+  "cancelInviteConfirmation": "[GL] [GL] Are you sure you want to cancel this invite?",
+  "@cancelInviteConfirmation": {
+    "description": "Description"
+  },
+  "created": "[GL] [GL] Created",
+  "@created": {
+    "description": "created description"
+  },
+  "revokeAccess": "[GL] [GL] Revoke Access",
+  "@revokeAccess": {
+    "description": "Description"
+  },
+  "playtimeLiveScheduled": "[GL] [GL] Live playtime scheduled!",
+  "@playtimeLiveScheduled": {
+    "description": "Description"
+  },
+  "revokeAccessConfirmation": "[GL] [GL] Are you sure you want to revoke access?",
+  "@revokeAccessConfirmation": {
+    "description": "Description"
+  },
+  "download": "[GL] [GL] Download",
+  "@download": {
+    "description": "Description"
+  },
+  "password": "[GL] [GL] Password",
+  "@password": {
+    "description": "Description"
+  },
+  "errorLoadingFamilyLinks": "[GL] [GL] Error loading family links",
+  "@errorLoadingFamilyLinks": {
+    "description": "Description"
+  },
+  "cancel": "[GL] [GL] Cancel",
+  "@cancel": {
+    "description": "cancel description"
+  },
+  "playtimeCreate": "[GL] [GL] Create",
+  "@playtimeCreate": {
+    "description": "Description"
+  },
+  "failedToActionPrivacyRequest": "[GL] [GL] Failed to action privacy request",
+  "@failedToActionPrivacyRequest": {
+    "description": "failedToActionPrivacyRequest description"
+  },
+  "appTitle": "[GL] [GL] APP-OINT",
+  "@appTitle": {
+    "description": "Description"
+  },
+  "accept": "[GL] [GL] Accept",
+  "@accept": {
+    "description": "Description"
+  },
+  "playtimeModeVirtual": "[GL] [GL] Virtual Play",
+  "@playtimeModeVirtual": {
+    "description": "Description"
+  },
+  "playtimeDescription": "[GL] [GL] Enjoy live or virtual games with your friends!",
+  "@playtimeDescription": {
+    "description": "Description"
+  },
+  "delete": "[GL] [GL] Delete",
+  "@delete": {
+    "description": "Description"
+  },
+  "playtimeVirtualStarted": "[GL] [GL] Virtual playtime started!",
+  "@playtimeVirtualStarted": {
+    "description": "Description"
+  },
+  "createYourFirstGame": "[GL] [GL] Create your first game",
+  "@createYourFirstGame": {
+    "description": "Description"
+  },
+  "participants": "[GL] [GL] Participants",
+  "@participants": {
+    "description": "Description"
+  },
+  "recipients": "[GL] [GL] Recipients",
+  "@recipients": {
+    "description": "recipients description"
+  },
+  "noResults": "[GL] [GL] No results found",
+  "@noResults": {
+    "description": "Description"
+  },
+  "yes": "[GL] [GL] Yes",
+  "@yes": {
+    "description": "yes description"
+  },
+  "invite": "[GL] [GL] Invite",
+  "@invite": {
+    "description": "Description"
+  },
+  "playtimeModeLive": "[GL] [GL] Live Play",
+  "@playtimeModeLive": {
+    "description": "Description"
+  },
+  "done": "[GL] [GL] Done",
+  "@done": {
+    "description": "Description"
+  },
+  "defaultShareMessage": "[GL] [GL] Let's meet via Appoint!",
+  "@defaultShareMessage": {
+    "description": "Description"
+  },
+  "no": "[GL] [GL] No",
+  "@no": {
+    "description": "Description"
+  },
+  "playtimeHub": "[GL] [GL] Playtime Hub",
+  "@playtimeHub": {
+    "description": "Description"
+  },
+  "createLiveSession": "[GL] [GL] Create Live Session",
+  "@createLiveSession": {
+    "description": "Description"
+  },
+  "enableNotifications": "[GL] [GL] Enable Notifications",
+  "@enableNotifications": {
+    "description": "Description"
+  },
+  "invited": "[GL] [GL] Invited",
+  "@invited": {
+    "description": "Description"
+  },
+  "content": "[GL] [GL] Content",
+  "@content": {
+    "description": "content description"
+  },
+  "meetingSharedSuccessfully": "[GL] [GL] Meeting shared successfully",
+  "@meetingSharedSuccessfully": {
+    "description": "Description"
+  },
+  "welcomeToPlaytime": "[GL] [GL] Welcome to Playtime",
+  "@welcomeToPlaytime": {
+    "description": "Description"
+  },
+  "viewAll": "[GL] [GL] View All",
+  "@viewAll": {
+    "description": "Description"
+  },
+  "playtimeVirtual": "[GL] [GL] Virtual Play",
+  "@playtimeVirtual": {
+    "description": "Description"
+  },
+  "staffScreenTBD": "[GL] [GL] Staff screen coming soon",
+  "@staffScreenTBD": {
+    "description": "Description"
+  },
+  "cut": "[GL] [GL] Cut",
+  "@cut": {
+    "description": "Description"
+  },
+  "inviteCancelledSuccessfully": "[GL] [GL] Invite cancelled successfully",
+  "@inviteCancelledSuccessfully": {
+    "description": "Description"
+  },
+  "retry": "[GL] [GL] Retry",
+  "@retry": {
+    "description": "Description"
+  },
+  "composeBroadcastMessage": "[GL] [GL] Compose Broadcast Message",
+  "@composeBroadcastMessage": {
+    "description": "composeBroadcastMessage description"
+  },
+  "sendNow": "[GL] [GL] Send Now",
+  "@sendNow": {
+    "description": "sendNow description"
+  },
+  "noGamesYet": "[GL] [GL] No games yet",
+  "@noGamesYet": {
+    "description": "Description"
+  },
+  "select": "[GL] [GL] Select",
+  "@select": {
+    "description": "Description"
+  },
+  "about": "[GL] [GL] About",
+  "@about": {
+    "description": "About navigation label"
+  },
+  "choose": "[GL] [GL] Choose",
+  "@choose": {
+    "description": "Description"
+  },
+  "profile": "[GL] [GL] Profile",
+  "@profile": {
+    "description": "Description"
+  },
+  "removeChild": "[GL] [GL] Remove Child",
+  "@removeChild": {
+    "description": "Description"
+  },
+  "status": "[GL] [GL] Status",
+  "@status": {
+    "description": "status description"
+  },
+  "logout": "[GL] [GL] Logout",
+  "@logout": {
+    "description": "Description"
+  },
+  "paste": "[GL] [GL] Paste",
+  "@paste": {
+    "description": "Description"
+  },
+  "welcome": "[GL] [GL] Welcome",
+  "@welcome": {
+    "description": "Description"
+  },
+  "playtimeCreateSession": "[GL] [GL] Create a Playtime Session",
+  "@playtimeCreateSession": {
+    "description": "Description"
+  },
+  "familyMembers": "[GL] [GL] Family Members",
+  "@familyMembers": {
+    "description": "Description"
+  },
+  "upload": "[GL] [GL] Upload",
+  "@upload": {
+    "description": "Description"
+  },
+  "upcomingSessions": "[GL] [GL] Upcoming Sessions",
+  "@upcomingSessions": {
+    "description": "Description"
+  },
+  "confirm": "[GL] [GL] Confirm",
+  "@confirm": {
+    "description": "Description"
+  },
+  "playtimeLive": "[GL] [GL] Live Play",
+  "@playtimeLive": {
+    "description": "Description"
+  },
+  "errorLoadingInvites": "[GL] [GL] Error loading invites",
+  "@errorLoadingInvites": {
+    "description": "Description"
+  },
+  "targetingFilters": "[GL] [GL] Targeting Filters",
+  "@targetingFilters": {
+    "description": "targetingFilters description"
+  },
+  "pickVideo": "[GL] [GL] Pick Video",
+  "@pickVideo": {
+    "description": "pickVideo description"
+  },
+  "playtimeGameDeleted": "[GL] [GL] Game deleted",
+  "@playtimeGameDeleted": {
+    "description": "Description"
+  },
+  "scheduleForLater": "[GL] [GL] Schedule for Later",
+  "@scheduleForLater": {
+    "description": "scheduleForLater description"
+  },
+  "accessRevokedSuccessfully": "[GL] [GL] Access revoked successfully",
+  "@accessRevokedSuccessfully": {
+    "description": "Description"
+  },
+  "type": "[GL] [GL] Type",
+  "@type": {
+    "description": "type description"
+  },
+  "checkingPermissions": "[GL] [GL] Checking permissions...",
+  "@checkingPermissions": {
+    "description": "checkingPermissions description"
+  },
+  "copy": "[GL] [GL] Copy",
+  "@copy": {
+    "description": "Description"
+  },
+  "yesCancel": "[GL] [GL] Yes, Cancel",
+  "@yesCancel": {
+    "description": "Description"
+  },
+  "email": "[GL] [GL] Email",
+  "@email": {
+    "description": "Description"
+  },
+  "shareOnWhatsApp": "[GL] [GL] Share on WhatsApp",
+  "@shareOnWhatsApp": {
+    "description": "Description"
+  },
+  "notificationSettings": "[GL] [GL] Notification Settings",
+  "@notificationSettings": {
+    "description": "Description"
+  },
+  "myProfile": "[GL] [GL] My Profile",
+  "@myProfile": {
+    "description": "Description"
+  },
+  "revoke": "[GL] [GL] Revoke",
+  "@revoke": {
+    "description": "Description"
+  },
+  "noBroadcastMessages": "[GL] [GL] No messages yet",
+  "@noBroadcastMessages": {
+    "description": "noBroadcastMessages description"
+  },
+  "requestType": "[GL] [GL] Request Type",
+  "@requestType": {
+    "description": "requestType description"
+  },
+  "notifications": "[GL] [GL] Notifications",
+  "@notifications": {
+    "description": "Description"
+  },
+  "details": "[GL] [GL] Details",
+  "@details": {
+    "description": "details description"
+  },
+  "cancelInvite": "[GL] [GL] Cancel Invite",
+  "@cancelInvite": {
+    "description": "Description"
+  },
+  "createNew": "[GL] [GL] Create New",
+  "@createNew": {
+    "description": "Description"
+  },
+  "settings": "[GL] [GL] Settings",
+  "@settings": {
+    "description": "Description"
+  },
+  "playtimeReject": "[GL] [GL] Reject",
+  "@playtimeReject": {
+    "description": "Description"
+  },
+  "errorLoadingProfile": "[GL] [GL] Error loading profile",
+  "@errorLoadingProfile": {
+    "description": "Description"
+  },
+  "edit": "[GL] [GL] Edit",
+  "@edit": {
+    "description": "Description"
+  },
+  "add": "[GL] [GL] Add",
+  "@add": {
+    "description": "Description"
+  },
+  "playtimeGameApproved": "[GL] [GL] Game approved",
+  "@playtimeGameApproved": {
+    "description": "Description"
+  },
+  "forgotPassword": "[GL] [GL] Forgot Password?",
+  "@forgotPassword": {
+    "description": "Description"
+  },
+  "familyDashboard": "[GL] [GL] Family Dashboard",
+  "@familyDashboard": {
+    "description": "Description"
+  },
+  "loading": "[GL] [GL] Loading...",
+  "@loading": {
+    "description": "Description"
+  },
+  "quickActions": "[GL] [GL] Quick Actions",
+  "@quickActions": {
+    "description": "Description"
+  },
+  "playtimeTitle": "[GL] [GL] Playtime",
+  "@playtimeTitle": {
+    "description": "Description"
+  },
+  "otpResentSuccessfully": "[GL] [GL] OTP resent successfully",
+  "@otpResentSuccessfully": {
+    "description": "Description"
+  },
+  "errorCheckingPermissions": "[GL] [GL] Error checking permissions",
+  "@errorCheckingPermissions": {
+    "description": "errorCheckingPermissions description"
+  },
+  "clientScreenTBD": "[GL] [GL] Client screen coming soon",
+  "@clientScreenTBD": {
+    "description": "Description"
+  },
+  "fcmToken": "[GL] [GL] FCM Token",
+  "@fcmToken": {
+    "description": "Description"
+  },
+  "pickImage": "[GL] [GL] Pick Image",
+  "@pickImage": {
+    "description": "pickImage description"
+  },
+  "previous": "[GL] [GL] Previous",
+  "@previous": {
+    "description": "Description"
+  },
+  "noProfileFound": "[GL] [GL] No profile found",
+  "@noProfileFound": {
+    "description": "Description"
+  },
+  "noFamilyMembersYet": "[GL] [GL] No family members yet",
+  "@noFamilyMembersYet": {
+    "description": "Description"
+  },
+  "mediaOptional": "[GL] [GL] Media (Optional)",
+  "@mediaOptional": {
+    "description": "mediaOptional description"
+  },
+  "messageSavedSuccessfully": "[GL] [GL] Message saved successfully",
+  "@messageSavedSuccessfully": {
+    "description": "messageSavedSuccessfully description"
+  },
+  "scheduledFor": "[GL] [GL] Scheduled for",
+  "@scheduledFor": {
+    "description": "Description"
+  },
+  "dashboard": "[GL] [GL] Dashboard",
+  "@dashboard": {
+    "description": "Description"
+  },
+  "noPermissionForBroadcast": "[GL] [GL] No permission for broadcast",
+  "@noPermissionForBroadcast": {
+    "description": "noPermissionForBroadcast description"
+  },
+  "playtimeAdminPanelTitle": "[GL] Playtime Games – Admin",
+  "@playtimeAdminPanelTitle": {
+    "description": "Localization key for: Playtime Games – Admin"
+  },
+  "inviteDetail": "[GL] [GL] Invite Details",
+  "@inviteDetail": {
+    "description": "Description"
+  },
+  "scheduled": "[GL] [GL] Scheduled",
+  "@scheduled": {
+    "description": "scheduled description"
+  },
+  "failedToResendOtp": "[GL] [GL] Failed to resend OTP",
+  "@failedToResendOtp": {
+    "description": "Description"
+  },
+  "scheduling": "[GL] [GL] Scheduling",
+  "@scheduling": {
+    "description": "scheduling description"
+  },
+  "errorSavingMessage": "[GL] [GL] Error saving message",
+  "@errorSavingMessage": {
+    "description": "errorSavingMessage description"
+  },
+  "save": "[GL] [GL] Save",
+  "@save": {
+    "description": "save description"
+  },
+  "playtimeApprove": "[GL] [GL] Approve",
+  "@playtimeApprove": {
+    "description": "Description"
+  },
+  "createYourFirstSession": "[GL] [GL] Create your first session",
+  "@createYourFirstSession": {
+    "description": "Description"
+  },
+  "playtimeGameRejected": "[GL] [GL] Game rejected",
+  "@playtimeGameRejected": {
+    "description": "Description"
+  },
+  "failedToRevokeAccess": "[GL] [GL] Failed to revoke access",
+  "@failedToRevokeAccess": {
+    "description": "Description"
+  },
+  "recentGames": "[GL] [GL] Recent Games",
+  "@recentGames": {
+    "description": "Description"
+  },
+  "customizeMessage": "[GL] [GL] Customize Message",
+  "@customizeMessage": {
+    "description": "Description"
+  },
+  "failedToCancelInvite": "[GL] [GL] Failed to cancel invite",
+  "@failedToCancelInvite": {
+    "description": "Description"
+  },
+  "errorSendingMessage": "[GL] [GL] Error sending message",
+  "@errorSendingMessage": {
+    "description": "errorSendingMessage description"
+  },
+  "confirmPassword": "[GL] [GL] Confirm Password",
+  "@confirmPassword": {
+    "description": "Description"
+  },
+  "errorLoadingPrivacyRequests": "[GL] [GL] Error loading privacy requests",
+  "@errorLoadingPrivacyRequests": {
+    "description": "errorLoadingPrivacyRequests description"
+  },
+  "connectedChildren": "[GL] [GL] Connected Children",
+  "@connectedChildren": {
+    "description": "Description"
+  },
+  "share": "[GL] [GL] Share",
+  "@share": {
+    "description": "Description"
+  },
+  "playtimeEnterGameName": "[GL] [GL] Enter game name",
+  "@playtimeEnterGameName": {
+    "description": "Description"
+  },
+  "pleaseLoginForFamilyFeatures": "[GL] [GL] Please login to access family features",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Description"
+  },
+  "myInvites": "[GL] [GL] My Invites",
+  "@myInvites": {
+    "description": "Description"
+  },
+  "createGame": "[GL] [GL] Create Game",
+  "@createGame": {
+    "description": "Description"
+  },
+  "playtimeNoSessions": "[GL] [GL] No playtime sessions found.",
+  "@playtimeNoSessions": {
+    "description": "Description"
+  },
+  "adminScreenTBD": "[GL] Admin screen coming soon",
+  "@adminScreenTBD": {
+    "description": "Localization key for: Admin screen coming soon"
+  },
+  "playtimeParentDashboardTitle": "[GL] [GL] Playtime Dashboard",
+  "@playtimeParentDashboardTitle": {
+    "description": "Description"
+  },
+  "close": "[GL] [GL] Close",
+  "@close": {
+    "description": "close description"
+  },
+  "back": "[GL] [GL] Back",
+  "@back": {
+    "description": "Description"
+  },
+  "playtimeChooseGame": "[GL] [GL] Choose a game",
+  "@playtimeChooseGame": {
+    "description": "Description"
+  },
+  "managePermissions": "[GL] [GL] Manage Permissions",
+  "@managePermissions": {
+    "description": "Description"
+  },
+  "pollOptions": "[GL] [GL] Poll Options",
+  "@pollOptions": {
+    "description": "pollOptions description"
+  },
+  "clicked": "[GL] [GL] Clicked",
+  "@clicked": {
+    "description": "clicked description"
+  },
+  "link": "[GL] [GL] Link",
+  "@link": {
+    "description": "link description"
+  },
+  "meetingReadyMessage": "[GL] [GL] Your meeting is ready! Join now",
+  "@meetingReadyMessage": {
+    "description": "Description"
+  },
+  "pendingInvites": "[GL] [GL] Pending Invites",
+  "@pendingInvites": {
+    "description": "Description"
+  },
+  "statusColon": "[GL] [GL] Status:",
+  "@statusColon": {
+    "description": "statusColon description"
+  },
+  "pleaseLoginToViewProfile": "[GL] [GL] Please log in to view your profile.",
+  "@pleaseLoginToViewProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "adminMetrics": "[GL] Admin Metrics",
+  "@adminMetrics": {
+    "description": "Localization key for: Admin Metrics"
+  },
+  "overview": "[GL] Overview",
+  "@overview": {
+    "description": "Description"
+  },
+  "bookings": "[GL] Bookings",
+  "@bookings": {
+    "description": "Description"
+  },
+  "users": "[GL] users (TRANSLATE)",
+  "@users": {
+    "description": "users description"
+  },
+  "revenue": "[GL] revenue (TRANSLATE)",
+  "@revenue": {
+    "description": "revenue description"
+  },
+  "contentLibrary": "[GL] Content Library",
+  "@contentLibrary": {
+    "description": "Localization key for: Content Library"
+  },
+  "authErrorUserNotFound": "[GL] No account found with this email address.",
+  "@authErrorUserNotFound": {
+    "description": "Localization key for: No account found with this email address."
+  },
+  "authErrorWrongPassword": "[GL] Incorrect password. Please try again.",
+  "@authErrorWrongPassword": {
+    "description": "Localization key for: Incorrect password. Please try again."
+  },
+  "authErrorInvalidEmail": "[GL] Please enter a valid email address.",
+  "@authErrorInvalidEmail": {
+    "description": "Localization key for: Please enter a valid email address."
+  },
+  "authErrorUserDisabled": "[GL] This account has been disabled. Please contact support.",
+  "@authErrorUserDisabled": {
+    "description": "Localization key for: This account has been disabled. Please contact support."
+  },
+  "authErrorWeakPassword": "[GL] Password is too weak. Please choose a stronger password.",
+  "@authErrorWeakPassword": {
+    "description": "Localization key for: Password is too weak. Please choose a stronger password."
+  },
+  "authErrorEmailAlreadyInUse": "[GL] An account with this email already exists.",
+  "@authErrorEmailAlreadyInUse": {
+    "description": "Localization key for: An account with this email already exists."
+  },
+  "authErrorTooManyRequests": "[GL] Too many failed attempts. Please try again later.",
+  "@authErrorTooManyRequests": {
+    "description": "Localization key for: Too many failed attempts. Please try again later."
+  },
+  "authErrorOperationNotAllowed": "[GL] This sign-in method is not enabled. Please contact support.",
+  "@authErrorOperationNotAllowed": {
+    "description": "Localization key for: This sign-in method is not enabled. Please contact support."
+  },
+  "authErrorInvalidCredential": "[GL] Invalid credentials. Please try again.",
+  "@authErrorInvalidCredential": {
+    "description": "Localization key for: Invalid credentials. Please try again."
+  },
+  "authErrorAccountExistsWithDifferentCredential": "[GL] An account already exists with this email using a different sign-in method.",
+  "@authErrorAccountExistsWithDifferentCredential": {
+    "description": "Localization key for: An account already exists with this email using a different sign-in method."
+  },
+  "authErrorCredentialAlreadyInUse": "[GL] These credentials are already associated with another account.",
+  "@authErrorCredentialAlreadyInUse": {
+    "description": "Localization key for: These credentials are already associated with another account."
+  },
+  "authErrorNetworkRequestFailed": "[GL] Network error. Please check your connection and try again.",
+  "@authErrorNetworkRequestFailed": {
+    "description": "Localization key for: Network error. Please check your connection and try again."
+  },
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
+  "@socialAccountConflictTitle": {
+    "description": "Localization key for: Account Already Exists"
+  },
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
+  "@socialAccountConflictMessage": {
+    "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
+  },
+  "linkAccounts": "ربط الحسابات",
+  "@linkAccounts": {
+    "description": "Localization key for: Link Accounts"
+  },
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
+  "@signInWithExistingMethod": {
+    "description": "Localization key for: Sign in with existing method"
+  },
+  "authErrorRequiresRecentLogin": "[GL] Please log in again to perform this operation.",
+  "@authErrorRequiresRecentLogin": {
+    "description": "Localization key for: Please log in again to perform this operation."
+  },
+  "authErrorAppNotAuthorized": "[GL] This app is not authorized to use Firebase Authentication.",
+  "@authErrorAppNotAuthorized": {
+    "description": "Localization key for: This app is not authorized to use Firebase Authentication."
+  },
+  "authErrorInvalidVerificationCode": "[GL] The verification code is invalid.",
+  "@authErrorInvalidVerificationCode": {
+    "description": "Localization key for: The verification code is invalid."
+  },
+  "authErrorInvalidVerificationId": "[GL] The verification ID is invalid.",
+  "@authErrorInvalidVerificationId": {
+    "description": "Localization key for: The verification ID is invalid."
+  },
+  "authErrorMissingVerificationCode": "[GL] Please enter the verification code.",
+  "@authErrorMissingVerificationCode": {
+    "description": "Localization key for: Please enter the verification code."
+  },
+  "authErrorMissingVerificationId": "[GL] Missing verification ID.",
+  "@authErrorMissingVerificationId": {
+    "description": "Localization key for: Missing verification ID."
+  },
+  "authErrorInvalidPhoneNumber": "[GL] The phone number is invalid.",
+  "@authErrorInvalidPhoneNumber": {
+    "description": "Localization key for: The phone number is invalid."
+  },
+  "authErrorMissingPhoneNumber": "[GL] Please enter a phone number.",
+  "@authErrorMissingPhoneNumber": {
+    "description": "Localization key for: Please enter a phone number."
+  },
+  "authErrorQuotaExceeded": "[GL] The SMS quota for this project has been exceeded. Please try again later.",
+  "@authErrorQuotaExceeded": {
+    "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
+  },
+  "authErrorCodeExpired": "[GL] The verification code has expired. Please request a new one.",
+  "@authErrorCodeExpired": {
+    "description": "Localization key for: The verification code has expired. Please request a new one."
+  },
+  "authErrorSessionExpired": "[GL] Your session has expired. Please log in again.",
+  "@authErrorSessionExpired": {
+    "description": "Localization key for: Your session has expired. Please log in again."
+  },
+  "authErrorMultiFactorAuthRequired": "[GL] Multi-factor authentication is required.",
+  "@authErrorMultiFactorAuthRequired": {
+    "description": "Localization key for: Multi-factor authentication is required."
+  },
+  "authErrorMultiFactorInfoNotFound": "[GL] Multi-factor information not found.",
+  "@authErrorMultiFactorInfoNotFound": {
+    "description": "Localization key for: Multi-factor information not found."
+  },
+  "authErrorMissingMultiFactorSession": "[GL] Missing multi-factor session.",
+  "@authErrorMissingMultiFactorSession": {
+    "description": "Localization key for: Missing multi-factor session."
+  },
+  "authErrorInvalidMultiFactorSession": "[GL] Invalid multi-factor session.",
+  "@authErrorInvalidMultiFactorSession": {
+    "description": "Localization key for: Invalid multi-factor session."
+  },
+  "authErrorSecondFactorAlreadyInUse": "[GL] This second factor is already in use.",
+  "@authErrorSecondFactorAlreadyInUse": {
+    "description": "Localization key for: This second factor is already in use."
+  },
+  "authErrorMaximumSecondFactorCountExceeded": "[GL] Maximum number of second factors exceeded.",
+  "@authErrorMaximumSecondFactorCountExceeded": {
+    "description": "Localization key for: Maximum number of second factors exceeded."
+  },
+  "authErrorUnsupportedFirstFactor": "[GL] Unsupported first factor for multi-factor authentication.",
+  "@authErrorUnsupportedFirstFactor": {
+    "description": "Localization key for: Unsupported first factor for multi-factor authentication."
+  },
+  "authErrorEmailChangeNeedsVerification": "[GL] Email change requires verification.",
+  "@authErrorEmailChangeNeedsVerification": {
+    "description": "Localization key for: Email change requires verification."
+  },
+  "authErrorPhoneNumberAlreadyExists": "[GL] This phone number is already in use.",
+  "@authErrorPhoneNumberAlreadyExists": {
+    "description": "Localization key for: This phone number is already in use."
+  },
+  "authErrorInvalidPassword": "[GL] The password is invalid or too weak.",
+  "@authErrorInvalidPassword": {
+    "description": "Localization key for: The password is invalid or too weak."
+  },
+  "authErrorInvalidIdToken": "[GL] The ID token is invalid.",
+  "@authErrorInvalidIdToken": {
+    "description": "Localization key for: The ID token is invalid."
+  },
+  "authErrorIdTokenExpired": "[GL] The ID token has expired.",
+  "@authErrorIdTokenExpired": {
+    "description": "Localization key for: The ID token has expired."
+  },
+  "authErrorIdTokenRevoked": "[GL] The ID token has been revoked.",
+  "@authErrorIdTokenRevoked": {
+    "description": "Localization key for: The ID token has been revoked."
+  },
+  "authErrorInternalError": "[GL] An internal error occurred. Please try again.",
+  "@authErrorInternalError": {
+    "description": "Localization key for: An internal error occurred. Please try again."
+  },
+  "authErrorInvalidArgument": "[GL] An invalid argument was provided.",
+  "@authErrorInvalidArgument": {
+    "description": "Localization key for: An invalid argument was provided."
+  },
+  "authErrorInvalidClaims": "[GL] Invalid custom claims provided.",
+  "@authErrorInvalidClaims": {
+    "description": "Localization key for: Invalid custom claims provided."
+  },
+  "authErrorInvalidContinueUri": "[GL] The continue URL is invalid.",
+  "@authErrorInvalidContinueUri": {
+    "description": "Localization key for: The continue URL is invalid."
+  },
+  "authErrorInvalidCreationTime": "[GL] The creation time is invalid.",
+  "@authErrorInvalidCreationTime": {
+    "description": "Localization key for: The creation time is invalid."
+  },
+  "authErrorInvalidDisabledField": "[GL] The disabled field value is invalid.",
+  "@authErrorInvalidDisabledField": {
+    "description": "Localization key for: The disabled field value is invalid."
+  },
+  "authErrorInvalidDisplayName": "[GL] The display name is invalid.",
+  "@authErrorInvalidDisplayName": {
+    "description": "Localization key for: The display name is invalid."
+  },
+  "authErrorInvalidDynamicLinkDomain": "[GL] The dynamic link domain is invalid.",
+  "@authErrorInvalidDynamicLinkDomain": {
+    "description": "Localization key for: The dynamic link domain is invalid."
+  },
+  "authErrorInvalidEmailVerified": "[GL] The email verified value is invalid.",
+  "@authErrorInvalidEmailVerified": {
+    "description": "Localization key for: The email verified value is invalid."
+  },
+  "authErrorInvalidHashAlgorithm": "[GL] The hash algorithm is invalid.",
+  "@authErrorInvalidHashAlgorithm": {
+    "description": "Localization key for: The hash algorithm is invalid."
+  },
+  "authErrorInvalidHashBlockSize": "[GL] The hash block size is invalid.",
+  "@authErrorInvalidHashBlockSize": {
+    "description": "Localization key for: The hash block size is invalid."
+  },
+  "authErrorInvalidHashDerivedKeyLength": "[GL] The hash derived key length is invalid.",
+  "@authErrorInvalidHashDerivedKeyLength": {
+    "description": "Localization key for: The hash derived key length is invalid."
+  },
+  "authErrorInvalidHashKey": "[GL] The hash key is invalid.",
+  "@authErrorInvalidHashKey": {
+    "description": "Localization key for: The hash key is invalid."
+  },
+  "authErrorInvalidHashMemoryCost": "[GL] The hash memory cost is invalid.",
+  "@authErrorInvalidHashMemoryCost": {
+    "description": "Localization key for: The hash memory cost is invalid."
+  },
+  "authErrorInvalidHashParallelization": "[GL] The hash parallelization is invalid.",
+  "@authErrorInvalidHashParallelization": {
+    "description": "Localization key for: The hash parallelization is invalid."
+  },
+  "authErrorInvalidHashRounds": "[GL] The hash rounds value is invalid.",
+  "@authErrorInvalidHashRounds": {
+    "description": "Localization key for: The hash rounds value is invalid."
+  },
+  "authErrorInvalidHashSaltSeparator": "[GL] The hash salt separator is invalid.",
+  "@authErrorInvalidHashSaltSeparator": {
+    "description": "Localization key for: The hash salt separator is invalid."
+  },
+  "authErrorInvalidLastSignInTime": "[GL] The last sign-in time is invalid.",
+  "@authErrorInvalidLastSignInTime": {
+    "description": "Localization key for: The last sign-in time is invalid."
+  },
+  "authErrorInvalidPageToken": "[GL] The page token is invalid.",
+  "@authErrorInvalidPageToken": {
+    "description": "Localization key for: The page token is invalid."
+  },
+  "authErrorInvalidProviderData": "[GL] The provider data is invalid.",
+  "@authErrorInvalidProviderData": {
+    "description": "Localization key for: The provider data is invalid."
+  },
+  "authErrorInvalidProviderId": "[GL] The provider ID is invalid.",
+  "@authErrorInvalidProviderId": {
+    "description": "Localization key for: The provider ID is invalid."
+  },
+  "authErrorInvalidSessionCookieDuration": "[GL] The session cookie duration is invalid.",
+  "@authErrorInvalidSessionCookieDuration": {
+    "description": "Localization key for: The session cookie duration is invalid."
+  },
+  "authErrorInvalidUid": "[GL] The UID is invalid.",
+  "@authErrorInvalidUid": {
+    "description": "Localization key for: The UID is invalid."
+  },
+  "authErrorInvalidUserImport": "[GL] The user import record is invalid.",
+  "@authErrorInvalidUserImport": {
+    "description": "Localization key for: The user import record is invalid."
+  },
+  "authErrorMaximumUserCountExceeded": "[GL] Maximum user import count exceeded.",
+  "@authErrorMaximumUserCountExceeded": {
+    "description": "Localization key for: Maximum user import count exceeded."
+  },
+  "authErrorMissingAndroidPkgName": "[GL] Missing Android package name.",
+  "@authErrorMissingAndroidPkgName": {
+    "description": "Localization key for: Missing Android package name."
+  },
+  "authErrorMissingContinueUri": "[GL] Missing continue URL.",
+  "@authErrorMissingContinueUri": {
+    "description": "Localization key for: Missing continue URL."
+  },
+  "authErrorMissingHashAlgorithm": "[GL] Missing hash algorithm.",
+  "@authErrorMissingHashAlgorithm": {
+    "description": "Localization key for: Missing hash algorithm."
+  },
+  "authErrorMissingIosBundleId": "[GL] Missing iOS bundle ID.",
+  "@authErrorMissingIosBundleId": {
+    "description": "Localization key for: Missing iOS bundle ID."
+  },
+  "authErrorMissingUid": "[GL] Missing UID.",
+  "@authErrorMissingUid": {
+    "description": "Localization key for: Missing UID."
+  },
+  "authErrorMissingOauthClientSecret": "[GL] Missing OAuth client secret.",
+  "@authErrorMissingOauthClientSecret": {
+    "description": "Localization key for: Missing OAuth client secret."
+  },
+  "authErrorProjectNotFound": "[GL] Firebase project not found.",
+  "@authErrorProjectNotFound": {
+    "description": "Localization key for: Firebase project not found."
+  },
+  "authErrorReservedClaims": "[GL] Reserved claims provided.",
+  "@authErrorReservedClaims": {
+    "description": "Localization key for: Reserved claims provided."
+  },
+  "authErrorSessionCookieExpired": "[GL] Session cookie has expired.",
+  "@authErrorSessionCookieExpired": {
+    "description": "Localization key for: Session cookie has expired."
+  },
+  "authErrorSessionCookieRevoked": "[GL] Session cookie has been revoked.",
+  "@authErrorSessionCookieRevoked": {
+    "description": "Localization key for: Session cookie has been revoked."
+  },
+  "authErrorUidAlreadyExists": "[GL] The UID is already in use.",
+  "@authErrorUidAlreadyExists": {
+    "description": "Localization key for: The UID is already in use."
+  },
+  "authErrorUnauthorizedContinueUri": "[GL] The continue URL domain is not whitelisted.",
+  "@authErrorUnauthorizedContinueUri": {
+    "description": "Localization key for: The continue URL domain is not whitelisted."
+  },
+  "authErrorUnknown": "[GL] An unknown authentication error occurred.",
+  "@authErrorUnknown": {
+    "description": "Localization key for: An unknown authentication error occurred."
+  },
+  "checkingPermissions1": "فحص الأذونات...",
+  "@checkingPermissions1": {
+    "description": "Localization key for: Checking permissions..."
+  },
+  "paymentSuccessful": "تم الدفع بنجاح",
+  "@paymentSuccessful": {
+    "description": "Localization key for: Payment Successful!"
+  },
+  "businessAvailability": "توفر الأعمال",
+  "@businessAvailability": {
+    "description": "Localization key for: Business Availability"
+  },
+  "send": "إرسال",
+  "@send": {
+    "description": "Localization key for: Send"
+  },
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
+  "@newNotificationPayloadtitle": {
+    "description": "Localization key for: New notification: {payloadTitle}"
+  },
+  "gameList": "قائمة الألعاب",
+  "@gameList": {
+    "description": "Localization key for: Game List"
+  },
+  "deleteAvailability": "حذف التوفر",
+  "@deleteAvailability": {
+    "description": "Localization key for: Delete Availability"
+  },
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
+  "@connectToGoogleCalendar": {
+    "description": "Localization key for: Connect to Google Calendar"
+  },
+  "adminFreeAccess": "[GL] Admin Free Access",
+  "@adminFreeAccess": {
+    "description": "Localization key for: Admin Free Access"
+  },
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
+  "@emailProfileemail": {
+    "description": "Localization key for: Email: {profileEmail}"
+  },
+  "calendar": "التقويم",
+  "@calendar": {
+    "description": "Localization key for: Calendar"
+  },
+  "upload1": "[GL] Upload (Galician)",
+  "@upload1": {
+    "description": "Localization key for: Upload"
+  },
+  "resolved": "تم الحل",
+  "@resolved": {
+    "description": "Localization key for: Resolved"
+  },
+  "keepSubscription": "الاحتفاظ بالاشتراك",
+  "@keepSubscription": {
+    "description": "Localization key for: Keep Subscription"
+  },
+  "virtualSessionCreatedInvitingFriends": "[GL] Virtual session created! Inviting friends... (Galician)",
+  "@virtualSessionCreatedInvitingFriends": {
+    "description": "Localization key for: Virtual session created! Inviting friends..."
+  },
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
+  "@noEventsScheduledForToday": {
+    "description": "Localization key for: No events scheduled for today"
+  },
+  "exportData": "تصدير البيانات",
+  "@exportData": {
+    "description": "Localization key for: Export Data"
+  },
+  "rewards": "[GL] Rewards (Galician)",
+  "@rewards": {
+    "description": "Localization key for: Rewards"
+  },
+  "time": "[GL] Time (Galician)",
+  "@time": {
+    "description": "Localization key for: Time"
+  },
+  "userCid": "[GL] User {id}",
+  "@userCid": {
+    "description": "Localization key for: User {id}"
+  },
+  "noSlots": "[GL] No slots (Galician)",
+  "@noSlots": {
+    "description": "Localization key for: No slots"
+  },
+  "signIn": "[GL] Sign In (Galician)",
+  "@signIn": {
+    "description": "Localization key for: Sign In"
+  },
+  "homeFeedScreen": "[GL] Home Feed Screen (Galician)",
+  "@homeFeedScreen": {
+    "description": "Localization key for: Home Feed Screen"
+  },
+  "selectLocation": "[GL] Select Location (Galician)",
+  "@selectLocation": {
+    "description": "Localization key for: Select Location"
+  },
+  "noTicketsYet": "[GL] No tickets yet (Galician)",
+  "@noTicketsYet": {
+    "description": "Localization key for: No tickets yet"
+  },
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
+  "@meetingSharedSuccessfully1": {
+    "description": "Localization key for: Meeting shared successfully!"
+  },
+  "studioProfile": "ملف الاستوديو",
+  "@studioProfile": {
+    "description": "Localization key for: Studio Profile"
+  },
+  "subscriptionUnavailable": "[GL] Subscription unavailable (Galician)",
+  "@subscriptionUnavailable": {
+    "description": "Localization key for: Subscription unavailable"
+  },
+  "confirmBooking": "[GL] Confirm Booking (Galician)",
+  "@confirmBooking": {
+    "description": "Localization key for: Confirm Booking"
+  },
+  "failedToUpdatePermissionE": "[GL] Failed to update permission: $e (Galician)",
+  "@failedToUpdatePermissionE": {
+    "description": "Localization key for: Failed to update permission: $e"
+  },
+  "reject": "[GL] Reject (Galician)",
+  "@reject": {
+    "description": "Localization key for: Reject"
+  },
+  "ambassadorStatusAmbassadorstatus": "[GL] Ambassador Status: {ambassadorStatus} (Galician)",
+  "@ambassadorStatusAmbassadorstatus": {
+    "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
+  },
+  "noProviders": "[GL] No providers",
+  "@noProviders": {
+    "description": "Localization key for: No providers"
+  },
+  "checkingSubscription": "[GL] Checking subscription... (Galician)",
+  "@checkingSubscription": {
+    "description": "Localization key for: Checking subscription..."
+  },
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
+  "@errorPickingImageE": {
+    "description": "Localization key for: Error picking image: $e"
+  },
+  "noContentAvailableYet": "[GL] No content available yet (Galician)",
+  "@noContentAvailableYet": {
+    "description": "Localization key for: No content available yet"
+  },
+  "resolve": "[GL] Resolve (Galician)",
+  "@resolve": {
+    "description": "Localization key for: Resolve"
+  },
+  "errorLoadingSurveysError": "[GL] Error loading surveys: $error (Galician)",
+  "@errorLoadingSurveysError": {
+    "description": "Localization key for: Error loading surveys: $error"
+  },
+  "errorLogerrormessage": "[GL] Error: {errorMessage}",
+  "@errorLogerrormessage": {
+    "description": "Localization key for: Error: {errorMessage}"
+  },
+  "getHelpWithYourAccount": "[GL] Get help with your account (Galician)",
+  "@getHelpWithYourAccount": {
+    "description": "Localization key for: Get help with your account"
+  },
+  "pay": "[GL] Pay (Galician)",
+  "@pay": {
+    "description": "Localization key for: Pay"
+  },
+  "noOrganizations": "[GL] noOrganizations (TRANSLATE)",
+  "@noOrganizations": {
+    "description": "noOrganizations description"
+  },
+  "meetingDetails": "تفاصيل الاجتماع",
+  "@meetingDetails": {
+    "description": "meetingDetails description"
+  },
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
+  "@errorLoadingAppointments": {
+    "description": "Localization key for: Error loading appointments"
+  },
+  "changesSavedSuccessfully": "[GL] Changes saved successfully! (Galician)",
+  "@changesSavedSuccessfully": {
+    "description": "Localization key for: Changes saved successfully!"
+  },
+  "createNewInvoice": "[GL] Create New Invoice (Galician)",
+  "@createNewInvoice": {
+    "description": "Localization key for: Create New Invoice"
+  },
+  "profileNotFound": "الملف الشخصي غير موجود",
+  "@profileNotFound": {
+    "description": "Localization key for: Profile not found."
+  },
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
+  "@errorConfirmingPaymentE": {
+    "description": "Localization key for: Error confirming payment: $e"
+  },
+  "inviteFriends": "دعوة الأصدقاء",
+  "@inviteFriends": {
+    "description": "Localization key for: Invite Friends"
+  },
+  "profileSaved": "[GL] Profile saved! (Galician)",
+  "@profileSaved": {
+    "description": "Localization key for: Profile saved!"
+  },
+  "receiveBookingNotificationsViaEmail": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
+  "@receiveBookingNotificationsViaEmail": {
+    "description": "Localization key for: Receive booking notifications via email"
+  },
+  "valuetointk": "[GL] \\${value}K (Galician)",
+  "@valuetointk": {
+    "description": "Localization key for: \\${value}K"
+  },
+  "deleteAccount": "[GL] Delete Account (Galician)",
+  "@deleteAccount": {
+    "description": "Localization key for: Delete Account"
+  },
+  "profile1": "الملف الشخصي",
+  "@profile1": {
+    "description": "Localization key for: Profile"
+  },
+  "businessOnboarding": "[GL] Business Onboarding (Galician)",
+  "@businessOnboarding": {
+    "description": "Localization key for: Business Onboarding"
+  },
+  "addNewClient": "[GL] Add New Client (Galician)",
+  "@addNewClient": {
+    "description": "Localization key for: Add New Client"
+  },
+  "darkMode": "[GL] Dark Mode (Galician)",
+  "@darkMode": {
+    "description": "Localization key for: Dark Mode"
+  },
+  "addProvider": "[GL] Add Provider",
+  "@addProvider": {
+    "description": "Localization key for: Add Provider"
+  },
+  "noRouteDefinedForStateuripath": "[GL] No route defined for {path}",
+  "@noRouteDefinedForStateuripath": {
+    "description": "Localization key for: No route defined for {path}"
+  },
+  "youWillReceiveAConfirmationEmailShortly": "[GL] You will receive a confirmation email shortly. (Galician)",
+  "@youWillReceiveAConfirmationEmailShortly": {
+    "description": "Localization key for: You will receive a confirmation email shortly."
+  },
+  "addQuestion": "[GL] Add Question (Galician)",
+  "@addQuestion": {
+    "description": "Localization key for: Add Question"
+  },
+  "privacyPolicy": "[GL] Privacy Policy (Galician)",
+  "@privacyPolicy": {
+    "description": "Localization key for: Privacy Policy"
+  },
+  "branchesLengthBranches": "[GL] {branchCount} branches (Galician)",
+  "@branchesLengthBranches": {
+    "description": "Localization key for: {branchCount} branches"
+  },
+  "join": "[GL] Join (Galician)",
+  "@join": {
+    "description": "Localization key for: Join"
+  },
+  "businessSubscription": "[GL] Business Subscription (Galician)",
+  "@businessSubscription": {
+    "description": "Localization key for: Business Subscription"
+  },
+  "myInvites1": "دعواتي",
+  "@myInvites1": {
+    "description": "Localization key for: My Invites"
+  },
+  "providers": "[GL] Providers",
+  "@providers": {
+    "description": "Localization key for: Providers"
+  },
+  "surveyManagement": "[GL] Survey Management (Galician)",
+  "@surveyManagement": {
+    "description": "Localization key for: Survey Management"
+  },
+  "pleaseEnterAValidEmailOrPhone": "[GL] Please enter a valid email or phone",
+  "@pleaseEnterAValidEmailOrPhone": {
+    "description": "Localization key for: Please enter a valid email or phone"
+  },
+  "noRoomsFoundAddYourFirstRoom": "[GL] No rooms found. Add your first room! (Galician)",
+  "@noRoomsFoundAddYourFirstRoom": {
+    "description": "Localization key for: No rooms found. Add your first room!"
+  },
+  "readOurPrivacyPolicy": "[GL] Read our privacy policy (Galician)",
+  "@readOurPrivacyPolicy": {
+    "description": "Localization key for: Read our privacy policy"
+  },
+  "couldNotOpenPrivacyPolicy": "[GL] Could not open privacy policy (Galician)",
+  "@couldNotOpenPrivacyPolicy": {
+    "description": "Localization key for: Could not open privacy policy"
+  },
+  "refresh1": "[GL] Refresh (Galician)",
+  "@refresh1": {
+    "description": "Localization key for: Refresh"
+  },
+  "roomUpdatedSuccessfully": "[GL] Room updated successfully! (Galician)",
+  "@roomUpdatedSuccessfully": {
+    "description": "Localization key for: Room updated successfully!"
+  },
+  "contentDetail": "[GL] Content Detail (Galician)",
+  "@contentDetail": {
+    "description": "Localization key for: Content Detail"
+  },
+  "cancelSubscription": "[GL] Cancel Subscription (Galician)",
+  "@cancelSubscription": {
+    "description": "Localization key for: Cancel Subscription"
+  },
+  "successfullyRegisteredAsAmbassador": "[GL] Successfully registered as Ambassador! (Galician)",
+  "@successfullyRegisteredAsAmbassador": {
+    "description": "Localization key for: Successfully registered as Ambassador!"
+  },
+  "save1": "[GL] Save (Galician)",
+  "@save1": {
+    "description": "Localization key for: Save"
+  },
+  "copy1": "[GL] Copy (Galician)",
+  "@copy1": {
+    "description": "Localization key for: Copy"
+  },
+  "failedToSendInvitationE": "[GL] Failed to send invitation: $e (Galician)",
+  "@failedToSendInvitationE": {
+    "description": "Localization key for: Failed to send invitation: $e"
+  },
+  "surveyScore": "[GL] Survey Score (Galician)",
+  "@surveyScore": {
+    "description": "Localization key for: Survey Score"
+  },
+  "userUserid": "[GL] User $userId",
+  "@userUserid": {
+    "description": "Localization key for: User $userId"
+  },
+  "noAppointmentsFound": "[GL] No appointments found. (Galician)",
+  "@noAppointmentsFound": {
+    "description": "Localization key for: No appointments found."
+  },
+  "responseDetail": "[GL] Response Detail (Galician)",
+  "@responseDetail": {
+    "description": "Localization key for: Response Detail"
+  },
+  "businessVerificationScreenComingSoon": "شاشة التحقق من الأعمال - قريباً",
+  "@businessVerificationScreenComingSoon": {
+    "description": "Localization key for: Business Verification Screen - Coming Soon"
+  },
+  "businessProfileActivatedSuccessfully": "تم تفعيل الملف التجاري بنجاح",
+  "@businessProfileActivatedSuccessfully": {
+    "description": "Localization key for: Business profile activated successfully!"
+  },
+  "failedToStartProSubscriptionE": "[GL] Failed to start Pro subscription: $e (Galician)",
+  "@failedToStartProSubscriptionE": {
+    "description": "Localization key for: Failed to start Pro subscription: $e"
+  },
+  "businessDashboardEntryScreenComingSoon": "[GL] Business Dashboard Entry Screen - Coming Soon (Galician)",
+  "@businessDashboardEntryScreenComingSoon": {
+    "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
+  },
+  "contentFilter": "[GL] Content Filter (Galician)",
+  "@contentFilter": {
+    "description": "Localization key for: Content Filter"
+  },
+  "helpSupport": "[GL] Help & Support (Galician)",
+  "@helpSupport": {
+    "description": "Localization key for: Help & Support"
+  },
+  "editRoom": "[GL] Edit Room (Galician)",
+  "@editRoom": {
+    "description": "Localization key for: Edit Room"
+  },
+  "appointmentApptid": "[GL] Appointment: {appointmentId}",
+  "@appointmentApptid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "deviceLogdeviceinfo": "[GL] Device: {deviceInfo}",
+  "@deviceLogdeviceinfo": {
+    "description": "Localization key for: Device: {deviceInfo}"
+  },
+  "businessCrmEntryScreenComingSoon": "[GL] Business CRM Entry Screen - Coming Soon (Galician)",
+  "@businessCrmEntryScreenComingSoon": {
+    "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
+  },
+  "adminDashboard": "[GL] Admin Dashboard",
+  "@adminDashboard": {
+    "description": "Localization key for: Admin Dashboard"
+  },
+  "orgmemberidslengthMembers": "[GL] {memberCount} members",
+  "@orgmemberidslengthMembers": {
+    "description": "Localization key for: {memberCount} members"
+  },
+  "errorLoadingDashboardError": "[GL] Error loading dashboard: $error (Galician)",
+  "@errorLoadingDashboardError": {
+    "description": "Localization key for: Error loading dashboard: $error"
+  },
+  "gameDeletedSuccessfully": "[GL] Game deleted successfully! (Galician)",
+  "@gameDeletedSuccessfully": {
+    "description": "Localization key for: Game deleted successfully!"
+  },
+  "viewResponsesComingSoon": "[GL] View responses - Coming soon! (Galician)",
+  "@viewResponsesComingSoon": {
+    "description": "Localization key for: View responses - Coming soon!"
+  },
+  "deleteProvider": "[GL] Delete Provider",
+  "@deleteProvider": {
+    "description": "Localization key for: Delete Provider"
+  },
+  "errorLoadingRewards": "[GL] Error loading rewards (Galician)",
+  "@errorLoadingRewards": {
+    "description": "Localization key for: Error loading rewards"
+  },
+  "failedToDeleteAccountE": "[GL] Failed to delete account: $e (Galician)",
+  "@failedToDeleteAccountE": {
+    "description": "Localization key for: Failed to delete account: $e"
+  },
+  "invited1": "[GL] Invited (Galician)",
+  "@invited1": {
+    "description": "Localization key for: Invited"
+  },
+  "noBranchesAvailable": "[GL] No branches available (Galician)",
+  "@noBranchesAvailable": {
+    "description": "Localization key for: No branches available"
+  },
+  "errorError": "[GL] Error: $error (Galician)",
+  "@errorError": {
+    "description": "Localization key for: Error: $error"
+  },
+  "noEvents": "[GL] No events (Galician)",
+  "@noEvents": {
+    "description": "Localization key for: No events"
+  },
+  "gameCreatedSuccessfully": "[GL] Game created successfully! (Galician)",
+  "@gameCreatedSuccessfully": {
+    "description": "Localization key for: Game created successfully!"
+  },
+  "add1": "[GL] Add (Galician)",
+  "@add1": {
+    "description": "Localization key for: Add"
+  },
+  "creatorCreatorid": "[GL] Creator: $creatorId",
+  "@creatorCreatorid": {
+    "description": "Localization key for: Creator: $creatorId"
+  },
+  "eventstarttimeEventendtime": "[GL] {startTime} - {endTime} (Galician)",
+  "@eventstarttimeEventendtime": {
+    "description": "Localization key for: {startTime} - {endTime}"
+  },
+  "allowPlaytime": "[GL] Allow Playtime (Galician)",
+  "@allowPlaytime": {
+    "description": "Localization key for: Allow Playtime"
+  },
+  "clients": "[GL] Clients (Galician)",
+  "@clients": {
+    "description": "Localization key for: Clients"
+  },
+  "noAmbassadorDataAvailable": "[GL] No ambassador data available (Galician)",
+  "@noAmbassadorDataAvailable": {
+    "description": "Localization key for: No ambassador data available"
+  },
+  "backgroundDeletedSuccessfully": "[GL] Background deleted successfully! (Galician)",
+  "@backgroundDeletedSuccessfully": {
+    "description": "Localization key for: Background deleted successfully!"
+  },
+  "errorSnapshoterror": "[GL] Error: {error} (Galician)",
+  "@errorSnapshoterror": {
+    "description": "Localization key for: Error: {error}"
+  },
+  "noAnalyticsDataAvailableYet": "[GL] No analytics data available yet. (Galician)",
+  "@noAnalyticsDataAvailableYet": {
+    "description": "Localization key for: No analytics data available yet."
+  },
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
+  "@errorDeletingSlotE": {
+    "description": "Localization key for: Error deleting slot: $e"
+  },
+  "businessPhoneBookingEntryScreenComingSoon": "[GL] Business Phone Booking Entry Screen - Coming Soon (Galician)",
+  "@businessPhoneBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
+  },
+  "verification": "[GL] Verification (Galician)",
+  "@verification": {
+    "description": "Localization key for: Verification"
+  },
+  "copyLink": "[GL] Copy Link (Galician)",
+  "@copyLink": {
+    "description": "Localization key for: Copy Link"
+  },
+  "dashboard1": "[GL] Dashboard (Galician)",
+  "@dashboard1": {
+    "description": "Localization key for: Dashboard"
+  },
+  "manageChildAccounts": "[GL] Manage Child Accounts (Galician)",
+  "@manageChildAccounts": {
+    "description": "Localization key for: Manage Child Accounts"
+  },
+  "grantConsent": "[GL] Grant Consent (Galician)",
+  "@grantConsent": {
+    "description": "Localization key for: Grant Consent"
+  },
+  "myProfile1": "[GL] My Profile (Galician)",
+  "@myProfile1": {
+    "description": "Localization key for: My Profile"
+  },
+  "submit": "[GL] Submit (Galician)",
+  "@submit": {
+    "description": "Localization key for: Submit"
+  },
+  "userLoguseremail": "[GL] User: {userEmail}",
+  "@userLoguseremail": {
+    "description": "Localization key for: User: {userEmail}"
+  },
+  "emailNotifications": "إشعارات البريد الإلكتروني",
+  "@emailNotifications": {
+    "description": "Localization key for: Email Notifications"
+  },
+  "ambassadorDashboard": "[GL] Ambassador Dashboard (Galician)",
+  "@ambassadorDashboard": {
+    "description": "Localization key for: Ambassador Dashboard"
+  },
+  "phoneBooking": "[GL] Phone Booking (Galician)",
+  "@phoneBooking": {
+    "description": "Localization key for: Phone Booking"
+  },
+  "bookViaChat": "[GL] Book via Chat (Galician)",
+  "@bookViaChat": {
+    "description": "Localization key for: Book via Chat"
+  },
+  "error": "[GL] [GL] Error",
+  "@error": {
+    "description": "Description"
+  },
+  "businessProfile": "[GL] Business Profile (Galician)",
+  "@businessProfile": {
+    "description": "Localization key for: Business Profile"
+  },
+  "businessBookingEntryScreenComingSoon": "[GL] Business Booking Entry Screen - Coming Soon (Galician)",
+  "@businessBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
+  },
+  "createNewSurvey": "[GL] Create New Survey (Galician)",
+  "@createNewSurvey": {
+    "description": "Localization key for: Create New Survey"
+  },
+  "backgroundRejected": "[GL] Background rejected (Galician)",
+  "@backgroundRejected": {
+    "description": "Localization key for: Background rejected"
+  },
+  "noMediaSelected": "[GL] No media selected (Galician)",
+  "@noMediaSelected": {
+    "description": "Localization key for: No media selected"
+  },
+  "syncToGoogle": "[GL] Sync to Google (Galician)",
+  "@syncToGoogle": {
+    "description": "Localization key for: Sync to Google"
+  },
+  "virtualPlaytime": "[GL] Virtual Playtime (Galician)",
+  "@virtualPlaytime": {
+    "description": "Localization key for: Virtual Playtime"
+  },
+  "colorContrastTesting": "[GL] Color Contrast Testing",
+  "@colorContrastTesting": {
+    "description": "Localization key for: Color Contrast Testing"
+  },
+  "loginFailedE": "[GL] Login failed: $e",
+  "@loginFailedE": {
+    "description": "Localization key for: Login failed: $e"
+  },
+  "invitationSentSuccessfully": "[GL] Invitation sent successfully! (Galician)",
+  "@invitationSentSuccessfully": {
+    "description": "Localization key for: Invitation sent successfully!"
+  },
+  "registering": "[GL] Registering... (Galician)",
+  "@registering": {
+    "description": "Localization key for: Registering..."
+  },
+  "statusAppointmentstatusname": "[GL] Status: {status} (Galician)",
+  "@statusAppointmentstatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "home1": "[GL] Home (Galician)",
+  "@home1": {
+    "description": "Localization key for: Home"
+  },
+  "errorSavingSettingsE": "[GL] Error saving settings: $e (Galician)",
+  "@errorSavingSettingsE": {
+    "description": "Localization key for: Error saving settings: $e"
+  },
+  "appVersionAndInformation": "[GL] App version and information (Galician)",
+  "@appVersionAndInformation": {
+    "description": "Localization key for: App version and information"
+  },
+  "businessSubscriptionEntryScreenComingSoon": "[GL] Business Subscription Entry Screen - Coming Soon (Galician)",
+  "@businessSubscriptionEntryScreenComingSoon": {
+    "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
+  },
+  "ekeyEvalue": "[GL] {key}: {value} (Galician)",
+  "@ekeyEvalue": {
+    "description": "Localization key for: {key}: {value}"
+  },
+  "yourPaymentHasBeenProcessedSuccessfully": "[GL] Your payment has been processed successfully. (Galician)",
+  "@yourPaymentHasBeenProcessedSuccessfully": {
+    "description": "Localization key for: Your payment has been processed successfully."
+  },
+  "errorE": "[GL] Error: $e (Galician)",
+  "@errorE": {
+    "description": "Localization key for: Error: $e"
+  },
+  "viewAll1": "[GL] View All (Galician)",
+  "@viewAll1": {
+    "description": "Localization key for: View All"
+  },
+  "editSurveyComingSoon": "[GL] Edit survey - Coming soon! (Galician)",
+  "@editSurveyComingSoon": {
+    "description": "Localization key for: Edit survey - Coming soon!"
+  },
+  "enterOtp": "[GL] Enter OTP (Galician)",
+  "@enterOtp": {
+    "description": "Localization key for: Enter OTP"
+  },
+  "payment": "[GL] Payment (Galician)",
+  "@payment": {
+    "description": "Localization key for: Payment"
+  },
+  "automaticallyConfirmNewBookingRequests": "[GL] Automatically confirm new booking requests (Galician)",
+  "@automaticallyConfirmNewBookingRequests": {
+    "description": "Localization key for: Automatically confirm new booking requests"
+  },
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
+  "@errorPickingVideoE": {
+    "description": "Localization key for: Error picking video: $e"
+  },
+  "noRouteDefinedForSettingsname": "[GL] No route defined for {settingsName} (Galician)",
+  "@noRouteDefinedForSettingsname": {
+    "description": "Localization key for: No route defined for {settingsName}"
+  },
+  "pleaseSignInToUploadABackground": "[GL] Please sign in to upload a background (Galician)",
+  "@pleaseSignInToUploadABackground": {
+    "description": "Localization key for: Please sign in to upload a background"
+  },
+  "logtargettypeLogtargetid": "[GL] {targetType}: {targetId}",
+  "@logtargettypeLogtargetid": {
+    "description": "Localization key for: {targetType}: {targetId}"
+  },
+  "staffAvailability": "[GL] Staff Availability (Galician)",
+  "@staffAvailability": {
+    "description": "Localization key for: Staff Availability"
+  },
+  "livePlaytime": "[GL] Live Playtime (Galician)",
+  "@livePlaytime": {
+    "description": "Localization key for: Live Playtime"
+  },
+  "autoconfirmBookings": "[GL] Auto-Confirm Bookings (Galician)",
+  "@autoconfirmBookings": {
+    "description": "Localization key for: Auto-Confirm Bookings"
+  },
+  "redirectingToStripeCheckoutForProPlan": "[GL] Redirecting to Stripe checkout for Pro plan... (Galician)",
+  "@redirectingToStripeCheckoutForProPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
+  },
+  "exportAsCsv": "[GL] Export as CSV (Galician)",
+  "@exportAsCsv": {
+    "description": "Localization key for: Export as CSV"
+  },
+  "deleteFunctionalityComingSoon": "[GL] Delete functionality coming soon! (Galician)",
+  "@deleteFunctionalityComingSoon": {
+    "description": "Localization key for: Delete functionality coming soon!"
+  },
+  "editClient": "[GL] Edit Client (Galician)",
+  "@editClient": {
+    "description": "Localization key for: Edit Client"
+  },
+  "areYouSureYouWantToDeleteThisMessage": "[GL] Are you sure you want to delete this message? (Galician)",
+  "@areYouSureYouWantToDeleteThisMessage": {
+    "description": "Localization key for: Are you sure you want to delete this message?"
+  },
+  "referralsAmbassadorreferrals": "[GL] Referrals: {referrals} (Galician)",
+  "@referralsAmbassadorreferrals": {
+    "description": "Localization key for: Referrals: {referrals}"
+  },
+  "notAuthenticated": "[GL] Not authenticated",
+  "@notAuthenticated": {
+    "description": "Localization key for: Not authenticated"
+  },
+  "privacyRequestSentToYourParents": "[GL] Privacy request sent to your parents! (Galician)",
+  "@privacyRequestSentToYourParents": {
+    "description": "Localization key for: Privacy request sent to your parents!"
+  },
+  "clientDeletedSuccessfully": "[GL] Client deleted successfully! (Galician)",
+  "@clientDeletedSuccessfully": {
+    "description": "Localization key for: Client deleted successfully!"
+  },
+  "failedToCancelSubscription": "[GL] Failed to cancel subscription (Galician)",
+  "@failedToCancelSubscription": {
+    "description": "Localization key for: Failed to cancel subscription"
+  },
+  "allLanguages": "[GL] All Languages (Galician)",
+  "@allLanguages": {
+    "description": "Localization key for: All Languages"
+  },
+  "slotDeletedSuccessfully": "[GL] Slot deleted successfully (Galician)",
+  "@slotDeletedSuccessfully": {
+    "description": "Localization key for: Slot deleted successfully"
+  },
+  "businessProvidersEntryScreenComingSoon": "[GL] Business Providers Entry Screen - Coming Soon",
+  "@businessProvidersEntryScreenComingSoon": {
+    "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
+  },
+  "parentsMustApproveBeforeChildrenCanJoin": "[GL] Parents must approve before children can join (Galician)",
+  "@parentsMustApproveBeforeChildrenCanJoin": {
+    "description": "Localization key for: Parents must approve before children can join"
+  },
+  "subscribeToPro1499mo": "[GL] Subscribe to Pro (€14.99/mo) (Galician)",
+  "@subscribeToPro1499mo": {
+    "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
+  },
+  "businessAvailabilityEntryScreenComingSoon": "[GL] Business Availability Entry Screen - Coming Soon (Galician)",
+  "@businessAvailabilityEntryScreenComingSoon": {
+    "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
+  },
+  "appointmentsListlength": "[GL] Appointments: {count} (Galician)",
+  "@appointmentsListlength": {
+    "description": "Localization key for: Appointments: {count}"
+  },
+  "clearFilters": "[GL] Clear Filters (Galician)",
+  "@clearFilters": {
+    "description": "Localization key for: Clear Filters"
+  },
+  "submitBooking": "[GL] Submit Booking (Galician)",
+  "@submitBooking": {
+    "description": "Localization key for: Submit Booking"
+  },
+  "areYouSureYouWantToCancelThisAppointment": "[GL] Are you sure you want to cancel this appointment? (Galician)",
+  "@areYouSureYouWantToCancelThisAppointment": {
+    "description": "Localization key for: Are you sure you want to cancel this appointment?"
+  },
+  "noUpcomingBookings": "[GL] No upcoming bookings (Galician)",
+  "@noUpcomingBookings": {
+    "description": "Localization key for: No upcoming bookings"
+  },
+  "goBack": "[GL] Go Back (Galician)",
+  "@goBack": {
+    "description": "Localization key for: Go Back"
+  },
+  "setup": "[GL] Setup (Galician)",
+  "@setup": {
+    "description": "Localization key for: Setup"
+  },
+  "inviteChild": "[GL] Invite Child (Galician)",
+  "@inviteChild": {
+    "description": "Localization key for: Invite Child"
+  },
+  "goToDashboard": "[GL] Go to Dashboard (Galician)",
+  "@goToDashboard": {
+    "description": "Localization key for: Go to Dashboard"
+  },
+  "ambassadorQuotaDashboard": "[GL] Ambassador Quota Dashboard (Galician)",
+  "@ambassadorQuotaDashboard": {
+    "description": "Localization key for: Ambassador Quota Dashboard"
+  },
+  "adminSettings": "[GL] Admin Settings",
+  "@adminSettings": {
+    "description": "Localization key for: Admin Settings"
+  },
+  "referralCode": "[GL] Referral Code (Galician)",
+  "@referralCode": {
+    "description": "Localization key for: Referral Code"
+  },
+  "adminLogadminemail": "[GL] Admin: {adminEmail}",
+  "@adminLogadminemail": {
+    "description": "Localization key for: Admin: {adminEmail}"
+  },
+  "date": "[GL] Date (Galician)",
+  "@date": {
+    "description": "Localization key for: Date"
+  },
+  "readOnly": "[GL] Read Only (Galician)",
+  "@readOnly": {
+    "description": "Localization key for: Read Only"
+  },
+  "bookingRequest": "[GL] Booking Request (Galician)",
+  "@bookingRequest": {
+    "description": "Localization key for: Booking Request"
+  },
+  "advancedReporting": "[GL] • Advanced reporting (Galician)",
+  "@advancedReporting": {
+    "description": "Localization key for: • Advanced reporting"
+  },
+  "rooms": "[GL] Rooms (Galician)",
+  "@rooms": {
+    "description": "Localization key for: Rooms"
+  },
+  "copiedToClipboard": "[GL] Copied to clipboard (Galician)",
+  "@copiedToClipboard": {
+    "description": "Localization key for: Copied to clipboard"
+  },
+  "bookingConfirmed": "[GL] Booking Confirmed (Galician)",
+  "@bookingConfirmed": {
+    "description": "Localization key for: Booking Confirmed"
+  },
+  "sessionApproved": "تمت الموافقة على الجلسة",
+  "@sessionApproved": {
+    "description": "Localization key for: Session approved!"
+  },
+  "clientAddedSuccessfully": "[GL] Client added successfully! (Galician)",
+  "@clientAddedSuccessfully": {
+    "description": "Localization key for: Client added successfully!"
+  },
+  "noNotifications": "لا توجد إشعارات",
+  "@noNotifications": {
+    "description": "Localization key for: No notifications"
+  },
+  "backgroundApproved": "[GL] Background approved! (Galician)",
+  "@backgroundApproved": {
+    "description": "Localization key for: Background approved!"
+  },
+  "familySupport": "[GL] Family Support (Galician)",
+  "@familySupport": {
+    "description": "Localization key for: Family Support"
+  },
+  "deletingAccount": "[GL] Deleting account... (Galician)",
+  "@deletingAccount": {
+    "description": "Localization key for: Deleting account..."
+  },
+  "bookAppointment": "[GL] Book Appointment (Galician)",
+  "@bookAppointment": {
+    "description": "Localization key for: Book Appointment"
+  },
+  "receivePushNotificationsForNewBookings": "استقبال إشعارات الدفع للحجوزات الجديدة",
+  "@receivePushNotificationsForNewBookings": {
+    "description": "Localization key for: Receive push notifications for new bookings"
+  },
+  "delete1": "[GL] Delete (Galician)",
+  "@delete1": {
+    "description": "Localization key for: Delete"
+  },
+  "sendBookingInvite": "[GL] Send Booking Invite (Galician)",
+  "@sendBookingInvite": {
+    "description": "Localization key for: Send Booking Invite"
+  },
+  "text": "[GL] Text (Galician)",
+  "@text": {
+    "description": "Localization key for: Text"
+  },
+  "manageSubscription": "[GL] Manage Subscription (Galician)",
+  "@manageSubscription": {
+    "description": "Localization key for: Manage Subscription"
+  },
+  "requiresInstallFallback": "[GL] Requires Install Fallback (Galician)",
+  "@requiresInstallFallback": {
+    "description": "Localization key for: Requires Install Fallback"
+  },
+  "paymentConfirmation": "[GL] Payment Confirmation (Galician)",
+  "@paymentConfirmation": {
+    "description": "Localization key for: Payment Confirmation"
+  },
+  "promoAppliedYourNextBillIsFree": "[GL] Promo applied! Your next bill is free. (Galician)",
+  "@promoAppliedYourNextBillIsFree": {
+    "description": "Localization key for: Promo applied! Your next bill is free."
+  },
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
+  "@inviteeArgsinviteeid": {
+    "description": "Localization key for: Invitee: {inviteeId}"
+  },
+  "errorLoadingSlots": "[GL] Error loading slots (Galician)",
+  "@errorLoadingSlots": {
+    "description": "Localization key for: Error loading slots"
+  },
+  "allowOtherUsersToFindAndJoinThisGame": "[GL] Allow other users to find and join this game (Galician)",
+  "@allowOtherUsersToFindAndJoinThisGame": {
+    "description": "Localization key for: Allow other users to find and join this game"
+  },
+  "businessOnboardingScreenComingSoon": "[GL] Business Onboarding Screen - Coming Soon (Galician)",
+  "@businessOnboardingScreenComingSoon": {
+    "description": "Localization key for: Business Onboarding Screen - Coming Soon"
+  },
+  "activateBusinessProfile": "[GL] Activate Business Profile (Galician)",
+  "@activateBusinessProfile": {
+    "description": "Localization key for: Activate Business Profile"
+  },
+  "contentNotFound": "[GL] Content not found (Galician)",
+  "@contentNotFound": {
+    "description": "Localization key for: Content not found"
+  },
+  "pspecialtynpcontactinfo": "[GL] {specialty}\\n{contactInfo} (Galician)",
+  "@pspecialtynpcontactinfo": {
+    "description": "Localization key for: {specialty}\\n{contactInfo}"
+  },
+  "rating": "[GL] Rating (Galician)",
+  "@rating": {
+    "description": "Localization key for: Rating"
+  },
+  "messages": "[GL] Messages (Galician)",
+  "@messages": {
+    "description": "Localization key for: Messages"
+  },
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
+  "@errorEstimatingRecipientsE": {
+    "description": "Localization key for: Error estimating recipients: $e"
+  },
+  "becomeAnAmbassador": "[GL] Become an Ambassador (Galician)",
+  "@becomeAnAmbassador": {
+    "description": "Localization key for: Become an Ambassador"
+  },
+  "subscribeNow": "[GL] Subscribe Now (Galician)",
+  "@subscribeNow": {
+    "description": "Localization key for: Subscribe Now"
+  },
+  "timeArgsslotformatcontext": "[GL] Time: {time} (Galician)",
+  "@timeArgsslotformatcontext": {
+    "description": "Localization key for: Time: {time}"
+  },
+  "shareViaWhatsapp": "[GL] Share via WhatsApp (Galician)",
+  "@shareViaWhatsapp": {
+    "description": "Localization key for: Share via WhatsApp"
+  },
+  "users1": "[GL] Users (Galician)",
+  "@users1": {
+    "description": "Localization key for: Users"
+  },
+  "shareLink": "[GL] Share Link (Galician)",
+  "@shareLink": {
+    "description": "Localization key for: Share Link"
+  },
+  "areYouSureYouWantToDeleteThisProvider": "[GL] Are you sure you want to delete this provider?",
+  "@areYouSureYouWantToDeleteThisProvider": {
+    "description": "Localization key for: Are you sure you want to delete this provider?"
+  },
+  "deleteAppointment": "[GL] Delete Appointment (Galician)",
+  "@deleteAppointment": {
+    "description": "Localization key for: Delete Appointment"
+  },
+  "toggleAvailability": "[GL] Toggle Availability (Galician)",
+  "@toggleAvailability": {
+    "description": "Localization key for: Toggle Availability"
+  },
+  "changePlan": "[GL] Change Plan (Galician)",
+  "@changePlan": {
+    "description": "Localization key for: Change Plan"
+  },
+  "errorLoadingStaff": "[GL] Error loading staff (Galician)",
+  "@errorLoadingStaff": {
+    "description": "Localization key for: Error loading staff"
+  },
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
+  "@errorLoadingConfigurationE": {
+    "description": "Localization key for: Error loading configuration: $e"
+  },
+  "updateYourBusinessInformation": "[GL] Update your business information (Galician)",
+  "@updateYourBusinessInformation": {
+    "description": "Localization key for: Update your business information"
+  },
+  "noProvidersFoundAddYourFirstProvider": "[GL] No providers found. Add your first provider!",
+  "@noProvidersFoundAddYourFirstProvider": {
+    "description": "Localization key for: No providers found. Add your first provider!"
+  },
+  "parentDashboard": "[GL] Parent Dashboard (Galician)",
+  "@parentDashboard": {
+    "description": "Localization key for: Parent Dashboard"
+  },
+  "menu": "[GL] Menu (Galician)",
+  "@menu": {
+    "description": "Localization key for: Menu"
+  },
+  "studioBooking": "[GL] Studio Booking (Galician)",
+  "@studioBooking": {
+    "description": "Localization key for: Studio Booking"
+  },
+  "about1": "[GL] About (Galician)",
+  "@about1": {
+    "description": "Localization key for: About"
+  },
+  "multipleChoice": "[GL] Multiple Choice (Galician)",
+  "@multipleChoice": {
+    "description": "Localization key for: Multiple Choice"
+  },
+  "dateAppointmentscheduledattostring": "[GL] Date: {date} (Galician)",
+  "@dateAppointmentscheduledattostring": {
+    "description": "Localization key for: Date: {date}"
+  },
+  "studioBookingIsOnlyAvailableOnWeb": "[GL] Studio booking is only available on web (Galician)",
+  "@studioBookingIsOnlyAvailableOnWeb": {
+    "description": "Localization key for: Studio booking is only available on web"
+  },
+  "errorLoadingBranchesE": "[GL] Error loading branches: $e (Galician)",
+  "@errorLoadingBranchesE": {
+    "description": "Localization key for: Error loading branches: $e"
+  },
+  "ud83dudcc5Bookingdatetimetolocal": "[GL] \\uD83D\\uDCC5 {dateTime} (Galician)",
+  "@ud83dudcc5Bookingdatetimetolocal": {
+    "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
+  },
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
+  "@appointmentInviteappointmentid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "none": "[GL] None (Galician)",
+  "@none": {
+    "description": "Localization key for: None"
+  },
+  "failedToUpdateConsentE": "[GL] Failed to update consent: $e (Galician)",
+  "@failedToUpdateConsentE": {
+    "description": "Localization key for: Failed to update consent: $e"
+  },
+  "welcome1": "[GL] Welcome (Galician)",
+  "@welcome1": {
+    "description": "Localization key for: Welcome"
+  },
+  "failedToCreateSessionE": "[GL] Failed to create session: $e (Galician)",
+  "@failedToCreateSessionE": {
+    "description": "Localization key for: Failed to create session: $e"
+  },
+  "inviteContact": "[GL] Invite Contact (Galician)",
+  "@inviteContact": {
+    "description": "Localization key for: Invite Contact"
+  },
+  "surveyEditor": "[GL] Survey Editor (Galician)",
+  "@surveyEditor": {
+    "description": "Localization key for: Survey Editor"
+  },
+  "failedToStartBasicSubscriptionE": "[GL] Failed to start Basic subscription: $e (Galician)",
+  "@failedToStartBasicSubscriptionE": {
+    "description": "Localization key for: Failed to start Basic subscription: $e"
+  },
+  "mySchedule": "[GL] My Schedule (Galician)",
+  "@mySchedule": {
+    "description": "Localization key for: My Schedule"
+  },
+  "studioDashboard": "[GL] Studio Dashboard (Galician)",
+  "@studioDashboard": {
+    "description": "Localization key for: Studio Dashboard"
+  },
+  "editProfile": "تحرير الملف الشخصي",
+  "@editProfile": {
+    "description": "Localization key for: Edit Profile"
+  },
+  "logout1": "[GL] Logout",
+  "@logout1": {
+    "description": "Localization key for: Logout"
+  },
+  "serviceServiceidNotSelected": "[GL] Service: {service}",
+  "@serviceServiceidNotSelected": {
+    "description": "Localization key for: Service: {service}"
+  },
+  "settingsSavedSuccessfully": "[GL] Settings saved successfully! (Galician)",
+  "@settingsSavedSuccessfully": {
+    "description": "Localization key for: Settings saved successfully!"
+  },
+  "linkCopiedToClipboard": "[GL] Link copied to clipboard! (Galician)",
+  "@linkCopiedToClipboard": {
+    "description": "Localization key for: Link copied to clipboard!"
+  },
+  "accept1": "[GL] Accept (Galician)",
+  "@accept1": {
+    "description": "Localization key for: Accept"
+  },
+  "noAvailableSlots": "[GL] No available slots (Galician)",
+  "@noAvailableSlots": {
+    "description": "Localization key for: No available slots"
+  },
+  "makeGamePublic": "[GL] Make Game Public (Galician)",
+  "@makeGamePublic": {
+    "description": "Localization key for: Make Game Public"
+  },
+  "permissionPermissioncategoryUpdatedToNewvalue": "[GL] Permission {category} updated to $newValue (Galician)",
+  "@permissionPermissioncategoryUpdatedToNewvalue": {
+    "description": "Localization key for: Permission {category} updated to $newValue"
+  },
+  "roomDeletedSuccessfully": "[GL] Room deleted successfully! (Galician)",
+  "@roomDeletedSuccessfully": {
+    "description": "Localization key for: Room deleted successfully!"
+  },
+  "businessCalendar": "[GL] Business Calendar (Galician)",
+  "@businessCalendar": {
+    "description": "Localization key for: Business Calendar"
+  },
+  "addAvailability": "[GL] Add Availability (Galician)",
+  "@addAvailability": {
+    "description": "Localization key for: Add Availability"
+  },
+  "ambassadorOnboarding": "[GL] Ambassador Onboarding (Galician)",
+  "@ambassadorOnboarding": {
+    "description": "Localization key for: Ambassador Onboarding"
+  },
+  "phoneProfileasyncphone": "[GL] Phone: {phone} (Galician)",
+  "@phoneProfileasyncphone": {
+    "description": "Localization key for: Phone: {phone}"
+  },
+  "addNewRoom": "[GL] Add New Room (Galician)",
+  "@addNewRoom": {
+    "description": "Localization key for: Add New Room"
+  },
+  "requireParentApproval": "[GL] Require Parent Approval (Galician)",
+  "@requireParentApproval": {
+    "description": "Localization key for: Require Parent Approval"
+  },
+  "closed": "[GL] Closed (Galician)",
+  "@closed": {
+    "description": "Localization key for: Closed"
+  },
+  "exportAsPdf": "[GL] Export as PDF (Galician)",
+  "@exportAsPdf": {
+    "description": "Localization key for: Export as PDF"
+  },
+  "enableVibration": "[GL] Enable Vibration (Galician)",
+  "@enableVibration": {
+    "description": "Localization key for: Enable Vibration"
+  },
+  "toAvailendformatcontext": "[GL] To: {endTime} (Galician)",
+  "@toAvailendformatcontext": {
+    "description": "Localization key for: To: {endTime}"
+  },
+  "yourUpgradeCodeUpgradecode": "[GL] Your upgrade code: $upgradeCode (Galician)",
+  "@yourUpgradeCodeUpgradecode": {
+    "description": "Localization key for: Your upgrade code: $upgradeCode"
+  },
+  "requestPrivateSession": "[GL] requestPrivateSession (TRANSLATE)",
+  "@requestPrivateSession": {
+    "description": "requestPrivateSession description"
+  },
+  "country": "[GL] Country (Galician)",
+  "@country": {
+    "description": "Localization key for: Country"
+  },
+  "loginScreen": "[GL] Login Screen",
+  "@loginScreen": {
+    "description": "Localization key for: Login Screen"
+  },
+  "staffArgsstaffdisplayname": "[GL] Staff: {staffName} (Galician)",
+  "@staffArgsstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "revokeConsent": "[GL] Revoke Consent (Galician)",
+  "@revokeConsent": {
+    "description": "Localization key for: Revoke Consent"
+  },
+  "settings1": "[GL] Settings (Galician)",
+  "@settings1": {
+    "description": "Localization key for: Settings"
+  },
+  "cancel1": "[GL] Cancel (Galician)",
+  "@cancel1": {
+    "description": "Localization key for: Cancel"
+  },
+  "subscriptionActivatedSuccessfully": "[GL] Subscription activated successfully! (Galician)",
+  "@subscriptionActivatedSuccessfully": {
+    "description": "Localization key for: Subscription activated successfully!"
+  },
+  "activityLogaction": "[GL] Activity: {action}",
+  "@activityLogaction": {
+    "description": "Localization key for: Activity: {action}"
+  },
+  "broadcast": "[GL] Broadcast (Galician)",
+  "@broadcast": {
+    "description": "Localization key for: Broadcast"
+  },
+  "noEventsScheduledThisWeek": "[GL] No events scheduled this week (Galician)",
+  "@noEventsScheduledThisWeek": {
+    "description": "Localization key for: No events scheduled this week"
+  },
+  "googleCalendar": "[GL] Google Calendar (Galician)",
+  "@googleCalendar": {
+    "description": "Localization key for: Google Calendar"
+  },
+  "sendInvite": "إرسال دعوة",
+  "@sendInvite": {
+    "description": "Localization key for: Send Invite"
+  },
+  "childDashboard": "[GL] Child Dashboard (Galician)",
+  "@childDashboard": {
+    "description": "Localization key for: Child Dashboard"
+  },
+  "failedToUploadBackgroundE": "[GL] Failed to upload background: $e (Galician)",
+  "@failedToUploadBackgroundE": {
+    "description": "Localization key for: Failed to upload background: $e"
+  },
+  "linkchildidsubstring08": "[GL] {linkId}...",
+  "@linkchildidsubstring08": {
+    "description": "Localization key for: {linkId}..."
+  },
+  "targetLogtargettypeLogtargetid": "[GL] Target: {targetType} - {targetId}",
+  "@targetLogtargettypeLogtargetid": {
+    "description": "Localization key for: Target: {targetType} - {targetId}"
+  },
+  "contextContextid": "[GL] Context: $contextId",
+  "@contextContextid": {
+    "description": "Localization key for: Context: $contextId"
+  },
+  "noAppointments": "[GL] No appointments (Galician)",
+  "@noAppointments": {
+    "description": "Localization key for: No appointments"
+  },
+  "unlimitedBookingsPerWeek": "[GL] • Unlimited bookings per week (Galician)",
+  "@unlimitedBookingsPerWeek": {
+    "description": "Localization key for: • Unlimited bookings per week"
+  },
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
+  "@errorDetailsLogerrortype": {
+    "description": "Localization key for: Error Details: {errorType}"
+  },
+  "scheduledAtScheduledat": "[GL] Scheduled at: $scheduledAt (Galician)",
+  "@scheduledAtScheduledat": {
+    "description": "Localization key for: Scheduled at: $scheduledAt"
+  },
+  "selectStaff": "[GL] Select Staff (Galician)",
+  "@selectStaff": {
+    "description": "Localization key for: Select Staff"
+  },
+  "subscriptionCancelledSuccessfully": "[GL] Subscription cancelled successfully (Galician)",
+  "@subscriptionCancelledSuccessfully": {
+    "description": "Localization key for: Subscription cancelled successfully"
+  },
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
+  "@pleaseLogInToViewYourProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "cancelAppointment": "[GL] Cancel Appointment (Galician)",
+  "@cancelAppointment": {
+    "description": "Localization key for: Cancel Appointment"
+  },
+  "permissionsFamilylinkchildid": "[GL] Permissions - {childId}",
+  "@permissionsFamilylinkchildid": {
+    "description": "Localization key for: Permissions - {childId}"
+  },
+  "businessSignup": "[GL] Business Signup (Galician)",
+  "@businessSignup": {
+    "description": "Localization key for: Business Signup"
+  },
+  "businessCompletionScreenComingSoon": "[GL] Business Completion Screen - Coming Soon (Galician)",
+  "@businessCompletionScreenComingSoon": {
+    "description": "Localization key for: Business Completion Screen - Coming Soon"
+  },
+  "createGame1": "[GL] Create Game (Galician)",
+  "@createGame1": {
+    "description": "Localization key for: Create Game"
+  },
+  "valuetoint": "[GL] {value} (Galician)",
+  "@valuetoint": {
+    "description": "Localization key for: {value}"
+  },
+  "pleaseEnterAPromoCode": "[GL] Please enter a promo code (Galician)",
+  "@pleaseEnterAPromoCode": {
+    "description": "Localization key for: Please enter a promo code"
+  },
+  "errorLoadingAvailabilityE": "[GL] Error loading availability: $e (Galician)",
+  "@errorLoadingAvailabilityE": {
+    "description": "Localization key for: Error loading availability: $e"
+  },
+  "parentalControls": "[GL] Parental Controls (Galician)",
+  "@parentalControls": {
+    "description": "Localization key for: Parental Controls"
+  },
+  "editBusinessProfile": "تحرير الملف التجاري",
+  "@editBusinessProfile": {
+    "description": "Localization key for: Edit Business Profile"
+  },
+  "childLinkedSuccessfully": "[GL] Child linked successfully! (Galician)",
+  "@childLinkedSuccessfully": {
+    "description": "Localization key for: Child linked successfully!"
+  },
+  "create": "[GL] Create (Galician)",
+  "@create": {
+    "description": "Localization key for: Create"
+  },
+  "noExternalMeetingsFound": "[GL] No external meetings found. (Galician)",
+  "@noExternalMeetingsFound": {
+    "description": "Localization key for: No external meetings found."
+  },
+  "staffSelectionstaffdisplayname": "[GL] Staff: {staffName} (Galician)",
+  "@staffSelectionstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "pleaseEnterAValidEmailAddress": "[GL] Please enter a valid email address",
+  "@pleaseEnterAValidEmailAddress": {
+    "description": "Localization key for: Please enter a valid email address"
+  },
+  "schedulerScreen": "[GL] Scheduler Screen (Galician)",
+  "@schedulerScreen": {
+    "description": "Localization key for: Scheduler Screen"
+  },
+  "clientUpdatedSuccessfully": "[GL] Client updated successfully! (Galician)",
+  "@clientUpdatedSuccessfully": {
+    "description": "Localization key for: Client updated successfully!"
+  },
+  "surveyResponses": "[GL] Survey Responses (Galician)",
+  "@surveyResponses": {
+    "description": "Localization key for: Survey Responses"
+  },
+  "syncToOutlook": "[GL] Sync to Outlook (Galician)",
+  "@syncToOutlook": {
+    "description": "Localization key for: Sync to Outlook"
+  },
+  "saveChanges": "[GL] Save Changes (Galician)",
+  "@saveChanges": {
+    "description": "Localization key for: Save Changes"
+  },
+  "pickTime": "[GL] Pick Time (Galician)",
+  "@pickTime": {
+    "description": "Localization key for: Pick Time"
+  },
+  "registrationFailedEtostring": "[GL] Registration failed: {error} (Galician)",
+  "@registrationFailedEtostring": {
+    "description": "Localization key for: Registration failed: {error}"
+  },
+  "analytics": "[GL] Analytics (Galician)",
+  "@analytics": {
+    "description": "Localization key for: Analytics"
+  },
+  "errorLoadingEvents": "[GL] Error loading events (Galician)",
+  "@errorLoadingEvents": {
+    "description": "Localization key for: Error loading events"
+  },
+  "errorLoadingOrganizations": "[GL] errorLoadingOrganizations (TRANSLATE)",
+  "@errorLoadingOrganizations": {
+    "description": "errorLoadingOrganizations description"
+  },
+  "businessLoginScreenComingSoon": "[GL] Business Login Screen - Coming Soon",
+  "@businessLoginScreenComingSoon": {
+    "description": "Localization key for: Business Login Screen - Coming Soon"
+  },
+  "success1": "[GL] Success (Galician)",
+  "@success1": {
+    "description": "Localization key for: Success"
+  },
+  "appVersionLogappversion": "[GL] App Version: {appVersion}",
+  "@appVersionLogappversion": {
+    "description": "Localization key for: App Version: {appVersion}"
+  },
+  "fromAvailstartformatcontext": "[GL] From: {startTime} (Galician)",
+  "@fromAvailstartformatcontext": {
+    "description": "Localization key for: From: {startTime}"
+  },
+  "readWrite": "[GL] Read & Write (Galician)",
+  "@readWrite": {
+    "description": "Localization key for: Read & Write"
+  },
+  "redirectingToStripeCheckoutForBasicPlan": "[GL] Redirecting to Stripe checkout for Basic plan... (Galician)",
+  "@redirectingToStripeCheckoutForBasicPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
+  },
+  "errorSavingConfigurationE": "[GL] Error saving configuration: $e",
+  "@errorSavingConfigurationE": {
+    "description": "Localization key for: Error saving configuration: $e"
+  },
+  "pickDate": "[GL] Pick Date (Galician)",
+  "@pickDate": {
+    "description": "Localization key for: Pick Date"
+  },
+  "chatBooking": "[GL] Chat Booking (Galician)",
+  "@chatBooking": {
+    "description": "Localization key for: Chat Booking"
+  },
+  "noQuestionsAdded": "[GL] No questions added (Galician)",
+  "@noQuestionsAdded": {
+    "description": "Localization key for: No questions added"
+  },
+  "severityLogseverityname": "[GL] Severity: {severity}",
+  "@severityLogseverityname": {
+    "description": "Localization key for: Severity: {severity}"
+  },
+  "markAsPaid": "[GL] Mark as Paid",
+  "@markAsPaid": {
+    "description": "Localization key for: Mark as Paid"
+  },
+  "typeOpenCall": "[GL] Type: Open Call (Galician)",
+  "@typeOpenCall": {
+    "description": "Localization key for: Type: Open Call"
+  },
+  "appointmentAppointmentid": "[GL] Appointment {appointmentId}",
+  "@appointmentAppointmentid": {
+    "description": "Localization key for: Appointment {appointmentId}"
+  },
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
+  "@statusInvitestatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "businessLogin": "[GL] Business Login",
+  "@businessLogin": {
+    "description": "Localization key for: Business Login"
+  },
+  "invoiceCreatedSuccessfully": "[GL] Invoice created successfully! (Galician)",
+  "@invoiceCreatedSuccessfully": {
+    "description": "Localization key for: Invoice created successfully!"
+  },
+  "noTimeSeriesDataAvailable": "[GL] No time series data available (Galician)",
+  "@noTimeSeriesDataAvailable": {
+    "description": "Localization key for: No time series data available"
+  },
+  "subscribeToWidgetplanname": "[GL] Subscribe to {planName}",
+  "@subscribeToWidgetplanname": {
+    "description": "Localization key for: Subscribe to {planName}"
+  },
+  "timestamp_formatdatelogtimestamp": "[GL] Timestamp: {timestamp}",
+  "@timestamp_formatdatelogtimestamp": {
+    "description": "Localization key for: Timestamp: {timestamp}"
+  },
+  "failedToSendPrivacyRequestE": "[GL] Failed to send privacy request: $e (Galician)",
+  "@failedToSendPrivacyRequestE": {
+    "description": "Localization key for: Failed to send privacy request: $e"
+  },
+  "chooseYourPlan": "[GL] Choose Your Plan (Galician)",
+  "@chooseYourPlan": {
+    "description": "Localization key for: Choose Your Plan"
+  },
+  "playtimeManagement": "[GL] Playtime Management (Galician)",
+  "@playtimeManagement": {
+    "description": "Localization key for: Playtime Management"
+  },
+  "availability": "[GL] Availability (Galician)",
+  "@availability": {
+    "description": "Localization key for: Availability"
+  },
+  "eventCreated": "[GL] Event created (Galician)",
+  "@eventCreated": {
+    "description": "Localization key for: Event created"
+  },
+  "subscribeToBasic499mo": "[GL] Subscribe to Basic (€4.99/mo) (Galician)",
+  "@subscribeToBasic499mo": {
+    "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
+  },
+  "completion": "[GL] Completion (Galician)",
+  "@completion": {
+    "description": "Localization key for: Completion"
+  },
+  "supportTicketSubmitted": "[GL] Support ticket submitted (Galician)",
+  "@supportTicketSubmitted": {
+    "description": "Localization key for: Support ticket submitted"
+  },
+  "monetizationSettings": "[GL] Monetization Settings (Galician)",
+  "@monetizationSettings": {
+    "description": "Localization key for: Monetization Settings"
+  },
+  "noBookingsFound": "[GL] No bookings found (Galician)",
+  "@noBookingsFound": {
+    "description": "Localization key for: No bookings found"
+  },
+  "admin": "[GL] Admin",
+  "@admin": {
+    "description": "Localization key for: Admin"
+  },
+  "deleteSurvey": "[GL] Delete Survey (Galician)",
+  "@deleteSurvey": {
+    "description": "Localization key for: Delete Survey"
+  },
+  "gameApprovedSuccessfully": "[GL] Game approved successfully! (Galician)",
+  "@gameApprovedSuccessfully": {
+    "description": "Localization key for: Game approved successfully!"
+  },
+  "errorLoadingPermissionsError": "[GL] Error loading permissions: $error (Galician)",
+  "@errorLoadingPermissionsError": {
+    "description": "Localization key for: Error loading permissions: $error"
+  },
+  "referrals": "[GL] Referrals (Galician)",
+  "@referrals": {
+    "description": "Localization key for: Referrals"
+  },
+  "crm": "[GL] CRM (Galician)",
+  "@crm": {
+    "description": "Localization key for: CRM"
+  },
+  "gameRejected": "[GL] Game rejected (Galician)",
+  "@gameRejected": {
+    "description": "Localization key for: Game rejected"
+  },
+  "appointments": "[GL] Appointments (Galician)",
+  "@appointments": {
+    "description": "Localization key for: Appointments"
+  },
+  "onboardingScreen": "[GL] Onboarding Screen (Galician)",
+  "@onboardingScreen": {
+    "description": "Localization key for: Onboarding Screen"
+  },
+  "welcomeToYourStudio": "[GL] Welcome to your studio (Galician)",
+  "@welcomeToYourStudio": {
+    "description": "Localization key for: Welcome to your studio"
+  },
+  "update": "[GL] Update (Galician)",
+  "@update": {
+    "description": "Localization key for: Update"
+  },
+  "retry1": "[GL] Retry (Galician)",
+  "@retry1": {
+    "description": "Localization key for: Retry"
+  },
+  "booking": "[GL] Booking (Galician)",
+  "@booking": {
+    "description": "Localization key for: Booking"
+  },
+  "parentalSettings": "[GL] Parental Settings (Galician)",
+  "@parentalSettings": {
+    "description": "Localization key for: Parental Settings"
+  },
+  "language": "[GL] Language (Galician)",
+  "@language": {
+    "description": "Localization key for: Language"
+  },
+  "deleteSlot": "[GL] Delete Slot (Galician)",
+  "@deleteSlot": {
+    "description": "Localization key for: Delete Slot"
+  },
+  "organizations": "[GL] organizations (TRANSLATE)",
+  "@organizations": {
+    "description": "organizations description"
+  },
+  "configurationSavedSuccessfully": "[GL] Configuration saved successfully!",
+  "@configurationSavedSuccessfully": {
+    "description": "Localization key for: Configuration saved successfully!"
+  },
+  "createNewGame": "[GL] Create New Game (Galician)",
+  "@createNewGame": {
+    "description": "Localization key for: Create New Game"
+  },
+  "next1": "[GL] Next (Galician)",
+  "@next1": {
+    "description": "Localization key for: Next"
+  },
+  "backgroundUploadedSuccessfully": "[GL] Background uploaded successfully! (Galician)",
+  "@backgroundUploadedSuccessfully": {
+    "description": "Localization key for: Background uploaded successfully!"
+  },
+  "noAppointmentRequestsFound": "[GL] No appointment requests found. (Galician)",
+  "@noAppointmentRequestsFound": {
+    "description": "Localization key for: No appointment requests found."
+  },
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
+  "@pleaseSignInToCreateASession": {
+    "description": "Localization key for: Please sign in to create a session"
+  },
+  "restrictMatureContent": "[GL] Restrict mature content (Galician)",
+  "@restrictMatureContent": {
+    "description": "Localization key for: Restrict mature content"
+  },
+  "ambassadors": "[GL] Ambassadors (Galician)",
+  "@ambassadors": {
+    "description": "Localization key for: Ambassadors"
+  },
+  "smsNotifications": "إشعارات الرسائل النصية",
+  "@smsNotifications": {
+    "description": "Localization key for: SMS Notifications"
+  },
+  "paymentWasCancelled": "[GL] Payment was cancelled (Galician)",
+  "@paymentWasCancelled": {
+    "description": "Localization key for: Payment was cancelled"
+  },
+  "clearAll": "[GL] Clear All (Galician)",
+  "@clearAll": {
+    "description": "Localization key for: Clear All"
+  },
+  "viewDetails": "[GL] View Details (Galician)",
+  "@viewDetails": {
+    "description": "Localization key for: View Details"
+  },
+  "notifications1": "الإشعارات",
+  "@notifications1": {
+    "description": "Localization key for: Notifications"
+  },
+  "liveSessionScheduledWaitingForParentApproval": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
+  "@liveSessionScheduledWaitingForParentApproval": {
+    "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
+  },
+  "failedToCreateGameE": "[GL] Failed to create game: $e (Galician)",
+  "@failedToCreateGameE": {
+    "description": "Localization key for: Failed to create game: $e"
+  },
+  "noChartDataAvailable": "[GL] No chart data available (Galician)",
+  "@noChartDataAvailable": {
+    "description": "Localization key for: No chart data available"
+  },
+  "phonebasedBookingSystem": "[GL] • Phone-based booking system (Galician)",
+  "@phonebasedBookingSystem": {
+    "description": "Localization key for: • Phone-based booking system"
+  },
+  "enableNotifications1": "تفعيل الإشعارات",
+  "@enableNotifications1": {
+    "description": "Localization key for: Enable Notifications"
+  },
+  "invoices": "[GL] Invoices (Galician)",
+  "@invoices": {
+    "description": "Localization key for: Invoices"
+  },
+  "pleaseActivateYourBusinessProfileToContinue": "يرجى تفعيل ملفك التجاري للمتابعة",
+  "@pleaseActivateYourBusinessProfileToContinue": {
+    "description": "Localization key for: Please activate your business profile to continue."
+  },
+  "scheduledAtArgsscheduledat": "[GL] Scheduled at: {scheduledAt} (Galician)",
+  "@scheduledAtArgsscheduledat": {
+    "description": "Localization key for: Scheduled at: {scheduledAt}"
+  },
+  "durationDurationinminutes0Minutes": "[GL] Duration: {duration} minutes (Galician)",
+  "@durationDurationinminutes0Minutes": {
+    "description": "Localization key for: Duration: {duration} minutes"
+  },
+  "tryAgain": "[GL] Try Again (Galician)",
+  "@tryAgain": {
+    "description": "Localization key for: Try Again"
+  },
+  "deleteBackground": "[GL] Delete Background (Galician)",
+  "@deleteBackground": {
+    "description": "Localization key for: Delete Background"
+  },
+  "currentTierTiertouppercase": "[GL] Current Tier: {tier} (Galician)",
+  "@currentTierTiertouppercase": {
+    "description": "Localization key for: Current Tier: {tier}"
+  },
+  "iDoNotConsent": "[GL] I Do Not Consent",
+  "@iDoNotConsent": {
+    "description": "Localization key for: I Do Not Consent"
+  },
+  "noClientsFoundAddYourFirstClient": "[GL] No clients found. Add your first client! (Galician)",
+  "@noClientsFoundAddYourFirstClient": {
+    "description": "Localization key for: No clients found. Add your first client!"
+  },
+  "settingsDialogWillBeImplementedHere": "[GL] Settings dialog will be implemented here.",
+  "@settingsDialogWillBeImplementedHere": {
+    "description": "Localization key for: Settings dialog will be implemented here."
+  },
+  "groupGroupid": "[GL] Group: $groupId",
+  "@groupGroupid": {
+    "description": "Localization key for: Group: $groupId"
+  },
+  "appointmentRequests": "[GL] Appointment Requests (Galician)",
+  "@appointmentRequests": {
+    "description": "Localization key for: Appointment Requests"
+  },
+  "forward": "[GL] Forward (Galician)",
+  "@forward": {
+    "description": "Localization key for: Forward"
+  },
+  "roomAddedSuccessfully": "[GL] Room added successfully! (Galician)",
+  "@roomAddedSuccessfully": {
+    "description": "Localization key for: Room added successfully!"
+  },
+  "option": "[GL] • $option (Galician)",
+  "@option": {
+    "description": "Localization key for: • $option"
+  },
+  "responseIndex1": "[GL] Response #{number} (Galician)",
+  "@responseIndex1": {
+    "description": "Localization key for: Response #{number}"
+  },
+  "crmDashboardWithAnalytics": "[GL] • CRM dashboard with analytics (Galician)",
+  "@crmDashboardWithAnalytics": {
+    "description": "Localization key for: • CRM dashboard with analytics"
+  },
+  "contentLibrary1": "[GL] Content Library (Galician)",
+  "@contentLibrary1": {
+    "description": "Localization key for: Content Library"
+  },
+  "reply": "[GL] Reply (Galician)",
+  "@reply": {
+    "description": "Localization key for: Reply"
+  },
+  "subscriptionManagement": "[GL] Subscription Management (Galician)",
+  "@subscriptionManagement": {
+    "description": "Localization key for: Subscription Management"
+  },
+  "monetizationSettingsWillBeImplementedHere": "[GL] Monetization settings will be implemented here (Galician)",
+  "@monetizationSettingsWillBeImplementedHere": {
+    "description": "Localization key for: Monetization settings will be implemented here"
+  },
+  "failedToApplyPromoCodeE": "[GL] Failed to apply promo code: $e (Galician)",
+  "@failedToApplyPromoCodeE": {
+    "description": "Localization key for: Failed to apply promo code: $e"
+  },
+  "editProvider": "[GL] Edit Provider",
+  "@editProvider": {
+    "description": "Localization key for: Edit Provider"
+  },
+  "localizationContribution": "[GL] Localization Contribution (Galician)",
+  "@localizationContribution": {
+    "description": "Localization key for: Localization Contribution"
+  },
+  "parentalConsent": "[GL] Parental Consent (Galician)",
+  "@parentalConsent": {
+    "description": "Localization key for: Parental Consent"
+  },
+  "businessSignupScreenComingSoon": "[GL] Business Signup Screen - Coming Soon (Galician)",
+  "@businessSignupScreenComingSoon": {
+    "description": "Localization key for: Business Signup Screen - Coming Soon"
+  },
+  "areYouSureYouWantToDeleteThisAppointment": "[GL] Are you sure you want to delete this appointment? (Galician)",
+  "@areYouSureYouWantToDeleteThisAppointment": {
+    "description": "Localization key for: Are you sure you want to delete this appointment?"
+  },
+  "syncAppointment": "[GL] Sync Appointment (Galician)",
+  "@syncAppointment": {
+    "description": "Localization key for: Sync Appointment"
+  },
+  "iConsent": "[GL] I Consent (Galician)",
+  "@iConsent": {
+    "description": "Localization key for: I Consent"
+  },
+  "sessionRejected": "تم رفض الجلسة",
+  "@sessionRejected": {
+    "description": "Localization key for: Session rejected"
+  },
+  "businessSetupScreenComingSoon": "[GL] Business Setup Screen - Coming Soon (Galician)",
+  "@businessSetupScreenComingSoon": {
+    "description": "Localization key for: Business Setup Screen - Coming Soon"
+  },
+  "edit1": "[GL] Edit (Galician)",
+  "@edit1": {
+    "description": "Localization key for: Edit"
+  },
+  "noEventsScheduledThisMonth": "[GL] No events scheduled this month (Galician)",
+  "@noEventsScheduledThisMonth": {
+    "description": "Localization key for: No events scheduled this month"
+  },
+  "businessDashboard": "[GL] Business Dashboard (Galician)",
+  "@businessDashboard": {
+    "description": "Localization key for: Business Dashboard"
+  },
+  "noMessagesFound": "[GL] No messages found. (Galician)",
+  "@noMessagesFound": {
+    "description": "Localization key for: No messages found."
+  },
+  "staffStaffidNotSelected": "[GL] Staff: {staff}",
+  "@staffStaffidNotSelected": {
+    "description": "Localization key for: Staff: {staff}"
+  },
+  "manageStaffAvailability": "[GL] Manage Staff Availability (Galician)",
+  "@manageStaffAvailability": {
+    "description": "Localization key for: Manage Staff Availability"
+  },
+  "noMissingTranslations": "[GL] No missing translations (Galician)",
+  "@noMissingTranslations": {
+    "description": "Localization key for: No missing translations"
+  },
+  "skip": "[GL] Skip (Galician)",
+  "@skip": {
+    "description": "Localization key for: Skip"
+  },
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
+  "@meetingIdMeetingid": {
+    "description": "Localization key for: Meeting ID: $meetingId"
+  },
+  "noUsers": "[GL] noUsers (TRANSLATE)",
+  "@noUsers": {
+    "description": "noUsers description"
+  },
+  "errorLoadingReferralCode": "[GL] Error loading referral code (Galician)",
+  "@errorLoadingReferralCode": {
+    "description": "Localization key for: Error loading referral code"
+  },
+  "allCountries": "[GL] All Countries (Galician)",
+  "@allCountries": {
+    "description": "Localization key for: All Countries"
+  },
+  "deleteGame": "[GL] Delete Game (Galician)",
+  "@deleteGame": {
+    "description": "Localization key for: Delete Game"
+  },
+  "staffManagementTools": "[GL] • Staff management tools (Galician)",
+  "@staffManagementTools": {
+    "description": "Localization key for: • Staff management tools"
+  },
+  "deleteMessage": "[GL] Delete Message (Galician)",
+  "@deleteMessage": {
+    "description": "Localization key for: Delete Message"
+  },
+  "receiveBookingNotificationsViaSms": "استقبال إشعارات الحجز عبر الرسائل النصية",
+  "@receiveBookingNotificationsViaSms": {
+    "description": "Localization key for: Receive booking notifications via SMS"
+  },
+  "changeRole": "[GL] changeRole (TRANSLATE)",
+  "@changeRole": {
+    "description": "changeRole description"
+  },
+  "errorLoadingBookingsSnapshoterror": "خطأ في تحميل لقطة الحجوزات: {error}",
+  "@errorLoadingBookingsSnapshoterror": {
+    "description": "Localization key for: Error loading bookings: {error}"
+  },
+  "openingCustomerPortal": "[GL] Opening customer portal... (Galician)",
+  "@openingCustomerPortal": {
+    "description": "Localization key for: Opening customer portal..."
+  },
+  "signOut": "[GL] Sign Out (Galician)",
+  "@signOut": {
+    "description": "Localization key for: Sign Out"
+  },
+  "nameProfilename": "[GL] Name: {name} (Galician)",
+  "@nameProfilename": {
+    "description": "Localization key for: Name: {name}"
+  },
+  "businessProfileEntryScreenComingSoon": "شاشة إدخال الملف التجاري - قريباً",
+  "@businessProfileEntryScreenComingSoon": {
+    "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
+  },
+  "upgradeToBusiness": "[GL] Upgrade to Business (Galician)",
+  "@upgradeToBusiness": {
+    "description": "Localization key for: Upgrade to Business"
+  },
+  "apply": "تطبيق",
+  "@apply": {
+    "description": "Localization key for: Apply"
+  },
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
+  "@errorLoadingSubscriptionError": {
+    "description": "Localization key for: Error loading subscription: $error"
+  },
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
+  "@errorLoadingUsers": {
+    "description": "errorLoadingUsers description"
+  },
+  "verify": "التحقق",
+  "@verify": {
+    "description": "Localization key for: Verify"
+  },
+  "subscription": "الاشتراك",
+  "@subscription": {
+    "description": "Localization key for: Subscription"
+  },
+  "deleteMyAccount": "حذف حسابي",
+  "@deleteMyAccount": {
+    "description": "Localization key for: Delete My Account"
+  },
+  "businessAppointmentsEntryScreenComingSoon": "شاشة إدخال مواعيد الأعمال - قريباً",
+  "@businessAppointmentsEntryScreenComingSoon": {
+    "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
+  },
+  "viewResponses": "[GL] View Responses (Galician)",
+  "@viewResponses": {
+    "description": "Localization key for: View Responses"
+  },
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
+  "@businessWelcomeScreenComingSoon": {
+    "description": "Localization key for: Business Welcome Screen - Coming Soon"
+  },
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
+  "@failedToOpenCustomerPortalE": {
+    "description": "Localization key for: Failed to open customer portal: $e"
+  },
+  "continueText": "متابعة",
+  "@continueText": {
+    "description": "Localization key for: Continue"
+  },
+  "close1": "إغلاق",
+  "@close1": {
+    "description": "Localization key for: Close"
+  },
+  "confirm1": "تأكيد",
+  "@confirm1": {
+    "description": "Localization key for: Confirm"
+  },
+  "externalMeetings": "الاجتماعات الخارجية",
+  "@externalMeetings": {
+    "description": "Localization key for: External Meetings"
+  },
+  "approve": "موافقة",
+  "@approve": {
+    "description": "Localization key for: Approve"
+  },
+  "noInvoicesFoundCreateYourFirstInvoice": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
+  "@noInvoicesFoundCreateYourFirstInvoice": {
+    "description": "Localization key for: No invoices found. Create your first invoice!"
+  },
+  "subscribe": "اشتراك",
+  "@subscribe": {
+    "description": "Localization key for: Subscribe"
+  },
+  "login1": "تسجيل الدخول",
+  "@login1": {
+    "description": "Localization key for: Login"
+  },
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
+  "@adminOverviewGoesHere": {
+    "description": "Localization key for: Admin overview goes here"
+  },
+  "loadingCheckout": "جار تحميل الدفع...",
+  "@loadingCheckout": {
+    "description": "Localization key for: Loading checkout..."
+  },
+  "ad_pre_title": "Watch an ad to confirm your appointment",
+  "@ad_pre_title": {
+    "description": "Ad flow string: ad_pre_title"
+  },
+  "ad_pre_description": "As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.",
+  "@ad_pre_description": {
+    "description": "Ad flow string: ad_pre_description"
+  },
+  "watch_ad_button": "Watch Ad",
+  "@watch_ad_button": {
+    "description": "Ad flow string: watch_ad_button"
+  },
+  "upgrade_button": "Upgrade to Premium (€4)",
+  "@upgrade_button": {
+    "description": "Ad flow string: upgrade_button"
+  },
+  "ad_post_title": "Ad finished! You may now confirm your appointment.",
+  "@ad_post_title": {
+    "description": "Ad flow string: ad_post_title"
+  },
+  "confirm_appointment_button": "Confirm Appointment",
+  "@confirm_appointment_button": {
+    "description": "Ad flow string: confirm_appointment_button"
+  },
+  "upgrade_prompt_title": "One-time upgrade",
+  "@upgrade_prompt_title": {
+    "description": "Ad flow string: upgrade_prompt_title"
+  },
+  "upgrade_prompt_description": "Pay €4 to remove all ads forever",
+  "@upgrade_prompt_description": {
+    "description": "Ad flow string: upgrade_prompt_description"
+  },
+  "purchase_now_button": "Purchase Now",
+  "@purchase_now_button": {
+    "description": "Ad flow string: purchase_now_button"
+  },
+  "ambassadorPromotionTitle": "[GL] Congratulations! You're now an Ambassador! (Galician)",
+  "@ambassadorPromotionTitle": {
+    "description": "Title for ambassador promotion notification"
+  },
+  "ambassadorPromotionBody": "[GL] Welcome to the {tier} tier! Start sharing your referral link to earn rewards. (Galician)",
+  "@ambassadorPromotionBody": {
+    "description": "Body text for ambassador promotion notification",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "tierUpgradeTitle": "[GL] Tier Upgrade! 🎉 (Galician)",
+  "@tierUpgradeTitle": {
+    "description": "Title for tier upgrade notification"
+  },
+  "tierUpgradeBody": "[GL] Amazing! You've been upgraded from {previousTier} to {newTier} with {totalReferrals} referrals! (Galician)",
+  "@tierUpgradeBody": {
+    "description": "Body text for tier upgrade notification",
+    "placeholders": {
+      "previousTier": {
+        "type": "String"
+      },
+      "newTier": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  },
+  "monthlyReminderTitle": "[GL] Monthly Goal Reminder (Galician)",
+  "@monthlyReminderTitle": {
+    "description": "Title for monthly performance reminder notification"
+  },
+  "monthlyReminderBody": "[GL] You have {currentReferrals}/{targetReferrals} referrals this month. {daysRemaining} days left to reach your goal! (Galician)",
+  "@monthlyReminderBody": {
+    "description": "Body text for monthly reminder notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "targetReferrals": {
+        "type": "String"
+      },
+      "daysRemaining": {
+        "type": "String"
+      }
+    }
+  },
+  "performanceWarningTitle": "[GL] Ambassador Performance Alert (Galician)",
+  "@performanceWarningTitle": {
+    "description": "Title for performance warning notification"
+  },
+  "performanceWarningBody": "[GL] Your monthly referrals ({currentReferrals}) are below the minimum requirement ({minimumRequired}). Your ambassador status may be affected. (Galician)",
+  "@performanceWarningBody": {
+    "description": "Body text for performance warning notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "minimumRequired": {
+        "type": "String"
+      }
+    }
+  },
+  "ambassadorDemotionTitle": "[GL] Ambassador Status Update (Galician)",
+  "@ambassadorDemotionTitle": {
+    "description": "Title for ambassador demotion notification"
+  },
+  "ambassadorDemotionBody": "[GL] Your ambassador status has been temporarily suspended due to: {reason}. You can regain your status by meeting the requirements again. (Galician)",
+  "@ambassadorDemotionBody": {
+    "description": "Body text for ambassador demotion notification",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "referralSuccessTitle": "[GL] New Referral! 🎉 (Galician)",
+  "@referralSuccessTitle": {
+    "description": "Title for successful referral notification"
+  },
+  "referralSuccessBody": "[GL] {referredUserName} joined through your referral! You now have {totalReferrals} total referrals. (Galician)",
+  "@referralSuccessBody": {
+    "description": "Body text for successful referral notification",
+    "placeholders": {
+      "referredUserName": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  }
+}

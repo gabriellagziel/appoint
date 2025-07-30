@@ -1,0 +1,154 @@
+# Flutter & Dart
+.dart_tool/
+.packages
+build/
+.firebase/
+tool/diagnostics/
+*.log
+
+# Flutter SDK artifact
+flutter/
+flutter.tar.xz
+.flutter-plugins
+.env
+!web/assets/.env
+.flutter-plugins-dependencies
+pubspec.lock
+
+# Miscellaneous
+*.class
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+
+# Generated files
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Coverage
+coverage/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Linting ignore files
+.github/workflows/.github-actions-lint-ignore
+.github/workflows/.yamllint
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Analysis and diagnostic files
+analysis_report.txt
+remaining_analysis.txt
+full_analysis_report.txt
+long_lines_files.txt
+firebase_test_output*.txt
+
+# Translation analysis files
+translations_summary.txt
+translation_quality_report.md
+translation_completion_report.csv
+translations_export.csv
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+*.tgz
+*.tar.gz
+
+# Test artifacts
+test_output.log
+coverage/
+*.lcov
+
+# Log files
+*.log
+logs/
+
+# Backup files
+*.backup
+*.bak
+*.save
+.env

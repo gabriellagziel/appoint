@@ -1,0 +1,2979 @@
+{
+  "@@locale": "tr",
+  "refresh": "[TR] Yenile",
+  "@refresh": {
+    "description": "Description"
+  },
+  "home": "[TR] Ana Sayfa",
+  "@home": {
+    "description": "Description"
+  },
+  "noSessionsYet": "[TR] Henüz oturum yok",
+  "@noSessionsYet": {
+    "description": "Description"
+  },
+  "ok": "[TR] Tamam",
+  "@ok": {
+    "description": "Description"
+  },
+  "playtimeLandingChooseMode": "[TR] [TR] Choose your play mode:",
+  "@playtimeLandingChooseMode": {
+    "description": "Description"
+  },
+  "signUp": "[TR] Kayıt Ol",
+  "@signUp": {
+    "description": "Description"
+  },
+  "scheduleMessage": "[TR] Mesaj planla",
+  "@scheduleMessage": {
+    "description": "Description"
+  },
+  "decline": "[TR] Reddet",
+  "@decline": {
+    "description": "Description"
+  },
+  "adminBroadcast": "[TR] Admin Broadcast",
+  "@adminBroadcast": {
+    "description": "Localization key for: Admin Broadcast"
+  },
+  "login": "[TR] Giriş Yap",
+  "@login": {
+    "description": "Description"
+  },
+  "playtimeChooseFriends": "[TR] [TR] Choose friends to invite",
+  "@playtimeChooseFriends": {
+    "description": "Description"
+  },
+  "noInvites": "[TR] Davet yok",
+  "@noInvites": {
+    "description": "Description"
+  },
+  "playtimeChooseTime": "[TR] [TR] Choose a time",
+  "@playtimeChooseTime": {
+    "description": "Description"
+  },
+  "success": "[TR] Başarılı",
+  "@success": {
+    "description": "Description"
+  },
+  "undo": "[TR] Geri Al",
+  "@undo": {
+    "description": "Description"
+  },
+  "opened": "[TR] Açıldı",
+  "@opened": {
+    "description": "opened description"
+  },
+  "createVirtualSession": "[TR] Sanal oturum oluştur",
+  "@createVirtualSession": {
+    "description": "Description"
+  },
+  "messageSentSuccessfully": "[TR] Mesaj başarıyla gönderildi",
+  "@messageSentSuccessfully": {
+    "description": "messageSentSuccessfully description"
+  },
+  "redo": "[TR] [TR] Redo",
+  "@redo": {
+    "description": "Description"
+  },
+  "next": "[TR] [TR] Next",
+  "@next": {
+    "description": "Description"
+  },
+  "search": "[TR] Ara",
+  "@search": {
+    "description": "Description"
+  },
+  "cancelInviteConfirmation": "[TR] [TR] Are you sure you want to cancel this invite?",
+  "@cancelInviteConfirmation": {
+    "description": "Description"
+  },
+  "created": "[TR] Oluşturuldu",
+  "@created": {
+    "description": "created description"
+  },
+  "revokeAccess": "[TR] Erişimi geri al",
+  "@revokeAccess": {
+    "description": "Description"
+  },
+  "playtimeLiveScheduled": "[TR] [TR] Live playtime scheduled!",
+  "@playtimeLiveScheduled": {
+    "description": "Description"
+  },
+  "revokeAccessConfirmation": "[TR] [TR] Are you sure you want to revoke access?",
+  "@revokeAccessConfirmation": {
+    "description": "Description"
+  },
+  "download": "[TR] İndir",
+  "@download": {
+    "description": "Description"
+  },
+  "password": "[TR] Şifre",
+  "@password": {
+    "description": "Description"
+  },
+  "errorLoadingFamilyLinks": "[TR] [TR] Error loading family links",
+  "@errorLoadingFamilyLinks": {
+    "description": "Description"
+  },
+  "cancel": "[TR] İptal",
+  "@cancel": {
+    "description": "cancel description"
+  },
+  "playtimeCreate": "[TR] Playtime oluştur",
+  "@playtimeCreate": {
+    "description": "Description"
+  },
+  "failedToActionPrivacyRequest": "[TR] Gizlilik isteği gerçekleştirilemedi",
+  "@failedToActionPrivacyRequest": {
+    "description": "failedToActionPrivacyRequest description"
+  },
+  "appTitle": "[TR] Uygulama Başlığı",
+  "@appTitle": {
+    "description": "Description"
+  },
+  "accept": "[TR] Kabul Et",
+  "@accept": {
+    "description": "Description"
+  },
+  "playtimeModeVirtual": "[TR] Sanal mod",
+  "@playtimeModeVirtual": {
+    "description": "Description"
+  },
+  "playtimeDescription": "[TR] Playtime açıklaması",
+  "@playtimeDescription": {
+    "description": "Description"
+  },
+  "delete": "[TR] Sil",
+  "@delete": {
+    "description": "Description"
+  },
+  "playtimeVirtualStarted": "[TR] Sanal oturum başladı",
+  "@playtimeVirtualStarted": {
+    "description": "Description"
+  },
+  "createYourFirstGame": "[TR] İlk oyununuzu oluşturun",
+  "@createYourFirstGame": {
+    "description": "Description"
+  },
+  "participants": "[TR] [TR] Participants",
+  "@participants": {
+    "description": "Description"
+  },
+  "recipients": "[TR] Alıcılar",
+  "@recipients": {
+    "description": "recipients description"
+  },
+  "noResults": "[TR] [TR] No results found",
+  "@noResults": {
+    "description": "Description"
+  },
+  "yes": "[TR] Evet",
+  "@yes": {
+    "description": "yes description"
+  },
+  "invite": "[TR] Davet Et",
+  "@invite": {
+    "description": "Description"
+  },
+  "playtimeModeLive": "[TR] Canlı mod",
+  "@playtimeModeLive": {
+    "description": "Description"
+  },
+  "done": "[TR] [TR] Done",
+  "@done": {
+    "description": "Description"
+  },
+  "defaultShareMessage": "[TR] Varsayılan paylaşım mesajı",
+  "@defaultShareMessage": {
+    "description": "Description"
+  },
+  "no": "[TR] Hayır",
+  "@no": {
+    "description": "Description"
+  },
+  "playtimeHub": "[TR] Playtime Merkezi",
+  "@playtimeHub": {
+    "description": "Description"
+  },
+  "createLiveSession": "[TR] Canlı oturum oluştur",
+  "@createLiveSession": {
+    "description": "Description"
+  },
+  "enableNotifications": "[TR] [TR] Enable Notifications",
+  "@enableNotifications": {
+    "description": "Description"
+  },
+  "invited": "[TR] Davet edildi",
+  "@invited": {
+    "description": "Description"
+  },
+  "content": "[TR] İçerik",
+  "@content": {
+    "description": "content description"
+  },
+  "meetingSharedSuccessfully": "[TR] [TR] Meeting shared successfully",
+  "@meetingSharedSuccessfully": {
+    "description": "Description"
+  },
+  "welcomeToPlaytime": "[TR] [TR] Welcome to Playtime",
+  "@welcomeToPlaytime": {
+    "description": "Description"
+  },
+  "viewAll": "[TR] [TR] View All",
+  "@viewAll": {
+    "description": "Description"
+  },
+  "playtimeVirtual": "[TR] Sanal Playtime",
+  "@playtimeVirtual": {
+    "description": "Description"
+  },
+  "staffScreenTBD": "[TR] [TR] Staff screen coming soon",
+  "@staffScreenTBD": {
+    "description": "Description"
+  },
+  "cut": "[TR] Kes",
+  "@cut": {
+    "description": "Description"
+  },
+  "inviteCancelledSuccessfully": "[TR] Davet başarıyla iptal edildi",
+  "@inviteCancelledSuccessfully": {
+    "description": "Description"
+  },
+  "retry": "[TR] Tekrar dene",
+  "@retry": {
+    "description": "Description"
+  },
+  "composeBroadcastMessage": "[TR] Yayın mesajı oluştur",
+  "@composeBroadcastMessage": {
+    "description": "composeBroadcastMessage description"
+  },
+  "sendNow": "[TR] Şimdi Gönder",
+  "@sendNow": {
+    "description": "sendNow description"
+  },
+  "noGamesYet": "[TR] Henüz oyun yok",
+  "@noGamesYet": {
+    "description": "Description"
+  },
+  "select": "[TR] Seç",
+  "@select": {
+    "description": "Description"
+  },
+  "about": "[TR] Hakkında",
+  "@about": {
+    "description": "About navigation label"
+  },
+  "choose": "[TR] Seç",
+  "@choose": {
+    "description": "Description"
+  },
+  "profile": "[TR] [TR] Profile",
+  "@profile": {
+    "description": "Description"
+  },
+  "removeChild": "[TR] Çocuğu kaldır",
+  "@removeChild": {
+    "description": "Description"
+  },
+  "status": "[TR] Durum",
+  "@status": {
+    "description": "status description"
+  },
+  "logout": "[TR] Çıkış Yap",
+  "@logout": {
+    "description": "Description"
+  },
+  "paste": "[TR] Yapıştır",
+  "@paste": {
+    "description": "Description"
+  },
+  "welcome": "[TR] [TR] Welcome",
+  "@welcome": {
+    "description": "Description"
+  },
+  "playtimeCreateSession": "[TR] Oturum oluştur",
+  "@playtimeCreateSession": {
+    "description": "Description"
+  },
+  "familyMembers": "[TR] Aile üyeleri",
+  "@familyMembers": {
+    "description": "Description"
+  },
+  "upload": "[TR] Yükle",
+  "@upload": {
+    "description": "Description"
+  },
+  "upcomingSessions": "[TR] Gelecek oturumlar",
+  "@upcomingSessions": {
+    "description": "Description"
+  },
+  "confirm": "[TR] [TR] Confirm",
+  "@confirm": {
+    "description": "Description"
+  },
+  "playtimeLive": "[TR] Canlı Playtime",
+  "@playtimeLive": {
+    "description": "Description"
+  },
+  "errorLoadingInvites": "[TR] [TR] Error loading invites",
+  "@errorLoadingInvites": {
+    "description": "Description"
+  },
+  "targetingFilters": "[TR] Hedefleme filtreleri",
+  "@targetingFilters": {
+    "description": "targetingFilters description"
+  },
+  "pickVideo": "[TR] Video seç",
+  "@pickVideo": {
+    "description": "pickVideo description"
+  },
+  "playtimeGameDeleted": "[TR] [TR] Game deleted",
+  "@playtimeGameDeleted": {
+    "description": "Description"
+  },
+  "scheduleForLater": "[TR] [TR] Schedule for Later",
+  "@scheduleForLater": {
+    "description": "scheduleForLater description"
+  },
+  "accessRevokedSuccessfully": "[TR] Erişim başarıyla iptal edildi",
+  "@accessRevokedSuccessfully": {
+    "description": "Description"
+  },
+  "type": "[TR] Tür",
+  "@type": {
+    "description": "type description"
+  },
+  "checkingPermissions": "[TR] [TR] Checking permissions...",
+  "@checkingPermissions": {
+    "description": "checkingPermissions description"
+  },
+  "copy": "[TR] Kopyala",
+  "@copy": {
+    "description": "Description"
+  },
+  "yesCancel": "[TR] Evet, iptal et",
+  "@yesCancel": {
+    "description": "Description"
+  },
+  "email": "[TR] E-posta",
+  "@email": {
+    "description": "Description"
+  },
+  "shareOnWhatsApp": "[TR] [TR] Share on WhatsApp",
+  "@shareOnWhatsApp": {
+    "description": "Description"
+  },
+  "notificationSettings": "[TR] Bildirim ayarları",
+  "@notificationSettings": {
+    "description": "Description"
+  },
+  "myProfile": "[TR] [TR] My Profile",
+  "@myProfile": {
+    "description": "Description"
+  },
+  "revoke": "[TR] Geri al",
+  "@revoke": {
+    "description": "Description"
+  },
+  "noBroadcastMessages": "[TR] Yayın mesajı yok",
+  "@noBroadcastMessages": {
+    "description": "noBroadcastMessages description"
+  },
+  "requestType": "[TR] İstek türü",
+  "@requestType": {
+    "description": "requestType description"
+  },
+  "notifications": "[TR] Bildirimler",
+  "@notifications": {
+    "description": "Description"
+  },
+  "details": "[TR] Detaylar",
+  "@details": {
+    "description": "details description"
+  },
+  "cancelInvite": "[TR] Daveti iptal et",
+  "@cancelInvite": {
+    "description": "Description"
+  },
+  "createNew": "[TR] Yeni oluştur",
+  "@createNew": {
+    "description": "Description"
+  },
+  "settings": "[TR] Ayarlar",
+  "@settings": {
+    "description": "Description"
+  },
+  "playtimeReject": "[TR] Playtime reddet",
+  "@playtimeReject": {
+    "description": "Description"
+  },
+  "errorLoadingProfile": "[TR] [TR] Error loading profile",
+  "@errorLoadingProfile": {
+    "description": "Description"
+  },
+  "edit": "[TR] Düzenle",
+  "@edit": {
+    "description": "Description"
+  },
+  "add": "[TR] Ekle",
+  "@add": {
+    "description": "Description"
+  },
+  "playtimeGameApproved": "[TR] [TR] Game approved",
+  "@playtimeGameApproved": {
+    "description": "Description"
+  },
+  "forgotPassword": "[TR] Şifrenizi unuttunuz mu?",
+  "@forgotPassword": {
+    "description": "Description"
+  },
+  "familyDashboard": "[TR] Aile panosu",
+  "@familyDashboard": {
+    "description": "Description"
+  },
+  "loading": "[TR] [TR] Loading...",
+  "@loading": {
+    "description": "Description"
+  },
+  "quickActions": "[TR] Hızlı işlemler",
+  "@quickActions": {
+    "description": "Description"
+  },
+  "playtimeTitle": "[TR] Playtime başlığı",
+  "@playtimeTitle": {
+    "description": "Description"
+  },
+  "otpResentSuccessfully": "[TR] OTP başarıyla yeniden gönderildi",
+  "@otpResentSuccessfully": {
+    "description": "Description"
+  },
+  "errorCheckingPermissions": "[TR] [TR] Error checking permissions",
+  "@errorCheckingPermissions": {
+    "description": "errorCheckingPermissions description"
+  },
+  "clientScreenTBD": "[TR] [TR] Client screen coming soon",
+  "@clientScreenTBD": {
+    "description": "Description"
+  },
+  "fcmToken": "[TR] FCM belirteci",
+  "@fcmToken": {
+    "description": "Description"
+  },
+  "pickImage": "[TR] Resim seç",
+  "@pickImage": {
+    "description": "pickImage description"
+  },
+  "previous": "[TR] Önceki",
+  "@previous": {
+    "description": "Description"
+  },
+  "noProfileFound": "[TR] [TR] No profile found",
+  "@noProfileFound": {
+    "description": "Description"
+  },
+  "noFamilyMembersYet": "[TR] Henüz aile üyesi yok",
+  "@noFamilyMembersYet": {
+    "description": "Description"
+  },
+  "mediaOptional": "[TR] Medya (isteğe bağlı)",
+  "@mediaOptional": {
+    "description": "mediaOptional description"
+  },
+  "messageSavedSuccessfully": "[TR] Mesaj başarıyla kaydedildi",
+  "@messageSavedSuccessfully": {
+    "description": "messageSavedSuccessfully description"
+  },
+  "scheduledFor": "[TR] [TR] Scheduled for",
+  "@scheduledFor": {
+    "description": "Description"
+  },
+  "dashboard": "[TR] Pano",
+  "@dashboard": {
+    "description": "Description"
+  },
+  "noPermissionForBroadcast": "[TR] Yayın izni yok",
+  "@noPermissionForBroadcast": {
+    "description": "noPermissionForBroadcast description"
+  },
+  "playtimeAdminPanelTitle": "[TR] Playtime Games – Admin",
+  "@playtimeAdminPanelTitle": {
+    "description": "Localization key for: Playtime Games – Admin"
+  },
+  "inviteDetail": "[TR] Davet detayları",
+  "@inviteDetail": {
+    "description": "Description"
+  },
+  "scheduled": "[TR] [TR] Scheduled",
+  "@scheduled": {
+    "description": "scheduled description"
+  },
+  "failedToResendOtp": "[TR] OTP yeniden gönderilemedi",
+  "@failedToResendOtp": {
+    "description": "Description"
+  },
+  "scheduling": "[TR] [TR] Scheduling",
+  "@scheduling": {
+    "description": "scheduling description"
+  },
+  "errorSavingMessage": "[TR] [TR] Error saving message",
+  "@errorSavingMessage": {
+    "description": "errorSavingMessage description"
+  },
+  "save": "[TR] Kaydet",
+  "@save": {
+    "description": "save description"
+  },
+  "playtimeApprove": "[TR] [TR] Approve",
+  "@playtimeApprove": {
+    "description": "Description"
+  },
+  "createYourFirstSession": "[TR] İlk oturumunuzu oluşturun",
+  "@createYourFirstSession": {
+    "description": "Description"
+  },
+  "playtimeGameRejected": "[TR] Oyun reddedildi",
+  "@playtimeGameRejected": {
+    "description": "Description"
+  },
+  "failedToRevokeAccess": "[TR] [TR] Failed to revoke access",
+  "@failedToRevokeAccess": {
+    "description": "Description"
+  },
+  "recentGames": "[TR] [TR] Recent Games",
+  "@recentGames": {
+    "description": "Description"
+  },
+  "customizeMessage": "[TR] Mesajı özelleştir",
+  "@customizeMessage": {
+    "description": "Description"
+  },
+  "failedToCancelInvite": "[TR] Davet iptali yapılamadı",
+  "@failedToCancelInvite": {
+    "description": "Description"
+  },
+  "errorSendingMessage": "[TR] [TR] Error sending message",
+  "@errorSendingMessage": {
+    "description": "errorSendingMessage description"
+  },
+  "confirmPassword": "[TR] [TR] Confirm Password",
+  "@confirmPassword": {
+    "description": "Description"
+  },
+  "errorLoadingPrivacyRequests": "[TR] [TR] Error loading privacy requests",
+  "@errorLoadingPrivacyRequests": {
+    "description": "errorLoadingPrivacyRequests description"
+  },
+  "connectedChildren": "[TR] Bağlı çocuklar",
+  "@connectedChildren": {
+    "description": "Description"
+  },
+  "share": "[TR] Paylaş",
+  "@share": {
+    "description": "Description"
+  },
+  "playtimeEnterGameName": "[TR] [TR] Enter game name",
+  "@playtimeEnterGameName": {
+    "description": "Description"
+  },
+  "pleaseLoginForFamilyFeatures": "[TR] [TR] Please login to access family features",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Description"
+  },
+  "myInvites": "[TR] [TR] My Invites",
+  "@myInvites": {
+    "description": "Description"
+  },
+  "createGame": "[TR] [TR] Create Game",
+  "@createGame": {
+    "description": "Description"
+  },
+  "playtimeNoSessions": "[TR] [TR] No playtime sessions found.",
+  "@playtimeNoSessions": {
+    "description": "Description"
+  },
+  "adminScreenTBD": "[TR] Admin screen coming soon",
+  "@adminScreenTBD": {
+    "description": "Localization key for: Admin screen coming soon"
+  },
+  "playtimeParentDashboardTitle": "[TR] [TR] Playtime Dashboard",
+  "@playtimeParentDashboardTitle": {
+    "description": "Description"
+  },
+  "close": "[TR] [TR] Close",
+  "@close": {
+    "description": "close description"
+  },
+  "back": "[TR] [TR] Back",
+  "@back": {
+    "description": "Description"
+  },
+  "playtimeChooseGame": "[TR] [TR] Choose a game",
+  "@playtimeChooseGame": {
+    "description": "Description"
+  },
+  "managePermissions": "[TR] [TR] Manage Permissions",
+  "@managePermissions": {
+    "description": "Description"
+  },
+  "pollOptions": "[TR] [TR] Poll Options",
+  "@pollOptions": {
+    "description": "pollOptions description"
+  },
+  "clicked": "[TR] [TR] Clicked",
+  "@clicked": {
+    "description": "clicked description"
+  },
+  "link": "[TR] [TR] Link",
+  "@link": {
+    "description": "link description"
+  },
+  "meetingReadyMessage": "[TR] [TR] Your meeting is ready! Join now",
+  "@meetingReadyMessage": {
+    "description": "Description"
+  },
+  "pendingInvites": "[TR] [TR] Pending Invites",
+  "@pendingInvites": {
+    "description": "Description"
+  },
+  "statusColon": "[TR] [TR] Status:",
+  "@statusColon": {
+    "description": "statusColon description"
+  },
+  "pleaseLoginToViewProfile": "[TR] [TR] Please log in to view your profile.",
+  "@pleaseLoginToViewProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "adminMetrics": "[TR] Admin Metrics",
+  "@adminMetrics": {
+    "description": "Localization key for: Admin Metrics"
+  },
+  "overview": "[TR] Overview",
+  "@overview": {
+    "description": "Description"
+  },
+  "bookings": "[TR] Bookings",
+  "@bookings": {
+    "description": "Description"
+  },
+  "users": "[TR] users (TRANSLATE)",
+  "@users": {
+    "description": "users description"
+  },
+  "revenue": "[TR] revenue (TRANSLATE)",
+  "@revenue": {
+    "description": "revenue description"
+  },
+  "contentLibrary": "[TR] Content Library",
+  "@contentLibrary": {
+    "description": "Localization key for: Content Library"
+  },
+  "authErrorUserNotFound": "[TR] No account found with this email address.",
+  "@authErrorUserNotFound": {
+    "description": "Localization key for: No account found with this email address."
+  },
+  "authErrorWrongPassword": "[TR] Incorrect password. Please try again.",
+  "@authErrorWrongPassword": {
+    "description": "Localization key for: Incorrect password. Please try again."
+  },
+  "authErrorInvalidEmail": "[TR] Please enter a valid email address.",
+  "@authErrorInvalidEmail": {
+    "description": "Localization key for: Please enter a valid email address."
+  },
+  "authErrorUserDisabled": "[TR] This account has been disabled. Please contact support.",
+  "@authErrorUserDisabled": {
+    "description": "Localization key for: This account has been disabled. Please contact support."
+  },
+  "authErrorWeakPassword": "[TR] Password is too weak. Please choose a stronger password.",
+  "@authErrorWeakPassword": {
+    "description": "Localization key for: Password is too weak. Please choose a stronger password."
+  },
+  "authErrorEmailAlreadyInUse": "[TR] An account with this email already exists.",
+  "@authErrorEmailAlreadyInUse": {
+    "description": "Localization key for: An account with this email already exists."
+  },
+  "authErrorTooManyRequests": "[TR] Too many failed attempts. Please try again later.",
+  "@authErrorTooManyRequests": {
+    "description": "Localization key for: Too many failed attempts. Please try again later."
+  },
+  "authErrorOperationNotAllowed": "[TR] This sign-in method is not enabled. Please contact support.",
+  "@authErrorOperationNotAllowed": {
+    "description": "Localization key for: This sign-in method is not enabled. Please contact support."
+  },
+  "authErrorInvalidCredential": "[TR] Invalid credentials. Please try again.",
+  "@authErrorInvalidCredential": {
+    "description": "Localization key for: Invalid credentials. Please try again."
+  },
+  "authErrorAccountExistsWithDifferentCredential": "[TR] An account already exists with this email using a different sign-in method.",
+  "@authErrorAccountExistsWithDifferentCredential": {
+    "description": "Localization key for: An account already exists with this email using a different sign-in method."
+  },
+  "authErrorCredentialAlreadyInUse": "[TR] These credentials are already associated with another account.",
+  "@authErrorCredentialAlreadyInUse": {
+    "description": "Localization key for: These credentials are already associated with another account."
+  },
+  "authErrorNetworkRequestFailed": "[TR] Network error. Please check your connection and try again.",
+  "@authErrorNetworkRequestFailed": {
+    "description": "Localization key for: Network error. Please check your connection and try again."
+  },
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
+  "@socialAccountConflictTitle": {
+    "description": "Localization key for: Account Already Exists"
+  },
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
+  "@socialAccountConflictMessage": {
+    "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
+  },
+  "linkAccounts": "ربط الحسابات",
+  "@linkAccounts": {
+    "description": "Localization key for: Link Accounts"
+  },
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
+  "@signInWithExistingMethod": {
+    "description": "Localization key for: Sign in with existing method"
+  },
+  "authErrorRequiresRecentLogin": "[TR] Please log in again to perform this operation.",
+  "@authErrorRequiresRecentLogin": {
+    "description": "Localization key for: Please log in again to perform this operation."
+  },
+  "authErrorAppNotAuthorized": "[TR] This app is not authorized to use Firebase Authentication.",
+  "@authErrorAppNotAuthorized": {
+    "description": "Localization key for: This app is not authorized to use Firebase Authentication."
+  },
+  "authErrorInvalidVerificationCode": "[TR] The verification code is invalid.",
+  "@authErrorInvalidVerificationCode": {
+    "description": "Localization key for: The verification code is invalid."
+  },
+  "authErrorInvalidVerificationId": "[TR] The verification ID is invalid.",
+  "@authErrorInvalidVerificationId": {
+    "description": "Localization key for: The verification ID is invalid."
+  },
+  "authErrorMissingVerificationCode": "[TR] Please enter the verification code.",
+  "@authErrorMissingVerificationCode": {
+    "description": "Localization key for: Please enter the verification code."
+  },
+  "authErrorMissingVerificationId": "[TR] Missing verification ID.",
+  "@authErrorMissingVerificationId": {
+    "description": "Localization key for: Missing verification ID."
+  },
+  "authErrorInvalidPhoneNumber": "[TR] The phone number is invalid.",
+  "@authErrorInvalidPhoneNumber": {
+    "description": "Localization key for: The phone number is invalid."
+  },
+  "authErrorMissingPhoneNumber": "[TR] Please enter a phone number.",
+  "@authErrorMissingPhoneNumber": {
+    "description": "Localization key for: Please enter a phone number."
+  },
+  "authErrorQuotaExceeded": "[TR] The SMS quota for this project has been exceeded. Please try again later.",
+  "@authErrorQuotaExceeded": {
+    "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
+  },
+  "authErrorCodeExpired": "[TR] The verification code has expired. Please request a new one.",
+  "@authErrorCodeExpired": {
+    "description": "Localization key for: The verification code has expired. Please request a new one."
+  },
+  "authErrorSessionExpired": "[TR] Your session has expired. Please log in again.",
+  "@authErrorSessionExpired": {
+    "description": "Localization key for: Your session has expired. Please log in again."
+  },
+  "authErrorMultiFactorAuthRequired": "[TR] Multi-factor authentication is required.",
+  "@authErrorMultiFactorAuthRequired": {
+    "description": "Localization key for: Multi-factor authentication is required."
+  },
+  "authErrorMultiFactorInfoNotFound": "[TR] Multi-factor information not found.",
+  "@authErrorMultiFactorInfoNotFound": {
+    "description": "Localization key for: Multi-factor information not found."
+  },
+  "authErrorMissingMultiFactorSession": "[TR] Missing multi-factor session.",
+  "@authErrorMissingMultiFactorSession": {
+    "description": "Localization key for: Missing multi-factor session."
+  },
+  "authErrorInvalidMultiFactorSession": "[TR] Invalid multi-factor session.",
+  "@authErrorInvalidMultiFactorSession": {
+    "description": "Localization key for: Invalid multi-factor session."
+  },
+  "authErrorSecondFactorAlreadyInUse": "[TR] This second factor is already in use.",
+  "@authErrorSecondFactorAlreadyInUse": {
+    "description": "Localization key for: This second factor is already in use."
+  },
+  "authErrorMaximumSecondFactorCountExceeded": "[TR] Maximum number of second factors exceeded.",
+  "@authErrorMaximumSecondFactorCountExceeded": {
+    "description": "Localization key for: Maximum number of second factors exceeded."
+  },
+  "authErrorUnsupportedFirstFactor": "[TR] Unsupported first factor for multi-factor authentication.",
+  "@authErrorUnsupportedFirstFactor": {
+    "description": "Localization key for: Unsupported first factor for multi-factor authentication."
+  },
+  "authErrorEmailChangeNeedsVerification": "[TR] Email change requires verification.",
+  "@authErrorEmailChangeNeedsVerification": {
+    "description": "Localization key for: Email change requires verification."
+  },
+  "authErrorPhoneNumberAlreadyExists": "[TR] This phone number is already in use.",
+  "@authErrorPhoneNumberAlreadyExists": {
+    "description": "Localization key for: This phone number is already in use."
+  },
+  "authErrorInvalidPassword": "[TR] The password is invalid or too weak.",
+  "@authErrorInvalidPassword": {
+    "description": "Localization key for: The password is invalid or too weak."
+  },
+  "authErrorInvalidIdToken": "[TR] The ID token is invalid.",
+  "@authErrorInvalidIdToken": {
+    "description": "Localization key for: The ID token is invalid."
+  },
+  "authErrorIdTokenExpired": "[TR] The ID token has expired.",
+  "@authErrorIdTokenExpired": {
+    "description": "Localization key for: The ID token has expired."
+  },
+  "authErrorIdTokenRevoked": "[TR] The ID token has been revoked.",
+  "@authErrorIdTokenRevoked": {
+    "description": "Localization key for: The ID token has been revoked."
+  },
+  "authErrorInternalError": "[TR] An internal error occurred. Please try again.",
+  "@authErrorInternalError": {
+    "description": "Localization key for: An internal error occurred. Please try again."
+  },
+  "authErrorInvalidArgument": "[TR] An invalid argument was provided.",
+  "@authErrorInvalidArgument": {
+    "description": "Localization key for: An invalid argument was provided."
+  },
+  "authErrorInvalidClaims": "[TR] Invalid custom claims provided.",
+  "@authErrorInvalidClaims": {
+    "description": "Localization key for: Invalid custom claims provided."
+  },
+  "authErrorInvalidContinueUri": "[TR] The continue URL is invalid.",
+  "@authErrorInvalidContinueUri": {
+    "description": "Localization key for: The continue URL is invalid."
+  },
+  "authErrorInvalidCreationTime": "[TR] The creation time is invalid.",
+  "@authErrorInvalidCreationTime": {
+    "description": "Localization key for: The creation time is invalid."
+  },
+  "authErrorInvalidDisabledField": "[TR] The disabled field value is invalid.",
+  "@authErrorInvalidDisabledField": {
+    "description": "Localization key for: The disabled field value is invalid."
+  },
+  "authErrorInvalidDisplayName": "[TR] The display name is invalid.",
+  "@authErrorInvalidDisplayName": {
+    "description": "Localization key for: The display name is invalid."
+  },
+  "authErrorInvalidDynamicLinkDomain": "[TR] The dynamic link domain is invalid.",
+  "@authErrorInvalidDynamicLinkDomain": {
+    "description": "Localization key for: The dynamic link domain is invalid."
+  },
+  "authErrorInvalidEmailVerified": "[TR] The email verified value is invalid.",
+  "@authErrorInvalidEmailVerified": {
+    "description": "Localization key for: The email verified value is invalid."
+  },
+  "authErrorInvalidHashAlgorithm": "[TR] The hash algorithm is invalid.",
+  "@authErrorInvalidHashAlgorithm": {
+    "description": "Localization key for: The hash algorithm is invalid."
+  },
+  "authErrorInvalidHashBlockSize": "[TR] The hash block size is invalid.",
+  "@authErrorInvalidHashBlockSize": {
+    "description": "Localization key for: The hash block size is invalid."
+  },
+  "authErrorInvalidHashDerivedKeyLength": "[TR] The hash derived key length is invalid.",
+  "@authErrorInvalidHashDerivedKeyLength": {
+    "description": "Localization key for: The hash derived key length is invalid."
+  },
+  "authErrorInvalidHashKey": "[TR] The hash key is invalid.",
+  "@authErrorInvalidHashKey": {
+    "description": "Localization key for: The hash key is invalid."
+  },
+  "authErrorInvalidHashMemoryCost": "[TR] The hash memory cost is invalid.",
+  "@authErrorInvalidHashMemoryCost": {
+    "description": "Localization key for: The hash memory cost is invalid."
+  },
+  "authErrorInvalidHashParallelization": "[TR] The hash parallelization is invalid.",
+  "@authErrorInvalidHashParallelization": {
+    "description": "Localization key for: The hash parallelization is invalid."
+  },
+  "authErrorInvalidHashRounds": "[TR] The hash rounds value is invalid.",
+  "@authErrorInvalidHashRounds": {
+    "description": "Localization key for: The hash rounds value is invalid."
+  },
+  "authErrorInvalidHashSaltSeparator": "[TR] The hash salt separator is invalid.",
+  "@authErrorInvalidHashSaltSeparator": {
+    "description": "Localization key for: The hash salt separator is invalid."
+  },
+  "authErrorInvalidLastSignInTime": "[TR] The last sign-in time is invalid.",
+  "@authErrorInvalidLastSignInTime": {
+    "description": "Localization key for: The last sign-in time is invalid."
+  },
+  "authErrorInvalidPageToken": "[TR] The page token is invalid.",
+  "@authErrorInvalidPageToken": {
+    "description": "Localization key for: The page token is invalid."
+  },
+  "authErrorInvalidProviderData": "[TR] The provider data is invalid.",
+  "@authErrorInvalidProviderData": {
+    "description": "Localization key for: The provider data is invalid."
+  },
+  "authErrorInvalidProviderId": "[TR] The provider ID is invalid.",
+  "@authErrorInvalidProviderId": {
+    "description": "Localization key for: The provider ID is invalid."
+  },
+  "authErrorInvalidSessionCookieDuration": "[TR] The session cookie duration is invalid.",
+  "@authErrorInvalidSessionCookieDuration": {
+    "description": "Localization key for: The session cookie duration is invalid."
+  },
+  "authErrorInvalidUid": "[TR] The UID is invalid.",
+  "@authErrorInvalidUid": {
+    "description": "Localization key for: The UID is invalid."
+  },
+  "authErrorInvalidUserImport": "[TR] The user import record is invalid.",
+  "@authErrorInvalidUserImport": {
+    "description": "Localization key for: The user import record is invalid."
+  },
+  "authErrorMaximumUserCountExceeded": "[TR] Maximum user import count exceeded.",
+  "@authErrorMaximumUserCountExceeded": {
+    "description": "Localization key for: Maximum user import count exceeded."
+  },
+  "authErrorMissingAndroidPkgName": "[TR] Missing Android package name.",
+  "@authErrorMissingAndroidPkgName": {
+    "description": "Localization key for: Missing Android package name."
+  },
+  "authErrorMissingContinueUri": "[TR] Missing continue URL.",
+  "@authErrorMissingContinueUri": {
+    "description": "Localization key for: Missing continue URL."
+  },
+  "authErrorMissingHashAlgorithm": "[TR] Missing hash algorithm.",
+  "@authErrorMissingHashAlgorithm": {
+    "description": "Localization key for: Missing hash algorithm."
+  },
+  "authErrorMissingIosBundleId": "[TR] Missing iOS bundle ID.",
+  "@authErrorMissingIosBundleId": {
+    "description": "Localization key for: Missing iOS bundle ID."
+  },
+  "authErrorMissingUid": "[TR] Missing UID.",
+  "@authErrorMissingUid": {
+    "description": "Localization key for: Missing UID."
+  },
+  "authErrorMissingOauthClientSecret": "[TR] Missing OAuth client secret.",
+  "@authErrorMissingOauthClientSecret": {
+    "description": "Localization key for: Missing OAuth client secret."
+  },
+  "authErrorProjectNotFound": "[TR] Firebase project not found.",
+  "@authErrorProjectNotFound": {
+    "description": "Localization key for: Firebase project not found."
+  },
+  "authErrorReservedClaims": "[TR] Reserved claims provided.",
+  "@authErrorReservedClaims": {
+    "description": "Localization key for: Reserved claims provided."
+  },
+  "authErrorSessionCookieExpired": "[TR] Session cookie has expired.",
+  "@authErrorSessionCookieExpired": {
+    "description": "Localization key for: Session cookie has expired."
+  },
+  "authErrorSessionCookieRevoked": "[TR] Session cookie has been revoked.",
+  "@authErrorSessionCookieRevoked": {
+    "description": "Localization key for: Session cookie has been revoked."
+  },
+  "authErrorUidAlreadyExists": "[TR] The UID is already in use.",
+  "@authErrorUidAlreadyExists": {
+    "description": "Localization key for: The UID is already in use."
+  },
+  "authErrorUnauthorizedContinueUri": "[TR] The continue URL domain is not whitelisted.",
+  "@authErrorUnauthorizedContinueUri": {
+    "description": "Localization key for: The continue URL domain is not whitelisted."
+  },
+  "authErrorUnknown": "[TR] An unknown authentication error occurred.",
+  "@authErrorUnknown": {
+    "description": "Localization key for: An unknown authentication error occurred."
+  },
+  "checkingPermissions1": "فحص الأذونات...",
+  "@checkingPermissions1": {
+    "description": "Localization key for: Checking permissions..."
+  },
+  "paymentSuccessful": "تم الدفع بنجاح",
+  "@paymentSuccessful": {
+    "description": "Localization key for: Payment Successful!"
+  },
+  "businessAvailability": "توفر الأعمال",
+  "@businessAvailability": {
+    "description": "Localization key for: Business Availability"
+  },
+  "send": "إرسال",
+  "@send": {
+    "description": "Localization key for: Send"
+  },
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
+  "@newNotificationPayloadtitle": {
+    "description": "Localization key for: New notification: {payloadTitle}"
+  },
+  "gameList": "قائمة الألعاب",
+  "@gameList": {
+    "description": "Localization key for: Game List"
+  },
+  "deleteAvailability": "حذف التوفر",
+  "@deleteAvailability": {
+    "description": "Localization key for: Delete Availability"
+  },
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
+  "@connectToGoogleCalendar": {
+    "description": "Localization key for: Connect to Google Calendar"
+  },
+  "adminFreeAccess": "[TR] Admin Free Access",
+  "@adminFreeAccess": {
+    "description": "Localization key for: Admin Free Access"
+  },
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
+  "@emailProfileemail": {
+    "description": "Localization key for: Email: {profileEmail}"
+  },
+  "calendar": "التقويم",
+  "@calendar": {
+    "description": "Localization key for: Calendar"
+  },
+  "upload1": "[TR] Upload (Turkish)",
+  "@upload1": {
+    "description": "Localization key for: Upload"
+  },
+  "resolved": "تم الحل",
+  "@resolved": {
+    "description": "Localization key for: Resolved"
+  },
+  "keepSubscription": "الاحتفاظ بالاشتراك",
+  "@keepSubscription": {
+    "description": "Localization key for: Keep Subscription"
+  },
+  "virtualSessionCreatedInvitingFriends": "[TR] Virtual session created! Inviting friends... (Turkish)",
+  "@virtualSessionCreatedInvitingFriends": {
+    "description": "Localization key for: Virtual session created! Inviting friends..."
+  },
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
+  "@noEventsScheduledForToday": {
+    "description": "Localization key for: No events scheduled for today"
+  },
+  "exportData": "تصدير البيانات",
+  "@exportData": {
+    "description": "Localization key for: Export Data"
+  },
+  "rewards": "[TR] Rewards (Turkish)",
+  "@rewards": {
+    "description": "Localization key for: Rewards"
+  },
+  "time": "[TR] Time (Turkish)",
+  "@time": {
+    "description": "Localization key for: Time"
+  },
+  "userCid": "[TR] User {id}",
+  "@userCid": {
+    "description": "Localization key for: User {id}"
+  },
+  "noSlots": "[TR] No slots (Turkish)",
+  "@noSlots": {
+    "description": "Localization key for: No slots"
+  },
+  "signIn": "[TR] Sign In (Turkish)",
+  "@signIn": {
+    "description": "Localization key for: Sign In"
+  },
+  "homeFeedScreen": "[TR] Home Feed Screen (Turkish)",
+  "@homeFeedScreen": {
+    "description": "Localization key for: Home Feed Screen"
+  },
+  "selectLocation": "[TR] Select Location (Turkish)",
+  "@selectLocation": {
+    "description": "Localization key for: Select Location"
+  },
+  "noTicketsYet": "[TR] No tickets yet (Turkish)",
+  "@noTicketsYet": {
+    "description": "Localization key for: No tickets yet"
+  },
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
+  "@meetingSharedSuccessfully1": {
+    "description": "Localization key for: Meeting shared successfully!"
+  },
+  "studioProfile": "ملف الاستوديو",
+  "@studioProfile": {
+    "description": "Localization key for: Studio Profile"
+  },
+  "subscriptionUnavailable": "[TR] Subscription unavailable (Turkish)",
+  "@subscriptionUnavailable": {
+    "description": "Localization key for: Subscription unavailable"
+  },
+  "confirmBooking": "[TR] Confirm Booking (Turkish)",
+  "@confirmBooking": {
+    "description": "Localization key for: Confirm Booking"
+  },
+  "failedToUpdatePermissionE": "[TR] Failed to update permission: $e (Turkish)",
+  "@failedToUpdatePermissionE": {
+    "description": "Localization key for: Failed to update permission: $e"
+  },
+  "reject": "[TR] Reject (Turkish)",
+  "@reject": {
+    "description": "Localization key for: Reject"
+  },
+  "ambassadorStatusAmbassadorstatus": "[TR] Ambassador Status: {ambassadorStatus} (Turkish)",
+  "@ambassadorStatusAmbassadorstatus": {
+    "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
+  },
+  "noProviders": "[TR] No providers",
+  "@noProviders": {
+    "description": "Localization key for: No providers"
+  },
+  "checkingSubscription": "[TR] Checking subscription... (Turkish)",
+  "@checkingSubscription": {
+    "description": "Localization key for: Checking subscription..."
+  },
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
+  "@errorPickingImageE": {
+    "description": "Localization key for: Error picking image: $e"
+  },
+  "noContentAvailableYet": "[TR] No content available yet (Turkish)",
+  "@noContentAvailableYet": {
+    "description": "Localization key for: No content available yet"
+  },
+  "resolve": "[TR] Resolve (Turkish)",
+  "@resolve": {
+    "description": "Localization key for: Resolve"
+  },
+  "errorLoadingSurveysError": "[TR] Error loading surveys: $error (Turkish)",
+  "@errorLoadingSurveysError": {
+    "description": "Localization key for: Error loading surveys: $error"
+  },
+  "errorLogerrormessage": "[TR] Error: {errorMessage}",
+  "@errorLogerrormessage": {
+    "description": "Localization key for: Error: {errorMessage}"
+  },
+  "getHelpWithYourAccount": "[TR] Get help with your account (Turkish)",
+  "@getHelpWithYourAccount": {
+    "description": "Localization key for: Get help with your account"
+  },
+  "pay": "[TR] Pay (Turkish)",
+  "@pay": {
+    "description": "Localization key for: Pay"
+  },
+  "noOrganizations": "[TR] noOrganizations (TRANSLATE)",
+  "@noOrganizations": {
+    "description": "noOrganizations description"
+  },
+  "meetingDetails": "تفاصيل الاجتماع",
+  "@meetingDetails": {
+    "description": "meetingDetails description"
+  },
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
+  "@errorLoadingAppointments": {
+    "description": "Localization key for: Error loading appointments"
+  },
+  "changesSavedSuccessfully": "[TR] Changes saved successfully! (Turkish)",
+  "@changesSavedSuccessfully": {
+    "description": "Localization key for: Changes saved successfully!"
+  },
+  "createNewInvoice": "[TR] Create New Invoice (Turkish)",
+  "@createNewInvoice": {
+    "description": "Localization key for: Create New Invoice"
+  },
+  "profileNotFound": "الملف الشخصي غير موجود",
+  "@profileNotFound": {
+    "description": "Localization key for: Profile not found."
+  },
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
+  "@errorConfirmingPaymentE": {
+    "description": "Localization key for: Error confirming payment: $e"
+  },
+  "inviteFriends": "دعوة الأصدقاء",
+  "@inviteFriends": {
+    "description": "Localization key for: Invite Friends"
+  },
+  "profileSaved": "[TR] Profile saved! (Turkish)",
+  "@profileSaved": {
+    "description": "Localization key for: Profile saved!"
+  },
+  "receiveBookingNotificationsViaEmail": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
+  "@receiveBookingNotificationsViaEmail": {
+    "description": "Localization key for: Receive booking notifications via email"
+  },
+  "valuetointk": "[TR] \\${value}K (Turkish)",
+  "@valuetointk": {
+    "description": "Localization key for: \\${value}K"
+  },
+  "deleteAccount": "[TR] Delete Account (Turkish)",
+  "@deleteAccount": {
+    "description": "Localization key for: Delete Account"
+  },
+  "profile1": "الملف الشخصي",
+  "@profile1": {
+    "description": "Localization key for: Profile"
+  },
+  "businessOnboarding": "[TR] Business Onboarding (Turkish)",
+  "@businessOnboarding": {
+    "description": "Localization key for: Business Onboarding"
+  },
+  "addNewClient": "[TR] Add New Client (Turkish)",
+  "@addNewClient": {
+    "description": "Localization key for: Add New Client"
+  },
+  "darkMode": "[TR] Dark Mode (Turkish)",
+  "@darkMode": {
+    "description": "Localization key for: Dark Mode"
+  },
+  "addProvider": "[TR] Add Provider",
+  "@addProvider": {
+    "description": "Localization key for: Add Provider"
+  },
+  "noRouteDefinedForStateuripath": "[TR] No route defined for {path}",
+  "@noRouteDefinedForStateuripath": {
+    "description": "Localization key for: No route defined for {path}"
+  },
+  "youWillReceiveAConfirmationEmailShortly": "[TR] You will receive a confirmation email shortly. (Turkish)",
+  "@youWillReceiveAConfirmationEmailShortly": {
+    "description": "Localization key for: You will receive a confirmation email shortly."
+  },
+  "addQuestion": "[TR] Add Question (Turkish)",
+  "@addQuestion": {
+    "description": "Localization key for: Add Question"
+  },
+  "privacyPolicy": "[TR] Privacy Policy (Turkish)",
+  "@privacyPolicy": {
+    "description": "Localization key for: Privacy Policy"
+  },
+  "branchesLengthBranches": "[TR] {branchCount} branches (Turkish)",
+  "@branchesLengthBranches": {
+    "description": "Localization key for: {branchCount} branches"
+  },
+  "join": "[TR] Join (Turkish)",
+  "@join": {
+    "description": "Localization key for: Join"
+  },
+  "businessSubscription": "[TR] Business Subscription (Turkish)",
+  "@businessSubscription": {
+    "description": "Localization key for: Business Subscription"
+  },
+  "myInvites1": "دعواتي",
+  "@myInvites1": {
+    "description": "Localization key for: My Invites"
+  },
+  "providers": "[TR] Providers",
+  "@providers": {
+    "description": "Localization key for: Providers"
+  },
+  "surveyManagement": "[TR] Survey Management (Turkish)",
+  "@surveyManagement": {
+    "description": "Localization key for: Survey Management"
+  },
+  "pleaseEnterAValidEmailOrPhone": "[TR] Please enter a valid email or phone",
+  "@pleaseEnterAValidEmailOrPhone": {
+    "description": "Localization key for: Please enter a valid email or phone"
+  },
+  "noRoomsFoundAddYourFirstRoom": "[TR] No rooms found. Add your first room! (Turkish)",
+  "@noRoomsFoundAddYourFirstRoom": {
+    "description": "Localization key for: No rooms found. Add your first room!"
+  },
+  "readOurPrivacyPolicy": "[TR] Read our privacy policy (Turkish)",
+  "@readOurPrivacyPolicy": {
+    "description": "Localization key for: Read our privacy policy"
+  },
+  "couldNotOpenPrivacyPolicy": "[TR] Could not open privacy policy (Turkish)",
+  "@couldNotOpenPrivacyPolicy": {
+    "description": "Localization key for: Could not open privacy policy"
+  },
+  "refresh1": "[TR] Refresh (Turkish)",
+  "@refresh1": {
+    "description": "Localization key for: Refresh"
+  },
+  "roomUpdatedSuccessfully": "[TR] Room updated successfully! (Turkish)",
+  "@roomUpdatedSuccessfully": {
+    "description": "Localization key for: Room updated successfully!"
+  },
+  "contentDetail": "[TR] Content Detail (Turkish)",
+  "@contentDetail": {
+    "description": "Localization key for: Content Detail"
+  },
+  "cancelSubscription": "[TR] Cancel Subscription (Turkish)",
+  "@cancelSubscription": {
+    "description": "Localization key for: Cancel Subscription"
+  },
+  "successfullyRegisteredAsAmbassador": "[TR] Successfully registered as Ambassador! (Turkish)",
+  "@successfullyRegisteredAsAmbassador": {
+    "description": "Localization key for: Successfully registered as Ambassador!"
+  },
+  "save1": "[TR] Save (Turkish)",
+  "@save1": {
+    "description": "Localization key for: Save"
+  },
+  "copy1": "[TR] Copy (Turkish)",
+  "@copy1": {
+    "description": "Localization key for: Copy"
+  },
+  "failedToSendInvitationE": "[TR] Failed to send invitation: $e (Turkish)",
+  "@failedToSendInvitationE": {
+    "description": "Localization key for: Failed to send invitation: $e"
+  },
+  "surveyScore": "[TR] Survey Score (Turkish)",
+  "@surveyScore": {
+    "description": "Localization key for: Survey Score"
+  },
+  "userUserid": "[TR] User $userId",
+  "@userUserid": {
+    "description": "Localization key for: User $userId"
+  },
+  "noAppointmentsFound": "[TR] No appointments found. (Turkish)",
+  "@noAppointmentsFound": {
+    "description": "Localization key for: No appointments found."
+  },
+  "responseDetail": "[TR] Response Detail (Turkish)",
+  "@responseDetail": {
+    "description": "Localization key for: Response Detail"
+  },
+  "businessVerificationScreenComingSoon": "شاشة التحقق من الأعمال - قريباً",
+  "@businessVerificationScreenComingSoon": {
+    "description": "Localization key for: Business Verification Screen - Coming Soon"
+  },
+  "businessProfileActivatedSuccessfully": "تم تفعيل الملف التجاري بنجاح",
+  "@businessProfileActivatedSuccessfully": {
+    "description": "Localization key for: Business profile activated successfully!"
+  },
+  "failedToStartProSubscriptionE": "[TR] Failed to start Pro subscription: $e (Turkish)",
+  "@failedToStartProSubscriptionE": {
+    "description": "Localization key for: Failed to start Pro subscription: $e"
+  },
+  "businessDashboardEntryScreenComingSoon": "[TR] Business Dashboard Entry Screen - Coming Soon (Turkish)",
+  "@businessDashboardEntryScreenComingSoon": {
+    "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
+  },
+  "contentFilter": "[TR] Content Filter (Turkish)",
+  "@contentFilter": {
+    "description": "Localization key for: Content Filter"
+  },
+  "helpSupport": "[TR] Help & Support (Turkish)",
+  "@helpSupport": {
+    "description": "Localization key for: Help & Support"
+  },
+  "editRoom": "[TR] Edit Room (Turkish)",
+  "@editRoom": {
+    "description": "Localization key for: Edit Room"
+  },
+  "appointmentApptid": "[TR] Appointment: {appointmentId}",
+  "@appointmentApptid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "deviceLogdeviceinfo": "[TR] Device: {deviceInfo}",
+  "@deviceLogdeviceinfo": {
+    "description": "Localization key for: Device: {deviceInfo}"
+  },
+  "businessCrmEntryScreenComingSoon": "[TR] Business CRM Entry Screen - Coming Soon (Turkish)",
+  "@businessCrmEntryScreenComingSoon": {
+    "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
+  },
+  "adminDashboard": "[TR] Admin Dashboard",
+  "@adminDashboard": {
+    "description": "Localization key for: Admin Dashboard"
+  },
+  "orgmemberidslengthMembers": "[TR] {memberCount} members",
+  "@orgmemberidslengthMembers": {
+    "description": "Localization key for: {memberCount} members"
+  },
+  "errorLoadingDashboardError": "[TR] Error loading dashboard: $error (Turkish)",
+  "@errorLoadingDashboardError": {
+    "description": "Localization key for: Error loading dashboard: $error"
+  },
+  "gameDeletedSuccessfully": "[TR] Game deleted successfully! (Turkish)",
+  "@gameDeletedSuccessfully": {
+    "description": "Localization key for: Game deleted successfully!"
+  },
+  "viewResponsesComingSoon": "[TR] View responses - Coming soon! (Turkish)",
+  "@viewResponsesComingSoon": {
+    "description": "Localization key for: View responses - Coming soon!"
+  },
+  "deleteProvider": "[TR] Delete Provider",
+  "@deleteProvider": {
+    "description": "Localization key for: Delete Provider"
+  },
+  "errorLoadingRewards": "[TR] Error loading rewards (Turkish)",
+  "@errorLoadingRewards": {
+    "description": "Localization key for: Error loading rewards"
+  },
+  "failedToDeleteAccountE": "[TR] Failed to delete account: $e (Turkish)",
+  "@failedToDeleteAccountE": {
+    "description": "Localization key for: Failed to delete account: $e"
+  },
+  "invited1": "[TR] Invited (Turkish)",
+  "@invited1": {
+    "description": "Localization key for: Invited"
+  },
+  "noBranchesAvailable": "[TR] No branches available (Turkish)",
+  "@noBranchesAvailable": {
+    "description": "Localization key for: No branches available"
+  },
+  "errorError": "[TR] Error: $error (Turkish)",
+  "@errorError": {
+    "description": "Localization key for: Error: $error"
+  },
+  "noEvents": "[TR] No events (Turkish)",
+  "@noEvents": {
+    "description": "Localization key for: No events"
+  },
+  "gameCreatedSuccessfully": "[TR] Game created successfully! (Turkish)",
+  "@gameCreatedSuccessfully": {
+    "description": "Localization key for: Game created successfully!"
+  },
+  "add1": "[TR] Add (Turkish)",
+  "@add1": {
+    "description": "Localization key for: Add"
+  },
+  "creatorCreatorid": "[TR] Creator: $creatorId",
+  "@creatorCreatorid": {
+    "description": "Localization key for: Creator: $creatorId"
+  },
+  "eventstarttimeEventendtime": "[TR] {startTime} - {endTime} (Turkish)",
+  "@eventstarttimeEventendtime": {
+    "description": "Localization key for: {startTime} - {endTime}"
+  },
+  "allowPlaytime": "[TR] Allow Playtime (Turkish)",
+  "@allowPlaytime": {
+    "description": "Localization key for: Allow Playtime"
+  },
+  "clients": "[TR] Clients (Turkish)",
+  "@clients": {
+    "description": "Localization key for: Clients"
+  },
+  "noAmbassadorDataAvailable": "[TR] No ambassador data available (Turkish)",
+  "@noAmbassadorDataAvailable": {
+    "description": "Localization key for: No ambassador data available"
+  },
+  "backgroundDeletedSuccessfully": "[TR] Background deleted successfully! (Turkish)",
+  "@backgroundDeletedSuccessfully": {
+    "description": "Localization key for: Background deleted successfully!"
+  },
+  "errorSnapshoterror": "[TR] Error: {error} (Turkish)",
+  "@errorSnapshoterror": {
+    "description": "Localization key for: Error: {error}"
+  },
+  "noAnalyticsDataAvailableYet": "[TR] No analytics data available yet. (Turkish)",
+  "@noAnalyticsDataAvailableYet": {
+    "description": "Localization key for: No analytics data available yet."
+  },
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
+  "@errorDeletingSlotE": {
+    "description": "Localization key for: Error deleting slot: $e"
+  },
+  "businessPhoneBookingEntryScreenComingSoon": "[TR] Business Phone Booking Entry Screen - Coming Soon (Turkish)",
+  "@businessPhoneBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
+  },
+  "verification": "[TR] Verification (Turkish)",
+  "@verification": {
+    "description": "Localization key for: Verification"
+  },
+  "copyLink": "[TR] Copy Link (Turkish)",
+  "@copyLink": {
+    "description": "Localization key for: Copy Link"
+  },
+  "dashboard1": "[TR] Dashboard (Turkish)",
+  "@dashboard1": {
+    "description": "Localization key for: Dashboard"
+  },
+  "manageChildAccounts": "[TR] Manage Child Accounts (Turkish)",
+  "@manageChildAccounts": {
+    "description": "Localization key for: Manage Child Accounts"
+  },
+  "grantConsent": "[TR] Grant Consent (Turkish)",
+  "@grantConsent": {
+    "description": "Localization key for: Grant Consent"
+  },
+  "myProfile1": "[TR] My Profile (Turkish)",
+  "@myProfile1": {
+    "description": "Localization key for: My Profile"
+  },
+  "submit": "[TR] Submit (Turkish)",
+  "@submit": {
+    "description": "Localization key for: Submit"
+  },
+  "userLoguseremail": "[TR] User: {userEmail}",
+  "@userLoguseremail": {
+    "description": "Localization key for: User: {userEmail}"
+  },
+  "emailNotifications": "إشعارات البريد الإلكتروني",
+  "@emailNotifications": {
+    "description": "Localization key for: Email Notifications"
+  },
+  "ambassadorDashboard": "[TR] Ambassador Dashboard (Turkish)",
+  "@ambassadorDashboard": {
+    "description": "Localization key for: Ambassador Dashboard"
+  },
+  "phoneBooking": "[TR] Phone Booking (Turkish)",
+  "@phoneBooking": {
+    "description": "Localization key for: Phone Booking"
+  },
+  "bookViaChat": "[TR] Book via Chat (Turkish)",
+  "@bookViaChat": {
+    "description": "Localization key for: Book via Chat"
+  },
+  "error": "[TR] [TR] Error",
+  "@error": {
+    "description": "Description"
+  },
+  "businessProfile": "[TR] Business Profile (Turkish)",
+  "@businessProfile": {
+    "description": "Localization key for: Business Profile"
+  },
+  "businessBookingEntryScreenComingSoon": "[TR] Business Booking Entry Screen - Coming Soon (Turkish)",
+  "@businessBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
+  },
+  "createNewSurvey": "[TR] Create New Survey (Turkish)",
+  "@createNewSurvey": {
+    "description": "Localization key for: Create New Survey"
+  },
+  "backgroundRejected": "[TR] Background rejected (Turkish)",
+  "@backgroundRejected": {
+    "description": "Localization key for: Background rejected"
+  },
+  "noMediaSelected": "[TR] No media selected (Turkish)",
+  "@noMediaSelected": {
+    "description": "Localization key for: No media selected"
+  },
+  "syncToGoogle": "[TR] Sync to Google (Turkish)",
+  "@syncToGoogle": {
+    "description": "Localization key for: Sync to Google"
+  },
+  "virtualPlaytime": "[TR] Virtual Playtime (Turkish)",
+  "@virtualPlaytime": {
+    "description": "Localization key for: Virtual Playtime"
+  },
+  "colorContrastTesting": "[TR] Color Contrast Testing",
+  "@colorContrastTesting": {
+    "description": "Localization key for: Color Contrast Testing"
+  },
+  "loginFailedE": "[TR] Login failed: $e",
+  "@loginFailedE": {
+    "description": "Localization key for: Login failed: $e"
+  },
+  "invitationSentSuccessfully": "[TR] Invitation sent successfully! (Turkish)",
+  "@invitationSentSuccessfully": {
+    "description": "Localization key for: Invitation sent successfully!"
+  },
+  "registering": "[TR] Registering... (Turkish)",
+  "@registering": {
+    "description": "Localization key for: Registering..."
+  },
+  "statusAppointmentstatusname": "[TR] Status: {status} (Turkish)",
+  "@statusAppointmentstatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "home1": "[TR] Home (Turkish)",
+  "@home1": {
+    "description": "Localization key for: Home"
+  },
+  "errorSavingSettingsE": "[TR] Error saving settings: $e (Turkish)",
+  "@errorSavingSettingsE": {
+    "description": "Localization key for: Error saving settings: $e"
+  },
+  "appVersionAndInformation": "[TR] App version and information (Turkish)",
+  "@appVersionAndInformation": {
+    "description": "Localization key for: App version and information"
+  },
+  "businessSubscriptionEntryScreenComingSoon": "[TR] Business Subscription Entry Screen - Coming Soon (Turkish)",
+  "@businessSubscriptionEntryScreenComingSoon": {
+    "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
+  },
+  "ekeyEvalue": "[TR] {key}: {value} (Turkish)",
+  "@ekeyEvalue": {
+    "description": "Localization key for: {key}: {value}"
+  },
+  "yourPaymentHasBeenProcessedSuccessfully": "[TR] Your payment has been processed successfully. (Turkish)",
+  "@yourPaymentHasBeenProcessedSuccessfully": {
+    "description": "Localization key for: Your payment has been processed successfully."
+  },
+  "errorE": "[TR] Error: $e (Turkish)",
+  "@errorE": {
+    "description": "Localization key for: Error: $e"
+  },
+  "viewAll1": "[TR] View All (Turkish)",
+  "@viewAll1": {
+    "description": "Localization key for: View All"
+  },
+  "editSurveyComingSoon": "[TR] Edit survey - Coming soon! (Turkish)",
+  "@editSurveyComingSoon": {
+    "description": "Localization key for: Edit survey - Coming soon!"
+  },
+  "enterOtp": "[TR] Enter OTP (Turkish)",
+  "@enterOtp": {
+    "description": "Localization key for: Enter OTP"
+  },
+  "payment": "[TR] Payment (Turkish)",
+  "@payment": {
+    "description": "Localization key for: Payment"
+  },
+  "automaticallyConfirmNewBookingRequests": "[TR] Automatically confirm new booking requests (Turkish)",
+  "@automaticallyConfirmNewBookingRequests": {
+    "description": "Localization key for: Automatically confirm new booking requests"
+  },
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
+  "@errorPickingVideoE": {
+    "description": "Localization key for: Error picking video: $e"
+  },
+  "noRouteDefinedForSettingsname": "[TR] No route defined for {settingsName} (Turkish)",
+  "@noRouteDefinedForSettingsname": {
+    "description": "Localization key for: No route defined for {settingsName}"
+  },
+  "pleaseSignInToUploadABackground": "[TR] Please sign in to upload a background (Turkish)",
+  "@pleaseSignInToUploadABackground": {
+    "description": "Localization key for: Please sign in to upload a background"
+  },
+  "logtargettypeLogtargetid": "[TR] {targetType}: {targetId}",
+  "@logtargettypeLogtargetid": {
+    "description": "Localization key for: {targetType}: {targetId}"
+  },
+  "staffAvailability": "[TR] Staff Availability (Turkish)",
+  "@staffAvailability": {
+    "description": "Localization key for: Staff Availability"
+  },
+  "livePlaytime": "[TR] Live Playtime (Turkish)",
+  "@livePlaytime": {
+    "description": "Localization key for: Live Playtime"
+  },
+  "autoconfirmBookings": "[TR] Auto-Confirm Bookings (Turkish)",
+  "@autoconfirmBookings": {
+    "description": "Localization key for: Auto-Confirm Bookings"
+  },
+  "redirectingToStripeCheckoutForProPlan": "[TR] Redirecting to Stripe checkout for Pro plan... (Turkish)",
+  "@redirectingToStripeCheckoutForProPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
+  },
+  "exportAsCsv": "[TR] Export as CSV (Turkish)",
+  "@exportAsCsv": {
+    "description": "Localization key for: Export as CSV"
+  },
+  "deleteFunctionalityComingSoon": "[TR] Delete functionality coming soon! (Turkish)",
+  "@deleteFunctionalityComingSoon": {
+    "description": "Localization key for: Delete functionality coming soon!"
+  },
+  "editClient": "[TR] Edit Client (Turkish)",
+  "@editClient": {
+    "description": "Localization key for: Edit Client"
+  },
+  "areYouSureYouWantToDeleteThisMessage": "[TR] Are you sure you want to delete this message? (Turkish)",
+  "@areYouSureYouWantToDeleteThisMessage": {
+    "description": "Localization key for: Are you sure you want to delete this message?"
+  },
+  "referralsAmbassadorreferrals": "[TR] Referrals: {referrals} (Turkish)",
+  "@referralsAmbassadorreferrals": {
+    "description": "Localization key for: Referrals: {referrals}"
+  },
+  "notAuthenticated": "[TR] Not authenticated",
+  "@notAuthenticated": {
+    "description": "Localization key for: Not authenticated"
+  },
+  "privacyRequestSentToYourParents": "[TR] Privacy request sent to your parents! (Turkish)",
+  "@privacyRequestSentToYourParents": {
+    "description": "Localization key for: Privacy request sent to your parents!"
+  },
+  "clientDeletedSuccessfully": "[TR] Client deleted successfully! (Turkish)",
+  "@clientDeletedSuccessfully": {
+    "description": "Localization key for: Client deleted successfully!"
+  },
+  "failedToCancelSubscription": "[TR] Failed to cancel subscription (Turkish)",
+  "@failedToCancelSubscription": {
+    "description": "Localization key for: Failed to cancel subscription"
+  },
+  "allLanguages": "[TR] All Languages (Turkish)",
+  "@allLanguages": {
+    "description": "Localization key for: All Languages"
+  },
+  "slotDeletedSuccessfully": "[TR] Slot deleted successfully (Turkish)",
+  "@slotDeletedSuccessfully": {
+    "description": "Localization key for: Slot deleted successfully"
+  },
+  "businessProvidersEntryScreenComingSoon": "[TR] Business Providers Entry Screen - Coming Soon",
+  "@businessProvidersEntryScreenComingSoon": {
+    "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
+  },
+  "parentsMustApproveBeforeChildrenCanJoin": "[TR] Parents must approve before children can join (Turkish)",
+  "@parentsMustApproveBeforeChildrenCanJoin": {
+    "description": "Localization key for: Parents must approve before children can join"
+  },
+  "subscribeToPro1499mo": "[TR] Subscribe to Pro (€14.99/mo) (Turkish)",
+  "@subscribeToPro1499mo": {
+    "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
+  },
+  "businessAvailabilityEntryScreenComingSoon": "[TR] Business Availability Entry Screen - Coming Soon (Turkish)",
+  "@businessAvailabilityEntryScreenComingSoon": {
+    "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
+  },
+  "appointmentsListlength": "[TR] Appointments: {count} (Turkish)",
+  "@appointmentsListlength": {
+    "description": "Localization key for: Appointments: {count}"
+  },
+  "clearFilters": "[TR] Clear Filters (Turkish)",
+  "@clearFilters": {
+    "description": "Localization key for: Clear Filters"
+  },
+  "submitBooking": "[TR] Submit Booking (Turkish)",
+  "@submitBooking": {
+    "description": "Localization key for: Submit Booking"
+  },
+  "areYouSureYouWantToCancelThisAppointment": "[TR] Are you sure you want to cancel this appointment? (Turkish)",
+  "@areYouSureYouWantToCancelThisAppointment": {
+    "description": "Localization key for: Are you sure you want to cancel this appointment?"
+  },
+  "noUpcomingBookings": "[TR] No upcoming bookings (Turkish)",
+  "@noUpcomingBookings": {
+    "description": "Localization key for: No upcoming bookings"
+  },
+  "goBack": "[TR] Go Back (Turkish)",
+  "@goBack": {
+    "description": "Localization key for: Go Back"
+  },
+  "setup": "[TR] Setup (Turkish)",
+  "@setup": {
+    "description": "Localization key for: Setup"
+  },
+  "inviteChild": "[TR] Invite Child (Turkish)",
+  "@inviteChild": {
+    "description": "Localization key for: Invite Child"
+  },
+  "goToDashboard": "[TR] Go to Dashboard (Turkish)",
+  "@goToDashboard": {
+    "description": "Localization key for: Go to Dashboard"
+  },
+  "ambassadorQuotaDashboard": "[TR] Ambassador Quota Dashboard (Turkish)",
+  "@ambassadorQuotaDashboard": {
+    "description": "Localization key for: Ambassador Quota Dashboard"
+  },
+  "adminSettings": "[TR] Admin Settings",
+  "@adminSettings": {
+    "description": "Localization key for: Admin Settings"
+  },
+  "referralCode": "[TR] Referral Code (Turkish)",
+  "@referralCode": {
+    "description": "Localization key for: Referral Code"
+  },
+  "adminLogadminemail": "[TR] Admin: {adminEmail}",
+  "@adminLogadminemail": {
+    "description": "Localization key for: Admin: {adminEmail}"
+  },
+  "date": "[TR] Date (Turkish)",
+  "@date": {
+    "description": "Localization key for: Date"
+  },
+  "readOnly": "[TR] Read Only (Turkish)",
+  "@readOnly": {
+    "description": "Localization key for: Read Only"
+  },
+  "bookingRequest": "[TR] Booking Request (Turkish)",
+  "@bookingRequest": {
+    "description": "Localization key for: Booking Request"
+  },
+  "advancedReporting": "[TR] • Advanced reporting (Turkish)",
+  "@advancedReporting": {
+    "description": "Localization key for: • Advanced reporting"
+  },
+  "rooms": "[TR] Rooms (Turkish)",
+  "@rooms": {
+    "description": "Localization key for: Rooms"
+  },
+  "copiedToClipboard": "[TR] Copied to clipboard (Turkish)",
+  "@copiedToClipboard": {
+    "description": "Localization key for: Copied to clipboard"
+  },
+  "bookingConfirmed": "[TR] Booking Confirmed (Turkish)",
+  "@bookingConfirmed": {
+    "description": "Localization key for: Booking Confirmed"
+  },
+  "sessionApproved": "تمت الموافقة على الجلسة",
+  "@sessionApproved": {
+    "description": "Localization key for: Session approved!"
+  },
+  "clientAddedSuccessfully": "[TR] Client added successfully! (Turkish)",
+  "@clientAddedSuccessfully": {
+    "description": "Localization key for: Client added successfully!"
+  },
+  "noNotifications": "لا توجد إشعارات",
+  "@noNotifications": {
+    "description": "Localization key for: No notifications"
+  },
+  "backgroundApproved": "[TR] Background approved! (Turkish)",
+  "@backgroundApproved": {
+    "description": "Localization key for: Background approved!"
+  },
+  "familySupport": "[TR] Family Support (Turkish)",
+  "@familySupport": {
+    "description": "Localization key for: Family Support"
+  },
+  "deletingAccount": "[TR] Deleting account... (Turkish)",
+  "@deletingAccount": {
+    "description": "Localization key for: Deleting account..."
+  },
+  "bookAppointment": "[TR] Book Appointment (Turkish)",
+  "@bookAppointment": {
+    "description": "Localization key for: Book Appointment"
+  },
+  "receivePushNotificationsForNewBookings": "استقبال إشعارات الدفع للحجوزات الجديدة",
+  "@receivePushNotificationsForNewBookings": {
+    "description": "Localization key for: Receive push notifications for new bookings"
+  },
+  "delete1": "[TR] Delete (Turkish)",
+  "@delete1": {
+    "description": "Localization key for: Delete"
+  },
+  "sendBookingInvite": "[TR] Send Booking Invite (Turkish)",
+  "@sendBookingInvite": {
+    "description": "Localization key for: Send Booking Invite"
+  },
+  "text": "[TR] Text (Turkish)",
+  "@text": {
+    "description": "Localization key for: Text"
+  },
+  "manageSubscription": "[TR] Manage Subscription (Turkish)",
+  "@manageSubscription": {
+    "description": "Localization key for: Manage Subscription"
+  },
+  "requiresInstallFallback": "[TR] Requires Install Fallback (Turkish)",
+  "@requiresInstallFallback": {
+    "description": "Localization key for: Requires Install Fallback"
+  },
+  "paymentConfirmation": "[TR] Payment Confirmation (Turkish)",
+  "@paymentConfirmation": {
+    "description": "Localization key for: Payment Confirmation"
+  },
+  "promoAppliedYourNextBillIsFree": "[TR] Promo applied! Your next bill is free. (Turkish)",
+  "@promoAppliedYourNextBillIsFree": {
+    "description": "Localization key for: Promo applied! Your next bill is free."
+  },
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
+  "@inviteeArgsinviteeid": {
+    "description": "Localization key for: Invitee: {inviteeId}"
+  },
+  "errorLoadingSlots": "[TR] Error loading slots (Turkish)",
+  "@errorLoadingSlots": {
+    "description": "Localization key for: Error loading slots"
+  },
+  "allowOtherUsersToFindAndJoinThisGame": "[TR] Allow other users to find and join this game (Turkish)",
+  "@allowOtherUsersToFindAndJoinThisGame": {
+    "description": "Localization key for: Allow other users to find and join this game"
+  },
+  "businessOnboardingScreenComingSoon": "[TR] Business Onboarding Screen - Coming Soon (Turkish)",
+  "@businessOnboardingScreenComingSoon": {
+    "description": "Localization key for: Business Onboarding Screen - Coming Soon"
+  },
+  "activateBusinessProfile": "[TR] Activate Business Profile (Turkish)",
+  "@activateBusinessProfile": {
+    "description": "Localization key for: Activate Business Profile"
+  },
+  "contentNotFound": "[TR] Content not found (Turkish)",
+  "@contentNotFound": {
+    "description": "Localization key for: Content not found"
+  },
+  "pspecialtynpcontactinfo": "[TR] {specialty}\\n{contactInfo} (Turkish)",
+  "@pspecialtynpcontactinfo": {
+    "description": "Localization key for: {specialty}\\n{contactInfo}"
+  },
+  "rating": "[TR] Rating (Turkish)",
+  "@rating": {
+    "description": "Localization key for: Rating"
+  },
+  "messages": "[TR] Messages (Turkish)",
+  "@messages": {
+    "description": "Localization key for: Messages"
+  },
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
+  "@errorEstimatingRecipientsE": {
+    "description": "Localization key for: Error estimating recipients: $e"
+  },
+  "becomeAnAmbassador": "[TR] Become an Ambassador (Turkish)",
+  "@becomeAnAmbassador": {
+    "description": "Localization key for: Become an Ambassador"
+  },
+  "subscribeNow": "[TR] Subscribe Now (Turkish)",
+  "@subscribeNow": {
+    "description": "Localization key for: Subscribe Now"
+  },
+  "timeArgsslotformatcontext": "[TR] Time: {time} (Turkish)",
+  "@timeArgsslotformatcontext": {
+    "description": "Localization key for: Time: {time}"
+  },
+  "shareViaWhatsapp": "[TR] Share via WhatsApp (Turkish)",
+  "@shareViaWhatsapp": {
+    "description": "Localization key for: Share via WhatsApp"
+  },
+  "users1": "[TR] Users (Turkish)",
+  "@users1": {
+    "description": "Localization key for: Users"
+  },
+  "shareLink": "[TR] Share Link (Turkish)",
+  "@shareLink": {
+    "description": "Localization key for: Share Link"
+  },
+  "areYouSureYouWantToDeleteThisProvider": "[TR] Are you sure you want to delete this provider?",
+  "@areYouSureYouWantToDeleteThisProvider": {
+    "description": "Localization key for: Are you sure you want to delete this provider?"
+  },
+  "deleteAppointment": "[TR] Delete Appointment (Turkish)",
+  "@deleteAppointment": {
+    "description": "Localization key for: Delete Appointment"
+  },
+  "toggleAvailability": "[TR] Toggle Availability (Turkish)",
+  "@toggleAvailability": {
+    "description": "Localization key for: Toggle Availability"
+  },
+  "changePlan": "[TR] Change Plan (Turkish)",
+  "@changePlan": {
+    "description": "Localization key for: Change Plan"
+  },
+  "errorLoadingStaff": "[TR] Error loading staff (Turkish)",
+  "@errorLoadingStaff": {
+    "description": "Localization key for: Error loading staff"
+  },
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
+  "@errorLoadingConfigurationE": {
+    "description": "Localization key for: Error loading configuration: $e"
+  },
+  "updateYourBusinessInformation": "[TR] Update your business information (Turkish)",
+  "@updateYourBusinessInformation": {
+    "description": "Localization key for: Update your business information"
+  },
+  "noProvidersFoundAddYourFirstProvider": "[TR] No providers found. Add your first provider!",
+  "@noProvidersFoundAddYourFirstProvider": {
+    "description": "Localization key for: No providers found. Add your first provider!"
+  },
+  "parentDashboard": "[TR] Parent Dashboard (Turkish)",
+  "@parentDashboard": {
+    "description": "Localization key for: Parent Dashboard"
+  },
+  "menu": "[TR] Menu (Turkish)",
+  "@menu": {
+    "description": "Localization key for: Menu"
+  },
+  "studioBooking": "[TR] Studio Booking (Turkish)",
+  "@studioBooking": {
+    "description": "Localization key for: Studio Booking"
+  },
+  "about1": "[TR] About (Turkish)",
+  "@about1": {
+    "description": "Localization key for: About"
+  },
+  "multipleChoice": "[TR] Multiple Choice (Turkish)",
+  "@multipleChoice": {
+    "description": "Localization key for: Multiple Choice"
+  },
+  "dateAppointmentscheduledattostring": "[TR] Date: {date} (Turkish)",
+  "@dateAppointmentscheduledattostring": {
+    "description": "Localization key for: Date: {date}"
+  },
+  "studioBookingIsOnlyAvailableOnWeb": "[TR] Studio booking is only available on web (Turkish)",
+  "@studioBookingIsOnlyAvailableOnWeb": {
+    "description": "Localization key for: Studio booking is only available on web"
+  },
+  "errorLoadingBranchesE": "[TR] Error loading branches: $e (Turkish)",
+  "@errorLoadingBranchesE": {
+    "description": "Localization key for: Error loading branches: $e"
+  },
+  "ud83dudcc5Bookingdatetimetolocal": "[TR] \\uD83D\\uDCC5 {dateTime} (Turkish)",
+  "@ud83dudcc5Bookingdatetimetolocal": {
+    "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
+  },
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
+  "@appointmentInviteappointmentid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "none": "[TR] None (Turkish)",
+  "@none": {
+    "description": "Localization key for: None"
+  },
+  "failedToUpdateConsentE": "[TR] Failed to update consent: $e (Turkish)",
+  "@failedToUpdateConsentE": {
+    "description": "Localization key for: Failed to update consent: $e"
+  },
+  "welcome1": "[TR] Welcome (Turkish)",
+  "@welcome1": {
+    "description": "Localization key for: Welcome"
+  },
+  "failedToCreateSessionE": "[TR] Failed to create session: $e (Turkish)",
+  "@failedToCreateSessionE": {
+    "description": "Localization key for: Failed to create session: $e"
+  },
+  "inviteContact": "[TR] Invite Contact (Turkish)",
+  "@inviteContact": {
+    "description": "Localization key for: Invite Contact"
+  },
+  "surveyEditor": "[TR] Survey Editor (Turkish)",
+  "@surveyEditor": {
+    "description": "Localization key for: Survey Editor"
+  },
+  "failedToStartBasicSubscriptionE": "[TR] Failed to start Basic subscription: $e (Turkish)",
+  "@failedToStartBasicSubscriptionE": {
+    "description": "Localization key for: Failed to start Basic subscription: $e"
+  },
+  "mySchedule": "[TR] My Schedule (Turkish)",
+  "@mySchedule": {
+    "description": "Localization key for: My Schedule"
+  },
+  "studioDashboard": "[TR] Studio Dashboard (Turkish)",
+  "@studioDashboard": {
+    "description": "Localization key for: Studio Dashboard"
+  },
+  "editProfile": "تحرير الملف الشخصي",
+  "@editProfile": {
+    "description": "Localization key for: Edit Profile"
+  },
+  "logout1": "[TR] Logout",
+  "@logout1": {
+    "description": "Localization key for: Logout"
+  },
+  "serviceServiceidNotSelected": "[TR] Service: {service}",
+  "@serviceServiceidNotSelected": {
+    "description": "Localization key for: Service: {service}"
+  },
+  "settingsSavedSuccessfully": "[TR] Settings saved successfully! (Turkish)",
+  "@settingsSavedSuccessfully": {
+    "description": "Localization key for: Settings saved successfully!"
+  },
+  "linkCopiedToClipboard": "[TR] Link copied to clipboard! (Turkish)",
+  "@linkCopiedToClipboard": {
+    "description": "Localization key for: Link copied to clipboard!"
+  },
+  "accept1": "[TR] Accept (Turkish)",
+  "@accept1": {
+    "description": "Localization key for: Accept"
+  },
+  "noAvailableSlots": "[TR] No available slots (Turkish)",
+  "@noAvailableSlots": {
+    "description": "Localization key for: No available slots"
+  },
+  "makeGamePublic": "[TR] Make Game Public (Turkish)",
+  "@makeGamePublic": {
+    "description": "Localization key for: Make Game Public"
+  },
+  "permissionPermissioncategoryUpdatedToNewvalue": "[TR] Permission {category} updated to $newValue (Turkish)",
+  "@permissionPermissioncategoryUpdatedToNewvalue": {
+    "description": "Localization key for: Permission {category} updated to $newValue"
+  },
+  "roomDeletedSuccessfully": "[TR] Room deleted successfully! (Turkish)",
+  "@roomDeletedSuccessfully": {
+    "description": "Localization key for: Room deleted successfully!"
+  },
+  "businessCalendar": "[TR] Business Calendar (Turkish)",
+  "@businessCalendar": {
+    "description": "Localization key for: Business Calendar"
+  },
+  "addAvailability": "[TR] Add Availability (Turkish)",
+  "@addAvailability": {
+    "description": "Localization key for: Add Availability"
+  },
+  "ambassadorOnboarding": "[TR] Ambassador Onboarding (Turkish)",
+  "@ambassadorOnboarding": {
+    "description": "Localization key for: Ambassador Onboarding"
+  },
+  "phoneProfileasyncphone": "[TR] Phone: {phone} (Turkish)",
+  "@phoneProfileasyncphone": {
+    "description": "Localization key for: Phone: {phone}"
+  },
+  "addNewRoom": "[TR] Add New Room (Turkish)",
+  "@addNewRoom": {
+    "description": "Localization key for: Add New Room"
+  },
+  "requireParentApproval": "[TR] Require Parent Approval (Turkish)",
+  "@requireParentApproval": {
+    "description": "Localization key for: Require Parent Approval"
+  },
+  "closed": "[TR] Closed (Turkish)",
+  "@closed": {
+    "description": "Localization key for: Closed"
+  },
+  "exportAsPdf": "[TR] Export as PDF (Turkish)",
+  "@exportAsPdf": {
+    "description": "Localization key for: Export as PDF"
+  },
+  "enableVibration": "[TR] Enable Vibration (Turkish)",
+  "@enableVibration": {
+    "description": "Localization key for: Enable Vibration"
+  },
+  "toAvailendformatcontext": "[TR] To: {endTime} (Turkish)",
+  "@toAvailendformatcontext": {
+    "description": "Localization key for: To: {endTime}"
+  },
+  "yourUpgradeCodeUpgradecode": "[TR] Your upgrade code: $upgradeCode (Turkish)",
+  "@yourUpgradeCodeUpgradecode": {
+    "description": "Localization key for: Your upgrade code: $upgradeCode"
+  },
+  "requestPrivateSession": "[TR] requestPrivateSession (TRANSLATE)",
+  "@requestPrivateSession": {
+    "description": "requestPrivateSession description"
+  },
+  "country": "[TR] Country (Turkish)",
+  "@country": {
+    "description": "Localization key for: Country"
+  },
+  "loginScreen": "[TR] Login Screen",
+  "@loginScreen": {
+    "description": "Localization key for: Login Screen"
+  },
+  "staffArgsstaffdisplayname": "[TR] Staff: {staffName} (Turkish)",
+  "@staffArgsstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "revokeConsent": "[TR] Revoke Consent (Turkish)",
+  "@revokeConsent": {
+    "description": "Localization key for: Revoke Consent"
+  },
+  "settings1": "[TR] Settings (Turkish)",
+  "@settings1": {
+    "description": "Localization key for: Settings"
+  },
+  "cancel1": "[TR] Cancel (Turkish)",
+  "@cancel1": {
+    "description": "Localization key for: Cancel"
+  },
+  "subscriptionActivatedSuccessfully": "[TR] Subscription activated successfully! (Turkish)",
+  "@subscriptionActivatedSuccessfully": {
+    "description": "Localization key for: Subscription activated successfully!"
+  },
+  "activityLogaction": "[TR] Activity: {action}",
+  "@activityLogaction": {
+    "description": "Localization key for: Activity: {action}"
+  },
+  "broadcast": "[TR] Broadcast (Turkish)",
+  "@broadcast": {
+    "description": "Localization key for: Broadcast"
+  },
+  "noEventsScheduledThisWeek": "[TR] No events scheduled this week (Turkish)",
+  "@noEventsScheduledThisWeek": {
+    "description": "Localization key for: No events scheduled this week"
+  },
+  "googleCalendar": "[TR] Google Calendar (Turkish)",
+  "@googleCalendar": {
+    "description": "Localization key for: Google Calendar"
+  },
+  "sendInvite": "إرسال دعوة",
+  "@sendInvite": {
+    "description": "Localization key for: Send Invite"
+  },
+  "childDashboard": "[TR] Child Dashboard (Turkish)",
+  "@childDashboard": {
+    "description": "Localization key for: Child Dashboard"
+  },
+  "failedToUploadBackgroundE": "[TR] Failed to upload background: $e (Turkish)",
+  "@failedToUploadBackgroundE": {
+    "description": "Localization key for: Failed to upload background: $e"
+  },
+  "linkchildidsubstring08": "[TR] {linkId}...",
+  "@linkchildidsubstring08": {
+    "description": "Localization key for: {linkId}..."
+  },
+  "targetLogtargettypeLogtargetid": "[TR] Target: {targetType} - {targetId}",
+  "@targetLogtargettypeLogtargetid": {
+    "description": "Localization key for: Target: {targetType} - {targetId}"
+  },
+  "contextContextid": "[TR] Context: $contextId",
+  "@contextContextid": {
+    "description": "Localization key for: Context: $contextId"
+  },
+  "noAppointments": "[TR] No appointments (Turkish)",
+  "@noAppointments": {
+    "description": "Localization key for: No appointments"
+  },
+  "unlimitedBookingsPerWeek": "[TR] • Unlimited bookings per week (Turkish)",
+  "@unlimitedBookingsPerWeek": {
+    "description": "Localization key for: • Unlimited bookings per week"
+  },
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
+  "@errorDetailsLogerrortype": {
+    "description": "Localization key for: Error Details: {errorType}"
+  },
+  "scheduledAtScheduledat": "[TR] Scheduled at: $scheduledAt (Turkish)",
+  "@scheduledAtScheduledat": {
+    "description": "Localization key for: Scheduled at: $scheduledAt"
+  },
+  "selectStaff": "[TR] Select Staff (Turkish)",
+  "@selectStaff": {
+    "description": "Localization key for: Select Staff"
+  },
+  "subscriptionCancelledSuccessfully": "[TR] Subscription cancelled successfully (Turkish)",
+  "@subscriptionCancelledSuccessfully": {
+    "description": "Localization key for: Subscription cancelled successfully"
+  },
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
+  "@pleaseLogInToViewYourProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "cancelAppointment": "[TR] Cancel Appointment (Turkish)",
+  "@cancelAppointment": {
+    "description": "Localization key for: Cancel Appointment"
+  },
+  "permissionsFamilylinkchildid": "[TR] Permissions - {childId}",
+  "@permissionsFamilylinkchildid": {
+    "description": "Localization key for: Permissions - {childId}"
+  },
+  "businessSignup": "[TR] Business Signup (Turkish)",
+  "@businessSignup": {
+    "description": "Localization key for: Business Signup"
+  },
+  "businessCompletionScreenComingSoon": "[TR] Business Completion Screen - Coming Soon (Turkish)",
+  "@businessCompletionScreenComingSoon": {
+    "description": "Localization key for: Business Completion Screen - Coming Soon"
+  },
+  "createGame1": "[TR] Create Game (Turkish)",
+  "@createGame1": {
+    "description": "Localization key for: Create Game"
+  },
+  "valuetoint": "[TR] {value} (Turkish)",
+  "@valuetoint": {
+    "description": "Localization key for: {value}"
+  },
+  "pleaseEnterAPromoCode": "[TR] Please enter a promo code (Turkish)",
+  "@pleaseEnterAPromoCode": {
+    "description": "Localization key for: Please enter a promo code"
+  },
+  "errorLoadingAvailabilityE": "[TR] Error loading availability: $e (Turkish)",
+  "@errorLoadingAvailabilityE": {
+    "description": "Localization key for: Error loading availability: $e"
+  },
+  "parentalControls": "[TR] Parental Controls (Turkish)",
+  "@parentalControls": {
+    "description": "Localization key for: Parental Controls"
+  },
+  "editBusinessProfile": "تحرير الملف التجاري",
+  "@editBusinessProfile": {
+    "description": "Localization key for: Edit Business Profile"
+  },
+  "childLinkedSuccessfully": "[TR] Child linked successfully! (Turkish)",
+  "@childLinkedSuccessfully": {
+    "description": "Localization key for: Child linked successfully!"
+  },
+  "create": "[TR] Create (Turkish)",
+  "@create": {
+    "description": "Localization key for: Create"
+  },
+  "noExternalMeetingsFound": "[TR] No external meetings found. (Turkish)",
+  "@noExternalMeetingsFound": {
+    "description": "Localization key for: No external meetings found."
+  },
+  "staffSelectionstaffdisplayname": "[TR] Staff: {staffName} (Turkish)",
+  "@staffSelectionstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "pleaseEnterAValidEmailAddress": "[TR] Please enter a valid email address",
+  "@pleaseEnterAValidEmailAddress": {
+    "description": "Localization key for: Please enter a valid email address"
+  },
+  "schedulerScreen": "[TR] Scheduler Screen (Turkish)",
+  "@schedulerScreen": {
+    "description": "Localization key for: Scheduler Screen"
+  },
+  "clientUpdatedSuccessfully": "[TR] Client updated successfully! (Turkish)",
+  "@clientUpdatedSuccessfully": {
+    "description": "Localization key for: Client updated successfully!"
+  },
+  "surveyResponses": "[TR] Survey Responses (Turkish)",
+  "@surveyResponses": {
+    "description": "Localization key for: Survey Responses"
+  },
+  "syncToOutlook": "[TR] Sync to Outlook (Turkish)",
+  "@syncToOutlook": {
+    "description": "Localization key for: Sync to Outlook"
+  },
+  "saveChanges": "[TR] Save Changes (Turkish)",
+  "@saveChanges": {
+    "description": "Localization key for: Save Changes"
+  },
+  "pickTime": "[TR] Pick Time (Turkish)",
+  "@pickTime": {
+    "description": "Localization key for: Pick Time"
+  },
+  "registrationFailedEtostring": "[TR] Registration failed: {error} (Turkish)",
+  "@registrationFailedEtostring": {
+    "description": "Localization key for: Registration failed: {error}"
+  },
+  "analytics": "[TR] Analytics (Turkish)",
+  "@analytics": {
+    "description": "Localization key for: Analytics"
+  },
+  "errorLoadingEvents": "[TR] Error loading events (Turkish)",
+  "@errorLoadingEvents": {
+    "description": "Localization key for: Error loading events"
+  },
+  "errorLoadingOrganizations": "[TR] errorLoadingOrganizations (TRANSLATE)",
+  "@errorLoadingOrganizations": {
+    "description": "errorLoadingOrganizations description"
+  },
+  "businessLoginScreenComingSoon": "[TR] Business Login Screen - Coming Soon",
+  "@businessLoginScreenComingSoon": {
+    "description": "Localization key for: Business Login Screen - Coming Soon"
+  },
+  "success1": "[TR] Success (Turkish)",
+  "@success1": {
+    "description": "Localization key for: Success"
+  },
+  "appVersionLogappversion": "[TR] App Version: {appVersion}",
+  "@appVersionLogappversion": {
+    "description": "Localization key for: App Version: {appVersion}"
+  },
+  "fromAvailstartformatcontext": "[TR] From: {startTime} (Turkish)",
+  "@fromAvailstartformatcontext": {
+    "description": "Localization key for: From: {startTime}"
+  },
+  "readWrite": "[TR] Read & Write (Turkish)",
+  "@readWrite": {
+    "description": "Localization key for: Read & Write"
+  },
+  "redirectingToStripeCheckoutForBasicPlan": "[TR] Redirecting to Stripe checkout for Basic plan... (Turkish)",
+  "@redirectingToStripeCheckoutForBasicPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
+  },
+  "errorSavingConfigurationE": "[TR] Error saving configuration: $e",
+  "@errorSavingConfigurationE": {
+    "description": "Localization key for: Error saving configuration: $e"
+  },
+  "pickDate": "[TR] Pick Date (Turkish)",
+  "@pickDate": {
+    "description": "Localization key for: Pick Date"
+  },
+  "chatBooking": "[TR] Chat Booking (Turkish)",
+  "@chatBooking": {
+    "description": "Localization key for: Chat Booking"
+  },
+  "noQuestionsAdded": "[TR] No questions added (Turkish)",
+  "@noQuestionsAdded": {
+    "description": "Localization key for: No questions added"
+  },
+  "severityLogseverityname": "[TR] Severity: {severity}",
+  "@severityLogseverityname": {
+    "description": "Localization key for: Severity: {severity}"
+  },
+  "markAsPaid": "[TR] Mark as Paid",
+  "@markAsPaid": {
+    "description": "Localization key for: Mark as Paid"
+  },
+  "typeOpenCall": "[TR] Type: Open Call (Turkish)",
+  "@typeOpenCall": {
+    "description": "Localization key for: Type: Open Call"
+  },
+  "appointmentAppointmentid": "[TR] Appointment {appointmentId}",
+  "@appointmentAppointmentid": {
+    "description": "Localization key for: Appointment {appointmentId}"
+  },
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
+  "@statusInvitestatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "businessLogin": "[TR] Business Login",
+  "@businessLogin": {
+    "description": "Localization key for: Business Login"
+  },
+  "invoiceCreatedSuccessfully": "[TR] Invoice created successfully! (Turkish)",
+  "@invoiceCreatedSuccessfully": {
+    "description": "Localization key for: Invoice created successfully!"
+  },
+  "noTimeSeriesDataAvailable": "[TR] No time series data available (Turkish)",
+  "@noTimeSeriesDataAvailable": {
+    "description": "Localization key for: No time series data available"
+  },
+  "subscribeToWidgetplanname": "[TR] Subscribe to {planName}",
+  "@subscribeToWidgetplanname": {
+    "description": "Localization key for: Subscribe to {planName}"
+  },
+  "timestamp_formatdatelogtimestamp": "[TR] Timestamp: {timestamp}",
+  "@timestamp_formatdatelogtimestamp": {
+    "description": "Localization key for: Timestamp: {timestamp}"
+  },
+  "failedToSendPrivacyRequestE": "[TR] Failed to send privacy request: $e (Turkish)",
+  "@failedToSendPrivacyRequestE": {
+    "description": "Localization key for: Failed to send privacy request: $e"
+  },
+  "chooseYourPlan": "[TR] Choose Your Plan (Turkish)",
+  "@chooseYourPlan": {
+    "description": "Localization key for: Choose Your Plan"
+  },
+  "playtimeManagement": "[TR] Playtime Management (Turkish)",
+  "@playtimeManagement": {
+    "description": "Localization key for: Playtime Management"
+  },
+  "availability": "[TR] Availability (Turkish)",
+  "@availability": {
+    "description": "Localization key for: Availability"
+  },
+  "eventCreated": "[TR] Event created (Turkish)",
+  "@eventCreated": {
+    "description": "Localization key for: Event created"
+  },
+  "subscribeToBasic499mo": "[TR] Subscribe to Basic (€4.99/mo) (Turkish)",
+  "@subscribeToBasic499mo": {
+    "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
+  },
+  "completion": "[TR] Completion (Turkish)",
+  "@completion": {
+    "description": "Localization key for: Completion"
+  },
+  "supportTicketSubmitted": "[TR] Support ticket submitted (Turkish)",
+  "@supportTicketSubmitted": {
+    "description": "Localization key for: Support ticket submitted"
+  },
+  "monetizationSettings": "[TR] Monetization Settings (Turkish)",
+  "@monetizationSettings": {
+    "description": "Localization key for: Monetization Settings"
+  },
+  "noBookingsFound": "[TR] No bookings found (Turkish)",
+  "@noBookingsFound": {
+    "description": "Localization key for: No bookings found"
+  },
+  "admin": "[TR] Admin",
+  "@admin": {
+    "description": "Localization key for: Admin"
+  },
+  "deleteSurvey": "[TR] Delete Survey (Turkish)",
+  "@deleteSurvey": {
+    "description": "Localization key for: Delete Survey"
+  },
+  "gameApprovedSuccessfully": "[TR] Game approved successfully! (Turkish)",
+  "@gameApprovedSuccessfully": {
+    "description": "Localization key for: Game approved successfully!"
+  },
+  "errorLoadingPermissionsError": "[TR] Error loading permissions: $error (Turkish)",
+  "@errorLoadingPermissionsError": {
+    "description": "Localization key for: Error loading permissions: $error"
+  },
+  "referrals": "[TR] Referrals (Turkish)",
+  "@referrals": {
+    "description": "Localization key for: Referrals"
+  },
+  "crm": "[TR] CRM (Turkish)",
+  "@crm": {
+    "description": "Localization key for: CRM"
+  },
+  "gameRejected": "[TR] Game rejected (Turkish)",
+  "@gameRejected": {
+    "description": "Localization key for: Game rejected"
+  },
+  "appointments": "[TR] Appointments (Turkish)",
+  "@appointments": {
+    "description": "Localization key for: Appointments"
+  },
+  "onboardingScreen": "[TR] Onboarding Screen (Turkish)",
+  "@onboardingScreen": {
+    "description": "Localization key for: Onboarding Screen"
+  },
+  "welcomeToYourStudio": "[TR] Welcome to your studio (Turkish)",
+  "@welcomeToYourStudio": {
+    "description": "Localization key for: Welcome to your studio"
+  },
+  "update": "[TR] Update (Turkish)",
+  "@update": {
+    "description": "Localization key for: Update"
+  },
+  "retry1": "[TR] Retry (Turkish)",
+  "@retry1": {
+    "description": "Localization key for: Retry"
+  },
+  "booking": "[TR] Booking (Turkish)",
+  "@booking": {
+    "description": "Localization key for: Booking"
+  },
+  "parentalSettings": "[TR] Parental Settings (Turkish)",
+  "@parentalSettings": {
+    "description": "Localization key for: Parental Settings"
+  },
+  "language": "[TR] Language (Turkish)",
+  "@language": {
+    "description": "Localization key for: Language"
+  },
+  "deleteSlot": "[TR] Delete Slot (Turkish)",
+  "@deleteSlot": {
+    "description": "Localization key for: Delete Slot"
+  },
+  "organizations": "[TR] organizations (TRANSLATE)",
+  "@organizations": {
+    "description": "organizations description"
+  },
+  "configurationSavedSuccessfully": "[TR] Configuration saved successfully!",
+  "@configurationSavedSuccessfully": {
+    "description": "Localization key for: Configuration saved successfully!"
+  },
+  "createNewGame": "[TR] Create New Game (Turkish)",
+  "@createNewGame": {
+    "description": "Localization key for: Create New Game"
+  },
+  "next1": "[TR] Next (Turkish)",
+  "@next1": {
+    "description": "Localization key for: Next"
+  },
+  "backgroundUploadedSuccessfully": "[TR] Background uploaded successfully! (Turkish)",
+  "@backgroundUploadedSuccessfully": {
+    "description": "Localization key for: Background uploaded successfully!"
+  },
+  "noAppointmentRequestsFound": "[TR] No appointment requests found. (Turkish)",
+  "@noAppointmentRequestsFound": {
+    "description": "Localization key for: No appointment requests found."
+  },
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
+  "@pleaseSignInToCreateASession": {
+    "description": "Localization key for: Please sign in to create a session"
+  },
+  "restrictMatureContent": "[TR] Restrict mature content (Turkish)",
+  "@restrictMatureContent": {
+    "description": "Localization key for: Restrict mature content"
+  },
+  "ambassadors": "[TR] Ambassadors (Turkish)",
+  "@ambassadors": {
+    "description": "Localization key for: Ambassadors"
+  },
+  "smsNotifications": "إشعارات الرسائل النصية",
+  "@smsNotifications": {
+    "description": "Localization key for: SMS Notifications"
+  },
+  "paymentWasCancelled": "[TR] Payment was cancelled (Turkish)",
+  "@paymentWasCancelled": {
+    "description": "Localization key for: Payment was cancelled"
+  },
+  "clearAll": "[TR] Clear All (Turkish)",
+  "@clearAll": {
+    "description": "Localization key for: Clear All"
+  },
+  "viewDetails": "[TR] View Details (Turkish)",
+  "@viewDetails": {
+    "description": "Localization key for: View Details"
+  },
+  "notifications1": "الإشعارات",
+  "@notifications1": {
+    "description": "Localization key for: Notifications"
+  },
+  "liveSessionScheduledWaitingForParentApproval": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
+  "@liveSessionScheduledWaitingForParentApproval": {
+    "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
+  },
+  "failedToCreateGameE": "[TR] Failed to create game: $e (Turkish)",
+  "@failedToCreateGameE": {
+    "description": "Localization key for: Failed to create game: $e"
+  },
+  "noChartDataAvailable": "[TR] No chart data available (Turkish)",
+  "@noChartDataAvailable": {
+    "description": "Localization key for: No chart data available"
+  },
+  "phonebasedBookingSystem": "[TR] • Phone-based booking system (Turkish)",
+  "@phonebasedBookingSystem": {
+    "description": "Localization key for: • Phone-based booking system"
+  },
+  "enableNotifications1": "تفعيل الإشعارات",
+  "@enableNotifications1": {
+    "description": "Localization key for: Enable Notifications"
+  },
+  "invoices": "[TR] Invoices (Turkish)",
+  "@invoices": {
+    "description": "Localization key for: Invoices"
+  },
+  "pleaseActivateYourBusinessProfileToContinue": "يرجى تفعيل ملفك التجاري للمتابعة",
+  "@pleaseActivateYourBusinessProfileToContinue": {
+    "description": "Localization key for: Please activate your business profile to continue."
+  },
+  "scheduledAtArgsscheduledat": "[TR] Scheduled at: {scheduledAt} (Turkish)",
+  "@scheduledAtArgsscheduledat": {
+    "description": "Localization key for: Scheduled at: {scheduledAt}"
+  },
+  "durationDurationinminutes0Minutes": "[TR] Duration: {duration} minutes (Turkish)",
+  "@durationDurationinminutes0Minutes": {
+    "description": "Localization key for: Duration: {duration} minutes"
+  },
+  "tryAgain": "[TR] Try Again (Turkish)",
+  "@tryAgain": {
+    "description": "Localization key for: Try Again"
+  },
+  "deleteBackground": "[TR] Delete Background (Turkish)",
+  "@deleteBackground": {
+    "description": "Localization key for: Delete Background"
+  },
+  "currentTierTiertouppercase": "[TR] Current Tier: {tier} (Turkish)",
+  "@currentTierTiertouppercase": {
+    "description": "Localization key for: Current Tier: {tier}"
+  },
+  "iDoNotConsent": "[TR] I Do Not Consent",
+  "@iDoNotConsent": {
+    "description": "Localization key for: I Do Not Consent"
+  },
+  "noClientsFoundAddYourFirstClient": "[TR] No clients found. Add your first client! (Turkish)",
+  "@noClientsFoundAddYourFirstClient": {
+    "description": "Localization key for: No clients found. Add your first client!"
+  },
+  "settingsDialogWillBeImplementedHere": "[TR] Settings dialog will be implemented here.",
+  "@settingsDialogWillBeImplementedHere": {
+    "description": "Localization key for: Settings dialog will be implemented here."
+  },
+  "groupGroupid": "[TR] Group: $groupId",
+  "@groupGroupid": {
+    "description": "Localization key for: Group: $groupId"
+  },
+  "appointmentRequests": "[TR] Appointment Requests (Turkish)",
+  "@appointmentRequests": {
+    "description": "Localization key for: Appointment Requests"
+  },
+  "forward": "[TR] Forward (Turkish)",
+  "@forward": {
+    "description": "Localization key for: Forward"
+  },
+  "roomAddedSuccessfully": "[TR] Room added successfully! (Turkish)",
+  "@roomAddedSuccessfully": {
+    "description": "Localization key for: Room added successfully!"
+  },
+  "option": "[TR] • $option (Turkish)",
+  "@option": {
+    "description": "Localization key for: • $option"
+  },
+  "responseIndex1": "[TR] Response #{number} (Turkish)",
+  "@responseIndex1": {
+    "description": "Localization key for: Response #{number}"
+  },
+  "crmDashboardWithAnalytics": "[TR] • CRM dashboard with analytics (Turkish)",
+  "@crmDashboardWithAnalytics": {
+    "description": "Localization key for: • CRM dashboard with analytics"
+  },
+  "contentLibrary1": "[TR] Content Library (Turkish)",
+  "@contentLibrary1": {
+    "description": "Localization key for: Content Library"
+  },
+  "reply": "[TR] Reply (Turkish)",
+  "@reply": {
+    "description": "Localization key for: Reply"
+  },
+  "subscriptionManagement": "[TR] Subscription Management (Turkish)",
+  "@subscriptionManagement": {
+    "description": "Localization key for: Subscription Management"
+  },
+  "monetizationSettingsWillBeImplementedHere": "[TR] Monetization settings will be implemented here (Turkish)",
+  "@monetizationSettingsWillBeImplementedHere": {
+    "description": "Localization key for: Monetization settings will be implemented here"
+  },
+  "failedToApplyPromoCodeE": "[TR] Failed to apply promo code: $e (Turkish)",
+  "@failedToApplyPromoCodeE": {
+    "description": "Localization key for: Failed to apply promo code: $e"
+  },
+  "editProvider": "[TR] Edit Provider",
+  "@editProvider": {
+    "description": "Localization key for: Edit Provider"
+  },
+  "localizationContribution": "[TR] Localization Contribution (Turkish)",
+  "@localizationContribution": {
+    "description": "Localization key for: Localization Contribution"
+  },
+  "parentalConsent": "[TR] Parental Consent (Turkish)",
+  "@parentalConsent": {
+    "description": "Localization key for: Parental Consent"
+  },
+  "businessSignupScreenComingSoon": "[TR] Business Signup Screen - Coming Soon (Turkish)",
+  "@businessSignupScreenComingSoon": {
+    "description": "Localization key for: Business Signup Screen - Coming Soon"
+  },
+  "areYouSureYouWantToDeleteThisAppointment": "[TR] Are you sure you want to delete this appointment? (Turkish)",
+  "@areYouSureYouWantToDeleteThisAppointment": {
+    "description": "Localization key for: Are you sure you want to delete this appointment?"
+  },
+  "syncAppointment": "[TR] Sync Appointment (Turkish)",
+  "@syncAppointment": {
+    "description": "Localization key for: Sync Appointment"
+  },
+  "iConsent": "[TR] I Consent (Turkish)",
+  "@iConsent": {
+    "description": "Localization key for: I Consent"
+  },
+  "sessionRejected": "تم رفض الجلسة",
+  "@sessionRejected": {
+    "description": "Localization key for: Session rejected"
+  },
+  "businessSetupScreenComingSoon": "[TR] Business Setup Screen - Coming Soon (Turkish)",
+  "@businessSetupScreenComingSoon": {
+    "description": "Localization key for: Business Setup Screen - Coming Soon"
+  },
+  "edit1": "[TR] Edit (Turkish)",
+  "@edit1": {
+    "description": "Localization key for: Edit"
+  },
+  "noEventsScheduledThisMonth": "[TR] No events scheduled this month (Turkish)",
+  "@noEventsScheduledThisMonth": {
+    "description": "Localization key for: No events scheduled this month"
+  },
+  "businessDashboard": "[TR] Business Dashboard (Turkish)",
+  "@businessDashboard": {
+    "description": "Localization key for: Business Dashboard"
+  },
+  "noMessagesFound": "[TR] No messages found. (Turkish)",
+  "@noMessagesFound": {
+    "description": "Localization key for: No messages found."
+  },
+  "staffStaffidNotSelected": "[TR] Staff: {staff}",
+  "@staffStaffidNotSelected": {
+    "description": "Localization key for: Staff: {staff}"
+  },
+  "manageStaffAvailability": "[TR] Manage Staff Availability (Turkish)",
+  "@manageStaffAvailability": {
+    "description": "Localization key for: Manage Staff Availability"
+  },
+  "noMissingTranslations": "[TR] No missing translations (Turkish)",
+  "@noMissingTranslations": {
+    "description": "Localization key for: No missing translations"
+  },
+  "skip": "[TR] Skip (Turkish)",
+  "@skip": {
+    "description": "Localization key for: Skip"
+  },
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
+  "@meetingIdMeetingid": {
+    "description": "Localization key for: Meeting ID: $meetingId"
+  },
+  "noUsers": "[TR] noUsers (TRANSLATE)",
+  "@noUsers": {
+    "description": "noUsers description"
+  },
+  "errorLoadingReferralCode": "[TR] Error loading referral code (Turkish)",
+  "@errorLoadingReferralCode": {
+    "description": "Localization key for: Error loading referral code"
+  },
+  "allCountries": "[TR] All Countries (Turkish)",
+  "@allCountries": {
+    "description": "Localization key for: All Countries"
+  },
+  "deleteGame": "[TR] Delete Game (Turkish)",
+  "@deleteGame": {
+    "description": "Localization key for: Delete Game"
+  },
+  "staffManagementTools": "[TR] • Staff management tools (Turkish)",
+  "@staffManagementTools": {
+    "description": "Localization key for: • Staff management tools"
+  },
+  "deleteMessage": "[TR] Delete Message (Turkish)",
+  "@deleteMessage": {
+    "description": "Localization key for: Delete Message"
+  },
+  "receiveBookingNotificationsViaSms": "استقبال إشعارات الحجز عبر الرسائل النصية",
+  "@receiveBookingNotificationsViaSms": {
+    "description": "Localization key for: Receive booking notifications via SMS"
+  },
+  "changeRole": "[TR] changeRole (TRANSLATE)",
+  "@changeRole": {
+    "description": "changeRole description"
+  },
+  "errorLoadingBookingsSnapshoterror": "خطأ في تحميل لقطة الحجوزات: {error}",
+  "@errorLoadingBookingsSnapshoterror": {
+    "description": "Localization key for: Error loading bookings: {error}"
+  },
+  "openingCustomerPortal": "[TR] Opening customer portal... (Turkish)",
+  "@openingCustomerPortal": {
+    "description": "Localization key for: Opening customer portal..."
+  },
+  "signOut": "[TR] Sign Out (Turkish)",
+  "@signOut": {
+    "description": "Localization key for: Sign Out"
+  },
+  "nameProfilename": "[TR] Name: {name} (Turkish)",
+  "@nameProfilename": {
+    "description": "Localization key for: Name: {name}"
+  },
+  "businessProfileEntryScreenComingSoon": "شاشة إدخال الملف التجاري - قريباً",
+  "@businessProfileEntryScreenComingSoon": {
+    "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
+  },
+  "upgradeToBusiness": "[TR] Upgrade to Business (Turkish)",
+  "@upgradeToBusiness": {
+    "description": "Localization key for: Upgrade to Business"
+  },
+  "apply": "تطبيق",
+  "@apply": {
+    "description": "Localization key for: Apply"
+  },
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
+  "@errorLoadingSubscriptionError": {
+    "description": "Localization key for: Error loading subscription: $error"
+  },
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
+  "@errorLoadingUsers": {
+    "description": "errorLoadingUsers description"
+  },
+  "verify": "التحقق",
+  "@verify": {
+    "description": "Localization key for: Verify"
+  },
+  "subscription": "الاشتراك",
+  "@subscription": {
+    "description": "Localization key for: Subscription"
+  },
+  "deleteMyAccount": "حذف حسابي",
+  "@deleteMyAccount": {
+    "description": "Localization key for: Delete My Account"
+  },
+  "businessAppointmentsEntryScreenComingSoon": "شاشة إدخال مواعيد الأعمال - قريباً",
+  "@businessAppointmentsEntryScreenComingSoon": {
+    "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
+  },
+  "viewResponses": "[TR] View Responses (Turkish)",
+  "@viewResponses": {
+    "description": "Localization key for: View Responses"
+  },
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
+  "@businessWelcomeScreenComingSoon": {
+    "description": "Localization key for: Business Welcome Screen - Coming Soon"
+  },
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
+  "@failedToOpenCustomerPortalE": {
+    "description": "Localization key for: Failed to open customer portal: $e"
+  },
+  "continueText": "متابعة",
+  "@continueText": {
+    "description": "Localization key for: Continue"
+  },
+  "close1": "إغلاق",
+  "@close1": {
+    "description": "Localization key for: Close"
+  },
+  "confirm1": "تأكيد",
+  "@confirm1": {
+    "description": "Localization key for: Confirm"
+  },
+  "externalMeetings": "الاجتماعات الخارجية",
+  "@externalMeetings": {
+    "description": "Localization key for: External Meetings"
+  },
+  "approve": "موافقة",
+  "@approve": {
+    "description": "Localization key for: Approve"
+  },
+  "noInvoicesFoundCreateYourFirstInvoice": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
+  "@noInvoicesFoundCreateYourFirstInvoice": {
+    "description": "Localization key for: No invoices found. Create your first invoice!"
+  },
+  "subscribe": "اشتراك",
+  "@subscribe": {
+    "description": "Localization key for: Subscribe"
+  },
+  "login1": "تسجيل الدخول",
+  "@login1": {
+    "description": "Localization key for: Login"
+  },
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
+  "@adminOverviewGoesHere": {
+    "description": "Localization key for: Admin overview goes here"
+  },
+  "loadingCheckout": "جار تحميل الدفع...",
+  "@loadingCheckout": {
+    "description": "Localization key for: Loading checkout..."
+  },
+  "ad_pre_title": "Watch an ad to confirm your appointment",
+  "@ad_pre_title": {
+    "description": "Ad flow string: ad_pre_title"
+  },
+  "ad_pre_description": "As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.",
+  "@ad_pre_description": {
+    "description": "Ad flow string: ad_pre_description"
+  },
+  "watch_ad_button": "Watch Ad",
+  "@watch_ad_button": {
+    "description": "Ad flow string: watch_ad_button"
+  },
+  "upgrade_button": "Upgrade to Premium (€4)",
+  "@upgrade_button": {
+    "description": "Ad flow string: upgrade_button"
+  },
+  "ad_post_title": "Ad finished! You may now confirm your appointment.",
+  "@ad_post_title": {
+    "description": "Ad flow string: ad_post_title"
+  },
+  "confirm_appointment_button": "Confirm Appointment",
+  "@confirm_appointment_button": {
+    "description": "Ad flow string: confirm_appointment_button"
+  },
+  "upgrade_prompt_title": "One-time upgrade",
+  "@upgrade_prompt_title": {
+    "description": "Ad flow string: upgrade_prompt_title"
+  },
+  "upgrade_prompt_description": "Pay €4 to remove all ads forever",
+  "@upgrade_prompt_description": {
+    "description": "Ad flow string: upgrade_prompt_description"
+  },
+  "purchase_now_button": "Purchase Now",
+  "@purchase_now_button": {
+    "description": "Ad flow string: purchase_now_button"
+  },
+  "ambassadorPromotionTitle": "[TR] Congratulations! You're now an Ambassador! (Turkish)",
+  "@ambassadorPromotionTitle": {
+    "description": "Title for ambassador promotion notification"
+  },
+  "ambassadorPromotionBody": "[TR] Welcome to the {tier} tier! Start sharing your referral link to earn rewards. (Turkish)",
+  "@ambassadorPromotionBody": {
+    "description": "Body text for ambassador promotion notification",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "tierUpgradeTitle": "[TR] Tier Upgrade! 🎉 (Turkish)",
+  "@tierUpgradeTitle": {
+    "description": "Title for tier upgrade notification"
+  },
+  "tierUpgradeBody": "[TR] Amazing! You've been upgraded from {previousTier} to {newTier} with {totalReferrals} referrals! (Turkish)",
+  "@tierUpgradeBody": {
+    "description": "Body text for tier upgrade notification",
+    "placeholders": {
+      "previousTier": {
+        "type": "String"
+      },
+      "newTier": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  },
+  "monthlyReminderTitle": "[TR] Monthly Goal Reminder (Turkish)",
+  "@monthlyReminderTitle": {
+    "description": "Title for monthly performance reminder notification"
+  },
+  "monthlyReminderBody": "[TR] You have {currentReferrals}/{targetReferrals} referrals this month. {daysRemaining} days left to reach your goal! (Turkish)",
+  "@monthlyReminderBody": {
+    "description": "Body text for monthly reminder notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "targetReferrals": {
+        "type": "String"
+      },
+      "daysRemaining": {
+        "type": "String"
+      }
+    }
+  },
+  "performanceWarningTitle": "[TR] Ambassador Performance Alert (Turkish)",
+  "@performanceWarningTitle": {
+    "description": "Title for performance warning notification"
+  },
+  "performanceWarningBody": "[TR] Your monthly referrals ({currentReferrals}) are below the minimum requirement ({minimumRequired}). Your ambassador status may be affected. (Turkish)",
+  "@performanceWarningBody": {
+    "description": "Body text for performance warning notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "minimumRequired": {
+        "type": "String"
+      }
+    }
+  },
+  "ambassadorDemotionTitle": "[TR] Ambassador Status Update (Turkish)",
+  "@ambassadorDemotionTitle": {
+    "description": "Title for ambassador demotion notification"
+  },
+  "ambassadorDemotionBody": "[TR] Your ambassador status has been temporarily suspended due to: {reason}. You can regain your status by meeting the requirements again. (Turkish)",
+  "@ambassadorDemotionBody": {
+    "description": "Body text for ambassador demotion notification",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "referralSuccessTitle": "[TR] New Referral! 🎉 (Turkish)",
+  "@referralSuccessTitle": {
+    "description": "Title for successful referral notification"
+  },
+  "referralSuccessBody": "[TR] {referredUserName} joined through your referral! You now have {totalReferrals} total referrals. (Turkish)",
+  "@referralSuccessBody": {
+    "description": "Body text for successful referral notification",
+    "placeholders": {
+      "referredUserName": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  }
+}

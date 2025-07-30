@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sign-In Test</title>
+    
+    <!-- Google Identity Services SDK -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    
+    <!-- Required meta tags for Google Sign-In -->
+    <meta name="google-signin-client_id" content="944776470711-7hlbv8tlpq9dju8967pg88v6as328ca6.apps.googleusercontent.com">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .success { background-color: #d4edda; color: #155724; }
+        .error { background-color: #f8d7da; color: #721c24; }
+        .info { background-color: #d1ecf1; color: #0c5460; }
+    </style>
+</head>
+<body>
+    <h1>Google Sign-In GIS Test</h1>
+    
+    <div id="status" class="status info">
+        Testing Google Identity Services SDK...
+    </div>
+    
+    <div id="g_id_onload"
+         data-client_id="944776470711-7hlbv8tlpq9dju8967pg88v6as328ca6.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse"
+         data-auto_prompt="false">
+    </div>
+
+    <div class="g_id_signin"
+         data-type="standard"
+         data-size="large"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+    </div>
+    
+    <div id="result"></div>
+
+    <script>
+        function updateStatus(message, type = 'info') {
+            const statusDiv = document.getElementById('status');
+            statusDiv.textContent = message;
+            statusDiv.className = `status ${type}`;
+        }
+
+        function handleCredentialResponse(response) {
+            console.log("Encoded JWT ID token: " + response.credential);
+            
+            // Decode the JWT token to get user info
+            const payload = JSON.parse(atob(response.credential.split('.')[1]));
+            
+            document.getElementById('result').innerHTML = `
+                <h3>Sign-In Successful!</h3>
+                <p><strong>Name:</strong> ${payload.name}</p>
+                <p><strong>Email:</strong> ${payload.email}</p>
+                <p><strong>Picture:</strong> <img src="${payload.picture}" width="50" height="50" style="border-radius: 50%;"></p>
+            `;
+            
+            updateStatus('✅ Google Sign-In working correctly!', 'success');
+        }
+
+        // Check if GIS SDK is loaded
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                if (window.google && window.google.accounts) {
+                    updateStatus('✅ Google Identity Services SDK loaded successfully!', 'success');
+                } else {
+                    updateStatus('❌ Google Identity Services SDK not loaded', 'error');
+                }
+            }, 2000);
+        });
+    </script>
+</body>
+</html> 

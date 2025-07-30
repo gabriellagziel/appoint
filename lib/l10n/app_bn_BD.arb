@@ -1,0 +1,2979 @@
+{
+  "@@locale": "bn_BD",
+  "refresh": "রিফ্রেশ",
+  "@refresh": {
+    "description": "Description"
+  },
+  "home": "হোম",
+  "@home": {
+    "description": "Description"
+  },
+  "noSessionsYet": "[BN_BD] এখনও কোনও সেশন নেই",
+  "@noSessionsYet": {
+    "description": "Description"
+  },
+  "ok": "[BN_BD] ঠিক আছে",
+  "@ok": {
+    "description": "Description"
+  },
+  "playtimeLandingChooseMode": "[BN_BD] মোড নির্বাচন করুন",
+  "@playtimeLandingChooseMode": {
+    "description": "Description"
+  },
+  "signUp": "[BN_BD] সাইন আপ করুন",
+  "@signUp": {
+    "description": "Description"
+  },
+  "scheduleMessage": "[BN_BD] বার্তা নির্ধারণ করুন",
+  "@scheduleMessage": {
+    "description": "Description"
+  },
+  "decline": "প্রত্যাখ্যান",
+  "@decline": {
+    "description": "Description"
+  },
+  "adminBroadcast": "[BN_BD] Admin Broadcast",
+  "@adminBroadcast": {
+    "description": "Localization key for: Admin Broadcast"
+  },
+  "login": "লগইন",
+  "@login": {
+    "description": "Description"
+  },
+  "playtimeChooseFriends": "[BN_BD] বন্ধু নির্বাচন করুন",
+  "@playtimeChooseFriends": {
+    "description": "Description"
+  },
+  "noInvites": "[BN_BD] কোনও আমন্ত্রণ নেই",
+  "@noInvites": {
+    "description": "Description"
+  },
+  "playtimeChooseTime": "[BN_BD] সময় নির্বাচন করুন",
+  "@playtimeChooseTime": {
+    "description": "Description"
+  },
+  "success": "সফল",
+  "@success": {
+    "description": "Description"
+  },
+  "undo": "পূর্বাবস্থা",
+  "@undo": {
+    "description": "Description"
+  },
+  "opened": "[BN_BD] খোলা হয়েছে",
+  "@opened": {
+    "description": "opened description"
+  },
+  "createVirtualSession": "[BN_BD] ভার্চুয়াল সেশন তৈরি করুন",
+  "@createVirtualSession": {
+    "description": "Description"
+  },
+  "messageSentSuccessfully": "[BN_BD] বার্তাটি সফলভাবে পাঠানো হয়েছে",
+  "@messageSentSuccessfully": {
+    "description": "messageSentSuccessfully description"
+  },
+  "redo": "[BN_BD] পুনরায় করুন",
+  "@redo": {
+    "description": "Description"
+  },
+  "next": "পরবর্তী",
+  "@next": {
+    "description": "Description"
+  },
+  "search": "অনুসন্ধান",
+  "@search": {
+    "description": "Description"
+  },
+  "cancelInviteConfirmation": "[BN_BD] আমন্ত্রণ রদ নিশ্চিত করুন",
+  "@cancelInviteConfirmation": {
+    "description": "Description"
+  },
+  "created": "[BN_BD] তৈরি হয়েছে",
+  "@created": {
+    "description": "created description"
+  },
+  "revokeAccess": "[BN_BD] অ্যাক্সেস প্রত্যাহার করুন",
+  "@revokeAccess": {
+    "description": "Description"
+  },
+  "playtimeLiveScheduled": "[BN_BD] লাইভ সেশন নির্ধারিত হয়েছে",
+  "@playtimeLiveScheduled": {
+    "description": "Description"
+  },
+  "revokeAccessConfirmation": "[BN_BD] অ্যাক্সেস প্রত্যাহারের নিশ্চিতকরণ",
+  "@revokeAccessConfirmation": {
+    "description": "Description"
+  },
+  "download": "ডাউনলোড",
+  "@download": {
+    "description": "Description"
+  },
+  "password": "পাসওয়ার্ড",
+  "@password": {
+    "description": "Description"
+  },
+  "errorLoadingFamilyLinks": "[BN_BD] পারিবারিক লিঙ্ক লোড করতে ত্রুটি",
+  "@errorLoadingFamilyLinks": {
+    "description": "Description"
+  },
+  "cancel": "[BN_BD] বাতিল করুন",
+  "@cancel": {
+    "description": "cancel description"
+  },
+  "playtimeCreate": "[BN_BD] Playtime তৈরি করুন",
+  "@playtimeCreate": {
+    "description": "Description"
+  },
+  "failedToActionPrivacyRequest": "[BN_BD] গোপনীয়তা অনুরোধ সফল হয়নি",
+  "@failedToActionPrivacyRequest": {
+    "description": "failedToActionPrivacyRequest description"
+  },
+  "appTitle": "[BN_BD] অ্যাপ শিরোনাম",
+  "@appTitle": {
+    "description": "Description"
+  },
+  "accept": "[BN_BD] গ্রহণ করুন",
+  "@accept": {
+    "description": "Description"
+  },
+  "playtimeModeVirtual": "[BN_BD] ভার্চুয়াল মোড",
+  "@playtimeModeVirtual": {
+    "description": "Description"
+  },
+  "playtimeDescription": "[BN_BD] Playtime বর্ণনা",
+  "@playtimeDescription": {
+    "description": "Description"
+  },
+  "delete": "[BN_BD] মুছে দিন",
+  "@delete": {
+    "description": "Description"
+  },
+  "playtimeVirtualStarted": "[BN_BD] ভার্চুয়াল সেশন শুরু হয়েছে",
+  "@playtimeVirtualStarted": {
+    "description": "Description"
+  },
+  "createYourFirstGame": "[BN_BD] আপনার প্রথম গেম তৈরি করুন",
+  "@createYourFirstGame": {
+    "description": "Description"
+  },
+  "participants": "অংশগ্রহণকারী",
+  "@participants": {
+    "description": "Description"
+  },
+  "recipients": "প্রাপকেরা",
+  "@recipients": {
+    "description": "recipients description"
+  },
+  "noResults": "[BN_BD] কোনও ফলাফল নেই",
+  "@noResults": {
+    "description": "Description"
+  },
+  "yes": "হ্যাঁ",
+  "@yes": {
+    "description": "yes description"
+  },
+  "invite": "[BN_BD] আমন্ত্রণ করুন",
+  "@invite": {
+    "description": "Description"
+  },
+  "playtimeModeLive": "[BN_BD] লাইভ মোড",
+  "@playtimeModeLive": {
+    "description": "Description"
+  },
+  "done": "সম্পন্ন",
+  "@done": {
+    "description": "Description"
+  },
+  "defaultShareMessage": "[BN_BD] ডিফল্ট শেয়ার বার্তা",
+  "@defaultShareMessage": {
+    "description": "Description"
+  },
+  "no": "না",
+  "@no": {
+    "description": "Description"
+  },
+  "playtimeHub": "[BN_BD] Playtime হাব",
+  "@playtimeHub": {
+    "description": "Description"
+  },
+  "createLiveSession": "[BN_BD] লাইভ সেশন তৈরি করুন",
+  "@createLiveSession": {
+    "description": "Description"
+  },
+  "enableNotifications": "[BN_BD] নোটিফিকেশন সক্রিয় করুন",
+  "@enableNotifications": {
+    "description": "Description"
+  },
+  "invited": "আমন্ত্রিত",
+  "@invited": {
+    "description": "Description"
+  },
+  "content": "কন্টেন্ট",
+  "@content": {
+    "description": "content description"
+  },
+  "meetingSharedSuccessfully": "[BN_BD] মিটিং সফলভাবে শেয়ার করা হয়েছে",
+  "@meetingSharedSuccessfully": {
+    "description": "Description"
+  },
+  "welcomeToPlaytime": "[BN_BD] Playtime এ স্বাগতম",
+  "@welcomeToPlaytime": {
+    "description": "Description"
+  },
+  "viewAll": "[BN_BD] সব দেখুন",
+  "@viewAll": {
+    "description": "Description"
+  },
+  "playtimeVirtual": "[BN_BD] ভার্চুয়াল Playtime",
+  "@playtimeVirtual": {
+    "description": "Description"
+  },
+  "staffScreenTBD": "[BN_BD] কর্মী স্ক্রিন পরে নিশ্চিত করা হবে",
+  "@staffScreenTBD": {
+    "description": "Description"
+  },
+  "cut": "কাটুন",
+  "@cut": {
+    "description": "Description"
+  },
+  "inviteCancelledSuccessfully": "[BN_BD] আমন্ত্রণ সফলভাবে বাতিল করা হয়েছে",
+  "@inviteCancelledSuccessfully": {
+    "description": "Description"
+  },
+  "retry": "[BN_BD] আবার চেষ্টা করুন",
+  "@retry": {
+    "description": "Description"
+  },
+  "composeBroadcastMessage": "[BN_BD] ব্রডকাস্ট বার্তা তৈরি করুন",
+  "@composeBroadcastMessage": {
+    "description": "composeBroadcastMessage description"
+  },
+  "sendNow": "[BN_BD] এখন পাঠান",
+  "@sendNow": {
+    "description": "sendNow description"
+  },
+  "noGamesYet": "[BN_BD] এখনও কোনও গেম নেই",
+  "@noGamesYet": {
+    "description": "Description"
+  },
+  "select": "[BN_BD] চয়ন করুন",
+  "@select": {
+    "description": "Description"
+  },
+  "about": "সম্পর্কে",
+  "@about": {
+    "description": "About navigation label"
+  },
+  "choose": "[BN_BD] নির্বাচন করুন",
+  "@choose": {
+    "description": "Description"
+  },
+  "profile": "প্রোফাইল",
+  "@profile": {
+    "description": "Description"
+  },
+  "removeChild": "[BN_BD] শিশু অপসারণ করুন",
+  "@removeChild": {
+    "description": "Description"
+  },
+  "status": "অবস্থা",
+  "@status": {
+    "description": "status description"
+  },
+  "logout": "[BN_BD] প্রস্থান করুন",
+  "@logout": {
+    "description": "Description"
+  },
+  "paste": "[BN_BD] পেস্ট করুন",
+  "@paste": {
+    "description": "Description"
+  },
+  "welcome": "স্বাগতম",
+  "@welcome": {
+    "description": "Description"
+  },
+  "playtimeCreateSession": "[BN_BD] সেশন তৈরি করুন",
+  "@playtimeCreateSession": {
+    "description": "Description"
+  },
+  "familyMembers": "[BN_BD] পরিবারের সদস্যরা",
+  "@familyMembers": {
+    "description": "Description"
+  },
+  "upload": "[BN_BD] আপলোড করুন",
+  "@upload": {
+    "description": "Description"
+  },
+  "upcomingSessions": "[BN_BD] আসন্ন সেশন",
+  "@upcomingSessions": {
+    "description": "Description"
+  },
+  "confirm": "[BN_BD] নিশ্চিত করুন",
+  "@confirm": {
+    "description": "Description"
+  },
+  "playtimeLive": "[BN_BD] লাইভ Playtime",
+  "@playtimeLive": {
+    "description": "Description"
+  },
+  "errorLoadingInvites": "[BN_BD] আমন্ত্রণ লোড করতে ত্রুটি",
+  "@errorLoadingInvites": {
+    "description": "Description"
+  },
+  "targetingFilters": "[BN_BD] টার্গেটিং ফিল্টার",
+  "@targetingFilters": {
+    "description": "targetingFilters description"
+  },
+  "pickVideo": "[BN_BD] ভিডিও নির্বাচন করুন",
+  "@pickVideo": {
+    "description": "pickVideo description"
+  },
+  "playtimeGameDeleted": "[BN_BD] গেম মুছে ফেলা হয়েছে",
+  "@playtimeGameDeleted": {
+    "description": "Description"
+  },
+  "scheduleForLater": "[BN_BD] পরে শিডিউল করুন",
+  "@scheduleForLater": {
+    "description": "scheduleForLater description"
+  },
+  "accessRevokedSuccessfully": "[BN_BD] অ্যাক্সেস সফলভাবে প্রত্যাহার করা হয়েছে",
+  "@accessRevokedSuccessfully": {
+    "description": "Description"
+  },
+  "type": "পরামিতি",
+  "@type": {
+    "description": "type description"
+  },
+  "checkingPermissions": "[BN_BD] অনুমতি যাচাই করা হচ্ছে",
+  "@checkingPermissions": {
+    "description": "checkingPermissions description"
+  },
+  "copy": "[BN_BD] কপি করুন",
+  "@copy": {
+    "description": "Description"
+  },
+  "yesCancel": "[BN_BD] হ্যাঁ, বাতিল করুন",
+  "@yesCancel": {
+    "description": "Description"
+  },
+  "email": "ইমেল",
+  "@email": {
+    "description": "Description"
+  },
+  "shareOnWhatsApp": "[BN_BD] [BN_BD] Share on WhatsApp",
+  "@shareOnWhatsApp": {
+    "description": "Description"
+  },
+  "notificationSettings": "[BN_BD] নোটিফিকেশন সেটিংস",
+  "@notificationSettings": {
+    "description": "Description"
+  },
+  "myProfile": "[BN_BD] আমার প্রোফাইল",
+  "@myProfile": {
+    "description": "Description"
+  },
+  "revoke": "[BN_BD] প্রত্যাহার করুন",
+  "@revoke": {
+    "description": "Description"
+  },
+  "noBroadcastMessages": "[BN_BD] কোনও সম্প্রচার বার্তা নেই",
+  "@noBroadcastMessages": {
+    "description": "noBroadcastMessages description"
+  },
+  "requestType": "[BN_BD] অনুরোধের ধরন",
+  "@requestType": {
+    "description": "requestType description"
+  },
+  "notifications": "বিজ্ঞপ্তি",
+  "@notifications": {
+    "description": "Description"
+  },
+  "details": "বিবরণ",
+  "@details": {
+    "description": "details description"
+  },
+  "cancelInvite": "[BN_BD] আমন্ত্রণ বাতিল করুন",
+  "@cancelInvite": {
+    "description": "Description"
+  },
+  "createNew": "[BN_BD] নতুন তৈরি করুন",
+  "@createNew": {
+    "description": "Description"
+  },
+  "settings": "সেটিংস",
+  "@settings": {
+    "description": "Description"
+  },
+  "playtimeReject": "[BN_BD] Playtime প্রত্যাখ্যান করুন",
+  "@playtimeReject": {
+    "description": "Description"
+  },
+  "errorLoadingProfile": "[BN_BD] প্রোফাইল লোড করতে ত্রুটি",
+  "@errorLoadingProfile": {
+    "description": "Description"
+  },
+  "edit": "[BN_BD] সম্পাদনা করুন",
+  "@edit": {
+    "description": "Description"
+  },
+  "add": "[BN_BD] যোগ করুন",
+  "@add": {
+    "description": "Description"
+  },
+  "playtimeGameApproved": "[BN_BD] গেম অনুমোদিত হয়েছে",
+  "@playtimeGameApproved": {
+    "description": "Description"
+  },
+  "forgotPassword": "[BN_BD] পাসওয়ার্ড ভুলে গেছেন?",
+  "@forgotPassword": {
+    "description": "Description"
+  },
+  "familyDashboard": "[BN_BD] পরিবারের ড্যাশবোর্ড",
+  "@familyDashboard": {
+    "description": "Description"
+  },
+  "loading": "[BN_BD] লোড হচ্ছে",
+  "@loading": {
+    "description": "Description"
+  },
+  "quickActions": "[BN_BD] দ্রুত ক্রিয়াকলাপ",
+  "@quickActions": {
+    "description": "Description"
+  },
+  "playtimeTitle": "[BN_BD] Playtime শিরোনাম",
+  "@playtimeTitle": {
+    "description": "Description"
+  },
+  "otpResentSuccessfully": "[BN_BD] OTP সফলভাবে পুনরায় পাঠানো হয়েছে",
+  "@otpResentSuccessfully": {
+    "description": "Description"
+  },
+  "errorCheckingPermissions": "[BN_BD] অনুমতি যাচাই করতে ত্রুটি",
+  "@errorCheckingPermissions": {
+    "description": "errorCheckingPermissions description"
+  },
+  "clientScreenTBD": "[BN_BD] ক্লায়েন্ট স্ক্রিন পরে নিশ্চিত করা হবে",
+  "@clientScreenTBD": {
+    "description": "Description"
+  },
+  "fcmToken": "[BN_BD] FCM টোকেন",
+  "@fcmToken": {
+    "description": "Description"
+  },
+  "pickImage": "[BN_BD] ছবি নির্বাচন করুন",
+  "@pickImage": {
+    "description": "pickImage description"
+  },
+  "previous": "পূর্ববর্তী",
+  "@previous": {
+    "description": "Description"
+  },
+  "noProfileFound": "[BN_BD] কোনও প্রোফাইল পাওয়া যায়নি",
+  "@noProfileFound": {
+    "description": "Description"
+  },
+  "noFamilyMembersYet": "[BN_BD] পরিবারের কোনও সদস্য নেই",
+  "@noFamilyMembersYet": {
+    "description": "Description"
+  },
+  "mediaOptional": "[BN_BD] মিডিয়া (ঐচ্ছিক)",
+  "@mediaOptional": {
+    "description": "mediaOptional description"
+  },
+  "messageSavedSuccessfully": "[BN_BD] বার্তা সফলভাবে সংরক্ষণ করা হয়েছে",
+  "@messageSavedSuccessfully": {
+    "description": "messageSavedSuccessfully description"
+  },
+  "scheduledFor": "নির্ধারিত",
+  "@scheduledFor": {
+    "description": "Description"
+  },
+  "dashboard": "ড্যাশবোর্ড",
+  "@dashboard": {
+    "description": "Description"
+  },
+  "noPermissionForBroadcast": "[BN_BD] সম্প্রচারের অনুমতি নেই",
+  "@noPermissionForBroadcast": {
+    "description": "noPermissionForBroadcast description"
+  },
+  "playtimeAdminPanelTitle": "[BN_BD] Playtime Games – Admin",
+  "@playtimeAdminPanelTitle": {
+    "description": "Localization key for: Playtime Games – Admin"
+  },
+  "inviteDetail": "[BN_BD] আমন্ত্রণের বিস্তারিত",
+  "@inviteDetail": {
+    "description": "Description"
+  },
+  "scheduled": "নির্ধারিত",
+  "@scheduled": {
+    "description": "scheduled description"
+  },
+  "failedToResendOtp": "[BN_BD] OTP পুনরায় পাঠানো যায়নি",
+  "@failedToResendOtp": {
+    "description": "Description"
+  },
+  "scheduling": "[BN_BD] নির্ধারণ করা হচ্ছে",
+  "@scheduling": {
+    "description": "scheduling description"
+  },
+  "errorSavingMessage": "[BN_BD] বার্তা সংরক্ষণ করতে ত্রুটি",
+  "@errorSavingMessage": {
+    "description": "errorSavingMessage description"
+  },
+  "save": "[BN_BD] সংরক্ষণ করুন",
+  "@save": {
+    "description": "save description"
+  },
+  "playtimeApprove": "[BN_BD] Playtime অনুমোদন করুন",
+  "@playtimeApprove": {
+    "description": "Description"
+  },
+  "createYourFirstSession": "[BN_BD] আপনার প্রথম সেশন তৈরি করুন",
+  "@createYourFirstSession": {
+    "description": "Description"
+  },
+  "playtimeGameRejected": "[BN_BD] গেম প্রত্যাখ্যান করা হয়েছে",
+  "@playtimeGameRejected": {
+    "description": "Description"
+  },
+  "failedToRevokeAccess": "[BN_BD] [BN_BD] Failed to revoke access",
+  "@failedToRevokeAccess": {
+    "description": "Description"
+  },
+  "recentGames": "[BN_BD] সাম্প্রতিক গেম",
+  "@recentGames": {
+    "description": "Description"
+  },
+  "customizeMessage": "[BN_BD] বার্তা কাস্টমাইজ করুন",
+  "@customizeMessage": {
+    "description": "Description"
+  },
+  "failedToCancelInvite": "[BN_BD] আমন্ত্রণ বাতিল করা যায়নি",
+  "@failedToCancelInvite": {
+    "description": "Description"
+  },
+  "errorSendingMessage": "[BN_BD] বার্তা পাঠাতে ত্রুটি",
+  "@errorSendingMessage": {
+    "description": "errorSendingMessage description"
+  },
+  "confirmPassword": "[BN_BD] পাসওয়ার্ড নিশ্চিত করুন",
+  "@confirmPassword": {
+    "description": "Description"
+  },
+  "errorLoadingPrivacyRequests": "[BN_BD] গোপনীয়তা অনুরোধ লোড করতে ত্রুটি",
+  "@errorLoadingPrivacyRequests": {
+    "description": "errorLoadingPrivacyRequests description"
+  },
+  "connectedChildren": "[BN_BD] সংযুক্ত শিশু",
+  "@connectedChildren": {
+    "description": "Description"
+  },
+  "share": "[BN_BD] শেয়ার করুন",
+  "@share": {
+    "description": "Description"
+  },
+  "playtimeEnterGameName": "[BN_BD] গেমের নাম লিখুন",
+  "@playtimeEnterGameName": {
+    "description": "Description"
+  },
+  "pleaseLoginForFamilyFeatures": "[BN_BD] [BN_BD] Please login to access family features",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Description"
+  },
+  "myInvites": "[BN_BD] [BN_BD] My Invites",
+  "@myInvites": {
+    "description": "Description"
+  },
+  "createGame": "[BN_BD] [BN_BD] Create Game",
+  "@createGame": {
+    "description": "Description"
+  },
+  "playtimeNoSessions": "[BN_BD] [BN_BD] No playtime sessions found.",
+  "@playtimeNoSessions": {
+    "description": "Description"
+  },
+  "adminScreenTBD": "[BN_BD] Admin screen coming soon",
+  "@adminScreenTBD": {
+    "description": "Localization key for: Admin screen coming soon"
+  },
+  "playtimeParentDashboardTitle": "[BN_BD] [BN_BD] Playtime Dashboard",
+  "@playtimeParentDashboardTitle": {
+    "description": "Description"
+  },
+  "close": "[BN_BD] [BN_BD] Close",
+  "@close": {
+    "description": "close description"
+  },
+  "back": "[BN_BD] [BN_BD] Back",
+  "@back": {
+    "description": "Description"
+  },
+  "playtimeChooseGame": "[BN_BD] [BN_BD] Choose a game",
+  "@playtimeChooseGame": {
+    "description": "Description"
+  },
+  "managePermissions": "[BN_BD] [BN_BD] Manage Permissions",
+  "@managePermissions": {
+    "description": "Description"
+  },
+  "pollOptions": "[BN_BD] [BN_BD] Poll Options",
+  "@pollOptions": {
+    "description": "pollOptions description"
+  },
+  "clicked": "[BN_BD] [BN_BD] Clicked",
+  "@clicked": {
+    "description": "clicked description"
+  },
+  "link": "[BN_BD] [BN_BD] Link",
+  "@link": {
+    "description": "link description"
+  },
+  "meetingReadyMessage": "[BN_BD] [BN_BD] Your meeting is ready! Join now",
+  "@meetingReadyMessage": {
+    "description": "Description"
+  },
+  "pendingInvites": "[BN_BD] [BN_BD] Pending Invites",
+  "@pendingInvites": {
+    "description": "Description"
+  },
+  "statusColon": "[BN_BD] [BN_BD] Status:",
+  "@statusColon": {
+    "description": "statusColon description"
+  },
+  "pleaseLoginToViewProfile": "[BN_BD] প্রোফাইল দেখতে অনুগ্রহ করে লগইন করুন",
+  "@pleaseLoginToViewProfile": {
+    "description": "Description"
+  },
+  "adminMetrics": "[BN_BD] Admin Metrics",
+  "@adminMetrics": {
+    "description": "Localization key for: Admin Metrics"
+  },
+  "overview": "[BN_BD] Overview",
+  "@overview": {
+    "description": "Description"
+  },
+  "bookings": "[BN_BD] Bookings",
+  "@bookings": {
+    "description": "Description"
+  },
+  "users": "[BN_BD] users (TRANSLATE)",
+  "@users": {
+    "description": "users description"
+  },
+  "revenue": "[BN_BD] revenue (TRANSLATE)",
+  "@revenue": {
+    "description": "revenue description"
+  },
+  "contentLibrary": "[BN_BD] Content Library",
+  "@contentLibrary": {
+    "description": "Localization key for: Content Library"
+  },
+  "authErrorUserNotFound": "[BN_BD] No account found with this email address.",
+  "@authErrorUserNotFound": {
+    "description": "Localization key for: No account found with this email address."
+  },
+  "authErrorWrongPassword": "[BN_BD] Incorrect password. Please try again.",
+  "@authErrorWrongPassword": {
+    "description": "Localization key for: Incorrect password. Please try again."
+  },
+  "authErrorInvalidEmail": "[BN_BD] Please enter a valid email address.",
+  "@authErrorInvalidEmail": {
+    "description": "Localization key for: Please enter a valid email address."
+  },
+  "authErrorUserDisabled": "[BN_BD] This account has been disabled. Please contact support.",
+  "@authErrorUserDisabled": {
+    "description": "Localization key for: This account has been disabled. Please contact support."
+  },
+  "authErrorWeakPassword": "[BN_BD] Password is too weak. Please choose a stronger password.",
+  "@authErrorWeakPassword": {
+    "description": "Localization key for: Password is too weak. Please choose a stronger password."
+  },
+  "authErrorEmailAlreadyInUse": "[BN_BD] An account with this email already exists.",
+  "@authErrorEmailAlreadyInUse": {
+    "description": "Localization key for: An account with this email already exists."
+  },
+  "authErrorTooManyRequests": "[BN_BD] Too many failed attempts. Please try again later.",
+  "@authErrorTooManyRequests": {
+    "description": "Localization key for: Too many failed attempts. Please try again later."
+  },
+  "authErrorOperationNotAllowed": "[BN_BD] This sign-in method is not enabled. Please contact support.",
+  "@authErrorOperationNotAllowed": {
+    "description": "Localization key for: This sign-in method is not enabled. Please contact support."
+  },
+  "authErrorInvalidCredential": "[BN_BD] Invalid credentials. Please try again.",
+  "@authErrorInvalidCredential": {
+    "description": "Localization key for: Invalid credentials. Please try again."
+  },
+  "authErrorAccountExistsWithDifferentCredential": "[BN_BD] An account already exists with this email using a different sign-in method.",
+  "@authErrorAccountExistsWithDifferentCredential": {
+    "description": "Localization key for: An account already exists with this email using a different sign-in method."
+  },
+  "authErrorCredentialAlreadyInUse": "[BN_BD] These credentials are already associated with another account.",
+  "@authErrorCredentialAlreadyInUse": {
+    "description": "Localization key for: These credentials are already associated with another account."
+  },
+  "authErrorNetworkRequestFailed": "[BN_BD] Network error. Please check your connection and try again.",
+  "@authErrorNetworkRequestFailed": {
+    "description": "Localization key for: Network error. Please check your connection and try again."
+  },
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
+  "@socialAccountConflictTitle": {
+    "description": "Localization key for: Account Already Exists"
+  },
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
+  "@socialAccountConflictMessage": {
+    "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
+  },
+  "linkAccounts": "ربط الحسابات",
+  "@linkAccounts": {
+    "description": "Localization key for: Link Accounts"
+  },
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
+  "@signInWithExistingMethod": {
+    "description": "Localization key for: Sign in with existing method"
+  },
+  "authErrorRequiresRecentLogin": "[BN_BD] Please log in again to perform this operation.",
+  "@authErrorRequiresRecentLogin": {
+    "description": "Localization key for: Please log in again to perform this operation."
+  },
+  "authErrorAppNotAuthorized": "[BN_BD] This app is not authorized to use Firebase Authentication.",
+  "@authErrorAppNotAuthorized": {
+    "description": "Localization key for: This app is not authorized to use Firebase Authentication."
+  },
+  "authErrorInvalidVerificationCode": "[BN_BD] The verification code is invalid.",
+  "@authErrorInvalidVerificationCode": {
+    "description": "Localization key for: The verification code is invalid."
+  },
+  "authErrorInvalidVerificationId": "[BN_BD] The verification ID is invalid.",
+  "@authErrorInvalidVerificationId": {
+    "description": "Localization key for: The verification ID is invalid."
+  },
+  "authErrorMissingVerificationCode": "[BN_BD] Please enter the verification code.",
+  "@authErrorMissingVerificationCode": {
+    "description": "Localization key for: Please enter the verification code."
+  },
+  "authErrorMissingVerificationId": "[BN_BD] Missing verification ID.",
+  "@authErrorMissingVerificationId": {
+    "description": "Localization key for: Missing verification ID."
+  },
+  "authErrorInvalidPhoneNumber": "[BN_BD] The phone number is invalid.",
+  "@authErrorInvalidPhoneNumber": {
+    "description": "Localization key for: The phone number is invalid."
+  },
+  "authErrorMissingPhoneNumber": "[BN_BD] Please enter a phone number.",
+  "@authErrorMissingPhoneNumber": {
+    "description": "Localization key for: Please enter a phone number."
+  },
+  "authErrorQuotaExceeded": "[BN_BD] The SMS quota for this project has been exceeded. Please try again later.",
+  "@authErrorQuotaExceeded": {
+    "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
+  },
+  "authErrorCodeExpired": "[BN_BD] The verification code has expired. Please request a new one.",
+  "@authErrorCodeExpired": {
+    "description": "Localization key for: The verification code has expired. Please request a new one."
+  },
+  "authErrorSessionExpired": "[BN_BD] Your session has expired. Please log in again.",
+  "@authErrorSessionExpired": {
+    "description": "Localization key for: Your session has expired. Please log in again."
+  },
+  "authErrorMultiFactorAuthRequired": "[BN_BD] Multi-factor authentication is required.",
+  "@authErrorMultiFactorAuthRequired": {
+    "description": "Localization key for: Multi-factor authentication is required."
+  },
+  "authErrorMultiFactorInfoNotFound": "[BN_BD] Multi-factor information not found.",
+  "@authErrorMultiFactorInfoNotFound": {
+    "description": "Localization key for: Multi-factor information not found."
+  },
+  "authErrorMissingMultiFactorSession": "[BN_BD] Missing multi-factor session.",
+  "@authErrorMissingMultiFactorSession": {
+    "description": "Localization key for: Missing multi-factor session."
+  },
+  "authErrorInvalidMultiFactorSession": "[BN_BD] Invalid multi-factor session.",
+  "@authErrorInvalidMultiFactorSession": {
+    "description": "Localization key for: Invalid multi-factor session."
+  },
+  "authErrorSecondFactorAlreadyInUse": "[BN_BD] This second factor is already in use.",
+  "@authErrorSecondFactorAlreadyInUse": {
+    "description": "Localization key for: This second factor is already in use."
+  },
+  "authErrorMaximumSecondFactorCountExceeded": "[BN_BD] Maximum number of second factors exceeded.",
+  "@authErrorMaximumSecondFactorCountExceeded": {
+    "description": "Localization key for: Maximum number of second factors exceeded."
+  },
+  "authErrorUnsupportedFirstFactor": "[BN_BD] Unsupported first factor for multi-factor authentication.",
+  "@authErrorUnsupportedFirstFactor": {
+    "description": "Localization key for: Unsupported first factor for multi-factor authentication."
+  },
+  "authErrorEmailChangeNeedsVerification": "[BN_BD] Email change requires verification.",
+  "@authErrorEmailChangeNeedsVerification": {
+    "description": "Localization key for: Email change requires verification."
+  },
+  "authErrorPhoneNumberAlreadyExists": "[BN_BD] This phone number is already in use.",
+  "@authErrorPhoneNumberAlreadyExists": {
+    "description": "Localization key for: This phone number is already in use."
+  },
+  "authErrorInvalidPassword": "[BN_BD] The password is invalid or too weak.",
+  "@authErrorInvalidPassword": {
+    "description": "Localization key for: The password is invalid or too weak."
+  },
+  "authErrorInvalidIdToken": "[BN_BD] The ID token is invalid.",
+  "@authErrorInvalidIdToken": {
+    "description": "Localization key for: The ID token is invalid."
+  },
+  "authErrorIdTokenExpired": "[BN_BD] The ID token has expired.",
+  "@authErrorIdTokenExpired": {
+    "description": "Localization key for: The ID token has expired."
+  },
+  "authErrorIdTokenRevoked": "[BN_BD] The ID token has been revoked.",
+  "@authErrorIdTokenRevoked": {
+    "description": "Localization key for: The ID token has been revoked."
+  },
+  "authErrorInternalError": "[BN_BD] An internal error occurred. Please try again.",
+  "@authErrorInternalError": {
+    "description": "Localization key for: An internal error occurred. Please try again."
+  },
+  "authErrorInvalidArgument": "[BN_BD] An invalid argument was provided.",
+  "@authErrorInvalidArgument": {
+    "description": "Localization key for: An invalid argument was provided."
+  },
+  "authErrorInvalidClaims": "[BN_BD] Invalid custom claims provided.",
+  "@authErrorInvalidClaims": {
+    "description": "Localization key for: Invalid custom claims provided."
+  },
+  "authErrorInvalidContinueUri": "[BN_BD] The continue URL is invalid.",
+  "@authErrorInvalidContinueUri": {
+    "description": "Localization key for: The continue URL is invalid."
+  },
+  "authErrorInvalidCreationTime": "[BN_BD] The creation time is invalid.",
+  "@authErrorInvalidCreationTime": {
+    "description": "Localization key for: The creation time is invalid."
+  },
+  "authErrorInvalidDisabledField": "[BN_BD] The disabled field value is invalid.",
+  "@authErrorInvalidDisabledField": {
+    "description": "Localization key for: The disabled field value is invalid."
+  },
+  "authErrorInvalidDisplayName": "[BN_BD] The display name is invalid.",
+  "@authErrorInvalidDisplayName": {
+    "description": "Localization key for: The display name is invalid."
+  },
+  "authErrorInvalidDynamicLinkDomain": "[BN_BD] The dynamic link domain is invalid.",
+  "@authErrorInvalidDynamicLinkDomain": {
+    "description": "Localization key for: The dynamic link domain is invalid."
+  },
+  "authErrorInvalidEmailVerified": "[BN_BD] The email verified value is invalid.",
+  "@authErrorInvalidEmailVerified": {
+    "description": "Localization key for: The email verified value is invalid."
+  },
+  "authErrorInvalidHashAlgorithm": "[BN_BD] The hash algorithm is invalid.",
+  "@authErrorInvalidHashAlgorithm": {
+    "description": "Localization key for: The hash algorithm is invalid."
+  },
+  "authErrorInvalidHashBlockSize": "[BN_BD] The hash block size is invalid.",
+  "@authErrorInvalidHashBlockSize": {
+    "description": "Localization key for: The hash block size is invalid."
+  },
+  "authErrorInvalidHashDerivedKeyLength": "[BN_BD] The hash derived key length is invalid.",
+  "@authErrorInvalidHashDerivedKeyLength": {
+    "description": "Localization key for: The hash derived key length is invalid."
+  },
+  "authErrorInvalidHashKey": "[BN_BD] The hash key is invalid.",
+  "@authErrorInvalidHashKey": {
+    "description": "Localization key for: The hash key is invalid."
+  },
+  "authErrorInvalidHashMemoryCost": "[BN_BD] The hash memory cost is invalid.",
+  "@authErrorInvalidHashMemoryCost": {
+    "description": "Localization key for: The hash memory cost is invalid."
+  },
+  "authErrorInvalidHashParallelization": "[BN_BD] The hash parallelization is invalid.",
+  "@authErrorInvalidHashParallelization": {
+    "description": "Localization key for: The hash parallelization is invalid."
+  },
+  "authErrorInvalidHashRounds": "[BN_BD] The hash rounds value is invalid.",
+  "@authErrorInvalidHashRounds": {
+    "description": "Localization key for: The hash rounds value is invalid."
+  },
+  "authErrorInvalidHashSaltSeparator": "[BN_BD] The hash salt separator is invalid.",
+  "@authErrorInvalidHashSaltSeparator": {
+    "description": "Localization key for: The hash salt separator is invalid."
+  },
+  "authErrorInvalidLastSignInTime": "[BN_BD] The last sign-in time is invalid.",
+  "@authErrorInvalidLastSignInTime": {
+    "description": "Localization key for: The last sign-in time is invalid."
+  },
+  "authErrorInvalidPageToken": "[BN_BD] The page token is invalid.",
+  "@authErrorInvalidPageToken": {
+    "description": "Localization key for: The page token is invalid."
+  },
+  "authErrorInvalidProviderData": "[BN_BD] The provider data is invalid.",
+  "@authErrorInvalidProviderData": {
+    "description": "Localization key for: The provider data is invalid."
+  },
+  "authErrorInvalidProviderId": "[BN_BD] The provider ID is invalid.",
+  "@authErrorInvalidProviderId": {
+    "description": "Localization key for: The provider ID is invalid."
+  },
+  "authErrorInvalidSessionCookieDuration": "[BN_BD] The session cookie duration is invalid.",
+  "@authErrorInvalidSessionCookieDuration": {
+    "description": "Localization key for: The session cookie duration is invalid."
+  },
+  "authErrorInvalidUid": "[BN_BD] The UID is invalid.",
+  "@authErrorInvalidUid": {
+    "description": "Localization key for: The UID is invalid."
+  },
+  "authErrorInvalidUserImport": "[BN_BD] The user import record is invalid.",
+  "@authErrorInvalidUserImport": {
+    "description": "Localization key for: The user import record is invalid."
+  },
+  "authErrorMaximumUserCountExceeded": "[BN_BD] Maximum user import count exceeded.",
+  "@authErrorMaximumUserCountExceeded": {
+    "description": "Localization key for: Maximum user import count exceeded."
+  },
+  "authErrorMissingAndroidPkgName": "[BN_BD] Missing Android package name.",
+  "@authErrorMissingAndroidPkgName": {
+    "description": "Localization key for: Missing Android package name."
+  },
+  "authErrorMissingContinueUri": "[BN_BD] Missing continue URL.",
+  "@authErrorMissingContinueUri": {
+    "description": "Localization key for: Missing continue URL."
+  },
+  "authErrorMissingHashAlgorithm": "[BN_BD] Missing hash algorithm.",
+  "@authErrorMissingHashAlgorithm": {
+    "description": "Localization key for: Missing hash algorithm."
+  },
+  "authErrorMissingIosBundleId": "[BN_BD] Missing iOS bundle ID.",
+  "@authErrorMissingIosBundleId": {
+    "description": "Localization key for: Missing iOS bundle ID."
+  },
+  "authErrorMissingUid": "[BN_BD] Missing UID.",
+  "@authErrorMissingUid": {
+    "description": "Localization key for: Missing UID."
+  },
+  "authErrorMissingOauthClientSecret": "[BN_BD] Missing OAuth client secret.",
+  "@authErrorMissingOauthClientSecret": {
+    "description": "Localization key for: Missing OAuth client secret."
+  },
+  "authErrorProjectNotFound": "[BN_BD] Firebase project not found.",
+  "@authErrorProjectNotFound": {
+    "description": "Localization key for: Firebase project not found."
+  },
+  "authErrorReservedClaims": "[BN_BD] Reserved claims provided.",
+  "@authErrorReservedClaims": {
+    "description": "Localization key for: Reserved claims provided."
+  },
+  "authErrorSessionCookieExpired": "[BN_BD] Session cookie has expired.",
+  "@authErrorSessionCookieExpired": {
+    "description": "Localization key for: Session cookie has expired."
+  },
+  "authErrorSessionCookieRevoked": "[BN_BD] Session cookie has been revoked.",
+  "@authErrorSessionCookieRevoked": {
+    "description": "Localization key for: Session cookie has been revoked."
+  },
+  "authErrorUidAlreadyExists": "[BN_BD] The UID is already in use.",
+  "@authErrorUidAlreadyExists": {
+    "description": "Localization key for: The UID is already in use."
+  },
+  "authErrorUnauthorizedContinueUri": "[BN_BD] The continue URL domain is not whitelisted.",
+  "@authErrorUnauthorizedContinueUri": {
+    "description": "Localization key for: The continue URL domain is not whitelisted."
+  },
+  "authErrorUnknown": "[BN_BD] An unknown authentication error occurred.",
+  "@authErrorUnknown": {
+    "description": "Localization key for: An unknown authentication error occurred."
+  },
+  "checkingPermissions1": "فحص الأذونات...",
+  "@checkingPermissions1": {
+    "description": "Localization key for: Checking permissions..."
+  },
+  "paymentSuccessful": "تم الدفع بنجاح",
+  "@paymentSuccessful": {
+    "description": "Localization key for: Payment Successful!"
+  },
+  "businessAvailability": "توفر الأعمال",
+  "@businessAvailability": {
+    "description": "Localization key for: Business Availability"
+  },
+  "send": "إرسال",
+  "@send": {
+    "description": "Localization key for: Send"
+  },
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
+  "@newNotificationPayloadtitle": {
+    "description": "Localization key for: New notification: {payloadTitle}"
+  },
+  "gameList": "قائمة الألعاب",
+  "@gameList": {
+    "description": "Localization key for: Game List"
+  },
+  "deleteAvailability": "حذف التوفر",
+  "@deleteAvailability": {
+    "description": "Localization key for: Delete Availability"
+  },
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
+  "@connectToGoogleCalendar": {
+    "description": "Localization key for: Connect to Google Calendar"
+  },
+  "adminFreeAccess": "[BN_BD] Admin Free Access",
+  "@adminFreeAccess": {
+    "description": "Localization key for: Admin Free Access"
+  },
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
+  "@emailProfileemail": {
+    "description": "Localization key for: Email: {profileEmail}"
+  },
+  "calendar": "التقويم",
+  "@calendar": {
+    "description": "Localization key for: Calendar"
+  },
+  "upload1": "[BN_BD] Upload (Bengali (Bangladesh))",
+  "@upload1": {
+    "description": "Localization key for: Upload"
+  },
+  "resolved": "تم الحل",
+  "@resolved": {
+    "description": "Localization key for: Resolved"
+  },
+  "keepSubscription": "الاحتفاظ بالاشتراك",
+  "@keepSubscription": {
+    "description": "Localization key for: Keep Subscription"
+  },
+  "virtualSessionCreatedInvitingFriends": "[BN_BD] Virtual session created! Inviting friends... (Bengali (Bangladesh))",
+  "@virtualSessionCreatedInvitingFriends": {
+    "description": "Localization key for: Virtual session created! Inviting friends..."
+  },
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
+  "@noEventsScheduledForToday": {
+    "description": "Localization key for: No events scheduled for today"
+  },
+  "exportData": "تصدير البيانات",
+  "@exportData": {
+    "description": "Localization key for: Export Data"
+  },
+  "rewards": "[BN_BD] Rewards (Bengali (Bangladesh))",
+  "@rewards": {
+    "description": "Localization key for: Rewards"
+  },
+  "time": "[BN_BD] Time (Bengali (Bangladesh))",
+  "@time": {
+    "description": "Localization key for: Time"
+  },
+  "userCid": "[BN_BD] User {id}",
+  "@userCid": {
+    "description": "Localization key for: User {id}"
+  },
+  "noSlots": "[BN_BD] No slots (Bengali (Bangladesh))",
+  "@noSlots": {
+    "description": "Localization key for: No slots"
+  },
+  "signIn": "[BN_BD] Sign In (Bengali (Bangladesh))",
+  "@signIn": {
+    "description": "Localization key for: Sign In"
+  },
+  "homeFeedScreen": "[BN_BD] Home Feed Screen (Bengali (Bangladesh))",
+  "@homeFeedScreen": {
+    "description": "Localization key for: Home Feed Screen"
+  },
+  "selectLocation": "[BN_BD] Select Location (Bengali (Bangladesh))",
+  "@selectLocation": {
+    "description": "Localization key for: Select Location"
+  },
+  "noTicketsYet": "[BN_BD] No tickets yet (Bengali (Bangladesh))",
+  "@noTicketsYet": {
+    "description": "Localization key for: No tickets yet"
+  },
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
+  "@meetingSharedSuccessfully1": {
+    "description": "Localization key for: Meeting shared successfully!"
+  },
+  "studioProfile": "ملف الاستوديو",
+  "@studioProfile": {
+    "description": "Localization key for: Studio Profile"
+  },
+  "subscriptionUnavailable": "[BN_BD] Subscription unavailable (Bengali (Bangladesh))",
+  "@subscriptionUnavailable": {
+    "description": "Localization key for: Subscription unavailable"
+  },
+  "confirmBooking": "[BN_BD] Confirm Booking (Bengali (Bangladesh))",
+  "@confirmBooking": {
+    "description": "Localization key for: Confirm Booking"
+  },
+  "failedToUpdatePermissionE": "[BN_BD] Failed to update permission: $e (Bengali (Bangladesh))",
+  "@failedToUpdatePermissionE": {
+    "description": "Localization key for: Failed to update permission: $e"
+  },
+  "reject": "[BN_BD] Reject (Bengali (Bangladesh))",
+  "@reject": {
+    "description": "Localization key for: Reject"
+  },
+  "ambassadorStatusAmbassadorstatus": "[BN_BD] Ambassador Status: {ambassadorStatus} (Bengali (Bangladesh))",
+  "@ambassadorStatusAmbassadorstatus": {
+    "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
+  },
+  "noProviders": "[BN_BD] No providers",
+  "@noProviders": {
+    "description": "Localization key for: No providers"
+  },
+  "checkingSubscription": "[BN_BD] Checking subscription... (Bengali (Bangladesh))",
+  "@checkingSubscription": {
+    "description": "Localization key for: Checking subscription..."
+  },
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
+  "@errorPickingImageE": {
+    "description": "Localization key for: Error picking image: $e"
+  },
+  "noContentAvailableYet": "[BN_BD] No content available yet (Bengali (Bangladesh))",
+  "@noContentAvailableYet": {
+    "description": "Localization key for: No content available yet"
+  },
+  "resolve": "[BN_BD] Resolve (Bengali (Bangladesh))",
+  "@resolve": {
+    "description": "Localization key for: Resolve"
+  },
+  "errorLoadingSurveysError": "[BN_BD] Error loading surveys: $error (Bengali (Bangladesh))",
+  "@errorLoadingSurveysError": {
+    "description": "Localization key for: Error loading surveys: $error"
+  },
+  "errorLogerrormessage": "[BN_BD] Error: {errorMessage}",
+  "@errorLogerrormessage": {
+    "description": "Localization key for: Error: {errorMessage}"
+  },
+  "getHelpWithYourAccount": "[BN_BD] Get help with your account (Bengali (Bangladesh))",
+  "@getHelpWithYourAccount": {
+    "description": "Localization key for: Get help with your account"
+  },
+  "pay": "[BN_BD] Pay (Bengali (Bangladesh))",
+  "@pay": {
+    "description": "Localization key for: Pay"
+  },
+  "noOrganizations": "[BN_BD] noOrganizations (TRANSLATE)",
+  "@noOrganizations": {
+    "description": "noOrganizations description"
+  },
+  "meetingDetails": "تفاصيل الاجتماع",
+  "@meetingDetails": {
+    "description": "meetingDetails description"
+  },
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
+  "@errorLoadingAppointments": {
+    "description": "Localization key for: Error loading appointments"
+  },
+  "changesSavedSuccessfully": "[BN_BD] Changes saved successfully! (Bengali (Bangladesh))",
+  "@changesSavedSuccessfully": {
+    "description": "Localization key for: Changes saved successfully!"
+  },
+  "createNewInvoice": "[BN_BD] Create New Invoice (Bengali (Bangladesh))",
+  "@createNewInvoice": {
+    "description": "Localization key for: Create New Invoice"
+  },
+  "profileNotFound": "الملف الشخصي غير موجود",
+  "@profileNotFound": {
+    "description": "Localization key for: Profile not found."
+  },
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
+  "@errorConfirmingPaymentE": {
+    "description": "Localization key for: Error confirming payment: $e"
+  },
+  "inviteFriends": "دعوة الأصدقاء",
+  "@inviteFriends": {
+    "description": "Localization key for: Invite Friends"
+  },
+  "profileSaved": "[BN_BD] Profile saved! (Bengali (Bangladesh))",
+  "@profileSaved": {
+    "description": "Localization key for: Profile saved!"
+  },
+  "receiveBookingNotificationsViaEmail": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
+  "@receiveBookingNotificationsViaEmail": {
+    "description": "Localization key for: Receive booking notifications via email"
+  },
+  "valuetointk": "[BN_BD] \\${value}K (Bengali (Bangladesh))",
+  "@valuetointk": {
+    "description": "Localization key for: \\${value}K"
+  },
+  "deleteAccount": "[BN_BD] Delete Account (Bengali (Bangladesh))",
+  "@deleteAccount": {
+    "description": "Localization key for: Delete Account"
+  },
+  "profile1": "الملف الشخصي",
+  "@profile1": {
+    "description": "Localization key for: Profile"
+  },
+  "businessOnboarding": "[BN_BD] Business Onboarding (Bengali (Bangladesh))",
+  "@businessOnboarding": {
+    "description": "Localization key for: Business Onboarding"
+  },
+  "addNewClient": "[BN_BD] Add New Client (Bengali (Bangladesh))",
+  "@addNewClient": {
+    "description": "Localization key for: Add New Client"
+  },
+  "darkMode": "[BN_BD] Dark Mode (Bengali (Bangladesh))",
+  "@darkMode": {
+    "description": "Localization key for: Dark Mode"
+  },
+  "addProvider": "[BN_BD] Add Provider",
+  "@addProvider": {
+    "description": "Localization key for: Add Provider"
+  },
+  "noRouteDefinedForStateuripath": "[BN_BD] No route defined for {path}",
+  "@noRouteDefinedForStateuripath": {
+    "description": "Localization key for: No route defined for {path}"
+  },
+  "youWillReceiveAConfirmationEmailShortly": "[BN_BD] You will receive a confirmation email shortly. (Bengali (Bangladesh))",
+  "@youWillReceiveAConfirmationEmailShortly": {
+    "description": "Localization key for: You will receive a confirmation email shortly."
+  },
+  "addQuestion": "[BN_BD] Add Question (Bengali (Bangladesh))",
+  "@addQuestion": {
+    "description": "Localization key for: Add Question"
+  },
+  "privacyPolicy": "[BN_BD] Privacy Policy (Bengali (Bangladesh))",
+  "@privacyPolicy": {
+    "description": "Localization key for: Privacy Policy"
+  },
+  "branchesLengthBranches": "[BN_BD] {branchCount} branches (Bengali (Bangladesh))",
+  "@branchesLengthBranches": {
+    "description": "Localization key for: {branchCount} branches"
+  },
+  "join": "[BN_BD] Join (Bengali (Bangladesh))",
+  "@join": {
+    "description": "Localization key for: Join"
+  },
+  "businessSubscription": "[BN_BD] Business Subscription (Bengali (Bangladesh))",
+  "@businessSubscription": {
+    "description": "Localization key for: Business Subscription"
+  },
+  "myInvites1": "دعواتي",
+  "@myInvites1": {
+    "description": "Localization key for: My Invites"
+  },
+  "providers": "[BN_BD] Providers",
+  "@providers": {
+    "description": "Localization key for: Providers"
+  },
+  "surveyManagement": "[BN_BD] Survey Management (Bengali (Bangladesh))",
+  "@surveyManagement": {
+    "description": "Localization key for: Survey Management"
+  },
+  "pleaseEnterAValidEmailOrPhone": "[BN_BD] Please enter a valid email or phone",
+  "@pleaseEnterAValidEmailOrPhone": {
+    "description": "Localization key for: Please enter a valid email or phone"
+  },
+  "noRoomsFoundAddYourFirstRoom": "[BN_BD] No rooms found. Add your first room! (Bengali (Bangladesh))",
+  "@noRoomsFoundAddYourFirstRoom": {
+    "description": "Localization key for: No rooms found. Add your first room!"
+  },
+  "readOurPrivacyPolicy": "[BN_BD] Read our privacy policy (Bengali (Bangladesh))",
+  "@readOurPrivacyPolicy": {
+    "description": "Localization key for: Read our privacy policy"
+  },
+  "couldNotOpenPrivacyPolicy": "[BN_BD] Could not open privacy policy (Bengali (Bangladesh))",
+  "@couldNotOpenPrivacyPolicy": {
+    "description": "Localization key for: Could not open privacy policy"
+  },
+  "refresh1": "[BN_BD] Refresh (Bengali (Bangladesh))",
+  "@refresh1": {
+    "description": "Localization key for: Refresh"
+  },
+  "roomUpdatedSuccessfully": "[BN_BD] Room updated successfully! (Bengali (Bangladesh))",
+  "@roomUpdatedSuccessfully": {
+    "description": "Localization key for: Room updated successfully!"
+  },
+  "contentDetail": "[BN_BD] Content Detail (Bengali (Bangladesh))",
+  "@contentDetail": {
+    "description": "Localization key for: Content Detail"
+  },
+  "cancelSubscription": "[BN_BD] Cancel Subscription (Bengali (Bangladesh))",
+  "@cancelSubscription": {
+    "description": "Localization key for: Cancel Subscription"
+  },
+  "successfullyRegisteredAsAmbassador": "[BN_BD] Successfully registered as Ambassador! (Bengali (Bangladesh))",
+  "@successfullyRegisteredAsAmbassador": {
+    "description": "Localization key for: Successfully registered as Ambassador!"
+  },
+  "save1": "[BN_BD] Save (Bengali (Bangladesh))",
+  "@save1": {
+    "description": "Localization key for: Save"
+  },
+  "copy1": "[BN_BD] Copy (Bengali (Bangladesh))",
+  "@copy1": {
+    "description": "Localization key for: Copy"
+  },
+  "failedToSendInvitationE": "[BN_BD] Failed to send invitation: $e (Bengali (Bangladesh))",
+  "@failedToSendInvitationE": {
+    "description": "Localization key for: Failed to send invitation: $e"
+  },
+  "surveyScore": "[BN_BD] Survey Score (Bengali (Bangladesh))",
+  "@surveyScore": {
+    "description": "Localization key for: Survey Score"
+  },
+  "userUserid": "[BN_BD] User $userId",
+  "@userUserid": {
+    "description": "Localization key for: User $userId"
+  },
+  "noAppointmentsFound": "[BN_BD] No appointments found. (Bengali (Bangladesh))",
+  "@noAppointmentsFound": {
+    "description": "Localization key for: No appointments found."
+  },
+  "responseDetail": "[BN_BD] Response Detail (Bengali (Bangladesh))",
+  "@responseDetail": {
+    "description": "Localization key for: Response Detail"
+  },
+  "businessVerificationScreenComingSoon": "شاشة التحقق من الأعمال - قريباً",
+  "@businessVerificationScreenComingSoon": {
+    "description": "Localization key for: Business Verification Screen - Coming Soon"
+  },
+  "businessProfileActivatedSuccessfully": "تم تفعيل الملف التجاري بنجاح",
+  "@businessProfileActivatedSuccessfully": {
+    "description": "Localization key for: Business profile activated successfully!"
+  },
+  "failedToStartProSubscriptionE": "[BN_BD] Failed to start Pro subscription: $e (Bengali (Bangladesh))",
+  "@failedToStartProSubscriptionE": {
+    "description": "Localization key for: Failed to start Pro subscription: $e"
+  },
+  "businessDashboardEntryScreenComingSoon": "[BN_BD] Business Dashboard Entry Screen - Coming Soon (Bengali (Bangladesh))",
+  "@businessDashboardEntryScreenComingSoon": {
+    "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
+  },
+  "contentFilter": "[BN_BD] Content Filter (Bengali (Bangladesh))",
+  "@contentFilter": {
+    "description": "Localization key for: Content Filter"
+  },
+  "helpSupport": "[BN_BD] Help & Support (Bengali (Bangladesh))",
+  "@helpSupport": {
+    "description": "Localization key for: Help & Support"
+  },
+  "editRoom": "[BN_BD] Edit Room (Bengali (Bangladesh))",
+  "@editRoom": {
+    "description": "Localization key for: Edit Room"
+  },
+  "appointmentApptid": "[BN_BD] Appointment: {appointmentId}",
+  "@appointmentApptid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "deviceLogdeviceinfo": "[BN_BD] Device: {deviceInfo}",
+  "@deviceLogdeviceinfo": {
+    "description": "Localization key for: Device: {deviceInfo}"
+  },
+  "businessCrmEntryScreenComingSoon": "[BN_BD] Business CRM Entry Screen - Coming Soon (Bengali (Bangladesh))",
+  "@businessCrmEntryScreenComingSoon": {
+    "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
+  },
+  "adminDashboard": "[BN_BD] Admin Dashboard",
+  "@adminDashboard": {
+    "description": "Localization key for: Admin Dashboard"
+  },
+  "orgmemberidslengthMembers": "[BN_BD] {memberCount} members",
+  "@orgmemberidslengthMembers": {
+    "description": "Localization key for: {memberCount} members"
+  },
+  "errorLoadingDashboardError": "[BN_BD] Error loading dashboard: $error (Bengali (Bangladesh))",
+  "@errorLoadingDashboardError": {
+    "description": "Localization key for: Error loading dashboard: $error"
+  },
+  "gameDeletedSuccessfully": "[BN_BD] Game deleted successfully! (Bengali (Bangladesh))",
+  "@gameDeletedSuccessfully": {
+    "description": "Localization key for: Game deleted successfully!"
+  },
+  "viewResponsesComingSoon": "[BN_BD] View responses - Coming soon! (Bengali (Bangladesh))",
+  "@viewResponsesComingSoon": {
+    "description": "Localization key for: View responses - Coming soon!"
+  },
+  "deleteProvider": "[BN_BD] Delete Provider",
+  "@deleteProvider": {
+    "description": "Localization key for: Delete Provider"
+  },
+  "errorLoadingRewards": "[BN_BD] Error loading rewards (Bengali (Bangladesh))",
+  "@errorLoadingRewards": {
+    "description": "Localization key for: Error loading rewards"
+  },
+  "failedToDeleteAccountE": "[BN_BD] Failed to delete account: $e (Bengali (Bangladesh))",
+  "@failedToDeleteAccountE": {
+    "description": "Localization key for: Failed to delete account: $e"
+  },
+  "invited1": "[BN_BD] Invited (Bengali (Bangladesh))",
+  "@invited1": {
+    "description": "Localization key for: Invited"
+  },
+  "noBranchesAvailable": "[BN_BD] No branches available (Bengali (Bangladesh))",
+  "@noBranchesAvailable": {
+    "description": "Localization key for: No branches available"
+  },
+  "errorError": "[BN_BD] Error: $error (Bengali (Bangladesh))",
+  "@errorError": {
+    "description": "Localization key for: Error: $error"
+  },
+  "noEvents": "[BN_BD] No events (Bengali (Bangladesh))",
+  "@noEvents": {
+    "description": "Localization key for: No events"
+  },
+  "gameCreatedSuccessfully": "[BN_BD] Game created successfully! (Bengali (Bangladesh))",
+  "@gameCreatedSuccessfully": {
+    "description": "Localization key for: Game created successfully!"
+  },
+  "add1": "[BN_BD] Add (Bengali (Bangladesh))",
+  "@add1": {
+    "description": "Localization key for: Add"
+  },
+  "creatorCreatorid": "[BN_BD] Creator: $creatorId",
+  "@creatorCreatorid": {
+    "description": "Localization key for: Creator: $creatorId"
+  },
+  "eventstarttimeEventendtime": "[BN_BD] {startTime} - {endTime} (Bengali (Bangladesh))",
+  "@eventstarttimeEventendtime": {
+    "description": "Localization key for: {startTime} - {endTime}"
+  },
+  "allowPlaytime": "[BN_BD] Allow Playtime (Bengali (Bangladesh))",
+  "@allowPlaytime": {
+    "description": "Localization key for: Allow Playtime"
+  },
+  "clients": "[BN_BD] Clients (Bengali (Bangladesh))",
+  "@clients": {
+    "description": "Localization key for: Clients"
+  },
+  "noAmbassadorDataAvailable": "[BN_BD] No ambassador data available (Bengali (Bangladesh))",
+  "@noAmbassadorDataAvailable": {
+    "description": "Localization key for: No ambassador data available"
+  },
+  "backgroundDeletedSuccessfully": "[BN_BD] Background deleted successfully! (Bengali (Bangladesh))",
+  "@backgroundDeletedSuccessfully": {
+    "description": "Localization key for: Background deleted successfully!"
+  },
+  "errorSnapshoterror": "[BN_BD] Error: {error} (Bengali (Bangladesh))",
+  "@errorSnapshoterror": {
+    "description": "Localization key for: Error: {error}"
+  },
+  "noAnalyticsDataAvailableYet": "[BN_BD] No analytics data available yet. (Bengali (Bangladesh))",
+  "@noAnalyticsDataAvailableYet": {
+    "description": "Localization key for: No analytics data available yet."
+  },
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
+  "@errorDeletingSlotE": {
+    "description": "Localization key for: Error deleting slot: $e"
+  },
+  "businessPhoneBookingEntryScreenComingSoon": "[BN_BD] Business Phone Booking Entry Screen - Coming Soon (Bengali (Bangladesh))",
+  "@businessPhoneBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
+  },
+  "verification": "[BN_BD] Verification (Bengali (Bangladesh))",
+  "@verification": {
+    "description": "Localization key for: Verification"
+  },
+  "copyLink": "[BN_BD] Copy Link (Bengali (Bangladesh))",
+  "@copyLink": {
+    "description": "Localization key for: Copy Link"
+  },
+  "dashboard1": "[BN_BD] Dashboard (Bengali (Bangladesh))",
+  "@dashboard1": {
+    "description": "Localization key for: Dashboard"
+  },
+  "manageChildAccounts": "[BN_BD] Manage Child Accounts (Bengali (Bangladesh))",
+  "@manageChildAccounts": {
+    "description": "Localization key for: Manage Child Accounts"
+  },
+  "grantConsent": "[BN_BD] Grant Consent (Bengali (Bangladesh))",
+  "@grantConsent": {
+    "description": "Localization key for: Grant Consent"
+  },
+  "myProfile1": "[BN_BD] My Profile (Bengali (Bangladesh))",
+  "@myProfile1": {
+    "description": "Localization key for: My Profile"
+  },
+  "submit": "[BN_BD] Submit (Bengali (Bangladesh))",
+  "@submit": {
+    "description": "Localization key for: Submit"
+  },
+  "userLoguseremail": "[BN_BD] User: {userEmail}",
+  "@userLoguseremail": {
+    "description": "Localization key for: User: {userEmail}"
+  },
+  "emailNotifications": "إشعارات البريد الإلكتروني",
+  "@emailNotifications": {
+    "description": "Localization key for: Email Notifications"
+  },
+  "ambassadorDashboard": "[BN_BD] Ambassador Dashboard (Bengali (Bangladesh))",
+  "@ambassadorDashboard": {
+    "description": "Localization key for: Ambassador Dashboard"
+  },
+  "phoneBooking": "[BN_BD] Phone Booking (Bengali (Bangladesh))",
+  "@phoneBooking": {
+    "description": "Localization key for: Phone Booking"
+  },
+  "bookViaChat": "[BN_BD] Book via Chat (Bengali (Bangladesh))",
+  "@bookViaChat": {
+    "description": "Localization key for: Book via Chat"
+  },
+  "error": "ত্রুটি",
+  "@error": {
+    "description": "Description"
+  },
+  "businessProfile": "[BN_BD] Business Profile (Bengali (Bangladesh))",
+  "@businessProfile": {
+    "description": "Localization key for: Business Profile"
+  },
+  "businessBookingEntryScreenComingSoon": "[BN_BD] Business Booking Entry Screen - Coming Soon (Bengali (Bangladesh))",
+  "@businessBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
+  },
+  "createNewSurvey": "[BN_BD] Create New Survey (Bengali (Bangladesh))",
+  "@createNewSurvey": {
+    "description": "Localization key for: Create New Survey"
+  },
+  "backgroundRejected": "[BN_BD] Background rejected (Bengali (Bangladesh))",
+  "@backgroundRejected": {
+    "description": "Localization key for: Background rejected"
+  },
+  "noMediaSelected": "[BN_BD] No media selected (Bengali (Bangladesh))",
+  "@noMediaSelected": {
+    "description": "Localization key for: No media selected"
+  },
+  "syncToGoogle": "[BN_BD] Sync to Google (Bengali (Bangladesh))",
+  "@syncToGoogle": {
+    "description": "Localization key for: Sync to Google"
+  },
+  "virtualPlaytime": "[BN_BD] Virtual Playtime (Bengali (Bangladesh))",
+  "@virtualPlaytime": {
+    "description": "Localization key for: Virtual Playtime"
+  },
+  "colorContrastTesting": "[BN_BD] Color Contrast Testing",
+  "@colorContrastTesting": {
+    "description": "Localization key for: Color Contrast Testing"
+  },
+  "loginFailedE": "[BN_BD] Login failed: $e",
+  "@loginFailedE": {
+    "description": "Localization key for: Login failed: $e"
+  },
+  "invitationSentSuccessfully": "[BN_BD] Invitation sent successfully! (Bengali (Bangladesh))",
+  "@invitationSentSuccessfully": {
+    "description": "Localization key for: Invitation sent successfully!"
+  },
+  "registering": "[BN_BD] Registering... (Bengali (Bangladesh))",
+  "@registering": {
+    "description": "Localization key for: Registering..."
+  },
+  "statusAppointmentstatusname": "[BN_BD] Status: {status} (Bengali (Bangladesh))",
+  "@statusAppointmentstatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "home1": "[BN_BD] Home (Bengali (Bangladesh))",
+  "@home1": {
+    "description": "Localization key for: Home"
+  },
+  "errorSavingSettingsE": "[BN_BD] Error saving settings: $e (Bengali (Bangladesh))",
+  "@errorSavingSettingsE": {
+    "description": "Localization key for: Error saving settings: $e"
+  },
+  "appVersionAndInformation": "[BN_BD] App version and information (Bengali (Bangladesh))",
+  "@appVersionAndInformation": {
+    "description": "Localization key for: App version and information"
+  },
+  "businessSubscriptionEntryScreenComingSoon": "[BN_BD] Business Subscription Entry Screen - Coming Soon (Bengali (Bangladesh))",
+  "@businessSubscriptionEntryScreenComingSoon": {
+    "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
+  },
+  "ekeyEvalue": "[BN_BD] {key}: {value} (Bengali (Bangladesh))",
+  "@ekeyEvalue": {
+    "description": "Localization key for: {key}: {value}"
+  },
+  "yourPaymentHasBeenProcessedSuccessfully": "[BN_BD] Your payment has been processed successfully. (Bengali (Bangladesh))",
+  "@yourPaymentHasBeenProcessedSuccessfully": {
+    "description": "Localization key for: Your payment has been processed successfully."
+  },
+  "errorE": "[BN_BD] Error: $e (Bengali (Bangladesh))",
+  "@errorE": {
+    "description": "Localization key for: Error: $e"
+  },
+  "viewAll1": "[BN_BD] View All (Bengali (Bangladesh))",
+  "@viewAll1": {
+    "description": "Localization key for: View All"
+  },
+  "editSurveyComingSoon": "[BN_BD] Edit survey - Coming soon! (Bengali (Bangladesh))",
+  "@editSurveyComingSoon": {
+    "description": "Localization key for: Edit survey - Coming soon!"
+  },
+  "enterOtp": "[BN_BD] Enter OTP (Bengali (Bangladesh))",
+  "@enterOtp": {
+    "description": "Localization key for: Enter OTP"
+  },
+  "payment": "[BN_BD] Payment (Bengali (Bangladesh))",
+  "@payment": {
+    "description": "Localization key for: Payment"
+  },
+  "automaticallyConfirmNewBookingRequests": "[BN_BD] Automatically confirm new booking requests (Bengali (Bangladesh))",
+  "@automaticallyConfirmNewBookingRequests": {
+    "description": "Localization key for: Automatically confirm new booking requests"
+  },
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
+  "@errorPickingVideoE": {
+    "description": "Localization key for: Error picking video: $e"
+  },
+  "noRouteDefinedForSettingsname": "[BN_BD] No route defined for {settingsName} (Bengali (Bangladesh))",
+  "@noRouteDefinedForSettingsname": {
+    "description": "Localization key for: No route defined for {settingsName}"
+  },
+  "pleaseSignInToUploadABackground": "[BN_BD] Please sign in to upload a background (Bengali (Bangladesh))",
+  "@pleaseSignInToUploadABackground": {
+    "description": "Localization key for: Please sign in to upload a background"
+  },
+  "logtargettypeLogtargetid": "[BN_BD] {targetType}: {targetId}",
+  "@logtargettypeLogtargetid": {
+    "description": "Localization key for: {targetType}: {targetId}"
+  },
+  "staffAvailability": "[BN_BD] Staff Availability (Bengali (Bangladesh))",
+  "@staffAvailability": {
+    "description": "Localization key for: Staff Availability"
+  },
+  "livePlaytime": "[BN_BD] Live Playtime (Bengali (Bangladesh))",
+  "@livePlaytime": {
+    "description": "Localization key for: Live Playtime"
+  },
+  "autoconfirmBookings": "[BN_BD] Auto-Confirm Bookings (Bengali (Bangladesh))",
+  "@autoconfirmBookings": {
+    "description": "Localization key for: Auto-Confirm Bookings"
+  },
+  "redirectingToStripeCheckoutForProPlan": "[BN_BD] Redirecting to Stripe checkout for Pro plan... (Bengali (Bangladesh))",
+  "@redirectingToStripeCheckoutForProPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
+  },
+  "exportAsCsv": "[BN_BD] Export as CSV (Bengali (Bangladesh))",
+  "@exportAsCsv": {
+    "description": "Localization key for: Export as CSV"
+  },
+  "deleteFunctionalityComingSoon": "[BN_BD] Delete functionality coming soon! (Bengali (Bangladesh))",
+  "@deleteFunctionalityComingSoon": {
+    "description": "Localization key for: Delete functionality coming soon!"
+  },
+  "editClient": "[BN_BD] Edit Client (Bengali (Bangladesh))",
+  "@editClient": {
+    "description": "Localization key for: Edit Client"
+  },
+  "areYouSureYouWantToDeleteThisMessage": "[BN_BD] Are you sure you want to delete this message? (Bengali (Bangladesh))",
+  "@areYouSureYouWantToDeleteThisMessage": {
+    "description": "Localization key for: Are you sure you want to delete this message?"
+  },
+  "referralsAmbassadorreferrals": "[BN_BD] Referrals: {referrals} (Bengali (Bangladesh))",
+  "@referralsAmbassadorreferrals": {
+    "description": "Localization key for: Referrals: {referrals}"
+  },
+  "notAuthenticated": "[BN_BD] Not authenticated",
+  "@notAuthenticated": {
+    "description": "Localization key for: Not authenticated"
+  },
+  "privacyRequestSentToYourParents": "[BN_BD] Privacy request sent to your parents! (Bengali (Bangladesh))",
+  "@privacyRequestSentToYourParents": {
+    "description": "Localization key for: Privacy request sent to your parents!"
+  },
+  "clientDeletedSuccessfully": "[BN_BD] Client deleted successfully! (Bengali (Bangladesh))",
+  "@clientDeletedSuccessfully": {
+    "description": "Localization key for: Client deleted successfully!"
+  },
+  "failedToCancelSubscription": "[BN_BD] Failed to cancel subscription (Bengali (Bangladesh))",
+  "@failedToCancelSubscription": {
+    "description": "Localization key for: Failed to cancel subscription"
+  },
+  "allLanguages": "[BN_BD] All Languages (Bengali (Bangladesh))",
+  "@allLanguages": {
+    "description": "Localization key for: All Languages"
+  },
+  "slotDeletedSuccessfully": "[BN_BD] Slot deleted successfully (Bengali (Bangladesh))",
+  "@slotDeletedSuccessfully": {
+    "description": "Localization key for: Slot deleted successfully"
+  },
+  "businessProvidersEntryScreenComingSoon": "[BN_BD] Business Providers Entry Screen - Coming Soon",
+  "@businessProvidersEntryScreenComingSoon": {
+    "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
+  },
+  "parentsMustApproveBeforeChildrenCanJoin": "[BN_BD] Parents must approve before children can join (Bengali (Bangladesh))",
+  "@parentsMustApproveBeforeChildrenCanJoin": {
+    "description": "Localization key for: Parents must approve before children can join"
+  },
+  "subscribeToPro1499mo": "[BN_BD] Subscribe to Pro (€14.99/mo) (Bengali (Bangladesh))",
+  "@subscribeToPro1499mo": {
+    "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
+  },
+  "businessAvailabilityEntryScreenComingSoon": "[BN_BD] Business Availability Entry Screen - Coming Soon (Bengali (Bangladesh))",
+  "@businessAvailabilityEntryScreenComingSoon": {
+    "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
+  },
+  "appointmentsListlength": "[BN_BD] Appointments: {count} (Bengali (Bangladesh))",
+  "@appointmentsListlength": {
+    "description": "Localization key for: Appointments: {count}"
+  },
+  "clearFilters": "[BN_BD] Clear Filters (Bengali (Bangladesh))",
+  "@clearFilters": {
+    "description": "Localization key for: Clear Filters"
+  },
+  "submitBooking": "[BN_BD] Submit Booking (Bengali (Bangladesh))",
+  "@submitBooking": {
+    "description": "Localization key for: Submit Booking"
+  },
+  "areYouSureYouWantToCancelThisAppointment": "[BN_BD] Are you sure you want to cancel this appointment? (Bengali (Bangladesh))",
+  "@areYouSureYouWantToCancelThisAppointment": {
+    "description": "Localization key for: Are you sure you want to cancel this appointment?"
+  },
+  "noUpcomingBookings": "[BN_BD] No upcoming bookings (Bengali (Bangladesh))",
+  "@noUpcomingBookings": {
+    "description": "Localization key for: No upcoming bookings"
+  },
+  "goBack": "[BN_BD] Go Back (Bengali (Bangladesh))",
+  "@goBack": {
+    "description": "Localization key for: Go Back"
+  },
+  "setup": "[BN_BD] Setup (Bengali (Bangladesh))",
+  "@setup": {
+    "description": "Localization key for: Setup"
+  },
+  "inviteChild": "[BN_BD] Invite Child (Bengali (Bangladesh))",
+  "@inviteChild": {
+    "description": "Localization key for: Invite Child"
+  },
+  "goToDashboard": "[BN_BD] Go to Dashboard (Bengali (Bangladesh))",
+  "@goToDashboard": {
+    "description": "Localization key for: Go to Dashboard"
+  },
+  "ambassadorQuotaDashboard": "[BN_BD] Ambassador Quota Dashboard (Bengali (Bangladesh))",
+  "@ambassadorQuotaDashboard": {
+    "description": "Localization key for: Ambassador Quota Dashboard"
+  },
+  "adminSettings": "[BN_BD] Admin Settings",
+  "@adminSettings": {
+    "description": "Localization key for: Admin Settings"
+  },
+  "referralCode": "[BN_BD] Referral Code (Bengali (Bangladesh))",
+  "@referralCode": {
+    "description": "Localization key for: Referral Code"
+  },
+  "adminLogadminemail": "[BN_BD] Admin: {adminEmail}",
+  "@adminLogadminemail": {
+    "description": "Localization key for: Admin: {adminEmail}"
+  },
+  "date": "[BN_BD] Date (Bengali (Bangladesh))",
+  "@date": {
+    "description": "Localization key for: Date"
+  },
+  "readOnly": "[BN_BD] Read Only (Bengali (Bangladesh))",
+  "@readOnly": {
+    "description": "Localization key for: Read Only"
+  },
+  "bookingRequest": "[BN_BD] Booking Request (Bengali (Bangladesh))",
+  "@bookingRequest": {
+    "description": "Localization key for: Booking Request"
+  },
+  "advancedReporting": "[BN_BD] • Advanced reporting (Bengali (Bangladesh))",
+  "@advancedReporting": {
+    "description": "Localization key for: • Advanced reporting"
+  },
+  "rooms": "[BN_BD] Rooms (Bengali (Bangladesh))",
+  "@rooms": {
+    "description": "Localization key for: Rooms"
+  },
+  "copiedToClipboard": "[BN_BD] Copied to clipboard (Bengali (Bangladesh))",
+  "@copiedToClipboard": {
+    "description": "Localization key for: Copied to clipboard"
+  },
+  "bookingConfirmed": "[BN_BD] Booking Confirmed (Bengali (Bangladesh))",
+  "@bookingConfirmed": {
+    "description": "Localization key for: Booking Confirmed"
+  },
+  "sessionApproved": "تمت الموافقة على الجلسة",
+  "@sessionApproved": {
+    "description": "Localization key for: Session approved!"
+  },
+  "clientAddedSuccessfully": "[BN_BD] Client added successfully! (Bengali (Bangladesh))",
+  "@clientAddedSuccessfully": {
+    "description": "Localization key for: Client added successfully!"
+  },
+  "noNotifications": "لا توجد إشعارات",
+  "@noNotifications": {
+    "description": "Localization key for: No notifications"
+  },
+  "backgroundApproved": "[BN_BD] Background approved! (Bengali (Bangladesh))",
+  "@backgroundApproved": {
+    "description": "Localization key for: Background approved!"
+  },
+  "familySupport": "[BN_BD] Family Support (Bengali (Bangladesh))",
+  "@familySupport": {
+    "description": "Localization key for: Family Support"
+  },
+  "deletingAccount": "[BN_BD] Deleting account... (Bengali (Bangladesh))",
+  "@deletingAccount": {
+    "description": "Localization key for: Deleting account..."
+  },
+  "bookAppointment": "[BN_BD] Book Appointment (Bengali (Bangladesh))",
+  "@bookAppointment": {
+    "description": "Localization key for: Book Appointment"
+  },
+  "receivePushNotificationsForNewBookings": "استقبال إشعارات الدفع للحجوزات الجديدة",
+  "@receivePushNotificationsForNewBookings": {
+    "description": "Localization key for: Receive push notifications for new bookings"
+  },
+  "delete1": "[BN_BD] Delete (Bengali (Bangladesh))",
+  "@delete1": {
+    "description": "Localization key for: Delete"
+  },
+  "sendBookingInvite": "[BN_BD] Send Booking Invite (Bengali (Bangladesh))",
+  "@sendBookingInvite": {
+    "description": "Localization key for: Send Booking Invite"
+  },
+  "text": "[BN_BD] Text (Bengali (Bangladesh))",
+  "@text": {
+    "description": "Localization key for: Text"
+  },
+  "manageSubscription": "[BN_BD] Manage Subscription (Bengali (Bangladesh))",
+  "@manageSubscription": {
+    "description": "Localization key for: Manage Subscription"
+  },
+  "requiresInstallFallback": "[BN_BD] Requires Install Fallback (Bengali (Bangladesh))",
+  "@requiresInstallFallback": {
+    "description": "Localization key for: Requires Install Fallback"
+  },
+  "paymentConfirmation": "[BN_BD] Payment Confirmation (Bengali (Bangladesh))",
+  "@paymentConfirmation": {
+    "description": "Localization key for: Payment Confirmation"
+  },
+  "promoAppliedYourNextBillIsFree": "[BN_BD] Promo applied! Your next bill is free. (Bengali (Bangladesh))",
+  "@promoAppliedYourNextBillIsFree": {
+    "description": "Localization key for: Promo applied! Your next bill is free."
+  },
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
+  "@inviteeArgsinviteeid": {
+    "description": "Localization key for: Invitee: {inviteeId}"
+  },
+  "errorLoadingSlots": "[BN_BD] Error loading slots (Bengali (Bangladesh))",
+  "@errorLoadingSlots": {
+    "description": "Localization key for: Error loading slots"
+  },
+  "allowOtherUsersToFindAndJoinThisGame": "[BN_BD] Allow other users to find and join this game (Bengali (Bangladesh))",
+  "@allowOtherUsersToFindAndJoinThisGame": {
+    "description": "Localization key for: Allow other users to find and join this game"
+  },
+  "businessOnboardingScreenComingSoon": "[BN_BD] Business Onboarding Screen - Coming Soon (Bengali (Bangladesh))",
+  "@businessOnboardingScreenComingSoon": {
+    "description": "Localization key for: Business Onboarding Screen - Coming Soon"
+  },
+  "activateBusinessProfile": "[BN_BD] Activate Business Profile (Bengali (Bangladesh))",
+  "@activateBusinessProfile": {
+    "description": "Localization key for: Activate Business Profile"
+  },
+  "contentNotFound": "[BN_BD] Content not found (Bengali (Bangladesh))",
+  "@contentNotFound": {
+    "description": "Localization key for: Content not found"
+  },
+  "pspecialtynpcontactinfo": "[BN_BD] {specialty}\\n{contactInfo} (Bengali (Bangladesh))",
+  "@pspecialtynpcontactinfo": {
+    "description": "Localization key for: {specialty}\\n{contactInfo}"
+  },
+  "rating": "[BN_BD] Rating (Bengali (Bangladesh))",
+  "@rating": {
+    "description": "Localization key for: Rating"
+  },
+  "messages": "[BN_BD] Messages (Bengali (Bangladesh))",
+  "@messages": {
+    "description": "Localization key for: Messages"
+  },
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
+  "@errorEstimatingRecipientsE": {
+    "description": "Localization key for: Error estimating recipients: $e"
+  },
+  "becomeAnAmbassador": "[BN_BD] Become an Ambassador (Bengali (Bangladesh))",
+  "@becomeAnAmbassador": {
+    "description": "Localization key for: Become an Ambassador"
+  },
+  "subscribeNow": "[BN_BD] Subscribe Now (Bengali (Bangladesh))",
+  "@subscribeNow": {
+    "description": "Localization key for: Subscribe Now"
+  },
+  "timeArgsslotformatcontext": "[BN_BD] Time: {time} (Bengali (Bangladesh))",
+  "@timeArgsslotformatcontext": {
+    "description": "Localization key for: Time: {time}"
+  },
+  "shareViaWhatsapp": "[BN_BD] Share via WhatsApp (Bengali (Bangladesh))",
+  "@shareViaWhatsapp": {
+    "description": "Localization key for: Share via WhatsApp"
+  },
+  "users1": "[BN_BD] Users (Bengali (Bangladesh))",
+  "@users1": {
+    "description": "Localization key for: Users"
+  },
+  "shareLink": "[BN_BD] Share Link (Bengali (Bangladesh))",
+  "@shareLink": {
+    "description": "Localization key for: Share Link"
+  },
+  "areYouSureYouWantToDeleteThisProvider": "[BN_BD] Are you sure you want to delete this provider?",
+  "@areYouSureYouWantToDeleteThisProvider": {
+    "description": "Localization key for: Are you sure you want to delete this provider?"
+  },
+  "deleteAppointment": "[BN_BD] Delete Appointment (Bengali (Bangladesh))",
+  "@deleteAppointment": {
+    "description": "Localization key for: Delete Appointment"
+  },
+  "toggleAvailability": "[BN_BD] Toggle Availability (Bengali (Bangladesh))",
+  "@toggleAvailability": {
+    "description": "Localization key for: Toggle Availability"
+  },
+  "changePlan": "[BN_BD] Change Plan (Bengali (Bangladesh))",
+  "@changePlan": {
+    "description": "Localization key for: Change Plan"
+  },
+  "errorLoadingStaff": "[BN_BD] Error loading staff (Bengali (Bangladesh))",
+  "@errorLoadingStaff": {
+    "description": "Localization key for: Error loading staff"
+  },
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
+  "@errorLoadingConfigurationE": {
+    "description": "Localization key for: Error loading configuration: $e"
+  },
+  "updateYourBusinessInformation": "[BN_BD] Update your business information (Bengali (Bangladesh))",
+  "@updateYourBusinessInformation": {
+    "description": "Localization key for: Update your business information"
+  },
+  "noProvidersFoundAddYourFirstProvider": "[BN_BD] No providers found. Add your first provider!",
+  "@noProvidersFoundAddYourFirstProvider": {
+    "description": "Localization key for: No providers found. Add your first provider!"
+  },
+  "parentDashboard": "[BN_BD] Parent Dashboard (Bengali (Bangladesh))",
+  "@parentDashboard": {
+    "description": "Localization key for: Parent Dashboard"
+  },
+  "menu": "[BN_BD] Menu (Bengali (Bangladesh))",
+  "@menu": {
+    "description": "Localization key for: Menu"
+  },
+  "studioBooking": "[BN_BD] Studio Booking (Bengali (Bangladesh))",
+  "@studioBooking": {
+    "description": "Localization key for: Studio Booking"
+  },
+  "about1": "[BN_BD] About (Bengali (Bangladesh))",
+  "@about1": {
+    "description": "Localization key for: About"
+  },
+  "multipleChoice": "[BN_BD] Multiple Choice (Bengali (Bangladesh))",
+  "@multipleChoice": {
+    "description": "Localization key for: Multiple Choice"
+  },
+  "dateAppointmentscheduledattostring": "[BN_BD] Date: {date} (Bengali (Bangladesh))",
+  "@dateAppointmentscheduledattostring": {
+    "description": "Localization key for: Date: {date}"
+  },
+  "studioBookingIsOnlyAvailableOnWeb": "[BN_BD] Studio booking is only available on web (Bengali (Bangladesh))",
+  "@studioBookingIsOnlyAvailableOnWeb": {
+    "description": "Localization key for: Studio booking is only available on web"
+  },
+  "errorLoadingBranchesE": "[BN_BD] Error loading branches: $e (Bengali (Bangladesh))",
+  "@errorLoadingBranchesE": {
+    "description": "Localization key for: Error loading branches: $e"
+  },
+  "ud83dudcc5Bookingdatetimetolocal": "[BN_BD] \\uD83D\\uDCC5 {dateTime} (Bengali (Bangladesh))",
+  "@ud83dudcc5Bookingdatetimetolocal": {
+    "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
+  },
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
+  "@appointmentInviteappointmentid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "none": "[BN_BD] None (Bengali (Bangladesh))",
+  "@none": {
+    "description": "Localization key for: None"
+  },
+  "failedToUpdateConsentE": "[BN_BD] Failed to update consent: $e (Bengali (Bangladesh))",
+  "@failedToUpdateConsentE": {
+    "description": "Localization key for: Failed to update consent: $e"
+  },
+  "welcome1": "[BN_BD] Welcome (Bengali (Bangladesh))",
+  "@welcome1": {
+    "description": "Localization key for: Welcome"
+  },
+  "failedToCreateSessionE": "[BN_BD] Failed to create session: $e (Bengali (Bangladesh))",
+  "@failedToCreateSessionE": {
+    "description": "Localization key for: Failed to create session: $e"
+  },
+  "inviteContact": "[BN_BD] Invite Contact (Bengali (Bangladesh))",
+  "@inviteContact": {
+    "description": "Localization key for: Invite Contact"
+  },
+  "surveyEditor": "[BN_BD] Survey Editor (Bengali (Bangladesh))",
+  "@surveyEditor": {
+    "description": "Localization key for: Survey Editor"
+  },
+  "failedToStartBasicSubscriptionE": "[BN_BD] Failed to start Basic subscription: $e (Bengali (Bangladesh))",
+  "@failedToStartBasicSubscriptionE": {
+    "description": "Localization key for: Failed to start Basic subscription: $e"
+  },
+  "mySchedule": "[BN_BD] My Schedule (Bengali (Bangladesh))",
+  "@mySchedule": {
+    "description": "Localization key for: My Schedule"
+  },
+  "studioDashboard": "[BN_BD] Studio Dashboard (Bengali (Bangladesh))",
+  "@studioDashboard": {
+    "description": "Localization key for: Studio Dashboard"
+  },
+  "editProfile": "تحرير الملف الشخصي",
+  "@editProfile": {
+    "description": "Localization key for: Edit Profile"
+  },
+  "logout1": "[BN_BD] Logout",
+  "@logout1": {
+    "description": "Localization key for: Logout"
+  },
+  "serviceServiceidNotSelected": "[BN_BD] Service: {service}",
+  "@serviceServiceidNotSelected": {
+    "description": "Localization key for: Service: {service}"
+  },
+  "settingsSavedSuccessfully": "[BN_BD] Settings saved successfully! (Bengali (Bangladesh))",
+  "@settingsSavedSuccessfully": {
+    "description": "Localization key for: Settings saved successfully!"
+  },
+  "linkCopiedToClipboard": "[BN_BD] Link copied to clipboard! (Bengali (Bangladesh))",
+  "@linkCopiedToClipboard": {
+    "description": "Localization key for: Link copied to clipboard!"
+  },
+  "accept1": "[BN_BD] Accept (Bengali (Bangladesh))",
+  "@accept1": {
+    "description": "Localization key for: Accept"
+  },
+  "noAvailableSlots": "[BN_BD] No available slots (Bengali (Bangladesh))",
+  "@noAvailableSlots": {
+    "description": "Localization key for: No available slots"
+  },
+  "makeGamePublic": "[BN_BD] Make Game Public (Bengali (Bangladesh))",
+  "@makeGamePublic": {
+    "description": "Localization key for: Make Game Public"
+  },
+  "permissionPermissioncategoryUpdatedToNewvalue": "[BN_BD] Permission {category} updated to $newValue (Bengali (Bangladesh))",
+  "@permissionPermissioncategoryUpdatedToNewvalue": {
+    "description": "Localization key for: Permission {category} updated to $newValue"
+  },
+  "roomDeletedSuccessfully": "[BN_BD] Room deleted successfully! (Bengali (Bangladesh))",
+  "@roomDeletedSuccessfully": {
+    "description": "Localization key for: Room deleted successfully!"
+  },
+  "businessCalendar": "[BN_BD] Business Calendar (Bengali (Bangladesh))",
+  "@businessCalendar": {
+    "description": "Localization key for: Business Calendar"
+  },
+  "addAvailability": "[BN_BD] Add Availability (Bengali (Bangladesh))",
+  "@addAvailability": {
+    "description": "Localization key for: Add Availability"
+  },
+  "ambassadorOnboarding": "[BN_BD] Ambassador Onboarding (Bengali (Bangladesh))",
+  "@ambassadorOnboarding": {
+    "description": "Localization key for: Ambassador Onboarding"
+  },
+  "phoneProfileasyncphone": "[BN_BD] Phone: {phone} (Bengali (Bangladesh))",
+  "@phoneProfileasyncphone": {
+    "description": "Localization key for: Phone: {phone}"
+  },
+  "addNewRoom": "[BN_BD] Add New Room (Bengali (Bangladesh))",
+  "@addNewRoom": {
+    "description": "Localization key for: Add New Room"
+  },
+  "requireParentApproval": "[BN_BD] Require Parent Approval (Bengali (Bangladesh))",
+  "@requireParentApproval": {
+    "description": "Localization key for: Require Parent Approval"
+  },
+  "closed": "[BN_BD] Closed (Bengali (Bangladesh))",
+  "@closed": {
+    "description": "Localization key for: Closed"
+  },
+  "exportAsPdf": "[BN_BD] Export as PDF (Bengali (Bangladesh))",
+  "@exportAsPdf": {
+    "description": "Localization key for: Export as PDF"
+  },
+  "enableVibration": "[BN_BD] Enable Vibration (Bengali (Bangladesh))",
+  "@enableVibration": {
+    "description": "Localization key for: Enable Vibration"
+  },
+  "toAvailendformatcontext": "[BN_BD] To: {endTime} (Bengali (Bangladesh))",
+  "@toAvailendformatcontext": {
+    "description": "Localization key for: To: {endTime}"
+  },
+  "yourUpgradeCodeUpgradecode": "[BN_BD] Your upgrade code: $upgradeCode (Bengali (Bangladesh))",
+  "@yourUpgradeCodeUpgradecode": {
+    "description": "Localization key for: Your upgrade code: $upgradeCode"
+  },
+  "requestPrivateSession": "[BN_BD] requestPrivateSession (TRANSLATE)",
+  "@requestPrivateSession": {
+    "description": "requestPrivateSession description"
+  },
+  "country": "[BN_BD] Country (Bengali (Bangladesh))",
+  "@country": {
+    "description": "Localization key for: Country"
+  },
+  "loginScreen": "[BN_BD] Login Screen",
+  "@loginScreen": {
+    "description": "Localization key for: Login Screen"
+  },
+  "staffArgsstaffdisplayname": "[BN_BD] Staff: {staffName} (Bengali (Bangladesh))",
+  "@staffArgsstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "revokeConsent": "[BN_BD] Revoke Consent (Bengali (Bangladesh))",
+  "@revokeConsent": {
+    "description": "Localization key for: Revoke Consent"
+  },
+  "settings1": "[BN_BD] Settings (Bengali (Bangladesh))",
+  "@settings1": {
+    "description": "Localization key for: Settings"
+  },
+  "cancel1": "[BN_BD] Cancel (Bengali (Bangladesh))",
+  "@cancel1": {
+    "description": "Localization key for: Cancel"
+  },
+  "subscriptionActivatedSuccessfully": "[BN_BD] Subscription activated successfully! (Bengali (Bangladesh))",
+  "@subscriptionActivatedSuccessfully": {
+    "description": "Localization key for: Subscription activated successfully!"
+  },
+  "activityLogaction": "[BN_BD] Activity: {action}",
+  "@activityLogaction": {
+    "description": "Localization key for: Activity: {action}"
+  },
+  "broadcast": "[BN_BD] Broadcast (Bengali (Bangladesh))",
+  "@broadcast": {
+    "description": "Localization key for: Broadcast"
+  },
+  "noEventsScheduledThisWeek": "[BN_BD] No events scheduled this week (Bengali (Bangladesh))",
+  "@noEventsScheduledThisWeek": {
+    "description": "Localization key for: No events scheduled this week"
+  },
+  "googleCalendar": "[BN_BD] Google Calendar (Bengali (Bangladesh))",
+  "@googleCalendar": {
+    "description": "Localization key for: Google Calendar"
+  },
+  "sendInvite": "إرسال دعوة",
+  "@sendInvite": {
+    "description": "Localization key for: Send Invite"
+  },
+  "childDashboard": "[BN_BD] Child Dashboard (Bengali (Bangladesh))",
+  "@childDashboard": {
+    "description": "Localization key for: Child Dashboard"
+  },
+  "failedToUploadBackgroundE": "[BN_BD] Failed to upload background: $e (Bengali (Bangladesh))",
+  "@failedToUploadBackgroundE": {
+    "description": "Localization key for: Failed to upload background: $e"
+  },
+  "linkchildidsubstring08": "[BN_BD] {linkId}...",
+  "@linkchildidsubstring08": {
+    "description": "Localization key for: {linkId}..."
+  },
+  "targetLogtargettypeLogtargetid": "[BN_BD] Target: {targetType} - {targetId}",
+  "@targetLogtargettypeLogtargetid": {
+    "description": "Localization key for: Target: {targetType} - {targetId}"
+  },
+  "contextContextid": "[BN_BD] Context: $contextId",
+  "@contextContextid": {
+    "description": "Localization key for: Context: $contextId"
+  },
+  "noAppointments": "[BN_BD] No appointments (Bengali (Bangladesh))",
+  "@noAppointments": {
+    "description": "Localization key for: No appointments"
+  },
+  "unlimitedBookingsPerWeek": "[BN_BD] • Unlimited bookings per week (Bengali (Bangladesh))",
+  "@unlimitedBookingsPerWeek": {
+    "description": "Localization key for: • Unlimited bookings per week"
+  },
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
+  "@errorDetailsLogerrortype": {
+    "description": "Localization key for: Error Details: {errorType}"
+  },
+  "scheduledAtScheduledat": "[BN_BD] Scheduled at: $scheduledAt (Bengali (Bangladesh))",
+  "@scheduledAtScheduledat": {
+    "description": "Localization key for: Scheduled at: $scheduledAt"
+  },
+  "selectStaff": "[BN_BD] Select Staff (Bengali (Bangladesh))",
+  "@selectStaff": {
+    "description": "Localization key for: Select Staff"
+  },
+  "subscriptionCancelledSuccessfully": "[BN_BD] Subscription cancelled successfully (Bengali (Bangladesh))",
+  "@subscriptionCancelledSuccessfully": {
+    "description": "Localization key for: Subscription cancelled successfully"
+  },
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
+  "@pleaseLogInToViewYourProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "cancelAppointment": "[BN_BD] Cancel Appointment (Bengali (Bangladesh))",
+  "@cancelAppointment": {
+    "description": "Localization key for: Cancel Appointment"
+  },
+  "permissionsFamilylinkchildid": "[BN_BD] Permissions - {childId}",
+  "@permissionsFamilylinkchildid": {
+    "description": "Localization key for: Permissions - {childId}"
+  },
+  "businessSignup": "[BN_BD] Business Signup (Bengali (Bangladesh))",
+  "@businessSignup": {
+    "description": "Localization key for: Business Signup"
+  },
+  "businessCompletionScreenComingSoon": "[BN_BD] Business Completion Screen - Coming Soon (Bengali (Bangladesh))",
+  "@businessCompletionScreenComingSoon": {
+    "description": "Localization key for: Business Completion Screen - Coming Soon"
+  },
+  "createGame1": "[BN_BD] Create Game (Bengali (Bangladesh))",
+  "@createGame1": {
+    "description": "Localization key for: Create Game"
+  },
+  "valuetoint": "[BN_BD] {value} (Bengali (Bangladesh))",
+  "@valuetoint": {
+    "description": "Localization key for: {value}"
+  },
+  "pleaseEnterAPromoCode": "[BN_BD] Please enter a promo code (Bengali (Bangladesh))",
+  "@pleaseEnterAPromoCode": {
+    "description": "Localization key for: Please enter a promo code"
+  },
+  "errorLoadingAvailabilityE": "[BN_BD] Error loading availability: $e (Bengali (Bangladesh))",
+  "@errorLoadingAvailabilityE": {
+    "description": "Localization key for: Error loading availability: $e"
+  },
+  "parentalControls": "[BN_BD] Parental Controls (Bengali (Bangladesh))",
+  "@parentalControls": {
+    "description": "Localization key for: Parental Controls"
+  },
+  "editBusinessProfile": "تحرير الملف التجاري",
+  "@editBusinessProfile": {
+    "description": "Localization key for: Edit Business Profile"
+  },
+  "childLinkedSuccessfully": "[BN_BD] Child linked successfully! (Bengali (Bangladesh))",
+  "@childLinkedSuccessfully": {
+    "description": "Localization key for: Child linked successfully!"
+  },
+  "create": "[BN_BD] Create (Bengali (Bangladesh))",
+  "@create": {
+    "description": "Localization key for: Create"
+  },
+  "noExternalMeetingsFound": "[BN_BD] No external meetings found. (Bengali (Bangladesh))",
+  "@noExternalMeetingsFound": {
+    "description": "Localization key for: No external meetings found."
+  },
+  "staffSelectionstaffdisplayname": "[BN_BD] Staff: {staffName} (Bengali (Bangladesh))",
+  "@staffSelectionstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "pleaseEnterAValidEmailAddress": "[BN_BD] Please enter a valid email address",
+  "@pleaseEnterAValidEmailAddress": {
+    "description": "Localization key for: Please enter a valid email address"
+  },
+  "schedulerScreen": "[BN_BD] Scheduler Screen (Bengali (Bangladesh))",
+  "@schedulerScreen": {
+    "description": "Localization key for: Scheduler Screen"
+  },
+  "clientUpdatedSuccessfully": "[BN_BD] Client updated successfully! (Bengali (Bangladesh))",
+  "@clientUpdatedSuccessfully": {
+    "description": "Localization key for: Client updated successfully!"
+  },
+  "surveyResponses": "[BN_BD] Survey Responses (Bengali (Bangladesh))",
+  "@surveyResponses": {
+    "description": "Localization key for: Survey Responses"
+  },
+  "syncToOutlook": "[BN_BD] Sync to Outlook (Bengali (Bangladesh))",
+  "@syncToOutlook": {
+    "description": "Localization key for: Sync to Outlook"
+  },
+  "saveChanges": "[BN_BD] Save Changes (Bengali (Bangladesh))",
+  "@saveChanges": {
+    "description": "Localization key for: Save Changes"
+  },
+  "pickTime": "[BN_BD] Pick Time (Bengali (Bangladesh))",
+  "@pickTime": {
+    "description": "Localization key for: Pick Time"
+  },
+  "registrationFailedEtostring": "[BN_BD] Registration failed: {error} (Bengali (Bangladesh))",
+  "@registrationFailedEtostring": {
+    "description": "Localization key for: Registration failed: {error}"
+  },
+  "analytics": "[BN_BD] Analytics (Bengali (Bangladesh))",
+  "@analytics": {
+    "description": "Localization key for: Analytics"
+  },
+  "errorLoadingEvents": "[BN_BD] Error loading events (Bengali (Bangladesh))",
+  "@errorLoadingEvents": {
+    "description": "Localization key for: Error loading events"
+  },
+  "errorLoadingOrganizations": "[BN_BD] errorLoadingOrganizations (TRANSLATE)",
+  "@errorLoadingOrganizations": {
+    "description": "errorLoadingOrganizations description"
+  },
+  "businessLoginScreenComingSoon": "[BN_BD] Business Login Screen - Coming Soon",
+  "@businessLoginScreenComingSoon": {
+    "description": "Localization key for: Business Login Screen - Coming Soon"
+  },
+  "success1": "[BN_BD] Success (Bengali (Bangladesh))",
+  "@success1": {
+    "description": "Localization key for: Success"
+  },
+  "appVersionLogappversion": "[BN_BD] App Version: {appVersion}",
+  "@appVersionLogappversion": {
+    "description": "Localization key for: App Version: {appVersion}"
+  },
+  "fromAvailstartformatcontext": "[BN_BD] From: {startTime} (Bengali (Bangladesh))",
+  "@fromAvailstartformatcontext": {
+    "description": "Localization key for: From: {startTime}"
+  },
+  "readWrite": "[BN_BD] Read & Write (Bengali (Bangladesh))",
+  "@readWrite": {
+    "description": "Localization key for: Read & Write"
+  },
+  "redirectingToStripeCheckoutForBasicPlan": "[BN_BD] Redirecting to Stripe checkout for Basic plan... (Bengali (Bangladesh))",
+  "@redirectingToStripeCheckoutForBasicPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
+  },
+  "errorSavingConfigurationE": "[BN_BD] Error saving configuration: $e",
+  "@errorSavingConfigurationE": {
+    "description": "Localization key for: Error saving configuration: $e"
+  },
+  "pickDate": "[BN_BD] Pick Date (Bengali (Bangladesh))",
+  "@pickDate": {
+    "description": "Localization key for: Pick Date"
+  },
+  "chatBooking": "[BN_BD] Chat Booking (Bengali (Bangladesh))",
+  "@chatBooking": {
+    "description": "Localization key for: Chat Booking"
+  },
+  "noQuestionsAdded": "[BN_BD] No questions added (Bengali (Bangladesh))",
+  "@noQuestionsAdded": {
+    "description": "Localization key for: No questions added"
+  },
+  "severityLogseverityname": "[BN_BD] Severity: {severity}",
+  "@severityLogseverityname": {
+    "description": "Localization key for: Severity: {severity}"
+  },
+  "markAsPaid": "[BN_BD] Mark as Paid",
+  "@markAsPaid": {
+    "description": "Localization key for: Mark as Paid"
+  },
+  "typeOpenCall": "[BN_BD] Type: Open Call (Bengali (Bangladesh))",
+  "@typeOpenCall": {
+    "description": "Localization key for: Type: Open Call"
+  },
+  "appointmentAppointmentid": "[BN_BD] Appointment {appointmentId}",
+  "@appointmentAppointmentid": {
+    "description": "Localization key for: Appointment {appointmentId}"
+  },
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
+  "@statusInvitestatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "businessLogin": "[BN_BD] Business Login",
+  "@businessLogin": {
+    "description": "Localization key for: Business Login"
+  },
+  "invoiceCreatedSuccessfully": "[BN_BD] Invoice created successfully! (Bengali (Bangladesh))",
+  "@invoiceCreatedSuccessfully": {
+    "description": "Localization key for: Invoice created successfully!"
+  },
+  "noTimeSeriesDataAvailable": "[BN_BD] No time series data available (Bengali (Bangladesh))",
+  "@noTimeSeriesDataAvailable": {
+    "description": "Localization key for: No time series data available"
+  },
+  "subscribeToWidgetplanname": "[BN_BD] Subscribe to {planName}",
+  "@subscribeToWidgetplanname": {
+    "description": "Localization key for: Subscribe to {planName}"
+  },
+  "timestamp_formatdatelogtimestamp": "[BN_BD] Timestamp: {timestamp}",
+  "@timestamp_formatdatelogtimestamp": {
+    "description": "Localization key for: Timestamp: {timestamp}"
+  },
+  "failedToSendPrivacyRequestE": "[BN_BD] Failed to send privacy request: $e (Bengali (Bangladesh))",
+  "@failedToSendPrivacyRequestE": {
+    "description": "Localization key for: Failed to send privacy request: $e"
+  },
+  "chooseYourPlan": "[BN_BD] Choose Your Plan (Bengali (Bangladesh))",
+  "@chooseYourPlan": {
+    "description": "Localization key for: Choose Your Plan"
+  },
+  "playtimeManagement": "[BN_BD] Playtime Management (Bengali (Bangladesh))",
+  "@playtimeManagement": {
+    "description": "Localization key for: Playtime Management"
+  },
+  "availability": "[BN_BD] Availability (Bengali (Bangladesh))",
+  "@availability": {
+    "description": "Localization key for: Availability"
+  },
+  "eventCreated": "[BN_BD] Event created (Bengali (Bangladesh))",
+  "@eventCreated": {
+    "description": "Localization key for: Event created"
+  },
+  "subscribeToBasic499mo": "[BN_BD] Subscribe to Basic (€4.99/mo) (Bengali (Bangladesh))",
+  "@subscribeToBasic499mo": {
+    "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
+  },
+  "completion": "[BN_BD] Completion (Bengali (Bangladesh))",
+  "@completion": {
+    "description": "Localization key for: Completion"
+  },
+  "supportTicketSubmitted": "[BN_BD] Support ticket submitted (Bengali (Bangladesh))",
+  "@supportTicketSubmitted": {
+    "description": "Localization key for: Support ticket submitted"
+  },
+  "monetizationSettings": "[BN_BD] Monetization Settings (Bengali (Bangladesh))",
+  "@monetizationSettings": {
+    "description": "Localization key for: Monetization Settings"
+  },
+  "noBookingsFound": "[BN_BD] No bookings found (Bengali (Bangladesh))",
+  "@noBookingsFound": {
+    "description": "Localization key for: No bookings found"
+  },
+  "admin": "[BN_BD] Admin",
+  "@admin": {
+    "description": "Localization key for: Admin"
+  },
+  "deleteSurvey": "[BN_BD] Delete Survey (Bengali (Bangladesh))",
+  "@deleteSurvey": {
+    "description": "Localization key for: Delete Survey"
+  },
+  "gameApprovedSuccessfully": "[BN_BD] Game approved successfully! (Bengali (Bangladesh))",
+  "@gameApprovedSuccessfully": {
+    "description": "Localization key for: Game approved successfully!"
+  },
+  "errorLoadingPermissionsError": "[BN_BD] Error loading permissions: $error (Bengali (Bangladesh))",
+  "@errorLoadingPermissionsError": {
+    "description": "Localization key for: Error loading permissions: $error"
+  },
+  "referrals": "[BN_BD] Referrals (Bengali (Bangladesh))",
+  "@referrals": {
+    "description": "Localization key for: Referrals"
+  },
+  "crm": "[BN_BD] CRM (Bengali (Bangladesh))",
+  "@crm": {
+    "description": "Localization key for: CRM"
+  },
+  "gameRejected": "[BN_BD] Game rejected (Bengali (Bangladesh))",
+  "@gameRejected": {
+    "description": "Localization key for: Game rejected"
+  },
+  "appointments": "[BN_BD] Appointments (Bengali (Bangladesh))",
+  "@appointments": {
+    "description": "Localization key for: Appointments"
+  },
+  "onboardingScreen": "[BN_BD] Onboarding Screen (Bengali (Bangladesh))",
+  "@onboardingScreen": {
+    "description": "Localization key for: Onboarding Screen"
+  },
+  "welcomeToYourStudio": "[BN_BD] Welcome to your studio (Bengali (Bangladesh))",
+  "@welcomeToYourStudio": {
+    "description": "Localization key for: Welcome to your studio"
+  },
+  "update": "[BN_BD] Update (Bengali (Bangladesh))",
+  "@update": {
+    "description": "Localization key for: Update"
+  },
+  "retry1": "[BN_BD] Retry (Bengali (Bangladesh))",
+  "@retry1": {
+    "description": "Localization key for: Retry"
+  },
+  "booking": "[BN_BD] Booking (Bengali (Bangladesh))",
+  "@booking": {
+    "description": "Localization key for: Booking"
+  },
+  "parentalSettings": "[BN_BD] Parental Settings (Bengali (Bangladesh))",
+  "@parentalSettings": {
+    "description": "Localization key for: Parental Settings"
+  },
+  "language": "[BN_BD] Language (Bengali (Bangladesh))",
+  "@language": {
+    "description": "Localization key for: Language"
+  },
+  "deleteSlot": "[BN_BD] Delete Slot (Bengali (Bangladesh))",
+  "@deleteSlot": {
+    "description": "Localization key for: Delete Slot"
+  },
+  "organizations": "[BN_BD] organizations (TRANSLATE)",
+  "@organizations": {
+    "description": "organizations description"
+  },
+  "configurationSavedSuccessfully": "[BN_BD] Configuration saved successfully!",
+  "@configurationSavedSuccessfully": {
+    "description": "Localization key for: Configuration saved successfully!"
+  },
+  "createNewGame": "[BN_BD] Create New Game (Bengali (Bangladesh))",
+  "@createNewGame": {
+    "description": "Localization key for: Create New Game"
+  },
+  "next1": "[BN_BD] Next (Bengali (Bangladesh))",
+  "@next1": {
+    "description": "Localization key for: Next"
+  },
+  "backgroundUploadedSuccessfully": "[BN_BD] Background uploaded successfully! (Bengali (Bangladesh))",
+  "@backgroundUploadedSuccessfully": {
+    "description": "Localization key for: Background uploaded successfully!"
+  },
+  "noAppointmentRequestsFound": "[BN_BD] No appointment requests found. (Bengali (Bangladesh))",
+  "@noAppointmentRequestsFound": {
+    "description": "Localization key for: No appointment requests found."
+  },
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
+  "@pleaseSignInToCreateASession": {
+    "description": "Localization key for: Please sign in to create a session"
+  },
+  "restrictMatureContent": "[BN_BD] Restrict mature content (Bengali (Bangladesh))",
+  "@restrictMatureContent": {
+    "description": "Localization key for: Restrict mature content"
+  },
+  "ambassadors": "[BN_BD] Ambassadors (Bengali (Bangladesh))",
+  "@ambassadors": {
+    "description": "Localization key for: Ambassadors"
+  },
+  "smsNotifications": "إشعارات الرسائل النصية",
+  "@smsNotifications": {
+    "description": "Localization key for: SMS Notifications"
+  },
+  "paymentWasCancelled": "[BN_BD] Payment was cancelled (Bengali (Bangladesh))",
+  "@paymentWasCancelled": {
+    "description": "Localization key for: Payment was cancelled"
+  },
+  "clearAll": "[BN_BD] Clear All (Bengali (Bangladesh))",
+  "@clearAll": {
+    "description": "Localization key for: Clear All"
+  },
+  "viewDetails": "[BN_BD] View Details (Bengali (Bangladesh))",
+  "@viewDetails": {
+    "description": "Localization key for: View Details"
+  },
+  "notifications1": "الإشعارات",
+  "@notifications1": {
+    "description": "Localization key for: Notifications"
+  },
+  "liveSessionScheduledWaitingForParentApproval": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
+  "@liveSessionScheduledWaitingForParentApproval": {
+    "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
+  },
+  "failedToCreateGameE": "[BN_BD] Failed to create game: $e (Bengali (Bangladesh))",
+  "@failedToCreateGameE": {
+    "description": "Localization key for: Failed to create game: $e"
+  },
+  "noChartDataAvailable": "[BN_BD] No chart data available (Bengali (Bangladesh))",
+  "@noChartDataAvailable": {
+    "description": "Localization key for: No chart data available"
+  },
+  "phonebasedBookingSystem": "[BN_BD] • Phone-based booking system (Bengali (Bangladesh))",
+  "@phonebasedBookingSystem": {
+    "description": "Localization key for: • Phone-based booking system"
+  },
+  "enableNotifications1": "تفعيل الإشعارات",
+  "@enableNotifications1": {
+    "description": "Localization key for: Enable Notifications"
+  },
+  "invoices": "[BN_BD] Invoices (Bengali (Bangladesh))",
+  "@invoices": {
+    "description": "Localization key for: Invoices"
+  },
+  "pleaseActivateYourBusinessProfileToContinue": "يرجى تفعيل ملفك التجاري للمتابعة",
+  "@pleaseActivateYourBusinessProfileToContinue": {
+    "description": "Localization key for: Please activate your business profile to continue."
+  },
+  "scheduledAtArgsscheduledat": "[BN_BD] Scheduled at: {scheduledAt} (Bengali (Bangladesh))",
+  "@scheduledAtArgsscheduledat": {
+    "description": "Localization key for: Scheduled at: {scheduledAt}"
+  },
+  "durationDurationinminutes0Minutes": "[BN_BD] Duration: {duration} minutes (Bengali (Bangladesh))",
+  "@durationDurationinminutes0Minutes": {
+    "description": "Localization key for: Duration: {duration} minutes"
+  },
+  "tryAgain": "[BN_BD] Try Again (Bengali (Bangladesh))",
+  "@tryAgain": {
+    "description": "Localization key for: Try Again"
+  },
+  "deleteBackground": "[BN_BD] Delete Background (Bengali (Bangladesh))",
+  "@deleteBackground": {
+    "description": "Localization key for: Delete Background"
+  },
+  "currentTierTiertouppercase": "[BN_BD] Current Tier: {tier} (Bengali (Bangladesh))",
+  "@currentTierTiertouppercase": {
+    "description": "Localization key for: Current Tier: {tier}"
+  },
+  "iDoNotConsent": "[BN_BD] I Do Not Consent",
+  "@iDoNotConsent": {
+    "description": "Localization key for: I Do Not Consent"
+  },
+  "noClientsFoundAddYourFirstClient": "[BN_BD] No clients found. Add your first client! (Bengali (Bangladesh))",
+  "@noClientsFoundAddYourFirstClient": {
+    "description": "Localization key for: No clients found. Add your first client!"
+  },
+  "settingsDialogWillBeImplementedHere": "[BN_BD] Settings dialog will be implemented here.",
+  "@settingsDialogWillBeImplementedHere": {
+    "description": "Localization key for: Settings dialog will be implemented here."
+  },
+  "groupGroupid": "[BN_BD] Group: $groupId",
+  "@groupGroupid": {
+    "description": "Localization key for: Group: $groupId"
+  },
+  "appointmentRequests": "[BN_BD] Appointment Requests (Bengali (Bangladesh))",
+  "@appointmentRequests": {
+    "description": "Localization key for: Appointment Requests"
+  },
+  "forward": "[BN_BD] Forward (Bengali (Bangladesh))",
+  "@forward": {
+    "description": "Localization key for: Forward"
+  },
+  "roomAddedSuccessfully": "[BN_BD] Room added successfully! (Bengali (Bangladesh))",
+  "@roomAddedSuccessfully": {
+    "description": "Localization key for: Room added successfully!"
+  },
+  "option": "[BN_BD] • $option (Bengali (Bangladesh))",
+  "@option": {
+    "description": "Localization key for: • $option"
+  },
+  "responseIndex1": "[BN_BD] Response #{number} (Bengali (Bangladesh))",
+  "@responseIndex1": {
+    "description": "Localization key for: Response #{number}"
+  },
+  "crmDashboardWithAnalytics": "[BN_BD] • CRM dashboard with analytics (Bengali (Bangladesh))",
+  "@crmDashboardWithAnalytics": {
+    "description": "Localization key for: • CRM dashboard with analytics"
+  },
+  "contentLibrary1": "[BN_BD] Content Library (Bengali (Bangladesh))",
+  "@contentLibrary1": {
+    "description": "Localization key for: Content Library"
+  },
+  "reply": "[BN_BD] Reply (Bengali (Bangladesh))",
+  "@reply": {
+    "description": "Localization key for: Reply"
+  },
+  "subscriptionManagement": "[BN_BD] Subscription Management (Bengali (Bangladesh))",
+  "@subscriptionManagement": {
+    "description": "Localization key for: Subscription Management"
+  },
+  "monetizationSettingsWillBeImplementedHere": "[BN_BD] Monetization settings will be implemented here (Bengali (Bangladesh))",
+  "@monetizationSettingsWillBeImplementedHere": {
+    "description": "Localization key for: Monetization settings will be implemented here"
+  },
+  "failedToApplyPromoCodeE": "[BN_BD] Failed to apply promo code: $e (Bengali (Bangladesh))",
+  "@failedToApplyPromoCodeE": {
+    "description": "Localization key for: Failed to apply promo code: $e"
+  },
+  "editProvider": "[BN_BD] Edit Provider",
+  "@editProvider": {
+    "description": "Localization key for: Edit Provider"
+  },
+  "localizationContribution": "[BN_BD] Localization Contribution (Bengali (Bangladesh))",
+  "@localizationContribution": {
+    "description": "Localization key for: Localization Contribution"
+  },
+  "parentalConsent": "[BN_BD] Parental Consent (Bengali (Bangladesh))",
+  "@parentalConsent": {
+    "description": "Localization key for: Parental Consent"
+  },
+  "businessSignupScreenComingSoon": "[BN_BD] Business Signup Screen - Coming Soon (Bengali (Bangladesh))",
+  "@businessSignupScreenComingSoon": {
+    "description": "Localization key for: Business Signup Screen - Coming Soon"
+  },
+  "areYouSureYouWantToDeleteThisAppointment": "[BN_BD] Are you sure you want to delete this appointment? (Bengali (Bangladesh))",
+  "@areYouSureYouWantToDeleteThisAppointment": {
+    "description": "Localization key for: Are you sure you want to delete this appointment?"
+  },
+  "syncAppointment": "[BN_BD] Sync Appointment (Bengali (Bangladesh))",
+  "@syncAppointment": {
+    "description": "Localization key for: Sync Appointment"
+  },
+  "iConsent": "[BN_BD] I Consent (Bengali (Bangladesh))",
+  "@iConsent": {
+    "description": "Localization key for: I Consent"
+  },
+  "sessionRejected": "تم رفض الجلسة",
+  "@sessionRejected": {
+    "description": "Localization key for: Session rejected"
+  },
+  "businessSetupScreenComingSoon": "[BN_BD] Business Setup Screen - Coming Soon (Bengali (Bangladesh))",
+  "@businessSetupScreenComingSoon": {
+    "description": "Localization key for: Business Setup Screen - Coming Soon"
+  },
+  "edit1": "[BN_BD] Edit (Bengali (Bangladesh))",
+  "@edit1": {
+    "description": "Localization key for: Edit"
+  },
+  "noEventsScheduledThisMonth": "[BN_BD] No events scheduled this month (Bengali (Bangladesh))",
+  "@noEventsScheduledThisMonth": {
+    "description": "Localization key for: No events scheduled this month"
+  },
+  "businessDashboard": "[BN_BD] Business Dashboard (Bengali (Bangladesh))",
+  "@businessDashboard": {
+    "description": "Localization key for: Business Dashboard"
+  },
+  "noMessagesFound": "[BN_BD] No messages found. (Bengali (Bangladesh))",
+  "@noMessagesFound": {
+    "description": "Localization key for: No messages found."
+  },
+  "staffStaffidNotSelected": "[BN_BD] Staff: {staff}",
+  "@staffStaffidNotSelected": {
+    "description": "Localization key for: Staff: {staff}"
+  },
+  "manageStaffAvailability": "[BN_BD] Manage Staff Availability (Bengali (Bangladesh))",
+  "@manageStaffAvailability": {
+    "description": "Localization key for: Manage Staff Availability"
+  },
+  "noMissingTranslations": "[BN_BD] No missing translations (Bengali (Bangladesh))",
+  "@noMissingTranslations": {
+    "description": "Localization key for: No missing translations"
+  },
+  "skip": "[BN_BD] Skip (Bengali (Bangladesh))",
+  "@skip": {
+    "description": "Localization key for: Skip"
+  },
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
+  "@meetingIdMeetingid": {
+    "description": "Localization key for: Meeting ID: $meetingId"
+  },
+  "noUsers": "[BN_BD] noUsers (TRANSLATE)",
+  "@noUsers": {
+    "description": "noUsers description"
+  },
+  "errorLoadingReferralCode": "[BN_BD] Error loading referral code (Bengali (Bangladesh))",
+  "@errorLoadingReferralCode": {
+    "description": "Localization key for: Error loading referral code"
+  },
+  "allCountries": "[BN_BD] All Countries (Bengali (Bangladesh))",
+  "@allCountries": {
+    "description": "Localization key for: All Countries"
+  },
+  "deleteGame": "[BN_BD] Delete Game (Bengali (Bangladesh))",
+  "@deleteGame": {
+    "description": "Localization key for: Delete Game"
+  },
+  "staffManagementTools": "[BN_BD] • Staff management tools (Bengali (Bangladesh))",
+  "@staffManagementTools": {
+    "description": "Localization key for: • Staff management tools"
+  },
+  "deleteMessage": "[BN_BD] Delete Message (Bengali (Bangladesh))",
+  "@deleteMessage": {
+    "description": "Localization key for: Delete Message"
+  },
+  "receiveBookingNotificationsViaSms": "استقبال إشعارات الحجز عبر الرسائل النصية",
+  "@receiveBookingNotificationsViaSms": {
+    "description": "Localization key for: Receive booking notifications via SMS"
+  },
+  "changeRole": "[BN_BD] changeRole (TRANSLATE)",
+  "@changeRole": {
+    "description": "changeRole description"
+  },
+  "errorLoadingBookingsSnapshoterror": "خطأ في تحميل لقطة الحجوزات: {error}",
+  "@errorLoadingBookingsSnapshoterror": {
+    "description": "Localization key for: Error loading bookings: {error}"
+  },
+  "openingCustomerPortal": "[BN_BD] Opening customer portal... (Bengali (Bangladesh))",
+  "@openingCustomerPortal": {
+    "description": "Localization key for: Opening customer portal..."
+  },
+  "signOut": "[BN_BD] Sign Out (Bengali (Bangladesh))",
+  "@signOut": {
+    "description": "Localization key for: Sign Out"
+  },
+  "nameProfilename": "[BN_BD] Name: {name} (Bengali (Bangladesh))",
+  "@nameProfilename": {
+    "description": "Localization key for: Name: {name}"
+  },
+  "businessProfileEntryScreenComingSoon": "شاشة إدخال الملف التجاري - قريباً",
+  "@businessProfileEntryScreenComingSoon": {
+    "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
+  },
+  "upgradeToBusiness": "[BN_BD] Upgrade to Business (Bengali (Bangladesh))",
+  "@upgradeToBusiness": {
+    "description": "Localization key for: Upgrade to Business"
+  },
+  "apply": "تطبيق",
+  "@apply": {
+    "description": "Localization key for: Apply"
+  },
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
+  "@errorLoadingSubscriptionError": {
+    "description": "Localization key for: Error loading subscription: $error"
+  },
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
+  "@errorLoadingUsers": {
+    "description": "errorLoadingUsers description"
+  },
+  "verify": "التحقق",
+  "@verify": {
+    "description": "Localization key for: Verify"
+  },
+  "subscription": "الاشتراك",
+  "@subscription": {
+    "description": "Localization key for: Subscription"
+  },
+  "deleteMyAccount": "حذف حسابي",
+  "@deleteMyAccount": {
+    "description": "Localization key for: Delete My Account"
+  },
+  "businessAppointmentsEntryScreenComingSoon": "شاشة إدخال مواعيد الأعمال - قريباً",
+  "@businessAppointmentsEntryScreenComingSoon": {
+    "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
+  },
+  "viewResponses": "[BN_BD] View Responses (Bengali (Bangladesh))",
+  "@viewResponses": {
+    "description": "Localization key for: View Responses"
+  },
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
+  "@businessWelcomeScreenComingSoon": {
+    "description": "Localization key for: Business Welcome Screen - Coming Soon"
+  },
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
+  "@failedToOpenCustomerPortalE": {
+    "description": "Localization key for: Failed to open customer portal: $e"
+  },
+  "continueText": "متابعة",
+  "@continueText": {
+    "description": "Localization key for: Continue"
+  },
+  "close1": "إغلاق",
+  "@close1": {
+    "description": "Localization key for: Close"
+  },
+  "confirm1": "تأكيد",
+  "@confirm1": {
+    "description": "Localization key for: Confirm"
+  },
+  "externalMeetings": "الاجتماعات الخارجية",
+  "@externalMeetings": {
+    "description": "Localization key for: External Meetings"
+  },
+  "approve": "موافقة",
+  "@approve": {
+    "description": "Localization key for: Approve"
+  },
+  "noInvoicesFoundCreateYourFirstInvoice": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
+  "@noInvoicesFoundCreateYourFirstInvoice": {
+    "description": "Localization key for: No invoices found. Create your first invoice!"
+  },
+  "subscribe": "اشتراك",
+  "@subscribe": {
+    "description": "Localization key for: Subscribe"
+  },
+  "login1": "تسجيل الدخول",
+  "@login1": {
+    "description": "Localization key for: Login"
+  },
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
+  "@adminOverviewGoesHere": {
+    "description": "Localization key for: Admin overview goes here"
+  },
+  "loadingCheckout": "جار تحميل الدفع...",
+  "@loadingCheckout": {
+    "description": "Localization key for: Loading checkout..."
+  },
+  "ad_pre_title": "Watch an ad to confirm your appointment",
+  "@ad_pre_title": {
+    "description": "Ad flow string: ad_pre_title"
+  },
+  "ad_pre_description": "As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.",
+  "@ad_pre_description": {
+    "description": "Ad flow string: ad_pre_description"
+  },
+  "watch_ad_button": "Watch Ad",
+  "@watch_ad_button": {
+    "description": "Ad flow string: watch_ad_button"
+  },
+  "upgrade_button": "Upgrade to Premium (€4)",
+  "@upgrade_button": {
+    "description": "Ad flow string: upgrade_button"
+  },
+  "ad_post_title": "Ad finished! You may now confirm your appointment.",
+  "@ad_post_title": {
+    "description": "Ad flow string: ad_post_title"
+  },
+  "confirm_appointment_button": "Confirm Appointment",
+  "@confirm_appointment_button": {
+    "description": "Ad flow string: confirm_appointment_button"
+  },
+  "upgrade_prompt_title": "One-time upgrade",
+  "@upgrade_prompt_title": {
+    "description": "Ad flow string: upgrade_prompt_title"
+  },
+  "upgrade_prompt_description": "Pay €4 to remove all ads forever",
+  "@upgrade_prompt_description": {
+    "description": "Ad flow string: upgrade_prompt_description"
+  },
+  "purchase_now_button": "Purchase Now",
+  "@purchase_now_button": {
+    "description": "Ad flow string: purchase_now_button"
+  },
+  "ambassadorPromotionTitle": "[BN_BD] Congratulations! You're now an Ambassador! (Bengali (Bangladesh))",
+  "@ambassadorPromotionTitle": {
+    "description": "Title for ambassador promotion notification"
+  },
+  "ambassadorPromotionBody": "[BN_BD] Welcome to the {tier} tier! Start sharing your referral link to earn rewards. (Bengali (Bangladesh))",
+  "@ambassadorPromotionBody": {
+    "description": "Body text for ambassador promotion notification",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "tierUpgradeTitle": "[BN_BD] Tier Upgrade! 🎉 (Bengali (Bangladesh))",
+  "@tierUpgradeTitle": {
+    "description": "Title for tier upgrade notification"
+  },
+  "tierUpgradeBody": "[BN_BD] Amazing! You've been upgraded from {previousTier} to {newTier} with {totalReferrals} referrals! (Bengali (Bangladesh))",
+  "@tierUpgradeBody": {
+    "description": "Body text for tier upgrade notification",
+    "placeholders": {
+      "previousTier": {
+        "type": "String"
+      },
+      "newTier": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  },
+  "monthlyReminderTitle": "[BN_BD] Monthly Goal Reminder (Bengali (Bangladesh))",
+  "@monthlyReminderTitle": {
+    "description": "Title for monthly performance reminder notification"
+  },
+  "monthlyReminderBody": "[BN_BD] You have {currentReferrals}/{targetReferrals} referrals this month. {daysRemaining} days left to reach your goal! (Bengali (Bangladesh))",
+  "@monthlyReminderBody": {
+    "description": "Body text for monthly reminder notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "targetReferrals": {
+        "type": "String"
+      },
+      "daysRemaining": {
+        "type": "String"
+      }
+    }
+  },
+  "performanceWarningTitle": "[BN_BD] Ambassador Performance Alert (Bengali (Bangladesh))",
+  "@performanceWarningTitle": {
+    "description": "Title for performance warning notification"
+  },
+  "performanceWarningBody": "[BN_BD] Your monthly referrals ({currentReferrals}) are below the minimum requirement ({minimumRequired}). Your ambassador status may be affected. (Bengali (Bangladesh))",
+  "@performanceWarningBody": {
+    "description": "Body text for performance warning notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "minimumRequired": {
+        "type": "String"
+      }
+    }
+  },
+  "ambassadorDemotionTitle": "[BN_BD] Ambassador Status Update (Bengali (Bangladesh))",
+  "@ambassadorDemotionTitle": {
+    "description": "Title for ambassador demotion notification"
+  },
+  "ambassadorDemotionBody": "[BN_BD] Your ambassador status has been temporarily suspended due to: {reason}. You can regain your status by meeting the requirements again. (Bengali (Bangladesh))",
+  "@ambassadorDemotionBody": {
+    "description": "Body text for ambassador demotion notification",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "referralSuccessTitle": "[BN_BD] New Referral! 🎉 (Bengali (Bangladesh))",
+  "@referralSuccessTitle": {
+    "description": "Title for successful referral notification"
+  },
+  "referralSuccessBody": "[BN_BD] {referredUserName} joined through your referral! You now have {totalReferrals} total referrals. (Bengali (Bangladesh))",
+  "@referralSuccessBody": {
+    "description": "Body text for successful referral notification",
+    "placeholders": {
+      "referredUserName": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  }
+}

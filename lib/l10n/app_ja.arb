@@ -1,0 +1,2979 @@
+{
+  "@@locale": "ja",
+  "refresh": "更新",
+  "@refresh": {
+    "description": "Description"
+  },
+  "home": "ホーム",
+  "@home": {
+    "description": "Description"
+  },
+  "noSessionsYet": "まだセッションがありません",
+  "@noSessionsYet": {
+    "description": "Description"
+  },
+  "ok": "[JA] OK",
+  "@ok": {
+    "description": "Description"
+  },
+  "playtimeLandingChooseMode": "[JA] プレイモードを選択してください:",
+  "@playtimeLandingChooseMode": {
+    "description": "Description"
+  },
+  "signUp": "サインアップ",
+  "@signUp": {
+    "description": "Description"
+  },
+  "scheduleMessage": "メッセージをスケジュール",
+  "@scheduleMessage": {
+    "description": "Description"
+  },
+  "decline": "拒否",
+  "@decline": {
+    "description": "Description"
+  },
+  "adminBroadcast": "[JA] Admin Broadcast",
+  "@adminBroadcast": {
+    "description": "Localization key for: Admin Broadcast"
+  },
+  "login": "ログイン",
+  "@login": {
+    "description": "Description"
+  },
+  "playtimeChooseFriends": "友達を選択",
+  "@playtimeChooseFriends": {
+    "description": "Description"
+  },
+  "noInvites": "招待なし",
+  "@noInvites": {
+    "description": "Description"
+  },
+  "playtimeChooseTime": "時間を選択",
+  "@playtimeChooseTime": {
+    "description": "Description"
+  },
+  "success": "成功",
+  "@success": {
+    "description": "Description"
+  },
+  "undo": "元に戻す",
+  "@undo": {
+    "description": "Description"
+  },
+  "opened": "開きました",
+  "@opened": {
+    "description": "opened description"
+  },
+  "createVirtualSession": "バーチャルセッションを作成",
+  "@createVirtualSession": {
+    "description": "Description"
+  },
+  "messageSentSuccessfully": "メッセージが正常に送信されました",
+  "@messageSentSuccessfully": {
+    "description": "messageSentSuccessfully description"
+  },
+  "redo": "やり直す",
+  "@redo": {
+    "description": "Description"
+  },
+  "next": "次へ",
+  "@next": {
+    "description": "Description"
+  },
+  "search": "検索",
+  "@search": {
+    "description": "Description"
+  },
+  "cancelInviteConfirmation": "招待の確認をキャンセル",
+  "@cancelInviteConfirmation": {
+    "description": "Description"
+  },
+  "created": "作成しました",
+  "@created": {
+    "description": "created description"
+  },
+  "revokeAccess": "アクセスを取り消す",
+  "@revokeAccess": {
+    "description": "Description"
+  },
+  "playtimeLiveScheduled": "ライブセッションがスケジュールされました",
+  "@playtimeLiveScheduled": {
+    "description": "Description"
+  },
+  "revokeAccessConfirmation": "アクセス取り消しの確認",
+  "@revokeAccessConfirmation": {
+    "description": "Description"
+  },
+  "download": "ダウンロード",
+  "@download": {
+    "description": "Description"
+  },
+  "password": "パスワード",
+  "@password": {
+    "description": "Description"
+  },
+  "errorLoadingFamilyLinks": "家族リンクの読み込みエラー",
+  "@errorLoadingFamilyLinks": {
+    "description": "Description"
+  },
+  "cancel": "キャンセル",
+  "@cancel": {
+    "description": "cancel description"
+  },
+  "playtimeCreate": "[JA] Playtimeを作成",
+  "@playtimeCreate": {
+    "description": "Description"
+  },
+  "failedToActionPrivacyRequest": "プライバシーリクエストの処理に失敗しました",
+  "@failedToActionPrivacyRequest": {
+    "description": "failedToActionPrivacyRequest description"
+  },
+  "appTitle": "アプリのタイトル",
+  "@appTitle": {
+    "description": "Description"
+  },
+  "accept": "承認",
+  "@accept": {
+    "description": "Description"
+  },
+  "playtimeModeVirtual": "バーチャルモード",
+  "@playtimeModeVirtual": {
+    "description": "Description"
+  },
+  "playtimeDescription": "[JA] Playtimeの説明",
+  "@playtimeDescription": {
+    "description": "Description"
+  },
+  "delete": "削除",
+  "@delete": {
+    "description": "Description"
+  },
+  "playtimeVirtualStarted": "バーチャルセッションが開始されました",
+  "@playtimeVirtualStarted": {
+    "description": "Description"
+  },
+  "createYourFirstGame": "最初のゲームを作成",
+  "@createYourFirstGame": {
+    "description": "Description"
+  },
+  "participants": "参加者",
+  "@participants": {
+    "description": "Description"
+  },
+  "recipients": "受信者",
+  "@recipients": {
+    "description": "recipients description"
+  },
+  "noResults": "結果なし",
+  "@noResults": {
+    "description": "Description"
+  },
+  "yes": "はい",
+  "@yes": {
+    "description": "yes description"
+  },
+  "invite": "招待",
+  "@invite": {
+    "description": "Description"
+  },
+  "playtimeModeLive": "ライブモード",
+  "@playtimeModeLive": {
+    "description": "Description"
+  },
+  "done": "完了",
+  "@done": {
+    "description": "Description"
+  },
+  "defaultShareMessage": "デフォルトの共有メッセージ",
+  "@defaultShareMessage": {
+    "description": "Description"
+  },
+  "no": "いいえ",
+  "@no": {
+    "description": "Description"
+  },
+  "playtimeHub": "[JA] Playtimeハブ",
+  "@playtimeHub": {
+    "description": "Description"
+  },
+  "createLiveSession": "ライブセッションを作成",
+  "@createLiveSession": {
+    "description": "Description"
+  },
+  "enableNotifications": "通知を有効にする",
+  "@enableNotifications": {
+    "description": "Description"
+  },
+  "invited": "招待済み",
+  "@invited": {
+    "description": "Description"
+  },
+  "content": "コンテンツ",
+  "@content": {
+    "description": "content description"
+  },
+  "meetingSharedSuccessfully": "ミーティングが正常に共有されました",
+  "@meetingSharedSuccessfully": {
+    "description": "Description"
+  },
+  "welcomeToPlaytime": "[JA] Playtimeへようこそ",
+  "@welcomeToPlaytime": {
+    "description": "Description"
+  },
+  "viewAll": "すべて表示",
+  "@viewAll": {
+    "description": "Description"
+  },
+  "playtimeVirtual": "[JA] バーチャルPlaytime",
+  "@playtimeVirtual": {
+    "description": "Description"
+  },
+  "staffScreenTBD": "スタッフ画面は後日設定",
+  "@staffScreenTBD": {
+    "description": "Description"
+  },
+  "cut": "カット",
+  "@cut": {
+    "description": "Description"
+  },
+  "inviteCancelledSuccessfully": "招待が正常にキャンセルされました",
+  "@inviteCancelledSuccessfully": {
+    "description": "Description"
+  },
+  "retry": "再試行",
+  "@retry": {
+    "description": "Description"
+  },
+  "composeBroadcastMessage": "放送メッセージを作成",
+  "@composeBroadcastMessage": {
+    "description": "composeBroadcastMessage description"
+  },
+  "sendNow": "今すぐ送信",
+  "@sendNow": {
+    "description": "sendNow description"
+  },
+  "noGamesYet": "まだゲームはありません",
+  "@noGamesYet": {
+    "description": "Description"
+  },
+  "select": "選択",
+  "@select": {
+    "description": "Description"
+  },
+  "about": "約",
+  "@about": {
+    "description": "About navigation label"
+  },
+  "choose": "選択",
+  "@choose": {
+    "description": "Description"
+  },
+  "profile": "プロフィール",
+  "@profile": {
+    "description": "Description"
+  },
+  "removeChild": "子供を削除",
+  "@removeChild": {
+    "description": "Description"
+  },
+  "status": "ステータス",
+  "@status": {
+    "description": "status description"
+  },
+  "logout": "ログアウト",
+  "@logout": {
+    "description": "Description"
+  },
+  "paste": "貼り付け",
+  "@paste": {
+    "description": "Description"
+  },
+  "welcome": "ようこそ",
+  "@welcome": {
+    "description": "Description"
+  },
+  "playtimeCreateSession": "セッションを作成",
+  "@playtimeCreateSession": {
+    "description": "Description"
+  },
+  "familyMembers": "家族メンバー",
+  "@familyMembers": {
+    "description": "Description"
+  },
+  "upload": "アップロード",
+  "@upload": {
+    "description": "Description"
+  },
+  "upcomingSessions": "今後のセッション",
+  "@upcomingSessions": {
+    "description": "Description"
+  },
+  "confirm": "確認",
+  "@confirm": {
+    "description": "Description"
+  },
+  "playtimeLive": "[JA] ライブPlaytime",
+  "@playtimeLive": {
+    "description": "Description"
+  },
+  "errorLoadingInvites": "招待の読み込みエラー",
+  "@errorLoadingInvites": {
+    "description": "Description"
+  },
+  "targetingFilters": "ターゲティングフィルター",
+  "@targetingFilters": {
+    "description": "targetingFilters description"
+  },
+  "pickVideo": "ビデオを選択",
+  "@pickVideo": {
+    "description": "pickVideo description"
+  },
+  "playtimeGameDeleted": "ゲームが削除されました",
+  "@playtimeGameDeleted": {
+    "description": "Description"
+  },
+  "scheduleForLater": "後でスケジュール",
+  "@scheduleForLater": {
+    "description": "scheduleForLater description"
+  },
+  "accessRevokedSuccessfully": "アクセスが正常に取り消されました",
+  "@accessRevokedSuccessfully": {
+    "description": "Description"
+  },
+  "type": "タイプ",
+  "@type": {
+    "description": "type description"
+  },
+  "checkingPermissions": "権限を確認中",
+  "@checkingPermissions": {
+    "description": "checkingPermissions description"
+  },
+  "copy": "コピー",
+  "@copy": {
+    "description": "Description"
+  },
+  "yesCancel": "はい、キャンセル",
+  "@yesCancel": {
+    "description": "Description"
+  },
+  "email": "メール",
+  "@email": {
+    "description": "Description"
+  },
+  "shareOnWhatsApp": "[JA] [JA] Share on WhatsApp",
+  "@shareOnWhatsApp": {
+    "description": "Description"
+  },
+  "notificationSettings": "通知設定",
+  "@notificationSettings": {
+    "description": "Description"
+  },
+  "myProfile": "マイプロフィール",
+  "@myProfile": {
+    "description": "Description"
+  },
+  "revoke": "取り消す",
+  "@revoke": {
+    "description": "Description"
+  },
+  "noBroadcastMessages": "放送メッセージなし",
+  "@noBroadcastMessages": {
+    "description": "noBroadcastMessages description"
+  },
+  "requestType": "リクエストタイプ",
+  "@requestType": {
+    "description": "requestType description"
+  },
+  "notifications": "通知",
+  "@notifications": {
+    "description": "Description"
+  },
+  "details": "詳細",
+  "@details": {
+    "description": "details description"
+  },
+  "cancelInvite": "招待をキャンセル",
+  "@cancelInvite": {
+    "description": "Description"
+  },
+  "createNew": "新規作成",
+  "@createNew": {
+    "description": "Description"
+  },
+  "settings": "設定",
+  "@settings": {
+    "description": "Description"
+  },
+  "playtimeReject": "[JA] Playtimeを拒否",
+  "@playtimeReject": {
+    "description": "Description"
+  },
+  "errorLoadingProfile": "プロフィール読み込みエラー",
+  "@errorLoadingProfile": {
+    "description": "Description"
+  },
+  "edit": "編集",
+  "@edit": {
+    "description": "Description"
+  },
+  "add": "追加",
+  "@add": {
+    "description": "Description"
+  },
+  "playtimeGameApproved": "ゲームが承認されました",
+  "@playtimeGameApproved": {
+    "description": "Description"
+  },
+  "forgotPassword": "パスワードをお忘れですか？",
+  "@forgotPassword": {
+    "description": "Description"
+  },
+  "familyDashboard": "ファミリーダッシュボード",
+  "@familyDashboard": {
+    "description": "Description"
+  },
+  "loading": "読み込み中",
+  "@loading": {
+    "description": "Description"
+  },
+  "quickActions": "クイックアクション",
+  "@quickActions": {
+    "description": "Description"
+  },
+  "playtimeTitle": "[JA] Playtimeタイトル",
+  "@playtimeTitle": {
+    "description": "Description"
+  },
+  "otpResentSuccessfully": "[JA] OTPが正常に再送信されました",
+  "@otpResentSuccessfully": {
+    "description": "Description"
+  },
+  "errorCheckingPermissions": "権限の確認エラー",
+  "@errorCheckingPermissions": {
+    "description": "errorCheckingPermissions description"
+  },
+  "clientScreenTBD": "クライアント画面は後日設定",
+  "@clientScreenTBD": {
+    "description": "Description"
+  },
+  "fcmToken": "[JA] FCMトークン",
+  "@fcmToken": {
+    "description": "Description"
+  },
+  "pickImage": "画像を選択",
+  "@pickImage": {
+    "description": "pickImage description"
+  },
+  "previous": "前へ",
+  "@previous": {
+    "description": "Description"
+  },
+  "noProfileFound": "プロフィールが見つかりません",
+  "@noProfileFound": {
+    "description": "Description"
+  },
+  "noFamilyMembersYet": "まだ家族メンバーがいません",
+  "@noFamilyMembersYet": {
+    "description": "Description"
+  },
+  "mediaOptional": "メディア（オプション）",
+  "@mediaOptional": {
+    "description": "mediaOptional description"
+  },
+  "messageSavedSuccessfully": "メッセージが正常に保存されました",
+  "@messageSavedSuccessfully": {
+    "description": "messageSavedSuccessfully description"
+  },
+  "scheduledFor": "次の日時にスケジュール済み",
+  "@scheduledFor": {
+    "description": "Description"
+  },
+  "dashboard": "ダッシュボード",
+  "@dashboard": {
+    "description": "Description"
+  },
+  "noPermissionForBroadcast": "放送権限がありません",
+  "@noPermissionForBroadcast": {
+    "description": "noPermissionForBroadcast description"
+  },
+  "playtimeAdminPanelTitle": "[JA] Playtime Games – Admin",
+  "@playtimeAdminPanelTitle": {
+    "description": "Localization key for: Playtime Games – Admin"
+  },
+  "inviteDetail": "招待の詳細",
+  "@inviteDetail": {
+    "description": "Description"
+  },
+  "scheduled": "スケジュール済み",
+  "@scheduled": {
+    "description": "scheduled description"
+  },
+  "failedToResendOtp": "[JA] OTPの再送信に失敗しました",
+  "@failedToResendOtp": {
+    "description": "Description"
+  },
+  "scheduling": "スケジュール中",
+  "@scheduling": {
+    "description": "scheduling description"
+  },
+  "errorSavingMessage": "メッセージ保存エラー",
+  "@errorSavingMessage": {
+    "description": "errorSavingMessage description"
+  },
+  "save": "保存",
+  "@save": {
+    "description": "save description"
+  },
+  "playtimeApprove": "[JA] Playtimeを承認",
+  "@playtimeApprove": {
+    "description": "Description"
+  },
+  "createYourFirstSession": "最初のセッションを作成",
+  "@createYourFirstSession": {
+    "description": "Description"
+  },
+  "playtimeGameRejected": "ゲームが拒否されました",
+  "@playtimeGameRejected": {
+    "description": "Description"
+  },
+  "failedToRevokeAccess": "[JA] [JA] Failed to revoke access",
+  "@failedToRevokeAccess": {
+    "description": "Description"
+  },
+  "recentGames": "最近のゲーム",
+  "@recentGames": {
+    "description": "Description"
+  },
+  "customizeMessage": "メッセージをカスタマイズ",
+  "@customizeMessage": {
+    "description": "Description"
+  },
+  "failedToCancelInvite": "招待キャンセルに失敗しました",
+  "@failedToCancelInvite": {
+    "description": "Description"
+  },
+  "errorSendingMessage": "メッセージ送信エラー",
+  "@errorSendingMessage": {
+    "description": "errorSendingMessage description"
+  },
+  "confirmPassword": "パスワードを確認",
+  "@confirmPassword": {
+    "description": "Description"
+  },
+  "errorLoadingPrivacyRequests": "プライバシーリクエスト読み込みエラー",
+  "@errorLoadingPrivacyRequests": {
+    "description": "errorLoadingPrivacyRequests description"
+  },
+  "connectedChildren": "接続された子供",
+  "@connectedChildren": {
+    "description": "Description"
+  },
+  "share": "共有",
+  "@share": {
+    "description": "Description"
+  },
+  "playtimeEnterGameName": "ゲーム名を入力",
+  "@playtimeEnterGameName": {
+    "description": "Description"
+  },
+  "pleaseLoginForFamilyFeatures": "[JA] [JA] Please login to access family features",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Description"
+  },
+  "myInvites": "[JA] [JA] My Invites",
+  "@myInvites": {
+    "description": "Description"
+  },
+  "createGame": "[JA] [JA] Create Game",
+  "@createGame": {
+    "description": "Description"
+  },
+  "playtimeNoSessions": "[JA] [JA] No playtime sessions found.",
+  "@playtimeNoSessions": {
+    "description": "Description"
+  },
+  "adminScreenTBD": "[JA] Admin screen coming soon",
+  "@adminScreenTBD": {
+    "description": "Localization key for: Admin screen coming soon"
+  },
+  "playtimeParentDashboardTitle": "[JA] [JA] Playtime Dashboard",
+  "@playtimeParentDashboardTitle": {
+    "description": "Description"
+  },
+  "close": "[JA] [JA] Close",
+  "@close": {
+    "description": "close description"
+  },
+  "back": "[JA] [JA] Back",
+  "@back": {
+    "description": "Description"
+  },
+  "playtimeChooseGame": "[JA] [JA] Choose a game",
+  "@playtimeChooseGame": {
+    "description": "Description"
+  },
+  "managePermissions": "[JA] [JA] Manage Permissions",
+  "@managePermissions": {
+    "description": "Description"
+  },
+  "pollOptions": "[JA] [JA] Poll Options",
+  "@pollOptions": {
+    "description": "pollOptions description"
+  },
+  "clicked": "[JA] [JA] Clicked",
+  "@clicked": {
+    "description": "clicked description"
+  },
+  "link": "[JA] [JA] Link",
+  "@link": {
+    "description": "link description"
+  },
+  "meetingReadyMessage": "[JA] [JA] Your meeting is ready! Join now",
+  "@meetingReadyMessage": {
+    "description": "Description"
+  },
+  "pendingInvites": "[JA] [JA] Pending Invites",
+  "@pendingInvites": {
+    "description": "Description"
+  },
+  "statusColon": "[JA] [JA] Status:",
+  "@statusColon": {
+    "description": "statusColon description"
+  },
+  "pleaseLoginToViewProfile": "プロフィールを表示するにはログインしてください",
+  "@pleaseLoginToViewProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "adminMetrics": "[JA] Admin Metrics",
+  "@adminMetrics": {
+    "description": "Localization key for: Admin Metrics"
+  },
+  "overview": "[JA] Overview",
+  "@overview": {
+    "description": "Description"
+  },
+  "bookings": "[JA] Bookings",
+  "@bookings": {
+    "description": "Description"
+  },
+  "users": "[JA] users (TRANSLATE)",
+  "@users": {
+    "description": "users description"
+  },
+  "revenue": "[JA] revenue (TRANSLATE)",
+  "@revenue": {
+    "description": "revenue description"
+  },
+  "contentLibrary": "[JA] Content Library",
+  "@contentLibrary": {
+    "description": "Localization key for: Content Library"
+  },
+  "authErrorUserNotFound": "[JA] No account found with this email address.",
+  "@authErrorUserNotFound": {
+    "description": "Localization key for: No account found with this email address."
+  },
+  "authErrorWrongPassword": "[JA] Incorrect password. Please try again.",
+  "@authErrorWrongPassword": {
+    "description": "Localization key for: Incorrect password. Please try again."
+  },
+  "authErrorInvalidEmail": "[JA] Please enter a valid email address.",
+  "@authErrorInvalidEmail": {
+    "description": "Localization key for: Please enter a valid email address."
+  },
+  "authErrorUserDisabled": "[JA] This account has been disabled. Please contact support.",
+  "@authErrorUserDisabled": {
+    "description": "Localization key for: This account has been disabled. Please contact support."
+  },
+  "authErrorWeakPassword": "[JA] Password is too weak. Please choose a stronger password.",
+  "@authErrorWeakPassword": {
+    "description": "Localization key for: Password is too weak. Please choose a stronger password."
+  },
+  "authErrorEmailAlreadyInUse": "[JA] An account with this email already exists.",
+  "@authErrorEmailAlreadyInUse": {
+    "description": "Localization key for: An account with this email already exists."
+  },
+  "authErrorTooManyRequests": "[JA] Too many failed attempts. Please try again later.",
+  "@authErrorTooManyRequests": {
+    "description": "Localization key for: Too many failed attempts. Please try again later."
+  },
+  "authErrorOperationNotAllowed": "[JA] This sign-in method is not enabled. Please contact support.",
+  "@authErrorOperationNotAllowed": {
+    "description": "Localization key for: This sign-in method is not enabled. Please contact support."
+  },
+  "authErrorInvalidCredential": "[JA] Invalid credentials. Please try again.",
+  "@authErrorInvalidCredential": {
+    "description": "Localization key for: Invalid credentials. Please try again."
+  },
+  "authErrorAccountExistsWithDifferentCredential": "[JA] An account already exists with this email using a different sign-in method.",
+  "@authErrorAccountExistsWithDifferentCredential": {
+    "description": "Localization key for: An account already exists with this email using a different sign-in method."
+  },
+  "authErrorCredentialAlreadyInUse": "[JA] These credentials are already associated with another account.",
+  "@authErrorCredentialAlreadyInUse": {
+    "description": "Localization key for: These credentials are already associated with another account."
+  },
+  "authErrorNetworkRequestFailed": "[JA] Network error. Please check your connection and try again.",
+  "@authErrorNetworkRequestFailed": {
+    "description": "Localization key for: Network error. Please check your connection and try again."
+  },
+  "socialAccountConflictTitle": "تعارض حساب الشبكة الاجتماعية",
+  "@socialAccountConflictTitle": {
+    "description": "Localization key for: Account Already Exists"
+  },
+  "socialAccountConflictMessage": "يبدو أن هناك حساب موجود بالفعل",
+  "@socialAccountConflictMessage": {
+    "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
+  },
+  "linkAccounts": "ربط الحسابات",
+  "@linkAccounts": {
+    "description": "Localization key for: Link Accounts"
+  },
+  "signInWithExistingMethod": "تسجيل الدخول بالطريقة الموجودة",
+  "@signInWithExistingMethod": {
+    "description": "Localization key for: Sign in with existing method"
+  },
+  "authErrorRequiresRecentLogin": "[JA] Please log in again to perform this operation.",
+  "@authErrorRequiresRecentLogin": {
+    "description": "Localization key for: Please log in again to perform this operation."
+  },
+  "authErrorAppNotAuthorized": "[JA] This app is not authorized to use Firebase Authentication.",
+  "@authErrorAppNotAuthorized": {
+    "description": "Localization key for: This app is not authorized to use Firebase Authentication."
+  },
+  "authErrorInvalidVerificationCode": "[JA] The verification code is invalid.",
+  "@authErrorInvalidVerificationCode": {
+    "description": "Localization key for: The verification code is invalid."
+  },
+  "authErrorInvalidVerificationId": "[JA] The verification ID is invalid.",
+  "@authErrorInvalidVerificationId": {
+    "description": "Localization key for: The verification ID is invalid."
+  },
+  "authErrorMissingVerificationCode": "[JA] Please enter the verification code.",
+  "@authErrorMissingVerificationCode": {
+    "description": "Localization key for: Please enter the verification code."
+  },
+  "authErrorMissingVerificationId": "[JA] Missing verification ID.",
+  "@authErrorMissingVerificationId": {
+    "description": "Localization key for: Missing verification ID."
+  },
+  "authErrorInvalidPhoneNumber": "[JA] The phone number is invalid.",
+  "@authErrorInvalidPhoneNumber": {
+    "description": "Localization key for: The phone number is invalid."
+  },
+  "authErrorMissingPhoneNumber": "[JA] Please enter a phone number.",
+  "@authErrorMissingPhoneNumber": {
+    "description": "Localization key for: Please enter a phone number."
+  },
+  "authErrorQuotaExceeded": "[JA] The SMS quota for this project has been exceeded. Please try again later.",
+  "@authErrorQuotaExceeded": {
+    "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
+  },
+  "authErrorCodeExpired": "[JA] The verification code has expired. Please request a new one.",
+  "@authErrorCodeExpired": {
+    "description": "Localization key for: The verification code has expired. Please request a new one."
+  },
+  "authErrorSessionExpired": "[JA] Your session has expired. Please log in again.",
+  "@authErrorSessionExpired": {
+    "description": "Localization key for: Your session has expired. Please log in again."
+  },
+  "authErrorMultiFactorAuthRequired": "[JA] Multi-factor authentication is required.",
+  "@authErrorMultiFactorAuthRequired": {
+    "description": "Localization key for: Multi-factor authentication is required."
+  },
+  "authErrorMultiFactorInfoNotFound": "[JA] Multi-factor information not found.",
+  "@authErrorMultiFactorInfoNotFound": {
+    "description": "Localization key for: Multi-factor information not found."
+  },
+  "authErrorMissingMultiFactorSession": "[JA] Missing multi-factor session.",
+  "@authErrorMissingMultiFactorSession": {
+    "description": "Localization key for: Missing multi-factor session."
+  },
+  "authErrorInvalidMultiFactorSession": "[JA] Invalid multi-factor session.",
+  "@authErrorInvalidMultiFactorSession": {
+    "description": "Localization key for: Invalid multi-factor session."
+  },
+  "authErrorSecondFactorAlreadyInUse": "[JA] This second factor is already in use.",
+  "@authErrorSecondFactorAlreadyInUse": {
+    "description": "Localization key for: This second factor is already in use."
+  },
+  "authErrorMaximumSecondFactorCountExceeded": "[JA] Maximum number of second factors exceeded.",
+  "@authErrorMaximumSecondFactorCountExceeded": {
+    "description": "Localization key for: Maximum number of second factors exceeded."
+  },
+  "authErrorUnsupportedFirstFactor": "[JA] Unsupported first factor for multi-factor authentication.",
+  "@authErrorUnsupportedFirstFactor": {
+    "description": "Localization key for: Unsupported first factor for multi-factor authentication."
+  },
+  "authErrorEmailChangeNeedsVerification": "[JA] Email change requires verification.",
+  "@authErrorEmailChangeNeedsVerification": {
+    "description": "Localization key for: Email change requires verification."
+  },
+  "authErrorPhoneNumberAlreadyExists": "[JA] This phone number is already in use.",
+  "@authErrorPhoneNumberAlreadyExists": {
+    "description": "Localization key for: This phone number is already in use."
+  },
+  "authErrorInvalidPassword": "[JA] The password is invalid or too weak.",
+  "@authErrorInvalidPassword": {
+    "description": "Localization key for: The password is invalid or too weak."
+  },
+  "authErrorInvalidIdToken": "[JA] The ID token is invalid.",
+  "@authErrorInvalidIdToken": {
+    "description": "Localization key for: The ID token is invalid."
+  },
+  "authErrorIdTokenExpired": "[JA] The ID token has expired.",
+  "@authErrorIdTokenExpired": {
+    "description": "Localization key for: The ID token has expired."
+  },
+  "authErrorIdTokenRevoked": "[JA] The ID token has been revoked.",
+  "@authErrorIdTokenRevoked": {
+    "description": "Localization key for: The ID token has been revoked."
+  },
+  "authErrorInternalError": "[JA] An internal error occurred. Please try again.",
+  "@authErrorInternalError": {
+    "description": "Localization key for: An internal error occurred. Please try again."
+  },
+  "authErrorInvalidArgument": "[JA] An invalid argument was provided.",
+  "@authErrorInvalidArgument": {
+    "description": "Localization key for: An invalid argument was provided."
+  },
+  "authErrorInvalidClaims": "[JA] Invalid custom claims provided.",
+  "@authErrorInvalidClaims": {
+    "description": "Localization key for: Invalid custom claims provided."
+  },
+  "authErrorInvalidContinueUri": "[JA] The continue URL is invalid.",
+  "@authErrorInvalidContinueUri": {
+    "description": "Localization key for: The continue URL is invalid."
+  },
+  "authErrorInvalidCreationTime": "[JA] The creation time is invalid.",
+  "@authErrorInvalidCreationTime": {
+    "description": "Localization key for: The creation time is invalid."
+  },
+  "authErrorInvalidDisabledField": "[JA] The disabled field value is invalid.",
+  "@authErrorInvalidDisabledField": {
+    "description": "Localization key for: The disabled field value is invalid."
+  },
+  "authErrorInvalidDisplayName": "[JA] The display name is invalid.",
+  "@authErrorInvalidDisplayName": {
+    "description": "Localization key for: The display name is invalid."
+  },
+  "authErrorInvalidDynamicLinkDomain": "[JA] The dynamic link domain is invalid.",
+  "@authErrorInvalidDynamicLinkDomain": {
+    "description": "Localization key for: The dynamic link domain is invalid."
+  },
+  "authErrorInvalidEmailVerified": "[JA] The email verified value is invalid.",
+  "@authErrorInvalidEmailVerified": {
+    "description": "Localization key for: The email verified value is invalid."
+  },
+  "authErrorInvalidHashAlgorithm": "[JA] The hash algorithm is invalid.",
+  "@authErrorInvalidHashAlgorithm": {
+    "description": "Localization key for: The hash algorithm is invalid."
+  },
+  "authErrorInvalidHashBlockSize": "[JA] The hash block size is invalid.",
+  "@authErrorInvalidHashBlockSize": {
+    "description": "Localization key for: The hash block size is invalid."
+  },
+  "authErrorInvalidHashDerivedKeyLength": "[JA] The hash derived key length is invalid.",
+  "@authErrorInvalidHashDerivedKeyLength": {
+    "description": "Localization key for: The hash derived key length is invalid."
+  },
+  "authErrorInvalidHashKey": "[JA] The hash key is invalid.",
+  "@authErrorInvalidHashKey": {
+    "description": "Localization key for: The hash key is invalid."
+  },
+  "authErrorInvalidHashMemoryCost": "[JA] The hash memory cost is invalid.",
+  "@authErrorInvalidHashMemoryCost": {
+    "description": "Localization key for: The hash memory cost is invalid."
+  },
+  "authErrorInvalidHashParallelization": "[JA] The hash parallelization is invalid.",
+  "@authErrorInvalidHashParallelization": {
+    "description": "Localization key for: The hash parallelization is invalid."
+  },
+  "authErrorInvalidHashRounds": "[JA] The hash rounds value is invalid.",
+  "@authErrorInvalidHashRounds": {
+    "description": "Localization key for: The hash rounds value is invalid."
+  },
+  "authErrorInvalidHashSaltSeparator": "[JA] The hash salt separator is invalid.",
+  "@authErrorInvalidHashSaltSeparator": {
+    "description": "Localization key for: The hash salt separator is invalid."
+  },
+  "authErrorInvalidLastSignInTime": "[JA] The last sign-in time is invalid.",
+  "@authErrorInvalidLastSignInTime": {
+    "description": "Localization key for: The last sign-in time is invalid."
+  },
+  "authErrorInvalidPageToken": "[JA] The page token is invalid.",
+  "@authErrorInvalidPageToken": {
+    "description": "Localization key for: The page token is invalid."
+  },
+  "authErrorInvalidProviderData": "[JA] The provider data is invalid.",
+  "@authErrorInvalidProviderData": {
+    "description": "Localization key for: The provider data is invalid."
+  },
+  "authErrorInvalidProviderId": "[JA] The provider ID is invalid.",
+  "@authErrorInvalidProviderId": {
+    "description": "Localization key for: The provider ID is invalid."
+  },
+  "authErrorInvalidSessionCookieDuration": "[JA] The session cookie duration is invalid.",
+  "@authErrorInvalidSessionCookieDuration": {
+    "description": "Localization key for: The session cookie duration is invalid."
+  },
+  "authErrorInvalidUid": "[JA] The UID is invalid.",
+  "@authErrorInvalidUid": {
+    "description": "Localization key for: The UID is invalid."
+  },
+  "authErrorInvalidUserImport": "[JA] The user import record is invalid.",
+  "@authErrorInvalidUserImport": {
+    "description": "Localization key for: The user import record is invalid."
+  },
+  "authErrorMaximumUserCountExceeded": "[JA] Maximum user import count exceeded.",
+  "@authErrorMaximumUserCountExceeded": {
+    "description": "Localization key for: Maximum user import count exceeded."
+  },
+  "authErrorMissingAndroidPkgName": "[JA] Missing Android package name.",
+  "@authErrorMissingAndroidPkgName": {
+    "description": "Localization key for: Missing Android package name."
+  },
+  "authErrorMissingContinueUri": "[JA] Missing continue URL.",
+  "@authErrorMissingContinueUri": {
+    "description": "Localization key for: Missing continue URL."
+  },
+  "authErrorMissingHashAlgorithm": "[JA] Missing hash algorithm.",
+  "@authErrorMissingHashAlgorithm": {
+    "description": "Localization key for: Missing hash algorithm."
+  },
+  "authErrorMissingIosBundleId": "[JA] Missing iOS bundle ID.",
+  "@authErrorMissingIosBundleId": {
+    "description": "Localization key for: Missing iOS bundle ID."
+  },
+  "authErrorMissingUid": "[JA] Missing UID.",
+  "@authErrorMissingUid": {
+    "description": "Localization key for: Missing UID."
+  },
+  "authErrorMissingOauthClientSecret": "[JA] Missing OAuth client secret.",
+  "@authErrorMissingOauthClientSecret": {
+    "description": "Localization key for: Missing OAuth client secret."
+  },
+  "authErrorProjectNotFound": "[JA] Firebase project not found.",
+  "@authErrorProjectNotFound": {
+    "description": "Localization key for: Firebase project not found."
+  },
+  "authErrorReservedClaims": "[JA] Reserved claims provided.",
+  "@authErrorReservedClaims": {
+    "description": "Localization key for: Reserved claims provided."
+  },
+  "authErrorSessionCookieExpired": "[JA] Session cookie has expired.",
+  "@authErrorSessionCookieExpired": {
+    "description": "Localization key for: Session cookie has expired."
+  },
+  "authErrorSessionCookieRevoked": "[JA] Session cookie has been revoked.",
+  "@authErrorSessionCookieRevoked": {
+    "description": "Localization key for: Session cookie has been revoked."
+  },
+  "authErrorUidAlreadyExists": "[JA] The UID is already in use.",
+  "@authErrorUidAlreadyExists": {
+    "description": "Localization key for: The UID is already in use."
+  },
+  "authErrorUnauthorizedContinueUri": "[JA] The continue URL domain is not whitelisted.",
+  "@authErrorUnauthorizedContinueUri": {
+    "description": "Localization key for: The continue URL domain is not whitelisted."
+  },
+  "authErrorUnknown": "[JA] An unknown authentication error occurred.",
+  "@authErrorUnknown": {
+    "description": "Localization key for: An unknown authentication error occurred."
+  },
+  "checkingPermissions1": "فحص الأذونات...",
+  "@checkingPermissions1": {
+    "description": "Localization key for: Checking permissions..."
+  },
+  "paymentSuccessful": "تم الدفع بنجاح",
+  "@paymentSuccessful": {
+    "description": "Localization key for: Payment Successful!"
+  },
+  "businessAvailability": "توفر الأعمال",
+  "@businessAvailability": {
+    "description": "Localization key for: Business Availability"
+  },
+  "send": "إرسال",
+  "@send": {
+    "description": "Localization key for: Send"
+  },
+  "newNotificationPayloadtitle": "عنوان الإشعار الجديد: {title}",
+  "@newNotificationPayloadtitle": {
+    "description": "Localization key for: New notification: {payloadTitle}"
+  },
+  "gameList": "قائمة الألعاب",
+  "@gameList": {
+    "description": "Localization key for: Game List"
+  },
+  "deleteAvailability": "حذف التوفر",
+  "@deleteAvailability": {
+    "description": "Localization key for: Delete Availability"
+  },
+  "connectToGoogleCalendar": "الاتصال بتقويم Google",
+  "@connectToGoogleCalendar": {
+    "description": "Localization key for: Connect to Google Calendar"
+  },
+  "adminFreeAccess": "[JA] Admin Free Access",
+  "@adminFreeAccess": {
+    "description": "Localization key for: Admin Free Access"
+  },
+  "emailProfileemail": "البريد الإلكتروني للملف الشخصي: {email}",
+  "@emailProfileemail": {
+    "description": "Localization key for: Email: {profileEmail}"
+  },
+  "calendar": "التقويم",
+  "@calendar": {
+    "description": "Localization key for: Calendar"
+  },
+  "upload1": "[JA] Upload (Japanese)",
+  "@upload1": {
+    "description": "Localization key for: Upload"
+  },
+  "resolved": "تم الحل",
+  "@resolved": {
+    "description": "Localization key for: Resolved"
+  },
+  "keepSubscription": "الاحتفاظ بالاشتراك",
+  "@keepSubscription": {
+    "description": "Localization key for: Keep Subscription"
+  },
+  "virtualSessionCreatedInvitingFriends": "[JA] Virtual session created! Inviting friends... (Japanese)",
+  "@virtualSessionCreatedInvitingFriends": {
+    "description": "Localization key for: Virtual session created! Inviting friends..."
+  },
+  "noEventsScheduledForToday": "لا توجد أحداث مجدولة لليوم",
+  "@noEventsScheduledForToday": {
+    "description": "Localization key for: No events scheduled for today"
+  },
+  "exportData": "تصدير البيانات",
+  "@exportData": {
+    "description": "Localization key for: Export Data"
+  },
+  "rewards": "[JA] Rewards (Japanese)",
+  "@rewards": {
+    "description": "Localization key for: Rewards"
+  },
+  "time": "[JA] Time (Japanese)",
+  "@time": {
+    "description": "Localization key for: Time"
+  },
+  "userCid": "[JA] User {id}",
+  "@userCid": {
+    "description": "Localization key for: User {id}"
+  },
+  "noSlots": "[JA] No slots (Japanese)",
+  "@noSlots": {
+    "description": "Localization key for: No slots"
+  },
+  "signIn": "[JA] Sign In (Japanese)",
+  "@signIn": {
+    "description": "Localization key for: Sign In"
+  },
+  "homeFeedScreen": "[JA] Home Feed Screen (Japanese)",
+  "@homeFeedScreen": {
+    "description": "Localization key for: Home Feed Screen"
+  },
+  "selectLocation": "[JA] Select Location (Japanese)",
+  "@selectLocation": {
+    "description": "Localization key for: Select Location"
+  },
+  "noTicketsYet": "[JA] No tickets yet (Japanese)",
+  "@noTicketsYet": {
+    "description": "Localization key for: No tickets yet"
+  },
+  "meetingSharedSuccessfully1": "تم مشاركة الاجتماع بنجاح",
+  "@meetingSharedSuccessfully1": {
+    "description": "Localization key for: Meeting shared successfully!"
+  },
+  "studioProfile": "ملف الاستوديو",
+  "@studioProfile": {
+    "description": "Localization key for: Studio Profile"
+  },
+  "subscriptionUnavailable": "[JA] Subscription unavailable (Japanese)",
+  "@subscriptionUnavailable": {
+    "description": "Localization key for: Subscription unavailable"
+  },
+  "confirmBooking": "[JA] Confirm Booking (Japanese)",
+  "@confirmBooking": {
+    "description": "Localization key for: Confirm Booking"
+  },
+  "failedToUpdatePermissionE": "[JA] Failed to update permission: $e (Japanese)",
+  "@failedToUpdatePermissionE": {
+    "description": "Localization key for: Failed to update permission: $e"
+  },
+  "reject": "[JA] Reject (Japanese)",
+  "@reject": {
+    "description": "Localization key for: Reject"
+  },
+  "ambassadorStatusAmbassadorstatus": "[JA] Ambassador Status: {ambassadorStatus} (Japanese)",
+  "@ambassadorStatusAmbassadorstatus": {
+    "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
+  },
+  "noProviders": "[JA] No providers",
+  "@noProviders": {
+    "description": "Localization key for: No providers"
+  },
+  "checkingSubscription": "[JA] Checking subscription... (Japanese)",
+  "@checkingSubscription": {
+    "description": "Localization key for: Checking subscription..."
+  },
+  "errorPickingImageE": "خطأ في اختيار الصورة: {e}",
+  "@errorPickingImageE": {
+    "description": "Localization key for: Error picking image: $e"
+  },
+  "noContentAvailableYet": "[JA] No content available yet (Japanese)",
+  "@noContentAvailableYet": {
+    "description": "Localization key for: No content available yet"
+  },
+  "resolve": "[JA] Resolve (Japanese)",
+  "@resolve": {
+    "description": "Localization key for: Resolve"
+  },
+  "errorLoadingSurveysError": "[JA] Error loading surveys: $error (Japanese)",
+  "@errorLoadingSurveysError": {
+    "description": "Localization key for: Error loading surveys: $error"
+  },
+  "errorLogerrormessage": "[JA] Error: {errorMessage}",
+  "@errorLogerrormessage": {
+    "description": "Localization key for: Error: {errorMessage}"
+  },
+  "getHelpWithYourAccount": "[JA] Get help with your account (Japanese)",
+  "@getHelpWithYourAccount": {
+    "description": "Localization key for: Get help with your account"
+  },
+  "pay": "[JA] Pay (Japanese)",
+  "@pay": {
+    "description": "Localization key for: Pay"
+  },
+  "noOrganizations": "[JA] noOrganizations (TRANSLATE)",
+  "@noOrganizations": {
+    "description": "noOrganizations description"
+  },
+  "meetingDetails": "تفاصيل الاجتماع",
+  "@meetingDetails": {
+    "description": "meetingDetails description"
+  },
+  "errorLoadingAppointments": "خطأ في تحميل المواعيد",
+  "@errorLoadingAppointments": {
+    "description": "Localization key for: Error loading appointments"
+  },
+  "changesSavedSuccessfully": "[JA] Changes saved successfully! (Japanese)",
+  "@changesSavedSuccessfully": {
+    "description": "Localization key for: Changes saved successfully!"
+  },
+  "createNewInvoice": "[JA] Create New Invoice (Japanese)",
+  "@createNewInvoice": {
+    "description": "Localization key for: Create New Invoice"
+  },
+  "profileNotFound": "الملف الشخصي غير موجود",
+  "@profileNotFound": {
+    "description": "Localization key for: Profile not found."
+  },
+  "errorConfirmingPaymentE": "خطأ في تأكيد الدفع: {e}",
+  "@errorConfirmingPaymentE": {
+    "description": "Localization key for: Error confirming payment: $e"
+  },
+  "inviteFriends": "دعوة الأصدقاء",
+  "@inviteFriends": {
+    "description": "Localization key for: Invite Friends"
+  },
+  "profileSaved": "[JA] Profile saved! (Japanese)",
+  "@profileSaved": {
+    "description": "Localization key for: Profile saved!"
+  },
+  "receiveBookingNotificationsViaEmail": "استقبال إشعارات الحجز عبر البريد الإلكتروني",
+  "@receiveBookingNotificationsViaEmail": {
+    "description": "Localization key for: Receive booking notifications via email"
+  },
+  "valuetointk": "[JA] \\${value}K (Japanese)",
+  "@valuetointk": {
+    "description": "Localization key for: \\${value}K"
+  },
+  "deleteAccount": "[JA] Delete Account (Japanese)",
+  "@deleteAccount": {
+    "description": "Localization key for: Delete Account"
+  },
+  "profile1": "الملف الشخصي",
+  "@profile1": {
+    "description": "Localization key for: Profile"
+  },
+  "businessOnboarding": "[JA] Business Onboarding (Japanese)",
+  "@businessOnboarding": {
+    "description": "Localization key for: Business Onboarding"
+  },
+  "addNewClient": "[JA] Add New Client (Japanese)",
+  "@addNewClient": {
+    "description": "Localization key for: Add New Client"
+  },
+  "darkMode": "[JA] Dark Mode (Japanese)",
+  "@darkMode": {
+    "description": "Localization key for: Dark Mode"
+  },
+  "addProvider": "[JA] Add Provider",
+  "@addProvider": {
+    "description": "Localization key for: Add Provider"
+  },
+  "noRouteDefinedForStateuripath": "[JA] No route defined for {path}",
+  "@noRouteDefinedForStateuripath": {
+    "description": "Localization key for: No route defined for {path}"
+  },
+  "youWillReceiveAConfirmationEmailShortly": "[JA] You will receive a confirmation email shortly. (Japanese)",
+  "@youWillReceiveAConfirmationEmailShortly": {
+    "description": "Localization key for: You will receive a confirmation email shortly."
+  },
+  "addQuestion": "[JA] Add Question (Japanese)",
+  "@addQuestion": {
+    "description": "Localization key for: Add Question"
+  },
+  "privacyPolicy": "[JA] Privacy Policy (Japanese)",
+  "@privacyPolicy": {
+    "description": "Localization key for: Privacy Policy"
+  },
+  "branchesLengthBranches": "[JA] {branchCount} branches (Japanese)",
+  "@branchesLengthBranches": {
+    "description": "Localization key for: {branchCount} branches"
+  },
+  "join": "[JA] Join (Japanese)",
+  "@join": {
+    "description": "Localization key for: Join"
+  },
+  "businessSubscription": "[JA] Business Subscription (Japanese)",
+  "@businessSubscription": {
+    "description": "Localization key for: Business Subscription"
+  },
+  "myInvites1": "دعواتي",
+  "@myInvites1": {
+    "description": "Localization key for: My Invites"
+  },
+  "providers": "[JA] Providers",
+  "@providers": {
+    "description": "Localization key for: Providers"
+  },
+  "surveyManagement": "[JA] Survey Management (Japanese)",
+  "@surveyManagement": {
+    "description": "Localization key for: Survey Management"
+  },
+  "pleaseEnterAValidEmailOrPhone": "[JA] Please enter a valid email or phone",
+  "@pleaseEnterAValidEmailOrPhone": {
+    "description": "Localization key for: Please enter a valid email or phone"
+  },
+  "noRoomsFoundAddYourFirstRoom": "[JA] No rooms found. Add your first room! (Japanese)",
+  "@noRoomsFoundAddYourFirstRoom": {
+    "description": "Localization key for: No rooms found. Add your first room!"
+  },
+  "readOurPrivacyPolicy": "[JA] Read our privacy policy (Japanese)",
+  "@readOurPrivacyPolicy": {
+    "description": "Localization key for: Read our privacy policy"
+  },
+  "couldNotOpenPrivacyPolicy": "[JA] Could not open privacy policy (Japanese)",
+  "@couldNotOpenPrivacyPolicy": {
+    "description": "Localization key for: Could not open privacy policy"
+  },
+  "refresh1": "[JA] Refresh (Japanese)",
+  "@refresh1": {
+    "description": "Localization key for: Refresh"
+  },
+  "roomUpdatedSuccessfully": "[JA] Room updated successfully! (Japanese)",
+  "@roomUpdatedSuccessfully": {
+    "description": "Localization key for: Room updated successfully!"
+  },
+  "contentDetail": "[JA] Content Detail (Japanese)",
+  "@contentDetail": {
+    "description": "Localization key for: Content Detail"
+  },
+  "cancelSubscription": "[JA] Cancel Subscription (Japanese)",
+  "@cancelSubscription": {
+    "description": "Localization key for: Cancel Subscription"
+  },
+  "successfullyRegisteredAsAmbassador": "[JA] Successfully registered as Ambassador! (Japanese)",
+  "@successfullyRegisteredAsAmbassador": {
+    "description": "Localization key for: Successfully registered as Ambassador!"
+  },
+  "save1": "[JA] Save (Japanese)",
+  "@save1": {
+    "description": "Localization key for: Save"
+  },
+  "copy1": "[JA] Copy (Japanese)",
+  "@copy1": {
+    "description": "Localization key for: Copy"
+  },
+  "failedToSendInvitationE": "[JA] Failed to send invitation: $e (Japanese)",
+  "@failedToSendInvitationE": {
+    "description": "Localization key for: Failed to send invitation: $e"
+  },
+  "surveyScore": "[JA] Survey Score (Japanese)",
+  "@surveyScore": {
+    "description": "Localization key for: Survey Score"
+  },
+  "userUserid": "[JA] User $userId",
+  "@userUserid": {
+    "description": "Localization key for: User $userId"
+  },
+  "noAppointmentsFound": "[JA] No appointments found. (Japanese)",
+  "@noAppointmentsFound": {
+    "description": "Localization key for: No appointments found."
+  },
+  "responseDetail": "[JA] Response Detail (Japanese)",
+  "@responseDetail": {
+    "description": "Localization key for: Response Detail"
+  },
+  "businessVerificationScreenComingSoon": "شاشة التحقق من الأعمال - قريباً",
+  "@businessVerificationScreenComingSoon": {
+    "description": "Localization key for: Business Verification Screen - Coming Soon"
+  },
+  "businessProfileActivatedSuccessfully": "تم تفعيل الملف التجاري بنجاح",
+  "@businessProfileActivatedSuccessfully": {
+    "description": "Localization key for: Business profile activated successfully!"
+  },
+  "failedToStartProSubscriptionE": "[JA] Failed to start Pro subscription: $e (Japanese)",
+  "@failedToStartProSubscriptionE": {
+    "description": "Localization key for: Failed to start Pro subscription: $e"
+  },
+  "businessDashboardEntryScreenComingSoon": "[JA] Business Dashboard Entry Screen - Coming Soon (Japanese)",
+  "@businessDashboardEntryScreenComingSoon": {
+    "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
+  },
+  "contentFilter": "[JA] Content Filter (Japanese)",
+  "@contentFilter": {
+    "description": "Localization key for: Content Filter"
+  },
+  "helpSupport": "[JA] Help & Support (Japanese)",
+  "@helpSupport": {
+    "description": "Localization key for: Help & Support"
+  },
+  "editRoom": "[JA] Edit Room (Japanese)",
+  "@editRoom": {
+    "description": "Localization key for: Edit Room"
+  },
+  "appointmentApptid": "[JA] Appointment: {appointmentId}",
+  "@appointmentApptid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "deviceLogdeviceinfo": "[JA] Device: {deviceInfo}",
+  "@deviceLogdeviceinfo": {
+    "description": "Localization key for: Device: {deviceInfo}"
+  },
+  "businessCrmEntryScreenComingSoon": "[JA] Business CRM Entry Screen - Coming Soon (Japanese)",
+  "@businessCrmEntryScreenComingSoon": {
+    "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
+  },
+  "adminDashboard": "[JA] Admin Dashboard",
+  "@adminDashboard": {
+    "description": "Localization key for: Admin Dashboard"
+  },
+  "orgmemberidslengthMembers": "[JA] {memberCount} members",
+  "@orgmemberidslengthMembers": {
+    "description": "Localization key for: {memberCount} members"
+  },
+  "errorLoadingDashboardError": "[JA] Error loading dashboard: $error (Japanese)",
+  "@errorLoadingDashboardError": {
+    "description": "Localization key for: Error loading dashboard: $error"
+  },
+  "gameDeletedSuccessfully": "[JA] Game deleted successfully! (Japanese)",
+  "@gameDeletedSuccessfully": {
+    "description": "Localization key for: Game deleted successfully!"
+  },
+  "viewResponsesComingSoon": "[JA] View responses - Coming soon! (Japanese)",
+  "@viewResponsesComingSoon": {
+    "description": "Localization key for: View responses - Coming soon!"
+  },
+  "deleteProvider": "[JA] Delete Provider",
+  "@deleteProvider": {
+    "description": "Localization key for: Delete Provider"
+  },
+  "errorLoadingRewards": "[JA] Error loading rewards (Japanese)",
+  "@errorLoadingRewards": {
+    "description": "Localization key for: Error loading rewards"
+  },
+  "failedToDeleteAccountE": "[JA] Failed to delete account: $e (Japanese)",
+  "@failedToDeleteAccountE": {
+    "description": "Localization key for: Failed to delete account: $e"
+  },
+  "invited1": "[JA] Invited (Japanese)",
+  "@invited1": {
+    "description": "Localization key for: Invited"
+  },
+  "noBranchesAvailable": "[JA] No branches available (Japanese)",
+  "@noBranchesAvailable": {
+    "description": "Localization key for: No branches available"
+  },
+  "errorError": "[JA] Error: $error (Japanese)",
+  "@errorError": {
+    "description": "Localization key for: Error: $error"
+  },
+  "noEvents": "[JA] No events (Japanese)",
+  "@noEvents": {
+    "description": "Localization key for: No events"
+  },
+  "gameCreatedSuccessfully": "[JA] Game created successfully! (Japanese)",
+  "@gameCreatedSuccessfully": {
+    "description": "Localization key for: Game created successfully!"
+  },
+  "add1": "[JA] Add (Japanese)",
+  "@add1": {
+    "description": "Localization key for: Add"
+  },
+  "creatorCreatorid": "[JA] Creator: $creatorId",
+  "@creatorCreatorid": {
+    "description": "Localization key for: Creator: $creatorId"
+  },
+  "eventstarttimeEventendtime": "[JA] {startTime} - {endTime} (Japanese)",
+  "@eventstarttimeEventendtime": {
+    "description": "Localization key for: {startTime} - {endTime}"
+  },
+  "allowPlaytime": "[JA] Allow Playtime (Japanese)",
+  "@allowPlaytime": {
+    "description": "Localization key for: Allow Playtime"
+  },
+  "clients": "[JA] Clients (Japanese)",
+  "@clients": {
+    "description": "Localization key for: Clients"
+  },
+  "noAmbassadorDataAvailable": "[JA] No ambassador data available (Japanese)",
+  "@noAmbassadorDataAvailable": {
+    "description": "Localization key for: No ambassador data available"
+  },
+  "backgroundDeletedSuccessfully": "[JA] Background deleted successfully! (Japanese)",
+  "@backgroundDeletedSuccessfully": {
+    "description": "Localization key for: Background deleted successfully!"
+  },
+  "errorSnapshoterror": "[JA] Error: {error} (Japanese)",
+  "@errorSnapshoterror": {
+    "description": "Localization key for: Error: {error}"
+  },
+  "noAnalyticsDataAvailableYet": "[JA] No analytics data available yet. (Japanese)",
+  "@noAnalyticsDataAvailableYet": {
+    "description": "Localization key for: No analytics data available yet."
+  },
+  "errorDeletingSlotE": "خطأ في حذف الفترة: {e}",
+  "@errorDeletingSlotE": {
+    "description": "Localization key for: Error deleting slot: $e"
+  },
+  "businessPhoneBookingEntryScreenComingSoon": "[JA] Business Phone Booking Entry Screen - Coming Soon (Japanese)",
+  "@businessPhoneBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
+  },
+  "verification": "[JA] Verification (Japanese)",
+  "@verification": {
+    "description": "Localization key for: Verification"
+  },
+  "copyLink": "[JA] Copy Link (Japanese)",
+  "@copyLink": {
+    "description": "Localization key for: Copy Link"
+  },
+  "dashboard1": "[JA] Dashboard (Japanese)",
+  "@dashboard1": {
+    "description": "Localization key for: Dashboard"
+  },
+  "manageChildAccounts": "[JA] Manage Child Accounts (Japanese)",
+  "@manageChildAccounts": {
+    "description": "Localization key for: Manage Child Accounts"
+  },
+  "grantConsent": "[JA] Grant Consent (Japanese)",
+  "@grantConsent": {
+    "description": "Localization key for: Grant Consent"
+  },
+  "myProfile1": "[JA] My Profile (Japanese)",
+  "@myProfile1": {
+    "description": "Localization key for: My Profile"
+  },
+  "submit": "[JA] Submit (Japanese)",
+  "@submit": {
+    "description": "Localization key for: Submit"
+  },
+  "userLoguseremail": "[JA] User: {userEmail}",
+  "@userLoguseremail": {
+    "description": "Localization key for: User: {userEmail}"
+  },
+  "emailNotifications": "إشعارات البريد الإلكتروني",
+  "@emailNotifications": {
+    "description": "Localization key for: Email Notifications"
+  },
+  "ambassadorDashboard": "[JA] Ambassador Dashboard (Japanese)",
+  "@ambassadorDashboard": {
+    "description": "Localization key for: Ambassador Dashboard"
+  },
+  "phoneBooking": "[JA] Phone Booking (Japanese)",
+  "@phoneBooking": {
+    "description": "Localization key for: Phone Booking"
+  },
+  "bookViaChat": "[JA] Book via Chat (Japanese)",
+  "@bookViaChat": {
+    "description": "Localization key for: Book via Chat"
+  },
+  "error": "エラー",
+  "@error": {
+    "description": "Description"
+  },
+  "businessProfile": "[JA] Business Profile (Japanese)",
+  "@businessProfile": {
+    "description": "Localization key for: Business Profile"
+  },
+  "businessBookingEntryScreenComingSoon": "[JA] Business Booking Entry Screen - Coming Soon (Japanese)",
+  "@businessBookingEntryScreenComingSoon": {
+    "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
+  },
+  "createNewSurvey": "[JA] Create New Survey (Japanese)",
+  "@createNewSurvey": {
+    "description": "Localization key for: Create New Survey"
+  },
+  "backgroundRejected": "[JA] Background rejected (Japanese)",
+  "@backgroundRejected": {
+    "description": "Localization key for: Background rejected"
+  },
+  "noMediaSelected": "[JA] No media selected (Japanese)",
+  "@noMediaSelected": {
+    "description": "Localization key for: No media selected"
+  },
+  "syncToGoogle": "[JA] Sync to Google (Japanese)",
+  "@syncToGoogle": {
+    "description": "Localization key for: Sync to Google"
+  },
+  "virtualPlaytime": "[JA] Virtual Playtime (Japanese)",
+  "@virtualPlaytime": {
+    "description": "Localization key for: Virtual Playtime"
+  },
+  "colorContrastTesting": "[JA] Color Contrast Testing",
+  "@colorContrastTesting": {
+    "description": "Localization key for: Color Contrast Testing"
+  },
+  "loginFailedE": "[JA] Login failed: $e",
+  "@loginFailedE": {
+    "description": "Localization key for: Login failed: $e"
+  },
+  "invitationSentSuccessfully": "[JA] Invitation sent successfully! (Japanese)",
+  "@invitationSentSuccessfully": {
+    "description": "Localization key for: Invitation sent successfully!"
+  },
+  "registering": "[JA] Registering... (Japanese)",
+  "@registering": {
+    "description": "Localization key for: Registering..."
+  },
+  "statusAppointmentstatusname": "[JA] Status: {status} (Japanese)",
+  "@statusAppointmentstatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "home1": "[JA] Home (Japanese)",
+  "@home1": {
+    "description": "Localization key for: Home"
+  },
+  "errorSavingSettingsE": "[JA] Error saving settings: $e (Japanese)",
+  "@errorSavingSettingsE": {
+    "description": "Localization key for: Error saving settings: $e"
+  },
+  "appVersionAndInformation": "[JA] App version and information (Japanese)",
+  "@appVersionAndInformation": {
+    "description": "Localization key for: App version and information"
+  },
+  "businessSubscriptionEntryScreenComingSoon": "[JA] Business Subscription Entry Screen - Coming Soon (Japanese)",
+  "@businessSubscriptionEntryScreenComingSoon": {
+    "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
+  },
+  "ekeyEvalue": "[JA] {key}: {value} (Japanese)",
+  "@ekeyEvalue": {
+    "description": "Localization key for: {key}: {value}"
+  },
+  "yourPaymentHasBeenProcessedSuccessfully": "[JA] Your payment has been processed successfully. (Japanese)",
+  "@yourPaymentHasBeenProcessedSuccessfully": {
+    "description": "Localization key for: Your payment has been processed successfully."
+  },
+  "errorE": "[JA] Error: $e (Japanese)",
+  "@errorE": {
+    "description": "Localization key for: Error: $e"
+  },
+  "viewAll1": "[JA] View All (Japanese)",
+  "@viewAll1": {
+    "description": "Localization key for: View All"
+  },
+  "editSurveyComingSoon": "[JA] Edit survey - Coming soon! (Japanese)",
+  "@editSurveyComingSoon": {
+    "description": "Localization key for: Edit survey - Coming soon!"
+  },
+  "enterOtp": "[JA] Enter OTP (Japanese)",
+  "@enterOtp": {
+    "description": "Localization key for: Enter OTP"
+  },
+  "payment": "[JA] Payment (Japanese)",
+  "@payment": {
+    "description": "Localization key for: Payment"
+  },
+  "automaticallyConfirmNewBookingRequests": "[JA] Automatically confirm new booking requests (Japanese)",
+  "@automaticallyConfirmNewBookingRequests": {
+    "description": "Localization key for: Automatically confirm new booking requests"
+  },
+  "errorPickingVideoE": "خطأ في اختيار الفيديو: {e}",
+  "@errorPickingVideoE": {
+    "description": "Localization key for: Error picking video: $e"
+  },
+  "noRouteDefinedForSettingsname": "[JA] No route defined for {settingsName} (Japanese)",
+  "@noRouteDefinedForSettingsname": {
+    "description": "Localization key for: No route defined for {settingsName}"
+  },
+  "pleaseSignInToUploadABackground": "[JA] Please sign in to upload a background (Japanese)",
+  "@pleaseSignInToUploadABackground": {
+    "description": "Localization key for: Please sign in to upload a background"
+  },
+  "logtargettypeLogtargetid": "[JA] {targetType}: {targetId}",
+  "@logtargettypeLogtargetid": {
+    "description": "Localization key for: {targetType}: {targetId}"
+  },
+  "staffAvailability": "[JA] Staff Availability (Japanese)",
+  "@staffAvailability": {
+    "description": "Localization key for: Staff Availability"
+  },
+  "livePlaytime": "[JA] Live Playtime (Japanese)",
+  "@livePlaytime": {
+    "description": "Localization key for: Live Playtime"
+  },
+  "autoconfirmBookings": "[JA] Auto-Confirm Bookings (Japanese)",
+  "@autoconfirmBookings": {
+    "description": "Localization key for: Auto-Confirm Bookings"
+  },
+  "redirectingToStripeCheckoutForProPlan": "[JA] Redirecting to Stripe checkout for Pro plan... (Japanese)",
+  "@redirectingToStripeCheckoutForProPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
+  },
+  "exportAsCsv": "[JA] Export as CSV (Japanese)",
+  "@exportAsCsv": {
+    "description": "Localization key for: Export as CSV"
+  },
+  "deleteFunctionalityComingSoon": "[JA] Delete functionality coming soon! (Japanese)",
+  "@deleteFunctionalityComingSoon": {
+    "description": "Localization key for: Delete functionality coming soon!"
+  },
+  "editClient": "[JA] Edit Client (Japanese)",
+  "@editClient": {
+    "description": "Localization key for: Edit Client"
+  },
+  "areYouSureYouWantToDeleteThisMessage": "[JA] Are you sure you want to delete this message? (Japanese)",
+  "@areYouSureYouWantToDeleteThisMessage": {
+    "description": "Localization key for: Are you sure you want to delete this message?"
+  },
+  "referralsAmbassadorreferrals": "[JA] Referrals: {referrals} (Japanese)",
+  "@referralsAmbassadorreferrals": {
+    "description": "Localization key for: Referrals: {referrals}"
+  },
+  "notAuthenticated": "[JA] Not authenticated",
+  "@notAuthenticated": {
+    "description": "Localization key for: Not authenticated"
+  },
+  "privacyRequestSentToYourParents": "[JA] Privacy request sent to your parents! (Japanese)",
+  "@privacyRequestSentToYourParents": {
+    "description": "Localization key for: Privacy request sent to your parents!"
+  },
+  "clientDeletedSuccessfully": "[JA] Client deleted successfully! (Japanese)",
+  "@clientDeletedSuccessfully": {
+    "description": "Localization key for: Client deleted successfully!"
+  },
+  "failedToCancelSubscription": "[JA] Failed to cancel subscription (Japanese)",
+  "@failedToCancelSubscription": {
+    "description": "Localization key for: Failed to cancel subscription"
+  },
+  "allLanguages": "[JA] All Languages (Japanese)",
+  "@allLanguages": {
+    "description": "Localization key for: All Languages"
+  },
+  "slotDeletedSuccessfully": "[JA] Slot deleted successfully (Japanese)",
+  "@slotDeletedSuccessfully": {
+    "description": "Localization key for: Slot deleted successfully"
+  },
+  "businessProvidersEntryScreenComingSoon": "[JA] Business Providers Entry Screen - Coming Soon",
+  "@businessProvidersEntryScreenComingSoon": {
+    "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
+  },
+  "parentsMustApproveBeforeChildrenCanJoin": "[JA] Parents must approve before children can join (Japanese)",
+  "@parentsMustApproveBeforeChildrenCanJoin": {
+    "description": "Localization key for: Parents must approve before children can join"
+  },
+  "subscribeToPro1499mo": "[JA] Subscribe to Pro (€14.99/mo) (Japanese)",
+  "@subscribeToPro1499mo": {
+    "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
+  },
+  "businessAvailabilityEntryScreenComingSoon": "[JA] Business Availability Entry Screen - Coming Soon (Japanese)",
+  "@businessAvailabilityEntryScreenComingSoon": {
+    "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
+  },
+  "appointmentsListlength": "[JA] Appointments: {count} (Japanese)",
+  "@appointmentsListlength": {
+    "description": "Localization key for: Appointments: {count}"
+  },
+  "clearFilters": "[JA] Clear Filters (Japanese)",
+  "@clearFilters": {
+    "description": "Localization key for: Clear Filters"
+  },
+  "submitBooking": "[JA] Submit Booking (Japanese)",
+  "@submitBooking": {
+    "description": "Localization key for: Submit Booking"
+  },
+  "areYouSureYouWantToCancelThisAppointment": "[JA] Are you sure you want to cancel this appointment? (Japanese)",
+  "@areYouSureYouWantToCancelThisAppointment": {
+    "description": "Localization key for: Are you sure you want to cancel this appointment?"
+  },
+  "noUpcomingBookings": "[JA] No upcoming bookings (Japanese)",
+  "@noUpcomingBookings": {
+    "description": "Localization key for: No upcoming bookings"
+  },
+  "goBack": "[JA] Go Back (Japanese)",
+  "@goBack": {
+    "description": "Localization key for: Go Back"
+  },
+  "setup": "[JA] Setup (Japanese)",
+  "@setup": {
+    "description": "Localization key for: Setup"
+  },
+  "inviteChild": "[JA] Invite Child (Japanese)",
+  "@inviteChild": {
+    "description": "Localization key for: Invite Child"
+  },
+  "goToDashboard": "[JA] Go to Dashboard (Japanese)",
+  "@goToDashboard": {
+    "description": "Localization key for: Go to Dashboard"
+  },
+  "ambassadorQuotaDashboard": "[JA] Ambassador Quota Dashboard (Japanese)",
+  "@ambassadorQuotaDashboard": {
+    "description": "Localization key for: Ambassador Quota Dashboard"
+  },
+  "adminSettings": "[JA] Admin Settings",
+  "@adminSettings": {
+    "description": "Localization key for: Admin Settings"
+  },
+  "referralCode": "[JA] Referral Code (Japanese)",
+  "@referralCode": {
+    "description": "Localization key for: Referral Code"
+  },
+  "adminLogadminemail": "[JA] Admin: {adminEmail}",
+  "@adminLogadminemail": {
+    "description": "Localization key for: Admin: {adminEmail}"
+  },
+  "date": "[JA] Date (Japanese)",
+  "@date": {
+    "description": "Localization key for: Date"
+  },
+  "readOnly": "[JA] Read Only (Japanese)",
+  "@readOnly": {
+    "description": "Localization key for: Read Only"
+  },
+  "bookingRequest": "[JA] Booking Request (Japanese)",
+  "@bookingRequest": {
+    "description": "Localization key for: Booking Request"
+  },
+  "advancedReporting": "[JA] • Advanced reporting (Japanese)",
+  "@advancedReporting": {
+    "description": "Localization key for: • Advanced reporting"
+  },
+  "rooms": "[JA] Rooms (Japanese)",
+  "@rooms": {
+    "description": "Localization key for: Rooms"
+  },
+  "copiedToClipboard": "[JA] Copied to clipboard (Japanese)",
+  "@copiedToClipboard": {
+    "description": "Localization key for: Copied to clipboard"
+  },
+  "bookingConfirmed": "[JA] Booking Confirmed (Japanese)",
+  "@bookingConfirmed": {
+    "description": "Localization key for: Booking Confirmed"
+  },
+  "sessionApproved": "تمت الموافقة على الجلسة",
+  "@sessionApproved": {
+    "description": "Localization key for: Session approved!"
+  },
+  "clientAddedSuccessfully": "[JA] Client added successfully! (Japanese)",
+  "@clientAddedSuccessfully": {
+    "description": "Localization key for: Client added successfully!"
+  },
+  "noNotifications": "لا توجد إشعارات",
+  "@noNotifications": {
+    "description": "Localization key for: No notifications"
+  },
+  "backgroundApproved": "[JA] Background approved! (Japanese)",
+  "@backgroundApproved": {
+    "description": "Localization key for: Background approved!"
+  },
+  "familySupport": "[JA] Family Support (Japanese)",
+  "@familySupport": {
+    "description": "Localization key for: Family Support"
+  },
+  "deletingAccount": "[JA] Deleting account... (Japanese)",
+  "@deletingAccount": {
+    "description": "Localization key for: Deleting account..."
+  },
+  "bookAppointment": "[JA] Book Appointment (Japanese)",
+  "@bookAppointment": {
+    "description": "Localization key for: Book Appointment"
+  },
+  "receivePushNotificationsForNewBookings": "استقبال إشعارات الدفع للحجوزات الجديدة",
+  "@receivePushNotificationsForNewBookings": {
+    "description": "Localization key for: Receive push notifications for new bookings"
+  },
+  "delete1": "[JA] Delete (Japanese)",
+  "@delete1": {
+    "description": "Localization key for: Delete"
+  },
+  "sendBookingInvite": "[JA] Send Booking Invite (Japanese)",
+  "@sendBookingInvite": {
+    "description": "Localization key for: Send Booking Invite"
+  },
+  "text": "[JA] Text (Japanese)",
+  "@text": {
+    "description": "Localization key for: Text"
+  },
+  "manageSubscription": "[JA] Manage Subscription (Japanese)",
+  "@manageSubscription": {
+    "description": "Localization key for: Manage Subscription"
+  },
+  "requiresInstallFallback": "[JA] Requires Install Fallback (Japanese)",
+  "@requiresInstallFallback": {
+    "description": "Localization key for: Requires Install Fallback"
+  },
+  "paymentConfirmation": "[JA] Payment Confirmation (Japanese)",
+  "@paymentConfirmation": {
+    "description": "Localization key for: Payment Confirmation"
+  },
+  "promoAppliedYourNextBillIsFree": "[JA] Promo applied! Your next bill is free. (Japanese)",
+  "@promoAppliedYourNextBillIsFree": {
+    "description": "Localization key for: Promo applied! Your next bill is free."
+  },
+  "inviteeArgsinviteeid": "المدعو: {inviteeId}",
+  "@inviteeArgsinviteeid": {
+    "description": "Localization key for: Invitee: {inviteeId}"
+  },
+  "errorLoadingSlots": "[JA] Error loading slots (Japanese)",
+  "@errorLoadingSlots": {
+    "description": "Localization key for: Error loading slots"
+  },
+  "allowOtherUsersToFindAndJoinThisGame": "[JA] Allow other users to find and join this game (Japanese)",
+  "@allowOtherUsersToFindAndJoinThisGame": {
+    "description": "Localization key for: Allow other users to find and join this game"
+  },
+  "businessOnboardingScreenComingSoon": "[JA] Business Onboarding Screen - Coming Soon (Japanese)",
+  "@businessOnboardingScreenComingSoon": {
+    "description": "Localization key for: Business Onboarding Screen - Coming Soon"
+  },
+  "activateBusinessProfile": "[JA] Activate Business Profile (Japanese)",
+  "@activateBusinessProfile": {
+    "description": "Localization key for: Activate Business Profile"
+  },
+  "contentNotFound": "[JA] Content not found (Japanese)",
+  "@contentNotFound": {
+    "description": "Localization key for: Content not found"
+  },
+  "pspecialtynpcontactinfo": "[JA] {specialty}\\n{contactInfo} (Japanese)",
+  "@pspecialtynpcontactinfo": {
+    "description": "Localization key for: {specialty}\\n{contactInfo}"
+  },
+  "rating": "[JA] Rating (Japanese)",
+  "@rating": {
+    "description": "Localization key for: Rating"
+  },
+  "messages": "[JA] Messages (Japanese)",
+  "@messages": {
+    "description": "Localization key for: Messages"
+  },
+  "errorEstimatingRecipientsE": "خطأ في تقدير المستلمين: {e}",
+  "@errorEstimatingRecipientsE": {
+    "description": "Localization key for: Error estimating recipients: $e"
+  },
+  "becomeAnAmbassador": "[JA] Become an Ambassador (Japanese)",
+  "@becomeAnAmbassador": {
+    "description": "Localization key for: Become an Ambassador"
+  },
+  "subscribeNow": "[JA] Subscribe Now (Japanese)",
+  "@subscribeNow": {
+    "description": "Localization key for: Subscribe Now"
+  },
+  "timeArgsslotformatcontext": "[JA] Time: {time} (Japanese)",
+  "@timeArgsslotformatcontext": {
+    "description": "Localization key for: Time: {time}"
+  },
+  "shareViaWhatsapp": "[JA] Share via WhatsApp (Japanese)",
+  "@shareViaWhatsapp": {
+    "description": "Localization key for: Share via WhatsApp"
+  },
+  "users1": "[JA] Users (Japanese)",
+  "@users1": {
+    "description": "Localization key for: Users"
+  },
+  "shareLink": "[JA] Share Link (Japanese)",
+  "@shareLink": {
+    "description": "Localization key for: Share Link"
+  },
+  "areYouSureYouWantToDeleteThisProvider": "[JA] Are you sure you want to delete this provider?",
+  "@areYouSureYouWantToDeleteThisProvider": {
+    "description": "Localization key for: Are you sure you want to delete this provider?"
+  },
+  "deleteAppointment": "[JA] Delete Appointment (Japanese)",
+  "@deleteAppointment": {
+    "description": "Localization key for: Delete Appointment"
+  },
+  "toggleAvailability": "[JA] Toggle Availability (Japanese)",
+  "@toggleAvailability": {
+    "description": "Localization key for: Toggle Availability"
+  },
+  "changePlan": "[JA] Change Plan (Japanese)",
+  "@changePlan": {
+    "description": "Localization key for: Change Plan"
+  },
+  "errorLoadingStaff": "[JA] Error loading staff (Japanese)",
+  "@errorLoadingStaff": {
+    "description": "Localization key for: Error loading staff"
+  },
+  "errorLoadingConfigurationE": "خطأ في تحميل التكوين: {e}",
+  "@errorLoadingConfigurationE": {
+    "description": "Localization key for: Error loading configuration: $e"
+  },
+  "updateYourBusinessInformation": "[JA] Update your business information (Japanese)",
+  "@updateYourBusinessInformation": {
+    "description": "Localization key for: Update your business information"
+  },
+  "noProvidersFoundAddYourFirstProvider": "[JA] No providers found. Add your first provider!",
+  "@noProvidersFoundAddYourFirstProvider": {
+    "description": "Localization key for: No providers found. Add your first provider!"
+  },
+  "parentDashboard": "[JA] Parent Dashboard (Japanese)",
+  "@parentDashboard": {
+    "description": "Localization key for: Parent Dashboard"
+  },
+  "menu": "[JA] Menu (Japanese)",
+  "@menu": {
+    "description": "Localization key for: Menu"
+  },
+  "studioBooking": "[JA] Studio Booking (Japanese)",
+  "@studioBooking": {
+    "description": "Localization key for: Studio Booking"
+  },
+  "about1": "[JA] About (Japanese)",
+  "@about1": {
+    "description": "Localization key for: About"
+  },
+  "multipleChoice": "[JA] Multiple Choice (Japanese)",
+  "@multipleChoice": {
+    "description": "Localization key for: Multiple Choice"
+  },
+  "dateAppointmentscheduledattostring": "[JA] Date: {date} (Japanese)",
+  "@dateAppointmentscheduledattostring": {
+    "description": "Localization key for: Date: {date}"
+  },
+  "studioBookingIsOnlyAvailableOnWeb": "[JA] Studio booking is only available on web (Japanese)",
+  "@studioBookingIsOnlyAvailableOnWeb": {
+    "description": "Localization key for: Studio booking is only available on web"
+  },
+  "errorLoadingBranchesE": "[JA] Error loading branches: $e (Japanese)",
+  "@errorLoadingBranchesE": {
+    "description": "Localization key for: Error loading branches: $e"
+  },
+  "ud83dudcc5Bookingdatetimetolocal": "[JA] \\uD83D\\uDCC5 {dateTime} (Japanese)",
+  "@ud83dudcc5Bookingdatetimetolocal": {
+    "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
+  },
+  "appointmentInviteappointmentid": "دعوة الموعد: {appointmentId}",
+  "@appointmentInviteappointmentid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "none": "[JA] None (Japanese)",
+  "@none": {
+    "description": "Localization key for: None"
+  },
+  "failedToUpdateConsentE": "[JA] Failed to update consent: $e (Japanese)",
+  "@failedToUpdateConsentE": {
+    "description": "Localization key for: Failed to update consent: $e"
+  },
+  "welcome1": "[JA] Welcome (Japanese)",
+  "@welcome1": {
+    "description": "Localization key for: Welcome"
+  },
+  "failedToCreateSessionE": "[JA] Failed to create session: $e (Japanese)",
+  "@failedToCreateSessionE": {
+    "description": "Localization key for: Failed to create session: $e"
+  },
+  "inviteContact": "[JA] Invite Contact (Japanese)",
+  "@inviteContact": {
+    "description": "Localization key for: Invite Contact"
+  },
+  "surveyEditor": "[JA] Survey Editor (Japanese)",
+  "@surveyEditor": {
+    "description": "Localization key for: Survey Editor"
+  },
+  "failedToStartBasicSubscriptionE": "[JA] Failed to start Basic subscription: $e (Japanese)",
+  "@failedToStartBasicSubscriptionE": {
+    "description": "Localization key for: Failed to start Basic subscription: $e"
+  },
+  "mySchedule": "[JA] My Schedule (Japanese)",
+  "@mySchedule": {
+    "description": "Localization key for: My Schedule"
+  },
+  "studioDashboard": "[JA] Studio Dashboard (Japanese)",
+  "@studioDashboard": {
+    "description": "Localization key for: Studio Dashboard"
+  },
+  "editProfile": "تحرير الملف الشخصي",
+  "@editProfile": {
+    "description": "Localization key for: Edit Profile"
+  },
+  "logout1": "[JA] Logout",
+  "@logout1": {
+    "description": "Localization key for: Logout"
+  },
+  "serviceServiceidNotSelected": "[JA] Service: {service}",
+  "@serviceServiceidNotSelected": {
+    "description": "Localization key for: Service: {service}"
+  },
+  "settingsSavedSuccessfully": "[JA] Settings saved successfully! (Japanese)",
+  "@settingsSavedSuccessfully": {
+    "description": "Localization key for: Settings saved successfully!"
+  },
+  "linkCopiedToClipboard": "[JA] Link copied to clipboard! (Japanese)",
+  "@linkCopiedToClipboard": {
+    "description": "Localization key for: Link copied to clipboard!"
+  },
+  "accept1": "[JA] Accept (Japanese)",
+  "@accept1": {
+    "description": "Localization key for: Accept"
+  },
+  "noAvailableSlots": "[JA] No available slots (Japanese)",
+  "@noAvailableSlots": {
+    "description": "Localization key for: No available slots"
+  },
+  "makeGamePublic": "[JA] Make Game Public (Japanese)",
+  "@makeGamePublic": {
+    "description": "Localization key for: Make Game Public"
+  },
+  "permissionPermissioncategoryUpdatedToNewvalue": "[JA] Permission {category} updated to $newValue (Japanese)",
+  "@permissionPermissioncategoryUpdatedToNewvalue": {
+    "description": "Localization key for: Permission {category} updated to $newValue"
+  },
+  "roomDeletedSuccessfully": "[JA] Room deleted successfully! (Japanese)",
+  "@roomDeletedSuccessfully": {
+    "description": "Localization key for: Room deleted successfully!"
+  },
+  "businessCalendar": "[JA] Business Calendar (Japanese)",
+  "@businessCalendar": {
+    "description": "Localization key for: Business Calendar"
+  },
+  "addAvailability": "[JA] Add Availability (Japanese)",
+  "@addAvailability": {
+    "description": "Localization key for: Add Availability"
+  },
+  "ambassadorOnboarding": "[JA] Ambassador Onboarding (Japanese)",
+  "@ambassadorOnboarding": {
+    "description": "Localization key for: Ambassador Onboarding"
+  },
+  "phoneProfileasyncphone": "[JA] Phone: {phone} (Japanese)",
+  "@phoneProfileasyncphone": {
+    "description": "Localization key for: Phone: {phone}"
+  },
+  "addNewRoom": "[JA] Add New Room (Japanese)",
+  "@addNewRoom": {
+    "description": "Localization key for: Add New Room"
+  },
+  "requireParentApproval": "[JA] Require Parent Approval (Japanese)",
+  "@requireParentApproval": {
+    "description": "Localization key for: Require Parent Approval"
+  },
+  "closed": "[JA] Closed (Japanese)",
+  "@closed": {
+    "description": "Localization key for: Closed"
+  },
+  "exportAsPdf": "[JA] Export as PDF (Japanese)",
+  "@exportAsPdf": {
+    "description": "Localization key for: Export as PDF"
+  },
+  "enableVibration": "[JA] Enable Vibration (Japanese)",
+  "@enableVibration": {
+    "description": "Localization key for: Enable Vibration"
+  },
+  "toAvailendformatcontext": "[JA] To: {endTime} (Japanese)",
+  "@toAvailendformatcontext": {
+    "description": "Localization key for: To: {endTime}"
+  },
+  "yourUpgradeCodeUpgradecode": "[JA] Your upgrade code: $upgradeCode (Japanese)",
+  "@yourUpgradeCodeUpgradecode": {
+    "description": "Localization key for: Your upgrade code: $upgradeCode"
+  },
+  "requestPrivateSession": "[JA] requestPrivateSession (TRANSLATE)",
+  "@requestPrivateSession": {
+    "description": "requestPrivateSession description"
+  },
+  "country": "[JA] Country (Japanese)",
+  "@country": {
+    "description": "Localization key for: Country"
+  },
+  "loginScreen": "[JA] Login Screen",
+  "@loginScreen": {
+    "description": "Localization key for: Login Screen"
+  },
+  "staffArgsstaffdisplayname": "[JA] Staff: {staffName} (Japanese)",
+  "@staffArgsstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "revokeConsent": "[JA] Revoke Consent (Japanese)",
+  "@revokeConsent": {
+    "description": "Localization key for: Revoke Consent"
+  },
+  "settings1": "[JA] Settings (Japanese)",
+  "@settings1": {
+    "description": "Localization key for: Settings"
+  },
+  "cancel1": "[JA] Cancel (Japanese)",
+  "@cancel1": {
+    "description": "Localization key for: Cancel"
+  },
+  "subscriptionActivatedSuccessfully": "[JA] Subscription activated successfully! (Japanese)",
+  "@subscriptionActivatedSuccessfully": {
+    "description": "Localization key for: Subscription activated successfully!"
+  },
+  "activityLogaction": "[JA] Activity: {action}",
+  "@activityLogaction": {
+    "description": "Localization key for: Activity: {action}"
+  },
+  "broadcast": "[JA] Broadcast (Japanese)",
+  "@broadcast": {
+    "description": "Localization key for: Broadcast"
+  },
+  "noEventsScheduledThisWeek": "[JA] No events scheduled this week (Japanese)",
+  "@noEventsScheduledThisWeek": {
+    "description": "Localization key for: No events scheduled this week"
+  },
+  "googleCalendar": "[JA] Google Calendar (Japanese)",
+  "@googleCalendar": {
+    "description": "Localization key for: Google Calendar"
+  },
+  "sendInvite": "إرسال دعوة",
+  "@sendInvite": {
+    "description": "Localization key for: Send Invite"
+  },
+  "childDashboard": "[JA] Child Dashboard (Japanese)",
+  "@childDashboard": {
+    "description": "Localization key for: Child Dashboard"
+  },
+  "failedToUploadBackgroundE": "[JA] Failed to upload background: $e (Japanese)",
+  "@failedToUploadBackgroundE": {
+    "description": "Localization key for: Failed to upload background: $e"
+  },
+  "linkchildidsubstring08": "[JA] {linkId}...",
+  "@linkchildidsubstring08": {
+    "description": "Localization key for: {linkId}..."
+  },
+  "targetLogtargettypeLogtargetid": "[JA] Target: {targetType} - {targetId}",
+  "@targetLogtargettypeLogtargetid": {
+    "description": "Localization key for: Target: {targetType} - {targetId}"
+  },
+  "contextContextid": "[JA] Context: $contextId",
+  "@contextContextid": {
+    "description": "Localization key for: Context: $contextId"
+  },
+  "noAppointments": "[JA] No appointments (Japanese)",
+  "@noAppointments": {
+    "description": "Localization key for: No appointments"
+  },
+  "unlimitedBookingsPerWeek": "[JA] • Unlimited bookings per week (Japanese)",
+  "@unlimitedBookingsPerWeek": {
+    "description": "Localization key for: • Unlimited bookings per week"
+  },
+  "errorDetailsLogerrortype": "تفاصيل الخطأ: {logErrorType}",
+  "@errorDetailsLogerrortype": {
+    "description": "Localization key for: Error Details: {errorType}"
+  },
+  "scheduledAtScheduledat": "[JA] Scheduled at: $scheduledAt (Japanese)",
+  "@scheduledAtScheduledat": {
+    "description": "Localization key for: Scheduled at: $scheduledAt"
+  },
+  "selectStaff": "[JA] Select Staff (Japanese)",
+  "@selectStaff": {
+    "description": "Localization key for: Select Staff"
+  },
+  "subscriptionCancelledSuccessfully": "[JA] Subscription cancelled successfully (Japanese)",
+  "@subscriptionCancelledSuccessfully": {
+    "description": "Localization key for: Subscription cancelled successfully"
+  },
+  "pleaseLogInToViewYourProfile": "يرجى تسجيل الدخول لعرض ملفك الشخصي",
+  "@pleaseLogInToViewYourProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "cancelAppointment": "[JA] Cancel Appointment (Japanese)",
+  "@cancelAppointment": {
+    "description": "Localization key for: Cancel Appointment"
+  },
+  "permissionsFamilylinkchildid": "[JA] Permissions - {childId}",
+  "@permissionsFamilylinkchildid": {
+    "description": "Localization key for: Permissions - {childId}"
+  },
+  "businessSignup": "[JA] Business Signup (Japanese)",
+  "@businessSignup": {
+    "description": "Localization key for: Business Signup"
+  },
+  "businessCompletionScreenComingSoon": "[JA] Business Completion Screen - Coming Soon (Japanese)",
+  "@businessCompletionScreenComingSoon": {
+    "description": "Localization key for: Business Completion Screen - Coming Soon"
+  },
+  "createGame1": "[JA] Create Game (Japanese)",
+  "@createGame1": {
+    "description": "Localization key for: Create Game"
+  },
+  "valuetoint": "[JA] {value} (Japanese)",
+  "@valuetoint": {
+    "description": "Localization key for: {value}"
+  },
+  "pleaseEnterAPromoCode": "[JA] Please enter a promo code (Japanese)",
+  "@pleaseEnterAPromoCode": {
+    "description": "Localization key for: Please enter a promo code"
+  },
+  "errorLoadingAvailabilityE": "[JA] Error loading availability: $e (Japanese)",
+  "@errorLoadingAvailabilityE": {
+    "description": "Localization key for: Error loading availability: $e"
+  },
+  "parentalControls": "[JA] Parental Controls (Japanese)",
+  "@parentalControls": {
+    "description": "Localization key for: Parental Controls"
+  },
+  "editBusinessProfile": "تحرير الملف التجاري",
+  "@editBusinessProfile": {
+    "description": "Localization key for: Edit Business Profile"
+  },
+  "childLinkedSuccessfully": "[JA] Child linked successfully! (Japanese)",
+  "@childLinkedSuccessfully": {
+    "description": "Localization key for: Child linked successfully!"
+  },
+  "create": "[JA] Create (Japanese)",
+  "@create": {
+    "description": "Localization key for: Create"
+  },
+  "noExternalMeetingsFound": "[JA] No external meetings found. (Japanese)",
+  "@noExternalMeetingsFound": {
+    "description": "Localization key for: No external meetings found."
+  },
+  "staffSelectionstaffdisplayname": "[JA] Staff: {staffName} (Japanese)",
+  "@staffSelectionstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "pleaseEnterAValidEmailAddress": "[JA] Please enter a valid email address",
+  "@pleaseEnterAValidEmailAddress": {
+    "description": "Localization key for: Please enter a valid email address"
+  },
+  "schedulerScreen": "[JA] Scheduler Screen (Japanese)",
+  "@schedulerScreen": {
+    "description": "Localization key for: Scheduler Screen"
+  },
+  "clientUpdatedSuccessfully": "[JA] Client updated successfully! (Japanese)",
+  "@clientUpdatedSuccessfully": {
+    "description": "Localization key for: Client updated successfully!"
+  },
+  "surveyResponses": "[JA] Survey Responses (Japanese)",
+  "@surveyResponses": {
+    "description": "Localization key for: Survey Responses"
+  },
+  "syncToOutlook": "[JA] Sync to Outlook (Japanese)",
+  "@syncToOutlook": {
+    "description": "Localization key for: Sync to Outlook"
+  },
+  "saveChanges": "[JA] Save Changes (Japanese)",
+  "@saveChanges": {
+    "description": "Localization key for: Save Changes"
+  },
+  "pickTime": "[JA] Pick Time (Japanese)",
+  "@pickTime": {
+    "description": "Localization key for: Pick Time"
+  },
+  "registrationFailedEtostring": "[JA] Registration failed: {error} (Japanese)",
+  "@registrationFailedEtostring": {
+    "description": "Localization key for: Registration failed: {error}"
+  },
+  "analytics": "[JA] Analytics (Japanese)",
+  "@analytics": {
+    "description": "Localization key for: Analytics"
+  },
+  "errorLoadingEvents": "[JA] Error loading events (Japanese)",
+  "@errorLoadingEvents": {
+    "description": "Localization key for: Error loading events"
+  },
+  "errorLoadingOrganizations": "[JA] errorLoadingOrganizations (TRANSLATE)",
+  "@errorLoadingOrganizations": {
+    "description": "errorLoadingOrganizations description"
+  },
+  "businessLoginScreenComingSoon": "[JA] Business Login Screen - Coming Soon",
+  "@businessLoginScreenComingSoon": {
+    "description": "Localization key for: Business Login Screen - Coming Soon"
+  },
+  "success1": "[JA] Success (Japanese)",
+  "@success1": {
+    "description": "Localization key for: Success"
+  },
+  "appVersionLogappversion": "[JA] App Version: {appVersion}",
+  "@appVersionLogappversion": {
+    "description": "Localization key for: App Version: {appVersion}"
+  },
+  "fromAvailstartformatcontext": "[JA] From: {startTime} (Japanese)",
+  "@fromAvailstartformatcontext": {
+    "description": "Localization key for: From: {startTime}"
+  },
+  "readWrite": "[JA] Read & Write (Japanese)",
+  "@readWrite": {
+    "description": "Localization key for: Read & Write"
+  },
+  "redirectingToStripeCheckoutForBasicPlan": "[JA] Redirecting to Stripe checkout for Basic plan... (Japanese)",
+  "@redirectingToStripeCheckoutForBasicPlan": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
+  },
+  "errorSavingConfigurationE": "[JA] Error saving configuration: $e",
+  "@errorSavingConfigurationE": {
+    "description": "Localization key for: Error saving configuration: $e"
+  },
+  "pickDate": "[JA] Pick Date (Japanese)",
+  "@pickDate": {
+    "description": "Localization key for: Pick Date"
+  },
+  "chatBooking": "[JA] Chat Booking (Japanese)",
+  "@chatBooking": {
+    "description": "Localization key for: Chat Booking"
+  },
+  "noQuestionsAdded": "[JA] No questions added (Japanese)",
+  "@noQuestionsAdded": {
+    "description": "Localization key for: No questions added"
+  },
+  "severityLogseverityname": "[JA] Severity: {severity}",
+  "@severityLogseverityname": {
+    "description": "Localization key for: Severity: {severity}"
+  },
+  "markAsPaid": "[JA] Mark as Paid",
+  "@markAsPaid": {
+    "description": "Localization key for: Mark as Paid"
+  },
+  "typeOpenCall": "[JA] Type: Open Call (Japanese)",
+  "@typeOpenCall": {
+    "description": "Localization key for: Type: Open Call"
+  },
+  "appointmentAppointmentid": "[JA] Appointment {appointmentId}",
+  "@appointmentAppointmentid": {
+    "description": "Localization key for: Appointment {appointmentId}"
+  },
+  "statusInvitestatusname": "الحالة: {inviteStatusName}",
+  "@statusInvitestatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "businessLogin": "[JA] Business Login",
+  "@businessLogin": {
+    "description": "Localization key for: Business Login"
+  },
+  "invoiceCreatedSuccessfully": "[JA] Invoice created successfully! (Japanese)",
+  "@invoiceCreatedSuccessfully": {
+    "description": "Localization key for: Invoice created successfully!"
+  },
+  "noTimeSeriesDataAvailable": "[JA] No time series data available (Japanese)",
+  "@noTimeSeriesDataAvailable": {
+    "description": "Localization key for: No time series data available"
+  },
+  "subscribeToWidgetplanname": "[JA] Subscribe to {planName}",
+  "@subscribeToWidgetplanname": {
+    "description": "Localization key for: Subscribe to {planName}"
+  },
+  "timestamp_formatdatelogtimestamp": "[JA] Timestamp: {timestamp}",
+  "@timestamp_formatdatelogtimestamp": {
+    "description": "Localization key for: Timestamp: {timestamp}"
+  },
+  "failedToSendPrivacyRequestE": "[JA] Failed to send privacy request: $e (Japanese)",
+  "@failedToSendPrivacyRequestE": {
+    "description": "Localization key for: Failed to send privacy request: $e"
+  },
+  "chooseYourPlan": "[JA] Choose Your Plan (Japanese)",
+  "@chooseYourPlan": {
+    "description": "Localization key for: Choose Your Plan"
+  },
+  "playtimeManagement": "[JA] Playtime Management (Japanese)",
+  "@playtimeManagement": {
+    "description": "Localization key for: Playtime Management"
+  },
+  "availability": "[JA] Availability (Japanese)",
+  "@availability": {
+    "description": "Localization key for: Availability"
+  },
+  "eventCreated": "[JA] Event created (Japanese)",
+  "@eventCreated": {
+    "description": "Localization key for: Event created"
+  },
+  "subscribeToBasic499mo": "[JA] Subscribe to Basic (€4.99/mo) (Japanese)",
+  "@subscribeToBasic499mo": {
+    "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
+  },
+  "completion": "[JA] Completion (Japanese)",
+  "@completion": {
+    "description": "Localization key for: Completion"
+  },
+  "supportTicketSubmitted": "[JA] Support ticket submitted (Japanese)",
+  "@supportTicketSubmitted": {
+    "description": "Localization key for: Support ticket submitted"
+  },
+  "monetizationSettings": "[JA] Monetization Settings (Japanese)",
+  "@monetizationSettings": {
+    "description": "Localization key for: Monetization Settings"
+  },
+  "noBookingsFound": "[JA] No bookings found (Japanese)",
+  "@noBookingsFound": {
+    "description": "Localization key for: No bookings found"
+  },
+  "admin": "[JA] Admin",
+  "@admin": {
+    "description": "Localization key for: Admin"
+  },
+  "deleteSurvey": "[JA] Delete Survey (Japanese)",
+  "@deleteSurvey": {
+    "description": "Localization key for: Delete Survey"
+  },
+  "gameApprovedSuccessfully": "[JA] Game approved successfully! (Japanese)",
+  "@gameApprovedSuccessfully": {
+    "description": "Localization key for: Game approved successfully!"
+  },
+  "errorLoadingPermissionsError": "[JA] Error loading permissions: $error (Japanese)",
+  "@errorLoadingPermissionsError": {
+    "description": "Localization key for: Error loading permissions: $error"
+  },
+  "referrals": "[JA] Referrals (Japanese)",
+  "@referrals": {
+    "description": "Localization key for: Referrals"
+  },
+  "crm": "[JA] CRM (Japanese)",
+  "@crm": {
+    "description": "Localization key for: CRM"
+  },
+  "gameRejected": "[JA] Game rejected (Japanese)",
+  "@gameRejected": {
+    "description": "Localization key for: Game rejected"
+  },
+  "appointments": "[JA] Appointments (Japanese)",
+  "@appointments": {
+    "description": "Localization key for: Appointments"
+  },
+  "onboardingScreen": "[JA] Onboarding Screen (Japanese)",
+  "@onboardingScreen": {
+    "description": "Localization key for: Onboarding Screen"
+  },
+  "welcomeToYourStudio": "[JA] Welcome to your studio (Japanese)",
+  "@welcomeToYourStudio": {
+    "description": "Localization key for: Welcome to your studio"
+  },
+  "update": "[JA] Update (Japanese)",
+  "@update": {
+    "description": "Localization key for: Update"
+  },
+  "retry1": "[JA] Retry (Japanese)",
+  "@retry1": {
+    "description": "Localization key for: Retry"
+  },
+  "booking": "[JA] Booking (Japanese)",
+  "@booking": {
+    "description": "Localization key for: Booking"
+  },
+  "parentalSettings": "[JA] Parental Settings (Japanese)",
+  "@parentalSettings": {
+    "description": "Localization key for: Parental Settings"
+  },
+  "language": "[JA] Language (Japanese)",
+  "@language": {
+    "description": "Localization key for: Language"
+  },
+  "deleteSlot": "[JA] Delete Slot (Japanese)",
+  "@deleteSlot": {
+    "description": "Localization key for: Delete Slot"
+  },
+  "organizations": "[JA] organizations (TRANSLATE)",
+  "@organizations": {
+    "description": "organizations description"
+  },
+  "configurationSavedSuccessfully": "[JA] Configuration saved successfully!",
+  "@configurationSavedSuccessfully": {
+    "description": "Localization key for: Configuration saved successfully!"
+  },
+  "createNewGame": "[JA] Create New Game (Japanese)",
+  "@createNewGame": {
+    "description": "Localization key for: Create New Game"
+  },
+  "next1": "[JA] Next (Japanese)",
+  "@next1": {
+    "description": "Localization key for: Next"
+  },
+  "backgroundUploadedSuccessfully": "[JA] Background uploaded successfully! (Japanese)",
+  "@backgroundUploadedSuccessfully": {
+    "description": "Localization key for: Background uploaded successfully!"
+  },
+  "noAppointmentRequestsFound": "[JA] No appointment requests found. (Japanese)",
+  "@noAppointmentRequestsFound": {
+    "description": "Localization key for: No appointment requests found."
+  },
+  "pleaseSignInToCreateASession": "يرجى تسجيل الدخول لإنشاء جلسة",
+  "@pleaseSignInToCreateASession": {
+    "description": "Localization key for: Please sign in to create a session"
+  },
+  "restrictMatureContent": "[JA] Restrict mature content (Japanese)",
+  "@restrictMatureContent": {
+    "description": "Localization key for: Restrict mature content"
+  },
+  "ambassadors": "[JA] Ambassadors (Japanese)",
+  "@ambassadors": {
+    "description": "Localization key for: Ambassadors"
+  },
+  "smsNotifications": "إشعارات الرسائل النصية",
+  "@smsNotifications": {
+    "description": "Localization key for: SMS Notifications"
+  },
+  "paymentWasCancelled": "[JA] Payment was cancelled (Japanese)",
+  "@paymentWasCancelled": {
+    "description": "Localization key for: Payment was cancelled"
+  },
+  "clearAll": "[JA] Clear All (Japanese)",
+  "@clearAll": {
+    "description": "Localization key for: Clear All"
+  },
+  "viewDetails": "[JA] View Details (Japanese)",
+  "@viewDetails": {
+    "description": "Localization key for: View Details"
+  },
+  "notifications1": "الإشعارات",
+  "@notifications1": {
+    "description": "Localization key for: Notifications"
+  },
+  "liveSessionScheduledWaitingForParentApproval": "تم جدولة جلسة مباشرة، في انتظار موافقة الوالد",
+  "@liveSessionScheduledWaitingForParentApproval": {
+    "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
+  },
+  "failedToCreateGameE": "[JA] Failed to create game: $e (Japanese)",
+  "@failedToCreateGameE": {
+    "description": "Localization key for: Failed to create game: $e"
+  },
+  "noChartDataAvailable": "[JA] No chart data available (Japanese)",
+  "@noChartDataAvailable": {
+    "description": "Localization key for: No chart data available"
+  },
+  "phonebasedBookingSystem": "[JA] • Phone-based booking system (Japanese)",
+  "@phonebasedBookingSystem": {
+    "description": "Localization key for: • Phone-based booking system"
+  },
+  "enableNotifications1": "تفعيل الإشعارات",
+  "@enableNotifications1": {
+    "description": "Localization key for: Enable Notifications"
+  },
+  "invoices": "[JA] Invoices (Japanese)",
+  "@invoices": {
+    "description": "Localization key for: Invoices"
+  },
+  "pleaseActivateYourBusinessProfileToContinue": "يرجى تفعيل ملفك التجاري للمتابعة",
+  "@pleaseActivateYourBusinessProfileToContinue": {
+    "description": "Localization key for: Please activate your business profile to continue."
+  },
+  "scheduledAtArgsscheduledat": "[JA] Scheduled at: {scheduledAt} (Japanese)",
+  "@scheduledAtArgsscheduledat": {
+    "description": "Localization key for: Scheduled at: {scheduledAt}"
+  },
+  "durationDurationinminutes0Minutes": "[JA] Duration: {duration} minutes (Japanese)",
+  "@durationDurationinminutes0Minutes": {
+    "description": "Localization key for: Duration: {duration} minutes"
+  },
+  "tryAgain": "[JA] Try Again (Japanese)",
+  "@tryAgain": {
+    "description": "Localization key for: Try Again"
+  },
+  "deleteBackground": "[JA] Delete Background (Japanese)",
+  "@deleteBackground": {
+    "description": "Localization key for: Delete Background"
+  },
+  "currentTierTiertouppercase": "[JA] Current Tier: {tier} (Japanese)",
+  "@currentTierTiertouppercase": {
+    "description": "Localization key for: Current Tier: {tier}"
+  },
+  "iDoNotConsent": "[JA] I Do Not Consent",
+  "@iDoNotConsent": {
+    "description": "Localization key for: I Do Not Consent"
+  },
+  "noClientsFoundAddYourFirstClient": "[JA] No clients found. Add your first client! (Japanese)",
+  "@noClientsFoundAddYourFirstClient": {
+    "description": "Localization key for: No clients found. Add your first client!"
+  },
+  "settingsDialogWillBeImplementedHere": "[JA] Settings dialog will be implemented here.",
+  "@settingsDialogWillBeImplementedHere": {
+    "description": "Localization key for: Settings dialog will be implemented here."
+  },
+  "groupGroupid": "[JA] Group: $groupId",
+  "@groupGroupid": {
+    "description": "Localization key for: Group: $groupId"
+  },
+  "appointmentRequests": "[JA] Appointment Requests (Japanese)",
+  "@appointmentRequests": {
+    "description": "Localization key for: Appointment Requests"
+  },
+  "forward": "[JA] Forward (Japanese)",
+  "@forward": {
+    "description": "Localization key for: Forward"
+  },
+  "roomAddedSuccessfully": "[JA] Room added successfully! (Japanese)",
+  "@roomAddedSuccessfully": {
+    "description": "Localization key for: Room added successfully!"
+  },
+  "option": "[JA] • $option (Japanese)",
+  "@option": {
+    "description": "Localization key for: • $option"
+  },
+  "responseIndex1": "[JA] Response #{number} (Japanese)",
+  "@responseIndex1": {
+    "description": "Localization key for: Response #{number}"
+  },
+  "crmDashboardWithAnalytics": "[JA] • CRM dashboard with analytics (Japanese)",
+  "@crmDashboardWithAnalytics": {
+    "description": "Localization key for: • CRM dashboard with analytics"
+  },
+  "contentLibrary1": "[JA] Content Library (Japanese)",
+  "@contentLibrary1": {
+    "description": "Localization key for: Content Library"
+  },
+  "reply": "[JA] Reply (Japanese)",
+  "@reply": {
+    "description": "Localization key for: Reply"
+  },
+  "subscriptionManagement": "[JA] Subscription Management (Japanese)",
+  "@subscriptionManagement": {
+    "description": "Localization key for: Subscription Management"
+  },
+  "monetizationSettingsWillBeImplementedHere": "[JA] Monetization settings will be implemented here (Japanese)",
+  "@monetizationSettingsWillBeImplementedHere": {
+    "description": "Localization key for: Monetization settings will be implemented here"
+  },
+  "failedToApplyPromoCodeE": "[JA] Failed to apply promo code: $e (Japanese)",
+  "@failedToApplyPromoCodeE": {
+    "description": "Localization key for: Failed to apply promo code: $e"
+  },
+  "editProvider": "[JA] Edit Provider",
+  "@editProvider": {
+    "description": "Localization key for: Edit Provider"
+  },
+  "localizationContribution": "[JA] Localization Contribution (Japanese)",
+  "@localizationContribution": {
+    "description": "Localization key for: Localization Contribution"
+  },
+  "parentalConsent": "[JA] Parental Consent (Japanese)",
+  "@parentalConsent": {
+    "description": "Localization key for: Parental Consent"
+  },
+  "businessSignupScreenComingSoon": "[JA] Business Signup Screen - Coming Soon (Japanese)",
+  "@businessSignupScreenComingSoon": {
+    "description": "Localization key for: Business Signup Screen - Coming Soon"
+  },
+  "areYouSureYouWantToDeleteThisAppointment": "[JA] Are you sure you want to delete this appointment? (Japanese)",
+  "@areYouSureYouWantToDeleteThisAppointment": {
+    "description": "Localization key for: Are you sure you want to delete this appointment?"
+  },
+  "syncAppointment": "[JA] Sync Appointment (Japanese)",
+  "@syncAppointment": {
+    "description": "Localization key for: Sync Appointment"
+  },
+  "iConsent": "[JA] I Consent (Japanese)",
+  "@iConsent": {
+    "description": "Localization key for: I Consent"
+  },
+  "sessionRejected": "تم رفض الجلسة",
+  "@sessionRejected": {
+    "description": "Localization key for: Session rejected"
+  },
+  "businessSetupScreenComingSoon": "[JA] Business Setup Screen - Coming Soon (Japanese)",
+  "@businessSetupScreenComingSoon": {
+    "description": "Localization key for: Business Setup Screen - Coming Soon"
+  },
+  "edit1": "[JA] Edit (Japanese)",
+  "@edit1": {
+    "description": "Localization key for: Edit"
+  },
+  "noEventsScheduledThisMonth": "[JA] No events scheduled this month (Japanese)",
+  "@noEventsScheduledThisMonth": {
+    "description": "Localization key for: No events scheduled this month"
+  },
+  "businessDashboard": "[JA] Business Dashboard (Japanese)",
+  "@businessDashboard": {
+    "description": "Localization key for: Business Dashboard"
+  },
+  "noMessagesFound": "[JA] No messages found. (Japanese)",
+  "@noMessagesFound": {
+    "description": "Localization key for: No messages found."
+  },
+  "staffStaffidNotSelected": "[JA] Staff: {staff}",
+  "@staffStaffidNotSelected": {
+    "description": "Localization key for: Staff: {staff}"
+  },
+  "manageStaffAvailability": "[JA] Manage Staff Availability (Japanese)",
+  "@manageStaffAvailability": {
+    "description": "Localization key for: Manage Staff Availability"
+  },
+  "noMissingTranslations": "[JA] No missing translations (Japanese)",
+  "@noMissingTranslations": {
+    "description": "Localization key for: No missing translations"
+  },
+  "skip": "[JA] Skip (Japanese)",
+  "@skip": {
+    "description": "Localization key for: Skip"
+  },
+  "meetingIdMeetingid": "معرف الاجتماع: {meetingId}",
+  "@meetingIdMeetingid": {
+    "description": "Localization key for: Meeting ID: $meetingId"
+  },
+  "noUsers": "[JA] noUsers (TRANSLATE)",
+  "@noUsers": {
+    "description": "noUsers description"
+  },
+  "errorLoadingReferralCode": "[JA] Error loading referral code (Japanese)",
+  "@errorLoadingReferralCode": {
+    "description": "Localization key for: Error loading referral code"
+  },
+  "allCountries": "[JA] All Countries (Japanese)",
+  "@allCountries": {
+    "description": "Localization key for: All Countries"
+  },
+  "deleteGame": "[JA] Delete Game (Japanese)",
+  "@deleteGame": {
+    "description": "Localization key for: Delete Game"
+  },
+  "staffManagementTools": "[JA] • Staff management tools (Japanese)",
+  "@staffManagementTools": {
+    "description": "Localization key for: • Staff management tools"
+  },
+  "deleteMessage": "[JA] Delete Message (Japanese)",
+  "@deleteMessage": {
+    "description": "Localization key for: Delete Message"
+  },
+  "receiveBookingNotificationsViaSms": "استقبال إشعارات الحجز عبر الرسائل النصية",
+  "@receiveBookingNotificationsViaSms": {
+    "description": "Localization key for: Receive booking notifications via SMS"
+  },
+  "changeRole": "[JA] changeRole (TRANSLATE)",
+  "@changeRole": {
+    "description": "changeRole description"
+  },
+  "errorLoadingBookingsSnapshoterror": "خطأ في تحميل لقطة الحجوزات: {error}",
+  "@errorLoadingBookingsSnapshoterror": {
+    "description": "Localization key for: Error loading bookings: {error}"
+  },
+  "openingCustomerPortal": "[JA] Opening customer portal... (Japanese)",
+  "@openingCustomerPortal": {
+    "description": "Localization key for: Opening customer portal..."
+  },
+  "signOut": "[JA] Sign Out (Japanese)",
+  "@signOut": {
+    "description": "Localization key for: Sign Out"
+  },
+  "nameProfilename": "[JA] Name: {name} (Japanese)",
+  "@nameProfilename": {
+    "description": "Localization key for: Name: {name}"
+  },
+  "businessProfileEntryScreenComingSoon": "شاشة إدخال الملف التجاري - قريباً",
+  "@businessProfileEntryScreenComingSoon": {
+    "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
+  },
+  "upgradeToBusiness": "[JA] Upgrade to Business (Japanese)",
+  "@upgradeToBusiness": {
+    "description": "Localization key for: Upgrade to Business"
+  },
+  "apply": "تطبيق",
+  "@apply": {
+    "description": "Localization key for: Apply"
+  },
+  "errorLoadingSubscriptionError": "خطأ في تحميل الاشتراك: {error}",
+  "@errorLoadingSubscriptionError": {
+    "description": "Localization key for: Error loading subscription: $error"
+  },
+  "errorLoadingUsers": "خطأ في تحميل المستخدمين",
+  "@errorLoadingUsers": {
+    "description": "errorLoadingUsers description"
+  },
+  "verify": "التحقق",
+  "@verify": {
+    "description": "Localization key for: Verify"
+  },
+  "subscription": "الاشتراك",
+  "@subscription": {
+    "description": "Localization key for: Subscription"
+  },
+  "deleteMyAccount": "حذف حسابي",
+  "@deleteMyAccount": {
+    "description": "Localization key for: Delete My Account"
+  },
+  "businessAppointmentsEntryScreenComingSoon": "شاشة إدخال مواعيد الأعمال - قريباً",
+  "@businessAppointmentsEntryScreenComingSoon": {
+    "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
+  },
+  "viewResponses": "[JA] View Responses (Japanese)",
+  "@viewResponses": {
+    "description": "Localization key for: View Responses"
+  },
+  "businessWelcomeScreenComingSoon": "شاشة ترحيب الأعمال - قريباً",
+  "@businessWelcomeScreenComingSoon": {
+    "description": "Localization key for: Business Welcome Screen - Coming Soon"
+  },
+  "failedToOpenCustomerPortalE": "فشل في فتح بوابة العميل: {e}",
+  "@failedToOpenCustomerPortalE": {
+    "description": "Localization key for: Failed to open customer portal: $e"
+  },
+  "continueText": "متابعة",
+  "@continueText": {
+    "description": "Localization key for: Continue"
+  },
+  "close1": "إغلاق",
+  "@close1": {
+    "description": "Localization key for: Close"
+  },
+  "confirm1": "تأكيد",
+  "@confirm1": {
+    "description": "Localization key for: Confirm"
+  },
+  "externalMeetings": "الاجتماعات الخارجية",
+  "@externalMeetings": {
+    "description": "Localization key for: External Meetings"
+  },
+  "approve": "موافقة",
+  "@approve": {
+    "description": "Localization key for: Approve"
+  },
+  "noInvoicesFoundCreateYourFirstInvoice": "لم يتم العثور على فواتير. أنشئ فاتورتك الأولى!",
+  "@noInvoicesFoundCreateYourFirstInvoice": {
+    "description": "Localization key for: No invoices found. Create your first invoice!"
+  },
+  "subscribe": "اشتراك",
+  "@subscribe": {
+    "description": "Localization key for: Subscribe"
+  },
+  "login1": "تسجيل الدخول",
+  "@login1": {
+    "description": "Localization key for: Login"
+  },
+  "adminOverviewGoesHere": "نظرة عامة على المسؤول هنا",
+  "@adminOverviewGoesHere": {
+    "description": "Localization key for: Admin overview goes here"
+  },
+  "loadingCheckout": "جار تحميل الدفع...",
+  "@loadingCheckout": {
+    "description": "Localization key for: Loading checkout..."
+  },
+  "ad_pre_title": "広告を見て予約を確認してください",
+  "@ad_pre_title": {
+    "description": "Ad flow string: ad_pre_title"
+  },
+  "ad_pre_description": "無料ユーザーとして、確認前に短い広告を見る必要があります。アップグレードすることで、すべての広告を永続的に削除できます。",
+  "@ad_pre_description": {
+    "description": "Ad flow string: ad_pre_description"
+  },
+  "watch_ad_button": "広告を見る",
+  "@watch_ad_button": {
+    "description": "Ad flow string: watch_ad_button"
+  },
+  "upgrade_button": "プレミアムにアップグレード (€4)",
+  "@upgrade_button": {
+    "description": "Ad flow string: upgrade_button"
+  },
+  "ad_post_title": "広告終了！今すぐ予約を確認できます。",
+  "@ad_post_title": {
+    "description": "Ad flow string: ad_post_title"
+  },
+  "confirm_appointment_button": "予約を確認",
+  "@confirm_appointment_button": {
+    "description": "Ad flow string: confirm_appointment_button"
+  },
+  "upgrade_prompt_title": "ワンタイムアップグレード",
+  "@upgrade_prompt_title": {
+    "description": "Ad flow string: upgrade_prompt_title"
+  },
+  "upgrade_prompt_description": "€4を支払ってすべての広告を永久に削除",
+  "@upgrade_prompt_description": {
+    "description": "Ad flow string: upgrade_prompt_description"
+  },
+  "purchase_now_button": "今すぐ購入",
+  "@purchase_now_button": {
+    "description": "Ad flow string: purchase_now_button"
+  },
+  "ambassadorPromotionTitle": "[JA] Congratulations! You're now an Ambassador! (Japanese)",
+  "@ambassadorPromotionTitle": {
+    "description": "Title for ambassador promotion notification"
+  },
+  "ambassadorPromotionBody": "[JA] Welcome to the {tier} tier! Start sharing your referral link to earn rewards. (Japanese)",
+  "@ambassadorPromotionBody": {
+    "description": "Body text for ambassador promotion notification",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "tierUpgradeTitle": "[JA] Tier Upgrade! 🎉 (Japanese)",
+  "@tierUpgradeTitle": {
+    "description": "Title for tier upgrade notification"
+  },
+  "tierUpgradeBody": "[JA] Amazing! You've been upgraded from {previousTier} to {newTier} with {totalReferrals} referrals! (Japanese)",
+  "@tierUpgradeBody": {
+    "description": "Body text for tier upgrade notification",
+    "placeholders": {
+      "previousTier": {
+        "type": "String"
+      },
+      "newTier": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  },
+  "monthlyReminderTitle": "[JA] Monthly Goal Reminder (Japanese)",
+  "@monthlyReminderTitle": {
+    "description": "Title for monthly performance reminder notification"
+  },
+  "monthlyReminderBody": "[JA] You have {currentReferrals}/{targetReferrals} referrals this month. {daysRemaining} days left to reach your goal! (Japanese)",
+  "@monthlyReminderBody": {
+    "description": "Body text for monthly reminder notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "targetReferrals": {
+        "type": "String"
+      },
+      "daysRemaining": {
+        "type": "String"
+      }
+    }
+  },
+  "performanceWarningTitle": "[JA] Ambassador Performance Alert (Japanese)",
+  "@performanceWarningTitle": {
+    "description": "Title for performance warning notification"
+  },
+  "performanceWarningBody": "[JA] Your monthly referrals ({currentReferrals}) are below the minimum requirement ({minimumRequired}). Your ambassador status may be affected. (Japanese)",
+  "@performanceWarningBody": {
+    "description": "Body text for performance warning notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "minimumRequired": {
+        "type": "String"
+      }
+    }
+  },
+  "ambassadorDemotionTitle": "[JA] Ambassador Status Update (Japanese)",
+  "@ambassadorDemotionTitle": {
+    "description": "Title for ambassador demotion notification"
+  },
+  "ambassadorDemotionBody": "[JA] Your ambassador status has been temporarily suspended due to: {reason}. You can regain your status by meeting the requirements again. (Japanese)",
+  "@ambassadorDemotionBody": {
+    "description": "Body text for ambassador demotion notification",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "referralSuccessTitle": "[JA] New Referral! 🎉 (Japanese)",
+  "@referralSuccessTitle": {
+    "description": "Title for successful referral notification"
+  },
+  "referralSuccessBody": "[JA] {referredUserName} joined through your referral! You now have {totalReferrals} total referrals. (Japanese)",
+  "@referralSuccessBody": {
+    "description": "Body text for successful referral notification",
+    "placeholders": {
+      "referredUserName": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  }
+}
