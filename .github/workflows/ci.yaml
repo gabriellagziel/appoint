@@ -1,11 +1,9 @@
 name: CI
 
-on:
-  push:
-  pull_request:
+on: [push, pull_request]
 
 jobs:
-  build:
+  analyze:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -16,8 +14,14 @@ jobs:
           flutter-version: '3.24.5'
           channel: stable
           cache: true
-      - run: flutter --version
-      - run: dart --version
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
       - run: flutter pub get
       - run: flutter analyze
-      - run: dart test --coverage
+      - run: flutter test
+      - run: npm install
+      - run: dart run tool/arb_validator.dart
+      - run: npm run spell-check 
