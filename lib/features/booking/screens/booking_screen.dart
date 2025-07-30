@@ -4,7 +4,8 @@ import '../../../models/booking.dart';
 import '../services/booking_service.dart';
 import '../../../providers/auth_provider.dart';
 import '../../selection/providers/selection_provider.dart';
-import '../../../providers/minor_parent_provider.dart';
+import '../../../widgets/bottom_sheet_manager.dart';
+import '../../../widgets/booking_confirmation_sheet.dart';
 
 class BookingScreen extends ConsumerStatefulWidget {
   const BookingScreen({super.key});
@@ -69,12 +70,6 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final verified = ref.watch(minorParentProvider)?.isVerified ?? false;
-    if (!verified) {
-      Future.microtask(() =>
-          Navigator.pushNamed(context, '/select-minor'));
-      return const SizedBox.shrink();
-    }
     final staffId = ref.watch(staffSelectionProvider);
     final serviceId = ref.watch(serviceSelectionProvider);
     final dateTime = ref.watch(selectedSlotProvider);
@@ -87,6 +82,13 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            // Chat Booking Button
+            ElevatedButton.icon(
+              onPressed: () => Navigator.pushNamed(context, '/chat-booking'),
+              icon: const Icon(Icons.chat_bubble_outline),
+              label: const Text('Book via Chat'),
+            ),
+            const SizedBox(height: 16),
             Card(
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
@@ -111,7 +113,24 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
                       serviceId != null &&
                       dateTime != null &&
                       duration != null)
-                  ? (_isSubmitting ? null : _submitBooking)
+                  ? (_isSubmitting
+                      ? null
+                      : () {
+                          final summary =
+                              'You are about to book a ${duration!.inMinutes} minute appointment on '
+                              '${dateTime!.toLocal()}.';
+                          BottomSheetManager.show(
+                            context: context,
+                            child: BookingConfirmationSheet(
+                              summaryText: summary,
+                              onCancel: () => Navigator.of(context).pop(),
+                              onConfirm: () {
+                                Navigator.of(context).pop();
+                                _submitBooking();
+                              },
+                            ),
+                          );
+                        })
                   : null,
               child: _isSubmitting
                   ? const CircularProgressIndicator()
