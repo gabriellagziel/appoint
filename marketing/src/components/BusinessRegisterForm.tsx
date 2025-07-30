@@ -26,8 +26,8 @@ export const BusinessRegisterForm: React.FC<Props> = ({ onSuccess }) => {
       const data = await resp.json()
       if (!resp.ok) throw new Error(data.error || 'Registration failed')
       onSuccess(data.apiKey)
-    } catch (err: unknown) {
-      setError(err instanceof Error ? err.message : 'Registration failed')
+    } catch (err: any) {
+      setError(err.message)
     } finally {
       setLoading(false)
     }

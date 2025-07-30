@@ -16,9 +16,6 @@ export * from './ics';
 export * from './webhooks';
 export * from './oauth';
 export * from './alerts';
-export * from './health';
-export * from './broadcasts';
-export * from './meetings';
 
 // Re-export for backward compatibility
 export { ambassadorQuotas } from './ambassadors'; 
