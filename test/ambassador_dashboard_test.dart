@@ -467,7 +467,7 @@ void main() {
       await Future.doWhile(() async {
         state = container.read(ambassadorDataProvider);
         if (state is AsyncData<AmbassadorData>) {
-          expect(state.value.stats, equals(mockStats));
+          expect(state.value?.stats, equals(mockStats));
           return false;
         }
         await Future.delayed(const Duration(milliseconds: 10));
