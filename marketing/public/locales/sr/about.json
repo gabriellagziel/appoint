@@ -1,0 +1,68 @@
+{
+  "hero": {
+    "title": "Revolutionizing",
+    "titleHighlight": "Appointment Scheduling",
+    "subtitle": "At App-Oint, we believe that scheduling shouldn't be complicated. We're building the future of appointment management with innovative technology, elegant design, and a commitment to making businesses more efficient."
+  },
+  "stats": {
+    "businesses": "Active Businesses",
+    "appointments": "Appointments Scheduled",
+    "languages": "Supported Languages",
+    "uptime": "Platform Uptime"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "description": "To empower businesses of all sizes with intelligent scheduling solutions that save time, increase efficiency, and improve customer experiences. We're democratizing access to enterprise-grade scheduling technology."
+  },
+  "vision": {
+    "title": "Our Vision",
+    "description": "A world where every business can focus on what they do best, while intelligent systems handle the complexity of scheduling, coordination, and customer management seamlessly in the background."
+  },
+  "values": {
+    "title": "Our Core Values",
+    "subtitle": "These principles guide every decision we make and every feature we build.",
+    "innovation": {
+      "name": "Innovation",
+      "description": "Continuously pushing the boundaries of scheduling technology"
+    },
+    "simplicity": {
+      "name": "Simplicity",
+      "description": "Making complex scheduling problems simple and intuitive"
+    },
+    "reliability": {
+      "name": "Reliability",
+      "description": "Building robust systems that businesses can depend on"
+    },
+    "customerFocus": {
+      "name": "Customer Focus",
+      "description": "Putting our customers' success at the center of everything we do"
+    }
+  },
+  "journey": {
+    "title": "Our Journey",
+    "subtitle": "From a simple idea to a global platform serving thousands of businesses."
+  },
+  "roadmap": {
+    "title": "Product Roadmap",
+    "subtitle": "Exciting features and innovations coming to App-Oint. Your feedback helps shape our development priorities.",
+    "submitFeature": "Submit Feature Request"
+  },
+  "brand": {
+    "title": "Brand Assets",
+    "subtitle": "Download our brand assets for partnerships, press coverage, or integration showcases.",
+    "logoPackage": "Logo Package",
+    "brandGuidelines": "Brand Guidelines",
+    "marketingKit": "Marketing Kit"
+  },
+  "team": {
+    "title": "Meet Our Team",
+    "subtitle": "Passionate professionals dedicated to transforming how businesses manage appointments.",
+    "comingSoon": "Team Photos Coming Soon",
+    "description": "We're putting together an amazing team page to introduce you to the people behind App-Oint. Stay tuned for updates!",
+    "joinTeam": "Join Our Team"
+  },
+  "cta": {
+    "title": "Ready to Join Our Mission?",
+    "subtitle": "Whether you're a business looking for better scheduling solutions or a developer interested in our API, we'd love to have you on this journey."
+  }
+}

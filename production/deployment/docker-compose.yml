@@ -1,0 +1,50 @@
+version: '3.8'
+services:
+  qa-api:
+    image: app-qa-api:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+    volumes:
+      - ./logs:/app/logs
+    depends_on:
+      - postgres
+      - redis
+
+  qa-dashboard:
+    image: app-qa-dashboard:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://qa-api:8080
+    depends_on:
+      - qa-api
+
+  ml-inference:
+    image: app-ml-inference:latest
+    ports:
+      - "8081:8081"
+    environment:
+      - MODEL_PATH=/models
+    volumes:
+      - ./models:/models
+
+  postgres:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=qa_production
+      - POSTGRES_USER=qa_user
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:6-alpine
+    volumes:
+      - redis_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:

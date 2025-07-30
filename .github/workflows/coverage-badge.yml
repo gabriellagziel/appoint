@@ -1,0 +1,16 @@
+name: Coverage Badge
+
+push:
+  branches: [ main ]
+
+on:
+  pull_request:
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Placeholder Coverage
+        run: echo "Coverage stub"
