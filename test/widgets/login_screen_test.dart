@@ -42,7 +42,7 @@ void main() {
       await tester.pumpWidget(createTestWidget(const LoginScreen()));
 
       // Assert
-      expect(find.text('Login'), findsOneWidget);
+      expect(find.text('Welcome Back'), findsOneWidget);
       expect(find.byType(ElevatedButton), findsOneWidget);
       expect(find.byType(TextField), findsNWidgets(2)); // Email and password
     });
