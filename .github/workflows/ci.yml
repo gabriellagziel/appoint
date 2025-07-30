@@ -25,8 +25,10 @@ jobs:
           FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
     steps:
       - uses: actions/checkout@v4
-      - name: Use bundled Flutter SDK
-        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.20.0'
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -71,7 +73,6 @@ jobs:
           firebase emulators:start --only firestore,functions &
           echo $! > emulator.pid
       - run: flutter test --coverage
-      - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
       - name: Stop emulators
@@ -88,8 +89,10 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
-      - name: Use bundled Flutter SDK
-        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.20.0'
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -134,8 +137,10 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
-      - name: Use bundled Flutter SDK
-        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.20.0'
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -172,7 +177,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '16.x'
-      - run: dart test --coverage
+      - run: flutter test --coverage
       - run: dart test integration_test/
       - name: Build Web App
         run: flutter build web --release
@@ -191,8 +196,10 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
-      - name: Use bundled Flutter SDK
-        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.20.0'
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -226,7 +233,6 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter test --coverage
-      - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
       - name: Run Smoke Tests
@@ -244,8 +250,10 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
-      - name: Use bundled Flutter SDK
-        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.20.0'
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -279,7 +287,6 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter test --coverage
-      - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
       - name: Run Security Scan
@@ -297,8 +304,10 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
-      - name: Use bundled Flutter SDK
-        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.20.0'
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -332,7 +341,6 @@ jobs:
       - run: flutter analyze
       - run: dart analyze
       - run: flutter test --coverage
-      - run: dart test --coverage
       - run: dart test integration_test/
       - run: flutter build web
       - name: Notify on Success
