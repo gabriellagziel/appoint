@@ -27,7 +27,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Playtime'),
+        title: const Text('Playtime'),
         backgroundColor: AppTheme.primaryColor,
         foregroundColor: Colors.white,
         elevation: 0,
@@ -161,18 +161,18 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
             ),
             child: Column(
               children: [
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Icon(
+                    Icon(
                       Icons.confirmation_number,
                       color: Colors.orange,
                       size: 32,
                     ),
-                    const SizedBox(width: 8),
+                    SizedBox(width: 8),
                     Text(
                       'Tickets',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                         color: Colors.grey,
@@ -290,17 +290,17 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
+                const Row(
                   children: [
-                    const Icon(
+                    Icon(
                       Icons.today,
                       color: AppTheme.primaryColor,
                       size: 20,
                     ),
-                    const SizedBox(width: 8),
+                    SizedBox(width: 8),
                     Text(
                       'Daily Progress',
-                      style: const TextStyle(
+                      style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
@@ -377,12 +377,12 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
       // Show success feedback
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
+          const SnackBar(
             content: Text(
               'Ticket earned! 🎉',
             ),
             backgroundColor: Colors.green,
-            duration: const Duration(seconds: 2),
+            duration: Duration(seconds: 2),
           ),
         );
       }
