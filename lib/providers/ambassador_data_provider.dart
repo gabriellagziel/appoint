@@ -1,21 +1,22 @@
-import 'package:appoint/models/ambassador_stats.dart';
-import 'package:appoint/models/business_analytics.dart';
-import 'package:appoint/services/ambassador_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../models/ambassador_stats.dart';
+import '../services/ambassador_service.dart';
+import '../models/business_analytics.dart';
 
 final ambassadorServiceProvider =
     Provider<AmbassadorService>((ref) => AmbassadorService());
 
 class AmbassadorDataNotifier extends StateNotifier<AsyncValue<AmbassadorData>> {
-  AmbassadorDataNotifier(this._service) : super(const AsyncValue.loading()) {
-    _loadData();
-  }
   final AmbassadorService _service;
 
   String? _selectedCountry;
   String? _selectedLanguage;
   DateTimeRange? _selectedDateRange;
+
+  AmbassadorDataNotifier(this._service) : super(const AsyncValue.loading()) {
+    _loadData();
+  }
 
   String? get selectedCountry => _selectedCountry;
   String? get selectedLanguage => _selectedLanguage;
@@ -34,15 +35,15 @@ class AmbassadorDataNotifier extends StateNotifier<AsyncValue<AmbassadorData>> {
       final data = AmbassadorData(stats: stats, chartData: chartData);
 
       state = AsyncValue.data(data);
-    } catch (e, stackTrace) {
-      state = AsyncValue.error(e, stackTrace);
+    } catch (error, stackTrace) {
+      state = AsyncValue.error(error, stackTrace);
     }
   }
 
   void updateFilters({
-    final String? country,
-    final String? language,
-    final DateTimeRange? dateRange,
+    String? country,
+    String? language,
+    DateTimeRange? dateRange,
   }) {
     _selectedCountry = country;
     _selectedLanguage = language;
@@ -70,7 +71,7 @@ final ambassadorStatsProvider =
   return dataAsync.when(
     data: (data) => AsyncValue.data(data.stats),
     loading: () => const AsyncValue.loading(),
-    error: AsyncValue.error,
+    error: (error, stackTrace) => AsyncValue.error(error, stackTrace),
   );
 });
 
@@ -80,12 +81,9 @@ final ambassadorChartDataProvider =
   return dataAsync.when(
     data: (data) => AsyncValue.data(data.chartData),
     loading: () => const AsyncValue.loading(),
-    error: AsyncValue.error,
+    error: (error, stackTrace) => AsyncValue.error(error, stackTrace),
   );
 });
-
-final ambassadorsOverTimeProvider = FutureProvider<List<TimeSeriesPoint>>(
-    (ref) => ref.read(ambassadorServiceProvider).fetchAmbassadorsOverTime());
 
 // Filter state providers
 final ambassadorFiltersProvider =
@@ -94,3 +92,15 @@ final ambassadorFiltersProvider =
 final selectedCountryProvider = StateProvider<String?>((ref) => null);
 final selectedLanguageProvider = StateProvider<String?>((ref) => null);
 final selectedDateRangeProvider = StateProvider<DateTimeRange?>((ref) => null);
+
+final ambassadorReferralTrendProvider =
+    FutureProvider<List<TimeSeriesPoint>>((ref) {
+  final country = ref.watch(selectedCountryProvider);
+  final language = ref.watch(selectedLanguageProvider);
+  final range = ref.watch(selectedDateRangeProvider);
+  return ref.read(ambassadorServiceProvider).fetchReferralTrend(
+        country: country,
+        language: language,
+        dateRange: range,
+      );
+});
