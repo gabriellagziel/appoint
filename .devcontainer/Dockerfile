@@ -31,6 +31,9 @@ ENV PATH="$FLUTTER_HOME/bin:$DART_HOME/bin:${PATH}"
 # Verify installations at build time
 RUN which flutter && flutter --version && which dart && dart --version
 
+# Force every shell to pick up the SDK path
+COPY devcontainer/bashrc_append.sh /etc/bash.bashrc.d/99-sdk-path.sh
+
 # Set up working directory
 WORKDIR /workspace
 
