@@ -1,5 +1,6 @@
 import 'dart:core';
 
+import 'package:appoint/l10n/app_localizations.dart';
 import 'package:appoint/models/contact.dart';
 import 'package:appoint/providers/invite_provider.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +33,7 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
   Widget build(BuildContext context) {
     final appointmentId = ModalRoute.of(context)!.settings.arguments! as String;
     return Scaffold(
-      appBar: AppBar(title: const Text('Invite Contact')),
+      appBar: AppBar(title: Text(AppLocalizations.of(context)!.inviteContact)),
       body: Form(
         key: _formKey,
         child: Padding(
@@ -41,31 +42,30 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
             children: [
               TextFormField(
                 controller: _nameController,
-                decoration: const InputDecoration(labelText: 'Name'),
+                decoration: InputDecoration(labelText: AppLocalizations.of(context)!.nameLabel),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Please enter a name';
+                    return AppLocalizations.of(context)!.pleaseEnterName;
                   }
                   return null;
                 },
               ),
               TextFormField(
                 controller: _phoneController,
-                decoration: const InputDecoration(labelText: 'Phone Number'),
+                decoration: InputDecoration(labelText: AppLocalizations.of(context)!.phoneNumberLabel),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Please enter a phone number';
+                    return AppLocalizations.of(context)!.pleaseEnterPhoneNumber;
                   }
                   return null;
                 },
               ),
               TextFormField(
                 controller: _emailController,
-                decoration:
-                    const InputDecoration(labelText: 'Email (Optional)'),
+                decoration: InputDecoration(labelText: AppLocalizations.of(context)!.emailOptionalLabel),
               ),
               SwitchListTile(
-                title: const Text('Requires Install Fallback'),
+                title: Text(AppLocalizations.of(context)!.requiresInstallFallback),
                 value: _requiresInstallFallback,
                 onChanged: (v) => setState(() => _requiresInstallFallback = v),
               ),
@@ -91,7 +91,7 @@ class _InviteRequestScreenState extends ConsumerState<InviteRequestScreen> {
                     Navigator.pop(context);
                   }
                 },
-                child: const Text('Send Invite'),
+                child: Text(AppLocalizations.of(context)!.sendInvite),
               ),
             ],
           ),
