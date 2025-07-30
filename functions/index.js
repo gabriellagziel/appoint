@@ -1,80 +1,145 @@
-// Import from modular TypeScript structure
-const { 
-  onNewBooking,
-  createCheckoutSession,
-  cancelSubscription,
-  sendNotificationToStudio,
-  stripeWebhook,
-  registerBusiness,
-  businessApi,
-  resetMonthlyQuotas,
-  monthlyBillingJob,
-  importBankPayments,
-  getUsageStats,
-  downloadUsageCSV,
-  adminAnalyticsSummary,
-  exportYearlyTax,
-  icsFeed,
-  rotateIcsToken,
-  onAppointmentWrite,
-  processWebhookRetries,
-  oauth,
-  hourlyAlerts,
-} = require('./src/index');
+#!/usr/bin/env node
 
-const {
-  autoAssignAmbassadors,
-  getQuotaStats,
-  assignAmbassador,
-  scheduledAutoAssign,
-  dailyQuotaReport,
-  checkAmbassadorEligibility,
-  handleAmbassadorRemoval,
-  ambassadorQuotas,
-} = require('./src/ambassadors');
+// Check if we're running in Firebase Functions environment
+const isFirebaseFunctions = process.env.FUNCTIONS_EMULATOR || process.env.GCLOUD_PROJECT;
 
-const {
-  createCheckoutSession: stripeCreateCheckoutSession,
-} = require('./src/stripe');
-
-// Export all functions
-module.exports = {
-  // FCM and Booking functions
-  onNewBooking,
+if (isFirebaseFunctions) {
+  // Firebase Functions mode - use the original Firebase Functions exports
+  const functions = require('firebase-functions');
   
-  // Stripe functions
-  createCheckoutSession,
-  stripeCreateCheckoutSession,
-  stripeWebhook,
-  cancelSubscription,
-  
-  // Ambassador functions
-  autoAssignAmbassadors,
-  getQuotaStats,
-  assignAmbassador,
-  scheduledAutoAssign,
-  dailyQuotaReport,
-  checkAmbassadorEligibility,
-  handleAmbassadorRemoval,
-  ambassadorQuotas,
-  
-  // Notification functions
-  sendNotificationToStudio,
+  // Import from modular TypeScript structure
+  const { 
+    onNewBooking,
+    createCheckoutSession,
+    cancelSubscription,
+    sendNotificationToStudio,
+    stripeWebhook,
+    registerBusiness,
+    businessApi,
+    resetMonthlyQuotas,
+    monthlyBillingJob,
+    importBankPayments,
+    getUsageStats,
+    downloadUsageCSV,
+    adminAnalyticsSummary,
+    exportYearlyTax,
+    icsFeed,
+    rotateIcsToken,
+    onAppointmentWrite,
+    processWebhookRetries,
+    oauth,
+    hourlyAlerts,
+  } = require('./src/index');
 
-  // Business API
-  registerBusiness,
-  businessApi,
-  resetMonthlyQuotas,
-  monthlyBillingJob,
-  importBankPayments,
-  getUsageStats,
-  downloadUsageCSV,
-  adminAnalyticsSummary,
-  exportYearlyTax,
-  icsFeed,
-  rotateIcsToken,
-  onAppointmentWrite,
-  processWebhookRetries,
-  oauth,
-  hourlyAlerts,
-}; 
+  const {
+    autoAssignAmbassadors,
+    getQuotaStats,
+    assignAmbassador,
+    scheduledAutoAssign,
+    dailyQuotaReport,
+    checkAmbassadorEligibility,
+    handleAmbassadorRemoval,
+    ambassadorQuotas,
+  } = require('./src/ambassadors');
+
+  const {
+    checkMeetingLocations,
+    sendMeetingReminders,
+    onMeetingCreated,
+    onParticipantStatusChange,
+    getMeetingAnalytics,
+    updateUserLocation,
+  } = require('./src/meeting-reminders');
+
+  const {
+    dailyAmbassadorEligibilityCheck,
+    monthlyAmbassadorReview,
+    trackUserReferral,
+    getAmbassadorDashboard,
+  } = require('./src/ambassador-automation');
+
+  const {
+    sendAmbassadorNotification,
+    sendMonthlyReminders,
+  } = require('./src/ambassador-notifications');
+
+  const {
+    createCheckoutSession: stripeCreateCheckoutSession,
+  } = require('./src/stripe');
+
+  // Health check endpoint for Firebase Functions
+  const health = functions.https.onRequest((req, res) => {
+    res.status(200).json({
+      status: 'healthy',
+      timestamp: new Date().toISOString(),
+      service: 'app-oint-api'
+    });
+  });
+
+  // Export all Firebase Functions
+  module.exports = {
+    // Health check
+    health,
+    
+    // FCM and Booking functions
+    onNewBooking,
+    
+    // Stripe functions
+    createCheckoutSession,
+    stripeCreateCheckoutSession,
+    stripeWebhook,
+    cancelSubscription,
+    
+    // Ambassador functions
+    autoAssignAmbassadors,
+    getQuotaStats,
+    assignAmbassador,
+    scheduledAutoAssign,
+    dailyQuotaReport,
+    checkAmbassadorEligibility,
+    handleAmbassadorRemoval,
+    ambassadorQuotas,
+    
+    // Ambassador automation functions
+    dailyAmbassadorEligibilityCheck,
+    monthlyAmbassadorReview,
+    trackUserReferral,
+    getAmbassadorDashboard,
+    
+    // Ambassador notification functions
+    sendAmbassadorNotification,
+    sendMonthlyReminders,
+    
+    // Notification functions
+    sendNotificationToStudio,
+
+    // Business API
+    registerBusiness,
+    businessApi,
+    resetMonthlyQuotas,
+    monthlyBillingJob,
+    importBankPayments,
+    getUsageStats,
+    downloadUsageCSV,
+    adminAnalyticsSummary,
+    exportYearlyTax,
+    icsFeed,
+    rotateIcsToken,
+    onAppointmentWrite,
+    processWebhookRetries,
+    oauth,
+    hourlyAlerts,
+    
+    // Meeting functions
+    checkMeetingLocations,
+    sendMeetingReminders,
+    onMeetingCreated,
+    onParticipantStatusChange,
+    getMeetingAnalytics,
+    updateUserLocation,
+  };
+} else {
+  // Containerized mode - use Express.js server
+  console.log('Starting Functions API in containerized mode...');
+  require('./dist/server.js');
+} 
