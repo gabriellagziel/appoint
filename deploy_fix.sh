@@ -1,31 +1,26 @@
 #!/bin/bash
 
-echo "🚀 Deploying App-Oint White Screen Fix"
-echo "======================================="
+echo "🚀 Starting Firebase deployment for app-oint.com..."
 
-# Check if we're on the right branch
-current_branch=$(git branch --show-current)
-echo "Current branch: $current_branch"
+# Ensure you're in the correct directory
+if [ ! -f "firebase.json" ]; then
+  echo "❌ firebase.json not found. Make sure you're in the project root."
+  exit 1
+fi
 
-# Add all changes
-echo "📦 Adding changes..."
-git add .
+# Use the production environment variables if needed
+if [ -f ".env.production" ]; then
+  echo "✅ Using .env.production"
+fi
 
-# Commit the fix
-echo "💾 Committing fix..."
-git commit -m "Fix web build: Add proper Flutter build and Firebase config - Resolves white screen issue"
+# Run Flutter build (optional if using Flutter web)
+if [ -d "web" ]; then
+  echo "📦 Running flutter build web..."
+  flutter build web || { echo "❌ Flutter build failed"; exit 1; }
+fi
 
-# Push to main branch
-echo "🚀 Pushing to main branch..."
-git push origin main
+# Deploy to Firebase Hosting
+echo "📡 Deploying to Firebase..."
+firebase deploy --only hosting || { echo "❌ Firebase deploy failed"; exit 1; }
 
-echo ""
-echo "✅ Deployment initiated!"
-echo ""
-echo "📋 Next steps:"
-echo "1. Check DigitalOcean App Platform for deployment status"
-echo "2. Visit www.app-oint.com to verify the fix"
-echo "3. Monitor logs for any issues"
-echo ""
-echo "🔗 DigitalOcean App Platform: https://cloud.digitalocean.com/apps"
-echo "🌐 Website: https://www.app-oint.com"
+echo "✅ Deployment complete!"
