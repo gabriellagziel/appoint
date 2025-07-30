@@ -134,7 +134,7 @@ class FirebaseTestHelper {
 
     // Setup query snapshot mock with proper type casting
     when(() => mockQuerySnapshot.docs)
-        .thenReturn([mockDocumentSnapshot as QueryDocumentSnapshot<Object?>]);
+        .thenReturn([mockDocumentSnapshot as QueryDocumentSnapshot<Map<String, dynamic>>]);
     when(() => mockQuerySnapshot.size).thenReturn(1);
   }
 }
