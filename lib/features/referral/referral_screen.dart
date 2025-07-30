@@ -1,52 +1,31 @@
-import 'package:appoint/providers/referral_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../l10n/app_localizations.dart';
+import '../../providers/referral_provider.dart';
+import 'share_invite_widget.dart';
+
+/// Simple screen that displays a referral link using [ShareInviteWidget].
 class ReferralScreen extends ConsumerWidget {
   const ReferralScreen({super.key});
 
   @override
-  Widget build(BuildContext context, final WidgetRef ref) {
-    final codeAsync = ref.watch(referralCodeProvider);
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context)!;
+    final referralLinkAsync = ref.watch(referralLinkProvider);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Referral Code')),
+      appBar: AppBar(title: const Text('Referral')),
       body: Center(
-        child: codeAsync.when(
-          data: (code) => Card(
-            margin: const EdgeInsets.all(16),
-            child: Padding(
-              padding: const EdgeInsets.all(24),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const Text(
-                    'Your Invite Code',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  const SizedBox(height: 12),
-                  SelectableText(
-                    code,
-                    style: Theme.of(context).textTheme.headlineMedium,
-                  ),
-                  const SizedBox(height: 16),
-                  ElevatedButton.icon(
-                    icon: const Icon(Icons.copy),
-                    label: const Text('Copy'),
-                    onPressed: () {
-                      Clipboard.setData(ClipboardData(text: code));
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Copied to clipboard')),
-                      );
-                    },
-                  ),
-                ],
-              ),
-            ),
-          ),
+        child: referralLinkAsync.when(
+          data: (link) {
+            if (link == null) {
+              return Text(l10n.errorLoadingInvites);
+            }
+            return ShareInviteWidget(referralLink: link);
+          },
           loading: () => const CircularProgressIndicator(),
-          error: (e, final _) => const Text('Error loading referral code'),
+          error: (_, __) => Text(l10n.errorLoadingInvites),
         ),
       ),
     );
