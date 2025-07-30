@@ -1,8 +1,10 @@
-import 'package:appoint/features/studio_business/providers/booking_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:appoint/providers/user_subscription_provider.dart';
+import 'package:appoint/services/ad_service.dart';
 
-class BookingConfirmationSheet extends ConsumerWidget {
+class BookingConfirmationSheet extends ConsumerStatefulWidget {
+
   const BookingConfirmationSheet({
     required this.onConfirm,
     required this.onCancel,
@@ -14,8 +16,58 @@ class BookingConfirmationSheet extends ConsumerWidget {
   final String summaryText;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final bookingState = ref.watch(bookingProvider);
+  ConsumerState<BookingConfirmationSheet> createState() =>
+      _BookingConfirmationSheetState();
+}
+
+class _BookingConfirmationSheetState extends ConsumerState<BookingConfirmationSheet> {
+  bool _isLoadingAd = false;
+
+  Future<void> _handleConfirm() async {
+    final subscriptionAsync = ref.read(userSubscriptionProvider);
+    
+    // Check if user is premium
+    final isPremium = subscriptionAsync.maybeWhen(
+      data: (isPremium) => isPremium,
+      orElse: () => false,
+    );
+    
+    // Show ad if user is not premium
+    if (!isPremium) {
+      setState(() => _isLoadingAd = true);
+      try {
+        await AdService.showInterstitialAd();
+      } catch (e) {
+        // Continue even if ad fails
+      } finally {
+        if (mounted) setState(() => _isLoadingAd = false);
+      }
+    }
+    
+    widget.onConfirm();
+  }
+
+  Future<void> _upgradeToPremium() async {
+    // TODO: Implement real payment flow
+    // For now, just show a placeholder message
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Premium upgrade coming soon! This would integrate with Stripe or in-app purchases.'),
+          backgroundColor: Colors.amber,
+        ),
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final subscriptionAsync = ref.watch(userSubscriptionProvider);
+
+    final isPremium = subscriptionAsync.maybeWhen(
+      data: (isPremium) => isPremium,
+      orElse: () => false,
+    );
 
     return Padding(
       padding: const EdgeInsets.all(24),
@@ -24,79 +76,78 @@ class BookingConfirmationSheet extends ConsumerWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text('Confirm Appointment',
-              style: Theme.of(context).textTheme.titleLarge),
+              style: Theme.of(context).textTheme.titleLarge,),
           const SizedBox(height: 12),
-          Text(summaryText),
+          Text(widget.summaryText),
           
-          // Show loading state
-          if (bookingState.isLoading)
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: 16),
-              child: Row(
+          // Premium upgrade section
+          if (!isPremium) ...[
+            const SizedBox(height: 16),
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: Colors.amber.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: Colors.amber),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(
-                    height: 16,
-                    width: 16,
-                    child: CircularProgressIndicator(strokeWidth: 2),
+                  Row(
+                    children: [
+                      const Icon(Icons.star, color: Colors.amber, size: 20),
+                      const SizedBox(width: 8),
+                      Text(
+                        'Upgrade to Premium',
+                        style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
                   ),
-                  SizedBox(width: 12),
-                  Text('Processing booking...'),
-                ],
-              ),
-            ),
-
-          // Show error state
-          if (bookingState.hasError)
-            Container(
-              padding: const EdgeInsets.all(12),
-              margin: const EdgeInsets.symmetric(vertical: 16),
-              decoration: BoxDecoration(
-                color: Colors.red.shade50,
-                border: Border.all(color: Colors.red.shade200),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Text(
-                'Error: ${bookingState.error}',
-                style: TextStyle(color: Colors.red.shade700),
-              ),
-            ),
-
-          // Show success state
-          if (bookingState.hasValue && bookingState.value != null)
-            Container(
-              padding: const EdgeInsets.all(12),
-              margin: const EdgeInsets.symmetric(vertical: 16),
-              decoration: BoxDecoration(
-                color: Colors.green.shade50,
-                border: Border.all(color: Colors.green.shade200),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Row(
-                children: [
-                  Icon(Icons.check_circle, color: Colors.green.shade700, size: 20),
-                  const SizedBox(width: 8),
+                  const SizedBox(height: 4),
                   Text(
-                    'Booking submitted successfully!',
-                    style: TextStyle(color: Colors.green.shade700),
+                    'Remove ads and enjoy a premium experience',
+                    style: Theme.of(context).textTheme.bodySmall,
+                  ),
+                  const SizedBox(height: 8),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton.icon(
+                      onPressed: _upgradeToPremium,
+                      icon: const Icon(Icons.star, size: 16),
+                      label: const Text('Upgrade to Premium'),
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.amber,
+                        foregroundColor: Colors.black,
+                      ),
+                    ),
                   ),
                 ],
               ),
             ),
-
+          ],
+          
           const SizedBox(height: 24),
           Row(
             children: [
               Expanded(
                 child: OutlinedButton(
-                  onPressed: bookingState.isLoading ? null : onCancel,
+                  onPressed: widget.onCancel,
                   child: const Text('Cancel'),
                 ),
               ),
               const SizedBox(width: 12),
               Expanded(
                 child: ElevatedButton(
-                  onPressed: bookingState.isLoading ? null : onConfirm,
-                  child: const Text('Confirm'),
+                  onPressed: _isLoadingAd ? null : _handleConfirm,
+                  child: _isLoadingAd
+                      ? const SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: CircularProgressIndicator(strokeWidth: 2),
+                        )
+                      : Text(isPremium ? 'Confirm' : 'Confirm (with Ad)'),
                 ),
               ),
             ],
