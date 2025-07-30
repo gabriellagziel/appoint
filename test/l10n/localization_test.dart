@@ -21,6 +21,7 @@ void main() {
           locale: const Locale('en'),
           home: Builder(
             builder: (context) {
+              late AppLocalizations l10n;
               l10n = AppLocalizations.of(context)!;
               return Scaffold(
                 body: Column(
@@ -54,7 +55,7 @@ void main() {
 
       // Verify that all the key strings are loaded
       expect(find.text('Admin Broadcast'), findsOneWidget);
-      expect(find.text('No messages yet'), findsOneWidget);
+      expect(find.text('No broadcast messages'), findsOneWidget);
       expect(find.text('Content Library'), findsOneWidget);
       expect(find.text('Send Now'), findsOneWidget);
       expect(find.text('Details'), findsOneWidget);
@@ -88,6 +89,7 @@ void main() {
           locale: const Locale('en'),
           home: Builder(
             builder: (context) {
+              late AppLocalizations l10n;
               l10n = AppLocalizations.of(context)!;
               return Scaffold(
                 body: Column(
@@ -95,15 +97,15 @@ void main() {
                     Text(l10n.type('Test Type')),
                     Text(l10n.content('Test Content')),
                     Text(l10n.status('Active')),
-                    Text(l10n.recipients(5)),
+                    Text(l10n.recipients('5', 5)),
                     Text(l10n.opened(10)),
-                    Text(l10n.created('2024-01-01')),
-                    Text(l10n.scheduled('2024-01-02')),
+                    Text(l10n.created('2024-01-01', '2024-01-01')),
+                    Text(l10n.scheduled('2024-01-02', '2024-01-02')),
                     Text(l10n.errorCheckingPermissions('Test Error')),
                     Text(l10n.errorSavingMessage('Test Error')),
                     Text(l10n.errorSendingMessage('Test Error')),
                     Text(l10n.link('https://example.com')),
-                    Text(l10n.clicked(5)),
+                    Text(l10n.clicked('5', 5)),
                   ],
                 ),
               );
