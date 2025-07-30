@@ -1,10 +1,11 @@
 import 'dart:io';
 
 import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/l10n/app_localizations_admin_ext.dart';
 import 'package:appoint/utils/admin_localizations.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/providers/admin_provider.dart';
-import 'package:appoint/services/broadcast_service.dart' hide adminBroadcastServiceProvider;
+import 'package:appoint/services/broadcast_service.dart';
 import 'package:appoint/infra/firebase_storage_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -55,9 +56,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         actions: [
           IconButton(
             icon: const Icon(Icons.add),
-            onPressed: l10n != null 
-                ? () => _showComposeDialog(context, l10n!, theme)
-                : null,
+            onPressed: () => _showComposeDialog(context, l10n, theme),
           ),
         ],
       ),
@@ -147,16 +146,10 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
   Widget _buildMessagesList(List<AdminBroadcastMessage> messages) {
     final l10n = AppLocalizations.of(context);
-    
-    if (l10n == null) {
-      return const Center(
-        child: Text('Localization not available'),
-      );
-    }
 
     if (messages.isEmpty) {
       return Center(
-        child: Text(l10n?.noBroadcastMessages ?? 'No broadcast messages'),
+        child: Text(l10n.noBroadcastMessages),
       );
     }
 
@@ -185,33 +178,33 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n?.content(message.content) ?? 'Content: ${message.content}',
+                  l10n.content(message.content),
                   maxLines: 3,
                   overflow: TextOverflow.ellipsis,
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n?.type(message.type.toString()) ?? 'Type: ${message.type}',
+                  l10n.type(message.type.toString()),
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 if (message.actualRecipients != null)
                   Text(
-                    l10n?.recipients(message.actualRecipients!) ?? 'Recipients: ${message.actualRecipients}',
+                    l10n.recipients(message.actualRecipients!),
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 if (message.openedCount != null)
                   Text(
-                    l10n?.opened(message.openedCount!) ?? 'Opened: ${message.openedCount}',
+                    l10n.opened(message.openedCount!),
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n?.created(message.createdAt) ?? 'Created: ${message.createdAt}',
+                  l10n.created(message.createdAt),
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 if (message.scheduledFor != null)
                   Text(
-                    l10n?.scheduled(message.scheduledFor!) ?? 'Scheduled: ${message.scheduledFor}',
+                    l10n.scheduled(message.scheduledFor!),
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 const SizedBox(height: 8),
@@ -221,11 +214,11 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                     if (message.status == BroadcastMessageStatus.pending)
                       TextButton(
                         onPressed: () => _sendMessage(message.id),
-                        child: Text(l10n?.sendNow ?? 'Send Now'),
+                        child: Text(l10n.sendNow),
                       ),
                     TextButton(
                       onPressed: () => _showMessageDetails(message),
-                      child: Text(l10n?.details ?? 'Details'),
+                      child: Text(l10n.details),
                     ),
                   ],
                 ),
@@ -238,17 +231,13 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Widget _buildStatusChip(BroadcastMessageStatus status) {
-    Color color;
-    String text;
+    late Color color;
+    late String text;
 
     switch (status) {
       case BroadcastMessageStatus.pending:
         color = Colors.orange;
         text = 'Pending';
-        break;
-      case BroadcastMessageStatus.sending:
-        color = Colors.blue;
-        text = 'Sending';
         break;
       case BroadcastMessageStatus.sent:
         color = Colors.green;
@@ -257,10 +246,6 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       case BroadcastMessageStatus.failed:
         color = Colors.red;
         text = 'Failed';
-        break;
-      case BroadcastMessageStatus.partially_sent:
-        color = Colors.amber;
-        text = 'Partial';
         break;
     }
 
@@ -271,17 +256,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     );
   }
 
-  void _showComposeDialog(BuildContext context, AppLocalizations? l10n, ThemeData theme) {
-    if (l10n == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Localization not available'),
-          backgroundColor: Colors.red,
-        ),
-      );
-      return;
-    }
-    
+  void _showComposeDialog(BuildContext context, AppLocalizations l10n, ThemeData theme) {
     // Check admin privileges before showing the dialog
     final isAdmin = ref.read(isAdminProvider);
     isAdmin.when(
@@ -336,12 +311,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     );
   }
 
-  Widget _buildComposeForm(AppLocalizations? l10n, ThemeData theme) {
-    if (l10n == null) {
-      return const Center(
-        child: Text('Localization not available'),
-      );
-    }
+  Widget _buildComposeForm(AppLocalizations l10n, ThemeData theme) {
 
     return Form(
       key: _formKey,
@@ -533,10 +503,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     );
   }
 
-  Widget _buildTargetingFilters(AppLocalizations? l10n) {
-    if (l10n == null) {
-      return const SizedBox.shrink();
-    }
+  Widget _buildTargetingFilters(AppLocalizations l10n) {
 
     return ExpansionTile(
       title: Text(l10n.targetingFilters),
@@ -616,10 +583,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     );
   }
 
-  Widget _buildSchedulingOptions(AppLocalizations? l10n) {
-    if (l10n == null) {
-      return const SizedBox.shrink();
-    }
+  Widget _buildSchedulingOptions(AppLocalizations l10n) {
 
     return ExpansionTile(
       title: Text(l10n.scheduling),
