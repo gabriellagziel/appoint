@@ -5,4 +5,5 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final dashboardServiceProvider =
     Provider<DashboardService>((ref) => DashboardService());
 
-final dashboardStatsProvider = StreamProvider<DashboardStats>((ref) => ref.read(dashboardServiceProvider).watchDashboardStats());
+final dashboardStatsProvider = StreamProvider<DashboardStats>(
+    (ref) => ref.read(dashboardServiceProvider).watchDashboardStats());

@@ -6,6 +6,8 @@ import 'package:appoint/features/auth/home_screen.dart';
 import 'package:appoint/features/booking/booking_confirm_screen.dart';
 import 'package:appoint/features/booking/booking_request_screen.dart';
 import 'package:appoint/features/booking/screens/chat_booking_screen.dart';
+import 'package:appoint/features/business/screens/business_dashboard_screen.dart'
+    as business;
 import 'package:appoint/features/calendar/google_integration_screen.dart';
 import 'package:appoint/features/child/ui/child_dashboard_screen.dart';
 import 'package:appoint/features/child/ui/parental_control_screen.dart';
@@ -40,12 +42,11 @@ import 'package:appoint/features/studio/ui/providers_screen.dart';
 import 'package:appoint/features/studio/ui/staff_screen.dart';
 import 'package:appoint/features/studio/ui/studio_dashboard_screen.dart';
 import 'package:appoint/features/studio_business/entry/business_entry_screen.dart';
-import 'package:appoint/features/business/screens/business_dashboard_screen.dart'
-    as business;
-
 import 'package:appoint/features/studio_business/screens/business_profile_screen.dart';
 import 'package:appoint/features/studio_profile/studio_profile_screen.dart';
 import 'package:appoint/models/invite.dart';
+import 'package:appoint/services/branch_service.dart';
+import 'package:appoint/services/notification_service.dart';
 import 'package:appoint/widgets/animations/fade_slide_page_route.dart';
 import 'package:flutter/material.dart';
 
@@ -198,7 +199,10 @@ class AppRouter {
         );
       case '/ambassador-dashboard':
         return MaterialPageRoute(
-          builder: (_) => const AmbassadorDashboardScreen(),
+          builder: (_) => AmbassadorDashboardScreen(
+            notificationService: NotificationService(),
+            branchService: BranchService(),
+          ),
           settings: settings,
         );
       case '/ambassador-onboarding':
@@ -309,9 +313,9 @@ class AppRouter {
 
 // Placeholder screen for meeting details (to be implemented)
 class MeetingDetailsScreen extends StatelessWidget {
-
   const MeetingDetailsScreen({
-    required this.meetingId, super.key,
+    required this.meetingId,
+    super.key,
     this.creatorId,
     this.contextId,
     this.groupId,
@@ -323,30 +327,30 @@ class MeetingDetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(
-        title: const Text('Meeting Details'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('Meeting ID: $meetingId'),
-            if (creatorId != null) Text('Creator: $creatorId'),
-            if (contextId != null) Text('Context: $contextId'),
-            if (groupId != null) Text('Group: $groupId'),
-            const SizedBox(height: 24),
-            const Text(
-              'This is a placeholder screen for meeting details.',
-              style: TextStyle(fontSize: 16),
-            ),
-            const SizedBox(height: 16),
-            ElevatedButton(
-              onPressed: () => Navigator.of(context).pop(),
-              child: const Text('Close'),
-            ),
-          ],
+        appBar: AppBar(
+          title: const Text('Meeting Details'),
         ),
-      ),
-    );
+        body: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Meeting ID: $meetingId'),
+              if (creatorId != null) Text('Creator: $creatorId'),
+              if (contextId != null) Text('Context: $contextId'),
+              if (groupId != null) Text('Group: $groupId'),
+              const SizedBox(height: 24),
+              const Text(
+                'This is a placeholder screen for meeting details.',
+                style: TextStyle(fontSize: 16),
+              ),
+              const SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: () => Navigator.of(context).pop(),
+                child: const Text('Close'),
+              ),
+            ],
+          ),
+        ),
+      );
 }

@@ -7,16 +7,19 @@ class SurveyService {
 
   // Fetch surveys from Firestore
   Stream<List<Map<String, dynamic>>> fetchSurveys() => _firestore
-        .collection('surveys')
-        .where('status', isEqualTo: 'active')
-        .snapshots()
-        .map((snapshot) => snapshot.docs
-            .map((doc) => {'id': doc.id, ...doc.data()})
-            .toList(),);
+      .collection('surveys')
+      .where('status', isEqualTo: 'active')
+      .snapshots()
+      .map(
+        (snapshot) =>
+            snapshot.docs.map((doc) => {'id': doc.id, ...doc.data()}).toList(),
+      );
 
   // Submit survey response
   Future<void> submitResponse(
-      String surveyId, final Map<String, dynamic> response,) async {
+    String surveyId,
+    final Map<String, dynamic> response,
+  ) async {
     final user = _auth.currentUser;
     if (user == null) throw Exception('User not authenticated');
 
@@ -48,7 +51,9 @@ class SurveyService {
 
   // Update survey
   Future<void> updateSurvey(
-      String surveyId, final Map<String, dynamic> updates,) async {
+    String surveyId,
+    final Map<String, dynamic> updates,
+  ) async {
     await _firestore.collection('surveys').doc(surveyId).update({
       ...updates,
       'updatedAt': FieldValue.serverTimestamp(),
@@ -80,12 +85,15 @@ class SurveyService {
   }
 
   // Get survey responses for admin
-  Stream<List<Map<String, dynamic>>> getSurveyResponses(String surveyId) => _firestore
-        .collection('surveys')
-        .doc(surveyId)
-        .collection('responses')
-        .snapshots()
-        .map((snapshot) => snapshot.docs
-            .map((doc) => {'id': doc.id, ...doc.data()})
-            .toList(),);
+  Stream<List<Map<String, dynamic>>> getSurveyResponses(String surveyId) =>
+      _firestore
+          .collection('surveys')
+          .doc(surveyId)
+          .collection('responses')
+          .snapshots()
+          .map(
+            (snapshot) => snapshot.docs
+                .map((doc) => {'id': doc.id, ...doc.data()})
+                .toList(),
+          );
 }

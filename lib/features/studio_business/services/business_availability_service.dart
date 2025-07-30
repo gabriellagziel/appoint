@@ -6,7 +6,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 final businessAvailabilityServiceProvider =
-    Provider<BusinessAvailabilityService>((ref) => BusinessAvailabilityService());
+    Provider<BusinessAvailabilityService>(
+        (ref) => BusinessAvailabilityService());
 
 class BusinessAvailabilityService {
   static const String _storageKey = 'business_availability_config';
@@ -40,8 +41,10 @@ class BusinessAvailabilityService {
       final availabilityList = config['availability'] as List<dynamic>;
 
       return availabilityList
-          .map((item) =>
-              BusinessAvailability.fromJson(item as Map<String, dynamic>),)
+          .map(
+            (item) =>
+                BusinessAvailability.fromJson(item as Map<String, dynamic>),
+          )
           .toList();
     } catch (e) {
       // Return default configuration if parsing fails
@@ -59,7 +62,9 @@ class BusinessAvailabilityService {
 
   /// Update a specific day's availability
   Future<void> updateDay(
-      int weekday, final BusinessAvailability availability,) async {
+    int weekday,
+    final BusinessAvailability availability,
+  ) async {
     final currentConfig = await loadConfiguration();
     final updatedConfig = currentConfig.map((final day) {
       if (day.weekday == weekday) {
@@ -73,6 +78,6 @@ class BusinessAvailabilityService {
 
   /// Convert a list of BusinessAvailability to a JSON map for saving
   Map<String, dynamic> toJson(List<BusinessAvailability> availability) => {
-      'availability': availability.map((a) => a.toJson()).toList(),
-    };
+        'availability': availability.map((a) => a.toJson()).toList(),
+      };
 }

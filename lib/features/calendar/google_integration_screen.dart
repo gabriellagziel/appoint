@@ -39,35 +39,35 @@ class _GoogleIntegrationScreenState
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBar(title: const Text('Google Calendar')),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            ElevatedButton(
-              onPressed: _connect,
-              child: const Text('Connect to Google Calendar'),
-            ),
-            const SizedBox(height: 16),
-            Expanded(
-              child: ListView.builder(
-                itemCount: _calendars.length,
-                itemBuilder: (context, final index) {
-                  final cal = _calendars[index];
-                  return ListTile(
-                    title: Text(cal.summary ?? ''),
-                    subtitle: Text(cal.id ?? ''),
-                    trailing: IconButton(
-                      icon: const Icon(Icons.add),
-                      onPressed: () => _addEvent(cal.id!),
-                    ),
-                  );
-                },
+        appBar: AppBar(title: const Text('Google Calendar')),
+        body: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ElevatedButton(
+                onPressed: _connect,
+                child: const Text('Connect to Google Calendar'),
               ),
-            ),
-          ],
+              const SizedBox(height: 16),
+              Expanded(
+                child: ListView.builder(
+                  itemCount: _calendars.length,
+                  itemBuilder: (context, final index) {
+                    final cal = _calendars[index];
+                    return ListTile(
+                      title: Text(cal.summary ?? ''),
+                      subtitle: Text(cal.id ?? ''),
+                      trailing: IconButton(
+                        icon: const Icon(Icons.add),
+                        onPressed: () => _addEvent(cal.id!),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ],
+          ),
         ),
-      ),
-    );
+      );
 }

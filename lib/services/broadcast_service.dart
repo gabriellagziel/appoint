@@ -6,7 +6,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class BroadcastService {
-
   BroadcastService({FirebaseFirestore? firestore})
       : _firestore = firestore ?? FirebaseFirestore.instance;
   final FirebaseFirestore _firestore;
@@ -23,7 +22,8 @@ class BroadcastService {
 
   // Create a new broadcast message
   Future<String> createBroadcastMessage(
-      AdminBroadcastMessage message) async {
+    AdminBroadcastMessage message,
+  ) async {
     try {
       final docRef = await _broadcastsCollection.add(message.toJson());
       return docRef.id;
@@ -33,15 +33,20 @@ class BroadcastService {
   }
 
   // Get all broadcast messages
-  Stream<List<AdminBroadcastMessage>> getBroadcastMessages() => _broadcastsCollection
-        .orderBy('createdAt', descending: true)
-        .snapshots()
-        .map((snapshot) => snapshot.docs
-            .map((doc) => AdminBroadcastMessage.fromJson({
-                  'id': doc.id,
-                  ...doc.data(),
-                }),)
-            .toList(),);
+  Stream<List<AdminBroadcastMessage>> getBroadcastMessages() =>
+      _broadcastsCollection
+          .orderBy('createdAt', descending: true)
+          .snapshots()
+          .map(
+            (snapshot) => snapshot.docs
+                .map(
+                  (doc) => AdminBroadcastMessage.fromJson({
+                    'id': doc.id,
+                    ...doc.data(),
+                  }),
+                )
+                .toList(),
+          );
 
   // Get broadcast message by ID
   Future<AdminBroadcastMessage?> getBroadcastMessage(String id) async {
@@ -61,7 +66,8 @@ class BroadcastService {
 
   // Estimate target audience size
   Future<int> estimateTargetAudience(
-      BroadcastTargetingFilters filters) async {
+    BroadcastTargetingFilters filters,
+  ) async {
     try {
       Query query = _usersCollection;
 
@@ -90,8 +96,10 @@ class BroadcastService {
       }
 
       if (filters.joinedAfter != null) {
-        query = query.where('createdAt',
-            isGreaterThanOrEqualTo: filters.joinedAfter,);
+        query = query.where(
+          'createdAt',
+          isGreaterThanOrEqualTo: filters.joinedAfter,
+        );
       }
 
       if (filters.joinedBefore != null) {
@@ -128,58 +136,6 @@ class BroadcastService {
     }
   }
 
-  // Get target users based on filters
-  Future<List<UserProfile>> _getTargetUsers(
-      BroadcastTargetingFilters filters) async {
-    try {
-      Query query = _usersCollection;
-
-      // Apply filters
-      if (filters.countries != null && filters.countries!.isNotEmpty) {
-        query = query.where('country', whereIn: filters.countries);
-      }
-
-      if (filters.cities != null && filters.cities!.isNotEmpty) {
-        query = query.where('city', whereIn: filters.cities);
-      }
-
-      if (filters.subscriptionTiers != null &&
-          filters.subscriptionTiers!.isNotEmpty) {
-        query =
-            query.where('subscriptionTier', whereIn: filters.subscriptionTiers);
-      }
-
-      if (filters.userRoles != null && filters.userRoles!.isNotEmpty) {
-        query = query.where('role', whereIn: filters.userRoles);
-      }
-
-      if (filters.accountStatuses != null &&
-          filters.accountStatuses!.isNotEmpty) {
-        query = query.where('status', whereIn: filters.accountStatuses);
-      }
-
-      if (filters.joinedAfter != null) {
-        query = query.where('createdAt',
-            isGreaterThanOrEqualTo: filters.joinedAfter,);
-      }
-
-      if (filters.joinedBefore != null) {
-        query =
-            query.where('createdAt', isLessThanOrEqualTo: filters.joinedBefore);
-      }
-
-      final snapshot = await query.get();
-      return snapshot.docs
-          .map((doc) => UserProfile.fromJson({
-                'id': doc.id,
-                ...(doc.data()!),
-              }),)
-          .toList();
-    } catch (e) {
-      throw Exception('Failed to get target users: $e');
-    }
-  }
-
   // Send broadcast message via backend Firebase Function
   Future<void> _sendViaBackendFunction(String messageId) async {
     try {
@@ -190,24 +146,26 @@ class BroadcastService {
       }
 
       // Call the backend Firebase Function
-      final callable = FirebaseFunctions.instance.httpsCallable('sendBroadcastMessage');
-      
+      final callable =
+          FirebaseFunctions.instance.httpsCallable('sendBroadcastMessage');
+
       final result = await callable.call({
         'messageId': messageId,
         'adminId': user.uid,
       });
 
       final data = result.data as Map<String, dynamic>;
-      print('Broadcast sent via backend: ${data['deliveredCount']} delivered, ${data['failedCount']} failed');
-      
+      print(
+          'Broadcast sent via backend: ${data['deliveredCount']} delivered, ${data['failedCount']} failed');
+
       if (data['retryCount'] > 0) {
         print('Retries performed: ${data['retryCount']}');
       }
-      
+
       if (data['errors'] != null && (data['errors'] as List).isNotEmpty) {
-        print('Delivery errors: ${(data['errors'] as List).take(3).join(', ')}');
+        print(
+            'Delivery errors: ${(data['errors'] as List).take(3).join(', ')}');
       }
-      
     } catch (e) {
       print('Failed to send broadcast via backend: $e');
       rethrow;
@@ -252,7 +210,8 @@ class BroadcastService {
   }
 
   // Get messages for a specific user based on targeting filters
-  Future<List<AdminBroadcastMessage>> getMessagesForUser(UserProfile user) async {
+  Future<List<AdminBroadcastMessage>> getMessagesForUser(
+      UserProfile user) async {
     try {
       // Get all broadcast messages
       final allMessages = await _broadcastsCollection
@@ -260,7 +219,7 @@ class BroadcastService {
           .orderBy('createdAt', descending: true)
           .get();
 
-      final List<AdminBroadcastMessage> userMessages = [];
+      final userMessages = <AdminBroadcastMessage>[];
 
       for (final doc in allMessages.docs) {
         final message = AdminBroadcastMessage.fromJson({
@@ -281,7 +240,8 @@ class BroadcastService {
   }
 
   // Check if a user matches the targeting filters
-  Future<bool> _userMatchesFilters(UserProfile user, BroadcastTargetingFilters filters) async {
+  Future<bool> _userMatchesFilters(
+      UserProfile user, BroadcastTargetingFilters filters) async {
     // If no filters are set, message goes to all users
     if (filters.countries == null &&
         filters.cities == null &&
@@ -318,9 +278,11 @@ class BroadcastService {
     }
 
     // Check subscription tier filter
-    if (filters.subscriptionTiers != null && filters.subscriptionTiers!.isNotEmpty) {
+    if (filters.subscriptionTiers != null &&
+        filters.subscriptionTiers!.isNotEmpty) {
       final userSubscriptionTier = userData['subscriptionTier'] as String?;
-      if (userSubscriptionTier == null || !filters.subscriptionTiers!.contains(userSubscriptionTier)) {
+      if (userSubscriptionTier == null ||
+          !filters.subscriptionTiers!.contains(userSubscriptionTier)) {
         return false;
       }
     }
@@ -334,9 +296,11 @@ class BroadcastService {
     }
 
     // Check account status filter
-    if (filters.accountStatuses != null && filters.accountStatuses!.isNotEmpty) {
+    if (filters.accountStatuses != null &&
+        filters.accountStatuses!.isNotEmpty) {
       final userStatus = userData['status'] as String?;
-      if (userStatus == null || !filters.accountStatuses!.contains(userStatus)) {
+      if (userStatus == null ||
+          !filters.accountStatuses!.contains(userStatus)) {
         return false;
       }
     }
@@ -344,14 +308,16 @@ class BroadcastService {
     // Check join date filters
     if (filters.joinedAfter != null) {
       final userCreatedAt = userData['createdAt'] as Timestamp?;
-      if (userCreatedAt == null || userCreatedAt.toDate().isBefore(filters.joinedAfter!)) {
+      if (userCreatedAt == null ||
+          userCreatedAt.toDate().isBefore(filters.joinedAfter!)) {
         return false;
       }
     }
 
     if (filters.joinedBefore != null) {
       final userCreatedAt = userData['createdAt'] as Timestamp?;
-      if (userCreatedAt == null || userCreatedAt.toDate().isAfter(filters.joinedBefore!)) {
+      if (userCreatedAt == null ||
+          userCreatedAt.toDate().isAfter(filters.joinedBefore!)) {
         return false;
       }
     }
@@ -370,7 +336,8 @@ class BroadcastService {
       final data = {
         'messageId': messageId,
         'userId': userId,
-        'event': event, // sent, received, opened, clicked, poll_response, failed
+        'event':
+            event, // sent, received, opened, clicked, poll_response, failed
         'timestamp': FieldValue.serverTimestamp(),
         ...?additionalData,
       };
@@ -389,28 +356,24 @@ class BroadcastService {
   Future<void> _updateMessageCounters(String messageId, String event) async {
     try {
       final messageRef = _broadcastsCollection.doc(messageId);
-      
+
       switch (event) {
         case 'opened':
           await messageRef.update({
             'openedCount': FieldValue.increment(1),
           });
-          break;
         case 'clicked':
           await messageRef.update({
             'clickedCount': FieldValue.increment(1),
           });
-          break;
         case 'poll_response':
           await messageRef.update({
             'pollResponseCount': FieldValue.increment(1),
           });
-          break;
         case 'failed':
           await messageRef.update({
             'failedCount': FieldValue.increment(1),
           });
-          break;
       }
     } catch (e) {
       print('Failed to update message counters: $e');
@@ -439,16 +402,26 @@ class BroadcastService {
           .orderBy('timestamp', descending: true)
           .get();
 
-      final events = analyticsQuery.docs.map((doc) => {
-        'id': doc.id,
-        ...doc.data(),
-      }).toList();
+      final events = analyticsQuery.docs
+          .map(
+            (doc) => {
+              'id': doc.id,
+              ...doc.data(),
+            },
+          )
+          .toList();
 
       // Calculate rates
-      final openRate = actualRecipients > 0 ? (openedCount / actualRecipients * 100) : 0.0;
-      final clickRate = openedCount > 0 ? (clickedCount / openedCount * 100) : 0.0;
-      final responseRate = actualRecipients > 0 ? (pollResponseCount / actualRecipients * 100) : 0.0;
-      final deliveryRate = actualRecipients > 0 ? ((actualRecipients - failedCount) / actualRecipients * 100) : 0.0;
+      final openRate =
+          actualRecipients > 0 ? (openedCount / actualRecipients * 100) : 0.0;
+      final clickRate =
+          openedCount > 0 ? (clickedCount / openedCount * 100) : 0.0;
+      final responseRate = actualRecipients > 0
+          ? (pollResponseCount / actualRecipients * 100)
+          : 0.0;
+      final deliveryRate = actualRecipients > 0
+          ? ((actualRecipients - failedCount) / actualRecipients * 100)
+          : 0.0;
 
       // Get poll response breakdown if applicable
       Map<String, int>? pollBreakdown;
@@ -528,22 +501,22 @@ class BroadcastService {
       }
 
       final snapshot = await query.get();
-      
-      int totalMessages = 0;
-      int totalRecipients = 0;
-      int totalOpened = 0;
-      int totalClicked = 0;
-      int totalFailed = 0;
+
+      var totalMessages = 0;
+      var totalRecipients = 0;
+      var totalOpened = 0;
+      var totalClicked = 0;
+      var totalFailed = 0;
       final messagesByType = <String, int>{};
       final messagesByDate = <String, int>{};
 
       for (final doc in snapshot.docs) {
-        final data = doc.data() as Map<String, dynamic>;
+        final data = doc.data()! as Map<String, dynamic>;
         totalMessages++;
-        totalRecipients += (data['actualRecipients'] as int? ?? 0);
-        totalOpened += (data['openedCount'] as int? ?? 0);
-        totalClicked += (data['clickedCount'] as int? ?? 0);
-        totalFailed += (data['failedCount'] as int? ?? 0);
+        totalRecipients += data['actualRecipients'] as int? ?? 0;
+        totalOpened += data['openedCount'] as int? ?? 0;
+        totalClicked += data['clickedCount'] as int? ?? 0;
+        totalFailed += data['failedCount'] as int? ?? 0;
 
         // Count by type
         final type = data['type'] as String? ?? 'unknown';
@@ -552,14 +525,19 @@ class BroadcastService {
         // Count by date
         final createdAt = (data['createdAt'] as Timestamp?)?.toDate();
         if (createdAt != null) {
-          final dateKey = '${createdAt.year}-${createdAt.month.toString().padLeft(2, '0')}-${createdAt.day.toString().padLeft(2, '0')}';
+          final dateKey =
+              '${createdAt.year}-${createdAt.month.toString().padLeft(2, '0')}-${createdAt.day.toString().padLeft(2, '0')}';
           messagesByDate[dateKey] = (messagesByDate[dateKey] ?? 0) + 1;
         }
       }
 
-      final avgOpenRate = totalRecipients > 0 ? (totalOpened / totalRecipients * 100) : 0.0;
-      final avgClickRate = totalOpened > 0 ? (totalClicked / totalOpened * 100) : 0.0;
-      final avgDeliveryRate = totalRecipients > 0 ? ((totalRecipients - totalFailed) / totalRecipients * 100) : 0.0;
+      final avgOpenRate =
+          totalRecipients > 0 ? (totalOpened / totalRecipients * 100) : 0.0;
+      final avgClickRate =
+          totalOpened > 0 ? (totalClicked / totalOpened * 100) : 0.0;
+      final avgDeliveryRate = totalRecipients > 0
+          ? ((totalRecipients - totalFailed) / totalRecipients * 100)
+          : 0.0;
 
       return {
         'totalMessages': totalMessages,
@@ -584,7 +562,7 @@ class BroadcastService {
   Future<void> processScheduledMessages() async {
     try {
       final now = DateTime.now();
-      
+
       // Find messages scheduled for sending
       final scheduledQuery = await _broadcastsCollection
           .where('status', isEqualTo: BroadcastMessageStatus.pending.name)
@@ -631,20 +609,26 @@ class BroadcastService {
       }
 
       final snapshot = await query.get();
-      
+
       final csvLines = <String>[];
-      csvLines.add('Message ID,Title,Type,Created At,Recipients,Opened,Clicked,Open Rate %,Click Rate %,Status');
+      csvLines.add(
+          'Message ID,Title,Type,Created At,Recipients,Opened,Clicked,Open Rate %,Click Rate %,Status');
 
       for (final doc in snapshot.docs) {
-        final data = doc.data() as Map<String, dynamic>;
+        final data = doc.data()! as Map<String, dynamic>;
         final recipients = data['actualRecipients'] as int? ?? 0;
         final opened = data['openedCount'] as int? ?? 0;
         final clicked = data['clickedCount'] as int? ?? 0;
-        final openRate = recipients > 0 ? (opened / recipients * 100).toStringAsFixed(2) : '0.00';
-        final clickRate = opened > 0 ? (clicked / opened * 100).toStringAsFixed(2) : '0.00';
-        final createdAt = (data['createdAt'] as Timestamp?)?.toDate().toIso8601String() ?? '';
+        final openRate = recipients > 0
+            ? (opened / recipients * 100).toStringAsFixed(2)
+            : '0.00';
+        final clickRate =
+            opened > 0 ? (clicked / opened * 100).toStringAsFixed(2) : '0.00';
+        final createdAt =
+            (data['createdAt'] as Timestamp?)?.toDate().toIso8601String() ?? '';
 
-        csvLines.add('"${doc.id}","${data['title'] ?? ''}","${data['type'] ?? ''}","$createdAt","$recipients","$opened","$clicked","$openRate","$clickRate","${data['status'] ?? ''}"');
+        csvLines.add(
+            '"${doc.id}","${data['title'] ?? ''}","${data['type'] ?? ''}","$createdAt","$recipients","$opened","$clicked","$openRate","$clickRate","${data['status'] ?? ''}"');
       }
 
       return csvLines.join('\n');
@@ -654,39 +638,44 @@ class BroadcastService {
   }
 
   /// Get real-time analytics stream for a message
-  Stream<Map<String, dynamic>> getMessageAnalyticsStream(String messageId) {
-    return _broadcastsCollection.doc(messageId).snapshots().map((snapshot) {
-      if (!snapshot.exists) {
-        return {'error': 'Message not found'};
-      }
+  Stream<Map<String, dynamic>> getMessageAnalyticsStream(String messageId) =>
+      _broadcastsCollection.doc(messageId).snapshots().map((snapshot) {
+        if (!snapshot.exists) {
+          return {'error': 'Message not found'};
+        }
 
-      final data = snapshot.data()!;
-      final actualRecipients = data['actualRecipients'] as int? ?? 0;
-      final openedCount = data['openedCount'] as int? ?? 0;
-      final clickedCount = data['clickedCount'] as int? ?? 0;
-      final failedCount = data['failedCount'] as int? ?? 0;
+        final data = snapshot.data()!;
+        final actualRecipients = data['actualRecipients'] as int? ?? 0;
+        final openedCount = data['openedCount'] as int? ?? 0;
+        final clickedCount = data['clickedCount'] as int? ?? 0;
+        final failedCount = data['failedCount'] as int? ?? 0;
 
-      final openRate = actualRecipients > 0 ? (openedCount / actualRecipients * 100) : 0.0;
-      final clickRate = openedCount > 0 ? (clickedCount / openedCount * 100) : 0.0;
-      final deliveryRate = actualRecipients > 0 ? ((actualRecipients - failedCount) / actualRecipients * 100) : 0.0;
+        final openRate =
+            actualRecipients > 0 ? (openedCount / actualRecipients * 100) : 0.0;
+        final clickRate =
+            openedCount > 0 ? (clickedCount / openedCount * 100) : 0.0;
+        final deliveryRate = actualRecipients > 0
+            ? ((actualRecipients - failedCount) / actualRecipients * 100)
+            : 0.0;
 
-      return {
-        'messageId': messageId,
-        'actualRecipients': actualRecipients,
-        'openedCount': openedCount,
-        'clickedCount': clickedCount,
-        'failedCount': failedCount,
-        'openRate': openRate,
-        'clickRate': clickRate,
-        'deliveryRate': deliveryRate,
-        'lastUpdated': DateTime.now().toIso8601String(),
-      };
-    });
-  }
+        return {
+          'messageId': messageId,
+          'actualRecipients': actualRecipients,
+          'openedCount': openedCount,
+          'clickedCount': clickedCount,
+          'failedCount': failedCount,
+          'openRate': openRate,
+          'clickRate': clickRate,
+          'deliveryRate': deliveryRate,
+          'lastUpdated': DateTime.now().toIso8601String(),
+        };
+      });
 }
 
 // Provider
-final broadcastServiceProvider = Provider<BroadcastService>((ref) => BroadcastService());
+final broadcastServiceProvider =
+    Provider<BroadcastService>((ref) => BroadcastService());
 
 // Alias for compatibility with existing code
-final adminBroadcastServiceProvider = broadcastServiceProvider;
+final Provider<BroadcastService> adminBroadcastServiceProvider =
+    broadcastServiceProvider;

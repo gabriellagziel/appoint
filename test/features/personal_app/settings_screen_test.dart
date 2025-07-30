@@ -6,8 +6,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'firebase_test_helper.dart';
 
 void main() {
-  setUpAll(() async {
-  });
+  setUpAll(() async {});
 
   group('SettingsScreen', () {
     testWidgets('shows settings text', (WidgetTester tester) async {

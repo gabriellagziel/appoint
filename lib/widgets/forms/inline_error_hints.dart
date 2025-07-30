@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 
 /// Enhanced form field with inline error hints
 class InlineErrorFormField extends StatefulWidget {
-
   InlineErrorFormField({
-    required this.label, super.key,
+    required this.label,
+    super.key,
     this.hint,
     this.errorText,
     this.controller,
@@ -99,73 +99,73 @@ class _InlineErrorFormFieldState extends State<InlineErrorFormField>
         AnimatedBuilder(
           animation: _shakeAnimation,
           builder: (context, child) => Transform.translate(
-              offset: Offset(_shakeAnimation.value, 0),
-              child: TextFormField(
-                controller: widget.controller,
-                keyboardType: widget.keyboardType,
-                obscureText: widget.obscureText,
-                enabled: widget.enabled,
-                maxLines: widget.maxLines,
-                maxLength: widget.maxLength,
-                validator: widget.validator,
-                onChanged: (value) {
-                  if (widget.autoValidate || _hasBeenTouched) {
-                    _validateField(value);
-                  }
-                  widget.onChanged?.call(value);
-                },
-                onFieldSubmitted: widget.onSubmitted,
-                onTap: () {
-                  if (!_hasBeenTouched) {
-                    setState(() => _hasBeenTouched = true);
-                  }
-                },
-                decoration: InputDecoration(
-                  labelText: widget.label,
-                  hintText: widget.hint,
-                  prefixIcon: widget.prefixIcon,
-                  suffixIcon: _buildSuffixIcon(isValid, hasError),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8),
-                    borderSide: BorderSide(
-                      color: hasError
-                          ? theme.colorScheme.error
-                          : theme.colorScheme.primary,
-                      width: 2,
-                    ),
-                  ),
-                  errorBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8),
-                    borderSide: BorderSide(
-                      color: theme.colorScheme.error,
-                      width: 2,
-                    ),
-                  ),
-                  focusedErrorBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8),
-                    borderSide: BorderSide(
-                      color: theme.colorScheme.error,
-                      width: 2,
-                    ),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(8),
-                    borderSide: BorderSide(
-                      color: hasError
-                          ? theme.colorScheme.error
-                          : theme.colorScheme.outline,
-                    ),
-                  ),
-                  filled: true,
-                  fillColor: hasError
-                      ? theme.colorScheme.error.withOpacity(0.05)
-                      : theme.colorScheme.surface,
+            offset: Offset(_shakeAnimation.value, 0),
+            child: TextFormField(
+              controller: widget.controller,
+              keyboardType: widget.keyboardType,
+              obscureText: widget.obscureText,
+              enabled: widget.enabled,
+              maxLines: widget.maxLines,
+              maxLength: widget.maxLength,
+              validator: widget.validator,
+              onChanged: (value) {
+                if (widget.autoValidate || _hasBeenTouched) {
+                  _validateField(value);
+                }
+                widget.onChanged?.call(value);
+              },
+              onFieldSubmitted: widget.onSubmitted,
+              onTap: () {
+                if (!_hasBeenTouched) {
+                  setState(() => _hasBeenTouched = true);
+                }
+              },
+              decoration: InputDecoration(
+                labelText: widget.label,
+                hintText: widget.hint,
+                prefixIcon: widget.prefixIcon,
+                suffixIcon: _buildSuffixIcon(isValid, hasError),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
                 ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                  borderSide: BorderSide(
+                    color: hasError
+                        ? theme.colorScheme.error
+                        : theme.colorScheme.primary,
+                    width: 2,
+                  ),
+                ),
+                errorBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                  borderSide: BorderSide(
+                    color: theme.colorScheme.error,
+                    width: 2,
+                  ),
+                ),
+                focusedErrorBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                  borderSide: BorderSide(
+                    color: theme.colorScheme.error,
+                    width: 2,
+                  ),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                  borderSide: BorderSide(
+                    color: hasError
+                        ? theme.colorScheme.error
+                        : theme.colorScheme.outline,
+                  ),
+                ),
+                filled: true,
+                fillColor: hasError
+                    ? theme.colorScheme.error.withValues(alpha: 0.05)
+                    : theme.colorScheme.surface,
               ),
             ),
+          ),
         ),
         if (hasError) ...[
           const SizedBox(height: AppSpacing.xs),
@@ -189,56 +189,57 @@ class _InlineErrorFormFieldState extends State<InlineErrorFormField>
     }
   }
 
-  Widget _buildErrorHint(String errorMessage, ThemeData theme) => AnimatedContainer(
-      duration: const Duration(milliseconds: 200),
-      child: Row(
-        children: [
-          Icon(
-            Icons.error_outline,
-            size: 16,
-            color: theme.colorScheme.error,
-          ),
-          const SizedBox(width: AppSpacing.xs),
-          Expanded(
-            child: Text(
-              errorMessage,
+  Widget _buildErrorHint(String errorMessage, ThemeData theme) =>
+      AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        child: Row(
+          children: [
+            Icon(
+              Icons.error_outline,
+              size: 16,
+              color: theme.colorScheme.error,
+            ),
+            const SizedBox(width: AppSpacing.xs),
+            Expanded(
+              child: Text(
+                errorMessage,
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.error,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ),
+          ],
+        ),
+      );
+
+  Widget _buildSuccessHint(ThemeData theme) => AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        child: Row(
+          children: [
+            Icon(
+              Icons.check_circle_outline,
+              size: 16,
+              color: theme.colorScheme.primary,
+            ),
+            const SizedBox(width: AppSpacing.xs),
+            Text(
+              'Valid',
               style: theme.textTheme.bodySmall?.copyWith(
-                color: theme.colorScheme.error,
+                color: theme.colorScheme.primary,
                 fontWeight: FontWeight.w500,
               ),
             ),
-          ),
-        ],
-      ),
-    );
-
-  Widget _buildSuccessHint(ThemeData theme) => AnimatedContainer(
-      duration: const Duration(milliseconds: 200),
-      child: Row(
-        children: [
-          Icon(
-            Icons.check_circle_outline,
-            size: 16,
-            color: theme.colorScheme.primary,
-          ),
-          const SizedBox(width: AppSpacing.xs),
-          Text(
-            'Valid',
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.primary,
-              fontWeight: FontWeight.w500,
-            ),
-          ),
-        ],
-      ),
-    );
+          ],
+        ),
+      );
 }
 
 /// Enhanced password field with inline validation
 class InlineErrorPasswordField extends StatefulWidget {
-
   InlineErrorPasswordField({
-    required this.label, super.key,
+    required this.label,
+    super.key,
     this.hint,
     this.errorText,
     this.controller,
@@ -346,7 +347,7 @@ class _InlineErrorPasswordFieldState extends State<InlineErrorPasswordField> {
             ),
             filled: true,
             fillColor: hasError
-                ? theme.colorScheme.error.withOpacity(0.05)
+                ? theme.colorScheme.error.withValues(alpha: 0.05)
                 : theme.colorScheme.surface,
           ),
         ),
@@ -359,31 +360,31 @@ class _InlineErrorPasswordFieldState extends State<InlineErrorPasswordField> {
   }
 
   Widget _buildErrorHint(String errorMessage, ThemeData theme) => Row(
-      children: [
-        Icon(
-          Icons.error_outline,
-          size: 16,
-          color: theme.colorScheme.error,
-        ),
-        const SizedBox(width: AppSpacing.xs),
-        Expanded(
-          child: Text(
-            errorMessage,
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.error,
-              fontWeight: FontWeight.w500,
+        children: [
+          Icon(
+            Icons.error_outline,
+            size: 16,
+            color: theme.colorScheme.error,
+          ),
+          const SizedBox(width: AppSpacing.xs),
+          Expanded(
+            child: Text(
+              errorMessage,
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.error,
+                fontWeight: FontWeight.w500,
+              ),
             ),
           ),
-        ),
-      ],
-    );
+        ],
+      );
 }
 
 /// Enhanced email field with inline validation
 class InlineErrorEmailField extends StatefulWidget {
-
   InlineErrorEmailField({
-    required this.label, super.key,
+    required this.label,
+    super.key,
     this.hint,
     this.errorText,
     this.controller,
@@ -481,7 +482,7 @@ class _InlineErrorEmailFieldState extends State<InlineErrorEmailField> {
             ),
             filled: true,
             fillColor: hasError
-                ? theme.colorScheme.error.withOpacity(0.05)
+                ? theme.colorScheme.error.withValues(alpha: 0.05)
                 : theme.colorScheme.surface,
           ),
         ),
@@ -494,31 +495,31 @@ class _InlineErrorEmailFieldState extends State<InlineErrorEmailField> {
   }
 
   Widget _buildErrorHint(String errorMessage, ThemeData theme) => Row(
-      children: [
-        Icon(
-          Icons.error_outline,
-          size: 16,
-          color: theme.colorScheme.error,
-        ),
-        const SizedBox(width: AppSpacing.xs),
-        Expanded(
-          child: Text(
-            errorMessage,
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.error,
-              fontWeight: FontWeight.w500,
+        children: [
+          Icon(
+            Icons.error_outline,
+            size: 16,
+            color: theme.colorScheme.error,
+          ),
+          const SizedBox(width: AppSpacing.xs),
+          Expanded(
+            child: Text(
+              errorMessage,
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.error,
+                fontWeight: FontWeight.w500,
+              ),
             ),
           ),
-        ),
-      ],
-    );
+        ],
+      );
 }
 
 /// Enhanced phone field with inline validation
 class InlineErrorPhoneField extends StatefulWidget {
-
   InlineErrorPhoneField({
-    required this.label, super.key,
+    required this.label,
+    super.key,
     this.hint,
     this.errorText,
     this.controller,
@@ -622,7 +623,7 @@ class _InlineErrorPhoneFieldState extends State<InlineErrorPhoneField> {
             ),
             filled: true,
             fillColor: hasError
-                ? theme.colorScheme.error.withOpacity(0.05)
+                ? theme.colorScheme.error.withValues(alpha: 0.05)
                 : theme.colorScheme.surface,
           ),
         ),
@@ -635,24 +636,24 @@ class _InlineErrorPhoneFieldState extends State<InlineErrorPhoneField> {
   }
 
   Widget _buildErrorHint(String errorMessage, ThemeData theme) => Row(
-      children: [
-        Icon(
-          Icons.error_outline,
-          size: 16,
-          color: theme.colorScheme.error,
-        ),
-        const SizedBox(width: AppSpacing.xs),
-        Expanded(
-          child: Text(
-            errorMessage,
-            style: theme.textTheme.bodySmall?.copyWith(
-              color: theme.colorScheme.error,
-              fontWeight: FontWeight.w500,
+        children: [
+          Icon(
+            Icons.error_outline,
+            size: 16,
+            color: theme.colorScheme.error,
+          ),
+          const SizedBox(width: AppSpacing.xs),
+          Expanded(
+            child: Text(
+              errorMessage,
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.error,
+                fontWeight: FontWeight.w500,
+              ),
             ),
           ),
-        ),
-      ],
-    );
+        ],
+      );
 }
 
 /// Form validation helper
@@ -667,7 +668,10 @@ class FormValidationHelper {
 
   /// Validate minimum length
   static String? validateMinLength(
-      String? value, int minLength, String fieldName,) {
+    String? value,
+    int minLength,
+    String fieldName,
+  ) {
     if (value == null || value.length < minLength) {
       return '$fieldName must be at least $minLength characters';
     }
@@ -676,7 +680,10 @@ class FormValidationHelper {
 
   /// Validate maximum length
   static String? validateMaxLength(
-      String? value, int maxLength, String fieldName,) {
+    String? value,
+    int maxLength,
+    String fieldName,
+  ) {
     if (value != null && value.length > maxLength) {
       return '$fieldName must be no more than $maxLength characters';
     }

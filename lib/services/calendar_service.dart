@@ -6,7 +6,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class _CacheEntry {
-
   _CacheEntry(this.events, this.expiry);
   final List<CalendarEvent> events;
   final DateTime expiry;
@@ -15,7 +14,6 @@ class _CacheEntry {
 }
 
 class CalendarService {
-
   CalendarService({Duration cacheTTL = const Duration(minutes: 5)})
       : _cacheTTL = cacheTTL;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -87,7 +85,9 @@ class CalendarService {
   }
 
   Future<List<CalendarEvent>> fetchGoogleEvents(
-      DateTime from, final DateTime to,) async {
+    DateTime from,
+    final DateTime to,
+  ) async {
     final uid = _auth.currentUser?.uid;
     if (uid == null) return [];
     final key = 'google-$uid-${from.toIso8601String()}-${to.toIso8601String()}';
@@ -109,7 +109,9 @@ class CalendarService {
   }
 
   Future<List<CalendarEvent>> fetchOutlookEvents(
-      DateTime from, final DateTime to,) async {
+    DateTime from,
+    final DateTime to,
+  ) async {
     final uid = _auth.currentUser?.uid;
     if (uid == null) return [];
     final key =
@@ -131,16 +133,21 @@ class CalendarService {
     return events;
   }
 
-  Stream<List<CalendarEvent>> watchEvents(final String uid,
-      {required String provider,}) => _firestore
-        .collection('users')
-        .doc(uid)
-        .collection('calendarEvents')
-        .where('provider', isEqualTo: provider)
-        .snapshots()
-        .map((snapshot) => snapshot.docs
-            .map((doc) => CalendarEvent.fromJson(doc.data()))
-            .toList(),);
+  Stream<List<CalendarEvent>> watchEvents(
+    final String uid, {
+    required String provider,
+  }) =>
+      _firestore
+          .collection('users')
+          .doc(uid)
+          .collection('calendarEvents')
+          .where('provider', isEqualTo: provider)
+          .snapshots()
+          .map(
+            (snapshot) => snapshot.docs
+                .map((doc) => CalendarEvent.fromJson(doc.data()))
+                .toList(),
+          );
 
   Future<void> addEvent(CalendarEvent event) async {
     await _firestore.collection(_collection).doc(event.id).set(event.toJson());
@@ -157,13 +164,17 @@ class CalendarService {
     await _firestore.collection(_collection).doc(eventId).delete();
   }
 
-  Stream<List<CalendarEvent>> getEvents() => _firestore.collection(_collection).snapshots().map(
-        (snapshot) => snapshot.docs
-            .map((doc) => CalendarEvent.fromJson(doc.data()))
-            .toList(),);
+  Stream<List<CalendarEvent>> getEvents() =>
+      _firestore.collection(_collection).snapshots().map(
+            (snapshot) => snapshot.docs
+                .map((doc) => CalendarEvent.fromJson(doc.data()))
+                .toList(),
+          );
 
   Future<List<CalendarEvent>> getEventsByDateRange(
-      DateTime start, final DateTime end,) async {
+    DateTime start,
+    final DateTime end,
+  ) async {
     final key = 'range-${start.toIso8601String()}-${end.toIso8601String()}';
     final cached = _getCached(key);
     if (cached != null) return cached;
@@ -174,9 +185,8 @@ class CalendarService {
         .where('endTime', isLessThanOrEqualTo: end)
         .get();
 
-    final events = snapshot.docs
-        .map((doc) => CalendarEvent.fromJson(doc.data()))
-        .toList();
+    final events =
+        snapshot.docs.map((doc) => CalendarEvent.fromJson(doc.data())).toList();
     _setCache(key, events);
     return events;
   }

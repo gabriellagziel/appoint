@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Slot {
-
   const Slot({
     required this.startTime,
     required this.endTime,
@@ -44,7 +43,6 @@ class Slot {
 }
 
 class SlotWithId extends Slot {
-
   const SlotWithId({
     required this.id,
     required super.startTime,
@@ -68,10 +66,11 @@ class SlotWithId extends Slot {
     final DateTime? startTime,
     final DateTime? endTime,
     final bool? isBooked,
-  }) => SlotWithId(
-      id: id ?? this.id,
-      startTime: startTime ?? this.startTime,
-      endTime: endTime ?? this.endTime,
-      isBooked: isBooked ?? this.isBooked,
-    );
+  }) =>
+      SlotWithId(
+        id: id ?? this.id,
+        startTime: startTime ?? this.startTime,
+        endTime: endTime ?? this.endTime,
+        isBooked: isBooked ?? this.isBooked,
+      );
 }

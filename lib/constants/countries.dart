@@ -6,4 +6,5 @@ const Map<String, String> countries = {
   'FR': 'France',
 };
 
-String getCountryName(String code) => countries[code.toUpperCase()] ?? 'Unknown';
+String getCountryName(String code) =>
+    countries[code.toUpperCase()] ?? 'Unknown';

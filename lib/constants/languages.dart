@@ -45,4 +45,5 @@ const List<String> supportedLanguages = [
   'bs',
 ];
 
-bool isSupportedLanguage(String code) => supportedLanguages.contains(code.toLowerCase());
+bool isSupportedLanguage(String code) =>
+    supportedLanguages.contains(code.toLowerCase());

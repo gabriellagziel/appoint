@@ -4,10 +4,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class ReferralService {
-
-  ReferralService(
-      {FirebaseFirestore? firestore, final FirebaseAuth? auth,})
-      : _firestore = firestore ?? FirebaseFirestore.instance,
+  ReferralService({
+    FirebaseFirestore? firestore,
+    final FirebaseAuth? auth,
+  })  : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance;
   final FirebaseFirestore _firestore;
   final FirebaseAuth _auth;
@@ -20,13 +20,13 @@ class ReferralService {
       return data['code'] as String;
     }
 
-    String code;
+    String code = '';
     var exists = true;
     final random = Random();
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     do {
-      final code = List.generate(8, (_) => chars[random.nextInt(chars.length)])
-          .join();
+      code =
+          List.generate(8, (_) => chars[random.nextInt(chars.length)]).join();
       final query = await _firestore
           .collection('referrals')
           .where('code', isEqualTo: code)

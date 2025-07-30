@@ -17,7 +17,7 @@ class BookingRequestScreen extends ConsumerStatefulWidget {
 
 class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
   GoogleMapController? _mapController;
-  LocationService _locationService = LocationService();
+  final LocationService _locationService = LocationService();
   Set<Marker> _markers = {};
 
   @override
@@ -33,19 +33,24 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
       final branches = await ref.read(branchesProvider.future);
       setState(() {
         _markers = branches
-            .map((b) => Marker(
-                  markerId: MarkerId(b.id),
-                  position: LatLng(b.latitude, b.longitude),
-                  infoWindow: InfoWindow(title: b.name),
-                ),)
+            .map(
+              (b) => Marker(
+                markerId: MarkerId(b.id),
+                position: LatLng(b.latitude, b.longitude),
+                infoWindow: InfoWindow(title: b.name),
+              ),
+            )
             .toSet();
       });
 
       if (!kIsWeb) {
         final position = await _locationService.getCurrentLocation();
         if (position != null && _mapController != null) {
-          _mapController!.moveCamera(CameraUpdate.newLatLng(
-              LatLng(position.latitude, position.longitude),),);
+          _mapController!.moveCamera(
+            CameraUpdate.newLatLng(
+              LatLng(position.latitude, position.longitude),
+            ),
+          );
         }
       }
     } catch (e) {
@@ -67,35 +72,35 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
   }
 
   Widget _buildMap() => GoogleMap(
-      initialCameraPosition: MapsService.initialPosition,
-      markers: _markers,
-      onMapCreated: (controller) {
-        _mapController = controller;
-      },
-      myLocationEnabled: true,
-    );
+        initialCameraPosition: MapsService.initialPosition,
+        markers: _markers,
+        onMapCreated: (controller) {
+          _mapController = controller;
+        },
+        myLocationEnabled: true,
+      );
 
   Widget _buildWebFallback() => Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Icon(Icons.map, size: 64, color: Colors.grey),
-          const SizedBox(height: 16),
-          const Text(
-            'Map selection is not available on web',
-            style: TextStyle(fontSize: 18),
-          ),
-          const SizedBox(height: 16),
-          const Text(
-            'Please use the mobile app for location selection',
-            style: TextStyle(fontSize: 14, color: Colors.grey),
-          ),
-          const SizedBox(height: 24),
-          ElevatedButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Go Back'),
-          ),
-        ],
-      ),
-    );
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(Icons.map, size: 64, color: Colors.grey),
+            const SizedBox(height: 16),
+            const Text(
+              'Map selection is not available on web',
+              style: TextStyle(fontSize: 18),
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              'Please use the mobile app for location selection',
+              style: TextStyle(fontSize: 14, color: Colors.grey),
+            ),
+            const SizedBox(height: 24),
+            ElevatedButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text('Go Back'),
+            ),
+          ],
+        ),
+      );
 }

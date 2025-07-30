@@ -9,7 +9,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:http/http.dart' as http;
 
 class FamilyService {
-
   FamilyService({FirebaseFirestore? firestore, final FirebaseAuth? auth})
       : _firestore = firestore ?? FirebaseFirestore.instance,
         _auth = auth ?? FirebaseAuth.instance;
@@ -21,7 +20,9 @@ class FamilyService {
   final FirebaseAuth _auth;
 
   Future<FamilyLink> inviteChild(
-      String parentId, final String childEmail,) async {
+    String parentId,
+    final String childEmail,
+  ) async {
     final resp = await http.post(
       Uri.parse('$_base/invite'),
       body: jsonEncode({'parentId': parentId, 'childEmail': childEmail}),
@@ -45,7 +46,7 @@ class FamilyService {
     );
 
     if (resp.statusCode == 200) {
-      List<dynamic> data = jsonDecode(resp.body);
+      final List<dynamic> data = jsonDecode(resp.body);
       return data.map((json) => FamilyLink.fromJson(json)).toList();
     } else {
       throw Exception('Failed to fetch family links: ${resp.body}');
@@ -84,8 +85,11 @@ class FamilyService {
     });
   }
 
-  Future<void> _logFamilyEvent(final String eventType, final String parentId,
-      Map<String, dynamic> data,) async {
+  Future<void> _logFamilyEvent(
+    final String eventType,
+    final String parentId,
+    Map<String, dynamic> data,
+  ) async {
     try {
       await _firestore.collection('family_analytics').add({
         'eventType': eventType,
@@ -115,7 +119,9 @@ class FamilyService {
   }
 
   Future<void> updatePermissions(
-      String linkId, final List<Permission> perms,) async {
+    String linkId,
+    final List<Permission> perms,
+  ) async {
     await http.post(
       Uri.parse('$_base/permissions-update'),
       body: jsonEncode({
@@ -127,7 +133,8 @@ class FamilyService {
   }
 
   Future<List<PrivacyRequest>> fetchPrivacyRequests(
-      String parentId) async {
+    String parentId,
+  ) async {
     final resp =
         await http.get(Uri.parse('$_base/privacy-requests?parentId=$parentId'));
     return (jsonDecode(resp.body) as List)
@@ -179,7 +186,9 @@ class FamilyService {
   }
 
   Future<void> handlePrivacyRequest(
-      String requestId, final String action,) async {
+    String requestId,
+    final String action,
+  ) async {
     final resp = await http.post(
       Uri.parse('$_base/privacy-request/$requestId/$action'),
       headers: {'Content-Type': 'application/json'},

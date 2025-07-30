@@ -9,8 +9,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'firebase_test_helper.dart';
 
 void main() {
-  setUpAll(() async {
-  });
+  setUpAll(() async {});
 
   group('ProfileScreen', () {
     testWidgets('renders profile data and edit button', (tester) async {

@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class InviteDetailScreen extends ConsumerWidget {
-
   const InviteDetailScreen({required this.invite, super.key});
   final Invite invite;
 

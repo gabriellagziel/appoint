@@ -12,8 +12,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 class AppointmentsScreen extends ConsumerWidget {
   const AppointmentsScreen({super.key});
 
-  Future<void> _openEditor(final BuildContext context, final WidgetRef ref,
-      {StudioAppointment? appt,}) async {
+  Future<void> _openEditor(
+    final BuildContext context,
+    final WidgetRef ref, {
+    StudioAppointment? appt,
+  }) async {
     final titleController = TextEditingController(text: appt?.title ?? '');
     final clientController = TextEditingController(text: appt?.client ?? '');
     final notesController = TextEditingController(text: appt?.notes ?? '');
@@ -22,86 +25,94 @@ class AppointmentsScreen extends ConsumerWidget {
     await showDialog(
       context: context,
       builder: (context) => AlertDialog(
-          title: Text(appt == null ? 'New Appointment' : 'Edit Appointment'),
-          content: StatefulBuilder(
-            builder: (context, final setState) => SingleChildScrollView(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
+        title: Text(appt == null ? 'New Appointment' : 'Edit Appointment'),
+        content: StatefulBuilder(
+          builder: (context, final setState) => SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                TextField(
+                  controller: titleController,
+                  decoration: const InputDecoration(labelText: 'Title'),
+                ),
+                TextField(
+                  controller: clientController,
+                  decoration: const InputDecoration(labelText: 'Client'),
+                ),
+                TextField(
+                  controller: notesController,
+                  decoration: const InputDecoration(labelText: 'Notes'),
+                ),
+                const SizedBox(height: 12),
+                Row(
                   children: [
-                    TextField(
-                      controller: titleController,
-                      decoration: const InputDecoration(labelText: 'Title'),
+                    Text(
+                      time == null
+                          ? 'No time'
+                          : '${time?.toLocal()}'.split('.').first,
                     ),
-                    TextField(
-                      controller: clientController,
-                      decoration: const InputDecoration(labelText: 'Client'),
-                    ),
-                    TextField(
-                      controller: notesController,
-                      decoration: const InputDecoration(labelText: 'Notes'),
-                    ),
-                    const SizedBox(height: 12),
-                    Row(
-                      children: [
-                        Text(time == null
-                            ? 'No time'
-                            : '${time?.toLocal()}'.split('.').first,),
-                        const Spacer(),
-                        TextButton(
-                          onPressed: () async {
-                            final date = await showDatePicker(
-                              context: context,
-                              initialDate: time ?? DateTime.now(),
-                              firstDate: DateTime(2020),
-                              lastDate: DateTime(2100),
-                            );
-                            if (date != null) {
-                              final t = await showTimePicker(
-                                context: context,
-                                initialTime: TimeOfDay.fromDateTime(
-                                    time ?? DateTime.now(),),
+                    const Spacer(),
+                    TextButton(
+                      onPressed: () async {
+                        final date = await showDatePicker(
+                          context: context,
+                          initialDate: time ?? DateTime.now(),
+                          firstDate: DateTime(2020),
+                          lastDate: DateTime(2100),
+                        );
+                        if (date != null) {
+                          final t = await showTimePicker(
+                            context: context,
+                            initialTime: TimeOfDay.fromDateTime(
+                              time ?? DateTime.now(),
+                            ),
+                          );
+                          if (t != null) {
+                            setState(() {
+                              time = DateTime(
+                                date.year,
+                                date.month,
+                                date.day,
+                                t.hour,
+                                t.minute,
                               );
-                              if (t != null) {
-                                setState(() {
-                                  time = DateTime(date.year, date.month,
-                                      date.day, t.hour, t.minute,);
-                                });
-                              }
-                            }
-                          },
-                          child: const Text('Pick Time'),
-                        ),
-                      ],
+                            });
+                          }
+                        }
+                      },
+                      child: const Text('Pick Time'),
                     ),
                   ],
                 ),
-              ),
+              ],
+            ),
           ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: const Text('Cancel'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                final newAppt = StudioAppointment(
-                  id: appt?.id ?? '',
-                  title: titleController.text,
-                  time: time ?? DateTime.now(),
-                  client: clientController.text,
-                  notes: notesController.text,
-                );
-                if (appt == null) {
-                  ref.read(studioAppointmentsProvider.notifier).add(newAppt);
-                } else {
-                  ref.read(studioAppointmentsProvider.notifier).update(newAppt);
-                }
-                Navigator.pop(context);
-              },
-              child: const Text('Save'),
-            ),
-          ],
         ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              final newAppt = StudioAppointment(
+                id: appt?.id ?? '',
+                title: titleController.text,
+                time: time ?? DateTime.now(),
+                client: clientController.text,
+                notes: notesController.text,
+              );
+              if (appt == null) {
+                ref.read(studioAppointmentsProvider.notifier).add(newAppt);
+              } else {
+                ref.read(studioAppointmentsProvider.notifier).update(newAppt);
+              }
+              Navigator.pop(context);
+            },
+            child: const Text('Save'),
+          ),
+        ],
+      ),
     );
   }
 
@@ -130,10 +141,12 @@ class AppointmentsScreen extends ConsumerWidget {
               final appt = appts[index];
               return ListTile(
                 title: Text(appt.title),
-                subtitle: Text('${appt.client} – '
-                        '${appt.time.toLocal()}'
-                    .split('.')
-                    .first,),
+                subtitle: Text(
+                  '${appt.client} – '
+                          '${appt.time.toLocal()}'
+                      .split('.')
+                      .first,
+                ),
                 trailing: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [

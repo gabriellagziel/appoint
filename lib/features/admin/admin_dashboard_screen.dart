@@ -1,3 +1,4 @@
+import 'package:appoint/constants/app_branding.dart';
 import 'package:appoint/features/admin/admin_broadcast_screen.dart';
 import 'package:appoint/features/admin/admin_orgs_screen.dart';
 import 'package:appoint/features/admin/admin_users_screen.dart';
@@ -5,12 +6,10 @@ import 'package:appoint/features/admin/widgets/admin_activity_tab.dart';
 import 'package:appoint/features/admin/widgets/admin_errors_tab.dart';
 import 'package:appoint/features/admin/widgets/admin_monetization_tab.dart';
 import 'package:appoint/features/admin/widgets/admin_overview_tab.dart';
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/utils/admin_localizations.dart';
 import 'package:appoint/providers/admin_provider.dart';
+import 'package:appoint/utils/admin_localizations.dart';
 import 'package:appoint/widgets/admin_guard.dart';
 import 'package:appoint/widgets/app_logo.dart';
-import 'package:appoint/constants/app_branding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -55,7 +54,7 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
             children: [
               const AppLogo(size: 32, logoOnly: true),
               const SizedBox(width: 12),
-              Text(l10n?.adminScreenTBD ?? 'Admin Dashboard'),
+              Text(l10n.adminScreenTBD),
             ],
           ),
           backgroundColor: Theme.of(context).primaryColor,
@@ -127,105 +126,105 @@ class _AdminDashboardScreenState extends ConsumerState<AdminDashboardScreen>
   }
 
   Widget _buildDrawer() => Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          DrawerHeader(
-            decoration: BoxDecoration(
-              color: Theme.of(context).primaryColor,
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const AppLogo(size: 48, showText: false),
-                const SizedBox(height: 8),
-                const Text(
-                  'Admin Panel',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Theme.of(context).primaryColor,
+              ),
+              child: const Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  AppLogo(size: 48, showText: false),
+                  SizedBox(height: 8),
+                  Text(
+                    'Admin Panel',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  AppBranding.fullSlogan,
-                  style: TextStyle(
-                    color: Colors.white70,
-                    fontSize: 12,
+                  SizedBox(height: 4),
+                  Text(
+                    AppBranding.fullSlogan,
+                    style: TextStyle(
+                      color: Colors.white70,
+                      fontSize: 12,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-          ListTile(
-            leading: const Icon(Icons.dashboard),
-            title: const Text('Dashboard'),
-            selected: _selectedIndex == 0,
-            onTap: () {
-              _tabController.animateTo(0);
-              Navigator.pop(context);
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.broadcast_on_personal),
-            title: const Text('Broadcast'),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const AdminBroadcastScreen(),
-                ),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.people),
-            title: const Text('Users'),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const AdminUsersScreen(),
-                ),
-              );
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.business),
-            title: const Text('Organizations'),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const AdminOrgsScreen(),
-                ),
-              );
-            },
-          ),
-          const Divider(),
-          ListTile(
-            leading: const Icon(Icons.settings),
-            title: const Text('Settings'),
-            onTap: () {
-              Navigator.pop(context);
-              _showSettingsDialog();
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.logout),
-            title: const Text('Logout'),
-            onTap: () {
-              Navigator.pop(context);
-              // Handle logout
-            },
-          ),
-        ],
-      ),
-    );
+            ListTile(
+              leading: const Icon(Icons.dashboard),
+              title: const Text('Dashboard'),
+              selected: _selectedIndex == 0,
+              onTap: () {
+                _tabController.animateTo(0);
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.broadcast_on_personal),
+              title: const Text('Broadcast'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AdminBroadcastScreen(),
+                  ),
+                );
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.people),
+              title: const Text('Users'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AdminUsersScreen(),
+                  ),
+                );
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.business),
+              title: const Text('Organizations'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const AdminOrgsScreen(),
+                  ),
+                );
+              },
+            ),
+            const Divider(),
+            ListTile(
+              leading: const Icon(Icons.settings),
+              title: const Text('Settings'),
+              onTap: () {
+                Navigator.pop(context);
+                _showSettingsDialog();
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.logout),
+              title: const Text('Logout'),
+              onTap: () {
+                Navigator.pop(context);
+                // Handle logout
+              },
+            ),
+          ],
+        ),
+      );
 
   // Dialog methods
   void _showSettingsDialog() {

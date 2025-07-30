@@ -46,28 +46,30 @@ class UserProfile {
     String? businessProfileId,
     PlaytimeSettings? playtimeSettings,
     PlaytimePermissions? playtimePermissions,
-  }) {
-    return UserProfile(
-      id: id ?? this.id,
-      name: name ?? this.name,
-      email: email ?? this.email,
-      phone: phone ?? this.phone,
-      photoUrl: photoUrl ?? this.photoUrl,
-      isAdminFreeAccess: isAdminFreeAccess ?? this.isAdminFreeAccess,
-      businessMode: businessMode ?? this.businessMode,
-      businessProfileId: businessProfileId ?? this.businessProfileId,
-      playtimeSettings: playtimeSettings ?? this.playtimeSettings,
-      playtimePermissions: playtimePermissions ?? this.playtimePermissions,
-    );
-  }
+  }) =>
+      UserProfile(
+        id: id ?? this.id,
+        name: name ?? this.name,
+        email: email ?? this.email,
+        phone: phone ?? this.phone,
+        photoUrl: photoUrl ?? this.photoUrl,
+        isAdminFreeAccess: isAdminFreeAccess ?? this.isAdminFreeAccess,
+        businessMode: businessMode ?? this.businessMode,
+        businessProfileId: businessProfileId ?? this.businessProfileId,
+        playtimeSettings: playtimeSettings ?? this.playtimeSettings,
+        playtimePermissions: playtimePermissions ?? this.playtimePermissions,
+      );
 }
 
 @JsonSerializable()
 class PlaytimeSettings {
-
   PlaytimeSettings({
     required this.isChild,
-    required this.approvedPlaytimeSessions, required this.playtimePreferences, required this.safetySettings, required this.usageStats, this.parentUid,
+    required this.approvedPlaytimeSessions,
+    required this.playtimePreferences,
+    required this.safetySettings,
+    required this.usageStats,
+    this.parentUid,
   });
 
   factory PlaytimeSettings.fromJson(Map<String, dynamic> json) =>
@@ -84,7 +86,6 @@ class PlaytimeSettings {
 
 @JsonSerializable()
 class PlaytimePreferences {
-
   PlaytimePreferences({
     required this.favoriteGames,
     required this.preferredCategories,
@@ -106,7 +107,6 @@ class PlaytimePreferences {
 
 @JsonSerializable()
 class SafetySettings {
-
   SafetySettings({
     required this.chatEnabled,
     required this.autoApproveSessions,
@@ -128,11 +128,11 @@ class SafetySettings {
 
 @JsonSerializable()
 class UsageStats {
-
   UsageStats({
     required this.totalSessions,
     required this.totalPlaytime,
-    required this.favoriteBackgrounds, this.lastActive,
+    required this.favoriteBackgrounds,
+    this.lastActive,
   });
 
   factory UsageStats.fromJson(Map<String, dynamic> json) =>
@@ -147,7 +147,6 @@ class UsageStats {
 
 @JsonSerializable()
 class PlaytimePermissions {
-
   PlaytimePermissions({
     required this.canCreateSessions,
     required this.canUploadContent,

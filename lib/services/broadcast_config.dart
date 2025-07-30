@@ -2,10 +2,9 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 /// Configuration service for broadcast messaging
 class BroadcastConfig {
+  BroadcastConfig._();
   static final BroadcastConfig _instance = BroadcastConfig._();
   static BroadcastConfig get instance => _instance;
-  
-  BroadcastConfig._();
 
   /// Firebase Server Key for FCM
   /// In production, this should be stored securely (Firebase Functions, Backend)
@@ -13,10 +12,8 @@ class BroadcastConfig {
   String get fcmServerKey {
     final key = dotenv.env['FCM_SERVER_KEY'];
     if (key == null || key.isEmpty) {
-      throw Exception(
-        'FCM_SERVER_KEY not found in environment variables. '
-        'Please add FCM_SERVER_KEY=your_key_here to your .env file'
-      );
+      throw Exception('FCM_SERVER_KEY not found in environment variables. '
+          'Please add FCM_SERVER_KEY=your_key_here to your .env file');
     }
     return key;
   }

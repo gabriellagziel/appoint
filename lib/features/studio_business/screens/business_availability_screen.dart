@@ -26,8 +26,11 @@ class BusinessAvailabilityScreen extends ConsumerWidget {
     }
   }
 
-  Future<void> _pickTime(final BuildContext context, final TimeOfDay initial,
-      void Function(TimeOfDay) onPicked,) async {
+  Future<void> _pickTime(
+    final BuildContext context,
+    final TimeOfDay initial,
+    void Function(TimeOfDay) onPicked,
+  ) async {
     final picked = await showTimePicker(context: context, initialTime: initial);
     if (picked != null) onPicked(picked);
   }
@@ -47,8 +50,10 @@ class BusinessAvailabilityScreen extends ConsumerWidget {
         itemBuilder: (context, final idx) {
           final avail = availability[idx];
           return ListTile(
-            leading: Icon(avail.isOpen ? Icons.check_circle : Icons.cancel,
-                color: avail.isOpen ? Colors.green : Colors.red,),
+            leading: Icon(
+              avail.isOpen ? Icons.check_circle : Icons.cancel,
+              color: avail.isOpen ? Colors.green : Colors.red,
+            ),
             title: Text(_getDayName(avail.weekday)),
             subtitle: avail.isOpen
                 ? Row(
@@ -71,19 +76,19 @@ class BusinessAvailabilityScreen extends ConsumerWidget {
                     icon: const Icon(Icons.access_time),
                     tooltip: 'Set Start',
                     onPressed: () => _pickTime(
-                        context,
-                        avail.start,
-                        (t) =>
-                            notifier.setHours(avail.weekday, t, avail.end),),
+                      context,
+                      avail.start,
+                      (t) => notifier.setHours(avail.weekday, t, avail.end),
+                    ),
                   ),
                   IconButton(
                     icon: const Icon(Icons.access_time_filled),
                     tooltip: 'Set End',
                     onPressed: () => _pickTime(
-                        context,
-                        avail.end,
-                        (t) =>
-                            notifier.setHours(avail.weekday, avail.start, t),),
+                      context,
+                      avail.end,
+                      (t) => notifier.setHours(avail.weekday, avail.start, t),
+                    ),
                   ),
                 ],
               ],

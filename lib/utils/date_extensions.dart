@@ -22,20 +22,21 @@ extension DateExtensions on DateTime {
 
   /// Checks if two dates are the same day (ignoring time)
   /// Example: 2025-07-05T23:30:00Z and 2025-07-05T00:05:00Z -> true
-  bool isSameDay(DateTime other) => year == other.year && month == other.month && day == other.day;
+  bool isSameDay(DateTime other) =>
+      year == other.year && month == other.month && day == other.day;
 
   /// Returns true if this date is today
   bool get isToday => isSameDay(DateTime.now());
 
   /// Returns true if this date is tomorrow
   bool get isTomorrow {
-    tomorrow = DateTime.now().add(const Duration(days: 1));
+    final tomorrow = DateTime.now().add(const Duration(days: 1));
     return isSameDay(tomorrow);
   }
 
   /// Returns true if this date is yesterday
   bool get isYesterday {
-    yesterday = DateTime.now().subtract(const Duration(days: 1));
+    final yesterday = DateTime.now().subtract(const Duration(days: 1));
     return isSameDay(yesterday);
   }
 
@@ -71,8 +72,8 @@ extension DateExtensions on DateTime {
 
   /// Returns the number of days between this date and another date
   int daysDifference(DateTime other) {
-    thisDate = DateTime(year, month, day);
-    otherDate = DateTime(other.year, other.month, other.day);
+    final thisDate = DateTime(year, month, day);
+    final otherDate = DateTime(other.year, other.month, other.day);
     return thisDate.difference(otherDate).inDays.abs();
   }
 
@@ -84,7 +85,7 @@ extension DateExtensions on DateTime {
 
   /// Returns the age in years from this date to now
   int get age {
-    now = DateTime.now();
+    final now = DateTime.now();
     var age = now.year - year;
     if (now.month < month || (now.month == month && now.day < day)) {
       age--;
@@ -95,19 +96,19 @@ extension DateExtensions on DateTime {
   /// Returns a human-readable relative time string
   /// Example: "2 hours ago", "in 3 days"
   String toRelativeTime() {
-    now = DateTime.now();
-    timeDiff = difference(now);
+    final now = DateTime.now();
+    final timeDiff = difference(now);
 
     if (timeDiff.inMinutes < 1) {
       return 'just now';
     } else if (timeDiff.inMinutes < 60) {
-      minutes = timeDiff.inMinutes.abs();
+      final minutes = timeDiff.inMinutes.abs();
       return minutes == 1 ? '1 minute ago' : '$minutes minutes ago';
     } else if (timeDiff.inHours < 24) {
-      hours = timeDiff.inHours.abs();
+      final hours = timeDiff.inHours.abs();
       return hours == 1 ? '1 hour ago' : '$hours hours ago';
     } else if (timeDiff.inDays < 7) {
-      days = timeDiff.inDays.abs();
+      final days = timeDiff.inDays.abs();
       return days == 1 ? '1 day ago' : '$days days ago';
     } else {
       return toDisplayDate();

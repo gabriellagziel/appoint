@@ -5,8 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'firebase_test_helper.dart';
 
 void main() {
-  setUpAll(() async {
-  });
+  setUpAll(() async {});
   group('EditProfileScreen', () {
     testWidgets('renders form fields and save button', (tester) async {
       await tester.pumpWidget(const MaterialApp(home: EditProfileScreen()));

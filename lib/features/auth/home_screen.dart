@@ -23,8 +23,7 @@ class HomeScreen extends ConsumerWidget {
             appointments.when(
               data: (list) => Text('Appointments: ${list.length}'),
               loading: () => const CircularProgressIndicator(),
-              error: (_, final __) =>
-                  const Text('Error loading appointments'),
+              error: (_, final __) => const Text('Error loading appointments'),
             ),
             const SizedBox(height: 16),
             ElevatedButton(
@@ -76,57 +75,57 @@ class _HomeDrawer extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) => Drawer(
-      child: ListView(
-        padding: EdgeInsets.zero,
-        children: [
-          const DrawerHeader(child: Text('Menu')),
-          ListTile(
-            title: const Text('Home'),
-            onTap: () => Navigator.pop(context),
-          ),
-          ListTile(
-            title: const Text('Dashboard'),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.pushNamed(context, '/dashboard');
-            },
-          ),
-          ListTile(
-            title: const Text('Profile'),
-            onTap: () {
-              Navigator.pop(context);
-              Navigator.pushNamed(context, '/profile');
-            },
-          ),
-          FutureBuilder<bool>(
-            future: FirebaseAuth.instance.currentUser
-                    ?.getIdTokenResult(true)
-                    .then((r) => r.claims?['admin'] == true) ??
-                Future.value(false),
-            builder: (context, final snapshot) {
-              if (snapshot.data == true) {
-                return ListTile(
-                  title: const Text('Admin'),
-                  onTap: () {
-                    Navigator.pop(context);
-                    Navigator.pushNamed(context, '/admin/dashboard');
-                  },
-                );
-              }
-              return const SizedBox.shrink();
-            },
-          ),
-          ListTile(
-            title: const Text('Sign Out'),
-            onTap: () async {
-              Navigator.pop(context);
-              await ref.read(authServiceProvider).signOut();
-              // Trigger provider refresh and ignore the value.
-              // ignore: unused_result
-              ref.refresh(authStateProvider);
-            },
-          ),
-        ],
-      ),
-    );
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            const DrawerHeader(child: Text('Menu')),
+            ListTile(
+              title: const Text('Home'),
+              onTap: () => Navigator.pop(context),
+            ),
+            ListTile(
+              title: const Text('Dashboard'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/dashboard');
+              },
+            ),
+            ListTile(
+              title: const Text('Profile'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/profile');
+              },
+            ),
+            FutureBuilder<bool>(
+              future: FirebaseAuth.instance.currentUser
+                      ?.getIdTokenResult(true)
+                      .then((r) => r.claims?['admin'] == true) ??
+                  Future.value(false),
+              builder: (context, final snapshot) {
+                if (snapshot.data == true) {
+                  return ListTile(
+                    title: const Text('Admin'),
+                    onTap: () {
+                      Navigator.pop(context);
+                      Navigator.pushNamed(context, '/admin/dashboard');
+                    },
+                  );
+                }
+                return const SizedBox.shrink();
+              },
+            ),
+            ListTile(
+              title: const Text('Sign Out'),
+              onTap: () async {
+                Navigator.pop(context);
+                await ref.read(authServiceProvider).signOut();
+                // Trigger provider refresh and ignore the value.
+                // ignore: unused_result
+                ref.refresh(authStateProvider);
+              },
+            ),
+          ],
+        ),
+      );
 }

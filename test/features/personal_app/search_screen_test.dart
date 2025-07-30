@@ -6,8 +6,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'firebase_test_helper.dart';
 
 void main() {
-  setUpAll(() async {
-  });
+  setUpAll(() async {});
 
   group('SearchScreen', () {
     testWidgets('shows search field', (WidgetTester tester) async {

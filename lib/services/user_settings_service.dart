@@ -18,7 +18,9 @@ class UserSettingsService {
   }
 
   Future<void> updateSettings(
-      String uid, final NotificationSettings settings,) async {
+    String uid,
+    final NotificationSettings settings,
+  ) async {
     await _firestore
         .collection('users')
         .doc(uid)

@@ -7,8 +7,9 @@ import 'package:flutter_test/flutter_test.dart';
 // Test helper class that doesn't require Firebase initialization
 class TestAuthService {
   /// Check if the error is a social account link conflict
-  static bool isSocialAccountConflict(FirebaseAuthException e) => e.code == 'account-exists-with-different-credential' ||
-        e.code == 'credential-already-in-use';
+  static bool isSocialAccountConflict(FirebaseAuthException e) =>
+      e.code == 'account-exists-with-different-credential' ||
+      e.code == 'credential-already-in-use';
 
   /// Get the email associated with the conflicting account
   static String? getConflictingEmail(FirebaseAuthException e) {
@@ -70,8 +71,10 @@ void main() {
           email: 'test@example.com',
         );
 
-        expect(TestAuthService.getConflictingEmail(error),
-            equals('test@example.com'),);
+        expect(
+          TestAuthService.getConflictingEmail(error),
+          equals('test@example.com'),
+        );
       });
 
       test('should return null for other error codes', () {

@@ -4,13 +4,13 @@ import 'package:test/test.dart';
 import 'package:path/path.dart' as path;
 
 /// QA Test Runner - Phase 1 Implementation
-/// 
+///
 /// This script runs all QA tests and generates comprehensive reports
 /// for the APP-OINT Flutter application.
 void main() async {
   print('🚀 Starting QA Test Suite - Phase 1');
   print('=====================================');
-  
+
   final testRunner = QATestRunner();
   await testRunner.runAllTests();
 }
@@ -18,7 +18,7 @@ void main() async {
 class QATestRunner {
   final Map<String, TestResult> _results = {};
   final DateTime _startTime = DateTime.now();
-  
+
   /// Run all QA tests and generate reports
   Future<void> runAllTests() async {
     print('\n📋 Test Execution Plan:');
@@ -28,138 +28,137 @@ class QATestRunner {
     print('4. Security Tests');
     print('5. Accessibility Tests');
     print('6. Generate Reports');
-    
+
     try {
       // Run unit tests
       await _runUnitTests();
-      
+
       // Run integration tests
       await _runIntegrationTests();
-      
+
       // Run performance tests
       await _runPerformanceTests();
-      
+
       // Run security tests
       await _runSecurityTests();
-      
+
       // Run accessibility tests
       await _runAccessibilityTests();
-      
+
       // Generate comprehensive report
       await _generateReport();
-      
     } catch (e) {
       print('❌ Test execution failed: $e');
       exit(1);
     }
   }
-  
+
   /// Run unit tests for all categories
   Future<void> _runUnitTests() async {
     print('\n🧪 Running Unit Tests...');
-    
+
     final testCategories = [
       'models',
-      'services', 
+      'services',
       'features',
       'utils',
       'providers',
     ];
-    
+
     for (final category in testCategories) {
       final result = await _runTestCategory('unit', category);
       _results['unit_$category'] = result;
     }
   }
-  
+
   /// Run integration tests
   Future<void> _runIntegrationTests() async {
     print('\n🔗 Running Integration Tests...');
-    
+
     final integrationTests = [
       'booking_flow',
       'payment_integration',
       'user_onboarding',
       'admin_management',
     ];
-    
+
     for (final test in integrationTests) {
       final result = await _runTestCategory('integration', test);
       _results['integration_$test'] = result;
     }
   }
-  
+
   /// Run performance tests
   Future<void> _runPerformanceTests() async {
     print('\n⚡ Running Performance Tests...');
-    
+
     final performanceTests = [
       'startup_time',
       'frame_time',
       'memory_usage',
       'network_performance',
     ];
-    
+
     for (final test in performanceTests) {
       final result = await _runPerformanceTest(test);
       _results['performance_$test'] = result;
     }
   }
-  
+
   /// Run security tests
   Future<void> _runSecurityTests() async {
     print('\n🔒 Running Security Tests...');
-    
+
     final securityTests = [
       'input_validation',
       'authentication',
       'authorization',
       'data_encryption',
     ];
-    
+
     for (final test in securityTests) {
       final result = await _runSecurityTest(test);
       _results['security_$test'] = result;
     }
   }
-  
+
   /// Run accessibility tests
   Future<void> _runAccessibilityTests() async {
     print('\n♿ Running Accessibility Tests...');
-    
+
     final accessibilityTests = [
       'semantic_labels',
       'keyboard_navigation',
       'color_contrast',
       'screen_reader',
     ];
-    
+
     for (final test in accessibilityTests) {
       final result = await _runAccessibilityTest(test);
       _results['accessibility_$test'] = result;
     }
   }
-  
+
   /// Run a specific test category
   Future<TestResult> _runTestCategory(String type, String category) async {
     final stopwatch = Stopwatch()..start();
-    
+
     try {
       print('  Running $type tests: $category');
-      
+
       // Execute flutter test command
       final result = await Process.run('flutter', [
         'test',
         'test/$category/',
         '--reporter=json',
       ]);
-      
+
       stopwatch.stop();
-      
+
       final success = result.exitCode == 0;
       final output = result.stdout.toString();
       final error = result.stderr.toString();
-      
+
       return TestResult(
         name: '$type_$category',
         status: success ? TestStatus.passed : TestStatus.failed,
@@ -168,7 +167,6 @@ class QATestRunner {
         error: error,
         timestamp: DateTime.now(),
       );
-      
     } catch (e) {
       stopwatch.stop();
       return TestResult(
@@ -180,22 +178,22 @@ class QATestRunner {
       );
     }
   }
-  
+
   /// Run a performance test
   Future<TestResult> _runPerformanceTest(String testName) async {
     final stopwatch = Stopwatch()..start();
-    
+
     try {
       print('  Running performance test: $testName');
-      
+
       // Simulate performance test execution
       await Future.delayed(Duration(milliseconds: 500));
-      
+
       // Mock performance metrics
       final metrics = _generatePerformanceMetrics(testName);
-      
+
       stopwatch.stop();
-      
+
       return TestResult(
         name: 'performance_$testName',
         status: TestStatus.passed,
@@ -203,7 +201,6 @@ class QATestRunner {
         metrics: metrics,
         timestamp: DateTime.now(),
       );
-      
     } catch (e) {
       stopwatch.stop();
       return TestResult(
@@ -215,22 +212,22 @@ class QATestRunner {
       );
     }
   }
-  
+
   /// Run a security test
   Future<TestResult> _runSecurityTest(String testName) async {
     final stopwatch = Stopwatch()..start();
-    
+
     try {
       print('  Running security test: $testName');
-      
+
       // Simulate security test execution
       await Future.delayed(Duration(milliseconds: 300));
-      
+
       // Mock security results
       final vulnerabilities = _generateSecurityResults(testName);
-      
+
       stopwatch.stop();
-      
+
       return TestResult(
         name: 'security_$testName',
         status: vulnerabilities.isEmpty ? TestStatus.passed : TestStatus.failed,
@@ -238,7 +235,6 @@ class QATestRunner {
         vulnerabilities: vulnerabilities,
         timestamp: DateTime.now(),
       );
-      
     } catch (e) {
       stopwatch.stop();
       return TestResult(
@@ -250,22 +246,22 @@ class QATestRunner {
       );
     }
   }
-  
+
   /// Run an accessibility test
   Future<TestResult> _runAccessibilityTest(String testName) async {
     final stopwatch = Stopwatch()..start();
-    
+
     try {
       print('  Running accessibility test: $testName');
-      
+
       // Simulate accessibility test execution
       await Future.delayed(Duration(milliseconds: 400));
-      
+
       // Mock accessibility results
       final issues = _generateAccessibilityResults(testName);
-      
+
       stopwatch.stop();
-      
+
       return TestResult(
         name: 'accessibility_$testName',
         status: issues.isEmpty ? TestStatus.passed : TestStatus.failed,
@@ -273,7 +269,6 @@ class QATestRunner {
         accessibilityIssues: issues,
         timestamp: DateTime.now(),
       );
-      
     } catch (e) {
       stopwatch.stop();
       return TestResult(
@@ -285,34 +280,38 @@ class QATestRunner {
       );
     }
   }
-  
+
   /// Generate comprehensive QA report
   Future<void> _generateReport() async {
     print('\n📊 Generating QA Report...');
-    
+
     final report = _createReport();
-    
+
     // Save report to file
-    final reportFile = File('qa_report_${DateTime.now().millisecondsSinceEpoch}.json');
+    final reportFile =
+        File('qa_report_${DateTime.now().millisecondsSinceEpoch}.json');
     await reportFile.writeAsString(jsonEncode(report));
-    
+
     // Generate HTML report
     await _generateHtmlReport(report);
-    
+
     // Generate Markdown report
     await _generateMarkdownReport(report);
-    
+
     // Print summary
     _printSummary(report);
   }
-  
+
   /// Create comprehensive report data
   Map<String, dynamic> _createReport() {
     final totalTests = _results.length;
-    final passedTests = _results.values.where((r) => r.status == TestStatus.passed).length;
-    final failedTests = _results.values.where((r) => r.status == TestStatus.failed).length;
-    final totalExecutionTime = _results.values.fold(0, (sum, r) => sum + r.executionTime);
-    
+    final passedTests =
+        _results.values.where((r) => r.status == TestStatus.passed).length;
+    final failedTests =
+        _results.values.where((r) => r.status == TestStatus.failed).length;
+    final totalExecutionTime =
+        _results.values.fold(0, (sum, r) => sum + r.executionTime);
+
     return {
       'metadata': {
         'generatedAt': DateTime.now().toIso8601String(),
@@ -323,22 +322,28 @@ class QATestRunner {
         'totalTests': totalTests,
         'passedTests': passedTests,
         'failedTests': failedTests,
-        'successRate': totalTests > 0 ? (passedTests / totalTests * 100).toStringAsFixed(2) : '0.00',
+        'successRate': totalTests > 0
+            ? (passedTests / totalTests * 100).toStringAsFixed(2)
+            : '0.00',
         'totalExecutionTime': totalExecutionTime,
-        'averageExecutionTime': totalTests > 0 ? (totalExecutionTime / totalTests).toStringAsFixed(2) : '0.00',
+        'averageExecutionTime': totalTests > 0
+            ? (totalExecutionTime / totalTests).toStringAsFixed(2)
+            : '0.00',
       },
-      'testResults': _results.map((key, value) => MapEntry(key, value.toJson())),
+      'testResults':
+          _results.map((key, value) => MapEntry(key, value.toJson())),
       'qualityGates': _evaluateQualityGates(),
       'recommendations': _generateRecommendations(),
     };
   }
-  
+
   /// Evaluate quality gates
   Map<String, dynamic> _evaluateQualityGates() {
-    final passedTests = _results.values.where((r) => r.status == TestStatus.passed).length;
+    final passedTests =
+        _results.values.where((r) => r.status == TestStatus.passed).length;
     final totalTests = _results.length;
     final successRate = totalTests > 0 ? passedTests / totalTests : 0.0;
-    
+
     return {
       'codeQuality': {
         'status': 'passed',
@@ -346,7 +351,8 @@ class QATestRunner {
       },
       'testCoverage': {
         'status': successRate >= 0.8 ? 'passed' : 'failed',
-        'description': 'Test coverage: ${(successRate * 100).toStringAsFixed(1)}%',
+        'description':
+            'Test coverage: ${(successRate * 100).toStringAsFixed(1)}%',
         'threshold': '80%',
       },
       'performance': {
@@ -363,33 +369,37 @@ class QATestRunner {
       },
     };
   }
-  
+
   /// Generate recommendations based on test results
   List<String> _generateRecommendations() {
     final recommendations = <String>[];
-    
-    final failedTests = _results.values.where((r) => r.status == TestStatus.failed);
+
+    final failedTests =
+        _results.values.where((r) => r.status == TestStatus.failed);
     if (failedTests.isNotEmpty) {
       recommendations.add('Fix ${failedTests.length} failed tests');
     }
-    
+
     final slowTests = _results.values.where((r) => r.executionTime > 5000);
     if (slowTests.isNotEmpty) {
       recommendations.add('Optimize ${slowTests.length} slow tests (>5s)');
     }
-    
-    final successRate = _results.values.where((r) => r.status == TestStatus.passed).length / _results.length;
+
+    final successRate =
+        _results.values.where((r) => r.status == TestStatus.passed).length /
+            _results.length;
     if (successRate < 0.9) {
-      recommendations.add('Improve test reliability (current: ${(successRate * 100).toStringAsFixed(1)}%)');
+      recommendations.add(
+          'Improve test reliability (current: ${(successRate * 100).toStringAsFixed(1)}%)');
     }
-    
+
     if (recommendations.isEmpty) {
       recommendations.add('All quality metrics are excellent!');
     }
-    
+
     return recommendations;
   }
-  
+
   /// Generate HTML report
   Future<void> _generateHtmlReport(Map<String, dynamic> report) async {
     final htmlContent = '''
@@ -459,12 +469,12 @@ class QATestRunner {
 </body>
 </html>
     ''';
-    
+
     final htmlFile = File('qa_report.html');
     await htmlFile.writeAsString(htmlContent);
     print('  📄 HTML report generated: qa_report.html');
   }
-  
+
   /// Generate Markdown report
   Future<void> _generateMarkdownReport(Map<String, dynamic> report) async {
     final markdownContent = '''
@@ -505,12 +515,12 @@ ${report['testResults'].entries.map((entry) => '''
 - **Timestamp:** ${entry.value['timestamp']}
 ''').join('')}
     ''';
-    
+
     final markdownFile = File('qa_report.md');
     await markdownFile.writeAsString(markdownContent);
     print('  📝 Markdown report generated: qa_report.md');
   }
-  
+
   /// Print summary to console
   void _printSummary(Map<String, dynamic> report) {
     print('\n🎉 QA Test Suite Completed!');
@@ -521,24 +531,25 @@ ${report['testResults'].entries.map((entry) => '''
     print('  Failed: ${report['summary']['failedTests']}');
     print('  Success Rate: ${report['summary']['successRate']}%');
     print('  Execution Time: ${report['summary']['totalExecutionTime']}ms');
-    
+
     print('\n✅ Quality Gates:');
     for (final entry in report['qualityGates'].entries) {
       final status = entry.value['status'] == 'passed' ? '✅' : '❌';
-      print('  $status ${entry.key.replaceAll('_', ' ').toUpperCase()}: ${entry.value['description']}');
+      print(
+          '  $status ${entry.key.replaceAll('_', ' ').toUpperCase()}: ${entry.value['description']}');
     }
-    
+
     print('\n💡 Recommendations:');
     for (final rec in report['recommendations']) {
       print('  • $rec');
     }
-    
+
     print('\n📁 Reports Generated:');
     print('  • qa_report.json');
     print('  • qa_report.html');
     print('  • qa_report.md');
   }
-  
+
   /// Generate mock performance metrics
   Map<String, dynamic> _generatePerformanceMetrics(String testName) {
     switch (testName) {
@@ -554,13 +565,13 @@ ${report['testResults'].entries.map((entry) => '''
         return {'value': 0, 'threshold': 0, 'unit': 'unknown'};
     }
   }
-  
+
   /// Generate mock security results
   List<String> _generateSecurityResults(String testName) {
     // Mock security test results - all passing in Phase 1
     return [];
   }
-  
+
   /// Generate mock accessibility results
   List<String> _generateAccessibilityResults(String testName) {
     // Mock accessibility test results - all passing in Phase 1
@@ -579,7 +590,7 @@ class TestResult {
   final List<String>? vulnerabilities;
   final List<String>? accessibilityIssues;
   final DateTime timestamp;
-  
+
   TestResult({
     required this.name,
     required this.status,
@@ -591,7 +602,7 @@ class TestResult {
     this.accessibilityIssues,
     required this.timestamp,
   });
-  
+
   Map<String, dynamic> toJson() {
     return {
       'name': name,
@@ -612,4 +623,4 @@ enum TestStatus {
   passed,
   failed,
   skipped,
-} 
+}

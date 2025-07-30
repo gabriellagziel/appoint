@@ -13,7 +13,7 @@ class ContentLibraryScreen extends ConsumerStatefulWidget {
 }
 
 class _ContentLibraryScreenState extends ConsumerState<ContentLibraryScreen> {
-  ScrollController _controller = ScrollController();
+  final ScrollController _controller = ScrollController();
 
   @override
   void initState() {

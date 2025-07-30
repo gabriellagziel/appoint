@@ -24,7 +24,7 @@ class _MediaUploadWidgetState extends State<MediaUploadWidget> {
         if (kIsWeb) {
           _webFile = picked;
         } else {
-          final _file = File(picked.path);
+          _file = File(picked.path);
         }
       });
     }
@@ -33,7 +33,7 @@ class _MediaUploadWidgetState extends State<MediaUploadWidget> {
   void _removeFile() {
     setState(() {
       _file = null;
-      final _webFile = null;
+      _webFile = null;
     });
   }
 
@@ -44,7 +44,7 @@ class _MediaUploadWidgetState extends State<MediaUploadWidget> {
       final provider = kIsWeb
           ? Image.network(_webFile!.path).image
           : Image.file(_file!).image;
-      final preview = Stack(
+      preview = Stack(
         children: [
           Container(
             width: double.infinity,
@@ -84,9 +84,9 @@ class _MediaUploadWidgetState extends State<MediaUploadWidget> {
         ElevatedButton.icon(
           onPressed: _selectFile,
           icon: const Icon(Icons.upload_file),
-          label: Text(_file == null && _webFile == null
-              ? 'Select File'
-              : 'Change File'),
+          label: Text(
+            _file == null && _webFile == null ? 'Select File' : 'Change File',
+          ),
         ),
       ],
     );

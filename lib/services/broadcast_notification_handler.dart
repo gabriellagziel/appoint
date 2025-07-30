@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/services/broadcast_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -9,10 +8,10 @@ import 'package:url_launcher/url_launcher.dart';
 
 /// Handles broadcast notification reception and user interactions
 class BroadcastNotificationHandler {
-  static final BroadcastNotificationHandler _instance = BroadcastNotificationHandler._();
-  static BroadcastNotificationHandler get instance => _instance;
-  
   BroadcastNotificationHandler._();
+  static final BroadcastNotificationHandler _instance =
+      BroadcastNotificationHandler._();
+  static BroadcastNotificationHandler get instance => _instance;
 
   late final BroadcastService _broadcastService;
 
@@ -54,7 +53,7 @@ class BroadcastNotificationHandler {
   Future<void> _trackMessageReceived(RemoteMessage message) async {
     final messageId = message.data['messageId'];
     final userId = FirebaseAuth.instance.currentUser?.uid;
-    
+
     if (messageId != null && userId != null) {
       try {
         await _broadcastService.trackMessageInteraction(
@@ -72,7 +71,7 @@ class BroadcastNotificationHandler {
   Future<void> _trackMessageOpened(RemoteMessage message) async {
     final messageId = message.data['messageId'];
     final userId = FirebaseAuth.instance.currentUser?.uid;
-    
+
     if (messageId != null && userId != null) {
       try {
         await _broadcastService.trackMessageInteraction(
@@ -89,7 +88,7 @@ class BroadcastNotificationHandler {
   /// Track message click/interaction
   Future<void> _trackMessageClicked(String messageId) async {
     final userId = FirebaseAuth.instance.currentUser?.uid;
-    
+
     if (userId != null) {
       try {
         await _broadcastService.trackMessageInteraction(
@@ -104,9 +103,10 @@ class BroadcastNotificationHandler {
   }
 
   /// Track poll response
-  Future<void> trackPollResponse(String messageId, String selectedOption) async {
+  Future<void> trackPollResponse(
+      String messageId, String selectedOption) async {
     final userId = FirebaseAuth.instance.currentUser?.uid;
-    
+
     if (userId != null) {
       try {
         await _broadcastService.trackMessageInteraction(
@@ -132,27 +132,22 @@ class BroadcastNotificationHandler {
   Future<void> _handleMessageAction(RemoteMessage message) async {
     final messageType = message.data['type'];
     final messageId = message.data['messageId'];
-    
+
     if (messageId != null) {
       await _trackMessageClicked(messageId);
     }
-    
+
     switch (messageType) {
       case 'link':
         await _handleLinkMessage(message);
-        break;
       case 'poll':
         await _handlePollMessage(message);
-        break;
       case 'image':
         await _handleImageMessage(message);
-        break;
       case 'video':
         await _handleVideoMessage(message);
-        break;
       default:
         await _handleTextMessage(message);
-        break;
     }
   }
 
@@ -211,7 +206,7 @@ class BroadcastNotificationHandler {
     // This would show a dialog with poll options
     // When user selects an option, call trackPollResponse
     print('Poll options: $options');
-    
+
     // Example of tracking a poll response (you'd do this when user actually selects)
     // await trackPollResponse(messageId!, options.first);
   }
@@ -224,7 +219,7 @@ class BroadcastNotificationHandler {
     final title = message.notification?.title ?? 'New Message';
     final body = message.notification?.body ?? '';
     final messageType = message.data['type'] ?? 'text';
-    
+
     return Card(
       margin: const EdgeInsets.all(8),
       child: ListTile(
@@ -258,7 +253,8 @@ class BroadcastNotificationHandler {
 }
 
 /// Provider for the broadcast notification handler
-final broadcastNotificationHandlerProvider = Provider<BroadcastNotificationHandler>(
+final broadcastNotificationHandlerProvider =
+    Provider<BroadcastNotificationHandler>(
   (ref) {
     final handler = BroadcastNotificationHandler.instance;
     final broadcastService = ref.read(adminBroadcastServiceProvider);

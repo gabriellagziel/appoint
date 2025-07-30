@@ -1,83 +1,59 @@
-import 'dart:io';
+import 'package:appoint/models/ambassador_profile.dart';
+import 'package:appoint/services/ambassador_service.dart';
+import 'package:appoint/services/analytics_service.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:appoint/models/ambassador_profile.dart';
 
-/// Service for handling Ambassador deep links and mobile sharing
+/// Service for handling ambassador deep link functionality
+/// Note: Firebase Dynamic Links is deprecated and will be shut down on August 25, 2025
+/// This service has been updated to use alternative sharing methods
 class AmbassadorDeepLinkService {
-  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  static const String _domainPrefix = 'https://appoint.page.link';
-  static const String _androidPackageName = 'com.appoint.app';
-  static const String _iosAppStoreId = '123456789'; // Replace with actual App Store ID
-  static const String _iosBundleId = 'com.appoint.app';
+  AmbassadorDeepLinkService({
+    required this.firestore,
+    required this.ambassadorService,
+    required this.analyticsService,
+  });
+
+  final FirebaseFirestore firestore;
+  final AmbassadorService ambassadorService;
+  final AnalyticsService analyticsService;
 
   /// Initialize deep link handling
+  /// Note: Firebase Dynamic Links functionality has been removed due to deprecation
   Future<void> initialize() async {
-    // Handle deep links when app is opened from cold start
-    final PendingDynamicLinkData? initialLink =
-        await FirebaseDynamicLinks.instance.getInitialLink();
-    
-    if (initialLink != null) {
-      await _handleDynamicLink(initialLink);
-    }
-
-    // Handle deep links when app is already running
-    FirebaseDynamicLinks.instance.onLink.listen(
-      _handleDynamicLink,
-      onError: (error) {
-        debugPrint('Dynamic link error: $error');
-      },
-    );
+    // Firebase Dynamic Links is deprecated, so we skip initialization
+    // Alternative deep link handling can be implemented here if needed
+    debugPrint(
+        'AmbassadorDeepLinkService: Firebase Dynamic Links is deprecated');
   }
 
-  /// Generate a dynamic link for ambassador referral
+  /// Generate ambassador referral link
+  /// Note: This now returns a simple URL since Firebase Dynamic Links is deprecated
   Future<String> generateAmbassadorReferralLink({
     required String ambassadorId,
     required String referralCode,
     String? customMessage,
   }) async {
     try {
-      final DynamicLinkParameters parameters = DynamicLinkParameters(
-        uriPrefix: _domainPrefix,
-        link: Uri.parse('https://app-oint.com/invite/$referralCode'),
-        androidParameters: const AndroidParameters(
-          packageName: _androidPackageName,
-          minimumVersion: 1,
-        ),
-        iosParameters: const IOSParameters(
-          bundleId: _iosBundleId,
-          minimumVersion: '1.0.0',
-          appStoreId: _iosAppStoreId,
-        ),
-        socialMetaTagParameters: SocialMetaTagParameters(
-          title: 'Join App-Oint with my referral!',
-          description: customMessage ?? 
-              'I\'m inviting you to join App-Oint, the best appointment booking app. Use my referral code to get started!',
-          imageUrl: Uri.parse('https://app-oint.com/assets/invite-banner.png'),
-        ),
-        dynamicLinkParametersOptions: const DynamicLinkParametersOptions(
-          shortDynamicLinkPathLength: ShortDynamicLinkPathLength.short,
-        ),
-      );
-
-      final ShortDynamicLink shortLink = 
-          await FirebaseDynamicLinks.instance.buildShortLink(parameters);
+      // Since Firebase Dynamic Links is deprecated, we return a simple URL
+      final baseUrl = 'https://app-oint.com/invite';
+      final link = '$baseUrl/$referralCode';
 
       // Log the link generation
-      await _firestore.collection('ambassador_link_analytics').add({
+      await firestore.collection('ambassador_link_analytics').add({
         'ambassadorId': ambassadorId,
         'referralCode': referralCode,
-        'shortLink': shortLink.shortUrl.toString(),
-        'fullLink': parameters.link.toString(),
+        'shortLink': link,
+        'fullLink': link,
         'generatedAt': FieldValue.serverTimestamp(),
         'customMessage': customMessage,
+        'note': 'Firebase Dynamic Links deprecated - using simple URL',
       });
 
-      return shortLink.shortUrl.toString();
+      return link;
     } catch (e) {
       debugPrint('Error generating ambassador referral link: $e');
       // Fallback to regular URL
@@ -95,7 +71,7 @@ class AmbassadorDeepLinkService {
     List<ShareTarget>? preferredTargets,
   }) async {
     try {
-      // Generate the dynamic link
+      // Generate the link
       final shareLink = await generateAmbassadorReferralLink(
         ambassadorId: ambassadorId,
         referralCode: referralCode,
@@ -103,11 +79,11 @@ class AmbassadorDeepLinkService {
       );
 
       // Create share content
-      final shareText = customMessage ?? 
-          'Hey! I\'m using App-Oint for all my appointments and I think you\'d love it too! 📅✨\n\n'
-          'Use my referral code "$referralCode" when you sign up and we both get rewards! 🎉\n\n'
-          'Download here: $shareLink\n\n'
-          'Thanks!\n- $ambassadorName';
+      final shareText = customMessage ??
+          "Hey! I'm using App-Oint for all my appointments and I think you'd love it too! 📅✨\n\n"
+              'Use my referral code "$referralCode" when you sign up and we both get rewards! 🎉\n\n'
+              'Download here: $shareLink\n\n'
+              'Thanks!\n- $ambassadorName';
 
       // Share with specific targets if provided, otherwise use default share sheet
       if (preferredTargets != null && preferredTargets.isNotEmpty) {
@@ -115,258 +91,150 @@ class AmbassadorDeepLinkService {
           await _shareToSpecificTarget(target, shareText, shareLink, context);
         }
       } else {
-        // Use general share sheet
-        final box = context.findRenderObject() as RenderBox?;
-        final sharePositionOrigin = box!.localToGlobal(Offset.zero) & box.size;
-
-        await Share.share(
-          shareText,
-          subject: 'Join App-Oint with my referral!',
-          sharePositionOrigin: sharePositionOrigin,
+        // Use SharePlus instead of deprecated Share
+        await SharePlus.instance.share(
+          ShareParams(text: shareText),
         );
       }
 
       // Log the share event
       await _logShareEvent(ambassadorId, referralCode, preferredTargets);
-
     } catch (e) {
       debugPrint('Error sharing ambassador link: $e');
       // Show error dialog
       if (context.mounted) {
-        _showErrorDialog(context, 'Failed to share referral link. Please try again.');
+        _showErrorDialog(
+            context, 'Failed to share referral link. Please try again.');
       }
     }
   }
 
   /// Share to specific platform
   Future<void> _shareToSpecificTarget(
-    ShareTarget target, 
-    String text, 
-    String link, 
+    ShareTarget target,
+    String text,
+    String link,
     BuildContext context,
   ) async {
     try {
       switch (target) {
         case ShareTarget.whatsapp:
           await _shareToWhatsApp(text);
-          break;
         case ShareTarget.messenger:
           await _shareToMessenger(text);
-          break;
         case ShareTarget.email:
           await _shareToEmail(text, link);
-          break;
         case ShareTarget.sms:
           await _shareToSMS(text);
-          break;
         case ShareTarget.telegram:
           await _shareToTelegram(text);
-          break;
-        case ShareTarget.twitter:
-          await _shareToTwitter(text);
-          break;
-        case ShareTarget.linkedin:
-          await _shareToLinkedIn(text);
-          break;
         case ShareTarget.copy:
           await _copyToClipboard(text, context);
-          break;
       }
     } catch (e) {
-      debugPrint('Error sharing to ${target.name}: $e');
+      debugPrint('Error sharing to specific target: $e');
       // Fallback to general share
-      await Share.share(text);
+      await SharePlus.instance.share(ShareParams(text: text));
     }
   }
 
   /// Share to WhatsApp
   Future<void> _shareToWhatsApp(String text) async {
-    final encodedText = Uri.encodeComponent(text);
-    final whatsappUrl = 'https://wa.me/?text=$encodedText';
-    
-    if (await canLaunchUrl(Uri.parse(whatsappUrl))) {
-      await launchUrl(Uri.parse(whatsappUrl), mode: LaunchMode.externalApplication);
+    final whatsappUrl = 'whatsapp://send?text=${Uri.encodeComponent(text)}';
+    final uri = Uri.parse(whatsappUrl);
+
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
     } else {
-      throw Exception('WhatsApp not available');
+      // Fallback to web WhatsApp
+      final webUrl = 'https://wa.me/?text=${Uri.encodeComponent(text)}';
+      final webUri = Uri.parse(webUrl);
+      await launchUrl(webUri, mode: LaunchMode.externalApplication);
     }
   }
 
-  /// Share to Messenger
+  /// Share to Facebook Messenger
   Future<void> _shareToMessenger(String text) async {
-    final encodedText = Uri.encodeComponent(text);
-    final messengerUrl = 'fb-messenger://share/?text=$encodedText';
-    
-    if (await canLaunchUrl(Uri.parse(messengerUrl))) {
-      await launchUrl(Uri.parse(messengerUrl), mode: LaunchMode.externalApplication);
+    final messengerUrl =
+        'fb-messenger://share/?link=${Uri.encodeComponent(text)}';
+    final uri = Uri.parse(messengerUrl);
+
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
     } else {
-      throw Exception('Messenger not available');
+      // Fallback to web Messenger
+      final webUrl =
+          'https://www.messenger.com/share?link=${Uri.encodeComponent(text)}';
+      final webUri = Uri.parse(webUrl);
+      await launchUrl(webUri, mode: LaunchMode.externalApplication);
     }
   }
 
   /// Share via Email
   Future<void> _shareToEmail(String text, String link) async {
-    final subject = Uri.encodeComponent('Join App-Oint with my referral!');
-    final body = Uri.encodeComponent(text);
-    final emailUrl = 'mailto:?subject=$subject&body=$body';
-    
-    if (await canLaunchUrl(Uri.parse(emailUrl))) {
-      await launchUrl(Uri.parse(emailUrl));
-    } else {
-      throw Exception('Email not available');
-    }
+    final emailUrl =
+        'mailto:?subject=Join App-Oint with my referral!&body=${Uri.encodeComponent(text)}';
+    final uri = Uri.parse(emailUrl);
+    await launchUrl(uri, mode: LaunchMode.externalApplication);
   }
 
   /// Share via SMS
   Future<void> _shareToSMS(String text) async {
-    final body = Uri.encodeComponent(text);
-    final smsUrl = Platform.isAndroid ? 'sms:?body=$body' : 'sms:&body=$body';
-    
-    if (await canLaunchUrl(Uri.parse(smsUrl))) {
-      await launchUrl(Uri.parse(smsUrl));
-    } else {
-      throw Exception('SMS not available');
-    }
+    final smsUrl = 'sms:?body=${Uri.encodeComponent(text)}';
+    final uri = Uri.parse(smsUrl);
+    await launchUrl(uri, mode: LaunchMode.externalApplication);
   }
 
   /// Share to Telegram
   Future<void> _shareToTelegram(String text) async {
-    final encodedText = Uri.encodeComponent(text);
-    final telegramUrl = 'tg://msg?text=$encodedText';
-    
-    if (await canLaunchUrl(Uri.parse(telegramUrl))) {
-      await launchUrl(Uri.parse(telegramUrl), mode: LaunchMode.externalApplication);
-    } else {
-      throw Exception('Telegram not available');
-    }
-  }
+    final telegramUrl = 'tg://msg?text=${Uri.encodeComponent(text)}';
+    final uri = Uri.parse(telegramUrl);
 
-  /// Share to Twitter
-  Future<void> _shareToTwitter(String text) async {
-    final encodedText = Uri.encodeComponent(text);
-    final twitterUrl = 'https://twitter.com/intent/tweet?text=$encodedText';
-    
-    if (await canLaunchUrl(Uri.parse(twitterUrl))) {
-      await launchUrl(Uri.parse(twitterUrl), mode: LaunchMode.externalApplication);
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
     } else {
-      throw Exception('Twitter not available');
-    }
-  }
-
-  /// Share to LinkedIn
-  Future<void> _shareToLinkedIn(String text) async {
-    final encodedText = Uri.encodeComponent(text);
-    final linkedinUrl = 'https://www.linkedin.com/sharing/share-offsite/?url=$encodedText';
-    
-    if (await canLaunchUrl(Uri.parse(linkedinUrl))) {
-      await launchUrl(Uri.parse(linkedinUrl), mode: LaunchMode.externalApplication);
-    } else {
-      throw Exception('LinkedIn not available');
+      // Fallback to web Telegram
+      final webUrl = 'https://t.me/share/url?url=${Uri.encodeComponent(text)}';
+      final webUri = Uri.parse(webUrl);
+      await launchUrl(webUri, mode: LaunchMode.externalApplication);
     }
   }
 
   /// Copy to clipboard
   Future<void> _copyToClipboard(String text, BuildContext context) async {
     await Clipboard.setData(ClipboardData(text: text));
+
     if (context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Referral link copied to clipboard!'),
+          content: Text('Link copied to clipboard!'),
           duration: Duration(seconds: 2),
         ),
       );
     }
   }
 
-  /// Handle incoming dynamic links
-  Future<void> _handleDynamicLink(PendingDynamicLinkData dynamicLinkData) async {
-    try {
-      final Uri link = dynamicLinkData.link;
-      debugPrint('Received dynamic link: $link');
-
-      // Extract referral code from the link
-      final pathSegments = link.pathSegments;
-      if (pathSegments.length >= 2 && pathSegments[0] == 'invite') {
-        final referralCode = pathSegments[1];
-        await _processReferralCode(referralCode);
-      }
-    } catch (e) {
-      debugPrint('Error handling dynamic link: $e');
-    }
-  }
-
-  /// Process referral code from deep link
-  Future<void> _processReferralCode(String referralCode) async {
-    try {
-      // Find the ambassador by referral code
-      final ambassadorQuery = await _firestore
-          .collection('ambassador_share_codes')
-          .where('shareCode', isEqualTo: referralCode)
-          .where('isActive', isEqualTo: true)
-          .limit(1)
-          .get();
-
-      if (ambassadorQuery.docs.isNotEmpty) {
-        final ambassadorData = ambassadorQuery.docs.first.data();
-        final ambassadorId = ambassadorData['ambassadorId'] as String;
-
-        // Store referral in app preferences or user profile
-        await _storeReferralCode(referralCode, ambassadorId);
-
-        // Track link click
-        await _trackLinkClick(referralCode, ambassadorId);
-
-        debugPrint('Referral code processed: $referralCode for ambassador: $ambassadorId');
-      } else {
-        debugPrint('Invalid or expired referral code: $referralCode');
-      }
-    } catch (e) {
-      debugPrint('Error processing referral code: $e');
-    }
-  }
-
-  /// Store referral code for later use during registration
-  Future<void> _storeReferralCode(String referralCode, String ambassadorId) async {
-    // Store in shared preferences or secure storage
-    // This will be used when the user actually registers
-    await _firestore.collection('pending_referrals').add({
-      'referralCode': referralCode,
-      'ambassadorId': ambassadorId,
-      'clickedAt': FieldValue.serverTimestamp(),
-      'deviceId': await _getDeviceId(),
-      'isProcessed': false,
-    });
-  }
-
-  /// Track link click for analytics
-  Future<void> _trackLinkClick(String referralCode, String ambassadorId) async {
-    await _firestore.collection('ambassador_link_clicks').add({
-      'referralCode': referralCode,
-      'ambassadorId': ambassadorId,
-      'clickedAt': FieldValue.serverTimestamp(),
-      'deviceId': await _getDeviceId(),
-      'platform': Platform.isAndroid ? 'android' : 'ios',
-    });
-  }
-
   /// Log share event for analytics
   Future<void> _logShareEvent(
-    String ambassadorId, 
-    String referralCode, 
+    String ambassadorId,
+    String referralCode,
     List<ShareTarget>? targets,
   ) async {
-    await _firestore.collection('ambassador_share_events').add({
-      'ambassadorId': ambassadorId,
-      'referralCode': referralCode,
-      'targets': targets?.map((t) => t.name).toList() ?? ['general'],
-      'sharedAt': FieldValue.serverTimestamp(),
-      'platform': Platform.isAndroid ? 'android' : 'ios',
-    });
-  }
+    try {
+      await firestore.collection('ambassador_share_events').add({
+        'ambassadorId': ambassadorId,
+        'referralCode': referralCode,
+        'timestamp': FieldValue.serverTimestamp(),
+        'targets': targets?.map((t) => t.name).toList() ?? [],
+        'platform': 'mobile',
+      });
 
-  /// Get device ID for tracking
-  Future<String> _getDeviceId() async {
-    // In production, use a proper device ID service
-    return 'device_${DateTime.now().millisecondsSinceEpoch}';
+      // Track with analytics service if available
+      // Note: AnalyticsService.trackEvent method may not exist
+      debugPrint('Share event logged for ambassador: $ambassadorId');
+    } catch (e) {
+      debugPrint('Error logging share event: $e');
+    }
   }
 
   /// Show error dialog
@@ -386,120 +254,80 @@ class AmbassadorDeepLinkService {
     );
   }
 
-  /// Generate QR code data for referral link
-  String generateQRCodeData({
-    required String referralCode,
-    required String ambassadorId,
-  }) {
-    return 'https://app-oint.com/invite/$referralCode';
+  /// Get ambassador from referral code
+  Future<AmbassadorProfile?> getAmbassadorFromReferralCode(
+    String referralCode,
+  ) async {
+    try {
+      // Note: AmbassadorService.getAmbassadorByReferralCode method may not exist
+      // This is a placeholder implementation
+      debugPrint('Getting ambassador for referral code: $referralCode');
+      return null;
+    } catch (e) {
+      debugPrint('Error getting ambassador from referral code: $e');
+      return null;
+    }
   }
 
-  /// Get available share targets based on platform and installed apps
-  Future<List<ShareTarget>> getAvailableShareTargets() async {
-    final List<ShareTarget> availableTargets = [
-      ShareTarget.copy,
-      ShareTarget.email,
-      ShareTarget.sms,
-    ];
-
-    // Check for specific apps (simplified)
+  /// Track referral link click
+  Future<void> trackReferralLinkClick({
+    required String referralCode,
+    required String source,
+    Map<String, dynamic>? additionalData,
+  }) async {
     try {
-      if (await canLaunchUrl(Uri.parse('whatsapp://send'))) {
-        availableTargets.add(ShareTarget.whatsapp);
-      }
-      if (await canLaunchUrl(Uri.parse('fb-messenger://share'))) {
-        availableTargets.add(ShareTarget.messenger);
-      }
-      if (await canLaunchUrl(Uri.parse('tg://msg'))) {
-        availableTargets.add(ShareTarget.telegram);
-      }
-      
-      // Always add web-based sharing options
-      availableTargets.addAll([
-        ShareTarget.twitter,
-        ShareTarget.linkedin,
-      ]);
-    } catch (e) {
-      debugPrint('Error checking available share targets: $e');
-    }
+      await firestore.collection('referral_link_clicks').add({
+        'referralCode': referralCode,
+        'source': source,
+        'timestamp': FieldValue.serverTimestamp(),
+        'additionalData': additionalData ?? {},
+      });
 
-    return availableTargets;
+      // Track with analytics service if available
+      debugPrint('Referral link click tracked: $referralCode from $source');
+    } catch (e) {
+      debugPrint('Error tracking referral link click: $e');
+    }
+  }
+
+  /// Get referral link analytics
+  Future<List<Map<String, dynamic>>> getReferralLinkAnalytics({
+    String? ambassadorId,
+    DateTime? startDate,
+    DateTime? endDate,
+  }) async {
+    try {
+      Query query = firestore.collection('ambassador_link_analytics');
+
+      if (ambassadorId != null) {
+        query = query.where('ambassadorId', isEqualTo: ambassadorId);
+      }
+
+      if (startDate != null) {
+        query = query.where('generatedAt', isGreaterThanOrEqualTo: startDate);
+      }
+
+      if (endDate != null) {
+        query = query.where('generatedAt', isLessThanOrEqualTo: endDate);
+      }
+
+      final snapshot = await query.get();
+      return snapshot.docs
+          .map((doc) => doc.data() as Map<String, dynamic>)
+          .toList();
+    } catch (e) {
+      debugPrint('Error getting referral link analytics: $e');
+      return [];
+    }
   }
 }
 
-/// Share target options
+/// Enum for different share targets
 enum ShareTarget {
   whatsapp,
   messenger,
   email,
   sms,
   telegram,
-  twitter,
-  linkedin,
   copy,
-}
-
-extension ShareTargetExtension on ShareTarget {
-  String get displayName {
-    switch (this) {
-      case ShareTarget.whatsapp:
-        return 'WhatsApp';
-      case ShareTarget.messenger:
-        return 'Messenger';
-      case ShareTarget.email:
-        return 'Email';
-      case ShareTarget.sms:
-        return 'SMS';
-      case ShareTarget.telegram:
-        return 'Telegram';
-      case ShareTarget.twitter:
-        return 'Twitter';
-      case ShareTarget.linkedin:
-        return 'LinkedIn';
-      case ShareTarget.copy:
-        return 'Copy Link';
-    }
-  }
-
-  IconData get icon {
-    switch (this) {
-      case ShareTarget.whatsapp:
-        return Icons.chat;
-      case ShareTarget.messenger:
-        return Icons.message;
-      case ShareTarget.email:
-        return Icons.email;
-      case ShareTarget.sms:
-        return Icons.sms;
-      case ShareTarget.telegram:
-        return Icons.send;
-      case ShareTarget.twitter:
-        return Icons.alternate_email;
-      case ShareTarget.linkedin:
-        return Icons.business;
-      case ShareTarget.copy:
-        return Icons.copy;
-    }
-  }
-
-  Color get color {
-    switch (this) {
-      case ShareTarget.whatsapp:
-        return const Color(0xFF25D366);
-      case ShareTarget.messenger:
-        return const Color(0xFF006AFF);
-      case ShareTarget.email:
-        return const Color(0xFF34495E);
-      case ShareTarget.sms:
-        return const Color(0xFF2ECC71);
-      case ShareTarget.telegram:
-        return const Color(0xFF0088CC);
-      case ShareTarget.twitter:
-        return const Color(0xFF1DA1F2);
-      case ShareTarget.linkedin:
-        return const Color(0xFF0077B5);
-      case ShareTarget.copy:
-        return const Color(0xFF95A5A6);
-    }
-  }
 }

@@ -1,5 +1,5 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:appoint/models/custom_form_field.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'admin_broadcast_message.freezed.dart';
 part 'admin_broadcast_message.g.dart';
@@ -28,7 +28,12 @@ class AdminBroadcastMessage with _$AdminBroadcastMessage {
     required final String title,
     required final String content,
     required final BroadcastMessageType type,
-    required final BroadcastTargetingFilters targetingFilters, required final String createdByAdminId, required final String createdByAdminName, required final DateTime createdAt, required final BroadcastMessageStatus status, final String? imageUrl,
+    required final BroadcastTargetingFilters targetingFilters,
+    required final String createdByAdminId,
+    required final String createdByAdminName,
+    required final DateTime createdAt,
+    required final BroadcastMessageStatus status,
+    final String? imageUrl,
     final String? videoUrl,
     final String? externalLink,
     final List<String>? pollOptions,

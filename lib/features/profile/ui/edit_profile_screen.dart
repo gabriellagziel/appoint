@@ -11,9 +11,9 @@ class EditProfileScreen extends StatefulWidget {
 }
 
 class _EditProfileScreenState extends State<EditProfileScreen> {
-  TextEditingController _nameController = TextEditingController();
-  TextEditingController _bioController = TextEditingController();
-  TextEditingController _locationController = TextEditingController();
+  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _bioController = TextEditingController();
+  final TextEditingController _locationController = TextEditingController();
 
   @override
   void initState() {
@@ -28,6 +28,12 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
         FirebaseAnalytics.instance.logEvent(name: eventName);
       }
     } catch (e) {
+      // Ignore analytics errors
+    }
+  }
+
+  @override
+  void dispose() {
     _nameController.dispose();
     _bioController.dispose();
     _locationController.dispose();
@@ -35,7 +41,8 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
   }
 
   @override
-  Widget build(BuildContext context) => Scaffold(
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
         title: const Text('Edit Profile'),
       ),

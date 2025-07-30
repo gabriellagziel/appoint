@@ -6,7 +6,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 enum OtpState { idle, sending, codeSent, verifying, success, error }
 
 class OtpNotifier extends StateNotifier<OtpState> {
-
   OtpNotifier(this._familyService) : super(OtpState.idle);
   final FamilyService _familyService;
 

@@ -30,7 +30,8 @@ final offlineBookingRepoProvider =
 
 /// A provider that provides the repository instance once initialized
 final offlineBookingRepositoryProvider =
-    Provider<AsyncValue<OfflineBookingRepository>>((ref) => ref.watch(offlineBookingRepoProvider));
+    Provider<AsyncValue<OfflineBookingRepository>>(
+        (ref) => ref.watch(offlineBookingRepoProvider));
 
 /// A provider that provides the repository instance directly (for convenience)
 final offlineBookingRepoInstanceProvider =

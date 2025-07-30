@@ -27,7 +27,9 @@ class RewardsService {
       timestamp: DateTime.now(),
     );
 
-    await _firestore.collection('points_transactions').add(transaction.toJson());
+    await _firestore
+        .collection('points_transactions')
+        .add(transaction.toJson());
 
     // Update user's total points
     await _firestore.collection('users').doc(userId).update({
@@ -46,9 +48,9 @@ class RewardsService {
         .where('isAvailable', isEqualTo: true)
         .get();
 
-    return snapshot.docs.map((doc) {
-      return Reward.fromJson({...doc.data(), 'id': doc.id});
-    }).toList();
+    return snapshot.docs
+        .map((doc) => Reward.fromJson({...doc.data(), 'id': doc.id}))
+        .toList();
   }
 
   /// Redeem a reward
@@ -57,11 +59,13 @@ class RewardsService {
     if (user == null) throw Exception('Not authenticated');
 
     // Get reward details
-    final rewardDoc = await _firestore.collection('rewards').doc(rewardId).get();
+    final rewardDoc =
+        await _firestore.collection('rewards').doc(rewardId).get();
     if (!rewardDoc.exists) throw Exception('Reward not found');
 
     final reward = Reward.fromJson({...rewardDoc.data()!, 'id': rewardId});
-    if (!reward.canRedeem) throw Exception('Reward is not available for redemption');
+    if (!reward.canRedeem)
+      throw Exception('Reward is not available for redemption');
 
     // Get user's current points
     final userDoc = await _firestore.collection('users').doc(user.uid).get();
@@ -83,10 +87,13 @@ class RewardsService {
       expiresAt: DateTime.now().add(const Duration(days: 30)),
     );
 
-    await _firestore.collection('redeemed_rewards').add(redeemedReward.toJson());
+    await _firestore
+        .collection('redeemed_rewards')
+        .add(redeemedReward.toJson());
 
     // Deduct points
-    await awardPoints(user.uid, -reward.pointsCost, 'Redeemed reward: ${reward.name}');
+    await awardPoints(
+        user.uid, -reward.pointsCost, 'Redeemed reward: ${reward.name}');
 
     // Update reward redemption count
     await _firestore.collection('rewards').doc(rewardId).update({
@@ -150,9 +157,9 @@ class RewardsService {
         .collection('achievements')
         .get();
 
-    return snapshot.docs.map((doc) {
-      return Achievement.fromJson({...doc.data(), 'id': doc.id});
-    }).toList();
+    return snapshot.docs
+        .map((doc) => Achievement.fromJson({...doc.data(), 'id': doc.id}))
+        .toList();
   }
 
   /// Get user's redeemed rewards
@@ -166,9 +173,9 @@ class RewardsService {
         .orderBy('redeemedAt', descending: true)
         .get();
 
-    return snapshot.docs.map((doc) {
-      return RedeemedReward.fromJson({...doc.data(), 'id': doc.id});
-    }).toList();
+    return snapshot.docs
+        .map((doc) => RedeemedReward.fromJson({...doc.data(), 'id': doc.id}))
+        .toList();
   }
 
   /// Get points history
@@ -183,9 +190,9 @@ class RewardsService {
         .limit(50)
         .get();
 
-    return snapshot.docs.map((doc) {
-      return PointsTransaction.fromJson({...doc.data(), 'id': doc.id});
-    }).toList();
+    return snapshot.docs
+        .map((doc) => PointsTransaction.fromJson({...doc.data(), 'id': doc.id}))
+        .toList();
   }
 
   /// Check and unlock achievements
@@ -234,8 +241,8 @@ class RewardsService {
 
   /// Calculate user level based on points
   int _calculateLevel(int points) {
-    int level = 1;
-    int requiredPoints = 100;
+    var level = 1;
+    const requiredPoints = 100;
 
     while (points >= requiredPoints) {
       level++;
@@ -261,19 +268,23 @@ class RewardsService {
   /// Get next available reward based on points
   Future<Reward?> _getNextAvailableReward(int points) async {
     final rewards = await getAvailableRewards();
-    
+
     // Find the cheapest reward that user can afford
-    final affordableRewards = rewards.where((reward) => 
-        reward.pointsCost <= points && reward.canRedeem).toList();
-    
+    final affordableRewards = rewards
+        .where(
+          (reward) => reward.pointsCost <= points && reward.canRedeem,
+        )
+        .toList();
+
     if (affordableRewards.isEmpty) return null;
-    
+
     affordableRewards.sort((a, b) => a.pointsCost.compareTo(b.pointsCost));
     return affordableRewards.first;
   }
 
   /// Check booking achievements
-  Future<void> _checkBookingAchievements(String userId, int bookingsCount) async {
+  Future<void> _checkBookingAchievements(
+      String userId, int bookingsCount) async {
     final achievements = [
       {'name': 'First Booking', 'count': 1, 'points': 50},
       {'name': 'Booking Pro', 'count': 10, 'points': 100},
@@ -282,16 +293,21 @@ class RewardsService {
     ];
 
     for (final achievement in achievements) {
-      final count = achievement['count'] as int;
+      final count = achievement['count']! as int;
       if (bookingsCount >= count) {
-        await _unlockAchievement(userId, achievement['name'] as String, 
-            achievement['points'] as int, AchievementType.booking);
+        await _unlockAchievement(
+          userId,
+          achievement['name']! as String,
+          achievement['points']! as int,
+          AchievementType.booking,
+        );
       }
     }
   }
 
   /// Check referral achievements
-  Future<void> _checkReferralAchievements(String userId, int referralsCount) async {
+  Future<void> _checkReferralAchievements(
+      String userId, int referralsCount) async {
     final achievements = [
       {'name': 'First Referral', 'count': 1, 'points': 100},
       {'name': 'Referral Pro', 'count': 5, 'points': 250},
@@ -299,10 +315,14 @@ class RewardsService {
     ];
 
     for (final achievement in achievements) {
-      final count = achievement['count'] as int;
+      final count = achievement['count']! as int;
       if (referralsCount >= count) {
-        await _unlockAchievement(userId, achievement['name'] as String, 
-            achievement['points'] as int, AchievementType.referral);
+        await _unlockAchievement(
+          userId,
+          achievement['name']! as String,
+          achievement['points']! as int,
+          AchievementType.referral,
+        );
       }
     }
   }
@@ -316,16 +336,21 @@ class RewardsService {
     ];
 
     for (final achievement in achievements) {
-      final count = achievement['count'] as int;
+      final count = achievement['count']! as int;
       if (streakDays >= count) {
-        await _unlockAchievement(userId, achievement['name'] as String, 
-            achievement['points'] as int, AchievementType.streak);
+        await _unlockAchievement(
+          userId,
+          achievement['name']! as String,
+          achievement['points']! as int,
+          AchievementType.streak,
+        );
       }
     }
   }
 
   /// Unlock achievement for user
-  Future<void> _unlockAchievement(String userId, String name, int points, AchievementType type) async {
+  Future<void> _unlockAchievement(
+      String userId, String name, int points, AchievementType type) async {
     // Check if already unlocked
     final existingDoc = await _firestore
         .collection('users')
@@ -357,4 +382,4 @@ class RewardsService {
     // Award points
     await awardPoints(userId, points, 'Achievement unlocked: $name');
   }
-} 
+}

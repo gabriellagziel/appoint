@@ -94,7 +94,8 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
                       if (room['description'] != null)
                         Text('Description: ${room['description']}'),
                       Text(
-                          'Status: ${room['isAvailable'] == true ? 'Available' : 'Occupied'}'),
+                        'Status: ${room['isAvailable'] == true ? 'Available' : 'Occupied'}',
+                      ),
                     ],
                   ),
                   trailing: PopupMenuButton(
@@ -117,7 +118,9 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
                         _showEditRoomDialog(context, roomId, room);
                       } else if (value == 'toggle') {
                         _toggleRoomAvailability(
-                            roomId, room['isAvailable'] ?? true,);
+                          roomId,
+                          room['isAvailable'] ?? true,
+                        );
                       } else if (value == 'delete') {
                         _deleteRoom(roomId);
                       }
@@ -194,8 +197,11 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
     );
   }
 
-  void _showEditRoomDialog(final BuildContext context, final String roomId,
-      Map<String, dynamic> room,) {
+  void _showEditRoomDialog(
+    final BuildContext context,
+    final String roomId,
+    Map<String, dynamic> room,
+  ) {
     _nameController.text = room['name'] ?? '';
     _capacityController.text = (room['capacity'] ?? 0).toString();
     _descriptionController.text = room['description'] ?? '';
@@ -287,9 +293,9 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
         );
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: $e')),
-        );
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error: $e')),
+      );
     } finally {
       if (mounted) {
         setState(() => _isAdding = false);
@@ -321,9 +327,9 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
         );
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: $e')),
-        );
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error: $e')),
+      );
     } finally {
       if (mounted) {
         setState(() => _isAdding = false);
@@ -332,7 +338,9 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
   }
 
   Future<void> _toggleRoomAvailability(
-      String roomId, final bool currentAvailability,) async {
+    String roomId,
+    final bool currentAvailability,
+  ) async {
     try {
       await FirebaseFirestore.instance.collection('rooms').doc(roomId).update({
         'isAvailable': !currentAvailability,
@@ -342,15 +350,16 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-              content: Text(
-                  'Room ${!currentAvailability ? 'enabled' : 'disabled'} successfully!'),),
+            content: Text(
+              'Room ${!currentAvailability ? 'enabled' : 'disabled'} successfully!',
+            ),
+          ),
         );
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: $e')),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error: $e')),
+      );
     }
   }
 
@@ -364,8 +373,9 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
         );
       }
     } catch (e) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: $e')),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error: $e')),
+      );
+    }
   }
+}

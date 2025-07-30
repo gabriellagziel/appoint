@@ -8,7 +8,6 @@ final ambassadorServiceProvider =
     Provider<AmbassadorService>((ref) => AmbassadorService());
 
 class AmbassadorDataNotifier extends StateNotifier<AsyncValue<AmbassadorData>> {
-
   AmbassadorDataNotifier(this._service) : super(const AsyncValue.loading()) {
     _loadData();
   }
@@ -34,8 +33,8 @@ class AmbassadorDataNotifier extends StateNotifier<AsyncValue<AmbassadorData>> {
       final chartData = _service.generateChartData(stats);
       final data = AmbassadorData(stats: stats, chartData: chartData);
 
-      final state = AsyncValue.data(data);
-    } catch (e) {
+      state = AsyncValue.data(data);
+    } catch (e, stackTrace) {
       state = AsyncValue.error(e, stackTrace);
     }
   }
@@ -85,8 +84,8 @@ final ambassadorChartDataProvider =
   );
 });
 
-final ambassadorsOverTimeProvider =
-    FutureProvider<List<TimeSeriesPoint>>((ref) => ref.read(ambassadorServiceProvider).fetchAmbassadorsOverTime());
+final ambassadorsOverTimeProvider = FutureProvider<List<TimeSeriesPoint>>(
+    (ref) => ref.read(ambassadorServiceProvider).fetchAmbassadorsOverTime());
 
 // Filter state providers
 final ambassadorFiltersProvider =
@@ -94,5 +93,4 @@ final ambassadorFiltersProvider =
 
 final selectedCountryProvider = StateProvider<String?>((ref) => null);
 final selectedLanguageProvider = StateProvider<String?>((ref) => null);
-final selectedDateRangeProvider =
-    StateProvider<DateTimeRange?>((ref) => null);
+final selectedDateRangeProvider = StateProvider<DateTimeRange?>((ref) => null);

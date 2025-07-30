@@ -33,7 +33,8 @@ void main() {
       expect(meeting.totalParticipantCount, 2);
     });
 
-    test('Meeting with 2 participants (3 total) should be personal meeting', () {
+    test('Meeting with 2 participants (3 total) should be personal meeting',
+        () {
       final meeting = Meeting(
         id: 'test-2',
         organizerId: 'organizer-1',
@@ -108,7 +109,8 @@ void main() {
 
       expect(meeting.meetingType, MeetingType.event);
       expect(meeting.isEvent, isTrue);
-      expect(meeting.totalParticipantCount, 11); // 10 participants + 1 organizer
+      expect(
+          meeting.totalParticipantCount, 11); // 10 participants + 1 organizer
     });
   });
 
@@ -164,7 +166,7 @@ void main() {
     setUp(() {
       startTime = DateTime(2024, 1, 15, 10, 0);
       endTime = DateTime(2024, 1, 15, 11, 0);
-      
+
       meeting = Meeting(
         id: 'test-roles',
         organizerId: 'organizer-1',
@@ -198,7 +200,8 @@ void main() {
     });
 
     test('Admin roles should be identified correctly', () {
-      expect(meeting.isAdmin('organizer-1'), isTrue); // Organizer is always admin
+      expect(
+          meeting.isAdmin('organizer-1'), isTrue); // Organizer is always admin
       expect(meeting.isAdmin('admin-1'), isTrue);
       expect(meeting.isAdmin('participant-1'), isFalse);
       expect(meeting.isAdmin('participant-2'), isFalse);
@@ -214,7 +217,9 @@ void main() {
 
     test('Personal meeting should not have event feature access', () {
       final personalMeeting = meeting.copyWith(
-        participants: [meeting.participants.first], // Only 1 participant = personal meeting
+        participants: [
+          meeting.participants.first
+        ], // Only 1 participant = personal meeting
       );
 
       expect(personalMeeting.isPersonalMeeting, isTrue);
@@ -442,8 +447,10 @@ void main() {
       expect(deserializedMeeting.organizerId, originalMeeting.organizerId);
       expect(deserializedMeeting.title, originalMeeting.title);
       expect(deserializedMeeting.description, originalMeeting.description);
-      expect(deserializedMeeting.participants.length, originalMeeting.participants.length);
-      expect(deserializedMeeting.participants.first.userId, originalMeeting.participants.first.userId);
+      expect(deserializedMeeting.participants.length,
+          originalMeeting.participants.length);
+      expect(deserializedMeeting.participants.first.userId,
+          originalMeeting.participants.first.userId);
       expect(deserializedMeeting.meetingType, originalMeeting.meetingType);
       expect(deserializedMeeting.isEvent, originalMeeting.isEvent);
     });
