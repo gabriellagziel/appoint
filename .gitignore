@@ -151,3 +151,4 @@ logs/
 *.backup
 *.bak
 *.save
+.env
