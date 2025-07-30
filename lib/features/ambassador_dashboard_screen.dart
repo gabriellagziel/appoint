@@ -176,23 +176,17 @@ class _AmbassadorDashboardScreenState
         child: LayoutBuilder(
           builder: (context, final constraints) {
             if (constraints.maxWidth > 600) {
-              // Horizontal layout for larger screens
-              return SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: SizedBox(
-                  width: MediaQuery.of(context).size.width * 1.5,
-                  child: Row(
-                    children: [
-                      Expanded(child: _buildCountryFilter()),
-                      const SizedBox(width: 16),
-                      Expanded(child: _buildLanguageFilter()),
-                      const SizedBox(width: 16),
-                      _buildDateRangeFilter(),
-                      const SizedBox(width: 16),
-                      _buildClearButton(),
-                    ],
-                  ),
-                ),
+              // Responsive horizontal/wrapped layout for larger screens
+              return Wrap(
+                spacing: 16,
+                runSpacing: 16,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                children: [
+                  _buildCountryFilter(),
+                  _buildLanguageFilter(),
+                  _buildDateRangeFilter(),
+                  _buildClearButton(),
+                ],
               );
             } else {
               // Vertical layout for smaller screens

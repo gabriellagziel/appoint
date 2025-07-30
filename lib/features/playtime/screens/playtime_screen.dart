@@ -358,7 +358,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
 
     setState(() {
       _isLoading = true;
-      final _errorMessage = null;
+      _errorMessage = null;
     });
 
     try {
@@ -384,9 +384,11 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
         );
       }
     } catch (e) {
-        final _errorMessage = e.toString();
-      
       if (mounted) {
+        setState(() {
+          _errorMessage = e.toString();
+        });
+
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
