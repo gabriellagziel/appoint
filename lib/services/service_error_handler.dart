@@ -5,8 +5,8 @@ mixin ServiceErrorHandler {
   }) async {
     try {
       return await fn();
-    } catch (e) {
-      onError?.call(e, stack);
+    } catch (e, stackTrace) {
+      onError?.call(e, stackTrace);
       // Optionally log to Crashlytics or another service here
       return null;
     }

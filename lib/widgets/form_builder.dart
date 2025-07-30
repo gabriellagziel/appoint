@@ -31,8 +31,6 @@ class _FormBuilderState extends State<FormBuilder> {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context)!;
-
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -40,13 +38,13 @@ class _FormBuilderState extends State<FormBuilder> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              l10n.formFields,
+              'Form Fields',
               style: Theme.of(context).textTheme.titleLarge,
             ),
             ElevatedButton.icon(
               onPressed: _addNewField,
               icon: const Icon(Icons.add),
-              label: Text(l10n.addField),
+              label: const Text('Add Field'),
             ),
           ],
         ),
@@ -68,7 +66,7 @@ class _FormBuilderState extends State<FormBuilder> {
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  l10n.noFormFields,
+                  'No form fields yet',
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.grey.shade600,
@@ -76,7 +74,7 @@ class _FormBuilderState extends State<FormBuilder> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n.addFormFieldsDescription,
+                  'Add form fields to collect information from your users',
                   style: TextStyle(
                     fontSize: 14,
                     color: Colors.grey.shade500,
@@ -112,7 +110,7 @@ class _FormBuilderState extends State<FormBuilder> {
                 const SizedBox(width: 12),
                 Expanded(
                   child: Text(
-                    l10n.formPreviewDescription,
+                    'Preview your form fields below',
                     style: TextStyle(color: Colors.blue.shade700),
                   ),
                 ),
@@ -124,8 +122,6 @@ class _FormBuilderState extends State<FormBuilder> {
   }
 
   Widget _buildFieldCard(CustomFormField field, int index) {
-    final l10n = AppLocalizations.of(context)!;
-
     return Card(
       key: ValueKey(field.id),
       margin: const EdgeInsets.only(bottom: 8),
@@ -164,7 +160,7 @@ class _FormBuilderState extends State<FormBuilder> {
                                 borderRadius: BorderRadius.circular(4),
                               ),
                               child: Text(
-                                l10n.required,
+                                'Required',
                                 style: TextStyle(
                                   color: Colors.red.shade700,
                                   fontSize: 10,
@@ -176,7 +172,7 @@ class _FormBuilderState extends State<FormBuilder> {
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        _getFieldTypeDisplayName(field.type, l10n),
+                        _getFieldTypeDisplayName(field.type),
                         style: TextStyle(
                           color: Colors.grey.shade600,
                           fontSize: 12,
@@ -191,12 +187,12 @@ class _FormBuilderState extends State<FormBuilder> {
                     IconButton(
                       onPressed: () => _editField(field, index),
                       icon: const Icon(Icons.edit, size: 20),
-                      tooltip: l10n.editField,
+                      tooltip: 'Edit Field',
                     ),
                     IconButton(
                       onPressed: () => _deleteField(index),
                       icon: const Icon(Icons.delete, size: 20),
-                      tooltip: l10n.deleteField,
+                      tooltip: 'Delete Field',
                     ),
                     const Icon(Icons.drag_handle, color: Colors.grey),
                   ],
@@ -222,8 +218,6 @@ class _FormBuilderState extends State<FormBuilder> {
   }
 
   Widget _buildFieldPreview(CustomFormField field) {
-    final l10n = AppLocalizations.of(context)!;
-
     switch (field.type) {
       case CustomFormFieldType.text:
       case CustomFormFieldType.email:
@@ -232,7 +226,7 @@ class _FormBuilderState extends State<FormBuilder> {
           enabled: false,
           decoration: InputDecoration(
             labelText: field.label,
-            hintText: field.placeholder ?? l10n.enterText,
+            hintText: field.placeholder ?? 'Enter text',
             border: const OutlineInputBorder(),
           ),
         );
@@ -243,7 +237,7 @@ class _FormBuilderState extends State<FormBuilder> {
           maxLines: 3,
           decoration: InputDecoration(
             labelText: field.label,
-            hintText: field.placeholder ?? l10n.enterText,
+            hintText: field.placeholder ?? 'Enter text',
             border: const OutlineInputBorder(),
           ),
         );
@@ -253,7 +247,7 @@ class _FormBuilderState extends State<FormBuilder> {
           enabled: false,
           decoration: InputDecoration(
             labelText: field.label,
-            hintText: l10n.enterNumber,
+            hintText: 'Enter number',
             border: const OutlineInputBorder(),
             suffixText: field.minValue != null && field.maxValue != null
                 ? '${field.minValue}-${field.maxValue}'
@@ -326,7 +320,7 @@ class _FormBuilderState extends State<FormBuilder> {
           enabled: false,
           decoration: InputDecoration(
             labelText: field.label,
-            hintText: l10n.selectDate,
+            hintText: 'Select date',
             border: const OutlineInputBorder(),
             suffixIcon: const Icon(Icons.calendar_today),
           ),
@@ -337,7 +331,7 @@ class _FormBuilderState extends State<FormBuilder> {
           enabled: false,
           decoration: InputDecoration(
             labelText: field.label,
-            hintText: l10n.selectTime,
+            hintText: 'Select time',
             border: const OutlineInputBorder(),
             suffixIcon: const Icon(Icons.access_time),
           ),
@@ -348,14 +342,11 @@ class _FormBuilderState extends State<FormBuilder> {
           enabled: false,
           decoration: InputDecoration(
             labelText: field.label,
-            hintText: l10n.selectDateTime,
+            hintText: 'Select date and time',
             border: const OutlineInputBorder(),
             suffixIcon: const Icon(Icons.event),
           ),
         );
-
-      default:
-        return Container();
     }
   }
 
@@ -387,33 +378,32 @@ class _FormBuilderState extends State<FormBuilder> {
     }
   }
 
-  String _getFieldTypeDisplayName(
-      CustomFormFieldType type, AppLocalizations l10n) {
+  String _getFieldTypeDisplayName(CustomFormFieldType type) {
     switch (type) {
       case CustomFormFieldType.text:
-        return l10n.textField;
+        return 'Text Field';
       case CustomFormFieldType.textarea:
-        return l10n.textAreaField;
+        return 'Text Area Field';
       case CustomFormFieldType.number:
-        return l10n.numberField;
+        return 'Number Field';
       case CustomFormFieldType.email:
-        return l10n.emailField;
+        return 'Email Field';
       case CustomFormFieldType.phone:
-        return l10n.phoneField;
+        return 'Phone Field';
       case CustomFormFieldType.choice:
-        return l10n.choiceField;
+        return 'Choice Field';
       case CustomFormFieldType.multiselect:
-        return l10n.multiselectField;
+        return 'Multi-select Field';
       case CustomFormFieldType.date:
-        return l10n.dateField;
+        return 'Date Field';
       case CustomFormFieldType.time:
-        return l10n.timeField;
+        return 'Time Field';
       case CustomFormFieldType.datetime:
-        return l10n.dateTimeField;
+        return 'Date & Time Field';
       case CustomFormFieldType.boolean:
-        return l10n.booleanField;
+        return 'Boolean Field';
       case CustomFormFieldType.rating:
-        return l10n.ratingField;
+        return 'Rating Field';
     }
   }
 
@@ -426,17 +416,15 @@ class _FormBuilderState extends State<FormBuilder> {
   }
 
   void _deleteField(int index) {
-    final l10n = AppLocalizations.of(context)!;
-
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text(l10n.deleteField),
-        content: Text(l10n.deleteFieldConfirmation),
+        title: const Text('Delete Field'),
+        content: const Text('Are you sure you want to delete this field?'),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: Text(l10n.cancel),
+            child: const Text('Cancel'),
           ),
           TextButton(
             onPressed: () {
@@ -447,7 +435,7 @@ class _FormBuilderState extends State<FormBuilder> {
                 widget.onFieldsChanged(_fields);
               });
             },
-            child: Text(l10n.delete),
+            child: const Text('Delete'),
           ),
         ],
       ),
@@ -550,7 +538,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
     final l10n = AppLocalizations.of(context)!;
 
     return AlertDialog(
-      title: Text(widget.field == null ? l10n.addField : l10n.editField),
+      title: Text(widget.field == null ? 'Add Field' : 'Edit Field'),
       content: SizedBox(
         width: double.maxFinite,
         child: Form(
@@ -563,14 +551,14 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                 DropdownButtonFormField<CustomFormFieldType>(
                   value: _selectedType,
                   decoration: InputDecoration(
-                    labelText: l10n.fieldType,
+                    labelText: 'Field Type',
                     border: const OutlineInputBorder(),
                   ),
                   items: CustomFormFieldType.values
                       .map(
                         (type) => DropdownMenuItem(
                           value: type,
-                          child: Text(_getFieldTypeDisplayName(type, l10n)),
+                          child: Text(_getFieldTypeDisplayName(type)),
                         ),
                       )
                       .toList(),
@@ -586,12 +574,12 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                 TextFormField(
                   controller: _labelController,
                   decoration: InputDecoration(
-                    labelText: l10n.fieldLabel,
+                    labelText: 'Field Label',
                     border: const OutlineInputBorder(),
                   ),
                   validator: (value) {
                     if (value == null || value.trim().isEmpty) {
-                      return l10n.fieldLabelRequired;
+                      return 'Field Label (Required)';
                     }
                     return null;
                   },
@@ -602,7 +590,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                 TextFormField(
                   controller: _descriptionController,
                   decoration: InputDecoration(
-                    labelText: '${l10n.description} (${l10n.optional})',
+                    labelText: 'Description (Optional)',
                     border: const OutlineInputBorder(),
                   ),
                   maxLines: 2,
@@ -618,7 +606,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                   TextFormField(
                     controller: _placeholderController,
                     decoration: InputDecoration(
-                      labelText: '${l10n.placeholder} (${l10n.optional})',
+                      labelText: 'Placeholder (Optional)',
                       border: const OutlineInputBorder(),
                     ),
                   ),
@@ -627,7 +615,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
 
                 // Required toggle
                 CheckboxListTile(
-                  title: Text(l10n.requiredField),
+                  title: const Text('Required Field'),
                   value: _isRequired,
                   onChanged: (value) {
                     setState(() {
@@ -647,11 +635,11 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.of(context).pop(),
-          child: Text(l10n.cancel),
+          child: const Text('Cancel'),
         ),
         ElevatedButton(
           onPressed: _saveField,
-          child: Text(l10n.save),
+          child: const Text('Save'),
         ),
       ],
     );
@@ -662,8 +650,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
       case CustomFormFieldType.choice:
       case CustomFormFieldType.multiselect:
         return [
-          Text(l10n.options,
-              style: const TextStyle(fontWeight: FontWeight.bold)),
+          Text('Options', style: const TextStyle(fontWeight: FontWeight.bold)),
           const SizedBox(height: 8),
           Row(
             children: [
@@ -671,7 +658,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                 child: TextFormField(
                   controller: _optionController,
                   decoration: InputDecoration(
-                    labelText: l10n.addOption,
+                    labelText: 'Add Option',
                     border: const OutlineInputBorder(),
                   ),
                   onFieldSubmitted: (_) => _addOption(),
@@ -680,7 +667,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
               const SizedBox(width: 8),
               ElevatedButton(
                 onPressed: _addOption,
-                child: Text(l10n.add),
+                child: const Text('Add'),
               ),
             ],
           ),
@@ -714,7 +701,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                 child: TextFormField(
                   controller: _minValueController,
                   decoration: InputDecoration(
-                    labelText: l10n.minValue,
+                    labelText: 'Minimum Value',
                     border: const OutlineInputBorder(),
                   ),
                   keyboardType: TextInputType.number,
@@ -726,7 +713,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                 child: TextFormField(
                   controller: _maxValueController,
                   decoration: InputDecoration(
-                    labelText: l10n.maxValue,
+                    labelText: 'Maximum Value',
                     border: const OutlineInputBorder(),
                   ),
                   keyboardType: TextInputType.number,
@@ -746,7 +733,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                 child: TextFormField(
                   controller: _minLengthController,
                   decoration: InputDecoration(
-                    labelText: l10n.minLength,
+                    labelText: 'Minimum Length',
                     border: const OutlineInputBorder(),
                   ),
                   keyboardType: TextInputType.number,
@@ -758,7 +745,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
                 child: TextFormField(
                   controller: _maxLengthController,
                   decoration: InputDecoration(
-                    labelText: l10n.maxLength,
+                    labelText: 'Maximum Length',
                     border: const OutlineInputBorder(),
                   ),
                   keyboardType: TextInputType.number,
@@ -771,7 +758,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
           TextFormField(
             controller: _validationPatternController,
             decoration: InputDecoration(
-              labelText: '${l10n.validationPattern} (${l10n.optional})',
+              labelText: 'Validation Pattern (Optional)',
               border: const OutlineInputBorder(),
               hintText: 'RegEx pattern',
             ),
@@ -780,7 +767,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
           TextFormField(
             controller: _validationMessageController,
             decoration: InputDecoration(
-              labelText: '${l10n.validationMessage} (${l10n.optional})',
+              labelText: 'Validation Message (Optional)',
               border: const OutlineInputBorder(),
             ),
           ),
@@ -807,33 +794,32 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
     });
   }
 
-  String _getFieldTypeDisplayName(
-      CustomFormFieldType type, AppLocalizations l10n) {
+  String _getFieldTypeDisplayName(CustomFormFieldType type) {
     switch (type) {
       case CustomFormFieldType.text:
-        return l10n.textField;
+        return 'Text Field';
       case CustomFormFieldType.textarea:
-        return l10n.textAreaField;
+        return 'Text Area Field';
       case CustomFormFieldType.number:
-        return l10n.numberField;
+        return 'Number Field';
       case CustomFormFieldType.email:
-        return l10n.emailField;
+        return 'Email Field';
       case CustomFormFieldType.phone:
-        return l10n.phoneField;
+        return 'Phone Field';
       case CustomFormFieldType.choice:
-        return l10n.choiceField;
+        return 'Choice Field';
       case CustomFormFieldType.multiselect:
-        return l10n.multiselectField;
+        return 'Multi-select Field';
       case CustomFormFieldType.date:
-        return l10n.dateField;
+        return 'Date Field';
       case CustomFormFieldType.time:
-        return l10n.timeField;
+        return 'Time Field';
       case CustomFormFieldType.datetime:
-        return l10n.dateTimeField;
+        return 'Date & Time Field';
       case CustomFormFieldType.boolean:
-        return l10n.booleanField;
+        return 'Boolean Field';
       case CustomFormFieldType.rating:
-        return l10n.ratingField;
+        return 'Rating Field';
     }
   }
 
@@ -845,7 +831,7 @@ class _FieldEditorDialogState extends State<FieldEditorDialog> {
             _selectedType == CustomFormFieldType.multiselect) &&
         _options.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(AppLocalizations.of(context)!.optionsRequired)),
+        const SnackBar(content: Text('Options are required for choice fields')),
       );
       return;
     }

@@ -19,13 +19,18 @@ final FutureProviderFamily<void, AdminBroadcastMessage>
 final userBroadcastMessagesProvider =
     FutureProvider<List<AdminBroadcastMessage>>((ref) async {
   final service = ref.read(adminBroadcastServiceProvider);
-  final userProfile = await ref.read(userProfileProvider.future);
+  final userProfileAsync = ref.watch(currentUserProfileProvider);
 
-  if (userProfile == null) {
-    throw Exception('User profile not found');
-  }
-
-  return service.getMessagesForUser(userProfile);
+  return userProfileAsync.when(
+    data: (userProfile) async {
+      if (userProfile == null) {
+        throw Exception('User profile not found');
+      }
+      return service.getMessagesForUser(userProfile);
+    },
+    loading: () async => [],
+    error: (error, stack) async => [],
+  );
 });
 
 /// Provider for getting all broadcast messages (admin only)

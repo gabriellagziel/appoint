@@ -161,7 +161,7 @@ class _InlineErrorFormFieldState extends State<InlineErrorFormField>
                 ),
                 filled: true,
                 fillColor: hasError
-                    ? theme.colorScheme.error.withOpacity(0.05)
+                    ? theme.colorScheme.error.withValues(alpha: 0.05)
                     : theme.colorScheme.surface,
               ),
             ),
@@ -347,7 +347,7 @@ class _InlineErrorPasswordFieldState extends State<InlineErrorPasswordField> {
             ),
             filled: true,
             fillColor: hasError
-                ? theme.colorScheme.error.withOpacity(0.05)
+                ? theme.colorScheme.error.withValues(alpha: 0.05)
                 : theme.colorScheme.surface,
           ),
         ),
@@ -482,7 +482,7 @@ class _InlineErrorEmailFieldState extends State<InlineErrorEmailField> {
             ),
             filled: true,
             fillColor: hasError
-                ? theme.colorScheme.error.withOpacity(0.05)
+                ? theme.colorScheme.error.withValues(alpha: 0.05)
                 : theme.colorScheme.surface,
           ),
         ),
@@ -623,7 +623,7 @@ class _InlineErrorPhoneFieldState extends State<InlineErrorPhoneField> {
             ),
             filled: true,
             fillColor: hasError
-                ? theme.colorScheme.error.withOpacity(0.05)
+                ? theme.colorScheme.error.withValues(alpha: 0.05)
                 : theme.colorScheme.surface,
           ),
         ),

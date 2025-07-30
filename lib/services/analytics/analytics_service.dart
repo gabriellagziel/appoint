@@ -31,7 +31,7 @@ class AnalyticsService {
   }) async {
     await _analytics.logEvent(
       name: action,
-      parameters: parameters,
+      parameters: parameters?.cast<String, Object>(),
     );
   }
 
@@ -123,17 +123,36 @@ class AnalyticsService {
   }
 
   // Track onboarding events
+  Future<void> trackOnboardingStart() async {
+    await _analytics.logEvent(
+      name: 'onboarding_started',
+      parameters: {
+        'timestamp': DateTime.now().millisecondsSinceEpoch,
+      },
+    );
+  }
+
   Future<void> trackOnboardingStep({
-    required String step,
+    required String stepName,
     required int stepNumber,
-    int? totalSteps,
+    required int totalSteps,
   }) async {
     await _analytics.logEvent(
       name: 'onboarding_step_completed',
       parameters: {
-        'step': step,
+        'step': stepName,
         'step_number': stepNumber,
-        if (totalSteps != null) 'total_steps': totalSteps,
+        'total_steps': totalSteps,
+        'timestamp': DateTime.now().millisecondsSinceEpoch,
+      },
+    );
+  }
+
+  Future<void> trackOnboardingComplete({int? totalTimeSeconds}) async {
+    await _analytics.logEvent(
+      name: 'onboarding_completed',
+      parameters: {
+        if (totalTimeSeconds != null) 'total_time_seconds': totalTimeSeconds,
         'timestamp': DateTime.now().millisecondsSinceEpoch,
       },
     );
@@ -288,7 +307,7 @@ class AnalyticsService {
       name: 'app_lifecycle',
       parameters: {
         'event': event,
-        if (parameters != null) ...parameters,
+        if (parameters != null) ...parameters.cast<String, Object>(),
         'timestamp': DateTime.now().millisecondsSinceEpoch,
       },
     );
@@ -352,7 +371,17 @@ class AnalyticsService {
   }) async {
     await _analytics.logEvent(
       name: name,
-      parameters: parameters,
+      parameters: parameters?.cast<String, Object>(),
+    );
+  }
+
+  Future<void> trackEvent(
+    String action,
+    Map<String, dynamic>? parameters,
+  ) async {
+    await _analytics.logEvent(
+      name: action,
+      parameters: parameters?.cast<String, Object>(),
     );
   }
 

@@ -1,6 +1,6 @@
 import 'package:appoint/config/theme.dart';
 import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/services/analytics_service.dart';
+import 'package:appoint/services/analytics/analytics_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -13,7 +13,8 @@ class PlaytimeLandingScreen extends ConsumerWidget {
     final l10n = AppLocalizations.of(context)!;
 
     // Track screen view
-    AnalyticsService.logScreenView('PlaytimeLandingScreen');
+    AnalyticsService.instance
+        .trackScreenView(screenName: 'PlaytimeLandingScreen');
 
     return Scaffold(
       body: Container(
@@ -113,9 +114,9 @@ class PlaytimeLandingScreen extends ConsumerWidget {
             icon: Icons.computer,
             color: AppTheme.secondaryColor,
             onTap: () {
-              AnalyticsService.logEvent(
-                'playtime_option_selected',
-                params: {
+              AnalyticsService.instance.trackUserAction(
+                action: 'playtime_option_selected',
+                parameters: {
                   'option_type': 'virtual',
                   'location': 'landing_screen',
                 },
@@ -133,9 +134,9 @@ class PlaytimeLandingScreen extends ConsumerWidget {
             icon: Icons.people,
             color: AppTheme.accentColor,
             onTap: () {
-              AnalyticsService.logEvent(
-                'playtime_option_selected',
-                params: {
+              AnalyticsService.instance.trackUserAction(
+                action: 'playtime_option_selected',
+                parameters: {
                   'option_type': 'live',
                   'location': 'landing_screen',
                 },

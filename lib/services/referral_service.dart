@@ -20,12 +20,12 @@ class ReferralService {
       return data['code'] as String;
     }
 
-    String code;
+    String code = '';
     var exists = true;
     final random = Random();
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     do {
-      final code =
+      code =
           List.generate(8, (_) => chars[random.nextInt(chars.length)]).join();
       final query = await _firestore
           .collection('referrals')

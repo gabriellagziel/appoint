@@ -17,9 +17,9 @@ class StudioAppointmentsNotifier
   Future<void> load() async {
     try {
       final data = await _service.fetchAppointments();
-      final state = AsyncValue.data(data);
-    } catch (e) {
-      final state = AsyncValue.error(e, st);
+      state = AsyncValue.data(data);
+    } catch (e, stackTrace) {
+      state = AsyncValue.error(e, stackTrace);
     }
   }
 

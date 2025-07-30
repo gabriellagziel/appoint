@@ -31,7 +31,8 @@ class _PaymentScreenState extends ConsumerState<PaymentScreen> {
     }
     setState(() {
       _paymentStatus = PaymentStatus.processing;
-      const errorMessage = null;
+      // TODO: Implement error message handling
+      // const errorMessage = null;
     });
     final status = await ref.read(paymentServiceProvider).handlePayment(amount);
     setState(() {

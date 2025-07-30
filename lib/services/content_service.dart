@@ -15,9 +15,10 @@ class ContentService {
     final DocumentSnapshot<Map<String, dynamic>>? startAfter,
     final int limit = 20,
   }) {
-    final query = _col.orderBy('createdAt', descending: true).limit(limit);
+    Query<Map<String, dynamic>> query =
+        _col.orderBy('createdAt', descending: true).limit(limit);
     if (startAfter != null) {
-      final query = query.startAfterDocument(startAfter);
+      query = query.startAfterDocument(startAfter);
     }
     return query.get();
   }

@@ -1,5 +1,4 @@
-import 'package:appoint/models/payment.dart';
-import 'package:appoint/models/subscription.dart';
+import 'package:appoint/features/subscriptions/models/subscription.dart';
 import 'package:appoint/services/api/api_client.dart';
 
 class PaymentApiService {
@@ -7,7 +6,7 @@ class PaymentApiService {
   static final PaymentApiService _instance = PaymentApiService._();
   static PaymentApiService get instance => _instance;
 
-  // Get available subscription plans
+  // Get subscription plans
   Future<List<SubscriptionPlan>> getSubscriptionPlans() async {
     try {
       final response = await ApiClient.instance.get<Map<String, dynamic>>(
@@ -15,7 +14,10 @@ class PaymentApiService {
       );
 
       final plans = response['plans'] as List;
-      return plans.map(SubscriptionPlan.fromJson).toList();
+      return plans
+          .map(
+              (plan) => SubscriptionPlan.fromJson(plan as Map<String, dynamic>))
+          .toList();
     } catch (e) {
       rethrow;
     }
@@ -258,7 +260,7 @@ class PaymentApiService {
   }
 
   // Process payment
-  Future<Payment> processPayment({
+  Future<Map<String, dynamic>> processPayment({
     required double amount,
     required String currency,
     required String paymentMethodId,
@@ -277,27 +279,115 @@ class PaymentApiService {
         },
       );
 
-      return Payment.fromJson(response);
+      return response;
     } catch (e) {
       rethrow;
     }
   }
 
-  // Get payment status
-  Future<Payment> getPaymentStatus(String paymentId) async {
+  // Get payment history
+  Future<List<Map<String, dynamic>>> getPaymentHistory({
+    String? status,
+    DateTime? fromDate,
+    DateTime? toDate,
+    int? limit,
+    int? offset,
+  }) async {
+    try {
+      final queryParams = <String, dynamic>{};
+      if (status != null) queryParams['status'] = status;
+      if (fromDate != null)
+        queryParams['fromDate'] = fromDate.toIso8601String();
+      if (toDate != null) queryParams['toDate'] = toDate.toIso8601String();
+      if (limit != null) queryParams['limit'] = limit;
+      if (offset != null) queryParams['offset'] = offset;
+
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/payments',
+        queryParameters: queryParams,
+      );
+
+      return (response['payments'] as List)
+          .map((payment) => payment as Map<String, dynamic>)
+          .toList();
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Get payment details
+  Future<Map<String, dynamic>> getPayment(String paymentId) async {
     try {
       final response = await ApiClient.instance.get<Map<String, dynamic>>(
         '/payments/$paymentId',
       );
 
-      return Payment.fromJson(response);
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Create payment
+  Future<Map<String, dynamic>> createPayment({
+    required double amount,
+    required String currency,
+    required String paymentMethodId,
+    String? description,
+    Map<String, dynamic>? metadata,
+  }) async {
+    try {
+      final response = await ApiClient.instance.post<Map<String, dynamic>>(
+        '/payments',
+        data: {
+          'amount': amount,
+          'currency': currency,
+          'paymentMethodId': paymentMethodId,
+          'description': description,
+          'metadata': metadata,
+        },
+      );
+
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Update payment
+  Future<Map<String, dynamic>> updatePayment({
+    required String paymentId,
+    Map<String, dynamic>? metadata,
+    String? description,
+  }) async {
+    try {
+      final response = await ApiClient.instance.put<Map<String, dynamic>>(
+        '/payments/$paymentId',
+        data: {
+          'metadata': metadata,
+          'description': description,
+        },
+      );
+
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Cancel payment
+  Future<void> cancelPayment(String paymentId) async {
+    try {
+      await ApiClient.instance.post<Map<String, dynamic>>(
+        '/payments/$paymentId/cancel',
+      );
     } catch (e) {
       rethrow;
     }
   }
 
   // Refund payment
-  Future<Payment> refundPayment({
+  Future<Map<String, dynamic>> refundPayment({
     required String paymentId,
     double? amount,
     String? reason,
@@ -306,12 +396,12 @@ class PaymentApiService {
       final response = await ApiClient.instance.post<Map<String, dynamic>>(
         '/payments/$paymentId/refund',
         data: {
-          if (amount != null) 'amount': amount,
-          if (reason != null) 'reason': reason,
+          'amount': amount,
+          'reason': reason,
         },
       );
 
-      return Payment.fromJson(response);
+      return response;
     } catch (e) {
       rethrow;
     }

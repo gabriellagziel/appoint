@@ -44,7 +44,7 @@ class AppAttribution extends StatelessWidget {
                 'Powered by',
                 style: TextStyle(
                   fontSize: fontSize * 0.8,
-                  color: effectiveTextColor?.withOpacity(0.7),
+                  color: effectiveTextColor?.withValues(alpha: 0.7),
                   fontWeight: FontWeight.w400,
                 ),
               ),

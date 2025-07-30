@@ -1,6 +1,4 @@
-import 'package:appoint/models/business.dart';
-import 'package:appoint/models/professional.dart';
-import 'package:appoint/models/service.dart';
+import 'package:appoint/models/service_offering.dart';
 import 'package:appoint/services/api/api_client.dart';
 
 class SearchApiService {
@@ -194,21 +192,21 @@ class SearchApiService {
   }
 
   // Get nearby services
-  Future<List<Service>> getNearbyServices({
+  Future<List<ServiceOffering>> getNearbyServices({
     required double latitude,
     required double longitude,
     double? radius,
-    String? category,
-    int? limit,
+    List<String>? categories,
+    List<String>? serviceIds,
   }) async {
     try {
       final queryParams = <String, dynamic>{
-        'lat': latitude,
-        'lng': longitude,
-        if (radius != null) 'radius': radius,
-        if (category != null) 'category': category,
-        if (limit != null) 'limit': limit,
+        'latitude': latitude,
+        'longitude': longitude,
       };
+      if (radius != null) queryParams['radius'] = radius;
+      if (categories != null) queryParams['categories'] = categories.join(',');
+      if (serviceIds != null) queryParams['services'] = serviceIds.join(',');
 
       final response = await ApiClient.instance.get<Map<String, dynamic>>(
         '/search/nearby/services',
@@ -216,7 +214,10 @@ class SearchApiService {
       );
 
       final services = response['services'] as List;
-      return services.map(Service.fromJson).toList();
+      return services
+          .map((service) =>
+              ServiceOffering.fromJson(service as Map<String, dynamic>))
+          .toList();
     } catch (e) {
       rethrow;
     }

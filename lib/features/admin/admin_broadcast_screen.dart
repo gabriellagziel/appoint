@@ -680,8 +680,8 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
       if (pickedFile != null) {
         setState(() {
-          final selectedImage = File(pickedFile.path);
-          const selectedVideo = null; // Clear video if image is selected
+          _selectedImage = File(pickedFile.path);
+          _selectedVideo = null; // Clear video if image is selected
         });
       }
     } catch (e) {
@@ -708,8 +708,8 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
       if (pickedFile != null) {
         setState(() {
-          final selectedVideo = File(pickedFile.path);
-          const selectedImage = null; // Clear image if video is selected
+          _selectedVideo = File(pickedFile.path);
+          _selectedImage = null; // Clear image if video is selected
         });
       }
     } catch (e) {
@@ -730,7 +730,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   void _clearMedia() {
     setState(() {
       _selectedImage = null;
-      const selectedVideo = null;
+      _selectedVideo = null;
     });
   }
 
@@ -767,7 +767,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
       if (_selectedImage != null) {
         try {
-          final imageUrl = await FirebaseStorageService.instance
+          imageUrl = await FirebaseStorageService.instance
               .uploadBroadcastImage(_selectedImage!);
         } catch (e) {
           throw Exception(
@@ -777,7 +777,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
       if (_selectedVideo != null) {
         try {
-          final videoUrl = await FirebaseStorageService.instance
+          videoUrl = await FirebaseStorageService.instance
               .uploadBroadcastVideo(_selectedVideo!);
         } catch (e) {
           throw Exception(
@@ -928,7 +928,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
               if (message.openedCount != null)
                 Text(l10n.opened(message.openedCount!)),
               if (message.clickedCount != null)
-                Text(l10n.clicked(message.clickedCount!.toString(), '')),
+                Text(l10n.clicked('Clicked', message.clickedCount!)),
               const SizedBox(height: 8),
               Text(l10n.created(message.createdAt.toIso8601String(), '')),
               if (message.scheduledFor != null)

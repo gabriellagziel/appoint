@@ -1,5 +1,5 @@
 // ignore_for_file: prefer_const_constructors
-import 'package:appoint/services/analytics_service.dart';
+import 'package:appoint/services/analytics/analytics_service.dart';
 import 'package:appoint/utils/admin_localizations.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
@@ -17,12 +17,12 @@ class AdminMetricsDashboard extends ConsumerStatefulWidget {
 class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
     with TickerProviderStateMixin {
   late TabController _tabController;
-  final AnalyticsService _analyticsService = AnalyticsService();
+  final AnalyticsService _analyticsService = AnalyticsService.instance;
 
   @override
   void initState() {
     super.initState();
-    final tabController = TabController(length: 4, vsync: this);
+    _tabController = TabController(length: 4, vsync: this);
     _loadMetrics();
   }
 
@@ -35,8 +35,10 @@ class _AdminMetricsDashboardState extends ConsumerState<AdminMetricsDashboard>
   Future<void> _loadMetrics() async {
     // Track dashboard view
     await _analyticsService.trackFeatureUsage(
-      featureName: 'admin_metrics_dashboard',
-      screenName: 'AdminMetricsDashboard',
+      feature: 'admin_metrics_dashboard',
+      parameters: {
+        'screen_name': 'AdminMetricsDashboard',
+      },
     );
   }
 

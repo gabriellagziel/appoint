@@ -54,15 +54,15 @@ class ChildSettingsNotifier extends StateNotifier<ChildSettings> {
         );
 
   void togglePlaytime(bool value) {
-    final state = state.copyWith(playtimeEnabled: value);
+    state = state.copyWith(playtimeEnabled: value);
   }
 
   void toggleNotifications(bool value) {
-    final state = state.copyWith(notificationsEnabled: value);
+    state = state.copyWith(notificationsEnabled: value);
   }
 
   void toggleContentFilter(bool value) {
-    final state = state.copyWith(contentFilterEnabled: value);
+    state = state.copyWith(contentFilterEnabled: value);
   }
 }
 

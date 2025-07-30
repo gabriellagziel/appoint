@@ -34,10 +34,10 @@ void main() async {
     }
 
     // Initialize notification service
-    await NotificationService.initialize();
+    final notificationService = NotificationService();
+    await notificationService.initialize();
 
     // Request notification permissions on startup (Android only for now)
-    final notificationService = NotificationService();
     await notificationService.requestPermissions();
 
     // Set system UI overlay style

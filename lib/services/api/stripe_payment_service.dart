@@ -1,105 +1,58 @@
-import 'package:appoint/models/payment.dart';
-import 'package:appoint/models/subscription.dart';
+import 'package:appoint/features/subscriptions/models/subscription.dart';
 import 'package:appoint/services/api/api_client.dart';
-import 'package:stripe_platform_interface/stripe_platform_interface.dart';
+import 'package:flutter/material.dart';
 
 class StripePaymentService {
   StripePaymentService._();
   static final StripePaymentService _instance = StripePaymentService._();
   static StripePaymentService get instance => _instance;
 
+  // TODO: Replace with your Stripe publishable key
+  static const String _publishableKey = 'pk_test_your_stripe_key_here';
+
   // Initialize Stripe
   Future<void> initialize() async {
-    // TODO: Replace with your Stripe publishable key
-    await Stripe.instance.initialise(
-      publishableKey: 'pk_test_your_stripe_publishable_key_here',
-    );
+    // Stripe initialization would go here
+    debugPrint('Stripe initialized with key: $_publishableKey');
   }
 
   // Create payment intent
-  Future<PaymentIntent> createPaymentIntent({
+  Future<Map<String, dynamic>> createPaymentIntent({
     required double amount,
     required String currency,
-    String? description,
-    Map<String, dynamic>? metadata,
-  }) async {
-    try {
-      final response = await ApiClient.instance.post<Map<String, dynamic>>(
-        '/payments/create-intent',
-        data: {
-          'amount': (amount * 100).round(), // Convert to cents
-          'currency': currency,
-          if (description != null) 'description': description,
-          if (metadata != null) 'metadata': metadata,
-        },
-      );
-
-      return PaymentIntent.fromJson(response);
-    } catch (e) {
-      rethrow;
-    }
-  }
-
-  // Process payment with card
-  Future<PaymentResult> processPayment({
-    required String paymentIntentId,
-    required String paymentMethodId,
-  }) async {
-    try {
-      // Confirm payment with Stripe
-      final paymentResult = await Stripe.instance.confirmPayment(
-        paymentIntentId,
-        const PaymentMethodParams.card(
-          paymentMethodData: PaymentMethodData(
-            billingDetails: BillingDetails(),
-          ),
-        ),
-      );
-
-      if (paymentResult.status == PaymentIntentsStatus.Succeeded) {
-        // Update payment status on backend
-        await ApiClient.instance.post<Map<String, dynamic>>(
-          '/payments/confirm',
-          data: {
-            'paymentIntentId': paymentIntentId,
-            'status': 'succeeded',
-          },
-        );
-
-        return PaymentResult(
-          success: true,
-          paymentId: paymentResult.paymentIntentId,
-          status: 'succeeded',
-        );
-      } else {
-        return PaymentResult(
-          success: false,
-          error: paymentResult.error?.message ?? 'Payment failed',
-        );
-      }
-    } catch (e) {
-      return PaymentResult(
-        success: false,
-        error: e.toString(),
-      );
-    }
-  }
-
-  // Create subscription
-  Future<Subscription> createSubscription({
-    required String planId,
-    required String paymentMethodId,
     String? customerId,
     Map<String, dynamic>? metadata,
   }) async {
     try {
       final response = await ApiClient.instance.post<Map<String, dynamic>>(
-        '/subscriptions/create',
+        '/stripe/payment-intents',
         data: {
-          'planId': planId,
-          'paymentMethodId': paymentMethodId,
-          if (customerId != null) 'customerId': customerId,
-          if (metadata != null) 'metadata': metadata,
+          'amount': (amount * 100).round(), // Convert to cents
+          'currency': currency,
+          'customer_id': customerId,
+          'metadata': metadata,
+        },
+      );
+
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Create subscription
+  Future<Subscription> createSubscription({
+    required String customerId,
+    required String priceId,
+    Map<String, dynamic>? metadata,
+  }) async {
+    try {
+      final response = await ApiClient.instance.post<Map<String, dynamic>>(
+        '/stripe/subscriptions',
+        data: {
+          'customer_id': customerId,
+          'price_id': priceId,
+          'metadata': metadata,
         },
       );
 
@@ -109,21 +62,11 @@ class StripePaymentService {
     }
   }
 
-  // Update subscription
-  Future<Subscription> updateSubscription({
-    required String subscriptionId,
-    String? planId,
-    String? paymentMethodId,
-    Map<String, dynamic>? metadata,
-  }) async {
+  // Get subscription
+  Future<Subscription> getSubscription(String subscriptionId) async {
     try {
-      final response = await ApiClient.instance.put<Map<String, dynamic>>(
-        '/subscriptions/$subscriptionId',
-        data: {
-          if (planId != null) 'planId': planId,
-          if (paymentMethodId != null) 'paymentMethodId': paymentMethodId,
-          if (metadata != null) 'metadata': metadata,
-        },
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/stripe/subscriptions/$subscriptionId',
       );
 
       return Subscription.fromJson(response);
@@ -133,24 +76,52 @@ class StripePaymentService {
   }
 
   // Cancel subscription
-  Future<void> cancelSubscription({
-    required String subscriptionId,
-    bool? atPeriodEnd,
-  }) async {
+  Future<void> cancelSubscription(String subscriptionId) async {
     try {
       await ApiClient.instance.post<Map<String, dynamic>>(
-        '/subscriptions/$subscriptionId/cancel',
-        data: {
-          if (atPeriodEnd != null) 'atPeriodEnd': atPeriodEnd,
-        },
+        '/stripe/subscriptions/$subscriptionId/cancel',
       );
     } catch (e) {
       rethrow;
     }
   }
 
+  // Update subscription
+  Future<Subscription> updateSubscription({
+    required String subscriptionId,
+    String? priceId,
+    Map<String, dynamic>? metadata,
+  }) async {
+    try {
+      final response = await ApiClient.instance.put<Map<String, dynamic>>(
+        '/stripe/subscriptions/$subscriptionId',
+        data: {
+          'price_id': priceId,
+          'metadata': metadata,
+        },
+      );
+
+      return Subscription.fromJson(response);
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Get customer
+  Future<Map<String, dynamic>> getCustomer(String customerId) async {
+    try {
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/stripe/customers/$customerId',
+      );
+
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
   // Create customer
-  Future<StripeCustomer> createCustomer({
+  Future<Map<String, dynamic>> createCustomer({
     required String email,
     String? name,
     String? phone,
@@ -158,50 +129,95 @@ class StripePaymentService {
   }) async {
     try {
       final response = await ApiClient.instance.post<Map<String, dynamic>>(
-        '/customers',
+        '/stripe/customers',
         data: {
           'email': email,
-          if (name != null) 'name': name,
-          if (phone != null) 'phone': phone,
-          if (metadata != null) 'metadata': metadata,
+          'name': name,
+          'phone': phone,
+          'metadata': metadata,
         },
       );
 
-      return StripeCustomer.fromJson(response);
+      return response;
     } catch (e) {
       rethrow;
     }
   }
 
-  // Add payment method
-  Future<PaymentMethod> addPaymentMethod({
+  // Update customer
+  Future<Map<String, dynamic>> updateCustomer({
     required String customerId,
-    required String paymentMethodId,
-    bool? setAsDefault,
+    String? email,
+    String? name,
+    String? phone,
+    Map<String, dynamic>? metadata,
   }) async {
     try {
-      final response = await ApiClient.instance.post<Map<String, dynamic>>(
-        '/customers/$customerId/payment-methods',
+      final response = await ApiClient.instance.put<Map<String, dynamic>>(
+        '/stripe/customers/$customerId',
         data: {
-          'paymentMethodId': paymentMethodId,
-          if (setAsDefault != null) 'setAsDefault': setAsDefault,
+          'email': email,
+          'name': name,
+          'phone': phone,
+          'metadata': metadata,
         },
       );
 
-      return PaymentMethod.fromJson(response);
+      return response;
     } catch (e) {
       rethrow;
     }
   }
 
-  // Remove payment method
-  Future<void> removePaymentMethod({
-    required String customerId,
-    required String paymentMethodId,
-  }) async {
+  // Delete customer
+  Future<void> deleteCustomer(String customerId) async {
     try {
       await ApiClient.instance.delete<Map<String, dynamic>>(
-        '/customers/$customerId/payment-methods/$paymentMethodId',
+        '/stripe/customers/$customerId',
+      );
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Get payment methods
+  Future<List<Map<String, dynamic>>> getPaymentMethods(
+      String customerId) async {
+    try {
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/stripe/customers/$customerId/payment-methods',
+      );
+
+      return (response['payment_methods'] as List)
+          .map((method) => method as Map<String, dynamic>)
+          .toList();
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Attach payment method
+  Future<void> attachPaymentMethod({
+    required String customerId,
+    required String paymentMethodId,
+  }) async {
+    try {
+      await ApiClient.instance.post<Map<String, dynamic>>(
+        '/stripe/customers/$customerId/payment-methods',
+        data: {
+          'payment_method_id': paymentMethodId,
+        },
+      );
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Detach payment method
+  Future<void> detachPaymentMethod(String paymentMethodId) async {
+    try {
+      await ApiClient.instance.delete<Map<String, dynamic>>(
+        '/stripe/payment-methods/$paymentMethodId',
       );
     } catch (e) {
       rethrow;
@@ -214,220 +230,266 @@ class StripePaymentService {
     required String paymentMethodId,
   }) async {
     try {
-      await ApiClient.instance.put<Map<String, dynamic>>(
-        '/customers/$customerId/payment-methods/$paymentMethodId/default',
+      await ApiClient.instance.post<Map<String, dynamic>>(
+        '/stripe/customers/$customerId/default-payment-method',
+        data: {
+          'payment_method_id': paymentMethodId,
+        },
       );
     } catch (e) {
       rethrow;
     }
   }
 
-  // Get customer payment methods
-  Future<List<PaymentMethod>> getCustomerPaymentMethods(
-      String customerId) async {
-    try {
-      final response = await ApiClient.instance.get<Map<String, dynamic>>(
-        '/customers/$customerId/payment-methods',
-      );
-
-      final methods = response['methods'] as List;
-      return methods.map((method) => PaymentMethod.fromJson(method)).toList();
-    } catch (e) {
-      rethrow;
-    }
-  }
-
-  // Create setup intent for adding payment methods
-  Future<SetupIntent> createSetupIntent({
+  // Create setup intent
+  Future<Map<String, dynamic>> createSetupIntent({
     required String customerId,
     String? paymentMethodType,
   }) async {
     try {
       final response = await ApiClient.instance.post<Map<String, dynamic>>(
-        '/setup-intents',
+        '/stripe/setup-intents',
         data: {
-          'customerId': customerId,
-          if (paymentMethodType != null) 'paymentMethodType': paymentMethodType,
+          'customer_id': customerId,
+          'payment_method_type': paymentMethodType,
         },
       );
 
-      return SetupIntent.fromJson(response);
+      return response;
     } catch (e) {
       rethrow;
     }
   }
 
   // Confirm setup intent
-  Future<SetupIntentResult> confirmSetupIntent({
+  Future<Map<String, dynamic>> confirmSetupIntent({
     required String setupIntentId,
-    required String paymentMethodId,
+    String? paymentMethodId,
   }) async {
     try {
-      final result = await Stripe.instance.confirmSetupIntent(
-        setupIntentId,
-        const PaymentMethodParams.card(
-          paymentMethodData: PaymentMethodData(
-            billingDetails: BillingDetails(),
-          ),
-        ),
+      final response = await ApiClient.instance.post<Map<String, dynamic>>(
+        '/stripe/setup-intents/$setupIntentId/confirm',
+        data: {
+          'payment_method_id': paymentMethodId,
+        },
       );
 
-      if (result.status == SetupIntentsStatus.Succeeded) {
-        return SetupIntentResult(
-          success: true,
-          setupIntentId: result.setupIntentId,
-          status: 'succeeded',
-        );
-      } else {
-        return SetupIntentResult(
-          success: false,
-          error: result.error?.message ?? 'Setup failed',
-        );
-      }
+      return response;
     } catch (e) {
-      return SetupIntentResult(
-        success: false,
-        error: e.toString(),
-      );
+      rethrow;
     }
   }
 
-  // Process refund
-  Future<Refund> processRefund({
-    required String paymentId,
-    double? amount,
+  // Get setup intent
+  Future<Map<String, dynamic>> getSetupIntent(String setupIntentId) async {
+    try {
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/stripe/setup-intents/$setupIntentId',
+      );
+
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Get payment intent
+  Future<Map<String, dynamic>> getPaymentIntent(String paymentIntentId) async {
+    try {
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/stripe/payment-intents/$paymentIntentId',
+      );
+
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Confirm payment intent
+  Future<Map<String, dynamic>> confirmPaymentIntent({
+    required String paymentIntentId,
+    String? paymentMethodId,
+  }) async {
+    try {
+      final response = await ApiClient.instance.post<Map<String, dynamic>>(
+        '/stripe/payment-intents/$paymentIntentId/confirm',
+        data: {
+          'payment_method_id': paymentMethodId,
+        },
+      );
+
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Cancel payment intent
+  Future<void> cancelPaymentIntent(String paymentIntentId) async {
+    try {
+      await ApiClient.instance.post<Map<String, dynamic>>(
+        '/stripe/payment-intents/$paymentIntentId/cancel',
+      );
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Get invoice
+  Future<Map<String, dynamic>> getInvoice(String invoiceId) async {
+    try {
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/stripe/invoices/$invoiceId',
+      );
+
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Pay invoice
+  Future<Map<String, dynamic>> payInvoice(String invoiceId) async {
+    try {
+      final response = await ApiClient.instance.post<Map<String, dynamic>>(
+        '/stripe/invoices/$invoiceId/pay',
+      );
+
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Get refund
+  Future<Map<String, dynamic>> getRefund(String refundId) async {
+    try {
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/stripe/refunds/$refundId',
+      );
+
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Create refund
+  Future<Map<String, dynamic>> createRefund({
+    required String paymentIntentId,
+    int? amount,
     String? reason,
   }) async {
     try {
       final response = await ApiClient.instance.post<Map<String, dynamic>>(
-        '/payments/$paymentId/refund',
+        '/stripe/refunds',
         data: {
-          if (amount != null) 'amount': (amount * 100).round(),
-          if (reason != null) 'reason': reason,
+          'payment_intent_id': paymentIntentId,
+          'amount': amount,
+          'reason': reason,
         },
       );
 
-      return Refund.fromJson(response);
+      return response;
     } catch (e) {
       rethrow;
     }
   }
 
-  // Get payment history
-  Future<List<Payment>> getPaymentHistory({
-    String? customerId,
+  // Get webhook events
+  Future<List<Map<String, dynamic>>> getWebhookEvents({
+    String? type,
+    DateTime? fromDate,
+    DateTime? toDate,
     int? limit,
-    int? offset,
   }) async {
     try {
       final queryParams = <String, dynamic>{};
-      if (customerId != null) queryParams['customerId'] = customerId;
+      if (type != null) queryParams['type'] = type;
+      if (fromDate != null)
+        queryParams['from_date'] = fromDate.toIso8601String();
+      if (toDate != null) queryParams['to_date'] = toDate.toIso8601String();
       if (limit != null) queryParams['limit'] = limit;
-      if (offset != null) queryParams['offset'] = offset;
 
       final response = await ApiClient.instance.get<Map<String, dynamic>>(
-        '/payments/history',
+        '/stripe/webhook-events',
         queryParameters: queryParams,
       );
 
-      final payments = response['payments'] as List;
-      return payments.map(Payment.fromJson).toList();
+      return (response['events'] as List)
+          .map((event) => event as Map<String, dynamic>)
+          .toList();
     } catch (e) {
       rethrow;
     }
   }
-}
 
-class PaymentResult {
-  const PaymentResult({
-    required this.success,
-    this.paymentId,
-    this.status,
-    this.error,
-  });
-
-  final bool success;
-  final String? paymentId;
-  final String? status;
-  final String? error;
-}
-
-class SetupIntentResult {
-  const SetupIntentResult({
-    required this.success,
-    this.setupIntentId,
-    this.status,
-    this.error,
-  });
-
-  final bool success;
-  final String? setupIntentId;
-  final String? status;
-  final String? error;
-}
-
-class StripeCustomer {
-  const StripeCustomer({
-    required this.id,
-    required this.email,
-    this.name,
-    this.phone,
-    this.metadata,
-  });
-
-  factory StripeCustomer.fromJson(Map<String, dynamic> json) => StripeCustomer(
-        id: json['id'] as String,
-        email: json['email'] as String,
-        name: json['name'] as String?,
-        phone: json['phone'] as String?,
-        metadata: json['metadata'] as Map<String, dynamic>?,
+  // Get account
+  Future<Map<String, dynamic>> getAccount() async {
+    try {
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/stripe/account',
       );
 
-  final String id;
-  final String email;
-  final String? name;
-  final String? phone;
-  final Map<String, dynamic>? metadata;
-}
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
 
-class SetupIntent {
-  const SetupIntent({
-    required this.id,
-    required this.clientSecret,
-    required this.status,
-  });
-
-  factory SetupIntent.fromJson(Map<String, dynamic> json) => SetupIntent(
-        id: json['id'] as String,
-        clientSecret: json['client_secret'] as String,
-        status: json['status'] as String,
+  // Update account
+  Future<Map<String, dynamic>> updateAccount({
+    required Map<String, dynamic> accountData,
+  }) async {
+    try {
+      final response = await ApiClient.instance.put<Map<String, dynamic>>(
+        '/stripe/account',
+        data: accountData,
       );
 
-  final String id;
-  final String clientSecret;
-  final String status;
-}
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
 
-class Refund {
-  const Refund({
-    required this.id,
-    required this.amount,
-    required this.currency,
-    required this.status,
-    this.reason,
-  });
-
-  factory Refund.fromJson(Map<String, dynamic> json) => Refund(
-        id: json['id'] as String,
-        amount: (json['amount'] as num).toDouble() / 100, // Convert from cents
-        currency: json['currency'] as String,
-        status: json['status'] as String,
-        reason: json['reason'] as String?,
+  // Get balance
+  Future<Map<String, dynamic>> getBalance() async {
+    try {
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/stripe/balance',
       );
 
-  final String id;
-  final double amount;
-  final String currency;
-  final String status;
-  final String? reason;
+      return response;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  // Get balance transactions
+  Future<List<Map<String, dynamic>>> getBalanceTransactions({
+    DateTime? fromDate,
+    DateTime? toDate,
+    int? limit,
+  }) async {
+    try {
+      final queryParams = <String, dynamic>{};
+      if (fromDate != null)
+        queryParams['from_date'] = fromDate.toIso8601String();
+      if (toDate != null) queryParams['to_date'] = toDate.toIso8601String();
+      if (limit != null) queryParams['limit'] = limit;
+
+      final response = await ApiClient.instance.get<Map<String, dynamic>>(
+        '/stripe/balance-transactions',
+        queryParameters: queryParams,
+      );
+
+      return (response['transactions'] as List)
+          .map((transaction) => transaction as Map<String, dynamic>)
+          .toList();
+    } catch (e) {
+      rethrow;
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import 'package:appoint/l10n/l10n.dart';
+import 'package:appoint/l10n/app_localizations.dart';
 import 'package:appoint/models/meeting.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/services/meeting_service.dart';
@@ -45,8 +45,7 @@ class _CreateMeetingScreenState extends ConsumerState<CreateMeetingScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context);
-    final theme = Theme.of(context);
+    final l10n = AppLocalizations.of(context)!;
 
     return Scaffold(
       appBar: AppBar(
@@ -156,7 +155,7 @@ class _CreateMeetingScreenState extends ConsumerState<CreateMeetingScreen> {
                       const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                   decoration: BoxDecoration(
                     color: (isEvent ? Colors.orange : Colors.blue)
-                        .withOpacity(0.1),
+                        .withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Text(

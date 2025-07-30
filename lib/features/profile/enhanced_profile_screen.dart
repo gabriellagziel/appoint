@@ -2,27 +2,24 @@ import 'package:appoint/l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final userProfileProvider = StateProvider<UserProfile>(
-  (ref) => const UserProfile(
-    id: 'user_123',
-    name: 'John Doe',
-    email: 'john.doe@example.com',
-    phone: '+1 (555) 123-4567',
-    userType: UserType.family,
-    familyId: 'family_456',
-    preferences: UserPreferences(
-      notifications: true,
-      locationSharing: false,
-      language: 'en',
-      theme: 'system',
-    ),
-    stats: UserStats(
-      totalBookings: 25,
-      totalPoints: 1250,
-      memberSince: DateTime(2023, 1, 15),
-    ),
-  ),
-);
+final userProfileProvider = StateProvider<UserProfile>((ref) => UserProfile(
+      id: 'user_123',
+      name: 'John Doe',
+      email: 'john.doe@example.com',
+      phone: '+1 (555) 123-4567',
+      userType: UserType.family,
+      preferences: UserPreferences(
+        notifications: true,
+        locationSharing: false,
+        language: 'en',
+        theme: 'light',
+      ),
+      stats: UserStats(
+        totalBookings: 25,
+        totalPoints: 1250,
+        memberSince: DateTime(2023, 1, 15),
+      ),
+    ));
 
 class UserProfile {
   const UserProfile({
@@ -233,7 +230,7 @@ class EnhancedProfileScreen extends ConsumerWidget {
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: color.withOpacity(0.1),
+              color: color.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(icon, color: color, size: 24),

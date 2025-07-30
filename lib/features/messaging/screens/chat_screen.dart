@@ -1,11 +1,9 @@
 import 'dart:io';
 
-import 'package:appoint/features/messaging/models/chat.dart';
+import 'package:appoint/features/messaging/models/chat.dart' as chat_model;
 import 'package:appoint/features/messaging/models/message.dart';
 import 'package:appoint/features/messaging/services/messaging_service.dart';
-import 'package:appoint/features/messaging/widgets/attachment_picker.dart';
 import 'package:appoint/features/messaging/widgets/message_bubble.dart';
-import 'package:appoint/l10n/app_localizations.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -24,14 +22,14 @@ final StreamProviderFamily<List<Message>, String> messagesProvider =
 );
 
 final StreamProviderFamily<dynamic, String> chatProvider =
-    StreamProvider.family<Chat?, String>(
+    StreamProvider.family<chat_model.Chat?, String>(
   (ref, chatId) => FirebaseFirestore.instance
       .collection('chats')
       .doc(chatId)
       .snapshots()
       .map((doc) {
     if (!doc.exists) return null;
-    return Chat.fromJson({...doc.data()!, 'id': doc.id});
+    return chat_model.Chat.fromJson({...doc.data()!, 'id': doc.id});
   }),
 );
 
@@ -43,7 +41,7 @@ class ChatScreen extends ConsumerStatefulWidget {
   });
 
   final String chatId;
-  final Chat? initialChat;
+  final chat_model.Chat? initialChat;
 
   @override
   ConsumerState<ChatScreen> createState() => _ChatScreenState();
@@ -56,7 +54,6 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
 
   bool _isTyping = false;
   bool _isSending = false;
-  List<Message> _messages = [];
 
   @override
   void initState() {
@@ -225,7 +222,6 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
           Expanded(
             child: messagesAsync.when(
               data: (messages) {
-                _messages = messages;
                 return ListView.builder(
                   controller: _scrollController,
                   padding: const EdgeInsets.all(16),
