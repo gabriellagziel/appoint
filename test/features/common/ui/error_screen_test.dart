@@ -1,4 +1,4 @@
-import 'package:appoint/common/ui/error_screen.dart';
+import 'package:appoint/features/common/ui/error_screen.dart';
 import 'package:appoint/components/common/retry_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -16,7 +16,7 @@ void main() {
         MaterialApp(
           home: ErrorScreen(
             message: 'Test error message',
-            onRetry: () {},
+            onTryAgain: () {},
           ),
         ),
       );

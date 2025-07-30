@@ -14,6 +14,16 @@ void main() {
   group(
     'LoginScreen',
     () {
+      // Declare variables that will be used across tests
+      late Finder emailField;
+      late Finder passwordField;
+      late Finder sizedBoxes;
+      late Finder textFields;
+      late TextField firstTextField;
+      late TextField secondTextField;
+      late TextField passwordWidget;
+      late TextField emailWidget;
+
       testWidgets('should display the title in app bar',
           (WidgetTester tester) async {
         await tester.pumpWidget(
