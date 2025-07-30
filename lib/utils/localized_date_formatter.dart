@@ -1,59 +1,37 @@
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter/widgets.dart';
 import 'package:intl/intl.dart';
 
-/// Formats dates and relative times using the current locale.
-///
-/// This wrapper makes it easy to support all locales configured in
-/// `l10n.yaml` by delegating to the `intl` package.
+import '../l10n/app_localizations.dart';
+
+/// Formats dates using the current [AppLocalizations].
 class LocalizedDateFormatter {
-  LocalizedDateFormatter(this._locale);
+  final AppLocalizations l10n;
 
-  /// Create a formatter from the generated [AppLocalizations].
-  factory LocalizedDateFormatter.fromL10n(AppLocalizations l10n) =>
-      LocalizedDateFormatter(l10n.localeName);
+  const LocalizedDateFormatter(this.l10n);
 
-  final String _locale;
-
-  /// Format a calendar date like "Jan 5, 2024" respecting locale.
-  String formatDate(DateTime date) =>
-      DateFormat.yMMMMEEEEd(_locale).format(date);
-
-  /// Format the difference from [timestamp] to now in a human friendly form.
-  String formatRelative(DateTime timestamp) {
-    final diff = DateTime.now().difference(timestamp);
-    if (diff.inMinutes < 1) {
-      return Intl.message('just now', name: 'justNow', locale: _locale);
-    }
-    if (diff.inMinutes < 60) {
-      final minutes = diff.inMinutes;
-      return Intl.plural(
-        minutes,
-        one: '$minutes minute ago',
-        other: '$minutes minutes ago',
-        name: 'minutesAgo',
-        args: [minutes],
-        locale: _locale,
-      );
-    }
-    if (diff.inHours < 24) {
-      final hours = diff.inHours;
-      return Intl.plural(
-        hours,
-        one: '$hours hour ago',
-        other: '$hours hours ago',
-        name: 'hoursAgo',
-        args: [hours],
-        locale: _locale,
-      );
-    }
-    final days = diff.inDays;
-    return Intl.plural(
-      days,
-      one: '$days day ago',
-      other: '$days days ago',
-      name: 'daysAgo',
-      args: [days],
-      locale: _locale,
-    );
+  /// Format a calendar date like 'Jan 5, 2024'.
+  String formatDate(DateTime date) {
+    return DateFormat.yMMMd(l10n.localeName).format(date);
   }
+
+  /// Format a relative time string such as '2 minutes ago'.
+  String formatRelative(DateTime date) {
+    final diff = DateTime.now().difference(date);
+    if (diff.inMinutes < 1) {
+      return l10n.justNow;
+    } else if (diff.inMinutes < 60) {
+      final minutes = diff.inMinutes;
+      return l10n.minutesAgo(minutes);
+    } else if (diff.inHours < 24) {
+      final hours = diff.inHours;
+      return l10n.hoursAgo(hours);
+    } else {
+      final days = diff.inDays;
+      return l10n.daysAgo(days);
+    }
+  }
+
+  /// All locales supported by the app.
+  static Iterable<Locale> get supportedLocales =>
+      AppLocalizations.supportedLocales;
 }
