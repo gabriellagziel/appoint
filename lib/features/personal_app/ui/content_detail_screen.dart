@@ -1,29 +1,31 @@
 import 'package:flutter/material.dart';
-import '../../../utils/localized_date_formatter.dart';
 
-/// TODO: Implement detailed content view
+// TODO per spec §2.1
 class ContentDetailScreen extends StatelessWidget {
-  final String contentId;
+  final String id;
 
-  const ContentDetailScreen({super.key, required this.contentId});
+  const ContentDetailScreen({super.key, required this.id});
 
   @override
   Widget build(BuildContext context) {
-    final locale = Localizations.localeOf(context).toLanguageTag();
     return Scaffold(
-      appBar: AppBar(title: const Text('Content Detail')),
-      body: Center(
+      appBar: AppBar(
+        title: const Text('Content Detail'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
         child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text('Content ID: $contentId'),
-            const SizedBox(height: 8),
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: const [
+            SizedBox(height: 24),
+            FlutterLogo(size: 200),
+            SizedBox(height: 24),
             Text(
-              LocalizedDateFormatter.formatFullDate(
-                DateTime.now(),
-                locale: locale,
-              ),
+              'Content Title Placeholder',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
+            SizedBox(height: 12),
+            Text('Content description coming soon.'),
           ],
         ),
       ),
