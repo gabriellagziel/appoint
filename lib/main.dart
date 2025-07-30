@@ -21,6 +21,17 @@ Future<void> appMain() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
+  // Initialize Firebase Remote Config
+  final remoteConfig = FirebaseRemoteConfig.instance;
+  await remoteConfig.setConfigSettings(RemoteConfigSettings(
+    fetchTimeout: const Duration(seconds: 10),
+    minimumFetchInterval: const Duration(hours: 1),
+  ));
+  await remoteConfig.setDefaults(const {
+    'welcome_message': 'Welcome to APP-OINT',
+  });
+  await remoteConfig.fetchAndActivate();
+
   // Initialize Firebase Analytics
   await FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(true);
 
