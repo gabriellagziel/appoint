@@ -1,4 +1,4 @@
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/services/playtime_service.dart';
 import 'package:appoint/config/theme.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -358,7 +358,7 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
 
     setState(() {
       _isLoading = true;
-      _errorMessage = null;
+      final _errorMessage = null;
     });
 
     try {
@@ -385,10 +385,6 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
       }
     } catch (e) {
       if (mounted) {
-        setState(() {
-          _errorMessage = e.toString();
-        });
-
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
@@ -399,6 +395,8 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
           ),
         );
       }
+    }
+    } finally {
       if (mounted) {
         setState(() {
           _isLoading = false;
@@ -406,4 +404,3 @@ class _PlaytimeScreenState extends ConsumerState<PlaytimeScreen> {
       }
     }
   }
-}

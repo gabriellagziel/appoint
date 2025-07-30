@@ -43,7 +43,8 @@ class GameNotifier extends StateNotifier<AsyncValue<List<Game>>> {
   Future<void> deleteGame(String gameId) async {
     try {
       final currentGames = state.value ?? [];
-      final updatedGames = currentGames.where((g) => g.id != gameId).toList();
+      final updatedGames =
+          currentGames.where((g) => g.id != gameId).toList();
       state = AsyncValue.data(updatedGames);
     } catch (e, stackTrace) {
       state = AsyncValue.error(e, stackTrace);

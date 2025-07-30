@@ -1,24 +1,20 @@
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/models/notification_settings.dart';
 import 'package:appoint/providers/auth_provider.dart';
-// import 'package:appoint/providers/notification_provider.dart'; // Unused
+import 'package:appoint/providers/notification_provider.dart';
 import 'package:appoint/providers/user_settings_provider.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:appoint/providers/fcm_token_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-final fcmTokenProvider = FutureProvider<String?>((ref) async {
-  return FirebaseMessaging.instance.getToken();
-});
 
 class NotificationSettingsScreen extends ConsumerWidget {
   const NotificationSettingsScreen({super.key});
 
   @override
   Widget build(BuildContext context, final WidgetRef ref) {
-    l10n = AppLocalizations.of(context)!;
-    tokenAsync = ref.watch(fcmTokenProvider);
-    settingsAsync = ref.watch(notificationSettingsProvider);
+    final l10n = AppLocalizations.of(context)!;
+    final tokenAsync = ref.watch(fcmTokenProvider);
+    final settingsAsync = ref.watch(notificationSettingsProvider);
     return Scaffold(
       appBar: AppBar(title: Text(l10n.notificationSettings)),
       body: settingsAsync.when(
@@ -32,15 +28,15 @@ class NotificationSettingsScreen extends ConsumerWidget {
                       title: Text(l10n.enableNotifications),
                       value: settings.push,
                       onChanged: (v) async {
-                        uid = ref.read(authProvider).currentUser?.uid;
+                        final uid = ref.read(authProvider).currentUser?.uid;
                         if (uid == null) return;
-                        newSettings = NotificationSettings(push: v);
+                        final newSettings = NotificationSettings(push: v);
                         await ref
                             .read(userSettingsServiceProvider)
                             .updateSettings(uid, newSettings);
                       },
                     ),
-                    if (token != null) SelectableText(l10n.fcmToken(token)),
+                    if (token != null) SelectableText(l10n.fcmToken(token as Object)),
                   ],
                 ),
               ),

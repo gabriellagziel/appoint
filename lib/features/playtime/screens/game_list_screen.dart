@@ -1,11 +1,11 @@
+import 'package:appoint/config/theme.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:appoint/models/playtime_game.dart';
+import 'package:appoint/providers/playtime_provider.dart';
+import 'package:appoint/widgets/bottom_sheet_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-
-import '../../../l10n/app_localizations.dart';
-import '../../../providers/playtime_provider.dart';
-import '../../../config/theme.dart';
-import '../../../models/playtime_game.dart';
 
 class GameListScreen extends ConsumerStatefulWidget {
   const GameListScreen({super.key});
@@ -35,7 +35,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Game List'),
+        title: const Text('Game List'),
         backgroundColor: AppTheme.primaryColor,
         foregroundColor: Colors.white,
         elevation: 0,
@@ -54,7 +54,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
           // Games List
           Expanded(
             child: Consumer(
-              builder: (context, ref, child) {
+              builder: (context, final ref, final child) {
                 final gamesAsync = ref.watch(gamesProvider);
 
                 return gamesAsync.when(
@@ -68,7 +68,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
                     return ListView.builder(
                       padding: const EdgeInsets.all(16),
                       itemCount: filteredGames.length,
-                      itemBuilder: (context, index) {
+                      itemBuilder: (context, final index) {
                         final game = filteredGames[index];
                         return _buildGameCard(context, game, l10n);
                       },
@@ -76,7 +76,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
                   },
                   loading: () =>
                       const Center(child: CircularProgressIndicator()),
-                  error: (error, stack) => Center(
+                  error: (error, final stack) => Center(
                     child: Text('Error: $error'),
                   ),
                 );
@@ -88,8 +88,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
     );
   }
 
-  Widget _buildSearchAndFilter(AppLocalizations l10n) {
-    return Container(
+  Widget _buildSearchAndFilter(AppLocalizations l10n) => Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: Colors.white,
@@ -133,7 +132,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: _categories.length,
-              itemBuilder: (context, index) {
+              itemBuilder: (context, final index) {
                 final category = _categories[index];
                 final isSelected = _selectedCategory == category;
 
@@ -164,11 +163,9 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
         ],
       ),
     );
-  }
 
-  Widget _buildGameCard(
-      BuildContext context, PlaytimeGame game, AppLocalizations l10n) {
-    return Card(
+  Widget _buildGameCard(final BuildContext context, final PlaytimeGame game,
+      AppLocalizations l10n,) => Card(
       margin: const EdgeInsets.only(bottom: 12),
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
@@ -236,7 +233,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
                           ),
                           child: Text(
                             'Created by: ${game.createdBy}',
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 12,
                               color: AppTheme.primaryColor,
                               fontWeight: FontWeight.w500,
@@ -285,10 +282,8 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
         ),
       ),
     );
-  }
 
-  Widget _buildEmptyState(AppLocalizations l10n) {
-    return Center(
+  Widget _buildEmptyState(AppLocalizations l10n) => Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -319,7 +314,7 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
           ElevatedButton.icon(
             onPressed: () => context.push('/playtime/create-game'),
             icon: const Icon(Icons.add),
-            label: Text('Create Game'),
+            label: const Text('Create Game'),
             style: ElevatedButton.styleFrom(
               backgroundColor: AppTheme.primaryColor,
               foregroundColor: Colors.white,
@@ -332,16 +327,12 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
         ],
       ),
     );
-  }
 
-  void _showPlayOptions(
-      BuildContext context, PlaytimeGame game, AppLocalizations l10n) {
-    showModalBottomSheet(
+  void _showPlayOptions(final BuildContext context, final PlaytimeGame game,
+      AppLocalizations l10n,) {
+    BottomSheetManager.show(
       context: context,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
-      ),
-      builder: (context) => Container(
+      child: Container(
         padding: const EdgeInsets.all(20),
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -403,13 +394,12 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
   }
 
   Widget _buildPlayOption(
-    BuildContext context,
-    String title,
-    IconData icon,
-    Color color,
-    VoidCallback onTap,
-  ) {
-    return InkWell(
+    final BuildContext context,
+    final String title,
+    final IconData icon,
+    final Color color,
+    final VoidCallback onTap,
+  ) => InkWell(
       onTap: onTap,
       borderRadius: BorderRadius.circular(12),
       child: Container(
@@ -444,10 +434,8 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
         ),
       ),
     );
-  }
 
-  List<PlaytimeGame> _filterGames(List<PlaytimeGame> games) {
-    return games.where((game) {
+  List<PlaytimeGame> _filterGames(List<PlaytimeGame> games) => games.where((game) {
       // Search filter
       if (_searchQuery.isNotEmpty) {
         final query = _searchQuery.toLowerCase();
@@ -458,5 +446,4 @@ class _GameListScreenState extends ConsumerState<GameListScreen> {
 
       return true;
     }).toList();
-  }
 }

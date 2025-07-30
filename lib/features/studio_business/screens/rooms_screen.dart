@@ -295,7 +295,6 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
         setState(() => _isAdding = false);
       }
     }
-  }
 
   Future<void> _updateRoom(String roomId) async {
     if (!_formKey.currentState!.validate()) {
@@ -329,7 +328,6 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
         setState(() => _isAdding = false);
       }
     }
-  }
 
   Future<void> _toggleRoomAvailability(
       String roomId, final bool currentAvailability,) async {
@@ -352,7 +350,6 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
         );
       }
     }
-  }
 
   Future<void> _deleteRoom(String roomId) async {
     try {
@@ -369,5 +366,3 @@ class _RoomsScreenState extends ConsumerState<RoomsScreen> {
         );
       }
     }
-  }
-}

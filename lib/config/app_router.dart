@@ -69,12 +69,8 @@ import 'package:appoint/features/notifications/enhanced_notifications_screen.dar
 import 'package:appoint/features/settings/enhanced_settings_screen.dart';
 import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
 import 'package:appoint/features/profile/enhanced_profile_screen.dart';
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/features/onboarding/permissions_onboarding_screen.dart';
-import 'package:appoint/features/reminders/screens/reminders_dashboard_screen.dart';
-import 'package:appoint/features/reminders/screens/create_reminder_screen.dart';
-import 'package:appoint/features/admin/screens/reminder_analytics_screen.dart';
-import 'package:appoint/features/payment/payment_confirmation_screen.dart';
 
 final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
     initialLocation: '/',
@@ -110,58 +106,9 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         builder: (context, final state) => const UserProfileScreen(),
       ),
       GoRoute(
-        path: '/reminders',
-        name: 'reminders',
-        builder: (context, final state) => const RemindersDashboardScreen(),
-      ),
-      GoRoute(
-        path: '/reminders/create',
-        name: 'createReminder',
-        builder: (context, final state) => const CreateReminderScreen(),
-      ),
-      GoRoute(
         path: '/search',
         name: 'search',
         builder: (context, final state) => const SearchScreen(),
-      ),
-      // Messaging and utilities
-      GoRoute(
-        path: '/messages',
-        name: 'messages',
-        builder: (context, final state) => const MessagesListScreen(),
-      ),
-      GoRoute(
-        path: '/chat/:chatId',
-        name: 'chat',
-        builder: (context, final state) {
-          final chatId = state.pathParameters['chatId']!;
-          return ChatScreen(chatId: chatId);
-        },
-      ),
-      GoRoute(
-        path: '/subscription',
-        name: 'subscription',
-        builder: (context, final state) => const SubscriptionScreen(),
-      ),
-      GoRoute(
-        path: '/rewards',
-        name: 'rewards',
-        builder: (context, final state) => const RewardsScreen(),
-      ),
-      GoRoute(
-        path: '/settings',
-        name: 'settings',
-        builder: (context, final state) => const EnhancedSettingsScreen(),
-      ),
-      GoRoute(
-        path: '/calendar',
-        name: 'calendar',
-        builder: (context, final state) => const EnhancedCalendarScreen(),
-      ),
-      GoRoute(
-        path: '/payment/confirmation',
-        name: 'paymentConfirmation',
-        builder: (context, final state) => const PaymentConfirmationScreen(),
       ),
       GoRoute(
         path: '/admin/dashboard',
@@ -178,11 +125,6 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         name: 'adminMessages',
         builder: (context, final state) => const AdminBroadcastScreen(),
       ),
-      GoRoute(
-        path: '/admin/reminder-analytics',
-        name: 'adminReminderAnalytics',
-        builder: (context, final state) => const ReminderAnalyticsScreen(),
-      ),
 
       GoRoute(
         path: '/family/invite',
@@ -194,125 +136,10 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         name: 'familyDashboard',
         builder: (context, final state) => const FamilyDashboardScreen(),
       ),
-      // Duplicate family invite-child and permissions routes removed
-
-      // Studio & Business Routes
       GoRoute(
-        path: '/studio/booking',
-        name: 'studioBooking',
-        builder: (context, final state) =>
-            const studio_business.StudioBookingScreen(),
-      ),
-      GoRoute(
-        path: '/studio/calendar',
-        name: 'studioCalendar',
-        builder: (context, final state) => const BusinessCalendarScreen(),
-      ),
-      GoRoute(
-        path: '/studio/profile',
-        name: 'studioProfile',
-        builder: (context, final state) => const BusinessProfileScreen(),
-      ),
-      GoRoute(
-        path: '/business/connect',
-        name: 'businessConnect',
-        builder: (context, final state) => const BusinessConnectScreen(),
-      ),
-      GoRoute(
-        path: '/dev/business-dashboard',
-        name: 'devBusinessDashboard',
-        builder: (context, final state) =>
-            const business.BusinessDashboardScreen(),
-      ),
-      GoRoute(
-        path: '/business/dashboard',
-        name: 'businessDashboard',
-        builder: (context, final state) =>
-            const business.BusinessDashboardScreen(),
-      ),
-      // B2B API Management route (for CRM clients only)
-      GoRoute(
-        path: '/app.business',
-        name: 'appBusiness',
-        builder: (context, final state) =>
-            const business.BusinessDashboardScreen(),
-      ),
-      GoRoute(
-        path: '/business/profile',
-        name: 'businessProfile',
-        builder: (context, final state) => const BusinessProfileScreen(),
-      ),
-      GoRoute(
-        path: '/business/phone-booking',
-        name: 'phoneBooking',
-        builder: (context, final state) => const PhoneBookingScreen(),
-      ),
-      GoRoute(
-        path: '/business/clients',
-        name: 'clients',
-        builder: (context, final state) =>
-            const studio_clients.ClientsScreen(),
-      ),
-      GoRoute(
-        path: '/business/appointments',
-        name: 'appointments',
-        builder: (context, final state) =>
-            const studio_appointments.AppointmentsScreen(),
-      ),
-      GoRoute(
-        path: '/business/invoices',
-        name: 'invoices',
-        builder: (context, final state) => const InvoicesScreen(),
-      ),
-      GoRoute(
-        path: '/business/messages',
-        name: 'businessMessages',
-        builder: (context, final state) => const MessagesScreen(),
-      ),
-      GoRoute(
-        path: '/business/analytics',
-        name: 'analytics',
-        builder: (context, final state) => const AnalyticsScreen(),
-      ),
-      GoRoute(
-        path: '/business/settings',
-        name: 'businessSettings',
-        builder: (context, final state) => const SettingsScreen(),
-      ),
-      GoRoute(
-        path: '/business/rooms',
-        name: 'rooms',
-        builder: (context, final state) => const RoomsScreen(),
-      ),
-      GoRoute(
-        path: '/business/providers',
-        name: 'providers',
-        builder: (context, final state) => const ProvidersScreen(),
-      ),
-      // Additional Business routes
-      GoRoute(
-        path: '/business/calendar',
-        name: 'businessCalendar',
-        builder: (context, final state) => const BusinessCalendarScreen(),
-      ),
-      GoRoute(
-        path: '/business/availability',
-        name: 'businessAvailability',
-        builder: (context, final state) => const BusinessAvailabilityScreen(),
-      ),
-
-      // Standalone analytics route
-      GoRoute(
-        path: '/analytics',
-        name: 'analyticsRoot',
-        builder: (context, final state) => const AnalyticsScreen(),
-      ),
-
-      // Family root shortcut
-      GoRoute(
-        path: '/family',
-        name: 'familyRoot',
-        builder: (context, final state) => const FamilyDashboardScreen(),
+        path: '/family/invite-child',
+        name: 'inviteChild',
+        builder: (context, final state) => const InviteChildScreen(),
       ),
       GoRoute(
         path: '/family/permissions',
@@ -370,6 +197,188 @@ final appRouterProvider = Provider<GoRouter>((ref) => GoRouter(
         path: '/invite/list',
         name: 'inviteList',
         builder: (context, final state) => const InviteListScreen(),
+      ),
+
+      // Studio & Business Routes
+      GoRoute(
+        path: '/studio/booking',
+        name: 'studioBooking',
+        builder: (context, final state) =>
+            const studio_business.StudioBookingScreen(),
+      ),
+      GoRoute(
+        path: '/studio/calendar',
+        name: 'studioCalendar',
+        builder: (context, final state) => const BusinessCalendarScreen(),
+      ),
+      GoRoute(
+        path: '/studio/profile',
+        name: 'studioProfile',
+        builder: (context, final state) => const BusinessProfileScreen(),
+      ),
+      GoRoute(
+        path: '/business/connect',
+        name: 'businessConnect',
+        builder: (context, final state) => const BusinessConnectScreen(),
+      ),
+      GoRoute(
+        path: '/dev/business-dashboard',
+        name: 'devBusinessDashboard',
+        builder: (context, final state) =>
+            const business.BusinessDashboardScreen(),
+      ),
+      GoRoute(
+        path: '/business/dashboard',
+        name: 'businessDashboard',
+        builder: (context, final state) =>
+            const business.BusinessDashboardScreen(),
+      ),
+      GoRoute(
+        path: '/business/profile',
+        name: 'businessProfile',
+        builder: (context, final state) => const BusinessProfileScreen(),
+      ),
+      GoRoute(
+        path: '/business/phone-booking',
+        name: 'phoneBooking',
+        builder: (context, final state) => const PhoneBookingScreen(),
+      ),
+      GoRoute(
+        path: '/business/clients',
+        name: 'clients',
+        builder: (context, final state) =>
+            const studio_clients.ClientsScreen(),
+      ),
+      GoRoute(
+        path: '/business/appointments',
+        name: 'appointments',
+        builder: (context, final state) =>
+            const studio_appointments.AppointmentsScreen(),
+      ),
+      GoRoute(
+        path: '/business/invoices',
+        name: 'invoices',
+        builder: (context, final state) => const InvoicesScreen(),
+      ),
+      GoRoute(
+        path: '/business/messages',
+        name: 'messages',
+        builder: (context, final state) => const MessagesScreen(),
+      ),
+      GoRoute(
+        path: '/business/analytics',
+        name: 'analytics',
+        builder: (context, final state) => const AnalyticsScreen(),
+      ),
+      GoRoute(
+        path: '/business/settings',
+        name: 'settings',
+        builder: (context, final state) => const SettingsScreen(),
+      ),
+      GoRoute(
+        path: '/business/rooms',
+        name: 'rooms',
+        builder: (context, final state) => const RoomsScreen(),
+      ),
+      GoRoute(
+        path: '/business/providers',
+        name: 'providers',
+        builder: (context, final state) => const ProvidersScreen(),
+      ),
+      GoRoute(
+        path: '/business/appointment-requests',
+        name: 'appointmentRequests',
+        builder: (context, final state) =>
+            const AppointmentRequestsScreen(),
+      ),
+      GoRoute(
+        path: '/business/external-meetings',
+        name: 'externalMeetings',
+        builder: (context, final state) => const ExternalMeetingsScreen(),
+      ),
+      GoRoute(
+        path: '/studio/confirm',
+        name: 'studioConfirm',
+        builder: (context, final state) =>
+            const StudioBookingConfirmScreen(),
+      ),
+
+      // Search route
+      GoRoute(
+        path: '/search',
+        name: 'search',
+        builder: (context, final state) => const SearchScreen(),
+      ),
+
+      // Messaging routes
+      GoRoute(
+        path: '/messages',
+        name: 'messages',
+        builder: (context, final state) => const MessagesListScreen(),
+      ),
+      GoRoute(
+        path: '/chat/:chatId',
+        name: 'chat',
+        builder: (context, final state) {
+          final chatId = state.pathParameters['chatId']!;
+          return ChatScreen(chatId: chatId);
+        },
+      ),
+
+      // Subscription routes
+      GoRoute(
+        path: '/subscription',
+        name: 'subscription',
+        builder: (context, final state) => const SubscriptionScreen(),
+      ),
+
+      // Rewards routes
+      GoRoute(
+        path: '/rewards',
+        name: 'rewards',
+        builder: (context, final state) => const RewardsScreen(),
+      ),
+
+      // Enhanced onboarding route
+      GoRoute(
+        path: '/enhanced-onboarding',
+        name: 'enhancedOnboarding',
+        builder: (context, final state) => const EnhancedOnboardingScreen(),
+      ),
+
+      // Enhanced dashboard route
+      GoRoute(
+        path: '/enhanced-dashboard',
+        name: 'enhancedDashboard',
+        builder: (context, final state) => const EnhancedDashboardScreen(),
+      ),
+
+      // Enhanced notifications route
+      GoRoute(
+        path: '/notifications',
+        name: 'notifications',
+        builder: (context, final state) => const EnhancedNotificationsScreen(),
+      ),
+
+      // Enhanced settings route
+      GoRoute(
+        path: '/settings',
+        name: 'settings',
+        builder: (context, final state) => const EnhancedSettingsScreen(),
+      ),
+
+      // Enhanced calendar route
+      GoRoute(
+        path: '/calendar',
+        name: 'calendar',
+        builder: (context, final state) => const EnhancedCalendarScreen(),
+      ),
+
+      // Enhanced profile route
+      GoRoute(
+        path: '/enhanced-profile',
+        name: 'enhancedProfile',
+        builder: (context, final state) => const EnhancedProfileScreen(),
       ),
 
       // Studio nested routes
@@ -531,7 +540,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
         mode: _travelMode,
       );
       if (eta == null) return;
-      final start = DateTime.parse((meetingData?['start'] as String?) ?? '');
+      final start = DateTime.parse(meetingData?['start'] as String? ?? '');
       final minutesUntilStart = start.difference(DateTime.now()).inMinutes;
       final delta = eta - minutesUntilStart;
       setState(() {
@@ -544,7 +553,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text((meetingData?['title'] as String?) ?? 'Meeting Details'),
+        title: Text(meetingData?['title'] as String? ?? 'Meeting Details'),
         actions: [
           if (meetingData != null)
             PopupMenuButton(
@@ -585,13 +594,13 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
               onSelected: (value) {
                 switch (value) {
                   case 'join':
-                    _joinMeeting(meetingData!['link'] as String);
+                    _joinMeeting(meetingData!['link'] as String?);
                     break;
                   case 'directions':
-                                          _openDirections(
-                        (meetingData!['latitude'] as num?)?.toDouble(),
-                        (meetingData!['longitude'] as num?)?.toDouble(),
-                      );
+                    _openDirections(
+                      (meetingData!['latitude'] as double?)?.toDouble(),
+                      (meetingData!['longitude'] as double?)?.toDouble(),
+                    );
                     break;
                   case 'share':
                     _shareMeeting();
@@ -694,7 +703,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              (meeting['title'] as String?) ?? 'Meeting',
+                              meeting['title'] as String? ?? 'Meeting',
                               style: const TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
@@ -762,7 +771,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton.icon(
-                        onPressed: () => _joinMeeting(meeting['link'] as String),
+                        onPressed: () => _joinMeeting(meeting['link'] as String?),
                         icon: const Icon(Icons.video_call),
                         label: const Text('Join Meeting'),
                         style: ElevatedButton.styleFrom(
@@ -822,8 +831,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                           child: GoogleMap(
                             initialCameraPosition: CameraPosition(
                               target: LatLng(
-                                (meeting['latitude'] as num).toDouble(),
-                                (meeting['longitude'] as num).toDouble(),
+                                (meeting['latitude'] as double).toDouble(),
+                                (meeting['longitude'] as double).toDouble(),
                               ),
                               zoom: 16,
                             ),
@@ -831,11 +840,11 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                               Marker(
                                 markerId: MarkerId(widget.meetingId),
                                 position: LatLng(
-                                  (meeting['latitude'] as num).toDouble(),
-                                  (meeting['longitude'] as num).toDouble(),
+                                  (meeting['latitude'] as double).toDouble(),
+                                  (meeting['longitude'] as double).toDouble(),
                                 ),
                                 infoWindow: InfoWindow(
-                                  title: (meeting['title'] as String?) ?? 'Meeting Location',
+                                  title: meeting['title'] as String? ?? 'Meeting Location',
                                   snippet: meeting['address'] as String?,
                                 ),
                               ),
@@ -848,8 +857,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                         width: double.infinity,
                         child: ElevatedButton.icon(
                           onPressed: () => _openDirections(
-                            (meeting['latitude'] as num?)?.toDouble(),
-                            (meeting['longitude'] as num?)?.toDouble(),
+                            (meeting['latitude'] as double?)?.toDouble(),
+                            (meeting['longitude'] as double?)?.toDouble(),
                           ),
                           icon: const Icon(Icons.directions),
                           label: const Text('Get Directions'),

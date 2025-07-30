@@ -1,10 +1,9 @@
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/providers/user_profile_provider.dart';
 import 'package:appoint/services/user_deletion_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 class UserProfileScreen extends ConsumerWidget {
   const UserProfileScreen({super.key});
@@ -69,7 +68,10 @@ class UserProfileScreen extends ConsumerWidget {
 
       // Navigate to login/onboarding
       if (context.mounted) {
-        context.go('/');
+        Navigator.of(context).pushNamedAndRemoveUntil(
+          '/',
+          (route) => false,
+        );
       }
     } catch (e) {
       Navigator.of(context).pop();
@@ -85,30 +87,6 @@ class UserProfileScreen extends ConsumerWidget {
       }
     }
     }
-  }
-
-  void _showDeleteAccountDialog(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: const Text('Delete Account'),
-        content: const Text('Are you sure you want to delete your account? This action cannot be undone.'),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Cancel'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-              _deleteAccount();
-            },
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
-            child: const Text('Delete'),
-          ),
-        ],
-      ),
-    );
   }
 
   @override
@@ -129,7 +107,7 @@ class UserProfileScreen extends ConsumerWidget {
                   const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: () {
-                      context.go('/');
+                      Navigator.pushNamed(context, '/');
                     },
                     child: const Text('Login'),
                   ),

@@ -301,7 +301,6 @@ class FamilyBackgroundService {
     } catch (e) {
       // Removed debug print: debugPrint('Error sending expired request notification: $e');
     }
-  }
 
   Future<void> _validateFamilyLinks() async {
     if (kDebugMode) {
@@ -353,7 +352,6 @@ class FamilyBackgroundService {
     } catch (e) {
       // Removed debug print: debugPrint('Error validating family links: $e');
     }
-  }
 
   // Method to manually trigger a check (useful for testing)
   Future<void> triggerManualCheck() async {
