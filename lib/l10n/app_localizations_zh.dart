@@ -2672,7 +2672,10 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String tierUpgradeBody(
-      String previousTier, String newTier, String totalReferrals) {
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[ZH] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Chinese)';
   }
 
@@ -2681,7 +2684,10 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String monthlyReminderBody(
-      String currentReferrals, String targetReferrals, String daysRemaining) {
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[ZH] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Chinese)';
   }
 
@@ -2691,7 +2697,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String performanceWarningBody(
-      String currentReferrals, String minimumRequired) {
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[ZH] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Chinese)';
   }
 
@@ -5533,7 +5541,10 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String tierUpgradeBody(
-      String previousTier, String newTier, String totalReferrals) {
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[ZH_HANT] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Chinese Traditional)';
   }
 
@@ -5543,7 +5554,10 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String monthlyReminderBody(
-      String currentReferrals, String targetReferrals, String daysRemaining) {
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[ZH_HANT] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Chinese Traditional)';
   }
 
@@ -5553,7 +5567,9 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String performanceWarningBody(
-      String currentReferrals, String minimumRequired) {
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[ZH_HANT] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Chinese Traditional)';
   }
 

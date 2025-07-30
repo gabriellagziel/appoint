@@ -124,14 +124,14 @@ class TestDataFactory {
 
 // Test environment setup helper
 class TestEnvironment {
-  static late MockFirebaseAuthGenerated mockAuth;
-  static late MockFirebaseFirestoreGenerated mockFirestore;
-  static late MockFirebaseStorageGenerated mockStorage;
+  static late Mock mockAuth;
+  static late Mock mockFirestore;
+  static late Mock mockStorage;
 
   static void setupTestEnvironment() {
-    mockAuth = MockFirebaseAuthGenerated();
-    mockFirestore = MockFirebaseFirestoreGenerated();
-    mockStorage = MockFirebaseStorageGenerated();
+    mockAuth = Mock();
+    mockFirestore = Mock();
+    mockStorage = Mock();
   }
 
   static void clearTestData() {

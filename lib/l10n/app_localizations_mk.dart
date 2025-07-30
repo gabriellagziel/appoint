@@ -2636,7 +2636,10 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String tierUpgradeBody(
-      String previousTier, String newTier, String totalReferrals) {
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[MK] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Macedonian)';
   }
 
@@ -2645,7 +2648,10 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String monthlyReminderBody(
-      String currentReferrals, String targetReferrals, String daysRemaining) {
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[MK] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Macedonian)';
   }
 
@@ -2655,7 +2661,9 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String performanceWarningBody(
-      String currentReferrals, String minimumRequired) {
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[MK] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Macedonian)';
   }
 

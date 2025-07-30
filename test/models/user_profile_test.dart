@@ -19,8 +19,8 @@ void main() {
         isAdminFreeAccess: false,
       );
 
-      json = profile.toJson();
-      copy = UserProfile.fromJson(json);
+      final json = profile.toJson();
+      final copy = UserProfile.fromJson(json);
 
       expect(copy.id, profile.id);
       expect(copy.name, profile.name);
@@ -31,10 +31,7 @@ void main() {
     });
 
     test('should handle null optional fields', () {
-      const profile = UserProfile(
-        id: 'u2',
-        name: 'Jane Doe',
-      );
+      const profile = UserProfile(id: 'u2', name: 'Jane Doe');
 
       expect(profile.email, isNull);
       expect(profile.phone, isNull);

@@ -18,8 +18,8 @@ void main() {
         startTime: DateTime(2024, 1, 1, 10),
         endTime: DateTime(2024, 1, 1, 11),
       );
-      json = appt.toJson();
-      copy = PersonalAppointment.fromJson(json);
+      final json = appt.toJson();
+      final copy = PersonalAppointment.fromJson(json);
       expect(copy.id, appt.id);
       expect(copy.userId, appt.userId);
       expect(copy.title, appt.title);
