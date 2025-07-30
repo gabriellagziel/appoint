@@ -1,37 +1,31 @@
-import 'package:flutter/widgets.dart';
 import 'package:intl/intl.dart';
 
-import '../l10n/app_localizations.dart';
-
-/// Formats dates using the current [AppLocalizations].
+/// Utility class for locale-aware date formatting.
 class LocalizedDateFormatter {
-  final AppLocalizations l10n;
+  LocalizedDateFormatter._();
 
-  const LocalizedDateFormatter(this.l10n);
-
-  /// Format a calendar date like 'Jan 5, 2024'.
-  String formatDate(DateTime date) {
-    return DateFormat.yMMMd(l10n.localeName).format(date);
+  /// Formats [date] using the full year, month and day pattern for [locale].
+  static String formatFullDate(DateTime date, {String? locale}) {
+    final formatter = DateFormat.yMMMMd(locale);
+    return formatter.format(date);
   }
 
-  /// Format a relative time string such as '2 minutes ago'.
-  String formatRelative(DateTime date) {
-    final diff = DateTime.now().difference(date);
-    if (diff.inMinutes < 1) {
-      return l10n.justNow;
+  /// Returns a human readable relative time string for [date].
+  /// For older dates (7+ days) falls back to [formatFullDate].
+  static String formatRelativeTime(DateTime date, {String? locale}) {
+    final now = DateTime.now();
+    final diff = now.difference(date);
+
+    if (diff.inSeconds < 60) {
+      return 'just now';
     } else if (diff.inMinutes < 60) {
-      final minutes = diff.inMinutes;
-      return l10n.minutesAgo(minutes);
+      return '${diff.inMinutes} minutes ago';
     } else if (diff.inHours < 24) {
-      final hours = diff.inHours;
-      return l10n.hoursAgo(hours);
+      return '${diff.inHours} hours ago';
+    } else if (diff.inDays < 7) {
+      return '${diff.inDays} days ago';
     } else {
-      final days = diff.inDays;
-      return l10n.daysAgo(days);
+      return formatFullDate(date, locale: locale);
     }
   }
-
-  /// All locales supported by the app.
-  static Iterable<Locale> get supportedLocales =>
-      AppLocalizations.supportedLocales;
 }
