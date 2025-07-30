@@ -1,57 +1,41 @@
-import { Request, Response } from 'express';
+import * as functions from 'firebase-functions';
 
-export interface HealthStatus {
-  status: 'healthy' | 'unhealthy';
-  timestamp: string;
-  service: string;
-  version: string;
-  uptime: number;
-  environment: string;
-  dependencies?: {
-    database?: 'healthy' | 'unhealthy';
-    redis?: 'healthy' | 'unhealthy';
-    firebase?: 'healthy' | 'unhealthy';
-  };
-}
+export const status = functions.https.onRequest((req, res) => {
+  // Set CORS headers
+  res.set('Access-Control-Allow-Origin', '*');
+  res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 
-export const healthCheck = async (req: Request, res: Response): Promise<void> => {
+  // Handle preflight requests
+  if (req.method === 'OPTIONS') {
+    res.status(204).send('');
+    return;
+  }
+
+  // Only allow GET requests for health checks
+  if (req.method !== 'GET') {
+    res.status(405).json({ error: 'Method not allowed' });
+    return;
+  }
+
   try {
-    const healthData: HealthStatus = {
-      status: 'healthy',
+    const healthStatus = {
+      status: 'ok',
       timestamp: new Date().toISOString(),
-      service: 'app-oint-functions',
-      version: process.env.npm_package_version || '1.0.0',
+      service: 'firebase-functions',
+      version: '1.0.0',
+      environment: process.env.NODE_ENV || 'development',
       uptime: process.uptime(),
-      environment: process.env.NODE_ENV || 'unknown',
+      memory: process.memoryUsage(),
     };
 
-    // Optional: Add dependency checks
-    if (process.env.NODE_ENV !== 'test') {
-      healthData.dependencies = {
-        database: 'healthy', // Could add actual DB ping
-        redis: 'healthy',    // Could add actual Redis ping
-        firebase: 'healthy', // Could add actual Firebase check
-      };
-    }
-
-    res.status(200).json(healthData);
+    res.status(200).json(healthStatus);
   } catch (error) {
     console.error('Health check failed:', error);
-    
-    const unhealthyData: HealthStatus = {
-      status: 'unhealthy',
+    res.status(500).json({ 
+      status: 'error',
       timestamp: new Date().toISOString(),
-      service: 'app-oint-functions',
-      version: process.env.npm_package_version || '1.0.0',
-      uptime: process.uptime(),
-      environment: process.env.NODE_ENV || 'unknown',
-    };
-
-    res.status(500).json(unhealthyData);
+      message: 'Health check failed'
+    });
   }
-};
-
-// Simple health check for Docker health check
-export const simpleHealthCheck = (req: Request, res: Response): void => {
-  res.status(200).send('OK');
-};
+});
