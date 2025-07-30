@@ -1,55 +1,66 @@
 import 'dart:io';
-
-import 'package:appoint/services/ambassador_notification_service.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:appoint/services/ambassador_notification_service.dart';
+import 'package:appoint/models/ambassador_profile.dart';
 
 /// Enhanced mobile push notification service for Ambassador program
 class AmbassadorMobileNotifications {
-  AmbassadorMobileNotifications(this._ambassadorNotificationService);
   final FirebaseMessaging _messaging = FirebaseMessaging.instance;
-  final FlutterLocalNotificationsPlugin _localNotifications =
+  final FlutterLocalNotificationsPlugin _localNotifications = 
       FlutterLocalNotificationsPlugin();
   final AmbassadorNotificationService _ambassadorNotificationService;
+
+  AmbassadorMobileNotifications(this._ambassadorNotificationService);
 
   /// Initialize mobile notifications for Ambassador events
   Future<void> initialize() async {
     // Request permissions
     await _requestPermissions();
-
+    
     // Initialize local notifications with ambassador channels
     await _initializeLocalNotifications();
-
+    
     // Set up FCM handlers
     await _setupFCMHandlers();
-
+    
     // Initialize the base ambassador notification service
     await _ambassadorNotificationService.initialize();
   }
 
   /// Request notification permissions
   Future<bool> _requestPermissions() async {
-    final settings = await _messaging.requestPermission();
+    final settings = await _messaging.requestPermission(
+      alert: true,
+      announcement: false,
+      badge: true,
+      carPlay: false,
+      criticalAlert: false,
+      provisional: false,
+      sound: true,
+    );
 
-    debugPrint(
-        'Notification permission status: ${settings.authorizationStatus}');
+    debugPrint('Notification permission status: ${settings.authorizationStatus}');
     return settings.authorizationStatus == AuthorizationStatus.authorized ||
-        settings.authorizationStatus == AuthorizationStatus.provisional;
+           settings.authorizationStatus == AuthorizationStatus.provisional;
   }
 
   /// Initialize local notifications with Ambassador-specific channels
   Future<void> _initializeLocalNotifications() async {
-    const androidSettings =
-        AndroidInitializationSettings('@mipmap/ic_launcher');
-    const iosSettings = DarwinInitializationSettings();
-
+    const androidSettings = AndroidInitializationSettings('@mipmap/ic_launcher');
+    const iosSettings = DarwinInitializationSettings(
+      requestAlertPermission: true,
+      requestBadgePermission: true,
+      requestSoundPermission: true,
+      requestCriticalPermission: false,
+    );
+    
     const initializationSettings = InitializationSettings(
       android: androidSettings,
       iOS: iosSettings,
     );
-
+    
     await _localNotifications.initialize(
       initializationSettings,
       REDACTED_TOKEN: _onNotificationTapped,
@@ -63,9 +74,8 @@ class AmbassadorMobileNotifications {
 
   /// Create notification channels for different Ambassador events
   Future<void> REDACTED_TOKEN() async {
-    final androidPlugin =
-        _localNotifications.REDACTED_TOKEN<
-            REDACTED_TOKEN>();
+    final androidPlugin = _localNotifications
+        .REDACTED_TOKEN<REDACTED_TOKEN>();
 
     if (androidPlugin == null) return;
 
@@ -76,8 +86,10 @@ class AmbassadorMobileNotifications {
         'Ambassador Promotions',
         description: 'Notifications for ambassador promotions and celebrations',
         importance: Importance.high,
+        enableVibration: true,
         enableLights: true,
         ledColor: Color(0xFF4CAF50),
+        showBadge: true,
         sound: REDACTED_TOKEN('promotion_sound'),
       ),
     );
@@ -89,8 +101,10 @@ class AmbassadorMobileNotifications {
         'Ambassador Performance',
         description: 'Performance warnings and status updates',
         importance: Importance.high,
+        enableVibration: true,
         enableLights: true,
         ledColor: Color(0xFFFF9800),
+        showBadge: true,
         sound: REDACTED_TOKEN('warning_sound'),
       ),
     );
@@ -102,8 +116,10 @@ class AmbassadorMobileNotifications {
         'Tier Upgrades',
         description: 'Tier upgrade celebrations and rewards',
         importance: Importance.high,
+        enableVibration: true,
         enableLights: true,
         ledColor: Color(0xFF2196F3),
+        showBadge: true,
         sound: REDACTED_TOKEN('celebration_sound'),
       ),
     );
@@ -114,9 +130,11 @@ class AmbassadorMobileNotifications {
         AmbassadorNotificationService.REDACTED_TOKEN,
         'Monthly Reminders',
         description: 'Monthly goal reminders and progress updates',
+        importance: Importance.defaultImportance,
         enableVibration: false,
         enableLights: true,
         ledColor: Color(0xFF9C27B0),
+        showBadge: true,
       ),
     );
   }
@@ -160,10 +178,13 @@ class AmbassadorMobileNotifications {
     switch (action) {
       case 'open_ambassador_dashboard':
         await _navigateToAmbassadorDashboard();
+        break;
       case 'open_ambassador_requirements':
         await REDACTED_TOKEN();
+        break;
       case 'open_referral_sharing':
         await _navigateToReferralSharing();
+        break;
       default:
         // Default navigation
         await _navigateToAmbassadorDashboard();
@@ -179,17 +200,19 @@ class AmbassadorMobileNotifications {
       case 'tier_upgrade':
       case 'monthly_reminder':
         _navigateToAmbassadorDashboard();
+        break;
       case 'performance_warning':
       case 'ambassador_demotion':
         REDACTED_TOKEN();
+        break;
       case 'referral_success':
         _navigateToReferralSharing();
+        break;
     }
   }
 
   /// Show local notification for ambassador events
-  Future<void> REDACTED_TOKEN(
-      RemoteMessage message) async {
+  Future<void> REDACTED_TOKEN(RemoteMessage message) async {
     final data = message.data;
     final type = data['type'] ?? '';
     final title = message.notification?.title ?? '';
@@ -206,6 +229,7 @@ class AmbassadorMobileNotifications {
       enableVibration: _shouldVibrateForType(type),
       enableLights: true,
       ledColor: _getColorForType(type),
+      showWhen: true,
       when: DateTime.now().millisecondsSinceEpoch,
       styleInformation: _getStyleInformationForType(type, title, body),
       actions: _getActionsForType(type),
@@ -219,7 +243,7 @@ class AmbassadorMobileNotifications {
       badgeNumber: 1,
     );
 
-    final details = NotificationDetails(
+    const details = NotificationDetails(
       android: androidDetails,
       iOS: iosDetails,
     );
@@ -243,17 +267,15 @@ class AmbassadorMobileNotifications {
     bool silent = false,
   }) async {
     try {
-      // Get user's FCM token - use a different approach since _firestore is private
-      final userDoc = await FirebaseFirestore.instance
+      // Get user's FCM token
+      final userDoc = await _ambassadorNotificationService._firestore
           .collection('users')
           .doc(userId)
           .get();
 
       if (!userDoc.exists) return;
 
-      final userData = userDoc.data();
-      if (userData == null) return;
-
+      final userData = userDoc.data()!;
       final fcmToken = userData['fcmToken'] as String?;
 
       if (fcmToken == null) {
@@ -307,6 +329,7 @@ class AmbassadorMobileNotifications {
 
       // Send via FCM (this would typically call a cloud function)
       debugPrint('Sending enhanced ambassador notification: $message');
+
     } catch (e) {
       debugPrint('Error sending enhanced ambassador notification: $e');
     }
@@ -417,8 +440,7 @@ class AmbassadorMobileNotifications {
   }
 
   String _getColorHexForType(String type) {
-    final color = _getColorForType(type);
-    return '#${color.value.toRadixString(16).substring(2)}';
+    return '#${_getColorForType(type).value.toRadixString(16).substring(2)}';
   }
 
   bool _shouldVibrateForType(String type) {
@@ -436,8 +458,7 @@ class AmbassadorMobileNotifications {
     }
   }
 
-  StyleInformation _getStyleInformationForType(
-      String type, String title, String body) {
+  StyleInformation _getStyleInformationForType(String type, String title, String body) {
     switch (type) {
       case 'ambassador_promotion':
       case 'tier_upgrade':
@@ -560,11 +581,10 @@ class AmbassadorMobileNotifications {
 @pragma('vm:entry-point')
 Future<void> _backgroundMessageHandler(RemoteMessage message) async {
   debugPrint('Background message received: ${message.messageId}');
-
+  
   // Handle background ambassador notifications
   final data = message.data;
-  if (data.containsKey('type') &&
-      data['type'].toString().contains('ambassador')) {
+  if (data.containsKey('type') && data['type'].toString().contains('ambassador')) {
     // Log analytics or perform other background tasks
     debugPrint('Ambassador background notification: ${data['type']}');
   }
