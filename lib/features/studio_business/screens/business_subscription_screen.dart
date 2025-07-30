@@ -662,7 +662,7 @@ class REDACTED_TOKEN
             _buildComparisonHeader(),
             const Divider(),
             
-            _buildComparisonRow('Meetings per month', '20', 'Unlimited', 'Unlimited'),
+            _buildComparisonRow('Meetings per month', 'Unlimited', 'Unlimited', 'Unlimited'),
             _buildComparisonRow('Business branding', '✗', '✓', '✓'),
             _buildComparisonRow('Map loads/month', '0', '200', '500'),
             _buildComparisonRow('Calendar views', 'Daily only', 'Daily + Monthly', 'Daily + Monthly'),

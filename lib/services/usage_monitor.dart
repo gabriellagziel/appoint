@@ -1,27 +1,67 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:appoint/services/personal_subscription_service.dart';
+import 'package:appoint/models/personal_subscription.dart';
 
 // Provider for weekly usage count
 final weeklyUsageProvider = StateProvider<int>((ref) => 0);
 
 // Provider for usage monitor service
-final usageMonitorProvider =
-    Provider<UsageMonitorService>((ref) => UsageMonitorService());
+final usageMonitorProvider = Provider<UsageMonitorService>((ref) => UsageMonitorService());
+
+// Provider for personal subscription service
+final personalSubscriptionProvider = Provider<PersonalSubscriptionService>((ref) => PersonalSubscriptionService());
 
 class UsageMonitorService {
-  static const int maxFreeMeetings = 21;
+  static const int maxFreeMeetings = 21; // Keep for legacy compatibility
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final PersonalSubscriptionService _personalSubscriptionService = PersonalSubscriptionService();
 
-  /// Checks if booking should be blocked based on weekly count and business mode
+  /// Checks if booking should be blocked based on subscription and business mode
   static bool shouldBlockBooking({
     required int weeklyCount,
     required bool isBusiness,
-  }) =>
-      !isBusiness && weeklyCount >= maxFreeMeetings;
+  }) {
+    // Business users are never blocked by personal limits
+    return !isBusiness && weeklyCount >= maxFreeMeetings;
+  }
 
-  /// Increments the weekly usage count
+  /// New method to check booking eligibility with personal subscription
+  Future<bool> REDACTED_TOKEN({
+    required bool isBusiness,
+  }) async {
+    // Business users are never blocked
+    if (isBusiness) return false;
+
+    final subscription = await _personalSubscriptionService.getCurrentSubscription();
+    if (subscription == null) return false; // Allow if no subscription (new user)
+
+    // Check based on subscription status
+    switch (subscription.status) {
+      case PersonalSubscriptionStatus.free:
+        // Allow if user hasn't reached free limit
+        final remaining = await _personalSubscriptionService.getRemainingFreeMeetings();
+        return remaining <= 0;
+      
+      case PersonalSubscriptionStatus.adSupported:
+        // Ad-supported users can book but without maps
+        return false;
+      
+      case PersonalSubscriptionStatus.premium:
+        // Premium users have weekly limits
+        final remaining = await _personalSubscriptionService.getRemainingWeeklyMeetings();
+        return remaining <= 0;
+      
+      case PersonalSubscriptionStatus.expired:
+        // Expired users can still book but without maps
+        return false;
+    }
+  }
+
+  /// Increments the weekly usage count and updates personal subscription
   Future<void> incrementWeeklyUsage(String userId) async {
     try {
+      // Update legacy weekly usage for compatibility
       final weekKey = _getCurrentWeekKey();
       final userUsageRef = _firestore
           .collection('user_usage')
@@ -42,6 +82,9 @@ class UsageMonitorService {
           });
         }
       });
+
+      // Update personal subscription meeting counter
+      await _personalSubscriptionService.recordMeeting();
     } catch (e) {
       // Log error but don't throw to prevent blocking bookings
       print('Error incrementing weekly usage: $e');
@@ -78,7 +121,7 @@ class UsageMonitorService {
         .collection('weekly_usage')
         .doc(weekKey)
         .snapshots()
-        .map((doc) => doc.exists ? (doc.data()?['count'] as int?) ?? 0 : 0);
+        .map((doc) => doc.exists ? doc.data()?['count'] ?? 0 : 0);
   }
 
   /// Resets weekly count if a new week has started
@@ -94,7 +137,7 @@ class UsageMonitorService {
     final startOfWeek = _getWeekStart();
     final year = startOfWeek.year;
     final weekNumber = _getWeekNumber(startOfWeek);
-    return '$year-W${weekNumber.toString().padLeft(2, '0')}';
+    return '${year}-W${weekNumber.toString().padLeft(2, '0')}';
   }
 
   /// Gets the start of the current week (Monday)
@@ -106,16 +149,15 @@ class UsageMonitorService {
 
   /// Gets the week number of the year
   int _getWeekNumber(DateTime date) {
-    final firstDayOfYear = DateTime(date.year);
+    final firstDayOfYear = DateTime(date.year, 1, 1);
     final firstWeekday = firstDayOfYear.weekday;
     final daysInFirstWeek = 8 - firstWeekday;
-    final firstWeekEnd =
-        firstDayOfYear.add(Duration(days: daysInFirstWeek - 1));
-
+    final firstWeekEnd = firstDayOfYear.add(Duration(days: daysInFirstWeek - 1));
+    
     if (date.isBefore(firstWeekEnd) || date.isAtSameMomentAs(firstWeekEnd)) {
       return 1;
     }
-
+    
     final daysSinceFirstWeek = date.difference(firstWeekEnd).inDays;
     return (daysSinceFirstWeek / 7).floor() + 2;
   }

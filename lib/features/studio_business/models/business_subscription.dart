@@ -154,18 +154,18 @@ extension SubscriptionPlanExtension on SubscriptionPlan {
   String get description {
     switch (this) {
       case SubscriptionPlan.starter:
-        return 'Up to 20 meetings, basic calendar view, no branding';
+        return 'Unlimited meetings, no map access, basic calendar view, no branding';
       case SubscriptionPlan.professional:
-        return 'Unlimited meetings, full branding, up to 200 map loads, analytics, CRM features';
+        return 'Unlimited meetings, full branding, 200 map loads/month, analytics, CRM features';
       case SubscriptionPlan.businessPlus:
-        return 'Everything in Professional plus 500 map loads, advanced analytics, priority support';
+        return 'Everything in Professional plus 500 map loads/month, advanced analytics, priority support';
     }
   }
 
   double get price {
     switch (this) {
       case SubscriptionPlan.starter:
-        return 5.00;
+        return 0.00; // Free starter plan
       case SubscriptionPlan.professional:
         return 15.00;
       case SubscriptionPlan.businessPlus:
@@ -178,10 +178,9 @@ extension SubscriptionPlanExtension on SubscriptionPlan {
   int get meetingLimit {
     switch (this) {
       case SubscriptionPlan.starter:
-        return 20;
       case SubscriptionPlan.professional:
       case SubscriptionPlan.businessPlus:
-        return -1; // unlimited
+        return -1; // unlimited meetings for all business plans
     }
   }
 
@@ -241,9 +240,11 @@ extension SubscriptionPlanExtension on SubscriptionPlan {
     switch (this) {
       case SubscriptionPlan.starter:
         return [
-          'Up to 20 meetings per month',
+          'Unlimited meetings',
           'Daily calendar view',
           'Basic booking management',
+          'No map access',
+          'No branding',
           'Email support',
         ];
       case SubscriptionPlan.professional:
@@ -251,17 +252,21 @@ extension SubscriptionPlanExtension on SubscriptionPlan {
           'Unlimited meetings',
           'Full business branding',
           'Daily & monthly calendar views',
-          'Up to 200 map loads/month',
+          '200 map loads/month included',
+          'Map overage: €0.01 per extra load',
           '"My Clients" CRM list',
           'Analytics dashboard',
           'CSV export',
           'Email reminders',
+          'Standard support',
         ];
       case SubscriptionPlan.businessPlus:
         return [
           'Everything in Professional',
-          'Up to 500 map loads/month',
+          '500 map loads/month included',
+          'Map overage: €0.01 per extra load',
           'Advanced analytics',
+          'Excel export',
           'Priority support',
           'Preferred handling',
           'Custom integrations',
