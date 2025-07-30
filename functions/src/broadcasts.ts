@@ -70,14 +70,15 @@ interface FCMPayload {
  * Triggered by admin users from the Flutter app
  */
 export const sendBroadcastMessage = functions.https.onCall(
-  async (data: BroadcastRequest, context: CallableContext): Promise<DeliveryResult> => {
+  async (request): Promise<DeliveryResult> => {
+    const data = request.data as BroadcastRequest;
     // Verify admin authentication
-    if (!context.auth) {
+    if (!request.auth) {
       throw new functions.https.HttpsError('unauthenticated', 'User must be authenticated');
     }
 
     // Verify admin privileges
-    const userDoc = await firestore.collection('users').doc(context.auth.uid).get();
+    const userDoc = await firestore.collection('users').doc(request.auth.uid).get();
     if (!userDoc.exists || userDoc.data()?.role !== 'admin') {
       throw new functions.https.HttpsError('permission-denied', 'Admin privileges required');
     }
