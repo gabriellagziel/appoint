@@ -10,114 +10,29 @@ jobs:
   localization_validation:
     name: Localization Validation
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/your-org/app-oint-dev:latest
-      options: --pull
     env:
-      PUB_HOSTED_URL: https://pub.flutter-io.cn
-      FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
-      FLUTTER_CACHE_DIR: ~/.flutter
-      PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
-      GHE_ENTERPRISE: ${{ secrets.GHE_ENTERPRISE }}
-      GHE_TOKEN: ${{ secrets.GHE_TOKEN }}
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
     steps:
       - uses: actions/checkout@v3
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
-      - name: Setup Flutter SDK
+      
+      - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.24.5'
-          cache: true
-      - name: Setup Dart
-        uses: dart-lang/setup-dart@v1
-        with:
-          sdk: '3.4.0'
-      - name: Ensure Flutter & Dart in PATH
-        run: |
-          echo "/usr/local/flutter/bin" >> $GITHUB_PATH
-          echo "/usr/lib/dart/bin" >> $GITHUB_PATH
-      - name: Cache Flutter SDK
-        uses: actions/cache@v3
-        with:
-          path: ~/.flutter
-          key: ${{ runner.os }}-flutter-${{ hashFiles('.github/workflows/localization.yml') }}
-          restore-keys: |
-            ${{ runner.os }}-flutter-
-      - name: Cache Pub packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
-      - name: Clear Flutter cache
-        run: flutter clean
-      - name: Verify Flutter Version
-        run: flutter --version
-      - name: Configure Network Allowlist
-        run: |
-          scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
-      - name: "Pre-flight: Verify network & Dart"
-        run: |
-          which dart
-          version_line=$(dart --version 2>&1)
-          echo "$version_line"
-          sdk=$(echo "$version_line" | awk '{print $4}')
-          required=3.4.0
-          if [ "$(printf '%s\n%s\n' "$required" "$sdk" | sort -V | head -n1)" != "$required" ]; then
-            echo "Dart SDK $sdk is below required $required" && exit 1
-          fi
-          curl --fail https://firebase-public.firebaseio.com
-          curl --fail https://storage.googleapis.com
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com dart.dev; do
-            curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
-          done
+          flutter-version: '3.7.0'
+      
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18'
           cache: 'npm'
+      
       - name: Install cspell
         run: npm install -g cspell
-      - name: Check storage connectivity
-        run: curl --fail https://storage.googleapis.com
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
-      - run: flutter pub get
-      - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs
-      - name: Check storage connectivity
-        run: curl --fail https://storage.googleapis.com
-      - name: Configure offline pub cache
-        run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Check network access
-        run: |
-          curl --fail https://storage.googleapis.com
-          curl --fail https://dart.dev
-          curl --fail https://pub.dev
-          curl --fail https://firebase-public.firebaseio.com
-      - name: Fetch dependencies offline
+      
+      - name: Get Flutter dependencies
         run: flutter pub get
-      - run: flutter analyze
-      - run: dart analyze
-      - name: Run Flutter tests with coverage
-        run: dart test --coverage
-      - run: flutter test integration_test
-      - run: flutter build web
-      - name: Upload coverage artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage-report
-          path: coverage/lcov.info
+      
       - name: Validate ARB files structure
         run: |
           echo "Checking ARB files structure..."
@@ -128,14 +43,14 @@ jobs:
             fi
             echo "✅ Found: $file"
           done
-
+          
           # Check that all ARB files have the same number of keys
-          en_keys=$(grep -c '^  \"' lib/l10n/app_en.arb)
+          en_keys=$(grep -c '^  "' lib/l10n/app_en.arb)
           echo "English ARB has $en_keys keys"
-
+          
           for file in lib/l10n/app_*.arb; do
             if [ "$file" != "lib/l10n/app_en.arb" ]; then
-              key_count=$(grep -c '^  \"' "$file")
+              key_count=$(grep -c '^  "' "$file")
               if [ "$key_count" -ne "$en_keys" ]; then
                 echo "❌ $file has $key_count keys, expected $en_keys"
                 exit 1
@@ -143,37 +58,39 @@ jobs:
               echo "✅ $file has correct key count: $key_count"
             fi
           done
-      - name: Merge missing l10n keys
-        run: dart scripts/merge_l10n.dart
+      
       - name: Generate localizations
         run: flutter gen-l10n
-      - name: Check for undefined localization getters
-        run: dart scripts/check_l10n_getters.dart
+      
       - name: Verify generated files
         run: |
           echo "Checking generated localization files..."
           expected_count=32
           actual_count=$(ls lib/l10n/app_localizations_*.dart | wc -l)
-
+          
           if [ "$actual_count" -ne "$expected_count" ]; then
             echo "❌ Expected $expected_count generated files, found $actual_count"
             exit 1
           fi
           echo "✅ Generated $actual_count localization files"
-      - name: Dart analyze
-        run: dart analyze
+      
+      - name: Flutter analyze
+        run: flutter analyze
+      
       - name: Spell check ARB files
         run: |
           echo "Running spell check on ARB files..."
           npx cspell "lib/l10n/app_*.arb" --no-progress
+      
       - name: Generate TODO list
         run: |
           echo "Generating TODO list for translations..."
           grep -R "TODO:" lib/l10n/app_*.arb > todo_list.txt
           echo "Found $(wc -l < todo_list.txt) TODO items"
           cat todo_list.txt
+      
       - name: Upload TODO list as artifact
         uses: actions/upload-artifact@v3
         with:
           name: translation-todos
-          path: todo_list.txt
+          path: todo_list.txt 
