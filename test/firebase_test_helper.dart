@@ -133,8 +133,8 @@ class FirebaseTestHelper {
     });
 
     // Setup query snapshot mock with proper type casting
-    when(() => mockQuerySnapshot.docs).thenReturn(
-        [mockDocumentSnapshot as QueryDocumentSnapshot<Object?>]);
+    when(() => mockQuerySnapshot.docs)
+        .thenReturn([mockDocumentSnapshot as QueryDocumentSnapshot<Object?>]);
     when(() => mockQuerySnapshot.size).thenReturn(1);
   }
 }
