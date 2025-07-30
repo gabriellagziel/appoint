@@ -1,3115 +1,781 @@
 {
   "@@locale": "es",
-  "refresh": "[ES] Actualizar",
-  "@refresh": {
-    "description": "Description"
-  },
-  "home": "[ES] Inicio",
-  "@home": {
-    "description": "Description"
-  },
-  "noSessionsYet": "[ES] [ES] No sessions yet",
-  "@noSessionsYet": {
-    "description": "Description"
-  },
-  "ok": "[ES] OK",
-  "@ok": {
-    "description": "Description"
-  },
-  "playtimeLandingChooseMode": "[ES] Elige un modo",
-  "@playtimeLandingChooseMode": {
-    "description": "Description"
-  },
-  "signUp": "[ES] Registrarse",
-  "@signUp": {
-    "description": "Description"
-  },
-  "scheduleMessage": "[ES] Programar mensaje",
-  "@scheduleMessage": {
-    "description": "Description"
-  },
-  "decline": "[ES] Declinar",
-  "@decline": {
-    "description": "Description"
-  },
-  "adminBroadcast": "[ES] Difusión de administrador",
-  "@adminBroadcast": {
-    "description": "Localization key for: Admin Broadcast"
-  },
-  "login": "[ES] Iniciar sesión",
-  "@login": {
-    "description": "Description"
-  },
-  "playtimeChooseFriends": "[ES] Elegir amigos",
-  "@playtimeChooseFriends": {
-    "description": "Description"
-  },
-  "noInvites": "[ES] Sin invitaciones",
-  "@noInvites": {
-    "description": "Description"
-  },
-  "playtimeChooseTime": "[ES] Elegir hora",
-  "@playtimeChooseTime": {
-    "description": "Description"
-  },
-  "success": "[ES] Éxito",
-  "@success": {
-    "description": "Description"
-  },
-  "undo": "[ES] Deshacer",
-  "@undo": {
-    "description": "Description"
-  },
-  "opened": "[ES] Abierto",
-  "@opened": {
-    "description": "opened description"
-  },
-  "createVirtualSession": "[ES] Crear sesión virtual",
-  "@createVirtualSession": {
-    "description": "Description"
-  },
-  "messageSentSuccessfully": "[ES] Mensaje enviado exitosamente",
-  "@messageSentSuccessfully": {
-    "description": "messageSentSuccessfully description"
-  },
-  "redo": "[ES] Rehacer",
-  "@redo": {
-    "description": "Description"
-  },
-  "next": "[ES] Siguiente",
-  "@next": {
-    "description": "Description"
-  },
-  "search": "[ES] Buscar",
-  "@search": {
-    "description": "Description"
-  },
-  "cancelInviteConfirmation": "[ES] ¿Confirmar cancelación de invitación?",
-  "@cancelInviteConfirmation": {
-    "description": "Description"
-  },
-  "created": "[ES] Creado",
-  "@created": {
-    "description": "created description"
-  },
-  "revokeAccess": "[ES] Revocar acceso",
-  "@revokeAccess": {
-    "description": "Description"
-  },
-  "saveGroupForRecognition": "[ES] Guardar grupo para reconocimiento",
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
-  "playtimeLiveScheduled": "[ES] Juego en vivo programado",
-  "@playtimeLiveScheduled": {
-    "description": "Description"
-  },
-  "revokeAccessConfirmation": "[ES] ¿Confirmar revocación de acceso?",
-  "@revokeAccessConfirmation": {
-    "description": "Description"
-  },
-  "download": "[ES] Descargar",
-  "@download": {
-    "description": "Description"
-  },
-  "password": "[ES] Contraseña",
-  "@password": {
-    "description": "Description"
-  },
-  "errorLoadingFamilyLinks": "[ES] Error al cargar enlaces familiares",
-  "@errorLoadingFamilyLinks": {
-    "description": "Description"
-  },
-  "cancel": "[ES] Cancelar",
-  "@cancel": {
-    "description": "cancel description"
-  },
-  "playtimeCreate": "[ES] Crear juego",
-  "@playtimeCreate": {
-    "description": "Description"
-  },
-  "failedToActionPrivacyRequest": "[ES] Error al procesar solicitud de privacidad",
-  "@failedToActionPrivacyRequest": {
-    "description": "failedToActionPrivacyRequest description"
-  },
-  "appTitle": "[ES] Appoint",
-  "@appTitle": {
-    "description": "Description"
-  },
-  "accept": "[ES] Aceptar",
-  "@accept": {
-    "description": "Description"
-  },
-  "playtimeModeVirtual": "[ES] Modo virtual",
-  "@playtimeModeVirtual": {
-    "description": "Description"
-  },
-  "playtimeDescription": "[ES] Descripción del juego",
-  "@playtimeDescription": {
-    "description": "Description"
-  },
-  "delete": "[ES] Eliminar",
-  "@delete": {
-    "description": "Description"
-  },
-  "playtimeVirtualStarted": "[ES] Juego virtual iniciado",
-  "@playtimeVirtualStarted": {
-    "description": "Description"
-  },
-  "createYourFirstGame": "[ES] Crea tu primer juego",
-  "@createYourFirstGame": {
-    "description": "Description"
-  },
-  "participants": "[ES] Participantes",
-  "@participants": {
-    "description": "Description"
-  },
-  "recipients": "[ES] Destinatarios",
-  "@recipients": {
-    "description": "recipients description"
-  },
-  "noResults": "[ES] Sin resultados",
-  "@noResults": {
-    "description": "Description"
-  },
-  "yes": "[ES] Sí",
-  "@yes": {
-    "description": "yes description"
-  },
-  "invite": "[ES] Invitar",
-  "@invite": {
-    "description": "Description"
-  },
-  "playtimeModeLive": "[ES] Modo en vivo",
-  "@playtimeModeLive": {
-    "description": "Description"
-  },
-  "done": "[ES] Hecho",
-  "@done": {
-    "description": "Description"
-  },
-  "defaultShareMessage": "[ES] Mensaje de compartir predeterminado",
-  "@defaultShareMessage": {
-    "description": "Description"
-  },
-  "no": "[ES] No",
-  "@no": {
-    "description": "Description"
-  },
-  "playtimeHub": "[ES] Centro de juegos",
-  "@playtimeHub": {
-    "description": "Description"
-  },
-  "createLiveSession": "[ES] Crear sesión en vivo",
-  "@createLiveSession": {
-    "description": "Description"
-  },
-  "enableNotifications": "[ES] Habilitar notificaciones",
-  "@enableNotifications": {
-    "description": "Description"
-  },
-  "invited": "[ES] Invitado",
-  "@invited": {
-    "description": "Description"
-  },
-  "content": "[ES] Contenido",
-  "@content": {
-    "description": "content description"
-  },
-  "meetingSharedSuccessfully": "[ES] Reunión compartida exitosamente",
-  "@meetingSharedSuccessfully": {
-    "description": "Description"
-  },
-  "welcomeToPlaytime": "[ES] Bienvenido a Playtime",
-  "@welcomeToPlaytime": {
-    "description": "Description"
-  },
-  "viewAll": "[ES] Ver todo",
-  "@viewAll": {
-    "description": "Description"
-  },
-  "playtimeVirtual": "[ES] Juego virtual",
-  "@playtimeVirtual": {
-    "description": "Description"
-  },
-  "staffScreenTBD": "[ES] Pantalla de personal (Pendiente)",
-  "@staffScreenTBD": {
-    "description": "Description"
-  },
-  "cut": "[ES] Cortar",
-  "@cut": {
-    "description": "Description"
-  },
-  "inviteCancelledSuccessfully": "[ES] Invitación cancelada exitosamente",
-  "@inviteCancelledSuccessfully": {
-    "description": "Description"
-  },
-  "retry": "[ES] Reintentar",
-  "@retry": {
-    "description": "Description"
-  },
-  "composeBroadcastMessage": "[ES] Componer mensaje de difusión",
-  "@composeBroadcastMessage": {
-    "description": "composeBroadcastMessage description"
-  },
-  "sendNow": "[ES] Enviar ahora",
-  "@sendNow": {
-    "description": "sendNow description"
-  },
-  "noGamesYet": "[ES] [ES] No games yet",
-  "@noGamesYet": {
-    "description": "Description"
-  },
-  "select": "[ES] Seleccionar",
-  "@select": {
-    "description": "Description"
-  },
-  "about": "[ES] Acerca de",
   "@about": {
     "description": "About navigation label"
   },
-  "choose": "[ES] Elegir",
-  "@choose": {
+  "@accept": {
     "description": "Description"
   },
-  "profile": "[ES] Perfil",
-  "@profile": {
-    "description": "Description"
-  },
-  "removeChild": "[ES] Eliminar niño",
-  "@removeChild": {
-    "description": "Description"
-  },
-  "status": "[ES] Estado",
-  "@status": {
-    "description": "status description"
-  },
-  "logout": "[ES] Cerrar sesión",
-  "@logout": {
-    "description": "Description"
-  },
-  "paste": "[ES] Pegar",
-  "@paste": {
-    "description": "Description"
-  },
-  "welcome": "[ES] Bienvenido",
-  "@welcome": {
-    "description": "Description"
-  },
-  "playtimeCreateSession": "[ES] Crear sesión de juego",
-  "@playtimeCreateSession": {
-    "description": "Description"
-  },
-  "familyMembers": "[ES] Miembros de la familia",
-  "@familyMembers": {
-    "description": "Description"
-  },
-  "upload": "[ES] Subir",
-  "@upload": {
-    "description": "Description"
-  },
-  "upcomingSessions": "[ES] Sesiones próximas",
-  "@upcomingSessions": {
-    "description": "Description"
-  },
-  "enterGroupName": "[ES] Ingresar nombre del grupo",
-  "@enterGroupName": {
-    "description": "Description"
-  },
-  "confirm": "[ES] Confirmar",
-  "@confirm": {
-    "description": "Description"
-  },
-  "playtimeLive": "[ES] Juego en vivo",
-  "@playtimeLive": {
-    "description": "Description"
-  },
-  "errorLoadingInvites": "[ES] Error al cargar invitaciones",
-  "@errorLoadingInvites": {
-    "description": "Description"
-  },
-  "targetingFilters": "[ES] Filtros de segmentación",
-  "@targetingFilters": {
-    "description": "targetingFilters description"
-  },
-  "pickVideo": "[ES] Seleccionar video",
-  "@pickVideo": {
-    "description": "pickVideo description"
-  },
-  "playtimeGameDeleted": "[ES] Juego eliminado",
-  "@playtimeGameDeleted": {
-    "description": "Description"
-  },
-  "scheduleForLater": "[ES] Programar para más tarde",
-  "@scheduleForLater": {
-    "description": "scheduleForLater description"
-  },
-  "accessRevokedSuccessfully": "[ES] Acceso revocado exitosamente",
   "@accessRevokedSuccessfully": {
     "description": "Description"
   },
-  "type": "[ES] Tipo",
-  "@type": {
-    "description": "type description"
-  },
-  "checkingPermissions": "[ES] Verificando permisos",
-  "@checkingPermissions": {
-    "description": "checkingPermissions description"
-  },
-  "copy": "[ES] Copiar",
-  "@copy": {
-    "description": "Description"
-  },
-  "yesCancel": "[ES] Sí, cancelar",
-  "@yesCancel": {
-    "description": "Description"
-  },
-  "email": "[ES] Correo electrónico",
-  "@email": {
-    "description": "Description"
-  },
-  "shareOnWhatsApp": "[ES] Compartir en WhatsApp",
-  "@shareOnWhatsApp": {
-    "description": "Description"
-  },
-  "notificationSettings": "[ES] Configuración de notificaciones",
-  "@notificationSettings": {
-    "description": "Description"
-  },
-  "myProfile": "[ES] Mi perfil",
-  "@myProfile": {
-    "description": "Description"
-  },
-  "revoke": "[ES] Revocar",
-  "@revoke": {
-    "description": "Description"
-  },
-  "noBroadcastMessages": "[ES] Sin mensajes de difusión",
-  "@noBroadcastMessages": {
-    "description": "noBroadcastMessages description"
-  },
-  "requestType": "[ES] Tipo de solicitud",
-  "@requestType": {
-    "description": "requestType description"
-  },
-  "notifications": "[ES] Notificaciones",
-  "@notifications": {
-    "description": "Description"
-  },
-  "details": "[ES] Detalles",
-  "@details": {
-    "description": "details description"
-  },
-  "cancelInvite": "[ES] Cancelar invitación",
-  "@cancelInvite": {
-    "description": "Description"
-  },
-  "createNew": "[ES] [ES] Create New",
-  "@createNew": {
-    "description": "Description"
-  },
-  "settings": "[ES] Configuración",
-  "@settings": {
-    "description": "Description"
-  },
-  "playtimeReject": "[ES] Rechazar",
-  "@playtimeReject": {
-    "description": "Description"
-  },
-  "errorLoadingProfile": "[ES] Error al cargar perfil",
-  "@errorLoadingProfile": {
-    "description": "Description"
-  },
-  "edit": "[ES] Editar",
-  "@edit": {
-    "description": "Description"
-  },
-  "add": "[ES] Agregar",
   "@add": {
     "description": "Description"
   },
-  "playtimeGameApproved": "[ES] Juego aprobado",
-  "@playtimeGameApproved": {
+  "@appTitle": {
     "description": "Description"
   },
-  "forgotPassword": "[ES] ¿Olvidaste tu contraseña?",
-  "@forgotPassword": {
-    "description": "Description"
-  },
-  "familyDashboard": "[ES] Panel familiar",
-  "@familyDashboard": {
-    "description": "Description"
-  },
-  "loading": "[ES] Cargando...",
-  "@loading": {
-    "description": "Description"
-  },
-  "quickActions": "[ES] Acciones rápidas",
-  "@quickActions": {
-    "description": "Description"
-  },
-  "playtimeTitle": "[ES] Título del juego",
-  "@playtimeTitle": {
-    "description": "Description"
-  },
-  "otpResentSuccessfully": "[ES] OTP reenviado exitosamente",
-  "@otpResentSuccessfully": {
-    "description": "Description"
-  },
-  "errorCheckingPermissions": "[ES] Error al verificar permisos",
-  "@errorCheckingPermissions": {
-    "description": "errorCheckingPermissions description"
-  },
-  "clientScreenTBD": "[ES] Pantalla de cliente (Pendiente)",
-  "@clientScreenTBD": {
-    "description": "Description"
-  },
-  "fcmToken": "[ES] Token FCM",
-  "@fcmToken": {
-    "description": "Description"
-  },
-  "pickImage": "[ES] Seleccionar imagen",
-  "@pickImage": {
-    "description": "pickImage description"
-  },
-  "previous": "[ES] Anterior",
-  "@previous": {
-    "description": "Description"
-  },
-  "noProfileFound": "[ES] No se encontró perfil",
-  "@noProfileFound": {
-    "description": "Description"
-  },
-  "noFamilyMembersYet": "[ES] Aún no hay miembros de la familia",
-  "@noFamilyMembersYet": {
-    "description": "Description"
-  },
-  "mediaOptional": "[ES] Medios opcionales",
-  "@mediaOptional": {
-    "description": "mediaOptional description"
-  },
-  "messageSavedSuccessfully": "[ES] Mensaje guardado exitosamente",
-  "@messageSavedSuccessfully": {
-    "description": "messageSavedSuccessfully description"
-  },
-  "scheduledFor": "[ES] Programado para",
-  "@scheduledFor": {
-    "description": "Description"
-  },
-  "dashboard": "[ES] Panel de control",
-  "@dashboard": {
-    "description": "Description"
-  },
-  "noPermissionForBroadcast": "[ES] Sin permiso para difusión",
-  "@noPermissionForBroadcast": {
-    "description": "noPermissionForBroadcast description"
-  },
-  "playtimeAdminPanelTitle": "[ES] Panel de administración de juegos",
-  "@playtimeAdminPanelTitle": {
-    "description": "Localization key for: Playtime Games – Admin"
-  },
-  "inviteDetail": "[ES] Detalle de invitación",
-  "@inviteDetail": {
-    "description": "Description"
-  },
-  "scheduled": "[ES] Programado",
-  "@scheduled": {
-    "description": "scheduled description"
-  },
-  "failedToResendOtp": "[ES] Error al reenviar OTP",
-  "@failedToResendOtp": {
-    "description": "Description"
-  },
-  "scheduling": "[ES] Programación",
-  "@scheduling": {
-    "description": "scheduling description"
-  },
-  "errorSavingMessage": "[ES] Error al guardar mensaje",
-  "@errorSavingMessage": {
-    "description": "errorSavingMessage description"
-  },
-  "save": "[ES] Guardar",
-  "@save": {
-    "description": "save description"
-  },
-  "playtimeApprove": "[ES] Aprobar",
-  "@playtimeApprove": {
-    "description": "Description"
-  },
-  "createYourFirstSession": "[ES] Crea tu primera sesión",
-  "@createYourFirstSession": {
-    "description": "Description"
-  },
-  "playtimeGameRejected": "[ES] Juego rechazado",
-  "@playtimeGameRejected": {
-    "description": "Description"
-  },
-  "failedToRevokeAccess": "[ES] Error al revocar acceso",
-  "@failedToRevokeAccess": {
-    "description": "Description"
-  },
-  "recentGames": "[ES] Juegos recientes",
-  "@recentGames": {
-    "description": "Description"
-  },
-  "customizeMessage": "[ES] Personalizar mensaje",
-  "@customizeMessage": {
-    "description": "Description"
-  },
-  "failedToCancelInvite": "[ES] Error al cancelar invitación",
-  "@failedToCancelInvite": {
-    "description": "Description"
-  },
-  "errorSendingMessage": "[ES] Error al enviar mensaje",
-  "@errorSendingMessage": {
-    "description": "errorSendingMessage description"
-  },
-  "confirmPassword": "[ES] Confirmar contraseña",
-  "@confirmPassword": {
-    "description": "Description"
-  },
-  "errorLoadingPrivacyRequests": "[ES] Error al cargar solicitudes de privacidad",
-  "@errorLoadingPrivacyRequests": {
-    "description": "errorLoadingPrivacyRequests description"
-  },
-  "connectedChildren": "[ES] Niños conectados",
-  "@connectedChildren": {
-    "description": "Description"
-  },
-  "share": "[ES] Compartir",
-  "@share": {
-    "description": "Description"
-  },
-  "playtimeEnterGameName": "[ES] Ingresar nombre del juego",
-  "@playtimeEnterGameName": {
-    "description": "Description"
-  },
-  "pleaseLoginForFamilyFeatures": "[ES] Por favor inicia sesión para acceder a las funciones familiares",
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Description"
-  },
-  "myInvites": "[ES] Mis invitaciones",
-  "@myInvites": {
-    "description": "Description"
-  },
-  "createGame": "[ES] [ES] Create Game",
-  "@createGame": {
-    "description": "Description"
-  },
-  "groupNameOptional": "[ES] Nombre del grupo (opcional)",
-  "@groupNameOptional": {
-    "description": "Description"
-  },
-  "playtimeNoSessions": "[ES] No hay sesiones",
-  "@playtimeNoSessions": {
-    "description": "Description"
-  },
-  "adminScreenTBD": "[ES] Pantalla de administrador (Pendiente)",
-  "@adminScreenTBD": {
-    "description": "Localization key for: Admin screen coming soon"
-  },
-  "playtimeParentDashboardTitle": "[ES] Panel de padres",
-  "@playtimeParentDashboardTitle": {
-    "description": "Description"
-  },
-  "close": "[ES] Cerrar",
-  "@close": {
-    "description": "close description"
-  },
-  "knownGroupDetected": "[ES] Grupo conocido detectado",
-  "@knownGroupDetected": {
-    "description": "Description"
-  },
-  "back": "[ES] Atrás",
   "@back": {
     "description": "Description"
   },
-  "playtimeChooseGame": "[ES] Elegir juego",
-  "@playtimeChooseGame": {
+  "@cancel": {
+    "description": "cancel description"
+  },
+  "@cancelInvite": {
     "description": "Description"
   },
-  "managePermissions": "[ES] Gestionar permisos",
-  "@managePermissions": {
+  "@cancelInviteConfirmation": {
     "description": "Description"
   },
-  "pollOptions": "[ES] Opciones de encuesta",
-  "@pollOptions": {
-    "description": "pollOptions description"
+  "@checkingPermissions": {
+    "description": "checkingPermissions description"
   },
-  "clicked": "[ES] Hace clic",
+  "@choose": {
+    "description": "Description"
+  },
   "@clicked": {
     "description": "clicked description"
   },
-  "link": "[ES] Enlace",
+  "@clientScreenTBD": {
+    "description": "Description"
+  },
+  "@close": {
+    "description": "close description"
+  },
+  "@composeBroadcastMessage": {
+    "description": "composeBroadcastMessage description"
+  },
+  "@confirm": {
+    "description": "Description"
+  },
+  "@confirmPassword": {
+    "description": "Description"
+  },
+  "@connectedChildren": {
+    "description": "Description"
+  },
+  "@content": {
+    "description": "content description"
+  },
+  "@copy": {
+    "description": "Description"
+  },
+  "@createGame": {
+    "description": "Description"
+  },
+  "@createLiveSession": {
+    "description": "Description"
+  },
+  "@createNew": {
+    "description": "Description"
+  },
+  "@createVirtualSession": {
+    "description": "Description"
+  },
+  "@createYourFirstGame": {
+    "description": "Description"
+  },
+  "@createYourFirstSession": {
+    "description": "Description"
+  },
+  "@created": {
+    "description": "created description"
+  },
+  "@customizeMessage": {
+    "description": "Description"
+  },
+  "@cut": {
+    "description": "Description"
+  },
+  "@dashboard": {
+    "description": "Description"
+  },
+  "@decline": {
+    "description": "Description"
+  },
+  "@defaultShareMessage": {
+    "description": "Description"
+  },
+  "@delete": {
+    "description": "Description"
+  },
+  "@details": {
+    "description": "details description"
+  },
+  "@done": {
+    "description": "Description"
+  },
+  "@download": {
+    "description": "Description"
+  },
+  "@edit": {
+    "description": "Description"
+  },
+  "@email": {
+    "description": "Description"
+  },
+  "@enableNotifications": {
+    "description": "Description"
+  },
+  "@enterGroupName": {
+    "description": "Description"
+  },
+  "@error": {
+    "description": "Description"
+  },
+  "@errorCheckingPermissions": {
+    "description": "errorCheckingPermissions description"
+  },
+  "@errorLoadingFamilyLinks": {
+    "description": "Description"
+  },
+  "@errorLoadingInvites": {
+    "description": "Description"
+  },
+  "@errorLoadingPrivacyRequests": {
+    "description": "errorLoadingPrivacyRequests description"
+  },
+  "@errorLoadingProfile": {
+    "description": "Description"
+  },
+  "@errorSavingMessage": {
+    "description": "errorSavingMessage description"
+  },
+  "@errorSendingMessage": {
+    "description": "errorSendingMessage description"
+  },
+  "@failedToActionPrivacyRequest": {
+    "description": "failedToActionPrivacyRequest description"
+  },
+  "@failedToCancelInvite": {
+    "description": "Description"
+  },
+  "@failedToResendOtp": {
+    "description": "Description"
+  },
+  "@failedToRevokeAccess": {
+    "description": "Description"
+  },
+  "@familyDashboard": {
+    "description": "Description"
+  },
+  "@familyMembers": {
+    "description": "Description"
+  },
+  "@fcmToken": {
+    "description": "Description"
+  },
+  "@forgotPassword": {
+    "description": "Description"
+  },
+  "@groupNameOptional": {
+    "description": "Description"
+  },
+  "@home": {
+    "description": "Description"
+  },
+  "@invite": {
+    "description": "Description"
+  },
+  "@inviteCancelledSuccessfully": {
+    "description": "Description"
+  },
+  "@inviteDetail": {
+    "description": "Description"
+  },
+  "@invited": {
+    "description": "Description"
+  },
+  "@knownGroupDetected": {
+    "description": "Description"
+  },
   "@link": {
     "description": "link description"
   },
-  "meetingReadyMessage": "[ES] Mensaje de reunión lista",
+  "@loading": {
+    "description": "Description"
+  },
+  "@login": {
+    "description": "Description"
+  },
+  "@logout": {
+    "description": "Description"
+  },
+  "@managePermissions": {
+    "description": "Description"
+  },
+  "@mediaOptional": {
+    "description": "mediaOptional description"
+  },
   "@meetingReadyMessage": {
     "description": "Description"
   },
-  "pendingInvites": "[ES] Invitaciones pendientes",
+  "@meetingSharedSuccessfully": {
+    "description": "Description"
+  },
+  "@messageSavedSuccessfully": {
+    "description": "messageSavedSuccessfully description"
+  },
+  "@messageSentSuccessfully": {
+    "description": "messageSentSuccessfully description"
+  },
+  "@myInvites": {
+    "description": "Description"
+  },
+  "@myProfile": {
+    "description": "Description"
+  },
+  "@next": {
+    "description": "Description"
+  },
+  "@no": {
+    "description": "Description"
+  },
+  "@noBroadcastMessages": {
+    "description": "noBroadcastMessages description"
+  },
+  "@noFamilyMembersYet": {
+    "description": "Description"
+  },
+  "@noGamesYet": {
+    "description": "Description"
+  },
+  "@noInvites": {
+    "description": "Description"
+  },
+  "@noPermissionForBroadcast": {
+    "description": "noPermissionForBroadcast description"
+  },
+  "@noProfileFound": {
+    "description": "Description"
+  },
+  "@noResults": {
+    "description": "Description"
+  },
+  "@noSessionsYet": {
+    "description": "Description"
+  },
+  "@notificationSettings": {
+    "description": "Description"
+  },
+  "@notifications": {
+    "description": "Description"
+  },
+  "@ok": {
+    "description": "Description"
+  },
+  "@opened": {
+    "description": "opened description"
+  },
+  "@otpResentSuccessfully": {
+    "description": "Description"
+  },
+  "@participants": {
+    "description": "Description"
+  },
+  "@password": {
+    "description": "Description"
+  },
+  "@paste": {
+    "description": "Description"
+  },
   "@pendingInvites": {
     "description": "Description"
   },
-  "statusColon": "[ES] Estado:",
+  "@pickImage": {
+    "description": "pickImage description"
+  },
+  "@pickVideo": {
+    "description": "pickVideo description"
+  },
+  "@playtimeApprove": {
+    "description": "Description"
+  },
+  "@playtimeChooseFriends": {
+    "description": "Description"
+  },
+  "@playtimeChooseGame": {
+    "description": "Description"
+  },
+  "@playtimeChooseTime": {
+    "description": "Description"
+  },
+  "@playtimeCreate": {
+    "description": "Description"
+  },
+  "@playtimeCreateSession": {
+    "description": "Description"
+  },
+  "@playtimeDescription": {
+    "description": "Description"
+  },
+  "@playtimeEnterGameName": {
+    "description": "Description"
+  },
+  "@playtimeGameApproved": {
+    "description": "Description"
+  },
+  "@playtimeGameDeleted": {
+    "description": "Description"
+  },
+  "@playtimeGameRejected": {
+    "description": "Description"
+  },
+  "@playtimeHub": {
+    "description": "Description"
+  },
+  "@playtimeLandingChooseMode": {
+    "description": "Description"
+  },
+  "@playtimeLive": {
+    "description": "Description"
+  },
+  "@playtimeLiveScheduled": {
+    "description": "Description"
+  },
+  "@playtimeModeLive": {
+    "description": "Description"
+  },
+  "@playtimeModeVirtual": {
+    "description": "Description"
+  },
+  "@playtimeNoSessions": {
+    "description": "Description"
+  },
+  "@playtimeParentDashboardTitle": {
+    "description": "Description"
+  },
+  "@playtimeReject": {
+    "description": "Description"
+  },
+  "@playtimeTitle": {
+    "description": "Description"
+  },
+  "@playtimeVirtual": {
+    "description": "Description"
+  },
+  "@playtimeVirtualStarted": {
+    "description": "Description"
+  },
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Description"
+  },
+  "@pollOptions": {
+    "description": "pollOptions description"
+  },
+  "@previous": {
+    "description": "Description"
+  },
+  "@profile": {
+    "description": "Description"
+  },
+  "@quickActions": {
+    "description": "Description"
+  },
+  "@recentGames": {
+    "description": "Description"
+  },
+  "@recipients": {
+    "description": "recipients description"
+  },
+  "@redo": {
+    "description": "Description"
+  },
+  "@refresh": {
+    "description": "Description"
+  },
+  "@removeChild": {
+    "description": "Description"
+  },
+  "@requestType": {
+    "description": "requestType description"
+  },
+  "@retry": {
+    "description": "Description"
+  },
+  "@revoke": {
+    "description": "Description"
+  },
+  "@revokeAccess": {
+    "description": "Description"
+  },
+  "@revokeAccessConfirmation": {
+    "description": "Description"
+  },
+  "@save": {
+    "description": "save description"
+  },
+  "@saveGroupForRecognition": {
+    "description": "Description"
+  },
+  "@scheduleForLater": {
+    "description": "scheduleForLater description"
+  },
+  "@scheduleMessage": {
+    "description": "Description"
+  },
+  "@scheduled": {
+    "description": "scheduled description"
+  },
+  "@scheduledFor": {
+    "description": "Description"
+  },
+  "@scheduling": {
+    "description": "scheduling description"
+  },
+  "@search": {
+    "description": "Description"
+  },
+  "@select": {
+    "description": "Description"
+  },
+  "@sendNow": {
+    "description": "sendNow description"
+  },
+  "@settings": {
+    "description": "Description"
+  },
+  "@share": {
+    "description": "Description"
+  },
+  "@shareOnWhatsApp": {
+    "description": "Description"
+  },
+  "@signUp": {
+    "description": "Description"
+  },
+  "@staffScreenTBD": {
+    "description": "Description"
+  },
+  "@status": {
+    "description": "status description"
+  },
   "@statusColon": {
     "description": "statusColon description"
   },
-  "pleaseLoginToViewProfile": "[ES] Por favor inicia sesión para ver el perfil",
-  "@pleaseLoginToViewProfile": {
-    "description": "Localization key for: Please log in to view your profile."
-  },
-  "adminMetrics": "[ES] Admin Metrics",
-  "@adminMetrics": {
-    "description": "Localization key for: Admin Metrics"
-  },
-  "overview": "[ES] Overview",
-  "@overview": {
+  "@success": {
     "description": "Description"
   },
-  "bookings": "[ES] Bookings",
-  "@bookings": {
+  "@targetingFilters": {
+    "description": "targetingFilters description"
+  },
+  "@type": {
+    "description": "type description"
+  },
+  "@undo": {
     "description": "Description"
   },
-  "users": "[ES] Usuarios",
+  "@upcomingSessions": {
+    "description": "Description"
+  },
+  "@upload": {
+    "description": "Description"
+  },
+  "@viewAll": {
+    "description": "Description"
+  },
+  "@welcome": {
+    "description": "Description"
+  },
+  "@welcomeToPlaytime": {
+    "description": "Description"
+  },
+  "@yes": {
+    "description": "yes description"
+  },
+  "@yesCancel": {
+    "description": "Description"
+  },
+  "about": "Acerca de",
+  "accept": "Aceptar",
+  "accessRevokedSuccessfully": "Acceso revocado exitosamente",
+  "add": "Agregar",
+  "appTitle": "Appoint",
+  "back": "Atrás",
+  "cancel": "Cancelar",
+  "cancelInvite": "Cancelar invitación",
+  "cancelInviteConfirmation": "¿Confirmar cancelación de invitación?",
+  "checkingPermissions": "Verificando permisos",
+  "choose": "Elegir",
+  "clicked": "Hace clic",
+  "clientScreenTBD": "Pantalla de cliente (Pendiente)",
+  "close": "Cerrar",
+  "composeBroadcastMessage": "Componer mensaje de difusión",
+  "confirm": "Confirmar",
+  "confirmPassword": "Confirmar contraseña",
+  "connectedChildren": "Niños conectados",
+  "content": "Contenido",
+  "copy": "Copiar",
+  "createGame": "[ES] Create Game",
+  "createLiveSession": "Crear sesión en vivo",
+  "createNew": "[ES] Create New",
+  "createVirtualSession": "Crear sesión virtual",
+  "createYourFirstGame": "Crea tu primer juego",
+  "createYourFirstSession": "Crea tu primera sesión",
+  "created": "Creado",
+  "customizeMessage": "Personalizar mensaje",
+  "cut": "Cortar",
+  "dashboard": "Panel de control",
+  "decline": "Declinar",
+  "defaultShareMessage": "Mensaje de compartir predeterminado",
+  "delete": "Eliminar",
+  "details": "Detalles",
+  "done": "Hecho",
+  "download": "Descargar",
+  "edit": "Editar",
+  "email": "Correo electrónico",
+  "enableNotifications": "Habilitar notificaciones",
+  "enterGroupName": "Ingresar nombre del grupo",
+  "error": "Error",
+  "errorCheckingPermissions": "Error al verificar permisos",
+  "errorLoadingFamilyLinks": "Error al cargar enlaces familiares",
+  "errorLoadingInvites": "Error al cargar invitaciones",
+  "errorLoadingPrivacyRequests": "Error al cargar solicitudes de privacidad",
+  "errorLoadingProfile": "Error al cargar perfil",
+  "errorSavingMessage": "Error al guardar mensaje",
+  "errorSendingMessage": "Error al enviar mensaje",
+  "failedToActionPrivacyRequest": "Error al procesar solicitud de privacidad",
+  "failedToCancelInvite": "Error al cancelar invitación",
+  "failedToResendOtp": "Error al reenviar OTP",
+  "failedToRevokeAccess": "Error al revocar acceso",
+  "familyDashboard": "Panel familiar",
+  "familyMembers": "Miembros de la familia",
+  "fcmToken": "Token FCM",
+  "forgotPassword": "¿Olvidaste tu contraseña?",
+  "groupNameOptional": "Nombre del grupo (opcional)",
+  "home": "Inicio",
+  "invite": "Invitar",
+  "inviteCancelledSuccessfully": "Invitación cancelada exitosamente",
+  "inviteDetail": "Detalle de invitación",
+  "invited": "Invitado",
+  "knownGroupDetected": "Grupo conocido detectado",
+  "link": "Enlace",
+  "loading": "Cargando...",
+  "login": "Iniciar sesión",
+  "logout": "Cerrar sesión",
+  "managePermissions": "Gestionar permisos",
+  "mediaOptional": "Medios opcionales",
+  "meetingReadyMessage": "Mensaje de reunión lista",
+  "meetingSharedSuccessfully": "Reunión compartida exitosamente",
+  "messageSavedSuccessfully": "Mensaje guardado exitosamente",
+  "messageSentSuccessfully": "Mensaje enviado exitosamente",
+  "myInvites": "Mis invitaciones",
+  "myProfile": "Mi perfil",
+  "next": "Siguiente",
+  "no": "No",
+  "noBroadcastMessages": "Sin mensajes de difusión",
+  "noFamilyMembersYet": "Aún no hay miembros de la familia",
+  "noGamesYet": "[ES] No games yet",
+  "noInvites": "Sin invitaciones",
+  "noPermissionForBroadcast": "Sin permiso para difusión",
+  "noProfileFound": "No se encontró perfil",
+  "noResults": "Sin resultados",
+  "noSessionsYet": "[ES] No sessions yet",
+  "notificationSettings": "Configuración de notificaciones",
+  "notifications": "Notificaciones",
+  "ok": "OK",
+  "opened": "Abierto",
+  "otpResentSuccessfully": "OTP reenviado exitosamente",
+  "participants": "Participantes",
+  "password": "Contraseña",
+  "paste": "Pegar",
+  "pendingInvites": "Invitaciones pendientes",
+  "pickImage": "Seleccionar imagen",
+  "pickVideo": "Seleccionar video",
+  "playtimeApprove": "Aprobar",
+  "playtimeChooseFriends": "Elegir amigos",
+  "playtimeChooseGame": "Elegir juego",
+  "playtimeChooseTime": "Elegir hora",
+  "playtimeCreate": "Crear juego",
+  "playtimeCreateSession": "Crear sesión de juego",
+  "playtimeDescription": "Descripción del juego",
+  "playtimeEnterGameName": "Ingresar nombre del juego",
+  "playtimeGameApproved": "Juego aprobado",
+  "playtimeGameDeleted": "Juego eliminado",
+  "playtimeGameRejected": "Juego rechazado",
+  "playtimeHub": "Centro de juegos",
+  "playtimeLandingChooseMode": "Elige un modo",
+  "playtimeLive": "Juego en vivo",
+  "playtimeLiveScheduled": "Juego en vivo programado",
+  "playtimeModeLive": "Modo en vivo",
+  "playtimeModeVirtual": "Modo virtual",
+  "playtimeNoSessions": "No hay sesiones",
+  "playtimeParentDashboardTitle": "Panel de padres",
+  "playtimeReject": "Rechazar",
+  "playtimeTitle": "Título del juego",
+  "playtimeVirtual": "Juego virtual",
+  "playtimeVirtualStarted": "Juego virtual iniciado",
+  "pleaseLoginForFamilyFeatures": "Por favor inicia sesión para acceder a las funciones familiares",
+  "pleaseLoginToViewProfile": "Por favor inicia sesión para ver el perfil",
+  "pollOptions": "Opciones de encuesta",
+  "previous": "Anterior",
+  "profile": "Perfil",
+  "quickActions": "Acciones rápidas",
+  "recentGames": "Juegos recientes",
+  "recipients": "Destinatarios",
+  "redo": "Rehacer",
+  "refresh": "Actualizar",
+  "removeChild": "Eliminar niño",
+  "requestType": "Tipo de solicitud",
+  "retry": "Reintentar",
+  "revoke": "Revocar",
+  "revokeAccess": "Revocar acceso",
+  "revokeAccessConfirmation": "¿Confirmar revocación de acceso?",
+  "save": "Guardar",
+  "saveGroupForRecognition": "Guardar grupo para reconocimiento",
+  "scheduleForLater": "Programar para más tarde",
+  "scheduleMessage": "Programar mensaje",
+  "scheduled": "Programado",
+  "scheduledFor": "Programado para",
+  "scheduling": "Programación",
+  "search": "Buscar",
+  "select": "Seleccionar",
+  "sendNow": "Enviar ahora",
+  "settings": "Configuración",
+  "share": "Compartir",
+  "shareOnWhatsApp": "Compartir en WhatsApp",
+  "signUp": "Registrarse",
+  "staffScreenTBD": "Pantalla de personal (Pendiente)",
+  "status": "Estado",
+  "statusColon": "Estado:",
+  "success": "Éxito",
+  "targetingFilters": "Filtros de segmentación",
+  "type": "Tipo",
+  "undo": "Deshacer",
+  "upcomingSessions": "Sesiones próximas",
+  "upload": "Subir",
+  "viewAll": "Ver todo",
+  "welcome": "Bienvenido",
+  "welcomeToPlaytime": "Bienvenido a Playtime",
+  "yes": "Sí",
+  "yesCancel": "Sí, cancelar",
+  "errorEstimatingRecipients": "Error al estimar destinatarios",
+  "@errorEstimatingRecipients": {
+    "description": "errorEstimatingRecipients description"
+  },
+  "errorPickingImage": "Error al seleccionar imagen",
+  "@errorPickingImage": {
+    "description": "errorPickingImage description"
+  },
+  "errorPickingVideo": "Error al seleccionar video",
+  "@errorPickingVideo": {
+    "description": "errorPickingVideo description"
+  },
+  "organizations": "Organizaciones",
+  "@organizations": {
+    "description": "organizations description"
+  },
+  "noOrganizations": "Sin organizaciones",
+  "@noOrganizations": {
+    "description": "noOrganizations description"
+  },
+  "errorLoadingOrganizations": "Error al cargar organizaciones",
+  "@errorLoadingOrganizations": {
+    "description": "errorLoadingOrganizations description"
+  },
+  "members": "Miembros",
+  "@members": {
+    "description": "members description"
+  },
+  "users": "Usuarios",
   "@users": {
     "description": "users description"
   },
-  "revenue": "[ES] Ingresos",
+  "noUsers": "Sin usuarios",
+  "@noUsers": {
+    "description": "noUsers description"
+  },
+  "errorLoadingUsers": "Error al cargar usuarios",
+  "@errorLoadingUsers": {
+    "description": "errorLoadingUsers description"
+  },
+  "changeRole": "Cambiar rol",
+  "@changeRole": {
+    "description": "changeRole description"
+  },
+  "totalAppointments": "Total de citas",
+  "@totalAppointments": {
+    "description": "totalAppointments description"
+  },
+  "completedAppointments": "Citas completadas",
+  "@completedAppointments": {
+    "description": "completedAppointments description"
+  },
+  "revenue": "Ingresos",
   "@revenue": {
     "description": "revenue description"
   },
-  "contentLibrary": "[ES] Content Library",
-  "@contentLibrary": {
-    "description": "Localization key for: Content Library"
-  },
-  "authErrorUserNotFound": "[ES] No account found with this email address.",
-  "@authErrorUserNotFound": {
-    "description": "Localization key for: No account found with this email address."
-  },
-  "authErrorWrongPassword": "[ES] Incorrect password. Please try again.",
-  "@authErrorWrongPassword": {
-    "description": "Localization key for: Incorrect password. Please try again."
-  },
-  "authErrorInvalidEmail": "[ES] Please enter a valid email address.",
-  "@authErrorInvalidEmail": {
-    "description": "Localization key for: Please enter a valid email address."
-  },
-  "authErrorUserDisabled": "[ES] This account has been disabled. Please contact support.",
-  "@authErrorUserDisabled": {
-    "description": "Localization key for: This account has been disabled. Please contact support."
-  },
-  "authErrorWeakPassword": "[ES] Password is too weak. Please choose a stronger password.",
-  "@authErrorWeakPassword": {
-    "description": "Localization key for: Password is too weak. Please choose a stronger password."
-  },
-  "authErrorEmailAlreadyInUse": "[ES] An account with this email already exists.",
-  "@authErrorEmailAlreadyInUse": {
-    "description": "Localization key for: An account with this email already exists."
-  },
-  "authErrorTooManyRequests": "[ES] Too many failed attempts. Please try again later.",
-  "@authErrorTooManyRequests": {
-    "description": "Localization key for: Too many failed attempts. Please try again later."
-  },
-  "authErrorOperationNotAllowed": "[ES] This sign-in method is not enabled. Please contact support.",
-  "@authErrorOperationNotAllowed": {
-    "description": "Localization key for: This sign-in method is not enabled. Please contact support."
-  },
-  "authErrorInvalidCredential": "[ES] Invalid credentials. Please try again.",
-  "@authErrorInvalidCredential": {
-    "description": "Localization key for: Invalid credentials. Please try again."
-  },
-  "REDACTED_TOKEN": "[ES] An account already exists with this email using a different sign-in method.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: An account already exists with this email using a different sign-in method."
-  },
-  "authErrorCredentialAlreadyInUse": "[ES] These credentials are already associated with another account.",
-  "@authErrorCredentialAlreadyInUse": {
-    "description": "Localization key for: These credentials are already associated with another account."
-  },
-  "authErrorNetworkRequestFailed": "[ES] Network error. Please check your connection and try again.",
-  "@authErrorNetworkRequestFailed": {
-    "description": "Localization key for: Network error. Please check your connection and try again."
-  },
-  "socialAccountConflictTitle": "Conflicto de cuenta social",
-  "@socialAccountConflictTitle": {
-    "description": "Localization key for: Account Already Exists"
-  },
-  "socialAccountConflictMessage": "Parece que ya existe una cuenta",
-  "@socialAccountConflictMessage": {
-    "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
-  },
-  "linkAccounts": "Vincular cuentas",
-  "@linkAccounts": {
-    "description": "Localization key for: Link Accounts"
-  },
-  "signInWithExistingMethod": "Iniciar sesión con método existente",
-  "@signInWithExistingMethod": {
-    "description": "Localization key for: Sign in with existing method"
-  },
-  "authErrorRequiresRecentLogin": "[ES] Please log in again to perform this operation.",
-  "@authErrorRequiresRecentLogin": {
-    "description": "Localization key for: Please log in again to perform this operation."
-  },
-  "authErrorAppNotAuthorized": "[ES] This app is not authorized to use Firebase Authentication.",
-  "@authErrorAppNotAuthorized": {
-    "description": "Localization key for: This app is not authorized to use Firebase Authentication."
-  },
-  "REDACTED_TOKEN": "[ES] The verification code is invalid.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: The verification code is invalid."
-  },
-  "authErrorInvalidVerificationId": "[ES] The verification ID is invalid.",
-  "@authErrorInvalidVerificationId": {
-    "description": "Localization key for: The verification ID is invalid."
-  },
-  "REDACTED_TOKEN": "[ES] Please enter the verification code.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Please enter the verification code."
-  },
-  "authErrorMissingVerificationId": "[ES] Missing verification ID.",
-  "@authErrorMissingVerificationId": {
-    "description": "Localization key for: Missing verification ID."
-  },
-  "authErrorInvalidPhoneNumber": "[ES] The phone number is invalid.",
-  "@authErrorInvalidPhoneNumber": {
-    "description": "Localization key for: The phone number is invalid."
-  },
-  "authErrorMissingPhoneNumber": "[ES] Please enter a phone number.",
-  "@authErrorMissingPhoneNumber": {
-    "description": "Localization key for: Please enter a phone number."
-  },
-  "authErrorQuotaExceeded": "[ES] The SMS quota for this project has been exceeded. Please try again later.",
-  "@authErrorQuotaExceeded": {
-    "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
-  },
-  "authErrorCodeExpired": "[ES] The verification code has expired. Please request a new one.",
-  "@authErrorCodeExpired": {
-    "description": "Localization key for: The verification code has expired. Please request a new one."
-  },
-  "authErrorSessionExpired": "[ES] Your session has expired. Please log in again.",
-  "@authErrorSessionExpired": {
-    "description": "Localization key for: Your session has expired. Please log in again."
-  },
-  "REDACTED_TOKEN": "[ES] Multi-factor authentication is required.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Multi-factor authentication is required."
-  },
-  "REDACTED_TOKEN": "[ES] Multi-factor information not found.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Multi-factor information not found."
-  },
-  "REDACTED_TOKEN": "[ES] Missing multi-factor session.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Missing multi-factor session."
-  },
-  "REDACTED_TOKEN": "[ES] Invalid multi-factor session.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Invalid multi-factor session."
-  },
-  "REDACTED_TOKEN": "[ES] This second factor is already in use.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: This second factor is already in use."
-  },
-  "REDACTED_TOKEN": "[ES] Maximum number of second factors exceeded.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Maximum number of second factors exceeded."
-  },
-  "authErrorUnsupportedFirstFactor": "[ES] Unsupported first factor for multi-factor authentication.",
-  "@authErrorUnsupportedFirstFactor": {
-    "description": "Localization key for: Unsupported first factor for multi-factor authentication."
-  },
-  "REDACTED_TOKEN": "[ES] Email change requires verification.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Email change requires verification."
-  },
-  "REDACTED_TOKEN": "[ES] This phone number is already in use.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: This phone number is already in use."
-  },
-  "authErrorInvalidPassword": "[ES] The password is invalid or too weak.",
-  "@authErrorInvalidPassword": {
-    "description": "Localization key for: The password is invalid or too weak."
-  },
-  "authErrorInvalidIdToken": "[ES] The ID token is invalid.",
-  "@authErrorInvalidIdToken": {
-    "description": "Localization key for: The ID token is invalid."
-  },
-  "authErrorIdTokenExpired": "[ES] The ID token has expired.",
-  "@authErrorIdTokenExpired": {
-    "description": "Localization key for: The ID token has expired."
-  },
-  "authErrorIdTokenRevoked": "[ES] The ID token has been revoked.",
-  "@authErrorIdTokenRevoked": {
-    "description": "Localization key for: The ID token has been revoked."
-  },
-  "authErrorInternalError": "[ES] An internal error occurred. Please try again.",
-  "@authErrorInternalError": {
-    "description": "Localization key for: An internal error occurred. Please try again."
-  },
-  "authErrorInvalidArgument": "[ES] An invalid argument was provided.",
-  "@authErrorInvalidArgument": {
-    "description": "Localization key for: An invalid argument was provided."
-  },
-  "authErrorInvalidClaims": "[ES] Invalid custom claims provided.",
-  "@authErrorInvalidClaims": {
-    "description": "Localization key for: Invalid custom claims provided."
-  },
-  "authErrorInvalidContinueUri": "[ES] The continue URL is invalid.",
-  "@authErrorInvalidContinueUri": {
-    "description": "Localization key for: The continue URL is invalid."
-  },
-  "authErrorInvalidCreationTime": "[ES] The creation time is invalid.",
-  "@authErrorInvalidCreationTime": {
-    "description": "Localization key for: The creation time is invalid."
-  },
-  "authErrorInvalidDisabledField": "[ES] The disabled field value is invalid.",
-  "@authErrorInvalidDisabledField": {
-    "description": "Localization key for: The disabled field value is invalid."
-  },
-  "authErrorInvalidDisplayName": "[ES] The display name is invalid.",
-  "@authErrorInvalidDisplayName": {
-    "description": "Localization key for: The display name is invalid."
-  },
-  "REDACTED_TOKEN": "[ES] The dynamic link domain is invalid.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: The dynamic link domain is invalid."
-  },
-  "authErrorInvalidEmailVerified": "[ES] The email verified value is invalid.",
-  "@authErrorInvalidEmailVerified": {
-    "description": "Localization key for: The email verified value is invalid."
-  },
-  "authErrorInvalidHashAlgorithm": "[ES] The hash algorithm is invalid.",
-  "@authErrorInvalidHashAlgorithm": {
-    "description": "Localization key for: The hash algorithm is invalid."
-  },
-  "authErrorInvalidHashBlockSize": "[ES] The hash block size is invalid.",
-  "@authErrorInvalidHashBlockSize": {
-    "description": "Localization key for: The hash block size is invalid."
-  },
-  "REDACTED_TOKEN": "[ES] The hash derived key length is invalid.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: The hash derived key length is invalid."
-  },
-  "authErrorInvalidHashKey": "[ES] The hash key is invalid.",
-  "@authErrorInvalidHashKey": {
-    "description": "Localization key for: The hash key is invalid."
-  },
-  "authErrorInvalidHashMemoryCost": "[ES] The hash memory cost is invalid.",
-  "@authErrorInvalidHashMemoryCost": {
-    "description": "Localization key for: The hash memory cost is invalid."
-  },
-  "REDACTED_TOKEN": "[ES] The hash parallelization is invalid.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: The hash parallelization is invalid."
-  },
-  "authErrorInvalidHashRounds": "[ES] The hash rounds value is invalid.",
-  "@authErrorInvalidHashRounds": {
-    "description": "Localization key for: The hash rounds value is invalid."
-  },
-  "REDACTED_TOKEN": "[ES] The hash salt separator is invalid.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: The hash salt separator is invalid."
-  },
-  "authErrorInvalidLastSignInTime": "[ES] The last sign-in time is invalid.",
-  "@authErrorInvalidLastSignInTime": {
-    "description": "Localization key for: The last sign-in time is invalid."
-  },
-  "authErrorInvalidPageToken": "[ES] The page token is invalid.",
-  "@authErrorInvalidPageToken": {
-    "description": "Localization key for: The page token is invalid."
-  },
-  "authErrorInvalidProviderData": "[ES] The provider data is invalid.",
-  "@authErrorInvalidProviderData": {
-    "description": "Localization key for: The provider data is invalid."
-  },
-  "authErrorInvalidProviderId": "[ES] The provider ID is invalid.",
-  "@authErrorInvalidProviderId": {
-    "description": "Localization key for: The provider ID is invalid."
-  },
-  "REDACTED_TOKEN": "[ES] The session cookie duration is invalid.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: The session cookie duration is invalid."
-  },
-  "authErrorInvalidUid": "[ES] The UID is invalid.",
-  "@authErrorInvalidUid": {
-    "description": "Localization key for: The UID is invalid."
-  },
-  "authErrorInvalidUserImport": "[ES] The user import record is invalid.",
-  "@authErrorInvalidUserImport": {
-    "description": "Localization key for: The user import record is invalid."
-  },
-  "REDACTED_TOKEN": "[ES] Maximum user import count exceeded.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Maximum user import count exceeded."
-  },
-  "authErrorMissingAndroidPkgName": "[ES] Missing Android package name.",
-  "@authErrorMissingAndroidPkgName": {
-    "description": "Localization key for: Missing Android package name."
-  },
-  "authErrorMissingContinueUri": "[ES] Missing continue URL.",
-  "@authErrorMissingContinueUri": {
-    "description": "Localization key for: Missing continue URL."
-  },
-  "authErrorMissingHashAlgorithm": "[ES] Missing hash algorithm.",
-  "@authErrorMissingHashAlgorithm": {
-    "description": "Localization key for: Missing hash algorithm."
-  },
-  "authErrorMissingIosBundleId": "[ES] Missing iOS bundle ID.",
-  "@authErrorMissingIosBundleId": {
-    "description": "Localization key for: Missing iOS bundle ID."
-  },
-  "authErrorMissingUid": "[ES] Missing UID.",
-  "@authErrorMissingUid": {
-    "description": "Localization key for: Missing UID."
-  },
-  "REDACTED_TOKEN": "[ES] Missing OAuth client secret.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Missing OAuth client secret."
-  },
-  "authErrorProjectNotFound": "[ES] Firebase project not found.",
-  "@authErrorProjectNotFound": {
-    "description": "Localization key for: Firebase project not found."
-  },
-  "authErrorReservedClaims": "[ES] Reserved claims provided.",
-  "@authErrorReservedClaims": {
-    "description": "Localization key for: Reserved claims provided."
-  },
-  "authErrorSessionCookieExpired": "[ES] Session cookie has expired.",
-  "@authErrorSessionCookieExpired": {
-    "description": "Localization key for: Session cookie has expired."
-  },
-  "authErrorSessionCookieRevoked": "[ES] Session cookie has been revoked.",
-  "@authErrorSessionCookieRevoked": {
-    "description": "Localization key for: Session cookie has been revoked."
-  },
-  "authErrorUidAlreadyExists": "[ES] The UID is already in use.",
-  "@authErrorUidAlreadyExists": {
-    "description": "Localization key for: The UID is already in use."
-  },
-  "REDACTED_TOKEN": "[ES] The continue URL domain is not whitelisted.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: The continue URL domain is not whitelisted."
-  },
-  "authErrorUnknown": "[ES] An unknown authentication error occurred.",
-  "@authErrorUnknown": {
-    "description": "Localization key for: An unknown authentication error occurred."
-  },
-  "checkingPermissions1": "Verificando permisos...",
-  "@checkingPermissions1": {
-    "description": "Localization key for: Checking permissions..."
-  },
-  "paymentSuccessful": "Pago exitoso",
-  "@paymentSuccessful": {
-    "description": "Localization key for: Payment Successful!"
-  },
-  "businessAvailability": "Disponibilidad empresarial",
-  "@businessAvailability": {
-    "description": "Localization key for: Business Availability"
-  },
-  "send": "Enviar",
-  "@send": {
-    "description": "Localization key for: Send"
-  },
-  "newNotificationPayloadtitle": "Título de nueva notificación: {title}",
-  "@newNotificationPayloadtitle": {
-    "description": "Localization key for: New notification: {payloadTitle}"
-  },
-  "gameList": "Lista de juegos",
-  "@gameList": {
-    "description": "Localization key for: Game List"
-  },
-  "deleteAvailability": "Eliminar disponibilidad",
-  "@deleteAvailability": {
-    "description": "Localization key for: Delete Availability"
-  },
-  "connectToGoogleCalendar": "Conectar con Google Calendar",
-  "@connectToGoogleCalendar": {
-    "description": "Localization key for: Connect to Google Calendar"
-  },
-  "adminFreeAccess": "[ES] Admin Free Access",
-  "@adminFreeAccess": {
-    "description": "Localization key for: Admin Free Access"
-  },
-  "emailProfileemail": "Email del perfil: {email}",
-  "@emailProfileemail": {
-    "description": "Localization key for: Email: {profileEmail}"
-  },
-  "calendar": "Calendario",
-  "@calendar": {
-    "description": "Localization key for: Calendar"
-  },
-  "upload1": "[ES] Subir",
-  "@upload1": {
-    "description": "Localization key for: Upload"
-  },
-  "resolved": "Resuelto",
-  "@resolved": {
-    "description": "Localization key for: Resolved"
-  },
-  "keepSubscription": "Mantener suscripción",
-  "@keepSubscription": {
-    "description": "Localization key for: Keep Subscription"
-  },
-  "REDACTED_TOKEN": "[ES] Sesión virtual creada, invitando amigos",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Virtual session created! Inviting friends..."
-  },
-  "noEventsScheduledForToday": "No hay eventos programados para hoy",
-  "@noEventsScheduledForToday": {
-    "description": "Localization key for: No events scheduled for today"
-  },
-  "exportData": "Exportar datos",
-  "@exportData": {
-    "description": "Localization key for: Export Data"
-  },
-  "rewards": "[ES] Rewards (Spanish)",
-  "@rewards": {
-    "description": "Localization key for: Rewards"
-  },
-  "time": "[ES] Time (Spanish)",
-  "@time": {
-    "description": "Localization key for: Time"
-  },
-  "userCid": "[ES] ID de usuario: {cid}",
-  "@userCid": {
-    "description": "Localization key for: User {id}"
-  },
-  "noSlots": "[ES] No slots (Spanish)",
-  "@noSlots": {
-    "description": "Localization key for: No slots"
-  },
-  "signIn": "[ES] Sign In (Spanish)",
-  "@signIn": {
-    "description": "Localization key for: Sign In"
-  },
-  "homeFeedScreen": "[ES] Home Feed Screen (Spanish)",
-  "@homeFeedScreen": {
-    "description": "Localization key for: Home Feed Screen"
-  },
-  "selectLocation": "[ES] Select Location (Spanish)",
-  "@selectLocation": {
-    "description": "Localization key for: Select Location"
-  },
-  "noTicketsYet": "[ES] No tickets yet (Spanish)",
-  "@noTicketsYet": {
-    "description": "Localization key for: No tickets yet"
-  },
-  "meetingSharedSuccessfully1": "Reunión compartida exitosamente",
-  "@meetingSharedSuccessfully1": {
-    "description": "Localization key for: Meeting shared successfully!"
-  },
-  "studioProfile": "Perfil del estudio",
-  "@studioProfile": {
-    "description": "Localization key for: Studio Profile"
-  },
-  "subscriptionUnavailable": "[ES] Subscription unavailable (Spanish)",
-  "@subscriptionUnavailable": {
-    "description": "Localization key for: Subscription unavailable"
-  },
-  "confirmBooking": "[ES] Confirm Booking (Spanish)",
-  "@confirmBooking": {
-    "description": "Localization key for: Confirm Booking"
-  },
-  "failedToUpdatePermissionE": "[ES] Failed to update permission: $e (Spanish)",
-  "@failedToUpdatePermissionE": {
-    "description": "Localization key for: Failed to update permission: $e"
-  },
-  "reject": "[ES] Reject (Spanish)",
-  "@reject": {
-    "description": "Localization key for: Reject"
-  },
-  "REDACTED_TOKEN": "[ES] Ambassador Status: {ambassadorStatus} (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
-  },
-  "noProviders": "[ES] No providers",
-  "@noProviders": {
-    "description": "Localization key for: No providers"
-  },
-  "checkingSubscription": "[ES] Checking subscription... (Spanish)",
-  "@checkingSubscription": {
-    "description": "Localization key for: Checking subscription..."
-  },
-  "errorPickingImageE": "[ES] Error picking image: $e (Spanish)",
-  "@errorPickingImageE": {
-    "description": "Localization key for: Error picking image: $e"
-  },
-  "noContentAvailableYet": "[ES] No content available yet (Spanish)",
-  "@noContentAvailableYet": {
-    "description": "Localization key for: No content available yet"
-  },
-  "resolve": "[ES] Resolve (Spanish)",
-  "@resolve": {
-    "description": "Localization key for: Resolve"
-  },
-  "errorLoadingSurveysError": "[ES] Error loading surveys: $error (Spanish)",
-  "@errorLoadingSurveysError": {
-    "description": "Localization key for: Error loading surveys: $error"
-  },
-  "errorLogerrormessage": "[ES] Error: {errorMessage}",
-  "@errorLogerrormessage": {
-    "description": "Localization key for: Error: {errorMessage}"
-  },
-  "getHelpWithYourAccount": "[ES] Get help with your account (Spanish)",
-  "@getHelpWithYourAccount": {
-    "description": "Localization key for: Get help with your account"
-  },
-  "pay": "[ES] Pay (Spanish)",
-  "@pay": {
-    "description": "Localization key for: Pay"
-  },
-  "noOrganizations": "[ES] Sin organizaciones",
-  "@noOrganizations": {
-    "description": "noOrganizations description"
+  "errorLoadingStats": "Error al cargar estadísticas",
+  "@errorLoadingStats": {
+    "description": "errorLoadingStats description"
+  },
+  "appointment": "Cita",
+  "@appointment": {
+    "description": "appointment description"
+  },
+  "from": "De",
+  "@from": {
+    "description": "from description"
+  },
+  "phone": "Teléfono",
+  "@phone": {
+    "description": "phone description"
+  },
+  "noRouteDefined": "No hay ruta definida",
+  "@noRouteDefined": {
+    "description": "noRouteDefined description"
   },
   "meetingDetails": "Detalles de la reunión",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "errorLoadingAppointments": "[ES] Error loading appointments (Spanish)",
-  "@errorLoadingAppointments": {
-    "description": "Localization key for: Error loading appointments"
-  },
-  "changesSavedSuccessfully": "[ES] Changes saved successfully! (Spanish)",
-  "@changesSavedSuccessfully": {
-    "description": "Localization key for: Changes saved successfully!"
-  },
-  "createNewInvoice": "[ES] Create New Invoice (Spanish)",
-  "@createNewInvoice": {
-    "description": "Localization key for: Create New Invoice"
-  },
-  "profileNotFound": "Perfil no encontrado",
-  "@profileNotFound": {
-    "description": "Localization key for: Profile not found."
-  },
-  "errorConfirmingPaymentE": "[ES] Error confirming payment: $e (Spanish)",
-  "@errorConfirmingPaymentE": {
-    "description": "Localization key for: Error confirming payment: $e"
-  },
-  "inviteFriends": "[ES] Invite Friends (Spanish)",
-  "@inviteFriends": {
-    "description": "Localization key for: Invite Friends"
-  },
-  "profileSaved": "[ES] Profile saved! (Spanish)",
-  "@profileSaved": {
-    "description": "Localization key for: Profile saved!"
-  },
-  "REDACTED_TOKEN": "Recibir notificaciones de reserva por email",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Receive booking notifications via email"
-  },
-  "valuetointk": "[ES] Valor a entero: {k}",
-  "@valuetointk": {
-    "description": "Localization key for: \\${value}K"
-  },
-  "deleteAccount": "[ES] Delete Account (Spanish)",
-  "@deleteAccount": {
-    "description": "Localization key for: Delete Account"
-  },
-  "profile1": "Perfil",
-  "@profile1": {
-    "description": "Localization key for: Profile"
-  },
-  "businessOnboarding": "[ES] Business Onboarding (Spanish)",
-  "@businessOnboarding": {
-    "description": "Localization key for: Business Onboarding"
-  },
-  "addNewClient": "[ES] Add New Client (Spanish)",
-  "@addNewClient": {
-    "description": "Localization key for: Add New Client"
-  },
-  "darkMode": "[ES] Dark Mode (Spanish)",
-  "@darkMode": {
-    "description": "Localization key for: Dark Mode"
-  },
-  "addProvider": "[ES] Add Provider",
-  "@addProvider": {
-    "description": "Localization key for: Add Provider"
-  },
-  "noRouteDefinedForStateuripath": "[ES] No route defined for {path}",
-  "@noRouteDefinedForStateuripath": {
-    "description": "Localization key for: No route defined for {path}"
-  },
-  "REDACTED_TOKEN": "[ES] Recibirás un email de confirmación en breve",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: You will receive a confirmation email shortly."
-  },
-  "addQuestion": "[ES] Add Question (Spanish)",
-  "@addQuestion": {
-    "description": "Localization key for: Add Question"
-  },
-  "privacyPolicy": "[ES] Privacy Policy (Spanish)",
-  "@privacyPolicy": {
-    "description": "Localization key for: Privacy Policy"
-  },
-  "branchesLengthBranches": "[ES] {branchCount} branches (Spanish)",
-  "@branchesLengthBranches": {
-    "description": "Localization key for: {branchCount} branches"
-  },
-  "join": "[ES] Join (Spanish)",
-  "@join": {
-    "description": "Localization key for: Join"
-  },
-  "businessSubscription": "[ES] Business Subscription (Spanish)",
-  "@businessSubscription": {
-    "description": "Localization key for: Business Subscription"
-  },
-  "myInvites1": "[ES] My Invites (Spanish)",
-  "@myInvites1": {
-    "description": "Localization key for: My Invites"
-  },
-  "providers": "[ES] Providers",
-  "@providers": {
-    "description": "Localization key for: Providers"
-  },
-  "surveyManagement": "[ES] Survey Management (Spanish)",
-  "@surveyManagement": {
-    "description": "Localization key for: Survey Management"
-  },
-  "pleaseEnterAValidEmailOrPhone": "[ES] Please enter a valid email or phone",
-  "@pleaseEnterAValidEmailOrPhone": {
-    "description": "Localization key for: Please enter a valid email or phone"
-  },
-  "noRoomsFoundAddYourFirstRoom": "[ES] No rooms found. Add your first room! (Spanish)",
-  "@noRoomsFoundAddYourFirstRoom": {
-    "description": "Localization key for: No rooms found. Add your first room!"
-  },
-  "readOurPrivacyPolicy": "[ES] Read our privacy policy (Spanish)",
-  "@readOurPrivacyPolicy": {
-    "description": "Localization key for: Read our privacy policy"
-  },
-  "couldNotOpenPrivacyPolicy": "[ES] Could not open privacy policy (Spanish)",
-  "@couldNotOpenPrivacyPolicy": {
-    "description": "Localization key for: Could not open privacy policy"
-  },
-  "refresh1": "[ES] Refresh (Spanish)",
-  "@refresh1": {
-    "description": "Localization key for: Refresh"
-  },
-  "roomUpdatedSuccessfully": "[ES] Room updated successfully! (Spanish)",
-  "@roomUpdatedSuccessfully": {
-    "description": "Localization key for: Room updated successfully!"
-  },
-  "contentDetail": "[ES] Content Detail (Spanish)",
-  "@contentDetail": {
-    "description": "Localization key for: Content Detail"
-  },
-  "cancelSubscription": "[ES] Cancel Subscription (Spanish)",
-  "@cancelSubscription": {
-    "description": "Localization key for: Cancel Subscription"
-  },
-  "REDACTED_TOKEN": "[ES] Successfully registered as Ambassador! (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Successfully registered as Ambassador!"
-  },
-  "save1": "[ES] Save (Spanish)",
-  "@save1": {
-    "description": "Localization key for: Save"
-  },
-  "copy1": "[ES] Copy (Spanish)",
-  "@copy1": {
-    "description": "Localization key for: Copy"
-  },
-  "failedToSendInvitationE": "[ES] Failed to send invitation: $e (Spanish)",
-  "@failedToSendInvitationE": {
-    "description": "Localization key for: Failed to send invitation: $e"
-  },
-  "surveyScore": "[ES] Survey Score (Spanish)",
-  "@surveyScore": {
-    "description": "Localization key for: Survey Score"
-  },
-  "userUserid": "[ES] Usuario: {userId}",
-  "@userUserid": {
-    "description": "Localization key for: User $userId"
-  },
-  "noAppointmentsFound": "[ES] No appointments found. (Spanish)",
-  "@noAppointmentsFound": {
-    "description": "Localization key for: No appointments found."
-  },
-  "responseDetail": "[ES] Response Detail (Spanish)",
-  "@responseDetail": {
-    "description": "Localization key for: Response Detail"
-  },
-  "REDACTED_TOKEN": "Pantalla de verificación empresarial - Próximamente",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Business Verification Screen - Coming Soon"
-  },
-  "REDACTED_TOKEN": "Perfil empresarial activado exitosamente",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Business profile activated successfully!"
-  },
-  "failedToStartProSubscriptionE": "[ES] Failed to start Pro subscription: $e (Spanish)",
-  "@failedToStartProSubscriptionE": {
-    "description": "Localization key for: Failed to start Pro subscription: $e"
-  },
-  "REDACTED_TOKEN": "[ES] Business Dashboard Entry Screen - Coming Soon (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
-  },
-  "contentFilter": "[ES] Content Filter (Spanish)",
-  "@contentFilter": {
-    "description": "Localization key for: Content Filter"
-  },
-  "helpSupport": "[ES] Help & Support (Spanish)",
-  "@helpSupport": {
-    "description": "Localization key for: Help & Support"
-  },
-  "editRoom": "[ES] Edit Room (Spanish)",
-  "@editRoom": {
-    "description": "Localization key for: Edit Room"
-  },
-  "appointmentApptid": "[ES] Appointment: {appointmentId}",
-  "@appointmentApptid": {
-    "description": "Localization key for: Appointment: {appointmentId}"
-  },
-  "deviceLogdeviceinfo": "[ES] Device: {deviceInfo}",
-  "@deviceLogdeviceinfo": {
-    "description": "Localization key for: Device: {deviceInfo}"
-  },
-  "REDACTED_TOKEN": "[ES] Business CRM Entry Screen - Coming Soon (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
-  },
-  "adminDashboard": "[ES] Admin Dashboard",
-  "@adminDashboard": {
-    "description": "Localization key for: Admin Dashboard"
-  },
-  "orgmemberidslengthMembers": "[ES] {memberCount} members",
-  "@orgmemberidslengthMembers": {
-    "description": "Localization key for: {memberCount} members"
-  },
-  "errorLoadingDashboardError": "[ES] Error loading dashboard: $error (Spanish)",
-  "@errorLoadingDashboardError": {
-    "description": "Localization key for: Error loading dashboard: $error"
-  },
-  "gameDeletedSuccessfully": "[ES] Game deleted successfully! (Spanish)",
-  "@gameDeletedSuccessfully": {
-    "description": "Localization key for: Game deleted successfully!"
-  },
-  "viewResponsesComingSoon": "[ES] Ver respuestas próximamente",
-  "@viewResponsesComingSoon": {
-    "description": "Localization key for: View responses - Coming soon!"
-  },
-  "deleteProvider": "[ES] Delete Provider",
-  "@deleteProvider": {
-    "description": "Localization key for: Delete Provider"
-  },
-  "errorLoadingRewards": "[ES] Error loading rewards (Spanish)",
-  "@errorLoadingRewards": {
-    "description": "Localization key for: Error loading rewards"
-  },
-  "failedToDeleteAccountE": "[ES] Failed to delete account: $e (Spanish)",
-  "@failedToDeleteAccountE": {
-    "description": "Localization key for: Failed to delete account: $e"
-  },
-  "invited1": "[ES] Invited (Spanish)",
-  "@invited1": {
-    "description": "Localization key for: Invited"
-  },
-  "noBranchesAvailable": "[ES] No branches available (Spanish)",
-  "@noBranchesAvailable": {
-    "description": "Localization key for: No branches available"
-  },
-  "errorError": "[ES] Error: $error (Spanish)",
-  "@errorError": {
-    "description": "Localization key for: Error: $error"
-  },
-  "noEvents": "[ES] No events (Spanish)",
-  "@noEvents": {
-    "description": "Localization key for: No events"
-  },
-  "gameCreatedSuccessfully": "[ES] Game created successfully! (Spanish)",
-  "@gameCreatedSuccessfully": {
-    "description": "Localization key for: Game created successfully!"
-  },
-  "add1": "[ES] Add (Spanish)",
-  "@add1": {
-    "description": "Localization key for: Add"
-  },
-  "creatorCreatorid": "[ES] Creator: $creatorId",
-  "@creatorCreatorid": {
-    "description": "Localization key for: Creator: $creatorId"
-  },
-  "eventstarttimeEventendtime": "[ES] {startTime} - {endTime} (Spanish)",
-  "@eventstarttimeEventendtime": {
-    "description": "Localization key for: {startTime} - {endTime}"
-  },
-  "allowPlaytime": "[ES] Allow Playtime (Spanish)",
-  "@allowPlaytime": {
-    "description": "Localization key for: Allow Playtime"
-  },
-  "clients": "[ES] Clients (Spanish)",
-  "@clients": {
-    "description": "Localization key for: Clients"
-  },
-  "noAmbassadorDataAvailable": "[ES] No ambassador data available (Spanish)",
-  "@noAmbassadorDataAvailable": {
-    "description": "Localization key for: No ambassador data available"
-  },
-  "backgroundDeletedSuccessfully": "[ES] Background deleted successfully! (Spanish)",
-  "@backgroundDeletedSuccessfully": {
-    "description": "Localization key for: Background deleted successfully!"
-  },
-  "errorSnapshoterror": "[ES] Error: {error} (Spanish)",
-  "@errorSnapshoterror": {
-    "description": "Localization key for: Error: {error}"
-  },
-  "noAnalyticsDataAvailableYet": "[ES] No analytics data available yet. (Spanish)",
-  "@noAnalyticsDataAvailableYet": {
-    "description": "Localization key for: No analytics data available yet."
-  },
-  "errorDeletingSlotE": "[ES] Error deleting slot: $e (Spanish)",
-  "@errorDeletingSlotE": {
-    "description": "Localization key for: Error deleting slot: $e"
-  },
-  "REDACTED_TOKEN": "[ES] Business Phone Booking Entry Screen - Coming Soon (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
-  },
-  "verification": "[ES] Verificación",
-  "@verification": {
-    "description": "Localization key for: Verification"
-  },
-  "copyLink": "[ES] Copy Link (Spanish)",
-  "@copyLink": {
-    "description": "Localization key for: Copy Link"
-  },
-  "dashboard1": "[ES] Dashboard (Spanish)",
-  "@dashboard1": {
-    "description": "Localization key for: Dashboard"
-  },
-  "manageChildAccounts": "[ES] Manage Child Accounts (Spanish)",
-  "@manageChildAccounts": {
-    "description": "Localization key for: Manage Child Accounts"
-  },
-  "grantConsent": "[ES] Grant Consent (Spanish)",
-  "@grantConsent": {
-    "description": "Localization key for: Grant Consent"
-  },
-  "myProfile1": "[ES] My Profile (Spanish)",
-  "@myProfile1": {
-    "description": "Localization key for: My Profile"
-  },
-  "submit": "[ES] Submit (Spanish)",
-  "@submit": {
-    "description": "Localization key for: Submit"
-  },
-  "userLoguseremail": "[ES] Registro de usuario: {userEmail}",
-  "@userLoguseremail": {
-    "description": "Localization key for: User: {userEmail}"
-  },
-  "emailNotifications": "Notificaciones por email",
-  "@emailNotifications": {
-    "description": "Localization key for: Email Notifications"
-  },
-  "ambassadorDashboard": "[ES] Ambassador Dashboard (Spanish)",
-  "@ambassadorDashboard": {
-    "description": "Localization key for: Ambassador Dashboard"
-  },
-  "phoneBooking": "[ES] Phone Booking (Spanish)",
-  "@phoneBooking": {
-    "description": "Localization key for: Phone Booking"
-  },
-  "bookViaChat": "[ES] Book via Chat (Spanish)",
-  "@bookViaChat": {
-    "description": "Localization key for: Book via Chat"
-  },
-  "error": "[ES] Error",
-  "@error": {
-    "description": "Description"
-  },
-  "businessProfile": "[ES] Business Profile (Spanish)",
-  "@businessProfile": {
-    "description": "Localization key for: Business Profile"
-  },
-  "REDACTED_TOKEN": "[ES] Business Booking Entry Screen - Coming Soon (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
-  },
-  "createNewSurvey": "[ES] Create New Survey (Spanish)",
-  "@createNewSurvey": {
-    "description": "Localization key for: Create New Survey"
-  },
-  "backgroundRejected": "[ES] Background rejected (Spanish)",
-  "@backgroundRejected": {
-    "description": "Localization key for: Background rejected"
-  },
-  "noMediaSelected": "[ES] No media selected (Spanish)",
-  "@noMediaSelected": {
-    "description": "Localization key for: No media selected"
-  },
-  "syncToGoogle": "[ES] Sync to Google (Spanish)",
-  "@syncToGoogle": {
-    "description": "Localization key for: Sync to Google"
-  },
-  "virtualPlaytime": "[ES] Tiempo de juego virtual",
-  "@virtualPlaytime": {
-    "description": "Localization key for: Virtual Playtime"
-  },
-  "colorContrastTesting": "[ES] Color Contrast Testing",
-  "@colorContrastTesting": {
-    "description": "Localization key for: Color Contrast Testing"
-  },
-  "loginFailedE": "[ES] Login failed: $e",
-  "@loginFailedE": {
-    "description": "Localization key for: Login failed: $e"
-  },
-  "invitationSentSuccessfully": "[ES] Invitation sent successfully! (Spanish)",
-  "@invitationSentSuccessfully": {
-    "description": "Localization key for: Invitation sent successfully!"
-  },
-  "registering": "[ES] Registering... (Spanish)",
-  "@registering": {
-    "description": "Localization key for: Registering..."
-  },
-  "statusAppointmentstatusname": "[ES] Status: {status} (Spanish)",
-  "@statusAppointmentstatusname": {
-    "description": "Localization key for: Status: {status}"
-  },
-  "home1": "[ES] Home (Spanish)",
-  "@home1": {
-    "description": "Localization key for: Home"
-  },
-  "errorSavingSettingsE": "[ES] Error saving settings: $e (Spanish)",
-  "@errorSavingSettingsE": {
-    "description": "Localization key for: Error saving settings: $e"
-  },
-  "appVersionAndInformation": "[ES] App version and information (Spanish)",
-  "@appVersionAndInformation": {
-    "description": "Localization key for: App version and information"
-  },
-  "REDACTED_TOKEN": "[ES] Business Subscription Entry Screen - Coming Soon (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
-  },
-  "ekeyEvalue": "[ES] {key}: {value} (Spanish)",
-  "@ekeyEvalue": {
-    "description": "Localization key for: {key}: {value}"
-  },
-  "REDACTED_TOKEN": "[ES] Tu pago ha sido procesado exitosamente",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Your payment has been processed successfully."
-  },
-  "errorE": "[ES] Error: $e (Spanish)",
-  "@errorE": {
-    "description": "Localization key for: Error: $e"
-  },
-  "viewAll1": "[ES] Ver todo",
-  "@viewAll1": {
-    "description": "Localization key for: View All"
-  },
-  "editSurveyComingSoon": "[ES] Edit survey - Coming soon! (Spanish)",
-  "@editSurveyComingSoon": {
-    "description": "Localization key for: Edit survey - Coming soon!"
-  },
-  "enterOtp": "[ES] Enter OTP (Spanish)",
-  "@enterOtp": {
-    "description": "Localization key for: Enter OTP"
-  },
-  "payment": "[ES] Payment (Spanish)",
-  "@payment": {
-    "description": "Localization key for: Payment"
-  },
-  "REDACTED_TOKEN": "[ES] Automatically confirm new booking requests (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Automatically confirm new booking requests"
-  },
-  "errorPickingVideoE": "[ES] Error picking video: $e",
-  "@errorPickingVideoE": {
-    "description": "Localization key for: Error picking video: $e"
-  },
-  "noRouteDefinedForSettingsname": "[ES] No route defined for {settingsName} (Spanish)",
-  "@noRouteDefinedForSettingsname": {
-    "description": "Localization key for: No route defined for {settingsName}"
-  },
-  "pleaseSignInToUploadABackground": "[ES] Please sign in to upload a background (Spanish)",
-  "@pleaseSignInToUploadABackground": {
-    "description": "Localization key for: Please sign in to upload a background"
-  },
-  "logtargettypeLogtargetid": "[ES] {targetType}: {targetId}",
-  "@logtargettypeLogtargetid": {
-    "description": "Localization key for: {targetType}: {targetId}"
-  },
-  "staffAvailability": "[ES] Staff Availability (Spanish)",
-  "@staffAvailability": {
-    "description": "Localization key for: Staff Availability"
-  },
-  "livePlaytime": "[ES] Live Playtime (Spanish)",
-  "@livePlaytime": {
-    "description": "Localization key for: Live Playtime"
-  },
-  "autoconfirmBookings": "[ES] Auto-Confirm Bookings (Spanish)",
-  "@autoconfirmBookings": {
-    "description": "Localization key for: Auto-Confirm Bookings"
-  },
-  "REDACTED_TOKEN": "[ES] Redirecting to Stripe checkout for Pro plan... (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
-  },
-  "exportAsCsv": "[ES] Export as CSV (Spanish)",
-  "@exportAsCsv": {
-    "description": "Localization key for: Export as CSV"
-  },
-  "deleteFunctionalityComingSoon": "[ES] Delete functionality coming soon! (Spanish)",
-  "@deleteFunctionalityComingSoon": {
-    "description": "Localization key for: Delete functionality coming soon!"
-  },
-  "editClient": "[ES] Edit Client (Spanish)",
-  "@editClient": {
-    "description": "Localization key for: Edit Client"
-  },
-  "REDACTED_TOKEN": "[ES] Are you sure you want to delete this message? (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Are you sure you want to delete this message?"
-  },
-  "referralsAmbassadorreferrals": "[ES] Referrals: {referrals} (Spanish)",
-  "@referralsAmbassadorreferrals": {
-    "description": "Localization key for: Referrals: {referrals}"
-  },
-  "notAuthenticated": "[ES] Not authenticated",
-  "@notAuthenticated": {
-    "description": "Localization key for: Not authenticated"
-  },
-  "privacyRequestSentToYourParents": "[ES] Privacy request sent to your parents! (Spanish)",
-  "@privacyRequestSentToYourParents": {
-    "description": "Localization key for: Privacy request sent to your parents!"
-  },
-  "clientDeletedSuccessfully": "[ES] Client deleted successfully! (Spanish)",
-  "@clientDeletedSuccessfully": {
-    "description": "Localization key for: Client deleted successfully!"
-  },
-  "failedToCancelSubscription": "[ES] Failed to cancel subscription (Spanish)",
-  "@failedToCancelSubscription": {
-    "description": "Localization key for: Failed to cancel subscription"
-  },
-  "allLanguages": "[ES] All Languages (Spanish)",
-  "@allLanguages": {
-    "description": "Localization key for: All Languages"
-  },
-  "slotDeletedSuccessfully": "[ES] Slot deleted successfully (Spanish)",
-  "@slotDeletedSuccessfully": {
-    "description": "Localization key for: Slot deleted successfully"
-  },
-  "REDACTED_TOKEN": "[ES] Business Providers Entry Screen - Coming Soon",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
-  },
-  "REDACTED_TOKEN": "[ES] Parents must approve before children can join (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Parents must approve before children can join"
-  },
-  "subscribeToPro1499mo": "[ES] Subscribe to Pro (€14.99/mo) (Spanish)",
-  "@subscribeToPro1499mo": {
-    "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
-  },
-  "REDACTED_TOKEN": "[ES] Business Availability Entry Screen - Coming Soon (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
-  },
-  "appointmentsListlength": "[ES] Appointments: {count} (Spanish)",
-  "@appointmentsListlength": {
-    "description": "Localization key for: Appointments: {count}"
-  },
-  "clearFilters": "[ES] Clear Filters (Spanish)",
-  "@clearFilters": {
-    "description": "Localization key for: Clear Filters"
-  },
-  "submitBooking": "[ES] Submit Booking (Spanish)",
-  "@submitBooking": {
-    "description": "Localization key for: Submit Booking"
-  },
-  "REDACTED_TOKEN": "[ES] Are you sure you want to cancel this appointment? (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Are you sure you want to cancel this appointment?"
-  },
-  "noUpcomingBookings": "[ES] No upcoming bookings (Spanish)",
-  "@noUpcomingBookings": {
-    "description": "Localization key for: No upcoming bookings"
-  },
-  "goBack": "[ES] Go Back (Spanish)",
-  "@goBack": {
-    "description": "Button to go back"
-  },
-  "setup": "[ES] Setup (Spanish)",
-  "@setup": {
-    "description": "Localization key for: Setup"
-  },
-  "inviteChild": "[ES] Invite Child (Spanish)",
-  "@inviteChild": {
-    "description": "Localization key for: Invite Child"
-  },
-  "goToDashboard": "[ES] Go to Dashboard (Spanish)",
-  "@goToDashboard": {
-    "description": "Localization key for: Go to Dashboard"
-  },
-  "ambassadorQuotaDashboard": "[ES] Ambassador Quota Dashboard (Spanish)",
-  "@ambassadorQuotaDashboard": {
-    "description": "Localization key for: Ambassador Quota Dashboard"
-  },
-  "adminSettings": "[ES] Admin Settings",
-  "@adminSettings": {
-    "description": "Localization key for: Admin Settings"
-  },
-  "referralCode": "[ES] Referral Code (Spanish)",
-  "@referralCode": {
-    "description": "Localization key for: Referral Code"
-  },
-  "adminLogadminemail": "[ES] Admin: {adminEmail}",
-  "@adminLogadminemail": {
-    "description": "Localization key for: Admin: {adminEmail}"
-  },
-  "date": "[ES] Date (Spanish)",
-  "@date": {
-    "description": "Localization key for: Date"
-  },
-  "readOnly": "[ES] Read Only (Spanish)",
-  "@readOnly": {
-    "description": "Localization key for: Read Only"
-  },
-  "bookingRequest": "[ES] Booking Request (Spanish)",
-  "@bookingRequest": {
-    "description": "Localization key for: Booking Request"
-  },
-  "advancedReporting": "[ES] • Advanced reporting (Spanish)",
-  "@advancedReporting": {
-    "description": "Localization key for: • Advanced reporting"
-  },
-  "rooms": "[ES] Rooms (Spanish)",
-  "@rooms": {
-    "description": "Localization key for: Rooms"
-  },
-  "copiedToClipboard": "[ES] Copied to clipboard (Spanish)",
-  "@copiedToClipboard": {
-    "description": "Localization key for: Copied to clipboard"
-  },
-  "bookingConfirmed": "[ES] Booking Confirmed (Spanish)",
-  "@bookingConfirmed": {
-    "description": "Localization key for: Booking Confirmed"
-  },
-  "sessionApproved": "Sesión aprobada",
-  "@sessionApproved": {
-    "description": "Localization key for: Session approved!"
-  },
-  "clientAddedSuccessfully": "[ES] Client added successfully! (Spanish)",
-  "@clientAddedSuccessfully": {
-    "description": "Localization key for: Client added successfully!"
-  },
-  "noNotifications": "Sin notificaciones",
-  "@noNotifications": {
-    "description": "Localization key for: No notifications"
-  },
-  "backgroundApproved": "[ES] Background approved! (Spanish)",
-  "@backgroundApproved": {
-    "description": "Localization key for: Background approved!"
-  },
-  "familySupport": "[ES] Family Support (Spanish)",
-  "@familySupport": {
-    "description": "Localization key for: Family Support"
-  },
-  "deletingAccount": "[ES] Deleting account... (Spanish)",
-  "@deletingAccount": {
-    "description": "Localization key for: Deleting account..."
-  },
-  "bookAppointment": "[ES] Book Appointment (Spanish)",
-  "@bookAppointment": {
-    "description": "Localization key for: Book Appointment"
-  },
-  "REDACTED_TOKEN": "Recibir notificaciones push para nuevas reservas",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Receive push notifications for new bookings"
-  },
-  "delete1": "[ES] Delete (Spanish)",
-  "@delete1": {
-    "description": "Localization key for: Delete"
-  },
-  "sendBookingInvite": "[ES] Send Booking Invite (Spanish)",
-  "@sendBookingInvite": {
-    "description": "Localization key for: Send Booking Invite"
-  },
-  "text": "[ES] Text (Spanish)",
-  "@text": {
-    "description": "Localization key for: Text"
-  },
-  "manageSubscription": "[ES] Manage Subscription (Spanish)",
-  "@manageSubscription": {
-    "description": "Localization key for: Manage Subscription"
-  },
-  "requiresInstallFallback": "[ES] Requires Install Fallback (Spanish)",
-  "@requiresInstallFallback": {
-    "description": "Localization key for: Requires Install Fallback"
-  },
-  "paymentConfirmation": "[ES] Payment Confirmation (Spanish)",
-  "@paymentConfirmation": {
-    "description": "Localization key for: Payment Confirmation"
-  },
-  "promoAppliedYourNextBillIsFree": "[ES] Promo applied! Your next bill is free. (Spanish)",
-  "@promoAppliedYourNextBillIsFree": {
-    "description": "Localization key for: Promo applied! Your next bill is free."
-  },
-  "inviteeArgsinviteeid": "[ES] Invitee: {inviteeId}",
-  "@inviteeArgsinviteeid": {
-    "description": "Localization key for: Invitee: {inviteeId}"
-  },
-  "errorLoadingSlots": "[ES] Error loading slots (Spanish)",
-  "@errorLoadingSlots": {
-    "description": "Localization key for: Error loading slots"
-  },
-  "REDACTED_TOKEN": "[ES] Allow other users to find and join this game (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Allow other users to find and join this game"
-  },
-  "REDACTED_TOKEN": "[ES] Business Onboarding Screen - Coming Soon (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Business Onboarding Screen - Coming Soon"
-  },
-  "activateBusinessProfile": "[ES] Activate Business Profile (Spanish)",
-  "@activateBusinessProfile": {
-    "description": "Localization key for: Activate Business Profile"
-  },
-  "contentNotFound": "[ES] Content not found (Spanish)",
-  "@contentNotFound": {
-    "description": "Localization key for: Content not found"
-  },
-  "pspecialtynpcontactinfo": "[ES] {specialty}\\n{contactInfo} (Spanish)",
-  "@pspecialtynpcontactinfo": {
-    "description": "Localization key for: {specialty}\\n{contactInfo}"
-  },
-  "rating": "[ES] Rating (Spanish)",
-  "@rating": {
-    "description": "Localization key for: Rating"
-  },
-  "messages": "[ES] Mensajes",
-  "@messages": {
-    "description": "Localization key for: Messages"
-  },
-  "errorEstimatingRecipientsE": "[ES] Error estimating recipients: $e (Spanish)",
-  "@errorEstimatingRecipientsE": {
-    "description": "Localization key for: Error estimating recipients: $e"
-  },
-  "becomeAnAmbassador": "[ES] Become an Ambassador (Spanish)",
-  "@becomeAnAmbassador": {
-    "description": "Localization key for: Become an Ambassador"
-  },
-  "subscribeNow": "[ES] Subscribe Now (Spanish)",
-  "@subscribeNow": {
-    "description": "Localization key for: Subscribe Now"
-  },
-  "timeArgsslotformatcontext": "[ES] Time: {time} (Spanish)",
-  "@timeArgsslotformatcontext": {
-    "description": "Localization key for: Time: {time}"
-  },
-  "shareViaWhatsapp": "[ES] Share via WhatsApp (Spanish)",
-  "@shareViaWhatsapp": {
-    "description": "Localization key for: Share via WhatsApp"
-  },
-  "users1": "[ES] Usuarios",
-  "@users1": {
-    "description": "Localization key for: Users"
-  },
-  "shareLink": "[ES] Share Link (Spanish)",
-  "@shareLink": {
-    "description": "Localization key for: Share Link"
-  },
-  "REDACTED_TOKEN": "[ES] Are you sure you want to delete this provider?",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Are you sure you want to delete this provider?"
-  },
-  "deleteAppointment": "[ES] Delete Appointment (Spanish)",
-  "@deleteAppointment": {
-    "description": "Localization key for: Delete Appointment"
-  },
-  "toggleAvailability": "[ES] Toggle Availability (Spanish)",
-  "@toggleAvailability": {
-    "description": "Localization key for: Toggle Availability"
-  },
-  "changePlan": "[ES] Change Plan (Spanish)",
-  "@changePlan": {
-    "description": "Localization key for: Change Plan"
-  },
-  "errorLoadingStaff": "[ES] Error loading staff (Spanish)",
-  "@errorLoadingStaff": {
-    "description": "Localization key for: Error loading staff"
-  },
-  "errorLoadingConfigurationE": "[ES] Error loading configuration: $e",
-  "@errorLoadingConfigurationE": {
-    "description": "Localization key for: Error loading configuration: $e"
-  },
-  "updateYourBusinessInformation": "[ES] Update your business information (Spanish)",
-  "@updateYourBusinessInformation": {
-    "description": "Localization key for: Update your business information"
-  },
-  "REDACTED_TOKEN": "[ES] No providers found. Add your first provider!",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: No providers found. Add your first provider!"
-  },
-  "parentDashboard": "[ES] Parent Dashboard (Spanish)",
-  "@parentDashboard": {
-    "description": "Localization key for: Parent Dashboard"
-  },
-  "menu": "[ES] Menu (Spanish)",
-  "@menu": {
-    "description": "Localization key for: Menu"
-  },
-  "studioBooking": "[ES] Studio Booking (Spanish)",
-  "@studioBooking": {
-    "description": "Localization key for: Studio Booking"
-  },
-  "about1": "[ES] About (Spanish)",
-  "@about1": {
-    "description": "Localization key for: About"
-  },
-  "multipleChoice": "[ES] Multiple Choice (Spanish)",
-  "@multipleChoice": {
-    "description": "Localization key for: Multiple Choice"
-  },
-  "REDACTED_TOKEN": "[ES] Date: {date} (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Date: {date}"
-  },
-  "REDACTED_TOKEN": "[ES] Studio booking is only available on web (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Studio booking is only available on web"
-  },
-  "errorLoadingBranchesE": "[ES] Error loading branches: $e (Spanish)",
-  "@errorLoadingBranchesE": {
-    "description": "Localization key for: Error loading branches: $e"
-  },
-  "REDACTED_TOKEN": "[ES] \\uD83D\\uDCC5 {dateTime} (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
-  },
-  "appointmentInviteappointmentid": "[ES] Appointment: {appointmentId}",
-  "@appointmentInviteappointmentid": {
-    "description": "Localization key for: Appointment: {appointmentId}"
-  },
-  "none": "[ES] None (Spanish)",
-  "@none": {
-    "description": "Localization key for: None"
-  },
-  "failedToUpdateConsentE": "[ES] Failed to update consent: $e (Spanish)",
-  "@failedToUpdateConsentE": {
-    "description": "Localization key for: Failed to update consent: $e"
-  },
-  "welcome1": "[ES] Bienvenido",
-  "@welcome1": {
-    "description": "Localization key for: Welcome"
-  },
-  "failedToCreateSessionE": "[ES] Failed to create session: $e (Spanish)",
-  "@failedToCreateSessionE": {
-    "description": "Localization key for: Failed to create session: $e"
-  },
-  "inviteContact": "[ES] Invite Contact (Spanish)",
-  "@inviteContact": {
-    "description": "Localization key for: Invite Contact"
-  },
-  "surveyEditor": "[ES] Survey Editor (Spanish)",
-  "@surveyEditor": {
-    "description": "Localization key for: Survey Editor"
-  },
-  "failedToStartBasicSubscriptionE": "[ES] Failed to start Basic subscription: $e (Spanish)",
-  "@failedToStartBasicSubscriptionE": {
-    "description": "Localization key for: Failed to start Basic subscription: $e"
-  },
-  "mySchedule": "[ES] My Schedule (Spanish)",
-  "@mySchedule": {
-    "description": "Localization key for: My Schedule"
-  },
-  "studioDashboard": "[ES] Studio Dashboard (Spanish)",
-  "@studioDashboard": {
-    "description": "Localization key for: Studio Dashboard"
-  },
-  "editProfile": "Editar perfil",
-  "@editProfile": {
-    "description": "Localization key for: Edit Profile"
-  },
-  "logout1": "[ES] Logout",
-  "@logout1": {
-    "description": "Localization key for: Logout"
-  },
-  "serviceServiceidNotSelected": "[ES] Service: {service}",
-  "@serviceServiceidNotSelected": {
-    "description": "Localization key for: Service: {service}"
-  },
-  "settingsSavedSuccessfully": "[ES] Settings saved successfully! (Spanish)",
-  "@settingsSavedSuccessfully": {
-    "description": "Localization key for: Settings saved successfully!"
-  },
-  "linkCopiedToClipboard": "[ES] Link copied to clipboard! (Spanish)",
-  "@linkCopiedToClipboard": {
-    "description": "Localization key for: Link copied to clipboard!"
-  },
-  "accept1": "[ES] Accept (Spanish)",
-  "@accept1": {
-    "description": "Localization key for: Accept"
-  },
-  "noAvailableSlots": "[ES] No available slots (Spanish)",
-  "@noAvailableSlots": {
-    "description": "Localization key for: No available slots"
-  },
-  "makeGamePublic": "[ES] Make Game Public (Spanish)",
-  "@makeGamePublic": {
-    "description": "Localization key for: Make Game Public"
-  },
-  "REDACTED_TOKEN": "[ES] Permission {category} updated to $newValue (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Permission {category} updated to $newValue"
-  },
-  "roomDeletedSuccessfully": "[ES] Room deleted successfully! (Spanish)",
-  "@roomDeletedSuccessfully": {
-    "description": "Localization key for: Room deleted successfully!"
-  },
-  "businessCalendar": "[ES] Business Calendar (Spanish)",
-  "@businessCalendar": {
-    "description": "Localization key for: Business Calendar"
-  },
-  "addAvailability": "[ES] Add Availability (Spanish)",
-  "@addAvailability": {
-    "description": "Localization key for: Add Availability"
-  },
-  "ambassadorOnboarding": "[ES] Ambassador Onboarding (Spanish)",
-  "@ambassadorOnboarding": {
-    "description": "Localization key for: Ambassador Onboarding"
-  },
-  "phoneProfileasyncphone": "[ES] Phone: {phone} (Spanish)",
-  "@phoneProfileasyncphone": {
-    "description": "Localization key for: Phone: {phone}"
-  },
-  "addNewRoom": "[ES] Add New Room (Spanish)",
-  "@addNewRoom": {
-    "description": "Localization key for: Add New Room"
-  },
-  "requireParentApproval": "[ES] Require Parent Approval (Spanish)",
-  "@requireParentApproval": {
-    "description": "Localization key for: Require Parent Approval"
-  },
-  "closed": "[ES] Closed (Spanish)",
-  "@closed": {
-    "description": "Localization key for: Closed"
-  },
-  "exportAsPdf": "[ES] Export as PDF (Spanish)",
-  "@exportAsPdf": {
-    "description": "Localization key for: Export as PDF"
-  },
-  "enableVibration": "[ES] Enable Vibration (Spanish)",
-  "@enableVibration": {
-    "description": "Localization key for: Enable Vibration"
-  },
-  "toAvailendformatcontext": "[ES] To: {endTime} (Spanish)",
-  "@toAvailendformatcontext": {
-    "description": "Localization key for: To: {endTime}"
-  },
-  "yourUpgradeCodeUpgradecode": "[ES] Tu código de actualización: {upgradeCode}",
-  "@yourUpgradeCodeUpgradecode": {
-    "description": "Localization key for: Your upgrade code: $upgradeCode"
-  },
-  "requestPrivateSession": "[ES] Solicitar sesión privada",
+  "meetingId": "ID de reunión",
+  "@meetingId": {
+    "description": "meetingId description"
+  },
+  "creator": "Creador",
+  "@creator": {
+    "description": "creator description"
+  },
+  "context": "Contexto",
+  "@context": {
+    "description": "context description"
+  },
+  "group": "Grupo",
+  "@group": {
+    "description": "group description"
+  },
+  "requestPrivateSession": "Solicitar sesión privada",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "country": "[ES] Country (Spanish)",
-  "@country": {
-    "description": "Localization key for: Country"
-  },
-  "loginScreen": "[ES] Login Screen",
-  "@loginScreen": {
-    "description": "Localization key for: Login Screen"
-  },
-  "staffArgsstaffdisplayname": "[ES] Staff: {staffName} (Spanish)",
-  "@staffArgsstaffdisplayname": {
-    "description": "Localization key for: Staff: {staffName}"
-  },
-  "revokeConsent": "[ES] Revoke Consent (Spanish)",
-  "@revokeConsent": {
-    "description": "Localization key for: Revoke Consent"
-  },
-  "settings1": "[ES] Settings (Spanish)",
-  "@settings1": {
-    "description": "Localization key for: Settings"
-  },
-  "cancel1": "[ES] Cancel (Spanish)",
-  "@cancel1": {
-    "description": "Localization key for: Cancel"
-  },
-  "REDACTED_TOKEN": "[ES] Subscription activated successfully! (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Subscription activated successfully!"
-  },
-  "activityLogaction": "[ES] Activity: {action}",
-  "@activityLogaction": {
-    "description": "Localization key for: Activity: {action}"
-  },
-  "broadcast": "[ES] Broadcast (Spanish)",
-  "@broadcast": {
-    "description": "Localization key for: Broadcast"
-  },
-  "noEventsScheduledThisWeek": "[ES] No events scheduled this week (Spanish)",
-  "@noEventsScheduledThisWeek": {
-    "description": "Localization key for: No events scheduled this week"
-  },
-  "googleCalendar": "[ES] Google Calendar (Spanish)",
-  "@googleCalendar": {
-    "description": "Localization key for: Google Calendar"
-  },
-  "sendInvite": "[ES] Send Invite (Spanish)",
-  "@sendInvite": {
-    "description": "Localization key for: Send Invite"
-  },
-  "childDashboard": "[ES] Child Dashboard (Spanish)",
-  "@childDashboard": {
-    "description": "Localization key for: Child Dashboard"
-  },
-  "failedToUploadBackgroundE": "[ES] Failed to upload background: $e (Spanish)",
-  "@failedToUploadBackgroundE": {
-    "description": "Localization key for: Failed to upload background: $e"
-  },
-  "linkchildidsubstring08": "[ES] {linkId}...",
-  "@linkchildidsubstring08": {
-    "description": "Localization key for: {linkId}..."
-  },
-  "targetLogtargettypeLogtargetid": "[ES] Target: {targetType} - {targetId}",
-  "@targetLogtargettypeLogtargetid": {
-    "description": "Localization key for: Target: {targetType} - {targetId}"
-  },
-  "contextContextid": "[ES] Context: $contextId",
-  "@contextContextid": {
-    "description": "Localization key for: Context: $contextId"
-  },
-  "noAppointments": "[ES] No appointments (Spanish)",
-  "@noAppointments": {
-    "description": "Localization key for: No appointments"
-  },
-  "unlimitedBookingsPerWeek": "[ES] • Unlimited bookings per week (Spanish)",
-  "@unlimitedBookingsPerWeek": {
-    "description": "Localization key for: • Unlimited bookings per week"
-  },
-  "errorDetailsLogerrortype": "[ES] Error Details: {errorType}",
-  "@errorDetailsLogerrortype": {
-    "description": "Localization key for: Error Details: {errorType}"
-  },
-  "scheduledAtScheduledat": "[ES] Scheduled at: $scheduledAt (Spanish)",
-  "@scheduledAtScheduledat": {
-    "description": "Localization key for: Scheduled at: $scheduledAt"
-  },
-  "selectStaff": "[ES] Select Staff (Spanish)",
-  "@selectStaff": {
-    "description": "Localization key for: Select Staff"
-  },
-  "REDACTED_TOKEN": "[ES] Subscription cancelled successfully (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Subscription cancelled successfully"
-  },
-  "pleaseLogInToViewYourProfile": "Por favor inicia sesión para ver tu perfil",
-  "@pleaseLogInToViewYourProfile": {
-    "description": "Localization key for: Please log in to view your profile."
-  },
-  "cancelAppointment": "[ES] Cancel Appointment (Spanish)",
-  "@cancelAppointment": {
-    "description": "Localization key for: Cancel Appointment"
-  },
-  "permissionsFamilylinkchildid": "[ES] Permissions - {childId}",
-  "@permissionsFamilylinkchildid": {
-    "description": "Localization key for: Permissions - {childId}"
-  },
-  "businessSignup": "[ES] Business Signup (Spanish)",
-  "@businessSignup": {
-    "description": "Localization key for: Business Signup"
-  },
-  "REDACTED_TOKEN": "[ES] Business Completion Screen - Coming Soon (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Business Completion Screen - Coming Soon"
-  },
-  "createGame1": "[ES] Create Game (Spanish)",
-  "@createGame1": {
-    "description": "Localization key for: Create Game"
-  },
-  "valuetoint": "[ES] Valor a entero",
-  "@valuetoint": {
-    "description": "Localization key for: {value}"
-  },
-  "pleaseEnterAPromoCode": "[ES] Please enter a promo code (Spanish)",
-  "@pleaseEnterAPromoCode": {
-    "description": "Localization key for: Please enter a promo code"
-  },
-  "errorLoadingAvailabilityE": "[ES] Error loading availability: $e (Spanish)",
-  "@errorLoadingAvailabilityE": {
-    "description": "Localization key for: Error loading availability: $e"
-  },
-  "parentalControls": "[ES] Parental Controls (Spanish)",
-  "@parentalControls": {
-    "description": "Localization key for: Parental Controls"
-  },
-  "editBusinessProfile": "Editar perfil empresarial",
-  "@editBusinessProfile": {
-    "description": "Localization key for: Edit Business Profile"
-  },
-  "childLinkedSuccessfully": "[ES] Child linked successfully! (Spanish)",
-  "@childLinkedSuccessfully": {
-    "description": "Localization key for: Child linked successfully!"
-  },
-  "create": "[ES] Create (Spanish)",
-  "@create": {
-    "description": "Localization key for: Create"
-  },
-  "noExternalMeetingsFound": "[ES] No external meetings found. (Spanish)",
-  "@noExternalMeetingsFound": {
-    "description": "Localization key for: No external meetings found."
-  },
-  "staffSelectionstaffdisplayname": "[ES] Staff: {staffName} (Spanish)",
-  "@staffSelectionstaffdisplayname": {
-    "description": "Localization key for: Staff: {staffName}"
-  },
-  "pleaseEnterAValidEmailAddress": "[ES] Please enter a valid email address",
-  "@pleaseEnterAValidEmailAddress": {
-    "description": "Localization key for: Please enter a valid email address"
-  },
-  "schedulerScreen": "[ES] Scheduler Screen (Spanish)",
-  "@schedulerScreen": {
-    "description": "Localization key for: Scheduler Screen"
-  },
-  "clientUpdatedSuccessfully": "[ES] Client updated successfully! (Spanish)",
-  "@clientUpdatedSuccessfully": {
-    "description": "Localization key for: Client updated successfully!"
-  },
-  "surveyResponses": "[ES] Survey Responses (Spanish)",
-  "@surveyResponses": {
-    "description": "Localization key for: Survey Responses"
-  },
-  "syncToOutlook": "[ES] Sync to Outlook (Spanish)",
-  "@syncToOutlook": {
-    "description": "Localization key for: Sync to Outlook"
-  },
-  "saveChanges": "[ES] Save Changes (Spanish)",
-  "@saveChanges": {
-    "description": "Localization key for: Save Changes"
-  },
-  "pickTime": "[ES] Pick Time (Spanish)",
-  "@pickTime": {
-    "description": "Localization key for: Pick Time"
-  },
-  "registrationFailedEtostring": "[ES] Registration failed: {error} (Spanish)",
-  "@registrationFailedEtostring": {
-    "description": "Localization key for: Registration failed: {error}"
-  },
-  "analytics": "[ES] Analytics (Spanish)",
-  "@analytics": {
-    "description": "Localization key for: Analytics"
-  },
-  "errorLoadingEvents": "[ES] Error loading events (Spanish)",
-  "@errorLoadingEvents": {
-    "description": "Localization key for: Error loading events"
-  },
-  "errorLoadingOrganizations": "[ES] Error al cargar organizaciones",
-  "@errorLoadingOrganizations": {
-    "description": "errorLoadingOrganizations description"
-  },
-  "businessLoginScreenComingSoon": "[ES] Business Login Screen - Coming Soon",
-  "@businessLoginScreenComingSoon": {
-    "description": "Localization key for: Business Login Screen - Coming Soon"
-  },
-  "success1": "[ES] Success (Spanish)",
-  "@success1": {
-    "description": "Localization key for: Success"
-  },
-  "appVersionLogappversion": "[ES] App Version: {appVersion}",
-  "@appVersionLogappversion": {
-    "description": "Localization key for: App Version: {appVersion}"
-  },
-  "fromAvailstartformatcontext": "[ES] From: {startTime} (Spanish)",
-  "@fromAvailstartformatcontext": {
-    "description": "Localization key for: From: {startTime}"
-  },
-  "readWrite": "[ES] Read & Write (Spanish)",
-  "@readWrite": {
-    "description": "Localization key for: Read & Write"
-  },
-  "REDACTED_TOKEN": "[ES] Redirecting to Stripe checkout for Basic plan... (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
-  },
-  "errorSavingConfigurationE": "[ES] Error saving configuration: $e",
-  "@errorSavingConfigurationE": {
-    "description": "Localization key for: Error saving configuration: $e"
-  },
-  "pickDate": "[ES] Pick Date (Spanish)",
-  "@pickDate": {
-    "description": "Localization key for: Pick Date"
-  },
-  "chatBooking": "[ES] Chat Booking (Spanish)",
-  "@chatBooking": {
-    "description": "Localization key for: Chat Booking"
-  },
-  "noQuestionsAdded": "[ES] No questions added (Spanish)",
-  "@noQuestionsAdded": {
-    "description": "Localization key for: No questions added"
-  },
-  "severityLogseverityname": "[ES] Severity: {severity}",
-  "@severityLogseverityname": {
-    "description": "Localization key for: Severity: {severity}"
-  },
-  "markAsPaid": "[ES] Mark as Paid",
-  "@markAsPaid": {
-    "description": "Localization key for: Mark as Paid"
-  },
-  "typeOpenCall": "[ES] Type: Open Call (Spanish)",
-  "@typeOpenCall": {
-    "description": "Localization key for: Type: Open Call"
-  },
-  "appointmentAppointmentid": "[ES] Appointment {appointmentId}",
-  "@appointmentAppointmentid": {
-    "description": "Localization key for: Appointment {appointmentId}"
-  },
-  "statusInvitestatusname": "[ES] Status: {status}",
-  "@statusInvitestatusname": {
-    "description": "Localization key for: Status: {status}"
-  },
-  "businessLogin": "[ES] Business Login",
-  "@businessLogin": {
-    "description": "Localization key for: Business Login"
-  },
-  "invoiceCreatedSuccessfully": "[ES] Invoice created successfully! (Spanish)",
-  "@invoiceCreatedSuccessfully": {
-    "description": "Localization key for: Invoice created successfully!"
-  },
-  "noTimeSeriesDataAvailable": "[ES] No time series data available (Spanish)",
-  "@noTimeSeriesDataAvailable": {
-    "description": "Localization key for: No time series data available"
-  },
-  "subscribeToWidgetplanname": "[ES] Subscribe to {planName}",
-  "@subscribeToWidgetplanname": {
-    "description": "Localization key for: Subscribe to {planName}"
-  },
-  "REDACTED_TOKEN": "[ES] Timestamp: {timestamp}",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Timestamp: {timestamp}"
-  },
-  "failedToSendPrivacyRequestE": "[ES] Failed to send privacy request: $e (Spanish)",
-  "@failedToSendPrivacyRequestE": {
-    "description": "Localization key for: Failed to send privacy request: $e"
-  },
-  "chooseYourPlan": "[ES] Choose Your Plan (Spanish)",
-  "@chooseYourPlan": {
-    "description": "Localization key for: Choose Your Plan"
-  },
-  "playtimeManagement": "[ES] Playtime Management (Spanish)",
-  "@playtimeManagement": {
-    "description": "Localization key for: Playtime Management"
-  },
-  "availability": "[ES] Availability (Spanish)",
-  "@availability": {
-    "description": "Localization key for: Availability"
-  },
-  "eventCreated": "[ES] Event created (Spanish)",
-  "@eventCreated": {
-    "description": "Localization key for: Event created"
-  },
-  "subscribeToBasic499mo": "[ES] Subscribe to Basic (€4.99/mo) (Spanish)",
-  "@subscribeToBasic499mo": {
-    "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
-  },
-  "completion": "[ES] Completion (Spanish)",
-  "@completion": {
-    "description": "Localization key for: Completion"
-  },
-  "supportTicketSubmitted": "[ES] Support ticket submitted (Spanish)",
-  "@supportTicketSubmitted": {
-    "description": "Localization key for: Support ticket submitted"
-  },
-  "monetizationSettings": "[ES] Monetization Settings (Spanish)",
-  "@monetizationSettings": {
-    "description": "Localization key for: Monetization Settings"
-  },
-  "noBookingsFound": "[ES] No bookings found (Spanish)",
-  "@noBookingsFound": {
-    "description": "Localization key for: No bookings found"
-  },
-  "admin": "[ES] Admin",
-  "@admin": {
-    "description": "Localization key for: Admin"
-  },
-  "deleteSurvey": "[ES] Delete Survey (Spanish)",
-  "@deleteSurvey": {
-    "description": "Localization key for: Delete Survey"
-  },
-  "gameApprovedSuccessfully": "[ES] Game approved successfully! (Spanish)",
-  "@gameApprovedSuccessfully": {
-    "description": "Localization key for: Game approved successfully!"
-  },
-  "errorLoadingPermissionsError": "[ES] Error loading permissions: $error (Spanish)",
-  "@errorLoadingPermissionsError": {
-    "description": "Localization key for: Error loading permissions: $error"
-  },
-  "referrals": "[ES] Referrals (Spanish)",
-  "@referrals": {
-    "description": "Localization key for: Referrals"
-  },
-  "crm": "[ES] CRM (Spanish)",
-  "@crm": {
-    "description": "Localization key for: CRM"
-  },
-  "gameRejected": "[ES] Game rejected (Spanish)",
-  "@gameRejected": {
-    "description": "Localization key for: Game rejected"
-  },
-  "appointments": "[ES] Citas",
-  "@appointments": {
-    "description": "Localization key for: Appointments"
-  },
-  "onboardingScreen": "[ES] Onboarding Screen (Spanish)",
-  "@onboardingScreen": {
-    "description": "Localization key for: Onboarding Screen"
-  },
-  "welcomeToYourStudio": "[ES] Bienvenido a tu estudio",
-  "@welcomeToYourStudio": {
-    "description": "Localization key for: Welcome to your studio"
-  },
-  "update": "[ES] Update (Spanish)",
-  "@update": {
-    "description": "Localization key for: Update"
-  },
-  "retry1": "[ES] Retry (Spanish)",
-  "@retry1": {
-    "description": "Localization key for: Retry"
-  },
-  "booking": "[ES] Booking (Spanish)",
-  "@booking": {
-    "description": "Localization key for: Booking"
-  },
-  "parentalSettings": "[ES] Parental Settings (Spanish)",
-  "@parentalSettings": {
-    "description": "Localization key for: Parental Settings"
-  },
-  "language": "[ES] Language (Spanish)",
-  "@language": {
-    "description": "Localization key for: Language"
-  },
-  "deleteSlot": "[ES] Delete Slot (Spanish)",
-  "@deleteSlot": {
-    "description": "Localization key for: Delete Slot"
-  },
-  "organizations": "[ES] Organizaciones",
-  "@organizations": {
-    "description": "organizations description"
-  },
-  "configurationSavedSuccessfully": "[ES] Configuration saved successfully!",
-  "@configurationSavedSuccessfully": {
-    "description": "Localization key for: Configuration saved successfully!"
-  },
-  "createNewGame": "[ES] Create New Game (Spanish)",
-  "@createNewGame": {
-    "description": "Localization key for: Create New Game"
-  },
-  "next1": "[ES] Next (Spanish)",
-  "@next1": {
-    "description": "Localization key for: Next"
-  },
-  "backgroundUploadedSuccessfully": "[ES] Background uploaded successfully! (Spanish)",
-  "@backgroundUploadedSuccessfully": {
-    "description": "Localization key for: Background uploaded successfully!"
-  },
-  "noAppointmentRequestsFound": "[ES] No appointment requests found. (Spanish)",
-  "@noAppointmentRequestsFound": {
-    "description": "Localization key for: No appointment requests found."
-  },
-  "pleaseSignInToCreateASession": "Por favor inicia sesión para crear una sesión",
-  "@pleaseSignInToCreateASession": {
-    "description": "Localization key for: Please sign in to create a session"
-  },
-  "restrictMatureContent": "[ES] Restrict mature content (Spanish)",
-  "@restrictMatureContent": {
-    "description": "Localization key for: Restrict mature content"
-  },
-  "ambassadors": "[ES] Ambassadors (Spanish)",
-  "@ambassadors": {
-    "description": "Localization key for: Ambassadors"
-  },
-  "smsNotifications": "Notificaciones SMS",
-  "@smsNotifications": {
-    "description": "Localization key for: SMS Notifications"
-  },
-  "paymentWasCancelled": "[ES] Payment was cancelled (Spanish)",
-  "@paymentWasCancelled": {
-    "description": "Localization key for: Payment was cancelled"
-  },
-  "clearAll": "[ES] Clear All (Spanish)",
-  "@clearAll": {
-    "description": "Localization key for: Clear All"
-  },
-  "viewDetails": "[ES] Ver detalles",
-  "@viewDetails": {
-    "description": "Localization key for: View Details"
-  },
-  "notifications1": "Notificaciones",
-  "@notifications1": {
-    "description": "Localization key for: Notifications"
-  },
-  "REDACTED_TOKEN": "Sesión en vivo programada, esperando aprobación del padre",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
-  },
-  "failedToCreateGameE": "[ES] Failed to create game: $e (Spanish)",
-  "@failedToCreateGameE": {
-    "description": "Localization key for: Failed to create game: $e"
-  },
-  "noChartDataAvailable": "[ES] No chart data available (Spanish)",
-  "@noChartDataAvailable": {
-    "description": "Localization key for: No chart data available"
-  },
-  "phonebasedBookingSystem": "[ES] • Phone-based booking system (Spanish)",
-  "@phonebasedBookingSystem": {
-    "description": "Localization key for: • Phone-based booking system"
-  },
-  "enableNotifications1": "Habilitar notificaciones",
-  "@enableNotifications1": {
-    "description": "Localization key for: Enable Notifications"
-  },
-  "invoices": "[ES] Invoices (Spanish)",
-  "@invoices": {
-    "description": "Localization key for: Invoices"
-  },
-  "REDACTED_TOKEN": "Por favor activa tu perfil empresarial para continuar",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Please activate your business profile to continue."
-  },
-  "scheduledAtArgsscheduledat": "[ES] Scheduled at: {scheduledAt} (Spanish)",
-  "@scheduledAtArgsscheduledat": {
-    "description": "Localization key for: Scheduled at: {scheduledAt}"
-  },
-  "REDACTED_TOKEN": "[ES] Duration: {duration} minutes (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Duration: {duration} minutes"
-  },
-  "tryAgain": "[ES] Try Again (Spanish)",
-  "@tryAgain": {
-    "description": "Localization key for: Try Again"
-  },
-  "deleteBackground": "[ES] Delete Background (Spanish)",
-  "@deleteBackground": {
-    "description": "Localization key for: Delete Background"
-  },
-  "currentTierTiertouppercase": "[ES] Current Tier: {tier} (Spanish)",
-  "@currentTierTiertouppercase": {
-    "description": "Localization key for: Current Tier: {tier}"
-  },
-  "iDoNotConsent": "[ES] I Do Not Consent",
-  "@iDoNotConsent": {
-    "description": "Localization key for: I Do Not Consent"
-  },
-  "REDACTED_TOKEN": "[ES] No clients found. Add your first client! (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: No clients found. Add your first client!"
-  },
-  "REDACTED_TOKEN": "[ES] Settings dialog will be implemented here.",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Settings dialog will be implemented here."
-  },
-  "groupGroupid": "[ES] Group: $groupId",
-  "@groupGroupid": {
-    "description": "Localization key for: Group: $groupId"
-  },
-  "appointmentRequests": "[ES] Appointment Requests (Spanish)",
-  "@appointmentRequests": {
-    "description": "Localization key for: Appointment Requests"
-  },
-  "forward": "[ES] Forward (Spanish)",
-  "@forward": {
-    "description": "Localization key for: Forward"
-  },
-  "roomAddedSuccessfully": "[ES] Room added successfully! (Spanish)",
-  "@roomAddedSuccessfully": {
-    "description": "Localization key for: Room added successfully!"
-  },
-  "option": "[ES] • $option (Spanish)",
-  "@option": {
-    "description": "Localization key for: • $option"
-  },
-  "responseIndex1": "[ES] Response #{number} (Spanish)",
-  "@responseIndex1": {
-    "description": "Localization key for: Response #{number}"
-  },
-  "crmDashboardWithAnalytics": "[ES] • CRM dashboard with analytics (Spanish)",
-  "@crmDashboardWithAnalytics": {
-    "description": "Localization key for: • CRM dashboard with analytics"
-  },
-  "contentLibrary1": "[ES] Content Library (Spanish)",
-  "@contentLibrary1": {
-    "description": "Localization key for: Content Library"
-  },
-  "reply": "[ES] Reply (Spanish)",
-  "@reply": {
-    "description": "Localization key for: Reply"
-  },
-  "subscriptionManagement": "[ES] Subscription Management (Spanish)",
-  "@subscriptionManagement": {
-    "description": "Localization key for: Subscription Management"
-  },
-  "REDACTED_TOKEN": "[ES] Monetization settings will be implemented here (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Monetization settings will be implemented here"
-  },
-  "failedToApplyPromoCodeE": "[ES] Failed to apply promo code: $e (Spanish)",
-  "@failedToApplyPromoCodeE": {
-    "description": "Localization key for: Failed to apply promo code: $e"
-  },
-  "editProvider": "[ES] Edit Provider",
-  "@editProvider": {
-    "description": "Localization key for: Edit Provider"
-  },
-  "localizationContribution": "[ES] Localization Contribution (Spanish)",
-  "@localizationContribution": {
-    "description": "Localization key for: Localization Contribution"
-  },
-  "parentalConsent": "[ES] Parental Consent (Spanish)",
-  "@parentalConsent": {
-    "description": "Localization key for: Parental Consent"
-  },
-  "businessSignupScreenComingSoon": "[ES] Business Signup Screen - Coming Soon (Spanish)",
-  "@businessSignupScreenComingSoon": {
-    "description": "Localization key for: Business Signup Screen - Coming Soon"
-  },
-  "REDACTED_TOKEN": "[ES] Are you sure you want to delete this appointment? (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Are you sure you want to delete this appointment?"
-  },
-  "syncAppointment": "[ES] Sync Appointment (Spanish)",
-  "@syncAppointment": {
-    "description": "Localization key for: Sync Appointment"
-  },
-  "iConsent": "[ES] I Consent (Spanish)",
-  "@iConsent": {
-    "description": "Localization key for: I Consent"
-  },
-  "sessionRejected": "Sesión rechazada",
-  "@sessionRejected": {
-    "description": "Localization key for: Session rejected"
-  },
-  "businessSetupScreenComingSoon": "[ES] Business Setup Screen - Coming Soon (Spanish)",
-  "@businessSetupScreenComingSoon": {
-    "description": "Localization key for: Business Setup Screen - Coming Soon"
-  },
-  "edit1": "[ES] Edit (Spanish)",
-  "@edit1": {
-    "description": "Localization key for: Edit"
-  },
-  "noEventsScheduledThisMonth": "[ES] No events scheduled this month (Spanish)",
-  "@noEventsScheduledThisMonth": {
-    "description": "Localization key for: No events scheduled this month"
-  },
-  "businessDashboard": "[ES] Business Dashboard (Spanish)",
-  "@businessDashboard": {
-    "description": "Localization key for: Business Dashboard"
-  },
-  "noMessagesFound": "[ES] No messages found. (Spanish)",
-  "@noMessagesFound": {
-    "description": "Localization key for: No messages found."
-  },
-  "staffStaffidNotSelected": "[ES] Staff: {staff}",
-  "@staffStaffidNotSelected": {
-    "description": "Localization key for: Staff: {staff}"
-  },
-  "manageStaffAvailability": "[ES] Manage Staff Availability (Spanish)",
-  "@manageStaffAvailability": {
-    "description": "Localization key for: Manage Staff Availability"
-  },
-  "noMissingTranslations": "[ES] No missing translations (Spanish)",
-  "@noMissingTranslations": {
-    "description": "Localization key for: No missing translations"
-  },
-  "skip": "[ES] Skip (Spanish)",
-  "@skip": {
-    "description": "Localization key for: Skip"
-  },
-  "meetingIdMeetingid": "ID de reunión: {meetingId}",
-  "@meetingIdMeetingid": {
-    "description": "Localization key for: Meeting ID: $meetingId"
-  },
-  "noUsers": "[ES] Sin usuarios",
-  "@noUsers": {
-    "description": "noUsers description"
-  },
-  "errorLoadingReferralCode": "[ES] Error loading referral code (Spanish)",
-  "@errorLoadingReferralCode": {
-    "description": "Localization key for: Error loading referral code"
-  },
-  "allCountries": "[ES] All Countries (Spanish)",
-  "@allCountries": {
-    "description": "Localization key for: All Countries"
-  },
-  "deleteGame": "[ES] Delete Game (Spanish)",
-  "@deleteGame": {
-    "description": "Localization key for: Delete Game"
-  },
-  "staffManagementTools": "[ES] • Staff management tools (Spanish)",
-  "@staffManagementTools": {
-    "description": "Localization key for: • Staff management tools"
-  },
-  "deleteMessage": "[ES] Delete Message (Spanish)",
-  "@deleteMessage": {
-    "description": "Localization key for: Delete Message"
-  },
-  "REDACTED_TOKEN": "Recibir notificaciones de reserva por SMS",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Receive booking notifications via SMS"
-  },
-  "changeRole": "[ES] Cambiar rol",
-  "@changeRole": {
-    "description": "changeRole description"
-  },
-  "REDACTED_TOKEN": "[ES] Error loading bookings: {error} (Spanish)",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Error loading bookings: {error}"
-  },
-  "openingCustomerPortal": "[ES] Opening customer portal... (Spanish)",
-  "@openingCustomerPortal": {
-    "description": "Localization key for: Opening customer portal..."
-  },
-  "signOut": "[ES] Sign Out (Spanish)",
-  "@signOut": {
-    "description": "Localization key for: Sign Out"
-  },
-  "nameProfilename": "[ES] Name: {name} (Spanish)",
-  "@nameProfilename": {
-    "description": "Localization key for: Name: {name}"
-  },
-  "REDACTED_TOKEN": "Pantalla de entrada del perfil empresarial - Próximamente",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
-  },
-  "upgradeToBusiness": "[ES] Actualizar a negocio",
-  "@upgradeToBusiness": {
-    "description": "Localization key for: Upgrade to Business"
-  },
-  "apply": "Aplicar",
-  "@apply": {
-    "description": "Localization key for: Apply"
-  },
-  "errorLoadingSubscriptionError": "Error cargando suscripción: {error}",
-  "@errorLoadingSubscriptionError": {
-    "description": "Localization key for: Error loading subscription: $error"
-  },
-  "errorLoadingUsers": "Error cargando usuarios",
-  "@errorLoadingUsers": {
-    "description": "errorLoadingUsers description"
-  },
-  "verify": "Verificar",
-  "@verify": {
-    "description": "Localization key for: Verify"
-  },
-  "subscription": "Suscripción",
-  "@subscription": {
-    "description": "Localization key for: Subscription"
-  },
-  "deleteMyAccount": "Eliminar mi cuenta",
-  "@deleteMyAccount": {
-    "description": "Localization key for: Delete My Account"
-  },
-  "REDACTED_TOKEN": "Pantalla de entrada de citas comerciales - Próximamente",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
-  },
-  "viewResponses": "[ES] Ver respuestas",
-  "@viewResponses": {
-    "description": "Localization key for: View Responses"
-  },
-  "businessWelcomeScreenComingSoon": "Pantalla de bienvenida empresarial - Próximamente",
-  "@businessWelcomeScreenComingSoon": {
-    "description": "Localization key for: Business Welcome Screen - Coming Soon"
-  },
-  "failedToOpenCustomerPortalE": "Error al abrir portal del cliente: {e}",
-  "@failedToOpenCustomerPortalE": {
-    "description": "Localization key for: Failed to open customer portal: $e"
-  },
-  "continueText": "Continuar",
-  "@continueText": {
-    "description": "Localization key for: Continue"
-  },
-  "close1": "Cerrar",
-  "@close1": {
-    "description": "Localization key for: Close"
-  },
-  "confirm1": "Confirmar",
-  "@confirm1": {
-    "description": "Localization key for: Confirm"
-  },
-  "externalMeetings": "Reuniones externas",
-  "@externalMeetings": {
-    "description": "Localization key for: External Meetings"
-  },
-  "approve": "Aprobar",
-  "@approve": {
-    "description": "Localization key for: Approve"
-  },
-  "REDACTED_TOKEN": "No se encontraron facturas. ¡Crea tu primera factura!",
-  "@REDACTED_TOKEN": {
-    "description": "Localization key for: No invoices found. Create your first invoice!"
-  },
-  "subscribe": "Suscribirse",
-  "@subscribe": {
-    "description": "Localization key for: Subscribe"
-  },
-  "login1": "Iniciar sesión",
-  "@login1": {
-    "description": "Localization key for: Login"
-  },
-  "adminOverviewGoesHere": "Resumen del administrador va aquí",
-  "@adminOverviewGoesHere": {
-    "description": "Localization key for: Admin overview goes here"
-  },
-  "loadingCheckout": "Cargando checkout...",
-  "@loadingCheckout": {
-    "description": "Localization key for: Loading checkout..."
-  },
-  "ad_pre_title": "Mira un anuncio para confirmar tu cita",
-  "@ad_pre_title": {
-    "description": "Title shown before ad for free users"
-  },
-  "ad_pre_description": "Como usuario gratuito, debes ver un anuncio corto antes de confirmar. Puedes eliminar todos los anuncios permanentemente actualizando.",
-  "@ad_pre_description": {
-    "description": "Description shown before ad for free users"
-  },
-  "watch_ad_button": "Ver Anuncio",
-  "@watch_ad_button": {
-    "description": "Button to watch ad"
-  },
-  "upgrade_button": "Actualizar a Premium (€4)",
-  "@upgrade_button": {
-    "description": "Button to upgrade to premium"
-  },
-  "ad_post_title": "¡Anuncio terminado! Ahora puedes confirmar tu cita.",
-  "@ad_post_title": {
-    "description": "Title shown after ad is finished"
-  },
-  "confirm_appointment_button": "Confirmar Cita",
-  "@confirm_appointment_button": {
-    "description": "Button to confirm appointment after ad"
-  },
-  "upgrade_prompt_title": "Actualización única",
-  "@upgrade_prompt_title": {
-    "description": "Title for upgrade prompt"
-  },
-  "upgrade_prompt_description": "Paga €4 para eliminar todos los anuncios para siempre",
-  "@upgrade_prompt_description": {
-    "description": "Description for upgrade prompt"
-  },
-  "purchase_now_button": "Comprar Ahora",
-  "@purchase_now_button": {
-    "description": "Button to purchase upgrade"
-  },
-  "termsOfService": "Términos de Servicio",
-  "@termsOfService": {
-    "description": "Terms of Service page title"
-  },
-  "termsLastUpdated": "Última actualización: Enero 2024",
-  "@termsLastUpdated": {
-    "description": "Terms of Service last updated date"
-  },
-  "termsAcceptanceTitle": "[SPANISH] 1. Acceptance of Terms",
-  "@termsAcceptanceTitle": {
-    "description": "Terms of Service section title"
-  },
-  "termsAcceptanceContent": "[SPANISH] By accessing and using APP-OINT, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.",
-  "@termsAcceptanceContent": {
-    "description": "Terms of Service acceptance section content"
-  },
-  "termsDescriptionTitle": "[SPANISH] 2. Use License",
-  "@termsDescriptionTitle": {
-    "description": "Terms of Service description section title"
-  },
-  "termsDescriptionContent": "[SPANISH] Permission is granted to temporarily use APP-OINT for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not: modify or copy the materials; use the materials for any commercial purpose or for any public display; attempt to reverse engineer any software contained on APP-OINT's platform; or remove any copyright or other proprietary notations from the materials.",
-  "@termsDescriptionContent": {
-    "description": "Terms of Service description section content"
-  },
-  "termsUserAccountsTitle": "[SPANISH] 3. User Accounts",
-  "@termsUserAccountsTitle": {
-    "description": "Terms of Service user accounts section title"
-  },
-  "termsUserAccountsContent": "[SPANISH] When you create an account with us, you must provide information that is accurate, complete, and current at all times. You are responsible for safeguarding the password and for all activities that occur under your account.",
-  "@termsUserAccountsContent": {
-    "description": "Terms of Service user accounts section content"
-  },
-  "termsMinorProtectionTitle": "[SPANISH] 4. Protection of Minors (COPPA Compliance)",
-  "@termsMinorProtectionTitle": {
-    "description": "Terms of Service minor protection section title"
-  },
-  "termsMinorProtectionContent": "[SPANISH] APP-OINT is committed to protecting the privacy of children under 13 years of age. We do not knowingly collect personal information from children under 13 without verifiable parental consent. If we learn that a child under 13 has provided us with personal information without parental consent, we will delete such information from our files.",
-  "@termsMinorProtectionContent": {
-    "description": "Terms of Service minor protection section content"
-  },
-  "termsProhibitedUsesTitle": "[SPANISH] 5. Prohibited Uses",
-  "@termsProhibitedUsesTitle": {
-    "description": "Terms of Service prohibited uses section title"
-  },
-  "termsProhibitedUsesContent": "[SPANISH] You may not use our service: for any unlawful purpose or to solicit others to perform unlawful acts; to violate any international, federal, provincial, or state regulations, rules, laws, or local ordinances; to infringe upon or violate our intellectual property rights or the intellectual property rights of others; to harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate; to submit false or misleading information; to upload or transmit viruses or any other type of malicious code; or to collect or track personal information of others.",
-  "@termsProhibitedUsesContent": {
-    "description": "Terms of Service prohibited uses section content"
-  },
-  "termsContentLicenseTitle": "[SPANISH] 6. Content License",
-  "@termsContentLicenseTitle": {
-    "description": "Terms of Service content license section title"
-  },
-  "termsContentLicenseContent": "[SPANISH] Our service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material. You are responsible for the content that you post to the service, including its legality, reliability, and appropriateness.",
-  "@termsContentLicenseContent": {
-    "description": "Terms of Service content license section content"
-  },
-  "termsPrivacyTitle": "[SPANISH] 7. Privacy Policy",
-  "@termsPrivacyTitle": {
-    "description": "Terms of Service privacy section title"
-  },
-  "termsPrivacyContent": "[SPANISH] Your privacy is important to us. Please review our Privacy Policy, which also governs your use of the service, to understand our practices.",
-  "@termsPrivacyContent": {
-    "description": "Terms of Service privacy section content"
-  },
-  "termsTerminationTitle": "[SPANISH] 8. Termination",
-  "@termsTerminationTitle": {
-    "description": "Terms of Service termination section title"
-  },
-  "termsTerminationContent": "[SPANISH] We may terminate or suspend your account and bar access to the service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of the Terms.",
-  "@termsTerminationContent": {
-    "description": "Terms of Service termination section content"
-  },
-  "termsChangesTitle": "[SPANISH] 9. Changes to Terms",
-  "@termsChangesTitle": {
-    "description": "Terms of Service changes section title"
-  },
-  "termsChangesContent": "[SPANISH] We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days notice prior to any new terms taking effect.",
-  "@termsChangesContent": {
-    "description": "Terms of Service changes section content"
-  },
-  "termsContactTitle": "[SPANISH] 10. Contact Information",
-  "@termsContactTitle": {
-    "description": "Terms of Service contact section title"
-  },
-  "termsContactContent": "[SPANISH] If you have any questions about these Terms, please contact us at legal@app-oint.com.",
-  "@termsContactContent": {
-    "description": "Terms of Service contact section content"
-  },
-  "acceptTerms": "Aceptar Términos",
-  "@acceptTerms": {
-    "description": "Button to accept terms of service"
-  },
-  "privacyLastUpdated": "Última actualización: Enero 2024",
-  "@privacyLastUpdated": {
-    "description": "Privacy Policy last updated date"
-  },
-  "privacyIntroductionTitle": "[SPANISH] 1. Introduction",
-  "@privacyIntroductionTitle": {
-    "description": "Privacy Policy introduction section title"
-  },
-  "privacyIntroductionContent": "[SPANISH] APP-OINT respects your privacy and is committed to protecting your personal data. This privacy policy explains how we look after your personal data when you visit our platform and tells you about your privacy rights and how the law protects you.",
-  "@privacyIntroductionContent": {
-    "description": "Privacy Policy introduction section content"
-  },
-  "REDACTED_TOKEN": "[SPANISH] 2. Information We Collect",
-  "@REDACTED_TOKEN": {
-    "description": "Privacy Policy information collected section title"
-  },
-  "REDACTED_TOKEN": "[SPANISH] We may collect, use, store and transfer different kinds of personal data about you including: identity data (first name, last name, username), contact data (email address, telephone numbers), technical data (internet protocol address, browser type and version, time zone setting), profile data (your username and password, your interests, preferences, feedback), usage data (information about how you use our platform), and marketing data (your preferences in receiving marketing from us).",
-  "@REDACTED_TOKEN": {
-    "description": "Privacy Policy information collected section content"
-  },
-  "privacyHowWeUseTitle": "[SPANISH] 3. How We Use Your Information",
-  "@privacyHowWeUseTitle": {
-    "description": "Privacy Policy how we use section title"
-  },
-  "privacyHowWeUseContent": "[SPANISH] We use your personal data to: register you as a new customer, process and deliver your service including managing payments and communicating with you about your service, manage our relationship with you (including notifying you about changes to our terms or privacy policy), enable you to partake in a prize draw, competition or complete a survey, administer and protect our business and this platform (including troubleshooting, data analysis, testing, system maintenance, support, reporting and hosting of data), deliver relevant platform content and advertisements to you and measure or understand the effectiveness of the advertising we serve to you.",
-  "@privacyHowWeUseContent": {
-    "description": "Privacy Policy how we use section content"
-  },
-  "privacyInformationSharingTitle": "[SPANISH] 4. Information Sharing",
-  "@privacyInformationSharingTitle": {
-    "description": "Privacy Policy information sharing section title"
-  },
-  "REDACTED_TOKEN": "[SPANISH] We may share your personal information in the following situations: with service providers who perform services on our behalf, for business transfers in connection with any merger, sale, or transfer of all or a portion of our business, for legal requirements to comply with applicable law, legal process, or governmental request, to protect rights and safety when we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request.",
-  "@REDACTED_TOKEN": {
-    "description": "Privacy Policy information sharing section content"
-  },
-  "privacyChildrenProtectionTitle": "[SPANISH] 5. Children's Privacy (COPPA Compliance)",
-  "@privacyChildrenProtectionTitle": {
-    "description": "Privacy Policy children protection section title"
-  },
-  "REDACTED_TOKEN": "[SPANISH] Our service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us. If we become aware that we have collected personal data from children without verification of parental consent, we take steps to remove that information from our servers.",
-  "@REDACTED_TOKEN": {
-    "description": "Privacy Policy children protection section content"
-  },
-  "privacyDataSecurityTitle": "[SPANISH] 6. Data Security",
-  "@privacyDataSecurityTitle": {
-    "description": "Privacy Policy data security section title"
-  },
-  "privacyDataSecurityContent": "[SPANISH] We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorized way, altered or disclosed. We limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know.",
-  "@privacyDataSecurityContent": {
-    "description": "Privacy Policy data security section content"
-  },
-  "privacyUserRightsTitle": "[SPANISH] 7. Your Data Protection Rights (GDPR)",
-  "@privacyUserRightsTitle": {
-    "description": "Privacy Policy user rights section title"
-  },
-  "privacyUserRightsContent": "[SPANISH] Under certain circumstances, you have rights under data protection laws in relation to your personal data: the right to request access to your personal data, the right to request correction of your personal data, the right to request erasure of your personal data, the right to object to processing of your personal data, the right to request restriction of processing your personal data, the right to request transfer of your personal data, and the right to withdraw consent at any time where we are relying on consent to process your personal data.",
-  "@privacyUserRightsContent": {
-    "description": "Privacy Policy user rights section content"
-  },
-  "privacyCookiesTitle": "[SPANISH] 8. Cookies",
-  "@privacyCookiesTitle": {
-    "description": "Privacy Policy cookies section title"
-  },
-  "privacyCookiesContent": "[SPANISH] We use cookies and similar tracking technologies to track the activity on our service and hold certain information. Cookies are files with small amount of data which may include an anonymous unique identifier. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.",
-  "@privacyCookiesContent": {
-    "description": "Privacy Policy cookies section content"
-  },
-  "privacyThirdPartyTitle": "[SPANISH] 9. Third-Party Services",
-  "@privacyThirdPartyTitle": {
-    "description": "Privacy Policy third party section title"
-  },
-  "privacyThirdPartyContent": "[SPANISH] Our service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the privacy policy of every site you visit.",
-  "@privacyThirdPartyContent": {
-    "description": "Privacy Policy third party section content"
-  },
-  "privacyChangesTitle": "[SPANISH] 10. Changes to This Privacy Policy",
-  "@privacyChangesTitle": {
-    "description": "Privacy Policy changes section title"
-  },
-  "privacyChangesContent": "[SPANISH] We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'last updated' date.",
-  "@privacyChangesContent": {
-    "description": "Privacy Policy changes section content"
-  },
-  "privacyContactTitle": "[SPANISH] 11. Contact Us",
-  "@privacyContactTitle": {
-    "description": "Privacy Policy contact section title"
-  },
-  "privacyContactContent": "[SPANISH] If you have any questions about this Privacy Policy, please contact us at privacy@app-oint.com.",
-  "@privacyContactContent": {
-    "description": "Privacy Policy contact section content"
-  },
-  "acceptPrivacyPolicy": "Aceptar Política de Privacidad",
-  "@acceptPrivacyPolicy": {
-    "description": "Button to accept privacy policy"
-  },
-  "consentRequired": "Debe aceptar los términos y la política de privacidad para continuar",
-  "@consentRequired": {
-    "description": "Error message when consent is required but not given"
-  },
-  "iAgreeToThe": "Acepto los",
-  "@iAgreeToThe": {
-    "description": "Start of consent text"
-  },
-  "and": "y",
-  "@and": {
-    "description": "Conjunction word for consent text"
-  },
-  "iHaveReadAndAgreeToThe": "He leído y acepto la",
-  "@iHaveReadAndAgreeToThe": {
-    "description": "Consent agreement text"
-  },
-  "createAccount": "Crear Cuenta",
-  "@createAccount": {
-    "description": "Button to create account after consent"
-  },
-  "acceptAndContinue": "Aceptar y Continuar",
-  "@acceptAndContinue": {
-    "description": "Button to accept terms and continue"
-  },
-  "consentSignupNotice": "[SPANISH] By creating an account, you acknowledge that you have read and agree to our Terms of Service and Privacy Policy.",
-  "@consentSignupNotice": {
-    "description": "Notice text shown during signup about consent"
-  }
+  "privacyRequestSent": "Solicitud de privacidad enviada",
+  "@privacyRequestSent": {
+    "description": "privacyRequestSent description"
+  },
+  "failedToSendPrivacyRequest": "Error al enviar solicitud de privacidad",
+  "@failedToSendPrivacyRequest": {
+    "description": "failedToSendPrivacyRequest description"
+  },
+  "overview": "Overview",
+  "@overview": {
+    "description": "Description"
+  },
+  "bookings": "Bookings",
+  "@bookings": {
+    "description": "Description"
+  },
+  "contentLibrary": "Content Library",
+  "remove": "Eliminar",
+  "name": "Nombre",
+  "help": "Ayuda",
+  "contact": "Contacto",
+  "privacy": "Privacidad",
+  "terms": "Términos",
+  "messages": "Mensajes",
+  "calendar": "Calendario",
+  "appointments": "Citas",
+  "schedule": "Programar",
+  "playtimeNoGamesYet": "Aún no hay juegos",
+  "checkingPermissions1": "Verificando permisos..."
 }
