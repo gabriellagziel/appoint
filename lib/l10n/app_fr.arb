@@ -1,781 +1,2979 @@
 {
   "@@locale": "fr",
-  "@about": {
-    "description": "About navigation label"
-  },
-  "@accept": {
-    "description": "Description"
-  },
-  "@accessRevokedSuccessfully": {
-    "description": "Description"
-  },
-  "@add": {
-    "description": "Description"
-  },
-  "@appTitle": {
-    "description": "Description"
-  },
-  "@back": {
-    "description": "Description"
-  },
-  "@cancel": {
-    "description": "cancel description"
-  },
-  "@cancelInvite": {
-    "description": "Description"
-  },
-  "@cancelInviteConfirmation": {
-    "description": "Description"
-  },
-  "@checkingPermissions": {
-    "description": "checkingPermissions description"
-  },
-  "@choose": {
-    "description": "Description"
-  },
-  "@clicked": {
-    "description": "clicked description"
-  },
-  "@clientScreenTBD": {
-    "description": "Description"
-  },
-  "@close": {
-    "description": "close description"
-  },
-  "@composeBroadcastMessage": {
-    "description": "composeBroadcastMessage description"
-  },
-  "@confirm": {
-    "description": "Description"
-  },
-  "@confirmPassword": {
-    "description": "Description"
-  },
-  "@connectedChildren": {
-    "description": "Description"
-  },
-  "@content": {
-    "description": "content description"
-  },
-  "@copy": {
-    "description": "Description"
-  },
-  "@createGame": {
-    "description": "Description"
-  },
-  "@createLiveSession": {
-    "description": "Description"
-  },
-  "@createNew": {
-    "description": "Description"
-  },
-  "@createVirtualSession": {
-    "description": "Description"
-  },
-  "@createYourFirstGame": {
-    "description": "Description"
-  },
-  "@createYourFirstSession": {
-    "description": "Description"
-  },
-  "@created": {
-    "description": "created description"
-  },
-  "@customizeMessage": {
-    "description": "Description"
-  },
-  "@cut": {
-    "description": "Description"
-  },
-  "@dashboard": {
-    "description": "Description"
-  },
-  "@decline": {
-    "description": "Description"
-  },
-  "@defaultShareMessage": {
-    "description": "Description"
-  },
-  "@delete": {
-    "description": "Description"
-  },
-  "@details": {
-    "description": "details description"
-  },
-  "@done": {
-    "description": "Description"
-  },
-  "@download": {
-    "description": "Description"
-  },
-  "@edit": {
-    "description": "Description"
-  },
-  "@email": {
-    "description": "Description"
-  },
-  "@enableNotifications": {
-    "description": "Description"
-  },
-  "@enterGroupName": {
-    "description": "Description"
-  },
-  "@error": {
-    "description": "Description"
-  },
-  "@errorCheckingPermissions": {
-    "description": "errorCheckingPermissions description"
-  },
-  "@errorLoadingFamilyLinks": {
-    "description": "Description"
-  },
-  "@errorLoadingInvites": {
-    "description": "Description"
-  },
-  "@errorLoadingPrivacyRequests": {
-    "description": "errorLoadingPrivacyRequests description"
-  },
-  "@errorLoadingProfile": {
-    "description": "Description"
-  },
-  "@errorSavingMessage": {
-    "description": "errorSavingMessage description"
-  },
-  "@errorSendingMessage": {
-    "description": "errorSendingMessage description"
-  },
-  "@failedToActionPrivacyRequest": {
-    "description": "failedToActionPrivacyRequest description"
-  },
-  "@failedToCancelInvite": {
-    "description": "Description"
-  },
-  "@failedToResendOtp": {
-    "description": "Description"
-  },
-  "@failedToRevokeAccess": {
-    "description": "Description"
-  },
-  "@familyDashboard": {
-    "description": "Description"
-  },
-  "@familyMembers": {
-    "description": "Description"
-  },
-  "@fcmToken": {
-    "description": "Description"
-  },
-  "@forgotPassword": {
-    "description": "Description"
-  },
-  "@groupNameOptional": {
-    "description": "Description"
-  },
-  "@home": {
-    "description": "Description"
-  },
-  "@invite": {
-    "description": "Description"
-  },
-  "@inviteCancelledSuccessfully": {
-    "description": "Description"
-  },
-  "@inviteDetail": {
-    "description": "Description"
-  },
-  "@invited": {
-    "description": "Description"
-  },
-  "@knownGroupDetected": {
-    "description": "Description"
-  },
-  "@link": {
-    "description": "link description"
-  },
-  "@loading": {
-    "description": "Description"
-  },
-  "@login": {
-    "description": "Description"
-  },
-  "@logout": {
-    "description": "Description"
-  },
-  "@managePermissions": {
-    "description": "Description"
-  },
-  "@mediaOptional": {
-    "description": "mediaOptional description"
-  },
-  "@meetingReadyMessage": {
-    "description": "Description"
-  },
-  "@meetingSharedSuccessfully": {
-    "description": "Description"
-  },
-  "@messageSavedSuccessfully": {
-    "description": "messageSavedSuccessfully description"
-  },
-  "@messageSentSuccessfully": {
-    "description": "messageSentSuccessfully description"
-  },
-  "@myInvites": {
-    "description": "Description"
-  },
-  "@myProfile": {
-    "description": "Description"
-  },
-  "@next": {
-    "description": "Description"
-  },
-  "@no": {
-    "description": "Description"
-  },
-  "@noBroadcastMessages": {
-    "description": "noBroadcastMessages description"
-  },
-  "@noFamilyMembersYet": {
-    "description": "Description"
-  },
-  "@noGamesYet": {
-    "description": "Description"
-  },
-  "@noInvites": {
-    "description": "Description"
-  },
-  "@noPermissionForBroadcast": {
-    "description": "noPermissionForBroadcast description"
-  },
-  "@noProfileFound": {
-    "description": "Description"
-  },
-  "@noResults": {
-    "description": "Description"
-  },
-  "@noSessionsYet": {
-    "description": "Description"
-  },
-  "@notificationSettings": {
-    "description": "Description"
-  },
-  "@notifications": {
-    "description": "Description"
-  },
-  "@ok": {
-    "description": "Description"
-  },
-  "@opened": {
-    "description": "opened description"
-  },
-  "@otpResentSuccessfully": {
-    "description": "Description"
-  },
-  "@participants": {
-    "description": "Description"
-  },
-  "@password": {
-    "description": "Description"
-  },
-  "@paste": {
-    "description": "Description"
-  },
-  "@pendingInvites": {
-    "description": "Description"
-  },
-  "@pickImage": {
-    "description": "pickImage description"
-  },
-  "@pickVideo": {
-    "description": "pickVideo description"
-  },
-  "@playtimeApprove": {
-    "description": "Description"
-  },
-  "@playtimeChooseFriends": {
-    "description": "Description"
-  },
-  "@playtimeChooseGame": {
-    "description": "Description"
-  },
-  "@playtimeChooseTime": {
-    "description": "Description"
-  },
-  "@playtimeCreate": {
-    "description": "Description"
-  },
-  "@playtimeCreateSession": {
-    "description": "Description"
-  },
-  "@playtimeDescription": {
-    "description": "Description"
-  },
-  "@playtimeEnterGameName": {
-    "description": "Description"
-  },
-  "@playtimeGameApproved": {
-    "description": "Description"
-  },
-  "@playtimeGameDeleted": {
-    "description": "Description"
-  },
-  "@playtimeGameRejected": {
-    "description": "Description"
-  },
-  "@playtimeHub": {
-    "description": "Description"
-  },
-  "@playtimeLandingChooseMode": {
-    "description": "Description"
-  },
-  "@playtimeLive": {
-    "description": "Description"
-  },
-  "@playtimeLiveScheduled": {
-    "description": "Description"
-  },
-  "@playtimeModeLive": {
-    "description": "Description"
-  },
-  "@playtimeModeVirtual": {
-    "description": "Description"
-  },
-  "@playtimeNoSessions": {
-    "description": "Description"
-  },
-  "@playtimeParentDashboardTitle": {
-    "description": "Description"
-  },
-  "@playtimeReject": {
-    "description": "Description"
-  },
-  "@playtimeTitle": {
-    "description": "Description"
-  },
-  "@playtimeVirtual": {
-    "description": "Description"
-  },
-  "@playtimeVirtualStarted": {
-    "description": "Description"
-  },
-  "@pleaseLoginForFamilyFeatures": {
-    "description": "Description"
-  },
-  "@pollOptions": {
-    "description": "pollOptions description"
-  },
-  "@previous": {
-    "description": "Description"
-  },
-  "@profile": {
-    "description": "Description"
-  },
-  "@quickActions": {
-    "description": "Description"
-  },
-  "@recentGames": {
-    "description": "Description"
-  },
-  "@recipients": {
-    "description": "recipients description"
-  },
-  "@redo": {
-    "description": "Description"
-  },
+  "refresh": "[FR] Actualiser",
   "@refresh": {
     "description": "Description"
   },
-  "@removeChild": {
+  "home": "[FR] Accueil",
+  "@home": {
     "description": "Description"
   },
-  "@requestType": {
-    "description": "requestType description"
-  },
-  "@retry": {
+  "noSessionsYet": "[FR] [FR] No sessions yet",
+  "@noSessionsYet": {
     "description": "Description"
   },
-  "@revoke": {
+  "ok": "[FR] OK",
+  "@ok": {
     "description": "Description"
   },
-  "@revokeAccess": {
+  "playtimeLandingChooseMode": "[FR] Choisissez un mode",
+  "@playtimeLandingChooseMode": {
     "description": "Description"
   },
-  "@revokeAccessConfirmation": {
-    "description": "Description"
-  },
-  "@save": {
-    "description": "save description"
-  },
-  "@saveGroupForRecognition": {
-    "description": "Description"
-  },
-  "@scheduleForLater": {
-    "description": "scheduleForLater description"
-  },
-  "@scheduleMessage": {
-    "description": "Description"
-  },
-  "@scheduled": {
-    "description": "scheduled description"
-  },
-  "@scheduledFor": {
-    "description": "Description"
-  },
-  "@scheduling": {
-    "description": "scheduling description"
-  },
-  "@search": {
-    "description": "Description"
-  },
-  "@select": {
-    "description": "Description"
-  },
-  "@sendNow": {
-    "description": "sendNow description"
-  },
-  "@settings": {
-    "description": "Description"
-  },
-  "@share": {
-    "description": "Description"
-  },
-  "@shareOnWhatsApp": {
-    "description": "Description"
-  },
+  "signUp": "[FR] S'inscrire",
   "@signUp": {
     "description": "Description"
   },
-  "@staffScreenTBD": {
+  "scheduleMessage": "[FR] Programmer un message",
+  "@scheduleMessage": {
     "description": "Description"
   },
-  "@status": {
-    "description": "status description"
+  "decline": "[FR] Décliner",
+  "@decline": {
+    "description": "Description"
   },
-  "@statusColon": {
-    "description": "statusColon description"
+  "adminBroadcast": "[FR] Diffusion administrateur",
+  "@adminBroadcast": {
+    "description": "Localization key for: Admin Broadcast"
   },
+  "login": "[FR] Se connecter",
+  "@login": {
+    "description": "Description"
+  },
+  "playtimeChooseFriends": "[FR] Choisir des amis",
+  "@playtimeChooseFriends": {
+    "description": "Description"
+  },
+  "noInvites": "[FR] Aucune invitation",
+  "@noInvites": {
+    "description": "Description"
+  },
+  "playtimeChooseTime": "[FR] Choisir l'heure",
+  "@playtimeChooseTime": {
+    "description": "Description"
+  },
+  "success": "[FR] Succès",
   "@success": {
     "description": "Description"
   },
-  "@targetingFilters": {
-    "description": "targetingFilters description"
-  },
-  "@type": {
-    "description": "type description"
-  },
+  "undo": "[FR] Annuler",
   "@undo": {
     "description": "Description"
   },
-  "@upcomingSessions": {
+  "opened": "[FR] Ouvert",
+  "@opened": {
+    "description": "opened description"
+  },
+  "createVirtualSession": "[FR] Créer une session virtuelle",
+  "@createVirtualSession": {
     "description": "Description"
   },
-  "@upload": {
+  "messageSentSuccessfully": "[FR] Message envoyé avec succès",
+  "@messageSentSuccessfully": {
+    "description": "messageSentSuccessfully description"
+  },
+  "redo": "[FR] Rétablir",
+  "@redo": {
     "description": "Description"
   },
-  "@viewAll": {
+  "next": "[FR] Suivant",
+  "@next": {
     "description": "Description"
   },
-  "@welcome": {
+  "search": "[FR] Rechercher",
+  "@search": {
     "description": "Description"
   },
-  "@welcomeToPlaytime": {
+  "cancelInviteConfirmation": "[FR] Confirmer l'annulation de l'invitation ?",
+  "@cancelInviteConfirmation": {
     "description": "Description"
   },
+  "created": "[FR] Créé",
+  "@created": {
+    "description": "created description"
+  },
+  "revokeAccess": "[FR] Révoquer l'accès",
+  "@revokeAccess": {
+    "description": "Description"
+  },
+  "playtimeLiveScheduled": "[FR] Jeu en direct programmé",
+  "@playtimeLiveScheduled": {
+    "description": "Description"
+  },
+  "revokeAccessConfirmation": "[FR] Confirmer la révocation de l'accès ?",
+  "@revokeAccessConfirmation": {
+    "description": "Description"
+  },
+  "download": "[FR] Télécharger",
+  "@download": {
+    "description": "Description"
+  },
+  "password": "[FR] Mot de passe",
+  "@password": {
+    "description": "Description"
+  },
+  "errorLoadingFamilyLinks": "[FR] Erreur lors du chargement des liens familiaux",
+  "@errorLoadingFamilyLinks": {
+    "description": "Description"
+  },
+  "cancel": "[FR] Annuler",
+  "@cancel": {
+    "description": "cancel description"
+  },
+  "playtimeCreate": "[FR] Créer un jeu",
+  "@playtimeCreate": {
+    "description": "Description"
+  },
+  "failedToActionPrivacyRequest": "[FR] Échec du traitement de la demande de confidentialité",
+  "@failedToActionPrivacyRequest": {
+    "description": "failedToActionPrivacyRequest description"
+  },
+  "appTitle": "[FR] Appoint",
+  "@appTitle": {
+    "description": "Description"
+  },
+  "accept": "[FR] Accepter",
+  "@accept": {
+    "description": "Description"
+  },
+  "playtimeModeVirtual": "[FR] Mode virtuel",
+  "@playtimeModeVirtual": {
+    "description": "Description"
+  },
+  "playtimeDescription": "[FR] Description du jeu",
+  "@playtimeDescription": {
+    "description": "Description"
+  },
+  "delete": "[FR] Supprimer",
+  "@delete": {
+    "description": "Description"
+  },
+  "playtimeVirtualStarted": "[FR] Jeu virtuel démarré",
+  "@playtimeVirtualStarted": {
+    "description": "Description"
+  },
+  "createYourFirstGame": "[FR] Créez votre premier jeu",
+  "@createYourFirstGame": {
+    "description": "Description"
+  },
+  "participants": "[FR] Participants",
+  "@participants": {
+    "description": "Description"
+  },
+  "recipients": "[FR] Destinataires",
+  "@recipients": {
+    "description": "recipients description"
+  },
+  "noResults": "[FR] Aucun résultat",
+  "@noResults": {
+    "description": "Description"
+  },
+  "yes": "[FR] Oui",
   "@yes": {
     "description": "yes description"
   },
+  "invite": "[FR] Inviter",
+  "@invite": {
+    "description": "Description"
+  },
+  "playtimeModeLive": "[FR] Mode en direct",
+  "@playtimeModeLive": {
+    "description": "Description"
+  },
+  "done": "[FR] Terminé",
+  "@done": {
+    "description": "Description"
+  },
+  "defaultShareMessage": "[FR] Message de partage par défaut",
+  "@defaultShareMessage": {
+    "description": "Description"
+  },
+  "no": "[FR] Non",
+  "@no": {
+    "description": "Description"
+  },
+  "playtimeHub": "[FR] Centre de jeux",
+  "@playtimeHub": {
+    "description": "Description"
+  },
+  "createLiveSession": "[FR] Créer une session en direct",
+  "@createLiveSession": {
+    "description": "Description"
+  },
+  "enableNotifications": "[FR] Activer les notifications",
+  "@enableNotifications": {
+    "description": "Description"
+  },
+  "invited": "[FR] Invité",
+  "@invited": {
+    "description": "Description"
+  },
+  "content": "[FR] Contenu",
+  "@content": {
+    "description": "content description"
+  },
+  "meetingSharedSuccessfully": "[FR] Réunion partagée avec succès",
+  "@meetingSharedSuccessfully": {
+    "description": "Description"
+  },
+  "welcomeToPlaytime": "[FR] Bienvenue sur Playtime",
+  "@welcomeToPlaytime": {
+    "description": "Description"
+  },
+  "viewAll": "[FR] Voir tout",
+  "@viewAll": {
+    "description": "Description"
+  },
+  "playtimeVirtual": "[FR] Jeu virtuel",
+  "@playtimeVirtual": {
+    "description": "Description"
+  },
+  "staffScreenTBD": "[FR] Écran personnel (À faire)",
+  "@staffScreenTBD": {
+    "description": "Description"
+  },
+  "cut": "[FR] Couper",
+  "@cut": {
+    "description": "Description"
+  },
+  "inviteCancelledSuccessfully": "[FR] Invitation annulée avec succès",
+  "@inviteCancelledSuccessfully": {
+    "description": "Description"
+  },
+  "retry": "[FR] Réessayer",
+  "@retry": {
+    "description": "Description"
+  },
+  "composeBroadcastMessage": "[FR] Composer un message de diffusion",
+  "@composeBroadcastMessage": {
+    "description": "composeBroadcastMessage description"
+  },
+  "sendNow": "[FR] Envoyer maintenant",
+  "@sendNow": {
+    "description": "sendNow description"
+  },
+  "noGamesYet": "[FR] [FR] No games yet",
+  "@noGamesYet": {
+    "description": "Description"
+  },
+  "select": "[FR] Sélectionner",
+  "@select": {
+    "description": "Description"
+  },
+  "about": "[FR] À propos",
+  "@about": {
+    "description": "About navigation label"
+  },
+  "choose": "[FR] Choisir",
+  "@choose": {
+    "description": "Description"
+  },
+  "profile": "[FR] Profil",
+  "@profile": {
+    "description": "Description"
+  },
+  "removeChild": "[FR] Supprimer l'enfant",
+  "@removeChild": {
+    "description": "Description"
+  },
+  "status": "[FR] Statut",
+  "@status": {
+    "description": "status description"
+  },
+  "logout": "[FR] Se déconnecter",
+  "@logout": {
+    "description": "Description"
+  },
+  "paste": "[FR] Coller",
+  "@paste": {
+    "description": "Description"
+  },
+  "welcome": "[FR] Bienvenue",
+  "@welcome": {
+    "description": "Description"
+  },
+  "playtimeCreateSession": "[FR] Créer une session de jeu",
+  "@playtimeCreateSession": {
+    "description": "Description"
+  },
+  "familyMembers": "[FR] Membres de la famille",
+  "@familyMembers": {
+    "description": "Description"
+  },
+  "upload": "[FR] Téléverser",
+  "@upload": {
+    "description": "Description"
+  },
+  "upcomingSessions": "[FR] Sessions à venir",
+  "@upcomingSessions": {
+    "description": "Description"
+  },
+  "confirm": "[FR] Confirmer",
+  "@confirm": {
+    "description": "Description"
+  },
+  "playtimeLive": "[FR] Jeu en direct",
+  "@playtimeLive": {
+    "description": "Description"
+  },
+  "errorLoadingInvites": "[FR] Erreur lors du chargement des invitations",
+  "@errorLoadingInvites": {
+    "description": "Description"
+  },
+  "targetingFilters": "[FR] Filtres de ciblage",
+  "@targetingFilters": {
+    "description": "targetingFilters description"
+  },
+  "pickVideo": "[FR] Sélectionner une vidéo",
+  "@pickVideo": {
+    "description": "pickVideo description"
+  },
+  "playtimeGameDeleted": "[FR] Jeu supprimé",
+  "@playtimeGameDeleted": {
+    "description": "Description"
+  },
+  "scheduleForLater": "[FR] Programmer pour plus tard",
+  "@scheduleForLater": {
+    "description": "scheduleForLater description"
+  },
+  "accessRevokedSuccessfully": "[FR] Accès révoqué avec succès",
+  "@accessRevokedSuccessfully": {
+    "description": "Description"
+  },
+  "type": "[FR] Type",
+  "@type": {
+    "description": "type description"
+  },
+  "checkingPermissions": "[FR] Vérification des permissions",
+  "@checkingPermissions": {
+    "description": "checkingPermissions description"
+  },
+  "copy": "[FR] Copier",
+  "@copy": {
+    "description": "Description"
+  },
+  "yesCancel": "[FR] Oui, annuler",
   "@yesCancel": {
     "description": "Description"
   },
-  "about": "À propos",
-  "accept": "Accepter",
-  "accessRevokedSuccessfully": "Accès révoqué avec succès",
-  "add": "Ajouter",
-  "appTitle": "Appoint",
-  "back": "Retour",
-  "cancel": "Annuler",
-  "cancelInvite": "Annuler l'invitation",
-  "cancelInviteConfirmation": "Confirmer l'annulation de l'invitation ?",
-  "checkingPermissions": "Vérification des permissions",
-  "choose": "Choisir",
-  "clicked": "Cliqué",
-  "clientScreenTBD": "Écran client (À faire)",
-  "close": "Fermer",
-  "composeBroadcastMessage": "Composer un message de diffusion",
-  "confirm": "Confirmer",
-  "confirmPassword": "Confirmer le mot de passe",
-  "connectedChildren": "Enfants connectés",
-  "content": "Contenu",
-  "copy": "Copier",
-  "createGame": "[FR] Create Game",
-  "createLiveSession": "Créer une session en direct",
-  "createNew": "[FR] Create New",
-  "createVirtualSession": "Créer une session virtuelle",
-  "createYourFirstGame": "Créez votre premier jeu",
-  "createYourFirstSession": "Créez votre première session",
-  "created": "Créé",
-  "customizeMessage": "Personnaliser le message",
-  "cut": "Couper",
-  "dashboard": "Tableau de bord",
-  "decline": "Décliner",
-  "defaultShareMessage": "Message de partage par défaut",
-  "delete": "Supprimer",
-  "details": "Détails",
-  "done": "Terminé",
-  "download": "Télécharger",
-  "edit": "Modifier",
-  "email": "E-mail",
-  "enableNotifications": "Activer les notifications",
-  "enterGroupName": "Entrer le nom du groupe",
-  "error": "Erreur",
-  "errorCheckingPermissions": "Erreur lors de la vérification des permissions",
-  "errorLoadingFamilyLinks": "Erreur lors du chargement des liens familiaux",
-  "errorLoadingInvites": "Erreur lors du chargement des invitations",
-  "errorLoadingPrivacyRequests": "Erreur lors du chargement des demandes de confidentialité",
-  "errorLoadingProfile": "Erreur lors du chargement du profil",
-  "errorSavingMessage": "Erreur lors de l'enregistrement du message",
-  "errorSendingMessage": "Erreur lors de l'envoi du message",
-  "failedToActionPrivacyRequest": "Échec du traitement de la demande de confidentialité",
-  "failedToCancelInvite": "Échec de l'annulation de l'invitation",
-  "failedToResendOtp": "Échec du renvoi de l'OTP",
-  "failedToRevokeAccess": "Échec de la révocation de l'accès",
-  "familyDashboard": "Tableau de bord familial",
-  "familyMembers": "Membres de la famille",
-  "fcmToken": "Token FCM",
-  "forgotPassword": "Mot de passe oublié ?",
-  "groupNameOptional": "Nom du groupe (optionnel)",
-  "home": "Accueil",
-  "invite": "Inviter",
-  "inviteCancelledSuccessfully": "Invitation annulée avec succès",
-  "inviteDetail": "Détail de l'invitation",
-  "invited": "Invité",
-  "knownGroupDetected": "Groupe connu détecté",
-  "link": "Lien",
-  "loading": "Chargement...",
-  "login": "Se connecter",
-  "logout": "Se déconnecter",
-  "managePermissions": "Gérer les permissions",
-  "mediaOptional": "Médias optionnels",
-  "meetingReadyMessage": "Message de réunion prête",
-  "meetingSharedSuccessfully": "Réunion partagée avec succès",
-  "messageSavedSuccessfully": "Message enregistré avec succès",
-  "messageSentSuccessfully": "Message envoyé avec succès",
-  "myInvites": "Mes invitations",
-  "myProfile": "Mon profil",
-  "next": "Suivant",
-  "no": "Non",
-  "noBroadcastMessages": "Aucun message de diffusion",
-  "noFamilyMembersYet": "Aucun membre de la famille pour le moment",
-  "noGamesYet": "[FR] No games yet",
-  "noInvites": "Aucune invitation",
-  "noPermissionForBroadcast": "Aucune permission pour la diffusion",
-  "noProfileFound": "Aucun profil trouvé",
-  "noResults": "Aucun résultat",
-  "noSessionsYet": "[FR] No sessions yet",
-  "notificationSettings": "Paramètres de notification",
-  "notifications": "Notifications",
-  "ok": "OK",
-  "opened": "Ouvert",
-  "otpResentSuccessfully": "OTP renvoyé avec succès",
-  "participants": "Participants",
-  "password": "Mot de passe",
-  "paste": "Coller",
-  "pendingInvites": "Invitations en attente",
-  "pickImage": "Sélectionner une image",
-  "pickVideo": "Sélectionner une vidéo",
-  "playtimeApprove": "Approuver",
-  "playtimeChooseFriends": "Choisir des amis",
-  "playtimeChooseGame": "Choisir un jeu",
-  "playtimeChooseTime": "Choisir l'heure",
-  "playtimeCreate": "Créer un jeu",
-  "playtimeCreateSession": "Créer une session de jeu",
-  "playtimeDescription": "Description du jeu",
-  "playtimeEnterGameName": "Entrer le nom du jeu",
-  "playtimeGameApproved": "Jeu approuvé",
-  "playtimeGameDeleted": "Jeu supprimé",
-  "playtimeGameRejected": "Jeu rejeté",
-  "playtimeHub": "Centre de jeux",
-  "playtimeLandingChooseMode": "Choisissez un mode",
-  "playtimeLive": "Jeu en direct",
-  "playtimeLiveScheduled": "Jeu en direct programmé",
-  "playtimeModeLive": "Mode en direct",
-  "playtimeModeVirtual": "Mode virtuel",
-  "playtimeNoSessions": "Aucune session",
-  "playtimeParentDashboardTitle": "Tableau de bord des parents",
-  "playtimeReject": "Rejeter",
-  "playtimeTitle": "Titre du jeu",
-  "playtimeVirtual": "Jeu virtuel",
-  "playtimeVirtualStarted": "Jeu virtuel démarré",
-  "pleaseLoginForFamilyFeatures": "Veuillez vous connecter pour accéder aux fonctionnalités familiales",
-  "pleaseLoginToViewProfile": "Veuillez vous connecter pour voir le profil",
-  "pollOptions": "Options de sondage",
-  "previous": "Précédent",
-  "profile": "Profil",
-  "quickActions": "Actions rapides",
-  "recentGames": "Jeux récents",
-  "recipients": "Destinataires",
-  "redo": "Rétablir",
-  "refresh": "Actualiser",
-  "removeChild": "Supprimer l'enfant",
-  "requestType": "Type de demande",
-  "retry": "Réessayer",
-  "revoke": "Révoquer",
-  "revokeAccess": "Révoquer l'accès",
-  "revokeAccessConfirmation": "Confirmer la révocation de l'accès ?",
-  "save": "Enregistrer",
-  "saveGroupForRecognition": "Enregistrer le groupe pour la reconnaissance",
-  "scheduleForLater": "Programmer pour plus tard",
-  "scheduleMessage": "Programmer un message",
-  "scheduled": "Programmé",
-  "scheduledFor": "Programmé pour",
-  "scheduling": "Programmation",
-  "search": "Rechercher",
-  "select": "Sélectionner",
-  "sendNow": "Envoyer maintenant",
-  "settings": "Paramètres",
-  "share": "Partager",
-  "shareOnWhatsApp": "Partager sur WhatsApp",
-  "signUp": "S'inscrire",
-  "staffScreenTBD": "Écran personnel (À faire)",
-  "status": "Statut",
-  "statusColon": "Statut :",
-  "success": "Succès",
-  "targetingFilters": "Filtres de ciblage",
-  "type": "Type",
-  "undo": "Annuler",
-  "upcomingSessions": "Sessions à venir",
-  "upload": "Téléverser",
-  "viewAll": "Voir tout",
-  "welcome": "Bienvenue",
-  "welcomeToPlaytime": "Bienvenue sur Playtime",
-  "yes": "Oui",
-  "yesCancel": "Oui, annuler",
-  "errorEstimatingRecipients": "Erreur lors de l'estimation des destinataires",
-  "@errorEstimatingRecipients": {
-    "description": "errorEstimatingRecipients description"
+  "email": "[FR] E-mail",
+  "@email": {
+    "description": "Description"
   },
-  "errorPickingImage": "Erreur lors de la sélection d'image",
-  "@errorPickingImage": {
-    "description": "errorPickingImage description"
+  "shareOnWhatsApp": "[FR] Partager sur WhatsApp",
+  "@shareOnWhatsApp": {
+    "description": "Description"
   },
-  "errorPickingVideo": "Erreur lors de la sélection de vidéo",
-  "@errorPickingVideo": {
-    "description": "errorPickingVideo description"
+  "notificationSettings": "[FR] Paramètres de notification",
+  "@notificationSettings": {
+    "description": "Description"
   },
-  "organizations": "Organisations",
-  "@organizations": {
-    "description": "organizations description"
+  "myProfile": "[FR] Mon profil",
+  "@myProfile": {
+    "description": "Description"
   },
-  "noOrganizations": "Aucune organisation",
-  "@noOrganizations": {
-    "description": "noOrganizations description"
+  "revoke": "[FR] Révoquer",
+  "@revoke": {
+    "description": "Description"
   },
-  "errorLoadingOrganizations": "Erreur lors du chargement des organisations",
-  "@errorLoadingOrganizations": {
-    "description": "errorLoadingOrganizations description"
+  "noBroadcastMessages": "[FR] Aucun message de diffusion",
+  "@noBroadcastMessages": {
+    "description": "noBroadcastMessages description"
   },
-  "members": "Membres",
-  "@members": {
-    "description": "members description"
+  "requestType": "[FR] Type de demande",
+  "@requestType": {
+    "description": "requestType description"
   },
-  "users": "Utilisateurs",
+  "notifications": "[FR] Notifications",
+  "@notifications": {
+    "description": "Description"
+  },
+  "details": "[FR] Détails",
+  "@details": {
+    "description": "details description"
+  },
+  "cancelInvite": "[FR] Annuler l'invitation",
+  "@cancelInvite": {
+    "description": "Description"
+  },
+  "createNew": "[FR] [FR] Create New",
+  "@createNew": {
+    "description": "Description"
+  },
+  "settings": "[FR] Paramètres",
+  "@settings": {
+    "description": "Description"
+  },
+  "playtimeReject": "[FR] Rejeter",
+  "@playtimeReject": {
+    "description": "Description"
+  },
+  "errorLoadingProfile": "[FR] Erreur lors du chargement du profil",
+  "@errorLoadingProfile": {
+    "description": "Description"
+  },
+  "edit": "[FR] Modifier",
+  "@edit": {
+    "description": "Description"
+  },
+  "add": "[FR] Ajouter",
+  "@add": {
+    "description": "Description"
+  },
+  "playtimeGameApproved": "[FR] Jeu approuvé",
+  "@playtimeGameApproved": {
+    "description": "Description"
+  },
+  "forgotPassword": "[FR] Mot de passe oublié ?",
+  "@forgotPassword": {
+    "description": "Description"
+  },
+  "familyDashboard": "[FR] Tableau de bord familial",
+  "@familyDashboard": {
+    "description": "Description"
+  },
+  "loading": "[FR] Chargement...",
+  "@loading": {
+    "description": "Description"
+  },
+  "quickActions": "[FR] Actions rapides",
+  "@quickActions": {
+    "description": "Description"
+  },
+  "playtimeTitle": "[FR] Titre du jeu",
+  "@playtimeTitle": {
+    "description": "Description"
+  },
+  "otpResentSuccessfully": "[FR] OTP renvoyé avec succès",
+  "@otpResentSuccessfully": {
+    "description": "Description"
+  },
+  "errorCheckingPermissions": "[FR] Erreur lors de la vérification des permissions",
+  "@errorCheckingPermissions": {
+    "description": "errorCheckingPermissions description"
+  },
+  "clientScreenTBD": "[FR] Écran client (À faire)",
+  "@clientScreenTBD": {
+    "description": "Description"
+  },
+  "fcmToken": "[FR] Token FCM",
+  "@fcmToken": {
+    "description": "Description"
+  },
+  "pickImage": "[FR] Sélectionner une image",
+  "@pickImage": {
+    "description": "pickImage description"
+  },
+  "previous": "[FR] Précédent",
+  "@previous": {
+    "description": "Description"
+  },
+  "noProfileFound": "[FR] Aucun profil trouvé",
+  "@noProfileFound": {
+    "description": "Description"
+  },
+  "noFamilyMembersYet": "[FR] Aucun membre de la famille pour le moment",
+  "@noFamilyMembersYet": {
+    "description": "Description"
+  },
+  "mediaOptional": "[FR] Médias optionnels",
+  "@mediaOptional": {
+    "description": "mediaOptional description"
+  },
+  "messageSavedSuccessfully": "[FR] Message enregistré avec succès",
+  "@messageSavedSuccessfully": {
+    "description": "messageSavedSuccessfully description"
+  },
+  "scheduledFor": "[FR] Programmé pour",
+  "@scheduledFor": {
+    "description": "Description"
+  },
+  "dashboard": "[FR] Tableau de bord",
+  "@dashboard": {
+    "description": "Description"
+  },
+  "noPermissionForBroadcast": "[FR] Aucune permission pour la diffusion",
+  "@noPermissionForBroadcast": {
+    "description": "noPermissionForBroadcast description"
+  },
+  "playtimeAdminPanelTitle": "[FR] Panneau d'administration des jeux",
+  "@playtimeAdminPanelTitle": {
+    "description": "Localization key for: Playtime Games – Admin"
+  },
+  "inviteDetail": "[FR] Détail de l'invitation",
+  "@inviteDetail": {
+    "description": "Description"
+  },
+  "scheduled": "[FR] Programmé",
+  "@scheduled": {
+    "description": "scheduled description"
+  },
+  "failedToResendOtp": "[FR] Échec du renvoi de l'OTP",
+  "@failedToResendOtp": {
+    "description": "Description"
+  },
+  "scheduling": "[FR] Programmation",
+  "@scheduling": {
+    "description": "scheduling description"
+  },
+  "errorSavingMessage": "[FR] Erreur lors de l'enregistrement du message",
+  "@errorSavingMessage": {
+    "description": "errorSavingMessage description"
+  },
+  "save": "[FR] Enregistrer",
+  "@save": {
+    "description": "save description"
+  },
+  "playtimeApprove": "[FR] Approuver",
+  "@playtimeApprove": {
+    "description": "Description"
+  },
+  "createYourFirstSession": "[FR] Créez votre première session",
+  "@createYourFirstSession": {
+    "description": "Description"
+  },
+  "playtimeGameRejected": "[FR] Jeu rejeté",
+  "@playtimeGameRejected": {
+    "description": "Description"
+  },
+  "failedToRevokeAccess": "[FR] Échec de la révocation de l'accès",
+  "@failedToRevokeAccess": {
+    "description": "Description"
+  },
+  "recentGames": "[FR] Jeux récents",
+  "@recentGames": {
+    "description": "Description"
+  },
+  "customizeMessage": "[FR] Personnaliser le message",
+  "@customizeMessage": {
+    "description": "Description"
+  },
+  "failedToCancelInvite": "[FR] Échec de l'annulation de l'invitation",
+  "@failedToCancelInvite": {
+    "description": "Description"
+  },
+  "errorSendingMessage": "[FR] Erreur lors de l'envoi du message",
+  "@errorSendingMessage": {
+    "description": "errorSendingMessage description"
+  },
+  "confirmPassword": "[FR] Confirmer le mot de passe",
+  "@confirmPassword": {
+    "description": "Description"
+  },
+  "errorLoadingPrivacyRequests": "[FR] Erreur lors du chargement des demandes de confidentialité",
+  "@errorLoadingPrivacyRequests": {
+    "description": "errorLoadingPrivacyRequests description"
+  },
+  "connectedChildren": "[FR] Enfants connectés",
+  "@connectedChildren": {
+    "description": "Description"
+  },
+  "share": "[FR] Partager",
+  "@share": {
+    "description": "Description"
+  },
+  "playtimeEnterGameName": "[FR] Entrer le nom du jeu",
+  "@playtimeEnterGameName": {
+    "description": "Description"
+  },
+  "pleaseLoginForFamilyFeatures": "[FR] Veuillez vous connecter pour accéder aux fonctionnalités familiales",
+  "@pleaseLoginForFamilyFeatures": {
+    "description": "Description"
+  },
+  "myInvites": "[FR] Mes invitations",
+  "@myInvites": {
+    "description": "Description"
+  },
+  "createGame": "[FR] [FR] Create Game",
+  "@createGame": {
+    "description": "Description"
+  },
+  "playtimeNoSessions": "[FR] Aucune session",
+  "@playtimeNoSessions": {
+    "description": "Description"
+  },
+  "adminScreenTBD": "[FR] Écran administrateur (À faire)",
+  "@adminScreenTBD": {
+    "description": "Localization key for: Admin screen coming soon"
+  },
+  "playtimeParentDashboardTitle": "[FR] Tableau de bord des parents",
+  "@playtimeParentDashboardTitle": {
+    "description": "Description"
+  },
+  "close": "[FR] Fermer",
+  "@close": {
+    "description": "close description"
+  },
+  "back": "[FR] Retour",
+  "@back": {
+    "description": "Description"
+  },
+  "playtimeChooseGame": "[FR] Choisir un jeu",
+  "@playtimeChooseGame": {
+    "description": "Description"
+  },
+  "managePermissions": "[FR] Gérer les permissions",
+  "@managePermissions": {
+    "description": "Description"
+  },
+  "pollOptions": "[FR] Options de sondage",
+  "@pollOptions": {
+    "description": "pollOptions description"
+  },
+  "clicked": "[FR] Cliqué",
+  "@clicked": {
+    "description": "clicked description"
+  },
+  "link": "[FR] Lien",
+  "@link": {
+    "description": "link description"
+  },
+  "meetingReadyMessage": "[FR] Message de réunion prête",
+  "@meetingReadyMessage": {
+    "description": "Description"
+  },
+  "pendingInvites": "[FR] Invitations en attente",
+  "@pendingInvites": {
+    "description": "Description"
+  },
+  "statusColon": "[FR] Statut :",
+  "@statusColon": {
+    "description": "statusColon description"
+  },
+  "pleaseLoginToViewProfile": "[FR] Veuillez vous connecter pour voir le profil",
+  "@pleaseLoginToViewProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "adminMetrics": "[FR] Admin Metrics",
+  "@adminMetrics": {
+    "description": "Localization key for: Admin Metrics"
+  },
+  "overview": "[FR] Overview",
+  "@overview": {
+    "description": "Description"
+  },
+  "bookings": "[FR] Bookings",
+  "@bookings": {
+    "description": "Description"
+  },
+  "users": "[FR] Utilisateurs",
   "@users": {
     "description": "users description"
   },
-  "noUsers": "Aucun utilisateur",
-  "@noUsers": {
-    "description": "noUsers description"
-  },
-  "errorLoadingUsers": "Erreur lors du chargement des utilisateurs",
-  "@errorLoadingUsers": {
-    "description": "errorLoadingUsers description"
-  },
-  "changeRole": "Changer de rôle",
-  "@changeRole": {
-    "description": "changeRole description"
-  },
-  "totalAppointments": "Total des rendez-vous",
-  "@totalAppointments": {
-    "description": "totalAppointments description"
-  },
-  "completedAppointments": "Rendez-vous terminés",
-  "@completedAppointments": {
-    "description": "completedAppointments description"
-  },
-  "revenue": "Revenus",
+  "revenue": "[FR] Revenus",
   "@revenue": {
     "description": "revenue description"
   },
-  "errorLoadingStats": "Erreur lors du chargement des statistiques",
-  "@errorLoadingStats": {
-    "description": "errorLoadingStats description"
+  "contentLibrary": "[FR] Content Library",
+  "@contentLibrary": {
+    "description": "Localization key for: Content Library"
   },
-  "appointment": "Rendez-vous",
-  "@appointment": {
-    "description": "appointment description"
+  "authErrorUserNotFound": "[FR] No account found with this email address.",
+  "@authErrorUserNotFound": {
+    "description": "Localization key for: No account found with this email address."
   },
-  "from": "De",
-  "@from": {
-    "description": "from description"
+  "authErrorWrongPassword": "[FR] Incorrect password. Please try again.",
+  "@authErrorWrongPassword": {
+    "description": "Localization key for: Incorrect password. Please try again."
   },
-  "phone": "Téléphone",
-  "@phone": {
-    "description": "phone description"
+  "authErrorInvalidEmail": "[FR] Please enter a valid email address.",
+  "@authErrorInvalidEmail": {
+    "description": "Localization key for: Please enter a valid email address."
   },
-  "noRouteDefined": "Aucune route définie",
-  "@noRouteDefined": {
-    "description": "noRouteDefined description"
+  "authErrorUserDisabled": "[FR] This account has been disabled. Please contact support.",
+  "@authErrorUserDisabled": {
+    "description": "Localization key for: This account has been disabled. Please contact support."
+  },
+  "authErrorWeakPassword": "[FR] Password is too weak. Please choose a stronger password.",
+  "@authErrorWeakPassword": {
+    "description": "Localization key for: Password is too weak. Please choose a stronger password."
+  },
+  "authErrorEmailAlreadyInUse": "[FR] An account with this email already exists.",
+  "@authErrorEmailAlreadyInUse": {
+    "description": "Localization key for: An account with this email already exists."
+  },
+  "authErrorTooManyRequests": "[FR] Too many failed attempts. Please try again later.",
+  "@authErrorTooManyRequests": {
+    "description": "Localization key for: Too many failed attempts. Please try again later."
+  },
+  "authErrorOperationNotAllowed": "[FR] This sign-in method is not enabled. Please contact support.",
+  "@authErrorOperationNotAllowed": {
+    "description": "Localization key for: This sign-in method is not enabled. Please contact support."
+  },
+  "authErrorInvalidCredential": "[FR] Invalid credentials. Please try again.",
+  "@authErrorInvalidCredential": {
+    "description": "Localization key for: Invalid credentials. Please try again."
+  },
+  "REDACTED_TOKEN": "[FR] An account already exists with this email using a different sign-in method.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: An account already exists with this email using a different sign-in method."
+  },
+  "authErrorCredentialAlreadyInUse": "[FR] These credentials are already associated with another account.",
+  "@authErrorCredentialAlreadyInUse": {
+    "description": "Localization key for: These credentials are already associated with another account."
+  },
+  "authErrorNetworkRequestFailed": "[FR] Network error. Please check your connection and try again.",
+  "@authErrorNetworkRequestFailed": {
+    "description": "Localization key for: Network error. Please check your connection and try again."
+  },
+  "socialAccountConflictTitle": "Conflit de compte social",
+  "@socialAccountConflictTitle": {
+    "description": "Localization key for: Account Already Exists"
+  },
+  "socialAccountConflictMessage": "Il semble qu'un compte existe déjà",
+  "@socialAccountConflictMessage": {
+    "description": "Localization key for: An account with email {email} already exists using a different sign-in method. Would you like to link your accounts?"
+  },
+  "linkAccounts": "Lier les comptes",
+  "@linkAccounts": {
+    "description": "Localization key for: Link Accounts"
+  },
+  "signInWithExistingMethod": "Se connecter avec la méthode existante",
+  "@signInWithExistingMethod": {
+    "description": "Localization key for: Sign in with existing method"
+  },
+  "authErrorRequiresRecentLogin": "[FR] Please log in again to perform this operation.",
+  "@authErrorRequiresRecentLogin": {
+    "description": "Localization key for: Please log in again to perform this operation."
+  },
+  "authErrorAppNotAuthorized": "[FR] This app is not authorized to use Firebase Authentication.",
+  "@authErrorAppNotAuthorized": {
+    "description": "Localization key for: This app is not authorized to use Firebase Authentication."
+  },
+  "REDACTED_TOKEN": "[FR] The verification code is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The verification code is invalid."
+  },
+  "authErrorInvalidVerificationId": "[FR] The verification ID is invalid.",
+  "@authErrorInvalidVerificationId": {
+    "description": "Localization key for: The verification ID is invalid."
+  },
+  "REDACTED_TOKEN": "[FR] Please enter the verification code.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Please enter the verification code."
+  },
+  "authErrorMissingVerificationId": "[FR] Missing verification ID.",
+  "@authErrorMissingVerificationId": {
+    "description": "Localization key for: Missing verification ID."
+  },
+  "authErrorInvalidPhoneNumber": "[FR] The phone number is invalid.",
+  "@authErrorInvalidPhoneNumber": {
+    "description": "Localization key for: The phone number is invalid."
+  },
+  "authErrorMissingPhoneNumber": "[FR] Please enter a phone number.",
+  "@authErrorMissingPhoneNumber": {
+    "description": "Localization key for: Please enter a phone number."
+  },
+  "authErrorQuotaExceeded": "[FR] The SMS quota for this project has been exceeded. Please try again later.",
+  "@authErrorQuotaExceeded": {
+    "description": "Localization key for: The SMS quota for this project has been exceeded. Please try again later."
+  },
+  "authErrorCodeExpired": "[FR] The verification code has expired. Please request a new one.",
+  "@authErrorCodeExpired": {
+    "description": "Localization key for: The verification code has expired. Please request a new one."
+  },
+  "authErrorSessionExpired": "[FR] Your session has expired. Please log in again.",
+  "@authErrorSessionExpired": {
+    "description": "Localization key for: Your session has expired. Please log in again."
+  },
+  "REDACTED_TOKEN": "[FR] Multi-factor authentication is required.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Multi-factor authentication is required."
+  },
+  "REDACTED_TOKEN": "[FR] Multi-factor information not found.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Multi-factor information not found."
+  },
+  "REDACTED_TOKEN": "[FR] Missing multi-factor session.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Missing multi-factor session."
+  },
+  "REDACTED_TOKEN": "[FR] Invalid multi-factor session.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Invalid multi-factor session."
+  },
+  "REDACTED_TOKEN": "[FR] This second factor is already in use.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: This second factor is already in use."
+  },
+  "REDACTED_TOKEN": "[FR] Maximum number of second factors exceeded.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Maximum number of second factors exceeded."
+  },
+  "authErrorUnsupportedFirstFactor": "[FR] Unsupported first factor for multi-factor authentication.",
+  "@authErrorUnsupportedFirstFactor": {
+    "description": "Localization key for: Unsupported first factor for multi-factor authentication."
+  },
+  "REDACTED_TOKEN": "[FR] Email change requires verification.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Email change requires verification."
+  },
+  "REDACTED_TOKEN": "[FR] This phone number is already in use.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: This phone number is already in use."
+  },
+  "authErrorInvalidPassword": "[FR] The password is invalid or too weak.",
+  "@authErrorInvalidPassword": {
+    "description": "Localization key for: The password is invalid or too weak."
+  },
+  "authErrorInvalidIdToken": "[FR] The ID token is invalid.",
+  "@authErrorInvalidIdToken": {
+    "description": "Localization key for: The ID token is invalid."
+  },
+  "authErrorIdTokenExpired": "[FR] The ID token has expired.",
+  "@authErrorIdTokenExpired": {
+    "description": "Localization key for: The ID token has expired."
+  },
+  "authErrorIdTokenRevoked": "[FR] The ID token has been revoked.",
+  "@authErrorIdTokenRevoked": {
+    "description": "Localization key for: The ID token has been revoked."
+  },
+  "authErrorInternalError": "[FR] An internal error occurred. Please try again.",
+  "@authErrorInternalError": {
+    "description": "Localization key for: An internal error occurred. Please try again."
+  },
+  "authErrorInvalidArgument": "[FR] An invalid argument was provided.",
+  "@authErrorInvalidArgument": {
+    "description": "Localization key for: An invalid argument was provided."
+  },
+  "authErrorInvalidClaims": "[FR] Invalid custom claims provided.",
+  "@authErrorInvalidClaims": {
+    "description": "Localization key for: Invalid custom claims provided."
+  },
+  "authErrorInvalidContinueUri": "[FR] The continue URL is invalid.",
+  "@authErrorInvalidContinueUri": {
+    "description": "Localization key for: The continue URL is invalid."
+  },
+  "authErrorInvalidCreationTime": "[FR] The creation time is invalid.",
+  "@authErrorInvalidCreationTime": {
+    "description": "Localization key for: The creation time is invalid."
+  },
+  "authErrorInvalidDisabledField": "[FR] The disabled field value is invalid.",
+  "@authErrorInvalidDisabledField": {
+    "description": "Localization key for: The disabled field value is invalid."
+  },
+  "authErrorInvalidDisplayName": "[FR] The display name is invalid.",
+  "@authErrorInvalidDisplayName": {
+    "description": "Localization key for: The display name is invalid."
+  },
+  "REDACTED_TOKEN": "[FR] The dynamic link domain is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The dynamic link domain is invalid."
+  },
+  "authErrorInvalidEmailVerified": "[FR] The email verified value is invalid.",
+  "@authErrorInvalidEmailVerified": {
+    "description": "Localization key for: The email verified value is invalid."
+  },
+  "authErrorInvalidHashAlgorithm": "[FR] The hash algorithm is invalid.",
+  "@authErrorInvalidHashAlgorithm": {
+    "description": "Localization key for: The hash algorithm is invalid."
+  },
+  "authErrorInvalidHashBlockSize": "[FR] The hash block size is invalid.",
+  "@authErrorInvalidHashBlockSize": {
+    "description": "Localization key for: The hash block size is invalid."
+  },
+  "REDACTED_TOKEN": "[FR] The hash derived key length is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The hash derived key length is invalid."
+  },
+  "authErrorInvalidHashKey": "[FR] The hash key is invalid.",
+  "@authErrorInvalidHashKey": {
+    "description": "Localization key for: The hash key is invalid."
+  },
+  "authErrorInvalidHashMemoryCost": "[FR] The hash memory cost is invalid.",
+  "@authErrorInvalidHashMemoryCost": {
+    "description": "Localization key for: The hash memory cost is invalid."
+  },
+  "REDACTED_TOKEN": "[FR] The hash parallelization is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The hash parallelization is invalid."
+  },
+  "authErrorInvalidHashRounds": "[FR] The hash rounds value is invalid.",
+  "@authErrorInvalidHashRounds": {
+    "description": "Localization key for: The hash rounds value is invalid."
+  },
+  "REDACTED_TOKEN": "[FR] The hash salt separator is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The hash salt separator is invalid."
+  },
+  "authErrorInvalidLastSignInTime": "[FR] The last sign-in time is invalid.",
+  "@authErrorInvalidLastSignInTime": {
+    "description": "Localization key for: The last sign-in time is invalid."
+  },
+  "authErrorInvalidPageToken": "[FR] The page token is invalid.",
+  "@authErrorInvalidPageToken": {
+    "description": "Localization key for: The page token is invalid."
+  },
+  "authErrorInvalidProviderData": "[FR] The provider data is invalid.",
+  "@authErrorInvalidProviderData": {
+    "description": "Localization key for: The provider data is invalid."
+  },
+  "authErrorInvalidProviderId": "[FR] The provider ID is invalid.",
+  "@authErrorInvalidProviderId": {
+    "description": "Localization key for: The provider ID is invalid."
+  },
+  "REDACTED_TOKEN": "[FR] The session cookie duration is invalid.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The session cookie duration is invalid."
+  },
+  "authErrorInvalidUid": "[FR] The UID is invalid.",
+  "@authErrorInvalidUid": {
+    "description": "Localization key for: The UID is invalid."
+  },
+  "authErrorInvalidUserImport": "[FR] The user import record is invalid.",
+  "@authErrorInvalidUserImport": {
+    "description": "Localization key for: The user import record is invalid."
+  },
+  "REDACTED_TOKEN": "[FR] Maximum user import count exceeded.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Maximum user import count exceeded."
+  },
+  "authErrorMissingAndroidPkgName": "[FR] Missing Android package name.",
+  "@authErrorMissingAndroidPkgName": {
+    "description": "Localization key for: Missing Android package name."
+  },
+  "authErrorMissingContinueUri": "[FR] Missing continue URL.",
+  "@authErrorMissingContinueUri": {
+    "description": "Localization key for: Missing continue URL."
+  },
+  "authErrorMissingHashAlgorithm": "[FR] Missing hash algorithm.",
+  "@authErrorMissingHashAlgorithm": {
+    "description": "Localization key for: Missing hash algorithm."
+  },
+  "authErrorMissingIosBundleId": "[FR] Missing iOS bundle ID.",
+  "@authErrorMissingIosBundleId": {
+    "description": "Localization key for: Missing iOS bundle ID."
+  },
+  "authErrorMissingUid": "[FR] Missing UID.",
+  "@authErrorMissingUid": {
+    "description": "Localization key for: Missing UID."
+  },
+  "REDACTED_TOKEN": "[FR] Missing OAuth client secret.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Missing OAuth client secret."
+  },
+  "authErrorProjectNotFound": "[FR] Firebase project not found.",
+  "@authErrorProjectNotFound": {
+    "description": "Localization key for: Firebase project not found."
+  },
+  "authErrorReservedClaims": "[FR] Reserved claims provided.",
+  "@authErrorReservedClaims": {
+    "description": "Localization key for: Reserved claims provided."
+  },
+  "authErrorSessionCookieExpired": "[FR] Session cookie has expired.",
+  "@authErrorSessionCookieExpired": {
+    "description": "Localization key for: Session cookie has expired."
+  },
+  "authErrorSessionCookieRevoked": "[FR] Session cookie has been revoked.",
+  "@authErrorSessionCookieRevoked": {
+    "description": "Localization key for: Session cookie has been revoked."
+  },
+  "authErrorUidAlreadyExists": "[FR] The UID is already in use.",
+  "@authErrorUidAlreadyExists": {
+    "description": "Localization key for: The UID is already in use."
+  },
+  "REDACTED_TOKEN": "[FR] The continue URL domain is not whitelisted.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: The continue URL domain is not whitelisted."
+  },
+  "authErrorUnknown": "[FR] An unknown authentication error occurred.",
+  "@authErrorUnknown": {
+    "description": "Localization key for: An unknown authentication error occurred."
+  },
+  "checkingPermissions1": "Vérification des autorisations...",
+  "@checkingPermissions1": {
+    "description": "Localization key for: Checking permissions..."
+  },
+  "paymentSuccessful": "Paiement réussi",
+  "@paymentSuccessful": {
+    "description": "Localization key for: Payment Successful!"
+  },
+  "businessAvailability": "Disponibilité entreprise",
+  "@businessAvailability": {
+    "description": "Localization key for: Business Availability"
+  },
+  "send": "Envoyer",
+  "@send": {
+    "description": "Localization key for: Send"
+  },
+  "newNotificationPayloadtitle": "Titre de nouvelle notification: {title}",
+  "@newNotificationPayloadtitle": {
+    "description": "Localization key for: New notification: {payloadTitle}"
+  },
+  "gameList": "Liste des jeux",
+  "@gameList": {
+    "description": "Localization key for: Game List"
+  },
+  "deleteAvailability": "Supprimer la disponibilité",
+  "@deleteAvailability": {
+    "description": "Localization key for: Delete Availability"
+  },
+  "connectToGoogleCalendar": "Se connecter à Google Calendar",
+  "@connectToGoogleCalendar": {
+    "description": "Localization key for: Connect to Google Calendar"
+  },
+  "adminFreeAccess": "[FR] Admin Free Access",
+  "@adminFreeAccess": {
+    "description": "Localization key for: Admin Free Access"
+  },
+  "emailProfileemail": "Email du profil: {email}",
+  "@emailProfileemail": {
+    "description": "Localization key for: Email: {profileEmail}"
+  },
+  "calendar": "Calendrier",
+  "@calendar": {
+    "description": "Localization key for: Calendar"
+  },
+  "upload1": "[FR] Téléverser",
+  "@upload1": {
+    "description": "Localization key for: Upload"
+  },
+  "resolved": "Résolu",
+  "@resolved": {
+    "description": "Localization key for: Resolved"
+  },
+  "keepSubscription": "Conserver l'abonnement",
+  "@keepSubscription": {
+    "description": "Localization key for: Keep Subscription"
+  },
+  "REDACTED_TOKEN": "[FR] Session virtuelle créée, invitation des amis",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Virtual session created! Inviting friends..."
+  },
+  "noEventsScheduledForToday": "Aucun événement programmé pour aujourd'hui",
+  "@noEventsScheduledForToday": {
+    "description": "Localization key for: No events scheduled for today"
+  },
+  "exportData": "Exporter les données",
+  "@exportData": {
+    "description": "Localization key for: Export Data"
+  },
+  "rewards": "[FR] Rewards (French)",
+  "@rewards": {
+    "description": "Localization key for: Rewards"
+  },
+  "time": "[FR] Time (French)",
+  "@time": {
+    "description": "Localization key for: Time"
+  },
+  "userCid": "[FR] ID utilisateur : {cid}",
+  "@userCid": {
+    "description": "Localization key for: User {id}"
+  },
+  "noSlots": "[FR] No slots (French)",
+  "@noSlots": {
+    "description": "Localization key for: No slots"
+  },
+  "signIn": "[FR] Sign In (French)",
+  "@signIn": {
+    "description": "Localization key for: Sign In"
+  },
+  "homeFeedScreen": "[FR] Home Feed Screen (French)",
+  "@homeFeedScreen": {
+    "description": "Localization key for: Home Feed Screen"
+  },
+  "selectLocation": "[FR] Select Location (French)",
+  "@selectLocation": {
+    "description": "Localization key for: Select Location"
+  },
+  "noTicketsYet": "[FR] No tickets yet (French)",
+  "@noTicketsYet": {
+    "description": "Localization key for: No tickets yet"
+  },
+  "meetingSharedSuccessfully1": "Réunion partagée avec succès",
+  "@meetingSharedSuccessfully1": {
+    "description": "Localization key for: Meeting shared successfully!"
+  },
+  "studioProfile": "Profil du studio",
+  "@studioProfile": {
+    "description": "Localization key for: Studio Profile"
+  },
+  "subscriptionUnavailable": "[FR] Subscription unavailable (French)",
+  "@subscriptionUnavailable": {
+    "description": "Localization key for: Subscription unavailable"
+  },
+  "confirmBooking": "[FR] Confirm Booking (French)",
+  "@confirmBooking": {
+    "description": "Localization key for: Confirm Booking"
+  },
+  "failedToUpdatePermissionE": "[FR] Failed to update permission: $e (French)",
+  "@failedToUpdatePermissionE": {
+    "description": "Localization key for: Failed to update permission: $e"
+  },
+  "reject": "[FR] Reject (French)",
+  "@reject": {
+    "description": "Localization key for: Reject"
+  },
+  "REDACTED_TOKEN": "[FR] Ambassador Status: {ambassadorStatus} (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Ambassador Status: {ambassadorStatus}"
+  },
+  "noProviders": "[FR] No providers",
+  "@noProviders": {
+    "description": "Localization key for: No providers"
+  },
+  "checkingSubscription": "[FR] Checking subscription... (French)",
+  "@checkingSubscription": {
+    "description": "Localization key for: Checking subscription..."
+  },
+  "errorPickingImageE": "[FR] Error picking image: $e (French)",
+  "@errorPickingImageE": {
+    "description": "Localization key for: Error picking image: $e"
+  },
+  "noContentAvailableYet": "[FR] No content available yet (French)",
+  "@noContentAvailableYet": {
+    "description": "Localization key for: No content available yet"
+  },
+  "resolve": "[FR] Resolve (French)",
+  "@resolve": {
+    "description": "Localization key for: Resolve"
+  },
+  "errorLoadingSurveysError": "[FR] Error loading surveys: $error (French)",
+  "@errorLoadingSurveysError": {
+    "description": "Localization key for: Error loading surveys: $error"
+  },
+  "errorLogerrormessage": "[FR] Error: {errorMessage}",
+  "@errorLogerrormessage": {
+    "description": "Localization key for: Error: {errorMessage}"
+  },
+  "getHelpWithYourAccount": "[FR] Get help with your account (French)",
+  "@getHelpWithYourAccount": {
+    "description": "Localization key for: Get help with your account"
+  },
+  "pay": "[FR] Pay (French)",
+  "@pay": {
+    "description": "Localization key for: Pay"
+  },
+  "noOrganizations": "[FR] Aucune organisation",
+  "@noOrganizations": {
+    "description": "noOrganizations description"
   },
   "meetingDetails": "Détails de la réunion",
   "@meetingDetails": {
     "description": "meetingDetails description"
   },
-  "meetingId": "ID de réunion",
-  "@meetingId": {
-    "description": "meetingId description"
+  "errorLoadingAppointments": "[FR] Error loading appointments (French)",
+  "@errorLoadingAppointments": {
+    "description": "Localization key for: Error loading appointments"
   },
-  "creator": "Créateur",
-  "@creator": {
-    "description": "creator description"
+  "changesSavedSuccessfully": "[FR] Changes saved successfully! (French)",
+  "@changesSavedSuccessfully": {
+    "description": "Localization key for: Changes saved successfully!"
   },
-  "context": "Contexte",
-  "@context": {
-    "description": "context description"
+  "createNewInvoice": "[FR] Create New Invoice (French)",
+  "@createNewInvoice": {
+    "description": "Localization key for: Create New Invoice"
   },
-  "group": "Groupe",
-  "@group": {
-    "description": "group description"
+  "profileNotFound": "Profil non trouvé",
+  "@profileNotFound": {
+    "description": "Localization key for: Profile not found."
   },
-  "requestPrivateSession": "Demander une session privée",
+  "errorConfirmingPaymentE": "[FR] Error confirming payment: $e (French)",
+  "@errorConfirmingPaymentE": {
+    "description": "Localization key for: Error confirming payment: $e"
+  },
+  "inviteFriends": "[FR] Invite Friends (French)",
+  "@inviteFriends": {
+    "description": "Localization key for: Invite Friends"
+  },
+  "profileSaved": "[FR] Profile saved! (French)",
+  "@profileSaved": {
+    "description": "Localization key for: Profile saved!"
+  },
+  "REDACTED_TOKEN": "Recevoir les notifications de réservation par email",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Receive booking notifications via email"
+  },
+  "valuetointk": "[FR] Valeur vers entier : {k}",
+  "@valuetointk": {
+    "description": "Localization key for: \\${value}K"
+  },
+  "deleteAccount": "[FR] Delete Account (French)",
+  "@deleteAccount": {
+    "description": "Localization key for: Delete Account"
+  },
+  "profile1": "Profil",
+  "@profile1": {
+    "description": "Localization key for: Profile"
+  },
+  "businessOnboarding": "[FR] Business Onboarding (French)",
+  "@businessOnboarding": {
+    "description": "Localization key for: Business Onboarding"
+  },
+  "addNewClient": "[FR] Add New Client (French)",
+  "@addNewClient": {
+    "description": "Localization key for: Add New Client"
+  },
+  "darkMode": "[FR] Dark Mode (French)",
+  "@darkMode": {
+    "description": "Localization key for: Dark Mode"
+  },
+  "addProvider": "[FR] Add Provider",
+  "@addProvider": {
+    "description": "Localization key for: Add Provider"
+  },
+  "noRouteDefinedForStateuripath": "[FR] No route defined for {path}",
+  "@noRouteDefinedForStateuripath": {
+    "description": "Localization key for: No route defined for {path}"
+  },
+  "REDACTED_TOKEN": "[FR] Vous recevrez un email de confirmation sous peu",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: You will receive a confirmation email shortly."
+  },
+  "addQuestion": "[FR] Add Question (French)",
+  "@addQuestion": {
+    "description": "Localization key for: Add Question"
+  },
+  "privacyPolicy": "[FR] Privacy Policy (French)",
+  "@privacyPolicy": {
+    "description": "Localization key for: Privacy Policy"
+  },
+  "branchesLengthBranches": "[FR] {branchCount} branches (French)",
+  "@branchesLengthBranches": {
+    "description": "Localization key for: {branchCount} branches"
+  },
+  "join": "[FR] Join (French)",
+  "@join": {
+    "description": "Localization key for: Join"
+  },
+  "businessSubscription": "[FR] Business Subscription (French)",
+  "@businessSubscription": {
+    "description": "Localization key for: Business Subscription"
+  },
+  "myInvites1": "[FR] My Invites (French)",
+  "@myInvites1": {
+    "description": "Localization key for: My Invites"
+  },
+  "providers": "[FR] Providers",
+  "@providers": {
+    "description": "Localization key for: Providers"
+  },
+  "surveyManagement": "[FR] Survey Management (French)",
+  "@surveyManagement": {
+    "description": "Localization key for: Survey Management"
+  },
+  "pleaseEnterAValidEmailOrPhone": "[FR] Please enter a valid email or phone",
+  "@pleaseEnterAValidEmailOrPhone": {
+    "description": "Localization key for: Please enter a valid email or phone"
+  },
+  "noRoomsFoundAddYourFirstRoom": "[FR] No rooms found. Add your first room! (French)",
+  "@noRoomsFoundAddYourFirstRoom": {
+    "description": "Localization key for: No rooms found. Add your first room!"
+  },
+  "readOurPrivacyPolicy": "[FR] Read our privacy policy (French)",
+  "@readOurPrivacyPolicy": {
+    "description": "Localization key for: Read our privacy policy"
+  },
+  "couldNotOpenPrivacyPolicy": "[FR] Could not open privacy policy (French)",
+  "@couldNotOpenPrivacyPolicy": {
+    "description": "Localization key for: Could not open privacy policy"
+  },
+  "refresh1": "[FR] Refresh (French)",
+  "@refresh1": {
+    "description": "Localization key for: Refresh"
+  },
+  "roomUpdatedSuccessfully": "[FR] Room updated successfully! (French)",
+  "@roomUpdatedSuccessfully": {
+    "description": "Localization key for: Room updated successfully!"
+  },
+  "contentDetail": "[FR] Content Detail (French)",
+  "@contentDetail": {
+    "description": "Localization key for: Content Detail"
+  },
+  "cancelSubscription": "[FR] Cancel Subscription (French)",
+  "@cancelSubscription": {
+    "description": "Localization key for: Cancel Subscription"
+  },
+  "REDACTED_TOKEN": "[FR] Successfully registered as Ambassador! (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Successfully registered as Ambassador!"
+  },
+  "save1": "[FR] Save (French)",
+  "@save1": {
+    "description": "Localization key for: Save"
+  },
+  "copy1": "[FR] Copy (French)",
+  "@copy1": {
+    "description": "Localization key for: Copy"
+  },
+  "failedToSendInvitationE": "[FR] Failed to send invitation: $e (French)",
+  "@failedToSendInvitationE": {
+    "description": "Localization key for: Failed to send invitation: $e"
+  },
+  "surveyScore": "[FR] Survey Score (French)",
+  "@surveyScore": {
+    "description": "Localization key for: Survey Score"
+  },
+  "userUserid": "[FR] Utilisateur : {userId}",
+  "@userUserid": {
+    "description": "Localization key for: User $userId"
+  },
+  "noAppointmentsFound": "[FR] No appointments found. (French)",
+  "@noAppointmentsFound": {
+    "description": "Localization key for: No appointments found."
+  },
+  "responseDetail": "[FR] Response Detail (French)",
+  "@responseDetail": {
+    "description": "Localization key for: Response Detail"
+  },
+  "REDACTED_TOKEN": "Écran de vérification entreprise - Bientôt disponible",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Verification Screen - Coming Soon"
+  },
+  "REDACTED_TOKEN": "Profil entreprise activé avec succès",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business profile activated successfully!"
+  },
+  "failedToStartProSubscriptionE": "[FR] Failed to start Pro subscription: $e (French)",
+  "@failedToStartProSubscriptionE": {
+    "description": "Localization key for: Failed to start Pro subscription: $e"
+  },
+  "REDACTED_TOKEN": "[FR] Business Dashboard Entry Screen - Coming Soon (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Dashboard Entry Screen - Coming Soon"
+  },
+  "contentFilter": "[FR] Content Filter (French)",
+  "@contentFilter": {
+    "description": "Localization key for: Content Filter"
+  },
+  "helpSupport": "[FR] Help & Support (French)",
+  "@helpSupport": {
+    "description": "Localization key for: Help & Support"
+  },
+  "editRoom": "[FR] Edit Room (French)",
+  "@editRoom": {
+    "description": "Localization key for: Edit Room"
+  },
+  "appointmentApptid": "[FR] Appointment: {appointmentId}",
+  "@appointmentApptid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "deviceLogdeviceinfo": "[FR] Device: {deviceInfo}",
+  "@deviceLogdeviceinfo": {
+    "description": "Localization key for: Device: {deviceInfo}"
+  },
+  "REDACTED_TOKEN": "[FR] Business CRM Entry Screen - Coming Soon (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business CRM Entry Screen - Coming Soon"
+  },
+  "adminDashboard": "[FR] Admin Dashboard",
+  "@adminDashboard": {
+    "description": "Localization key for: Admin Dashboard"
+  },
+  "orgmemberidslengthMembers": "[FR] {memberCount} members",
+  "@orgmemberidslengthMembers": {
+    "description": "Localization key for: {memberCount} members"
+  },
+  "errorLoadingDashboardError": "[FR] Error loading dashboard: $error (French)",
+  "@errorLoadingDashboardError": {
+    "description": "Localization key for: Error loading dashboard: $error"
+  },
+  "gameDeletedSuccessfully": "[FR] Game deleted successfully! (French)",
+  "@gameDeletedSuccessfully": {
+    "description": "Localization key for: Game deleted successfully!"
+  },
+  "viewResponsesComingSoon": "[FR] Voir les réponses bientôt",
+  "@viewResponsesComingSoon": {
+    "description": "Localization key for: View responses - Coming soon!"
+  },
+  "deleteProvider": "[FR] Delete Provider",
+  "@deleteProvider": {
+    "description": "Localization key for: Delete Provider"
+  },
+  "errorLoadingRewards": "[FR] Error loading rewards (French)",
+  "@errorLoadingRewards": {
+    "description": "Localization key for: Error loading rewards"
+  },
+  "failedToDeleteAccountE": "[FR] Failed to delete account: $e (French)",
+  "@failedToDeleteAccountE": {
+    "description": "Localization key for: Failed to delete account: $e"
+  },
+  "invited1": "[FR] Invited (French)",
+  "@invited1": {
+    "description": "Localization key for: Invited"
+  },
+  "noBranchesAvailable": "[FR] No branches available (French)",
+  "@noBranchesAvailable": {
+    "description": "Localization key for: No branches available"
+  },
+  "errorError": "[FR] Error: $error (French)",
+  "@errorError": {
+    "description": "Localization key for: Error: $error"
+  },
+  "noEvents": "[FR] No events (French)",
+  "@noEvents": {
+    "description": "Localization key for: No events"
+  },
+  "gameCreatedSuccessfully": "[FR] Game created successfully! (French)",
+  "@gameCreatedSuccessfully": {
+    "description": "Localization key for: Game created successfully!"
+  },
+  "add1": "[FR] Add (French)",
+  "@add1": {
+    "description": "Localization key for: Add"
+  },
+  "creatorCreatorid": "[FR] Creator: $creatorId",
+  "@creatorCreatorid": {
+    "description": "Localization key for: Creator: $creatorId"
+  },
+  "eventstarttimeEventendtime": "[FR] {startTime} - {endTime} (French)",
+  "@eventstarttimeEventendtime": {
+    "description": "Localization key for: {startTime} - {endTime}"
+  },
+  "allowPlaytime": "[FR] Allow Playtime (French)",
+  "@allowPlaytime": {
+    "description": "Localization key for: Allow Playtime"
+  },
+  "clients": "[FR] Clients (French)",
+  "@clients": {
+    "description": "Localization key for: Clients"
+  },
+  "noAmbassadorDataAvailable": "[FR] No ambassador data available (French)",
+  "@noAmbassadorDataAvailable": {
+    "description": "Localization key for: No ambassador data available"
+  },
+  "backgroundDeletedSuccessfully": "[FR] Background deleted successfully! (French)",
+  "@backgroundDeletedSuccessfully": {
+    "description": "Localization key for: Background deleted successfully!"
+  },
+  "errorSnapshoterror": "[FR] Error: {error} (French)",
+  "@errorSnapshoterror": {
+    "description": "Localization key for: Error: {error}"
+  },
+  "noAnalyticsDataAvailableYet": "[FR] No analytics data available yet. (French)",
+  "@noAnalyticsDataAvailableYet": {
+    "description": "Localization key for: No analytics data available yet."
+  },
+  "errorDeletingSlotE": "[FR] Error deleting slot: $e (French)",
+  "@errorDeletingSlotE": {
+    "description": "Localization key for: Error deleting slot: $e"
+  },
+  "REDACTED_TOKEN": "[FR] Business Phone Booking Entry Screen - Coming Soon (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Phone Booking Entry Screen - Coming Soon"
+  },
+  "verification": "[FR] Vérification",
+  "@verification": {
+    "description": "Localization key for: Verification"
+  },
+  "copyLink": "[FR] Copy Link (French)",
+  "@copyLink": {
+    "description": "Localization key for: Copy Link"
+  },
+  "dashboard1": "[FR] Dashboard (French)",
+  "@dashboard1": {
+    "description": "Localization key for: Dashboard"
+  },
+  "manageChildAccounts": "[FR] Manage Child Accounts (French)",
+  "@manageChildAccounts": {
+    "description": "Localization key for: Manage Child Accounts"
+  },
+  "grantConsent": "[FR] Grant Consent (French)",
+  "@grantConsent": {
+    "description": "Localization key for: Grant Consent"
+  },
+  "myProfile1": "[FR] My Profile (French)",
+  "@myProfile1": {
+    "description": "Localization key for: My Profile"
+  },
+  "submit": "[FR] Submit (French)",
+  "@submit": {
+    "description": "Localization key for: Submit"
+  },
+  "userLoguseremail": "[FR] Journal utilisateur : {userEmail}",
+  "@userLoguseremail": {
+    "description": "Localization key for: User: {userEmail}"
+  },
+  "emailNotifications": "Notifications par email",
+  "@emailNotifications": {
+    "description": "Localization key for: Email Notifications"
+  },
+  "ambassadorDashboard": "[FR] Ambassador Dashboard (French)",
+  "@ambassadorDashboard": {
+    "description": "Localization key for: Ambassador Dashboard"
+  },
+  "phoneBooking": "[FR] Phone Booking (French)",
+  "@phoneBooking": {
+    "description": "Localization key for: Phone Booking"
+  },
+  "bookViaChat": "[FR] Book via Chat (French)",
+  "@bookViaChat": {
+    "description": "Localization key for: Book via Chat"
+  },
+  "error": "[FR] Erreur",
+  "@error": {
+    "description": "Description"
+  },
+  "businessProfile": "[FR] Business Profile (French)",
+  "@businessProfile": {
+    "description": "Localization key for: Business Profile"
+  },
+  "REDACTED_TOKEN": "[FR] Business Booking Entry Screen - Coming Soon (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Booking Entry Screen - Coming Soon"
+  },
+  "createNewSurvey": "[FR] Create New Survey (French)",
+  "@createNewSurvey": {
+    "description": "Localization key for: Create New Survey"
+  },
+  "backgroundRejected": "[FR] Background rejected (French)",
+  "@backgroundRejected": {
+    "description": "Localization key for: Background rejected"
+  },
+  "noMediaSelected": "[FR] No media selected (French)",
+  "@noMediaSelected": {
+    "description": "Localization key for: No media selected"
+  },
+  "syncToGoogle": "[FR] Sync to Google (French)",
+  "@syncToGoogle": {
+    "description": "Localization key for: Sync to Google"
+  },
+  "virtualPlaytime": "[FR] Temps de jeu virtuel",
+  "@virtualPlaytime": {
+    "description": "Localization key for: Virtual Playtime"
+  },
+  "colorContrastTesting": "[FR] Color Contrast Testing",
+  "@colorContrastTesting": {
+    "description": "Localization key for: Color Contrast Testing"
+  },
+  "loginFailedE": "[FR] Login failed: $e",
+  "@loginFailedE": {
+    "description": "Localization key for: Login failed: $e"
+  },
+  "invitationSentSuccessfully": "[FR] Invitation sent successfully! (French)",
+  "@invitationSentSuccessfully": {
+    "description": "Localization key for: Invitation sent successfully!"
+  },
+  "registering": "[FR] Registering... (French)",
+  "@registering": {
+    "description": "Localization key for: Registering..."
+  },
+  "statusAppointmentstatusname": "[FR] Status: {status} (French)",
+  "@statusAppointmentstatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "home1": "[FR] Home (French)",
+  "@home1": {
+    "description": "Localization key for: Home"
+  },
+  "errorSavingSettingsE": "[FR] Error saving settings: $e (French)",
+  "@errorSavingSettingsE": {
+    "description": "Localization key for: Error saving settings: $e"
+  },
+  "appVersionAndInformation": "[FR] App version and information (French)",
+  "@appVersionAndInformation": {
+    "description": "Localization key for: App version and information"
+  },
+  "REDACTED_TOKEN": "[FR] Business Subscription Entry Screen - Coming Soon (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Subscription Entry Screen - Coming Soon"
+  },
+  "ekeyEvalue": "[FR] {key}: {value} (French)",
+  "@ekeyEvalue": {
+    "description": "Localization key for: {key}: {value}"
+  },
+  "REDACTED_TOKEN": "[FR] Votre paiement a été traité avec succès",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Your payment has been processed successfully."
+  },
+  "errorE": "[FR] Error: $e (French)",
+  "@errorE": {
+    "description": "Localization key for: Error: $e"
+  },
+  "viewAll1": "[FR] Voir tout",
+  "@viewAll1": {
+    "description": "Localization key for: View All"
+  },
+  "editSurveyComingSoon": "[FR] Edit survey - Coming soon! (French)",
+  "@editSurveyComingSoon": {
+    "description": "Localization key for: Edit survey - Coming soon!"
+  },
+  "enterOtp": "[FR] Enter OTP (French)",
+  "@enterOtp": {
+    "description": "Localization key for: Enter OTP"
+  },
+  "payment": "[FR] Payment (French)",
+  "@payment": {
+    "description": "Localization key for: Payment"
+  },
+  "REDACTED_TOKEN": "[FR] Automatically confirm new booking requests (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Automatically confirm new booking requests"
+  },
+  "errorPickingVideoE": "[FR] Error picking video: $e",
+  "@errorPickingVideoE": {
+    "description": "Localization key for: Error picking video: $e"
+  },
+  "noRouteDefinedForSettingsname": "[FR] No route defined for {settingsName} (French)",
+  "@noRouteDefinedForSettingsname": {
+    "description": "Localization key for: No route defined for {settingsName}"
+  },
+  "pleaseSignInToUploadABackground": "[FR] Please sign in to upload a background (French)",
+  "@pleaseSignInToUploadABackground": {
+    "description": "Localization key for: Please sign in to upload a background"
+  },
+  "logtargettypeLogtargetid": "[FR] {targetType}: {targetId}",
+  "@logtargettypeLogtargetid": {
+    "description": "Localization key for: {targetType}: {targetId}"
+  },
+  "staffAvailability": "[FR] Staff Availability (French)",
+  "@staffAvailability": {
+    "description": "Localization key for: Staff Availability"
+  },
+  "livePlaytime": "[FR] Live Playtime (French)",
+  "@livePlaytime": {
+    "description": "Localization key for: Live Playtime"
+  },
+  "autoconfirmBookings": "[FR] Auto-Confirm Bookings (French)",
+  "@autoconfirmBookings": {
+    "description": "Localization key for: Auto-Confirm Bookings"
+  },
+  "REDACTED_TOKEN": "[FR] Redirecting to Stripe checkout for Pro plan... (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Pro plan..."
+  },
+  "exportAsCsv": "[FR] Export as CSV (French)",
+  "@exportAsCsv": {
+    "description": "Localization key for: Export as CSV"
+  },
+  "deleteFunctionalityComingSoon": "[FR] Delete functionality coming soon! (French)",
+  "@deleteFunctionalityComingSoon": {
+    "description": "Localization key for: Delete functionality coming soon!"
+  },
+  "editClient": "[FR] Edit Client (French)",
+  "@editClient": {
+    "description": "Localization key for: Edit Client"
+  },
+  "REDACTED_TOKEN": "[FR] Are you sure you want to delete this message? (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Are you sure you want to delete this message?"
+  },
+  "referralsAmbassadorreferrals": "[FR] Referrals: {referrals} (French)",
+  "@referralsAmbassadorreferrals": {
+    "description": "Localization key for: Referrals: {referrals}"
+  },
+  "notAuthenticated": "[FR] Not authenticated",
+  "@notAuthenticated": {
+    "description": "Localization key for: Not authenticated"
+  },
+  "privacyRequestSentToYourParents": "[FR] Privacy request sent to your parents! (French)",
+  "@privacyRequestSentToYourParents": {
+    "description": "Localization key for: Privacy request sent to your parents!"
+  },
+  "clientDeletedSuccessfully": "[FR] Client deleted successfully! (French)",
+  "@clientDeletedSuccessfully": {
+    "description": "Localization key for: Client deleted successfully!"
+  },
+  "failedToCancelSubscription": "[FR] Failed to cancel subscription (French)",
+  "@failedToCancelSubscription": {
+    "description": "Localization key for: Failed to cancel subscription"
+  },
+  "allLanguages": "[FR] All Languages (French)",
+  "@allLanguages": {
+    "description": "Localization key for: All Languages"
+  },
+  "slotDeletedSuccessfully": "[FR] Slot deleted successfully (French)",
+  "@slotDeletedSuccessfully": {
+    "description": "Localization key for: Slot deleted successfully"
+  },
+  "REDACTED_TOKEN": "[FR] Business Providers Entry Screen - Coming Soon",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Providers Entry Screen - Coming Soon"
+  },
+  "REDACTED_TOKEN": "[FR] Parents must approve before children can join (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Parents must approve before children can join"
+  },
+  "subscribeToPro1499mo": "[FR] Subscribe to Pro (€14.99/mo) (French)",
+  "@subscribeToPro1499mo": {
+    "description": "Localization key for: Subscribe to Pro (€14.99/mo)"
+  },
+  "REDACTED_TOKEN": "[FR] Business Availability Entry Screen - Coming Soon (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Availability Entry Screen - Coming Soon"
+  },
+  "appointmentsListlength": "[FR] Appointments: {count} (French)",
+  "@appointmentsListlength": {
+    "description": "Localization key for: Appointments: {count}"
+  },
+  "clearFilters": "[FR] Clear Filters (French)",
+  "@clearFilters": {
+    "description": "Localization key for: Clear Filters"
+  },
+  "submitBooking": "[FR] Submit Booking (French)",
+  "@submitBooking": {
+    "description": "Localization key for: Submit Booking"
+  },
+  "REDACTED_TOKEN": "[FR] Are you sure you want to cancel this appointment? (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Are you sure you want to cancel this appointment?"
+  },
+  "noUpcomingBookings": "[FR] No upcoming bookings (French)",
+  "@noUpcomingBookings": {
+    "description": "Localization key for: No upcoming bookings"
+  },
+  "goBack": "[FR] Go Back (French)",
+  "@goBack": {
+    "description": "Localization key for: Go Back"
+  },
+  "setup": "[FR] Setup (French)",
+  "@setup": {
+    "description": "Localization key for: Setup"
+  },
+  "inviteChild": "[FR] Invite Child (French)",
+  "@inviteChild": {
+    "description": "Localization key for: Invite Child"
+  },
+  "goToDashboard": "[FR] Go to Dashboard (French)",
+  "@goToDashboard": {
+    "description": "Localization key for: Go to Dashboard"
+  },
+  "ambassadorQuotaDashboard": "[FR] Ambassador Quota Dashboard (French)",
+  "@ambassadorQuotaDashboard": {
+    "description": "Localization key for: Ambassador Quota Dashboard"
+  },
+  "adminSettings": "[FR] Admin Settings",
+  "@adminSettings": {
+    "description": "Localization key for: Admin Settings"
+  },
+  "referralCode": "[FR] Referral Code (French)",
+  "@referralCode": {
+    "description": "Localization key for: Referral Code"
+  },
+  "adminLogadminemail": "[FR] Admin: {adminEmail}",
+  "@adminLogadminemail": {
+    "description": "Localization key for: Admin: {adminEmail}"
+  },
+  "date": "[FR] Date (French)",
+  "@date": {
+    "description": "Localization key for: Date"
+  },
+  "readOnly": "[FR] Read Only (French)",
+  "@readOnly": {
+    "description": "Localization key for: Read Only"
+  },
+  "bookingRequest": "[FR] Booking Request (French)",
+  "@bookingRequest": {
+    "description": "Localization key for: Booking Request"
+  },
+  "advancedReporting": "[FR] • Advanced reporting (French)",
+  "@advancedReporting": {
+    "description": "Localization key for: • Advanced reporting"
+  },
+  "rooms": "[FR] Rooms (French)",
+  "@rooms": {
+    "description": "Localization key for: Rooms"
+  },
+  "copiedToClipboard": "[FR] Copied to clipboard (French)",
+  "@copiedToClipboard": {
+    "description": "Localization key for: Copied to clipboard"
+  },
+  "bookingConfirmed": "[FR] Booking Confirmed (French)",
+  "@bookingConfirmed": {
+    "description": "Localization key for: Booking Confirmed"
+  },
+  "sessionApproved": "Session approuvée",
+  "@sessionApproved": {
+    "description": "Localization key for: Session approved!"
+  },
+  "clientAddedSuccessfully": "[FR] Client added successfully! (French)",
+  "@clientAddedSuccessfully": {
+    "description": "Localization key for: Client added successfully!"
+  },
+  "noNotifications": "Aucune notification",
+  "@noNotifications": {
+    "description": "Localization key for: No notifications"
+  },
+  "backgroundApproved": "[FR] Background approved! (French)",
+  "@backgroundApproved": {
+    "description": "Localization key for: Background approved!"
+  },
+  "familySupport": "[FR] Family Support (French)",
+  "@familySupport": {
+    "description": "Localization key for: Family Support"
+  },
+  "deletingAccount": "[FR] Deleting account... (French)",
+  "@deletingAccount": {
+    "description": "Localization key for: Deleting account..."
+  },
+  "bookAppointment": "[FR] Book Appointment (French)",
+  "@bookAppointment": {
+    "description": "Localization key for: Book Appointment"
+  },
+  "REDACTED_TOKEN": "Recevoir les notifications push pour les nouvelles réservations",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Receive push notifications for new bookings"
+  },
+  "delete1": "[FR] Delete (French)",
+  "@delete1": {
+    "description": "Localization key for: Delete"
+  },
+  "sendBookingInvite": "[FR] Send Booking Invite (French)",
+  "@sendBookingInvite": {
+    "description": "Localization key for: Send Booking Invite"
+  },
+  "text": "[FR] Text (French)",
+  "@text": {
+    "description": "Localization key for: Text"
+  },
+  "manageSubscription": "[FR] Manage Subscription (French)",
+  "@manageSubscription": {
+    "description": "Localization key for: Manage Subscription"
+  },
+  "requiresInstallFallback": "[FR] Requires Install Fallback (French)",
+  "@requiresInstallFallback": {
+    "description": "Localization key for: Requires Install Fallback"
+  },
+  "paymentConfirmation": "[FR] Payment Confirmation (French)",
+  "@paymentConfirmation": {
+    "description": "Localization key for: Payment Confirmation"
+  },
+  "promoAppliedYourNextBillIsFree": "[FR] Promo applied! Your next bill is free. (French)",
+  "@promoAppliedYourNextBillIsFree": {
+    "description": "Localization key for: Promo applied! Your next bill is free."
+  },
+  "inviteeArgsinviteeid": "[FR] Invitee: {inviteeId}",
+  "@inviteeArgsinviteeid": {
+    "description": "Localization key for: Invitee: {inviteeId}"
+  },
+  "errorLoadingSlots": "[FR] Error loading slots (French)",
+  "@errorLoadingSlots": {
+    "description": "Localization key for: Error loading slots"
+  },
+  "REDACTED_TOKEN": "[FR] Allow other users to find and join this game (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Allow other users to find and join this game"
+  },
+  "REDACTED_TOKEN": "[FR] Business Onboarding Screen - Coming Soon (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Onboarding Screen - Coming Soon"
+  },
+  "activateBusinessProfile": "[FR] Activate Business Profile (French)",
+  "@activateBusinessProfile": {
+    "description": "Localization key for: Activate Business Profile"
+  },
+  "contentNotFound": "[FR] Content not found (French)",
+  "@contentNotFound": {
+    "description": "Localization key for: Content not found"
+  },
+  "pspecialtynpcontactinfo": "[FR] {specialty}\\n{contactInfo} (French)",
+  "@pspecialtynpcontactinfo": {
+    "description": "Localization key for: {specialty}\\n{contactInfo}"
+  },
+  "rating": "[FR] Rating (French)",
+  "@rating": {
+    "description": "Localization key for: Rating"
+  },
+  "messages": "[FR] Messages",
+  "@messages": {
+    "description": "Localization key for: Messages"
+  },
+  "errorEstimatingRecipientsE": "[FR] Error estimating recipients: $e (French)",
+  "@errorEstimatingRecipientsE": {
+    "description": "Localization key for: Error estimating recipients: $e"
+  },
+  "becomeAnAmbassador": "[FR] Become an Ambassador (French)",
+  "@becomeAnAmbassador": {
+    "description": "Localization key for: Become an Ambassador"
+  },
+  "subscribeNow": "[FR] Subscribe Now (French)",
+  "@subscribeNow": {
+    "description": "Localization key for: Subscribe Now"
+  },
+  "timeArgsslotformatcontext": "[FR] Time: {time} (French)",
+  "@timeArgsslotformatcontext": {
+    "description": "Localization key for: Time: {time}"
+  },
+  "shareViaWhatsapp": "[FR] Share via WhatsApp (French)",
+  "@shareViaWhatsapp": {
+    "description": "Localization key for: Share via WhatsApp"
+  },
+  "users1": "[FR] Utilisateurs",
+  "@users1": {
+    "description": "Localization key for: Users"
+  },
+  "shareLink": "[FR] Share Link (French)",
+  "@shareLink": {
+    "description": "Localization key for: Share Link"
+  },
+  "REDACTED_TOKEN": "[FR] Are you sure you want to delete this provider?",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Are you sure you want to delete this provider?"
+  },
+  "deleteAppointment": "[FR] Delete Appointment (French)",
+  "@deleteAppointment": {
+    "description": "Localization key for: Delete Appointment"
+  },
+  "toggleAvailability": "[FR] Toggle Availability (French)",
+  "@toggleAvailability": {
+    "description": "Localization key for: Toggle Availability"
+  },
+  "changePlan": "[FR] Change Plan (French)",
+  "@changePlan": {
+    "description": "Localization key for: Change Plan"
+  },
+  "errorLoadingStaff": "[FR] Error loading staff (French)",
+  "@errorLoadingStaff": {
+    "description": "Localization key for: Error loading staff"
+  },
+  "errorLoadingConfigurationE": "[FR] Error loading configuration: $e",
+  "@errorLoadingConfigurationE": {
+    "description": "Localization key for: Error loading configuration: $e"
+  },
+  "updateYourBusinessInformation": "[FR] Update your business information (French)",
+  "@updateYourBusinessInformation": {
+    "description": "Localization key for: Update your business information"
+  },
+  "REDACTED_TOKEN": "[FR] No providers found. Add your first provider!",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: No providers found. Add your first provider!"
+  },
+  "parentDashboard": "[FR] Parent Dashboard (French)",
+  "@parentDashboard": {
+    "description": "Localization key for: Parent Dashboard"
+  },
+  "menu": "[FR] Menu (French)",
+  "@menu": {
+    "description": "Localization key for: Menu"
+  },
+  "studioBooking": "[FR] Studio Booking (French)",
+  "@studioBooking": {
+    "description": "Localization key for: Studio Booking"
+  },
+  "about1": "[FR] About (French)",
+  "@about1": {
+    "description": "Localization key for: About"
+  },
+  "multipleChoice": "[FR] Multiple Choice (French)",
+  "@multipleChoice": {
+    "description": "Localization key for: Multiple Choice"
+  },
+  "REDACTED_TOKEN": "[FR] Date: {date} (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Date: {date}"
+  },
+  "REDACTED_TOKEN": "[FR] Studio booking is only available on web (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Studio booking is only available on web"
+  },
+  "errorLoadingBranchesE": "[FR] Error loading branches: $e (French)",
+  "@errorLoadingBranchesE": {
+    "description": "Localization key for: Error loading branches: $e"
+  },
+  "REDACTED_TOKEN": "[FR] \\uD83D\\uDCC5 {dateTime} (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: \\uD83D\\uDCC5 {dateTime}"
+  },
+  "appointmentInviteappointmentid": "[FR] Appointment: {appointmentId}",
+  "@appointmentInviteappointmentid": {
+    "description": "Localization key for: Appointment: {appointmentId}"
+  },
+  "none": "[FR] None (French)",
+  "@none": {
+    "description": "Localization key for: None"
+  },
+  "failedToUpdateConsentE": "[FR] Failed to update consent: $e (French)",
+  "@failedToUpdateConsentE": {
+    "description": "Localization key for: Failed to update consent: $e"
+  },
+  "welcome1": "[FR] Bienvenue",
+  "@welcome1": {
+    "description": "Localization key for: Welcome"
+  },
+  "failedToCreateSessionE": "[FR] Failed to create session: $e (French)",
+  "@failedToCreateSessionE": {
+    "description": "Localization key for: Failed to create session: $e"
+  },
+  "inviteContact": "[FR] Invite Contact (French)",
+  "@inviteContact": {
+    "description": "Localization key for: Invite Contact"
+  },
+  "surveyEditor": "[FR] Survey Editor (French)",
+  "@surveyEditor": {
+    "description": "Localization key for: Survey Editor"
+  },
+  "failedToStartBasicSubscriptionE": "[FR] Failed to start Basic subscription: $e (French)",
+  "@failedToStartBasicSubscriptionE": {
+    "description": "Localization key for: Failed to start Basic subscription: $e"
+  },
+  "mySchedule": "[FR] My Schedule (French)",
+  "@mySchedule": {
+    "description": "Localization key for: My Schedule"
+  },
+  "studioDashboard": "[FR] Studio Dashboard (French)",
+  "@studioDashboard": {
+    "description": "Localization key for: Studio Dashboard"
+  },
+  "editProfile": "Modifier le profil",
+  "@editProfile": {
+    "description": "Localization key for: Edit Profile"
+  },
+  "logout1": "[FR] Logout",
+  "@logout1": {
+    "description": "Localization key for: Logout"
+  },
+  "serviceServiceidNotSelected": "[FR] Service: {service}",
+  "@serviceServiceidNotSelected": {
+    "description": "Localization key for: Service: {service}"
+  },
+  "settingsSavedSuccessfully": "[FR] Settings saved successfully! (French)",
+  "@settingsSavedSuccessfully": {
+    "description": "Localization key for: Settings saved successfully!"
+  },
+  "linkCopiedToClipboard": "[FR] Link copied to clipboard! (French)",
+  "@linkCopiedToClipboard": {
+    "description": "Localization key for: Link copied to clipboard!"
+  },
+  "accept1": "[FR] Accept (French)",
+  "@accept1": {
+    "description": "Localization key for: Accept"
+  },
+  "noAvailableSlots": "[FR] No available slots (French)",
+  "@noAvailableSlots": {
+    "description": "Localization key for: No available slots"
+  },
+  "makeGamePublic": "[FR] Make Game Public (French)",
+  "@makeGamePublic": {
+    "description": "Localization key for: Make Game Public"
+  },
+  "REDACTED_TOKEN": "[FR] Permission {category} updated to $newValue (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Permission {category} updated to $newValue"
+  },
+  "roomDeletedSuccessfully": "[FR] Room deleted successfully! (French)",
+  "@roomDeletedSuccessfully": {
+    "description": "Localization key for: Room deleted successfully!"
+  },
+  "businessCalendar": "[FR] Business Calendar (French)",
+  "@businessCalendar": {
+    "description": "Localization key for: Business Calendar"
+  },
+  "addAvailability": "[FR] Add Availability (French)",
+  "@addAvailability": {
+    "description": "Localization key for: Add Availability"
+  },
+  "ambassadorOnboarding": "[FR] Ambassador Onboarding (French)",
+  "@ambassadorOnboarding": {
+    "description": "Localization key for: Ambassador Onboarding"
+  },
+  "phoneProfileasyncphone": "[FR] Phone: {phone} (French)",
+  "@phoneProfileasyncphone": {
+    "description": "Localization key for: Phone: {phone}"
+  },
+  "addNewRoom": "[FR] Add New Room (French)",
+  "@addNewRoom": {
+    "description": "Localization key for: Add New Room"
+  },
+  "requireParentApproval": "[FR] Require Parent Approval (French)",
+  "@requireParentApproval": {
+    "description": "Localization key for: Require Parent Approval"
+  },
+  "closed": "[FR] Closed (French)",
+  "@closed": {
+    "description": "Localization key for: Closed"
+  },
+  "exportAsPdf": "[FR] Export as PDF (French)",
+  "@exportAsPdf": {
+    "description": "Localization key for: Export as PDF"
+  },
+  "enableVibration": "[FR] Enable Vibration (French)",
+  "@enableVibration": {
+    "description": "Localization key for: Enable Vibration"
+  },
+  "toAvailendformatcontext": "[FR] To: {endTime} (French)",
+  "@toAvailendformatcontext": {
+    "description": "Localization key for: To: {endTime}"
+  },
+  "yourUpgradeCodeUpgradecode": "[FR] Votre code de mise à niveau : {upgradeCode}",
+  "@yourUpgradeCodeUpgradecode": {
+    "description": "Localization key for: Your upgrade code: $upgradeCode"
+  },
+  "requestPrivateSession": "[FR] Demander une session privée",
   "@requestPrivateSession": {
     "description": "requestPrivateSession description"
   },
-  "privacyRequestSent": "Demande de confidentialité envoyée",
-  "@privacyRequestSent": {
-    "description": "privacyRequestSent description"
+  "country": "[FR] Country (French)",
+  "@country": {
+    "description": "Localization key for: Country"
   },
-  "failedToSendPrivacyRequest": "Échec de l'envoi de la demande de confidentialité",
-  "@failedToSendPrivacyRequest": {
-    "description": "failedToSendPrivacyRequest description"
+  "loginScreen": "[FR] Login Screen",
+  "@loginScreen": {
+    "description": "Localization key for: Login Screen"
   },
-  "overview": "Overview",
-  "@overview": {
-    "description": "Description"
+  "staffArgsstaffdisplayname": "[FR] Staff: {staffName} (French)",
+  "@staffArgsstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
   },
-  "bookings": "Bookings",
-  "@bookings": {
-    "description": "Description"
+  "revokeConsent": "[FR] Revoke Consent (French)",
+  "@revokeConsent": {
+    "description": "Localization key for: Revoke Consent"
   },
-  "contentLibrary": "Content Library",
-  "remove": "Supprimer",
-  "name": "Nom",
-  "help": "Aide",
-  "contact": "Contact",
-  "privacy": "Confidentialité",
-  "terms": "Conditions",
-  "messages": "Messages",
-  "calendar": "Calendrier",
-  "appointments": "Rendez-vous",
-  "schedule": "Programmer",
-  "playtimeNoGamesYet": "Aucun jeu pour le moment",
-  "checkingPermissions1": "Vérification des permissions..."
+  "settings1": "[FR] Settings (French)",
+  "@settings1": {
+    "description": "Localization key for: Settings"
+  },
+  "cancel1": "[FR] Cancel (French)",
+  "@cancel1": {
+    "description": "Localization key for: Cancel"
+  },
+  "REDACTED_TOKEN": "[FR] Subscription activated successfully! (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Subscription activated successfully!"
+  },
+  "activityLogaction": "[FR] Activity: {action}",
+  "@activityLogaction": {
+    "description": "Localization key for: Activity: {action}"
+  },
+  "broadcast": "[FR] Broadcast (French)",
+  "@broadcast": {
+    "description": "Localization key for: Broadcast"
+  },
+  "noEventsScheduledThisWeek": "[FR] No events scheduled this week (French)",
+  "@noEventsScheduledThisWeek": {
+    "description": "Localization key for: No events scheduled this week"
+  },
+  "googleCalendar": "[FR] Google Calendar (French)",
+  "@googleCalendar": {
+    "description": "Localization key for: Google Calendar"
+  },
+  "sendInvite": "[FR] Send Invite (French)",
+  "@sendInvite": {
+    "description": "Localization key for: Send Invite"
+  },
+  "childDashboard": "[FR] Child Dashboard (French)",
+  "@childDashboard": {
+    "description": "Localization key for: Child Dashboard"
+  },
+  "failedToUploadBackgroundE": "[FR] Failed to upload background: $e (French)",
+  "@failedToUploadBackgroundE": {
+    "description": "Localization key for: Failed to upload background: $e"
+  },
+  "linkchildidsubstring08": "[FR] {linkId}...",
+  "@linkchildidsubstring08": {
+    "description": "Localization key for: {linkId}..."
+  },
+  "targetLogtargettypeLogtargetid": "[FR] Target: {targetType} - {targetId}",
+  "@targetLogtargettypeLogtargetid": {
+    "description": "Localization key for: Target: {targetType} - {targetId}"
+  },
+  "contextContextid": "[FR] Context: $contextId",
+  "@contextContextid": {
+    "description": "Localization key for: Context: $contextId"
+  },
+  "noAppointments": "[FR] No appointments (French)",
+  "@noAppointments": {
+    "description": "Localization key for: No appointments"
+  },
+  "unlimitedBookingsPerWeek": "[FR] • Unlimited bookings per week (French)",
+  "@unlimitedBookingsPerWeek": {
+    "description": "Localization key for: • Unlimited bookings per week"
+  },
+  "errorDetailsLogerrortype": "[FR] Error Details: {errorType}",
+  "@errorDetailsLogerrortype": {
+    "description": "Localization key for: Error Details: {errorType}"
+  },
+  "scheduledAtScheduledat": "[FR] Scheduled at: $scheduledAt (French)",
+  "@scheduledAtScheduledat": {
+    "description": "Localization key for: Scheduled at: $scheduledAt"
+  },
+  "selectStaff": "[FR] Select Staff (French)",
+  "@selectStaff": {
+    "description": "Localization key for: Select Staff"
+  },
+  "REDACTED_TOKEN": "[FR] Subscription cancelled successfully (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Subscription cancelled successfully"
+  },
+  "pleaseLogInToViewYourProfile": "Veuillez vous connecter pour voir votre profil",
+  "@pleaseLogInToViewYourProfile": {
+    "description": "Localization key for: Please log in to view your profile."
+  },
+  "cancelAppointment": "[FR] Cancel Appointment (French)",
+  "@cancelAppointment": {
+    "description": "Localization key for: Cancel Appointment"
+  },
+  "permissionsFamilylinkchildid": "[FR] Permissions - {childId}",
+  "@permissionsFamilylinkchildid": {
+    "description": "Localization key for: Permissions - {childId}"
+  },
+  "businessSignup": "[FR] Business Signup (French)",
+  "@businessSignup": {
+    "description": "Localization key for: Business Signup"
+  },
+  "REDACTED_TOKEN": "[FR] Business Completion Screen - Coming Soon (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Completion Screen - Coming Soon"
+  },
+  "createGame1": "[FR] Create Game (French)",
+  "@createGame1": {
+    "description": "Localization key for: Create Game"
+  },
+  "valuetoint": "[FR] Valeur vers entier",
+  "@valuetoint": {
+    "description": "Localization key for: {value}"
+  },
+  "pleaseEnterAPromoCode": "[FR] Please enter a promo code (French)",
+  "@pleaseEnterAPromoCode": {
+    "description": "Localization key for: Please enter a promo code"
+  },
+  "errorLoadingAvailabilityE": "[FR] Error loading availability: $e (French)",
+  "@errorLoadingAvailabilityE": {
+    "description": "Localization key for: Error loading availability: $e"
+  },
+  "parentalControls": "[FR] Parental Controls (French)",
+  "@parentalControls": {
+    "description": "Localization key for: Parental Controls"
+  },
+  "editBusinessProfile": "Modifier le profil entreprise",
+  "@editBusinessProfile": {
+    "description": "Localization key for: Edit Business Profile"
+  },
+  "childLinkedSuccessfully": "[FR] Child linked successfully! (French)",
+  "@childLinkedSuccessfully": {
+    "description": "Localization key for: Child linked successfully!"
+  },
+  "create": "[FR] Create (French)",
+  "@create": {
+    "description": "Localization key for: Create"
+  },
+  "noExternalMeetingsFound": "[FR] No external meetings found. (French)",
+  "@noExternalMeetingsFound": {
+    "description": "Localization key for: No external meetings found."
+  },
+  "staffSelectionstaffdisplayname": "[FR] Staff: {staffName} (French)",
+  "@staffSelectionstaffdisplayname": {
+    "description": "Localization key for: Staff: {staffName}"
+  },
+  "pleaseEnterAValidEmailAddress": "[FR] Please enter a valid email address",
+  "@pleaseEnterAValidEmailAddress": {
+    "description": "Localization key for: Please enter a valid email address"
+  },
+  "schedulerScreen": "[FR] Scheduler Screen (French)",
+  "@schedulerScreen": {
+    "description": "Localization key for: Scheduler Screen"
+  },
+  "clientUpdatedSuccessfully": "[FR] Client updated successfully! (French)",
+  "@clientUpdatedSuccessfully": {
+    "description": "Localization key for: Client updated successfully!"
+  },
+  "surveyResponses": "[FR] Survey Responses (French)",
+  "@surveyResponses": {
+    "description": "Localization key for: Survey Responses"
+  },
+  "syncToOutlook": "[FR] Sync to Outlook (French)",
+  "@syncToOutlook": {
+    "description": "Localization key for: Sync to Outlook"
+  },
+  "saveChanges": "[FR] Save Changes (French)",
+  "@saveChanges": {
+    "description": "Localization key for: Save Changes"
+  },
+  "pickTime": "[FR] Pick Time (French)",
+  "@pickTime": {
+    "description": "Localization key for: Pick Time"
+  },
+  "registrationFailedEtostring": "[FR] Registration failed: {error} (French)",
+  "@registrationFailedEtostring": {
+    "description": "Localization key for: Registration failed: {error}"
+  },
+  "analytics": "[FR] Analytics (French)",
+  "@analytics": {
+    "description": "Localization key for: Analytics"
+  },
+  "errorLoadingEvents": "[FR] Error loading events (French)",
+  "@errorLoadingEvents": {
+    "description": "Localization key for: Error loading events"
+  },
+  "errorLoadingOrganizations": "[FR] Erreur lors du chargement des organisations",
+  "@errorLoadingOrganizations": {
+    "description": "errorLoadingOrganizations description"
+  },
+  "businessLoginScreenComingSoon": "[FR] Business Login Screen - Coming Soon",
+  "@businessLoginScreenComingSoon": {
+    "description": "Localization key for: Business Login Screen - Coming Soon"
+  },
+  "success1": "[FR] Success (French)",
+  "@success1": {
+    "description": "Localization key for: Success"
+  },
+  "appVersionLogappversion": "[FR] App Version: {appVersion}",
+  "@appVersionLogappversion": {
+    "description": "Localization key for: App Version: {appVersion}"
+  },
+  "fromAvailstartformatcontext": "[FR] From: {startTime} (French)",
+  "@fromAvailstartformatcontext": {
+    "description": "Localization key for: From: {startTime}"
+  },
+  "readWrite": "[FR] Read & Write (French)",
+  "@readWrite": {
+    "description": "Localization key for: Read & Write"
+  },
+  "REDACTED_TOKEN": "[FR] Redirecting to Stripe checkout for Basic plan... (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Redirecting to Stripe checkout for Basic plan..."
+  },
+  "errorSavingConfigurationE": "[FR] Error saving configuration: $e",
+  "@errorSavingConfigurationE": {
+    "description": "Localization key for: Error saving configuration: $e"
+  },
+  "pickDate": "[FR] Pick Date (French)",
+  "@pickDate": {
+    "description": "Localization key for: Pick Date"
+  },
+  "chatBooking": "[FR] Chat Booking (French)",
+  "@chatBooking": {
+    "description": "Localization key for: Chat Booking"
+  },
+  "noQuestionsAdded": "[FR] No questions added (French)",
+  "@noQuestionsAdded": {
+    "description": "Localization key for: No questions added"
+  },
+  "severityLogseverityname": "[FR] Severity: {severity}",
+  "@severityLogseverityname": {
+    "description": "Localization key for: Severity: {severity}"
+  },
+  "markAsPaid": "[FR] Mark as Paid",
+  "@markAsPaid": {
+    "description": "Localization key for: Mark as Paid"
+  },
+  "typeOpenCall": "[FR] Type: Open Call (French)",
+  "@typeOpenCall": {
+    "description": "Localization key for: Type: Open Call"
+  },
+  "appointmentAppointmentid": "[FR] Appointment {appointmentId}",
+  "@appointmentAppointmentid": {
+    "description": "Localization key for: Appointment {appointmentId}"
+  },
+  "statusInvitestatusname": "[FR] Status: {status}",
+  "@statusInvitestatusname": {
+    "description": "Localization key for: Status: {status}"
+  },
+  "businessLogin": "[FR] Business Login",
+  "@businessLogin": {
+    "description": "Localization key for: Business Login"
+  },
+  "invoiceCreatedSuccessfully": "[FR] Invoice created successfully! (French)",
+  "@invoiceCreatedSuccessfully": {
+    "description": "Localization key for: Invoice created successfully!"
+  },
+  "noTimeSeriesDataAvailable": "[FR] No time series data available (French)",
+  "@noTimeSeriesDataAvailable": {
+    "description": "Localization key for: No time series data available"
+  },
+  "subscribeToWidgetplanname": "[FR] Subscribe to {planName}",
+  "@subscribeToWidgetplanname": {
+    "description": "Localization key for: Subscribe to {planName}"
+  },
+  "REDACTED_TOKEN": "[FR] Timestamp: {timestamp}",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Timestamp: {timestamp}"
+  },
+  "failedToSendPrivacyRequestE": "[FR] Failed to send privacy request: $e (French)",
+  "@failedToSendPrivacyRequestE": {
+    "description": "Localization key for: Failed to send privacy request: $e"
+  },
+  "chooseYourPlan": "[FR] Choose Your Plan (French)",
+  "@chooseYourPlan": {
+    "description": "Localization key for: Choose Your Plan"
+  },
+  "playtimeManagement": "[FR] Playtime Management (French)",
+  "@playtimeManagement": {
+    "description": "Localization key for: Playtime Management"
+  },
+  "availability": "[FR] Availability (French)",
+  "@availability": {
+    "description": "Localization key for: Availability"
+  },
+  "eventCreated": "[FR] Event created (French)",
+  "@eventCreated": {
+    "description": "Localization key for: Event created"
+  },
+  "subscribeToBasic499mo": "[FR] Subscribe to Basic (€4.99/mo) (French)",
+  "@subscribeToBasic499mo": {
+    "description": "Localization key for: Subscribe to Basic (€4.99/mo)"
+  },
+  "completion": "[FR] Completion (French)",
+  "@completion": {
+    "description": "Localization key for: Completion"
+  },
+  "supportTicketSubmitted": "[FR] Support ticket submitted (French)",
+  "@supportTicketSubmitted": {
+    "description": "Localization key for: Support ticket submitted"
+  },
+  "monetizationSettings": "[FR] Monetization Settings (French)",
+  "@monetizationSettings": {
+    "description": "Localization key for: Monetization Settings"
+  },
+  "noBookingsFound": "[FR] No bookings found (French)",
+  "@noBookingsFound": {
+    "description": "Localization key for: No bookings found"
+  },
+  "admin": "[FR] Admin",
+  "@admin": {
+    "description": "Localization key for: Admin"
+  },
+  "deleteSurvey": "[FR] Delete Survey (French)",
+  "@deleteSurvey": {
+    "description": "Localization key for: Delete Survey"
+  },
+  "gameApprovedSuccessfully": "[FR] Game approved successfully! (French)",
+  "@gameApprovedSuccessfully": {
+    "description": "Localization key for: Game approved successfully!"
+  },
+  "errorLoadingPermissionsError": "[FR] Error loading permissions: $error (French)",
+  "@errorLoadingPermissionsError": {
+    "description": "Localization key for: Error loading permissions: $error"
+  },
+  "referrals": "[FR] Referrals (French)",
+  "@referrals": {
+    "description": "Localization key for: Referrals"
+  },
+  "crm": "[FR] CRM (French)",
+  "@crm": {
+    "description": "Localization key for: CRM"
+  },
+  "gameRejected": "[FR] Game rejected (French)",
+  "@gameRejected": {
+    "description": "Localization key for: Game rejected"
+  },
+  "appointments": "[FR] Rendez-vous",
+  "@appointments": {
+    "description": "Localization key for: Appointments"
+  },
+  "onboardingScreen": "[FR] Onboarding Screen (French)",
+  "@onboardingScreen": {
+    "description": "Localization key for: Onboarding Screen"
+  },
+  "welcomeToYourStudio": "[FR] Bienvenue dans votre studio",
+  "@welcomeToYourStudio": {
+    "description": "Localization key for: Welcome to your studio"
+  },
+  "update": "[FR] Update (French)",
+  "@update": {
+    "description": "Localization key for: Update"
+  },
+  "retry1": "[FR] Retry (French)",
+  "@retry1": {
+    "description": "Localization key for: Retry"
+  },
+  "booking": "[FR] Booking (French)",
+  "@booking": {
+    "description": "Localization key for: Booking"
+  },
+  "parentalSettings": "[FR] Parental Settings (French)",
+  "@parentalSettings": {
+    "description": "Localization key for: Parental Settings"
+  },
+  "language": "[FR] Language (French)",
+  "@language": {
+    "description": "Localization key for: Language"
+  },
+  "deleteSlot": "[FR] Delete Slot (French)",
+  "@deleteSlot": {
+    "description": "Localization key for: Delete Slot"
+  },
+  "organizations": "[FR] Organisations",
+  "@organizations": {
+    "description": "organizations description"
+  },
+  "configurationSavedSuccessfully": "[FR] Configuration saved successfully!",
+  "@configurationSavedSuccessfully": {
+    "description": "Localization key for: Configuration saved successfully!"
+  },
+  "createNewGame": "[FR] Create New Game (French)",
+  "@createNewGame": {
+    "description": "Localization key for: Create New Game"
+  },
+  "next1": "[FR] Next (French)",
+  "@next1": {
+    "description": "Localization key for: Next"
+  },
+  "backgroundUploadedSuccessfully": "[FR] Background uploaded successfully! (French)",
+  "@backgroundUploadedSuccessfully": {
+    "description": "Localization key for: Background uploaded successfully!"
+  },
+  "noAppointmentRequestsFound": "[FR] No appointment requests found. (French)",
+  "@noAppointmentRequestsFound": {
+    "description": "Localization key for: No appointment requests found."
+  },
+  "pleaseSignInToCreateASession": "Veuillez vous connecter pour créer une session",
+  "@pleaseSignInToCreateASession": {
+    "description": "Localization key for: Please sign in to create a session"
+  },
+  "restrictMatureContent": "[FR] Restrict mature content (French)",
+  "@restrictMatureContent": {
+    "description": "Localization key for: Restrict mature content"
+  },
+  "ambassadors": "[FR] Ambassadors (French)",
+  "@ambassadors": {
+    "description": "Localization key for: Ambassadors"
+  },
+  "smsNotifications": "Notifications SMS",
+  "@smsNotifications": {
+    "description": "Localization key for: SMS Notifications"
+  },
+  "paymentWasCancelled": "[FR] Payment was cancelled (French)",
+  "@paymentWasCancelled": {
+    "description": "Localization key for: Payment was cancelled"
+  },
+  "clearAll": "[FR] Clear All (French)",
+  "@clearAll": {
+    "description": "Localization key for: Clear All"
+  },
+  "viewDetails": "[FR] Voir les détails",
+  "@viewDetails": {
+    "description": "Localization key for: View Details"
+  },
+  "notifications1": "Notifications",
+  "@notifications1": {
+    "description": "French translation for: Notifications"
+  },
+  "REDACTED_TOKEN": "Session en direct programmée, en attente d'approbation parentale",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Live session scheduled! Waiting for parent approval..."
+  },
+  "failedToCreateGameE": "[FR] Failed to create game: $e (French)",
+  "@failedToCreateGameE": {
+    "description": "Localization key for: Failed to create game: $e"
+  },
+  "noChartDataAvailable": "[FR] No chart data available (French)",
+  "@noChartDataAvailable": {
+    "description": "Localization key for: No chart data available"
+  },
+  "phonebasedBookingSystem": "[FR] • Phone-based booking system (French)",
+  "@phonebasedBookingSystem": {
+    "description": "Localization key for: • Phone-based booking system"
+  },
+  "enableNotifications1": "Activer les notifications",
+  "@enableNotifications1": {
+    "description": "Localization key for: Enable Notifications"
+  },
+  "invoices": "[FR] Invoices (French)",
+  "@invoices": {
+    "description": "Localization key for: Invoices"
+  },
+  "REDACTED_TOKEN": "Veuillez activer votre profil entreprise pour continuer",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Please activate your business profile to continue."
+  },
+  "scheduledAtArgsscheduledat": "[FR] Scheduled at: {scheduledAt} (French)",
+  "@scheduledAtArgsscheduledat": {
+    "description": "Localization key for: Scheduled at: {scheduledAt}"
+  },
+  "REDACTED_TOKEN": "[FR] Duration: {duration} minutes (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Duration: {duration} minutes"
+  },
+  "tryAgain": "[FR] Try Again (French)",
+  "@tryAgain": {
+    "description": "Localization key for: Try Again"
+  },
+  "deleteBackground": "[FR] Delete Background (French)",
+  "@deleteBackground": {
+    "description": "Localization key for: Delete Background"
+  },
+  "currentTierTiertouppercase": "[FR] Current Tier: {tier} (French)",
+  "@currentTierTiertouppercase": {
+    "description": "Localization key for: Current Tier: {tier}"
+  },
+  "iDoNotConsent": "[FR] I Do Not Consent",
+  "@iDoNotConsent": {
+    "description": "Localization key for: I Do Not Consent"
+  },
+  "REDACTED_TOKEN": "[FR] No clients found. Add your first client! (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: No clients found. Add your first client!"
+  },
+  "REDACTED_TOKEN": "[FR] Settings dialog will be implemented here.",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Settings dialog will be implemented here."
+  },
+  "groupGroupid": "[FR] Group: $groupId",
+  "@groupGroupid": {
+    "description": "Localization key for: Group: $groupId"
+  },
+  "appointmentRequests": "[FR] Appointment Requests (French)",
+  "@appointmentRequests": {
+    "description": "Localization key for: Appointment Requests"
+  },
+  "forward": "[FR] Forward (French)",
+  "@forward": {
+    "description": "Localization key for: Forward"
+  },
+  "roomAddedSuccessfully": "[FR] Room added successfully! (French)",
+  "@roomAddedSuccessfully": {
+    "description": "Localization key for: Room added successfully!"
+  },
+  "option": "[FR] • $option (French)",
+  "@option": {
+    "description": "Localization key for: • $option"
+  },
+  "responseIndex1": "[FR] Response #{number} (French)",
+  "@responseIndex1": {
+    "description": "Localization key for: Response #{number}"
+  },
+  "crmDashboardWithAnalytics": "[FR] • CRM dashboard with analytics (French)",
+  "@crmDashboardWithAnalytics": {
+    "description": "Localization key for: • CRM dashboard with analytics"
+  },
+  "contentLibrary1": "[FR] Content Library (French)",
+  "@contentLibrary1": {
+    "description": "Localization key for: Content Library"
+  },
+  "reply": "[FR] Reply (French)",
+  "@reply": {
+    "description": "Localization key for: Reply"
+  },
+  "subscriptionManagement": "[FR] Subscription Management (French)",
+  "@subscriptionManagement": {
+    "description": "Localization key for: Subscription Management"
+  },
+  "REDACTED_TOKEN": "[FR] Monetization settings will be implemented here (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Monetization settings will be implemented here"
+  },
+  "failedToApplyPromoCodeE": "[FR] Failed to apply promo code: $e (French)",
+  "@failedToApplyPromoCodeE": {
+    "description": "Localization key for: Failed to apply promo code: $e"
+  },
+  "editProvider": "[FR] Edit Provider",
+  "@editProvider": {
+    "description": "Localization key for: Edit Provider"
+  },
+  "localizationContribution": "[FR] Localization Contribution (French)",
+  "@localizationContribution": {
+    "description": "Localization key for: Localization Contribution"
+  },
+  "parentalConsent": "[FR] Parental Consent (French)",
+  "@parentalConsent": {
+    "description": "Localization key for: Parental Consent"
+  },
+  "businessSignupScreenComingSoon": "[FR] Business Signup Screen - Coming Soon (French)",
+  "@businessSignupScreenComingSoon": {
+    "description": "Localization key for: Business Signup Screen - Coming Soon"
+  },
+  "REDACTED_TOKEN": "[FR] Are you sure you want to delete this appointment? (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Are you sure you want to delete this appointment?"
+  },
+  "syncAppointment": "[FR] Sync Appointment (French)",
+  "@syncAppointment": {
+    "description": "Localization key for: Sync Appointment"
+  },
+  "iConsent": "[FR] I Consent (French)",
+  "@iConsent": {
+    "description": "Localization key for: I Consent"
+  },
+  "sessionRejected": "Session rejetée",
+  "@sessionRejected": {
+    "description": "Localization key for: Session rejected"
+  },
+  "businessSetupScreenComingSoon": "[FR] Business Setup Screen - Coming Soon (French)",
+  "@businessSetupScreenComingSoon": {
+    "description": "Localization key for: Business Setup Screen - Coming Soon"
+  },
+  "edit1": "[FR] Edit (French)",
+  "@edit1": {
+    "description": "Localization key for: Edit"
+  },
+  "noEventsScheduledThisMonth": "[FR] No events scheduled this month (French)",
+  "@noEventsScheduledThisMonth": {
+    "description": "Localization key for: No events scheduled this month"
+  },
+  "businessDashboard": "[FR] Business Dashboard (French)",
+  "@businessDashboard": {
+    "description": "Localization key for: Business Dashboard"
+  },
+  "noMessagesFound": "[FR] No messages found. (French)",
+  "@noMessagesFound": {
+    "description": "Localization key for: No messages found."
+  },
+  "staffStaffidNotSelected": "[FR] Staff: {staff}",
+  "@staffStaffidNotSelected": {
+    "description": "Localization key for: Staff: {staff}"
+  },
+  "manageStaffAvailability": "[FR] Manage Staff Availability (French)",
+  "@manageStaffAvailability": {
+    "description": "Localization key for: Manage Staff Availability"
+  },
+  "noMissingTranslations": "[FR] No missing translations (French)",
+  "@noMissingTranslations": {
+    "description": "Localization key for: No missing translations"
+  },
+  "skip": "[FR] Skip (French)",
+  "@skip": {
+    "description": "Localization key for: Skip"
+  },
+  "meetingIdMeetingid": "ID de réunion: {meetingId}",
+  "@meetingIdMeetingid": {
+    "description": "Localization key for: Meeting ID: $meetingId"
+  },
+  "noUsers": "[FR] Aucun utilisateur",
+  "@noUsers": {
+    "description": "noUsers description"
+  },
+  "errorLoadingReferralCode": "[FR] Error loading referral code (French)",
+  "@errorLoadingReferralCode": {
+    "description": "Localization key for: Error loading referral code"
+  },
+  "allCountries": "[FR] All Countries (French)",
+  "@allCountries": {
+    "description": "Localization key for: All Countries"
+  },
+  "deleteGame": "[FR] Delete Game (French)",
+  "@deleteGame": {
+    "description": "Localization key for: Delete Game"
+  },
+  "staffManagementTools": "[FR] • Staff management tools (French)",
+  "@staffManagementTools": {
+    "description": "Localization key for: • Staff management tools"
+  },
+  "deleteMessage": "[FR] Delete Message (French)",
+  "@deleteMessage": {
+    "description": "Localization key for: Delete Message"
+  },
+  "REDACTED_TOKEN": "Recevoir les notifications de réservation par SMS",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Receive booking notifications via SMS"
+  },
+  "changeRole": "[FR] Changer de rôle",
+  "@changeRole": {
+    "description": "changeRole description"
+  },
+  "REDACTED_TOKEN": "[FR] Error loading bookings: {error} (French)",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Error loading bookings: {error}"
+  },
+  "openingCustomerPortal": "[FR] Opening customer portal... (French)",
+  "@openingCustomerPortal": {
+    "description": "Localization key for: Opening customer portal..."
+  },
+  "signOut": "[FR] Sign Out (French)",
+  "@signOut": {
+    "description": "Localization key for: Sign Out"
+  },
+  "nameProfilename": "[FR] Name: {name} (French)",
+  "@nameProfilename": {
+    "description": "Localization key for: Name: {name}"
+  },
+  "REDACTED_TOKEN": "Écran d'entrée profil entreprise - Bientôt disponible",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Profile Entry Screen - Coming Soon"
+  },
+  "upgradeToBusiness": "[FR] Passer aux affaires",
+  "@upgradeToBusiness": {
+    "description": "Localization key for: Upgrade to Business"
+  },
+  "apply": "Appliquer",
+  "@apply": {
+    "description": "Localization key for: Apply"
+  },
+  "errorLoadingSubscriptionError": "Erreur de chargement de l'abonnement: {error}",
+  "@errorLoadingSubscriptionError": {
+    "description": "Localization key for: Error loading subscription: $error"
+  },
+  "errorLoadingUsers": "Erreur de chargement des utilisateurs",
+  "@errorLoadingUsers": {
+    "description": "errorLoadingUsers description"
+  },
+  "verify": "Vérifier",
+  "@verify": {
+    "description": "Localization key for: Verify"
+  },
+  "subscription": "Abonnement",
+  "@subscription": {
+    "description": "Localization key for: Subscription"
+  },
+  "deleteMyAccount": "Supprimer mon compte",
+  "@deleteMyAccount": {
+    "description": "Localization key for: Delete My Account"
+  },
+  "REDACTED_TOKEN": "Écran d'entrée rendez-vous entreprise - Bientôt disponible",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: Business Appointments Entry Screen - Coming Soon"
+  },
+  "viewResponses": "[FR] Voir les réponses",
+  "@viewResponses": {
+    "description": "Localization key for: View Responses"
+  },
+  "businessWelcomeScreenComingSoon": "Écran de bienvenue entreprise - Bientôt disponible",
+  "@businessWelcomeScreenComingSoon": {
+    "description": "Localization key for: Business Welcome Screen - Coming Soon"
+  },
+  "failedToOpenCustomerPortalE": "Échec d'ouverture du portail client: {e}",
+  "@failedToOpenCustomerPortalE": {
+    "description": "Localization key for: Failed to open customer portal: $e"
+  },
+  "continueText": "Continuer",
+  "@continueText": {
+    "description": "Localization key for: Continue"
+  },
+  "close1": "Fermer",
+  "@close1": {
+    "description": "Localization key for: Close"
+  },
+  "confirm1": "Confirmer",
+  "@confirm1": {
+    "description": "Localization key for: Confirm"
+  },
+  "externalMeetings": "Réunions externes",
+  "@externalMeetings": {
+    "description": "Localization key for: External Meetings"
+  },
+  "approve": "Approuver",
+  "@approve": {
+    "description": "Localization key for: Approve"
+  },
+  "REDACTED_TOKEN": "Aucune facture trouvée. Créez votre première facture!",
+  "@REDACTED_TOKEN": {
+    "description": "Localization key for: No invoices found. Create your first invoice!"
+  },
+  "subscribe": "S'abonner",
+  "@subscribe": {
+    "description": "Localization key for: Subscribe"
+  },
+  "login1": "Se connecter",
+  "@login1": {
+    "description": "Localization key for: Login"
+  },
+  "adminOverviewGoesHere": "Aperçu administrateur va ici",
+  "@adminOverviewGoesHere": {
+    "description": "Localization key for: Admin overview goes here"
+  },
+  "loadingCheckout": "Chargement du checkout...",
+  "@loadingCheckout": {
+    "description": "Localization key for: Loading checkout..."
+  },
+  "ad_pre_title": "Regardez une publicité pour confirmer votre rendez-vous",
+  "@ad_pre_title": {
+    "description": "Title shown before ad for free users"
+  },
+  "ad_pre_description": "En tant qu'utilisateur gratuit, vous devez regarder une courte publicité avant de confirmer. Vous pouvez supprimer toutes les publicités définitivement en vous abonnant.",
+  "@ad_pre_description": {
+    "description": "Description shown before ad for free users"
+  },
+  "watch_ad_button": "Regarder la Publicité",
+  "@watch_ad_button": {
+    "description": "Button to watch ad"
+  },
+  "upgrade_button": "Passer à Premium (€4)",
+  "@upgrade_button": {
+    "description": "Button to upgrade to premium"
+  },
+  "ad_post_title": "Publicité terminée ! Vous pouvez maintenant confirmer votre rendez-vous.",
+  "@ad_post_title": {
+    "description": "Title shown after ad is finished"
+  },
+  "confirm_appointment_button": "Confirmer le Rendez-vous",
+  "@confirm_appointment_button": {
+    "description": "Button to confirm appointment after ad"
+  },
+  "upgrade_prompt_title": "Mise à niveau unique",
+  "@upgrade_prompt_title": {
+    "description": "Title for upgrade prompt"
+  },
+  "upgrade_prompt_description": "Payez €4 pour supprimer toutes les publicités pour toujours",
+  "@upgrade_prompt_description": {
+    "description": "Description for upgrade prompt"
+  },
+  "purchase_now_button": "Acheter Maintenant",
+  "@purchase_now_button": {
+    "description": "Button to purchase upgrade"
+  },
+  "ambassadorPromotionTitle": "[FR] Congratulations! You're now an Ambassador! (French)",
+  "@ambassadorPromotionTitle": {
+    "description": "Title for ambassador promotion notification"
+  },
+  "ambassadorPromotionBody": "[FR] Welcome to the {tier} tier! Start sharing your referral link to earn rewards. (French)",
+  "@ambassadorPromotionBody": {
+    "description": "Body text for ambassador promotion notification",
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "tierUpgradeTitle": "[FR] Tier Upgrade! 🎉 (French)",
+  "@tierUpgradeTitle": {
+    "description": "Title for tier upgrade notification"
+  },
+  "tierUpgradeBody": "[FR] Amazing! You've been upgraded from {previousTier} to {newTier} with {totalReferrals} referrals! (French)",
+  "@tierUpgradeBody": {
+    "description": "Body text for tier upgrade notification",
+    "placeholders": {
+      "previousTier": {
+        "type": "String"
+      },
+      "newTier": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  },
+  "monthlyReminderTitle": "[FR] Monthly Goal Reminder (French)",
+  "@monthlyReminderTitle": {
+    "description": "Title for monthly performance reminder notification"
+  },
+  "monthlyReminderBody": "[FR] You have {currentReferrals}/{targetReferrals} referrals this month. {daysRemaining} days left to reach your goal! (French)",
+  "@monthlyReminderBody": {
+    "description": "Body text for monthly reminder notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "targetReferrals": {
+        "type": "String"
+      },
+      "daysRemaining": {
+        "type": "String"
+      }
+    }
+  },
+  "performanceWarningTitle": "[FR] Ambassador Performance Alert (French)",
+  "@performanceWarningTitle": {
+    "description": "Title for performance warning notification"
+  },
+  "performanceWarningBody": "[FR] Your monthly referrals ({currentReferrals}) are below the minimum requirement ({minimumRequired}). Your ambassador status may be affected. (French)",
+  "@performanceWarningBody": {
+    "description": "Body text for performance warning notification",
+    "placeholders": {
+      "currentReferrals": {
+        "type": "String"
+      },
+      "minimumRequired": {
+        "type": "String"
+      }
+    }
+  },
+  "ambassadorDemotionTitle": "[FR] Ambassador Status Update (French)",
+  "@ambassadorDemotionTitle": {
+    "description": "Title for ambassador demotion notification"
+  },
+  "ambassadorDemotionBody": "[FR] Your ambassador status has been temporarily suspended due to: {reason}. You can regain your status by meeting the requirements again. (French)",
+  "@ambassadorDemotionBody": {
+    "description": "Body text for ambassador demotion notification",
+    "placeholders": {
+      "reason": {
+        "type": "String"
+      }
+    }
+  },
+  "referralSuccessTitle": "[FR] New Referral! 🎉 (French)",
+  "@referralSuccessTitle": {
+    "description": "Title for successful referral notification"
+  },
+  "referralSuccessBody": "[FR] {referredUserName} joined through your referral! You now have {totalReferrals} total referrals. (French)",
+  "@referralSuccessBody": {
+    "description": "Body text for successful referral notification",
+    "placeholders": {
+      "referredUserName": {
+        "type": "String"
+      },
+      "totalReferrals": {
+        "type": "String"
+      }
+    }
+  }
 }
