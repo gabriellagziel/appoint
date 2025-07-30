@@ -23,6 +23,8 @@ _$AppUserImpl _$$AppUserImplFromJson(Map<String, dynamic> json) =>
           ? null
           : DateTime.parse(json['last_login_at'] as String),
       customClaims: json['custom_claims'] as Map<String, dynamic>?,
+      firebaseUser: const UserConverter()
+          .fromJson(json['firebase_user'] as Map<String, dynamic>?),
     );
 
 Map<String, dynamic> _$$AppUserImplToJson(_$AppUserImpl instance) {
@@ -46,5 +48,7 @@ Map<String, dynamic> _$$AppUserImplToJson(_$AppUserImpl instance) {
   writeNotNull('created_at', instance.createdAt?.toIso8601String());
   writeNotNull('last_login_at', instance.lastLoginAt?.toIso8601String());
   writeNotNull('custom_claims', instance.customClaims);
+  writeNotNull(
+      'firebase_user', const UserConverter().toJson(instance.firebaseUser));
   return val;
 }

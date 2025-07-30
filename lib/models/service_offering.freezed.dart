@@ -279,8 +279,7 @@ class __$$ServiceOfferingImplCopyWithImpl<$Res>
 }
 
 /// @nodoc
-
-@JsonSerializable(explicitToJson: true)
+@JsonSerializable()
 class _$ServiceOfferingImpl implements _ServiceOffering {
   const _$ServiceOfferingImpl(
       {required this.id,

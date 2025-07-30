@@ -68,23 +68,29 @@ void main() {
     });
 
     group('Initialization', () {
-      test('should initialize Hive boxes and connectivity monitoring',
-          () async {
-        when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
-        when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+      test(
+        'should initialize Hive boxes and connectivity monitoring',
+        () async {
+          when(
+            mockConnectivity.checkConnectivity(),
+          ).thenAnswer((_) async => ConnectivityResult.wifi);
+          when(
+            mockConnectivity.onConnectivityChanged,
+          ).thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
 
-        await repository.initialize();
+          await repository.initialize();
 
-        expect(repository.isOnline, isTrue);
-      });
+          expect(repository.isOnline, isTrue);
+        },
+      );
 
       test('should detect offline state', () async {
-        when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.none);
-        when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.none));
+        when(
+          mockConnectivity.checkConnectivity(),
+        ).thenAnswer((_) async => ConnectivityResult.none);
+        when(
+          mockConnectivity.onConnectivityChanged,
+        ).thenAnswer((_) => Stream.value(ConnectivityResult.none));
 
         await repository.initialize();
 
@@ -94,10 +100,12 @@ void main() {
 
     group('Adding bookings offline', () {
       test('should store booking locally when offline', () async {
-        when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.none);
-        when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.none));
+        when(
+          mockConnectivity.checkConnectivity(),
+        ).thenAnswer((_) async => ConnectivityResult.none);
+        when(
+          mockConnectivity.onConnectivityChanged,
+        ).thenAnswer((_) => Stream.value(ConnectivityResult.none));
 
         await repository.initialize();
 
@@ -114,7 +122,7 @@ void main() {
 
         await repository.addBooking(booking);
 
-        bookings = await repository.getBookings();
+        final bookings = await repository.getBookings();
         expect(bookings.length, equals(1));
         expect(bookings.first.id, equals('test-booking-1'));
         expect(
@@ -124,10 +132,12 @@ void main() {
       });
 
       test('should sync booking immediately when online', () async {
-        when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
-        when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+        when(
+          mockConnectivity.checkConnectivity(),
+        ).thenAnswer((_) async => ConnectivityResult.wifi);
+        when(
+          mockConnectivity.onConnectivityChanged,
+        ).thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.uid).thenReturn('user-1');
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
@@ -158,10 +168,12 @@ void main() {
 
     group('Canceling bookings offline', () {
       test('should mark booking for deletion when offline', () async {
-        when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.none);
-        when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.none));
+        when(
+          mockConnectivity.checkConnectivity(),
+        ).thenAnswer((_) async => ConnectivityResult.none);
+        when(
+          mockConnectivity.onConnectivityChanged,
+        ).thenAnswer((_) => Stream.value(ConnectivityResult.none));
 
         await repository.initialize();
 
@@ -191,10 +203,12 @@ void main() {
       });
 
       test('should delete booking immediately when online', () async {
-        when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
-        when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+        when(
+          mockConnectivity.checkConnectivity(),
+        ).thenAnswer((_) async => ConnectivityResult.wifi);
+        when(
+          mockConnectivity.onConnectivityChanged,
+        ).thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.uid).thenReturn('user-1');
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
@@ -224,130 +238,143 @@ void main() {
     });
 
     group('Conflict resolution', () {
-      test('should throw BookingConflictException when server cancels booking',
-          () async {
-        when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
-        when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
-        when(mockAuth.currentUser).thenReturn(mockUser);
-        when(mockUser.uid).thenReturn('user-1');
-        when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
-        when(mockCollection.where('userId', isEqualTo: 'user-1'))
-            .thenReturn(mockCollection);
-        when(mockCollection.orderBy('dateTime')).thenReturn(mockCollection);
-        when(mockCollection.get()).thenAnswer((_) async => mockQuerySnapshot);
-        when(mockCollection.doc('test-booking-1')).thenReturn(mockDocument);
+      test(
+        'should throw BookingConflictException when server cancels booking',
+        () async {
+          when(
+            mockConnectivity.checkConnectivity(),
+          ).thenAnswer((_) async => ConnectivityResult.wifi);
+          when(
+            mockConnectivity.onConnectivityChanged,
+          ).thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+          when(mockAuth.currentUser).thenReturn(mockUser);
+          when(mockUser.uid).thenReturn('user-1');
+          when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
+          when(
+            mockCollection.where('userId', isEqualTo: 'user-1'),
+          ).thenReturn(mockCollection);
+          when(mockCollection.orderBy('dateTime')).thenReturn(mockCollection);
+          when(mockCollection.get()).thenAnswer((_) async => mockQuerySnapshot);
+          when(mockCollection.doc('test-booking-1')).thenReturn(mockDocument);
 
-        // Create mock document snapshot with cancelled booking
-        final mockDocSnapshot =
-            MockQueryDocumentSnapshot<Map<String, dynamic>>();
-        when(mockQuerySnapshot.docs).thenReturn([mockDocSnapshot]);
-        when(mockDocSnapshot.id).thenReturn('test-booking-1');
-        when(mockDocSnapshot.data()).thenReturn({
-          'id': 'test-booking-1',
-          'user_id': 'user-1',
-          'staff_id': 'staff-1',
-          'service_id': 'service-1',
-          'service_name': 'Test Service',
-          'dateTime':
-              Timestamp.fromDate(DateTime.now()).toDate().toIso8601String(),
-          'duration': 60 * 60 * 1000000, // 60 minutes in microseconds
-          'is_confirmed': false,
-          'created_at': Timestamp.fromDate(
-                  DateTime.now().subtract(const Duration(hours: 1)))
-              .toDate()
-              .toIso8601String(),
-        });
+          // Create mock document snapshot with cancelled booking
+          final mockDocSnapshot =
+              MockQueryDocumentSnapshot<Map<String, dynamic>>();
+          when(mockQuerySnapshot.docs).thenReturn([mockDocSnapshot]);
+          when(mockDocSnapshot.id).thenReturn('test-booking-1');
+          when(mockDocSnapshot.data()).thenReturn({
+            'id': 'test-booking-1',
+            'user_id': 'user-1',
+            'staff_id': 'staff-1',
+            'service_id': 'service-1',
+            'service_name': 'Test Service',
+            'dateTime': Timestamp.fromDate(
+              DateTime.now(),
+            ).toDate().toIso8601String(),
+            'duration': 60 * 60 * 1000000, // 60 minutes in microseconds
+            'is_confirmed': false,
+            'created_at': Timestamp.fromDate(
+              DateTime.now().subtract(const Duration(hours: 1)),
+            ).toDate().toIso8601String(),
+          });
 
-        await repository.initialize();
+          await repository.initialize();
 
-        // Add local booking
-        final localBooking = Booking(
-          id: 'test-booking-1',
-          userId: 'user-1',
-          staffId: 'staff-1',
-          serviceId: 'service-1',
-          serviceName: 'Test Service (Local)',
-          dateTime: DateTime.now(),
-          duration: const Duration(minutes: 60),
-          createdAt: DateTime.now().subtract(const Duration(hours: 2)),
-        );
-        await repository.addBooking(localBooking);
+          // Add local booking
+          final localBooking = Booking(
+            id: 'test-booking-1',
+            userId: 'user-1',
+            staffId: 'staff-1',
+            serviceId: 'service-1',
+            serviceName: 'Test Service (Local)',
+            dateTime: DateTime.now(),
+            duration: const Duration(minutes: 60),
+            createdAt: DateTime.now().subtract(const Duration(hours: 2)),
+          );
+          await repository.addBooking(localBooking);
 
-        // Get bookings should return local version (repository keeps local)
-        bookings = await repository.getBookings();
-        expect(bookings.length, equals(1));
-        expect(bookings.first.serviceName, equals('Test Service (Local)'));
-      });
+          // Get bookings should return local version (repository keeps local)
+          bookings = await repository.getBookings();
+          expect(bookings.length, equals(1));
+          expect(bookings.first.serviceName, equals('Test Service (Local)'));
+        },
+      );
 
-      test('should throw BookingConflictException for double-booking conflicts',
-          () async {
-        when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
-        when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
-        when(mockAuth.currentUser).thenReturn(mockUser);
-        when(mockUser.uid).thenReturn('user-1');
-        when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
-        when(mockCollection.where('userId', isEqualTo: 'user-1'))
-            .thenReturn(mockCollection);
-        when(mockCollection.orderBy('dateTime')).thenReturn(mockCollection);
-        when(mockCollection.get()).thenAnswer((_) async => mockQuerySnapshot);
-        when(mockCollection.doc('test-booking-1')).thenReturn(mockDocument);
+      test(
+        'should throw BookingConflictException for double-booking conflicts',
+        () async {
+          when(
+            mockConnectivity.checkConnectivity(),
+          ).thenAnswer((_) async => ConnectivityResult.wifi);
+          when(
+            mockConnectivity.onConnectivityChanged,
+          ).thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+          when(mockAuth.currentUser).thenReturn(mockUser);
+          when(mockUser.uid).thenReturn('user-1');
+          when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
+          when(
+            mockCollection.where('userId', isEqualTo: 'user-1'),
+          ).thenReturn(mockCollection);
+          when(mockCollection.orderBy('dateTime')).thenReturn(mockCollection);
+          when(mockCollection.get()).thenAnswer((_) async => mockQuerySnapshot);
+          when(mockCollection.doc('test-booking-1')).thenReturn(mockDocument);
 
-        // Create mock document snapshot with overlapping booking
-        final mockDocSnapshot =
-            MockQueryDocumentSnapshot<Map<String, dynamic>>();
-        when(mockQuerySnapshot.docs).thenReturn([mockDocSnapshot]);
-        when(mockDocSnapshot.id).thenReturn('test-booking-1');
-        when(mockDocSnapshot.data()).thenReturn({
-          'id': 'test-booking-1',
-          'user_id': 'user-1',
-          'staff_id': 'staff-1',
-          'service_id': 'service-1',
-          'service_name': 'Test Service',
-          'dateTime':
-              Timestamp.fromDate(DateTime.now()).toDate().toIso8601String(),
-          'duration': 60 * 60 * 1000000,
-          'is_confirmed': false,
-          'created_at': Timestamp.fromDate(
-                  DateTime.now().subtract(const Duration(hours: 1)))
-              .toDate()
-              .toIso8601String(),
-        });
+          // Create mock document snapshot with overlapping booking
+          final mockDocSnapshot =
+              MockQueryDocumentSnapshot<Map<String, dynamic>>();
+          when(mockQuerySnapshot.docs).thenReturn([mockDocSnapshot]);
+          when(mockDocSnapshot.id).thenReturn('test-booking-1');
+          when(mockDocSnapshot.data()).thenReturn({
+            'id': 'test-booking-1',
+            'user_id': 'user-1',
+            'staff_id': 'staff-1',
+            'service_id': 'service-1',
+            'service_name': 'Test Service',
+            'dateTime': Timestamp.fromDate(
+              DateTime.now(),
+            ).toDate().toIso8601String(),
+            'duration': 60 * 60 * 1000000,
+            'is_confirmed': false,
+            'created_at': Timestamp.fromDate(
+              DateTime.now().subtract(const Duration(hours: 1)),
+            ).toDate().toIso8601String(),
+          });
 
-        await repository.initialize();
+          await repository.initialize();
 
-        // Add local booking
-        final localBooking = Booking(
-          id: 'test-booking-1',
-          userId: 'user-1',
-          staffId: 'staff-1',
-          serviceId: 'service-1',
-          serviceName: 'Test Service (Local)',
-          dateTime: DateTime.now(),
-          duration: const Duration(minutes: 60),
-          createdAt: DateTime.now().subtract(const Duration(hours: 2)),
-        );
-        await repository.addBooking(localBooking);
+          // Add local booking
+          final localBooking = Booking(
+            id: 'test-booking-1',
+            userId: 'user-1',
+            staffId: 'staff-1',
+            serviceId: 'service-1',
+            serviceName: 'Test Service (Local)',
+            dateTime: DateTime.now(),
+            duration: const Duration(minutes: 60),
+            createdAt: DateTime.now().subtract(const Duration(hours: 2)),
+          );
+          await repository.addBooking(localBooking);
 
-        // Get bookings should return local version (repository keeps local)
-        bookings = await repository.getBookings();
-        expect(bookings.length, equals(1));
-        expect(bookings.first.serviceName, equals('Test Service (Local)'));
-      });
+          // Get bookings should return local version (repository keeps local)
+          bookings = await repository.getBookings();
+          expect(bookings.length, equals(1));
+          expect(bookings.first.serviceName, equals('Test Service (Local)'));
+        },
+      );
 
       test('should prefer remote version when remote is newer', () async {
-        when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
-        when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+        when(
+          mockConnectivity.checkConnectivity(),
+        ).thenAnswer((_) async => ConnectivityResult.wifi);
+        when(
+          mockConnectivity.onConnectivityChanged,
+        ).thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.uid).thenReturn('user-1');
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
-        when(mockCollection.where('userId', isEqualTo: 'user-1'))
-            .thenReturn(mockCollection);
+        when(
+          mockCollection.where('userId', isEqualTo: 'user-1'),
+        ).thenReturn(mockCollection);
         when(mockCollection.orderBy('dateTime')).thenReturn(mockCollection);
         when(mockCollection.get()).thenAnswer((_) async => mockQuerySnapshot);
         when(mockCollection.doc('test-booking-1')).thenReturn(mockDocument);
@@ -363,14 +390,14 @@ void main() {
           'staff_id': 'staff-1',
           'service_id': 'service-1',
           'service_name': 'Test Service',
-          'dateTime':
-              Timestamp.fromDate(DateTime.now()).toDate().toIso8601String(),
+          'dateTime': Timestamp.fromDate(
+            DateTime.now(),
+          ).toDate().toIso8601String(),
           'duration': 60 * 60 * 1000000,
           'is_confirmed': false,
           'created_at': Timestamp.fromDate(
-                  DateTime.now().subtract(const Duration(hours: 1)))
-              .toDate()
-              .toIso8601String(),
+            DateTime.now().subtract(const Duration(hours: 1)),
+          ).toDate().toIso8601String(),
         });
 
         await repository.initialize();
@@ -384,8 +411,9 @@ void main() {
           serviceName: 'Test Service (Local)',
           dateTime: DateTime.now(),
           duration: const Duration(minutes: 60),
-          createdAt: DateTime.now()
-              .subtract(const Duration(hours: 2)), // Local is older
+          createdAt: DateTime.now().subtract(
+            const Duration(hours: 2),
+          ), // Local is older
         );
         await repository.addBooking(localBooking);
 
@@ -396,15 +424,18 @@ void main() {
       });
 
       test('should prefer local version when local is newer', () async {
-        when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
-        when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+        when(
+          mockConnectivity.checkConnectivity(),
+        ).thenAnswer((_) async => ConnectivityResult.wifi);
+        when(
+          mockConnectivity.onConnectivityChanged,
+        ).thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.uid).thenReturn('user-1');
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
-        when(mockCollection.where('userId', isEqualTo: 'user-1'))
-            .thenReturn(mockCollection);
+        when(
+          mockCollection.where('userId', isEqualTo: 'user-1'),
+        ).thenReturn(mockCollection);
         when(mockCollection.orderBy('dateTime')).thenReturn(mockCollection);
         when(mockCollection.get()).thenAnswer((_) async => mockQuerySnapshot);
         when(mockCollection.doc('test-booking-1')).thenReturn(mockDocument);
@@ -420,14 +451,14 @@ void main() {
           'staff_id': 'staff-1',
           'service_id': 'service-1',
           'service_name': 'Test Service (Remote)',
-          'dateTime':
-              Timestamp.fromDate(DateTime.now()).toDate().toIso8601String(),
+          'dateTime': Timestamp.fromDate(
+            DateTime.now(),
+          ).toDate().toIso8601String(),
           'duration': 60 * 60 * 1000000,
           'is_confirmed': false,
           'created_at': Timestamp.fromDate(
-                  DateTime.now().subtract(const Duration(hours: 2)))
-              .toDate()
-              .toIso8601String(),
+            DateTime.now().subtract(const Duration(hours: 2)),
+          ).toDate().toIso8601String(),
         });
 
         await repository.initialize();
@@ -441,8 +472,9 @@ void main() {
           serviceName: 'Test Service (Local)',
           dateTime: DateTime.now(),
           duration: const Duration(minutes: 60),
-          createdAt: DateTime.now()
-              .subtract(const Duration(hours: 1)), // Local is newer
+          createdAt: DateTime.now().subtract(
+            const Duration(hours: 1),
+          ), // Local is newer
         );
         await repository.addBooking(localBooking);
 
@@ -455,10 +487,12 @@ void main() {
 
     group('Sync pending changes', () {
       test('should sync pending operations when online', () async {
-        when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
-        when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+        when(
+          mockConnectivity.checkConnectivity(),
+        ).thenAnswer((_) async => ConnectivityResult.wifi);
+        when(
+          mockConnectivity.onConnectivityChanged,
+        ).thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.uid).thenReturn('user-1');
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
@@ -491,10 +525,12 @@ void main() {
       });
 
       test('should handle sync errors gracefully', () async {
-        when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.wifi);
-        when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
+        when(
+          mockConnectivity.checkConnectivity(),
+        ).thenAnswer((_) async => ConnectivityResult.wifi);
+        when(
+          mockConnectivity.onConnectivityChanged,
+        ).thenAnswer((_) => Stream.value(ConnectivityResult.wifi));
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.uid).thenReturn('user-1');
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);
@@ -532,12 +568,14 @@ void main() {
 
     group('Connectivity changes', () {
       test('should automatically sync when coming back online', () async {
-        connectivityController = StreamController<ConnectivityResult>();
+        final connectivityController = StreamController<ConnectivityResult>();
 
-        when(mockConnectivity.checkConnectivity())
-            .thenAnswer((_) async => ConnectivityResult.none);
-        when(mockConnectivity.onConnectivityChanged)
-            .thenAnswer((_) => connectivityController.stream);
+        when(
+          mockConnectivity.checkConnectivity(),
+        ).thenAnswer((_) async => ConnectivityResult.none);
+        when(
+          mockConnectivity.onConnectivityChanged,
+        ).thenAnswer((_) => connectivityController.stream);
         when(mockAuth.currentUser).thenReturn(mockUser);
         when(mockUser.uid).thenReturn('user-1');
         when(mockFirestore.collection('bookings')).thenReturn(mockCollection);

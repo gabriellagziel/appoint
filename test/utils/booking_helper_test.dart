@@ -47,11 +47,12 @@ void main() {
         duration: const Duration(minutes: 30),
       );
 
-      when(() => svc.getBookingById('B123'))
-          .thenAnswer((_) async => mockBooking);
+      when(
+        () => svc.getBookingById('B123'),
+      ).thenAnswer((_) async => mockBooking);
       when(() => svc.cancelBooking('B123')).thenAnswer((_) async {});
 
-      res = await helper.cancelBooking(bookingId: 'B123');
+      final res = await helper.cancelBooking(bookingId: 'B123');
       expect(res.isSuccess, true);
     });
   });

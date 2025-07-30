@@ -28,6 +28,7 @@ class AuthWrapper extends ConsumerWidget {
         return Scaffold(
             body: Center(
                 child: Text(l10n?.clientScreenTBD ?? 'Client Screen TBD')));
+      // ignore: unreachable_switch_default
       default:
         return const Scaffold(body: Center(child: Text('Unknown role')));
     }

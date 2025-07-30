@@ -1,0 +1,13 @@
+   6 'window' is deprecated and shouldn't be used. Look up the current FlutterView from the context via View.of(context) or consult the PlatformDispatcher directly instead. Deprecated to prepare for the upcoming multi-window support. This feature was deprecated after v3.7.0-32.0.pre
+   3 The method doesn't override an inherited method
+   2 The left operand can't be null, so the right operand is never executed
+   1 This default clause is covered by the previous cases
+   1 This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorPhoneField.onChanged, InlineErrorPhoneField.onSubmitted
+   1 This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorPasswordField.validator, InlineErrorPasswordField.onChanged, InlineErrorPasswordField.onSubmitted
+   1 This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorFormField.validator, InlineErrorFormField.onChanged, InlineErrorFormField.onSubmitted
+   1 This class (or a class that this class inherits from) is marked as '@immutable', but one or more of its instance fields aren't final: InlineErrorEmailField.onChanged, InlineErrorEmailField.onSubmitted
+   1 The annotation 'JsonSerializable.new' can only be used on classes
+   1 The annotation 'JsonKey.new' can only be used on fields or getters
+   1 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion
+   1 'foregroundColor' is deprecated and shouldn't be used. use colors in eyeStyle and dataModuleStyle instead
+   1 'calendar' is deprecated and shouldn't be used. Use [calendarWriteOnly] and [calendarFullAccess]

@@ -2636,7 +2636,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String tierUpgradeBody(
-      String previousTier, String newTier, String totalReferrals) {
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[PT] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Portuguese)';
   }
 
@@ -2645,7 +2648,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String monthlyReminderBody(
-      String currentReferrals, String targetReferrals, String daysRemaining) {
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[PT] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Portuguese)';
   }
 
@@ -2655,7 +2661,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String performanceWarningBody(
-      String currentReferrals, String minimumRequired) {
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[PT] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Portuguese)';
   }
 
@@ -5486,7 +5494,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String tierUpgradeBody(
-      String previousTier, String newTier, String totalReferrals) {
+    String previousTier,
+    String newTier,
+    String totalReferrals,
+  ) {
     return '[PT_BR] Amazing! You\'ve been upgraded from $previousTier to $newTier with $totalReferrals referrals! (Portuguese (Brazil))';
   }
 
@@ -5496,7 +5507,10 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String monthlyReminderBody(
-      String currentReferrals, String targetReferrals, String daysRemaining) {
+    String currentReferrals,
+    String targetReferrals,
+    String daysRemaining,
+  ) {
     return '[PT_BR] You have $currentReferrals/$targetReferrals referrals this month. $daysRemaining days left to reach your goal! (Portuguese (Brazil))';
   }
 
@@ -5506,7 +5520,9 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String performanceWarningBody(
-      String currentReferrals, String minimumRequired) {
+    String currentReferrals,
+    String minimumRequired,
+  ) {
     return '[PT_BR] Your monthly referrals ($currentReferrals) are below the minimum requirement ($minimumRequired). Your ambassador status may be affected. (Portuguese (Brazil))';
   }
 

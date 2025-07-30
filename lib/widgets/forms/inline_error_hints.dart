@@ -32,9 +32,9 @@ class InlineErrorFormField extends StatefulWidget {
   final bool obscureText;
   final Widget? prefixIcon;
   final Widget? suffixIcon;
-  String? Function(String?)? validator;
-  void Function(String)? onChanged;
-  void Function(String)? onSubmitted;
+  final String? Function(String?)? validator;
+  final void Function(String)? onChanged;
+  final void Function(String)? onSubmitted;
   final bool enabled;
   final int? maxLines;
   final int? maxLength;
@@ -254,9 +254,9 @@ class InlineErrorPasswordField extends StatefulWidget {
   final String? hint;
   final String? errorText;
   final TextEditingController? controller;
-  String? Function(String?)? validator;
-  void Function(String)? onChanged;
-  void Function(String)? onSubmitted;
+  final String? Function(String?)? validator;
+  final void Function(String)? onChanged;
+  final void Function(String)? onSubmitted;
   final bool enabled;
   final bool showPasswordToggle;
   final bool autoValidate;
@@ -397,8 +397,8 @@ class InlineErrorEmailField extends StatefulWidget {
   final String? hint;
   final String? errorText;
   final TextEditingController? controller;
-  void Function(String)? onChanged;
-  void Function(String)? onSubmitted;
+  final void Function(String)? onChanged;
+  final void Function(String)? onSubmitted;
   final bool enabled;
   final bool autoValidate;
 
@@ -532,8 +532,8 @@ class InlineErrorPhoneField extends StatefulWidget {
   final String? hint;
   final String? errorText;
   final TextEditingController? controller;
-  void Function(String)? onChanged;
-  void Function(String)? onSubmitted;
+  final void Function(String)? onChanged;
+  final void Function(String)? onSubmitted;
   final bool enabled;
   final bool autoValidate;
 
