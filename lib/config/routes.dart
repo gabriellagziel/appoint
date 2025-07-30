@@ -241,6 +241,7 @@ class MeetingDetailsScreen extends StatelessWidget {
 
 final Map<String, WidgetBuilder> appRoutes = {
   // ... existing code ...
+  '/studio/library': (context) => const ContentLibraryScreen(),
   '/business/dashboard': (context) => const BusinessDashboardScreen(),
   // ... existing code ...
 };
