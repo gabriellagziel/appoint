@@ -1,7 +1,15 @@
-import 'package:googleapis/calendar/v3.dart';
+// Google configuration without googleapis dependency
+// Note: googleapis package was removed due to dependency conflicts
 
 class GoogleConfig {
-  static const clientId = 'appoint-prod.apps.googleusercontent.com';
-  static const redirectUri = 'com.app.oint:/oauth2redirect';
-  static const List<String> scopes = [CalendarApi.calendarScope];
+  // Placeholder for Google Calendar API configuration
+  static const List<String> scopes = [
+    'https://www.googleapis.com/auth/calendar',
+    'https://www.googleapis.com/auth/calendar.events',
+  ];
+  
+  // TODO: Implement Google Calendar integration when googleapis is compatible
+  static void initializeCalendarApi() {
+    // Implementation placeholder
+  }
 }

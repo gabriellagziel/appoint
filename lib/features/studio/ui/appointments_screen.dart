@@ -1,6 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 import 'package:appoint/models/studio_appointment.dart';
-import 'package:appoint/providers/studio_appointments_provider.dart';
+// import 'package:appoint/providers/studio_appointments_provider.dart'; // Unused
 import 'package:appoint/theme/app_spacing.dart';
 import 'package:appoint/widgets/app_scaffold.dart';
 import 'package:appoint/widgets/empty_state.dart';
