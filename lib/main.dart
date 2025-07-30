@@ -1,201 +1,155 @@
-import 'package:appoint/config/app_router.dart';
-import 'package:appoint/firebase_options.dart';
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:appoint/providers/theme_provider.dart';
-import 'package:appoint/services/notification_service.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_remote_config/firebase_remote_config.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'l10n/app_localizations.dart';
+import 'config/routes.dart';
+import 'config/theme.dart';
+import 'firebase_options.dart';
+import 'services/custom_deep_link_service.dart';
+import 'services/notification_service.dart';
 
-/// Main entry point for the AppOint application
-void main() async {
+Future<void> appMain() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: '.env');
 
-  try {
-    // Initialize Firebase
-    await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-    );
+  // Initialize Firebase
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
-    // Initialize Firebase Crashlytics
-    if (!kDebugMode) {
-      FlutterError.onError = (errorDetails) {
-        FirebaseCrashlytics.instance.recordFlutterFatalError(errorDetails);
-      };
+  // Initialize Firebase Analytics
+  await FirebaseAnalytics.instance.setAnalyticsCollectionEnabled(true);
 
-      PlatformDispatcher.instance.onError = (error, stack) {
-        FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
-        return true;
-      };
-    }
+  // Initialize Firebase Remote Config
+  final remoteConfig = FirebaseRemoteConfig.instance;
+  await remoteConfig.setDefaults(<String, dynamic>{
+    'welcome_message': 'Hello',
+    'feature_enabled': false,
+  });
+  await remoteConfig.fetchAndActivate();
 
-    // Initialize notification service
-    final notificationService = NotificationService();
-    await notificationService.initialize();
+  // Initialize custom deep link service (replaces Firebase Dynamic Links)
+  final deepLinkService = CustomDeepLinkService();
+  // Deep link initialization is disabled to avoid unsupported web URL errors
+  // during tests and web builds.
+  // await deepLinkService.initialize();
 
-    // Request notification permissions on startup (Android only for now)
-    await notificationService.requestPermissions();
+  // Initialize notifications
+  final notificationService = NotificationService();
+  await notificationService.initialize();
 
-    // Set system UI overlay style
-    SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent,
-        statusBarIconBrightness: Brightness.dark,
-        systemNavigationBarColor: Colors.white,
-        REDACTED_TOKEN: Brightness.dark,
-      ),
-    );
-
-    runApp(
-      const ProviderScope(
-        child: AppOintApp(),
-      ),
-    );
-  } catch (error, stackTrace) {
-    // Handle initialization errors gracefully
-    debugPrint('App initialization error: $error');
-    debugPrint('Stack trace: $stackTrace');
-
-    runApp(
-      ProviderScope(
-        child: MaterialApp(
-          home: ErrorApp(error: error.toString()),
-        ),
-      ),
-    );
-  }
+  runApp(
+    ProviderScope(
+      child: MyApp(deepLinkService: deepLinkService),
+    ),
+  );
 }
 
-/// Root application widget for AppOint
-class AppOintApp extends ConsumerWidget {
-  const AppOintApp({super.key});
+void main() {
+  appMain();
+}
+
+class MyApp extends StatefulWidget {
+  final CustomDeepLinkService deepLinkService;
+
+  const MyApp({Key? key, required this.deepLinkService}) : super(key: key);
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final router = ref.watch(appRouterProvider);
-    final themeMode = ref.watch(themeModeProvider);
-    // Obtain themedata instances based on the current palette selection
-    final lightTheme = ref.watch(lightThemeProvider);
-    final darkTheme = ref.watch(darkThemeProvider);
+  State<MyApp> createState() => _MyAppState();
+}
 
-    return MaterialApp.router(
+class _MyAppState extends State<MyApp> {
+  final GlobalKey<NavigatorState> _navigatorKey = GlobalKey<NavigatorState>();
+
+  @override
+  void initState() {
+    super.initState();
+    // Set the navigator key for deep link service
+    widget.deepLinkService.setNavigatorKey(_navigatorKey);
+  }
+
+  @override
+  void dispose() {
+    widget.deepLinkService.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       title: 'APP-OINT',
-      debugShowCheckedModeBanner: false,
-
-      // Theme configuration
-      theme: lightTheme,
-      darkTheme: darkTheme,
-      themeMode: themeMode,
-
-      // Localization configuration
-      localizationsDelegates: const [
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.system,
+      navigatorKey: _navigatorKey,
+      onGenerateRoute: AppRouter.onGenerateRoute,
+      navigatorObservers: [
+        FirebaseAnalyticsObserver(analytics: FirebaseAnalytics.instance),
+      ],
+      // Localization support
+      localizationsDelegates: [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      supportedLocales: AppLocalizations.supportedLocales,
-
-      // Router configuration
-      routerConfig: router,
-
-      // Builder for additional app-wide functionality
-      builder: (context, child) => MediaQuery(
-        data: MediaQuery.of(context).copyWith(
-          textScaler: MediaQuery.of(context).textScaler.clamp(
-                minScaleFactor: 0.8,
-                maxScaleFactor: 1.2,
-              ),
-        ),
-        child: child ?? const SizedBox.shrink(),
-      ),
+      supportedLocales: const [
+        Locale('am'), // Amharic
+        Locale('ar'), // Arabic
+        Locale('bg'), // Bulgarian
+        Locale('bn'), // Bengali
+        Locale('cs'), // Czech
+        Locale('da'), // Danish
+        Locale('de'), // German
+        Locale('el'), // Greek
+        Locale('en'), // English
+        Locale('es'), // Spanish
+        Locale('fa'), // Persian
+        Locale('fi'), // Finnish
+        Locale('fr'), // French
+        Locale('gu'), // Gujarati
+        Locale('ha'), // Hausa
+        Locale('he'), // Hebrew
+        Locale('hi'), // Hindi
+        Locale('hr'), // Croatian
+        Locale('hu'), // Hungarian
+        Locale('id'), // Indonesian
+        Locale('it'), // Italian
+        Locale('ja'), // Japanese
+        Locale('kn'), // Kannada
+        Locale('ko'), // Korean
+        Locale('lt'), // Lithuanian
+        Locale('lv'), // Latvian
+        Locale('mr'), // Marathi
+        Locale('ms'), // Malay
+        Locale('ne'), // Nepali
+        Locale('nl'), // Dutch
+        Locale('no'), // Norwegian
+        Locale('pl'), // Polish
+        Locale('pt'), // Portuguese
+        Locale('ro'), // Romanian
+        Locale('ru'), // Russian
+        Locale('si'), // Sinhala
+        Locale('sk'), // Slovak
+        Locale('sl'), // Slovenian
+        Locale('sr'), // Serbian
+        Locale('sv'), // Swedish
+        Locale('sw'), // Swahili
+        Locale('ta'), // Tamil
+        Locale('th'), // Thai
+        Locale('tl'), // Tagalog
+        Locale('tr'), // Turkish
+        Locale('uk'), // Ukrainian
+        Locale('ur'), // Urdu
+        Locale('vi'), // Vietnamese
+        Locale('zh'), // Chinese (Simplified)
+        Locale('zh', 'Hant'), // Chinese (Traditional)
+        Locale('zu'), // Zulu
+      ],
     );
   }
-}
-
-/// Error app shown when initialization fails
-class ErrorApp extends StatelessWidget {
-  const ErrorApp({
-    required this.error,
-    super.key,
-  });
-  final String error;
-
-  @override
-  Widget build(BuildContext context) => MaterialApp(
-        title: 'APP-OINT - Error',
-        home: Scaffold(
-          backgroundColor: Colors.red.shade50,
-          body: Center(
-            child: Padding(
-              padding: const EdgeInsets.all(24),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    Icons.error_outline,
-                    size: 64,
-                    color: Colors.red.shade600,
-                  ),
-                  const SizedBox(height: 24),
-                  Text(
-                    'Initialization Error',
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.red.shade800,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 16),
-                  Text(
-                    'APP-OINT failed to initialize properly. Please restart the app.',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.red.shade700,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
-                  const SizedBox(height: 32),
-                  ElevatedButton(
-                    onPressed: SystemNavigator.pop,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.red.shade600,
-                      foregroundColor: Colors.white,
-                    ),
-                    child: const Text('Close App'),
-                  ),
-                  if (kDebugMode) ...[
-                    const SizedBox(height: 24),
-                    ExpansionTile(
-                      title: const Text('Error Details'),
-                      children: [
-                        Container(
-                          width: double.infinity,
-                          padding: const EdgeInsets.all(16),
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade100,
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: Text(
-                            error,
-                            style: const TextStyle(
-                              fontFamily: 'monospace',
-                              fontSize: 12,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ],
-              ),
-            ),
-          ),
-        ),
-      );
 }
