@@ -65,12 +65,12 @@ dependencies:
   flutter_local_notifications: ^19.3.0
   timezone: ^0.10.1
   permission_handler: ^11.1.0
+  path: ^1.8.3
+  qr_flutter: ^4.1.0
+  firebase_dynamic_links: ^5.4.6
+  csv: ^5.1.1
+  path_provider: ^2.1.2
 
-  path: any
-  qr_flutter: any
-  firebase_dynamic_links: any
-  csv: any
-  path_provider: any
 dev_dependencies:
   integration_test:
     sdk: flutter
@@ -92,11 +92,9 @@ dev_dependencies:
   plugin_platform_interface: ^2.1.8
   mockito: ^5.0.17
   very_good_analysis: ^9.0.0
+  vm_service: ^11.10.0
+  yaml: ^3.1.2
 
-  flutter_driver: any
-  vm_service: any
-  path: any
-  yaml: any
 flutter:
   uses-material-design: true
   generate: true
