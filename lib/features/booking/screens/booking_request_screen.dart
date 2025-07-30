@@ -1,8 +1,7 @@
-import 'package:appoint/features/booking/booking_helper.dart';
-import 'package:appoint/features/selection/providers/selection_provider.dart';
-import 'package:appoint/utils/snackbar_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../booking_helper.dart';
+import '../../selection/providers/selection_provider.dart';
 
 class BookingRequestScreen extends ConsumerStatefulWidget {
   const BookingRequestScreen({super.key});
@@ -17,21 +16,11 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
 
   Future<void> _submitBooking() async {
     setState(() => _isSubmitting = true);
-
-    BookingHelper(ref).submitBooking().then((_) {
-      if (!mounted) return;
-      context.showSnackBar('Booking confirmed');
-      Navigator.pop(context);
-    }).catchError((e, final st) {
-      // Removed debug print: debugPrint('Error during booking: $e\n$st');
-      if (!mounted) return;
-      context.showSnackBar(
-        'Failed to confirm booking',
-        backgroundColor: Colors.red,
-      );
-    }).whenComplete(() {
+    try {
+      await BookingHelper.submitBooking(context, ref);
+    } finally {
       if (mounted) setState(() => _isSubmitting = false);
-    });
+    }
   }
 
   @override
@@ -44,13 +33,13 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text('Booking Request')),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Card(
               child: Padding(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -59,8 +48,7 @@ class _BookingRequestScreenState extends ConsumerState<BookingRequestScreen> {
                     Text('Service: ${serviceId ?? "Not selected"}'),
                     const SizedBox(height: 8),
                     Text(
-                      'Date & Time: ${dateTime?.toLocal() ?? "Not selected"}',
-                    ),
+                        'Date & Time: ${dateTime?.toLocal() ?? "Not selected"}'),
                     const SizedBox(height: 8),
                     Text('Duration: ${duration?.inMinutes ?? 0} minutes'),
                   ],

@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 
-extension SnackBarExtensions on BuildContext {
-  void showSnackBar(String message, {final Color? backgroundColor}) {
+extension BuildContextSnackBar on BuildContext {
+  void showSnackBar(String message) {
     ScaffoldMessenger.of(this).showSnackBar(
-      SnackBar(
-        content: Text(message),
-        backgroundColor: backgroundColor,
-      ),
+      SnackBar(content: Text(message)),
     );
   }
 }
