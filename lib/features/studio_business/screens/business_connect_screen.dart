@@ -91,7 +91,6 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
         ),
       ),
     );
-  }
 
   Future<void> _connectBusiness() async {
     if (!_formKey.currentState!.validate()) {
@@ -132,7 +131,7 @@ class _BusinessConnectScreenState extends ConsumerState<BusinessConnectScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
-      }
+    } finally {
       if (mounted) {
         setState(() => _isConnecting = false);
       }

@@ -15,7 +15,7 @@ class CareProvidersNotifier
   Future<void> load() async {
     try {
       final data = await _service.fetchProviders();
-      state = AsyncValue.data(data);
+      final state = AsyncValue.data(data);
     } catch (e, stackTrace) {
       state = AsyncValue.error(e, stackTrace);
     }

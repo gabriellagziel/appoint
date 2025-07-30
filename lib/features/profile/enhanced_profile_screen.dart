@@ -1,4 +1,4 @@
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -512,7 +512,7 @@ class EnhancedProfileScreen extends ConsumerWidget {
     switch (key) {
       case 'notifications':
         newPreferences = UserPreferences(
-          notifications: value,
+          notifications: value as bool,
           locationSharing: preferences.locationSharing,
           language: preferences.language,
           theme: preferences.theme,
@@ -521,7 +521,7 @@ class EnhancedProfileScreen extends ConsumerWidget {
       case 'locationSharing':
         newPreferences = UserPreferences(
           notifications: preferences.notifications,
-          locationSharing: value,
+          locationSharing: value as bool,
           language: preferences.language,
           theme: preferences.theme,
         );

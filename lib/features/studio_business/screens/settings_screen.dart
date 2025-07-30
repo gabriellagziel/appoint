@@ -75,7 +75,6 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         );
       }
     }
-  }
 
   @override
   Widget build(BuildContext context) => Scaffold(
@@ -194,4 +193,3 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         ],
       ),
     );
-}

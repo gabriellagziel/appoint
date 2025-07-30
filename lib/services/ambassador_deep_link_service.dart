@@ -3,9 +3,30 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
+// Note: firebase_dynamic_links package not added to pubspec.yaml yet
+// import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:appoint/models/ambassador_profile.dart';
+
+// Temporary stub classes until firebase_dynamic_links is added
+class FirebaseDynamicLinks {
+  static FirebaseDynamicLinks instance = FirebaseDynamicLinks();
+  Future<PendingDynamicLinkData?> getInitialLink() async => null;
+  Stream<PendingDynamicLinkData> get onLink => Stream.empty();
+  Future<ShortDynamicLink> buildShortLink(dynamic params) async => ShortDynamicLink('');
+}
+
+class PendingDynamicLinkData {
+  final Uri link;
+  PendingDynamicLinkData(this.link);
+}
+
+class ShortDynamicLink {
+  final String shortUrl;
+  ShortDynamicLink(this.shortUrl);
+}
+
+enum ShortDynamicLinkPathLength { short }
 
 /// Service for handling Ambassador deep links and mobile sharing
 class AmbassadorDeepLinkService {

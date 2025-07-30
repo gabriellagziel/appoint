@@ -154,8 +154,8 @@ class REDACTED_TOKEN
       );
 
   Widget _buildSubscriptionWidget() {
-    final status = _subscriptionDetails?['status'] ?? 'inactive';
-    final subscriptionId = _subscriptionDetails?['subscriptionId'];
+    final status = _subscriptionDetails?['status'] as String? ?? 'inactive';
+    final subscriptionId = _subscriptionDetails?['subscriptionId'] as String?;
     final lastPaymentDate = _subscriptionDetails?['lastPaymentDate'];
 
     return Padding(
@@ -208,7 +208,7 @@ class REDACTED_TOKEN
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      subscriptionId,
+                      subscriptionId ?? 'No ID',
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                             fontFamily: 'monospace',
                           ),

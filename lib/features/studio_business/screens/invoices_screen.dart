@@ -281,4 +281,3 @@ class _InvoicesScreenState extends ConsumerState<InvoicesScreen> {
       // Removed debug print: debugPrint('Error deleting invoice: $e');
     }
   }
-}
