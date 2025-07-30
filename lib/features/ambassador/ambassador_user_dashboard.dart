@@ -1093,7 +1093,8 @@ class _AmbassadorUserDashboardState
   Future<void> _shareViaEmail(String link) async {
     await SharePlus.instance.share(
       ShareParams(
-        text: "Hi there!\n\nI'd love to invite you to try APP-OINT. Join using my referral link: $link\n\nThanks!",
+        text:
+            "Hi there!\n\nI'd love to invite you to try APP-OINT. Join using my referral link: $link\n\nThanks!",
         subject: 'Invitation to join APP-OINT',
       ),
     );
