@@ -1,49 +1,26 @@
-import 'dart:io';
-import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:flutter/material.dart';
 
-class AttachmentPicker extends StatefulWidget {
-  final Function(File) onFileSelected;
-  
+class AttachmentPicker extends StatelessWidget {
   const AttachmentPicker({
     required this.onFileSelected,
     super.key,
   });
 
-  @override
-  State<AttachmentPicker> createState() => _AttachmentPickerState();
-}
+  final Function(PlatformFile) onFileSelected;
 
-class _AttachmentPickerState extends State<AttachmentPicker> {
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        IconButton(
-          icon: const Icon(Icons.attach_file),
-          onPressed: _pickFile,
-        ),
-        IconButton(
-          icon: const Icon(Icons.camera_alt),
-          onPressed: _pickImage,
-        ),
-      ],
+    return IconButton(
+      icon: const Icon(Icons.attach_file),
+      onPressed: _pickFile,
     );
   }
 
   Future<void> _pickFile() async {
     final result = await FilePicker.platform.pickFiles();
-    if (result != null && result.files.single.path != null) {
-      widget.onFileSelected(File(result.files.single.path!));
-    }
-  }
-
-  Future<void> _pickImage() async {
-    final result = await FilePicker.platform.pickFiles(
-      type: FileType.image,
-    );
-    if (result != null && result.files.single.path != null) {
-      widget.onFileSelected(File(result.files.single.path!));
+    if (result != null && result.files.isNotEmpty) {
+      onFileSelected(result.files.first);
     }
   }
 }

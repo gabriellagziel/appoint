@@ -24,7 +24,7 @@ class SettingsScreen extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             child: Column(
               children: [
-            const AppLogo(size: 64, showText: false),
+                const AppLogo(size: 64, showText: false),
                 const SizedBox(height: 8),
                 Text(
                   'APP-OINT',

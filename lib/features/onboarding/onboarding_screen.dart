@@ -120,7 +120,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       AnalyticsService().trackOnboardingComplete();
       
       if (mounted) {
-        context.go('/dashboard');
+        context.go('/onboarding/permissions');
       }
     } catch (e) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -318,9 +318,9 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                     ),
                   )
                 : Text(
-                    _currentPage == _pages.length - 1
-                        ? l10n.getStarted
-                        : l10n.next,
+                    _currentPage == _pages.length - 1 
+                      ? l10n.getStarted 
+                      : l10n.next,
                     style: const TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
