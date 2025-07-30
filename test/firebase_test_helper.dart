@@ -113,7 +113,7 @@ class FirebaseTestHelper {
     when(() => mockCollection.doc(any())).thenReturn(mockDocument);
     when(() => mockCollection.add(any())).thenAnswer((_) async => mockDocument);
     when(() => mockCollection.snapshots())
-        .thenAnswer((_) => Stream.value(mockQuerySnapshot));
+        .thenAnswer((_) => Stream.value(mockQuerySnapshot as QuerySnapshot<Map<String, dynamic>>));
 
     // Setup document mock
     when(() => mockDocument.set(any())).thenAnswer((_) async {});
@@ -134,7 +134,7 @@ class FirebaseTestHelper {
 
     // Setup query snapshot mock with proper type casting
     when(() => mockQuerySnapshot.docs)
-        .thenReturn([mockDocumentSnapshot as QueryDocumentSnapshot<Map<String, dynamic>>]);
+        .thenReturn([mockDocumentSnapshot as QueryDocumentSnapshot<Object?>]);
     when(() => mockQuerySnapshot.size).thenReturn(1);
   }
 }
@@ -143,11 +143,9 @@ class FirebaseTestHelper {
 class MockCollectionReference extends Mock
     implements CollectionReference<Map<String, dynamic>> {}
 
-class MockDocumentReference extends Mock
-    implements DocumentReference<Map<String, dynamic>> {}
+class MockDocumentReference extends Mock {}
 
-class MockDocumentSnapshot extends Mock
-    implements DocumentSnapshot<Map<String, dynamic>> {}
+class MockDocumentSnapshot extends Mock {}
 
 class MockQuerySnapshot extends Mock
     implements QuerySnapshot<Object?> {}
