@@ -1952,7 +1952,7 @@
   },
   "subscriptionActivatedSuccessfully": "Subscription activated successfully!",
   "@subscriptionActivatedSuccessfully": {
-    "description": "Shown when a Stripe subscription is activated successfully"
+    "description": "Localization key for: Subscription activated successfully!"
   },
   "activityLogaction": "Activity: {action}",
   "@activityLogaction": {
@@ -2348,7 +2348,7 @@
   },
   "paymentWasCancelled": "Payment was cancelled",
   "@paymentWasCancelled": {
-    "description": "Shown when the user cancels a Stripe payment"
+    "description": "Localization key for: Payment was cancelled"
   },
   "clearAll": "Clear All",
   "@clearAll": {
@@ -2678,67 +2678,76 @@
   "@loadingCheckout": {
     "description": "Localization key for: Loading checkout..."
   },
-  "errorConfirmingPayment": "Error confirming payment: {error}",
-  "@errorConfirmingPayment": {
-    "description": "Shown when Stripe payment confirmation fails",
-    "placeholders": {
-      "error": {}
-    }
+  "ad_pre_title": "Watch an ad to confirm your appointment",
+  "@ad_pre_title": {
+    "description": "Title shown before ad for free users"
   },
-  "subscribeTo": "Subscribe to {planName}",
-  "@subscribeTo": {
-    "description": "Title in app bar for subscription screen",
-    "placeholders": {
-      "planName": {}
-    }
+  "ad_pre_description": "As a free user, you must watch a short ad before confirming. You can remove all ads permanently by upgrading.",
+  "@ad_pre_description": {
+    "description": "Description shown before ad for free users"
   },
-  "completeYourSubscription": "Complete your subscription below",
-  "@completeYourSubscription": {
-    "description": "Header guiding user to complete subscription steps"
+  "watch_ad_button": "Watch Ad",
+  "@watch_ad_button": {
+    "description": "Button to watch ad"
   },
-  "errorLoadingCheckout": "Error loading checkout",
-  "@errorLoadingCheckout": {
-    "description": "Shown when checkout page fails to load"
+  "upgrade_button": "Upgrade to Premium (€4)",
+  "@upgrade_button": {
+    "description": "Button to upgrade to premium"
   },
-  "startTimeLabel": "Start Time",
-  "@startTimeLabel": {
-    "description": "Label for start time input"
+  "ad_post_title": "Ad finished! You may now confirm your appointment.",
+  "@ad_post_title": {
+    "description": "Title shown after ad is finished"
   },
-  "endTimeLabel": "End Time",
-  "@endTimeLabel": {
-    "description": "Label for end time input"
+  "confirm_appointment_button": "Confirm Appointment",
+  "@confirm_appointment_button": {
+    "description": "Button to confirm appointment after ad"
   },
-  "endTimeAfterStartTimeError": "End time must be after start time",
-  "@endTimeAfterStartTimeError": {
-    "description": "Error message when end time is before start time"
+  "upgrade_prompt_title": "One-time upgrade",
+  "@upgrade_prompt_title": {
+    "description": "Title for upgrade prompt"
   },
-  "studioManagement": "Studio Management",
-  "@studioManagement": {
-    "description": "Drawer header title for studio management section"
+  "upgrade_prompt_description": "Pay €4 to remove all ads forever",
+  "@upgrade_prompt_description": {
+    "description": "Description for upgrade prompt"
   },
-  "loginFailed": "Login failed: {error}",
-  "@loginFailed": {
-    "description": "Shown when login fails",
-    "placeholders": { "error": {} }
+  "purchase_now_button": "Purchase Now",
+  "@purchase_now_button": {
+    "description": "Button to purchase upgrade"
   },
-  "nameLabel": "Name",
-  "@nameLabel": { "description": "Label for name field" },
-  "pleaseEnterName": "Please enter a name",
-  "@pleaseEnterName": { "description": "Validation error when name missing" },
-  "phoneNumberLabel": "Phone Number",
-  "@phoneNumberLabel": { "description": "Label for phone number field" },
-  "pleaseEnterPhoneNumber": "Please enter a phone number",
-  "@pleaseEnterPhoneNumber": { "description": "Validation error for phone number" },
-  "emailOptionalLabel": "Email (Optional)",
-  "@emailOptionalLabel": { "description": "Label for optional email field" },
-  "requiresInstallFallback": "Requires Install Fallback",
-  "@requiresInstallFallback": { "description": "Toggle label for install fallback" },
-  "fromName": "From: {name}",
-  "@fromName": { "description": "Label displaying the sender name", "placeholders": { "name": {} } },
-  "phoneLabel": "Phone: {phone}",
-  "@phoneLabel": { "description": "Label displaying phone number", "placeholders": { "phone": {} } },
-  "unknown": "Unknown",
-  "@unknown": { "description": "Fallback text for unknown values" },
-  "noPhone": "No phone",
-  "@noPhone": { "description": "Fallback when no phone is available" }
+  "manageApiAccess": "Manage API Access",
+  "@manageApiAccess": {
+    "description": "Button to manage API access for business clients"
+  },
+  "apiQuota": "API Quota",
+  "@apiQuota": {
+    "description": "Label for API quota information"
+  },
+  "mapUsageCharges": "Map Usage Charges",
+  "@mapUsageCharges": {
+    "description": "Label for map API usage charges"
+  },
+  "viewApiKeys": "View API Keys",
+  "@viewApiKeys": {
+    "description": "Button to view API keys"
+  },
+  "accessApiDashboard": "Access API Dashboard",
+  "@accessApiDashboard": {
+    "description": "Button to access API dashboard"
+  },
+  "usageBasedBilling": "Usage-Based Billing",
+  "@usageBasedBilling": {
+    "description": "Title for usage-based billing section"
+  },
+  "apiCapabilities": "API Capabilities",
+  "@apiCapabilities": {
+    "description": "Title for API capabilities section"
+  },
+  "b2bApiAccess": "B2B API Access",
+  "@b2bApiAccess": {
+    "description": "Title for B2B API access section"
+  },
+  "businessApiManagement": "Business API Management",
+  "@businessApiManagement": {
+    "description": "Title for business API management screen"
+  }
 }

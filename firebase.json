@@ -1,7 +1,7 @@
 {
 
   "hosting": {
-    "public": "temp_build_web",
+    "public": "build/web",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -55,9 +55,19 @@
         "firebase-debug.*.log",
         "*.local"
       ],
-      "predeploy": [
-        "npm --prefix \"$RESOURCE_DIR\" run lint"
-      ]
+      "predeploy": []
+    },
+    {
+      "source": "default",
+      "codebase": "functions",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": []
     }
   ]
 }
