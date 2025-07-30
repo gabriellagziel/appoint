@@ -137,6 +137,12 @@ service cloud.firestore {
         request.resource.data.userId == resource.data.userId;
     }
 
+    // Content library
+    match /content_items/{itemId} {
+      allow read: if isSignedIn();
+      allow create, update, delete: if isAdmin();
+    }
+
     // Payments
     match /payments/{paymentId} {
       allow read: if isSignedIn() && request.auth.uid == resource.data.userId;

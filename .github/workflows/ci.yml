@@ -17,6 +17,7 @@ jobs:
       FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
       FLUTTER_CACHE_DIR: ~/.flutter
       PUB_CACHE: ~/.pub-cache
+      HTTPS_PROXY: http://proxy.mycorp.com:8080
       PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
     services:
       firebase:
@@ -102,6 +103,7 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      HTTPS_PROXY: http://proxy.mycorp.com:8080
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
@@ -131,12 +133,12 @@ jobs:
         run: dart pub global activate coverage
       - name: Run Dart tests with coverage
         run: |
-          dart test --coverage
+          flutter test --coverage
           dart pub global run coverage:format_coverage \
             --lcov --in=coverage --out=coverage/lcov.info \
             --packages=.dart_tool/package_config.json --report-on=lib
       - name: Run Flutter integration tests
-        run: flutter test integration_test --coverage --reporter=compact
+        run: flutter test integration_test --coverage
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
@@ -162,6 +164,7 @@ jobs:
       FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
       FLUTTER_CACHE_DIR: ~/.flutter
       PUB_CACHE: ~/.pub-cache
+      HTTPS_PROXY: http://proxy.mycorp.com:8080
     steps:
       - uses: actions/checkout@v4
       - name: Check network access
@@ -217,6 +220,7 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      HTTPS_PROXY: http://proxy.mycorp.com:8080
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
@@ -241,7 +245,7 @@ jobs:
         run: dart pub global activate coverage
       - name: Run Dart tests with coverage
         run: |
-          dart test --coverage test/features/studio/content_library_screen_test.dart
+          flutter test --coverage test/features/studio/content_library_screen_test.dart
           dart pub global run coverage:format_coverage \
             --lcov --in=coverage --out=coverage/lcov.info \
             --packages=.dart_tool/package_config.json --report-on=lib
@@ -263,6 +267,7 @@ jobs:
       FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
       FLUTTER_CACHE_DIR: ~/.flutter
       PUB_CACHE: ~/.pub-cache
+      HTTPS_PROXY: http://proxy.mycorp.com:8080
       PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
     steps:
       - uses: actions/checkout@v4
@@ -334,6 +339,7 @@ jobs:
       FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
       FLUTTER_CACHE_DIR: ~/.flutter
       PUB_CACHE: ~/.pub-cache
+      HTTPS_PROXY: http://proxy.mycorp.com:8080
       PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
     steps:
       - uses: actions/checkout@v4
@@ -390,6 +396,7 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      HTTPS_PROXY: http://proxy.mycorp.com:8080
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
@@ -414,7 +421,7 @@ jobs:
         run: dart pub global activate coverage
       - name: Run Dart tests with coverage
         run: |
-          dart test --coverage
+          flutter test --coverage
           dart pub global run coverage:format_coverage \
             --lcov --in=coverage --out=coverage/lcov.info \
             --packages=.dart_tool/package_config.json --report-on=lib
@@ -443,6 +450,7 @@ jobs:
       FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
       FLUTTER_CACHE_DIR: ~/.flutter
       PUB_CACHE: ~/.pub-cache
+      HTTPS_PROXY: http://proxy.mycorp.com:8080
       PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
     steps:
       - uses: actions/checkout@v4
@@ -499,6 +507,7 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      HTTPS_PROXY: http://proxy.mycorp.com:8080
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
@@ -523,7 +532,7 @@ jobs:
         run: dart pub global activate coverage
       - name: Run Dart tests with coverage
         run: |
-          dart test --coverage
+          flutter test --coverage
           dart pub global run coverage:format_coverage \
             --lcov --in=coverage --out=coverage/lcov.info \
             --packages=.dart_tool/package_config.json --report-on=lib
@@ -550,6 +559,7 @@ jobs:
       FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
       FLUTTER_CACHE_DIR: ~/.flutter
       PUB_CACHE: ~/.pub-cache
+      HTTPS_PROXY: http://proxy.mycorp.com:8080
       PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
     steps:
       - uses: actions/checkout@v4
@@ -606,6 +616,7 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      HTTPS_PROXY: http://proxy.mycorp.com:8080
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
@@ -630,7 +641,7 @@ jobs:
         run: dart pub global activate coverage
       - name: Run Dart tests with coverage
         run: |
-          dart test --coverage
+          flutter test --coverage
           dart pub global run coverage:format_coverage \
             --lcov --in=coverage --out=coverage/lcov.info \
             --packages=.dart_tool/package_config.json --report-on=lib
@@ -660,6 +671,7 @@ jobs:
       FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
       FLUTTER_CACHE_DIR: ~/.flutter
       PUB_CACHE: ~/.pub-cache
+      HTTPS_PROXY: http://proxy.mycorp.com:8080
       PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
     steps:
       - uses: actions/checkout@v4
@@ -712,6 +724,7 @@ jobs:
         run: |
           echo "PUB_HOSTED_URL=https://pub.flutter-io.cn" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      HTTPS_PROXY: http://proxy.mycorp.com:8080
       - name: Check network access
         run: |
           curl --fail https://storage.googleapis.com
@@ -730,7 +743,7 @@ jobs:
         run: dart pub global activate coverage
       - name: Run Dart tests with coverage
         run: |
-          dart test --coverage
+          flutter test --coverage
           dart pub global run coverage:format_coverage \
             --lcov --in=coverage --out=coverage/lcov.info \
             --packages=.dart_tool/package_config.json --report-on=lib
