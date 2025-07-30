@@ -5,8 +5,6 @@ import 'package:appoint/utils/business_helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:intl/intl.dart';
 
 class BusinessAvailabilityScreen extends ConsumerStatefulWidget {
   const BusinessAvailabilityScreen({super.key});
@@ -30,17 +28,13 @@ class _BusinessAvailabilityScreenState
   Future<void> _loadConfiguration() async {
     setState(() => _isLoading = true);
     try {
-      service = ref.read(businessAvailabilityServiceProvider);
+      final service = ref.read(businessAvailabilityServiceProvider);
       await service.loadConfiguration();
       ref.read(businessAvailabilityProvider.notifier).loadConfiguration();
     } catch (e) {
-      if (mounted) {
-        final l10n = AppLocalizations.of(context)!;
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(l10n.errorLoadingConfiguration(e.toString()))),
-        );
-      }
-    } finally {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error loading configuration: $e')),
+      );
       setState(() => _isLoading = false);
     }
   }
@@ -48,44 +42,55 @@ class _BusinessAvailabilityScreenState
   Future<void> _saveConfiguration() async {
     setState(() => _isSaving = true);
     try {
-      availability = ref.read(businessAvailabilityProvider);
-      service = ref.read(businessAvailabilityServiceProvider);
-      config = service.toJson(availability);
+      final availability = ref.read(businessAvailabilityProvider);
+      final service = ref.read(businessAvailabilityServiceProvider);
+      final config = service.toJson(availability);
       await service.saveConfiguration(config);
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(AppLocalizations.of(context)!.configurationSavedSuccessfully)),
+          const SnackBar(content: Text('Configuration saved successfully!')),
         );
       }
     } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(AppLocalizations.of(context)!.errorSavingConfiguration(e.toString()))),
-        );
-      }
-    } finally {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error saving configuration: $e')),
+      );
       setState(() => _isSaving = false);
     }
   }
 
   String _getDayName(int weekday) {
-    // Use intl to obtain localized weekday name based on current locale.
-    final locale = AppLocalizations.of(context)!.localeName;
-    // In Dart, DateTime.weekday uses 1 (Mon) .. 7 (Sun)
-    return DateFormat.EEEE(locale).format(DateTime(2020, 1, weekday + 1));
+    switch (weekday) {
+      case 0:
+        return 'Sunday';
+      case 1:
+        return 'Monday';
+      case 2:
+        return 'Tuesday';
+      case 3:
+        return 'Wednesday';
+      case 4:
+        return 'Thursday';
+      case 5:
+        return 'Friday';
+      case 6:
+        return 'Saturday';
+      default:
+        return 'Unknown';
+    }
   }
 
   Future<void> _pickTime(final BuildContext context, final TimeOfDay initial,
       void Function(TimeOfDay) onPicked,) async {
-    picked = await showTimePicker(context: context, initialTime: initial);
+    final picked = await showTimePicker(context: context, initialTime: initial);
     if (picked != null) onPicked(picked);
   }
 
   @override
   Widget build(BuildContext context) {
-    availability = ref.watch(businessAvailabilityProvider);
-    notifier = ref.read(businessAvailabilityProvider.notifier);
+    final availability = ref.watch(businessAvailabilityProvider);
+    final notifier = ref.read(businessAvailabilityProvider.notifier);
 
     if (_isLoading) {
       return Theme(
@@ -100,7 +105,7 @@ class _BusinessAvailabilityScreenState
       data: BusinessTheme.businessTheme,
       child: ResponsiveScaffold(
         appBar: AppBar(
-          title: Text(AppLocalizations.of(context)!.businessAvailability),
+          title: const Text('Business Availability'),
           centerTitle: true,
           backgroundColor: BusinessTheme.businessTheme.colorScheme.primary,
           foregroundColor: Colors.white,
@@ -118,7 +123,7 @@ class _BusinessAvailabilityScreenState
               IconButton(
                 icon: const Icon(Icons.save),
                 onPressed: _saveConfiguration,
-                tooltip: AppLocalizations.of(context)!.save,
+                tooltip: 'Save Configuration',
               ),
           ],
         ),
@@ -130,7 +135,7 @@ class _BusinessAvailabilityScreenState
           itemBuilder: (context, final weekday) {
             final avail =
                 availability.firstWhere((a) => a.weekday == weekday);
-            timeRange = TimeRange(start: avail.start, end: avail.end);
+            final timeRange = TimeRange(start: avail.start, end: avail.end);
             final hasError = avail.isOpen && !timeRange.isValid;
 
             return Card(
@@ -167,7 +172,7 @@ class _BusinessAvailabilityScreenState
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(AppLocalizations.of(context)!.startTimeLabel,
+                                const Text('Start Time',
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold),),
                                 const SizedBox(height: 8),
@@ -205,7 +210,7 @@ class _BusinessAvailabilityScreenState
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(AppLocalizations.of(context)!.endTimeLabel,
+                                const Text('End Time',
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold),),
                                 const SizedBox(height: 8),
@@ -256,7 +261,7 @@ class _BusinessAvailabilityScreenState
                               const SizedBox(width: 8),
                               Expanded(
                                 child: Text(
-                                  AppLocalizations.of(context)!.endTimeAfterStartTimeError,
+                                  'End time must be after start time',
                                   style: TextStyle(
                                       color: Colors.red.shade700, fontSize: 12,),
                                 ),
@@ -268,7 +273,7 @@ class _BusinessAvailabilityScreenState
                     ] else ...[
                       const SizedBox(height: 8),
                       Text(
-                        AppLocalizations.of(context)!.closed,
+                        'Closed',
                         style: TextStyle(
                           color: Colors.grey[600],
                           fontStyle: FontStyle.italic,
@@ -291,15 +296,18 @@ class _BusinessAvailabilityScreenState
         children: [
           DrawerHeader(
             decoration: BoxDecoration(
-              color: BusinessTheme.businessTheme.colorScheme.primary,
-            ),
-            child: Text(
-              AppLocalizations.of(context)!.studioManagement,
+              color: BusinessTheme.businessTheme.colorScheme.primary),
+            child: const Text(
+              'Studio Management',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 24,
+              ),
             ),
           ),
           ListTile(
             leading: const Icon(Icons.calendar_month),
-            title: Text(AppLocalizations.of(context)!.calendar),
+            title: const Text('Calendar'),
             onTap: () {
               Navigator.pop(context);
               context.go('/studio/calendar');
@@ -307,7 +315,7 @@ class _BusinessAvailabilityScreenState
           ),
           ListTile(
             leading: const Icon(Icons.access_time),
-            title: Text(AppLocalizations.of(context)!.availability),
+            title: const Text('Availability'),
             selected: true,
             onTap: () {
               Navigator.pop(context);
@@ -315,7 +323,7 @@ class _BusinessAvailabilityScreenState
           ),
           ListTile(
             leading: const Icon(Icons.dashboard),
-            title: Text(AppLocalizations.of(context)!.dashboard),
+            title: const Text('Dashboard'),
             onTap: () {
               Navigator.pop(context);
               context.go('/studio/dashboard');

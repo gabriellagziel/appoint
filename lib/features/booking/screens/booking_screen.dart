@@ -118,7 +118,6 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
       if (!mounted) return;
       context.showSnackBar('Failed to confirm booking',
           backgroundColor: Colors.red,);
-    } finally {
       if (mounted) setState(() => _isSubmitting = false);
     }
   }
