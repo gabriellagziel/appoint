@@ -1,10 +1,10 @@
 import 'dart:io';
-
-import 'package:appoint/models/ambassador_profile.dart';
+import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:csv/csv.dart';
 import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:csv/csv.dart';
+import 'package:appoint/models/ambassador_profile.dart';
 
 /// Advanced analytics service for Ambassador program
 class AmbassadorAnalyticsService {
@@ -34,8 +34,8 @@ class AmbassadorAnalyticsService {
       return snapshot.docs.asMap().entries.map((entry) {
         final index = entry.key;
         final doc = entry.value;
-        final data = doc.data()! as Map<String, dynamic>;
-
+        final data = doc.data() as Map<String, dynamic>;
+        
         return AmbassadorLeaderboardEntry(
           rank: index + 1,
           userId: data['userId'] ?? '',
@@ -80,8 +80,8 @@ class AmbassadorAnalyticsService {
       return snapshot.docs.asMap().entries.map((entry) {
         final index = entry.key;
         final doc = entry.value;
-        final data = doc.data()! as Map<String, dynamic>;
-
+        final data = doc.data() as Map<String, dynamic>;
+        
         return AmbassadorLeaderboardEntry(
           rank: index + 1,
           userId: data['userId'] ?? '',
@@ -121,48 +121,42 @@ class AmbassadorAnalyticsService {
             .collection('ambassador_profiles')
             .where('countryCode', isEqualTo: countryCode)
             .get();
-
+        
         final ambassadorIds = ambassadors.docs.map((doc) => doc.id).toList();
         if (ambassadorIds.isEmpty) return [];
-
-        query = query.where('ambassadorId',
-            whereIn: ambassadorIds.take(10).toList());
+        
+        query = query.where('ambassadorId', whereIn: ambassadorIds.take(10).toList());
       }
 
       if (startDate != null) {
-        query = query.where('referredAt',
-            isGreaterThanOrEqualTo: Timestamp.fromDate(startDate));
+        query = query.where('referredAt', isGreaterThanOrEqualTo: Timestamp.fromDate(startDate));
       }
 
       if (endDate != null) {
-        query = query.where('referredAt',
-            isLessThanOrEqualTo: Timestamp.fromDate(endDate));
+        query = query.where('referredAt', isLessThanOrEqualTo: Timestamp.fromDate(endDate));
       }
 
       final snapshot = await query.orderBy('referredAt').get();
 
       // Group data by time periods
-      final groupedData = <DateTime, int>{};
-
+      final Map<DateTime, int> groupedData = {};
+      
       for (final doc in snapshot.docs) {
-        final data = doc.data()! as Map<String, dynamic>;
+        final data = doc.data() as Map<String, dynamic>;
         final timestamp = data['referredAt'] as Timestamp?;
         if (timestamp == null) continue;
 
         final date = timestamp.toDate();
         final groupedDate = _groupDateByGranularity(date, granularity);
-
-        groupedData.update(groupedDate, (value) => value + 1,
-            ifAbsent: () => 1);
+        
+        groupedData.update(groupedDate, (value) => value + 1, ifAbsent: () => 1);
       }
 
       return groupedData.entries
-          .map(
-            (entry) => TimeSeriesDataPoint(
-              date: entry.key,
-              value: entry.value,
-            ),
-          )
+          .map((entry) => TimeSeriesDataPoint(
+                date: entry.key,
+                value: entry.value,
+              ))
           .toList()
         ..sort((a, b) => a.date.compareTo(b.date));
     } catch (e) {
@@ -179,46 +173,41 @@ class AmbassadorAnalyticsService {
     TimeSeriesGranularity granularity = TimeSeriesGranularity.daily,
   }) async {
     try {
-      Query query =
-          _firestore.collection('users').where('isActive', isEqualTo: true);
+      Query query = _firestore.collection('users').where('isActive', isEqualTo: true);
 
       if (countryCode != null) {
         query = query.where('countryCode', isEqualTo: countryCode);
       }
 
       if (startDate != null) {
-        query = query.where('lastActiveAt',
-            isGreaterThanOrEqualTo: Timestamp.fromDate(startDate));
+        query = query.where('lastActiveAt', isGreaterThanOrEqualTo: Timestamp.fromDate(startDate));
       }
 
       if (endDate != null) {
-        query = query.where('lastActiveAt',
-            isLessThanOrEqualTo: Timestamp.fromDate(endDate));
+        query = query.where('lastActiveAt', isLessThanOrEqualTo: Timestamp.fromDate(endDate));
       }
 
       final snapshot = await query.get();
 
       // Group data by time periods
-      final groupedData = <DateTime, Set<String>>{};
-
+      final Map<DateTime, Set<String>> groupedData = {};
+      
       for (final doc in snapshot.docs) {
-        final data = doc.data()! as Map<String, dynamic>;
+        final data = doc.data() as Map<String, dynamic>;
         final timestamp = data['lastActiveAt'] as Timestamp?;
         if (timestamp == null) continue;
 
         final date = timestamp.toDate();
         final groupedDate = _groupDateByGranularity(date, granularity);
-
+        
         groupedData.putIfAbsent(groupedDate, () => <String>{}).add(doc.id);
       }
 
       return groupedData.entries
-          .map(
-            (entry) => TimeSeriesDataPoint(
-              date: entry.key,
-              value: entry.value.length,
-            ),
-          )
+          .map((entry) => TimeSeriesDataPoint(
+                date: entry.key,
+                value: entry.value.length,
+              ))
           .toList()
         ..sort((a, b) => a.date.compareTo(b.date));
     } catch (e) {
@@ -242,16 +231,15 @@ class AmbassadorAnalyticsService {
       }
 
       if (minimumReferrals != null) {
-        query = query.where('totalReferrals',
-            isGreaterThanOrEqualTo: minimumReferrals);
+        query = query.where('totalReferrals', isGreaterThanOrEqualTo: minimumReferrals);
       }
 
       final snapshot = await query.get();
 
-      final conversionRates = <AmbassadorConversionRate>[];
+      final List<AmbassadorConversionRate> conversionRates = [];
 
       for (final doc in snapshot.docs) {
-        final profile = doc.data()! as Map<String, dynamic>;
+        final profile = doc.data() as Map<String, dynamic>;
         final ambassadorId = doc.id;
 
         // Get referral data for this ambassador
@@ -265,28 +253,24 @@ class AmbassadorAnalyticsService {
             .where((doc) => doc.data()['isActive'] == true)
             .length;
 
-        final conversionRate =
-            totalReferrals > 0 ? (activeReferrals / totalReferrals) * 100 : 0.0;
+        final conversionRate = totalReferrals > 0 ? (activeReferrals / totalReferrals) * 100 : 0.0;
 
-        conversionRates.add(
-          AmbassadorConversionRate(
-            ambassadorId: ambassadorId,
-            displayName: profile['displayName'] ?? 'Anonymous',
-            totalReferrals: totalReferrals,
-            activeReferrals: activeReferrals,
-            conversionRate: conversionRate,
-            countryCode: profile['countryCode'] ?? '',
-            tier: AmbassadorTier.values.firstWhere(
-              (tier) => tier.name == profile['tier'],
-              orElse: () => AmbassadorTier.basic,
-            ),
+        conversionRates.add(AmbassadorConversionRate(
+          ambassadorId: ambassadorId,
+          displayName: profile['displayName'] ?? 'Anonymous',
+          totalReferrals: totalReferrals,
+          activeReferrals: activeReferrals,
+          conversionRate: conversionRate,
+          countryCode: profile['countryCode'] ?? '',
+          tier: AmbassadorTier.values.firstWhere(
+            (tier) => tier.name == profile['tier'],
+            orElse: () => AmbassadorTier.basic,
           ),
-        );
+        ));
       }
 
       // Sort by conversion rate
-      conversionRates
-          .sort((a, b) => b.conversionRate.compareTo(a.conversionRate));
+      conversionRates.sort((a, b) => b.conversionRate.compareTo(a.conversionRate));
 
       return conversionRates;
     } catch (e) {
@@ -303,57 +287,51 @@ class AmbassadorAnalyticsService {
           .where('status', isEqualTo: 'approved')
           .get();
 
-      final regionData = <String, RegionalPerformanceData>{};
+      final Map<String, RegionalPerformanceData> regionData = {};
 
       for (final doc in snapshot.docs) {
-        final data = doc.data();
+        final data = doc.data() as Map<String, dynamic>;
         final countryCode = data['countryCode'] as String? ?? 'Unknown';
-
+        
         if (!regionData.containsKey(countryCode)) {
           regionData[countryCode] = RegionalPerformanceData(
             ambassadorCount: 0,
             totalReferrals: 0,
-            averageReferrals: 0,
-            conversionRate: 0,
+            averageReferrals: 0.0,
+            conversionRate: 0.0,
           );
         }
 
         final regionStats = regionData[countryCode]!;
         regionStats.ambassadorCount++;
-        regionStats.totalReferrals += data['totalReferrals'] as int? ?? 0;
+        regionStats.totalReferrals += (data['totalReferrals'] as int? ?? 0);
       }
 
       // Calculate averages and conversion rates
-      final performance = <RegionalPerformance>[];
-
+      final List<RegionalPerformance> performance = [];
+      
       for (final entry in regionData.entries) {
         final countryCode = entry.key;
         final stats = entry.value;
-
-        final avgReferrals = stats.ambassadorCount > 0
-            ? stats.totalReferrals / stats.ambassadorCount
+        
+        final avgReferrals = stats.ambassadorCount > 0 
+            ? stats.totalReferrals / stats.ambassadorCount 
             : 0.0;
 
         // Get conversion rate for this region
-        final conversionRates =
-            await getConversionRates(countryCode: countryCode);
+        final conversionRates = await getConversionRates(countryCode: countryCode);
         final avgConversionRate = conversionRates.isNotEmpty
-            ? conversionRates
-                    .map((cr) => cr.conversionRate)
-                    .reduce((a, b) => a + b) /
-                conversionRates.length
+            ? conversionRates.map((cr) => cr.conversionRate).reduce((a, b) => a + b) / conversionRates.length
             : 0.0;
 
-        performance.add(
-          RegionalPerformance(
-            countryCode: countryCode,
-            countryName: _getCountryName(countryCode),
-            ambassadorCount: stats.ambassadorCount,
-            totalReferrals: stats.totalReferrals,
-            averageReferrals: avgReferrals,
-            conversionRate: avgConversionRate,
-          ),
-        );
+        performance.add(RegionalPerformance(
+          countryCode: countryCode,
+          countryName: _getCountryName(countryCode),
+          ambassadorCount: stats.ambassadorCount,
+          totalReferrals: stats.totalReferrals,
+          averageReferrals: avgReferrals,
+          conversionRate: avgConversionRate,
+        ));
       }
 
       // Sort by total referrals
@@ -374,29 +352,31 @@ class AmbassadorAnalyticsService {
     DateTime? endDate,
   }) async {
     try {
-      var csvData = <List<dynamic>>[];
-
+      List<List<dynamic>> csvData = [];
+      
       switch (exportType) {
         case AnalyticsExportType.leaderboard:
           csvData = await _exportLeaderboardToCSV(countryCode);
+          break;
         case AnalyticsExportType.conversionRates:
           csvData = await _exportConversionRatesToCSV(countryCode);
+          break;
         case AnalyticsExportType.timeSeries:
-          csvData =
-              await _exportTimeSeriesToCSV(countryCode, startDate, endDate);
+          csvData = await _exportTimeSeriesToCSV(countryCode, startDate, endDate);
+          break;
         case AnalyticsExportType.regionalPerformance:
           csvData = await _exportRegionalPerformanceToCSV();
+          break;
       }
 
       final csvString = const ListToCsvConverter().convert(csvData);
-
+      
       // Save to file
       final directory = await getApplicationDocumentsDirectory();
-      final fileName =
-          'ambassador_${exportType.name}_${DateTime.now().millisecondsSinceEpoch}.csv';
+      final fileName = 'ambassador_${exportType.name}_${DateTime.now().millisecondsSinceEpoch}.csv';
       final file = File('${directory.path}/$fileName');
       await file.writeAsString(csvString);
-
+      
       return file.path;
     } catch (e) {
       debugPrint('Error exporting analytics to CSV: $e');
@@ -406,8 +386,7 @@ class AmbassadorAnalyticsService {
 
   /// Private helper methods
 
-  DateTime _groupDateByGranularity(
-      DateTime date, TimeSeriesGranularity granularity) {
+  DateTime _groupDateByGranularity(DateTime date, TimeSeriesGranularity granularity) {
     switch (granularity) {
       case TimeSeriesGranularity.hourly:
         return DateTime(date.year, date.month, date.day, date.hour);
@@ -494,28 +473,17 @@ class AmbassadorAnalyticsService {
       'ZW': 'Zimbabwe',
       'ZM': 'Zambia',
     };
-
+    
     return countryNames[countryCode] ?? countryCode;
   }
 
-  Future<List<List<dynamic>>> _exportLeaderboardToCSV(
-      String? countryCode) async {
+  Future<List<List<dynamic>>> _exportLeaderboardToCSV(String? countryCode) async {
     final leaderboard = countryCode != null
         ? await getCountryLeaderboard(countryCode: countryCode, limit: 1000)
         : await getGlobalLeaderboard(limit: 1000);
 
     final csvData = <List<dynamic>>[
-      [
-        'Rank',
-        'Ambassador ID',
-        'Display Name',
-        'Total Referrals',
-        'Monthly Referrals',
-        'Tier',
-        'Conversion Rate',
-        'Country',
-        'Language'
-      ],
+      ['Rank', 'Ambassador ID', 'Display Name', 'Total Referrals', 'Monthly Referrals', 'Tier', 'Conversion Rate', 'Country', 'Language']
     ];
 
     for (final entry in leaderboard) {
@@ -535,20 +503,11 @@ class AmbassadorAnalyticsService {
     return csvData;
   }
 
-  Future<List<List<dynamic>>> _exportConversionRatesToCSV(
-      String? countryCode) async {
+  Future<List<List<dynamic>>> _exportConversionRatesToCSV(String? countryCode) async {
     final conversionRates = await getConversionRates(countryCode: countryCode);
 
     final csvData = <List<dynamic>>[
-      [
-        'Ambassador ID',
-        'Display Name',
-        'Total Referrals',
-        'Active Referrals',
-        'Conversion Rate',
-        'Country',
-        'Tier'
-      ],
+      ['Ambassador ID', 'Display Name', 'Total Referrals', 'Active Referrals', 'Conversion Rate', 'Country', 'Tier']
     ];
 
     for (final rate in conversionRates) {
@@ -566,8 +525,7 @@ class AmbassadorAnalyticsService {
     return csvData;
   }
 
-  Future<List<List<dynamic>>> _exportTimeSeriesToCSV(
-      String? countryCode, DateTime? startDate, DateTime? endDate) async {
+  Future<List<List<dynamic>>> _exportTimeSeriesToCSV(String? countryCode, DateTime? startDate, DateTime? endDate) async {
     final referralSeries = await getReferralTimeSeries(
       countryCode: countryCode,
       startDate: startDate,
@@ -575,7 +533,7 @@ class AmbassadorAnalyticsService {
     );
 
     final csvData = <List<dynamic>>[
-      ['Date', 'Referrals Count'],
+      ['Date', 'Referrals Count']
     ];
 
     for (final point in referralSeries) {
@@ -592,14 +550,7 @@ class AmbassadorAnalyticsService {
     final regionalPerformance = await getRegionalPerformance();
 
     final csvData = <List<dynamic>>[
-      [
-        'Country Code',
-        'Country Name',
-        'Ambassador Count',
-        'Total Referrals',
-        'Average Referrals',
-        'Conversion Rate'
-      ],
+      ['Country Code', 'Country Name', 'Ambassador Count', 'Total Referrals', 'Average Referrals', 'Conversion Rate']
     ];
 
     for (final region in regionalPerformance) {
@@ -620,6 +571,17 @@ class AmbassadorAnalyticsService {
 // Data models for analytics
 
 class AmbassadorLeaderboardEntry {
+  final int rank;
+  final String userId;
+  final String displayName;
+  final int totalReferrals;
+  final int monthlyReferrals;
+  final AmbassadorTier tier;
+  final double conversionRate;
+  final String countryCode;
+  final String languageCode;
+  final bool isOptedInToLeaderboard;
+
   AmbassadorLeaderboardEntry({
     required this.rank,
     required this.userId,
@@ -632,28 +594,27 @@ class AmbassadorLeaderboardEntry {
     required this.languageCode,
     required this.isOptedInToLeaderboard,
   });
-  final int rank;
-  final String userId;
-  final String displayName;
-  final int totalReferrals;
-  final int monthlyReferrals;
-  final AmbassadorTier tier;
-  final double conversionRate;
-  final String countryCode;
-  final String languageCode;
-  final bool isOptedInToLeaderboard;
 }
 
 class TimeSeriesDataPoint {
+  final DateTime date;
+  final int value;
+
   TimeSeriesDataPoint({
     required this.date,
     required this.value,
   });
-  final DateTime date;
-  final int value;
 }
 
 class AmbassadorConversionRate {
+  final String ambassadorId;
+  final String displayName;
+  final int totalReferrals;
+  final int activeReferrals;
+  final double conversionRate;
+  final String countryCode;
+  final AmbassadorTier tier;
+
   AmbassadorConversionRate({
     required this.ambassadorId,
     required this.displayName,
@@ -663,16 +624,16 @@ class AmbassadorConversionRate {
     required this.countryCode,
     required this.tier,
   });
-  final String ambassadorId;
-  final String displayName;
-  final int totalReferrals;
-  final int activeReferrals;
-  final double conversionRate;
-  final String countryCode;
-  final AmbassadorTier tier;
 }
 
 class RegionalPerformance {
+  final String countryCode;
+  final String countryName;
+  final int ambassadorCount;
+  final int totalReferrals;
+  final double averageReferrals;
+  final double conversionRate;
+
   RegionalPerformance({
     required this.countryCode,
     required this.countryName,
@@ -681,25 +642,20 @@ class RegionalPerformance {
     required this.averageReferrals,
     required this.conversionRate,
   });
-  final String countryCode;
-  final String countryName;
-  final int ambassadorCount;
-  final int totalReferrals;
-  final double averageReferrals;
-  final double conversionRate;
 }
 
 class RegionalPerformanceData {
+  int ambassadorCount;
+  int totalReferrals;
+  double averageReferrals;
+  double conversionRate;
+
   RegionalPerformanceData({
     required this.ambassadorCount,
     required this.totalReferrals,
     required this.averageReferrals,
     required this.conversionRate,
   });
-  int ambassadorCount;
-  int totalReferrals;
-  double averageReferrals;
-  double conversionRate;
 }
 
 enum TimeSeriesGranularity {
