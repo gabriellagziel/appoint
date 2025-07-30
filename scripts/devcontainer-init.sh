@@ -4,4 +4,4 @@ for domain in storage.googleapis.com dart.dev pub.dev firebase-public.firebaseio
   echo "Checking $domain…"
   curl --fail "https://$domain" -I >/dev/null
 done
-
+echo "All domains reachable."
