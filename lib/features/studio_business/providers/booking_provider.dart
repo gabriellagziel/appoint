@@ -5,13 +5,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final studioBookingServiceProvider =
     Provider<StudioBookingService>((ref) => StudioBookingService());
 
-final userBookingsProvider = FutureProvider<List<StudioBooking>>((ref) async {
+final userBookingsProvider =
+    FutureProvider<List<StudioBooking>>((ref) async {
   final service = ref.read(studioBookingServiceProvider);
   return service.getUserBookings();
 });
 
-final FutureProviderFamily<List<StudioBooking>, String>
-    businessBookingsProvider =
+final FutureProviderFamily<List<StudioBooking>, String> businessBookingsProvider =
     FutureProvider.family<List<StudioBooking>, String>(
   (ref, final businessProfileId) async {
     final service = ref.read(studioBookingServiceProvider);
@@ -21,10 +21,10 @@ final FutureProviderFamily<List<StudioBooking>, String>
 
 final bookingProvider =
     StateNotifierProvider<BookingNotifier, AsyncValue<StudioBooking?>>(
-  (ref) => BookingNotifier(ref.read(studioBookingServiceProvider)),
-);
+        (ref) => BookingNotifier(ref.read(studioBookingServiceProvider)));
 
 class BookingNotifier extends StateNotifier<AsyncValue<StudioBooking?>> {
+
   BookingNotifier(this._service) : super(const AsyncValue.data(null));
   final StudioBookingService _service;
 
@@ -73,14 +73,11 @@ class BookingNotifier extends StateNotifier<AsyncValue<StudioBooking?>> {
       state = AsyncValue.data(booking);
     } catch (e) {
       state = AsyncValue.error(e, StackTrace.current);
-      rethrow;
     }
   }
 
   Future<void> updateBookingStatus(
-    String bookingId,
-    final String status,
-  ) async {
+      String bookingId, final String status) async {
     try {
       await _service.updateBookingStatus(bookingId, status);
       // Refresh the booking data
