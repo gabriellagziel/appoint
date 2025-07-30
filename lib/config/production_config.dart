@@ -191,7 +191,7 @@ class ProductionConfig {
   // Search Configuration
   static const int maxSearchResults = 100;
   static const int searchDebounceMs = 300;
-  static const double defaultSearchRadius = 25; // miles
+  static const double defaultSearchRadius = 25.0; // miles
 
   // Messaging Configuration
   static const int maxMessageLength = 1000;
@@ -222,16 +222,20 @@ class ProductionConfig {
   static const bool enableDebugMode = !isProduction;
 
   // Get configuration value
-  static T getValue<T>(String key, T defaultValue) =>
-      String.fromEnvironment(key, defaultValue: defaultValue.toString()) as T;
+  static T getValue<T>(String key, T defaultValue) {
+    return String.fromEnvironment(key, defaultValue: defaultValue.toString())
+        as T;
+  }
 
   // Check if feature is enabled
-  static bool isFeatureEnabled(String feature) =>
-      featureFlags[feature] ?? false;
+  static bool isFeatureEnabled(String feature) {
+    return featureFlags[feature] ?? false;
+  }
 
   // Get subscription plan
-  static Map<String, dynamic>? getSubscriptionPlan(String planId) =>
-      subscriptionPlans[planId];
+  static Map<String, dynamic>? getSubscriptionPlan(String planId) {
+    return subscriptionPlans[planId];
+  }
 
   // Get supported payment methods for environment
   static List<String> getSupportedPaymentMethods() {
@@ -306,11 +310,17 @@ class ProductionConfig {
   }
 
   // Get test mode enabled
-  static bool getTestModeEnabled() => enableTestMode || !isProduction;
+  static bool getTestModeEnabled() {
+    return enableTestMode || !isProduction;
+  }
 
   // Get debug mode enabled
-  static bool getDebugModeEnabled() => enableDebugMode || !isProduction;
+  static bool getDebugModeEnabled() {
+    return enableDebugMode || !isProduction;
+  }
 
   // Get hot reload enabled
-  static bool getHotReloadEnabled() => enableHotReload && !isProduction;
+  static bool getHotReloadEnabled() {
+    return enableHotReload && !isProduction;
+  }
 }

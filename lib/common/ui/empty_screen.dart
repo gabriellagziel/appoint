@@ -1,25 +1,29 @@
 import 'package:flutter/material.dart';
 
+/// Generic screen to display an empty state with an action button.
 class EmptyScreen extends StatelessWidget {
-  final String message;
-  final VoidCallback? onExplore;
-
-  const EmptyScreen({super.key, this.message = 'Nothing here yet', this.onExplore});
+  const EmptyScreen({
+    required this.subtitle,
+    required this.actionLabel,
+    required this.onAction,
+    super.key,
+  });
+  final String subtitle;
+  final String actionLabel;
+  final VoidCallback onAction;
 
   @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(message, textAlign: TextAlign.center),
-          const SizedBox(height: 24),
-          ElevatedButton(
-            onPressed: onExplore,
-            child: const Text('Explore'),
-          ),
-        ],
-      ),
-    );
-  }
+  Widget build(BuildContext context) => Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(subtitle, textAlign: TextAlign.center),
+            const SizedBox(height: 24),
+            ElevatedButton(
+              onPressed: onAction,
+              child: Text(actionLabel),
+            ),
+          ],
+        ),
+      );
 }
