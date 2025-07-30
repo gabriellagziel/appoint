@@ -47,25 +47,26 @@ class Message {
     Map<String, dynamic>? metadata,
     bool? isRead,
     bool? isDelivered,
-  }) =>
-      Message(
-        id: id ?? this.id,
-        senderId: senderId ?? this.senderId,
-        chatId: chatId ?? this.chatId,
-        content: content ?? this.content,
-        type: type ?? this.type,
-        timestamp: timestamp ?? this.timestamp,
-        replyToId: replyToId ?? this.replyToId,
-        attachments: attachments ?? this.attachments,
-        metadata: metadata ?? this.metadata,
-        isRead: isRead ?? this.isRead,
-        isDelivered: isDelivered ?? this.isDelivered,
-      );
+  }) {
+    return Message(
+      id: id ?? this.id,
+      senderId: senderId ?? this.senderId,
+      chatId: chatId ?? this.chatId,
+      content: content ?? this.content,
+      type: type ?? this.type,
+      timestamp: timestamp ?? this.timestamp,
+      replyToId: replyToId ?? this.replyToId,
+      attachments: attachments ?? this.attachments,
+      metadata: metadata ?? this.metadata,
+      isRead: isRead ?? this.isRead,
+      isDelivered: isDelivered ?? this.isDelivered,
+    );
+  }
 }
 
 @JsonSerializable()
-class Chat {
-  const Chat({
+class ChatRoom {
+  const ChatRoom({
     required this.id,
     required this.participants,
     required this.type,
@@ -79,7 +80,7 @@ class Chat {
     this.isMuted = false,
   });
 
-  factory Chat.fromJson(Map<String, dynamic> json) => _$ChatFromJson(json);
+  factory ChatRoom.fromJson(Map<String, dynamic> json) => _$ChatRoomFromJson(json);
 
   final String id;
   final List<String> participants;
@@ -93,9 +94,9 @@ class Chat {
   final bool isArchived;
   final bool isMuted;
 
-  Map<String, dynamic> toJson() => _$ChatToJson(this);
+  Map<String, dynamic> toJson() => _$ChatRoomToJson(this);
 
-  Chat copyWith({
+  ChatRoom copyWith({
     String? id,
     List<String>? participants,
     ChatType? type,
@@ -107,20 +108,21 @@ class Chat {
     bool? isGroup,
     bool? isArchived,
     bool? isMuted,
-  }) =>
-      Chat(
-        id: id ?? this.id,
-        participants: participants ?? this.participants,
-        type: type ?? this.type,
-        lastMessage: lastMessage ?? this.lastMessage,
-        updatedAt: updatedAt ?? this.updatedAt,
-        name: name ?? this.name,
-        avatar: avatar ?? this.avatar,
-        metadata: metadata ?? this.metadata,
-        isGroup: isGroup ?? this.isGroup,
-        isArchived: isArchived ?? this.isArchived,
-        isMuted: isMuted ?? this.isMuted,
-      );
+  }) {
+    return ChatRoom(
+      id: id ?? this.id,
+      participants: participants ?? this.participants,
+      type: type ?? this.type,
+      lastMessage: lastMessage ?? this.lastMessage,
+      updatedAt: updatedAt ?? this.updatedAt,
+      name: name ?? this.name,
+      avatar: avatar ?? this.avatar,
+      metadata: metadata ?? this.metadata,
+      isGroup: isGroup ?? this.isGroup,
+      isArchived: isArchived ?? this.isArchived,
+      isMuted: isMuted ?? this.isMuted,
+    );
+  }
 }
 
 @JsonSerializable()
@@ -163,7 +165,7 @@ class Conversation {
       _$ConversationFromJson(json);
 
   final String id;
-  final Chat chat;
+  final ChatRoom chat;
   final List<Message> messages;
   final int unreadCount;
   final Map<String, UserProfile>? participantProfiles;
@@ -232,4 +234,4 @@ enum AttachmentType {
   document,
   @JsonValue('location')
   location,
-}
+} 

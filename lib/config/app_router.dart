@@ -540,7 +540,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
         mode: _travelMode,
       );
       if (eta == null) return;
-      final start = DateTime.parse(meetingData?['start']?.toString() ?? '');
+      final start = DateTime.parse((meetingData?['start'] as String?) ?? '');
       final minutesUntilStart = start.difference(DateTime.now()).inMinutes;
       final delta = eta - minutesUntilStart;
       setState(() {
@@ -553,7 +553,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(meetingData?['title']?.toString() ?? 'Meeting Details'),
+        title: Text((meetingData?['title'] as String?) ?? 'Meeting Details'),
         actions: [
           if (meetingData != null)
             PopupMenuButton(
@@ -594,13 +594,13 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
               onSelected: (value) {
                 switch (value) {
                   case 'join':
-                    _joinMeeting(meetingData!['link']?.toString() ?? '');
+                    _joinMeeting(meetingData!['link'] as String);
                     break;
                   case 'directions':
-                    _openDirections(
-                      (meetingData!['latitude'] as num?)?.toDouble(),
-                      (meetingData!['longitude'] as num?)?.toDouble(),
-                    );
+                                          _openDirections(
+                        (meetingData!['latitude'] as num?)?.toDouble(),
+                        (meetingData!['longitude'] as num?)?.toDouble(),
+                      );
                     break;
                   case 'share':
                     _shareMeeting();
@@ -703,7 +703,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              meeting['title']?.toString() ?? 'Meeting',
+                              (meeting['title'] as String?) ?? 'Meeting',
                               style: const TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
@@ -711,7 +711,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                             ),
                             if (meeting['description'] != null)
                               Text(
-                                meeting['description']?.toString() ?? '',
+                                meeting['description'] as String,
                                 style: TextStyle(
                                   color: Colors.grey.shade600,
                                   fontSize: 14,
@@ -723,8 +723,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                     ],
                   ),
                   const SizedBox(height: 16),
-                  _buildInfoRow(Icons.calendar_today, 'Date', meeting['date']?.toString()),
-                  _buildInfoRow(Icons.access_time, 'Time', meeting['time']?.toString()),
+                  _buildInfoRow(Icons.calendar_today, 'Date', meeting['date'] as String?),
+                  _buildInfoRow(Icons.access_time, 'Time', meeting['time'] as String?),
                   if (meeting['duration'] != null)
                     _buildInfoRow(Icons.timer, 'Duration', '${meeting['duration']} minutes'),
                 ],
@@ -760,7 +760,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                           const SizedBox(width: 8),
                           Expanded(
                             child: Text(
-                              meeting['link']?.toString() ?? '',
+                              meeting['link'] as String,
                               style: const TextStyle(color: Colors.blue),
                             ),
                           ),
@@ -771,7 +771,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton.icon(
-                        onPressed: () => _joinMeeting(meeting['link']?.toString() ?? ''),
+                        onPressed: () => _joinMeeting(meeting['link'] as String),
                         icon: const Icon(Icons.video_call),
                         label: const Text('Join Meeting'),
                         style: ElevatedButton.styleFrom(
@@ -813,7 +813,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                             const Icon(Icons.location_on, color: Colors.green),
                             const SizedBox(width: 8),
                             Expanded(
-                              child: Text(meeting['address']?.toString() ?? ''),
+                              child: Text(meeting['address'] as String),
                             ),
                           ],
                         ),
@@ -844,8 +844,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                                   (meeting['longitude'] as num).toDouble(),
                                 ),
                                 infoWindow: InfoWindow(
-                                  title: meeting['title']?.toString() ?? 'Meeting Location',
-                                  snippet: meeting['address']?.toString(),
+                                  title: (meeting['title'] as String?) ?? 'Meeting Location',
+                                  snippet: meeting['address'] as String?,
                                 ),
                               ),
                             },
@@ -890,7 +890,7 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                     ),
                     const SizedBox(height: 8),
                     if (meeting['notes'] != null)
-                      _buildInfoRow(Icons.note, 'Notes', meeting['notes']?.toString()),
+                      _buildInfoRow(Icons.note, 'Notes', meeting['notes'] as String?),
                     if (widget.creatorId != null)
                       _buildInfoRow(Icons.person, 'Creator', widget.creatorId!),
                     if (widget.groupId != null)
