@@ -1,13 +1,23 @@
 import 'dart:async';
 
-import 'package:appoint/models/comment.dart';
+import '../models/comment.dart';
 
 /// Simple comment service used for the comments UI widget tests.
 class CommentService {
-  Future<List<Comment>> fetchComments() async => [
-        Comment(id: '1', text: 'First!', createdAt: DateTime.now()),
-        Comment(id: '2', text: 'Nice post', createdAt: DateTime.now()),
-      ];
+  Future<List<Comment>> fetchComments() async {
+    return [
+      Comment(
+          id: '1',
+          username: 'Alice',
+          text: 'First!',
+          createdAt: DateTime.now()),
+      Comment(
+          id: '2',
+          username: 'Bob',
+          text: 'Nice post',
+          createdAt: DateTime.now()),
+    ];
+  }
 
   Future<void> postComment(String text) async {
     // Stubbed network call
