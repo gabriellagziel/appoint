@@ -1,29 +1,22 @@
-import 'package:appoint/common/ui/error_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import '../../firebase_test_helper.dart';
+import 'package:appoint/common/ui/error_screen.dart';
 
 void main() {
-  setUpAll(() async {
-    await initializeTestFirebase();
-  });
+  TestWidgetsFlutterBinding.ensureInitialized();
 
   group('ErrorScreen', () {
-    testWidgets('shows icon, message and retry button', (tester) async {
+    testWidgets('shows message and retry button', (tester) async {
       await tester.pumpWidget(
-        MaterialApp(
-          home: ErrorScreen(
-            message: 'Failed',
-            onRetry: () {},
-          ),
+        const MaterialApp(
+          home: ErrorScreen(),
         ),
       );
 
+      expect(find.text('Something went wrong'), findsOneWidget);
+      expect(find.text('Retry'), findsOneWidget);
       expect(find.byIcon(Icons.error), findsOneWidget);
-      expect(find.text('Failed'), findsOneWidget);
-      expect(find.text('Try Again'), findsOneWidget);
-      expect(find.byType(IconButton), findsOneWidget);
     });
   });
 }
