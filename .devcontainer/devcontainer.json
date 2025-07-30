@@ -4,11 +4,9 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
-  "postCreateCommand": "flutter --version && dart --version && which flutter && which dart",
+  "postCreateCommand": "flutter --version && dart --version && which flutter && which dart && dart pub get",
   "containerEnv": {
-    "ALLOWED_HOSTS": "storage.googleapis.com dart.dev pub.dev firebase-public.firebaseio.com",
-    "GITHUB_CODESPACES_PORTS_HTTPS_PROXY_ALLOWED_HOSTS": "storage.googleapis.com,dart.dev,pub.dev,firebase-public.firebaseio.com",
-    "PUB_CACHE": "/home/vscode/.pub-cache"
+    "ALLOWED_HOSTS": "storage.googleapis.com dart.dev pub.dev firebase-public.firebaseio.com"
   },
   "customizations": {
     "vscode": {
@@ -29,8 +27,11 @@
     }
   },
   "features": {},
+  "containerEnv": {
+    "GITHUB_CODESPACES_PORTS_HTTPS_PROXY_ALLOWED_HOSTS": "storage.googleapis.com,dart.dev,pub.dev,firebase-public.firebaseio.com"
+  },
   "mounts": [
-    "source=${localEnv:HOME}/.pub-cache,target=/home/vscode/.pub-cache,type=bind"
+    "source=${localEnv:HOME}/.pub-cache,target=/root/.pub-cache,type=bind"
   ],
   "postStartCommand": "curl --fail https://storage.googleapis.com && curl --fail https://dart.dev && curl --fail https://pub.dev && curl --fail https://firebase-public.firebaseio.com"
 }
