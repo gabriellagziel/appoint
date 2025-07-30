@@ -3,4 +3,4 @@ enum TestPriority {
   medium,
   high,
   critical,
-} 
+}

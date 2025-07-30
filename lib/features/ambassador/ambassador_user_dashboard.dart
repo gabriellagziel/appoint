@@ -892,7 +892,6 @@ class _AmbassadorUserDashboardState
                   ),
                   child: QrImageView(
                     data: shareLink,
-                    version: QrVersions.auto,
                     size: 200.0,
                     foregroundColor: Colors.black,
                   ),
@@ -1065,9 +1064,11 @@ class _AmbassadorUserDashboardState
 
   Future<void> _shareLink() async {
     const shareLink = 'https://app-oint.com/invite/ABC123';
-    await Share.share(
-      'Join APP-OINT using my referral link: $shareLink',
-      subject: 'Join APP-OINT',
+    await SharePlus.instance.share(
+      ShareParams(
+        text: 'Join APP-OINT using my referral link: $shareLink',
+        subject: 'Join APP-OINT',
+      ),
     );
   }
 
@@ -1081,23 +1082,30 @@ class _AmbassadorUserDashboardState
   }
 
   Future<void> _shareViaMessage(String link) async {
-    await Share.share(
-      'Hey! Join APP-OINT using my referral link: $link',
-      subject: 'Join APP-OINT',
+    await SharePlus.instance.share(
+      ShareParams(
+        text: 'Hey! Join APP-OINT using my referral link: $link',
+        subject: 'Join APP-OINT',
+      ),
     );
   }
 
   Future<void> _shareViaEmail(String link) async {
-    await Share.share(
-      "Hi there!\n\nI'd love to invite you to try APP-OINT. Join using my referral link: $link\n\nThanks!",
-      subject: 'Invitation to join APP-OINT',
+    await SharePlus.instance.share(
+      ShareParams(
+        text:
+            "Hi there!\n\nI'd love to invite you to try APP-OINT. Join using my referral link: $link\n\nThanks!",
+        subject: 'Invitation to join APP-OINT',
+      ),
     );
   }
 
   Future<void> _shareGeneral(String link) async {
-    await Share.share(
-      'Check out APP-OINT: $link',
-      subject: 'APP-OINT Invitation',
+    await SharePlus.instance.share(
+      ShareParams(
+        text: 'Check out APP-OINT: $link',
+        subject: 'APP-OINT Invitation',
+      ),
     );
   }
 
