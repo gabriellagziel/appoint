@@ -1,5 +1,5 @@
 import 'package:appoint/models/playtime_chat.dart';
-import 'package:appoint/providers/booking_draft_provider.dart';
+// import 'package:appoint/providers/booking_draft_provider.dart'; // Unused
 import 'package:appoint/services/auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

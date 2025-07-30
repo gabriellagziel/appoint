@@ -1,15 +1,12 @@
 import 'package:appoint/models/notification_payload.dart';
 import 'package:appoint/services/notification_service.dart';
 import 'package:appoint/services/ui_notification_service.dart';
+// import 'package:appoint/providers/fcm_token_provider.dart'; // Unused
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-/// Provider for the notification service
 final notificationServiceProvider = Provider<NotificationService>(
   (ref) => NotificationService(),
 );
-
-/// Provider for notification permissions state
-final notificationPermissionsProvider = StateProvider<bool>((ref) => false);
 
 /// Provider for notifications list
 final notificationsProvider =
@@ -18,140 +15,11 @@ final notificationsProvider =
 /// Provider for the UI notification service
 /// This should be overridden in the app's main function with a real implementation
 final uiNotificationServiceProvider = Provider<UINotificationService>((ref) {
-  // Return a concrete implementation instead of abstract class
-  return ConcreteUINotificationService();
+  throw UnimplementedError(
+    'UINotificationService not provided. '
+    'Please override this provider in your main function.',
+  );
 });
-
-/// Concrete implementation of UINotificationService
-class ConcreteUINotificationService implements UINotificationService {
-  @override
-  void showSuccess(String message) {
-    // Implementation would go here
-    print('Showing success: $message');
-  }
-
-  @override
-  void showError(String message) {
-    // Implementation would go here
-    print('Showing error: $message');
-  }
-
-  @override
-  void showWarning(String message) {
-    // Implementation would go here
-    print('Showing warning: $message');
-  }
-
-  @override
-  void showInfo(String message) {
-    // Implementation would go here
-    print('Showing info: $message');
-  }
-}
-
-/// Provider for notification helper methods
-final notificationHelperProvider = Provider<NotificationHelper>((ref) {
-  final notificationService = ref.watch(notificationServiceProvider);
-  return NotificationHelper(notificationService, ref);
-});
-
-/// Helper class for common notification operations
-class NotificationHelper {
-  NotificationHelper(this._notificationService, this._ref);
-
-  final NotificationService _notificationService;
-  final Ref _ref;
-
-  /// Request notification permissions and update state
-  Future<bool> requestPermissions() async {
-    final hasPermission = await _notificationService.requestPermissions();
-    _ref.read(notificationPermissionsProvider.notifier).state = hasPermission;
-    return hasPermission;
-  }
-
-  /// Send a local notification
-  Future<void> sendLocalNotification({
-    required String title,
-    required String body,
-    String? payload,
-    int? id,
-  }) async {
-    await _notificationService.sendLocalNotification(
-      title: title,
-      body: body,
-      payload: payload,
-      id: id,
-    );
-  }
-
-  /// Schedule a notification
-  Future<void> scheduleNotification({
-    required String title,
-    required String body,
-    required DateTime scheduledDate,
-    String? payload,
-    int? id,
-  }) async {
-    await _notificationService.scheduleNotification(
-      title: title,
-      body: body,
-      scheduledDate: scheduledDate,
-      payload: payload,
-      id: id,
-    );
-  }
-
-  /// Send a push notification (stub)
-  Future<void> sendPushNotification({
-    required String fcmToken,
-    required String title,
-    required String body,
-    Map<String, dynamic>? data,
-  }) async {
-    await _notificationService.sendPushNotification(
-      fcmToken: fcmToken,
-      title: title,
-      body: body,
-      data: data,
-    );
-  }
-
-  /// Send notification to user by UID
-  Future<void> sendNotificationToUser({
-    required String uid,
-    required String title,
-    required String body,
-    Map<String, dynamic>? data,
-  }) async {
-    await _notificationService.sendNotificationToUser(
-      uid: uid,
-      title: title,
-      body: body,
-      data: data,
-    );
-  }
-
-  /// Refresh pending notifications
-  Future<void> refreshPendingNotifications() async {
-    // Commented out due to type mismatch
-    // final pending = await _notificationService.getPendingNotifications();
-    // _ref.read(notificationsProvider.notifier).state = pending;
-  }
-
-  // Removed getNotificationStats and clearNotificationHistory methods due to missing implementation in NotificationService.
-
-  /// Cancel all notifications
-  Future<void> cancelAllNotifications() async {
-    await _notificationService.cancelAllNotifications();
-    await refreshPendingNotifications();
-  }
-
-  /// Cancel a specific notification
-  Future<void> cancelNotification(int id) async {
-    await _notificationService.cancelNotification(id);
-    await refreshPendingNotifications();
-  }
-}
 
 /// Provider for showing sync-related notifications
 final syncNotificationProvider = Provider<SyncNotificationHelper>((ref) {
@@ -175,8 +43,7 @@ class SyncNotificationHelper {
       _notificationService.showInfo('No changes to sync');
     } else {
       _notificationService.showSuccess(
-        'Successfully synced $syncedCount booking${syncedCount == 1 ? '' : 's'}',
-      );
+          'Successfully synced $syncedCount booking${syncedCount == 1 ? '' : 's'}',);
     }
   }
 

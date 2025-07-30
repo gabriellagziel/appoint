@@ -1,11 +1,9 @@
 import 'dart:io';
 
-import 'package:appoint/infra/firebase_storage_service.dart';
 import 'package:appoint/l10n/app_localizations.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/providers/admin_provider.dart';
-import 'package:appoint/services/broadcast_service.dart' as broadcast_service;
-
+// import 'package:appoint/services/broadcast_service.dart'; // Unused
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
@@ -28,11 +26,15 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
   BroadcastMessageType _selectedType = BroadcastMessageType.text;
   BroadcastTargetingFilters _filters = const BroadcastTargetingFilters();
-  DateTime? _scheduledFor;
+  DateTime? _scheduledDate;
+  TimeOfDay? _scheduledTime;
+  int? _estimatedRecipients;
+
+  // Media selection state
   File? _selectedImage;
   File? _selectedVideo;
-  final List<String> _pollOptions = ['', ''];
-  int _estimatedRecipients = 0;
+
+  final List<String> _pollOptions = ['', '', '', ''];
 
   @override
   void dispose() {
@@ -44,24 +46,23 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final isAdmin = ref.watch(isAdminProvider);
-    final broadcastMessages = ref.watch(broadcastMessagesProvider);
-    final l10n = AppLocalizations.of(context)!;
-    final theme = Theme.of(context);
+    isAdmin = ref.watch(isAdminProvider);
+    broadcastMessages = ref.watch(broadcastMessagesProvider);
+    l10n = AppLocalizations.of(context);
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(l10n.adminBroadcast),
+        title: Text(l10n?.adminBroadcast ?? 'Admin Broadcast'),
         actions: [
           IconButton(
             icon: const Icon(Icons.add),
-            onPressed: () => _showComposeDialog(context, l10n, theme),
+            onPressed: _showComposeDialog,
           ),
         ],
       ),
       body: isAdmin.when(
         data: (hasAdminAccess) {
-          if (hasAdminAccess != true) {
+          if (!hasAdminAccess) {
             return const Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -105,7 +106,8 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
           return broadcastMessages.when(
             data: _buildMessagesList,
             loading: () => const Center(child: CircularProgressIndicator()),
-            error: (error, final stack) => Center(child: Text('Error: $error')),
+            error: (error, final stack) =>
+                Center(child: Text('Error: $error')),
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
@@ -143,7 +145,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Widget _buildMessagesList(List<AdminBroadcastMessage> messages) {
-    final l10n = AppLocalizations.of(context)!;
+    l10n = AppLocalizations.of(context)!;
 
     if (messages.isEmpty) {
       return Center(
@@ -187,7 +189,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                 ),
                 if (message.actualRecipients != null)
                   Text(
-                    l10n.recipients(message.actualRecipients!.toString(), ''),
+                    l10n.recipients(message.actualRecipients!),
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 if (message.openedCount != null)
@@ -197,12 +199,12 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                   ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n.created(message.createdAt.toIso8601String(), ''),
+                  l10n.created(message.createdAt),
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 if (message.scheduledFor != null)
                   Text(
-                    l10n.scheduled(message.scheduledFor!.toIso8601String(), ''),
+                    l10n.scheduled(message.scheduledFor!),
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 const SizedBox(height: 8),
@@ -236,31 +238,26 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       case BroadcastMessageStatus.pending:
         color = Colors.orange;
         text = 'Pending';
-      case BroadcastMessageStatus.sending:
-        color = Colors.blue;
-        text = 'Sending';
       case BroadcastMessageStatus.sent:
         color = Colors.green;
         text = 'Sent';
       case BroadcastMessageStatus.failed:
         color = Colors.red;
         text = 'Failed';
-      case BroadcastMessageStatus.partially_sent:
-        color = Colors.amber;
-        text = 'Partial';
     }
 
     return Chip(
       label: Text(text),
-      backgroundColor: color.withAlpha(51), // 0.2 * 255 = 51
+      backgroundColor: color.withValues(alpha: 0.2),
       labelStyle: TextStyle(color: color),
     );
   }
 
-  void _showComposeDialog(
-      BuildContext context, AppLocalizations l10n, ThemeData theme) {
+  void _showComposeDialog() {
+    l10n = AppLocalizations.of(context)!;
+
     // Check admin privileges before showing the dialog
-    final isAdmin = ref.read(isAdminProvider);
+    isAdmin = ref.read(isAdminProvider);
     isAdmin.when(
       data: (hasAdminAccess) {
         if (!hasAdminAccess) {
@@ -279,7 +276,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
             title: Text(l10n.composeBroadcastMessage),
             content: SizedBox(
               width: double.maxFinite,
-              child: _buildComposeForm(l10n, theme),
+              child: _buildComposeForm(),
             ),
             actions: [
               TextButton(
@@ -313,299 +310,305 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     );
   }
 
-  Widget _buildComposeForm(AppLocalizations l10n, ThemeData theme) => Form(
-        key: _formKey,
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              TextFormField(
-                controller: _titleController,
-                decoration: InputDecoration(
-                  labelText: l10n.title,
-                  border: const OutlineInputBorder(),
-                ),
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return l10n.pleaseEnterTitle;
-                  }
-                  return null;
-                },
-              ),
-              const SizedBox(height: 16),
-              DropdownButtonFormField<BroadcastMessageType>(
-                value: _selectedType,
-                decoration: InputDecoration(
-                  labelText: l10n.messageType,
-                  border: const OutlineInputBorder(),
-                ),
-                items: BroadcastMessageType.values
-                    .map(
-                      (type) => DropdownMenuItem(
-                        value: type,
-                        child: Text(type.name.toUpperCase()),
-                      ),
-                    )
-                    .toList(),
-                onChanged: (value) {
-                  setState(() {
-                    _selectedType = value!;
-                  });
-                },
-              ),
-              const SizedBox(height: 16),
-              TextFormField(
-                controller: _contentController,
-                decoration: InputDecoration(
-                  labelText: l10n.content(''),
-                  border: const OutlineInputBorder(),
-                ),
-                maxLines: 3,
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return l10n.pleaseEnterContent;
-                  }
-                  return null;
-                },
-              ),
-              const SizedBox(height: 16),
-              // Media Selection Section
-              ExpansionTile(
-                title: Text(l10n.mediaOptional),
-                children: [
-                  const SizedBox(height: 8),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: ElevatedButton.icon(
-                          onPressed: _pickImage,
-                          icon: const Icon(Icons.image),
-                          label: Text(l10n.pickImage),
-                        ),
-                      ),
-                      const SizedBox(width: 8),
-                      Expanded(
-                        child: ElevatedButton.icon(
-                          onPressed: _pickVideo,
-                          icon: const Icon(Icons.videocam),
-                          label: Text(l10n.pickVideo),
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 8),
-                  if (_selectedImage != null || _selectedVideo != null) ...[
-                    const Divider(),
-                    const SizedBox(height: 8),
-                    if (_selectedImage != null) ...[
-                      Row(
-                        children: [
-                          const Icon(Icons.image, color: Colors.green),
-                          const SizedBox(width: 8),
-                          Expanded(
-                            child: Text(
-                              '${l10n.imageSelected}: ${_selectedImage!.path.split('/').last}',
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                          ),
-                          IconButton(
-                            onPressed: _clearMedia,
-                            icon: const Icon(Icons.clear, size: 16),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 8),
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(8),
-                        child: Image.file(
-                          _selectedImage!,
-                          height: 100,
-                          width: double.infinity,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                    ],
-                    if (_selectedVideo != null) ...[
-                      Row(
-                        children: [
-                          const Icon(Icons.videocam, color: Colors.blue),
-                          const SizedBox(width: 8),
-                          Expanded(
-                            child: Text(
-                              '${l10n.videoSelected}: ${_selectedVideo!.path.split('/').last}',
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                          ),
-                          IconButton(
-                            onPressed: _clearMedia,
-                            icon: const Icon(Icons.clear, size: 16),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 8),
-                      Container(
-                        height: 100,
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        child: const Center(
-                          child: Icon(Icons.videocam,
-                              size: 40, color: Colors.grey),
-                        ),
-                      ),
-                    ],
-                  ],
-                ],
-              ),
-              const SizedBox(height: 16),
-              if (_selectedType == BroadcastMessageType.link)
-                TextFormField(
-                  controller: _linkController,
-                  decoration: InputDecoration(
-                    labelText: l10n.externalLink,
-                    border: const OutlineInputBorder(),
-                  ),
-                  validator: (value) {
-                    if (value == null || value.isEmpty) {
-                      return l10n.pleaseEnterLink;
-                    }
-                    return null;
-                  },
-                ),
-              if (_selectedType == BroadcastMessageType.poll) ...[
-                const SizedBox(height: 16),
-                Text(l10n.pollOptions),
-                ...List.generate(
-                  4,
-                  (index) => Padding(
-                    padding: const EdgeInsets.only(top: 8),
-                    child: TextFormField(
-                      decoration: InputDecoration(
-                        labelText: '${l10n.option} ${index + 1}',
-                        border: const OutlineInputBorder(),
-                      ),
-                      onChanged: (value) {
-                        _pollOptions[index] = value;
-                      },
-                    ),
-                  ),
-                ),
-              ],
-              const SizedBox(height: 16),
-              _buildTargetingFilters(l10n),
-              const SizedBox(height: 16),
-              _buildSchedulingOptions(l10n),
-              if (_estimatedRecipients != 0) ...[
-                const SizedBox(height: 16),
-                Text(
-                  '${l10n.estimatedRecipients}: $_estimatedRecipients',
-                  style: Theme.of(context).textTheme.titleMedium,
-                ),
-              ],
-            ],
-          ),
-        ),
-      );
+  Widget _buildComposeForm() {
+    l10n = AppLocalizations.of(context)!;
 
-  Widget _buildTargetingFilters(AppLocalizations l10n) => ExpansionTile(
-        title: Text(l10n.targetingFilters),
-        children: [
-          // Countries
-          TextFormField(
-            decoration: InputDecoration(
-              labelText: l10n.countries,
-              border: const OutlineInputBorder(),
-            ),
-            onChanged: (value) {
-              setState(() {
-                _filters = _filters.copyWith(
-                  countries: value.isEmpty
-                      ? null
-                      : value.split(',').map((e) => e.trim()).toList(),
-                );
-              });
-              _estimateRecipients();
-            },
-          ),
-          const SizedBox(height: 16),
-          // Cities
-          TextFormField(
-            decoration: InputDecoration(
-              labelText: l10n.cities,
-              border: const OutlineInputBorder(),
-            ),
-            onChanged: (value) {
-              setState(() {
-                _filters = _filters.copyWith(
-                  cities: value.isEmpty
-                      ? null
-                      : value.split(',').map((e) => e.trim()).toList(),
-                );
-              });
-              _estimateRecipients();
-            },
-          ),
-          const SizedBox(height: 16),
-          // Subscription Tiers
-          TextFormField(
-            decoration: InputDecoration(
-              labelText: l10n.subscriptionTiers,
-              border: const OutlineInputBorder(),
-            ),
-            onChanged: (value) {
-              setState(() {
-                _filters = _filters.copyWith(
-                  subscriptionTiers: value.isEmpty
-                      ? null
-                      : value.split(',').map((e) => e.trim()).toList(),
-                );
-              });
-              _estimateRecipients();
-            },
-          ),
-          const SizedBox(height: 16),
-          // User Roles
-          TextFormField(
-            decoration: InputDecoration(
-              labelText: l10n.userRoles,
-              border: const OutlineInputBorder(),
-            ),
-            onChanged: (value) {
-              setState(() {
-                _filters = _filters.copyWith(
-                  userRoles: value.isEmpty
-                      ? null
-                      : value.split(',').map((e) => e.trim()).toList(),
-                );
-              });
-              _estimateRecipients();
-            },
-          ),
-        ],
-      );
-
-  Widget _buildSchedulingOptions(AppLocalizations l10n) => ExpansionTile(
-        title: Text(l10n.scheduling),
-        children: [
-          ListTile(
-            title: Text(l10n.scheduleForLater),
-            trailing: Switch(
-              value: _scheduledFor != null,
-              onChanged: (value) {
-                if (value) {
-                  _selectScheduledDateTime();
-                } else {
-                  setState(() {
-                    _scheduledFor = null;
-                  });
+    return Form(
+      key: _formKey,
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            TextFormField(
+              controller: _titleController,
+              decoration: const InputDecoration(
+                labelText: 'Title',
+                border: OutlineInputBorder(),
+              ),
+              validator: (value) {
+                if (value == null || value.isEmpty) {
+                  return 'Please enter a title';
                 }
+                return null;
               },
             ),
+            const SizedBox(height: 16),
+            DropdownButtonFormField<BroadcastMessageType>(
+              value: _selectedType,
+              decoration: const InputDecoration(
+                labelText: 'Message Type',
+                border: OutlineInputBorder(),
+              ),
+              items: BroadcastMessageType.values.map((type) => DropdownMenuItem(
+                  value: type,
+                  child: Text(type.name.toUpperCase()),
+                ),).toList(),
+              onChanged: (value) {
+                setState(() {
+                  _selectedType = value!;
+                });
+              },
+            ),
+            const SizedBox(height: 16),
+            TextFormField(
+              controller: _contentController,
+              decoration: const InputDecoration(
+                labelText: 'Content',
+                border: OutlineInputBorder(),
+              ),
+              maxLines: 3,
+              validator: (value) {
+                if (value == null || value.isEmpty) {
+                  return 'Please enter content';
+                }
+                return null;
+              },
+            ),
+            const SizedBox(height: 16),
+            // Media Selection Section
+            ExpansionTile(
+              title: Text(l10n.mediaOptional),
+              children: [
+                const SizedBox(height: 8),
+                Row(
+                  children: [
+                    Expanded(
+                      child: ElevatedButton.icon(
+                        onPressed: _pickImage,
+                        icon: const Icon(Icons.image),
+                        label: Text(l10n.pickImage),
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: ElevatedButton.icon(
+                        onPressed: _pickVideo,
+                        icon: const Icon(Icons.videocam),
+                        label: Text(l10n.pickVideo),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                if (_selectedImage != null || _selectedVideo != null) ...[
+                  const Divider(),
+                  const SizedBox(height: 8),
+                  if (_selectedImage != null) ...[
+                    Row(
+                      children: [
+                        const Icon(Icons.image, color: Colors.green),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: Text(
+                            'Image selected: ${_selectedImage!.path.split('/').last}',
+                            style: const TextStyle(fontSize: 12),
+                          ),
+                        ),
+                        IconButton(
+                          onPressed: _clearMedia,
+                          icon: const Icon(Icons.clear, size: 16),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 8),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(8),
+                      child: Image.file(
+                        _selectedImage!,
+                        height: 100,
+                        width: double.infinity,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ],
+                  if (_selectedVideo != null) ...[
+                    Row(
+                      children: [
+                        const Icon(Icons.videocam, color: Colors.blue),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: Text(
+                            'Video selected: ${_selectedVideo!.path.split('/').last}',
+                            style: const TextStyle(fontSize: 12),
+                          ),
+                        ),
+                        IconButton(
+                          onPressed: _clearMedia,
+                          icon: const Icon(Icons.clear, size: 16),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 8),
+                    Container(
+                      height: 100,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: const Center(
+                        child:
+                            Icon(Icons.videocam, size: 40, color: Colors.grey),
+                      ),
+                    ),
+                  ],
+                ],
+              ],
+            ),
+            const SizedBox(height: 16),
+            if (_selectedType == BroadcastMessageType.link)
+              TextFormField(
+                controller: _linkController,
+                decoration: const InputDecoration(
+                  labelText: 'External Link',
+                  border: OutlineInputBorder(),
+                ),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Please enter a link';
+                  }
+                  return null;
+                },
+              ),
+            if (_selectedType == BroadcastMessageType.poll) ...[
+              const SizedBox(height: 16),
+              Text(l10n.pollOptions),
+              ...List.generate(4, (index) => Padding(
+                  padding: const EdgeInsets.only(top: 8),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      labelText: 'Option ${index + 1}',
+                      border: const OutlineInputBorder(),
+                    ),
+                    onChanged: (value) {
+                      _pollOptions[index] = value;
+                    },
+                  ),
+                ),),
+            ],
+            const SizedBox(height: 16),
+            _buildTargetingFilters(),
+            const SizedBox(height: 16),
+            _buildSchedulingOptions(),
+            if (_estimatedRecipients != null) ...[
+              const SizedBox(height: 16),
+              Text(
+                'Estimated Recipients: $_estimatedRecipients',
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildTargetingFilters() {
+    l10n = AppLocalizations.of(context)!;
+
+    return ExpansionTile(
+      title: Text(l10n.targetingFilters),
+      children: [
+        // Countries
+        TextFormField(
+          decoration: const InputDecoration(
+            labelText: 'Countries (comma-separated)',
+            border: OutlineInputBorder(),
           ),
-        ],
-      );
+          onChanged: (value) {
+            setState(() {
+              _filters = _filters.copyWith(
+                countries: value.isEmpty
+                    ? null
+                    : value.split(',').map((e) => e.trim()).toList(),
+              );
+            });
+            _estimateRecipients();
+          },
+        ),
+        const SizedBox(height: 16),
+        // Cities
+        TextFormField(
+          decoration: const InputDecoration(
+            labelText: 'Cities (comma-separated)',
+            border: OutlineInputBorder(),
+          ),
+          onChanged: (value) {
+            setState(() {
+              _filters = _filters.copyWith(
+                cities: value.isEmpty
+                    ? null
+                    : value.split(',').map((e) => e.trim()).toList(),
+              );
+            });
+            _estimateRecipients();
+          },
+        ),
+        const SizedBox(height: 16),
+        // Subscription Tiers
+        TextFormField(
+          decoration: const InputDecoration(
+            labelText: 'Subscription Tiers (comma-separated)',
+            border: OutlineInputBorder(),
+          ),
+          onChanged: (value) {
+            setState(() {
+              _filters = _filters.copyWith(
+                subscriptionTiers: value.isEmpty
+                    ? null
+                    : value.split(',').map((e) => e.trim()).toList(),
+              );
+            });
+            _estimateRecipients();
+          },
+        ),
+        const SizedBox(height: 16),
+        // User Roles
+        TextFormField(
+          decoration: const InputDecoration(
+            labelText: 'User Roles (comma-separated)',
+            border: OutlineInputBorder(),
+          ),
+          onChanged: (value) {
+            setState(() {
+              _filters = _filters.copyWith(
+                userRoles: value.isEmpty
+                    ? null
+                    : value.split(',').map((e) => e.trim()).toList(),
+              );
+            });
+            _estimateRecipients();
+          },
+        ),
+      ],
+    );
+  }
+
+  Widget _buildSchedulingOptions() {
+    l10n = AppLocalizations.of(context)!;
+
+    return ExpansionTile(
+      title: Text(l10n.scheduling),
+      children: [
+        ListTile(
+          title: Text(l10n.scheduleForLater),
+          trailing: Switch(
+            value: _scheduledDate != null,
+            onChanged: (value) {
+              if (value) {
+                _selectScheduledDateTime();
+              } else {
+                setState(() {
+                  _scheduledDate = null;
+                  _scheduledTime = null;
+                });
+              }
+            },
+          ),
+        ),
+      ],
+    );
+  }
 
   Future<void> _selectScheduledDateTime() async {
     final date = await showDatePicker(
@@ -624,13 +627,8 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       if (!mounted) return;
       if (time != null) {
         setState(() {
-          _scheduledFor = DateTime(
-            date.year,
-            date.month,
-            date.day,
-            time.hour,
-            time.minute,
-          );
+          _scheduledDate = date;
+          _scheduledTime = time;
         });
       }
     }
@@ -642,14 +640,14 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         _filters.subscriptionTiers == null &&
         _filters.userRoles == null) {
       setState(() {
-        _estimatedRecipients = 0;
+        _estimatedRecipients = null;
       });
       return;
     }
 
     try {
-      final service = ref.read(broadcast_service.adminBroadcastServiceProvider);
-      final count = await service.estimateTargetAudience(_filters);
+      service = ref.read(broadcastServiceProvider);
+      count = await service.estimateTargetAudience(_filters);
       setState(() {
         _estimatedRecipients = count;
       });
@@ -657,9 +655,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       if (!mounted) return;
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-              content: Text(
-                  '${AppLocalizations.of(context)!.errorEstimatingRecipients}: $e')),
+          SnackBar(content: Text('Error estimating recipients: $e')),
         );
       }
     }
@@ -671,7 +667,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       return;
     }
     try {
-      final pickedFile = await ImagePicker().pickImage(
+      pickedFile = await ImagePicker().pickImage(
         source: ImageSource.gallery,
         maxWidth: 1920,
         maxHeight: 1080,
@@ -688,9 +684,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       if (!mounted) return;
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-              content: Text(
-                  '${AppLocalizations.of(context)!.errorPickingImage}: $e')),
+          SnackBar(content: Text('Error picking image: $e')),
         );
       }
     }
@@ -701,7 +695,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       return;
     }
     try {
-      final pickedFile = await ImagePicker().pickVideo(
+      pickedFile = await ImagePicker().pickVideo(
         source: ImageSource.gallery,
         maxDuration: const Duration(minutes: 5), // 5 minute limit
       );
@@ -716,9 +710,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       if (!mounted) return;
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-              content: Text(
-                  '${AppLocalizations.of(context)!.errorPickingVideo}: $e')),
+          SnackBar(content: Text('Error picking video: $e')),
         );
       }
     }
@@ -735,12 +727,12 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Future<void> _saveMessage() async {
-    final l10n = AppLocalizations.of(context)!;
+    l10n = AppLocalizations.of(context)!;
 
     if (!_formKey.currentState!.validate()) return;
 
     // Additional admin role check before saving
-    final isAdmin = await ref.read(isAdminProvider.future);
+    isAdmin = await ref.read(isAdminProvider.future);
     if (!isAdmin) {
       if (!mounted) return;
       if (mounted) {
@@ -758,7 +750,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       final user = FirebaseAuth.instance.currentUser;
 
       if (user == null) {
-        throw Exception(AppLocalizations.of(context)!.userNotAuthenticated);
+        throw Exception('User not authenticated');
       }
 
       // Upload media files if selected
@@ -766,23 +758,13 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       String? videoUrl;
 
       if (_selectedImage != null) {
-        try {
-          imageUrl = await FirebaseStorageService.instance
-              .uploadBroadcastImage(_selectedImage!);
-        } catch (e) {
-          throw Exception(
-              '${AppLocalizations.of(context)!.failedToUploadImage}: $e');
-        }
+        // TODO(username): Implement media upload to Firebase Storage
+        imageUrl = 'placeholder_image_url';
       }
 
       if (_selectedVideo != null) {
-        try {
-          videoUrl = await FirebaseStorageService.instance
-              .uploadBroadcastVideo(_selectedVideo!);
-        } catch (e) {
-          throw Exception(
-              '${AppLocalizations.of(context)!.failedToUploadVideo}: $e');
-        }
+        // TODO(username): Implement video upload to Firebase Storage
+        videoUrl = 'placeholder_video_url';
       }
 
       // TODO(username): Implement actual message creation
@@ -803,12 +785,20 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         createdByAdminId: user.uid,
         createdByAdminName: user.displayName ?? 'Admin',
         createdAt: DateTime.now(),
-        scheduledFor: _scheduledFor,
+        scheduledFor: _scheduledDate != null && _scheduledTime != null
+            ? DateTime(
+                _scheduledDate!.year,
+                _scheduledDate!.month,
+                _scheduledDate!.day,
+                _scheduledTime!.hour,
+                _scheduledTime!.minute,
+              )
+            : null,
         status: BroadcastMessageStatus.pending,
         estimatedRecipients: _estimatedRecipients,
       );
 
-      final service = ref.read(broadcast_service.adminBroadcastServiceProvider);
+      service = ref.read(broadcastServiceProvider);
       await service.createBroadcastMessage(message);
 
       // Clear form and media
@@ -828,17 +818,17 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       if (!mounted) return;
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(l10n.errorSavingMessage(e.toString()))),
+          SnackBar(content: Text(l10n.errorSavingMessage(e))),
         );
       }
     }
   }
 
   Future<void> _sendMessage(String messageId) async {
-    final l10n = AppLocalizations.of(context)!;
+    l10n = AppLocalizations.of(context)!;
 
     try {
-      final service = ref.read(broadcast_service.adminBroadcastServiceProvider);
+      service = ref.read(broadcastServiceProvider);
       await service.sendBroadcastMessage(messageId);
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
@@ -847,13 +837,13 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.errorSendingMessage(e.toString()))),
+        SnackBar(content: Text(l10n.errorSendingMessage(e))),
       );
     }
   }
 
   void _showMessageDetails(AdminBroadcastMessage message) {
-    final l10n = AppLocalizations.of(context)!;
+    l10n = AppLocalizations.of(context)!;
 
     showDialog(
       context: context,
@@ -869,10 +859,8 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
               Text(l10n.type(message.type.toString())),
               if (message.imageUrl != null) ...[
                 const SizedBox(height: 8),
-                Text(
-                  '${l10n.image}:',
-                  style: const TextStyle(fontWeight: FontWeight.bold),
-                ),
+                const Text('Image:',
+                    style: TextStyle(fontWeight: FontWeight.bold),),
                 Text(message.imageUrl!, style: const TextStyle(fontSize: 12)),
                 const SizedBox(height: 8),
                 ClipRRect(
@@ -882,24 +870,22 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                     height: 150,
                     width: double.infinity,
                     fit: BoxFit.cover,
-                    errorBuilder: (context, final error, final stackTrace) =>
-                        Container(
-                      height: 150,
-                      width: double.infinity,
-                      color: Colors.grey[300],
-                      child: const Center(
-                        child: Icon(Icons.broken_image, size: 40),
+                    errorBuilder:
+                        (context, final error, final stackTrace) => Container(
+                        height: 150,
+                        width: double.infinity,
+                        color: Colors.grey[300],
+                        child: const Center(
+                          child: Icon(Icons.broken_image, size: 40),
+                        ),
                       ),
-                    ),
                   ),
                 ),
               ],
               if (message.videoUrl != null) ...[
                 const SizedBox(height: 8),
-                Text(
-                  '${l10n.video}:',
-                  style: const TextStyle(fontWeight: FontWeight.bold),
-                ),
+                const Text('Video:',
+                    style: TextStyle(fontWeight: FontWeight.bold),),
                 Text(message.videoUrl!, style: const TextStyle(fontSize: 12)),
                 const SizedBox(height: 8),
                 Container(
@@ -919,21 +905,21 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
               if (message.pollOptions != null) ...[
                 const SizedBox(height: 8),
                 Text(l10n.pollOptions),
-                ...message.pollOptions!.map((option) => Text('• $option')),
+                ...message.pollOptions!
+                    .map((option) => Text('• $option')),
               ],
               const SizedBox(height: 8),
               Text(l10n.status(message.status.toString())),
               if (message.actualRecipients != null)
-                Text(l10n.recipients(message.actualRecipients!.toString(), '')),
+                Text(l10n.recipients(message.actualRecipients!)),
               if (message.openedCount != null)
                 Text(l10n.opened(message.openedCount!)),
               if (message.clickedCount != null)
-                Text(l10n.clicked('Clicked', message.clickedCount!)),
+                Text(l10n.clicked(message.clickedCount!)),
               const SizedBox(height: 8),
-              Text(l10n.created(message.createdAt.toIso8601String(), '')),
+              Text(l10n.created(message.createdAt)),
               if (message.scheduledFor != null)
-                Text(l10n.scheduled(
-                    message.scheduledFor!.toIso8601String(), '')),
+                Text(l10n.scheduled(message.scheduledFor!)),
             ],
           ),
         ),

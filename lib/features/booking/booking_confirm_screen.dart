@@ -11,8 +11,6 @@ import 'package:appoint/widgets/business_header_widget.dart';
 import 'package:appoint/widgets/whatsapp_share_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
-
 class BookingConfirmScreen extends ConsumerStatefulWidget {
   const BookingConfirmScreen({super.key});
 

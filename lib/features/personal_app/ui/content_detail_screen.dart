@@ -1,55 +1,44 @@
+// Displays a single content item retrieved from Firestore.
+// import 'package:appoint/providers/content_provider.dart'; // Unused
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../providers/content_library_provider.dart';
-import '../../../widgets/loading_state.dart';
-import '../../../widgets/error_state.dart';
-import '../../../theme/app_spacing.dart';
-
+/// Shows details for a single content item.
 class ContentDetailScreen extends ConsumerWidget {
+
+  const ContentDetailScreen({required this.contentId, super.key});
   final String contentId;
 
-  const ContentDetailScreen({super.key, required this.contentId});
-
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final itemAsync = ref.watch(contentItemProvider(contentId));
+  Widget build(BuildContext context, final WidgetRef ref) {
+    contentAsync = ref.watch(contentByIdProvider(contentId));
+
     return Scaffold(
       appBar: AppBar(title: const Text('Content Detail')),
-      body: itemAsync.when(
+      body: contentAsync.when(
         data: (item) {
           if (item == null) {
             return const Center(child: Text('Content not found'));
           }
           return SingleChildScrollView(
-            padding: const EdgeInsets.all(AppSpacing.md),
+            padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                if (item.imageUrl.isNotEmpty)
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(8),
-                    child: Image.network(
-                      item.imageUrl,
-                      height: 200,
-                      width: double.infinity,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                const SizedBox(height: AppSpacing.md),
-                Text(item.title,
-                    style: Theme.of(context).textTheme.headlineSmall),
-                const SizedBox(height: AppSpacing.sm),
-                Text('By ${item.author}',
-                    style: Theme.of(context).textTheme.labelMedium),
-                const SizedBox(height: AppSpacing.md),
-                Text(item.description),
+                if (item.imageUrl != null) Image.network(item.imageUrl!),
+                const SizedBox(height: 12),
+                Text(
+                  item.title,
+                  style: Theme.of(context).textTheme.titleLarge,
+                ),
+                const SizedBox(height: 8),
+                if (item.description != null) Text(item.description!),
               ],
             ),
           );
         },
-        loading: () => const LoadingState(),
-        error: (e, _) => ErrorState(title: 'Error', description: e.toString()),
+        loading: () => const Center(child: CircularProgressIndicator()),
+        error: (e, final _) => Center(child: Text('Error: $e')),
       ),
     );
   }

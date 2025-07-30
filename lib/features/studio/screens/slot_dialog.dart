@@ -1,4 +1,4 @@
-import 'package:appoint/features/studio/models/slot.dart';
+// import 'package:appoint/features/studio/models/slot.dart'; // Unused
 import 'package:appoint/features/studio/providers/staff_availability_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
