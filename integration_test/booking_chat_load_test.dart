@@ -5,16 +5,17 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 
 void main() {
-  binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
+  final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
   group('Booking Chat Load', () {
     testWidgets('repeated chat booking flow', (tester) async {
       await binding.watchPerformance(
         () async {
-          await app.appMain();
+          app.main();
           await tester.pumpAndSettle();
 
-          navigator = tester.state<NavigatorState>(find.byType(Navigator));
+          final navigator =
+              tester.state<NavigatorState>(find.byType(Navigator));
           navigator.pushNamed('/chat-booking');
           await tester.pumpAndSettle();
 

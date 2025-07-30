@@ -24,6 +24,14 @@ void main() {
   });
 
   testWidgets('Delete My Account flow deletes user and data', (tester) async {
+    // Declare variables
+    late Finder profileTab;
+    late Finder profileIcon;
+    late Finder deleteButton;
+    late Finder confirmDelete;
+    late DocumentSnapshot userDoc;
+    late DocumentSnapshot profileDoc;
+
     // Seed test user and docs
     const testEmail = 'delete_test@example.com';
     const testPassword = 'testpassword';
@@ -88,6 +96,10 @@ void main() {
 
   testWidgets('Delete account confirmation dialog shows correct content',
       (tester) async {
+    // Declare variables
+    late Finder profileTab;
+    late Finder deleteButton;
+
     // Arrange: Create and login test user
     const testEmail = 'confirm_test@example.com';
     const testPassword = 'testpassword';
@@ -127,6 +139,12 @@ void main() {
 
   testWidgets('Cancel delete account closes dialog without deletion',
       (tester) async {
+    // Declare variables
+    late Finder profileTab;
+    late Finder deleteButton;
+    late Finder cancelButton;
+    late DocumentSnapshot userDoc;
+
     // Arrange: Create and login test user
     const testEmail = 'cancel_test@example.com';
     const testPassword = 'testpassword';

@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 
@@ -53,7 +54,9 @@ class StartupTimeTest {
 
     // Wait for first frame
     await TestWidgetsFlutterBinding.ensureInitialized();
-    await TestWidgetsFlutterBinding.instance.pumpAndSettle();
+    // Note: pumpAndSettle is not available on TestWidgetsFlutterBinding
+    // Using pump instead
+    await TestWidgetsFlutterBinding.instance.pump();
 
     stopwatch.stop();
     return stopwatch.elapsed;
@@ -67,7 +70,9 @@ class StartupTimeTest {
     await Future.delayed(const Duration(milliseconds: 500));
 
     // Simulate user interaction readiness
-    await TestWidgetsFlutterBinding.instance.pumpAndSettle();
+    // Note: pumpAndSettle is not available on TestWidgetsFlutterBinding
+    // Using pump instead
+    await TestWidgetsFlutterBinding.instance.pump();
 
     stopwatch.stop();
     return stopwatch.elapsed;
@@ -103,8 +108,8 @@ class StartupTimeTest {
     // Clear any cached data
     await Future.delayed(const Duration(milliseconds: 100));
 
-    // Reset test binding
-    TestWidgetsFlutterBinding.instance.resetTestTextInput();
+    // Reset test binding - this method doesn't exist, removing the call
+    // TestWidgetsFlutterBinding.instance.resetTestTextInput();
   }
 
   /// Analyzes startup time results
