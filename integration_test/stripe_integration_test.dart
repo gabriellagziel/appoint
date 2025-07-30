@@ -30,6 +30,7 @@ void main() {
       app.main();
       await tester.pumpAndSettle();
 
+      late StripeService stripeService;
       stripeService = StripeService();
 
       // Test checkout session creation
@@ -49,6 +50,8 @@ void main() {
       await tester.pumpAndSettle();
 
       const testStudioId = 'test-studio-stripe';
+      late StripeService stripeService;
+      late String? status;
       stripeService = StripeService();
 
       // Test subscription status checking
@@ -73,6 +76,8 @@ void main() {
       await tester.pumpAndSettle();
 
       const testStudioId = 'test-studio-details';
+      late StripeService stripeService;
+      late Map<String, dynamic>? details;
       stripeService = StripeService();
 
       // Set up test subscription data
@@ -89,7 +94,7 @@ void main() {
       // Test subscription details retrieval
       details = await stripeService.getSubscriptionDetails(testStudioId);
       expect(details, isNotNull);
-      final nonNullDetails = details;
+      final nonNullDetails = details!;
       expect(nonNullDetails['status'], equals('active'));
       expect(nonNullDetails['subscriptionId'], equals('sub_test456'));
     });
@@ -99,6 +104,8 @@ void main() {
       await tester.pumpAndSettle();
 
       const testStudioId = 'test-studio-active';
+      late StripeService stripeService;
+      late bool isActive;
       stripeService = StripeService();
 
       // Test inactive subscription
@@ -122,6 +129,7 @@ void main() {
       await tester.pumpAndSettle();
 
       const testStudioId = 'test-studio-cancel';
+      late StripeService stripeService;
       stripeService = StripeService();
 
       // Set up active subscription
@@ -144,6 +152,8 @@ void main() {
       app.main();
       await tester.pumpAndSettle();
 
+      late StripeService stripeService;
+      late String? status;
       stripeService = StripeService();
 
       // Test with invalid studio ID
