@@ -26,7 +26,7 @@ class _AnalyticsDashboardScreenState
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(l10n.analyticsDashboard),
+        title: Text('Analytics Dashboard'),
         actions: [
           IconButton(
             onPressed: _showExportDialog,
@@ -36,7 +36,7 @@ class _AnalyticsDashboardScreenState
           IconButton(
             onPressed: _showFilterDialog,
             icon: const Icon(Icons.filter_list),
-            tooltip: l10n.filters,
+                          tooltip: 'Filters',
           ),
         ],
       ),
@@ -53,8 +53,8 @@ class _AnalyticsDashboardScreenState
                     // onTap: (index) => setState(() => _selectedTabIndex = index),
                     tabs: [
                       Tab(text: l10n.overview),
-                      Tab(text: l10n.broadcasts),
-                      Tab(text: l10n.formAnalytics),
+                                    Tab(text: 'Broadcasts'),
+              Tab(text: 'Form Analytics'),
                     ],
                   ),
                   Expanded(
@@ -918,7 +918,7 @@ class _FilterDialogState extends State<FilterDialog> {
     final l10n = AppLocalizations.of(context)!;
 
     return AlertDialog(
-      title: Text(l10n.filters),
+                  title: Text('Filters'),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -1162,7 +1162,7 @@ class FormAnalyticsDetailDialog extends StatelessWidget {
     final l10n = AppLocalizations.of(context)!;
 
     return AlertDialog(
-      title: Text('${l10n.formAnalytics}: ${broadcast.message.title}'),
+                  title: Text('Form Analytics: ${broadcast.message.title}'),
       content: SizedBox(
         width: double.maxFinite,
         height: 400,

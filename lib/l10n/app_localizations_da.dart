@@ -77,7 +77,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get cancelInviteConfirmation => '[DA] Annuller imødesynsbekræftelse';
 
   @override
-  String created(String created, Object date) {
+  String created(Object date) {
     return '[DA] Oprettet';
   }
 
@@ -137,7 +137,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get participants => '[DA] Deltagere';
 
   @override
-  String recipients(String recipients, Object count) {
+  String recipients(Object count) {
     return '[DA] Modtagere';
   }
 
@@ -177,7 +177,7 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
-  String content(String content) {
+  String content(Object content) {
     return '[DA] [DA] Content';
   }
 
@@ -231,7 +231,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get removeChild => '[DA] Fjern barn';
 
   @override
-  String status(String status) {
+  String status(Object status) {
     return '[DA] [DA] Status';
   }
 
@@ -281,7 +281,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get accessRevokedSuccessfully => '[DA] Adgang tilbagekaldt med succes';
 
   @override
-  String type(String type) {
+  String type(Object type) {
     return '[DA] Type';
   }
 
@@ -413,7 +413,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get inviteDetail => '[DA] [DA] Invite Details';
 
   @override
-  String scheduled(String scheduled, Object date) {
+  String scheduled(Object date) {
     return '[DA] Planlagt';
   }
 
@@ -426,7 +426,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get scheduling => '[DA] Planlægger';
 
   @override
-  String errorSavingMessage(String error) {
+  String errorSavingMessage(Object error) {
     return '[DA] Fejl ved gem besked';
   }
 
@@ -459,7 +459,7 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
-  String errorSendingMessage(String error) {
+  String errorSendingMessage(Object error) {
     return '[DA] Fejl ved afsendelse af besked';
   }
 
@@ -515,12 +515,12 @@ class AppLocalizationsDa extends AppLocalizations {
   String get pollOptions => '[DA] [DA] Poll Options';
 
   @override
-  String clicked(String clicked, Object count) {
+  String clicked(Object count) {
     return '[DA] Klikket';
   }
 
   @override
-  String link(String link) {
+  String link(Object link) {
     return '[DA] [DA] Link';
   }
 
@@ -2662,194 +2662,4 @@ class AppLocalizationsDa extends AppLocalizations {
   String referralSuccessBody(String referredUserName, String totalReferrals) {
     return '[DA] $referredUserName joined through your referral! You now have $totalReferrals total referrals. (Danish)';
   }
-
-  @override
-  String get title => 'Title';
-
-  @override
-  String get pleaseEnterTitle => 'Please enter a title';
-
-  @override
-  String get messageType => 'Message Type';
-
-  @override
-  String get pleaseEnterContent => 'Please enter content';
-
-  @override
-  String get imageSelected => 'Image selected';
-
-  @override
-  String get videoSelected => 'Video selected';
-
-  @override
-  String get externalLink => 'External Link';
-
-  @override
-  String get pleaseEnterLink => 'Please enter a link';
-
-  @override
-  String get estimatedRecipients => 'Estimated recipients';
-
-  @override
-  String get countries => 'Countries';
-
-  @override
-  String get cities => 'Cities';
-
-  @override
-  String get subscriptionTiers => 'Subscription Tiers';
-
-  @override
-  String get userRoles => 'User Roles';
-
-  @override
-  String get errorEstimatingRecipients => 'Error estimating recipients';
-
-  @override
-  String get errorPickingImage => 'Error picking image';
-
-  @override
-  String get errorPickingVideo => 'Error picking video';
-
-  @override
-  String get userNotAuthenticated => 'User not authenticated';
-
-  @override
-  String get failedToUploadImage => 'Failed to upload image';
-
-  @override
-  String get failedToUploadVideo => 'Failed to upload video';
-
-  @override
-  String get image => 'Image';
-
-  @override
-  String get video => 'Video';
-
-  @override
-  String get continue1 => 'Continue';
-
-  @override
-  String get getStarted => 'Get Started';
-
-  @override
-  String get analyticsDashboard => 'Analytics Dashboard';
-
-  @override
-  String get filters => 'Filters';
-
-  @override
-  String get broadcasts => 'Broadcasts';
-
-  @override
-  String get formAnalytics => 'Form Analytics';
-
-  @override
-  String get totalBroadcasts => 'Total Broadcasts';
-
-  @override
-  String get totalRecipients => 'Total Recipients';
-
-  @override
-  String get openRate => 'Open Rate';
-
-  @override
-  String get engagementRate => 'Engagement Rate';
-
-  @override
-  String get noDataAvailable => 'No data available';
-
-  @override
-  String get breakdown => 'Breakdown';
-
-  @override
-  String get byCountry => 'By Country';
-
-  @override
-  String get byType => 'By Type';
-
-  @override
-  String get noBroadcastsFound => 'No broadcasts found';
-
-  @override
-  String get sent => 'Sent';
-
-  @override
-  String get responses => 'Responses';
-
-  @override
-  String get clickRate => 'Click Rate';
-
-  @override
-  String get responseRate => 'Response Rate';
-
-  @override
-  String get viewFormAnalytics => 'View Form Analytics';
-
-  @override
-  String get pending => 'Pending';
-
-  @override
-  String get sending => 'Sending';
-
-  @override
-  String get failed => 'Failed';
-
-  @override
-  String get partialSent => 'Partial Sent';
-
-  @override
-  String get noFormBroadcasts => 'No form broadcasts';
-
-  @override
-  String get totalResponses => 'Total Responses';
-
-  @override
-  String get noFormData => 'No form data';
-
-  @override
-  String get average => 'Average';
-
-  @override
-  String get mostCommon => 'Most Common';
-
-  @override
-  String get errorLoadingData => 'Error loading data';
-
-  @override
-  String get today => 'Today';
-
-  @override
-  String get last7Days => 'Last 7 Days';
-
-  @override
-  String get last30Days => 'Last 30 Days';
-
-  @override
-  String get customRange => 'Custom Range';
-
-  @override
-  String get all => 'All';
-
-  @override
-  String get timeRange => 'Time Range';
-
-  @override
-  String get startDate => 'Start Date';
-
-  @override
-  String get endDate => 'End Date';
-
-  @override
-  String get exportDataDescription =>
-      'Export analytics data for the selected time range';
-
-  @override
-  String get exportComplete => 'Export complete';
-
-  @override
-  String get exportFailed => 'Export failed';
-
-  @override
-  String get export => 'Export';
 }

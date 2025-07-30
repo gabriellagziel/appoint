@@ -1,9 +1,11 @@
 import 'dart:io';
 
 import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/utils/admin_localizations.dart';
 import 'package:appoint/models/admin_broadcast_message.dart';
 import 'package:appoint/providers/admin_provider.dart';
-// import 'package:appoint/services/broadcast_service.dart'; // Unused
+import 'package:appoint/services/broadcast_service.dart';
+import 'package:appoint/infra/firebase_storage_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
@@ -26,15 +28,11 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
   BroadcastMessageType _selectedType = BroadcastMessageType.text;
   BroadcastTargetingFilters _filters = const BroadcastTargetingFilters();
-  DateTime? _scheduledDate;
-  TimeOfDay? _scheduledTime;
-  int? _estimatedRecipients;
-
-  // Media selection state
+  DateTime? _scheduledFor;
   File? _selectedImage;
   File? _selectedVideo;
-
-  final List<String> _pollOptions = ['', '', '', ''];
+  List<String> _pollOptions = ['', ''];
+  int _estimatedRecipients = 0;
 
   @override
   void dispose() {
@@ -46,9 +44,10 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
   @override
   Widget build(BuildContext context) {
-    isAdmin = ref.watch(isAdminProvider);
-    broadcastMessages = ref.watch(broadcastMessagesProvider);
-    l10n = AppLocalizations.of(context);
+    final isAdmin = ref.watch(isAdminProvider);
+    final broadcastMessages = ref.watch(broadcastMessagesProvider);
+    final l10n = AppLocalizations.of(context);
+    final theme = Theme.of(context);
 
     return Scaffold(
       appBar: AppBar(
@@ -56,14 +55,14 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         actions: [
           IconButton(
             icon: const Icon(Icons.add),
-            onPressed: _showComposeDialog,
+            onPressed: () => _showComposeDialog(context, l10n!, theme),
           ),
         ],
       ),
       body: isAdmin.when(
         data: (hasAdminAccess) {
-          if (!hasAdminAccess) {
-            return const Center(
+          if (hasAdminAccess != true) {
+            return Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -145,11 +144,11 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Widget _buildMessagesList(List<AdminBroadcastMessage> messages) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     if (messages.isEmpty) {
       return Center(
-        child: Text(l10n.noBroadcastMessages),
+        child: Text(l10n?.noBroadcastMessages ?? 'No broadcast messages'),
       );
     }
 
@@ -178,33 +177,33 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n.content(message.content),
+                  l10n?.content(message.content) ?? 'Content: ${message.content}',
                   maxLines: 3,
                   overflow: TextOverflow.ellipsis,
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n.type(message.type.toString()),
+                  l10n?.type(message.type.toString()) ?? 'Type: ${message.type}',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 if (message.actualRecipients != null)
                   Text(
-                    l10n.recipients(message.actualRecipients!),
+                    l10n?.recipients(message.actualRecipients!) ?? 'Recipients: ${message.actualRecipients}',
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 if (message.openedCount != null)
                   Text(
-                    l10n.opened(message.openedCount!),
+                    l10n?.opened(message.openedCount!) ?? 'Opened: ${message.openedCount}',
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 const SizedBox(height: 8),
                 Text(
-                  l10n.created(message.createdAt),
+                  l10n?.created(message.createdAt) ?? 'Created: ${message.createdAt}',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 if (message.scheduledFor != null)
                   Text(
-                    l10n.scheduled(message.scheduledFor!),
+                    l10n?.scheduled(message.scheduledFor!) ?? 'Scheduled: ${message.scheduledFor}',
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                 const SizedBox(height: 8),
@@ -214,11 +213,11 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                     if (message.status == BroadcastMessageStatus.pending)
                       TextButton(
                         onPressed: () => _sendMessage(message.id),
-                        child: Text(l10n.sendNow),
+                        child: Text(l10n?.sendNow ?? 'Send Now'),
                       ),
                     TextButton(
                       onPressed: () => _showMessageDetails(message),
-                      child: Text(l10n.details),
+                      child: Text(l10n?.details ?? 'Details'),
                     ),
                   ],
                 ),
@@ -238,26 +237,35 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       case BroadcastMessageStatus.pending:
         color = Colors.orange;
         text = 'Pending';
+        break;
+      case BroadcastMessageStatus.sending:
+        color = Colors.blue;
+        text = 'Sending';
+        break;
       case BroadcastMessageStatus.sent:
         color = Colors.green;
         text = 'Sent';
+        break;
       case BroadcastMessageStatus.failed:
         color = Colors.red;
         text = 'Failed';
+        break;
+      case BroadcastMessageStatus.partially_sent:
+        color = Colors.amber;
+        text = 'Partial';
+        break;
     }
 
     return Chip(
       label: Text(text),
-      backgroundColor: color.withValues(alpha: 0.2),
+      backgroundColor: color.withOpacity(0.2),
       labelStyle: TextStyle(color: color),
     );
   }
 
-  void _showComposeDialog() {
-    l10n = AppLocalizations.of(context)!;
-
+  void _showComposeDialog(BuildContext context, AppLocalizations l10n, ThemeData theme) {
     // Check admin privileges before showing the dialog
-    isAdmin = ref.read(isAdminProvider);
+    final isAdmin = ref.read(isAdminProvider);
     isAdmin.when(
       data: (hasAdminAccess) {
         if (!hasAdminAccess) {
@@ -276,7 +284,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
             title: Text(l10n.composeBroadcastMessage),
             content: SizedBox(
               width: double.maxFinite,
-              child: _buildComposeForm(),
+              child: _buildComposeForm(l10n, theme),
             ),
             actions: [
               TextButton(
@@ -310,8 +318,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     );
   }
 
-  Widget _buildComposeForm() {
-    l10n = AppLocalizations.of(context)!;
+  Widget _buildComposeForm(AppLocalizations l10n, ThemeData theme) {
 
     return Form(
       key: _formKey,
@@ -321,9 +328,9 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
           children: [
             TextFormField(
               controller: _titleController,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 labelText: 'Title',
-                border: OutlineInputBorder(),
+                border: const OutlineInputBorder(),
               ),
               validator: (value) {
                 if (value == null || value.isEmpty) {
@@ -335,9 +342,9 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
             const SizedBox(height: 16),
             DropdownButtonFormField<BroadcastMessageType>(
               value: _selectedType,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 labelText: 'Message Type',
-                border: OutlineInputBorder(),
+                border: const OutlineInputBorder(),
               ),
               items: BroadcastMessageType.values.map((type) => DropdownMenuItem(
                   value: type,
@@ -352,9 +359,9 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
             const SizedBox(height: 16),
             TextFormField(
               controller: _contentController,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 labelText: 'Content',
-                border: OutlineInputBorder(),
+                border: const OutlineInputBorder(),
               ),
               maxLines: 3,
               validator: (value) {
@@ -400,7 +407,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(
-                            'Image selected: ${_selectedImage!.path.split('/').last}',
+                            'Image Selected: ${_selectedImage!.path.split('/').last}',
                             style: const TextStyle(fontSize: 12),
                           ),
                         ),
@@ -428,7 +435,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                         const SizedBox(width: 8),
                         Expanded(
                           child: Text(
-                            'Video selected: ${_selectedVideo!.path.split('/').last}',
+                            'Video Selected: ${_selectedVideo!.path.split('/').last}',
                             style: const TextStyle(fontSize: 12),
                           ),
                         ),
@@ -459,9 +466,9 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
             if (_selectedType == BroadcastMessageType.link)
               TextFormField(
                 controller: _linkController,
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   labelText: 'External Link',
-                  border: OutlineInputBorder(),
+                  border: const OutlineInputBorder(),
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
@@ -477,7 +484,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                   padding: const EdgeInsets.only(top: 8),
                   child: TextFormField(
                     decoration: InputDecoration(
-                      labelText: 'Option ${index + 1}',
+                      labelText: '${l10n.option} ${index + 1}',
                       border: const OutlineInputBorder(),
                     ),
                     onChanged: (value) {
@@ -487,10 +494,10 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
                 ),),
             ],
             const SizedBox(height: 16),
-            _buildTargetingFilters(),
+            _buildTargetingFilters(l10n),
             const SizedBox(height: 16),
-            _buildSchedulingOptions(),
-            if (_estimatedRecipients != null) ...[
+            _buildSchedulingOptions(l10n),
+            if (_estimatedRecipients != 0) ...[
               const SizedBox(height: 16),
               Text(
                 'Estimated Recipients: $_estimatedRecipients',
@@ -503,17 +510,16 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     );
   }
 
-  Widget _buildTargetingFilters() {
-    l10n = AppLocalizations.of(context)!;
+  Widget _buildTargetingFilters(AppLocalizations l10n) {
 
     return ExpansionTile(
       title: Text(l10n.targetingFilters),
       children: [
         // Countries
         TextFormField(
-          decoration: const InputDecoration(
-            labelText: 'Countries (comma-separated)',
-            border: OutlineInputBorder(),
+          decoration: InputDecoration(
+                            labelText: 'Countries',
+            border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
             setState(() {
@@ -529,9 +535,9 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         const SizedBox(height: 16),
         // Cities
         TextFormField(
-          decoration: const InputDecoration(
-            labelText: 'Cities (comma-separated)',
-            border: OutlineInputBorder(),
+          decoration: InputDecoration(
+                            labelText: 'Cities',
+            border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
             setState(() {
@@ -547,9 +553,9 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         const SizedBox(height: 16),
         // Subscription Tiers
         TextFormField(
-          decoration: const InputDecoration(
-            labelText: 'Subscription Tiers (comma-separated)',
-            border: OutlineInputBorder(),
+          decoration: InputDecoration(
+                            labelText: 'Subscription Tiers',
+            border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
             setState(() {
@@ -565,9 +571,9 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         const SizedBox(height: 16),
         // User Roles
         TextFormField(
-          decoration: const InputDecoration(
-            labelText: 'User Roles (comma-separated)',
-            border: OutlineInputBorder(),
+          decoration: InputDecoration(
+                            labelText: 'User Roles',
+            border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
             setState(() {
@@ -584,8 +590,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
     );
   }
 
-  Widget _buildSchedulingOptions() {
-    l10n = AppLocalizations.of(context)!;
+  Widget _buildSchedulingOptions(AppLocalizations l10n) {
 
     return ExpansionTile(
       title: Text(l10n.scheduling),
@@ -593,14 +598,13 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         ListTile(
           title: Text(l10n.scheduleForLater),
           trailing: Switch(
-            value: _scheduledDate != null,
+            value: _scheduledFor != null,
             onChanged: (value) {
               if (value) {
                 _selectScheduledDateTime();
               } else {
                 setState(() {
-                  _scheduledDate = null;
-                  _scheduledTime = null;
+                  _scheduledFor = null;
                 });
               }
             },
@@ -627,8 +631,13 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       if (!mounted) return;
       if (time != null) {
         setState(() {
-          _scheduledDate = date;
-          _scheduledTime = time;
+          _scheduledFor = DateTime(
+                date.year,
+                date.month,
+                date.day,
+                time.hour,
+                time.minute,
+              );
         });
       }
     }
@@ -640,14 +649,14 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         _filters.subscriptionTiers == null &&
         _filters.userRoles == null) {
       setState(() {
-        _estimatedRecipients = null;
+        _estimatedRecipients = 0;
       });
       return;
     }
 
     try {
-      service = ref.read(broadcastServiceProvider);
-      count = await service.estimateTargetAudience(_filters);
+      final service = ref.read(adminBroadcastServiceProvider);
+      final count = await service.estimateTargetAudience(_filters);
       setState(() {
         _estimatedRecipients = count;
       });
@@ -655,7 +664,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       if (!mounted) return;
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error estimating recipients: $e')),
+          SnackBar(content: Text('${AppLocalizations.of(context).errorEstimatingRecipients}: $e')),
         );
       }
     }
@@ -667,7 +676,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       return;
     }
     try {
-      pickedFile = await ImagePicker().pickImage(
+      final pickedFile = await ImagePicker().pickImage(
         source: ImageSource.gallery,
         maxWidth: 1920,
         maxHeight: 1080,
@@ -676,15 +685,15 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
 
       if (pickedFile != null) {
         setState(() {
-          _selectedImage = File(pickedFile.path);
-          _selectedVideo = null; // Clear video if image is selected
+          final _selectedImage = File(pickedFile.path);
+          final _selectedVideo = null; // Clear video if image is selected
         });
       }
     } catch (e) {
       if (!mounted) return;
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error picking image: $e')),
+          SnackBar(content: Text('${AppLocalizations.of(context).errorPickingImage}: $e')),
         );
       }
     }
@@ -695,22 +704,22 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       return;
     }
     try {
-      pickedFile = await ImagePicker().pickVideo(
+      final pickedFile = await ImagePicker().pickVideo(
         source: ImageSource.gallery,
         maxDuration: const Duration(minutes: 5), // 5 minute limit
       );
 
       if (pickedFile != null) {
         setState(() {
-          _selectedVideo = File(pickedFile.path);
-          _selectedImage = null; // Clear image if video is selected
+          final _selectedVideo = File(pickedFile.path);
+          final _selectedImage = null; // Clear image if video is selected
         });
       }
     } catch (e) {
       if (!mounted) return;
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error picking video: $e')),
+          SnackBar(content: Text('${AppLocalizations.of(context).errorPickingVideo}: $e')),
         );
       }
     }
@@ -722,17 +731,17 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   void _clearMedia() {
     setState(() {
       _selectedImage = null;
-      _selectedVideo = null;
+      final _selectedVideo = null;
     });
   }
 
   Future<void> _saveMessage() async {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     if (!_formKey.currentState!.validate()) return;
 
     // Additional admin role check before saving
-    isAdmin = await ref.read(isAdminProvider.future);
+    final isAdmin = await ref.read(isAdminProvider.future);
     if (!isAdmin) {
       if (!mounted) return;
       if (mounted) {
@@ -750,7 +759,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       final user = FirebaseAuth.instance.currentUser;
 
       if (user == null) {
-        throw Exception('User not authenticated');
+        throw Exception('${AppLocalizations.of(context).userNotAuthenticated}');
       }
 
       // Upload media files if selected
@@ -758,13 +767,19 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
       String? videoUrl;
 
       if (_selectedImage != null) {
-        // TODO(username): Implement media upload to Firebase Storage
-        imageUrl = 'placeholder_image_url';
+        try {
+          final imageUrl = await FirebaseStorageService.instance.uploadBroadcastImage(_selectedImage!);
+        } catch (e) {
+          throw Exception('${AppLocalizations.of(context).failedToUploadImage}: $e');
+        }
       }
 
       if (_selectedVideo != null) {
-        // TODO(username): Implement video upload to Firebase Storage
-        videoUrl = 'placeholder_video_url';
+        try {
+          final videoUrl = await FirebaseStorageService.instance.uploadBroadcastVideo(_selectedVideo!);
+        } catch (e) {
+          throw Exception('${AppLocalizations.of(context).failedToUploadVideo}: $e');
+        }
       }
 
       // TODO(username): Implement actual message creation
@@ -785,20 +800,12 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
         createdByAdminId: user.uid,
         createdByAdminName: user.displayName ?? 'Admin',
         createdAt: DateTime.now(),
-        scheduledFor: _scheduledDate != null && _scheduledTime != null
-            ? DateTime(
-                _scheduledDate!.year,
-                _scheduledDate!.month,
-                _scheduledDate!.day,
-                _scheduledTime!.hour,
-                _scheduledTime!.minute,
-              )
-            : null,
+        scheduledFor: _scheduledFor,
         status: BroadcastMessageStatus.pending,
         estimatedRecipients: _estimatedRecipients,
       );
 
-      service = ref.read(broadcastServiceProvider);
+      final service = ref.read(adminBroadcastServiceProvider);
       await service.createBroadcastMessage(message);
 
       // Clear form and media
@@ -825,10 +832,10 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   Future<void> _sendMessage(String messageId) async {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     try {
-      service = ref.read(broadcastServiceProvider);
+      final service = ref.read(adminBroadcastServiceProvider);
       await service.sendBroadcastMessage(messageId);
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
@@ -843,7 +850,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
   }
 
   void _showMessageDetails(AdminBroadcastMessage message) {
-    l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context);
 
     showDialog(
       context: context,
@@ -859,7 +866,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
               Text(l10n.type(message.type.toString())),
               if (message.imageUrl != null) ...[
                 const SizedBox(height: 8),
-                const Text('Image:',
+                const Text('${AppLocalizations.of(context).image}:',
                     style: TextStyle(fontWeight: FontWeight.bold),),
                 Text(message.imageUrl!, style: const TextStyle(fontSize: 12)),
                 const SizedBox(height: 8),
@@ -884,7 +891,7 @@ class _AdminBroadcastScreenState extends ConsumerState<AdminBroadcastScreen> {
               ],
               if (message.videoUrl != null) ...[
                 const SizedBox(height: 8),
-                const Text('Video:',
+                const Text('${AppLocalizations.of(context).video}:',
                     style: TextStyle(fontWeight: FontWeight.bold),),
                 Text(message.videoUrl!, style: const TextStyle(fontSize: 12)),
                 const SizedBox(height: 8),
