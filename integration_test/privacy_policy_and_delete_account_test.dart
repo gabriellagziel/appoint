@@ -25,6 +25,7 @@ void main() {
       await _navigateToSettings(tester);
 
       // Find and tap the privacy policy tile
+      late Finder privacyPolicyTile;
       privacyPolicyTile = find.text('Privacy Policy');
       expect(privacyPolicyTile, findsOneWidget);
       await tester.tap(privacyPolicyTile);
@@ -39,6 +40,7 @@ void main() {
       await _navigateToProfile(tester);
 
       // Find and tap the delete account button
+      late Finder deleteButton;
       deleteButton = find.text('Delete My Account');
       expect(deleteButton, findsOneWidget);
       await tester.tap(deleteButton);
@@ -58,6 +60,7 @@ void main() {
       await _navigateToProfile(tester);
 
       // Find and tap the delete account button
+      late Finder deleteButton;
       deleteButton = find.text('Delete My Account');
       await tester.tap(deleteButton);
       await tester.pumpAndSettle();
@@ -82,6 +85,8 @@ void main() {
 
       await _navigateToProfile(tester);
 
+      late Finder deleteButton;
+      late Finder cancelButton;
       deleteButton = find.text('Delete My Account');
       await tester.tap(deleteButton);
       await tester.pumpAndSettle();
@@ -90,8 +95,10 @@ void main() {
       await tester.tap(cancelButton);
       await tester.pumpAndSettle();
 
-      expect(find.text('Are you sure you want to delete your account?'),
-          findsNothing,);
+      expect(
+        find.text('Are you sure you want to delete your account?'),
+        findsNothing,
+      );
     });
   });
 }

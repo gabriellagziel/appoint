@@ -42,16 +42,16 @@ void main() {
     });
 
     Widget createTestWidget() => ProviderScope(
-        overrides: [
-          firebaseAuthProvider.overrideWithValue(mockAuth),
-          firestoreProvider.overrideWithValue(fakeFirestore),
-        ],
-        child: MaterialApp(
-          localizationsDelegates: AppLocalizations.localizationsDelegates,
-          supportedLocales: AppLocalizations.supportedLocales,
-          home: ChatFlowWidget(auth: AuthService()),
-        ),
-      );
+          overrides: [
+            firebaseAuthProvider.overrideWithValue(mockAuth),
+            firestoreProvider.overrideWithValue(fakeFirestore),
+          ],
+          child: MaterialApp(
+            localizationsDelegates: AppLocalizations.localizationsDelegates,
+            supportedLocales: AppLocalizations.supportedLocales,
+            home: ChatFlowWidget(auth: AuthService()),
+          ),
+        );
 
     testWidgets('shows correct character counter for 400 characters',
         (tester) async {

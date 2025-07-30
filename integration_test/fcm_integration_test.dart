@@ -27,6 +27,10 @@ void main() {
 
     testWidgets('FCM Service Initialization and Token Management',
         (tester) async {
+      // Declare variables
+      late FCMService fcmService;
+      late String? token;
+
       app.main();
       await tester.pumpAndSettle();
 
@@ -50,8 +54,7 @@ void main() {
       }
     });
 
-    testWidgets('FCM Notification Trigger on New Booking',
-        (tester) async {
+    testWidgets('FCM Notification Trigger on New Booking', (tester) async {
       app.main();
       await tester.pumpAndSettle();
 
@@ -90,11 +93,15 @@ void main() {
 
       expect(bookings.docs, isNotEmpty);
       expect(
-          bookings.docs.first.data()['clientName'], equals('FCM Test Client'),);
+        bookings.docs.first.data()['clientName'],
+        equals('FCM Test Client'),
+      );
     });
 
-    testWidgets('FCM Topic Subscription and Unsubscription',
-        (tester) async {
+    testWidgets('FCM Topic Subscription and Unsubscription', (tester) async {
+      // Declare variables
+      late FCMService fcmService;
+
       app.main();
       await tester.pumpAndSettle();
 
@@ -114,6 +121,10 @@ void main() {
     });
 
     testWidgets('FCM Foreground Message Handling', (tester) async {
+      // Declare variables
+      late FCMService fcmService;
+      late String? token;
+
       app.main();
       await tester.pumpAndSettle();
 

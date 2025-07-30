@@ -106,7 +106,9 @@ void main() {
                   ElevatedButton(
                     onPressed: () async {
                       final result = await showBookingConflictDialog(
-                          context, testConflict,);
+                        context,
+                        testConflict,
+                      );
                       keepMineResult = result == ConflictResolution.keepLocal;
                     },
                     child: const Text('Test Keep Mine'),
@@ -114,7 +116,9 @@ void main() {
                   ElevatedButton(
                     onPressed: () async {
                       final result = await showBookingConflictDialog(
-                          context, testConflict,);
+                        context,
+                        testConflict,
+                      );
                       keepServerResult = result == ConflictResolution.keepLocal;
                     },
                     child: const Text('Test Keep Server'),
@@ -138,8 +142,11 @@ void main() {
       await tester.pumpAndSettle();
       await tester.tap(find.text('Keep Server Version'));
       await tester.pumpAndSettle();
-      expect(keepServerResult, isFalse,
-          reason: '"Keep Server" should return false',);
+      expect(
+        keepServerResult,
+        isFalse,
+        reason: '"Keep Server" should return false',
+      );
     });
   });
 }
