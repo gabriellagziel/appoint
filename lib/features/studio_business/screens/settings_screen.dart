@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SettingsScreen extends ConsumerStatefulWidget {
   const SettingsScreen({super.key});
@@ -36,9 +37,9 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         final data = doc.data()!;
         setState(() {
           _notificationsEnabled = data['notificationsEnabled'] ?? true;
-          _autoConfirmBookings = data['autoConfirmBookings'] ?? false;
-          _emailNotifications = data['emailNotifications'] ?? true;
-          _smsNotifications = data['smsNotifications'] ?? false;
+          var _autoConfirmBookings = data['autoConfirmBookings'] ?? false;
+          var _emailNotifications = data['emailNotifications'] ?? true;
+          var _smsNotifications = data['smsNotifications'] ?? false;
         });
       }
     } catch (e) {
@@ -68,16 +69,15 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         );
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error saving settings: $e')),
         );
+      }
     }
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => Scaffold(
       appBar: AppBar(
         title: const Text('Settings'),
         actions: [
@@ -107,7 +107,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           ),
           SwitchListTile(
             title: const Text('Email Notifications'),
-            subtitle: const Text('Receive email notifications'),
+            subtitle: const Text('Receive booking notifications via email'),
             value: _emailNotifications,
             onChanged: (value) {
               setState(() {
@@ -117,7 +117,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           ),
           SwitchListTile(
             title: const Text('SMS Notifications'),
-            subtitle: const Text('Receive SMS notifications'),
+            subtitle: const Text('Receive booking notifications via SMS'),
             value: _smsNotifications,
             onChanged: (value) {
               setState(() {
@@ -125,7 +125,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               });
             },
           ),
-          const SizedBox(height: 24),
+          const Divider(),
+          const SizedBox(height: 16),
           const Text(
             'Booking Settings',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
@@ -133,7 +134,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           const SizedBox(height: 16),
           SwitchListTile(
             title: const Text('Auto-Confirm Bookings'),
-            subtitle: const Text('Automatically confirm new bookings'),
+            subtitle: const Text('Automatically confirm new booking requests'),
             value: _autoConfirmBookings,
             onChanged: (value) {
               setState(() {
@@ -141,21 +142,55 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
               });
             },
           ),
-          const SizedBox(height: 24),
+          const Divider(),
+          const SizedBox(height: 16),
           const Text(
-            'Support & Help',
+            'Account Settings',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 16),
           ListTile(
-            leading: const Icon(Icons.help_outline),
-            title: const Text('Help & Support'),
-            subtitle: const Text('Get help with your business account'),
+            leading: const Icon(Icons.person),
+            title: const Text('Edit Business Profile'),
+            subtitle: const Text('Update your business information'),
             onTap: () {
-              // TODO(username): Implement this feature
+              Navigator.pushNamed(context, '/business/profile');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.security),
+            title: const Text('Privacy Policy'),
+            subtitle: const Text('Read our privacy policy'),
+            onTap: () {
+              Navigator.of(context).pushNamed('/privacy');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.help),
+            title: const Text('Help & Support'),
+            subtitle: const Text('Get help with your account'),
+            onTap: () {
+              // TODO(username): Implement this featurent help & support
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.info),
+            title: const Text('About'),
+            subtitle: const Text('App version and information'),
+            onTap: () {
+              showAboutDialog(
+                context: context,
+                applicationName: 'APP-OINT Business',
+                applicationVersion: '1.0.0',
+                applicationIcon: const FlutterLogo(size: 64),
+                children: const [
+                  Text(
+                      'Business management app for studios and service providers.'),
+                ],
+              );
             },
           ),
         ],
       ),
     );
-  }
+}

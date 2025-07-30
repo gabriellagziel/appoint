@@ -46,6 +46,129 @@
   <!-- Required meta tags for Google Sign-In -->
   <meta name="google-signin-client_id" content="REDACTED_TOKEN.googleusercontent.com">
 
+  <!-- SEO Structured Data - JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://app-oint.com/#organization",
+        "name": "APP-OINT",
+        "url": "https://app-oint.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://app-oint.com/icons/Icon-512.png",
+          "width": 512,
+          "height": 512
+        },
+        "description": "APP-OINT - Time Organized. Set Send Done. Your Healthcare Appointment Platform",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+1-800-APP-OINT",
+            "contactType": "customer service",
+            "availableLanguage": ["English", "Spanish", "French", "German", "Italian", "Portuguese", "Dutch", "Russian", "Chinese", "Japanese", "Korean", "Arabic", "Hindi", "Persian", "Turkish", "Polish", "Czech", "Danish", "Finnish", "Norwegian", "Swedish", "Estonian", "Latvian", "Lithuanian", "Slovenian", "Slovak", "Croatian", "Serbian", "Bulgarian", "Romanian", "Hungarian", "Greek", "Hebrew", "Thai", "Vietnamese", "Malay", "Indonesian", "Tagalog", "Ukrainian", "Belarusian", "Georgian", "Armenian", "Azerbaijani", "Kazakh", "Uzbek", "Kyrgyz", "Mongolian", "Tibetan", "Nepali", "Bengali", "Tamil", "Telugu", "Marathi", "Gujarati", "Punjabi", "Urdu", "Pashto", "Dari"]
+          },
+          {
+            "@type": "ContactPoint",
+            "email": "support@app-oint.com",
+            "contactType": "customer service"
+          },
+          {
+            "@type": "ContactPoint",
+            "email": "legal@app-oint.com",
+            "contactType": "legal"
+          },
+          {
+            "@type": "ContactPoint",
+            "email": "privacy@app-oint.com",
+            "contactType": "privacy"
+          }
+        ],
+        "sameAs": [
+          "https://twitter.com/app_oint",
+          "https://facebook.com/app.oint",
+          "https://linkedin.com/company/app-oint"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://app-oint.com/#website",
+        "url": "https://app-oint.com",
+        "name": "APP-OINT",
+        "description": "APP-OINT - Time Organized. Set Send Done. Your Healthcare Appointment Platform",
+        "publisher": {
+          "@id": "https://app-oint.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://app-oint.com/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        },
+        "inLanguage": ["en", "es", "fr", "de", "it", "pt", "nl", "ru", "zh", "ja", "ko", "ar", "hi", "fa", "tr", "pl", "cs", "da", "fi", "no", "sv", "et", "lv", "lt", "sl", "sk", "hr", "sr", "bg", "ro", "hu", "el", "he", "th", "vi", "ms", "id", "tl", "uk", "be", "ka", "hy", "az", "kk", "uz", "ky", "mn", "bo", "ne", "bn", "ta", "te", "mr", "gu", "pa", "ur", "ps"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://app-oint.com/#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://app-oint.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Dashboard",
+            "item": "https://app-oint.com/dashboard"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Terms of Service",
+            "item": "https://app-oint.com/terms"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Privacy Policy",
+            "item": "https://app-oint.com/privacy"
+          }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://app-oint.com/#webapp",
+        "name": "APP-OINT",
+        "description": "Healthcare appointment scheduling and management platform with multilingual support",
+        "url": "https://app-oint.com",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Web, iOS, Android",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "featureList": [
+          "Appointment scheduling",
+          "Healthcare provider management", 
+          "Multilingual support (56 languages)",
+          "Family account management",
+          "COPPA and GDPR compliant",
+          "Real-time notifications",
+          "Calendar integration"
+        ]
+      }
+    ]
+  }
+  </script>
+
   <script>
     // Firebase Configuration
     const firebaseConfig = {

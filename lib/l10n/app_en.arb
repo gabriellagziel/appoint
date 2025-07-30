@@ -102,6 +102,10 @@
   "@revokeAccess": {
     "description": "Description"
   },
+  "saveGroupForRecognition": "Save Group for Recognition",
+  "@saveGroupForRecognition": {
+    "description": "Description"
+  },
   "playtimeLiveScheduled": "Live playtime scheduled!",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -317,6 +321,10 @@
   "@upcomingSessions": {
     "description": "Description"
   },
+  "enterGroupName": "Enter group name",
+  "@enterGroupName": {
+    "description": "Description"
+  },
   "confirm": "Confirm",
   "@confirm": {
     "description": "Description"
@@ -447,7 +455,7 @@
   },
   "quickActions": "Quick Actions",
   "@quickActions": {
-    "description": "Section title for quick action buttons"
+    "description": "Description"
   },
   "playtimeTitle": "Playtime",
   "@playtimeTitle": {
@@ -579,7 +587,7 @@
   },
   "share": "Share",
   "@share": {
-    "description": "Tab label for share section"
+    "description": "Description"
   },
   "playtimeEnterGameName": "Enter game name",
   "@playtimeEnterGameName": {
@@ -597,6 +605,10 @@
   "@createGame": {
     "description": "Description"
   },
+  "groupNameOptional": "Group Name (Optional)",
+  "@groupNameOptional": {
+    "description": "Description"
+  },
   "playtimeNoSessions": "No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -611,6 +623,10 @@
   },
   "close": "Close",
   "@close": {
+    "description": "Description"
+  },
+  "knownGroupDetected": "Known group detected",
+  "@knownGroupDetected": {
     "description": "Description"
   },
   "back": "Back",
@@ -656,7 +672,7 @@
   },
   "overview": "Overview",
   "@overview": {
-    "description": "Tab label for overview section"
+    "description": "Description"
   },
   "bookings": "Bookings",
   "@bookings": {
@@ -871,7 +887,7 @@
   },
   "rewards": "Rewards",
   "@rewards": {
-    "description": "Tab label for rewards section"
+    "description": "Localization key for: Rewards"
   },
   "time": "Time",
   "@time": {
@@ -1279,7 +1295,7 @@
   },
   "copyLink": "Copy Link",
   "@copyLink": {
-    "description": "Tooltip for copy link button"
+    "description": "Localization key for: Copy Link"
   },
   "dashboard1": "Dashboard",
   "@dashboard1": {
@@ -1311,7 +1327,7 @@
   },
   "ambassadorDashboard": "Ambassador Dashboard",
   "@ambassadorDashboard": {
-    "description": "Title for the ambassador dashboard screen"
+    "description": "Localization key for: Ambassador Dashboard"
   },
   "phoneBooking": "Phone Booking",
   "@phoneBooking": {
@@ -1712,7 +1728,7 @@
   },
   "shareLink": "Share Link",
   "@shareLink": {
-    "description": "Button label for sharing referral link"
+    "description": "Localization key for: Share Link"
   },
   "REDACTED_TOKEN": "Are you sure you want to delete this provider?",
   "@REDACTED_TOKEN": {
@@ -1838,9 +1854,9 @@
   "@settingsSavedSuccessfully": {
     "description": "Localization key for: Settings saved successfully!"
   },
-  "linkCopiedToClipboard": "Link copied to clipboard",
+  "linkCopiedToClipboard": "Link copied to clipboard!",
   "@linkCopiedToClipboard": {
-    "description": "Confirmation message when link is copied"
+    "description": "Localization key for: Link copied to clipboard!"
   },
   "accept1": "Accept",
   "@accept1": {
@@ -2244,7 +2260,7 @@
   },
   "referrals": "Referrals",
   "@referrals": {
-    "description": "Tab label for referrals section"
+    "description": "Localization key for: Referrals"
   },
   "crm": "CRM",
   "@crm": {
@@ -2698,838 +2714,224 @@
   "@purchase_now_button": {
     "description": "Button to purchase upgrade"
   },
-  "welcomeAmbassador": "Welcome, Ambassador!",
-  "@welcomeAmbassador": {
-    "description": "Welcome message for ambassadors"
-  },
-  "activeStatus": "Active",
-  "@activeStatus": {
-    "description": "Status label showing ambassador is active"
-  },
-  "totalReferrals": "Total Referrals",
-  "@totalReferrals": {
-    "description": "Label for total referrals count"
-  },
-  "thisMonth": "This Month",
-  "@thisMonth": {
-    "description": "Label for current month statistics"
-  },
-  "activeRewards": "Active Rewards",
-  "@activeRewards": {
-    "description": "Label for active rewards count"
-  },
-  "nextTierProgress": "Next Tier Progress",
-  "@nextTierProgress": {
-    "description": "Section title for tier progression"
-  },
-  "progressToPremium": "Progress to Premium",
-  "@progressToPremium": {
-    "description": "Label for progress towards premium tier"
-  },
-  "remaining": "remaining",
-  "@remaining": {
-    "description": "Label for remaining count towards goal"
-  },
-  "monthlyGoal": "Monthly Goal",
-  "@monthlyGoal": {
-    "description": "Section title for monthly referral goal"
-  },
-  "onTrack": "On Track",
-  "@onTrack": {
-    "description": "Status indicating user is meeting monthly goals"
-  },
-  "needsAttention": "Needs Attention",
-  "@needsAttention": {
-    "description": "Status indicating user needs to increase activity"
-  },
-  "monthlyReferralRequirement": "Refer at least 10 new users monthly to maintain ambassador status",
-  "@monthlyReferralRequirement": {
-    "description": "Explanation of monthly referral requirement"
-  },
-  "viewRewards": "View Rewards",
-  "@viewRewards": {
-    "description": "Button label for viewing rewards"
-  },
-  "referralStatistics": "Referral Statistics",
-  "@referralStatistics": {
-    "description": "Section title for referral statistics"
-  },
-  "activeReferrals": "Active Referrals",
-  "@activeReferrals": {
-    "description": "Label for count of active referrals"
-  },
-  "conversionRate": "Conversion Rate",
-  "@conversionRate": {
-    "description": "Label for referral conversion rate"
-  },
-  "recentReferrals": "Recent Referrals",
-  "@recentReferrals": {
-    "description": "Section title for recent referral activity"
-  },
-  "tierBenefits": "Tier Benefits",
-  "@tierBenefits": {
-    "description": "Section title for ambassador tier benefits"
-  },
-  "yourReferralQRCode": "Your Referral QR Code",
-  "@yourReferralQRCode": {
-    "description": "Title for QR code section"
-  },
-  "yourReferralLink": "Your Referral Link",
-  "@yourReferralLink": {
-    "description": "Title for referral link section"
-  },
-  "shareYourLink": "Share Your Link",
-  "@shareYourLink": {
-    "description": "Section title for sharing options"
-  },
-  "shareViaMessage": "Message",
-  "@shareViaMessage": {
-    "description": "Button label for sharing via message"
-  },
-  "shareViaEmail": "Email",
-  "@shareViaEmail": {
-    "description": "Button label for sharing via email"
-  },
-  "shareMore": "More Options",
-  "@shareMore": {
-    "description": "Button label for additional sharing options"
-  },
-  "becomeAmbassador": "Become an Ambassador",
-  "@becomeAmbassador": {
-    "description": "Button text to join ambassador program"
-  },
-  "ambassadorEligible": "You're eligible to become an Ambassador!",
-  "@ambassadorEligible": {
-    "description": "Message shown when user is eligible for ambassador program"
-  },
-  "ambassadorWelcomeTitle": "Welcome to the Ambassador Program!",
-  "@ambassadorWelcomeTitle": {
-    "description": "Title for ambassador welcome overlay"
-  },
-  "ambassadorWelcomeMessage": "Congratulations! You've been promoted to Ambassador. Start sharing your link to earn rewards and help grow the APP-OINT community.",
-  "@ambassadorWelcomeMessage": {
-    "description": "Welcome message for new ambassadors"
-  },
-  "ambassadorPromotionTitle": "Congratulations! You're now an Ambassador!",
-  "@ambassadorPromotionTitle": {
-    "description": "Title for ambassador promotion notification"
-  },
-  "ambassadorPromotionBody": "Welcome to the {tier} tier! Start sharing your referral link to earn rewards.",
-  "@ambassadorPromotionBody": {
-    "description": "Body text for ambassador promotion notification",
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
-  },
-  "tierUpgradeTitle": "Tier Upgrade! 🎉",
-  "@tierUpgradeTitle": {
-    "description": "Title for tier upgrade notification"
-  },
-  "tierUpgradeBody": "Amazing! You've been upgraded from {previousTier} to {newTier} with {totalReferrals} referrals!",
-  "@tierUpgradeBody": {
-    "description": "Body text for tier upgrade notification",
-    "placeholders": {
-      "previousTier": {
-        "type": "String"
-      },
-      "newTier": {
-        "type": "String"
-      },
-      "totalReferrals": {
-        "type": "String"
-      }
-    }
-  },
-  "monthlyReminderTitle": "Monthly Goal Reminder",
-  "@monthlyReminderTitle": {
-    "description": "Title for monthly performance reminder notification"
-  },
-  "monthlyReminderBody": "You have {currentReferrals}/{targetReferrals} referrals this month. {daysRemaining} days left to reach your goal!",
-  "@monthlyReminderBody": {
-    "description": "Body text for monthly reminder notification",
-    "placeholders": {
-      "currentReferrals": {
-        "type": "String"
-      },
-      "targetReferrals": {
-        "type": "String"
-      },
-      "daysRemaining": {
-        "type": "String"
-      }
-    }
-  },
-  "performanceWarningTitle": "Ambassador Performance Alert",
-  "@performanceWarningTitle": {
-    "description": "Title for performance warning notification"
-  },
-  "performanceWarningBody": "Your monthly referrals ({currentReferrals}) are below the minimum requirement ({minimumRequired}). Your ambassador status may be affected.",
-  "@performanceWarningBody": {
-    "description": "Body text for performance warning notification",
-    "placeholders": {
-      "currentReferrals": {
-        "type": "String"
-      },
-      "minimumRequired": {
-        "type": "String"
-      }
-    }
-  },
-  "ambassadorDemotionTitle": "Ambassador Status Update",
-  "@ambassadorDemotionTitle": {
-    "description": "Title for ambassador demotion notification"
-  },
-  "ambassadorDemotionBody": "Your ambassador status has been temporarily suspended due to: {reason}. You can regain your status by meeting the requirements again.",
-  "@ambassadorDemotionBody": {
-    "description": "Body text for ambassador demotion notification",
-    "placeholders": {
-      "reason": {
-        "type": "String"
-      }
-    }
-  },
-  "referralSuccessTitle": "New Referral! 🎉",
-  "@referralSuccessTitle": {
-    "description": "Title for successful referral notification"
-  },
-  "referralSuccessBody": "{referredUserName} joined through your referral! You now have {totalReferrals} total referrals.",
-  "@referralSuccessBody": {
-    "description": "Body text for successful referral notification",
-    "placeholders": {
-      "referredUserName": {
-        "type": "String"
-      },
-      "totalReferrals": {
-        "type": "String"
-      }
-    }
-  },
-  "myReminders": "My Reminders",
-  "@myReminders": {
-    "description": "Title for the reminders dashboard"
-  },
-  "reminderStats": "Reminder Stats",
-  "@reminderStats": {
-    "description": "Title for reminder statistics"
-  },
-  "allReminders": "All Reminders",
-  "@allReminders": {
-    "description": "Filter option for all reminders"
-  },
-  "timeBasedReminders": "Time-based",
-  "@timeBasedReminders": {
-    "description": "Filter option for time-based reminders"
-  },
-  "locationBasedReminders": "Location-based",
-  "@locationBasedReminders": {
-    "description": "Filter option for location-based reminders"
-  },
-  "meetingReminders": "Meeting",
-  "@meetingReminders": {
-    "description": "Filter option for meeting reminders"
-  },
-  "personalReminders": "Personal",
-  "@personalReminders": {
-    "description": "Filter option for personal reminders"
-  },
-  "today": "Today",
-  "@today": {
-    "description": "Today tab label"
-  },
-  "upcoming": "Upcoming",
-  "@upcoming": {
-    "description": "Upcoming tab label"
-  },
-  "overdue": "Overdue",
-  "@overdue": {
-    "description": "Overdue tab label"
-  },
-  "all": "All",
-  "@all": {
-    "description": "All tab label"
-  },
-  "addReminder": "Add Reminder",
-  "@addReminder": {
-    "description": "Add reminder button label"
-  },
-  "addReminderDescription": "Create a new reminder for important tasks or events",
-  "@addReminderDescription": {
-    "description": "Accessibility hint for add reminder button"
-  },
-  "noRemindersToday": "No reminders for today",
-  "@noRemindersToday": {
-    "description": "Empty state message for today's reminders"
-  },
-  "noUpcomingReminders": "No upcoming reminders",
-  "@noUpcomingReminders": {
-    "description": "Empty state message for upcoming reminders"
-  },
-  "noOverdueReminders": "No overdue reminders",
-  "@noOverdueReminders": {
-    "description": "Empty state message for overdue reminders"
-  },
-  "noActiveReminders": "No active reminders",
-  "@noActiveReminders": {
-    "description": "Empty state message for active reminders"
-  },
-  "createYourFirstReminder": "Create your first reminder to stay organized!",
-  "@createYourFirstReminder": {
-    "description": "Encouragement text for empty state"
-  },
-  "errorLoadingReminders": "Error loading reminders",
-  "@errorLoadingReminders": {
-    "description": "Error message when reminders fail to load"
-  },
-  "retry": "Retry",
-  "@retry": {
-    "description": "Retry button label"
-  },
-  "reminderCompleted": "Reminder completed",
-  "@reminderCompleted": {
-    "description": "Success message when reminder is completed"
-  },
-  "undo": "Undo",
-  "@undo": {
-    "description": "Undo action label"
-  },
-  "reminderSnoozedFor": "Reminder snoozed for {duration}",
-  "@reminderSnoozedFor": {
-    "description": "Message when reminder is snoozed",
-    "placeholders": {
-      "duration": {
-        "type": "String"
-      }
-    }
-  },
-  "snoozeFor": "Snooze for",
-  "@snoozeFor": {
-    "description": "Title for snooze options"
-  },
-  "fiveMinutes": "5 minutes",
-  "@fiveMinutes": {
-    "description": "5 minute snooze option"
-  },
-  "fifteenMinutes": "15 minutes",
-  "@fifteenMinutes": {
-    "description": "15 minute snooze option"
-  },
-  "thirtyMinutes": "30 minutes",
-  "@thirtyMinutes": {
-    "description": "30 minute snooze option"
-  },
-  "oneHour": "1 hour",
-  "@oneHour": {
-    "description": "1 hour snooze option"
-  },
-  "twoHours": "2 hours",
-  "@twoHours": {
-    "description": "2 hour snooze option"
-  },
-  "fourHours": "4 hours",
-  "@fourHours": {
-    "description": "4 hour snooze option"
-  },
-  "oneDay": "1 day",
-  "@oneDay": {
-    "description": "1 day snooze option"
-  },
-  "deleteReminder": "Delete Reminder",
-  "@deleteReminder": {
-    "description": "Delete reminder dialog title"
-  },
-  "deleteReminderConfirmation": "Are you sure you want to delete '{title}'?",
-  "@deleteReminderConfirmation": {
-    "description": "Delete reminder confirmation message",
-    "placeholders": {
-      "title": {
-        "type": "String"
-      }
-    }
-  },
-  "reminderDeleted": "Reminder deleted",
-  "@reminderDeleted": {
-    "description": "Success message when reminder is deleted"
-  },
-  "unlockLocationReminders": "Unlock Location Reminders",
-  "@unlockLocationReminders": {
-    "description": "Title for location reminder upgrade prompt"
-  },
-  "upgradeForLocationReminders": "Upgrade to Professional plan to create location-based reminders",
-  "@upgradeForLocationReminders": {
-    "description": "Description for location reminder upgrade"
-  },
-  "locationRemindersDescription": "Get reminded when you arrive at or leave specific locations with interactive maps and geofencing.",
-  "@locationRemindersDescription": {
-    "description": "Detailed description of location reminder features"
-  },
-  "interactiveMapsPicker": "Interactive maps picker",
-  "@interactiveMapsPicker": {
-    "description": "Feature description for maps picker"
-  },
-  "geofenceNotifications": "Geofence notifications",
-  "@geofenceNotifications": {
-    "description": "Feature description for geofencing"
-  },
-  "notNow": "Not Now",
-  "@notNow": {
-    "description": "Dismiss button for upgrade prompts"
-  },
-  "upgrade": "Upgrade",
-  "@upgrade": {
-    "description": "Upgrade button label"
-  },
-  "pro": "PRO",
-  "@pro": {
-    "description": "Pro badge label"
-  },
-  "thisWeek": "This Week",
-  "@thisWeek": {
-    "description": "This week stats label"
-  },
-  "thisMonth": "This Month",
-  "@thisMonth": {
-    "description": "This month stats label"
-  },
-  "total": "Total",
-  "@total": {
-    "description": "Total count label"
-  },
-  "completed": "Completed",
-  "@completed": {
-    "description": "Completed status label"
-  },
-  "completionRate": "Completion Rate",
-  "@completionRate": {
-    "description": "Completion rate label"
-  },
-  "totalReminders": "Total Reminders",
-  "@totalReminders": {
-    "description": "Total reminders count label"
-  },
-  "locationReminders": "Location Reminders",
-  "@locationReminders": {
-    "description": "Location reminders count label"
-  },
-  "errorLoadingStats": "Error loading stats",
-  "@errorLoadingStats": {
-    "description": "Error message when stats fail to load"
-  },
-  "close": "Close",
-  "@close": {
-    "description": "Close button label"
-  },
-  "createReminder": "Create Reminder",
-  "@createReminder": {
-    "description": "Create reminder screen title and button"
-  },
-  "back": "Back",
-  "@back": {
-    "description": "Back button label"
-  },
-  "creating": "Creating...",
-  "@creating": {
-    "description": "Loading state for reminder creation"
-  },
-  "next": "Next",
-  "@next": {
-    "description": "Next button label"
-  },
-  "whatKindOfReminder": "What kind of reminder?",
-  "@whatKindOfReminder": {
-    "description": "Question for reminder type selection"
-  },
-  "chooseReminderType": "Choose the type of reminder you'd like to create",
-  "@chooseReminderType": {
-    "description": "Instruction for reminder type selection"
-  },
-  "timeBasedReminder": "Time-based Reminder",
-  "@timeBasedReminder": {
-    "description": "Time-based reminder option title"
-  },
-  "timeBasedReminderDescription": "Get reminded at a specific date and time",
-  "@timeBasedReminderDescription": {
-    "description": "Time-based reminder description"
-  },
-  "locationBasedReminder": "Location-based Reminder",
-  "@locationBasedReminder": {
-    "description": "Location-based reminder option title"
-  },
-  "REDACTED_TOKEN": "Get reminded when you arrive at or leave a location",
+  "termsOfService": "Terms of Service",
+  "@termsOfService": {
+    "description": "Terms of Service page title"
+  },
+  "termsLastUpdated": "Last updated: January 2024",
+  "@termsLastUpdated": {
+    "description": "Terms of Service last updated date"
+  },
+  "termsAcceptanceTitle": "1. Acceptance of Terms",
+  "@termsAcceptanceTitle": {
+    "description": "Terms of Service section title"
+  },
+  "termsAcceptanceContent": "By accessing and using APP-OINT, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.",
+  "@termsAcceptanceContent": {
+    "description": "Terms of Service acceptance section content"
+  },
+  "termsDescriptionTitle": "2. Use License",
+  "@termsDescriptionTitle": {
+    "description": "Terms of Service description section title"
+  },
+  "termsDescriptionContent": "Permission is granted to temporarily use APP-OINT for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not: modify or copy the materials; use the materials for any commercial purpose or for any public display; attempt to reverse engineer any software contained on APP-OINT's platform; or remove any copyright or other proprietary notations from the materials.",
+  "@termsDescriptionContent": {
+    "description": "Terms of Service description section content"
+  },
+  "termsUserAccountsTitle": "3. User Accounts",
+  "@termsUserAccountsTitle": {
+    "description": "Terms of Service user accounts section title"
+  },
+  "termsUserAccountsContent": "When you create an account with us, you must provide information that is accurate, complete, and current at all times. You are responsible for safeguarding the password and for all activities that occur under your account.",
+  "@termsUserAccountsContent": {
+    "description": "Terms of Service user accounts section content"
+  },
+  "termsMinorProtectionTitle": "4. Protection of Minors (COPPA Compliance)",
+  "@termsMinorProtectionTitle": {
+    "description": "Terms of Service minor protection section title"
+  },
+  "termsMinorProtectionContent": "APP-OINT is committed to protecting the privacy of children under 13 years of age. We do not knowingly collect personal information from children under 13 without verifiable parental consent. If we learn that a child under 13 has provided us with personal information without parental consent, we will delete such information from our files.",
+  "@termsMinorProtectionContent": {
+    "description": "Terms of Service minor protection section content"
+  },
+  "termsProhibitedUsesTitle": "5. Prohibited Uses",
+  "@termsProhibitedUsesTitle": {
+    "description": "Terms of Service prohibited uses section title"
+  },
+  "termsProhibitedUsesContent": "You may not use our service: for any unlawful purpose or to solicit others to perform unlawful acts; to violate any international, federal, provincial, or state regulations, rules, laws, or local ordinances; to infringe upon or violate our intellectual property rights or the intellectual property rights of others; to harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate; to submit false or misleading information; to upload or transmit viruses or any other type of malicious code; or to collect or track personal information of others.",
+  "@termsProhibitedUsesContent": {
+    "description": "Terms of Service prohibited uses section content"
+  },
+  "termsContentLicenseTitle": "6. Content License",
+  "@termsContentLicenseTitle": {
+    "description": "Terms of Service content license section title"
+  },
+  "termsContentLicenseContent": "Our service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material. You are responsible for the content that you post to the service, including its legality, reliability, and appropriateness.",
+  "@termsContentLicenseContent": {
+    "description": "Terms of Service content license section content"
+  },
+  "termsPrivacyTitle": "7. Privacy Policy",
+  "@termsPrivacyTitle": {
+    "description": "Terms of Service privacy section title"
+  },
+  "termsPrivacyContent": "Your privacy is important to us. Please review our Privacy Policy, which also governs your use of the service, to understand our practices.",
+  "@termsPrivacyContent": {
+    "description": "Terms of Service privacy section content"
+  },
+  "termsTerminationTitle": "8. Termination",
+  "@termsTerminationTitle": {
+    "description": "Terms of Service termination section title"
+  },
+  "termsTerminationContent": "We may terminate or suspend your account and bar access to the service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of the Terms.",
+  "@termsTerminationContent": {
+    "description": "Terms of Service termination section content"
+  },
+  "termsChangesTitle": "9. Changes to Terms",
+  "@termsChangesTitle": {
+    "description": "Terms of Service changes section title"
+  },
+  "termsChangesContent": "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days notice prior to any new terms taking effect.",
+  "@termsChangesContent": {
+    "description": "Terms of Service changes section content"
+  },
+  "termsContactTitle": "10. Contact Information",
+  "@termsContactTitle": {
+    "description": "Terms of Service contact section title"
+  },
+  "termsContactContent": "If you have any questions about these Terms, please contact us at legal@app-oint.com.",
+  "@termsContactContent": {
+    "description": "Terms of Service contact section content"
+  },
+  "acceptTerms": "Accept Terms",
+  "@acceptTerms": {
+    "description": "Button to accept terms of service"
+  },
+  "goBack": "Go Back",
+  "@goBack": {
+    "description": "Button to go back"
+  },
+  "privacyLastUpdated": "Last updated: January 2024",
+  "@privacyLastUpdated": {
+    "description": "Privacy Policy last updated date"
+  },
+  "privacyIntroductionTitle": "1. Introduction",
+  "@privacyIntroductionTitle": {
+    "description": "Privacy Policy introduction section title"
+  },
+  "privacyIntroductionContent": "APP-OINT respects your privacy and is committed to protecting your personal data. This privacy policy explains how we look after your personal data when you visit our platform and tells you about your privacy rights and how the law protects you.",
+  "@privacyIntroductionContent": {
+    "description": "Privacy Policy introduction section content"
+  },
+  "REDACTED_TOKEN": "2. Information We Collect",
   "@REDACTED_TOKEN": {
-    "description": "Location-based reminder description"
+    "description": "Privacy Policy information collected section title"
   },
-  "meetingReminder": "Meeting Reminder",
-  "@meetingReminder": {
-    "description": "Meeting reminder option title"
-  },
-  "meetingReminderDescription": "Remind yourself about upcoming meetings or events",
-  "@meetingReminderDescription": {
-    "description": "Meeting reminder description"
-  },
-  "personalReminder": "Personal Reminder",
-  "@personalReminder": {
-    "description": "Personal reminder option title"
-  },
-  "personalReminderDescription": "Personal tasks and to-dos",
-  "@personalReminderDescription": {
-    "description": "Personal reminder description"
-  },
-  "errorLoadingAccessInfo": "Error loading access information",
-  "@errorLoadingAccessInfo": {
-    "description": "Error when access status fails to load"
-  },
-  "tellUsAboutReminder": "Tell us about your reminder",
-  "@tellUsAboutReminder": {
-    "description": "Title for reminder details step"
-  },
-  "giveReminderDetails": "Give your reminder a title and description",
-  "@giveReminderDetails": {
-    "description": "Instruction for reminder details"
-  },
-  "reminderTitle": "Reminder Title",
-  "@reminderTitle": {
-    "description": "Label for reminder title field"
-  },
-  "reminderTitleHint": "What would you like to be reminded of?",
-  "@reminderTitleHint": {
-    "description": "Hint for reminder title field"
-  },
-  "description": "Description",
-  "@description": {
-    "description": "Label for description field"
-  },
-  "reminderDescriptionHint": "Add more details about this reminder...",
-  "@reminderDescriptionHint": {
-    "description": "Hint for reminder description field"
-  },
-  "priority": "Priority",
-  "@priority": {
-    "description": "Priority selection label"
-  },
-  "whereToRemind": "Where should we remind you?",
-  "@whereToRemind": {
-    "description": "Title for location selection step"
-  },
-  "whenToRemind": "When should we remind you?",
-  "@whenToRemind": {
-    "description": "Title for time selection step"
-  },
-  "selectLocationForReminder": "Select a location where you'd like to be reminded",
-  "@selectLocationForReminder": {
-    "description": "Instruction for location selection"
-  },
-  "selectTimeForReminder": "Choose when you'd like to be reminded",
-  "@selectTimeForReminder": {
-    "description": "Instruction for time selection"
-  },
-  "mapView": "Map View",
-  "@mapView": {
-    "description": "Map view placeholder text"
-  },
-  "changeLocation": "Change Location",
-  "@changeLocation": {
-    "description": "Button to change selected location"
-  },
-  "searchLocation": "Search Location",
-  "@searchLocation": {
-    "description": "Button to search for location"
-  },
-  "selectedLocation": "Selected Location",
-  "@selectedLocation": {
-    "description": "Label for selected location"
-  },
-  "noLocationSelected": "No location selected",
-  "@noLocationSelected": {
-    "description": "Placeholder when no location is selected"
-  },
-  "tapToSearchLocation": "Tap to search for a location",
-  "@tapToSearchLocation": {
-    "description": "Instruction to search for location"
-  },
-  "quickOptions": "Quick Options",
-  "@quickOptions": {
-    "description": "Label for quick time options"
-  },
-  "customDateTime": "Custom Date & Time",
-  "@customDateTime": {
-    "description": "Label for custom date/time section"
-  },
-  "selectDate": "Select Date",
-  "@selectDate": {
-    "description": "Button to select date"
-  },
-  "selectTime": "Select Time",
-  "@selectTime": {
-    "description": "Button to select time"
-  },
-  "reminderScheduledFor": "Reminder scheduled for:",
-  "@reminderScheduledFor": {
-    "description": "Label showing when reminder is scheduled"
-  },
-  "in15Minutes": "In 15 minutes",
-  "@in15Minutes": {
-    "description": "Quick time option"
-  },
-  "in30Minutes": "In 30 minutes",
-  "@in30Minutes": {
-    "description": "Quick time option"
-  },
-  "in1Hour": "In 1 hour",
-  "@in1Hour": {
-    "description": "Quick time option"
-  },
-  "in2Hours": "In 2 hours",
-  "@in2Hours": {
-    "description": "Quick time option"
-  },
-  "tomorrowMorning": "Tomorrow morning",
-  "@tomorrowMorning": {
-    "description": "Quick time option"
-  },
-  "additionalOptions": "Additional Options",
-  "@additionalOptions": {
-    "description": "Title for options step"
-  },
-  "customizeReminderBehavior": "Customize how your reminder works",
-  "@customizeReminderBehavior": {
-    "description": "Instruction for options step"
-  },
-  "enableNotifications": "Enable Notifications",
-  "@enableNotifications": {
-    "description": "Toggle for enabling notifications"
-  },
-  "REDACTED_TOKEN": "Receive a notification when this reminder is triggered",
+  "REDACTED_TOKEN": "We may collect, use, store and transfer different kinds of personal data about you including: identity data (first name, last name, username), contact data (email address, telephone numbers), technical data (internet protocol address, browser type and version, time zone setting), profile data (your username and password, your interests, preferences, feedback), usage data (information about how you use our platform), and marketing data (your preferences in receiving marketing from us).",
   "@REDACTED_TOKEN": {
-    "description": "Description for notification toggle"
+    "description": "Privacy Policy information collected section content"
   },
-  "notificationMethods": "Notification Methods",
-  "@notificationMethods": {
-    "description": "Label for notification methods section"
+  "privacyHowWeUseTitle": "3. How We Use Your Information",
+  "@privacyHowWeUseTitle": {
+    "description": "Privacy Policy how we use section title"
   },
-  "pushNotification": "Push Notification",
-  "@pushNotification": {
-    "description": "Push notification method"
+  "privacyHowWeUseContent": "We use your personal data to: register you as a new customer, process and deliver your service including managing payments and communicating with you about your service, manage our relationship with you (including notifying you about changes to our terms or privacy policy), enable you to partake in a prize draw, competition or complete a survey, administer and protect our business and this platform (including troubleshooting, data analysis, testing, system maintenance, support, reporting and hosting of data), deliver relevant platform content and advertisements to you and measure or understand the effectiveness of the advertising we serve to you.",
+  "@privacyHowWeUseContent": {
+    "description": "Privacy Policy how we use section content"
   },
-  "pushNotificationDescription": "Receive notifications on your device",
-  "@pushNotificationDescription": {
-    "description": "Push notification description"
+  "privacyInformationSharingTitle": "4. Information Sharing",
+  "@privacyInformationSharingTitle": {
+    "description": "Privacy Policy information sharing section title"
   },
-  "localNotification": "Local Notification",
-  "@localNotification": {
-    "description": "Local notification method"
+  "REDACTED_TOKEN": "We may share your personal information in the following situations: with service providers who perform services on our behalf, for business transfers in connection with any merger, sale, or transfer of all or a portion of our business, for legal requirements to comply with applicable law, legal process, or governmental request, to protect rights and safety when we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request.",
+  "@REDACTED_TOKEN": {
+    "description": "Privacy Policy information sharing section content"
   },
-  "localNotificationDescription": "Scheduled notifications on this device",
-  "@localNotificationDescription": {
-    "description": "Local notification description"
+  "privacyChildrenProtectionTitle": "5. Children's Privacy (COPPA Compliance)",
+  "@privacyChildrenProtectionTitle": {
+    "description": "Privacy Policy children protection section title"
   },
-  "email": "Email",
-  "@email": {
-    "description": "Email notification method"
+  "REDACTED_TOKEN": "Our service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us. If we become aware that we have collected personal data from children without verification of parental consent, we take steps to remove that information from our servers.",
+  "@REDACTED_TOKEN": {
+    "description": "Privacy Policy children protection section content"
   },
-  "sms": "SMS",
-  "@sms": {
-    "description": "SMS notification method"
+  "privacyDataSecurityTitle": "6. Data Security",
+  "@privacyDataSecurityTitle": {
+    "description": "Privacy Policy data security section title"
   },
-  "tags": "Tags",
-  "@tags": {
-    "description": "Tags field label"
+  "privacyDataSecurityContent": "We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorized way, altered or disclosed. We limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know.",
+  "@privacyDataSecurityContent": {
+    "description": "Privacy Policy data security section content"
   },
-  "tagsHint": "work, personal, urgent...",
-  "@tagsHint": {
-    "description": "Hint for tags field"
+  "privacyUserRightsTitle": "7. Your Data Protection Rights (GDPR)",
+  "@privacyUserRightsTitle": {
+    "description": "Privacy Policy user rights section title"
   },
-  "separateTagsWithCommas": "Separate tags with commas",
-  "@separateTagsWithCommas": {
-    "description": "Helper text for tags field"
+  "privacyUserRightsContent": "Under certain circumstances, you have rights under data protection laws in relation to your personal data: the right to request access to your personal data, the right to request correction of your personal data, the right to request erasure of your personal data, the right to object to processing of your personal data, the right to request restriction of processing your personal data, the right to request transfer of your personal data, and the right to withdraw consent at any time where we are relying on consent to process your personal data.",
+  "@privacyUserRightsContent": {
+    "description": "Privacy Policy user rights section content"
   },
-  "reviewReminder": "Review Your Reminder",
-  "@reviewReminder": {
-    "description": "Title for review step"
+  "privacyCookiesTitle": "8. Cookies",
+  "@privacyCookiesTitle": {
+    "description": "Privacy Policy cookies section title"
   },
-  "reviewReminderDetails": "Review all the details before creating your reminder",
-  "@reviewReminderDetails": {
-    "description": "Instruction for review step"
+  "privacyCookiesContent": "We use cookies and similar tracking technologies to track the activity on our service and hold certain information. Cookies are files with small amount of data which may include an anonymous unique identifier. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.",
+  "@privacyCookiesContent": {
+    "description": "Privacy Policy cookies section content"
   },
-  "triggerLocation": "Trigger Location",
-  "@triggerLocation": {
-    "description": "Label for trigger location in review"
+  "privacyThirdPartyTitle": "9. Third-Party Services",
+  "@privacyThirdPartyTitle": {
+    "description": "Privacy Policy third party section title"
   },
-  "triggerTime": "Trigger Time",
-  "@triggerTime": {
-    "description": "Label for trigger time in review"
+  "privacyThirdPartyContent": "Our service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the privacy policy of every site you visit.",
+  "@privacyThirdPartyContent": {
+    "description": "Privacy Policy third party section content"
   },
-  "notifications": "Notifications",
-  "@notifications": {
-    "description": "Notifications label in review"
+  "privacyChangesTitle": "10. Changes to This Privacy Policy",
+  "@privacyChangesTitle": {
+    "description": "Privacy Policy changes section title"
   },
-  "reminderCreated": "Reminder created successfully!",
-  "@reminderCreated": {
-    "description": "Success message when reminder is created"
+  "privacyChangesContent": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'last updated' date.",
+  "@privacyChangesContent": {
+    "description": "Privacy Policy changes section content"
   },
-  "accessDenied": "Access Denied",
-  "@accessDenied": {
-    "description": "Access denied dialog title"
+  "privacyContactTitle": "11. Contact Us",
+  "@privacyContactTitle": {
+    "description": "Privacy Policy contact section title"
   },
-  "ok": "OK",
-  "@ok": {
-    "description": "OK button label"
+  "privacyContactContent": "If you have any questions about this Privacy Policy, please contact us at privacy@app-oint.com.",
+  "@privacyContactContent": {
+    "description": "Privacy Policy contact section content"
   },
-  "snooze": "Snooze",
-  "@snooze": {
-    "description": "Snooze action label"
+  "acceptPrivacyPolicy": "Accept Privacy Policy",
+  "@acceptPrivacyPolicy": {
+    "description": "Button to accept privacy policy"
   },
-  "complete": "Complete",
-  "@complete": {
-    "description": "Complete action label"
+  "consentRequired": "You must accept the terms and privacy policy to continue",
+  "@consentRequired": {
+    "description": "Error message when consent is required but not given"
   },
-  "delete": "Delete",
-  "@delete": {
-    "description": "Delete action label"
+  "iAgreeToThe": "I agree to the",
+  "@iAgreeToThe": {
+    "description": "Start of consent text"
   },
-  "snoozed": "Snoozed",
-  "@snoozed": {
-    "description": "Snoozed status label"
+  "and": "and",
+  "@and": {
+    "description": "Conjunction word for consent text"
   },
-  "overdueDays": "Overdue by {days} days",
-  "@overdueDays": {
-    "description": "Overdue by days message",
-    "placeholders": {
-      "days": {
-        "type": "int"
-      }
-    }
+  "iHaveReadAndAgreeToThe": "I have read and agree to the",
+  "@iHaveReadAndAgreeToThe": {
+    "description": "Consent agreement text"
   },
-  "overdueHours": "Overdue by {hours} hours",
-  "@overdueHours": {
-    "description": "Overdue by hours message",
-    "placeholders": {
-      "hours": {
-        "type": "int"
-      }
-    }
+  "createAccount": "Create Account",
+  "@createAccount": {
+    "description": "Button to create account after consent"
   },
-  "overdueMinutes": "Overdue by {minutes} minutes",
-  "@overdueMinutes": {
-    "description": "Overdue by minutes message",
-    "placeholders": {
-      "minutes": {
-        "type": "int"
-      }
-    }
+  "acceptAndContinue": "Accept and Continue",
+  "@acceptAndContinue": {
+    "description": "Button to accept terms and continue"
   },
-  "tomorrow": "Tomorrow",
-  "@tomorrow": {
-    "description": "Tomorrow label"
-  },
-  "reminderCount": "{count} reminder(s)",
-  "@reminderCount": {
-    "description": "Count of reminders for a meeting",
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "noRemindersSet": "No reminders set",
-  "@noRemindersSet": {
-    "description": "Message when no reminders are set for a meeting"
-  },
-  "quickAdd": "Quick Add",
-  "@quickAdd": {
-    "description": "Quick add button label"
-  },
-  "quickReminderOptions": "Quick Reminder Options",
-  "@quickReminderOptions": {
-    "description": "Title for quick reminder options section"
-  },
-  "currentReminders": "Current Reminders",
-  "@currentReminders": {
-    "description": "Title for current reminders section"
-  },
-  "noRemindersForMeeting": "No reminders for this meeting",
-  "@noRemindersForMeeting": {
-    "description": "Empty state message for meeting reminders"
-  },
-  "addReminderToStayOrganized": "Add a reminder to stay organized",
-  "@addReminderToStayOrganized": {
-    "description": "Encouragement text for adding reminders"
-  },
-  "addCustomReminder": "Add Custom Reminder",
-  "@addCustomReminder": {
-    "description": "Button to add custom reminder"
-  },
-  "addQuickReminder": "Add Quick Reminder",
-  "@addQuickReminder": {
-    "description": "Title for quick reminder bottom sheet"
-  },
-  "fifteenMinutesBefore": "15 minutes before",
-  "@fifteenMinutesBefore": {
-    "description": "Quick reminder option"
-  },
-  "oneHourBefore": "1 hour before",
-  "@oneHourBefore": {
-    "description": "Quick reminder option"
-  },
-  "oneDayBefore": "1 day before",
-  "@oneDayBefore": {
-    "description": "Quick reminder option"
-  },
-  "dayOfMeeting": "Day of meeting",
-  "@dayOfMeeting": {
-    "description": "Quick reminder option"
-  },
-  "meeting": "Meeting",
-  "@meeting": {
-    "description": "Default meeting label"
-  },
-  "automaticReminderForMeeting": "Automatic reminder for {meetingTitle}",
-  "@automaticReminderForMeeting": {
-    "description": "Description for automatically created meeting reminders",
-    "placeholders": {
-      "meetingTitle": {
-        "type": "String"
-      }
-    }
-  },
-  "reminderAdded": "Reminder added",
-  "@reminderAdded": {
-    "description": "Success message when reminder is added"
-  },
-  "edit": "Edit",
-  "@edit": {
-    "description": "Edit action label"
-  },
-  "cancel": "Cancel",
-  "@cancel": {
-    "description": "Cancel button label"
-  },
-  "inDays": "In {days} days",
-  "@inDays": {
-    "description": "Time until reminder in days",
-    "placeholders": {
-      "days": {
-        "type": "int"
-      }
-    }
-  },
-  "inHours": "In {hours} hours",
-  "@inHours": {
-    "description": "Time until reminder in hours",
-    "placeholders": {
-      "hours": {
-        "type": "int"
-      }
-    }
-  },
-  "inMinutes": "In {minutes} minutes",
-  "@inMinutes": {
-    "description": "Time until reminder in minutes",
-    "placeholders": {
-      "minutes": {
-        "type": "int"
-      }
-    }
+  "consentSignupNotice": "By creating an account, you acknowledge that you have read and agree to our Terms of Service and Privacy Policy.",
+  "@consentSignupNotice": {
+    "description": "Notice text shown during signup about consent"
   }
 }

@@ -96,6 +96,10 @@
   "@revokeAccess": {
     "description": "Description"
   },
+  "saveGroupForRecognition": "[MS] Simpan kumpulan untuk pengecaman",
+  "@saveGroupForRecognition": {
+    "description": "Description"
+  },
   "playtimeLiveScheduled": "[MS] Sesi langsung dijadualkan",
   "@playtimeLiveScheduled": {
     "description": "Description"
@@ -306,6 +310,10 @@
   },
   "upcomingSessions": "[MS] [MS] Upcoming Sessions",
   "@upcomingSessions": {
+    "description": "Description"
+  },
+  "enterGroupName": "[MS] Masukkan nama kumpulan",
+  "@enterGroupName": {
     "description": "Description"
   },
   "confirm": "[MS] Sahkan",
@@ -588,6 +596,10 @@
   "@createGame": {
     "description": "Description"
   },
+  "groupNameOptional": "[MS] [MS] Group Name (Optional)",
+  "@groupNameOptional": {
+    "description": "Description"
+  },
   "playtimeNoSessions": "[MS] [MS] No playtime sessions found.",
   "@playtimeNoSessions": {
     "description": "Description"
@@ -603,6 +615,10 @@
   "close": "[MS] [MS] Close",
   "@close": {
     "description": "close description"
+  },
+  "knownGroupDetected": "[MS] [MS] Known group detected",
+  "@knownGroupDetected": {
+    "description": "Description"
   },
   "back": "[MS] [MS] Back",
   "@back": {
@@ -1714,7 +1730,7 @@
   },
   "goBack": "[MS] Go Back (Malay)",
   "@goBack": {
-    "description": "Localization key for: Go Back"
+    "description": "Button to go back"
   },
   "setup": "[MS] Setup (Malay)",
   "@setup": {
@@ -2880,304 +2896,220 @@
   "@purchase_now_button": {
     "description": "Ad flow string: purchase_now_button"
   },
-  "ambassadorPromotionTitle": "[MS] Congratulations! You're now an Ambassador! (Malay)",
-  "@ambassadorPromotionTitle": {
-    "description": "Title for ambassador promotion notification"
+  "termsOfService": "[MALAY] Terms of Service",
+  "@termsOfService": {
+    "description": "Terms of Service page title"
   },
-  "ambassadorPromotionBody": "[MS] Welcome to the {tier} tier! Start sharing your referral link to earn rewards. (Malay)",
-  "@ambassadorPromotionBody": {
-    "description": "Body text for ambassador promotion notification",
-    "placeholders": {
-      "tier": {
-        "type": "String"
-      }
-    }
+  "termsLastUpdated": "[MALAY] Last updated: January 2024",
+  "@termsLastUpdated": {
+    "description": "Terms of Service last updated date"
   },
-  "tierUpgradeTitle": "[MS] Tier Upgrade! 🎉 (Malay)",
-  "@tierUpgradeTitle": {
-    "description": "Title for tier upgrade notification"
+  "termsAcceptanceTitle": "[MALAY] 1. Acceptance of Terms",
+  "@termsAcceptanceTitle": {
+    "description": "Terms of Service section title"
   },
-  "tierUpgradeBody": "[MS] Amazing! You've been upgraded from {previousTier} to {newTier} with {totalReferrals} referrals! (Malay)",
-  "@tierUpgradeBody": {
-    "description": "Body text for tier upgrade notification",
-    "placeholders": {
-      "previousTier": {
-        "type": "String"
-      },
-      "newTier": {
-        "type": "String"
-      },
-      "totalReferrals": {
-        "type": "String"
-      }
-    }
+  "termsAcceptanceContent": "[MALAY] By accessing and using APP-OINT, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.",
+  "@termsAcceptanceContent": {
+    "description": "Terms of Service acceptance section content"
   },
-  "monthlyReminderTitle": "[MS] Monthly Goal Reminder (Malay)",
-  "@monthlyReminderTitle": {
-    "description": "Title for monthly performance reminder notification"
+  "termsDescriptionTitle": "[MALAY] 2. Use License",
+  "@termsDescriptionTitle": {
+    "description": "Terms of Service description section title"
   },
-  "monthlyReminderBody": "[MS] You have {currentReferrals}/{targetReferrals} referrals this month. {daysRemaining} days left to reach your goal! (Malay)",
-  "@monthlyReminderBody": {
-    "description": "Body text for monthly reminder notification",
-    "placeholders": {
-      "currentReferrals": {
-        "type": "String"
-      },
-      "targetReferrals": {
-        "type": "String"
-      },
-      "daysRemaining": {
-        "type": "String"
-      }
-    }
+  "termsDescriptionContent": "[MALAY] Permission is granted to temporarily use APP-OINT for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not: modify or copy the materials; use the materials for any commercial purpose or for any public display; attempt to reverse engineer any software contained on APP-OINT's platform; or remove any copyright or other proprietary notations from the materials.",
+  "@termsDescriptionContent": {
+    "description": "Terms of Service description section content"
   },
-  "performanceWarningTitle": "[MS] Ambassador Performance Alert (Malay)",
-  "@performanceWarningTitle": {
-    "description": "Title for performance warning notification"
+  "termsUserAccountsTitle": "[MALAY] 3. User Accounts",
+  "@termsUserAccountsTitle": {
+    "description": "Terms of Service user accounts section title"
   },
-  "performanceWarningBody": "[MS] Your monthly referrals ({currentReferrals}) are below the minimum requirement ({minimumRequired}). Your ambassador status may be affected. (Malay)",
-  "@performanceWarningBody": {
-    "description": "Body text for performance warning notification",
-    "placeholders": {
-      "currentReferrals": {
-        "type": "String"
-      },
-      "minimumRequired": {
-        "type": "String"
-      }
-    }
+  "termsUserAccountsContent": "[MALAY] When you create an account with us, you must provide information that is accurate, complete, and current at all times. You are responsible for safeguarding the password and for all activities that occur under your account.",
+  "@termsUserAccountsContent": {
+    "description": "Terms of Service user accounts section content"
   },
-  "ambassadorDemotionTitle": "[MS] Ambassador Status Update (Malay)",
-  "@ambassadorDemotionTitle": {
-    "description": "Title for ambassador demotion notification"
+  "termsMinorProtectionTitle": "[MALAY] 4. Protection of Minors (COPPA Compliance)",
+  "@termsMinorProtectionTitle": {
+    "description": "Terms of Service minor protection section title"
   },
-  "ambassadorDemotionBody": "[MS] Your ambassador status has been temporarily suspended due to: {reason}. You can regain your status by meeting the requirements again. (Malay)",
-  "@ambassadorDemotionBody": {
-    "description": "Body text for ambassador demotion notification",
-    "placeholders": {
-      "reason": {
-        "type": "String"
-      }
-    }
+  "termsMinorProtectionContent": "[MALAY] APP-OINT is committed to protecting the privacy of children under 13 years of age. We do not knowingly collect personal information from children under 13 without verifiable parental consent. If we learn that a child under 13 has provided us with personal information without parental consent, we will delete such information from our files.",
+  "@termsMinorProtectionContent": {
+    "description": "Terms of Service minor protection section content"
   },
-  "referralSuccessTitle": "[MS] New Referral! 🎉 (Malay)",
-  "@referralSuccessTitle": {
-    "description": "Title for successful referral notification"
+  "termsProhibitedUsesTitle": "[MALAY] 5. Prohibited Uses",
+  "@termsProhibitedUsesTitle": {
+    "description": "Terms of Service prohibited uses section title"
   },
-  "referralSuccessBody": "[MS] {referredUserName} joined through your referral! You now have {totalReferrals} total referrals. (Malay)",
-  "@referralSuccessBody": {
-    "description": "Body text for successful referral notification",
-    "placeholders": {
-      "referredUserName": {
-        "type": "String"
-      },
-      "totalReferrals": {
-        "type": "String"
-      }
-    }
+  "termsProhibitedUsesContent": "[MALAY] You may not use our service: for any unlawful purpose or to solicit others to perform unlawful acts; to violate any international, federal, provincial, or state regulations, rules, laws, or local ordinances; to infringe upon or violate our intellectual property rights or the intellectual property rights of others; to harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate; to submit false or misleading information; to upload or transmit viruses or any other type of malicious code; or to collect or track personal information of others.",
+  "@termsProhibitedUsesContent": {
+    "description": "Terms of Service prohibited uses section content"
   },
-  "welcomeAmbassador": "Welcome Ambassador",
-  "@welcomeAmbassador": {
-    "description": "Translation for welcomeAmbassador"
+  "termsContentLicenseTitle": "[MALAY] 6. Content License",
+  "@termsContentLicenseTitle": {
+    "description": "Terms of Service content license section title"
   },
-  "activeStatus": "Active Status",
-  "@activeStatus": {
-    "description": "Translation for activeStatus"
+  "termsContentLicenseContent": "[MALAY] Our service allows you to post, link, store, share and otherwise make available certain information, text, graphics, videos, or other material. You are responsible for the content that you post to the service, including its legality, reliability, and appropriateness.",
+  "@termsContentLicenseContent": {
+    "description": "Terms of Service content license section content"
   },
-  "totalReferrals": "Total Referrals",
-  "@totalReferrals": {
-    "description": "Translation for totalReferrals"
+  "termsPrivacyTitle": "[MALAY] 7. Privacy Policy",
+  "@termsPrivacyTitle": {
+    "description": "Terms of Service privacy section title"
   },
-  "thisMonth": "This Month",
-  "@thisMonth": {
-    "description": "Translation for thisMonth"
+  "termsPrivacyContent": "[MALAY] Your privacy is important to us. Please review our Privacy Policy, which also governs your use of the service, to understand our practices.",
+  "@termsPrivacyContent": {
+    "description": "Terms of Service privacy section content"
   },
-  "activeRewards": "Active Rewards",
-  "@activeRewards": {
-    "description": "Translation for activeRewards"
+  "termsTerminationTitle": "[MALAY] 8. Termination",
+  "@termsTerminationTitle": {
+    "description": "Terms of Service termination section title"
   },
-  "nextTierProgress": "Next Tier Progress",
-  "@nextTierProgress": {
-    "description": "Translation for nextTierProgress"
+  "termsTerminationContent": "[MALAY] We may terminate or suspend your account and bar access to the service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach of the Terms.",
+  "@termsTerminationContent": {
+    "description": "Terms of Service termination section content"
   },
-  "progressToPremium": "Progress to Premium",
-  "@progressToPremium": {
-    "description": "Translation for progressToPremium"
+  "termsChangesTitle": "[MALAY] 9. Changes to Terms",
+  "@termsChangesTitle": {
+    "description": "Terms of Service changes section title"
   },
-  "remaining": "Remaining",
-  "@remaining": {
-    "description": "Translation for remaining"
+  "termsChangesContent": "[MALAY] We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days notice prior to any new terms taking effect.",
+  "@termsChangesContent": {
+    "description": "Terms of Service changes section content"
   },
-  "monthlyGoal": "Monthly Goal",
-  "@monthlyGoal": {
-    "description": "Translation for monthlyGoal"
+  "termsContactTitle": "[MALAY] 10. Contact Information",
+  "@termsContactTitle": {
+    "description": "Terms of Service contact section title"
   },
-  "onTrack": "On Track",
-  "@onTrack": {
-    "description": "Translation for onTrack"
+  "termsContactContent": "[MALAY] If you have any questions about these Terms, please contact us at legal@app-oint.com.",
+  "@termsContactContent": {
+    "description": "Terms of Service contact section content"
   },
-  "needsAttention": "Needs Attention",
-  "@needsAttention": {
-    "description": "Translation for needsAttention"
+  "acceptTerms": "[MALAY] Accept Terms",
+  "@acceptTerms": {
+    "description": "Button to accept terms of service"
   },
-  "monthlyReferralRequirement": "Monthly Referral Requirement",
-  "@monthlyReferralRequirement": {
-    "description": "Translation for monthlyReferralRequirement"
+  "privacyLastUpdated": "[MALAY] Last updated: January 2024",
+  "@privacyLastUpdated": {
+    "description": "Privacy Policy last updated date"
   },
-  "viewRewards": "View Rewards",
-  "@viewRewards": {
-    "description": "Translation for viewRewards"
+  "privacyIntroductionTitle": "[MALAY] 1. Introduction",
+  "@privacyIntroductionTitle": {
+    "description": "Privacy Policy introduction section title"
   },
-  "referralStatistics": "Referral Statistics",
-  "@referralStatistics": {
-    "description": "Translation for referralStatistics"
+  "privacyIntroductionContent": "[MALAY] APP-OINT respects your privacy and is committed to protecting your personal data. This privacy policy explains how we look after your personal data when you visit our platform and tells you about your privacy rights and how the law protects you.",
+  "@privacyIntroductionContent": {
+    "description": "Privacy Policy introduction section content"
   },
-  "activeReferrals": "Active Referrals",
-  "@activeReferrals": {
-    "description": "Translation for activeReferrals"
+  "REDACTED_TOKEN": "[MALAY] 2. Information We Collect",
+  "@REDACTED_TOKEN": {
+    "description": "Privacy Policy information collected section title"
   },
-  "conversionRate": "Conversion Rate",
-  "@conversionRate": {
-    "description": "Translation for conversionRate"
+  "REDACTED_TOKEN": "[MALAY] We may collect, use, store and transfer different kinds of personal data about you including: identity data (first name, last name, username), contact data (email address, telephone numbers), technical data (internet protocol address, browser type and version, time zone setting), profile data (your username and password, your interests, preferences, feedback), usage data (information about how you use our platform), and marketing data (your preferences in receiving marketing from us).",
+  "@REDACTED_TOKEN": {
+    "description": "Privacy Policy information collected section content"
   },
-  "recentReferrals": "Recent Referrals",
-  "@recentReferrals": {
-    "description": "Translation for recentReferrals"
+  "privacyHowWeUseTitle": "[MALAY] 3. How We Use Your Information",
+  "@privacyHowWeUseTitle": {
+    "description": "Privacy Policy how we use section title"
   },
-  "tierBenefits": "Tier Benefits",
-  "@tierBenefits": {
-    "description": "Translation for tierBenefits"
+  "privacyHowWeUseContent": "[MALAY] We use your personal data to: register you as a new customer, process and deliver your service including managing payments and communicating with you about your service, manage our relationship with you (including notifying you about changes to our terms or privacy policy), enable you to partake in a prize draw, competition or complete a survey, administer and protect our business and this platform (including troubleshooting, data analysis, testing, system maintenance, support, reporting and hosting of data), deliver relevant platform content and advertisements to you and measure or understand the effectiveness of the advertising we serve to you.",
+  "@privacyHowWeUseContent": {
+    "description": "Privacy Policy how we use section content"
   },
-  "yourReferralQRCode": "Your Referral QR Code",
-  "@yourReferralQRCode": {
-    "description": "Translation for yourReferralQRCode"
+  "privacyInformationSharingTitle": "[MALAY] 4. Information Sharing",
+  "@privacyInformationSharingTitle": {
+    "description": "Privacy Policy information sharing section title"
   },
-  "yourReferralLink": "Your Referral Link",
-  "@yourReferralLink": {
-    "description": "Translation for yourReferralLink"
+  "REDACTED_TOKEN": "[MALAY] We may share your personal information in the following situations: with service providers who perform services on our behalf, for business transfers in connection with any merger, sale, or transfer of all or a portion of our business, for legal requirements to comply with applicable law, legal process, or governmental request, to protect rights and safety when we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request.",
+  "@REDACTED_TOKEN": {
+    "description": "Privacy Policy information sharing section content"
   },
-  "shareYourLink": "Share Your Link",
-  "@shareYourLink": {
-    "description": "Translation for shareYourLink"
+  "privacyChildrenProtectionTitle": "[MALAY] 5. Children's Privacy (COPPA Compliance)",
+  "@privacyChildrenProtectionTitle": {
+    "description": "Privacy Policy children protection section title"
   },
-  "shareViaMessage": "Share via Message",
-  "@shareViaMessage": {
-    "description": "Translation for shareViaMessage"
+  "REDACTED_TOKEN": "[MALAY] Our service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us. If we become aware that we have collected personal data from children without verification of parental consent, we take steps to remove that information from our servers.",
+  "@REDACTED_TOKEN": {
+    "description": "Privacy Policy children protection section content"
   },
-  "shareViaEmail": "Share via Email",
-  "@shareViaEmail": {
-    "description": "Translation for shareViaEmail"
+  "privacyDataSecurityTitle": "[MALAY] 6. Data Security",
+  "@privacyDataSecurityTitle": {
+    "description": "Privacy Policy data security section title"
   },
-  "shareMore": "Share More",
-  "@shareMore": {
-    "description": "Translation for shareMore"
+  "privacyDataSecurityContent": "[MALAY] We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorized way, altered or disclosed. We limit access to your personal data to those employees, agents, contractors and other third parties who have a business need to know.",
+  "@privacyDataSecurityContent": {
+    "description": "Privacy Policy data security section content"
   },
-  "becomeAmbassador": "Become Ambassador",
-  "@becomeAmbassador": {
-    "description": "Translation for becomeAmbassador"
+  "privacyUserRightsTitle": "[MALAY] 7. Your Data Protection Rights (GDPR)",
+  "@privacyUserRightsTitle": {
+    "description": "Privacy Policy user rights section title"
   },
-  "ambassadorEligible": "Ambassador Eligible",
-  "@ambassadorEligible": {
-    "description": "Translation for ambassadorEligible"
+  "privacyUserRightsContent": "[MALAY] Under certain circumstances, you have rights under data protection laws in relation to your personal data: the right to request access to your personal data, the right to request correction of your personal data, the right to request erasure of your personal data, the right to object to processing of your personal data, the right to request restriction of processing your personal data, the right to request transfer of your personal data, and the right to withdraw consent at any time where we are relying on consent to process your personal data.",
+  "@privacyUserRightsContent": {
+    "description": "Privacy Policy user rights section content"
   },
-  "ambassadorWelcomeTitle": "Ambassador Welcome Title",
-  "@ambassadorWelcomeTitle": {
-    "description": "Translation for ambassadorWelcomeTitle"
+  "privacyCookiesTitle": "[MALAY] 8. Cookies",
+  "@privacyCookiesTitle": {
+    "description": "Privacy Policy cookies section title"
   },
-  "ambassadorWelcomeMessage": "Ambassador Welcome Message",
-  "@ambassadorWelcomeMessage": {
-    "description": "Translation for ambassadorWelcomeMessage"
+  "privacyCookiesContent": "[MALAY] We use cookies and similar tracking technologies to track the activity on our service and hold certain information. Cookies are files with small amount of data which may include an anonymous unique identifier. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.",
+  "@privacyCookiesContent": {
+    "description": "Privacy Policy cookies section content"
   },
-  "title": "Title",
-  "@title": {
-    "description": "Translation for title"
+  "privacyThirdPartyTitle": "[MALAY] 9. Third-Party Services",
+  "@privacyThirdPartyTitle": {
+    "description": "Privacy Policy third party section title"
   },
-  "pleaseEnterTitle": "Please Enter Title",
-  "@pleaseEnterTitle": {
-    "description": "Translation for pleaseEnterTitle"
+  "privacyThirdPartyContent": "[MALAY] Our service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the privacy policy of every site you visit.",
+  "@privacyThirdPartyContent": {
+    "description": "Privacy Policy third party section content"
   },
-  "messageType": "Message Type",
-  "@messageType": {
-    "description": "Translation for messageType"
+  "privacyChangesTitle": "[MALAY] 10. Changes to This Privacy Policy",
+  "@privacyChangesTitle": {
+    "description": "Privacy Policy changes section title"
   },
-  "pleaseEnterContent": "Please Enter Content",
-  "@pleaseEnterContent": {
-    "description": "Translation for pleaseEnterContent"
+  "privacyChangesContent": "[MALAY] We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the 'last updated' date.",
+  "@privacyChangesContent": {
+    "description": "Privacy Policy changes section content"
   },
-  "imageSelected": "Image Selected",
-  "@imageSelected": {
-    "description": "Translation for imageSelected"
+  "privacyContactTitle": "[MALAY] 11. Contact Us",
+  "@privacyContactTitle": {
+    "description": "Privacy Policy contact section title"
   },
-  "videoSelected": "Video Selected",
-  "@videoSelected": {
-    "description": "Translation for videoSelected"
+  "privacyContactContent": "[MALAY] If you have any questions about this Privacy Policy, please contact us at privacy@app-oint.com.",
+  "@privacyContactContent": {
+    "description": "Privacy Policy contact section content"
   },
-  "externalLink": "External Link",
-  "@externalLink": {
-    "description": "Translation for externalLink"
+  "acceptPrivacyPolicy": "[MALAY] Accept Privacy Policy",
+  "@acceptPrivacyPolicy": {
+    "description": "Button to accept privacy policy"
   },
-  "pleaseEnterLink": "Please Enter Link",
-  "@pleaseEnterLink": {
-    "description": "Translation for pleaseEnterLink"
+  "consentRequired": "[MALAY] You must accept the terms and privacy policy to continue",
+  "@consentRequired": {
+    "description": "Error message when consent is required but not given"
   },
-  "estimatedRecipients": "Estimated Recipients",
-  "@estimatedRecipients": {
-    "description": "Translation for estimatedRecipients"
+  "iAgreeToThe": "[MALAY] I agree to the",
+  "@iAgreeToThe": {
+    "description": "Start of consent text"
   },
-  "countries": "Countries",
-  "@countries": {
-    "description": "Translation for countries"
+  "and": "[MALAY] and",
+  "@and": {
+    "description": "Conjunction word for consent text"
   },
-  "cities": "Cities",
-  "@cities": {
-    "description": "Translation for cities"
+  "iHaveReadAndAgreeToThe": "[MALAY] I have read and agree to the",
+  "@iHaveReadAndAgreeToThe": {
+    "description": "Consent agreement text"
   },
-  "subscriptionTiers": "Subscription Tiers",
-  "@subscriptionTiers": {
-    "description": "Translation for subscriptionTiers"
+  "createAccount": "[MALAY] Create Account",
+  "@createAccount": {
+    "description": "Button to create account after consent"
   },
-  "userRoles": "User Roles",
-  "@userRoles": {
-    "description": "Translation for userRoles"
+  "acceptAndContinue": "[MALAY] Accept and Continue",
+  "@acceptAndContinue": {
+    "description": "Button to accept terms and continue"
   },
-  "errorEstimatingRecipients": "Error Estimating Recipients",
-  "@errorEstimatingRecipients": {
-    "description": "Translation for errorEstimatingRecipients"
-  },
-  "errorPickingImage": "Error Picking Image",
-  "@errorPickingImage": {
-    "description": "Translation for errorPickingImage"
-  },
-  "errorPickingVideo": "Error Picking Video",
-  "@errorPickingVideo": {
-    "description": "Translation for errorPickingVideo"
-  },
-  "userNotAuthenticated": "User Not Authenticated",
-  "@userNotAuthenticated": {
-    "description": "Translation for userNotAuthenticated"
-  },
-  "failedToUploadImage": "Failed to Upload Image",
-  "@failedToUploadImage": {
-    "description": "Translation for failedToUploadImage"
-  },
-  "failedToUploadVideo": "Failed to Upload Video",
-  "@failedToUploadVideo": {
-    "description": "Translation for failedToUploadVideo"
-  },
-  "image": "Image",
-  "@image": {
-    "description": "Translation for image"
-  },
-  "video": "Video",
-  "@video": {
-    "description": "Translation for video"
-  },
-  "continue1": "Continue",
-  "@continue1": {
-    "description": "Translation for continue1"
-  },
-  "getStarted": "Get Started",
-  "@getStarted": {
-    "description": "Translation for getStarted"
+  "consentSignupNotice": "[MALAY] By creating an account, you acknowledge that you have read and agree to our Terms of Service and Privacy Policy.",
+  "@consentSignupNotice": {
+    "description": "Notice text shown during signup about consent"
   }
 }
