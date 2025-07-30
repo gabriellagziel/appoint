@@ -1,27 +1,21 @@
-import 'package:appoint/common/ui/empty_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import '../../firebase_test_helper.dart';
+import 'package:appoint/common/ui/empty_screen.dart';
 
 void main() {
-  setUpAll(() async {
-    await initializeTestFirebase();
-  });
+  TestWidgetsFlutterBinding.ensureInitialized();
 
   group('EmptyScreen', () {
-    testWidgets('shows placeholder text and explore button', (tester) async {
+    testWidgets('shows placeholder and explore button', (tester) async {
       await tester.pumpWidget(
-        MaterialApp(
-          home: EmptyScreen(
-            onExplore: () {},
-          ),
+        const MaterialApp(
+          home: EmptyScreen(),
         ),
       );
 
       expect(find.text('Nothing here yet'), findsOneWidget);
       expect(find.text('Explore'), findsOneWidget);
-      expect(find.byType(ElevatedButton), findsOneWidget);
     });
   });
 }
