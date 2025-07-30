@@ -35,12 +35,10 @@ class _PersonalSchedulerScreenState
             child: apptsAsync.when(
               data: (appts) {
                 final dayAppts = appts
-                    .where(
-                      (a) =>
-                          a.startTime.year == _focusedDay.year &&
-                          a.startTime.month == _focusedDay.month &&
-                          a.startTime.day == _focusedDay.day,
-                    )
+                    .where((a) =>
+                        a.startTime.year == _focusedDay.year &&
+                        a.startTime.month == _focusedDay.month &&
+                        a.startTime.day == _focusedDay.day,)
                     .toList();
                 if (dayAppts.isEmpty) {
                   return const Center(child: Text('No appointments'));
@@ -96,113 +94,102 @@ class _PersonalSchedulerScreenState
     await ref.read(personalSchedulerServiceProvider).deleteAppointment(id);
   }
 
-  Future<PersonalAppointment?> _showEditDialog({
-    PersonalAppointment? existing,
-  }) {
+  Future<PersonalAppointment?> _showEditDialog(
+      {PersonalAppointment? existing,}) {
     final titleCtrl = TextEditingController(text: existing?.title);
     final descCtrl = TextEditingController(text: existing?.description);
     var start = existing?.startTime ?? _focusedDay;
-    var end = existing?.endTime ?? _focusedDay.add(const Duration(hours: 1));
+    var end =
+        existing?.endTime ?? _focusedDay.add(const Duration(hours: 1));
 
     return showDialog<PersonalAppointment>(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text(existing == null ? 'New Appointment' : 'Edit Appointment'),
-        content: SingleChildScrollView(
-          child: Column(
-            children: [
-              TextField(
-                controller: titleCtrl,
-                decoration: const InputDecoration(labelText: 'Title'),
-              ),
-              TextField(
-                controller: descCtrl,
-                decoration: const InputDecoration(labelText: 'Description'),
-              ),
-              const SizedBox(height: 8),
-              Row(
-                children: [
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () async {
-                        final d = await showDatePicker(
-                          context: context,
-                          initialDate: start,
-                          firstDate: DateTime(2000),
-                          lastDate: DateTime(2100),
-                        );
-                        if (d != null) {
-                          setState(() {
-                            start = DateTime(
-                              d.year,
-                              d.month,
-                              d.day,
-                              start.hour,
-                              start.minute,
-                            );
-                            end = start.add(const Duration(hours: 1));
-                          });
-                        }
-                      },
-                      child: Text(
-                        'Date: ${start.year}-${start.month}-${start.day}',
+          title:
+              Text(existing == null ? 'New Appointment' : 'Edit Appointment'),
+          content: SingleChildScrollView(
+            child: Column(
+              children: [
+                TextField(
+                  controller: titleCtrl,
+                  decoration: const InputDecoration(labelText: 'Title'),
+                ),
+                TextField(
+                  controller: descCtrl,
+                  decoration: const InputDecoration(labelText: 'Description'),
+                ),
+                const SizedBox(height: 8),
+                Row(
+                  children: [
+                    Expanded(
+                      child: TextButton(
+                        onPressed: () async {
+                          final d = await showDatePicker(
+                            context: context,
+                            initialDate: start,
+                            firstDate: DateTime(2000),
+                            lastDate: DateTime(2100),
+                          );
+                          if (d != null) {
+                            setState(() {
+                              start = DateTime(d.year, d.month, d.day,
+                                  start.hour, start.minute,);
+                              end = start.add(const Duration(hours: 1));
+                            });
+                          }
+                        },
+                        child: Text(
+                            'Date: ${start.year}-${start.month}-${start.day}'),
                       ),
                     ),
-                  ),
-                  Expanded(
-                    child: TextButton(
-                      onPressed: () async {
-                        final t = await showTimePicker(
-                          context: context,
-                          initialTime: TimeOfDay.fromDateTime(start),
-                        );
-                        if (t != null) {
-                          setState(() {
-                            start = DateTime(
-                              start.year,
-                              start.month,
-                              start.day,
-                              t.hour,
-                              t.minute,
-                            );
-                            end = start.add(const Duration(hours: 1));
-                          });
-                        }
-                      },
-                      child: Text(
-                        'Start: ${start.hour.toString().padLeft(2, '0')}:${start.minute.toString().padLeft(2, '0')}',
+                    Expanded(
+                      child: TextButton(
+                        onPressed: () async {
+                          final t = await showTimePicker(
+                            context: context,
+                            initialTime: TimeOfDay.fromDateTime(start),
+                          );
+                          if (t != null) {
+                            setState(() {
+                              start = DateTime(start.year, start.month,
+                                  start.day, t.hour, t.minute,);
+                              end = start.add(const Duration(hours: 1));
+                            });
+                          }
+                        },
+                        child: Text(
+                            'Start: ${start.hour.toString().padLeft(2, '0')}:${start.minute.toString().padLeft(2, '0')}',),
                       ),
                     ),
-                  ),
-                ],
-              ),
-            ],
+                  ],
+                ),
+              ],
+            ),
           ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () {
+                final String id = existing?.id ?? const Uuid().v4();
+                final userId =
+                    existing?.userId ?? ref.read(authProvider).currentUser!.uid;
+                final appt = PersonalAppointment(
+                  id: id,
+                  userId: userId,
+                  title: titleCtrl.text,
+                  description: descCtrl.text,
+                  startTime: start,
+                  endTime: end,
+                );
+                Navigator.pop(context, appt);
+              },
+              child: const Text('Save'),
+            ),
+          ],
         ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Cancel'),
-          ),
-          TextButton(
-            onPressed: () {
-              final id = existing?.id ?? const Uuid().v4();
-              final userId =
-                  existing?.userId ?? ref.read(authProvider).currentUser!.uid;
-              final appt = PersonalAppointment(
-                id: id,
-                userId: userId,
-                title: titleCtrl.text,
-                description: descCtrl.text,
-                startTime: start,
-                endTime: end,
-              );
-              Navigator.pop(context, appt);
-            },
-            child: const Text('Save'),
-          ),
-        ],
-      ),
     );
   }
 }

@@ -1,4 +1,6 @@
 // ignore_for_file: invalid_annotation_target
+import 'dart:core' show DateTime, Duration;
+
 import 'package:appoint/utils/datetime_converter.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
