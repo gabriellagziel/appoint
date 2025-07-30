@@ -43,25 +43,11 @@ if (isFirebaseFunctions) {
   } = require('./src/ambassadors');
 
   const {
-    checkMeetingLocations,
-    sendMeetingReminders,
-    onMeetingCreated,
-    onParticipantStatusChange,
-    getMeetingAnalytics,
-    updateUserLocation,
-  } = require('./src/meeting-reminders');
-
-  const {
     dailyAmbassadorEligibilityCheck,
     monthlyAmbassadorReview,
     trackUserReferral,
     getAmbassadorDashboard,
   } = require('./src/ambassador-automation');
-
-  const {
-    sendAmbassadorNotification,
-    sendMonthlyReminders,
-  } = require('./src/ambassador-notifications');
 
   const {
     createCheckoutSession: stripeCreateCheckoutSession,
@@ -106,10 +92,6 @@ if (isFirebaseFunctions) {
     trackUserReferral,
     getAmbassadorDashboard,
     
-    // Ambassador notification functions
-    sendAmbassadorNotification,
-    sendMonthlyReminders,
-    
     // Notification functions
     sendNotificationToStudio,
 
@@ -129,14 +111,6 @@ if (isFirebaseFunctions) {
     processWebhookRetries,
     oauth,
     hourlyAlerts,
-    
-    // Meeting functions
-    checkMeetingLocations,
-    sendMeetingReminders,
-    onMeetingCreated,
-    onParticipantStatusChange,
-    getMeetingAnalytics,
-    updateUserLocation,
   };
 } else {
   // Containerized mode - use Express.js server
