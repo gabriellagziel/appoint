@@ -10,17 +10,10 @@ service cloud.firestore {
         exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
     }
-
-    function isOwner(id) {
-      return isSignedIn() && request.auth.uid == id;
-    }
     // User profiles
     match /users/{userId} {
-      allow read, create: if isOwner(userId);
-      allow update: if isSignedIn() &&
-        isOwner(userId) &&
-        (!('role' in request.resource.data) ||
-          request.resource.data.role == resource.data.role);
+      allow read: if isSignedIn() && request.auth.uid == userId;
+      allow write: if isSignedIn() && request.auth.uid == userId;
     }
 
     // Bookings
@@ -28,100 +21,41 @@ service cloud.firestore {
       allow read: if isSignedIn() && (
         resource.data.userId == request.auth.uid ||
         resource.data.businessId == request.auth.uid ||
-        resource.data.ambassadorId == request.auth.uid
+        resource.data.ambassadorId == request.auth.uid ||
+        isAdmin()
       );
       allow create: if isSignedIn() &&
         request.auth.uid == request.resource.data.userId;
       allow update: if isSignedIn() && (
         request.auth.uid == resource.data.userId ||
         request.auth.uid == resource.data.businessId ||
-        request.auth.uid == resource.data.ambassadorId
-      ) &&
-        request.resource.data.userId == resource.data.userId &&
-        request.resource.data.businessId == resource.data.businessId &&
-        request.resource.data.ambassadorId == resource.data.ambassadorId;
-      allow delete: if isSignedIn() && request.auth.uid == resource.data.userId;
+        request.auth.uid == resource.data.ambassadorId ||
+        isAdmin()
+      );
+      allow delete: if isSignedIn() && (
+        request.auth.uid == resource.data.userId ||
+        isAdmin()
+      );
     }
 
     // Businesses
     match /businesses/{businessId} {
       allow read: if isSignedIn();
-      allow write: if isOwner(businessId);
+      allow write: if isSignedIn() &&
+        (request.auth.uid == businessId || isAdmin());
     }
 
     // Ambassadors
     match /ambassadors/{ambassadorId} {
       allow read: if isSignedIn();
-      allow write: if isOwner(ambassadorId);
-    }
-
-    // Ambassador profiles
-    match /ambassador_profiles/{userId} {
-      allow read: if isSignedIn() && (isOwner(userId) || isAdmin());
-      allow write: if isOwner(userId) || isAdmin();
-    }
-
-    // Ambassador referrals
-    match /ambassador_referrals/{referralId} {
-      allow read: if isSignedIn() && (
-        request.auth.uid == resource.data.ambassadorId ||
-        request.auth.uid == resource.data.referredUserId ||
-        isAdmin()
-      );
-      allow create: if isSignedIn();
-      allow update: if isSignedIn() && (
-        request.auth.uid == resource.data.ambassadorId ||
-        isAdmin()
-      );
-    }
-
-    // Ambassador rewards
-    match /ambassador_rewards/{rewardId} {
-      allow read: if isSignedIn() && (
-        request.auth.uid == resource.data.ambassadorId ||
-        isAdmin()
-      );
-      allow write: if isAdmin();
-    }
-
-    // Ambassador share codes
-    match /ambassador_share_codes/{shareCode} {
-      allow read: if isSignedIn();
-      allow write: if isAdmin();
-    }
-
-    // Ambassador automation logs
-    match /ambassador_automation_logs/{logId} {
-      allow read: if isAdmin();
-      allow write: if isAdmin();
-    }
-
-    // Ambassador demotions
-    match /ambassador_demotions/{demotionId} {
-      allow read: if isAdmin();
-      allow write: if isAdmin();
-    }
-
-    // Ambassador tier upgrades
-    match /ambassador_tier_upgrades/{upgradeId} {
-      allow read: if isAdmin();
-      allow write: if isAdmin();
+      allow write: if isSignedIn() &&
+        (request.auth.uid == ambassadorId || isAdmin());
     }
 
     // Admin broadcasts
     match /admin_broadcasts/{broadcastId} {
       allow read: if isAdmin();
-      allow create: if isAdmin();
-      allow update: if isAdmin() || 
-        (isSignedIn() && request.auth.uid in ['firebase-functions', 'system']);
-      allow delete: if isAdmin();
-    }
-
-    // Broadcast analytics
-    match /broadcast_analytics/{analyticsId} {
-      allow create: if isSignedIn();
-      allow read: if isAdmin();
-      allow update: if isAdmin();
+      allow write: if isAdmin();
     }
 
     // Ambassador quotas
@@ -130,16 +64,10 @@ service cloud.firestore {
         request.auth.uid == resource.data.ambassadorId ||
         request.auth.uid == resource.data.businessId
       );
-      allow create: if isSignedIn() && (
-        request.auth.uid == request.resource.data.ambassadorId ||
-        request.auth.uid == request.resource.data.businessId
-      );
-      allow update: if isSignedIn() && (
+      allow write: if isSignedIn() && (
         request.auth.uid == resource.data.ambassadorId ||
         request.auth.uid == resource.data.businessId
-      ) &&
-        request.resource.data.ambassadorId == resource.data.ambassadorId &&
-        request.resource.data.businessId == resource.data.businessId;
+      );
     }
 
     // Playtime Games - Simple rules
@@ -150,8 +78,12 @@ service cloud.firestore {
 
     // Playtime Sessions - Simple rules
     match /playtime_sessions/{docId} {
-      allow read, write: if isSignedIn() &&
-        (request.auth.uid == resource.data.creatorId || isAdmin());
+      allow read: if isSignedIn() &&
+        (resource.data.creatorId == request.auth.uid || isAdmin());
+      allow create: if isSignedIn() &&
+        (request.resource.data.creatorId == request.auth.uid || isAdmin());
+      allow update, delete: if isSignedIn() &&
+        (resource.data.creatorId == request.auth.uid || isAdmin());
     }
 
     // Playtime Backgrounds - Simple rules
@@ -164,145 +96,59 @@ service cloud.firestore {
     match /families/{familyId} {
       allow read: if isSignedIn() && (
         request.auth.uid == resource.data.parentId ||
-        request.auth.uid in resource.data.children
+        request.auth.uid in resource.data.children ||
+        isAdmin()
       );
-      allow create: if isSignedIn() && request.auth.uid == request.resource.data.parentId;
-      allow update: if isSignedIn() && request.auth.uid == resource.data.parentId &&
-        request.resource.data.parentId == resource.data.parentId;
+      allow create: if isSignedIn() && (
+        request.auth.uid == request.resource.data.parentId ||
+        isAdmin()
+      );
+      allow update, delete: if isSignedIn() && (
+        request.auth.uid == resource.data.parentId ||
+        isAdmin()
+      );
     }
 
     // Family invitations
     match /family_invitations/{invitationId} {
       allow read: if isSignedIn() && (
         request.auth.uid == resource.data.parentId ||
-        request.auth.uid == resource.data.childId
+        request.auth.uid == resource.data.childId ||
+        isAdmin()
       );
       allow create: if isSignedIn() && (
         request.auth.uid == request.resource.data.parentId ||
-        request.auth.uid == request.resource.data.childId
+        request.auth.uid == request.resource.data.childId ||
+        isAdmin()
       );
-      allow update: if isSignedIn() && (
+      allow update, delete: if isSignedIn() && (
         request.auth.uid == resource.data.parentId ||
-        request.auth.uid == resource.data.childId
-      ) &&
-        request.resource.data.parentId == resource.data.parentId &&
-        request.resource.data.childId == resource.data.childId;
+        request.auth.uid == resource.data.childId ||
+        isAdmin()
+      );
     }
 
     // Notifications
     match /notifications/{notificationId} {
-      allow read: if isSignedIn() && request.auth.uid == resource.data.userId;
-      allow create: if isSignedIn() && request.auth.uid == request.resource.data.userId;
-      allow update: if isSignedIn() && request.auth.uid == resource.data.userId &&
-        request.resource.data.userId == resource.data.userId;
+      allow read: if isSignedIn() && (
+        request.auth.uid == resource.data.userId || isAdmin()
+      );
+      allow write: if isSignedIn() && (
+        request.auth.uid == request.resource.data.userId || isAdmin()
+      );
     }
 
     // Payments
     match /payments/{paymentId} {
-      allow read: if isSignedIn() && request.auth.uid == resource.data.userId;
-      allow create: if isSignedIn() && request.auth.uid == request.resource.data.userId;
-      allow update: if isSignedIn() && request.auth.uid == resource.data.userId &&
-        request.resource.data.userId == resource.data.userId;
-    }
-
-    // WhatsApp Group Share Collections
-    match /whatsapp_shares/{document} {
-      // Allow authenticated users to create shares
-      allow create: if request.auth != null 
-        && request.auth.uid == request.resource.data.creatorId;
-      
-      // Allow creators and admins to read their shares
-      allow read: if request.auth != null 
-        && (request.auth.uid == resource.data.creatorId 
-            || isAdmin(request.auth.uid));
-      
-      // No updates or deletes for data integrity
-      allow update, delete: if false;
-    }
-    
-    match /share_clicks/{document} {
-      // Allow anyone to create click events (public links)
-      allow create: if true;
-      
-      // Allow creators and admins to read click data
-      allow read: if request.auth != null 
-        && (isCreatorOfShare(request.auth.uid, resource.data.shareId)
-            || isAdmin(request.auth.uid));
-      
-      // No updates or deletes for analytics integrity
-      allow update, delete: if false;
-    }
-    
-    match /share_conversions/{document} {
-      // Allow authenticated users to create conversion events
-      allow create: if request.auth != null;
-      
-      // Allow creators, participants, and admins to read conversion data
-      allow read: if request.auth != null 
-        && (isCreatorOfShare(request.auth.uid, resource.data.shareId)
-            || request.auth.uid == resource.data.participantId
-            || isAdmin(request.auth.uid));
-      
-      // No updates or deletes for analytics integrity
-      allow update, delete: if false;
-    }
-    
-    // Enhanced invites collection with source tracking
-    match /invites/{document} {
-      // Allow authenticated users to create invites
-      allow create: if request.auth != null;
-      
-      // Allow invitees and creators to read invites
-      allow read: if request.auth != null 
-        && (request.auth.uid == resource.data.inviteeId 
-            || isCreatorOfAppointment(request.auth.uid, resource.data.appointmentId)
-            || isAdmin(request.auth.uid));
-      
-      // Allow invitees to update their response status
-      allow update: if request.auth != null 
-        && request.auth.uid == resource.data.inviteeId
-        && request.resource.data.diff(resource.data).affectedKeys()
-            .hasOnly(['status']);
-      
-      // Allow creators to delete invites
-      allow delete: if request.auth != null 
-        && isCreatorOfAppointment(request.auth.uid, resource.data.appointmentId);
-    }
-    
-    // Enhanced appointments collection with source tracking
-    match /appointments/{document} {
-      // Allow authenticated users to create appointments
-      allow create: if request.auth != null 
-        && request.auth.uid == request.resource.data.creatorId;
-      
-      // Allow creators, invitees, and admins to read appointments
-      allow read: if request.auth != null 
-        && (request.auth.uid == resource.data.creatorId 
-            || request.auth.uid == resource.data.inviteeId
-            || isAdmin(request.auth.uid));
-      
-      // Allow creators to update appointments
-      allow update: if request.auth != null 
-        && request.auth.uid == resource.data.creatorId;
-      
-      // Allow creators to delete appointments
-      allow delete: if request.auth != null 
-        && request.auth.uid == resource.data.creatorId;
-    }
-    
-    // Helper functions
-    function isAdmin(userId) {
-      return exists(/databases/$(database)/documents/admins/$(userId));
-    }
-    
-    function isCreatorOfAppointment(userId, appointmentId) {
-      return exists(/databases/$(database)/documents/appointments/$(appointmentId))
-        && get(/databases/$(database)/documents/appointments/$(appointmentId)).data.creatorId == userId;
-    }
-    
-    function isCreatorOfShare(userId, shareId) {
-      return exists(/databases/$(database)/documents/whatsapp_shares/$(shareId))
-        && get(/databases/$(database)/documents/whatsapp_shares/$(shareId)).data.creatorId == userId;
+      allow read: if isSignedIn() && (
+        request.auth.uid == resource.data.userId || isAdmin()
+      );
+      allow create: if isSignedIn() && (
+        request.auth.uid == request.resource.data.userId || isAdmin()
+      );
+      allow update: if isSignedIn() && (
+        request.auth.uid == resource.data.userId || isAdmin()
+      );
     }
 
     // Admin panel data
