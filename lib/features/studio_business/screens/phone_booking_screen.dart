@@ -215,12 +215,9 @@ class _PhoneBookingScreenState extends ConsumerState<PhoneBookingScreen> {
       await _saveBookingRequest(
           customerName, phoneNumber, date, time, bookingCode,);
     } catch (e) {
-        if (mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('Error: $e')),
-          );
-        }
-      }
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error: $e')),
+        );
     } finally {
       if (mounted) {
         setState(() => _isProcessing = false);

@@ -9,7 +9,7 @@ class UserProfileScreen extends ConsumerWidget {
   const UserProfileScreen({super.key});
 
   void _showDeleteAccountDialog(BuildContext context) {
-    showDialog<void>(
+    showDialog(
       context: context,
       builder: (BuildContext context) => AlertDialog(
           title: const Text('Delete Account'),
@@ -43,7 +43,7 @@ class UserProfileScreen extends ConsumerWidget {
   Future<void> _deleteAccount(BuildContext context) async {
     try {
       // Show loading indicator
-      showDialog<void>(
+      showDialog(
         context: context,
         barrierDismissible: false,
         builder: (BuildContext context) => const AlertDialog(
@@ -85,7 +85,7 @@ class UserProfileScreen extends ConsumerWidget {
             ),
           );
         }
-      }
+    }
   }
 
   @override
