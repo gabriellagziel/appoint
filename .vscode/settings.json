@@ -41,5 +41,8 @@
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit"
   },
-  "cmake.sourceDirectory": "/Users/a/Documents/APP-OINT/linux"
+  "cmake.sourceDirectory": "/Users/a/Documents/APP-OINT/linux",
+  "dart.analysis.showLints": false,
+  "dart.analysis.showTodos": false,
+  "dart.analysis.showWarnings": false
 }

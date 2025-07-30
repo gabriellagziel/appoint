@@ -59,11 +59,12 @@ void main() {
 
         when(() => mockFunctions.httpsCallable('createPaymentIntent'))
             .thenReturn(mockCallable);
-        when(() => mockCallable.call({'amount': amount}))
-            .thenThrow(FirebaseFunctionsException(
-          code: 'invalid-argument',
-          message: 'Invalid amount',
-        ),);
+        when(() => mockCallable.call({'amount': amount})).thenThrow(
+          FirebaseFunctionsException(
+            code: 'invalid-argument',
+            message: 'Invalid amount',
+          ),
+        );
 
         // Act & Assert
         expect(
@@ -148,11 +149,12 @@ void main() {
 
         when(() => mockFunctions.httpsCallable('createPaymentIntent'))
             .thenReturn(mockCallable);
-        when(() => mockCallable.call({'amount': amount}))
-            .thenThrow(FirebaseFunctionsException(
-          code: 'internal',
-          message: 'Network error',
-        ),);
+        when(() => mockCallable.call({'amount': amount})).thenThrow(
+          FirebaseFunctionsException(
+            code: 'internal',
+            message: 'Network error',
+          ),
+        );
 
         // Act
         final result = await paymentService.handlePayment(amount);
@@ -164,18 +166,26 @@ void main() {
 
     group('PaymentStatus Messages', () {
       test('should return correct status messages', () {
-        expect(paymentService.getPaymentStatusMessage(PaymentStatus.initial),
-            equals('Ready to process payment'),);
-        expect(paymentService.getPaymentStatusMessage(PaymentStatus.processing),
-            equals('Processing payment...'),);
         expect(
-            paymentService
-                .getPaymentStatusMessage(PaymentStatus.requiresAction),
-            equals('Authentication required...'),);
-        expect(paymentService.getPaymentStatusMessage(PaymentStatus.succeeded),
-            equals('Payment successful!'),);
-        expect(paymentService.getPaymentStatusMessage(PaymentStatus.failed),
-            equals('Payment failed. Please try again.'),);
+          paymentService.getPaymentStatusMessage(PaymentStatus.initial),
+          equals('Ready to process payment'),
+        );
+        expect(
+          paymentService.getPaymentStatusMessage(PaymentStatus.processing),
+          equals('Processing payment...'),
+        );
+        expect(
+          paymentService.getPaymentStatusMessage(PaymentStatus.requiresAction),
+          equals('Authentication required...'),
+        );
+        expect(
+          paymentService.getPaymentStatusMessage(PaymentStatus.succeeded),
+          equals('Payment successful!'),
+        );
+        expect(
+          paymentService.getPaymentStatusMessage(PaymentStatus.failed),
+          equals('Payment failed. Please try again.'),
+        );
       });
     });
 
@@ -188,11 +198,12 @@ void main() {
 
         when(() => mockFunctions.httpsCallable('createPaymentIntent'))
             .thenReturn(mockCallable);
-        when(() => mockCallable.call({'amount': amount}))
-            .thenThrow(FirebaseFunctionsException(
-          code: 'card_declined',
-          message: 'Your card was declined',
-        ),);
+        when(() => mockCallable.call({'amount': amount})).thenThrow(
+          FirebaseFunctionsException(
+            code: 'card_declined',
+            message: 'Your card was declined',
+          ),
+        );
 
         // Act
         final result = await paymentService.handlePayment(amount);

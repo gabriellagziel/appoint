@@ -7,8 +7,11 @@ import 'package:mocktail/mocktail.dart';
 
 // Mock Firebase services
 class MockFirebaseFirestore extends Mock implements FirebaseFirestore {}
+
 class MockFirebaseAuth extends Mock implements FirebaseAuth {}
+
 class MockUser extends Mock implements User {}
+
 class MockUserCredential extends Mock implements UserCredential {}
 
 /// Helper class for Firebase test initialization
@@ -38,25 +41,25 @@ class FirebaseTestHelper {
 
   /// Create a test app with Firebase handling
   static Widget REDACTED_TOKEN(Widget child) => MaterialApp(
-      home: Builder(
-        builder: (context) {
-          // Handle Firebase initialization errors gracefully
-          try {
-            return child;
-          } catch (e) {
-            if (e.toString().contains('No Firebase App')) {
-              // Return a placeholder widget if Firebase isn't initialized
-              return const Scaffold(
-                body: Center(
-                  child: Text('Firebase not available in test environment'),
-                ),
-              );
+        home: Builder(
+          builder: (context) {
+            // Handle Firebase initialization errors gracefully
+            try {
+              return child;
+            } catch (e) {
+              if (e.toString().contains('No Firebase App')) {
+                // Return a placeholder widget if Firebase isn't initialized
+                return const Scaffold(
+                  body: Center(
+                    child: Text('Firebase not available in test environment'),
+                  ),
+                );
+              }
+              rethrow;
             }
-            rethrow;
-          }
-        },
-      ),
-    );
+          },
+        ),
+      );
 
   /// Create mock Firebase instances for testing
   static MockFirebaseAuth createMockAuth() => MockFirebaseAuth();
@@ -84,10 +87,14 @@ class FirebaseTestHelper {
 
     // Setup auth mock
     when(() => mockAuth.currentUser).thenReturn(mockUser);
-    when(() => mockAuth.authStateChanges()).thenAnswer((_) => Stream.value(mockUser));
-    when(() => mockAuth.userChanges()).thenAnswer((_) => Stream.value(mockUser));
-    when(() => mockAuth.signInWithEmailAndPassword(any(), any())).thenAnswer((_) async => mockUserCredential);
-    when(() => mockAuth.createUserWithEmailAndPassword(any(), any())).thenAnswer((_) async => mockUserCredential);
+    when(() => mockAuth.authStateChanges())
+        .thenAnswer((_) => Stream.value(mockUser));
+    when(() => mockAuth.userChanges())
+        .thenAnswer((_) => Stream.value(mockUser));
+    when(() => mockAuth.signInWithEmailAndPassword(any(), any()))
+        .thenAnswer((_) async => mockUserCredential);
+    when(() => mockAuth.createUserWithEmailAndPassword(any(), any()))
+        .thenAnswer((_) async => mockUserCredential);
     when(() => mockAuth.signOut()).thenAnswer((_) async {});
 
     // Setup Firestore mocks
@@ -101,14 +108,17 @@ class FirebaseTestHelper {
     when(() => mockFirestore.collection(any())).thenReturn(mockCollection);
     when(() => mockCollection.doc(any())).thenReturn(mockDocument);
     when(() => mockCollection.add(any())).thenAnswer((_) async => mockDocument);
-    when(() => mockCollection.snapshots()).thenAnswer((_) => Stream.value(mockQuerySnapshot));
+    when(() => mockCollection.snapshots())
+        .thenAnswer((_) => Stream.value(mockQuerySnapshot));
 
     // Setup document mock
     when(() => mockDocument.set(any())).thenAnswer((_) async {});
     when(() => mockDocument.update(any())).thenAnswer((_) async {});
     when(() => mockDocument.delete()).thenAnswer((_) async {});
-    when(() => mockDocument.snapshots()).thenAnswer((_) => Stream.value(mockDocumentSnapshot));
-    when(() => mockDocument.get()).thenAnswer((_) async => mockDocumentSnapshot);
+    when(() => mockDocument.snapshots())
+        .thenAnswer((_) => Stream.value(mockDocumentSnapshot));
+    when(() => mockDocument.get())
+        .thenAnswer((_) async => mockDocumentSnapshot);
 
     // Setup document snapshot mock
     when(() => mockDocumentSnapshot.exists).thenReturn(true);
@@ -126,8 +136,11 @@ class FirebaseTestHelper {
 
 // Additional mock classes
 class MockCollectionReference extends Mock implements CollectionReference {}
+
 class MockDocumentReference extends Mock implements DocumentReference {}
+
 class MockDocumentSnapshot extends Mock implements DocumentSnapshot {}
+
 class MockQuerySnapshot extends Mock implements QuerySnapshot {}
 
 /// Legacy function for backward compatibility
@@ -136,7 +149,8 @@ Future<void> initializeTestFirebase() async {
 }
 
 /// Legacy function for backward compatibility
-Widget REDACTED_TOKEN(Widget child) => FirebaseTestHelper.REDACTED_TOKEN(child);
+Widget REDACTED_TOKEN(Widget child) =>
+    FirebaseTestHelper.REDACTED_TOKEN(child);
 
 // Global mock instances for tests
 final mockAuth = MockFirebaseAuth();
@@ -149,10 +163,10 @@ void setupFirebaseMocks() {
 
 // Helper function to create a test widget with Firebase mocks
 Widget createTestApp(Widget child) => MaterialApp(
-    home: child,
-  );
+      home: child,
+    );
 
 // Helper function to create a test widget with Firebase mocks and providers
 Widget createTestAppWithProviders(Widget child) => MaterialApp(
-    home: child,
-  );
+      home: child,
+    );

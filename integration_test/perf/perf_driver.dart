@@ -7,26 +7,29 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 
 void main() {
-  final binding =
-      REDACTED_TOKEN.ensureInitialized();
+  final binding = REDACTED_TOKEN.ensureInitialized();
   binding.framePolicy = REDACTED_TOKEN.fullyLive;
 
   testWidgets('booking flow perf', (tester) async {
-    await binding.traceAction(() async {
-      app.main();
-      await tester.pumpAndSettle();
+    await binding.traceAction(
+      () async {
+        app.main();
+        await tester.pumpAndSettle();
 
-      await tester.tap(find.text('Sign in as Guest'));
-      await tester.pumpAndSettle();
+        await tester.tap(find.text('Sign in as Guest'));
+        await tester.pumpAndSettle();
 
-      await tester.tap(find.byIcon(Icons.calendar_month).first);
-      await tester.pumpAndSettle();
+        await tester.tap(find.byIcon(Icons.calendar_month).first);
+        await tester.pumpAndSettle();
 
-      await tester.tap(find.text('Confirm'));
-      await tester.pumpAndSettle();
-    }, reportKey: 'booking_flow',);
+        await tester.tap(find.text('Confirm'));
+        await tester.pumpAndSettle();
+      },
+      reportKey: 'booking_flow',
+    );
 
     final summary = binding.reportData;
+    late File file;
     file = File('performance/booking_flow_summary.json')
       ..createSync(recursive: true);
     file.writeAsStringSync(jsonEncode(summary));

@@ -24,12 +24,12 @@ void main() {
 
   group('AdminBroadcastScreen', () {
     Widget createTestWidget(Widget child) => ProviderScope(
-        child: MaterialApp(
-          localizationsDelegates: AppLocalizations.localizationsDelegates,
-          supportedLocales: AppLocalizations.supportedLocales,
-          home: child,
-        ),
-      );
+          child: MaterialApp(
+            localizationsDelegates: AppLocalizations.localizationsDelegates,
+            supportedLocales: AppLocalizations.supportedLocales,
+            home: child,
+          ),
+        );
 
     testWidgets('should display the title in app bar',
         (WidgetTester tester) async {
@@ -180,8 +180,7 @@ void main() {
       }
     });
 
-    testWidgets('should handle form validation',
-        (WidgetTester tester) async {
+    testWidgets('should handle form validation', (WidgetTester tester) async {
       await tester.pumpWidget(
         createTestWidget(const AdminBroadcastScreen()),
       );
