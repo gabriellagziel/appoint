@@ -1,0 +1,20 @@
+name: CI (Legacy - Redirecting to Main Pipeline)
+
+on: [push, pull_request]
+
+jobs:
+  redirect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Redirect to Main Pipeline
+        run: |
+          echo "This workflow has been replaced by ci-cd-pipeline.yml"
+          echo "Please use the main CI/CD pipeline for all builds and tests"
+          echo "The main pipeline includes:"
+          echo "- Static analysis with flutter analyze --no-fatal-infos"
+          echo "- Code coverage with flutter test --coverage"
+          echo "- APK builds with artifact upload"
+          echo "- Codecov integration"
+          echo "- Security scanning"
+          echo "- Multi-platform builds"
+          exit 0 

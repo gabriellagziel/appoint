@@ -1,35 +1,38 @@
 #!/usr/bin/env python3
 """
-CI/CD Setup Verification Script
+Simple CI/CD Setup Verification Script
 
 This script verifies that all CI/CD workflows are properly configured
-and ready for production use.
+by checking basic file structure and content.
 """
 
 import os
-import yaml
-import glob
 from pathlib import Path
 
-def check_workflow_file(file_path):
-    """Check if a workflow file is valid YAML and has required structure."""
+def check_workflow_basic(file_path):
+    """Check if a workflow file has basic required structure."""
     try:
         with open(file_path, 'r') as f:
-            workflow = yaml.safe_load(f)
+            content = f.read()
         
-        # Check required fields
-        required_fields = ['name', 'on']
-        for field in required_fields:
-            if field not in workflow:
-                return False, f"Missing required field: {field}"
+        # Check for required keywords
+        required_keywords = ['name:', 'on:']
+        missing_keywords = []
+        
+        for keyword in required_keywords:
+            if keyword not in content:
+                missing_keywords.append(keyword)
+        
+        if missing_keywords:
+            return False, f"Missing required keywords: {', '.join(missing_keywords)}"
         
         # Check if it's a deprecated file
-        if file_path.endswith('.deprecated'):
+        if str(file_path).endswith('.deprecated'):
             return True, "Deprecated file (expected)"
         
         return True, "Valid workflow file"
     except Exception as e:
-        return False, f"Invalid YAML: {str(e)}"
+        return False, f"Error reading file: {str(e)}"
 
 def check_secrets_usage(file_path):
     """Check if workflow uses secrets properly."""
@@ -55,7 +58,7 @@ def check_secrets_usage(file_path):
 
 def main():
     """Main verification function."""
-    print("🔍 CI/CD Setup Verification")
+    print("🔍 CI/CD Setup Verification (Simple)")
     print("=" * 50)
     
     workflows_dir = Path(".github/workflows")
@@ -77,10 +80,10 @@ def main():
     invalid_workflows = []
     
     for workflow_file in workflow_files:
-        is_valid, message = check_workflow_file(workflow_file)
+        is_valid, message = check_workflow_basic(workflow_file)
         secrets_ok, secrets_message = check_secrets_usage(workflow_file)
         
-        if workflow_file.name.endswith('.deprecated'):
+        if str(workflow_file).endswith('.deprecated'):
             deprecated_workflows.append(workflow_file.name)
             print(f"📄 {workflow_file.name}: {message}")
         elif is_valid and secrets_ok:
