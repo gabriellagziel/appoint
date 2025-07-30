@@ -1,0 +1,126 @@
+name: Localization CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  localization_validation:
+    name: Localization Validation
+    runs-on: ubuntu-latest
+    env:
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
+      FLUTTER_CACHE_DIR: ~/.flutter
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Flutter SDK
+        uses: flutter-actions/setup-flutter@v2
+        with:
+          flutter-version: '3.20.0'
+      - name: Ensure flutter in PATH
+        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+      - name: Cache Pub packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.pub-cache
+          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pub-
+      - name: Clear Flutter cache
+        run: flutter clean
+      - name: Verify Flutter Version
+        run: flutter --version
+      - name: Configure Network Allowlist
+        run: |
+          scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
+      - name: "Pre-flight: Verify network & Dart"
+        run: |
+    which dart
+          dart --version
+          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
+            curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
+          done
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          cache: 'npm'
+      - name: Install cspell
+        run: npm install -g cspell
+      - run: flutter pub get
+      - run: dart pub get
+      - run: dart run build_runner build --delete-conflicting-outputs
+      - name: Configure offline pub cache
+        run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
+      - name: Fetch dependencies offline
+        run: flutter pub get --offline
+      - run: flutter analyze
+      - run: dart analyze
+      - run: flutter test --coverage test/
+      - name: Verify coverage file
+        run: test -f coverage/lcov.info
+      - run: dart test integration_test/
+      - run: flutter build web
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: coverage-report
+          path: coverage/lcov.info
+      - name: Validate ARB files structure
+        run: |
+          echo "Checking ARB files structure..."
+          for file in lib/l10n/app_*.arb; do
+            if [ ! -f "$file" ]; then
+              echo "❌ Missing ARB file: $file"
+              exit 1
+            fi
+            echo "✅ Found: $file"
+          done
+
+          # Check that all ARB files have the same number of keys
+          en_keys=$(grep -c '^  \"' lib/l10n/app_en.arb)
+          echo "English ARB has $en_keys keys"
+
+          for file in lib/l10n/app_*.arb; do
+            if [ "$file" != "lib/l10n/app_en.arb" ]; then
+              key_count=$(grep -c '^  \"' "$file")
+              if [ "$key_count" -ne "$en_keys" ]; then
+                echo "❌ $file has $key_count keys, expected $en_keys"
+                exit 1
+              fi
+              echo "✅ $file has correct key count: $key_count"
+            fi
+          done
+      - name: Generate localizations
+        run: flutter gen-l10n
+      - name: Verify generated files
+        run: |
+          echo "Checking generated localization files..."
+          expected_count=32
+          actual_count=$(ls lib/l10n/app_localizations_*.dart | wc -l)
+
+          if [ "$actual_count" -ne "$expected_count" ]; then
+            echo "❌ Expected $expected_count generated files, found $actual_count"
+            exit 1
+          fi
+          echo "✅ Generated $actual_count localization files"
+      - name: Dart analyze
+        run: dart analyze
+      - name: Spell check ARB files
+        run: |
+          echo "Running spell check on ARB files..."
+          npx cspell "lib/l10n/app_*.arb" --no-progress
+      - name: Generate TODO list
+        run: |
+          echo "Generating TODO list for translations..."
+          grep -R "TODO:" lib/l10n/app_*.arb > todo_list.txt
+          echo "Found $(wc -l < todo_list.txt) TODO items"
+          cat todo_list.txt
+      - name: Upload TODO list as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: translation-todos
+          path: todo_list.txt
