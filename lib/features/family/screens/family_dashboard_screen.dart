@@ -4,6 +4,8 @@ import 'package:appoint/models/privacy_request.dart';
 import 'package:appoint/providers/auth_provider.dart';
 import 'package:appoint/providers/family_provider.dart';
 import 'package:appoint/providers/user_profile_provider.dart';
+import 'package:appoint/widgets/app_logo.dart';
+import 'package:appoint/constants/app_branding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -28,7 +30,13 @@ class FamilyDashboardScreen extends ConsumerWidget {
 
         return Scaffold(
           appBar: AppBar(
-            title: Text(l10n.familyDashboard),
+            title: Row(
+              children: [
+                const AppLogo(size: 24, logoOnly: true),
+                const SizedBox(width: 8),
+                Text(l10n.familyDashboard),
+              ],
+            ),
             actions: [
               IconButton(
                 icon: const Icon(Icons.person_add),
@@ -274,9 +282,9 @@ class FamilyDashboardScreen extends ConsumerWidget {
         );
       }
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(l10n.failedToResendOtp(e))),
-      );
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(l10n.failedToResendOtp(e))),
+        );
     }
   }
 
@@ -485,12 +493,12 @@ class FamilyDashboardScreen extends ConsumerWidget {
                       backgroundColor: Colors.green,
                     ),
                   );
+                  
+                  // Refresh the family links
+                  ref
+                      .read(familyLinksProvider(link.parentId).notifier)
+                      .loadLinks();
                 }
-
-                // Refresh the family links
-                ref
-                    .read(familyLinksProvider(link.parentId).notifier)
-                    .loadLinks();
               } catch (e) {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
