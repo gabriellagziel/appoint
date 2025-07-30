@@ -63,6 +63,11 @@ COPY . .
 RUN mkdir -p ~/.pub-cache \
     && tar xzf /tmp/pub_cache.tar.gz -C ~
 
+# Ensure Flutter & Dart are always on PATH
+RUN printf 'export PATH="/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin:/usr/local/bin:$PATH"\n' \
+    > /etc/profile.d/sdk-path.sh \
+ && chmod +x /etc/profile.d/sdk-path.sh
+
 # Set up working directory
 WORKDIR /workspace
 
