@@ -1,6 +1,5 @@
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
-import { onDocumentUpdated } from 'firebase-functions/v2/firestore';
 
 const db = admin.firestore();
 
@@ -239,7 +238,7 @@ export const autoAssignAmbassadors = functions.https.onRequest(async (req, res) 
     res.json({ success: true, assignedCount });
   } catch (error) {
     console.error('Error in autoAssignAmbassadors:', error);
-    res.status(500).json({ success: false, error: error instanceof Error ? error.message : 'Unknown error' });
+    res.status(500).json({ success: false, error: (error as Error).message });
   }
 });
 
@@ -268,7 +267,7 @@ export const getQuotaStats = functions.https.onRequest(async (req, res) => {
     res.json(stats);
   } catch (error) {
     console.error('Error in getQuotaStats:', error);
-    res.status(500).json({ error: error instanceof Error ? error.message : 'Unknown error' });
+    res.status(500).json({ error: (error as Error).message });
   }
 });
 
@@ -290,17 +289,18 @@ export const assignAmbassador = functions.https.onRequest(async (req, res) => {
     }
   } catch (error) {
     console.error('Error in assignAmbassador:', error);
-    res.status(500).json({ success: false, error: error instanceof Error ? error.message : 'Unknown error' });
+    res.status(500).json({ success: false, error: (error as Error).message });
   }
 });
 
 // Scheduled functions
-export const scheduledAutoAssign = functions.scheduler.onSchedule('every 1 hours', async (context) => {
+export const scheduledAutoAssign = functions.pubsub.schedule('every 1 hours').onRun(async (context) => {
   const assignedCount = await autoAssignAvailableSlots();
   console.log(`Scheduled auto-assignment completed. Assigned ${assignedCount} ambassadors.`);
+  return null;
 });
 
-export const dailyQuotaReport = functions.scheduler.onSchedule('every 24 hours', async (context) => {
+export const dailyQuotaReport = functions.pubsub.schedule('every 24 hours').onRun(async (context) => {
   // Generate daily report
   const reportData: Record<string, any> = {};
   
@@ -329,12 +329,13 @@ export const dailyQuotaReport = functions.scheduler.onSchedule('every 24 hours',
   });
 
   console.log('Daily quota report generated and stored.');
+  return null;
 });
 
 // Firestore triggers
-export const checkAmbassadorEligibility = onDocumentUpdated('users/{userId}', async (event: any) => {
-    const change = event.data;
-    const context = event;
+export const checkAmbassadorEligibility = functions.firestore
+  .document('users/{userId}')
+  .onUpdate(async (change, context) => {
     try {
       const userId = context.params.userId;
       const newValue = change.after.data();
@@ -362,9 +363,9 @@ export const checkAmbassadorEligibility = onDocumentUpdated('users/{userId}', as
     }
   });
 
-export const handleAmbassadorRemoval = onDocumentUpdated('users/{userId}', async (event: any) => {
-    const change = event.data;
-    const context = event;
+export const handleAmbassadorRemoval = functions.firestore
+  .document('users/{userId}')
+  .onUpdate(async (change, context) => {
     try {
       const userId = context.params.userId;
       const newValue = change.after.data();

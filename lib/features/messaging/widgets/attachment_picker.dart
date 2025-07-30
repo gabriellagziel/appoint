@@ -1,97 +1,49 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:file_picker/file_picker.dart';
 
-class AttachmentPicker extends ConsumerWidget {
+class AttachmentPicker extends StatefulWidget {
+  final Function(File) onFileSelected;
+  
   const AttachmentPicker({
+    required this.onFileSelected,
     super.key,
-    this.onAttachmentSelected,
   });
-  final Function(String)? onAttachmentSelected;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) => Container(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Text(
-              'Choose Attachment',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const SizedBox(height: 16),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                _AttachmentOption(
-                  icon: Icons.photo,
-                  label: 'Photo',
-                  onTap: () => _pickImage(context),
-                ),
-                _AttachmentOption(
-                  icon: Icons.videocam,
-                  label: 'Video',
-                  onTap: () => _pickVideo(context),
-                ),
-                _AttachmentOption(
-                  icon: Icons.insert_drive_file,
-                  label: 'File',
-                  onTap: () => _pickFile(context),
-                ),
-              ],
-            ),
-          ],
-        ),
-      );
-
-  void _pickImage(BuildContext context) {
-    // TODO: Implement image picking
-    Navigator.pop(context);
-    onAttachmentSelected?.call('image');
-  }
-
-  void _pickVideo(BuildContext context) {
-    // TODO: Implement video picking
-    Navigator.pop(context);
-    onAttachmentSelected?.call('video');
-  }
-
-  void _pickFile(BuildContext context) {
-    // TODO: Implement file picking
-    Navigator.pop(context);
-    onAttachmentSelected?.call('file');
-  }
+  State<AttachmentPicker> createState() => _AttachmentPickerState();
 }
 
-class _AttachmentOption extends StatelessWidget {
-  const _AttachmentOption({
-    required this.icon,
-    required this.label,
-    required this.onTap,
-  });
-  final IconData icon;
-  final String label;
-  final VoidCallback onTap;
-
+class _AttachmentPickerState extends State<AttachmentPicker> {
   @override
-  Widget build(BuildContext context) => InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(8),
-        child: Container(
-          padding: const EdgeInsets.all(16),
-          decoration: BoxDecoration(
-            border: Border.all(color: Colors.grey.shade300),
-            borderRadius: BorderRadius.circular(8),
-          ),
-          child: Column(
-            children: [
-              Icon(icon, size: 32),
-              const SizedBox(height: 8),
-              Text(label),
-            ],
-          ),
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        IconButton(
+          icon: const Icon(Icons.attach_file),
+          onPressed: _pickFile,
         ),
-      );
+        IconButton(
+          icon: const Icon(Icons.camera_alt),
+          onPressed: _pickImage,
+        ),
+      ],
+    );
+  }
+
+  Future<void> _pickFile() async {
+    final result = await FilePicker.platform.pickFiles();
+    if (result != null && result.files.single.path != null) {
+      widget.onFileSelected(File(result.files.single.path!));
+    }
+  }
+
+  Future<void> _pickImage() async {
+    final result = await FilePicker.platform.pickFiles(
+      type: FileType.image,
+    );
+    if (result != null && result.files.single.path != null) {
+      widget.onFileSelected(File(result.files.single.path!));
+    }
+  }
 }

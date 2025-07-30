@@ -116,7 +116,7 @@ export const createBusinessSchema = z.object({
     email: emailSchema,
     website: z.string().url('Invalid website URL').optional(),
   }),
-  businessHours: z.record(z.object({
+  businessHours: z.record(z.string(), z.object({
     open: z.string().regex(/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/, 'Invalid time format'),
     close: z.string().regex(/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/, 'Invalid time format'),
     closed: z.boolean(),
@@ -148,7 +148,7 @@ export const updateBusinessSchema = z.object({
       email: emailSchema,
       website: z.string().url('Invalid website URL').optional(),
     }).optional(),
-    businessHours: z.record(z.object({
+    businessHours: z.record(z.string(), z.object({
       open: z.string().regex(/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/, 'Invalid time format'),
       close: z.string().regex(/^([01]?[0-9]|2[0-3]):[0-5][0-9]$/, 'Invalid time format'),
       closed: z.boolean(),
@@ -234,7 +234,7 @@ export const sendNotificationToStudioSchema = z.object({
   studioId: studioIdSchema,
   title: z.string().min(1, 'Title is required').max(100, 'Title too long'),
   body: z.string().min(1, 'Body is required').max(500, 'Body too long'),
-  data: z.record(z.string()).optional(),
+  data: z.record(z.string(), z.string()).optional(),
 });
 
 // Validation helper function
@@ -243,7 +243,7 @@ export function validateInput<T>(schema: z.ZodSchema<T>, data: unknown): T {
     return schema.parse(data);
   } catch (error) {
     if (error instanceof z.ZodError) {
-      const errorMessage = error.errors.map(err => `${err.path.join('.')}: ${err.message}`).join(', ');
+      const errorMessage = error.issues.map((err: any) => `${err.path.join('.')}: ${err.message}`).join(', ');
       throw new Error(`Validation failed: ${errorMessage}`);
     }
     throw error;

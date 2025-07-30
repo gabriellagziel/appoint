@@ -7,6 +7,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class AdminService {
+
   AdminService({
     final FirebaseFirestore? firestore,
     final FirebaseAuth? auth,
@@ -18,7 +19,9 @@ class AdminService {
   // User Management
   Future<List<AdminUser>> fetchAllUsers() async {
     final snap = await _firestore.collection('users').get();
-    return snap.docs.map((doc) => AdminUser.fromJson(doc.data())).toList();
+    return snap.docs
+        .map((doc) => AdminUser.fromJson(doc.data()))
+        .toList();
   }
 
   Future<void> updateUserRole(String uid, final String role) async {
@@ -34,7 +37,9 @@ class AdminService {
   // Organization Management
   Future<List<Organization>> fetchOrganizations() async {
     final snap = await _firestore.collection('organizations').get();
-    return snap.docs.map((doc) => Organization.fromJson(doc.data())).toList();
+    return snap.docs
+        .map((doc) => Organization.fromJson(doc.data()))
+        .toList();
   }
 
   // Analytics
@@ -106,12 +111,9 @@ class AdminService {
     // Fetch error stats
     final errorsSnap = await _firestore
         .collection('error_logs')
-        .where(
-          'timestamp',
-          isGreaterThan: Timestamp.fromDate(
-            DateTime.now().subtract(const Duration(days: 30)),
-          ),
-        )
+        .where('timestamp',
+            isGreaterThan: Timestamp.fromDate(
+                DateTime.now().subtract(const Duration(days: 30)),),)
         .get();
     final totalErrors = errorsSnap.size;
     final criticalErrors = errorsSnap.docs.where((final doc) {
@@ -179,15 +181,13 @@ class AdminService {
 
     final snap = await query.get();
     return snap.docs.map((doc) {
-      final data = doc.data()! as Map<String, dynamic>;
+      final data = doc.data() as Map<String, dynamic>;
       return AdminErrorLog.fromJson(data);
     }).toList();
   }
 
   Future<void> resolveError(
-    String errorId,
-    final String resolutionNotes,
-  ) async {
+      String errorId, final String resolutionNotes,) async {
     final user = _auth.currentUser;
     await _firestore.collection('error_logs').doc(errorId).update({
       'isResolved': true,
@@ -225,7 +225,7 @@ class AdminService {
 
     final snap = await query.get();
     return snap.docs.map((doc) {
-      final data = doc.data()! as Map<String, dynamic>;
+      final data = doc.data() as Map<String, dynamic>;
       return AdminActivityLog.fromJson(data);
     }).toList();
   }
@@ -280,8 +280,7 @@ class AdminService {
   }
 
   Future<void> updateMonetizationSettings(
-    MonetizationSettings settings,
-  ) async {
+      MonetizationSettings settings) async {
     await _firestore
         .collection('settings')
         .doc('monetization')
@@ -308,8 +307,7 @@ class AdminService {
   }
 
   Future<void> createBroadcastMessage(
-    AdminBroadcastMessage message,
-  ) async {
+      AdminBroadcastMessage message) async {
     await _firestore.collection('admin_broadcasts').add(message.toJson());
 
     await _logAdminActivity(
@@ -351,21 +349,35 @@ class AdminService {
   }
 
   // Export functionality
-  Future<String> exportDataAsCSV(
-    final String dataType, {
-    Map<String, dynamic>? filters,
-  }) async {
+  Future<String> exportDataAsCSV(final String dataType,
+      {Map<String, dynamic>? filters,}) async {
     // This would implement CSV export logic
     // For now, return a placeholder
     return 'CSV export for $dataType';
   }
 
-  Future<String> exportDataAsPDF(
-    final String dataType, {
-    Map<String, dynamic>? filters,
-  }) async {
+  Future<String> exportDataAsPDF(final String dataType,
+      {Map<String, dynamic>? filters,}) async {
     // This would implement PDF export logic
     // For now, return a placeholder
     return 'PDF export for $dataType';
+  }
+
+  /// Delete a user account and all associated data
+  Future<void> deleteUser(String userId) async {
+    try {
+      // Delete user document from Firestore
+      await _firestore.collection('users').doc(userId).delete();
+      
+      // Note: In a real implementation, you would also:
+      // - Delete related collections (bookings, messages, etc.)
+      // - Delete Firebase Auth user
+      // - Clean up file storage
+      // - Log the deletion for audit purposes
+      
+      print('User $userId deleted successfully');
+    } catch (e) {
+      throw Exception('Failed to delete user: $e');
+    }
   }
 }

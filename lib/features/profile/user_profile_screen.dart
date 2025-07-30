@@ -9,11 +9,11 @@ class UserProfileScreen extends ConsumerWidget {
   const UserProfileScreen({super.key});
 
   void _showDeleteAccountDialog(BuildContext context) {
-    showDialog(
+    showDialog<void>(
       context: context,
       builder: (BuildContext context) => AlertDialog(
-        title: const Text('Delete Account'),
-        content: const Text(
+          title: const Text('Delete Account'),
+          content: const Text(
             'Are you sure you want to delete your account? This action cannot be undone and will permanently remove all your data including:\n\n'
             '• Your profile information\n'
             '• All bookings and appointments\n'
@@ -21,41 +21,40 @@ class UserProfileScreen extends ConsumerWidget {
             '• Payment history\n'
             '• Settings and preferences\n\n'
             'This action is irreversible.'),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(context).pop(),
-            child: const Text('Cancel'),
-          ),
-          TextButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-              _deleteAccount(context);
-            },
-            style: TextButton.styleFrom(
-              foregroundColor: Colors.red,
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: const Text('Cancel'),
             ),
-            child: const Text('Delete Account'),
-          ),
-        ],
-      ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+                _deleteAccount(context);
+              },
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.red),
+              child: const Text('Delete Account'),
+            ),
+          ],
+        ),
     );
   }
 
   Future<void> _deleteAccount(BuildContext context) async {
     try {
       // Show loading indicator
-      showDialog(
+      showDialog<void>(
         context: context,
         barrierDismissible: false,
         builder: (BuildContext context) => const AlertDialog(
-          content: Row(
-            children: [
-              CircularProgressIndicator(),
-              SizedBox(width: 16),
-              Text('Deleting account...'),
-            ],
+            content: Row(
+              children: [
+                CircularProgressIndicator(),
+                SizedBox(width: 16),
+                Text('Deleting account...'),
+              ],
+            ),
           ),
-        ),
       );
 
       // Delete the account
@@ -75,17 +74,18 @@ class UserProfileScreen extends ConsumerWidget {
         );
       }
     } catch (e) {
-      Navigator.of(context).pop();
-      // Show error message
-      if (context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text('Failed to delete account: $e'),
-            backgroundColor: Colors.red,
-          ),
-        );
+        Navigator.of(context).pop();
+        
+        // Show error message
+        if (context.mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('Failed to delete account: $e'),
+              backgroundColor: Colors.red,
+            ),
+          );
+        }
       }
-    }
   }
 
   @override
@@ -151,7 +151,8 @@ class UserProfileScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(child: CircularProgressIndicator()),
-        error: (_, final __) => Center(child: Text(l10n.errorLoadingProfile)),
+        error: (_, final __) =>
+            Center(child: Text(l10n.errorLoadingProfile)),
       ),
     );
   }

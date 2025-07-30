@@ -1,4 +1,4 @@
-import * as functions from 'firebase-functions';
+import * as functions from 'firebase-functions/v1';
 import * as admin from 'firebase-admin';
 import { CallableContext } from 'firebase-functions/v1/https';
 
@@ -363,7 +363,7 @@ async function sendBatchWithRetry(
     };
 
     // Send to FCM
-    const response = await messaging.sendMulticast(message);
+    const response = await messaging.sendEachForMulticast(message);
     
     console.log(`Batch attempt ${attempt}: ${response.successCount} successful, ${response.failureCount} failed`);
 
@@ -378,7 +378,7 @@ async function sendBatchWithRetry(
     if (response.failureCount > 0) {
       const failedUsers: Array<{ id: string; fcmToken: string; error: string }> = [];
       
-      response.responses.forEach((resp, index) => {
+      response.responses.forEach((resp: any, index: number) => {
         if (!resp.success) {
           const error = resp.error?.code || 'unknown-error';
           failedUsers.push({

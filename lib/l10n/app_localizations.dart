@@ -304,7 +304,7 @@ abstract class AppLocalizations {
   /// **'Create Virtual Session'**
   String get createVirtualSession;
 
-  /// Message send success confirmation
+  /// Message sent successfully message
   ///
   /// In en, this message translates to:
   /// **'Message sent successfully'**
@@ -334,11 +334,11 @@ abstract class AppLocalizations {
   /// **'Are you sure you want to cancel this invite?'**
   String get cancelInviteConfirmation;
 
-  /// Created date display with parameter
+  /// Created status with date
   ///
   /// In en, this message translates to:
-  /// **'Created: {created}'**
-  String created(String created, Object date);
+  /// **'Created: {date}'**
+  String created(Object date);
 
   /// Description
   ///
@@ -442,11 +442,11 @@ abstract class AppLocalizations {
   /// **'Participants'**
   String get participants;
 
-  /// Recipients display with parameter
+  /// Description
   ///
   /// In en, this message translates to:
-  /// **'Recipients: {recipients}'**
-  String recipients(String recipients, Object count);
+  /// **'Recipients: {count}'**
+  String recipients(Object count);
 
   /// Description
   ///
@@ -514,11 +514,11 @@ abstract class AppLocalizations {
   /// **'Invited: {date}'**
   String invited(Object date);
 
-  /// Content display with parameter
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Content: {content}'**
-  String content(String content);
+  String content(Object content);
 
   /// Description
   ///
@@ -574,7 +574,7 @@ abstract class AppLocalizations {
   /// **'Compose Broadcast Message'**
   String get composeBroadcastMessage;
 
-  /// Send now button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Send Now'**
@@ -616,11 +616,11 @@ abstract class AppLocalizations {
   /// **'Remove Child'**
   String get removeChild;
 
-  /// Status display with parameter
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Status: {status}'**
-  String status(String status);
+  String status(Object status);
 
   /// Description
   ///
@@ -712,11 +712,11 @@ abstract class AppLocalizations {
   /// **'Access revoked successfully'**
   String get accessRevokedSuccessfully;
 
-  /// Type display with parameter
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Type: {type}'**
-  String type(String type);
+  String type(Object type);
 
   /// Description
   ///
@@ -766,10 +766,10 @@ abstract class AppLocalizations {
   /// **'Revoke'**
   String get revoke;
 
-  /// No broadcast messages message
+  /// Description
   ///
   /// In en, this message translates to:
-  /// **'No broadcast messages'**
+  /// **'No messages yet'**
   String get noBroadcastMessages;
 
   /// Description
@@ -784,7 +784,7 @@ abstract class AppLocalizations {
   /// **'Notifications'**
   String get notifications;
 
-  /// Details button
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Details'**
@@ -922,7 +922,7 @@ abstract class AppLocalizations {
   /// **'Media (Optional)'**
   String get mediaOptional;
 
-  /// Message save success confirmation
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Message saved successfully'**
@@ -940,7 +940,7 @@ abstract class AppLocalizations {
   /// **'Dashboard'**
   String get dashboard;
 
-  /// No permission message
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'No permission for broadcast'**
@@ -958,11 +958,11 @@ abstract class AppLocalizations {
   /// **'Invite Details'**
   String get inviteDetail;
 
-  /// Scheduled date display with parameter
+  /// Description
   ///
   /// In en, this message translates to:
-  /// **'Scheduled: {scheduled}'**
-  String scheduled(String scheduled, Object date);
+  /// **'Scheduled: {date}'**
+  String scheduled(Object date);
 
   /// Description
   ///
@@ -976,11 +976,11 @@ abstract class AppLocalizations {
   /// **'Scheduling'**
   String get scheduling;
 
-  /// Error saving message with parameter
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Error saving message: {error}'**
-  String errorSavingMessage(String error);
+  String errorSavingMessage(Object error);
 
   /// Description
   ///
@@ -1030,11 +1030,11 @@ abstract class AppLocalizations {
   /// **'Failed to cancel invite: {error}'**
   String failedToCancelInvite(Object error);
 
-  /// Error sending message with parameter
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Error sending message: {error}'**
-  String errorSendingMessage(String error);
+  String errorSendingMessage(Object error);
 
   /// Description
   ///
@@ -1126,23 +1126,23 @@ abstract class AppLocalizations {
   /// **'Manage Permissions'**
   String get managePermissions;
 
-  /// Poll options label
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Poll Options'**
   String get pollOptions;
 
-  /// Clicked count display with parameter
+  /// Description
   ///
   /// In en, this message translates to:
-  /// **'Clicked: {clicked}'**
-  String clicked(String clicked, Object count);
+  /// **'Clicked: {count}'**
+  String clicked(Object count);
 
-  /// Link display with parameter
+  /// Description
   ///
   /// In en, this message translates to:
   /// **'Link: {link}'**
-  String link(String link);
+  String link(Object link);
 
   /// Description
   ///
@@ -4772,384 +4772,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{referredUserName} joined through your referral! You now have {totalReferrals} total referrals.'**
   String referralSuccessBody(String referredUserName, String totalReferrals);
-
-  /// Title label
-  ///
-  /// In en, this message translates to:
-  /// **'Title'**
-  String get title;
-
-  /// Validation message for title field
-  ///
-  /// In en, this message translates to:
-  /// **'Please enter a title'**
-  String get pleaseEnterTitle;
-
-  /// Message type field label
-  ///
-  /// In en, this message translates to:
-  /// **'Message Type'**
-  String get messageType;
-
-  /// Validation message for content field
-  ///
-  /// In en, this message translates to:
-  /// **'Please enter content'**
-  String get pleaseEnterContent;
-
-  /// Image selected confirmation
-  ///
-  /// In en, this message translates to:
-  /// **'Image selected'**
-  String get imageSelected;
-
-  /// Video selected confirmation
-  ///
-  /// In en, this message translates to:
-  /// **'Video selected'**
-  String get videoSelected;
-
-  /// External link field label
-  ///
-  /// In en, this message translates to:
-  /// **'External Link'**
-  String get externalLink;
-
-  /// Validation message for link field
-  ///
-  /// In en, this message translates to:
-  /// **'Please enter a link'**
-  String get pleaseEnterLink;
-
-  /// Estimated recipients count label
-  ///
-  /// In en, this message translates to:
-  /// **'Estimated recipients'**
-  String get estimatedRecipients;
-
-  /// Countries filter label
-  ///
-  /// In en, this message translates to:
-  /// **'Countries'**
-  String get countries;
-
-  /// Cities filter label
-  ///
-  /// In en, this message translates to:
-  /// **'Cities'**
-  String get cities;
-
-  /// Subscription tiers filter label
-  ///
-  /// In en, this message translates to:
-  /// **'Subscription Tiers'**
-  String get subscriptionTiers;
-
-  /// User roles filter label
-  ///
-  /// In en, this message translates to:
-  /// **'User Roles'**
-  String get userRoles;
-
-  /// Error message for recipient estimation
-  ///
-  /// In en, this message translates to:
-  /// **'Error estimating recipients'**
-  String get errorEstimatingRecipients;
-
-  /// Error message for image selection
-  ///
-  /// In en, this message translates to:
-  /// **'Error picking image'**
-  String get errorPickingImage;
-
-  /// Error message for video selection
-  ///
-  /// In en, this message translates to:
-  /// **'Error picking video'**
-  String get errorPickingVideo;
-
-  /// User not authenticated error
-  ///
-  /// In en, this message translates to:
-  /// **'User not authenticated'**
-  String get userNotAuthenticated;
-
-  /// Image upload failure message
-  ///
-  /// In en, this message translates to:
-  /// **'Failed to upload image'**
-  String get failedToUploadImage;
-
-  /// Video upload failure message
-  ///
-  /// In en, this message translates to:
-  /// **'Failed to upload video'**
-  String get failedToUploadVideo;
-
-  /// Image label
-  ///
-  /// In en, this message translates to:
-  /// **'Image'**
-  String get image;
-
-  /// Video label
-  ///
-  /// In en, this message translates to:
-  /// **'Video'**
-  String get video;
-
-  /// Continue button
-  ///
-  /// In en, this message translates to:
-  /// **'Continue'**
-  String get continue1;
-
-  /// Get started button
-  ///
-  /// In en, this message translates to:
-  /// **'Get Started'**
-  String get getStarted;
-
-  /// No description provided for @analyticsDashboard.
-  ///
-  /// In en, this message translates to:
-  /// **'Analytics Dashboard'**
-  String get analyticsDashboard;
-
-  /// No description provided for @filters.
-  ///
-  /// In en, this message translates to:
-  /// **'Filters'**
-  String get filters;
-
-  /// No description provided for @broadcasts.
-  ///
-  /// In en, this message translates to:
-  /// **'Broadcasts'**
-  String get broadcasts;
-
-  /// No description provided for @formAnalytics.
-  ///
-  /// In en, this message translates to:
-  /// **'Form Analytics'**
-  String get formAnalytics;
-
-  /// No description provided for @totalBroadcasts.
-  ///
-  /// In en, this message translates to:
-  /// **'Total Broadcasts'**
-  String get totalBroadcasts;
-
-  /// No description provided for @totalRecipients.
-  ///
-  /// In en, this message translates to:
-  /// **'Total Recipients'**
-  String get totalRecipients;
-
-  /// No description provided for @openRate.
-  ///
-  /// In en, this message translates to:
-  /// **'Open Rate'**
-  String get openRate;
-
-  /// No description provided for @engagementRate.
-  ///
-  /// In en, this message translates to:
-  /// **'Engagement Rate'**
-  String get engagementRate;
-
-  /// No description provided for @noDataAvailable.
-  ///
-  /// In en, this message translates to:
-  /// **'No data available'**
-  String get noDataAvailable;
-
-  /// No description provided for @breakdown.
-  ///
-  /// In en, this message translates to:
-  /// **'Breakdown'**
-  String get breakdown;
-
-  /// No description provided for @byCountry.
-  ///
-  /// In en, this message translates to:
-  /// **'By Country'**
-  String get byCountry;
-
-  /// No description provided for @byType.
-  ///
-  /// In en, this message translates to:
-  /// **'By Type'**
-  String get byType;
-
-  /// No description provided for @noBroadcastsFound.
-  ///
-  /// In en, this message translates to:
-  /// **'No broadcasts found'**
-  String get noBroadcastsFound;
-
-  /// No description provided for @sent.
-  ///
-  /// In en, this message translates to:
-  /// **'Sent'**
-  String get sent;
-
-  /// No description provided for @responses.
-  ///
-  /// In en, this message translates to:
-  /// **'Responses'**
-  String get responses;
-
-  /// No description provided for @clickRate.
-  ///
-  /// In en, this message translates to:
-  /// **'Click Rate'**
-  String get clickRate;
-
-  /// No description provided for @responseRate.
-  ///
-  /// In en, this message translates to:
-  /// **'Response Rate'**
-  String get responseRate;
-
-  /// No description provided for @viewFormAnalytics.
-  ///
-  /// In en, this message translates to:
-  /// **'View Form Analytics'**
-  String get viewFormAnalytics;
-
-  /// No description provided for @pending.
-  ///
-  /// In en, this message translates to:
-  /// **'Pending'**
-  String get pending;
-
-  /// No description provided for @sending.
-  ///
-  /// In en, this message translates to:
-  /// **'Sending'**
-  String get sending;
-
-  /// No description provided for @failed.
-  ///
-  /// In en, this message translates to:
-  /// **'Failed'**
-  String get failed;
-
-  /// No description provided for @partialSent.
-  ///
-  /// In en, this message translates to:
-  /// **'Partial Sent'**
-  String get partialSent;
-
-  /// No description provided for @noFormBroadcasts.
-  ///
-  /// In en, this message translates to:
-  /// **'No form broadcasts'**
-  String get noFormBroadcasts;
-
-  /// No description provided for @totalResponses.
-  ///
-  /// In en, this message translates to:
-  /// **'Total Responses'**
-  String get totalResponses;
-
-  /// No description provided for @noFormData.
-  ///
-  /// In en, this message translates to:
-  /// **'No form data'**
-  String get noFormData;
-
-  /// No description provided for @average.
-  ///
-  /// In en, this message translates to:
-  /// **'Average'**
-  String get average;
-
-  /// No description provided for @mostCommon.
-  ///
-  /// In en, this message translates to:
-  /// **'Most Common'**
-  String get mostCommon;
-
-  /// No description provided for @errorLoadingData.
-  ///
-  /// In en, this message translates to:
-  /// **'Error loading data'**
-  String get errorLoadingData;
-
-  /// No description provided for @today.
-  ///
-  /// In en, this message translates to:
-  /// **'Today'**
-  String get today;
-
-  /// No description provided for @last7Days.
-  ///
-  /// In en, this message translates to:
-  /// **'Last 7 Days'**
-  String get last7Days;
-
-  /// No description provided for @last30Days.
-  ///
-  /// In en, this message translates to:
-  /// **'Last 30 Days'**
-  String get last30Days;
-
-  /// No description provided for @customRange.
-  ///
-  /// In en, this message translates to:
-  /// **'Custom Range'**
-  String get customRange;
-
-  /// No description provided for @all.
-  ///
-  /// In en, this message translates to:
-  /// **'All'**
-  String get all;
-
-  /// No description provided for @timeRange.
-  ///
-  /// In en, this message translates to:
-  /// **'Time Range'**
-  String get timeRange;
-
-  /// No description provided for @startDate.
-  ///
-  /// In en, this message translates to:
-  /// **'Start Date'**
-  String get startDate;
-
-  /// No description provided for @endDate.
-  ///
-  /// In en, this message translates to:
-  /// **'End Date'**
-  String get endDate;
-
-  /// No description provided for @exportDataDescription.
-  ///
-  /// In en, this message translates to:
-  /// **'Export analytics data for the selected time range'**
-  String get exportDataDescription;
-
-  /// No description provided for @exportComplete.
-  ///
-  /// In en, this message translates to:
-  /// **'Export complete'**
-  String get exportComplete;
-
-  /// No description provided for @exportFailed.
-  ///
-  /// In en, this message translates to:
-  /// **'Export failed'**
-  String get exportFailed;
-
-  /// No description provided for @export.
-  ///
-  /// In en, this message translates to:
-  /// **'Export'**
-  String get export;
 }
 
 class _AppLocalizationsDelegate
