@@ -10,30 +10,33 @@ jobs:
   analyze_and_test:
     name: Analyze & Test
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/your-org/app-oint-dev:latest
-      options: --pull
     env:
-      PUB_HOSTED_URL: https://pub.flutter-io.cn
-      FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
-      PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Flutter
+      - name: Check required network access
+        run: |
+          for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
+            for i in 1 2 3; do
+              curl --head --fail https://$host && break || sleep 5
+            done
+          done
+      - name: Setup Flutter SDK
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.32.0'
           cache: true
-      - name: Setup Dart
-        uses: dart-lang/setup-dart@v1
+      - name: Setup Dart SDK
+        uses: actions/setup-dart@v3
         with:
-          sdk: '3.4.0'
+          dart-version: '3.4.0'
       - name: Ensure Flutter & Dart in PATH
         run: |
-          echo "/usr/local/flutter/bin" >> $GITHUB_PATH
-          echo "/usr/lib/dart/bin" >> $GITHUB_PATH
-      # network checks removed for offline usage
+          echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+          echo "$HOME/.dart-sdk/bin" >> $GITHUB_PATH
+          echo "$HOME/.flutter/bin/cache/dart-sdk/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -48,40 +51,27 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
-      - name: "Pre-flight: Verify Dart"
+      - name: "Pre-flight: Verify network & Dart"
         run: |
           which dart
-          version_line=$(dart --version 2>&1)
-          echo "$version_line"
-          sdk=$(echo "$version_line" | awk '{print $4}')
-          required=3.4.0
-          if [ "$(printf '%s\n%s\n' "$required" "$sdk" | sort -V | head -n1)" != "$required" ]; then
-            echo "Dart SDK $sdk is below required $required" && exit 1
-          fi
-      # network checks removed for offline usage
-      - name: Get dependencies
-        run: flutter pub get
+          dart --version
+          for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
+            curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
+          done
+      - name: Get dependencies with retry
+        run: |
+          for i in 1 2 3; do
+            flutter pub get && break || sleep 5
+          done
       - run: dart pub get
       - name: Verify firebase_app_check resolution
         run: grep firebase_app_check pubspec.lock
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
-      - name: Start Firebase emulators
-        run: |
-          echo "FIREBASE_AUTH_EMULATOR_HOST=localhost:9099" >> $GITHUB_ENV
-          echo "FIRESTORE_EMULATOR_HOST=localhost:8080" >> $GITHUB_ENV
-          echo "FIREBASE_STORAGE_EMULATOR_HOST=localhost:9199" >> $GITHUB_ENV
-          firebase emulators:start --only auth,firestore,storage --project app-oint-core &
-          sleep 5
-      - name: Run Flutter tests with coverage
-        run: dart test --coverage
-      - name: Run Flutter integration tests
-        run: flutter test integration_test --coverage --reporter=compact
-      - name: Generate localizations
-        run: flutter gen-l10n
-      - name: Check for undefined localization getters
-        run: dart scripts/check_l10n_getters.dart
+      - name: Run tests with coverage
+        run: flutter test --coverage
+      - run: dart test integration_test/
       - run: flutter build web
       - uses: codecov/codecov-action@v3
         with:

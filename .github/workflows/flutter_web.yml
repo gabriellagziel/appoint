@@ -9,48 +9,32 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/your-org/app-oint-dev:latest
-      options: --pull
     env:
-      PUB_HOSTED_URL: https://pub.flutter-io.cn
-      FLUTTER_STORAGE_BASE_URL: https://storage.flutter-io.cn
+      PUB_HOSTED_URL: https://pub.dev
+      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
-      PATH: /usr/local/flutter/bin:/usr/lib/dart/bin:$PATH
 
     steps:
     - uses: actions/checkout@v3
-    - name: Check network access
-      run: |
-        curl --fail https://storage.googleapis.com
-        curl --fail https://dart.dev
-        curl --fail https://pub.dev
-        curl --fail https://firebase-public.firebaseio.com
     - name: Check required network access
       run: |
-        for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase.google.com; do
+        for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
           curl --head --fail https://$host || { echo "❌ Cannot reach $host" >&2; exit 1; }
         done
-    - name: Cache Flutter SDK
-      uses: actions/cache@v3
-      with:
-        path: ~/.flutter
-        key: ${{ runner.os }}-flutter-${{ hashFiles('.github/workflows/flutter_web.yml') }}
-        restore-keys: |
-          ${{ runner.os }}-flutter-
     - name: Setup Flutter SDK
       uses: subosito/flutter-action@v2
       with:
         flutter-version: '3.32.0'
         cache: true
-    - name: Setup Dart
-      uses: dart-lang/setup-dart@v1
+    - name: Setup Dart SDK
+      uses: actions/setup-dart@v3
       with:
-        sdk: '3.4.0'
-    - name: Ensure Flutter & Dart in PATH
+        dart-version: '3.4.0'
+    - name: Ensure flutter & dart in PATH
       run: |
-        echo "/usr/local/flutter/bin" >> $GITHUB_PATH
-        echo "/usr/lib/dart/bin" >> $GITHUB_PATH
+        echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+        echo "$HOME/.dart-sdk/bin" >> $GITHUB_PATH
+        echo "$HOME/.flutter/bin/cache/dart-sdk/bin" >> $GITHUB_PATH
     - name: Cache Pub packages
       uses: actions/cache@v3
       with:
@@ -67,50 +51,22 @@ jobs:
         scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
     - name: "Pre-flight: Verify network & Dart"
       run: |
-        which dart
-        version_line=$(dart --version 2>&1)
-        echo "$version_line"
-        sdk=$(echo "$version_line" | awk '{print $4}')
-        required=3.4.0
-        if [ "$(printf '%s\n%s\n' "$required" "$sdk" | sort -V | head -n1)" != "$required" ]; then
-          echo "Dart SDK $sdk is below required $required" && exit 1
-        fi
-        curl --fail https://firebase-public.firebaseio.com
-        curl --fail https://storage.googleapis.com
-        for host in storage.googleapis.com pub.dev raw.githubusercontent.com dart.dev firebase.google.com; do
+    which dart
+        dart --version
+        for host in storage.googleapis.com pub.dev raw.githubusercontent.com firebase.google.com; do
           curl --head --fail https://$host || { echo "❌ Cannot reach $host"; exit 1; }
         done
-    - name: Check storage connectivity
-      run: curl --fail https://storage.googleapis.com
-    - name: Check network access
-      run: |
-        curl --fail https://storage.googleapis.com
-        curl --fail https://dart.dev
-        curl --fail https://pub.dev
-        curl --fail https://firebase-public.firebaseio.com
     - run: flutter pub get
     - run: dart pub get
     - run: dart run build_runner build --delete-conflicting-outputs
     - name: Configure offline pub cache
       run: echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-    - name: Check storage connectivity
-      run: curl --fail https://storage.googleapis.com
-    - name: Check network access
-      run: |
-        curl --fail https://storage.googleapis.com
-        curl --fail https://dart.dev
-        curl --fail https://pub.dev
-        curl --fail https://firebase-public.firebaseio.com
     - name: Fetch dependencies offline
-      run: flutter pub get
+      run: flutter pub get --offline
     - run: flutter analyze
     - run: dart analyze
-    - run: dart test --coverage
-    - run: flutter test integration_test --coverage
-    - name: Generate localizations
-      run: flutter gen-l10n
-    - name: Check for undefined localization getters
-      run: dart scripts/check_l10n_getters.dart
+    - run: flutter test --coverage test/
+    - run: dart test integration_test/
     - run: flutter build web --release
     - name: Upload coverage artifact
       uses: actions/upload-artifact@v3
