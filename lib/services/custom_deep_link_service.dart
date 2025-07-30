@@ -1,24 +1,19 @@
 import 'dart:async';
-
-import 'package:appoint/config/environment_config.dart';
-import 'package:appoint/services/whatsapp_share_service.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:uni_links/uni_links.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
+
+import 'whatsapp_share_service.dart';
 
 class CustomDeepLinkService {
+  late final WhatsAppShareService _whatsappService;
   CustomDeepLinkService({WhatsAppShareService? whatsappShareService}) {
     _whatsappService =
         whatsappShareService ?? WhatsAppShareService(deepLinkService: this);
   }
-  late final WhatsAppShareService _whatsappService;
   StreamSubscription? _linkSubscription;
   StreamSubscription? _initialLinkSubscription;
-  // GlobalKey is kept for future navigation features.
-  // ignore: unused_field
   GlobalKey<NavigatorState>? _navigatorKey;
-
-  // Variable declarations for the service
-  late Uri? initialUri;
 
   /// Set the navigator key for navigation
   void setNavigatorKey(GlobalKey<NavigatorState> navigatorKey) {
@@ -33,39 +28,36 @@ class CustomDeepLinkService {
     }
     try {
       // Handle initial link if app was opened from a link
-      // Note: Deep linking is disabled on web
-      // final initialUri = await getInitialUri();
-      // if (initialUri != null) {
-      //   await _handleDeepLink(initialUri);
-      // }
+      final initialUri = await getInitialUri();
+      if (initialUri != null) {
+        await _handleDeepLink(initialUri);
+      }
 
       // Listen for incoming links when app is already running
-      // Note: Deep linking is disabled on web
-      // _linkSubscription = uriLinkStream.listen(
-      //   (Uri? uri) async {
-      //     if (uri != null) {
-      //       await _handleDeepLink(uri);
-      //     }
-      //   },
-      //   onError: (error) {
-      //     // Removed debug print: debugPrint('Deep link error: $error');
-      //   },
-      // );
+      _linkSubscription = uriLinkStream.listen(
+        (Uri? uri) async {
+          if (uri != null) {
+            await _handleDeepLink(uri);
+          }
+        },
+        onError: (error) {
+          print('Deep link error: $error');
+        },
+      );
 
       // Listen for app links (universal links)
-      // Note: Deep linking is disabled on web
-      // _initialLinkSubscription = uriLinkStream.listen(
-      //   (Uri? uri) async {
-      //     if (uri != null) {
-      //       await _handleDeepLink(uri);
-      //     }
-      //   },
-      //   onError: (error) {
-      //     // Removed debug print: debugPrint('App link error: $error');
-      //   },
-      // );
+      _initialLinkSubscription = uriLinkStream.listen(
+        (Uri? uri) async {
+          if (uri != null) {
+            await _handleDeepLink(uri);
+          }
+        },
+        onError: (error) {
+          print('App link error: $error');
+        },
+      );
     } catch (e) {
-      // Removed debug print: debugPrint('Error initializing deep links: $e');
+      print('Error initializing deep links: $e');
     }
   }
 
@@ -77,7 +69,7 @@ class CustomDeepLinkService {
     // ensure proper configuration for each platform.
     /*
     try {
-      // Removed debug print: debugPrint('Handling deep link: $uri');
+      print('Handling deep link: $uri');
 
       // Let WhatsApp service handle the link first for analytics
       await _whatsappService.handleDeepLink(uri);
@@ -113,18 +105,17 @@ class CustomDeepLinkService {
             }
             break;
           default:
-            // Removed debug print: debugPrint('Unknown deep link path: ${pathSegments[0]}');
+            print('Unknown deep link path: ${pathSegments[0]}');
         }
       }
     } catch (e) {
-      // Removed debug print: debugPrint('Error handling deep link: $e');
+      print('Error handling deep link: $e');
     }
     */
   }
 
-  // Navigate helper methods are kept for potential future use. They are
-  // commented out to silence analysis warnings.
-  /*
+  /// Navigate to meeting details screen
+  // ignore: unused_element
   Future<void> _navigateToMeeting(
     String meetingId,
     String? creatorId,
@@ -142,10 +133,12 @@ class CustomDeepLinkService {
         },
       );
     } else {
-      // Removed debug print: debugPrint('Navigator key not set, cannot navigate to meeting: \$meetingId');
+      print('Navigator key not set, cannot navigate to meeting: $meetingId');
     }
   }
 
+  /// Navigate to invite details screen
+  // ignore: unused_element
   Future<void> _navigateToInvite(String inviteId) async {
     if (_navigatorKey?.currentState != null) {
       _navigatorKey!.currentState!.pushNamed(
@@ -153,10 +146,12 @@ class CustomDeepLinkService {
         arguments: {'inviteId': inviteId},
       );
     } else {
-      // Removed debug print: debugPrint('Navigator key not set, cannot navigate to invite: \$inviteId');
+      print('Navigator key not set, cannot navigate to invite: $inviteId');
     }
   }
 
+  /// Navigate to booking details screen
+  // ignore: unused_element
   Future<void> _navigateToBooking(String bookingId) async {
     if (_navigatorKey?.currentState != null) {
       _navigatorKey!.currentState!.pushNamed(
@@ -164,22 +159,18 @@ class CustomDeepLinkService {
         arguments: {'bookingId': bookingId},
       );
     } else {
-      // Removed debug print: debugPrint('Navigator key not set, cannot navigate to booking: \$bookingId');
+      print('Navigator key not set, cannot navigate to booking: $bookingId');
     }
   }
-  */
 
   /// Create a deep link for a meeting using custom URL scheme
   Future<String> createMeetingLink({
-    required final String meetingId,
-    required final String creatorId,
-    final String? contextId,
-    final String? groupId,
+    required String meetingId,
+    required String creatorId,
+    String? contextId,
+    String? groupId,
   }) async {
     try {
-      // Load base URL from environment configuration
-      const baseUrl = EnvironmentConfig.deepLinkBaseUrl;
-
       // Create a custom URL scheme link
       final queryParams = <String, String>{
         'creatorId': creatorId,
@@ -197,7 +188,8 @@ class CustomDeepLinkService {
           .map((e) => '${e.key}=${Uri.encodeComponent(e.value)}')
           .join('&');
 
-      final link = '$baseUrl/meeting/$meetingId?$queryString';
+      final link =
+          'https://app-oint-core.web.app/meeting/$meetingId?$queryString';
 
       // Store share analytics
       await _whatsappService.logShareAnalytics(
@@ -209,10 +201,9 @@ class CustomDeepLinkService {
 
       return link;
     } catch (e) {
-      // Removed debug print: debugPrint('Error creating meeting link: $e');
+      print('Error creating meeting link: $e');
       // Fallback to simple URL
-      const baseUrl = EnvironmentConfig.deepLinkBaseUrl;
-      return '$baseUrl/meeting/$meetingId?creatorId=$creatorId${contextId != null ? '&contextId=$contextId' : ''}';
+      return 'https://app-oint-core.web.app/meeting/$meetingId?creatorId=$creatorId${contextId != null ? '&contextId=$contextId' : ''}';
     }
   }
 
@@ -228,7 +219,7 @@ class CustomDeepLinkService {
       // In production, you would call a URL shortener API
       return longUrl;
     } catch (e) {
-      // Removed debug print: debugPrint('Error creating short link: $e');
+      print('Error creating short link: $e');
       return longUrl;
     }
   }
