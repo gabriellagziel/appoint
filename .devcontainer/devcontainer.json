@@ -1,17 +1,33 @@
 {
   "name": "Flutter App",
-  "image": "ghcr.io/cirruslabs/flutter:stable",
-  "postCreateCommand": "flutter pub get",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "postCreateCommand": "./scripts/devcontainer-init.sh",
   "customizations": {
     "vscode": {
       "extensions": [
         "dart-code.dart-code",
         "dart-code.flutter"
       ]
+    },
+    "codespaces": {
+      "security": {
+        "allowedDomains": [
+          "storage.googleapis.com",
+          "dart.dev",
+          "pub.dev",
+          "firebase-public.firebaseio.com"
+        ]
+      }
     }
   },
-  "features": {}
-  ,"mounts": [
+  "features": {},
+  "containerEnv": {
+    "REDACTED_TOKEN": "storage.googleapis.com,dart.dev,pub.dev,firebase-public.firebaseio.com"
+  },
+  "mounts": [
     "source=${localEnv:HOME}/.pub-cache,target=/root/.pub-cache,type=bind"
   ]
 }
