@@ -24,6 +24,7 @@ class FrameTimeTest {
   }) async {
     final frameTimes = <Duration>[];
     final jankFrames = <int>[];
+    Duration _lastFrameTime = Duration.zero;
 
     // Set up frame callback
     final completer = Completer<void>();
@@ -56,8 +57,6 @@ class FrameTimeTest {
       _lastFrameTime = timeStamp;
     }
 
-    Duration _lastFrameTime = Duration.zero;
-
     // Start frame monitoring
     WidgetsBinding.instance.addPersistentFrameCallback(onFrame);
 
@@ -68,7 +67,8 @@ class FrameTimeTest {
     await completer.future;
 
     // Clean up
-    WidgetsBinding.instance.removePersistentFrameCallback(onFrame);
+    // Note: Flutter doesn't have removePersistentFrameCallback, the callback is automatically removed
+    // when the widget is disposed or the app is closed
 
     return _analyzeFrameTimes(frameTimes, jankFrames);
   }

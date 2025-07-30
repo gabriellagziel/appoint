@@ -1,6 +1,28 @@
 import 'dart:async';
 import 'dart:math';
 
+/// Flaky pattern types
+enum FlakyPatternType {
+  intermittent,
+  timing,
+  consecutive,
+  timeBased,
+  variable,
+}
+
+/// Flaky pattern data
+class FlakyPattern {
+  final FlakyPatternType type;
+  final double confidence;
+  final String description;
+
+  FlakyPattern({
+    required this.type,
+    required this.confidence,
+    required this.description,
+  });
+}
+
 /// Retry Healer for Flaky Tests
 ///
 /// Automatically retries flaky tests with intelligent strategies:
@@ -102,12 +124,14 @@ class RetryHealer {
       final pattern = patterns[testName];
       final strategy = strategies?[testName];
 
-      futures.add(healFlakyTest(
-        testName: testName,
-        testFunction: testFunction,
-        pattern: pattern,
-        strategy: strategy,
-      ));
+      if (pattern != null) {
+        futures.add(healFlakyTest(
+          testName: testName,
+          testFunction: testFunction,
+          pattern: pattern,
+          strategy: strategy,
+        ));
+      }
     }
 
     // Execute all healing attempts in parallel
@@ -155,7 +179,7 @@ class RetryHealer {
           maxRetries: 6,
           initialDelay: const Duration(seconds: 1),
           backoffMultiplier: 2.0,
-          maxDelay: const Duration(seconds: 30),
+          maxDelay: _defaultMaxDelay,
           jitter: true,
           adaptive: true,
         );
@@ -176,7 +200,7 @@ class RetryHealer {
   static Duration _calculateDelay(int attempt, RetryStrategy strategy) {
     // Base delay with exponential backoff
     double delayMs = strategy.initialDelay.inMilliseconds *
-        pow(strategy.backoffMultiplier, attempt - 1);
+        pow(strategy.backoffMultiplier, attempt - 1).toDouble();
 
     // Apply maximum delay limit
     delayMs = delayMs.clamp(0.0, strategy.maxDelay.inMilliseconds.toDouble());
@@ -286,7 +310,7 @@ class RetryHealer {
 
     // Adjust based on average retries to success
     if (avgRetriesToSuccess > 2) {
-      maxRetries = max(maxRetries, avgRetriesToSuccess + 1);
+      maxRetries = max(maxRetries, (avgRetriesToSuccess + 1).toInt());
     }
 
     // Adjust based on failure pattern
@@ -301,7 +325,7 @@ class RetryHealer {
       maxRetries: maxRetries,
       initialDelay: initialDelay,
       backoffMultiplier: backoffMultiplier,
-      maxDelay: const Duration(seconds: 30),
+      maxDelay: _defaultMaxDelay,
       jitter: true,
       adaptive: true,
     );
@@ -379,7 +403,7 @@ class RetryHealer {
         values.map((value) => (value - mean) * (value - mean));
     final sum = squaredDifferences.reduce((a, b) => a + b);
 
-    return sum / values.length;
+    return sum.toDouble() / values.length;
   }
 
   /// Calculates maximum consecutive failures
