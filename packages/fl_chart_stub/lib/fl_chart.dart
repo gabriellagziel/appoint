@@ -49,7 +49,9 @@ class FlBorderData {
 class LineChartBarData {
   const LineChartBarData({
     required this.spots,
-    required this.color, required this.dotData, this.isCurved = false,
+    required this.color,
+    required this.dotData,
+    this.isCurved = false,
     this.barWidth = 2,
   });
   final List<FlSpot> spots;
@@ -150,9 +152,14 @@ class AxisTitles {
 }
 
 class SideTitles {
-  const SideTitles(
-      {this.showTitles = true, this.reservedSize, this.getTitlesWidget,});
+  const SideTitles({
+    this.showTitles = true,
+    this.reservedSize,
+    this.getTitlesWidget,
+  });
   final bool showTitles;
   final double? reservedSize;
-  final Widget Function(double, )? getTitlesWidget;
+  final Widget Function(
+    double,
+  )? getTitlesWidget;
 }
