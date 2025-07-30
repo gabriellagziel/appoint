@@ -9,7 +9,12 @@ REPO_NAME="appoint"
 API_BASE_URL="https://api.app-oint.com"
 
 # Secrets values
-DIGITALOCEAN_TOKEN="REDACTED_TOKEN"
+# Get DIGITALOCEAN_TOKEN from environment variable
+if [ -z "$DIGITALOCEAN_ACCESS_TOKEN" ]; then
+    echo "❌ Error: DIGITALOCEAN_ACCESS_TOKEN environment variable is required"
+    exit 1
+fi
+DIGITALOCEAN_TOKEN="$DIGITALOCEAN_ACCESS_TOKEN"
 APP_ID="REDACTED_TOKEN"
 
 echo "🚀 Starting App-Oint Production Deployment"
