@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_auth_mocks/firebase_auth_mocks.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -91,9 +92,11 @@ class FirebaseTestHelper {
         .thenAnswer((_) => Stream.value(mockUser));
     when(() => mockAuth.userChanges())
         .thenAnswer((_) => Stream.value(mockUser));
-    when(() => mockAuth.signInWithEmailAndPassword(any(), any()))
+    when(() => mockAuth.signInWithEmailAndPassword(
+            email: any(named: 'email'), password: any(named: 'password')))
         .thenAnswer((_) async => mockUserCredential);
-    when(() => mockAuth.createUserWithEmailAndPassword(any(), any()))
+    when(() => mockAuth.createUserWithEmailAndPassword(
+            email: any(named: 'email'), password: any(named: 'password')))
         .thenAnswer((_) async => mockUserCredential);
     when(() => mockAuth.signOut()).thenAnswer((_) async {});
 
@@ -129,19 +132,24 @@ class FirebaseTestHelper {
     });
 
     // Setup query snapshot mock
-    when(() => mockQuerySnapshot.docs).thenReturn([mockDocumentSnapshot]);
+    when(() => mockQuerySnapshot.docs).thenReturn(
+        [mockDocumentSnapshot as QueryDocumentSnapshot<Map<String, dynamic>>]);
     when(() => mockQuerySnapshot.size).thenReturn(1);
   }
 }
 
 // Additional mock classes
-class MockCollectionReference extends Mock implements CollectionReference {}
+class MockCollectionReference extends Mock
+    implements CollectionReference<Map<String, dynamic>> {}
 
-class MockDocumentReference extends Mock implements DocumentReference {}
+class MockDocumentReference extends Mock
+    implements DocumentReference<Map<String, dynamic>> {}
 
-class MockDocumentSnapshot extends Mock implements DocumentSnapshot {}
+class MockDocumentSnapshot extends Mock
+    implements DocumentSnapshot<Map<String, dynamic>> {}
 
-class MockQuerySnapshot extends Mock implements QuerySnapshot {}
+class MockQuerySnapshot extends Mock
+    implements QuerySnapshot<Map<String, dynamic>> {}
 
 /// Legacy function for backward compatibility
 Future<void> initializeTestFirebase() async {
