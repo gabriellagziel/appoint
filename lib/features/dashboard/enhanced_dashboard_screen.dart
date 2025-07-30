@@ -1,12 +1,11 @@
-// import 'package:appoint/features/dashboard/enhanced_dashboard_screen.dart'; // Unused
-// import 'package:appoint/features/rewards/screens/rewards_screen.dart'; // Unused
-// import 'package:appoint/features/subscriptions/screens/subscription_screen.dart'; // Unused
-// import 'package:appoint/features/messaging/screens/messages_list_screen.dart'; // Unused
-// import 'package:appoint/features/search/screens/search_screen.dart'; // Unused
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:appoint/features/dashboard/enhanced_dashboard_screen.dart';
+import 'package:appoint/features/rewards/screens/rewards_screen.dart';
+import 'package:appoint/features/subscriptions/screens/subscription_screen.dart';
+import 'package:appoint/features/messaging/screens/messages_list_screen.dart';
+import 'package:appoint/features/search/screens/search_screen.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 final dashboardStatsProvider = FutureProvider<Map<String, dynamic>>((ref) async {
   // TODO: Implement dashboard stats
@@ -119,8 +118,7 @@ class EnhancedDashboardScreen extends ConsumerWidget {
                       Text(
                         'Welcome back!',
                         style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
+                          fontWeight: FontWeight.bold),
                       ),
                       Text(
                         'You have ${stats['upcomingMeetings']} upcoming meetings',
@@ -147,8 +145,7 @@ class EnhancedDashboardScreen extends ConsumerWidget {
         Text(
           'Quick Actions',
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
+            fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 16),
         GridView.count(
@@ -164,28 +161,28 @@ class EnhancedDashboardScreen extends ConsumerWidget {
               'Search',
               Icons.search,
               Colors.blue,
-              () => context.push('/search'),
+              () => Navigator.pushNamed(context, '/search'),
             ),
             _buildQuickActionCard(
               context,
               'Messages',
               Icons.chat,
               Colors.green,
-              () => context.push('/messages'),
+              () => Navigator.pushNamed(context, '/messages'),
             ),
             _buildQuickActionCard(
               context,
               'Rewards',
               Icons.card_giftcard,
               Colors.orange,
-              () => context.push('/rewards'),
+              () => Navigator.pushNamed(context, '/rewards'),
             ),
             _buildQuickActionCard(
               context,
               'Subscription',
               Icons.star,
               Colors.purple,
-              () => context.push('/subscription'),
+              () => Navigator.pushNamed(context, '/subscription'),
             ),
           ],
         ),
@@ -235,8 +232,7 @@ class EnhancedDashboardScreen extends ConsumerWidget {
         Text(
           'Your Stats',
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
+            fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 16),
         Row(
@@ -326,8 +322,7 @@ class EnhancedDashboardScreen extends ConsumerWidget {
         Text(
           'Recent Activity',
           style: Theme.of(context).textTheme.titleLarge?.copyWith(
-            fontWeight: FontWeight.bold,
-          ),
+            fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 16),
         Card(
@@ -369,11 +364,10 @@ class EnhancedDashboardScreen extends ConsumerWidget {
             Text(
               'Upcoming Meetings',
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+                fontWeight: FontWeight.bold),
             ),
             TextButton(
-              onPressed: () => context.push('/calendar'),
+              onPressed: () => Navigator.pushNamed(context, '/calendar'),
               child: const Text('View All'),
             ),
           ],

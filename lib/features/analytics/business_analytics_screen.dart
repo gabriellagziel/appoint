@@ -1,10 +1,9 @@
-import 'package:appoint/l10n/app_localizations.dart';
-import 'package:fl_chart/fl_chart.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:fl_chart/fl_chart.dart';
 
-final businessAnalyticsProvider =
-    FutureProvider<Map<String, dynamic>>((ref) async {
+final businessAnalyticsProvider = FutureProvider<Map<String, dynamic>>((ref) async {
   // TODO: Implement real analytics data
   return {
     'revenue': {
@@ -67,7 +66,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
             children: [
               Icon(Icons.error_outline, size: 64, color: Colors.red[300]),
               const SizedBox(height: 16),
-              const Text('Failed to load analytics'),
+              Text('Failed to load analytics'),
               const SizedBox(height: 8),
               Text(error.toString()),
               const SizedBox(height: 16),
@@ -83,41 +82,40 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildAnalytics(BuildContext context, Map<String, dynamic> analytics,
-          AppLocalizations l10n) =>
-      SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // Overview cards
-            _buildOverviewCards(context, analytics),
+  Widget _buildAnalytics(BuildContext context, Map<String, dynamic> analytics, AppLocalizations l10n) {
+    return SingleChildScrollView(
+      padding: const EdgeInsets.all(16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Overview cards
+          _buildOverviewCards(context, analytics),
+          
+          const SizedBox(height: 24),
+          
+          // Revenue chart
+          _buildRevenueChart(context, analytics),
+          
+          const SizedBox(height: 24),
+          
+          // Service breakdown
+          _buildServiceBreakdown(context, analytics),
+          
+          const SizedBox(height: 24),
+          
+          // Top performing services
+          _buildTopServices(context, analytics),
+          
+          const SizedBox(height: 24),
+          
+          // Recent activity
+          _buildRecentActivity(context),
+        ],
+      ),
+    );
+  }
 
-            const SizedBox(height: 24),
-
-            // Revenue chart
-            _buildRevenueChart(context, analytics),
-
-            const SizedBox(height: 24),
-
-            // Service breakdown
-            _buildServiceBreakdown(context, analytics),
-
-            const SizedBox(height: 24),
-
-            // Top performing services
-            _buildTopServices(context, analytics),
-
-            const SizedBox(height: 24),
-
-            // Recent activity
-            _buildRecentActivity(context),
-          ],
-        ),
-      );
-
-  Widget _buildOverviewCards(
-      BuildContext context, Map<String, dynamic> analytics) {
+  Widget _buildOverviewCards(BuildContext context, Map<String, dynamic> analytics) {
     final revenue = analytics['revenue'] as Map<String, dynamic>;
     final bookings = analytics['bookings'] as Map<String, dynamic>;
     final clients = analytics['clients'] as Map<String, dynamic>;
@@ -128,8 +126,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
         Text(
           'Overview',
           style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+            fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 16),
         Row(
@@ -187,10 +184,9 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildOverviewCard(BuildContext context, String title, String value,
-      double growth, IconData icon, Color color) {
+  Widget _buildOverviewCard(BuildContext context, String title, String value, double growth, IconData icon, Color color) {
     final isPositive = growth >= 0;
-
+    
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -202,8 +198,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
                 Icon(icon, color: color, size: 24),
                 const Spacer(),
                 Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
                     color: isPositive ? Colors.green[100] : Colors.red[100],
                     borderRadius: BorderRadius.circular(12),
@@ -252,10 +247,9 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildRevenueChart(
-      BuildContext context, Map<String, dynamic> analytics) {
+  Widget _buildRevenueChart(BuildContext context, Map<String, dynamic> analytics) {
     final monthlyData = analytics['monthlyData'] as List<dynamic>;
-
+    
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -265,21 +259,22 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
             Text(
               'Revenue Trend',
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+                fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
             SizedBox(
               height: 200,
               child: LineChart(
                 LineChartData(
+                  gridData: FlGridData(show: true),
                   titlesData: FlTitlesData(
                     leftTitles: AxisTitles(
                       sideTitles: SideTitles(
                         showTitles: true,
                         reservedSize: 40,
-                        getTitlesWidget: (value, meta) =>
-                            Text('\$${value.toInt()}'),
+                        getTitlesWidget: (value, meta) {
+                          return Text('\$${value.toInt()}');
+                        },
                       ),
                     ),
                     bottomTitles: AxisTitles(
@@ -287,27 +282,25 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
                         showTitles: true,
                         getTitlesWidget: (value, meta) {
                           if (value.toInt() < monthlyData.length) {
-                            return Text(monthlyData[value.toInt()]['month']);
+                            return Text(monthlyData[value.toInt()]['month'] as String);
                           }
                           return const Text('');
                         },
                       ),
                     ),
-                    rightTitles: const AxisTitles(),
-                    topTitles: const AxisTitles(),
+                    rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                    topTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
                   ),
                   borderData: FlBorderData(show: true),
                   lineBarsData: [
                     LineChartBarData(
-                      spots: monthlyData
-                          .asMap()
-                          .entries
-                          .map((entry) => FlSpot(entry.key.toDouble(),
-                              entry.value['revenue'].toDouble()))
-                          .toList(),
+                      spots: monthlyData.asMap().entries.map((entry) {
+                        return FlSpot(entry.key.toDouble(), (entry.value['revenue'] as double).toDouble());
+                      }).toList(),
                       isCurved: true,
                       color: Colors.blue,
                       barWidth: 3,
+                      dotData: FlDotData(show: true),
                     ),
                   ],
                 ),
@@ -319,10 +312,9 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildServiceBreakdown(
-      BuildContext context, Map<String, dynamic> analytics) {
+  Widget _buildServiceBreakdown(BuildContext context, Map<String, dynamic> analytics) {
     final services = analytics['services'] as List<dynamic>;
-
+    
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -332,8 +324,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
             Text(
               'Service Breakdown',
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+                fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
             SizedBox(
@@ -341,15 +332,13 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
               child: PieChart(
                 PieChartData(
                   sections: services.map((service) {
-                    final totalRevenue = services.fold<double>(
-                        0, (sum, s) => sum + s['revenue']);
-                    final percentage =
-                        (service['revenue'] / totalRevenue) * 100;
-
+                    final totalRevenue = services.fold<double>(0, (sum, s) => sum + (s['revenue'] as num));
+                    final percentage = ((service['revenue'] as double?) ?? 0.0 / totalRevenue) * 100;
+                    
                     return PieChartSectionData(
-                      value: service['revenue'].toDouble(),
+                      value: (service['revenue'] as double).toDouble(),
                       title: '${percentage.toStringAsFixed(1)}%',
-                      color: _getServiceColor(service['name']),
+                      color: _getServiceColor(service['name'] as String),
                       radius: 80,
                       titleStyle: const TextStyle(
                         color: Colors.white,
@@ -368,25 +357,23 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
             Wrap(
               spacing: 16,
               runSpacing: 8,
-              children: services
-                  .map(
-                    (service) => Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 12,
-                          height: 12,
-                          decoration: BoxDecoration(
-                            color: _getServiceColor(service['name']),
-                            shape: BoxShape.circle,
-                          ),
-                        ),
-                        const SizedBox(width: 4),
-                        Text(service['name']),
-                      ],
+              children: services.map((service) {
+                return Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                      width: 12,
+                      height: 12,
+                      decoration: BoxDecoration(
+                        color: _getServiceColor(service['name'] as String),
+                        shape: BoxShape.circle,
+                      ),
                     ),
-                  )
-                  .toList(),
+                    const SizedBox(width: 4),
+                    Text(service['name'] as String),
+                  ],
+                );
+              }).toList(),
             ),
           ],
         ),
@@ -394,10 +381,9 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildTopServices(
-      BuildContext context, Map<String, dynamic> analytics) {
+  Widget _buildTopServices(BuildContext context, Map<String, dynamic> analytics) {
     final services = analytics['services'] as List<dynamic>;
-
+    
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -407,8 +393,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
             Text(
               'Top Performing Services',
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+                fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 16),
             ListView.builder(
@@ -418,10 +403,10 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
               itemBuilder: (context, index) {
                 final service = services[index];
                 final rank = index + 1;
-
+                
                 return ListTile(
                   leading: CircleAvatar(
-                    backgroundColor: _getServiceColor(service['name']),
+                    backgroundColor: _getServiceColor(service['name'] as String),
                     child: Text(
                       rank.toString(),
                       style: const TextStyle(
@@ -430,7 +415,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
                       ),
                     ),
                   ),
-                  title: Text(service['name']),
+                  title: Text(service['name'] as String),
                   subtitle: Text('${service['bookings']} bookings'),
                   trailing: Text(
                     '\$${service['revenue']}',
@@ -448,71 +433,52 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildRecentActivity(BuildContext context) => Card(
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Recent Activity',
-                style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
-              ),
-              const SizedBox(height: 16),
-              ListView.builder(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                itemCount: 5,
-                itemBuilder: (context, index) {
-                  final activities = [
-                    {
-                      'action': 'New booking',
-                      'details': 'Haircut - Sarah Johnson',
-                      'time': '2 hours ago'
-                    },
-                    {
-                      'action': 'Payment received',
-                      'details': r'$75.00 - Manicure',
-                      'time': '4 hours ago'
-                    },
-                    {
-                      'action': 'Review posted',
-                      'details': '5 stars - Massage service',
-                      'time': '1 day ago'
-                    },
-                    {
-                      'action': 'New client',
-                      'details': 'Mike Wilson registered',
-                      'time': '1 day ago'
-                    },
-                    {
-                      'action': 'Appointment cancelled',
-                      'details': 'Facial - Lisa Brown',
-                      'time': '2 days ago'
-                    },
-                  ];
-                  final activity = activities[index];
-
-                  return ListTile(
-                    leading: CircleAvatar(
-                      backgroundColor: Colors.grey[200],
-                      child: Icon(Icons.event, color: Colors.grey[600]),
-                    ),
-                    title: Text(activity['action']!),
-                    subtitle: Text(activity['details']!),
-                    trailing: Text(
-                      activity['time']!,
-                      style: TextStyle(color: Colors.grey[500], fontSize: 12),
-                    ),
-                  );
-                },
-              ),
-            ],
-          ),
+  Widget _buildRecentActivity(BuildContext context) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Recent Activity',
+              style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 16),
+            ListView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: 5,
+              itemBuilder: (context, index) {
+                final activities = [
+                  {'action': 'New booking', 'details': 'Haircut - Sarah Johnson', 'time': '2 hours ago'},
+                  {'action': 'Payment received', 'details': '\$75.00 - Manicure', 'time': '4 hours ago'},
+                  {'action': 'Review posted', 'details': '5 stars - Massage service', 'time': '1 day ago'},
+                  {'action': 'New client', 'details': 'Mike Wilson registered', 'time': '1 day ago'},
+                  {'action': 'Appointment cancelled', 'details': 'Facial - Lisa Brown', 'time': '2 days ago'},
+                ];
+                final activity = activities[index];
+                
+                return ListTile(
+                  leading: CircleAvatar(
+                    backgroundColor: Colors.grey[200],
+                    child: Icon(Icons.event, color: Colors.grey[600]),
+                  ),
+                  title: Text(activity['action'] as String),
+                  subtitle: Text(activity['details'] as String),
+                  trailing: Text(
+                    activity['time'] as String,
+                    style: TextStyle(color: Colors.grey[500], fontSize: 12),
+                  ),
+                );
+              },
+            ),
+          ],
         ),
-      );
+      ),
+    );
+  }
 
   Color _getServiceColor(String serviceName) {
     final colors = {
@@ -523,7 +489,7 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
       'Pedicure': Colors.purple,
       'Waxing': Colors.red,
     };
-
+    
     return colors[serviceName] ?? Colors.grey;
   }
 
@@ -558,4 +524,4 @@ class BusinessAnalyticsScreen extends ConsumerWidget {
       ),
     );
   }
-}
+} 

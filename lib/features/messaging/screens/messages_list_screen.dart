@@ -1,11 +1,8 @@
 import 'package:appoint/features/messaging/models/message.dart';
-import 'package:appoint/features/messaging/models/chat.dart';
 import 'package:appoint/features/messaging/services/messaging_service.dart';
-import 'package:appoint/providers/messaging_provider.dart';
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 final messagingServiceProvider = Provider<MessagingService>((ref) => MessagingService());
 
@@ -189,7 +186,7 @@ class MessagesListScreen extends ConsumerWidget {
   }
 
   void _openChat(BuildContext context, Chat chat) {
-    context.push('/chat/${chat.id}');
+    Navigator.pushNamed(context, '/chat/${chat.id}');
   }
 
   void _startNewChat(BuildContext context, WidgetRef ref) {

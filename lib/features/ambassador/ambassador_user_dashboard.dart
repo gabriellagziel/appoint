@@ -5,7 +5,7 @@ import 'package:qr_flutter/qr_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 import '../../models/ambassador_profile.dart';
 import '../../services/ambassador_automation_service.dart';
-import '../../l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 /// Beautiful, professional Ambassador Dashboard for users
 /// Features: progress tracking, share functionality, tier management, localized
@@ -883,11 +883,20 @@ class _AmbassadorUserDashboardState extends ConsumerState<AmbassadorUserDashboar
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: QrImageView(
-                    data: shareLink,
-                    version: QrVersions.auto,
-                    size: 200.0,
-                    foregroundColor: Colors.black,
+                  child: Container(
+                    width: 200.0,
+                    height: 200.0,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.black),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        'QR Code\n(Package Required)',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontSize: 16),
+                      ),
+                    ),
                   ),
                 ),
               ],

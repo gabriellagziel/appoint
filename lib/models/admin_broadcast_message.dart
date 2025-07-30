@@ -54,6 +54,10 @@ class AdminBroadcastMessage with _$AdminBroadcastMessage {
 
   factory AdminBroadcastMessage.fromJson(Map<String, dynamic> json) =>
       _$AdminBroadcastMessageFromJson(json);
+  
+  // Computed getters for analytics
+  int get sentCount => actualRecipients ?? 0;
+  int get formResponseCount => pollResponseCount ?? 0;
 }
 
 @freezed

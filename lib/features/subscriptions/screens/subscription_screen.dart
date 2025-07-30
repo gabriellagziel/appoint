@@ -1,6 +1,6 @@
 import 'package:appoint/features/subscriptions/models/subscription.dart';
 import 'package:appoint/features/subscriptions/services/subscription_service.dart';
-import 'package:appoint/l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -463,5 +463,4 @@ class SubscriptionScreen extends ConsumerWidget {
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('Billing history coming soon!')),
     );
-  }
-} 
+  } 

@@ -1,18 +1,17 @@
+import 'package:appoint/config/theme.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:appoint/models/playtime_game.dart';
+import 'package:appoint/models/playtime_session.dart';
+import 'package:appoint/providers/playtime_provider.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-
-import '../../../l10n/app_localizations.dart';
-import '../../../config/theme.dart';
-import '../../../providers/playtime_provider.dart';
-import '../../../models/playtime_game.dart';
-import '../../../models/playtime_session.dart';
 
 class PlaytimeLiveScreen extends ConsumerStatefulWidget {
-  final PlaytimeGame? game;
 
   const PlaytimeLiveScreen({super.key, this.game});
+  final PlaytimeGame? game;
 
   @override
   ConsumerState<PlaytimeLiveScreen> createState() => _PlaytimeLiveScreenState();
@@ -24,12 +23,12 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
   DateTime _selectedDate = DateTime.now().add(const Duration(days: 1));
   TimeOfDay _selectedTime = const TimeOfDay(hour: 15, minute: 0);
   String _location = '';
-  List<String> _invitedUsers = [];
+  final List<String> _invitedUsers = [];
 
   @override
   void initState() {
     super.initState();
-    _selectedGame = widget.game;
+    final _selectedGame = widget.game;
   }
 
   @override
@@ -56,7 +55,7 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
         ),
         child: SafeArea(
           child: SingleChildScrollView(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -90,8 +89,7 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
     );
   }
 
-  Widget _buildGameSelection(AppLocalizations l10n) {
-    return Card(
+  Widget _buildGameSelection(AppLocalizations l10n) => Card(
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child: Padding(
@@ -112,7 +110,7 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
               _buildSelectedGameCard(_selectedGame!),
             ] else ...[
               Consumer(
-                builder: (context, ref, child) {
+                builder: (context, final ref, final child) {
                   final gamesAsync = ref.watch(systemGamesProvider);
 
                   return gamesAsync.when(
@@ -126,7 +124,7 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: games.length,
-                          itemBuilder: (context, index) {
+                          itemBuilder: (context, final index) {
                             final game = games[index];
                             return _buildGameOptionCard(game);
                           },
@@ -135,7 +133,7 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
                     },
                     loading: () =>
                         const Center(child: CircularProgressIndicator()),
-                    error: (error, stack) => Text('Error: $error'),
+                    error: (error, final stack) => Text('Error: $error'),
                   );
                 },
               ),
@@ -144,10 +142,8 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
         ),
       ),
     );
-  }
 
-  Widget _buildSelectedGameCard(PlaytimeGame game) {
-    return Container(
+  Widget _buildSelectedGameCard(PlaytimeGame game) => Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: AppTheme.accentColor.withValues(alpha: 0.1),
@@ -158,8 +154,7 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
         children: [
           CircleAvatar(
             radius: 30,
-            backgroundImage: null,
-            onBackgroundImageError: (_, __) {},
+            onBackgroundImageError: (_, final __) {},
             child: const Icon(Icons.games, size: 30),
           ),
           const SizedBox(width: 16),
@@ -222,10 +217,8 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
         ],
       ),
     );
-  }
 
-  Widget _buildGameOptionCard(PlaytimeGame game) {
-    return Container(
+  Widget _buildGameOptionCard(PlaytimeGame game) => Container(
       width: 160,
       margin: const EdgeInsets.only(right: 12),
       child: Card(
@@ -245,8 +238,7 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
               children: [
                 CircleAvatar(
                   radius: 25,
-                  backgroundImage: null,
-                  onBackgroundImageError: (_, __) {},
+                  onBackgroundImageError: (_, final __) {},
                   child: const Icon(Icons.games, size: 25),
                 ),
                 const SizedBox(height: 8),
@@ -273,10 +265,8 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
         ),
       ),
     );
-  }
 
-  Widget _buildEmptyGamesState(AppLocalizations l10n) {
-    return Container(
+  Widget _buildEmptyGamesState(AppLocalizations l10n) => Container(
       padding: const EdgeInsets.all(24),
       child: Column(
         children: [
@@ -316,10 +306,8 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
         ],
       ),
     );
-  }
 
-  Widget _buildSessionDetails(AppLocalizations l10n) {
-    return Card(
+  Widget _buildSessionDetails(AppLocalizations l10n) => Card(
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child: Padding(
@@ -355,10 +343,8 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
         ),
       ),
     );
-  }
 
-  Widget _buildDateTimeSelection(AppLocalizations l10n) {
-    return Card(
+  Widget _buildDateTimeSelection(AppLocalizations l10n) => Card(
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child: Padding(
@@ -405,10 +391,8 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
         ),
       ),
     );
-  }
 
-  Widget _buildLocationSelection(AppLocalizations l10n) {
-    return Card(
+  Widget _buildLocationSelection(AppLocalizations l10n) => Card(
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child: Padding(
@@ -444,10 +428,8 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
         ),
       ),
     );
-  }
 
-  Widget _buildInviteFriends(AppLocalizations l10n) {
-    return Card(
+  Widget _buildInviteFriends(AppLocalizations l10n) => Card(
       elevation: 2,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child: Padding(
@@ -470,9 +452,7 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
                   onPressed: _invitedUsers.isEmpty
                       ? null
                       : () {
-                          setState(() {
-                            _invitedUsers.clear();
-                          });
+                          setState(_invitedUsers.clear);
                         },
                   icon: const Icon(Icons.clear),
                   label: const Text('Clear All'),
@@ -520,7 +500,7 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 itemCount: _invitedUsers.length,
-                itemBuilder: (context, index) {
+                itemBuilder: (context, final index) {
                   final userId = _invitedUsers[index];
                   return ListTile(
                     leading: CircleAvatar(
@@ -544,7 +524,7 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton.icon(
-                onPressed: () => _showInviteDialog(),
+                onPressed: _showInviteDialog,
                 icon: const Icon(Icons.person_add),
                 label: const Text('Invite Friends'),
                 style: ElevatedButton.styleFrom(
@@ -558,13 +538,11 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
         ),
       ),
     );
-  }
 
-  Widget _buildActionButtons(AppLocalizations l10n) {
-    return Column(
+  Widget _buildActionButtons(AppLocalizations l10n) => Column(
       children: [
         Consumer(
-          builder: (context, ref, child) {
+          builder: (context, final ref, final child) {
             final createSessionState =
                 ref.watch(playtimeSessionNotifierProvider);
 
@@ -603,7 +581,7 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
             onPressed: () => context.pop(),
             style: OutlinedButton.styleFrom(
               foregroundColor: AppTheme.accentColor,
-              side: BorderSide(color: AppTheme.accentColor),
+              side: const BorderSide(color: AppTheme.accentColor),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
               ),
@@ -619,16 +597,13 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
         ),
       ],
     );
-  }
 
-  bool _canCreateSession() {
-    return _selectedGame != null &&
+  bool _canCreateSession() => _selectedGame != null &&
         _sessionTitle.isNotEmpty &&
         _location.isNotEmpty;
-  }
 
   Future<void> _selectDate(BuildContext context) async {
-    final DateTime? picked = await showDatePicker(
+    final picked = await showDatePicker(
       context: context,
       initialDate: _selectedDate,
       firstDate: DateTime.now().add(const Duration(days: 1)),
@@ -642,7 +617,7 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
   }
 
   Future<void> _selectTime(BuildContext context) async {
-    final TimeOfDay? picked = await showTimePicker(
+    final picked = await showTimePicker(
       context: context,
       initialTime: _selectedTime,
     );
@@ -654,8 +629,8 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
   }
 
   void _showInviteDialog() {
-    // This would typically show a friend picker
-    // For now, we'll add a mock user
+    // TODO(username): Implement friend picker dialog
+    // For now, we'll add a placeholder user
     setState(() {
       _invitedUsers.add('friend_${_invitedUsers.length + 1}');
     });
@@ -711,7 +686,6 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
         context.pop();
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('Failed to create session: $e'),
@@ -721,4 +695,3 @@ class _PlaytimeLiveScreenState extends ConsumerState<PlaytimeLiveScreen> {
       }
     }
   }
-}
