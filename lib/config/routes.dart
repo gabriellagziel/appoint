@@ -175,6 +175,11 @@ class AppRouter {
           builder: (_) => const SearchScreen(),
           settings: settings,
         );
+      case '/settings':
+        return MaterialPageRoute(
+          builder: (_) => const SettingsScreen(),
+          settings: settings,
+        );
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
