@@ -129,7 +129,6 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
             backgroundColor: Colors.red,
           ),
         );
-    } finally {
       if (mounted) {
         setState(() {
           _isLoading = false;

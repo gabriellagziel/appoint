@@ -265,7 +265,6 @@ class _StudioBookingScreenState extends ConsumerState<StudioBookingScreen> {
             SnackBar(content: Text('Error: $e')),
           );
         }
-      } finally {
         if (mounted) {
           setState(() => _isProcessing = false);
         }

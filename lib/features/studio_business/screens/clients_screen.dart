@@ -262,11 +262,10 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
-    }
-    
-    // Always reset loading state
-    if (mounted) {
-      setState(() => _isAdding = false);
+      }
+      if (mounted) {
+        setState(() => _isAdding = false);
+      }
     }
   }
 
@@ -302,11 +301,10 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );
-    }
-    
-    // Always reset loading state
-    if (mounted) {
-      setState(() => _isAdding = false);
+      }
+      if (mounted) {
+        setState(() => _isAdding = false);
+      }
     }
   }
 
@@ -323,7 +321,6 @@ class _ClientsScreenState extends ConsumerState<ClientsScreen> {
         );
       }
     } catch (e) {
-      if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Error: $e')),
         );

@@ -22,5 +22,5 @@ class Contact with _$Contact {
   const Contact._();
 
   // Getters for backward compatibility
-  String? get phone => phoneNumber;
+  String? get phone => phoneNumber ?? "";
 }

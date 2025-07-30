@@ -19,7 +19,6 @@ class PerformanceService {
 
     try {
       await operation();
-    } finally {
       await trace.stop();
     }
   }
@@ -53,7 +52,6 @@ class PerformanceService {
 
     try {
       await loadOperation();
-    } finally {
       await trace.stop();
     }
   }
@@ -75,7 +73,6 @@ class PerformanceService {
 
     try {
       await startupOperation();
-    } finally {
       await trace.stop();
     }
   }
