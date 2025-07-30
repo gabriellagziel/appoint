@@ -10,7 +10,7 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     env:
-      PUB_HOSTED_URL: http://localhost:4873
+      PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
     services:
@@ -25,16 +25,8 @@ jobs:
           FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
     steps:
       - uses: actions/checkout@v4
-      - name: Check required network access
-        run: node scripts/check-network-allowlist.js
-      - name: Fetch tags
-        run: git fetch --tags
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.20.0'
-      - name: Add Flutter to PATH
-        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+      - name: Use bundled Flutter SDK
+        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -46,164 +38,45 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
-      - name: Configure Network Allowlist
-        run: |
-          scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
-    which dart
           dart --version
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
+          for host in pub.dev storage.googleapis.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16.x'
       - name: Install Verdaccio
         run: npm install -g verdaccio
       - name: Start Verdaccio
-        run: verdaccio --config verdaccio.yaml & sleep 5
-      - name: Configure Pub Cache
+        run: |
+          verdaccio --config ./verdaccio.yaml &
+          sleep 5
+      - name: Configure Pub to use local proxy
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Flutter pub get
-        run: |
-          for i in {1..3}; do
-            flutter pub get && break || sleep 5
-          done
+      - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
+      - run: flutter test --coverage
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
-      - name: Download Firebase emulators
-        run: |
-          set +e
-          firebase setup:emulators:download --only firestore,auth
-          status=$?
-          if [ $status -ne 0 ]; then
-            echo "Retrying emulator download after allowlist update..."
-            sleep 5
-            firebase setup:emulators:download --only firestore,auth
-          fi
       - name: Start Firebase emulators
         run: |
-          attempts=0
-          until firebase emulators:start --only firestore,auth >/tmp/firebase.log 2>&1; do
-            attempts=$((attempts+1))
-            if [ $attempts -ge 3 ]; then
-              cat /tmp/firebase.log
-              exit 1
-            fi
-            echo "Retrying firebase emulators..."
-            sleep 5
-          done &
+          firebase emulators:start --only firestore,functions &
           echo $! > emulator.pid
-      - run: flutter pub downgrade || true
-      - name: Run tests with coverage
-        run: |
-          if which dart >/dev/null 2>&1; then
-            echo "Using Dart at $(which dart)"
-            dart test --coverage
-          else
-            echo "::warning::dart CLI not found; using flutter" >&2
-            flutter test --coverage
-          fi
+      - run: flutter test --coverage
+      - run: dart test --coverage
       - run: dart test integration_test/
-      - name: Check coverage report
-        if: success() && hashFiles('coverage/lcov.info') != ''
-        run: |
-          echo "Coverage file found. Ready to upload."
-      - name: Upload coverage
-        if: success() && hashFiles('coverage/lcov.info') != ''
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage-report
-          path: coverage/lcov.info
       - run: flutter build web
       - name: Stop emulators
         if: always()
         run: kill $(cat emulator.pid)
-
-  content-library-test:
-    needs: build-and-test
-    runs-on: ubuntu-latest
-    env:
-      PUB_HOSTED_URL: http://localhost:4873
-      FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
-      FLUTTER_CACHE_DIR: ~/.flutter
-    steps:
-      - uses: actions/checkout@v4
-      - name: Check required network access
-        run: node scripts/check-network-allowlist.js
-      - name: Fetch tags
-        run: git fetch --tags
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.20.0'
-      - name: Add Flutter to PATH
-        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
-      - name: Cache Pub packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-pub-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pub-
-      - name: Clear Flutter cache
-        run: flutter clean
-      - name: Verify Flutter Version
-        run: flutter --version
-      - name: Configure Network Allowlist
-        run: |
-          scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
-      - name: Pre-flight: Verify network access & Dart
-        run: |
-    which dart
-          dart --version
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
-            curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
-          done
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16.x'
-      - name: Install Verdaccio
-        run: npm install -g verdaccio
-      - name: Start Verdaccio
-        run: verdaccio --config verdaccio.yaml & sleep 5
-      - name: Configure Pub Cache
-        run: |
-          echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
-          echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Flutter pub get
-        run: |
-          for i in {1..3}; do
-            flutter pub get && break || sleep 5
-          done
-      - run: dart pub get
-      - run: dart run build_runner build --delete-conflicting-outputs
-      - run: flutter analyze
-      - run: dart analyze
-      - run: flutter pub downgrade || true
-      - name: Run content library test with coverage
-        run: |
-          if which dart >/dev/null 2>&1; then
-            echo "Using Dart at $(which dart)"
-            dart test --coverage test/features/studio/content_library_screen_test.dart
-          else
-            echo "::warning::dart CLI not found; using flutter" >&2
-            flutter test --coverage test/features/studio/content_library_screen_test.dart
-          fi
-      - name: Upload coverage artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage-report
-          path: coverage/lcov.info
 
   deploy-functions:
     needs: build-and-test
@@ -215,16 +88,8 @@ jobs:
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
-      - name: Check required network access
-        run: node scripts/check-network-allowlist.js
-      - name: Fetch tags
-        run: git fetch --tags
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.20.0'
-      - name: Add Flutter to PATH
-        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+      - name: Use bundled Flutter SDK
+        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -236,14 +101,10 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
-      - name: Configure Network Allowlist
-        run: |
-          scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
-    which dart
           dart --version
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
+          for host in pub.dev storage.googleapis.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Set up Node.js
@@ -268,21 +129,13 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     env:
-      PUB_HOSTED_URL: http://localhost:4873
+      PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
-      - name: Check required network access
-        run: node scripts/check-network-allowlist.js
-      - name: Fetch tags
-        run: git fetch --tags
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.20.0'
-      - name: Add Flutter to PATH
-        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+      - name: Use bundled Flutter SDK
+        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -294,58 +147,33 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
-      - name: Configure Network Allowlist
-        run: |
-          scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
-    which dart
           dart --version
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
+          for host in pub.dev storage.googleapis.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16.x'
       - name: Install Verdaccio
         run: npm install -g verdaccio
       - name: Start Verdaccio
-        run: verdaccio --config verdaccio.yaml & sleep 5
-      - name: Configure Pub Cache
+        run: |
+          verdaccio --config ./verdaccio.yaml &
+          sleep 5
+      - name: Configure Pub to use local proxy
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Flutter pub get
-        run: |
-          for i in {1..3}; do
-            flutter pub get && break || sleep 5
-          done
+      - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
-      - run: flutter pub downgrade || true
-      - name: Run tests with coverage
-        run: |
-          if which dart >/dev/null 2>&1; then
-            echo "Using Dart at $(which dart)"
-            dart test --coverage
-          else
-            echo "::warning::dart CLI not found; using flutter" >&2
-            flutter test --coverage
-          fi
-      - run: dart test integration_test/
-      - name: Check coverage report
-        if: success() && hashFiles('coverage/lcov.info') != ''
-        run: |
-          echo "Coverage file found. Ready to upload."
-      - name: Upload coverage
-        if: success() && hashFiles('coverage/lcov.info') != ''
-        uses: actions/upload-artifact@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          name: coverage-report
-          path: coverage/lcov.info
+          node-version: '16.x'
+      - run: dart test --coverage
+      - run: dart test integration_test/
       - name: Build Web App
         run: flutter build web --release
       - name: Install Firebase CLI
@@ -358,21 +186,13 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     env:
-      PUB_HOSTED_URL: http://localhost:4873
+      PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
-      - name: Check required network access
-        run: node scripts/check-network-allowlist.js
-      - name: Fetch tags
-        run: git fetch --tags
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.20.0'
-      - name: Add Flutter to PATH
-        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+      - name: Use bundled Flutter SDK
+        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -384,58 +204,30 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
-      - name: Configure Network Allowlist
-        run: |
-          scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
-    which dart
           dart --version
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
+          for host in pub.dev storage.googleapis.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16.x'
       - name: Install Verdaccio
         run: npm install -g verdaccio
       - name: Start Verdaccio
-        run: verdaccio --config verdaccio.yaml & sleep 5
-      - name: Configure Pub Cache
+        run: |
+          verdaccio --config ./verdaccio.yaml &
+          sleep 5
+      - name: Configure Pub to use local proxy
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Flutter pub get
-        run: |
-          for i in {1..3}; do
-            flutter pub get && break || sleep 5
-          done
+      - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
-      - run: flutter pub downgrade || true
-      - name: Run tests with coverage
-        run: |
-          if which dart >/dev/null 2>&1; then
-            echo "Using Dart at $(which dart)"
-            dart test --coverage
-          else
-            echo "::warning::dart CLI not found; using flutter" >&2
-            flutter test --coverage
-          fi
+      - run: flutter test --coverage
+      - run: dart test --coverage
       - run: dart test integration_test/
-      - name: Check coverage report
-        if: success() && hashFiles('coverage/lcov.info') != ''
-        run: |
-          echo "Coverage file found. Ready to upload."
-      - name: Upload coverage
-        if: success() && hashFiles('coverage/lcov.info') != ''
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage-report
-          path: coverage/lcov.info
       - run: flutter build web
       - name: Run Smoke Tests
         run: |
@@ -447,21 +239,13 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     env:
-      PUB_HOSTED_URL: http://localhost:4873
+      PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
-      - name: Check required network access
-        run: node scripts/check-network-allowlist.js
-      - name: Fetch tags
-        run: git fetch --tags
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.20.0'
-      - name: Add Flutter to PATH
-        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+      - name: Use bundled Flutter SDK
+        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -473,58 +257,30 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
-      - name: Configure Network Allowlist
-        run: |
-          scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
-    which dart
           dart --version
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
+          for host in pub.dev storage.googleapis.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16.x'
       - name: Install Verdaccio
         run: npm install -g verdaccio
       - name: Start Verdaccio
-        run: verdaccio --config verdaccio.yaml & sleep 5
-      - name: Configure Pub Cache
+        run: |
+          verdaccio --config ./verdaccio.yaml &
+          sleep 5
+      - name: Configure Pub to use local proxy
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Flutter pub get
-        run: |
-          for i in {1..3}; do
-            flutter pub get && break || sleep 5
-          done
+      - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
-      - run: flutter pub downgrade || true
-      - name: Run tests with coverage
-        run: |
-          if which dart >/dev/null 2>&1; then
-            echo "Using Dart at $(which dart)"
-            dart test --coverage
-          else
-            echo "::warning::dart CLI not found; using flutter" >&2
-            flutter test --coverage
-          fi
+      - run: flutter test --coverage
+      - run: dart test --coverage
       - run: dart test integration_test/
-      - name: Check coverage report
-        if: success() && hashFiles('coverage/lcov.info') != ''
-        run: |
-          echo "Coverage file found. Ready to upload."
-      - name: Upload coverage
-        if: success() && hashFiles('coverage/lcov.info') != ''
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage-report
-          path: coverage/lcov.info
       - run: flutter build web
       - name: Run Security Scan
         run: |
@@ -536,21 +292,13 @@ jobs:
     runs-on: ubuntu-latest
     if: always()
     env:
-      PUB_HOSTED_URL: http://localhost:4873
+      PUB_HOSTED_URL: https://pub.dev
       FLUTTER_STORAGE_BASE_URL: https://storage.googleapis.com
       FLUTTER_CACHE_DIR: ~/.flutter
     steps:
       - uses: actions/checkout@v4
-      - name: Check required network access
-        run: node scripts/check-network-allowlist.js
-      - name: Fetch tags
-        run: git fetch --tags
-      - name: Setup Flutter SDK
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: '3.20.0'
-      - name: Add Flutter to PATH
-        run: echo "$HOME/.flutter/bin" >> $GITHUB_PATH
+      - name: Use bundled Flutter SDK
+        run: echo "${{ github.workspace }}/flutter_sdk/bin" >> $GITHUB_PATH
       - name: Cache Pub packages
         uses: actions/cache@v3
         with:
@@ -562,54 +310,30 @@ jobs:
         run: flutter clean
       - name: Verify Flutter Version
         run: flutter --version
-      - name: Configure Network Allowlist
-        run: |
-          scripts/update_network_allowlist.sh ${{ secrets.GHE_ENTERPRISE }} ${{ secrets.GHE_TOKEN }}
       - name: Pre-flight: Verify network access & Dart
         run: |
-    which dart
           dart --version
-          for host in pub.dev storage.googleapis.com firebase-public.firebaseio.com metadata.google.internal 169.254.169.254 raw.githubusercontent.com; do
+          for host in pub.dev storage.googleapis.com; do
             curl --head --fail https://$host || { echo "✗ Cannot reach $host"; exit 1; }
           done
       - name: Install Verdaccio
         run: npm install -g verdaccio
       - name: Start Verdaccio
-        run: verdaccio --config verdaccio.yaml & sleep 5
-      - name: Configure Pub Cache
+        run: |
+          verdaccio --config ./verdaccio.yaml &
+          sleep 5
+      - name: Configure Pub to use local proxy
         run: |
           echo "PUB_HOSTED_URL=http://localhost:4873" >> $GITHUB_ENV
           echo "PUB_CACHE=third_party/pub_cache" >> $GITHUB_ENV
-      - name: Flutter pub get
-        run: |
-          for i in {1..3}; do
-            flutter pub get && break || sleep 5
-          done
+      - run: flutter pub get
       - run: dart pub get
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: flutter analyze
       - run: dart analyze
-      - run: flutter pub downgrade || true
-      - name: Run tests with coverage
-        run: |
-          if which dart >/dev/null 2>&1; then
-            echo "Using Dart at $(which dart)"
-            dart test --coverage
-          else
-            echo "::warning::dart CLI not found; using flutter" >&2
-            flutter test --coverage
-          fi
+      - run: flutter test --coverage
+      - run: dart test --coverage
       - run: dart test integration_test/
-      - name: Check coverage report
-        if: success() && hashFiles('coverage/lcov.info') != ''
-        run: |
-          echo "Coverage file found. Ready to upload."
-      - name: Upload coverage
-        if: success() && hashFiles('coverage/lcov.info') != ''
-        uses: actions/upload-artifact@v3
-        with:
-          name: coverage-report
-          path: coverage/lcov.info
       - run: flutter build web
       - name: Notify on Success
         if: success()
