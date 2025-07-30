@@ -1,214 +1,316 @@
-# 🚀 Main CI/CD Pipeline
+# GitHub Actions CI/CD Pipeline
 
-> **PRODUCTION READY** – ✅ All critical workflows and secrets configured.
+This directory contains the consolidated CI/CD workflows for the Appoint project.
 
-This is a comprehensive GitHub Actions CI/CD pipeline that handles all Flutter build, test, and deployment tasks automatically.
+## 🚀 Workflow Overview
 
-## 🎯 Features
+### 1. `ci-consolidated.yml` - Main CI Pipeline
+**Purpose**: Comprehensive CI pipeline with cross-platform testing, security scanning, and deployment.
 
-- ✅ **Full Automation**: No local development required
-- ✅ **Flutter 3.32.5**: Latest stable version
-- ✅ **Code Generation**: Automatic `.g.dart` and `.freezed.dart` generation
-- ✅ **Multi-Platform**: Web, Android, and iOS builds
-- ✅ **Smart Caching**: Optimized dependency caching
-- ✅ **Comprehensive Testing**: Unit, widget, and integration tests
-- ✅ **Security Scanning**: Dependency vulnerability checks
-- ✅ **Deployment**: Firebase Hosting and DigitalOcean App Platform
-- ✅ **Rollback Support**: Automatic rollback on failures
+**Triggers**:
+- Push to `main` or `develop` branches
+- Pull requests to `main` or `develop` branches
+- Manual trigger via workflow_dispatch
 
-## 📋 Prerequisites
+**Jobs**:
+- **setup-cache**: Global caching for dependencies
+- **code-generation**: Code generation with build_runner
+- **lint**: Static analysis and code formatting
+- **l10n-check**: Translation completeness validation
+- **test**: Multi-platform testing (Ubuntu + macOS)
+- **firebase-functions-test**: Firebase Functions testing
+- **build**: Cross-platform builds (Web, Android, iOS)
+- **firebase-deploy**: Firebase Hosting deployment
+- **security-scan**: Security vulnerability scanning
+- **performance-test**: Performance testing and analysis
 
-### Required Secrets
+**Key Features**:
+- ✅ Cross-platform testing (Ubuntu, macOS, Windows)
+- ✅ Proper error handling without masking failures
+- ✅ Comprehensive caching strategy
+- ✅ Security and performance testing
+- ✅ Multi-platform builds (Web, Android, iOS)
 
-Add these secrets to your GitHub repository:
+### 2. `qa-pipeline.yml` - Comprehensive QA Pipeline
+**Purpose**: Complete quality assurance pipeline with fail-fast logic.
 
-#### Firebase Deployment
-- `FIREBASE_TOKEN`: Firebase CLI token for hosting deployment
+**Triggers**:
+- Push to `main` or `develop` branches
+- Pull requests to `main` branch
+- Manual trigger via workflow_dispatch
 
-#### DigitalOcean Deployment
-- `DIGITALOCEAN_ACCESS_TOKEN`: DigitalOcean API token (provided: `dop_v1_2713a62d05af1e46ad98b32e54dba2e0fbf0a982ae7977374f0a3a2c7bd78143`)
-- `DIGITALOCEAN_APP_ID`: Your DigitalOcean App Platform app ID
+**Jobs**:
+- **code-quality**: Code analysis and formatting
+- **unit-tests**: Unit tests with matrix strategy
+- **test-coverage**: Coverage analysis with 80% threshold
+- **integration-tests**: Cross-platform integration tests
+- **performance-tests**: Performance benchmarking
+- **security-tests**: Security vulnerability scanning
+- **accessibility-tests**: Accessibility compliance testing
+- **localization-tests**: Localization validation
+- **firebase-tests**: Firebase emulator testing
+- **quality-gates**: Final quality gate evaluation
 
-#### Android Release (Optional)
-- `ANDROID_KEYSTORE_BASE64`: Base64 encoded keystore for signed APKs
-- `PLAY_STORE_JSON_KEY`: Google Play Store service account key
+**Key Features**:
+- ✅ Fail-fast logic for quality gates
+- ✅ 80% test coverage threshold enforcement
+- ✅ Comprehensive security scanning
+- ✅ Accessibility and localization testing
+- ✅ Firebase emulator testing
 
-#### iOS Release (Optional)
-- `IOS_P12_CERTIFICATE`: iOS distribution certificate
+### 3. `release.yml` - Release Pipeline
+**Purpose**: Automated release process with multi-platform deployment.
 
-#### Notifications (Optional)
-- `SLACK_WEBHOOK_URL`: Slack webhook for deployment notifications
+**Triggers**:
+- Push of version tags (v*)
+- Manual workflow dispatch
 
-## 🔄 Workflow Jobs
+**Jobs**:
+- **version-bump**: Semantic version bumping
+- **test-all-platforms**: Cross-platform testing
+- **build-android**: Android APK and App Bundle builds
+- **build-ios**: iOS IPA builds with signing
+- **build-web**: Web app builds
+- **security-scan**: Security auditing
+- **create-release**: GitHub release creation
+- **deploy-android**: Play Store deployment
+- **deploy-ios**: App Store deployment
+- **deploy-web**: Firebase Hosting deployment
+- **notify**: Slack notifications
 
-### 1. Validate Setup
-- Validates all required secrets
-- Checks environment configuration
-
-### 2. Setup Dependencies
-- Installs Flutter 3.32.5 and Dart 3.5.4
-- Sets up Java 17 and Node.js 18
-- Installs all dependencies with caching
-
-### 3. Generate Code
-- Runs `build_runner` to generate `.g.dart` and `.freezed.dart` files
-- Multiple retry attempts for reliability
-- Uploads generated files as artifacts
-
-### 4. Analyze Code
-- Runs Flutter analyze
-- Checks code formatting
-- Runs spell checks
-- Verifies dependency tree
-
-### 5. Run Tests
-- Unit tests with coverage
-- Widget tests
-- Integration tests
-- Uploads coverage reports to Codecov
-
-### 6. Security Scan
-- Dependency vulnerability checks
-- Security audit
-- Dependency analysis
-
-### 7. Build Applications
-- **Web**: Flutter web build with HTML renderer
-- **Android**: APK and App Bundle builds
-- **iOS**: iOS app build (macOS runners)
-
-### 8. Deploy
-- **Firebase Hosting**: Automatic deployment to Firebase
-- **DigitalOcean**: Deployment to App Platform
-- **Releases**: GitHub releases with artifacts
-
-## 🚀 Usage
-
-### Automatic Triggers
-- **Push to main/develop**: Full CI/CD pipeline
-- **Pull Requests**: Analysis and testing only
-
-### Manual Triggers
-Use the "Run workflow" button in GitHub Actions with options:
-
-- **Environment**: staging/production
-- **Platform**: all/web/android/ios
-- **Skip Tests**: true/false
-
-### Deployment Triggers
-- **Main branch**: Automatic deployment to staging
-- **Tags (v*.*.*)**: Create GitHub releases
-- **Manual dispatch**: Deploy to specified environment
-
-## 📁 Generated Files
-
-The pipeline automatically generates:
-- `.g.dart` files for JSON serialization
-- `.freezed.dart` files for immutable data classes
-- Build artifacts for all platforms
+**Key Features**:
+- ✅ Multi-platform builds (Android, iOS, Web)
+- ✅ Proper signing configuration
+- ✅ Automated store deployments
+- ✅ Comprehensive release notes
+- ✅ Slack notifications
 
 ## 🔧 Configuration
 
-### Flutter Version
+### Required Secrets
+
+#### Core Secrets
+| Secret Name | Description | Required For |
+|-------------|-------------|--------------|
+| `FIREBASE_TOKEN` | Firebase CLI token | Firebase deployment |
+| `GITHUB_TOKEN` | GitHub token | Release creation |
+
+#### Android Secrets
+| Secret Name | Description | Required For |
+|-------------|-------------|--------------|
+| `ANDROID_KEYSTORE_BASE64` | Base64 encoded keystore | Android signing |
+| `ANDROID_STORE_PASSWORD` | Keystore password | Android signing |
+| `ANDROID_KEY_ALIAS` | Key alias | Android signing |
+| `ANDROID_KEY_PASSWORD` | Key password | Android signing |
+| `PLAY_STORE_JSON_KEY` | Play Store service account | Play Store deployment |
+
+#### iOS Secrets
+| Secret Name | Description | Required For |
+|-------------|-------------|--------------|
+| `IOS_CERTIFICATE_BASE64` | Base64 encoded certificate | iOS signing |
+| `IOS_CERTIFICATE_PASSWORD` | Certificate password | iOS signing |
+| `IOS_PROVISIONING_PROFILE_BASE64` | Base64 encoded profile | iOS signing |
+| `APP_STORE_CONNECT_API_KEY` | App Store Connect API key | App Store deployment |
+| `APP_STORE_CONNECT_API_KEY_ID` | API key ID | App Store deployment |
+| `APP_STORE_CONNECT_ISSUER_ID` | Issuer ID | App Store deployment |
+
+#### Optional Secrets
+| Secret Name | Description | Required For |
+|-------------|-------------|--------------|
+| `SLACK_WEBHOOK_URL` | Slack webhook URL | Notifications |
+
+### Environment Variables
+
+All workflows use consistent environment variables:
 ```yaml
 env:
-  FLUTTER_VERSION: '3.32.5'
-  DART_VERSION: '3.5.4'
+  FLUTTER_VERSION: '3.32.0'
+  DART_VERSION: '3.4.0'
+  NODE_VERSION: '18'
+  FIREBASE_EMULATOR_VERSION: '13.0.0'
 ```
 
-### Build Commands
-```bash
-# Code generation
-dart run build_runner build --delete-conflicting-outputs
+## 🏗️ Build Matrix Strategy
 
-# Web build
-flutter build web --release --web-renderer html
+### CI Pipeline Matrix
+- **OS**: Ubuntu, macOS, Windows
+- **Platform**: Web, Android, iOS
+- **Test Type**: Unit, Widget, Integration
 
-# Android builds
-flutter build apk --release --target-platform android-arm64
-flutter build appbundle --release
+### QA Pipeline Matrix
+- **Test Groups**: models, services, features, utils
+- **Platforms**: android, ios, web
 
-# iOS build
-flutter build ios --release --no-codesign
-```
+## 📊 Quality Gates
 
-## 🛠️ Troubleshooting
+### Code Quality
+- Zero analyzer errors or warnings
+- Code formatting compliance
+- Dependency verification
+
+### Test Coverage
+- Minimum 80% line coverage required
+- Coverage reports generated and uploaded
+- Coverage trend monitoring
+
+### Security
+- Firebase Functions security testing
+- Dependency vulnerability scanning
+- Security rule validation
+
+### Performance
+- Performance benchmarks
+- Memory usage analysis
+- Startup time optimization
+
+## 🚀 Deployment Strategy
+
+### Web Deployment
+- **Platform**: Firebase Hosting
+- **Trigger**: Main branch pushes
+- **Artifacts**: Web build from CI pipeline
+
+### Android Deployment
+- **Platform**: Google Play Store
+- **Trigger**: Release tags
+- **Artifacts**: App Bundle (.aab)
+
+### iOS Deployment
+- **Platform**: App Store Connect
+- **Trigger**: Release tags
+- **Artifacts**: IPA file
+
+## 🔍 Troubleshooting
 
 ### Common Issues
 
-1. **Build Runner Fails**
-   - Check for syntax errors in model files
-   - Verify `part` directives are correct
-   - Check pubspec.yaml dependencies
+1. **Coverage below threshold**
+   ```bash
+   # Add more unit tests
+   flutter test --coverage
+   # Check coverage locally
+   genhtml coverage/lcov.info --output-directory coverage/html
+   ```
 
-2. **Tests Fail**
-   - Review test output for specific failures
-   - Check for missing mocks or dependencies
-   - Verify test data setup
+2. **Analyzer failures**
+   ```bash
+   # Fix linting issues
+   flutter analyze
+   # Update generated code
+   dart run build_runner build --delete-conflicting-outputs
+   ```
 
-3. **Deployment Fails**
-   - Verify secrets are correctly configured
-   - Check DigitalOcean app ID exists
-   - Review Firebase project configuration
+3. **Build failures**
+   ```bash
+   # Clean and rebuild
+   flutter clean
+   flutter pub get
+   flutter build apk --release
+   ```
 
-### Debug Steps
+4. **Signing issues**
+   - Verify Android keystore configuration
+   - Check iOS certificate and provisioning profile
+   - Ensure secrets are properly configured
 
-1. Check workflow logs in GitHub Actions
-2. Verify generated files in artifacts
-3. Test locally with same Flutter version
-4. Review dependency conflicts
+### Local Testing
 
-## 📊 Monitoring
+```bash
+# Run analyzer locally
+flutter analyze
 
-### Coverage Reports
-- Uploaded to Codecov automatically
-- Available in workflow artifacts
-- Tracked over time
+# Run tests with coverage
+flutter test --coverage
 
-### Build Artifacts
-- Web builds: `build/web/`
-- Android APKs: Multiple architectures
-- iOS builds: Release configuration
+# Check coverage locally
+genhtml coverage/lcov.info --output-directory coverage/html
 
-### Notifications
-- Slack notifications for deployment status
-- GitHub release notifications
-- Email notifications for failures
+# Run Firebase emulators
+firebase emulators:start
 
-## 🔄 Rollback
+# Test Firebase Functions
+cd functions && npm test
+```
 
-Automatic rollback is available for:
-- Firebase Hosting deployments
-- DigitalOcean App Platform deployments
-
-Triggered on workflow failure with manual dispatch.
-
-## 📈 Performance
+## 📈 Performance Optimization
 
 ### Caching Strategy
-- Pub dependencies: `~/.pub-cache`
-- Dart tool: `.dart_tool/`
-- Build artifacts: `build/`
-- Node modules: `node_modules/`
+- **Dart Pub Cache**: `~/.pub-cache`
+- **Flutter Cache**: `~/.flutter`, `.dart_tool`, `build`
+- **NPM Cache**: `~/.npm`
+- **Firebase Emulators**: `~/.cache/firebase/emulators`
 
-### Optimization
-- Parallel job execution
-- Smart dependency caching
-- Artifact sharing between jobs
+### Parallel Execution
+- Jobs run in parallel where possible
+- Matrix strategies for efficient resource usage
+- Fail-fast logic to prevent unnecessary builds
+
+### Resource Optimization
+- Timeout limits on all jobs
+- Efficient artifact retention policies
 - Conditional job execution
 
-## 🎯 Success Metrics
+## 🔒 Security Features
 
-- ✅ All tests pass
-- ✅ Code generation successful
-- ✅ Build artifacts created
-- ✅ Deployment completed
-- ✅ Coverage reports uploaded
+### Code Security
+- Dependency vulnerability scanning
+- Security rule testing
+- Code analysis for security issues
+
+### Deployment Security
+- Secure secret management
+- Signed builds for mobile apps
+- Environment-specific configurations
+
+### Access Control
+- Branch protection rules
+- Required status checks
+- PR review requirements
+
+## 📋 Migration Guide
+
+### From Old Workflows
+1. **Remove redundant workflows**: Delete `ci.yml`, `ci.yaml`, `100-percent-qa.yml`
+2. **Update branch protection**: Require `ci-consolidated` and `qa-pipeline` to pass
+3. **Configure secrets**: Add all required secrets
+4. **Update documentation**: Reference new workflow structure
+
+### Breaking Changes
+- Removed `continue-on-error` flags for proper failure detection
+- Consolidated multiple workflows into comprehensive pipelines
+- Updated Flutter version to 3.32.0
+- Improved error handling and reporting
+
+## 🎯 Best Practices
+
+### Development Workflow
+1. **Feature branches**: Only QA pipeline runs
+2. **PR to main**: Both CI and QA pipelines run
+3. **Main branch**: Full pipeline with deployment
+
+### Release Process
+1. **Create version tag**: Automatic release pipeline
+2. **Manual release**: Use workflow dispatch with version input
+3. **Monitor deployment**: Check all platform deployments
+
+### Quality Assurance
+1. **Pre-commit**: Local testing and analysis
+2. **PR checks**: Automated quality gates
+3. **Post-deployment**: Smoke tests and monitoring
 
 ## 📞 Support
 
 For issues with the CI/CD pipeline:
-1. Check workflow logs
-2. Review this documentation
-3. Verify secret configuration
-4. Test locally with same versions 
+1. Check the workflow logs for detailed error messages
+2. Verify all required secrets are configured
+3. Ensure local builds work before pushing
+4. Review the troubleshooting section above
+
+## 🔄 Continuous Improvement
+
+The pipeline is designed for continuous improvement:
+- Regular dependency updates
+- Performance monitoring
+- Security scanning
+- Quality metric tracking
+- Automated testing expansion 
