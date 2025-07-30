@@ -65,6 +65,7 @@ import 'package:appoint/features/notifications/enhanced_notifications_screen.dar
 import 'package:appoint/features/settings/enhanced_settings_screen.dart';
 import 'package:appoint/features/calendar/enhanced_calendar_screen.dart';
 import 'package:appoint/features/profile/enhanced_profile_screen.dart';
+import 'package:appoint/widgets/restricted_google_map.dart';
 
 final routerProvider = Provider<GoRouter>(
   (final ref) => GoRouter(
@@ -772,7 +773,8 @@ class _MeetingDetailsScreenState extends State<MeetingDetailsScreen> {
                         ),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(12),
-                          child: GoogleMap(
+                          child: RestrictedGoogleMap(
+                            appointmentId: widget.meetingId,
                             initialCameraPosition: CameraPosition(
                               target: LatLng(
                                 meeting['latitude'].toDouble(),

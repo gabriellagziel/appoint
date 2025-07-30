@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:appoint/widgets/restricted_google_map.dart';
 
 class ExternalMeetingsScreen extends ConsumerWidget {
   const ExternalMeetingsScreen({super.key});
@@ -214,7 +215,8 @@ class ExternalMeetingsScreen extends ConsumerWidget {
                         ),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(8),
-                          child: GoogleMap(
+                          child: RestrictedGoogleMap(
+                            appointmentId: meetingId,
                             initialCameraPosition: CameraPosition(
                               target: LatLng(
                                 meeting['latitude'].toDouble(),
@@ -408,7 +410,8 @@ class MeetingDetailsView extends StatelessWidget {
             ),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(12),
-              child: GoogleMap(
+              child: RestrictedGoogleMap(
+                appointmentId: meetingId,
                 initialCameraPosition: CameraPosition(
                   target: LatLng(
                     meeting['latitude'].toDouble(),

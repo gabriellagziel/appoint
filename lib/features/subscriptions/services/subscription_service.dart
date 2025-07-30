@@ -54,6 +54,7 @@ class SubscriptionService {
     await _firestore.collection('users').doc(user.uid).update({
       'subscriptionPlanId': planId,
       'subscriptionStatus': 'active',
+      'premium': true, // Unlock premium features immediately
       'updatedAt': FieldValue.serverTimestamp(),
     });
   }
@@ -95,6 +96,7 @@ class SubscriptionService {
     // Update user status
     await _firestore.collection('users').doc(user.uid).update({
       'subscriptionStatus': 'canceled',
+      'premium': false, // Revoke premium benefits
       'updatedAt': FieldValue.serverTimestamp(),
     });
   }
