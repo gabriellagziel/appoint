@@ -5,15 +5,17 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 
 void main() {
+  late REDACTED_TOKEN binding;
   binding = REDACTED_TOKEN.ensureInitialized();
 
   group('Load & Stress Tests', () {
     testWidgets('booking chat load test', (tester) async {
       await binding.watchPerformance(
         () async {
-          await app.appMain();
+          app.main();
           await tester.pumpAndSettle();
 
+          late NavigatorState navigator;
           navigator = tester.state<NavigatorState>(find.byType(Navigator));
           navigator.pushNamed('/chat-booking');
           await tester.pumpAndSettle();
@@ -55,9 +57,10 @@ void main() {
     testWidgets('dashboard stress navigation', (tester) async {
       await binding.watchPerformance(
         () async {
-          await app.appMain();
+          app.main();
           await tester.pumpAndSettle();
 
+          late NavigatorState navigator;
           navigator = tester.state<NavigatorState>(find.byType(Navigator));
           for (var i = 0; i < 20; i++) {
             navigator.pushNamed('/dashboard');
