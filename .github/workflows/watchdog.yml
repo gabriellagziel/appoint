@@ -1,0 +1,44 @@
+name: 🐶 CI Watchdog
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+    steps:
+      - name: 🔧 Install GitHub CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gh
+
+      - name: 🪪 Authenticate GitHub CLI
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh auth setup-git
+          gh auth status
+
+      - name: 🕵️‍♂️ Find stuck workflows
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "🔍 Checking for stuck workflows >30min..."
+          gh run list --limit 100 --json databaseId,status,workflowName,duration,startedAt | jq -c '.[] | select(.status == "in_progress" and (.duration | tonumber) > 1800)' > stuck.json
+
+          if [ -s stuck.json ]; then
+            echo "🚨 Found stuck workflows:"
+            cat stuck.json | jq .
+
+            echo "🛑 Cancelling stuck workflows..."
+            cat stuck.json | jq -r '.databaseId' | while read run_id; do
+              gh run cancel "$run_id"
+            done
+          else
+            echo "✅ No stuck workflows found."
+          fi
