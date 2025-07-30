@@ -10,19 +10,17 @@ void main() {
   });
 
   group('EmptyScreen', () {
-    testWidgets('shows subtitle and action button', (tester) async {
+    testWidgets('shows placeholder text and explore button', (tester) async {
       await tester.pumpWidget(
         MaterialApp(
           home: EmptyScreen(
-            subtitle: 'Nothing here',
-            actionLabel: 'Add',
-            onAction: () {},
+            onExplore: () {},
           ),
         ),
       );
 
-      expect(find.text('Nothing here'), findsOneWidget);
-      expect(find.text('Add'), findsOneWidget);
+      expect(find.text('Nothing here yet'), findsOneWidget);
+      expect(find.text('Explore'), findsOneWidget);
       expect(find.byType(ElevatedButton), findsOneWidget);
     });
   });
