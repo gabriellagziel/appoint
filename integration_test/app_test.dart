@@ -7,7 +7,7 @@ void main() {
   REDACTED_TOKEN.ensureInitialized();
 
   testWidgets('edit profile flow', (tester) async {
-    await app.appMain();
+    app.main();
     await tester.pumpAndSettle();
 
     expect(find.text('Welcome'), findsOneWidget);
@@ -31,21 +31,25 @@ void main() {
   });
 
   testWidgets('referral copy flow', (tester) async {
-    await app.appMain();
+    app.main();
     await tester.pumpAndSettle();
 
     // Login screen should appear
     expect(find.text('Login'), findsOneWidget);
 
     await tester.enterText(
-        find.widgetWithText(TextField, 'Email'), 'test@example.com',);
+      find.widgetWithText(TextField, 'Email'),
+      'test@example.com',
+    );
     await tester.enterText(
-        find.widgetWithText(TextField, 'Password'), 'password',);
+      find.widgetWithText(TextField, 'Password'),
+      'password',
+    );
     await tester.tap(find.text('Sign In'));
     await tester.pumpAndSettle();
 
     // Navigate directly to onboarding
-    navigator = tester.state<NavigatorState>(find.byType(Navigator));
+    final navigator = tester.state<NavigatorState>(find.byType(Navigator));
     navigator.pushNamed('/ambassador-onboarding');
     await tester.pumpAndSettle();
 

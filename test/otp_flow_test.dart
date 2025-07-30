@@ -6,7 +6,9 @@ import 'package:mocktail/mocktail.dart';
 import 'firebase_test_helper.dart';
 
 class MockFirebaseAuth extends Mock implements FirebaseAuth {}
+
 class MockUser extends Mock implements User {}
+
 class MockUserCredential extends Mock implements UserCredential {}
 
 void main() {
@@ -37,8 +39,10 @@ void main() {
 
       // Setup auth mock
       when(() => mockAuth.currentUser).thenReturn(mockUser);
-      when(() => mockAuth.authStateChanges()).thenAnswer((_) => Stream.value(mockUser));
-      when(() => mockAuth.userChanges()).thenAnswer((_) => Stream.value(mockUser));
+      when(() => mockAuth.authStateChanges())
+          .thenAnswer((_) => Stream.value(mockUser));
+      when(() => mockAuth.userChanges())
+          .thenAnswer((_) => Stream.value(mockUser));
     });
 
     test('should verify phone number format', () {
@@ -73,14 +77,15 @@ void main() {
       const otpCode = '123456';
 
       when(() => mockAuth.verifyPhoneNumber(
-        phoneNumber: phoneNumber,
-        verificationCompleted: any(named: 'verificationCompleted'),
-        verificationFailed: any(named: 'verificationFailed'),
-        codeSent: any(named: 'codeSent'),
-        codeAutoRetrievalTimeout: any(named: 'codeAutoRetrievalTimeout'),
-      )).thenAnswer((invocation) {
+            phoneNumber: phoneNumber,
+            verificationCompleted: any(named: 'verificationCompleted'),
+            verificationFailed: any(named: 'verificationFailed'),
+            codeSent: any(named: 'codeSent'),
+            codeAutoRetrievalTimeout: any(named: 'codeAutoRetrievalTimeout'),
+          )).thenAnswer((invocation) {
         // Simulate successful verification
-        final verificationCompleted = invocation.namedArguments[#verificationCompleted] as Function(UserCredential);
+        final verificationCompleted = invocation
+            .namedArguments[#verificationCompleted] as Function(UserCredential);
         verificationCompleted(mockUserCredential);
         return Future.value();
       });
@@ -96,14 +101,16 @@ void main() {
       const phoneNumber = '+1234567890';
 
       when(() => mockAuth.verifyPhoneNumber(
-        phoneNumber: phoneNumber,
-        verificationCompleted: any(named: 'verificationCompleted'),
-        verificationFailed: any(named: 'verificationFailed'),
-        codeSent: any(named: 'codeSent'),
-        codeAutoRetrievalTimeout: any(named: 'codeAutoRetrievalTimeout'),
-      )).thenAnswer((invocation) {
+            phoneNumber: phoneNumber,
+            verificationCompleted: any(named: 'verificationCompleted'),
+            verificationFailed: any(named: 'verificationFailed'),
+            codeSent: any(named: 'codeSent'),
+            codeAutoRetrievalTimeout: any(named: 'codeAutoRetrievalTimeout'),
+          )).thenAnswer((invocation) {
         // Simulate verification failure
-        final verificationFailed = invocation.namedArguments[#verificationFailed] as Function(FirebaseAuthException);
+        final verificationFailed =
+            invocation.namedArguments[#verificationFailed] as Function(
+                FirebaseAuthException);
         verificationFailed(FirebaseAuthException(code: 'invalid-phone-number'));
         return Future.value();
       });
@@ -119,7 +126,8 @@ void main() {
       const otpCode = '123456';
       final mockCredential = MockPhoneAuthCredential();
 
-      when(() => mockCredential.verifyOTP(otpCode)).thenReturn(mockUserCredential);
+      when(() => mockCredential.verifyOTP(otpCode))
+          .thenReturn(mockUserCredential);
 
       // Act & Assert
       expect(() async {
@@ -160,7 +168,8 @@ Future<void> _sendOTP(FirebaseAuth auth, String phoneNumber) async {
   );
 }
 
-Future<void> _verifyOTP(FirebaseAuth auth, PhoneAuthCredential credential, String otpCode) async {
+Future<void> _verifyOTP(
+    FirebaseAuth auth, PhoneAuthCredential credential, String otpCode) async {
   await credential.verifyOTP(otpCode);
 }
 

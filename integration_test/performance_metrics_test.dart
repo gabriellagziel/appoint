@@ -5,41 +5,54 @@ import 'package:appoint/main.dart' as app;
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
+import 'package:vm_service/vm_service.dart';
 import 'package:vm_service/vm_service_io.dart';
 
 Future<int> _heapUsage() async {
+  late dynamic info;
   info = await developer.Service.getInfo();
   if (info.serverUri == null) return -1;
   final service = await vmServiceConnectUri(
-      'ws://localhost:${info.serverUri!.port}${info.serverUri!.path}ws',);
+    'ws://localhost:${info.serverUri!.port}${info.serverUri!.path}ws',
+  );
+  late VM vmData;
   vmData = await service.getVM();
   final iso = vmData.isolates?.first;
   if (iso == null) return -1;
+  late MemoryUsage usage;
   usage = await service.getMemoryUsage(iso.id!);
   return usage.heapUsage ?? -1;
 }
 
 void main() {
+  late REDACTED_TOKEN binding;
   binding = REDACTED_TOKEN.ensureInitialized();
 
   group('Performance Metrics', () {
     testWidgets('booking chat metrics', (tester) async {
+      late int before;
+      late Stopwatch sw;
       before = await _heapUsage();
       sw = Stopwatch()..start();
 
-      await binding.watchPerformance(() async {
-        await app.appMain();
-        await tester.pumpAndSettle();
-        navigator = tester.state<NavigatorState>(find.byType(Navigator));
-        navigator.pushNamed('/chat-booking');
-        await tester.pumpAndSettle();
+      await binding.watchPerformance(
+        () async {
+          app.main();
+          await tester.pumpAndSettle();
+          late NavigatorState navigator;
+          navigator = tester.state<NavigatorState>(find.byType(Navigator));
+          navigator.pushNamed('/chat-booking');
+          await tester.pumpAndSettle();
 
-        await tester.enterText(find.byType(TextField).first, 'Haircut');
-        await tester.testTextInput.receiveAction(TextInputAction.done);
-        await tester.pumpAndSettle();
-      }, reportKey: 'booking_chat',);
+          await tester.enterText(find.byType(TextField).first, 'Haircut');
+          await tester.testTextInput.receiveAction(TextInputAction.done);
+          await tester.pumpAndSettle();
+        },
+        reportKey: 'booking_chat',
+      );
 
       sw.stop();
+      late int after;
       after = await _heapUsage();
       binding.reportData ??= <String, dynamic>{};
       binding.reportData!['booking_chat_response_ms'] = sw.elapsedMilliseconds;
@@ -51,23 +64,30 @@ void main() {
     });
 
     testWidgets('dashboard flow metrics', (tester) async {
+      late int before;
+      late Stopwatch sw;
       before = await _heapUsage();
       sw = Stopwatch()..start();
 
-      await binding.watchPerformance(() async {
-        await app.appMain();
-        await tester.pumpAndSettle();
-        navigator = tester.state<NavigatorState>(find.byType(Navigator));
-        for (var i = 0; i < 5; i++) {
-          navigator.pushNamed('/dashboard');
+      await binding.watchPerformance(
+        () async {
+          app.main();
           await tester.pumpAndSettle();
-          expect(find.text('Dashboard'), findsOneWidget);
-          await tester.pageBack();
-          await tester.pumpAndSettle();
-        }
-      }, reportKey: 'dashboard_flow',);
+          late NavigatorState navigator;
+          navigator = tester.state<NavigatorState>(find.byType(Navigator));
+          for (var i = 0; i < 5; i++) {
+            navigator.pushNamed('/dashboard');
+            await tester.pumpAndSettle();
+            expect(find.text('Dashboard'), findsOneWidget);
+            await tester.pageBack();
+            await tester.pumpAndSettle();
+          }
+        },
+        reportKey: 'dashboard_flow',
+      );
 
       sw.stop();
+      late int after;
       after = await _heapUsage();
       binding.reportData ??= <String, dynamic>{};
       binding.reportData!['dashboard_flow_response_ms'] =
