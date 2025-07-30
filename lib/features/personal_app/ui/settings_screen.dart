@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// Basic settings screen with dark mode and notification toggles.
+/// TODO: implement per spec §2.1
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
 
@@ -10,30 +10,27 @@ class SettingsScreen extends StatefulWidget {
 
 class _SettingsScreenState extends State<SettingsScreen> {
   bool _darkMode = false;
-  bool _notifications = true;
+  bool _notifications = false;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Settings')),
-      body: ListView(
+      body: Column(
         children: [
           SwitchListTile(
             title: const Text('Dark Mode'),
             value: _darkMode,
-            onChanged: (v) => setState(() => _darkMode = v),
+            onChanged: (value) => setState(() => _darkMode = value),
           ),
           SwitchListTile(
             title: const Text('Notifications'),
             value: _notifications,
-            onChanged: (v) => setState(() => _notifications = v),
+            onChanged: (value) => setState(() => _notifications = value),
           ),
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: ElevatedButton(
-              onPressed: () {},
-              child: const Text('Sign Out'),
-            ),
+          ElevatedButton(
+            onPressed: () {},
+            child: const Text('Sign Out'),
           ),
         ],
       ),
