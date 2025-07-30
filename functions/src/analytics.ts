@@ -107,7 +107,7 @@ export const downloadUsageCSV = functions.https.onRequest(async (req, res) => {
 
 // Admin analytics summary
 export const adminAnalyticsSummary = functions.https.onRequest(async (req, res) => {
-  // Admin auth check implementation - see ticket #ANA-001
+  // TODO: Add admin auth check (ID token or secret header)
   try {
     const { month, year } = req.query as any;
     const now = new Date();
@@ -155,7 +155,7 @@ export const adminAnalyticsSummary = functions.https.onRequest(async (req, res) 
 
 // Yearly tax export ZIP
 export const exportYearlyTax = functions.https.onRequest(async (req, res) => {
-  // Admin auth check - see ticket #ANA-001
+  // Admin auth check TODO
   try {
     const { year } = req.query as any;
     const y = year ? Number(year) : new Date().getUTCFullYear() - 1;
