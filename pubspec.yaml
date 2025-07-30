@@ -6,14 +6,14 @@ publish_to: 'none'
 version: 1.0.0+0
 
 environment:
-  sdk: ">=3.5.0 <4.0.0"
+  sdk: ">=3.4.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  intl: ^0.19.0
+  intl: ^0.20.2
   firebase_core: ^3.15.0
   cloud_firestore: ^5.6.10
   firebase_auth: ^5.6.1
@@ -26,7 +26,7 @@ dependencies:
   firebase_app_check: ^0.3.2+8
   firebase_performance: ^0.10.1+8
   flutter_stripe: ^11.5.0
-  flutter_riverpod: ^2.6.1
+  flutter_riverpod: 2.6.1
   freezed_annotation: ^2.4.4
   json_annotation: ^4.9.0
   equatable: ^2.0.5
@@ -39,60 +39,48 @@ dependencies:
   flutter_secure_storage: ^10.0.0-beta.4
   encrypt: ^5.0.1
   crypto: ^3.0.3
-  app_links: ^6.3.2
+  uni_links: ^0.5.1
   share_plus: ^11.0.0
   file_picker: ^10.2.0
   image_picker: ^1.0.7
-  google_maps_flutter: ^2.10.1
-  geolocator: ^14.0.2
+  google_maps_flutter: ^2.12.3
+  geolocator: ^14.0.1
   flutter_dotenv: ^5.1.0
   mailer: ^6.0.1
-  fl_chart: ^0.67.0
-  go_router: ^14.2.7
-  syncfusion_flutter_charts: ^27.1.48
+  fl_chart: ^1.0.0
+  go_router: ^16.0.0
+  syncfusion_flutter_charts: ^30.1.37
   shared_preferences: ^2.2.2
-  connectivity_plus: ^6.1.4
-  hive: ^2.2.3
-  hive_flutter: ^1.1.0
-  table_calendar: ^3.0.9
-  webview_flutter: ^4.9.0
-  uuid: ^4.1.0
-  async: ^2.10.0
-  dio: ^5.8.0+1
-  stripe_platform_interface: ^11.5.0
-  flutter_local_notifications: ^19.3.0
-  timezone: ^0.10.1
-  permission_handler: ^11.1.0
 
+  webview_flutter: any
+  uuid: any
+  async: any
 dev_dependencies:
   integration_test:
     sdk: flutter
   mocktail: ^1.0.4
   fake_cloud_firestore: ^3.1.0
-  hive_test: ^1.0.1
-  build_runner: ^2.3.0
-  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
   freezed: ^2.4.7
-  json_serializable: ^6.1.0
-  flutter_lints: ^4.0.0
+  json_serializable: ^6.7.1
+  flutter_lints: ^6.0.0
+
   flutter_test:
     sdk: flutter
-  firebase_auth_mocks: ^0.14.1
-  REDACTED_TOKEN: ^7.0.0
-  REDACTED_TOKEN: ^6.6.10
-  REDACTED_TOKEN: ^3.8.8
-  REDACTED_TOKEN: ^6.0.0
-  plugin_platform_interface: ^2.1.8
-  mockito: ^5.0.17
-  very_good_analysis: ^6.0.0
-
+  vm_service: any
+  firebase_auth_mocks: any
+  REDACTED_TOKEN: any
+  REDACTED_TOKEN: any
+  REDACTED_TOKEN: any
+  REDACTED_TOKEN: any
+  plugin_platform_interface: any
+  mockito: ^5.4.6
 flutter:
   uses-material-design: true
   generate: true
 
   assets:
     - web/assets/FontManifest.json
-    - assets/images/
 
   plugin:
     platforms:
