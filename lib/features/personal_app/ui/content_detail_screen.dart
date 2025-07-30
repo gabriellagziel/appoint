@@ -1,43 +1,31 @@
-// Displays a single content item retrieved from Firestore.
-import 'package:appoint/providers/content_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../../../utils/localized_date_formatter.dart';
 
-/// Shows details for a single content item.
-class ContentDetailScreen extends ConsumerWidget {
-  const ContentDetailScreen({required this.contentId, super.key});
+/// TODO: Implement detailed content view
+class ContentDetailScreen extends StatelessWidget {
   final String contentId;
 
-  @override
-  Widget build(BuildContext context, final WidgetRef ref) {
-    final contentAsync = ref.watch(contentByIdProvider(contentId));
+  const ContentDetailScreen({super.key, required this.contentId});
 
+  @override
+  Widget build(BuildContext context) {
+    final locale = Localizations.localeOf(context).toLanguageTag();
     return Scaffold(
       appBar: AppBar(title: const Text('Content Detail')),
-      body: contentAsync.when(
-        data: (item) {
-          if (item == null) {
-            return const Center(child: Text('Content not found'));
-          }
-          return SingleChildScrollView(
-            padding: const EdgeInsets.all(16),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                if (item.imageUrl != null) Image.network(item.imageUrl!),
-                const SizedBox(height: 12),
-                Text(
-                  item.title,
-                  style: Theme.of(context).textTheme.titleLarge,
-                ),
-                const SizedBox(height: 8),
-                if (item.description != null) Text(item.description!),
-              ],
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text('Content ID: $contentId'),
+            const SizedBox(height: 8),
+            Text(
+              LocalizedDateFormatter.formatFullDate(
+                DateTime.now(),
+                locale: locale,
+              ),
             ),
-          );
-        },
-        loading: () => const Center(child: CircularProgressIndicator()),
-        error: (e, final _) => Center(child: Text('Error: $e')),
+          ],
+        ),
       ),
     );
   }
